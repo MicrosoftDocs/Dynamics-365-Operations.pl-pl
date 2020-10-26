@@ -16,15 +16,15 @@ ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c56d80dca9bf7753585532dffd57552ce2ee7a3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203832"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982852"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generowanie bazowej prognozy statystycznej
 
@@ -68,7 +68,7 @@ Podczas generowania prognozy można używać międzyfirmowej grupy planowania, k
 Jeśli prognoza nie jest generowana dla dużego zestawu towarów, ale na przykład dla jednego towaru lub jednego klucza alokacji produktów, wówczas aby poprawić wydajność procesu, można zaznaczyć pole wyboru **Użyj trybu odpowiedzi na żądanie** na karcie **Planowanie główne - Ustawienia - Prognozowanie popytu** - **Parametry prognozowania popytu - Uczenie maszynowe Azure**.
 
 > [!NOTE]
-> Prognoza o potencjalnie płaskim wyglądzie może być spowodowana przez historyczne dane, które mają być dłuższego okresu historycznego (co najmniej 3 okresy w celu wybrania wzorców, np. 3 lata z prognozą miesięczną). Aby uzyskać lepszy rezultat, można spróbować zmienić stopień szczegółowości zakresu czasu lub wytworzyć zakres czasu.
+> Prognoza o potencjalnie płaskim wyglądzie może być spowodowana przez historyczne dane, które mają być dłuższego okresu historycznego (co najmniej 3 okresy w celu wybrania wzorców, np. 3 lata z prognozą miesięczną). Aby uzyskać lepszy rezultat, można spróbować zmienić stopień szczegółowości zakresu czasu lub wydłużyć zakres czasu.
 
 <a name="additional-resources"></a>Dodatkowe zasoby
 --------

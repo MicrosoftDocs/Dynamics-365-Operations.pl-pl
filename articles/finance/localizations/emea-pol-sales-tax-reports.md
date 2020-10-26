@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 274063
 ms.search.region: Poland
-ms.author: shylaw
+ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 0aaa59e0be3a213100f3f6bd2f1369c28899698b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b2fa38afc95064cea29e408747bf0d22ec548a0e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175169"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984664"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]

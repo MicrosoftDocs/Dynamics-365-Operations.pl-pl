@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 1219713
 ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-semaz
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cefdbc03b19eebff8141d4f578047de002ace56
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5ee8f3f5c850ad0ae519c83a689d12b9a1471712
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773459"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983095"
 ---
 # <a name="storno-accounting"></a>Stornowanie
 

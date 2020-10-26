@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818357"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961665"
 ---
 # <a name="work-with-fragments"></a>Praca z fragmentami 
 
@@ -61,8 +61,8 @@ Można utworzyć nowy fragment lub zapisać istniejącą konfigurację modułu j
 Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego użycia, wykonaj następujące kroki.
 
 1. Otwórz stronę lub szablon zawierający moduł, który chcesz przekonwertować na fragment.
-1. W okienku konspektu z lewej strony lub bezpośrednio na kanwie głównej wybierz wcześniej skonfigurowany moduł.
-1. Wybierz wielokropek (**...**) obok nazwy modułu w panelu konspektu lub na pasku narzędzi wybranego modułu w obszarze roboczym. 
+1. W okienku konturu z lewej strony lub bezpośrednio w wizualnym konstruktorze stron wybierz wcześniej skonfigurowany moduł.
+1. Wybierz wielokropek (**...**) obok nazwy modułu w panelu konspektu lub na pasku narzędzi wybranego modułu w wizualnym konstruktorze stron. 
 1. Wybierz **Udostępnij jako fragment strony**. 
 1. W oknie dialogowym **Zapisz jako fragment strony** wprowadź nazwę fragmentu.
 1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
@@ -94,8 +94,8 @@ W poniższych procedurach opisano sposób dodawania, usuwania i edytowania fragm
 
 Aby dodać fragment do strony, wykonaj następujące kroki.
 
-1. W panelu konturu po lewej stronie lub bezpośrednio w głównym obszarze roboczym wybierz kontener lub boks, do którego można dodać moduły podrzędne.
-1. W okienku online wybierz wielokropek (**...**) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używana główna kanwa, należy wybrać symbol plus (**+**).  
+1. W panelu konturu po lewej stronie lub bezpośrednio w wizualnym konstruktorze stron wybierz kontener lub boks, do którego można dodać moduły podrzędne.
+1. W okienku online wybierz wielokropek (**...**) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używany wizualny konstruktor stron, należy wybrać symbol plus (**+**).  
 1. Wybierz opcję **Dodaj fragment**.
 
     ![Zrzut ekranu, jak dodać istniejący fragment do gniazda lub kontenera](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Aby dodać fragment do strony, wykonaj następujące kroki.
 
 Aby usunąć fragment z gniazda lub kontenera na stronie, wykonaj następujące kroki.
 
-1. W panelu konturu po lewej stronie wybierz wielokropek (**...**) obok nazwy fragmentu do usunięcia, a następnie wybierz symbol kosza.  Alternatywnie można wybrać fragment na kanwie i wybrać symbol kosza na pasku narzędzi fragmentu.
+1. W panelu konturu po lewej stronie wybierz wielokropek (**...**) obok nazwy fragmentu do usunięcia, a następnie wybierz symbol kosza.  Alternatywnie można wybrać fragment w wizualnym konstruktorze stron i wybrać symbol kosza na pasku narzędzi fragmentu.
 1. Po wyświetleniu monitu o potwierdzenie zamiaru usunięcia fragmentu wybierz przycisk **OK**.
 
 > [!NOTE]
