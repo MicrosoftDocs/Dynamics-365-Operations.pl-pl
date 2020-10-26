@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
-ms.author: v-elgolu
+ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 9a78d9eef1e242d33fd6eac29cf6b9ca648891b8
-ms.sourcegitcommit: d83f2c5a126d88b2f393923375c75fd40a880ed2
+ms.openlocfilehash: f83caaa82833b78b20fb4b3a807ff383d9eb4768
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3690800"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983195"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
