@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Poland
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: baf6e3807193c208b634b1cb36007e5dde132393
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: a8bcfc9d8599c46183129532dc15153487b3237a
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552348"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3984669"
 ---
 # <a name="tax-interest-and-free-hand-interest-for-poland"></a>Odsetki podatkowe i rynkowe w Polsce
 

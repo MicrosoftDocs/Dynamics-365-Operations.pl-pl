@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895384"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989248"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -37,10 +37,10 @@ Ten temat zawiera informacje o marszrutach i operacjach. Marszruta definiuje pro
 
 Marszruta opisuje kolejność operacji niezbędnych w celu wytworzenia produktu lub wariantu produktu. Dla każdej operacji marszruta definiuje również wymagane zasoby operacyjne, czas potrzebny na przezbrojenie i wykonanie operacji oraz sposób obliczania kosztów. Można użyć tej samej marszruty do wytwarzania wielu produktów lub zdefiniować unikatową marszrutę dla każdego produktu lub wariantu produktu. Można nawet mieć wiele marszrut dla tego samego produktu. W takim przypadku używana marszruta zmienia się i zależy od czynników takich jak ilość, która musi zostać wyprodukowana. Definicja marszruty w Supply Chain Management składa się z czterech oddzielnych elementów, które wspólnie opisują proces produkcji:
 
--   **Marszruta** — Marszruta definiuje strukturę procesu produkcji. Innymi słowy definiuje kolejność operacji.
--   **Operacja** — Operacja identyfikuje nazwany krok w marszrucie, taki jak **Montaż**. Ta sama operacja może wystąpić w wielu marszrutach i mieć różne numery operacji.
--   **Relacja operacji** — Relacja operacji definiuje właściwości operacyjnych operacji, takie jak czasy przezbrajania i wykonywania, kategorie kosztów, parametry zużycia i zapotrzebowanie na zasoby. Relacja operacji umożliwia różnicowanie właściwości operacyjnych operacji w zależności od marszruty, w której jest używana operacja, lub produktów, które są wytwarzane.
--   **Wersja marszruty** — Wersja marszruty określa marszrutę używaną do wytworzenia produktu lub wariantu produktu. Wersje marszrut umożliwiają wykorzystywanie marszrut do różnych produktów lub ich późniejszą zmianę. Umożliwiają również używanie różnych marszrut do wytwarzania tego samego produktu. W takim przypadku używana marszruta zależy od czynników takich jak lokalizacja lub ilość, która musi zostać wyprodukowana.
+- **Marszruta** — Marszruta definiuje strukturę procesu produkcji. Innymi słowy definiuje kolejność operacji.
+- **Operacja** — Operacja identyfikuje nazwany krok w marszrucie, taki jak **Montaż**. Ta sama operacja może wystąpić w wielu marszrutach i mieć różne numery operacji.
+- **Relacja operacji** — Relacja operacji definiuje właściwości operacyjnych operacji, takie jak czasy przezbrajania i wykonywania, kategorie kosztów, parametry zużycia i zapotrzebowanie na zasoby. Relacja operacji umożliwia różnicowanie właściwości operacyjnych operacji w zależności od marszruty, w której jest używana operacja, lub produktów, które są wytwarzane.
+- **Wersja marszruty** — Wersja marszruty określa marszrutę używaną do wytworzenia produktu lub wariantu produktu. Wersje marszrut umożliwiają wykorzystywanie marszrut do różnych produktów lub ich późniejszą zmianę. Umożliwiają również używanie różnych marszrut do wytwarzania tego samego produktu. W takim przypadku używana marszruta zależy od czynników takich jak lokalizacja lub ilość, która musi zostać wyprodukowana.
 
 ## <a name="routes"></a>Marszruty
 Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub wariantu produktu. Każdej operacji jest przypisywany numer operacji i operacja następująca. Kolejność operacji tworzy sieć marszrut, które mogą być reprezentowane przez ukierunkowany wykres mający jeden lub więcej punktów początkowych i jeden punkt końcowy. W programie Supply Chain Management trasy są rozróżniane na podstawie typu struktury. Istnieją dwa typy marszrut: proste i sieciowe. W oknie Parametry kontroli produkcji można określić, czy mogą być używane tylko marszruty proste czy też można używać bardziej złożonych marszrut sieciowych.
@@ -60,9 +60,9 @@ Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złoż
 [![Marszruty sieciowe](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Każda operacja może mieć tylko jedną operację następującą, a cała marszruta musi się kończyć w jednej operacji.
-> -   Nie ma żadnej gwarancji, że wiele operacji mających tę samą operację następującą (na przykład operacje 30 i 40 na wcześniejszej ilustracji) będą rzeczywiście wykonywane równolegle. Dostępność i zdolności produkcyjne zasobów mogą nakładać ograniczenia na sposób planowania operacji.
-> -   Nie można używać wartości 0 (zero) jako numeru operacji. Ten numer jest zarezerwowany i służy do określania, że ostatnia operacja w marszrucie ma żadnej operacji następującej.
+> - Każda operacja może mieć tylko jedną operację następującą, a cała marszruta musi się kończyć w jednej operacji.
+> - Nie ma żadnej gwarancji, że wiele operacji mających tę samą operację następującą (na przykład operacje 30 i 40 na wcześniejszej ilustracji) będą rzeczywiście wykonywane równolegle. Dostępność i zdolności produkcyjne zasobów mogą nakładać ograniczenia na sposób planowania operacji.
+> - Nie można używać wartości 0 (zero) jako numeru operacji. Ten numer jest zarezerwowany i służy do określania, że ostatnia operacja w marszrucie ma żadnej operacji następującej.
 
 ### <a name="parallel-operations"></a>Operacje równoległe
 
@@ -99,12 +99,12 @@ Właściwości operacyjne operacji, takie jak czasy przezbrajania i wykonywania,
 ## <a name="operation-relations"></a>Relacje operacji
 W relacji operacji są przechowywane następujące właściwości operacyjnych operacji:
 
--   Kategorie kosztu
--   Parametry zużycia
--   Czasy przetwarzania
--   Ilości przetwarzania
--   Zapotrzebowanie na zasoby
--   Uwagi i instrukcje
+- Kategorie kosztu
+- Parametry zużycia
+- Czasy przetwarzania
+- Ilości przetwarzania
+- Zapotrzebowanie na zasoby
+- Uwagi i instrukcje
 
 Dla jednej operacji można zdefiniować wiele relacji operacji. Jednak każda relacja operacji jest specyficzna dla jednej operacji i przechowuje właściwości specyficzne dla marszruty, zwolnionego produktu lub zbioru zwolnionych produktów, które są powiązane z grupą towarów. W związku z tym tej samej operacji można używać w wielu marszrutach mających różne właściwości operacyjne. Ponadto można łatwiej utrzymywać dane główne, jeśli używasz standardowych operacji mających takie same właściwości operacyjne bez względu na używaną marszrutę ani wytwarzany produkt. Zakres relacji operacji jest definiowany za pomocą właściwości **Kod pozycji**, **Relacja produktu**, **Kod marszruty** i **Relacja do marszruty**, jak pokazano w poniższej tabeli.
 
@@ -166,12 +166,13 @@ Kiedy program Supply Chain Management szuka najbardziej odpowiedniej relacji ope
 W związku z tym operacji należy użyć tylko jeden raz dla każdej marszruty. Jeśli operacja występuje wiele razy w tej samej marszrucie, wszystkie wystąpienia tej operacji będą miały tę samą relację operacji i nie będzie można zdefiniować różnych właściwości (na przykład czasów wykonywania) dla każdego wystąpienia.
 
 ## <a name="route-versions"></a>Wersje marszruty
+
 Wersje marszruty pozwalają dostosować warianty wytwarzania produktów lub uzyskać lepszą kontrolę nad procesem produkcji. Określają, które marszruty powinny być używane podczas wytwarzania określonego zwolnionego produktu lub zwolnionego wariantu produktu. Można używać następujących ograniczeń do definiowania, która marszruta ma być używana dla zwolnionego produktu:
 
--   Wymiary produktów (rozmiar, kolor, styl lub konfiguracja)
--   Ilość produkcji
--   Oddział produkcji
--   Data produkcji
+- Wymiary produktów (rozmiar, kolor, styl lub konfiguracja)
+- Ilość produkcji
+- Oddział produkcji
+- Data produkcji
 
 Gdy produkt jest wytwarzany w określonym oddziale, określonej ilości lub określonym okresie, można wyznaczyć określoną wersję marszruty jako domyślną wersję marszruty. Należy jednak zwrócić uwagę, że jest dozwolona tylko jedna aktywna marszruta dla danego zwolnionego produktu i danego zestawu ograniczeń.  
 
@@ -194,6 +195,7 @@ Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdz
 Sprawa zmiany w produkcie do zatwierdzenia i uaktywnienia nowych lub zmienionych marszrut i wersji marszrut zapewnia prosty sposób przeglądania ograniczeń wersji marszrut. Można również zatwierdzić i aktywować wszystkie marszruty związane z określoną zmianą w jednej operacji oraz udokumentować wyniki w sprawie zmiany w produkcie.
 
 ## <a name="maintaining-routes"></a>Obsługa marszrut
+
 W zależności od wymagań biznesowych może być możliwe zmniejszenie nakładu pracy wymaganego do zarządzania definicjami procesów.
 
 ### <a name="making-routes-independent-of-resources"></a>Uniezależnianie marszrut od zasobów
@@ -224,10 +226,10 @@ Kiedy używasz tej metody, strona **Relacje operacji** staje się głównym miej
 
 Jeśli w ramach zapotrzebowania na zasoby dla operacji nie określisz zasobu operacyjnego ani grupy zasobów, odnośne zasoby mogą pracować z różnymi prędkościami. W związku z tym czas potrzebny na przetwarzanie operacji może się różnić. Aby rozwiązać ten problem, można użyć pola **Formuła** w relacji operacji, aby określić sposób obliczania czasu procesu. Dostępne są następujące opcje:
 
--   **Standardowy** — (Opcja domyślna) W obliczeniu są używane tylko pola z relacji operacji, a podany czas wykonywania jest mnożony przez ilość zamówienia.
--   **Zdolności produkcyjne** — Obliczanie obejmuje pole **Zdolności produkcyjne** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu. Wartość określona w zasobie operacyjnym jest zdolnościami produkcyjnymi na godzinę. **Czas procesu** jest obliczany jako **Ilość zamówienia** podzielona przez **Zdolności produkcyjne**.
--   **Partia** — Wielkość partii jest obliczana przy użyciu informacji z relacji operacji. Liczbę partii, i w związku z tym czas procesu, można następnie obliczyć na podstawie ilości zamówienia.
--   **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
+- **Standardowy** — (Opcja domyślna) W obliczeniu są używane tylko pola z relacji operacji, a podany czas wykonywania jest mnożony przez ilość zamówienia.
+- **Zdolności produkcyjne** — Obliczanie obejmuje pole **Zdolności produkcyjne** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu. Wartość określona w zasobie operacyjnym jest zdolnościami produkcyjnymi na godzinę. **Czas procesu** jest obliczany jako **Ilość zamówienia** podzielona przez **Zdolności produkcyjne**.
+- **Partia** — Wielkość partii jest obliczana przy użyciu informacji z relacji operacji. Liczbę partii, i w związku z tym czas procesu, można następnie obliczyć na podstawie ilości zamówienia.
+- **Partia zasobów** — Ta opcja zasadniczo działa tak samo, jak opcja **Partia**. Jednak obliczanie obejmuje pole **Wielkość partii** z zasobu operacyjnego. W związku z tym czas jest zależny od zasobu.
 
 ### <a name="set-up-route-groups"></a>Ustawianie grup marszrut
 
