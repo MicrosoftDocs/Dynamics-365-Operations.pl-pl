@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-ms.author: v-elgolu
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b26ec55f8ee5fe43e7f6cd6d42c78f0c0a49114f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 64868aa08201fa3df99cd86fa6ef5231a9347151
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183836"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983086"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Konfigurowanie osób podpisujących drukowane formularze
 

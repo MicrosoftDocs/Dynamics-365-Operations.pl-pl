@@ -13,15 +13,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Poland
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e18bab8edf81f01e6bd2bddb52b55b748e923e2
-ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
+ms.openlocfilehash: 97caec78ddc73b1217c708fb6caf61b3bbe0d429
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "3457579"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979540"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 

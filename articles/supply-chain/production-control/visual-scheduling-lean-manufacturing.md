@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6710dcb1cb53e7221b03b35ceee5ac8e055b6dd2
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826413"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958748"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
@@ -61,7 +61,7 @@ Strona **Tablica harmonogramu Kanban** zawiera siedem głównych elementów, jak
 
 ### <a name="view-the-time-scale"></a>Wyświetlanie skali czasu
 
-Tablica jest podzielona na okresy, z których każdy jest reprezentowany jako węzeł (4). Węzły okresów są wyświetlane na osi pionowej, a oś pozioma reprezentuje skalę czasu (7) pokazującą długość okresów. Okres ma długość jednego dnia lub tygodnia. Długość okresu zależy od konfiguracji komórki roboczej zaznaczonej na tablicy harmonogramu Kanban (2). Dla każdego węzła okresu tablica harmonogramu Kanban wskazuje, ile zaplanowanych zadań Kanban będzie ładowanych w okresie. Wyświetlany jest również wskaźnik maksymalnej produktywności w okresie. Jeśli zaplanowana produktywność przekracza maksymalną dostępną przepustowość, okres jest uważany za przeciążony i pojawia się czerwony symbol ostrzegawczy. Zaplanowane zadanie Kanban pojawia się w okresie, który ma zaplanowane czasy rozpoczęcia i zakończenia (5). Długość zadania jest równa czasowi działania. Zadania Kanban są wyświetlane jako nakładające się w okresie, jeżeli ich czasy działań przekraczają czas taktu komórki roboczej.
+Tablica jest podzielona na okresy, z których każdy jest reprezentowany jako węzeł (4). Węzły okresów są wyświetlane na osi pionowej, a oś pozioma reprezentuje skalę czasu (7) pokazującą długość okresów. Okres ma długość jednego dnia lub tygodnia. Długość okresu zależy od konfiguracji komórki roboczej zaznaczonej na tablicy harmonogramu Kanban (2). Dla każdego węzła okresu tablica harmonogramu Kanban wskazuje, ile zaplanowanych zadań Kanban będzie ładowanych w okresie. Wyświetlany jest również wskaźnik maksymalnej produktywności w okresie. Jeśli zaplanowana produktywność przekracza maksymalną dostępną przepustowość, okres jest uważany za przeciążony i pojawia się czerwony symbol ostrzegawczy. Zaplanowane zadanie Kanban pojawia się w okresie, który ma zaplanowane czasy rozpoczęcia i zakończenia (5). Długość zadania jest równa czasowi działania. Zadania Kanban są wyświetlane jako nakładające się w okresie, jeżeli ich czasy działań przekraczają czas zadań komórki roboczej.
 
 ### <a name="view-job-status"></a>Wyświetlanie stanu zadania
 

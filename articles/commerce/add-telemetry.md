@@ -3,7 +3,7 @@ title: Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 description: W tym temacie opisano sposób dodawania kodu skryptów po stronie klienta do stron witryny w celu obsługi zbierania danych telemetrycznych po stronie klienta.
 author: bicyclingfool
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
+ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761256"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3901503"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 
@@ -64,6 +64,9 @@ Aby utworzyć fragment do ponownego użycia dla kodu skryptu zewnętrznego w kon
 1. W okienku właściwości po prawej stronie w obszarze **Źródło skryptu** dodaj zewnętrzny lub względny adres URL dla zewnętrznego źródła skryptów. Następnie skonfiguruj inne opcje stosownie do potrzeb.
 1. Wybierz **Zapisz** i następnie wybierz **Zakończ edycję**.
 1. Wybierz opcję **Publikuj**.
+
+> [!NOTE]
+> Jeśli dla danej witryny jest włączona zasada zabezpieczeń zawartości (CSP), upewnij się, że wszystkie zewnętrzne adresy URL są dodane do dyrektywy **script-src** zasad CSP w module konstruktora witryn Commerce. Aby uzyskać więcej informacji, zajrzyj do [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md).
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Dodawanie fragmentu zawierającego kod skryptu do szablonu
 
