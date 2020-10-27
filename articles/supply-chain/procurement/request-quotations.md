@@ -3,7 +3,7 @@ title: Omówienie zapytań ofertowych (ZO)
 description: W tym temacie opisano zapytania ofertowe (ZO). Organizacje wystawiają zapytania ofertowe (ZO), kiedy chcą uzyskać od kilku dostawców konkurencyjne oferty na produkty i usługi, które muszą kupić.
 author: mkirknel
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eedf6b08ef9a4b7f164db60433dd16922a8ec807
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895627"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973507"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
@@ -34,23 +34,21 @@ Można również poprosić dostawców, aby określili, czy są jakieś dodatkowe
 
 Proces ZO składa się z następujących zadań:
 
-1.  Utworzenie i wysyłanie ZO do jednego lub większej liczby dostawców.
-
-2.  Otrzymywanie i rejestrowanie ofert (odpowiedzi na ZO).
-
-3.  Przenoszenie zaakceptowanych ofert do zamówienia zakupu, umowy zakupu lub zapotrzebowania na zakup.
+1. Utworzenie i wysyłanie ZO do jednego lub większej liczby dostawców.
+1. Otrzymywanie i rejestrowanie ofert (odpowiedzi na ZO).
+1. Przenoszenie zaakceptowanych ofert do zamówienia zakupu, umowy zakupu lub zapotrzebowania na zakup.
 
 Na poniższej ilustracji przedstawiono przegląd procesu ZO.
 
 [![Proces RFQ](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
-Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup albo wprowadzać je ręcznie. Sprawa ZO to podstawowy dokument używany do wysyłania ZO do każdego dostawcy.+
+Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup albo wprowadzać je ręcznie. Sprawa ZO to podstawowy dokument używany do wysyłania ZO do każdego dostawcy.
 
 Po przygotowaniu sprawy ZO i dodaniu dostawców wybierz opcję **Wyślij** (**Wysyłanie i publikowanie** w przypadku podmiotów z sektora publicznego) w sprawie ZO. Dla każdego dostawcy, do którego wysłano ZO generowany jest arkusz ZO. Można skonfigurować opcje drukowania dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.
 
 W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
-Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.+
+Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.
 
 Po otrzymaniu ofert w wiadomości e-mail można je obsługiwać na stronie **Zapytania ofertowe**.
 
@@ -68,15 +66,10 @@ Te stany zostaną opisane bardziej szczegółowo w dalszej części tego tematu.
 
 Aby można było tworzyć sprawy ZO, należy skonfigurować informacje ZO na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu sprawy ZO można określić wartości domyślne, które są kopiowane do ZO. Można określić następujące wartości domyślne:
 
--   Typ zakupu nowych ZO: **Zamówienia zakupu** lub **Umowy zakupu**
-
--   Przesunięcie daty i godziny ważności od dnia utworzenia sprawy ZO
-
--   Typ zdobywania zamówień, który może domyślnie podstawiać określoną metodę punktowania do sprawy ZO
-
--   Informacje o dostawie i warunki płatności
-
--   Pola, które powinny znajdować się w ofercie
+- Typ zakupu nowych ZO: **Zamówienia zakupu** lub **Umowy zakupu**
+- Przesunięcie daty i godziny ważności od dnia utworzenia sprawy ZO.
+- Typ zdobywania zamówień, który może domyślnie podstawiać określoną metodę punktowania do sprawy ZO.
+- Informacje o dostawie i warunki płatności.
 
 Można zastąpić te wartości dla określonej sprawy ZO.
 
@@ -84,37 +77,25 @@ Należy także skonfigurować proces poprawki. W ramach tej konfiguracji można 
 
 Na stronie **Parametry modułu Zaopatrzenie i sourcing** można wybrać szablon do użycia dla powiadomienia w wiadomości e-wysyłanego do dostawców. Po utworzeniu szablonu w oknie **Szablony wiadomości e-mail** może on zawierać następujące tokeny wymiany:
 
--   %RFQ case%
-
--   %Przyczyna zwrotu oferty%
-
--   %Przyczyna sporządzenia poprawki%
-
--   %Poprawka przygotowana przez%
-
--   %Firma%
-
--   %RFQ case name%
-
--   %Expiry Date Time%
-
--   %Date%
+- %RFQ case%
+- %Przyczyna zwrotu oferty%
+- %Przyczyna sporządzenia poprawki%
+- %Poprawka przygotowana przez%
+- %Firma%
+- %RFQ case name%
+- %Expiry Date Time%
+- %Date%
 
 Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje tekst, który pracownik działu zakupów może wpisać po zakończeniu poprawki w **kreatorze poprawek**. Wartości tokenów %poprawki przygotowane przez% i %firma% są automatycznie pobierane z ZO. Token %Date% jest zastępowany przez bieżącą datę.
 
-Jeśli chcesz anulować ZO po jego wysłaniu, można to zrobić z poziomu sprawy ZO. W przypadku anulowania trzeba użyć szablonu wiadomości e-mail, aby wysłać powiadomienie o anulowaniu do osób kontaktowych dostawcy. Szablon należy wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
+Jeśli chcesz anulować ZO po jego wysłaniu, można to zrobić z poziomu sprawy ZO. W przypadku anulowania należy użyć szablonu wiadomości e-mail, aby wysłać powiadomienie o anulowaniu do osób kontaktowych dostawcy. Szablon należy wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
 
--   %Reason for cancellation%
-
--   %RFQ case%
-
--   %RFQ cancelled by%
-
--   %Firma%
-
--   %RFQ case name%
-
--   %Date%
+- %Reason for cancellation%
+- %RFQ case%
+- %RFQ cancelled by%
+- %Firma%
+- %RFQ case name%
+- %Date%
 
 Token %Reason for cancellation% jest zastępowany przez tekst, który specjalista ds. zaopatrzenia może wprowadzić w kreatorze **Anulowanie**. Token %Date% jest zastępowany przez bieżącą datę.
 
@@ -130,6 +111,19 @@ Gdy tworzysz sprawę ZO typu Zamówienie zakupu i dodajesz pozycję magazynową 
 
 Jako menedżer lub agent ds. zakupów możesz tworzyć i obsługiwać typy zdobywania zamówień tak, aby spełniały wymogi zamówień dla danej organizacji. Każdy typ zdobywania zamówień można powiązać z metodą punktowania. Metody punktowania zawierają szereg kryteriów, których można używać podczas oceny ofert. Należy skonfigurować typy zdobywania zamówień, metody punktowania oraz kryteria określania wyników na stronach **Typ zdobywania zamówień** i **Metoda punktowa**.
 
+## <a name="choose-default-fields-to-include-in-vendor-rfq-reply-forms"></a><a name="default-reply-fields"></a>Wybierz pola domyślne, które mają być uwzględnione w formularzach odpowiedzi na ZO dostawcy
+
+Możesz określić typy informacji, które chcesz otrzymać od dostawców w odpowiedziach (złożonych ofertach) na zapytanie ofertowe (ZO). Pola, które należy oznaczyć jako domyślne, są zawarte w formularzu online dostarczonym do współpracy z dostawcami. Aby określić ustawienia:
+
+1. Jeśli nie zostało to jeszcze zrobione, Skorzystaj ze strony [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby włączyć funkcje *Wybierz pola ZO, które mają być uwzględnione w formularzach odpowiedzi na ZO dostawcy*.
+1. Przejdź do **Zaopatrzenie i sourcing > Ustawienia > Parametry modułu Zaopatrzenie i sourcing**.
+1. Otwórz kartę **Zapytanie ofertowe**.
+1. Wybierz łącze pól odpowiedzi **Domyślne zapytania ofertowe** w obszarze **Ustaw wartości domyślne dla zapytań ofertowych**.
+1. Zostanie otwarte okno dialogowe **Domyślne pola odpowiedzi na zapytanie ofertowe**.
+1. **Pola ZO uwzględnione w formularzach odpowiedzi na ZO dostawców** zawierają suwak dla każdego pola, które jest dostępne do użytku w formularzach odpowiedzi na ZO. Pola ustawione na wartość *Tak* w tej sekcji zostaną uwzględnione (wraz z ich wartościami) w formularzach odpowiedzi na ZO. Ustaw suwak na wartość *Nie* dla każdego pola, w którym dostawcy nie będą mogli wyświetlać danych podczas przeglądania ofert. Umożliwia to wprowadzenie oszacowanych lub oczekiwanych wartości podczas wprowadzania ZO do celów wewnętrznych, bez konieczności wyświetlania przez dostawcę tego, co zostało wprowadzone.
+
+W razie potrzeby można zastąpić te ustawienia dla poszczególnych spraw ZO.
+
 ## <a name="creating-and-sending-an-rfq"></a>Tworzenie i wysyłanie ZO
 
 Utwórz sprawę ZO, wybierz dostawców, od których chcesz uzyskać oferty dla sprawy ZO, a następnie wyślij ZO do dostawców. Można użyć ustawień drukowania do kierowania raportu ZO i raportów arkuszy odpowiedzi do preferowanego miejsca docelowego.
@@ -138,15 +132,13 @@ Można ręcznie utworzyć sprawę ZO o typie zakupu **Zamówienie zakupu** lub *
 
 Jeśli sprawa ZO jest typu **Zamówienie zakupu**, występuje następujące zachowanie różniące się od innych typów spraw ZO:
 
--   Podczas tworzenia wierszy sprawy ZO generowane są transakcje magazynowe, które mają stan przyjęcia **Przyjęcie oferty**.
-
--   Po zaakceptowaniu oferty generowane jest zamówienie zakupu.
+- Podczas tworzenia wierszy sprawy ZO generowane są transakcje magazynowe, które mają stan przyjęcia **Przyjęcie oferty**.
+- Po zaakceptowaniu oferty generowane jest zamówienie zakupu.
 
 Jeśli ZO jest typu **Umowa zakupu**, występuje następujące zachowanie różniące się od innych spraw ZO:
 
--   Sprawa ZO jest używana dla umowy zakupu w celu zakupu określonej ilości lub wartości produktu w pewnym czasie. Należy wybrać zakres dat, którego dotyczy umowa zakupu i nazwisko osoby, która zarządza umową.
-
--   Po zaakceptowaniu oferty generowana jest umowa zakupu.
+- Sprawa ZO jest używana dla umowy zakupu w celu zakupu określonej ilości lub wartości produktu w pewnym czasie. Należy wybrać zakres dat, którego dotyczy umowa zakupu i nazwisko osoby, która zarządza umową.
+- Po zaakceptowaniu oferty generowana jest umowa zakupu.
 
 Jeśli sprawa ZO jest generowana na podstawie zapotrzebowania na zakup, typ **Zapotrzebowanie na zakup** jest przypisywany automatycznie. Nie można ręcznie utworzyć sprawy ZO typu **Zapotrzebowanie na zakup**.
 
@@ -156,6 +148,7 @@ Po utworzeniu sprawy ZO można wybrać typ zdobywania zamówień. Typ zdobywania
 
 Kwestionariusz można dodać do sprawy ZO. Będzie on widoczny we wszystkich odpowiedziach na ZO po wysłaniu ZO. Wypełnienie kwestionariusza jest zadaniem wymaganym, zanim będzie można przesłać ofertę.
 
+Chociaż są dostępne wartości domyślne, w razie potrzeby można zmienić ustawienia **pól ZO zawartych w ustawieniach formularzy odpowiedzi na ZP dostawców** dla poszczególnych spraw ZO. W tym celu utwórz lub otwórz sprawę ZO. Następnie w okienku akcji kartę **Oferta**, a następnie w sekcji **Odpowiedzi** wybierz opcję **Ustaw wartości domyślne odpowiedzi na ZO**. Zostanie otwarte okno dialogowe **Domyślne pola odpowiedzi na zapytanie ofertowe**, które działa tak samo, jak podczas wyboru ustawień domyślnych dla formularzy odpowiedzi na ZO, z wyjątkiem tego, że zmian wprowadzone tutaj mają wpływ tylko na bieżącą sprawę ZO. Aby uzyskać szczegółowe informacje dotyczące włączania tej funkcji i sposobu jej działania, zobacz temat [Wybierz pola domyślne, które mają być uwzględnione w formularzach odpowiedzi na ZO dostawców](#default-reply-fields).
 
 Istnieją trzy sposoby wyboru dostawców dodawanych do sprawy ZO:
 
@@ -166,7 +159,6 @@ Istnieją trzy sposoby wyboru dostawców dodawanych do sprawy ZO:
 Gdy sprawa ZO jest gotowa, wybierz opcję **Wyślij**. Akcja Wyślij tworzy nowe arkusze i raporty, które będzie można drukować, archiwizować i wysyłać zgodnie z ustawieniami drukowania.
 
 Jeśli podczas wysyłania ZO do dostawcy ustawiono opcję **Użyj dostawcy w celu ponownego obliczenia cen** i **Użyj informacji o towarze specyficznym dostawcy** na **Tak** na stronie **Wysyłanie zapytania ofertowego**, niektóre informacje właściwe dla dostawcy są wprowadzane automatycznie w ZO dla tego dostawcy.
-
 
 ## <a name="amending-an-rfq-case"></a>Wprowadzanie poprawek w sprawie ZO
 
@@ -179,7 +171,6 @@ W przypadku skonfigurowania mniej restrykcyjnej metody wprowadzania zmian nie tr
 Jeżeli dostawcy korzystają z interfejsu portalu współpracy dostawcami do wprowadzania ofert, należy zawsze użyć procesu zmiany do powiadomienia dostawców o zmianach w sprawie ZO. Ten proces pozwala zapobiec sytuacji, w której dostawcy składają oferty dotyczące nieaktualnej sprawy ZO, gdy ich oferta jest w toku. Aby uzyskać więcej informacji o portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Jeżeli chcesz zastąpić dodatkowych dostawców do oferty i nie wprowadzono zmian w sprawie RFQ case, możesz użyć przycisku **Wyślij**. Dodani dostawcy będą widoczni na stronie **Wyślij** i otrzymają zaproszenie w wiadomości e-mail.
-
 
 ## <a name="receiving-and-registering-rfq-replies"></a>Odbieranie i rejestrowanie odpowiedzi na ZO
 
@@ -208,29 +199,20 @@ Po uzyskaniu odpowiedzi można dodać kod przyczyny wyjaśniającej, dlaczego of
 
 Po zaakceptowaniu oferty typu **Zapotrzebowanie na zakup** wiersze zapotrzebowania na zakup zostaną zaktualizowane o następujące informacje, które odzwierciedlają dane zaakceptowanej oferty:
 
--   Cena jednostkowa
-
--   Procent rabatu
-
--   Kwota rabatu
-
--   Opłaty od zakupu
-
--   Opłaty za wierszy
-
--   Dostawca
-
--  numer zewnętrzny,
-
--   Zewnętrzny opis
-
+- Cena jednostkowa
+- Procent rabatu
+- Kwota rabatu
+- Opłaty od zakupu
+- Opłaty za wierszy
+- Dostawca
+- numer zewnętrzny,
+- Zewnętrzny opis
 
 W poniższej tabeli przedstawiono, jak zmienia się stan ZO w przypadku akceptowania lub odrzucania ofert od dostawców.
 
-<a name="statuses--highest-and-lowest"></a>Stany — najniższy i najwyższy
------------------------------
+## <a name="statuses--highest-and-lowest"></a>Stany — najniższy i najwyższy
 
-W oknie sprawy ZO na karcie Dostawca widać wiersze z najwyższym i najniższym stanem dla określonego dostawcy. Jeśli w momencie dodawania dostawcy nie zostały jeszcze wysłane żadne wiersze, pola najniższego i najwyższego stanu mają wartość <strong>Utworzone</strong>. Po wysłaniu do dostawcy ZO ze wszystkimi wierszami oba wiersze otrzymują stan <strong>Wysłane</strong>. Jeśli niektóre wiersze w ofercie od dostawcy są zaakceptowane, a inne są odrzucone, odrzucone wiersze otrzymają najniższy stan, którym jest <strong>Odrzucone</strong>, a wiersze zaakceptowane otrzymają najwyższy stan, którym jest <strong>Zaakceptowane</strong>.
+W oknie sprawy ZO na karcie Dostawca widać wiersze z najwyższym i najniższym stanem dla określonego dostawcy. Po dodaniu dostawcy, jeżeli nie wysłano jeszcze żadnych wierszy, zarówno najniższy, jak i najwyższy stan to <strong>Utworzone</strong>. Po wysłaniu ZO do dostawcy ze wszystkimi wierszami stan tych dwóch wierszy zmieni się na <strong>Wysłane</strong>. Jeśli niektóre wiersze w ofercie od dostawcy są zaakceptowane, a inne są odrzucone, odrzucone wiersze otrzymają najniższy stan, którym jest <strong>Odrzucone</strong>, a wiersze zaakceptowane otrzymają najwyższy stan, którym jest <strong>Zaakceptowane</strong>.
 
 W wierszach sprawy ZO widać najwyższy i najniższy stan każdego wiersza u wszystkich dostawców. Jeśli wiersz został wysłany do wszystkich dostawców w sprawie ZO, a jeszcze nikt nie odpowiedział, najniższy i najwyższy stan mają wartość **Wysłane**. Gdy co najmniej jeden dostawca odpowie, najwyższy stan zmienia się na **Otrzymane**. Po dodaniu nowego dostawcy do sprawy najniższy stan zmienia się na **Utworzone**
 

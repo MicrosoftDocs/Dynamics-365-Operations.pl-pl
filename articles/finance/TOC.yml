@@ -70,6 +70,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.15 (styczeń 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Rozwiązanie Finance w wersji 10.0.14 (listopad 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Rozwiązanie Finance w wersji 10.0.13 (październik 2020)
@@ -192,9 +194,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
                 - name: Przenoszenie licencji między typami umów
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
-                - name: Przenoszenie projektów implementacji w usłudze LCS do innych dzierżaw usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS do różnych dzierżawców usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
-                - name: Wiele projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS z lokalnego źródła do chmury
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
+                - name: Wiele projektów i środowisk produkcyjnych usługi LCS w tym samym dzierżawcy usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Rozrachunki z dostawcami
           items:
@@ -226,7 +230,17 @@
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Konfigurowanie weryfikacji uzgadniania faktur w module Rozrachunki z dostawcami
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy
+            - name: Automatyzacja faktur od dostawców
+              items:
+                - name: Omówienie zautomatyzowanych procesów fakturowania od dostawców
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Opcje ustawień automatyzacji faktur od dostawców
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Wyświetlanie wyników automatyzacji faktur od dostawców
+                  href: accounts-payable/view-automated-vendor-invoice.md
+            - name: Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawców
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -256,9 +270,9 @@
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Zatwierdzanie faktur na urządzeniach przenośnych
               href: accounts-payable/mobile-invoice-approvals.md
-            - name: Obszar roboczy fakturowania w portalu współpracy z dostawcami
+            - name: Obszar roboczy fakturowania współpracy z dostawcami
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Automatyzacja obsługi faktur od dostawców
+            - name: Automatyzacja faktur dla zeskanowanych dokumentów
               href: accounts-payable/vendor-invoice-automation.md
             - name: Zarządzanie umowami z brokerami
               href: accounts-payable/broker-contract.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Raport wiekowania dla odbiorców
+              href: accounts-receivable/customer-aging.md
             - name: Tworzenie arkusza odpisów dla odbiorcy
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Zarządzanie notatkami zaawansowanymi
@@ -792,6 +808,10 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Amortyzacja liniowa za okres użytkowania
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Wynajem składnika majątku
+          items:
+            - name: Wynajem składnika majątku — rozpoczęcie
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Księga główna
           items:
             - name: Omówienie księgi głównej
@@ -1884,7 +1904,7 @@
                   items:
                     - name: Omówienie podatku GST w Indiach
                       href: localizations/apac-ind-gst.md
-                    - name: Nowości i zmiany lokalizacji podatku GST w Indiach (Azji Południowo-Wschodnia)
+                    - name: Nowości i zmiany lokalizacji podatku GST w Indiach
                       items:
                         - name: Nowości i zmiany w wersji 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,6 +1932,8 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Nowości i zmiany w wersji 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
+                        - name: Nowości i zmiany w wersji 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
                     - name: Grupy odwołania podatku GST (Indie)
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: Integracja podatku GST w kasach
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Transakcja zapasów
                       items:
+                        - name: Zamówienia przeniesienia zapasów
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: 'Zamówienia przeniesienia zapasów, które mają podatek od ceny przeniesienia'
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Transakcja płatności odbiorcy
@@ -2076,13 +2100,11 @@
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: Progi podatkowe — często zadawane pytania
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Przeniesienia zapasów
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Włochy
               items:
                 - name: Włochy — omówienie
                   href: localizations/italy.md
-                - name: Szczegóły sprawozdania VAT
+                - name: Szczegóły sprawozdań VAT
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Raport czarnej listy
                   href: localizations/emea-ita-black-list-report.md
@@ -2614,7 +2636,7 @@
                           href: localizations/rus-sales-on-commission.md
                 - name: Zapasy
                   items:
-                    - name: Towar od dostawcy w drodze
+                    - name: Towar w drodze od dostawcy
                       href: localizations/rus-goods-transit-vendor.md
                     - name: Numery deklaracji celnych
                       href: localizations/rus-custom-declaration-number.md

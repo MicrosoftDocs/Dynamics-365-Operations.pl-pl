@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269988"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961617"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Zapisywanie, pogląd i publikowanie strony
 
@@ -38,7 +38,7 @@ Po zapisaniu strony zmiany są widoczne tylko dla użytkownika. Operacja zapisyw
 
 ## <a name="preview-a-page"></a>Podgląd strony
 
-Narzędzie autorskie Tool oferuje dwa rodzaje funkcji wersji podglądu: „wyświetlane informacje to okienko podglądu” (WYSIWYG) w edytorze stron i osobnym oknie podglądu.
+Narzędzie autorskie oferuje dwa rodzaje funkcji wersji podglądu: wizualny konstruktor stron, czyli okienko podglądu „widoczne dla użytkownika” (WYSIWYG) w edytorze stron i osobnym oknie podglądu.
 
 Gdy jest używany edytor stron, w środkowym okienku jest wyświetlany komunikat „widoczny dla użytkownika” (WYSIWYG). Podgląd ten jest automatycznie aktualizowany przy każdym zapisywaniu strony. Można je również zaktualizować ręcznie, klikając przycisk **Odśwież** na pasku poleceń. Podgląd w trybie WYSIWYG renderuje stronę w taki sposób, jak będzie widoczna dla użytkowników witryny.
 

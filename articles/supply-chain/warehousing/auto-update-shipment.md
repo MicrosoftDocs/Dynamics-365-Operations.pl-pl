@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: baa8207f9f3a3de071033c4c70f60a339ec5e083
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
+ms.sourcegitcommit: 2bc8e760c7a82572c7eafd51f2e57ef11b4ca98b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677345"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3900993"
 ---
 # <a name="shipment-auto-updates"></a>Automatyczne aktualizacje wysyłki
 
@@ -39,7 +39,7 @@ Funkcja automatycznej aktualizacji wysyłki dotyczy zarówno wierszy zamówienia
 
 Funkcja automatycznej aktualizacji wysyłki polega przede wszystkim na statusie wysyłki w celu określenia, czy ilość w wierszu ładunku powinna zostać zmieniona, gdy zmiana jest wykonywana w wierszu zamówienia sprzedaży lub w wierszu zamówienia przeniesienia. Jest także uzależnione przede wszystkim od stanu wysyłki w celu ustalenia, kiedy nowy wiersz ładunku ma być automatycznie dodawany do istniejącego ładunku. Jeśli stan wysyłki to **W grupie czynności** lub wyższy, nie ma żadnej automatycznej aktualizacji.
 
-Stan grupy czynności jest uwzględniany również w przypadku aktualizacji automatycznych. Jeśli dana fala związana z wierszem ładunku ma stan **Wstrzymano**, **W trakcie wykonywania**, **Zwolniono**, **Pobrano** lub **Wysłano**, jeśli użytkownik spróbuje zmniejszyć ilość w wierszu ładunku (w wyniku zmniejszenia ilości w wierszu zamówienia sprzedaży lub zamówienia przeniesienia) wyświetlany jest następujący komunikat o błędzie: „nie można usunąć rezerwacji, ponieważ utworzono pracę, która opiera się na rezerwacjach”. Ponadto, jeśli dla grupy czynności istnieje jeden z wyżej wymienionych stanów grupy czynności, jeśli użytkownik próbuje pośrednio zwiększyć ilość w wierszu ładunku przez zmniejszenie ilości w wierszu zamówienia sprzedaży lub zamówienia przeniesienia, ilość w wierszu ładunku nie jest automatycznie zwiększana. W takim przypadku wiersz ładunku musi zostać ręcznie zaktualizowany.
+Stan grupy czynności jest uwzględniany również w przypadku aktualizacji automatycznych. Jeśli dana fala związana z wierszem ładunku ma stan **Wstrzymano**, **W trakcie wykonywania**, **Zwolniono**, **Pobrano** lub **Wysłano**, jeśli użytkownik spróbuje zmniejszyć ilość w wierszu ładunku (w wyniku zmniejszenia ilości w wierszu zamówienia sprzedaży lub zamówienia przeniesienia) wyświetlany jest następujący komunikat o błędzie: „nie można usunąć rezerwacji, ponieważ utworzono pracę, która opiera się na rezerwacjach”. Ponadto, jeśli dla grupy czynności istnieje jeden z wyżej wymienionych stanów grupy czynności, jeśli użytkownik próbuje pośrednio zwiększyć ilość w wierszu ładunku przez zwiększenie ilości w wierszu zamówienia sprzedaży lub zamówienia przeniesienia, ilość w wierszu ładunku nie jest automatycznie zwiększana. W takim przypadku wiersz ładunku musi zostać ręcznie zaktualizowany.
 
 ## <a name="scenarios"></a>Scenariusze
 

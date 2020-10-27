@@ -3,7 +3,7 @@ title: Skróty klawiaturowe
 description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761628"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962527"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -32,6 +32,8 @@ Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie dany
 
 > [!NOTE]
 > Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
+
+Niektóre skróty na tej stronie są *zestawami klawiszy*, co oznacza, że wymagają one dwóch kolejnych zestawów kombinacji klawiszy (oddzielonych przecinkiem), które muszą zostać naciśnięte niezależnie w celu uruchomienia wymaganej akcji. Na przykład skrót „Alt + M, A” wymaga, aby użytkownik musi najpierw nacisną klawisze „Alt + M”, zwolnić klawisze, a następnie nacisnąć klawisz „A”. 
 
 ## <a name="finding-a-shortcut"></a>Znajdowanie skrótu
 
@@ -193,7 +195,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do zawartości strony głównej (gdy fokus jest w innym okienku)                    | Alt+M, M                    |
 | Przejdź do okienka pola informacji (może obejmować jego otwarcie)                       | Alt+M, B lub Ctrl+F2         |
 
-## <a name="personalization-shortcuts"></a>Skróty personalizacji
+## <a name="personalization-shortcuts"></a>Skróty [personalizacji](personalize-user-experience.md) 
 
 | Funkcja                                                                                                             | Klawisze                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do okienka wyżej/niżej w wyszukiwaniu                                                                                       | Page up / Page down              |
 | Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
 
+## <a name="task-recordershortcuts"></a>Skróty [Rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md) 
+
+| Funkcja                                                                    | Naciśnij klawisz                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| Zatrzymywanie rejestrowania (podczas rejestrowania)                                          | Alt+R, S                    |
+| Przełączanie widoczności okienka Rejestratora zadań (podczas rejestrowania)             | Alt+R, T                    |
+| Przełączanie tryb szyn (podczas odtwarzania przewodnika zadania)                                | Alt+R, L                    |
+| Przejście do poprzedniego kroku (podczas odtwarzania przewodnika zadania)                          | Alt+R, P                    |
+| Przejście do następnego kroku (podczas odtwarzania przewodnika zadania)                              | Alt+R, N                    |
+| Przełączanie fokusu między stroną a animowanym monitem podręcznym (podczas odtwarzania przewodnika zadania) | Alt+R, F               |
+| Rozwinięcie/zwinięcie animowanego monitu podręcznego (przy odtwarzaniu przewodnika zadania)              | Alt+R, C                    |
+| Pokaż więcej/mniej informacji w animowanym monicie podręcznym (podczas odtwarzania przewodnika po zadaniach) | Alt+R, M                    |
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

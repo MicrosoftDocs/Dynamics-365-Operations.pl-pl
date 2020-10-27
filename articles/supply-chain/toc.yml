@@ -70,12 +70,12 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management w wersji 10.0.14 (listopad 2020)
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.15 (grudzień 2020)
+                      href: get-started/whats-new-scm-10-0-15.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.14 (listopad 2020)
                       href: get-started/whats-new-scm-10-0-14.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.13 (październik 2020)
                       href: get-started/whats-new-scm-10-0-13.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.12 (sierpień 2020)
-                      href: get-started/whats-new-scm-10-0-12.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
@@ -192,9 +192,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przenoszenie licencji między typami umów
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Przenoszenie projektów implementacji w usłudze LCS do innych dzierżaw usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS do różnych dzierżawców usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Wiele projektów usługi LCS i środowisk produkcyjnych w tej samej dzierżawie usługi Azure AD
+                - name: Przenoszenie projektów wdrożeniowych usługi LCS z lokalnego źródła do chmury
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Wiele projektów i środowisk produkcyjnych usługi LCS w tym samym dzierżawcy usługi Azure AD
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalizacja
           items:
@@ -202,13 +204,17 @@
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
             - name: Aktualizacje wymagane przepisami prawa
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Indie
+              items:
+                - name: Zamówienia przeniesienia zapasów
+                  href: ../finance/localizations/apac-ind-stock-transfer.md
             - name: Rosja
               items:
                 - name: Rosja — omówienie
                   href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zapasy
                   items:
-                    - name: Towar od dostawcy w drodze
+                    - name: Towar w drodze od dostawcy
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
         - name: Zarządzanie składnikami majątku
           items:
@@ -1407,6 +1413,8 @@
                   href: master-planning/supply-chain-calendars-master-planning.md
                 - name: Zwiększanie wydajności planowania głównego
                   href: master-planning/master-planning-performance.md
+                - name: Optymalizowanie wydajności aparatu planowania
+                  href: master-planning/scheduling-engine-performance.md
                 - name: Plany główne i funkcjonalność wielooddziałowości
                   items:
                     - name: Omówienie planowania głównego i funkcjonalności wielooddziałowości
@@ -1939,6 +1947,8 @@
                       href: pim/tasks/maintain-bom-product-configuration-model.md
                     - name: Obsługa marszruty dla modelu produktu
                       href: pim/tasks/maintain-route-product-model.md
+                    - name: Ceny sprzedaży oparte na atrybutach dla konfiguracji produktu opartej na ograniczeniu
+                      href: pim/attribute-based-product-configurator.md
                     - name: Zatwierdzanie modelu konfiguracji produktu
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Przesyłanie danych dla modeli produktu
@@ -2035,6 +2045,8 @@
                       href: production-control/config-job-card-device.md
                     - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
                       href: production-control/report-finished-job-device.md
+                    - name: Zapewnianie przewodników Guides rzeczywistości mieszanej dla pracowników w produkcji
+                      href: production-control/instruction-guides-in-production-overview.md
                     - name: Wycofywanie stanu zlecenia produkcyjnego
                       href: production-control/reverse-production-order-status.md
                     - name: Uzyskiwanie wglądu w wyjątki dotyczące materiałów
@@ -2649,6 +2661,10 @@
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Włączanie drukowania etykiet numeru identyfikacyjnego
                       href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Tworzenie zamówień przeniesienia z aplikacji magazynu
+                      href: warehousing/create-transfer-order-from-warehouse-app.md
+                    - name: Przetwarzanie zdarzenia aplikacji magazynu
+                      href: warehousing/warehouse-app-events.md
                     - name: Potwierdzenie pobrania sztuk
                       href: warehousing/piece-picking-confirmation.md
                     - name: Materiały opakowań i opłaty
@@ -2845,6 +2861,8 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Struktura przewodnika procesu
                       href: warehousing/process-guide-framework.md
+                    - name: Rozwiązywanie problemów z połączeniem aplikacji magazynu
+                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Uaktualnianie i migracja
                   items:
                     - name: Uaktualnianie procesów zarządzania magazynem z Microsoft Dynamics AX 2012 do Finance and Operations

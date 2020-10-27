@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7a1721b3206f8a3df010f26dc31e3ac4e5e0878b
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887023"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987396"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
@@ -48,7 +48,7 @@ Jeżeli chcesz skonfigurować klucz minimum na potrzeby zwiększonego popytu sez
 
 1. Utwórz 12 wierszy i przypisz numer od 1 do 12 wierszy w polu **Zmiana**.
 2. W polu **Jednostka** zaznacz opcję **Miesiące**.
-3. W polu**Współczynnik** wprowadź wartości opisane w poniższej tabeli.
+3. W polu **Współczynnik** wprowadź wartości opisane w poniższej tabeli.
 
 |Liniowy|Wprowadź tę wartość|Wynik|
 |---|---|---|

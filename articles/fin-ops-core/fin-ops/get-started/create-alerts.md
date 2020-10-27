@@ -3,7 +3,7 @@ title: Tworzenie reguł alertów
 description: Ten temat zawiera informacje o alertach oraz wyjaśnia, jak utworzyć regułę alertu, dzięki czemu będziesz otrzymywać powiadomienia o zdarzeniach, takich jak nadejście określonego dnia lub wystąpienie konkretnej zmiany.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075931"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970686"
 ---
 # <a name="create-alert-rules"></a>Tworzenie reguł alertów
 
@@ -92,3 +92,14 @@ Alerty mogą być wysyłane zewnętrznie za pomocą struktury zdarzeń biznesowy
 7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst używany jako nagłówek tematu dla e-maila ten będzie wyświetlany po wyzwoleniu alertu. Aby wysłać Alert jako zdarzenie biznesowe , należy przypisać opcję **Wyślij zewnętrznie** na **tak**.
 8. W polu **Wiadomość** wprowadź opcjonalną wiadomość. Wprowadzony tekst jest komunikatem, jaki otrzymuje użytkownik po wyzwoleniu alertu.
 9. Kliknij przycisk **OK**, aby zapisać ustawienia i utworzyć regułę alertu.
+
+## <a name="limitations-and-workarounds"></a>Ograniczenia i rozwiązania
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Rozwiązanie problemu dotyczącego tworzenia alertów dla pomocniczych źródeł danych w formularzu
+Nie można utworzyć alertów dla niektórych dodatkowych źródeł danych w formularzach. Na przykład podczas tworzenia alertów w formularzu profile księgowania odbiorcy lub dostawcy dostępne są tylko pola w nagłówku (CustLedger lub VendLedger), a nie kont wymiaru. Obejście tego ograniczenia polega na użyciu parametru **SysTableBrowser** w celu otwarcia tej tabeli jako podstawowego źródła danych. 
+1. Otwórz tabelę w formularzu **SysTableBrowser**.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Utwórz alert z formularza SysTableBrowser.
+

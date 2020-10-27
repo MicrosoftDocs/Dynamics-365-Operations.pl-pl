@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: vstehman
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d326480cc03d80d1ce27f8762e300dca3b0d325e
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0eb3671051d9a3be9430050e2a0ad4227b17677e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770650"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979558"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Wybieranie metody obliczeń podatków w polu podstawy
 
@@ -114,7 +114,7 @@ Wyniki z przykładów 3 i 1 są takie same, ponieważ nałożono tylko jedno cł
 Obliczony procent kwoty netto obsługuje obliczanie podatku inaczej w zależności od ustawienia parametru Kwoty zawierają podatek dla dokumentu lub arkusza.
 ### <a name="example-1"></a>Przykład 1
 
-Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Tak Kwota wiersza transakcji: 10,00 Stawka podatku: 25% Podatek: Kwota wiersza transakcji x stawka podatku (10,00 x 25%) = 2,50 Kwota podstawy podatku (kwota źródła): Kwota wiersza transakcji - Podatek (10,00 - 2,50) = 7,50)
+Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Tak Kwota wiersza transakcji: 10,00 Stawka podatku: 25% Podatek: Kwota wiersza transakcji x stawka podatku (10,00 x 25%) = 2,50 Kwota podstawy podatku (kwota źródła): Kwota wiersza transakcji - Podatek (10,00 - 2,50) = 7,50
 
 ### <a name="example-2"></a>Przykład 2
 
