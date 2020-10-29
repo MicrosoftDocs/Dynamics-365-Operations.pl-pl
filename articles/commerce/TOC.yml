@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Rozwiązanie Commerce w wersji 10.0.13 (październik 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.12 (sierpień 2020)
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje w aplikacji Finance and Operations
@@ -208,7 +206,7 @@
                   href: dev-itpro/retail-in-store-topology.md
                 - name: Commerce Data Exchange
                   items:
-                    - name: Najlepsze praktyki Commerce Data Exchange
+                    - name: Najlepsze wskazówki usługi Commerce Data Exchange
                       href: dev-itpro/CDX-Best-Practices.md
                     - name: Komunikacja w kanale Commerce Data Exchange i handlu
                       href: dev-itpro/define-retail-channel-communications-cdx.md
@@ -264,7 +262,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
-                - name: Rozpoczynanie eksploatacji — często zadawane pytania
+                - name: Rozpocznij na żywo — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: Przesyłanie żądania obsługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/commerce/toc.json
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Moduł menu nawigacji
                       href: nav-menu-module.md
+                    - name: Moduł wyboru witryny
+                      href: site-selector.md
                 - name: Moduły zgodności
                   items:
                     - name: Moduł zgody na pliki cookie
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Anatomia modułu
                   items:
+                    - name: Omówienie modułów
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Plik definicji modułu
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: Plik składnika React modułu
@@ -2034,12 +2036,18 @@
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Omówienie składników interaktywnych
                       href: e-commerce-extensibility/interactive-components.md
+                    - name: Symulacja stanu zalogowania podczas lokalnego tworzenia
+                      href: e-commerce-extensibility/mock-sign-in.md
                     - name: Globalizacja modułów za pomocą klasy CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
+                    - name: 'Skonfiguruj usługę Azure Key Vault, aby zapewnić bezpieczne zarządzanie kluczami'
+                      href: e-commerce-extensibility/set-up-key-vault.md
                 - name: Opracowywanie akcji dotyczących danych
                   items:
                     - name: Omówienie akcji dotyczących danych
                       href: e-commerce-extensibility/data-actions.md
+                    - name: Opcje pamięci podręcznej akcji danych
+                      href: e-commerce-extensibility/data-action-cache.md
                     - name: Testowanie akcji dotyczących danych przy użyciu makiet
                       href: e-commerce-extensibility/test-data-action-mocks.md
                     - name: Akcje danych ładowania strony
@@ -2080,6 +2088,8 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: Rozszerzanie motywu w celu dodania rozszerzeń modułu
                       href: e-commerce-extensibility/theme-module-extensions.md
+                    - name: Zastępowanie składnika biblioteki modułów w motywie
+                      href: e-commerce-extensibility/override-theme-component.md
                     - name: Rozszerzanie motywu z motywu podstawowego
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Dodawanie zasobów niestandardowych do kodu dostosowywania
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: Aktualizacje zestawu SDK i biblioteki modułów
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Najlepsze wskazówki
+                  items:
+                    - name: Najlepsze wskazówki dotyczące programowania rozwiązania Dynamics 365 Commerce
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: Zestaw SDK do Retail
               items:
                 - name: Architektura zestawu SDK do Retail
@@ -2197,7 +2211,7 @@
                 - name: Serwery proxy Typescript i C# aplikacji Retail
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Korzystanie z interfejsów API usługi Retail Server w aplikacjach zewnętrznych
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Rozszerzalność środowiska uruchomieniowego Commerce Runtime (CRT)
               items:
                 - name: Architektura i konfiguracja środowiska CRT
