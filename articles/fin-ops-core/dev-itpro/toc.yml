@@ -136,14 +136,16 @@
                           href: data-entities/dual-write/dual-write-home-page.md
                         - name: Nowości i zmiany w podwójnym zapisie
                           href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Przegląd o podwójnym zapisie
+                        - name: Omówienie podwójnego zapisu
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: Konfiguracja o podwójnym zapisie
+                        - name: Konfiguracja podwójnego zapisu
                           items:
                             - name: Wymagania systemowe dotyczące podwójnego zapisu
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Obsługiwane scenariusze dla konfiguracji podwójnego zapisu
+                            - name: Wskazówki dotyczące konfigurowania podwójnego zapisu
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Zagadnienia dotyczące synchronizacji początkowej
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
                             - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
@@ -404,6 +406,8 @@
                   href: database/database-point-in-time-restore.md
                 - name: Przywracanie do punktu w czasie produkcyjnej bazy danych do środowiska piaskownicy
                   href: database/database-pitr-prod-sandbox.md
+                - name: Włączanie dostępu do bazy danych dokładnie na czas
+                  href: database/database-just-in-time-jit-access.md
             - name: Samouczki
               items:
                 - name: Odświeżanie w celach szkoleniowych
@@ -480,11 +484,13 @@
                   href: deployment/Update-retail-channel.md
                 - name: Zainicjuj Commerce Scale Unit (chmura)
                   href: deployment/Initialize-Retail-Channels.md
+                - name: Migrowanie kanałów do innej usługi Commerce Scale Unit
+                  href: deployment/Reassign-CSU.md
                 - name: Miejsce przechowywania danych rozwiązania Retail
                   href: deployment/retail-data-residency.md
             - name: Wdrożenie lokalne
               items:
-                - name: Wdrożenie lokalne – strona główna
+                - name: Wdrożenie lokalne — strona główna
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: Przygotowywanie do wdrożeń lokalnych
                   items:
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurowanie pomocy technicznej dla rozwiązania Finance and Operations
+            - name: Konfigurowanie pomocy technicznej dla aplikacji Finance and Operations
               href: lifecycle-services/support-experience.md
-            - name: Zarządzanie środowiskami pomocy technicznej dotyczącej rozwiązania Finance and Operations
+            - name: Zarządzanie środowiskami pomocy technicznej aplikacji Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Administrowanie systemem
           items:

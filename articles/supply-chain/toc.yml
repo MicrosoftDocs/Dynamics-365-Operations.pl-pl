@@ -182,7 +182,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przygotowywanie do rozpoczęcia eksploatacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Rozpoczynanie eksploatacji — często zadawane pytania
+                - name: Rozpocznij na żywo — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Przesyłanie żądania obsługi
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Tworzenie umowy zakupu
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatyczna alokacja opłat
+                  href: procurement/automatic-charges-allocation.md
                 - name: Rabaty dostawcy
                   href: procurement/vendor-rebates.md
                 - name: 'Rozwiązywanie problemów z cenami, zniżkami, umowami i rabatami'
@@ -2041,7 +2043,15 @@
                       href: production-control/release-production-orders.md
                     - name: Zgłaszanie zleceń produkcyjnych jako gotowych
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfiguruj kartę zadań dla urządzeń
+                    - name: Konfigurowanie i korzystanie z interfejsu wykonania hal produkcyjnych
+                      items:
+                        - name: Konfigurowanie interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
+                          href: production-control/production-floor-execution-use.md
+                    - name: Konfigurowanie karty zadań dla urządzeń
                       href: production-control/config-job-card-device.md
                     - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
                       href: production-control/report-finished-job-device.md
@@ -2275,6 +2285,8 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Automatyczna alokacja opłat
+                  href: procurement/automatic-charges-allocation.md
                 - name: Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Tworzenie zamówień sprzedaży
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Tworzenie zamówień przeniesienia z aplikacji magazynu
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Przetwarzanie zdarzenia aplikacji magazynu
-                      href: warehousing/warehouse-app-events.md
                     - name: Potwierdzenie pobrania sztuk
                       href: warehousing/piece-picking-confirmation.md
                     - name: Materiały opakowań i opłaty
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Przetwarzanie zdarzenia aplikacji magazynu
+                      href: warehousing/warehouse-app-events.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji magazynu
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu

@@ -5,6 +5,12 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 22 października 2002 r.
+          href: hr-whats-new-2020-10-22.md
+        - name: 6 października 2020 r.
+          href: hr-whats-new-2020-10-06.md
+        - name: 26 września 2020 r.
+          href: hr-whats-new-2020-09-26.md
         - name: 16 września 2020 r.
           href: hr-whats-new-2020-09-16.md
         - name: 3 września 2020 r.
@@ -83,6 +89,8 @@
               href: hr-admin-integration-dayforce.md
             - name: Tworzenie aplikacji do cyklicznego eksportowania danych
               href: hr-admin-integration-recurring-data-export.md
+            - name: Integracja z usługą LinkedIn Talent Hub
+              href: hr-admin-integration-linkedin.md
             - name: Integracja z pakietem Office
               items:
                 - name: Integracja z pakietem Office — samouczek
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Aplikacja Human Resources w Teams
           href: hr-admin-teams-leave-app.md
+        - name: Przygotowywanie do rozpoczęcia eksploatacji
+          href: hr-admin-go-live-prepare.md
+        - name: Rozpocznij na żywo — często zadawane pytania
+          href: hr-admin-go-live-faq.md
         - name: Zasoby dokumentacji
           items:
             - name: System pomocy
@@ -667,9 +679,11 @@
               href: hr-learning-depending-question.md
         - name: Ustawianie samoobsługi dla pracownika etatowego i menedżera
           items:
-            - name: Przegląd samoobsługi dla pracownika etatowego i menedżera
+            - name: Omówienie samoobsługi dla pracownika etatowego i menedżera
               href: hr-employee-manager-self-service-overview.md
-            - name: Zmień nazwę obszaru roboczego samoobsługi pracownika etatowego
+            - name: Tworzenie łączy niestandardowych w samoobsłudze menedżera
+              href: hr-employee-manager-self-service-custom-links.md
+            - name: Zmiana nazwy obszaru roboczego samoobsługi pracownika etatowego
               href: hr-employee-self-service-workspace-name.md
-            - name: Edytuj informacje osobiste
+            - name: Edytowanie informacji osobistych
               href: hr-employee-manager-self-service-edit-personal-information.md
