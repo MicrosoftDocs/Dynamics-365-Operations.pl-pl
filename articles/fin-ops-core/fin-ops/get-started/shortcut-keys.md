@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
-ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
+ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
+ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3962527"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013187"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -33,7 +33,7 @@ Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie dany
 > [!NOTE]
 > Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
-Niektóre skróty na tej stronie są *zestawami klawiszy*, co oznacza, że wymagają one dwóch kolejnych zestawów kombinacji klawiszy (oddzielonych przecinkiem), które muszą zostać naciśnięte niezależnie w celu uruchomienia wymaganej akcji. Na przykład skrót „Alt + M, A” wymaga, aby użytkownik musi najpierw nacisną klawisze „Alt + M”, zwolnić klawisze, a następnie nacisnąć klawisz „A”. 
+Niektóre skróty na tej stronie są *zestawami klawiszy* , co oznacza, że wymagają one dwóch kolejnych zestawów kombinacji klawiszy (oddzielonych przecinkiem), które muszą zostać naciśnięte niezależnie w celu uruchomienia wymaganej akcji. Na przykład skrót „Alt + M, A” wymaga, aby użytkownik musi najpierw nacisną klawisze „Alt + M”, zwolnić klawisze, a następnie nacisnąć klawisz „A”. 
 
 ## <a name="finding-a-shortcut"></a>Znajdowanie skrótu
 
@@ -239,7 +239,7 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przejdź do okienka wyżej/niżej w wyszukiwaniu                                                                                       | Page up / Page down              |
 | Przejdź do góry/na dół wyszukiwania                                                                                    | Home / End                       |
 
-## <a name="task-recordershortcuts"></a>Skróty [Rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md) 
+## <a name="task-recorder-shortcuts"></a>Skróty [Rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md) 
 
 | Funkcja                                                                    | Naciśnij klawisz                      |
 |-------------------------------------------------------------------------------|----------------------------|

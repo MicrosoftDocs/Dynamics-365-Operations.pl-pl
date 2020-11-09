@@ -3,7 +3,7 @@ title: Podgląd i publikowanie eksperymentu
 description: W tym temacie opisano sposób podglądu i publikowania eksperymentu z Dynamics 365 Commerce.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 91e2e4840a2d53f195d881279050b6415d48b070
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930269"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097123"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Podgląd i publikowanie eksperymentu
 
@@ -34,9 +34,11 @@ W tym temacie opisano sposób wyświetlania podglądu i publikowania eksperyment
 ## <a name="preview-your-experiment-variations"></a>Podgląd odmian eksperymentu
 Możesz wyświetlić podgląd odmiany i kontynuować ich edycję, dopóki nie będą wyglądać odpowiednio.
 
-1. W konstruktorze witryn należy użyć menu rozwijanego odmiany pod paskiem poleceń, aby wybrać zawartość, której podgląd chcesz wyświetlić. 
-1. Wybierz opcję **Podgląd** na górnym pasku. Zostanie wyświetlony podgląd zawartości, taki jak po opublikowaniu.
-1. Aby wyświetlić podgląd innej odmiany, wybierz ją z listy rozwijanej odmian i wybierz ponownie **Podgląd**.
+Aby wyświetlić podgląd odmian eksperymentu w narzędziu do tworzenia witryn Commerce, wykonaj następujące kroki.
+
+1. Należy użyć menu rozwijanego odmiany pod paskiem poleceń, aby wybrać zawartość, której podgląd chcesz wyświetlić. 
+1. Na pasku poleceń wybierz opcję **Podgląd**. Zostanie wyświetlony podgląd zawartości, taki jak po opublikowaniu.
+1. Aby wyświetlić podgląd innej odmiany, wybierz ją z menu rozwijanego odmian i wybierz ponownie **Podgląd**.
 
 ## <a name="publish-your-experiment"></a>Publikowanie eksperymentu
 Jeśli nie używasz grupy publikowania do planowania, kiedy eksperymenty są aktywne i chcesz publikować natychmiast, wybierz opcję **Publikuj** na pasku poleceń. Wszystkie odmiany należące do eksperymentu zostaną opublikowane.
@@ -45,7 +47,7 @@ Jeśli nie używasz grupy publikowania do planowania, kiedy eksperymenty są akt
 > Jeśli strona zawiera nieopublikowany adres URL, należy najpierw opublikować adres URL inaczej nie będzie widoczny dla użytkowników witryny internetowej. Szczegółowe informacje zawiera temat [Zapisywanie, pogląd i publikowanie strony](save-preview-publish-page.md).
     
 ### <a name="use-publish-groups-to-schedule-when-your-experiment-goes-live"></a>Za pomocą grup publikacji można planować czas uruchomienia eksperymentu
-Odmiany utworzone w konstruktorze witryn mogą być planowane do opublikowania za pomocą grupy publikacji. W grupie publikacji można połączyć stronę lub fragment z eksperymentem, przechodząc na kartę**Eksperymenty**, **Strony** lub **Fragmenty**. Aby uzyskać więcej informacji, zobacz temat [Łączenie eksperymentu i edycja odmian](experimentation-connect-edit.md). Aby uzyskać informacje o grupach publikacji, zobacz temat [Praca z grupami publikacji](publish-groups.md).
+Odmiany utworzone w konstruktorze witryn mogą być planowane do opublikowania za pomocą grupy publikacji. W grupie publikacji można połączyć stronę lub fragment z eksperymentem, wybierając w lewym okienku nawigacji pozycję **Eksperymenty**. Można to również zrobić, wybierając **Strony** lub **Fragmenty** i postępując zgodnie z instrukcjami w [Łączenie eksperymentu i edytowanie odmian](experimentation-connect-edit.md). Aby uzyskać informacje o grupach publikacji, zobacz temat [Praca z grupami publikacji](publish-groups.md).
 
 W przypadku korzystania z grup publikacji z eksperymentami należy pamiętać o pewnych ważnych kwestiach.
 - Po dodaniu do grupy publikacji strony lub fragmentu z uruchomionym eksperymentem zostanie on usunięty ze strony lub fragmentu w grupie publikacji.

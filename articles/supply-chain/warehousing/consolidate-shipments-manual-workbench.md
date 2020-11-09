@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 8320c8aab82a39a8a5565e6b3e805e1065c67453
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1eec1a8e3a9a2a0f95302e1d6ea68eb90b9a3b93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986823"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016823"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
 
@@ -39,7 +39,7 @@ W opisanym poniżej scenariuszu przyjęto założenie, że użytkownik już wł�
 
 ## <a name="turn-on-the-manual-shipment-consolidation-feature"></a>Włączanie funkcji ręcznej konsolidacji wysyłki
 
-Aby można było skorzystać z funkcji *ręcznej konsolidacji wysyłki*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby można było skorzystać z funkcji *ręcznej konsolidacji wysyłki* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Ręczna konsolidacja wysyłki*
@@ -63,10 +63,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 #### <a name="sales-order-1-3"></a>Zamówienie sprzedaży 1-3
 
@@ -77,17 +77,17 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 1. Dodaj drugi wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0002* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0002* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
     - **Metoda dostawy:** *Airwa-Air*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować drugi wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować drugi wiersz zamówienia.
 
 ### <a name="create-order-set-2"></a>Tworzenie zestawu zamówień 2
 
@@ -100,17 +100,17 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne*)
+    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne* )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 1. Dodaj drugi wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe*)
+    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe* )
     - **Ilość:** *1.00*
     - **Metoda dostawy:** *Airwa-Air*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować drugi wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować drugi wiersz zamówienia.
 
 ### <a name="create-order-set-3"></a>Tworzenie zestawu zamówień 3
 
@@ -123,10 +123,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 #### <a name="sales-orders-3-3-and-3-4"></a>Zamówienia sprzedaży 3-3 i 3-4
 
@@ -137,10 +137,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 ### <a name="create-order-set-4"></a>Tworzenie zestawu zamówień 4
 
@@ -152,10 +152,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 #### <a name="sales-orders-4-3-and-4-4"></a>Zamówienia sprzedaży 4-3 i 4-4
 
@@ -165,10 +165,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 #### <a name="sales-orders-4-5-and-4-6"></a>Zamówienia sprzedaży 4-5 i 4-6
 
@@ -181,10 +181,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 #### <a name="sales-orders-4-7-and-4-8"></a>Zamówienia sprzedaży 4-7 i 4-8
 
@@ -197,10 +197,10 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
 
 ## <a name="release-the-orders-to-the-warehouse"></a>Zwalnianie zamówień do magazynu
 
@@ -208,20 +208,20 @@ Wykonaj poniższe kroki, aby zwolnić każde zamówienie sprzedaży utworzone dl
 
 1. Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamówienia sprzedaży**.
 1. Znajdź i zaznacz zamówienie sprzedaży do zwolnienia.
-1. W okienku akcji na karcie **Magazyn** wybierz pozycję **Akcje \> Zwolnij do magazynu**, aby zwolnić wybrane zamówienie sprzedaży.
+1. W okienku akcji na karcie **Magazyn** wybierz pozycję **Akcje \> Zwolnij do magazynu** , aby zwolnić wybrane zamówienie sprzedaży.
 1. Powtórz tę procedurę dla wszystkich zamówień sprzedaży utworzonych dla tego scenariusza.
 
 ## <a name="consolidate-the-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Zwolnij do magazynu \> Pulpit konsolidacji wysyłki**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. W oknie dialogowym edytora zapytań na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
+1. W oknie dialogowym edytora zapytań na karcie **Zakres** wybierz przycisk **Dodaj** , aby dodać wiersz zawierający następujące ustawienia do siatki:
 
     - **Tabela:** *Zamówienia sprzedaży*
     - **Pole:** *Zamówienie sprzedaży*
     - **Kryteria:** wprowadź rozdzielaną przecinkami listę numerów zamówień sprzedaży dla poszczególnych zestawów zamówień utworzonych dla tego scenariusza.
 
-1. Wybierz przycisk **OK**, aby zapisać zapytanie i zamknąć okno dialogowe.
+1. Wybierz przycisk **OK** , aby zapisać zapytanie i zamknąć okno dialogowe.
 1. W okienku akcji wybierz pozycję **Konsoliduj wysyłki**.
 1. Wybierz wszystkie wysyłki, a następnie w okienku akcji wybierz pozycję **Konsoliduj**.
 
@@ -238,7 +238,7 @@ Poniższa procedura umożliwia zweryfikowanie, czy wysyłki zostały utworzone l
 Powinny zostać utworzone dwie następujące wysyłki:
 
 - Pierwsza wysyłka zawiera trzy wiersze i została utworzona za pomocą zasad konsolidacji wysyłki *CustomerMode*.
-- Druga wysyłka, która nie korzysta z metody dostawy *Trasy lotnicze*, została utworzona przy użyciu zasad konsolidacji wysyłki *CustomerOrderNo*.
+- Druga wysyłka, która nie korzysta z metody dostawy *Trasy lotnicze* , została utworzona przy użyciu zasad konsolidacji wysyłki *CustomerOrderNo*.
 
 ### <a name="related-shipments-for-order-set-2"></a>Powiązane wysyłki dla zestawu zamówień 2
 

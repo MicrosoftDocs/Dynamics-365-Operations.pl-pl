@@ -19,17 +19,17 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: 2a6fdbc957a50adba38627bc37622c17ab4be419
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834216"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022478"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Interfejs użytkownika (UI) punktu sprzedaży Microsoft Dynamics 365 Commerce można konfigurować przy użyciu kombinacji profili graficznych i układów ekranu, które się przypisuje do sklepów, kas i użytkowników. Ten temat zawiera informacje na temat tych opcji konfiguracji.
 
@@ -54,7 +54,7 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 - **Zawsze pokazuj etykiety paska aplikacji** — gdy ta opcja jest włączona, tekst etykiety jest zawsze widoczny pod przyciskami paska aplikacji.
 - **Układ** — umożliwia wybór między układami **Środkowymi** i **Prawy**. Układ ma wpływ na wyrównanie pola rejestracji na ekranie logowania. Ustawieniem domyślnym jest **Środkowy**.
 - **Wyświetlanie daty/godziny** — gdy ta opcja jest włączona, bieżąca data i godzina są wyświetlane w nagłówku punktu sprzedaży i na ekranie logowania.
-- **Klawiatura** — można wybrać opcję między **Domyślną klawiaturą systemu operacyjnego** i **Wyświetlić konsolę numeryczną**, aby określić domyślną klawiaturę używaną do wprowadzania danych na ekranie logowania. Konsola numeryczna jest wirtualną klawiaturą używaną głównie dla urządzeń dotykowych. Domyślnym wyborem jest **Domyślną klawiaturą systemu operacyjnego**.
+- **Klawiatura** — można wybrać opcję między **Domyślną klawiaturą systemu operacyjnego** i **Wyświetlić konsolę numeryczną** , aby określić domyślną klawiaturę używaną do wprowadzania danych na ekranie logowania. Konsola numeryczna jest wirtualną klawiaturą używaną głównie dla urządzeń dotykowych. Domyślnym wyborem jest **Domyślną klawiaturą systemu operacyjnego**.
 - **Obraz logo** — można określić obraz logo wyświetlany na ekranie logowania. Zaleca się używanie obrazu, który ma przezroczyste tło. Rozmiar pliku powinien być możliwie jak najmniejszy, ponieważ zachowanie i wydajność aplikacji mogą mieć wpływ na przechowywanie i ładowanie dużych plików.
 - **Tło logowania** — Można określić obraz tła dla ekranu logowania. Podobnie jak w przypadku obrazów tła logowania, rozmiar pliku powinien być jak najmniejszy.
 - **Tło** — Można określić obraz tła, który będzie używany zamiast jednolitego koloru motywu w całej aplikacji. Podobnie jak w przypadku obrazów tła ekranu logowania, rozmiar pliku powinien być możliwie najmniejszy.
@@ -62,7 +62,7 @@ Profile graficzne są przypisywane do kas. Określają elementy wizualnych, któ
 > [!NOTE]
 > Wyświetlanie układu **Prawego** i daty/godziny nie jest stosowane do ekranu logowania w widoku kompaktowym.
 
-Aby zsynchronizować najnowsze konfiguracje profilów graficznych z bazą danych kanału, należy uruchomić zadanie harmonogramu dystrybucji **1090** (**Rejestrs**).
+Aby zsynchronizować najnowsze konfiguracje profilów graficznych z bazą danych kanału, należy uruchomić zadanie harmonogramu dystrybucji **1090** ( **Rejestrs** ).
 
 ## <a name="screen-layouts"></a>Układy ekranu
 
@@ -84,7 +84,7 @@ Konfiguracje układu ekranu decydują o akcjach, zawartości i położeniu forma
 
 Układy ekranów można przypisywać na poziomie sklepu, kasy lub użytkownika. Przypisanie użytkownikowi zastępuje przypisania do kasy i sklepu, a przypisanie na poziomie kasy ma priorytet nad przypisaniem do sklepu. W prostym scenariuszu, gdzie wszyscy użytkownicy korzystają z tego samego układu niezależnie od kasy ani roli, układ ekranu można ustawić tylko na poziomie sklepu. W scenariuszach, gdy określone kasy lub użytkownicy wymagają specjalnych układów, można je przypisać.
 
-W zależności od poziomu, na którym są przypisane układy ekranu, należy uruchomić zadania planowania dystrybucji **1070** (**Konfiguracja kanału**), **1090** (**Rejestry**) i/lub **1060** (**Personel**), aby synchronizować najnowsze konfiguracje układu ekranu z bazą danych kanału.
+W zależności od poziomu, na którym są przypisane układy ekranu, należy uruchomić zadania planowania dystrybucji **1070** ( **Konfiguracja kanału** ), **1090** ( **Rejestry** ) i/lub **1060** ( **Personel** ), aby synchronizować najnowsze konfiguracje układu ekranu z bazą danych kanału.
 
 ### <a name="layout-sizes"></a>Rozmiary układów
 

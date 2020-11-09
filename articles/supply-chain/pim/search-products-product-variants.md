@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, SalesTable
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6acfdf819ffce496f0a9b5d6242b55d857510b49
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 532f437bee490743847cf5617579c579f9202b71
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986606"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018337"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień
 
@@ -65,7 +65,7 @@ Zanim będzie można używać funkcji wyszukiwania produktów i wariantów produ
 
 ### <a name="step-1include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Krok 1: Umieszczenie wszystkich odpowiednich identyfikatorów i wymiarów produktów i wariantów produktów w kryteriach wyszukiwania
 
-Przykładami identyfikatorów i wymiarów produktów i wariantów produktów, które można wyszukiwać, są  **Nazwa produktu, Numer pozycji**, **Wyświetlany numeru produktu, Konfiguracja, Kolor, Rozmiar, Styl, Alias** itp.  
+Przykładami identyfikatorów i wymiarów produktów i wariantów produktów, które można wyszukiwać, są   **Nazwa produktu, Numer pozycji** , **Wyświetlany numeru produktu, Konfiguracja, Kolor, Rozmiar, Styl, Alias** itp.  
 
 Przejdź do strony **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Kryteria wyszukiwania**. Na stronie **Kryteria wyszukiwania** można określić kryteria dotyczące odbiorcy, prospekta i wyszukiwania produktów. Upewnij się, że strona jest filtrowana przy użyciu kryteriów wyszukiwania produktów. Można to zrobić, przełączając na widok **Produkt** w menu strony.  
 
@@ -73,7 +73,7 @@ Aby do kryteriów wyszukiwania dodać wyświetlany numer produktu, w menu strony
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Krok 2: Wypełnienie tabeli bazy danych używanej do wyszukiwania produktów
 
-Na stronie **Kryteria wyszukiwania** kliknij przycisk **Aktualizuj dane wyszukiwania**. W oknie dialogowym **Aktualizuj dane wyszukiwania** upewnij się, że ustawienie  **Źródło** ma wartość **Produkt**, a następnie kliknij przycisk **OK**. System zbierze w jednej tabeli wszystkie wybrane kryteria wyszukiwania określone w kroku 1. Jeśli masz wiele produktów i wariantów produktów, ta operacja może być czasochłonna i może się pojawić ostrzeżenie. Zalecamy, aby zaplanować wypełnianie tabeli wyszukiwania na serwerze przetwarzania wsadowego w czasie, gdy serwer nie jest zbyt zajęty.  
+Na stronie **Kryteria wyszukiwania** kliknij przycisk **Aktualizuj dane wyszukiwania**. W oknie dialogowym **Aktualizuj dane wyszukiwania** upewnij się, że ustawienie   **Źródło** ma wartość **Produkt** , a następnie kliknij przycisk **OK**. System zbierze w jednej tabeli wszystkie wybrane kryteria wyszukiwania określone w kroku 1. Jeśli masz wiele produktów i wariantów produktów, ta operacja może być czasochłonna i może się pojawić ostrzeżenie. Zalecamy, aby zaplanować wypełnianie tabeli wyszukiwania na serwerze przetwarzania wsadowego w czasie, gdy serwer nie jest zbyt zajęty.  
 
 Do czasu wypełnienia tabeli wyszukiwanie produktów nie będzie zwracać poprawnych wyników. Jeśli nie otrzymujesz żadnych wyników wyszukiwania, sprawdź, czy ta tabela jest wypełniona.  
 
@@ -83,7 +83,7 @@ Tabelę należy wypełniać tylko po zmodyfikowaniu kryteriów wyszukiwania. Now
 
 Można włączyć tę funkcję, przechodząc strony **Sprzedaż i marketing &gt; Ustawienia &gt; Wyszukiwanie &gt; Parametry wyszukiwania** i na karcie **Ogólne** w opcji **Włącz odnośnik dla wyszukiwania** zaznaczyć wartość **Tak**.  
 
-Zachowaniem domyślnym przy wprowadzaniu wiersza zamówienia sprzedaży jest otwarcie strony **Wyszukiwanie produktu**, gdy zaczniesz pisać w polu  **Numer pozycji**, a następnie naciśniesz klawisz  **Tab**. Strona **Wyszukiwanie produktu** zmienia kontekst podczas tworzenia wiersza zamówienia, dlatego może być uznawana za niepotrzebnie natarczywą. Jeśli wolisz otrzymać wyniki wyszukiwania w odnośniku i nie tracić kontekstu podczas wprowadzania wiersza zamówienia, możesz użyć odnośnika wyszukiwania. Jeśli wyszukiwano produktu lub wariantu produktu, ale nie zaznaczysz nic w odnośniku i naciśniesz klawisz **Tab**, zostanie wyświetlona strona **Wyszukiwanie produktu**.
+Zachowaniem domyślnym przy wprowadzaniu wiersza zamówienia sprzedaży jest otwarcie strony **Wyszukiwanie produktu** , gdy zaczniesz pisać w polu  **Numer pozycji** , a następnie naciśniesz klawisz  **Tab**. Strona **Wyszukiwanie produktu** zmienia kontekst podczas tworzenia wiersza zamówienia, dlatego może być uznawana za niepotrzebnie natarczywą. Jeśli wolisz otrzymać wyniki wyszukiwania w odnośniku i nie tracić kontekstu podczas wprowadzania wiersza zamówienia, możesz użyć odnośnika wyszukiwania. Jeśli wyszukiwano produktu lub wariantu produktu, ale nie zaznaczysz nic w odnośniku i naciśniesz klawisz **Tab** , zostanie wyświetlona strona **Wyszukiwanie produktu**.
 
 
 

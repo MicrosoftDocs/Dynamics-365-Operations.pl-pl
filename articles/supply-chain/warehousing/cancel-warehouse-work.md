@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSTroubIeshootingSeIfService
+ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 88c94306eda4eb462f6b3fae73e0cdb05ed647a1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984041"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016248"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Anulowanie pracy magazynowej na potrzeby obsługi wyjątków
 
@@ -40,7 +40,7 @@ W odróżnieniu od zwykłej funkcji anulowania, z której można skorzystać za 
 > [!NOTE]
 > W przypadku pracy, którą trzeba anulować z przyczyn operacyjnych, użytkownicy magazynu muszą nadal korzystać ze zwykłej funkcji anulowania na stronie pracy.
 
-Za pomocą funkcji anulowania pracy można anulować tylko pracę następującego typu: **Sprzedaż**, **Wydanie przeniesienia**, **Pobranie zapasów** lub **Uzupełnianie zapasów**. Logika anulowania nie zostanie uruchomiona dla zamrożonej pracy pobrania surowca lub pracy, którą można anulować za pomocą zwykłej funkcji anulowania (zobacz poprzednią notatkę).
+Za pomocą funkcji anulowania pracy można anulować tylko pracę następującego typu: **Sprzedaż** , **Wydanie przeniesienia** , **Pobranie zapasów** lub **Uzupełnianie zapasów**. Logika anulowania nie zostanie uruchomiona dla zamrożonej pracy pobrania surowca lub pracy, którą można anulować za pomocą zwykłej funkcji anulowania (zobacz poprzednią notatkę).
 
 Aby odblokować pracę, system anuluje wszystkie pozostałe wiersze pracy i naprawia dane magazynu skojarzone z określonym przez użytkownika identyfikatorem pracy. Następnie można wznowić wszystkie zwykłe operacje obsługi magazynu, które obejmują uwzględnioną ilość pozycji.
 

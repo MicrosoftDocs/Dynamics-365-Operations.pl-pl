@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 251e9982451c888424589e0f0d6fce48aab42df1
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323584"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017812"
 ---
 # <a name="wave-step-codes"></a>Kody kroku grupy czynności
 
@@ -59,7 +59,7 @@ Podczas włączania weryfikacje są wykonywane w trakcie uaktualniania danych. J
 
 Po rozwiązaniu wszelkich konfliktów, które zostaną zidentyfikowane podczas weryfikacji, można ponownie spróbować włączyć funkcję.
 
-Po włączeniu funkcji będzie dostępna strona **Kody etapów grupy czynności** (**Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności**). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów kroków grupy czynności w całej organizacji.
+Po włączeniu funkcji będzie dostępna strona **Kody etapów grupy czynności** ( **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności** ). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów kroków grupy czynności w całej organizacji.
 
 ### <a name="create-new-wave-step-codes"></a>Tworzenie nowych kodów etapów grupy czynności
 

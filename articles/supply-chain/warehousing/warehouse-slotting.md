@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017421"
 ---
 # <a name="warehouse-slotting"></a>Rozpisywanie na przedziały w magazynie
 
 [!include [banner](../includes/banner.md)]
 
-Rozpisywanie na przedziały umożliwia konsolidowanie popytu według towarów i jednostki miary z zamówień o stanie *Zamówione*, *Zarezerwowane* lub *Zwolnione*. Wygenerowane zapotrzebowanie może być następnie stosowane do lokalizacji, które będą używane do pobierania, na podstawie ilości, jednostki, wymiarów fizycznych, stałych lokalizacji itd. Po ustaleniu planu rozpisania na przedziały można utworzyć pracę uzupełniającą w celu przeniesienia odpowiedniej ilości zapasów do poszczególnych lokalizacji.
+Rozpisywanie na przedziały umożliwia konsolidowanie popytu według towarów i jednostki miary z zamówień o stanie *Zamówione* , *Zarezerwowane* lub *Zwolnione*. Wygenerowane zapotrzebowanie może być następnie stosowane do lokalizacji, które będą używane do pobierania, na podstawie ilości, jednostki, wymiarów fizycznych, stałych lokalizacji itd. Po ustaleniu planu rozpisania na przedziały można utworzyć pracę uzupełniającą w celu przeniesienia odpowiedniej ilości zapasów do poszczególnych lokalizacji.
 
 Ta funkcjonalność ułatwia kierownikom magazynów zaplanowanie lokalizacji pobrania przed zwolnieniem zamówień do magazynu i utworzenie pracy pobrania.
 
@@ -53,28 +54,28 @@ Warstwy jednostek miary umożliwiają zgrupowanie wielu jednostek miary w celach
     - **Opis:** *Każde pudełko paleta*
 
 1. Wybierz opcję **Zapisz**.
-1. Na skróconej karcie **Jednostki miary** wybierz **Nowe**, aby dodać wiersz do siatki.
+1. Na skróconej karcie **Jednostki miary** wybierz **Nowe** , aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Jednostka:** *Pudełko*
     - **Opis:** – zostaw to pole puste. Zostanie ono wypełnione automatycznie po zapisaniu zmian.
     - **Klasa jednostek:** *Ilość*
 
-1. Kliknij przycisk **Nowe**, aby dodać drugi wiersz do siatki.
+1. Kliknij przycisk **Nowe** , aby dodać drugi wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Jednostka:** *EA*
     - **Opis:** – zostaw to pole puste. Zostanie ono wypełnione automatycznie po zapisaniu zmian.
     - **Klasa jednostek:** *Ilość*
 
-1. Kliknij przycisk **Nowe**, aby dodać trzeci wiersz do siatki.
+1. Kliknij przycisk **Nowe** , aby dodać trzeci wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Jednostka:** *PL*
     - **Opis:** – zostaw to pole puste. Zostanie ono wypełnione automatycznie po zapisaniu zmian.
     - **Klasa jednostek:** *Ilość*
 
-1. Wybierz **Zapisz**, aby zapisać warstwę.
+1. Wybierz **Zapisz** , aby zapisać warstwę.
 
 ### <a name="create-a-directive-code-for-slotting"></a>Utwórz kod dyrektywy dla rozpisywania na przedziały w magazynie
 
@@ -90,7 +91,7 @@ Należy wybrać kod dyrektywy, który powinien być skojarzony z szablonem.
 Każdy szablon rozpisywania na przedziały w magazynie służy do sterowania sposobem przypisywania zapasów do lokalizacji dla określonego magazynu. Każdy szablon musi zawierać wiersz dla każdej specyfikacji rozpisywania na przedziały w magazynie. Procedury przedstawione w tej sekcji służą do konfigurowania szablonów rozpisywania na przedziały w magazynie.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Uzupełnienie \> Szablony rozpisywania na przedziały w magazynie**.
-1. Wybierz pozycję **Nowy**, aby utworzyć nowy szablon.
+1. Wybierz pozycję **Nowy** , aby utworzyć nowy szablon.
 
 Następnie należy ustawić nagłówek szablonu, specyfikacje rozpisywania na przedziały w magazynie oraz dyrektywy lokalizacji, jak wyjaśniono w poniższych podsekcjach.
 
@@ -120,7 +121,7 @@ Można również określić kwerendę, aby zawęzić zakres ocenianych popytów.
 
 Dla każdego tworzonego szablonu należy wykonać poniższe kroki, aby dodać wiersz dla każdej specyfikacji rozpisywania na przedziały w magazynie.
 
-1. Na skróconej karcie **Szczegółów dot. szablonu rozpisywania na przedziały w magazynie** wybierz opcję **Nowy**, aby utworzyć wiersz szablonu.
+1. Na skróconej karcie **Szczegółów dot. szablonu rozpisywania na przedziały w magazynie** wybierz opcję **Nowy** , aby utworzyć wiersz szablonu.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Sekwencja:** _1_
@@ -158,7 +159,7 @@ Dla każdego tworzonego szablonu należy wykonać poniższe kroki, aby dodać wi
 
     - **Zezwalaj na przeniesienie:** _Tak_
 
-        Jeśli ta opcja jest ustawiona na *Tak*, to w przypadku, gdy nie można rozpisać popytu na przedziały, zostanie utworzone zlecenie pracy przeniesienia zapasów z lokalizacji, w której się znajdują, ale gdzie nic nie było rozpisane. Następnie szablon zostanie uruchomiony ponownie. Tym razem system ignoruje zapasy w lokalizacjach. Ta funkcja działa najlepiej, gdy w polu **Przypisz kryterium przedziału** jest ustawiona wartość _Rozważ ilość_.
+        Jeśli ta opcja jest ustawiona na *Tak* , to w przypadku, gdy nie można rozpisać popytu na przedziały, zostanie utworzone zlecenie pracy przeniesienia zapasów z lokalizacji, w której się znajdują, ale gdzie nic nie było rozpisane. Następnie szablon zostanie uruchomiony ponownie. Tym razem system ignoruje zapasy w lokalizacjach. Ta funkcja działa najlepiej, gdy w polu **Przypisz kryterium przedziału** jest ustawiona wartość _Rozważ ilość_.
 
     - **Stałe użycie lokalizacji:** _Tylko stałe lokalizacje produktu_
 
@@ -169,7 +170,7 @@ Dla każdego tworzonego szablonu należy wykonać poniższe kroki, aby dodać wi
         - **Tylko stałe lokalizacje wariantu produktu** – system powinien rozważać tylko lokalizacje, które są stałymi lokalizacjami wariantu produktu.
 
 1. Wybierz opcję **Zapisz**.
-1. Wybierz **Nowe**, aby utworzyć drugi wiersz szablonu.
+1. Wybierz **Nowe** , aby utworzyć drugi wiersz szablonu.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Sekwencja:** _2_
@@ -188,13 +189,13 @@ Dla każdego tworzonego szablonu należy wykonać poniższe kroki, aby dodać wi
 
 1. Znajdź wiersz, w którym pole o nazwie **Sekwencja** ma wartość *2*.
 1. Wybierz **Edytuj zapytanie**.
-1. Na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
+1. Na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** *Lokalizacje*
     - **Tabela pochodna:** *Lokalizacje*
     - **Pole:** *Identyfikator profilu lokalizacji*
-    - **Kryteria:** *Pick-06* (wybierz podwójny znak plus \[**++**\] w polu, aby rozwinąć listę, a następnie wybierz opcję *Pick-06* - *Miejsce pobrania 6*).
+    - **Kryteria:** *Pick-06* (wybierz podwójny znak plus \[**++**\] w polu, aby rozwinąć listę, a następnie wybierz opcję *Pick-06* - *Miejsce pobrania 6* ).
 
 1. Kliknij przycisk **OK**.
 
@@ -216,38 +217,38 @@ Co najmniej jedna dyrektywa lokalizacji musi być skonfigurowana tak, aby obsłu
     - **Magazyn:** _61_
     - **Kod dyrektywy:** _Rozpisywanie na przedziały_
 
-1. Wybierz opcję **Zapisz**, aby skrócona karta **Wiersze** stała się dostępna.
+1. Wybierz opcję **Zapisz** , aby skrócona karta **Wiersze** stała się dostępna.
 
 ##### <a name="configure-the-lines-fasttab"></a>Skonfiguruj skróconą kartę Wiersze
 
-1. Na skróconej karcie **Wiersze** kliknij przycisk **Nowe**, aby utworzyć nowy wiersz.
+1. Na skróconej karcie **Wiersze** kliknij przycisk **Nowe** , aby utworzyć nowy wiersz.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
 
     - **Od ilości:** _0_
     - **Do ilości:** _1000000_
 
-1. Wybierz opcję **Zapisz**, aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
+1. Wybierz opcję **Zapisz** , aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
 
 ##### <a name="configure-the-location-directive-actions-fasttab"></a>Skonfiguruj skróconą kartę Dyrektywy akcji
 
-1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe**, aby utworzyć wiersz.
+1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe** , aby utworzyć wiersz.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
 
     - **Nazwa:** _Bulk_
     - **Strategia:** _Brak_
 
-1. Wybierz opcję **Zapisz**, aby udostępnić przycisk **Edytuj kwerendę**.
+1. Wybierz opcję **Zapisz** , aby udostępnić przycisk **Edytuj kwerendę**.
 
 ##### <a name="edit-the-query"></a>Edytuj kwerendę
 
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz pozycję **Edytuj kwerendę**.
-1. Na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
+1. Na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** *Lokalizacje*
     - **Tabela pochodna:** *Lokalizacje*
     - **Pole:** *Identyfikator strefy*
-    - **Kryteria:** *Bulk* (wybierz podwójny znak plus \[**++**\] w polu, aby rozwinąć listę, a następnie wybierz opcję *Bulk*).
+    - **Kryteria:** *Bulk* (wybierz podwójny znak plus \[**++**\] w polu, aby rozwinąć listę, a następnie wybierz opcję *Bulk* ).
 
 1. Kliknij przycisk **OK**.
 
@@ -266,7 +267,7 @@ Aby pracować z tym scenariuszem przy użyciu określonych przykładowych rekord
 Wykonaj poniższe kroki, aby utworzyć zapotrzebowanie, do którego będzie stosowane rozpisanie na przedziały.
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing \> Zamówienia sprzedaży \> Wszystkie zamówienia sprzedaży**.
-1. Wybierz pozycję **Nowe**, aby utworzyć nowe zamówienie sprzedaży.
+1. Wybierz pozycję **Nowe** , aby utworzyć nowe zamówienie sprzedaży.
 1. W oknie dialogowym **Utwórz zamówienie sprzedaży** w polu **Konto klienta** wybierz _US-007_.
 1. W polu **Magazyn** wybierz wartość _61_.
 1. Kliknij przycisk **OK**.
@@ -275,13 +276,13 @@ Wykonaj poniższe kroki, aby utworzyć zapotrzebowanie, do którego będzie stos
     - **Pozycja:** _L0101_
     - **Ilość:** _20_
 
-1. Wybierz polecenie **Dodaj wiersz**, aby dodać nowy wiersz i określ następujące wartości:
+1. Wybierz polecenie **Dodaj wiersz** , aby dodać nowy wiersz i określ następujące wartości:
 
     - **Pozycja:** _T0100_
     - **Ilość:** _8_
 
 1. Wybierz opcję **Zapisz**.
-1. Wybierz pozycję **Nowe**, aby utworzyć drugie zamówienie sprzedaży.
+1. Wybierz pozycję **Nowe** , aby utworzyć drugie zamówienie sprzedaży.
 1. W oknie dialogowym **Utwórz zamówienie sprzedaży** w polu **Konto klienta** wybierz _US-008_.
 1. W polu **Magazyn** wybierz wartość _61_.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Zawiera pusty wiersz na skróconej karcie **Wiersze zamówienia sprzedaży**. W nowym wierszu ustaw następujące wartości:
@@ -297,14 +298,14 @@ Po wykonaniu wszystkich wstępnie wymaganych elementów, zgodnie z opisem w popr
 
 #### <a name="generate-demand"></a>Generuj popyt
 
-1. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Uzupełnianie \> Szablony rozpisania na przedziały**, a następnie wybierz szablon rozpisania na przedziały, który został wcześniej utworzony.
+1. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Uzupełnianie \> Szablony rozpisania na przedziały** , a następnie wybierz szablon rozpisania na przedziały, który został wcześniej utworzony.
 1. W okienku akcji wybierz pozycję **Utwórz popyt**. To polecenie ocenia cały popyt w systemie, który odpowiada kwerendzie szablonu rozpisanie na przedziały. Łączne zapotrzebowanie dla wszystkich zamówień jest następnie konsolidowane w jeden wiersz na ilość/jednostka miary. Po zakończeniu procesu pojawi się komunikat informacyjny.
 
 #### <a name="slotting-demand"></a>Popyt rozpisywany na przedziały
 
 *Żądanie rozpisania na przedziały* pokazuje wyniki generowania popytu na podstawie konfiguracji szablonu rozpisania na przedziały.
 
-- W okienku akcji wybierz opcję **Rozpisania na przedziały**, aby wyświetlić wyniki polecenia **Generuj popyt**. Można edytować wiersze popytu rozpisania na przedziały. Istnieje możliwość usunięcia wiersza, dodania nowego wiersza lub edytowania szczegółów.
+- W okienku akcji wybierz opcję **Rozpisania na przedziały** , aby wyświetlić wyniki polecenia **Generuj popyt**. Można edytować wiersze popytu rozpisania na przedziały. Istnieje możliwość usunięcia wiersza, dodania nowego wiersza lub edytowania szczegółów.
 
 > [!NOTE]
 > Popyt można edytować ręcznie lub można go zaimportować z systemu zewnętrznego za pomocą funkcji zarządzania danymi. Wszystko, co znajduje się w popycie rozpisania na przedziały, będzie używane w następnym kroku, niezależnie od pochodzenia.
@@ -319,7 +320,7 @@ Po wygenerowaniu popytu musisz skorzystać z polecenia **Znajdź żądanie** w c
 
 W planie rozpisania na przedziały jest wyświetlana lokalizacja, do której przypisano każdy towar/ilość, niezależnie od tego, czy zastosowano przepełnienie, czy utworzono pracę i niezależnie od wiersza szablonu, który został użyty. **Popyt, którego nie udało się rozpisać, jest wyróżniony kolorem czerwonym.**
 
-- W okienku akcji wybierz opcję **Plan rozpisania na przedziały**, aby wyświetlić wyniki.
+- W okienku akcji wybierz opcję **Plan rozpisania na przedziały** , aby wyświetlić wyniki.
 
 #### <a name="create-replenishment"></a>Uzupełnianie zapasów – skrzynie
 
@@ -343,7 +344,7 @@ Po umieszczeniu wszystkich wymaganych elementów można skonfigurować rozpisani
     - Utwórz pracę uzupełniania zapasów
 
     > [!NOTE]
-    > Kroki rozpisania na przedziały są wykonywane stopniowo. Jeśli chcesz wybrać opcję *Znajdź żądanie*, musisz najpierw wybrać opcję *Generuj popyt*.
+    > Kroki rozpisania na przedziały są wykonywane stopniowo. Jeśli chcesz wybrać opcję *Znajdź żądanie* , musisz najpierw wybrać opcję *Generuj popyt*.
 
 1. Określ szablon rozpisania na przedziały, który ma być używany.
 1. Wybierz cykliczność powtarzania automatycznego.

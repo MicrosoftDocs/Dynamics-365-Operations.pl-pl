@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340937"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997261"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -43,7 +42,7 @@ Niektóre wersje narzędzia package deployer są niezgodne z pakietem rozwiązan
 
 Po zainstalowaniu narzędzia package deployer zainstaluj pakiet rozwiązania, wykonując poniższe kroki.
 
-1. Pobierz najnowszy plik pakietu rozwiązania z Yammer.com. Po pobraniu pliku zip Package kliknij go prawym przyciskiem myszy i wybierz polecenie **Właściwości**. Zaznacz pole wyboru **Odblokuj**, a następnie kliknij przycisk **Zastosuj**. Jeśli pole wyboru **Odblokuj** nie jest widoczne, plik zip jest już odblokowany i można pominąć ten krok.
+1. Pobierz najnowszy plik pakietu rozwiązania z Yammer.com. Po pobraniu pliku zip Package kliknij go prawym przyciskiem myszy i wybierz polecenie **Właściwości**. Zaznacz pole wyboru **Odblokuj** , a następnie kliknij przycisk **Zastosuj**. Jeśli pole wyboru **Odblokuj** nie jest widoczne, plik zip jest już odblokowany i można pominąć ten krok.
 
     ![Okno dialogowe Właściwości](media/unblock_option.png)
 
@@ -52,7 +51,7 @@ Po zainstalowaniu narzędzia package deployer zainstaluj pakiet rozwiązania, wy
     ![Zawartość folderu Dynamics365FinanceAndOperationsCommon. PackageDeployer.2.0.438](media/extract_package.png)
 
 3. Wklej wszystkie skopiowane pliki do folderu **Narzędzia** narzędzia package deployer. 
-4. Uruchom **PackageDeployerexe**, aby wybrać środowisko Common Data Service i zainstalować rozwiązania.
+4. Uruchom **PackageDeployerexe** , aby wybrać środowisko Common Data Service i zainstalować rozwiązania.
 
     ![Zawartość folderu Narzędzia](media/paste_copied_files.png)
 
@@ -62,14 +61,14 @@ Po zainstalowaniu narzędzia package deployer zainstaluj pakiet rozwiązania, wy
 
 Aby włączyć śledzenie, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **System** wybierz pozycję **Administracja**.
+1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia** , a następnie w obszarze **System** wybierz pozycję **Administracja**.
 2. Na stronie **Administracja** wybierz opcję **Konfiguracja systemu**.
-3. Na karcie **Dostosowywanie**, w polu **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie**, aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
+3. Na karcie **Dostosowywanie** , w polu **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie** , aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
 
 
 Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
-1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **Dostosowywanie** wybierz pozycję **Dziennik śledzenia wtyczek**.
+1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia** , a następnie w obszarze **Dostosowywanie** wybierz pozycję **Dziennik śledzenia wtyczek**.
 2. Znajdź dzienniki śledzenia, w których w polu **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
 
@@ -84,7 +83,7 @@ Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
 2. Właściwość **IsDebugMode** należy skonfigurować jako wartość **Tak** dla projektu.
 3. Uruchom scenariusz, który generuje błędy.
-4. Pełne dzienniki są dostępne w tabeli DualWriteErrorLog. Aby wyszukać dane w przeglądarce, należy wybrać następujący adres URL (w razie potrzeby zastąpić **XXX**):
+4. Pełne dzienniki są dostępne w tabeli DualWriteErrorLog. Aby wyszukać dane w przeglądarce, należy wybrać następujący adres URL (w razie potrzeby zastąpić **XXX** ):
 
     `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
 
@@ -108,7 +107,7 @@ Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 2. Przejdź do **Obszary robocze \> Zarządzanie danymi** i wybierz opcję **Podwójny zapis**.
 3. Zaznacz wszystkie uruchomione mapowania i wybierz **Zatrzymaj**.
 4. Wybierz **Odłącz środowisko**.
-5. Wybierz **tak**, aby potwierdzić operację.
+5. Wybierz **tak** , aby potwierdzić operację.
 
 Teraz można połączyć nowe środowisko.
 
@@ -116,7 +115,7 @@ Teraz można połączyć nowe środowisko.
 
 Po utworzeniu zamówienia sprzedaży w systemie Dynamics 365 Sales, kliknięcie **+ Dodaj produkty** może spowodować przekierowanie do formularza wiersza zamówienia Dynamics 365 Project Operations. Nie ma sposobu na podstawie tego formularza, aby wyświetlić formularz **Informacji** o wierszu zamówienia sprzedaży. Opcja dotycząca **Informacji** nie jest wyświetlana w polu listy rozwijanej pod **Nowy wiersz zamówienia**. Dzieje się tak, ponieważ Project Operations zostało zainstalowane w danym środowisku.
 
-Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące kroki:
+Aby ponownie włączyć opcję formularza **Informacji** , wykonaj następujące kroki:
 1. Umożliwia przejście do jednostki **Wiersza zamówienia**.
 2. Znajdź formularz **Informacje** w węźle formularze. 
 3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**. 

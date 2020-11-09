@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989289"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015074"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Poprawa wydajności aparatu planowania
 
@@ -180,7 +180,7 @@ Solver ograniczeń nie ma informacji o charakterystyce algorytmu planowania. „
 
 Duża część ograniczeń (wewnętrznych) w aparacie steruje czasem pracy i zdolności produkcyjnych zasobu. W zasadzie zadaniem jest przechodzenie gniazd czasu pracy zasobu z określonego punktu w danym kierunku i znalezienie długiego interwału, w którym może zmieścić się wymagana wydajność (czas) zadań.
 
-W tym celu aparat musi mieć informacje o czasie pracy zasobu. W przeciwieństwie do danych modelu głównego czas pracy jest *ładowany z opóźnieniem*, co oznacza, że jest ładowany do aparatu w razie potrzeby. Powodem tego podejścia jest to, że często istnieje w Supply Chain Management czas pracy dla kalendarza przez bardzo długi okres i zazwyczaj istnieje wiele kalendarzy, więc wstępnie ładowane dane mogą być dość duże.
+W tym celu aparat musi mieć informacje o czasie pracy zasobu. W przeciwieństwie do danych modelu głównego czas pracy jest *ładowany z opóźnieniem* , co oznacza, że jest ładowany do aparatu w razie potrzeby. Powodem tego podejścia jest to, że często istnieje w Supply Chain Management czas pracy dla kalendarza przez bardzo długi okres i zazwyczaj istnieje wiele kalendarzy, więc wstępnie ładowane dane mogą być dość duże.
 
 Informacje w kalendarzu są wymagane przez aparat we fragmentach przez wywołanie metody klasy X++ `WrkCtrSchedulingInteropDataProvider.getWorkingTimes`. Żądanie dotyczy określonego identyfikatora kalendarza w określonym danym czasu. W zależności od stanu pamięci podręcznej serwera w Supply Chain Management każde z tych żądań może się zakończyć kilkoma wywołaniami bazy danych, co zabiera dużo czasu (w odniesieniu do czystego czasu obliczeniowego). Ponadto, jeśli kalendarz zawiera bardzo rozbudowane definicje czasu pracy z wieloma dziennymi przedziałami czasu pracy, zwiększa to czas trwania ładowania.
 
@@ -188,7 +188,7 @@ Gdy dane czasu pracy są ładowane do aparatu planowania, są zachowywane w wewn
 
 ### <a name="finite-capacity"></a>Ograniczone zdolności produkcyjne
 
-Jeśli używane są ograniczone zdolności produkcyjne, przedziały czasu pracy z kalendarza są dzielone i zmniejszane na podstawie istniejących rezerwacji zdolności produkcyjnych. Te rezerwacje są również pobierane przy użyciu tej samej klasy `WrkCtrSchedulingInteropDataProvider` co kalendarze, ale używają metody `getCapacityReservations`. W przypadku planowania w trakcie planowania głównego są brane pod uwagę rezerwacje określonego planu głównego, a jeśli są włączone na stronie **Parametry planowania głównego**, uwzględniane są także rezerwacje z ustalonych zleceń produkcyjnych. Podobnie podczas planowania zlecenia produkcyjnego jest to również opcja, która uwzględnia rezerwacje z istniejących zamówień planowanych, chociaż nie jest to powszechne, tak jak w poprzednim przypadku.
+Jeśli używane są ograniczone zdolności produkcyjne, przedziały czasu pracy z kalendarza są dzielone i zmniejszane na podstawie istniejących rezerwacji zdolności produkcyjnych. Te rezerwacje są również pobierane przy użyciu tej samej klasy `WrkCtrSchedulingInteropDataProvider` co kalendarze, ale używają metody `getCapacityReservations`. W przypadku planowania w trakcie planowania głównego są brane pod uwagę rezerwacje określonego planu głównego, a jeśli są włączone na stronie **Parametry planowania głównego** , uwzględniane są także rezerwacje z ustalonych zleceń produkcyjnych. Podobnie podczas planowania zlecenia produkcyjnego jest to również opcja, która uwzględnia rezerwacje z istniejących zamówień planowanych, chociaż nie jest to powszechne, tak jak w poprzednim przypadku.
 
 Użycie ograniczonych zdolności produkcyjnych spowoduje, że planowanie będzie trwać dłużej z kilku powodów:
 
@@ -238,11 +238,7 @@ Jeśli na przykład czas pracy dla grupy zasobów w określonym dniu wynosi od 8
 
 Obciążenie pracą z planowania zadań na wszystkich zasobach uwzględnionych w grupie zasobów jest brane pod uwagę w przypadku obliczania dostępnych zdolności produkcyjnych dla grupy zasobów w danym dniu. Dla każdej daty obliczenie jest następujące:
 
-> Dostępna wydajność grup zasobów =  
-> (zdolności produkcyjne dla zasobów w grupie na podstawie ich kalendarza) -  
-> (zaplanowane obciążenie zadaniami zasobów w grupie) -  
-> (zaplanowane obciążenie operacjami zasobów w grupie) -  
-> (zaplanowane obciążenie operacjami grupy zasobów) -
+*Dostępna pojemność grupy zasobów = pojemność zasobów w grupie na podstawie ich kalendarza &ndash; Zaplanowane zadanie obciążenia zasobów w grupie &ndash; Zaplanowane operacje obciążenia zasobów w grupie &ndash; Zaplanowane obciążenie operacji w grupie zasobów*
 
 Na karcie **Zapotrzebowanie na zasoby** w operacji marszruty zapotrzebowanie na zasoby można określać przy użyciu danego zasobu (w takim przypadku operacja będzie planowana na podstawie tego zasobu), dla grupy zasobów, dla typu zasobu lub dla jednego lub większej liczby możliwości, umiejętności, kursu lub certyfikatu. Użycie wszystkich tych opcji zapewnia dużą elastyczność w projektowaniu marszruty, a także komplikuje planowanie dla aparatu, ponieważ zdolności produkcyjne muszą być księgowane według „właściwości” (nazwy abstrakcyjnej używanej w aparacie w celu uzyskania możliwości, umiejętności itp.).
 
@@ -252,11 +248,7 @@ W planowaniu operacji dostępna wydajność dla danych zdolności produkcyjnych 
 
 Dla każdej daty wymagane obliczenie jest następujące:
 
-> Dostępne zdolności produkcyjne dla zdolności produkcyjnych =  
-> (wydajność dla zdolności produkcyjnych) -  
-> (zaplanowane obciążenie zadaniami zasobów o określonych zdolnościach produkcyjnych, zawarte w grupie zasobów)  
-> (zaplanowane obciążenie operacjami zasobów o określonych zdolnościach produkcyjnych, zawarte w grupie zasobów)  
-> (zaplanowane obciążenie operacjami grupy zasobów, która wymaga określonych zdolności produkcyjnych)
+*Dostępna pojemność dla zdolności = Pojemność dla zdolności &ndash; Zaplanowane obciążenie zasobów z określonymi możliwościami, które są zawarte w grupie zasobów &ndash; Zaplanowane obciążenie operacji na zasobach z określonymi możliwościami, które są zawarte w grupie zasobów &ndash; Zaplanowane ładowanie operacji w samej grupie zasobów, które wymagają określonej możliwości*
 
 Oznacza to, że w przypadku obciążenia określonego zasobu, obciążenie jest brane pod uwagę przy obliczaniu dostępnej wydajności grupy zasobów na jedną zdolność, ponieważ obciążenie określonego zasobu zmniejsza jego udział w wydajności grupy zasobów w zależności od zdolności produkcyjnych, jeśli obciążenie określonego zasobu jest związane z daną zdolnościami produkcyjnymi. Jeśli na poziomie grupy zasobów znajduje się obciążenie, jest ono uwzględniane w obliczeniach dostępnej wydajności grupy zasobów na zdolności produkcyjne tylko wtedy, gdy obciążenie pochodzi z operacji wymagającej określonych zdolności produkcyjnych.
 
@@ -313,7 +305,7 @@ Użycie ograniczonych zdolności produkcyjnych wymaga, aby aparat ładował info
 
 ### <a name="setting-hard-links"></a>Ustawianie łączy stałych
 
-Standardowy typ łącza marszruty jest *miękki*, co oznacza, że jest dozwolony odstęp czasowy między godziną zakończenia jednej operacji a początkiem następnej. Zezwolenie na ten proces może mieć negatywny efekt: jeśli materiały lub zdolności produkcyjne nie są dostępne dla jednej z operacji wykonywanych przez bardzo długi czas, produkcja może być w dłuższym czasie bezczynna, co oznacza możliwy wzrost ilości prac w toku. Nie będzie to miało miejsca w przypadku użycia łączy stałych, ponieważ zakończenie i rozpoczęcie muszą być dokładnie zsynchronizowane. Jednak ustawienie łączy stałych sprawia, że problem planowania jest trudniejszy, ponieważ przedziały czasu pracy i zdolności produkcyjnych muszą być obliczane dla dwóch zasobów operacji. Jeśli istnieją również operacje równoległe, powoduje to dodanie znacznego czasu obliczeniowego. Jeśli zasoby dwóch operacji mają różne kalendarze, które się wcale nie nakładają, problemu nie da się rozwiązać.
+Standardowy typ łącza marszruty jest *miękki* , co oznacza, że jest dozwolony odstęp czasowy między godziną zakończenia jednej operacji a początkiem następnej. Zezwolenie na ten proces może mieć negatywny efekt: jeśli materiały lub zdolności produkcyjne nie są dostępne dla jednej z operacji wykonywanych przez bardzo długi czas, produkcja może być w dłuższym czasie bezczynna, co oznacza możliwy wzrost ilości prac w toku. Nie będzie to miało miejsca w przypadku użycia łączy stałych, ponieważ zakończenie i rozpoczęcie muszą być dokładnie zsynchronizowane. Jednak ustawienie łączy stałych sprawia, że problem planowania jest trudniejszy, ponieważ przedziały czasu pracy i zdolności produkcyjnych muszą być obliczane dla dwóch zasobów operacji. Jeśli istnieją również operacje równoległe, powoduje to dodanie znacznego czasu obliczeniowego. Jeśli zasoby dwóch operacji mają różne kalendarze, które się wcale nie nakładają, problemu nie da się rozwiązać.
 
 Zaleca się używanie łączy stałych tylko wtedy, gdy jest to absolutnie konieczne i należy dokładnie przeanalizować, czy jest to konieczne dla każdej operacji związanej z daną marszrutą.
 
@@ -329,7 +321,7 @@ Ponieważ działanie aparatu polega na sprawdzeniu zdolności produkcyjnych posz
 
 ### <a name="large-or-none-scheduling-timeouts"></a>Duże (lub brak) limity czasu planowania
 
-Wydajność aparatu planowania można zoptymalizować przy użyciu parametrów znajdujących się na stronie **Parametry planowania**. Ustawienia **Limit czasu planowania włączony** i **Limit czasu optymalizacji włączony** muszą zawsze mieć wartość **Tak**. Jeśli jest ustawiona wartość **Nie**, planowanie może działać bez ograniczeń, jeśli utworzono niemożliwą do realizacji marszrutę z wieloma opcjami.
+Wydajność aparatu planowania można zoptymalizować przy użyciu parametrów znajdujących się na stronie **Parametry planowania**. Ustawienia **Limit czasu planowania włączony** i **Limit czasu optymalizacji włączony** muszą zawsze mieć wartość **Tak**. Jeśli jest ustawiona wartość **Nie** , planowanie może działać bez ograniczeń, jeśli utworzono niemożliwą do realizacji marszrutę z wieloma opcjami.
 
 Wartość opcji **Maksymalny czas planowania na sekwencję** określa liczbę sekund, przez jaką można najdłużej próbować znaleźć rozwiązanie dla jednej sekwencji (w większości przypadków sekwencja odpowiada jednemu zamówieniu). Wartość, która ma być używana w tym miejscu, zależy od złożoności marszruty i ustawień, takich jak ograniczone zdolności produkcyjne, a maksymalnie 30 sekund jest dobrą wartością początkową.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207354"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018169"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
 
@@ -59,9 +59,9 @@ Do pracy z zamówieniami zakupu można użyć następujących stron:
 
 Zamówienia zakupu wysłane Ci przez odbiorcę do przeglądu są wyświetlane w obszarze roboczym **Potwierdzenie zamówienia zakupu** i na stronie **Zamówienia zakupu do przeglądu**. Po otwarciu zamówienia zakupu można je zaakceptować, odrzucić lub zaakceptować ze zmianami. W nagłówku zamówienia zakupu lub w poszczególnych wierszach mogą istnieć załączniki. Ponadto można dołączyć informacje do swojej odpowiedzi w nagłówku zamówienia zakupu lub w poszczególnych wierszach. Na przykład możesz zasugerować użycie towaru zastępczego w jednym z wierszy.
 
-Możesz wyświetlić podgląd zamówienia zakupu i wydrukować je jako plik PDF za pomocą opcji **Podgląd/drukuj**. Można także użyć akcji **Wyświetl wymiary**, aby ukryć lub wyświetlić następujące kolumny wymiarów: **Oddział**, **Magazyn**, **Kolor**, **Rozmiar**, **Styl** i **Konfiguracja**. 
+Możesz wyświetlić podgląd zamówienia zakupu i wydrukować je jako plik PDF za pomocą opcji **Podgląd/drukuj**. Można także użyć akcji **Wyświetl wymiary** , aby ukryć lub wyświetlić następujące kolumny wymiarów: **Oddział** , **Magazyn** , **Kolor** , **Rozmiar** , **Styl** i **Konfiguracja**. 
 
-Jeśli użyjesz opcji **Zaakceptuj ze zmianami**, możesz zaakceptować lub odrzucić poszczególne wiersze. W wierszach można także wprowadzać następujące zmiany:
+Jeśli użyjesz opcji **Zaakceptuj ze zmianami** , możesz zaakceptować lub odrzucić poszczególne wiersze. W wierszach można także wprowadzać następujące zmiany:
 
 - Zmiana dat lub ilości. Aby zaktualizować potwierdzoną datę dostawy we wszystkich wierszach, użyj opcji **Aktualizuj datę dostawy** w nagłówku zamówienia zakupu.
 - Podział wierszy dla różnych dat dostawy lub ilości.
@@ -87,25 +87,25 @@ Obszar roboczy pokazuje także wszystkie uzyskane lub utracone ZO. Ponadto, jeż
 
 ### <a name="viewing-rfqs"></a>Przeglądanie ZO
 
-Otwórz obszar roboczy **Składanie ofert przez dostawców**, aby uzyskać dostęp do następujących informacji:
+Otwórz obszar roboczy **Składanie ofert przez dostawców** , aby uzyskać dostęp do następujących informacji:
 
-- Wybierz opcję **Nowe zaproszenia do składania ofert**, aby zobaczyć ZO, do których zaproszono Twoją firmę w celu udzielenia odpowiedzi. W tym miejscu można wyświetlić ZO i rozpocząć proces składania oferty. Można także sprawdzić zmienione ZO, dla których należy przesłać nową ofertę.
-- Wybierz opcję **Zwrócone oferty**, aby zobaczyć ZO, które odbiorca zwrócił Ci, aby umożliwić podanie dodatkowych informacji lub zaktualizować ofertę.
-- Wybierz opcję **Oferty w toku**, aby zobaczyć ZO, nad którymi Twoja firma lub osoba ją reprezentująca pracuje, ale jeszcze ich nie przesłała.
-- Wybierz opcję **Wybrane oferty**, aby zobaczyć, gdy klient przyznał co najmniej jedną pozycję wiersza w Twojej ofercie.
-- Wybierz opcję **Przegrane oferty**, aby zobaczyć oferty, w których wszystkie wiersze zostały odrzucone.
-- Wybierz łącze **Zapytania ofertowe**, aby zobaczyć listę zaproszeń ZO oraz wszelkie przesłane oferty wszystkich odbiorców. Strona **Zapytania ofertowe** zawiera listę wszystkich ZO, w które zaangażowany jest dostawca. Można wyszukiwać według stanu.
-- Wybierz łącze **Odrzucone oferty**, aby zobaczyć listę wszystkich ZO, w których osoba kontaktowa dostawcy nie złożyła oferty.
+- Wybierz opcję **Nowe zaproszenia do składania ofert** , aby zobaczyć ZO, do których zaproszono Twoją firmę w celu udzielenia odpowiedzi. W tym miejscu można wyświetlić ZO i rozpocząć proces składania oferty. Można także sprawdzić zmienione ZO, dla których należy przesłać nową ofertę.
+- Wybierz opcję **Zwrócone oferty** , aby zobaczyć ZO, które odbiorca zwrócił Ci, aby umożliwić podanie dodatkowych informacji lub zaktualizować ofertę.
+- Wybierz opcję **Oferty w toku** , aby zobaczyć ZO, nad którymi Twoja firma lub osoba ją reprezentująca pracuje, ale jeszcze ich nie przesłała.
+- Wybierz opcję **Wybrane oferty** , aby zobaczyć, gdy klient przyznał co najmniej jedną pozycję wiersza w Twojej ofercie.
+- Wybierz opcję **Przegrane oferty** , aby zobaczyć oferty, w których wszystkie wiersze zostały odrzucone.
+- Wybierz łącze **Zapytania ofertowe** , aby zobaczyć listę zaproszeń ZO oraz wszelkie przesłane oferty wszystkich odbiorców. Strona **Zapytania ofertowe** zawiera listę wszystkich ZO, w które zaangażowany jest dostawca. Można wyszukiwać według stanu.
+- Wybierz łącze **Odrzucone oferty** , aby zobaczyć listę wszystkich ZO, w których osoba kontaktowa dostawcy nie złożyła oferty.
 
 ### <a name="working-with-rfqs-that-are-publicly-available"></a>Praca z publicznie dostępnymi ZO
 
 Osoby pracujące w sektorze publicznym mogą zobaczyć otwarte i wygasłe ZO udostępnione publicznie.
 
-- Wybierz łącze **Otwarte opublikowane zapytania ofertowe**, aby zobaczyć listę otwartych ZO dostępnych publicznie. Otwarte ZO to takie, które jeszcze nie wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
+- Wybierz łącze **Otwarte opublikowane zapytania ofertowe** , aby zobaczyć listę otwartych ZO dostępnych publicznie. Otwarte ZO to takie, które jeszcze nie wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
 
     Jeżeli zaproszono Cię do złożenia oferty, to samo ZO można znaleźć na stronie **Nowe zaproszenia do składania ofert**. Czasami chcesz złożyć ofertę w otwartym ZO, ale nie zaproszono Cię do złożenia oferty. W takim przypadku możesz zaprosić się samodzielnie,pod warunkiem, że odbiorca włączył samodzielne zapraszanie dotyczące sprawy ZO.
 
-- Wybierz łącze **Zamknięte opublikowane zapytania ofertowe**, aby zobaczyć listę zamkniętych ZO dostępnych publicznie. Zamknięte ZO to takie, które wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
+- Wybierz łącze **Zamknięte opublikowane zapytania ofertowe** , aby zobaczyć listę zamkniętych ZO dostępnych publicznie. Zamknięte ZO to takie, które wygasło. Datę i godzinę ważności można znaleźć w nagłówku ZO.
 
     Zamknięte ZO zawiera wszystkie oferty dostawców do poziomu wiersza. Przyznawanie lub odrzucanie ofert jest uwzględniane w zamkniętym ZO. Dostępne są także wszystkie załączniki zawarte w ofercie.
 
@@ -113,7 +113,7 @@ Osoby pracujące w sektorze publicznym mogą zobaczyć otwarte i wygasłe ZO udo
 
 ### <a name="bidding"></a>Składanie ofert
 
-- Kliknij przycisk **Oferta**, aby rozpocząć składanie oferty w ZO.
+- Kliknij przycisk **Oferta** , aby rozpocząć składanie oferty w ZO.
 
     Jeżeli edycja pól oferty jest włączona w nagłówkach i wierszach ZO, można wprowadzić ofertę bezpośrednio w siatce wierszy. Należy także uwzględnić wszelkie dodatkowe informacje o ofercie, które należy dodać w szczegółach wiersza.
 
@@ -121,16 +121,16 @@ Osoby pracujące w sektorze publicznym mogą zobaczyć otwarte i wygasłe ZO udo
 
     Ofertę można zapisać w dowolnej chwili przed upłynięciem daty ważności. Następnie można powrócić do niej później w celu zakończenia i przesłania. Po przesłaniu oferty można ją wycofywać i aktualizować do upłynięcia daty ważności.
 
-- Wybierz opcję **Resetuj na podstawie ZO**, aby zresetować dane wprowadzone dla oferty i przywrócić pierwotne ZO. Można zresetować nagłówek lub wiersz.
+- Wybierz opcję **Resetuj na podstawie ZO** , aby zresetować dane wprowadzone dla oferty i przywrócić pierwotne ZO. Można zresetować nagłówek lub wiersz.
 - Wybierz opcję **Dodaj alternatywę** lub **Usuń alternatywę** w siatce wierszy, aby pracować z alternatywami.
 
-    Niektóre ZO zezwalają na oferty alternatywne. Oferty alternatywne można określić tylko dla wierszy typu **Kategoria**, ponieważ nie można dodawać określonych towarów jako alternatyw. 
+    Niektóre ZO zezwalają na oferty alternatywne. Oferty alternatywne można określić tylko dla wierszy typu **Kategoria** , ponieważ nie można dodawać określonych towarów jako alternatyw. 
 
-- Wybierz opcję **Załącznik ZO** lub **Załącznik wierszy RFQ**, aby otworzyć załącznik dodany przez odbiorcę do ZO. Wybierz opcję **Załączniki ofert** lub **Załączniki wierszy ofert**, aby przekazać załączniki razem z ofertą.
+- Wybierz opcję **Załącznik ZO** lub **Załącznik wierszy RFQ** , aby otworzyć załącznik dodany przez odbiorcę do ZO. Wybierz opcję **Załączniki ofert** lub **Załączniki wierszy ofert** , aby przekazać załączniki razem z ofertą.
 
     Mogą istnieć kwestionariusze, na które należy odpowiedzieć przed złożeniem oferty.
 
-- Wybierz opcję **Odrzuć**, jeżeli nie chcesz składać oferty. Po wybraniu opcji **Odrzuć** nie można wycofać akcji ani wprowadzić oferty.
+- Wybierz opcję **Odrzuć** , jeżeli nie chcesz składać oferty. Po wybraniu opcji **Odrzuć** nie można wycofać akcji ani wprowadzić oferty.
 
 Jeśli ZO zostało zmienione, należy wprowadzić nową ofertę. Informacje o poprawce można znaleźć na karcie **Poprawki** strony ZO. Zmienione ZO są widoczne na stronie **Nowe zaproszenia do składania ofert**.
 

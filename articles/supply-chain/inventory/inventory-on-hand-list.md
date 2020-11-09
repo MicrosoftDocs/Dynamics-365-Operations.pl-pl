@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventOnhandItem, InventOnHandItemListPage
+ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 275a37cd76715ab9909e057ec759c66c4f9c617b
-ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
+ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829856"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017398"
 ---
 # <a name="inventory-on-hand-list"></a>Listy dostępnych zapasów
 
@@ -39,7 +39,7 @@ Skorzystaj z poniższych narzędzi, aby znaleźć zbiór produktów, których sz
 
 - W okienku akcji wybierz opcję [**Wymiary**](#dimensions), aby otworzyć okno dialogowe, w którym można dodawać lub usuwać kolumny wyświetlane w siatce **Dostępnych**.
 - W [okienku **Filtruj**](#filters-pane) wprowadź wartości dla określonych pól, aby wyświetlić tylko rekordy pasujące do tych wartości. Należy zauważyć, że filtry zdefiniowane w tym miejscu są stosowane do tabel źródłowych, które mogą być później agregowane, zgodnie z wymiarami wybranymi do pokazania. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
-- W okienku **Filtruj** wybierz opcję **Zastosuj**, aby wygenerować listę dopasowanych dostępnych zapasów w siatce **Dostępne**.
+- W okienku **Filtruj** wybierz opcję **Zastosuj** , aby wygenerować listę dopasowanych dostępnych zapasów w siatce **Dostępne**.
 - W siatce **Dostępne** wybierz dowolny nagłówek kolumny, który ma być sortowany lub przefiltrowany według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
 
 Dla każdego dopasowanego towaru siatka **Dostępne** zawiera następujące kolumny informacji o zapasach.
@@ -53,15 +53,15 @@ Dla każdego dopasowanego towaru siatka **Dostępne** zawiera następujące kolu
 | Zamówione w sumie | Ilość całkowita uwzględniona w zamówieniach przychodzących lub mająca dodatnią ilość w różnych arkuszach magazynowych. |
 | Zamówione | Ilość całkowita uwzględniona w zamówieniach wychodzących lub mająca ujemną ilość w różnych arkuszach magazynowych. |
 | Zamówione i zarezerwowane | Całkowita ilość zarezerwowana na zamówionych paragonach. Wartość w tym polu reprezentuje łączną ilość towarów w transakcjach wychodzących, które mają stan _Zamówione zarezerwowane_. Towary zarezerwowane jako zamówione nie są fizycznie dostępne w magazynie. Dlatego nie można ich bezpośrednio pobrać i dostarczyć. |
-| Dostępne do rezerwacji | Całkowita ilość dostępnych zapasów, jaka może zostać zarezerwowana.<p>**Uwaga:** Jeśli zaznaczono pole wyboru **Rezerwacja zamówionych pozycji** na stronie **Parametry modułu Zarządzanie zapasami i magazynem**, wartość w tym polu będzie zawierać oczekiwane przychody. Jeśli to pole wyboru jest wyczyszczone, wartość wyklucza oczekiwane przychody.</p> |
+| Dostępne do rezerwacji | Całkowita ilość dostępnych zapasów, jaka może zostać zarezerwowana.<p>**Uwaga:** Jeśli zaznaczono pole wyboru **Rezerwacja zamówionych pozycji** na stronie **Parametry modułu Zarządzanie zapasami i magazynem** , wartość w tym polu będzie zawierać oczekiwane przychody. Jeśli to pole wyboru jest wyczyszczone, wartość wyklucza oczekiwane przychody.</p> |
 | Wszystkie dostępne | Łączna dostępna ilość.<p>**W sumie dostępne** jest polem obliczeniowym. Wartość jest równa **Dostępna fizyczna** powiększonej o wartość **Zamówione w sumie** pomniejszoną o wartość **W zamówieniu**.</p> |
 
 ## <a name="apply-filters-to-find-the-records-that-youre-looking-for"></a><a name="filters-pane"></a>Stosowanie filtrów w celu znalezienia szukanych rekordów
 
-Korzystając z okienka **Filtry**, można filtrować listę dostępnych zapasów, tak aby zawierała tylko rekordy, w których wartości pól odpowiadają kryteriom filtrowania. Aby zdefiniować filtr, należy wykonać następujące czynności.
+Korzystając z okienka **Filtry** , można filtrować listę dostępnych zapasów, tak aby zawierała tylko rekordy, w których wartości pól odpowiadają kryteriom filtrowania. Aby zdefiniować filtr, należy wykonać następujące czynności.
 
 1. W okienku **Filtry** znajdź pole, według którego chcesz filtrować.
-2. W polu pod nazwą pola docelowego wybierz operator logiczny (na przykład, *zaczyna się od* , *jest równe* lub *większe niż*).
+2. W polu pod nazwą pola docelowego wybierz operator logiczny (na przykład, *zaczyna się od* , *jest równe* lub *większe niż* ).
 3. Wprowadź lub wybierz wartość do wyszukania.
 
 > [!IMPORTANT]
@@ -71,10 +71,10 @@ Korzystając z okienka **Filtry**, można filtrować listę dostępnych zapasów
 > 
 > Jednak [filtry dostarczone w siatce](#grid-filters) *są* stosowane do zagregowanej listy. Filtry te obejmują zarówno QuickFilter na górze siatki, jak i filtr dla każdego nagłówka kolumny.
 
-Aby zmodyfikować zbiór filtrów dostępnych w okienku **Filtrów**, należy wykonać następujące kroki:
+Aby zmodyfikować zbiór filtrów dostępnych w okienku **Filtrów** , należy wykonać następujące kroki:
 
-- Aby usunąć filtr z okienka, należy wybrać przycisk **Zamknij** (**X**).
-- Aby dodać filtr, wybierz opcję **Dodaj** u góry okienka **Filtrów**. Wyświetlone zostanie okno dialogowe **Dodawania pól filtru**, w którym jest wyświetlana lista dostępnych pól. Pokazuje także informacje o typie danych i tabeli dla każdego pola. Nagłówki kolumn służą do filtrowania i sortowania listy zgodnie z potrzebami, a następnie zaznacz pole wyboru dla każdego pola, które chcesz dodać do okienka **Filtru**. Po zakończeniu wybierz opcję **Wstaw**, aby zastosować zmiany.
+- Aby usunąć filtr z okienka, należy wybrać przycisk **Zamknij** ( **X** ).
+- Aby dodać filtr, wybierz opcję **Dodaj** u góry okienka **Filtrów**. Wyświetlone zostanie okno dialogowe **Dodawania pól filtru** , w którym jest wyświetlana lista dostępnych pól. Pokazuje także informacje o typie danych i tabeli dla każdego pola. Nagłówki kolumn służą do filtrowania i sortowania listy zgodnie z potrzebami, a następnie zaznacz pole wyboru dla każdego pola, które chcesz dodać do okienka **Filtru**. Po zakończeniu wybierz opcję **Wstaw** , aby zastosować zmiany.
 
 ## <a name="select-which-dimensions-to-show"></a><a name="dimensions"></a>Służy do wybierania wymiarów, które mają być pokazywane
 
@@ -84,15 +84,15 @@ Aby dostosować wybór widocznych wymiarów magazynowych, należy wykonać nast�
 
 1. W Okienku akcji kliknij pozycję **Wymiary**.
 
-    Wyświetlone zostanie okno dialogowe **Wyświetlanie wymiarów**, które pokazuje każdy wymiar.
+    Wyświetlone zostanie okno dialogowe **Wyświetlanie wymiarów** , które pokazuje każdy wymiar.
 
 2. Zaznacz pole wyboru przy każdym wymiarze, który chcesz dołączyć w siatce.
-3. Jeśli wybór ma być używany domyślnie po kolejnym otwarciu strony **Lista dostępnych**, należy skonfigurować opcję **Zapisz ustawienia** na **Tak**. Jeśli zostanie wybrana opcja **Nie**, wybór będzie używany tylko podczas bieżącej sesji. Dlatego przy następnym otwarciu strony zostanie użyta bieżąca opcja domyślna.
-4. Wybierz przycisk **OK**, aby zamknąć okienko dialogowe i zastosować zmiany.
+3. Jeśli wybór ma być używany domyślnie po kolejnym otwarciu strony **Lista dostępnych** , należy skonfigurować opcję **Zapisz ustawienia** na **Tak**. Jeśli zostanie wybrana opcja **Nie** , wybór będzie używany tylko podczas bieżącej sesji. Dlatego przy następnym otwarciu strony zostanie użyta bieżąca opcja domyślna.
+4. Wybierz przycisk **OK** , aby zamknąć okienko dialogowe i zastosować zmiany.
 
 ## <a name="filter-on-the-output-of-the-inventory-on-hand-list"></a><a name="grid-filters"></a>Filtr dla danych wyjściowych na liście dostępnych zapasów
 
-Możesz wybrać dowolny nagłówek kolumny w siatce **Dostępne**, aby sortować lub filtrować według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
+Możesz wybrać dowolny nagłówek kolumny w siatce **Dostępne** , aby sortować lub filtrować według wartości w tej kolumnie. Dodatkowe opcje filtrowania znajdują się w QuickFilter u góry siatki. Te filtry są stosowane do wyników, a nie do tabel źródłowych. Aby uzyskać informacje o tym, jak to zachowanie może mieć wpływ na wyniki, należy zapoznać się z [przykładami](#examples) przedstawionymi dalej w tym temacie.
 
 > [!NOTE]
 > Nie można filtrować i sortować według wszystkich kolumn. Większość kolumn ilości nie zawiera formantów sortowania i filtrowania, ponieważ są to pola obliczeniowe. Kolumna **W zamówieniu** jest wyjątkiem.
@@ -145,4 +145,4 @@ W tym przypadku powstaje wynik.
 |---|---|---|---|
 | IA0001 | 1 | 2 | 2 |
 
-Należy zauważyć, że ustawienia w okienku **Filtry** dotyczą szczegółowej (nie zagregowanej) tabeli zapasów pokazanej na początku tej sekcji. Dlatego kryterium **Fizycznie dostępne** \| **mniejsze niż lub równe** \| _1_ powoduje wyszukanie dwóch wierszy z tabeli (pierwszy i trzeci wiersz, z których każdy pokazuje **Fizycznie dostępne** równą  _1_). Jednak w tym scenariuszu strona **Lista dostępnych** nie jest skonfigurowana do wyświetlania wymiaru **Magazynowego**. Z tego względu dwa oryginalne wiersze są agregowane w jeden wynikowy wiersz, ponieważ oba wiersze mają identyczne wartości we wszystkich widocznych wymiarach. Ten wiersz wydaje się naruszać kryterium filtrowania, ponieważ **Fizycznie dostępne** jest wyświetlana jako _2_. Jednak wynik jest poprawny, ponieważ ustawienia w okienku **Filtry** mają zastosowanie do tabeli źródłowej, a nie do zagregowanej tabeli wyświetlanej na stronie **Lista dostępnych**.
+Należy zauważyć, że ustawienia w okienku **Filtry** dotyczą szczegółowej (nie zagregowanej) tabeli zapasów pokazanej na początku tej sekcji. Dlatego kryterium **Fizycznie dostępne** \| **mniejsze niż lub równe** \| _1_ powoduje wyszukanie dwóch wierszy z tabeli (pierwszy i trzeci wiersz, z których każdy pokazuje **Fizycznie dostępne** równą  _1_ ). Jednak w tym scenariuszu strona **Lista dostępnych** nie jest skonfigurowana do wyświetlania wymiaru **Magazynowego**. Z tego względu dwa oryginalne wiersze są agregowane w jeden wynikowy wiersz, ponieważ oba wiersze mają identyczne wartości we wszystkich widocznych wymiarach. Ten wiersz wydaje się naruszać kryterium filtrowania, ponieważ **Fizycznie dostępne** jest wyświetlana jako _2_. Jednak wynik jest poprawny, ponieważ ustawienia w okienku **Filtry** mają zastosowanie do tabeli źródłowej, a nie do zagregowanej tabeli wyświetlanej na stronie **Lista dostępnych**.

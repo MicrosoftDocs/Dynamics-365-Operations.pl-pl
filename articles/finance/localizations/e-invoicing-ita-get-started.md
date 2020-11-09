@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ea0408f4ef72bf77a0659799075338e4e6b2aa30
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: c513141f820c95fe3842478361693701f1e3641b
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836015"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039799"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > Dodatek Faktury elektroniczne dla Włoch może obecnie nie obsługiwać wszystkich funkcji dostępnych dla faktur elektronicznych w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
@@ -54,13 +54,13 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 ## <a name="import-the-e-invoicing-feature"></a>Importuj funkcję fakturowania elektronicznego
 
 1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji** , a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
 3. Na stronie **Funkcje fakturowania elektronicznego** wybierz opcję **Importuj** w celu zaimportowania funkcji fakturowania elektronicznego z repozytorium globalnego.
 
     > [!NOTE]
     > Jeśli lista dostępnych funkcji jest niewidoczna, wybierz opcję **Synchronizuj**. 
 
-4. Wybierz funkcję **Eksport faktur elektronicznych (IT)**, a następnie wybierz opcję **Importuj**.
+4. Wybierz funkcję **Eksport faktur elektronicznych (IT)** , a następnie wybierz opcję **Importuj**.
 
 ![Importowanie funkcji eksportu faktur elektronicznych (IT)](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
@@ -74,7 +74,7 @@ Po zaimportowaniu funkcji **Eksportowanie faktur elektronicznych (IT)** z repozy
 
     Następnie skonfigurujesz formaty raportowania elektronicznego (ER), które są skojarzone z funkcją fakturowania elektronicznego.
 
-2. Na karcie **Konfiguracje** wybierz opcję **Dodaj**, aby zarządzać wersjami konfiguracji.
+2. Na karcie **Konfiguracje** wybierz opcję **Dodaj** , aby zarządzać wersjami konfiguracji.
 
     ![Zarządzanie wersjami konfiguracji funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
@@ -86,7 +86,7 @@ Po zaimportowaniu funkcji **Eksportowanie faktur elektronicznych (IT)** z repozy
     Podczas tworzenia funkcji fakturowania elektronicznego pochodzącej z innej funkcji fakturowania elektronicznego, wszystkie formaty ER są dziedziczone z oryginalnej funkcji.
 
 3. Wybierz określoną konfigurację pliku formatu ER.
-4. Wybierz opcję **Edytuj** lub **Wyświetl**, aby otworzyć stronę **Projektant formatów**.
+4. Wybierz opcję **Edytuj** lub **Wyświetl** , aby otworzyć stronę **Projektant formatów**.
 
     ![Otwieranie strony Projektanta formatów](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
@@ -96,7 +96,7 @@ Po zaimportowaniu funkcji **Eksportowanie faktur elektronicznych (IT)** z repozy
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Zarządzaj konfiguracjami funkcji fakturowania elektronicznego
 
-- Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** wybierz opcję **Dodaj**, **Usuń** lub **Edytuj**, aby zarządzać konfiguracjami funkcji fakturowania w systemie.
+- Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** wybierz opcję **Dodaj** , **Usuń** lub **Edytuj** , aby zarządzać konfiguracjami funkcji fakturowania w systemie.
 
 ![Zarządzanie konfiguracjami funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
@@ -106,7 +106,7 @@ W tym kroku można skonfigurować zdarzenia dotyczące faktur elektronicznych, �
 
 1. Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** w kolumnie **Ustawienia funkcji** wybierz opcję **Faktura sprzedaży**.
 2. Wybierz opcję **Edycja**.
-3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje**, aby zarządzać listą akcji. Akcje definiują listę operacji, które muszą być uruchomione w kolejności sekwencyjnej, aby wykonać pełne wykonanie zdarzenia.
+3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje** , aby zarządzać listą akcji. Akcje definiują listę operacji, które muszą być uruchomione w kolejności sekwencyjnej, aby wykonać pełne wykonanie zdarzenia.
 
     ![Karta Akcje](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
@@ -115,11 +115,11 @@ W tym kroku można skonfigurować zdarzenia dotyczące faktur elektronicznych, �
     | 1         | Przekształcanie dokumentu | Utwórz plik XML faktury elektronicznej w formacie **FatturaPA**. |
     | 2         | Podpisz dokument      | Zastosuj podpis cyfrowy do pliku XML.             |
 
-4. Wybierz kartę **Reguły stosowania**, aby wyświetlić i zachować reguły stosowania. Reguły stosowania definiują kontekst, w którym akcja będzie uruchamiana.
+4. Wybierz kartę **Reguły stosowania** , aby wyświetlić i zachować reguły stosowania. Reguły stosowania definiują kontekst, w którym akcja będzie uruchamiana.
 
     ![Karta Reguły zastosowania](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
-5. Wybierz kartę **Zmienne**, aby wyświetlić i zachować zmienne.
+5. Wybierz kartę **Zmienne** , aby wyświetlić i zachować zmienne.
 
     ![Karta Zmienne](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
@@ -166,7 +166,7 @@ Podczas instalacji Finance należy wykonać następujące zadania:
 1. W obszarze roboczym **Raportowanie elektroniczne** sprawdź, czy dostawca konfiguracji **Usługi dokumentów biznesowych** jest skonfigurowany jako **Aktywny**.
 2. Wybierz **Repozytoria**.
 3. Wybierz pozycję **Zasób globalny \> Otwórz**.
-4. Importowanie **Modelu faktury**, **Mapowania modelu faktury** i **Modelu kontekstu faktury dla odbiorcy**.
+4. Importowanie **Modelu faktury** , **Mapowania modelu faktury** i **Modelu kontekstu faktury dla odbiorcy**.
 
 #### <a name="turn-on-the-feature-for-exporting-customer-electronic-invoices-for-italy"></a>Włącz funkcję, aby wyeksportować faktury elektroniczne dla odbiorcy we Włoszech
 
@@ -208,7 +208,7 @@ Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty 
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.
-3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj**, aby otworzyć okno dialogowe **Zapytania**, w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
+3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj** , aby otworzyć okno dialogowe **Zapytania** , w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
 
 ![Przesyłanie dokumentów elektronicznych, okno dialogowe](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
@@ -218,8 +218,8 @@ Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty 
 
     ![Konfigurowanie kryteriów filtru przesyłania](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
-2. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Zapytania**.
-3. Wybierz przycisk **OK**, aby przesłać wybrane dokumenty.
+2. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Zapytania**.
+3. Wybierz przycisk **OK** , aby przesłać wybrane dokumenty.
 
 > ! [UWAGA] Podczas pierwszej próby przesłania dokumentu za pośrednictwem usługi zostaniesz poproszony o potwierdzenie połączenia z dodatkiem Faktury elektroniczne. Wybierz **Kliknij tutaj, aby połaczyć się się z usługą Elektronicznego przesyłania dokumentów**.
 
@@ -228,18 +228,18 @@ Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty 
 Dzienniki przesyłania można wyświetlić dla wszystkich przesłanych dokumentów.
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Dziennik przsyłania dokumentów elektronicznych**.
-2. W polu **Typ dokumentu** wybierz opcję **Arkusz faktur dla odbiorcy** lub **Faktura projektu**, aby odfiltrować wymagane dokumenty elektroniczne.
+2. W polu **Typ dokumentu** wybierz opcję **Arkusz faktur dla odbiorcy** lub **Faktura projektu** , aby odfiltrować wymagane dokumenty elektroniczne.
 
     ![Wybór typu dokumentu, aby wyświetlić dzienniki przedłożenia](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     Wartość wyświetlana w kolumnie **Stan przesyłania** reprezentuje stan procesu przesyłania. Wskazuje on, czy proces został uruchomiony zgodnie z konfiguracją i czy jest wymagane wykonanie dodatkowych działań.
 
-3. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania**, aby wyświetlić szczegóły dzienników wykonywania przesyłania.
+3. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania** , aby wyświetlić szczegóły dzienników wykonywania przesyłania.
 
     ![Wyświetlanie szczegółów dziennika przesyłania](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. Na skróconej karcie **Przetwarzanie akcji** można przejrzeć dziennik wykonywania akcji skonfigurowanych w wersji funkcji skonfigurowanej w RCS. Kolumna **Stan** wskazuje, czy akcja została pomyślnie uruchomiona.
-5. Na skróconej karcie **Pliki akcji** można wyświetlać pliki pośrednie wygenerowane podczas wykonywania akcji. Można wybrać opcję **Widok**, aby pobrać wyjściowy plik XML w formacie **FatturaPA** i wyświetlić jego zawartość.
+5. Na skróconej karcie **Pliki akcji** można wyświetlać pliki pośrednie wygenerowane podczas wykonywania akcji. Można wybrać opcję **Widok** , aby pobrać wyjściowy plik XML w formacie **FatturaPA** i wyświetlić jego zawartość.
 
 ## <a name="related-topics"></a>Powiązane tematy
 

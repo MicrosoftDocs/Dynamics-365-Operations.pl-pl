@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959582"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058161"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurowanie jednostek wirtualnych usługi Common Data Service
 
@@ -60,7 +60,7 @@ Najpierw należy zarejestrować aplikację w portalu Azure, dzięki czemu platfo
 
 2. Na liście usług Azure wybierz pozycję **Rejestracje aplikacji**.
 
-3. Wybierz opcję**Nowa rejestracja**.
+3. Wybierz opcję **Nowa rejestracja**.
 
 4. W polu **Nazwa** wprowadź opisową nazwę aplikacji. Na przykład **Encje wirtualne Dynamics 365 Human Resources**.
 
@@ -115,7 +115,7 @@ Następnym krokiem jest skonfigurowanie źródła danych jednostki wirtualnej w 
 
 4. W oknie **Centrum kondycji rozwiązania** wybierz ikonę **Wyszukiwanie zaawansowane** w prawym górnym rogu strony aplikacji.
 
-5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych Finance and Operations**.
+5. Na stronie **Wyszukiwanie zaawansowane** , z listy rozwijanej **Wyszukaj** wybierz pozycję **Konfiguracje wirtualnego źródła danych Finance and Operations**.
 
 6. Wybierz opcję **Wyniki**.
 
@@ -123,10 +123,10 @@ Następnym krokiem jest skonfigurowanie źródła danych jednostki wirtualnej w 
 
 8. Wprowadź wymagane informacje dotyczące konfiguracji źródła danych.
 
-   - **Docelowy adres URL**: adres URL obszaru nazw modułu Zasoby ludzkie.
-   - **Identyfikator dzierżawcy**: identyfikator dzierżawcy Azure Active Directory (Azure AD).
-   - **Identyfikator aplikacji w usłudze AAD**: identyfikator aplikacji (klienta) utworzony dla aplikacji zarejestrowanej w portalu Microsoft Azure. Te informacje uzyskano wcześniej w tym kroku [Rejestracja aplikacji w Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
-   - **Wpis tajny aplikacji w usłudze AAD**: wpis tajny utworzony dla aplikacji zarejestrowanej w portalu Microsoft Azure. Te informacje uzyskano wcześniej w tym kroku [Rejestracja aplikacji w Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Docelowy adres URL** : adres URL obszaru nazw modułu Zasoby ludzkie.
+   - **Identyfikator dzierżawcy** : identyfikator dzierżawcy Azure Active Directory (Azure AD).
+   - **Identyfikator aplikacji w usłudze AAD** : identyfikator aplikacji (klienta) utworzony dla aplikacji zarejestrowanej w portalu Microsoft Azure. Te informacje uzyskano wcześniej w tym kroku [Rejestracja aplikacji w Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
+   - **Wpis tajny aplikacji w usłudze AAD** : wpis tajny utworzony dla aplikacji zarejestrowanej w portalu Microsoft Azure. Te informacje uzyskano wcześniej w tym kroku [Rejestracja aplikacji w Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
 9. Wybierz opcję **Zapisz i zamknij**.
 
@@ -141,47 +141,48 @@ Udziel uprawnień dwóm aplikacjom Azure AD w module zasoby ludzkie:
 
 1. W module Zasoby ludzkie otwórz stronę **Aplikacje Azure Active Directory**.
 
-2. Wybierz pozycję **Nowy**, aby utworzyć nowy rekord aplikacji:
+2. Wybierz pozycję **Nowy** , aby utworzyć nowy rekord aplikacji:
 
     - W polu **Identyfikator klienta** wprowadź identyfikator klienta aplikacji zarejestrowanej w portalu Microsoft Azure.
     - W polu **Nazwa** wprowadź nazwę aplikacji zarejestrowanej w portalu Microsoft Azure.
     - W polu **Identyfikator użytkownika** wybierz identyfikator użytkownika z uprawnieniami administratora w module Zasoby ludzkie i środowisku Power Apps.
 
-3. Wybierz pozycję **Nowy**, aby utworzyć drugi rekord aplikacji:
+3. Wybierz pozycję **Nowy** , aby utworzyć drugi rekord aplikacji:
 
-    - **Identyfikator klienta**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Nazwa**: Dynamics 365 HR Virtual Entity
+    - **Identyfikator klienta** : f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Nazwa** : Dynamics 365 HR Virtual Entity
     - W polu **Identyfikator użytkownika** wybierz identyfikator użytkownika z uprawnieniami administratora w module Zasoby ludzkie i środowisku Power Apps.
 
 ## <a name="generate-virtual-entities"></a>Generowanie jednostek wirtualnych
 
 Po zakończeniu pracy Instalatora można wybrać jednostki wirtualne, które mają zostać wygenerowane i włączone w instancji usługi Common Data Service.
 
-1. Otwórz [Centrum administracyjne Power Platform](https://admin.powerplatform.microsoft.com).
+1. W module Zasoby ludzkie otwórz stronę **Integracja Common Data Service (CDS)**.
 
-2. Na liście **Środowiska** wybierz środowisko Power Apps skojarzone z wystąpieniem modułu Zasoby ludzkie.
-
-3. Wybierz **Adres URL środowiska** w sekcji **Szczegóły** strony.
-
-4. W oknie **Centrum kondycji rozwiązania** wybierz ikonę **Wyszukiwanie zaawansowane** w prawym górnym rogu strony.
-
-5. Na stronie **Wyszukiwanie zaawansowane**, z listy rozwijanej **Wyszukaj** wybierz pozycję **Dostępne jednostki HR**.
-
-6. Korzystając z opcji filtrowania, znajdź jednostki, które chcesz włączyć.
-
-7. Wybierz jednostkę z listy.
-
-8. Na stronie jednostki zmień właściwość **Wygenerowano** na **Tak** dla jednostki.
-
-9. Zapisz i zamknij stronę jednostki.
+2. Wybierz kartę **Jednostki wirtualne**.
 
 > [!NOTE]
-> Można wygenerować wiele jednostek wirtualnych jednocześnie, korzystając ze strony **Zmień wiele rekordów**. Zaznacz wiele rekordów na stronie i wybierz opcję **Edytuj** na wstążce. Następnie możesz zmienić właściwość **Wygenerowano** dla wszystkich zaznaczonych rekordów.
+> **Włączenie przełączania jednostek wirtualnych** będzie automatycznie ustawiane na wartość **Tak** , gdy wszystkie wymagane ustawienia zostaną zakończone. Jeśli przełącznik ma wartość **Nie** , sprawdź kroki w poprzednich sekcjach tego dokumentu, aby upewnić się, że wszystkie ustawienia wymagań wstępnych zostały zakończone.
 
-![Dostępne jednostki HR](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Wybierz jednostki lub jednostki, w których chcesz utworzyć w Common Data Service.
 
-> [!NOTE]
-> Aby usprawnić proces generowania jednostek wirtualnych w przyszłych wersjach, proces ten następuje na stronie w module Zasoby ludzkie.
+4. Wybierz opcję **Generuj/Odśwież**.
+
+![Integracja z usługą Common Data Service](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Sprawdź stan generacji jednostki
+
+Jednostki wirtualne są generowane w Common Data Service w trakcie asynchronicznego procesu w tle. Aktualizacje w procesie są wyświetlane w centrum akcji. Szczegóły procesu, w tym dzienniki błędów, znajdują się na stronie **Automatyzacja procesów**.
+
+1. W module Human Resources otwórz stronę listy **Automatyzacja procesów**.
+
+2. Wybierz kartę **Procesy w tle**.
+
+3. Wybierz **Proces w tle asynchronicznego sondowania jednostki wirtualnej**.
+
+4. Służy do **Wyświetl ostatnie wyniki**.
+
+W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można przejrzeć dziennik procesu, w tym wszystkie błędy zwrócone przez system Common Data Service.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

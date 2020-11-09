@@ -3,7 +3,7 @@ title: Wynajem składnika majątku — rozpoczęcie
 description: W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970015"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022574"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów. W tym temacie opisano również terminologię używaną w interfejsie użytkownika i w dokumentacji. Wynajem składnika majątku jest zaawansowaną funkcją służącą do zarządzania, śledzenia i automatyzowania transakcji finansowych wynajmowanych składników majątku w Microsoft Dynamics 365 Finance. Wynajem składników majątku jest zgodny z międzynarodowymi standardami rachunkowości (MSSF 16) i standardami finansowymi (ASC 842). Wynajem składników aktywów wyszukuje i przetwarza informacje o dzierżawie oraz ułatwia generowanie wpisy w arkuszu w cyklu wynajmu od początkowego rozpoznania, miesięcznych wpisów w arkuszu, do utraty ważności zakończenia wynajmu. Wynajem składników majątku integruje się płynnie z innymi komponentami Dynamics 365 Finance, w tym Środkami trwałymi, Rozrachunki z dostawcami i Księga główna.
 
@@ -209,7 +208,7 @@ Oznacza przeniesienie zmniejszenia salda składnika majątku z prawem do użytko
 ## <a name="create-an-asset-lease"></a>Tworzenie wynajmu składnika majątku
 Aby utworzyć nowy wynajem, należy wykonać następujące kroki. 
 
-1. Aby korzystać z funkcji **Wynajem składnika majątku**, należy ją włączyć w obszarze roboczym **Zarządzanie funkcjami**. W obszarze roboczym **Zarządzanie funkcjami** wybierz opcję **Wszystkie**, aby wyświetlić na stronie wszystkie funkcje. Wybierz **Wynajem składnika majątku**, a następnie **Wyłącz teraz**.
+1. Aby korzystać z funkcji **Wynajem składnika majątku** , należy ją włączyć w obszarze roboczym **Zarządzanie funkcjami**. W obszarze roboczym **Zarządzanie funkcjami** wybierz opcję **Wszystkie** , aby wyświetlić na stronie wszystkie funkcje. Wybierz **Wynajem składnika majątku** , a następnie **Wyłącz teraz**.
 2. Przejdź do **Wynajem składnika majątku >Wspólne > Podsumowanie wynajmu**. Na skróconej karcie **Ogólne** wprowadź wartość w wymaganych polach. 
    - **Szczegóły wynajmu**
    - **Okres użyteczności składnika majątku (w miesiącach)**
@@ -226,19 +225,19 @@ Aby utworzyć nowy wynajem, należy wykonać następujące kroki.
 
 5. Przełącz się na skróconą kartę **Ogólne**. Zostaną obliczone wartości **Początkowy składnik majątku z prawem do użytkowania** i **Zobowiązanie z tytułu wynajmu**. 
 
-6. Przejdź do skróconej karty **Test klasyfikacji wynajmu**, aby sprawdzić wartość w **Typ wynajmu**. 
+6. Przejdź do skróconej karty **Test klasyfikacji wynajmu** , aby sprawdzić wartość w **Typ wynajmu**. 
 
    Automatyczny **Typ wynajmu** jest klasyfikowany zgodnie z kryteriami zdefiniowanymi na stronie **Księgi**.
 
 7.  Przejdź do obszaru **Harmonogram płatności** w sekcji **Funkcja**.  
 
-   Na stronie **Harmonogram płatności** widoczne są przyszłe harmonogramy płatności dla identyfikatora wynajmu. Wybierz opcję **Potwierdź harmonogram**, aby móc zaksięgować transakcje **Początkowe uznanie**. 
+   Na stronie **Harmonogram płatności** widoczne są przyszłe harmonogramy płatności dla identyfikatora wynajmu. Wybierz opcję **Potwierdź harmonogram** , aby móc zaksięgować transakcje **Początkowe uznanie**. 
 
 [![Funkcja początkowego uznania](./media/overview-13.png)](./media/overview-13.png)
 
-8. Wybierz opcję **Początkowe uznanie**, aby utworzyć arkusz początkowego uznania. 
+8. Wybierz opcję **Początkowe uznanie** , aby utworzyć arkusz początkowego uznania. 
 
-9. Wybierz opcję **Dzienniki wynajmu składnika majątku**, aby zaksięgować transakcję początkowego uznania. 
+9. Wybierz opcję **Dzienniki wynajmu składnika majątku** , aby zaksięgować transakcję początkowego uznania. 
 
    Z poziomu harmonogramu płatności można otworzyć stronę szczegółową zawierającą transakcji składnika majątku z prawem do użytkowania. 
  

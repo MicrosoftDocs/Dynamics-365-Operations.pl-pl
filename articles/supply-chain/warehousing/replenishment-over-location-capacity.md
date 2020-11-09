@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652258"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016615"
 ---
 # <a name="replenishment-over-location-capacity"></a>Uzupełnianie zapasów ponad pojemność lokalizacji
 
@@ -97,7 +98,7 @@ Włącz funkcję uzupełniania nadmiaru pojemności w profilu lokalizacji.
         Limity składowania są brane pod uwagę podczas obliczania procentu ilości pracy. Jeśli nie zdefiniowano żadnych limitów magazynowych, procent ilości pracy jest obliczany na podstawie objętości, jeśli w profilu lokalizacji są zdefiniowane ograniczenia dotyczące wolumenu.
 
 > [!IMPORTANT]
-> Jeśli użytkownik korzysta z danych demonstracyjnych dla firmy **USMF** i uprzednio włączył funkcję *Pozycjonowania numeru identyfikacyjnego danej lokalizacji*, musi wyłączyć ustawienie **Włącz pozycjonowanie numeru identyfikacyjnego** dla profilu lokalizacji **BULK-06**, aby zakończyć etapy mobilne w scenariuszu przykładowym.
+> Jeśli użytkownik korzysta z danych demonstracyjnych dla firmy **USMF** i uprzednio włączył funkcję *Pozycjonowania numeru identyfikacyjnego danej lokalizacji* , musi wyłączyć ustawienie **Włącz pozycjonowanie numeru identyfikacyjnego** dla profilu lokalizacji **BULK-06** , aby zakończyć etapy mobilne w scenariuszu przykładowym.
 
 ### <a name="wave-step-code"></a>Kod kroku grupy czynności
 
@@ -135,7 +136,7 @@ Szablony uzupełniania zapasów są zestawem reguł, które sterują tym, kiedy 
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. W karcie **Ogólne** ustaw **Automatyczne zwalnianie pracy uzupełniania zapasów** jako *Tak*.
 
-    Ustaw opcję na *Tak*, aby tworzyć pracę uzupełnienia opartą na żądaniu, i zwalniać ją automatycznie. Należy dodać do szablonu grupy czynności metodę grupy czynności uzupełnienia i utworzyć szablon uzupełnienia typu **Popyt grupy czynności**. Konfigurowanie szablonu uzupełniania zapasów znajdujących się na stronie **Szablony uzupełniania zapasów**. Aby skonfigurować szablon uzupełniania zapasów, należy dodać metodę uzupełnienia do szablonu grupy czynności.
+    Ustaw opcję na *Tak* , aby tworzyć pracę uzupełnienia opartą na żądaniu, i zwalniać ją automatycznie. Należy dodać do szablonu grupy czynności metodę grupy czynności uzupełnienia i utworzyć szablon uzupełnienia typu **Popyt grupy czynności**. Konfigurowanie szablonu uzupełniania zapasów znajdujących się na stronie **Szablony uzupełniania zapasów**. Aby skonfigurować szablon uzupełniania zapasów, należy dodać metodę uzupełnienia do szablonu grupy czynności.
 
 1. Na skróconej karcie **Metody** w kolumnie **Wybrane metody** znajdź następujący wiersz:
 
@@ -147,7 +148,7 @@ Szablony uzupełniania zapasów są zestawem reguł, które sterują tym, kiedy 
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
-Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Uzupełnianie zapasów ponad pojemność lokalizacji*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF**, oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym temacie. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
+Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Uzupełnianie zapasów ponad pojemność lokalizacji*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF** , oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym temacie. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
 
 ### <a name="create-replenishment-work"></a>Utwórz pracę uzupełniania zapasów
 
@@ -160,13 +161,13 @@ Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfig
     - **Konto odbiorcy:** *US-007*
     - **Magazyn:** *61*
 
-1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Zawiera nowy, pusty wiersz na skróconej karcie **Wiersze zamówienia sprzedaży**. W nowym wierszu ustaw następujące wartości:
 
     - **Numer pozycji:** *T0100*
     - **Ilość:** *40*
 
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w wybierz **Zapasy \> Rezerwacja**.
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w wybierz **Zapasy \> Rezerwacja**.
 1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii**.
 1. Zamknij stronę.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -183,13 +184,13 @@ Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfig
     - **Konto odbiorcy:** *US-001*
     - **Magazyn:** *61*
 
-1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Zawiera nowy, pusty wiersz na skróconej karcie **Wiersze zamówienia sprzedaży**. W nowym wierszu ustaw następujące wartości:
 
     - **Numer pozycji:** *T0100*
     - **Ilość:** *60*
 
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w wybierz **Zapasy \> Rezerwacja**.
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w wybierz **Zapasy \> Rezerwacja**.
 1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii**.
 1. Zamknij stronę.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -206,13 +207,13 @@ Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfig
     - **Konto odbiorcy:** *US-004*
     - **Magazyn:** *61*
 
-1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Zawiera nowy, pusty wiersz na skróconej karcie **Wiersze zamówienia sprzedaży**. W nowym wierszu ustaw następujące wartości:
 
     - **Numer pozycji:** *T0100*
     - **Ilość:** *30*
 
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w wybierz **Zapasy \> Rezerwacja**.
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w wybierz **Zapasy \> Rezerwacja**.
 1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii**.
 1. Zamknij stronę.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -227,8 +228,8 @@ Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfig
 1. W sekcji **Przegląd** odfiltruj kolumnę **Magazyn** dla magazynu *61*.
 1. Należy sprawdzić, czy dla trzech zamówień sprzedaży na żądanie zostały utworzone siedem identyfikatorów pracy.
 
-    - Trzy z siedmiu identyfikatorów pracy mają w **Typu zlecenia pracy** wartość *Uzupełnienie*, a cztery mają w **Typ zlecenia pracy** wartość *Zamówienie sprzedaży*.
-    - Wszystkie trzy identyfikatory pracy, dla których wartość **Typu zlecenia pracy** to *Uzupełnienie*, mają te same lokalizacje *Pobrania* i *Odłożenia* w sekcji **Wiersze**:
+    - Trzy z siedmiu identyfikatorów pracy mają w **Typu zlecenia pracy** wartość *Uzupełnienie* , a cztery mają w **Typ zlecenia pracy** wartość *Zamówienie sprzedaży*.
+    - Wszystkie trzy identyfikatory pracy, dla których wartość **Typu zlecenia pracy** to *Uzupełnienie* , mają te same lokalizacje *Pobrania* i *Odłożenia* w sekcji **Wiersze** :
 
         - **Odbierz:** *02A01R5S1B*
         - **Odłóz:** *06A01R2S1B*
@@ -246,7 +247,7 @@ W dalszej części tego scenariusza będzie używana aplikacja magazynu (lub emu
 Aby znaleźć identyfikatory numerów identyfikacyjnych, które będą potrzebne później, należy wykonać poniższe kroki.
 
 1. Wybierz kolejno opcje **Zarządzanie zapasami \> Zapytania i raporty \> Dostępne zapasy**.
-1. Wybierz przycisk **Pokaż filtry**, aby otworzyć okienko filtru.
+1. Wybierz przycisk **Pokaż filtry** , aby otworzyć okienko filtru.
 1. Wprowadź poniższe kryteria filtrowania, aby uzyskać tablice rejestracyjne dla scenariusza. Należy skorzystać z filtru *zaczyna się od*.
 
     - **Numer pozycji:** *T0100*
@@ -256,7 +257,7 @@ Aby znaleźć identyfikatory numerów identyfikacyjnych, które będą potrzebne
 1. W Okienku akcji kliknij pozycję **Wymiary**.
 1. W oknie dialogowym **Wyświetlanie wymiarów** w sekcji **Wymiary magazynowe** wybierz wszystkie wartości.
 1. W sekcji **Transakcje** wybierz **Numer pozycji** i **Ilość \<\> 0**.
-1. Po zakończeniu kliknij przycisk **OK**, aby zamknąć okno dialogowe.
+1. Po zakończeniu kliknij przycisk **OK** , aby zamknąć okno dialogowe.
 1. Na siatce **Dostępne** są wyświetlane numery numerów identyfikacyjnych dla pozycji *T0100* w każdej lokalizacji. Zanotuj numer identyfikacyjny znajdujący się w każdej lokalizacji, ponieważ informacje te będą potrzebne później.
 1. Zamknij stronę.
 
@@ -276,7 +277,7 @@ Uzupełnianie lokalizacji w magazynie jest wykonywane dla pierwszych dwóch iden
 
     System generuje numer identyfikacyjny docelowy dla nowego numeru identyfikacyjnego pobranego towaru.
 
-1. Wybierz przycisk **OK**, aby zatwierdzić wartość.
+1. Wybierz przycisk **OK** , aby zatwierdzić wartość.
 
     Wyświetlana jest pokazana praca, która nakazuje użytkownikowi umieszczenie docelowego numeru identyfikacyjnego w lokalizacji uzupełnienia zapasów. Lokalizacja *Odłożenia* powinna być **06A01R2S1B**.
 
@@ -360,7 +361,7 @@ Zamówienie sprzedaży 2 jest zablokowane przed pobraniem, ponieważ zadanie uzu
 
 Gdy tylko suma ilości na stanie w miejscu pobrania i ilości do uzupełnienia spadnie poniżej progu, będzie można przetworzyć pozostałą pracę uzupełniania.
 
-Wróć do strony **Szczegóły pracy** i zwróć uwagę, że dostępność prac uzupełniających dla ostatniej części uzupełnienia (dla zamówienia sprzedaży 2) to *Otwarte*, ponieważ w tej lokalizacji jest teraz wystarczająco dużo miejsca, aby przyjąć uzupełnienie.
+Wróć do strony **Szczegóły pracy** i zwróć uwagę, że dostępność prac uzupełniających dla ostatniej części uzupełnienia (dla zamówienia sprzedaży 2) to *Otwarte* , ponieważ w tej lokalizacji jest teraz wystarczająco dużo miejsca, aby przyjąć uzupełnienie.
 
 Teraz można przetwarzać tę pracę uzupełniania zapasów za pośrednictwem urządzenia przenośnego.
 
@@ -373,7 +374,7 @@ Teraz można przetwarzać tę pracę uzupełniania zapasów za pośrednictwem ur
 
     System generuje numer identyfikacyjny docelowy dla nowego numeru identyfikacyjnego pobranego towaru.
 
-1. Wybierz przycisk **OK**, aby zatwierdzić wartość.
+1. Wybierz przycisk **OK** , aby zatwierdzić wartość.
 
     Wyświetlana jest pokazana praca, która nakazuje użytkownikowi umieszczenie docelowego numeru identyfikacyjnego w lokalizacji uzupełnienia zapasów. Lokalizacja *Odłożenia* powinna być **06A01R2S1B**.
 

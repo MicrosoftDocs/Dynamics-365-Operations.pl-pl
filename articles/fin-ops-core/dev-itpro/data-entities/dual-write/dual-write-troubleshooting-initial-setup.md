@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275448"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997357"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -41,7 +40,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 **Wymagana rola w celu konfiguracji podwójnego zapisu:** administrator systemu w aplikacjach Finance and Operations i Common Data Service.
 
-Błędy na stronie **Łącze konfiguracji do Common Data Service** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Common Data Service**, jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
+Błędy na stronie **Łącze konfiguracji do Common Data Service** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Common Data Service** , jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
 
 ![Pomyślne sprawdzenie kondycji](media/health_check.png)
 
@@ -63,18 +62,18 @@ Aby zapewnić zgodę aplikacji, wykonaj następujące kroki.
 
     <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
 
-2. Wybierz przycisk **Akceptuj**, aby wskazać, że wyrażasz zgodę na zainstalowanie aplikacji o identyfikatorze **33976c19-1db5-4c02-810e-c243db79efde** w dzierżawie.
+2. Wybierz przycisk **Akceptuj** , aby wskazać, że wyrażasz zgodę na zainstalowanie aplikacji o identyfikatorze **33976c19-1db5-4c02-810e-c243db79efde** w dzierżawie.
 
     > [!TIP]
     > Ta aplikacja jest wymagana do łączenia Common Data Service i aplikacji Finance and Operations. Jeśli występują problemy z tym krokiem, należy otworzyć przeglądarkę w trybie incognito (w usłudze Google Chrome) lub w trybie InPrivate ( w Microsoft Edge).
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Sprawdź, czy dane firmy i zespoły podwójnego zapisywania są poprawnie skonfigurowane podczas łączenia
 
-Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Common Data Service zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć jednostkę **firmy (CDM\_Company)**, należy wykonać następujące kroki:
+Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Common Data Service zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć jednostkę **firmy (CDM\_Company)** , należy wykonać następujące kroki:
 
 1. W aplikacji opartej na modelu w Dynamics 365 wybierz filtr w prawym górnym rogu.
 2. Z listy rozwijanej wybierz **Firma**.
-3. Wybierz opcję **Uruchom**, aby zobaczyć wyniki.
+3. Wybierz opcję **Uruchom** , aby zobaczyć wyniki.
 4. Umożliwia wybór firmy połączonej w przypadku skonfigurowania podwójnego zapisywania.
 5. Sprawdź, czy w polu **Domyślnego zespołu będącego właścicielem** znajduje się wartość. Na poniższej ilustracji pole **Domyślny zespół będący właścicielem** jest ustawione na **USMF podwójnego zapisywania**.
 

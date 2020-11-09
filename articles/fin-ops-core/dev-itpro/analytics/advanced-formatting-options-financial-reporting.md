@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 5dbc856f21b6398109ab1ac4da409252050385df
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071597"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011586"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
 [!include [banner](../includes/banner.md)]
 
-Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach. 
+Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach.
 
 W poniższej tabeli opisano zaawansowane funkcje formatowania, które są dostępne podczas projektowania raportów.
 
@@ -44,7 +44,8 @@ W poniższej tabeli opisano zaawansowane funkcje formatowania, które są dostę
 | W przypadku wartości wymiarów należy zastosować pojedyncze cudzysłowy ('') i znak „i” (&) | Do projektowania raportu można stosować wartości wymiarów, łącznie z znakiem „i” (&). |
 
 ## <a name="advanced-cell-placement"></a>Zaawansowane rozmieszczanie komórek
-Zaawansowane rozmieszczenie komórek (*wymuszenie*) polega na wstawianiu określonych wartości do określonych komórek. Na przykład wymuszenie jest często używane do przenoszenia poprawnego salda w zestawieniu przepływów pieniężnych. Można używać wymuszenia do następujących celów:
+
+Zaawansowane rozmieszczenie komórek ( *wymuszenie* ) polega na wstawianiu określonych wartości do określonych komórek. Na przykład wymuszenie jest często używane do przenoszenia poprawnego salda w zestawieniu przepływów pieniężnych. Można używać wymuszenia do następujących celów:
 
 - Przenoszenie wartości z programu Microsoft Excel do określonych komórek.
 - Kodowanie na stałe określonych wartości w raporcie.
@@ -52,11 +53,12 @@ Zaawansowane rozmieszczenie komórek (*wymuszenie*) polega na wstawianiu określ
 
 > [!NOTE]
 > W wielu przypadkach należy skonfigurować definicję raportu tak, aby obliczenia kolumny były wykonywane przed obliczeniami wiersza. Aby przeprowadzić tę konfigurację, należy wykonać następujące czynności.
-> 
+>
 > 1. W Projektancie raportów otwórz definicję raportu.
 > 2. Na karcie **Ustawienia** w obszarze **Priorytet obliczeń** wybierz opcję **Najpierw wykonaj obliczenia kolumny, a następnie wierszy**.
 
 ## <a name="designing-the-report"></a>Projektowanie raportu
+
 Podczas projektowania raportu należy najpierw utworzyć wszystkie wiersze szczegółów, aby mieć pewność, że wartości są pobierane zgodnie z oczekiwaniami. Następnie należy dodać zastąpienia formatu **NP** (niedrukowane), aby pomijać szczegół zawierający wartości końcowe.
 
 > [!IMPORTANT]
@@ -65,6 +67,7 @@ Podczas projektowania raportu należy najpierw utworzyć wszystkie wiersze szcze
 Przy wymuszaniu formuły używają następującego formatu: &lt;kolumna docelowa&gt;=&lt;kolumna źródłowa&gt;.&lt;kod wiersza&gt; Dodatkowe rozmieszczenia wiersza oddziela się przecinkami i spacjami. Oto przykład: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Przykłady zaawansowanych opcji formatowania
+
 Następujące przykłady przedstawiają sposób formatowania definicji wiersza i definicji kolumny w celu wymuszania podstawowego raportu przepływów pieniężnych (przykład 1) i raportu statystycznego (przykład 2).
 
 ### <a name="example-1-basic-forcing"></a>Przykład 1: Wymuszenie podstawowe
@@ -78,17 +81,17 @@ Poniższa tabela przedstawia przykład definicji wiersza, która używa wymuszen
 | 160      |                                  |             |                             |                            |                              |
 | 190      |                                  |             |                             |                            |                              |
 
-> [!NOTE] 
+> [!NOTE]
 > Puste kolumny zostały usunięte z poprzedniej tabeli dla celów prezentacji: kolumny Format zastępczy, Saldo zwykłe, Sterowanie wydrukiem, Ograniczenia kolumny nie są wyświetlane.
 
 Poniższa tabela przedstawia przykład definicji kolumny, która używa wymuszenie podstawowego w wierszu.
 
-|                              | I   | mld    | C        | D      | E      | P    |
+|           Format             | A   | mld    | C        | D      | E      | P    |
 |------------------------------|-----|------|----------|--------|--------|------|
 | Nagłówek 1                     |     |      |          |        |        |      |
-| Nagłówek 2                     | I   | mld    | C        | D      | E      | P    |
+| Nagłówek 2                     | A   | mld    | C        | D      | E      | P    |
 | Nagłówek 3                     |     |      |          |        |        |      |
-| Typ kolumny                  | ROW | DESC | FD       | FD     | FD     | CALC |
+| Typ kolumny                  | ROW | OPIS | FD       | FD     | FD     | CALC |
 | Kod księgi/Atrybut kategorii |     |      | ACTUAL   | ACTUAL | ACTUAL |      |
 | Rok obrachunkowy                  |     |      | BASE     | BASE   | BASE   |      |
 | Okres                       |     |      | BASE     | BASE   | BASE   |      |
@@ -113,12 +116,12 @@ Poniższa tabela przedstawia przykład definicji wiersza, która używa wymuszen
 | 310      | Sprzedaż w Stanach Zjednoczonych                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |                                            |
 | 340      | Międzynarodowa sprzedaż       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |                                            |
 
-> [!NOTE] 
+> [!NOTE]
 > Puste kolumny zostały usunięte z poprzedniej tabeli dla celów prezentacji: kolumny Sterowanie wydrukiem, Ograniczenia kolumny i Modyfikator wiersza nie są wyświetlane.
 
 Poniższa tabela przedstawia przykład definicji kolumny, która używa wymuszenie dla raportu statystycznego.
 
-|                              | A   | mld    | C      | D            | E     | P            |
+|    Format                    | A   | mld    | C      | D            | E     | P            |
 |------------------------------|-----|------|--------|--------------|-------|--------------|
 | Nagłówek 1                     | A   | mld    | C      | D            | E     | P            |
 | Nagłówek 2                     | -   | -    | Od początku roku do chwili obecnej    | Sprzedaż w roku | Pracownicy | USD na osobę |
@@ -132,6 +135,7 @@ Poniższa tabela przedstawia przykład definicji kolumny, która używa wymuszen
 | Szerokość kolumny                 | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych   | 30   | 14     | 14           | 14    | 14           |
 
 ## <a name="restricting-a-row-to-a-specific-reporting-unit"></a>Ograniczanie wiersza do określonej jednostki raportowania
+
 Po wiersz raportu jest ograniczony do określonej jednostki sprawozdawczej, ten wiersz pokazuje połączone dane tylko dla jednostki raportowania o określonej nazwie i ignoruje dane dla innych jednostek raportowania w drzewie raportowania. Na przykład można utworzyć wiersz, który zawiera szczegóły wszystkich wydatków operacyjnych dla określonego działu. Raport może zawierać zduplikowane dane, jeśli raport zawiera zarówno drzewo raportowania, jak i definicję wiersza, która ma nie tylko konto naturalne. Na przykład drzewo raportowania zawiera sześć działów w organizacji i oprócz tego w definicji wiersza jest określona kombinacja konta i działu w wierszu. Podczas generowania raportu określona kombinacja konta i działu jest drukowana na każdym poziomie drzewa raportowania, nawet jeśli ten dział może nie odpowiadać temu, co znajduje się w drzewie. To zachowanie występuje z powodu zastąpienia przez wiersz tego, co jest zwykle odfiltrowywane przez definicję raportu. Jednym ze sposobów uniknięcia duplikowania danych jest ograniczenie wiersza do określonej jednostki raportowania.
 
 > [!NOTE]
@@ -139,13 +143,14 @@ Po wiersz raportu jest ograniczony do określonej jednostki sprawozdawczej, ten 
 
 ### <a name="restrict-a-row-to-a-reporting-unit"></a>Ograniczanie wiersza do jednostki raportowania
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie wybierz wiersz do zmodyfikowania.
+1. W Projektancie raportów kliknij **Definicje wiersza** , a następnie wybierz wiersz do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Powiązane formuły/wiersze/jednostki**.
 3. W oknie dialogowym **Wybór jednostki raportowania** w polu **Drzewo raportowania** zaznacz drzewo przypisane w definicji raportu.
 4. Wybierz jednostkę raportowania, a następnie kliknij przycisk **OK**. Ograniczenie jest wyświetlane w komórce definicji wiersza.
 5. Kliknij dwukrotnie komórkę w kolumnie **Łącze do wymiarów finansowych** ograniczonego wiersza, a następnie wprowadź łącze do systemu danych finansowych.
 
 ## <a name="selecting-print-control-in-a-row-definition"></a>Wybieranie sterowania wydrukiem w definicji wiersza
+
 Kody sterowania wydrukiem można określić dla każdej kolumny za pomocą komórki **Sterowanie wydrukiem**.
 
 ### <a name="add-print-control-codes-to-a-report-row"></a>Dodawanie kodów sterowania wydrukiem do wiersza raportu
@@ -182,13 +187,15 @@ W poniższej tabeli opisano kody warunkowego sterowania wydrukiem dla definicji 
 | CR                 | Drukuj tylko salda kredytowe dla tego wiersza. |
 
 ## <a name="column-restriction-cell-in-a-row-definition"></a>Komórka Ograniczenie kolumny w definicji wiersza
+
 Komórka **Ograniczenie kolumny** w definicji wiersza ma wiele zastosowań. W zależności od typu wiersza możesz użyć komórki **Ograniczenia kolumny** do określenia jednej z następujących funkcji:
 
 - Komórka może ograniczać drukowanie kwot wiersza do określonej kolumny. Ta funkcja jest przydatna, jeśli tworzysz bilans tabelaryczny.
 - Komórka może określać kolumnę kwot do sortowania.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Używanie formuły obliczania w definicji wiersza
-Formuła obliczania w definicji wiersza może zawierać operatory **+**, **-**, **\*** i **/** oraz instrukcje **IF/THEN/ELSE**. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu **Łącze do wymiarów finansowych** (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
+
+Formuła obliczania w definicji wiersza może zawierać operatory **+** , **-** , **\*** i **/** oraz instrukcje **IF/THEN/ELSE**. Oprócz tego obliczenie może obejmować pojedyncze komórki oraz kwoty bezwzględne (wartości rzeczywiste zawarte w formule). Kod może zawierać maksymalnie 1024 znaki. Obliczenia nie mogą być stosowane do wierszy zawierających komórki typu **Łącze do wymiarów finansowych** (FD). Można jednak dołączać obliczenia w kolejnych wierszach, wyłączać drukowanie tych wierszy, a następnie sumować wiersze obliczeń.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatory w formule obliczania
 
@@ -199,8 +206,8 @@ Formuła obliczania używa bardziej złożonych operatorów niż formuła sumy w
 
 ### <a name="create-a-calculation-formula"></a>Tworzenie formuły obliczeń
 
-1. W Projektancie raportów kliknij **Definicje wiersza**, a następnie otwórz definicje wiersza do zmodyfikowania.
-2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
+1. W Projektancie raportów kliknij **Definicje wiersza** , a następnie otwórz definicje wiersza do zmodyfikowania.
+2. Kliknij dwukrotnie komórkę **Kod formatu** , a następnie wybierz opcję **CAL**.
 3. W komórce **Powiązane formuły/wiersze/jednostki** wpisz formułę obliczania.
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Przykład formuły obliczania dla wybranych wierszy
@@ -213,10 +220,10 @@ W tym przykładzie formuła obliczania **@100+@330** oznacza, że kwota z wiersz
 | 370      | Środki pieniężne na początku roku   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Środki pieniężne na początku okresu | TOT         | 340+370                    |               |              |                              |
 
-Jeśli wiersz w definicji wiersza ma format kodu **CAL**, i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki**, należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120**, aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz **@120**, aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste.
+Jeśli wiersz w definicji wiersza ma format kodu **CAL** , i wprowadzisz matematyczne obliczenie w komórce **Powiązane formuły/wiersze/jednostki** , należy również wprowadzić literę skojarzonej kolumny i wiersza w raporcie. Na przykład wpisz **A.120** , aby wskazać wiersz 120 w kolumnie A. Można również użyć znaku @, aby wskazać wszystkie kolumny. Na przykład wpisz **@120** , aby wskazać wszystkie kolumny dla wiersza 120. Wyniki wszelkich matematycznych obliczeń, które nie zawierają litery kolumny lub znaku @, są uznawane za liczby rzeczywiste.
 
 > [!NOTE]
-> Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻABRUTTO\_A.SPRZEDAŻ**). Jeśli używasz znaku @, separator nie jest wymagany (na przykład **\@MARŻA\_BRUTTO/@SPRZEDAŻ**).
+> Jeśli odwołanie do wiersza ma postać kodu wiersza etykiety, musisz użyć kropki (.) jako separatora między literą kolumny a etykietą (na przykład **A.MARŻABRUTTO\_A.SPRZEDAŻ** ). Jeśli używasz znaku @, separator nie jest wymagany (na przykład **\@MARŻA\_BRUTTO/@SPRZEDAŻ** ).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Przykład formuły obliczania dla wybranych kolumn
 
@@ -235,8 +242,8 @@ W tym przykładzie formuła obliczania **E=C.340** oznacza, że obliczenia w kom
 
 Jeśli modyfikujesz liczbę lub obliczenie w jednej kolumnie określonego wiersza, ale nie chcesz zmieniać innych kolumn w raporcie, możesz określić opcję **CAL** (obliczenie) w kolumnie **Kod formatu** dla definicji wiersza.
 
-- Aby wykonać obliczenie we wszystkich kolumnach raportu (**FD**), nie wpisuj przypisania kolumny.
-- Aby ograniczyć formułę do określonych kolumn, wpisz literę kolumny i znak równości (**=**), a następnie formułę.
+- Aby wykonać obliczenie we wszystkich kolumnach raportu ( **FD** ), nie wpisuj przypisania kolumny.
+- Aby ograniczyć formułę do określonych kolumn, wpisz literę kolumny i znak równości ( **=** ), a następnie formułę.
 - Możesz określić wiele kolumn. Kiedy używasz znaku @ dla danego położenia kolumny, znak @ jest powiązany z wierszem.
 - Możesz wprowadzić wiele formuł kolumn w jednym wierszu. Formuły należy oddzielić przecinkami.
 
@@ -254,7 +261,7 @@ Instrukcje **IF/THEN/ELSE** można dodawać do wszystkich prawidłowych oblicze�
 
 #### <a name="if-statements"></a>Instrukcje IF
 
-Instrukcja, która występuje po instrukcji **IF**, może być dowolną instrukcją, która może zostać oceniona jako prawda (true) lub fałsz (false). Instrukcja, która występuje po instrukcji **IF**, może zawierać prostą ocenę lub może być złożoną instrukcją zawierającą wiele wyrażeń. Oto kilka przykładów:
+Instrukcja, która występuje po instrukcji **IF** , może być dowolną instrukcją, która może zostać oceniona jako prawda (true) lub fałsz (false). Instrukcja, która występuje po instrukcji **IF** , może zawierać prostą ocenę lub może być złożoną instrukcją zawierającą wiele wyrażeń. Oto kilka przykładów:
 
 - **IF A.200&gt;0** (Ocena prosta)
 - **IF A.200&gt;0 AND A.200&lt;10,000** (Instrukcja złożona)
@@ -264,11 +271,11 @@ Wyrażenie **Okresy** w instrukcji **IF** określa liczbę okresów dla raportu.
 
 #### <a name="then-and-else-formulas"></a>Formuły THEN i ELSE
 
-Formuły **THEN** i **ELSE** mogą być dowolnym prawidłowym obliczeniem od bardzo prostych przypisań wartości do złożonych formuł. Na przykład instrukcja **IF A.200&gt;0 THEN A=B.200** oznacza: „jeśli wartość w komórce w kolumnie A wiersza 200 jest większa niż 0 (zero), należy wprowadzić wartość z komórki w kolumnie B wiersza 200 do komórki w kolumnie A bieżącego wiersza”. Instrukcja **IF/THEN**, która występuje przed nią, wstawia wartość w jednej kolumnie bieżącego wiersza. Można jednak również użyć znaku @ w ocenie prawda/fałsz lub w formule, aby określić wszystkie kolumny. Oto kilka innych przykładów, które są opisane w następujących sekcjach:
+Formuły **THEN** i **ELSE** mogą być dowolnym prawidłowym obliczeniem od bardzo prostych przypisań wartości do złożonych formuł. Na przykład instrukcja **IF A.200&gt;0 THEN A=B.200** oznacza: „jeśli wartość w komórce w kolumnie A wiersza 200 jest większa niż 0 (zero), należy wprowadzić wartość z komórki w kolumnie B wiersza 200 do komórki w kolumnie A bieżącego wiersza”. Instrukcja **IF/THEN** , która występuje przed nią, wstawia wartość w jednej kolumnie bieżącego wiersza. Można jednak również użyć znaku @ w ocenie prawda/fałsz lub w formule, aby określić wszystkie kolumny. Oto kilka innych przykładów, które są opisane w następujących sekcjach:
 
-- **IF A.200 &gt;0 THEN B.200**: Jeśli wartość w komórce A.200 jest dodatnia, wartość z komórki B.200 jest umieszczana w każdej kolumnie bieżącego wiersza.
-- **IF A.200 &gt;0 THEN @200**: Jeśli wartość w komórce A.200 jest dodatnia, wartość z każdej kolumny w wierszu 200 jest umieszczana w odpowiedniej kolumnie bieżącego wiersza.
-- **IF @200 &gt;0 THEN @200**: Jeśli wartość w wierszu 200 bieżącej kolumny jest dodatnia, wartość z wiersza 200 jest umieszczana w tej samej kolumnie bieżącego wiersza.
+- **IF A.200 &gt;0 THEN B.200** : Jeśli wartość w komórce A.200 jest dodatnia, wartość z komórki B.200 jest umieszczana w każdej kolumnie bieżącego wiersza.
+- **IF A.200 &gt;0 THEN @200** : Jeśli wartość w komórce A.200 jest dodatnia, wartość z każdej kolumny w wierszu 200 jest umieszczana w odpowiedniej kolumnie bieżącego wiersza.
+- **IF @200 &gt;0 THEN @200** : Jeśli wartość w wierszu 200 bieżącej kolumny jest dodatnia, wartość z wiersza 200 jest umieszczana w tej samej kolumnie bieżącego wiersza.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Ograniczanie obliczenia do jednostki raportowania w definicji wiersza
 
@@ -280,7 +287,7 @@ Aby ograniczyć obliczenia do jednej jednostki raportowania w drzewie raportowan
 Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji **IF @Jednostka**. Oto przykład: IF @Jednostka(SPRZEDAŻ) @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: IF @Jednostka(SPRZEDAŻ) OR @Jednostka(SPRZEDAŻZACHÓD) THEN 5 ELSE @100 Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
 
 - Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF @Jednostka(SPRZEDAŻ)** pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
-- Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Jednostka(ACME:SPRZEDAŻ**), aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
+- Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Jednostka(ACME:SPRZEDAŻ** ), aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
 - Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz **IF @Jednostka(PODSUMOWANIE^ACME^ZACHODNIA WYBRZEŻE^SPRZEDAŻ)**.
 
 > [!NOTE]
@@ -288,19 +295,19 @@ Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych f
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Ograniczanie obliczenia do jednostki raportowania
 
-1. W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
-2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
-3. Kliknij komórkę **Powiązane formuły/wiersze/jednostki**, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF @Jednostka**.
+1. W Projektancie raportów kliknij pozycję **Definicje wierszy** , a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
+2. Kliknij dwukrotnie komórkę **Kod formatu** , a następnie wybierz opcję **CAL**.
+3. Kliknij komórkę **Powiązane formuły/wiersze/jednostki** , a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF @Jednostka**.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Instrukcje IF/THEN/ELSE w definicji kolumny
 
-Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z dowolnej innej kolumny. Można się odwoływać do innych kolumn, ale nie można odwołać się do komórki raportu w instrukcji **IF**. Każde obliczenie musi być stosowane do całej kolumny. Na przykład instrukcja **IF B&gt;100 THEN B ELSE C\*1.25** oznacza: „jeśli kwota w kolumnie B jest większa niż 100, umieść wartość z kolumny B w kolumnie **CALC**. Jeśli wartość w kolumnie B nie jest większa niż 100, pomnóż wartość w kolumnie C przez 1,25 i umieścić wynik w kolumnie **CALC**”. Po instrukcji **IF** musi zawsze występować instrukcja logiczna, która może być oceniona jako prawdziwa lub fałszywa. Formuły używane do instrukcji **THEN** i **ELSE** mogą zawierać odwołania do dowolnej liczby kolumn i te formuły mogą być dowolnie złożone.
+Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z dowolnej innej kolumny. Można się odwoływać do innych kolumn, ale nie można odwołać się do komórki raportu w instrukcji **IF**. Każde obliczenie musi być stosowane do całej kolumny. Na przykład instrukcja **IF B&gt;100 THEN B ELSE C\*1.25** oznacza: „jeśli kwota w kolumnie B jest większa niż 100, umieść wartość z kolumny B w kolumnie **CALC**. Jeśli wartość w kolumnie B nie jest większa niż 100, pomnóż wartość w kolumnie C przez 1,25 i umieścić wynik w kolumnie **CALC** ”. Po instrukcji **IF** musi zawsze występować instrukcja logiczna, która może być oceniona jako prawdziwa lub fałszywa. Formuły używane do instrukcji **THEN** i **ELSE** mogą zawierać odwołania do dowolnej liczby kolumn i te formuły mogą być dowolnie złożone.
 
 > [!NOTE]
 > Nie można umieszczać wyników obliczeń w dowolnej innej kolumnie. Wyniki muszą być w kolumnie zawierające formułę.
 
 #### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>W przypadku wartości wymiarów w rzędzie, kolumnie lub drzewie należy zastosować pojedyncze cudzysłowy ('') i znak „i” (&)
 
-Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&). 
+Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&).
 
-W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&). 
+W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&).

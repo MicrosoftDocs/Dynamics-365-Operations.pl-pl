@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8352df2de5daf994895eb7ef40866490a7619652
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830507"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015994"
 ---
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
@@ -110,7 +110,7 @@ Pracę inwentaryzacji ciągłej można utworzyć, gdy ilość towaru w lokalizac
 Plany inwentaryzacji ciągłej umożliwiają natychmiastowe lub okresowe tworzenie pracy inwentaryzacji ciągłej. Konfigurując plany inwentaryzacji ciągłej, można kontrolować pulę pracy, dla której jest tworzona praca inwentaryzacji ciągłej, maksymalną liczbę prac inwentaryzacji tworzoną dla towarów w różnych lokalizacjach oraz liczbę dni do ponownej inwentaryzacji lokalizacji w magazynie. Na przykład towar jest dostępny w trzech lokalizacjach w magazynie, a ustawiono maksymalną liczbę cykli inwentaryzacji na **2**. W tym przypadku po uruchomieniu planu inwentaryzacji ciągłej zostaną utworzone dwie prace inwentaryzacji dla dwóch lokalizacji, w których znajduje się towar. Inny przykład: Ustawiasz liczbę dni między sesjami inwentaryzacji na **5**. W takim przypadku praca inwentaryzacji ciągłej jest tworzona co pięć dni. Jednak jeśli praca inwentaryzacji ciągłej zostanie wykonana w 3. dniu, następna praca inwentaryzacji ciągłej zostanie utworzona po 5 dniach od ostatniego wykonania pracy inwentaryzacji ciągłej, czyli w 8. dniu.
 
 ## <a name="create-cycle-counting-work-manually"></a>Ręczne tworzenie inwentaryzacji ciągłej
-Aby ręcznie utworzyć pracę inwentaryzacji ciągłej, można użyć strony **Praca inwentaryzacji ciągłej wg pozycji** lub **Praca inwentaryzacji ciągłej wg lokalizacji**. Można określić maksymalną liczbę prac inwentaryzacji ciągłej, jaka ma zostać utworzona. Na przykład jeśli kierownik magazynu określa wartość równą **5**, praca inwentaryzacji ciągłej jest tworzona dla pięciu lokalizacji, nawet jeśli towar znajduje się w 10 lokalizacjach. Można również wybrać identyfikator puli pracy, któremu zostaną przypisane identyfikatory tworzonych prac inwentaryzacji ciągłej. Gdy identyfikator puli pracy jest przetwarzany dla inwentaryzacji ciągłej, identyfikatory inwentaryzacji ciągłej przypisane do puli pracy są przetwarzane jako grupa.
+Aby ręcznie utworzyć pracę inwentaryzacji ciągłej, można użyć strony **Praca inwentaryzacji ciągłej wg pozycji** lub **Praca inwentaryzacji ciągłej wg lokalizacji**. Można określić maksymalną liczbę prac inwentaryzacji ciągłej, jaka ma zostać utworzona. Na przykład jeśli kierownik magazynu określa wartość równą **5** , praca inwentaryzacji ciągłej jest tworzona dla pięciu lokalizacji, nawet jeśli towar znajduje się w 10 lokalizacjach. Można również wybrać identyfikator puli pracy, któremu zostaną przypisane identyfikatory tworzonych prac inwentaryzacji ciągłej. Gdy identyfikator puli pracy jest przetwarzany dla inwentaryzacji ciągłej, identyfikatory inwentaryzacji ciągłej przypisane do puli pracy są przetwarzane jako grupa.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Wykonywanie inwentaryzacji ciągłej za pomocą urządzenia przenośnego
 Istnieje kilka metod przetwarzania pracy inwentaryzacji ciągłej za pomocą usługi Supply Chain Management na urządzeniu przenośnym:
@@ -124,11 +124,11 @@ Poniższy przykład pokazuje sposób wykonania inwentaryzacji ciągłej punktowe
 
 1.  Na urządzeniu przenośnym wybierz element menu do przetwarzania inwentaryzacji punktowej.
 2.  Zarejestruj lokalizację, w której chcesz wykonać inwentaryzację ciągłą punktową.
-3.  Zarejestruj i potwierdź numer towaru oraz zliczoną ilość towaru. **Uwaga:** Stan pracy inwentaryzacji ciągłej jest aktualizowany do wartości **Oczekiwanie na przegląd** lub **Zamknięte** na stronie **Cała praca**, zależnie od parametrów ustawionych na stronie **Pracownik**.
+3.  Zarejestruj i potwierdź numer towaru oraz zliczoną ilość towaru. **Uwaga:** Stan pracy inwentaryzacji ciągłej jest aktualizowany do wartości **Oczekiwanie na przegląd** lub **Zamknięte** na stronie **Cała praca** , zależnie od parametrów ustawionych na stronie **Pracownik**.
 4.  Opcjonalnie: Powtórz krok 3 dla pozostałych towarów w lokalizacji i potwierdź, że nie są dostępne żadne dodatkowe towary do zliczania.
 
 ## <a name="resolve-cycle-counting-differences"></a>Postępowanie z różnicami w inwentaryzacji ciągłej
-Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach, jeśli dla identyfikatora użytkownika pracy w opcji **Jest kierownikiem ds. inwentaryzacji ciągłej** ustawiono wartość **Nie**:
+Różnice w inwentaryzacji ciągłej występują w następujących scenariuszach, jeśli dla identyfikatora użytkownika pracy w opcji **Jest kierownikiem ds. inwentaryzacji ciągłej** ustawiono wartość **Nie** :
 
 -   Zliczona wartość nie mieści się w granicach odchylenia określonych w polu **Maksymalny limit procentu** lub **Maksymalny limit ilości** na stronie **Użytkownicy pracy**. Na przykład ilość dostępnych zapasów w lokalizacji wynosi 50, a limit odchylenia dla użytkownika pracy wynosi 10. Różnica pojawi się, gdy użytkownik wprowadzi wartość, która nie mieści się w przedziale od 40 do 60.
 -   Wartość zliczona różni się od ilości dostępnych zapasów, a nie ustawiono żadnych limitów odchyleń.

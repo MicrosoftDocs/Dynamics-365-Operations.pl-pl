@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275424"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997309"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Rozwiązywanie problemów z synchronizacją na żywo
 
@@ -86,7 +85,7 @@ Aby rozwiązać ten problem, należy przypisać poprawną rolę zabezpieczeń ze
 
     ![Zespół zamapowanej jednostki biznesowej](media/setting_security_page.png)
 
-3. Otwórz stronę zespołu do edycji, a następnie wybierz pozycję **Zarządzaj rolami**, aby otworzyć okno dialogowe **Zarządzanie rolami zespołu**.
+3. Otwórz stronę zespołu do edycji, a następnie wybierz pozycję **Zarządzaj rolami** , aby otworzyć okno dialogowe **Zarządzanie rolami zespołu**.
 
     ![Przycisk Zarządzaj rolami](media/manage_team_roles.png)
 
@@ -98,7 +97,7 @@ Aby rozwiązać ten problem, należy przypisać poprawną rolę zabezpieczeń ze
 
 Może pojawić się następujący komunikat o błędzie podczas tworzenia danych w aplikacji Finance and Operations:
 
-*{„EntityName”: „CustCustomerV3Entity”, „executionStatus”: 2, „fieldResponses”:\[\], „recordResponses”:\[{„ErrorMessage”: „**nie można wygenerować ładunku dla jednostki CustCustomerV3Entity**”, „logDateTime”: „2019-08-27T 18:51:52.5843124Z”, „verboseError”: „Tworzenie ładunku nie powiodło się z powodu błędu nieprawidłowy identyfikator URI: identyfikator URI jest pusty”}\], „isErrorCountUpdated”: prawda}*
+*{„EntityName”: „CustCustomerV3Entity”, „executionStatus”: 2, „fieldResponses”:\[\], „recordResponses”:\[{„ErrorMessage”: „ **nie można wygenerować ładunku dla jednostki CustCustomerV3Entity** ”, „logDateTime”: „2019-08-27T 18:51:52.5843124Z”, „verboseError”: „Tworzenie ładunku nie powiodło się z powodu błędu nieprawidłowy identyfikator URI: identyfikator URI jest pusty”}\], „isErrorCountUpdated”: prawda}*
 
 Oto, jak wygląda błąd w aplikacji opartej na modelu w Dynamics 365:
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172999"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998115"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -46,7 +45,7 @@ Aby skonfigurować połączenie podwójnego zapisywania, należy mieć uprawnien
 Aby skonfigurować połączenie podwójnego zapisu, należy wykonać następujące czynności.
 
 1. W LCS przejdź do projektu.
-2. Wybierz przycisk **Konfiguruj**, aby wdrożyć nowe środowisko.
+2. Wybierz przycisk **Konfiguruj** , aby wdrożyć nowe środowisko.
 3. Wybierz wersję. 
 4. Wybierz topologię. Jeśli dostępna jest tylko jedna topologia, jest ona wybierana automatycznie.
 5. Wykonaj pierwsze kroki w Kreatorze **ustawień wdrażania**.
@@ -56,7 +55,7 @@ Aby skonfigurować połączenie podwójnego zapisu, należy wykonać następują
 
         1. Ustaw opcję **Konfiguruj Common Data Service** na **Tak**.
         2. W polu **dostępne środowiska** Wybierz środowisko, które ma zostać zintegrowane z danymi Finance and Operations. Lista zawiera wszystkie środowiska, do których użytkownik ma uprawnienia administratora.
-        3. Zaznacz pole wyboru **Wyrażam zgodę**, aby wskazać, że zgadzasz się na warunki.
+        3. Zaznacz pole wyboru **Wyrażam zgodę** , aby wskazać, że zgadzasz się na warunki.
 
         ![Karta Common Data Service, jeśli zainicjowano już środowisko Common Data Service dla dzierżawy](../dual-write/media/lcs_setup_1.png)
 
@@ -70,16 +69,16 @@ Aby skonfigurować połączenie podwójnego zapisu, należy wykonać następują
             > [!NOTE]
             > Nie można zmienić języka i waluty w późniejszym terminie.
 
-        5. Zaznacz pole wyboru **Wyrażam zgodę**, aby wskazać, że zgadzasz się na warunki.
+        5. Zaznacz pole wyboru **Wyrażam zgodę** , aby wskazać, że zgadzasz się na warunki.
 
         ![Karta Common Data Service, gdy dzierżawca nie posiada jeszcze środowiska Common Data Service](../dual-write/media/lcs_setup_2.png)
 
 7. Wykonaj pozostałe kroki w Kreatorze **ustawień wdrażania**.
-8. Gdy środowisko ma stan **wdrożone**, Otwórz stronę szczegóły środowiska. W sekcji **informacje o środowisku Common Data Service** są wyświetlane nazwy połączonych środowisk Finance and Operations i Common Data Service.
+8. Gdy środowisko ma stan **wdrożone** , Otwórz stronę szczegóły środowiska. W sekcji **informacje o środowisku Common Data Service** są wyświetlane nazwy połączonych środowisk Finance and Operations i Common Data Service.
 
     ![Sekcja informacji o środowisku Common Data Service](../dual-write/media/lcs_setup_3.png)
 
-9. Administrator środowiska Finance and Operations musi zalogować się do usługi LCS i wybrać opcję **Połącz z CDS dla aplikacji**, by zakończyć połączenie. Na stronie Szczegóły środowiska są wyświetlane informacje kontaktowe administratora.
+9. Administrator środowiska Finance and Operations musi zalogować się do usługi LCS i wybrać opcję **Połącz z CDS dla aplikacji** , by zakończyć połączenie. Na stronie Szczegóły środowiska są wyświetlane informacje kontaktowe administratora.
 
     Po zakończeniu połączenia stan jest aktualizowany do **Pomyślnie zakończone łączenie środowisk**.
 

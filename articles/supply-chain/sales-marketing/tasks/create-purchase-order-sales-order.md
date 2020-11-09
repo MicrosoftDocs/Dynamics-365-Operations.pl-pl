@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 914400d2e8acff0bfa762708ba421812c31be32b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982096"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018705"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży
 
@@ -63,7 +63,7 @@ Ta procedura pokazuje, jak utworzyć zamówienie zakupu oparte na zamówieniu sp
 ## <a name="review-purchase-orders-created-from-sales-orders"></a>Przegląd zamówień zakupu utworzonych na podstawie zamówień sprzedaży
 1. W **okienku akcji** kliknij pozycję **Ogólne**.
 2. Kliknij opcję **Powiązane zamówienia**. Na stronie **Powiązane zamówienia** znajduje się lista wszystkich zamówień, które zostały utworzone na podstawie zamówienia sprzedaży. W tym przykładzie istnieją dwa zamówienia zakupu wygenerowane dla dwóch różnych dostawców. 
-3. Kliknij, aby otworzyć łącze znajdujące się w polu **Zamówienie zakupu**. Każdy wiersz zamówienia zakupu jest skojarzony z wierszem zamówienia sprzedaży, które doprowadziło do zakupu. Powiązanie z zamówieniem sprzedaży jest wskazane na **karcie Produkt** na skróconej karcie **Szczegóły wiersza** w polach **Typ odwołania**, **Numer odwołania** i **Partia odwołań**.  
+3. Kliknij, aby otworzyć łącze znajdujące się w polu **Zamówienie zakupu**. Każdy wiersz zamówienia zakupu jest skojarzony z wierszem zamówienia sprzedaży, które doprowadziło do zakupu. Powiązanie z zamówieniem sprzedaży jest wskazane na **karcie Produkt** na skróconej karcie **Szczegóły wiersza** w polach **Typ odwołania** , **Numer odwołania** i **Partia odwołań**.  
 4. Rozwiń lub zwiń sekcję **Szczegóły wiersza**.
 5. Kliknij kartę **Produkt**.
     - Opcja **Partia odwołań** gwarantuje, że koszty z bieżącego zakupu obciążą dołączone zamówienie sprzedaży.  

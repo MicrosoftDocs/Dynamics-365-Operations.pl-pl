@@ -3,7 +3,7 @@ title: Przetwarzanie faktur
 description: Ten temat zawiera informacje dotyczące przetwarzania faktur dla Europy Wschodniej.
 author: v-kikozl
 manager: AnnBe
-ms.date: 07/21/2017
+ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,16 +12,16 @@ ms.search.form: CustParameters, VendParameters
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
 ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 945b082528109f6f8c9292d2388749bebd4cfba4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 87a06e1b17e9c0bdb4147f49b2dacb74236360fa
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175175"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039810"
 ---
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 
@@ -68,9 +68,10 @@ Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak 
 </tr>
 <tr>
 <td>Data dokumentu dla kursu wymiany</td>
-<td>Polska, Węgry, Republika Czeska</td>
+<td>Polska, Węgry, Republika Czeska, Włochy</td>
 <td>
 <p>Przepisy określają różne zasady wybierania prawidłowych kursów wymiany dla kursów biznesowych. W polu <strong>Data kursu wymiany</strong> na stronach <strong>Parametry modułu rozrachunków z odbiorcami</strong> i <strong>Parametry modułu rozrachunków z dostawcami</strong> można wybrać datę, która ma być używana dla kwot w obliczeniu waluty rozliczeniowej w dokumentach zakupu i sprzedaży. Podczas wprowadzania danych system pobiera kurs wymiany dla transakcji na podstawie tego parametru.</p>
+<blockquote>[!NOTE]<br>W przypadku Włoch ta funkcja jest stosowana tylko w module Rozrachunki z dostawcami. W parametrach modułu Rozrachunki z dostawcami użytkownik może wybrać <strong>Datę księgowania</strong> lub <strong>Datę dokumentu</strong> w polu <strong>Data kursu wymiany</strong>.   </blockquote>
 <blockquote>[!NOTE]<br>Po ustawieniu pola <strong>Data kursu wymiany</strong> na <strong>Data dokumentu (tylko dla handlu z krajami UE)</strong> system używa grupy podatku. Dla grupy podatku dostępny jest parametr <strong>Handel Unijny</strong> na karcie <strong>Ogólne</strong>. Jeżeli opcja <strong>Handel Unijny</strong> jest ustawiona na <strong>Tak</strong> dla grupy podatku i jeżeli ta grupa podatku istnieje w nagłówku dokumentu, system pobiera kurs wymiany na podstawie daty dokumentu. Jeżeli opcja <strong>Handel Unijny</strong> jest ustawiona na <strong>Nie</strong> dla tej grupy podatku sprzedaży, system pobiera kurs wymiany na podstawie daty księgowania dokumentu.</blockquote>
 </td>
 </tr>

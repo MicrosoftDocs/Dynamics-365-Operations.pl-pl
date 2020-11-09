@@ -3,7 +3,7 @@ title: Porównanie funkcji w chmurze i lokalnych
 description: Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100289"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040106"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
@@ -58,10 +58,10 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | ER: Integracja z LCS                                                                  | Tak       | Nie              |
 |                                      | ER: Integracja z SharePoint                                                           | Tak       | Nie              |
 |                                      | ER: Integracja z Regulatory Configuration Services (RCS)                              | Tak       | Nie              |
-|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nie        | Tak             |
-|                                      | Integracja z PowerBI.com                                                              | Tak       | Nie              |
-|                                      | Integracja z programem PowerBI Desktop                                                          | Nie        | Tak             |
-|                                      | Analityczne obszary robocze                                                                     | Tak       | Nie              |
+|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nr        | Tak             |
+|                                      | Integracja z PowerBI.com                                                              | Tak       | Nr              |
+|                                      | Integracja z PowerBI Desktop                                                          | Nr        | Tak             |
+|                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
 |                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
 |                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
 |                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Nie              |
@@ -85,8 +85,9 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 
 ## <a name="dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management 
 
-| **Obszar**                | **Funkcja**             | **W chmurze** | **Lokalne** |
+| **Warstwowy**                | **Funkcja**             | **W chmurze** | **Lokalne** |
 |-------------------------|-------------------|-----------|-----------------|
+| Zarządzanie składnikami majątku                     |                                                                                           | Tak       | Nr |
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
 |                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nr              |
 | Rachunek kosztów                      |                                                                                           | Tak       | Tak             |
@@ -106,10 +107,10 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | ER: Integracja z LCS                                                                  | Tak       | Nie              |
 |                                      | ER: Integracja z SharePoint                                                           | Tak       | Nie              |
 |                                      | ER: Integracja z Regulatory Configuration Services (RCS)                              | Tak       | Nie              |
-|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nie        | Tak             |
-|                                      | Integracja z PowerBI.com                                                              | Tak       | Nie              |
-|                                      | Integracja z programem PowerBI Desktop                                                          | Nie        | Tak             |
-|                                      | Analityczne obszary robocze                                                                     | Tak       | Nie              |
+|                                      | ER: używa lokalnego systemu plików jako magazynu na konfiguracje ER dostępne z repozytoriów ER | Nr        | Tak             |
+|                                      | Integracja z PowerBI.com                                                              | Tak       | Nr              |
+|                                      | Integracja z PowerBI Desktop                                                          | Nr        | Tak             |
+|                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
 |                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
 |                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
 |                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Nr              |

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
+ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203418"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018659"
 ---
 # <a name="onboard-vendors"></a>Wdrażanie dostawców
+
 [!include [banner](../includes/banner.md)]
 
 ---
@@ -111,7 +112,7 @@ Po ukończeniu przez potencjalnego użytkownika-dostawcę pracy w kreatorze reje
 
 Wniosek o nowego dostawcę można utworzyć jako wersję roboczą i ręcznie przesłać do przepływu pracy. Wniosek o nowego dostawcę można także automatycznie przesłać do przepływu pracy po zakończeniu działania kreatora rejestracji dostawcy. Wniosek można przesłać ręcznie, jeżeli na przykład specjalista ds. zaopatrzenia chce ocenić, czy wniosek ma zostać skierowany do procesu zatwierdzenia przed przesłaniem do przepływu pracy.
 
-- Wybierz opcję **Parametry modułu Zaopatrzenie i sourcing** &gt; **Portal współpracy z dostawcami**, a następnie **Automatyczne przesyłanie rejestracji potencjalnego dostawcy do przepływu pracy**, aby skonfigurować wniosek o nowego dostawcę w celu automatycznego przesyłania do przepływu pracy po ukończeniu pracy kreatora rejestracji dostawcy.
+- Wybierz opcję **Parametry modułu Zaopatrzenie i sourcing** &gt; **Portal współpracy z dostawcami** , a następnie **Automatyczne przesyłanie rejestracji potencjalnego dostawcy do przepływu pracy** , aby skonfigurować wniosek o nowego dostawcę w celu automatycznego przesyłania do przepływu pracy po ukończeniu pracy kreatora rejestracji dostawcy.
 
 ## <a name="vendor-requests"></a>Zgłoszenia dostawcy
 
@@ -139,11 +140,11 @@ W poniższej tabeli przedstawiono stany, jakie mogą mieć wnioski o nowego dost
 
 Po zatwierdzeniu wniosku o nowego dostawcę następuje utworzenie konta dostawcy, a stan **Zatwierdzone** pojawia się w początkowym wniosku o rejestrację potencjalnego dostawcy i wniosku o nowego dostawcę.
 
-Przed zatwierdzeniem wniosku o nowego dostawcę na stronie **Nowy dostawca** na skróconej karcie **Ogólne**wybierz opcję **Grupa dostawców**, aby wybrać grupę dostawców.
+Przed zatwierdzeniem wniosku o nowego dostawcę na stronie **Nowy dostawca** na skróconej karcie **Ogólne** wybierz opcję **Grupa dostawców** , aby wybrać grupę dostawców.
 
 Jeżeli potencjalny użytkownik-dostawca ma mieć dostęp do rozwiązania Supply Chain Management jako użytkownik współpracujący z dostawcą, który go reprezentuje, ustaw uprawnienie dostępu współpracy z dostawcą na **Tak**. Aby dezaktywować konto użytkownika, które potencjalnego dostawca użył do rejestrowania, ustaw uprawnienie na **Nie**.
 
-Jeżeli uprawnienie dostępu współpracy z dostawcą jest ustawione na **Tak**, po zatwierdzeniu wniosku o nowego dostawcę przesyłany jest wniosek o modyfikację ról użytkownika tak, aby miał on role zdefiniowane dla typu **Dostawca** w obszarze **Role zewnętrzne**. Jeśli to uprawnienie jest ustawione na **Nie**, po zatwierdzeniu wniosku o nowego dostawcę wysyłany jest wniosek o dezaktywację użytkownika. W takim przypadku należy skonfigurować przepływ pracy dezaktywowania wniosku użytkownika.
+Jeżeli uprawnienie dostępu współpracy z dostawcą jest ustawione na **Tak** , po zatwierdzeniu wniosku o nowego dostawcę przesyłany jest wniosek o modyfikację ról użytkownika tak, aby miał on role zdefiniowane dla typu **Dostawca** w obszarze **Role zewnętrzne**. Jeśli to uprawnienie jest ustawione na **Nie** , po zatwierdzeniu wniosku o nowego dostawcę wysyłany jest wniosek o dezaktywację użytkownika. W takim przypadku należy skonfigurować przepływ pracy dezaktywowania wniosku użytkownika.
 
 Aby utworzyć konto dostawcy po zatwierdzeniu wniosku o nowego dostawcę należy ustawić sekwencję numerów tworzenia dostawców na podstawie wniosków o nowego dostawcę na **Auto**.
 

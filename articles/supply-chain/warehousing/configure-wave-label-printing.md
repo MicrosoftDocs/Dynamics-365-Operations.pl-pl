@@ -8,7 +8,7 @@ ms.topic: configure-wave-label-printing
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e3b04eea7bd7dd689f8a918820ffdb4a72d813dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986030"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016963"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Konfigurowanie i używanie drukowania etykiet w grupie czynności
 
@@ -56,7 +56,7 @@ Te udoskonalenia zwiększają efektywność tworzenia etykiet kartonowych przed 
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Włączanie funkcji drukowania etykiet grupy czynności
 
-Aby móc używać funkcji *Drukowanie etykiet grupy czynności*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Aby móc używać funkcji *Drukowanie etykiet grupy czynności* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Drukowanie etykiet grup czynności*
@@ -134,7 +134,7 @@ Układ etykiety decyduje o tym, jakie informacje są drukowane na etykiecie i w 
 
 1. Jeśli chcesz mieć możliwość drukowania identyfikatora list przewozowy, na karcie **Sprzężenia** wybierz tabelę **Wiersze pracy** i przyłącz się do tabeli **Wysyłki**.
 1. Zamknij okno dialogowe edytora zapytań.
-1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka**, **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka**, w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
+1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka** , **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka** , w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -174,7 +174,7 @@ Układ etykiety decyduje o tym, jakie informacje są drukowane na etykiecie i w 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. W **Sekcji treści**, w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
+1. W **Sekcji treści** , w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -193,7 +193,7 @@ Układ etykiety decyduje o tym, jakie informacje są drukowane na etykiecie i w 
     </Row>
     ```
 
-1. W **Sekcji treści**, w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
+1. W **Sekcji treści** , w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
 
     ```plaintext
     ^PQ1^XZ
@@ -247,11 +247,11 @@ Następnie utwórz szablon etykiety grupy czynności dla typu etykiety grupy czy
     - **Tabela:** *Wysyłki*
     - **Tabela pochodna:** *Wysyłki*
     - **Pole:** *Numer konta*
-    - **Kryteria**: Należy wprowadzić odpowiedni numer konta odbiorcy.
+    - **Kryteria** : Należy wprowadzić odpowiedni numer konta odbiorcy.
 
-    Po zakończeniu kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
+    Po zakończeniu kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
 
-1. W okienku akcji kliknij opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
+1. W okienku akcji kliknij opcję **Edytuj kwerendę** , aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
 1. W oknie dialogowym edytora zapytań na karcie **Sortowanie** dodaj wiersz o następujących ustawieniach:
 
     - **Tabela:** *Wiersze pracy*
@@ -259,10 +259,10 @@ Następnie utwórz szablon etykiety grupy czynności dla typu etykiety grupy czy
     - **Pole:** *Odwołanie do identyfikatora wiersza ładunku (identyfikator rekordu)*
     - **Kierunek wyszukiwania:** *Rosnąco*
 
-1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
-1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak**, aby kontynuować.
+1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
+1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak** , aby kontynuować.
 1. W okienku akcji wybierz opcję **Grupa szablonu etykiety grupy czynności**.
-1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** wybierz wiersz, w którym pole **Nazwa pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku*, a następnie zaznacz pole wyboru **Identyfikator kompilacji etykiety** dla tego wiersza.
+1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** wybierz wiersz, w którym pole **Nazwa pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku* , a następnie zaznacz pole wyboru **Identyfikator kompilacji etykiety** dla tego wiersza.
 
     > [!NOTE]
     > Ten Instalator utworzy jedną sekwencję etykiet („Karton 1 z X”) dla każdego wiersza ładunku w rzucie, niezależnie od konfiguracji grupowania pracy. Tę sekwencję etykiet można wydrukować w układzie etykiety.
@@ -296,7 +296,7 @@ Rozszerzenia sekwencji identyfikatorów kontrolują zgodność GS1 z określonym
     > [!NOTE]
     > Podane tu towary i ilości są tylko przykładami. Muszą one mieć zdefiniowaną wcześniej zdefiniowaną jednostkę, dlatego dla nich musi zostać zdefiniowana odpowiednia konwersja jednostek z *Każdy* na *Pudełko* na *Paleta* oraz musi mieć zapas w magazynie *62*. Aby uzyskać więcej informacji, zajrzyj do [Jednostka miary i zasady składowania](unit-measure-stocking-policies.md).
 
-1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacje**.
+1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacje**.
 1. Na stronie **Rezerwacje** w okienku akcji wybierz **Rezerwacja partii** i zamknij stronę.
 1. Powtórz kroki 4 i 5 dla wiersza zamówienia sprzedaży 2.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -307,7 +307,7 @@ Rozszerzenia sekwencji identyfikatorów kontrolują zgodność GS1 z określonym
     - Etykiety grupy czynności są generowane i drukowane. Liczba etykiet będzie równa liczbie kartonów (w tym przykładzie 376 etykiet pudełek dla linii 1 i 322 etykiet pudełek dla linii 2).
     - Nowy identyfikator list przewozowy jest generowany dla wysyłek. Jeśli skonfigurowano rozszerzenia sekwencji identyfikatorów, identyfikatory etykiet grupy czynności są zgodne z formatem numerów **SSCC-18**. 
 
-Etykiety grupy czynności można przeglądać i ponownie drukować z następujących stron. W okienku akcji na każdej stronie na karcie **Wysyłki**, w grupie **Informacje pokrewne** wybierz **Etykiety grupy czynności**.
+Etykiety grupy czynności można przeglądać i ponownie drukować z następujących stron. W okienku akcji na każdej stronie na karcie **Wysyłki** , w grupie **Informacje pokrewne** wybierz **Etykiety grupy czynności**.
 
 - Wszystkie wysyłki \> Szczegóły wysyłki
 - Wszystkie ładunki \> Szczegóły ładunku
@@ -391,7 +391,7 @@ Szablony grupy czynności umożliwiają łączenie konkretnych instancji metod g
 
 1. Jeśli chcesz mieć możliwość drukowania identyfikatora list przewozowy, na karcie **Sprzężenia** wybierz tabelę **Wiersze pracy** i przyłącz się do tabeli **Wysyłki**.
 1. Zamknij okno dialogowe edytora zapytań.
-1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka**, **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka**, w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
+1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka** , **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka** , w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -402,7 +402,7 @@ Szablony grupy czynności umożliwiają łączenie konkretnych instancji metod g
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. W **Sekcji treści**, w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
+1. W **Sekcji treści** , w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
 
     ```plaintext
     <Row name="WorkLine">
@@ -416,7 +416,7 @@ Szablony grupy czynności umożliwiają łączenie konkretnych instancji metod g
     </Row>
     ```
 
-1. W **Sekcji treści**, w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
+1. W **Sekcji treści** , w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
 
     ```plaintext
     ^PQ1^XZ
@@ -449,9 +449,9 @@ Twoja etykieta jest teraz gotowa do użycia.
     - **Tabela:** *Wysyłki*
     - **Tabela pochodna:** *Wysyłki*
     - **Pole:** *Numer konta*
-    - **Kryteria**: Należy wprowadzić odpowiedni numer konta odbiorcy.
+    - **Kryteria** : Należy wprowadzić odpowiedni numer konta odbiorcy.
 
-    Po zakończeniu kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
+    Po zakończeniu kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
 
 ### <a name="configure-number-sequence-extensions"></a>Konfigurowanie sekwencji identyfikatorów
 
@@ -495,7 +495,7 @@ Rozszerzenia sekwencji identyfikatorów kontrolują zgodność GS1 z określonym
     > [!NOTE]
     > Podane tu towary i ilości są tylko przykładami. Muszą mieć zapasy w określonym magazynie.
 
-1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacje**.
+1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacje**.
 1. Na stronie **Rezerwacje** w okienku akcji wybierz **Rezerwacja partii** i zamknij stronę.
 1. Powtórz kroki 4 i 5 dla każdego dodatkowego wiersza zamówienia sprzedaży.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -534,9 +534,9 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
 2. Wybierz szablon grupy czynności, na przykład **Domyślna 62-godzinna wysyłka**.
 3. Na skróconej karcie **Metody** należy przenieść metodę **Drukowania etykiet grupy czynności** do kolumny **Wybrane metody**.
-4. W kolumnie **Wybrane metody** przypisz wartość **Kod kroku grupy czynności**, np. *Karton*, do metody **Drukowanie etykiet grup czynności**. Aby uzyskać więcej informacji o kodach kroku grupy czynności, przejrzyj [Kody etapów grupy czynności](wave-step-codes.md).
+4. W kolumnie **Wybrane metody** przypisz wartość **Kod kroku grupy czynności** , np. *Karton* , do metody **Drukowanie etykiet grup czynności**. Aby uzyskać więcej informacji o kodach kroku grupy czynności, przejrzyj [Kody etapów grupy czynności](wave-step-codes.md).
 5. Należy ponownie przenieść metodę **Drukowania etykiet grupy czynności** do kolumny **Wybrane metody**.
-6. W kolumnie **Wybrane metody** przypisz inną wartość **Kod kroku grupy czynności**, np. *Paleta*, do drugiej metody **Drukowanie etykiet grup czynności**. Aby uzyskać więcej informacji o kodach kroku grupy czynności, przejrzyj [Kody etapów grupy czynności](wave-step-codes.md).
+6. W kolumnie **Wybrane metody** przypisz inną wartość **Kod kroku grupy czynności** , np. *Paleta* , do drugiej metody **Drukowanie etykiet grup czynności**. Aby uzyskać więcej informacji o kodach kroku grupy czynności, przejrzyj [Kody etapów grupy czynności](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Tworzenie trzech układów etykiety grupy czynności
 
@@ -583,7 +583,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
 
 1. Jeśli chcesz mieć możliwość drukowania identyfikatora list przewozowy, na karcie **Sprzężenia** wybierz tabelę **Wiersze pracy** i przyłącz się do tabeli **Wysyłki**. 
 1. Zamknij okno dialogowe edytora zapytań.
-1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka**, **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka**, w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
+1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka** , **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka** , w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
 
 
     ```plaintext
@@ -624,7 +624,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)39021^FS
     ```
 
-1. W **Sekcji treści**, w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
+1. W **Sekcji treści** , w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -643,7 +643,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     </Row>
     ```
 
-1. W **Sekcji treści**, w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
+1. W **Sekcji treści** , w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
 
     ```plaintext
     ^PQ1^XZ
@@ -695,7 +695,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
 
 1. Jeśli chcesz mieć możliwość drukowania identyfikatora list przewozowy, na karcie **Sprzężenia** wybierz tabelę **Wiersze pracy** i przyłącz się do tabeli **Wysyłki**.
 1. Zamknij okno dialogowe edytora zapytań.
-1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka**, **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka**, w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
+1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka** , **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka** , w polu **Nagłówek etykiety** wprowadź kod dla wymaganego nagłówka. Jeśli na przykład używane są drukarki Zebra, można użyć poniższego kodu.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -706,7 +706,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     ^FO0,150 ^AT ^FD$WHSShipmentTable.BillOfLadingId$ ^FS
     ```
 
-1. W **Sekcji treści**, w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
+1. W **Sekcji treści** , w polu **Treść etykiety** wprowadź kod ZPL dla wymaganej treści. Oto przykład.
 
     ```plaintext
     <Row name="WaveLabel">
@@ -717,7 +717,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     </Row>
     ```
 
-1. W **Sekcji treści**, w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
+1. W **Sekcji treści** , w polu **Stopka etykiety** wprowadź kod ZPL dla wymaganej stopki. Oto przykład.
 
     ```plaintext
     ^PQ1^XZ
@@ -733,7 +733,7 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     - **Opis:** *Etykieta podziału*
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka**, **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka**, w polu **Nagłówek etykiety** wprowadź kod ZPL dla wymaganego nagłówka. Oto przykład.
+1. Skrócona karta **Układ tekstu drukarki** zawiera trzy sekcje, w których można wpisać kod drukarki: **Sekcja nagłówka** , **Sekcja treści** i **Sekcja stopki**. W **Sekcji nagłówka** , w polu **Nagłówek etykiety** wprowadź kod ZPL dla wymaganego nagłówka. Oto przykład.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -796,11 +796,11 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     - **Tabela:** *Wysyłki*
     - **Tabela pochodna:** *Wysyłki*
     - **Pole:** *Numer konta*
-    - **Kryteria**: Należy wprowadzić odpowiedni numer konta odbiorcy.
+    - **Kryteria** : Należy wprowadzić odpowiedni numer konta odbiorcy.
 
-    Po zakończeniu kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
+    Po zakończeniu kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
 
-1. W okienku akcji kliknij opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
+1. W okienku akcji kliknij opcję **Edytuj kwerendę** , aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
 1. W oknie dialogowym edytora zapytań na karcie **Sortowanie** dodaj wiersz o następujących ustawieniach:
 
     - **Tabela:** *Wiersze pracy*
@@ -815,21 +815,21 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     - **Pole:** *Identyfikator wysyłki*
     - **Kierunek wyszukiwania:** *Rosnąco*
 
-1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
-1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak**, aby kontynuować.
+1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
+1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak** , aby kontynuować.
 1. W okienku akcji wybierz opcję **Grupa szablonu etykiety grupy czynności**.
-1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** dla wiersza, w którym w polu **Nazwa pola odwołania** jest ustawiona wartość *Identyfikator wysyłki*, należy określić następujące wartości:
+1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** dla wiersza, w którym w polu **Nazwa pola odwołania** jest ustawiona wartość *Identyfikator wysyłki* , należy określić następujące wartości:
 
     - **Drukuj etykietę podziału:** To pole wyboru należy zaznaczyć.
     - **Identyfikator układu etykiety:** Umożliwia wybór etykiety podziału. (Na przykład wybierz opcję układ etykiety *Podziału* utworzoną wcześniej w tym scenariuszu.)
     - **Nazwa drukarki:** Wybierz drukarkę dla etykiety podziału. (Zazwyczaj w celu rozdzielania przeniesień etykiet należy wybrać tę samą drukarkę, która została wybrana na skróconej karcie **Szczegóły szablonu etykiety grupy czynności**. Możliwe są jednak inne scenariusze.)
 
-1. W wierszu, w którym pole **Nazwy pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku*, zaznacz pole wyboru **Identyfikator kompilacji etykiety**.
+1. W wierszu, w którym pole **Nazwy pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku* , zaznacz pole wyboru **Identyfikator kompilacji etykiety**.
 
     > [!NOTE]
     > Ten Instalator utworzy jedną sekwencję etykiet („Karton 1 z X”) dla każdego wiersza ładunku w rzucie, niezależnie od konfiguracji grupowania pracy. Tę sekwencję etykiet można wydrukować w układzie etykiety. Ponadto etykiety różnych wysyłek będą oddzielone wybraną etykietą podziału.
 
-1. Wybierz **OK**, aby zamknąć okno dialogowe **Grupa szablonu etykiety grupy czynności**.
+1. Wybierz **OK** , aby zamknąć okno dialogowe **Grupa szablonu etykiety grupy czynności**.
 1. Dodaj drugi szablon etykiety z następującymi ustawieniami:
 
     - **Nazwa szablonu etykiety:** *Etykiety palety*
@@ -850,11 +850,11 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     - **Tabela:** *Wysyłki*
     - **Tabela pochodna:** *Wysyłki*
     - **Pole:** *Numer konta*
-    - **Kryteria**: Należy wprowadzić odpowiedni numer konta odbiorcy.
+    - **Kryteria** : Należy wprowadzić odpowiedni numer konta odbiorcy.
 
-    Po zakończeniu kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań. 
+    Po zakończeniu kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań. 
 
-1. W okienku akcji kliknij opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
+1. W okienku akcji kliknij opcję **Edytuj kwerendę** , aby otworzyć okno dialogowe edytora zapytań dla całego szablonu etykiety.
 1. W oknie dialogowym edytora zapytań na karcie **Sortowanie** dodaj wiersz o następujących ustawieniach:
 
     - **Tabela:** *Wiersze pracy*
@@ -869,16 +869,16 @@ W tym scenariuszu trzeba mieć zainstalowane dane demonstracyjne oraz musi być 
     - **Pole:** *Identyfikator wysyłki*
     - **Kierunek wyszukiwania:** *Rosnąco*
 
-1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe edytora zapytań.
-1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak**, aby kontynuować.
+1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe edytora zapytań.
+1. Zostanie wyświetlone okno komunikatu z monitem o potwierdzenie operacji resetowania grup. Wybierz przycisk **Tak** , aby kontynuować.
 1. W okienku akcji wybierz opcję **Grupa szablonu etykiety grupy czynności**.
-1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** dla wiersza, w którym w polu **Nazwa pola odwołania** jest ustawiona wartość *Identyfikator wysyłki*, należy określić następujące wartości:
+1. W oknie dialogowym **Grupa szablonów etykiety grupy czynności** dla wiersza, w którym w polu **Nazwa pola odwołania** jest ustawiona wartość *Identyfikator wysyłki* , należy określić następujące wartości:
 
     - **Drukuj etykietę podziału:** To pole wyboru należy zaznaczyć.
     - **Identyfikator układu etykiety:** Umożliwia wybór etykiety podziału. (Na przykład wybierz opcję układ etykiety *Podziału* utworzoną wcześniej w tym scenariuszu.)
     - **Nazwa drukarki:** Wybierz drukarkę dla etykiety podziału. (Zazwyczaj w celu rozdzielania przeniesień etykiet należy wybrać tę samą drukarkę, która została wybrana na skróconej karcie **Szczegóły szablonu etykiety grupy czynności**. Możliwe są jednak inne scenariusze.)
 
-1. W wierszu, w którym pole **Nazwy pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku*, zaznacz pole wyboru **Identyfikator kompilacji etykiety**.
+1. W wierszu, w którym pole **Nazwy pola odwołania** ma wartość *Odwołanie do identyfikatora wiersza ładunku* , zaznacz pole wyboru **Identyfikator kompilacji etykiety**.
 
     > [!NOTE]
     > Ten Instalator utworzy jedną sekwencję etykiet („Karton 1 z X”) dla każdego wiersza ładunku w rzucie, niezależnie od konfiguracji grupowania pracy. Tę sekwencję etykiet można wydrukować w układzie etykiety. Ponadto etykiety różnych wysyłek będą oddzielone wybraną etykietą podziału.
@@ -912,7 +912,7 @@ Rozszerzenia sekwencji identyfikatorów kontrolują zgodność GS1 z określonym
     > [!NOTE]
     > Podane tu towary i ilości są tylko przykładami. Muszą one mieć zdefiniowaną wcześniej zdefiniowaną jednostkę, dlatego dla nich musi zostać zdefiniowana odpowiednia konwersja jednostek z *Każdy* na *Pudełko* na *Paleta* oraz musi mieć zapas w magazynie *62*. Aby uzyskać więcej informacji, zajrzyj do [Jednostka miary i zasady składowania](unit-measure-stocking-policies.md).
 
-1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacje**.
+1. Wybierz wiersz zamówienia sprzedaży 1. W sekcji **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacje**.
 1. Na stronie **Rezerwacje** w okienku akcji wybierz **Rezerwacja partii** i zamknij stronę.
 1. Powtórz kroki 4 i 5 dla wiersza zamówienia sprzedaży 2.
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.

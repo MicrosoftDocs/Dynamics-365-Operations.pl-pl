@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f84701f5b82ece1806d289dd6aea370bbd8c750
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383258"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018243"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Tworzenie zamówienia zakupu z harmonogramem dostaw
 
@@ -46,7 +46,7 @@ W tym temacie pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zak
 - W polu Data dostawy wybierz datę, która jest późniejsza o tydzień niż data w pierwszym wierszu dostawy.  
 - Ilość całkowitą przydzieloną do wierszy harmonogramu dostaw można śledzić w polach **Razem** i **Pozostałe**. Jeśli pozostała ilość wynosi zero, cała ilość z oryginalnego wiersza została przydzielona do harmonogramu.  
 12. Rozwiń sekcję **Konwersja opłat**.
-- Opcje dostępne w tym miejscu umożliwiają kontrolowanie sposobu rozdziału opłat między wiersze harmonogramu dostaw. Jeśli wybierzesz opcję **Kopiuj kwoty brutto**, kwota opłaty z oryginalnego wiersza zamówienia zostanie skopiowana do każdego wiersza dostawy. Opcja **Przenieś do wierszy dostawy** dzieli opłatę z oryginalnego wiersza zgodnie z ilością w każdym wierszu dostawy.  
+- Opcje dostępne w tym miejscu umożliwiają kontrolowanie sposobu rozdziału opłat między wiersze harmonogramu dostaw. Jeśli wybierzesz opcję **Kopiuj kwoty brutto** , kwota opłaty z oryginalnego wiersza zamówienia zostanie skopiowana do każdego wiersza dostawy. Opcja **Przenieś do wierszy dostawy** dzieli opłatę z oryginalnego wiersza zgodnie z ilością w każdym wierszu dostawy.  
 13. Zwiń sekcję **Konwersja opłat**.
 14. Kliknij przycisk **OK**.
 - Harmonogram dostaw jest teraz zastosowany do zamówienia.  
@@ -72,5 +72,5 @@ Przed przetwarzaniem przyjęcia produktów należy potwierdzić zamówienie zaku
 5. Rozwiń sekcję **Wiersze**.
 - Zwróć uwagę, że dokument przyjęcia produktów został utworzony dla dwóch wierszy dostawy, a nie oryginalnego wiersza zamówienia. Gdyby przyjęcie zostało zarejestrowane w magazynie, zostałoby również zarejestrowane w wierszach harmonogramu dostaw.  
 6. Zwiń sekcję **Wiersze**.
-7. Wybierz **OK**, aby zaksięgować przyjęcie.
+7. Wybierz **OK** , aby zaksięgować przyjęcie.
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16e6170bdc8f0adcefbe310fcbf61c06aa68f02d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207978"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018797"
 ---
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
@@ -42,9 +42,9 @@ Podczas tworzenia nowego zamówienia zakupu zostanie wyświetlone okno dialogowe
 
 Pierwszym szczegółem, który należy rozważyć podczas tworzenia zamówienia zakupu, jest typ zamówienia. Najczęściej jest używany typ **Zamówienie zakupu**. Jednakże jeśli jest wymagana faktura korygująca, można użyć typu **Zwrot towaru**.  
 
-Musisz określić dostawcę w polu **Konto dostawcy**. W tym polu można szukać według konta lub nazwy dostawcy. Jeśli dostawca dostarcza z wielu lokalizacji, ale używa jednego konta płatnika, można wybrać do konto płatnika w polu **Konto płatnika**, a następnie używać go z różnymi kontami dostawcy. Jeśli zachodzi potrzeba utworzenia zamówienia zakupu dla produktów, które nie będzie zamawiane wielokrotnie, można użyć opcji **Dostawca jednorazowy**. Ta opcja automatycznie tworzy nowe konto dostawcy, które jest oznaczone jako konto jednorazowe, aby umożliwić późniejszy proces czyszczenia kont jednorazowych w module **Rozrachunki z dostawcami**. Po wybraniu konta dostawcy wiele pól w nagłówku zamówienia zakupu dziedziczy wartości domyślne z informacji skojarzonych z kontem dostawcy. Na przykład domyślny oddział i magazyn dostawy są kopiowane z informacji o dostawcy. Jednak można zastąpić te domyślne wartości, jeśli zakup jest przeznaczony dla innej lokalizacji.  
+Musisz określić dostawcę w polu **Konto dostawcy**. W tym polu można szukać według konta lub nazwy dostawcy. Jeśli dostawca dostarcza z wielu lokalizacji, ale używa jednego konta płatnika, można wybrać do konto płatnika w polu **Konto płatnika** , a następnie używać go z różnymi kontami dostawcy. Jeśli zachodzi potrzeba utworzenia zamówienia zakupu dla produktów, które nie będzie zamawiane wielokrotnie, można użyć opcji **Dostawca jednorazowy**. Ta opcja automatycznie tworzy nowe konto dostawcy, które jest oznaczone jako konto jednorazowe, aby umożliwić późniejszy proces czyszczenia kont jednorazowych w module **Rozrachunki z dostawcami**. Po wybraniu konta dostawcy wiele pól w nagłówku zamówienia zakupu dziedziczy wartości domyślne z informacji skojarzonych z kontem dostawcy. Na przykład domyślny oddział i magazyn dostawy są kopiowane z informacji o dostawcy. Jednak można zastąpić te domyślne wartości, jeśli zakup jest przeznaczony dla innej lokalizacji.  
 
-Jeśli dostawca podał numer referencyjny zamówienia, można zapisać tę informację w polu **Odwołanie do dostawcy**. Dla zamówień, których towary są zwracane, należy określić wartość w polu **RMA**, aby utworzyć odwołanie do autoryzacji dostawcy na przetwarzanie zwrotu.  
+Jeśli dostawca podał numer referencyjny zamówienia, można zapisać tę informację w polu **Odwołanie do dostawcy**. Dla zamówień, których towary są zwracane, należy określić wartość w polu **RMA** , aby utworzyć odwołanie do autoryzacji dostawcy na przetwarzanie zwrotu.  
 
 Jeśli z zamówieniem jest skojarzona umowa zakupu, należy podać tę informację w polu **Umowa zakupu**.  
 
@@ -63,14 +63,14 @@ Można sprawdzać szczegóły stanu transakcji magazynowej dla produktów magazy
 
 Wiersz zamówienia zakupu używany w celu zwrotu produktu do dostawcy będzie miał wartość ujemną. Można wybrać konkretną partię do zwrotu za pomocą operacji **Rezerwacja**.  
 
-Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały dostarczone w różnych dniach. Można skonfigurować te dostawy za pomocą akcji **Harmonogram dostaw**, która jest dostępna w menu **Wiersz zamówienia zakupu** menu w widoku **Wiersze**.  
+Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały dostarczone w różnych dniach. Można skonfigurować te dostawy za pomocą akcji **Harmonogram dostaw** , która jest dostępna w menu **Wiersz zamówienia zakupu** menu w widoku **Wiersze**.  
 
 Opłaty mogą być automatycznie dodawane do wierszy zamówienia zakupu, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy oraz dla pozycji lub grupy opłat za pozycje. Jednak najczęściej opłaty są dodawane ręcznie na poziomie wiersza zamówienia. Aby dodać opłatę, otwórz stronę **Obsługuj opłaty** za pomocą działania **Obsługuj opłaty** w menu **Finanse** w widoku **Wiersze**. Zaletą dodawania opłat bezpośrednio na poziomie wiersza zamówienia jest to, że opłatę można przydzielić jako koszt zapasów. Aby skonfigurować kody opłat w celu ujęcia kosztu produktu, należy użyć **Pozycja** po stronie debetowej (obciążeniowej). Tego rodzaju opłaty muszą być przydzielone z nagłówka zamówienia zakupu do wierszy, aby można było potwierdzić zamówienie. Na przykład można chcieć przydzielić opłaty na podstawie ilości w każdym wierszu. Kategoria opłat wpływa również na sposób ujmowania opłat. Na przykład opłaty stałe określają stałą kwotę, a opłaty Procentowe są obliczane jako procent kwoty netto w wierszu zamówienia. Zamówienia zakupu mogą być przypisane do ładunku, a ładunek może zawierać preliminarz oczekiwanych wydatków z tytułu kosztów transportu. Wydatek ten można przydzielić z powrotem od ładunku do wierszy zamówienia zakupu.
 
 ## <a name="purchase-order-actions"></a>Akcje związane z zamówieniem zakupu
 Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](../../fin-and-ops/get-started/action-search.md), aby znaleźć odpowiednią pozycję menu.  
 
-Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe**, którą można otworzyć z okienka akcji.  
+Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe** , którą można otworzyć z okienka akcji.  
 
 Rabaty są zwykle dodawane do tworzonych wierszy. Jednak niektóre rabaty dotyczą całego zamówienia:
 

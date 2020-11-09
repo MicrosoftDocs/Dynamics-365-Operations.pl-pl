@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate
+ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 3bc82c3af2b99303a650f672f2b2ccd48c9889a9
-ms.sourcegitcommit: d25d0feb3f8a5a760eba50ba5f46e1db02737d25
+ms.openlocfilehash: 7fb47498cfb3756b0e180fe9e5500255c7312a92
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3677441"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016339"
 ---
 # <a name="advanced-load-building-during-wave"></a>Zaawansowane tworzenie ładunku podczas grupy czynności
 
@@ -33,8 +33,8 @@ Podczas przetwarzania grupy czynności system zwykle tworzy nowy ładunek dla ka
 
 Aby można było skorzystać z tej funkcji, należy skonfigurować system w następujący sposób:
 
-- Utwórz *Szablony grupy czynności*, które zawierają nową metodę **buildLoads**. Ta metoda pozwala na zaawansowane tworzenie ładunków dla grup czynności, które korzystają z tych szablonów.
-- Skonfiguruj *Szablony kompilacji ładunku*, z których każdy będzie połączony z określonym szablonem i metodą grupy czynności. Załaduj kontrolę szablonów kompilacji ładunku, które ładują wiersze ładunku (istniejące lub nowe), które znajdują się w ramach grupy czynności lub są dodawane. Można łączyć lub oddzielać wysyłki, opierając się na kryteriach, takich jak szablon ładunku, sprzęt i inne wartości pól w wierszu ładunku.
+- Utwórz *Szablony grupy czynności* , które zawierają nową metodę **buildLoads**. Ta metoda pozwala na zaawansowane tworzenie ładunków dla grup czynności, które korzystają z tych szablonów.
+- Skonfiguruj *Szablony kompilacji ładunku* , z których każdy będzie połączony z określonym szablonem i metodą grupy czynności. Załaduj kontrolę szablonów kompilacji ładunku, które ładują wiersze ładunku (istniejące lub nowe), które znajdują się w ramach grupy czynności lub są dodawane. Można łączyć lub oddzielać wysyłki, opierając się na kryteriach, takich jak szablon ładunku, sprzęt i inne wartości pól w wierszu ładunku.
 - Określ *grupy mieszanek ładunków* w celu określenia, które przedmioty powinny i nie powinny być łączone w pojedynczym ładunku. Można również określić, czy w ograniczeniu ma być generowane ostrzeżenie, czy błąd, oraz określić, czy należy ocenić ograniczenie objętościowe szablonu ładunku.
 
 ## <a name="turn-on-advanced-wave-load-building-in-your-system"></a>Włącz zaawansowane tworzenie ładunku podczas grupy czynności w systemie
@@ -59,7 +59,7 @@ Tego scenariusza pokazowego można również używać jako wskazówek dotyczący
 
 ### <a name="make-sure-that-the-scenario-setup-includes-enough-available-inventory"></a>Sprawdź, czy konfiguracja scenariusza zawiera wystarczające dostępne zapasy
 
-Podczas pracy z danymi demonstracyjnymi **USMF** należy najpierw upewnić się, że system jest skonfigurowany tak, że w każdej lokalizacji pobrania znajduje się odpowiednia ilość zapasów. W przypadku tego scenariusza demonstracyjnego oczekuje się, że zapasy są dostępne w magazynie *62*:
+Podczas pracy z danymi demonstracyjnymi **USMF** należy najpierw upewnić się, że system jest skonfigurowany tak, że w każdej lokalizacji pobrania znajduje się odpowiednia ilość zapasów. W przypadku tego scenariusza demonstracyjnego oczekuje się, że zapasy są dostępne w magazynie *62* :
 
 - **A0001:** 10 sztuk
 - **A0002:** 10 sztuk
@@ -91,15 +91,15 @@ Do magazynu należy dodać pozycję **M9200**. Aby dodać towar, należy wykona�
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. W okienku akcji wybierz opcję **Aktywowanie oczekiwanych cen**.
-1. Wybierz kartę **Aktywne ceny**, aby sprawdzić, czy dodano nowy koszt własny dla oddziału *6*.
+1. Wybierz kartę **Aktywne ceny** , aby sprawdzić, czy dodano nowy koszt własny dla oddziału *6*.
 
 #### <a name="create-inventory-in-warehouse-62"></a>Tworzenie zapasów w magazynie 62
 
 1. Kliknij kolejno opcje **Zarządzanie zapasami** \> **Wpisy w arkuszu** \> **Towary** \> **Korekta zapasów**.
 1. W okienku akcji wybierz opcję **Nowy**.
 1. W oknie dialogowym **Tworzenie arkusza magazynowego** na skróconej karcie **Przegląd** w polu **Magazyn** wprowadź wartość *62*. Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
-1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
-1. Zostanie otwarta strona **Korekty zapasów**. Na skróconej karcie **Wiersze arkusza** wybierz **Nowe**, aby dodać wiersz.
+1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Zostanie otwarta strona **Korekty zapasów**. Na skróconej karcie **Wiersze arkusza** wybierz **Nowe** , aby dodać wiersz.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
 
     - **Numer pozycji:** *M9200*
@@ -107,16 +107,16 @@ Do magazynu należy dodać pozycję **M9200**. Aby dodać towar, należy wykona�
     - **Ilość:** Zmień wartość na *10*.
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. W okienku akcji kliknij przycisk **Weryfikuj**, aby sprawdzić pod kątem błędów.
-1. W oknie dialogowym **Arkusz sprawdzania** wybierz **OK**, aby rozpocząć sprawdzanie. Po zakończeniu sprawdzania zostanie wyświetlony komunikat.
-1. W okienku akcji wybierz opcję **Księguj**, aby zaksięgować zmianę zapasów.
-1. W oknie dialogowym **Księgowanie arkusza** wybierz **OK**, aby rozpocząć księgowanie. Po zakończeniu księgowania zostanie wyświetlony komunikat.
+1. W okienku akcji kliknij przycisk **Weryfikuj** , aby sprawdzić pod kątem błędów.
+1. W oknie dialogowym **Arkusz sprawdzania** wybierz **OK** , aby rozpocząć sprawdzanie. Po zakończeniu sprawdzania zostanie wyświetlony komunikat.
+1. W okienku akcji wybierz opcję **Księguj** , aby zaksięgować zmianę zapasów.
+1. W oknie dialogowym **Księgowanie arkusza** wybierz **OK** , aby rozpocząć księgowanie. Po zakończeniu księgowania zostanie wyświetlony komunikat.
 
 ## <a name="set-up-advanced-wave-load-building"></a>Konfiguracja funkcji Zaawansowane tworzenie ładunku podczas grupy czynności
 
 ### <a name="regenerate-wave-process-methods"></a>Ponowne generowanie metod procesu grupy czynności
 
-Może być konieczne ponowne wygenerowanie metod przetwarzania grupy czynności, aby można było udostępnić metodę tworzenia ładunku (**buildLoads**).
+Może być konieczne ponowne wygenerowanie metod przetwarzania grupy czynności, aby można było udostępnić metodę tworzenia ładunku ( **buildLoads** ).
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Grupy czynności** \> **Metody procesów grupy czynności**.
 2. Sprawdź, czy **buildLoads** znajduje się na liście. Jeśli nie, wybierz polecenie **Wygeneruj ponownie metody** w okienku akcji, aby dodać metodę.
@@ -128,21 +128,21 @@ Aby wykorzystać zalety zaawansowanego tworzenia podczas grupy czynności, nale�
 1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Grupy czynności** \> **Szablony grupy czynności**.
 1. Wybierz typ szablonu grupy czynności.
 
-    Jeśli pracujesz z danymi demonstracyjnymi **USMF**, wybierz szablon **62 Domyślna wysyłka**.
+    Jeśli pracujesz z danymi demonstracyjnymi **USMF** , wybierz szablon **62 Domyślna wysyłka**.
 
-1. W okienku akcji wybierz opcję **Edytuj**, aby umieścić stronę w trybie edycji.
+1. W okienku akcji wybierz opcję **Edytuj** , aby umieścić stronę w trybie edycji.
 1. Na skróconej karcie **Metody** w siatce **Pozostałe metody** wybierz metodę **buildLoads**.
 1. Korzystaj z przycisku Strzałka w prawo, aby przesunąć metodę **twórzŁadunki** na siatkę **Wybrane metody**.
-1. Aby przypisać wartość **Kodu kroku grupy czynności** dla metody **buildLoads**, należy najpierw utworzyć kod na stronie **Kodów etapów grupy czynności**. Można użyć dowolnej wymaganej wartości, ale należy ją zanotować, ponieważ będzie ona potrzebna później. Aby utworzyć kod **WSC2112**, należy skorzystać z poniższych kroków:
+1. Aby przypisać wartość **Kodu kroku grupy czynności** dla metody **buildLoads** , należy najpierw utworzyć kod na stronie **Kodów etapów grupy czynności**. Można użyć dowolnej wymaganej wartości, ale należy ją zanotować, ponieważ będzie ona potrzebna później. Aby utworzyć kod **WSC2112** , należy skorzystać z poniższych kroków:
 
-    1. W wierszu metody **buildLoads** kliknij prawym przyciskiem myszy strzałkę w dół w polu **Kod kroku grupy czynności**, a następnie wybierz polecenie **Wyświetl szczegóły**.
+    1. W wierszu metody **buildLoads** kliknij prawym przyciskiem myszy strzałkę w dół w polu **Kod kroku grupy czynności** , a następnie wybierz polecenie **Wyświetl szczegóły**.
     1. Na stronie **Kod kroku grupy czynności** w okienku akcji wybierz **Nowa**.
     1. W polu **Kod dyrektywy grupy czynności** wprowadź *WSC2112*.
     1. W polu **Opis dyrektywy grupy czynności** wprowadź *WSC2112*.
     1. W polu **Typ kroku grupy czynności** wybierz opcję *Tworzenie ładunku*.
 
 1. Wybierz przycisk **Zapisz** i zamknij stronę.
-1. W wierszu metody **buildLoads** w polu **Kod kroku grupy czynności** wybierz kod, który został właśnie utworzony (**WSC2112**).
+1. W wierszu metody **buildLoads** w polu **Kod kroku grupy czynności** wybierz kod, który został właśnie utworzony ( **WSC2112** ).
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
 > [!NOTE]
@@ -157,39 +157,39 @@ Aby wykorzystać zalety zaawansowanego tworzenia podczas grupy czynności, nale�
 Grupy mieszania ładunku ustanawiają reguły dotyczące typów towarów, które można łączyć w pojedynczym ładunku. Można skonfigurować dowolną liczbę grup mieszania ładunków. Jednak, aby można było skorzystać z zaawansowanego tworzenia ładunków podczas grup czynności, musi istnieć co najmniej jeden. Aby utworzyć mieszaną grupę ładunku, należy wykonać następujące czynności.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Ładunek** \> **Grupy mieszania ładunków**.
-1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć grupę ładunku.
+1. W okienku akcji wybierz opcję **Nowe** , aby utworzyć grupę ładunku.
 1. W polu **Identyfikator grupy mieszania ładunku** wprowadź opisową nazwę nowej grupy subskrypcji.
 
-    Jeśli pracujesz z danymi demonstracyjnymi **USMF**, określ następujące wartości:
+    Jeśli pracujesz z danymi demonstracyjnymi **USMF** , określ następujące wartości:
 
     - **Identyfikator grupy mieszania ładunku:** *TV*
     - **Opis:** *TV*
 
-1. W okienku akcji wybierz opcję **Zapisz**, aby **Kryteria grupy mieszania ładunku** były dostępne na skróconej karcie.
-1. Na skróconej karcie **Kryteria grupy mieszania ładunku** wybierz opcję **Nowy**, aby dodać wiersz do siatki.
+1. W okienku akcji wybierz opcję **Zapisz** , aby **Kryteria grupy mieszania ładunku** były dostępne na skróconej karcie.
+1. Na skróconej karcie **Kryteria grupy mieszania ładunku** wybierz opcję **Nowy** , aby dodać wiersz do siatki.
 1. W nowym wierszu określ żądane wartości w każdym polu. Te wartości decydują o grupach towarów uwzględnianych przy połączeniu z ładunkiem.
 
-    Jeśli pracujesz z danymi demonstracyjnymi **USMF**, wybierz opcję *TV&Video* w polu **Grupa towarów**.
+    Jeśli pracujesz z danymi demonstracyjnymi **USMF** , wybierz opcję *TV&Video* w polu **Grupa towarów**.
 
-1. W okienku akcji wybierz opcję **Zapisz**, aby **Ograniczenia grupy mieszania ładunku** były dostępne na skróconej karcie.
-1. Na skróconej karcie **Ograniczenia grupy mieszania ładunku** wybierz opcję **Nowy**, aby dodać wiersz do siatki.
+1. W okienku akcji wybierz opcję **Zapisz** , aby **Ograniczenia grupy mieszania ładunku** były dostępne na skróconej karcie.
+1. Na skróconej karcie **Ograniczenia grupy mieszania ładunku** wybierz opcję **Nowy** , aby dodać wiersz do siatki.
 1. W nowym wierszu określ żądane wartości w każdym polu.
 
-    Jeśli pracujesz z danymi demonstracyjnymi **USMF**, określ następujące wartości:
+    Jeśli pracujesz z danymi demonstracyjnymi **USMF** , określ następujące wartości:
 
     - **Grupa pozycji:** *CarAudio*
-    - **Ładowanie akcji kompilacji:** *Ogranicz* (ta wartość spowoduje, że elementy należące do grupy pozycji **RadioSamochodowe** nie będą mogły być w tym samym ładunku co towary należące do grupy elementów **TV i wideo**).
+    - **Ładowanie akcji kompilacji:** *Ogranicz* (ta wartość spowoduje, że elementy należące do grupy pozycji **RadioSamochodowe** nie będą mogły być w tym samym ładunku co towary należące do grupy elementów **TV i wideo** ).
 
 1. Kontynuuj pracę z regułami, dopóki nie dodasz wszystkich wymaganych kryteriów i ograniczeń dotyczących grupy mieszania ładunku.
 
-Jeśli pracujesz z danymi demonstracyjnymi **USMF**, teraz możesz zakończyć tę konfigurację.
+Jeśli pracujesz z danymi demonstracyjnymi **USMF** , teraz możesz zakończyć tę konfigurację.
 
 ### <a name="set-up-load-build-templates"></a>Ustaw szablony tworzenia ładunku
 
 Można skonfigurować dowolną liczbę szablonów tworzenia ładunków. Jednak, aby można było skorzystać z zaawansowanego tworzenia ładunków podczas grup czynności, musi istnieć co najmniej jeden. Aby utworzyć szablon procesu, wykonaj poniższe czynności.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Ładunek** \> **Szablony tworzenia ładunków podczas grup czynności**.
-1. W okienku akcji wybierz opcję **Nowy**, aby dodać nowy wiersz do siatki.
+1. W okienku akcji wybierz opcję **Nowy** , aby dodać nowy wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości.
 
     | Pole | opis | Wartość w danych demonstracyjnych USMF |
@@ -201,13 +201,13 @@ Można skonfigurować dowolną liczbę szablonów tworzenia ładunków. Jednak, 
     | Sprzęt | Sprzęt, względem którego będzie wykonywane dopasowywanie podczas przypisywania do istniejących ładunków i który będzie wypełniany przez nowo tworzone ładunki. | To pole należy pozostawić puste. |
     | Identyfikator grupy łączenia ładunków | Wybierz grupę łączenia ładunków, która będzie używana, jeżeli towar jest dozwolony w ładunku. Grupa mieszania ładunku ustanawia reguły dotyczące typów towarów, które można łączyć w pojedynczym ładunku. Należy wybrać jedną z grup mieszania utworzonych wcześniej w tej konfiguracji. | *TV* |
     | Użyj otwartych ładunków | Wybierz, czy należy dodawać do istniejących otwartych ładunków. Dostępne są następujące opcje:<ul><li>**Brak** – nie dodawaj ładunków otwartych do żadnych istniejących ładunków.</li><li>**Dowolnie** – spowoduje dodawanie do dowolnych istniejących ładunków prawidłowych dla wiersza.</li><li>**Przypisane** – dodaje otwarte ładunki do ładunku przypisanego do grupy czynności.</li></ul> | *Jakikolwiek* |
-    | Utwórz ładunki | Określ, czy mają być tworzone nowe ładunki, jeśli istniejące ładunki nie odpowiadają kryteriom. | Zaznaczone (= *Tak*) |
-    | Zezwalaj na podział wiersza wysyłki | Określ, czy zezwolić na rozdzielanie wiersza ładunku między wiele ładunków, jeżeli jego pełna wartość przekracza maksymalną pojemność szablonu ładunku. | Zaakceptowane (= *Nie*) |
-    | Sprawdź poprawność ograniczeń wolumetrycznych | Określ, czy po włączeniu tej opcji w procesie kompilowania ładunku będą sprawdzane masa i objętość podczas dodawania każdego wiersza ładunku, tak aby zapobiec przekroczeniu limitów wolumetrycznych ustawionych w szablonie ładunku. | Zaakceptowane (= *Nie*) |
+    | Utwórz ładunki | Określ, czy mają być tworzone nowe ładunki, jeśli istniejące ładunki nie odpowiadają kryteriom. | Zaznaczone (= *Tak* ) |
+    | Zezwalaj na podział wiersza wysyłki | Określ, czy zezwolić na rozdzielanie wiersza ładunku między wiele ładunków, jeżeli jego pełna wartość przekracza maksymalną pojemność szablonu ładunku. | Zaakceptowane (= *Nie* ) |
+    | Sprawdź poprawność ograniczeń wolumetrycznych | Określ, czy po włączeniu tej opcji w procesie kompilowania ładunku będą sprawdzane masa i objętość podczas dodawania każdego wiersza ładunku, tak aby zapobiec przekroczeniu limitów wolumetrycznych ustawionych w szablonie ładunku. | Zaakceptowane (= *Nie* ) |
 
-1. W okienku akcji wybierz opcję **Zapisz**, aby udostępnić opcję **Edytuj kwerendę**.
-1. W okienku akcji kliknij opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe edycji kwerendy.
-1. W polu dialogowym kwerendy, na karcie **Sortowanie** wybierz przycisk  **Dodaj**, aby dodać wiersz do siatki.
+1. W okienku akcji wybierz opcję **Zapisz** , aby udostępnić opcję **Edytuj kwerendę**.
+1. W okienku akcji kliknij opcję **Edytuj kwerendę** , aby otworzyć okno dialogowe edycji kwerendy.
+1. W polu dialogowym kwerendy, na karcie **Sortowanie** wybierz przycisk  **Dodaj** , aby dodać wiersz do siatki.
 1. W nowym wierszu określ reguły sortowania, których chcesz użyć. Na przykład, aby posortować wyniki wyszukiwania w kolejności rosnącej według numeru porządkowego, należy określić następujące wartości:
 
     - **Tabela:** *Szczegóły ładunku*
@@ -215,8 +215,8 @@ Można skonfigurować dowolną liczbę szablonów tworzenia ładunków. Jednak, 
     - **Pole:** *Numer zamówienia*
     - **Kierunek wyszukiwania:** *Rosnąco*
 
-1. Wybierz przycisk **OK**, aby zapisać zmiany i zamknąć okno dialogowe.
-1. Na skróconej karcie **Podział według** ustaw reguły określające sposób podziału ładunku. Zazwyczaj może się zdarzyć, że pola niestandardowe zostały rozszerzone na wiersz ładunku, takie jak **Trasa**, **Podróż** lub **Bieg**. Na przykład, aby utworzyć jeden ładunek według numeru zamówienia, zaznacz pole wyboru **Podział według** dla wiersza zawierającego następujące wartości:
+1. Wybierz przycisk **OK** , aby zapisać zmiany i zamknąć okno dialogowe.
+1. Na skróconej karcie **Podział według** ustaw reguły określające sposób podziału ładunku. Zazwyczaj może się zdarzyć, że pola niestandardowe zostały rozszerzone na wiersz ładunku, takie jak **Trasa** , **Podróż** lub **Bieg**. Na przykład, aby utworzyć jeden ładunek według numeru zamówienia, zaznacz pole wyboru **Podział według** dla wiersza zawierającego następujące wartości:
 
     - **Nazwa tabeli odwołań:** *Szczegóły ładunku*
     - **Nazwa pola odwołania:** *Numer zamówienia*
@@ -231,22 +231,22 @@ W tym scenariuszu przedstawiono sposób, w jaki ustawienia opisane wcześniej w 
 1. Wybierz opcję **Nowe** w okienku akcji, aby otworzyć okno dialogowe **Tworzenie zamówienia sprzedaży**.
 1. W oknie dialogowym ustaw następujące wartości:
 
-    - Na skróconej karcie **Odbiorca**, w polu **Konto odbiorcy**, należy ustawić wartość *US-007*.
+    - Na skróconej karcie **Odbiorca** , w polu **Konto odbiorcy** , należy ustawić wartość *US-007*.
     - Na skróconej karcie **Ogólne** w polu **Magazyn** ustaw wartość *62*.
 
-1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Powinno zawierać pusty wiersz w siatce na skróconej karcie **Wiersze zamówienia sprzedaży**. W tym nowym wierszu ustaw pole **Numer pozycji** na wartość *A0001* oraz pole **Ilość** na *1*.
 1. W menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
 1. Na stronie **Rezerwacje** w okienku akcji wybierz **Rezerwacja partii**.
-1. Następnie kliknij przycisk **Zamknij** – (**X**), znajdujący się w prawym górnym rogu, aby powrócić do strony zamówienia.
+1. Następnie kliknij przycisk **Zamknij** – ( **X** ), znajdujący się w prawym górnym rogu, aby powrócić do strony zamówienia.
 1. W okienku akcji na karcie **Magazyn** w grupie **Akcje** wybierz opcję **Zwolnienie do magazynu**. System tworzy wysyłkę i dodaje ją do nowego ładunku, ponieważ żaden z istniejących ładunków nie zawiera wierszy ładunku o tym numerze zamówienia.
 
     Użytkownik otrzymuje wiadomość, która zawiera identyfikator grupy czynności oraz identyfikatory wysyłki i pracy utworzone dla tego zamówienia sprzedaży.
 
-1. Aby potwierdzić szczegóły ładunku, wysyłki i pracy w wierszu sprzedaży, zaznacz wiersz, a następnie w menu **Magazyn** powyżej siatki wybierz pozycję **Szczegóły ładunku**, **Szczegóły dotyczące wysyłki** lub **Szczegóły pracy**.
-1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać kolejny wiersz.
+1. Aby potwierdzić szczegóły ładunku, wysyłki i pracy w wierszu sprzedaży, zaznacz wiersz, a następnie w menu **Magazyn** powyżej siatki wybierz pozycję **Szczegóły ładunku** , **Szczegóły dotyczące wysyłki** lub **Szczegóły pracy**.
+1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , aby dodać kolejny wiersz.
 1. W tym nowym wierszu ustaw pole **Numer pozycji** na wartość *A0002* oraz pole **Ilość** na *1*.
 1. Powtórz wiersze od 6 do 9, aby zarezerwować wiersz i zwolnić go do magazynu. System tworzy **nową** wysyłkę dla dodanego wiersza. Jednak w przypadku korzystania z funkcji Zaawansowane tworzenie ładunku podczas grupy czynności system dodaje tę wysyłkę i wiersz ładunku do istniejącej grupy czynności. Jeśli nie używasz funkcji Zaawansowanego tworzenie ładunku podczas grupy czynności, system utworzy nowy ładunek dla wysyłki.
-1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać kolejny wiersz.
+1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , aby dodać kolejny wiersz.
 1. W tym nowym wierszu ustaw pole **Numer pozycji** na wartość *M9200* oraz pole **Ilość** na *1*.
-1. Powtórz wiersze od 6 do 9, aby zarezerwować wiersz i zwolnić go do magazynu. Tak jak wcześniej, system tworzy **nową** wysyłkę dla dodanego wiersza. Ponieważ jednak przedmiot pochodzi z grupy towarów **CarAudio**, **nie spełnia ograniczeń ustawionych dla grupy mieszania ładunków**. Dlatego jest **dodawany do nowego ładunku**. Jeśli grupa mieszania ładunku nie zostałaby określona w szablonie kompilacji ładunku, ta wysyłka zostałaby dodana do pierwszego ładunku.
+1. Powtórz wiersze od 6 do 9, aby zarezerwować wiersz i zwolnić go do magazynu. Tak jak wcześniej, system tworzy **nową** wysyłkę dla dodanego wiersza. Ponieważ jednak przedmiot pochodzi z grupy towarów **CarAudio** , **nie spełnia ograniczeń ustawionych dla grupy mieszania ładunków**. Dlatego jest **dodawany do nowego ładunku**. Jeśli grupa mieszania ładunku nie zostałaby określona w szablonie kompilacji ładunku, ta wysyłka zostałaby dodana do pierwszego ładunku.

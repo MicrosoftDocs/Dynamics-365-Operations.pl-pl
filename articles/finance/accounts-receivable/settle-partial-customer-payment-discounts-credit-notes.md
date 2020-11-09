@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1a37b7c5aea22711938133d43b552eec9260f0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188977"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015014"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy
 
@@ -31,7 +31,7 @@ ms.locfileid: "2188977"
 
 Ten artykuł prowadzi przez scenariusz, w którym rabat gotówkowy jest stosowany do faktury korygującej w sytuacji, gdy również oryginalna faktura miała rabat gotówkowy. 
 
-Firma Fabrikam oferuje odbiorcom rabaty gotówkowe za częściowe zapłaty, a także za faktury korygujące. Rabat gotówkowy może zostać podjęty po wystawieniu faktury korygującej dla faktury, dla której odbiorca podjął już rabat gotówkowy. Zamiast oferowania kredytu na pełną kwotę można obciążyć saldo odbiorcy na kwotę, która nie obejmuje procenta rabatu gotówkowego podjętego przez odbiorcę. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
+Firma Fabrikam oferuje odbiorcom rabaty gotówkowe za częściowe zapłaty, a także za faktury korygujące. Rabat gotówkowy może zostać podjęty po wystawieniu faktury korygującej dla faktury, dla której odbiorca podjął już rabat gotówkowy. Zamiast oferowania kredytu na pełną kwotę można obciążyć saldo odbiorcy na kwotę, która nie obejmuje procenta rabatu gotówkowego podjętego przez odbiorcę. Parametry rozliczenia znajdują się na stronie  **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura zwykła i faktura korygująca
 Odbiorca 4035 ma fakturę na 1000,00 i fakturę korygującą na 100,00. Obie oferują 1 procent rabatu w przypadku zapłaty w ciągu 14 dni. Arnie może wyświetlić tę informację na stronie **Transakcje dostawcy**.
@@ -42,7 +42,7 @@ Odbiorca 4035 ma fakturę na 1000,00 i fakturę korygującą na 100,00. Obie ofe
 | CCRN-10050 | Faktura korygująca      | 6/28/2015 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Rozliczanie faktur korygujących z fakturą
-Na stronie **Transakcje dostawcy** Arnie otwiera stronę **Rozliczenie transakcji**. Na stronie **Rozliczanie transakcji** może rozliczyć fakturę i fakturę korygującą. W ramach procesu rozliczania wyświetla daty i kwoty rabatu gotówkowego. Zaznacza dwa dokumenty, a następnie klika **Księguj**, aby rozliczyć transakcje. Na fakturze korygującej jest rabat -1,00, ponieważ Fabrikam oferuje rabaty dla faktur korygujących.
+Na stronie **Transakcje dostawcy** Arnie otwiera stronę **Rozliczenie transakcji**. Na stronie **Rozliczanie transakcji** może rozliczyć fakturę i fakturę korygującą. W ramach procesu rozliczania wyświetla daty i kwoty rabatu gotówkowego. Zaznacza dwa dokumenty, a następnie klika **Księguj** , aby rozliczyć transakcje. Na fakturze korygującej jest rabat -1,00, ponieważ Fabrikam oferuje rabaty dla faktur korygujących.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik    | Konto | Data      | Data wymagalności  | Faktura  | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -51,13 +51,11 @@ Na stronie **Transakcje dostawcy** Arnie otwiera stronę **Rozliczenie transakcj
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie transakcji**.
 
-|                              |           |
-|------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/12/2015 |
-| Kwota rabatu gotówkowego         | -1,00     |
-| Użyj rabatu gotówkowego            | Normalna    |
-| Pobrany rabat gotówkowy          | 0,00      |
-| Kwota rabatu gotówkowego do pobrania | -1,00     |
+- **Data rabatu** : 7/12/2015 
+- **Kwota rabatu gotówkowego** : -1.00     
+- **Użyj rabatu gotówkowego** : Normalne    
+- **Pobrany rabat gotówkowy** : 0.00      
+- **Kwota rabatu gotówkowego do pobrania** : -1.00     
 
 Rozliczenie będzie miało wartość 100,00 i będzie obejmowało płatność 99,00 i rabat w wysokości 1,00.
 

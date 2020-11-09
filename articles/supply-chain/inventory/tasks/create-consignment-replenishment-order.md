@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66611e2d8a88269fe727c46ef4aa6aa809cc7836
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214051"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018360"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych
 
@@ -33,7 +33,7 @@ Ten temat pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyj
 ## <a name="create-a-consignment-replenishment-order"></a>Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych
 1. W okienku nawigacji wybierz kolejno **Moduły > Zaopatrzenie i sourcing > Konsygnacja > Zamówienia uzupełnienia zapasów konsygnacyjnych**.
 2. Wybierz pozycję **Nowy**.
-3. W polu **Konto dostawcy** wybierz dostawca **US-104** (należy wybrać dostawcę, który jest zarejestrowany jako właściciel na stronie **właściciele zapasów**). 
+3. W polu **Konto dostawcy** wybierz dostawca **US-104** (należy wybrać dostawcę, który jest zarejestrowany jako właściciel na stronie **właściciele zapasów** ). 
 4. Kliknij przycisk **OK**.
 5. Wybierz **Dodaj wiersz**.
 6. W polu **Kod pozycji** wpisz typ `M9211CI` (należy wybrać towar skonfigurowany dla zapasów konsygnacyjnych).
@@ -42,7 +42,7 @@ Ten temat pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyj
 9. W polu **Potwierdzona data dostawy** wpisz datę.
 10. Rozwiń sekcję **Szczegóły wiersza**.
 11. Wybierz kartę **Wymiary magazynowe**.
-12. Aby pokazać właściciela w polu **Właściciel wymiarów magazynowych**, odśwież stronę. Dostawca US-104 jest teraz wymieniony jako właściciel.  
+12. Aby pokazać właściciela w polu **Właściciel wymiarów magazynowych** , odśwież stronę. Dostawca US-104 jest teraz wymieniony jako właściciel.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Sprawdzanie stanu transakcji magazynowej
 1. Wybierz **Zapasy**.

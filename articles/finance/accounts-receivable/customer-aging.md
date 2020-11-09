@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974868"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013060"
 ---
 # <a name="customer-aging-report"></a>Raport wiekowania dla odbiorców 
 
@@ -115,8 +115,9 @@ Podczas generowania tego raportu, wyświetlane są następujące parametry domy�
 <tr class="even">
 <td><p><strong>Kierunek drukowania</strong></p></td>
 <td><p>Umożliwia określenie, czy mają być obliczane salda i drukowany raport wiekowania w przeszłych i przyszłych okresach. Daty są oceniane w odniesieniu do daty wybranej w polu <strong>Saldo na dzień</strong>. Należy wybrać opcję <strong>Wstecz</strong>, aby umieścić informacje dla minionych okresów. Należy wybrać opcję<strong>Dalej</strong>, aby umieścić informacje dla przyszłych okresów.</p>
-
-**Uwaga:** Informacje wprowadzone w tym polu są używane tylko, jeśli nie wybrano definicji okresu wiekowania.</P>
+<div class="alert">
+  
+<STRONG>Uwaga:</STRONG> Informacje wprowadzone w tym polu są używane tylko, jeśli nie wybrano definicji okresu wiekowania.</P>
 
 
 </div></td>

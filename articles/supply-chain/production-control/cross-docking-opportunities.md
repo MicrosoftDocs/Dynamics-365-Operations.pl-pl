@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCrossDockOpportunityPolicy
+ms.search.form: WHSCrossDockOpportunityPolicy, WHSReservationHierarchy, WHSInventTableReservationHierarchy, WHSItemGroupLoadTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c47cb24e8fb14a46ee663ab9cf75679acdb6384
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 948db1f7308896209e195613d50b1d66b807b1bf
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211581"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016846"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
@@ -97,7 +97,7 @@ W zasadzie przeładunku kompletacyjnego można skonfigurować kryterium powoduj�
 Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony do lokalizacji przy bramie dokowej, skąd jest ładowany na ciężarówkę i następnie przenoszony do centrum dystrybucji. Użyj danych firmy USMF.
 
 1.  Włączanie nowej numeracji dla przeładunków kompletacyjnych. Przejdź do strony **Sekwencje numerów** i naciśnij przycisk **Generuj**. Kreator poprowadzi Cię przez proces.
-2.  Tworzenie zasady przeładunku kompletacyjnego. Przejdź do strony **Zasady przeładunku kompletacyjnego** i utwórz nową zasadę o nazwie **Przeładunek kompletacyjny do zamówienia przeniesienia**. Zwróć uwagę, że można wybrać tylko typ zlecenia pracy **Wydanie przeniesienia**, a jedyna dostępna strategia przeładunku kompletacyjnego to **Data i godzina**.
+2.  Tworzenie zasady przeładunku kompletacyjnego. Przejdź do strony **Zasady przeładunku kompletacyjnego** i utwórz nową zasadę o nazwie **Przeładunek kompletacyjny do zamówienia przeniesienia**. Zwróć uwagę, że można wybrać tylko typ zlecenia pracy **Wydanie przeniesienia** , a jedyna dostępna strategia przeładunku kompletacyjnego to **Data i godzina**.
 3.  Tworzenie zasady pracy. Przejdź do strony **Zasady pracy** i utwórz nową zasadę pracy o nazwie **Przeładunek kompletacyjny L0101**.
 4.  Konfigurowanie ładunków, tak aby były tworzone automatycznie dla zamówień przeniesienia. W parametrach magazynu skonfiguruj automatyczne tworzenie ładunków podczas tworzenia zamówień przeniesienia. Ładunek jest warunkiem niezbędnym, aby zamówienia przeniesienia mogły być objęte przeładunkiem kompletacyjnym.
 5.  Skonfiguruj mapowanie ładunku towarów. Przejdź do strony **Mapowanie ładunku pozycji** i skonfiguruj standardowy szablon ładunku dla grupy towarów **CarAudio**. To mapowanie będzie powodowało automatyczne wstawianie szablonu ładunku do ładunku podczas tworzenia zamówienia przeniesienia.
@@ -115,9 +115,9 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 1.  Modyfikacja zasady przeładunku kompletacyjnego. Zmodyfikuj zasadę przeładunku kompletacyjnego utworzoną w scenariuszu 1, zaznaczając pole wyboru **Zapotrzebowanie na przeładunek kompletacyjny wymaga lokalizacji**.
 2.  Tworzenie nowego zamówienia przeniesienia.
 3.  Otwórz **pulpit planowania wysyłki ładunku**.
-4.  Z pulpitu planowania wysyłki ładunku przejdź do sekcji **Ładunek**, a następnie z menu **Transport** wybierz polecenie **Harmonogram terminów** i utwórz nowy harmonogram terminów. Należy zauważyć, że harmonogram terminów odwołuje się do zamówienia przeniesienia za pomocą pola **Numer zamówienia**. W polu **Planowana data/godzina rozpoczęcia w lokalizacji** można ustawić datę i godzinę terminu. Ta data i godzina będą używane podczas ustalania priorytetów przeładunku kompletacyjnego w procesie przeładunku kompletacyjnego. Data i godzina ustawione tym polu spowodują aktualizację pola **Data i godzina zaplanowanej wysyłki ładunku** w odnośnym ładunku. Lokalizacja na skróconej karcie **Szczegóły wysyłki** wskazuje lokalizację, z której zostaną wysłane towary zamówienia przeniesienia.
+4.  Z pulpitu planowania wysyłki ładunku przejdź do sekcji **Ładunek** , a następnie z menu **Transport** wybierz polecenie **Harmonogram terminów** i utwórz nowy harmonogram terminów. Należy zauważyć, że harmonogram terminów odwołuje się do zamówienia przeniesienia za pomocą pola **Numer zamówienia**. W polu **Planowana data/godzina rozpoczęcia w lokalizacji** można ustawić datę i godzinę terminu. Ta data i godzina będą używane podczas ustalania priorytetów przeładunku kompletacyjnego w procesie przeładunku kompletacyjnego. Data i godzina ustawione tym polu spowodują aktualizację pola **Data i godzina zaplanowanej wysyłki ładunku** w odnośnym ładunku. Lokalizacja na skróconej karcie **Szczegóły wysyłki** wskazuje lokalizację, z której zostaną wysłane towary zamówienia przeniesienia.
 5.  W **pulpicie planowania wysyłki ładunku** przeprowadź zwolnienie do magazynu.
-6.  Utwórz zlecenie produkcyjne na towar o numerze **L0101** i ustaw jego stan na **Rozpoczęte**, z ilością równą 20.
+6.  Utwórz zlecenie produkcyjne na towar o numerze **L0101** i ustaw jego stan na **Rozpoczęte** , z ilością równą 20.
 7.  Zgłaszanie jako gotowych z urządzenia komórkowego.
 8.  Przejdź do portalu urządzeń przenośnych i wybierz pozycję menu **Zgłoszenie i odłożenie wyrobów gotowych**.
 9.  Z urządzenia przenośnego zgłoś towar o numerze **L0101** jako produkt gotowy. Zauważ, że lokalizacją odłożenia jest teraz **BAYDOOR 2**. Ta lokalizacja jest pobierana z harmonogramu terminów, a nie z dyrektywy lokalizacji **Przyjęcie przeniesienia**.

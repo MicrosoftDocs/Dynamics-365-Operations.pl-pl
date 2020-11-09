@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchEditLines, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 98ce5584f869fef57b542e6aa364045554ef0fde
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984185"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018521"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
@@ -33,8 +33,8 @@ W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zam�
 1. Otwórz **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Zamówienia > Wszystkie zamówienia zakupu**.
 2. Wybierz pozycję **Nowy**.
 3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość, a następnie wybierz **OK**.
-4. Wprowadź lub wybierz wartości w polach **Numer zapasu** i **Oddział**, a następnie wybierz **Zapisz**.
-5. W okienku akcji wybierz **Zamówienia sprzedaży**, a następnie wybierz **Dostawa bezpośrednia**. Strona Utwórz dostawę zawiera listę wszystkich otwartych wierszy zamówienia sprzedaży w postaci, w jakiej zostały skopiowane z zamówienia sprzedaży. Przed utworzeniem dostawy bezpośredniej można przejrzeć szczegóły zamówienia i w razie potrzeby zmodyfikować szczegóły, takie jak ilość zakupu i warunki cenowe.  
+4. Wprowadź lub wybierz wartości w polach **Numer zapasu** i **Oddział** , a następnie wybierz **Zapisz**.
+5. W okienku akcji wybierz **Zamówienia sprzedaży** , a następnie wybierz **Dostawa bezpośrednia**. Strona Utwórz dostawę zawiera listę wszystkich otwartych wierszy zamówienia sprzedaży w postaci, w jakiej zostały skopiowane z zamówienia sprzedaży. Przed utworzeniem dostawy bezpośredniej można przejrzeć szczegóły zamówienia i w razie potrzeby zmodyfikować szczegóły, takie jak ilość zakupu i warunki cenowe.  
 6. W polu **Uwzględnij** wszystko wybierz opcję **Tak**.
     - Jeśli chcesz wygenerować dostawę bezpośrednią tylko dla podzbioru wierszy zamówienia sprzedaży, wybierz je pojedynczo.  
     - Pole **Konto dostawcy** może, ale nie musi, być już wypełnione numerem dostawcy. Jeśli dla produktu jest zdefiniowany dostawca domyślny (w powiązanym zapotrzebowaniu na towar), ten dostawca zostanie skopiowany do wiersza. W przeciwnym razie dostawcę należy wprowadzić ręcznie. W tym przykładzie w kolejnym kroku wybierzemy nowego dostawcę, nawet wtedy, gdy pole dostawcy jest już wypełnione.   
@@ -72,7 +72,7 @@ W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zam�
 2. Wybierz pozycję **Nowy**.
 3. W polu **Konto odbiorcy** wprowadź lub wybierz wartość, a następnie wybierz **OK**.
 4. W polach **Kod pozycji** i **Oddział** wprowadź lub wybierz wartość.
-5. Rozwiń sekcję **Szczegóły wiersza**, a następnie wybierz kartę **Dostawa**. Zamiast tworzyć dostawę bezpośrednią jako część przetwarzania zamówienia sprzedaży, co miało miejsce w poprzedniej procedurze, można przekazać to zadanie specjaliście z działu zakupów. Aby uwzględnić wiersz zamówienia sprzedaży w procesie obsługi dostawy bezpośredniej, należy oznaczyć wiersz dla dostawy bezpośredniej.  
+5. Rozwiń sekcję **Szczegóły wiersza** , a następnie wybierz kartę **Dostawa**. Zamiast tworzyć dostawę bezpośrednią jako część przetwarzania zamówienia sprzedaży, co miało miejsce w poprzedniej procedurze, można przekazać to zadanie specjaliście z działu zakupów. Aby uwzględnić wiersz zamówienia sprzedaży w procesie obsługi dostawy bezpośredniej, należy oznaczyć wiersz dla dostawy bezpośredniej.  
 6. W polu **Dostawa bezpośrednia** wybierz opcję **Tak**.
     - Jeśli towar został już domyślnie skonfigurowany dla dostawy bezpośredniej, podczas wprowadzania wiersza zamówienia w polu zostanie automatycznie ustawiona wartość Tak. Towar można skonfigurować dla dostawy bezpośredniej w danych podstawowych zwalnianego produktu przez ustawienie w opcji Dostawa bezpośrednia wartości Tak i wybranie domyślnego magazynu dostawy bezpośredniej.  
     - Ponieważ zamówienie zakupu nie zostało jeszcze utworzone, w polu Dostawa bezpośrednia jest ustawiany stan „Do dostawy bezpośredniej”.   

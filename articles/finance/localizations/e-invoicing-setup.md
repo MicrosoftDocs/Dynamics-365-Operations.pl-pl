@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836017"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039899"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Skonfiguruj dodatek Faktury elektroniczne
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Konfiguracja funkcji dodatku dla faktur elektronicznych to proces tworzenia wymaganej konfiguracji za pośrednictwem środowiska Regulatory Configuration Services (RCS) i publikowania tej konfiguracji na serwerze dodatku Faktury elektroniczne. Konfiguracja umożliwia tworzenie konfigurowalnych reguł, które umożliwiają dodatkowi Faktury elektroniczne używanie bezpiecznego protokołu przez Internet do komunikacji i wymiany danych z podmiotami zewnętrznymi za pośrednictwem usług internetowych.
 
@@ -49,9 +49,9 @@ Z powodu różnic w formatach faktur i przepływach akcji ustawienia funkcji mog
 Proces instalacji musi zostać ukończony w środowisku RCS. Wykonaj poniższe czynności, aby utworzyć nową funkcję dodatku Faktury elektroniczne.
 
 1. Zaloguj się do swojego środowiska RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Dodatek Faktury elektroniczne**.
-3. Na stronie **Funkcje dodatku Faktur elektronicznych** wybierz opcję **Importuj**, aby zaimportować konfigurację modelu danych ER z repozytorium globalnego.
-4. Wybierz przycisk **Dodaj**, aby utworzyć elektroniczną funkcję dodawania dodatków do fakturowania. Funkcję można utworzyć od podstaw lub wyprowadzić z istniejącej funkcji dodatku Faktury elektroniczne.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji** , a następnie w obszarze **Funkcje** wybierz kafelek **Dodatek Faktury elektroniczne**.
+3. Na stronie **Funkcje dodatku Faktur elektronicznych** wybierz opcję **Importuj** , aby zaimportować konfigurację modelu danych ER z repozytorium globalnego.
+4. Wybierz przycisk **Dodaj** , aby utworzyć elektroniczną funkcję dodawania dodatków do fakturowania. Funkcję można utworzyć od podstaw lub wyprowadzić z istniejącej funkcji dodatku Faktury elektroniczne.
 
     ![Dodawanie funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
@@ -64,14 +64,14 @@ Konfiguracje zawierają konfiguracje formatu ER, które są wymagane do przekszt
 
 Wykonaj poniższe czynności, aby dodać formaty ER do funkcji dodatku Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Konfiguracje** wybierz opcję **Dodaj**, aby dodać konfiguracje formatów plików ER dla funkcji dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Konfiguracje** wybierz opcję **Dodaj** , aby dodać konfiguracje formatów plików ER dla funkcji dodatku Faktur elektronicznych.
 
     ![Dodawanie konfiguracji funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Podczas tworzenia od podstaw funkcji dodatku Faktury elektroniczne należy ręcznie dodać wszystkie konfiguracje formatu pliku ER. W przypadku wyprowadzenia funkcji dodatku Faktury elektroniczne z istniejącej funkcji konfiguracje formatu pliku ER są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji dodatku Faktury elektroniczne.
 
-2. Wybierz opcję **Edytuj**, aby otworzyć stronę **Projektant formatów**, na której możesz edytować konfigurację formatu pliku ER.
+2. Wybierz opcję **Edytuj** , aby otworzyć stronę **Projektant formatów** , na której możesz edytować konfigurację formatu pliku ER.
 
     ![Edytowanie konfiguracji funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
@@ -88,14 +88,14 @@ Konfiguracje funkcji zawierają reguły komunikacji i zabezpieczeń z usługą s
 
 Wykonaj poniższe czynności, aby dodać ustawienia funkcji do funkcji dodatku Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Ustawienia** wybierz opcję **Dodaj**, aby dodać ustawienia funkcji dla funkcji dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Ustawienia** wybierz opcję **Dodaj** , aby dodać ustawienia funkcji dla funkcji dodatku Faktur elektronicznych.
 
     ![Dodawanie ustawień funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Podczas tworzenia od podstaw funkcji dodatku Faktury elektroniczne należy ręcznie dodać wszystkie wymagane ustawienia funkcji. W przypadku wyprowadzenia funkcji dodatku Faktury elektroniczne z istniejącej funkcji, wszystkie ustawienia funkcji są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji dodatku Faktury elektroniczne.
 
-2. Wybierz opcję **Edytuj**, aby edytować ustawienia wersji funkcji.
+2. Wybierz opcję **Edytuj** , aby edytować ustawienia wersji funkcji.
 
     ![Edycja ustawień funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
@@ -113,8 +113,8 @@ Każda akcja zawiera predefiniowaną listę parametrów, które są wymagane, ab
 
 Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karcie **Akcje** wykonaj jedną lub obie kroki, aby zarządzać akcjami:
 
-- Wybierz opcję **Nowy** lub **Usuń**, aby dodać nowe akcje lub usunąć istniejące akcje.
-- Wybierz opcję **W górę** lub **W dół**, aby przenieść wybrane akcje w górę lub w dół w siatce, a więc zmień kolejność, w jakiej są uruchamiane. Akcje są uruchamiane w kolejności, w jakiej są wyświetlane w siatce, od góry do dołu.
+- Wybierz opcję **Nowy** lub **Usuń** , aby dodać nowe akcje lub usunąć istniejące akcje.
+- Wybierz opcję **W górę** lub **W dół** , aby przenieść wybrane akcje w górę lub w dół w siatce, a więc zmień kolejność, w jakiej są uruchamiane. Akcje są uruchamiane w kolejności, w jakiej są wyświetlane w siatce, od góry do dołu.
 
 ![Zarządzanie akcjami](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
@@ -194,7 +194,7 @@ Dostępne parametry różnią się w zależności od akcji wybranej na skrócone
 |-----------------------------|-------------|
 | Adres URL usługi sieci Web             | Adres URL, do którego mają być wysłane żądania. |
 | Upłynął limit czasu żądania sieci Web         | Maksymalny czas oczekiwania (w milisekundach) na odpowiedź usługi sieci Web. |
-| Typ operacji żądania      | Typ operacji żądania HTTP (np **GET**, **POST** lub **DELETE**). |
+| Typ operacji żądania      | Typ operacji żądania HTTP (np **GET** , **POST** lub **DELETE** ). |
 | Nazwy certyfikatu           | Nazwy certyfikatu. |
 | Kodowanie treści odpowiedzi      | Oczekiwane kodowanie treści odpowiedzi HTTP, aby można było ją poprawnie zdekodować. |
 | Typ zawartości żądania HTTP   | Dane wejściowe z nagłówka typu zawartości żądania HTTP. |
@@ -260,7 +260,7 @@ Reguły stosowania umożliwiają tworzenie reguł logicznych, które określają
 
 #### <a name="set-up-applicability-rules"></a>Ustaw reguły zastosowania
 
-1. Na stronie **Konfiguracja wersji funkcji** na karcie **Reguły zastosowania** wybierz opcję **Nowa**, aby dodać regułę stosowania.
+1. Na stronie **Konfiguracja wersji funkcji** na karcie **Reguły zastosowania** wybierz opcję **Nowa** , aby dodać regułę stosowania.
 
     ![Zarządzanie regułami stosowania](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
@@ -295,7 +295,7 @@ Zmienne można tworzyć, a następnie stosować jako wartości wejściowe dla pa
 
 #### <a name="set-up-variables"></a>Ustaw zmienne
 
-- Na stronie **Ustawienia wersji funkcji** na karcie **Zmienne** wybierz opcję **Nowy** lub **Usuń**, aby zarządzać zmiennymi.
+- Na stronie **Ustawienia wersji funkcji** na karcie **Zmienne** wybierz opcję **Nowy** lub **Usuń** , aby zarządzać zmiennymi.
 
     ![Zarządzanie zmiennymi](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
@@ -311,7 +311,7 @@ W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Zmienne*
 
 ### <a name="validate-the-feature-setup"></a>Sprawdź ustawienia funkcji
 
-- Na stronie **Ustawienia wersji funkcji** w okienku akcji wybierz opcję **Weryfikuj**, aby sprawdzić konfigurację wersji funkcji.
+- Na stronie **Ustawienia wersji funkcji** w okienku akcji wybierz opcję **Weryfikuj** , aby sprawdzić konfigurację wersji funkcji.
 
    ![Wybranie przycisku Zatwierdź](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
@@ -323,7 +323,7 @@ Podczas sprawdzania poprawności jest sprawdzana spójność całej konfiguracji
 
 Wykonaj poniższe czynności, aby włączyć środowisko dodatkowe Faktury elektroniczne dla funkcji dodatku Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Środowiska** wybierz opcję **Włącz**, aby dodać środowisko dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Środowiska** wybierz opcję **Włącz** , aby dodać środowisko dodatku Faktur elektronicznych.
 2. W polu **Obowiązuje od** wprowadź datę, kiedy nowe środowisko zostanie wprowadzone.
 
 ![Włączanie środowiska dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
@@ -338,26 +338,26 @@ Aby zatrzymać udostępnianie funkcji dodatku Faktur elektronicznych w organizac
 
 ## <a name="versions"></a>Wersje
 
-Wersje pomagają kontrolować czas trwania funkcji dodatku Faktur elektronicznych w sieci, zarządzając jej stanem. Można utworzyć nową wersję istniejącej funkcji dodatku Faktur elektronicznych, lub, jeśli została ukończona cała konfiguracja funkcji dodatku Faktur elektronicznych, można zmienić stan funkcji na **Zakończona**, a następnie **Opublikuj**.
+Wersje pomagają kontrolować czas trwania funkcji dodatku Faktur elektronicznych w sieci, zarządzając jej stanem. Można utworzyć nową wersję istniejącej funkcji dodatku Faktur elektronicznych, lub, jeśli została ukończona cała konfiguracja funkcji dodatku Faktur elektronicznych, można zmienić stan funkcji na **Zakończona** , a następnie **Opublikuj**.
 
 ### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Utwórz nową wersję istniejącej funkcji dodatku Faktur elektronicznych
 
 1. Na stronie **Funkcje dodatku Faktur elektronicznych** na siatce po lewej, wybierz funkcję dodatku Faktur elektronicznych.
-2. Na karcie **Wersje** wybierz opcję **Nowa**, aby dodać nową wersję funkcji dodatku Faktur elektronicznych.
+2. Na karcie **Wersje** wybierz opcję **Nowa** , aby dodać nową wersję funkcji dodatku Faktur elektronicznych.
 
 ### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Zmiana stanu funkcji dodatku Faktur elektronicznych
 
 Wykonaj poniższe czynności, aby zarządzać cyklem życia funkcji dodatku Faktury elektroniczne.
 
 1. Na stronie **Funkcje dodatku Faktur elektronicznych** na siatce po lewej, wybierz funkcję dodatku Faktur elektronicznych.
-2. Na karcie **Wersje** wybierz pozycję **Zmień stan**, a następnie zmień stan z **Wersja robocza** na **Ukończone**.
-3. Zostanie wyświetlony monit o potwierdzenie zamiaru ukończenia funkcji dodatku Faktury elektroniczne i wszystkich jego składników. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
+2. Na karcie **Wersje** wybierz pozycję **Zmień stan** , a następnie zmień stan z **Wersja robocza** na **Ukończone**.
+3. Zostanie wyświetlony monit o potwierdzenie zamiaru ukończenia funkcji dodatku Faktury elektroniczne i wszystkich jego składników. Wybierz opcję **Tak** , aby potwierdzić akcję, lub przycisk **Nie** , aby ją anulować.
 
     > [!NOTE]
-    > Po wybraniu opcji **Tak**, stan wersji konfiguracji, które są składnikami funkcji dodatku Faktury elektroniczne, jest automatycznie zmieniany z **Wersji roboczej** na **Ukończona**.
+    > Po wybraniu opcji **Tak** , stan wersji konfiguracji, które są składnikami funkcji dodatku Faktury elektroniczne, jest automatycznie zmieniany z **Wersji roboczej** na **Ukończona**.
 
-4. Wybierz **Zmień stan**, a następnie zmień stan z **Ukończone** na **Opublikuj**.
-5. Zostanie wyświetlony monit o potwierdzenie zamiaru publikacji funkcji dodatku Faktury elektroniczne i wszystkich jego składników dl globalnego repozytorium. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
+4. Wybierz **Zmień stan** , a następnie zmień stan z **Ukończone** na **Opublikuj**.
+5. Zostanie wyświetlony monit o potwierdzenie zamiaru publikacji funkcji dodatku Faktury elektroniczne i wszystkich jego składników dl globalnego repozytorium. Wybierz opcję **Tak** , aby potwierdzić akcję, lub przycisk **Nie** , aby ją anulować.
 
     > [!NOTE]
-    > Po wybraniu opcji **Tak**, stan wersji konfiguracji zostanie automatycznie zmieniony z **Zakończono** na **Udostępnione**.
+    > Po wybraniu opcji **Tak** , stan wersji konfiguracji zostanie automatycznie zmieniony z **Zakończono** na **Udostępnione**.

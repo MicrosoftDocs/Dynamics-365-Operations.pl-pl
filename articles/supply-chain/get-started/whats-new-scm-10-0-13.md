@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: af468f0cc5d5f1baab62afb3cf90dfca353b3291
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 49b90037c182e10d0cc9d449649e8501537fdc4f
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802950"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012397"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.13 październik 2020 r.)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.13. Ta wersja ma numer kompilacji 10.0.569 i jest dostępna w następujący sposób:
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.13. Ta wersja ma numer kompilacji 10.0.569 i jest dostępna w następujący sposób:
 
 - **Wersja podglądu:** sierpnień 2020
 - **Dostępność ogólna (Samoaktualizacja):** wrzesień 2020
@@ -49,8 +49,6 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 - [Nowe wymiary magazynowe dla śledzenia wersji produktu i ulepszone rozszerzalności](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Aby uzyskać więcej informacji, zobacz temat [Wymiary produktów](../pim/product-dimensions.md).
 
 - [Zadeklarowana rezerwacja zamówienia oparta na numerach identyfikacyjnych](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - Aby uzyskać więcej informacji, zobacz [Elastyczna rezerwacja numeru identyfikacyjnego](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
-
-- [Wychodzące wizualizacje obciążenia pracą](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)
 
 - [Przegląd wiersza wyboru pracy](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 

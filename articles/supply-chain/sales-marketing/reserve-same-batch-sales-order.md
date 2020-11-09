@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays
+ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29fd7afdd032e5d3afbe90a1883783b0f2dd83e2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982168"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017283"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży
 
@@ -44,4 +44,4 @@ Podczas rezerwowania zapasów produktu w wierszu zamówienia sprzedaży, dla kt�
 - Partia wygasła, na podstawie daty ważności oraz jakiekolwiek dni możliwej sprzedaży. Element nadal można uznać za do rezerwacji, jeśli grupa modeli pozycji dla towaru jest ewidencjonowana według zasady FEFO, a okres przydatności jest kryterium pobrania.
 - Partia nie ma wystarczającej liczby pozostałych dni przydatności (według daty ważności, daty przydatności i liczby dni możliwej sprzedaży u odbiorcy).
 
-W przypadku towarów skojarzonych z grupą wymiarów magazynowania, w której jest włączona opcja **Używaj procesów zarządzania magazynem**, można zarezerwować określone numery partii przy użyciu hierarchii rezerwacji o wymiarze magazynowym numer partii zdefiniowanym powyżej wymiaru lokalizacji. Strona **Rezerwacja partii** dla wierszy sprzedaży i zamówień przeniesienia umożliwia również wybranie i zarezerwowanie wielu wierszy na podstawie dostępnych numerów partii. Aby uzyskać więcej informacji na temat czynności, które należy wykonać w przypadku korzystania z hierarchii rezerwacji z wymiarem numeru partii poniżej lokalizacji, należy zapoznać się z tematem [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+W przypadku towarów skojarzonych z grupą wymiarów magazynowania, w której jest włączona opcja **Używaj procesów zarządzania magazynem** , można zarezerwować określone numery partii przy użyciu hierarchii rezerwacji o wymiarze magazynowym numer partii zdefiniowanym powyżej wymiaru lokalizacji. Strona **Rezerwacja partii** dla wierszy sprzedaży i zamówień przeniesienia umożliwia również wybranie i zarezerwowanie wielu wierszy na podstawie dostępnych numerów partii. Aby uzyskać więcej informacji na temat czynności, które należy wykonać w przypadku korzystania z hierarchii rezerwacji z wymiarem numeru partii poniżej lokalizacji, należy zapoznać się z tematem [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](../warehousing/flexible-warehouse-level-dimension-reservation.md).

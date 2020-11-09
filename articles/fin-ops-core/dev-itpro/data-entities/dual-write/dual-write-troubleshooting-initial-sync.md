@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443856"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997333"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Rozwiązywanie problemów podczas synchronizacji początkowej
 
@@ -37,7 +36,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Sprawdź, czy w aplikacji Finance and Operations nie występują błędy synchronizacji początkowej
 
-Po włączeniu szablonów mapowania stan map powinien być **Uruchomione**. Jeśli stan jest **Nie uruchomione**, wystąpiły błędy podczas wstępnej synchronizacji. Aby wyświetlić błędy, wybierz kartę **Szczegóły wstępnej synchronizacji** na stronie **Podwójny zapis**.
+Po włączeniu szablonów mapowania stan map powinien być **Uruchomione**. Jeśli stan jest **Nie uruchomione** , wystąpiły błędy podczas wstępnej synchronizacji. Aby wyświetlić błędy, wybierz kartę **Szczegóły wstępnej synchronizacji** na stronie **Podwójny zapis**.
 
 ![Błąd na karcie Szczegóły początkowej synchronizacji](media/initial_sync_status.png)
 
@@ -84,7 +83,7 @@ Podczas wstępnej synchronizacji może zostać wyświetlony następujący komuni
 Aby naprawić problem, należy wykonać następujące czynności.
 
 1. Zaloguj się do aplikacji Finance and Operations.
-2. Na stronie **aplikacje Azure Active Directory** usuń klienta **DtAppID**, a następnie dodaj go ponownie.
+2. Na stronie **aplikacje Azure Active Directory** usuń klienta **DtAppID** , a następnie dodaj go ponownie.
 
 ![Klient DtAppID na liście aplikacji Azure AD](media/aad_applications.png)
 
@@ -97,7 +96,7 @@ Mogą pojawić się komunikaty o błędach, jeśli którekolwiek z mapowań zawi
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-entity-mapping"></a><a id="error-vendor-map"></a>Rozwiązywanie błędów w mapowaniu encji dostawców V2-na-msdyn_vendors
 
-Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Dostawców V2** do **msdyn\_vendors**, jeśli jednostki mają istniejące rekordy z wartościami w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**. Błędy są spowodowane tym, że **InvoiceVendorAccountNumber** jest polem odwołującym się do siebie, a **PrimaryContactPersonId** jest odwołaniem cyklicznym w mapowaniu dostawcy.
+Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Dostawców V2** do **msdyn\_vendors** , jeśli jednostki mają istniejące rekordy z wartościami w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**. Błędy są spowodowane tym, że **InvoiceVendorAccountNumber** jest polem odwołującym się do siebie, a **PrimaryContactPersonId** jest odwołaniem cyklicznym w mapowaniu dostawcy.
 
 Otrzymane komunikaty o błędach będą miały następujący format:
 
@@ -108,13 +107,13 @@ Oto kilka przykładów:
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Nie znaleziono wyszukiwania: 000056. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Nie znaleziono wyszukiwania:  V24-1. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Jeśli istnieją rekordy w jednostce dostawcy mają wartości w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej.
+Jeśli istnieją rekordy w jednostce dostawcy mają wartości w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** , należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej.
 
 1. W aplikacji Finance and Operations usuń pola **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z mapowania i zapisz mapowanie.
 
     1. Przejdź na stronę mapowanie podwójnego dostępu dla **Dostawcy V2 (msdyn\_vendors)** i wybierz kartę **Mapowanie jednostek**. W lewym filtrze wybierz pozycję **Finance and Operations apps.Vendors V2**. W prawym filtrze wybierz opcję **Sales.Vendor**.
-    2. Wyszukaj **primarycontactperson**, aby odnaleźć pole źródłowe **PrimaryContactPersonId**.
-    3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
+    2. Wyszukaj **primarycontactperson** , aby odnaleźć pole źródłowe **PrimaryContactPersonId**.
+    3. Wybierz opcję **Akcje** , a następnie wybierz opcję **Usuń**.
 
         ![Usuwanie pola PrimaryContactPersonId](media/vend_selfref3.png)
 
@@ -128,7 +127,7 @@ Jeśli istnieją rekordy w jednostce dostawcy mają wartości w polach **Primary
 
     1. W obszarze roboczym **Zarządzanie danymi** wybierz kafelek **Jednostki danych**.
     2. Wybierz jednostkę **Dostawcy V2**.
-    3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
+    3. W okienku akcji wybierz opcję **Opcje** , a następnie wybierz opcję **Śledzenie zmian**.
 
         ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
 
@@ -144,7 +143,7 @@ Jeśli istnieją rekordy w jednostce dostawcy mają wartości w polach **Primary
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-entity-mapping"></a><a id="error-customer-map"></a>Rozwiąż błędy w mapowaniu jednostki Klienci V3-do-Kont
 
-Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Klienci V3** do **Kont**, jeśli jednostki mają istniejące rekordy z wartościami w polach **ContactPersonID** i **InvoiceAccount**. Te błędy są spowodowane tym, że **InvoiceAccount** jest polem odwołującym się do siebie, a **ContactPersonID** jest odwołaniem cyklicznym w mapowaniu dostawcy.
+Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Klienci V3** do **Kont** , jeśli jednostki mają istniejące rekordy z wartościami w polach **ContactPersonID** i **InvoiceAccount**. Te błędy są spowodowane tym, że **InvoiceAccount** jest polem odwołującym się do siebie, a **ContactPersonID** jest odwołaniem cyklicznym w mapowaniu dostawcy.
 
 Otrzymane komunikaty o błędach będą miały następujący format:
 
@@ -155,13 +154,13 @@ Oto kilka przykładów:
 - *Nie można rozpoznać identyfikatora GUID dla pola: primarycontactid.msdyn\_contactpersonid. Nie znaleziono wyszukiwania: 000056. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_billingaccount.accountnumber. Nie znaleziono wyszukiwania: 1206-1. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Jeśli istnieją rekordy w jednostce klienta mają wartości w polach **ContactPersonID** i **InvoiceAccount**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej. Z tego podejścia można skorzystać w przypadku dowolnych z pudełkych jednostek, takich jak **Konta** i **Kontakty**.
+Jeśli istnieją rekordy w jednostce klienta mają wartości w polach **ContactPersonID** i **InvoiceAccount** , należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej. Z tego podejścia można skorzystać w przypadku dowolnych z pudełkych jednostek, takich jak **Konta** i **Kontakty**.
 
 1. W aplikacji Finance and Operations usuń pola **ContactPersonID** i **InvoiceAccount** z mapowania **Klienci V3 (konta)** i nstępnie zapisz mapowanie.
 
     1. Na stronie mapowanie podwójnego dostępu dla **Klienci V3 (konta)** i wybierz kartę **Mapowanie jednostek** . W lewym filtrze wybierz pozycję **Finance and Operations app.Customers V3**. W prawym filtrze wybierz **Common Data Service.Account**.
-    2. Wyszukaj **contactperson**, aby odnaleźć pole źródłowe **ContactPersonID**.
-    3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
+    2. Wyszukaj **contactperson** , aby odnaleźć pole źródłowe **ContactPersonID**.
+    3. Wybierz opcję **Akcje** , a następnie wybierz opcję **Usuń**.
 
         ![Usuwanie pola ContactPersonID](media/cust_selfref3.png)
 
@@ -175,7 +174,7 @@ Jeśli istnieją rekordy w jednostce klienta mają wartości w polach **ContactP
 
     1. W obszarze roboczym **Zarządzanie danymi** wybierz kafelek **Jednostki danych**.
     2. Wybierz jednostkę **Klienci V3**.
-    3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
+    3. W okienku akcji wybierz opcję **Opcje** , a następnie wybierz opcję **Śledzenie zmian**.
 
         ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
 
@@ -187,9 +186,9 @@ Jeśli istnieją rekordy w jednostce klienta mają wartości w polach **ContactP
 4. Uruchom synchronizację początkową dla mapowania **Kontaktów z CDS V2 (kontakty)**.
 
     > [!NOTE]
-    > Istnieją dwa mapy o tej samej nazwie. Pamiętaj, aby wybrać mapę, która ma następujący opis na karcie **Szczegóły**: **Szablon 2Dual-write do synchronizacji między kontaktami dostawcy FO.CDS V2 i CDS. Wymaga nowego pakietu \[Dynamics365SupplyChainExtended\].**
+    > Istnieją dwa mapy o tej samej nazwie. Pamiętaj, aby wybrać mapę, która ma następujący opis na karcie **Szczegóły** : **Szablon 2Dual-write do synchronizacji między kontaktami dostawcy FO.CDS V2 i CDS. Wymaga nowego pakietu \[Dynamics365SupplyChainExtended\].**
 
-5. Dodaj pola **InvoiceAccount** i **ContactPersonId** z powrotem do mapowania **Klienci V3 (Konta)** i nastepnie zapisz mapowanie. Teraz zarówno pole **InvoiceAccount**, jak i pole **ContactPersonId** są ponownie częścią trybu synchronizacji na żywo. W następnym kroku wykonasz synchronizację początkową dla tych pól.
+5. Dodaj pola **InvoiceAccount** i **ContactPersonId** z powrotem do mapowania **Klienci V3 (Konta)** i nastepnie zapisz mapowanie. Teraz zarówno pole **InvoiceAccount** , jak i pole **ContactPersonId** są ponownie częścią trybu synchronizacji na żywo. W następnym kroku wykonasz synchronizację początkową dla tych pól.
 6. Uruchom ponownie synchronizację początkową dla mapowania **Klienci V3 (Konta)**. Ponieważ śledzenie zmian jest wyłączone, dae dla **InvoiceAccount** i **ContactPersonId** będą zsynchronizowane z aplikacji Finance and Operations do Common Data Service.
 7. Aby synchronizować dane dla **InvoiceAccount** i **ContactPersonId** z Common Data Service do aplikacji Finance and Operations, należy skorzystać z projektu integracji danych.
 
@@ -203,7 +202,7 @@ Jeśli istnieją rekordy w jednostce klienta mają wartości w polach **ContactP
 
         > [UWAGA] Jeśli przycisk filtru nie istnieje, utwórz bilet pomocy technicznej, aby poprosić zespół integracji danych o umożliwienie obsługi filtru w dzierżawie.
 
-        Jeśli kwerenda filtru nie zostanie wprowadzona dla **\_msdyn\_company\_value**, wszystkie rekordy zostaną zsynchronizowane.
+        Jeśli kwerenda filtru nie zostanie wprowadzona dla **\_msdyn\_company\_value** , wszystkie rekordy zostaną zsynchronizowane.
 
         ![Dodawanie kwerendy filtru](media/cust_selfref7.png)
 

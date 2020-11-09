@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSRFMenuItem
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12f1c405566561661fe7c13db5bfca70114b1618
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988353"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016201"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -38,13 +38,13 @@ W tym temacie opisano sposób konfigurowania elementów menu, których pracownic
 - Tworzenie pracy, która zostanie wykonana za pomocą innego procesu. Na przykład przyjęcie towaru dla zamówienia zakupu może tworzyć pracę odkładania dla innego pracownika.
 - Wykonywanie pracy, która została utworzona przez inny proces (istniejącej pracy), np. pracy odłożenia, która została utworzona podczas odbierania towarów dla zamówienia zakupu.
 
-Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania**, umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca**, a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. 
+Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu **Tryb** wartość **Pośredni**. Zostanie wtedy udostępniona lista opcji **Kod działania** , umożliwiając wybranie typu zapytania lub działania, którego dotyczy element menu. Aby utworzyć element menu do generowania pracy magazynu, należy ustawić w polu **Tryb** wartość **Praca**. Zostanie wyświetlona lista opcji **Proces tworzenia pracy**. Aby utworzyć element menu do przetwarzania istniejącej pracy magazynu, należy ustawić pole **Tryb** na **Praca** , a następnie ustawić opcję **Użyj istniejącej pracy** na **Tak**. 
 
 > [!NOTE]
 > W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym temacie.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
-Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
+Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni** , można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 | Opcja | Opis |
 |---|---|
@@ -55,7 +55,7 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Zapytanie o numer identyfikacyjny | Służy do wyświetlania ilości towarów dla numeru identyfikacyjnego oraz lokalizacji numeru identyfikacyjnego. |
 | Rozpocznij zlecenie produkcyjne | Służy do uruchamiania zlecenia produkcyjnego. |
 | Odpadki produkcji | Służy do wprowadzania ilości odpadków powstałych podczas produkcji dla poszczególnych wierszy listy składowej (BOM). |
-| Produkcja ostatniej palety | Wskazuje, że został została wyprodukowana ostatnia paleta towarów dla zlecenia produkcyjnego i należy zaktualizować stanu zlecenia produkcyjnego do **zgłoszonego jako zakończone**. Stan surowców, które nie zostały zużyte podczas procesu produkcyjnego zostanie przywrócony z **Pobrane** do **Zamówione**, a towary mogą być zwracane do magazynu. |
+| Produkcja ostatniej palety | Wskazuje, że został została wyprodukowana ostatnia paleta towarów dla zlecenia produkcyjnego i należy zaktualizować stanu zlecenia produkcyjnego do **zgłoszonego jako zakończone**. Stan surowców, które nie zostały zużyte podczas procesu produkcyjnego zostanie przywrócony z **Pobrane** do **Zamówione** , a towary mogą być zwracane do magazynu. |
 | Zapytanie o pozycję | Służy do skanowania towarów w celu określenia ich miejsca w magazynie. Zapytanie zwraca wszystkie lokalizacje i ilości skanowanego towaru. |
 | Ponownie drukuj etykietę | Służy do ponownego drukowania numerów identyfikacyjnych. |
 | Kompilacja numerów identyfikacyjnych | Służy do tworzenia nadrzędnego numeru identyfikacyjnego przez łączenie wielu numerów identyfikacyjnych w tej samej lokalizacji. Ta opcja przydaje się, jeśli przenosisz wiele numerów identyfikacyjnych jednocześnie. Po przeniesieniu nadrzędnego numeru identyfikacyjnego musisz podzielić numer identyfikacyjny zanim będzie można podjąć z niego towary. <p></p>**Wskazówka:** Aby przenieść nadrzędny numer identyfikacyjny, musisz użyć urządzenia przenośnego, które jest skonfigurowane do tworzenia pracy przenoszenia. |
@@ -64,8 +64,8 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Wyewidencjonowanie kierowcy | Umożliwia rejestrowanie dotrzymania terminu przez kierowcę. |
 | Pamięć podręczna usuwania sekwencji numerów | Usuń cyfry sekwencji numerów z pamięci podręcznej sekwencji numerów. To działanie jest zwykle wykonywane przez administratora systemu, aby rozwiązać problemy podczas korzystania z urządzeń przenośnych. |
 | Zmień dyspozycję partii | Umożliwia zezwolenie pracownikom na określenie kodu dyspozycji partii dla towaru i partii. Wybranie tej opcji spowoduje zaktualizowanie kodu dyspozycji określony dla danej partii. |
-| Wyświetl listę otwartych prac | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę**, który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy.|
-| Utwórz zamówienie przeniesienia z numery identyfikacyjnego | Umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji magazynowej. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](create-transfer-order-from-warehouse-app.md)
+| Wyświetl listę otwartych prac | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę** , który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy.|
+| Utwórz zamówienie przeniesienia z numery identyfikacyjnego | Umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji magazynowej. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji. Gdy pracownik magazynu wybierze **Zakończ zamówienie** , zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu

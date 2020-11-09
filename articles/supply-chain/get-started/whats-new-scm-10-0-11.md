@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fa67cdc7ad07c1384c4a0bad453447a464adf144
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 52090645b0bb00399a88926c0b48a3cee8fcd114
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652090"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012305"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.11 (lipiec 2020)
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.11. Ta wersja ma numer kompilacji 10.0.464 i jest dostępna w następujący sposób:
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.11. Ta wersja ma numer kompilacji 10.0.464 i jest dostępna w następujący sposób:
 
 - **Wersja podglądu:** kwiecień 2020
 - **Dostępność ogólna (Samoaktualizacja):** maj 2020
@@ -39,10 +39,15 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 - [Magazyn raportu dostępnych zapasów](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+
 - [Numer identyfikacyjny odbieranający ulepszenia dla aplikacji magazynu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+
 - [Ulepszenia rezerwacji wierszy dla formularza rezerwacji numeru partii](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Aby uzyskać więcej informacji, zobacz [Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży](../sales-marketing/reserve-same-batch-sales-order.md).
+
 - [Nowe jednostki danych dla obszaru produkcji](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Przyjęcie nadmiernej ilości ładunku](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Aby uzyskać więcej informacji, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](../warehousing/inbound-load-handling.md).
+
 - [Zgłoszenie wyrobów gotowych w numerach partii na podstawie karty zadań urządzenia](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - Aby uzyskać więcej informacji, zobacz [Zgłoszenie jako gotowe z poziomu urządzenia karty działań](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

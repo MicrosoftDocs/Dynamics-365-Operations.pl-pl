@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
+ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
-ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
+ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830756"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018728"
 ---
 # <a name="purchasing-policies-overview"></a>Omówienie zasad zakupów
 
@@ -33,7 +33,7 @@ Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór r
 
 Zasady zakupów składają się z zestawu reguł. Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły. Następnie reguła jest tworzona dla tego typu reguły przez określenie ustawień, daty początkowej i daty końcowej dla reguły.  
 
-Na przykład, administrator tworzy zasadę, wybiera typ reguły **Reguła katalogu**, a następnie dodaje regułę katalogu do zasady. Ta reguła katalogu określa, że do zaopatrzenia wewnętrznego musi być używany katalog Adventure. Po skojarzeniu zasady zakupów z daną organizacją, pracownicy tej organizacji widzą katalog Adventure podczas tworzenia zapotrzebowania.
+Na przykład, administrator tworzy zasadę, wybiera typ reguły **Reguła katalogu** , a następnie dodaje regułę katalogu do zasady. Ta reguła katalogu określa, że do zaopatrzenia wewnętrznego musi być używany katalog Adventure. Po skojarzeniu zasady zakupów z daną organizacją, pracownicy tej organizacji widzą katalog Adventure podczas tworzenia zapotrzebowania.
 
 ## <a name="assigning-policies-to-organizations"></a>Przypisywanie zasad do organizacji
 Przed wejściem w życie zasady trzeba skojarzyć ją z organizacją. Zasady zakupów są kojarzone z hierarchią celów **Wewnętrzna kontrola zaopatrzenia**. Dlatego zasady zakupów dotyczą tylko organizacji w hierarchiach z celem hierarchii **Wewnętrzna kontrola zaopatrzenia**. Można też wybrać organizacje z prostej listy podmiotów prawnych w tabeli CompanyInfo. Te podmioty prawne są określone w ramach zasad jako „Firmy”.
@@ -81,9 +81,9 @@ Reguła dotycząca katalogów określa, który katalog zaopatrzenia widzi użytk
 
 Reguła dostępu do kategorii określa kategorie, do których mają dostęp użytkownicy podczas tworzenia zapotrzebowania na zakup. Jeśli nie określono żadnych reguł, użytkownicy mogą dodawać do zapotrzebowania na zakup wszystkie kategorie zaopatrzenia.
 
-1.  Zaznacz opcję **Uwzględnij regułę nadrzędną**, aby zastosować reguły dostępu do kategorii nadrzędnej organizacji kategorii.
+1.  Zaznacz opcję **Uwzględnij regułę nadrzędną** , aby zastosować reguły dostępu do kategorii nadrzędnej organizacji kategorii.
 2.  W okienku **Dostępne kategorie** wybierz kategorie, dla których obowiązuje reguła. Po wybraniu kategorii, wszystkie kategorie, które są wyżej w hierarchii, są również dodawane do listy **Wybrane kategorie**.
-3.  Zaznacz opcję **Uwzględnij podkategorie**, aby zastosować regułę do wszystkich podkategorii w wybranej kategorii.
+3.  Zaznacz opcję **Uwzględnij podkategorie** , aby zastosować regułę do wszystkich podkategorii w wybranej kategorii.
 
 ### <a name="category-policy-rule"></a>Reguła kategorii
 
@@ -130,10 +130,10 @@ Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, kt
     -   **Tylko w przypadku braku umowy handlowej** — ceny i rabaty są przenoszone z zapotrzebowania na zakup, tylko jeśli nie ma odpowiedniej umowy handlowej lub ceny bazowej. Jeśli istnieje umowa handlowa lub cena bazowa dla dostawcy lub towaru, ceny i rabaty są obliczane ponownie w oparciu o umowę handlową lub cenę bazową i stosowane do zamówienia zakupu. Jeśli nie określono inaczej, jest to działanie domyślne.
     -   **Zawsze** — ceny i rabaty zawsze są przenoszone z zapotrzebowania na zakup.
 
-    Można również zezwalać zleceniodawcy na zmianę metody przeniesienia ceny i rabatu dla poszczególnych wierszy zapotrzebowania na zakup, niezależnie od reguły przeniesienia ceny/rabatu, która jest zdefiniowana. Zaznacz opcję **Zezwalaj na zastępowanie ręczne w wierszu zapotrzebowania zakupu**, jeśli chcesz włączyć tę możliwość.
+    Można również zezwalać zleceniodawcy na zmianę metody przeniesienia ceny i rabatu dla poszczególnych wierszy zapotrzebowania na zakup, niezależnie od reguły przeniesienia ceny/rabatu, która jest zdefiniowana. Zaznacz opcję **Zezwalaj na zastępowanie ręczne w wierszu zapotrzebowania zakupu** , jeśli chcesz włączyć tę możliwość.
 -   Na karcie **Przeniesienie opisu pozycji** można przenosić opis towaru z zapotrzebowania, jeśli pochodzi z ZO.
 -   Na karcie **Rozbieżność cenowa** można określić reguły kierowania zatwierdzonego zapotrzebowania na zakup z powrotem przez proces przeglądu, gdy zwiększa się cena towaru w katalogu zaopatrzenia. Ustaw maksymalną kwotę, o jaką może zwiększyć się kwota netto w wierszu towaru w wierszu zapotrzebowania na zakup od zatwierdzenia zapotrzebowania na zakup do utworzenia zamówienia zakupu. Kwota netto jest obliczana przy użyciu następującej formuły: (\[ilość x (cena jednostkowa – rabat) / jednostka cenowa\] + pozostałe koszty zakupu) x (100 – procent rabatu) / 100 wierszy zapotrzebowania na zakup, które przekraczają ustawioną rozbieżność cenową i są przetwarzane ręcznie. Reguły konfigurowane na karcie **Przetwarzanie błędów** określają sposób przetwarzania wierszy zapotrzebowania na zakup.
--   Na karcie **Przetwarzanie błędów**można skonfigurować regułę przetwarzania, która jest stosowana do zapotrzebowania na zakup, jeśli nie powiedzie się sprawdzanie jego poprawności podczas tworzenia zamówienia zakupu z powodu błędu rozbieżności cenowych lub błędu dostawcy. Umożliwia wybranie jednej z następujących opcji:
+-   Na karcie **Przetwarzanie błędów** można skonfigurować regułę przetwarzania, która jest stosowana do zapotrzebowania na zakup, jeśli nie powiedzie się sprawdzanie jego poprawności podczas tworzenia zamówienia zakupu z powodu błędu rozbieżności cenowych lub błędu dostawcy. Umożliwia wybranie jednej z następujących opcji:
     -   **Brak akcji** — wiersze zapotrzebowania na zakup pozostają na stronie **Zwolnij zatwierdzone zapotrzebowania na zakup**. Stan zapotrzebowania zakupu nadal ma wartość **Zatwierdzone**. Jednak błędy muszą być najpierw uzgodnione, aby było możliwe generowanie zamówienia zakupu dla wierszy zapotrzebowania na zakup.
     -   **Anuluj wiersz zapotrzebowania na zakup** — wiersze zapotrzebowania na zakup są anulowane. W razie potrzeby zleceniodawca może tworzyć nowe zapotrzebowanie na zakup dla anulowanych wierszy.
     -   **Utwórz nowy wiersz zapotrzebowania na zakup** — wiersze zapotrzebowania na zakup są anulowane. Następnie są tworzone nowe zapotrzebowania na zakup, które zawierają wyłącznie wiersze zapotrzebowania na zakup, które nie przeszły weryfikacji. Nowo tworzone wiersze zapotrzebowania na zakup mają stan **Wersja robocza**. Te zapotrzebowania na zakup można ponownie przesłać do przeglądu po rozwiązaniu błędów weryfikacji. Wystawca zostanie powiadomiony o anulowaniu wierszy zapotrzebowania na zakup oraz utworzeniu nowych wierszy zapotrzebowań dla wierszy, które nie przeszły weryfikacji.
@@ -142,10 +142,10 @@ Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, kt
     -   **Automatyczne tworzenie zamówień zakupu** — automatyczne tworzenie zamówień zakupu dla wszystkich zatwierdzonych zapotrzebowań na zakup. Brak zapotrzebowań na zakup przeznaczonych do ręcznego tworzenia zamówień zakupu.
     -   **Automatycznie utwórz zamówienia zakupu, chyba że spełniają te warunki** – ręczne tworzenie zamówień zakupu dla zapotrzebowań na zakup, które spełniają kryteria zdefiniowane przez użytkownika. Wszystkie inne zapotrzebowania na zakup, które zostały zatwierdzone są automatycznie konwertowane na zamówienia zakupu. W przypadku wybrania opcji **Automatycznie utwórz zamówienia zakupu, chyba że spełniają te warunki** możesz dodawać dostawców i kategorie zaopatrzenia, aby określić zatwierdzone wiersze zapotrzebowania na zakup przeznaczone do ręcznego przetwarzania. Tę opcję można zastosować do towarów z katalogu wewnętrznego, towarów z katalogu zewnętrznego i towarów spoza katalogu. Po wybraniu kategorii zaopatrzenia wszelkie podkategorie dla tej kategorii zaopatrzenia są także wybierane. Wybór opcji **Wszystkie** spowoduje, że wszystkie wiersze zapotrzebowania na zakup określonego typu wiersza będą przetwarzane ręcznie.
 
-    Aby automatycznie tworzyć zamówienia zakupu na podstawie zatwierdzonych zapotrzebowań na zakup za pomocą zadania wsadowego generowania zamówień zakupu, zaznacz opcję **Uruchom automatyczne tworzenie zamówienia zakupu jako zadanie wsadowe**. Ta opcja dotyczy tylko do zapotrzebowań na zakup, które nie wymagają ręcznego przetwarzania. Można zaplanować, aby uruchomienie automatycznego generowania zamówień zakupu jako zadanie wsadowe nastąpiło, gdy zasoby będą mniej ograniczone. W przypadku wybrania opcji **Wymagana zaliczka** w wierszach zapotrzebowania na zakup zaznacz opcję **Kiedy zapotrzebowanie jest skonfigurowane do zaliczki**, jeśli chcesz zatrzymywać zatwierdzone zapotrzebowania na zakup do ręcznego przetwarzania. Zapotrzebowania na zakup zatrzymane do ręcznego przetwarzania można filtrować, dzięki czemu można wyświetlić tylko te wiersze zapotrzebowania na zakup, które wymagają przedpłaty.
+    Aby automatycznie tworzyć zamówienia zakupu na podstawie zatwierdzonych zapotrzebowań na zakup za pomocą zadania wsadowego generowania zamówień zakupu, zaznacz opcję **Uruchom automatyczne tworzenie zamówienia zakupu jako zadanie wsadowe**. Ta opcja dotyczy tylko do zapotrzebowań na zakup, które nie wymagają ręcznego przetwarzania. Można zaplanować, aby uruchomienie automatycznego generowania zamówień zakupu jako zadanie wsadowe nastąpiło, gdy zasoby będą mniej ograniczone. W przypadku wybrania opcji **Wymagana zaliczka** w wierszach zapotrzebowania na zakup zaznacz opcję **Kiedy zapotrzebowanie jest skonfigurowane do zaliczki** , jeśli chcesz zatrzymywać zatwierdzone zapotrzebowania na zakup do ręcznego przetwarzania. Zapotrzebowania na zakup zatrzymane do ręcznego przetwarzania można filtrować, dzięki czemu można wyświetlić tylko te wiersze zapotrzebowania na zakup, które wymagają przedpłaty.
 -   Na karcie **Konsolidacja popytu** można zdefiniować parametry, które określają, czy zapotrzebowania na zakup przetwarzane ręcznie mogą być uwzględniane w konsolidacji zapotrzebowania na zakup. Parametry można zastosować do towarów z katalogu wewnętrznego, towarów z katalogu zewnętrznego lub towarów spoza katalogu. Umożliwia wybranie jednej z następujących opcji:
     -   **Nie zezwalaj na konsolidację popytu** — brak zatwierdzonych wierszy zapotrzebowania na zakup kwalifikujących się do konsolidacji popytu. Ta opcja jest domyślnie zaznaczona i ma zastosowanie tylko do wierszy zapotrzebowania na zakup, które wymagają ręcznego przetwarzania do tworzenia zamówienia zakupu.
-    -   **Zawsze zezwalaj na konsolidację popytu** — wszystkie zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. **Uwaga:** jeśli wybierzesz opcję **Zawsze zezwalaj na konsolidację popytu** na karcie **konsolidacji popytu**, ale zaznaczysz **Automatyczne tworzenie zamówień zakupu** na karcie **Ręczne tworzenie zamówienia zakupu**, wszystkie zapotrzebowania na zakup będą zatrzymane do ręcznego przetwarzania.
+    -   **Zawsze zezwalaj na konsolidację popytu** — wszystkie zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. **Uwaga:** jeśli wybierzesz opcję **Zawsze zezwalaj na konsolidację popytu** na karcie **konsolidacji popytu** , ale zaznaczysz **Automatyczne tworzenie zamówień zakupu** na karcie **Ręczne tworzenie zamówienia zakupu** , wszystkie zapotrzebowania na zakup będą zatrzymane do ręcznego przetwarzania.
     -   **Zezwalaj na konsolidację popytu pod tymi warunkami** — służy do definiowania kryteriów, które określają, czy zatwierdzone wiersze zapotrzebowania na zakup kwalifikują się do konsolidacji popytu. Dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu opcji **Zezwalaj na konsolidację popytu pod tymi warunkami** dla każdego typu wiersza zapotrzebowania na zakup można określić kryteria według dostawcy i kategorii zaopatrzenia. Po wybraniu kategorii zaopatrzenia wszelkie podkategorie dla tej kategorii zaopatrzenia są także wybierane. W przypadku wybrania opcji **Wszystkie** dla określonego typu wiersza wszystkie wiersze tego typu kwalifikują się do konsolidacji popytu.
 
 

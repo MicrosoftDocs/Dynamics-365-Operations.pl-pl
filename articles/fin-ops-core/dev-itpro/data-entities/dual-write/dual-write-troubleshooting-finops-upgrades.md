@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275471"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997925"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Rozwiązywanie problemów związanych z aktualizacjami aplikacji Finance and Operations
 
@@ -54,11 +53,11 @@ Aby naprawić problem, należy wykonać następujące czynności.
 1. Zaloguj się do maszyny wirtualnej (VM) aplikacji Finance and Operations.
 2. Otwórz Visual Studio jako administrator, a następnie otwórz drzewo obiektów aplikacji (AOT).
 3. Wyszukaj **DualWriteProjectConfiguration**.
-4. W drzewie obiektów aplikacji kliknij prawym przyciskiem myszy **DualWriteProjectConfiguration**, a następnie wybierz polecenie **Dodaj do nowego projektu**. Wybierz **OK**, aby utworzyć nowy projekt, w którym są używane opcje domyślne.
+4. W drzewie obiektów aplikacji kliknij prawym przyciskiem myszy **DualWriteProjectConfiguration** , a następnie wybierz polecenie **Dodaj do nowego projektu**. Wybierz **OK** , aby utworzyć nowy projekt, w którym są używane opcje domyślne.
 5. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy opcję **Właściwości projektu** i określ **Synchronizację bazy danych w przypadku kompilacji** na wartość **Prawda**.
 6. Skompiluj projekt i upewnij się, że kompilacja zakończyła się pomyślnie.
 7. W menu **Dynamics 365** wybierz polecenie **Synchronizuj bazę danych**.
-8. Wybierz opcję **Synchronizuj**, aby przeprowadzić pełną synchronizację bazy danych.
+8. Wybierz opcję **Synchronizuj** , aby przeprowadzić pełną synchronizację bazy danych.
 9. Po pomyślnym zakończeniu pełnej synchronizacji bazy danych należy ponownie uruchomić krok synchronizacji bazy danych w Microsoft Dynamics Lifecycle Services (usługi LCS) i w razie potrzeby zastosować skrypty uaktualniania ręcznego, aby umożliwić kontynuowanie aktualizacji.
 
 ## <a name="missing-entity-fields-issue-on-maps"></a>Problem braku pól jednostki dla map
@@ -67,17 +66,17 @@ Aby naprawić problem, należy wykonać następujące czynności.
 
 Na stronie **Podwójny zapis** może zostać wyświetlony komunikat o błędzie podobny do następującego przykładu:
 
-*Brak pola źródłowego \<nazwa pola\> w schemacie.*
+*Brak pola źródłowego nazwa pola \<field name\> w schemacie.*
 
 ![Przykład komunikatu o błędzie braku pola źródłowego](media/error_missing_field.png)
 
 Aby rozwiązać ten problem, najpierw postępuj zgodnie z tymi krokami, aby upewnić się, że pola znajdują się w jednostce.
 
 1. Zaloguj się do maszyny wirtualnej aplikacji Finance and Operations.
-2. Przejdź do **Obszary robocze \> Zarządzanie danymi**, wybierz kafelek **Parametry struktury**, a następnie na karcie **Ustawienia jednostki** wybierz opcję **Odśwież listę jednostek**, aby odświeżyć jednostki.
-3. Przejdź do **Obszary robocze \> Zarządzanie danymi**,wybierz kartę **Jednostki danych** i upewnij się, że jednostka jest uwzględniona na liście. Jeśli jednostka nie jest wymieniona na liście, zaloguj się do maszyny wirtualnej aplikacji Finance and Operations i upewnij się, że jednostka jest dostępna.
+2. Przejdź do **Obszary robocze \> Zarządzanie danymi** , wybierz kafelek **Parametry struktury** , a następnie na karcie **Ustawienia jednostki** wybierz opcję **Odśwież listę jednostek** , aby odświeżyć jednostki.
+3. Przejdź do **Obszary robocze \> Zarządzanie danymi** ,wybierz kartę **Jednostki danych** i upewnij się, że jednostka jest uwzględniona na liście. Jeśli jednostka nie jest wymieniona na liście, zaloguj się do maszyny wirtualnej aplikacji Finance and Operations i upewnij się, że jednostka jest dostępna.
 4. Otwórz stronę **Mapowania jednostki** ze strony **Podwójny zapis** w aplikacji Finance and Operations.
-5. Wybierz opcję **Odśwież listę jednostek**, aby automatycznie wypełnić pola w mapowaniach jednostek.
+5. Wybierz opcję **Odśwież listę jednostek** , aby automatycznie wypełnić pola w mapowaniach jednostek.
 
 Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
 
@@ -88,5 +87,5 @@ Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
 2. Znajdź jednostkę, w której brakuje atrybutu. Kliknij przycisk **Modyfikuj mapowanie** obiektów docelowych na pasku narzędzi.
 3. W okienku **Mapuj dane tymczasowe do celu** kliknij opcję **Generuj mapowanie**.
 4. Otwórz stronę **Mapowania jednostki** ze strony **Podwójny zapis** w aplikacji Finance and Operations.
-5. Jeśli atrybut nie został automatycznie wypełniony na mapie, dodaj go ręcznie, klikając przycisk **Dodaj atrybut**, a następnie klikając przycisk **Zapisz**. 
+5. Jeśli atrybut nie został automatycznie wypełniony na mapie, dodaj go ręcznie, klikając przycisk **Dodaj atrybut** , a następnie klikając przycisk **Zapisz**. 
 6. Wybierz mapę i kliknij przycisk **Uruchom**.

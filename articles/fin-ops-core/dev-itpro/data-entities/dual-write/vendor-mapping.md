@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 8d531ed4e46d8ee5d2b0937b6efc480e051fe708
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173115"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997655"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
@@ -32,7 +31,7 @@ ms.locfileid: "3173115"
 
 
 
-Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach opartych na modelach w Dynamics 365. Można jednak przeciążyć jednostkę **Konta/kontaktu**, aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza jawną koncepcję dostawcy w aplikacjach opartych na modelach w Dynamics 365. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w jednostce **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
+Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach opartych na modelach w Dynamics 365. Można jednak przeciążyć jednostkę **Konta/kontaktu** , aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza jawną koncepcję dostawcy w aplikacjach opartych na modelach w Dynamics 365. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w jednostce **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
 
 W obu przypadkach dane dostawcy są zintegrowane między Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service i portalami Power Apps. W Supply Chain Management dane są dostępne dla przepływów pracy, takich jak zapotrzebowania zakupu i zamówienia zakupu.
 
@@ -42,7 +41,7 @@ Jeśli nie chcesz przechowywać danych dostawcy w jednostce **Konto/kontakt** w 
 
 ![Przepływ danych dostawcy](media/dual-write-vendor-data-flow.png)
 
-Jeśli chcesz dalej przechowywać dane dostawcy w jednostce **Konto/kontakt**, możesz użyć rozszerzonego projektu dostawcy. Aby skorzystać z rozszerzonego projektu dostawcy, należy skonfigurować przepływy pracy dostawcy w pakiecie rozwiązania podwójnego zapisywania. Aby uzyskać więcej informacji, zajrzyj do [Przełączanie się między projektami dostawcy](vendor-switch.md).
+Jeśli chcesz dalej przechowywać dane dostawcy w jednostce **Konto/kontakt** , możesz użyć rozszerzonego projektu dostawcy. Aby skorzystać z rozszerzonego projektu dostawcy, należy skonfigurować przepływy pracy dostawcy w pakiecie rozwiązania podwójnego zapisywania. Aby uzyskać więcej informacji, zajrzyj do [Przełączanie się między projektami dostawcy](vendor-switch.md).
 
 ![Rozszerzony przepływ danych dostawcy](media/dual-write-vendor-detail.jpg)
 

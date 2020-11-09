@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 56a3a838374bb1cd0f4b839124ada7114205c1e7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597295"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017144"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
 
@@ -68,36 +69,36 @@ Dane demonstracyjne wymagają ustawień i korekt zapasów, które umożliwiają 
 1. Wybierz opcję **Zapisz**.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Dyrektywy lokalizacji**.
 1. Z listy dyrektyw lokalizacji wybierz pozycję **63 Pobieranie konteneryzacji**.
-1. Wybierz opcję **Edytuj**, aby umieścić stronę w trybie edycji.
+1. Wybierz opcję **Edytuj** , aby umieścić stronę w trybie edycji.
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** znajdź wiersz, gdzie pole **Identyfikator sekwencyjny** jest ustawione na *1* i wykonaj jeden z następujących kroków:
 
     - Jeśli konfigurujesz scenariusz FIFO, zmień wartość pola **Strategii** na *Wiekowanie lokalizacji FIFO*.
     - Jeśli konfigurujesz scenariusz LIFO, zmień wartość pola **Strategii** na *Wiekowanie lokalizacji LIFO*.
 
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz pozycję **Edytuj kwerendę**.
-1. W oknie dialogowym kwerenda, na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz, a następnie określ następujące wartości:
+1. W oknie dialogowym kwerenda, na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz, a następnie określ następujące wartości:
 
     - **Tabela:** *Lokalizacje*
     - **Tabela pochodna:** *Lokalizacje*
     - **Pole:** *Identyfikator strefy*
     - **Kryteria:** *Piętro*
 
-1. Wybierz przycisk **OK**, aby zastosować ustawienia i zamknąć okienko dialogowe zapytania.
-1. Wybierz **Zapisz**, by zapisać zmiany w dyrektywie lokalizacji.
+1. Wybierz przycisk **OK** , aby zastosować ustawienia i zamknąć okienko dialogowe zapytania.
+1. Wybierz **Zapisz** , by zapisać zmiany w dyrektywie lokalizacji.
 1. Na urządzeniu przenośnym lub w aplikacji *Dynamics 365 for Finance and Operations - Warehousing* na komputerze należy wykonać następujące kroki, aby usunąć istniejące zapasy z lokalizacji w magazynie w celu ich obsługi:
 
-    1. Zaloguj się do magazynu *63*, używając odpowiedniego identyfikatora użytkownika i hasła.
+    1. Zaloguj się do magazynu *63* , używając odpowiedniego identyfikatora użytkownika i hasła.
     1. W menu głównym wybierz opcję **Jakość**.
     1. W menu **Zarządzanie jakością** wybierz **Odpadki**.
-    1. Na stronie **Odpadki** zaznacz pole **LOC/LP**, a następnie wprowadź *63\_1*.
+    1. Na stronie **Odpadki** zaznacz pole **LOC/LP** , a następnie wprowadź *63\_1*.
     1. Wybierz **Enter** lub **OK**.
-    1. Potwierdź szczegóły **Odpadki** dla **Korekty**, wybierając **Enter** lub **OK**.
+    1. Potwierdź szczegóły **Odpadki** dla **Korekty** , wybierając **Enter** lub **OK**.
 
     Po skorygowaniu stanu zapasów w numerze identyfikacyjnym zostanie wyświetlony komunikat „praca wykonana”.
 
     Te kroki pozostawiają zapasy w dwóch lokalizacjach w danych demonstracyjnych. Każda lokalizacja ma inną datę wiekowania. Dla lokalizacji *FL-001* data wiekowania wynosi 15 kwietnia 2017, a lokalizacja *FL-002* ma datę wiekowania 29 stycznia 2017. W obu lokalizacjach znajdują się elementy *A0001*.
 
-    Aby wyświetlić te dane, przejdź do **Zarządzanie zapasami \> Zapytania i raporty \> Lista dostępnych**, a następnie filtruj w magazynie *63* pozycję *A0001*. W wierszach, w których pole **Lokalizacja** jest ustawione na *FL-001* lub *FL-002*, wybierz wiersz mający dodatnią wartość **Zapasów fizycznych**, a następnie w okienku akcji wybierz opcję **Transakcje**. W polu **Data fizyczna** zostanie wyświetlona data odpowiadająca jednej z wyżej wymienionych dat wiekowania.
+    Aby wyświetlić te dane, przejdź do **Zarządzanie zapasami \> Zapytania i raporty \> Lista dostępnych** , a następnie filtruj w magazynie *63* pozycję *A0001*. W wierszach, w których pole **Lokalizacja** jest ustawione na *FL-001* lub *FL-002* , wybierz wiersz mający dodatnią wartość **Zapasów fizycznych** , a następnie w okienku akcji wybierz opcję **Transakcje**. W polu **Data fizyczna** zostanie wyświetlona data odpowiadająca jednej z wyżej wymienionych dat wiekowania.
 
 ### <a name="scenario-1-set-up-and-use-fifo-location-aging"></a><a name="fifo-demo"></a>Scenariusz 1: Konfigurowanie i używanie przedawnienia lokalizacji FIFO
 
@@ -108,34 +109,34 @@ Strategia FIFO znajduje lokalizację, która zawiera najstarszą datę wiekowani
 1. Wybierz pozycję **Nowy**.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
-    - Na skróconej karcie **Odbiorca**, w polu **Konto odbiorcy**, należy ustawić wartość *US-001*.
+    - Na skróconej karcie **Odbiorca** , w polu **Konto odbiorcy** , należy ustawić wartość *US-001*.
     - Na skróconej karcie **Ogólne** w polu **Magazyn** ustaw wartość *63*.
 
-1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie zakupu.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. To zawiera pusty wiersz w siatce na skróconej karcie **Wiersze zamówienia sprzedaży**. W tym wierszu zamówienia ustaw pole **Numer pozycji** na wartość *A0001* oraz pole **Ilość** na *1*.
 1. W menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
-1. Na stronie **Rezerwacja**, wybierz opcję **Rezerwacja partii**, aby zarezerwować pełną zamówioną ilość pozycji z zapasów z wybranego magazynu.
+1. Na stronie **Rezerwacja** , wybierz opcję **Rezerwacja partii** , aby zarezerwować pełną zamówioną ilość pozycji z zapasów z wybranego magazynu.
 1. Zamknij stronę **Rezerwacja**.
 1. Na stronie **Zamówienie sprzedaży** w okienku akcji na karcie **Magazyn** wybierz grupę **Akcje** i wybierz **Zwolnij do magazynu**. Zostanie wyświetlony komunikat. System tworzy wysyłkę, dodaje ją do nowego ładunku i tworzy wymaganą pracę.
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Magazyn** wybierz opcję **Szczegóły pracy**, aby otworzyć pracę utworzoną dla tego zamówienia sprzedaży. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie*, wskazuje wartość **Lokalizacja** jako *FL-002*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najstarszą datę wiekowania (FIFO).
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Magazyn** wybierz opcję **Szczegóły pracy** , aby otworzyć pracę utworzoną dla tego zamówienia sprzedaży. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie* , wskazuje wartość **Lokalizacja** jako *FL-002*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najstarszą datę wiekowania (FIFO).
 1. Wybierz **Magazyn \> Szczegóły wysyłki**.
-1. Na skróconej karcie ***Ogólne** zauważ identyfikator grupy czynności, aby można było z niej skorzystać w scenariuszu 2.
+1. Na skróconej karcie * **Ogólne** zauważ identyfikator grupy czynności, aby można było z niej skorzystać w scenariuszu 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenariusz 2: Konfigurowanie i używanie przedawnienia lokalizacji LIFO
 
 Strategia LIFO znajduje lokalizację, która zawiera najnowszą datę wiekowania, oraz przydziela pobieranie na podstawie tej daty wiekowania. W scenariuszu 2 zostanie wyedytowana konfiguracja scenariusza 1 (FIFO) i ponownie użyte zamówienie sprzedaży i grupy czynności, które zostały utworzone w tym scenariuszu.
 
 1. Przed rozpoczęciem tego scenariusza należy skonfigurować i wykonać pełny scenariusz FIFO zgodnie z opisem w [poprzedniej sekcji](#fifo-demo). W tym scenariuszu będzie można ponownie użyć grupy czynności i większość ustawień utworzonych dla tego scenariusza.
-1. Edytuj dyrektywę lokalizacji **63 Pobieranie konteneryzacji**, aby była używana strategia *Wiekowania lokalizacji LIFO*, jak to opisano w pierwszej części [Konfiguracja scenariuszy](#demo-set-up).
+1. Edytuj dyrektywę lokalizacji **63 Pobieranie konteneryzacji** , aby była używana strategia *Wiekowania lokalizacji LIFO* , jak to opisano w pierwszej części [Konfiguracja scenariuszy](#demo-set-up).
 
     Następnie zostanie zmodyfikowana fala utworzona dla zamówienia sprzedaży w scenariuszu 1, dzięki czemu jest używana strategia *Wiekowania lokalizacji LIFO*.
 
 1. Przejdź do **Zarządzanie magazynem \> Wychodzące grupy czynności \> Grupy czynności wysyłki \> Wszystkie grupy czynności**.
 1. Wybierz i otwórz grupę czynności, która zawiera zamówienie utworzone dla scenariusza FIFO.
-1. W okienku akcji na karcie **Praca** wybierz opcję **Anuluj**, aby anulować pracę utworzoną dla scenariusza FIFO.
+1. W okienku akcji na karcie **Praca** wybierz opcję **Anuluj** , aby anulować pracę utworzoną dla scenariusza FIFO.
 1. W okienku akcji na karcie **Grupa czynności** w grupie **Grupa czynności** wybierz opcję **Przetwórz**.
-1. Po zakończeniu przetwarzania w okienku akcji na karcie **Grupa czynności**, w grupie **Informacje pokrewne** wybierz opcję **Praca**, aby otworzyć utworzoną pracę dla tej grupy czynności.
+1. Po zakończeniu przetwarzania w okienku akcji na karcie **Grupa czynności** , w grupie **Informacje pokrewne** wybierz opcję **Praca** , aby otworzyć utworzoną pracę dla tej grupy czynności.
 1. Na stronie **Praca** na karcie **Omówienie** powinny być dwa wiersze. Znajdź wiersz, w którym pole o nazwie **Stan pracy** ma wartość *Otwarte*.
-1. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie*, wskazuje wartość **Lokalizacja** jako *FL-001*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najnowszą datę wiekowania (LIFO).
+1. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie* , wskazuje wartość **Lokalizacja** jako *FL-001*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najnowszą datę wiekowania (LIFO).
 
 W tych scenariuszach można było zobaczyć, jak strategia wiekowania lokalizacji kieruje pracę do lokalizacji zapasów, w której znajdują się najstarsze lub najnowsze zapasy, w zależności od wybranej strategii.

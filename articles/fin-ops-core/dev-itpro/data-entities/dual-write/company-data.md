@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
-ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
+ms.openlocfilehash: 46a6ed9763781de8e05cff7adadf75fe2a931fdc
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "3728420"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997533"
 ---
 # <a name="company-concept-in-common-data-service"></a>Pojęcie firmy w usługach Common Data Service
 
@@ -33,7 +32,7 @@ ms.locfileid: "3728420"
 
 W Finance and Operations koncepcja *firmy* jest zarówno konstrukcją prawną, jak i konstrukcją biznesową. Jest to również granicą bezpieczeństwa i widoczności danych. Użytkownicy zawsze pracują w kontekście pojedynczej firmy, a większość danych jest rozłożona według firmy.
 
-Common Data Service nie ma równoważnej koncepcji. Najbliższa koncepcja jest *jednostką biznesową*, która jest przede wszystkim granicą bezpieczeństwa i widoczności danych użytkownika. Koncepcja ta nie ma takich samych konsekwencji prawnych lub biznesowych, co koncepcja firmy.
+Common Data Service nie ma równoważnej koncepcji. Najbliższa koncepcja jest *jednostką biznesową* , która jest przede wszystkim granicą bezpieczeństwa i widoczności danych użytkownika. Koncepcja ta nie ma takich samych konsekwencji prawnych lub biznesowych, co koncepcja firmy.
 
 Ponieważ jednostka biznesowa i firma nie są równoważnymi pojęciami, nie można wymusić mapowania 1:1 między nimi co celu integracji Common Data Service. Jednak ponieważ użytkownicy muszą domyślnie być w stanie widzieć te same rekordy w aplikacji i Common Data Service, firma Microsoft wprowadziła nową jednostkę w Common Data Service o nazwie cdm\_Company. Ta jednostka jest odpowiednikiem podmiotu firmy w aplikacji. Aby zagwarantować, że widoczność rekordów jest równoważna między aplikacją i Common Data Service od razu po zainstalowaniu, zaleca się następujące ustawienia dla danych Common Data Service:
 
@@ -78,11 +77,11 @@ Integracja Common Data Service powoduje wywołuje parzystość firmy za pomocą 
 
 Istnieje kilka sposobów automatycznego wypełniania nazwy firmy w aplikacjach do zakontraktowania odbiorców.
 
-+ Administrator systemu może określić domyślnie ustawioną firmę, przechodząc kolejno do sekcji **Ustawienia zaawansowane > System > Zabezpieczenia > Użytkownicy**. Otwórz formularz **Użytkownik**, a następnie w sekcji **Informacje o organizacji** określ wartość **Domyślna firma w formularzach**.
++ Administrator systemu może określić domyślnie ustawioną firmę, przechodząc kolejno do sekcji **Ustawienia zaawansowane > System > Zabezpieczenia > Użytkownicy**. Otwórz formularz **Użytkownik** , a następnie w sekcji **Informacje o organizacji** określ wartość **Domyślna firma w formularzach**.
 
     :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Ustawienie firmy jako domyślnej w sekcji Informacje o organizacji.":::
 
-+ Jeśli użytkownik ma dostęp do **Zapisu** w encji **SystemUser** na poziomie **Jednostki biznesowej**, może zmienić domyślną firmę w dowolnym formularzu, wybierając firmę z rozwijanego menu **Firma**.
++ Jeśli użytkownik ma dostęp do **Zapisu** w encji **SystemUser** na poziomie **Jednostki biznesowej** , może zmienić domyślną firmę w dowolnym formularzu, wybierając firmę z rozwijanego menu **Firma**.
 
     :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Zmiana nazwy firmy na nowym koncie":::
 
@@ -93,7 +92,7 @@ Istnieje kilka sposobów automatycznego wypełniania nazwy firmy w aplikacjach d
 + Jeśli użytkownik jest konfiguratorem systemów lub administratorem i chce automatycznie wypełniać dane firmy w formularzu niestandardowym, może używać [zdarzeń formularzy](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Dodaj odwołanie JavaScript do **msdyn_/DefaultCompany.js** i korzystaj z następujących zdarzeń. Można skorzystać z dowolnego formularza, na przykład formularza **Konto**.
 
     + Zdarzenie **OnLoad** dla formularza: należy określić pole **defaultCompany**.
-    + Zdarzenie **OnChange** dla pola **Firma**: należy określić pole **updateDefaultCompany**.
+    + Zdarzenie **OnChange** dla pola **Firma** : należy określić pole **updateDefaultCompany**.
 
 ## <a name="apply-filtering-based-on-the-company-context"></a>Zastosuj filtrowanie na podstawie kontekstu firmy
 

@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z systemu Dynamics 365 for Finance and Operations i poprzednich wydań tego produktu.
 author: sericks007
 manager: AnnBe
-ms.date: 07/31/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
-ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
+ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3645396"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040129"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -43,7 +43,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 z aktualizacją 31 platformy
 
 ### <a name="chinese-voucher-types-without-account-groups-selection"></a>Typy chińskich załączników bez opcji wyboru grupy kont
-|   |  |
+|&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zmieniono na funkcję z opcją wyboru grup kont. |
 | **Zamieniona przez inną funkcję?**   | Tak |
@@ -56,7 +56,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="dimensionhashgethashstr-_message"></a>DimensionHash.getHash(str _message)
 
-|   |  |
+|&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Użycie algorytmu SHA1 jest traktowane jako przestarzałe w systemie Windows zgodnie z opisem w temacie [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Wymuszanie certyfikatów SHA1 w systemie Windows).  |
 | **Zamieniona przez inną funkcję?**   | Tak |
@@ -66,7 +66,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(komunikat)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Użycie algorytmu SHA1 jest traktowane jako przestarzałe w systemie Windows zgodnie z opisem w temacie [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Wymuszanie certyfikatów SHA1 w systemie Windows).  |
 | **Zamieniona przez inną funkcję?**   | Tak |
@@ -77,9 +77,9 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Trwa wycofywanie metody **setUtcString ()**, ponieważ dostępna jest lepsza metoda zastępcza. |
+| **Przyczyna wycofania/usunięcia** | Trwa wycofywanie metody **setUtcString ()** , ponieważ dostępna jest lepsza metoda zastępcza. |
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Platforma |
 | **Opcja wdrażania**              | Wszystkich |
@@ -87,7 +87,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="blacklist-report-it--feature-reference-it-00001"></a>Raport zabronione (IT) — odwołanie do funkcji IT-00001
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa nie jest wymagana prawnie. |
 | **Zamieniona przez inną funkcję?**   | Nie |
@@ -97,7 +97,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Krajowy raport podatkowy - Odwołanie do funkcji IT-00003
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa nie jest wymagana prawnie. |
 | **Zamieniona przez inną funkcję?**   | Nie |
@@ -110,17 +110,20 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="us-payroll-tax-updates"></a>Aktualizacje amerykańskiego podatku od wynagrodzeń
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Wycofujemy funkcję aktualizacji amerykańskiego podatku od wynagrodzeń z powodu jej niskiego wykorzystania oraz wprowadzenia rozszerzonej funkcja, która jest teraz dostępna za pośrednictwem strategicznych integracji.  |
 | **Zamieniona przez inną funkcję?**   | Tak |
-| **Powiązane obszary produktów**         | Lista płac |
-| **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe: do 1 października 2021 planujemy wycofać funkcję aktualizacji amerykańskiego podatku od wynagrodzeń. Funkcjonalność pozostanie w produkcie, jednak ulepszenia nie będą już utrzymywać aktualności funkcjonalności, a wszelkie wady produktu będą oceniane indywidualnie dla każdego przypadku. Aby uzyskać więcej informacji, zobacz [Wycofanie funkcji aktualizacji amerykańskiego podatku od wynagrodzeń w Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+| **Powiązane obszary produktów**         | Payroll |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Przestarzałe: do 31 lipca 2024 planujemy wycofać funkcję aktualizacji amerykańskiego podatku od wynagrodzeń. Funkcjonalność pozostanie w produkcie, jednak ulepszenia nie będą już utrzymywać aktualności funkcjonalności, a wszelkie wady produktu będą oceniane indywidualnie dla każdego przypadku. |
+
+>[!NOTE]
+> Oznacza to zmianę w stosunku do pierwotnej daty zakończenia okresu obowiązywania 1 października 2021. Aby uzyskać więcej informacji, zobacz [Wycofanie funkcji aktualizacji amerykańskiego podatku od wynagrodzeń w Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq).
 
 
 ### <a name="data-management-staging-clean-up"></a>Czyszczenie przemieszczania zarządzania danych
-|   |  |
+|&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie spełnia podstawowych wymagań, które są potrzebne do planowania okresowego oczyszczania. |
 | **Zamieniona przez inną funkcję?**   | Tak, funkcja oczyszczania historii zadań jest dodawana w celu całościowego spełnienia tych scenariuszy. |
@@ -132,7 +135,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Francja: eksportowanie danych księgowych FEC w XML
 
-|   |  |
+|  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zastąpiony przez format TXT, **francuski plik audytu FEC** jest dostępny za pomocą opcji **Księga główna** \> **Zadania okresowe** \> **Eksportowanie danych**.
 | **Zamieniona przez inną funkcję?**   | Tak |
@@ -143,7 +146,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="legacy-navigation-bar"></a>Pasek nawigacji starego typu
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 24, został wprowadzony nowy pasek nawigacyjny z funkcją wyszukiwania. |
@@ -157,7 +160,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="legacy-default-action-behavior"></a>Starsze domyślne zachowanie akcji
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Starsze zachowanie dla domyślnych akcji w siatkach skutkuje tym, że nieoczekiwana kolumna ma łącze do domyślnej akcji, kiedy kolumny siatki zostaną przeorganizowane w procesie personalizacji. Nowa funkcja domyślnej akcji trwałej naprawia ten problem. Aby uzyskać więcej informacji, zobacz [Domyślne akcje trwałe w siatkach](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 21, została wprowadzona funkcja „domyślne akcje trwałe”. Ta funkcja może być włączona na stronie **opcji wydajności klienta**. |
@@ -167,7 +170,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 ### <a name="legacy-is-one-of-filtering-experience"></a>Starsza wersja "jest jednym z" opcji filtrowania
 
-|   |  |
+|&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Filtrowanie "jest jednym z" zostało zmienione w aktualizacji Platform update 22, z możliwością, że "jest jednym z" będzie jedyną opcją filtrowania. |
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji Platform update 22, ulepszone filtrowanie „jest jednym z” jest dostępne na stronie **opcji wydajności klienta**. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
@@ -178,17 +181,17 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parametr umożliwia włączenie zamówień sprzedaży z wielu źródeł finansowania umowy dotyczącej projektu
 Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycząca projektu ma wiele źródeł finansowania i została włączona za pomocą ustawienia **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** w menu **Parametry zarządzania projektem**. Ten parametr nie jest włączony domyślnie. 
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Po usunięciu tego parametru funkcja zawsze będzie włączona. |
 | **Zamieniona przez inną funkcję?**   | Nr Funkcje do obsługi zamówień sprzedaży w oparciu o projekt zawierających wiele źródeł finansowania będą zawsze włączone.   |
-| **Powiązane obszary produktów**         |Parametr **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** zostanie usunięty. Następujące metody zostaną zmodyfikowana po usunięciu parametru: **ctrlSalesOrderTable** w klasie **ProjStatusType**, **sprawdzania poprawności** w polu **ProjId** i **uruchamiania** w formularzu **SalescreateOrder**. Po usunięciu parametru zostaną wycofane następujące metody: **IsSalesOrderAllowedForMultipleFundingSources** w pliku tabeli **ProjTable**, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** w pliku tabeli **ProjTable**, pole danych **AllowSalesOrdersForMultipleFundingSources** w formularzu **ProjParameters** i pliki **ProjParameterEntity**, metoda prywatna **IsAssociatedToMultipleFundingSourcesContract** w pliku tabeli **ProjTable**. |
+| **Powiązane obszary produktów**         |Parametr **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** zostanie usunięty. Następujące metody zostaną zmodyfikowana po usunięciu parametru: **ctrlSalesOrderTable** w klasie **ProjStatusType** , **sprawdzania poprawności** w polu **ProjId** i **uruchamiania** w formularzu **SalescreateOrder**. Po usunięciu parametru zostaną wycofane następujące metody: **IsSalesOrderAllowedForMultipleFundingSources** w pliku tabeli **ProjTable** , **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** w pliku tabeli **ProjTable** , pole danych **AllowSalesOrdersForMultipleFundingSources** w formularzu **ProjParameters** i pliki **ProjParameterEntity** , metoda prywatna **IsAssociatedToMultipleFundingSourcesContract** w pliku tabeli **ProjTable**. |
 | **Opcja wdrażania**              | Wszystkich  |
 | **Stan**                         | Zakończenie obsługi jest planowane na kwiecień 2020. |
 
 ### <a name="legacy-workflow-reports-for-tracking-and-instance-status"></a>Raporty ze starszych przepływów pracy do śledzenia i identyfikacji i stanów wystąpienia
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Raporty ze starszych przepływów pracy do śledzenia i identyfikacji i stanów wystąpienia są wycofywane, pnieważ nie ma już do nich odniesień z nawigacji. Nazwy raportów to WorkflowWorkflowInstanceByStatusReport i WorkflowWorkflowTrackingReport. |
 | **Zamieniona przez inną funkcję?**   | Zamiennie można używać formularza historii przepływu pracy. |
@@ -203,7 +206,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 
 #### <a name="deriving-from-internal-classes-is-deprecated"></a>Dziedziczenie z wewnętrznych klas jest przestarzałe
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było utworzyć klasę lub tabelę, która pochodzi z wewnętrznej klasy/tabeli zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
 | **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji.|
@@ -213,7 +216,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 
 #### <a name="overriding-internal-methods-is-deprecated"></a>Zastępowanie wewnętrznych metod jest przestarzałe
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W wersjach sprzed aktualizacji platformy 25 można było zastąpić wewnętrzną metodę w klasie pochodnej zdefiniowanej w innym pakiecie/module. Nie jest to bezpieczna praktyka kodowania. Począwszy od aktualizacji platformy 25 kompilator wyświetli komunikat ostrzegawczy. |
 | **Zamieniona przez inną funkcję?**   | Ostrzeżenie zostanie zastąpione błędem kompilacji w nadchodzącej aktualizacji Platform update 26. Ta zmiana jest zgodna z poprzednimi wersjami w czasie wykonywania, co oznacza, że po uruchomieniu aktualizacji platformy 25 lub nowszej można ją wdrożyć w dowolnym środowisku piaskownicy lub produkcji, bez konieczności modyfikowania kodu niestandardowego. Ta zmiana wpływa tylko na czas projektowania i kompilacji. |
@@ -224,7 +227,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 ## <a name="finance-and-operations-1000-with-platform-update-24"></a>Finance and Operations 10.0.0 z aktualizacją platformy 24
 
 ### <a name="renaming-released-products"></a>Zmienianie nazw zwolnionych produktów 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W przypadku użycia funkcji **Zmień nazwę klucza podstawowego** w celu zmiany wartości identyfikatora towaru (ItemId) zwolnionego produktu, aktualizowane są tylko bezpośrednie odwołania do klucza obcego. Wszelkie inne odwołania do zwolnionego produktu, na przykład ze zlecenia produkcyjnego, będą zachowywały stary identyfikator towaru (ItemId). W efekcie mogą istnieć niespójne dane, które ostatecznie zablokują procesy biznesowe. |
 | **Zamieniona przez inną funkcję?**   | Nr |
@@ -238,7 +241,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 ### <a name="sql-server-reporting-services-reportviewer-control"></a>Formant SQL Server Reporting Services ReportViewer
 Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server Reporting Services (SSRS) ReportViewer w celu pobierania dokumentów wytwarzanych przez aplikacje Finance and Operations. Ta prezentacja raportu oparta na języku HTML oferuje podgląd dokumentu niedzielonego na strony.
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Podgląd HTML bez podziału na strony **nie** zapewnia dokładności takiej, jak mają fizyczne dokumenty z Finance and Operations. Dzięki wdrożeniu PDF jako standardowego formatu dla dokumentów biznesowych, użytkownicy będą mogli wykorzystać nowoczesne widoki z lepszą wydajnością podczas sporządzania raportów aplikacji. |
 | **Zamieniona przez inną funkcję?**   | W przyszłości, dokumenty PDF będą formatami domyślnymi dla reportów renderowanych przez Finance and Operations.   |
@@ -249,7 +252,7 @@ Klienci mogą używać akcji **eksportowania** wbudowanych w formant SQL Server 
 ### <a name="client-kpi-controls"></a>Formanty KPI klienta
 Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Visual Studio przez dewelopera i dodatkowo dostosowane przez użytkownika końcowego.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Natywne formanty klienta używane do zdefiniowania KPI są rzadko pobierane i od dewelopera zależy dodanie miar, które można śledzić. |
 | **Zamieniona przez inną funkcję?**   | Usługa PowerBI.com oferuje światowej klasy narzędzie do definiowania KPI i zarządzania nimi na podstawie danych z zewnętrznych źródeł.  W nowej wersji planujemy umożliwienia osadzania rozwiązań hostowanych przez PowerBI.com w aplikacjach roboczych.   |
@@ -261,9 +264,9 @@ Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Vis
 
 #### <a name="field-groups-containing-invalid-field-references"></a>Grupy pól zawierających nieprawidłowe pole odwołania
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora*, a nie *błąd*, co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
+| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora* , a nie *błąd* , co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
 | **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
@@ -277,7 +280,7 @@ Aby wyświetlić listę wszystkich interfejsów API, które zostaną wycofane, z
 ### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Reguły przetwarzania wsadowego zapisów na koncie w arkuszu księgi podrzędnej
 Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej.  Zastępują go tryby przesyłania asynchronicznego i zaplanowanych zadań wsadowych, które już istnieją jako opcje przesyłania. Aby uzyskać dodatkowe informacje, zobacz [blog Parametry księgi głównej — reguły przetwarzania wsadowego](https://community.dynamics.com/365/financeandoperations/b/financials/archive/2019/03/15/general-ledger-parameters-batch-transfer-rules).
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Opcja przesyłania synchronicznego jest usuwana ze względu na wpływ na wydajność systemu. |
 | **Zamieniona przez inną funkcję?**   | Zamiast przesyłania synchronicznego należy używać opcji przesyłania asynchronicznego i zaplanowanych zadań wsadowych.   |
@@ -288,7 +291,7 @@ Tryb przesyłania synchronicznego jest usuwany z parametrów księgi głównej. 
 ### <a name="electronic-reporting-for-russia"></a>Raportowanie elektroniczne dla Rosji
 Funkcja do konfigurowania formatów plików .txt i .xml dla deklaracji. 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zastąpiono modułem Raportowanie elektroniczne. |
 | **Zamieniona przez inną funkcję?**   | Tak. |
@@ -299,7 +302,7 @@ Funkcja do konfigurowania formatów plików .txt i .xml dla deklaracji.
 ### <a name="financial-reports-generator-for-russia"></a>Generator raportów finansowych dla Rosji
 Narzędzie do konfigurowania zbierania danych na potrzeby raportów księgowych i podatkowych i eksportowanie danych do szablonów raportów XLS i DOC. Części funkcjonalne: usunięto funkcje eksportowania danych do szablonów raportów w formatach XLS i DOC, zapytań i stałych wymagań. 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Usunięte części są zastąpione modułem Raportowanie elektroniczne. |
 | **Zamieniona przez inną funkcję?**   | Tak. Interfejs użytkownika konfigurowania raportów finansowych powinien być używany do konfigurowania reguł zbierania danych do kont KG i rejestrów podatkowych. W module Raportowanie elektroniczne należy skonfigurować funkcje eksportowania danych do różnych typów plików, stałych wymagań i reguł zbierania danych za pomocą mechanizmu przypominającego zapytania. |
@@ -310,7 +313,7 @@ Narzędzie do konfigurowania zbierania danych na potrzeby raportów księgowych 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integracja z zewnętrznymi dostawcami na potrzeby wysyłania raportów elektronicznych poprzez kanały komunikacyjne dla Rosji
 Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folderu w celu dalszego przesłania do oficjalnych dostawców raportowania elektronicznego, a także zaimportowanie stanu z powrotem.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zastąpiono konfigurowalną funkcją komunikatów elektronicznych. |
 | **Zamieniona przez inną funkcję?**   | Tak.  |
@@ -322,7 +325,7 @@ Funkcja eksportowania wygenerowanych plików elektronicznych deklaracji do folde
 ### <a name="profit-tax-register-wizard"></a>Kreator tworzenia rejestru podatku dochodowego.
 Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta funkcja tworzy obiekty X ++ dla rejestracji nowych rejestrów, które są tworzone jako szablony z dodaną odpowiednią logiką obliczeń.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia Finance and Operations. |
 | **Zamieniona przez inną funkcję?**   | Nr |
@@ -339,7 +342,7 @@ Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta fu
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów 
 Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Omówienie rekomendacji produktów](../../../commerce/product-recommendations.md).  
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny.  |
 | **Zamieniona przez inną funkcję?**   | Nr Po wiośnie 2018 roku planujemy przywrócić tę funkcję, ale będzie ona wykorzystywała nową usługę rekomendacji.   |
@@ -350,7 +353,7 @@ Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wy
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Poszerzanie listy funkcji raportowania elektronicznego (ER)
 Możliwość wprowadzenia niestandardowych funkcji w celu użycia w Konstruktorze wyrażeń ER (aby uzyskać więcej informacji, zobacz [Rozszerzenie wykazu funkcje raportowania elektronicznego (ER)](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) nie jest już obsługiwana. Z powodu zmian w interfejsie API ER interfejs API do wywoływania wbudowanych funkcji z konstruktora wyrażeń jest wewnętrzny i nie można go już rozszerzyć.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Inicjatywa dotycząca uszczelnienia kodu  |
 | **Zamieniona przez inną funkcję?**   | Brak. W każdym przypadku, w którym potrzebna jest nowa wbudowana funkcja, należy przesłać nowy wniosek o rozszerzenie do zespołu platformy ER.<br><br>Jako tymczasowe rozwiązanie na czas tworzenia wymaganej funkcji przez zespół ER wymaganą logikę można zaprogramować jako metodę niestandardowej klasy aplikacji. Ta metoda jest dostępna w wyrażeniu ER jako właściwość dodanego źródła danych ER typu **Aplikacja\Klasa** dotyczącego tej niestandardowej klasy aplikacji.  |
@@ -362,7 +365,7 @@ Możliwość wprowadzenia niestandardowych funkcji w celu użycia w Konstruktorz
 
 Te dwa raporty nie są już obsługiwane w rozwiązaniu Finance and Operations. Zamiast tego raportu **Wiekowanie zapasów** można użyć do lepszej obsługi użytkownika.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |--------------|-----------------------|
 | **Przyczyna amortyzacji**       | Pokrywające się funkcje  |
 | **Zamieniona przez inną funkcję?** | Tak. Te dwa raporty zostały zastąpione przez raport **Wiekowanie zapasów**.     |
@@ -371,12 +374,12 @@ Te dwa raporty nie są już obsługiwane w rozwiązaniu Finance and Operations. 
 | **Stan**                       | Wycofane: elementy ,emu tych dwóch raportów zostały usunięte w wersji 7.3. Jednakże kod raportów jest nadal dostępny w produkcie. Planowane jest usunięcie kodu w kolejnych wersjach. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Pakiety zawartości usługi Power BI dostępne w usłudze AppSource
-Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Retail Channel Performance**, które są opublikowane w witrynie [Microsoft AppSource](https://appsource.microsoft.com), zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
+Pakiety zawartości **Zarządzanie kosztami** , **Wyniki finansowe** i **Retail Channel Performance** , które są opublikowane w witrynie [Microsoft AppSource](https://appsource.microsoft.com), zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Aktualizacje produktu w usłudze Microsoft Power BI. |
-| **Zamieniona przez inną funkcję?**   | Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Retail Channel Performance**, które opublikowano w witrynie [AppSource](https://appsource.microsoft.com), są zastępowane aplikacjami analitycznymi, które umożliwiają integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Zamieniona przez inną funkcję?**   | Pakiety zawartości **Zarządzanie kosztami** , **Wyniki finansowe** i **Retail Channel Performance** , które opublikowano w witrynie [AppSource](https://appsource.microsoft.com), są zastępowane aplikacjami analitycznymi, które umożliwiają integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Powiązane obszary produktów**         | Zarządzanie kosztami, Finanse i Handel detaliczny                                                                                               |
 | **Opcja wdrażania**              | Tylko w chmurze (integracja z witryną PowerBI.com nie jest obsługiwana we wdrożeniach lokalnych.)                                                                                                            |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to drugi kwartał 2018 roku.    |
@@ -385,7 +388,7 @@ Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Retail C
 
 Standardowy interfejs użytkownika w zarządzaniu danymi to starszy interfejs użytkownika, który jest domyślnym interfejsem użytkownika dostępnym dla użytkowników, gdy wyświetlą obszar roboczy zarządzania danymi.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------------|-------------------------|
 | **Przyczyna wycofania/usunięcia** | Inwestujemy w nowe doświadczenia użytkownika w nowym interfejsie użytkownika.             |
 | **Zamieniona przez inną funkcję?**   | Nowy interfejs użytkownika o nazwie *Widoki rozszerzone* zastępuje stary interfejs użytkownika.            |
@@ -397,7 +400,7 @@ Standardowy interfejs użytkownika w zarządzaniu danymi to starszy interfejs u�
 
 Te podatki zostały zsumowane w hinduskim PTU.
 
-|                                             |                                                                         |
+|  &nbsp;                                           |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Te podatki zostały zsumowane w hinduskim PTU.                          |
 | **Zamieniona przez inną funkcję?**            | Hinduski PTU                                                              |
@@ -407,7 +410,7 @@ Te podatki zostały zsumowane w hinduskim PTU.
 
 ### <a name="file-validation-utility-fvu-for-india"></a>Narzędzie File Validation Utility (FVU) dla Indii
 
-|                                             |                                                                         |
+|              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
 | **Zamieniona przez inną funkcję?**            | Nr                                                                      |
@@ -419,7 +422,7 @@ Te podatki zostały zsumowane w hinduskim PTU.
 
 Użytkownicy mogą pobrać go z portalu rządowego.
 
-|                                             |                                                                         |
+|             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
 | **Zamieniona przez inną funkcję?**            | Nr                                                                      |
@@ -430,7 +433,7 @@ Użytkownicy mogą pobrać go z portalu rządowego.
 ### <a name="exportimport-exim-incentive-scheme-for-india"></a>Schemat motywacji dotyczący eksportu/importu (EXIM) dla Indii
 
 
-|                                             |                                                                         |
+|              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Przyczyna usunięcia lub wycofania**       | Brak wykorzystywania przez odbiorców.                                                  |
 | **Zamieniona przez inną funkcję?**            | Nr                                                                      |
@@ -444,7 +447,7 @@ Użytkownicy mogą pobrać go z portalu rządowego.
 ### <a name="personalized-product-recommendations"></a>Spersonalizowane rekomendacje produktów 
 Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wyświetlać spersonalizowanych rekomendacji produktów na urządzeniach w punktach sprzedaży (POS). Aby uzyskać więcej informacji, zobacz [Omówienie rekomendacji produktów](../../../commerce/product-recommendations.md).  
 
-|   |  |
+|  &nbsp; |  &nbsp;|
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Usuwamy obecną wersję usługi rekomendowania produktów, ponieważ w nowej wersji wprowadzamy lepszy algorytm i nowsze funkcje zorientowane na handel detaliczny.  |
 | **Zamieniona przez inną funkcję?**   | Nr Po wiośnie 2018 roku planujemy przywrócić tę funkcję, ale będzie ona wykorzystywała nową usługę rekomendacji.   |
@@ -459,7 +462,7 @@ Począwszy od 15 lutego 2018 roku sprzedawcy detaliczni nie będą już mogli wy
 
 Mechanizm konwersji dla waluty rozliczeniowych i raportowania został wprowadzony wraz z wprowadzeniem euro.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie oraz dodanie funkcji Kopiuj dane firmy jako zamiennika.      |
 | **Zamieniona przez inną funkcję?**   | Nie, ale dodano funkcje Kopiuj dane firmy i Konfiguracje, które ułatwiają przechodzenie do firmy mającej zmienne podstawowe wymagania. |
@@ -471,7 +474,7 @@ Mechanizm konwersji dla waluty rozliczeniowych i raportowania został wprowadzon
 
 Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym składnikiem przeznaczonym do lokalnego samodzielnego instalowania. Ten składnik nie jest już obsługiwany w programie Finance and Operations. Funkcjonalność portalu WMDP została zastąpiona macierzystą aplikacją o ulepszonej funkcjonalności.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje.       |
 | **Zamieniona przez inną funkcję?**   | Tak. Ta funkcja została zastąpiona inną funkcją: Finance and Operations — magazynowanie. Aby uzyskać więcej informacji na temat konfiguracji i wymagań wstępnych, zobacz [Omówienie instalowania i konfiguracji aplikacji Magazynowanie](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
@@ -483,7 +486,7 @@ Portal urządzeń przenośnych używanych w magazynie (WMDP) był autonomicznym 
 
 Reguła uzgadniania używana do wybierania i zaznaczania dokumentu bankowego podczas ręcznego uzgadniania dokumentów w arkuszu uzgadniania.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie.                                                                         |
 | **Zamieniona przez inną funkcję?**   | Nr Do wyszukiwania dokumentów na potrzeby uzgadniania należy używać funkcji filtrowania kolumn. |
@@ -497,7 +500,7 @@ Reguła uzgadniania używana do wybierania i zaznaczania dokumentu bankowego pod
 
 Formaty płatności Consejo Superior Bancario służyły do wysyłania plików przekazów do banku dla płatności odbiorcy i dostawcy. Zawartość tych formatów była określana przez Asociación Española de Banca. Obejmuje ona Cuaderno 19, 32, 58, 34.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                                  |
 | **Zamieniona przez inną funkcję?**   | Tak, przez formaty płatności poleceniem przelewu i poleceniem zapłaty ISO20022 dla Hiszpanii |
@@ -508,7 +511,7 @@ Formaty płatności Consejo Superior Bancario służyły do wysyłania plików p
 
 Przelewy płatnościami bankowymi na Litwie były generowane i drukowane przy użyciu formatu eksportu przelewów (LT). Na litewskim rynku w 2005 r. zaczęto używać ujednoliconego systemu bankowości elektronicznej LITAS.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Litwy     |
@@ -519,7 +522,7 @@ Przelewy płatnościami bankowymi na Litwie były generowane i drukowane przy u�
 
 Formaty płatności BBS Direkte Remittering zawierają funkcje eksportu inkasa płatności od odbiorcy (polecenie zapłaty) i importu komunikatu zwrotnego.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.  |
 | **Zamieniona przez inną funkcję?**   | Format płatności od odbiorcy AvtaleGiro dla Norwegii może służyć do generowania komunikatów polecenia zapłaty. Import komunikatów zwrotnych zostanie zaimplementowany w przyszłych wersjach. |
@@ -530,7 +533,7 @@ Formaty płatności BBS Direkte Remittering zawierają funkcje eksportu inkasa p
 
 To narzędzie jest używane, gdy plan kont w Hiszpanii wymaga dużych zmian. Użytkownicy mogą zaimportować nowy plan kont w formacie programu Microsoft Excel lub tekstowym, a także zaimportować sprawozdania finansowe.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie                                                  |
 | **Zamieniona przez inną funkcję?**   | Nr                                                             |
@@ -541,7 +544,7 @@ To narzędzie jest używane, gdy plan kont w Hiszpanii wymaga dużych zmian. Uż
 
 Starszy belgijski format płatności dla inkasa płatności (polecenie zapłaty).
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                          |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem zapłaty ISO 20022 dla Belgii         |
@@ -552,7 +555,7 @@ Starszy belgijski format płatności dla inkasa płatności (polecenie zapłaty)
 
 Formaty DTA/EZAG są zintegrowane w systemie ESR, ponieważ mogą być nośnikami numeru odwołania. Numery odwołania nie są obowiązkowe i dlatego te formaty mogą służyć do przetwarzania wszelkich płatności dla dostawców. Te formaty są używane przez firmy, które mają konta bankowe w lokalizacji innej niż „Postfinance”.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Szwajcarii   |
@@ -563,7 +566,7 @@ Formaty DTA/EZAG są zintegrowane w systemie ESR, ponieważ mogą być nośnikam
 
 Format płatności EDIFACT-DIRDEB dla inkasa płatności (polecenie zapłaty).
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                          |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem zapłaty ISO 20022 dla Austrii         |
@@ -574,7 +577,7 @@ Format płatności EDIFACT-DIRDEB dla inkasa płatności (polecenie zapłaty).
 
 EDIVAT to starszy belgijski standard wysyłania deklaracji elektronicznych za pośrednictwem bezpiecznej poczty. Dynamics AX 2012 zachowuje rozwiązanie tylko do odczytu, aby umożliwić dostęp do danych historycznych.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcjonalność nie jest już używana.                           |
 | **Zamieniona przez inną funkcję?**   | Nr                                                             |
@@ -585,7 +588,7 @@ EDIVAT to starszy belgijski standard wysyłania deklaracji elektronicznych za po
 
 eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple Credit Advice Message), który jest używany do automatycznego księgowania płatności od odbiorców. W Dynamics AX funkcjonalność eGiro jest zaimplementowana jako format importu płatności od odbiorców.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
 | **Zamieniona przez inną funkcję?**   | Tak, import powiadomień w schemacie ISO20022 Camt.054. |
@@ -596,7 +599,7 @@ eGiro opiera się na międzynarodowym standardzie ONZ EDIFACT CREMUL (Multiple C
 
 Dowód przyjęcia towarów, które otrzymano od dostawcy do sprzedaży bez zakupu. Towary, które są obsługiwane w zewnętrznych zapasach, nie mają wpływu na zapasy standardowe i mogą być sprzedawane, a następnie automatycznie kupowane. Ten proces tworzy faktyczne przesunięcia magazynowe.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zamieniona przez inną funkcję                                    |
 | **Zamieniona przez inną funkcję?**   | Tak, przez podstawową funkcjonalność konsygnacji przychodzącej                |
@@ -607,7 +610,7 @@ Dowód przyjęcia towarów, które otrzymano od dostawcy do sprzedaży bez zakup
 
 Narzędzie służące do konfigurowania zbierania danych na potrzeby raportów księgowych i podatkowych oraz eksportowania danych do szablonów raportów XLS i DOC.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie                                                                            |
 | **Zamieniona przez inną funkcję?**   | Nr Narzędzie zostanie zastąpione konfiguracjami raportowania elektronicznego w przyszłych wersjach. |
@@ -618,7 +621,7 @@ Narzędzie służące do konfigurowania zbierania danych na potrzeby raportów k
 
 Można wybrać formatu importu dla płatności fińskich, który importuje transakcje płatności od odbiorców z zewnętrznego pliku dostarczonego przez bank.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
 | **Zamieniona przez inną funkcję?**   | Tak, import powiadomień w schemacie ISO20022 Camt.054. |
@@ -629,7 +632,7 @@ Można wybrać formatu importu dla płatności fińskich, który importuje trans
 
 Format specyficzny dla Finlandii służy do importowania transakcji księgowych do księgi głównej.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                                                     |
 | **Zamieniona przez inną funkcję?**   | Tak, importowanie wyciągu bankowego w schemacie ISO20022 Camt.053 przy użyciu zaawansowanego uzgadniania konta bankowego. |
@@ -640,7 +643,7 @@ Format specyficzny dla Finlandii służy do importowania transakcji księgowych 
 
 Isabel jest systemem szkieletowym bankowości elektronicznej w Europie i de facto normą w Belgii.
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Integracja z klientami systemu Isabel została wycofana.   |
 | **Zamieniona przez inną funkcję?**   | Nr Nieużywane formaty płatności zostały zastąpione formatem płatności poleceniem przelewu ISO20022 dla Belgii. |
@@ -651,7 +654,7 @@ Isabel jest systemem szkieletowym bankowości elektronicznej w Europie i de fact
 
 Ta funkcja jest stosowana dla zmian w planie kont i regułach księgowania w Hiszpanii. Mapuje konta, ułatwiając przekształcanie starych planów kont na nowe plany kont oraz porównuje poprzedni rok obrachunkowy z nowym rokiem obrachunkowym, nawet jeśli zostały one zaksięgowane pod różnymi numerami kont.
 
-|   |  |
+|  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ograniczone użycie                                                  |
 | **Zamieniona przez inną funkcję?**   | Nr                                                             |
@@ -662,7 +665,7 @@ Ta funkcja jest stosowana dla zmian w planie kont i regułach księgowania w His
 
 Starszy włoski format płatności dla poleceń przelewu.
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format płatności nie jest już używany.                          |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Włoch         |
@@ -673,7 +676,7 @@ Starszy włoski format płatności dla poleceń przelewu.
 
 Formaty Telehansa i Teleservice są używane do eksportu płatności bankowych.
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Estonii       |
@@ -684,7 +687,7 @@ Formaty Telehansa i Teleservice są używane do eksportu płatności bankowych.
 
 Podczas generowania plików płatności są one automatycznie umieszczane w archiwum. Dotyczy to nawet plików, które zostały wcześniej zapisane lub odczytane.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zamieniona przez inną funkcję                                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez zarchiwizowane zadania raportowania elektronicznego                            |
@@ -695,7 +698,7 @@ Podczas generowania plików płatności są one automatycznie umieszczane w arch
 
 Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                                                    |
 | **Zamieniona przez inną funkcję?**   | Tak, import powiadomień bankowych w schemacie ISO20022 Camt.054. |
@@ -706,10 +709,10 @@ Formaty Telehansa i TeleTeenus są używane do importu płatności bankowych.
 
 Informacje listy płac w module Zasoby ludzkie
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona stronami podstawowych modułów Lista płac i Zasoby ludzkie.  |
-| **Zamieniona przez inną funkcję?**   | **Świadczenia**, **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** \> **Lista płac**. |
+| **Zamieniona przez inną funkcję?**   | **Świadczenia** , **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** \> **Lista płac**. |
 | **Powiązane obszary produktów**         | Zasoby ludzkie, Lista płac   |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611.    |
 
@@ -717,7 +720,7 @@ Informacje listy płac w module Zasoby ludzkie
 
 Zarządzanie wydajnością obejmuje zarządzanie celami oraz integrację z przeglądami wydajności.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Moduł zarządzania wydajnością został przeprojektowany. Zmniejszono liczbę stron dotyczących celów, aby uprościć proces.                 |
 | **Zamieniona przez inną funkcję?**   | Nr Cele są wyświetlane menedżerom w samoobsługowym portalu dla menedżerów i mogą być zmieniane oraz wyświetlane przez menedżerów. |
@@ -728,7 +731,7 @@ Zarządzanie wydajnością obejmuje zarządzanie celami oraz integrację z przeg
 
 Formaty płatności Postgirot i Postgirot Utland dla Szwecji.
 
-|   |  |
+|&nbsp;   |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Szwecji        |
@@ -739,7 +742,7 @@ Formaty płatności Postgirot i Postgirot Utland dla Szwecji.
 
 Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektronicznych znaczników do przechowywania danych identyfikacyjnych bez konieczności bezpośredniego dostępu do czytnika w celu odczytania danych identyfikacyjnych.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji.   |
 | **Zamieniona przez inną funkcję?**   | Nr                                              |
@@ -750,7 +753,7 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 
 Łotewskie prawo zawiera określone reguły numerowania faktur sprzedaży. Funkcja pozwala przypisywać konkretne numery do faktur sprzedaży na podstawie użytkownika lub grupy użytkowników. Następnie można wygenerować raport lub plik XML. Można również wydrukować raport o użytych numerach faktur.
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Urzędowa numeracja faktur nie musi już być stosowana. Raport o użytych numerach faktur nie jest już wymagany. |
 | **Zamieniona przez inną funkcję?**   | Nr       |
@@ -761,7 +764,7 @@ Identyfikacja radiowa (RFID) to technologia zbierania danych przy użyciu elektr
 
 Imiona i nazwiska menedżera oraz głównego księgowego firmy można podać w danych firmy i następnie używać w różnych raportach drukowanych lokalnie.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zamieniona przez inną funkcję                                     |
 | **Zamieniona przez inną funkcję?**   | Tak, w tym samym celu można używać konfiguracji urzędników.   |
@@ -770,7 +773,7 @@ Imiona i nazwiska menedżera oraz głównego księgowego firmy można podać w d
 
 ### <a name="shipping-carrier-interface"></a>Interfejs firmy przewozowej
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje   |
 | **Zamieniona przez inną funkcję?**   | Częściowo zastąpione przez Zarządzanie transportem |
@@ -781,7 +784,7 @@ Imiona i nazwiska menedżera oraz głównego księgowego firmy można podać w d
 
 Formaty płatności TelePay obejmują funkcje eksportu płatności dla dostawców (polecenie przelewu) i inkasa płatności od odbiorców (polecenie zapłaty).
 
-|   |  |
+|&nbsp;   |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                                                        |
 | **Zamieniona przez inną funkcję?**   | Tak, format transferu płatności w schemacie ISO20022 oraz format płatności klienta dla Norwegii AvtaleGiro, a także import powiadomień bankowych o zwrocie plików pain.002 oraz camt.054. |
@@ -792,7 +795,7 @@ Formaty płatności TelePay obejmują funkcje eksportu płatności dla dostawcó
 
 Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jest używany w przypadku krajowych płatności, a LUM2 (FI) jest używany w przypadku płatności zagranicznych.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te formaty płatności nie są już używane.                        |
 | **Zamieniona przez inną funkcję?**   | Tak, przez format płatności poleceniem przelewu ISO20022 dla Finlandii       |
@@ -801,10 +804,10 @@ Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jes
 
 ### <a name="warehouse-management-ii"></a>Zarządzanie magazynem II
 
-|   |  |
+|  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Rozwiązanie WMS II (Zarządzania magazynem II), które było dostępne w module **Zarządzanie zapasami**, dubluje funkcje dostępne w module **Zarządzanie magazynem**, który został udostępniony w Dynamics AX 2012 R3.                                                                         |
-| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem**, który został udostępniony w wersjach systemu AX 2012 R3, Dynamics AX 2012 R3 CU8 i Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
+| **Przyczyna wycofania/usunięcia** | Rozwiązanie WMS II (Zarządzania magazynem II), które było dostępne w module **Zarządzanie zapasami** , dubluje funkcje dostępne w module **Zarządzanie magazynem** , który został udostępniony w Dynamics AX 2012 R3.                                                                         |
+| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem** , który został udostępniony w wersjach systemu AX 2012 R3, Dynamics AX 2012 R3 CU8 i Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
 | **Powiązane obszary produktów**         | Zarządzanie zapasami, sprzedaż i marketing, zaopatrzenie i sourcing   |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611.    |
 
@@ -812,7 +815,7 @@ Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jes
 
 Informacje listy płac w module Zasoby ludzkie
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie                                                           |
 | **Zamieniona przez inną funkcję?**   | Nr                                                                  |
@@ -823,7 +826,7 @@ Informacje listy płac w module Zasoby ludzkie
 
 Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z kilku przepływów pracy, które były dostępne jako pomoc w koordynowaniu procesu zarządzania wydajnością.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Zarządzanie wydajnością zostało całkowicie przeprojektowane w programie Finance and Operations.     |
 | **Zamieniona przez inną funkcję?**   | Przeprojektowana funkcjonalność zarządzania wydajnością zapewnia większą kontrolę nad treścią celów, miarami służącymi do śledzenia postępów oraz dołączaniem towarzyszącej dokumentacji. Cele można zapisywać jako szablony i ponownie wykorzystywać. Ta funkcja może pomóc szybciej konfigurować dodatkowe cele dla pracowników. |
@@ -835,7 +838,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="ability-to-cancel-changes-to-a-vendor-invoice"></a>Możliwość anulowania zmian na fakturze od dostawcy
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Chęć poprawy wydajności.        |
 | **Zamieniona przez inną funkcję?**   | Nr                             |
@@ -844,9 +847,9 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
 
-W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
+W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów* , które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie dało się przeskalować architektury narzędzi AIF i AxD na potrzeby usługi chmurowej. Wystąpiły problemy z wydajnością wokół importu zbiorczego.                                        |
 | **Zamieniona przez inną funkcję?**   | Ta funkcja zastępuje strukturę importu/eksportu danych, która obsługuje cykliczny import/eksport zbiorczy. Dla klasy AxBC zaleca się użycie samych tabel. |
@@ -857,7 +860,7 @@ W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z z
 
 Skrypty fakturowania były używane do obliczania stawki fakturowania dla kodów rozliczeń. Te skrypty wymagały niestandardowego projektowania w C Sharp lub Visual Basic. W bieżącej wersji systemu Dynamics AX, **skrypty stawek dla kodów fakturowania** nie są obsługiwane.
 
-|   |  |
+| &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa niestandardowych skryptów C Sharp lub Visual Basic nie została dodana w systemie Dynamics AX 7.0. |
 | **Zamieniona przez inną funkcję?**   | Nie                                                                                      |
@@ -868,7 +871,7 @@ Skrypty fakturowania były używane do obliczania stawki fakturowania dla kodów
 
 Po wyłączeniu klucza konfiguracji **Wersje BOM** wersje list składowych (BOM) były ukrywane we wszystkich formularzach, a system wymuszał relację 1:1 między zwolnionymi produktami i listami BOM. W bieżącej wersji systemu Dynamics AX klucza konfiguracji **Wersje BOM** nie da się wyłączyć.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa klucza konfiguracji do kontrolowania wersji BOM nie jest dopasowana do skali środowiska chmurowego. |
 | **Zamieniona przez inną funkcję?**   | Nr                                                                                      |
@@ -879,7 +882,7 @@ Po wyłączeniu klucza konfiguracji **Wersje BOM** wersje list składowych (BOM)
 
 Specjalna metoda płatności dla firm brazylijskich
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa brazylijskiej metody płatności Bordero została wycofana dla lokalizacji w Brazylii |
 | **Zamieniona przez inną funkcję?**   | Nr   |
@@ -890,7 +893,7 @@ Specjalna metoda płatności dla firm brazylijskich
 
 Krajowa deklaracja podatku ICMS
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta deklaracja nie ma już zastosowania w niektórych stanach Brazylii. |
 | **Zamieniona przez inną funkcję?**   | Nr Użytkownicy mogą użyć narzędzia Ogólne raportowanie elektroniczne do skonfigurowania deklaracji, jeśli jest to wymagane w określonych sytuacjach. |
@@ -901,7 +904,7 @@ Krajowa deklaracja podatku ICMS
 
 Środowisko awaryjne (SCAN) jest używane do generowania, eksportowania i importowania stanu z portalu Nota Fiscal eletrônica (NF-e), gdy środowisko Secretaria da Fazenda (SEFAZ) jest niedostępne.
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta metoda pracy awaryjnej nie jest już stosowana w niektórych stanach w Brazylii |
 | **Zamieniona przez inną funkcję?**   | Nr                                                                          |
@@ -912,7 +915,7 @@ Krajowa deklaracja podatku ICMS
 
 Ta aplikacja mobilna pozwala użytkownikom przeglądać kluczowe pomiary biznesowe.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona inną funkcją.   |
 | **Zamieniona przez inną funkcję?**   | Pakiet materiałów do monitorowania wyników finansowych dla usługi Microsoft Power BI będzie zawierał najważniejsze mierniki finansowe, które wcześniej były dostępne w aplikacji Business Analyzer. |
@@ -923,7 +926,7 @@ Ta aplikacja mobilna pozwala użytkownikom przeglądać kluczowe pomiary bizneso
 
 Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowanie funkcjonowania organizacji.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Istniejące podejście do analizy biznesowej (BI), niskie wykorzystanie przez odbiorców i ograniczony zestaw funkcji. |
 | **Zamieniona przez inną funkcję?**   | Nowe rozwiązanie BI dla aktualnej wersji systemu Dynamics AX                                      |
@@ -932,7 +935,7 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 
 ### <a name="change-document-date-function-in-invoice-approval-journal"></a>Funkcja zmiany daty dokumentu w Arkuszu zatwierdzania faktur
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie                                                               |
 | **Zamieniona przez inną funkcję?**   | Tak. Można zmienić datę dokumentu dla zaksięgowanej transakcji dostawcy. |
@@ -941,7 +944,7 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 
 ### <a name="clieop03-payment-format-for-the-netherlands"></a>Format płatności ClieOp03 dla Holandii
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format nie jest już używany w Holandii, ponieważ został zastąpiony przez funkcję SEPA. |
 | **Zamieniona przez inną funkcję?**   | Eksport płatności SEPA  |
@@ -952,7 +955,7 @@ Konfiguracja zapytań o statystyki biznesowe, które mogą ułatwić analizowani
 
 Centrum zgodności było witryną Enterprise Portal do zarządzania wymaganiami dokumentacji dla inicjatyw zgodności związanych z ustawą Sarbanes-Oxley.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców. Program Microsoft SharePoint oferuje te same funkcje, które były dostępne w Centrum zgodności. |
 | **Zamieniona przez inną funkcję?**   | Nr   |
@@ -963,7 +966,7 @@ Centrum zgodności było witryną Enterprise Portal do zarządzania wymaganiami 
 
 To narzędzie zostało użyte do integracji najważniejszych danych z programu Microsoft Dynamics CRM do aplikacji Dynamics ERP.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona inną funkcją. |
 | **Zamieniona przez inną funkcję?**   | Common Data Service                                      |
@@ -972,7 +975,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 ### <a name="container-unit-and-multi-dimension-on-hand"></a>Jednostka kontenera i wielowymiarowe zapasy na stanie
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje |
 | **Zamieniona przez inną funkcję?**   | Tak. Od wersji AX 2012 ta funkcja jest zastąpiona zestawem funkcji skonsolidowanych szarż produkcyjnych. Zestaw zawiera skonsolidowany widok dostępnych zapasów. |
@@ -981,7 +984,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 ### <a name="cue-group-metadata"></a>Metadane grupy wskaźników
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Grupy wskaźników były używane do wyświetlania jednego lub kilku wskaźników w obszarze pola informacji. Liczba pobrań była ograniczona i występowały też problemy z wydajnością, ponieważ zmiana rekordu w formularzu nadrzędnym powodowała tworzenie jednej kwerendy na wskaźnik w grupie wskaźników. |
 | **Zamieniona przez inną funkcję?**   | Nr      |
@@ -990,7 +993,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 ### <a name="cue-metadata"></a>Metadane wskaźnika
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Metadane wskaźnika były ograniczone do liczby lub sumy.    |
 | **Zamieniona przez inną funkcję?**   | Wprowadzono metadane kafelka, by poprawić elastyczność modelowania. Można na przykład modelować aktualne liczby, nawigację i kluczowe wskaźniki wydajności (KPI). Metadane wskaźnika zostały bezpośrednio zastąpione przez metadane kafelka z liczbami. |
@@ -999,7 +1002,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 ### <a name="danish-check-format"></a>Duński format czeku
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Obsługa duńskiego układu formatu czeku została wycofana i raport został usunięty z lokalizacji DK. |
 | **Zamieniona przez inną funkcję?**   | Nr    |
@@ -1010,7 +1013,7 @@ To narzędzie zostało użyte do integracji najważniejszych danych z programu M
 
 Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu Dynamics AX.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Partycje danych zostały wprowadzone w systemie Dynamics AX 2012 R2, aby umożliwić izolowanie danych. W typowym scenariuszu firma ma oddziały. Dane z jednego oddziału firmy nie powinny być widoczne w innym oddziale, mimo że oba oddziały są zarządzane przez ten sam dział IT. Jednak były wymagane dodatkowe skrypty i towarzyszące zarządzanie programem w celu utworzenia nowych partycji i wypełnienia ich danymi oraz utworzenia kopii zapasowych danych partycji. W chmurze, gdzie mamy dostęp do usług bazy danych (baza danych SQL Microsoft Azure) w postaci platformy jako usługi (PaaS), znacznie bardziej efektywne jest używanie bazy danych jako kontenera izolacji niż konfigurowanie izolacji w programie. Niezależnie od tego, czy partycjonowanie danych jest wymagane dla oddziałów, wielu dzierżawców czy tylko ze względu na skalę, jesteśmy przekonani, że wszystkie scenariusze można lepiej obsługiwać za pomocą wielu wystąpień systemu Finance and Operations. |
 | **Zamieniona przez inną funkcję?**   | Jeśli separacja poziomów bazy danych ma krytyczne znaczenie, klienci korzystający z partycji danych muszą używać wielu wystąpień systemu Finance and Operations.    |
@@ -1022,7 +1025,7 @@ Partycje danych zapewniają logiczne oddzielenie danych w bazie danych systemu D
 
 System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach danych i udziałach plików. Obie te opcje nie są już obsługiwane.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Przechowywanie w udziałach plików nie jest już obsługiwane, ponieważ środowiska hostowane w chmurze nie mogą się komunikować z lokalnymi udziałami plików. Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure. Magazyn obiektów blob Azure odpowiada przechowywaniu w bazie danych, ponieważ dokumenty są dostępne wyłącznie za pośrednictwem formularzy klienta programu Finance and Operations. Zapewnia to dodatkową korzyść w postaci magazynu, który nie wpływa negatywnie na wydajność bazy danych. Magazyn obiektów blob jest domyślnym mechanizmem przechowywania modułu Zarządzanie dokumentami i działa natychmiast. |
 | **Zamieniona przez inną funkcję?**   | Przechowywanie w bazie danych zostało zastąpione magazynem obiektów blob w usłudze Azure.   |
@@ -1031,7 +1034,7 @@ System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach dany
 
 ### <a name="delimitation"></a>Ogranicznik
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie stwierdzono używania funkcji. |
 | **Zamieniona przez inną funkcję?**   | Nr                                     |
@@ -1040,7 +1043,7 @@ System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach dany
 
 ### <a name="desktop-client"></a>Klient komputerowy
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Środowisko klienta systemu Dynamics AX zostało przeprojektowane, by poprawić funkcjonalność wielu platform i urządzeń.                      |
 | **Zamieniona przez inną funkcję?**   | Nowy klient sieci web jest oparty na metadanych formatu dla komputerów i modelu programowania, który został dostosowany do potrzeb rozszerzonej platformy internetowej. |
@@ -1051,7 +1054,7 @@ System Dynamics AX 2012 pozwalał na przechowywania załączników w bazach dany
 
 W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączyć bezpośrednio z bazą danych kanału w podobny sposób, jak robi to aplikacja Enterprise POS. Było to uzupełnienie standardowej metody komunikacji używanej przez aplikację Retail Modern POS, czyli korzystania z pośrednictwa serwera sieci sprzedaży.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Bezpośrednia łączność z bazą danych wymagała protokołów o słabszych zabezpieczeniach i była używana głównie do osiągnięcia najwyższej wydajności. Ze względu na ulepszenia w dziedzinach wydajności i zabezpieczeń, które wprowadzono w rozwiązaniu Finance and Operations, ta funkcjonalność wywołuje teraz więcej problemów, niż rozwiązuje. |
 | **Zamieniona przez inną funkcję?**   | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem serwera sieci sprzedaży.  |
@@ -1060,7 +1063,7 @@ W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączy�
 
 ### <a name="dutch-swift-mt940"></a>Holenderski SWIFT MT940
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W miejsce funkcji zlokalizowanej używana jest teraz funkcja ogólna.                    |
 | **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. |
@@ -1071,7 +1074,7 @@ W programie Dynamics AX 2012 R3 aplikacja Retail Modern POS mogła się łączy�
 
 Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting Language (XBRL) dostosowane specjalnie do niemieckiej taksonomii eBilanz.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców.  |
 | **Zamieniona przez inną funkcję?**   | Ta funkcja nie została zastąpiona przez inną funkcję, ale dla rynku niemieckiego jest dostępnych wiele wyspecjalizowanych pakietów XBRL oferujących rozbudowane funkcje XBRL. |
@@ -1080,7 +1083,7 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 
 ### <a name="enterprise-portal-client"></a>Klient witryny Enterprise Portal
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Udostępnione jedną platformę kliencką.  |
 | **Zamieniona przez inną funkcję?**   | Nowy klient sieci web jest oparty na metadanych formatu dla komputerów i modelu programowania, który został dostosowany do potrzeb rozszerzonej platformy internetowej. |
@@ -1089,7 +1092,7 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 
 ### <a name="environmental-sustainability"></a>Równowaga środowiskowa
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji.  |
 | **Zamieniona przez inną funkcję?**   | Nr              |
@@ -1098,7 +1101,7 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 
 ### <a name="form-activex-and-managed-host-controls"></a>Formanty ActiveX i Zarządzany host
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Formanty ActiveX i Zarządzany host są oparte na kliencie dla komputerów, który został wycofany. |
 | **Zamieniona przez inną funkcję?**   | Rozszerzana struktura formantów pozwala tworzyć nowe formanty oparte na HTML, CSS i JavaScript i jest formantem pierwszej klasy w środowisku narzędziowym Microsoft Visual Studio. |
@@ -1109,7 +1112,7 @@ Ta funkcja generowała dane wyjściowe w formacie eXtensible Business Reporting 
 
 Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale może to zrobić użytkownik.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie istnieje żaden formularz do utrwalania i wyświetlania powstałego pliku przelewu testowego po jego wygenerowaniu przy użyciu zadania wsadowego. |
 | **Zamieniona przez inną funkcję?**   | Przelewy testowe nadal można wygenerować, a użytkownik ma kontrolę nad miejscem zapisu pliku.   |
@@ -1118,7 +1121,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Niemiecki eksport płatności i import wyciągu z konta DTAUS (sumy i transakcje)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format nie jest już używany w Niemczech, ponieważ został zastąpiony przez funkcję Jednolity Obszar Płatniczy w Euro (SEPA).                    |
 | **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona funkcjami eksportu płatności SEPA i zaawansowanego uzgadniania kont bankowych w imporcie wyciągów z kont. |
@@ -1127,7 +1130,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Niemiecki format płatności DTAZV w walucie krajowej
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ten format nie jest już używany w Niemczech, ponieważ został zastąpiony przez funkcję SEPA. |
 | **Zamieniona przez inną funkcję?**   | Eksport płatności SEPA    |
@@ -1136,7 +1139,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="german-mt940-import"></a>Niemiecki import MT940
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W miejsce funkcji zlokalizowanej używana jest teraz funkcja ogólna.                    |
 | **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona funkcją zaawansowanego uzgadniania kont bankowych. |
@@ -1145,7 +1148,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="german-xml-eu-sales-list"></a>Niemiecka lista sprzedaży do UE w formacie XML
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Format XML na potrzeby raportowania niemieckiej listy sprzedaży do UE nie jest już obsługiwany. W celu przesyłania raportu list sprzedaży do UE do niemieckiego urzędu skarbowego można używać tylko plików tekstowych w formacie ELMA5. |
 | **Zamieniona przez inną funkcję?**   | Nr         |
@@ -1154,9 +1157,9 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="gl-ssrs-reports"></a>Raporty GL SSRS
 
-Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans próbny**, **Szczegółowy bilans próbny**, **Plan kont**, **Dziennik inspekcji**, **Salda** i **Lista sald**.
+Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans próbny** , **Szczegółowy bilans próbny** , **Plan kont** , **Dziennik inspekcji** , **Salda** i **Lista sald**.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Raporty finansowe Microsoft SQL Server Reporting Services (SSRS) zostały zastąpione funkcjami programu Management Reporter i domyślnymi raportami. |
 | **Zamieniona przez inną funkcję?**   | Program Management Reporter (oznaczony jako **Raporty finansowe** w bieżącej wersji systemu Dynamics AX)    |
@@ -1165,7 +1168,7 @@ Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans 
 
 ### <a name="infopart-and-formpart-metadata"></a>Metadane InfoPart i FormPart
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Włączona obsługa metadanych InfoPart i FormPart do tworzenia pól informacyjnych dla dwóch różnych klientów. |
 | **Zamieniona przez inną funkcję?**   | Metadane InfoPart, które były uproszczoną definicję formularza, są konwertowane na formularz przez narzędzia uaktualniania. Metadane FormPart odwołujące się do formularza są zastępowane przez bardziej bezpośrednie odwołanie tworzone przez narzędzia uaktualniania. |
@@ -1176,7 +1179,7 @@ Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans 
 
 Lista kont dla podmiotu prawnego i powiązane informacje o saldzie
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Informacje o saldzie są dostępne na stronie listy **Bilans próbnego** według konta i wymiaru.  |
 | **Zamieniona przez inną funkcję?**   | Strona **Konta główne** zawiera tę samą listę kont, która jest dostępna na stronie listy **Konto główne**. Widok siatki na stronie **Konta główne** również pokazuje nawet mniejszy widok przypominający siatkę. |
@@ -1187,7 +1190,7 @@ Lista kont dla podmiotu prawnego i powiązane informacje o saldzie
 
 Ta funkcja umożliwia drukowanie raportu przepływów pieniężnych, który przedstawia transakcje oraz szczegóły przychodów i rozchodów gotówkowych w określonym zakresie dat dla wybranych kont bankowych.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Te same informacje można uzyskać z transakcji bankowej Informacje. |
 | **Zamieniona przez inną funkcję?**   | Transakcja bankowa Informacje.                                            |
@@ -1198,7 +1201,7 @@ Ta funkcja umożliwia drukowanie raportu przepływów pieniężnych, który prze
 
 Ta funkcja służyła do generowania meksykańskich faktur elektronicznych za pomocą metody Comprobante Fiscal Digital (CFD), gdzie firma podpisuje fakturę, żądając powiązanej autoryzacji od rządu. Ta funkcja obejmuje też miesięczne raporty zawierające wszystkie faktury elektroniczne, które zostały wystawione w danym okresie.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Metoda nie jest już stosowana. Metoda generowania faktur elektronicznych za pomocą metody CFD została wycofana przez urzędy skarbowe i zastąpiona metodą Comprobante Fiscal Digital a través de Internet (CFDI) , w której podpis składa zewnętrzny dostawca (PAC). Miesięczny raport został usunięty, a opcja Informacje pozwala użytkownikom wysyłać zapytania o transakcje historyczne. |
 | **Zamieniona przez inną funkcję?**   | Nr    |
@@ -1209,7 +1212,7 @@ Ta funkcja służyła do generowania meksykańskich faktur elektronicznych za po
 
 Zarządzanie podatkiem od towarów i usług (VAT) w systemie Dynamics AX 2012 odbywało się przy użyciu właściwej dla Meksyku funkcji dla podatku niezrealizowanego.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Pokrywające się funkcje  |
 | **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona standardową funkcją podatku warunkowego dostępną w module podstawowym. |
@@ -1219,7 +1222,7 @@ Zarządzanie podatkiem od towarów i usług (VAT) w systemie Dynamics AX 2012 od
 ### <a name="microsoft-outlook-integration"></a>Integracja z programem Microsoft Outlook
 
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona integracją z Microsoft Exchange Server. |
 | **Zamieniona przez inną funkcję?**   | Tak                                                                            |
@@ -1230,7 +1233,7 @@ Zarządzanie podatkiem od towarów i usług (VAT) w systemie Dynamics AX 2012 od
 
 Nie da się już oznaczyć arkusza zapasów i lub arkusza magazynu jako prywatnego. Możliwe jest jedynie blokowanie arkuszy jako prywatnych dla grup użytkowników oraz blokowanie podczas edycji.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Nie stwierdzono używania funkcji. |
 | **Zamieniona przez inną funkcję?**   | Nr                                     |
@@ -1241,7 +1244,7 @@ Nie da się już oznaczyć arkusza zapasów i lub arkusza magazynu jako prywatne
 
 Konstruktor produktów był używany do dynamicznego konfigurowania elementów z zamówienia sprzedaży, zamówienia zakupu, zlecenia produkcyjnego, wyceny, oferty w ramach projektu lub zapotrzebowania na towary. Na podstawie modelu produktu, który miał zmienne modelowania użytkownik mógł wybrać wartości w celu spełnienia wymagań odbiorcy i uzyskać unikatowy wariant produktu, który miał BOM i marszrutę.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Konstruktor produktów pokazywał kod X ++ użytkownikom końcowym, a w aktualnej wersji systemu Dynamics AX nie powinno do tego dochodzić. Funkcja została usunięta, by uniknąć duplikowania się działań na zachodzących na siebie, dużych podstawach kodu.  |
 | **Zamieniona przez inną funkcję?**   | Tak. Konfigurację opartą na ograniczeniach wprowadzono w systemie Dynamics AX 2012, w którym ogłoszono już wycofanie funkcji Konstruktor produktów w przyszłych wersjach. Technologia konfiguracji opartej na ograniczeniach jest wybierana w produktach głównych w celu włączenia konfiguracji. Aby dowiedzieć się więcej, zobacz [Omówienie konfiguracji produktu](../../../supply-chain/pim/build-product-configuration-model.md). |
@@ -1251,7 +1254,7 @@ Konstruktor produktów był używany do dynamicznego konfigurowania elementów z
 ### <a name="production-floor-app"></a>Aplikacja Production Floor
 Jest to aplikacja dla urządzeń typu tablet z systemem Windows 8.1 RT i Windows 8.1 Pro.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | W przypadku zmiany klienta opartego na sieci web można uzyskać podobną funkcjonalność za pośrednictwem natywnego klienta Dynamics AX 7.0. Urządzenie karty zadań udostępnia interfejs użytkownika hali produkcyjnej zoptymalizowany pod kątem płytki dotykowej i tabletów. |
 | **Zamieniona przez inną funkcję?**   | Tak. Urządzenie karty zadań, którego częścią jest natywna część Dynamics AX 7.0.                                                                           |
@@ -1263,7 +1266,7 @@ Jest to aplikacja dla urządzeń typu tablet z systemem Windows 8.1 RT i Windows
 
 Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów produktów (rozmiar, kolor lub styl) na taką, która lepiej pasuje do wymagań firmy. Można było zmieniać wszystkie etykiety, dla których użyto nazwy wymiaru produktu.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Bieżąca wersja systemu Dynamics AX nie obsługuje zmian etykiet w czasie wykonywania. |
 | **Zamieniona przez inną funkcję?**   | Nr                                                                            |
@@ -1274,7 +1277,7 @@ Ta funkcja pozwala zmienić nazwę jednego z trzech standardowych wymiarów prod
 
 W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać komunikację za pośrednictwem protokołu HTTP (niezabezpieczonego). Było to uzupełnienie standardowej komunikacji wykorzystującej protokół HTTPS.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ze względu na nowe wymagania w kwestii bezpieczeństwa obecnie jest obsługiwana tylko zabezpieczona komunikacja przy użyciu protokołu TLS 1.2 (lub nowszego, jeśli jest dostępny). Samoobsługowy instalator automatycznie skonfiguruje komputer do obsługi tej komunikacji. |
 | **Zamieniona przez inną funkcję?**   | Nr Teraz jest obsługiwana tylko standardowa komunikacja za pośrednictwem protokołu HTTPS. |
@@ -1283,7 +1286,7 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 
 ### <a name="role-center-pages"></a>Strony widoków głównych użytkownika
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Strony widoków głównych użytkownika zostały zbudowane na platformie przestarzałego modułu Enterprise Portal, który został zastąpiony przez platformę nowego klienta sieci web w bieżącej wersji systemu Dynamics AX. |
 | **Zamieniona przez inną funkcję?**   | Nowy wzór formularza obszaru roboczego oferuje użytkownikom architekturę ukierunkowaną na proces z łatwym dostępem do często używanych zadań w ramach procesu.                       |
@@ -1292,7 +1295,7 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 
 ### <a name="sales-tax-jurisdictions"></a>Właściwe miejscowo urzędy skarbowe
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Brak wykorzystywania przez odbiorców i ograniczony zestaw funkcji. |
 | **Zamieniona przez inną funkcję?**   | Nr                                           |
@@ -1303,7 +1306,7 @@ W programie Dynamics AX 2012 R3 serwer sieci sprzedaży mógł wykorzystywać ko
 
 Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzają zasięg procesów biznesowych o Internet bez wsparcia działu informatycznego.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Infrastruktura Microsoft Azure używana w systemie Dynamics AX zawiera nowe funkcje, które z powodzeniem zastępują wycofane (np. witryny Azure). |
 | **Zamieniona przez inną funkcję?**   | Nr   |
@@ -1312,7 +1315,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 
 ### <a name="ssas-demand-forecasting-strategy"></a>Funkcjonalność strategii prognozowania popytu na platformie SSAS
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Konstrukcja funkcji nie jest obsługiwana w nowej architekturze chmury. |
 | **Zamieniona przez inną funkcję?**   | Funkcja strategii prognozowania popytu wykorzystująca usługę Uczenie maszynowe Azure                           |
@@ -1321,7 +1324,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 
 ### <a name="vendor-invoice-pool-excluding-posting-details"></a>Szczegóły puli faktur od dostawcy bez księgowania
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie. Ta funkcja została zastąpiona arkuszem faktur, który ma funkcje przepływu pracy. |
 | **Zamieniona przez inną funkcję?**   | Funkcje przepływu pracy w arkuszu faktur.     |
@@ -1333,7 +1336,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 
 Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
 
-|   |  | 
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | - Firmy wirtualne należy skonfigurować przed zapisaniem danych w tabelach. Dostosowywanie firm wirtualnych do istniejącego wdrożenia jest bardzo trudne.<br><br>- Ponieważ w bieżącej wersji systemu Dynamics AX dokonano rozległej normalizacji danych, bardzo trudne stało się ustalanie danych, które należało dodać do zbiorów tabel. Na przykład trudno stwierdzić, które tabele należy udostępnić. Wszystkie tabele z odwołaniami z tabel, które były w firmie wirtualnej, też muszą być dodane. Z powodu normalizacji tabel nawet proste dane główne rozłożone między wiele tabel muszą być częścią firmy wirtualnej. Wszelkie popełnione tutaj błędy wywołają problemy funkcjonalne.<br><br>- Jeśli tabela jest częścią firmy wirtualnej, traci informacje o źródle danych i rejestrowane są tylko dane firmy wirtualnej.   |
 | **Zamieniona przez inną funkcję?** | Tabele globalne mogą służyć do udostępniania tabel ze wszystkich firm. Obecnie nie ma funkcji zastępczej. |   
@@ -1344,7 +1347,7 @@ Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funk
 
 Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatwierdzania wydatków.
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Rozwiązanie Finance and Operations jest zgodne z tabletami. Aplikacja na tablety przestała być potrzebna.    |
 | **Zamieniona przez inną funkcję?**   | Nr          |
@@ -1353,16 +1356,16 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 
 ### <a name="workplanner"></a>Planowanie pracy
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie |
-| **Zamieniona przez inną funkcję?**   | Nie, ale strona **Relacja profilu**, którą można otworzyć ze strony **Grupy profilów**, obsługuje ten sam scenariusz biznesowy, co wycofana strona **Planowanie produkcji**. |
+| **Zamieniona przez inną funkcję?**   | Nie, ale strona **Relacja profilu** , którą można otworzyć ze strony **Grupy profilów** , obsługuje ten sam scenariusz biznesowy, co wycofana strona **Planowanie produkcji**. |
 | **Powiązane obszary produktów**         | Czas i frekwencja     |
 | **Stan**                         | Kod nie został usunięty. Jednakże formularz JmgWorkPlanner nie został zmigrowany.    |
 
 ### <a name="x-financial-statements"></a>Sprawozdania finansowe X++
 
-|                                                 |                                                                                                          |
+| &nbsp;  | &nbsp; |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <strong>Przyczyna wycofania/usunięcia</strong> |                         Ta funkcja została zastąpiona inną funkcją.                         |
 |  <strong>Zamieniona przez inną funkcję?</strong>  | Program Management Reporter (oznaczony jako <strong>Raporty finansowe</strong> w bieżącej wersji systemu Dynamics AX) |

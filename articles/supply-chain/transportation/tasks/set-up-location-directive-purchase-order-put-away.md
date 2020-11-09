@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c14fb92103fdd3c32ebc287a74a5dc4f4882b0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981952"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016500"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
 
@@ -56,7 +57,7 @@ W tym temacie wyjaśniono sposób konfigurowania prostej dyrektywy lokalizacji. 
     - Ilość w jednostkach: Cała ilość, jaka została zarejestrowana.  
     - Pozostała ilość: Ilość, jaka pozostała jeszcze do zarejestrowania z wiersza zamówienia zakupu.  
     - Oczekiwana ilość: Całkowita ilość, która jest określona w wierszu zamówienia zakupu.  
-6. Zaznacz pole wyboru **Ogranicz według jednostki** lub usuń jego zaznaczenie. Jeśli wybierzesz tę opcję i określisz jednostkę na stronie **Ogranicz według jednostki**, w lokalizacji można umieścić tylko towary o tej jednostce miary. Na przykład jeśli jednostką miary jest PL (paleta), w podanej lokalizacji można umieścić tylko towary na paletach.  
+6. Zaznacz pole wyboru **Ogranicz według jednostki** lub usuń jego zaznaczenie. Jeśli wybierzesz tę opcję i określisz jednostkę na stronie **Ogranicz według jednostki** , w lokalizacji można umieścić tylko towary o tej jednostce miary. Na przykład jeśli jednostką miary jest PL (paleta), w podanej lokalizacji można umieścić tylko towary na paletach.  
 7. Zaznacz pole wyboru **Zezwalaj na podział** lub usuń jego zaznaczenie. Umożliwia to dyrektywie dzielenie ilości na wiele lokalizacji.  
 8. Wybierz opcję **Zapisz**.
 

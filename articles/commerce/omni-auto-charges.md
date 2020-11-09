@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505618"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107382"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -38,7 +38,7 @@ W programie Retail w wersjach wcześniejszych niż 10.0 konfiguracje [opłat aut
 
 W wersjach wcześniejszych niż 10.0 użytkownik POS otrzymuje monit o ręczne wprowadzenie opłaty transportowej podczas tworzenia transakcji POS „wyślij wszystko” lub „wyślij wybrane”. Podczas gdy funkcje aplikacji związane z opłatami różnymi są używane w odniesieniu do tego, jak opłaty są zapisywane na zamówieniu, żadne systemowe obliczenia nie są dostarczane — obliczenia polegają na danych podanych przez użytkownika do określenia wartości opłat. Opłaty mogą być dodawane tylko jako jeden kod opłat „transportowych” i nie mogą być łatwo edytowalne ani zmieniane w POS po utworzeniu.
 
-Ręczne monity do dodawania opłat transportowych są nadal dostępne w wersjach 10.0 i nowszych. Jeśli organizacja nie obsługuje parametru **Zaawansowane opłaty automatyczne**, monity POS o ręczne wprowadzenie zostaną takie same.
+Ręczne monity do dodawania opłat transportowych są nadal dostępne w wersjach 10.0 i nowszych. Jeśli organizacja nie obsługuje parametru **Zaawansowane opłaty automatyczne** , monity POS o ręczne wprowadzenie zostaną takie same.
 
 Dzięki funkcji zaawansowanych opłat automatycznych użytkownicy POS mogą korzystać z systemowych kalkulacji dla dowolnych zdefiniowanych opłat różnych na podstawie tabel konfiguracji opłat automatycznych. Ponadto użytkownicy będą mieli możliwość dodawania lub edytowania nieograniczonej liczby dodatkowych opłat i płatności do dowolnej transakcji sprzedaży w POS na poziomie nagłówka lub wiersza (dla transakcji kasowych i lub zamówień odbiorcy).
 
@@ -137,7 +137,7 @@ Sprzedawca robi wyjątek od typowych procesów, oferując specjalną dostawę do
 
 #### <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 
-Upewnij się, kod opłat, który będzie używany w tym scenariuszu, został poprawnie skonfigurowany w **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty**, aby zdefiniować odpowiedni kod opłat dla tego scenariusza.
+Upewnij się, kod opłat, który będzie używany w tym scenariuszu, został poprawnie skonfigurowany w **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty** , aby zdefiniować odpowiedni kod opłat dla tego scenariusza.
 
 ![Przykład opłat](media/chargesexample.png)
 
@@ -149,7 +149,7 @@ Operacja **Dodaj opłaty z nagłówka** musi być skonfigurowana w [układzie ek
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Przetwarzanie sprzedaży ręcznych opłat na poziomie nagłówka
 
-Do wykonania tego scenariusza w aplikacji POS, użytkownik POS musi utworzyć transakcję sprzedaży w zwykły sposób, dodając produkty i wszelkie inne konfiguracje do sprzedaży. Przed pobraniem płatności użytkownik powinien wykonać operację **Dodaj opłatę na poziomie nagłówka**, która będzie monitować użytkownika o wybranie kodu opłat i wprowadzenie wartości opłat. Gdy użytkownik zakończy ten proces, opłata zostanie dodana do zamówienia sprzedaży jako opłata na poziomie nagłówka.
+Do wykonania tego scenariusza w aplikacji POS, użytkownik POS musi utworzyć transakcję sprzedaży w zwykły sposób, dodając produkty i wszelkie inne konfiguracje do sprzedaży. Przed pobraniem płatności użytkownik powinien wykonać operację **Dodaj opłatę na poziomie nagłówka** , która będzie monitować użytkownika o wybranie kodu opłat i wprowadzenie wartości opłat. Gdy użytkownik zakończy ten proces, opłata zostanie dodana do zamówienia sprzedaży jako opłata na poziomie nagłówka.
 
 Ten proces może być zastosowany w biurze obsługi za pomocą istniejącej funkcji **Opłaty** na karcie **Sprzedaż** na pasku narzędzi. Na karcie **Obsługa opłat** użytkownik może dodać nowy wiersz opłaty do nagłówka zamówienia.
 
@@ -161,7 +161,7 @@ Odbiorca poprosił o zapakowanie na prezent dwa z pięciu towarów z zamówienia
 
 #### <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 
-Upewnij się, kod opłat, który będzie używany w tym scenariuszu, został poprawnie skonfigurowany w **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty**, aby zdefiniować odpowiedni kod opłat dla tego scenariusza.
+Upewnij się, kod opłat, który będzie używany w tym scenariuszu, został poprawnie skonfigurowany w **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty** , aby zdefiniować odpowiedni kod opłat dla tego scenariusza.
 
 Jeśli opłata powinna być traktowana jako opłata związana z „wysyłką” do celów związanych rabatami wysyłkowymi lub promocjami, ustaw **Opłatę wysyłkową** w kodzie opłaty na **Tak**. Jeśli ta opłata jest również dozwolona do systemowego zwrotu podczas przetwarzania transakcji zwrotu w aplikacji POL, ustaw **Zwrot** na **Tak**. Flaga **Zwrot** ma zastosowanie tylko wtedy, gdy parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** ma wartość **Tak**.
 
@@ -173,7 +173,7 @@ Operacja **Dodaj opłaty z wiersza** musi być skonfigurowana w [układzie ekran
 
 Do wykonania tego scenariusza w aplikacji POS, użytkownik POS musi utworzyć transakcję sprzedaży w zwykły sposób, dodając produkty i wszelkie inne konfiguracje do sprzedaży. Przed pobieraniem płatności użytkownik powinien wybrać określony wiersz, w którym będą stosowane opłaty z listy pozycji POS i wykonać operację **Dodaj opłatę na poziomie wiersza**. Użytkownik zobaczy monit o wybranie kod opłaty i wprowadzenie wartości opłat. Gdy użytkownik zakończy ten proces, opłata zostanie połączona z wierszem i dodana do sumy zamówienia jako opłata na poziomie wiersza. Użytkownik może powtórzyć ten proces, aby dodać opłaty dodatkowe na poziomie wiersza do innych wierszy towarów w ramach transakcji, jeśli jest taka potrzeba.
 
-Ten sam proces można zastosować w biurze obsługi za pomocą funkcji „Obsługa opłat” dostępnych na liście menu rozwijanego **Finanse** w sekcji **Wiersze zamówienia sprzedaży** na stronie **Zamówienie sprzedaży**. Wybranie tej opcji spowoduje otwarcie strony **Obsługa opłat**, na której użytkownik może dodać do transakcji nową opłatę specyficzną dla wiersza.
+Ten sam proces można zastosować w biurze obsługi za pomocą funkcji „Obsługa opłat” dostępnych na liście menu rozwijanego **Finanse** w sekcji **Wiersze zamówienia sprzedaży** na stronie **Zamówienie sprzedaży**. Wybranie tej opcji spowoduje otwarcie strony **Obsługa opłat** , na której użytkownik może dodać do transakcji nową opłatę specyficzną dla wiersza.
 
 ## <a name="additional-features"></a>Dodatkowe funkcje
 
@@ -183,13 +183,13 @@ Operacja **Zarządzaj opłatami dodatkowymi** (142) powinna zostać dodana do [u
 
 Na stronie **Zarządzaj opłatami dodatkowymi** w POS użytkownik może wyświetlić zarówno nagłówek, jak i szczegóły opłaty na poziomie wiersza. Użytkownik może użyć funkcji **Edytuj** na tej stronie, aby wprowadzić zmiany do kwoty pobieranej z konkretnego wiersza opłat. Po ręcznym nadpisaniu wiersza opłat nie będzie on systemowo obliczany ponownie, chyba że użytkownik zainicjuje operację **Ponownie oblicz opłaty**.
 
-Jeśli **Kod przyczyny zastąpienia opłat** został skonfigurowane na stronie konfiguracji **Parametry sieci sprzedaży komercyjnej**, użytkownik będzie monitowany o podanie kodu przyczyny, kiedy opłaty są modyfikowane w aplikacji POS.
+Jeśli **Kod przyczyny zastąpienia opłat** został skonfigurowane na stronie konfiguracji **Parametry sieci sprzedaży komercyjnej** , użytkownik będzie monitowany o podanie kodu przyczyny, kiedy opłaty są modyfikowane w aplikacji POS.
 
 Jeśli kod przyczyny został zarejestrowany dla nadpisanych opłat, nowy raport również jest dostępny do sprawdzenia i kontroli tych nadpisań. Raport można znaleźć w menu **Handel detaliczny i komercyjny \> Zapytania i raporty \> Historia zastąpień opłat**.
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Zwracanie opłat w ramach transakcji zwrotu POS
 
-Jeśli parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** jest ustawiony na **Tak**, istniejący parametr sieci sprzedaży komercyjnej dla **Zwróć opłaty transportowe** nie ma już zastosowania. Aby wskazać, które opłaty mają być systemowo zwracane odbiorcy w kontekście zaawansowanych automatycznych opłat dodatkowych, należy upewnić się, że odpowiedni kod opłat został skonfigurowany jako **Zwrot** na stronie konfiguracji **Kod opłat**. Upewnij się, że ustawienia zostały zsynchronizowane z bazami danych kanału Commerce za pomocą przetwarzania harmonogramu dystrybucji.
+Jeśli parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** jest ustawiony na **Tak** , istniejący parametr sieci sprzedaży komercyjnej dla **Zwróć opłaty transportowe** nie ma już zastosowania. Aby wskazać, które opłaty mają być systemowo zwracane odbiorcy w kontekście zaawansowanych automatycznych opłat dodatkowych, należy upewnić się, że odpowiedni kod opłat został skonfigurowany jako **Zwrot** na stronie konfiguracji **Kod opłat**. Upewnij się, że ustawienia zostały zsynchronizowane z bazami danych kanału Commerce za pomocą przetwarzania harmonogramu dystrybucji.
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Zwracanie opłat w ramach transakcji zamówienia
 
