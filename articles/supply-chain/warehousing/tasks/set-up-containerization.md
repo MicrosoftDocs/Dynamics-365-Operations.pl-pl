@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
-ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
+ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "3454725"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017789"
 ---
 # <a name="set-up-containerization"></a>Konfigurowanie konteneryzacji
 
@@ -75,7 +75,7 @@ W tym temacie opisano sposób zautomatyzowania konteneryzacji ładunków w modul
 5. W polu **Kod kroku grupy czynności** wpisz wartość.
 6. Zaznacz pole wyboru **Zezwalaj na dzielenie pobierania**.
 7. Wybierz opcję **Zapisz**.
-8. Wybierz opcję **Ograniczenia mieszające kontenera**. Funkcja Przerwy logiki łączenia pozwala skonfigurować reguły dla wierszy alokacji pakowania w kontenerach. Na przykład jeśli dodasz pole **Numer pozycji**, podczas przypisywania towarów do kontenerów będą tworzone nowe kontenery dla nowych numerów towarów. Uniemożliwi to pracownikom pakowanie wierszy alokacji dla dwóch różnych odbiorców w tym samym kontenerze.  
+8. Wybierz opcję **Ograniczenia mieszające kontenera**. Funkcja Przerwy logiki łączenia pozwala skonfigurować reguły dla wierszy alokacji pakowania w kontenerach. Na przykład jeśli dodasz pole **Numer pozycji** , podczas przypisywania towarów do kontenerów będą tworzone nowe kontenery dla nowych numerów towarów. Uniemożliwi to pracownikom pakowanie wierszy alokacji dla dwóch różnych odbiorców w tym samym kontenerze.  
 9. Wybierz pozycję **Nowy**.
 10. W polu **Tabela** wybierz opcję.
 11. W polu **Wybór pola** wprowadź lub wybierz wartość.

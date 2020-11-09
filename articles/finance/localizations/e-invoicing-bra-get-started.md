@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6472672f5d618cc6d100298dd35939afa4c0066d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: fb3ec2d60875d7a0747d64b397aafaa0a3d26348
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3836020"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039876"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-brazil"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Brazylii 
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 > [!IMPORTANT]
 > Dodatek Faktury elektroniczne dla Brazylii nie obsługuje obecnie wszystkich funkcji dostępnych w integracji dokumentu fiskalnego wbudowanej w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
@@ -57,7 +57,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 ## <a name="import-the-e-invoicing-feature"></a>Importuj funkcję fakturowania elektronicznego
 
 1. Zaloguj się do swojego konta RCS
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji** , a następnie w obszarze **Funkcje** wybierz kafelek **Fakturowanie elektroniczne**.
 3. Na stronie **Funkcje fakturowania elektronicznego** wybierz opcję **Importuj** w celu zaimportowania funkcji fakturowania dokumentów fiskalnych NF-e z repozytorium globalnego.
 
     ![Przycisk Importuj](media/e-Invoicing-services-get-started-BRA-Select-Import-e-Invoicing-feature.png)
@@ -74,7 +74,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
 ### <a name="update-the-configuration-version"></a>Aktualizacja wersji konfiguracji
 
-1. Na stronie **Funkcje fakturowania elektronicznego** na karcie **Konfiguracje** wybierz opcję **Dodaj** lub **Usuń**, aby zarządzać konfiguracjami wersji (konfiguracjami formatu pliku ER).
+1. Na stronie **Funkcje fakturowania elektronicznego** na karcie **Konfiguracje** wybierz opcję **Dodaj** lub **Usuń** , aby zarządzać konfiguracjami wersji (konfiguracjami formatu pliku ER).
 
     ![Zarządzanie konfiguracjami funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-configurations.png)
 
@@ -89,7 +89,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
         - Format eksportu anulowania NFe
 
-2. Z listy wybierz wersję konfiguracji, a następnie wybierz opcję **Edytuj** lub **Wyświetl**, aby otworzyć stronę **Projektant formatów**, na której możesz edytować lub wyświetlić konfigurację.
+2. Z listy wybierz wersję konfiguracji, a następnie wybierz opcję **Edytuj** lub **Wyświetl** , aby otworzyć stronę **Projektant formatów** , na której możesz edytować lub wyświetlić konfigurację.
 
     ![Otwieranie strony Projektanta formatów](media/e-Invoicing-services-get-started-BRA-Configuration-ER-fomat-designer.png)
 
@@ -99,7 +99,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
 ### <a name="manage-the-e-invoicing-feature-setups"></a>Zarządzaj konfiguracjami funkcji fakturowania elektronicznego
 
-- Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** wybierz opcję **Dodaj** lub **Usuń**, aby zarządzać konfiguracjami funkcji fakturowania w systemie (tzn. zdarzeniami NF-e).
+- Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** wybierz opcję **Dodaj** lub **Usuń** , aby zarządzać konfiguracjami funkcji fakturowania w systemie (tzn. zdarzeniami NF-e).
 
 ![Zarządzanie konfiguracjami funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-BRA-Manage-e-Invoicing-feature-setup.png)
 
@@ -116,7 +116,7 @@ Aby przesłać anulowanie NF-e, wymagana jest konfiguracja funkcji **Anulowania*
 
     ![Edytuj konfigurację funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-BRA-Edit-e-Invoicing-feature-setup.png)
 
-3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje**, aby zarządzać listą akcji.
+3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje** , aby zarządzać listą akcji.
 
     ![Karta Akcje](media/e-Invoicing-services-get-started-BRA-Select-Actions.png)
 
@@ -135,16 +135,16 @@ Aby przesłać anulowanie NF-e, wymagana jest konfiguracja funkcji **Anulowania*
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Ustaw adres URL dla SEFAZ usług sieci Web 
 
-1. Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylisją SEFAZ** (identyfikator akcji **3**).
-2. Na skróconej karcie **Parametry** w polu **Parametr adresu URL**, wprowadź adres URL SEFAZ usługi sieci Web dla przesyłania NF-e.
-3. Na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylijską SEFAZ** (Identyfikator akcji **7**).
-4. Na skróconej karcie **Parametry** w polu **Parametr adresu URL**, wprowadź adres URL SEFAZ usługi sieci Web dla przesyłania NF-e.
+1. Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylisją SEFAZ** (identyfikator akcji **3** ).
+2. Na skróconej karcie **Parametry** w polu **Parametr adresu URL** , wprowadź adres URL SEFAZ usługi sieci Web dla przesyłania NF-e.
+3. Na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylijską SEFAZ** (Identyfikator akcji **7** ).
+4. Na skróconej karcie **Parametry** w polu **Parametr adresu URL** , wprowadź adres URL SEFAZ usługi sieci Web dla przesyłania NF-e.
 
 #### <a name="configure-the-cancellation-feature-setup"></a>Konfiguruj ustawienia funkcji anulowania
 
 1. Na stronie **Funkcje fakturowania elektronicznego** na karcie **Ustawienia** w kolumnie **Ustawienia funkcji** wybierz opcję **Anulowanie**.
 2. Wybierz opcję **Edycja**.
-3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje**, aby zarządzać listą akcji.
+3. Na stronie **Ustawienia wersji funkcji** wybierz kartę **Akcje** , aby zarządzać listą akcji.
 4. Przejrzyj akcje wymagane do złożenia wniosku o anulowanie zatwierdzonego NF-e.
 
     | Identyfikator akcji | Nazwa akcji                  | Opis akcji                                               |
@@ -156,8 +156,8 @@ Aby przesłać anulowanie NF-e, wymagana jest konfiguracja funkcji **Anulowania*
 
 #### <a name="set-up-the-url-for-sefaz-web-services"></a>Ustaw adres URL dla SEFAZ usług sieci Web
 
-1. Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylisją SEFAZ** (identyfikator akcji **3**).
-2. Na skróconej karcie **Parametry** w polu **Parametr adresu URL**, wprowadź adres URL SEFAZ usługi sieci Web w celu anulowania zatwierdzonego NF-e
+1. Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karcie **Akcje** wybierz opcję **Wywołaj usługę brazylisją SEFAZ** (identyfikator akcji **3** ).
+2. Na skróconej karcie **Parametry** w polu **Parametr adresu URL** , wprowadź adres URL SEFAZ usługi sieci Web w celu anulowania zatwierdzonego NF-e
 
 ### <a name="make-an-e-invoicing-environment-available-and-assign-a-draft-version"></a>Udostępnij środowisko fakturowania elektronicznego i przypisz wersję roboczą
 
@@ -196,17 +196,17 @@ Podczas instalacji należy wykonać następujące zadania:
 ### <a name="import-the-er-data-model-mapping-required-for-nf-e-fiscal-documents"></a>Importowanie mapowania modelu danych ER wymaganego dla dokumentów fiskalnych NF-e
 
 1. Zaloguj się do Finance.
-2. W module **Powiązane odnośniki**, w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny**, zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. W module **Powiązane odnośniki** , w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny** , zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Wybierz **Repozytoria**.
 4. Wybierz pozycję **Zasób globalny \> Otwórz**.
 5. Importowanie konfiguracji **Mapowania dokumentów fiskalnych**.
 
 ### <a name="import-er-configurations-and-set-up-the-response-types-for-fiscal-documents"></a>Importowanie konfiguracji modułu ER i konfigurowanie typów odpowiedzi dla dokumentów fiskalnych
 
-1. W module **Powiązane odnośniki**, w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
+1. W module **Powiązane odnośniki** , w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
 2. Wybierz **Repozytoria**.
 3. Wybierz pozycję **Zasób globalny \> Otwórz**.
-4. Importowanie **Import dziennika błędów NF-e (BR)**, **Format importu danych odpowiedzi NF-e (BR)** i **Import komunikatu odpowiedzi NFe (BR)**.
+4. Importowanie **Import dziennika błędów NF-e (BR)** , **Format importu danych odpowiedzi NF-e (BR)** i **Import komunikatu odpowiedzi NFe (BR)**.
 5. Przejdź do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**.
 6. Na karcie **Dokument elektroniczny** wybierz przycisk **Dodaj**.
 6. W polu **Nazwa tabeli** wprowadź **Nagłówek dokumentu fiskalnego**.
@@ -231,21 +231,21 @@ Podczas przetwarzania w Finance należy wykonać następujące zadania:
 
 ### <a name="submit-nf-e-fiscal-documents-for-sefaz-authorization"></a>Prześlij dokumenty fiskalne NF-e dla autoryzacji SEFAZ 
 
-Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronicznych** nie można już używać starego procesu przesyłania dokumentów fiskalnych NF-e do autoryzacji (**Proces eksportu/importu dokumentów NF-e**). Zastępuje go nowym procesem o nazwie **Prześlij dokumenty elektroniczne**.
+Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronicznych** nie można już używać starego procesu przesyłania dokumentów fiskalnych NF-e do autoryzacji ( **Proces eksportu/importu dokumentów NF-e** ). Zastępuje go nowym procesem o nazwie **Prześlij dokumenty elektroniczne**.
 
 > [!NOTE]
 > Przed kontynuowaniem upewnij się, że istnieje co najmniej jeden model dokumentów fiskalnych odbiorcy 55, który został wystawiony przez zakład fiskalny odbiorcy. Kierunek dla tych dokumentów fiskalnych musi być określony jako **Wychodzący** i muszą mieć stan **Utworzony**. Aby uzyskać więcej informacji, przejrzyj [Wystawianie dokumentów fiskalnych dla odbiorców (Brazylia)](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/br-00038-issuing-customer-fiscal-document).
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy zawsze w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.
-3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj**, aby otworzyć okno dialogowe **Zapytania**, w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
+3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj** , aby otworzyć okno dialogowe **Zapytania** , w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
 4. Na karcie **Zakres** wybierz **Dodaj**.
 5. W polu **Tabela** wybierz **Nagłówek dokumentu fiskalnego**.
 6. W polu **Tabela pochodna** wybierz **Nagłówek dokumentu fiskalnego**.
 6. W polu **Pole** wybierz pozycję **Numer**.
 7. W polu **Kryterium** wprowadź numer dokumentu fiskalnego, który ma zostać przesłany.
-8. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Zapytania**.
-8. Wybierz przycisk **OK**, aby przesłać wybrane dokumenty.
+8. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Zapytania**.
+8. Wybierz przycisk **OK** , aby przesłać wybrane dokumenty.
 
 > [!NOTE]
 > Podczas pierwszej próby przesłania dokumentu za pośrednictwem usługi zostaniesz poproszony o potwierdzenie połączenia z dodatkiem Faktury elektroniczne. Wybierz **Kliknij tutaj, aby połaczyć się się z usługą Elektronicznego przesyłania dokumentów**.
@@ -255,8 +255,8 @@ Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronic
 Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronicznych** dostępna jest nowa strona, na której możesz śledzić proces składania dokumentów. Możesz użyć tej strony, aby wyświetlić dzienniki przesyłania wszystkich przesłanych dokumentów.
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Dziennik przsyłania dokumentów elektronicznych**.
-2. W polu **Typ dokumentu** wybierz opcję **Nagłówek dokumentu fiskalnego**, który ma być filtrowany tylko dla dokumentów fiskalnych.
-3. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania**, aby wyświetlić szczegóły dzienników wykonywania przesyłania.
+2. W polu **Typ dokumentu** wybierz opcję **Nagłówek dokumentu fiskalnego** , który ma być filtrowany tylko dla dokumentów fiskalnych.
+3. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania** , aby wyświetlić szczegóły dzienników wykonywania przesyłania.
 
 ![Wyświetlanie szczegółów dziennika przesyłania](media/e-Invoicing-services-get-started-BRA-View-Submission-log-details.png)
 
@@ -287,7 +287,7 @@ Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronic
 ### <a name="view-cancellation-submission-logs"></a>Wyświetlanie anulowania dzienników przesyłania
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Dziennik przsyłania dokumentów elektronicznych**.
-2. W polu **Typ dokumentu** wybierz opcję **Nagłówek dokumentu fiskalnego**, który ma być filtrowany tylko dla dokumentów fiskalnych.
+2. W polu **Typ dokumentu** wybierz opcję **Nagłówek dokumentu fiskalnego** , który ma być filtrowany tylko dla dokumentów fiskalnych.
 3. Wybierz dokument fiskalny, a następnie w okienku akcji wybierz **Zapytania \> Powiązane zgłoszenie**.
 
     Powiązane zgłoszenia to zgłoszenia związane z głównym zgłoszeniem, które zostało przesłane jako pierwsze. Na przykład przedłożenie, które autoryzuje określony NF-e, jest głównym przedłożeniem. Zgłoszenie żądające anulowania tego samego NF-e w SEFAZ jest zgłoszeniem powiązanym. Istnieje tylko, ponieważ żąda anulowania zadania, które zostało wykonane za pośrednictwem innego przesłania.
@@ -296,12 +296,12 @@ Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronic
 
     ![Wyświetlanie anulowania dzienników przesyłania](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log.png)
 
-4. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania**, aby wyświetlić szczegóły dzienników wykonywania przesyłania.
+4. W okienku akcji wybierz **Zapytania \> Szczegóły przesyłania** , aby wyświetlić szczegóły dzienników wykonywania przesyłania.
 
     ![Wyświetlanie anulowania dziennika przesyłania](media/e-Invoicing-services-get-started-BRA-View-Cancellation-Submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
-Włączenie funkcji BR-00053 (Federalne NF-e) może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostanie to przekazane agencjom zewnętrznym upoważnionym przez organ podatkowy w celu wysyłania faktur elektronicznych do tego organu podatkowego w predefiniowanym formacie wymaganym do integracji z rządową usługą internetową. Administrator może włączyć lub wyłączyć funkcję BR-00053 (Federalne NF-e), przechodząc do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**. Wybierz kartę **Funkcje**, wybierz wiersz zawierający funkcję BR-00053, a następnie dokonaj odpowiedniego wyboru. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
+Włączenie funkcji BR-00053 (Federalne NF-e) może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostanie to przekazane agencjom zewnętrznym upoważnionym przez organ podatkowy w celu wysyłania faktur elektronicznych do tego organu podatkowego w predefiniowanym formacie wymaganym do integracji z rządową usługą internetową. Administrator może włączyć lub wyłączyć funkcję BR-00053 (Federalne NF-e), przechodząc do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**. Wybierz kartę **Funkcje** , wybierz wiersz zawierający funkcję BR-00053, a następnie dokonaj odpowiedniego wyboru. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

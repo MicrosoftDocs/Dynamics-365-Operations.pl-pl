@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: 46095e4ec21aac7cbf98dc1265ea7c8de27148ab
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967341"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015050"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -43,7 +43,7 @@ Lista funkcji zawiera następujące informacje:
 - **Dodano funkcję** – data, kiedy funkcja została dodana do danego środowiska. Ta data jest automatycznie wprowadzana podczas aktualizowania środowiska podczas comiesięcznych wydań.
 - **Moduł** — moduł, którego dotyczy nowa funkcja.
 
-Po wybraniu funkcji w okienku szczegółów po prawej stronie listy funkcji pojawią się dodatkowe informacje. W górnej części okienka zobaczysz nazwę funkcji, datę dodania funkcji, moduł, którego dotyczy ta funkcja, oraz łacze **Dowiedz się więcej**. Wybierz to łącze, aby wyświetlić dokumentację dla tej funkcji. Jeśli dokumentacja nie jest dostępna, nastąpi przekierowanie do strony tymczasowej. Okienko szczegółów zawiera również pole **komentarzy**, w którym można dodawać własne komentarze dotyczące tej funkcji.
+Po wybraniu funkcji w okienku szczegółów po prawej stronie listy funkcji pojawią się dodatkowe informacje. W górnej części okienka zobaczysz nazwę funkcji, datę dodania funkcji, moduł, którego dotyczy ta funkcja, oraz łacze **Dowiedz się więcej**. Wybierz to łącze, aby wyświetlić dokumentację dla tej funkcji. Jeśli dokumentacja nie jest dostępna, nastąpi przekierowanie do strony tymczasowej. Okienko szczegółów zawiera również pole **komentarzy** , w którym można dodawać własne komentarze dotyczące tej funkcji.
 
 Obszar roboczy **Zarządzanie funkcjami** zawiera również kilka kart i na każdej z nich jest wyświetlona lista funkcji.
 
@@ -58,9 +58,9 @@ Jeśli funkcja nie została włączona, w okienku szczegółów zostanie wyświe
 
 - Wybierz funkcję, którą chcesz włączyć, a następnie w okienku szczegółów naciśnij przycisk **Włącz teraz**. Funkcja jest włączona.
 
-Niektóre funkcje nie mogą zostać wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz nacisnąć przycisk **Anuluj**, aby anulować operację i pozostawić funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz**, aby włączyć funkcję, nie będzie można jej później wyłączyć.
+Niektóre funkcje nie mogą zostać wyłączone po ich włączeniu. Jeśli funkcja, którą próbujesz włączyć, nie może zostać wyłączona, zostanie wyświetlone ostrzeżenie. W tym momencie możesz nacisnąć przycisk **Anuluj** , aby anulować operację i pozostawić funkcję wyłączoną. Jeśli jednak wybierzesz opcję **Włącz** , aby włączyć funkcję, nie będzie można jej później wyłączyć.
 
-Niektóre funkcje będą wyświetlały komunikat, który zawiera dodatkowe informacje, zanim je włączysz. Funkcje te są oznaczone żółtym symbolem ostrzegawczym. Należy uważnie przeczytać dodatkowe informacje, aby lepiej zrozumieć, co się stanie, gdy funkcja jest włączona. Jednak nadal można wybrać **Włącz**, aby włączyć funkcję.
+Niektóre funkcje będą wyświetlały komunikat, który zawiera dodatkowe informacje, zanim je włączysz. Funkcje te są oznaczone żółtym symbolem ostrzegawczym. Należy uważnie przeczytać dodatkowe informacje, aby lepiej zrozumieć, co się stanie, gdy funkcja jest włączona. Jednak nadal można wybrać **Włącz** , aby włączyć funkcję.
 
 Niektóre funkcje będą wyświetlał komunikat, że funkcja nie może być włączona, dopóki nie zostanie podjęta akcja. Funkcje te są oznaczone czerwonym symbolem X. Przed uaktywnieniem tej funkcji należy wykonać czynności opisane w opisie. Na przykład jeśli nie można użyć funkcji do momentu wyłączenia klucza konfiguracji, należy najpierw wyłączyć klucz konfiguracji, a następnie powrócić do funkcji Zarządzanie funkcją, aby włączyć tę funkcję.
 
@@ -74,7 +74,7 @@ Jeśli zaplanowano włączenie funkcji w przyszłości, w okienku szczegółów 
 
 1. Wybierz zaplanowaną funkcję, której plan chcesz zmienić, a następnie w okienku szczegółów naciśnij przycisk **Planuj.**
 2. W wyświetlonym oknie dialogowym, w polu **Data włączenia** określ nową datę włączenia funkcji.
-3. Wybierz opcję **Włącz**, aby ponownie zaplanować operację lub **wyłącz**, aby anulować harmonogram.
+3. Wybierz opcję **Włącz** , aby ponownie zaplanować operację lub **wyłącz** , aby anulować harmonogram.
 
 ## <a name="turn-off-a-feature"></a>Wyłączanie funkcji
 
@@ -92,7 +92,7 @@ Czasami jest dostarczana krytyczna funkcja, która musi zostać włączona autom
 
 Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone. Wszystkie funkcje można włączyć, zaznaczając przycisk **Włącz wszystkie**. 
 
-Po wybraniu **Włącz wszystkie**, opcja pojawi się tam, gdzie potrzebujesz podać następujące informacje:
+Po wybraniu **Włącz wszystkie** , opcja pojawi się tam, gdzie potrzebujesz podać następujące informacje:
 - Lista wszystkich funkcji, które wymagają potwierdzenia, zanim będą mogły być włączone. Jeśli chcesz włączyć funkcje z list, wybierz **Tak** dla przycisku **Włącz funkcje wymagające potwierdzenia**.
 - Zostanie wyświetlona lista wszystkich funkcji, które nie mogą być włączone. Te funkcje nie zostaną włączone.
 
@@ -102,8 +102,8 @@ Wszystkie funkcje, które mogą być włączone, zostaną włączone. Jeśli fun
 
 Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
 
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone** , jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone** , jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
 
 
 Jeśli włączysz wszystkich funkcji automatycznie, spowoduje to włączenie wszystkich funkcji, które byłyby włączone, po kliknięciu przycisku **Włącz wszystkie**. Nie zostaną włączone funkcje wymagające potwierdzenia lub funkcje, które nie mogą być włączone, dopóki nie zostanie podjęta akcja.
@@ -181,19 +181,23 @@ Usuwanie funkcji to przełączniki w czasie rzeczywistym włączone/wyłączone 
 Tak, jeśli funkcja wpływa na funkcjonowanie środowiska, które nie ma wpływu funkcjonalnego, może być domyślnie włączona.
 
 ### <a name="how-can-feature-enablement-be-checked-in-code"></a>Jak sprawdzić włączenie funkcji w kodzie?
-Należy zastosować metodę **isFeatureEnabled** w klasie **FeatureStateProvider**, przekazując do niej instancję klasy funkcji. Przykład: 
+Należy zastosować metodę **isFeatureEnabled** w klasie **FeatureStateProvider** , przekazując do niej instancję klasy funkcji. Przykład: 
 
-    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```xpp
+if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+```
 
 ### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Jak sprawdzić włączenie funkcji w metadanych?
 Właściwość **FeatureClass** może służyć do wskazania, że niektóre metadane są skojarzone z funkcją. Należy użyć nazwy klasy używanej dla funkcji, np **BatchContentionPreventionFeature**. Metadane są widoczne tylko w tej funkcji. Właściwość **FeatureClass** jest dostępna w menu, elementach menu, wartościach tekstu stałego oraz polach tabel/widoków.
 
 ### <a name="what-is-a-feature-class"></a>Co to jest klasa funkcji?
-Funkcje w Zarządzaniu funkcjami są zdefiniowane jako *klasy funkcji*. Klasa funkcji **implementuje IFeatureMetadata** i używa atrybutu klasy funkcji w celu identyfikacji się w obszarze roboczym Zarządzanie funkcjami. Istnieje wiele przykładów dostępnych klas funkcji, które można sprawdzać pod kątem włączenia w kodzie za pomocą interfejsu API **FeatureStateProvider**i metadanych, używając właściwości **FeatureClass**. Przykład: 
+Funkcje w Zarządzaniu funkcjami są zdefiniowane jako *klasy funkcji*. Klasa funkcji **implementuje IFeatureMetadata** i używa atrybutu klasy funkcji w celu identyfikacji się w obszarze roboczym Zarządzanie funkcjami. Istnieje wiele przykładów dostępnych klas funkcji, które można sprawdzać pod kątem włączenia w kodzie za pomocą interfejsu API **FeatureStateProvider** i metadanych, używając właściwości **FeatureClass**. Przykład: 
 
-    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
-    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
-    
+```xpp
+[ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+```
+
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Co to jest implementacja IFeatureLifecycle przez niektóre klasy funkcji?
 IFeatureLifecycle jest wewnętrznym mechanizmem Microsoft określającym etap cyklu funkcji. Funkcje mogą być następujące:
 - PrivatePreview — wymaga, aby pakiet testowy był widoczny.

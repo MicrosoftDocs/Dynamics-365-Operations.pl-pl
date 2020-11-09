@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598065"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040060"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 
@@ -51,6 +51,9 @@ Aby dane były wyświetlane, należy wykonać następujące ustawienia **Kredyty
 3. Otwórz **Księga ogólna > Konfiguracja > Księga** i ustaw **Waluta księgowa** oraz **Typ kursu wymiany**.
 4. Zdefiniuj kursy wymiany między walutami transakcji a walutą księgową, walutą księgową a walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
 5. Otwórz **Administracja Systemu > Konfiguracja > Sklep podmiotu** i odśwież łączny wskaźnik **CustCollectionsBIMeasurementsV2**.
+
+>[!NOTE] 
+> Definicje okresów wiekowania muszą być skonfigurowane w **Parametry rozrachunków z należnościami > Windykacje > Ustawienia domyślne windykacji** w celu włączenia danych dotyczących przedawnienia w zawartości Power BI.
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 

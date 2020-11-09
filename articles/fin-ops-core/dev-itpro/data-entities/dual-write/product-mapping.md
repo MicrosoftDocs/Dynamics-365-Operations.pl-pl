@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835861"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000771"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Gdy ekosystem firmy składa się z aplikacji systemu Dynamics 365, takich jak Finance, Supply Chain Management i Sale, firmy często używają tych aplikacji do tworzenia danych produktu źródłowego. Dzieje się tak dlatego, że te aplikacje zawierają rozbudowaną infrastrukturę produktów uzupełnioną o zaawansowane koncepcje cen oraz dokładne dane o dostępnych zapasach. Firmy korzystające z systemu Product Lifecycle Management (PLM) do pozyskiwania danych produktów mogą przesyłać produkty z aplikacji Finance and Operations do innych aplikacji Dynamics 365. Ujednolicone doświadczenie korzystania z produktu w modelu danych produktów jest zintegrowane z Common Data Service, dzięki czemu wszyscy użytkownicy aplikacji, w tym użytkownicy Power Platform, mogą korzystać z bogatych danych produktu pochodzących aplikacji Finance and Operations.
 
@@ -85,7 +82,7 @@ W tym modelu produkt jest reprezentowany przez kombinację dwóch encji w Common
 
 Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące różnych produktów, produktów głównych i wariantów produktu można przechwycić w Common Data Service w następujący sposób:
 
-- **Produkty o podtypie produktu** to produkty, które są definiowane przez siebie Nie trzeba definiować wymiarów. Przykładem jest określona księga. W przypadku tych produktów tworzony jest jeden rekord w encji **Produktu**, a jeden rekord jest tworzony w encji **msdyn\_sharedproductdetails**. Nie utworzono rekordu rodziny produktów.
+- **Produkty o podtypie produktu** to produkty, które są definiowane przez siebie Nie trzeba definiować wymiarów. Przykładem jest określona księga. W przypadku tych produktów tworzony jest jeden rekord w encji **Produktu** , a jeden rekord jest tworzony w encji **msdyn\_sharedproductdetails**. Nie utworzono rekordu rodziny produktów.
 - **Produkty główne** są używane jako standardowe produkty, które posiadają definicję i reguły określające zachowanie w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty znane jako warianty produktów. Na przykład, Koszulka jest produktem głównym i może posiadać Kolor i Rozmiar jako wymiary. Można zwalniać warianty, które mają różne kombinacje tych wymiarów, np. małą, niebieską koszulkę lub średnią, zieloną koszulkę. W integracji jeden rekord na wariant jest tworzony w tabeli produktów. Ten rekord zawiera informacje specyficzne dla wariantu, takie jak różne wymiary. Informacje ogólne dotyczące produktu są przechowywane w jednostce **msdyn\_sharedproductdetails**. (Te ogólne informacje są przechowywane w produkcie głównym). Informacje o danych głównych produktu są synchronizowane z Common Data Service z chwilą utworzenia zwolnionego produktu głównego (ale przed zwolnieniem wariantów).
 - **Odrębne produkty** odnoszą się do wszystkich produktów podtypu produktu i wszystkich wariantów produktu. 
 
@@ -109,7 +106,7 @@ Zauważ, że synchronizacja produktów jest spowodowana przez Finance and Operat
 
 Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary produktu (kolor, rozmiar, styl i konfiguracja) są również mapowane w Common Data Service w celu zdefiniowania wariantów produktu. Na poniższej ilustracji przedstawiono model danych dla wymiaru produktu Kolor. Ten sam model jest stosowany do rozmiarów, stylów i konfiguracji. 
 
-![Model danych produktów](media/dual-write-product-two.png)
+![Model danych dla wymiarów produktu](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary bę
 
 Jednostki miary i odpowiednie konwersja jest dostępna w Common Data Service w następującym modelu danych widocznym na diagramie.
 
-![Model danych produktów](media/dual-write-product-three.png)
+![Model danych dla jednostki miary](media/dual-write-product-three.png)
 
 Pojęcie jednostka miary jest zintegrowane między aplikacjami Finance and Operations, a innymi aplikacjami Dynamics 365. Dla każdej klasy jednostek w aplikacji Finance and Operations jest tworzona grupa jednostek w aplikacji Dynamics 365, która zawiera jednostki należące do klasy jednostek. Domyślna jednostka podstawowa jest również tworzona dla każdej grupy jednostek. 
 
@@ -203,9 +200,9 @@ Zasady dotyczące produktów to zestawy zasad używanych do definiowania produkt
 
 Do unikatowego identyfikowania produktów Dynamics 365 for Finance and Operations i produktów Common Data Service są używane klucze integracji. W przypadku produktów klucz **(productnumber)** jest unikatowym kluczem identyfikującym produkt w Common Data Service. Składa się on z połączenia: **(company, msdyn_productnumber)**. **Firma** wskazuje firmę w Finance and Operations, a **msdyn_productnumber** wskazuje numer produktu dla określonego produktu w Finance and Operations. 
 
-W przypadku użytkowników innych aplikacji Dynamics 365, produkt jest identyfikowany w interfejsie użytkownika za pomocą **msdyn_productnumber** (należy zauważyć, że etykieta pola jest **Numerem produktu**). W formularzu produktu są wyświetlane zarówno dane firmy, jak i msydn_productnumber. Niemniej jednak pole (productnumber) unikatowy klucz produktu nie jest wyświetlane. 
+W przypadku użytkowników innych aplikacji Dynamics 365, produkt jest identyfikowany w interfejsie użytkownika za pomocą **msdyn_productnumber** (należy zauważyć, że etykieta pola jest **Numerem produktu** ). W formularzu produktu są wyświetlane zarówno dane firmy, jak i msydn_productnumber. Niemniej jednak pole (productnumber) unikatowy klucz produktu nie jest wyświetlane. 
 
-W przypadku konstruowania aplikacji w Common Data Service należy zwrócić uwagę na używanie **productnumber** (unikatowego identyfikatora produktu) jako klucza integracji. Nie używaj **msdyn_productnumber**, ponieważ nie jest ono unikatowe. 
+W przypadku konstruowania aplikacji w Common Data Service należy zwrócić uwagę na używanie **productnumber** (unikatowego identyfikatora produktu) jako klucza integracji. Nie używaj **msdyn_productnumber** , ponieważ nie jest ono unikatowe. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Wstępna synchronizacja produktów i migracja danych z Common Data Service do Finance and Operations
 

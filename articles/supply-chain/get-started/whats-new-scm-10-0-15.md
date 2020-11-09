@@ -1,9 +1,9 @@
 ---
-title: Co nowego w wersji zapoznawczej wydania 10.0.15 programu Dynamics 365 Supply Chain Management (grudzień 2020)
+title: Podgląd Dynamics 365 Supply Chain Management 10.0.15 (styczeń 2021)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.15.
 author: kamaybac
 manager: tfehr
-ms.date: 10/09/2020
+ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,35 +17,43 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7c7ac0e795ec085584be9cfdef65333969255ed6
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 0b8e69261563f61de022a626dd12d15d81535392
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989318"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012282"
 ---
-# <a name="whats-new-in-the-dynamics-365-supply-chain-management-preview-of-release-10015-december-2020"></a>Co nowego w wersji zapoznawczej wydania 10.0.15 programu Dynamics 365 Supply Chain Management (grudzień 2020)
+# <a name="preview-of-dynamics-365-supply-chain-management-10015-january-2021"></a>Podgląd Dynamics 365 Supply Chain Management 10.0.15 (styczeń 2021)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.15. Ta wersja ma numer kompilacji 10.0.644 i jest dostępna w następujący sposób:
 
-- **Wersja zapoznawcza wydania 10.0.15** Październik 2020
-- **Ogólna dostępność wydania 10.0.15 (aktualizacja ręczna):** Listopad 2020
-- **Ogólna dostępność wydania 10.0.15 (aktualizacja automatyczna):** Grudzień 2020
+- **Wersja zapoznawcza wydania:** Październik 2020
+- **Ogólna dostępność wydania (Samoaktualizacja):** Listopad 2020
+- **Ogólna dostępność wydania (Samoaktualizacja):** Styczeń 2021
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację, która jest obecnie dostępna dla tej funkcji. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne. Skorzystaj z łączy do planu wydania, aby przejrzeć daty wydania, lub przejdź [Nowe i planowane funkcje Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby zapoznać się z przeglądem dat dla wszystkich funkcji wydanych i planowanych dla bieżącego planu wydania. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
+To wydanie obejmuje następujące nowe funkcje. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne. Postępuj zgodnie z łączami do [planu wydania](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
-- Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych
+- Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych<!-- <br> - For more information, see [Cloud and edge scale units for manufacturing and warehouse management workloads](../cloud-edge/cloud-edge-landing-page.md).-->
+
 - [Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](../warehousing/create-transfer-order-from-warehouse-app.md).
+
 - [Domyślne pola odpowiedzi na ZO dla dostawcy składającego ofertę](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/default-rfq-reply-fields-for-vendor-bidding)<br> - Aby uzyskać więcej informacji, zobacz [Omówienie zapytań ofertowych (ZO)](../procurement/request-quotations.md).
+
 - [Dodatek Zarządzanie zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/engineering-change-management)<!-- <br> - For more information, see [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).-->
+
 - [Przewodniki po rzeczywistości mieszanej dla produkcji](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mixed-reality-guides-manufacturing)<br> - Aby uzyskać więcej informacji, zobacz temat [Udostępnianie przewodników po rzeczywistości mieszanej pracownikom produkcji](../production-control/instruction-guides-in-production-overview.md).
-- [Nowy interfejs użytkownika dla modułu uruchomienie produkcji](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<!-- <br> - For more information, see [How workers use the production floor execution interface](../production-control/production-floor-execution-use.md).-->
+
+- [Nowy interfejs użytkownika dla modułu uruchomienie produkcji](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/mes-terminal-enhancements-discrete-manufacturing)<br> - Aby uzyskać więcej informacji, zobacz [Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-use.md).
+
 - [Przetwarzanie zdarzeń aplikacji magazynowej](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/process-warehouse-app-events)<br> - Aby uzyskać więcej informacji, zobacz temat [przetwarzania zdarzeń aplikacji Warehouse](../warehousing/warehouse-app-events.md).
+
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

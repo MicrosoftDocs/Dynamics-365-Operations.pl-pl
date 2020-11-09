@@ -19,15 +19,14 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 08e6a521818c919b364033e22643b9ee4ce0ec65
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 211bcf3f4938b438e417f92cd385aaa04278a404
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024667"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107168"
 ---
 # <a name="commerce-home-page"></a>Commerce — strona główna
-
 
 [!include [banner](includes/banner.md)]
 
@@ -50,8 +49,8 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Konfiguruj środowisko wersji zapoznawczej usługi Commerce](provisioning-guide.md)
 - [Architektura Commerce](retail-components.md)
 - [Konfigurowanie kanałów](channels-overview.md)
-- [Sprzedawanie produktów i usług](set-up-retail-products.md)
-- [Zarządzaj zamówieniami](Order-fulfillment-overview.md)
+- [Merchandising produktów i usług](set-up-retail-products.md)
+- [Zarządzanie zamówieniami](Order-fulfillment-overview.md)
 - [Zarządzanie odbiorcami](set-up-customer-loyalty-program.md)
 - [Zarządzanie finansami](retail-statements.md)
 - [Zarządzanie witryną e-Commerce](online-store-overview.md)

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829292"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997681"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Ustaw Mapowanie pól stanu zamówienia sprzedaży
 
@@ -45,7 +44,7 @@ Wyliczenie **Stan** oferuje następujące wartości:
 - Zafakturowane
 - Anulowane
 
-Wyliczenie **Stanu dokumentu** określa najnowszy dokument, który został wygenerowany dla zamówienia. Jeśli na przykład zamówienie zostało potwierdzone, dokument jest potwierdzeniem zamówienia sprzedaży. Jeśli zamówienie sprzedaży jest częściowo zafakturowane, a pozostały wiersz zostanie potwierdzony, stan dokumentu pozostanie na **Fakturze**, ponieważ faktura jest generowana w późniejszym etapie procesu.
+Wyliczenie **Stanu dokumentu** określa najnowszy dokument, który został wygenerowany dla zamówienia. Jeśli na przykład zamówienie zostało potwierdzone, dokument jest potwierdzeniem zamówienia sprzedaży. Jeśli zamówienie sprzedaży jest częściowo zafakturowane, a pozostały wiersz zostanie potwierdzony, stan dokumentu pozostanie na **Fakturze** , ponieważ faktura jest generowana w późniejszym etapie procesu.
 
 Wyliczenie **Stan dokumentu** oferuje następujące wartości:
 
@@ -98,7 +97,7 @@ W poniższej tabeli przedstawiono mapowanie **Stanu przetwarzania** między Sale
 
 Aby skonfigurować mapowanie dla pól stanu zamówienia sprzedaży, należy włączyć atrybuty **IsSOPIntegrationEnabled** i **isIntegrationUser**.
 
-Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
+Aby włączyć atrybut **IsSOPIntegrationEnabled** , wykonaj następujące kroki.
 
 1. W przeglądarce przejdź do strony `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Zastąp **\<test-name\>** łączem firmy w Sales.
 2. Na otwartej stronie znajdź **organizationid** i zanotuj wartość.
@@ -128,9 +127,9 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
 
     ![IsSOPIntegrationEnabled ma ustawioną wartość true](media/sales-map-integration-enabled.png)
 
-Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
+Aby włączyć atrybut **isIntegrationUser** , wykonaj następujące kroki.
 
-1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system**, wybierz pozycję **Jednostka użytkownika**, a następnie otwórz **Formularz \> Użytkownik**.
+1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system** , wybierz pozycję **Jednostka użytkownika** , a następnie otwórz **Formularz \> Użytkownik**.
 
     ![Otwieranie formularza użytkownika](media/sales-map-user.png)
 

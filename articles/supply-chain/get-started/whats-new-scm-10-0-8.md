@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3801465"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012328"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.8 (luty 2020 r.)
 
@@ -36,13 +36,14 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego*, więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
+To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego* , więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 - [Dodatkowa strefa lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+
 - [Zarządzanie składnikami majątku](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie składnikami majątku — omówienie](../asset-management/index.md).
 - [Anuluj pracę](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Aby uzyskać więcej informacji, zobacz [Anulowanie pracy magazynu w celu obsługi wyjątków](../warehousing/cancel-warehouse-work.md).
 - [Zmień pulę pracy w pracy](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Aby uzyskać więcej informacji, przejdź do opcji [Zmień pulę prac w pracy](../warehousing/change-work-pool-on-work.md).
-- [Stanowisko w grupie pełne](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) - Aby uzyskać więcej informacji, zajrzyj do tematu [Stanowisko w grupie pełne](../warehousing/cluster-position-full.md).
+- [Stanowisko w grupie pełne](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Aby uzyskać więcej informacji, odwiedź sekcję [Pozycja klastra zapełniona](../warehousing/cluster-position-full.md).
 - [Potwierdź i przenieś](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Aby uzyskać więcej informacji, Sprawdź temat [Potwierdź i przenieś](../warehousing/confirm-and-transfer.md).
 - [Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Aby uzyskać więcej informacji, przejrzyj sekcję [Dyrektywa lokalizacji dotycząca wiekowania pobrania zapasów](../warehousing/location-directive-inventory-picking-aging.md).
 - [Stan lokalizacji](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)

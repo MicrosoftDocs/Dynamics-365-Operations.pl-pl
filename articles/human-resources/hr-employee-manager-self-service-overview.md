@@ -2,8 +2,8 @@
 title: Przegląd samoobsługi dla pracownika etatowego i menedżera
 description: Ten artykuł umożliwia przegląd informacji o obszarze roboczym samoobsługi pracowników i menedżerów.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/17/2020
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712239"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057059"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Przegląd samoobsługi dla pracownika etatowego i menedżera
 
@@ -35,11 +35,11 @@ Aby dodać lub zmienić dowolne informacje osobiste, należy zapoznać się z [E
 
 ## <a name="user-not-assigned-to-a-worker-record"></a>Użytkownik nie został przypisany rekord pracownika
 
-Jeśli użytkownik nie ma przypisanego rekordu **Pracownika** na stronie **Użytkownicy**, zostanie wyświetlony następujący komunikat:
+Jeśli użytkownik nie ma przypisanego rekordu **Pracownika** na stronie **Użytkownicy** , zostanie wyświetlony następujący komunikat:
 
 **Twój identyfikator użytkownika nie jest skojarzony z rekordem pracownika etatowego w systemie. Dopóki tak będzie, nie będziesz mieć możliwości wyświetlania ani aktualizowania swoich informacji. Skontaktuj się ze swoim menedżerem albo zespołem pomocy technicznej, aby uzyskać pomoc.**
 
-Aby przypisać użytkownikowi rekord **Pracownika**, przejdź do sekcji **Użytkownicy** i wybierz użytkownika. Wybierz opcję **Edycja**, dodaj odpowiedniego pracownika w polu **Osoba** w formularzu, a następnie wybierz opcję **Zapisz**. Powinien być teraz możliwy dostęp do samoobsługi pracownika etatowego.
+Aby przypisać użytkownikowi rekord **Pracownika** , przejdź do sekcji **Użytkownicy** i wybierz użytkownika. Wybierz opcję **Edycja** , dodaj odpowiedniego pracownika w polu **Osoba** w formularzu, a następnie wybierz opcję **Zapisz**. Powinien być teraz możliwy dostęp do samoobsługi pracownika etatowego.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Wymagania dotyczące zabezpieczeń dla pracownika i kierownika samoobsługi
 
@@ -80,11 +80,11 @@ W kartotece **Certyfikatów** jest wyświetlany certyfikat i data ważności cer
 
 Karta **Następny zaplanowany przegląd** pokazuje następną recenzję wydajności. Możesz rozpocząć nowy przegląd z tej karty. Kierownik lub przedstawiciel działu kadry mogą również inicjować przeglądy. W zależności od ustawień organizacji można również wyświetlać, aktualizować i przesyłać przeglądy z tej karty.
 
-Celami tymi można zarządzać za pomocą karty **Cele wydajności**. Na tej karcie jest wyświetlana liczba celów w każdym stanie (**Nierozpoczęte**, **śledzone** i **wymagające ulepszenia**). W zależności od przypisanego zabezpieczenia opartego na rolach można tworzyć, aktualizować i usuwać cele. W razie potrzeby można dodawać nowe cele z grup lub szablonów. Menedżerowie i pracownicy działu kadr mogą również tworzyć cele w imieniu pracowników i określać, jak szczegółowe będą poszczególne cele. Kierownicy i pracownicy mogą współpracować na cele i aktualizować działania, miary i stany. Można również uwzględnić załączniki.
+Celami tymi można zarządzać za pomocą karty **Cele wydajności**. Na tej karcie jest wyświetlana liczba celów w każdym stanie ( **Nierozpoczęte** , **śledzone** i **wymagające ulepszenia** ). W zależności od przypisanego zabezpieczenia opartego na rolach można tworzyć, aktualizować i usuwać cele. W razie potrzeby można dodawać nowe cele z grup lub szablonów. Menedżerowie i pracownicy działu kadr mogą również tworzyć cele w imieniu pracowników i określać, jak szczegółowe będą poszczególne cele. Kierownicy i pracownicy mogą współpracować na cele i aktualizować działania, miary i stany. Można również uwzględnić załączniki.
 
 Użytkownik może wyświetlić swoje istniejące umiejętności na karcie **umiejętności**. Można zaktualizować kwalifikacje, dodać nowe lub usunąć te, które nie są już potrzebne. W zależności od ustawień organizacji zmiany umiejętności mogą przechodzić proces zatwierdzania.
 
-Bieżące wynagrodzenie można wyświetlić za pomocą karty **wynagrodzeń**. Wybierz opcję **Pokaż**, aby wyświetlić kwotę rocznej wypłaty i ostatniej podwyżki. Jeśli użytkownik jest zatrudniony w więcej niż jednej firmie, każda roczna kwota jest wyświetlana na karcie. Aby wyświetlić historię szczegółowej rekompensaty, wybierz roczną kwotę wynagrodzenia, aby otworzyć formularz **Historia stałych i zmiennych wynagrodzeń**. Przyszłe wynagrodzenie nie jest wyświetlane w tym formularzu. Jeśli istnieje więcej niż jeden zatrudnienie, można przełączać się między firmami w ramach tego formularza, aby wyświetlić historię wynagrodzenia bez rejestrowania się w każdej firmie.
+Bieżące wynagrodzenie można wyświetlić za pomocą karty **wynagrodzeń**. Wybierz opcję **Pokaż** , aby wyświetlić kwotę rocznej wypłaty i ostatniej podwyżki. Jeśli użytkownik jest zatrudniony w więcej niż jednej firmie, każda roczna kwota jest wyświetlana na karcie. Aby wyświetlić historię szczegółowej rekompensaty, wybierz roczną kwotę wynagrodzenia, aby otworzyć formularz **Historia stałych i zmiennych wynagrodzeń**. Przyszłe wynagrodzenie nie jest wyświetlane w tym formularzu. Jeśli istnieje więcej niż jeden zatrudnienie, można przełączać się między firmami w ramach tego formularza, aby wyświetlić historię wynagrodzenia bez rejestrowania się w każdej firmie.
 
 Umożliwia wyświetlanie dokumentów i zarządzanie nimi przy użyciu karty **Załączniki**. Można zarządzać wszystkimi załącznikami **Zewnętrznymi**. Załączniki można dodawać za pomocą funkcji pracownik etatowy lub formularza **Pracownik**. Załączniki są domyślnie ustawione jako **zewnętrzne**.
 
@@ -94,9 +94,9 @@ W tej sekcji znajdują się łącza do innych obszarów samoobsługi pracownika 
 
 Utwórz konto do świadczeń za pomocą łącza **Świadczenia**. Aby uzyskać więcej informacji o zarządzaniu świadczeniami, zobacz [Omówienie świadczeń](hr-benefits-management-overview.md).
 
-W obszarze **wydajność** można wybrać **arkusze wydajności** w celu utworzenia wpisów dziennika wydajności, które będą używane zarówno w celach, jak i przeglądach wydajności. Możesz wybrać opcję **Wyślij opinię**, aby przekazać opinie innym pracownikom w organizacji. W zależności od ustawień organizacji wiadomości e-mail mogą być wysyłane do adresata, nadawcy i menedżerów. Opinie można przesyłać do wszystkich pracowników w organizacji. Przesyłanie opinii nie jest ograniczone przez firmę.
+W obszarze **wydajność** można wybrać **arkusze wydajności** w celu utworzenia wpisów dziennika wydajności, które będą używane zarówno w celach, jak i przeglądach wydajności. Możesz wybrać opcję **Wyślij opinię** , aby przekazać opinie innym pracownikom w organizacji. W zależności od ustawień organizacji wiadomości e-mail mogą być wysyłane do adresata, nadawcy i menedżerów. Opinie można przesyłać do wszystkich pracowników w organizacji. Przesyłanie opinii nie jest ograniczone przez firmę.
 
-W obszarze **Kwalifikacje** można wprowadzać zmiany w **Kursach**, **Wykształceniu**, **Stanowiskach zaufania** i **Doświadczeniu zawodowym**. W zależności od ustawień organizacji aktualizacje tych kompetencji mogą przejść proces zatwierdzania.
+W obszarze **Kwalifikacje** można wprowadzać zmiany w **Kursach** , **Wykształceniu** , **Stanowiskach zaufania** i **Doświadczeniu zawodowym**. W zależności od ustawień organizacji aktualizacje tych kompetencji mogą przejść proces zatwierdzania.
 
 Istnieje możliwość wyświetlania szczegółów zadania w **Organizacji**. Szczegóły stanowiska obejmują kwalifikacje, certyfikaty i zakres odpowiedzialności dla stanowiska głównego. Można również przejrzeć wszystkie wypożyczone sprzęty, które zostały wyewidencjonowane dla danego użytkownika. W zależności od ustawień organizacji zmiany w wypożyczonym sprzęcie mogą przechodzić proces zatwierdzania.
 
@@ -165,7 +165,7 @@ Informacje o moim zespole umożliwiają menedżerom wyświetlanie i aktualizowan
 
 Karta **Podsumowanie** zawiera szybki przegląd bezpośrednich podwładnych. Jeśli podwładny bezpośredni na również podwładnych, na karcie wyświetlana jest liczba bezpośrednich podwładnych w górnej sekcji wraz z przyciskiem **Wyświetl zespół**. Opcje powyżej każdej karty mają zastosowanie do wybranego pracownika. Na przykład, jeśli chcesz wprowadzić żądanie opuszczenia w imieniu pracownika, wybierz pracownika, a następnie wybierz **Żądanie czasu wolnego** powyżej karty. 
 
-Jeśli po wybraniu pracownika zostanie wybrany przycisk **Szczegóły**, zostaną wyświetlone następujące opcje:
+Jeśli po wybraniu pracownika zostanie wybrany przycisk **Szczegóły** , zostaną wyświetlone następujące opcje:
 
 - **Certyfikaty**
 - **Kompensata**
@@ -193,15 +193,15 @@ Można wyświetlać dane dotyczące stanowisk zarówno dla podwładnych bezpośr
 
 #### <a name="compensation-tab"></a>Karta Wynagrodzenie
 
-Na karcie **Wynagrodzenie** jest wyświetlane wynagrodzenie roczne danego pracownika. Identyfikator firmy jest wyświetlany pod kwotą wynagrodzenia. Jeśli pracownik ma więcej niż jedno zatrudnienie i jest opłacany z wielu podmiotów prawnych, pracownik będzie miał wiele kartki wynagrodzeń. Wartość ostatniej podwyżki i procentu wyświetlana na podstawie firmy zatrudnienia.
+Na karcie **Wynagrodzenie** jest wyświetlane wynagrodzenie roczne danego pracownika. Identyfikator firmy jest wyświetlany pod kwotą wynagrodzenia. Jeśli pracownik ma więcej niż jedno zatrudnienie i jest opłacany z wielu podmiotów prawnych, pracownik będzie miał wiele planów wynagrodzeń. Aby wyświetlić wszystkie plany wynagrodzeń w różnych firmach bez przełączania firm, należy włączyć kompensację krzyżową w obszarze **Human Resources > wspólne parametry > Zaawansowany dostęp > Włącz wynagrodzenie międzyfirmowe**.
 
-Aby wyświetlić historię wynagrodzeń, wybierz kwotę zarobków, aby otworzyć formularz **Szczegółów**. W formularzu **Wynagrodzeń** są wyświetlane tylko bieżące i historyczne rekordy opłat stałych i zmiennych wynagrodzeń. Jeśli pracownik ma więcej niż jeden zatrudnienie, można przełączać się między firmami w celu wyświetlenia historii wynagrodzeń w każdej firmie.
+Aby wyświetlić historię wynagrodzeń, wybierz kwotę zarobków, aby otworzyć formularz **Szczegółów**. W formularzu **Wynagrodzeń** są wyświetlane tylko bieżące i historyczne rekordy opłat stałych i zmiennych wynagrodzeń. Jeśli pracownik ma więcej niż jeden zatrudnienie, można przełączać się między firmami w celu wyświetlenia historii wynagrodzeń w każdej firmie lub włączyć wynagrodzenie międzyfirmowe w parametrach wspólnych w module zasoby ludzkie, aby wyświetlić wszystkie systemy wynagrodzeń.
 
 Można wyświetlać wynagrodzenia zarówno dla podwładnych bezpośrednich, jak i rozszerzonych.
 
 #### <a name="leave-and-absence-tab"></a>Karta Urlopy i nieobecności
 
-Na karcie **Urlopy i nieobecności** wyświetlane są bilanse najlepszych pracowników, którzy są aktywni. Aby wykonać akcję lub wyświetlić pełną listę działań, wybierz **Szczegóły**, a następnie wybierz opcję **Czas wolny**. Na formularzu **Czasu wolnego** można przeglądać salda, wnioski, czasowo zatwierdzony okres, a także prognozować salda, aby ułatwić pracownikom lepsze zarządzanie czasem. W zależności od ustawień organizacji można również żądać czasu wolnego dla bezpośrednich i rozszerzonych podwładnych.
+Na karcie **Urlopy i nieobecności** wyświetlane są bilanse najlepszych pracowników, którzy są aktywni. Aby wykonać akcję lub wyświetlić pełną listę działań, wybierz **Szczegóły** , a następnie wybierz opcję **Czas wolny**. Na formularzu **Czasu wolnego** można przeglądać salda, wnioski, czasowo zatwierdzony okres, a także prognozować salda, aby ułatwić pracownikom lepsze zarządzanie czasem. W zależności od ustawień organizacji można również żądać czasu wolnego dla bezpośrednich i rozszerzonych podwładnych.
 
 #### <a name="performance-goals-tab"></a>Karta Celów dotyczących wydajności
 
@@ -211,6 +211,6 @@ Kierownictwo może zobaczyć wszystkie cele zespołu za pośrednictwem kafelka *
 
 #### <a name="reviews-tab"></a>Karta Recenzje
 
-Na karcie **Recenzje** znajduje się podsumowanie przeglądów pracowników w poszczególnych stanach: **w toku**, **gotowe do przejrzenia** i **końcowe recenzje**. Aby uzyskać dostęp do recenzji pracownika, wybierz przycisk **Szczegóły**, a następnie wybierz opcję Recenzje, które chcesz współpracować. W zależności od tego, gdzie znajduje się przegląd w ramach procesu przepływu pracy, można sprawdzić, czy przegląd jest dostępny do aktualizacji. 
+Na karcie **Recenzje** znajduje się podsumowanie przeglądów pracowników w poszczególnych stanach: **w toku** , **gotowe do przejrzenia** i **końcowe recenzje**. Aby uzyskać dostęp do recenzji pracownika, wybierz przycisk **Szczegóły** , a następnie wybierz opcję Recenzje, które chcesz współpracować. W zależności od tego, gdzie znajduje się przegląd w ramach procesu przepływu pracy, można sprawdzić, czy przegląd jest dostępny do aktualizacji. 
 
 Możesz  zobaczyć wszystkie recenzje twojego zespołu za pośrednictwem kafelka **Recenzje wydajności zespołu** w sekcji **Podsumowania** **Mojego zespołu**.

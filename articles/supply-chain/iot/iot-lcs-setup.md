@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae6b36c40d2f2f9e5266dfb3e2d1cbbb57755222
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: ad8b33633646f27bc368dc4bbedc1eb64c150a9f
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803098"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014942"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>Instalowanie dodatku Analiza Internetu rzeczy (IoT) w usługach LCS
 
@@ -34,7 +34,7 @@ W tym temacie objaśniono, jak zainstalować dodatek analizy Internetu rzeczy (I
 
 1. Otwórz usługi LCS i przejdź do swojego środowiska Microsoft Dynamics 365 Supply Chain Management.
 2. Przewiń w dół do sekcji **Dodatki środowiska**.
-3. Wybierz pozycję **Zainstaluj nowy dodatek**, aby wyświetlić listę dodatków, które zostały włączone dla środowiska.
+3. Wybierz pozycję **Zainstaluj nowy dodatek** , aby wyświetlić listę dodatków, które zostały włączone dla środowiska.
 4. W oknie dialogowym **Wybieranie dodatku do zainstalowania** wybierz pozycję **Analiza Internetu rzeczy (IoT)**.
 5. W oknie dialogowym **konfigurowania dodatku** podaj szczegóły dotyczące centrum IoT i pamięci podręcznej Redis. Wymagane wartości można znaleźć w magazynie kluczy utworzonym podczas [tworzenia zasobów platformy Azure](iot-azure-setup.md).
 
@@ -52,7 +52,7 @@ Konfiguracja usługi LCS jest teraz zakończona. Następnym krokiem jest [skonfi
 
 ## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>Odinstalowywanie dodatku
 
-1. [Wyłącz scenariusze](iot-scenario-setup.md#how-to-disable-a-scenario) w aplikacji Supply Chain Management.
+1. [Wyłącz scenariusze](iot-scenario-setup.md#disable-a-scenario) w aplikacji Supply Chain Management.
 2. W usługach LCS przejdź do szczegółów środowiska Supply Chain Management.
 3. Przewiń w dół do sekcji **Dodatki środowiska**.
-4. Wybierz pozycję **Odinstaluj**dla dodatku analizy Internetu rzeczy (IoT).
+4. Wybierz pozycję **Odinstaluj** dla dodatku analizy Internetu rzeczy (IoT).

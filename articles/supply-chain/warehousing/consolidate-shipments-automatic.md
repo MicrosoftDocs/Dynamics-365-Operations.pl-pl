@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: f4d095456435a3401daa173d79b80b81176a3c17
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987125"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016869"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
 
@@ -56,7 +56,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-order-1-2"></a>Zamówienie sprzedaży 1-2
@@ -68,7 +68,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-order-1-3"></a>Zamówienie sprzedaży 1-3
@@ -80,12 +80,12 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 1. Dodaj drugi wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0002* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0002* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
     - **Metoda dostawy:** *Airwa-Air*
 
@@ -99,12 +99,12 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne*)
+    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne* )
     - **Ilość:** *1.00*
 
 1. Dodaj drugi wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe*)
+    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe* )
     - **Ilość:** *1.00*
     - **Metoda dostawy:** *Airwa-Air*
 
@@ -118,12 +118,12 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne*)
+    - **Kod pozycji:** *M9200* (pozycja, dla której filtr **Kod 4** został ustawiony na *Łatwopalne* )
     - **Ilość:** *1.00*
 
 1. Dodaj drugi wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe*)
+    - **Kod pozycji:** *M9201* (pozycja, dla której filtr **Kod 4** został ustawiony na *Materiały wybuchowe* )
     - **Ilość:** *1.00*
     - **Metoda dostawy:** *Airwa-Air*
 
@@ -141,7 +141,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 ### <a name="create-order-set-5"></a>Tworzenie zestawu zamówień 5
@@ -155,7 +155,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-order-5-3"></a>Zamówienie sprzedaży 5-3
@@ -167,7 +167,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 ### <a name="create-order-set-6"></a>Tworzenie zestawu zamówień 6
@@ -181,7 +181,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-orders-6-3-and-6-4"></a>Zamówienia sprzedaży 6-3 i 6-4
@@ -193,7 +193,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-orders-6-5-and-6-6"></a>Zamówienia sprzedaży 6-5 i 6-6
@@ -207,7 +207,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 #### <a name="sales-orders-6-7-and-6-8"></a>Zamówienia sprzedaży 6-7 i 6-8
@@ -221,7 +221,7 @@ Przejdź do pozycji **Rozrachunki z odbiorcami \> Zamówienia \> Wszystkie zamó
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
     - **Ilość:** *1.00*
 
 ## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a>Automatyczne zwalnianie zamówień sprzedaży do magazynu
@@ -236,7 +236,7 @@ Dla każdego utworzonego wcześniej zestawu zamówień sprzedaży wykonasz trzy 
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Szablony grupy czynności**.
 1. Ustaw pole **Typ szablonu grupy czynności** na *Wysyłka*.
-1. Znajdź i wybierz szablon grupy czynności skojarzony z magazynem, który został użyty w zestawach zamówień utworzonych dla tego scenariusza. Jeśli na przykład użyto magazynu *24*, wybierz szablon grupy czynności **24 — wysyłka domyślna**. Jeśli użyto magazynu *61*, wybierz szablon grupy czynności **61 — wysyłka**.
+1. Znajdź i wybierz szablon grupy czynności skojarzony z magazynem, który został użyty w zestawach zamówień utworzonych dla tego scenariusza. Jeśli na przykład użyto magazynu *24* , wybierz szablon grupy czynności **24 — wysyłka domyślna**. Jeśli użyto magazynu *61* , wybierz szablon grupy czynności **61 — wysyłka**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. Ustaw opcję **Przetwarza grupę czynności w czasie uwalniania jej do magazynu** na wartość *Nie*.
 
@@ -244,16 +244,16 @@ Dla każdego utworzonego wcześniej zestawu zamówień sprzedaży wykonasz trzy 
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Zwolnij do magazynu \> Automatyczne zwalnianie zamówień sprzedaży**
 1. Ustaw pole **Ilość do zwolnienia** na wartość *Wszystko*.
-1. Na skróconej karcie **Rekordy do uwzględnienia** wybierz pozycję **Filtr**, aby otworzyć okno dialogowe zapytania.
-1. Na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
+1. Na skróconej karcie **Rekordy do uwzględnienia** wybierz pozycję **Filtr** , aby otworzyć okno dialogowe zapytania.
+1. Na karcie **Zakres** wybierz przycisk **Dodaj** , aby dodać wiersz zawierający następujące ustawienia do siatki:
 
     - **Tabela:** *Zamówienie sprzedaży*
     - **Tabela pochodna:** *Zamówienie sprzedaży*
     - **Pole:** *Zamówienie sprzedaży*
     - **Kryteria:** wprowadź rozdzielaną przecinkami listę numerów zamówień sprzedaży z żądanego zestawu zamówień.
 
-1. Wybierz przycisk **OK**, aby zapisać zapytanie.
-1. Wybierz przycisk **OK**, aby rozpocząć procedurę *automatycznego zwalniania do magazynu*.
+1. Wybierz przycisk **OK** , aby zapisać zapytanie.
+1. Wybierz przycisk **OK** , aby rozpocząć procedurę *automatycznego zwalniania do magazynu*.
 
 #### <a name="review-the-shipment-that-is-created-or-updated"></a>Przeglądanie utworzonej lub zaktualizowanej wysyłki
 
@@ -268,7 +268,7 @@ Wykonaj kroki [podstawowej procedury zwalniania do magazynu](#release-procedure)
 Po zakończeniu powinny być widoczne dwie utworzone wysyłki:
 
 - Pierwsza wysyłka zawiera trzy wiersze i została utworzona za pomocą zasad konsolidacji wysyłki *CustomerMode*.
-- Druga wysyłka, która nie korzysta z metody dostawy *Trasy lotnicze*, została utworzona przy użyciu zasad konsolidacji wysyłki *CustomerOrderNo*.
+- Druga wysyłka, która nie korzysta z metody dostawy *Trasy lotnicze* , została utworzona przy użyciu zasad konsolidacji wysyłki *CustomerOrderNo*.
 
 ### <a name="release-sales-orders-from-order-set-2"></a>Zwalnianie zamówień sprzedaży z zestawu zamówień 2
 
@@ -292,7 +292,7 @@ Po zakończeniu powinny być widoczne następujące wykonane akcje:
 
 Wykonaj kroki [podstawowej procedury zwalniania do magazynu](#release-procedure), aby zwolnić zamówienia sprzedaży z zestawu zamówień 4.
 
-Po zakończeniu powinna być widoczna jedna zaktualizowana istniejąca wysyłka (w której pole **Zapotrzebowanie odbiorcy** ma wartość *1*). Dodano do niej jeden nowy wiersz.
+Po zakończeniu powinna być widoczna jedna zaktualizowana istniejąca wysyłka (w której pole **Zapotrzebowanie odbiorcy** ma wartość *1* ). Dodano do niej jeden nowy wiersz.
 
 ### <a name="release-sales-orders-from-order-set-5"></a>Zwalnianie zamówień sprzedaży z zestawu zamówień 5
 
@@ -300,7 +300,7 @@ Wykonaj kroki [podstawowej procedury zwalniania do magazynu](#release-procedure)
 
 Po zakończeniu powinny być widoczne następujące wykonane akcje:
 
-- Zaktualizowano jedną istniejącą wysyłkę (w której pole **Zapotrzebowanie odbiorcy** ma wartość *1*). Dodano do niej wiersz z zamówienia sprzedaży 5-3 (w którym pole **Zapotrzebowanie odbiorcy** ma wartość *1*).
+- Zaktualizowano jedną istniejącą wysyłkę (w której pole **Zapotrzebowanie odbiorcy** ma wartość *1* ). Dodano do niej wiersz z zamówienia sprzedaży 5-3 (w którym pole **Zapotrzebowanie odbiorcy** ma wartość *1* ).
 - Utworzono jedną nową wysyłkę, w której wiersze z zamówień sprzedaży 5-1 i 5-2 są pogrupowane w ramach jednej wysyłki.
 
 ### <a name="release-sales-orders-from-order-set-6"></a>Zwalnianie zamówień sprzedaży z zestawu zamówień 6

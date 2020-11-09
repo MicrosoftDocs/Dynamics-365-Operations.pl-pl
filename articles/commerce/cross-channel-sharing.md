@@ -3,7 +3,7 @@ title: Włączanie i używanie udostępniania między kanałami
 description: W tym temacie opisano sposób włączania i używania funkcji udostępniania między kanałami w kreatorze witryn programu Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5dad866250bc57a9b158ee73948da509ecccd52c
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974086"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019525"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Włączanie i używanie udostępniania między kanałami
 
@@ -59,7 +59,7 @@ Po włączeniu funkcji udostępniania między kanałami informacje będą wyświ
 
 ![Informacje o kanałach widoczne po włączeniu udostępniania między kanałami](./media/channels-cross-channel.png)
 
-Ponadto po włączeniu funkcji udostępniania między kanałami pole **Kanał**w prawym górnym rogu kreatora witryn Commerce będzie zawierać opcję **Sklep internetowy dla kilku kanałów**, która może być używana do zarządzania zawartością między kanałami, jak to pokazano na poniższej ilustracji.
+Ponadto po włączeniu funkcji udostępniania między kanałami pole **Kanał** w prawym górnym rogu kreatora witryn Commerce będzie zawierać opcję **Sklep internetowy dla kilku kanałów** , która może być używana do zarządzania zawartością między kanałami, jak to pokazano na poniższej ilustracji.
 
 ![Opcja Sklep internetowy dla kilku kanałów w polu Kanały po włączeniu udostępniania między kanałami](./media/cross-channel-dropdown.png)
 
@@ -71,11 +71,11 @@ Zawartość między kanałami można tworzyć i stosować na wiele sposobów. Mo
 
 Aby utworzyć fragment między kanałami w konstruktorze witryn Commerce, należy wykonać następujące kroki.
 
-1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
-1. W oknie dialogowym **Nowy fragment strony** wybierz moduł **Transparent promocyjny**, a następnie w obszarze **Nazwa fragmentu strony** wprowadź nazwę (na przykład **Transparent między kanałami**). Następnie wybierz opcję **OK**.
-1. W okienku właściwości modułu **Banner promocyjny** wybierz opcję **Dodaj wiadomość**, a następnie wybierz opcję **Wiadomość**.
-1. W oknie dialogowym **Komunikat**, w obszarze **Tekst** wprowadź wartość **Między kanałami**, a następnie kliknij przycisk **OK**. 
-1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Fragmenty** , a następnie wybierz opcję **Nowy** , aby stworzyć nowy fragment.
+1. W oknie dialogowym **Nowy fragment** wybierz moduł **Transparent promocyjny** , a następnie w obszarze **Nazwa fragmentu** wprowadź nazwę (na przykład **Transparent między kanałami** ). Następnie wybierz opcję **OK**.
+1. W okienku właściwości modułu **Banner promocyjny** wybierz opcję **Dodaj wiadomość** , a następnie wybierz opcję **Wiadomość**.
+1. W oknie dialogowym **Komunikat** , w obszarze **Tekst** wprowadź wartość **Między kanałami** , a następnie kliknij przycisk **OK**. 
+1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
 
 Ten fragment między kanałami może być używany w stronach między kanałami lub specyficznych dla kanału, które są tworzone w dowolnym kanale witryny.
 
@@ -85,14 +85,14 @@ Strony między kanałami mogą być używane w dowolnym kanale danego oddziału.
 
 Aby utworzyć w kreatorze witryn Commerce stronę międzykanałową, w której jest używana zawartość między kanałami, wykonaj następujące kroki.
 
-1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. Przejdź do **Strony** , a następnie wybierz opcję **Nowy** , aby utworzyć nową stronę.
 1. W oknie dialogowym **Wybierz szablon** wybierz szablon, na przykład **Marketing**.
-1. W obszarze **Nazwa strony** wprowadź nazwę strony (na przykład **Strona między kanałami**).
-1. W obszarze **Adres URL strony** wprowadź adres URL strony (na przykład **examplepage**), a następnie wybierz **OK**.
-1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W obszarze **Nazwa strony** wprowadź nazwę strony (na przykład **Strona między kanałami** ).
+1. W obszarze **Adres URL strony** wprowadź adres URL strony (na przykład **examplepage** ), a następnie wybierz **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne** , następnie wybierz przycisk wielokropka ( **...** ), a następnie wybierz pozycję **Dodaj fragment**.
 1. W oknie dialogowym **Dodawanie fragmentu** wybierz wcześniej utworzony fragment międzykanałowy, który ma transparent promocyjny, a następnie kliknij przycisk **OK**.
-1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Między kanałami”.
-1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Między kanałami”.
+1. Wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
 
 ### <a name="create-a-channel-specific-page-that-uses-cross-channel-content"></a>Tworzenie strony specyficznej dla kanału, która używa zawartości między kanałami
 
@@ -100,14 +100,14 @@ Korzystając z zawartości między kanałami na stronach specyficznych dla kana�
 
 Aby utworzyć w kreatorze witryn Commerce stronę specyficzną dla kanału, w której jest używana zawartość między kanałami, wykonaj następujące kroki.
 
-1. Z poziomu określonego kanału, na przykład **Rozszerzony sklep online Fabrikam** przejdź do **Strony**, a następnie wybierz opcję **Nowa**, aby utworzyć nową stronę.
+1. Z poziomu określonego kanału, na przykład **Rozszerzony sklep online Fabrikam** przejdź do **Strony** , a następnie wybierz opcję **Nowa** , aby utworzyć nową stronę.
 1. W oknie dialogowym **Wybierz szablon** wybierz szablon, na przykład **Marketing**.
-1. W obszarze **Nazwa strony** wprowadź nazwę strony (na przykład **Strona specyficzna dla kanału**).
-1. W obszarze **Adres URL strony** wprowadź adres URL strony (na przykład **channelspecificpage**), a następnie wybierz **OK**.
-1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
-1. W oknie dialogowym **Dodawanie fragmentu**, w obszarze **Kanał**, zaznacz opcję **Sklep internetowy między kanałami**. Utworzony wcześniej fragment między kanałami powinien pojawić się na liście. Zaznacz go i wybierz **OK**.
-1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Między kanałami”.
-1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. W obszarze **Nazwa strony** wprowadź nazwę strony (na przykład **Strona specyficzna dla kanału** ).
+1. W obszarze **Adres URL strony** wprowadź adres URL strony (na przykład **channelspecificpage** ), a następnie wybierz **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne** , następnie wybierz przycisk wielokropka ( **...** ), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Dodawanie fragmentu** , w obszarze **Kanał** , zaznacz opcję **Sklep internetowy między kanałami**. Utworzony wcześniej fragment między kanałami powinien pojawić się na liście. Zaznacz go i wybierz **OK**.
+1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Między kanałami”.
+1. Wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
 
 ### <a name="create-a-channel-specific-version-of-a-cross-channel-page"></a>Tworzenie specyficznej dla kanału wersji strony międzykanałowej
 
@@ -119,12 +119,12 @@ Aby utworzyć w kreatorze witryn Commerce specyficzną dla kanału wersję stron
 1. Otwórz utworzoną wcześniej stronę między kanałami.
 1. W polu **Kanał** w prawym górnym rogu wybierz kanał, który powinien mieć określoną zawartość. W edytorze stron zostanie wyświetlony komunikat z monitem o utworzenie nowego wariantu strony.
 1. Wybierz opcję **Utwórz wariant strony**.
-1. W gnieździe **Głównym** wariantu strony wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W gnieździe **Głównym** wariantu strony wybierz przycisk wielokropka ( **...** ), a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Baner promocyjny** i wybierz przycisk **OK**.
-1. W okienku właściwości modułu **Banner promocyjny** wybierz opcję **Dodaj wiadomość**, a następnie wybierz opcję **Wiadomość**.
-1. W oknie dialogowym **Komunikat**, w obszarze **Tekst** wprowadź wartość **Specyficzne dla kanału**, a następnie kliknij przycisk **OK**.
-1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Specyficzny dla kanału”.
-1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. W okienku właściwości modułu **Banner promocyjny** wybierz opcję **Dodaj wiadomość** , a następnie wybierz opcję **Wiadomość**.
+1. W oknie dialogowym **Komunikat** , w obszarze **Tekst** wprowadź wartość **Specyficzne dla kanału** , a następnie kliknij przycisk **OK**.
+1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony. Powinien być widoczny transparent promocyjny o treści „Specyficzny dla kanału”.
+1. Wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
 
 W przypadku użycia podstawowego adresu URL kanału i przejścia do adresu URL strony międzykanałowej w tym oddziale zostanie wyświetlona zawartość dla kanału, a nie zawartość międzykanałowa.
 

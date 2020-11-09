@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 10eb32f75ccfe1521af9ebfe1e73ef08ea4238f7
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597557"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017835"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umieść na ścianie - odłożenie do sklepu
 
@@ -34,12 +35,12 @@ Ta funkcja magazynowania jest również nazywana innymi nazwami, takimi jak otwa
 
 ## <a name="turn-on-the-outbound-sorting-feature"></a>Włącz funkcję sortowania wychodzącego
 
-Zanim będzie możliwe użycie funkcji przekazanie *Umieść na ścianie - odłożenie do sklepu*, funkcja *Sortowanie towarów wychodzących* musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Zanim będzie możliwe użycie funkcji przekazanie *Umieść na ścianie - odłożenie do sklepu* , funkcja *Sortowanie towarów wychodzących* musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Sortowanie wychodzące*
 
-Funkcja *Sortowanie towarów wychodzących* może być używana w połączeniu z funkcją *Kod kroku grupy czynności dotyczący całej organizacji:*, jeśli jest włączona. Należy również włączyć tę funkcję, jeśli będą używane wstępnie zdefiniowane kody skonfigurowane w kodach kroków grupy czynności. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Funkcja *Sortowanie towarów wychodzących* może być używana w połączeniu z funkcją *Kod kroku grupy czynności dotyczący całej organizacji:* , jeśli jest włączona. Należy również włączyć tę funkcję, jeśli będą używane wstępnie zdefiniowane kody skonfigurowane w kodach kroków grupy czynności. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Kod kroku grupy czynności dotyczący całej organizacji*
@@ -51,7 +52,7 @@ W przypadku tego pokazu używane są standardowe dane firmy Contoso i magazyn *6
 ### <a name="location-type"></a>Typ lokalizacji
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Typy lokalizacji**.
-1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć typ lokalizacji służący do sortowania.
+1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć typ lokalizacji służący do sortowania.
 1. Ustaw następujące wartości:
 
     - **Typ lokalizacji:** *SORTOWANIE*
@@ -62,13 +63,13 @@ W przypadku tego pokazu używane są standardowe dane firmy Contoso i magazyn *6
 ### <a name="warehouse-management-parameters"></a>Parametry zarządzania magazynem
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-1. Na karcie **Ogólne**, na skróconej karcie **Typy lokalizacji** w polu **Typ lokalizacji sortowania** wpisz *Sortowanie*.
+1. Na karcie **Ogólne** , na skróconej karcie **Typy lokalizacji** w polu **Typ lokalizacji sortowania** wpisz *Sortowanie*.
 1. Wybierz opcję **Zapisz**.
 
 ### <a name="location-profile"></a>Profil lokalizacji
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Profile lokalizacji**.
-1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć profil lokalizacji dla lokalizacji sortowania.
+1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć profil lokalizacji dla lokalizacji sortowania.
 1. W nagłówku ustaw następujące wartości:
 
     - **Identyfikator profilu lokalizacji:** *Sortowanie*
@@ -128,7 +129,7 @@ Po włączeniu funkcji *Kod kroku grupy czynności dotyczący całej organizacji
 Szablon sortowania określa, czy są tworzone pozycje sortowania, używane kryteria oraz inne atrybuty procesu sortowania.
 
 1. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Pakowanie \> Szablon sortowania towarów wychodzących**.
-1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć szablon sortowania.
+1. W okienku akcji wybierz opcję **Nowe** , aby utworzyć szablon sortowania.
 1. W nagłówku nowego szablonu określ następujące wartości:
 
     - **Identyfikator szablonu sortowania towarów wychodzących:** *Sortowanie grupy czynności*
@@ -155,7 +156,7 @@ Szablon sortowania określa, czy są tworzone pozycje sortowania, używane kryte
 
     - **Utwórz pracę przy zamknięciu stanowiska:** *Tak*
 
-        Jeśli opcja jest ustawiona na *Tak*, po zamknięciu stanowiska zostanie utworzona praca, aby przenieść zapasy do końcowej lokalizacji wysyłki. Jeśli opcja jest ustawiona na *Nie*, zapasy będą natychmiast pobierane dla zamówienia w momencie zamknięcia stanowiska.
+        Jeśli opcja jest ustawiona na *Tak* , po zamknięciu stanowiska zostanie utworzona praca, aby przenieść zapasy do końcowej lokalizacji wysyłki. Jeśli opcja jest ustawiona na *Nie* , zapasy będą natychmiast pobierane dla zamówienia w momencie zamknięcia stanowiska.
 
     - **Przypisanie stanowiska:** *Manual*
 
@@ -173,11 +174,11 @@ Szablon sortowania określa, czy są tworzone pozycje sortowania, używane kryte
 
     - **Kod kroku grupy czynności:** *Sortowanie*
 
-        Jeśli jest włączona funkcja *Kod kroku grupy czynności dotyczący całej organizacji*, kod etapu grupy czynności do *Sortowania* musi być również ustawiony w kodach kroków grupy czynności.
+        Jeśli jest włączona funkcja *Kod kroku grupy czynności dotyczący całej organizacji* , kod etapu grupy czynności do *Sortowania* musi być również ustawiony w kodach kroków grupy czynności.
 
     - **Automatycznie zamknij stanowisko sortowania:** *Tak*
 
-        Jeśli ta opcja jest ustawiona na *Tak*, stanowisko sortowania zostanie automatycznie zamknięte po zakończeniu całej pracy wchodzącej do jej stanowiska.
+        Jeśli ta opcja jest ustawiona na *Tak* , stanowisko sortowania zostanie automatycznie zamknięte po zakończeniu całej pracy wchodzącej do jej stanowiska.
 
     - **Liczba stanowisk sortowania:** *3*
 
@@ -189,14 +190,14 @@ Szablon sortowania określa, czy są tworzone pozycje sortowania, używane kryte
 
     - **Automatycznie pakuj stanowisko sortowania:** *Tak*
 
-        Jeśli ta opcja jest ustawiona na *Tak*, zapasy w pozycji sortowania będą pakowane do kontenera po zamknięciu stanowiska.
+        Jeśli ta opcja jest ustawiona na *Tak* , zapasy w pozycji sortowania będą pakowane do kontenera po zamknięciu stanowiska.
 
     - **Identyfikator profilu pakowania:** *Sortowanie*
 
         To pole definiuje profil pakowania, który będzie używany, gdy stanowisko sortowania jest pakowane do kontenera.
 
-1. W okienku akcji wybierz opcję **Edytuj kwerendę**, aby określić kryteria używane dla tego szablonu sortowania.
-1. W oknie dialogowym kwerenda, na karcie **Sortowanie** wybierz opcję **Nowy**, aby dodać wiersz, a następnie określ następujące wartości:
+1. W okienku akcji wybierz opcję **Edytuj kwerendę** , aby określić kryteria używane dla tego szablonu sortowania.
+1. W oknie dialogowym kwerenda, na karcie **Sortowanie** wybierz opcję **Nowy** , aby dodać wiersz, a następnie określ następujące wartości:
 
     - **Tabela:** *Szczegóły ładunku*
     - **Tabela pochodna:** *Szczegóły ładunku*
@@ -209,7 +210,7 @@ Szablon sortowania określa, czy są tworzone pozycje sortowania, używane kryte
     W okienku akcji zostanie udostępniony przycisk **Podziały szablonu sortowania towarów wychodzących**.
 
 1. W okienku akcji wybierz pozycję **Podziały szablonu sortowania towarów wychodzących**.
-1. Wybierz **Grupuj według pola**, aby pogrupować wysyłki według identyfikatora wysyłki.
+1. Wybierz **Grupuj według pola** , aby pogrupować wysyłki według identyfikatora wysyłki.
 
     To ustawienie spowoduje utworzenie jednego stanowiska sortowania na przesyłkę będącą kontenerem w grupie.
 
@@ -235,7 +236,7 @@ Edytuj szablon grupy czynności używany do popytu sortowania na grupy czynnośc
     - Ustaw opcję **Przetwarza grupę czynności w czasie uwalniania jej do magazynu** na wartość *Nie*.
     - Ustaw opcję **Przypisz do otwartych grup czynności** na *Tak*.
 
-1. Na skróconej karcie **Metody** należy ustawić metodę **sortowania**:
+1. Na skróconej karcie **Metody** należy ustawić metodę **sortowania** :
 
     1. W siatce **Pozostałe metody** wybierz opcję **Sortowanie**.
     2. Korzystaj z przycisku Strzałka w prawo, aby przesunąć **sortowanie** na siatkę **Wybrane metody**.
@@ -268,7 +269,7 @@ Edytuj szablon grupy czynności używany do popytu sortowania na grupy czynnośc
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Menu urządzenia przenośnego**.
 1. Z listy menu wybierz opcję **Wychodzące**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
-1. W siatce **Dostępne menu i elementy menu** znajdź i wybierz element menu **Sortowanie**, który został właśnie utworzony.
+1. W siatce **Dostępne menu i elementy menu** znajdź i wybierz element menu **Sortowanie** , który został właśnie utworzony.
 1. Wybierz strzałkę w prawo, aby przenieść **Sortowanie** do siatki **Struktura menu**. W ten sposób dodasz nowy element menu do menu **Wychodzące**.
 1. Wybierz opcję **Zapisz**.
 
@@ -292,23 +293,23 @@ Należy utworzyć dyrektywy lokalizacji, które będą kierować pracą utworzon
     - Pole **Kod dyrektywy:** należy pozostawić puste.
     - **Wiele jednostek SKU:** *Nie*
 
-1. Wybierz opcję **Zapisz**, aby skrócona karta **Wiersze** stała się dostępna.
-1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy**, a następnie określ następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz** , aby skrócona karta **Wiersze** stała się dostępna.
+1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy** , a następnie określ następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Numer sekwencyjny:** *1*
     - **Od ilości:** *0*
     - **Do ilości:** *1000000*
 
-1. Wybierz opcję **Zapisz**, aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
-1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy**, a następnie określ następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz** , aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
+1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy** , a następnie określ następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Numer sekwencyjny:** *1*
     - **Nazwa:** *Baydoor*
 
-1. Wybierz opcję **Zapisz**, aby udostępnić przycisk **Edytuj kwerendę** na skróconej karcie **Dyrektywy akcji lokalizacji**.
+1. Wybierz opcję **Zapisz** , aby udostępnić przycisk **Edytuj kwerendę** na skróconej karcie **Dyrektywy akcji lokalizacji**.
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz pozycję **Edytuj kwerendę**.
 1. W oknie dialogowym zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** ma wartość *Lokalizacja*. Umożliwia ustawienie pola **Kryterium** dla tego wiersza na *Baydoor*.
-1. Wybierz przycisk **OK**, aby zatwierdzić zmiany.
+1. Wybierz przycisk **OK** , aby zatwierdzić zmiany.
 
 ### <a name="work-classes"></a>Klasy robocze
 
@@ -329,26 +330,26 @@ Należy utworzyć dyrektywy lokalizacji, które będą kierować pracą utworzon
 1. W siatce wybierz szablon pracy **62 Pobranie do pakowania**.
 1. W okienku akcji wybierz **Podziały nagłówka pracy**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
-1. W wierszu, w którym pole **Nazwa pola** ma wartość *Identyfikator wysyłki*, wyczyść pole wyboru **Grupuj według tego pola**.
-1. Wybierz opcję **Zapisz**, a następnie zamknij okno dialogowe **Podziały nagłówka pracy**.
+1. W wierszu, w którym pole **Nazwa pola** ma wartość *Identyfikator wysyłki* , wyczyść pole wyboru **Grupuj według tego pola**.
+1. Wybierz opcję **Zapisz** , a następnie zamknij okno dialogowe **Podziały nagłówka pracy**.
 1. W polu **Typ zlecenia pracy** zaznacz opcję *Pobranie z posortowanych zapasów*.
-1. Wybierz pozycję **Nowy**, aby utworzyć nowy pracy.
+1. Wybierz pozycję **Nowy** , aby utworzyć nowy pracy.
 1. W sekcji **Omówienie** ustaw następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Szablon pracy:** *Pobranie z posortowanych*
     - **Opis szablonu pracy:** *Pobranie z posortowanych*
 
-1. Wybierz opcję **Zapisz**, aby sekcja **Szczegóły szablonu pracy** stała się dostępna.
-1. W sekcji **Szczegóły szablonu pracy** zostaną utworzone dwa wiersze. Wybierz opcję **Nowe**, a następnie określ następujące wartości dla wiersza 1:
+1. Wybierz opcję **Zapisz** , aby sekcja **Szczegóły szablonu pracy** stała się dostępna.
+1. W sekcji **Szczegóły szablonu pracy** zostaną utworzone dwa wiersze. Wybierz opcję **Nowe** , a następnie określ następujące wartości dla wiersza 1:
 
     - **Typ pracy:** *Pobranie*
-    - **Wymagane:** Wybrane (= *Tak*)
+    - **Wymagane:** Wybrane (= *Tak* )
     - **Identyfikator klasy roboczej:** *Sortowane*
 
-1. Wybierz znowu opcję **Nowe**, a następnie określ następujące wartości dla wiersza 2:
+1. Wybierz znowu opcję **Nowe** , a następnie określ następujące wartości dla wiersza 2:
 
     - **Typ pracy:** *Odłożenie*
-    - **Wymagane:** Wybrane (= *Tak*)
+    - **Wymagane:** Wybrane (= *Tak* )
     - **Identyfikator klasy roboczej:** *Sortowane*
 
 1. Wybierz opcję **Zapisz**.
@@ -366,7 +367,7 @@ Aby można było wykazać tę funkcję, trzeba utworzyć pewne zapotrzebowanie. 
 Przed utworzeniem zamówień sprzedaży i wysyłek upewnij się, że w lokalizacjach pobrania jest wystarczająca ilość zapasów dla wszystkich towarów w zamówieniach. Przejrzyj ustawienia dyrektywy lokalizacji, aby potwierdzić lokalizacje pobrania używane do pobierania zamówień sprzedaży. Jeśli konieczne jest skorygowanie zapasów, można ręcznie tworzyć zmiany, skorzystać z uzupełnienia lub skorzystać z dowolnego innego przepływu. Następnie zarezerwuj ekwipunek.
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing \> Zamówienia sprzedaży \> Wszystkie zamówienia sprzedaży**.
-1. Wybierz pozycję **Nowe**, aby utworzyć zamówienie sprzedaży dla zamówienia 1.
+1. Wybierz pozycję **Nowe** , aby utworzyć zamówienie sprzedaży dla zamówienia 1.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
     - **Odbiorca:** *US-001*
@@ -385,11 +386,11 @@ Przed utworzeniem zamówień sprzedaży i wysyłek upewnij się, że w lokalizac
 
 1. Poniższe kroki należy powtórzyć dla każdego wiersza sprzedaży w zamówieniu, aby zarezerwować dla niego zapasy:
 
-    1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacja**.
+    1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacja**.
     1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii** i zamknij stronę.
     1. Wybierz opcję **Zapisz**.
 
-1. Wybierz pozycję **Nowe**, aby utworzyć zamówienie sprzedaży dla zamówienia 2.
+1. Wybierz pozycję **Nowe** , aby utworzyć zamówienie sprzedaży dla zamówienia 2.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
     - **Odbiorca:** *US-004*
@@ -408,11 +409,11 @@ Przed utworzeniem zamówień sprzedaży i wysyłek upewnij się, że w lokalizac
 
 1. Poniższe kroki należy powtórzyć dla każdego wiersza sprzedaży w zamówieniu, aby zarezerwować dla niego zapasy:
 
-    1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacja**.
+    1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacja**.
     1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii** i zamknij stronę.
     1. Wybierz opcję **Zapisz**.
 
-1. Wybierz pozycję **Nowe**, aby utworzyć zamówienie sprzedaży dla zamówienia 3.
+1. Wybierz pozycję **Nowe** , aby utworzyć zamówienie sprzedaży dla zamówienia 3.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
     - **Odbiorca:** *US-007*
@@ -426,7 +427,7 @@ Przed utworzeniem zamówień sprzedaży i wysyłek upewnij się, że w lokalizac
 
 1. Wykonaj następujące kroki, aby zarezerwować zapasy dla linii sprzedaży:
 
-    1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Zapasy** wybierz opcję **Rezerwacja**.
+    1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Zapasy** wybierz opcję **Rezerwacja**.
     1. Na stronie **Rezerwacje** wybierz **Rezerwacja partii** i zamknij stronę.
     1. Wybierz opcję **Zapisz**.
 
@@ -448,7 +449,7 @@ Aby zwolnić poszczególne zamówienia sprzedaży do magazynu, należy wykonać 
 
     Podczas przetwarzania grupy czynności metoda sortowania używa szablonu sortowania w celu przypisania zapasów do pozycji do sortowania. Po zakończeniu przetwarzania grupy czynności zostanie wyświetlony komunikat informacyjny z informacją, że grupa czynności została opublikowana i została utworzona praca.
 
-1. W okienku akcji na karcie **Grupa czynności**, w grupie **Informacje pokrewne** wybierz opcję **Praca**, aby wyświetlić utworzoną pracę. Zanotuj identyfikator pracy.
+1. W okienku akcji na karcie **Grupa czynności** , w grupie **Informacje pokrewne** wybierz opcję **Praca** , aby wyświetlić utworzoną pracę. Zanotuj identyfikator pracy.
 1. Należy przejść do **Zarządzanie magazynem \> Pakowanie i konteneryzacja \> Przypisania stanowisk sortowania towarów wychodzących**.
 1. W lewej kolumnie można wyświetlić wychodzącą pozycję sortowania utworzoną dla każdej wysyłki.
 1. Na skróconej karcie **Kryteria stanowiska sortowania** można wyświetlić identyfikator wysyłki dla danego stanowiska.
@@ -460,7 +461,7 @@ Utworzono jeden identyfikator pracy w celu przeniesienia zapasów z lokalizacji 
 1. Zaloguj się do aplikacji mobilnej jako pracownik w magazynie *62*.
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Pobranie sprzedaży**.
-1. Zaznacz pole **Identyfikator**, a następnie wprowadź identyfikator pracy z przetwarzania grupy czynności.
+1. Zaznacz pole **Identyfikator** , a następnie wprowadź identyfikator pracy z przetwarzania grupy czynności.
 1. Potwierdź wpis.
 
     Następnie wyświetlany jest monit o wprowadzenie docelowego numeru identyfikacyjnego. Zwróć uwagę, że wiersz 1 z zamówienia sprzedaży 1 musi zostać pobrany i dodany do docelowego numeru identyfikacyjnego. Wyświetlany jest kod towaru, ilość, opis towaru i lokalizacja pobrania.
@@ -471,7 +472,7 @@ Utworzono jeden identyfikator pracy w celu przeniesienia zapasów z lokalizacji 
 
 1. Potwierdź wpis.
 
-    Aplikacja mobilna przedstawia w serii stron **Pobrania**, które wskazują na lokalizację pobrania, oraz na towar i ilość, która musi zostać pobrana. Po dodaniu pobranego towaru do numeru identyfikacyjnego należy potwierdzić poprawność pobrania. Ostatnia strona to praca, która powoduje umieszczenie pobranych towarów w lokalizacji sortowania.
+    Aplikacja mobilna przedstawia w serii stron **Pobrania** , które wskazują na lokalizację pobrania, oraz na towar i ilość, która musi zostać pobrana. Po dodaniu pobranego towaru do numeru identyfikacyjnego należy potwierdzić poprawność pobrania. Ostatnia strona to praca, która powoduje umieszczenie pobranych towarów w lokalizacji sortowania.
 
 1. Potwierdź pierwszą pracę pobrania.
 1. Zostanie wyświetlona Następna praca pobrania. Potwierdź pobranie.
@@ -488,12 +489,12 @@ Teraz, gdy wszystkie zapasy zostały wprowadzone do lokalizacji sortowania, nale
 
 1. Logowanie do aplikacji mobilnej.
 1. W menu głównym wybierz opcję **Wychodzące**.
-1. W menu **Wychodzące** wybierz opcję **Sortowanie**, aby rozpocząć sortowanie towarów.
+1. W menu **Wychodzące** wybierz opcję **Sortowanie** , aby rozpocząć sortowanie towarów.
 1. W polu **Numer identyfikacyjny/Con** wprowadź docelowy numer identyfikacyjny dla pobranej pracy zamówienia sprzedaży.
 1. Potwierdź wpis.
 1. Umożliwia wprowadzenie kodu towaru, który ma być posortowany jako pierwszy.
 1. System określa pierwsze stanowisko sortowania, które powinno zostać pokazane. Potwierdź stanowisko sortowania.
-1. Zostanie wyświetlony monit o przypisanie numeru identyfikacyjnego do stanowiska sortowania. Zaznacz pole **Numer identyfikacyjny**, wprowadź numer identyfikacyjny, a następnie potwierdź wpis.
+1. Zostanie wyświetlony monit o przypisanie numeru identyfikacyjnego do stanowiska sortowania. Zaznacz pole **Numer identyfikacyjny** , wprowadź numer identyfikacyjny, a następnie potwierdź wpis.
 
     Ponieważ stanowisko sortowania jest powiązane z identyfikatorem wysyłki, towary te zostaną posortowane w numer identyfikacyjny, który jest właściwy dla wysyłki wychodzącej i zamówienia sprzedaży.
 
@@ -508,9 +509,9 @@ Teraz, gdy wszystkie zapasy zostały wprowadzone do lokalizacji sortowania, nale
     > [!NOTE]
     > Jeśli jest włączone sortowanie automatyczne, ręczna zmiana nie jest dostępna.
 
-1. Po zakończeniu w Microsoft Dynamics 365 Supply Chain Management otwórz stronę **Przypisania stanowisk sortowania towarów wychodzących**, aby przejrzeć stan stanowisk.
+1. Po zakończeniu w Microsoft Dynamics 365 Supply Chain Management otwórz stronę **Przypisania stanowisk sortowania towarów wychodzących** , aby przejrzeć stan stanowisk.
 
-    - Jeśli pozycje są zamykane automatycznie, wybierz opcję **Pokaż zamknięte**, aby wyświetlić zamknięte stanowiska.
+    - Jeśli pozycje są zamykane automatycznie, wybierz opcję **Pokaż zamknięte** , aby wyświetlić zamknięte stanowiska.
     - Zauważ, że są wyświetlane transakcje dotyczące stanowisk sortowania. Wyświetlany jest towar i ilość przetworzona przez stanowisko.
 
     Podczas konfigurowania szablonu wychodzącego sortowania została ustawiona opcja **Automatycznie zamknij stanowisko sortowania** na wartość *Tak*. Z tego względu stanowisko jest automatycznie zamykane po umieszczeniu ostatniego oczekiwanego zapasu. Pozycje sortowania są w stanie **Zamkniętym** i utworzono pracę w celu przeniesienia posortowanych zapasów do lokalizacji *Bramy dokującej*.
@@ -522,14 +523,14 @@ Teraz, gdy wszystkie zapasy zostały wprowadzone do lokalizacji sortowania, nale
 
 ### <a name="manually-close-a-position-optional"></a>Ręcznie zamknij stanowisko (opcjonalnie)
 
-Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatycznie zamknij stanowisko sortowania** dla szablonu wychodzącego sortowania musi mieć wartość *Nie*, a zamknięcie musi być wykonane przed przeniesieniem zapasów do obszaru bramy dokującej. Stanowiska mogą być zamknięte na różne sposoby:
+Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatycznie zamknij stanowisko sortowania** dla szablonu wychodzącego sortowania musi mieć wartość *Nie* , a zamknięcie musi być wykonane przed przeniesieniem zapasów do obszaru bramy dokującej. Stanowiska mogą być zamknięte na różne sposoby:
 
 - Poprzez aplikację magazynową:
 
-    - Użytkownik może skanować jeden z towarów znajdujących się już na stanowisku, a następnie wybrać opcję **Zamknij**, aby zamknąć stanowisko.
+    - Użytkownik może skanować jeden z towarów znajdujących się już na stanowisku, a następnie wybrać opcję **Zamknij** , aby zamknąć stanowisko.
     - Jeśli użytkownik zeskanuje kontener, który został już posortowany, wyświetlany jest komunikat o błędzie. Użytkownik może jednak nadal zamknąć stanowisko.
 
-- Z Microsoft Dynamics 365 Supply Chain Management ze strony **Przypisania stanowisk sortowania towarów wychodzących**:
+- Z Microsoft Dynamics 365 Supply Chain Management ze strony **Przypisania stanowisk sortowania towarów wychodzących** :
 
     - Użytkownik może wybrać rekord ze stanowiskiem wychodzącego sortowania, a następnie w okienku akcji wybrać **Zamknij stanowisko**.
 

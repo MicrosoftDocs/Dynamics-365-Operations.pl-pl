@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d78ae1d7a827a0062f93a883f310b8168ee78634
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: dd42a64bb384561cc0c4a8c9baf1213860691849
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981862"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015085"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 
@@ -40,9 +40,8 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
 3. W Okienku akcji kliknij pozycję **Odchylenie**.
 4. Aby dodać pełną nazwę i krótką nazwę dla języka, kliknij przycisk **Nowy** i wpisz informacje w poniższych polach.
 
-   |                                                                        |                                                                                                                                                                                                                                                                        |
+   |             Pole                                                           |                        opis                                                                                                                                                                                                                                                |
    |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                         <strong>Pole</strong>                         |                                                                                                                      <strong>Opis</strong>                                                                                                                      |
    |                       <strong>Język</strong>                        |                                                                                                               Wybierz język dla bieżącego tekstu.                                                                                                                |
    |    <strong>Mianownik l. poj. (grupa pól Nazwa jednostek)</strong>    |                                                                                       Wprowadź formę liczby pojedynczej dla waluty. Na przykład forma pojedyncza złotówki to „złoty”.                                                                                       |
    |     <strong>Mianownik l. mn. (grupa pól Nazwa jednostek)</strong>     | Wprowadź formę liczby mnogiej dla waluty. Na przykład wpisz „złotych”. <strong>Uwaga:</strong>: Pola <strong>Dopełniacz liczby pojedynczej</strong> i <strong>Dopełniacz l. mn.</strong> są dostępne zależnie od języka wybranego w polu <strong>Język</strong>. |
@@ -51,7 +50,7 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
    |    <strong>Nazwa skrótowa jednostek (grupa pól Krótka nazwa)</strong>    |                                                                                         Wprowadź kod ISO identyfikujący walutę. Na przykład wpisz LTL w celu identyfikowania litów.                                                                                         |
    |   <strong>Nazwa skrótowa części (grupa pól Krótka nazwa)</strong>    |                                                                                               Wprowadź nazwę podjednostki waluty. Na przykład wpisz „groszy”.                                                                                               |
    |       <strong>Spójnik „i” między jednostkami i częściami</strong>       |                                     Zaznacz tę opcję, aby drukować spójnik„i” między jednostkami i częściami waluty. Na przykład w fakturach i raportach kwota 100,20 PLN będzie wyświetlana jako „100 złotych i 20 groszy”.                                      |
-   |       <strong>Rodzaj</strong>       |  Wybierz **Mężczyzna**, **Kobieta** lub **Neutralne**. Ten parametr może mieć wpływ na tekst kwoty odchylenia, która jest wyświetlana w tekście języka lokalnego na Zamówieniu gotówkowym. Na przykład po skonfigurowaniu **Płci** dla waluty euro jako **Neutralne**, kwota 1,01 euro jest zapisywana w języku czeskim na zamówieniu gotówkowym jako *Edno euro 01 cent*.  |
+   |       <strong>Rodzaj</strong>       |  Wybierz **Mężczyzna** , **Kobieta** lub **Neutralne**. Ten parametr może mieć wpływ na tekst kwoty odchylenia, która jest wyświetlana w tekście języka lokalnego na Zamówieniu gotówkowym. Na przykład po skonfigurowaniu **Płci** dla waluty euro jako **Neutralne** , kwota 1,01 euro jest zapisywana w języku czeskim na zamówieniu gotówkowym jako *Edno euro 01 cent*.  |
 
 5. Wybierz opcję **Zapisz**.
 

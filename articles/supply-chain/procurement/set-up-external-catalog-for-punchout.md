@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchVendorPortalRequests
+ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7aecc2c4786a1912bf5ae44f3949428c778f1df9
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826835"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018266"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 
@@ -58,7 +58,7 @@ W tej sekcji dokładniej omówiono 4 zadania z poprzedniej części.
 3. Określ, czy witryna sieci Web zewnętrznego katalogu dostawcy ma być wyświetlana w tym samym oknie przeglądarki, w którym pracownik utworzył zapotrzebowanie, czy też w nowym oknie.
 4. Wybierz dostawcę dla katalogu. Na liście **Firmy** jest wiersz dla każdej firmy, w której skonfigurowano dostawcę. Aby zezwolić użytkownikom na wnioskowanie o produkty bezpośrednio z katalogu dostawcy w niektórych firmach, a w innych nie, można użyć przycisku **Zabroń dostępu** lub **Zezwalaj na dostęp** dla każdej firmy, w której katalog ma być dostępny lub nie.
 5. W polu **Domyślne wygaśnięcie (dni)** wprowadź liczbę dni, przez jaką oferta otrzymana z zewnętrznego katalogu jest ważna i może być używana do kupowania od zewnętrznego dostawcy. Po utworzeniu oferty i pobraniu jej z witryny zewnętrznego katalogu dostawcy oferta jest ważna na dzień określony bieżącą datą systemową i pozostaje ważna przez liczbę dni wprowadzoną w tym polu.
-6. Kliknij przycisk **Dodaj**, aby rozpocząć mapowanie kategorii zaopatrzenia na zewnętrzny katalog. Następnie na liście Nazwa kategorii wybierz kategorię. Lista kategorii jest podzbiorem kategorii zaopatrzenia, do których zamapowano dostawcę we wszystkich firmach skonfigurowanych dla tego dostawcy.
+6. Kliknij przycisk **Dodaj** , aby rozpocząć mapowanie kategorii zaopatrzenia na zewnętrzny katalog. Następnie na liście Nazwa kategorii wybierz kategorię. Lista kategorii jest podzbiorem kategorii zaopatrzenia, do których zamapowano dostawcę we wszystkich firmach skonfigurowanych dla tego dostawcy.
 
     > [!NOTE]
     > Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia dostępu do kategorii dla kupującej firmy lub przyjmującej jednostki operacyjnej. Możliwość wybierania z zewnętrznego katalogu wymaga zezwolenia na dostęp do co najmniej jednej kategorii zaopatrzenia zamapowanej do katalogu.

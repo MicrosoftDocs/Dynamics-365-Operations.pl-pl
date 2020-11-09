@@ -3,7 +3,7 @@ title: Obszar roboczy płatności dla dostawców
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Płatności dla dostawców. Obszar roboczy Płatności dla dostawców zawiera informacje związane z przetwarzaniem płatności dla dostawców.
 author: abruer
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 39a9ba54ba26db5904c2cd519be9f83bbc68c037
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598116"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022526"
 ---
 # <a name="vendor-payments-workspace"></a>Obszar roboczy płatności dla dostawców
 
@@ -37,7 +37,7 @@ Aby dane były wyświetlane w elementach wizualnych **Płatność dostawców** P
 2. Umożliwia przejście do **Księga główna > Kalendarze > Kalendarze obrachunkowe** w celu weryfikacji dat kalendarza obrachunkowego przypisanych do aktywnego okresu.
 3. Przejdź do ustawień **Księga główna > Ustawienie > Księga** aby określić **Waluta rozliczeniowa** i **Typ kursu wymiany**. 
 4. Zdefiniuj kursy wymiany między walutami transakcji a walutą księgową, walutą księgową a walutą systemu. Żeby to zrobić, otwórz **Księga Ogólna > Waluty > Kursy wymiany walut**.
-5. Przejdź do **Administracja systemu > Ustawienie > Magazynu jednostki**, aby odświeżyć **VendPaymentBIMeasureV2** miarę agregacji.
+5. Przejdź do **Administracja systemu > Ustawienie > Magazynu jednostki** , aby odświeżyć **VendPaymentBIMeasureV2** miarę agregacji.
 
 ## <a name="my-work-view"></a>Widok Moja praca
 

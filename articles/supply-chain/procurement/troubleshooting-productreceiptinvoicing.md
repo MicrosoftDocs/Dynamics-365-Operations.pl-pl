@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d86fa3df1de13cc0e0fb94449207a326069da25b
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834412"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018636"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Rozwiązywanie problemów z pokwitowaniem produktów i fakturowaniem
 
@@ -38,7 +38,7 @@ Ilość jest obowiązkowa, jeśli chcesz zaksięgować faktury. Dlatego jeśli z
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="i-cant-consolidate-multiple-product-receipts-into-a-single-purchase-order"></a>Nie można skonsolidować wielu dokumentów przyjęcia produktów w jednym zamówieniu zakupu.
 
@@ -72,9 +72,9 @@ Transakcje mogą być księgowane na zawieszonych kontach księgowych po anulowa
 
 ## <a name="a-product-receipt-voucher-number-is-consumed-even-if-no-financial-voucher-is-generated-during-product-receipt"></a>Numer kuponu przyjęcia produktu jest używany, nawet jeśli podczas przyjęcia produktu nie jest generowany żaden dowód finansowy.
 
-Jeśli dla grupy modeli towaru dla opcji **Naliczone zobowiązanie w dokumencie przyjęcia produktów** jest ustawiona wartość *Nie*, księgowanie nie będzie wykonywane w księdze głównej. Jednak zdarzenie fizyczne zostanie zarejestrowane do celów księgowania w księdze podrzędnej, a to zdarzenie wymaga numeru załącznika. Ten numer załącznika jest numerem załącznika, do którego istnieje odwołanie w transakcjach magazynowych.
+Jeśli dla grupy modeli towaru dla opcji **Naliczone zobowiązanie w dokumencie przyjęcia produktów** jest ustawiona wartość *Nie* , księgowanie nie będzie wykonywane w księdze głównej. Jednak zdarzenie fizyczne zostanie zarejestrowane do celów księgowania w księdze podrzędnej, a to zdarzenie wymaga numeru załącznika. Ten numer załącznika jest numerem załącznika, do którego istnieje odwołanie w transakcjach magazynowych.
 
-Zaleca się ustawienie opcji **Naliczone zobowiązanie w dokumencie przyjęcia produktów** na wartość *Tak*, jak to opisano w następującym wpisie na blogu: [Księguj różne opłaty w momencie przyjęcia produktów](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+Zaleca się ustawienie opcji **Naliczone zobowiązanie w dokumencie przyjęcia produktów** na wartość *Tak* , jak to opisano w następującym wpisie na blogu: [Księguj różne opłaty w momencie przyjęcia produktów](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Ustawienie Księgowanie obciążenia konta w księdze nie jest włączone.
 

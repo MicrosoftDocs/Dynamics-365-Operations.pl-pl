@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172930"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997583"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Bootstrap z danymi firmy — często zadawane pytania
  
@@ -54,14 +53,14 @@ Przykładowym kodem jest aplikacja C#, które można ładować w Visual Studio. 
 
 Po rozpakować się i otwarciu rozwiązania w Visual Studio i odwróceniu NuGet, należy wyszukać w kodzie **DO ZROBIENIA**. Każda decyzja konieczna do zapoznania się z informacjami o firmie, którą należy wykonać, jest zapisywana jako **DO ZROBIENIA** z przykładowym kodem dla implementacji kanonicznej. 
 
-Przykładowy kod pokazuje tylko jeden z wielu sposobów kategoryzowania rekordów jednostek według firm. Zmieniając logikę w sekcjach **DO ZROBIENIA**, można utworzyć kategoryzację niestandardową. 
+Przykładowy kod pokazuje tylko jeden z wielu sposobów kategoryzowania rekordów jednostek według firm. Zmieniając logikę w sekcjach **DO ZROBIENIA** , można utworzyć kategoryzację niestandardową. 
  
 ## <a name="what-should-i-expect"></a>Czego można się spodziewać?
-Domyślnie aplikacja przykładowa umożliwia utworzenie słownika mapowania jednostek biznesowych na kody firm. Każdy obiekt, który został zaksięgowany z polem **OwningBusinessUnit**, jest automatycznie ustawiany w celu używania określonej firmy. Każdy podmiot bez pola **OwningBusinessUnit**, na przykład produkt, ustawi firmę na podstawie mapowania z pustą wartością jednostki biznesowej.
+Domyślnie aplikacja przykładowa umożliwia utworzenie słownika mapowania jednostek biznesowych na kody firm. Każdy obiekt, który został zaksięgowany z polem **OwningBusinessUnit** , jest automatycznie ustawiany w celu używania określonej firmy. Każdy podmiot bez pola **OwningBusinessUnit** , na przykład produkt, ustawi firmę na podstawie mapowania z pustą wartością jednostki biznesowej.
 
-Aplikacja konsoli oczekuje jednego z parametrów: **-Symuluj** lub **-Zastosuj**. Jeśli jest używany parametr wiersza polecenia **–symuluj**, nie są aktualizowane żadne dane. Tylko **simulation_<entityname>.csv** są generowane w tym samym katalogu co narzędzie, po jednym dla każdej jednostki, która mogłaby zostać zaktualizowana. Można iteracyjnie przeglądać te pliki podczas pracy, aby upewnić się, że kod firmy aktualizuje wartości w oczekiwany sposób. 
+Aplikacja konsoli oczekuje jednego z parametrów: **-Symuluj** lub **-Zastosuj**. Jeśli jest używany parametr wiersza polecenia **–symuluj** , nie są aktualizowane żadne dane. Tylko **simulation_<entityname>.csv** są generowane w tym samym katalogu co narzędzie, po jednym dla każdej jednostki, która mogłaby zostać zaktualizowana. Można iteracyjnie przeglądać te pliki podczas pracy, aby upewnić się, że kod firmy aktualizuje wartości w oczekiwany sposób. 
 
-Po zakończeniu pracy z symulowanymi aktualizacjami należy użyć parametru **–zastosuj**. Powoduje zaktualizowanie wszystkich rekordów, w których obecnie występuje nieprawidłowa wartość firmy, w partiach rekordów w liczbie 1000 (domyślnie). Kod jest nieżależny w podany sposób, co oznacza, że można go uruchomić ponownie i zaktualizować tylko niepoprawnie przypisane firmy. W przypadku korzystania z opcji **-zastosuj**, kod wyprowadza pliki CSV wprowadzonych zmian o nazwie **applied_<entityname>.csv.** 
+Po zakończeniu pracy z symulowanymi aktualizacjami należy użyć parametru **–zastosuj**. Powoduje zaktualizowanie wszystkich rekordów, w których obecnie występuje nieprawidłowa wartość firmy, w partiach rekordów w liczbie 1000 (domyślnie). Kod jest nieżależny w podany sposób, co oznacza, że można go uruchomić ponownie i zaktualizować tylko niepoprawnie przypisane firmy. W przypadku korzystania z opcji **-zastosuj** , kod wyprowadza pliki CSV wprowadzonych zmian o nazwie **applied_<entityname>.csv.** 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
+ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b76a6530517ec9e2e513cda7477f271558632650
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 04346363070fff4dc3110a620c3d9bc9b1016d1e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206272"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017858"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planowanie tras przewozu frachtu z przystankami
 
@@ -43,7 +43,7 @@ Plan trasy zawiera segmenty trasy, które dostarczają informacji o przystankach
 Każdy plan trasy musi być skojarzony z przewodnikiem po trasie.
 
 ## <a name="route-guides"></a>Przewodniki po marszrutach
-Przewodnik po trasie definiuje kryteria dopasowywania ładunku do określonego planu trasy. Na przykład można określić centrum źródłowe i centrum przeznaczenia, ograniczyć objętość lub masę kontenera oraz wskazać i przewoźnika, usługę lub grupę. Przewodniki po trasach są dostępne na stronie **Pulpit ustalania stawek i wyznaczania tras**, gdzie ładunki można dopasowywać do tras ręcznie lub automatycznie. Jeśli przewodnik po zadaniach dotyczy trasy z harmonogramem, jest on również dostępny na stronie **Pulpit kompilowania ładunku**.
+Przewodnik po trasie definiuje kryteria dopasowywania ładunku do określonego planu trasy. Na przykład można określić centrum źródłowe i centrum przeznaczenia, ograniczyć objętość lub masę kontenera oraz wskazać i przewoźnika, usługę lub grupę. Przewodniki po trasach są dostępne na stronie **Pulpit ustalania stawek i wyznaczania tras** , gdzie ładunki można dopasowywać do tras ręcznie lub automatycznie. Jeśli przewodnik po zadaniach dotyczy trasy z harmonogramem, jest on również dostępny na stronie **Pulpit kompilowania ładunku**.
 
 ## <a name="scheduled-routes"></a>Zaplanowane marszruty
 Trasa z harmonogramem to wstępnie zdefiniowany plan trasy, który ma harmonogram dat dostaw. Trasy z harmonogramem i bez harmonogramu różnią się sposobem przypisywania do nich ładunków. Jeśli przypiszesz trasę bez harmonogramu przy użyciu pulpitu ustalania stawek i wyznaczania tras, weryfikacja obejmie tylko ładunek i przewodnik po trasie. Jeśli przypiszesz trasę z harmonogramem, będą również uwzględniane daty i adresy z zamówień i centrum oraz data z planu trasy. Nie trzeba używać strony Pulpit ustalania stawek i wyznaczania tras, aby ręcznie przypisać ładunki do trasy z harmonogramem. Zamiast tego można użyć strony Pulpit kompilowania ładunku i wskazać, że dla danej trasy z harmonogramem ładunki mają być kompilowane na podstawie adresów odbiorców i dat dostaw z zamówień sprzedaży. W przypadku tras z harmonogramem plan trasy będzie miał stałe centra źródłowe i przeznaczenia. Zazwyczaj przewoźnik i usługą będą takie same we wszystkich segmentach, ale mogą się różnić. Centra przeznaczenia są tworzone przy użyciu kodów pocztowych odbiorców odwiedzanych na trasie. Dla jednego planu trasy można zdefiniować kilka harmonogramów trasy. Plan trasy musi być skojarzony z przewodnikiem po trasie. Jednakże dla tras z harmonogramami plan można skojarzyć tylko z jednym przewodnikiem po trasie. Harmonogram trasy jest używany tylko do tworzenia rzeczywistych tras na stronie **Harmonogram trasy**. Do proponowania ładunków na stronie Pulpit kompilowania ładunku można użyć domyślnego szablonu ładunku.

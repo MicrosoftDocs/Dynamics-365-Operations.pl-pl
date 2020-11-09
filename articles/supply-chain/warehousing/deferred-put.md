@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d274eae4ad3ba60eadb18ca8de22d4b2d10fe727
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205697"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016708"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odroczone przetwarzanie pracy magazynowej
 
@@ -44,7 +44,7 @@ Zasady konfiguruje się na stronie **Zasady przetwarzania pracy**. W poniższej 
 | Nazwa zasady przetwarzania pracy     | Nazwa zasady przetwarzania pracy. |
 | Typ zlecenia                 | Typ zlecenia pracy, do którego zastosowano zasadę. |
 | Operacja                       | Operacja, która jest przetwarzana przy użyciu zasad. |
-| Metoda przetwarzania pracy          | Metoda wolumetryczna używana do przetwarzania wiersza pracy. Jeśli metoda jest ustawiona na **Natychmiastowe**, zachowanie przypomina zachowanie, gdy żadne zasady przetwarzania pracy nie są używane do przetworzenia wiersza. Jeśli metoda jest ustawiona na **Odroczone**, używane jest odroczone przetwarzania, które używa struktury partii. |
+| Metoda przetwarzania pracy          | Metoda wolumetryczna używana do przetwarzania wiersza pracy. Jeśli metoda jest ustawiona na **Natychmiastowe** , zachowanie przypomina zachowanie, gdy żadne zasady przetwarzania pracy nie są używane do przetworzenia wiersza. Jeśli metoda jest ustawiona na **Odroczone** , używane jest odroczone przetwarzania, które używa struktury partii. |
 | Próg odroczonego przetwarzania   | Wartość **0** (zero) wskazuje, że nie istnieje żaden próg. W takim przypadku używane jest odroczone przetwarzanie, o ile jest to możliwe. Jeśli wynik obliczenia konkretnego progu jest poniżej progu, używana jest metoda Natychmiastowe. W przeciwnym razie używana jest metoda Odroczona, o ile jest to możliwe. W przypadku pracy związanej ze sprzedażą i przenoszeniem próg jest obliczany jako liczba skojarzonych źródłowych wierszy obciążenia, które są przetwarzane w odniesieniu do pracy. W odniesieniu do pracy uzupełniania, próg jest obliczany jako liczba wierszy pracy, które są uzupełniane przez pracę. Ustawiając próg, na przykład **5** dla sprzedaży, mniejszych prac, które mają mniej niż pięć wierszy początkowego obciążenia źródła, nie będzie używane przetwarzanie odroczonego, ale w przypadku większych prac będzie ono używane. Próg ma zastosowane tylko wtedy, gdy metoda przetwarzania pracy jest ustawiona na **Odroczone**. |
 | Grupa przetwarzania wsadowego odroczonego przetwarzania |Grupa przetwarzania wsadowego używana do przetwarzania. |
 

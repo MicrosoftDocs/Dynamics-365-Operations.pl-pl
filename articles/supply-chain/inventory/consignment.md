@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af30938929677ad0e1388760e6b7a992a8718240
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212901"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018383"
 ---
 # <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
@@ -40,7 +40,7 @@ W tym przykładowym scenariuszu firma USMF ma umowę konsygnacyjną z dostawcą 
 2.  Dostawca otrzymuje informację o oczekiwanej dostawie. Może się to stać na jeden z trzech sposobów:
     -   Osoba pracująca w USMF wysyła informacje o zamówieniu do dostawcy.
     -   Dostawca może monitorować obecność oczekiwanych zapasów na stanie, używając do tego interfejsu współpracy z dostawcami.
-    -   Osoba pracująca w USMF filtruje dane na stronie **Dostępne zapasy**, aby wyświetlić tylko te rekordy dostawcy US-104, które mają stan przyjęcia **Zamówione**, a następnie wysyła te informacje do dostawcy.
+    -   Osoba pracująca w USMF filtruje dane na stronie **Dostępne zapasy** , aby wyświetlić tylko te rekordy dostawcy US-104, które mają stan przyjęcia **Zamówione** , a następnie wysyła te informacje do dostawcy.
 3.  Zapasy są dostarczane od dostawcy US-104 do firmy USMF.
 4.  Po przybyciu materiału do USMF zamówienie uzupełnienia zapasów konsygnacyjnych jest aktualizowane o dokument przyjęcia produktów. Rejestrowane są tylko fizycznej ilości zapasów należących do dostawcy. Nie są tworzone żadne transakcje księgi głównej, ponieważ zapasy wciąż są własnością dostawcy.
 5.  Dostawca śledzi aktualizacje fizycznie dostępnych zapasów za pośrednictwem strony **Dostępne zapasy konsygnacyjne**.
@@ -82,17 +82,17 @@ Interfejs współpracy z dostawcami ma trzy strony związane z procesem konsygna
 -   **Dostępne zapasy konsygnacyjne** — pokazuje informacje o towarach konsygnacyjnych, których dostarczenia oczekuje się od dostawcy, oraz o towarach, które są już fizycznie dostępne w siedzibie odbiorcy.
 
 ## <a name="inventory-owners"></a>Właściciele zapasów
-Aby zarejestrować fizyczne przychodzące zapasy konsygnacyjne, należy zdefiniować właściciela będącego dostawcą. Służy do tego strona **Właściciel zapasów**. Wybranie opcji **Konto dostawcy** spowoduje wygenerowanie wartości domyślnych dla pól **Nazwa** i **Właściciel**. Wartość w polu **Właściciel** będzie widoczna dla dostawcy, więc warto ją zmienić, jeśli nazwy kont dostawców przechowywane w firmowych systemach są trudne do rozpoznania przez osoby zewnętrzne. Istnieje możliwość edytowania pola **Właściciel**, ale tylko do momentu zapisania rekordu **Właściciel zapasów**. W polu **Nazwa** jest wprowadzana nazwa strony, z którą jest skojarzone konto dostawcy, i nie można jej zmienić.
+Aby zarejestrować fizyczne przychodzące zapasy konsygnacyjne, należy zdefiniować właściciela będącego dostawcą. Służy do tego strona **Właściciel zapasów**. Wybranie opcji **Konto dostawcy** spowoduje wygenerowanie wartości domyślnych dla pól **Nazwa** i **Właściciel**. Wartość w polu **Właściciel** będzie widoczna dla dostawcy, więc warto ją zmienić, jeśli nazwy kont dostawców przechowywane w firmowych systemach są trudne do rozpoznania przez osoby zewnętrzne. Istnieje możliwość edytowania pola **Właściciel** , ale tylko do momentu zapisania rekordu **Właściciel zapasów**. W polu **Nazwa** jest wprowadzana nazwa strony, z którą jest skojarzone konto dostawcy, i nie można jej zmienić.
 
 [![inventory-owners](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Grupa wymiarów śledzenia
-Towary, które mają być używane w procesach konsygnacji, muszą być powiązane z **grupą wymiarów śledzenia**, która w wymiarze **Właściciel** ma ustawioną wartość **Aktywny**. Wymiar Właściciel zawsze ma zaznaczone opcje **Magazyn fizyczny** i **Magazyn finansowy**. Opcja **Plan zapotrzebowania wg wymiaru** nigdy nie jest zaznaczona.
+Towary, które mają być używane w procesach konsygnacji, muszą być powiązane z **grupą wymiarów śledzenia** , która w wymiarze **Właściciel** ma ustawioną wartość **Aktywny**. Wymiar Właściciel zawsze ma zaznaczone opcje **Magazyn fizyczny** i **Magazyn finansowy**. Opcja **Plan zapotrzebowania wg wymiaru** nigdy nie jest zaznaczona.
 
 [![tracking-dimension-group](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Arkusz zmian własności zapasów
-Arkusz **Zmiana własności zapasów** służy do rejestrowania przeniesienia własności zapasów konsygnacyjnych z dostawcy na firmę, która je zużyje. Podobnie jak każdy arkusz magazynowy, musi być identyfikowany za pomocą nazwy arkusza magazynowego. Nazwy te są tworzone na stronie **Nazwy arkuszy magazynowych**, a w ustawieniu **Typ arkusza** trzeba zaznaczyć wartość **Zmiana własności**.
+Arkusz **Zmiana własności zapasów** służy do rejestrowania przeniesienia własności zapasów konsygnacyjnych z dostawcy na firmę, która je zużyje. Podobnie jak każdy arkusz magazynowy, musi być identyfikowany za pomocą nazwy arkusza magazynowego. Nazwy te są tworzone na stronie **Nazwy arkuszy magazynowych** , a w ustawieniu **Typ arkusza** trzeba zaznaczyć wartość **Zmiana własności**.
 
 [![inventory-ownership-change-journal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 

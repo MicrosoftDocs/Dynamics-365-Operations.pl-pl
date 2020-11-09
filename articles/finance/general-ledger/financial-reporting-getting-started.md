@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967265"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999556"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
@@ -145,8 +145,8 @@ Istnieje kilka typowych problemów, które mogą być przyczyną problemów podc
 
 Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** lub **Edytuj**.
 
-* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
-* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
+* W obszarze Internet Explorer wybierz opcję **Ustawienia** , a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
+* W obszarze Internet Explorer wybierz opcję **Ustawienia** , a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
 * Wyłącz funkcję blokowania wyskakujących okienek w przeglądarce.
 * Do zainstalowania Struktury Microsoft .NET 4.6.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
 * Jeśli używasz programu Microsoft Edge z przeglądarką Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. 
@@ -161,7 +161,7 @@ Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzys
 * Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Raportowania finansowego. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
 * Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Raportowania finansowego](#granting-security-access-to-financial-reporting). Zabezpieczenia w Raportowaniu finansowym są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
 * Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Raportowaniu finansowym może potrwać do 10 minut. 
-  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
+  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia** , a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
 * Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Raportowania finansowego** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
 
 Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynuować pracę, ale nie można zakończyć logowania w oknie Projektanta raportów. 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 0ecc401706911f8b92146b95bb6415185df8b451
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173046"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997559"
 ---
 # <a name="switch-between-vendor-designs"></a>Przełączanie się między projektami dostawcy
 
@@ -34,7 +33,7 @@ ms.locfileid: "3173046"
 
 ## <a name="vendor-data-flow"></a>Przepływ danych dostawcy 
 
-W przypadku wybrania opcji używania jednostki **Konto** do przechowywania dostawców typu **Organizacja** i jednostki **Kontakt** do przechowywania dostawców typu **Osoba**, należy skonfigurować następujące przepływy pracy. W przeciwnym razie ta konfiguracja nie jest wymagana.
+W przypadku wybrania opcji używania jednostki **Konto** do przechowywania dostawców typu **Organizacja** i jednostki **Kontakt** do przechowywania dostawców typu **Osoba** , należy skonfigurować następujące przepływy pracy. W przeciwnym razie ta konfiguracja nie jest wymagana.
 
 ## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a>Użycie rozszerzonego projektu dostawcy dla dostawców typu Organizacji
 

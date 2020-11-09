@@ -3,7 +3,7 @@ title: Moduł płatności
 description: W tym temacie omówiono moduł płatności i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818333"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055388"
 ---
 # <a name="payment-module"></a>Moduł płatności
 
@@ -42,6 +42,9 @@ Moduł płatności obejmuje wszelkie opłaty za zamówienia, które nie są jesz
 
 Złącze płatności Adyen obsługuje również silne uwierzytelnianie klienta (SCA). Część dyrektywy Unii Europejskiej (UE) w sprawie usług płatniczych 2.0 (PSD2.0) wymaga, aby kupujący online byli uwierzytelniani poza doświadczeniem związanym z zakupami online, gdy używają elektronicznej metody płatności. Podczas przepływu realizacji transakcji odbiorcy są przekierowywani do swoich oddziałów bankowych. Następnie po uwierzytelnieniu są przekierowywani z powrotem do przepływu realizacji transakcji w usłudze Commerce. Podczas tego przekierowania informacje, które klient wprowadził w procesie realizacji transakcji (na przykład adres wysyłki, opcje dostawy, informacje o karcie upominkowej i informacje o lojalności) zostaną zachowane. Aby można było włączyć tę funkcję, łącznik płatności musi być skonfigurowany dla SCA w module Commerce Headquarter. Aby uzyskać więcej informacji, zajrzyj do [silnych uwierzytelnień klientów przy użyciu Adyen](adyen_redirect.md).
 
+> [!NOTE]
+> W przypadku łącznika płatności Adyen moduł iframe w module płatności można renderować tylko wtedy, gdy zostanie dodany adres URL Adyen do listy dozwolonych w witrynie. Aby wykonać ten krok, dodaj **\*adyen.com** do **child-src** , **connect-src** , **img-src** , **script-src** i **style-src** dyrektyw zasad bezpieczeństwa witryny. Aby uzyskać więcej informacji, zajrzyj do [Zarządzanie zasadami zabezpieczeń zawartości](manage-csp.md). 
+
 Poniższa ilustracja przedstawia przykład karty upominkowej, modułów lojalnościowych i płatności na stronie kasy.
 
 ![Przykład karty podarunkowej, modułów lojalnościowych i płatności na stronie kasy](./media/ecommerce-payments.PNG)
@@ -52,12 +55,12 @@ Poniższa ilustracja przedstawia przykład karty upominkowej, modułów lojalno�
 |---------------|--------|-------------|
 | Nagłówek | Tekst nagłówka | Opcjonalny nagłówek modułu płatności. |
 | Wysokość ramki iframe | Piksele | Wysokość ramki iframe (w pikselach). W razie potrzeby można regulować wysokość. |
-| Pokaż adres do faktury | **Prawda** lub **Fałsz** | Jeśli dla tej właściwości ustawiono wartość **Prawda**, adres bilingowy będzie obsługiwany przez Adyen w module iframe modułu płatności. Jeśli zostanie ustawiona wartość **Fałsz**, adres bilingowy nie będzie obsługiwany przez Adyen, a użytkownik Commerce musi skonfigurować moduł w celu wyświetlenia adresu na fakturze na stronie realizacja zamówienia. |
+| Pokaż adres do faktury | **Prawda** lub **Fałsz** | Jeśli dla tej właściwości ustawiono wartość **Prawda** , adres bilingowy będzie obsługiwany przez Adyen w module iframe modułu płatności. Jeśli zostanie ustawiona wartość **Fałsz** , adres bilingowy nie będzie obsługiwany przez Adyen, a użytkownik Commerce musi skonfigurować moduł w celu wyświetlenia adresu na fakturze na stronie realizacja zamówienia. |
 | Zastąpienie stylu płatności | Kod arkuszy stylów kaskadowych (CSS) | Ponieważ moduł płatności jest obsługiwany w iframe, istnieje ograniczona możliwość tworzenia stylów. Aby uzyskać więcej stylów, należy użyć tej właściwości. Aby zastąpić style witryny, musisz wkleić kod CSS jako wartość tej właściwości. Zastąpienia i style konstruktora witryn CSS nie mają zastosowania do tego modułu. |
 
 ## <a name="billing-address"></a>Adres na fakturze
 
-Odbiorcy na moduł płatności zapewniają adres bilingowy dla swoich informacji o płatności. Ponadto pozwala im wykorzystać adresy wysyłkowe jako adres bilingowy, aby ułatwić i przyspieszyć przepływ realizacji transakcji. Jeśli **Właściwość pokazuj adres bilingowy** ma wartość **Fałsz**, moduł płatności powinien być skonfigurowany na stronie realizacja zamówienia.
+Odbiorcy na moduł płatności zapewniają adres bilingowy dla swoich informacji o płatności. Ponadto pozwala im wykorzystać adresy wysyłkowe jako adres bilingowy, aby ułatwić i przyspieszyć przepływ realizacji transakcji. Jeśli **Właściwość pokazuj adres bilingowy** ma wartość **Fałsz** , moduł płatności powinien być skonfigurowany na stronie realizacja zamówienia.
 
 ## <a name="add-a-payment-module-to-a-checkout-page-and-set-the-required-properties"></a>Dodaj moduł płatności do strony kasy i ustaw wymagane właściwości
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 3a92970f2e3639090f51cf9e59ffcb148e210494
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070767"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011640"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -38,7 +38,7 @@ Definicja kolumny może zawierać do dwóch do 255 kolumn.
 ### <a name="create-a-column-definition"></a>Tworzenie definicji kolumny
 
 1. W Projektancie raportów w okienku nawigacji kliknij **Definicje kolumn**.
-2. W menu **Plik** kliknij **Nowy**, a następnie kliknij polecenie **Definicja kolumny**.
+2. W menu **Plik** kliknij **Nowy** , a następnie kliknij polecenie **Definicja kolumny**.
 3. Dodaj zawartość definicji kolumny.
 
 ### <a name="open-a-column-definition"></a>Otwieranie definicji kolumny
@@ -48,13 +48,13 @@ Definicja kolumny może zawierać do dwóch do 255 kolumn.
 
 ### <a name="add-a-column-to-a-column-definition"></a>Dodawanie kolumny do definicji kolumny
 
-1. W Projektancie raportów kliknij **Definicje kolumn**, a następnie otwórz definicje kolumny do zmodyfikowania.
+1. W Projektancie raportów kliknij **Definicje kolumn** , a następnie otwórz definicje kolumny do zmodyfikowania.
 2. Wybierz kolumnę, w której chcesz wstawić nową kolumnę.
 3. W menu **Edycja** kliknij **Wstaw kolumnę**. Nowa kolumna pojawi się na lewo od zaznaczonej kolumny.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Usuwanie kolumny z definicji kolumny
 
-1. W Projektancie raportów kliknij pozycję **Definicje kolumn**, a następnie otwórz definicję kolumny, którą chcesz zmodyfikować.
+1. W Projektancie raportów kliknij pozycję **Definicje kolumn** , a następnie otwórz definicję kolumny, którą chcesz zmodyfikować.
 2. Zaznacz kolumnę, którą chcesz usunąć.
 3. W menu **Edycja** kliknij polecenie **Usuń kolumnę**.
 
@@ -112,7 +112,7 @@ W poniższej tabeli opisano kody ograniczeń dotyczących kolumn.
 
 | Kod ograniczenia kolumny | Opis |
 |-------------------------|-------------|
-| SU                      | Pominięcie podkreślenia dla kolumny, w której w definicji wiersza wprowadzono polecenie podkreślenia (**---**) lub polecenia podwójnego podkreślenia (**===**). Na przykład może to służyć do podkreślania kwot będących wynikiem obliczania wartości procentowych. |
+| SU                      | Pominięcie podkreślenia dla kolumny, w której w definicji wiersza wprowadzono polecenie podkreślenia ( **---** ) lub polecenia podwójnego podkreślenia ( **===** ). Na przykład może to służyć do podkreślania kwot będących wynikiem obliczania wartości procentowych. |
 | ST                      | Pominięcie sumy, tak aby wyświetlane były tylko szczegóły w kolumnie (np. kolumna statystyk). |
 | SD                      | Pominięcie szczegółów, aby w kolumnie były widoczne tylko wiersze **TOT** i **CAL** wiersze (z definicji wiersza). |
 | DR                      | Ograniczenie kwot w kolumnie **FD** do kwot po stronie debetowej. |
@@ -138,7 +138,7 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 | Pole                 | Opis |
 |-----------------------|-------------|
-| Tekst nagłówka kolumny    | Ten tekst pojawia się w nagłówku kolumny. Możesz wpisać tekst bezpośrednio w tym polu lub kliknąć przycisk **Wstaw autotekst**, aby wybrać opcję aktualizacji nagłówka kolumny po każdym wygenerowaniu raportu. Aby uwzględnić wiele kodów autotekstu, kliknij ponownie przycisk **Wstaw autotekst**, a następnie kliknij inny kod na liście. |
+| Tekst nagłówka kolumny    | Ten tekst pojawia się w nagłówku kolumny. Możesz wpisać tekst bezpośrednio w tym polu lub kliknąć przycisk **Wstaw autotekst** , aby wybrać opcję aktualizacji nagłówka kolumny po każdym wygenerowaniu raportu. Aby uwzględnić wiele kodów autotekstu, kliknij ponownie przycisk **Wstaw autotekst** , a następnie kliknij inny kod na liście. |
 | Opcje formatu        | Umożliwia zastosowanie formatowania w nagłówku kolumny, np. pole lub podkreślenie. |
 | Rozszerz od Rozszerz do | Umożliwia zdefiniowanie kolumny lub kolumn, do których odnosi się tekst nagłówka. |
 | Uzasadnienie         | Umożliwia określenie, jak tekst nagłówka powinien być wyrównany dla kolumny lub zakresu kolumn, które są określone w polach **Rozszerz od** i **Rozszerz do**. |
@@ -147,7 +147,7 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę nagłówka.
-3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst**, a następnie wybierz opcję.
+3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst** , a następnie wybierz opcję.
 4. W polu **Opcje formatu** wybierz format dla nagłówka.
 5. W polu **Rozszerz od** wprowadź literę kolumny, od której nagłówek kolumny powinien się zaczynać. W polu **Rozszerz do** wprowadź literę kolumny, od której nagłówek kolumny powinien się kończyć.
 6. W obszarze **Uzasadnienie** można ustawić, czy tekst nagłówka kolumny powinien być wyrównany do lewej krawędzi, do środka lub do prawej krawędzi.
@@ -170,10 +170,10 @@ Za pomocą okna dialogowego **Nagłówek kolumny** można dodawać, modyfikować
 
 ### <a name="create-an-automatically-generated-header"></a>Tworzenie nagłówka generowanego automatycznie
 
-Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC** i **FD**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowym kod **\@CalMonthLong** powoduje, że liczba **7** jest rozpoznawana jako **Lipiec**. Jeśli nazwa miesiąca ma być pisana wielkimi literami (na przykład **LIPIEC**), w polu **Tekst nagłówka kolumny** należy wpisać kod autotekstu składający się z samych wielkich liter. Na przykład wpisz **\@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres \@FiscalPeriod-\@FiscalYear od \@StartDate do \@EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
+Projektant raportów może automatycznie wygenerować nagłówki kolumn na podstawie kodów autotekstu. Kody autotekstu są wartościami zmiennymi, które są aktualizowane po każdym wygenerowaniu raportu. Każdy nagłówek kolumny może zawierać te kody, aby określać informacje raportu, które mogą być różne, np. daty czy numery okresów. W związku z tym jedna definicja kolumny może być używana w odniesieniu do wielu definicji raportu, okresów czasu i drzew raportowania. Ponieważ kody autotekstu opierają się na informacjach kalendarza z wierszy szczegółów definicji kolumny, są one obsługiwane tylko kolumn **CALC** i **FD**. Sposób wyświetlania kodu autotekstu w nagłówku kolumny ma wpływ na sposób wyświetlania informacji w raporcie. W oknie dialogowym **Nagłówek kolumny** kody autotekstu są wyświetlane z użyciem małych i wielkich liter. Dlatego w także w raporcie tekst jest wyświetlany przy użyciu małych i dużych liter. Na przykład w standardowym roku kalendarzowym kod **\@CalMonthLong** powoduje, że liczba **7** jest rozpoznawana jako **Lipiec**. Jeśli nazwa miesiąca ma być pisana wielkimi literami (na przykład **LIPIEC** ), w polu **Tekst nagłówka kolumny** należy wpisać kod autotekstu składający się z samych wielkich liter. Na przykład wpisz **\@CALMONTHLONG**. Można łączyć ze sobą kody i tekst. Na przykład można wprowadzić następujący tekst nagłówka: **Okres \@FiscalPeriod-\@FiscalYear od \@StartDate do \@EndDate**. Generowany nagłówek raportu będzie wyglądał mniej więcej tak: **Okres 1-02 od 01-01-2002 do 31-01-2002**.
 
 > [!NOTE]
-> Format niektórych tekstów, np. długich dat, zależy od ustawień regionalnych na serwerze. Aby zmienić te ustawienia, kliknij przycisk **Start**, kliknij **Panel sterowania**, a następnie kliknij **Region i język**. W poniższej tabeli pokazano dostępne opcje autotekstu dla nagłówków kolumn.
+> Format niektórych tekstów, np. długich dat, zależy od ustawień regionalnych na serwerze. Aby zmienić te ustawienia, kliknij przycisk **Start** , kliknij **Panel sterowania** , a następnie kliknij **Region i język**. W poniższej tabeli pokazano dostępne opcje autotekstu dla nagłówków kolumn.
 
 
 | Opcja i kod autotekstu                | Opis |
@@ -195,18 +195,18 @@ Projektant raportów może automatycznie wygenerować nagłówki kolumn na podst
 
 Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określonego okresu. Na przykład jeśli masz raport budżetu dla roku obrachunkowego i chcesz wyświetlać rzeczywiste budżety z poprzednich miesięcy razem z prognozowanymi budżetami przyszłych miesięcy, możesz użyć nagłówka rozszerzonego, aby automatycznie aktualizować nagłówek raportu. Przy tworzeniu nagłówka warunkowego łączenia należy pamiętać o następujących przypadkach:
 
-- Każdy warunek zatrzymania (pole **Rozszerz do**) dopasowany przed warunkiem rozpoczęcia (pole **Rozszerz od**) jest ignorowany. Na przykład kolumna B ma warunek rozszerzenia zdefiniowany jako BASE+1 do BASE, BASE jest w kolumnie C, a BASE+1 jest w kolumnie D. W takim przypadku warunek zatrzymania w kolumnie C jest ignorowany i drukowanie nagłówka zaczyna się w kolumnie D.
-- W przypadku określenia nagłówków kolumn, które nakładają się na siebie, zachodzą one na siebie po wydrukowaniu raportu. Raport jest generowany, ale następujące ostrzeżenie jest wyświetlane w polu **Stan kolejki raportu**: „Nagłówki kolumny BASE zachodzą na inne nagłówki kolumny mogą powodować nakładanie się tekstu”. Na przykład definicja nagłówka w kolumnie B to B do BASE +1, a definicja nagłówka w kolumnie D to BASE+1 do F. W takim przypadku nagłówki są drukowane jeden na drugim i są nieczytelne. Zawsze gdy w definicji **Rozszerz od/Rozszerz do** używana jest wartość BASE, należy wyświetlić wygenerowany raport, aby sprawdzić, czy nagłówki nie nakładają się.
-- Jeśli w definicji rozszerzenia zdefiniowana jest wartość BASE w kolumnie nieprzeznaczonej do drukowania (**NP**), jest ona ignorowana niezależnie od definicji kolumny. Zasadniczo ten scenariusz odpowiada sytuacji, w której nie ma definicji nagłówka kolumny.
-- W przypadku kolumn z drukowaniem warunkowym (**P&lt;B**, **P&gt;=B**) warunkowe nagłówki rozszerzone zachowują się tak samo, jak zwykłe definicje nagłówków kolumn. Na przykład jeśli warunek nie jest spełniony, wszelkie kolejne dopasowani kolumny dla warunku rozszerzenia sprawiają, że nagłówek jest drukowany.
+- Każdy warunek zatrzymania (pole **Rozszerz do** ) dopasowany przed warunkiem rozpoczęcia (pole **Rozszerz od** ) jest ignorowany. Na przykład kolumna B ma warunek rozszerzenia zdefiniowany jako BASE+1 do BASE, BASE jest w kolumnie C, a BASE+1 jest w kolumnie D. W takim przypadku warunek zatrzymania w kolumnie C jest ignorowany i drukowanie nagłówka zaczyna się w kolumnie D.
+- W przypadku określenia nagłówków kolumn, które nakładają się na siebie, zachodzą one na siebie po wydrukowaniu raportu. Raport jest generowany, ale następujące ostrzeżenie jest wyświetlane w polu **Stan kolejki raportu** : „Nagłówki kolumny BASE zachodzą na inne nagłówki kolumny mogą powodować nakładanie się tekstu”. Na przykład definicja nagłówka w kolumnie B to B do BASE +1, a definicja nagłówka w kolumnie D to BASE+1 do F. W takim przypadku nagłówki są drukowane jeden na drugim i są nieczytelne. Zawsze gdy w definicji **Rozszerz od/Rozszerz do** używana jest wartość BASE, należy wyświetlić wygenerowany raport, aby sprawdzić, czy nagłówki nie nakładają się.
+- Jeśli w definicji rozszerzenia zdefiniowana jest wartość BASE w kolumnie nieprzeznaczonej do drukowania ( **NP** ), jest ona ignorowana niezależnie od definicji kolumny. Zasadniczo ten scenariusz odpowiada sytuacji, w której nie ma definicji nagłówka kolumny.
+- W przypadku kolumn z drukowaniem warunkowym ( **P&lt;B** , **P&gt;=B** ) warunkowe nagłówki rozszerzone zachowują się tak samo, jak zwykłe definicje nagłówków kolumn. Na przykład jeśli warunek nie jest spełniony, wszelkie kolejne dopasowani kolumny dla warunku rozszerzenia sprawiają, że nagłówek jest drukowany.
 
 #### <a name="create-a-conditional-spanning-header"></a>Tworzenie warunkowego nagłówka rozszerzonego
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę nagłówka.
-3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst**, a następnie wybierz opcję.
+3. W oknie dialogowym **Nagłówek kolumny** wpisz tekst nagłówka kolumny. Alternatywnie, kliknij przycisk **Wstaw autotekst** , a następnie wybierz opcję.
 4. W polu **Opcje formatu** wybierz styl formatowania dla nagłówka.
-5. Określ okres w stosunku do okresu podstawowego, który jest określany podczas generowania raportu. W polach **Rozszerz od** i **Rozszerz do** wpisz jedną z następujących wartości: **BASE**, **BASE-X** lub **BASE+X**, gdzie X oznacza liczbę okresów z okresu podstawowego. Na przykład po wprowadzeniu **BASE** w polu **Rozszerz od** tekst warunkowego nagłówka rozszerzone kolumny zaczyna się w nagłówku kolumny, gdzie wartość **Okres podstawowy** z definicji raportu jest równy wartości **Okres** z definicji kolumny . Kończy się w kolumnie, która jest wskazana w polu **Rozszerz do**. W związku z tym jeśli rozszerzenie zostało zdefiniowane jako BASE do M i wartość **Okres podstawowy** w definicji raportu wynosi **4**, nagłówek zaczyna się w kolumnie, w której okres jest ustawiony na **4** i kończy się w kolumnie M. Nagłówki zaczynają się i rozpoczynają tylko w kolumnach przeznaczonych do drukowania.
+5. Określ okres w stosunku do okresu podstawowego, który jest określany podczas generowania raportu. W polach **Rozszerz od** i **Rozszerz do** wpisz jedną z następujących wartości: **BASE** , **BASE-X** lub **BASE+X** , gdzie X oznacza liczbę okresów z okresu podstawowego. Na przykład po wprowadzeniu **BASE** w polu **Rozszerz od** tekst warunkowego nagłówka rozszerzone kolumny zaczyna się w nagłówku kolumny, gdzie wartość **Okres podstawowy** z definicji raportu jest równy wartości **Okres** z definicji kolumny . Kończy się w kolumnie, która jest wskazana w polu **Rozszerz do**. W związku z tym jeśli rozszerzenie zostało zdefiniowane jako BASE do M i wartość **Okres podstawowy** w definicji raportu wynosi **4** , nagłówek zaczyna się w kolumnie, w której okres jest ustawiony na **4** i kończy się w kolumnie M. Nagłówki zaczynają się i rozpoczynają tylko w kolumnach przeznaczonych do drukowania.
 6. W obszarze **Uzasadnienie** można ustawić, czy tekst nagłówka kolumny powinien być wyrównany do lewej krawędzi, do środka lub do prawej krawędzi.
 7. Kliknij przycisk **OK**
 
@@ -214,10 +214,9 @@ Nagłówki rozszerzone mogą obejmować kilka kolumn opartych na danych określo
 
 Phyllis tworzy raport dla dynamicznej prognozy sześciu miesięcy. Chce, aby słowo „Rzeczywiste” było drukowane nad kolumnami zawierającymi dane rzeczywiste, a słowo „Budżet” — nad kolumnami zawierającymi prognozy budżetu. Każdy kolejny generowany raport zawiera o jedną kolumnę z danymi rzeczywistymi więcej i o jedną kolumnę budżetu mniej. Chociaż Phyllis może zmodyfikować definicję kolumny ręcznie za każdym razem, gdy raport jest generowany, aby dopasować nagłówki, to aby przyspieszyć i uprościć tę procedurę, postanawia utworzyć warunkowe nagłówki rozszerzone, które będą automatycznie tworzyły nagłówki nad odpowiednimi kolumnami w każdym kolejnym raporcie. Phyllis otwiera Projektanta raportów, klika opcję **Definicja kolumny** w panelu nawigacyjnym i otwiera definicję kolumny dla raportu. Wpisuje następujące informacje. Wartość okresu podstawowego w definicji raportu wynosi 4.
 
-
-|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
+|      Format         |  A   | mld             | C             | D             | E             | P             | G             | H             | I             | J             | tys.             | L             | P             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Nagłówek 1            |      | Rzeczywiste        | Budżetowe        |               |               |               |               |               |               |               |               |               |               |
+| Nagłówek 1            |      | Wartość rzeczywista        | Budżet        |               |               |               |               |               |               |               |               |               |               |
 | Nagłówek 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Nagłówek 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Typ kolumny         | OPIS | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | WF            | FD            | FD            |
@@ -228,7 +227,7 @@ Phyllis tworzy raport dla dynamicznej prognozy sześciu miesięcy. Chce, aby sł
 | Szerokość kolumna        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Sterowanie wydrukiem       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Phyllis dwukrotnie klika komórkę nagłówka kolumny, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
+Phyllis dwukrotnie klika komórkę nagłówka kolumny, aby otworzyć okno dialogowe **Nagłówek kolumny** , w którym wpisuje następujące informacje.
 
 | Pole              | Wartość                 |
 |--------------------|-----------------------|
@@ -240,7 +239,7 @@ Phyllis dwukrotnie klika komórkę nagłówka kolumny, aby otworzyć okno dialog
 | Rozszerz do          | BASE                  |
 | Nagłówek budżetu      | BASE+1 do końcowej kolumny  |
 
-Po zakończeniu wprowadzania informacji Phyllis klika **OK**. Dwukrotnie klika komórkę nagłówka w kolumnie C, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
+Po zakończeniu wprowadzania informacji Phyllis klika **OK**. Dwukrotnie klika komórkę nagłówka w kolumnie C, aby otworzyć okno dialogowe **Nagłówek kolumny** , w którym wpisuje następujące informacje.
 
 | Pole              | Wartość                 |
 |--------------------|-----------------------|
@@ -266,7 +265,7 @@ Komórka **Uzasadnienie** służy do zastosowania formatowania uzasadnienia do k
     - **Do prawej** — opisy kolumn są wyrównywane do prawej krawędzi.
 
 ## <a name="add-special-formatting-options"></a>Dodawanie specjalnych opcji formatowania
-W definicji kolumny wiersze szczegółów formatowania kolumn odnoszą się do specjalnego formatowania w zaznaczonych kolumnach. Mimo że niektóre z opcji **Sterowanie wydrukiem** i **Ograniczenia kolumny** odnoszą się do kolumn **FD**, to większość opcji dotyczy wszystkich typów kolumn. Formatowanie określone w definicji kolumny ma wyższy priorytet od formatowania określonego w definicji raportu. Jednak formatowanie określone w definicji wiersza ma wyższy priorytet od formatowania określonego w definicji kolumny. Następujące wiersze są traktowane jako wiersze formatowania:
+W definicji kolumny wiersze szczegółów formatowania kolumn odnoszą się do specjalnego formatowania w zaznaczonych kolumnach. Mimo że niektóre z opcji **Sterowanie wydrukiem** i **Ograniczenia kolumny** odnoszą się do kolumn **FD** , to większość opcji dotyczy wszystkich typów kolumn. Formatowanie określone w definicji kolumny ma wyższy priorytet od formatowania określonego w definicji raportu. Jednak formatowanie określone w definicji wiersza ma wyższy priorytet od formatowania określonego w definicji kolumny. Następujące wiersze są traktowane jako wiersze formatowania:
 
 - Szerokość kolumny
 - Dodatkowe odstępy przed kolumną
@@ -275,12 +274,12 @@ W definicji kolumny wiersze szczegółów formatowania kolumn odnoszą się do s
 
 ### <a name="changing-the-column-width"></a>Zmiana szerokości kolumny
 
-Komórka **Szerokość kolumny** określa liczbę znaków na potrzeby szerokość tej kolumny w drukowanym raporcie. Szerokość kolumny ma znaczenie dla kolumn zawierających kwoty (**CALC**, **WKS** lub **FD**), opisy (**DESC**) oraz wypełnienia (**FILL**). Domyślnie opcja **Autodopasowanie** opcja wybrana, więc szerokość każdej kolumny jest automatycznie dopasowywana do jej zawartości.
+Komórka **Szerokość kolumny** określa liczbę znaków na potrzeby szerokość tej kolumny w drukowanym raporcie. Szerokość kolumny ma znaczenie dla kolumn zawierających kwoty ( **CALC** , **WKS** lub **FD** ), opisy ( **DESC** ) oraz wypełnienia ( **FILL** ). Domyślnie opcja **Autodopasowanie** opcja wybrana, więc szerokość każdej kolumny jest automatycznie dopasowywana do jej zawartości.
 
 #### <a name="specify-the-width-of-a-column-on-a-report"></a>Określ szerokości kolumny w raporcie
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2. W komórce **Szerokość kolumny** wpisz liczbę odstępów dla szerokości kolumny. Maksymalna szerokość każdej kolumny to 255 znaków (to obejmuje procenty, przecinku i nawiasy). Alternatywnie, aby włączyć w projektancie raportów opcję wybierania odpowiedniej szerokości kolumny na podstawie zawartości komórki, kliknij dwukrotnie komórkę **Szerokość kolumny**, a następnie **Autodopasowanie**.
+2. W komórce **Szerokość kolumny** wpisz liczbę odstępów dla szerokości kolumny. Maksymalna szerokość każdej kolumny to 255 znaków (to obejmuje procenty, przecinku i nawiasy). Alternatywnie, aby włączyć w projektancie raportów opcję wybierania odpowiedniej szerokości kolumny na podstawie zawartości komórki, kliknij dwukrotnie komórkę **Szerokość kolumny** , a następnie **Autodopasowanie**.
 
 ### <a name="add-space-between-columns"></a>Dodawanie odstępu między kolumnami
 
@@ -310,11 +309,11 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 | Kod sterowania wydrukiem | Przeliczanie walut                                     | Opis |
 |--------------------|-------------------------------------------------|-------------|
 | NP                 | Niedrukowane                                     | Pozwala wykluczyć kwoty w tej kolumnie z drukowanego raportu oraz z obliczeń. Aby uwzględnić kolumnie niedrukowaną, należy odwołać się do niej bezpośrednio w formule obliczania. Na przykład kolumna niedrukowana C jest uwzględniona w następującym obliczeniu: **B+C+D**. Nie jest ona jednak uwzględniona w następującym obliczeniu: **B:D**. |
-| XCR                | Zmienianie znaku, jeśli zwykłe saldo wiersza jest po stronie kredytowej | Utwórz budżet lub raport porównawczy, jeśli jakiekolwiek niekorzystne odchylenia (takie jak niedobór przychodów lub przekroczenie wydatków) ma zawsze wartość ujemną. Zastosuj ten kod do kolumny **CALC**, aby odwrócić znak kwoty w kolumnie, jeśli zwykłe saldo danego wiersza jest po stronie kredytowej (na co wskazuje **C** w kolumnie **Zwykłe saldo** w definicji wiersza).<p><strong>Uwaga:</strong> dla wierszy <strong>TOT</strong> i </strong>CAL</strong>, które zwykle uwzględniają saldo kredytu, należy pamiętać o wprowadzeniu litery <strong>C</strong> w kolumnie <strong>Zwykłe saldo</strong> w definicji wiersza.</p> |
+| XCR                | Zmienianie znaku, jeśli zwykłe saldo wiersza jest po stronie kredytowej | Utwórz budżet lub raport porównawczy, jeśli jakiekolwiek niekorzystne odchylenia (takie jak niedobór przychodów lub przekroczenie wydatków) ma zawsze wartość ujemną. Zastosuj ten kod do kolumny **CALC** , aby odwrócić znak kwoty w kolumnie, jeśli zwykłe saldo danego wiersza jest po stronie kredytowej (na co wskazuje **C** w kolumnie **Zwykłe saldo** w definicji wiersza).<p><strong>Uwaga:</strong> dla wierszy <strong>TOT</strong> i </strong>CAL</strong>, które zwykle uwzględniają saldo kredytu, należy pamiętać o wprowadzeniu litery <strong>C</strong> w kolumnie <strong>Zwykłe saldo</strong> w definicji wiersza.</p> |
 | X0                 | Pomijanie kolumny, jeśli występując same zera lub puste pola          | Wyklucz kolumnę **FD** z raportu, jeśli wszystkie komórki w tej kolumnie są puste lub zawierają zera. |
 | SR                 | Pomijanie zaokrąglania                               | Zapobiegaj zaokrąglaniu kwoty w tej kolumnie. |
 | XR                 | Pomijanie akumulacji                                 | Pomijaj akumulację. Jeśli raport używa trzeba raportowania, kwoty w tej kolumnie nie są akumulowane w następnych węzłach nadrzędnych. |
-| RP                 | Powtarzanie kolumny na każdej stronie                      | Powtórz określoną kolumnę na każdej stronie raportu. Na przykład można użyć kodu sterowania wydrukiem **RP**, aby uwzględnić kolumnę typu **ROW**, która wstawia kody wiersza na każdej stronie. |
+| RP                 | Powtarzanie kolumny na każdej stronie                      | Powtórz określoną kolumnę na każdej stronie raportu. Na przykład można użyć kodu sterowania wydrukiem **RP** , aby uwzględnić kolumnę typu **ROW** , która wstawia kody wiersza na każdej stronie. |
 | WT                 |  Zawijanie tekstu                                      |  Jeśli tekst w kolumnie jest za długi, by zmieścić się w dostępnym miejscu, zawijaj tekst, by całość znalazła się w kolumnie. |
 
 #### <a name="conditional-print-control-codes"></a>Kody warunkowego sterowania wydrukiem
@@ -340,7 +339,7 @@ Komórka **Sterowanie wydrukiem** może zawierać kody zmieniające widok lub us
 > Można również wprowadzić kody drukowania bezpośrednio w komórce **Sterowanie wydrukiem**. Kolejne kody sterowania wydrukiem należy oddzielić przecinkami.
 
 ## <a name="column-types"></a>Typy kolumn
-Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu **Typ kolumny** w definicji kolumny. Każda definicja kolumny musi zawierać co najmniej jedną kolumnę opisu (**OPIS**) oraz jedną kolumnę kwoty (**WF**, **ARK** lub **OBL**).
+Typy danych zawartych w każdej kolumnie w raporcie określa wartość w wierszu **Typ kolumny** w definicji kolumny. Każda definicja kolumny musi zawierać co najmniej jedną kolumnę opisu ( **OPIS** ) oraz jedną kolumnę kwoty ( **WF** , **ARK** lub **OBL** ).
 
 > [!NOTE]
 > Kody typów kolumn nie mają zastosowania we wszystkich systemach księgowych. Wybranie typu, który nie jest prawidłowy dla systemu księgowania, spowoduje, ze ta kolumna w raporcie będzie pusta.
@@ -442,7 +441,7 @@ W każdej specyfikacji okresu można wyjść poza zakres roku obrachunkowego i m
 ### <a name="specify-the-periods-for-an-fd-column"></a>Określanie okresów dla kolumny WF
 
 1. W Projektancie raportów otwórz definicję kolumn, którą chcesz zmodyfikować.
-2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Okres**, a następnie wybierz odpowiednią opcję z listy.
+2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Okres** , a następnie wybierz odpowiednią opcję z listy.
 3. Na pasku formuły powyżej okienka nawigacji lub w komórce **Okres** uzupełnij formułę. Zamień wszystkie znaki numeru (\#) na odpowiednią wartość.
 
 #### <a name="periods-covered-cell"></a>Komórka Objęte okresy
@@ -459,11 +458,11 @@ Komórka **Objęte okresy** określa kwotę, jaka powinna być wyświetlana w ko
 ### <a name="specify-the-periods-that-are-covered-for-an-fd-column"></a>Określanie objętych okresów dla kolumny FD
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Objęte okresy**, a następnie wybierz odpowiednią opcję z listy.
+2. W kolumnie **FD** kliknij dwukrotnie komórkę w wierszu **Objęte okresy** , a następnie wybierz odpowiednią opcję z listy.
 
 ### <a name="attribute-filter-in-a-column-definition"></a>Filtr atrybutu w definicji kolumny
 
-Atrybuty są wartościami danych finansowych, które pomogą dokładniej określić konta lub transakcje. Atrybuty kont obejmują **Składnik aktywów**, **Zobowiązanie**, **Przychód** i **Wydatek**. Atrybuty transakcji obejmują **Opisu transakcji** i **Data zastosowania transakcji**. Obsługa atrybutów może się różnić w zależności od systemu Microsoft Dynamics ERP. Komórka **Filtr atrybutu** ogranicza dane w kolumnie **FD** do określonych wartości lub zakresów dla kategorii atrybutów. Chociaż ta funkcja może być używana razem z kolumną **ATTR**, kolumna **ATTR** nie jest wymagana. W kolumnie **FD** występuje limit kont lub transakcji, które będą zawarte w raporcie na podstawie filtra atrybutu.
+Atrybuty są wartościami danych finansowych, które pomogą dokładniej określić konta lub transakcje. Atrybuty kont obejmują **Składnik aktywów** , **Zobowiązanie** , **Przychód** i **Wydatek**. Atrybuty transakcji obejmują **Opisu transakcji** i **Data zastosowania transakcji**. Obsługa atrybutów może się różnić w zależności od systemu Microsoft Dynamics ERP. Komórka **Filtr atrybutu** ogranicza dane w kolumnie **FD** do określonych wartości lub zakresów dla kategorii atrybutów. Chociaż ta funkcja może być używana razem z kolumną **ATTR** , kolumna **ATTR** nie jest wymagana. W kolumnie **FD** występuje limit kont lub transakcji, które będą zawarte w raporcie na podstawie filtra atrybutu.
 
 > [!NOTE]
 > Aby dowiedzieć się, które atrybuty obsługuje dany system ERP, zobacz podręcznik integracji dołączony do tego systemu.
@@ -472,7 +471,7 @@ Atrybuty są wartościami danych finansowych, które pomogą dokładniej określ
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
 2. Kliknij dwukrotnie komórkę **Filtr atrybutów** dla kolumny **WF**.
-3. W oknie dialogowym **Filtr atrybutów** kliknij dwukrotnie komórkę w kolumnie **Atrybut**, a następnie wybierz typ filtru.
+3. W oknie dialogowym **Filtr atrybutów** kliknij dwukrotnie komórkę w kolumnie **Atrybut** , a następnie wybierz typ filtru.
 4. Aby jeszcze bardziej ograniczyć liczbę wyników, należy wprowadzić zakres w kolumnach **Od** i **Do**. Komórka **Od** musi zawierać wartość.
 5. Kliknij przycisk **OK**
 
@@ -480,7 +479,7 @@ Atrybuty są wartościami danych finansowych, które pomogą dokładniej określ
 
 W poniższym przykładzie przedstawiono część opisu kolumny zawierającą atrybut konta w wierszu **Kod księgi/Kategoria atrybutu**. Filtr atrybutu dla tej kolumny określa zakres wartości, które mają być ujęte w raporcie.
 
-|                              | I    | B                   |
+|      Filtruj                  | A    | mld                   |
 |------------------------------|------|---------------------|
 | Typ kolumny                  | OPIS | WF                  |
 | Kod księgi/kategoria atrybutu |      | RZECZYWISTA              |
@@ -525,8 +524,8 @@ Aby określić walutę rozliczeniową firmy, należy wykonać następujące czyn
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Określanie waluty w raporcie z wieloma walutami
 
 1. W Projektancie raportu otwórz definicję kolumny do zmodyfikowania.
-2. Kliknij dwukrotnie komórkę **Wyświetlanie waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz opcję wyświetlania danych waluty: **Wyświetlanie waluty**, **Raportowanie księgi**, waluta transakcji lub wybierz przeliczenie waluty na inną walutę raportowania.
-3. Kliknij dwukrotnie komórkę **Filtr waluty** w odpowiedniej kolumnie **FD**, a następnie wybierz odpowiedni kod waluty na liście. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w tej walucie.
+2. Kliknij dwukrotnie komórkę **Wyświetlanie waluty** w odpowiedniej kolumnie **FD** , a następnie wybierz opcję wyświetlania danych waluty: **Wyświetlanie waluty** , **Raportowanie księgi** , waluta transakcji lub wybierz przeliczenie waluty na inną walutę raportowania.
+3. Kliknij dwukrotnie komórkę **Filtr waluty** w odpowiedniej kolumnie **FD** , a następnie wybierz odpowiedni kod waluty na liście. W raporcie są wyświetlane tylko transakcje, które są wprowadzane w tej walucie.
 
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Przykład komórek Sposób wyświetlania waluty i Filtr waluty
@@ -552,7 +551,7 @@ W poniższej tabeli przedstawiono wyniki raportu, które mogą pojawić się dla
 
 ### <a name="calculation-column-in-a-column-definition"></a>Kolumna obliczania w definicji kolumny
 
-Typ kolumny **CALC** w definicji kolumny obsługuje złożone obliczenia w komórce **Formuła** i może zawierać operatory **+**, **-**, **\*** i **/**, a także instrukcje **IF/THEN/ELSE**. Kolumna obliczeń może również odnosić się do dowolnej innej kolumny, a nawet do kolejnych kolumn. Ponadto kolumna obliczania może również zawierać rok obrachunkowy i okres do obsługi nagłówków dla kolumny. Formuła obliczania może zawierać do 1024 znaków. Aby wyrazić wynik obliczeń jako wartość procentową, należy użyć specjalnego zastąpienia formatu.
+Typ kolumny **CALC** w definicji kolumny obsługuje złożone obliczenia w komórce **Formuła** i może zawierać operatory **+** , **-** , **\*** i **/** , a także instrukcje **IF/THEN/ELSE**. Kolumna obliczeń może również odnosić się do dowolnej innej kolumny, a nawet do kolejnych kolumn. Ponadto kolumna obliczania może również zawierać rok obrachunkowy i okres do obsługi nagłówków dla kolumny. Formuła obliczania może zawierać do 1024 znaków. Aby wyrazić wynik obliczeń jako wartość procentową, należy użyć specjalnego zastąpienia formatu.
 
 > [!NOTE]
 > Wyniki formuł obliczania nie zawierają wartości z niedrukowanych zakresów kolumn. Na przykład formuła **A:D** drukuje **0** (zero), a formuła **A+B+C** dla wartości kolumn niedrukowanych oblicza wartości.

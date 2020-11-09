@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchVendorPortalRequests
+ms.search.form: PurchVendorPortalRequests, CatExternalCatalogBasketWizard, CatExternalCatalogPunchoutDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adeffa101aa5a17543ca531aacde2130a07086e9
-ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
+ms.openlocfilehash: cccd3517f31a82e502052f100e44322ac4cb344f
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826811"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018498"
 ---
 # <a name="use-external-catalogs-for-punchout-e-procurement"></a>Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement
 
@@ -49,7 +49,7 @@ Aby uzyskać więcej informacji o zasadach, zobacz [Omówienie zasad zakupów](.
 Jeśli istnieje wiele kategorii zaopatrzenia, wybierz odpowiednią kategorię zaopatrzenia przed dodaniem wierszy do zapotrzebowania.
 Gdy wiersze zostaną dodane do zapotrzebowania, można dodać więcej wierszy bez korzystania z zewnętrznych katalogów. Alternatywnie możesz dodawać wiersze nadal z zewnętrznych katalogów.
 
-Gdy zapotrzebowanie jest gotowe, użyj akcji **Przepływ pracy** > **Prześlij**, aby je wysłać do zatwierdzenia.
+Gdy zapotrzebowanie jest gotowe, użyj akcji **Przepływ pracy** > **Prześlij** , aby je wysłać do zatwierdzenia.
 
 ### <a name="additional-resources"></a>Dodatkowe zasoby
 

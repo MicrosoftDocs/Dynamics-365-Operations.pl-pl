@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 20847ea4651b816fc95135ca03667ae297cde5be
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188494"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097193"
 ---
 # <a name="bank-management-workspace"></a>Obszar roboczy zarządzania kontami bankowymi
 
@@ -51,7 +51,7 @@ Informacje o dacie ostatniej aktualizacji danych są wyświetlane w górnej czę
 
 ### <a name="related-information"></a>Informacje pokrewne
 
-Z sekcji **Informacje pokrewne** można otworzyć stronę **Arkusz finansowy**, aby wykonać przelewy bankowe. Można także szybko otworzyć strony **Transakcje bankowe** i **Transakcje pomostowe**.
+Z sekcji **Informacje pokrewne** można otworzyć stronę **Arkusz finansowy** , aby wykonać przelewy bankowe. Można także szybko otworzyć strony **Transakcje bankowe** i **Transakcje pomostowe**.
 
 ## <a name="analytics-view"></a>Widok Analizy
 
@@ -63,4 +63,4 @@ Strona **Analizy** zawiera ważne wskaźniki dotyczące kont bankowych w bieżą
 -   Saldo wg konta bankowego
 -   Saldo wg waluty
 
-Analizy rachunków bankowych ze wszystkich firm można przeglądać w obszarze roboczym **Przegląd środków pieniężnych — wszystkie firmy**.
+Analizy rachunków bankowych ze wszystkich firm można przeglądać w obszarze roboczym **Przegląd środków pieniężnych — wszystkie firmy**. Aby uzyskać więcej informacji, zobacz [Omówienie operacji gotówkowych - zawartość Power BI](Cash-Overview-Power-BI-content.md).

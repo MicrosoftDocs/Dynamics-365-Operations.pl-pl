@@ -3,7 +3,7 @@ title: Eksperymentowanie w programie Dynamics 365 Commerce
 description: Eksperymentowanie umożliwia tworzenie i edytowanie układu strony i zawartości w konstruktorze witryn oraz zarządzanie nimi. Obsługa kompleksowych eksperymentów jest włączona dla stron i jednostek handlu elektronicznego na stronie.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,23 +18,23 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b2e97167d12b8ceecf72af075ee0362101c4fa0
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930271"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097146"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperymentowanie w programie Dynamics 365 Commerce
 Eksperymentowanie w Dynamics 365 Commerce pozwala sprawdzić skuteczność stron handlu elektronicznego i podjęcie decyzji na podstawie danych. Program Commerce obsługuje testy A/B na stronach, modułach i fragmentach oraz umożliwia mierzenie wpływu proponowanych zmian w witrynie internetowej.
 
-W konstruktorze witryn można tworzyć, edytować i zarządzać elementami stron i zawartości, znanymi jako **odmiany**. Commerce jest integrowany z usługami innych firm, które mogą być używane do tworzenia eksperymentów i przypisań. Strumienie zdarzeń w czasie rzeczywistym przechwycone w module Commerce umożliwiają analizę, która definiuje wyniki eksperymentu w usłudze innej firmy. Następnie można skorzystać z tych analiz, aby uzyskać pomoc techniczną lub zakwestionować hipotezę.
+W konstruktorze witryn Commerce można tworzyć, edytować i zarządzać elementami stron i zawartości, znanymi jako **odmiany**. Commerce jest integrowany z usługami innych firm, które mogą być używane do tworzenia eksperymentów i przypisań. Strumienie zdarzeń w czasie rzeczywistym przechwycone w module Commerce umożliwiają analizę, która definiuje wyniki eksperymentu w usłudze innej firmy. Następnie można skorzystać z tych analiz, aby uzyskać pomoc techniczną lub zakwestionować hipotezę.
 
 ## <a name="set-up-prerequisites"></a>Ustawianie wymagań wstępnych
-1. **Pobierz poprawną wersję modułu Commerce**— uaktualnij bibliotekę modułów, zestaw SDK rozbudowy kanału online oraz Commerce Scale Unit do wersji Commerce 10.0.13 lub nowszej.
+1. **Pobierz poprawną wersję modułu Commerce** — uaktualnij bibliotekę modułów, zestaw Software Development Kit SDK rozbudowy kanału online oraz Commerce Scale Unit do wersji Commerce 10.0.13 lub nowszej.
 1. **Konfigurowanie łącznika eksperymentów** — łącznik eksperymentów umożliwia systemowi Commerce nawiązywanie połączenia z usługami innych firm w celu pobrania listy eksperymentów i ustalenia, kiedy należy pokazywać użytkownikowi eksperyment. Można zakupić łącznik innej firmy w [AppSource](https://appsource.microsoft.com). Postępuj zgodnie z instrukcjami konfiguracji dostarczonymi przez wydawcę. Można alternatywnie skorzystać z przykładowego łącznika testowego z modułu Commerce, aby przetestować przepływ pracy eksperymentowania bez konieczności konfigurowania usługi zewnętrznej. Aby uzyskać więcej informacji, zobacz temat [Konfiguracja i włączanie łączników](e-commerce-extensibility/connectors.md). 
 1. **Włącz flagi funkcji eksperymentowania w Commerce** — możesz włączyć eksperymentowanie na poziomie dzierżawy, przechodząc do **Ustawienia dzierżawy > Funkcje** lub w **Ustawienia witryny > Funkcje**.
-    - Włącz flagę **Eksperymentowanie**, aby utworzyć eksperymenty dotyczące różnych modułów na stronie bez wpływu ani kopiowania innej zawartości, która nie jest częścią eksperymentu. Powoduje to, że ciągłe aktualizacje zawartości poza eksperymentem są zsynchronizowane w czasie trwania eksperymentu. Wyłączenie tej flagi powoduje zatrzymanie wszystkich eksperymentów pokazywanych użytkownikom i usunięcie wszystkich funkcji edycji w ramach konstruktora witryn.
+    - Włącz flagę **Eksperymentowanie** , aby utworzyć eksperymenty dotyczące różnych modułów na stronie bez wpływu ani kopiowania innej zawartości, która nie jest częścią eksperymentu. Powoduje to, że ciągłe aktualizacje zawartości poza eksperymentem są zsynchronizowane w czasie trwania eksperymentu. Wyłączenie tej flagi powoduje zatrzymanie wszystkich eksperymentów pokazywanych użytkownikom i usunięcie wszystkich funkcji edycji w ramach konstruktora witryn.
     - Włączenie flagi **Eksperymenty na stronach lub fragmentach** umożliwia uruchamianie eksperymentów na stronie lub fragmencie. Spowoduje to utworzenie pełnej kopii wystąpienia całej strony lub fragmentu dla wszystkich modułów w obrębie strony lub fragmentu. Tego trybu należy używać, gdy konieczne jest testowanie obszernych zmian zawartości lub synchronizowanie ciągłej zmiany zawartości między wystąpieniami nie jest problemem. Wyłączenie tej flagi zapobiega tworzeniu i edytowaniu nowych eksperymentów na stronach i fragmentach.
     > [!NOTE]
     > Flaga **Eksperymentowanie** musi również być włączona, aby można było korzystać z funkcji **Eksperymenty na stronach lub fragmentach**.
@@ -48,12 +48,12 @@ Więcej informacji na temat każdego kroku procesu eksperymentowania można znal
 - [Określanie hipotezy i ustalanie metryki eksperymentu](experimentation-identify.md)
 - [Konfigurowanie eksperymentu](experimentation-setup.md)
 - [Łączenie i edytowanie eksperymentu](experimentation-connect-edit.md)
-- [Podgląd i publikowanie eksperymentu](experimentation-preview-publish.md)
+- [Podglądanie i publikowanie eksperymentu](experimentation-preview-publish.md)
 - [Uruchamianie i monitorowanie eksperymentu](experimentation-run-monitor.md)
-- [Podwyższanie poziomu odmiany i kończenie eksperymentu](experimentation-review-complete.md)
+- [Podwyższenie poziomu i zakończenie eksperymentu](experimentation-review-complete.md)
 
 > [!NOTE]
-> Aby dowiedzieć się, gdzie eksperymentu znajduje się w cyklu życia **Eksperymenty** w konstruktorze witryn. Zostanie wyświetlona lista eksperymentów ze stanem każdego eksperymentu w Commerce i usłudze innej firmy. Aby uzyskać więcej informacji, zobacz temat [Sprawdzanie stanu eksperymentu](experimentation-status.md).
+> Aby dowiedzieć się, gdzie eksperymentu znajduje się w cyklu życia **Eksperymenty** w konstruktorze witryn w okienku nawigacji po lewej stronie. Zostanie wyświetlona lista eksperymentów ze stanem każdego eksperymentu w Commerce i usłudze innej firmy. Aby uzyskać więcej informacji, zobacz temat [Sprawdzanie stanu eksperymentu](experimentation-status.md).
 
 ## <a name="next-step"></a>Następne kroki
 [Określanie hipotezy i ustalanie metryki sukcesu eksperymentu](experimentation-identify.md) 

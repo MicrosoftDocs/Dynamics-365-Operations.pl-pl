@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275540"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997381"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
 
@@ -37,7 +36,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nie można załadować modułu podwójnego zapisywania w aplikacji Finance and Operations
 
-Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcję **podwójnego zapisywania** w obszarze roboczym **zarządzanie danymi**, prawdopodobnie usługa integracji danych jest niemożliwa. Utwórz bilet pomocy technicznej, aby zażądać ponownego uruchomienia usługi integracji danych.
+Jeśli nie można otworzyć strony **podwójnego zapisywania** , wybierając opcję **podwójnego zapisywania** w obszarze roboczym **zarządzanie danymi** , prawdopodobnie usługa integracji danych jest niemożliwa. Utwórz bilet pomocy technicznej, aby zażądać ponownego uruchomienia usługi integracji danych.
 
 ## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Błąd podczas próby utworzenia mapy nowej jednostki
 
@@ -62,7 +61,7 @@ Aby rozwiązać ten problem, zaloguj się przy użyciu okna prywatnego w Microso
 
 Podczas łączenia lub tworzenia map może wystąpić następujący błąd:
 
-*Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (tokenexchange).<br> Identyfikator sesji: \<twój identyfikator sesji\><br> Identyfikator głównego działania: \<twój identyfikator działania głównego\>*
+*Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (tokenexchange). <br> Identyfikator sesji: \<your session id\><br> Identyfikator głównego działania: \<your root activity id\>*
 
 Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Common Data Service zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finance and Operations i Common Data Service może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania jednostek. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
 
@@ -78,7 +77,7 @@ Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Doł�
 
 ## <a name="error-while-trying-to-start-an-entity-mapping"></a>Błąd podczas próby uruchomienia mapowania jednostki
 
-Podczas próby ustawienia tego stanu mapowania na **Uruchomione**może się pojawić komunikat o błędzie podobny do następującego:
+Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może się pojawić komunikat o błędzie podobny do następującego:
 
 *Nie można ukończyć wstępnej synchronizacji danych. Błąd: błąd podwójnego zapisu — Rejestracja wtyczki nie powiodła się: nie można zbudować metadanych wyszukiwania przy podwójnym zapisie. Odwołanie do obiektu błędu nie jest ustawione na wystąpienie obiektu.*
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975154"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107214"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
@@ -40,7 +40,7 @@ Realizacja zamówienia, [Identyfikator operacji 928](https://docs.microsoft.com/
 
 Operacja realizacji zamówienia nie ma własnych uprawnień od razu po zainstalowaniu, ale w przyszłości użytkownicy będą mogli użyć uprawnienia **Zezwalaj na pobieranie zamówienia** w celu wywołania operacji z punktu sprzedaży.
 
-Na poziomie sklepu dostępne jest ustawienie konfiguracji określające, czy wiersz zamówienia musi zostać zaakceptowany ręczne z punktu sprzedaży. Jeśli ta opcja konfiguracji nie jest ustawiona, wiersze zamówienia będą akceptowane domyślnie. Jeżeli ta opcja konfiguracji jest włączona, użytkownicy w punkcie sprzedaży będą musieli wybrać uprawnienie **Zezwalaj na akceptowanie zamówienia**, aby akceptować zamówienia w punkcie sprzedaży.
+Na poziomie sklepu dostępne jest ustawienie konfiguracji określające, czy wiersz zamówienia musi zostać zaakceptowany ręczne z punktu sprzedaży. Jeśli ta opcja konfiguracji nie jest ustawiona, wiersze zamówienia będą akceptowane domyślnie. Jeżeli ta opcja konfiguracji jest włączona, użytkownicy w punkcie sprzedaży będą musieli wybrać uprawnienie **Zezwalaj na akceptowanie zamówienia** , aby akceptować zamówienia w punkcie sprzedaży.
 
 Wiersze zamówienia można także odrzucić z punktu sprzedaży. Odrzucenie wiersza zamówienia oznacza, że nie zostanie ono zrealizowane w tym sklepie i wysłanie go do ponownego przypisania w innym sklepie lub magazynie. Uprawnienie do odrzucenia wiersza zamówienia jest przyznawane za pomocą uprawnienia **Zezwalaj na odrzucenie zamówienia**.
 
@@ -64,7 +64,7 @@ Jeżeli zaznaczono kilka wierszy menu wysuwane szczegółów wiersza zamówienia
 
 ## <a name="pending-order-lines"></a>Oczekujące wiersze zamówień
 
-Ujednolicona realizacja zamówienia obejmuje możliwość ręcznego akceptowania zamówień. Domyślnie zamówienia do realizacji w sklepie są już zaakceptowane. Jeżeli jednak procesy biznesowe określają, że pracownik musi zaakceptować zamówienia na poziomie sklepu, można włączyć akceptację ręczną na poziomie sklepu detalicznego. Aby włączyć akceptację zamówień, przejdź do okna **Handel detaliczny i inny** \> **Kanały** \> **Sklepy** \> **Wszystkie sklepy**. Otwórz odpowiedni sklep i na karcie **Ogólne** znajdź nagłówek podrzędny **Realizacja zamówienia**. Nagłówek podrzędny zawiera opcję **Akceptuj ręcznie**, która domyślnie jest ustawiona na **Nie**. Ustawienie tej opcji na **Tak** i zsynchronizowanie zmian z bazą danych kanału umożliwia przejście wierszy zamówień przez proces akceptacji.
+Ujednolicona realizacja zamówienia obejmuje możliwość ręcznego akceptowania zamówień. Domyślnie zamówienia do realizacji w sklepie są już zaakceptowane. Jeżeli jednak procesy biznesowe określają, że pracownik musi zaakceptować zamówienia na poziomie sklepu, można włączyć akceptację ręczną na poziomie sklepu detalicznego. Aby włączyć akceptację zamówień, przejdź do okna **Handel detaliczny i inny** \> **Kanały** \> **Sklepy** \> **Wszystkie sklepy**. Otwórz odpowiedni sklep i na karcie **Ogólne** znajdź nagłówek podrzędny **Realizacja zamówienia**. Nagłówek podrzędny zawiera opcję **Akceptuj ręcznie** , która domyślnie jest ustawiona na **Nie**. Ustawienie tej opcji na **Tak** i zsynchronizowanie zmian z bazą danych kanału umożliwia przejście wierszy zamówień przez proces akceptacji.
 
 Pracownicy z uprawnienie **Zezwalaj na akceptowanie zamówienia** mogą otworzyć realizację zamówienia i zaznaczyć wiersze do zaakceptowania. Po zaakceptowaniu wierszy ich stan zmienia się z **Oczekujące** na **Zaakceptowane** i można kontynuować proces realizacji zamówienia. Gdy opcja **Akceptuj ręcznie** jest włączona zamówienia będą przetwarzane dopiero po ich zaakceptowaniu.
 
@@ -105,13 +105,13 @@ Jeżeli wiersze są zaznaczone, a dla tych wierszy drukowana jest lista pobrania
 - **Stan wynikowy:** Pobrane lub częściowo pobrane
 - **Stan wynikowy zaplecza:** Pobrane lub częściowo pobrane
 
-Po wykonaniu procesu fizycznego pobrania wiersze można oznaczyć jako **Pobrane**. Zaznaczenie wiersza i oznaczenie jako **Pobrane** powoduje wykonanie w czasie rzeczywistym wywołania aktualizacji wiersza zamówienia. Po oznaczeniu wiersza jako **Pobrane** w punkcie sprzedaży stan w zapleczu jest także aktualizowany na**Pobrane**, a w transakcjach uwzględniany jest fakt zmniejszenia o określoną ilość.
+Po wykonaniu procesu fizycznego pobrania wiersze można oznaczyć jako **Pobrane**. Zaznaczenie wiersza i oznaczenie jako **Pobrane** powoduje wykonanie w czasie rzeczywistym wywołania aktualizacji wiersza zamówienia. Po oznaczeniu wiersza jako **Pobrane** w punkcie sprzedaży stan w zapleczu jest także aktualizowany na **Pobrane** , a w transakcjach uwzględniany jest fakt zmniejszenia o określoną ilość.
 
-W trakcie przetwarzania zamówień można przetworzyć częściowe ilości dla określonego wiersza. Po zaznaczeniu wiersza i wykonaniu akcji **Oznacz jako pobrane**, gdy ilość jest większa niż jeden, wyświetlany jest monit o podanie ilości. Pozostała ilość do pobrania jest uzupełniana automatycznie. W przypadku określenia ilości mniejszej niż pozostała stan wiersza zmienia się na **Częściowo pobrane**. Po zaktualizowaniu wiersza zamówienia w zapleczu będzie ono także odzwierciedlać stan częściowego pobrania, a ilość wprowadzona przez użytkownika zostanie użyta do aktualizacji zapasów.
+W trakcie przetwarzania zamówień można przetworzyć częściowe ilości dla określonego wiersza. Po zaznaczeniu wiersza i wykonaniu akcji **Oznacz jako pobrane** , gdy ilość jest większa niż jeden, wyświetlany jest monit o podanie ilości. Pozostała ilość do pobrania jest uzupełniana automatycznie. W przypadku określenia ilości mniejszej niż pozostała stan wiersza zmienia się na **Częściowo pobrane**. Po zaktualizowaniu wiersza zamówienia w zapleczu będzie ono także odzwierciedlać stan częściowego pobrania, a ilość wprowadzona przez użytkownika zostanie użyta do aktualizacji zapasów.
 
 Jeśli wiersz zamówienia został pobrany przez pomyłkę, należy wykonać proces dotyczący wiersza zamówienia w zapleczu. Obecnie w punkcie sprzedaży nie jest obsługiwana akcja cofnięcia pobrania.
 
-Wiersze zamówienia z różnych zamówień można zaznaczyć i oznaczyć jako **Pobranie**, wydrukować na tej samej liście pobrania lub oznaczyć jako **Pobrane**.
+Wiersze zamówienia z różnych zamówień można zaznaczyć i oznaczyć jako **Pobranie** , wydrukować na tej samej liście pobrania lub oznaczyć jako **Pobrane**.
 
 ### <a name="pack"></a>Pakunek
 
@@ -129,7 +129,7 @@ Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowany
 - **Stan wynikowy:** Spakowane lub częściowo spakowane
 - **Stan wynikowy zaplecza:** Dostarczone lub częściowo dostarczone
 
-Akcja **Oznacz jako spakowane** umożliwia wskazanie, że wiersze są spakowane bez drukowania dokumentu dostawy. Wykonanie akcji**Drukuj dokument dostawy** i **Oznacz jako spakowane** powodują wykonanie transakcji dotyczących zapasów w zapleczu. Wiersze pakowania w punkcie sprzedaży spowodują wygenerowanie arkuszy kasowych dostawy w zapleczu.
+Akcja **Oznacz jako spakowane** umożliwia wskazanie, że wiersze są spakowane bez drukowania dokumentu dostawy. Wykonanie akcji **Drukuj dokument dostawy** i **Oznacz jako spakowane** powodują wykonanie transakcji dotyczących zapasów w zapleczu. Wiersze pakowania w punkcie sprzedaży spowodują wygenerowanie arkuszy kasowych dostawy w zapleczu.
 
 Jeżeli wiersz zamówienia został spakowany przez pomyłkę, należy skorygować arkusza kasowy dostawy w zapleczu.
 
@@ -180,7 +180,7 @@ Wiersze lub wiersze częściowe można odrzucić. Pozwala na to ich ponowne przy
 - **Stan wynikowy:** Odrzucone
 - **Wynikowy stan zaplecza:** Bez zmian
 
-Odrzucone wiersze zamówień można wyświetlić w obszarze roboczym **Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania**. Aby wyświetlić wszystkie odrzucone wiersze zamówień ze sklepów, wyczyść filtr osób. Kara **Wiersze odrzuconego zamówienia** w sekcji **Zamówienia i ulubione** zawierają szczegóły wiersza zamówienia. Ponadto kliknięcie przycisku **Wiersze odrzuconego zamówienia** w sekcji **Podsumowanie** umożliwia przejście do widoku zamówienia sprzedaży. Powoduje to wyświetlenie wszystkich zamówień, które mają co najmniej jeden odrzucony wiersz zamówienia. Jeżeli funkcja Rozproszone zarządzanie zamówieniami (DOM) jest włączona, te odrzucone zamówienia zostaną automatycznie przypisane ponownie do odpowiednich sklepów w celu realizacji. Te wiersze zamówienia można także przypisać ponownie ręcznie. W tym celu zaznacz wiersz, którego **Stan realizacji** to **Odrzucony** i zmień odpowiednio sklep/magazyn. Kliknij menu rozwijane **Aktualizuj wiersz** i kliknij pozycję **Resetuj stan realizacji**, aby zmienić stan realizacji z **Odrzucony** na **Zaakceptowany** lub **Oczekujący**, w zależności od konfiguracji realizacji zamówienia. Po zresetowaniu stanu realizacji pracownicy sklepu będą mogli wyświetlić wiersze zamówienia w punkcie sprzedaży.
+Odrzucone wiersze zamówień można wyświetlić w obszarze roboczym **Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania**. Aby wyświetlić wszystkie odrzucone wiersze zamówień ze sklepów, wyczyść filtr osób. Kara **Wiersze odrzuconego zamówienia** w sekcji **Zamówienia i ulubione** zawierają szczegóły wiersza zamówienia. Ponadto kliknięcie przycisku **Wiersze odrzuconego zamówienia** w sekcji **Podsumowanie** umożliwia przejście do widoku zamówienia sprzedaży. Powoduje to wyświetlenie wszystkich zamówień, które mają co najmniej jeden odrzucony wiersz zamówienia. Jeżeli funkcja Rozproszone zarządzanie zamówieniami (DOM) jest włączona, te odrzucone zamówienia zostaną automatycznie przypisane ponownie do odpowiednich sklepów w celu realizacji. Te wiersze zamówienia można także przypisać ponownie ręcznie. W tym celu zaznacz wiersz, którego **Stan realizacji** to **Odrzucony** i zmień odpowiednio sklep/magazyn. Kliknij menu rozwijane **Aktualizuj wiersz** i kliknij pozycję **Resetuj stan realizacji** , aby zmienić stan realizacji z **Odrzucony** na **Zaakceptowany** lub **Oczekujący** , w zależności od konfiguracji realizacji zamówienia. Po zresetowaniu stanu realizacji pracownicy sklepu będą mogli wyświetlić wiersze zamówienia w punkcie sprzedaży.
 
 ## <a name="line-quantity-tracking"></a>Śledzenie ilości wiersza
 
@@ -192,7 +192,7 @@ Kontynuując powyższy przykład: jeżeli 200 desek zostanie oznaczonych jako sp
 
 ## <a name="line-statuses"></a>Stany wiersza
 
-Wiersze zamówienia w punkcie sprzedaży mają kilka stanów określających stan wiersza zamówienia. Stan w punkcie sprzedaży i zapleczu nie są zgodne we wszystkich przypadkach. Stan wiersza zamówienia można wyświetlić w punkcie sprzedaży, używając operacji realizacji zamówienia. W zapleczu wiersze zamówienia można wyświetlić ze szczegółów zamówienia. Dostęp do szczegółów zamówienia można uzyskać wybierając opcję **Handel detaliczny i inny** \> **Odbiorcy** \> **Wszystkie zamówienia odbiorcy**. Wybierz opcję **Identyfikator zamówienia**, aby wyświetlić szczegóły zamówienia. W oknie szczegółów zamówienia wybierz kartę **Zamówienie sprzedaży**, a następnie wybierz opcję **Szczegółowy stan** w nagłówku podrzędnym**Widok**.
+Wiersze zamówienia w punkcie sprzedaży mają kilka stanów określających stan wiersza zamówienia. Stan w punkcie sprzedaży i zapleczu nie są zgodne we wszystkich przypadkach. Stan wiersza zamówienia można wyświetlić w punkcie sprzedaży, używając operacji realizacji zamówienia. W zapleczu wiersze zamówienia można wyświetlić ze szczegółów zamówienia. Dostęp do szczegółów zamówienia można uzyskać wybierając opcję **Handel detaliczny i inny** \> **Odbiorcy** \> **Wszystkie zamówienia odbiorcy**. Wybierz opcję **Identyfikator zamówienia** , aby wyświetlić szczegóły zamówienia. W oknie szczegółów zamówienia wybierz kartę **Zamówienie sprzedaży** , a następnie wybierz opcję **Szczegółowy stan** w nagłówku podrzędnym **Widok**.
 
 - **Oczekujące** — wiersze zamówienia, które zostały przypisane do sklepu, but ale nie zostały jeszcze zaakceptowane mają po wyświetleniu w punkcie sprzedaży stan **Oczekujące**. Wiersze oczekujące na zaakceptowanie w punkcie sprzedaży będą miały w zapleczu stan **Przetwarzanie zamówień**.
 - **Zaakceptowane** — wiersze zamówienia, które zostały zaakceptowane ręcznie lub automatycznie, po wyświetleniu w punkcie sprzedaży będą miały stan **Zaakceptowane**. Wiersze o stanie **Zaakceptowane** będą widoczne w zapleczu jako **Przetwarzanie zamówień**.
@@ -204,7 +204,7 @@ Wiersze zamówienia w punkcie sprzedaży mają kilka stanów określających sta
 
 ## <a name="order-fulfillment-filtering"></a>Filtrowanie realizacji zamówienia
 
-Realizacja zamówienia w punkcie sprzedaży obejmuje filtrowanie ułatwiające użytkownikowi znalezienie wymaganych elementów. Filtry można zmieniać za pomocą okienka akcji w dolnej części ekranu **Punkt sprzedaży**. Domyślnie stosowany jest filtr **Typ dostawy** w zależności od sposobu skonfigurowania operacji. Jeżeli operacja została skonfigurowana z parametrem **Wszystkie zamówienia**, ten filtr jest stosowany po uzyskaniu dostępu do realizacji zamówienia. To samo dotyczy parametrów **Odbiór w sklepie** i **Wyślij z magazynu**. Inne filtry, które można zastosować do widoku realizacji zamówienia to:
+Realizacja zamówienia w punkcie sprzedaży obejmuje filtrowanie ułatwiające użytkownikowi znalezienie wymaganych elementów. Filtry można zmieniać za pomocą okienka akcji w dolnej części ekranu **Punkt sprzedaży**. Domyślnie stosowany jest filtr **Typ dostawy** w zależności od sposobu skonfigurowania operacji. Jeżeli operacja została skonfigurowana z parametrem **Wszystkie zamówienia** , ten filtr jest stosowany po uzyskaniu dostępu do realizacji zamówienia. To samo dotyczy parametrów **Odbiór w sklepie** i **Wyślij z magazynu**. Inne filtry, które można zastosować do widoku realizacji zamówienia to:
 
 - Numer odbiorcy
 - Nazwa odbiorcy

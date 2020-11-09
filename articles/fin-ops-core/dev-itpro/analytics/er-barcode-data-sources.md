@@ -3,7 +3,7 @@ title: Używanie źródeł danych z kodem kreskowym do generowania obrazów kod�
 description: W tym temacie objaśniono sposób używania źródeł danych z kodem kreskowym w celu generowania obrazów kodów kreskowych.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: fdb70c7e72647de4c6cd977b286c19c906559438
-ms.sourcegitcommit: a56b22729fbbb941471e927e2f932acaf624cf5e
+ms.openlocfilehash: c549a476f854ffcf962ffb62e430b459d3445734
+ms.sourcegitcommit: cc78f9bf585082ce65c2ab0b011ff62620fa883d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435472"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4088204"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Używanie źródeł danych z kodem kreskowym do generowania obrazów kodów kreskowych
 
@@ -43,7 +43,7 @@ W szablonach raportów można używać następujących symboli zastępczych do w
 - Kontrolka zawartości [obrazu](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) dla programu Word
 - Objekt [obrazu](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) w programie Excel
 
-Korzystając ze źródła danych typu **Kod kreskowy**, można generować kody kreskowe w następujących formatach:
+Korzystając ze źródła danych typu **Kod kreskowy** , można generować kody kreskowe w następujących formatach:
 
 - Jednowymiarowe kody kreskowe:
 
@@ -54,19 +54,20 @@ Korzystając ze źródła danych typu **Kod kreskowy**, można generować kody k
     - EAN-8
     - EAN-13
     - ITF-14
+    - Intelligent Mail
+    - MSI
+    - Plessey
     - PDF417
     - UPC-A
     - UPC-E
-    - MSI
-    - Plessey
 
 - Dwuwymiarowe kody kreskowe:
 
     - Aztec
-    - DataMatrix
+    - Data Matrix
     - Kod QR
 
-Konfigurując źródło danych **Kod kreskowy**, można zdefiniować konkretne parametry renderingu, które są używane do generowania obrazu:
+Konfigurując źródło danych **Kod kreskowy** , można zdefiniować konkretne parametry renderingu, które są używane do generowania obrazu:
 
 - **Szerokość** — umożliwia określenie szerokości kodu kreskowego w pikselach. Wartość **0** (zero) oznacza, że używana jest szerokość domyślna. Znaczenie może być różne dla różnych formatów.
 - **Wysokość** — umożliwia określenie wysokości kodu kreskowego w pikselach. Wartość **0** (zero) oznacza, że używana jest wysokość domyślna. Znaczenie może być różne dla różnych formatów.
@@ -75,7 +76,7 @@ Konfigurując źródło danych **Kod kreskowy**, można zdefiniować konkretne p
 - **Kodowanie** — umożliwia określenie typu znaków zakodowanych w obrazie generowanego kodu kreskowego. Domyślnie używane jest kodowanie **UTF-8**.
 
 > [!IMPORTANT]
-> Dodając nowe źródło danych **Kod kreskowy**, należy umieścić je w innym elemencie (kontener) jako element zagnieżdżony.
+> Dodając nowe źródło danych **Kod kreskowy** , należy umieścić je w innym elemencie (kontener) jako element zagnieżdżony.
 >
 > W przypadku powiązania źródła danych **Kod kreskowy** z elementem komórki w formacie, a element komórki reprezentuje kontrolka zawartości programu Word lub obraz programu Excel, źródło danych jest prezentowane w tym powiązaniu jako funkcja zawierająca jeden parametr typu **Ciąg**. Tego parametru należy używać do określania tekstu, który powinien zostać przekształcony w obraz kodu kreskowego i odczytywany podczas skanowania wygenerowanego kodu kreskowego.
 
@@ -138,15 +139,15 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz kafelek **Konfigracje raportowanias**.
-3. Na stronie **Konfiguracje**, jeśli konfiguracja **Model czeków** nie jest dostępna w drzewie konfiguracji, wykonaj następujące kroku, aby importować konfigurację modelu danych ER:
+3. Na stronie **Konfiguracje** , jeśli konfiguracja **Model czeków** nie jest dostępna w drzewie konfiguracji, wykonaj następujące kroku, aby importować konfigurację modelu danych ER:
 
     1. W okienku akcji wybierz opcję **Wymiana** \> **Załaduj z pliku XML**.
-    2. W oknie dialogowym wybierz **Przeglądaj**, znajdź i wybierz plik **Model czeków.xml**, a następnie kliknij **OK**.
+    2. W oknie dialogowym wybierz **Przeglądaj** , znajdź i wybierz plik **Model czeków.xml** , a następnie kliknij **OK**.
 
 4. Jeśli konfiguracja **Format drukowania czeków** nie jest dostępna w drzewie konfiguracji, wykonaj następujące kroku, aby importować konfigurację formatu ER:
 
     1. W okienku akcji wybierz opcję **Wymiana** \> **Załaduj z pliku XML**.
-    2. W oknie dialogowym wybierz **Przeglądaj**, znajdź i wybierz plik **Format drukowania czeków.xml**, a następnie kliknij **OK**.
+    2. W oknie dialogowym wybierz **Przeglądaj** , znajdź i wybierz plik **Format drukowania czeków.xml** , a następnie kliknij **OK**.
 
 5. W drzewie konfiguracji rozwiń węzeł **Model czeków**.
 6. Przejrzyj listę zaimportowanych konfiguracji systemu ER w drzewie konfiguracji.
@@ -155,12 +156,12 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 
 1. Kliknij kolejno opcje **Zarządzanie gotówką i bankami** \> **Konta bankowe** \> **Konta bankowe**.
 2. Na stronie **Konta bankowe** wybierz konto **USMF OPER**.
-3. Na stronie szczegółów konta bankowego w okienku akcji na karcie **Konfiguracja**, w grupie **Układ** wybierz opcję **Czek**.
+3. Na stronie szczegółów konta bankowego w okienku akcji na karcie **Konfiguracja** , w grupie **Układ** wybierz opcję **Czek**.
 4. Na stronie **Układ czeku** wybierz **Edytuj**.
 5. W karcie **Ogólne** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
 6. W polu **Konfiguracja formatu eksportu** wybierz wcześniej zaimportowany format ER **Format drukowania czeków**.
 7. W okienku akcji wybierz pozycję **Drukowanie tekstu**.
-8. W oknie dialogowym określ opcję **Format czeków zbywalnych** na **Tak**, a następnie wybierz **OK**.
+8. W oknie dialogowym określ opcję **Format czeków zbywalnych** na **Tak** , a następnie wybierz **OK**.
 
     ![Układ zaznaczenia — okno dialogowe drukowanie tekstu](./media/er-barcode-data-source-check-layout.png)
 
@@ -175,7 +176,7 @@ Ponadto Pobierz następujący plik programu Excel zawierający zmodyfikowany sza
 
 #### <a name="apply-a-new-check-template"></a><a name="ExampleModifyFormatApplyTemplate"></a>Zastosuj nowy szablon kontroli
 
-Za jego poziomu można otworzyć plik **Szablon czeków w Excel.xlsx**, który został wcześniej zaimportowany. Zauważ, że ten szablon różni się od szablonu użytego do wygenerowania czeku płatności w podanym rozwiązaniu ER. Ponadto zawiera element **AmountBarcode** dla obrazu kodu kreskowego.
+Za jego poziomu można otworzyć plik **Szablon czeków w Excel.xlsx** , który został wcześniej zaimportowany. Zauważ, że ten szablon różni się od szablonu użytego do wygenerowania czeku płatności w podanym rozwiązaniu ER. Ponadto zawiera element **AmountBarcode** dla obrazu kodu kreskowego.
 
 ![Element AmountBarcode w szablonie programu Excel](./media/er-barcode-data-source-cheque2.png)
 
@@ -183,7 +184,7 @@ Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz **Konfigracje raportowanias**.
-3. Na stronie **Konfiguracje** w drzewie konfiguracji rozwiń węzeł **Model czeków**, a następnie wybierz opcję **Format drukowania czeków**.
+3. Na stronie **Konfiguracje** w drzewie konfiguracji rozwiń węzeł **Model czeków** , a następnie wybierz opcję **Format drukowania czeków**.
 4. W okienku akcji wybierz opcję **Projektant**.
 5. W projektancie operacji modułu ER wybierz kartę **Mapowanie** po prawej stronie strony, a następnie w okienku drzewa formatów po lewej stronie wybierz opcję **Rozwiń/Zwiń**.
 6. Zwróć uwagę, że wszystkie elementy formatu komórki są powiązane z odpowiednimi źródłami danych.
@@ -191,11 +192,11 @@ Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](
     ![Powiązanie elementów formatu komórki ze źródłami danych w projektancie operacji ER](./media/er-barcode-data-source-cells-bound.png)
 
 7. Wybierz kartę **Format** po prawej stronie strony.
-8. W okienku akcji wybierz wielokropek (**...**), a następnie wybierz opcję **Importuj**.
-9. W grupie **Importuj** wybierz **Aktualizację z programu Excel**, a następnie wybierz opcję **Aktualizuj szablon**.
-10. W oknie dialogowym przejdź do pliku **Szablon czeków w Excel.xlsx** zapisanego na komputerze, zaznacz go, a następnie wybierz przycisk **OK**, aby potwierdzić, że wybrany szablon ma zostać zastosowany.
+8. W okienku akcji wybierz wielokropek ( **...** ), a następnie wybierz opcję **Importuj**.
+9. W grupie **Importuj** wybierz **Aktualizację z programu Excel** , a następnie wybierz opcję **Aktualizuj szablon**.
+10. W oknie dialogowym przejdź do pliku **Szablon czeków w Excel.xlsx** zapisanego na komputerze, zaznacz go, a następnie wybierz przycisk **OK** , aby potwierdzić, że wybrany szablon ma zostać zastosowany.
 11. Wybierz kartę **Mapowanie** po prawej stronie strony, a następnie w okienku drzewa formatów po lewej stronie wybierz opcję **Rozwiń/Zwiń**.
-12. Zauważ, że element komórki **AmountBarcode** został dodany do formatu. Ten element jest skojarzony z elementem **AmountBarcode**, który został dodany do zmodyfikowanego szablonu programu Excel jako symbol zastępczy obrazu kodu kreskowego.
+12. Zauważ, że element komórki **AmountBarcode** został dodany do formatu. Ten element jest skojarzony z elementem **AmountBarcode** , który został dodany do zmodyfikowanego szablonu programu Excel jako symbol zastępczy obrazu kodu kreskowego.
 
     ![Element komórki AmountBarcode dodany do formatu w projektancie operacji ER](./media/er-barcode-data-source-cell-added.png)
 
@@ -204,7 +205,7 @@ Musisz teraz zmodyfikować rozwiązanie ER, a następnie [ponownie zastosować](
 Następnie należy dodać nowe źródło danych typu **Kod kreskowy**.
 
 1. W projektancie operacji modułu ER na karcie **Mapowanie** po prawej stronie strony wybierz źródło danych **Drukuj**.
-2. Wybierz opcję **Dodaj**, a następnie w grupie **Funkcje** wybierz typ źródła danych **Kod kreskowy**.
+2. Wybierz opcję **Dodaj** , a następnie w grupie **Funkcje** wybierz typ źródła danych **Kod kreskowy**.
 
     ![Wybieranie typu źródła danych kodu kreskowego](./media/er-barcode-data-source-add.png)
 
@@ -220,15 +221,15 @@ Następnie należy dodać nowe źródło danych typu **Kod kreskowy**.
 Następnie należy powiązać nowy element formatu ze źródłem danych, które zostało właśnie dodane.
 
 1. W projektancie operacji modułu ER na karcie **Mapowanie** po prawej stronie strony wybierz źródło danych **drukuj\\kod kreskowy**.
-2. W okienku drzewa formatu po lewej stronie wybierz element komórki **AmountBarcode**, a następnie wybierz opcję **Powiąż**.
+2. W okienku drzewa formatu po lewej stronie wybierz element komórki **AmountBarcode** , a następnie wybierz opcję **Powiąż**.
 3. W okienku akcji wybierz pozycję **Pokaż szczegóły**.
 4. Zwróć uwagę, że ponieważ źródło danych **Kod kreskowy** jest reprezentowane w powiązaniu jako funkcja zawierająca jeden parametr, nazwa elementu formatu powiązanego jest automatycznie traktowana jako argument tego parametru.
 
     ![Szczegóły źródła danych kodu kreskowego w projektancie operacji ER](./media/er-barcode-data-source-bind1.png)
 
-5. Wybierz opcję **Edytuj formułę**, aby dostosować powiązanie.
+5. Wybierz opcję **Edytuj formułę** , aby dostosować powiązanie.
 
-    Nie chcesz, aby była zwracana nazwa elementu komórki. Dlatego należy skonfigurować Wyrażenie zwracające tekst zawierający kwotę zobowiązania z bieżącego czeku. Ponieważ nadrzędny zakres **ChequeLines** jest powiązany ze źródłem danych **model.cheques**, kwota zobowiązania bieżącego czeku jest dostępna w polu **model.cheques.attributes.amount** źródła danych **Rzeczywisty**.
+    Nie chcesz, aby była zwracana nazwa elementu komórki. Dlatego należy skonfigurować Wyrażenie zwracające tekst zawierający kwotę zobowiązania z bieżącego czeku. Ponieważ nadrzędny zakres **ChequeLines** jest powiązany ze źródłem danych **model.cheques** , kwota zobowiązania bieżącego czeku jest dostępna w polu **model.cheques.attributes.amount** źródła danych **Rzeczywisty**.
 
 6. W polu **Formuła** wprowadź wartość **print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
 7. Wybierz **Zapisz** i następnie zamknij [projektanta formuł ER](general-electronic-reporting-formula-designer.md).
@@ -240,7 +241,7 @@ Następnie należy powiązać nowy element formatu ze źródłem danych, które 
 
 #### <a name="make-the-modified-version-available-for-test-runs"></a><a name="ExampleModifyFormatMakeVersionAvailable"></a>Udostępnij zmodyfikowaną wersję do testów
 
-Domyślnie jedynie wersje, które mają stan **Zakończono** i **Udostępniono**, są używane w przypadku uruchamiania formatu ER.
+Domyślnie jedynie wersje, które mają stan **Zakończono** i **Udostępniono** , są używane w przypadku uruchamiania formatu ER.
 
 W przypadku sfinalizowania zmian można dokończyć pracę z bieżącą wersją roboczą i wprowadzić zmiany do użycia. Aby uzyskać instrukcje, zajrzyj do następującej sekcji [Wypełnij zmodyfikowaną wersję formatu](#CompleteToRun).
 
@@ -250,9 +251,9 @@ Jeśli chcesz kontynuować pracę z bieżącą wersją roboczą, ale musisz uży
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz **Konfigracje raportowanias**.
-3. Na stronie **Konfiguracje** w drzewie konfiguracji rozwiń węzeł **Model czeków**, a następnie wybierz opcję **Format drukowania czeków**.
+3. Na stronie **Konfiguracje** w drzewie konfiguracji rozwiń węzeł **Model czeków** , a następnie wybierz opcję **Format drukowania czeków**.
 4. Na skróconej karcie **wersje** szybkie wybierz rekord o stanie **Wersja robocza**.
-5. Wybierz pozycję **Zmień stan**, a następnie wybierz opcję **Zakończono**.
+5. Wybierz pozycję **Zmień stan** , a następnie wybierz opcję **Zakończono**.
 6. W oknie dialogowym kliknij **OK**.
 
 Stan bieżącej wersji zostanie zmieniony z **Wersji roboczej** na **Zakończono** i zostanie utworzona nowa wersja o stanie **Wersja robocza**. Możesz użyć nowej wersji roboczej, aby zastosować dodatkowe zmiany.
@@ -262,8 +263,8 @@ Stan bieżącej wersji zostanie zmieniony z **Wersji roboczej** na **Zakończono
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. WNa stronie **Konfiguracje lokalizacji** w sekcji **Konfiguracje** wybierz **Konfigracje raportowanias**.
 3. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
-4. W oknie dialogowym określ opcję **Ustawienia uruchamiania** na **Tak**, a następnie wybierz **OK**.
-5. W drzewie konfiguracji rozwiń węzeł **Model czeków**, a następnie wybierz opcję **Format drukowania czeków**.
+4. W oknie dialogowym określ opcję **Ustawienia uruchamiania** na **Tak** , a następnie wybierz **OK**.
+5. W drzewie konfiguracji rozwiń węzeł **Model czeków** , a następnie wybierz opcję **Format drukowania czeków**.
 6. Ustaw wartość **Wersja robocza uruchomienia** opcji **Uruchomić**.
 7. Wybierz opcję **Zapisz**.
 
@@ -273,8 +274,8 @@ Wersja robocza wybranego formatu jest oznaczona jako dostępna do użycia w przy
 
 1. Kliknij kolejno opcje **Zarządzanie gotówką i bankami** \> **Konta bankowe** \> **Konta bankowe**.
 2. Na stronie **Konta bankowe** wybierz konto **USMF OPER**.
-3. Na stronie szczegółów konta bankowego w okienku akcji na karcie **Konfiguracja**, w grupie **Układ** wybierz opcję **Czek**.
-4. Na stronie **Układ czeku**, w okienku akcji, wybierz opcję **Drukowanie testu**.
+3. Na stronie szczegółów konta bankowego w okienku akcji na karcie **Konfiguracja** , w grupie **Układ** wybierz opcję **Czek**.
+4. Na stronie **Układ czeku** , w okienku akcji, wybierz opcję **Drukowanie testu**.
 5. W oknie dialogowym określ opcję **Format czeków zbywalnych** na **Tak**.
 6. Kliknij przycisk **OK**.
 7. Przejrzyj wygenerowany czek. Należy zauważyć, że kod kreskowy został wygenerowany w celu zakodowania kwoty płatności czeku.
@@ -288,7 +289,7 @@ Wersja robocza wybranego formatu jest oznaczona jako dostępna do użycia w przy
 
 Zgodnie z opisem w temacie [Generowanie drukowalnych formularzy FTI](er-generate-printable-fti-forms.md#finland) z możliwością drukowania można wykorzystać specjalną czcionkę do tworzenia kodów kreskowych w generowanym dokumencie. W takim przypadku dodatkowe przekształcenia wygenerowanego dokumentu mogą zależeć od dostępności tej czcionki w środowisku transformacji. Jeśli na przykład użytkownik spróbuje przekonwertować dokument na format PDF lub wyświetlić go w środowisku, w którym brakuje czcionki, kody kreskowe nie będą renderowane poprawnie.
 
-Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Kod kreskowy**, renderowanie tych kodów kreskowych nie zależy od żadnej czcionki. Dzięki temu można łatwo przekonwertować dokumenty zawierające kody kreskowe na format PDF. Na poniższej ilustracji przedstawiono Podgląd wygenerowanego czeku płatności, który został [przekonwertowany](electronic-reporting-destinations.md#OutputConversionToPDF) na format PDF, na podstawie ustawienia skonfigurowanego [miejsca docelowego](electronic-reporting-destinations.md) ER.
+Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Kod kreskowy** , renderowanie tych kodów kreskowych nie zależy od żadnej czcionki. Dzięki temu można łatwo przekonwertować dokumenty zawierające kody kreskowe na format PDF. Na poniższej ilustracji przedstawiono Podgląd wygenerowanego czeku płatności, który został [przekonwertowany](electronic-reporting-destinations.md#OutputConversionToPDF) na format PDF, na podstawie ustawienia skonfigurowanego [miejsca docelowego](electronic-reporting-destinations.md) ER.
 
 ![Podgląd pliku PDF czeku płatniczego](./media/er-barcode-data-source-cheque4.png)
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976386"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006173"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -76,7 +76,7 @@ Hierarchię wymiarów spełniającą wymagania sprawozdawcze organizacji można 
 
 **Hierarchia wymiarów**
 
-|              | Zakresy elementów członkowskich wymiaru |                     |
+|    &nbsp;    | Zakresy elementów członkowskich wymiaru | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Węzły**        | **Element członkowskiego wymiaru źródłowego**   | **Element członkowski wymiaru docelowego** |
 | Organizacja |                         |                     |
@@ -97,7 +97,7 @@ Hierarchię wymiarów spełniającą wymóg zasady można skonfigurować w nast�
 
 **Hierarchia wymiarów**
 
-|                         | Zakresy elementów członkowskich wymiaru |                     |
+|      &nbsp;             | Zakresy elementów członkowskich wymiaru |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Węzły                   | Element członkowskiego wymiaru źródłowego   | Element członkowski wymiaru docelowego |
 | Rachunek zysków i strat |                         |                     |
@@ -105,7 +105,7 @@ Hierarchię wymiarów spełniającą wymóg zasady można skonfigurować w nast�
 
 Po przetworzeniu zapisów księgi głównej saldo wpisów kosztów z podziałem na obiekty kosztów wygląda następująco.
 
-|                      | **Obiekt kosztów** |           |           |           | **Suma**     |
+|      &nbsp;          | **Obiekt kosztów** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Suma**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Składnik kosztu**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Energia elektryczna** | 100,00          | 200 000    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Jeśli chcesz się dowiedzieć, jak koszty przepływają między centrami koszt�
 
 Elementy członkowskie wymiaru składnika kosztu można skonfigurować w następujący sposób.
 
-| Składniki kosztów | Typ          |               |
+| Składniki kosztów | Typ          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Elektryczność   | Główne       |
 | 1002          | Wynagrodzenia      | Główne       |
@@ -179,14 +179,14 @@ Hierarchia wymiarów **Rachunek zysków i strat** musi zostać zaktualizowana o 
 
 **Hierarchia wymiarów**
 
-|                         | Zakresy elementów członkowskich wymiaru |                     |
+|      &nbsp;             | Zakresy elementów członkowskich wymiaru |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Węzły                   | Element członkowskiego wymiaru źródłowego   | Element członkowski wymiaru docelowego |
 | Rachunek zysków i strat |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Koszt podstawowy                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Koszt w drugiej walucie                         | **SC-CC001**            | **SC-CC004**        |
 
-Utwórz **zasadę akumulacji kosztów**, gdzie każde centrum kosztów jest zamapowane na odpowiedni składnik kosztów typu **Podrzędne**.
+Utwórz **zasadę akumulacji kosztów** , gdzie każde centrum kosztów jest zamapowane na odpowiedni składnik kosztów typu **Podrzędne**.
 
 **Zasady akumulacji kosztów**
 
@@ -223,7 +223,7 @@ Teraz system będzie stosował **zasadę akumulacji kosztów** podczas tworzenia
 | 31-01-2017      | CC004       | Opakowanie    | SC-CC004 | Opakowanie | 15.717,25 |
 
 > [!NOTE]
-> Wpisy w arkuszu są tworzone na podstawie reguł określonych w **zasadzie akumulacji kosztów**, jeśli taka zasada istnieje. Wyświetlane saldo jest saldem obliczania kosztów ogólnych.
+> Wpisy w arkuszu są tworzone na podstawie reguł określonych w **zasadzie akumulacji kosztów** , jeśli taka zasada istnieje. Wyświetlane saldo jest saldem obliczania kosztów ogólnych.
 
 Strona **Szczegóły wpisu w arkuszu sald kosztów obiektów kosztów** otwierana z poziomu wpisów arkusza pokazuje sposób uzyskania salda.
 
@@ -258,7 +258,7 @@ Hierarchie wymiarów umożliwiają wyświetlanie danych na różnych poziomach a
 
 Poniżej przedstawiono przykład raportu Power Pivot w programie Excel.
 
-| **Rachunek zysków i strat** | **Obiekt kosztów** |                |               |               |  **Suma**    |
+| **Rachunek zysków i strat** | **Obiekt kosztów** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Suma**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Koszt podstawowy**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -274,9 +274,9 @@ Poniżej przedstawiono przykład raportu Power Pivot w programie Excel.
 
 Za pomocą **zasady akumulacji kosztów** i **podrzędnych składników kosztów** można pozostawić koszt podstawowy obiektu kosztów dla sprawozdawczości wewnętrznej jako koszt podstawowy, która pozostaje po **obliczeniu kosztów ogólnych**.
 
-Jeśli ten sam przykład zostałby wykonany bez tworzenia **zasady akumulacji kosztów**, wynik raportowania wyglądałby jak poniżej. Koszt przepływa poprawnie, ale traci się możliwość jego identyfikacji i wglądu w sposób przepływu między centrami kosztów.
+Jeśli ten sam przykład zostałby wykonany bez tworzenia **zasady akumulacji kosztów** , wynik raportowania wyglądałby jak poniżej. Koszt przepływa poprawnie, ale traci się możliwość jego identyfikacji i wglądu w sposób przepływu między centrami kosztów.
 
-| **Rachunek zysków i strat** | **Obiekt kosztów** |           |               |               |          **Suma**  |
+| **Rachunek zysków i strat** | **Obiekt kosztów** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Suma**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Koszt podstawowy**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

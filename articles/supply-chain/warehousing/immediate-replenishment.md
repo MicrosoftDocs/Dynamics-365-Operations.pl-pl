@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLocDirTable
+ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 911a1da7d762b25f637b7d3b4d3b6214023203f5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205628"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017515"
 ---
 # <a name="immediate-replenishment"></a>Natychmiastowe uzupełnianie zapasów
 
@@ -47,7 +47,7 @@ Funkcja natychmiastowego uzupełniania zapasów jest używana podczas wykonywani
 
 ## <a name="set-up-immediate-replenishment"></a>Konfigurowanie natychmiastowego uzupełniania zapasów
 
-- Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Dyrektywy lokalizacji**, a następnie na karcie **Wiersze** na liście **Szablon natychmiastowego uzupełniania zapasów** wybierz szablon uzupełnienia zapasów dla popytu grupy czynności.
+- Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Dyrektywy lokalizacji** , a następnie na karcie **Wiersze** na liście **Szablon natychmiastowego uzupełniania zapasów** wybierz szablon uzupełnienia zapasów dla popytu grupy czynności.
 
 Szablon uzupełniania zapasów zostanie zastosowany, jeśli wiersz dyrektywy lokalizacji nie przydzieli w ustawionej jednostce miary.
 

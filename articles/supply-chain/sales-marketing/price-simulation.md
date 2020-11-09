@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 336fb51dc5fb66dfbe14091d121e0a4471b9662b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978900"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006266"
 ---
 # <a name="price-simulation"></a>Symulacja ceny
 
@@ -74,7 +74,7 @@ Utworzono ofertę z następującymi wierszami:
 
 Poniższa tabela przedstawia wiersze oferty.
 
-|                            | Obliczanie                          | Wynik   |
+|    &nbsp;                  | Obliczanie                          | Wynik   |
 |----------------------------|--------------------------------------|----------|
 | Ilość sprzedaży             | 10 sztuk + 12 sztuk                  | 22 sztuki |
 | Wartość sprzedaży w USD         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
@@ -84,7 +84,7 @@ Poniższa tabela przedstawia wiersze oferty.
 
 Uruchomiono symulację ceny i zastosowano 15 procent rabatu końcowego dla całej oferty lub nagłówka oferty. Poniższa tabela przedstawia nowe sumy oferty po uruchomieniu symulacji cen.
 
-|                                                      | Obliczanie                               | Wynik   |
+|     &nbsp;                                           | Obliczanie                               | Wynik   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Ilość sprzedaży                                       | 10 sztuk + 12 sztuk                       | 22 sztuki |
 | Stara wartość sprzedaży w USD                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
@@ -105,7 +105,7 @@ Utworzono ofertę z następującymi wierszami:
 
 Poniższa tabela przedstawia wiersze oferty.
 
-|                                      | Obliczanie                          | Wynik   |
+|      &nbsp;                          | Obliczanie                          | Wynik   |
 |--------------------------------------|--------------------------------------|----------|
 | Ilość sprzedaży                       | 10 sztuk + 12 sztuk                  | 22 sztuki |
 | Wartość sprzedaży w USD dla BR-12         | 10 × 15,32                           | 153,20   |
@@ -123,7 +123,7 @@ Poniższa tabela przedstawia wiersze oferty.
 
 Uruchomiono symulację cen i zastosowano 10 procent rabatu końcowego dla jednostek BR-12. Poniższa tabela przedstawia nowe sumy oferty po uruchomieniu symulacji cen dla pojedynczego towaru.
 
-|                                                   | Obliczanie                             | Wynik   |
+|    &nbsp;                                         | Obliczanie                             | Wynik   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Ilość sprzedaży                                    | 10 sztuk + 12 sztuk                     | 22 sztuki |
 | Stara wartość sprzedaży w USD dla BR-12                  | 10 × 15,32                              | 153,20   |

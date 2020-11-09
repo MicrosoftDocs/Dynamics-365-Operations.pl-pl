@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ab0a6e7de02b4b69d3f7a129392a1057482f0c26
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826342"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017237"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
@@ -46,7 +46,7 @@ Aby zapoznać się z szybką demonstracją zwalniania wierszy BOM i formuły do 
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Zwalnianie wierszy BOM i formuły za pomocą zadania wsadowego
 
-Zadanie wsadowe **Automatyczne zwalnianie wierszy BOM i formuły** przechodzi przez wybrane wiersze BOM i formuły, które mają pozostałą ilość do zwolnienia. Zadanie uwzględnia tylko zamówienia, które mają stan **Zwolnione**, **Rozpoczęte** lub **Zgłoszone jako gotowe**. Jeżeli wiersz BOM lub formuły ma pozostała ilość do zwolnienia, zadanie zwalnia maksymalną ilość jaką można obsłużyć przez ilość już fizycznie zarezerwowaną i ilość, która jest fizycznie dostępna.
+Zadanie wsadowe **Automatyczne zwalnianie wierszy BOM i formuły** przechodzi przez wybrane wiersze BOM i formuły, które mają pozostałą ilość do zwolnienia. Zadanie uwzględnia tylko zamówienia, które mają stan **Zwolnione** , **Rozpoczęte** lub **Zgłoszone jako gotowe**. Jeżeli wiersz BOM lub formuły ma pozostała ilość do zwolnienia, zadanie zwalnia maksymalną ilość jaką można obsłużyć przez ilość już fizycznie zarezerwowaną i ilość, która jest fizycznie dostępna.
 
 ### <a name="example-of-a-batch-job-release"></a>Przykład zwolnienia zadania wsadowego
 
@@ -77,7 +77,7 @@ Jeżeli materiały są zwalniane za pomocą ustawienia parametru **Podczas zwaln
 
 Aby kontrolować operacje, do których ma być zwalniany materiał, użyj strony **Zwolnij do magazynu**.
 
-- Wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne**, wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie użyj pól **Od nr operacji** i **Do nr operacji**, aby określić zakres numerów operacji.
+- Wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne** , wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie użyj pól **Od nr operacji** i **Do nr operacji** , aby określić zakres numerów operacji.
 
 Poniższa operacja przedstawia zlecenie produkcyjne zawierające dwie operacje, 10 i 20. W tym przykładzie, po ograniczeniu zwolnienia do operacji 10, zostanie zwolniony tylko materiał M9203.
 
@@ -89,11 +89,11 @@ Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie
 
 Surowiec można zwolnić dla częściowej ilości wyrobów gotowych lub w określonej jednostce.
 
-- Aby zwolnić surowiec dla częściowej ilości wyrobów gotowych, wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne**, wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie wprowadź ilość w polu **Ilość**.
+- Aby zwolnić surowiec dla częściowej ilości wyrobów gotowych, wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne** , wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie wprowadź ilość w polu **Ilość**.
 
     Przykładowo, utworzono i zaplanowano zlecenie produkcyjne na 1000 sztuk (szt.). Kierownik zakładu produkcyjnego planuje produkcję 100 szt. podczas następnej zmiany i chce zwolnić materiały tylko dla tej zmiany. W tym przypadku kierownik może użyć pola **Ilość** do zwolnienia materiałów na 100 szt. planowanych na następną zmianę.
 
-- Aby zwolnić surowiec w określonej jednostce, wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne**, wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie użyj pola **Jednostka**, aby wybrać jednostkę wyrobu gotowego, w której ma zostać zwolniony materiał.
+- Aby zwolnić surowiec w określonej jednostce, wybierz opcję **Kontrola produkcji** \> **Zlecenia produkcyjne** \> **Wszystkie zlecenia produkcyjne** , wybierz zlecenie produkcyjne, a następnie na karcie **Magazyn** wybierz opcję **Zwolnij do magazynu**. Następnie użyj pola **Jednostka** , aby wybrać jednostkę wyrobu gotowego, w której ma zostać zwolniony materiał.
 
     Dostępne jednostki są zdefiniowane w identyfikatorze grupy sekwencji jednostki wyrobu gotowego.
 
