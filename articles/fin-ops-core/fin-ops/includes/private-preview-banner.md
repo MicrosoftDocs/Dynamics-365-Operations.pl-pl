@@ -1,0 +1,10 @@
+---
+ms.openlocfilehash: 0152024f9452944590893ca8e5789cb10bc71c98
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459713"
+---
+> [!IMPORTANT]
+> <span data-ttu-id="3e3e8-101">Funkcje wymienione w tym temacie są dostępne dla wybranych użytkowników w ramach wydania prywatnej wersji zapoznawczej.</span><span class="sxs-lookup"><span data-stu-id="3e3e8-101">Functionality noted in this topic is available to targeted users as part of a private preview release.</span></span> <span data-ttu-id="3e3e8-102">Zawartość i funkcje mogą ulec zmianie.</span><span class="sxs-lookup"><span data-stu-id="3e3e8-102">The content and the functionality are subject to change.</span></span> 
