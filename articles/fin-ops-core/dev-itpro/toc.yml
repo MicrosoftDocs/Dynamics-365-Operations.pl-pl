@@ -14,14 +14,12 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update dla wersji 10.0.16 (luty 2021)
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Aktualizacja Platform update dla wersji 10.0.15 (styczeń 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Aktualizacja Platform update w wersji 10.0.14 (listopad 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Aktualizacja Platform update w wersji 10.0.13 (październik 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Aktualizacja Platform update dla wersji 10.0.12 (sierpień 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: 'Funkcje systemu AX 2012, które zostały odroczone'
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Funkcje niezaimplementowane we wdrożeniach lokalnych
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Zakończenie wsparcia podstawowego dla usługi Microsoft Dynamics AX 2009 i 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Zdarzenia biznesowe
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: Ustawianie mapowania pól stanu zamówienia sprzedaży
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: Filtrowanie zamówień międzyfirmowych w celu uniknięcia rekordów Orders i OrderLines
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Zarządzanie podwójnym zapisem
                           items:
                             - name: Dostosowanie mapowania jednostek i pól
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Zintegrowane dane główne podatków
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Dynamics 365 Supply Chain Management
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Prospekt do gotówki w podwójnym zapisie
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Dynamics 365 Supply Chain Management
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Wewnętrzne składniki majątku do obsługi
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Zintegrowany pracownik, praca i stanowisko'
@@ -496,10 +496,12 @@
                   items:
                     - name: Omówienie wdrażania lokalnego
                       href: deployment/on-premises-overview.md
-                    - name: Planowanie i przygotowywanie do wdrożeń lokalnych
+                    - name: Planowanie i przygotowywanie się na lokalne wdrożenia
                       href: deployment/plan-onprem-deployment.md
                     - name: Wymagania dotyczące zapotrzebowania na sprzęt
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Uwierzytelnianie w rozwiązaniach Dynamics 365 Finance + Operations (lokalnie)
+                      href: deployment/authentication-onprem.md
                 - name: Konfigurowanie i wdrażanie środowisk lokalnych
                   items:
                     - name: Konfigurowanie projektów lokalnych w usłudze LCS
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Utwórz połączenie usługi Lifecycle Services (LCS) w usłudze Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Aktualizowanie starszego potoku w usłudze Azure Pipelines
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Przykładowa aplikacja Zarządzanie flotą
               items:
                 - name: Kompleksowy scenariusz dla przykładowej aplikacji Zarządzanie flotą
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Dostęp do danych za pomocą interfejsu API SysDa
                           href: dev-ref/sysda.md
+                        - name: Minimalizowanie zagrożeń związanych z atakami obejmującymi wstrzykiwanie kodu SQL
+                          href: dev-ref/query-with-parameters.md
                     - name: Makra w języku X++
                       href: dev-ref/xpp-macros.md
                     - name: Klasy atrybutów w języku X++
@@ -1492,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Szyfrowanie w aplikacjach Finance and Operations
                   href: sysadmin/encryption.md
-                - name: Ustawianie limitu czasu bezczynności sesji
+                - name: Ustawianie limitu czasu braku aktywności dla sesji
                   href: sysadmin/session-idle-timeout.md
                 - name: Gotowe raporty o zabezpieczeniach
                   href: sysadmin/security-reports.md
                 - name: Tworzenie nowych użytkowników
                   href: sysadmin/tasks/create-new-users.md
+                - name: Zarządzanie sesjami użytkownika
+                  href: sysadmin/user-session-management.md
                 - name: Zbiorowe importowanie użytkowników
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Konfigurowanie podziału obowiązków
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Konfigurowanie klienta magazynu kluczy usługi Azure
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Procedury oczyszczania
+              href: sysadmin/cleanuproutines.md
         - name: 'Uaktualnienia, aktualizacje i poprawki'
           items:
             - name: 'Zasoby uaktualnień, aktualizacji i poprawek'
@@ -1696,7 +1706,7 @@
                   href: user-interface/build-customer-form.md
                 - name: Tworzenie nawigacji
                   href: user-interface/build-navigation.md
-                - name: Tworzenie obszarów roboczych
+                - name: Modyfikowanie obszaru roboczego
                   href: user-interface/build-workspace.md
             - name: Formularze
               items:

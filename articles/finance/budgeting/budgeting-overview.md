@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975275"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528552"
 ---
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
@@ -64,7 +64,7 @@ Aby uzyskać informacje dotyczące przenoszenia danych planowania z innych modu�
 ## <a name="user-interface-and-reporting-capabilities"></a>Interfejs użytkownika i funkcje raportowania
 Użytkownicy mogą tworzyć plany budżetu bezpośrednio w kliencie (przy użyciu konfigurowalnej strony dokumentu planu budżetu) lub za pomocą programu Excel. Program Excel oferuje kilka dodatkowych funkcji. Można na przykład użyć zewnętrznych danych jako źródła planu budżetu, wykonywać niestandardowe obliczenia oraz używać tabel przestawnych i wykresów. Można skonfigurować większość zmiennych używanych w procesie planowania budżetu. 
 
-Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w budżecie i jak wygląda proces. Mimo że program Excel umożliwia planowanie budżetu, aplikacja jest jedynym źródłem wiarygodnych informacji i pozwala uniknąć problemów z kontrolą budżetu. Okresowe procesy mogą być używane do wprowadzania danych początkowych budżetowania do planu budżetu. Na potrzeby raportowania aplikacja oferuje zestaw stron standardowych zapytań, które umożliwiają wyświetlanie i analizowanie danych budżetowania. Dane planu budżetu można wyświetlić za pomocą programu Management Reporter, a poszczególne scenariusze planu budżetu mogą być wyświetlane jako kolumny w raporcie tego programu.
+Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w budżecie i jak wygląda proces. Mimo że program Excel umożliwia planowanie budżetu, aplikacja jest jedynym źródłem wiarygodnych informacji i pozwala uniknąć problemów z kontrolą budżetu. Okresowe procesy mogą być używane do wprowadzania danych początkowych budżetowania do planu budżetu. Na potrzeby raportowania aplikacja oferuje zestaw stron standardowych zapytań, które umożliwiają wyświetlanie i analizowanie danych budżetowania. Dane planu budżetu można wyświetlić za pomocą modułu [Financial Reporting](../general-ledger/financial-reporting-getting-started.md), a poszczególne scenariusze planu budżetu mogą być wyświetlane jako kolumny raportu finansowego.
 
 
 

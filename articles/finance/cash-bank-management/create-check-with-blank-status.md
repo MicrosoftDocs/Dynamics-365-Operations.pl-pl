@@ -19,11 +19,11 @@ ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 47d54524f87cf718b9b41462b5133df267d5dd9e
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570294"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459739"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Tworzenie czeków z pustym statusem
 
@@ -34,8 +34,8 @@ W tym temacie wyjaśniono, jak tworzyć puste czeki. Na przykład możesz utworz
 Na stronie **Czeki** wykonuje się zadania konserwacyjne związane z czekami. Na przykład możesz tworzyć nowe numery czeków i usuwać czeki. Możesz także tworzyć czeki o statusie **Pusty**. Po utworzeniu pustych czeków nie można ich usunąć ani użyć ponownie w systemie.
 
 > [!NOTE]
-> Ta funkcja jest dostępna na stronie**Czeki** tylko jeśli włączysz funkcję **Twórz czeki z pustym statusem na stronie Czeki** na stronie **Zarządzanie funkcjami**. Jeśli ta funkcja nie jest włączona, czeki o statusie **Pusty** można utworzyć tylko w oknie dialogowym **Płatność czekiem** podczas procesu generowania płatności w opcji Rozrachunki z dostawcami.
+> Ta funkcja jest dostępna na stronie **Czeki** tylko jeśli włączysz funkcję **Twórz czeki z pustym statusem na stronie Czeki** na stronie **Zarządzanie funkcjami**. Jeśli ta funkcja nie jest włączona, czeki o statusie **Pusty** można utworzyć tylko w oknie dialogowym **Płatność czekiem** podczas procesu generowania płatności w opcji Rozrachunki z dostawcami.
 
-Aby otworzyć stronę **Czeki**, przejdź do **Zarządzanie gotówką i bankami \> Konta bankowe \> Konta bankowe**, a następnie w okienku akcji na karcie **Zarządzanie płatnościami** w grupie**Informacje pokrewne**, wybierz opcję **Czeki**. Możesz też wybrać opcje **Zarządzanie gotówką i bankami \> Zapytania i raporty \> Czeki**.
+Aby otworzyć stronę **Czeki**, przejdź do **Zarządzanie gotówką i bankami \> Konta bankowe \> Konta bankowe**, a następnie w okienku akcji na karcie **Zarządzanie płatnościami** w grupie **Informacje pokrewne**, wybierz opcję **Czeki**. Możesz też wybrać opcje **Zarządzanie gotówką i bankami \> Zapytania i raporty \> Czeki**.
 
 Następnie, aby utworzyć czeki, które mają status **Pusty** w okienku akcji wybierz **Utwórz puste czeki**. Gdy system tworzy puste czeki, powiązane konto bankowe zostaje tymczasowo dezaktywowane. To zachowanie zmniejsza ryzyko, że płatności będą generowane w tym samym czasie, gdy tworzone są puste czeki. Po zakończeniu przetwarzania powiązane konto bankowe zostanie ponownie aktywowane.

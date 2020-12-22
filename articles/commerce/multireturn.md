@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
 ms.openlocfilehash: e95f06ffaaf2d250b02a8458faa2d9e0b5ef5631
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760257"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459696"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Zwracanie pozycji w ramach wielu zamówień i faktur odbiorców
 

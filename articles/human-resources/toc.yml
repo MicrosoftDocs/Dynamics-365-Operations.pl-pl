@@ -5,7 +5,9 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
-        - name: 22 października 2002 r.
+        - name: 2 grudnia 2020 r.
+          href: hr-whats-new-2020-12-02.md
+        - name: 22 października 2020 r.
           href: hr-whats-new-2020-10-22.md
         - name: 6 października 2020 r.
           href: hr-whats-new-2020-10-06.md
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: Tworzenie kalendarza czasów pracy
               href: hr-personnel-create-working-time-calendar.md
+            - name: Rekrutowanie kandydatów
+              href: hr-personnel-recruit.md
             - name: Akcje dotyczące pracowników — często zadawane pytania
               href: hr-personnel-actions-faq.md
             - name: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
@@ -533,7 +537,9 @@
                   href: hr-benefits-management-overview.md
                 - name: Konfigurowanie zarządzania świadczeniami
                   items:
-                    - name: Ustawianie parametrów zarządzania świadczeniami
+                    - name: Konfigurowanie parametrów zarządzania świadczeniami w firmie
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
                       href: hr-benefits-setup-parameters.md
                     - name: Konfigurowanie reguł i opcji uprawnień
                       href: hr-benefits-setup-eligibility-rules.md
