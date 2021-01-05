@@ -1,0 +1,49 @@
+---
+title: Definiowanie warunków płatności dla dostawcy
+description: W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od dostawcy.
+author: abruer
+manager: AnnBe
+ms.date: 07/09/2019
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: PaymTerm, CashDisc
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: abruer
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 7e6778f61a9367399e4b71d5b2bb2459c09ba508
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446637"
+---
+# <a name="define-vendor-payment-terms"></a><span data-ttu-id="bbd0a-103">Definiowanie warunków płatności dla dostawcy</span><span class="sxs-lookup"><span data-stu-id="bbd0a-103">Define vendor payment terms</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+<span data-ttu-id="bbd0a-104">W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-104">This topic explains how to set up payment terms for vendor invoices.</span></span> <span data-ttu-id="bbd0a-105">W zadaniu wykorzystano firmę demonstracyjną USMF.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-105">This task uses the USMF demo company.</span></span>
+
+1. <span data-ttu-id="bbd0a-106">Wybierz kolejno **okienko nawigacji > Moduły > Rozrachunki z dostawcami > Ustawienia płatności > Warunki płatności**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-106">Go to **Navigation pane > Modules > Accounts payable > Payment setup > Terms of payment**.</span></span>
+2. <span data-ttu-id="bbd0a-107">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-107">Select **New**.</span></span> <span data-ttu-id="bbd0a-108">Strona Warunki płatności służy do definiowania sposobu obliczania terminu płatności.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-108">The Terms of payment page is used to define how the due date will be calculated.</span></span> <span data-ttu-id="bbd0a-109">Nie jest używana do definiowania sposobu obliczania daty rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-109">It is not used to define how the cash discount date will be calculated.</span></span>  
+3. <span data-ttu-id="bbd0a-110">W polu **Warunki płatności** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-110">In the **Terms of payment** field, type a value.</span></span>
+4. <span data-ttu-id="bbd0a-111">W polu **Opis** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-111">In the **Description field**, type a value.</span></span>
+5. <span data-ttu-id="bbd0a-112">W polu **Dni** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-112">In the **Days** field, enter a number.</span></span> <span data-ttu-id="bbd0a-113">Liczba wprowadzona w tym polu zostanie użyta w celu dodania czasu do terminu płatności lub do końca okresu zidentyfikowanego w metodzie płatności.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-113">The number entered here will be used to add to the due date, or to the end of the period identified in the Payment method.</span></span> <span data-ttu-id="bbd0a-114">Na przykład wybranie opcji **Netto** spowoduje dodanie czasu do terminu płatności.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-114">For example, if you select **Net**, the number will be added to the due date.</span></span> <span data-ttu-id="bbd0a-115">Jeśli zaznaczysz opcję **Bieżący miesiąc**, w celu obliczenia terminu płatności czas zostanie dodany do ostatniego dnia bieżącego miesiąca.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-115">If you select **Current month**, it will add the number to the last day of the current month to calculate the due date.</span></span>  
+6. <span data-ttu-id="bbd0a-116">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-116">Select **Save**.</span></span>
+7. <span data-ttu-id="bbd0a-117">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-117">Close the page.</span></span>
+8. <span data-ttu-id="bbd0a-118">Wybierz kolejno opcje **Rozrachunki z dostawcami > Ustawienia płatności > Rabaty gotówkowe**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-118">Go to **Accounts payable > Payment setup > Cash discounts**.</span></span>
+9. <span data-ttu-id="bbd0a-119">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-119">Select **New**.</span></span>
+10. <span data-ttu-id="bbd0a-120">W polu **Rabat gotówkowy** wprowadź identyfikator.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-120">In the **Cash discount** field, enter an ID.</span></span>
+11. <span data-ttu-id="bbd0a-121">W polu **Opis** wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-121">In the **Description** field, type a value.</span></span>
+12. <span data-ttu-id="bbd0a-122">Jeśli dostawca oferuje rabat warstwowy, zaznacz następny rabat gotówkowy, który będzie stosowany po upływie terminu bieżącego rabatu.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-122">If the vendor offers a tiered discount, select the next cash discount after the current one is expired.</span></span>
+13. <span data-ttu-id="bbd0a-123">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-123">Close the page.</span></span>
+14. <span data-ttu-id="bbd0a-124">W polu **Dni** wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-124">In the **Days** field, enter a number.</span></span> <span data-ttu-id="bbd0a-125">Ilość wprowadzona w polu **Dni** będzie używana do obliczania daty rabatu gotówkowego w oparciu o opcję wybraną w polu **Netto/Bieżące**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-125">The quantity entered in the **Days** field will be used to calculate the Cash discount date, based on what option was selected in the **Net/Current** field.</span></span> <span data-ttu-id="bbd0a-126">Jeśli wybrano opcję **Netto**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana do daty faktury.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-126">If **Net** was selected, the quantity will be added to the invoice date to determine the cash discount date.</span></span> <span data-ttu-id="bbd0a-127">Jeśli wybrano opcję **Bieżący miesiąc**, w celu wyznaczenia daty rabatu gotówkowego ilość zostanie dodana na końcu bieżącego miesiąca.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-127">If **Current month** was selected, the quantity will be added to the end of the currency month to determine the cash discount date.</span></span>  
+15. <span data-ttu-id="bbd0a-128">W polu **Rabat** wprowadź wartość procentową rabatu gotówkowego.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-128">Enter the percentage of the cash discount in the **Discount** field.</span></span> 
+16. <span data-ttu-id="bbd0a-129">Wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur odbiorcy, a następnie wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur od dostawcy.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-129">Enter the main account to which the cash discount will be posted for customer invoices, then enter the main account to which the cash discount will be posted for vendor invoices.</span></span> <span data-ttu-id="bbd0a-130">Jeśli w polu **Konta przeciwstawne rabatów** jest ustawiona opcja **Użyj konta głównego dla rabaty dostawcy**, będzie używane konto główne.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-130">If **Discount offset accounts** is set to **Use main account for vendor discount**, then the Main account will be used.</span></span> <span data-ttu-id="bbd0a-131">Jeśli wybierzesz opcję **Konta w wierszach faktury**, rabat gotówkowy będzie księgowany na kontach środków trwałych/wydatków z wierszy faktury.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-131">If the option is set to **Accounts on the invoice lines**, the cash discount will be posted to the asset/expense accounts on the invoice's lines.</span></span>  
+17. <span data-ttu-id="bbd0a-132">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="bbd0a-132">Select **Save**.</span></span>
+

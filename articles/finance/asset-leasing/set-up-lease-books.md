@@ -1,0 +1,55 @@
+---
+title: Konfigurowanie ksiąg wynajmu
+description: W tym temacie opisano informacje przechowywane w księgach wynajmu. Księgi wynajmu zawierają zasady rachunkowości, które decydują o sposobie księgowania wynajmu w systemie.
+author: moaamer
+manager: Ann Beebe
+ms.date: 10/28/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TaxTable
+audience: Application User
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
+ms.custom: 4464
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
+ms.search.region: Global
+ms.author: moaamer
+ms.search.validFrom: 2020-10-28
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4446997"
+---
+# <a name="set-up-lease-books"></a><span data-ttu-id="a312b-104">Konfigurowanie ksiąg wynajmu</span><span class="sxs-lookup"><span data-stu-id="a312b-104">Set up lease books</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="a312b-105">Księgi wynajmu zawierają zasady rachunkowości, które decydują o sposobie księgowania wynajmu w systemie.</span><span class="sxs-lookup"><span data-stu-id="a312b-105">Lease books contain the accounting policies that determine how a lease is accounted for in the system.</span></span> <span data-ttu-id="a312b-106">Moduł Wynajem składnika majątku obsługuje nie tylko księgowanie na podstawie gotówki, ale również następujące standardy:</span><span class="sxs-lookup"><span data-stu-id="a312b-106">In addition to cash basis accounting, Asset leasing supports the following standards:</span></span>
+
+- <span data-ttu-id="a312b-107">Ogólnie przyjęte zasady rachunkowości w Stanach Zjednoczonych (US GAAP)</span><span class="sxs-lookup"><span data-stu-id="a312b-107">Generally Accepted Accounting Principles in the United States (US GAAP)</span></span>
+- <span data-ttu-id="a312b-108">Accounting Standards Codification Topic 842 (ASC 842)</span><span class="sxs-lookup"><span data-stu-id="a312b-108">Accounting Standards Codification Topic 842 (ASC 842)</span></span>
+- <span data-ttu-id="a312b-109">ASC 840</span><span class="sxs-lookup"><span data-stu-id="a312b-109">ASC 840</span></span>
+- <span data-ttu-id="a312b-110">Międzynarodowy Standard Sprawozdawczości Finansowej nr 16 (MSSF 16)</span><span class="sxs-lookup"><span data-stu-id="a312b-110">International Financial Reporting Standard 16 (IFRS 16)</span></span>
+- <span data-ttu-id="a312b-111">Międzynarodowy Standard Rachunkowości nr 17 (MSR 17)</span><span class="sxs-lookup"><span data-stu-id="a312b-111">International Accounting Standard 17 (IAS 17)</span></span>
+
+<span data-ttu-id="a312b-112">Aby utworzyć księgę wynajmu, wykonaj następujące czynności.</span><span class="sxs-lookup"><span data-stu-id="a312b-112">To create a lease book, follow these steps.</span></span>
+
+1. <span data-ttu-id="a312b-113">Przejdź do **Wynajem składnika majątku \> Ustawienia \> Księgi wynajmu**.</span><span class="sxs-lookup"><span data-stu-id="a312b-113">Go to **Asset leasing \> Setup \> Lease books**.</span></span>
+2. <span data-ttu-id="a312b-114">Wybierz opcję **Nowy**, aby dodać księgę.</span><span class="sxs-lookup"><span data-stu-id="a312b-114">Select **New** to add a book.</span></span>
+3. <span data-ttu-id="a312b-115">Ustaw wartości w następujących polach.</span><span class="sxs-lookup"><span data-stu-id="a312b-115">Set the following fields.</span></span>
+
+    | <span data-ttu-id="a312b-116">Imię i nazwisko</span><span class="sxs-lookup"><span data-stu-id="a312b-116">Name</span></span>                                     | <span data-ttu-id="a312b-117">opis</span><span class="sxs-lookup"><span data-stu-id="a312b-117">Description</span></span> |
+    |------------------------------------------|-------------|
+    | <span data-ttu-id="a312b-118">Warstwa księgowania</span><span class="sxs-lookup"><span data-stu-id="a312b-118">Posting layer</span></span>                            | <span data-ttu-id="a312b-119">Wybierz warstwę księgowania, która ma być używana.</span><span class="sxs-lookup"><span data-stu-id="a312b-119">Select the posting layer to use.</span></span> <span data-ttu-id="a312b-120">Każda księga dołączona do umowy wynajmu jest skonfigurowana dla określonej warstwy księgowania.</span><span class="sxs-lookup"><span data-stu-id="a312b-120">Each book that is attached to a lease is set up for a specific posting layer.</span></span> <span data-ttu-id="a312b-121">Każda warstwa księgowania ma inne cele księgowania.</span><span class="sxs-lookup"><span data-stu-id="a312b-121">Each posting layer has different posting purposes.</span></span> |
+    | <span data-ttu-id="a312b-122">Typ wynajmu</span><span class="sxs-lookup"><span data-stu-id="a312b-122">Lease type</span></span>                               | <span data-ttu-id="a312b-123">Określ, czy wynajem ma być klasyfikowany automatycznie, czy też powinien być wstępnie definiowany jako leasing finansowy lub operacyjny.</span><span class="sxs-lookup"><span data-stu-id="a312b-123">Select whether the lease should be classified automatically, or whether it should be predefined as a finance or operating lease.</span></span> |
+    | <span data-ttu-id="a312b-124">Struktura księgowania</span><span class="sxs-lookup"><span data-stu-id="a312b-124">Accounting framework</span></span>                     | <span data-ttu-id="a312b-125">Wybierz strukturę skojarzoną z księgą.</span><span class="sxs-lookup"><span data-stu-id="a312b-125">Select the framework that is associated with the book.</span></span> |
+    | <span data-ttu-id="a312b-126">Konfiguracja okresu wynajmu/okresu użyteczności</span><span class="sxs-lookup"><span data-stu-id="a312b-126">Lease term/Useful life Set Up</span></span>          | <span data-ttu-id="a312b-127">System klasyfikuje wynajem jako leasing finansowy, jeśli typ wynajmu jest ustawiony na **Automatycznie** i jeśli wartość okresu wynajmu w okresie użyteczności składnika majątku jest większa lub równa wartości procentowej wprowadzonej w tym polu.</span><span class="sxs-lookup"><span data-stu-id="a312b-127">The system will classify the lease as a finance lease if the lease type is set to **Automatic**, and if the lease term over useful life of the asset is greater than or equal to the percentage entered in this field.</span></span>  |
+    | <span data-ttu-id="a312b-128">Konfiguracja wartości bieżącej / wartości godziwej składnika majątku</span><span class="sxs-lookup"><span data-stu-id="a312b-128">Present value / Asset fair value setup</span></span>   | <span data-ttu-id="a312b-129">Wprowadź liczbę całkowitą określającą próg decydujący o typie wynajmu.</span><span class="sxs-lookup"><span data-stu-id="a312b-129">Enter a whole number to define the threshold that will determine the lease type.</span></span> <span data-ttu-id="a312b-130">Jeśli wartość bieżąca przyszłych opłat z tytułu wynajmu jest większa od wartości zdefiniowanej przez użytkownika w konfiguracji księgi oraz ustawiono automatyczne klasyfikowanie wynajmu w danej księdze, system zaklasyfikuje wynajem jako leasing finansowy.</span><span class="sxs-lookup"><span data-stu-id="a312b-130">If the present value of future minimum lease payments is more than the user-defined value from the book setup, and if the book's lease classification is set to automatic, the system will classify the lease as a finance lease.</span></span> |
+    | <span data-ttu-id="a312b-131">Próg krótkiego terminu</span><span class="sxs-lookup"><span data-stu-id="a312b-131">Short-term threshold</span></span>                     | <span data-ttu-id="a312b-132">Wprowadź liczbę miesięcy, która ma być używana jako próg wynajmu krótkoterminowego.</span><span class="sxs-lookup"><span data-stu-id="a312b-132">Enter the number of months to use as a threshold for short-term leases.</span></span> <span data-ttu-id="a312b-133">Jeśli wartość okresu wynajmu jest mniejsza lub równa liczbie miesięcy wprowadzonej w tym polu, system zaklasyfikuje wynajem jako krótkoterminowy i zastosuje metodę odroczonego czynszu.</span><span class="sxs-lookup"><span data-stu-id="a312b-133">If the lease term is less than or equal to the number of months that you enter here, the system will classify the lease as a short-term lease, and the deferred rent treatment will be applied.</span></span> |
+    | <span data-ttu-id="a312b-134">Próg niskiej wartości</span><span class="sxs-lookup"><span data-stu-id="a312b-134">Low value threshold</span></span>                      | <span data-ttu-id="a312b-135">Wprowadź kwotę, która ma być używana jako próg wynajmu o niskiej wartości.</span><span class="sxs-lookup"><span data-stu-id="a312b-135">Enter an amount to use as a threshold for low-value leases.</span></span> <span data-ttu-id="a312b-136">Jeśli wartość godziwa składnika majątku jest mniejsza lub równa wartości wprowadzonej w tym polu, system zaklasyfikuje wynajem jako mający niską wartość i zastosuje metodę odroczonego czynszu.</span><span class="sxs-lookup"><span data-stu-id="a312b-136">If the fair value of the asset is less than or equal or the value that you enter here, the system will classify the lease as a low-value lease, and the deferred rent treatment will be applied.</span></span> |
+    | <span data-ttu-id="a312b-137">Płatność dla dostawcy</span><span class="sxs-lookup"><span data-stu-id="a312b-137">Pay to vendor</span></span>                            | <span data-ttu-id="a312b-138">Ustaw w tej opcji wartość **Tak**, aby zezwolić na księgowanie opłat z tytułu wynajmu jako faktury na koncie dostawcy określonym dla każdej umowy wynajmu.</span><span class="sxs-lookup"><span data-stu-id="a312b-138">Set this option to **Yes** to allow lease payments to be posted, as an invoice, to the vendor account that is specified on each lease.</span></span> <span data-ttu-id="a312b-139">Po zaksięgowaniu opłaty z tytułu wynajmu konto dostawcy zostanie uznane.</span><span class="sxs-lookup"><span data-stu-id="a312b-139">When a lease payment is posted, the vendor account will be credited.</span></span> <span data-ttu-id="a312b-140">Jeśli ta opcja ma wartość **Nie**, będzie uznawane konto ustawione dla typu księgowania **Opłata z tytułu wynajmu** na stronie **Parametry księgowania wynajmu**.</span><span class="sxs-lookup"><span data-stu-id="a312b-140">If this option is set to **No**, the account that is specified for the **Lease payment** posting type on the **Lease posting parameters** page will be credited instead.</span></span> |
