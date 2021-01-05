@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006220"
+ms.locfileid: "4446965"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Przeszacowanie w walucie obcej dla księgi głównej
 
@@ -41,19 +41,19 @@ Podczas wykonywania procesu przeszacowania następuje przeszacowanie salda każd
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Przygotowanie do wykonania przeszacowania w walucie obcej
 Przed uruchomieniem procesu przeszacowania potrzebne jest wykonanie następującej konfiguracji.
 
--   Na stronie **Konto główne** :
+-   Na stronie **Konto główne**:
 -   Jeśli konto główne ma zostać przeszacowane w księdze głównej, zaznacz opcję **Przeszacowanie w walucie obcej**. Jeśli konto główne nie powinno zostać przeszacowane (np. w modułach rozrachunków z odbiorcami i dostawcami, jeśli przeszacowanie odbywa się w księgach podrzędnych), wyczyść tę opcję.
 -   Jeśli konto główne jest oznaczone do przeszacowania, wypełnij pole **Typ kursu wymiany**. Ten typ kursu wymiany będzie stosowany do przeszacowania konta głównego. Osobne pole **Typ kursu wymiany dla raportowania finansowego** jest dostępny dla sprawozdawczości finansowej. Te dwa pola nie są synchronizowane, co pozwala na używanie różnych typów kursów wymiany na potrzeby przeszacowania i sprawozdawczości finansowej.
 
--   Na stronie **Księga** :
+-   Na stronie **Księga**:
 -   Wypełnij pole **Typu kursu wymiany**. Jeśli typ kursu wymiany nie jest określony na koncie głównym, ten typ kursu wymiany będzie używany podczas przeszacowywania w walucie obcej.
 -   Określ konta zrealizowanych oraz niezrealizowanych dodatnich i ujemnych różnic kursowych dla przeszacowania waluty. Konta zrealizowanych dodatnich i ujemnych różnic kursowych są używane do rozliczania transakcji w modułach AR i AP, a konta niezrealizowanych dodatnich i ujemnych różnic kursowych są używane do przeszacowywania otwartych transakcji na kontach głównych księgi głównej.
 
--   Na stronie **Konta przeszacowania waluty** :
+-   Na stronie **Konta przeszacowania waluty**:
 -   Wybierz różne konta przeszacowania waluty dla każdej waluty i firmy. Jeśli nie zdefiniowano żadnych kont, używane są konta ze strony **Księga**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Przetwarzanie przeszacowania w walucie obcej
-Po zakończeniu konfigurowania użyj strony **Przeszacowanie w walucie obcej** , aby przeszacować salda kont głównych Można uruchomić proces w czasie rzeczywistym lub zaplanować uruchomienie przy użyciu zadania wsadowego. 
+Po zakończeniu konfigurowania użyj strony **Przeszacowanie w walucie obcej**, aby przeszacować salda kont głównych Można uruchomić proces w czasie rzeczywistym lub zaplanować uruchomienie przy użyciu zadania wsadowego. 
 
 Na stronie **Przeszacowanie w walucie obcej** jest wyświetlana historia każdego procesu przeszacowania, w tym czas jego wykonania, zdefiniowane kryteria, łącze do załącznika utworzonego dla przeszacowania oraz informacja, czy poprzednie przeszacowanie zostało wycofane. Aby uruchomić proces przeszacowania, kliknij przycisk **Przeszacowanie w walucie obcej**. 
 

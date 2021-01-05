@@ -19,11 +19,11 @@ ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014966"
+ms.locfileid: "4446968"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatkowych i zaokrąglania
 
@@ -54,7 +54,7 @@ W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy u�
 > Jeśli wartość zaokrąglenia jest ustawiona jako 0,00, to:
 >
 > - W przypadku zwykłego zaokrąglania zachowanie zaokrąglania jest takie samo, jak dla **Zaokrąglenie = 0,01**.
-> - W przypadku **Opcji formularza zaokrąglania** w **Dół** , **W górę** i **Na korzyść firmy** , zachowanie jest takie samo, jak dla **Zaokrąglenie = 1,00**.
+> - W przypadku **Opcji formularza zaokrąglania** w **Dół**, **W górę** i **Na korzyść firmy**, zachowanie jest takie samo, jak dla **Zaokrąglenie = 1,00**.
 
 | Zaokrąglanie z opcji                | Wartość zaokrąglenia = 0,01 | Wartość zaokrąglenia = 0,10 | Wartość zaokrąglenia = 1,00 | Wartość zaokrąglenia = 100,00 | Wartość zaokrąglenia = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a3ca43503ecbe8e814958576e46ced10bfe9ad49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189000"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446698"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 

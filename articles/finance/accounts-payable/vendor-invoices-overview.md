@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb797af1ae14ebbb420a1b4a1591202c42bd8824
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
+ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249125"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "4701683"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -112,15 +112,18 @@ Dostęp do strony **Odzyskaj faktury od dostawcy** można uzyskać tylko wtedy, 
 
 ## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Zmiana stanu przepływu pracy dla faktur od dostawcy z Nieodwracalne na Wersja robocza
 
-Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalnego błędu będzie miało stan przepływu pracy **Nieodwracalne**. Jeśli stan przepływu pracy faktury od dostawcy to **Nieodwracalne**, można go zmienić na **Wersja robocza**, wybierając opcję **Odwołaj**. Wtedy można edytować fakturę od dostawcy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Przywróć stan wersji roboczej w przepływie pracy faktury od dostawcy**na stronie **Zarządzanie funkcjami**.
+Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalnego błędu będzie miało stan przepływu pracy **Nieodwracalne**. Jeśli stan przepływu pracy faktury od dostawcy to **Nieodwracalne**, można go zmienić na **Wersja robocza**, wybierając opcję **Odwołaj**. Wtedy można edytować fakturę od dostawcy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zmiana stanu przepływu pracy dla faktur od dostawcy z Nieodwracalne na Wersja robocza** na stronie **Zarządzanie funkcjami**.
 
-Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu pracy na **Wersja robocza**. Można otworzyć tę stronę z menu **Faktura dostawcy** lub z menu nawigacji **Wspólne > Zapytania > Przepływ pracy**. Aby zresetować stan przepływu pracy na **Wersja robocza**, wybierz opcję **Odwołaj**. Możesz również zresetować stan przepływu pracy do wersji roboczej, wybierając akcję **Odwołaj** na stronie **Faktura od dostawcy** lub na stronie **Oczekujące faktury od dostawcy**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie**Faktura od dostawcy**.
+Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu pracy na **Wersja robocza**. Można otworzyć tę stronę z menu **Faktura dostawcy** lub z menu nawigacji **Wspólne > Zapytania > Przepływ pracy**. Aby zresetować stan przepływu pracy na **Wersja robocza**, wybierz opcję **Odwołaj**. Możesz również zresetować stan przepływu pracy do wersji roboczej, wybierając akcję **Odwołaj** na stronie **Faktura od dostawcy** lub na stronie **Oczekujące faktury od dostawcy**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie **Faktura od dostawcy**.
+
+## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Wyświetlanie sumy faktury na stronie Oczekujące faktury od dostawcy
+Sumę faktur można wyświetlić na stronie **Oczekujące faktury od dostawcy** poprzez włączenie parametru **Wyświetl sumę faktury na liście oczekujących faktur od dostawców** na stronie **Parametry modułu rozrachunków z dostawcami**. 
 
 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Konfigurowanie zasad faktur od dostawców](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
+- [Ustawianie zasad faktur od dostawców](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
 - [Wpisywanie danych faktury w systemie AP za pomocą faktury od dostawcy](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą arkusza zatwierdzania](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Wprowadzanie najważniejszych danych faktury do modułu rozrachunków z dostawcami za pomocą puli faktur](tasks/key-invoice-data-into-ap-system-invoice-pool.md)

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 27a6745be62185b23a7e81c9aed78879e36b3a9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181733"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682728"
 ---
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
@@ -81,7 +80,7 @@ Wszystkie moduły konstrukcyjne przypisane do grupy modułów konstrukcyjnych mo
 
 ### <a name="export-a-building-block-group"></a>Eksportowanie grupy modułów konstrukcyjnych
 
-Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między instalacjami. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
+Można wyeksportować grupę bloków konstrukcyjnych lub tylko bloki konstrukcyjne określonego raportu istniejące w grupie bloków konstrukcyjnych. Wyeksportowanej grupy bloków konstrukcyjnych można używać jako kopii zapasowej. Można także kopiować wyeksportowane dane między instalacjami. Projektant raportów zawiera nie tylko grupę bloków konstrukcyjnych, ale również style czcionek i zestawy wymiarów, do których grupa się odwołuje.
 
 1. W Projektancie raportów w menu **Firma** kliknij **Grupy bloków konstrukcyjnych**.
 2. W oknie dialogowym **Grupy modułów konstrukcyjnych** zaznacz grupę modułów konstrukcyjnych, którą chcesz wyeksportować, i kliknij przycisk **Eksport**.

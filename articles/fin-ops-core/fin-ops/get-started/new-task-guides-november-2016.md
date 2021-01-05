@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 270894
 ms.assetid: 1b90768d-8bf7-4e35-90c0-65962fea5d26
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 56545e56201180bf73420bf73f9a9f6e7a426b33
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811608"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695044"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)
 
@@ -30,7 +29,7 @@ ms.locfileid: "2811608"
 
 Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach, które zostały opublikowane w ujednoliconej bibliotece APQC firmy Microsoft (z listopada 2016 r. — wszystkie języki) dla programu Microsoft Dynamics 365 for Operations. Nie opublikowano nowej biblioteki ułatwiającej rozpoczęcie pracy.
 
-Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Microsoft Dynamics 365 for Operations, aktualizacji nr 3 platformy Microsoft Dynamics 365 for Operations, aktualizacji nr 2 platformy Microsoft Dynamics AX, aktualizacji systemu Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zapoznaj się z [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z listopada 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które przewidziano jako pomoc dla programu Microsoft Dynamics 365 for Operations, aktualizacji nr 3 platformy Microsoft Dynamics 365 for Operations, aktualizacji nr 2 platformy Microsoft Dynamics AX, aktualizacji systemu Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
 
 > [!NOTE]
 > Znak gwiazdki (\*) obok tytułu wiersza narzędzia do modelowania procesów biznesowych (BPM) wskazuje, że przewodnik po zadaniach dla tego procesu biznesowego został utworzony dla aktualizacji programu Dynamics 365 for Operations z listopada 2016 r. i nie jest obsługiwany we wcześniejszych wersjach systemu Microsoft Dynamics AX.

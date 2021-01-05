@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183848"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408367"
 ---
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 

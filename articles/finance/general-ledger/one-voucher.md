@@ -19,11 +19,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
 ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3058024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446854"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 

@@ -17,11 +17,11 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 5126868038801091c7a9c17eee78e31db322cbb7
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3138884"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408371"
 ---
 # <a name="eur-00015-registration-of-vendor-vat-id"></a>EUR-00015 Rejestrowanie identyfikatora VAT dostawcy
 

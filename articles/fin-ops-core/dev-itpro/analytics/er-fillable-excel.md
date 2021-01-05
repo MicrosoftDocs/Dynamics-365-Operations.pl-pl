@@ -3,7 +3,7 @@ title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychod
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu Raportowanie elektroniczne (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/14/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e889b08f10c5d0c95fed7c9e422340706bdd154a
-ms.sourcegitcommit: 67ce81c57194afb26a04ae4c0b7509e0efa32afc
+ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "3375820"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686545"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -165,6 +164,17 @@ Podczas weryfikowania formatu ER, który można edytować, jest przeprowadzane s
 
 ![Komunikat o błędzie weryfikacji](./media/er-excel-format-validate.png)
 
+## <a name="control-the-calculation-of-excel-formulas"></a>Sterowanie obliczaniem formuł programu Excel
+
+Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Microsoft Excel niektóre komórki tego dokumentu mogą zawierać formuły programu Excel. Gdy jest włączona funkcja **Włącz korzystanie z biblioteki EPPlus w ramach raportowania elektronicznego**, można kontrolować, kiedy formuły będą obliczane, zmieniając wartość [parametru](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Opcje obliczania** w używanym szablonie programu Excel:
+
+- Wybierz opcję **Automatycznie**, aby ponownie obliczać wszystkie formuły zależne za każdym razem, gdy do wygenerowanego dokumentu są dołączane nowe zakresy, komórki itp.
+    >[!NOTE]
+    > Może to spowodować problemy z wydajnością działania szablonów programu Excel zawierających wiele powiązanych formuł.
+- Wybierz opcję **Ręcznie**, aby uniknąć ponownego obliczania formuł podczas generowania dokumentu.
+    >[!NOTE]
+    > Ponowne obliczanie formuł jest wymuszane ręcznie po otwarciu wygenerowanego dokumentu do podglądu za pomocą programu Excel.
+    > Nie należy stosować tej opcji w przypadku konfigurowania miejsca docelowego modułu ER, które zakłada używanie wygenerowanego dokumentu bez obejrzenia jego podglądu w programie Excel (konwersja do pliku PDF, wysłanie wiadomości e-mail itp.), ponieważ wygenerowany dokument może nie zawierać wartości w komórkach z formułami.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

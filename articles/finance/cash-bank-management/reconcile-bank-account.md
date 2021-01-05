@@ -18,11 +18,11 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899332"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446872"
 ---
 # <a name="reconcile-a-bank-account"></a>Uzgadnianie konta bankowego
 
@@ -46,7 +46,7 @@ Nie można uzgodnić wyciągu z konta bankowego z kontem bankowym, jeśli który
     > <P>Pole wyboru <STRONG>Zaakceptowane</STRONG> jest niedostępne, jeśli transakcja ma stan <STRONG>Anulowanie oczekujące</STRONG>. Transakcje mogą przybierać ten stan, jeśli w programie Finance skonfigurowano opcję, zgodnie z którą operacje stornowania lub anulowania muszą przed zaksięgowaniem zostać skierowane do weryfikacji. Gdy osoba sprawdzająca zaksięguje lub odrzuci cofnięcie, to stan nie będzie już miał wartości <STRONG>Anulowanie oczekujące</STRONG> i będzie można uzgodnić konto bankowe z wyciągiem bankowym.</P>
 
     
-    Aby zaznaczyć pole wyboru **Zaakceptowane**dla interwału sprawdzania, czy wszystko jest wyświetlane na wyciągu bankowym, wybierz opcję **Zaznacz zakres sprawdzania**, a następnie wskaż interwał.
+    Aby zaznaczyć pole wyboru **Zaakceptowane** dla interwału sprawdzania, czy wszystko jest wyświetlane na wyciągu bankowym, wybierz opcję **Zaznacz zakres sprawdzania**, a następnie wskaż interwał.
 
 5.  Jeśli kwota dla transakcji na koncie bankowym nie odpowiada kwocie dla transakcji na wyciągu bankowym, wprowadź kwotę korekty w polu **Kwota korekty**.
     
@@ -58,7 +58,7 @@ Nie można uzgodnić wyciągu z konta bankowego z kontem bankowym, jeśli który
 
 6.  Utwórz transakcje dla wpisów (na przykład opłat i odsetek) występujących w wyciągu z konta bankowego, lecz nie zarejestrowanych w Finance. Wprowadź **Typ transakcji bankowej** i odpowiednie wymiary finansowe.
 
-7.  Gdy transakcje są oznaczane w wyciągu z konta bankowego jako**Zaakceptowano**, pole **Nieuzgodnione** (którego zawartość jest ponownie obliczana po wprowadzeniu jakiejś zmiany) przyjmuje wartość coraz bliższą zeru. Gdy wartość będzie równa 0, kliknij opcję **Uzgodnienie konta**, aby zaksięgować uzgodnienie oraz transakcje i wprowadzone poprawki.
+7.  Gdy transakcje są oznaczane w wyciągu z konta bankowego jako **Zaakceptowano**, pole **Nieuzgodnione** (którego zawartość jest ponownie obliczana po wprowadzeniu jakiejś zmiany) przyjmuje wartość coraz bliższą zeru. Gdy wartość będzie równa 0, kliknij opcję **Uzgodnienie konta**, aby zaksięgować uzgodnienie oraz transakcje i wprowadzone poprawki.
     
     Uwzględnionych transakcji nie można modyfikować ani korygować po zaksięgowaniu uzgodnień. Nie są one także wyświetlane podczas uzgadniania konta w przyszłości.
 

@@ -1,6 +1,6 @@
 ---
 title: Ustawianie kodów raportowania podatku
-description: Kody raportowania podatków odnoszą się do numeru pola w raporcie podatku.
+description: Kody raportowania podatków odnoszą się do numeru pola zawartego w raporcie podatku.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/08/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c18f4fb0db31a959647bb10d2b99d940646676e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 362d30e56fe35b85d50bfa2df57364733b366fef
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976800"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646188"
 ---
 # <a name="set-up-sales-tax-reporting-codes"></a>Ustawianie kodów raportowania podatku
 
 [!include [banner](../../includes/banner.md)]
 
-Kody raportowania podatków odnoszą się do numeru pola w raporcie podatku. Są one wykorzystywane w układach raportów specyficznych dla krajów oraz w raporcie Płatności podatku według kodu na potrzeby drukowania kwot podatków dla okresu rozliczeniowego sumowanego według kodu raportowania. Po utworzeniu kodów raportowania podatków można tworzyć do nich odwołania na skróconych kartach Konfiguracja raportu znajdujących się na stronie Kod podatku. 
+Kody raportowania podatków odnoszą się do numeru pola zawartego w raporcie podatku. Są one używane w układach raportów właściwych dla danego kraju. Są także używane w raporcie Płatności podatku według kodu. Ten raport przedstawia kwoty podatku dla okresu rozliczeniowego podsumowanego dla każdego kodu raportowania. Po utworzeniu kodów raportowania podatków można tworzyć do nich odwołania na skróconych kartach Konfiguracja raportu, do których można przejść ze strony **Kod podatku**. 
 
 To nagranie wykorzystuje firmę demonstracyjną DEMF.
 

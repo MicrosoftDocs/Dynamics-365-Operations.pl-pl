@@ -19,11 +19,11 @@ ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: 7e23581c73c3eb62e21dc3a53b5730c7c7cb0e62
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175165"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408355"
 ---
 # <a name="vat-exchange-rate-overview"></a>Podstawowe informacje o kursie wymiany dla podatku VAT
 

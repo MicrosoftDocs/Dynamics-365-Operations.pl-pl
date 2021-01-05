@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984678"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408399"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 

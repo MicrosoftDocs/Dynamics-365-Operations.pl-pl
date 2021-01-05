@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142462"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684554"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Modyfikowanie formatów w celu generowania dokumentów zawierających dane aplikacji
 
@@ -95,16 +94,17 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 52. Kliknij przycisk Zapisz.
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Modyfikowanie formatu w celu zapamiętywania danych raportowania
+
 1. Kliknij opcję Mapuj format na model.
 2. Kliknij przycisk Nowy.
 3. W polu Definicja wprowadź lub wybierz pozycję główną „W celu aktualizacji danych aplikacji”.
-    * W celu aktualizacji danych aplikacji  
+    * W celu aktualizacji danych aplikacji.
 4. W polu Nazwa wpisz „Mapowanie na dane aktualizacyjne”.
     * Mapowanie na dane aktualizacyjne  
 5. Kliknij przycisk Zapisz.
-    * To mapowanie określa, jak szczegóły raportu Intrastat są gromadzone w modelu danych, którego struktura jest określana przez wybraną pozycję główną „W celu aktualizacji danych aplikacji”. Te szczegóły, mapowanie modelu z tą samą pozycją główną „W celu aktualizacji danych aplikacji” i kierunek „Do lokalizacji docelowej” zostaną użyte do zaktualizowania danych aplikacji. Aktualizacja danych aplikacji rozpoczyna się natychmiast po wygenerowaniu wychodzącego raportu Intrastat. Należy zauważyć, że można pominąć aktualizację danych aplikacji w czasie wykonywania, ale model danych musi być pusty (tzn. musi zawierać pustą listę rekordów).   
+    * To mapowanie określa, jak szczegóły raportu Intrastat są gromadzone w modelu danych, którego struktura jest określana przez wybraną pozycję główną „W celu aktualizacji danych aplikacji”. Te szczegóły, mapowanie modelu z tą samą pozycją główną „W celu aktualizacji danych aplikacji” i kierunek „Do lokalizacji docelowej” zostaną użyte do zaktualizowania danych aplikacji. Aktualizacja danych aplikacji rozpoczyna się natychmiast po wygenerowaniu wychodzącego raportu Intrastat. Można pominąć aktualizację danych aplikacji w czasie wykonywania, ale model danych musi być pusty (tzn. musi zawierać pustą listę rekordów).
 6. Kliknij przycisk Konstruktor.
-    * Należy zauważyć, że format wychodzącego raportu Intrastat jest dodawany domyślnie jako źródło danych dla tego mapowania modelu.  
+    * Format wychodzącego raportu Intrastat jest dodawany domyślnie jako źródło danych dla tego mapowania modelu.  
     * Powiąż elementy projektowanego raportu (przedstawiane jako źródło danych) z elementami modelu danych wyfiltrowanymi na podstawie pozycji głównej wybranego modelu.  
 7. W drzewie rozwiń węzeł „Nagłówek archiwum”.
 8. W drzewie rozwiń węzeł „Nagłówek archiwum\Wiersze archiwum”.
@@ -120,8 +120,8 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 18. Kliknij opcję Dodaj funkcję.
 19. W drzewie rozwiń węzeł „format”.
 20. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)”.
-21. W drzewie rozwiń węzeł „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.
-22. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.
+21. W drzewie rozwiń węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
+22. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 23. Kliknij opcję Dodaj źródło danych.
 24. W polu Formuła wpisz „COUNT(format.Deklaracja.Dane.Pozycja)”.
     * COUNT(format.Deklaracja.Dane.Pozycja)  
@@ -130,23 +130,22 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 27. W drzewie zaznacz element „Nagłówek archiwum\Nazwa pliku”.
 28. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Nazwa pliku: Ciąg pozycji(Nazwa pliku)”.
 29. Kliknij opcję Powiąż.
-30. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym4: Element XML 1..1 (Pozycja)\numer: Ciąg(numer)”.
+30. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)`.
 31. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Numer pozycji”.
 32. Kliknij opcję Powiąż.
-33. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Wym3: Element XML 1..1 (Kwota)\wartość: Liczbowa rzeczywista(wartość)”.
+33. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)`.
 34. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Kwota”.
 35. Kliknij opcję Powiąż.
-36. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)\Identyfikator rekordu asortymentu: Pozycja Int64(Identyfikator rekordu asortymentu)”.
+36. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec ID: Item Int64(Commodity rec ID)`.
 37. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum\Identyfikator rekordu asortymentu”.
 38. Kliknij opcję Powiąż.
 39. W drzewie zaznacz element „Nagłówek archiwum\Wiersze archiwum”.
-40. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)\Pozycja: Element XML 0..* (Pozycja)”.
+40. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)`.
 41. Kliknij opcję Powiąż.
 42. W drzewie zaznacz element „Nagłówek archiwum”.
-43. W drzewie zaznacz element „format\Deklaracja: Element XML(Deklaracja)\Dane: Element XML 1..* (Dane)”.
+43. W drzewie zaznacz węzeł `format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)`.
 44. Kliknij opcję Powiąż.
 45. Kliknij przycisk Zapisz.
 46. Zamknij stronę.
 47. Zamknij stronę.
 48. Zamknij stronę.
-

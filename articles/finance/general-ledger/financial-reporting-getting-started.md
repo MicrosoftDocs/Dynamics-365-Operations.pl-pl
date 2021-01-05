@@ -3,7 +3,7 @@ title: Omówienie raportowania finansowego
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
-ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
+ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
+ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3999556"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "4672451"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
@@ -114,17 +114,17 @@ Raporty finansowe to 22 domyślne raporty. Każdy raport korzysta z domyślnych 
 | Bilans i rachunek wyników obok siebie — domyślny | Służy do wyświetlania sytuacji finansowej organizacji i rentowności na rok obok siebie.                                                                                                                                                                                                                              |
 | Przepływy pieniężne — domyślny                                       | Lepszy wgląd w środki pieniężne przychodzące i wychodzącą organizacji.                                                                                                                                                                                                                                   |
 | Szczegółowe JE i Przegląd TB — domyślne                      | Widok otwarcia salda i informacje o działaniach dla wszystkich kont.                                                                                                                                                                                                                                                      |
-| Szczegółowy bilans próbny — domyślne                         | Wyświetla informacje dla wszystkich kont i obejmuje wszystkie salda po stronie debetowej i kredytowej, oraz ich wartości netto, wraz z datą transakcji, załącznikiem i opisem arkusza.                                                                                                                                  |
+| [Szczegółowy bilans próbny — domyślne](trial-balance-financial-reports.md)| Wyświetla informacje dla wszystkich kont i obejmuje wszystkie salda po stronie debetowej i kredytowej, oraz ich wartości netto, wraz z datą transakcji, załącznikiem i opisem arkusza.                                                                                                                                  |
 | Trend kwartalny wydatków z trzech lat — domyślne             | Lepszy wgląd w wydatki w poprzednich 12 kwartałach w ciągu ostatnich 3 lat.                                                                                                                                                                                                                                   |
 | Podpisy finansowe JE i Przegląd TB — domyślne            | Wyświetlanie przeglądu sald i działania dla środków trwałych, zobowiązań, kapitału własnego właściciela, przychodu, wydatków, zysków i strat.                                                                                                                                                                           |
-| Zestawienie przychodów — domyślne                                | Pokazuje rentowność organizacji w bieżącym okresie i od początku roku.                                                                                                                                                                                                                                   |
+| [Zestawienie przychodów — domyślne](income-statement-financial-report.md)| Pokazuje rentowność organizacji w bieżącym okresie i od początku roku.                                                                                                                                                                                                                                   |
 | Lista transakcji księgi — domyślne                        | Służy do wyświetlania szczegółowych danych salda dla wszystkich kont. Raport ten zawiera salda debetu i kredytu, łącznie dodatkowymi informacjami o transakcji, takimi jak data transakcji, numer arkusza, załącznik, typ księgowania i numer śledzenia.                                                                            |
 | Współczynniki — domyślne                                          | Pokazuje współczynniki wypłacalności, rentowności i efektywności organizacji w bieżącym roku.                                                                                                                                                                                                                           |
 | Kroczące wydatki 12-miesięczne — domyślne                       | Lepszy wgląd w wydatki dla każdego z ostatnich 12 miesięcy. Te 12 miesięcy może obejmować więcej niż jeden rok obrachunkowy.                                                                                                                                                                                                       |
 | Kroczące kwartalne zestawienie przychodów — domyślne               | Służy do wyświetlania rentowności organizacji co kwartał za miniony rok i od początku bieżącego roku.                                                                                                                                                                                                                   |
 | Obok arkusza bilansowego — domyślna                      | Oferuje widok pozycji finansowej organizacji w danym roku. Ten raport pokazuje aktywa i pasywa oraz kapitał własny udziałowców są pokazane równolegle.                                                                                                                                                                                |
-| Sumaryczny bilans próbny — domyślny                          | Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.                                                                                                                                                                  |
-| Sumaryczny bilans próbny rok do roku — domyślny           | Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego.                                                                                                                           |
+| [Sumaryczny bilans próbny — domyślny](trial-balance-financial-reports.md)| Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto.                                                                                                                                                                  |
+| [Sumaryczny bilans próbny rok do roku — domyślny](trial-balance-financial-reports.md)| Oferuje informacje o saldzie dla wszystkich kont zawierających salda otwarcia i zamknięcia oraz salda po stronie debetowej i kredytowej razem z ich różnicą netto dla bieżącego roku i roku ubiegłego.                                                                                                                           |
 | Tygodniowa sprzedaż i rabaty — domyślne                     | Lepszy wgląd w sprzedaż i rabaty dla każdego tygodnia w miesiącu. Ten raport zawiera sumę z czterech tygodni.                                                                                                                                                                                                              |
 | Dostępne środki budżetowe — domyślny                         | Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont                                                                                                                                                                                  |
 
@@ -145,11 +145,12 @@ Istnieje kilka typowych problemów, które mogą być przyczyną problemów podc
 
 Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** lub **Edytuj**.
 
-* W obszarze Internet Explorer wybierz opcję **Ustawienia** , a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
-* W obszarze Internet Explorer wybierz opcję **Ustawienia** , a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
+* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny, a następnie wybierz opcję **Witryny**. W obszarze **Dodaj tę witrynę sieci Web do strefy** wprowadź „\*\.dynamics.com” (bez znaków cudzysłowu), a następnie wybierz pozycję **Dodaj**. 
+* W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
 * Wyłącz funkcję blokowania wyskakujących okienek w przeglądarce.
 * Do zainstalowania Struktury Microsoft .NET 4.6.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
-* Jeśli używasz programu Microsoft Edge z przeglądarką Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. 
+* Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli w przeglądarce Chrome pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Aby uzyskać więcej informacji na temat rozszerzenia ClickOnce w przeglądarce Chrome, zobacz [Wymagania systemowe dla wdrożeń w chmurze](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Jeśli używasz razem przeglądarek Microsoft Edge i Chrome, nie musisz instalować rozszerzenia ClickOnce dla Microsoft Edge Chromium. Trzeba jednak włączyć opcję ClickOnce, aby móc pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.
      1. Otwórz nową przeglądarkę w programie Microsoft Edge.
      2. Wprowadź **edge://flags** i wybierz **Enter**.
      3. Wyszukaj opcję **Obsługa ClickOnce** lub skorzystaj z tego bezpośredniego łącza: **edge://flags/#edge-click-once**.
@@ -161,7 +162,7 @@ Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzys
 * Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Raportowania finansowego. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
 * Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Raportowania finansowego](#granting-security-access-to-financial-reporting). Zabezpieczenia w Raportowaniu finansowym są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
 * Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Raportowaniu finansowym może potrwać do 10 minut. 
-  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia** , a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
+  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
 * Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Raportowania finansowego** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
 
 Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynuować pracę, ale nie można zakończyć logowania w oknie Projektanta raportów. 

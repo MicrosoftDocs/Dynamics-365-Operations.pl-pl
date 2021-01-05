@@ -1,7 +1,7 @@
 ---
 title: Księgowanie transakcji środków trwałych w warstwach księgowania
 description: Ten artykuł zawiera omówienie funkcji warstwy księgowania dla transakcji na środkach trwałych.
-author: ShylaThompson
+author: moaamer
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc8c4f4f41ed39447ae441dd8e01cfcf80c939b5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
+ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770719"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "4493679"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Księgowanie transakcji środków trwałych w warstwach księgowania
 
@@ -39,8 +39,11 @@ Arkusze środków trwałych są zdefiniowane na stronie Nazwy arkuszy (ścieżka
 
 Na stronie Profile księgowania środków trwałych można wskazać konta księgowe dla transakcji na środkach trwałych. Dla każdego profilu księgowania należy wybrać właściwy typ transakcji i księgę, a następnie wskazać konta księgowe. Skonfiguruj rekord profilu księgowania dla każdej księgi, który będzie księgować w księdze głównej.
 
+Środek trwały można wprowadzać w dokumentach obsługujących tylko warstwę księgowania **Bieżąca**, np. **Zamówienie zakupu**, **Oczekująca faktury od dostawcy**, **Zamówienie sprzedaży** lub **Faktura niezależna**. Wybranie identyfikatora środka trwałego w którymkolwiek z tych dokumentów powoduje wyfiltrowanie w księdze składników majątku księgi zawierającej warstwę księgowania **Bieżąca** oraz jej wypełnianie automatycznie podczas księgowania, gdy system zweryfikuje, że warstwą księgowania środków trwałych jest **Bieżąca**. Jeśli nie można ukończyć tej weryfikacji, proces księgowania zostanie zatrzymany. 
+
 > [!NOTE] 
-> Używając ksiąg pochodnych, można księgować transakcje jednocześnie w różnych warstwach księgowania. Transakcje księgi podstawowej tworzy się w arkuszu, którego warstwa księgowania odpowiada warstwie księgowania w księdze. Podczas księgowania transakcje księgi pochodnej są księgowane w odpowiednich warstwach księgowania.
+> Używając ksiąg pochodnych, można księgować transakcje jednocześnie w różnych warstwach księgowania. Transakcje księgi podstawowej tworzy się w arkuszu lub dokumencie źródłowym, którego warstwa księgowania odpowiada warstwie księgowania w księdze. Podczas księgowania transakcje księgi pochodnej będą księgowane w odpowiednich warstwach księgowania. 
+
 
 Aby uzyskać więcej informacji, zobacz [Księgi pochodne](derived-books.md) i [Księgowanie z użyciem ksiąg pochodnych](post-derived-value-models.md).
 

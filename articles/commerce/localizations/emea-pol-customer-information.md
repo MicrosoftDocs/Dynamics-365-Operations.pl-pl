@@ -18,11 +18,11 @@ ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
 ms.openlocfilehash: b38bb95254d5a9713f361a8dd5d9f2455471922a
-ms.sourcegitcommit: fa8bc4c6fcaba870aead619f80091fb65a28d982
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711175"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408378"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 

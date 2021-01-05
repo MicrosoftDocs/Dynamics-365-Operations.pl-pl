@@ -1,7 +1,7 @@
 ---
 title: Tworzenie środka trwałego
 description: W tym temacie opisano sposób tworzenia nowego rekordu środka trwałego na stronie listy środków trwałych.
-author: saraschi2
+author: moaamer
 manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -13,15 +13,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b7d65a047251fa036242fb456725bc8cba957b9
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000250"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4447027"
 ---
 # <a name="create-a-fixed-asset"></a>Tworzenie środka trwałego
 
@@ -49,3 +49,9 @@ Aby ręcznie utworzyć rekord środka trwałego, należy wykonać następujące 
 Środki trwałe można również zaimportować za pomocą dodatku programu Excel lub uruchamiając zadanie importu z obszaru roboczego **Zarządzanie danymi**. Przed uruchomieniem importu należy wprowadzić wartości wymaganych pól w szablonie.
 
 Jeśli nie zdefiniowano numeru środka trwałego w szablonie dodatku programu Excel lub w module Zarządzanie danymi, system utworzy numer środka trwałego dla każdego importowanego środka trwałego i automatycznie zwiększy sekwencję numerów dla każdego z nich. Jednak w przypadku importowania środków trwałych i definiowania numerów środków w szablonie system **nie** zwiększa automatycznie sekwencji numerów. W takim przypadku administrator może ręcznie zaktualizować sekwencję numerów. Jeśli zdefiniowano numer środka trwałego w szablonie dodatku Excel, system używa zdefiniowanego numeru środka trwałego i zwiększa sekwencję numerów.
+
+> [!NOTE]                                                                                                         
+> Po zaksięgowaniu amortyzacji pola **Rozpoczęcie eksploatacji** i **Data rozpoczęcia amortyzacji** zostaną zablokowane na stronie **Księga**. Ponadto oba pola nie zostaną zaktualizowane na podstawie jednostki danych.
+
+> [!WARNING]
+> Rekord środka trwałego nie zostanie usunięty, jeśli transakcje zostały zaksięgowane w skojarzonej księdze, lub jeśli nowo utworzony środek trwały został wprowadzony w wierszu arkusza, ale nie zostanie zaksięgowany. 

@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: ec8ec7bc7785b1ddec58b78bd14ce164ad1ce032
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976338"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446908"
 ---
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Elementy członkowskie wymiaru statystycznego i szablony dostawców miar statystycznych
 

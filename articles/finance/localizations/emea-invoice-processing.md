@@ -17,11 +17,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 87a06e1b17e9c0bdb4147f49b2dacb74236360fa
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039810"
+ms.locfileid: "4408402"
 ---
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 

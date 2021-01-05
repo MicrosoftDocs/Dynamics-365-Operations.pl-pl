@@ -17,11 +17,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: fc2af93880b634e6cec0015a2469fb8e4e56a7d7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408364"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 

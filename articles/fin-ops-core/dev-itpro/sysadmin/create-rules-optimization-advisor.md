@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: sericks
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8c4f5eff01ab20ce9de2a30b27b163df8cf83e02
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 7052aeb4154cefe30a1935dfdca53085a035deb6
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985226"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687618"
 ---
 # <a name="create-rules-for-optimization-advisor"></a>Tworzenie reguł dla Doradcy optymalizacji
 
@@ -195,7 +194,7 @@ class ScanNewRulesJob
 
 Reguła będzie wyświetlana w formularzu **Reguła weryfikacji diagnostyki**, do którego można przejść po wybraniu kolejno opcji **Administrowanie systemem** > **Zadania okresowe** > **Obsługa reguły weryfikacji diagnostyki**. Aby włączyć egzekwowanie reguły, wybierz kolejno opcje **Administrowanie systemem** > **Zadania okresowe** > **Planowanie reguły weryfikacji diagnostyki** wybierz częstotliwość, z jaką ma być sprawdzane przestrzeganie reguły, np. **Codziennie**. Kliknij przycisk **OK**. Wybierz kolejno opcje **Administrowanie systemem** > **Doradca optymalizacji** i przeczytaj nową możliwość. 
 
-Poniższy przykład zawiera fragment kodu źródłowego ze szkieletem reguły, w tym ze wszystkimi wymaganymi metodami i atrybutami. Pomoże on rozpocząć pisanie nowych reguł. Etykiety i elementy menu akcji używane w przykładzie służą wyłącznie celom demonstracyjnych.
+Poniższy przykład zawiera fragment kodu źródłowego ze szkieletem reguły, w tym ze wszystkimi wymaganymi metodami i atrybutami. Pomoże on rozpocząć pisanie nowych reguł. Etykiety i elementy menu akcji używane w przykładzie służą wyłącznie celom demonstracyjnych.
 
 ```xpp
 [DiagnosticsRuleAttribute]

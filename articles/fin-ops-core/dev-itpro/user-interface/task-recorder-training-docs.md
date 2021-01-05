@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1498c09160acea2799a90e36c155523635895e5f
-ms.sourcegitcommit: 17fe0218e8e3f2f4c57c73c0c438a6ebf1ef32a6
+ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "3329859"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687799"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -39,10 +38,10 @@ W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadania
 
 Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności wykonywanych w interfejsie użytkownika (UI) produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
 
--   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Przewodniki po zadaniach są integralną częścią systemu Pomocy. Przewodnik po zadaniu to interaktywna prezentacja kroków w procesie biznesowym. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. „Dymek” zawiera informacje o sposobach obsługi elementu, na przykład „Kliknij tutaj” lub „W tym polu należy wprowadzić wartość”. Przewodnik po zadaniu działa w odniesieniu do bieżącego zestawu danych użytkownika, które są wprowadzane i zapisywane w środowisku użytkownika.
+-   **Nagrania zadań mogą być odtwarzane jako przewodniki po zadaniach.** Przewodniki po zadaniach są integralną częścią systemu Pomocy. Przewodnik po zadaniu to interaktywna prezentacja kroków w procesie biznesowym. Użytkownik otrzymuje polecenia wykonania kolejnych kroków w wyskakujących okienkach (lub „dymkach”), które są animowane w interfejsie użytkownika i wskazywać elementy, których użytkownik powinien użyć. „Dymek” zawiera informacje o sposobach obsługi elementu, na przykład „Kliknij tutaj” lub „W tym polu należy wprowadzić wartość”. Przewodnik po zadaniu działa w odniesieniu do bieżącego zestawu danych użytkownika, które są wprowadzane i zapisywane w środowisku użytkownika.
 -   **Nagrania zadań mogą być zapisywane jako dokumenty programu Word.** To pozwala łatwo tworzyć przewodniki szkoleniowe nadające się drukowania.
 
-Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań](task-recorder.md).
+Można tworzyć własne nagrania zadań, odtwarzać nagrania zadań udostępnione przez firmę Microsoft lub modyfikować te nagrania zgodnie z własną konfiguracją. Aby uzyskać więcej informacji na temat Rejestratora zadań, zobacz [Rejestrator zadań](task-recorder.md).
 
 ## <a name="plan-your-task-recording"></a>Planowanie nagrań zadań
 Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagraniach od Microsoft, pamiętaj o następujących informacjach.
@@ -62,7 +61,7 @@ Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagr
 
 **Różne typy adnotacji** Wszystkie adnotacje są opcjonalne. Należy je dodawać tylko wówczas, gdy zawierają informacje pomocne dla użytkownika.
 
--   **Tytuł:** Adnotacja tytułu pojawia się przed tekstem kroku generowanym automatycznie przez rejestrator zadań. W przewodniku po zadaniu adnotacja tytułu pojawia się nad automatycznie wygenerowanym tekstem. Użyj tego typu adnotacji, aby wyjaśnić, dlaczego użytkownik wykonuje krok lub aby podać dodatkowy kontekst.
+-   **Tytuł:** Adnotacja tytułu pojawia się przed tekstem kroku generowanym automatycznie przez rejestrator zadań. W przewodniku po zadaniu adnotacja tytułu pojawia się nad automatycznie wygenerowanym tekstem. Użyj tego typu adnotacji, aby wyjaśnić, dlaczego użytkownik wykonuje krok lub aby podać dodatkowy kontekst.
 
 To jest okienko edycji, wyświetlane po dodaniu adnotacji podczas tworzenia nagrania. Wprowadź adnotację tytułu w polu **Tytuł**. 
 
@@ -82,7 +81,7 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
 [![Wygląd notatek adnotacji w przewodniku po zadaniach](./media/screen4.png)](./media/screen4.png)
 
--   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji.** Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza aplikacją lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
+-   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji.** Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza aplikacją lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
 
 **Określenia, jak długie ma być nagranie**
 
@@ -92,7 +91,7 @@ Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 -   Jeśli proces obejmuje wiele zadań, które zwykle wykonuje się za jednym razem, można zostawić zadania w jednym nagraniu, np. „Konfigurowanie i przypisywanie profili funkcjonalności”.
 -   Jeśli jest to proces, który wykonuje się raz (np. konfiguracja), a zaraz po nim wykonuje się inne zadanie, które można wykonywać wielokrotnie i samodzielnie, należy podzielić je na dwa nagrania.
 
-**Określ gdzie w interfejsie użytkownika zacząć nagrywanie** Strona, na której jesteś na początku nagrania, ma wpływ na to, dla której strony wyświetlany jest przewodnik po zadaniu. Na przykład jeśli nagranie zadania ma się znaleźć na liście w okienku Pomocy, gdy użytkownik kliknie przycisk Pomocy na stronie parametrów księgi głównej, musisz zacząć nagranie na stronie parametrów księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
+**Określ gdzie w interfejsie użytkownika zacząć nagrywanie** Strona, na której jesteś na początku nagrania, ma wpływ na to, dla której strony wyświetlany jest przewodnik po zadaniu. Na przykład jeśli nagranie zadania ma się znaleźć na liście w okienku Pomocy, gdy użytkownik kliknie przycisk Pomocy na stronie parametrów księgi głównej, musisz zacząć nagranie na stronie parametrów księgi głównej. **Zapisz nagrania jako pliki .axtr** Po zakończeniu tworzenia lub edytowania nagrania zadania, masz kilka opcji pobrania lub zapisania nagrania. Możesz pobrać plik jako pakiet nagrania zadania (.axtr), nieprzetworzony plik nagrania (.xml), dokument programu Word lub zapisać plik w bibliotece LCS. Dobrze jest zapisać nagranie zadania jako plik pakietu nagrania zadania (.axtr). To ułatwia obsługę plików, jeśli później trzeba zmienić procedury lub adnotacje. Jeśli chcesz pobrać ten plik jako dokument programu Word, zapisz go również jako plik pakietu nagrania zadania.
 
 ## <a name="create-your-task-recording"></a>Tworzenie nagrania zadania
 Szczegółowe omówienie kroków znajduje się w temacie [Zasoby rejestratora zadań](task-recorder.md).
@@ -108,7 +107,7 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 6.  W drzewie wybierz węzeł biblioteki procesów biznesowych, z którym jest skojarzone nagranie zadania.
 7.  Kliknij przycisk **OK**
 8.  Kliknij **Uruchom**.
-9.  Obejrzyj nagranie, zmieniając poszczególne kroki, aby nagrać je ponownie.  **Uwaga**: jeśli wystarczy tylko zmienić tekst nagrania, można otworzyć je w trybie **edytowania adnotacji nagrania**, a następnie zapisać.
+9.  Obejrzyj nagranie, zmieniając poszczególne kroki, aby nagrać je ponownie. **Uwaga**: Jeśli wystarczy tylko zmienić tekst nagrania, można otworzyć je w trybie **edytowania adnotacji nagrania**, a następnie zapisać.
 10. Po odtworzeniu nagrania do końca, kliknij **Stop** na pasku rejestratora zadań w górnej części ekranu.
 11. Wybierz, jak chcesz zapisać nagranie zadania.
 

@@ -11,18 +11,17 @@ ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 21761, NotInToc
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f5670f6a580249491ad16ae46470160545bb8f91
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 4757d506239e309dcbc3e181469b17e3286cc111
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248720"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695122"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool
 Ten temat jest samouczkiem, który pomaga w konfigurowaniu systemu i rozpoczynaniu pracy z narzędziem RSAT oraz innymi narzędziami związanymi z korzystaniem z niego. 
@@ -387,7 +386,7 @@ Aby włączyć uwierzytelnianie, należy wygenerować i zainstalować certyfikat
 
     ![AOSService na liście witryn](./media/setup_rsa_tool_49.png)
 
-3. Kliknij prawym przyciskiem myszy polecenie **Eksploruj**,aby otworzyć folder **\<dysk\>: \\AosService\\Webroot**. Znajdź plik **wif.config**.
+3. Kliknij prawym przyciskiem myszy polecenie **Eksploruj**,aby otworzyć folder **\<Drive\>: \\AosService\\WebRoot**. Znajdź plik **wif.config**.
 
     ![Plik Wif.config w folderze WebRoot](./media/setup_rsa_tool_50.png)
 
@@ -501,7 +500,7 @@ W starszych wersjach narzędzia RSAT konieczne było instalowanie sterownika Sel
     - **Token dostępu** — wprowadź token dostępu, na mocy którego narzędzie łączy się z usługą Azure DevOps. Użyj osobistego tokenu dostępu utworzonego wcześniej w tym samouczku. Aby uzyskać więcej informacji, zobacz sekcję [Uwierzytelnianie dostępu za pomocą osobistych tokenów dostępu](https://www.visualstudio.com/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate).
     - **Nazwa projektu** — wybierz nazwę danego projektu usługi Azure DevOps.
     - **Plan testów** — wybierz plan testów usługi Azure DevOps, który zawiera przypadki testowe. Aby uzyskać więcej informacji, zobacz sekcję [Tworzenie planu testów i pakietów testów](https://www.visualstudio.com/docs/test/manual-exploratory-testing/getting-started/create-a-test-plan). Po wybraniu planu testów kliknij przycisk **Testuj połączenie**, aby przetestować połączenie z usługą Azure DevOps.
-    - **Nazwa hosta** — wprowadź nazwę hosta środowiska rozwiązania Finance and Operations, np. **\<myaos\>. cloudax.dynamics.com**. Nie należy dodawać prefiksu **https://** ani **http://**.
+    - **Nazwa hosta** — wprowadź nazwę hosta środowiska rozwiązania Finance and Operations, np. **\<myaos\>.cloudax.dynamics.com**. Nie należy dodawać prefiksu **https://** ani **http://**.
     - **Nazwa hosta SOAP** — wprowadź nazwę hosta SOAP środowiska testowego. Zazwyczaj nazwa hosta SOAP jest taka sama jak nazwa hosta, ale ma sufiks **soap**. Oto przykład: **\<myaos\>soap.cloudax.dynamics.com**. Nie należy dodawać prefiksu **https://** ani **http://**.
 
         > [!NOTE]
@@ -563,7 +562,7 @@ W starszych wersjach narzędzia RSAT konieczne było instalowanie sterownika Sel
 
     ![Ustawienie 100% rozdzielczości pulpitu](./media/setup_rsa_tool_68.png)
 
-6. Jeśli sterowniki przeglądarki nie są zainstalowane w systemie, zostanie wyświetlony komunikat ostrzegawczy „Ta operacja wymaga sterownika \<nazwa przeglądarki\>. Czy chcesz automatycznie pobrać i zainstalować go teraz?” Wybierz opcję **Tak**.
+6. Jeśli sterowniki przeglądarki nie są zainstalowane w systemie, zostanie wyświetlony komunikat ostrzegawczy „Ta operacja wymaga sterownika \<browser name\>. Czy chcesz automatycznie pobrać i zainstalować go teraz?” Wybierz opcję **Tak**.
 
     ![Komunikat ostrzegawczy dotyczący programu Internet Explorer](./media/setup_rsa_tool_69.png)
 

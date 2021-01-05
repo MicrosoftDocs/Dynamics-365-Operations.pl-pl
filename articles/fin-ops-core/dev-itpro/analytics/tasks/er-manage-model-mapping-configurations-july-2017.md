@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8ff3b419caafec626497c65ea18ca24ca95cb5d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143060"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684434"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Zarządzanie mapowaniem modelu ER w oddzielnych konfiguracjach ER
 
@@ -66,9 +65,9 @@ Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez
     * Przykładowe mapowanie  
 4. Kliknij przycisk Utwórz konfigurację.
 5. Rozwiń sekcję Wymagania wstępne.
-    * Należy zauważyć, że grupa wymagań wstępnych Implementacje została dodana automatycznie. Grupa zawiera wstępnie wymagany składnik, który odwołuje się do nadrzędnej konfiguracji modelu danych i jest oznaczona jako Implementacja. Oznacza to, że ta konfiguracja mapowania modelu Przykładowe mapowanie jest uważana za implementację modelu danych Przykładowy model danych. W związku z tym ten składnik zmusi moduł ER do pobrania konfiguracji mapowania modelu Przykładowe mapowanie z repozytorium ER podczas pobierania konfiguracji modelu Przykładowy model danych.   
+    * Grupa wymagań wstępnych Implementacje została dodana automatycznie. Grupa zawiera wstępnie wymagany składnik, który odwołuje się do nadrzędnej konfiguracji modelu danych i jest oznaczona jako Implementacja. Oznacza to, że ta konfiguracja mapowania modelu Przykładowe mapowanie jest uważana za implementację modelu danych Przykładowy model danych. W związku z tym ten składnik zmusi moduł ER do pobrania konfiguracji mapowania modelu Przykładowe mapowanie z repozytorium ER podczas pobierania konfiguracji modelu Przykładowy model danych.   
 6. Kliknij przycisk Konstruktor.
-    * Należy zauważyć, że utworzona konfiguracja mapowania modelu zawiera nowe puste mapowanie o takiej samej nazwie, jak utworzona konfiguracja. Należy pamiętać, że jeśli wybrana nadrzędna konfiguracja modelu zawiera mapowania modelu, zostaną one skopiowane do nowej konfiguracji mapowania modelu.   
+    * Utworzona konfiguracja mapowania modelu zawiera nowe puste mapowanie o takiej samej nazwie, jak utworzona konfiguracja. Jeśli wybrana nadrzędna konfiguracja modelu zawiera mapowania modelu, zostaną one skopiowane do nowej konfiguracji mapowania modelu.   
 7. Kliknij przycisk Konstruktor.
 8. W drzewie zaznacz element „Dynamics 365 for Operations\Tabela”.
 9. Kliknij opcję Dodaj element główny.
@@ -112,7 +111,7 @@ Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez
 16. Kliknij przycisk Uruchom.
     * Na skróconej karcie Wersja kliknij przycisk Uruchom.  
 17. Kliknij przycisk OK.
-    * Obejrzyj wyniki dla firmy, w której jest zalogowany użytkownik uruchamiający tę konfigurację formatu. Należy zwrócić uwagę, że ta konfiguracja formatu korzysta z utworzonej konfiguracji mapowania modelu, ponieważ jest dostępna tylko jedna konfiguracja zawierająca wymagane mapowania modelu.   
+    * Obejrzyj wyniki dla firmy, w której jest zalogowany użytkownik uruchamiający tę konfigurację formatu. Ta konfiguracja formatu korzysta z utworzonej konfiguracji mapowania modelu, ponieważ jest dostępna tylko jedna konfiguracja zawierająca wymagane mapowania modelu.   
 
 ## <a name="add-alternative-er-model-mapping-configuration"></a>Dodawanie alternatywnej konfiguracji mapowania modelu ER
 1. W drzewie zaznacz element „Przykładowy model danych”.
@@ -153,12 +152,12 @@ Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez
 ## <a name="use-an-existing-er-model-mapping-configuration"></a>Używanie istniejącej konfiguracji mapowania modelu ER
 1. W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.
 2. Kliknij przycisk Uruchom.
-    * Należy pamiętać, że wybrana wersja robocza konfiguracji formatu ER nie może zostać wykonana, ponieważ więcej niż jedna konfiguracja mapowania modelu jest dostępna dla zdefiniowanego modelu danych wybranego jako źródło danych przy uruchamianiu formatu raportowania elektronicznego.   
+    * Wybrana wersja robocza konfiguracji formatu ER nie może zostać wykonana, ponieważ więcej niż jedna konfiguracja mapowania modelu jest dostępna dla zdefiniowanego modelu danych wybranego jako źródło danych przy uruchamianiu formatu raportowania elektronicznego.   
     * Następnie zdefiniujesz alternatywną konfigurację mapowania modelu jako tę, z której mapowania modelu będą wykorzystywane jako źródła danych dla uruchamiania formatu ER.   
 3. W drzewie zaznacz element „Przykładowy model danych\Przykładowe mapowanie (alternatywne)”.
 4. Wybierz opcję Tak w polu Domyślne dla mapowania modelu.
 5. W drzewie zaznacz element „Przykładowy model danych\Przykładowy format”.
 6. Kliknij przycisk Uruchom.
 7. Kliknij przycisk OK.
-    * Należy zwrócić uwagę, że domyślna konfiguracja mapowania modelu jest używana przez tę konfigurację formatu do generowania dokumentu elektronicznego (utworzony produkt wyjściowy zawiera kod firmy).  
+    * Domyślna konfiguracja mapowania modelu jest używana przez tę konfigurację formatu do generowania dokumentu elektronicznego (utworzony produkt wyjściowy zawiera kod firmy).  
 

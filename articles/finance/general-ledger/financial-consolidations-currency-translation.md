@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823462"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446916"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 

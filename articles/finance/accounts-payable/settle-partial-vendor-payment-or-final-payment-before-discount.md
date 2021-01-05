@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 202d6e8b0933522c2faf5fb49291f11200e4754f
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006148"
+ms.locfileid: "4446961"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Rozliczanie płatności częściowej i płatności ostatecznej dostawcy w całości przed datą rabatu
 
@@ -56,7 +56,7 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 | Pobrany rabat gotówkowy          | 0,00      |
 | Kwota rabatu gotówkowego do pobrania | -10,00    |
 
-April klika kartę **Rabat gotówkowy** , aby wyświetlić kwotę rabatu.
+April klika kartę **Rabat gotówkowy**, aby wyświetlić kwotę rabatu.
 
 | Data rabatu gotówkowego | Kwota rabatu gotówkowego | Kwota w walucie transakcji |
 |--------------------|----------------------|--------------------------------|
@@ -64,7 +64,7 @@ April klika kartę **Rabat gotówkowy** , aby wyświetlić kwotę rabatu.
 | 7/25/2015          | 0,00                 | 1000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Płatność częściowa 1 lipca za pomocą strony Rozliczanie transakcji
-April może utworzyć arkusz płatności dla tej płatności, otwierając stronę **Arkusz płatności** w module Rozrachunki z dostawcami. Tworzy nowy arkusz płatności i wprowadza wiersz dla dostawcy 3064. Następnie otwiera stronę **Rozliczenia transakcji** , aby oznaczyć fakturę do rozliczenia. April oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **-500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **-5,05**. April rozlicza więc dla tej faktury kwotę -505,05.
+April może utworzyć arkusz płatności dla tej płatności, otwierając stronę **Arkusz płatności** w module Rozrachunki z dostawcami. Tworzy nowy arkusz płatności i wprowadza wiersz dla dostawcy 3064. Następnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia. April oznacza fakturę i zmienia wartość w polu **Kwota do rozliczenia** na **-500,00**. Stwierdza, że wartość w polu **Kwota rabatu gotówkowego** wynosi **-10,00** dla pełnej faktury, a wartość w polu **Kwota rabatu gotówkowego do pobrania** wynosi **-5,05**. April rozlicza więc dla tej faktury kwotę -505,05.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -105,7 +105,7 @@ April zamyka stronę **Rozliczenie transakcji**. W arkuszu tworzony jest wiersz 
 | DISC-10010 | Rabat gotówkowy    | 7/1/2015  |         | 5,00                                 |                                       | 0,00    | USD      |
 
 ## <a name="remaining-amount-paid-on-july-8"></a>Pozostała kwota zapłacona 8 lipca
-April płaci dostawcy 3064 resztę faktury 8 lipca, czyli po okresie rabatu gotówkowego. Tworzy arkusz płatności 8 lipca i oznacza transakcję do rozliczenia. Stwierdza, że kwota, która musi zostać rozliczona, wynosi 495.00. Wartość w polu **Szacowany rabat gotówkowy** wynosi **-5.00** , ponieważ poprzednio został podjęty rabat gotówkowy w wysokości 5,00.
+April płaci dostawcy 3064 resztę faktury 8 lipca, czyli po okresie rabatu gotówkowego. Tworzy arkusz płatności 8 lipca i oznacza transakcję do rozliczenia. Stwierdza, że kwota, która musi zostać rozliczona, wynosi 495.00. Wartość w polu **Szacowany rabat gotówkowy** wynosi **-5.00**, ponieważ poprzednio został podjęty rabat gotówkowy w wysokości 5,00.
 
 |  &nbsp;                 |  &nbsp; |
 |-------------------------|--------|

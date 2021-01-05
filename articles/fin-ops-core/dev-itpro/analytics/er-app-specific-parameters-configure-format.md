@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: d32da76ee46ff5293ae8fefb16d251564b6be21a
-ms.sourcegitcommit: d6196d83c7b9166ddb4fe43a91e6bd0ad9da2099
+ms.openlocfilehash: 0ed1442403ae82dfc820212e3e235737f37f21a4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "2694253"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679733"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Skonfiguruj formaty ER do używania parametrów określonych dla firmy
 
@@ -83,7 +82,7 @@ W tym przykładzie utworzysz konfigurację dla przykładowej Litware, Inc. Aby u
 
     ![Strona projektanta operacji ER](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
-5.  Na karcie **mapowanie** rozwiń pozycje **model**, **dane**i **podsumowanie**.
+5.  Na karcie **mapowanie** rozwiń pozycje **model**, **dane** i **podsumowanie**.
 
     Źródło **Model.Data.Summary** podsumowanie zwraca listę transakcji podatkowych. Transakcje te są podsumowane według kodu podatkowego. Dla tego źródła danych pole obliczeniowe **Model.Data.Summary.Level** na poziomie zostało skonfigurowane w taki sposób, aby zwracała kod poziomu opodatkowania każdego rekordu zbiorczego. Obliczone pole **Model.Data.Summary.Level** zawiera źródło danych w czasie wykonywania obliczone pole zwraca kod poziomu opodatkowania (**Zwykłe**, **Obniżone**, **Brak** lub **Inne**) jako wartość tekstową. Pole **Model.Data.Summary.Level** służy do filtrowania rekordów **Model.Data.Summary** i wprowadź filtrowane dane w każdym elemencie XML, który reprezentuje poziom opodatkowania, przy użyciu pól **Model.Data2.Level1**, **Model.Data2.Level2** i **Model.Data2.Level3**.
 

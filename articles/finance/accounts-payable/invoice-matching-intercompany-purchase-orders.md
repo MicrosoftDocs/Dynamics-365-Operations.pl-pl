@@ -19,17 +19,17 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: aaa4a08f65e4a3452782cf2b928464dff27ed59b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189667"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446627"
 ---
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Uzgadnianie faktur i międzyfirmowe zamówienia zakupu
 
 [!include [banner](../includes/banner.md)]
 
-Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. Gdy pole **Księguj fakturę z rozbieżnościami** w formularzu **Parametry modułu rozrachunków z dostawcami** jest ustawione na**Wymagaj zatwierdzania**, zostanie przeprowadzona weryfikacja uzgadniania faktur. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego.
+Firmę kupującą, która uczestniczy w transakcjach handlu międzyfirmowego, można skonfigurować tak, aby używała uzgadniania faktur w rozrachunkach z dostawcami. Gdy pole **Księguj fakturę z rozbieżnościami** w formularzu **Parametry modułu rozrachunków z dostawcami** jest ustawione na **Wymagaj zatwierdzania**, zostanie przeprowadzona weryfikacja uzgadniania faktur. W takim przypadku muszą być spełnione równocześnie wymagania dotyczące księgowania dla handlu międzyfirmowego i uzgadniania faktur w rozrachunkach z dostawcami, aby było można zaksięgować faktury od dostawcy międzyfirmowego.
 
 Przykłady w tym temacie używają następującej konfiguracji handlu międzyfirmowego:
 -   Fabrikam-Zakup jest firmą kupującą.

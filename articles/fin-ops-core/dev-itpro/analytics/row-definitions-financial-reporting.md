@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8cc7de1473ed6ec9b93bd880b47b0c25ec5a7262
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185205"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688290"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
 
@@ -161,7 +160,7 @@ Formatowanie określone w definicji wiersza zastępuje wszelkie formatowanie okr
 
 1. W Projektancie raportów otwórz definicję wierszy, którą chcesz zmodyfikować.
 2. Zaznacz komórki do formatowania. Aby wybrać wiele komórek, przytrzymaj klawisz Ctrl i zaznaczaj kolejne komórki.
-3. Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie na pasku narzędzi kliknij przycisk **Zwiększ wcięcie** ![Zwiększ wcięcie](media/indent.gif "Zwiększ wcięcie").
+3. Kliknij przycisk na pasku narzędzi dla formatu, który chcesz zastosować. Na przykład aby zwiększyć wcięcie wiersza, zaznacz wiersz, a następnie kliknij **Zwiększ wcięcie** ![Zwiększ wcięcie](media/indent.gif "Zwiększ wcięcie") na pasku narzędzi.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Dostosowywanie kolumn podczas projektowania raportów
 
@@ -187,4 +186,4 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raporty finansowe](financial-reporting-intro.md)
+[Raportowanie finansowe](financial-reporting-intro.md)

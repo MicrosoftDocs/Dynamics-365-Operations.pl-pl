@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
-ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3106866"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446734"
 ---
 # <a name="process-collection-letters"></a>Przetwarzanie ponagleń
 

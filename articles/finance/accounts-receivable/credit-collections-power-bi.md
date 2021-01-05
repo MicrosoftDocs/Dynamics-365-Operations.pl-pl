@@ -17,11 +17,11 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 6d6880e258510a79cdd5937f96af28e5ae148292
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.sourcegitcommit: 219aa992b1f4c913f26243eeb7e40a383fa1ca67
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040060"
+ms.locfileid: "4446982"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Pakiet zawartości usługi Power BI Zarządzanie kredytami i windykacją
 

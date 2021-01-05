@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 5b51c4beac0ddf1e2b53fe300e10c0f608e5d1e1
-ms.sourcegitcommit: 153bb33722c02501bf7bcfd56ac887602d5dfbd3
+ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "3318673"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680789"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych
 
@@ -264,7 +263,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 
 1. Przejdź do pozycji **Rozrachunki z dostawcami** \> **Płatności** \> **Arkusz płatności dostawcy**.
 2. Dodaj nowy arkusz płatności.
-3. Wybierz pozycję **Wiersze**i dodaj nowy wiersz płatności.
+3. Wybierz pozycję **Wiersze** i dodaj nowy wiersz płatności.
 4. W polu **Konto** wybierz dostawcę **DE-01002**.
 5. W polu **Debet** wprowadź wartość.
 6. W polu **Metoda płatności** wybierz pozycję **SEPA CT**.

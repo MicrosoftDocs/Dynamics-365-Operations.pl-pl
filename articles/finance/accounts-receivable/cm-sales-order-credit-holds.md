@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977918"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446671"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Wstrzymania kredytu dla zamówień sprzedaży
 [!include [banner](../includes/banner.md)]

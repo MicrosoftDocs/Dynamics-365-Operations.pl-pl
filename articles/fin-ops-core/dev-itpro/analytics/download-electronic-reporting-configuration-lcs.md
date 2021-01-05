@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 105843
 ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a18427114bddb7c72024a8d96d33f3fbf8dbe17
-ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
+ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3810626"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683312"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services
 

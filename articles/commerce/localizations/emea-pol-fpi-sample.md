@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 253973408d48ff37769accb630e8e6bab50ac3d9
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978045"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408377"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 
@@ -113,7 +113,7 @@ Przykładowa integracji drukarki fiskalnej implementuje następujące reguły, k
 - Drukarka fiskalna obsługuje tylko scenariusze, w których podatek od sprzedaży jest uwzględniony w cenie. Z tego względu opcja **Cena zawiera podatek** musi być ustawiona na **Tak** zarówno dla sklepów, jak i odbiorców.
 - Raporty dzienne (fiskalne X i końcowy raport sprzedaży)są drukowane przy użyciu osadzonego formatu *Raport zmiany*.
 - Drukowanie kodu kreskowego na paragonach fiskalnych jest traktowane jako potencjalne dostosowanie, ponieważ ta funkcja nie jest obsługiwana w formatach osadzonych i jej wprowadzenie może nastąpić wyłącznie przy użyciu dostosowywanego raportu **Super-format**.
-- Mieszane transakcje nie są obsługiwane przez drukarkę fiskalną. Opcja **Zabraniaj umieszczania sprzedaży i zwrotów na jednym paragonie** powinna być ustawiona na **Tak**w profilach funkcji POS.
+- Mieszane transakcje nie są obsługiwane przez drukarkę fiskalną. Opcja **Zabraniaj umieszczania sprzedaży i zwrotów na jednym paragonie** powinna być ustawiona na **Tak** w profilach funkcji POS.
 
 ## <a name="set-up-commerce-for-poland"></a>Konfigurowanie modułu Commerce dla Polski
 

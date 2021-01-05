@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 89e025977a0dcd40e35f17448a7b0ebde08cb6c8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179467"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446633"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Częściowe płatności dla dostawcy
 
@@ -45,7 +45,7 @@ Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zos
 > Jeśli wpiszesz częściową płatność i zostawisz pełną wartość faktury w polu **Kwota do rozliczenia**, pole **Kwota rabatu gotówkowego do pobrania** jest automatycznie obliczane ponownie po zaksięgowaniu transakcji.
 
 ## <a name="credit-notes-with-cash-discounts"></a>Faktury korygujące z rabatami gotówkowymi
-Możesz zwrócić część towarów znajdujących się na fakturze i otrzymać fakturę korygującą. Jeśli dla oryginalnej faktury został podjęty rabat gotówkowy, możesz odjąć wartość rabatu i uzyskać zwrot kosztu na odpowiednią kwotę. Jeśli opcja **Oblicz rabaty gotówkowe dla faktur korygujących**na stronie **Parametry modułu rozrachunków z dostawcami** ma wartość **Tak**, rabat dla faktury korygującej jest automatycznie obliczany. 
+Możesz zwrócić część towarów znajdujących się na fakturze i otrzymać fakturę korygującą. Jeśli dla oryginalnej faktury został podjęty rabat gotówkowy, możesz odjąć wartość rabatu i uzyskać zwrot kosztu na odpowiednią kwotę. Jeśli opcja **Oblicz rabaty gotówkowe dla faktur korygujących** na stronie **Parametry modułu rozrachunków z dostawcami** ma wartość **Tak**, rabat dla faktury korygującej jest automatycznie obliczany. 
 
 Na przykład możesz otrzymać 2-procentowy rabat gotówkowy, jeśli faktura zostanie zapłacona w ciągu 10 dni po wystawieniu. Faktura jest księgowana na wartość 100,00. W przypadku zwrotu towarów i otrzymania faktury korygującej możesz wprowadzić fakturę korygującą dla całej kwoty oryginalnej faktury (100,00) łącznie z 2-procentowym rabatem gotówkowy zdefiniowanym na fakturze korygującej.  Podczas wyświetlania faktury korygującej na stronie **Rozliczanie transakcji** w polu **Kwota do rozliczenia** pojawia się wartość **98,00**, a w polu **Kwota rabaty gotówkowego** pojawia się wartość **-2,00**. Kwota rabatu jest księgowana na koncie rabatu gotówkowego.
 

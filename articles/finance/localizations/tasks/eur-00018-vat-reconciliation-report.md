@@ -17,11 +17,11 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 496c4841d36174be3e65b0a4fc9a3a331662637f
-ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3139026"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408370"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 Raport uzgodnienia VAT
 

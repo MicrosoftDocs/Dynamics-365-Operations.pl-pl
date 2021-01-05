@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c68f0a0e2481c69add8c50a1581466ad0b1483c0
-ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3759918"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681263"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 
@@ -221,7 +220,7 @@ Na stronie **Projektant formatu** dla skonfigurowanych **poziomów** pól oblicz
 
 Cykliczne wywołania wszelkich sparametryzowanych pól obliczeniowych nie są obsługiwane.
 
-Można wybrać opcję **Edytuj formułę**i zmienić argument zastosowany przez domyślny dla sparametryzowanego pola obliczeniowego w wybranym powiązaniu. Brak tego argumentu może spowodować błędy w czasie wykonywania — użytkownicy są informowani o takiej sytuacji w przypadku sprawdzania poprawności bieżącego formatu.
+Można wybrać opcję **Edytuj formułę** i zmienić argument zastosowany przez domyślny dla sparametryzowanego pola obliczeniowego w wybranym powiązaniu. Brak tego argumentu może spowodować błędy w czasie wykonywania — użytkownicy są informowani o takiej sytuacji w przypadku sprawdzania poprawności bieżącego formatu.
 
 ![Powiadomienie o sprawdzeniu poprawności](media/er-calculated-field-type-10.png)
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c682ed96e47c718d3a9af1eb10aada75c59d3156
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e8b688cb1e4589eb076015d01dc4f0f0db14787e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181848"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688324"
 ---
 # <a name="generate-financial-reports"></a>Generowanie raportów finansowych
 
@@ -98,7 +97,7 @@ Aby usunąć harmonogram raportu, musisz być właścicielem harmonogramu raport
 
 Jeśli nie wprowadzisz poświadczeń, które są wymagane dla wszystkich firm uwzględnionych w raportach, podczas zapisywania harmonogramu raportu wyświetlony zostanie następujący komunikat: „Wprowadź poświadczenia dla firm, które są zawarte w harmonogramie tego raportu. Kliknij przycisk Uprawnienia i wprowadź poświadczenia”.
 
-Na przykład, Anna loguje się w Firmie A przy użyciu swojej nazwy logowania i hasła. Tworzy harmonogram dla raportu, który używa definicji drzewa raportowania do zbierania danych z wielu firm. Podczas zapisywania harmonogramu Anna zobaczy monit o wprowadzenie poświadczeń logowania do innych firm wymienionych w definicji drzewa raportowania. Po upływie limitu czasu poświadczenia, odpowiednie raporty w harmonogramie raportu nie są generowane do momentu aż poświadczenia zostaną zaktualizowane. O konieczności aktualizacji uprawnień informuje komunikat wyświetlany w kolejce raportów. Harmonogram raportu nie powiedzie się, jeśli wystąpi którykolwiek z następujących scenariuszy (ponieważ wymagają one poświadczeń):
+Na przykład użytkownik loguje się w Firmie A przy użyciu swojej nazwy logowania i hasła. Użytkownik tworzy harmonogram dla raportu, który używa definicji drzewa raportowania do zbierania danych z wielu firm. Podczas zapisywania harmonogramu użytkownik zobaczy monit o wprowadzenie poświadczeń logowania do innych firm wymienionych w definicji drzewa raportowania. Po upływie limitu czasu poświadczenia, odpowiednie raporty w harmonogramie raportu nie są generowane do momentu aż poświadczenia zostaną zaktualizowane. O konieczności aktualizacji uprawnień informuje komunikat wyświetlany w kolejce raportów. Harmonogram raportu nie powiedzie się, jeśli wystąpi którykolwiek z następujących scenariuszy (ponieważ wymagają one poświadczeń):
 
 - Nowa firma została dodana do drzewa raportu dla konkretnego raportu.
 - Zmodyfikowanie raportu w drzewie raportów.

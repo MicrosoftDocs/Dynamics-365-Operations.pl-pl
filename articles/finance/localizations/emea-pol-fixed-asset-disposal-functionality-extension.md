@@ -17,12 +17,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c47cae8eac5de438a4b50edb2f2bac04a370a73f
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 924fd342a7e2452b4d9ef6de364a4a0ae57c6f9e
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015030"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4408403"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 
@@ -33,7 +33,7 @@ Ten temat zawiera informacje o funkcjonalności likwidacji środków trwałych d
 Środki trwałe mogą być sprzedawane za pomocą funkcji likwidacji przy użyciu faktury niezależnej, arkusza środków trwałych lub arkusza finansowego w księdze głównej. Aby uzyskać więcej informacji dotyczących likwidacji środków trwałych, zobacz [Konta księgowania likwidacji środków trwałych](../fixed-assets/fixed-asset-disposal-posting-accounts.md). Dla użytkowników w firmach w Polsce rozszerzenie dodające funkcjonalność likwidacji środków trwałych zawiera następujące elementy:
 
 -   Szablon do likwidowania środków trwałych na stronie **Profile księgowania środków trwałych**.
--   Dwa dodatkowe parametry na stronie **Uprawnienie do sprzedaży środka trwałego**. Pola wyboru **Sprawdź dopuszczenie środka do sprzedaży** i **Uprawnienie do sprzedaży środka trwałego** na skróconej karcie **Odwołanie i notatki** dla środka trwałego. Jeśli jest zaznaczone pole wyboru **Sprawdź dopuszczenie środka do sprzedaży** , można sprzedawać tylko składniki aktywów oznaczone jako **Uprawnienie do sprzedaży środka trwałego**.
+-   Dwa dodatkowe parametry na stronie **Uprawnienie do sprzedaży środka trwałego**. Pola wyboru **Sprawdź dopuszczenie środka do sprzedaży** i **Uprawnienie do sprzedaży środka trwałego** na skróconej karcie **Odwołanie i notatki** dla środka trwałego. Jeśli jest zaznaczone pole wyboru **Sprawdź dopuszczenie środka do sprzedaży**, można sprzedawać tylko składniki aktywów oznaczone jako **Uprawnienie do sprzedaży środka trwałego**.
 -   Konto sprzedaży do likwidacji środków trwałych, które zawiera dodatkowy parametr na skróconej karcie **Sprzedaż** na stronie **Parametry środków trwałych**. Za pomocą tego parametru można zdefiniować domyślne konto księgowe do księgowania sprzedaży środków trwałych.
 -   Dodatkowe pole na stronie **Częściowa likwidacja**, gdzie użytkownicy mogą wprowadzić wartość procentową. Ta wartość procentowa będzie służyć do obliczania kwoty wiersza jako wartości księgowej netto wybranego środka trwałego pomnożonej o wartość procentową.
 
@@ -67,7 +67,7 @@ Szablonu likwidacji środków trwałych można używać jako opcji upraszczając
 ## <a name="permission-to-sell"></a>Zezwolenie na sprzedaż
 Funkcja zezwolenia na sprzedaż rozszerza podstawową funkcjonalność likwidacji poprzez sprzedaż dla użytkowników w firmach w Polsce o dwa dodatkowe parametry:
 
--   **Sprawdź dopuszczenie środka do sprzedaży** — To pole wyboru umożliwia aktywację dodatkowego filtra w polu wyszukiwania podczas wybierania środka trwałego do sprzedaży w wierszu faktury niezależnej lub arkusza. Dodatkowy filtr ma wpływ tylko na transakcje o typie **Likwidacja — sprzedaż**. Aby edytować pole **Sprawdź dopuszczenie środka do sprzedaży** , otwórz skróconą kartę **Sprzedaż** na stronie **Środki trwałe** &gt; **Ustawienia** &gt; **Parametry środków trwałych**.
+-   **Sprawdź dopuszczenie środka do sprzedaży** — To pole wyboru umożliwia aktywację dodatkowego filtra w polu wyszukiwania podczas wybierania środka trwałego do sprzedaży w wierszu faktury niezależnej lub arkusza. Dodatkowy filtr ma wpływ tylko na transakcje o typie **Likwidacja — sprzedaż**. Aby edytować pole **Sprawdź dopuszczenie środka do sprzedaży**, otwórz skróconą kartę **Sprzedaż** na stronie **Środki trwałe** &gt; **Ustawienia** &gt; **Parametry środków trwałych**.
 -   **Uprawnienie do sprzedaży środka trwałego** — Użyj tego pola wyboru, aby określić, czy jest dozwolona sprzedaż poszczególnych parametrów każdego środka trwałego. Aby edytować to pole, otwórz skróconą kartę **Odwołanie i notatki** dla wybranego środka trwałego.
 
 ## <a name="sales-account-for-fixed-assets-disposal"></a>Konto sprzedaży do likwidacji środków trwałych

@@ -10,25 +10,24 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 267914
 ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 210231bb442928674b490d83f50bf787d7bfa60c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 26d5f165648c1553745e3061cc89bcba42f9636a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181020"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688474"
 ---
 # <a name="open-entity-data-in-excel-and-update-it-by-using-the-excel-add-in"></a>Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub aplikacji Finance and Operations.
+W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku pakietu Office dla usługi Microsoft Dynamics dla programu Excel. Aby otworzyć dane jednostki, można zacząć z poziomu programu Excel lub Finance and Operations.
 
 Otwierając dane jednostek w programie Excel, można łatwo i szybko wyświetlić i edytować te dane przy użyciu dodatku dla programu Excel. Ten dodatek wymaga programu Microsoft Excel 2016.
 
@@ -37,8 +36,8 @@ Otwierając dane jednostek w programie Excel, można łatwo i szybko wyświetli�
 
 Aby dowiedzieć się więcej na temat używania dodatku programu Excel, obejrzyj krótki film [Tworzenie szablonu programu Excel dla wzorców nagłówków i wierszy w programie Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z rozwiązania Finance and Operations
-1. Na stronie w rozwiązaniu Finance and Operations wybierz opcję **Otwórz w pakiecie Microsoft Office**.
+## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Otwieranie danych jednostki w programie Excel przy rozpoczynaniu z programu Finance and Operations
+1. Na stronie w aplikacji Finance and Operations wybierz opcję **Otwórz w pakiecie Microsoft Office**.
 
     Jeśli główne źródło danych (tabela) na stronie jest takie same, jak główne źródło danych którychkolwiek jednostek, dla strony zostaną wygenerowane domyślnie opcje **Otwórz w programie Excel**. Opcje **Otwórz w programie Excel** można znaleźć na często używanych stronach, takich jak **Wszyscy dostawcy** i **Wszyscy odbiorcy**.
  

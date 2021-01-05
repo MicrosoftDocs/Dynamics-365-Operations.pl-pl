@@ -3,7 +3,7 @@ title: Przegląd zautomatyzowanych procesów fakturowania dostawców
 description: W tym temacie opisano możliwości automatyzacji przetwarzania faktur dostawców i korzystania z procesu automatycznego.
 author: abruer
 manager: AnnBe
-ms.date: 10/16/2020
+ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec3598ebd158cc23ac7c02d7e33557141d5901bc
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.openlocfilehash: 677760ec15630a11bf691be4cd8af9cf5549ddf9
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022503"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665329"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Przegląd zautomatyzowanych procesów fakturowania dostawców
 
@@ -39,8 +39,9 @@ Do wykonywania tych zadań można używać procesów automatyzacji:
 - Automatyczne przesyłanie zaimportowanych faktur do systemu przepływu pracy.
 - Dopasowanie dokumentów przyjęcia produktów do wierszy oczekujących faktur od dostawców.
 - Symulacja księgowania przed zaksięgowaniem faktury od dostawcy.
-- Szybkie i efektywne wyświetlanie historii przepływu pracy.
+- Szybkie i efektywne wyświetlanie historii przepływu pracy i automatyzacji.
 - Wyświetlanie i analizowanie wyników automatycznego przetwarzania faktur od dostawców.
+- Wznawianie automatycznego przetwarzania wielu faktur.
 
 ## <a name="vendor-invoice-automation--submit-imported-vendor-invoices-to-the-workflow-system"></a>Automatyzacja faktur od dostawców — przesyłanie zaimportowanych faktur od dostawcy do systemu przepływu pracy
 
@@ -58,10 +59,13 @@ System może automatycznie dopasowywać zaksięgowane dokumenty przyjęcia produ
 
 Symulacja księgowania kończy kroki sprawdzania poprawności wykonywane podczas procesu księgowania faktur od dostawców, ale żadne konta nie są aktualizowane. Aby uruchomić ten proces, można wybrać jedną fakturę lub kilka faktur na stronie **Oczekujące faktury od dostawcy**.
 
-## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-historical-information-for-vendor-invoices"></a>Automatyzacja faktur od dostawców — ulepszone możliwości wyświetlania informacji historycznych dotyczących przepływu pracy dla faktur od dostawców
+## <a name="vendor-invoice-automation--enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>Automatyzacja faktur od dostawców — ulepszone możliwości wyświetlania informacji historycznych dotyczących przepływu pracy i automatyzacji dla faktur od dostawców
 
-Dostępny jest łatwy do odczytania widok historii przepływu pracy faktury od dostawcy. Historię przepływu pracy faktury od dostawcy można uzyskać bezpośrednio z faktury od dostawcy. W związku z tym do znalezienia tych informacji jest wymagana mniejsza liczba kliknięć.
+Dostępny jest łatwy do odczytania widok historii przepływu pracy faktury od dostawcy. Historię przepływu pracy faktury od dostawcy można uzyskać bezpośrednio z faktury od dostawcy. W związku z tym do znalezienia tych informacji jest wymagana mniejsza liczba kliknięć. Jeśli w organizacji włączono możliwość automatycznego przesyłania zaimportowanych faktur od dostawców do przepływu pracy, dla zaimportowanych faktur jest dostępna historia automatyzacji. Historia automatyzacji pomaga identyfikować bieżący krok procesu, a także kroki, które zostały już wykonane. Jeśli krok nie powiedzie się, system podaje szczegółowe informacje pomocne w zrozumieniu przyczyny niepowodzenia.
 
 ## <a name="vendor-invoice-automation--analytics-and-metrics"></a>Automatyzacja faktur od dostawców — analiza i metryka
 
 Obszar roboczy **Wprowadzanie faktur od dostawców** umożliwia skoncentrowanie się na fakturach od dostawcy, które nie zostały przez niego wytworzone automatycznie. Kafelki na liście obszaru roboczego dotyczące faktur od dostawców, które nie zostały pomyślnie przesłane do systemu przepływu pracy, zostały zaimportowane lub dopasowane do dokumentów przyjęcia produktów. Dostępne są również metryki rozwiązania Microsoft Power BI, które umożliwiają kierownikom Rozrachunki z dostawcami wgląd w efektywność automatyzacji faktur dostawców.
+
+## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatyzacja faktury od dostawcy — wznawianie przetwarzania automatyzacji dla wielu faktur
+Jeśli zaimportowana faktura nie zostanie pomyślnie przesłana do przepływu pracy za pośrednictwem zautomatyzowanego procesu, system usunie ją z dalszego automatycznego przetwarzania. Pracownik rozrachunków z dostawcami może przejrzeć i edytować fakturę, zanim zautomatyzowany proces prześle go do przepływu pracy. Jeśli przyczyna niepowodzenia może zostać usunięta za pomocą tej samej poprawki dla wielu faktur, można ponownie uruchomić zautomatyzowany proces na stronie **Wznawianie automatycznego przetwarzania faktur**. 

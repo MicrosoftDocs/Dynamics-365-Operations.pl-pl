@@ -1,6 +1,6 @@
 ---
 title: Zintegrowany podatek
-description: W tym temacie opisano integrację danych podatków między Finance and Operations i Common Data Service.
+description: W tym temacie opisano integrację danych podatków między Finance and Operations i Dataverse.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 26818ceace7d2b7e7c3ed4d0bb0bd9ab2e884aba
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 14c22dd6602b5fbf866c8dc6b057f6c8acb1f48f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997607"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679303"
 ---
 # <a name="integrated-tax"></a>Zintegrowany podatek
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ Dane ustawień podatku określają ustawienia zarówno podatków pośrednich (VA
 
 ## <a name="templates"></a>Szablony
 
-Dane podatku zawierają kolekcję mapy encji działa razem podczas interakcji, jak pokazano w poniższej tabeli.
+Dane podatku zawierają kolekcję mapowań tabel działających razem podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
 Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
 -------------------------|---------------------------------|----|

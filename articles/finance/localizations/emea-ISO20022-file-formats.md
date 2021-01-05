@@ -17,11 +17,11 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773436"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408361"
 ---
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 

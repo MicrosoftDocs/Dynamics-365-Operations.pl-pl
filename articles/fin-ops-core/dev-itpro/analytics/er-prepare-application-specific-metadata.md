@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 89d36c305bc9210f7906cd4288e33e5028baecdb
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f15b78d3ed5b4df47540f9f89cc69c0b535a7241
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771267"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680201"
 ---
 # <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Przygotuj metadane dla konkretnej aplikacji dla RCS i ER
 

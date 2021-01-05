@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464fd211eb5417265f8c737b23456769137a7c13
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 670e6be595fb891408b1b0804c68a41650b0da0b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772681"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4447017"
 ---
 # <a name="budget-control-overview"></a>Omówienie kontroli budżetu
 

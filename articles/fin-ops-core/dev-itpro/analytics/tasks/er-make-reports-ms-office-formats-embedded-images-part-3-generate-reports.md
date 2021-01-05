@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 78dcdbd83dc717104d437662f7f451c9ecb714cf
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143106"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684386"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Generowanie raportów w formatach pakietu Office z osadzonymi obrazami
 
@@ -40,14 +39,14 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
     * Uruchom format do celów testowych.  
 6. W polu Format czeku zbywalnego wybierz opcję Tak.
 7. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że w raporcie jest przedstawiane logo firmy oraz podpis osoby upoważnionej. Obraz podpisu jest pobierany z pola danych typu „Kontener” w rekordzie układu czeku skojarzonym z wybranym kontem bankowym.  
+    * Przejrzyj produkt wyjściowy. W raporcie jest przedstawiane logo firmy oraz podpis osoby upoważnionej. Obraz podpisu jest pobierany z pola danych typu „Kontener” w rekordzie układu czeku skojarzonym z wybranym kontem bankowym.  
 8. Rozwiń sekcję Kopie.
 9. Kliknij przycisk Edytuj.
 10. W polu Znak wodny wprowadź tekst „Drukuj znak wodny jako unieważniony”.
     * Zmień ustawienie znaku wodnego, aby był pokazywany tekst znaku wodnego podczas generowania dokumentu w elemencie kształtu programu Excel.  
 11. Kliknij opcję Drukowanie testu.
 12. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że znak wodny jest widoczny w utworzonym raporcie zgodnie z wybraną opcją.  
+    * Przejrzyj produkt wyjściowy. Znak wodny jest widoczny w utworzonym raporcie zgodnie z wybraną opcją.  
 13. Zamknij stronę.
 14. W okienku akcji kliknij pozycję Zarządzanie płatnościami.
 15. Kliknij przycisk Czeki.
@@ -56,7 +55,7 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
 18. Na liście zaznacz wszystkie wiersze.
 19. Kliknij opcję Drukuj kopię czeku.
     * Uruchom format, aby ponownie wydrukować wybrane czeki.  
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że wybrane czeki zostały ponownie wydrukowane. Logo firmy i etykiety nie są drukowane, ponieważ znajdują się na formularzu z nadrukiem.  
+    * Przejrzyj produkt wyjściowy. Wybrane czeki zostały ponownie wydrukowane. Logo firmy i etykiety nie są drukowane, ponieważ znajdują się na formularzu z nadrukiem.  
 
 ## <a name="modify-the-mapping-of-the-imported-data-model"></a>Modyfikowanie mapowania zaimportowanego modelu danych
 1. Zamknij stronę.
@@ -91,7 +90,7 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
 4. Kliknij przycisk Sprawdź.
 5. Kliknij opcję Drukowanie testu.
 6. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zauważyć, że obraz z załącznika funkcji zarządzania dokumentami jest wyświetlany jako podpis osoby upoważnionej.  
+    * Przejrzyj produkt wyjściowy. Obraz z załącznika funkcji zarządzania dokumentami jest wyświetlany jako podpis osoby upoważnionej.  
 
 ## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Używanie dokumentu programu MS Word jako szablonu w zaimportowanym formacie
 1. Zamknij stronę.
@@ -118,5 +117,5 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
 21. Kliknij przycisk Sprawdź.
 22. Kliknij opcję Drukowanie testu.
 23. Kliknij przycisk OK.
-    * Przejrzyj produkt wyjściowy. Należy zwrócić uwagę, że dane wyjściowe zostały wygenerowane jako dokument programu MS Word z osadzonymi obrazami prezentującymi logo firmy, podpis osoby upoważnionej i wybrany tekst znaku wodnego.  
+    * Przejrzyj produkt wyjściowy. Dane wyjściowe zostały wygenerowane jako dokument programu Word z osadzonymi obrazami prezentującymi logo firmy, podpis osoby upoważnionej i wybrany tekst znaku wodnego.  
 

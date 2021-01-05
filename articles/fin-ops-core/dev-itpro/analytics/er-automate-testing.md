@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 0a2586afd56eef0f953454ad246ff3647a5b09d1
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771451"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681455"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatyzacja testowania za pomocą modułu Raportowanie elektroniczne
 
@@ -60,7 +59,7 @@ Użytkownicy mocy funkcjonalnej mogą tworzyć testy akceptacji i integracji uż
 Przed zakończeniem zadań w tym temacie, należy najpierw wypełnić następujące procedury:
 
 - Wdrażaj topologię, która obsługuje automatyzację testów. Musisz mieć dostęp do instancji dla tej topologii w roli **Administrator systemu**. Ta topologia musi zawierać dane demonstracyjne, które będą używane w tym przykładzie. Więcej informacji znajdziesz w [Wdrażanie i użycie środowisk obsługujących ciągłą kompilację i automatyzację testów](../perf-test/continuous-build-test-automation.md).
-- Aby automatycznie przeprowadzić testy akceptacji i integracji użytkowników, musisz zainstalować RSAT w topologii, z której korzystasz, i skonfigurować go w odpowiedni sposób. Aby uzyskać informacje o tym, jak zainstalować i skonfigurować RSAT i skonfigurować go do pracy z aplikacji Finance and Operations i Azure DevOps, zobacz [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Zwróć uwagę na warunki wstępne użycia narzędzia. Na poniższej ilustracji przedstawiono przykład ustawień RSAT. Niebieski prostokąt zawiera parametry określające dostęp do Azure DevOps. Zielony prostokąt zawiera parametry określające dostęp do instancji.
+- Aby automatycznie przeprowadzić testy akceptacji i integracji użytkowników, musisz zainstalować RSAT w topologii, z której korzystasz, i skonfigurować go w odpowiedni sposób. Aby uzyskać informacje o tym, jak zainstalować RSAT i skonfigurować go do pracy z aplikacjami Finance and Operations i Azure DevOps, zobacz [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Zwróć uwagę na warunki wstępne użycia narzędzia. Na poniższej ilustracji przedstawiono przykład ustawień RSAT. Niebieski prostokąt zawiera parametry określające dostęp do Azure DevOps. Zielony prostokąt zawiera parametry określające dostęp do instancji.
 
     ![Ustawienia RSAT](media/GER-Configure.png "Zrzut ekranu ekranu okna dialogowego Ustawienia RSAT")
 
@@ -325,7 +324,7 @@ To nagranie zadania obejmuje następujące czynności:
 ### <a name="run-the-tests-in-rsat"></a>Uruchom testy w RSAT
 
 1. W RSAT, wybierz wgrane testy.
-2. Wybierz opcję**Uruchom**.
+2. Wybierz opcję **Uruchom**.
 
 Zauważ, że przypadki testowe są automatycznie uruchamiane w obszarze aplikacji za pomocą przeglądarki internetowej.
 
@@ -352,7 +351,7 @@ Ten zestaw testów musi zakończyć się niepowodzeniem, jeśli co najmniej jedn
 ### <a name="run-the-tests-in-rsat"></a>Uruchom testy w RSAT
 
 1. W RSAT, wybierz wgrane testy.
-2. Wybierz opcję**Uruchom**.
+2. Wybierz opcję **Uruchom**.
 
 Zauważ, że przypadki testowe są automatycznie uruchamiane w obszarze aplikacji za pomocą przeglądarki internetowej.
 

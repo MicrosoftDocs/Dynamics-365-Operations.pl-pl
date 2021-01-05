@@ -18,11 +18,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7cbc638b684ad6eb59b852e599cf36cbd0b66faf
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006243"
+ms.locfileid: "4446962"
 ---
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>Jeden załącznik z wieloma rekordami odbiorców lub dostawców
 
@@ -34,7 +34,7 @@ Do typowych przykładów używania jednego załącznika do wielu odbiorców lub 
 
 Załącznik zawierający więcej niż jednego odbiorcę lub dostawcę można wprowadzić przy użyciu jednej z następujących metod:
 
--   Za pomocą arkusza z zaznaczoną opcją **Tylko jeden numer załącznika** , tak aby każdy wiersz dodawany do arkusza znalazł się w tym samym załączniku.
+-   Za pomocą arkusza z zaznaczoną opcją **Tylko jeden numer załącznika**, tak aby każdy wiersz dodawany do arkusza znalazł się w tym samym załączniku.
 -   Za pomocą załącznika wielowierszowego, gdy nie ma przeciwstawnego konta księgowego, z więcej niż jednym odbiorcą lub dostawcą.
 -   Wprowadzanie załącznika z kombinacją konta i konta przeciwstawnego dostawca/dostawca, odbiorca/odbiorca, dostawca/odbiorca lub odbiorca/dostawca.
 

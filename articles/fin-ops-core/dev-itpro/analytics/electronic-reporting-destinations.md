@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323699"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687166"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
 
@@ -91,7 +90,7 @@ Po utworzeniu odwołania można utworzyć plik docelowy dla każdego **Folderu**
 
 Następnie można włączać i wyłączać poszczególne miejsca docelowe dla danego miejsca w oknie dialogowym **Ustawienia aplikacji docelowej**. Przycisk **Ustawienia** pozwala kontrolować wszystkie miejsca docelowe należące do wybranego plikowego miejsca docelowego. W oknie dialogowe **Ustawienia aplikacji docelowej** można kontrolować każde miejsce docelowe osobno, ustawiając dla niego opcję **Włączone**.
 
-W wersjach Finance **wcześniejszych niż 10.0.9** można utworzyć **jedno miejsce docelowe pliku** dla każdego składnika wyjściowego tego samego formatu, takiego jak folder lub plik wybrany w polu **Nazwa pliku**. Jednak w **wersji 10.0.9 lub nowszej**można utworzyć **wiele miejsc docelowych plików** dla każdego składnika wyjściowego tego samego formatu.
+W wersjach Finance **wcześniejszych niż 10.0.9** można utworzyć **jedno miejsce docelowe pliku** dla każdego składnika wyjściowego tego samego formatu, takiego jak folder lub plik wybrany w polu **Nazwa pliku**. Jednak w **wersji 10.0.9 lub nowszej** można utworzyć **wiele miejsc docelowych plików** dla każdego składnika wyjściowego tego samego formatu.
 
 Można na przykład użyć tej możliwości do skonfigurowania lokalizacji docelowych plików dla składnika pliku używanego do generowania dokumentu wychodzącego w formacie programu Excel. Jeden cel ([archiwalny](er-destination-type-archive.md)) można skonfigurować do przechowywania oryginalnego pliku programu Excel w archiwum zadań ER, a następnie można skonfigurować inne miejsce docelowe ([e-mail](er-destination-type-email.md)), aby jednocześnie [konwertować](#OutputConversionToPDF)  plik programu Excel na format PDF i wysłać plik PDF pocztą elektroniczną.
 

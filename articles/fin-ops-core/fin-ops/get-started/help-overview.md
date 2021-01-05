@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
-ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28118eddd2f85df5f9daa2c5a6c3cb00957909db
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367345"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695146"
 ---
 # <a name="help-system"></a>System Pomocy
 
@@ -49,7 +48,7 @@ Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.micro
 
 Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wyszukiwarki. W celu uzyskania najlepszych wyników zalecamy korzystanie z przeszukiwania witryny, takiego jak **site:docs.microsoft.com dynamics 365 „szukany termin”**.
 
-### <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
+## <a name="get-notified-about-changes-through-an-rss-feed"></a>Otrzymywanie powiadomień o zmianach za pomocą kanału informacyjnego RSS
 
 Aby subskrybować kanał informacyjny RSS (Really Simple Syndication) obejmujący wszystkie aktualizacje dotyczące zawartości witryny docs.microsoft.com, wybierz następujący link:
 
@@ -68,7 +67,7 @@ Jeśli masz opinię lub pytania dotyczące tematu, pozostaw komentarz na dole st
 > [!NOTE]
 > Jeśli chcesz przesłać opinię o dokumentacji, musisz zalogować się przy użyciu konta GitHub. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie profilu GitHub i zarządzanie nim](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
-### <a name="contribute-to-the-documentation"></a>Udział w dokumentacji
+## <a name="contribute-to-the-documentation"></a>Udział w dokumentacji
 
 Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz przycisk **Edytuj** (symbol ołówka) w temacie. Poniższe wideo przedstawia sposób, w jaki można uczestniczyć w naszej dokumentacji systemu.
 

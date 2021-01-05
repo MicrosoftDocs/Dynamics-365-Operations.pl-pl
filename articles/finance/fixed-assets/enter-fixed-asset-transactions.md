@@ -19,11 +19,11 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6f08750c369475f9d8be3c723aaf4eb6cf36eb7c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187275"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446736"
 ---
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 

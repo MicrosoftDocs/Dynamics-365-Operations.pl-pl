@@ -19,11 +19,11 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 471c719a8e6de0ebe6fcdad0ae222453db841c87
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772106"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446925"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Szablony planowania budżetu dla programu Excel
 
@@ -67,7 +67,7 @@ Na karcie **Projekt** kliknij pola **Dodaj**, a następnie wybierz pozycję **Bu
 
 Ustaw kursor w żądanym miejscu w pliku programu Excel. Kliknij przycisk **Dodaj etykietę**, aby dodać etykietę pola w wybranym miejscu. Kliknij przycisk **Dodaj wartość**, aby dodać pole wartości w wybranym miejscu. Kliknij przycisk **Gotowe**, aby zamknąć projektanta.
 
-## <a name="select-add-valuemediabpt7pngmediabpt7png"></a>[![Wybieranie dodawanie wartości](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Wybieranie dodawanie wartości](./media/bpt7.png)](./media/bpt7.png)
 
 <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Dodawanie kolumny obliczanej do tabeli szablonu dokumentu planu budżetu
 --------------------------------------------------------------
@@ -83,7 +83,7 @@ Wybrana grupa pól pokazuje kolumny dostępne w szablonie. Kliknij przycisk **Fo
 [![Dodawanie i wstawianie kolumny](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z programem Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
+> Aby zdefiniować formułę (wzór), utwórz ją w arkuszu kalkulacyjnym, a następnie skopiuj do okna **Projekt**. Tabela powiązana z Finance and Operations zazwyczaj nosi nazwę „AXTable1”. Na przykład aby podsumować kolumny Wniosek K1: Wniosek K4 w arkuszu kalkulacyjnym, formuła ma postać = AxTable1\[Wniosek K1\]+AxTable1\[Wniosek K2\]+AxTable1\[Wniosek K3\]+AxTable1\[Wniosek K4\].
 
 Powtórz te kroki, aby wstawić kolumnę **Korekta**. Dla tej kolumny użyj formuły = AxTable1\[Wniosek razem\]\*$I$1. Spowoduje to pobranie wartości z komórki I1 i pomnożenie jej przez wartości z kolumny **Wniosek razem** w celu obliczania kwot korekt.
 
@@ -120,7 +120,7 @@ Zalecamy zablokowanie szablonu, aby uniemożliwić użytkownikom jego zamknięci
 
 Kliknij strzałkę, a pojawi się dodatkowe menu. Wybierz opcję **Blokowanie**.
 
-### <a name="select-lockmediabpt16-1024x614pngmediabpt16png"></a>[![Wybierz opcję Blokowanie](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Wybierz opcję Blokowanie](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Czy w moich szablonach planu budżetu mogę używać innych funkcji programu Excel, takich jak formatowanie komórek, kolory, formatowanie warunkowe i wykresy?
 

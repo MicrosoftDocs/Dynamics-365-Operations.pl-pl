@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 919aa50136f02a44eb69146589496ad1284721f2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976650"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446768"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Dodaj informacje dotyczące zarządzania kredytem odbiorców
 

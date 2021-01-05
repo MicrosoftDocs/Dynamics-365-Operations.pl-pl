@@ -16,11 +16,11 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 2f0da36e2be20d5ae8c838ed73c6e8aa1c19b621
-ms.sourcegitcommit: 814476906187480262b390ca49e487eb91738deb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819110"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408379"
 ---
 # <a name="tax-directives-for-europe"></a>Dyrektywy podatkowe dla Europy
 

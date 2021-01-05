@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28b8346b916729669af42ca47fe9a882e7a77bd0
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142208"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682148"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Uzyskaj dostęp do metadanych aplikacji za pomocą połączonych aplikacji
 
@@ -54,7 +53,7 @@ Kroki w tym temacie wyjaśniają, w jaki sposób użytkownik usługi Regulatory 
 2. Zamknij stronę. 
 3. Otwórz **Wszystkie miejsca prac** > **Electroniczne Raportowanie**. 
 4. Kliknij **Połączone aplikacje**. 
-5. Upewnij się, że skonfigurowana aplikacja jest oparta na Azure i dostępna dla bieżącego użytkownika RCS. Wymagane jest również, aby bieżący użytkownik RCS miał dostęp do wybranej aplikacji i został zarejestrowany jako użytkownik tej aplikacji, odgrywając rolę dającą mu uprawnienia dostępu do metadanych aplikacji. 
+5. Upewnij się, że skonfigurowana aplikacja jest oparta na Azure i dostępna dla bieżącego użytkownika RCS. Wymagane jest również, aby bieżący użytkownik RCS miał dostęp do wybranej aplikacji i został zarejestrowany jako jej użytkownik z rolą dającą mu uprawnienia dostępu do metadanych aplikacji. 
 6. Kliknij przycisk **Nowy**. 
 7. W polu **Nazwa** wpisz 'MyConnectedApp'. 
 8. W polu **Aplikacja** wpisz 'https:// mycompany.operations.dynamics.com'. 

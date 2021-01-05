@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede88bc1767304a86a86ec27365db9403c5a951d
-ms.sourcegitcommit: 4909e55529f03310d24b7e40d52751e24d35259b
+ms.openlocfilehash: 7cd0d8e7aa9595e705416798772f52956ef609da
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "3678255"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680249"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -142,10 +141,10 @@ Jako użytkownik w roli dewelopera raportowania elektronicznego, musisz skonfigu
 
 ### <a name="configure-er-parameters"></a><a name="ConfigureParameters"></a>Konfigurowanie parametrów modułu ER
 
-1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
-2. W obszarze roboczym **Raportowanie elektroniczne** wybierz łącze  **Parametry raportowania elektronicznego**.
-3. Na stronie **Parametry raportowania elektronicznego** na karcie **Ogólne** ustaw opcję **Włącz tryb projektowania** na **Tak**.
-4. Na karcie **Załączniki** ustaw następujące parametry:
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+2. W obszarze roboczym **Raportowanie elektroniczne** wybierz łącze **Parametry raportowania elektronicznego**.
+3. Na stronie **Parametry raportowania elektronicznego** na karcie **Ogólne** ustaw opcję **Włącz tryb projektowania** na **Tak**.
+4. Na karcie **Załączniki** ustaw następujące parametry:
 
     - Ustaw pole **Konfiguracje** na **Plik** dla firmy **USMF**.
     - W polach **Archiwum zadań**, **Tymczasowe**, **Podstawowe** i **Inne** należy ustawić typ **Plik**.
@@ -161,28 +160,28 @@ Każda konfiguracja ER jest oznaczona jako posiadana przez dostawcę konfiguracj
 
 #### <a name="review-the-list-of-er-configuration-providers"></a><a name="ReviewProvidersList"></a>Przejrzenie listy dostawców konfiguracji ER
 
-1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. W module **Powiązane odnośniki**, w obszarze roboczym **Raportowanie elektroniczne** wybierz opcję **Dostawcy konfiguracji**.
 3. Na stronie **Dostawcy konfiguracji** każde ustawienie dostawcy ma unikatową nazwę i adres URL. Przejrzyj zawartość tej strony. Jeśli rekord dla **Litware, Inc.** (`https://www.litware.com`) już istnieje, pomiń następną procedurę, [Dodawanie nowego dostawcy konfiguracji ER](#ActivateProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a name="AddProvider"></a>Dodawanie nowego dostawcy formatu ER
 
 1. Na stronie **Dostawcy konfiguracji** wybierz opcję **Nowa**.
-2. W polu **Nazwa** wpisz **Litware, Inc.**
-3. W polu **Adres internetowy** wprowadź  `https://www.litware.com`.
-4. Wybierz opcję **Zapisz**.
+2. W polu **Nazwa** wpisz **Litware, Inc.**
+3. W polu **Adres internetowy** wprowadź `https://www.litware.com`.
+4. Wybierz opcję **Zapisz**.
 
 #### <a name="activate-an-er-configuration-provider"></a><a name="ActivateAddedProvider"></a>Aktywowanie dostawcy konfiguracji ER
 
-1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
+1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. W obszarze roboczym **Raportowanie elektroniczne** wybierz pozycję **Litware, Inc.** dla dostawcy konfiguracji.
-3. Wybierz **Aktywuj**.
+3. Wybierz **Aktywuj**.
 
 Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Projektowanie modelu danych specyficznego dla domeny
 
-Należy utworzyć nową konfigurację ENCJi, która zawiera [składnik modelu danych](general-electronic-reporting.md#data-model-and-model-mapping-components) dla domeny biznesowej **Kwestionariusza**. Ten model danych będzie później używany jako źródło danych podczas projektowania formatu ER w celu wygenerowania raportu **Kwestionariusza**.
+Należy utworzyć nową konfigurację ER, która zawiera składnik [modelu danych](general-electronic-reporting.md#data-model-and-model-mapping-components) dla domeny biznesowej **Kwestionariusz**. Ten model danych będzie później używany jako źródło danych podczas projektowania formatu ER w celu wygenerowania raportu **Kwestionariusza**.
 
 Wykonując kroki opisane w sekcji [Importowanie nowej konfiguracji modelu danych](#ImportDataModel), można zaimportować wymagany model danych z podanego pliku XML. Można również wykonać kroki opisane w sekcji [Tworzenie nowej konfiguracji modelu danych](#DesignDataModel), aby zaprojektować ten model danych od podstaw.
 
@@ -811,7 +810,7 @@ Stan wersja 1.1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **U
 
 Jako użytkownik w roli administratora systemu musisz opracować nową logikę, tak aby skonfigurowany format ER mógł być wywoływany z interfejsu użytkownika aplikacji (UI) w celu wygenerowania raportu niestandardowego. Obecnie moduł ER nie oferuje żadnych możliwości konfigurowania tego typu logiki. W związku z tym wymagane są pewne prace technologiczne. 
 
-Aby opracować nową logikę, należy wdrożyć topologię obsługującą ciągłe budowanie. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](../perf-test/continuous-build-test-automation.md). Ponadto musisz także mieć dostęp do środowiska programowania dla tej topologii. Aby uzyskać więcej informacji na temat dostępnego interfejsu API ER, zapoznaj się z tematem [Interfejs API struktury modułu Raportowanie elektroniczne](er-apis-app73.md).
+Aby opracować nową logikę, należy wdrożyć topologię obsługującą ciągłe budowanie. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](../perf-test/continuous-build-test-automation.md). Ponadto musisz także mieć dostęp do środowiska programowania dla tej topologii. Aby uzyskać więcej informacji na temat dostępnego interfejsu API ER, zapoznaj się z tematem [Interfejs API struktury modułu Raportowanie elektroniczne](er-apis-app73.md).
 
 ### <a name="modify-source-code"></a><a name="ModifySourceCode"></a>Zmień kod źródłowy
 

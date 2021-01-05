@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 23601
 ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e56a4e50f7bd325890fbec44828c7a110a5cc1
-ms.sourcegitcommit: 7a855deed9f95ca2589f38db214890464b2b9061
+ms.openlocfilehash: 60e6fb7d38bd3ca78538ca10a15f6fb09bba52a3
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "2951170"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693911"
 ---
 # <a name="address-books-faq"></a>Książki adresowe — często zadawane pytania
 
@@ -42,7 +41,7 @@ Tak, można dodać wiele rekordów stron do książki adresowej i również usun
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Czy można zmienić typ rekordu strony czy też należy usunąć stary rekord i utworzyć nowy?
 
-Czasami trzeba zmienić typ rekordu strony z osoby na organizację lub z organizację na osobę. Na przykład Nancy jest członkiem zespołu sprzedaży w firmie Fabrikam Wielka Brytania Na targach w Londynie spotyka sześciu nowych potencjalnych klientów. Dla każdego z nich Nancy tworzy rekord strony potencjalnego klienta. Gdy Nancy zapisuje rekordy, każdy rekord jest również tworzony w globalnej książce adresowej. Domyślnym typem strony w firmie Fabrikam jest organizacja, ale dla dwóch potencjalnych klientów trzeba ustawić typ rekordu jako osobę. W związku z tym gdy Nancy wraca z targów, musi ona zmienić typ stron dla dwóch rekordów potencjalnych klientów. Aby zmienić typ rekordu strony, należy najpierw utworzyć nowy rekord strony odpowiedniego typu w globalnej książce adresowej. Następnie należy skojarzyć stary rekord strony z nowym. Po skojarzeniu nowej strony należy usunąć oryginalny rekord strony z niewłaściwym typem.
+Czasami trzeba zmienić typ rekordu strony z osoby na organizację lub z organizację na osobę. Na przykład Nancy jest członkiem zespołu sprzedaży w firmie Fabrikam Wielka Brytania. Na targach w Londynie spotyka sześciu nowych potencjalnych klientów. Dla każdego z nich Nancy tworzy rekord strony potencjalnego klienta. Gdy Nancy zapisuje rekordy, każdy rekord jest również tworzony w globalnej książce adresowej. Domyślnym typem strony w firmie Fabrikam jest organizacja, ale dla dwóch potencjalnych klientów trzeba ustawić typ rekordu jako osobę. W związku z tym gdy Nancy wraca z targów, musi ona zmienić typ stron dla dwóch rekordów potencjalnych klientów. Aby zmienić typ rekordu strony, należy najpierw utworzyć nowy rekord strony odpowiedniego typu w globalnej książce adresowej. Następnie należy skojarzyć stary rekord strony z nowym. Po skojarzeniu nowej strony należy usunąć oryginalny rekord strony z niewłaściwym typem.
 
 ## <a name="how-do-i-change-the-name-or-address-of-a-party-record"></a>Jak zmienić nazwę adres rekordu strony?
 

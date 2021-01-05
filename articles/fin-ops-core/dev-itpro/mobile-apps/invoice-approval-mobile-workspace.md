@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d4ea1d81b0e4f92974ceb7d46386c9d9f6e48979
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8d4b40c7ce8939248e85b6b6f3d359bd16e35b0d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249010"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683415"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenia faktur
 
@@ -30,7 +29,7 @@ Ten temat zawiera informacje o komórkowym obszarze roboczym **Zatwierdzenia fak
 
 Ten mobilny obszar roboczy jest przeznaczony do używania w aplikacji mobilnej Finance and Operations.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Komórkowy obszar roboczy **Zatwierdzenia faktur** pozwala pracownikom i kierownikom ds. rozrachunków z dostawcami wyświetlać faktury, które zostały im przypisane w procesie przepływu pracy nagłówków faktur od dostawców. Można wyświetlić informacje o fakturze, a nawet szczegóły wiersza i dystrybucji, aby podejmować najbardziej trafne decyzje o zatwierdzeniu. W obszarze roboczym można podjąć odpowiednie działania, aby przeprowadzić fakturę przez kolejne etapy przepływu pracy. 
 

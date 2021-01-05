@@ -1,6 +1,6 @@
 ---
 title: Zintegrowane witryny i magazyny
-description: W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Common Data Service.
+description: W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Dataverse.
 author: t-benebo
 manager: AnnBe
 ms.date: 10/09/2019
@@ -18,26 +18,28 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: d5c2030160f6025c9de63b2c29215364f5f87e6f
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: d192343d78f9248e4d1232d6aee1a1f800383805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997631"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679327"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Zintegrowane oddziały i magazyny
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Common Data Service. Lokacje i magazyny operacyjne są typowymi pojęciami w aplikacji Supply Chain Management. Służą one do modelowania łańcucha dostaw firmy.
+
+W tym temacie opisano integrację danych witryny i magazynu między aplikacjami Finance and Operations i Dataverse. Lokacje i magazyny operacyjne są typowymi pojęciami w aplikacji Supply Chain Management. Służą one do modelowania łańcucha dostaw firmy.
 
 ## <a name="templates"></a>Szablony
 
-Dzięki integracji z Common Data Service, te pojęcia i wszystkie informacje związane z nimi są dostępne w Common Data Service przy użyciu stron i magazynów wymienionych w poniższej tabeli.
+Dzięki integracji z Dataverse te pojęcia i wszystkie informacje związane z nimi są dostępne w Dataverse przy użyciu tabel danych witryn i magazynów wymienionych w poniższej tabeli.
 
-Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | Opis
+Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | opis
 --------------------------|---------------------------|---
 Oddziały | msdyn_operationalsites | 
 Magazyny | msdyn_warehouses | 

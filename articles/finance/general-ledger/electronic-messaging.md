@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3977198"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446903"
 ---
 # <a name="electronic-messaging"></a>Obsługa wiadomości elektronicznych
 
@@ -497,13 +497,13 @@ Na przykład użytkownik utworzy następujące akcje:
 
 1. Przejdź do menu **Podatek \>ustawienia \>wiadomości elektroniczne \>Akcje przetwarzania wiadomości**.
 2. Utwórz akcję o nazwie **Utwórz wiadomość**. Na skróconej karcie **ogólne** w polu **typu akcji** zaznacz **Utwórz wiadomość**.
-3. Tworzenie akcji o nazwie **Aktualizuj do stanu Przygotowane**i ustaw następujące pola:
+3. Tworzenie akcji o nazwie **Aktualizuj do stanu Przygotowane** i ustaw następujące pola:
 
     - Na skróconej karcie **ogólne** w polu **typu akcji** zaznacz **Wiadomość dotycząca przetwarzania poziomu użytkownika**.
     - Na skróconej karcie **początkowe stany** w polu **stan wiadomości** zaznacz **nowa**.
     - Na skróconej karcie **Stany wyników** w polu **stan wiadomości** zaznacz **Przygotowane**. W polu **typu odpowiedzi** wprowadź **Pomyślnie wykonane**.
 
-4. Utwórz akcję o nazwie **Generuj raport**i ustaw następujące pola:
+4. Utwórz akcję o nazwie **Generuj raport** i ustaw następujące pola:
 
     - Na skróconej karcie **ogólne** w polu **typu akcji** zaznacz **Eksport raportowania elektronicznego**. W polu **mapowanie formatu** wybierz format eksportu ER. Dostępne opcje to **Excel**, **XML**, **JSON**, **Tekst** i **Inne**.
     - Na skróconej karcie **Stany początkowe** w polu **stan wiadomości** zaznacz **Przygotowane**.

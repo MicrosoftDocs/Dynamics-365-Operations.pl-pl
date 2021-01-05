@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: NumberSequenceTableListPage, NumberSequenceWizard
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 76dc32f2254ffd2a2e33eef594d6e602092bcb6f
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: ca8174444d5a84f7efb402d6efc787e693801e82
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140512"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694746"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Konfigurowanie numeracji za pomocą kreatora
 

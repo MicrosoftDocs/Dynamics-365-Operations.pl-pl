@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 195833
 ms.assetid: 3237347e-71d5-4569-bc9a-0d0fc9410b78
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f35676799a625656b6885cbc33d30870cee85e12
-ms.sourcegitcommit: e55efd2f62bf60f678108c09ad4701a76b20cc68
+ms.openlocfilehash: a72719c9fd03f73b69b558fc0f08eed91ea94ee1
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "3698202"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694366"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurowanie przepływów pracy dla pozycji w wierszach
 

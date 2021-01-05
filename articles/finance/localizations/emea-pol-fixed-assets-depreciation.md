@@ -18,11 +18,11 @@ ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: a993bdd9656b88619f26535935cc08df1e7a6e39
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984670"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408397"
 ---
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 

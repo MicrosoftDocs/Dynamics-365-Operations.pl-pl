@@ -20,11 +20,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006173"
+ms.locfileid: "4446963"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -186,7 +186,7 @@ Hierarchia wymiarów **Rachunek zysków i strat** musi zostać zaktualizowana o 
 | &nbsp;&nbsp;&nbsp;&nbsp;Koszt podstawowy                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Koszt w drugiej walucie                         | **SC-CC001**            | **SC-CC004**        |
 
-Utwórz **zasadę akumulacji kosztów** , gdzie każde centrum kosztów jest zamapowane na odpowiedni składnik kosztów typu **Podrzędne**.
+Utwórz **zasadę akumulacji kosztów**, gdzie każde centrum kosztów jest zamapowane na odpowiedni składnik kosztów typu **Podrzędne**.
 
 **Zasady akumulacji kosztów**
 
@@ -223,7 +223,7 @@ Teraz system będzie stosował **zasadę akumulacji kosztów** podczas tworzenia
 | 31-01-2017      | CC004       | Opakowanie    | SC-CC004 | Opakowanie | 15.717,25 |
 
 > [!NOTE]
-> Wpisy w arkuszu są tworzone na podstawie reguł określonych w **zasadzie akumulacji kosztów** , jeśli taka zasada istnieje. Wyświetlane saldo jest saldem obliczania kosztów ogólnych.
+> Wpisy w arkuszu są tworzone na podstawie reguł określonych w **zasadzie akumulacji kosztów**, jeśli taka zasada istnieje. Wyświetlane saldo jest saldem obliczania kosztów ogólnych.
 
 Strona **Szczegóły wpisu w arkuszu sald kosztów obiektów kosztów** otwierana z poziomu wpisów arkusza pokazuje sposób uzyskania salda.
 
@@ -274,7 +274,7 @@ Poniżej przedstawiono przykład raportu Power Pivot w programie Excel.
 
 Za pomocą **zasady akumulacji kosztów** i **podrzędnych składników kosztów** można pozostawić koszt podstawowy obiektu kosztów dla sprawozdawczości wewnętrznej jako koszt podstawowy, która pozostaje po **obliczeniu kosztów ogólnych**.
 
-Jeśli ten sam przykład zostałby wykonany bez tworzenia **zasady akumulacji kosztów** , wynik raportowania wyglądałby jak poniżej. Koszt przepływa poprawnie, ale traci się możliwość jego identyfikacji i wglądu w sposób przepływu między centrami kosztów.
+Jeśli ten sam przykład zostałby wykonany bez tworzenia **zasady akumulacji kosztów**, wynik raportowania wyglądałby jak poniżej. Koszt przepływa poprawnie, ale traci się możliwość jego identyfikacji i wglądu w sposób przepływu między centrami kosztów.
 
 | **Rachunek zysków i strat** | **Obiekt kosztów** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Suma**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|

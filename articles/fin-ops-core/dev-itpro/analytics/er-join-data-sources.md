@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
-ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
+ms.openlocfilehash: 0d7df12026d6d668b1f48a48cd12bf4b12e0f94e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "3332329"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686423"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE źródeł danych w mapowaniach modeli Raportowania elektronicznego (ER)
 
@@ -31,14 +30,14 @@ ms.locfileid: "3332329"
 
 Konfigurując mapowania lub formaty modeli raportowania elektronicznego (ER), można [dodać](#review) wymagane źródła danych typu **sprzężenia**. W czasie projektowania źródło danych **sprzężenia** jest konfigurowane jako zbiór kilku źródeł danych, z których każdy zwraca listę rekordów. Dla każdego źródła danych z wyjątkiem pierwszego należy zdefiniować niezbędne warunki, aby dołączyć rekordy bieżącego i poprzedniego źródła danych. W czasie wykonywania, skonfigurowane źródło danych typu **sprężenia** [zwraca](#executeERformat) pojedynczą połączoną listę rekordów zawierającą pola z rekordów zagnieżdżonych źródeł danych.
 
-Obecnie obsługiwane są następujące typy sprężeń:
+Obecnie obsługiwane są następujące typy sprzężeń:
 
 - Sprzężenie zewnętrzne (lewe):
     - Dołącz wszystkie rekordy w pierwszym (najbardziej do lewej) źródle danych, a następnie wszelkie uzgodnienia zgodnie z skonfigurowanymi rekordami warunków drugiego (najbardziej do prawej) źródła danych.
 - Sprzężenie zewnętrzne (prawe):
     - Dołącz tylko rekordy w pierwszym (najbardziej do lewej) źródle danych, a następnie wszelkie uzgodnienia zgodnie z skonfigurowanymi rekordami warunków tylko drugiego (najbardziej do prawej) źródła danych.
 
-W skonfigurowanym źródle danych **sprężenia**, gdy wszystkie źródła danych są typu **Rekordy tabeli**, wykonanie źródła danych sprzężenia można [wykonać na poziomie bazy danych](#analyze) przy użyciu pojedynczej instrukcji SQL. Zmniejsza to liczbę wywołań bazy danych, zwiększając wydajność mapowania modeli. W przeciwnym razie wykonanie źródła **Danych sprzężenia** jest wykonywane w pamięci.
+W skonfigurowanym źródle danych **sprężenia**, gdy wszystkie źródła danych są typu **Rekordy tabeli**, wykonanie źródła danych sprzężenia można [wykonać na poziomie bazy danych](#analyze) przy użyciu pojedynczej instrukcji SQL. Ta instrukcja zmniejsza liczbę wywołań bazy danych, zwiększając wydajność mapowania modeli. W przeciwnym razie wykonanie źródła **Danych sprzężenia** jest wykonywane w pamięci.
 
 > [!NOTE]
 > Użycie funkcji **VALUEIN** w wyrażeniach ER określających warunki dołączania rekordów w źródłach danych typu sprzężenia nie jest jeszcze obsługiwane. Odwiedź stronę [Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md), aby uzyskać szczegółowe informacje na temat tej funkcji.
@@ -79,7 +78,7 @@ Z wyprzedzeniem należy również pobrać z [Centrum pobierania Microsoft](https
 
 1. W pierwszej sesji przeglądarki sieci Web należy uzyskać dostęp do Finance lub RCS.
 2. Wybierz kolejno opcje **Administrowanie organizacją \> Obszary robocze \> Raportowanie elektroniczne**.
-3. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy Litware, Inc. (http://www.litware.com) jest wymieniony na liście i czy jest oznaczony jako **Aktywny**. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki w procedurze [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+3. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy [Litware, Inc.](http://www.litware.com) jest wymieniony na liście i czy jest oznaczony jako **Aktywny**. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki w procedurze [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
     ![Obszar roboczy raportowania elektronicznego](./media/GER-JoinDS-ActiveProvider.PNG)
 
@@ -96,20 +95,21 @@ Z wyprzedzeniem należy również pobrać z [Centrum pobierania Microsoft](https
     2. Wybierz **Załaduj z pliku XML**.
     3. Wybierz przycisk **Przeglądaj**, aby znaleźć plik **Mapowanie do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml**.
     4. Kliknij przycisk **OK**.
-4.  Importuj plik konfiguracji formatu ER.
+4. Importuj plik konfiguracji formatu ER.
     1. Wybierz **Zamień**.
     2. Wybierz **Załaduj z pliku XML**.
     3. Wybierz przycisk **Przeglądaj**, aby znaleźć plik **Format do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml**.
     4. Kliknij przycisk **OK**.
-5.  W drzewie konfiguracji rozwiń **Model do nauczenia SPRĘŻENIA źródeł danych**, a także inne elementy modelu (jeśli są dostępne).
-6.  Zaobserwuj listę konfiguracji modelu ER w drzewie, jak również szczegóły wersji na karcie skróconej **Wersje** — będą one używane jako źródło danych dla przykładowego raportu.
+5. W drzewie konfiguracji rozwiń **Model do nauczenia SPRĘŻENIA źródeł danych**, a także inne elementy modelu (jeśli są dostępne).
+6. Zaobserwuj listę konfiguracji modelu ER w drzewie, jak również szczegóły wersji na karcie skróconej **Wersje** — będą one używane jako źródło danych dla przykładowego raportu.
 
     ![Strona konfiguracji raportowania elektronicznego](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Włącz opcje śledzenia wykonania
-1.  Wybierz **KONFIGURACJE**.
-2.  Wybierz **Parametry użytkownika**.
-3.  Określ parametry śledzenia wykonania, tak jak pokazano na poniższym zrzucie ekranu.
+
+1. Wybierz **KONFIGURACJE**.
+2. Wybierz **Parametry użytkownika**.
+3. Określ parametry śledzenia wykonania, tak jak pokazano na poniższym zrzucie ekranu.
 
     ![Strona parametrów użytkownika raportowania elektronicznego](./media/GER-JoinDS-Parameters.PNG)
 
@@ -119,11 +119,11 @@ Z wyprzedzeniem należy również pobrać z [Centrum pobierania Microsoft](https
 
 Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowany pod kątem dostępu do informacji na temat wersji konfiguracji systemu ER, szczegółów konfiguracji i dostawców konfiguracji bez użycia źródeł danych typu **Sprzężenia**.
 
-1.  Wybierz konfigurację **Mapowanie do nauczenia SPRĘŻENIA źródeł danych**.
-2.  Wybierz opcję **Projektant**, aby otworzyć listę mapowań.
-3.  Wybierz opcję **Projektant**, aby przejrzeć szczegóły mapowania. 
-4.  Wybierz **Pokaż szczegóły**.
-5.  W drzewie konfiguracje rozwiń pozycję elementy modelu danych **Set1** i **Set1.Details**:
+1. Wybierz konfigurację **Mapowanie do nauczenia SPRĘŻENIA źródeł danych**.
+2. Wybierz opcję **Projektant**, aby otworzyć listę mapowań.
+3. Wybierz opcję **Projektant**, aby przejrzeć szczegóły mapowania.
+4. Wybierz **Pokaż szczegóły**.
+5. W drzewie konfiguracje rozwiń pozycję elementy modelu danych **Set1** i **Set1.Details**:
 
     1. Powiązanie **Szczegóły powiązania: Lista rekordów = wersje** wskazuje, że pozycja **Set1.Details** jest związana z **Wersjami** źródła danych zwracającymi rekordy tabeli **ERSolutionVersionTable**. Każdy rekord tej tabeli reprezentuje jedną wersję konfiguracji ER. Zawartość tej tabeli jest prezentowana na karcie skróconej **Wersje** na stronie **Konfiguracje**.
     2. Powiązanie **ConfigurationVersion: String = @.PublicVersionNumber** oznacza, że wartość publicznej wersji każdej konfiguracji jest pobierana z pola **PublicVersionNumber** tabeli **ERSolutionVersionTable** i umieszczana na elemencie **ConfigurationVersion**.
@@ -132,19 +132,19 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     ![Strona projektanta mapowania modelu ER](./media/GER-JoinDS-Set1Review.PNG)
 
-6.  W drzewie konfiguracje rozwiń pozycję modelu danych **Set1.Summary**:
+6. W drzewie konfiguracje rozwiń pozycję modelu danych **Set1.Summary**:
 
     1. Powiązanie **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** wskazuje, że element **Set1.Summary.VersionsNumber** jest powiązany z polem agregacji **VersionsNumber** w polu **VersionsSummary** źródło danych typu **GroupBy**, które zostało skonfigurowane do zwracania liczby rekordów tabeli **ERSolutionVersionTable** za pośrednictwem **Wersji** źródła danych.
 
     ![Strona parametrów źródła danych GROUPBY](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
-7.  Zamknij stronę.
+7. Zamknij stronę.
 
 ### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Przegląd mapowania modelu ER (część 2)
 
 Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowany pod kątem dostępu do informacji na temat wersji konfiguracji systemu ER, szczegółów konfiguracji i dostawców konfiguracji z użyciem źródeł danych typu **Sprzężenia**.
 
-1.  W drzewie konfiguracje rozwiń pozycję elementy modelu danych **Set2** i **Set2.Details**: Należy zauważyć, że powiązanie **Details: Record list = Details** wskazuje, że **Set2.Details** jest powiązany ze źródłem danych **Szczegółów** skonfigurowanym jako źródło danych typu **Sprzężenia**.
+1. W drzewie konfiguracje rozwiń pozycję elementy modelu danych **Set2** i **Set2.Details**: Powiązanie **Details: Record list = Details** wskazuje, że element **Set2.Details** jest powiązany ze źródłem danych **Szczegóły** skonfigurowanym jako źródło danych typu **Sprzężenie**.
 
     ![Strona projektanta mapowania modelu ER](./media/GER-JoinDS-Set2Review.PNG)
 
@@ -152,16 +152,16 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     ![Strona projektanta mapowania modelu ER](./media/GER-JoinDS-AddJoinDS.PNG)
 
-2.  Wybierz źródło danych **szczegółów**.
-3.  Wybierz opcję **Edytuj** w okienku **Źródła danych**.
-4.  Wybierz opcję **Edycja sprężenia**.
-5.  Wybierz **Pokaż szczegóły**.
+2. Wybierz źródło danych **szczegółów**.
+3. Wybierz opcję **Edytuj** w okienku **Źródła danych**.
+4. Wybierz opcję **Edycja sprężenia**.
+5. Wybierz **Pokaż szczegóły**.
 
     ![Strona parametrów źródła danych SPRĘŻENIA](./media/GER-JoinDS-JoinDSEditor.PNG)
 
-    Ta strona służy do projektowania wymaganego źródła danych **typu sprzężenia**. W czasie wykonywania to źródło danych utworzy jedną przyłączoną listę rekordów ze źródeł danych w siatce **Połączonej listy**. Dołączenie rekordów zostanie rozpoczęte ze źródła danych **ConfigurationProviders**, które znajduje się w siatce jako pierwsza (dla niego jest pusta kolumna **Typ**). Rekordy z każdego innego źródła danych będą przyłączane w związku z rekordami nadrzędnego źródła danych na podstawie jego zamówienia w tej siatce. Każde dołączenie źródła danych musi być skonfigurowane jako źródło danych zagnieżdżone w docelowym źródle danych (**1Versions** źródło danych jest zagnieżdżone w **1Configurations**; źródło danych **1Configurations** jest zagnieżdżone w **ConfigurationProviders**). Każde skonfigurowane źródło danych musi zawierać warunki dla sprzężenia. W źródle danych dla tego konkretnego **Sprzężenia**zdefiniowano następujące sprzężenia:
+    Ta strona służy do projektowania wymaganego źródła danych **typu sprzężenia**. W czasie wykonywania to źródło danych utworzy jedną przyłączoną listę rekordów ze źródeł danych w siatce **Połączonej listy**. Dołączenie rekordów zostanie rozpoczęte ze źródła danych **ConfigurationProviders**, które znajduje się w siatce jako pierwsza (dla niego jest pusta kolumna **Typ**). Rekordy z każdego innego źródła danych będą przyłączane w związku z rekordami nadrzędnego źródła danych na podstawie jego zamówienia w tej siatce. Każde dołączenie źródła danych musi być skonfigurowane jako źródło danych zagnieżdżone w docelowym źródle danych (źródło danych `1Versions` jest zagnieżdżone w `1Configurations`; źródło danych `1Configurations` jest zagnieżdżone w **ConfigurationProviders**). Każde skonfigurowane źródło danych musi zawierać warunki dla sprzężenia. W źródle danych dla tego konkretnego **Sprzężenia** zdefiniowano następujące sprzężenia:
 
-    - Każdy rekord źródła danych **ConfigurationProviders** (odwołujący się do tabeli **ERVendorTable**) jest połączony tylko z rekordami **1Configurations** (określonymi w tabeli **ERSolutionTable**) o tej samej wartości w polach **SolutionVendor** i **RecId**. Typ **Sprzężenia wewnętrznego** jest używany dla tego sprzężenia, a także następujące warunki dotyczące dopasowywania rekordów: 
+    - Każdy rekord źródła danych **ConfigurationProviders** (odwołujący się do tabeli **ERVendorTable**) jest połączony tylko z rekordami **1Configurations** (określonymi w tabeli **ERSolutionTable**) o tej samej wartości w polach **SolutionVendor** i **RecId**. Typ **Sprzężenia wewnętrznego** jest używany dla tego sprzężenia, a także następujące warunki dotyczące dopasowywania rekordów:
 
     FILTROWANIE (Configurations, Configurations.SolutionVendor = ConfigurationProviders.RecId)
 
@@ -171,32 +171,32 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     - Opcja **Wykonaj** jest skonfigurowana jako **Kwerenda**, co oznacza, że to źródło danych sprzężenia zostanie wykonane w czasie wykonywania na poziomie bazy danych jako bezpośrednie wywołanie SQL.
 
-    Należy zwrócić uwagę, że w przypadku dołączania rekordów źródeł danych reprezentujących tabele aplikacji można określać warunki sprzężenia za pomocą par pól innych niż te, które opisują istniejące relacje drzewa obiektów aplikacji (AOT) między tymi tabelami. Ten typ sprzężenia można skonfigurować do wykonywania również na poziomie bazy danych.
+    W przypadku dołączania rekordów źródeł danych reprezentujących tabele aplikacji można określać warunki sprzężenia za pomocą par pól innych niż te, które opisują istniejące relacje drzewa obiektów aplikacji (AOT) między tymi tabelami. Ten typ sprzężenia można skonfigurować do wykonywania również na poziomie bazy danych.
 
-6.  Zamknij stronę.
-7.  Wybierz **Anuluj**.
-8.  W drzewie konfiguracje rozwiń pozycję modelu danych **Set2.Summary**:
+6. Zamknij stronę.
+7. Wybierz **Anuluj**.
+8. W drzewie konfiguracje rozwiń pozycję modelu danych **Set2.Summary**:
 
     - Powiązanie **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** wskazuje, że element **Set2.Summary.VersionsNumber** jest powiązany z polem agregacji **VersionsNumber** w polu **DetailsSummary** źródło danych typu **GroupBy**, które zostało skonfigurowane do zwracania liczby połączonych rekordów źródła danych **Szczegóły** typu **Sprężenia**.
-    - Warto zauważyć, że lokalizacja opcji **Wykonaj** jest skonfigurowana jako **Kwerenda**, co oznacza, że to źródło danych **GroupBy** zostanie wykonane w czasie wykonywania na poziomie bazy danych jako bezpośrednie wywołanie SQL. Jest to możliwe, ponieważ **Szczegóły** podstawowego źródła danych typu **Sprzężenia** są skonfigurowane jako wykonywane na poziomie bazy danych.
+    - Opcja lokalizacji **Wykonaj** jest skonfigurowana jako **Zapytanie**, co oznacza, że to źródło danych typu **GroupBy** będzie uruchamiane w czasie wykonywania na poziomie bazy danych jako bezpośrednie wywołanie SQL. To zachowanie jest możliwe, ponieważ podstawowe źródło danych **Szczegóły** o typie **Sprzężenie** jest skonfigurowane jako wykonywane na poziomie bazy danych.
 
     ![Strona parametrów źródła danych GROUPBY](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
-9.  Zamknij stronę.
+9. Zamknij stronę.
 10. Wybierz **Anuluj**.
 
 ### <a name="execute-er-format"></a><a name="executeERformat"></a> Wykonaj format ER
 
-1.  Dostęp do Finance lub RCS w drugiej sesji przeglądarki sieci Web przy użyciu tych samych poświadczeń i firmy, co w pierwszej sesji.
-2.  Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
-3.  Rozwiń konfigurację **Model do nauczenia SPRĘŻENIA źródeł danych**.
-4.  Wybierz konfigurację **Format do nauczenia SPRĘŻENIA źródeł danych**.
-5.  Wybierz opcję **Konstruktor**.
-6.  Wybierz **Pokaż szczegóły**.
-7.  Wybierz **Mapowanie**.
-8.  Wybierz **Rozwiń/zwiń**.
+1. Dostęp do Finance lub RCS w drugiej sesji przeglądarki sieci Web przy użyciu tych samych poświadczeń i firmy, co w pierwszej sesji.
+2. Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
+3. Rozwiń konfigurację **Model do nauczenia SPRĘŻENIA źródeł danych**.
+4. Wybierz konfigurację **Format do nauczenia SPRĘŻENIA źródeł danych**.
+5. Wybierz opcję **Konstruktor**.
+6. Wybierz **Pokaż szczegóły**.
+7. Wybierz **Mapowanie**.
+8. Wybierz **Rozwiń/zwiń**.
 
-    Należy zauważyć, że ten format jest przeznaczony do wypełnienia wygenerowanego pliku tekstowego nowym wierszem dla każdej wersji konfiguracji ER (sekwencja **Wersji**). Każdy wygenerowany wiersz będzie zawierał nazwę dostawcy konfiguracji, który jest właścicielem bieżącej konfiguracji, nazwę konfiguracji i wersję konfiguracji rozdzielone średnikiem. Ostatni wiersz wygenerowanego pliku będzie zawierał liczbę odnalezionych wersji konfiguracji programu ER (sekwencja **Podsumowania**).
+    Ten format jest przeznaczony do wypełnienia wygenerowanego pliku tekstowego nowym wierszem dla każdej wersji konfiguracji ER (sekwencja **Wersja**). Każdy wygenerowany wiersz będzie zawierał nazwę dostawcy konfiguracji, który jest właścicielem bieżącej konfiguracji, nazwę konfiguracji i wersję konfiguracji rozdzielone średnikiem. Ostatni wiersz wygenerowanego pliku będzie zawierał liczbę odnalezionych wersji konfiguracji programu ER (sekwencja **Podsumowania**).
 
     ![Strona projektanta formatu ER](./media/GER-JoinDS-FormatReview.PNG)
 
@@ -207,7 +207,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     ![Strona projektanta formatu ER](./media/GER-JoinDS-FormatMappingReview.PNG)
 
-9.  Wybierz opcję**Uruchom**.
+9. Wybierz opcję **Uruchom**.
 10. Na stronie okna dialogowego wybierz opcję **Nie** w polu **Użyj SPRĘŻENIA źródeł danych**.
 11. Kliknij przycisk **OK**.
 12. Przeglądnij wygenerowany plik.
@@ -216,38 +216,38 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
 #### <a name="analyze-er-format-execution-trace"></a>Analizowanie śledzenia wykonania operacji na formacie ER
 
-1.  W pierwszej sesji finansów lub RCS wybierz opcję **Projektant**.
-2.  Wybierz **Śledzenie wydajności**.
-3.  W siatce **Śledzenie wydajności** wybierz najwyższy rekord na najnowszym śledzeniu wydajności dla formatu ER, który używa bieżącego składnika mapowania modelu.
-4.  Kliknij przycisk **OK**.
+1. W pierwszej sesji finansów lub RCS wybierz opcję **Projektant**.
+2. Wybierz **Śledzenie wydajności**.
+3. W siatce **Śledzenie wydajności** wybierz najwyższy rekord na najnowszym śledzeniu wydajności dla formatu ER, który używa bieżącego składnika mapowania modelu.
+4. Kliknij przycisk **OK**.
 
-    Należy zauważyć, że statystyki wykonania powołują się na zduplikowane wywołania tabel aplikacji:
+    Statystyki wykonania informują o zduplikowanych wywołaniach tabel aplikacji:
 
     - **ERSolutionTable** zostało wywołane tyle razy, ile jest rekordów wersji konfiguracji w tabeli **ERSolutionVersionTable**, podczas gdy liczba takich wywołań mogłaby zostać zmniejszona w czasie w celu zwiększenia wydajności.
     - **ERVendorTable** zostało wywołane dwa razy dla każdej wersji konfiguracji, która została odkryta w tabeli **ERSolutionVersionTable**, podczas gdy liczba takich wywołań mogłaby również zostać zmniejszona.
 
     ![Strona projektanta mapowania modelu ER](./media/GER-JoinDS-Set1Run2.PNG)
 
-5.  Zamknij stronę.
+5. Zamknij stronę.
 
 ### <a name="execute-er-format"></a>Wykonaj format ER
 
-1.  Przełącz się na kartę przeglądarki sieci Web przy użyciu drugiej sesji Finance lub RCS.
-2.  Wybierz opcję**Uruchom**.
-3.  Na stronie okna dialogowego wybierz opcję **Tak** w polu **Użyj SPRĘŻENIA źródeł danych**.
-4.  Kliknij przycisk **OK**.
-5.  Przeglądnij wygenerowany plik.
+1. Przełącz się na kartę przeglądarki sieci Web przy użyciu drugiej sesji Finance lub RCS.
+2. Wybierz opcję **Uruchom**.
+3. Na stronie okna dialogowego wybierz opcję **Tak** w polu **Użyj SPRĘŻENIA źródeł danych**.
+4. Kliknij przycisk **OK**.
+5. Przeglądnij wygenerowany plik.
 
     ![Strona okna dialogowego użytkownika ER](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analizowanie śledzenia wykonania operacji na formacie ER
 
-1.  W pierwszej sesji finansów lub RCS wybierz opcję **Projektant**.
-2.  Wybierz **Śledzenie wydajności**.
-3.  W siatce **Śledzenie wydajności** wybierz najwyższy rekord reprezentujący najnowsze śledzenie wydajności dla formatu ER, który używa bieżącego składnika mapowania modelu.
-4.  Kliknij przycisk **OK**.
+1. W pierwszej sesji finansów lub RCS wybierz opcję **Projektant**.
+2. Wybierz **Śledzenie wydajności**.
+3. W siatce **Śledzenie wydajności** wybierz najwyższy rekord reprezentujący najnowsze śledzenie wydajności dla formatu ER, który używa bieżącego składnika mapowania modelu.
+4. Kliknij przycisk **OK**.
 
-    Należy zauważyć, że statystyki wykonania podano poniżej:
+    Statystyki przekazują następujące informacje:
 
     - Baza danych aplikacji została wywołana raz, aby można było pobrać rekordy z tabel **ERVendorTable**, **ERSolutionTable** i **ERSolutionVersionTable** w celu uzyskania dostępu do wymaganych pól.
 
@@ -289,4 +289,3 @@ Gdy skonfigurowane źródło danych zostanie uruchomione podczas [kontrolowania]
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Śledzenie wykonywania formatu ER w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
-

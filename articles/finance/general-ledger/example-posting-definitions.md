@@ -19,11 +19,11 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 301f15f1d7d8f0e10bbaf2546fcf727aff284624
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552309"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446685"
 ---
 # <a name="posting-definition-examples"></a>Szablony definicji księgowania
 

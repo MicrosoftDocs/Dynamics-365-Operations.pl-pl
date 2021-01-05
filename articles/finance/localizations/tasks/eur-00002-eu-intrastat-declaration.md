@@ -17,11 +17,11 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3145270"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408382"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR-00002 Generowanie unijnej deklaracji Intrastat
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d647dc41eb18d25101e66d3030327fc55b55a4d5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6f96da7f7f5374fb34e317c416238a48c3fe7d05
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250335"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4447024"
 ---
 # <a name="financial-period-close-workspace"></a>Obszar roboczy zamknięcia okresu obrachunkowego
 

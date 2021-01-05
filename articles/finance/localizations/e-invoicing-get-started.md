@@ -19,11 +19,11 @@ ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 7b2a3aae43d42060c7fcd9e1ea3db814fc5d8f22
-ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
+ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/19/2020
-ms.locfileid: "4039853"
+ms.locfileid: "4446981"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne
 
@@ -84,7 +84,7 @@ Na poniższej ilustracji przedstawiono pięć głównych kroków, które należy
 ## <a name="lcs-setup"></a>Konfiguracja LCS
 
 1. Zaloguj się do swojego konta LCS.
-2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej** , a w grupie pól **Funkcje w publicznych wersjach zapoznawczych** wybierz **BusinessDocumentSubmission**.
+2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**, a w grupie pól **Funkcje w publicznych wersjach zapoznawczych** wybierz **BusinessDocumentSubmission**.
 3. Zaznacz pole **Funkcja wersji zapoznawczej włączona**.
 4. Wybierz projekt wdrożenia usługi LCS. Zanim będzie można wybrać projekt, musi on być uruchomiony.
 5. Na skróconej karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
@@ -108,7 +108,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 ### <a name="set-up-the-key-vault-in-rcs"></a>Skonfiguruj Magazyn kluczy w RCS
 
 1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji** , a następnie w obszarze **Środowiska** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Fakturowanie elektroniczne**.
 3. Wybierz **Środowiska usług**.
 
     ![Wybieranie środowisk usługowych](media/e-invoicing-services-get-started-select-service-environments.png)
@@ -120,12 +120,12 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
     ![Wybieranie parametru magazynu kluczy](media/e-invoicing-services-get-started-select-key-vault-parameters.png)
 
-5. W okienku akcji wybierz opcję **Nowe** , aby dodać magazyn kluczy.
-6. W polu **Identyfikator URI magazynu kluczy** wprowadź wartość atrybutu **Nazwy DNS** zasobu magazynu kluczy skonfigurowanego na Azure. Aby uzyskać informacje o tym, gdzie znaleźć wartość **Nazwy DNS** , przejrzyj temat [Tworzenie konta magazynu systemu Azure i magazynu kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
+5. W okienku akcji wybierz opcję **Nowe**, aby dodać magazyn kluczy.
+6. W polu **Identyfikator URI magazynu kluczy** wprowadź wartość atrybutu **Nazwy DNS** zasobu magazynu kluczy skonfigurowanego na Azure. Aby uzyskać informacje o tym, gdzie znaleźć wartość **Nazwy DNS**, przejrzyj temat [Tworzenie konta magazynu systemu Azure i magazynu kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
 
     ![Pole URI magazynu kluczy](media/e-invoicing-services-get-started-enter-key-vault-uri.png)
 
-7. Na skróconej karcie **Certyfikaty** wybierz pozycję **Dodaj** , aby wprowadzić wszystkie cyfrowe nazwy certyfikatów i wpisy tajne magazynu kluczy potrzebne do ustanowienia zaufanego połączenia. W kolumnie **Typ** można określić, czy jest to certyfikat, czy wpis tajny. Oba zestawy wartości są skonfigurowane w zasobie magazynu kluczy na platformie Azure.
+7. Na skróconej karcie **Certyfikaty** wybierz pozycję **Dodaj**, aby wprowadzić wszystkie cyfrowe nazwy certyfikatów i wpisy tajne magazynu kluczy potrzebne do ustanowienia zaufanego połączenia. W kolumnie **Typ** można określić, czy jest to certyfikat, czy wpis tajny. Oba zestawy wartości są skonfigurowane w zasobie magazynu kluczy na platformie Azure.
 
     ![Dodawanie certyfikatów](media/e-invoicing-services-get-started-add-digital-certificates.png)
 
@@ -133,9 +133,9 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
 ### <a name="set-up-the-rcs-integration-with-the-electronic-invoicing-add-on-server"></a>Skonfiguruj integrację RCS z serwerem dodatkowym Faktury elektroniczne
 
-1. W module **Funkcje globalizacji** , w obszarze roboczym **Ustawienia powiązane** wybierz łącze **Parametry raportowania elektronicznego**.
+1. W module **Funkcje globalizacji**, w obszarze roboczym **Ustawienia powiązane** wybierz łącze **Parametry raportowania elektronicznego**.
 2. Wybierz opcję **Kliknij tutaj, aby połączyć się z Lifecycle Service**. Jeśli nie chcesz łączyć się z usługi LCS, wybierz przycisk **Anuluj**.
-3. Na karcie **Usługi fakturowania elektronicznego** , w polu **Identyfikator URI punktu końcowego usługi** wprowadź wartość zgodnie z dostępnymi regionami: `https://businessdocumentsubmission.us.operations365.dynamics.com/`lub `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
+3. Na karcie **Usługi fakturowania elektronicznego**, w polu **Identyfikator URI punktu końcowego usługi** wprowadź wartość zgodnie z dostępnymi regionami: `https://businessdocumentsubmission.us.operations365.dynamics.com/`lub `https://businessdocumentsubmission.eu.operations365.dynamics.com/`.
 4. W polu **Identyfikator aplikacji** sprawdź, czy zawiera on identyfikator **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ta wartość jest stałą wartością.
 5. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator konta subskrypcji LCS.
 
@@ -145,17 +145,17 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 
 Istnieje możliwość tworzenia różnych środowisk dla dodatku Faktur elektronicznych, takich jak środowisko Deweloperskie, Testowe czy Produkcyjne.
 
-1. Otwórz nowy obszar roboczy **Funkcje globalizacji** , a następnie w obszarze **Środowiska** wybierz kafelek **Fakturowanie elektroniczne**.
-2. Wybierz pozycję **Nowy** , aby utworzyć środowisko.
+1. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Wybierz pozycję **Nowy**, aby utworzyć środowisko.
 3. W polu **Konto tokenu sygnatury dostępu Współdzielonego magazynu** wprowadź nazwę wpisu tajnego zasobu magazynu kluczy skonfigurowanego w magazynie kluczy w RCS.
 
     ![Pole Konto tokenu sygnatury dostępu Współdzielonego magazynu](media/e-invoicing-services-get-started-enter-sas-token-secret.png)
 
-4. Na skróconej karcie **Użytkownicy** wybierz opcję **Nowy** , aby udzielić dostępu do użytkowników dla tego środowiska.
+4. Na skróconej karcie **Użytkownicy** wybierz opcję **Nowy**, aby udzielić dostępu do użytkowników dla tego środowiska.
 
     ![Dodawanie użytkowników usługi](media/e-invoicing-services-get-started-enter-service-users.png)
 
-5. W okienku akcji wybierz opcję **Publikuj** , aby opublikować środowisko na serwerze dodatku Faktury elektroniczne.
+5. W okienku akcji wybierz opcję **Publikuj**, aby opublikować środowisko na serwerze dodatku Faktury elektroniczne.
 
     ![Przycisk Publikuj](media/e-invoicing-services-get-started-publish-service-environment.png)
 
@@ -205,9 +205,9 @@ Funkcja integracji faktur elektronicznych jest włączana za pośrednictwem funk
 
 Aby umożliwić zbieranie i wysyłanie danych biznesowych do dodatku Faktury elektroniczne, należy zaimportować model danych ER i konfigurację modelu danych ER, które są powiązane z funkcją e-fakturowania specyficzną dla kraju / regionu, której chcesz użyć.
 
-1. W module **Powiązane odnośniki** , w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny** , zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+1. W module **Powiązane odnośniki**, w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny**, zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
 3. Wybierz **Repozytoria**.
-4. Wybierz opcję **Zasób globalny** , a następnie wybierz opcję **Otwórz**.
+4. Wybierz opcję **Zasób globalny**, a następnie wybierz opcję **Otwórz**.
 5. W oknie dialogowym **Połącz z Lifecycle Services** wybierz opcję **Kliknij tutaj, aby połączyć się z Lifecycle Service**.
 6. W zależności od kraju lub regionu, w którym chcesz korzystać z funkcji fakturowania elektronicznego, musisz zaimportować odpowiedni model danych, mapowanie modelu danych i formaty. Aby uzyskać informacje o konfiguracjach ER, które należy zaimportować, zobacz temat „Wprowadzenie do dodatku Faktury elektroniczne” dla danego kraju / regionu.
 7. Importowanie **Modelu kontekstu faktury dla odbiorcy**. Model ten zawiera dodatkowe parametry, które opisują między innymi środowisko w Finance, które jest używane dla dodatku Faktury elektroniczne podczas przesyłania danych biznesowych.
@@ -228,20 +228,20 @@ Aby włączyć funkcje e-fakturowania specyficzne dla kraju / regionu, tak aby d
 
 Jeśli przesłany dokument faktury wymaga aktualizacji po przesłaniu odpowiedzi do rządowych służb autoryzacyjnych, należy zaimportować specjalny model danych ER i konfiguracje, aby umożliwić aktualizację statusu dokumentu faktury lub dowolnego innego dodatkowego pola.
 
-1. W module **Powiązane odnośniki** , w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
+1. W module **Powiązane odnośniki**, w obszarze roboczym **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
 2. Wybierz **Repozytoria**.
-3. Wybierz opcję **Zasób globalny** , a następnie wybierz opcję **Otwórz**.
-4. Importuj **Model wiadomości odpowiedzi** , **Format importu wiadomości odpowiedzi** , **Mapowanie modelu komunikatów odpowiedzi do miejsca docelowego** i **Format importu zawartości pliku**.
+3. Wybierz opcję **Zasób globalny**, a następnie wybierz opcję **Otwórz**.
+4. Importuj **Model wiadomości odpowiedzi**, **Format importu wiadomości odpowiedzi**, **Mapowanie modelu komunikatów odpowiedzi do miejsca docelowego** i **Format importu zawartości pliku**.
 5. Przejdź do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**.
-6. Na karcie **Dokument elektroniczny** wybierz opcję **Dodaj** , aby wprowadzić nazwę tabeli powiązanej z danym dokumentem faktury specyficznym dla danego kraju/regionu. Aby uzyskać informacje o nazwach tabeli, które należy wybrać, zobacz temat „Wprowadzenie do dodatku Faktury elektroniczne” dla danego kraju / regionu.
-7. Wybierz **Typy odpowiedzi** , aby skonfigurować typy odpowiedzi. Aby uzyskać informacje o nazwach tabeli, które należy wybrać, zobacz temat „Wprowadzenie do dodatku Faktury elektroniczne” dla danego kraju / regionu.
+6. Na karcie **Dokument elektroniczny** wybierz opcję **Dodaj**, aby wprowadzić nazwę tabeli powiązanej z danym dokumentem faktury specyficznym dla danego kraju/regionu. Aby uzyskać informacje o nazwach tabeli, które należy wybrać, zobacz temat „Wprowadzenie do dodatku Faktury elektroniczne” dla danego kraju / regionu.
+7. Wybierz **Typy odpowiedzi**, aby skonfigurować typy odpowiedzi. Aby uzyskać informacje o nazwach tabeli, które należy wybrać, zobacz temat „Wprowadzenie do dodatku Faktury elektroniczne” dla danego kraju / regionu.
 
 ![Konfigurowanie typów odpowiedzi](media/e-invoicing-services-get-started-set-up-response-types.png)
 
 ## <a name="e-invoicing-feature-names-by-country"></a>Nazwy funkcji fakturowania elektronicznego według krajów 
 W poniższej tabeli opisano inne funkcje fakturowania elektronicznego dostępne do pobrania z globalnego repozytorium raportów elektronicznych w celu wygenerowania faktur elektronicznych.
 W RCS możesz pobrać funkcje e-fakturowania wymienione w tej tabeli, konfiguracje ER oraz dostępne konfiguracje funkcji e-fakturowania.
-W module Finanse można włączyć odpowiednie odwołania do funkcji na stronie **Parametry dokumentu elektronicznego** , aby wystawić faktury elektroniczne dla tych krajów. Aby uzyskać więcej informacji, zajrzyj do sekcji [Włącz funkcje fakturowania elektronicznego dla odpowiednich krajów/regionów](#region-specific) znajdującej się we wcześniejszej części tego tematu.
+W module Finanse można włączyć odpowiednie odwołania do funkcji na stronie **Parametry dokumentu elektronicznego**, aby wystawić faktury elektroniczne dla tych krajów. Aby uzyskać więcej informacji, zajrzyj do sekcji [Włącz funkcje fakturowania elektronicznego dla odpowiednich krajów/regionów](#region-specific) znajdującej się we wcześniejszej części tego tematu.
 
 | Nazwa funkcji                      | opis                                 | Konfiguracje ER                                                                                                  | Konfiguracje                                                                                                                                                         | Kraj/region  | Odwołanie do funkcji      |
 |-----------------------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|------------------------|
@@ -277,19 +277,19 @@ Dokumenty biznesowe można przesyłać ręcznie lub na podstawie wymagań harmon
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy zawsze w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.
-3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj** , aby otworzyć okno dialogowe **Zapytania** , w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
+3. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtruj**, aby otworzyć okno dialogowe **Zapytania**, w którym można utworzyć kwerendę w celu wybrania dokumentów do przesłania.
 
 ![Przesyłanie dokumentów elektronicznych, okno dialogowe](media/e-invoicing-services-get-started-submission-form.png)
 
 ### <a name="filter-query"></a>Kwerenda filtra
 
-1. W oknie dialogowym **Zapytanie** na karcie **Zakres** wprowadź kryteria filtrowania, używającpól **Tabela** , **Tabela pochodna** , **Pole** i **Kryteria**.
-2. Wybierz przycisk **Dodaj** , aby dodać dowolną liczbę dodatkowych kryteriów wymaganych do wybrania dokumentów biznesowych.
+1. W oknie dialogowym **Zapytanie** na karcie **Zakres** wprowadź kryteria filtrowania, używającpól **Tabela**, **Tabela pochodna**, **Pole** i **Kryteria**.
+2. Wybierz przycisk **Dodaj**, aby dodać dowolną liczbę dodatkowych kryteriów wymaganych do wybrania dokumentów biznesowych.
 
     ![Konfigurowanie kryteriów filtru przesyłania](media/e-invoicing-services-get-started-set-up-submission-filter-criteria.png)
 
-3. Kliknij przycisk **OK** , aby zamknąć okno dialogowe **Zapytania**.
-4. Wybierz **OK** , aby przesłać wybrane dokumenty biznesowe do dodatku Faktury elektroniczne.
+3. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Zapytania**.
+4. Wybierz **OK**, aby przesłać wybrane dokumenty biznesowe do dodatku Faktury elektroniczne.
 
     > [!NOTE]
     > Podczas pierwszej próby przesłania dokumentu za pośrednictwem usługi zostaniesz poproszony o potwierdzenie połączenia z dodatkiem Faktury elektroniczne. Wybierz **Kliknij tutaj, aby połaczyć się się z usługą Elektronicznego przesyłania dokumentów**.
@@ -334,7 +334,7 @@ Zamiast ręcznie przesyłać dokumenty, możesz zautomatyzować proces przesyła
 Wyniki wyświetlane w dzienniku przedłożeń zależą od konfiguracji funkcji fakturowania elektronicznego w RCS. Jednak niezależnie od konfiguracji, dziennik przesyłania zawsze ma trzy karty skrócone:
 
 - **Przetwarzanie akcji** – Ta skrócona karta przedstawia dziennik wykonywania działań skonfigurowanych w wersji funkcji skonfigurowanej w RCS. Kolumna **Stan** wskazuje, czy akcja została pomyślnie uruchomiona.
-- **Pliki akcji** – Ta skrócona karta przedstawia pliki pośrednie, które zostały wygenerowane podczas wykonywania działań. Możesz wybrać **Widok** , aby pobrać plik i wyświetlić jego zawartość.
+- **Pliki akcji** – Ta skrócona karta przedstawia pliki pośrednie, które zostały wygenerowane podczas wykonywania działań. Możesz wybrać **Widok**, aby pobrać plik i wyświetlić jego zawartość.
 - **Dziennik akcji przetwarzania** – Ta skrócona karta przedstawia wyniki komunikacji między dodatkiem Fakturowanie elektroniczne a docelową usługą internetową. Pokazuje także, co zostało zwrócone przez usługę sieci Web przetwarzania.
 
 ## <a name="related-topics"></a>Powiązane tematy

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a69e262c1dc731839e0bf347a0fb14983742dbe
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013187"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693732"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
@@ -33,7 +32,7 @@ Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie dany
 > [!NOTE]
 > Skróty klawiaturowe opisane w tym miejscu odnoszą się do amerykańskiego układu klawiatury. Klawisze w innych układach mogą nie odpowiadać dokładnie klawiszom na klawiaturze w układzie amerykańskim.
 
-Niektóre skróty na tej stronie są *zestawami klawiszy* , co oznacza, że wymagają one dwóch kolejnych zestawów kombinacji klawiszy (oddzielonych przecinkiem), które muszą zostać naciśnięte niezależnie w celu uruchomienia wymaganej akcji. Na przykład skrót „Alt + M, A” wymaga, aby użytkownik musi najpierw nacisną klawisze „Alt + M”, zwolnić klawisze, a następnie nacisnąć klawisz „A”. 
+Niektóre skróty na tej stronie są *zestawami klawiszy*, co oznacza, że wymagają one dwóch kolejnych zestawów kombinacji klawiszy (oddzielonych przecinkiem), które muszą zostać naciśnięte niezależnie w celu uruchomienia wymaganej akcji. Na przykład skrót „Alt + M, A” wymaga, aby użytkownik musi najpierw nacisną klawisze „Alt + M”, zwolnić klawisze, a następnie nacisnąć klawisz „A”. 
 
 ## <a name="finding-a-shortcut"></a>Znajdowanie skrótu
 

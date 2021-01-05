@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8f97d4f59765840e215710e666079df3d4ecb878
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 46b7a442470d1fe78ebc5c9d5a0c6e155c0d9918
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005786"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685256"
 ---
 # <a name="learning-power-bi-content"></a>Pakiet zawartości usługi Power BI Szkolenia
 
@@ -35,7 +34,7 @@ Raporty dostępne w pakiecie zawartości usługi Power BI **Szkolenia** mają wy
 | Raport                | Zawartość |
 |-----------------------|----------|
 | Przegląd szkoleń     | Podsumowanie innych raportów |
-| Analiza kursu       | Rejestracje według lokalizacji, uczestnicy według stanu, kursy według typu dla każdej firmy oraz uczestnictwo w kursach według zadań |
+| Analiza kursu       | Rejestracje według lokalizacji, uczestnicy według stanu, kursy według typu dla każdej firmy oraz uczestnictwo w kursach według zadań |
 | Analiza rejestracji | Lista rejestracyjna |
 | Typy kursów          | Typy kursów wg kwalifikacji |
 | Analiza instruktorów   | Stosunek liczby kursów do liczby instruktorów, liczba instruktorów, kursy według instruktorów, kursy na jednego instruktora oraz terminarze kursów według instruktorów |

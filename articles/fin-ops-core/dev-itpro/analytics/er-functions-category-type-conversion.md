@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfa5deb3b2c00565759e4334a002bf112f888ac
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2917656"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686082"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Lista funkcji modułu ER w kategorii konwersji typu
 

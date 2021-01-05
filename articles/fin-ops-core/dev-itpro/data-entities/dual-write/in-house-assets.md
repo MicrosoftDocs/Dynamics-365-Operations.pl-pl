@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 0e87a3d645c19fab3bb0560ba5114d193e2d0be7
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997177"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684012"
 ---
 # <a name="in-house-assets-for-servicing"></a>Zasoby wewnętrzne do obsługi
 
@@ -37,7 +37,7 @@ Aby uzyskać więcej informacji, zajrzyj do [integracji Dynamics 365 Field Servi
 
 ## <a name="templates"></a>Szablony
 
-Moduł wewnętrzne składniki majątku zawiera mapy jednostek podstawowych, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
+Moduł Wewnętrzne składniki majątku zawiera podstawowe mapowania tabel, które działają wspólnie podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
 | Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
 |-----------------------------|-----------------------------------|-------------|

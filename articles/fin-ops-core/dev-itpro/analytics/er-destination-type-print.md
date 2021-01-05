@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 148da191ce4ea99c237895c40ec007a1aa0cd537
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150799"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679613"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe drukarka
 
@@ -65,7 +64,7 @@ Lokalizacja docelowa **Drukarka** jest zaimplementowana tylko dla wdrożeń w ch
 > [!NOTE]
 > Opcja **Konwertuj na plik PDF** nie musi być włączona podczas konfigurowania miejsca docelowego **Drukarka**. Konwersja plików PDF na potrzeby drukowania nastąpi nawet wtedy, gdy opcja jest wyłączona.
 
-Aby podczas drukowania dokumentu wychodzącego w formacie programu Excel używana była określona [orientacja strony](electronic-reporting-destinations.md#SelectPdfPageOrientation), należy włączyć opcję **Konwertuj na PDF**. Ustawienie opcji **Konwertuj na PDF** na wartość **Tak**powoduje, że staje się dostępne pole **Orientacja strony**. W polu **Orientacja strony** możesz wybrać orientację strony.
+Aby podczas drukowania dokumentu wychodzącego w formacie programu Excel używana była określona [orientacja strony](electronic-reporting-destinations.md#SelectPdfPageOrientation), należy włączyć opcję **Konwertuj na PDF**. Ustawienie opcji **Konwertuj na PDF** na wartość **Tak** powoduje, że staje się dostępne pole **Orientacja strony**. W polu **Orientacja strony** możesz wybrać orientację strony.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

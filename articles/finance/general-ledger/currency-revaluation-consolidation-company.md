@@ -19,25 +19,25 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 33db12388c969b8dadb38bfacf4d9df333b78bd4
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014990"
+ms.locfileid: "4446967"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Przeszacowanie waluty w konsolidowanej firmie
 
 [!include [banner](../includes/banner.md)]
 
-Podczas konsolidowania danych z jednej waluty rozliczeniowej do innej należy wykonać przeszacowanie waluty, jeśli nastąpiła zmiana kursów wymiany, tak aby salda kont zostały poprawnie przeszacowane. Podczas pierwszej konsolidacji danych użyj karty **przeliczania waluty** , aby wybrać początkowe kursy wymiany do przeszacowania podczas procesu konsolidacji. Po wprowadzeniu nowego kursu wymiany (na przykład w kolejnym miesiącu) można przeszacować salda konta. Niezrealizowane dodatnie różnice kursowe zostaną odpowiednio zaktualizowane na podstawie nowego kursu wymiany i daty. Poniższy przykład ilustruje zapisy księgowe utworzone podczas tego procesu.
+Podczas konsolidowania danych z jednej waluty rozliczeniowej do innej należy wykonać przeszacowanie waluty, jeśli nastąpiła zmiana kursów wymiany, tak aby salda kont zostały poprawnie przeszacowane. Podczas pierwszej konsolidacji danych użyj karty **przeliczania waluty**, aby wybrać początkowe kursy wymiany do przeszacowania podczas procesu konsolidacji. Po wprowadzeniu nowego kursu wymiany (na przykład w kolejnym miesiącu) można przeszacować salda konta. Niezrealizowane dodatnie różnice kursowe zostaną odpowiednio zaktualizowane na podstawie nowego kursu wymiany i daty. Poniższy przykład ilustruje zapisy księgowe utworzone podczas tego procesu.
 
 ## <a name="company-setup"></a>Konfiguracja firmy
 -   **Źródło/ firma (USMF)** — jako waluta raportowania i księgowania używane są dolary amerykańskie (USD).
 -   **Konsolidowana firma (CON)** — jako waluta raportowania i księgowania używane jest euro (EUR).
     -   **Zrealizowana dodatnia różnica kursowa** — konto księgowe 801500
     -   **Zrealizowana ujemna różnica kursowa** — konto księgowe 801600
-    -   **Niezrealizowana dodatnia różnica kursowa** — konto księgowe 801600
-    -   **Niezrealizowana ujemna różnica kursowa** — konto księgowe 801400
+    -   **Niezrealizowana dodatnia różnica kursowa**— konto księgowe 801600
+    -   **Niezrealizowana ujemna różnica kursowa**— konto księgowe 801400
 
 ## <a name="original-transactions"></a>Oryginalne transakcje
 ### <a name="cash-receipt-transactions-in-usmf"></a>Transakcje za pomocą blankietów kasowych w USMF

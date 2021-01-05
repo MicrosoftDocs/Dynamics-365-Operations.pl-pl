@@ -1,6 +1,6 @@
 ---
 title: Zintegrowana księga
-description: W tym temacie opisano integrację danych księgi między aplikacją Finance and Operations i innymi aplikacjami Dynamics 365 przy użyciu usługi Common Data Service.
+description: W tym temacie opisano integrację danych księgi między aplikacją Finance and Operations i innymi aplikacjami Dynamics 365 przy użyciu usługi Dataverse.
 author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -18,16 +18,18 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7f5435a97776b817a4b99887cbab8283de25b692
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: f794d8306a3a752d811d7d84c0ed5f739f423cad
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014865"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681649"
 ---
 # <a name="integrated-ledger"></a>Zintegrowana księga
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -35,7 +37,7 @@ W aplikacji biznesowej dane księgi określają podstawowe ustawienia dotyczące
 
 ## <a name="templates"></a>Szablony
 
-Dane księgi zawierają kolekcję mapy podstawowej finansowej encji działa razem podczas interakcji, jak pokazano w poniższej tabeli.
+Dane księgi zawierają kolekcję podstawowych mapowań tabel finansowych, które działają razem podczas interakcji z danymi, jak pokazano w poniższej tabeli.
 
 Aplikacje Finance and Operations      | Aplikacja oparta na modelu w systemie Dynamics 365 | opis
 ---------------------------------|----------------------------------|------------

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 25991
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff4e16a2e07002043331dcc3b2b04cb8288004b4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b68182ff7da07f350e2eacaf569089e0fdf44a8d
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179534"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4695068"
 ---
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
@@ -37,7 +36,7 @@ Aby użyć tej funkcji, kliknij ikonę **wyszukiwania**, aby wyświetlić pole *
 > [!NOTE]
 > **Pole wyszukiwania** ułatwia znajdowanie i przechodzenie do stron. Nie pomaga w wyszukiwaniu konkretnych danych ani akcji.
 
-[![search-box](media/navigation-search.png "Pole wyszukiwania")
+[![pole wyszukiwania](media/navigation-search.png "Pole wyszukiwania")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Szybkie przechodzenie do określonej strony
 

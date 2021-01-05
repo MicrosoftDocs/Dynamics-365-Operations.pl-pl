@@ -3,24 +3,23 @@ title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278905"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684067"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -130,7 +129,7 @@ Zadanie można jednocześnie zabezpieczyć według ról, użytkowników i firm.
 Zadanie można uruchomić jeden raz, klikając przycisk **Importuj** lub **Eksportuj** po zdefiniowaniu zadania. Aby skonfigurować zadanie cykliczne, wybierz opcję **Utwórz cykliczne zadanie danych**.
 
 > [!NOTE]
-> Zadania importu i eksportu mogą być włączane asynchronicznie za pomocą przycisku **importuj** lub **Eksportuj**. Przesyłanie asynchroniczne używa struktury asynchronicznej, co różni się od struktury przetwarzania wsadowego. Jednak, podobnie jak struktura przetwarzania wsadowego, struktura asynchroniczna może również napotkać ograniczenia i w związku z tym zadanie może nie zostać natychmiast wykonane. Zadania można również uruchamiać synchronicznie, wybierając **Importuj teraz** lub **Eksportuj teraz**. Powoduje to natychmiastowe włączenie zadania i jest przydatne, jeśli z powodu ograniczeń nie można uruchomić zadania wsadowego lub asynchronicznego. Zadania mogą być również wykonywane w partiach po wybraniu opcji **Uruchom w partii**. Zasoby przetwarzania wsadowego podlegają ograniczeniom, więc zadanie wsadowe może nie rozpocząć się natychmiast. Opcja asynchroniczna jest przydatna, gdy użytkownik kontaktuje się bezpośrednio z interfejsem użytkownika i nie jest zaawansowany na tyle, żeby znać tworzenie harmonogramów zadań wsadowych. Używanie zadania wsadowego jest rozwiązaniem alternatywnym, jeżeli trzeba wyeksportować lub zaimportować duże ilości danych. Zadania wsadowe można zaplanować pod kątem uruchomienia w grupie określonej partii, co daje większą kontrolę z perspektywy równoważenia obciążenia. Jeśli występuje problem z przetwarzaniem asynchronicznym i wsadowym z powodu dużego zużycia zasobów systemu, można rozwiązać ten problem, używając synchronicznych wersji eksportu/importu. Opcja synchroniczna rozpocznie się natychmiast i zablokuje interfejsu użytkownika, ponieważ jest on wykonywany synchronicznie. Musi pozostać otwarte okno przeglądarki, gdy synchroniczna operacja jest w toku.
+> Zadania importu i eksportu mogą być włączane za pomocą przycisku **importuj** lub **Eksportuj**. Spowoduje to zaplanowanie uruchomienia zadania wsadowego tylko raz. Zadanie może nie zostać wykonane natychmiast, jeśli usługa wsadowa jest ograniczana z powodu ładunku w usłudze przetwarzania wsadowego. Zadania można również uruchamiać synchronicznie, wybierając **Importuj teraz** lub **Eksportuj teraz**. Powoduje to natychmiastowe włączenie zadania i jest przydatne, jeśli z powodu ograniczeń nie można uruchomić zadania wsadowego. Zadania mogą być również zaplanowane do wykonania w późniejszym czasie. Można to zrobić, wybierając opcję **Uruchom w partii**. Zasoby przetwarzania wsadowego podlegają ograniczeniom, więc zadanie wsadowe może nie rozpocząć się natychmiast. Użycie przetwarzania wsadowego jest zalecaną opcją, ponieważ umożliwia także tworzenie dużych ilości danych, które wymagają zaimportowania lub wyeksportowania. Zadania wsadowe można zaplanować pod kątem uruchomienia w grupie określonej partii, co daje większą kontrolę z perspektywy równoważenia obciążenia.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Sprawdzanie, czy zadanie zostało uruchomione zgodnie z oczekiwaniami
 Dostępna jest historia zadań umożliwiająca rozwiązywanie problemów i badanie zadań importu i eksportu. Historyczne uruchomienia zadań są zorganizowane według zakresów czasu.
@@ -195,7 +194,7 @@ Funkcja oczyszczania historii zadań w zarządzaniu danymi musi być używana do
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Funkcja musi być włączona w module zarządzanie funkcjami, a następnie można uzyskać do niej dostęp z poziomu **Zarządzanie danymi \> Oczyszczanie historii zadań**.
+Funkcja **Czyszczenie historii wykonania** musi być włączona w module zarządzanie funkcjami, a następnie można uzyskać do niej dostęp z poziomu **Zarządzanie danymi \> Oczyszczanie historii zadań**.
 
 ### <a name="scheduling-parameters"></a>Parametry planowania
 
@@ -211,3 +210,36 @@ Podczas planowania procesu oczyszczania, należy określić następujące parame
 
 > [!NOTE]
 > Jeśli rekordy w tabelach pośrednich nie zostaną wyczyszczone w całości, upewnij się, że zadanie oczyszczania zaplanowano do uruchomienia w cyklu. Jak to wyjaśniono powyżej, w każdym oczyszczeniu wykonania zadanie jest oczyszczane tylko wtedy, gdy w podanych godzinach maksymalnych będzie istnieć tylko wiele identyfikatorów wykonania. Aby kontynuować oczyszczanie pozostałych rekordów przemieszczania, należy zaplanować okresowe wykonywanie zadania.
+
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Czyszczenie i archiwizowanie historii zadań (dostępne w wersji zapoznawczej w aktualizacji platformy 39 lub wersji 10.0.15)
+Funkcja oczyszczania i archiwizacji historii zadań zastępuje poprzednie wersje funkcji oczyszczania. Ta sekcja wyjaśnia te nowe możliwości.
+
+Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finance and Operations automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania.
+
+> [!NOTE]
+> Ponieważ ta funkcja znajduje się w wersji zapoznawczej, zadanie wsadowe w systemie nie usunie historii wykonania, dopóki nie zostanie ono włączone za pośrednictwem lotu DMFEnableExecutionHistoryCleanupSystemJob. Gdy ta funkcja zostanie ogólnie udostępniona w przyszłym wydaniu, ten lot nie będzie wymagany, a zadanie wsadowe w systemie rozpocznie czyszczenie i archiwizowanie po przygotowaniu systemu na podstawie zdefiniowanego powyżej harmonogramu. 
+
+> [!NOTE]
+> W przyszłym wydaniu poprzednie wersje funkcji oczyszczania zostaną usunięte z aplikacji Finance and Operations.
+
+Druga zmiana w procesie oczyszczania to archiwizacja oczyszczonej historii wykonania. Zadanie oczyszczania spowoduje zarchiwizowanie usuniętych rekordów w Blob Storage, którego usługa DIXF używa do regularnych integracji. Zarchiwizowany plik będzie w formacie pakietu DIXF i będzie dostępny przez 7 dni w obiekcie blob, w trakcie których można go będzie pobrać. Domyślną trwałość 7 dni zarchiwizowanego pliku można zmienić na maksymalnie 90 dni w parametrach.
+
+### <a name="changing-the-default-settings"></a>Zmienianie domyślnych ustawień
+Ta funkcja jest obecnie w wersji zapoznawczej i musi być jawnie włączona przez włączenie lotu DMFEnableExecutionHistoryCleanupSystemJob. Funkcja oczyszczania przemieszczania musi również być włączona w zarządzaniu funkcjami.
+
+Aby zmienić domyślne ustawienie trwałości zarchiwizowanego pliku, przejdź do obszaru roboczego zarządzania danymi i wybierz opcję **Czyszczenie historii zadań**. Należy skonfigurować **Dni przechowywania pakietu w obiekcie blob** jako wartość z przedziału od 7 do 90 (włącznie). Będzie to miało wpływ na archiwa utworzone po wykonaniu tej zmiany.
+
+### <a name="downloading-the-archived-package"></a>Pobieranie zarchiwizowanego pakietu
+Ta funkcja jest obecnie w wersji zapoznawczej i musi być jawnie włączona przez włączenie lotu DMFEnableExecutionHistoryCleanupSystemJob. Funkcja oczyszczania przemieszczania musi również być włączona w zarządzaniu funkcjami.
+
+Aby pobrać zarchiwizowaną historię wykonania, przejdź do obszaru roboczego zarządzania danymi i wybierz opcję **Czyszczenie historii zadań**. Wybierz **Historia kopii zapasowej pakietu**, aby otworzyć formularz Historia. W tym formularzu jest wyświetlana lista wszystkich zarchiwizowanych pakietów. Archiwum można wybrać i pobrać, wybierając **Pobierz pakiet**. Pobrany pakiet jest w formacie pakietu DIXF i zawiera następujące pliki:
+
+-   Plik tabeli przemieszczania jednostki
+-   DMFDEFINITIONGROUPEXECUTION
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+-   DMFEXECUTION
+-   DMFSTAGINGEXECUTIONERRORS
+-   DMFSTAGINGLOG
+-   DMFSTAGINGLOGDETAILS
+-   DMFSTAGINGVALIDATIONLOG
+

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
-ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
+ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564174"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682681"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
@@ -165,9 +164,9 @@ Aby uniemożliwić wybranym użytkownikom i grupom dostęp do jednostki raportow
 3. W oknie dialogowym **Jednostka zabezpieczeń** zaznacz nazwę i kliknij przycisk **Usuń**.
 4. Kliknij przycisk **OK**
 
-### <a name="link-toreports"></a>Łącza do raportów
+### <a name="link-to-reports"></a>Łącza do raportów
 
-Po utworzeniu kolumny  **raportu** w definicji wiersza i wskazaniu raportu, który ma się znaleźć w raporcie, należy zaktualizować drzewo raportowania o połączoną kolumnę oraz informacje o raporcie. Raport można zaimportować do dowolnej jednostki w drzewie raportowania.
+Po utworzeniu kolumny **raportu** w definicji wiersza i wskazaniu raportu, który ma się znaleźć w raporcie, należy zaktualizować drzewo raportowania o połączoną kolumnę oraz informacje o raporcie. Raport można zaimportować do dowolnej jednostki w drzewie raportowania.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identyfikowanie raportu w drzewie raportowania
 

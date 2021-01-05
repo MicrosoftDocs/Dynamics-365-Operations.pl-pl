@@ -18,11 +18,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0715d3e4e4cb167c55d9c7d98cdf599187bf3b43
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179365"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446914"
 ---
 # <a name="financial-dimensions"></a>Wymiary finansowe
 

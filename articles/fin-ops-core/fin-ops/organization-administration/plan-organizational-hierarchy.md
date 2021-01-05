@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Core, Operations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5df0c7a84a2c24bdbcd39837119bc184c1f3fcf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179494"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694696"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
@@ -45,7 +44,7 @@ Podczas planowania hierarchii należy również wziąć pod uwagę relację mię
 
 Musi istnieć co najmniej jedna firma, która będzie reprezentować przedsiębiorstwo. Firma może zawierać umowy i wymaga się od niej przygotowywania zestawień finansowych na temat wydajności.
 
-Firmy mogą służyć dla transakcji biznesowych lub konsolidacji. Oznacza to, że firma zdefiniowana w programie Finance and Operations nie musi koniecznie reprezentować rzeczywistej firmy. Na przykład firma, która uczestniczy w transakcjach, może być właścicielem oddziałów firmy. W tym scenariuszu firma jest wymagana dla transakcji, a wirtualna firma jest wymagana do konsolidacji wyników i sald oddziałów firmy.
+Firmy mogą służyć dla transakcji biznesowych lub konsolidacji. Oznacza to, że firma w Finance and Operations nie musi koniecznie reprezentować rzeczywistej firmy. Na przykład firma, która uczestniczy w transakcjach, może być właścicielem oddziałów firmy. W tym scenariuszu firma jest wymagana dla transakcji, a wirtualna firma jest wymagana do konsolidacji wyników i sald oddziałów firmy.
 
 Wewnętrzne organizacje biznesowe, takie jak biura regionalne, mogą być reprezentowane jako dodatkowe firmy lub jednostki operacyjne głównej firmy. Jednostka operacyjna nie musi być prawnie zdefiniowaną organizacją. Jednostki operacyjne służą do kontrolowania zasobów ekonomicznych i procesów operacyjnych w firmie. Na przykład działy i centra kosztów są jednostkami operacyjnymi.
 
@@ -174,7 +173,7 @@ Dla krajów/regionów, które są obsługiwane, można utworzyć większość ra
 
 #### <a name="if-the-organization-is-modeled-as-an-operating-unit"></a>Jeśli organizacja jest modelowana jako jednostka operacyjna
 
-Raporty ustawowe muszą zostać utworzone przy użyciu innej aplikacji. Należy upewnić się, że dane są przechwytywane w aplikacjach Finance and Operations na potrzeby obsługi wymagań dotyczących każdej jednostki operacyjnej, które różnią się od wymagań centrali.
+Raporty ustawowe muszą zostać utworzone przy użyciu innej aplikacji. Należy upewnić się, że dane są przechwytywane w Finance and Operations do obsługi wymagań dotyczących każdej jednostki operacyjnej, które różnią się od wymagań centrali.
 
 ### <a name="currency"></a>Waluta
 

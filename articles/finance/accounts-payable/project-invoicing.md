@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976676"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446751"
 ---
 # <a name="project-invoicing"></a>Fakturowanie projektu
 

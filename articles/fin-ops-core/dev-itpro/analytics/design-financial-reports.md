@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReportingSetup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 97895081293d9ee5a82a718e0644bebdaa0f2777
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002550"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4686252"
 ---
 # <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
@@ -164,7 +163,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 14. Zamknij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 15. Zamknij **Projektanta raportów**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
+## <a name="exercise-5-create-a-side-by-side-departmental-report"></a>Ćwiczenie 5: Tworzenie raportu wg działów obok siebie
 W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu wyświetlanym obok siebie. Użyjemy istniejącej definicji wiersza, ale utworzymy nową definicję raportu i nową definicję kolumny, które będą korzystały z filtrów wymiarów. Zaczniemy od listy Raporty finansowe.
 
 1. Przejdź do opcji **Raporty finansowe** w sekcji Zapytania i raporty w księdze głównej.
@@ -193,8 +192,8 @@ W tym ćwiczeniu utworzymy nowy raport. Raport jest rachunkiem wyników działu 
 18. **Zapisz** zmiany i **wygeneruj**. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-[Raporty finansowe](../../../finance/general-ledger/financial-reporting-getting-started.md)
+[Raportowanie finansowe](../../../finance/general-ledger/financial-reporting-getting-started.md)
 
 [Wyświetlanie raportów finansowych](../../../finance/general-ledger/view-financial-reports.md)
 
-[Blog o sprawozdawczości finansowej w systemie Dynamics](https://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Blog rozwiązania Dynamics 365 Finance](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)

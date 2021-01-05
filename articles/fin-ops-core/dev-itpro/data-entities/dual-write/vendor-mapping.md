@@ -1,6 +1,6 @@
 ---
 title: Zintegrowane dane główne dostawcy
-description: W tym temacie opisano integrację danych dostawców między aplikacami Finance and Operations i Common Data Service.
+description: W tym temacie opisano integrację danych dostawców między aplikacami Finance and Operations i Dataverse.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 07/15/2019
@@ -18,30 +18,32 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5c4cc92fd7809f4016d8421c98f41a85fcfedc7b
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 636bc57b5ef09d605744f4857fd5fbefceac4875
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997655"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685492"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
-Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach opartych na modelach w Dynamics 365. Można jednak przeciążyć jednostkę **Konta/kontaktu** , aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza jawną koncepcję dostawcy w aplikacjach opartych na modelach w Dynamics 365. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w jednostce **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
+
+Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach opartych na modelach w Dynamics 365. Można jednak przeciążyć jednostkę **Konta/kontaktu**, aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza jawną koncepcję dostawcy w aplikacjach opartych na modelach w Dynamics 365. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w jednostce **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
 
 W obu przypadkach dane dostawcy są zintegrowane między Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service i portalami Power Apps. W Supply Chain Management dane są dostępne dla przepływów pracy, takich jak zapotrzebowania zakupu i zamówienia zakupu.
 
 ## <a name="vendor-data-flow"></a>Przepływ danych dostawcy
 
-Jeśli nie chcesz przechowywać danych dostawcy w jednostce **Konto/kontakt** w Common Data Service, możesz użyć nowego projektu dostawcy.
+Jeśli nie chcesz przechowywać danych dostawcy w jednostce **Konto/kontakt** w Dataverse, możesz użyć nowego projektu dostawcy.
 
 ![Przepływ danych dostawcy](media/dual-write-vendor-data-flow.png)
 
-Jeśli chcesz dalej przechowywać dane dostawcy w jednostce **Konto/kontakt** , możesz użyć rozszerzonego projektu dostawcy. Aby skorzystać z rozszerzonego projektu dostawcy, należy skonfigurować przepływy pracy dostawcy w pakiecie rozwiązania podwójnego zapisywania. Aby uzyskać więcej informacji, zajrzyj do [Przełączanie się między projektami dostawcy](vendor-switch.md).
+Jeśli chcesz dalej przechowywać dane dostawcy w jednostce **Konto/kontakt**, możesz użyć rozszerzonego projektu dostawcy. Aby skorzystać z rozszerzonego projektu dostawcy, należy skonfigurować przepływy pracy dostawcy w pakiecie rozwiązania podwójnego zapisywania. Aby uzyskać więcej informacji, zajrzyj do [Przełączanie się między projektami dostawcy](vendor-switch.md).
 
 ![Rozszerzony przepływ danych dostawcy](media/dual-write-vendor-detail.jpg)
 
@@ -50,12 +52,12 @@ Jeśli chcesz dalej przechowywać dane dostawcy w jednostce **Konto/kontakt** , 
 
 ## <a name="templates"></a>Szablony
 
-Dane dostawcy obejmują wszystkie informacje o dostawcy, takie jak grupa dostawców, adresy, dane kontaktowe, profil płatności oraz profil faktury. Kolekcja mapy encji działa razem podczas interakcji z danymi dostawcy, jak pokazano w poniższej tabeli.
+Dane dostawcy obejmują wszystkie informacje o dostawcy, takie jak grupa dostawców, adresy, dane kontaktowe, profil płatności oraz profil faktury. Kolekcja mapowań tabel działa razem podczas interakcji z danymi dostawcy, jak pokazano w poniższej tabeli.
 
 Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365     | Opis
 ----------------------------|-----------------------------|------------
 Dostawca V2                   | Konto                     | Firmy, które używają encji Konto do przechowywania informacji o dostawcy, mogą nadal używać go w taki sam sposób. Mogą również korzystać z funkcji jawnego dostawcy dostępnej w wyniku integracji z aplikacjami Finance and Operations.
-Dostawca V2                   | Msdyn\_vendors              | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Common Data Service wraz z integracją z aplikacjami Finance and Operations. 
+Dostawca V2                   | Msdyn\_vendors              | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finance and Operations. 
 Grupy dostawców               | msdyn\_vendorgroups         | Ten szablon powoduje zsynchronizowanie informacji o grupie dostawców.
 Metoda płatności dostawcy       | msdyn\_vendorpaymentmethods | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności.
 CDS Contacts wer. 2             | kontakty                    | Szablon [kontakty](customer-mapping.md#cds-contacts-v2-to-contacts) synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.

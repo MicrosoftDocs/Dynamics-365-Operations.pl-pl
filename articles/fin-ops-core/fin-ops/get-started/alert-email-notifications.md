@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a0cf8037ba151bb4e68da1cf4609fb2e4806303a
-ms.sourcegitcommit: b952b9f9066a5317259b8344db4c5d99eab4bf3c
+ms.openlocfilehash: bf485b407d56b21621617682bab3492925f7f9a4
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "3165782"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693829"
 ---
 # <a name="client-alert-notifications-by-email"></a>Powiadomienia o alertach klienta wysyłane pocztą e-mail
 

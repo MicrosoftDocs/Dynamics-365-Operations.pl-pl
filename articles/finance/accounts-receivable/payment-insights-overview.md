@@ -1,6 +1,6 @@
 ---
 title: Wgląd w płatności od odbiorców (wersja zapoznawcza)
-description: W tym temacie opisano możliwości wglądu do płatności, które ułatwiają zrozumienie typowych praktyk płatności poszczególnych odbiorców i umożliwiają identyfikowanie okoliczności, które uzasadniają inicjowanie procesów zbierania danych wcześniej niż w przypadku wykonania innych czynności.
+description: W tym temacie opisano funkcjonalność wglądu w płatności, która pomaga zrozumieć typowe praktyki płatnicze konkretnych odbiorców. Funkcja może również pomóc w identyfikowaniu okoliczności, które uzasadniają rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 11/06/2019
@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f9f1e4ae4270380c88069723e768fd44ecf8c113
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: f151942555ac503338f0fd44aa8779e3c2970fb1
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2774026"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644640"
 ---
 # <a name="customer-payment-insights-preview"></a>Wgląd w płatności od odbiorców (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie opisano możliwości wglądu do płatności, które ułatwiają zrozumienie typowych praktyk płatności poszczególnych odbiorców i umożliwiają identyfikowanie okoliczności, które uzasadniają inicjowanie procesów zbierania danych wcześniej niż w przypadku wykonania innych czynności. 
+W tym temacie opisano funkcjonalność wglądu w płatności, która pomaga zrozumieć typowe praktyki płatnicze konkretnych odbiorców. Funkcja może również pomóc w identyfikowaniu okoliczności, które uzasadniają rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja. 
 
 ## <a name="overview"></a>Omówienie
 
-Organizacje często mają problemy z przewidzeniem, kiedy odbiorcy zapłacą faktury. Ten brakujący wgląd w nieścisły wpływ na mniej dokładne prognozy przepływów pieniężnych, procesy windykacji, które zaczynają zbyt późno, oraz zamówienia, które są zwalniane do odbiorców, którzy mogą domyślnie księgować. Narzędzie Wgląd w płatności od odbiorców (wersja zapoznawcza) organizacji może pomóc przewidzieć, kiedy faktura od odbiorcy zostanie zapłacona, oraz pomaga organizacjom tworzyć strategie kolekcji zwiększające prawdopodobieństwo otrzymania zapłaty w terminie. 
+Często trudno przewidzieć, kiedy odbiorcy zapłacą faktury. Ten brakujący wgląd w nieścisły wpływ na mniej dokładne prognozy przepływów pieniężnych, procesy windykacji, które zaczynają zbyt późno, oraz zamówienia, które są zwalniane do odbiorców, którzy mogą domyślnie księgować. Moduł Wgląd w płatności od odbiorców (wersja zapoznawcza) pomaga organizacjom przewidzieć, kiedy zostanie zapłata faktura wystawiona odbiorcy. Te informacje mogą pomóc organizacjom w tworzeniu strategii windykacji, które zwiększają prawdopodobieństwo otrzymania zapłaty w terminie. 
 
 ## <a name="predictions"></a>Prognozy
 
@@ -42,13 +42,13 @@ Przewidywania płatności umożliwiają organizacjom ulepszanie procesów biznes
 
 Za pomocą modelu nauki maszyn, który wykorzystuje historyczne faktury, płatności i dane odbiorców, szczegółowe informacje o płatnościach (Podgląd) — dokładniejsze przewidywania w przypadku, gdy odbiorca zapłaci zaległą fakturę.
 
-Dla każdej otwartej faktury narzędzie Wgląd w płatności od odbiorców (wersja zapoznawcza) przewiduje trzy prawdopodobieństwa zapłaty:
+Dla każdej otwartej faktury narzędzie Wgląd w płatności od odbiorców (wersja zapoznawcza) może przewidywać trzy prawdopodobieństwa zapłaty:
 
 -   Prawdopodobieństwo dokonania płatności w czasie 
 -   Prawdopodobieństwo dokonania płatności opóźnionej
 -   Prawdopodobieństwo dokonania płatności bardzo opóźnionej
 
-Aby ułatwić organizacjom zrozumienie łącznej kwoty płatności, które mogą oczekiwać od odbiorcy w jednym z trzech przedziałów, na czas, późny i bardzo późno, informacje o płatnościach (wersja zapoznawcza) umożliwiają także Zagregowany widok oczekiwanych płatności.
+Aby ułatwić organizacjom zrozumienie łącznej kwoty płatności, której mogą oczekiwać od odbiorcy w jednym z trzech przedziałów (Na czas, Opóźnione i Bardzo opóźnione), moduł Wgląd w płatności od odbiorców (wersja zapoznawcza) przekazuje także zagregowany widok oczekiwanych płatności.
 
 [![Zagregowany widok prognoz płatności](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
@@ -62,7 +62,7 @@ Dzięki usłudze wgląd do płatności odbiorcy (wersja zapoznawcza) organizacje
 
 ## <a name="methodology"></a>Metodologia
 
-Opracowywanie i wdrażanie rozwiązania AI jest trudne. Pobiera zespół danych naukowców, ekspertów i inżynierów, którzy pracują przez dłuższy czas do formułowania, opracowywania, wdrażania i obsługiwania dostępnego rozwiązania AI. Ułatwia to wdrażanie i korzystanie z rozwiązań AI w Finance. Firma Microsoft udostępnia wstępnie używane rozwiązania AI w Finance, które są tworzone na podstawie modułu Microsoft AI Builder. Użytkownik końcowy z jednym kliknięciem przycisku może wdrożyć rozwiązanie AI i zacząć korzystanie z zalet inteligentnych prognoz. Jeśli organizacja nie jest zadowolony z dokładnością prognoz, użytkownik zaawansowany za pomocą jednego kliknięcia może wejść w środowisko rozszerzenia AI Builder, a następnie zaznaczyć lub usunąć zaznaczenie pól używanych do generowania prognoz. Jak są gotowe mogą one pociągać i publikować zmiany, a nowy model przeszkolony jest automatycznie pobierany na potrzeby prognoz w Finance.
+Opracowywanie i wdrażanie rozwiązania AI jest trudne. Potrzeba zespołu specjalistów ds. nauki o danych, ekspertów merytorycznych (SME) i inżynierów, którzy wkładają mnóstwo pracy w sformułowanie, opracowanie, wdrażanie i bieżące utrzymywanie użytecznego rozwiązania AI. Ułatwia to wdrażanie i korzystanie z rozwiązań AI w Finance. Firma Microsoft udostępnia wstępnie używane rozwiązania AI w Finance, które są tworzone na podstawie modułu Microsoft AI Builder. Użytkownik końcowy z jednym kliknięciem przycisku może wdrożyć rozwiązanie AI i zacząć korzystanie z zalet inteligentnych prognoz. Jeśli organizacja nie jest zadowolony z dokładnością prognoz, użytkownik zaawansowany za pomocą jednego kliknięcia może wejść w środowisko rozszerzenia AI Builder, a następnie zaznaczyć lub usunąć zaznaczenie pól używanych do generowania prognoz. Jak są gotowe mogą one pociągać i publikować zmiany, a nowy model przeszkolony jest automatycznie pobierany na potrzeby prognoz w Finance.
 
 ## <a name="how-to-get-customer-payment-insights-preview"></a>Jak otrzymać aplikację Wgląd w płatności od odbiorców (wersja zapoznawcza)
 

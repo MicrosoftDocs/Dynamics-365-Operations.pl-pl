@@ -18,11 +18,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: d527f5417ddee57a54b0d65b1de0b4c8ced6ab75
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183834"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408356"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 

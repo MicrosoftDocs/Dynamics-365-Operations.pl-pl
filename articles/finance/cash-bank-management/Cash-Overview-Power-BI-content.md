@@ -17,11 +17,11 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598140"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446837"
 ---
 # <a name="cash-overview-power-bi-content"></a>Pakiet zawartości Przegląd środków pieniężnych dla usługi Power BI
 

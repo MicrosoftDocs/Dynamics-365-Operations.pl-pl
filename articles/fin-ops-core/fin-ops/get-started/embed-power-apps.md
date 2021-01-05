@@ -3,7 +3,7 @@ title: Osadzone aplikacje kanwy z Power Apps
 description: W tym temacie opisano sposób osadzania aplikacji kanwy z Microsoft Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: e57e4567a80aa9f9ba5ac434b0d71204460e164f
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: ba3b736aeae8540349309ddd82bd431720b9701c
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893114"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693490"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Osadzone aplikacje kanwy z Power Apps
 
@@ -57,7 +56,7 @@ Poniższa procedura przedstawiaja sposoby osadzania aplikacji kanwy z Power Apps
 3. Konfigurowanie osadzonej aplikacji:
 
     - Pole **Nazwa** wskazuje tekst, jaki będzie wyświetlany na przycisku lub karcie zawierającej osadzoną aplikację. Często w tym polu warto powtórzyć nazwę aplikacji.
-    - Pole **Identyfikator aplikacji** wskazuje unikatowy identyfikator globalny (GUID) dla aplikacji obszaru roboczego, która ma zostać osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [web.powerapps.com](https://web.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
+    - Pole **Identyfikator aplikacji** wskazuje unikatowy identyfikator globalny (GUID) dla aplikacji obszaru roboczego, która ma zostać osadzona. Aby pobrać tę wartość, odszukaj aplikację na stronie [make.powerapps.com](https://make.powerapps.com), a następnie odszukaj pole **Identyfikator aplikacji** w obszarze **Szczegóły**.
     - W obszarze **Dane wejściowe dla aplikacji** można opcjonalnie wybrać pole zawierające dane, które mają być przekazywane do aplikacji jako dane wejściowe. Zobacz w dalszej części tego tematu sekcję zatytułowaną [Kompilowanie aplikacji wykorzystującej dane wysłane z aplikacji Finance and Operations](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps), gdzie dowiesz się dokładnie, jak aplikacja może uzyskiwać dostęp do danych wysyłanych z aplikacji Finance and Operations.
     - Wybierz wartość **Rozmiar aplikacji** pasującą do typu osadzanej aplikacji. Wybierz opcję **Ograniczona** dla aplikacji przeznaczonych do urządzeń przenośnych, a opcję **Rozbudowana** dla aplikacji przeznaczonych do tabletów. To zagwarantuje przeznaczenie wystarczającej ilości miejsca na wbudowaną aplikację.
     - Na skróconej karcie **Firmy** można wybrać firmy, dla których aplikacja będzie dostępna. Domyślnie aplikacja jest wyświetlana we wszystkich firmach. Ta opcja jest dostępna tylko wtedy, gdy jest wyłączona funkcja [Zapisanych widoków](saved-views.md). 

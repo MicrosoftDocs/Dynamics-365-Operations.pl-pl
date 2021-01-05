@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1481b714d089994c1f00189cdaba3ca328f00577
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 90fe7f3ab08e9417af3f857f04934a9b5df3d82d
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983114"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4644904"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Konfigurowanie grup księgowania dla podatku
 
@@ -37,7 +37,7 @@ Podatek jest obliczany i księgowany na kontach głównych określonych w grupac
 6. W polu **Podatek naliczony** wybierz konto główne dla przychodzących podatków, które otrzymuje się z urzędu skarbowego. Dostawcy pobierają podatki w imieniu urzędu skarbowego, kiedy kupujesz opodatkowane towary i usługi. To pole jest niedostępne, gdy na stronie Parametry księgi głównej zaznaczono opcję **Zastosuj zasady opodatkowania dla podatku**. Zamiast tego podatki płacone dostawcom są księgowane po stronie debetowej na tym samym koncie, co zakupy.   
 7. W polu **Wydatki podatku nienaliczonego** wybierz konto główne dla księgowania podatków konsumpcyjnych podlegających odliczeniu, które nie zostały pobrane ani zgłoszone do urzędu skarbowego przez dostawców w ramach systemu odwróconego podatku PTU/HST stosowanego w UE. Opcja **Podatek nienaliczony** musi zostać wybrana dla **kodu podatku** w **grupie podatków**, która jest używana w transakcji. To pole jest niedostępne, gdy na stronie **Parametry księgi głównej** zaznaczono opcję **Zastosuj zasady opodatkowania** dla podatku.   
 8. W polu **Podatek nienaliczony** należny wybierz konto główne do księgowania przychodzących podatków konsumpcyjnych, które są płatne na rzecz urzędu skarbowego. Opcja **Podatek nienaliczony** musi zostać wybrana dla **kodu podatku** w **grupie podatków**, aby można było zaksięgować **Podatek nienaliczony**. Jeśli w oknie **Parametry księgi głównej** zaznaczono opcję **Zastosuj zasady opodatkowania dla podatku**, kompensacja jest księgowana na koncie wydatków transakcji.   
-9. W polu **Konto rozliczeniowe** wybierz konto główne, na którym będzie księgowane saldo netto kont księgowych określonych w polach **Podatek nienaliczony należny** i **Podatek naliczony**. Saldo zostanie utworzone podczas rozliczania podatku i wykonywania zadania księgowania.  Jeśli urząd skarbowy za okres rozliczeniowy jest skojarzony z kontem dostawcy, saldo jest zamiast tego księgowane na koncie dostawcy.
+9. W polu **Konto rozliczeniowe** wybierz konto główne, na którym będzie księgowane saldo netto kont księgowych określonych w polach **Podatek nienaliczony należny** i **Podatek naliczony**. Saldo zostanie utworzone podczas rozliczania podatków i wykonywania zadania księgowania.  Jeśli urząd skarbowy za okres rozliczeniowy jest skojarzony z kontem dostawcy, saldo jest zamiast tego księgowane na koncie dostawcy.
 10. W polu **Rabat gotówkowy dostawcy** wybierz konto główne do księgowania rabatów gotówkowych dla kodów podatków skojarzonych z tą grupą księgowania. To ustawienie jest opcjonalne i jeśli konto nie zostanie wprowadzone, będzie używane konto główne z **kodów rabatów gotówkowych**. Może być korzystne używanie różnych kont dla poszczególnych **grup księgowania**, jeśli w oknie Grupy podatków zaznaczono opcję Cofnij podatek od rabatu gotówkowego.  
 11. W polu **Rabat gotówkowy odbiorcy** wybierz konto główne do księgowania rabatów gotówkowych dla **kodów podatków** skojarzonych z tą **grupą księgowania**. To ustawienie jest opcjonalne i jeśli konto nie zostanie wprowadzone, będzie używane konto główne z **kodów rabatów gotówkowych**. Może być korzystne używanie różnych kont dla poszczególnych **grup księgowania**, jeśli w oknie **Grupy podatków** zaznaczono opcję Cofnij podatek od rabatu gotówkowego.  
 12. Kliknij przycisk **Zapisz**.

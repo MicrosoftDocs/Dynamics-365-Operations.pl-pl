@@ -1,6 +1,6 @@
 ---
 title: Bootstrap z danymi firmy — często zadawane pytania
-description: Jak zainicjować firmę Common Data Service lub inne dane aplikacji Dynamics 365 z informacjami o firmie przed włączeniem połączenia z podwójnym zapisywaniem.
+description: Jak zainicjować firmę Dataverse lub inne dane aplikacji Dynamics 365 z informacjami o firmie przed włączeniem połączenia z podwójnym zapisywaniem.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -18,49 +18,50 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 8cd753a5b0d63833a911e0692c83c653e0278153
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997583"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683778"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Bootstrap z danymi firmy — często zadawane pytania
  
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 ## <a name="why-do-i-need-bootstrapping"></a>Dlaczego potrzebuję inicjowania firmy? 
-Być może istnieje już istniejące Common Data Service lub inne wystąpienie aplikacji Dynamics 365 z danymi biznesowymi, a użytkownik chce włączyć dla niego połączenie podwójnego odpisu. W tym przypadku, aby zainicjować firmę Common Data Service lub inne dane aplikacji Dynamics 365 z informacjami o firmie przed włączeniem połączenia z podwójnym zapisywaniem.  
+Być może istnieje już istniejące Dataverse lub inne wystąpienie aplikacji Dynamics 365 z danymi biznesowymi, a użytkownik chce włączyć dla niego połączenie podwójnego odpisu. W tym przypadku, aby zainicjować firmę Dataverse lub inne dane aplikacji Dynamics 365 z informacjami o firmie przed włączeniem połączenia z podwójnym zapisywaniem.  
  
 ## <a name="when-should-i-use-bootstrapping"></a>Kiedy należy używać inicjowania firmy? 
-Przed włączeniem map jednostek z podwójnym zapisywaniem (w kroku #5) należy wykonać ładowanie wstępne.  
-1. Aby skonfigurować połączenie podwójnego zapisywania między wystąpieniami aplikacji Finance and Operations oraz z Common Data Service lub z inną aplikacją Dynamics 365, zaloguj się do aplikacji Finance and Operations jako administrator. 
+Przed włączeniem map tabeli z podwójnym zapisywaniem (w kroku #5) należy wykonać ładowanie wstępne.  
+1. Aby skonfigurować połączenie podwójnego zapisywania między wystąpieniami aplikacji Finance and Operations oraz z Dataverse lub z inną aplikacją Dynamics 365, zaloguj się do aplikacji Finance and Operations jako administrator. 
 2. Przejdź do modułu **zarządzania danymi** i kliknij przycisk **podwójnego zapisywania**. Spowoduje to uruchomienie **integratora danych**. 
 3. Utwórz połączenie podwójnego zapisywania dla co najmniej jednej firmy.  
     > [!div class="mx-imgBorder"]
     > ![Utwórz połączenie podwójnego zapisywania](media/dual-write-boot-1.png)
-4. Włącz mapowanie jednostki **Cdm_companies**. Spowoduje to zsynchronizowanie firm z aplikacji Finance and Operations do Common Data Service.  
+4. Włącz mapowanie tabeli **Cdm_companies**. Spowoduje to zsynchronizowanie firm z aplikacji Finance and Operations do Dataverse.  
     > [!div class="mx-imgBorder"]
-    > ![Włącz mapowanie jednostki](media/dual-write-boot-2.png)
-5. Należy uruchomić przykładowy kod inicjujący w wystąpieniu Common Data Service lub innym wystąpieniu aplikacji Dynamics 365.  
-6. Po zakończeniu inicjowania firmy i gdy system jest gotowy do synchronizacji na żywo, włącz mapowania jednostek.  
+    > ![Włącz mapowanie tabeli](media/dual-write-boot-2.png)
+5. Należy uruchomić przykładowy kod inicjujący w wystąpieniu Dataverse lub innym wystąpieniu aplikacji Dynamics 365.  
+6. Po zakończeniu inicjowania firmy i gdy system jest gotowy do synchronizacji na żywo, włącz mapowania tabeli.  
 
-    Włączenie mapowań jednostek powoduje wyzwolenie początkowej synchronizacji danych dla włączonych mapowań jednostek. Dane odpowiadające firmom wybranym w połączeniu podwójnego zapisywania są synchronizowane między aplikacją Finance and Operations i Common Data Service. 
+    Włączenie mapowań tabeli powoduje wyzwolenie początkowej synchronizacji danych dla włączonych mapowań tabeli. Dane odpowiadające firmom wybranym w połączeniu podwójnego zapisywania są synchronizowane między aplikacją Finance and Operations i Dataverse. 
  
 ## <a name="how-to-i-use-the-code-sample"></a>Jak mogę wykorzystać przykładowy kod?
-Przykładowym kodem jest aplikacja C#, które można ładować w Visual Studio. Powoduje on zależności pakietów NuGet w zestawie SDK Common Data Service, który można odświeżyć za pomocą narzędzia standardowego Visual Studio. 
+Przykładowym kodem jest aplikacja C#, które można ładować w Visual Studio. Powoduje on zależności pakietów NuGet w zestawie SDK Dataverse, który można odświeżyć za pomocą narzędzia standardowego Visual Studio. 
 
 Po rozpakować się i otwarciu rozwiązania w Visual Studio i odwróceniu NuGet, należy wyszukać w kodzie **DO ZROBIENIA**. Każda decyzja konieczna do zapoznania się z informacjami o firmie, którą należy wykonać, jest zapisywana jako **DO ZROBIENIA** z przykładowym kodem dla implementacji kanonicznej. 
 
-Przykładowy kod pokazuje tylko jeden z wielu sposobów kategoryzowania rekordów jednostek według firm. Zmieniając logikę w sekcjach **DO ZROBIENIA** , można utworzyć kategoryzację niestandardową. 
+Przykładowy kod pokazuje tylko jeden z wielu sposobów kategoryzowania wierszy jednostek według firm. Zmieniając logikę w sekcjach **DO ZROBIENIA**, można utworzyć kategoryzację niestandardową. 
  
 ## <a name="what-should-i-expect"></a>Czego można się spodziewać?
-Domyślnie aplikacja przykładowa umożliwia utworzenie słownika mapowania jednostek biznesowych na kody firm. Każdy obiekt, który został zaksięgowany z polem **OwningBusinessUnit** , jest automatycznie ustawiany w celu używania określonej firmy. Każdy podmiot bez pola **OwningBusinessUnit** , na przykład produkt, ustawi firmę na podstawie mapowania z pustą wartością jednostki biznesowej.
+Domyślnie aplikacja przykładowa umożliwia utworzenie słownika mapowania jednostek biznesowych na kody firm. Każdy obiekt, który został zaksięgowany z polem **OwningBusinessUnit**, jest automatycznie ustawiany w celu używania określonej firmy. Każdy podmiot bez pola **OwningBusinessUnit**, na przykład produkt, ustawi firmę na podstawie mapowania z pustą wartością jednostki biznesowej.
 
-Aplikacja konsoli oczekuje jednego z parametrów: **-Symuluj** lub **-Zastosuj**. Jeśli jest używany parametr wiersza polecenia **–symuluj** , nie są aktualizowane żadne dane. Tylko **simulation_<entityname>.csv** są generowane w tym samym katalogu co narzędzie, po jednym dla każdej jednostki, która mogłaby zostać zaktualizowana. Można iteracyjnie przeglądać te pliki podczas pracy, aby upewnić się, że kod firmy aktualizuje wartości w oczekiwany sposób. 
+Aplikacja konsoli oczekuje jednego z parametrów: **-Symuluj** lub **-Zastosuj**. Jeśli jest używany parametr wiersza polecenia **–symuluj**, nie są aktualizowane żadne dane. Tylko **simulation_<entityname>.csv** są generowane w tym samym katalogu co narzędzie, po jednym dla każdej jednostki, która mogłaby zostać zaktualizowana. Można iteracyjnie przeglądać te pliki podczas pracy, aby upewnić się, że kod firmy aktualizuje wartości w oczekiwany sposób. 
 
-Po zakończeniu pracy z symulowanymi aktualizacjami należy użyć parametru **–zastosuj**. Powoduje zaktualizowanie wszystkich rekordów, w których obecnie występuje nieprawidłowa wartość firmy, w partiach rekordów w liczbie 1000 (domyślnie). Kod jest nieżależny w podany sposób, co oznacza, że można go uruchomić ponownie i zaktualizować tylko niepoprawnie przypisane firmy. W przypadku korzystania z opcji **-zastosuj** , kod wyprowadza pliki CSV wprowadzonych zmian o nazwie **applied_<entityname>.csv.** 
+Po zakończeniu pracy z symulowanymi aktualizacjami należy użyć parametru **–zastosuj**. Powoduje zaktualizowanie wszystkich wierszy, w których obecnie występuje nieprawidłowa wartość firmy, w partiach wierszy w liczbie 1000 (domyślnie). Kod jest nieżależny w podany sposób, co oznacza, że można go uruchomić ponownie i zaktualizować tylko niepoprawnie przypisane firmy. W przypadku korzystania z opcji **-zastosuj**, kod wyprowadza pliki CSV wprowadzonych zmian o nazwie **applied_<entityname>.csv.** 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;
@@ -76,13 +77,13 @@ using System.IO;
 namespace BootstrapCompany
 {
     /// <summary>
-    /// Application to bootstrap the company field on existing records in CDS in preparation for integration to Finance and Operations.
+    /// Application to bootstrap the company field on existing rows in CDS in preparation for integration to Finance and Operations.
     /// </summary>
     /// <remarks>
     /// This application assumes that the target companies already exist in the CDS environment in the cdm_Company table and are
-    /// identified by their company code. It also assumes that the current owning business unit of each record should be used
+    /// identified by their company code. It also assumes that the current owning business unit of each row should be used
     /// to categorize by company. This logic can easily be updated to utilize alternate sources of categorization including
-    /// custom entities, teams, custom fields on tables, or any other data. This code is provided only as a sample. 
+    /// custom tables, teams, custom fields on tables, or any other data. This code is provided only as a sample. 
     /// 
     /// To utilize this code, update each of the locations currently denoted with a TODO statement.
     /// 
@@ -91,7 +92,7 @@ namespace BootstrapCompany
     public class Program
     {
         /// <summary>
-        /// The number of records to query and update in CDS in a single operation.
+        /// The number of rows to query and update in CDS in a single operation.
         /// </summary>
         /// <remarks>
         /// The larger this number, the fewer calls will need to be made, so the faster the updates
@@ -115,12 +116,12 @@ namespace BootstrapCompany
         const int maxFaultThreshold = 100;
 
         /// <summary>
-        /// The maximum number of records per business unit to export when simulating.
+        /// The maximum number of rows per business unit to export when simulating.
         /// </summary>
         /// <remarks>
         /// During simulation, queries are not batched since doing so would require ordering and so be slightly
         /// different from the actual execution logic. To keep this the same between both paths, simulates are
-        /// not batched and so a separate maximum number of records per business unit can be specified.
+        /// not batched and so a separate maximum number of rows per business unit can be specified.
         /// </remarks>
         const int maxSimulateRecordsPerBusinessUnit = 10000;
 
@@ -130,8 +131,8 @@ namespace BootstrapCompany
         /// <remarks>
         /// This is different than setting maxFaultThreshold = 0, since the first batch of updates will be processed
         /// together. If continueOnError is true and maxFaultThreshold is 0, it is possible that multiple errors may
-        /// be encountered and at the same time some records successfully updated. In a healthy system when updating
-        /// a higher number of records, an occasional spurious error is expected, so it is recommended this be left as true.
+        /// be encountered and at the same time some rows successfully updated. In a healthy system when updating
+        /// a higher number of rows, an occasional spurious error is expected, so it is recommended this be left as true.
         /// </remarks>
         const bool continueOnError = true;
 
@@ -182,7 +183,7 @@ namespace BootstrapCompany
 
                 // TODO: Provide a mapping of OwningBusinessUnit name to cdm_Company company ID. You can reuse
                 // the same company ID for multiple business units if desired. In this example, it assumes that
-                // the business unit named "USMF" is related to the company "USMF". If all records were owned
+                // the business unit named "USMF" is related to the company "USMF". If all rows were owned
                 // by the same root business unit, then the first field in the dictionary should be set to the 
                 // name of the root business unit, usually the same value as the organization (eg, "Contoso").
                 Dictionary<string, string> businessUnitToCompanyMapping = new Dictionary<string, string>()
@@ -192,16 +193,16 @@ namespace BootstrapCompany
                     { "FRRT", "FRRT" },
                 };
 
-                // TODO: Provide a list of entities for which the company field should be backfilled based
-                // on owning business unit. The list below represents all existing entities for which a cdm_Company
+                // TODO: Provide a list of tables for which the company field should be backfilled based
+                // on owning business unit. The list below represents all existing tables for which a cdm_Company
                 // lookup field was added as part of the Finance and Operations dual write project.
                 BatchUpdateEntity(orgService, "account", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "accountnumber", "name");
                 BatchUpdateEntity(orgService, "contact", "msdyn_company", businessUnitToCompanyMapping, true, isSimulate, "fullname");
                 // ... Add more here
 
-                // Note, the product entity does not have an owningbusinessunit field like most other entities, so
+                // Note, the product entity does not have an owningbusinessunit field like most other tables, so
                 // assigning company by Business Unit is not applicable. In this case, whichever mapping specifies an
-                // empty business unit will be used to categorize entities without an owningbusinessunit field.
+                // empty business unit will be used to categorize tables without an owningbusinessunit field.
                 BatchUpdateEntity(orgService, "product", "msdyn_companyid", businessUnitToCompanyMapping, false, isSimulate, "productnumber");
             }
             else
@@ -250,9 +251,9 @@ namespace BootstrapCompany
             // Process each mapped business unit individually
             foreach (string businessUnitName in businessUnitToCompanyMapping.Keys)
             {
-                Console.WriteLine("Updating any {0} records for business unit {1} to company {2}...", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
+                Console.WriteLine("Updating any {0} rows for business unit {1} to company {2}...", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
 
-                // The empty business unit value is only applicable for entities without an owning business unit field
+                // The empty business unit value is only applicable for tables without an owning business unit field
                 if (hasOwningBusinessUnit && string.IsNullOrEmpty(businessUnitName))
                 {
                     continue;
@@ -271,7 +272,7 @@ namespace BootstrapCompany
                 {
                     moreRecordsExist = false;
 
-                    // Find the first batch of records for this business unit with the wrong company ID. Ordering
+                    // Find the first batch of rows for this business unit with the wrong company ID. Ordering
                     // is not explicity specified, but SQL will most likely process based on the index starting with
                     // company ID, since all new company ID fields added for Finance and Operations integration have
                     // also added a new index starting with company ID. Explicitly specifying order would reduce the
@@ -291,16 +292,16 @@ namespace BootstrapCompany
 
                     if (isSimulate)
                     {
-                        // During simulation, get as a single block of records to avoid positioning complexities
+                        // During simulation, get as a single block of rows to avoid positioning complexities
                         query.TopCount = maxSimulateRecordsPerBusinessUnit;
                     }
                     else
                     {
-                        // Only batch records during actual application, otherwise retrieve all as a single operation
+                        // Only batch rows during actual application, otherwise retrieve all as a single operation
                         query.TopCount = requestBatchSize + faultedIds.Count;
                     }
 
-                    // For entities with an owning business unit, join based on business unit name
+                    // For tables with an owning business unit, join based on business unit name
                     if (hasOwningBusinessUnit)
                     {
                         // TODO: Replace this logic with different algorithms to determine the correct company
@@ -322,7 +323,7 @@ namespace BootstrapCompany
 
                     EntityCollection result = orgService.RetrieveMultiple(query);
 
-                    int recordsAddedToBatch = 0;
+                    int rowsAddedToBatch = 0;
 
                     foreach (var entity in result.Entities)
                     {
@@ -355,15 +356,15 @@ namespace BootstrapCompany
                             multipleRequest.Requests.Add(updateRequest);
                         }
 
-                        recordsAddedToBatch++;
+                        rowsAddedToBatch++;
                         Console.Write(".");
                     }
 
-                    totalRecordsProcessed += recordsAddedToBatch;
+                    totalRecordsProcessed += rowsAddedToBatch;
 
-                    if (recordsAddedToBatch > 0 && !isSimulate)
+                    if (rowsAddedToBatch > 0 && !isSimulate)
                     {
-                        Console.Write("Sending {0} updates in a batch", recordsAddedToBatch);
+                        Console.Write("Sending {0} updates in a batch", rowsAddedToBatch);
                         var updateResult = orgService.Execute(multipleRequest) as ExecuteMultipleResponse;
                         moreRecordsExist = true;
                         Console.WriteLine(" done");
@@ -389,7 +390,7 @@ namespace BootstrapCompany
                     }
                     else
                     {
-                        Console.WriteLine("No {0} records remain to be updated for {1}->{2}", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
+                        Console.WriteLine("No {0} rows remain to be updated for {1}->{2}", entityName, businessUnitName, businessUnitToCompanyMapping[businessUnitName]);
                     }
                 }
             }
@@ -398,7 +399,7 @@ namespace BootstrapCompany
             simulationWriter = null;
 
             stopwatch.Stop();
-            Console.WriteLine("Processed {0} records for the {1} entity in {2}ms.", totalRecordsProcessed, entityName, stopwatch.ElapsedMilliseconds);
+            Console.WriteLine("Processed {0} rows for the {1} entity in {2}ms.", totalRecordsProcessed, entityName, stopwatch.ElapsedMilliseconds);
 
             return (faultedIds.Count == 0);
         }

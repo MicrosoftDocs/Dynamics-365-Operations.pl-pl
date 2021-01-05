@@ -17,11 +17,11 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: c312e14247c42acd5e0de5df02833275d9e3a4f1
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408351"
 ---
 # <a name="eur-00011-set-up-eu-sales-list-reporting"></a>EUR-00011 Konfigurowanie unijnego raportu listy sprzedaży
 

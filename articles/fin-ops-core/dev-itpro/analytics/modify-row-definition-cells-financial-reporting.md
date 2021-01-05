@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182998"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685866"
 ---
 # <a name="modify-row-definition-cells"></a>Modyfikowanie komórek definicji wiersza
 
@@ -107,7 +106,7 @@ Komórka **Kod formatu** pozwala wybrać wstępnie sformatowane elementy zawarto
     |-------------------------------|-----------------------------------|--------|
     | (Brak)                        |                                   | Usuwa zawartość komórki **Kod formatu**. |
     | TOT                           | Suma                             | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Sumy zawierają proste operatory, takie jak **+** lub **-**. |
-    | CAL                           | Obliczenie                       | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Obliczenia zawierają złożone operatory, takie jak instrukcje **+**, **-**, **\***, **/** i **IF/THEN/ELSE**. |
+    | CAL                           | Obliczenie                       | Określa wiersz używający operatorów matematycznych w kolumnie **Powiązane formuły/wiersze/jednostki**. Obliczenia zawierają złożone operatory, takie jak **+**, **-**, **\**_, _*/**, oraz instrukcje **IF/THEN/ELSE**. |
     | DES                           | opis                       | Określa wiersz nagłówka lub pusty wiersz w raporcie. |
     | LFT RGT CEN                   | Lewo Prawo Środek                 | Wyrównuje tekst opisu wiersza na stronie raportu, niezależnie od miejsca tego tekstu w definicji kolumny. |
     | CBR                           | Zmiana wiersza podstawowego                   | Identyfikuje wiersz, który ustawia wiersz podstawowy w obliczeniach kolumny. |
@@ -175,7 +174,7 @@ W kolumnie **Kod formatu** w definicji wiersza kody formatu **DES**, **LFT**, **
 
 ### <a name="example-of-preventing-printing-of-rows"></a>Przykład zapobiegania drukowaniu wierszy
 
-W poniższym przykładzie Phyllis chce zapobiec drukowaniu nagłówków i podkreśleń w wierszu **Gotówka — razem**, ponieważ na żadnym z kont kasowych nie było aktywności. W związku z tym w wierszu 220 (który jest wierszem formatowania, na co wskazuje kod formatu **---**) w komórce **Powiązane formuły/wiersze/jednostki** wprowadza wartość **250**, czyli numer kodu wiersza, który chce pomijać podczas drukowania.
+W poniższym przykładzie użytkownik chce zapobiec drukowaniu nagłówków i podkreśleń w wierszu **Gotówka — razem**, ponieważ na żadnym z kont kasowych nie było aktywności. W związku z tym w wierszu 220 (który jest wierszem formatowania, na co wskazuje kod formatu **---**) w komórce **Powiązane formuły/wiersze/jednostki** użytkownik wprowadza wartość **250**, czyli numer kodu wiersza, który chce pomijać podczas drukowania.
 
 [![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
@@ -416,7 +415,7 @@ Domyślnie projektant raportów nie drukuje wierszy, które nie mają odnośnego
 3. W menu **Plik** kliknij **Zapisz**, aby zapisać zmiany.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Używanie symboli wieloznacznych i zakresów w definicji wiersza
-Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość **6???**, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz **6\***, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak **60** i **600000**. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od **12?0** do **12?4**, symbol wieloznaczny w kombinacji **12?0** jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji **12? 4** jest zastępowany najwyższą wartością w zestawie znaków.
+Po wprowadzeniu wartości segmentu naturalnego w oknie dialogowym **Wymiary** możesz wstawić symbol wieloznaczny (? lub \*) w dowolnym miejscu segmentu. Projektant raportów wyodrębnienia wszystkie wartości dla zdefiniowanych pozycji bez uwzględniania symboli wieloznacznych. Na przykład definicja wiersza zawiera tylko wartości naturalnych segmentów, a naturalne segmenty mają cztery znaki. Wprowadzając w wierszu wartość **6???**, tworzysz instrukcję dla projektanta raportów, aby uwzględniał wszystkie konta, które mają wartość naturalnego segmentu zaczynającą się od cyfry 6. Jeśli wprowadzisz **6\**_, zwracane są te same wyniki, ale obejmują one również wartości o różnej szerokości, takie jak _* 60** i **600000**. Projektant raportów zastępuje poszczególne symbole wieloznaczne (?) pełnym zakresem możliwych wartości, co obejmuje litery i znaki specjalne. Na przykład w zakresie od **12?0** do **12?4**, symbol wieloznaczny w kombinacji **12?0** jest zastępowany najniższą wartością w zestawie znaków, a symbol wieloznaczny w kombinacji **12? 4** jest zastępowany najwyższą wartością w zestawie znaków.
 
 > [!NOTE]
 > Należy unikać używania symboli wieloznacznych dla kont na początkach i końcach zakresów. Używanie symboli wieloznacznych w konta początkowych lub końcowych może dawać nieoczekiwane wyniki.
@@ -529,4 +528,4 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raporty finansowe](financial-reporting-intro.md)
+[Raportowanie finansowe](financial-reporting-intro.md)

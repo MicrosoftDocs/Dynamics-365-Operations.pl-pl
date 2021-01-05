@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c592034ca9c777bbc600c040c61937ad71b4e36d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c7ae0bdc8245db1391103ca0f214fb3120f93f5b
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2179460"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4447023"
 ---
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Używanie płatności odbiorcy do rozliczenia wielu faktur obejmujących wiele okresów rabatu
 
@@ -41,7 +41,7 @@ Odbiorca 4032 ma trzy faktury na łączną kwotę 3,000.00:
 -   Faktura FTI-10042 na 1000,00, została wprowadzona 25 czerwca. Do tej faktury przysługuje rabat gotówkowy w wysokości 2%,jeśli zostanie zapłacona w ciągu 5 dni, i 1%, jeśli zostanie zapłacona w ciągu 14 dni.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Rozlicz wszystkie faktury 29 czerwca
-Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 29 czerwca, płatność wynosi 2970,00. Suma wszystkich kwot wynosi 30,00. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie**rozliczenia transakcji** oznacza wszystkie wiersze trzech faktur do rozliczenia:
+Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 29 czerwca, płatność wynosi 2970,00. Suma wszystkich kwot wynosi 30,00. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** oznacza wszystkie wiersze trzech faktur do rozliczenia:
 
 -   Płatności za fakturę FTI 10040 wynosi 1,000.00. Rabat gotówkowy nie został pobrany.
 -   Płatności za fakturę FTI-10041 wynosi 990.00. Został pobrany rabat gotówkowy w wysokości 1% lub 10,00.
@@ -56,7 +56,7 @@ Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 29 cz
 Po zaksięgowaniu płatności saldo odbiorcy wynosi 0,00.
 
 ## <a name="settle-all-invoices-on-july-1"></a>Rozlicz wszystkie faktury 1 lipca
-Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 1 lipca, płatność wynosi 2980,00. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie**rozliczenia transakcji** oznacza wszystkie wiersze trzech faktur do rozliczenia:
+Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 1 lipca, płatność wynosi 2980,00. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** oznacza wszystkie wiersze trzech faktur do rozliczenia:
 
 -   Płatności za fakturę FTI 10040 wynosi 1,000.00. Rabat gotówkowy nie został pobrany.
 -   Płatności za fakturę FTI-10041 wynosi 990.00. Został pobrany rabat gotówkowy w wysokości 1% lub 10,00.
@@ -69,7 +69,7 @@ Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 1 lip
 | Zaznaczone i wyróżnione | Normalna            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Rozliczenie częściowe 29 czerwca
-Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie**rozliczenia transakcji** Arnie oznacza wszystkie wiersze trzech faktur do rozliczenia. W każdym wierszu wprowadza on kwotę do rozliczenia, zgodnie z instrukcjami odbiorcy. Gdy Arnie zaznacza wiersz, widzi kwotę rabatu dla tego wiersza i pobraną kwotę rabatu gotówkowego. Ponieważ odbiorca płaci pół faktury, Arnie widzi, że wartość w polu **kwoty rabatu gotówkowego** dla faktury FTI 10042 wynosi **20,00**, ale wartość w polu **pobrany rabat gotówkowy** wynosi **10,00**. Kwota płatności wynosi 1485,00.
+Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** Arnie oznacza wszystkie wiersze trzech faktur do rozliczenia. W każdym wierszu wprowadza on kwotę do rozliczenia, zgodnie z instrukcjami odbiorcy. Gdy Arnie zaznacza wiersz, widzi kwotę rabatu dla tego wiersza i pobraną kwotę rabatu gotówkowego. Ponieważ odbiorca płaci pół faktury, Arnie widzi, że wartość w polu **kwoty rabatu gotówkowego** dla faktury FTI 10042 wynosi **20,00**, ale wartość w polu **pobrany rabat gotówkowy** wynosi **10,00**. Kwota płatności wynosi 1485,00.
 
 | Zaznacz                     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Waluta | Kwota do rozliczenia |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|

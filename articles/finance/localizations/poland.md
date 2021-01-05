@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97caec78ddc73b1217c708fb6caf61b3bbe0d429
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: d896f4ce352f4c0051ed3ba5780cb2682760cd24
+ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979540"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4581849"
 ---
 # <a name="poland-overview"></a>Polska — omówienie
 
@@ -40,4 +40,5 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Standardowy plik audytu (SAF)](emea-pol-standard-audit-file-saf.md)
 - [Odsetki podatkowe i rynkowe](emea-pol-interest-calculation.md)
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
-- [Rozdzielona różnica kursowa AP/AR](emea-pol-split-ap-ar-exchange-difference.md)
+- [Podział różnic kursowych dla RzD/RzO](emea-pol-split-ap-ar-exchange-difference.md)
+- [Deklaracja VAT z rejestrami (JPK_V7M, VDEK)](emea-pol-vdek.md)

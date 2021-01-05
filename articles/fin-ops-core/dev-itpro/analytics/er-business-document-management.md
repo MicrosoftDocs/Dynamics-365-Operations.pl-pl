@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893142"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681311"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -257,7 +256,7 @@ Jeśli jest wyłączona funkcja **Wyglądający jak Office interfejs użytkownik
 
 Zawartość wybranego szablonu jest przedstawiana na karcie **szablony**. Wybierz kartę **szczegóły**, aby przejrzeć szczegóły wybranego szablonu, a także szczegóły konfiguracji formatu ER, w którym znajduje się ten szablon. Zauważ, że wszystkie szablony mają stan **opublikowane** i nie zawierają szczegółów w kolumnie **korekta**. Oznacza to, że te szablony nie są obecnie edytowane.
 
-Jeśli jest włączona funkcja **Wyglądający jak Office interfejs użytkownika na potrzeby zarządzania dokumentami**w obsarze roboczym **Zarządzanie funkcjami** główna siatka w obszarze roboczym **Zarządzanie dokumentami biznesowymi** zawiera szablony będące własnością dostawcy konfiguracji ER (czyli dostawcę aktualnie oznaczonego jako aktywny w obszarze roboczym **Raportowanie elektroniczne**). Po wybraniu jednego z tych szablonów można wybrać opcję **Edytuj szablon**, aby rozpocząć lub kontynuować edycję szablonu.
+Jeśli jest włączona funkcja **Wyglądający jak Office interfejs użytkownika na potrzeby zarządzania dokumentami** w obsarze roboczym **Zarządzanie funkcjami** główna siatka w obszarze roboczym **Zarządzanie dokumentami biznesowymi** zawiera szablony będące własnością dostawcy konfiguracji ER (czyli dostawcę aktualnie oznaczonego jako aktywny w obszarze roboczym **Raportowanie elektroniczne**). Po wybraniu jednego z tych szablonów można wybrać opcję **Edytuj szablon**, aby rozpocząć lub kontynuować edycję szablonu.
 
 Aby pracować z szablonami należącymi do innych dostawców konfiguracji ER, należy wybrać opcję **Nowy dokument**, aby utworzyć kopię szablonu będącego własnością dostawcy ER. Wtedy można zacząć edytować kopię. Więcej informaci można przeczytać w [Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi](er-business-document-management-new-template-ui.md).
 

@@ -10,23 +10,24 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 21821
 ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1d14003ff7595ceaa78b42f69cf1927fbd8157d
-ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
+ms.openlocfilehash: 7ce6b3fb5217ad5d5228841a91d0b0406c305969
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4040129"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679963"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!IMPORTANT]
 > Ten temat nie jest już aktualizowany. Aby wyświetlić bieżącą listę funkcji, które zostały usunięte lub wycofane z aplikacji Finance and Operations, wyszukaj zawartość **„usunięte lub przestarzałe funkcje”** odnoszącą się do używanej aplikacji.
@@ -79,7 +80,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Trwa wycofywanie metody **setUtcString ()** , ponieważ dostępna jest lepsza metoda zastępcza. |
+| **Przyczyna wycofania/usunięcia** | Trwa wycofywanie metody **setUtcString ()**, ponieważ dostępna jest lepsza metoda zastępcza. |
 | **Zamieniona przez inną funkcję?**   | Tak |
 | **Powiązane obszary produktów**         | Platforma |
 | **Opcja wdrażania**              | Wszystkich |
@@ -185,7 +186,7 @@ Pomoc w tworzeniu zamówień sprzedaży w oparciu o projekt, gdzie umowa dotycz�
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Po usunięciu tego parametru funkcja zawsze będzie włączona. |
 | **Zamieniona przez inną funkcję?**   | Nr Funkcje do obsługi zamówień sprzedaży w oparciu o projekt zawierających wiele źródeł finansowania będą zawsze włączone.   |
-| **Powiązane obszary produktów**         |Parametr **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** zostanie usunięty. Następujące metody zostaną zmodyfikowana po usunięciu parametru: **ctrlSalesOrderTable** w klasie **ProjStatusType** , **sprawdzania poprawności** w polu **ProjId** i **uruchamiania** w formularzu **SalescreateOrder**. Po usunięciu parametru zostaną wycofane następujące metody: **IsSalesOrderAllowedForMultipleFundingSources** w pliku tabeli **ProjTable** , **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** w pliku tabeli **ProjTable** , pole danych **AllowSalesOrdersForMultipleFundingSources** w formularzu **ProjParameters** i pliki **ProjParameterEntity** , metoda prywatna **IsAssociatedToMultipleFundingSourcesContract** w pliku tabeli **ProjTable**. |
+| **Powiązane obszary produktów**         |Parametr **Zezwalaj na zamówienia sprzedaży w projektach z wieloma źródłami finansowania** zostanie usunięty. Następujące metody zostaną zmodyfikowana po usunięciu parametru: **ctrlSalesOrderTable** w klasie **ProjStatusType**, **sprawdzania poprawności** w polu **ProjId** i **uruchamiania** w formularzu **SalescreateOrder**. Po usunięciu parametru zostaną wycofane następujące metody: **IsSalesOrderAllowedForMultipleFundingSources** w pliku tabeli **ProjTable**, **IsAllowSalesOrdersForMultipleFundingSourcesParamEnabled** w pliku tabeli **ProjTable**, pole danych **AllowSalesOrdersForMultipleFundingSources** w formularzu **ProjParameters** i pliki **ProjParameterEntity**, metoda prywatna **IsAssociatedToMultipleFundingSourcesContract** w pliku tabeli **ProjTable**. |
 | **Opcja wdrażania**              | Wszystkich  |
 | **Stan**                         | Zakończenie obsługi jest planowane na kwiecień 2020. |
 
@@ -266,7 +267,7 @@ Wbudowanie kluczowych wskaźników wydajności (KPI) może być modelowane w Vis
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora* , a nie *błąd* , co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
+| **Przyczyna wycofania/usunięcia** | Definicje metadanych tabeli mogą mieć grupy pól zawierające nieprawidłowe odniesienia do pól. W razie wdrożenia może to spowodować błędy raportowania finansowego i usług SQL Server Reporting Services (SSRS). Ten problem jest obecnie zaliczony do kategorii *ostrzeżenia kompilatora*, a nie *błąd*, co oznacza, że można tworzyć pakiety możliwe do wdrożenia i wdrażać je bez naprawiania problemu. Aby rozwiązać ten problem:<br><br>1. Usuń nieprawidłowe odwołanie pola z definicji grupy pól tabel.<br><br>2. Kompiluj ponownie.<br><br>3. Upewnij się, ostrzeżenia lub błędy zostały naprawione. |
 | **Zamieniona przez inną funkcję?**   | Ostrzeżenie kompilatora zostanie zastąpione błędem w przyszłości. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
@@ -374,12 +375,12 @@ Te dwa raporty nie są już obsługiwane w rozwiązaniu Finance and Operations. 
 | **Stan**                       | Wycofane: elementy ,emu tych dwóch raportów zostały usunięte w wersji 7.3. Jednakże kod raportów jest nadal dostępny w produkcie. Planowane jest usunięcie kodu w kolejnych wersjach. |
 
 ### <a name="power-bi-content-packs-available-on-appsource"></a>Pakiety zawartości usługi Power BI dostępne w usłudze AppSource
-Pakiety zawartości **Zarządzanie kosztami** , **Wyniki finansowe** i **Retail Channel Performance** , które są opublikowane w witrynie [Microsoft AppSource](https://appsource.microsoft.com), zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
+Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Retail Channel Performance**, które są opublikowane w witrynie [Microsoft AppSource](https://appsource.microsoft.com), zostały wycofane w konsekwencji aktualizacji produktu w usłudze Microsoft Power BI. Formularze administracji systemu używane do wdrażania tych pakietów zawartości w witrynie PowerBI.com także zostały wycofane z rozwiązania Finance and Operations.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Aktualizacje produktu w usłudze Microsoft Power BI. |
-| **Zamieniona przez inną funkcję?**   | Pakiety zawartości **Zarządzanie kosztami** , **Wyniki finansowe** i **Retail Channel Performance** , które opublikowano w witrynie [AppSource](https://appsource.microsoft.com), są zastępowane aplikacjami analitycznymi, które umożliwiają integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Zamieniona przez inną funkcję?**   | Pakiety zawartości **Zarządzanie kosztami**, **Wyniki finansowe** i **Retail Channel Performance**, które opublikowano w witrynie [AppSource](https://appsource.microsoft.com), są zastępowane aplikacjami analitycznymi, które umożliwiają integrację rozwiązań na poziomie bazy danych. Aby uzyskać więcej informacji o aplikacjach analitycznych, zobacz [Osadzona usługa Power BI w obszarach roboczych](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Powiązane obszary produktów**         | Zarządzanie kosztami, Finanse i Handel detaliczny                                                                                               |
 | **Opcja wdrażania**              | Tylko w chmurze (integracja z witryną PowerBI.com nie jest obsługiwana we wdrożeniach lokalnych.)                                                                                                            |
 | **Stan**                         | Wycofane: docelowy okres usuwania funkcji to drugi kwartał 2018 roku.    |
@@ -712,7 +713,7 @@ Informacje listy płac w module Zasoby ludzkie
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ta funkcja została zastąpiona stronami podstawowych modułów Lista płac i Zasoby ludzkie.  |
-| **Zamieniona przez inną funkcję?**   | **Świadczenia** , **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** \> **Lista płac**. |
+| **Zamieniona przez inną funkcję?**   | **Świadczenia**, **Zarobki** i inne pokrewne strony, które były poprzednio używane w module US Payroll, otrzymały nową konfigurację i są teraz częścią konfiguracji podstawowych modułów Zasoby ludzkie, aby ułatwić zewnętrzne przetwarzanie listy płac. Ta funkcja jest dostępna za pomocą klucza konfiguracji **Zasoby ludzkie 1** \> **Lista płac**. |
 | **Powiązane obszary produktów**         | Zasoby ludzkie, Lista płac   |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611.    |
 
@@ -806,8 +807,8 @@ Dwa formaty eksportowania płatności są dostępne dla Finlandii. LM02 (FI) jes
 
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Rozwiązanie WMS II (Zarządzania magazynem II), które było dostępne w module **Zarządzanie zapasami** , dubluje funkcje dostępne w module **Zarządzanie magazynem** , który został udostępniony w Dynamics AX 2012 R3.                                                                         |
-| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem** , który został udostępniony w wersjach systemu AX 2012 R3, Dynamics AX 2012 R3 CU8 i Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
+| **Przyczyna wycofania/usunięcia** | Rozwiązanie WMS II (Zarządzania magazynem II), które było dostępne w module **Zarządzanie zapasami**, dubluje funkcje dostępne w module **Zarządzanie magazynem**, który został udostępniony w Dynamics AX 2012 R3.                                                                         |
+| **Zamieniona przez inną funkcję?**   | Moduł **Zarządzanie magazynem**, który został udostępniony w wersjach systemu AX 2012 R3, Dynamics AX 2012 R3 CU8 i Dynamics AX 2012 R3 CU9, zastępuje funkcje modułu WMS II. Nowy moduł ma bardziej zaawansowane funkcje i elastyczniejsze procesy zarządzania magazynem niż oferowane w module Zarządzanie magazynem II. |
 | **Powiązane obszary produktów**         | Zarządzanie zapasami, sprzedaż i marketing, zaopatrzenie i sourcing   |
 | **Stan**                         | Usunięto w rozwiązaniu Dynamics 365 for Operations w wersji 1611.    |
 
@@ -847,7 +848,7 @@ Przepływ pracy zarządzania tworzeniem celów dla pracowników jest jednym z ki
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integracja z AIF, AxD i AxBC
 
-W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów* , które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
+W narzędziach integracji aplikacji (AIF) może dochodzić do wymiany danych z zewnętrznymi systemami poprzez logikę biznesową powiązaną z usługami. System Dynamics AX zawiera usługi, które są oparte na dokumentach i programie .NET Business Connector (AxBC). Dokument jest tworzony przy użyciu języka XML. Kod XML zawiera informacje nagłówka dodawane w celu tworzenia *komunikatów*, które mogą być przesyłane do systemu Dynamics AX lub z niego wysyłane. Przykłady dokumentów obejmują zamówienia sprzedaży i zamówienia zakupu. Jednak niemal wszystkie podmioty, np. odbiorca, mogą być reprezentowane przez dokument. Usługi oparte na dokumentach używają menu klasy **Axd \<Document\>**.
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -1157,7 +1158,7 @@ Przelewu testowego nie da się wygenerować za pomocą zadania wsadowego, ale mo
 
 ### <a name="gl-ssrs-reports"></a>Raporty GL SSRS
 
-Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans próbny** , **Szczegółowy bilans próbny** , **Plan kont** , **Dziennik inspekcji** , **Salda** i **Lista sald**.
+Usunięto raporty zawierające następujące elementy menu: **Sumaryczny bilans próbny**, **Szczegółowy bilans próbny**, **Plan kont**, **Dziennik inspekcji**, **Salda** i **Lista sald**.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1359,7 +1360,7 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Niskie wykorzystanie |
-| **Zamieniona przez inną funkcję?**   | Nie, ale strona **Relacja profilu** , którą można otworzyć ze strony **Grupy profilów** , obsługuje ten sam scenariusz biznesowy, co wycofana strona **Planowanie produkcji**. |
+| **Zamieniona przez inną funkcję?**   | Nie, ale strona **Relacja profilu**, którą można otworzyć ze strony **Grupy profilów**, obsługuje ten sam scenariusz biznesowy, co wycofana strona **Planowanie produkcji**. |
 | **Powiązane obszary produktów**         | Czas i frekwencja     |
 | **Stan**                         | Kod nie został usunięty. Jednakże formularz JmgWorkPlanner nie został zmigrowany.    |
 

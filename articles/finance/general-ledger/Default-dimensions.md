@@ -19,11 +19,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154581"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446761"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 

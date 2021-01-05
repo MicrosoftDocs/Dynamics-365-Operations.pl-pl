@@ -3,7 +3,7 @@ title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Funkcja nowej siatki musi być włączona, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835093"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693781"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Nowy formant siatki zapewnia wiele przydatnych i zaawansowanych funkcji, które mogą być używane w celu zwiększenia wydajności użytkowników, tworzenia bardziej interesujących widoków danych oraz uzyskiwania informacji o szczegółowych danych. Ten artykuł będzie obejmował następujące możliwości: 
 
@@ -95,21 +95,23 @@ Jako środek zwiększający produktywność, użytkownicy mogą wprowadzać form
 Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Grupowanie danych tabelarycznych
-[!include [preview banner](../includes/preview-banner.md)]
+Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, funkcja **Grupowanie w siatkach**, zasadniczo dostępna w wersji 10.0.16/aktualizacji platformy 40 i zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
 
-Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania (wersja zapoznawcza) w siatkach tabelarycznych**, zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
-
-Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej **Grupy według kolumny** do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
+Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej kolumny **Grupy według** do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
 -  Wartość danych dla grupy 
--  Nazwa kolumny (Te informacje są szczególnie przydatne po obsłużeniu wielu poziomów grupowania.)  
+-  Nazwa kolumny (te informacje są szczególnie przydatne, gdy istnieje wiele poziomów grupowania)  
 -  Liczba wierszy danych w tej grupie
 -  Sumy cząstkowe dla dowolnej kolumny skonfigurowanej do wyświetlania sum
 
 Przy włączonym [Zapisanym widoku](saved-views.md), grupowanie może zostać zapisane przez personalizację jako część widoku, aby uzyskać szybki dostęp przy następnym odwiedzaniu strony.  
 
-Jeśli zostanie wybrana opcja **Grupuj według tej kolumny** w innej kolumnie, oryginalne grupowanie zostało zastąpione, ponieważ tylko jeden poziom grupowania jest obsługiwany w wersji 10.0.9 z aktualizacją platformy 33.
+### <a name="multiple-levels-of-grouping"></a>Wiele poziomów grupowania
+Po zgrupowaniu danych według jednej kolumny można je pogrupować według innej kolumny, zaznaczając w żądanej kolumnie opcję **Grupuj według tej kolumny**. Ten proces można powtarzać aż do uzyskania 5 zagnieżdżonych poziomów grupowania, co jest maksymalną obsługiwaną głębokością. W tym momencie nie będzie już można grupować według dodatkowych kolumn.  
 
-Aby cofnąć grupowanie w siatce, kliknij prawym przyciskiem myszy kolumnę grupowanie i wybierz polecenie **Rozgrupuj**.  
+W dowolnym momencie można usunąć grupowanie według dowolnej kolumny, klikając prawym przyciskiem myszy tę kolumnę i wybierając polecenie **Rozgrupuj**. Można również usunąć grupowanie ze wszystkich kolumn, wybierając kolejno polecenia **Opcje siatki** i **Rozgrupuj wszystko**.   
+
+Uwaga: przed wersją 10.0.16/aktualizacją platformy 40 jest obsługiwany tylko jeden poziom grupowania. W tych wersjach jeśli dane są pogrupowane i wybierzesz opcję **Grupuj według tej kolumny** dla innej kolumny, pierwotne grupowanie zostanie zastąpione.  
+
 
 ### <a name="expanding-and-collapsing-groups"></a>Rozwijanie i zwijanie grup
 Początkowe grupowanie danych będzie miało rozwinięte wszystkie grupy. Podsumowane widoki danych można tworzyć, zwijając poszczególne grupy, a także rozwijając grupę i zwijając ją, aby ułatwić nawigację między danymi. Aby rozwinąć lub zwinąć grupę, wybierz przycisk pagonu (>) w odpowiednim wierszu nagłówka grupy. Należy pamiętać, że stan rozwijania/zwijania poszczególnych grup **nie jest** zapisywany w obszarze Personalizacja.
@@ -165,10 +167,26 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
     -  Na stronie istnieje lista zgrupowanych kart.
     -  Kolumna siatkowa z niereagującą, rozszerzalną kontrolą.
 
-    Gdy użytkownik po raz pierwszy napotka jedną z tych sytuacji, zostanie wyświetlony komunikat o odświeżeniu strony. Po wyświetleniu tego komunikatu strona będzie nadal wykorzystywać istniejącą siatkę dla wszystkich użytkowników, aż do następnej aktualizacji wersji produktu. Lepsza obsługa tych scenariuszy, dzięki czemu może być wykorzystywana nowa siatka, będzie brana pod uwagę podczas przyszłej aktualizacji.     
+    Gdy użytkownik po raz pierwszy napotka jedną z tych sytuacji, zostanie wyświetlony komunikat o odświeżeniu strony. Po wyświetleniu tego komunikatu strona będzie nadal wykorzystywać istniejącą siatkę dla wszystkich użytkowników, aż do następnej aktualizacji wersji produktu. Lepsza obsługa tych scenariuszy, dzięki czemu może być wykorzystywana nowa siatka, będzie brana pod uwagę podczas przyszłej aktualizacji.    
+    
+-  [KB 4582758] Rekordy są zamazane po zmianie powiększenia ze 100 na dowolną inną wartość procentową
+    
+### <a name="fixed-as-part-of-10015"></a>Naprawiono w ramach 10.0.15    
+
+-  [KB 4582723] Opcje wyświetlania nie są pokazywane przy próbie ich wybrania na dalszym etapie cyklu życia formularza
+
+### <a name="fixed-as-part-of-10014"></a>Naprawiono w ramach 10.0.14
+
+-  (Aktualizacja jakości) [KB 4584752] Nieoczekiwany błąd na urządzeniu klienckim po otwarciu strony Propozycje faktur projektu
 
 ### <a name="fixed-as-part-of-10013"></a>Naprawiono w ramach 10.0.13
 
+-  (Aktualizacja jakości) [KB 4583880] Testy w narzędziu Regression Suite Automation Tool (RSAT) kończą się niepowodzeniem na akcji OpenLookup, czemu towarzyszy komunikat „Nie można odczytać niezdefiniowanej właściwości RowIndex”
+-  (Aktualizacja jakości) [KB 4583847] Nieoczekiwany błąd na urządzeniu klienckim podczas nawigowania po odnośnikach 
+-  (Aktualizacja jakości) [Usterka 471777] Nie można wybrać pól w siatce do edytowania lub utworzenia aplikacji mobilnej
+-  [Usterka 474851] Hiperłącza w kontrolkach grup odwołań nie działają 
+-  [Usterka 474848] Rozszerzone podglądy z siatkami nie są wyświetlane
+-  [KB 4582726] Właściwość RotateSign nie jest respektowana  
 -  [Usterka 470173] Pola wyboru w nieaktywnych wierszach przełączają się, gdy zostanie kliknięty odstęp w komórce
 -  [Usterka 474848] Rozszerzone podglądy z siatkami nie są wyświetlane
 -  [Usterka 474851] Hiperłącza w kontrolkach grup odwołań nie działają 
@@ -176,6 +194,7 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
 -  [KB 4569441] Problemy z renderowaniem wielokolumnowych list kart, etykiet narzędzi na obrazach oraz opcji wyświetlania w niektórych polach
 -  [KB 4575279] Nie wszystkie oznaczone wiersze są usuwane z arkusza finansowego
 -  [KB 4575233] Opcje wyświetlania nie są przywracane po przeniesieniu do innego wiersza
+-  [Usterka 477884] Wyszukiwania zwracają nieprawidłową wartość/rekord, jeśli uaktywniono nową kontrolkę siatki
 -  [KB 4571095] Księgowanie przyjęcia produktu następuje po przypadkowym naciśnięciu klawisza Enter (poprawna obsługa domyślnej akcji strony)
 -  [KB 4575437] Wyszukiwania z edytowalnymi kontrolkami są nieoczekiwanie zamykane
 -  [KB 4569418] Zduplikowany wiersz utworzony w formularzu harmonogramu dostaw
@@ -225,7 +244,7 @@ W tej sekcji jest przechowywana lista znanych problemów dotyczących nowej kont
 - [KB 4558383] Kontrolki poza siatką nie są aktualizowane po usunięciu ostatniego rekordu.
 - [KB 4558587] Grupy odwołań z polami kombi przeznaczonymi do zamiany nie są wyświetlane wartości.
 - [KB 4562143] Pola nie są aktualizowane, gdy przetwarzanie zmian w wierszu/siatce zostanie zablokowane po usunięciu wiersza.
-- [KB 4562645] Wyjątek występuje podczas otwierania wyszukiwania podczas wykonywania testów narzędzi administracji zdalnej serwera (RSAT).
+- [KB 4562645] Wyjątek występuje podczas otwierania wyszukiwania podczas wykonywania testów w narzędziu Regression Suite Automation Tool (RSAT).
 
 ### <a name="fixed-as-part-of-10010"></a>Naprawiono w ramach 10.0.10
 

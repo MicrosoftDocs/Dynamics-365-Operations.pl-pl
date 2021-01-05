@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de31469e79addfb82b3b57e647ff82e4d254881a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771313"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688132"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 
@@ -105,7 +104,7 @@ Na koniec trzeba pobrać następujące pliki z [CustomerSource](https://go.micro
     > [!NOTE]
     > Aktywny dostawca konfiguracji jest wprowadzany automatycznie. Ten dostawca będzie mógł obsługiwać tę konfigurację. Inni dostawcy mogą używać tej konfiguracji, ale nie będą mogli nią zarządzać.
 
-7. Opcjonalnie: w polu **typ formatu** można wybrać konkretny format dokumentu elektronicznego. Jeśli wybierzesz **PDF**, w czasie projektowania, Projektant operacji raportowania elektronicznego będzie oferować tylko elementy formatu, które mają zastosowanie tylko do dokumentów, które są generowane w formacie PDF (**pdf\plik**, **scalanie pdf\pdf**, itp.). Jeśli to pole pozostanie puste, format dokumentu elektronicznego zostanie określony w czasie projektowania w projektancie operacji raportowania elektronicznego, gdy zostanie dodany pierwszy element formatu. Na przykład jeśli dodasz **Excel\plik** jako pierwszy element formatu, Projektant operacji raportowania elektronicznego będzie oferować tylko elementy formatu, które mają zastosowanie tylko do dokumentów, które są generowane w formacie programu Excel (**Excel\komórka**, **Excel\zakres** itd.). itd.).
+7. Opcjonalnie: w polu **typ formatu** można wybrać konkretny format dokumentu elektronicznego. Jeśli wybierzesz **PDF**, w czasie projektowania, Projektant operacji raportowania elektronicznego będzie oferować tylko elementy formatu, które mają zastosowanie tylko do dokumentów, które są generowane w formacie PDF (**pdf\plik**, **scalanie pdf\pdf**, itp.). Jeśli to pole pozostanie puste, format dokumentu elektronicznego zostanie określony w czasie projektowania w projektancie operacji raportowania elektronicznego, gdy zostanie dodany pierwszy element formatu. Na przykład jeśli dodasz **Excel\plik** jako pierwszy element formatu, Projektant operacji raportowania elektronicznego będzie oferować tylko elementy formatu, które mają zastosowanie tylko do dokumentów, które są generowane w formacie programu Excel (**Excel\komórka**, **Excel\zakres** itd.). itd..
 8. Wybierz **Utwórz konfigurację**.
 
 Zostanie utworzona nowa konfiguracja raportowania elektronicznego. Można użyć wersji roboczej tej konfiguracji do przechowywania składnika formatu raportowania elektronicznego, który jest przeznaczony do generowania dokumentów elektronicznych w formacie PDF.
@@ -283,7 +282,7 @@ Następnie zostanie załadowany przykładowy format raportowania elektronicznego
 ### <a name="run-the-format-configuration"></a>Uruchom konfigurację formatu
 
 1. Na stronie **konfiguracje** w drzewie wybierz opcję **Model Intrastat \> Raport Intrastat (PDF)**.
-2. Wybierz opcję**Uruchom**.
+2. Wybierz opcję **Uruchom**.
 3. Wybierz opcję **Przeglądaj**. Przejdź do pliku **Intrastat sample data.xlsx**, który został pobrany wcześniej jako wstępnie wymagany, i wybierz ten plik.
 4. Kliknij przycisk **OK**.
 5. W polu **kierunek raportu** wybierz opcję **oba**, aby wypełnić wszystkie transakcje z importowanego skoroszytu programu Excel w generowanym raporcie PDF

@@ -17,11 +17,11 @@ ms.author: v-kikozl
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: b7c7c63083dceebe73bfa04169a0b2da3228c8b1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004716"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408363"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Commerce dla Europy Wschodniej
 

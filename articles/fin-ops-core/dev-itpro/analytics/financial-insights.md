@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 596a067611ac4477f4469dbbc370c971e0f7a35d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181779"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682778"
 ---
 # <a name="financial-insights"></a>Szczegółowe dane finansowe
 
@@ -81,14 +80,14 @@ Istnieje możliwość zdefiniowania cyklicznego zadania wsadowego do regularnej 
 ## <a name="security"></a>Zabezpieczenia
 Obecnie dane w osadzonych raportach usługi Power BI nie mogą się ograniczać do firm, wobec których użytkownik ma dostęp. W związku z tym wbudowane raporty usługi Power BI są kontrolowane za pomocą obowiązków w konfiguracji zabezpieczeń. Zdefiniowane obowiązki umożliwiają dostęp do danych wszystkich firm lub tylko aktywnej firmy. W poniższej tabeli przedstawiono istniejące obowiązki oraz role, do których są one przypisane. Obowiązki można usuwać i przypisywać do różnych ról zgodnie z potrzebami organizacji.
 
-| Obowiązek                                    | Role | Opis |
+| Obowiązek                                    | Role | opis |
 |-----------------------------------------|-------|------------|
 | Wyświetlanie obszaru roboczego Dyrektor finansowy — przegląd             | Dyrektor finansowy | Ten obowiązek umożliwia dostęp do obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
 | Wyświetlanie szczegółowych danych finansowych bieżącej firmy | <ul><li>Księgowy</li><li>Menedżer ds. księgowania</li><li>Kierownik ds. księgowania</li><li>Audytor</li><li>Menedżer budżetu</li><li>Dyrektor naczelny</li><li>Dyrektor finansowy</li><li>Kontroler finansowy</li></ul> | Ten obowiązek umożliwia dostęp do obszaru roboczego Szczegółowe dane finansowe. Domyślnie jako filtr jest używana aktywna firma. Nie można dodać innych firm. |
 | Wyświetlanie międzyfirmowych szczegółowych danych finansowych   | W rozwiązaniu Microsoft Dynamics 365 for Finance and Operations Enterprise Edition wer. 7.3 ten obowiązek nie jest przypisany do roli. W następnej wersji ten obowiązek będzie przypisany do roli Dyrektor finansowy. | Ten obowiązek umożliwia dostęp do menu obszaru roboczego Przegląd dla dyrektora finansowego. Domyślnie jako filtr jest używana aktywna firma. Można jednak dodać wszystkie firmy, niezależnie od tego, czy użytkownik ma dostęp do innych firm. |
 
 
-## <a name="financial-reporting-vs-finanical-insights"></a>Raporty finansowe a Szczegółowe dane finansowe
+## <a name="financial-reporting-vs-financial-insights"></a>Raporty finansowe a Szczegółowe dane finansowe
 Mimo iż obszar roboczy **Szczegółowe dane finansowe** zawiera sprawozdania finansowe, nie zastępuje modułu Raporty w module Finance aplikacji. Domyślne sprawozdania finansowe w obszarze roboczym **Szczegółowe dane finansowe** mają ograniczony zakres i nie obejmują wszystkich typów sprawozdań finansowych. Raporty finansowe to nadal podstawowe narzędzie do projektowania, tworzenia i generowania ustawowych sprawozdań finansowych.
 
 Poniższy wykres porównawczy pomoże zidentyfikować różnice między oboma opcjami:
@@ -131,7 +130,7 @@ Użytkownicy mogą filtrować raport przy użyciu okienka **Filtr** po lewej str
 - **Filtry poziomu elementu wizualnego** — te filtry są stosowane tylko do wybranego elementu wizualnego. Są nakładane na filtry poziomu strony.
 - **Filtr drążenia wskroś** — ten filtr filtruje od zastosowanego „źródłowego” elementu wizualnego do bieżącego elementu wizualnego podczas drążenia wskroś od źródłowego elementu wizualnego do bieżącego elementu wizualnego.
 
-![Filtr](./media/filter.png)
+![Opcje filtrowania](./media/filter.png)
 
 Aby usunąć wartość określonego filtru, wybierz symbol gumki obok tego filtru. Nie usuwaj filtru naciśnięciem przycisku X. Jeśli wybierzesz symbol X, pole, według którego odbywa się filtrowanie, zostanie usunięte jako opcja filtru. Jeśli przypadkowo usuniesz pole z filtru, zamknij obszar roboczy, a następnie otwórz go ponownie. Zostaną wtedy ponownie zastosowane domyślne ustawienia filtru.
 
@@ -176,25 +175,25 @@ W usłudze Power BI jest dostępnych kilka poziomów przechodzenia do szczegół
 
 Na poniższej ilustracji sprawozdanie **Bilans próbny** jest zwinięte do najwyższego poziomu w hierarchii wierszy, czyli do typu konta głównego.
 
-![Bilans próbny](./media/trial-balance.png)
+![Zestawienie bilansów próbnych](./media/trial-balance.png)
 
 Aby wyświetlić następny poziom hierarchii, czyli kategorie konta głównego, można w polu **Wyszczególnij według** ustawić opcję **Wiersze**, a następnie nacisnąć przycisk **Rozwiń** (trzeci przycisk za polem Wyszczególnij według). Teraz zobaczysz rozwinięte wszystkie kategorie konta głównego. Obecnie usługa Power BI nie pozwala rozwinąć tylko jednego wiersza lub kolumny, ale nadal widzieć wszystkie pozostałe wiersze lub kolumny.
 
-![Bilans próbny](./media/trial-balance2.png)
+![Przechodzenie do coraz bardziej szczegółowych wierszy bilansu próbnego](./media/trial-balance2.png)
 
 Aby rozwinąć do poziomu kont głównych dla wszystkich wierszy, ponownie użyj przycisku **Rozwiń**. Jednak aby uszczegółowić do kont głównych tylko dla jednego wiersza, najpierw wybierz przycisk **Przejdź do szczegółów** (pojedynczą strzałkę skierowaną w dół po prawej stronie okna), a następnie wybierz wiersz, który chcesz uszczegółowić. Na poniższej ilustracji przedstawiono wynik zaznaczenia wiersza **Sprzedaż** po naciśnięciu przycisku **Przejdź do szczegółów**.
 
-![Bilans próbny](./media/trial-balance3.png)
+![Przycisk rozwijania bilansu próbnego](./media/trial-balance3.png)
 
 Po przejściu do szczegółów w jednym wierszu trzeba kliknąć kilka razy, aby wrócić do pełnego bilansu próbnego. Przycisk **Uogólnij** (pierwszy za polem **Wyszczególnij według**) powoduje uogólnianie tylko w kontekście kategorii **Sprzedaż**, jak pokazano na poniższej ilustracji.
 
-![Bilans próbny](./media/trial-balance4.png)
+![Przycisk uogólniania bilansu próbnego](./media/trial-balance4.png)
 
 Można dalej klikać przycisk **Uogólnij**, aby wrócić do najwyższego poziomu podsumowania dla wierszy.
 
 W oknie usługi Power BI znajduje się również przycisk, który umożliwia przejście do następnego poziomu w hierarchii (drugi przycisk za polem **Wyszczególnij według**). Efekt użycia tego przycisku różni się od działania przycisku **Rozwiń** (trzeci przycisk za polem **Wyszczególnij według**), który służy do rozwijania hierarchii. Po rozwinięciu hierarchii pozostaje ona w raporcie. Na przykład, jak pokazano wcześniej, jeśli rozwiniesz poziom typu konta głównego, będzie on widoczny w raporcie. Jednak po przejściu do następnego poziomu w hierarchii raport nie będzie już pokazywał obiektu nadrzędnego w hierarchii, jak przestawiono na ilustracji poniżej.
 
-![Bilans próbny](./media/trial-balance5.png)
+![Przycisk przechodzenia wstecz w bilansie próbnym](./media/trial-balance5.png)
 
 Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Finance and Operations.
 
@@ -245,6 +244,6 @@ Usługa Power BI nie oferuje opcji ukrywania i wyświetlania pustych wierszy. Je
 
 Informacje zawarte w poniższych materiałach nie są wymagane, aby można było używać osadzonych raportów w obszarach roboczych **Przegląd dla dyrektora finansowego** i **Szczegółowe dane finansowe** w środowisku produkcyjnym. Przydają się jedynie do środowisk programistycznych oraz jeśli chcesz osadzać własne raporty usługi Power BI.
 
-- <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
+- [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
-- <https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
+- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)

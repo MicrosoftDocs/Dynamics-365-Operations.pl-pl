@@ -19,11 +19,11 @@ ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
 ms.openlocfilehash: 740ae20704abd9c59f64c2c7622fa96d65dccb1d
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997153"
+ms.locfileid: "4456259"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Dynamics 365 Supply Chain Management
 
@@ -36,7 +36,7 @@ Microsoft Dynamics 365 Supply Chain Management udostępnia aparat kalkulacji cen
 ## <a name="use-the-pricing-engine-from-supply-chain-management-in-sales"></a>Użycie aparatu cenowego z Supply Chain Management w Sales
 
 1. W Sales przejdź do **Sales \> Zamówienia**.
-2. Wybierz **Nowy** , aby utworzyć nowe zamówienie lub wybierz istniejące zamówienie z listy **Moje zamówienia**.
+2. Wybierz **Nowy**, aby utworzyć nowe zamówienie lub wybierz istniejące zamówienie z listy **Moje zamówienia**.
 3. Dodaj nowy wiersz zamówienia.
 4. W przypadku tworzenia nowego zamówienia w okienku akcji wybierz opcję **Zamówienie cenowe**. Jeśli aktualizujesz istniejące zamówienie, wybierz **Ponownie oblicz** w okienku akcji.
 

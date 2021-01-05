@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5277081d9f7adcc43c30d30208d13c7e39d76118
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140382"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645288"
 ---
 # <a name="record-a-vendor-invoice-in-the-invoice-journal"></a>Rejestrowanie faktury od dostawcy w arkuszu faktur
 
@@ -43,7 +43,9 @@ W tym przewodniku po zadaniach pokazano sposób rejestrowania faktur dostawców,
     * Wartość pola **Grupa podatków** zostanie pobrana domyślnie z ustawień konta dostawcy.  
     * Wartość pola **Grupa podatków** dla towaru jest pobierana z ustawień konta głównego określonego w polu **Konto przeciwstawne**.  
     * **Termin płatności** zostanie obliczony na podstawie warunków płatności.  
-    * Wartość pola **Rabat gotówkowy** zostanie pobrana domyślnie z ustawień konta dostawcy.  
+    * Wartość pola **Rabat gotówkowy** zostanie pobrana domyślnie z ustawień konta dostawcy.
+12. Jeśli włączono przepływ pracy Arkusz faktur od dostawców, kliknij kolejno opcje **Przepływ pracy > Prześlij**.
+    * Po zatwierdzeniu przesłanych informacji data zostanie przeniesiona do pierwszego dnia następnego otwartego okresu, jeśli data księgowania transakcji przypada w okresie wstrzymania lub zamknięcia księgowania w księdze.
 12. Kliknij przycisk **Księguj**.
 13. Zamknij stronę.
 

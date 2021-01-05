@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
-ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
+ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3653783"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645776"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
@@ -92,6 +92,11 @@ Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach
 ### <a name="inventory-management"></a>Zarządzanie zapasami
 
 W prognozach przepływów pieniężnych można uwzględniać prognozy dostaw zapasów i popytu na zapasy. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Zarządzanie zapasami** zaznacz modelu prognozy do uwzględnienia w prognozie przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wierszy prognoz dostaw i popytu.
+
+### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Konfigurowanie wymiarów dla prognozowania przepływów pieniężnych
+Nowa karta na stronie **Konfiguracja prognozowania przepływów pieniężnych** umożliwia kontrolowanie wymiarów finansowych, które mają być używane do filtrowania, w obszarze roboczym **Prognozowanie przepływów pieniężnych**. Ta karta będzie wyświetlana tylko wtedy, gdy jest włączona funkcja prognoz przepływów pieniężnych. 
+
+Na karcie **Wymiary** wybierz z listy wymiary, które mają być użyte do filtrowania, a następnie za pomocą klawiszy strzałek przenieś je do prawej kolumny. Do filtrowania danych prognozy przepływów pieniężnych można wybrać tylko dwa wymiary. 
 
 ### <a name="calculation"></a>Obliczenie
 

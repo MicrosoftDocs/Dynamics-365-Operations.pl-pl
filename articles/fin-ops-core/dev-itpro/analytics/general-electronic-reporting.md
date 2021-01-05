@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d050bfa5b28219ef421dba4ed3a72f11bfd4daee
-ms.sourcegitcommit: 7816902b59aa61d9183d54b50a86e282661e3971
+ms.openlocfilehash: e40aa168c296af86721862d1751212d16d47bd49
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "3421662"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682606"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (RE)
 

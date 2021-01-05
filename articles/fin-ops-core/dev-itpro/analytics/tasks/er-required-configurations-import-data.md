@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: d9b26f4963f32be34ae1d954a3f363be7ea28d41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143322"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684289"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
 
@@ -98,11 +97,11 @@ Kroki opisane w tym podzadaniu pokazują, jak można utworzyć nową konfiguracj
 
     Należy zauważyć, że zaprojektowany format jest tutaj prezentowany jako składnik źródła danych.  
 
-6. W drzewie rozwiń węzeł „format: Rekord\*rozliczenie: Element XML 1..1 (rozliczenie): Rekord”.
-7. W drzewie rozwiń węzeł „format: Rekord\*rozliczenie: Element XML 1..1 (rozliczenie): Rekord\transakcja: Element XML 0..* (transakcja): Lista rekordów”.
-8. W drzewie rozwiń węzeł „format: Rekord\*rozliczenie: Element XML 1..1 (rozliczenie): Rekord\transakcja: Element XML 0..* (transakcja): Lista rekordów\*dostawca: Element XML 1..1 (dostawca): Rekord”.
-9. W drzewie rozwiń węzeł „format: Rekord\*rozliczenie: Element XML 1..1 (rozliczenie): Rekord\transakcja: Element XML 0..* (transakcja): Lista rekordów\kraj: Element XML 0..1 (kraj): Rekord”.
-10. W drzewie zaznacz element „format: Rekord\*rozliczenie: Element XML 1..1 (rozliczenie): Rekord\transakcja: Element XML 0..* (transakcja): Lista rekordów\*dostawca: Element XML 1..1 (dostawca): Rekord”.
+6. W drzewie rozwiń węzeł `format: Record\*settlement: XML Element 1..1 (settlement): Record`.
+7. W drzewie rozwiń węzeł `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list`.
+8. W drzewie rozwiń węzeł `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
+9. W drzewie rozwiń węzeł `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record`.
+10. W drzewie zaznacz węzeł `format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\*vendor: XML Element 1..1 (vendor): Record`.
 
     Należy zauważyć, że prezentacja obowiązkowych i opcjonalnych elementów formatu różni się od wstępnie zdefiniowanego składnika „format” źródła danych.  
 11. W drzewie rozwiń węzeł „Transakcje: Lista rekordów = format.rozliczenie.'$enumerated'”.
@@ -237,7 +236,7 @@ Uruchom to mapowanie formatu w celach testowych. Użyj pobranego wcześniej plik
 19. Zamknij stronę.
 20. Kliknij przycisk Edytuj.
 
-    Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach Dynamics 365 Finance” (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
+    Jeśli została zainstalowana poprawka „KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach Dynamics 365 Finance” ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), wykonaj następny krok „Włączanie flagi „Domyślne dla mapowania modelu”” dla wprowadzonej konfiguracji formatu. W przeciwnym razie pomiń następny krok.  
 
 21. Wybierz opcję Tak w polu Domyślne dla mapowania modelu.
 22. W drzewie zaznacz element „Model płatności 1099”.
@@ -245,7 +244,7 @@ Uruchom to mapowanie formatu w celach testowych. Użyj pobranego wcześniej plik
 24. Kliknij opcję Mapuj model na źródło danych.
 25. Kliknij przycisk Uruchom.
 
-    Jeśli została zainstalowana poprawka KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ), wybierz preferowane mapowanie modelu w polu wyszukiwania. Jeśli jeszcze nie zainstalowano poprawki, przejdź do następnego kroku, ponieważ mapowanie zostało już wybrane przez definicję domyślnej konfiguracji formatu.  
+    Jeśli została zainstalowana poprawka KB 4012871 Obsługa mapowań modelu dla Niemiec w osobnych konfiguracjach z możliwością określenia różnych rodzajów warunków wstępnych na potrzeby wdrażania ich w różnych wersjach ([KB 4012871](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871)), wybierz preferowane mapowanie modelu w polu wyszukiwania. Jeśli jeszcze nie zainstalowano poprawki, przejdź do następnego kroku, ponieważ mapowanie zostało już wybrane przez definicję domyślnej konfiguracji formatu.  
     
     Jeśli nie zainstalowano poprawki KB 4012871, zwróć uwagę, że okno dialogowe zawiera dodatkowe pytanie o mapowanie modelu, które służy do analizy importowanego pliku. Dane są następnie przenoszone z okna dialogowego do modelu danych. Obecnie można wybrać, które mapowanie formatu ma być używane w zależności od typu pliku planowanego do zaimportowania.  
     

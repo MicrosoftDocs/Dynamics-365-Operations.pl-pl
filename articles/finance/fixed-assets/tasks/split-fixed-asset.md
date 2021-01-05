@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40703622bc8c7a21451d31e7606596c5edbe90f7
-ms.sourcegitcommit: 51e626675b0130fa32a84ce2d9119b68ea928018
+ms.openlocfilehash: da2dd4889a5f4722ff60a76a4a023c63fb59ad55
+ms.sourcegitcommit: 9f32389715b226c11e74c53547527e0a8b51e300
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4000300"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "4514333"
 ---
 # <a name="split-a-fixed-asset"></a>Rozbicie środka trwałego
 
@@ -39,7 +39,7 @@ W tym przewodniku po zadaniach jedna księga składników majatku zostanie podzi
 
 ## <a name="split-a-fixed-asset"></a>Rozbicie środka trwałego
 
-Przed podziałem środka trwałego na amortyzację stan księgi środków trwałych powinien zostać zmieniony ręcznie z **Zamkniętego** na **Otwarte**. Ten krok jest wymagany, ponieważ stan księgi musi być **Otwarty** , jeśli konieczne jest księgowanie transakcji dla środka trwałego (np. sprzedaży za likwidację). Po zmianie stanu księgi środków trwałych należy wykonać poniższe kroki w celu podzielenia środka trwałego.
+Przed podziałem środka trwałego na amortyzację stan księgi środków trwałych powinien zostać zmieniony ręcznie z **Zamkniętego** na **Otwarte**. Ten krok jest wymagany, ponieważ stan księgi musi być **Otwarty**, jeśli konieczne jest księgowanie transakcji dla środka trwałego (np. sprzedaży za likwidację). Należy również włączyć parametr **Zezwalaj na wiele transakcji w jednym załączniku** na karcie **Ogólne** na stronie **Parametry księgi głównej**. Po zmianie stanu księgi środków trwałych i pozwoleniu na dodawanie wielu transakcji w jednym załączniku należy wykonać poniższe kroki w celu podzielenia składnika majątku.
 
 1. Na liście odszukaj i wybierz łącze środka trwałego, który ma zostać podzielony.
 2. Wybierz **Księgi**. Wybierz księgę, która zostanie użyta w celu wydzielenia nowego składnika aktywów.

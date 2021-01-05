@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b21d468d672277be14877b93e291e9833659c54a
-ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
+ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "3997407"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683654"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -56,15 +56,15 @@ W Supply Chain Management pola **oddział** i **magazyn** są wymagane w odniesi
 
 Sekwencje numerów dla Supply Chain Management i Sales nie są łączone, gdy oferty i zamówienia są tworzone i synchronizowane w Sales i Supply Chain Management. Jeśli zamówienie sprzedaży utworzone w Sales jest synchronizowane z modułem Supply Chain Management, to ma ten sam numer zamówienia sprzedaży w Supply Chain Management. Aby mieć pewność, że numer zamówienia sprzedaży nie jest duplikowany, należy stosować różne systemy sekwencji numerów w dwóch aplikacjach.
 
-Na przykład sekwencja numerów w Supply Chain Management ma wartość **1, 2, 3, 4, 5, ...** , a sekwencja numerów w sprzedaży to **100, 99, 98, ...**. Jeśli w sprzedaży zostanie utworzonych 100 zamówień sprzedaży, w końcu zostanie wygenerowany numer zamówienia, który już istnieje w Supply Chain Management. Innymi słowy, dwie sekwencje numerów będą nakładać się na siebie w miarę tworzenia zamówień sprzedaży w module Supply Chain Management i Sales. Zamiast tego można użyć sekwencji numerów, na przykład **F1, F2, F3, ...** w Supply Chain Management i sekwencjami numerów, takimi jak **C1, C2, C3, ...** w Sales. Te sekwencje numerów nigdy nie będą generowały zduplikowanych numerów zamówień sprzedaży.
+Na przykład sekwencja numerów w Supply Chain Management ma wartość **1, 2, 3, 4, 5, ...**, a sekwencja numerów w sprzedaży to **100, 99, 98, ...**. Jeśli w sprzedaży zostanie utworzonych 100 zamówień sprzedaży, w końcu zostanie wygenerowany numer zamówienia, który już istnieje w Supply Chain Management. Innymi słowy, dwie sekwencje numerów będą nakładać się na siebie w miarę tworzenia zamówień sprzedaży w module Supply Chain Management i Sales. Zamiast tego można użyć sekwencji numerów, na przykład **F1, F2, F3, ...** w Supply Chain Management i sekwencjami numerów, takimi jak **C1, C2, C3, ...** w Sales. Te sekwencje numerów nigdy nie będą generowały zduplikowanych numerów zamówień sprzedaży.
 
 ## <a name="sales-quotations"></a>Oferty sprzedaży
 
 Oferty sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Management. W przypadku tworzenia oferty w Sales jest ona synchronizowana z Supply Chain Management w czasie rzeczywistym. Podobnie, w przypadku tworzenia oferty w Supply Chain Management jest ona synchronizowana z Sales w czasie rzeczywistym. Należy uwzględnić następujące informacje:
 
-+ Można dodać rabat do produktu w ofercie. W takim przypadku rabat zostanie zsynchronizowany z Supply Chain Management. Pola **Rabat** , **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Ta konfiguracja nie obsługuje mapowania integracji. Zamiast tego w obecnym kształcie systemu pola **Cena** , **Rabat** , **Opłata** i **Podatek** są zarządzane i obsługiwane przez program Supply Chain Management.
-+ Pola tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu** , **Rabat** i **Kwota frachtu**.
-+ Pola **Warunki frachtu** , **Warunki dostawy** , **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
++ Można dodać rabat do produktu w ofercie. W takim przypadku rabat zostanie zsynchronizowany z Supply Chain Management. Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Ta konfiguracja nie obsługuje mapowania integracji. Zamiast tego w obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są zarządzane i obsługiwane przez program Supply Chain Management.
++ Pola tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu**, **Rabat** i **Kwota frachtu**.
++ Pola **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
 
 Jeśli używane jest także rozwiązanie Field Service, należy ponownie włączyć parametr **Szybkie utworzenie wiersza oferty**. Ponowne włączenie parametru umożliwia kontynuowanie tworzenia wierszy oferty przy użyciu funkcji szybkiego tworzenia.
 1. Przejdź do aplikacji Dynamics 365 Sales.
@@ -98,10 +98,10 @@ W przypadku synchronizacji z Supply Chain Management do Sales można uzyskać na
 
 ## <a name="dual-write-solution-for-sales"></a>Podwójny zapis dla Sales
 
-Nowe pola zostały dodane do jednostki **Zamówienie** i są wyświetlane na stronie. Większość tych pól jest wyświetlana na karcie **integracja** w module Sales. Aby dowiedzieć się więcej o mapowaniu pól stanu, zapoznaj się z tematem dokumentacji [Skonfiguruj mapowanie dla pól stanu zamówienia sprzedaży](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/sales-status-map?branch=robin-dw-status-map)
+Nowe pola zostały dodane do jednostki **Zamówienie** i są wyświetlane na stronie. Większość tych pól jest wyświetlana na karcie **integracja** w module Sales. Aby dowiedzieć się więcej o mapowaniu pól stanu, patrz [Skonfiguruj mapowanie dla pól stanu zamówienia sprzedaży](sales-status-map.md).
 
 + Przyciski **Utwórz fakturę** i **Anuluj zamówienie** na stronie **zamówienia sprzedaży** są ukryte w Sales.
-+ Wartość **Stan zamówienia sprzedaży** pozostanie **Aktywna** , aby zapewnić przepływ zmian z rozwiązania Supply Chain Management do zamówienia sprzedaży w programie Sales. Aby kontrolować to zachowanie, ustaw wartość domyślną pola **Kod stanu \[Stan\]** na **Aktywne**.
++ Wartość **Stan zamówienia sprzedaży** pozostanie **Aktywna**, aby zapewnić przepływ zmian z rozwiązania Supply Chain Management do zamówienia sprzedaży w programie Sales. Aby kontrolować to zachowanie, ustaw wartość domyślną pola **Kod stanu \[Stan\]** na **Aktywne**.
 
 ## <a name="invoices"></a>Faktury
 
@@ -110,11 +110,11 @@ Faktury sprzedaży są tworzone w Supply Chain Management i synchronizowane z pr
 + Pole **Numer faktury** zostało dodane do jednostki **Faktura** i jest wyświetlane na stronie.
 + Przycisk **Utwórz fakturę** na stronie **Zamówienie sprzedaży** jest ukryty, ponieważ faktury zostaną utworzone w rozwiązaniu Supply Chain Management i zsynchronizowane z programem Sales. Strony **Faktura** nie można edytować, ponieważ faktury zostaną zsynchronizowane z rozwiązania Supply Chain Management.
 + Wartość **Stan zamówienia sprzedaży** automatycznie zmienia się na **Zafakturowano** po zsynchronizowaniu powiązanej faktury z rozwiązania Supply Chain Management do programu Sales. Ponadto właściciel zamówienia sprzedaży, u którego utworzono fakturę jest przypisywany jako właściciel faktury. Dlatego właściciel zamówienia sprzedaży może wyświetlić fakturę.
-+ Pola **Warunki frachtu** , **Warunki dostawy** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
++ Pola **Warunki frachtu**, **Warunki dostawy** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
 
 ## <a name="templates"></a>Szablony
 
-Moduł Od prospektu do gotówki zawiera mapy jednostek podstawowych, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
+Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
 
 | Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
 |-----------------------------|-----------------------------------|-------------|
@@ -126,7 +126,7 @@ Moduł Od prospektu do gotówki zawiera mapy jednostek podstawowych, które dzia
 | Nagłówek oferty sprzedaży CDS  | Cytaty                            |             |
 | Wiersze oferty sprzedaży CDS   | quotedetails                      |             |
 
-Oto powiązane mapowania jednostek podstawowych dla prospektu do gotówki:
+Oto powiązane mapowania tabeli podstawowej dla prospektu do gotówki:
 
 + [Odbiorcy (wersja 3) do kont](customer-mapping.md#customers-v3-to-accounts)
 + [Kontakty CDS (wersja 2) do contacts](customer-mapping.md#cds-contacts-v2-to-contacts)

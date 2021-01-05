@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.custom: 252754
 ms.assetid: 11a72e4a-7899-42be-b180-a0f4b86d88f1
 ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fb43be5e57758664c5e17e48db5b9c38630b2ded
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812539"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694996"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)
 
@@ -32,7 +31,7 @@ Ten temat zawiera listę nowych lub zaktualizowanych przewodników po zadaniach,
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Przewodniki po zadaniach w ujednoliconej bibliotece APQC (z sierpnia 2016 r. — wszystkie języki) dla systemu Microsoft Dynamics AX
 
-Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zapoznaj się z [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
+Ujednolicona biblioteka APQC (z sierpnia 2016 r. — wszystkie języki) zawiera przewodniki po zadaniach, które mają pomóc w używaniu aktualizacji 2 platformy Microsoft Dynamics AX (z sierpnia 2016 r.), aktualizacji aplikacji Dynamics AX z maja 2016 r. oraz wydania systemu Microsoft Dynamics AX z lutego 2016 r. Aby uzyskać więcej informacji o tych wersjach, zobacz [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md). W tej bibliotece są dostępne przetłumaczone wersje przewodników po zadaniach. Aby uzyskać więcej informacji na temat sposobu łączenia systemu Pomocy z biblioteką przewodników po zadaniach, zobacz [System Pomocy](help-overview.md).
 
 ### <a name="data-access"></a>Dostęp do danych
 

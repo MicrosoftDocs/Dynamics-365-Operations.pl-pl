@@ -19,11 +19,11 @@ ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
-ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
+ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022574"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "4446973"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
@@ -208,7 +208,7 @@ Oznacza przeniesienie zmniejszenia salda składnika majątku z prawem do użytko
 ## <a name="create-an-asset-lease"></a>Tworzenie wynajmu składnika majątku
 Aby utworzyć nowy wynajem, należy wykonać następujące kroki. 
 
-1. Aby korzystać z funkcji **Wynajem składnika majątku** , należy ją włączyć w obszarze roboczym **Zarządzanie funkcjami**. W obszarze roboczym **Zarządzanie funkcjami** wybierz opcję **Wszystkie** , aby wyświetlić na stronie wszystkie funkcje. Wybierz **Wynajem składnika majątku** , a następnie **Wyłącz teraz**.
+1. Aby korzystać z funkcji **Wynajem składnika majątku**, należy ją włączyć w obszarze roboczym **Zarządzanie funkcjami**. W obszarze roboczym **Zarządzanie funkcjami** wybierz opcję **Wszystkie**, aby wyświetlić na stronie wszystkie funkcje. Wybierz **Wynajem składnika majątku**, a następnie **Wyłącz teraz**.
 2. Przejdź do **Wynajem składnika majątku >Wspólne > Podsumowanie wynajmu**. Na skróconej karcie **Ogólne** wprowadź wartość w wymaganych polach. 
    - **Szczegóły wynajmu**
    - **Okres użyteczności składnika majątku (w miesiącach)**
@@ -225,19 +225,19 @@ Aby utworzyć nowy wynajem, należy wykonać następujące kroki.
 
 5. Przełącz się na skróconą kartę **Ogólne**. Zostaną obliczone wartości **Początkowy składnik majątku z prawem do użytkowania** i **Zobowiązanie z tytułu wynajmu**. 
 
-6. Przejdź do skróconej karty **Test klasyfikacji wynajmu** , aby sprawdzić wartość w **Typ wynajmu**. 
+6. Przejdź do skróconej karty **Test klasyfikacji wynajmu**, aby sprawdzić wartość w **Typ wynajmu**. 
 
    Automatyczny **Typ wynajmu** jest klasyfikowany zgodnie z kryteriami zdefiniowanymi na stronie **Księgi**.
 
 7.  Przejdź do obszaru **Harmonogram płatności** w sekcji **Funkcja**.  
 
-   Na stronie **Harmonogram płatności** widoczne są przyszłe harmonogramy płatności dla identyfikatora wynajmu. Wybierz opcję **Potwierdź harmonogram** , aby móc zaksięgować transakcje **Początkowe uznanie**. 
+   Na stronie **Harmonogram płatności** widoczne są przyszłe harmonogramy płatności dla identyfikatora wynajmu. Wybierz opcję **Potwierdź harmonogram**, aby móc zaksięgować transakcje **Początkowe uznanie**. 
 
 [![Funkcja początkowego uznania](./media/overview-13.png)](./media/overview-13.png)
 
-8. Wybierz opcję **Początkowe uznanie** , aby utworzyć arkusz początkowego uznania. 
+8. Wybierz opcję **Początkowe uznanie**, aby utworzyć arkusz początkowego uznania. 
 
-9. Wybierz opcję **Dzienniki wynajmu składnika majątku** , aby zaksięgować transakcję początkowego uznania. 
+9. Wybierz opcję **Dzienniki wynajmu składnika majątku**, aby zaksięgować transakcję początkowego uznania. 
 
    Z poziomu harmonogramu płatności można otworzyć stronę szczegółową zawierającą transakcji składnika majątku z prawem do użytkowania. 
  

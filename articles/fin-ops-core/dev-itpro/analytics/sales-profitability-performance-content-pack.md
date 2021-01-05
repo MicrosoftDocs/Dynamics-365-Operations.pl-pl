@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SalesProfitabilityPerformancePowerBI
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 490a4f6d1bd9f3bdb0af09bd4e6f7f8fb2c92a1b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b5ad461c86f44d880f57c940f6e3a5cb325f7e08
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984281"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4688242"
 ---
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Pakiet zawartości usługi Power BI Wyniki sprzedaży i rentowności
 
@@ -51,7 +50,7 @@ Rentowność można analizować w następujące sposoby:
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
 Pakiet zawartości Power BI **Wyniki w zakresie sprzedaży i rentowności** jest wyświetlany na stronie **Wyniki w zakresie sprzedaży i rentowności** (**Sprzedaż i marketing** \> **Zapytania i raporty** \> **Analiza wydajności sprzedaży** \> **Wyniki w zakresie sprzedaży i rentowności**).
 
-## <a name="metricsthat-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Wskaźniki umieszczone w pakiecie zawartości usługi Power BI
 Pakiet zawartości usługi Power BI **Wyniki sprzedaży i rentowności** zawiera raport obejmujący zbiór miar. Te wskaźniki są wizualizowane jako wykresy, kafelki i tabele. Następująca tabela zawiera przegląd wizualizacji dostępnych w pakiecie zawartości.
 
 | Strona raportu            | Wykresy                                     | Kafelki                                                   |

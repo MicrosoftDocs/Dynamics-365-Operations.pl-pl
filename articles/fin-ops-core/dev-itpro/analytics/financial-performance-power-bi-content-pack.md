@@ -10,31 +10,30 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 34ebb9c6262defa5ccf520ad51101eb3bc613fef
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771126"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682752"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Rozwiązanie PowerBI.com Wyniki finansowe
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> To rozwiązanie PowerBI.com zostało zaniechane, jak to zostało udokumentowane w [Usuwanie lub przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> To rozwiązanie PowerBI.com zostało zaniechane, jak to zostało udokumentowane w [Usunięte i przestarzałe funkcje w Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 W tym temacie opisano pakiet zawartość **Wyniki finansowe** dostępny dla rozwiązania PowerBI.com. Omówiono dostępny pulpit nawigacyjny i raporty oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania rozwiązania.
 
 ## <a name="main-account-setup"></a>Konfiguracja konta głównego
-Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
+Ponieważ organizacje chcą, aby kwoty zobowiązań i przychodów były wyświetlane jako kwoty dodatnie w raportach, ważne jest odpowiednie skonfigurowanie kont głównych. Aby kwoty na tych kontach głównych były wyświetlane jako dodatnie, typ konta głównego musi być ustawiony jako **Pasywa** lub **Przychód**. Gdy są używane te typy kont, sprawozdawczość za pośrednictwem usługi Power BI będzie powodowała odwracanie znaków i wyświetlanie kwot jako dodatnich.
 
 ## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Pulpit nawigacyjny i raporty dostępne w rozwiązaniu PowerBI.com
 Pulpit nawigacyjny zawiera kafelki podsumowań danych oparte na źródłowych raportach. Każdy kafelek zawiera podsumowanie informacji o bieżącym roku dla wszystkich firm w organizacji. Oto kilka dostępnych kafelków:

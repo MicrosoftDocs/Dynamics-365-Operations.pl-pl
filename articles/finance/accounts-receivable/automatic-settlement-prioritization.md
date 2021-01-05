@@ -19,11 +19,11 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b596557e80035e8d62d01f156a6678c75e4ae573
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000054"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4446771"
 ---
 # <a name="automatic-settlement-and-prioritization"></a>Automatyczne rozliczanie i priorytety
 

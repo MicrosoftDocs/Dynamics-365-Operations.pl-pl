@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005593"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683439"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 

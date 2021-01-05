@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 6c4b18a3cf2ba313756d5f761ef1beb2c3015516
-ms.sourcegitcommit: 56add4c49c35c65a75fa2ca5234927e7f7cd66ef
+ms.openlocfilehash: a9035f128a1db4bcd126f09c0fe30c1857fa884a
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781152"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680884"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Skonfiguruj mapowania modelu ER zależne od kontekstu kraju
 
@@ -202,7 +201,7 @@ W tabeli znak plus (+) wskazuje obecność konfiguracji mapowania modelu w bież
 
 Należy zauważyć, że nowy rekord został dodany do dziennika debugowania modułu operacji (ER) dla wykonywanego formatu ER. Ponieważ pole **poziomu** tego rekordu ma wartość **informacje**, rekord ma charakter informacyjny. Ponieważ pole składnik formatu jest ustawione na **konfigurację mapowania**, rekord informuje o mapowaniu modelu, które zostało użyte podczas wykonywania **formatu w celu uzyskania informacji** o formacie ER mapowania rekordów (wybranym w polu **Nazwa konfiguracji**). Zawartość **wygenerowanego pola tekstowego** informuje, że składnik **mapowania (FR)**, który znajduje się w konfiguracji **mapowania (FR)**, został użyty do uruchomienia tego raportu.
 
-## <a name="appendix1"></a>Załącznik 1
+## <a name="appendix-1"></a><a name="appendix1"></a>Załącznik 1
 
 ### <a name="configure-a-sample-data-model"></a>Konfigurowanie przykładowego modelu danych
 
@@ -343,7 +342,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji. Ta wersj
 4.  Wybierz opcję **Zapisz**.
 5.  Zamknij stronę.
 
-## <a name="appendix2"></a>Załącznik 2
+## <a name="appendix-2"></a><a name="appendix2"></a>Załącznik 2
 
 ### <a name="configure-a-sample-model-mapping-for-general-customization"></a>Konfigurowanie przykładowego mapowania modelu na potrzeby ogólnego dostosowania
 
@@ -353,7 +352,7 @@ Istnieje możliwość dostosowania mapowania modelu dostarczonego przez dostawc�
 
 1.  Na stronie **Konfiguracje** w drzewie konfiguracji wybierz pozycję **Mapowanie (ogólnie)**.
 2.  Wybierz **Utwórz konfigurację**.
-3.  W oknie dialogowym rozwijanym w **nowej** grupie pól wybierz opcję **Pochodne od nazwy: mapowanie (ogólne), litware, Inc.)**
+3.  W oknie dialogowym rozwijanym w **nowej** grupie pól wybierz opcję **Pochodne od nazwy: mapowanie (ogólne), litware, Inc.**
 4.  W polu **Nazwa** wpisz **Mapowanie (ogólnie) niestandardowe**.
 5.  Wybierz **Utwórz konfigurację**.
 
@@ -403,7 +402,7 @@ Zwróć uwagę, że wersja 1 tej konfiguracji ER jest gotowa do edycji.
 
 Należy zauważyć, że utworzona konfiguracja została zapisana jako ukończona wersja 1.
 
-## <a name="appendix3"></a>Załącznik 3
+## <a name="appendix-3"></a><a name="appendix3"></a>Załącznik 3
 
 ### <a name="configure-a-sample-model-mapping-for-countryregion-specific-customization"></a>Konfigurowanie przykładowego mapowania modelu na potrzeby dostosowania według kraju/regionu
 

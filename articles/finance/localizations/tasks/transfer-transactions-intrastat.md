@@ -17,11 +17,11 @@ ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9c47412c8ae68b396de41f04731b841f592dcba9
-ms.sourcegitcommit: 54da65a7da0efd4f0d9760c5b14ff785b28751c4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3830148"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408357"
 ---
 # <a name="transfer-transactions-to-the-intrastat"></a>Przesyłanie transakcji do systemu Intrastat
 

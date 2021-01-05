@@ -3,7 +3,7 @@ title: Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
 description: Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może być trudne, zwłaszcza gdy stanowisko wymaga unikatowego zestawu umiejętności.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 11/20/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d8a05ad7f100e6c54ccf1ecf7b76509cf44dbb8
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: f4e7ed6feaa1b5b27fcfc0ec99a2d75415fe7d6a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3143956"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4693071"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identyfikowanie i wdrażanie narzędzi do wybierania kandydatów
 
@@ -39,8 +38,8 @@ Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może by
 7. Kliknij przycisk Zadanie.
 8. W polu Zadanie wprowadź lub wybierz wartość.
 9. Kliknij przycisk OK.
-10. Rozwiń skróconą kartę zakresu i dodaj wszelkie informacje dodatkowe, takie jak dział.
-11. Rozwiń skróconą kartę certyfikatów, aby obejrzeć lub edytować certyfikaty.
+10. Rozwiń skróconą kartę Zakres i dodaj wszelkie informacje dodatkowe, takie jak dział.
+11. Rozwiń skróconą kartę Certyfikaty, aby obejrzeć lub edytować certyfikaty.
 12. Rozwiń skróconą kartę Umiejętności, aby obejrzeć lub edytować kompetencje.
 13. Rozwiń skróconą kartę Wykształcenie, aby wyświetlić lub edytować kryteria wykształcenia.
 14. Kliknij przycisk Wykonaj.
@@ -49,7 +48,7 @@ Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może by
 17. Kliknij przycisk Wynik.
 18. Kliknij przycisk Wznów.
 19. Kliknij przycisk Certyfikaty.
-    * Można przechodzić do kolejnych poziomów szczegółów każdej osoby na liście i obejrzeć informacje dotyczące jej wykształcenia, umiejętności, doświadczenia zawodowego itp.  
+    * Można przechodzić do kolejnych poziomów szczegółów każdej osoby na liście i obejrzeć informacje dotyczące jej wykształcenia, umiejętności i doświadczenia zawodowego.  
 20. Zamknij stronę.
 21. Zamknij stronę.
 22. Zaznacz ponownie wynik.

@@ -16,11 +16,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 0f6413d55215915e3d6f00b3d980db8ee5b2abe2
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984667"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408394"
 ---
 # <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie numeracji według magazynów
 

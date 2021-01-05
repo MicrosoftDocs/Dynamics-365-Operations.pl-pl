@@ -18,11 +18,11 @@ ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4000802"
+ms.locfileid: "4446958"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Obszar roboczy wpisu faktury od dostawcy
 
@@ -37,12 +37,12 @@ Obszar roboczy **Wpis faktury dostawcy** zawiera informacje związane z przetwar
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Konfigurowanie obszaru roboczego do wyświetlania zawartości Power BI
 
-Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Wpis faktury od dostawcy** , należy ukończyć tę konfigurację.
+Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Wpis faktury od dostawcy**, należy ukończyć tę konfigurację.
 
 1. W obszarze roboczym **Zarządzanie funkcjami** filtruj listę, aby znaleźć funkcję **Automatyzacji faktur od dostawców**.
 3. Wybierz **Włącz teraz**.
 4. Aby mieć pewność, że faktury mogą być przetwarzane od początku do końca bez konieczności ręcznej interwencji, należy skonfigurować przepływ pracy faktury od dostawcy. Aby skonfigurować przepływ pracy, wybierz kolejno opcje **Rozrachunki z dostawcami \> Ustawienia \> Przepływy pracy dla rozrachunków z dostawcami**.
-5. Przejdź do **Rozrachunki z dostawcami \> Konfiguracja \> Parametry modułu rozrachunków z dostawcami** i wybierz kartę **Automatyzacja faktur od dostawców** , aby uzyskać więcej informacji, zajrzyj do [opcji konfiguracyjnych dotyczących automatyzacji faktur od dostawców](vnd-invoice-set-up-options.md).
+5. Przejdź do **Rozrachunki z dostawcami \> Konfiguracja \> Parametry modułu rozrachunków z dostawcami** i wybierz kartę **Automatyzacja faktur od dostawców**, aby uzyskać więcej informacji, zajrzyj do [opcji konfiguracyjnych dotyczących automatyzacji faktur od dostawców](vnd-invoice-set-up-options.md).
 6. Ustaw opcję **Automatyczne przesyłanie zaimportowanych faktur do systemu przepływu pracy** na **Tak**.
 7. Jeśli dokumenty przyjęcia produktów powinny być dopasowywane automatycznie, dla opcji **Automatycznie dopasuj dokumenty przyjęcia produktów do wierszy faktur** należy wybrać opcję **Tak**.
 8. Przejrzyj pozostałe, opcjonalne ustawienia i skonfiguruj je zgodnie z wymaganiami organizacji.
@@ -57,7 +57,7 @@ Aby wyświetlić informacje wyświetlane w obszarze roboczym, należy mieć rol�
 
 ### <a name="company-selection"></a>Wybór firmy
 
-Po włączeniu funkcji **Automatyczne faktury od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma** , można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
+Po włączeniu funkcji **Automatyczne faktury od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma**, można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
 
 ### <a name="summary-tiles"></a>Kafelki podsumowania
 
@@ -70,15 +70,15 @@ Tabliczki w sekcji **Podsumowanie oczekujących faktur** w widoku **Moja praca**
 
 (Te cztery kafelki wymagają włączenia funkcji automatyzacji faktur od dostawcy w module Zarządzanie funkcjami.)
 
-Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy** , funkcja musi być włączona w parametrach modułu rozrachunków z dostawcami. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami** , a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
+Aby można było skorzystać z kafelka **Odzyskaj faktury od dostawcy**, funkcja musi być włączona w parametrach modułu rozrachunków z dostawcami. Przejdź do **Rozrachunki z dostawcami \> Parametry modułu rozrachunków z dostawcami**, a następnie na karcie **Faktura** określ opcję **Zezwalaj na zwrot faktury od dostawcy** na **Tak**.
 
-Gdy funkcja jest włączona, trzy kafelki zostaną zgrupowane razem w obszarze roboczym w sekcji nazywanej **Arkuszami**. Kafelki to **Arkusze** , **Arkusze - przypisane do mnie** oraz **Pula faktur**. 
+Gdy funkcja jest włączona, trzy kafelki zostaną zgrupowane razem w obszarze roboczym w sekcji nazywanej **Arkuszami**. Kafelki to **Arkusze**, **Arkusze - przypisane do mnie** oraz **Pula faktur**. 
 
 Informacje zawarte w sekcji **Podsumowanie oczekujących faktur** dotyczą firmy ustawionej jako firma domyślna w celu zarejestrowania się.
 
 ### <a name="creating-new-records"></a>Tworzenie nowego rekordu
 
-Aby utworzyć nowy rekord faktury, wybierz opcję **Nowy** , a następnie wybierz jeden z następujących typów rekordów z listy:
+Aby utworzyć nowy rekord faktury, wybierz opcję **Nowy**, a następnie wybierz jeden z następujących typów rekordów z listy:
 
 - Faktura dostawcy
 - Arkusz faktur
@@ -86,7 +86,7 @@ Aby utworzyć nowy rekord faktury, wybierz opcję **Nowy** , a następnie wybier
 - Rejestr faktur
 - Zatwierdzenie faktury
 
-Należy zwrócić uwagę, że utworzony rekord jest oparty na filtrze firmy, a nie w firmie, do której jest zalogowany użytkownik. Na przykład użytkownik jest zalogowany do firmy **UMSF** , ale filtr firmy jest ustawiany na **GBSI**. W takim przypadku po wybraniu opcji **Nowy** , a następnie wybraniu typu rekordu na liście, rekord jest tworzony w firmie GBSI.
+Należy zwrócić uwagę, że utworzony rekord jest oparty na filtrze firmy, a nie w firmie, do której jest zalogowany użytkownik. Na przykład użytkownik jest zalogowany do firmy **UMSF**, ale filtr firmy jest ustawiany na **GBSI**. W takim przypadku po wybraniu opcji **Nowy**, a następnie wybraniu typu rekordu na liście, rekord jest tworzony w firmie GBSI.
 
 ### <a name="documents-not-invoiced-grids"></a>Niezafakturowane siatki dokumentów
 
@@ -102,11 +102,11 @@ W siatce **Wyszukiwania zamówienia zakupu** za pomocą pola **Wyszukaj** można
 
 ### <a name="related-information"></a>Informacje pokrewne
 
-Informacje o zaksięgowanych fakturach można wyświetlić, korzystając z łączy znajdujących się po prawej stronie obszaru roboczego. Dotyczy to **Otwarte faktury dostawców** , **Arkusze faktur** i **Historia faktur i szczegóły ich uzgadniania**. W sekcji **Dostawcy** można uzyskać dostęp do filtrowanej listy, która pokazuje wszystkich zablokowanych dostawców, lub można skorzystać z łącza **Wszyscy dostawcy**. Dostępne są także łącza **Wszystkie zamówienia zakupu** i **Otwarte przedpłaty**.
+Informacje o zaksięgowanych fakturach można wyświetlić, korzystając z łączy znajdujących się po prawej stronie obszaru roboczego. Dotyczy to **Otwarte faktury dostawców**, **Arkusze faktur** i **Historia faktur i szczegóły ich uzgadniania**. W sekcji **Dostawcy** można uzyskać dostęp do filtrowanej listy, która pokazuje wszystkich zablokowanych dostawców, lub można skorzystać z łącza **Wszyscy dostawcy**. Dostępne są także łącza **Wszystkie zamówienia zakupu** i **Otwarte przedpłaty**.
 
 ### <a name="analytics--all-companies-page"></a>Analizy — Strona wszystkie firmy
 
-Jeśli opcja **Automatyczne przesyłanie zaimportowanych faktur do systemu przepływu pracy** ma wartość **Tak** na stronie **Parametry rozrachunków z dostawcami** , możesz wyświetlić analizę automatyzacji. Na stronie **Analizy — wszystkie firmy** podano ważne metryki, takie jak faktury od dostawców, które są zatwierdzane przez osobę zatwierdzającą i przez firmę. Ta strona zawiera pięć stron raportów. Jedna strona zawiera przegląd, a pozostałe strony dostarczają szczegółowych informacji o miernikach automatycznych płatności w module Rozrachunki z dostawcami.
+Jeśli opcja **Automatyczne przesyłanie zaimportowanych faktur do systemu przepływu pracy** ma wartość **Tak** na stronie **Parametry rozrachunków z dostawcami**, możesz wyświetlić analizę automatyzacji. Na stronie **Analizy — wszystkie firmy** podano ważne metryki, takie jak faktury od dostawców, które są zatwierdzane przez osobę zatwierdzającą i przez firmę. Ta strona zawiera pięć stron raportów. Jedna strona zawiera przegląd, a pozostałe strony dostarczają szczegółowych informacji o miernikach automatycznych płatności w module Rozrachunki z dostawcami.
 
 W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 
