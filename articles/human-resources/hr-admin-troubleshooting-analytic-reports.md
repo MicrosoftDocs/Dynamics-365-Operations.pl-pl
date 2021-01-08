@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010151"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420099"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Rozwiązywanie problemów z raportami analitycznymi
 

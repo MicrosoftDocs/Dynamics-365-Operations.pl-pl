@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: edd4b999624a845fc145ed9ff348ae9cba782719
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3010160"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420108"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Utwórz cykliczną aplikację eksportu danych
 
@@ -68,7 +68,7 @@ Zakończona aplikacja logiki będzie podobna do poniższej ilustracji.
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Krok 1: Tworzenie projektu eksportu danych w module Human Resources
 
-Stwórz projekt eksportu danych w module Human Resources, który zaekksportuje pracowników. Nadaj projektowi **Eksport pracowników**nazwę i upewnij się, że opcja **Generuj pakiet danych** ma wartość **Tak**. Dodaj jedną jednostkę (**Pracownik**) do projektu i wybierz format, który ma zostać wyeksportowany. (w tym samouczku jest używany format Microsoft Excel.)
+Stwórz projekt eksportu danych w module Human Resources, który zaekksportuje pracowników. Nadaj projektowi **Eksport pracowników** nazwę i upewnij się, że opcja **Generuj pakiet danych** ma wartość **Tak**. Dodaj jedną jednostkę (**Pracownik**) do projektu i wybierz format, który ma zostać wyeksportowany. (w tym samouczku jest używany format Microsoft Excel.)
 
 ![Projekt danych eksportowanie pracowników](media/integration-logic-app-export-workers-project.png)
 

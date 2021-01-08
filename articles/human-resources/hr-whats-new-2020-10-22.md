@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5c66d8695ee0ff41e81c699a5d5a37075470059
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: 513fc3b35f0b6a7f5d9703d2b5eb4109289a189a
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107543"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529989"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-22-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 października 2020 r.
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
@@ -56,14 +58,14 @@ W tej wersji uwzględniono następujące poprawki błędów.
 | --- | --- | --- |
 | 437922 | Importowanie godzin FMLA przy użyciu jednostki DMF powoduje błąd tylko do odczytu. | Użycie jednostki godziny FMLA do importowania godzin skojarzonych z sprawą FMLA nie powiodło się. Dodałeś logikę, aby upewnić się, że importowane godziny nie przekraczają godzin pozostałych dla sprawy. |
 | 512019 | Nieprawidłowa kwota **ostatniej przeniesionej na następny okres**. | Na stronie **Czas wolny** zmień wartość **Na dzień** na pierwszy dzień następnego okresu obrachunkowego, na którym wyświetlona jest nieprawidłowa ilość **ostatniego przeniesienia na następny okres** dla typu **Urlopu rocznego**. Teraz wyświetlana jest poprawna kwota. |
-| 458639 | Jednostka **Kontaktów pracownika** nie obsługuje trybu śledzenia zmian. | Zaktualizowano jednostkę **Kontakty pracownika** , dzięki czemu można z niej skorzystać w ramach wykonywania własnych scenariuszy bazy danych (BYOD).|
+| 458639 | Jednostka **Kontaktów pracownika** nie obsługuje trybu śledzenia zmian. | Zaktualizowano jednostkę **Kontakty pracownika**, dzięki czemu można z niej skorzystać w ramach wykonywania własnych scenariuszy bazy danych (BYOD).|
 | 505347 | Menedżerowie szkoleń mogą przesłać żądanie opuszczenia dla pracownika, gdy włączono funkcję usprawnionego pracownika. | Role inne niż asystent ds. zarządzania kadrami nie mogą przesyłać żądań time0off dla pracowników. |
 | 513490 | Rejestrowanie zarządzania korzyściami: Dodaj rejestrowanie dla planów bez opcji zapotrzebowania. | Włączono rejestrowanie wyników dla **Planu bez opcji dotyczących zapotrzebowania**. Teraz są wyświetlane w tabeli **Wyników procesu** i są poprawnie sortowane, aby były wyświetlane u góry. |
-| 517021 | Nie można wybrać wielu planów z tym samym kodem **Typ planu** , jeśli **Typ planu** ma jedną rejestrację na typ. | Zmieniono ograniczenia wyboru planów, w których dozwolona jest tylko jedna rejestracja. Ograniczenia są teraz na poziomie **Kodu typu planu** zamiast **Typu planu**. Ta zmiana umożliwia tworzenie na przykład planów, takich jak HSA i FSA, które są tymi samymi typem, ale można również nadać im oddzielny **Kod typu planu**. W ten sposób można wybrać obie opcje dla tego samego okresu rejestracji. |
+| 517021 | Nie można wybrać wielu planów z tym samym kodem **Typ planu**, jeśli **Typ planu** ma jedną rejestrację na typ. | Zmieniono ograniczenia wyboru planów, w których dozwolona jest tylko jedna rejestracja. Ograniczenia są teraz na poziomie **Kodu typu planu** zamiast **Typu planu**. Ta zmiana umożliwia tworzenie na przykład planów, takich jak HSA i FSA, które są tymi samymi typem, ale można również nadać im oddzielny **Kod typu planu**. W ten sposób można wybrać obie opcje dla tego samego okresu rejestracji. |
 | 444791 | Nie można wyświetlić wynagrodzenia w module sklep pracowniczy, jeśli włączony jest **Ograniczony dostęp** do systemu wynagrodzeń. | W karcie **Wynagrodzenie** pracownika etatowego bieżąca kwota i procent podwyżki są wyświetlane po zarejestrowaniu pracownika w planie z włączonym **Ograniczeniem dostępu** i przypisanym do konkretnych ról. Ten problem został rozwiązany, więc pracownik i Menedżer mogą zawsze wyświetlać szczegóły dotyczące wynagrodzenia dla siebie i ich bezpośrednich podwładnych. |
 | 457542 | Zaktualizowanie szczegółów kursu po zamknięciu kursu nie powoduje zaktualizowania informacji o tym samym pracowniku, który przeszedł kurs. | Informacje o pracowniku są teraz poprawnie aktualizowane po zamknięciu i ponownym otwarciu kursu. |
 | 515342 | Nie można wstawić danych do **CDSLeaveRequestDetailEntity**. Firma nie została znaleziona lub nie istnieje. | Teraz można użyć **CDSLeaveRequestDetailEntity** do wstawienia danych. |
-| 514743 | Błąd w formularzu **Parametrów poczty e-mail** w przypadku korzystania z programu Microsoft Exchange. | Komunikat „nie można załadować plików lub zestawu...” wyświetlany na stronie **Parametry poczty e-mail** , gdy dostawca poczty e-mail ustawił program **Exchange**. Ta poprawka umożliwia również ładowanie i zapisywanie strony **Parametrów poczty e-mail** zgodnie z oczekiwaniami. |
+| 514743 | Błąd w formularzu **Parametrów poczty e-mail** podczas korzystania z programu Microsoft Exchange. | Komunikat „nie można załadować plików lub zestawu...” wyświetlany na stronie **Parametry poczty e-mail**, gdy dostawca poczty e-mail ustawił program **Exchange**. Ta poprawka umożliwia również ładowanie i zapisywanie strony **Parametrów poczty e-mail** zgodnie z oczekiwaniami. |
 
 
 ## <a name="in-preview"></a>Wersja próbna

@@ -20,11 +20,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e3879079e233a881ea0adc1f5e2ba39ab70b372d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018820"
+ms.locfileid: "4435543"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -35,7 +35,7 @@ W tym temacie opisano stany, przez które przechodzi zamówienie zakupu po utwor
 Po utworzeniu zamówienia zakupu może być konieczne przejście procesu zatwierdzania. Gdy dostawca wyrazi zgodę na zamówienie zakupu, otrzymuje ono stan **Potwierdzone**.
 
 ## <a name="approval-of-purchase-orders"></a>Zatwierdzanie zamówień zakupu
-Zamówienia zakupu, które nie korzystają z mechanizmu zarządzania zmianami, mają stan **Zatwierdzone** natychmiast po utworzeniu, podczas gdy zamówienia zakupu używające funkcji zarządzania zmianami mają po utworzeniu stan **Wersja robocza**. Zamówienie zakupu, które zostało utworzone przez akceptację zamówienia planowanego z planowania głównego, jest zawsze ustawiane na stan **Zatwierdzone** , niezależnie od ustawień zarządzania zmianami. Zamówienie zakupu powoduje tworzenie transakcji magazynowych tylko wtedy, gdy osiągnie stan **Zatwierdzone**. W związku z tym te zapasy są wyświetlane jako dostępne do rezerwacji lub oznaczenia dopiero po zaakceptowaniu zamówienia.
+Zamówienia zakupu, które nie korzystają z mechanizmu zarządzania zmianami, mają stan **Zatwierdzone** natychmiast po utworzeniu, podczas gdy zamówienia zakupu używające funkcji zarządzania zmianami mają po utworzeniu stan **Wersja robocza**. Zamówienie zakupu, które zostało utworzone przez akceptację zamówienia planowanego z planowania głównego, jest zawsze ustawiane na stan **Zatwierdzone**, niezależnie od ustawień zarządzania zmianami. Zamówienie zakupu powoduje tworzenie transakcji magazynowych tylko wtedy, gdy osiągnie stan **Zatwierdzone**. W związku z tym te zapasy są wyświetlane jako dostępne do rezerwacji lub oznaczenia dopiero po zaakceptowaniu zamówienia.
 
 Włączanie zarządzania zmianami dla zamówień zakupu odbywa się przez ustawienie opcji **Uaktywnienie zarządzania zmianami** na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po włączeniu zarządzania zmianami zamówienia zakupu po wypełnieniu muszą przejść przez przepływ pracy zatwierdzania. Program Supply Chain Management zawiera edytora procesów przepływu pracy, gdzie można zdefiniować przepływ pracy reprezentujący proces zatwierdzania. Ten przepływ pracy może zawierać reguły automatycznego zatwierdzania, reguły określające przypisywanie osób do zatwierdzania konkretnych zamówień zakupu oraz reguły eskalacji przepływów pracy oczekujących bardzo długo na zatwierdzenie. Proces zarządzania zmianami można włączyć dla wszystkich dostawców lub dla wybranych dostawców. Ponadto można skonfigurować proces tak, aby można go było zastępować dla poszczególnych zamówień zakupu.
 
@@ -51,7 +51,7 @@ Po włączeniu zarządzania zmianami zamówienia zakupu przechodzą przez sześ�
 | Zakończone       | Zamówienie zakupu zostało sfinalizowane. Teraz jest zamknięte finansowo i nie można go zmienić. | Nie                        |
 
 ## <a name="confirming-purchase-orders"></a>Potwierdzanie zamówienia zakupu
-Zamówienia zakupu, które mają stan zatwierdzenia **Zatwierdzone** , mogą przejść przez dodatkowe czynności, zanim zostaną potwierdzone. Na przykład może być konieczne wysłanie zapytania dotyczącego zakupu do dostawcy w celu uzyskiwanie informacji o cenach, rabatach lub datach dostaw. W takim przypadku można ustawić zamówieniu zakupu stan **W trakcie analizy zewnętrznej** , używając do tego akcji **Zapytanie dotyczące zakupu**.
+Zamówienia zakupu, które mają stan zatwierdzenia **Zatwierdzone**, mogą przejść przez dodatkowe czynności, zanim zostaną potwierdzone. Na przykład może być konieczne wysłanie zapytania dotyczącego zakupu do dostawcy w celu uzyskiwanie informacji o cenach, rabatach lub datach dostaw. W takim przypadku można ustawić zamówieniu zakupu stan **W trakcie analizy zewnętrznej**, używając do tego akcji **Zapytanie dotyczące zakupu**.
 
 Dostawcy, którym skonfigurowano używanie portalu dostawców, mogą przeglądać zamówienia w portalu oraz je zatwierdzać lub odrzucać. Podczas tego procesu weryfikowania zamówienie zakupu ma stan **W trakcie analizy zewnętrznej**. Portal dostawców można skonfigurować tak, aby potwierdzenie od dostawcy automatycznie potwierdzało zamówienie w programie Supply Chain Management. Alternatywnie można ręcznie potwierdzić zamówienie zakupu po otrzymaniu potwierdzenia od dostawcy. Jeśli dostawca odrzuci zamówienie zakupu, odrzucenie jest odbierane razem z przyczynę odrzucenia i sugestiami zmian. W takim przypadku zamówienie zakupu pozostaje w stanie **W trakcie analizy zewnętrznej**.
 
@@ -71,7 +71,7 @@ Jeśli zamówienie zakupu zostało utworzone przy użyciu procesu zarządzania z
 
 Jeśli część zamówionej ilości wiersza zamówienia zakupu została dostarczona, nie można zmienić zamawianej ilości, kiedy zamówienie zakupy jest w **Wersji roboczej**. Można jednak zmienić ilość **Pozostałych dostaw** w wierszu dla zamówienia zakupu, które jest w stanie **Wersja robocza**.
 
-Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować ilości całkowitą lub wszelką pozostałą ilość w zamówieniu, o ile tylko ta ilość nie została odebrana ani zafakturowana. Następnie można użyć akcji **Finalizuj** , aby uniemożliwić dalsze przetwarzanie. 
+Po potwierdzeniu zamówienia nie można go usunąć. Jednakże można anulować ilości całkowitą lub wszelką pozostałą ilość w zamówieniu, o ile tylko ta ilość nie została odebrana ani zafakturowana. Następnie można użyć akcji **Finalizuj**, aby uniemożliwić dalsze przetwarzanie. 
 
 
 ## <a name="canceling-purchase-orders"></a>Anulowanie zamówień zakupu
@@ -80,7 +80,7 @@ Można anulować zamówienie zakupu, używając akcji **Anuluj** w nagłówku.
 
 Jeśli ilość została częściowo zarejestrowana, odebrana lub zafakturowana, można anulować tylko pozostałą ilość, która nie została zarejestrowana, odebrana lub zafakturowana. Ilość zamówienia zostanie następnie odpowiednio zmniejszona. Gdy ilość w wierszu zostanie zaktualizowana, stan wiersza również zostanie zaktualizowany. Na przykład oryginalna ilość w wierszu wynosi 5, a otrzymana jest ilość 3. W takim przypadku można anulować tylko dwie. Wiersz zostanie następnie zaktualizowany do stanu **Otrzymano**.
 
-Jeśli reszta dostawy zostanie dodana do wiersza zamówienia i przekroczy ilość w wierszu zamówienia, akcja **Anuluj** nie spowoduje anulowania nadmiarowej ilości. W takim przypadku wiersz pozostaje w stanie **Otwarte zamówienie** , ponieważ zawiera pozostałą ilość. Na przykład oryginalna ilość w wierszu wynosi 5, a pozostała do dostarczenia ilość wynosi 7. Jeśli zamówienie zostało anulowane, pięć jest anulowane, a ilość 2 pozostanie, co jest widoczne w transakcjach magazynowych.
+Jeśli reszta dostawy zostanie dodana do wiersza zamówienia i przekroczy ilość w wierszu zamówienia, akcja **Anuluj** nie spowoduje anulowania nadmiarowej ilości. W takim przypadku wiersz pozostaje w stanie **Otwarte zamówienie**, ponieważ zawiera pozostałą ilość. Na przykład oryginalna ilość w wierszu wynosi 5, a pozostała do dostarczenia ilość wynosi 7. Jeśli zamówienie zostało anulowane, pięć jest anulowane, a ilość 2 pozostanie, co jest widoczne w transakcjach magazynowych.
 
 Aby anulować całą ilość w wierszu zamówienia zakupu, w wierszu należy usunąć ilość reszty do dostarczenia. Wiersz zostanie wówczas zaktualizowany do stanu **Anulowane**.
 

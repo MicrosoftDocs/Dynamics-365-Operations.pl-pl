@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
 ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016224"
+ms.locfileid: "4435567"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -36,7 +36,7 @@ W scenariuszach przedstawionych w tym temacie pokazano sposób konfigurowania do
 > [!IMPORTANT]
 > W [pierwszym scenariuszu](#scenario-1) opisanym w tym temacie najpierw skonfigurujesz magazyn, dzięki czemu będzie używana wcześniejsza funkcja konsolidacji wysyłki. Następnie udostępnisz zasady konsolidacji wysyłki. W ten sposób sprawdzisz, jak działa scenariusz uaktualniania. Jeśli planujesz używanie środowiska danych demonstracyjnych do przechodzenia przez pierwszy scenariusz, nie włączaj tej funkcji przed wykonaniem tego scenariusza.
 
-Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby można było skorzystać z funkcji *zasad konsolidacji wysyłki*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Konsoliduj wysyłkę*
@@ -47,7 +47,7 @@ Każdy scenariusz w tym temacie zawiera odwołania do wartości i rekordów uwzg
 
 ## <a name="scenario-1-configure-default-shipment-consolidation-policies"></a><a name="scenario-1"></a>Scenariusz 1. Konfigurowanie domyślnych zasad konsolidacji wysyłki
 
-Istnieją dwie sytuacje, w których należy skonfigurować minimalną liczbę domyślnych zasad po włączeniu funkcji *zasad funkcji konsolidacji wysyłki* :
+Istnieją dwie sytuacje, w których należy skonfigurować minimalną liczbę domyślnych zasad po włączeniu funkcji *zasad funkcji konsolidacji wysyłki*:
 
 - Uaktualniasz środowisko, które już zawiera dane.
 - Konfigurujesz zupełnie nowe środowisko.
@@ -59,14 +59,14 @@ Podczas uruchamiania tej procedury funkcja *zasad konsolidacji wysyłki* powinna
 Wykonaj poniższe kroki, aby skonfigurować domyślne zasady konsolidacji wysyłki w środowisku, w którym już skonfigurowano magazyny do konsolidacji krzyżowej zamówień.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
-1. Na liście znajdź i otwórz żądany rekord magazynu (na przykład magazyn *24* w danych demonstracyjnych **USMF** ).
+1. Na liście znajdź i otwórz żądany rekord magazynu (na przykład magazyn *24* w danych demonstracyjnych **USMF**).
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. Na skróconej karcie **Magazyn** ustaw opcję **Konsolidowanie wysyłki podczas zwalniania do magazynu** na wartość *Tak*.
 1. Powtórz kroki od 2 do 4 dla wszystkich innych magazynów, dla których jest wymagana konsolidacja.
 1. Zamknij stronę.
 1. Użyj [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia funkcji *Zasady konsolidacji wysyłki*. W obszarze roboczym **Zarządzanie funkcjami** nazwa funkcji to *Konsolidowanie wysyłki*.
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**. Aby nowa pozycja menu **Zasady konsolidacji wysyłki** była wyświetlana po włączeniu tej funkcji, być może trzeba będzie odświeżyć przeglądarkę.
-1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną** , aby utworzyć następujące zasady:
+1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną**, aby utworzyć następujące zasady:
 
     - Zasady **CrossOrder** dla typu zasad *Zamówienia sprzedaży* (pod warunkiem, że istnieje co najmniej jeden magazyn skonfigurowany do korzystania z wcześniejszej funkcji konsolidacji)
     - Zasady **domyślne** dla typu zasad *Zamówienia sprzedaży*
@@ -77,16 +77,16 @@ Wykonaj poniższe kroki, aby skonfigurować domyślne zasady konsolidacji wysył
     > - Obie zasady **CrossOrder** uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki, z wyjątkiem pola numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak magazyn, metoda transportu dostawy i adres).
     > - Obie zasady **domyślne** uwzględniają ten sam zestaw pól, co w przypadku wcześniejszej logiki, z uwzględnieniem pola numeru zamówienia. (To pole służy do konsolidowania wierszy w wysyłkach na podstawie czynników, takich jak numer zamówienia, magazyn, metoda transportu dostawy i adres).
 
-1. Wybierz zasady **CrossOrder** dla typu zasad *Zamówienia sprzedaży* , a następnie w okienku akcji wybierz pozycję **Edytuj zapytanie**.
+1. Wybierz zasady **CrossOrder** dla typu zasad *Zamówienia sprzedaży*, a następnie w okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. Zwróć uwagę, że w oknie dialogowym są wymienione magazyny, dla których opcja **Konsolidowanie wysyłki podczas zwalniania do magazynu** została ustawiona na wartość *Tak*. Z tego powodu są one uwzględniane w zapytaniu.
 
 ### <a name="create-default-policies-for-a-new-environment"></a>Tworzenie zasad domyślnych dla nowego środowiska
 
 Aby skonfigurować domyślne zasady konsolidacji wysyłki w całkiem nowym środowisku, wykonaj poniższe kroki.
 
-1. Użyj [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia funkcji *Zasady konsolidacji wysyłki* , jeśli nie została jeszcze włączona. W obszarze roboczym **Zarządzanie funkcjami** nazwa funkcji to *Konsolidowanie wysyłki*.
+1. Użyj [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) w celu włączenia funkcji *Zasady konsolidacji wysyłki*, jeśli nie została jeszcze włączona. W obszarze roboczym **Zarządzanie funkcjami** nazwa funkcji to *Konsolidowanie wysyłki*.
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
-1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną** , aby utworzyć następujące zasady:
+1. W okienku akcji wybierz pozycję **Utwórz konfigurację domyślną**, aby utworzyć następujące zasady:
 
     - Zasady **domyślne** dla typu zasad *Zamówienia sprzedaży*
     - Zasady **domyślne** dla typu zasad *Wydanie przeniesienia*
@@ -121,10 +121,10 @@ Użyj zarządzania funkcji, aby włączyć tę funkcję, jeśli nie została jes
         - **Tytuł filtru:** *Kod 4*
 
 1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
-1. Otwórz produkt o numerze pozycji *M9200*. (Wybrany produkt musi być włączony dla zaawansowanych procesów magazynu \[WMS\] i ten produkt jest wstępnie włączony dla procesów WMS w danych demonstracyjnych **USMF** ).
+1. Otwórz produkt o numerze pozycji *M9200*. (Wybrany produkt musi być włączony dla zaawansowanych procesów magazynu \[WMS\] i ten produkt jest wstępnie włączony dla procesów WMS w danych demonstracyjnych **USMF**).
 1. Na skróconej karcie **Magazyn** w polu **Kod 4** ustaw wartość *Łatwopalne*.
 1. Zamknij stronę.
-1. Otwórz produkt o numerze pozycji *M9201*. (Ten produkt jest również wstępnie włączony dla procesów WMS w danych demonstracyjnych **USMF** ).
+1. Otwórz produkt o numerze pozycji *M9201*. (Ten produkt jest również wstępnie włączony dla procesów WMS w danych demonstracyjnych **USMF**).
 1. Na skróconej karcie **Magazyn** w polu **Kod 4** ustaw wartość *Materiały łatwopalne*.
 1. Zamknij stronę.
 
@@ -164,9 +164,9 @@ Użyj zarządzania funkcji, aby włączyć tę funkcję, jeśli nie została jes
 
 ### <a name="create-example-policy-1"></a>Tworzenie przykładowych zasad 1
 
-W tym przykładzie utworzysz zasady *Odbiorca i tryb* , które mogą być używane dla następujących przypadków biznesowych:
+W tym przykładzie utworzysz zasady *Odbiorca i tryb*, które mogą być używane dla następujących przypadków biznesowych:
 
-- Zasady spowodują utworzenie zapytania dotyczącego określonego konta odbiorcy ( *US-001* ) i trybu dostawy ( *Airwa-Air* ).
+- Zasady spowodują utworzenie zapytania dotyczącego określonego konta odbiorcy (*US-001*) i trybu dostawy (*Airwa-Air*).
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
 - Konsolidacja jest przeprowadzana dla poszczególnych identyfikatorów zamówień. (Mówiąc inaczej, dla każdego zamówienia, magazynu itd. będą dostępne osobne wysyłki).
 
@@ -174,7 +174,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
-1. W okienku akcji wybierz pozycję **Nowy** , aby utworzyć zasady z następującymi ustawieniami:
+1. W okienku akcji wybierz pozycję **Nowy**, aby utworzyć zasady z następującymi ustawieniami:
 
     - **Nazwa zasad:** *CustomerMode*
     - **Opis zasad:** *Konto odbiorcy i tryb dostawy*
@@ -184,24 +184,24 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
 1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. W oknie dialogowym edytora zapytań na karcie **Zakres** w siatce znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy* , i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
-1. Wybierz przycisk **Dodaj** , aby dodać wiersz zawierający następujące ustawienia do siatki:
+1. W oknie dialogowym edytora zapytań na karcie **Zakres** w siatce znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy*, i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
+1. Wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
 
     - **Tabela:** *Wiersze zamówienia*
     - **Tabela pochodna:** *Wiersze zamówienia*
     - **Pole:** *Metoda dostawy*
     - **Kryteria:** *Airwa-Air*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
 > [!NOTE]
 > Dla tego przypadku biznesowego wiersze zamówienia dla odbiorcy *US-001* korzystającego z metody dostawy *Airwa-Air* nie będą konsolidowane między zamówieniami. Te zasady są przeznaczone do użycia jako pierwsza w sekwencji, w przypadkach, gdy dla danego odbiorcy są konsolidowane wysyłki dla wszystkich innych metod dostawy.
 
 ### <a name="create-example-policy-2"></a>Tworzenie przykładowych zasad 2
 
-W tym przykładzie utworzysz zasady *Towary niebezpieczne* , które mogą być używane dla następujących przypadków biznesowych:
+W tym przykładzie utworzysz zasady *Towary niebezpieczne*, które mogą być używane dla następujących przypadków biznesowych:
 
-- Zasady spowodują utworzenie zapytania dotyczącego określonego kodu filtra ( *niebezpieczne* ) i trybu dostawy ( *Airwa-Air* ).
+- Zasady spowodują utworzenie zapytania dotyczącego określonego kodu filtra (*niebezpieczne*) i trybu dostawy (*Airwa-Air*).
 - Konsolidacja z otwartymi wysyłkami jest włączona.
 - Konsolidacja jest przeprowadzana w ramach różnych zamówień. (Mówiąc inaczej, będą istnieć oddzielne wysyłki dla poszczególnych kont, magazynów itd., ale tylko w grupie pozycji określonej w zapytaniu).
 
@@ -209,7 +209,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
-1. W okienku akcji wybierz pozycję **Nowy** , aby utworzyć zasady z następującymi ustawieniami:
+1. W okienku akcji wybierz pozycję **Nowy**, aby utworzyć zasady z następującymi ustawieniami:
 
     - **Nazwa zasad:** *Typ pozycji*
     - **Opis zasad:** *Konsolidowanie tego samego typu pozycji w zamówieniach*
@@ -221,22 +221,22 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytor zapytań na karcie **Sprzężenia** rozwiń węzeł i wybierz pozycję **Tabelę \> Załaduj szczegóły** w drzewie.
 1. Wybierz pozycję **Dodaj sprzężenie tabeli**.
-1. W wyświetlonej siatce relacji znajdź i wybierz wiersz, w którym pole **Relacja** zostało ustawione na *Numer pozycji magazynowej (numer pozycji)* , a następnie wybierz pozycję **Wybierz**. 
-1. Na karcie **Zakres** wybierz przycisk **Dodaj** , aby dodać wiersz zawierający następujące ustawienia do siatki:
+1. W wyświetlonej siatce relacji znajdź i wybierz wiersz, w którym pole **Relacja** zostało ustawione na *Numer pozycji magazynowej (numer pozycji)*, a następnie wybierz pozycję **Wybierz**. 
+1. Na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
 
     - **Tabela:** *Numer pozycji magazynowej*
     - **Tabela pochodna:** *Numer pozycji magazynowej*
     - **Pole:** *Kod 4*
     - **Kryteria:** *Łatwopalne*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
 > [!NOTE]
-> W tym przypadku biznesowym wszystkie wiersze zamówienia, w których pozycje mają określony kod filtru (czyli kod filtru z polem **Kod 4** ustawionym na *Łatwopalne* ), zostaną skonsolidowane z innymi pozycjami tego samego typu w różnych zamówieniach. Jeśli istnieje otwarta wysyłka dla tego samego konta, magazynu i grupy pozycji, zostaną do niej dołączone nowe wiersze.
+> W tym przypadku biznesowym wszystkie wiersze zamówienia, w których pozycje mają określony kod filtru (czyli kod filtru z polem **Kod 4** ustawionym na *Łatwopalne*), zostaną skonsolidowane z innymi pozycjami tego samego typu w różnych zamówieniach. Jeśli istnieje otwarta wysyłka dla tego samego konta, magazynu i grupy pozycji, zostaną do niej dołączone nowe wiersze.
 
 ### <a name="create-example-policy-3"></a>Tworzenie przykładowych zasad 3
 
-W tym przykładzie utworzysz zasady *Wymagania odbiorców* , które mogą być używane dla następujących przypadków biznesowych:
+W tym przykładzie utworzysz zasady *Wymagania odbiorców*, które mogą być używane dla następujących przypadków biznesowych:
 
 - Zasady spowodują wykonanie zapytania dotyczącego określonego konta odbiorcy.
 - Konsolidacja z otwartymi wysyłkami jest włączona.
@@ -246,7 +246,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
-1. W okienku akcji wybierz pozycję **Nowy** , aby utworzyć zasady z następującymi ustawieniami:
+1. W okienku akcji wybierz pozycję **Nowy**, aby utworzyć zasady z następującymi ustawieniami:
 
     - **Nazwa zasad:** *CustomerOrderNo*
     - **Opis zasad:** *Konsolidowanie wierszy na podstawie zamówienia zakupu odbiorcy*
@@ -258,19 +258,19 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
 1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy* , i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy*, i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
 > [!NOTE]
 > W przypadku tego przypadku biznesowego wszystkie wiersze zamówienia, w których zamówienia sprzedaży mają ten sam numer zapotrzebowania odbiorcy, zostaną skonsolidowane w jedną wysyłkę, niezależnie od numeru zamówienia sprzedaży. (Numer zapotrzebowania odbiorcy jest używany jako numer zamówienia zakupu \[ZZ\] odbiorcy). Jeśli istnieje otwarta wysyłka dla tego samego konta, magazynu i zapotrzebowania odbiorcy, zostaną do niej dołączone nowe wiersze. Tych zasad można użyć, jeśli odbiorca wysyła dodatkowe wiersze zamówienia z tym samym numerem ZZ kilka razy w ciągu dnia i chce, aby wszystkie wiersze zostały zgrupowane w jednej wysyłce. (Mówiąc inaczej, będzie istnieć jeden list przewozowy i jeden dokument dostawy).
 
 ### <a name="create-example-policy-4"></a>Tworzenie przykładowych zasad 4
 
-W tym przykładzie utworzysz zasady *Odbiorcy zezwalający na konsolidację* , które mogą być używane dla następujących przypadków biznesowych:
+W tym przykładzie utworzysz zasady *Odbiorcy zezwalający na konsolidację*, które mogą być używane dla następujących przypadków biznesowych:
 
 - Zasady będą wykonywać zapytania dotyczące konkretnej puli zamówień, aby identyfikować odbiorców, którzy akceptują wysyłki skonsolidowane.
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
-- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu** ).
+- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu**).
 
 - Regułę w zamówieniu sprzedaży można zastąpić, wybierając inną pulę zamówień.
 
@@ -278,7 +278,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
-1. W okienku akcji wybierz pozycję **Nowy** , aby utworzyć zasady z następującymi ustawieniami:
+1. W okienku akcji wybierz pozycję **Nowy**, aby utworzyć zasady z następującymi ustawieniami:
 
     - **Nazwa zasad:** *Pula zamówień*
     - **Opis zasad:** *Konsolidowanie między zamówieniami na podstawie puli zamówień*
@@ -288,31 +288,31 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
 1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. W oknie dialogowym edytora zapytań na karcie **Zakres** wybierz przycisk **Dodaj** , aby dodać wiersz zawierający następujące ustawienia do siatki:
+1. W oknie dialogowym edytora zapytań na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
 
     - **Tabela:** *Zamówienia sprzedaży*
     - **Tabela pochodna:** *Zamówienia sprzedaży*
     - **Pole:** *Pula*
     - **Kryteria:** *ShipCons*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
 > [!NOTE]
 > W tym przypadku biznesowym wszystkie wiersze zamówienia, w których zamówienia sprzedaży należą do tej samej puli zamówień, zostaną skonsolidowane w jedną wysyłkę w zamówieniach sprzedaży dla tego samego konta, magazynu i trybu transportu dostawy. Zamiast puli zamówień można użyć dowolnego innego pola w celu odróżnienia grupy odbiorców i domyślnego użycia nagłówka zamówienia sprzedaży. Z tego podejścia można skorzystać, jeśli odbiorca, a nie magazyn, jest odpowiedzialny za potrzebę konsolidacji. (We wcześniejszej logice konsolidacji magazyn odpowiadał za potrzebę konsolidacji).
 
 ### <a name="create-example-policy-5"></a>Tworzenie przykładowych zasad 5
 
-W tym przykładzie utworzysz zasady *Magazyny zezwalające na konsolidację* , które mogą być używane dla następujących przypadków biznesowych:
+W tym przykładzie utworzysz zasady *Magazyny zezwalające na konsolidację*, które mogą być używane dla następujących przypadków biznesowych:
 
 - Zasady będą wykonywać zapytania dotyczące konkretnej puli zamówień, aby identyfikować magazyny z możliwością konsolidowania wysyłek.
 - Konsolidacja z otwartymi wysyłkami jest wyłączona.
-- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu** ).
+- Konsolidacja jest wykonywana w ramach różnych zamówień przy użyciu pól wybranych przez domyślne zasady CrossOrder (w celu zreplikowania poprzedniego pola wyboru **Konsolidowanie wysyłki podczas zwalniania do magazynu**).
 
 Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyślnych utworzonych w [scenariuszu 1](#scenario-1). Można jednak również ręcznie utworzyć podobne zasady, wykonując poniższe kroki.
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Zwolnij do magazynu \> Zasady konsolidacji wysyłki**.
 1. Ustaw pole **Typ zasad** na *Zamówienia sprzedaży*.
-1. W okienku akcji wybierz pozycję **Nowy** , aby utworzyć zasady z następującymi ustawieniami:
+1. W okienku akcji wybierz pozycję **Nowy**, aby utworzyć zasady z następującymi ustawieniami:
 
     - **Nazwa zasad:** *Zamówienia krzyżowe*
     - **Opis zasad:** *Konsolidacja krzyżowa zamówień dla wybranych magazynów*
@@ -322,8 +322,8 @@ Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyśl
 1. Na skróconej karcie **Pola konsolidacji** w polu **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
 1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
-1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Magazyn* , i ustaw pole **Kryteria** dla tego wiersza na *61, 63*.
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Magazyn*, i ustaw pole **Kryteria** dla tego wiersza na *61, 63*.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
 ### <a name="set-the-order"></a>Ustawianie kolejności
 

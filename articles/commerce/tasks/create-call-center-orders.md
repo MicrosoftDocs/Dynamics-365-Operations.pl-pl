@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.openlocfilehash: c875eaa85d9da997b75b296ad9ace99ae1e91798
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107359"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594243"
 ---
 # <a name="create-call-center-orders"></a>Tworzenie zamówień dla biur obsługi
 
@@ -45,7 +45,7 @@ Ta procedura zawiera instruktaż wyszukiwania odbiorcy, tworzenia nowego zamówi
 9. Wybierz produkt, który chcesz dodać do zamówienia sprzedaży.
 10. Wprowadź ilość sprzedaży.
 11. Wybierz opcję **Utwórz**.
-12. Wybierz **Gotowe** , aby zarejestrować informacje o płatności od odbiorcy.
+12. Wybierz **Gotowe**, aby zarejestrować informacje o płatności od odbiorcy.
 13. Wybierz opcję **Dodaj**.
     * Łącze Dodaj znajduje się na karcie Płatności. Jeśli karta Płatności jest zwinięta, rozwiń ją.  
 14. Wybierz metodę płatności.
@@ -55,4 +55,10 @@ Ta procedura zawiera instruktaż wyszukiwania odbiorcy, tworzenia nowego zamówi
     * W tej procedurze wprowadź kwotę równą saldu zamówienia, które widać na stronie Podsumowanie zamówienia sprzedaży na lewo od pola kwoty. Ta czynność pozwoli Ci zrealizować zamówienie jako w pełni opłacone.  
 17. Kliknij przycisk **OK**.
 18. Wybierz opcję **Prześlij**.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy](../customize-email-delivery-mode.md)
+
+[Zmienianie metody dostawy w punkcie sprzedaży](../pos-change-delivery-mode.md)
 

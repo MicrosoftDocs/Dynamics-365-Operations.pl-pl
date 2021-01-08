@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 38c30a878ada9ed0b63ade3d0f234aeffce0ad12
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 2539baba84bffeb21d351cc307191eea3e940515
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897898"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528202"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (30 kwietnia 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 
@@ -98,4 +100,4 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 
 ### <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
 
-W 26. aktualizacji platformy dla rozwiązania Finance and Operations użytkownicy mogą tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia powiadomień przez zdarzenie.
+Aktualizacja platformy 26 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.

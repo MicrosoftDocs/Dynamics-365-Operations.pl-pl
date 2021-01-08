@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
-ms.sourcegitcommit: 8adc65e26d78e229271eb427659a87ee5f371319
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "3814066"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435473"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Ustawienia scenariusza dla analizy Internetu rzeczy (IoT)
 

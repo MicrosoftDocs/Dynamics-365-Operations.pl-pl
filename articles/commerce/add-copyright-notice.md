@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 838047cac694c65047332e146a7c43ee2ae0f401
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019548"
+ms.locfileid: "4415068"
 ---
 # <a name="add-a-copyright-notice"></a>Dodawanie powiadomienia o prawach autorskich
 
@@ -41,21 +41,21 @@ Aby można było dodać do witryny powiadomienie o prawach autorskich, należy d
 
 Aby dodać powiadomienie o prawach autorskich na końcu każdej strony korzystającej z określonego szablonu, wykonaj następujące kroki.
 
-1. Przejdź do obszaru **Fragmenty** , a następnie wybierz pozycję **Nowy**.
+1. Przejdź do obszaru **Fragmenty**, a następnie wybierz pozycję **Nowy**.
 1. W oknie dialogowym **Nowy fragment** wybierz moduł **Stopki** i nazwij fragment. Na przykład wprowadź **stopka — prawa autorskie**.
 1. Kliknij przycisk **OK**.
-1. W okienku nawigacji wybierz przycisk wielokropka ( **...** ) obok **Stopki** , a następnie wybierz pozycję **Dodaj moduł**.
+1. W okienku nawigacji wybierz przycisk wielokropka (**...**) obok **Stopki**, a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym wybierz **Kategoria stopki** i wybierz przycisk **OK**.
-1. W okienku nawigacji wybierz przycisk wielokropka (...) obok **Kategoria stopki** , a następnie wybierz pozycję **Dodaj moduł**.
+1. W okienku nawigacji wybierz przycisk wielokropka (...) obok **Kategoria stopki**, a następnie wybierz pozycję **Dodaj moduł**.
 1. W oknie dialogowym wybierz **Blok zaawansowanej zawartości** i wybierz przycisk **OK**.
 1. W okienku nawigacji wybierz opcję **Blok aawansowanej zawarości**.
 1. W okienku właściwości po prawej stronie w polu **Akapit** dodaj wiadomość dotyczącą praw autorskich. Na przykład wprowadź **(C) Fabrikam 2019**.
-1. Wybierz opcję **Zapisz** , wybierz opcję **Zakończ edycję** , a następnie wybierz opcję **Publikuj**.
-1. Przejdź do **Szablony** , wybierz szablon, a następnie wybierz opcję **Edytuj**.
-1. W obszarze **Konspekt strony** rozwiń węzeł **Treść** , a następnie rozwiń węzeł **Strona domyślna**.
-1. Wybierz przycisk wielokropka obok **Gniazdo nagłówka** , a następnie wybierz opcję **Dodaj fragment**.
+1. Wybierz opcję **Zapisz**, wybierz opcję **Zakończ edycję**, a następnie wybierz opcję **Publikuj**.
+1. Przejdź do **Szablony**, wybierz szablon, a następnie wybierz opcję **Edytuj**.
+1. W obszarze **Konspekt strony** rozwiń węzeł **Treść**, a następnie rozwiń węzeł **Strona domyślna**.
+1. Wybierz przycisk wielokropka obok **Gniazdo nagłówka**, a następnie wybierz opcję **Dodaj fragment**.
 1. Wybierz utworzony fragment, który utworzono wcześniej, a następnie wybierz opcję **Wybierz**.
-1. Wybierz **Zakończ edycję** , aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 Stopka zawierająca informację o prawach autorskich jest automatycznie wyświetlana u dołu wszystkich stron, w których jest używany wybrany szablon.
 

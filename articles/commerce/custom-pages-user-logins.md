@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 5d9f2febc912b35897b063019146d219cadea1fa
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817313"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517239"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
 
@@ -197,15 +197,15 @@ Po zaktualizowaniu pliku global.json i opublikowaniu zmian tekst nowego łącza 
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

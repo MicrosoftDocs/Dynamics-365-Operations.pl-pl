@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 4c518fb7036d44aa52c8db859ee3616fc4e58a06
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833191"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462256"
 ---
 # <a name="set-up-linkedin-integration-with-attract"></a>Konfigurowanie integracji serwisu LinkedIn z Attract
 
@@ -57,7 +57,7 @@ Oferty pracy, które są publikowane na LinkedIn są wyświetlane od razu na ofi
 
 1. W menu **Ustawienia** (symbol koła zębatego) w prawym górnym rogu wybierz opcję **Centrum administracyjne**. Alternatywnie przejdź do <https://attract.talent.dynamics.com/adminsettings>.
 2. Wybierz kartę **Integracja z serwisem LinkedIn**.
-3. W obszarze **Nazwa firmy**wprowadź nazwę firmy, a w polu **Identyfikator firmy** wprowadź identyfikator swojej firmy w serwisie LinkedIn. Upewnij się, że nazwa firmy pasuje do nazwy znajdującej się na stronie serwisu LinkedIn firmy. Aby uzyskać więcej informacji na temat identyfikatorów firmy LinkedIn, zobacz [Kojarzenie identyfikatora firmy w serwisie LinkedIn z tablicą ofert pracy serwisu LinkedIn — często zadawane pytania](https://www.linkedin.com/help/linkedin/answer/98972).
+3. W obszarze **Nazwa firmy** wprowadź nazwę firmy, a w polu **Identyfikator firmy** wprowadź identyfikator swojej firmy w serwisie LinkedIn. Upewnij się, że nazwa firmy pasuje do nazwy znajdującej się na stronie serwisu LinkedIn firmy. Aby uzyskać więcej informacji na temat identyfikatorów firmy LinkedIn, zobacz [Kojarzenie identyfikatora firmy w serwisie LinkedIn z tablicą ofert pracy serwisu LinkedIn — często zadawane pytania](https://www.linkedin.com/help/linkedin/answer/98972).
 
     Aby zmienić informacje dotyczące organizacji, należy zapoznać się z tematem [Zmiana adresu organizacji, kontaktu technicznego itp.](https://docs.microsoft.com/office365/admin/manage/change-address-contact-and-more). Jeśli nadal masz problemy, skontaktuj się z [Pomocą techniczną serwisu LinkedIn](https://www.linkedin.com/help/linkedin).
 

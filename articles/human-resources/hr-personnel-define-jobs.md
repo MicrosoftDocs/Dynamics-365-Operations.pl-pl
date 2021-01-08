@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428669"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420087"
 ---
 # <a name="define-new-jobs"></a>Definiowanie nowych zadań
 
@@ -57,7 +57,7 @@ To zadanie jest zorientowane na utworzenie nowego zadania (pracy). Jest ona wyko
 21. Na liście znajdź i zaznacz odpowiedni rekord.
 22. Na liście kliknij łącze w wybranym wierszu.
 23. Przełącz rozwinięcie sekcji Umiejętności.
-    * Należy zwrócić uwagę, że pola na skróconych kartach Umiejętności, Wykształcenie i Certyfikaty są puste. Po skopiowaniu informacji z szablonu zadania informacje w tych polach zostaną wprowadzone w jednym kroku.   
+    * Należy zwrócić uwagę, że pola na skróconych kartach Umiejętności, Wykształcenie i Certyfikaty są puste. Po skopiowaniu informacji z szablonu zadania informacje w tych polach zostaną wprowadzone w jednym kroku.   
 24. Kliknij przycisk Zapisz.
 25. Kliknij opcję Kopiuj z.
 26. Kliknij opcję Kopiuj z szablonu.

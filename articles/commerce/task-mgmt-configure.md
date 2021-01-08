@@ -17,11 +17,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
-ms.sourcegitcommit: 80cbb7d22267aa6a0ae0568d0063fb95556958a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415006"
 ---
 # <a name="configure-task-management"></a>Konfigurowanie zarządzania zadaniami
 

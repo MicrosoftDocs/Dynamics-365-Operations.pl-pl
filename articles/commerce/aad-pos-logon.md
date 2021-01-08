@@ -16,11 +16,11 @@ ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
 ms.openlocfilehash: 6946cb5f8bc8aa451f72d1eebcd324f408ad5f7a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975078"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414863"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Włącz uwierzytelnianie Azure Active Directory w celu autoryzacji w punkcie sprzedaży
 [!include [banner](includes/banner.md)]

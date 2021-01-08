@@ -17,17 +17,17 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
 ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016800"
+ms.locfileid: "4435564"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie przedstawiono scenariusz, w którym co najmniej jeden wiersz sprzedaży musi zostać ręcznie zwolniony do magazynu z poziomu strony **zwalniania do magazynu** , a zasady konsolidacji wysyłki zdefiniowane w systemie muszą zostać zastąpione przed zwolnieniem. Zastąpienie zasady konsolidacji wysyłki może być wymagane, jeśli na przykład zamówienie, które nie jest zwykle skonsolidowane w przypadku otwartych wysyłek, musi zostać skonsolidowane z otwartymi wysyłkami.
+W tym temacie przedstawiono scenariusz, w którym co najmniej jeden wiersz sprzedaży musi zostać ręcznie zwolniony do magazynu z poziomu strony **zwalniania do magazynu**, a zasady konsolidacji wysyłki zdefiniowane w systemie muszą zostać zastąpione przed zwolnieniem. Zastąpienie zasady konsolidacji wysyłki może być wymagane, jeśli na przykład zamówienie, które nie jest zwykle skonsolidowane w przypadku otwartych wysyłek, musi zostać skonsolidowane z otwartymi wysyłkami.
 
 W trakcie tego scenariusza utworzysz zestaw zamówień sprzedaży, a następnie zastąpi domyślne zasady konsolidacji wysyłki przed zwolnieniem zamówień do magazynu.
 
@@ -47,10 +47,10 @@ W opisanym poniżej scenariuszu przyjęto założenie, że użytkownik już wł�
 
 1. Dodaj wiersz zamówienia sprzedaży z następującymi ustawieniami:
 
-    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4** )
+    - **Kod pozycji:** *A0001* (pozycja, do której nie przypisano filtru **Kod 4**)
     - **Ilość:** *1.00*
 
-1. Wybierz pozycję **Zapasy \> Rezerwacja** , a następnie w okienku akcji wybierz pozycję **Rezerwacja partii** , aby zarezerwować wiersz zamówienia.
+1. Wybierz pozycję **Zapasy \> Rezerwacja**, a następnie w okienku akcji wybierz pozycję **Rezerwacja partii**, aby zarezerwować wiersz zamówienia.
 
 ## <a name="release-the-sales-orders-from-the-release-to-warehouse-page"></a>Zwalnianie zamówień sprzedaży ze strony zwalniania do magazynu
 
@@ -58,12 +58,12 @@ Wykonać poniższe kroki, aby zastępować zasady konsolidacji wysyłki podczas 
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Zwolnij do magazynu \> Zwolnij do magazynu**.
 1. W górnym okienku wybierz pierwsze zamówienie sprzedaży utworzone dla tego scenariusza.
-1. Wybierz przycisk **Dodaj** , aby dodać wiersz do zwolnienia do magazynu. Zauważ, że *domyślne* zasady konsolidacji wysyłki są stosowane w dolnym okienku.
+1. Wybierz przycisk **Dodaj**, aby dodać wiersz do zwolnienia do magazynu. Zauważ, że *domyślne* zasady konsolidacji wysyłki są stosowane w dolnym okienku.
 1. W dolnym okienku wybierz pozycję **Wybierz nowe zasady konsolidacji wysyłki**.
 1. Wybierz zasady umożliwiające konsolidację z innymi otwartymi wysyłkami tych samych zasad. Na przykład wybierz zasady *CustomerOrderNo*.
 1. Wybierz pozycję **Zwolnij do magazynu**.
 1. Wybierz drugie i trzecie zamówienie sprzedaży utworzone dla tego scenariusza.
-1. Wybierz przycisk **Dodaj** , aby dodać wiersze do zwolnienia do magazynu. Zauważ, że *domyślne* zasady są stosowane w dolnym okienku.
+1. Wybierz przycisk **Dodaj**, aby dodać wiersze do zwolnienia do magazynu. Zauważ, że *domyślne* zasady są stosowane w dolnym okienku.
 1. Wybierz drugi wiersz, a następnie w polu **Wybierz nowe zasady konsolidacji wysyłki** wybierz zasady *CustomerOrderNo*.
 1. Wybierz pozycję **Zwolnij do magazynu** dla obu wierszy.
 

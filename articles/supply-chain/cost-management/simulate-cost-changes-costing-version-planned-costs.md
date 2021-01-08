@@ -20,11 +20,11 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: f6e1d52f48a6b7675fb16ccc5ecd9ba7cd25ac8b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3214465"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435305"
 ---
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Symulacja zmian kosztów przy użyciu wersji wyceny kosztów planowanych
 

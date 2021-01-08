@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 662d26c0157377977bd1031cd7bb13a8e692f37e
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 0e888fca4a5401f1df6e61b10358489846ad4b0e
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646046"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517215"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 
@@ -97,8 +97,8 @@ Aby skonfigurować regułę routingu w usłudze Azure Front Door Service, wykona
 1. W polu **Nazwa** wpisz **domyślna**.
 1. W polu **zaakceptowane protokoły** wybierz opcję **HTTP i HTTPS**.
 1. W polu **hosty frontonu** wprowadź **dynamics-ecom-tenant-name.azurefd.net**.
-1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\***.
-1. W obszarze **Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
+1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\**.
+1. W obszarze _*Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
 1. W polu **Pula wewnętrzna** wybierz opcję **ecom-backend**.
 1. W grupie pól **protokół przesyłania dalej** wybierz opcję **dopasowywanie żądań**. 
 1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
@@ -110,8 +110,8 @@ Aby skonfigurować regułę buforowania w usłudze Azure Front Door Service, wyk
 1. W polu **Nazwa** wpisz **statystyki**.
 1. W polu **zaakceptowane protokoły** wybierz opcję **HTTP i HTTPS**.
 1. W polu **hosty frontonu** wprowadź **dynamics-ecom-tenant-name.azurefd.net**.
-1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\_msdyn365/\_scnr/\***.
-1. W obszarze **Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
+1. W obszarze **Wzory do dopasowania**, w górnym polu wprowadź wartość **/\_msdyn365/\_scnr/\**.
+1. W obszarze _*Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
 1. W polu **Pula wewnętrzna** wybierz opcję **ecom-backend**.
 1. W grupie pól **protokół przesyłania dalej** wybierz opcję **dopasowywanie żądań**.
 1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
@@ -146,15 +146,15 @@ Sieć CDN powinna być teraz poprawnie skonfigurowana, aby można było jej uży
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

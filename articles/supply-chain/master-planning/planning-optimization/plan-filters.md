@@ -20,11 +20,11 @@ ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 9ddf9934965bd06ec805731a1cc1a667846fa180
-ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3323423"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435193"
 ---
 # <a name="apply-filters-to-a-plan"></a>Stosowanie filtrów do planu
 

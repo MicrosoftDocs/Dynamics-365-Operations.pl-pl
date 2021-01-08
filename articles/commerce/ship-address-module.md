@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7233b23020e6c82f39981d530095642902461807
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: aeaa410fde29b285fdbbdd6acac19b0c4e917aa5
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818405"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415102"
 ---
 # <a name="shipping-address-module"></a>Moduł adresu wysyłki
 
@@ -65,7 +65,9 @@ Moduł adresu wysyłki można dodać tylko do modułu realizacji transakcji. Aby
 
 [Moduł płatności](payment-module.md)
 
-[Moduł Opcje dostawy](delivery-options-module.md)
+[Moduł opcji dostawy](delivery-options-module.md)
+
+[Moduł informacji o odbiorze](pickup-info-module.md)
 
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 

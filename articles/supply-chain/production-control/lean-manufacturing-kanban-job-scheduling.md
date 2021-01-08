@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 77ba67de5585022ab7d506c8cd2acb380a4e3a54
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979458"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435449"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Planowanie zadań w systemie Kanban dla produkcji oszczędnej
 

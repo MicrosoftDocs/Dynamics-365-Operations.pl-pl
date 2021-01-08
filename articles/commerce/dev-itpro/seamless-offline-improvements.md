@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 3c2a644fd7096668fcefc73c67068fccde6894b0
-ms.sourcegitcommit: 472f8bfc02acf80b07caf7c53bbb397411e946cc
+ms.openlocfilehash: 0bf37453740d1c2b09b5bd7ae4841f23da20a3ec
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3040240"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4687544"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
 

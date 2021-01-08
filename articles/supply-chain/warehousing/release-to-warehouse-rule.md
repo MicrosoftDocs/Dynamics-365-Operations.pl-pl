@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 27030e8dd58b290d80f6b00cbd250e09c1e50819
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597343"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435017"
 ---
 # <a name="release-to-warehouse-rule"></a>Reguła zwolnienia do magazynu
 

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 05e8614f53db2593ade92fdb42dc0dfe869e9407
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055411"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517167"
 ---
 # <a name="breadcrumb-module"></a>Moduł nawigacyjny
 
@@ -46,7 +46,7 @@ Poniższy obraz przedstawia przykład modułu nawigacyjnego, który pokazuje hie
 
 ## <a name="breadcrumb-module-settings"></a>Ustawienia modułu nawigacyjnego
 
-Moduł łącza do stron nadrzędnych opiera się na ustawieniu **Typ widoku nawigacyjnego w PDP** , które jest zdefiniowane **Ustawienia witryny \> Rozszerzenia** w w konstruktorze witryn. Tao ustawienie ma trzy możliwe wartości:
+Moduł łącza do stron nadrzędnych opiera się na ustawieniu **Typ widoku nawigacyjnego w PDP**, które jest zdefiniowane **Ustawienia witryny \> Rozszerzenia** w w konstruktorze witryn. Tao ustawienie ma trzy możliwe wartości:
 
 - **Wyświetl hierarchię kategorii** — gdy ta wartość jest zaznaczona, w module nawigacyjnym zostanie wyświetlona pełna hierarchia kategorii produktu wyświetlanego na formularzu PDP.
 - **Powrót do wyników** — po wybraniu tej wartości w module nawigacyjnym zostanie wyświetlone łącze „Powrót do wyników” na karcie PDP, jeśli użytkownik otworzy moduł PDP w module umożliwiającym wykonanie łącza „Powrót do wyników”. Ta funkcja jest dostępna, gdy użytkownik nawiguje od stron kategorii, wyszukiwania, listy i rekomendacji. Aby można było obsługiwać tę funkcję, moduły zbierania produktów i wyników wyszukiwania mają właściwość o nazwie **Zezwalaj na powrót do wyników na PDP**. Ta właściwość umożliwia określenie, które moduły powinny obsługiwać łącza „Powrót do wyników” dla zestawu PDP. Na przykład po wybraniu opcji **Powróć do wyników** w ustawieniu **Typ widoku nawigacyjnego w PDP** modułu nawigacyjnego i wybranie **Zezwalaj na powrót do wyników na PDP** dla modułu wyników wyszukiwania stron wyszukiwania, łącze „Powrót do wyników” będzie wyświetlane, gdy użytkownicy przejdą ze strony wyszukiwania do PDP.
@@ -66,19 +66,19 @@ Moduł łącza do stron nadrzędnych opiera się na ustawieniu **Typ widoku nawi
 
 Aby dodać moduł nawigacyjnego do PDP i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Ustawień witryny /> Rozszerzeń** , a następnie dla ustawienia **Typ widoku nawigacyjnego w PDP** wybierz **Wyświetl hierarchię kategorii**.
+1. Przejdź do **Ustawień witryny \> Rozszerzeń**, a następnie dla ustawienia **Typ widoku nawigacyjnego w PDP** wybierz **Wyświetl hierarchię kategorii**.
 1. Przejdź do **Szablony** i wybierz szablon PDP.
-1. W gnieździe **Kontener** , w którym znajduje się moduł pola zakupu wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W gnieździe **Kontener**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Nawigacyjny** i wybierz przycisk **OK**.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Przejdź do **Stron** i otwórz element PDP, w którym jest używany szablon PDP. Jeśli PDP jeszcze nie istnieje, utwórz go.
-1. W gnieździe **Kontener** , w którym znajduje się moduł pola zakupu wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W gnieździe **Kontener**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Nawigacyjny** i wybierz przycisk **OK**.
 1. W okienku właściwości gniazda **Nawigacyjne** w obszarze **Element główny** wybierz opcję **Tekst łącza**.
-1. W oknie dialogowym **Tekst łącza** wprowadź tekst **Strona główna** , a następnie w obszarze **Cel łącza** wybierz opcję **Dodaj łącze**.
+1. W oknie dialogowym **Tekst łącza** wprowadź tekst **Strona główna**, a następnie w obszarze **Cel łącza** wybierz opcję **Dodaj łącze**.
 1. W oknie dialogowym **Dodaj łącze** wybierz łącze do źródła nawigacyjnego, a następnie kliknij przycisk **OK**.
-1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony.
-1. Wybierz **Zakończ edycję** , aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

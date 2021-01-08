@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 566036c6361194d910a0fc34bd5d72147585ec4f
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889920"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435129"
 ---
 # <a name="asset-lifecycle-states"></a>Stany cyklu życia składnika majątku
 
@@ -31,7 +31,7 @@ ms.locfileid: "3889920"
 
  
 
-W tym temacie wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku. Stany cyklu życia składnika majątku są używane do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Można na przykład skonfigurować stany cyklu życia składnika majątku, takie jak **Utworzone**, **Aktywne**i **Zakończone**.
+W tym temacie wyjaśniono stany cyklu życia składników majątku i modele cyklu życia w zarządzaniu składnikami majątku. Stany cyklu życia składnika majątku są używane do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Można na przykład skonfigurować stany cyklu życia składnika majątku, takie jak **Utworzone**, **Aktywne** i **Zakończone**.
 
 > [!NOTE]
 > - Stany cyklu życia żądania są połączone ze stanami cyklu życia składnika majątku. Dlatego kiedy żądanie zostanie zmienione na nowy stan cyklu życia żądania, składnik majątku, dołączony do żądania jest zmieniany na nowy stan cyklu życia składnika majątku. Na przykład, jeśli stan cyklu życia żądania zostanie zmieniony na **Przychodzący**, stan cyklu życia dołączonego składnika majątku zostanie zmieniony na stan cyklu życia wybranego w polu **stan cyklu życia przychodzącego** na skróconej karcie **Stan cyklu życia składnika majątku** na stronie **Modele stanu cyklu życia składnika majątku**. 

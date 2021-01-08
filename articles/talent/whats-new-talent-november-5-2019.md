@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-11-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 48de07178acfaccf11e0a02b2848bf24e6ccc117
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c4068cf81782d2f9559179b91da31e049c006059
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896780"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527127"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-november-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (5 listopada 2019 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
@@ -69,7 +71,7 @@ Ta wersja koryguje usterkę w przypadku żądania zmian dotyczących wynagrodzen
 
 W przypadku tej zmiany kody przyczyn zawierające więcej niż 30 znaków zostaną zaktualizowane w Common Data Service. Zmiany wprowadzone w Common Data Service zostaną również odzwierciedlone w Talent.
 
-### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Integracja adresu z rozwiązania Talent do rozwiązania Finance and Operations (351961)
+### <a name="address-integration-from-talent-to-finance-and-operations-351961"></a>Integracja adresu z modułu Talent do Finance and Operations (351961)
 
 Ta wersja rozwiązuje problem polegający na tym, że adresy zaktualizowane w programie Talent nie były aktualizowane w module Finance and Operations. Zmiany w blokach adresów zostaną teraz zaktualizowane.
 

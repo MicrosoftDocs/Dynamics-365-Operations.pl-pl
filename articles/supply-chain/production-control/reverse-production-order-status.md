@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c7529e6c2bd7cb6b8386565c9f19075e56a65d3c
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826153"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435208"
 ---
 # <a name="reverse-the-production-order-status"></a>Wycofywanie stanu zlecenia produkcyjnego
 

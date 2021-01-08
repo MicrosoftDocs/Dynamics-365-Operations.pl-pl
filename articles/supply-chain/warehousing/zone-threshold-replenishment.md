@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e13b5fd895fca7f8fe77809348d63ed8867dea9e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 6f4ddd03ec16ac43b007b904eb688563735e0941
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017329"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654179"
 ---
 # <a name="zone-threshold-replenishment"></a>Uzupełnianie zapasów na podstawie progu w strefie
 
@@ -41,7 +41,7 @@ W przeciwieństwie do minimalnych/maksymalnych uzupełnień na podstawie lokaliz
 
 ## <a name="turn-on-the-zone-threshold-replenishment-feature"></a>Włącz funkcję Uzupełnianie zapasów na podstawie progu w strefie
 
-Aby móc używać funkcji *Uzupełniania zapasów na podstawie progu w strefie* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby móc używać funkcji *Uzupełniania zapasów na podstawie progu w strefie*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Uzupełnianie zapasów na podstawie progu w strefie*
@@ -64,13 +64,13 @@ W tym przykładzie przedstawiono sposób przygotowania kodu dyrektywy. Jeśli pl
 
 1. Wybierz firmę **USMF** do pracy z danymi demonstracyjnymi.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Kody dyrektyw**.
-1. W okienku akcji wybierz opcję **Nowy** , aby dodać nowy wiersz do siatki.
+1. W okienku akcji wybierz opcję **Nowy**, aby dodać nowy wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Kod dyrektywy:** _Uzupeł. stref._
     - **Opis dyrektywy:** _Uzupełnienie zapasów strefy_
 
-1. Wybierz **Zapisz** , aby zapisać nowy kod.
+1. Wybierz **Zapisz**, aby zapisać nowy kod.
 
 ### <a name="set-up-replenishment-templates"></a>Ustaw szablony uzupełniania zapasów
 
@@ -86,7 +86,7 @@ W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. J
 
 1. Wybierz firmę **USMF** do pracy z danymi demonstracyjnymi.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Uzupełnienie \> Szablony uzupełniania zapasów**.
-1. Wybierz opcję **Edytuj** , aby umieścić stronę w trybie edycji.
+1. Wybierz opcję **Edytuj**, aby umieścić stronę w trybie edycji.
 1. W okienku akcji wybierz opcję **Nowy** w okienku akcji, aby dodać nowy wiersz do siatki **Przegląd**.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
 
@@ -95,14 +95,14 @@ W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. J
     - **Typ uzupełnienia:** _minimum lub maksimum_
 
 1. Wybierz opcję **Zapisz**.
-1. Gdy nowy wiersz jest nadal zaznaczony w siatce **Przeglądu** , wybierz opcję **Nowy** nad siatką **Szczegóły szablonu uzupełnienia** , aby dodać wiersz skojarzony z właśnie utworzonym szablonem uzupełnienia zapasów *strefy min./maks.*
+1. Gdy nowy wiersz jest nadal zaznaczony w siatce **Przeglądu**, wybierz opcję **Nowy** nad siatką **Szczegóły szablonu uzupełnienia**, aby dodać wiersz skojarzony z właśnie utworzonym szablonem uzupełnienia zapasów *strefy min./maks.*
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Wpisz _1_.
     - **Opis:** Wpisz _Wybierz uzupełnienie strefy_.
     - **Jednostka uzupełnienia:** Wybierz pozycję _ea_.
     - **Typ żądania:** pozostaw to pole puste.
-    - **Kod dyrektywy:** To pole łączy się z szablonem uzupełniania zapasów za pomocą dyrektywy lokalizacyjnej. Wybierz wcześniej utworzony demonstracyjny kod dyrektywy danych ( _strefa uzupeł_ ).
+    - **Kod dyrektywy:** To pole łączy się z szablonem uzupełniania zapasów za pomocą dyrektywy lokalizacyjnej. Wybierz wcześniej utworzony demonstracyjny kod dyrektywy danych (_strefa uzupeł_).
     - **Szablon pracy:** Pozostaw to pole puste.
     - **Ilość minimalna:** W tym polu jest ustawiana ilość, jaka będzie wyzwalać uzupełnianie zapasów. Wprowadź _50_.
     - **Maksymalna ilość:** W tym polu jest ustawiana maksymalna ilość towaru, która może być obecna w strefie. Wytworzona praca uzupełniająca spowoduje zwiększenie zapasów do tej ilości. Wprowadź _150_.
@@ -115,7 +115,7 @@ W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. J
     - **Magazyn:** Wybierz _61_.
 
 1. Wybierz opcję **Wybierz produkty** powyżej siatki **Szczegóły szablonu uzupełnienia zapasów**.
-1. W polu dialogowym **Zapytanie dot. produktu** , na karcie **Zakres** wybierz przycisk **Dodaj** , aby dodać wiersz do siatki.
+1. W polu dialogowym **Zapytanie dot. produktu**, na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** _pozycje_
@@ -123,9 +123,9 @@ W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. J
     - **Pole:** _numer pozycji_
     - **Kryteria:** _A0001_
 
-1. Wybierz przycisk **OK** , aby zapisać zapytanie i zamknąć okno dialogowe.
+1. Wybierz przycisk **OK**, aby zapisać zapytanie i zamknąć okno dialogowe.
 1. Wybierz opcję **Wybierz strefy do uzupełnienia** powyżej siatki **Szczegóły szablonu uzupełnienia zapasów**.
-1. W polu dialogowym **Zapytanie dot. strefy** , na karcie **Zakres** , dodaj wiersz do siatki.
+1. W polu dialogowym **Zapytanie dot. strefy**, na karcie **Zakres**, dodaj wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** _strefa magazynowa_
@@ -133,7 +133,7 @@ W tym przykładzie przedstawiono sposób przygotowania szablonu uzupełniania. J
     - **Pole:** _Identyfikator strefy_
     - **Kryteria:** _FLOOR_
 
-1. Wybierz przycisk **OK** , aby zapisać zapytanie i zamknąć okno dialogowe.
+1. Wybierz przycisk **OK**, aby zapisać zapytanie i zamknąć okno dialogowe.
 
 ### <a name="set-up-location-directives"></a>Ustaw dyrektywy lokalizacji
 
@@ -154,7 +154,7 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
 1. Wybierz firmę **USMF** do pracy z danymi demonstracyjnymi.
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Dyrektywy lokalizacji**.
 1. W lewym okienku w polu **Typ zlecenia produkcyjnego** ustaw wartość na _uzupełnienie_.
-1. W okienku akcji wybierz opcję **Nowa** , aby utworzyć nową dyrektywę.
+1. W okienku akcji wybierz opcję **Nowa**, aby utworzyć nową dyrektywę.
 1. Ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Zaakceptuj wartość domyślną.
@@ -165,8 +165,8 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - Pole **Kod dyrektywy:** należy pozostawić puste.
     - **Wiele jednostek SKU:** ustaw tą wartość na _Nie_.
 
-1. Wybierz opcję **Zapisz** , aby utworzyć dyrektywę, w której skonfigurowano dotychczasowe ustawienia.
-1. Na skróconej karcie **Wiersze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Wybierz opcję **Zapisz**, aby utworzyć dyrektywę, w której skonfigurowano dotychczasowe ustawienia.
+1. Na skróconej karcie **Wiersze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Wpisz _1_.
@@ -179,8 +179,8 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Znajdź ilość opakowań:** Wyczyść to pole wyboru.
     - Zaznacz pole wyboru **Zezwalaj na podział:**.
 
-1. Wybierz **Zapisz** , aby zapisać nowy wiersz.
-1. Gdy nowy wiersz jest wciąż zaznaczony w siatce **Wiersze** , wybierz opcję **Nowy** w skróconej karcie **Działania dyrektywy lokalizacji** , aby dodać wiersz do siatki.
+1. Wybierz **Zapisz**, aby zapisać nowy wiersz.
+1. Gdy nowy wiersz jest wciąż zaznaczony w siatce **Wiersze**, wybierz opcję **Nowy** w skróconej karcie **Działania dyrektywy lokalizacji**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Wpisz _1_.
@@ -190,9 +190,9 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Partia włączona:** Wyczyść to pole wyboru.
     - **Strategia:** Wybierz opcję _Brak_.
 
-1. Wybierz **Zapisz** , aby zapisać nowe działanie.
+1. Wybierz **Zapisz**, aby zapisać nowe działanie.
 1. Podczas gdy nowa akcja jest wciąż zaznaczona, wybierz polecenie **Edytuj zapytanie** powyżej siatki **Działania dyrektywy lokalizacji**.
-1. Zostanie wyświetlone okno dialogowe zapytania, w którym można wybrać lokalizacje, z których będą wykonywane uzupełnienia zapasów. Na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz do siatki.
+1. Zostanie wyświetlone okno dialogowe zapytania, w którym można wybrać lokalizacje, z których będą wykonywane uzupełnienia zapasów. Na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** _Lokalizacje_
@@ -200,13 +200,13 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Pole:** _Identyfikator strefy_
     - **Kryteria:** _BULK_
 
-1. Wybierz przycisk **OK** , aby zapisać zapytanie i zamknąć okno dialogowe.
-1. Wybierz **Zapisz** , by zapisać dyrektywę lokalizacji.
+1. Wybierz przycisk **OK**, aby zapisać zapytanie i zamknąć okno dialogowe.
+1. Wybierz **Zapisz**, by zapisać dyrektywę lokalizacji.
 
 ##### <a name="create-a-replenishment-put-directive"></a>Tworzenie dyrektywy odkładania uzupełniania zapasów
 
 1. Na stronie **Dyrektywy lokalizacji** w lewym okienku upewnij się, że pole **Typ zlecenia pracy** jest nadal ustawiony na _uzupełnienie_.
-1. W okienku akcji wybierz opcję **Nowa** , aby utworzyć kolejną dyrektywę.
+1. W okienku akcji wybierz opcję **Nowa**, aby utworzyć kolejną dyrektywę.
 1. Ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Zaakceptuj wartość domyślną.
@@ -214,11 +214,11 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Typ zlecenia pracy:** Wybierz opcję _Odłóż_.
     - **Placówka:** Wybierz _6_.
     - **Magazyn:** Wybierz _61_.
-    - **Kod dyrektywy:** Wybierz _strefa uzupełnień_ , aby połączyć tę dyrektywę lokalizacji z szablonem uzupełnienia, który został utworzony wcześniej, przy użyciu utworzonego wcześniej kodu.
+    - **Kod dyrektywy:** Wybierz _strefa uzupełnień_, aby połączyć tę dyrektywę lokalizacji z szablonem uzupełnienia, który został utworzony wcześniej, przy użyciu utworzonego wcześniej kodu.
     - **Wiele jednostek SKU:** ustaw tą wartość na _Nie_.
 
-1. Wybierz opcję **Zapisz** , aby utworzyć dyrektywę, w której skonfigurowano dotychczasowe ustawienia.
-1. Na skróconej karcie **Wiersze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Wybierz opcję **Zapisz**, aby utworzyć dyrektywę, w której skonfigurowano dotychczasowe ustawienia.
+1. Na skróconej karcie **Wiersze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Wpisz _1_.
@@ -231,8 +231,8 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Znajdź ilość opakowań:** Wyczyść to pole wyboru.
     - Zaznacz pole wyboru **Zezwalaj na podział:**.
 
-1. Wybierz **Zapisz** , aby zapisać nowy wiersz.
-1. Gdy nowy wiersz jest wciąż zaznaczony w siatce **Wiersze** , wybierz opcję **Nowy** w skróconej karcie **Działania dyrektywy lokalizacji** , aby dodać wiersz do siatki.
+1. Wybierz **Zapisz**, aby zapisać nowy wiersz.
+1. Gdy nowy wiersz jest wciąż zaznaczony w siatce **Wiersze**, wybierz opcję **Nowy** w skróconej karcie **Działania dyrektywy lokalizacji**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Wpisz _1_.
@@ -242,9 +242,9 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Partia włączona:** Wyczyść to pole wyboru.
     - **Strategia:** Wybierz _Konsolidacja_.
 
-1. Wybierz **Zapisz** , aby zapisać nowe działanie.
+1. Wybierz **Zapisz**, aby zapisać nowe działanie.
 1. Podczas gdy nowa akcja jest wciąż zaznaczona, wybierz polecenie **Edytuj zapytanie** powyżej siatki **Działania dyrektywy lokalizacji**.
-1. Zostanie wyświetlone okno dialogowe zapytania, w którym można wybrać lokalizację do uzupełnienia. To powinna być ta sama strefa, która jest określona w szablonie uzupełnienia. Na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz do siatki.
+1. Zostanie wyświetlone okno dialogowe zapytania, w którym można wybrać lokalizację do uzupełnienia. To powinna być ta sama strefa, która jest określona w szablonie uzupełnienia. Na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** _Lokalizacje_
@@ -252,8 +252,8 @@ Aby przygotować dane demonstracyjne do użycia w scenariuszu na końcu tego tem
     - **Pole:** _Identyfikator strefy_
     - **Kryteria:** _FLOOR_
 
-1. Wybierz przycisk **OK** , aby zapisać zapytanie i zamknąć okno dialogowe.
-1. Wybierz **Zapisz** , by zapisać dyrektywę lokalizacji.
+1. Wybierz przycisk **OK**, aby zapisać zapytanie i zamknąć okno dialogowe.
+1. Wybierz **Zapisz**, by zapisać dyrektywę lokalizacji.
 
 ## <a name="scenario"></a>Scenariusz
 
@@ -275,15 +275,15 @@ Po wybraniu firmy **USMF** dodaj dodatkowe przykładowe dane, które są wymagan
 
 Należy wykonać poniższe kroki, aby upewnić się, że w systemie znajduje się wystarczająca ilość zapasów do obsługi scenariusza przykładowego.
 
-1. Upewnij się, że istnieją dostępne zapasy dla pozycji *A0001* w dwóch różnych lokalizacjach w strefie pobrania ( *FLOOR* ), które są określone w szablonie uzupełnienia zapasów. Jednak suma zapasów powinna być mniejsza niż wymagana ilość minimalna ( *50* ), która jest określona w szablonie uzupełnienia. W ten sposób można symulować sposób obliczania w całej strefie, a nie tylko dla jednej lokalizacji. **Korzystaj z dowolnego procesu magazynowego, aby skorygować zapasy**.
-1. Upewnij się, że istnieje wystarczająca ilość zapasów dla pozycji *A0001* w lokalizacji zbiorczej określonej w dyrektywie pobrania strefy, w której praca uzupełniająca powinna pobierać towary ze strefy o identyfikatorze *BULK*. Suma zapasów powinna być większa niż wymagana ilość maksymalna ( *150* ), która jest określona w szablonie uzupełnienia.
+1. Upewnij się, że istnieją dostępne zapasy dla pozycji *A0001* w dwóch różnych lokalizacjach w strefie pobrania (*FLOOR*), które są określone w szablonie uzupełnienia zapasów. Jednak suma zapasów powinna być mniejsza niż wymagana ilość minimalna (*50*), która jest określona w szablonie uzupełnienia. W ten sposób można symulować sposób obliczania w całej strefie, a nie tylko dla jednej lokalizacji. **Korzystaj z dowolnego procesu magazynowego, aby skorygować zapasy**.
+1. Upewnij się, że istnieje wystarczająca ilość zapasów dla pozycji *A0001* w lokalizacji zbiorczej określonej w dyrektywie pobrania strefy, w której praca uzupełniająca powinna pobierać towary ze strefy o identyfikatorze *BULK*. Suma zapasów powinna być większa niż wymagana ilość maksymalna (*150*), która jest określona w szablonie uzupełnienia.
 1. Opcjonalne, ale zalecane: Aby utworzyć arkusz korekt zapasów, należy wykonać następujące kroki:
 
     1. Kliknij kolejno opcje **Zarządzanie zapasami \> Wpisy w arkuszu \> Towary \> Korekta zapasów**.
     1. Wybierz pozycję **Nowy**.
     1. W oknie dialogowym **Tworzenie arkusza magazynowego** w polu **Magazyn** wybierz pozycję *61*.
     1. Kliknij przycisk **OK**.
-    1. Na skróconej karcie **Wiersze arkusza** użyj przycisku **Nowe** , aby dodać trzy wiersze do siatki, należy określić następujące wartości. Po zakończeniu konfigurowania każdego wiersza wybierz opcję **Zapisz**.
+    1. Na skróconej karcie **Wiersze arkusza** użyj przycisku **Nowe**, aby dodać trzy wiersze do siatki, należy określić następujące wartości. Po zakończeniu konfigurowania każdego wiersza wybierz opcję **Zapisz**.
 
         - **Wiersz 1:**
 
@@ -313,7 +313,7 @@ Należy wykonać poniższe kroki, aby upewnić się, że w systemie znajduje si�
             - **Ilość:** *10*
 
     1. W okienku akcji wybierz pozycję **Weryfikacja**. Rozwiąż wszelkie znalezione błędy przed przejściem do następnego kroku.
-    1. W okienku akcji wybierz opcję **Księguj** , aby zaksięgować zapasy w magazynie.
+    1. W okienku akcji wybierz opcję **Księguj**, aby zaksięgować zapasy w magazynie.
 
 ### <a name="sample-scenario-run-zone-based-minmax-replenishment"></a>Przykładowy scenariusz: Uruchom min./maks. uzupełnienie na podstawie strefy
 
@@ -328,8 +328,8 @@ Po ustawieniu wszystkich przykładowych danych dotyczących wymagań wstępnych 
     - **Pole:** Wybierz _Szablon uzupełniania zapasów_.
     - **Kryteria:** Wybierz _min./maks. wartość strefy uzupeł_. Ten szablon uzupełnienia zapasów jest szablonem utworzonym podczas przygotowywania danych demonstracyjnych tego scenariusza.
 
-1. Wybierz **OK** , zapisać zapytanie i cofnąć się do oka dialogowego **Uzupełnianie zapasów**.
-1. Wybierz **OK** , aby uruchomić szablon uzupełnienia zapasów.
+1. Wybierz **OK**, zapisać zapytanie i cofnąć się do oka dialogowego **Uzupełnianie zapasów**.
+1. Wybierz **OK**, aby uruchomić szablon uzupełnienia zapasów.
 
 Zlecenie uzupełniania zapasów jest teraz tworzone, aby pobierać zapasy ze strefy *BULK* i odnawiać je w strefie *FLOOR*.
 

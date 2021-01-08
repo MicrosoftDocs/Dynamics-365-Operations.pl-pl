@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2010-07-10
 ms.dyn365.ops.version: Talent 2019 Wave 1 update
 ms.openlocfilehash: 3705b5b1c6beab9e602ac7d16bf53da51602d61a
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833145"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462254"
 ---
 # <a name="close-a-job-in-attract"></a>Zamykanie oferty pracy w Attract
 

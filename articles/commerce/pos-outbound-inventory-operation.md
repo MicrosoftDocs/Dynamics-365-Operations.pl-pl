@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971552"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414827"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Wychodząca operacja magazynowa w punkcie sprzedaży
 
@@ -151,7 +151,7 @@ Funkcji **Anulowanie realizacji** należy użyć na pasku aplikacji tylko wtedy,
 
 W przypadku realizacji zamówienia przeniesienia można użyć funkcji **Wstrzymaj realizację**, jeśli proces ma zostać podzielony od procesu. Na przykład można wykonać inną operację z punktu sprzedaży, na przykład dzwonienie do sprzedaży odbiorcy lub opóźnienie księgowania wysyłki do Centrali Commerce headquarters (HQ).
 
-Po wybraniu opcji **Wstrzymaj realizację**stan dokumentu zostanie zmieniony na **Wstrzymany**. Dlatego użytkownick będzie wiedzieć, że wprowadzono dane do dokumentu, ale dokument nie został jeszcze zatwierdzony. Aby wznowić proces realizacji, wybierz wstrzymany dokument, a następnie wybierz **Szczegóły zamówienia**. Wszystkie **Wysyłane teraz** ilości odbieranych towarów są zachowywane i można je przeglądać z poziomu widoku **Pełna lista zamówień**.
+Po wybraniu opcji **Wstrzymaj realizację** stan dokumentu zostanie zmieniony na **Wstrzymany**. Dlatego użytkownick będzie wiedzieć, że wprowadzono dane do dokumentu, ale dokument nie został jeszcze zatwierdzony. Aby wznowić proces realizacji, wybierz wstrzymany dokument, a następnie wybierz **Szczegóły zamówienia**. Wszystkie **Wysyłane teraz** ilości odbieranych towarów są zachowywane i można je przeglądać z poziomu widoku **Pełna lista zamówień**.
 
 ### <a name="review"></a>Przegląd
 

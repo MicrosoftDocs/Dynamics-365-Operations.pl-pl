@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b848a0450c1cce1b3c6f7954397c75a44526d2b1
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982144"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435149"
 ---
 # <a name="sales-agreements-overview"></a>Omówienie umów sprzedaży
 
@@ -37,7 +37,7 @@ Okres ważności wiersza umowy sprzedaży jest definiowany na postawie pól **Da
 
 Zamówienie sprzedaży można utworzyć bezpośrednio z umowy sprzedaży za pomocą działania **Zwolnij zamówienie**. Ewentualnie można wybrać obowiązującą umowę sprzedaży podczas przyjmowania zamówień (zobacz sekcję „Stosowanie umów sprzedaży w procesie zamawiania” w tym artykule).  
 
-> [Uwaga] W poprzednich wersjach umowy sprzedaży były nazywane zbiorczymi zamówieniami sprzedaży.
+> [Uwaga!] W poprzednich wersjach umowy sprzedaży były nazywane zbiorczymi zamówieniami sprzedaży.
 
 ## <a name="commitment-types"></a>Typy zobowiązania
 Każdy wiersz umowy sprzedaży jest zobowiązaniem do zakupu czegoś. Ogólnie są dwie kategorie zobowiązania:

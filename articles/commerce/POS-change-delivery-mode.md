@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 1e9f8d202fa81546a9f84af62824e6d8f620cf35
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: eaffe7821b60dd787a7d8b7533c1b8599033ba68
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975104"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594144"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Zmień tryb dostawy w punkcie sprzedaży
 
@@ -40,4 +40,10 @@ Po skonfigurowaniu tej funkcji w punkcie sprzedaży po wybraniu opcji **Zmień t
 
 Po wybraniu wierszy, które chcesz zmienić, kliknij przycisk **Zmień tryb dostawy**, aby wyświetlić monit o wybranie opcji trybu dostawy. Jeśli wybrano wiele wierszy do zmiany, w punkcie sprzedaży będą wyświetlane tylko metody dostaw, które zostały skonfigurowane jako dozwolone dla wszystkich wybranych produktów. Metody dostawy można skonfigurować w taki sposób, aby obsługiwały określone produkty i adresy dostaw. Jeśli istnieje metoda dostawy, która jest akceptowana dla jednej kombinacji produktów i adresu, ale nie jest akceptowana dla innej wybranej kombinacji produktu i adresu, metoda dostawy jest niedostępna. Aby wybrać metodę dostawy dla jednego produktu, który nie jest obsługiwany przez inny produkt, należy wybrać wiersze jeden według jednego i zmienić tryb dostawy dla każdego wiersza.  
 
-Po wybraniu nowej metody dostawy zostanie wyświetlona strona transakcji. Aby przejrzeć nowe wybory trybu dostawy, wybierz kartę **dostawa** na liście transakcji.   
+Po wybraniu nowej metody dostawy zostanie wyświetlona strona transakcji. Aby przejrzeć nowe wybory trybu dostawy, wybierz kartę **dostawa** na liście transakcji.
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+[Tworzenie zamówień w biurach obsługi](tasks/create-call-center-orders.md)
+
+[Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy](customize-email-delivery-mode.md)

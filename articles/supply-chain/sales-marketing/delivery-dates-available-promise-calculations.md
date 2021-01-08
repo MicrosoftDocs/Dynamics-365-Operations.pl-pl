@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e969a4bc4346d05abd99022868dae3a1d78fe50
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ae3192bcf5128c09279017e3d5e8be8f42ec6975
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979434"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666777"
 ---
 # <a name="order-promising"></a>Zobowiązanie do zamówienia
 
@@ -37,6 +37,12 @@ Zobowiązanie zamówienia oblicza najwcześniejsze daty wysyłki i przyjęcia, i
 -   **ATP (dostępność zapasów)** — ATP to dostępna ilość towaru, która może zostać zarezerwowana dla odbiorcy na konkretny dzień. Obliczanie ATP obejmuje niezatwierdzone zapasy, czasy realizacji, planowane przychody i rozchody.
 -   **ATP + Zapas czasu dla rozchodu** — data wysyłki jest równa dacie ATP plus zapas czasu dla rozchodu w odniesieniu do towaru. Jest to czas potrzebny na przygotowanie towaru do wysyłki.
 -   **CTP (stan zapasów)** — dostępność jest obliczana na podstawie rozłożenia.
+
+> [!NOTE]
+> Po zaktualizowaniu zamówienia sprzedaży informacje o obietnicach zamówienia są aktualizowane tylko wtedy, gdy nie można spełnić istniejącej daty obietnicy zamówienia, co ilustruje poniższy przykład:
+> 
+> - **Przykład 1** : bieżąca data obietnicy zamówienia wynosi 20 lipca, ale z powodu zwiększonej ilości nie będzie można jej dostarczyć do 25 lipca. Ponieważ data bieżąca nie może być już spełniona, obietnice zamówień są uruchamiane.
+> -  **Przykład 2**: bieżąca data obietnicy zamówienia wynosi 20 lipca, ale z powodu zmniejszonej ilości będzie można ją dostarczyć do 15 lipca. Ponieważ jednak w dalszym ciągu można zrealizować bieżącą datę, obietnica zamówienia nie zostanie uruchomiona, a 20 lipca pozostaje datą obietnicy zamówienia.
 
 ## <a name="atp-calculations"></a>Obliczenia ATP
 Ilość ATP jest obliczana na podstawie metody „zbiorcze ATP z wyprzedzeniem”. Główną zaletą tej metody obliczania ATP jest to, że może ona obsługiwać przypadki, gdzie suma wydań między przyjęciami jest większa niż ostatnie przyjęcie (np. gdy wystąpi potrzeba użycia ilości z wcześniejszego przyjęcia, aby zaspokoić określone zapotrzebowanie). Metoda obliczania „zbiorcze ATP z wyprzedzeniem” obejmuje wszystkie wydania do momentu, aż łączna ilość do przyjęcia będzie większa niż łączna ilość do wydania. Z tego względu metoda obliczania ATP ocenia, czy niektóre ilości z poprzedniego okresu mogą być używane w późniejszym okresie.  

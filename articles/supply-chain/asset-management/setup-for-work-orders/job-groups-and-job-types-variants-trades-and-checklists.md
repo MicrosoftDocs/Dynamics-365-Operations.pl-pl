@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889082"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435205"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji
 
@@ -238,7 +238,7 @@ Szablony listy prac konserwacyjnych mogą być używane jako wspólny zbiór zad
 
 ![Strona Ustawienia domyślne typu zadania konserwacji](media/07-setup-for-work-orders.png)
 
-Jeśli system wybierze domyślną wartość typu zadania obsługi, która powinna być używana w wierszu zlecenia, wybór jest oparty na składniku aktywów i ustawieniach powiązanego typu środka trwałego. Zarządzanie środkami trwałymi przechodzi między wszystkimi domyślnymi rekordami, które są powiązane z typem zadania konserwacji związanym z typem środka, aby można było sprawdzić, czy takie dopasowanie jest możliwe. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, aby znaleźć najbardziej konkretną kombinację, najpierw należy sprawdzić, czy jest możliwe dopasowanie dla pola **Zawód**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Wariant typu zadania konserwacji**. Jeśli nie zostanie znaleziony żaden odpowiednik, system sprawdza zgodność dla pola typu **zadanie konserwacji**itd. (**Zawód**, później **Wariant typu zadania konserwacji**, później **Typ zadania konserwacji**, później **Składnik majatku**, później **Model**, późńiej **Producent** i **Typ składnika majątku**). Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest typ zadania konserwacji domyślny, w którym jest wybrany tylko grupa projektu.
+Jeśli system wybierze domyślną wartość typu zadania obsługi, która powinna być używana w wierszu zlecenia, wybór jest oparty na składniku aktywów i ustawieniach powiązanego typu środka trwałego. Zarządzanie środkami trwałymi przechodzi między wszystkimi domyślnymi rekordami, które są powiązane z typem zadania konserwacji związanym z typem środka, aby można było sprawdzić, czy takie dopasowanie jest możliwe. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, aby znaleźć najbardziej konkretną kombinację, najpierw należy sprawdzić, czy jest możliwe dopasowanie dla pola **Zawód**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Wariant typu zadania konserwacji**. Jeśli nie zostanie znaleziony żaden odpowiednik, system sprawdza zgodność dla pola typu **zadanie konserwacji** itd. (**Zawód**, później **Wariant typu zadania konserwacji**, później **Typ zadania konserwacji**, później **Składnik majatku**, później **Model**, późńiej **Producent** i **Typ składnika majątku**). Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest typ zadania konserwacji domyślny, w którym jest wybrany tylko grupa projektu.
 
 Identyfikator działania projektu jest automatycznie powiązany z każdym tworzonym wierszem domyślnym typu zadania obsługi. Działanie projektu jest tworzone w projekcie prognozy wybranym w polu projekt **Projekt prognozy konserwacji** na karcie **składniki majątku** na stronie **Parametry zarządzania składnikami majątku**. Celem działania projektu jest zarządzanie prognozami według godzin, towarów i wydatków w odniesieniu do zleceń produkcyjnych. Prognozy typu zadania konserwacji są automatycznie przenoszone do wiersza zlecenia produkcyjnego i są kopiowane z projektu prognozy do projektu zlecenia produkcyjnego tworzonego dla wiersza zlecenia Celem działania projektu jest zarządzanie prognozami według zleceń pracy.
 

@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022091"
+ms.locfileid: "4415071"
 ---
 # <a name="social-share-module"></a>Moduł udostępnienia w mediach społecznościowych
 
@@ -53,27 +53,27 @@ Na poniższej ilustracji przedstawiono przykład modułu udostępniania w mediac
 ## <a name="social-share-item-module-properties"></a>Ustawienia elementu modułu udostępnienia w mediach społecznościowych
 | Nazwa właściwości             | Wartość                 | opis |
 |---------------------------|-----------------------|-------------|
-| Media społecznościowe              | **Facebook** , **Twitter** , **Pinterest** , **LinkedIn** , **E-mail** | Menu rozwijane z listą platform społecznościowych. |
+| Media społecznościowe              | **Facebook**, **Twitter**, **Pinterest**, **LinkedIn**, **E-mail** | Menu rozwijane z listą platform społecznościowych. |
 | Ikona |Wizerunek    | Oto obraz, który będzie wyświetlany dla odpowiednich mediów społecznościowych. Najlepszym rozwiązaniem jest użycie zestawu SDK platformy społecznościowej w celu odnalezienia zalecanego obrazu, który ma być używany dla danej platformy. |
 
 ## <a name="add-a-social-share-module-to-a-buy-box-module"></a>Dodawanie modułu udostępniania w mediach społecznościowych do pola zakupu
 
 Aby dodać moduł udostępniania w mediach społecznościowych do pola zakupu, należy wykonać poniższe działania.
 
-1. W witrynie Fabrikam wybierz opcję **Strony** , a następnie wybrać stronę **DefaultPDP** , aby otworzyć stronę szczegółów produktu. 
-1. W gnieździe **Pole zakupu** wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W witrynie Fabrikam wybierz opcję **Strony**, a następnie wybrać stronę **DefaultPDP**, aby otworzyć stronę szczegółów produktu. 
+1. W gnieździe **Pole zakupu** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Udostępnianie w mediach społecznościowych** i wybierz przycisk **OK**.
-1. W gnieździe **Udostępnianie w mediach społecznościowych** wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W gnieździe **Udostępnianie w mediach społecznościowych** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Udostępnianie w mediach społecznościowych** i wybierz przycisk **OK**.
-1. W okienku właściwości modułu **Udostępnianie w mediach społecznościowych** , w obszarze **Orientacja** wybierz opcję **Pozioma**. W razie potrzeby dodaj podpis.
-1. W gnieździe **Udostępnianie w mediach społecznościowych** wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W okienku właściwości modułu **Udostępnianie w mediach społecznościowych**, w obszarze **Orientacja** wybierz opcję **Pozioma**. W razie potrzeby dodaj podpis.
+1. W gnieździe **Udostępnianie w mediach społecznościowych** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Element udostępniania** i wybierz przycisk **OK**.
 1. W okienku właściwości modułu **Element udostępniania** w obszarze **Media społecznościowe** wybierz opcję **Facebook**.
 1. W okienku właściwości modułu **Element udostępniania** w obszarze **Ikona** wybierz opcję **+ Dodaj obraz**.
-1. W oknie dialogowym **Selektor elementów multimedialnych** wybierz logo Facebook i wybierz przycisk **OK**. Jeśli nie jest obecne logo Facebook, wybierz opcję **Wgraj nowy element multimedialny** , aby wgrać logo.
+1. W oknie dialogowym **Selektor elementów multimedialnych** wybierz logo Facebook i wybierz przycisk **OK**. Jeśli nie jest obecne logo Facebook, wybierz opcję **Wgraj nowy element multimedialny**, aby wgrać logo.
 1. W razie potrzeby dodaj i skonfiguruj dodatkowe moduły **Elementy udostępniania**.
-1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony. Na stronie zostanie wyświetlony moduł udostępniania w mediach społecznościowych.
-1. Wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony. Na stronie zostanie wyświetlony moduł udostępniania w mediach społecznościowych.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

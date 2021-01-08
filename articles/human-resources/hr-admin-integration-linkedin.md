@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e82b79858060f31a6310cc5abdb2faf87db2d6c2
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4056104"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527892"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integracja z usługą LinkedIn Talent Hub
 
 [!include [banner](includes/preview-feature.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [LinkedIn Talent Hub](https://business.linkedin.com/talent-solutions/talent-hub) jest platformą systemu śledzenia kandydatów (ATS). Umożliwia on źródło, zarządzanie i zatrudnianie pracowników w jednym miejscu. Integrując Microsoft Dynamics 365 Human Resources z LinkedIn Talent Hub, można łatwo utworzyć rekordy pracowników w Human Resources dla kandydatów, którzy zostali zatrudnieni na stanowiskach.
 
@@ -99,7 +101,7 @@ Należy utworzyć użytkownika aplikacji dla adaptera LinkedIn Talent Hub, aby n
     1. Zmień wartość w polu **Tryb użytkownika** na **Użytkownik aplikacji**.
     2. W polu **Nazwa użytkownika** określ **Integracja Dynamics365 LinkedIn HRIS**.
     3. Ustaw wartość w polu **Identyfikator aplikacji** na **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    4. Wprowadź dowolną wartość w polach **Imię** , **Nazwisko** i **Podstawowy adres e-mail**.
+    4. Wprowadź dowolną wartość w polach **Imię**, **Nazwisko** i **Podstawowy adres e-mail**.
     5. Wybierz **Zapisz \& Zamknij** na pasku narzędzi.
 
 ### <a name="assign-a-security-role-to-the-new-user"></a>Przypisz rolę zabezpieczeń do nowego użytkownika
@@ -121,9 +123,9 @@ Po zapisaniu i zamknięciu nowego użytkownika aplikacji w poprzedniej sekcji wr
 1. W Dynamics 365 Human Resources otwórz stronę **Aplikacje Azure Active Directory**.
 2. Dodaj nowy rekord do listy i ustaw następujące pola:
 
-    - **Identyfikator klienta** : Wpisz **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
-    - **Nazwa** : należy wprowadzić nazwę utworzonej wcześniej roli zabezpieczeń Power Apps, na przykład **Integracja LinkedIn Talent Hub HRIS**.
-    - **Identyfikator użytkownika** : Wybierz użytkownika, który ma uprawnienia do zapisywania danych w zarządzaniu personelem.
+    - **Identyfikator klienta**: Wpisz **3a225c96-d62a-44ce-b3ec-bd4e8e9befef**.
+    - **Nazwa**: należy wprowadzić nazwę utworzonej wcześniej roli zabezpieczeń Power Apps, na przykład **Integracja LinkedIn Talent Hub HRIS**.
+    - **Identyfikator użytkownika**: Wybierz użytkownika, który ma uprawnienia do zapisywania danych w zarządzaniu personelem.
 
 ### <a name="create-the-entity-in-common-data-service"></a>Utwórz jednostkę w Common Data Service
 
@@ -150,9 +152,9 @@ Po przeniesieniu kandydata do procesu rekrutacji i po jego zatrudnieniu można w
 
 2. Wybierz rekord kandydata.
 
-3. Wybierz pozycję **Zmień etap** , a następnie wybierz opcję **Zatrudniono**.
+3. Wybierz pozycję **Zmień etap**, a następnie wybierz opcję **Zatrudniono**.
 
-4. W menu wielokropka ( **...** ) dla kandydata wybierz **Eksportuj do HRIS**.
+4. W menu wielokropka (**...**) dla kandydata wybierz **Eksportuj do HRIS**.
 
 5. W okienku **Eksportuj do HRIS** wprowadź informacje, które muszą zostać wyeksportowane:
 

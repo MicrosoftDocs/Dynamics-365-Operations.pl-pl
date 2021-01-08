@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 86d60a67b60b1bd3a13666b35f729f88ecfee3d3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434897"
 ---
 # <a name="set-up-service-order-stages"></a>Ustawianie etapów zlecenia serwisowego 
 

@@ -16,11 +16,11 @@ ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
 ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982607"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414969"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurowanie buforów zapasów i poziomów zapasów
 

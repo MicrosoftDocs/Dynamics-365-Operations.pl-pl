@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 73c15b41a4b0979ec79c8dbd8d88627bffcf6ed3
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981239"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435029"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Tworzenie i edytowanie ofert sprzedaży
 

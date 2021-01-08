@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7c1aafa15b0e4ba9205f19a00ae19d2c84ce6fa0
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3984065"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435140"
 ---
 #  <a name="dispatch-board"></a>Pulpit wysyłki 
 

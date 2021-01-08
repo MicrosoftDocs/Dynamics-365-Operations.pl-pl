@@ -20,11 +20,11 @@ ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 30e4dc0a45f7de5f0a7178b1e88f7c3d61a7395e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763708"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414927"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
 

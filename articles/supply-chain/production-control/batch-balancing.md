@@ -19,11 +19,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016892"
+ms.locfileid: "4435572"
 ---
 # <a name="batch-balancing"></a>Bilansowanie partii
 
@@ -97,7 +97,7 @@ Substancja B ma atrybut bazowy X i docelowy poziom 30 oraz jest uwzględniona w 
 
 ### <a name="none"></a>None
 
-Jeśli zastosujesz proces równoważenia partii, gdy typem substancji jest **Brak** , szacowana ilość jest taka sama, jak zbilansowana ilość w wierszu formuły w szarży produkcyjnej.
+Jeśli zastosujesz proces równoważenia partii, gdy typem substancji jest **Brak**, szacowana ilość jest taka sama, jak zbilansowana ilość w wierszu formuły w szarży produkcyjnej.
 
 **Przykład**
 
@@ -115,7 +115,7 @@ Relację między substancją aktywną a substancją uzupełniającą ustawia si�
 
 Aby skonfigurować relacje między substancjami, wykonaj następujące czynności:
 
-1.  Wybierz kolejno opcje **Zarządzanie informacjami o produktach** \> **Listy składowe (BOM) i formuły** \> **Formuły** , otwórz wiersz formuły, a następnie wybierz opcję **Substancje** , aby otworzyć stronę **Reguła kompensacji**.
+1.  Wybierz kolejno opcje **Zarządzanie informacjami o produktach** \> **Listy składowe (BOM) i formuły** \> **Formuły**, otwórz wiersz formuły, a następnie wybierz opcję **Substancje**, aby otworzyć stronę **Reguła kompensacji**.
 
 2.  Zaznacz wiersz reprezentujący regułę kompensacji, a następnie zaznacz substancję aktywną, która ma być kompensowana.
 
@@ -147,7 +147,7 @@ Ponieważ 1,10 jest dodatnim współczynnikiem kompensującym, ta regule kompens
 
 **Przykład**
 
-Utworzono formułę produktu zawierającą substancje A, B, C i D w przeliczeniu na 100 litrów wyrobu końcowego. Obliczono zbilansowaną ilość dla wszystkich typów substancji, z wyjątkiem substancji o typie **Wypełniacz** , która jest używana w jednym wierszu.
+Utworzono formułę produktu zawierającą substancje A, B, C i D w przeliczeniu na 100 litrów wyrobu końcowego. Obliczono zbilansowaną ilość dla wszystkich typów substancji, z wyjątkiem substancji o typie **Wypełniacz**, która jest używana w jednym wierszu.
 Zbilansowana ilość substancji wypełniającej jest obliczana jako różnica między rozmiarem partii 100 litrów a sumą ilości substancji A, B i C:
 
 100 – (20 + 25,71 + 14,72) = 39,57
@@ -156,7 +156,7 @@ Zbilansowana ilość substancji wypełniającej jest obliczana jako różnica mi
 ---------------------------
 
 Proces równoważenia partii jest wykonywany na stronie **Równoważenie partii**.
-Wybierz kolejno opcje **Zarządzanie kosztami** \> **Szarże produkcyjne** , a następnie na karcie **Proces** wybierz opcję **Równoważenie partii**. Funkcja równoważenia partii jest dostępna dla szarż produkcyjnych znajdujących się w stanie **Rozpoczęcie**.
+Wybierz kolejno opcje **Zarządzanie kosztami** \> **Szarże produkcyjne**, a następnie na karcie **Proces** wybierz opcję **Równoważenie partii**. Funkcja równoważenia partii jest dostępna dla szarż produkcyjnych znajdujących się w stanie **Rozpoczęcie**.
 
 Zasadniczo równoważenie partii można stosować do szarż produkcyjnych, jeśli formuła zawiera co najmniej jeden wiersz formuły, w którym substancja jest typu **Aktywna**. (Wyjątki od tej reguły opisano w sekcji sekcję „Szarże produkcyjne, do których nie można stosować równoważenia partii” w dalszej części tego tematu).
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018751"
+ms.locfileid: "4435625"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami
 
@@ -71,7 +71,7 @@ Aby udostępnić informację o cenie zamówienia zakupu przez interfejs portalu 
 
 ### <a name="sending-a-po-to-a-vendor"></a>Wysyłanie zamówienia zakupu do dostawcy
 
-Punkt sprzedaży jest przygotowany w Supply Chain Management Gdy zamówienie zakupu ma stan **Zatwierdzone** , można je wysłać do dostawcy, wybierając opcję **Wyślij w celu potwierdzenia** dostępną na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami. Dostawca może zaakceptować zamówienie zakupu, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać w wiadomości e-mail z systemu zarządzania drukowaniem.
+Punkt sprzedaży jest przygotowany w Supply Chain Management Gdy zamówienie zakupu ma stan **Zatwierdzone**, można je wysłać do dostawcy, wybierając opcję **Wyślij w celu potwierdzenia** dostępną na stronie **Zamówienie zakupu**. Stan zamówienia zakupu zmieni się na **W trakcie analizy zewnętrznej**. Po wysłaniu zamówienia zakupu dostawca widzi je na stronie **Zamówienia zakupu do przeglądu** w interfejsie współpracy z dostawcami. Dostawca może zaakceptować zamówienie zakupu, odrzucić lub zasugerować jego modyfikację. Dostawca może również dodać komentarze w celu przekazania informacji, np. o zmianach w zamówieniu zakupu. Jeśli chcesz zwrócić uwagę dostawcy na nowe zamówienie zakupu, możesz je wysłać w wiadomości e-mail z systemu zarządzania drukowaniem.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Potwierdzanie i akceptacja zamówienia zakupu przez dostawcę
 
@@ -120,7 +120,7 @@ Dostawca nie może zmienić informacji o cenach ani opłat. Dostawca może jedna
 </tbody>
 </table>
 
-Można użyć obszaru roboczego **Przygotowanie zamówienia zakupu** do monitorowania, na które zamówienia zakupu dostawca odpowiedział. Ten obszar roboczy zawiera dwie listy z zamówieniami zakupu o stanie **W trakcie analizy zewnętrznej** :
+Można użyć obszaru roboczego **Przygotowanie zamówienia zakupu** do monitorowania, na które zamówienia zakupu dostawca odpowiedział. Ten obszar roboczy zawiera dwie listy z zamówieniami zakupu o stanie **W trakcie analizy zewnętrznej**:
 
 - W trakcie przeglądu zewnętrznego (wymaga wykonania akcji)
 - W trakcie analizy zewnętrznej, oczekuje na odpowiedź dostawcy
@@ -185,7 +185,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 | Dostawca wysyła odpowiedź **Zaakceptowano ze zmianami**. | Stan to nadal **W trakcie analizy zewnętrznej**. |
 | Wprowadzasz kilka zmian, o które prosił dostawca. | Stan zostaje zmieniony na **Zatwierdzone**. |
 | Wysyłasz nową wersję zamówienia zakupu do dostawcy. | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
-| Dostawca akceptuje nową wersję zamówienia zakupu. | Stanem jest nadal **W trakcie analizy zewnętrznej** , chyba że dostawca jest skonfigurowany do automatycznego ustawiania zamówień zakupu ma stan **Potwierdzone** w momencie akceptacji. |
+| Dostawca akceptuje nową wersję zamówienia zakupu. | Stanem jest nadal **W trakcie analizy zewnętrznej**, chyba że dostawca jest skonfigurowany do automatycznego ustawiania zamówień zakupu ma stan **Potwierdzone** w momencie akceptacji. |
 
 Dostawcy nie muszą potwierdzać zamówień zakupu w interfejsie współpracy z dostawcami. Zamiast tego mogą również wysłać wiadomość e-mail lub zawiadomić o przyjęciu zamówienia zakupu przez inne kanały komunikacji. Następnie można ręcznie potwierdzić zamówienie. W takim przypadku zobaczysz ostrzeżenie informujące, że trwa potwierdzanie zamówienia, nawet jeśli nie ma odpowiedzi od dostawcy. Zamówienie zakupu pojawi się wtedy w historii potwierdzeń jako otwarte zamówienie potwierdzone, które nie ma żadnych odpowiedzi. W tym momencie dostawca nie będzie już mógł potwierdzić ani odrzucić zamówienia zakupu.
 
@@ -201,10 +201,10 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 | Akcja | Stan i wersja |
 |--------|--------------------|
 | Pierwotna wersja zamówienia zakupu jest tworzona w programie Supply Chain Management. | Stan to **Wersja robocza**. |
-| Zamówienie zakupu jest wysyłane do procesu zatwierdzania (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy). | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie** , jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja. | 
+| Zamówienie zakupu jest wysyłane do procesu zatwierdzania (Proces zatwierdzania jest procesem wewnętrznym, w którym dostawca nie uczestniczy). | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Zatwierdzone zamówienie zakupu jest rejestrowane jako wersja. | 
 | Zamówienie zakupu jest wysyłane do dostawcy. | Wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Wprowadzasz kilka zmian, o które prosił dostawca, ręcznie lub za pomocą akcji **Przetwórz aktualizację zamówienia zakupu** w odpowiedzi na aktualizację zamówienia zakupu. | Stan zostaje zmieniony z powrotem na **Wersja robocza**. |
-| Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania. | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie** , jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza** , a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja. |
+| Zamówienie zakupu jest wysyłane z powrotem do procesu zatwierdzania. | Stan zmienia się z **Wersja robocza** na **W trakcie przeglądu** i dalej na **Zatwierdzenie**, jeśli zamówienie zakupu nie zostanie odrzucone w procesie zatwierdzania. Alternatywnie można skonfigurować system w taki sposób, żeby modyfikacje w określonych polach nie wymagały ponownego zatwierdzania. W takim przypadku stan zmienia się najpierw na **Wersja robocza**, a następnie jest automatycznie aktualizowany do wartości **Zatwierdzone**. Zatwierdzone zamówienie zakupu jest rejestrowane jako nowa wersja. |
 | Wysyłasz nową wersję zamówienia zakupu do dostawcy. | Nowa wersja jest rejestrowana w interfejsie współpracy z dostawcami, a jej stan zmienia wartość na **W trakcie analizy zewnętrznej**. |
 | Dostawca zatwierdza nową wersję zamówienia zakupu. | Stan zmienia się na **Potwierdzone** automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu. |
 
@@ -237,7 +237,7 @@ W tej sekcji opisano interakcje między klientami a dostawcami podczas przetwarz
 
 ## <a name="public-sector-extensions"></a>Rozszerzenia sektora publicznego
 
-W przypadku sektora publicznego funkcje rozszerzone umożliwiają wysłanie sprawy ZO do dostawców i ich publikowanie. Po opublikowaniu ZO każdy, kto prosi o informacje może wyświetlić prace zgodne z większością przepisów dotyczących sektora publicznego. Wszystkie dostępne prace są widoczne na stronie listy **Otwarte opublikowane zapytania ofertowe** , a anulowane, oczekujące lub przyznane ZO można wyświetlić na stronie listy **Zamknięte opublikowane zapytania ofertowe**. Dokumenty te można także wyświetlić w witrynie poza rozwiązaniem Supply Chain Management dzięki integracji z następującymi jednostkami danych:
+W przypadku sektora publicznego funkcje rozszerzone umożliwiają wysłanie sprawy ZO do dostawców i ich publikowanie. Po opublikowaniu ZO każdy, kto prosi o informacje może wyświetlić prace zgodne z większością przepisów dotyczących sektora publicznego. Wszystkie dostępne prace są widoczne na stronie listy **Otwarte opublikowane zapytania ofertowe**, a anulowane, oczekujące lub przyznane ZO można wyświetlić na stronie listy **Zamknięte opublikowane zapytania ofertowe**. Dokumenty te można także wyświetlić w witrynie poza rozwiązaniem Supply Chain Management dzięki integracji z następującymi jednostkami danych:
 
 - Opublikowane zapytania ofertowe
 - Wiersz opublikowanych zapytań ofertowych

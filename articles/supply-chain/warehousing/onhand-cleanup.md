@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
 ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015948"
+ms.locfileid: "4435608"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 
@@ -50,7 +50,7 @@ Po uruchomieniu zadania ma on przydzielony rozmiar 100. Innymi słowy podejmie p
 
 ## <a name="possible-user-impact"></a>Możliwy wpływ użytkownika
 
-Użytkownicy mogą mieć wpływ na to, jeśli zadanie oczyszczania wpisów dostępnych zapasów usunie wszystkie rekordy dla danego poziomu (np. na poziomie numeru identyfikacyjnego). W takim przypadku funkcja umożliwiająca wyświetlanie zapasów, które były wcześniej dostępne na numerze identyfikacyjnym, może nie działać zgodnie z oczekiwaniami, ponieważ odpowiednie wpisy stanu zapasów nie są już dostępne. (Funkcja ta sprawdza warunek **Ilość \<\> 0** w ustawieniach **Wyświetlania wymiarów** , gdy użytkownicy wyświetlają informacje o dostępnych zapasach.) Jednak wzrost wydajności, jaki zapewnia zadanie oczyszczania, powinien być uwzględniony w tej niewielkiej utracie funkcjonalności.
+Użytkownicy mogą mieć wpływ na to, jeśli zadanie oczyszczania wpisów dostępnych zapasów usunie wszystkie rekordy dla danego poziomu (np. na poziomie numeru identyfikacyjnego). W takim przypadku funkcja umożliwiająca wyświetlanie zapasów, które były wcześniej dostępne na numerze identyfikacyjnym, może nie działać zgodnie z oczekiwaniami, ponieważ odpowiednie wpisy stanu zapasów nie są już dostępne. (Funkcja ta sprawdza warunek **Ilość \<\> 0** w ustawieniach **Wyświetlania wymiarów**, gdy użytkownicy wyświetlają informacje o dostępnych zapasach.) Jednak wzrost wydajności, jaki zapewnia zadanie oczyszczania, powinien być uwzględniony w tej niewielkiej utracie funkcjonalności.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Umożliwia ustawienie maksymalnego czasu wykonywania
 

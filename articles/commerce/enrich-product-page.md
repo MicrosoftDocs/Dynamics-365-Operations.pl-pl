@@ -18,11 +18,11 @@ ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414865"
 ---
 # <a name="enrich-a-product-page"></a>Wzbogacanie strony produktu
 

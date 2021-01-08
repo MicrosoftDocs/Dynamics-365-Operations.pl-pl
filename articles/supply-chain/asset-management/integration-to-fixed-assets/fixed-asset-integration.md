@@ -16,11 +16,11 @@ ms.author: dabourq
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.11
 ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435114"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrowanie zarządzania składnikami majątku ze środkami trwałymi
 

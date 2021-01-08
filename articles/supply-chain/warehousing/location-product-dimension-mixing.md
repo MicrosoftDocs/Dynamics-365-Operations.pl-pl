@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017168"
+ms.locfileid: "4435546"
 ---
 # <a name="location-product-dimension-mixing"></a>Mieszanie wymiarów produktów w lokalizacji
 
@@ -56,7 +56,7 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
 ### <a name="create-a-new-product-master-and-product-variants"></a>Stwórz nowy produkt główny i jego warianty
 
 1. Wybierz kolejno pozycje **Zarządzanie informacjami o produktach \> Produkty \> Produkty główne**.
-1. W okienku akcji wybierz opcję **Nowa** , aby utworzyć nowy produkt główny.
+1. W okienku akcji wybierz opcję **Nowa**, aby utworzyć nowy produkt główny.
 1. W wyświetlonym oknie dialogowym **Nowy produkt** można ustawić następujące wartości:
 
     - **Typ produktu:** *Przedmiot*
@@ -74,23 +74,23 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
 
 1. Aby wyświetlić wstępnie zdefiniowane warianty, w okienku akcji wybierz opcję **Warianty produktu**.
 
-    Zostanie wyświetlona strona **Warianty produktu** , a w polu zostanie wyświetlona lista wariantów z konfiguracji grupy rozmiarów.
+    Zostanie wyświetlona strona **Warianty produktu**, a w polu zostanie wyświetlona lista wariantów z konfiguracji grupy rozmiarów.
 
 ### <a name="release-products-to-the-usmf-company"></a>Zwalnianie produktów do firmy USMF
 
 1. W okienku akcji wybierz pozycję **Zwalnianie produktów**.
 1. Na stronie **Wybierz produkty do zwolnienia** potwierdź, że numer produktu *B0001* znajduje się na liście, a następnie wybierz przycisk **Dalej**.
-1. Wybierz przycisk **Dalej** , aby potwierdzić warianty produktu do zwolnienia.
-1. Na stronie **Wybierz firmy do których ma nastąpić zwolnienie** wybierz pozycję *USMF* , a następnie wybierz przycisk **Dalej** , aby potwierdzić wybór.
-1. Na stronie **Potwierdzenie wyboru** wybierz przycisk **Zakończ** , aby dokończyć zwalnianie.
+1. Wybierz przycisk **Dalej**, aby potwierdzić warianty produktu do zwolnienia.
+1. Na stronie **Wybierz firmy do których ma nastąpić zwolnienie** wybierz pozycję *USMF*, a następnie wybierz przycisk **Dalej**, aby potwierdzić wybór.
+1. Na stronie **Potwierdzenie wyboru** wybierz przycisk **Zakończ**, aby dokończyć zwalnianie.
 
     Zostanie wyświetlony komunikat „Operacja zakończona”.
 
 ### <a name="update-a-released-product-in-the-usmf-company"></a>Aktualizowanie zwolnionego produktu w firmie USMF
 
 1. Należy się upewnić, że użytkownik jest zalogowany do firmy **USMF**.
-1. Wybierz kolejno opcje **Zarządzanie informacjami o produktach \> Produkty \> Zwolnione produkty** , aby zakończyć tworzenie zwolnionego produktu.
-1. Znajdź i wybierz numer pozycji *B0001* , aby otworzyć stronę **Szczegóły zwolnionego produktu**.
+1. Wybierz kolejno opcje **Zarządzanie informacjami o produktach \> Produkty \> Zwolnione produkty**, aby zakończyć tworzenie zwolnionego produktu.
+1. Znajdź i wybierz numer pozycji *B0001*, aby otworzyć stronę **Szczegóły zwolnionego produktu**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. Na skróconej karcie **Ogólne** upewnij się, że w polu **Grupa modeli towaru** ustawiono wartość *FIFO*.
 1. W okienku akcji na karcie **Produkt** w grupie **Konfiguracja** wybierz pozycję **Grupy wymiarów**.
@@ -101,7 +101,7 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
 
 1. Kliknij przycisk **OK**.
 1. W okienku akcji na karcie **Produkt** w grupie **Konfiguracja** wybierz pozycję **Hierarchia rezerwacji**.
-1. W polu **Hierarchia rezerwacji** wybierz wartość *Domyślne* , a następnie kliknij przycisk **OK**.
+1. W polu **Hierarchia rezerwacji** wybierz wartość *Domyślne*, a następnie kliknij przycisk **OK**.
 1. Na skróconej karcie **Ogólne** w sekcji **Administracja** zwróć uwagę, że wybory zostały zaktualizowane.
 1. Na skróconej karcie **Zakup** w polu **Cena** wprowadź wartość *10*.
 1. Na skróconej karcie **Zarządzanie kosztami** w polu **Grupa pozycji** wprowadź *Audio*.
@@ -114,7 +114,7 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Dyrektywy lokalizacji**.
 1. W lewym panelu, w polu **Typ zlecenia pracy** zaznacz opcję *Zamówienia zakupu*.
 1. Z listy wybierz dyrektywę lokalizacji o nazwie *24 PO Direct*.
-1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** *1*
@@ -128,7 +128,7 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
     - **Strategia:** *Brak*
 
 1. Gdy nowy wiersz jest wciąż zaznaczony, wybierz polecenie **Edytuj kwerendę** powyżej siatki.
-1. W polu dialogowym kwerendy, na karcie **Zakres** wybierz przycisk  **Dodaj** , aby dodać wiersz do siatki.
+1. W polu dialogowym kwerendy, na karcie **Zakres** wybierz przycisk  **Dodaj**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** *Lokalizacje*
@@ -137,15 +137,15 @@ Z każdą lokalizacją w magazynie musi być skojarzony profil lokalizacji opisu
     - **Kryteria:** *BULK*
 
 1. Kliknij przycisk **OK**.
-1. Na stronie **Dyrektywy lokalizacji** w okienku akcji wybierz **Zapisz** , aby zapisać nową dyrektywę lokalizacji.
+1. Na stronie **Dyrektywy lokalizacji** w okienku akcji wybierz **Zapisz**, aby zapisać nową dyrektywę lokalizacji.
 
 > [!NOTE]
-> Na skróconej karcie **Akcje dyrektywy lokalizacji** w polu **Strategia** , jeśli wykorzystywana jest strategia lokalizacji *Konsolidacja* , konfiguracja skróconej karty **Dozwolone mieszanie wymiarów produktów** znajdującej się w **Profilach lokalizacji** zostanie nadpisane, a przedmioty będą umieszczane w tej samej lokalizacji, nawet jeśli takie zachowanie nie jest dozwolone przez konfigurację.
+> Na skróconej karcie **Akcje dyrektywy lokalizacji** w polu **Strategia**, jeśli wykorzystywana jest strategia lokalizacji *Konsolidacja*, konfiguracja skróconej karty **Dozwolone mieszanie wymiarów produktów** znajdującej się w **Profilach lokalizacji** zostanie nadpisane, a przedmioty będą umieszczane w tej samej lokalizacji, nawet jeśli takie zachowanie nie jest dozwolone przez konfigurację.
 
 ### <a name="create-a-mobile-device-menu-item"></a>Tworzenie elementu menu urządzenia przenośnego
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć element menu służący do sortowania.
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć element menu służący do sortowania.
 1. W nagłówku ustaw następujące wartości:
 
     - **Nazwa elementu menu:** *Wiersz zamówienia zakupu – przyjęcie*
@@ -200,7 +200,7 @@ Użytkownik utworzy zamówienie zakupu z trzema wierszami: dwa wiersze dla tego 
     - **Rozmiar** *XL*
     - **Ilość:** *2*
 
-1. Wybierz polecenie **Dodaj wiersz** , dodaj trzeci wiersz zamówienia zakupu i określ następujące wartości:
+1. Wybierz polecenie **Dodaj wiersz**, dodaj trzeci wiersz zamówienia zakupu i określ następujące wartości:
 
     - **Numer pozycji:** *A0001*
     - **Ilość:** *1*
@@ -212,9 +212,9 @@ Użytkownik utworzy zamówienie zakupu z trzema wierszami: dwa wiersze dla tego 
 1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest uruchomiony dla magazynu *24*.
 1. Wybierz menu **Przychodzące**.
 1. Wybierz **Wiersz zamówienia zakupu – przyjęcie**.
-1. Zaznacz pole **PONUM** , a następnie wprowadź numer zamówienia zakupu.
+1. Zaznacz pole **PONUM**, a następnie wprowadź numer zamówienia zakupu.
 1. Potwierdź swój wpis, wybierając przycisk Potwierdź ( ✔ ) u dołu strony.
-1. Umożliwia wprowadzenie numeru wiersza z otrzymanego zamówienia zakupu. Zaznacz pole **LINENUM** , a następnie za pomocą konsoli numerycznej wprowadź wartość *1*.
+1. Umożliwia wprowadzenie numeru wiersza z otrzymanego zamówienia zakupu. Zaznacz pole **LINENUM**, a następnie za pomocą konsoli numerycznej wprowadź wartość *1*.
 1. Potwierdź wpis.
 1. Umożliwia wprowadzenie ilości, która ma zostać odebrana. Kliknij przycisk **+** dwa razy, aby zwiększyć wartość w polu **Ilość** do wartości *2*.
 1. Zarejestruj wpis, wybierając przycisk ( ✔ ) u dołu strony, a następnie potwierdź swój wpis, wybierając ponownie przycisk ( ✔ ).
@@ -229,13 +229,13 @@ Użytkownik utworzy zamówienie zakupu z trzema wierszami: dwa wiersze dla tego 
 
 1. Znowu powtórz kroki od 4 do 11 dla wiersza zamówienia zakupu 2. Jednak w kroku 8 należy określić pozostałą ilość równą *1*.
 
-    Nowa praca umieszczenia (Praca 3) jest tworzona dla tej samej lokalizacji co Praca 1 i 2. To zachowanie występuje, ponieważ jest używana strategia dyrektywy lokalizacji *Konsolidacja* , a na skróconej karcie **Dozwolone mieszanie wymiarów** w konfiguracja **Profilu lokalizacji** *Bulk* pozwala na mieszanie wariantu **Rozmiar** w danej lokalizacji.
+    Nowa praca umieszczenia (Praca 3) jest tworzona dla tej samej lokalizacji co Praca 1 i 2. To zachowanie występuje, ponieważ jest używana strategia dyrektywy lokalizacji *Konsolidacja*, a na skróconej karcie **Dozwolone mieszanie wymiarów** w konfiguracja **Profilu lokalizacji** *Bulk* pozwala na mieszanie wariantu **Rozmiar** w danej lokalizacji.
 
 1. Powtórz kroki od 4 do 11 dla wiersza zamówienia zakupu 3. W kroku 8 określ ilość równą *1* dla towaru o numerze *A0001*.
 
     Nowa praca odłożenia (Praca 4) jest tworzona dla innej lokalizacji niż lokalizacja używana dla wierszy zamówienia zakupu 1 i 2. To zachowanie występuje, ponieważ profil lokalizacji nie zezwala na produkty mieszane, ale pozwala na tworzenie mieszanych wymiarów tego samego produktu głównego.
 
-1. Wybierz przycisk menu u góry strony (czasami nazywany przyciskiem Hamburger lub Hamburger), a następnie wybierz opcję **Anuluj** , aby zamknąć **Wiersz zamówienia zakupu – przyjęcie**.
+1. Wybierz przycisk menu u góry strony (czasami nazywany przyciskiem Hamburger lub Hamburger), a następnie wybierz opcję **Anuluj**, aby zamknąć **Wiersz zamówienia zakupu – przyjęcie**.
 
 > [!TIP]
-> Ten scenariusz można powtórzyć, ale zmienić wartość **Rozmiar** - *Nie* na skróconej karcie **Zezwalaj na mieszanie wymiarów produktów** w profilu **Profile lokalizacji** zbiorczej *BULK* , tak aby żaden z wymiarów produktu nie mógł być mieszany. W takim przypadku po odebraniu zamówienia zakupu każdy wariant produktu zostanie umieszczony w nowym miejscu.
+> Ten scenariusz można powtórzyć, ale zmienić wartość **Rozmiar** - *Nie* na skróconej karcie **Zezwalaj na mieszanie wymiarów produktów** w profilu **Profile lokalizacji** zbiorczej *BULK*, tak aby żaden z wymiarów produktu nie mógł być mieszany. W takim przypadku po odebraniu zamówienia zakupu każdy wariant produktu zostanie umieszczony w nowym miejscu.

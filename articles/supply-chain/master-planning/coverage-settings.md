@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982727"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435469"
 ---
 # <a name="coverage-settings"></a>Ustawienia zapotrzebowania
 
@@ -40,7 +40,7 @@ Ustawienia zapotrzebowania można określić na kilka sposobów:
 
 - Określ ustawienia zapotrzebowania dla produktu.
 
-    Ustawienia zapotrzebowania można utworzyć dla określonego produktu. Przejdź do **Zarządzanie informacjami o produktach&gt; Produkty &gt; Zwolnione produkty**. Wybierz produkt, a następnie w okienku akcji na karcie **Plan** w obszarze **Grupa zapotrzebowania** wybierz **Zapotrzebowanie na towar**, aby otworzyć stronę **Zapotrzebowanie na towar**. Jeśli produkt jest połączony z grupą zapotrzebowania, ustawienia grupy zapotrzebowania można zastąpić, korzystając z pola **Zastąp**. Ustawienia zapotrzebowania na stronie**Zapotrzebowanie na towar** mają pierwszeństwo przed ustawieniami na stronie **Grupa zapotrzebowania**.
+    Ustawienia zapotrzebowania można utworzyć dla określonego produktu. Przejdź do **Zarządzanie informacjami o produktach&gt; Produkty &gt; Zwolnione produkty**. Wybierz produkt, a następnie w okienku akcji na karcie **Plan** w obszarze **Grupa zapotrzebowania** wybierz **Zapotrzebowanie na towar**, aby otworzyć stronę **Zapotrzebowanie na towar**. Jeśli produkt jest połączony z grupą zapotrzebowania, ustawienia grupy zapotrzebowania można zastąpić, korzystając z pola **Zastąp**. Ustawienia zapotrzebowania na stronie **Zapotrzebowanie na towar** mają pierwszeństwo przed ustawieniami na stronie **Grupa zapotrzebowania**.
 
 - Określ ustawienia zapotrzebowania dla produktu za pomocą kreatora.
 

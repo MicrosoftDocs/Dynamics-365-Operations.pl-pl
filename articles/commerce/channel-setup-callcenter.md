@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107191"
+ms.locfileid: "4415093"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
@@ -93,10 +93,10 @@ Skonfigurowane metody dostawy można wyświetlić, wybierając opcję **Metody d
 Aby zmienić lub dodać metodę dostawy skojarzoną z kanałem biura obsługi, wykonaj następujące kroki.
 
 1. W formularzu metody dostawy biura obsługi, wybierz opcję **Zarządzaj metodami dostawy**
-1. W okienku akcji wybierz opcję **nowy** , aby utworzyć nowy tryb dostawy, lub wybierz istniejący tryb.
-1. W sekcji **Kanały sprzedaży** kliknij opcję **Dodaj wiersz** , aby dodać kanał biura obsługi. Dodawanie kanałów przy użyciu węzłów organizacji zamiast dodawania każdego kanału do każdego z nich może usprawnić dodawanie kanałów.
+1. W okienku akcji wybierz opcję **nowy**, aby utworzyć nowy tryb dostawy, lub wybierz istniejący tryb.
+1. W sekcji **Kanały sprzedaży** kliknij opcję **Dodaj wiersz**, aby dodać kanał biura obsługi. Dodawanie kanałów przy użyciu węzłów organizacji zamiast dodawania każdego kanału do każdego z nich może usprawnić dodawanie kanałów.
 1. Upewnij się, że metoda dostawy została skonfigurowana z danymi na skróconej karcie **produkty** i **adresy**. Jeśli żadne produkty lub adresy dostawy nie są prawidłowe dla metody dostawy, wybranie ich podczas wprowadzania zamówienia spowoduje błędy.
-1. Po dokonaniu jakichkolwiek zmian w metodach konfiguracji dostawy w ramach procesu obsługi zleceń należy uruchomić zadanie **Metody dostawy dla procesu** , aby rozłożyć matrycę zmiany. To zadanie można znaleźć, przechodząc **Retail i Commerce \> Retail i Commerce — składniki IT \> Metody dostawy dla procesu**.
+1. Po dokonaniu jakichkolwiek zmian w metodach konfiguracji dostawy w ramach procesu obsługi zleceń należy uruchomić zadanie **Metody dostawy dla procesu**, aby rozłożyć matrycę zmiany. To zadanie można znaleźć, przechodząc **Retail i Commerce \> Retail i Commerce — składniki IT \> Metody dostawy dla procesu**.
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 

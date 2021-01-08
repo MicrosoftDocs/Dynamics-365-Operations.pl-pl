@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: d3701046487e1c2004cea57aa3fe244133634854
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 935e1a550160515e2c325c39eab86be3b9fa5394
+ms.sourcegitcommit: d82f319cf7dd26c93a3fd342de4fd537272fa8d2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014893"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4415097"
 ---
 # <a name="demo-data-screen-layouts-in-modern-pos-mpos-and-cloud-pos"></a>Układy ekranu danych demonstracyjnych w aplikacjach Modern POS (MPOS) i Cloud POS
 
@@ -64,6 +64,7 @@ Identyfikatory układu ekranu mogą mieć maksymalnie 10 znaków. Identyfikator 
 |----------------|--------------------------------------------------------------------------------------------|
 | 3              | Wersja podstawowa, która obsługuje wiele ekranów dla różnych urządzeń i współczynników proporcji |
 | 3.1            | Wersja podstawowa, która oferuje dodatkową obsługę panelu **Rekomendowane produkty**        |
+| 4              | Rozszerzona wersja aktualizacji układu Fabrikam                                  |
 
 ### <a name="persona"></a>Osoba
 
@@ -75,9 +76,9 @@ Identyfikatory układu ekranu mogą mieć maksymalnie 10 znaków. Identyfikator 
 
 ### <a name="example-layout"></a>Układ przykładowy
 
-Poniżej przedstawiono przykładowy identyfikator układu ekranu dla firmy Fabrikam, wersja 3 układu i stanowiska Kierownik sklepu:
+Poniżej przedstawiono przykładowy identyfikator układu ekranu dla firmy Fabrikam, wersja 4 układu i stanowiska Kierownik sklepu:
 
-F3MGR
+F4MGR
 
 Poniższa ilustracja przedstawia przykładowy ekran powitalny kierownika sklepu firmy Fabrikam.
 
@@ -103,6 +104,7 @@ Poniższa tabela przedstawia rozmiary układu dostępne dla typowych rozdzielczo
 | Pełny\*      | 1280 × 720 | 16:9         | Tablety                 |
 | Pełny        | 1366 × 768 | 16:9         | Tablety, większe ekrany |
 | Pełny        | 1440 × 960 | 3:2          | Tablety, większe ekrany |
+| Pełny\*      | 1536 x 864 | 16:9         | Tablety, większe ekrany |
 
 \* Te dodatkowe rozmiary układów są dostępne tylko w układach firmy Adventure Works i Fabrikam.
 
@@ -120,7 +122,7 @@ Każda firma fikcyjna odnosi się do innego segmentu sprzedaży detalicznej i za
 | Firma         | Lokalizacja | Segment        | Akcent | Motyw |
 |-----------------|----------|----------------|--------|-------|
 | Adventure Works | Seattle  | Artykuły sportowe | Niebieski   | Ciemny  |
-| Fabrikam        | Houston  | Moda        | Zielony  | Delikatny |
+| Fabrikam        | San Francisco  | Moda        | Zielony  | Jasny |
 | Contoso         | Boston   | Elektronika    | Czerwony    | Ciemny  |
 
 > [!NOTE]
@@ -153,7 +155,7 @@ Użytkownikom udostępniono różne układy ekranu. Korzystając z poniższej ta
 | Adventure Works | A3MGR            | Kierownik sklepu | 000154, 000137, 000073 |
 | Adventure Works | A3CSH            | Kasjer       | 000150, 000175, 000165 |
 | Adventure Works | A3STK            | Magazynier   | 000155, 000181, 000152 |
-| Fabrikam        | F3MGR            | Kierownik sklepu | 000160, 000168, 000163 |
+| Fabrikam        | F4MGR            | Kierownik sklepu | 000160, 000713         |
 | Fabrikam        | F3CSH            | Kasjer       | 000161, 000113, 000114 |
 | Fabrikam        | F3STK            | Magazynier   | 000164, 000112, 000123 |
 | Contoso         | C3MGR            | Kierownik sklepu | 000100, 000111         |

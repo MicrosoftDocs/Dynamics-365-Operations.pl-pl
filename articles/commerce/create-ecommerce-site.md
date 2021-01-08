@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 7d552f29fd8f52b512a7c21b36b0a814cac50646
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533443"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517191"
 ---
 # <a name="create-an-e-commerce-site"></a>Tworzenie witryny handlu elektronicznego
 
@@ -32,7 +32,7 @@ ms.locfileid: "3533443"
 
 W tym temacie opisano kroki i informacje wymagane do utworzenia nowej witryny e-Commerce w konstruktorze witryn Dynamics 365 Commerce.
 
-Po nadaniu licencji na funkcje handlu elektronicznego, funkcja konstruktora witryn zostanie wdrożona wraz z witryną startową, którą można wykorzystać jako podstawę dla własnego oddziału. Jeśli jednak użytkownik chce rozpocząć od zera lub chce stworzyć drugą witrynę, musi utworzyć nową witrynę w środowisku tworzenia witryn. 
+Po nadaniu licencji na funkcje Dynamics 365 Commerce, funkcja konstruktora witryn zostanie wdrożona wraz z witryną startową, którą można wykorzystać jako podstawę dla własnego oddziału. Jeśli jednak użytkownik chce rozpocząć od zera lub chce stworzyć drugą witrynę, musi utworzyć nową witrynę w środowisku tworzenia witryn. 
 
 ## <a name="set-up-your-site"></a>Konfigurowanie witryny
 
@@ -58,13 +58,13 @@ Po utworzeniu witryny można sprawdzić, czy jest skojarzona ze swoim sklepem in
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

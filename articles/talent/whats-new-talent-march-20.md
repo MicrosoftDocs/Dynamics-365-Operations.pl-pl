@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462222"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (20 marca 2019 r.)
 
@@ -80,7 +80,7 @@ Wprowadzono zmiany w celu naprawienia błędu występującego podczas edytowania
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Te rekordy mogą dotyczyć kierowników lub pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Stałe i zmienne plany mogą mieć przypisane role zabezpieczeń, które będą określały dostęp do planów i danych pracowników związanych z planami, takich jak rekordy płac i premii. Tylko role z przyznanym dostępem mogą przetwarzać wynagrodzenia tych pracowników.
 
 ###  <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
-24. aktualizacja platformy dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie.
+Aktualizacja platformy 24 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.
 
 ### <a name="duplicate-employee-check-interface-changes"></a>Sprawdzanie zduplikowanych pracowników: zmiany w interfejsie
 Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól nazwisk, a stan pokazuje liczbę zduplikowanych pozycji. Można wybrać podane łącze, aby otworzyć nową stronę w celu dokonania oceny, czy ma być używane wykryte dopasowanie. Aby uniknąć zakłóceń we wprowadzaniu danych, formularz zduplikowanych pozycji nie jest automatycznie otwierany.

@@ -17,11 +17,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016155"
+ms.locfileid: "4435582"
 ---
 # <a name="define-cycle-counting"></a>Definiowanie inwentaryzacji ciągłej 
 
@@ -31,7 +31,7 @@ Inwentaryzacja cykliczna jest procesem magazynowym, który służy do inspekcji 
 
 
 ## <a name="set-the-priority-of-counting-work"></a>Ustawianie priorytetu pracy inwentaryzacji
-1. Otwórz **Okienko nawigacji** , **Moduły > Zarządzanie magazynem > Ustawienia > Parametry zarządzania magazynem**.
+1. Otwórz **Okienko nawigacji**, **Moduły > Zarządzanie magazynem > Ustawienia > Parametry zarządzania magazynem**.
 2. Kliknij kartę **Inwentaryzacja ciągła**.
 3. W polu **Domyślny priorytet pracy inwentaryzacji ciągłej** wprowadź liczbę. Ten krok spowoduje zmianę priorytetu pracy inwentaryzacji ciągłej względem innych typów pracy w magazynie. Wpisując liczbę niższą niż dla innych typów prac, podwyższasz priorytet pracy inwentaryzacji ciągłej.  
 4. Kliknij przycisk **Zapisz**.

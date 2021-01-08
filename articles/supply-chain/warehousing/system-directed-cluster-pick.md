@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
 ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016040"
+ms.locfileid: "4435614"
 ---
 # <a name="system-directed-cluster-picking"></a>Pobieranie dla grupy sterowane przez system
 
@@ -69,9 +69,9 @@ Profile grup kontrolują sposób, w jaki system tworzy każdą grupę. Jeśli wy
 5. Na skróconej karcie **Ogólne** wprowadź następujące informacje:
 
     - **Generuj identyfikator grupy** — Wybierz opcję **Tak**. Ta opcja określa, czy identyfikator grupy jest automatycznie tworzony przez system, czy też użytkownik utworzy go na początku pobierania. 
-    - **Aktywuj stanowiska** — Wybierz opcję **tak**. Ta opcja określa, czy nazwy stanowisk są generowane automatycznie na podstawie konfiguracji nazw stanowisk. Jeśli ta opcja zostanie ustawiona na **Nie** , będzie używany numer identyfikacyjny dla stanowiska.
+    - **Aktywuj stanowiska** — Wybierz opcję **tak**. Ta opcja określa, czy nazwy stanowisk są generowane automatycznie na podstawie konfiguracji nazw stanowisk. Jeśli ta opcja zostanie ustawiona na **Nie**, będzie używany numer identyfikacyjny dla stanowiska.
     - **Liczba stanowisk:** - Wybierz **2**. To pole określa maksymalną liczbę stanowisk, które może zawierać grupa (czyli maksymalną liczbę opakowań, pojemników itd.).
-    - **Nazwa stanowiska:** - Wybierz pozycję **Numeryczna** , tak aby stanowiska były nazywane przy użyciu liczb ciągłych. Jeśli wybierzesz pozycję **Alfabetyczna** , stanowiska będą nazywane w kolejności alfabetycznej.
+    - **Nazwa stanowiska:** - Wybierz pozycję **Numeryczna**, tak aby stanowiska były nazywane przy użyciu liczb ciągłych. Jeśli wybierzesz pozycję **Alfabetyczna**, stanowiska będą nazywane w kolejności alfabetycznej.
     - **Podziel grupę w** - Wybierz pozycję **Odłożenie**. To pole określa, kiedy grupa jest dzielona. 
     - **Typ weryfikacji sortowania** - Wybierz pozycję **Skan pozycji**. To pole określa, czy jest weryfikowany krok odłożenia do pozycji.
         
@@ -109,12 +109,12 @@ Aby utworzyć nowy element menu urządzenia przenośnego dla pobierania dla grup
 
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**
 1. Wybierz kartę **Sortowanie**
-1. Wybierz przycisk **Dodaj** , aby dodać nowy wiersz, a następnie wprowadź następujące opcje:
+1. Wybierz przycisk **Dodaj**, aby dodać nowy wiersz, a następnie wprowadź następujące opcje:
     - **Tabela** — Praca
     - **Tabela pochodna** - Praca
     - **Pole** - Priorytet pracy
     - **Kierunek wyszukiwania** - Rosnąco
-1. Wybierz przycisk **Dodaj** , aby dodać drugi wiersz, a następnie wprowadź następujące opcje:
+1. Wybierz przycisk **Dodaj**, aby dodać drugi wiersz, a następnie wprowadź następujące opcje:
     - **Tabela** — Praca
     - **Tabela pochodna** - Praca
     - **Pole** - Identyfikator pracy
@@ -129,9 +129,9 @@ Aby utworzyć nowy element menu urządzenia przenośnego dla pobierania dla grup
 1. Wybierz menu **Wychodzące**.
 1. Wybierz pozycję **Edytuj** w okienku akcji.
 1. Przewijaj do momentu znalezienia **Grupa SD**.
-1. Wybierz **grupa SD** , a strzałka wskazująca na listę **Struktury menu** zostanie włączona.
-1. Wybierz przycisk **strzałki** , aby przenieść element menu **Grupy SD** do struktury menu **Wychodzącego**.
-1. Wybierz opcję **Grupa SD** z listy **Struktura menu** , a następnie wybierz strzałkę **W GÓRĘ** lub **W DÓŁ** , aby przenieść element menu do żądanej pozycji w menu urządzenia przenośnego.
+1. Wybierz **grupa SD**, a strzałka wskazująca na listę **Struktury menu** zostanie włączona.
+1. Wybierz przycisk **strzałki**, aby przenieść element menu **Grupy SD** do struktury menu **Wychodzącego**.
+1. Wybierz opcję **Grupa SD** z listy **Struktura menu**, a następnie wybierz strzałkę **W GÓRĘ** lub **W DÓŁ**, aby przenieść element menu do żądanej pozycji w menu urządzenia przenośnego.
 
 ## <a name="scenario"></a>Scenariusz
 
@@ -141,58 +141,58 @@ Aby można było skonfigurować pobieranie dla grupy sterowane przez system, nal
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing > Zamówienia sprzedaży > Wszystkie zamówienia sprzedaży**.
 1. Wybierz **Nowe** w okienku akcji, aby utworzyć nowe zamówienie sprzedaży.
-    - Zostanie otwarte menu **Utwórz zamówienie sprzedaży** , w którym należy wprowadzić następujące informacje:
+    - Zostanie otwarte menu **Utwórz zamówienie sprzedaży**, w którym należy wprowadzić następujące informacje:
         - Na skróconej karcie **Klient** wprowadź **Konto klienta** - **US-004**.
         - Na skróconej karcie **Ogólne** wprowadź **Magazyn** - **62**.
-        - Naciśnij przycisk **OK** , aby zamknąć menu i utworzyc zamówienie sprzedaży.
-    - Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , jeśli nowy wiersz nie został dodany automatycznie i wprowadź następujące opcje:
+        - Naciśnij przycisk **OK**, aby zamknąć menu i utworzyc zamówienie sprzedaży.
+    - Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, jeśli nowy wiersz nie został dodany automatycznie i wprowadź następujące opcje:
         - **Numer pozycji** - A0001
         - **Ilość** - 1
-        - Wybierz pozycję **Dodaj wiersz** , aby dodać drugi wiersz.
+        - Wybierz pozycję **Dodaj wiersz**, aby dodać drugi wiersz.
         - **Numer pozycji** - A0002
         - **Ilość** - 3
     - Rezerwuj zapasy w nowo utworzonych wierszach.
         - Zaznacz **Wiersz 1**.
-        - W **Wiersze zamówienia sprzedaży** w okienku akcji wybierz **Zapasy** , a następnie wybierz **Rezerwacja** z listy.
+        - W **Wiersze zamówienia sprzedaży** w okienku akcji wybierz **Zapasy**, a następnie wybierz **Rezerwacja** z listy.
         - W formularzu **Rezerwacja** wybierz **Rezerwacja partii** w celu zarezerwowania zapasów.
         - Po zakończeniu rezerwacji zamknij formularz **Rezerwacja**.
         - Powtórz te kroki, aby zarezerwować zapasy dla **Wiersza 2**.
 1. Wybierz **Nowe** w okienku akcji, aby utworzyć drugie zamówienie sprzedaży
-    - Zostanie otwarte menu **Utwórz zamówienie sprzedaży** , w którym należy wprowadzić następujące informacje:
+    - Zostanie otwarte menu **Utwórz zamówienie sprzedaży**, w którym należy wprowadzić następujące informacje:
         - Na skróconej karcie **Klient** wprowadź **Konto klienta** - **US-005**.
         - Na skróconej karcie **Ogólne** wprowadź **Magazyn** - **62**.
-        - Naciśnij przycisk **OK** , aby zamknąć menu i utworzyc zamówienie sprzedaży
-    - Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , jeśli nowy wiersz nie został dodany automatycznie i wprowadź następujące informacje:
+        - Naciśnij przycisk **OK**, aby zamknąć menu i utworzyc zamówienie sprzedaży
+    - Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, jeśli nowy wiersz nie został dodany automatycznie i wprowadź następujące informacje:
         - **Numer pozycji** - A0001
         - **Ilość** - 4
-        - Wybierz pozycję **Dodaj wiersz** , aby dodać drugi wiersz.
+        - Wybierz pozycję **Dodaj wiersz**, aby dodać drugi wiersz.
         - **Numer pozycji** - A0002
         - **Ilość** - 2
     - Rezerwuj zapasy w obu utworzonych wierszach.
         - Zaznacz **Wiersz 1**.
-        - W **Wiersze zamówienia sprzedaży** w okienku akcji wybierz **Zapasy** , a następnie wybierz **Rezerwacja** z listy.
+        - W **Wiersze zamówienia sprzedaży** w okienku akcji wybierz **Zapasy**, a następnie wybierz **Rezerwacja** z listy.
         - W formularzu **Rezerwacja** wybierz **Rezerwacja partii** w celu zarezerwowania zapasów.
         - Po zakończeniu rezerwacji zamknij formularz **Rezerwacja**.
         - Powtórz te kroki, aby zarezerwować zapasy dla **Wiersza 2**.
     - Zamknij zamówienie sprzedaży i wróć do strony listy **Wszystkie zamówienia sprzedaży**.
 1. Znajdź utworzone dwa zamówienia sprzedaży (konieczne może być odświeżenie strony). W tabeli zaznacz oba zamówienia sprzedaży, używając znacznika wyboru sekcji.
     - W okienku akcji **Wszystkie zamówienia sprzedaży** wybierz kartę **Magazyn**.
-    - W grupie **Akcje** wybierz opcję **zwolnienie do magazynu** , aby zwolnić oba zamówienia sprzedaży do magazynu.
+    - W grupie **Akcje** wybierz opcję **zwolnienie do magazynu**, aby zwolnić oba zamówienia sprzedaży do magazynu.
 1. Po zakończeniu procesu zwalniania do magazynu zostanie wyświetlony komunikat informacyjny.
     - Dla każdego zamówienia sprzedaży zostaną utworzone wysyłki.
     - Zostanie utworzona grupa czynności, a obie wysyłki zostaną przypisane do grupy czynności. Zanotuj **Identyfikator pracy**.
 1. Przejdź do **Zarządzanie magazynem > Wychodzące grupy czynności > Grupy czynności wysyłki > Wszystkie grupy czynności**.
     - Na liście **Wszystkie grupy czynności** znajdź i zaznacz **Identyfikator grupy czynności** utworzony w poprzednim kroku.
     - W okienku akcji wybierz kartę **Grupa czynności**.
-    - W grupie **Grupa czynności** wybierz opcję **Proces** , aby przetworzyć grupę czynności i utworzyć **Pracę**.
+    - W grupie **Grupa czynności** wybierz opcję **Proces**, aby przetworzyć grupę czynności i utworzyć **Pracę**.
     - Komunikaty informacyjne będą generowane po zakończeniu przetwarzania, co oznacza, że utworzono pracę i że dana grupa czynności została zaksięgowana.
-1. **Opcjonalnie** : Przejdź do **Zarządzanie magazynem > Praca > Szczegóły pracy** , aby wyświetlić utworzoną pracę. Tworzone są dwa różne identyfikatory pracy. Każdy identyfikator pracy ma dwa wiersze pobrania.
+1. **Opcjonalnie**: Przejdź do **Zarządzanie magazynem > Praca > Szczegóły pracy**, aby wyświetlić utworzoną pracę. Tworzone są dwa różne identyfikatory pracy. Każdy identyfikator pracy ma dwa wiersze pobrania.
 
 ### <a name="run-the-mobile-device-flow"></a>Uruchamianie przepływu na urządzeniu przenośnym
 
 1. Zaloguj się do urządzenia przenośnego dla użytkownika w magazynie **62**.
 1. W **Menu głównym** wybierz opcję **Wychodzące**.
-1. W menu **Wychodzące** wybierz **Grupa SD** , aby zainicjować pobieranie.
+1. W menu **Wychodzące** wybierz **Grupa SD**, aby zainicjować pobieranie.
     - Zostanie utworzona grupa i dwa identyfikatory pracy, które utworzono wcześniej, są dołączane. Jeśli utworzono więcej niż dwa identyfikatory pracy, tylko dwa pierwsze są dodawane do grupy. Zauważ, że identyfikatory pracy są dodawane do grupy w kolejności rosnącej, jak określono w konfiguracji zapytania.
 
     > [!NOTE]

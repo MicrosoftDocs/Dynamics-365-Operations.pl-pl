@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: afc8c7fffbded82be32357bdeb30546afc8b0957
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: ac1b0c8baaddd6ca62cc49657fff364df21c14f2
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533305"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517136"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurowanie nazwy domeny
 
@@ -35,7 +35,7 @@ W tym temacie opisano sposób konfigurowania nazwy domeny dla witryny Microsoft 
 
 ## <a name="add-domains-during-e-commerce-initialization"></a>Dodawanie domen podczas inicjowania usługi e-Commerce
 
-Aby skojarzyć domeny z środowiskiem handlu elektronicznego, należy zainicjować e-Commerce w sposób opisany [w temacie Wdrażanie nowej witryny e-Commerce](deploy-ecommerce-site.md). Podczas inicjowania użytkownik jest monitowany o podanie informacji, które będą używane w celu zainicjowania obsługi środowiska e-Commerce. W polu **Obsługiwane nazwy hostów** dodaj wszystkie domeny, które mają być używane w tym środowisku. Wiele domen należy oddzielić średnikiem. W ten sposób domeny są konfigurowane we wszystkich wymaganych składnikach e-Commerce i są gotowe do użycia podczas przełączania ruchu z sieci dostarczania zawartości (CDN, Content Delivery Network) lub serwera sieci Web, a następnie na frontony e-Commerce.
+Aby skojarzyć domeny z środowiskiem handlu elektronicznego Dynamics 365 Commerce, należy zainicjować e-Commerce w sposób opisany w temacie [Wdrażanie nowej witryny e-Commerce](deploy-ecommerce-site.md). Podczas inicjowania użytkownik jest monitowany o podanie informacji, które będą używane w celu zainicjowania obsługi środowiska e-Commerce. W polu **Obsługiwane nazwy hostów** dodaj wszystkie domeny, które mają być używane w tym środowisku. Wiele domen należy oddzielić średnikiem. W ten sposób domeny są konfigurowane we wszystkich wymaganych składnikach e-Commerce i są gotowe do użycia podczas przełączania ruchu z sieci dostarczania zawartości (CDN, Content Delivery Network) lub serwera sieci Web, a następnie na frontony e-Commerce.
 
 ## <a name="add-domains-after-e-commerce-initialization"></a>Dodawanie domen po inicjowaniu usługi e-Commerce
 
@@ -43,15 +43,15 @@ Aby skojarzyć nowe domeny ze środowiskiem e-Commerce po zainicjowaniu usługi 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

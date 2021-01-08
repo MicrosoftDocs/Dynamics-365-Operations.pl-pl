@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 68dc73b7316a3ceb7129c9ea46bc60669ed2be95
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 04b5a006d4580fe419d81986a90851bc8d611722
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2896941"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528226"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-2-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (2 kwietnia 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
@@ -54,8 +56,8 @@ W Attract i Onboard problemy zarejestrowane przez użytkowników końcowych za p
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 Zmiany opisane w tej części dotyczą kompilacji 8.1.2216.
 
-### <a name="platform-update-25-for-finance-and-operations"></a>Aktualizacja Platform update 25 dla Finance and Operations
-Aby uzyskać więcej informacji dotyczących 25. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 25. aktualizacji platformy Dynamics 365 for Finance and Operations (kwiecień 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+### <a name="platform-update-25-for-finance-and-operations"></a>Aktualizacja 25 platformy dla Finance and Operations
+Aby uzyskać więcej informacji dotyczących aktualizacji platformy 25 dla Finance and Operations, zobacz [Podgląd funkcji w aktualizacji platformy 25 Dynamics 365 for Finance and Operations (kwiecień 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Zaawansowane zabezpieczenia wynagrodzeń (stałe i zmienne)
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Może to obejmować rekordy kierowników lub pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Role zabezpieczeń można przypisać do planów stałych i zmiennych. Te role zabezpieczeń określają dostęp do planów i powiązanych danych pracownika, takich jak wynagrodzenia i dodatki, więc tylko te role mogą przetwarzać wynagrodzenia dla grup pracowników.
@@ -77,4 +79,4 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 Ta zmiana powoduje, że zduplikowane pozycje są wykrywane po wypełnieniu pól nazwisk, a stan pokazuje liczbę zduplikowanych pozycji. Można wybrać podane łącze, aby otworzyć nową stronę w celu dokonania oceny, czy ma być używane wykryte dopasowanie. Aby uniknąć zakłóceń we wprowadzaniu danych, formularz zduplikowanych pozycji nie jest automatycznie otwierany.
 
 ###  <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
-Aktualizacja Platform update 25 dla rozwiązania Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia e-mail do kontaktów w wyniku wyzwolenia przez zdarzenie. 
+Aktualizacja platformy 25 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie. 

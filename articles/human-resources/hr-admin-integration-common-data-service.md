@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d9ee4715526e18b33ae4b7e90b081ed5868bb19c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621311"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527938"
 ---
 # <a name="configure-common-data-service-integration"></a>Konfigurowanie integracji z usługą Common Data Service
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Można włączyć lub wyłączyć integrację między usługą Common Data Service a Dynamics 365 Human Resources. Można również wyświetlić szczegóły synchronizacji, wyczyścić dane śledzenia i dokonać ponownej synchronizacji jednostki, aby ułatwić rozwiązywanie problemów z danymi między tymi dwoma środowiskami.
 

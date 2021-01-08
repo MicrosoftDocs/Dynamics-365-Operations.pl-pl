@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 29fb487f02c28dbe940a1e00891f1e7ed20135b2
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889896"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435127"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Konserwatorzy i grupy konserwatorów
 
@@ -60,7 +60,7 @@ Można również tworzyć grupy konserwatorów i kojarzyć z nimi konserwatorów
 2. Wybierz **Nowy**, aby dodać nową grupę pracowników do listy.
 3. W polu **Grupa konserwatorów** wprowadź identyfikator grupy.
 4. W polu **Nazwa** wprowadź nazwę.
-5. Na skróconej karcie **Pracownicy** wybierz pozycję **Dodaj**, a następnie wybierz grupę konserwatorów dla grupy pracownika. Aby uzyskać informacje dotyczące pól**Weszła w życie** i **Wygaśnięcie**, zobacz krok 6 w poprzedniej procedurze.
+5. Na skróconej karcie **Pracownicy** wybierz pozycję **Dodaj**, a następnie wybierz grupę konserwatorów dla grupy pracownika. Aby uzyskać informacje dotyczące pól **Weszła w życie** i **Wygaśnięcie**, zobacz krok 6 w poprzedniej procedurze.
 6. Jeśli grupa zasobów powinna być powiązana z wybraną grupą konserwatorów, wybierz opcję **Kopiuj z grupy zasobów**. W polu **Grupa** wybierz grupę zasobów, z której chcesz skopiować ustawienia kalendarza. Następnie w polu **Grupa pracowników** wybierz grupę pracowników, do której chcesz skopiować ustawienia kalendarza grupy zasobów. Ten krok jest istotny tylko wtedy, gdy chcesz, aby konserwatorzy używali kalendarza związanego z zasobem (centrum pracy) w trakcie planowania zlecenia pracy.
 
     Pole na skróconej karcie **Szczegóły** pokazuje liczbę konserwatorów skonfigurowanych w wybranej grupie konserwatorów.

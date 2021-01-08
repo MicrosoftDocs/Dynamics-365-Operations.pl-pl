@@ -20,11 +20,11 @@ ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
 ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
-ms.sourcegitcommit: db1a8ffcaebc2896e8f528d7807c54f8597f450e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3638189"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414945"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 

@@ -15,11 +15,11 @@ ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
 ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832752"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462262"
 ---
 # <a name="schedule-interviews-in-attract"></a>Planowanie rozmów kwalifikacyjnych z kandydatem w aplikacji Attract
 
@@ -58,7 +58,7 @@ Istnieje kilka konfiguracji harmonogramu rozmów kwalifikacyjnych służących d
 
     Jeśli wybrana jest opcja **Zalecenia**, będą wyświetlane sugestie, a siatka rozmowy kwalifikacyjnej zostanie wstępnie wypełniona. Można wyświetlić bieżący kalendarz dostępności wszystkich znaczonego osób prowadzących rozmowę kwalifikacyjną. Ponadto można wyświetlać kalendarz kandydata, jeśli jest on wewnętrznym kandydatem. Dla osób prowadzących rozmowę kwalifikacyjną i wewnętrznych kandydatów można wyświetlać ich zajęty czas, godziny pracy, godziny poza biurem, a także określić, czy oznaczyli swoje kalendarze jako robocze w innych miejscach dla określonych przedziałów czasowych. 
 
-3. Jeśli nie dostępnych sugestii, w kolumnie **Rozmowy kwalifikacyjne**kliknij przedział czasowy, podaj tytuł rozmowy kwalifikacyjnej, szczegóły i wypełnij szczegóły lokalizacji, w razie potrzeby. Do rozmowy kwalifikacyjnej można dodać łącze programu **Skype dla firm**.
+3. Jeśli nie dostępnych sugestii, w kolumnie **Rozmowy kwalifikacyjne** kliknij przedział czasowy, podaj tytuł rozmowy kwalifikacyjnej, szczegóły i wypełnij szczegóły lokalizacji, w razie potrzeby. Do rozmowy kwalifikacyjnej można dodać łącze programu **Skype dla firm**.
 
 4. Aby uwzględnić dodatkowe osoby przeprowadzające rozmowy kwalifikacyjne, kliknij kolumnę siatki **Dodaj osobę przeprowadzającą rozmowę kwalifikacyjną**, aby wybrac jedną lub więcej osób przeprowadzających rozmowy kwalifikacyjne. Aby usunąć rozmowę kwalifikacyjną z pętli można użyć opcji wielokropka (...).
     
@@ -73,7 +73,7 @@ Istnieje kilka konfiguracji harmonogramu rozmów kwalifikacyjnych służących d
 
     > W przypadku wszystkich rozmów grupowych nie ma automatycznych przypomnień o żądaniu rozmowy kwalifikacyjnej. Aby ręcznie wyzwolić przypomnienie, edytuj rozmowę kwalifikacyjną i użyj opcji **Aktualizuj & wyślij**, aby odesłać żądanie do osób prowadzących rozmowę kwalifikacyjną.
 
-    Odpowiedzi osób prowadzących rozmowę kwalifikacyjną są rejestrowane i wyświetlane w Attract. Jeśli osoba prowadząca rozmowę kwalifikacyjną odrzuci zaproszenie, otrzymasz powiadomienie o konieczności wprowadzenia zmiany. Aby wyświetlić odpowiedź w widoku siatki **Harmonogram**kliknij ikonę dymka.
+    Odpowiedzi osób prowadzących rozmowę kwalifikacyjną są rejestrowane i wyświetlane w Attract. Jeśli osoba prowadząca rozmowę kwalifikacyjną odrzuci zaproszenie, otrzymasz powiadomienie o konieczności wprowadzenia zmiany. Aby wyświetlić odpowiedź w widoku siatki **Harmonogram** kliknij ikonę dymka.
 
 [![Widok rekrutera odpowiedzi osoby prowadzącej rozmowę kwalifikacyjną](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 

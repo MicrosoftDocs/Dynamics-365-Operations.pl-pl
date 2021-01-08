@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9d12a4d48aa369884804c2a0bce9834534b1bec6
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: ddc6593431585ed79cc15f7ede5daf856f11b959
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832868"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527249"
 ---
 # <a name="extensibility-in-attract"></a>Możliwości rozszerzania w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Aplikacja Microsoft Dynamics 365 Talent bazuje na Common Data Service dla aplikacji i można rozszerzać jej funkcjonalność na różne sposoby przy użyciu platformy Microsoft Power Platform oraz funkcji dostępnych w usłudze Common Data Service for Apps. W związku z tym system można konfigurować i personalizować za pomocą usług Microsoft Power Apps i Microsoft Power Automate. Można także uzyskiwać dodatkowe dane analityczne o osobach za pomocą usługi Microsoft Power BI. Ponadto nowe działania niestandardowe, takie jak Power Apps i Treści internetowe (iframe), umożliwiają znacznie większą niż dotąd elastyczność procesu rekrutacji. Za pomocą tych działań można dostosować proces rekrutacji do własnych potrzeb biznesowych i procesów oraz zapewnić zespołowi rekrutacyjnemu i kandydatom maksymalnie płynną, indywidualną obsługę.
 

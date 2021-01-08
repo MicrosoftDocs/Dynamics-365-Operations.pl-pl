@@ -20,11 +20,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
 ms.openlocfilehash: 35428da709f480e1d3842b7e92deacba200326ee
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833099"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462202"
 ---
 # <a name="linkedin-integration-faq"></a>Integracja z serwisem LinkedIn — często zadawane pytania
 

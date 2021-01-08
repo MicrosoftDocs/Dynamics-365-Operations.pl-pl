@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
-ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "3901503"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414884"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii
 

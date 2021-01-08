@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015971"
+ms.locfileid: "4435578"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
 
@@ -47,7 +47,7 @@ Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej USMF.
 2. Kliknij przycisk **Nowy** 
 3. W polu **Kod wyjątku pracy** wpisz wartość. Będzie to tytuł tego wyjątku. Na przykład: Ręczne pobieranie w niedomiarze.
 4. W polu **Opis** wpisz wartość. Będzie to krótki opis wykorzystania tego wyjątku. Na przykład, Pobranie w niedomiarze – pozycja niedostępna.
-5. W polu **Typ wyjątku** zaznacz wartość „ **Pobranie w niedomiarze** ”.
+5. W polu **Typ wyjątku** zaznacz wartość „**Pobranie w niedomiarze**”.
 6. Zaznacz pole wyboru **Korekta zapasów**. Jeśli została wybrana, ta opcja oznacza, że zapasy będą automatycznie korygowane na 0 w lokalizacji pobierania w niedomiarze.
 7. W polu **Kod domyślnego typu korekty** wprowadź lub wybierz wartość. Na przykład w USMF można wybrać opcję **Usuń Res Adj Out**. Każdy kod typu korekty zawiera cztery cechy: nazwa, opis, nazwa arkusza magazynowego i **Usuń rezerwacje**. Jeśli opcja **Usuń rezerwacje** jest włączona, rezerwacje wiersza zamówienia z pobrania w niedomiarze zostanie usunięte.  
 8. W polu **Zmiana pozycji przedmiotów** wybierz wartość, np. „Ręcznie”. Jeśli wybierzesz opcję Ręcznie lub Automatyczne i ręczne, pracownikowi magazynu trzeba włączyć funkcję stosowania ręcznej zmiany alokacji.

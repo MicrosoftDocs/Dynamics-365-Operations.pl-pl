@@ -20,11 +20,11 @@ ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215707"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435107"
 ---
 # <a name="packing-materials-and-fees"></a>Materiały opakowań i opłaty
 

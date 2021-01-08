@@ -18,11 +18,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017789"
+ms.locfileid: "4435554"
 ---
 # <a name="set-up-containerization"></a>Konfigurowanie konteneryzacji
 
@@ -75,7 +75,7 @@ W tym temacie opisano sposób zautomatyzowania konteneryzacji ładunków w modul
 5. W polu **Kod kroku grupy czynności** wpisz wartość.
 6. Zaznacz pole wyboru **Zezwalaj na dzielenie pobierania**.
 7. Wybierz opcję **Zapisz**.
-8. Wybierz opcję **Ograniczenia mieszające kontenera**. Funkcja Przerwy logiki łączenia pozwala skonfigurować reguły dla wierszy alokacji pakowania w kontenerach. Na przykład jeśli dodasz pole **Numer pozycji** , podczas przypisywania towarów do kontenerów będą tworzone nowe kontenery dla nowych numerów towarów. Uniemożliwi to pracownikom pakowanie wierszy alokacji dla dwóch różnych odbiorców w tym samym kontenerze.  
+8. Wybierz opcję **Ograniczenia mieszające kontenera**. Funkcja Przerwy logiki łączenia pozwala skonfigurować reguły dla wierszy alokacji pakowania w kontenerach. Na przykład jeśli dodasz pole **Numer pozycji**, podczas przypisywania towarów do kontenerów będą tworzone nowe kontenery dla nowych numerów towarów. Uniemożliwi to pracownikom pakowanie wierszy alokacji dla dwóch różnych odbiorców w tym samym kontenerze.  
 9. Wybierz pozycję **Nowy**.
 10. W polu **Tabela** wybierz opcję.
 11. W polu **Wybór pola** wprowadź lub wybierz wartość.

@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: d8b9d5712dd1b4f9958de775e1a2224b64485d05
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987221"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435244"
 ---
 # <a name="generate-a-constrained-plan"></a>Generowanie planu z ograniczeniami
 
@@ -48,7 +48,7 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 13. Zamknij stronę.
 
 ## <a name="create-a-constrained-plan"></a>Tworzenie planu z ograniczeniami
-1. Wybierz opcję**Uruchom**.
+1. Wybierz opcję **Uruchom**.
 2. W polu **Plan główny** wprowadź lub wybierz plan, dla którego skonfigurowano ograniczenia.  
 3. Kliknij przycisk **OK**.
 4. Wybierz **Zamówienia planowane**.

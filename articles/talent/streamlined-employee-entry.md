@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b73b420c2eb75077814fbfeb6cd17404c7efc11e
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915208"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4462294"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Usprawnione wprowadzanie pracowników i nawigacja
 
@@ -68,9 +68,9 @@ Okienko akcji strony pracownik zostało ponownie zorganizowane w celu uwzględni
 
 - Roboczy
 - Osoba
-- Opuść
+- Urlop
 - Kompensacja
-- Świadczenia
+- Korzyści
 - Zgodność z przepisami
 
 Ponadto nowa karta **Łącza** na głównej stronie pracownika daje użytkownikom centralną lokalizację, aby uzyskać dostęp do wszystkich pokrewnych informacji dotyczących pracownika.

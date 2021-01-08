@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435038"
 ---
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
@@ -38,7 +38,7 @@ Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać 
 
 Średnia ważona na dzień na potrzeby wyceny zapasów jest obliczana w następujący sposób: 
 
-Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
 
 Podczas zamknięcia zapasów obliczenia są wykonywane na każdy dzień okresu zamknięcia, zgodnie z poniższą ilustracją. 
 
@@ -91,7 +91,7 @@ Na ilustracji przedstawiono następujące transakcje:
 -   Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci czerwonych linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji Włącz wartość fizyczną
-Średnia ważona jest oparta na zasadzie, że wszystkie przyjęcia w okresie zamknięcia są sumowane do nowej transakcji przeniesienia zapasów. Ta transakcja jest znana jako*średnia ważona zamknięcia magazynu*. Wszystkie przychody dla danego dnia będą rozliczone z rozchodami nowo utworzonej transakcji transferu magazynowego. Wszystkie rozchody dla danego dnia będą rozliczone z przychodem nowej transakcji transferu magazynowego. Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest dodatnia, poszczególne pozycje zapasów i ich wartość są zestawiane w ramach nowej transakcji przeniesienia magazynowego (przychód). Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest ujemna, wartość zapasów jest sumą poszczególnych rozchodów, które nie zostały w pełni rozliczone. 
+Średnia ważona jest oparta na zasadzie, że wszystkie przyjęcia w okresie zamknięcia są sumowane do nowej transakcji przeniesienia zapasów. Ta transakcja jest znana jako *średnia ważona zamknięcia magazynu*. Wszystkie przychody dla danego dnia będą rozliczone z rozchodami nowo utworzonej transakcji transferu magazynowego. Wszystkie rozchody dla danego dnia będą rozliczone z przychodem nowej transakcji transferu magazynowego. Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest dodatnia, poszczególne pozycje zapasów i ich wartość są zestawiane w ramach nowej transakcji przeniesienia magazynowego (przychód). Jeśli po zamknięciu magazynu wartość dostępnych zapasów jest ujemna, wartość zapasów jest sumą poszczególnych rozchodów, które nie zostały w pełni rozliczone. 
 
 W poniższym scenariuszu w okresie zamknięcia zostały zaksięgowane finansowo zaktualizowane przychód i rozchód. Podczas zamknięcia zapasów system ocenia poszczególne dni w celu określenia sposobu potraktowania każdego dnia na zamknięciu. 
 

@@ -19,11 +19,11 @@ ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.openlocfilehash: d4a1e7c19ccec6ae32e46ec7d58604b162418953
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832961"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462197"
 ---
 # <a name="set-up-your-career-site-in-attract"></a>Konfigurowanie witryny kariery w aplikacji Attract
 

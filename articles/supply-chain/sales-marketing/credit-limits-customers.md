@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978997"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435319"
 ---
 # <a name="credit-limits-for-customers"></a>Limity kredytu dla odbiorców
 

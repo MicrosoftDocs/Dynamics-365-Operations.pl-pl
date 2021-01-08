@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533397"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517313"
 ---
 # <a name="enable-location-based-store-detection"></a>Włączanie wykrywania sklepu na podstawie lokalizacji
 
@@ -52,15 +52,15 @@ Aby włączyć wykrywanie sklepu opartego na lokalizacji w module Commerce, wyko
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: e00a54db50f1360096bb5329eef660927cecde3d
-ms.sourcegitcommit: 4359e7e4eec25362df61c9a26c7218604d12da3d
+ms.openlocfilehash: 97385da9d258cc169a9976be7c7798faa41661c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3078050"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527700"
 ---
 # <a name="source-candidates-with-talent-pools-in-attract"></a>Pozyskiwanie kandydatów za pomocą puli umiejętności i kandydatów w aplikacji Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Osoby rekrutujące i menedżerowie zatrudniający mogą zarządzać swoimi kandydatami za pomocą funkcji pul umiejętności w aplikacji Attract. Pule umiejętności pomagają monitorować oraz utrzymywać kontakt ze wszystkimi kandydatami ubiegającymi się o pracę w firmie.
 
@@ -113,7 +115,7 @@ Wszyscy użytkownicy mają wspólny widok profili kandydatów. Karta **Profil** 
 
 - Na karcie **Dokumenty** są wyświetlane wszystkie dokumenty, jakie kandydat dodał ze swojego profilu albo podczas ubiegania się o pracę. Możesz użyć tej karty do zarządzania CV, listami motywacyjnymi, portfolio prac i innymi dokumentami złożonymi przez kandydata. Ta karta umożliwia także dodawanie dokumentów.
 
-    Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft Office 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
+    Aby wyświetlić dokument, zaznacz jego nazwę na liście dokumentów. Można wyświetlić dokumenty programu Microsoft Word w aplikacji za pomocą Microsoft 365. Można także pobrać dokumenty do lokalnego komputera za pomocą opcji **Pobierz** widocznej obok każdego dokumentu.
 
 - Na karcie **LinkedIn** są wyświetlane dane kandydata z serwisu LinkedIn. Aby użyć tej karty, należy podłączyć konto LinkedIn w ustawieniach użytkownika oraz ustanowić połączenie z aplikacji LinkedIn Recruiter w lokalnym środowisku. Aby uzyskać więcej informacji, zajrzyj do [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter w Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 

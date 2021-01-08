@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9302c2e3d3d273e4160886ab8783b7609295c5cd
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3711971"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526929"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (10 marca 2020 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym artykule opisano nowe oraz zmienione funkcje dostępne w Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.2985. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w LCS w charakterze informacyjnym.
 
@@ -51,11 +53,11 @@ Przykład: Benjamin Martin jest administratorem świadczeń. Podczas wdrażania 
 | Dodano jednostkę **Wymiar stanowiska pracy** | <ul><li>Dodano **wymiary finansowe**</li>
 | Zmiany jednostki **Pracownik** | <ul><li>Dodano **Kolejność w nazwisku**</li><li>Dodano **Pracuje z domu**</li><li>Dodano **Język**</li><li>Dodano **Data stażu pracy**</li><li>Dodano **Rocznica**</li><li>Dodano **Pierwotna data zatrudnienia**</li></ul> |
 | Zmiany jednostki **Zatrudnienie** | <ul><li>Dodano **wymiary finansowe**</li><li>Dodano **Powód rozwiązania umowy**</li><li>**Data zakończenia** zmieniona z **daty przejścia**</li><li>Dodano **Okres próbny**</li></ul> |
-| Zmiany jednostki **Adres Pracownika** | <ul><li>Dodano **Ulica**</li><li>**Wiersz adresu 1**, **wiersz adresu 2**i **wiersz adresu 3** oznaczone do zaniechania</li></ul> |
+| Zmiany jednostki **Adres Pracownika** | <ul><li>Dodano **Ulica**</li><li>**Wiersz adresu 1**, **wiersz adresu 2** i **wiersz adresu 3** oznaczone do zaniechania</li></ul> |
 | Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości | <ul><li>**Typ planu wynagrodzeń o zmiennej wysokości**</li><li>**Plan wynagrodzeń o zmiennej wysokości**</li><li>**Reguły wypłat**</li><li>**Poziom planu wynagrodzeń o zmiennej wysokości**</li></ul> |
 | Nowa jednostka **Zatrudnienie kalendarza pracownika** | <ul><li>Dodano **jednostkę kalendarza pracy**</li></ul> |
 | Nowa jednostka **Szczegół stanowiska listy płac** | <ul><li>Dodano **Szczegół stanowiska listy płac**</li></ul> |
-| Nowa jednostka **Tytuł** | <ul><li>Dodano **Tytuł**</li></ul> Nowa jednostka **tytułu** jest dołączona do Common Data Service, ale nie odwołuje się do w tej chwili do jednostek**stanowiska pracy** ani **Pozycji**. |
+| Nowa jednostka **Tytuł** | <ul><li>Dodano **Tytuł**</li></ul> Nowa jednostka **tytułu** jest dołączona do Common Data Service, ale nie odwołuje się do w tej chwili do jednostek **stanowiska pracy** ani **Pozycji**. |
 
 > [!NOTE]
 > Wymiary finansowe dla obu stanowisk i zatrudnienia zapewniają jednokierunkową integrację aktualizacji z modułu Human Resources do usługi Common Data Service. Aktualizacje wymiarów finansowych nie są obecnie synchronizowane z usługi Common Data Service do modułu Human Resources.

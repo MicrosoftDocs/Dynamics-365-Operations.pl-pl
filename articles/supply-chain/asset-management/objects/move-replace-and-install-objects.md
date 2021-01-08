@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ec150adb35eb0600844245b14cbec9e9632ab337
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889560"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435280"
 ---
 # <a name="move-replace-and-install-assets"></a>Przenoszenie, zamiana i instalowanie składników majątku
 

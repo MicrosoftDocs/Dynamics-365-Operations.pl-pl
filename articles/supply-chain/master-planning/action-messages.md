@@ -19,11 +19,11 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 46e170b18a3c32d443c1de55516d19408b7947d3
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3886854"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435470"
 ---
 # <a name="action-messages"></a>Komunikaty akcji
 

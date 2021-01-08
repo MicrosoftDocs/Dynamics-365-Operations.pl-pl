@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1f7a779d69bf49d3416de3e92d4414cfabf358eb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3983630"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517459"
 ---
 # <a name="manage-robotstxt-files"></a>Zarządzanie plikami robots.txt
 
@@ -90,15 +90,15 @@ Aby usunąć plik robots.txt w usłudze Commerce, wykonaj następujące kroki.
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
-[Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
+[Konfigurowanie dzierżawy B2C w module Commerce](set-up-B2C-tenant.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
 

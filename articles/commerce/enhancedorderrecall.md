@@ -15,18 +15,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 41944fb7819b5527f6bc023a60acd9450d9e43c2
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 42b11ff16757d633b868dfdf248341193a44378f
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974845"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665305"
 ---
 # <a name="recall-order-operation-in-pos"></a>Odwołanie operacji zamówienia w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
-Operacja odwoływania zamówienia w punkcie sprzedaży (POS) programu Commerce oferuje zaktualizowane wyszukiwanie i filtrowanie zamówień oraz informacji właściwych dla zamówienia. Ta funkcja jest dostępna w Commerce w wersjach 10.0.15 i nowszej.
+Operacja **odwoływania zamówienia** w punkcie sprzedaży (POS) programu Commerce zapewnia zaktualizowane wyszukiwanie i filtrowanie zamówień oraz informacji właściwych dla zamówienia. Ta funkcja jest dostępna w Commerce w wersjach 10.0.15 i nowszej.
 
 Aby włączyć tę funkcję, należy włączyć opcję **Ulepszona operacja odwoływania zamówienia w punkcie sprzedaży** w obszarze roboczym **Zarządzanie funkcjami** w module Commerce Headquarters. Po włączeniu tej funkcji należy rozważyć aktualizację [układów ekranu](pos-screen-layouts.md) w punkcie sprzedaży, aby korzystać z niektórych zmienionych możliwości.
 

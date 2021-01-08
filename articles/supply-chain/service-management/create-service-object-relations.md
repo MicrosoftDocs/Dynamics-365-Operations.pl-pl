@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 352d3b790da340102b7dbe116d9deeb2f3cbfc4e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985976"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435412"
 ---
 # <a name="create-service-object-relations"></a>Tworzenie relacji przedmiotów serwisu 
 

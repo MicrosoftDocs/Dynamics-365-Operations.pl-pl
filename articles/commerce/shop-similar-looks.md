@@ -20,11 +20,11 @@ ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818381"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415014"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Włącz rekomendacje „Kup podobne”
 

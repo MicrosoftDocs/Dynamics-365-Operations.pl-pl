@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016592"
+ms.locfileid: "4435570"
 ---
 # <a name="visibility-into-material-exceptions"></a>Uzyskiwanie wglądu w wyjątki dotyczące materiałów
 
@@ -34,7 +34,7 @@ W obszarze roboczym **Zarządzanie halą produkcyjną** trzy kafelki zapewniają
 - Nieprzetworzone grupy czynności wymagające uwagi
 - Otwarta praca magazynowa wymagająca uwagi
 
-Dla wszystkich trzech kafelków data surowców wierszy listy składowej (BOM) i wierszy formuły jest porównywana z datą obszaru roboczego, a także filtrami parametrów **Jednostka produkcyjna** , **Grupa zasobów** i **Zasób** ustawionych w menu **Konfiguruj mój obszar roboczy**. Domyślnie data obszaru roboczego jest ustawiona na bieżącą datę, ale można ją dostosować.
+Dla wszystkich trzech kafelków data surowców wierszy listy składowej (BOM) i wierszy formuły jest porównywana z datą obszaru roboczego, a także filtrami parametrów **Jednostka produkcyjna**, **Grupa zasobów** i **Zasób** ustawionych w menu **Konfiguruj mój obszar roboczy**. Domyślnie data obszaru roboczego jest ustawiona na bieżącą datę, ale można ją dostosować.
 
 Niepublikowany wiersz BOM lub wiersz formuły wymaga uwagi, jeżeli data surowca wiersza jest taka sama lub wcześniejsza niż data obszaru roboczego i jeżeli spełnia kryteria zdefiniowane przez filtry w obszarze roboczym.
 

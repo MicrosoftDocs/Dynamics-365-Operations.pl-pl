@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: cc217f21a5fa70feb9ef9161f3ef2e2b6a333f35
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017766"
+ms.locfileid: "4435623"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -61,7 +61,7 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 ### <a name="create-a-cross-docking-template"></a>Tworzenie szablonu przeładunku kompletacyjnego
 
 1. Przejdź kolejno do pozycji **Zarządzanie magazynem \> Konfiguracja \> Praca \> Szablony przeładunku kompletacyjnego**.
-1. W okienku akcji wybierz opcję **Nowe** , aby utworzyć szablon.
+1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć szablon.
 1. W nagłówku ustaw następujące wartości:
 
     - **Sekwencja:** *1*
@@ -89,11 +89,11 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
     - **Sprawdź ponownie na paragonie dostawy:** *Nie*
 
-        Ta opcja umożliwia zdefiniowanie, czy dostawa ma zostać sprawdzona ponownie podczas przyjęcia. Jeśli ta opcja ma wartość *Tak* , sprawdzane są zarówno maksymalne przedziały czasu, jak i zakres daty ważności.
+        Ta opcja umożliwia zdefiniowanie, czy dostawa ma zostać sprawdzona ponownie podczas przyjęcia. Jeśli ta opcja ma wartość *Tak*, sprawdzane są zarówno maksymalne przedziały czasu, jak i zakres daty ważności.
 
     - **Sprawdzanie poprawności – okno czasowe:** *Tak*
 
-        Ta opcja służy do definiowania, czy w przypadku wybrania źródła dostaw ma być oceniany maksymalny przedział czasu. Jeśli ta opcja ma wartość *Tak* , pola związane z maksymalnym i minimalnym okienkiem czasowym staną się dostępne.
+        Ta opcja służy do definiowania, czy w przypadku wybrania źródła dostaw ma być oceniany maksymalny przedział czasu. Jeśli ta opcja ma wartość *Tak*, pola związane z maksymalnym i minimalnym okienkiem czasowym staną się dostępne.
 
     - **Okienko czasu maksymalnego:** *5*
 
@@ -109,7 +109,7 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
         *Kryterium pierwsze do wygaśnięcia – pierwsze do wyjścia (FEFO):* to pole określa maksymalną liczbę dni między datą ważności pierwszej partii, która znajduje się obecnie w magazynie a otrzymaną partią.
 
-1. Na skróconej karcie **Źródła dostaw** można określić typy dostaw, które są prawidłowe dla tego szablonu. Wybierz opcję **Nowe** , a następnie określ następujące wartości:
+1. Na skróconej karcie **Źródła dostaw** można określić typy dostaw, które są prawidłowe dla tego szablonu. Wybierz opcję **Nowe**, a następnie określ następujące wartości:
 
     - **Numer sekwencyjny:** *1*
     - **Źródło dostawy:** *Zamówienie zakupu*
@@ -117,7 +117,7 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 ### <a name="create-a-work-class"></a>Tworzenie klasy roboczej
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Klasy robocze**.
-1. W okienku akcji wybierz opcję **Nowe** , aby utworzyć klasę roboczą.
+1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć klasę roboczą.
 1. Ustaw następujące wartości:
 
     - **Identyfikator klasy roboczej:** *CrossDock*
@@ -128,21 +128,21 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablony pracy**.
 1. W polu **Typ zlecenia pracy** ustaw pozycję *Przeładunek kompletacyjny*.
-1. W okienku akcji wybierz opcję **Nowe** , aby dodać nowy wiersz do karty **Przegląd**.
+1. W okienku akcji wybierz opcję **Nowe**, aby dodać nowy wiersz do karty **Przegląd**.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Numer sekwencyjny:** *1*
     - **Szablon pracy** *51 Cross Dock*
     - **Opis szablonu pracy** *51 Przeładunek kompletacyjny*
 
-1. Wybierz opcję **Zapisz** , aby skrócona karta **Szczegóły szablonu pracy** stała się dostępna.
-1. Na skróconej karcie **Szczegółów dot. szablonu pracy** wybierz opcję **Nowy** , aby dodać wiersz do siatki.
+1. Wybierz opcję **Zapisz**, aby skrócona karta **Szczegóły szablonu pracy** stała się dostępna.
+1. Na skróconej karcie **Szczegółów dot. szablonu pracy** wybierz opcję **Nowy**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Typ pracy:** *Pobranie*
     - **Identyfikator klasy roboczej:** *CrossDock*
 
-1. Wybierz polecenie **Nowy** , aby dodać dodatkowy wiersz i określ następujące wartości:
+1. Wybierz polecenie **Nowy**, aby dodać dodatkowy wiersz i określ następujące wartości:
 
     - **Typ pracy:** *Odłożenie*
     - **Identyfikator klasy roboczej:** *CrossDock*
@@ -164,22 +164,22 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Oddział:** *5*
     - **Magazyn:** *51*
 
-1. Wybierz opcję **Zapisz** , aby skrócona karta **Wiersze** stała się dostępna.
-1. Na skróconej karcie **Wiersze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Wybierz opcję **Zapisz**, aby skrócona karta **Wiersze** stała się dostępna.
+1. Na skróconej karcie **Wiersze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Od ilości:** *1*
     - **Do ilości:** *1000000*
 
-1. Wybierz opcję **Zapisz** , aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
-1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Wybierz opcję **Zapisz**, aby skrócona karta **Dyrektywy akcji lokalizacji** stała się dostępna.
+1. Na skróconej karcie **Działania dyrektywy lokalizacji** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Nazwa:** *Baydoor*
     - **Stałe użycie lokalizacji:** *Stałe i niestałe lokalizacje*
 
-1. Wybierz opcję **Zapisz** , aby udostępnić przycisk **Edytuj kwerendę** na pasku **Dyrektywy akcji lokalizacji**.
-1. Wybierz opcję **Edytuj kwerendę** , aby otworzyć edytor kwerend.
+1. Wybierz opcję **Zapisz**, aby udostępnić przycisk **Edytuj kwerendę** na pasku **Dyrektywy akcji lokalizacji**.
+1. Wybierz opcję **Edytuj kwerendę**, aby otworzyć edytor kwerend.
 1. Na karcie **Zakres** upewnij się, że skonfigurowano dwa następujące wiersze:
 
     - Wiersz 1:
@@ -196,14 +196,14 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
         - **Pole:** *Lokalizacja*
         - **Kryteria:** *Baydoor*
 
-1. Kliknij przycisk **OK** , aby zamknąć edytor.
+1. Kliknij przycisk **OK**, aby zamknąć edytor.
 
 ### <a name="create-a-mobile-device-menu-item"></a>Tworzenie elementu menu urządzenia przenośnego
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego**.
 1. Na liście elementów menu w lewym okienku wybierz pozycję **Umieszczenie zakupu**.
 1. Wybierz opcję **Edycja**.
-1. Na skróconej karcie **Klasy robocze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. Na skróconej karcie **Klasy robocze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Identyfikator klasy roboczej:** *CrossDock*
@@ -251,18 +251,18 @@ Aby utworzyć zamówienie sprzedaży jako źródło popytu, należy wykonać nas
 
 Aby utworzyć planowany przeładunek kompletacyjny na podstawie zamówienia sprzedaży, należy wykonać poniższe kroki.
 
-1. Na stronie **Szczegóły zamówienia sprzedaży** dla utworzonego właśnie zamówienia sprzedaży w okienku akcji na karcie **Magazyn** w grupie **Akcje** , wybierz opcję **Zwolnienie do magazynu**.
+1. Na stronie **Szczegóły zamówienia sprzedaży** dla utworzonego właśnie zamówienia sprzedaży w okienku akcji na karcie **Magazyn** w grupie **Akcje**, wybierz opcję **Zwolnienie do magazynu**.
 
     Akcja zwolnienie do magazynu powoduje utworzenie wiersza wysyłki i ładunku dla wiersza zamówienia sprzedaży i próbuje alokować zapasy.
     
     Zostanie wyświetlony komunikat informacyjny. Pojawia się także następujący komunikat ostrzegawczy: „Nie utworzono żadnej pracy dla grupy czynności XXXX. Aby uzyskać szczegółowe informacje, zajrzyj do dziennika historii tworzenia pracy”. Takie zachowanie jest oczekiwane, ponieważ w magazynie nie ma zapasów.
 
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Magazyn** wybierz opcję **Szczegóły wysyłki**.
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Magazyn** wybierz opcję **Szczegóły wysyłki**.
 
-    Zostanie wyświetlona strona **Szczegóły wysyłki** , która została utworzona dla danego wiersza sprzedaży.
+    Zostanie wyświetlona strona **Szczegóły wysyłki**, która została utworzona dla danego wiersza sprzedaży.
 
-1. Na skróconej karcie **Wiersze ładunku** , w **Planowana ilość dla przeładunku kompletacyjnego** powinna być ustawiona wartość *3*. Ponieważ w magazynie nie było dostępnych zapasów, ale podano prawidłowe źródło dostaw w oknie czasu zdefiniowanym w szablonie przeładunku kompletacyjnego, zostanie utworzona ilość przeładunku kompletacyjnego.
-1. Na skróconej karcie **Wiersze ładunku** wybierz opcję **Planowany przeładunek kompletacyjny** , aby wyświetlić szczegóły utworzonego przeładunku kompletacyjnego.
+1. Na skróconej karcie **Wiersze ładunku**, w **Planowana ilość dla przeładunku kompletacyjnego** powinna być ustawiona wartość *3*. Ponieważ w magazynie nie było dostępnych zapasów, ale podano prawidłowe źródło dostaw w oknie czasu zdefiniowanym w szablonie przeładunku kompletacyjnego, zostanie utworzona ilość przeładunku kompletacyjnego.
+1. Na skróconej karcie **Wiersze ładunku** wybierz opcję **Planowany przeładunek kompletacyjny**, aby wyświetlić szczegóły utworzonego przeładunku kompletacyjnego.
 
 ## <a name="process-the-cross-docking"></a>Przetwórz przeładunek kompletacyjny
 
@@ -281,11 +281,11 @@ Drugi utworzony identyfikator pracy ma wartość **Typ zlecenia pracy** *Zleceni
 1. Kliknij przycisk **OK**.
 1. Na następnej stronie w polu **Pozycja** wpisz *A0001*.
 1. Kliknij przycisk **OK**.
-1. Na następnej stronie potwierdź wartości **PONum** , **Pozycja** oraz **Ilość** klikając **OK**.
+1. Na następnej stronie potwierdź wartości **PONum**, **Pozycja** oraz **Ilość** klikając **OK**.
 
     Zostanie wyświetlony komunikat „Praca zakończona”.
 
-1. Wybierz **Anuluj** , aby wyjść.
+1. Wybierz **Anuluj**, aby wyjść.
 
 ### <a name="put-away-to-cross-docking-and-bulk"></a>Umieszczenie do przeładunku kompletacyjnego i sprzedaży zbiorczej
 
@@ -294,7 +294,7 @@ Obecnie oba identyfikatory pracy mają taki sam docelowy numer identyfikacyjny. 
 1. Na urządzeniu przenośnym przejdź do **Przychodzące \> Umieszczenie zakupu** i wprowadź docelowy numer identyfikacyjny pracy.
 1. W polu **Identyfikator** wprowadź docelowy numer identyfikacyjny ze szczegółów dot. pracy.
 
-    Na stronie pobranie przeładunku kompletacyjnego jest wyświetlana lokalizacja pobrania ( *RECV* ), docelowy numer identyfikacyjny ( *numer identyfikacyjny* ), pozycja ( *A0001* ) oraz ilość ( *3* ).
+    Na stronie pobranie przeładunku kompletacyjnego jest wyświetlana lokalizacja pobrania (*RECV*), docelowy numer identyfikacyjny (*numer identyfikacyjny*), pozycja (*A0001*) oraz ilość (*3*).
 
 1. Kliknij przycisk **OK**.
 1. W polu **Docelowy num. id.** wprowadź docelowy numer identyfikacyjny dla identyfikatora numeru identyfikacyjnego, który ma zostać umieszczony (przeładunek kompletacyjny) w lokalizacji wysyłki. Możesz wybrać dowolny identyfikator numeru identyfikacyjnego.
@@ -302,16 +302,16 @@ Obecnie oba identyfikatory pracy mają taki sam docelowy numer identyfikacyjny. 
 1. Na następnej stronie, w polu **Identyfikator** wprowadź docelowy numer identyfikacyjny ze szczegółów dot. pracy.
 1. Kliknij przycisk **OK**.
 1. Potwierdź pracę w celu pobrania pozostałej ilości w wys. 2, a następnie kliknij przycisk **OK**.
-1. Na następnej stronie wybierz opcję **Gotowe** , aby zakończyć proces pobierania i rozpocząć proces umieszczenia.
+1. Na następnej stronie wybierz opcję **Gotowe**, aby zakończyć proces pobierania i rozpocząć proces umieszczenia.
 
     Aplikacja mobilna zawiera adres i numer identyfikacyjny, w którym ma zostać umieszczony towar.
 
-1. Potwierdź masowe przechowywanie **Umieść** , klikając **OK**.
-1. Na następnej stronie potwierdź przeładunek kompletacyjny **Umieść** , klikając **OK**.
+1. Potwierdź masowe przechowywanie **Umieść**, klikając **OK**.
+1. Na następnej stronie potwierdź przeładunek kompletacyjny **Umieść**, klikając **OK**.
 
     Zostanie wyświetlony komunikat „Praca zakończona”.
 
-1. Wybierz **Anuluj** , aby wyjść.
+1. Wybierz **Anuluj**, aby wyjść.
 
 Na poniższej ilustracji przedstawiono sposób ukończenia pracy przeładunku kompletacyjnego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 

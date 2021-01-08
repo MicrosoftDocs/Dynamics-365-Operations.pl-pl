@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979835"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435421"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
@@ -168,8 +168,8 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 </ul></td>
 </tr>
 <tr class="even">
-<td>Potęga</td>
-<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy jest łączna z prawej). Dlatego <strong>Power[a, b, c]</strong> jest równoznaczne z <strong>Power[a, Power[b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
+<td>Moc</td>
+<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy łączne prawostronnie). Dlatego <strong>Power[a, b, c]</strong> jest równoznaczne z <strong>Power[a, Power[b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>

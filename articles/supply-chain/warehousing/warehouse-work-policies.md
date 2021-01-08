@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
 ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017674"
+ms.locfileid: "4435634"
 ---
 # <a name="work-policies"></a>Zasady pracy
 
@@ -76,7 +76,7 @@ Możesz użyć lokalizacji magazynu przypisanej do profilu lokalizacji, w które
 
 ### <a name="the-products-fasttab"></a>Skrócona karta produktów
 
-Na karcie **Produkty** zaznacz pole **Wybór produktu** , aby określić, które produkty mają być stosowane w zasadach:
+Na karcie **Produkty** zaznacz pole **Wybór produktu**, aby określić, które produkty mają być stosowane w zasadach:
 
 - **Wszystko** — zasady powinny być stosowane do wszystkich produktów.
 - **Zaznaczone** — zasady powinny być stosowane tylko w odniesieniu do produktów wymienionych w siatce. Za pomocą paska narzędzi na skróconej karcie **Produkty** można dodawać produkty do siatki lub usuwać je z siatki.
@@ -113,11 +113,11 @@ Aby skonfigurować element menu urządzenia przenośnego w celu obsługi odbiera
 
 ## <a name="example-scenario-warehouse-receiving"></a>Przykładowy scenariusz: przyjęcie w magazynie
 
-Wszystkie produkty odbierane przez proces *Odbierania (i odkładania) zamówienia zakupu* muszą być zarejestrowane w lokalizacji *FL-001* i muszą być dostępne w magazynie *24*. Nie należy jednak tworzyć pracy. Produkty odbierane przez inny proces (to znaczy za pomocą innych elementów menu urządzeń przenośnych) powinny być rejestrowane w domyślnej lokalizacji przyjęcia ( *Odbierz* ), a praca powinna być tworzona w zwykły sposób. (W tym scenariuszu nie jest wyświetlana domyślna konfiguracja odbierania.)
+Wszystkie produkty odbierane przez proces *Odbierania (i odkładania) zamówienia zakupu* muszą być zarejestrowane w lokalizacji *FL-001* i muszą być dostępne w magazynie *24*. Nie należy jednak tworzyć pracy. Produkty odbierane przez inny proces (to znaczy za pomocą innych elementów menu urządzeń przenośnych) powinny być rejestrowane w domyślnej lokalizacji przyjęcia (*Odbierz*), a praca powinna być tworzona w zwykły sposób. (W tym scenariuszu nie jest wyświetlana domyślna konfiguracja odbierania.)
 
 Ten scenariusz wymaga następujących elementów:
 
-- Zasada pracy dla procesu *Przyjęcie pozycji z zamówienia zakupu (i odłożenie)* w lokalizacji *FL-001* , dla wszystkich produktów
+- Zasada pracy dla procesu *Przyjęcie pozycji z zamówienia zakupu (i odłożenie)* w lokalizacji *FL-001*, dla wszystkich produktów
 - Element menu urządzenia przenośnego z danymi domyślnymi, który ustawia pole **Do lokalizacji** na *FL-001*
 
 ### <a name="prerequisites"></a>Wymagania wstępne
@@ -132,14 +132,14 @@ W tym scenariuszu używane są standardowe dane demonstracyjne. Dlatego jeśli c
 1. Wybierz pozycję **Nowy**.
 1. W polu **Nazwa zasady pracy** wprowadź *Praca odkładania bez pozycji zakupu*.
 1. Wybierz opcję **Zapisz**.
-1. Na skróconej karcie **Typy zleceń pracy** wybierz opcję **Dodaj** , aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. Na skróconej karcie **Typy zleceń pracy** wybierz opcję **Dodaj**, aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Typ zlecenia pracy:** *Zamówienie zakupu*
     - **Proces pracy:** *Przyjęcie pozycji z zamówienia zakupu (i odłożenie)*
     - **Metoda tworzenia pracy:** *Nigdy*
     - **Nazwa zasady przeładunku kompletacyjnego:** Pozostaw to pole puste.
 
-1. Na skróconej karcie **Lokalizacje w magazynie** wybierz opcję **Dodaj** , aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. Na skróconej karcie **Lokalizacje w magazynie** wybierz opcję **Dodaj**, aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Magazyn:** *24*
     - **Lokalizacja:** *FL-001*
@@ -154,7 +154,7 @@ W tym scenariuszu używane są standardowe dane demonstracyjne. Dlatego jeśli c
 1. Na skróconej karcie **Ogólne** ustaw opcje **Użyj danych domyślnych** na *Tak*.
 1. Wybierz opcję **Zapisz**.
 1. W okienku akcji wybierz **Dane domyślne**.
-1. W okienku akcji na stronie **Dane domyślne** wybierz opcję **Nowe** , aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. W okienku akcji na stronie **Dane domyślne** wybierz opcję **Nowe**, aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Domyślne pole danych:** *Do lokalizacji*
     - **Magazyn:** *24*
@@ -177,7 +177,7 @@ W przykładzie w tej sekcji przedstawiono sposób przyjmowania towaru zamówieni
     - **Oddział:** *2*
     - **Magazyn:** *24*
 
-1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i otworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i otworzyć nowe zamówienie zakupu.
 1. Na skróconej **Wiersze zamówienia zakupu** określ następujące wartości pustego wiersza:
 
     - **Numer pozycji:** *A0001*
@@ -188,7 +188,7 @@ W przykładzie w tej sekcji przedstawiono sposób przyjmowania towaru zamówieni
 
 #### <a name="receive-a-purchase-order"></a>Odbiór zamówienia zakupu
 
-1. Na urządzeniu mobilnym zaloguj się do magazynu *24* , używając *24* jako identyfikatora użytkownika i *1* jako hasła.
+1. Na urządzeniu mobilnym zaloguj się do magazynu *24*, używając *24* jako identyfikatora użytkownika i *1* jako hasła.
 1. Wybierz opcję **Przychodzące**.
 1. Wybierz opcję **Przyjęcie zakupu**. Pole **Lokalizacja** powinno mieć wartość *FL-001*.
 1. Umożliwia wprowadzenie numeru zamówienia zakupu dla zamówienia zakupu utworzonego w poprzedniej procedurze.
@@ -201,7 +201,7 @@ Zamówienie zakupu jest teraz otrzymane, ale nie skojarzono z nim żadnej pracy.
 
 ## <a name="example-scenario-manufacturing"></a>Przykładowy scenariusz: produkcja
 
-W poniższym przykładzie istnieją dwa zlecenia produkcyjne, *PRD-001* i *PRD-002*. Zlecenie produkcyjne *PRD-001* zawiera operację o nazwie *Montaż* , z której produkt *SC1* jest zgłaszany jako gotowy do lokalizacji *001*. Zlecenie produkcyjne *PRD-002* ma operację o nazwie *Malowanie* i zużywa produkt *SC1* z lokalizacji *001*. Zlecenie produkcyjne *PRD-002* zużywa także surowiec *RM1* z lokalizacji *001*. Surowiec *RM1* jest przechowywany w lokalizacji magazynowej *BULK-001* i zostanie pobrany do lokalizacji *001* za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji *PRD-002*.
+W poniższym przykładzie istnieją dwa zlecenia produkcyjne, *PRD-001* i *PRD-002*. Zlecenie produkcyjne *PRD-001* zawiera operację o nazwie *Montaż*, z której produkt *SC1* jest zgłaszany jako gotowy do lokalizacji *001*. Zlecenie produkcyjne *PRD-002* ma operację o nazwie *Malowanie* i zużywa produkt *SC1* z lokalizacji *001*. Zlecenie produkcyjne *PRD-002* zużywa także surowiec *RM1* z lokalizacji *001*. Surowiec *RM1* jest przechowywany w lokalizacji magazynowej *BULK-001* i zostanie pobrany do lokalizacji *001* za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji *PRD-002*.
 
 [![Zasady pracy magazynowej](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
@@ -233,27 +233,27 @@ Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowani
 1. Wybierz pozycję **Nowy**.
 1. W polu **Nazwa zasady pracy** wprowadź *Brak pracy odkładania*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. Na skróconej karcie **Typy zleceń pracy** wybierz opcję **Dodaj** , aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. Na skróconej karcie **Typy zleceń pracy** wybierz opcję **Dodaj**, aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Typ zlecenia pracy:** *Odłożenie wyrobów gotowych*
     - **Proces pracy:** *wszystkie powiązane procesy pracy*
     - **Metoda tworzenia pracy:** *Nigdy*
     - **Nazwa zasady przeładunku kompletacyjnego:** Pozostaw to pole puste.
 
-1. Wybierz ponownie opcję **Dodaj** , aby dodać drugi wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. Wybierz ponownie opcję **Dodaj**, aby dodać drugi wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Typ zlecenia pracy:** *Odłożenie produktu ubocznego i produktu towarzyszącego*
     - **Proces pracy:** *wszystkie powiązane procesy pracy*
     - **Metoda tworzenia pracy:** *Nigdy*
     - **Nazwa zasady przeładunku kompletacyjnego:** Pozostaw to pole puste.
 
-1. Na skróconej karcie **Lokalizacje w magazynie** wybierz opcję **Dodaj** , aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
+1. Na skróconej karcie **Lokalizacje w magazynie** wybierz opcję **Dodaj**, aby dodać wiersz do siatki, a następnie określ następujące wartości dla nowego wiersza:
 
     - **Magazyn:** *51*
     - **Lokalizacja:** *001*
 
 1. Na skróconej karcie **Produkty** w polu **Wybór produktu** wybierz wartość *Wybrane*.
-1. Na skróconej karcie **Produkty** wybierz opcję **Dodaj** , aby dodać wiersz do siatki.
+1. Na skróconej karcie **Produkty** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
 1. W nowym wierszu należy określić wartość w polu **Kod towaru** na *L0101*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
@@ -276,21 +276,21 @@ Procesy magazynowe nie zawsze obejmują pracę magazynową. Poprzez zdefiniowani
 1. Wybierz kolejno opcje **Kontrola produkcji \> Zlecenia produkcyjne \> Wszystkie zlecenia produkcyjne**.
 1. W okienku akcji kliknij opcję **Nowe zlecenie produkcyjne**.
 1. W oknie dialogowym **Tworzenie zlecenia produkcyjnego** w polu **Kod towaru** określ wartość *L0101*.
-1. Naciśnij przycisk **Utwórz** , aby zamknąć okno dialogowe i utworzyć nowe zamówienie.
+1. Naciśnij przycisk **Utwórz**, aby zamknąć okno dialogowe i utworzyć nowe zamówienie.
 
     Nowe zlecenie produkcyjne zostanie dodane do siatki na stronie **Wszystkie zlecenia produkcyjne**.
 
     Umożliwia zachowanie nowego wybranego zlecenia produkcyjnego.
 
 1. W okienku akcji na karcie **Zlecenie produkcyjne** w grupie **Proces** wybierz opcję **Szacowanie**.
-1. W oknie dialogowym **Szacowanie** zapoznaj się z oszacowaniem, a następnie kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. W oknie dialogowym **Szacowanie** zapoznaj się z oszacowaniem, a następnie kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 1. W okienku akcji na karcie **Zlecenie produkcyjne** w grupie **Proces** wybierz opcję **Uruchom**.
-1. W oknie dialogowym **Uruchom** na karcie **Ogólne** , w polu **Automatyczne zużycie BOM** określ wartość *Nigdy*.
-1. Wybierz przycisk **OK** , aby zapisać ustawienie i zamknąć okienko dialogowe.
+1. W oknie dialogowym **Uruchom** na karcie **Ogólne**, w polu **Automatyczne zużycie BOM** określ wartość *Nigdy*.
+1. Wybierz przycisk **OK**, aby zapisać ustawienie i zamknąć okienko dialogowe.
 1. W okienku akcji na karcie **Zlecenie produkcyjne** w grupie **Proces** wybierz opcję **Zgłoszenie jako gotowe**.
 1. W oknie dialogowym **Zgłoszenie jako gotowe** na karcie **Ogólne** zaznacz opcję **Akceptacja błędu** na *Tak*.
-1. Wybierz przycisk **OK** , aby zapisać ustawienie i zamknąć okienko dialogowe.
-1. W okienku akcji, na karcie **Magazyn** , w grupie **Ogólne** wybierz pozycję **Szczegóły pracy**.
+1. Wybierz przycisk **OK**, aby zapisać ustawienie i zamknąć okienko dialogowe.
+1. W okienku akcji, na karcie **Magazyn**, w grupie **Ogólne** wybierz pozycję **Szczegóły pracy**.
 
 Po zgłoszeniu zlecenia produkcyjnego jako gotowego nie została wygenerowana praca do odłożenia. Dzieje się tak, ponieważ zdefiniowano zasadę pracy, która blokuje generowanie pracy, gdy produkt *L0101* jest zgłaszany jako gotowy do lokalizacji *001*.
 

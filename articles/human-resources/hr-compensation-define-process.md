@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429757"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420095"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
 

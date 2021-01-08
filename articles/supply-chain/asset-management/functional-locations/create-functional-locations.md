@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 37da9d59e4e9cf84238f6798a1aa7de72ff91f02
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435116"
 ---
 # <a name="create-functional-locations"></a>Tworzenie lokalizacji czynności konserwacyjnych
 
@@ -113,7 +113,7 @@ Jeśli dane dotyczące **Oddziału**, **Magazynu**, **Adresu** i **Wymiarów fin
 
 Jeśli firma ma kilka lokalizacji czynności konserwacyjnych o podobnych strukturach lokalizacji, można skorzystać z funkcji kopiowania w module Zarządzanie zasobami, aby szybko tworzyć wiele podobnych hierarchii lokalizacji. Podczas kopiowania konkretnej lokalizacji czynności konserwacyjnych lub całej struktury nowa lokalizacja lub struktura ma taką samą nazwę jak skopiowana. Po wykonaniu procedury kopiowania można łatwo zmienić nazwę lub inne ustawienia w nowej lokalizacji czynności konserwacyjnych, pod warunkiem, że będzie to miało stan czasu trwania lokalizacji czynności konserwacyjnych wybrany dla nowej lokalizacji czynności konserwacyjnych.
 
-1. W menu **Wszystkie lokalizacje czynności konserwacyjnych**wybierz lokalizację czynności konserwacyjnych, którą chcesz skopiować. Można na przykład wybrać najpopularniejszą lokalizację (nadrzędną), aby skopiować całą strukturę lokalizacji czynności konserwacyjnych, w tym lokalizacje podrzędne.
+1. W menu **Wszystkie lokalizacje czynności konserwacyjnych** wybierz lokalizację czynności konserwacyjnych, którą chcesz skopiować. Można na przykład wybrać najpopularniejszą lokalizację (nadrzędną), aby skopiować całą strukturę lokalizacji czynności konserwacyjnych, w tym lokalizacje podrzędne.
 2. Wybierz przycisk **Kopiuj strukturę lokalizacji czynności konserwacyjnych**. Lokalizacja wybrana na stronie listy jest wyświetlana w polu **Kopiuj z**.
 3. Wstaw nazwę nowej lokalizacji w polu **Nowa lokalizacja czynności konserwacyjnych**.
 4. W polu **element nadrzędny do wklejenia w elemencie** należy wstawić identyfikator nadrzędny, tylko jeśli tworzona lokalizacja powinna być częścią istniejącej struktury lokalizacji czynności konserwacyjnych.

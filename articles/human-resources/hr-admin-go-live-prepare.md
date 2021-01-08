@@ -19,11 +19,11 @@ ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011433"
+ms.locfileid: "4420143"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Przygotowanie do rozpoczęcia eksploatacji Human Resources
 
@@ -55,9 +55,9 @@ W poniższej tabeli wymieniono wszystkie kroki procesu, oczekiwany czas trwania 
 
 Głównym punktem kontrolnym w każdym projekcie implementacji jest migracja środowiska produkcyjnego. 
 
-Aby zapewnić, że środowisko produkcyjne jest używane w operacjach na żywo, firma Microsoft postanowi o wystąpieniu produkcji tylko wtedy, gdy wdrożenie zbliża się do fazy **Działanie** , po ukończeniu wymaganych działań w metodologii usługi LCS. Aby uzyskać więcej informacji dotyczących środowisk w subskrypcji, zapoznaj się z  [Podręcznikiem systemu Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
+Aby zapewnić, że środowisko produkcyjne jest używane w operacjach na żywo, firma Microsoft postanowi o wystąpieniu produkcji tylko wtedy, gdy wdrożenie zbliża się do fazy **Działanie**, po ukończeniu wymaganych działań w metodologii usługi LCS. Aby uzyskać więcej informacji dotyczących środowisk w subskrypcji, zapoznaj się z  [Podręcznikiem systemu Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
 
-Klienci muszą dokończyć **Analizę** , **Projektowanie i opracowywanie** , a następnie **Testować** etapy w metodologii usługi LCS, zanim zostanie udostępniony przycisk  **Konfiguruj** , który zażąda środowiska produkcyjnego. Aby zakończyć fazę w usługi LCS, należy najpierw ukończyć każdy wymagany krok w tej fazie. Po zakończeniu wszystkich etapów w fazie można zakończyć całą fazę. Można zawsze ponownie otworzyć fazę później, jeśli trzeba wprowadzić zmiany. Aby uzyskać więcej informacji, przejrzyj temat  [Lifecycle Services (LCS) dla klientów aplikacji Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
+Klienci muszą dokończyć **Analizę**, **Projektowanie i opracowywanie**, a następnie **Testować** etapy w metodologii usługi LCS, zanim zostanie udostępniony przycisk  **Konfiguruj** , który zażąda środowiska produkcyjnego. Aby zakończyć fazę w usługi LCS, należy najpierw ukończyć każdy wymagany krok w tej fazie. Po zakończeniu wszystkich etapów w fazie można zakończyć całą fazę. Można zawsze ponownie otworzyć fazę później, jeśli trzeba wprowadzić zmiany. Aby uzyskać więcej informacji, przejrzyj temat  [Lifecycle Services (LCS) dla klientów aplikacji Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
 
 Proces wykonywania kroku składa się z dwóch części: 
 

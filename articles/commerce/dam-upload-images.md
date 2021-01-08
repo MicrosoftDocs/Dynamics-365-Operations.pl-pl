@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8571c52b98a87751400dab9482168ee370834bcc
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: f562d3376fde6a24e6a1e1a3f7f4192cf290ae90
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097067"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594291"
 ---
 # <a name="upload-images"></a>Przekaż obrazy
 
@@ -88,10 +88,12 @@ Aby przekazać wiele obrazów w folderze w konstruktorze witryn, wykonaj następ
 
 [Omówienie zarządzania cyfrowymi składnikami majątku](dam-overview.md)
 
-[Przekaż plik wideo](dam-upload-video.md)
+[Przekazanie wideo](dam-upload-video.md)
 
 [Przekaż pliki](dam-upload-files.md)
 
-[Przytnij obrazy](dam-crop-images.md)
+[Przycinanie obrazów](dam-crop-images.md)
 
-[Dostosuj punkty ogniskowe obrazu](dam-custom-focal-point.md)
+[Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
+
+[Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)

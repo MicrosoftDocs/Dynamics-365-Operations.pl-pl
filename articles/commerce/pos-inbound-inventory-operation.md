@@ -20,11 +20,11 @@ ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
-ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3971504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414968"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -178,7 +178,7 @@ Funkcji **Anulowanie odbioru** należy użyć na pasku aplikacji tylko wtedy, gd
 
 W przypadku przyjmowania zapasów można użyć funkcji **Wstrzymaj przyjęcie**, jeśli proces ma zostać podzielony od procesu odbierającego. Na przykład można wykonać inną operację z punktu sprzedaży, na przykład dzwonienie do sprzedaży odbiorcy lub opóźnienie księgowania paragonu.
 
-Po wybraniu opcji **Wstrzymaj przyjęcie**stan dokumentu zostanie zmieniony na **Wstrzymany**. Dlatego użytkownicy będą wiedzieć, że wprowadzono dane do dokumentu, ale dokument nie został jeszcze zatwierdzony. Aby wznowić proces przyjmowania, wybierz wstrzymany dokument, a następnie wybierz **Szczegóły zamówienia**. Wszystkie **Przyjmowane teraz** ilości odbieranych towarów są zachowywane i można je przeglądać z poziomu widoku **Pełna lista zamówień**.
+Po wybraniu opcji **Wstrzymaj przyjęcie** stan dokumentu zostanie zmieniony na **Wstrzymany**. Dlatego użytkownicy będą wiedzieć, że wprowadzono dane do dokumentu, ale dokument nie został jeszcze zatwierdzony. Aby wznowić proces przyjmowania, wybierz wstrzymany dokument, a następnie wybierz **Szczegóły zamówienia**. Wszystkie **Przyjmowane teraz** ilości odbieranych towarów są zachowywane i można je przeglądać z poziomu widoku **Pełna lista zamówień**.
 
 ### <a name="review"></a>Przegląd
 

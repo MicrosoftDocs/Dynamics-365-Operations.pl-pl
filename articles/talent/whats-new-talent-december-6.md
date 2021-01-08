@@ -18,21 +18,23 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e46000414436b5a2fa211428dcd10131b9d588c1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 462b87a655e3e4017cffd2ba41cb6d1f18de3e50
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529169"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-6-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (6 grudnia 2018 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Kompilacja 8.1.2071**
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Core HR.
 
 
-## <a name="platform-update-22-for-finance-and-operations"></a>Aktualizacja Platform update 22 dla Finance and Operations
+## <a name="platform-update-22-for-finance-and-operations"></a>Aktualizacja 22 platformy dla Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Eksportowanie do 1 miliona wierszy do programu Excel
 
@@ -54,7 +56,7 @@ Operator filtrowania „jest jednym z” jest dostępny dla większości pól po
 
 W przypadku niektórych zadań użytkownicy mogą mieć listę wartości w programie, którą chcą użyć do filtrowania danych w Talent. Na przykład użytkownik w dziale HR może mieć określony na podstawie raportu zbiór pracowników, wymagający dalszego badania w systemie, i dla takiego użytkownika idealnym rozwiązaniem byłaby możliwość skopiowania listy bezpośrednio z programu Excel do pola filtra w Talent.
 
-Począwszy od aktualizacji Platform update 22 dla Finance and Operations, operator „jest jednym z” w okienku filtru i filtrowaniu kolumn siatki rozpoznaje teraz wartości skopiowane z programu Excel, dzięki czemu można je wkleić bezpośrednio do pola filtru. Obejmuje to zbiór wartości skopiowanych z różnych wierszy i kolumn w programie Excel. Aby dowiedzieć się więcej o tej funkcji, zobacz [Wklejanie list z programu Excel do pól filtru z operatorem „jest jedną z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Począwszy od aktualizacji Platform update 22 dla Finance and Operations, operator „jest jedną z” w opcjach filtrowania kolumnie Okienko filtru i siatki rozpoznaje teraz wartości skopiowane z programu Excel, dzięki czemu można je wkleić bezpośrednio do pola filtru. Obejmuje to zbiór wartości skopiowanych z różnych wierszy i kolumn w programie Excel. Aby dowiedzieć się więcej o tej funkcji, zobacz [Wklejanie list z programu Excel do pól filtru z operatorem „jest jedną z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Wersja próbna
 
@@ -133,7 +135,7 @@ Zadanie Pracownicy na pracownika musi mieć zaktualizowane następujące mapowan
 
 Przekształcenie pola płci również musi zostać zaktualizowane. Wybierz typ mapy **fn** (funkcja) dla płci i zaktualizuj następujące mapowania wartości.
 
-| Wartość Common Data Service | Wartość Finance and Operations | | ------------|------------------ -----------| | 75440000    | Mężczyzna                         | | 75440001    | Kobieta                       | | 75440002    | Brak                         | | 75440003    | Nie określono                  |
+| Wartość Common Data Service | Wartość Finance and Operations | | ------------|------------------ -----------| | 75440000 | Męski | | 75440001 | Żeński | | 75440002 | Brak | | 75440003 | Nieokreślony |
 
 Zaktualizowane mapowanie powinno wyglądać tak.
 

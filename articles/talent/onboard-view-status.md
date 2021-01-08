@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814727"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462279"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Wyświetlanie stanu Twoich zadań i dołączania pracowników
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Talent: Onboard pozwala zobaczyć postęp, jaki nowi prac
 
 1. W menu po lewej stronie wybierz **Przewodniki**. Zostanie wyświetlony przegląd postępu dla wszystkich przewodników dołączania, które zostały wysłane.
 
-    ![[Wyświetlanie statusu przewodników dołączania](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
+    ![[Wyświetlanie stanu przewodników wdrażania do pracy](./media/onboard-guide-status.png)](./media/onboard-guide-status.png)
 
 2. Aby przejść do szczegółów, wybierz przewodnik, który chcesz wyświetlić.
 3. Wybierz zakładkę **Działania**, aby zobaczyć, które działania zostały ukończone.

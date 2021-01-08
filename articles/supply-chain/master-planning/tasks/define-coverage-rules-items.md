@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 11d92185bdbcf7aa1a668b6d2aa311805e42293c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3974987"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435240"
 ---
 # <a name="define-coverage-rules-for-items"></a>Definiowanie reguł zapotrzebowania na towary
 
@@ -90,7 +90,7 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 
 ## <a name="create-item-coverage-rules"></a>Tworzenie reguł zapotrzebowania na towary
 1. W **okienku akcji** kliknij pozycję **Plan**.
-2. W obszarze**Pokrycie** kliknij opcję **pokrycie zapasu**.
+2. W obszarze **Pokrycie** kliknij opcję **pokrycie zapasu**.
 3. Kliknij przycisk **Nowy**.
 4. Kliknij kartę **Ogólne**.
 5. Zaznacz pole wyboru w nagłówku ustawień **Zastępowanie grupy zapotrzebowania**.

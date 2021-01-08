@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
 ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016569"
+ms.locfileid: "4435606"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsłu
 
 Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
 
-Dane ASN są połączone z ładowaniem i wysyłkami za pośrednictwem *struktur pakowania* , w których palety (nadrzędne numery identyfikacyjne) mogą zawierać sprawy (zagnieżdżone numery identyfikacyjne).
+Dane ASN są połączone z ładowaniem i wysyłkami za pośrednictwem *struktur pakowania*, w których palety (nadrzędne numery identyfikacyjne) mogą zawierać sprawy (zagnieżdżone numery identyfikacyjne).
 
 > [!NOTE]
 > Aby zmniejszyć liczbę transakcji magazynowych, gdy używane są struktury opakowań z zagnieżdżonymi numerami identyfikacyjnymi, system rejestruje fizycznie dostępne zapasy na nadrzędnym numerze identyfikacyjnym. Aby wyzwolić przesunięcie fizycznego stanu zapasów z nadrzędnego numeru identyfikacyjnego do zagnieżdżoneego numeru identyfikacyjnego na podstawie danych o strukturze pakowania, urządzenie przenośne musi dostarczyć element menu, który jest oparty procesie tworzenia pracy *Pakowanie do zagnieżdżonych numerów identyfikacyjnych*.
@@ -50,7 +50,7 @@ Podczas rejestrowania pozycji przychodzących przy użyciu zasady pracy, która 
 
 ### <a name="work-policies-without-work-creation"></a>Zasady pracy bez tworzenia pracy
 
-Proces odbierania numeru identyfikacyjnego można stosować bez tworzenia pracy. W przypadku zdefiniowania zasad pracy mających typ zlecenia pracy *Przyjęcie przeniesienia* lub *Zamówienia zakupu* , a następnie użycia procesu do *Odbieranie numeru identyfikacyjnego (i odłożenie)* na podstawie poniższych dwóch procesów aplikacji mobilnej Warehousing nie zostanie utworzona żadna praca. W zamian zarejestrują one po prostu przychodzące zapasy fizyczne na numerze identyfikacyjnym w doku przyjęcia przychodzącego.
+Proces odbierania numeru identyfikacyjnego można stosować bez tworzenia pracy. W przypadku zdefiniowania zasad pracy mających typ zlecenia pracy *Przyjęcie przeniesienia* lub *Zamówienia zakupu*, a następnie użycia procesu do *Odbieranie numeru identyfikacyjnego (i odłożenie)* na podstawie poniższych dwóch procesów aplikacji mobilnej Warehousing nie zostanie utworzona żadna praca. W zamian zarejestrują one po prostu przychodzące zapasy fizyczne na numerze identyfikacyjnym w doku przyjęcia przychodzącego.
 
 - *Przyjęcie numeru identyfikacyjnego*
 - *Odbieranie numeru identyfikacyjnego i odłożenie*
@@ -67,7 +67,7 @@ Istnieje możliwość użycia lokalizacji magazynowej przypisanej do profilu lok
 
 ## <a name="add-mobile-device-menu-items-for-each-receiving-location-in-a-warehouse"></a>Dodaj elementy menu urządzeń przenośnych dla każdej lokalizacji przyjęcia w magazynie
 
-Funkcja *Ulepszenia odbierania numerów identyfikacyjnych* pozwala uzyskać dostęp do każdej lokalizacji w magazynie, dodając do aplikacji mobilnej Warehousing specyficzne dla lokalizacji pozycje menu odbiór numeru identyfikacyjnego (i odkładania). Poprzednio system obsługiwał odbieranie tylko w lokalizacji domyślnej zdefiniowanej dla każdego magazynu. Jednak gdy ta funkcja jest włączona, elementy menu urządzenia mobilnego do odbierania (i odkładania) numerów identyfikacyjnych udostępniają teraz opcję **Użyj domyślnych danych** , która pozwala wybrać niestandardową lokalizację „do” dla każdego elementu menu. (Ta opcja jest już dostępna dla innych typów elementów menu.)
+Funkcja *Ulepszenia odbierania numerów identyfikacyjnych* pozwala uzyskać dostęp do każdej lokalizacji w magazynie, dodając do aplikacji mobilnej Warehousing specyficzne dla lokalizacji pozycje menu odbiór numeru identyfikacyjnego (i odkładania). Poprzednio system obsługiwał odbieranie tylko w lokalizacji domyślnej zdefiniowanej dla każdego magazynu. Jednak gdy ta funkcja jest włączona, elementy menu urządzenia mobilnego do odbierania (i odkładania) numerów identyfikacyjnych udostępniają teraz opcję **Użyj domyślnych danych**, która pozwala wybrać niestandardową lokalizację „do” dla każdego elementu menu. (Ta opcja jest już dostępna dla innych typów elementów menu.)
 
 Aby udostępnić tę funkcję w systemie, należy włączyć funkcję *Ulepszenia odbierania numerów identyfikacyjnych* w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -93,7 +93,7 @@ Aby udostępnić tę funkcję w systemie, należy włączyć *Zapobiegaj używan
 Aby zarządzać funkcjami, gdy ta funkcja jest dostępna, wykonaj następujące kroki.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-1. Na karcie **Ogólne** , na skróconej karcie **Numery identyfikacyjne** w polu **Zasady dotyczące numerów identyfikacyjnych magazynu tranzytowego** określ jedną z następujących wartości:
+1. Na karcie **Ogólne**, na skróconej karcie **Numery identyfikacyjne** w polu **Zasady dotyczące numerów identyfikacyjnych magazynu tranzytowego** określ jedną z następujących wartości:
 
     - **Zezwalaj na ponowne użycie nieśledzonego numeru identyfikacyjnego** — system działa tak samo, jak działa, gdy funkcja *Zapobiegaj używaniu numerów identyfikacyjnych wysłanych z zamówienia przeniesienia w magazynach innych niż magazyn docelowy* nie jest dostępna. Ta wartość jest ustawieniem domyślnym przy pierwszej aktywacji funkcji.
     - **Zapobiegaj ponownemu użyciu nieśledzonych numerów identyfikacyjnych** — w magazynie docelowym będą dozwolone tylko aktualizacje stanu zapasów związane ze wysyłką numeru identyfikacyjnego, dopóki zamówienie przeniesienia nie zostanie odebrane.
@@ -102,6 +102,6 @@ Aby zarządzać funkcjami, gdy ta funkcja jest dostępna, wykonaj następujące 
 
 Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoznaj się z tematem [Konfigurowanie urządzeń przenośnych do pracy magazynowej](configure-mobile-devices-warehouse.md).
 
-Aby uzyskać więcej informacji oscenariuszu produkcji *Zgłoszenie wyrobów gotowych* , zapoznaj się z [Omówienie zasad pracy magazynowej](warehouse-work-policies.md).
+Aby uzyskać więcej informacji oscenariuszu produkcji *Zgłoszenie wyrobów gotowych*, zapoznaj się z [Omówienie zasad pracy magazynowej](warehouse-work-policies.md).
 
 Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).

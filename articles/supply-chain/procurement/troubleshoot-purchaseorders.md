@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018567"
+ms.locfileid: "4435646"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Rozwiązywanie problemów z zamówieniami zakupu
 
@@ -34,13 +34,13 @@ W tym temacie opisano, jak rozwiązać problemy, które mogą wystąpić podczas
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="when-purchase-orders-are-imported-through-data-management-purchase-order-line-numbers-dont-follow-the-increment-that-defined-in-system-parameters"></a>Gdy zamówienia zakupu są importowane za pomocą zarządzania danymi, numery wierszy zamówienia nie są zgodne z przyrostem zdefiniowanym w parametrach systemu.
 
 ### <a name="issue-description"></a>Opis problemu
 
-Domyślnie automatycznie generowane numery wierszy zamówień zakupu, które są importowane za pomocą jednostki danych *Wiersze zamówienia zakupu V2* , nie używaj przyrostu numeru wiersza systemowego określonego w parametrach systemowych. Jeśli ręcznie utworzysz zamówienie zakupu i dodasz wiersze za pośrednictwem interfejsu użytkownika (UI), numery wierszy zostaną poprawnie zwiększone. Jeśli jednak używasz struktury zarządzania danymi (DMF), nie są one poprawnie zwiększane.
+Domyślnie automatycznie generowane numery wierszy zamówień zakupu, które są importowane za pomocą jednostki danych *Wiersze zamówienia zakupu V2*, nie używaj przyrostu numeru wiersza systemowego określonego w parametrach systemowych. Jeśli ręcznie utworzysz zamówienie zakupu i dodasz wiersze za pośrednictwem interfejsu użytkownika (UI), numery wierszy zostaną poprawnie zwiększone. Jeśli jednak używasz struktury zarządzania danymi (DMF), nie są one poprawnie zwiększane.
 
 Ten problem występuje, ponieważ podczas importowania wierszy przez DMF, jeśli numery wierszy nie są jeszcze przypisane w importowanej encji, system używa metody DMF do ich przypisywania. Ta metoda zawsze zwiększa liczbę wierszy o jeden.
 
@@ -58,7 +58,7 @@ Jest to celowe. Domyślne wartości grupy podatków, rabatów gotówkowych i inn
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="one-or-more-accounting-distributions-are-either-over-distributed-or-under-distributed"></a>Co najmniej jedna dystrybucja księgowa jest rozproszona lub niepełna.
 
@@ -70,7 +70,7 @@ Pojawia się następujący błąd: „Co najmniej jedna dystrybucja rozliczeń j
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="can-i-show-only-purchase-orders-that-i-created"></a>Czy mogę wyświetlić utworzone przeze mnie zamówienia zakupu?
 
@@ -107,7 +107,7 @@ Poniższa procedura przedstawia jeden ze sposobów odtworzenia błędu.
 1. Określ język systemowy jako *EN-US* (Język angielski Stany Zjednoczone).
 1. Upewnij się, że istnieje produkt, w którym obsługiwane są języki *EN-US* i *DE* (Niemiecki) dla tłumaczeń nazw produktów.
 1. Zmień język firmy na *DE*.
-1. W firmie, w której jako język jest ustawiona wartość *DE* , utwórz zamówienie zakupu zawierające produkt.
+1. W firmie, w której jako język jest ustawiona wartość *DE*, utwórz zamówienie zakupu zawierające produkt.
 1. Zauważ, że nazwa produktu nadal jest wyświetlana w języku angielskim, USA (język systemowy).
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
@@ -118,7 +118,7 @@ Jest to celowe. W przypadku zamówień zakupu produkt jest zawsze pokazywany w w
 
 ### <a name="issue-description"></a>Opis problemu
 
-Produkt ma zatwierdzonego dostawcę, który ma na przykład datę wejścia w życie 11 stycznia 2018 r. ( *11/01/2018* ) i datę ważności *Nigdy*. Próba zmiany daty rozpoczęcia na 10 stycznia 2018 ( *10/01/2018* ) lub 12 stycznia 2018 ( *12/01/2018* ) powoduje wyświetlenie następującego błędu:
+Produkt ma zatwierdzonego dostawcę, który ma na przykład datę wejścia w życie 11 stycznia 2018 r. (*11/01/2018*) i datę ważności *Nigdy*. Próba zmiany daty rozpoczęcia na 10 stycznia 2018 (*10/01/2018*) lub 12 stycznia 2018 (*12/01/2018*) powoduje wyświetlenie następującego błędu:
 
 > Nie można utworzyć rekordu na liście zatwierdzonych dostawców (PdsApproveVendorList). Wartość „Data ważności” musi być większa lub równa wartości „Data wejścia w życie”.
 
@@ -130,7 +130,7 @@ Można wydłużyć okres, dla którego dostawca został zatwierdzony. Obowiązuj
 - Aby zmienić datę wygaśnięcia, tak aby była późniejsza niż jakikolwiek z istniejących okresów, data wejścia w życie musi być późniejsza niż ostatnia data wygaśnięcia dowolnego istniejącego rekordu.
 - Aby skrócić cały okres, do którego dostawca jest zatwierdzony, należy usunąć lub zmodyfikować istniejące rekordy. Alternatywnie można skorzystać z przełącznika **obcinania** podczas importu. Ten przełącznik powoduje usunięcie wszystkich istniejących rekordów z tabeli dla zatwierdzonych dostawców według towarów.
 
-W przykładzie scenariusza opisanego w opisie zagadnienia, gdy rekord ma datę wejścia w życie *11/01/2018* oraz datę ważności *Nigdy* , można zaimportować nowy rekord z datą wejścia w życie *10/01/2018* oraz datę ważności *Nigdy*. Nie można jednak skrócić okresu, tak aby Data wejścia w życie była aktualizowana do *12/01/2018* za pomocą funkcji zarządzania danymi. Tę zmianę należy wprowadzić w interfejsie użytkownika.
+W przykładzie scenariusza opisanego w opisie zagadnienia, gdy rekord ma datę wejścia w życie *11/01/2018* oraz datę ważności *Nigdy*, można zaimportować nowy rekord z datą wejścia w życie *10/01/2018* oraz datę ważności *Nigdy*. Nie można jednak skrócić okresu, tak aby Data wejścia w życie była aktualizowana do *12/01/2018* za pomocą funkcji zarządzania danymi. Tę zmianę należy wprowadzić w interfejsie użytkownika.
 
 ## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Po zmianie adresu dostawy w nagłówku zamówienia zakupu nazwa dostawy nie jest synchronizowana.
 

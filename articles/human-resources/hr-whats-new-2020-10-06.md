@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ca2fbbf3ffbcc7c9c32490f3733b8a94731170e
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022222"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529835"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (6 października 2020 r.)
 
-W tym temacie opisano funkcje, które są nowe, zmienione lub wkrótce dostępne w ramach Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
+W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
 Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
 
@@ -55,7 +57,7 @@ W tej wersji uwzględniono następujące poprawki błędów.
 | 448806 | **Domyślny typ identyfikacji** — Eksportowanie jako **Identyfikator RecId** w parametrach HCM | Ta zmiana jednostki Parametry modułu Human Resources powoduje dodanie dodatkowej kolumny, w której jest wyświetlany **Domyślny typ identyfikacji**. |
 | 492923 | Nagrania zadań nie są zapisywane w Lifecycle Services (LCS) | Nagrania zadań można teraz zapisać w LCS. |
 | 429950 | Stałe wynagrodzenie nie wygasa poprawnie podczas zmieniania pozycji | Zmiana pozycji pracownika na stronie **Przeniesienie pracownika** powoduje, że data końcowa wynagrodzenia została ustawiona na jeden dzień przed końcem stanowiska. Data zakończenia wynagrodzenia jest teraz taka sama jak data zakończenia pozycji. |
-| 467214 | **Analiza wynagrodzeń** jest wyświetlana tylko w przypadku, gdy dla **Nazwy konwersji stawki płac** jest ustawiona wartość **roczna** | Płacone stawki płacowe o nazwie innej niż **Roczna** nie zostały wyświetlone w analizie wynagrodzeń. W przypadku tej aktualizacji analiza wynagrodzeń używa teraz wszystkich konwersji stawek wynagrodzeń. Gdy raporty są wykonywane według **Godzinowe** lub **Wynagrodzenie** , w filtrze **wynagrodzeń** są uwzględniane wszystkie konwersje stawek płacowych używające okresu innego niż godziny. Tylko stawki płacy z okresem **Godzinowe** są uwzględniane w filtrze **Godzinowym**. |
+| 467214 | **Analiza wynagrodzeń** jest wyświetlana tylko w przypadku, gdy dla **Nazwy konwersji stawki płac** jest ustawiona wartość **roczna** | Płacone stawki płacowe o nazwie innej niż **Roczna** nie zostały wyświetlone w analizie wynagrodzeń. W przypadku tej aktualizacji analiza wynagrodzeń używa teraz wszystkich konwersji stawek wynagrodzeń. Gdy raporty są wykonywane według **Godzinowe** lub **Wynagrodzenie**, w filtrze **wynagrodzeń** są uwzględniane wszystkie konwersje stawek płacowych używające okresu innego niż godziny. Tylko stawki płacy z okresem **Godzinowe** są uwzględniane w filtrze **Godzinowym**. |
 | 482464 | Podczas przeglądania **Eecenzji** widok **Szczegółów** nie zmienia się w widok siatki po zastosowaniu filtru | Po zastosowaniu filtru siatka przeglądy jest wyświetlana zgodnie z oczekiwaniami. |
 | 483184 | W module zasoby ludzkie nie są generowane naliczenia urlopu, jeśli zostanie wybrana opcja **Podstawa poziomu** jako **skorygowana data rozpoczęcia** w rekordzie **Rejestracja urlopów** |**Skorygowana data rozpoczęcia** jest wypełniana i używana podczas generowania naliczania urlopu.  |
 | 509731 | Czas wolny od żądania przyszłego zakończonego pracownika powoduje problem, jeśli są one stosowane do czasu wyłączenia po dacie zakończenia zatrudnienia | Żądania wolnego czasu mogą być wysyłane dla pracowników o przyszłej dacie zakończenia zatrudnienia, o ile wniosek jest wcześniejszy niż data zakończenia zatrudnienia. |
@@ -77,11 +79,11 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 
 Następujące nowe funkcje są zaplanowane w przyszłych wydaniach:
 
-- **Jednostki listy kontrolnej zawarte w Common Data Service** : Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+- **Jednostki listy kontrolnej zawarte w Common Data Service**: Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
 
-- **Kody przyczyn zarządzania korzyściami** : Kody przyczyn zarządzania korzyściami zostaną wkrótce połączone z istniejącymi kodami przyczyn w Human Resources. Jeśli kody przyczyn zostały utworzone w ramach zarządzania świadczeniami o długości przekraczającej 15 znaków, należy zmienić nazwę kodu przyczyny w formularzu **Kody przyczyn** na nazwę zawierającą 15 lub mniej znaków. Po zaktualizowaniu nazwy kod przyczyny pojawi się pod istniejącym formularzem w module Zarządzanie kadrami. Ta zmiana będzie dostępna w przyszłości i nie będzie miała wpływu na istniejącą funkcję.
+- **Kody przyczyn zarządzania korzyściami**: Kody przyczyn zarządzania korzyściami zostaną wkrótce połączone z istniejącymi kodami przyczyn w Human Resources. Jeśli kody przyczyn zostały utworzone w ramach zarządzania świadczeniami o długości przekraczającej 15 znaków, należy zmienić nazwę kodu przyczyny w formularzu **Kody przyczyn** na nazwę zawierającą 15 lub mniej znaków. Po zaktualizowaniu nazwy kod przyczyny pojawi się pod istniejącym formularzem w module Zarządzanie kadrami. Ta zmiana będzie dostępna w przyszłości i nie będzie miała wpływu na istniejącą funkcję.
 
-- **Łącza niestandardowe samoobsługi Menedżera** : do menedżerów pomocy technicznej są rozszerzane funkcje samoobsługi Menedżera. Dodajemy możliwość dodawania łączy niestandardowych na karcie **Mój zespół**. Ta funkcja jest podobna do funkcji łączy niestandardowych na karcie **Moje informacje** w module samoobsługi pracownika etatowego. Aby uzyskać więcej informacji, zajrzyj do [Niestandardowe linki w samoobsłudze menedżera](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Łącza niestandardowe samoobsługi Menedżera**: do menedżerów pomocy technicznej są rozszerzane funkcje samoobsługi Menedżera. Dodajemy możliwość dodawania łączy niestandardowych na karcie **Mój zespół**. Ta funkcja jest podobna do funkcji łączy niestandardowych na karcie **Moje informacje** w module samoobsługi pracownika etatowego. Aby uzyskać więcej informacji, zobacz [Niestandardowe linki w samoobsłudze menedżera](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
 Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2019 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 

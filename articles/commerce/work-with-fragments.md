@@ -18,11 +18,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
-ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4019571"
+ms.locfileid: "4415069"
 ---
 # <a name="work-with-fragments"></a>Praca z fragmentami 
 
@@ -62,10 +62,10 @@ Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego u
 
 1. Otwórz stronę lub szablon zawierający moduł, który chcesz przekonwertować na fragment.
 1. W okienku konturu z lewej strony lub bezpośrednio w wizualnym konstruktorze stron wybierz wcześniej skonfigurowany moduł.
-1. Wybierz wielokropek ( **...** ) obok nazwy modułu w panelu konspektu lub na pasku narzędzi wybranego modułu w wizualnym konstruktorze stron. 
+1. Wybierz wielokropek (**...**) obok nazwy modułu w panelu konspektu lub na pasku narzędzi wybranego modułu w wizualnym konstruktorze stron. 
 1. Wybierz **Udostępnij jako fragment**. 
 1. W oknie dialogowym **Zapisz jako fragment** wprowadź nazwę fragmentu.
-1. Wybierz przycisk **OK** , aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
+1. Wybierz przycisk **OK**, aby zapisać konfigurację modułu jako fragment, który można dodać do innych stron.
 <!-- The following image shows how to save a module configuration as a fragment.-->
 <!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
@@ -74,7 +74,7 @@ Aby przekonwertować poprzednio skonfigurowany moduł na fragment do ponownego u
 Aby utworzyć fragment w konstruktorze witryn Commerce, należy wykonać następujące kroki.
 
 1. W okienku nawigacji po lewej stronie zaznacz **Fragmenty**.
-1. Wybierz pozycję **Nowy**. Zostanie wyświetlone okno dialogowe **Nowy fragment** , w którym są wyświetlane wszystkie dostępne typy modułów. Jak wspomniano wcześniej, fragmenty można tworzyć z poziomu dowolnego typu modułu.
+1. Wybierz pozycję **Nowy**. Zostanie wyświetlone okno dialogowe **Nowy fragment**, w którym są wyświetlane wszystkie dostępne typy modułów. Jak wspomniano wcześniej, fragmenty można tworzyć z poziomu dowolnego typu modułu.
 1. Wybierz typ modułu dla danego fragmentu.
 
 <!-- The following image shows where to create a new fragment.-->
@@ -91,7 +91,7 @@ W poniższych procedurach opisano sposób dodawania, usuwania i edytowania fragm
 Aby dodać fragment do strony w konstruktorze witryn Commerce, należy wykonać następujące kroki.
 
 1. W panelu konturu po lewej stronie lub bezpośrednio w wizualnym konstruktorze stron wybierz kontener lub boks, do którego można dodać moduły podrzędne.
-1. Wybierz wielokropek ( **...** ) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używany wizualny konstruktor stron, należy wybrać symbol plus ( **+** ).  
+1. Wybierz wielokropek (**...**) obok nazwy kontenera lub gniazda.  Alternatywnie, jeśli jest używany wizualny konstruktor stron, należy wybrać symbol plus (**+**).  
 1. Wybierz opcję **Dodaj fragment**.
     <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
@@ -109,7 +109,7 @@ Aby dodać fragment do strony w konstruktorze witryn Commerce, należy wykonać 
 
 Aby usunąć fragment z gniazda lub kontenera na stronie w konstruktorze witryn Commerce, należy wykonać następujące kroki.
 
-1. W panelu konturu po lewej stronie wybierz wielokropek ( **...** ) obok nazwy fragmentu do usunięcia, a następnie wybierz symbol kosza.  Alternatywnie można wybrać fragment w wizualnym konstruktorze stron i wybrać symbol kosza na pasku narzędzi fragmentu.
+1. W panelu konturu po lewej stronie wybierz wielokropek (**...**) obok nazwy fragmentu do usunięcia, a następnie wybierz symbol kosza.  Alternatywnie można wybrać fragment w wizualnym konstruktorze stron i wybrać symbol kosza na pasku narzędzi fragmentu.
 1. Po wyświetleniu monitu o potwierdzenie zamiaru usunięcia fragmentu wybierz przycisk **OK**.
 
 > [!NOTE]

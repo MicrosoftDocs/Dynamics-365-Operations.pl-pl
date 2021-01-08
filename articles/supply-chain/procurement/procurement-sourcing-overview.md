@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a7de9430ddcc2499627bacfa01b4dc7fd5546a4d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018889"
+ms.locfileid: "4435550"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 
@@ -41,7 +41,7 @@ Popyt na produkty i usługi może wynika z *zapotrzebowania* — na przykład je
 
 Dział zaopatrzenia identyfikuje dostawców dla wymaganych produktów i usług, i może to być związane z wysłaniem *zapytania ofertowego* do wielu potencjalnych dostawców. Istnieje możliwość udostępniania specyfikacji żądanego produktu i potencjalni dostawcy można je wyświetlić, jeśli są w stanie dostarczyć produkt, który jest z nimi zgodny. Dostawcy odsyłają oferty, a dział zaopatrzenia przegląda je i dokonuje ostatecznego wyboru dostawcy.  
 
-Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawcy mogą korzystać z portalu **Dostawca** , funkcja zapytań o zakupy jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  
+Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wysłać do dostawcy *zapytanie dotyczące zakupu*. Pomaga ono w ustalaniu różnego rodzaju warunków, takich jak ceny, rabaty i data dostawcy dla zamówienia. Jeśli dostawcy mogą korzystać z portalu **Dostawca**, funkcja zapytań o zakupy jest wyłączona. Zamiast tego zamówienie jest udostępniane w portalu **Dostawca** i gdy *prośba o potwierdzenie* jest wysyłana, dostawca może bezpośrednio potwierdzić zamówienie.  
 
 *Katalogi dostawcy* mogą być używane do zbierania informacji o asortymencie produktów, który dostawca może dostarczyć. Dostawcy mogą publikować własne katalogi, co ułatwia aktualizowanie oferty. Do produktu można dołączyć *listę zatwierdzonych dostawców* i może ona ułatwić w wyborze dostawcy podczas otwierania nowych zamówień zakupu i zapobiegać korzystaniu z usług niepożądanych dostawców.
 
@@ -56,7 +56,7 @@ Zamiast złożonego zapytania ofertowego w ramach zamówienia zakupu można wys�
 
 Zamówienia zakupu, które są skonfigurowane przy użyciu *przepływów pracy zakupów* wymagają zatwierdzenia przed zarejestrowaniem. Jest to konieczne do dalszego przetwarzania zamówienia.
 
-Zamówienia zakupu są *potwierdzane* , tak aby odzwierciedlały umowę zawartą z dostawcą. Zamówienia zakupu będą następnie stopniowo przetwarzane w różnych stanach, aż zostaną ostatecznie zafakturowane lub anulowane.  
+Zamówienia zakupu są *potwierdzane*, tak aby odzwierciedlały umowę zawartą z dostawcą. Zamówienia zakupu będą następnie stopniowo przetwarzane w różnych stanach, aż zostaną ostatecznie zafakturowane lub anulowane.  
 
 Podczas tworzenia zamówienia zakupu wiele pól jest wstępnie wypełnianych wartościami z domyślnych informacji o dostawcy przechowywanych na stronie **Dostawcy**. Oznacza to, że trzeba wypełnić tylko niektóre pola konieczne w zamówieniu zakupu, ale można też zamienić wprowadzone automatycznie wartości domyślne.
 
@@ -66,7 +66,7 @@ Ceny i rabaty zawierają informacje o cenach, rabatach i warunkach rabatów. Cen
 
 ### <a name="delivery-options"></a>Opcje dostawy
 
-Dostępne są różne opcje dla procesu dostawy skojarzonego z zamówieniem zakupu. Zamówione produkty można podzielić na harmonogramy *dostaw* , w których części zamówionej ilości mogą zostać zaplanowane dla dostawy z różnymi datami. Można również uwzględnić dostawy *dostawę bezpośrednią* inicjowaną z poziomu zamówienia sprzedaży, który automatyzuje generowanie dokumentu dostawy na zamówieniu sprzedaży, w tym samym czasie, gdy dokument przyjęcia produktu jest rejestrowany w zamówieniu zakupu. Zamówienia zakupu mogą także być częścią łańcucha *zamówienia międzyfirmowego* , zwanego także międzyfirmowym zamówieniem zakupu, w którym produkty zamawia się z pasującego międzyfirmowego zamówienia sprzedaży. W takiej sytuacji niektóre kroki są wykonywane automatycznie między dwoma powiązanymi zamówieniami międzyfirmowymi.
+Dostępne są różne opcje dla procesu dostawy skojarzonego z zamówieniem zakupu. Zamówione produkty można podzielić na harmonogramy *dostaw*, w których części zamówionej ilości mogą zostać zaplanowane dla dostawy z różnymi datami. Można również uwzględnić dostawy *dostawę bezpośrednią* inicjowaną z poziomu zamówienia sprzedaży, który automatyzuje generowanie dokumentu dostawy na zamówieniu sprzedaży, w tym samym czasie, gdy dokument przyjęcia produktu jest rejestrowany w zamówieniu zakupu. Zamówienia zakupu mogą także być częścią łańcucha *zamówienia międzyfirmowego*, zwanego także międzyfirmowym zamówieniem zakupu, w którym produkty zamawia się z pasującego międzyfirmowego zamówienia sprzedaży. W takiej sytuacji niektóre kroki są wykonywane automatycznie między dwoma powiązanymi zamówieniami międzyfirmowymi.
 
 ### <a name="supplementary-items"></a>Pozycje dodatkowe
 
@@ -86,7 +86,7 @@ Przyjęcie produktów może spowodować automatyczne zużycie w określonym celu
 
 *Faktury od dostawcy* można najpierw zarejestrować w *rejestrze faktur* niezależnie od zamówienia zakupu, a następnie zatwierdzać je jako rekord względem zamówienia zakupu. Rejestrowanie faktur od dostawcy z zamówieniem zakupu obejmuje uzgadnianie dokumentu przyjęcia produktów z fakturą.  
 
-Dla zamówienia zakupu można określić *Zasady podziału księgowań* , aby opisać sposób księgowania. Można także określić sposób uzyskiwania alokacji środków budżetu, o ile jest on uwzględniony w konfiguracji.  
+Dla zamówienia zakupu można określić *Zasady podziału księgowań*, aby opisać sposób księgowania. Można także określić sposób uzyskiwania alokacji środków budżetu, o ile jest on uwzględniony w konfiguracji.  
 
 Zafakturowane zamówienia zakupu zarejestrują zobowiązanie na koncie dostawcy w ramach rozrachunków z dostawcami i z tego miejsca będzie można przetworzyć *płatność dostawcy*.
 

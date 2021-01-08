@@ -20,11 +20,11 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: ec64cb8a7c490c6798a897fd20a56e5af5c8be3a
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057944"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414860"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 

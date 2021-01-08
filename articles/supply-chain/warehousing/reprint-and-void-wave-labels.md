@@ -4,7 +4,7 @@ description: W tym temacie wyjaśniono sposób unieważnienia i ponownego drukow
 author: GarmMSFT
 manager: PJacobse
 ms.date: 07/09/2020
-ms.topic: reprint-and-void-wave-labels
+ms.topic: article
 ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: af92334af28824b3fcebde5f046bd7c6da459885
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016661"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4435666"
 ---
 # <a name="reprint-and-void-wave-labels"></a>ponowne drukowanie i unieważnienie etykiet grup czynności
 
@@ -42,7 +42,7 @@ W tym temacie przedstawiono zbiór scenariuszy przedstawiających, za pomocą pr
 
 ## <a name="scenario-1-reprint-labels-from-the-web-client"></a>Scenariusz 1: ponowne drukowanie etykiet od klienta sieci Web
 
-Etykiety grupy czynności można przeglądać i ponownie drukować z następujących stron. W okienku akcji na każdej stronie na karcie **Wysyłki** , w grupie **Informacje pokrewne** wybierz **Etykiety grupy czynności**.
+Etykiety grupy czynności można przeglądać i ponownie drukować z następujących stron. W okienku akcji na każdej stronie na karcie **Wysyłki**, w grupie **Informacje pokrewne** wybierz **Etykiety grupy czynności**.
 
 - Wszystkie wysyłki \> Szczegóły wysyłki
 - Wszystkie ładunki \> Szczegóły ładunku
@@ -61,9 +61,9 @@ Aby ponownie wydrukować etykietę grupy czynności na kliencie sieci Web, wykon
     - Aby zaktualizować etykietę, zaznacz pole wyboru **Aktualizuj szczegóły etykiety grupy czynności**. (Pozostaw to pole wyboru wyczyszczone, jeśli chcesz tylko ponownie wydrukować poprzednią etykietę.)
 
     > [!NOTE]
-    > Za każdym razem, gdy etykieta grupy czynności jest drukowana lub ponownie drukowana, jej dane są konwertowane za pomocą odpowiedniego układu etykietek, a wszystkie symbole zastępcze są zastępowane wartościami rzeczywistymi. Ciąg wynikowy jest przechowywany jako rekord w historii etykiet grupy czynności. Jeśli pole wyboru **Aktualizuj szczegóły etykiety grupy czynności** jest wyczyszczone, zapisane dane języka programowania Zebra (ZPL) są używane podczas ponownego drukowania etykiety. Jeśli zaznaczono pole wyboru **Aktualizuj szczegóły etykiety grupy czynności** , generowany jest nowy ciąg. Istniejące etykiety grupy czynności są również ponownie obliczane, a wszystkie nadmiarowe etykiety (na przykład, jeśli powiązane z nimi wiersze pracy zostały anulowane lub zmodyfikowane) są oznaczane jako **Unieważnione** i nie są ponownie drukowane.
+    > Za każdym razem, gdy etykieta grupy czynności jest drukowana lub ponownie drukowana, jej dane są konwertowane za pomocą odpowiedniego układu etykietek, a wszystkie symbole zastępcze są zastępowane wartościami rzeczywistymi. Ciąg wynikowy jest przechowywany jako rekord w historii etykiet grupy czynności. Jeśli pole wyboru **Aktualizuj szczegóły etykiety grupy czynności** jest wyczyszczone, zapisane dane języka programowania Zebra (ZPL) są używane podczas ponownego drukowania etykiety. Jeśli zaznaczono pole wyboru **Aktualizuj szczegóły etykiety grupy czynności**, generowany jest nowy ciąg. Istniejące etykiety grupy czynności są również ponownie obliczane, a wszystkie nadmiarowe etykiety (na przykład, jeśli powiązane z nimi wiersze pracy zostały anulowane lub zmodyfikowane) są oznaczane jako **Unieważnione** i nie są ponownie drukowane.
 
-1. Wybierz przycisk **OK** , aby potwierdzić wybór opcji.
+1. Wybierz przycisk **OK**, aby potwierdzić wybór opcji.
 
 ## <a name="scenario-2-reprint-labels-from-the-warehousing-app"></a>Scenariusz 2: ponowne drukowanie etykiet z aplikacji magazynowania
 
@@ -96,7 +96,7 @@ Wykonaj poniższe kroki, aby utworzyć nową kolekcję elementów menu służąc
     - **Etykieta grup systemowych:** *Identyfikator wysyłki*
     - **Tryb drukowania:** *Produkt*
 
-1. W okienku akcji wybierz opcję **Lista pól** , aby otworzyć stronę, na której możesz wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu właściwego rolki etykiety.
+1. W okienku akcji wybierz opcję **Lista pól**, aby otworzyć stronę, na której możesz wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu właściwego rolki etykiety.
 1. Można wyświetlić maksymalnie siedem pól. Listy rozwijane służą do wybierania pola wyświetlanego w poszczególnych dostępnych stanowiskach. Pozostaw wszystkie pola, które nie są wymagane jako puste. 
 
     Oto przykład:
@@ -118,7 +118,7 @@ Wykonaj poniższe kroki, aby utworzyć nową kolekcję elementów menu służąc
     - **Etykieta grup systemowych:** *Identyfikator wysyłki*
     - **Tryb drukowania:** *Wyliczenie*
 
-1. W okienku akcji wybierz opcję **Lista pól** , a następnie użyj list rozwijanych, aby wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu odpowiedniej rolki etykiety (na przykład *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* i *NumberOfLabels* ).
+1. W okienku akcji wybierz opcję **Lista pól**, a następnie użyj list rozwijanych, aby wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu odpowiedniej rolki etykiety (na przykład *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* i *NumberOfLabels*).
 1. Zamknij stronę.
 1. Utwórz czwarty element menu i określ dla niego następujące wartości:
 
@@ -131,7 +131,7 @@ Wykonaj poniższe kroki, aby utworzyć nową kolekcję elementów menu służąc
     - **Etykieta grup systemowych:** *Identyfikator wysyłki*
     - **Tryb drukowania:** *Ostatni dobry identyfikator etykiety grupy czynności*
 
-1. W okienku akcji wybierz opcję **Lista pól** , a następnie użyj list rozwijanych, aby wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu odpowiedniej rolki etykiety (na przykład *LabelItemId* , *LabelItemName* , *InventQty* , *LabelUnitId* i *NumberOfLabels* ).
+1. W okienku akcji wybierz opcję **Lista pól**, a następnie użyj list rozwijanych, aby wybrać pola, które będą wyświetlane, aby pomóc pracownikom w zidentyfikowaniu odpowiedniej rolki etykiety (na przykład *LabelItemId*, *LabelItemName*, *InventQty*, *LabelUnitId* i *NumberOfLabels*).
 1. Zamknij stronę.
 
 #### <a name="set-up-the-mobile-device-menu"></a>Konfigurowanie menu urządzenia przenośnego
@@ -158,7 +158,7 @@ Przed rozpoczęciem pracy z tymi przypadkami użycia należy wprowadzić następ
 1. Przejdź do **Wychodzące \> Ponownie drukuj jedną etykietę grupy czynności**.
 1. Wprowadź lub zeskanuj identyfikator etykiety grupy czynności.
 1. Wybierz drukarkę, na której chcesz wydrukować ponownie.
-1. Wybierz przycisk **OK** , aby zatwierdzić akcję.
+1. Wybierz przycisk **OK**, aby zatwierdzić akcję.
 
 #### <a name="use-case-22-several-labels-for-boxes-of-the-same-item-were-damaged-and-must-be-reprinted-each-label-has-a-product-bar-code-but-no-enumeration-or-sscc-number"></a>Przypadek użycia 2.2: Kilka etykiet dla pól tego samego towaru zostało uszkodzonych i trzeba je wydrukować ponownie. Każda etykieta ma kod kreskowy produktu, ale nie ma wyliczenia ani numeru SSCC.
 
@@ -169,7 +169,7 @@ Przed rozpoczęciem pracy z tymi przypadkami użycia należy wprowadzić następ
 1. Zeskanuj kod kreskowy produktu z istniejącej etykiety, aby potwierdzić, że wybrano poprawny wiersz.
 1. Wprowadź liczbę etykiet do ponownego wydrukowania.
 1. Wybierz drukarkę, na której chcesz wydrukować ponownie.
-1. Wybierz przycisk **OK** , aby zatwierdzić akcję.
+1. Wybierz przycisk **OK**, aby zatwierdzić akcję.
 
 #### <a name="use-case-23-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-because-the-labels-have-enumeration-you-can-define-the-carton-range-to-reprint"></a>Przypadek użycia 2.3: Kilka etykiet na pudełka nie zostało wydrukowanych z powodu zacięcia się drukarki. Ponieważ etykiety zawierają wyliczenie, można zdefiniować zakres kartonów do ponownego wydrukowania.
 
@@ -180,7 +180,7 @@ Przed rozpoczęciem pracy z tymi przypadkami użycia należy wprowadzić następ
 1. Wprowadź pierwszy karton, dla którego chcesz ponownie wydrukować etykietę.
 1. Wprowadź ostatni karton, dla którego chcesz ponownie wydrukować etykietę. Możesz również pozostawić to pole puste, aby wydrukować etykiety wszystkich kartonów po określonym pierwszym kartonie.
 1. Wybierz drukarkę, na której chcesz wydrukować ponownie.
-1. Wybierz przycisk **OK** , aby zatwierdzić akcję.
+1. Wybierz przycisk **OK**, aby zatwierdzić akcję.
 
 #### <a name="use-case-24-several-labels-for-boxes-werent-printed-because-of-a-printer-jam-the-last-good-label-has-a-wave-label-id-that-is-printed-as-a-bar-code"></a>Przypadek użycia 2.4: Kilka etykiet na pudełka nie zostało wydrukowanych z powodu zacięcia się drukarki. Ostatnia dobra etykieta ma identyfikator etykiety grupy czynności, który jest drukowany jako kod kreskowy.
 
@@ -191,7 +191,7 @@ Przed rozpoczęciem pracy z tymi przypadkami użycia należy wprowadzić następ
 1. Wprowadź lub zeskanuj identyfikator etykiety grupy czynności ostatniej dobrej etykiety grupy czynności. Aplikacja identyfikuje następną etykietę w sekwencji jako pierwszy karton, dla którego zostanie wydrukowana etykieta.
 1. Wprowadź ostatni karton, dla którego chcesz ponownie wydrukować etykietę. Możesz również pozostawić to pole puste, aby wydrukować etykiety wszystkich kartonów po określonym pierwszym kartonie.
 1. Wybierz drukarkę, na której chcesz wydrukować ponownie.
-1. Wybierz przycisk **OK** , aby zatwierdzić akcję.
+1. Wybierz przycisk **OK**, aby zatwierdzić akcję.
 
 ## <a name="scenario-3-short-pick-and-reprint"></a>Scenariusz 3: Krótkie pobranie i ponowne wydrukowanie
 

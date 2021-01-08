@@ -16,11 +16,11 @@ ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
 ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012502"
+ms.locfileid: "4435532"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
 
@@ -45,8 +45,8 @@ Aby określić konfigurację i filtry zadań dla urządzenia, należy zalogować
 1. Wybierz co najmniej jeden filtr, który zostanie zastosowany do bieżącego urządzenia. Te filtry pomogą zagwarantować, że na urządzeniu będą widoczne tylko odpowiednie zadania. Aby zdefiniować filtr, wybierz typ filtra, aby otworzyć listę wartości, a następnie wybierz wartość, która ma być filtrowana. Dostępne są następujące filtry:
 
     - **Jednostka produkcyjna** — ten filtr jest filtrem najwyższego poziomu. Zazwyczaj odnosi się do dużego obszaru roboczego, w którym istnieje kilka grup zasobów i pojedynczych zasobów.
-    - **Grupa zasobów** — ten filtr jest filtrem na poziomie średnim. Zazwyczaj odwołuje się do kolekcji powiązanych zasobów w ograniczonym obszarze obszaru roboczego. Jeśli najpierw zostanie wybrany filtr **Jednostki produkcyjnej** , lista grup zasobów będzie wyświetlać tylko grupy z tej jednostki. W przeciwnym razie pokazuje on wszystkie dostępne grupy zasobów.
-    - **Zasób** — ten filtr jest najbardziej konkretnym filtrem. Zazwyczaj odnosi się do określonej maszyny lub innego pojedynczego zasobu. Jeśli wybierzesz najpierw filtr **Grupa zasobów**  i/lub **Jednostka produkcyjna** , lista zasobów będzie zawierała tylko zasoby z tej grupy i/lub jednostki. W przeciwnym razie pokazuje on wszystkie dostępne zasoby.
+    - **Grupa zasobów** — ten filtr jest filtrem na poziomie średnim. Zazwyczaj odwołuje się do kolekcji powiązanych zasobów w ograniczonym obszarze obszaru roboczego. Jeśli najpierw zostanie wybrany filtr **Jednostki produkcyjnej**, lista grup zasobów będzie wyświetlać tylko grupy z tej jednostki. W przeciwnym razie pokazuje on wszystkie dostępne grupy zasobów.
+    - **Zasób** — ten filtr jest najbardziej konkretnym filtrem. Zazwyczaj odnosi się do określonej maszyny lub innego pojedynczego zasobu. Jeśli wybierzesz najpierw filtr **Grupa zasobów**  i/lub **Jednostka produkcyjna**, lista zasobów będzie zawierała tylko zasoby z tej grupy i/lub jednostki. W przeciwnym razie pokazuje on wszystkie dostępne zasoby.
 
 1. Kliknij przycisk **OK**.
 1. Zostanie wyświetlona strona logowania, a urządzenie jest gotowe do użycia.

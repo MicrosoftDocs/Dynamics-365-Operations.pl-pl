@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a71ea3983018b136d4fe3b22eadc0c332d2a698
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016454"
+ms.locfileid: "4435593"
 ---
 # <a name="set-up-shipping-carriers"></a>Konfigurowanie firm przewozowych
 
@@ -42,7 +42,7 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 1. Przełącz rozwinięcie sekcji **Przegląd**.
 2. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj firmę przewozową**.
 3. W polu **Konto dostawcy** wybierz opcję z menu rozwijanego. Wybierz konto dostawcy, do którego chcesz przypisać firmę przewozową.  
-4. W polu **Typ metody płatności** za transport wybierz opcję. Wybierz opcję **Ręczne** , aby użyć strony Metoda płatności za transport, lub opcję **EDI** , aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).  
+4. W polu **Typ metody płatności** za transport wybierz opcję. Wybierz opcję **Ręczne**, aby użyć strony Metoda płatności za transport, lub opcję **EDI**, aby zaktualizować metodę płatności na elektroniczną wymianę danych (EDI).  
 5. Zaznacz lub usuń zaznaczenie pola wyboru **Aktywuj oceny przewoźników**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Tworzenie niezbędnych usług dla firmy przewozowej

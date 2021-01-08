@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017651"
+ms.locfileid: "4435551"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
 
@@ -63,21 +63,21 @@ Aby określić wymaganą elastyczność w zachowaniu rezerwacji partii dla towar
 
 ![Uczynienie hierarchii rezerwacji zapasów elastyczną](media/Flexible-inventory-reservation-hierarchy.png)
 
-W przypadku wybrania poziomu **Numeru partii** w hierarchii wszystkie wymiary powyżej tego poziomu i na poziomie **Lokalizacji** zostaną wybrane automatycznie. (Domyślnie zaznaczone są wszystkie wymiary powyżej poziomu **Lokalizacji** ). To zachowanie odzwierciedla logikę, w której wszystkie wymiary w zakresie między numerem partii i lokalizacją są również automatycznie rezerwowane po zarezerwowaniu określonego numeru partii w wierszu zamówienia.
+W przypadku wybrania poziomu **Numeru partii** w hierarchii wszystkie wymiary powyżej tego poziomu i na poziomie **Lokalizacji** zostaną wybrane automatycznie. (Domyślnie zaznaczone są wszystkie wymiary powyżej poziomu **Lokalizacji**). To zachowanie odzwierciedla logikę, w której wszystkie wymiary w zakresie między numerem partii i lokalizacją są również automatycznie rezerwowane po zarezerwowaniu określonego numeru partii w wierszu zamówienia.
 
 > [!NOTE]
 > Pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dotyczy tylko poziomów hierarchii rezerwacji poniżej wymiaru lokalizacji magazynowej.
 >
 > **Numer partii** i **Numer identyfikacyjny** są jedynymi poziomami hierarchii otwartymi dla elastycznych zasad rezerwacji. Innymi słowy, nie można zaznaczyć pola wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dla **Lokalizacji** lub poziomu **Numeru identyfikacyjnego**.
 >
-> Jeśli hierarchia rezerwacji zawiera wymiar numeru seryjnego (który musi być zawsze poniżej poziomu **numeru partii** ), a w przypadku rezerwacji specyficznej dla danej partii dla numeru partii, system będzie kontynuował obsługę rezerwacji numerów seryjnych i operacji pobrania na podstawie reguł dotyczących zasad rezerwacji „Numer poniżej\[lokalizacji\]”.
+> Jeśli hierarchia rezerwacji zawiera wymiar numeru seryjnego (który musi być zawsze poniżej poziomu **numeru partii**), a w przypadku rezerwacji specyficznej dla danej partii dla numeru partii, system będzie kontynuował obsługę rezerwacji numerów seryjnych i operacji pobrania na podstawie reguł dotyczących zasad rezerwacji „Numer poniżej\[lokalizacji\]”.
 
-W dowolnym momencie można zezwolić na przetwarzanie specyficznego przetwarzania wsadowego istniejącej hierarchii rezerwacji „Lokalizacja towaru\[poniżej\]” w rozmieszczeniu. Ta zmiana nie wpłynie na rezerwacje i otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na zamówienie popytu** , jeśli dla jednego lub większej liczby towarów skojarzonych z tą hierarchią rezerwacji istnieją transakcje magazynowe typu **zamówione** , **zarezerwowane fizycznie** lub **zamówione**.
+W dowolnym momencie można zezwolić na przetwarzanie specyficznego przetwarzania wsadowego istniejącej hierarchii rezerwacji „Lokalizacja towaru\[poniżej\]” w rozmieszczeniu. Ta zmiana nie wpłynie na rezerwacje i otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na zamówienie popytu**, jeśli dla jednego lub większej liczby towarów skojarzonych z tą hierarchią rezerwacji istnieją transakcje magazynowe typu **zamówione**, **zarezerwowane fizycznie** lub **zamówione**.
 
 > [!NOTE]
 > Jeśli istniejąca hierarchia rezerwacji dla towaru nie zezwala na specyfikację partii w zamówieniu, można ją ponownie przypisać do hierarchii rezerwacji, która pozwala na określenie partii, pod warunkiem że struktura poziomu hierarchii jest taka sama w obu hierarchiach. Aby wykonać ponowne przypisanie, należy skorzystać z funkcji **Zmień rezerwację pozycji**. Ta zmiana może być odpowiednia, jeśli chcesz zapobiec elastycznej rezerwacji wsadowej dla podzestawu pozycji śledzonych wsadowo, ale zezwól na to w pozostałej części teczki produktów.
 
-Niezależnie od tego, czy zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu zapotrzebowania** , jeśli nie chcesz zarezerwować określonego numeru partii dla towaru w wierszu zamówienia, będzie nadal obowiązywała domyślna logika operacji magazynowych obowiązująca dla hierarchii rezerwacji "lokalizacja towaru \[poniżej\]”.
+Niezależnie od tego, czy zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu zapotrzebowania**, jeśli nie chcesz zarezerwować określonego numeru partii dla towaru w wierszu zamówienia, będzie nadal obowiązywała domyślna logika operacji magazynowych obowiązująca dla hierarchii rezerwacji "lokalizacja towaru \[poniżej\]”.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Rezerwacja określonego numeru partii dla zamówienia odbiorcy
 
@@ -102,9 +102,9 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
 1. Przejdź do **Ustawień magazynu** \> **Ustawień** \> **Zapasów \> Hierarchii rezerwacji**.
 2. Wybierz pozycję **Nowy**.
-3. W polu **Nazwa** wprowadź nazwę (na przykład **BatchFlex** ).
-4. W polu **Opis** wprowadź opis (np. **Lokalizacja towaru poniżej dynamicznie** ).
-5. W **Zaznaczonym** polu wybierz opcję **Numer seryjny** i **Właściciel** , a następnie wybierz przycisk strzałka w lewo, aby przenieść je do **Dostępnego** pola.
+3. W polu **Nazwa** wprowadź nazwę (na przykład **BatchFlex**).
+4. W polu **Opis** wprowadź opis (np. **Lokalizacja towaru poniżej dynamicznie**).
+5. W **Zaznaczonym** polu wybierz opcję **Numer seryjny** i **Właściciel**, a następnie wybierz przycisk strzałka w lewo, aby przenieść je do **Dostępnego** pola.
 6. Kliknij przycisk **OK**.
 7. W wierszu dla poziomu wymiaru **numer partii** zaznacz pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu**. **Numery identyfikacyjne** i **numery lokalizacji** są wybierane automatycznie i nie można wyczyścić tych pól wyboru.
 8. Wybierz opcję **Zapisz**.
@@ -132,21 +132,21 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 2. Wybierz pozycję **Nowy**.
 3. W nagłówku zamówienia sprzedaży w sekcji **Konto odbiorcy** wprowadź **US-003**.
 4. Dodaj wiersz dla nowego produktu i wprowadź **10** jako ilość. Upewnij się, że pole **Magazyn** zawiera wartość **24**.
-5. W skróconej karcie **Wiersz zamówienia sprzedaży** wybierz pozycję **Zapasy** , a następnie w grupie **Obsługa** wybierz opcję **Rezerwacja partii**. Na stronie **Rezerwacja partii** jest wyświetlana lista partii dostępnych do rezerwacji dla wiersza zamówienia. W tym przykładzie przedstawiono ilość **20** dla numeru partii **B11** i ilość **10** dla numeru partii **B22**. Należy pamiętać, że nie można uzyskać dostępu do strony **rezerwacja partii** z wiersza, jeśli towar w tym wierszu jest skojarzony z hierarchią rezerwacji "Lokalizacja towaru\[poniżej\], chyba że jest skonfigurowany tak, aby zezwalać na rezerwacje specyficzne dla danej partii.
+5. W skróconej karcie **Wiersz zamówienia sprzedaży** wybierz pozycję **Zapasy**, a następnie w grupie **Obsługa** wybierz opcję **Rezerwacja partii**. Na stronie **Rezerwacja partii** jest wyświetlana lista partii dostępnych do rezerwacji dla wiersza zamówienia. W tym przykładzie przedstawiono ilość **20** dla numeru partii **B11** i ilość **10** dla numeru partii **B22**. Należy pamiętać, że nie można uzyskać dostępu do strony **rezerwacja partii** z wiersza, jeśli towar w tym wierszu jest skojarzony z hierarchią rezerwacji "Lokalizacja towaru\[poniżej\], chyba że jest skonfigurowany tak, aby zezwalać na rezerwacje specyficzne dla danej partii.
 
     > [!NOTE]
     > Aby zarezerwować określoną partię dla zamówienia sprzedaży, należy skorzystać ze strony **Rezerwacja partii**.
     >
     > Jeśli numer partii zostanie wprowadzony bezpośrednio w wierszu zamówienia sprzedaży, system zatrzyma się, tak jakby wprowadzono określoną wartość partii towaru, która podlega zasadom rezerwacji „Lokalizacja towaru\[poniżej\]”. Po zapisaniu wiersza pojawi się komunikat ostrzegawczy. Jeśli użytkownik potwierdzi, że numer partii ma być określony bezpośrednio w wierszu zamówienia, wiersz nie będzie obsługiwany przez zwykłą logikę zarządzania magazynem.
     >
-    > Jeśli zarezerwujesz ilość na stronie **Rezerwacja** , nie zostanie zarezerwowana żadna określona partia, a wykonywanie operacji magazynowych dla wiersza będzie odbywać się zgodnie z regułami dotyczącymi rezerwacji w obszarze „Lokalizacja towaru\[poniżej\]”.
+    > Jeśli zarezerwujesz ilość na stronie **Rezerwacja**, nie zostanie zarezerwowana żadna określona partia, a wykonywanie operacji magazynowych dla wiersza będzie odbywać się zgodnie z regułami dotyczącymi rezerwacji w obszarze „Lokalizacja towaru\[poniżej\]”.
 
     Na ogół ta strona działa i jest współdziałana w taki sam sposób, w jaki działa i jest aktywnie związana z elementami, które mają skojarzoną hierarchię rezerwacji dla typu „Lokalizacja towaru\[powyżej\]”. Obowiązują jednak następujące wyjątki:
 
-    - Numery **Partii przekazane do wiersza źródłowego** skróconej karcie są wyświetlane zgodnie z numerami partii, które są zarezerwowane dla danego wiersza zamówienia. Wartości partii w siatce będą wyświetlane w cyklu realizacji wiersza zamówienia, w tym w etapach przetwarzania magazynu. Z drugiej strony, na **Przeglądowej** karcie skróconej, zwykła rezerwacja wiersza zamówienia (czyli rezerwacja wykonana dla wymiarów powyżej poziomu **Lokalizacji** ) jest wyświetlana w siatce w górę do momentu utworzenia pracy magazynowej. Jednostka pracy przejmuje wówczas rezerwację wiersza, a rezerwacja wiersza nie jest już wyświetlana na stronie. **Numery partii przekazane do wiersza źródłowego** na skróconej karcie ułatwiają zagwarantowanie, że moduł przetwarzający zamówienia sprzedaży może wyświetlić numery partii, które zostały przekazane do zamówienia odbiorcy w dowolnym momencie, w trakcie fakturowania.
+    - Numery **Partii przekazane do wiersza źródłowego** skróconej karcie są wyświetlane zgodnie z numerami partii, które są zarezerwowane dla danego wiersza zamówienia. Wartości partii w siatce będą wyświetlane w cyklu realizacji wiersza zamówienia, w tym w etapach przetwarzania magazynu. Z drugiej strony, na **Przeglądowej** karcie skróconej, zwykła rezerwacja wiersza zamówienia (czyli rezerwacja wykonana dla wymiarów powyżej poziomu **Lokalizacji**) jest wyświetlana w siatce w górę do momentu utworzenia pracy magazynowej. Jednostka pracy przejmuje wówczas rezerwację wiersza, a rezerwacja wiersza nie jest już wyświetlana na stronie. **Numery partii przekazane do wiersza źródłowego** na skróconej karcie ułatwiają zagwarantowanie, że moduł przetwarzający zamówienia sprzedaży może wyświetlić numery partii, które zostały przekazane do zamówienia odbiorcy w dowolnym momencie, w trakcie fakturowania.
     - Oprócz rezerwowania konkretnej partii użytkownik może ręcznie wybrać lokalizację i numer identyfikacyjny danej partii, zamiast zezwalać na automatyczne wybieranie numeru identyfikacyjnego danej partii. Ta możliwość jest związana z projektem mechanizmu rezerwacji partii zakontraktowanego zamówienia. Tak jak wspomniano wcześniej, aby zezwolić na rezerwację określonego numeru partii towaru w zasadzie rezerwacji „Lokalizacja towaru\[poniżej\]”, system musi zarezerwować wszystkie wymiary w górę w lokalizacji. Z tego względu prace magazynowe będą miały te same wymiary magazynowe, które zostały zarezerwowane przez użytkowników pracujących z tymi zamówieniami i nie zawsze będą reprezentować położenie magazynu towarów, które jest wygodne, a nawet możliwe dla operacji pobierania. Jeśli przetwórcy zamówień są świadomi ograniczeń magazynowych, może zaistnieć potrzeba ręcznego wybrania konkretnych lokalizacji i numerów identyfikacyjnych podczas rezerwowania partii. W takim przypadku użytkownik musi skorzystać z funkcji **wymiarów wyświetlanych** w nagłówku strony i musi dodać lokalizację i numer identyfikacyjny w siatce w skróconej karcie **Przegląd**.
 
-6. Na stronie **rezerwacja partii** wybierz wiersz dla **B11** wsadowego, a następnie wybierz opcję **wiersz rezerwy**. Podczas automatycznej rezerwacji nie ma żadnej wskazanej logiki do przypisywania lokalizacji i numerów identyfikacyjnych. Ilość można wprowadzić ręcznie w polu **rezerwacja**. Zwróć uwagę, że w przypadku skróconej karty **numerów partii przekazanych do wiersza źródłowego** , zestaw **B11** jest wyświetlany jako **Zatwierdzony**.
+6. Na stronie **rezerwacja partii** wybierz wiersz dla **B11** wsadowego, a następnie wybierz opcję **wiersz rezerwy**. Podczas automatycznej rezerwacji nie ma żadnej wskazanej logiki do przypisywania lokalizacji i numerów identyfikacyjnych. Ilość można wprowadzić ręcznie w polu **rezerwacja**. Zwróć uwagę, że w przypadku skróconej karty **numerów partii przekazanych do wiersza źródłowego**, zestaw **B11** jest wyświetlany jako **Zatwierdzony**.
 
     ![Zatwierdzanie określonego numeru partii do wiersza zamówienia sprzedaży na stronie rezerwacja partii](media/Batch-reservation-form-with-order-committed-reservation.png)
 
@@ -161,14 +161,14 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
 8. Umożliwia przejrzenie transakcji magazynowych dotyczących danego towaru, które są powiązane z rezerwacją wiersza zamówienia sprzedaży.
 
-    - Transakcja, w której pole **Odwołania** jest ustawione na **Zamówienie** sprzedaży, a **Rozchód** ma wartość **Fizycznie zarezerwowane** , oznacza rezerwę wiersza zamówienia dla wymiarów magazynowych powyżej poziomu **lokalizacji**. Zgodnie z hierarchią rezerwacji zapasów danego towaru, wymiary te to oddział, magazyn i stan zapasów.
-    - Transakcja, w której pole **Odwołania** jest ustawione na **Rezerwacja-zamówienie sprzedaży** , a pole **Wydanie** ma wartość **Fizycznie zarezerwowane** , oznacza rezerwę wiersza zamówienia dla danej partii towaru i wszystkich zapasów ponad nią. Zgodnie z hierarchią rezerwacji zapasów danego towaru, wymiary te to numer partii oraz lokalizacja. W tym przykładzie lokalizacja to **Bulk-001**.
+    - Transakcja, w której pole **Odwołania** jest ustawione na **Zamówienie** sprzedaży, a **Rozchód** ma wartość **Fizycznie zarezerwowane**, oznacza rezerwę wiersza zamówienia dla wymiarów magazynowych powyżej poziomu **lokalizacji**. Zgodnie z hierarchią rezerwacji zapasów danego towaru, wymiary te to oddział, magazyn i stan zapasów.
+    - Transakcja, w której pole **Odwołania** jest ustawione na **Rezerwacja-zamówienie sprzedaży**, a pole **Wydanie** ma wartość **Fizycznie zarezerwowane**, oznacza rezerwę wiersza zamówienia dla danej partii towaru i wszystkich zapasów ponad nią. Zgodnie z hierarchią rezerwacji zapasów danego towaru, wymiary te to numer partii oraz lokalizacja. W tym przykładzie lokalizacja to **Bulk-001**.
 
 9. W nagłówku zamówienia wybierz **Magazyn** \> **Działania** \> **Zwolnij do magazynu**. Wiersz zamówienia jest teraz waved i jest tworzony ładunek i praca.
 
 ### <a name="review-and-process-warehouse-work-that-has-order-committed-batch-numbers"></a>Służy do przeglądania i przetwarzania pracy magazynowej z numerami partii zatwierdzonych dla zamówienia
 
-1. W skróconej karcie **Kolejność zamówień sprzedaży** , wybierz opcję **Magazyn** \> **Szczegóły pracy**.
+1. W skróconej karcie **Kolejność zamówień sprzedaży**, wybierz opcję **Magazyn** \> **Szczegóły pracy**.
 
     Praca, która obsługuje operację pobrania dla ilości partii, która jest potwierdzona w wierszu zamówienia sprzedaży, ma następujące cechy:
 
@@ -177,13 +177,13 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
         ![Transakcja magazynowa magazynu dla pracy, która pochodzi z rezerwacji zamówienia](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-    - Po utworzeniu pracy zostanie usunięta transakcja magazynowa towaru, w której pole **odwołania** ma ustawioną rezerwację **Rezerwacja-zamówienie sprzedaży**. Transakcja magazynowa, w której pole **odwołania** ma wartość **praca** , zawiera rezerwę fizyczną dla wszystkich wymiarów magazynowych z ilością.
+    - Po utworzeniu pracy zostanie usunięta transakcja magazynowa towaru, w której pole **odwołania** ma ustawioną rezerwację **Rezerwacja-zamówienie sprzedaży**. Transakcja magazynowa, w której pole **odwołania** ma wartość **praca**, zawiera rezerwę fizyczną dla wszystkich wymiarów magazynowych z ilością.
 
         Operacje magazynowe mogą być kontynuowane w celu obsługi wykonania pracy w zwykły sposób. Jednak instrukcje na urządzeniu przenośnym wykazują pracownikowi pobranie określonego numeru partii. W środowiskach magazynowych, w których lokalizacje są oznaczone numerami identyfikacyjnymi, gdy pracownik osiągnie lokalizację, w której jest przechowywana taka sama partia na wielu płytach, może pobrać z dowolnego numeru identyfikacyjnego, który nie został jeszcze zarezerwowany (np. inny zadeklarowana rezerwacja zamówienia lub praca pochodząca z rezerwacji tego typu).
 
         Jeśli okaże się, że nie będzie on praktyczny do pobrania z lokalizacji określonej w wierszu pracy, operatorzy magazynu mogą używać jednej z następujących akcji do przekierowywania pobierania określonej partii z bardziej wygodnej lokalizacji:
 
-        - Standardowa akcja **zastępowania lokalizacji** na urządzeniu przenośnym (pod warunkiem, że włączone jest ustawienie **Zezwalaj na zastępowanie lokalizacji pobrania** )
+        - Standardowa akcja **zastępowania lokalizacji** na urządzeniu przenośnym (pod warunkiem, że włączone jest ustawienie **Zezwalaj na zastępowanie lokalizacji pobrania**)
         - Akcja **zmiany lokalizacji** na stronie **Szczegóły listy prac**. 
 
 2. Na urządzeniu przenośnym Zakończ pobieranie i odkładanie pracy.
@@ -212,9 +212,9 @@ Aby włączyć rezerwację numeru identyfikacyjnego w zamówieniu, należy zazna
 
 ![Strona hierarchie rezerwacji zapasów dla elastycznej hierarchii rezerwacji numerów identyfikacyjnych](media/Flexible-LP-reservation-hierarchy.png)
 
-W dowolnym momencie wdrożenia można włączyć rezerwację numeru identyfikacyjnego na zamówieniu. Ta zmiana nie wpłynie na rezerwacje ani otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na żądanie** , jeśli istnieją otwarte transakcje magazynowe wychodzące, które mają status wydania *Na zamówienie* , *Zarezerwowane zamówione* lub *Zarezerwowane fizyczne* dla co najmniej jednego elementu skojarzonego z tą hierarchią rezerwacji.
+W dowolnym momencie wdrożenia można włączyć rezerwację numeru identyfikacyjnego na zamówieniu. Ta zmiana nie wpłynie na rezerwacje ani otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na żądanie**, jeśli istnieją otwarte transakcje magazynowe wychodzące, które mają status wydania *Na zamówienie*, *Zarezerwowane zamówione* lub *Zarezerwowane fizyczne* dla co najmniej jednego elementu skojarzonego z tą hierarchią rezerwacji.
 
-Nawet jeśli zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dla poziomu **Numeru identyfikacyjnego** , nadal można *nie* zarezerwować określonego numeru identyfikacyjnego w zamówieniu. W takim przypadku stosuje się domyślną logikę operacji magazynowych obowiązującą dla danej hierarchii rezerwacji.
+Nawet jeśli zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dla poziomu **Numeru identyfikacyjnego**, nadal można *nie* zarezerwować określonego numeru identyfikacyjnego w zamówieniu. W takim przypadku stosuje się domyślną logikę operacji magazynowych obowiązującą dla danej hierarchii rezerwacji.
 
 Aby zarezerwować określony numer identyfikacyjny, należy użyć [protokołu OData (Open Data Protocol)](../../fin-ops-core/dev-itpro/data-entities/odata.md). W aplikacji można to zrobić bezpośrednio z poziomu zamówienia sprzedaży, używając opcji **Rezerwacja-zamówienie według numeru identyfikacyjnego** polecenia **Otwórz w programie Excel**. W danych jednostki, które są otwarte w dodatku Excel, należy wprowadzić następujące dane związane z rezerwacjami, a następnie wybrać opcję **Publikuj** w celu wysłania danych z powrotem do Supply Chain Management:
 
@@ -224,7 +224,7 @@ Aby zarezerwować określony numer identyfikacyjny, należy użyć [protokołu O
 - Numer identyfikacyjny
 - Ilość
 
-Jeśli konieczne jest zarezerwowanie określonego numeru identyfikacyjnego dla towaru śledzonego według partii, należy skorzystać ze strony **rezerwacja partii** , postępując zgodnie z opisem w sekcji [Podawanie szczegółów zamówienia sprzedaży](#sales-order-details).
+Jeśli konieczne jest zarezerwowanie określonego numeru identyfikacyjnego dla towaru śledzonego według partii, należy skorzystać ze strony **rezerwacja partii**, postępując zgodnie z opisem w sekcji [Podawanie szczegółów zamówienia sprzedaży](#sales-order-details).
 
 Jeśli w operacjach magazynowych wiersz zamówienia sprzedaży używa rezerwacji numeru przypisanego do zamówienia, nie są używane dyrektywy lokalizacji.
 
@@ -249,9 +249,9 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
 
 1. Przejdź do **Ustawień magazynu \> Ustawień \> Zapasów \> Hierarchii rezerwacji**.
 1. Wybierz pozycję **Nowy**.
-1. W polu **Nazwa** wprowadź wartość (na przykład *FlexibleLP* ).
-1. W polu **Opis** wprowadź wartość (np. *Elastyczna rezerwacja LP* ).
-1. Na liście **Wybrane** wybierz **Numer partii** , **Numer seryjny** i **Właściciel**.
+1. W polu **Nazwa** wprowadź wartość (na przykład *FlexibleLP*).
+1. W polu **Opis** wprowadź wartość (np. *Elastyczna rezerwacja LP*).
+1. Na liście **Wybrane** wybierz **Numer partii**, **Numer seryjny** i **Właściciel**.
 1. Wybierz przycisk **Usuń** ![Strzałka wstecz](media/backward-button.png), aby przenieść wybrane rekordy na listę **Dostępne**.
 1. Kliknij przycisk **OK**.
 1. W wierszu dla poziomu wymiaru **Numer identyfikacyjny** zaznacz pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu**. Poziom **Lokalizacji** jest wybrany automatycznie i nie można wyczyścić tego pola wyboru.
@@ -271,7 +271,7 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
     - **Grupa wymiarów śledzenia:** *Brak*
     - **Hierarchia rezerwacji:** *FlexibleLP*
 
-1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i utworzyć nowe produkt.
+1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe produkt.
 1. Nowy produkt jest otwarty. Na skróconej karcie **Magazyn** w polu **Identyfikator grupy sekwencji jednostek** ustaw wartość *każdy*.
 1. Powtórz powyższe kroki, aby utworzyć drugi produkt mający takie same ustawienia, ale w polach **Numer produktu** i **Kod towaru** określ *Item2*.
 1. W Okienku akcji na karcie **Zarządzaj zapasami** w grupie **Wyświetlanie** wybierz **Dostępne zapasy**. Następnie wybierz opcję **Korekta ilości**.
@@ -296,7 +296,7 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
     - **Konto odbiorcy:** *US-001*
     - **Magazyn:** *24*
 
-1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe **Utwórz zamówienie zakupu** i otworzyć nowe zamówienie sprzedaży.
+1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe **Utwórz zamówienie zakupu** i otworzyć nowe zamówienie sprzedaży.
 1. Na skróconej karcie **Wierszy zamówienia sprzedaży** dodaj wiersz o następujących ustawieniach:
 
     - **Kod pozycji:** *Item1*
@@ -311,34 +311,34 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
 1. Na skróconej karcie **Szczegółów wiersza** na karcie **Ustawienia** zanotuj wartość **Identyfikatora partii** dla każdego wiersza. Te wartości będą wymagane podczas rezerwacji specjalnych numerów identyfikacyjnych.
 
     > [!NOTE]
-    > Aby zarezerwować określony numer identyfikacyjny, należy skorzystać z **Rezerwacja-zamówienie według numeru identyfikacyjnego** dla jednostki danych. Aby zarezerwować produkt objęty śledzeniem partii na określonym numerze identyfikacyjnym, możesz również skorzystać ze strony **rezerwacja partii** , postępując zgodnie z opisem w sekcji [Podawanie szczegółów zamówienia sprzedaży](#sales-order-details).
+    > Aby zarezerwować określony numer identyfikacyjny, należy skorzystać z **Rezerwacja-zamówienie według numeru identyfikacyjnego** dla jednostki danych. Aby zarezerwować produkt objęty śledzeniem partii na określonym numerze identyfikacyjnym, możesz również skorzystać ze strony **rezerwacja partii**, postępując zgodnie z opisem w sekcji [Podawanie szczegółów zamówienia sprzedaży](#sales-order-details).
     >
     > Jeśli numer identyfikacyjny zostanie wprowadzony bezpośrednio w wierszu zamówienia sprzedaży i zatwierdził go w systemie, w wierszu nie zostanie użyte przetwarzanie zarządzania magazynem.
 
-1. Wybierz opcję **Otwórz w Microsoft Office** , wybierz **Rezerwacja-zamówienie według numeru identyfikacyjnego** , a następnie pobierz plik.
-1. Otwórz pobrany plik w programie Excel i wybierz opcję **Włącz edytowanie** , co umożliwi uruchamianie dodatku programu Excel.
+1. Wybierz opcję **Otwórz w Microsoft Office**, wybierz **Rezerwacja-zamówienie według numeru identyfikacyjnego**, a następnie pobierz plik.
+1. Otwórz pobrany plik w programie Excel i wybierz opcję **Włącz edytowanie**, co umożliwi uruchamianie dodatku programu Excel.
 1. Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, wybierz opcję **Ufaj temu dodatkowi**.
-1. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj** , a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w rozwiązaniu Supply Chain Management.
-1. Aby zarezerwować towar na określonym numerze identyfikacyjnym, w dodatku Excel wybierz opcję **Nowy** , aby dodać wiersz rezerwacji, a następnie określ następujące wartości:
+1. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w rozwiązaniu Supply Chain Management.
+1. Aby zarezerwować towar na określonym numerze identyfikacyjnym, w dodatku Excel wybierz opcję **Nowy**, aby dodać wiersz rezerwacji, a następnie określ następujące wartości:
 
-    - **Identyfikator partii:** należy wprowadzić wartość **Identyfikatora partii** , która została znaleziona dla wiersza zamówienia sprzedaży dla *Item1*.
+    - **Identyfikator partii:** należy wprowadzić wartość **Identyfikatora partii**, która została znaleziona dla wiersza zamówienia sprzedaży dla *Item1*.
     - **Numer identyfikacyjny:** *LP02*
     - **ReservedInventoryQuantity:** *10*
 
-1. Wybierz polecenie **Nowy** , aby dodać dodatkowy wiersz rezerwacji i określ następujące wartości:
+1. Wybierz polecenie **Nowy**, aby dodać dodatkowy wiersz rezerwacji i określ następujące wartości:
 
-    - **Identyfikator partii:** należy wprowadzić wartość **Identyfikatora partii** , która została znaleziona dla wiersza zamówienia sprzedaży dla *Item2*.
+    - **Identyfikator partii:** należy wprowadzić wartość **Identyfikatora partii**, która została znaleziona dla wiersza zamówienia sprzedaży dla *Item2*.
     - **Numer identyfikacyjny:** *LP02*
     - **ReservedInventoryQuantity:** *5*
 
-1. W dodatku Excel wybierz opcję **Publikuj** , aby wysłać dane z powrotem do Supply Chain Management.
+1. W dodatku Excel wybierz opcję **Publikuj**, aby wysłać dane z powrotem do Supply Chain Management.
 
     > [!NOTE]
     > Wiersz rezerwacji pojawi się w systemie tylko wtedy, gdy publikowanie zostało zakończone bez błędów.
 
 1. Wróć do Supply Chain Management. 
-1. Aby przejrzeć rezerwację towaru, na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Zapasy** wybierz **Obsługa \> Rezerwacja**. Zwróć uwagę, że w przypadku wiersza zamówienia sprzedaży dla *Item1* , zapasy o wartości *10* są rezerwowane, a w przypadku wiersza zamówienia sprzedaży dla *Item2* , zapasy w liczbie *5* są rezerwowane.
-1. Aby przejrzeć transakcje magazynowe związane z rezerwacją wiersza zamówienia sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Zapasy** , wybierz **Wyświetl \> Transakcje**. Zwróć uwagę, że istnieją dwie transakcje powiązane z rezerwacją: jedno, gdzie pole **Odwołania** jest ustawione na *Zamówienie sprzedaży* , a jedno, gdzie w polu **Odwołania** jest ustawiona wartość *Rezerwacja-zamówienie sprzedaży*.
+1. Aby przejrzeć rezerwację towaru, na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Zapasy** wybierz **Obsługa \> Rezerwacja**. Zwróć uwagę, że w przypadku wiersza zamówienia sprzedaży dla *Item1*, zapasy o wartości *10* są rezerwowane, a w przypadku wiersza zamówienia sprzedaży dla *Item2*, zapasy w liczbie *5* są rezerwowane.
+1. Aby przejrzeć transakcje magazynowe związane z rezerwacją wiersza zamówienia sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Zapasy**, wybierz **Wyświetl \> Transakcje**. Zwróć uwagę, że istnieją dwie transakcje powiązane z rezerwacją: jedno, gdzie pole **Odwołania** jest ustawione na *Zamówienie sprzedaży*, a jedno, gdzie w polu **Odwołania** jest ustawiona wartość *Rezerwacja-zamówienie sprzedaży*.
 
     > [!NOTE]
     > Transakcja, w której pole **Odwołania** jest ustawione na *Zamówienie sprzedaży* oznacza rezerwę wiersza zamówienia dla wymiarów magazynowych, które są powyżej poziomu **Lokalizacji** (stan lokalizacji, magazynu i stanu zapasów). Transakcja, w której pole **Odwołania** jest ustawione na *Rezerwacja-zamówienie sprzedaży* reprezentuje rezerwację wiersza zamówienia dla określonego numeru identyfikacyjnego i lokalizacji.
@@ -347,12 +347,12 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
 
 ### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Przeglądanie i przetwarzanie pracy magazynowej z przypisanymi numerami identyfikacyjnymi zamówień
 
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Magazyn** wybierz opcję **Szczegóły pracy**.
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Magazyn** wybierz opcję **Szczegóły pracy**.
 
     Jeśli rezerwacja jest realizowana dla konkretnej partii, system nie korzysta z dyrektyw lokalizacji podczas tworzenia pracy dla zamówienia sprzedaży, które korzysta z rezerwacji numerów identyfikacyjnych. Ponieważ rezerwacja ustalona dla zamówienia określa wszystkie wymiary magazynowe, w tym lokalizację, nie trzeba używać dyrektyw lokalizacji, ponieważ te wymiary magazynowe zostały wprowadzone do pracy. Są one wyświetlane w sekcji **Od wymiarów magazynowych** na stronie **Transakcje magazynowe pracy**.
 
     > [!NOTE]
-    > Po utworzeniu pracy zostanie usunięta transakcja magazynowa towaru, w której pole **Odwołania** ma ustawioną rezerwację *Rezerwacja-zamówienie sprzedaży*. Transakcja magazynowa, w której pole **Odwołania** ma wartość *praca* , zawiera rezerwę fizyczną dla wszystkich wymiarów magazynowych z ilością.
+    > Po utworzeniu pracy zostanie usunięta transakcja magazynowa towaru, w której pole **Odwołania** ma ustawioną rezerwację *Rezerwacja-zamówienie sprzedaży*. Transakcja magazynowa, w której pole **Odwołania** ma wartość *praca*, zawiera rezerwę fizyczną dla wszystkich wymiarów magazynowych z ilością.
 
 1. Na urządzeniu przenośnym zakończ pobieranie i odkładanie pracy, używając elementu menu, w którym zaznaczono pole wyboru **Postępuj według numeru identyfikacyjnego**.
 
@@ -378,14 +378,14 @@ Przykładem tego scenariusza jest sytuacja, w której uprzednio ukończona praca
 3. W skróconej karcie **wierszy zamówienia ładunku** wybierz opcję **Zmniejsz ilość pobraną**.
 4. Na stronie **Zmniejsz ilość pobranych towarów** w polu **Przenieś do lokalizacji** zaznacz opcję **FL-001**.
 5. W polu **Przenieś do numeru identyfikacyjnego** zaznacz opcję **LP33**.
-6. W polu **ilość zapasów do cofnięcia pobrania** , wprowadź wartość **10**.
+6. W polu **ilość zapasów do cofnięcia pobrania**, wprowadź wartość **10**.
 7. Kliknij przycisk **OK**.
 
 Poniżej przedstawiono wyniki cofnięcia pobrania:
 
 - Stan poprzednio zamkniętej pracy jest ustawiany jako **anulowany**.
 - Nowa praca typu **przesunięcie zapasów** jest tworzona dla niepobranej ilości **10** dla numeru **partii B11**. Ta praca reprezentuje przesunięcie z lokalizacji **Baydoor** do numeru identyfikacyjnego **LP33** w lokalizacji **FL-001**. Stan zostanie ustawiony na **Zamknięty**.
-- System ponownie rezerwuje numer partii, który został pierwotnie zamówiony, a następnie przypisuje lokalizację i identyfikatory numerów identyfikacyjnych. (Ten proces jest równoznaczny z uruchomieniem funkcji **wiersza rezerwy** dla wiersza zamówienia dla danego numeru partii). W wyniku tego partia **B11** jest pokazana jako zatwierdzona na skróconej karcie **numery partii przekazanych do wiersza źródłowego** , na stronie **rezerwacja partii** , a pole **rezerwacja** zawiera ilość **10** dla numeru partii **B11**. Ponadto pole **lokalizacji** jest ustawione na **FL-001** , a pole **numeru identyfikacyjnego** jest ustawione na **LP11**. (Jeśli te pola są niewidoczne, można je dodać do siatki)
+- System ponownie rezerwuje numer partii, który został pierwotnie zamówiony, a następnie przypisuje lokalizację i identyfikatory numerów identyfikacyjnych. (Ten proces jest równoznaczny z uruchomieniem funkcji **wiersza rezerwy** dla wiersza zamówienia dla danego numeru partii). W wyniku tego partia **B11** jest pokazana jako zatwierdzona na skróconej karcie **numery partii przekazanych do wiersza źródłowego**, na stronie **rezerwacja partii**, a pole **rezerwacja** zawiera ilość **10** dla numeru partii **B11**. Ponadto pole **lokalizacji** jest ustawione na **FL-001**, a pole **numeru identyfikacyjnego** jest ustawione na **LP11**. (Jeśli te pola są niewidoczne, można je dodać do siatki)
 
 Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerwowaną rezerwację partii dla konkretnych akcji magazynowych. Aby interpretować zawartość w tabelach, należy zastanowić się, że każda akcja magazynowa jest uruchamiana w kontekście istniejącej pracy magazynowej, która pochodzi z rezerwacji partii zamówienia, lub że wykonanie każdej akcji magazynowej ma wpływ na pracę tego typu.
 
@@ -512,7 +512,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 #### <a name="move-an-item-within-a-warehouse"></a>Przenoszenie towaru w magazynie
 
 > [!NOTE]
-> Tę akcję magazynową można stosować tylko do przepływu typu **Procesu tworzenia pracy** , a nie do przenoszenia według szablonów.
+> Tę akcję magazynową można stosować tylko do przepływu typu **Procesu tworzenia pracy**, a nie do przenoszenia według szablonów.
 
 <table>
 <thead>

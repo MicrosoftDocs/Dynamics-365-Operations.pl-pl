@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
 ms.openlocfilehash: 6cf81939989b8faffcda51bbbd5bc6b27aec7eea
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016315"
+ms.locfileid: "4435589"
 ---
 # <a name="additional-location-zones"></a>Dodatkowe strefy lokalizacji
 
@@ -35,7 +35,7 @@ Do użycia pól strefy nie są wymagane żadne dodatkowe ustawienia.
 
 ## <a name="turn-on-the-additional-location-zone-feature"></a>Włącz funkcję dodatkowej strefy lokalizacji
 
-Aby móc używać funkcji *Dodatkowa strefa lokalizacji* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby móc używać funkcji *Dodatkowa strefa lokalizacji*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Dodatkowa strefa lokalizacji*
@@ -56,5 +56,5 @@ Aby móc używać funkcji *Dodatkowa strefa lokalizacji* , należy ją włączy�
 5. Wybierz wiersz **Korytarz**.
 6. W polu **Od numeru** wprowadź wartość _1_. W polu **Do numeru** wprowadź wartość _5_.
 7. Wybierz opcję **Utwórz**.
-8. Otrzymujesz komunikaty informujące o dodaniu nowych lokalizacji. Wybierz przycisk **Pokaż komunikaty** , aby wyświetlić komunikaty.
+8. Otrzymujesz komunikaty informujące o dodaniu nowych lokalizacji. Wybierz przycisk **Pokaż komunikaty**, aby wyświetlić komunikaty.
 9. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Lokalizacje**. Nowe lokalizacje są wyświetlane na liście – dostępne są wszystkie pola strefy (to znaczy, istniejące pole strefy i nowe dodatkowe pola).

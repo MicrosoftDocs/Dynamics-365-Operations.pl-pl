@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213591"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435353"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
@@ -87,7 +87,7 @@ Dostępne są następujące opcje:
 
 Pozostałe pytania na tej stronie i odpowiedzi na nie podążają tym samym schematem:
 
-- **Nie** — opcja **Plan prognozy (horyzont czasowy)** będzie ustawiona na wartość**Tak**, a liczba dni będzie równa **0** (zero).
+- **Nie** — opcja **Plan prognozy (horyzont czasowy)** będzie ustawiona na wartość **Tak**, a liczba dni będzie równa **0** (zero).
 - **Tak, zgodnie z definicją tego planu głównego** – opcja **Plan prognozy (horyzont czasowy)** jest ustawiona na **Tak**. Zostanie użyta wprowadzona liczba dni i zastąpi wartości ustawione w grupach zapotrzebowania.
 - **Tak, zgodnie z definicją w grupie zapotrzebowania** – opcja **Plan prognozy (horyzont czasowy)** będzie ustawiona na **Nie**.
 
@@ -122,7 +122,7 @@ Ostatnia strona kreatora pokazuje zmiany, które są zalecane na podstawie udzie
 
 Można również modyfikować parametry w nowej konfiguracji. Parametry są podzielone na parametry, które odnoszą się do firmy i parametry, które mają zastosowanie tylko do wybranego planu głównego. Aby wyświetlić wszystkie parametry instalacji, które można zmienić za pomocą kreatora, wybierz **Pokaż wszystkie parametry** u dołu strony. Następnie można zmienić parametry.
 
-Na koniec po wybraniu opcji **Zakończ** zostanie zastosowana nowa konfiguracja. W przypadku wybrania opcji**Anuluj** nie są stosowane żadne zmiany.
+Na koniec po wybraniu opcji **Zakończ** zostanie zastosowana nowa konfiguracja. W przypadku wybrania opcji **Anuluj** nie są stosowane żadne zmiany.
 
 ## <a name="examples"></a>Przykłady
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad8513477c7f9243fa3ee5d99569c048ffada97d
-ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
+ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "3823729"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527441"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (16 września 2020 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Zmiany dotyczą kompilacji o numerze 8.1.3557. Liczby w nawiasach obok niektórych funkcji odnoszą się do numerów pomocy technicznej Lifecycle Services (LCS).
 
@@ -37,7 +39,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 
 - Jeśli ustawienie **Ogranicz dostęp do informacji o pracownikach** w **Zaawansowanym dostępie** w **Udostępniane parametry Human Resources**, że formularze będą zawierały tylko odpowiednich pracowników (393384).
 
-- Opcje tworzenia nowych opcji generowania kalendarza w jednostce **WorkCalendar** (477055):<br>- Domyślny czas zakończenia<br>-    Domyślny czas rozpoczęcia<br>-  Czy piątek jest dniem roboczym<br>-  Czy poniedziałek jest dniem roboczym<br>-  Czy sobota jest dniem roboczym<br>- Czy niedziela jest dniem roboczym<br>- Czy czwartek jest dniem roboczym<br>- Czy wtorek jest dniem roboczym<br>- Czy środa jest dniem roboczym<br>- Identyfikator dni wolnych od pracy w kalendarzu pracy
+- Opcje tworzenia nowego kalendarza w jednostce **WorkCalendar** (477055):<br>- Domyślny czas zakończenia<br>-    Domyślny czas rozpoczęcia<br>-  Czy piątek jest dniem roboczym<br>-  Czy poniedziałek jest dniem roboczym<br>-  Czy sobota jest dniem roboczym<br>- Czy niedziela jest dniem roboczym<br>- Czy czwartek jest dniem roboczym<br>- Czy wtorek jest dniem roboczym<br>- Czy środa jest dniem roboczym<br>- Identyfikator dni wolnych od pracy w kalendarzu pracy
 
 - Jednostka **LeaveBankTransactionV1** teraz zawiera kod przyczyny (477823).
 

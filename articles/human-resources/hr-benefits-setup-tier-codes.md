@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 3245b4265e51ad87419786c01fad578d743f2c06
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429849"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420058"
 ---
 # <a name="set-up-tier-codes"></a>Ustawianie kodów warstw
 

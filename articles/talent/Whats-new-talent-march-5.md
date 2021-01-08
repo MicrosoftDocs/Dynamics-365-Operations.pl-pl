@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 855eafaca88d180997cf5a68c7f0fe975c177f88
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 115d7cd3d71eaddce2434cb1939c503d36bccdf8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898926"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527297"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (5 marca 2019 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Talent.
 
@@ -76,5 +78,5 @@ Zbliżają się terminy uaktualniania do Common Data Service dla aplikacji. Zalo
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Zaawansowane zabezpieczenia wynagrodzeń (stałe i zmienne)
 W wielu organizacjach menedżerowie ds. wynagrodzeń i świadczeń mają dostęp tylko do określonych rekordów wynagrodzeń, takich jak rekordy dla kadry zarządzającej i pracowników regionalnych. W przypadku tej zmiany można zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Stałe i zmienne plany mogą mieć przypisane role zabezpieczeń, które będą określały dostęp do planów i danych pracowników związanych z planami, takich jak rekordy płac i premii. Tylko role z danym dostępem mogą przetwarzać wynagrodzenia dla tych pracowników.
 
-###  <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja Platform update 24 dla Finance and Operations
-Aby uzyskać dodatkowe szczegółowe informacje dotyczące 24. aktualizacji platformy dla Finance and Operations, zobacz [Nowości i zmiany w 24. aktualizacji platformy Finance and Operations (marzec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja 24 platformy dla Finance and Operations
+Aby uzyskać dodatkowe szczegółowe informacje dotyczące Platform update 24 dla Finance and Operations, zobacz [Nowe lub zmienione funkcje w Platform update 24 Finance and Operations (2019 marca)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

@@ -19,11 +19,11 @@ ms.author: dkrame
 ms.search.validFrom: 2019-05-20
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2eb7fbabdbc945436c238dc59802f487ccada35c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897541"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462229"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-20-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (20 maja 2019 r.)
 

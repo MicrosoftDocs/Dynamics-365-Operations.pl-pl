@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817616"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517071"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
@@ -46,10 +46,10 @@ W konstruktorze witryn Commerce można definiować progi i zakresy zapasów dla 
 
 W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> Rozszerzenia \> Zarządzanie zapasami** w konstruktorze witryn. Istnieją cztery ustawienia zapasów, z których jedna jest przestarzała (przestarzałe):
 
-- **Włączanie sprawdzania zapasów w aplikacji** — to ustawienie powoduje włączenie sprawdzania zapasów produktów. Pole zakupu, koszyk i pobieranie w modułach sklepów będą sprawdzać magazyn produktów i zezwalać na dodanie produktu do koszyka tylko wtedy, gdy zapasy są dostępne.
+- **Włącz sprawdzanie zapasów w aplikacji** — to ustawienie powoduje włączenie sprawdzania zapasów produktów. Pole zakupu, koszyk i pobieranie w modułach sklepów będą sprawdzać magazyn produktów i zezwalać na dodanie produktu do koszyka tylko wtedy, gdy zapasy są dostępne.
 - **Poziom zapasów na podstawie** — to ustawienie określa sposób obliczania poziomów zapasów. Dostępne wartości to **Razem dostępne**, **Dostępne fizycznie** i **Próg wyprzedania**. W Commerce można zdefiniować próg i zakresy zapasów dla każdego produktu i kategorii. Interfejsy API magazynu zwracają informacje o zapasach produktów dla zarówno właściwości **Razem dostępne**, jak i właściwości **Fizycznie dostępne**. Detalista decyduje, czy wartość **Razem dostępne** lub **Fizycznie dostępne** powinna być używana do określenia licznika zapasów i odpowiednich zakresów w Stanach zapasów i poza magazynem.
 
-    Wartość **Próg wyprzedania** ustawienia **Poziom zapasów na podstawie** jest starsza (przestarzała), nieaktualna. Po wybraniu tej opcji Inwentaryzacja jest określana na podstawie wyników wartości **Razem dostępne**, ale próg jest definiowany przez ustawienie wartości liczbowej **Próg wyprzedania**, które zostało opisane w dalszej części tego pola. To ustawienie progu ma zastosowanie w odniesieniu do wszystkich produktów w witrynie handlu elektronicznego. Jeśli zapasy są poniżej numeru progowego, produkt jest uważany za zapasy. W przeciwnym razie zostanie uznane za dostępne w magazynie. Możliwości wartości **Próg wyprzedania** są ograniczone i nie zaleca się używania jej w wersji 10.0.12 lub nowszej.
+    Wartość **Próg wyprzedania** ustawienia **Poziom zapasów na podstawie** jest starsza (przestarzała), nieaktualna. Po wybraniu tej opcji Inwentaryzacja jest określana na podstawie wyników wartości **Razem dostępne**, ale próg jest definiowany przez ustawienie wartości liczbowej **Próg wyprzedania**, które zostało opisane w dalszej części tego pola. To ustawienie wartości progowej ma zastosowanie w odniesieniu do wszystkich produktów w witrynie handlu elektronicznego. Jeśli zapasy są poniżej numeru progowego, produkt jest uważany za zapasy. W przeciwnym razie zostanie uznane za dostępne w magazynie. Możliwości wartości **Próg wyprzedania** są ograniczone i nie zaleca się używania jej w wersji 10.0.12 lub nowszej.
 
 - **Zakresy zapasów** — to ustawienie definiuje zakresy zapasów, które są wyświetlane w wiadomościach w modułach witryny. Ma to zastosowanie tylko wtedy, gdy wybrano wartość **Razem Dostępne** lub **Dostępne Fizycznie** dla poziomu **Poziom zapasów w oparciu o ustawienie**. Dostępne wartości to **Wszystkie**, **Mała ilość i wyprzedane** oraz **Wyprzedane**.
 

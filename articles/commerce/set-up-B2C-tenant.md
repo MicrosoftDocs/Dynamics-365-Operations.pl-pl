@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1910563865a21dab3345a82711ead9b9e57b92fa
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: af2ec75328b6377c5d92656d011d21576417a63f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3980971"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517387"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -295,7 +295,7 @@ Aby dodać informacje dotyczące aplikacji dzierżawczej usługi B2C AAD do syst
 1. Zaloguj się jako administrator do modułu konstruktora witryn Commerce dla swojego środowiska.
 1. W lewym okienku nawigacji wybierz pozycję **Ustawienia dzierżawcy**, aby ją rozwinąć.
 1. W obszarze **Ustawienia dzierżawy** wybierz pozycję **Ustawienia B2C**. 
-1. W oknie głównym obok **Aplikacje B2C**wybierz opcję **Zarządzaj**. (Jeśli Twoja dzierżawa jest wyświetlana na liście aplikacji B2C, została ona już dodana przez administratora systemu. Sprawdź, czy elementy w kroku 6 są zgodne z aplikacją B2C.)
+1. W oknie głównym obok **Aplikacje B2C** wybierz opcję **Zarządzaj**. (Jeśli Twoja dzierżawa jest wyświetlana na liście aplikacji B2C, została ona już dodana przez administratora systemu. Sprawdź, czy elementy w kroku 6 są zgodne z aplikacją B2C.)
 1. Wybierz **Dodaj aplikację B2C**.
 1. Wprowadź w wyświetlonym formularzu następujące wymagane elementy, używając wartości ze swojej dzierżawy B2C i aplikacji. Pola, które nie są wymagane (bez gwiazdki), mogą pozostać puste.
 
@@ -321,7 +321,7 @@ Aby skojarzyć aplikację B2C z witryną i kanałem, wykonaj poniższe kroki.
 1. Przejdź do swojej witryny w module konstruktora witryn Commerce.
 1. W lewym okienku nawigacji wybierz pozycję **Ustawienia witryny**, aby ją rozwinąć.
 1. W obszarze **Ustawienia witryny** wybierz opcję **kanały**.
-1. W oknie głównym w obszarze **kanały**wybierz kanał.
+1. W oknie głównym w obszarze **kanały** wybierz kanał.
 1. W okienku właściwości kanału z prawej strony wybierz nazwę aplikacji B2C z menu rozwijanego **wybierz aplikację B2C**.
 1. Wybierz opcję **Zamknij**, a następnie wybierz opcję **Zapisz i opublikuj**.
 
@@ -345,15 +345,15 @@ W sekcji **użytkownicy** dzierżawy B2C można dodać opcjonalne pomocnicze kon
 
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
-[Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)Skojarz witrynę Dynamics 365 Commerce z kanałem online
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
 

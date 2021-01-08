@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081346"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594120"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -197,6 +197,8 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 500 | Unieważnij transakcję | Unieważnij bieżącą transakcję. | Tak | Tak | Nr | Tak | Nr |
 | 916 | Podstawa przepływu pracy systemu Windows | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nr |
 | 924 | Raport X dotyczący kart bankowych | Ta operacja nie jest obsługiwana. | Nie dotyczy | Nie dotyczy | Nie dotyczy | Nie dotyczy | Tak |
+| 311 | Usuń rabaty systemowe z transakcji | Usuń z transakcji wszystkie rabaty zastosowane przez system, w tym rabaty kuponowe. Nie powoduje usunięcia rabatów ręcznych. | Tak | Tak | Tak | Tak | Nr |
+| 312 | Ponowne stosowanie rabatów systemowych | Ponownie zastosuj rabaty systemowe dla transakcji, jeśli zostały one usunięte przy użyciu operacji **Usuń rabaty systemowe z transakcji**. | Tak | Tak | Tak | Tak | Nr |
 
 \* Operacja jest dostępna w trybie offline tylko wtedy, gdy tworzone jest zamówienie odbiorcy lub oferta sprzedaży i gdy tworzenie zamówień odbiory i ofert sprzedaży jest skonfigurowane w profilu funkcji punktu sprzedaży. Nie można wykonać tej operacji, gdy zamówienia są tworzone za pomocą usługi Real-time Service lub gdy zamówienia są wycofywane i edytowane.
 

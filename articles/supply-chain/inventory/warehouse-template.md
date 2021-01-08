@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 66fdc26b0b967a04a3c6a6e3444e00b1372dc504
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204017"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435475"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
@@ -70,7 +70,7 @@ W tym scenariuszu ustawienia konfiguracji dla magazynu i niektórych procesów t
 4. Sprawdź, czy wybrano firmę, z której chcesz wyeksportować dane specyficzne dla firmy.
 5. W obszarze roboczym wybierz opcję **Eksportuj**.
 6. Utwórz nowy projekt eksportu.
-7. Wybierz opcję **+ Dodaj szablon** i znajdź szablon domyślny magazynu**400 - WMS**. Ten szablon umożliwia dodanie jednostek danych dla konfiguracji magazynu.
+7. Wybierz opcję **+ Dodaj szablon** i znajdź szablon domyślny magazynu **400 - WMS**. Ten szablon umożliwia dodanie jednostek danych dla konfiguracji magazynu.
 
     > [!NOTE]
     > Jeżeli eksportowane dane muszą zostać odfiltrowane (przykładowo, chcesz wyeksportować tylko dane związane z określonym magazynem), należy ocenić każdą jednostkę danych i dodać filtrowanie za pomocą kwerendy. Można też wyeksportować wszystkie dane, a następnie usunąć niepotrzebne rekordy w plikach docelowych.

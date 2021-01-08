@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
 ms.openlocfilehash: a210af5e37e12d883054d46719602604870213b4
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012420"
+ms.locfileid: "4435527"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.12 (sierpień 2020 r.)
 
@@ -32,7 +32,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 - **Wersja podglądu:** maj 2020
 - **Dostępność ogólna (Samoaktualizacja):** lipiec 2020
-- **Automatyczna aktualizacja** : sierpień 2020
+- **Automatyczna aktualizacja**: sierpień 2020
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 

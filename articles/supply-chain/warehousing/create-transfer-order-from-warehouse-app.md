@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 286786445f72db20e993d37a63df0b886f8f5e99
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3988395"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435006"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -189,7 +189,7 @@ W tej sekcji opisano sposób konfigurowania zaplanowanego zadania wsadowego w ce
 1. W polu **Tabela** nowego wiersza wybierz menu rozwijane i wybierz tabelę **Przenieś zwolnienie linii do magazynu**.
 1. Z menu rozwijanego **Pole** wybierz **Zasady wysyłki wychodzącej**.
 1. W polu **Kryteria** wybierz opcję **Zwolnienie i potwierdzenie wysyłki**.
-1. W wierszu, gdzie opcja**Pole** jest ustawiona na wartość *Z magazynu*, w polu **Kryterium** wybierz opcję *51*.
+1. W wierszu, gdzie opcja **Pole** jest ustawiona na wartość *Z magazynu*, w polu **Kryterium** wybierz opcję *51*.
 1. Wybierz przycisk **OK**, aby powrócić do głównego okna dialogowego.
 1. Rozwiń sekcję **Uruchom w tle**, aby skonfigurować przetwarzanie wsadowe.
 1. Włącz opcję **Przetwarzanie wsadowe** w sekcji **Uruchom w tle**.
@@ -255,7 +255,7 @@ Dodaj ilość dostępnych fizycznie zapasów przy użyciu następujących warto�
 1. Kliknij przycisk **OK**.
 1. Wybierz przycisk menu, a następnie wybierz opcję **Zakończ zamówienie**, aby sfinalizować tworzenie zamówienia przeniesienia w aplikacji magazynowej.
 
-W tym przykładzie używane są dwa **zdarzenia aplikacji magazynowych** (*Tworzenie zamówienia przeniesienia*i *Zakończ zamówienie przeniesienia*).
+W tym przykładzie używane są dwa **zdarzenia aplikacji magazynowych** (*Tworzenie zamówienia przeniesienia* i *Zakończ zamówienie przeniesienia*).
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Uzyskiwanie informacji o zdarzeniach aplikacji magazynowej
 

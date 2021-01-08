@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 64a85840be328702a06779390fe383fd1896fd04
-ms.sourcegitcommit: d66fd72342931fad25a696b251c05781280d36c4
+ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
+ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4011434"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668952"
 ---
 # <a name="go-live-faq"></a>Rozpoczynanie eksploatacji — często zadawane pytania 
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ten temat zawiera listę często zadawanych pytań dotyczących sposobu przychodzenia do projektu implementacji Dynamics 365 Human Resources. 
 
@@ -76,7 +78,7 @@ Automatyczne wykonywanie kopii zapasowych baz danych jest chronione przy użyciu
 | Różnicowa kopia zapasowa bazy danych | Co 12-24 godzin |
 | Kopia zapasowa dziennika transakcji | Co 5 do 10 minut |
 
-Firma Microsoft zachowuje wystarczające kopie zapasowe, aby umożliwić Przywracanie bazy danych do punktu w czasie (PITR) w ciągu ostatnich siedmiu dni. 
+Firma Microsoft zachowuje wystarczające kopie zapasowe, aby umożliwić przywracanie bazy danych do punktu w czasie (PITR) z ostatnich 14 dni. 
 
 Aby uzyskać więcej informacji, zobacz  [Więcej informacji na temat automatycznego wykonywania kopii zapasowych bazy danych SQL](https://docs.microsoft.com/azure/azure-sql/database/automated-backups-overview?tabs=single-database). 
 

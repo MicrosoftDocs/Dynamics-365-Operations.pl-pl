@@ -20,11 +20,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017087"
+ms.locfileid: "4435539"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
@@ -54,7 +54,7 @@ W tym scenariuszu proces produkcji (4) zużywa materiał z lokalizacji wejściow
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurowanie pracy magazynowej pobrania Kanban dla zadania Kanban wycofania
 
-Aby umożliwić pobranie surowca dla zadania Kanban wycofania, należy skonfigurować szablony grup czynności, szablony pracy i dyrektywy lokalizacji dla zlecenia pracy typu **Pobieranie Kanban**. Ten typ zlecenia pracy obsługuje nie tylko proces pobrania dla zadania Kanban wycofania. Obsługuje również proces pobrania dla zadania Kanban produkcji. Można jednak skonfigurować oddzielny proces pobrania dla każdego typu zadania Kanban, rozdzielając szablony grup czynności, szablony pracy i dyrektywy lokalizacji. Aby rozdzielić szablony grup czynności, szablony pracy i dyrektywy lokalizacji, ustaw dla typu działania ( **Przetwarzanie** lub **Przeniesienie** ) w zapytaniach dla tych jednostek.
+Aby umożliwić pobranie surowca dla zadania Kanban wycofania, należy skonfigurować szablony grup czynności, szablony pracy i dyrektywy lokalizacji dla zlecenia pracy typu **Pobieranie Kanban**. Ten typ zlecenia pracy obsługuje nie tylko proces pobrania dla zadania Kanban wycofania. Obsługuje również proces pobrania dla zadania Kanban produkcji. Można jednak skonfigurować oddzielny proces pobrania dla każdego typu zadania Kanban, rozdzielając szablony grup czynności, szablony pracy i dyrektywy lokalizacji. Aby rozdzielić szablony grup czynności, szablony pracy i dyrektywy lokalizacji, ustaw dla typu działania (**Przetwarzanie** lub **Przeniesienie**) w zapytaniach dla tych jednostek.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurowanie zadania Kanban wycofania
 

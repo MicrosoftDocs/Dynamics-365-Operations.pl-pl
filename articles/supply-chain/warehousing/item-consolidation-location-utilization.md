@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
 ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017191"
+ms.locfileid: "4435548"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidacja pozycji — wykorzystanie lokalizacji
 
@@ -59,7 +59,7 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 ### <a name="released-product"></a>Zwolniony produkt
 
 1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
-1. W polu **Identyfikator pozycji** wybierz opcję *M9201* , a następnie otwórz stronę szczegółów.
+1. W polu **Identyfikator pozycji** wybierz opcję *M9201*, a następnie otwórz stronę szczegółów.
 1. W Okienku akcji na karcie **Zarządzaj zapasami** w grupie **Magazyn** wybierz **Wymiary fizyczne**.
 1. Na stronie **Wymiary fizyczne** w okienku akcji wybierz **Nowa**.
 
@@ -73,7 +73,7 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Profile lokalizacji**.
 1. Z listy profilów lokalizacji wybierz opcję **PIĘTRO-05**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
-1. Na skróconej karcie **Ogólne** upewnij się, że obie następujące opcje są ustawione na wartość *Tak* :
+1. Na skróconej karcie **Ogólne** upewnij się, że obie następujące opcje są ustawione na wartość *Tak*:
 
     - Włącz obsługę towaru w lokalizacji
     - Włącz obsługę stanu lokalizacji
@@ -81,7 +81,7 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 1. Wybierz opcję **Zapisz**.
 
     > [!IMPORTANT]
-    > Jeśli dla opcji **Włącz przedmiot w lokalizacji** i **Włącz stan lokalizacji** została już ustawiona wartość *Tak* , przejdź na instrukcje dotyczące konfigurowania karty skróconej **Wymiary** w kroku 10. Jeśli opcje nie zostały jeszcze ustawione na wartość *Tak* , należy uruchomić sprawdzanie spójności modułu **Zarządzania magazynem** po ich ręcznym ustawieniu. W takim przypadku przejdź do następnego kroku.
+    > Jeśli dla opcji **Włącz przedmiot w lokalizacji** i **Włącz stan lokalizacji** została już ustawiona wartość *Tak*, przejdź na instrukcje dotyczące konfigurowania karty skróconej **Wymiary** w kroku 10. Jeśli opcje nie zostały jeszcze ustawione na wartość *Tak*, należy uruchomić sprawdzanie spójności modułu **Zarządzania magazynem** po ich ręcznym ustawieniu. W takim przypadku przejdź do następnego kroku.
 
 1. Aby uruchomić sprawdzanie spójności, należy przejść do okna **Administracja systemu \> Okresowe zadania \> Baza danych \> Sprawdzania spójności**.
 1. W wyświetlonym oknie dialogowym **Sprawdzanie spójności** można ustawić następujące wartości:
@@ -94,11 +94,11 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 1. Kliknij przycisk **OK**.
 
     > [!TIP]
-    > Po zakończeniu sprawdzania spójności otrzymasz powiadomienie. Otwórz [Centrum akcji](../../fin-ops-core/fin-ops/get-started/user-interface-elements.md#notifications) w celu wyświetlenia wiadomości. Kliknij przycisk **Szczegóły komunikatu** , aby wyświetlić szczegóły.
+    > Po zakończeniu sprawdzania spójności otrzymasz powiadomienie. Otwórz [Centrum akcji](../../fin-ops-core/fin-ops/get-started/user-interface-elements.md#notifications) w celu wyświetlenia wiadomości. Kliknij przycisk **Szczegóły komunikatu**, aby wyświetlić szczegóły.
     >
-    > Jeśli komunikat dotyczący kontroli spójności brzmi: „Znaleziono nieprawidłowe informacje o statusie lokalizacji dla lokalizacji XXXX w magazynie XX”, należy ponownie przeprowadzić kontrolę spójności. W tym momencie należy zaznaczyć pole **Sprawdź/napraw** , aby *Naprawić błąd*. Wyświetl komunikaty, aby upewnić się, że nie znaleziono błędów.
+    > Jeśli komunikat dotyczący kontroli spójności brzmi: „Znaleziono nieprawidłowe informacje o statusie lokalizacji dla lokalizacji XXXX w magazynie XX”, należy ponownie przeprowadzić kontrolę spójności. W tym momencie należy zaznaczyć pole **Sprawdź/napraw**, aby *Naprawić błąd*. Wyświetl komunikaty, aby upewnić się, że nie znaleziono błędów.
 
-1. Należy teraz zakończyć konfigurowanie profilu lokalizacji. Wróć do **Zarządzanie magazynem \> Konfiguracja \> Magazyn \> Profile lokalizacji** , wybierz profil lokalizacji **PIĘTRO-05** , a następnie w okienku akcji wybierz opcję **Edytuj**.
+1. Należy teraz zakończyć konfigurowanie profilu lokalizacji. Wróć do **Zarządzanie magazynem \> Konfiguracja \> Magazyn \> Profile lokalizacji**, wybierz profil lokalizacji **PIĘTRO-05**, a następnie w okienku akcji wybierz opcję **Edytuj**.
 1. Na skróconej karcie **Wymiary** ustaw następujące wartości:
 
     - **Procent wykorzystania objętości:** *100*
@@ -113,7 +113,7 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 ### <a name="mobile-device-menu-items"></a>Elementy menu urządzenia przenośnego
 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć element menu do sortowania.
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć element menu do sortowania.
 1. W nagłówku ustaw następujące wartości:
 
     - **Nazwa elementu menu:** *Dostosuj w*
@@ -181,7 +181,7 @@ W poniższym scenariuszu używana jest aplikacja magazynowa na urządzeniu przen
 
     Zostanie wyświetlony komunikat „Praca zakończona”.
 
-1. Wybierz przycisk menu (czasami nazywany przyciskiem Hamburger lub Hamburger), a następnie wybierz opcję **Anuluj** , aby zamknąć zadanie **Korekta w**.
+1. Wybierz przycisk menu (czasami nazywany przyciskiem Hamburger lub Hamburger), a następnie wybierz opcję **Anuluj**, aby zamknąć zadanie **Korekta w**.
 
 ### <a name="consolidate-locations"></a>Konsolidowanie lokalizacji
 

@@ -19,11 +19,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017515"
+ms.locfileid: "4435615"
 ---
 # <a name="immediate-replenishment"></a>Natychmiastowe uzupełnianie zapasów
 
@@ -47,7 +47,7 @@ Funkcja natychmiastowego uzupełniania zapasów jest używana podczas wykonywani
 
 ## <a name="set-up-immediate-replenishment"></a>Konfigurowanie natychmiastowego uzupełniania zapasów
 
-- Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Dyrektywy lokalizacji** , a następnie na karcie **Wiersze** na liście **Szablon natychmiastowego uzupełniania zapasów** wybierz szablon uzupełnienia zapasów dla popytu grupy czynności.
+- Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Dyrektywy lokalizacji**, a następnie na karcie **Wiersze** na liście **Szablon natychmiastowego uzupełniania zapasów** wybierz szablon uzupełnienia zapasów dla popytu grupy czynności.
 
 Szablon uzupełniania zapasów zostanie zastosowany, jeśli wiersz dyrektywy lokalizacji nie przydzieli w ustawionej jednostce miary.
 

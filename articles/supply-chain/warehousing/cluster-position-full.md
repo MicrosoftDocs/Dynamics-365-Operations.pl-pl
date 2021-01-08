@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016178"
+ms.locfileid: "4435583"
 ---
 # <a name="cluster-position-full"></a>Stanowisko w grupie pełne
 
@@ -29,7 +29,7 @@ ms.locfileid: "4016178"
 
 Funkcja *Stanowisko w grupie pełne* oferuje alternatywę dla sztywnego egzekwowania reguł przerwy w pracy, gdy jest używana funkcja pobierania dla grupy. Zezwala ona na większy margines błędu w ramach ograniczeń dotyczących objętości kontenerów lub pojemników. W typowym przebiegu pracy nie wszystkie towary w zleceniu pracy mieszczą się w wybranym kontenerze. Pracownicy magazynowi, którzy pobierają z grupy, mają w takiej sytuacji tylko kilka opcji: muszą zmienić rozmiar kontenera na większy lub porozmawiać z przełożonym w i znaleźć jakieś inne rozwiązanie.
 
-Ta funkcja wprowadza możliwość skorzystania z przycisku **Pełne** przy jednej z jednostek pracy w grupie. W starszych wersjach ta opcja była dostępna tylko w przypadku pobierania zamówienia zwykłego, a nie w przypadku pobierania z grupy. Jednak ta funkcja różni się od standardowego przycisku **Pełne** , gdyż anuluje pozostałą pracę. Nie sugeruje to użytkownikowi dodaia kolejnego pojemnika do tego samego klastra i nie powoduje automatycznego utworzenia nowej pracy.
+Ta funkcja wprowadza możliwość skorzystania z przycisku **Pełne** przy jednej z jednostek pracy w grupie. W starszych wersjach ta opcja była dostępna tylko w przypadku pobierania zamówienia zwykłego, a nie w przypadku pobierania z grupy. Jednak ta funkcja różni się od standardowego przycisku **Pełne**, gdyż anuluje pozostałą pracę. Nie sugeruje to użytkownikowi dodaia kolejnego pojemnika do tego samego klastra i nie powoduje automatycznego utworzenia nowej pracy.
 
 ## <a name="turn-on-the-cluster-position-full-feature"></a>Włącz funkcję „Stanowisko w grupie pełne”
 
@@ -103,7 +103,7 @@ Należy skonfigurować menu urządzenia przenośnego do wykorzystania istniejąc
 
     Zaakceptuj wartość domyślną we wszystkich pozostałych polach.
 
-1. W przypadku skróconej karty **Klasa pracy** , w razie potrzeby dodaj następujące dwa wiersze:
+1. W przypadku skróconej karty **Klasa pracy**, w razie potrzeby dodaj następujące dwa wiersze:
 
     - Wiersz 1 (zwykle obecny w danych demonstracyjnych):
 
@@ -130,7 +130,7 @@ Aby można było uruchomić pobieranie z grupy, należy utworzyć kilka prac wyc
 ### <a name="create-sales-order-1"></a>Utwórz zamówienie sprzedaży 1
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing \> Zamówienia sprzedaży \> Wszystkie zamówienia sprzedaży**.
-1. Wybierz pozycję **Nowe** , aby utworzyć nowe zamówienie sprzedaży 1.
+1. Wybierz pozycję **Nowe**, aby utworzyć nowe zamówienie sprzedaży 1.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
     - **Konto odbiorcy:** *US-010*
@@ -152,8 +152,8 @@ Aby można było uruchomić pobieranie z grupy, należy utworzyć kilka prac wyc
 1. Dla każdego właśnie dodanego wiersza należy wykonać następujące kroki, aby zarezerwować zapasy:
 
     1. Wybierz wiersz do zarezerwowania.
-    2. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w wybierz **Zapasy \> Rezerwacja**.
-    3. Na stronie **Rezerwacja** , w okienku akcji, wybierz pozycję **Rezerwacja partii** , aby zarezerwować zapasy.
+    2. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w wybierz **Zapasy \> Rezerwacja**.
+    3. Na stronie **Rezerwacja**, w okienku akcji, wybierz pozycję **Rezerwacja partii**, aby zarezerwować zapasy.
     4. Zamknij stronę **Rezerwacja**.
 
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -163,7 +163,7 @@ Aby można było uruchomić pobieranie z grupy, należy utworzyć kilka prac wyc
 ### <a name="create-sales-order-2"></a>Utwórz zamówienie sprzedaży 2
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing \> Zamówienia sprzedaży \> Wszystkie zamówienia sprzedaży**.
-1. Wybierz pozycję **Nowe** , aby utworzyć nowe zamówienie sprzedaży 2.
+1. Wybierz pozycję **Nowe**, aby utworzyć nowe zamówienie sprzedaży 2.
 1. W wyświetlonym oknie dialogowym **Utwórz zamówienie sprzedaży** można ustawić następujące wartości:
 
     - **Konto odbiorcy:** *US-011*
@@ -185,8 +185,8 @@ Aby można było uruchomić pobieranie z grupy, należy utworzyć kilka prac wyc
 1. Dla każdego właśnie dodanego wiersza należy wykonać następujące kroki, aby zarezerwować zapasy:
 
     1. Wybierz wiersz do zarezerwowania.
-    2. Na skróconej karcie **Wiersze zamówienia sprzedaży** , w wybierz **Zapasy \> Rezerwacja**.
-    3. Na stronie **Rezerwacja** , w okienku akcji, wybierz pozycję **Rezerwacja partii** , aby zarezerwować zapasy.
+    2. Na skróconej karcie **Wiersze zamówienia sprzedaży**, w wybierz **Zapasy \> Rezerwacja**.
+    3. Na stronie **Rezerwacja**, w okienku akcji, wybierz pozycję **Rezerwacja partii**, aby zarezerwować zapasy.
     4. Zamknij stronę **Rezerwacja**.
 
 1. W okienku akcji na karcie **Magazyn** wybierz opcję **Zwolnienie do magazynu**.
@@ -202,7 +202,7 @@ Powinny zostać utworzone dwa identyfikatory pracy, z których każdy ma dwa wie
 1. Wybierz wiersz dla każdego zamówienia sprzedaży, aby wyświetlić informacje powiązane z siatką **Wiersze**. Umożliwia zanotowanie lokalizacji, z której będzie pobierany każdy towar.
 1. Wybierz kolejno opcje **Zarządzanie zapasami \> Zapytania i raporty \> Dostępne zapasy**.
 1. Wybierz opcję **Wymiary** w okienku akcji, aby otworzyć okno dialogowe **Wyświetlane wymiary**.
-1. Upewnij się, że pola wyboru **Numer identyfikacyjy** , **Magazyn** i **Kod towaru** są zaznaczone, a następnie kliknij przycisk **OK**.
+1. Upewnij się, że pola wyboru **Numer identyfikacyjy**, **Magazyn** i **Kod towaru** są zaznaczone, a następnie kliknij przycisk **OK**.
 1. W okienku **Filtr** należy skonfigurować następujące filtry:
 
     - **Kod pozycji** — **jeden z** — *L0101* i *T100*
@@ -224,11 +224,11 @@ Powinny zostać utworzone dwa identyfikatory pracy, z których każdy ma dwa wie
 1. Wprowadź identyfikator pracy dla zamówienia sprzedaży 2 w celu przypisania go do pozycji w grupie 2.
 1. Wybierz **OK** (symbol znacznika wyboru).
 
-    Pojawi się strona **ZADANIE: Utwórz pobieranie dla grupy: pobierz** , które wyświetli *Pozycja L0101 2 PL*.
+    Pojawi się strona **ZADANIE: Utwórz pobieranie dla grupy: pobierz**, które wyświetli *Pozycja L0101 2 PL*.
 
 Ponieważ profil grupy ustawia liczbę stanowisk na 2, system automatycznie kieruje do pierwszego pobrania: dwie palety (PL) pozycji *L0101*.
 
-W dowolnym momencie podczas wykonywania poniższych kroków można wybrać kartę **Szczegóły** , aby wyświetlić dodatkowe informacje o zadaniu, takie jak lokalizacja pobierania.
+W dowolnym momencie podczas wykonywania poniższych kroków można wybrać kartę **Szczegóły**, aby wyświetlić dodatkowe informacje o zadaniu, takie jak lokalizacja pobierania.
 
 1. Ustaw wartość w polu **POZYCJA** na *L0101*. Powoduje to potwierdzenie kodu towaru wymaganego dla tego elementu menu (wcześniej skonfigurowano przez wybranie **Ustawienia potwierdzenie pracy** z poziomu strony **Element menu urządzenia przenośnego** po utworzeniu tego elementu menu).
 1. Umożliwia wprowadzenie numeru identyfikacyjnego, który jest skojarzony z towarem w lokalizacji pobierania. Zostaną pobrane dwie palety.
@@ -237,14 +237,14 @@ W dowolnym momencie podczas wykonywania poniższych kroków można wybrać kart�
 
     Zostanie wyświetlona strona **ZADANIE:Sortuj: Tworzenie pobierania dla grupy**. W tym miejscu zostaną posortowane dwie pobrane palety w wybrane pozycje pobrania. To stanowisko może być pojemnikiem lub kontenerem używanym do oddzielenia pobranego przedmiotu według zamówienia sprzedaży.
 
-1. Wyświetl szczegóły dotyczące towaru ( *L0101* ) i ilości ( *20* ea), które zostaną posortowane w ramach stanowiska 1 (dla zamówienia sprzedaży 1).
+1. Wyświetl szczegóły dotyczące towaru (*L0101*) i ilości (*20* ea), które zostaną posortowane w ramach stanowiska 1 (dla zamówienia sprzedaży 1).
 1. W polu **NAZWA STAN** wybierz *1*.
 1. Wybierz **OK** (symbol znacznika wyboru).
-1. Wyświetl szczegóły dotyczące towaru ( *L0101* ) i ilości ( *20* ea), które zostaną posortowane w ramach stanowiska 2 (dla zamówienia sprzedaży 2).
+1. Wyświetl szczegóły dotyczące towaru (*L0101*) i ilości (*20* ea), które zostaną posortowane w ramach stanowiska 2 (dla zamówienia sprzedaży 2).
 1. W polu **NAZWA STAN** wybierz *2*.
 1. Wybierz **OK** (symbol znacznika wyboru).
 
-    Pojawi się strona **ZADANIE: Utwórz pobieranie dla grupy: pobierz** , które wyświetli *Pozycja T0100 7 ea*.
+    Pojawi się strona **ZADANIE: Utwórz pobieranie dla grupy: pobierz**, które wyświetli *Pozycja T0100 7 ea*.
 
 W tym scenariuszu pozycja 1 nie akceptuje pełnej ilości towarów, które muszą zostać pobrane, aby zrealizować zamówienie sprzedaży 1. Pozycja musi być oznaczona jako pełna. W tym scenariuszu zostanie wydane częściowe pobranie drugiego towaru. Drugi towar zostanie częściowo pobrany dla stanowiska 1, a w celu wybrania pozostałej ilości do zrealizowania zamówienia zostanie utworzona nowa praca.
 
@@ -259,10 +259,10 @@ W tym scenariuszu pozycja 1 nie akceptuje pełnej ilości towarów, które musz�
 1. Wybierz **OK** (symbol znacznika wyboru).
 1. Wprowadź numer identyfikacyjny towaru, z którego ma zostać pobrany towar, ustawiając **pole LP** na wartość *LPREPL04*.
 1. Wybierz **OK** (symbol znacznika wyboru).
-1. Wyświetl szczegóły dotyczące towaru ( *T0100* ) i ilości ( *2* ea), które zostaną posortowane w ramach stanowiska 2 (dla zamówienia sprzedaży 2).
+1. Wyświetl szczegóły dotyczące towaru (*T0100*) i ilości (*2* ea), które zostaną posortowane w ramach stanowiska 2 (dla zamówienia sprzedaży 2).
 1. W polu **NAZWA STAN** wybierz *2*.
 1. Wybierz **OK** (symbol znacznika wyboru).
-1. Wyświetl szczegóły dotyczące towaru ( *T0100* ) i ilości ( *2* ea), które zostaną posortowane w ramach stanowiska 1 (dla zamówienia sprzedaży 1).
+1. Wyświetl szczegóły dotyczące towaru (*T0100*) i ilości (*2* ea), które zostaną posortowane w ramach stanowiska 1 (dla zamówienia sprzedaży 1).
 1. W polu **NAZWA STAN** wybierz *1*.
 1. Wybierz **OK** (symbol znacznika wyboru).
 
@@ -275,4 +275,4 @@ W tym scenariuszu pobranie klastra zostało zakończone i użytkownik jest prosz
 
     Zostanie wyświetlony komunikat „Pobieranie dla grupy zakończone”.
 
-Za pomocą elementu menu **Pobranie sprzedaży** można teraz pobrać pozostałą ilość. Następnie można skorzystać z elementu menu **Ładowanie sprzedaży** , aby przenieść elementy z lokalizacji pośredniej do doku załadunku.
+Za pomocą elementu menu **Pobranie sprzedaży** można teraz pobrać pozostałą ilość. Następnie można skorzystać z elementu menu **Ładowanie sprzedaży**, aby przenieść elementy z lokalizacji pośredniej do doku załadunku.

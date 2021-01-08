@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
 ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017720"
+ms.locfileid: "4435560"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Oto wyjaśnienie tego formatu:
 
-- `FieldName` to nazwa pola danych (np. **Ilość** ).
+- `FieldName` to nazwa pola danych (np. **Ilość**).
 - `FormatString` określa sposób, w jaki dane muszą być drukowane.
 
-Poniższe przykłady pokazują, jak można dostosować wartość w polu Ilość pracy ( **Ilość** ):
+Poniższe przykłady pokazują, jak można dostosować wartość w polu Ilość pracy (**Ilość**):
 
 - Aby zawsze były wyświetlane cztery cyfry (przy użyciu zer jako symboli zastępczych), należy użyć formularza `$Qty:0000$`. Na przykład, jeśli ilość wynosi 10, etykieta będzie zawierać „0010”.
 - Aby zawsze były wyświetlane dwa miejsca dziesiętne, należy zastosować zapis `$Qty:0.00$`. Na przykład, jeśli ilość wynosi 10, etykieta będzie zawierać „10.00”.

@@ -3,7 +3,7 @@ title: Korekty ceny i rabaty
 description: Ten artykuł zawiera informacje dotyczące korekt cen i rabatów w Dynamics 365 Commerce.
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dfaacfa7681258e3b2273083017c0c398d566651
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
+ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023725"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "4584322"
 ---
 # <a name="price-adjustments-and-discounts"></a>Korekty ceny i rabaty
 
@@ -41,11 +41,13 @@ Korekty ceny i rabaty mogą dotyczyć produktów, wariantów lub kategorii. W pr
 
 ## <a name="types-of-discounts"></a>Typy rabatów
 
-Istnieją cztery typy rabatów:
+Istnieje wiele typów rabatów:
 
 - **Prosty rabat** — pojedynczy procent lub kwota.
 - **Rabat ilościowy** — stosowany przy zakupie co najmniej dwóch produktów.
 - **Rabat łączony** — stosowany przy zakupie określonej kombinacji produktów.
 - **Rabat progowy** — stosowany przy sumie transakcji powyżej określonej kwoty.
+- **Rabat oparty na metodach płatności** — Rabat stosowany w przypadku, gdy suma transakcji jest większa niż określona kwota i określony typ płatności (na przykład gotówka, karta kredytowa lub debetowa) jest używany do celów płatności.
+- **Rabat wysyłkowy** — Rabat stosowany, gdy suma transakcji przekracza określoną kwotę, a zamówienie jest objęte określonym sposobem dostawy (na przykład dostawa w ciągu dwóch dni lub dostawa z dnia na dzień).
 
 Z grupami cen mogą być skojarzone zarówno korekty ceny i rabaty. Grupy cen mogą być następnie skojarzone z kanałami, katalogami, przynależnościami i programami lojalnościowymi.

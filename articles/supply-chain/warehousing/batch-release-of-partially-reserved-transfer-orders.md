@@ -18,11 +18,11 @@ ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016299"
+ms.locfileid: "4435586"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Wsadowe zwalnianie częściowo zarezerwowanych zamówień przeniesienia
 
@@ -45,15 +45,15 @@ Przed częściowym zwolnieniem zamówienia do magazynu w partii należy zwolnić
 
 Zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży są określone na poziomie firmy. W zależności od konfiguracji zasad realizacji, zwolnienie zamówień w partii zostanie zaakceptowane lub odrzucone. Zamówienia zostaną następnie odpowiednio przetworzone.
 
--   Aby utworzyć zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji** , a następnie utwórz zasady realizacji, wprowadzając nazwę i opis.
+-   Aby utworzyć zasady realizacji dla zamówień przeniesienia i zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji**, a następnie utwórz zasady realizacji, wprowadzając nazwę i opis.
 
--   Aby określić współczynnik realizacji, typ wartości i komunikat wyświetlany po naruszeniu zasad realizacji, kliknij kolejno opcję **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji** , a następnie ustaw pola **Współczynnik realizacji** , **Typ wartości** i **Komunikat dotyczący naruszenia współczynnika realizacji**.
+-   Aby określić współczynnik realizacji, typ wartości i komunikat wyświetlany po naruszeniu zasad realizacji, kliknij kolejno opcję **Zarządzanie magazynem** \> **Konfiguracja** \> **Zwolnij do magazynu** \> **Zasady realizacji**, a następnie ustaw pola **Współczynnik realizacji**, **Typ wartości** i **Komunikat dotyczący naruszenia współczynnika realizacji**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Ustawianie zasad realizacji dla zamówień przeniesienia i zamówień sprzedaży
 
--   Aby ustawić zasady realizacji dla zamówień przeniesienia kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem** \> **Zamówienia przeniesienia** \> **Zarządzanie magazynem** , a następnie wybierz zasady realizacji zamówienia przeniesienia.
+-   Aby ustawić zasady realizacji dla zamówień przeniesienia kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem** \> **Zamówienia przeniesienia** \> **Zarządzanie magazynem**, a następnie wybierz zasady realizacji zamówienia przeniesienia.
 
--   Aby ustawić zasady realizacji zamówień sprzedaży dla zamówień sprzedaży, kliknij kolejno opcję **Rozrachunki z odbiorcami** \> **Konfiguracja** \> **Parametry modułu rozrachunków z odbiorcami** \> **Zarządzanie z magazynem** , a następnie wybierz zasady realizacji zamówienia sprzedaży.
+-   Aby ustawić zasady realizacji zamówień sprzedaży dla zamówień sprzedaży, kliknij kolejno opcję **Rozrachunki z odbiorcami** \> **Konfiguracja** \> **Parametry modułu rozrachunków z odbiorcami** \> **Zarządzanie z magazynem**, a następnie wybierz zasady realizacji zamówienia sprzedaży.
 
 ## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Zezwalanie na zwolnienie partii i określanie ilości, która ma zostać zwolniona w partii
 

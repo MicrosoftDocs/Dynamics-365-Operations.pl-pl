@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 03e2557e29194f17a9a586470ced5b352408b07c
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898649"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462261"
 ---
 # <a name="leave-and-absence-concepts"></a>Koncepcje urlopów i nieobecności
 

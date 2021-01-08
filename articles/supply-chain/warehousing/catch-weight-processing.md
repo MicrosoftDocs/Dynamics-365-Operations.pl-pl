@@ -17,11 +17,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
 ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016269"
+ms.locfileid: "4435584"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem
 
@@ -33,7 +33,7 @@ ms.locfileid: "4016269"
 Aby używać funkcji zarządzania magazynem do przetwarzania ilości efektywnej produktów, trzeba użyć klucza konfiguracji licencji do włączania tej funkcji. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**. Następnie na karcie **Klucze konfiguracji** rozwiń opcje **Handel \> Zarządzanie magazynem i transportem** i zaznacz pole wyboru dla **Ilość efektywna dla magazynu**.
 
 > [!NOTE]
-> Zarówno klucz konfiguracji licencji **Zarządzanie magazynem i transportem** , jak i klucz konfiguracji licencji **Dystrybucja procesów \>ilości efektywnej** muszą być również włączone. Aby skonfigurować klucze konfiguracji dla ilości efektywnej, należy również włączyć tę funkcję za pomocą obszaru roboczego **zarządzanie funkcją**. Główną funkcją, która musi być włączona, jest **Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem**. Dwie powiązane, ale opcjonalne funkcje, które można włączyć, to **zmiany stanu zapasów dla produktów w ilości efektywnej** i **użyj istniejących znaczników ilości efektywnej podczas zgłaszania zleceń produkcyjnych jako gotowych**.
+> Zarówno klucz konfiguracji licencji **Zarządzanie magazynem i transportem**, jak i klucz konfiguracji licencji **Dystrybucja procesów \>ilości efektywnej** muszą być również włączone. Aby skonfigurować klucze konfiguracji dla ilości efektywnej, należy również włączyć tę funkcję za pomocą obszaru roboczego **zarządzanie funkcją**. Główną funkcją, która musi być włączona, jest **Przetwarzanie ilości efektywnej produktu przy użyciu funkcji zarządzania magazynem**. Dwie powiązane, ale opcjonalne funkcje, które można włączyć, to **zmiany stanu zapasów dla produktów w ilości efektywnej** i **użyj istniejących znaczników ilości efektywnej podczas zgłaszania zleceń produkcyjnych jako gotowych**.
 
 Po włączeniu klucza konfiguracji licencji, gdy tworzysz zwolniony produkt, możesz wybierać **Ilości efektywną**. Można także skojarzyć zwolniony produkt z grupą wymiarów magazynowania, dla której wybrany jest parametr **Użyj procesów zarządzania magazynami**.
 
@@ -97,19 +97,19 @@ Proces śledzenia znaczników ilości efektywnej może być używany dla towaró
 
 Innym ważnym parametrem związanym z przetwarzaniem znaczników w ilości efektywnej jest **Metoda śledzenia wymiaru znaczników ilości efektywnej**. Tagi mogą być częściowo śledzone lub w pełni śledzone. Jeśli znacznik jest częściowo śledzony, śledzi wymiary produktów, wymiary śledzenia oraz stan zapasów. Jeśli znacznik jest całkowicie śledzony, śledzi wymiary produktów, wymiary śledzenia oraz **wszystkie** wymiary produktu.
 
-Ponadto, gdy towar jest śledzony przez znacznik, istnieje parametr **Metody przechwytywania znacznika wychodzącego**. Ten parametr można skonfigurować w taki sposób, aby zawsze wyświetlany był monit o znacznik dotyczący transakcji wychodzących z urządzenia przenośnego. Można również ustawić parametr w taki sposób, aby etykiety były wyświetlane tylko wtedy, gdy są wymagane. Na przykład w magazynie na danym numerze identyfikacyjnym znajduje się pięć znaczników ilości efektywnej, co oznacza, że użytkownik chce pobrać wszystkie pięć znaczników z numeru identyfikacyjnego. W takim przypadku, jeśli parametr **Metody przechwytywania znacznika wychodzącego** ma ustawioną opcję **Monituj o znacznik, w razie potrzeby** , automatycznie pobieranych jest pięć znaczników. Nie ma konieczności skanowania każdego znacznika. Jeśli parametr ma wartość **Zawsze monituj o znacznik** , należy przeskanować każdy znacznik, nawet jeśli zostaną pobrane wszystkie pięć znaczników.
+Ponadto, gdy towar jest śledzony przez znacznik, istnieje parametr **Metody przechwytywania znacznika wychodzącego**. Ten parametr można skonfigurować w taki sposób, aby zawsze wyświetlany był monit o znacznik dotyczący transakcji wychodzących z urządzenia przenośnego. Można również ustawić parametr w taki sposób, aby etykiety były wyświetlane tylko wtedy, gdy są wymagane. Na przykład w magazynie na danym numerze identyfikacyjnym znajduje się pięć znaczników ilości efektywnej, co oznacza, że użytkownik chce pobrać wszystkie pięć znaczników z numeru identyfikacyjnego. W takim przypadku, jeśli parametr **Metody przechwytywania znacznika wychodzącego** ma ustawioną opcję **Monituj o znacznik, w razie potrzeby**, automatycznie pobieranych jest pięć znaczników. Nie ma konieczności skanowania każdego znacznika. Jeśli parametr ma wartość **Zawsze monituj o znacznik**, należy przeskanować każdy znacznik, nawet jeśli zostaną pobrane wszystkie pięć znaczników.
 
 > [!NOTE]
 > Z reguły tagi są przechwytywane i aktualizowane tylko z elementów menu urządzeń przenośnych. Istnieje jednak kilka scenariuszy, w których tagi są przechwytywane w innym miejscu (np. z ręcznej stacji pakowania). Jednak na ogół elementy menu urządzenia przenośnego powinny być używane dla wszystkich działań magazynowych, jeśli są używane znaczniki.
 
 ### <a name="how-to-capture-catch-weight"></a>Jak rejestrować ilość efektywną
 
-**Ilość używane jest śledzenie ilości efektywnej** , znacznik musi zawsze zostać utworzony do każdej przyjmowanej jednostki ilości efektywnej i każdy znacznik musi być zawsze skojarzony z wagą.
+**Ilość używane jest śledzenie ilości efektywnej**, znacznik musi zawsze zostać utworzony do każdej przyjmowanej jednostki ilości efektywnej i każdy znacznik musi być zawsze skojarzony z wagą.
 
 Na przykład jednostką ilości efektywnej jest **Opakowanie** i odbierasz jedną paletę ośmiu opakowań. W takim przypadku osiem unikatowych znaczników ilości efektywnej musi zostać utworzonych i waga musi być skojarzona z każdym z tych znaczników. W zależności od znacznika ilości efektywnej przyjmowanej do magazynu można zarejestrować albo wagę wszystkich ośmiu opakowań, a następnie przypisać do każdego z nich wagę uśrednioną, lub można zważyć indywidualnie każde opakowanie.
 W przypadku **użyj znaczników ilości efektywnej podczas zgłaszania funkcji zleceń produkcyjnych jako gotowych** z włączonym elementem menu urządzenia przenośnego zapasy są aktualizowane na podstawie istniejących informacji o znacznikach ilości efektywnej. W rezultacie aplikacja magazynowa nie monituje o przechwytywanie danych znaczników ilości efektywnej jako części raportu produkcji jako zakończonej operacji.
 
-**Jeśli śledzenie znaczników ilości efektywnej nie jest używane** , można zarejestrować wagę dla każdego wymiaru (na przykład, dla każdego numeru identyfikacyjnego i wymiaru śledzenia). Alternatywnie waga może być rejestrowana na podstawie poziomu zagregowanego, np. pięciu numerów identyfikacyjnych (palet).
+**Jeśli śledzenie znaczników ilości efektywnej nie jest używane**, można zarejestrować wagę dla każdego wymiaru (na przykład, dla każdego numeru identyfikacyjnego i wymiaru śledzenia). Alternatywnie waga może być rejestrowana na podstawie poziomu zagregowanego, np. pięciu numerów identyfikacyjnych (palet).
 
 W przypadku metod przechwytywania wagi załadunkowej opcja **Na jednostkę ilości efektywnej** umożliwia określenie, że ważenie powinno być wykonane dla każdej jednostki ilości efektywnej (na przykład w przypadku pola). Opcja **Na jednostkę pobierania** umożliwia określenie, że waga powinna zostać przechwycona na podstawie ilości, która zostanie pobrana (na przykład trzy pola). Należy zwrócić uwagę, że dla procesu odbioru z linii produkcyjnej i wewnętrznego przeniesienia, średnia waga będzie używana, jeśli używana jest opcja **Nie zarejestrowano**.
 
@@ -124,7 +124,7 @@ Metody przechwytywania wielu wag są zdefiniowane w zasadach obsługi pozycji w 
 | Metoda rejestrowania obliczonej masy           | Zliczanie                                   |
 | Metoda rejestrowania masy przesunięcia magazynowego | Przeniesienie magazynu                         |
 
-Aby uniemożliwić procesom pobrania zarządzania magazynem przechwytywanie wag powodujące dopasowania zysku/straty ilości efektywnej, można użyć metody zarządzania odchyleniem masy dostawy wychodzącej. Metoda odchyleń wagi wychodzącej jest stosowana podczas następujących procesów urządzeń przenośnych: pobranie sprzedaży, przeniesienie pobrania, pobranie do produkcji, przesunięcia, Inwentaryzacja i przeniesienia magazynowe. Można skorzystać z opcji **Ogranicz odchylenie masy** , jeśli waga towaru w ilości efektywnej nie jest zmieniana w czasie przechowywania magazynu, a korekty zysku/straty w ilości efektywnej nie są wymagane. Można skorzystać z opcji **Zezwalaj na odchylenie masy** , jeśli waga może ulegać wahaniom, a korekty dotyczące zysku/straty są wymagane w przypadku rejestrowania wahań wagi.
+Aby uniemożliwić procesom pobrania zarządzania magazynem przechwytywanie wag powodujące dopasowania zysku/straty ilości efektywnej, można użyć metody zarządzania odchyleniem masy dostawy wychodzącej. Metoda odchyleń wagi wychodzącej jest stosowana podczas następujących procesów urządzeń przenośnych: pobranie sprzedaży, przeniesienie pobrania, pobranie do produkcji, przesunięcia, Inwentaryzacja i przeniesienia magazynowe. Można skorzystać z opcji **Ogranicz odchylenie masy**, jeśli waga towaru w ilości efektywnej nie jest zmieniana w czasie przechowywania magazynu, a korekty zysku/straty w ilości efektywnej nie są wymagane. Można skorzystać z opcji **Zezwalaj na odchylenie masy**, jeśli waga może ulegać wahaniom, a korekty dotyczące zysku/straty są wymagane w przypadku rejestrowania wahań wagi.
 
 ## <a name="unsupported-scenarios"></a>Nieobsługiwane scenariusze
 
@@ -209,4 +209,4 @@ Oprócz ograniczeń, które obecnie dotyczą produktów w ilości efektywnej, oz
 - Funkcja wycofywania pracy nie jest obsługiwana w przypadku towarów w ilości efektywnej, które są śledzone w postaci numeru znacznika.
 
 > [!NOTE]
-> Powyższe informacje o znacznikach ilości efektywnej są prawidłowe tylko wtedy, gdy produkt w ilości efektywnej ma metodę śledzenia wymiarów znaczników ilości efektywnej, która jest w pełni śledzona (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i wszystkie wymiary przechowywania** ). Jeśli towar w ilości efektywnej jest tylko częściowo śledzony znacznikami (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i stan zapasów** ), obowiązują dodatkowe ograniczenia. Ponieważ w tym przypadku widoczność jest tracona między znacznikiem i zapasami, niektóre dodatkowe scenariusze nie są obsługiwane.
+> Powyższe informacje o znacznikach ilości efektywnej są prawidłowe tylko wtedy, gdy produkt w ilości efektywnej ma metodę śledzenia wymiarów znaczników ilości efektywnej, która jest w pełni śledzona (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i wszystkie wymiary przechowywania**). Jeśli towar w ilości efektywnej jest tylko częściowo śledzony znacznikami (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i stan zapasów**), obowiązują dodatkowe ograniczenia. Ponieważ w tym przypadku widoczność jest tracona między znacznikiem i zapasami, niektóre dodatkowe scenariusze nie są obsługiwane.

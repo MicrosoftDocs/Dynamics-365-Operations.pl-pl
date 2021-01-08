@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3888912"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435326"
 ---
 # <a name="schedule-work-orders"></a>Zaplanuj zlecenia pracy
 
@@ -88,7 +88,7 @@ W poniższych przykładach wynik krytyczny wynosi „2”, a wyniki poziomu usł
 | WO-00010817   | Dwa dni od teraz   | 2                      | 20              | (-2 \* 10) + (2 \* 2) + 5 / 20     | \- 15.75   |
 | WO-00010818   | Dwa dni od teraz   | 3                      | 5               | (-2 \* 10) + (2 \* 3) + 5 / 5      | \- 13      |
 
-Zlecenia pracy będą planowane w następującej kolejności: WO-000108**16**, WO-000108**18**, WO-000108**17**.
+Zlecenia pracy będą planowane w następującej kolejności: WO-000108 **16**, WO-000108 **18**, WO-000108 **17**.
 
 **Przykład 2:**
 
@@ -98,7 +98,7 @@ Zlecenia pracy będą planowane w następującej kolejności: WO-000108**16**, W
 | WO-00010817   | Dwa dni od teraz   | 2                      | 20                  | (-2 \* 10) + (2 \* 2) + 100 / 20 | \- 11    |
 | WO-00010818   | Dwa dni od teraz   | 3                      | 5                   | (-2 \* 10) + (2 \* 3) + 100 / 5  | 6        |
 
-Jeśli wynik poziomu usług jest zwiększany do wartości „100” zamiast „5”, zlecenie planowane będzie na:WO-000108**18**, WO-000108**16**, WO-000108**17**.
+Jeśli wynik poziomu usług jest zwiększany do wartości „100” zamiast „5”, zlecenie planowane będzie na:WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
 Wyniki oceny dotyczące obliczania, które pracownicy obsługi powinni pracować w zleceniach pracy, są ustawiane jako numery, które są dodawane do każdego obliczenia pracownika obsługi podczas planowania zlecenia pracy. Pracownik obsługi z najwyższym wynikiem jest wybrany w zleceniu pracy. Poniżej znajduje się krótki opis wyników pracownika konserwacji:
 

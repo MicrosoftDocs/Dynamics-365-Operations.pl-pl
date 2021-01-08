@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 045bb59642d766ac23939dee0900ea6911fe50fe
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3890040"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435002"
 ---
 # <a name="create-an-asset"></a>Tworzenie składnika majątku
 
@@ -53,7 +53,7 @@ W tym temacie opisano sposób tworzenia składnika majątku w Zarządzaniu skła
 
 Lokalizacja czynności konserwacyjnych, do której jest powiązany składnika majątku, jest wyświetlana w polu **Lokalizacja czynności konserwacyjnych**. Jeśli składnik majątku jest nadrzędny, liczba elementów podrzędnych wobec tego składnika majątku jest wyświetlana w polu **Podrzędny**. Jeśli składnik majątku jest podrzędny względem składnika istniejącego, identyfikator nadrzędnego składnika majątku jest wyświetlany w polu **Nadrzędny**.
 
-Można edytować informacje **Producent składnika majątku** oraz **Model składnika majątku** używane do zarządzania częściami zamiennymi, alternatywnymi częściami zamiennymi i domyślnymi typami pracy. Więcej informacji można uzyskać w artykule [Producenci i modele składników majątku](../setup-for-objects/product-and-model.md). W razie potrzeby można również dodać informacje **Rok modelu**i **Numer seryjny**.
+Można edytować informacje **Producent składnika majątku** oraz **Model składnika majątku** używane do zarządzania częściami zamiennymi, alternatywnymi częściami zamiennymi i domyślnymi typami pracy. Więcej informacji można uzyskać w artykule [Producenci i modele składników majątku](../setup-for-objects/product-and-model.md). W razie potrzeby można również dodać informacje **Rok modelu** i **Numer seryjny**.
 
 **Bieżący stan cyklu życia** jest używany do definiowania, czy składnik majątku jest aktywny czy nieaktywny. Podczas tworzenia składnika majątku etap jest zawsze ustawiany na pierwszy etap w grupie etapów składników majątku. Gdy wszystko będzie gotowe do aktywowania składnika zasobu, kliknij przycisk **Aktualizuj stan składnika majątku** i wybierz stan cyklu życia zdefiniowany jako „aktywny środek majątku”, a następnie kliknij przycisk **OK**.
 

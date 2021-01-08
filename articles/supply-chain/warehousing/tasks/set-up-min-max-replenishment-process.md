@@ -18,11 +18,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016731"
+ms.locfileid: "4435553"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Konfigurowanie procesu uzupełnienia minimalnej i maksymalnej ilości
 

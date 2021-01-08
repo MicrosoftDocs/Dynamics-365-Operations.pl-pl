@@ -3,7 +3,7 @@ title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/30/2020
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c6856e417ee47f8f582f797c5bcedcff23a1432f
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
+ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930000"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4420154"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Możesz wejść w interakcję z botem, aby poprosić o informacje i złożyć wniosek o urlop. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Ponadto możesz wysyłać osobom informacje o zbliżającym się czasie wolnym w zespołach i czatach poza aplikacją Human Resources.
+Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Możesz wejść w interakcję z botem, aby poprosić o informacje i złożyć wniosek o urlop. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Możesz też wysyłać użytkownikom informacje o zbliżającym się czasie wolnym w zespołach i na czatach poza aplikacją Human Resources.
 
 ## <a name="install-the-app"></a>Instalowanie aplikacji
 
@@ -182,11 +182,25 @@ Jeśli nie możesz zalogować się do aplikacji, być może konto używane do lo
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Błąd podczas zatwierdzania żądań urlopu w aplikacji Human Resources w Teams
 
-Jeśli otrzymasz komunikat o błędzie podczas próby zatwierdzenia żądań urlopu w aplikacji Teams, należy wykonać następujące kroki rozwiązywania problemów:
+Jeśli otrzymasz komunikat o błędzie podczas próby zatwierdzenia wniosków o urlop w aplikacji Teams, wykonaj następujące kroki, aby rozwiązać problem:
 
 1. Sprawdź, czy konto używane do logowania Microsoft Teams jest takie samo, którego używasz w celu uzyskania dostępu do rozwiązania Dynamics 365 Human Resources.
 
 2. Sprawdź, czy jesteś prawidłową osobą zatwierdzającą żądanie, sprawdzając ustawienia przepływu pracy do zatwierdzenia urlopu. Aby uzyskać więcej informacji o przepływach pracy wniosków o urlop, zobacz temat [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md).
+
+## <a name="known-accessibility-issues"></a>Znane problemy dotyczące ułatwień dostępu
+
+W aplikacji Human Resources w Teams pojawiają się następujące problemy ułatwień dostępu (zostaną one naprawione w kolejnych wersjach aplikacji).
+
+| Wystawienie | Obejście lub wyjaśnienie problemu |
+| --- | --- |
+| Powiększenie do 400% na pulpicie powoduje ukrycie niektórych przycisków akcji. | Zaleca się używanie lupy zamiast powiększenia do czasu, aż usuniemy problemy z tym poziomem powiększenia. |
+| Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver błędnie interpretuje je jako pozycję, z którą można powiązać działanie. |
+| Jeśli przeciągniesz palcem po ekranie, kiedy wyskakujące okienko lub menu jest otwarte, VoiceOver pominie odczytywanie zawartości okienka lub menu. | Przeglądaj zawartość, używając skanera linii papilarnych. |
+| Na karcie **Czas wolny** podczas przechodzenia do **Kodu przyczyny** w nowym wniosku uruchamia się dodatkowy gest przeciągnięcia. | Nie ma żadnego ukrytego formantu, do którego można uzyskać dostęp za pomocą tego gestu przeciągnięcia. |
+| Przy otwartym kalendarzu przeciągnięcie palcem na karcie **Czas wolny** prowadzi do obszaru poza formantem, zamiast na górę nowego wniosku lub do trybu edycji wniosku. | Kiedy dojdziesz do opcji **Przejdź do dzisiaj**, potraktuj tę pozycję jako koniec formantu i przesuń palcem w odwrotnym kierunku, aby wrócić na górę strony. |
+| VoiceOver nie odczytuje etykiet dat. | Daty, które wyświetlają się w parach, to zawsze **Data rozpoczęcia** i **Data zakończenia**. |
+| Na karcie **Czatu** podczas wpisywania daty przy użyciu narzędzia wspomagającego lub nawigacji z klawiatury obraz przeskakuje na górę strony. | Naciskaj klawisz Tab, aż przejdziesz z powrotem do obszaru wpisywania wiadomości. |
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 

@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: b0e8168ca9ec9ca68011650a73cc09983deca645
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055744"
+ms.locfileid: "4415077"
 ---
 # <a name="navigation-menu-module"></a>Moduł Menu nawigacji
 
@@ -44,12 +44,12 @@ Na poniższej ilustracji pokazano przykład menu nawigacji dla witryny Fabrikam 
 
 | Nazwa właściwości             | Wartość                 | opis |
 |---------------------------|-----------------------|-------------|
-| Źródło                  | **Handel detaliczny** , **Ręczne tworzenie** , **Tworzenie detaliczne i ręczne** | Wartość **Detaliczna** umożliwia wyświetlanie hierarchii nawigacji kanału w menu nawigacji z poziomu modułu Commerce Headquarter. **Tworzenie ręczne** umożliwia analizę statycznych elementów menu. Ustawienie wartości **Tworzenie ręczne i detaliczne** umożliwia stosowanie kombinacji obu typów. |
+| Źródło                  | **Handel detaliczny**, **Ręczne tworzenie**, **Tworzenie detaliczne i ręczne** | Wartość **Detaliczna** umożliwia wyświetlanie hierarchii nawigacji kanału w menu nawigacji z poziomu modułu Commerce Headquarter. **Tworzenie ręczne** umożliwia analizę statycznych elementów menu. Ustawienie wartości **Tworzenie ręczne i detaliczne** umożliwia stosowanie kombinacji obu typów. |
 | Wyświetlanie obrazów kategorii | **Prawda** lub **Fałsz**    | Po włączeniu tej właściwości w menu nawigacji są wyświetlane obrazy kategorii zdefiniowane w module Commerce Headquarter dla każdej kategorii. Dodane do modułu Commerce Release 10.0.14. |
 | Włącz wielopoziomowe menu nawigacji | **Prawda** lub **Fałsz** | Po włączeniu tej właściwości menu nawigacji może zawierać wiele poziomów hierarchii nawigacji. Ta funkcja nie jest dostępna tylko w Dynamics 365 Commerce w wersji 10.0.15. |
 | Liczba poziomów | liczba całkowita | Właściwość ta definiuje liczby poziomów, które powinny być pokazywane, jeśli dla właściwości **Włącz wielopoziomowe menu nawigacji** jest ustawiona wartość **Prawda**. |
 | Statyczny element menu| Tablica wartości| Statyczne elementy menu, które kojarzą nazwę elementu menu z łączem do statycznej strony witryny. Można utworzyć elementy menu poniżej innych elementów menu. Domyślnie menu statyczne pojawia się na poziomie głównym i zostanie dołączone do hierarchii nawigacji kanału, jeśli taka istnieje. |
-| Pokazywanie menu głównego | **Prawda** lub **Fałsz** | Gdy ta właściwość jest włączona, menu nawigacji można zdefiniować za pomocą niestandardowego katalogu głównego (na przykład **Kup teraz** ). Ta funkcja nie jest dostępna tylko w Dynamics 365 Commerce w wersji 10.0.15. |
+| Pokazywanie menu głównego | **Prawda** lub **Fałsz** | Gdy ta właściwość jest włączona, menu nawigacji można zdefiniować za pomocą niestandardowego katalogu głównego (na przykład **Kup teraz**). Ta funkcja nie jest dostępna tylko w Dynamics 365 Commerce w wersji 10.0.15. |
 | Menu główne | ciąg | Ta właściwość może służyć do definiowania tekstu dla niestandardowego katalogu głównego, jeśli właściwość **Pokazywanie menu głównego** ma wartość **Prawda**. |
 
 Na poniższej ilustracji pokazano przykład obrazu kategorii wyświetlanego w menu nawigacji witryny Fabrikam.

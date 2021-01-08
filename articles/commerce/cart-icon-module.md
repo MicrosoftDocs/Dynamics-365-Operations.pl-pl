@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ab1609d332b96c0588b06aa086dd4fee944e5d9
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: ebc5cfa490a4c8538fd081aced0844ed01d63a26
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055767"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415100"
 ---
 # <a name="cart-icon-module"></a>Moduł ikony koszyka
 
@@ -59,7 +59,9 @@ Aby dodać moduł ikony koszyka, zobacz [Moduł nagłówka](author-header-module
 
 [Moduł adresu wysyłki](ship-address-module.md)
 
-[Moduł Opcje dostawy](delivery-options-module.md)
+[Moduł opcji dostawy](delivery-options-module.md)
+
+[Moduł informacji o odbiorze](pickup-info-module.md)
 
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 

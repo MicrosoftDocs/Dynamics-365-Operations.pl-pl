@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9c4e8dca93fdf9ee605ffeb63f259389b58a4b36
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018243"
+ms.locfileid: "4435620"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Tworzenie zamówienia zakupu z harmonogramem dostaw
 
@@ -46,7 +46,7 @@ W tym temacie pokazano sposób tworzenia harmonogramu dostaw dla zamówienia zak
 - W polu Data dostawy wybierz datę, która jest późniejsza o tydzień niż data w pierwszym wierszu dostawy.  
 - Ilość całkowitą przydzieloną do wierszy harmonogramu dostaw można śledzić w polach **Razem** i **Pozostałe**. Jeśli pozostała ilość wynosi zero, cała ilość z oryginalnego wiersza została przydzielona do harmonogramu.  
 12. Rozwiń sekcję **Konwersja opłat**.
-- Opcje dostępne w tym miejscu umożliwiają kontrolowanie sposobu rozdziału opłat między wiersze harmonogramu dostaw. Jeśli wybierzesz opcję **Kopiuj kwoty brutto** , kwota opłaty z oryginalnego wiersza zamówienia zostanie skopiowana do każdego wiersza dostawy. Opcja **Przenieś do wierszy dostawy** dzieli opłatę z oryginalnego wiersza zgodnie z ilością w każdym wierszu dostawy.  
+- Opcje dostępne w tym miejscu umożliwiają kontrolowanie sposobu rozdziału opłat między wiersze harmonogramu dostaw. Jeśli wybierzesz opcję **Kopiuj kwoty brutto**, kwota opłaty z oryginalnego wiersza zamówienia zostanie skopiowana do każdego wiersza dostawy. Opcja **Przenieś do wierszy dostawy** dzieli opłatę z oryginalnego wiersza zgodnie z ilością w każdym wierszu dostawy.  
 13. Zwiń sekcję **Konwersja opłat**.
 14. Kliknij przycisk **OK**.
 - Harmonogram dostaw jest teraz zastosowany do zamówienia.  
@@ -72,5 +72,5 @@ Przed przetwarzaniem przyjęcia produktów należy potwierdzić zamówienie zaku
 5. Rozwiń sekcję **Wiersze**.
 - Zwróć uwagę, że dokument przyjęcia produktów został utworzony dla dwóch wierszy dostawy, a nie oryginalnego wiersza zamówienia. Gdyby przyjęcie zostało zarejestrowane w magazynie, zostałoby również zarejestrowane w wierszach harmonogramu dostaw.  
 6. Zwiń sekcję **Wiersze**.
-7. Wybierz **OK** , aby zaksięgować przyjęcie.
+7. Wybierz **OK**, aby zaksięgować przyjęcie.
 

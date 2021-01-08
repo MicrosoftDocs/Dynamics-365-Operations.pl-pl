@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 5400a2e743a78124dca4bf9be3ccaf7870ea8b7d
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818257"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665279"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
@@ -47,7 +47,7 @@ Moduł wyboru sklepów umożliwia użytkownikom wprowadzenie lokalizacji (miasto
 
 Moduł wyboru sklepów jest zintegrowany z [interfejsami API usługi mapy Bing](https://docs.microsoft.com/bingmaps/rest-services/), co umożliwia korzystanie z funkcji automatycznego kodowania i autosugerowania usługi Bing. Klucz interfejsu API map usługi Bing jest wymagany i należy go dodać do strony udostępnione parametry Commerce headquarters. Interfejs API geokodowania służy do konwertowania lokalizacji na wartości szerokości i długości geograficznej. Integracja z interfejsem API automatycznego sugerowania jest używana do pokazywania sugestii wyszukiwania, gdy użytkownicy wprowadzają lokalizacje w polu wyszukiwania.
 
-W przypadku interfejsu API REST z automatyczną sugestią musisz upewnić się, że poniższe adresy URL są dozwolone (nazywane również „białymi listami”) zgodnie z polityką bezpieczeństwa treści (CSP) Twojej witryny. Ta konfiguracja jest wykonywana w narzędziu do tworzenia witryn Commerce przez dodanie dozwolonych adresów URL do różnych dyrektyw CSP dla witryny (na przykład **img-src**). Aby uzyskać więcej informacji, zajrzyj do [zasad zabezpieczeń dotyczących zawartości](manage-csp.md). 
+W przypadku interfejsu API REST z automatyczną sugestią musisz upewnić się, że poniższe adresy URL są dozwolone zgodnie z polityką bezpieczeństwa treści (CSP) Twojej witryny. Ta konfiguracja jest wykonywana w narzędziu do tworzenia witryn Commerce przez dodanie dozwolonych adresów URL do różnych dyrektyw CSP dla witryny (na przykład **img-src**). Aby uzyskać więcej informacji, zajrzyj do [zasad zabezpieczeń dotyczących zawartości](manage-csp.md). 
 
 - Do dyrektywy **connect-src** dodaj **&#42;.bing.com**.
 - Do dyrektywy **img-src**, dodaj **&#42;.virtualearth.net**.
@@ -65,6 +65,9 @@ Aby ten scenariusz zadziałał, produkty należy skonfigurować tak, aby był u�
 Poniższy obraz pokazuje przykład modułu wyboru sklepu używanego w PDP.
 
 ![Przykład modułu selektora sklepu używanego na PDP](./media/BOPIS.PNG)
+
+> [!NOTE]
+> W wersji 10.0.16 i nowszych można włączyć nową funkcję, która umożliwia organizacji definiowanie wielu trybów odbioru opcji dostawy dla klientów.  Jeśli ta funkcja jest włączona, selektor sklepu i inne moduły handlu elektronicznego zostaną ulepszone, aby umożliwić kupującemu wybór spośród potencjalnie wielu opcji odbioru, jeśli są skonfigurowane.  Aby dowiedzieć się więcej o tej funkcji, zapoznaj się z [tą dokumentacją](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
 
 ## <a name="find-stores-mode"></a>Tryb znajdowania sklepu
 

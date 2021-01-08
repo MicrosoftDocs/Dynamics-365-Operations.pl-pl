@@ -18,11 +18,11 @@ ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015110"
+ms.locfileid: "4415067"
 ---
 # <a name="verify-page-content-accessibility"></a>Weryfikowanie dostępności zawartości strony
 
@@ -54,7 +54,7 @@ Aby włączyć integrację usługi [Microsoft Accessibility Insights](https://ac
 Aby włączyć integrację usługi [Microsoft Accessibility Insights](https://accessibilityinsights.io/) dla pojedynczej witryny usługi Commerce, wykonaj następujące kroki.
 
 1. W obszarze **Witryny** wybierz **Fabrikam** (lub nazwę witryny).
-1. W lewym okienku nawigacji wybierz pozycję **Ustawienia witryny** , aby ją rozwinąć.
+1. W lewym okienku nawigacji wybierz pozycję **Ustawienia witryny**, aby ją rozwinąć.
 1. W obszarze **Ustawienia witryny** wybierz pozycję **Funkcje**.
 1. Ustaw opcję **Sprawdzanie ułatwień dostępu** na **Wł.**
 

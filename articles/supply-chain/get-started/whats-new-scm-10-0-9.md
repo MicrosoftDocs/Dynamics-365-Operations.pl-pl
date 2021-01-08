@@ -18,11 +18,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
 ms.openlocfilehash: 163c2e00bd0363303596a48199a833369e51b232
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012351"
+ms.locfileid: "4435531"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.9 (kwiecień 2020)
 
@@ -36,7 +36,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego* , więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
+To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Niektóre z tych funkcji można również uwzględnić w poprzedniej wersji przyrostowej, ale nie zostały ogłoszone we wcześniejszej sekcji tematu *co nowego*, więc dodajemy je tutaj. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 - [Zaawansowane Kompilowanie ładunku podczas grupy czynności](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Aby uzyskać więcej informacji, zajrzyj do [zaawansowanego kompilowania ładunków podczas grupy czynności](../warehousing/advanced-load-building-during-wave.md).
 

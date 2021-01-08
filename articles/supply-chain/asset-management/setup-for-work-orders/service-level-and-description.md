@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 647358fcdd53ba95b571185ae269bc8d6b869c18
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889392"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435274"
 ---
 # <a name="service-level-and-description"></a>Poziom i opis usługi
 
@@ -42,7 +42,7 @@ Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i do
 
     W skróconej karcie **zlecenia pracy** można zdefiniować oczekiwane daty rozpoczęcia i zakończenia oraz godziny. Pola na skróconej karcie definiują okres, w którym zlecenia pracy powinny zostać rozpoczęte i zakończone. Są one używane dla ręcznie tworzonych zleceń pracy i zleceń roboczych tworzonych na podstawie zgłoszeń obsługi. 
 
-5. W polu **Dzień rozpoczęcia** wprowadź liczbę dni określającą okres, w którym ma się rozpocząć zlecenie pracy. Liczba dni jest obliczana na podstawie daty utworzenia zlecenia pracy. Jeśli na przykład zlecenie pracy powinno zostać rozpoczęte po jego utworzeniu, należy wprowadzić **wartość**0. Jeśli na przykład zlecenie pracy powinno zostać rozpoczęte w ciągu tygodnia po jego utworzeniu, należy wprowadzić **7**.
+5. W polu **Dzień rozpoczęcia** wprowadź liczbę dni określającą okres, w którym ma się rozpocząć zlecenie pracy. Liczba dni jest obliczana na podstawie daty utworzenia zlecenia pracy. Jeśli na przykład zlecenie pracy powinno zostać rozpoczęte po jego utworzeniu, należy wprowadzić **wartość** 0. Jeśli na przykład zlecenie pracy powinno zostać rozpoczęte w ciągu tygodnia po jego utworzeniu, należy wprowadzić **7**.
 6. Aby określić godzinę rozpoczęcia zlecenia pracy oprócz daty początkowej, należy w polu **Ustaw godzinę rozpoczęcia** wybrać opcję **tak**. Następnie wprowadź godzinę rozpoczęcia w polu **Godzina rozpoczęcia**. Ustawienie opcji na wartość **nie** spowoduje, że zostanie użyta bieżąca godzina dnia.
 7. W polu **Dzień zakończenia** wprowadź liczbę dni określającą okres, w którym ma się zakończyć zlecenie pracy. Liczba dni jest obliczana na podstawie daty rozpoczęcia zlecenia pracy. Jeśli na przykład zlecenie pracy powinno zakończyć się w ciągu jednego tygodnia od daty rozpoczęcia, należy wprowadzić **7**.
 8. Aby określić godzinę zakończenia zlecenia pracy oprócz daty zakończenia, należy w polu **Ustaw godzinę zakończenia** wybrać opcję **tak**. Następnie wprowadź godzinę zakończenia w polu **Godzina zakończenia**. Ustawienie opcji na wartość **nie** spowoduje, że zostanie użyta bieżąca godzina dnia.

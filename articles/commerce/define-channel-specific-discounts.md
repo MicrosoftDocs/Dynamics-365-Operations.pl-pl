@@ -20,11 +20,11 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 539a6f2df46450c5e0fd18ba69501432d6f3fbdd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023635"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414951"
 ---
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów specyficznych dla kanału
 

@@ -16,11 +16,11 @@ ms.author: anbichse
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 ms.openlocfilehash: c009f82e69bff0e4ea540514de8f9e60eca1e466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006363"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462275"
 ---
 # <a name="track-changes-in-recruiting-data"></a>Śledzenie zmian w danych dotyczących rekrutacji
 
@@ -35,7 +35,7 @@ Aby skonfigurować śledzenie zmian w danych dotyczących rekrutacji, wykonaj na
 
 1. W [Power Apps](https://web.powerapps.com), wybierz odpowiednie środowisko.
 
-2. Wybierz **ustawienia** (ikona koła zębatego), wybierz opcję**zaawansowane dostosowania**, a następnie wybierz **zasoby** wobszarze **zasoby deweloperów**. 
+2. Wybierz **ustawienia** (ikona koła zębatego), wybierz opcję **zaawansowane dostosowania**, a następnie wybierz **zasoby** wobszarze **zasoby deweloperów**. 
 
 3. Na stronie **zasoby deweloperów** skopiuj wartość w polu **wartość interfejsu API Web**. Na przykład wartość może wyglądać następująco: https://yourorgname.api.crm.dynamics.com/api/data/v9.1/.
 

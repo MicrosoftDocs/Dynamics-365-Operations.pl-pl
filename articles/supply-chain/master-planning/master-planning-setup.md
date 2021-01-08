@@ -20,11 +20,11 @@ ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
 ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
-ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3958800"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435037"
 ---
 # <a name="set-up-master-planning"></a>Ustawianie planowania głównego
 
@@ -126,7 +126,7 @@ Dla każdego planu można określić, jak daleko w przyszłości mają być obli
 
 Horyzont czasowy zapotrzebowania reprezentuje okres planowania lub stopień uwzględnienia popytu. Innymi słowy wskazuje zakres planowania.
 
-Ustawienie opcji **zapotrzebowania** na wartość **tak**powoduje, że można zastąpić horyzont czasowy zapotrzebowania zdefiniowany dla towaru podczas planowania głównego. W takim przypadku należy wprowadzić liczbę dni, dla których w planowaniu głównym powinny być uwzględnione zapotrzebowania. Horyzont czasowy zapotrzebowania jest obliczany od daty bieżącej do przodu. Zawsze są przetwarzane zapotrzebowania z datą wcześniejszą od daty bieżącej.
+Ustawienie opcji **zapotrzebowania** na wartość **tak** powoduje, że można zastąpić horyzont czasowy zapotrzebowania zdefiniowany dla towaru podczas planowania głównego. W takim przypadku należy wprowadzić liczbę dni, dla których w planowaniu głównym powinny być uwzględnione zapotrzebowania. Horyzont czasowy zapotrzebowania jest obliczany od daty bieżącej do przodu. Zawsze są przetwarzane zapotrzebowania z datą wcześniejszą od daty bieżącej.
 
 > [!NOTE]
 > W celu uzyskania najlepszej wydajności planowania głównego zaleca się dostosowanie zapotrzebowanie horyzontów czasowych do planowania horyzontów.
@@ -147,7 +147,7 @@ Ustawienie opcji **Akceptowania** na wartość **tak** umożliwia nadpisane zaak
 
 Horyzont czasowy planu prognozy wskazuje, jak daleko w przyszłym planowaniu głównym tworzy zamówienia planowane dla towarów, które mają prognozowany popyt.
 
-Ustawienie opcji **Plan prognoz** na wartość **tak**powoduje, że można zastąpić horyzont czasowy planu progmozy, który został zdefiniowany dla towaru podczas planowania głównego. W takim przypadku należy wprowadzić liczbę dni, dla których prognoza sprzedaży z planu według prognozy powinna być uwzględniana w planowaniu głównym.
+Ustawienie opcji **Plan prognoz** na wartość **tak** powoduje, że można zastąpić horyzont czasowy planu progmozy, który został zdefiniowany dla towaru podczas planowania głównego. W takim przypadku należy wprowadzić liczbę dni, dla których prognoza sprzedaży z planu według prognozy powinna być uwzględniana w planowaniu głównym.
 
 ### <a name="capacity"></a>Zdolności produkcyjne
 
@@ -159,7 +159,7 @@ Ustawienie opcji **Pojemność** na wartość **tak** powoduje, że można zast�
 
 Komunikaty akcji sugerują zmiany, które można wprowadzać w istniejącym zamówieniu dostawy w celu ułatwienia optymalizacji planu dostaw. Może to być na przykład zaproponowanie zaawansowania lub przełożenia zamówień, a także zwiększenie lub zmniejszenie ilości zamówienia.
 
-Ustawienie opcji **Komunikat akcji** na wartość **tak**powoduje, że można zastąpić komunikat akcji horyzontu czasowego, który został zdefiniowany dla towaru podczas planowania głównego. Jeśli ta opcja jest wybrana, należy wprowadzić liczbę dni, dla których w planowaniu głównym będą generowane komunikaty akcji dotyczące zapotrzebowania. Komunikat akcji horyzontu czasowego pojemności jest obliczany od daty bieżącej do przodu.
+Ustawienie opcji **Komunikat akcji** na wartość **tak** powoduje, że można zastąpić komunikat akcji horyzontu czasowego, który został zdefiniowany dla towaru podczas planowania głównego. Jeśli ta opcja jest wybrana, należy wprowadzić liczbę dni, dla których w planowaniu głównym będą generowane komunikaty akcji dotyczące zapotrzebowania. Komunikat akcji horyzontu czasowego pojemności jest obliczany od daty bieżącej do przodu.
 
 Aby uzyskać więcej informacji o komunikatach akcji, zapoznaj się z [komunikatami akcji](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 

@@ -2,8 +2,8 @@
 title: Konfigurowanie parametrów urlopów i nieobecności
 description: W programie Dynamics 365 Human Resources można definiować parametry urlopów i nieobecności.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 196c3901b5bc19f73b882bac7d3361e5bcc37e07
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712383"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4420157"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurowanie parametrów urlopów i nieobecności
 
@@ -47,6 +47,19 @@ Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Reso
 5. Na karcie **Samoobsługa pracownika etatowego** wskaż, czy kierownicy mogą wprowadzać wnioski urlopowe w imieniu swoich pracowników.
 
 7. Wybierz opcję **Zapisz**.
+
+>[!IMPORTANT]
+>Funkcja wyświetlania urlopów i nieobecności w różnych firmach jest obecnie dostępna w wersji zapoznawczej. Aby wyświetlić opcję dla urlopów i nieobecności, należy włączyć funkcję w środowisku **piaskownicy**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
+## <a name="view-and-change-human-resources-shared-parameters"></a>Wyświetlanie i zmiana Udostępnianych parametrów zasobów ludzkich
+
+1. Na stronie **Zarządzanie personelem** wybierz kartę **Łącza**.
+
+2. W obszarze **Konfiguracja** wybierz opcję **Udostępniane parametry zasobów ludzkich**.
+
+3. Na karcie **Zaawansowany dostęp** wybierz **Tak** dla opcji **Włącz międzyfirmowe wyświetlanie urlopu**, aby można było wyświetlać urlopy w różnych firmach.
+
+4. Wybierz opcję **Zapisz**.
 
 ## <a name="view-and-change-leave-and-absence-parameters"></a>Zobacz i zmień parametry urlopu i nieobecności
 

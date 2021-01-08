@@ -18,11 +18,11 @@ ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 118517fe0d7208113bd361a0295ff00cacd14f3d
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414847"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Konfigurowanie realizacji zamówienia dla sklepów
 
@@ -112,7 +112,7 @@ Domyślnie zamówienia będą miały stan **Zaakceptowane**. Stan zamówienia mo
 - **Pobierz** — opcja pobierania obsługuje kilka akcji. Po pierwsze akcja **Pobranie** umożliwia aktualizacje stanu wiersza zamówienia, aby inne sklepy nie próbowały pobrać tego samego wiersza. Następnie akcja **Drukuj listę pobrania** umożliwia wydrukowanie listy pobrania dla wybranego wiersza lub wierszy, a także aktualizuje ich stan na **Pobranie**. Formaty listy pobrania są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). I wreszcie akcja **Oznacz jako pobrane** oznacza, że linia została pobrana. Akcja **Oznacz jako pobrane** inicjuje odpowiednie transakcje zapasów w zapleczu. Akcje pobrania można wykonywać w tym samym czasie dla wielu wierszy zamówienia w różnych zamówieniach i dla wszystkich sposobów dostawy.
 - **Odrzuć** — wiersze lub wiersze częściowe można odrzucić. Pozwala na to ich ponowne przypisanie z zaplecza do innego sklepu lub magazynu. Wiersze można odrzucić tylko wtedy, gdy nie zostały pobrane ani spakowane. Aby odrzucić wiersz, który został już pobrany lub spakowany, należy cofnąć jego pobranie lub spakowanie z zaplecza.
 - **Pakowanie** — opcja pakowania obsługuje dwie akcje: **Drukuj dokument dostawy** umożliwia wydrukowanie dokumentu dostawy dla wybranych wierszy, a akcja **Oznacz jako spakowane** umożliwia oznaczenie wierszy jako spakowanych oraz oznaczenie jako dostarczonych w zapleczu. Jednocześnie można pakować tylko wiersze zamówienia należące do tego samego zamówienia i o tym samym sposobie dostawy. Formaty dokumentów dostawy są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
-- **Wyślij** — wykonanie akcji wysyłania spowoduje oznaczenie wybranych wierszy jako**Dostarczone** w zapleczu. Po całkowitym wysłaniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
+- **Wyślij** — wykonanie akcji wysyłania spowoduje oznaczenie wybranych wierszy jako **Dostarczone** w zapleczu. Po całkowitym wysłaniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
 - **Pobranie** — wykonanie akcji pobrania powoduje dodanie wierszy do widoku transakcji w celu pobrania. Jeżeli w zamówieniu istnieją inne wiersze, które nie są aktualnie pobierane, zostaną dodane do widoku transakcji z ilością równą zero. Po całkowitym pobraniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
 
 ### <a name="order-fulfillment-filtering"></a>Filtrowanie realizacji zamówienia

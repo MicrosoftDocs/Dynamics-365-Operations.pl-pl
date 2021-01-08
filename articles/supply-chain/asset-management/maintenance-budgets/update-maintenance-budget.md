@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: e43abd4644eec8c91606ec48bbecf30f12600856
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205283"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435286"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualizowanie budżetu konserwacji
 
@@ -31,7 +31,7 @@ ms.locfileid: "3205283"
 
  
 
-Na stronie **Wiersze budżetu konserwacji** są wyświetlane wszystkie wiersze budżetu, które zostały utworzone dla budżetu wybranego na stronie **Budżety konserwacji**. (Aby uzyskać więcej informacji, przejrzyj temat [Tworzenie budżetu konserwacji](create-maintenance-budget.md)) wiersze budżetu konserwacji można ponownie obliczyć i skorygować do momentu zatwierdzenia budżetu konserwacji.) Po upływie okresu budżetu i zaksięgowaniu kosztów w module Zarządzanie składnikami majątku można również zaktualizować wiersze budżetu o koszty rzeczywiste.
+Na stronie **Wiersze budżetu konserwacji** są wyświetlane wszystkie wiersze budżetu, które zostały utworzone dla budżetu wybranego na stronie **Budżety konserwacji**. (Aby uzyskać więcej informacji, przejrzyj temat [Tworzenie budżetu konserwacji](create-maintenance-budget.md)) wiersze budżetu konserwacji można ponownie obliczyć i skorygować do momentu zatwierdzenia budżetu konserwacji. Po upływie okresu budżetu i zaksięgowaniu kosztów w module Zarządzanie składnikami majątku można również zaktualizować wiersze budżetu o koszty rzeczywiste.
 
 ## <a name="recalculate-a-maintenance-budget"></a>Oblicz ponownie budżet konserwacji
 

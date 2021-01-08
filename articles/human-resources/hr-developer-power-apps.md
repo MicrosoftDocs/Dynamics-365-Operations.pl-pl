@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b28480ff584870e931fdc288a2652a5649268576
-ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
+ms.openlocfilehash: 2e89347829ccd6569d568db42c79b5fea2316ba3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3893084"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527033"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Rozszerzanie za pomocą rozwiązań Power Apps i Power Automate
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Human Resources - Attract używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
 

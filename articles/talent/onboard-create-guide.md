@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898255"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462210"
 ---
 # <a name="create-and-send-an-onboarding-guide"></a>Tworzenie i wysyłanie przewodnika wdrażania do pracy
 

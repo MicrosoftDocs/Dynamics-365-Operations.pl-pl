@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ad677d1c36ac5159111afdcb5c31aed215d7b0a1
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 9887d22a513e820c35c51b6c702e2d9d34ab1214
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897748"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529763"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-december-14-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (14 grudnia 2018 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 **Kompilacja 8.1.2085**
 
@@ -137,11 +139,11 @@ Zadanie Pracownicy na pracownika musi mieć zaktualizowane następujące mapowan
 
 Przekształcenie pola płci również musi zostać zaktualizowane. Wybierz typ mapy **fn** (funkcja) dla płci i zaktualizuj następujące mapowania wartości.
 
-| wartość Common Data Service                   | Wartość Finance and Operations                     |
+| Wartość: Common Data Service                   | Wartość: Finance and Operations                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Mężczyzna                                             |
 | 75440001                    | Kobieta                                           |
-| 75440002                    | Brak                                             | 
+| 75440002                    | None                                             | 
 | 75440003                    | NonSpecific                                      |
 
 Zaktualizowane mapowanie powinno wyglądać jak na poniższych ilustracjach.

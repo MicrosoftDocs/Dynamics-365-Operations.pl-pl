@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981518"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435064"
 ---
 # <a name="moving-average"></a>Średnia ruchoma
 
@@ -141,7 +141,7 @@ Jeśli nowa ilość dostępnych zapasów jest dodatnia po transakcji, transakcja
 
 ## <a name="inventory-value-report"></a>Raport wartości zapasów
 
-W tym przykładzie ruchomej średniej raport wartości zapasów jest drukowany w celu obsługi bieżącego obliczania ruchomej średniej dla produktu Raport Wartość zapasów może drukować transakcje w kolejności chronologicznej wraz z kosztem obsługi obliczania ruchomej średniej produktu. Raport wyświetla koszt ruchomej średniej dla produktu. W oknie dialogowym **Raporty wartości zapasów** opcja Zakres dat pozwala posortować raport według wartości **Godzina transakcji** lub **Data księgowania**. Tryb **Data księgowania** jest tradycyjnym wzorem drukowania raportu. Opcja **Czas transakcji** jest rzeczywistą datą zgłoszenia transakcji i ruchoma średnia kosztu dla produktu jest aktualizowana. Można wydrukować raport Wartości zapasów za pomocą opcji**Sortowania czasu transakcji**, jeśli ma być wyświetlone obliczanie ruchomego średniego kosztu na osi czasu. Poniższa tabela pokazuje transakcje dla produktu, dla których drukowany jest raport, gdy używana jest opcja **Sortowanie czasu transakcji**.
+W tym przykładzie ruchomej średniej raport wartości zapasów jest drukowany w celu obsługi bieżącego obliczania ruchomej średniej dla produktu Raport Wartość zapasów może drukować transakcje w kolejności chronologicznej wraz z kosztem obsługi obliczania ruchomej średniej produktu. Raport wyświetla koszt ruchomej średniej dla produktu. W oknie dialogowym **Raporty wartości zapasów** opcja Zakres dat pozwala posortować raport według wartości **Godzina transakcji** lub **Data księgowania**. Tryb **Data księgowania** jest tradycyjnym wzorem drukowania raportu. Opcja **Czas transakcji** jest rzeczywistą datą zgłoszenia transakcji i ruchoma średnia kosztu dla produktu jest aktualizowana. Można wydrukować raport Wartości zapasów za pomocą opcji **Sortowania czasu transakcji**, jeśli ma być wyświetlone obliczanie ruchomego średniego kosztu na osi czasu. Poniższa tabela pokazuje transakcje dla produktu, dla których drukowany jest raport, gdy używana jest opcja **Sortowanie czasu transakcji**.
 
 | Godzina transakcji | Data         | Typ transakcji           | Ilość | Kwota | Średni koszt jednostkowy |
 |------------------|--------------|----------------------------|----------|--------|-------------------|

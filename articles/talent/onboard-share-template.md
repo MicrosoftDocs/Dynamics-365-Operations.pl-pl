@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897150"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462281"
 ---
 # <a name="share-content-with-other-contributors"></a>Udostępnianie zawartości innym współautorom
 

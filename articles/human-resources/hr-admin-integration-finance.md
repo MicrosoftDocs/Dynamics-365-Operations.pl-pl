@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f542bb12910e3a4884c38a2fb24831c42a545908
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431275"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527929"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurowanie integracji z rozwiązaniem Finance
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](https://docs.microsoft.com/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
 

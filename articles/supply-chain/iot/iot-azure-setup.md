@@ -18,11 +18,11 @@ ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4014919"
+ms.locfileid: "4435537"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurowanie zasobów platformy Azure dla analizy Internetu rzeczy (IoT)
 
@@ -48,9 +48,9 @@ Aby sprawdzić, czy identyfikator naszej aplikacji mikrousług Microsoft Dynamic
     Jeśli aplikacji nie ma na liście, musisz ją dodać do dzierżawy:
 
     1. W witrynie Azure Portal kliknij na pasku narzędzi przycisk, aby otworzyć usługę Azure Cloud Shell.
-    2. Uruchom polecenie **Install-Module AzureAD**. Wprowadź wartość **Y** , aby zainstalować moduł.
-    3. Uruchom polecenie **Get-InstalledModule -Name "AzureAD"** , aby sprawdzić, czy moduł został zainstalowany.
-    4. Uruchom polecenie **Connect-AzureAD -Confirm** , aby uruchomić uwierzytelnianie.
+    2. Uruchom polecenie **Install-Module AzureAD**. Wprowadź wartość **Y**, aby zainstalować moduł.
+    3. Uruchom polecenie **Get-InstalledModule -Name "AzureAD"**, aby sprawdzić, czy moduł został zainstalowany.
+    4. Uruchom polecenie **Connect-AzureAD -Confirm**, aby uruchomić uwierzytelnianie.
     5. Uruchom polecenie **New-AzureADServicePrincipal -AppId 0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
 
     Teraz możesz powtórzyć kroki od 1 do 6, aby sprawdzić, czy identyfikator aplikacji znajduje się w dzierżawie.

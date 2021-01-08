@@ -19,11 +19,11 @@ ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
 ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
-ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
+ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "4096974"
+ms.locfileid: "4415081"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Łączenie eksperymentu i edytowanie odmian
 
@@ -41,8 +41,8 @@ Przed połączeniem eksperymentu w Commerce trzeba wprowadzić kilka decyzji, kt
 
 ### <a name="determine-the-scope-of-your-experiment"></a>Określanie zakresu eksperymentu
 Po połączeniu eksperymentu zostanie wyświetlony monit o zdefiniowanie zakresu eksperymentu. Eksperymenty są zdefiniowane jako zakres **częściowy** lub **cały**.
-- Wybierz opcję **częściowy** , jeśli chcesz przeprowadzić eksperyment na konkretnej części strony. Po wybraniu tej opcji należy określić, które moduły mają być uwzględniane w eksperymencie. Zmiany wprowadzane w częściach domyślnej strony lub fragmentu, które nie są związane z eksperymentem, są automatycznie synchronizowane w różnych odmianach.
-- Wybierz opcję **cały** , jeśli chcesz prowadzić eksperyment na całej stronie lub fragmencie. Zostaną utworzone oddzielne kopie domyślnej strony lub fragmentu. Nie trzeba wybierać modułów, które zostaną uwzględnione w eksperymencie, ponieważ cała powierzchnia edycji jest dostępna do zmiany. W razie potrzeby można dodawać, usuwać lub ponownie zamawiać moduły. Jeśli jednak zostaną wprowadzone jakiekolwiek zmiany do strony domyślnej lub fragmentu, z którym jest skojarzona eksperyment, zmiany te muszą być synchronizowane ręcznie we wszystkich odmianach.
+- Wybierz opcję **częściowy**, jeśli chcesz przeprowadzić eksperyment na konkretnej części strony. Po wybraniu tej opcji należy określić, które moduły mają być uwzględniane w eksperymencie. Zmiany wprowadzane w częściach domyślnej strony lub fragmentu, które nie są związane z eksperymentem, są automatycznie synchronizowane w różnych odmianach.
+- Wybierz opcję **cały**, jeśli chcesz prowadzić eksperyment na całej stronie lub fragmencie. Zostaną utworzone oddzielne kopie domyślnej strony lub fragmentu. Nie trzeba wybierać modułów, które zostaną uwzględnione w eksperymencie, ponieważ cała powierzchnia edycji jest dostępna do zmiany. W razie potrzeby można dodawać, usuwać lub ponownie zamawiać moduły. Jeśli jednak zostaną wprowadzone jakiekolwiek zmiany do strony domyślnej lub fragmentu, z którym jest skojarzona eksperyment, zmiany te muszą być synchronizowane ręcznie we wszystkich odmianach.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
@@ -60,7 +60,7 @@ Aby połączyć eksperyment, należy uruchomić kreatora **Łączenie eksperymen
 
 Aby rozpocząć Podłączanie doświadczenia w konstruktorze witryn Commerce, należy wykonać następujące kroki.
 
-1. Aby uruchomić kreatora **Połącz eksperyment** , wybierz opcję **Eksperymenty** w lewym okienku nawigacji, a następnie wybierz opcję **Połącz**. Można również uzyskać dostęp do kreatora ze strony lub z edytora fragmentów, edytując go i wybierając na pasku poleceń **Połącz eksperyment**.
+1. Aby uruchomić kreatora **Połącz eksperyment**, wybierz opcję **Eksperymenty** w lewym okienku nawigacji, a następnie wybierz opcję **Połącz**. Można również uzyskać dostęp do kreatora ze strony lub z edytora fragmentów, edytując go i wybierając na pasku poleceń **Połącz eksperyment**.
 
     > [!NOTE]
     > Strona może być połączona tylko z jednym eksperymentem naraz. Aby połączyć stronę z innym eksperymentem, należy najpierw usunąć eksperyment, z którym jest obecnie połączona strona.
@@ -84,7 +84,7 @@ Wykonaj poniższe kroki, jeśli w kreatorze **łączenia eksperymentów** zosta�
 1. Wybierz moduł do eksperymentowania, wybierz wielokropek (...), a następnie wybierz opcję **Dodaj do eksperymentu**.
 
 ### <a name="edit-variations-for-experiments-with-entire-scope"></a>Edycja odmian eksperymentów z całkowitym zakresem
-Jeśli zdefiniowano **całkowity** zakres eksperymentu w kreatorze **Łączenie eksperymentów** , to w widoku edytora należy skorzystać z menu rozwijanego odmiany poniżej paska poleceń, aby edytować poszczególne odmiany na podstawie hipotezy pierwotnej. 
+Jeśli zdefiniowano **całkowity** zakres eksperymentu w kreatorze **Łączenie eksperymentów**, to w widoku edytora należy skorzystać z menu rozwijanego odmiany poniżej paska poleceń, aby edytować poszczególne odmiany na podstawie hipotezy pierwotnej. 
 
 > [!NOTE]
 > W każdym przypadku można również określić kontrolę lub zmianę bazową, pozostawiając niezmienioną jedną z odmian.

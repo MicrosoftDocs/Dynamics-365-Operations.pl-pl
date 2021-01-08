@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712455"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420120"
 ---
 # <a name="suspend-leave"></a>Wstrzymaj urlop
 

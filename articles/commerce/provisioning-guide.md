@@ -3,7 +3,7 @@ title: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 07/16/2020
+ms.date: 11/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5ce2002c66a1c36d5647d3c76684b394fc1ff79
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
+ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599857"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "4415096"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -48,6 +48,7 @@ Aby uzyskać informacje dotyczące sposobu konfigurowania środowiska oceny usł
 
 Zanim będzie można aprowizować środowisko oceny usługi Commerce, muszą zostać spełnione następujące wymagania wstępne:
 
+- Użytkownik został dołączany do programu oceny i uzyskał zdolności produkcyjne dla środowiska oceny.
 - Masz dostęp do portalu Lifecycle Services (LCS) rozwiązania Microsoft Dynamics.
 - Użytkownik jest istniejącym partnerem Microsoft Dynamics 365 lub odbiorcą i może tworzyć projekt Dynamics 365 Commerce.
 - Masz uprawnienia administratora do subskrypcji Microsoft Azure lub jesteś w kontakcie z administratorem subskrypcji, który może pomóc w razie potrzeby.
@@ -91,7 +92,7 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 
 1. W menu górnym wybierz opcję **Środowiska hostowane w chmurze**.
 1. Wybierz pozycję **Dodaj**, aby dodać środowisko.
-1. W polu **wersja aplikacji** wybierz najbardziej aktualną wersję. Jeśli masz określoną potrzebę wybrania wersji aplikacji innej niż wersja najbardziej aktualna, nie wybieraj wersji przed **10.0.8**.
+1. W polu **wersja aplikacji** wybierz najbardziej aktualną wersję. Jeśli masz określoną potrzebę wybrania wersji aplikacji innej niż wersja najbardziej aktualna, nie wybieraj wersji przed **10.0.14**.
 1. W polu **wersja platformy** użyj wersji platformy, która jest automatycznie wybierana dla wybranej wersji aplikacji. 
 
     ![Wybieranie wersji aplikacji i platformy](./media/project1.png)

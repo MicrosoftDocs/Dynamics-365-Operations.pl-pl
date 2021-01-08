@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793594"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415008"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 

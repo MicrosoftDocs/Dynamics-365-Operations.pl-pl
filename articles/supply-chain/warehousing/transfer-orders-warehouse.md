@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
 ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017490"
+ms.locfileid: "4435605"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Konfigurowanie magazynów dla zamówień przeniesienia 
 
@@ -51,5 +51,5 @@ W celu utworzenia hierarchii obsługującej zamówienia między magazynami możn
 Należy także skonfigurować czas realizacji dostawy między magazynami na stronie **Dni transportu**. 
 1. Przejdź do **Zarządzanie zapasami > Ustawienia > Dystrybucja > Dni transportu**.
 2. W polu **Punkt przyjęcia** wybierz **magazyn**.
-3. Wybierz **Magazyn wysyłki** , **Magazyn przyjęcia** i **Dni transportu**. 
+3. Wybierz **Magazyn wysyłki**, **Magazyn przyjęcia** i **Dni transportu**. 
 4. (Opcjonalnie) Można również ustawić czas transportu, w zależności od metody dostawy, w obszarze **Dni transportu na metodę dostawy**.

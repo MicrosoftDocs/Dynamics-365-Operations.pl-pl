@@ -17,11 +17,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978139"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4434999"
 ---
 # <a name="monitor-a-master-planning-run"></a>Monitorowanie przebiegu planowania głównego
 
@@ -120,7 +120,7 @@ Kolor jest pokazywany tylko na najniższym poziomie na wykresie Gantta. Wybierz 
 
 1. Na domyślnym pulpicie nawigacyjnym wybierz opcję **Planowanie główne**.
 1. W polu **Plan** wprowadź lub wybierz wartość.
-1. Wybierz opcję**Uruchom**.
+1. Wybierz opcję **Uruchom**.
 1. W opcji **Śledź czas przetwarzania** ustaw wartość **Tak**.
 1. W polu **Liczba wątków** wprowadź liczbę.
 1. W **Rekordy do uwzględnienia** na skróconej karcie, wybierz opcję **Filtr**.

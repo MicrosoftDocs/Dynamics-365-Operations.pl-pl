@@ -18,11 +18,11 @@ ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
-ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "3599774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414839"
 ---
 # <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -40,7 +40,7 @@ Nie (głównie). Składniki oceny aplikacji Commerce są dostępne tylko w środ
 
 **Jakie koszty są zaangażowane we wdrażanie środowiska oceny usługi Commerce na platformie Microsoft Azure za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Tradycyjne środowisko demonstracyjne//główne Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce maszyna wirtualna \[VM\]) będzie hostowana w Twojej subskrypcji platformy Azure. Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.
+Tradycyjne środowisko demonstracyjne//główne Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce (maszyna wirtualna \[VM\]) będzie hostowana w Twojej subskrypcji platformy Azure. Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.
 
 Inne składniki, takie jak Commerce Scale Unit, Commerce Site Builder i Twoja witryna handlu elektronicznego, będą dostępne jako oprogramowanie jako usługa (SaaS) i będą obsługiwane przez firmę Microsoft.
 

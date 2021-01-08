@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39026ec56ebf25342410330f2ba3e2e7773dfd6a
-ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4055434"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415098"
 ---
 # <a name="cart-module"></a>Moduł koszyka
 
@@ -50,9 +50,9 @@ Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym 
 
 | Właściwość | Wartości | opis |
 |----------------|--------|-------------|
-| Nagłówek | Tekst nagłówka i znacznik nagłówka ( **H1** , **H2** , **H3** , **H4** , **H5** lub **H6** ) | Nagłówek koszyka, na przykład „Torba na zakupy” lub „Produkty w Twoim koszyku”. |
-| Pokaż błędy niedostępnych w magazynie | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda** , na stronie kozyka będą widoczne błędy dotyczące zapasów. Zaleca się ustawienie tej właściwości na **Prawda** , jeśli sprawdzanie zapasów jest wykonywane w odniesieniu do danego oddziału. |
-| Pokaż opłaty transportowe dla pozycji w wierszu | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda** , pozycje w wierszu koszyka będą pokazywały opłaty transportowe, jeśli te informacje są dostępne. Ta funkcja nie jest obsługiwana w motywie Fabrikam, ponieważ użytkownicy wybierają tylko wysyłkę w ramach przepływu realizacji transakcji. Tę funkcję można jednak włączyć w innych przepływach pracy, jeśli ma ona zastosowania. |
+| Nagłówek | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Nagłówek koszyka, na przykład „Torba na zakupy” lub „Produkty w Twoim koszyku”. |
+| Pokaż błędy niedostępnych w magazynie | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda**, na stronie kozyka będą widoczne błędy dotyczące zapasów. Zaleca się ustawienie tej właściwości na **Prawda**, jeśli sprawdzanie zapasów jest wykonywane w odniesieniu do danego oddziału. |
+| Pokaż opłaty transportowe dla pozycji w wierszu | **Prawda** lub **Fałsz** | Jeśli ta właściwość ma wartość **Prawda**, pozycje w wierszu koszyka będą pokazywały opłaty transportowe, jeśli te informacje są dostępne. Ta funkcja nie jest obsługiwana w motywie Fabrikam, ponieważ użytkownicy wybierają tylko wysyłkę w ramach przepływu realizacji transakcji. Tę funkcję można jednak włączyć w innych przepływach pracy, jeśli ma ona zastosowania. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduły, których można używać w module koszyka
 
@@ -61,7 +61,7 @@ Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym 
 
 ## <a name="module-properties"></a>Właściwości modułu
 
-Następujące ustawienia modułu koszyka mogą być skonfigurowane w **Ustawienia witryny \> Rozszerzenia** :
+Następujące ustawienia modułu koszyka mogą być skonfigurowane w **Ustawienia witryny \> Rozszerzenia**:
 
 - **Ilość maksymalna** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
 - **Zapasy** — Aby uzyskać informacje dotyczące sposobu stosowania ustawień zapasów, należy zapoznać się z tematem [stosowanie ustawień zapasów](inventory-settings.md).
@@ -78,23 +78,23 @@ Moduł koszyka pobiera informacje o produktach za pomocą interfejsów API Comme
 
 Aby dodać moduł koszyka do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmenty** , a następnie wybierz opcję **Nowy** , aby stworzyć nowy fragment.
+1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
 1. W oknie dialogowym **Nowy fragment** wybierz moduł **Koszyk**.
-1. W obszarze **Nazwa fragmentu** wprowadź nazwę **Fragment koszyka** , a następnie kliknij przycisk **OK**.
+1. W obszarze **Nazwa fragmentu** wprowadź nazwę **Fragment koszyka**, a następnie kliknij przycisk **OK**.
 1. Wybierz gniazdo **Koszyk**.
 1. W okienku właściwości po prawej stronie wybierz symbol ołówka, wprowadź tekst nagłówka w polu, a następnie zaznacz symbol znacznika wyboru.
-1. W gnieździe **Koszyk** wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W gnieździe **Koszyk** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
-1. Przejdź do **Szablonu** , a następnie wybierz **Nowy** , aby utworzyć nowy szablon.
-1. W oknie dialogowym **Nowy szablon** , w obszarze **Nazwa szablonu** wpisz nazwę szablonu.
-1. W drzewie konspektu wybierz **Treść** , następnie wybierz wielokropek ( **...** ), a następnie wybierz pozycję **Dodaj fragment**.
-1. W oknie dialogowym **Wybierz fragment** wybierz **Fragment koszyka** , a następnie kliknij przycisk **OK**.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
-1. Przejdź do **Strony** , a następnie wybierz opcję **Nowy** , aby utworzyć nową stronę.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wpisz nazwę szablonu.
+1. W drzewie konspektu wybierz **Treść**, następnie wybierz wielokropek (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybierz fragment** wybierz **Fragment koszyka**, a następnie kliknij przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
 1. W oknie dialogowym **Wybierz szablon** wybierz utworzony szablon, wprowadź nazwę strony, a następnie kliknij przycisk **OK**.
-1. Wybierz **Zapisz** , a następnie wybierz opcję **Podgląd** , aby wyświetlić podgląd strony.
-1. Wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
+1. Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.
+1. Wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -106,7 +106,9 @@ Aby dodać moduł koszyka do nowej strony i ustawić wymagane właściwości, wy
 
 [Moduł adresu wysyłki](ship-address-module.md)
 
-[Moduł Opcje dostawy](delivery-options-module.md)
+[Moduł opcji dostawy](delivery-options-module.md)
+
+[Moduł informacji o odbiorze](pickup-info-module.md)
 
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 

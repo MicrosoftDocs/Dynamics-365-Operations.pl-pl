@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 041044cf6b5a5de2091a4b61d98b7d07445e43ef
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 18eef310470cafd9d59bb1c848bbaeb8bf5b9fa1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209129"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528906"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Przegląd integracji Microsoft Dynamics 365 Field Service
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Synchronizacja procesów biznesowych między rozwiązaniami Dynamics 365 Supply Chain Management i Dynamics 365 Field Service jest włączona dzięki Supply Chain Management. Scenariusze integracji konfiguruje się przy użyciu rozszerzalnych szablonów integratora danych oraz usługi Common Data Service, co umożliwia synchronizowanie procesów biznesowych.
 Można używać standardowych szablonów do tworzenia niestandardowych projektów integracji, gdzie dodatkowe pola standardowe i niestandardowe, a także jednostki, mogą być mapowane w celu skorygowania integracji i spełnienia określonych wymagań biznesowych. 
@@ -63,11 +65,11 @@ Dodatkowe funkcje w tej drugiej fazie koncentrują się na zapewnieniu serwisant
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Druga faza integracji między programami Field Service i Supply Chain Management umożliwia synchronizowanie następujących szablonów:
 - Magazyny (Supply Chain Management do Field Service) — magazyny z modułu Supply Chain Management do Field Service [zapytanie zaawansowane] 
-- Zapasy produktu (Supply Chain Management do Field Service) — informacje o poziomie zapasów w Supply Chain Management do Field Service [zapytanie zaawansowane] 
-- Korekta zapasów (Field Service do Supply Chain Management) — informacje o korektach zapasów w Field Service do Supply Chain Management [zapytanie zaawansowane] 
-- Przeniesienie zapasów (Field Service do Supply Chain Management) — informacje o przeniesieniu zapasów w Field Service do Supply Chain Management [zapytanie zaawansowane] 
+- Zapasy produktu (Supply Chain Management do Field Service) — informacje o poziomie zapasów z modułu Supply Chain Management do Field Service [zapytanie zaawansowane] 
+- Korekta zapasów (Field Service do Supply Chain Management) — korekty zapasów z modułu Field Service do Supply Chain Management [zapytanie zaawansowane] 
+- Przeniesienie zapasów (Field Service do Supply Chain Management) — przeniesienie zapasów z modułu Field Service do Supply Chain Management [zapytanie zaawansowane] 
 - Projekty (Supply Chain Management do Field Service) — listy projektów z Supply Chain Management do Field Service 
-- Zlecenia pracy z projektem (Field Service do Supply Chain Management) - Zlecenia pracy w Field Service do zamówień sprzedaży w Supply Chain Management z obsługą projektu [Zaawansowane zapytanie] 
+- Zlecenia pracy z projektem (Field Service do Supply Chain Management) — zlecenia pracy z modułu Field Service do zamówień sprzedaży w Supply Chain Management z obsługą projektu [zaawansowane zapytanie] 
 - Produkty Field Service z jednostką magazynową (Supply Chain Management do Sales) - „Zwolnione produkty możliwe do sprzedaży” Supply Chain Management do „Produkty” Sales dla Field Service, w tym jednostka magazynowa 
 
 ## <a name="system-requirements"></a>Wymagania systemowe

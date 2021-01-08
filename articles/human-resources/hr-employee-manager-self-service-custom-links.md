@@ -3,7 +3,7 @@ title: Tworzenie łączy niestandardowych w samoobsłudze menedżera
 description: W tym temacie opisano sposób tworzenia łączy niestandardowych w samoobsłudze Menedżera w Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/21/2020
+ms.date: 11/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,22 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8f6f0d2d8de2e74060cc86143a91620f42810e3
-ms.sourcegitcommit: ee643d651d57560bccae2f99238faa39881f5c64
+ms.openlocfilehash: 4c9197ee124f53ff8d4acc90cb490113d35e80b4
+ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "4088564"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654296"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Tworzenie łączy niestandardowych w samoobsłudze menedżera
 
-[!include [banner](includes/preview-feature.md)]
-
 Łącza niestandardowe można dodawać na karcie **Mój zespół** w module Samoobsługa menedżera. Ta funkcja umożliwia uzyskanie szybkiego dostępu do ważnych informacji. Dodawanie łączy niestandardowych na karcie **Moje informacje** jest podobne do pracy w module pracownik etatowy.
 
-## <a name="enable-the-preview-feature"></a>Włącz funkcję podglądu
+## <a name="enable-the--feature"></a>Włącz funkcję
 
-Aby skorzystać z tej funkcji, Włącz **(Podgląd) Łącza niestandardowe w samoobsłudze menedżera** w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
+Aby skorzystać z tej funkcji, Włącz **Łącza niestandardowe w samoobsłudze menedżera** w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
 
 ## <a name="set-up-custom-links"></a>Konfiguruj łącza niestandardowe
 

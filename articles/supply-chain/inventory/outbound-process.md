@@ -20,11 +20,11 @@ ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.openlocfilehash: db1a6887e7742700dd3451c9a877b948b5ab691b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207285"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435251"
 ---
 # <a name="outbound-process-overview"></a>Omówienie procesu wychodzącego
 
@@ -52,7 +52,7 @@ Przejdź do okna **Rozrachunki z odbiorcami** \> **Konfiguracja** \> **Parametry
 
 Jeżeli pole **Stan marszruty pobrania** jest ustawione na **Ukończono**, proces pobierania następuje automatycznie jako część procesu generowania list pobierania. Jeżeli pole jest ustawione na **Aktywowane**, wiersze list pobierania należy zaktualizować ręcznie.
 
-Ta sama konfiguracja dotyczy zamówień przeniesienia. Przejdź do okna**Zarządzanie zapasami** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem**, a następnie na karcie **Transport** wybierz wartość w polu **Stan marszruty pobrania**.
+Ta sama konfiguracja dotyczy zamówień przeniesienia. Przejdź do okna **Zarządzanie zapasami** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem**, a następnie na karcie **Transport** wybierz wartość w polu **Stan marszruty pobrania**.
 
 [![Pole Stan marszruty pobrania dla zamówień przeniesienia](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 

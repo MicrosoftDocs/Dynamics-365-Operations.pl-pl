@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a1d8fd665ec40efede0a3db8b0c59ac89751a64
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 47e26a48cdde3a6996f4c0a4ca85222c402f44e2
+ms.sourcegitcommit: 436731d8b3889bebfe6f17922b0a31b1994f6796
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3987197"
+ms.lasthandoff: 10/26/2020
+ms.locfileid: "4435663"
 ---
 # <a name="create-a-baseline-forecast"></a>Tworzenie prognozy bazowej
 
@@ -43,7 +43,7 @@ Planista produkcji można utworzyć bazową prognozę przy użyciu modeli progno
 7. Zamknij stronę.
 8. Zamknij stronę.
 
-## <a name="set-up-the-demand-forecasting-paramters"></a>Konfigurowanie parametrów prognozowania popytu
+## <a name="set-up-the-demand-forecasting-parameters"></a>Konfigurowanie parametrów prognozowania popytu
 1. Wybierz kolejno opcje Planowanie główne > Ustawienia > Prognozowanie popytu > Parametry prognozowania popytu.
 2. Rozwiń sekcję Parametry algorytmu prognozy.
 3. W polu Strategia generowania prognozy wybierz opcję „Kopiuj na popycie historycznym”.

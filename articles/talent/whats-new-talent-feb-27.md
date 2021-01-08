@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d0fdc9f056ea494cf52e8483b901070dae0bcd29
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: afa1044c8adc9566149e20ade57e771b50d9c53f
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897679"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529145"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (27 lutego 2019 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 
@@ -75,7 +77,7 @@ W tej wersji są też dostępne inne poprawki niewielkich błędów.
 
 W wielu organizacjach menedżerowie ds. wynagrodzenia i świadczeń mogą mieć dostęp tylko do konkretnych rekordów wynagrodzeń. Te rekordy mogą dotyczyć kierowników lub pracowników regionalnych. Ta zmiana pozwala działowi kadr (HR) zarządzać różnymi planami wynagrodzeń dla różnych grup pracowników w organizacji. Role zabezpieczeń, które można przypisać do stałych i zmiennych planów będą określały dostęp do tych planów i danych pracownika (np. informacji o wynagrodzeniu i premiach). Tylko role z danym dostępem mogą przetwarzać wynagrodzenia dla tych pracowników.
 
-### <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja Platform update 24 dla Finance and Operations
+### <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja 24 platformy dla Finance and Operations
 
 Aby uzyskać więcej informacji o 24. aktualizacji platformy Microsoft Dynamics 365 Finance and Operations (marzec 2019), zobacz [Funkcje w wersji zapoznawczej w aktualizacji Platform update 24 rozwiązania Finance and Operations (marzec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
@@ -102,15 +104,15 @@ Aby zaktualizować istniejący szablon, wykonaj następujące kroki:
 
         [![Mapowanie zadania stanowiska do bazowego stanowiska](./media/CDS-Mapping1.png)](./media/CDS-Mapping1.png)
 
-    - **Zadanie stanowiska do szczegółów dotyczących stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **szczegóły dotyczące stanowiska** w Finance and Operations. Przenieś je na pozycję 8 w sekwencji.
+    - **Szczegóły stanowiska do bazowego stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **Szczegóły stanowiska** w Finance and Operations. Przenieś je na pozycję 8 w sekwencji.
 
         [![Mapowanie zadania stanowiska do szczegółów dotyczących stanowiska](./media/CDS-Mapping2.png)](./media/CDS-Mapping2.png)
 
-    - **Zadanie stanowiska do okresów ważności stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **okresy ważności stanowiska** w Finance and Operations.
+    - **Czas trwania stanowiska do bazowego stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **Czas trwania stanowiska** w Finance and Operations.
 
         [![Mapowanie zadania stanowiska do okresów ważności stanowiska](./media/CDS-Mapping3.png)](./media/CDS-Mapping3.png)
 
-    - **Zadanie stanowiska do hierarchii stanowisk:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **hierarchia stanowisk** w Finance and Operations. Wybierz **kwerenda zaawansowana**, aby kwerenda zaawansowana była dostępna dla tego projektu.
+    - **Hierarchie stanowiska do bazowego stanowiska:** dodaj nowe mapowanie z **Zadanie stanowiska** Common Data Service do pozycji **Hierarchie stanowiska** w Finance and Operations. Wybierz **kwerenda zaawansowana**, aby kwerenda zaawansowana była dostępna dla tego projektu.
 
        [![Przycisk kwerendy zaawansowanej](./media/CDS-Advanced-Query.png)](./media/CDS-Advanced-Query.png)
 
@@ -131,7 +133,7 @@ Aby zaktualizować istniejący szablon, wykonaj następujące kroki:
         [![Polecenie Dodaj kolumnę warunkową](./media/Add-column.png)](./media/Add-column.png)
 
     6. W okienku **Dodaj kolumnę warunkową** wprowadź **HIERARCHYTYPENAME** jako nazwę nowej kolumny.
-    7. W części **Jeżeli** warunku wybierz pole i użyj **równe** jako relacji, i wprowadź wartość. W częściach ***wówczas** i **w przeciwnym razie** warunku określ domyślną wartość. W takim przypadku należy wprowadzić **Wiersz** w obu częściach.
+    7. W części **Jeżeli** warunku wybierz pole i użyj **równe** jako relacji, i wprowadź wartość. W częściach **_Wówczas_* i **W przeciwnym razie** warunku określ domyślną wartość. W takim przypadku należy wprowadzić **Wiersz** w obu częściach.
 
         [![Pole dialogowe dodawania kolumny warunkowej](./media/Add-conditional-column.png)](./media/Add-conditional-column.png)
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 20570d1586f15ed64cc17edc84e506847e56a57d
-ms.sourcegitcommit: de159549da9ff8cbcdb69ae0e3131cd1726bc323
+ms.openlocfilehash: 77649e310be218fdea8578e974885101c5587722
+ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4038139"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4700988"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management
 
@@ -34,14 +34,15 @@ Aby zobaczyć, co nowego lub zmieniła się w każdej wersji aplikacji Dynamics 
 
 | Wersja | Numer utworzenia | Dostępność automatycznej aktualizacji | Dowiedz się więcej |
 |---|---|---|---|
-| 10.0.14 | 10.0.605 | 2020 października | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.14](whats-new-scm-10-0-14.md) |
-| 10.0.13 | 10.0.569 | 2020 września | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.13](whats-new-scm-10-0-13.md) |
-| 10.0.12 | 10.0.507 | Sierpień 2020 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.12](whats-new-scm-10-0-12.md) |
-| 10.0.11 | 10.0.464 | Lipiec 2020 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.11](whats-new-scm-10-0-11.md) |
-| 10.0.10 | 10.0.420 | 2020 maja | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.10](whats-new-scm-10-0-10.md) |
-| 10.0.9  | 10.0.383 | 2020 kwietnia | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.9](whats-new-scm-10-0-9.md) |
-| 10.0.8  | 10.0.319 | 2020 lutego | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.8](whats-new-scm-10-0-8.md) |
-| 10.0.7  | 10.0.283 | 2020 stycznia | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management wersji 10.0.7](whats-new-scm-10-0-7.md) |
+| 10.0.15 | 10.0.644 | 2021 stycznia | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.15](whats-new-scm-10-0-15.md) |
+| 10.0.14 | 10.0.605 | Listopad 2020 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.14](whats-new-scm-10-0-14.md) |
+| 10.0.13 | 10.0.569 | 2020 października | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.13](whats-new-scm-10-0-13.md) |
+| 10.0.12 | 10.0.507 | Sierpień 2020 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.12](whats-new-scm-10-0-12.md) |
+| 10.0.11 | 10.0.464 | Lipiec 2020 | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.11](whats-new-scm-10-0-11.md) |
+| 10.0.10 | 10.0.420 | 2020 maja | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.10](whats-new-scm-10-0-10.md) |
+| 10.0.9  | 10.0.383 | 2020 kwietnia | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.9](whats-new-scm-10-0-9.md) |
+| 10.0.8  | 10.0.319 | 2020 lutego | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.8](whats-new-scm-10-0-8.md) |
+| 10.0.7  | 10.0.283 | 2020 stycznia | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.7](whats-new-scm-10-0-7.md) |
 | 10.0.6  | 10.0.234 | Listopad 2019  | [Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.6](whats-new-scm-10-0-6.md) |
 
 ## <a name="releases-before-november-2019"></a>Wydania przed listopadem 2019

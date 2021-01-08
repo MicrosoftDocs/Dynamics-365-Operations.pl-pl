@@ -18,11 +18,11 @@ ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: e4002bf7dddb196edf306268ecc16e1bfa5d6d1e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211314"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435404"
 ---
 # <a name="production-output-location"></a>Lokalizacja wyjściowa produkcji
 

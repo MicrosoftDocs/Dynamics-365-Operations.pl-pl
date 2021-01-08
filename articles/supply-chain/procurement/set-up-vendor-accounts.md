@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018082"
+ms.locfileid: "4435599"
 ---
 # <a name="set-up-vendor-accounts"></a>Konfigurowanie kont odbiorców
 
@@ -69,7 +69,7 @@ Nie można usunąć rekordu osoby kontaktowej, jeżeli istnieje odwołanie do ni
 Osoby kontaktowe dostawcy można dodać do kontaktów osobistych w usłudze Microsoft 365. Jednakże najpierw należy skonfigurować synchronizację między Supply Chain Management a usługą Microsoft 365 w ustawieniach synchronizacji Microsoft Exchange Server oraz w kreatorze instalacji Microsoft Outlook.
 
 ## <a name="vendors-in-different-legal-entities"></a>Dostawcy w różnych firmach
-Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy** , aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  
+Jeśli dostawca jest zarejestrowany tylko dla jednej firmy w organizacji, a inne firmy muszą zarejestrować tego samego dostawcę, można użyć strony **Dodawanie dostawcy do innej firmy**, aby skonfigurować dostawcę do współpracy z inną firmą. Należy wybrać grupę dostawców, walutę i stan wstrzymania dla dostawcy w wybranej firmie.  
 
 Jeśli kilka firm w ramach jednej organizacji prowadzi interesy z tym samym dostawcą i każda z nich prowadzi oddzielne konto dla tego dostawcy, można scalić identyfikatory stron odnoszące się do kont dostawcy. W ten sposób można udostępnić informacje takie jak adres i liczba pracowników, co pozwoli je aktualizować tylko w jednym miejscu.  
 
@@ -103,7 +103,7 @@ Następujące kryteria są używane do uwzględnienia dostawców, którzy byli n
 
 Ten proces zawsze powoduje wyłączenie dostawców, którzy w ustawieniu **Wstrzymanie dostawcy** mają wartość **Nigdy**.
 
-Dostawcy pomyślnie przechodzący weryfikację są wstrzymywani, co powoduje ustawienie w polu **Wstrzymanie dostawcy** wartości **Wszystko** , a w polu **Przyczyna** wybranego powodu. Dla dostawcy jest tworzony rekord w historii wstrzymań.
+Dostawcy pomyślnie przechodzący weryfikację są wstrzymywani, co powoduje ustawienie w polu **Wstrzymanie dostawcy** wartości **Wszystko**, a w polu **Przyczyna** wybranego powodu. Dla dostawcy jest tworzony rekord w historii wstrzymań.
 
 ## <a name="vendor-invoice-account"></a>Konto płatnika dostawcy
 Jeśli istnieje więcej niż jeden dostawca z takim samym adresem rozliczeniowym lub jeśli dostawca jest fakturowany przez firmę zewnętrzną, można określić konto płatnika w rekordzie dostawcy. Konto płatnika jest kontem, na którym po stronie kredytowej księgowana jest kwota faktury przy tworzeniu faktury od dostawcy z zamówienia zakupu. Jeśli nie zostanie wprowadzone konto płatnika w rekordzie dostawcy, jego funkcję będzie spełniać konto dostawcy.
@@ -114,7 +114,7 @@ Jeśli trzeba dokonywać płatności na konto bankowe dostawcy, można wprowadzi
 ## <a name="ledger-accounts"></a>Konta księgowe
 Można określić konta domyślne, które będą automatycznie wyświetlane w arkuszach faktur od wybranego dostawcy. Ta funkcja może być przydatna, jeśli zwykle płacisz za te same typy towarów lub usług od tych samych dostawców przez dłuższy czas. Po określeniu domyślnego konta można szybko i sprawnie dokonywać wpisów w arkuszu faktur. Ustawione domyślne konta nie są używane do zamówień zakupu ani do faktur od dostawcy wprowadzonych na stronie **Faktura od dostawcy**.  
 
-Domyślne konta wybiera się na stronie **Ustawienia konta domyślnego** , którą można otworzyć za pomocą karty **Faktura** w rekordzie dostawcy. Konta wybrane w tym miejscu są wyświetlane na wyfiltrowanej liście kont dostawcy podczas wprowadzania wpisu w arkuszu. Można ustawić jedno z kont jako konto domyślne.
+Domyślne konta wybiera się na stronie **Ustawienia konta domyślnego**, którą można otworzyć za pomocą karty **Faktura** w rekordzie dostawcy. Konta wybrane w tym miejscu są wyświetlane na wyfiltrowanej liście kont dostawcy podczas wprowadzania wpisu w arkuszu. Można ustawić jedno z kont jako konto domyślne.
 
 
 

@@ -18,11 +18,11 @@ ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
-ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/24/2020
-ms.locfileid: "4107237"
+ms.locfileid: "4415092"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurowanie kanału internetowego
 
@@ -76,7 +76,7 @@ W sekcji **Konto płatności** można dodać innego dostawcę płatności. Aby u
 
 Dodatkowe zadania wymagane dla konfiguracji kanału online, obejmują Konfigurowanie metod płatności, metod dostawy i przypisania grupy realizacji.
 
-Poniższy obraz pokazuje opcje ustawień **Metody dostawy** , **Metody płatności** i **Przypisania grupy realizacji** na karcie **Konfiguracja**.
+Poniższy obraz pokazuje opcje ustawień **Metody dostawy**, **Metody płatności** i **Przypisania grupy realizacji** na karcie **Konfiguracja**.
 
 ![Dodatkowe akcje konfiguracji kanału online](media/channel-setup-online-3.png)
 
@@ -102,8 +102,8 @@ Skonfigurowane metody dostawy można wyświetlić, wybierając opcję **Metody d
 Aby zmienić lub dodać metodę dostawy, wykonaj następujące kroki.
 
 1. W okienku nawigacji przejdź do **Moduły \> Zarządzanie zapasami \> Metody dostawy**.
-1. W okienku akcji wybierz opcję **nowy** , aby utworzyć nowy tryb dostawy, lub wybierz istniejący tryb.
-1. W sekcji **Kanały sprzedaży** wybierz opcję **Dodaj wiersz** , aby dodać kanał. Dodawanie kanałów przy użyciu węzłów organizacji zamiast dodawania każdego kanału do każdego z nich może usprawnić dodawanie kanałów.
+1. W okienku akcji wybierz opcję **nowy**, aby utworzyć nowy tryb dostawy, lub wybierz istniejący tryb.
+1. W sekcji **Kanały sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać kanał. Dodawanie kanałów przy użyciu węzłów organizacji zamiast dodawania każdego kanału do każdego z nich może usprawnić dodawanie kanałów.
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 

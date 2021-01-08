@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c9ff3d0c7eabe2670c4818173d88c3ab5da7ff0
-ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
+ms.openlocfilehash: 97e1712e38247c996af11bef051a5b1d9239f0c3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4015136"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527393"
 ---
 # <a name="product-information-overview"></a>Omówienie informacji o produktach
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ten temat zawiera informacje dotyczące zarządzania informacjami o produktach. Moduł Zarządzanie informacjami o produktach współpracuje ze wspólnymi definicjami produktów, kategoriami i identyfikatorami we wszystkich firmach, a także z konkretnymi konfiguracjami produktu, tak aby spełnić wszystkie wymagania procesów biznesowych. 
 
@@ -72,7 +74,7 @@ Produkt główny jest skojarzony z grupą wymiarów produktu i technologią konf
 Do wyboru są trzy technologie konfiguracji:
 
 - Wstępnie zdefiniowane warianty są definiowane przez wstępnie zdefiniowane wymiary produktu. Definicja wariantu zawiera definicję określonej prawidłowej kombinacji wymiarów, takich jak Kolor, Styl i Rozmiar. Każda kombinacja daje w wyniku odrębny wariant produktu.
-- Konfiguracja oparta na wymiarach jest zazwyczaj używana w scenariuszach produkcji i pozwala używać wymiaru Konfiguracja w definicji list składowych (BOM). Po zaznaczeniu określonej konfiguracji system używa podzbioru wierszy BOM odpowiednich dla tej konfiguracji do planowania i produkcji. Ta koncepcja jest również nazywana *globalnym BOM* , ponieważ jeden wspólny BOM jest używany do wszystkich konfiguracji produktu.
+- Konfiguracja oparta na wymiarach jest zazwyczaj używana w scenariuszach produkcji i pozwala używać wymiaru Konfiguracja w definicji list składowych (BOM). Po zaznaczeniu określonej konfiguracji system używa podzbioru wierszy BOM odpowiednich dla tej konfiguracji do planowania i produkcji. Ta koncepcja jest również nazywana *globalnym BOM*, ponieważ jeden wspólny BOM jest używany do wszystkich konfiguracji produktu.
 - Konfiguracja oparta na ograniczeniach używa modelu konfiguracji produktu do opisania wszystkich możliwych atrybutów i składników, które są wymagane w celu opisania wszystkich możliwych wariantów produktu w jednym modelu. Ograniczenia kombinacji atrybutów mogą być opisane za pomocą wyrażeń regularnych lub ograniczeń opartych na tabelach. Modele konfiguracji i konfiguratory mają większe znaczenie w zarządzaniu informacjami o produktach i są używane we wszystkich branżach.
 
 Planując implementację oprogramowania Supply Chain Management, bardzo ważne jest wybranie technologii konfiguracji odpowiedniej dla procesu biznesowego. Po implementacji nie można przekonwertować produktu z jednego modelu na inny.
@@ -89,7 +91,7 @@ Produkty zwalniane do określonej firmy są nazywane *zwolnionymi produktami*. P
 
 Obszar roboczy **Obsługa zwolnionego produktu** można konfigurować z elementu menu **Konfiguruj mój obszar roboczy**. Wybierz hierarchię kategorii i kategorię, według których chcesz wyfiltrować obszar roboczy. Aby skorygować dane odnośnego produktu w obszarze roboczym, można również zdefiniować (w dniach) horyzonty czasowe dla produktów **Ostatnio zwolnione produkty** i **Zatrzymane zwolnione produkty**.
 
-Obszar roboczy zawiera podsumowanie kafelków i dwie listy. Lista **Otwarte sprawy** pokazuje sprawy zmian w produktach dla produktów w wybranej hierarchii kategorii produktów, który nie są jeszcze ukończone i zamknięte. Lista **Ostatnio zwolnione** zawiera produkty, które zostały zwolnione w granicach horyzontu czasowego ustawionego w konfiguracji obszaru roboczego. Dla każdego elementu na liście jest wykonywane sprawdzanie poprawności oraz wyświetlany stan tego sprawdzania. Ten stan może wskazywać, że konfiguracje wymagane dla firmy nie zostały ukończone. Korzystając z listy, można bezpośrednio uzyskać dostęp do stron **Szczegóły zwolnionego produktu** , **Obsługa atrybutów produktu** , **Obsługa kategorii produktu** , **Ustawienia domyślne zamówień** i **Tłumaczenia tekstu** w celu dokończenia żądanej konfiguracji produktu.
+Obszar roboczy zawiera podsumowanie kafelków i dwie listy. Lista **Otwarte sprawy** pokazuje sprawy zmian w produktach dla produktów w wybranej hierarchii kategorii produktów, który nie są jeszcze ukończone i zamknięte. Lista **Ostatnio zwolnione** zawiera produkty, które zostały zwolnione w granicach horyzontu czasowego ustawionego w konfiguracji obszaru roboczego. Dla każdego elementu na liście jest wykonywane sprawdzanie poprawności oraz wyświetlany stan tego sprawdzania. Ten stan może wskazywać, że konfiguracje wymagane dla firmy nie zostały ukończone. Korzystając z listy, można bezpośrednio uzyskać dostęp do stron **Szczegóły zwolnionego produktu**, **Obsługa atrybutów produktu**, **Obsługa kategorii produktu**, **Ustawienia domyślne zamówień** i **Tłumaczenia tekstu** w celu dokończenia żądanej konfiguracji produktu.
 
 ### <a name="manually-creating-a-new-released-product"></a>Ręczne tworzenie nowego zwolnionego produktu
 

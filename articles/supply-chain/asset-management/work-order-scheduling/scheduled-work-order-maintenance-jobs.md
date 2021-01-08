@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: a36a32193d9a4f009c1c56b054a45b7dab0ca50d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215247"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435145"
 ---
 # <a name="scheduled-work-order-maintenance-jobs"></a>Planowane zadania konserwacji zlecenia pracy
 

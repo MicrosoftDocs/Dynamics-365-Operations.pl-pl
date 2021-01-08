@@ -20,11 +20,11 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: 6a683ffce487dc4388711ad160c2e8dc55a690dd
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057471"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414871"
 ---
 # <a name="options-for-preventing-discounts-for-retail-products"></a>Opcje blokowania rabatów na produkty detaliczne
 

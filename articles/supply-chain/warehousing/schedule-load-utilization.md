@@ -18,11 +18,11 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 87455077c69834c9ace6409f4cc611ae6e14beb4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204638"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435014"
 ---
 # <a name="schedule-load-utilization"></a>Planowanie wykorzystania przestrzeni magazynowej
 

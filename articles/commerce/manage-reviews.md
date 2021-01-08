@@ -19,11 +19,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
-ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414963"
 ---
 # <a name="manage-ratings-and-reviews"></a>Zarządzanie ocenami i recenzjami
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018774"
+ms.locfileid: "4435658"
 ---
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
@@ -33,11 +33,11 @@ W tym artykule podano ogólne informacje dotyczące zamówień zakupu oraz łąc
 
 Zamówienie zakupu jest dokumentem, który reprezentuje umowę z dostawcą na zakup towarów lub usług. Dokument ten pomaga również monitorować przyjęcia produktów dokonywane względem zamówienia, a później księgować faktury od dostawcy wystawiane przez niego za zamówienie.  
 
-Strona **Zamówienia zakupu** zawiera przegląd dostępnych zamówień i umożliwia ich modyfikowanie. Po otwarciu zamówienia zakupu można wybrać widok **Nagłówek** , który zawiera informacje określane tylko jeden raz dla każdego zamówienia, takie jak szczegóły dostawcy. Alternatywnie można wybrać widok **Wiersze** , w którym można modyfikować wiersze zamówienia. Zazwyczaj będziesz przełączać się między tymi dwoma widokami podczas modyfikowania zamówień zakupu. Opłaty nie są wyświetlane bezpośrednio na stronie **Zamówienia zakupu** , ale można do nich przejść za pośrednictwem menu w wierszach i nagłówku zamówienia.  
+Strona **Zamówienia zakupu** zawiera przegląd dostępnych zamówień i umożliwia ich modyfikowanie. Po otwarciu zamówienia zakupu można wybrać widok **Nagłówek**, który zawiera informacje określane tylko jeden raz dla każdego zamówienia, takie jak szczegóły dostawcy. Alternatywnie można wybrać widok **Wiersze**, w którym można modyfikować wiersze zamówienia. Zazwyczaj będziesz przełączać się między tymi dwoma widokami podczas modyfikowania zamówień zakupu. Opłaty nie są wyświetlane bezpośrednio na stronie **Zamówienia zakupu**, ale można do nich przejść za pośrednictwem menu w wierszach i nagłówku zamówienia.  
 
 Istnieje wiele raportów, gdzie można przeglądać informacje o zamówieniach zakupu, przyjęciach produktów i fakturach od dostawców. Raporty te znajdują się w modułach **Zaopatrzenie i sourcing** i **Rozrachunki z dostawcami**.  
 
-Obszary robocze **Przygotowanie zamówienia zakupu** i **Przyjęcie i obsługa zamówienia zakupu** umożliwiają wyświetlanie list zamówień zakupu w różnych stanach zaawansowania. Zawierają one również podsumowanie czynności, które należy podjąć. Obszar roboczy **Przygotowanie zamówienia zakupu** koncentruje się na tworzeniu i weryfikowaniu zamówienia zakupu, prowadzeniu zamówienia przez proces zatwierdzenia oraz potwierdzaniu z dostawcą. Obszar roboczy **Przyjęcie i obsługa zamówienia zakupu** koncentruje się na przetwarzaniu przyjęcia towarów lub usług względem zamówień zakupu. Zawiera listy dające wgląd w przyjęcia, które są zaległe lub wkrótce będą miały termin dostarczenia od dostawcy. Te obszary robocze nie są wykorzystywane do wykonywania pokrewnych operacji przyjęć do magazynu. Te czynności są wykonywane za pomocą stron w modułach **Zarządzanie zapasami** i **Zarządzanie magazynem**. Przetwarzanie faktur od dostawców powinno się odbywać za pomocą obszaru roboczego **Wprowadzanie faktur od dostawcy** , a płatności obsługiwać za pomocą obszaru roboczego **Płatności dostawcy**.  
+Obszary robocze **Przygotowanie zamówienia zakupu** i **Przyjęcie i obsługa zamówienia zakupu** umożliwiają wyświetlanie list zamówień zakupu w różnych stanach zaawansowania. Zawierają one również podsumowanie czynności, które należy podjąć. Obszar roboczy **Przygotowanie zamówienia zakupu** koncentruje się na tworzeniu i weryfikowaniu zamówienia zakupu, prowadzeniu zamówienia przez proces zatwierdzenia oraz potwierdzaniu z dostawcą. Obszar roboczy **Przyjęcie i obsługa zamówienia zakupu** koncentruje się na przetwarzaniu przyjęcia towarów lub usług względem zamówień zakupu. Zawiera listy dające wgląd w przyjęcia, które są zaległe lub wkrótce będą miały termin dostarczenia od dostawcy. Te obszary robocze nie są wykorzystywane do wykonywania pokrewnych operacji przyjęć do magazynu. Te czynności są wykonywane za pomocą stron w modułach **Zarządzanie zapasami** i **Zarządzanie magazynem**. Przetwarzanie faktur od dostawców powinno się odbywać za pomocą obszaru roboczego **Wprowadzanie faktur od dostawcy**, a płatności obsługiwać za pomocą obszaru roboczego **Płatności dostawcy**.  
 
 Poniższe artykuły zawierają omówienie różnych etapów, przez które przechodzi zamówienia zakupu:
 
@@ -56,7 +56,7 @@ Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu nale
 | Zwrot towaru | Tego typu należy używać przy zwracaniu towarów do dostawcy. Ten typ zamówienia wymaga podania numeru autoryzacji zwrotu materiałów (RMA) otrzymanego od dostawcy. Numer RMA podaje się na karcie **Ogólne** w ustawieniach zamówienia zakupu. Wiersze zamówienia muszą mieć ilości ujemne. |
 
 ## <a name="purchase-order-statuses"></a>Stany zamówień zakupu
-Zamówienia zakupu zawierają kilka pól stanu, które wskazują postęp realizacji zamówienia. Wszystkie te pola są widoczne w widoku zamówienia **Nagłówek** , a niektóre z nich są również widoczne w siatce przeglądu wszystkich zamówień. Pole **Stan** pokazuje stan dotyczący ilości w zamówieniu. Dostępne są następujące wartości:
+Zamówienia zakupu zawierają kilka pól stanu, które wskazują postęp realizacji zamówienia. Wszystkie te pola są widoczne w widoku zamówienia **Nagłówek**, a niektóre z nich są również widoczne w siatce przeglądu wszystkich zamówień. Pole **Stan** pokazuje stan dotyczący ilości w zamówieniu. Dostępne są następujące wartości:
 
 -   **Otwarte zamówienie** — Zamówienia zostały utworzone i podano ilości w zamówieniu.
 -   **Otrzymane** — Niektóre ilości zostały odebrane, ale nie są jeszcze zafakturowane.
@@ -73,7 +73,7 @@ Pole **Stan dokumentu** ułatwia szybkie przeglądanie postępu realizacji zamó
 
 Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi przez proces lub przepływ pracy weryfikacji. Dostępne są następujące wartości:
 
--   **Wersja robocza** , **W trakcie przeglądu** i **Odrzucone** — Te stany są używane tylko w przypadku, gdy dla zamówienia zakupu jest stosowany przepływ pracy zatwierdzania.
+-   **Wersja robocza**, **W trakcie przeglądu** i **Odrzucone** — Te stany są używane tylko w przypadku, gdy dla zamówienia zakupu jest stosowany przepływ pracy zatwierdzania.
 -   **Zatwierdzone** — Ten stan jest przypisywany zamówieniom o ukończonym przepływie pracy zatwierdzania. Zamówienia tworzone bez używania przepływu pracy zatwierdzania otrzymują status **Zatwierdzone** natychmiast.
 -   **W trakcie analizy zewnętrznej** — Ten stan jest używany w scenariuszach, gdy do dostawcy jest wysyłane zapytanie o zakup, tak aby dostawca mógł potwierdzić warunki zamówienia zakupu. Ten stan jest również używany w procesie inicjowanym przez akcję **Żądanie potwierdzenia**. W tym procesie dostawca jest proszony o potwierdzenie warunków zamówienia zakupu poprzez nawiązanie połączenia z systemem Twojej firmy i zarejestrowanie, czy potwierdza czy też odrzuca zamówienie.
 -   **Potwierdzone** — To stan przypisywany po potwierdzeniu zamówienia. Zazwyczaj ten stan jest ostatnim stanem zatwierdzania przypisywanym do zamówienia.

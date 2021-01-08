@@ -20,11 +20,11 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3023692"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415016"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
 
@@ -95,5 +95,5 @@ Należy użyć tej procedury w celu wyświetlenia lub wyczyszczenia historii rek
 
 1. Wybierz kolejno opcje **Biuro obsługi** \> **Okresowe** \> **Analiza RFM**.
 2. Na stronie **Analiza RFM** wybierz rekord do wyświetlenia.
-3. Aby wyświetlić historię rekordu, wybierz kartę skróconą**Historia**.
+3. Aby wyświetlić historię rekordu, wybierz kartę skróconą **Historia**.
 4. Aby wyczyścić historię rekordu, wybierz opcję **Wyczyść historię**.

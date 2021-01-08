@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 91c5b2e70ee083bf2741e245f1ca840ab939ad3f
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3382982"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435256"
 ---
 # <a name="maintenance-schedule-cost"></a>Koszt harmonogramu konserwacji
 

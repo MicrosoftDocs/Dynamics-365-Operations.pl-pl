@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 49025d0aa0f6a627b816a43dd4260449942b400c
-ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
+ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3973483"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4435669"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -67,6 +67,8 @@ Aby skorzystać z optymalizacji planowania, zainstaluj dodatek optymalizacji pla
 1. W skróconej karcie **Dodatki środowiska** widać, czy jest instalowana Optymalizacja planowania.
 1. Po kilku minutach **Instalowanie** zmieni się na **Zainstalowane** (konieczne może być odświeżenie strony). Po zainstalowaniu można już aktywować optymalizację planowania w systemie Dynamics 365 Supply Chain Management.
 
+Głównym celem instalowania dodatku Optymalizacja planowania jest połączenie usługi i środowiska. Dlatego należy zainstalować dodatek oddzielnie dla każdego środowiska, w którym będzie używana Optymalizacja planowania, niezależnie od kodu przenoszonego między tymi środowiskami.
+
 ### <a name="planning-optimization-integration"></a>Integracja optymalizacji planowania
 
 Aby określić, czy dodatek optymalizacji planowania ma być używany w planowaniu głównym, należy przejść do **Planowanie główne** \> **Ustawienia** \> **Integracja optymalizacji planowania**.
@@ -95,7 +97,7 @@ Ustawienie opcji **Zastosuj optymalizację** planowania określa, który Aparat 
 
 ### <a name="integration-with-the-setup"></a>Integracja z ustawieniami
 
-Jeśli opcja Podgląd optymalizacji planowania jest włączona, planowanie główne jest wykonywane przy użyciu dodatku Optymalizacja planowania. W takim przypadku wpływa to na wyniki i funkcje planowania głównego.
+Jeśli Optymalizacja planowania jest włączona, planowanie główne jest wykonywane przy użyciu dodatku Optymalizacja planowania. W takim przypadku wpływa to na wyniki i funkcje planowania głównego.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

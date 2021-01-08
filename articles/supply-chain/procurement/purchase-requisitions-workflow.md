@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813895"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435069"
 ---
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 

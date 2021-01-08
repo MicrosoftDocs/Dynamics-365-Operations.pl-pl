@@ -7,7 +7,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
+ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 1051fa4db16bb94cc9d60a91fc3637d7e5305cc2
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: cfdf36e9486aa4853d3bf674afa73ec3a4d1c161
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029918"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529641"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Rozszerz aplikację Talent o usługi Power Apps i Power Automate
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Talent: Attract - Attract używanych przez Microsoft Power Apps i Microsoft Power Automate. Można zaimportować pakiet rozwiązań skojarzony z każdym przykładem do środowiska Power Apps. Następnie można używać pakietów jako pomocy lub punktów początkowych do implementacji scenariuszy odpowiednich dla Twojej organizacji.
 

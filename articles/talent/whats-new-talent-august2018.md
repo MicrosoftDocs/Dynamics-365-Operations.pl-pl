@@ -1,7 +1,7 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (sierpień 2018 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent - Core HR.
-author: Darinkramer
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/27/2018
 ms.topic: article
@@ -15,15 +15,15 @@ ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: anbichse
 ms.search.validFrom: 2018-08-27
 ms.dyn365.ops.version: Talent August 2018 update
-ms.openlocfilehash: 4f6d0a32807397d5f2c0892061e54c2fed24610b
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 30646de08bd5ea4b2da05bfc38da7edc320a3331
+ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897771"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "4690107"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-august-2018"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent - Core HR (sierpień 2018 r.)
 
@@ -33,7 +33,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 
 ## <a name="view-expiring-records-in-manager-self-service"></a>Wyświetlanie wygasających rekordów w obszarze roboczym Samoobsługa menedżera
 
-Teraz w obszarze roboczym Samoobsługa menedżera można wyświetlać wygasające rekordy. Nowe opcje umożliwiają określenie, jakie informacje będą dostępne do wglądu dla menedżerów. Obejmuje to:
+Teraz w obszarze roboczym Samoobsługa menedżera można wyświetlać wygasające rekordy. Nowe opcje umożliwiają określenie, jakie informacje będą dostępne do wglądu dla menedżerów. Dostępne opcje:
 
 -   Certyfikaty
 
@@ -51,7 +51,7 @@ Ta funkcja daje także możliwość określenia zakresu dni, w których mają by
 
 Można skonfigurować opcje, które będą dostępne dla poszczególnych ról podczas wprowadzania wniosku o przeniesienie. Ta funkcja zapewnia dodatkową elastyczność posługiwania się rolami w organizacji.
 
-Na przykład menedżerowie wnioskujący o przeniesienia pracowników mogą nie mieć uprawnień do proponowania lub wprowadzania kwot wynagrodzenia albo wybierania list zadań, które mają zostać skojarzone z wnioskiem o przeniesienie. W takim przypadku menedżerowie mogą tworzyć i przesyłać wnioski o przeniesienie, ale nie mogą wprowadzać przypisań wynagrodzeń ani list zadań. W tej samej konfiguracji dział kadr będzie mógł przypisywać nowe wartości wynagrodzeń, a także wszelkie dodatkowe listy kontrolne czynności, które należy wykonać po sfinalizowaniu przeniesienia.
+Na przykład menedżerowie wnioskujący o przeniesienia pracowników mogą nie mieć uprawnień do proponowania lub wprowadzania kwot wynagrodzenia albo wybierania list zadań, które mają zostać skojarzone z wnioskiem o przeniesienie. Menedżerowie mogą tworzyć i przesyłać wnioski o przeniesienie, ale nie mogą wprowadzać przypisań wynagrodzeń ani list zadań. W tej samej konfiguracji dział kadr może przypisywać nowe wartości wynagrodzeń i wszelkie dodatkowe listy kontrolne czynności z powodu sfinalizowania przeniesienia.
 
 Domyślnie nowe opcje konfiguracji są ustawione w taki sposób, aby nie zmieniały żadnych funkcji w wersjach sprzed tej aktualizacji.
 
@@ -59,7 +59,7 @@ Domyślnie nowe opcje konfiguracji są ustawione w taki sposób, aby nie zmienia
 
 Teraz sekcja Urlopy i nieobecności zawiera dodatkowe pola dat.
 
-Za ich pomocą można w podstawie okresu naliczania na poziomie planu ustawić używanie konkretnych dat dotyczących pracowników etatowych. Dzięki temu w procesie naliczania urlopu można używać dat innych niż data początkowa planu. Opcje dat specyficznych dla pracownika obejmują następujące pozycje:
+Za ich pomocą można w podstawie okresu naliczania na poziomie planu ustawić używanie konkretnych dat dotyczących pracowników etatowych. W procesie naliczania urlopu można używać dat innych niż data początkowa planu. Opcje dat specyficznych dla pracownika obejmują następujące pozycje:
 
 -   Niestandardowe (dostępna przed tą aktualizacją)
 

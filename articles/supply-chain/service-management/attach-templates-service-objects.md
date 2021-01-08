@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: e79526dd43f516f2f4abf31276f314cb2498458e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978804"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435405"
 ---
 # <a name="attach-templates-to-service-objects"></a>Dołączanie szablonów do przedmiotów serwisu    
 

@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9332e45f7213ed815e4417969b617256778598db
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017812"
+ms.locfileid: "4435632"
 ---
 # <a name="wave-step-codes"></a>Kody kroku grupy czynności
 
@@ -59,7 +59,7 @@ Podczas włączania weryfikacje są wykonywane w trakcie uaktualniania danych. J
 
 Po rozwiązaniu wszelkich konfliktów, które zostaną zidentyfikowane podczas weryfikacji, można ponownie spróbować włączyć funkcję.
 
-Po włączeniu funkcji będzie dostępna strona **Kody etapów grupy czynności** ( **Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności** ). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów kroków grupy czynności w całej organizacji.
+Po włączeniu funkcji będzie dostępna strona **Kody etapów grupy czynności** (**Zarządzanie magazynem \> Ustawienia \> Grupy czynności \> Kody etapów grupy czynności**). Ta strona zawiera listę kodów etapów grupy czynności, które zostały uaktualnione po włączeniu funkcji kodów kroków grupy czynności w całej organizacji.
 
 ### <a name="create-new-wave-step-codes"></a>Tworzenie nowych kodów etapów grupy czynności
 

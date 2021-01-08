@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383281"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435169"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Zatwierdzanie dostawców określonych produktów
 

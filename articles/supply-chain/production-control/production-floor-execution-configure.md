@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: cf58a7d851577854d08bad70cff69794c3841a2d
-ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
+ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
+ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4012501"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "4664303"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -36,29 +36,34 @@ Po otwarciu interfejsu wykonania produkcji system automatycznie ładuje wybraną
 
 W tym temacie opisano różne opcje konfigurowania urządzeń karty zadań.
 
-## <a name="turn-on-new-features-in-feature-management"></a>Włącz nowe funkcje w zarządzaniu funkcjami
+## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>Włączanie interfejsu wykonywania hal produkcyjnych i powiązanych opcjonalnych funkcji
 
-Niektóre z ustawień opisanych w tym temacie muszą być włączone w systemie, zanim są dostępne dla użytkownika. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie w razie potrzeby wszelkich lub wszystkich wymienionych poniżej funkcji.
+Sam interfejs wykonywania hal produkcyjnych, a kilka opcjonalnych ustawień opisanych w tym temacie, musi być włączony w systemie, aby można było z nich skorzystać. Strona [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) umożliwia włączenie dowolnej funkcji lub wszystkich funkcji opisanych w poniższych podsekcjach, zgodnie z wymaganiami.
 
-### <a name="generate-license-plate"></a>Generuj numer identyfikacyjny
+### <a name="the-production-floor-execution-interface"></a>Interfejs wykonania hal produkcyjnych
 
-Aby ta funkcja była dostępna, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
+To jest główna funkcja opisana w tym temacie. Dodaje do systemu interfejs wykonawczy hali produkcyjnej. Aby ją włączyć, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):  
+- Uruchomienie hali produkcyjnej
+
+### <a name="generate-license-plates"></a>Generuj numery identyfikacyjne
+
+Te funkcje sprawiają, że funkcjonalność numeru identyfikacyjnego jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
 1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
 1. Włącz automatyczną generację numeru identyfikacyjnego podczas zgłaszania wyrobów gotowych w urządzeniu karty zadań
 
-### <a name="print-label"></a>Drukuj etykietę
+### <a name="print-labels"></a>Drukuj etykiety
 
-Aby ta funkcja była dostępna, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
+Te funkcje sprawiają, że funkcjonalność drukowania etykiet jest dostępna dla interfejsu uruchomienia hali produkcyjnej. Jeżeli chcesz z nich skorzystać, włącz następujące funkcje w module [zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (w tej kolejności):
 
 1. Numer identyfikacyjny do zgłoszenia wyrobów gotowych został dodany do urządzenia karty zadań
 1. Drukowanie etykiety z menu Urządzenie karty zadań
 
 ### <a name="allow-locking-the-touch-screen"></a>Zezwalaj na blokowanie ekranu dotykowego
 
-Aby ta funkcja była dostępna, włącz następujące funkcje w module [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej, który umożliwia pracownikom wypróbowanie ekranu dotykowego. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- (Wersja zapoznawcza) Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
+- Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
 
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
@@ -69,14 +74,15 @@ Aby utworzyć i zarządzać konfiguracjami urządzeń, przejdź do **Kontrola pr
 
 Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji urządzenia. Dostępne są następujące pola:
 
-- **Zgłoś ilość przy wyjściu** – wartość *Tak* powoduje, że pracownicy będą monitowani o raportowanie informacji zwrotnych dotyczących zadań w toku podczas wyrejestrowywania. Jeśli ustawiono wartość *Nie* , pracownik nie będzie monitowany.
-- **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie* , pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Urządzenie wróci do strony rejestracji. Jeśli ta opcja jest ustawiona na wartość *Tak* , pracownicy pozostaną zalogowani na urządzeniu z kartą pracy. Pracownik może jednak wylogować się ręcznie, aby inny pracownik mógł się zalogować, gdy urządzenie karty będzie nadal działać na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
-- **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak* , aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie* , w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak* , jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak* , gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.
-- **Jeden pracownik** – Ustawienie tej opcji na wartość *Tak* , jeśli tylko jeden pracownik korzysta z każdego urządzenia karty zadań, w którym ta konfiguracja jest aktywna. Po ustawieniu tej opcji na *Tak* , opcja **Blokowanie pracownika** jest automatycznie ustawiana na wartość *Tak*. Ponadto to ustawienie usuwa zapotrzebowanie (i zdolność) pracownika, który ma być zalogowany przy użyciu identyfikatora karty identyfikacyjnej (lub podobnego identyfikatora). Zamiast tego pracownik loguje się do Microsoft Dynamics 365 Supply Chain Management, używając konta użytkownika systemowego powiązanego z *pracownik zarejestrowany w czasie* (z tabeli *pracownicy* ) i jednocześnie loguje się do urządzenia karty pracy jako ten pracownik.
-- **Zezwalaj na blokowanie ekranu dotykowego** – tę opcję należy wybrać *Tak* , aby umożliwić pracownikom zablokowanie ekranu dotykowego urządzenia karty zadań w celu ich usunięcia. Jeśli ta opcja jest ustawiona na *Tak* , do strony rejestracji urządzenia zostanie dodany przycisk **Blokowanie ekranu ze względu na dezynfekcję**. Po wybraniu tego przycisku przez pracownika ekran dotykowy jest tymczasowo blokowany, aby zapobiec niezamierzonemu wprowadzaniu. Wyświetlany jest również czasomierz odliczania. Pracownik może następnie bezpiecznie oczyścić urządzenie i ekran. Po zakończeniu odliczania ekran dotykowy automatycznie odblokowuje ekran.
-- **Czas trwania blokady ekranu** – gdy opcja **Zezwalaj na blokowanie ekranu dotykowego** jest ustawiona na *Tak* , ta opcja służy do określenia liczby sekund, kiedy ekran dotykowy powinien być zablokowany do oczyszczania. Czas trwania musi być liczbą od 5 do 120 sekund.
+- **Zgłoś ilość przy wyjściu** – wartość *Tak* powoduje, że pracownicy będą monitowani o raportowanie informacji zwrotnych dotyczących zadań w toku podczas wyrejestrowywania. Jeśli ustawiono wartość *Nie*, pracownik nie będzie monitowany.
+- **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie*, pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Urządzenie wróci do strony rejestracji. Jeśli ta opcja jest ustawiona na wartość *Tak*, pracownicy pozostaną zalogowani na urządzeniu z kartą pracy. Pracownik może jednak wylogować się ręcznie, aby inny pracownik mógł się zalogować, gdy urządzenie karty będzie nadal działać na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
+- **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak*, aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie*, w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak*, jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak*, gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.
+- **Jeden pracownik** – Ustawienie tej opcji na wartość *Tak*, jeśli tylko jeden pracownik korzysta z każdego urządzenia karty zadań, w którym ta konfiguracja jest aktywna. Po ustawieniu tej opcji na *Tak*, opcja **Blokowanie pracownika** jest automatycznie ustawiana na wartość *Tak*. Ponadto to ustawienie usuwa zapotrzebowanie (i zdolność) pracownika, który ma być zalogowany przy użyciu identyfikatora karty identyfikacyjnej (lub podobnego identyfikatora). Zamiast tego pracownik loguje się do Microsoft Dynamics 365 Supply Chain Management, używając konta użytkownika systemowego powiązanego z *pracownik zarejestrowany w czasie* (z tabeli *pracownicy*) i jednocześnie loguje się do urządzenia karty pracy jako ten pracownik.
+- **Zezwalaj na blokowanie ekranu dotykowego** – tę opcję należy wybrać *Tak*, aby umożliwić pracownikom zablokowanie ekranu dotykowego urządzenia karty zadań w celu ich usunięcia. Jeśli ta opcja jest ustawiona na *Tak*, do strony rejestracji urządzenia zostanie dodany przycisk **Blokowanie ekranu ze względu na dezynfekcję**. Po wybraniu tego przycisku przez pracownika ekran dotykowy jest tymczasowo blokowany, aby zapobiec niezamierzonemu wprowadzaniu. Wyświetlany jest również czasomierz odliczania. Pracownik może następnie bezpiecznie oczyścić urządzenie i ekran. Po zakończeniu odliczania ekran dotykowy automatycznie odblokowuje ekran.
+- **Czas trwania blokady ekranu** – gdy opcja **Zezwalaj na blokowanie ekranu dotykowego** jest ustawiona na *Tak*, ta opcja służy do określenia liczby sekund, kiedy ekran dotykowy powinien być zablokowany do oczyszczania. Czas trwania musi być liczbą od 5 do 120 sekund.
 - **Generowanie numeru identyfikacyjnego** – ustawienie tej opcji na wartość *Tak* powoduje generowanie nowego numeru identyfikacyjnego za każdym razem, gdy pracownik używa urządzenia karty zadań do zgłaszania wyrobów gotowych. Numer identyfikacyjny jest generowany na podstawie sekwencji numerów ustawionej na stronie **Parametry zarządzania magazynem**. Po ustawieniu wartości opcji *Nie* pracownicy muszą określić istniejący numer identyfikacyjny podczas zgłaszania wyrobów gotowych.
 - **Drukuj etykietę** – ustawienie tej opcji na wartość *Tak* powoduje Drukowanie etykiety numeru identyfikacyjnego, gdy pracownik korzysta z urządzenia karty zadań w celu zgłoszenia jako gotowej. Konfiguracja etykiety jest ustawiana w obszarze marszruta dokumentów, zgodnie z opisem w [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md).
+- **Wybór karty**  – Ustawienia w tej sekcji służą do wybrania kart, które mają być wyświetlane w interfejsie uruchomienia hali produkcyjnej, gdy bieżąca konfiguracja jest aktywna. W razie potrzeby można zaprojektować dowolną liczbę kart, a następnie dodać i umieścić je w tym miejscu. Aby uzyskać szczegółowe informacje na temat projektowania kart i pracy z ustawieniami tutaj, zobacz [Projektowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-tabs.md).
 
 ## <a name="clean-up-job-configurations"></a>Oczyszczanie konfiguracji zadań
 
@@ -87,4 +93,4 @@ Zadanie wsadowe okresowo oczyszcza wpisy w tabeli odwołań dla urządzeń, któ
 1. Wybierz kolejno opcje **Kontrola produkcji \> Ustawienia \> Wykonywanie produkcji \> Konfigurowanie interfejsu wykonania hal produkcyjnych**.
 1. W okienku akcji wybierz opcję **Oczyść konfiguracje klientów**.
 1. W oknie dialogowym **Oczyść konfigurację klientów** w polu **Liczba dni** ustaw liczbę dni nieaktywności (przed dniem dzisiejszym), które mają być brane pod uwagę. Wszystkie konfiguracje i rekordy logowania dla urządzeń, które nie były aktywne w tym czasie, zostaną usunięte.
-1. Wybierz przycisk **OK** , aby oczyścić odpowiednie konfiguracje na podstawie **Liczby dni**.
+1. Wybierz przycisk **OK**, aby oczyścić odpowiednie konfiguracje na podstawie **Liczby dni**.

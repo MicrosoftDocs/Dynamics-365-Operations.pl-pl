@@ -19,11 +19,11 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017098"
+ms.locfileid: "4435540"
 ---
 # <a name="manage-warehouse-workers"></a>Zarządzanie pracownikami magazynu
 
@@ -35,7 +35,7 @@ Jeśli używasz funkcji zarządzania magazynem, wszystkie operacje pracownika ma
 
 Aby utworzyć nowego użytkownika pracy, kliknij **Pracownik** na stronie **Pracownicy** na karcie **Ogólne** w sekcji **Magazyny**. Trzeba określić identyfikator użytkownika, jego nazwę, domyślny magazyn oraz nazwę menu. To menu jest ładowane, gdy użytkownik zaloguje się w Portalu urządzeń przenośnych używanych w magazynie. Możesz zdefiniować, które elementy menu są dostępne dla użytkownika. 
 
-W ramach konfiguracji dla każdego użytkownika pracy można również zdefiniować przepływy pracy dla określonego procesu. Na przykład można użyć pola **Jest kierownikiem ds. inwentaryzacji ciągłej** , aby określić, czy użytkownik może korygować rozbieżności inwentaryzacji ciągłej podczas liczenia lub czy te korekty muszą najpierw zostać przejrzane przez inną osobę.
+W ramach konfiguracji dla każdego użytkownika pracy można również zdefiniować przepływy pracy dla określonego procesu. Na przykład można użyć pola **Jest kierownikiem ds. inwentaryzacji ciągłej**, aby określić, czy użytkownik może korygować rozbieżności inwentaryzacji ciągłej podczas liczenia lub czy te korekty muszą najpierw zostać przejrzane przez inną osobę.
 
 ## <a name="defining-labor-standards"></a>Definiowanie norm robocizny
 Na stronie **Normy robocizny** można określić metody obliczania szacowanego czasu potrzebnego na wykonanie danego typu pracy. Tę definicję można ustawić na poziomie ogólnym lub szczegółowym. Można na przykład zdefiniować czas wymagany do odebrania zamówienia sprzedaży według wagi dla określonej definicji jednostki w konkretnym procesie odbierania. Jednocześnie można rejestrować czas na podstawie innej metody obliczania dla operacji odkładania dostępnych towarów, które są odbierane 

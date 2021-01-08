@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b226dd61c758cf17c8e4784ec22d2628145c1836
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985616"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435291"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Listy składowe (BOM) i formuły
 
@@ -108,7 +108,7 @@ Należy zwrócić uwagę, że fantomy są zwykle używane do uproszczenia proces
 
 ### <a name="pegged-supply"></a>Ustalona dostawa
 
-Wybierz**ustalana dostaw** typ wiersza, aby utworzyć produkcję podrzędną, karty kanban zdarzenia wiersza BOM lub bezpośredniego zamówienia zakupu dla dowolnego wariantu produktu, który odwołuje się do wiersza BOM. Produkcję podrzędną, kanban zdarzenia lub zamówienie zakupu są tworzone podczas szacowania zamówienia produkcyjnego. Wymagane ilości towarów są automatycznie rezerwowane na potrzeby zamówienia produkcyjnego zużywającego towary.
+Wybierz **ustalana dostaw** typ wiersza, aby utworzyć produkcję podrzędną, karty kanban zdarzenia wiersza BOM lub bezpośredniego zamówienia zakupu dla dowolnego wariantu produktu, który odwołuje się do wiersza BOM. Produkcję podrzędną, kanban zdarzenia lub zamówienie zakupu są tworzone podczas szacowania zamówienia produkcyjnego. Wymagane ilości towarów są automatycznie rezerwowane na potrzeby zamówienia produkcyjnego zużywającego towary.
 
 ### <a name="vendor"></a>Dostawca
 

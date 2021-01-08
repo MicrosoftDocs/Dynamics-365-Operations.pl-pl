@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 98cb4f9049509dd700cf38a5d176447f86e9c824
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3097069"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594315"
 ---
 # <a name="upload-videos"></a>Przekaż pliki wideo
 
@@ -64,10 +64,12 @@ Jeśli wiele typów zasobów jest przekazywanych jednocześnie (na przykład obr
 
 [Omówienie zarządzania cyfrowymi składnikami majątku](dam-overview.md)
 
-[Przekaż obrazy](dam-upload-images.md)
+[Przekazanie obrazów](dam-upload-images.md)
 
 [Przekaż pliki](dam-upload-files.md)
 
-[Przytnij obrazy](dam-crop-images.md)
+[Przycinanie obrazów](dam-crop-images.md)
 
-[Dostosuj punkty ogniskowe obrazu](dam-custom-focal-point.md)
+[Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
+
+[Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)

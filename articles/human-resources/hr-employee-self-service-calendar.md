@@ -2,8 +2,8 @@
 title: Tworzenie kalendarza zespołu
 description: W programie Dynamics 365 Human Resources można wyświetlać i tworzyć kalendarze zespołu.
 author: andreabichsel
-manager: AnnBe
-ms.date: 10/7/2020
+manager: tfehr
+ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
-ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
+ms.openlocfilehash: 2ec767a868d5c76b57465c451b8cc893b8b0a56b
+ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "3969005"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "4420155"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
 
@@ -64,6 +64,11 @@ Kalendarze zawierają teraz dodatkowe filtry i opcje. Wszystkie kalendarze zawie
 Konfiguracja kalendarza w parametrach urlopu i nieobecności określa dostępne opcje widoku.
 
 Kalendarze można również filtrować według kierowników lub działów. Przypisanie stanowiska głównego określa pracowników, którzy są wyświetlani po ustawieniu tych filtrów. 
+
+>[!IMPORTANT]
+>Funkcja wyświetlania urlopów i nieobecności w różnych firmach jest obecnie dostępna w wersji zapoznawczej. Należy ją włączyć w środowisku **piaskownicy**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>
+>Następnie należy włączyć funkcję w **Udostępnianych parametrach zasobów ludzkich**, aby wyświetlić filtr firmy w kalendarzach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów urlopu i nieobecności](hr-leave-and-absence-parameters.md).<br><br>
+>Kalendarz można filtrować według firm. Aby wyświetlić wszystkich pracowników niezależnie od firmy, należy wyczyścić pole filtru i nacisnąć Enter. 
 
 Aby uzyskać informacje na temat ustawień kalendarza, zobacz [Konfigurowanie parametrów kalendarza](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

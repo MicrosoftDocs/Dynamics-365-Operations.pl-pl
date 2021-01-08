@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 1f2e1bcd220f0cd94fb1515e42fd3f8250c1c621
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016362"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654227"
 ---
 # <a name="shipment-consolidation-policies"></a>Zasady konsolidacji wysyłki
 
@@ -37,13 +37,13 @@ Zasady konsolidacji wysyłki są używane dla następujących funkcji:
 
 Przed wprowadzeniem zasad konsolidacji wysyłki funkcja konsolidacji istniała jako ustawienie na poziomie magazynu. Wszystkie zamówienia wszystkich odbiorców z jednego magazynu były traktowane tak, jakby miały takie same wymagania dotyczące konsolidacji. Zasady konsolidacji wysyłki dodają obsługę scenariuszy, w których różne organizacje mają różne wymagania dotyczące konsolidacji wysyłek.
 
-Zapytania służą do identyfikowania zasad konsolidacji wysyłek, które są stosowane, a następnie edytowalny zestaw pól określa sposób grupowania wierszy ładunku na poziomie wysyłki. (Ten wzorzec przypomina wzorzec stosowany przez szablony grupy czynności). Ponadto opcja **Konsoliduj z istniejącymi wysyłkami** została dodana do wszystkich zasad. Jeśli ta opcja jest włączona, procedura *zwalniania do magazynu* wyszukuje wysyłki do konsolidacji, wyszukując je wśród istniejących wysyłek, które zostały utworzone na podstawie tych samych zasad konsolidacji. W takim przypadku system wybierze istniejącą wysyłkę lub ładunek, zamiast tworzyć nowy. System będzie jednak konsolidować tylko z istniejącymi wysyłkami, które mają stan *Otwarte* ; wysyłki należące do wydania z użyciem grupy czynności o stanie *Zwolnione* lub wyższym nie będą traktowane jako cele konsolidacji.
+Zapytania służą do identyfikowania zasad konsolidacji wysyłek, które są stosowane, a następnie edytowalny zestaw pól określa sposób grupowania wierszy ładunku na poziomie wysyłki. (Ten wzorzec przypomina wzorzec stosowany przez szablony grupy czynności). Ponadto opcja **Konsoliduj z istniejącymi wysyłkami** została dodana do wszystkich zasad. Jeśli ta opcja jest włączona, procedura *zwalniania do magazynu* wyszukuje wysyłki do konsolidacji, wyszukując je wśród istniejących wysyłek, które zostały utworzone na podstawie tych samych zasad konsolidacji. W takim przypadku system wybierze istniejącą wysyłkę lub ładunek, zamiast tworzyć nowy. System będzie jednak konsolidować tylko z istniejącymi wysyłkami, które mają stan *Otwarte*; wysyłki należące do wydania z użyciem grupy czynności o stanie *Zwolnione* lub wyższym nie będą traktowane jako cele konsolidacji.
 
-Po udostępnieniu zasad konsolidacji wysyłek ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu** , które było poprzednio dostępne na stronie konfiguracji **Magazyny**. Aby ułatwić przejście do nowej funkcji konsolidacji wysyłki, funkcja na stronie **Zasady konsolidacji wysyłki** tworzy zasady domyślne, która automatycznie uwzględniają stare ustawienie dla istniejących magazynów. Po utworzeniu zasad domyślnych ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu** na stronie konfiguracji **Magazyny** nie będzie już brane pod uwagę.
+Po udostępnieniu zasad konsolidacji wysyłek ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu**, które było poprzednio dostępne na stronie konfiguracji **Magazyny**. Aby ułatwić przejście do nowej funkcji konsolidacji wysyłki, funkcja na stronie **Zasady konsolidacji wysyłki** tworzy zasady domyślne, która automatycznie uwzględniają stare ustawienie dla istniejących magazynów. Po utworzeniu zasad domyślnych ustawienie **Konsolidowanie wysyłki podczas zwalniania do magazynu** na stronie konfiguracji **Magazyny** nie będzie już brane pod uwagę.
 
 Za pomocą strony **zwalniania do magazynu** można ręcznie zastępować odpowiednie zasady konsolidacji w taki sam sposób jak w przypadku zastępowania zasad realizacji.
 
-Można korzystać z polecenia **Zwolnij \> Zwolnij do magazynu** na stronie **Pulpit planowania wysyłki ładunku** , aby tworzyć ładunki wychodzące oparte na wierszach zamówień sprzedaży i zamówień przeniesienia przed dokonaniem zwolnienia do magazynu. Te ładunki używają tej samej logiki konsolidacji, która została wprowadzona razem z konsolidacją zasad wysyłki.
+Można korzystać z polecenia **Zwolnij \> Zwolnij do magazynu** na stronie **Pulpit planowania wysyłki ładunku**, aby tworzyć ładunki wychodzące oparte na wierszach zamówień sprzedaży i zamówień przeniesienia przed dokonaniem zwolnienia do magazynu. Te ładunki używają tej samej logiki konsolidacji, która została wprowadzona razem z konsolidacją zasad wysyłki.
 
 Strona **pulpitu konsolidacji wysyłki** służy do konsolidowania istniejących wysyłek, które nie zostały jeszcze potwierdzone, ale zostały już zwolnione do magazynu. Ta funkcja obsługuje scenariusze, w których proces automatycznego zwalniania z własną konsolidacją wysyłek jest uruchamiany wiele razy dziennie, ale potencjalne dodatkowe konsolidacje są określane ręcznie, zanim wysyłka do przewoźników zakończy się w trakcie procesu potwierdzania. Ta funkcja umożliwia konsolidowanie wysyłek wychodzących, które są tworzone na podstawie wierszy zamówień sprzedaży lub zamówień przeniesienia, w dowolnym momencie po zwolnieniu wysyłek do magazynu, ale przed ich potwierdzeniem.
 
@@ -55,7 +55,7 @@ W tej sekcji opisano strony, polecenia i funkcje, które są zmieniane lub dodaw
 
 ### <a name="shipment-consolidation-policies-page"></a>Strona Zasady konsolidacji wysyłki
 
-Zasady są zróżnicowane według typu zlecenia pracy. Typ **Zamówienia sprzedaży** reprezentuje wysyłki _zamówień sprzedaży_ , a typ **Zamówienia przeniesienia** reprezentuje wysyłki _przeniesienia wydania_.
+Zasady są zróżnicowane według typu zlecenia pracy. Typ **Zamówienia sprzedaży** reprezentuje wysyłki _zamówień sprzedaży_, a typ **Zamówienia przeniesienia** reprezentuje wysyłki _przeniesienia wydania_.
 
 Każde zasady konsolidacji wysyłki mają zapytanie określające, kiedy jest stosowane, oraz identyfikator sekwencji określający kolejność wykonywania. Konsolidacja jest stosowana dla każdej unikatowej kombinacji wybranych pól. Dodatkowy podawany parametr jest używany do konsolidacji z istniejącymi (otwartymi) wysyłkami. Zasady są oceniane i stosowane przy każdym tworzeniu nowej wysyłki (przed przetworzeniem grupy czynności).
 
@@ -128,9 +128,9 @@ Poniższa tabela zawiera podsumowanie sposobu działania konsolidacji wysyłek, 
 | W poniższych polach konsolidacji zdefiniowano unikatową kombinację wartości używanych do konsolidowania wysyłek dla *wiersza sprzedaży*. (Wszystkie pozostałe pola są ignorowane).<ul><li>Identyfikator zamówienia (OrderNum)</li><li>Odwołanie odbiorcy (CustomerRef)</li><li>Zapotrzebowanie odbiorcy (CustomerReq)</li><li>Warunki dostawy (DlvTermId)</li></ul> | W poniższych polach konsolidacji zdefiniowano unikatową kombinację wartości używanych do konsolidowania wysyłek dla *wiersza sprzedaży*. (Wszystkie pozostałe pola są ignorowane).<ul><li>Identyfikator zamówienia (OrderNum)</li><li>Identyfikator konta (AccountNum)</li><li>Odbiorca dostawy (DeliveryName)</li><li>Adres pocztowy (DeliveryPostalAddress)</li><li>Kod kraju ISO (CountryRegionISOCode)</li><li>Adres (Address)</li><li>Oddział (InventSiteId)</li><li>Magazyn (InventLocationId)</li><li>Przewoźnik (CarrierCode)</li><li>Usługa przewozowa (CarrierServiceCode)</li><li>Metoda dostawy (ModeCode)</li><li>Grupa przewoźnika (CarrierGroupCode)</li><li>Identyfikator brokera (BrokerCode)</li><li>Kierunek (LoadDirection)</li><li>Warunki dostawy (DlvTermId)</li><li>Odwołanie odbiorcy (CustomerRef)</li><li>Zapotrzebowanie odbiorcy (CustomerReq)</li></ul>Te pola są jedynymi polami dostępnymi i inicjowanymi podczas tworzenia nowej wysyłki. |
 | Nie dotyczy | Następujące pola konsolidacji są wymagane dla *wiersza sprzedaży* i nie można ich usunąć:<ul><li>Identyfikator konta (AccountNum)</li><li>Odbiorca dostawy (DeliveryName)</li><li>Adres pocztowy (DeliveryPostalAddress)</li><li>Magazyn (InventLocationId)</li></ul>Domyślnie pola te będą przypisywane podczas tworzenia nowych zasad. Nie można ich usunąć. |
 | Procedura *zwalniania ładunków do magazynu* na stronie **pulpitu planowania wysyłki ładunku** używa własnego, osobnego kodu do tworzenia wysyłek i grup czynności. | Zasady konsolidacji wysyłki są stosowane w celu określenia, które pola mają być oceniane w celu konsolidacji. Wysyłki są konsolidowane tylko w ramach pojedynczego ładunku. |
-| Użytkownik ręcznie wybiera opcję **Konsoliduj wysyłki** na stronie **Wszystkie wysyłki** , a następnie wybiera docelową wysyłkę „podstawową”. Filtr zasugeruje wszystkie istniejące wysyłki, które mają odpowiadające wartości w kilku polach kluczy. | Użytkownik ręcznie wybiera opcję **Konsoliduj wysyłki** na stronie **Wszystkie wysyłki** , a następnie wybiera docelową wysyłkę „podstawową”. System będzie sugerować inne istniejące wysyłki, dopasowując wartości kilku pól klucza skonfigurowane dla odpowiednich zasad konsolidacji wysyłki. |
+| Użytkownik ręcznie wybiera opcję **Konsoliduj wysyłki** na stronie **Wszystkie wysyłki**, a następnie wybiera docelową wysyłkę „podstawową”. Filtr zasugeruje wszystkie istniejące wysyłki, które mają odpowiadające wartości w kilku polach kluczy. | Użytkownik ręcznie wybiera opcję **Konsoliduj wysyłki** na stronie **Wszystkie wysyłki**, a następnie wybiera docelową wysyłkę „podstawową”. System będzie sugerować inne istniejące wysyłki, dopasowując wartości kilku pól klucza skonfigurowane dla odpowiednich zasad konsolidacji wysyłki. |
 | Za pomocą polecenia **Konsoliduj wysyłki** na stronie **Wszystkie wysyłki** można wybrać tylko jedną wysyłkę. | Strona **pulpitu konsolidacji wysyłki** ułatwia znajdowanie zestawu wysyłek, które nie są jeszcze w stanie oznaczającym wysłanie. Wysyłki te są analizowane na podstawie kilku pól klucza skonfigurowanych w zasadach konsolidacji wysyłki. Wszystkie wysyłki, dla których wartości tych pól są zgodne, są sugerowane do konsolidacji.<p>Konsolidację można obsługiwać ręcznie, usuwając wysyłki z sugerowanych konsolidacji i/lub dodając do nich wysyłki. Może wystąpić kilka typów błędów, ale niektóre z nich można nadpisać.</p> |
-| **Uwaga do projektu** : procedura *Automatyczne zwalnianie zamówień sprzedaży do magazynu* dzieli wiersze sprzedaży na grupy. Każda grupa ma własną unikatową wartość **ReleaseToWarehouseId** i jest przetwarzana oddzielnie w ramach procedury *zwalniania do magazynu*. Ta procedura umożliwia utworzenie nowej pracy niezależnie od konfiguracji podziału pracy. | **Uwaga do projektu** : procedura *Automatyczne zwalnianie zamówień sprzedaży do magazynu* przypisuje tę samą wartość **ReleaseToWarehouseId** do wszystkich przetwarzanych wierszy sprzedaży. Wszystkie wiersze sprzedaży są jednocześnie przetwarzane w ramach procedury *zwalniania do magazynu*. Aby zagwarantować wcześniejsze zachowanie, należy skonfigurować podział pracy dla każdego identyfikatora wysyłki. |
+| **Uwaga do projektu**: procedura *Automatyczne zwalnianie zamówień sprzedaży do magazynu* dzieli wiersze sprzedaży na grupy. Każda grupa ma własną unikatową wartość **ReleaseToWarehouseId** i jest przetwarzana oddzielnie w ramach procedury *zwalniania do magazynu*. Ta procedura umożliwia utworzenie nowej pracy niezależnie od konfiguracji podziału pracy. | **Uwaga do projektu**: procedura *Automatyczne zwalnianie zamówień sprzedaży do magazynu* przypisuje tę samą wartość **ReleaseToWarehouseId** do wszystkich przetwarzanych wierszy sprzedaży. Wszystkie wiersze sprzedaży są jednocześnie przetwarzane w ramach procedury *zwalniania do magazynu*. Aby zagwarantować wcześniejsze zachowanie, należy skonfigurować podział pracy dla każdego identyfikatora wysyłki. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

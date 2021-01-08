@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f06d989ea4e927111729dfbd4bb7700745a16a54
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: c04af27bcc446b516f14125e71fb707bfd1d7708
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897518"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529715"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (6 maja 2019 r.)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Talent.
 
@@ -43,9 +45,9 @@ Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent
 
 Zmiany opisane w tej części dotyczą kompilacji 8.1.2282. Liczby w nawiasach w niektórych nagłówkach odnoszą się do numerów pomocy w usługach Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-26-for-finance-and-operations"></a>Aktualizacja Platform update 26 dla Finance and Operations
+### <a name="platform-update-26-for-finance-and-operations"></a>Aktualizacja 26 platformy dla Finance and Operations
 
-Aby uzyskać więcej informacji dotyczących 26. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 26. aktualizacji platformy Dynamics 365 Finance and Operations (maj 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Aby uzyskać więcej informacji dotyczących aktualizacji platformy 26 dla Finance and Operations, zobacz [Podgląd funkcji w aktualizacji platformy 26 Dynamics 365 Finance and Operations (maj 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Obsługa jednostek w Common Data Service dla pól niestandardowych
 

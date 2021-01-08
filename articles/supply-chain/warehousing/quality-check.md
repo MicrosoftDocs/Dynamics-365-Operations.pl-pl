@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
 ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016638"
+ms.locfileid: "4435621"
 ---
 # <a name="quality-check"></a>Kontrola jakości
 
@@ -44,7 +44,7 @@ Ten proces można również skonfigurować w taki sposób, aby wszystkie zeskano
 
 ## <a name="turn-on-the-quality-check-feature"></a>Włącz funkcję kontroli jakości
 
-Aby móc używać funkcji *Kontroli jakości* , należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+Aby móc używać funkcji *Kontroli jakości*, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Kontrola jakości*
@@ -62,7 +62,7 @@ Aby pracować z tymi [przykładowymi scenariuszami](#example-scenario) przy uży
 Szablon kontroli jakości określa reguły przeprowadzania szybkich kontroli jakości w momencie przyjmowania.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablon kontroli jakości**.
-1. Kliknij przycisk **Nowe** , aby dodać szablon do siatki.
+1. Kliknij przycisk **Nowe**, aby dodać szablon do siatki.
 1. Ustaw następujące wartości, aby zdefiniować nowy szablon:
 
     - **Nazwa szablonu kontrolu jakości:** *Kontrola doku*
@@ -91,7 +91,7 @@ Szablon kontroli jakości określa reguły przeprowadzania szybkich kontroli jak
 Klas pracy są używane do kierowania i/lub ograniczania typów wierszy zlecenia, które pracownicy magazynu może przetwarzać na urządzeniu przenośnym.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Klasy robocze**.
-1. Wybierz pozycję **Nowy** , aby utworzyć nową klasę pracy.
+1. Wybierz pozycję **Nowy**, aby utworzyć nową klasę pracy.
 1. W nagłówku ustaw następujące wartości:
 
     - **Identyfikator klasy roboczej:** *Sprawdzanie jakości kontroli*
@@ -122,8 +122,8 @@ Szablony pracy pozwalają zdefiniować operacje pracy, które muszą być wykona
 1. W nagłówku w polu **Typ zlecenia pracy** zaznacz opcję *Zamówienia zakupu*.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. Wybierz szablon pracy, który powinien zawierać krok kontroli jakości. W sekcji **Przegląd** w polu **Szablon pracy** wybierz pozycję *Paragon zamówienia zakupu 51*.
-1. W sekcji **Szczegóły szablonu pracy** zwróć uwagę, że siatka ma dwa istniejące wiersze: jeden dla *Pobrania* , a drugi do *Odłożenia*.
-1. W sekcji **Szczegóły szablonu pracy** wybierz opcję **Nowy** , aby dodać wiersz kontroli jakości do siatki. Zwróć uwagę, że pole **Numer wiersza** dla nowego wiersza jest ustawione na wartość *3*.
+1. W sekcji **Szczegóły szablonu pracy** zwróć uwagę, że siatka ma dwa istniejące wiersze: jeden dla *Pobrania*, a drugi do *Odłożenia*.
+1. W sekcji **Szczegóły szablonu pracy** wybierz opcję **Nowy**, aby dodać wiersz kontroli jakości do siatki. Zwróć uwagę, że pole **Numer wiersza** dla nowego wiersza jest ustawione na wartość *3*.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Typ pracy:** *Kontrola jakości*
@@ -132,14 +132,14 @@ Szablony pracy pozwalają zdefiniować operacje pracy, które muszą być wykona
 
         Wybierz unikatowy identyfikator dla klasy roboczej. Ta wartość służy do konfigurowania elementów menu na urządzeniu przenośnym i typów pracy, które te elementy mają przetwarzać.
 
-1. W okienku akcji wybierz opcję **Zapisz** , aby zapisać dotychczasową pracę.
+1. W okienku akcji wybierz opcję **Zapisz**, aby zapisać dotychczasową pracę.
 
     Otrzymujesz komunikat informacyjny o treści „Nieprawidłowe - kontrola jakości musi nastąpić bezpośrednio po pobraniu”. Dlatego należy zmienić wartość **Numeru wiersza** dla dodanego właśnie wiersza.
 
 1. Aby zmienić wartość **Numeru wiersza** dla nowego wiersza, należy wykonać następujące kroki:
 
     1. W sekcji **Szczegóły szablonu pracy** wybierz wiersz, w którym pole **Typ pracy** ma wartość *Kontrola jakości*.
-    2. Wybierz przycisk **Przenieś w górę** lub **Przenieś w dół** , aby przenieść wiersz *Kontroli jakości* , tak aby był po wierszu *Pobranie*.
+    2. Wybierz przycisk **Przenieś w górę** lub **Przenieś w dół**, aby przenieść wiersz *Kontroli jakości*, tak aby był po wierszu *Pobranie*.
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
@@ -157,8 +157,8 @@ Następnie uUtwórz szablon pracy dla kontroli jakości.
 
     - **Opis szablonu pracy:** *51 Kontrola jakości*
 
-1. W okienku akcji wybierz opcję **Zapisz** , aby sekcja **Szczegóły szablonu pracy** stała się dostępna.
-1. Gdy nowy szablon jest wciąż wybrany w sekcji **Przegląd** , wybierz opcję **Nowy** w sekcji **Szczegóły szablonu pracy** , aby dodać wiersz do siatki.
+1. W okienku akcji wybierz opcję **Zapisz**, aby sekcja **Szczegóły szablonu pracy** stała się dostępna.
+1. Gdy nowy szablon jest wciąż wybrany w sekcji **Przegląd**, wybierz opcję **Nowy** w sekcji **Szczegóły szablonu pracy**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Typ pracy:** *Pobranie*
@@ -166,7 +166,7 @@ Następnie uUtwórz szablon pracy dla kontroli jakości.
 
         Wybierz nazwę [klasy pracy](#work-class), która została utworzona wcześniej dla pracy kontroli jakości.
 
-1. W sekcji **Szczegóły szablonu pracy** wybierz ponownie opcję **Nowy** , aby dodać kolejny wiersz.
+1. W sekcji **Szczegóły szablonu pracy** wybierz ponownie opcję **Nowy**, aby dodać kolejny wiersz.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Typ pracy:** *Odłożenie*
@@ -183,8 +183,8 @@ Aby uzyskać więcej informacji dotyczących szablonów pracy, zobacz [Kontrolow
 Dyrektywy lokalizacji to zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego. Na przykład w ramach transakcji zamówienia sprzedaży, dyrektywa lokalizacji określa, gdzie towary zostaną pobrane i gdzie zostaną umieszczone pobrane zapasy. Należy skonfigurować regułę dyrektywy lokalizacji, aby określić, jak będą obsługiwane niepowodzenia kontroli jakości.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Dyrektywy lokalizacji**.
-1. W lewym okienku skonfiguruj pole **Typ zlecenia produkcyjnego** , aby *Zamówienia zakupu* działały z dyrektywami lokalizacji tego typu.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć dyrektywę lokalizacji do kontroli jakości.
+1. W lewym okienku skonfiguruj pole **Typ zlecenia produkcyjnego**, aby *Zamówienia zakupu* działały z dyrektywami lokalizacji tego typu.
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć dyrektywę lokalizacji do kontroli jakości.
 1. W nagłówku ustaw następujące wartości:
 
     - **Numer sekwencyjny:** Zaakceptuj wartość domyślną.
@@ -196,19 +196,19 @@ Dyrektywy lokalizacji to zasady pomagające w zidentyfikowaniu lokalizacji pobra
     - **Oddział:** *5*
     - **Magazyn:** *51*
 
-1. W okienku akcji wybierz opcję **Zapisz** , aby zapisać dyrektywę i udostępnić skróconą kartę **Wiersze**.
-1. Na skróconej karcie **Wiersze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. W okienku akcji wybierz opcję **Zapisz**, aby zapisać dyrektywę i udostępnić skróconą kartę **Wiersze**.
+1. Na skróconej karcie **Wiersze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Od ilości:** *1*
     - **Do ilości:** *1000000*
 
-1. W okienku akcji wybierz opcję **Zapisz** , aby zapisać nowy wiersz i udostępnić na skróconą kartę **Akcje dyrektywy lokalizacji**.
-1. Gdy nowy wiersz jest wciąż wybrany na skróconej karcie **Wiersze** , wybierz opcję **Nowy** na skróconej karcie **Akcje dyrektywy lokalizacji** , aby dodać wiersz do siatki, tak aby można było skonfigurować akcję dla wiersza.
+1. W okienku akcji wybierz opcję **Zapisz**, aby zapisać nowy wiersz i udostępnić na skróconą kartę **Akcje dyrektywy lokalizacji**.
+1. Gdy nowy wiersz jest wciąż wybrany na skróconej karcie **Wiersze**, wybierz opcję **Nowy** na skróconej karcie **Akcje dyrektywy lokalizacji**, aby dodać wiersz do siatki, tak aby można było skonfigurować akcję dla wiersza.
 1. W nowym wierszu należy określić wartość w polu **Nazwa** na *Jakość*. Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
-1. W okienku akcji wybierz opcję **Zapisz** , aby udostępnić przycisk **Edytuj kwerendę** na skróconej karcie **Dyrektywy akcji lokalizacji**.
-1. Mimo że dodany wiersz jest wciąż zaznaczony na skróconej karcie **Akcje dyrektywy lokalizacji** , wybierz opcję **Edytuj kwerendę** , aby otworzyć okno dialogowe, w którym można edytować kwerendę dotyczącą danej akcji.
-1. Na karcie **Zakres** wybierz opcję **Dodaj** , aby dodać wiersz do kwerendy.
+1. W okienku akcji wybierz opcję **Zapisz**, aby udostępnić przycisk **Edytuj kwerendę** na skróconej karcie **Dyrektywy akcji lokalizacji**.
+1. Mimo że dodany wiersz jest wciąż zaznaczony na skróconej karcie **Akcje dyrektywy lokalizacji**, wybierz opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe, w którym można edytować kwerendę dotyczącą danej akcji.
+1. Na karcie **Zakres** wybierz opcję **Dodaj**, aby dodać wiersz do kwerendy.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Tabela:** *Lokalizacje*
@@ -218,8 +218,8 @@ Dyrektywy lokalizacji to zasady pomagające w zidentyfikowaniu lokalizacji pobra
 
     Lokalizacja *QMS* jest lokalizacją magazynu dla jakości.
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
-1. Musisz teraz zmienić kolejność dyrektyw lokalizacji zamówienia zakupu dla magazynu *51*. Zapisz nową dyrektywę lokalizacji *51 do jakości* , odśwież stronę i wybierz dyrektywę lokalizacji z listy. Następnie użyj przycisków **Przenieś w górę** i **Przenieś w dół** w okienku akcji, aby umieścić dyrektywę lokalizacji dla magazynu *51* w następującej kolejności: (Przed wybraniem opcji **Przenieś w górę** lub **Przenieś w dół** , na liście należy wybrać lokalizację dyrektywy.)
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
+1. Musisz teraz zmienić kolejność dyrektyw lokalizacji zamówienia zakupu dla magazynu *51*. Zapisz nową dyrektywę lokalizacji *51 do jakości*, odśwież stronę i wybierz dyrektywę lokalizacji z listy. Następnie użyj przycisków **Przenieś w górę** i **Przenieś w dół** w okienku akcji, aby umieścić dyrektywę lokalizacji dla magazynu *51* w następującej kolejności: (Przed wybraniem opcji **Przenieś w górę** lub **Przenieś w dół**, na liście należy wybrać lokalizację dyrektywy.)
 
     1. 51 do jakości
     2. 51 bezpośrednie zamówienie zakupu
@@ -234,7 +234,7 @@ Skonfiguruj element menu, aby urządzenia przenośne mogły wykonywać funkcję 
 1. Przejdź do pozycji **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego**.
 1. Na liście wybierz element menu **Odłożenie zakupu**.
 1. W okienku akcji wybierz pozycję **Edytuj**.
-1. W sekcji **Klasy robocze** wybierz **Nowe** , aby dodać wiersz do siatki.
+1. W sekcji **Klasy robocze** wybierz **Nowe**, aby dodać wiersz do siatki.
 1. W nowym wierszu ustaw następujące wartości:
 
     - **Identyfikator klasy roboczej:** *Sprawdzanie jakości kontroli*
@@ -271,12 +271,12 @@ Skonfiguruj element menu, aby urządzenia przenośne mogły wykonywać funkcję 
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. W kolumnie **Dostępne menu i elementy menu** wybierz nowy element menu **Wiersz zamówienia zakupu – przyjęcie**.
 1. Wybierz strzałkę w prawo, aby przenieść **Wiersz zamówienia zakupu – przyjęcie** do kolumny **Struktura menu**.
-1. W kolumnie **Struktura menu** wybierz opcję **Wiersz zamówienia zakupu – przyjęcie** , a następnie wybierz przycisk strzałka w górę lub strzałka w dół, aby przenieść element menu do żądanej pozycji w menu urządzenie przenośne.
+1. W kolumnie **Struktura menu** wybierz opcję **Wiersz zamówienia zakupu – przyjęcie**, a następnie wybierz przycisk strzałka w górę lub strzałka w dół, aby przenieść element menu do żądanej pozycji w menu urządzenie przenośne.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
 ## <a name="example-scenario"></a><a name="example-scenario"></a>Przykładowy scenariusz
 
-Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Kontroli jakości*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF** , oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym temacie. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
+Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfigurowania można korzystać z tego scenariusza, aby wypróbować funkcję *Kontroli jakości*. Wartości przedstawione w tym scenariuszu zakładają, że pracujesz ze standardowymi danymi demonstracyjnymi, które zostały wybrane firmę **USMF**, oraz że zostały przygotowane przykładowe rekordy opisane wcześniej w tym temacie. Ten scenariusz służy także jako przykład, który pokazuje, w jaki sposób funkcja może być używana w ustawieniu produkcji.
 
 ### <a name="create-a-purchase-order"></a>Tworzenie zamówienia zakupu
 
@@ -287,7 +287,7 @@ Po wykonaniu wszystkich poprzednio opisanych przykładowych danych i ich skonfig
     - **Konto dostawcy:** *104*
     - **Magazyn:** *51*
 
-1. Naciśnij przycisk **OK** , aby zamknąć okno dialogowe i otworzyć nowe zamówienie zakupu.
+1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i otworzyć nowe zamówienie zakupu.
 1. Na skróconej karcie **Wiersze zamówienia sprzedaży** siatka zawiera nowy, pusty wiersz. W nowym wierszu ustaw następujące wartości:
 
     - **Numer pozycji:** *M9203*
@@ -308,10 +308,10 @@ Po utworzeniu zamówienia zakupu można go odebrać za pomocą elementu menu **W
 1. Potwierdź numer zamówienia zakupu.
 1. W polu **LINENUM** wprowadź numer otrzymywanego wiersza zamówienia zakupu. Ponieważ zamówienie ma tylko jedną linię w tym scenariuszu, wpisz *1* w polu **LINENUM** dla każdego kroku odbioru.
 1. Potwierdź numer wiersza.
-1. W polu **Ilość** wprowadź ilość do odbioru. Ponieważ zamówienie zakupu jest przeznaczone dla trzech palet ( *PL* ) w tym scenariuszu, a istnieją trzy czynności, należy wprowadzić wartość *1* w polu **Ilość** dla każdego kroku przyjęcia.
+1. W polu **Ilość** wprowadź ilość do odbioru. Ponieważ zamówienie zakupu jest przeznaczone dla trzech palet (*PL*) w tym scenariuszu, a istnieją trzy czynności, należy wprowadzić wartość *1* w polu **Ilość** dla każdego kroku przyjęcia.
 1. Potwierdź ilość.
 
-    Strona **Kontrola jakości** , która zostanie wyświetlona, nie zawiera pól wpisów. Ma tylko przycisk potwierdzenia (znacznik wyboru) u dołu i przycisk Menu ( **≡** ) u góry. (Przycisk Menu jest czasami nazywany przyciskiem hamburgera lub hamburgerem). Aby przyspieszyć proces kontroli jakości, gdy paleta przejdzie kontrolę jakości, użytkownik po prostu potwierdza stronę **Kontrolę jakości**.
+    Strona **Kontrola jakości**, która zostanie wyświetlona, nie zawiera pól wpisów. Ma tylko przycisk potwierdzenia (znacznik wyboru) u dołu i przycisk Menu (**≡**) u góry. (Przycisk Menu jest czasami nazywany przyciskiem hamburgera lub hamburgerem). Aby przyspieszyć proces kontroli jakości, gdy paleta przejdzie kontrolę jakości, użytkownik po prostu potwierdza stronę **Kontrolę jakości**.
 
     ![Strona kontroli jakości](media/quality-check.png "Strona kontroli jakości")
 
@@ -342,8 +342,8 @@ W tym scenariuszu paleta 2 zostanie odrzucona.
 
     Zostanie wyświetlona strona **Kontrola jakości**. W przypadku tego przyjęcia paleta zostanie odrzucona w celu uzyskania jakości i zostanie umieszczona w lokalizacji jakości *QMS*.
 
-1. Wybierz przycisk menu ( **≡** ) u góry strony, a następnie w menu wybierz opcję **Odrzuć**.
-1. Na wyświetlonej stronie **Zadanie** wprowadź **QMS** jako lokalizację *Odłożenia* , aby wysłać paletę do dalszej inspekcji.
+1. Wybierz przycisk menu (**≡**) u góry strony, a następnie w menu wybierz opcję **Odrzuć**.
+1. Na wyświetlonej stronie **Zadanie** wprowadź **QMS** jako lokalizację *Odłożenia*, aby wysłać paletę do dalszej inspekcji.
 
     Wyświetlona strona **Jakość w kontroli jakości: Odłóż** zawiera szczegóły dotyczące pracy odłożenia:
 
@@ -394,6 +394,6 @@ W tym scenariuszu paleta 3 zostanie zaakceptowana.
 
     Na stronie **Zadania** dla przyjęcia wiersza zamówienia zakupu zostanie wyświetlony komunikat „praca wykonana”. Pole **LINENUM** jest dostępne w taki sposób, aby można było rozpocząć otrzymywanie następnej palety.
 
-1. Wybierz przycisk menu ( **≡** ) u góry strony, a następnie w menu wybierz opcję **Anuluj** , aby wrócić do menu.
+1. Wybierz przycisk menu (**≡**) u góry strony, a następnie w menu wybierz opcję **Anuluj**, aby wrócić do menu.
 
 Teraz możesz zamknąć aplikację mobilną.

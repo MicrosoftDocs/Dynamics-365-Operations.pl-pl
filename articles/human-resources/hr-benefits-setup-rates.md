@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 1e6a7b50596eaf9d965e0155f3f2c50f7f50747e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497363"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420092"
 ---
 # <a name="configure-rates"></a>Konfigurowanie stawek
 
@@ -79,7 +79,7 @@ Można również używać podwójnych warstw. Jeśli w formularzu **Konfiguracja
    | --- | --- | 
    | **Opis** | Wartość w polu **Opis** zostanie zastosowana z opisu w rekordzie konfiguracji stawek. Pomaga to stwierdzić, z którą konfiguracją stawek są powiązane stawki warstwowe. |
    | **Kod warstw** | Wybierz kod warstwy. Kody warstw definiuje się w formularzu Kody warstw. System automatycznie wyświetli opis kodu warstwy w siatce z lewej strony. |
-   | **Typ warstwy** | Określa, które pole powinno być używane jako kryterium wyboru dla procesu obliczania stawki warstwowej. Na przykład:</br></br><ul><li>Jeśli zostanie użyte kryterium **Wiek**, system użyje daty urodzenia pracownika w procesie obliczania stawki świadczenia.</li><li>Jeśli zostanie użyte kryterium **Wynagrodzenie**, system użyje rocznego wynagrodzenia z tytułu świadczenia w procesie obliczania stawki świadczenia.</li><li>Jeśli zostanie użyte kryterium **Typ funkcji**, system użyje obecnie aktywnego rekordu stanowiska pracownika w celu określenia typu funkcji na podstawie rekordu powiązanego ze stanowiskiem.</li></ul></br></br>Dostępne typy warstw to **Wiek**, **Wynagrodzenie**, **Fizyczny**, **Płeć**, **W przeliczeniu na pełne etaty**, **Typ funkcji**, **Region wynagrodzenia**oraz **Poziom**. | 
+   | **Typ warstwy** | Określa, które pole powinno być używane jako kryterium wyboru dla procesu obliczania stawki warstwowej. Na przykład:</br></br><ul><li>Jeśli zostanie użyte kryterium **Wiek**, system użyje daty urodzenia pracownika w procesie obliczania stawki świadczenia.</li><li>Jeśli zostanie użyte kryterium **Wynagrodzenie**, system użyje rocznego wynagrodzenia z tytułu świadczenia w procesie obliczania stawki świadczenia.</li><li>Jeśli zostanie użyte kryterium **Typ funkcji**, system użyje obecnie aktywnego rekordu stanowiska pracownika w celu określenia typu funkcji na podstawie rekordu powiązanego ze stanowiskiem.</li></ul></br></br>Dostępne typy warstw to **Wiek**, **Wynagrodzenie**, **Fizyczny**, **Płeć**, **W przeliczeniu na pełne etaty**, **Typ funkcji**, **Region wynagrodzenia** oraz **Poziom**. | 
    | **Poziom** | Wartość, która ma być używana w połączeniu z typem warstwy w trakcie procesu obliczania stawki świadczenia. Na przykład:</br></br><ul><li>Jeśli typem warstwy jest **Wiek**, byłaby to wartość wieku.</li><li>Jeśli typem warstwy jest **Wynagrodzenie**, byłaby to kwota wynagrodzenia.</li><li> Jeśli typem warstwy jest **Typ funkcji**, byłby to typ funkcji.</li></ul></br></br>W przypadku warstwy o typie **Wiek** lub **Wynagrodzenie** wartość w polu **Poziom** reprezentuje górną granicę warstwy. Dla warstwy typu **Typ funkcji** system używa dokładnego dopasowania podczas wybierania stawki warstwowej. |
    | **Typ obliczania** | Określa sposób używania kwoty zawartej w polu Obliczona kwota oraz jakie obliczenia matematyczne będą wykonywane w razie potrzeby. Jeśli typem obliczania jest kwota ryczałtowa, system bezpośrednio używa wartości z pól kwot. Jeśli typem obliczania jest kwota w przeliczeniu na 1 jednostkę pieniężną wynagrodzenia lub ubezpieczenia, system w swoich obliczeniach matematycznych używa obliczonej kwoty i kierunku obliczania.</br></br>Jeśli typem obliczania jest kwota w przeliczeniu na 1 jednostkę pieniężną wynagrodzenia, system zastosuje następujące równanie matematyczne:</br></br>Roczne wynagrodzenie z tytułu świadczenia podzielone przez obliczoną kwotę (zaokrągloną w górę lub w dół) razy kwoty płacone przez pracownika lub pracodawcę za osobę palącą lub niepalącą.</br></br>Jeśli typem obliczania jest kwota w przeliczeniu na 1 jednostkę pieniężną ubezpieczenia, system zastosuje następujące równanie matematyczne:</br></br>Kwota ubezpieczenia podzielona przez obliczoną kwotę (zaokrągloną w górę lub w dół) razy kwoty płacone przez pracownika lub pracodawcę za osobę palącą lub niepalącą.</br></br>W obu obliczeniach jest używany kierunek obliczania w celu określenia, czy roczne wynagrodzenie z tytułu świadczenia lub kwota świadczenia podzielona przez obliczoną kwotę ma być zaokrąglana w górę czy w dół. |
    | **Obliczona kwota** | Kwota, która ma być używana w procesie obliczania stawki świadczenia. Będzie ona dzielnikiem podczas matematycznego obliczania stawki warstwowej. |

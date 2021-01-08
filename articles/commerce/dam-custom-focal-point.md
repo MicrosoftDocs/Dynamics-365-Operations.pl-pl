@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: af922e857e6bd7a58c0b9891939c8265568b549b
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: b20fbc20f18243c712595795a0b16ae417e755e6
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269528"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594339"
 ---
 # <a name="customize-image-focal-points"></a>Dostosuj punkty ogniskowe obrazu
 
@@ -51,10 +51,12 @@ Aby zdefiniować niestandardowy punkt ogniska dla obrazu, wykonaj następujące 
 
 [Omówienie zarządzania cyfrowymi składnikami majątku](dam-overview.md)
 
-[Przekaż obrazy](dam-upload-images.md)
+[Przekazanie obrazów](dam-upload-images.md)
 
-[Przekaż plik wideo](dam-upload-video.md)
+[Przekazanie wideo](dam-upload-video.md)
 
 [Przekaż pliki](dam-upload-files.md)
 
-[Przytnij obrazy](dam-crop-images.md)
+[Przycinanie obrazów](dam-crop-images.md)
+
+[Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)

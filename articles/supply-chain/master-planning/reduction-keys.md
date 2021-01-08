@@ -20,11 +20,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3981433"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435095"
 ---
 # <a name="forecast-reduction-keys"></a>Klucze redukcji prognozy
 
@@ -218,7 +218,7 @@ Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wyk
     - Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz
     - Planowanie główne \> Ustawienia \> Plany \> Plany główne
 
-4. Na stronie **planów wg prognozy** lub **planów głównych** na skróconej karcie **ogólne** w polu **metoda używana do zmniejszenia prognozowanych zapotrzebowań** wybierz opcję **procent — klucz redukcji**lub **transakcje — klucz redukcji**.
+4. Na stronie **planów wg prognozy** lub **planów głównych** na skróconej karcie **ogólne** w polu **metoda używana do zmniejszenia prognozowanych zapotrzebowań** wybierz opcję **procent — klucz redukcji** lub **transakcje — klucz redukcji**.
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Redukcja prognoz według transakcji
 

@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 2aaba8794bf0025f0449509752e4f197d3bf3db4
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889704"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435288"
 ---
 # <a name="create-maintenance-budgets"></a>Tworzenie budżetu konserwacji
 

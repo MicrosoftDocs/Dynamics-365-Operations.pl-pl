@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018036"
+ms.locfileid: "4435574"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Tworzenie zamówienia powtórnego zakupu
 
@@ -43,9 +43,9 @@ W tym temacie pokazano, jak utworzyć powtarzalne zamówienie zakupu poprzez sko
     - Pole **Zmień znak** umożliwia również zmianę zamówionej ilości poprzez zmianę znaku ilości w dodawanych wierszach zamówienia. Może to być przydatne, jeśli trzeba wycofać transakcję. Można wtedy utworzyć wiersze zamówienia neutralizujące transakcję. Ta opcja jest automatycznie zaznaczona po otwarciu strony za pomocą akcji **Tworzenie faktury korygującej**.  
     - Opcja **Kopiuj opłaty** umożliwia skopiowanie opłat do nowego zamówienia z dokumentu, z którego kopiujesz wiersze zamówienia.  
     - Opcja **Oblicz ponownie ceny** powoduje użycie bieżących cen i rabatów zamiast kopiowania ich z dokumentu, z którego kopiujesz pozostałe informacje.  
-    - Opcja **Kopiuj dokładnie** tworzy dokładną kopię wartości we wszystkich polach w nagłówku i wierszach dokumentu zamówienia. Jeśli ta opcja nie jest zaznaczone, używane są wartości domyślne dla wielu pól odnoszących się do dostawcy i produktów, tak jakby nowe zamówienie było tworzone ręcznie. Na przykład jeśli zamówienie, z którego kopiujesz, spowodowało zastąpienie domyślnego konta płatnika dla dostawcy, to samo konto faktury zostałoby skopiowane do Twojego zamówienia. Jeśli nie wybrano opcji **Kopiuj dokładnie** , w Twoim zamówieniu zostałoby użyte domyślne konto faktury dla dostawcy.  
+    - Opcja **Kopiuj dokładnie** tworzy dokładną kopię wartości we wszystkich polach w nagłówku i wierszach dokumentu zamówienia. Jeśli ta opcja nie jest zaznaczone, używane są wartości domyślne dla wielu pól odnoszących się do dostawcy i produktów, tak jakby nowe zamówienie było tworzone ręcznie. Na przykład jeśli zamówienie, z którego kopiujesz, spowodowało zastąpienie domyślnego konta płatnika dla dostawcy, to samo konto faktury zostałoby skopiowane do Twojego zamówienia. Jeśli nie wybrano opcji **Kopiuj dokładnie**, w Twoim zamówieniu zostałoby użyte domyślne konto faktury dla dostawcy.  
     - Opcja **Usuń wiersze zakupu** powoduje usunięcie wszystkich wierszy zamówienia zakupu już istniejących w zamówieniu zakupu, do którego kopiujesz, a następnie zastosowanie nowych wierszy. Tej opcji należy używać ostrożnie, ponieważ usuwa wszystkie istniejące wiersze bez dalszego ostrzeżenia.  
-    - Jeśli używasz opcji **Kopiuj nagłówek zamówienia** , nie trzeba ręcznie tworzyć informacji nagłówka w nowym zamówieniu. Należy zauważyć, że ta opcja spowoduje użycie domyślnych wartości w polach skojarzonych z dostawcą. Jeśli dokument, z którego kopiujesz, zawiera wartości inne niż domyślne, które chcesz skopiować, użyj dodatkowo opcji **Kopiuj dokładnie**.   
+    - Jeśli używasz opcji **Kopiuj nagłówek zamówienia**, nie trzeba ręcznie tworzyć informacji nagłówka w nowym zamówieniu. Należy zauważyć, że ta opcja spowoduje użycie domyślnych wartości w polach skojarzonych z dostawcą. Jeśli dokument, z którego kopiujesz, zawiera wartości inne niż domyślne, które chcesz skopiować, użyj dodatkowo opcji **Kopiuj dokładnie**.   
     - Istnieją różne źródła dokumentów, z których można kopiować, i każde z nich ma osobną sekcję na tej stronie. Na przykład sekcja **Zamówienia zakupu** umożliwia kopiowanie z istniejących zamówień zakupu.  
 
 8. W sekcji **Zamówieniaczakupu** wybierz wiersze, które chcesz skopiować do Schowka. Można wybrać dodatkowe wiersze zamówienia zakupu z innych zamówień zakupu i skopiować je do swojego zamówienia. Możesz również dodać wiersze z innych rodzajów dokumentów zakupu. W następnych kilku krokach przyjrzymy się różnym opcjom.  

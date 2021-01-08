@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022036"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517095"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -56,7 +56,7 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 
 ## <a name="module-properties"></a>Właściwości modułu
 
-- **Znacznik nagłówka** — ta właściwość definiuje znacznik nagłówka dla produktu. Jeśli pole zakupu znajduje się u góry strony, właściwość ta powinna mieć ustawioną wartość **h1** , aby odpowiadała standardom dostępności. 
+- **Znacznik nagłówka** — ta właściwość definiuje znacznik nagłówka dla produktu. Jeśli pole zakupu znajduje się u góry strony, właściwość ta powinna mieć ustawioną wartość **h1**, aby odpowiadała standardom dostępności. 
 
 - **Włącz zalecenia typu „Kup podobne”** — ta właściwość umożliwia wyświetlenie w polu zakupu łączy do produktów wyglądających podobnie do aktualnie wyświetlanego towaru. Ta funkcja jest dostępna w Commerce w wersji 10.0.13 i nowszej.
 
@@ -68,14 +68,14 @@ Motywów można używać do usuwania lub zmieniania kolejności właściwości p
 
 ## <a name="buy-box-module-settings"></a>Ustawienia modułu pola zakupu
 
-Następujące ustawienia modułu pola zakupu mogą być skonfigurowane w **Ustawienia witryny \> Rozszerzenia** :
+Następujące ustawienia modułu pola zakupu mogą być skonfigurowane w **Ustawienia witryny \> Rozszerzenia**:
 
 - **Limit ilości dla wiersza koszyka** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
 - **Zapasy** — Aby uzyskać informacje dotyczące sposobu stosowania ustawień zapasów, należy zapoznać się z tematem [stosowanie ustawień zapasów](inventory-settings.md).
-- **Dodaj do koszyka** — Ta właściwość służy do określania zachowania po dodaniu towaru do koszyka. Możliwe wartości są **Przejdź do koszyka** , **Nie przechodź do koszyka** i **Wyświetl powiadomienia**. Gdy wartość jest ustawiona na **Przejdź do koszyka** , użytkownicy są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Nie przechodź do koszyka** , użytkownicy nie są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Wyświetlanie powiadomień** , użytkownicy będą wyświetlali powiadomienie o potwierdzeniu i mogą kontynuować przeglądanie na stronie szczegóły produktu. 
+- **Dodaj produkt do koszyka** — Ta właściwość służy do określania zachowania po dodaniu towaru do koszyka. Możliwe wartości są **Przejdź do koszyka**, **Nie przechodź do koszyka** i **Wyświetl powiadomienia**. Gdy wartość jest ustawiona na **Przejdź do strony koszyka**, użytkownicy są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Nie przechodź do strony koszyka**, użytkownicy nie są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Wyświetl powiadomienie**, użytkownicy będą wyświetlali powiadomienie o potwierdzeniu i mogą kontynuować przeglądanie na stronie szczegóły produktu. 
 
 > [!IMPORTANT]
-> Ustawienia w witrynie **Dodaj do koszyka** są dostępne w wydaniu Dynamics 365 Commerce 10.0.11. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Ustawienia w witrynie **Dodaj produkt do koszyka** są dostępne w wydaniu Dynamics 365 Commerce 10.0.11. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
 Poniższy rysunek przedstawia przykład powiadomienia o potwierdzeniu „dodanego do koszyka” w witrynie Fabrikam.
 
@@ -89,27 +89,27 @@ Moduł kupna pobiera informacje o produkcie za pomocą interfejsów programistyc
 
 Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Fragmenty** , a następnie wybierz opcję **Nowy** , aby stworzyć nowy fragment.
+1. Przejdź do **Fragmenty**, a następnie wybierz opcję **Nowy**, aby stworzyć nowy fragment.
 1. W oknie dialogowym **Nowy fragment** wybierz moduł **Pole zakupu**.
-1. W obszarze **Nazwa fragmentu** wprowadź nazwę **Fragment pola zakupu** , a następnie kliknij przycisk **OK**.
-1. W gnieździe **Galeria multimediów** , w którym znajduje się moduł pola zakupu wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W obszarze **Nazwa fragmentu** wprowadź nazwę **Fragment pola zakupu**, a następnie kliknij przycisk **OK**.
+1. W gnieździe **Galeria multimediów**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Galeria multimediów** i wybierz przycisk **OK**.
-1. W gnieździe **Selektor sklepu** , w którym znajduje się moduł pola zakupu wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. W gnieździe **Selektor sklepu**, w którym znajduje się moduł pola zakupu wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodawanie modułu** wybierz moduł **Selektor sklepu** i wybierz przycisk **OK**.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
-1. Przejdź do **Szablonu** , a następnie wybierz **Nowy** , aby utworzyć nowy szablon.
-1. W oknie dialogowym **Nowy szablon** , w obszarze **Nazwa szablonu** wprowadź **Szablon PDP** , a następnie wybierz **OK**.
-1. W gnieździe **Treść** wybierz wielokropek ( **...** ), a następnie wybierz **Dodaj moduł**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować fragment, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Szablonu**, a następnie wybierz **Nowy**, aby utworzyć nowy szablon.
+1. W oknie dialogowym **Nowy szablon**, w obszarze **Nazwa szablonu** wprowadź **Szablon PDP**, a następnie wybierz **OK**.
+1. W gnieździe **Treść** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
 1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Strona domyślna** i wybierz przycisk **OK**.
-1. Na domyślnej stronie wybierz gniazdo **Główne** , następnie wybierz przycisk wielokropka ( **...** ), a następnie wybierz pozycję **Dodaj fragment**.
-1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu** , a następnie kliknij **OK**.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj** , aby ją opublikować.
-1. Przejdź do **Strony** , a następnie wybierz opcję **Nowy** , aby utworzyć nową stronę.
-1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon PDP**. W sekcji **Nazwa strony** przejdź do **Strona PDP** , a następnie wybierz przycisk **OK**.
-1. Na nowej stronie wybierz gniazdo **Główne** , następnie wybierz przycisk wielokropka ( **...** ), a następnie wybierz pozycję **Dodaj fragment**.
-1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu** , a następnie kliknij **OK**.
+1. Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do **Strony**, a następnie wybierz opcję **Nowy**, aby utworzyć nową stronę.
+1. W oknie dialogowym **Wybierz szablon** wybierz szablon **Szablon PDP**. W sekcji **Nazwa strony** przejdź do **Strona PDP**, a następnie wybierz przycisk **OK**.
+1. Na nowej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj fragment**.
+1. W oknie dialogowym **Wybieranie fragmentu** wybierz utworzony wcześniej fragment **Fragment pola zakupu**, a następnie kliknij **OK**.
 1. Zapisz i zobacz podgląd strony. Do adresu URL podglądu strony należy dodać parametr dotyczący ciągu kwerendy **?productid=&lt;product id&gt;**. W ten sposób kontekst produktu jest używany do ładowania i renderowania strony podglądu.
-1. Wybierz **Zapisz** , wybierz **Zakończ edycję** , aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj** , aby ją opublikować. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować. Na stronie Szczegóły produktu powinno pojawić się pole zakupu.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

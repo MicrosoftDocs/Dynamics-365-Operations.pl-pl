@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f2ee23733d686480cd4323cab952ae12eceaf142
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 20dc0768463d9a5d6762cb062deb0bdbe4d53fe3
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897587"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528676"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Talent (11 czerwiec 2019)
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Talent.
 
@@ -54,9 +56,9 @@ Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent
 
 Zmiany opisane w tej części dotyczą kompilacji 8.1.2337.
 
-### <a name="platform-update-27-for-finance-and-operations"></a>Aktualizacja Platform update 27 dla Finance and Operations
+### <a name="platform-update-27-for-finance-and-operations"></a>Aktualizacja 27 platformy dla Finance and Operations
 
-Aby uzyskać więcej informacji dotyczących 27. aktualizacji platformy dla rozwiązania Finance and Operations, zobacz [Podgląd funkcji w 27. aktualizacji platformy Dynamics 365 Finance and Operations (czerwiec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Aby uzyskać więcej informacji dotyczących 27. aktualizacji platformy dal Finance and Operations, zobacz [Podgląd funkcji w 27. aktualizacji platformy Dynamics 365 Finance and Operations (czerwiec 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Obszar roboczy zarządzania funkcjami w Talencie
 

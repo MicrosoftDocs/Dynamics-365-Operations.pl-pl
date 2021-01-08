@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 84becee12363ca38951ff13073d87d1b1f14b616
-ms.sourcegitcommit: a47a4652a29fdb567a8ba67c4f914a8698e8c48c
+ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3765008"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517362"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w Dynamics 365 Commerce
 
@@ -47,7 +47,7 @@ Można utworzyć żądanie usługi w celu dodania dodatkowych domen do środowis
 
 ## <a name="commerce-generated-urls"></a>Adresy URL wygenerowane przez Commerce
 
-Podczas inicjowania obsługi środowiska handlu elektronicznego system Commerce wygeneruje adres URL, który będzie adresem roboczym środowiska. Do tego adresu URL odwołuje się łącze lokacji platformy handlu elektronicznego przedstawione w usłudze LCS po zainicjowaniu środowiska. Adres URL wygenerowany przez system Commerce jest zapisany w formacie `https://<e-Commerce tenant name>.commerce.dynamics.com`, gdzie nazwą dzierżawy platformy jest nazwa wprowadzona w usłudze LCS dla środowiska Commerce.
+Podczas inicjowania obsługi Dynamics 365 Commerce środowiska handlu elektronicznego system Commerce wygeneruje adres URL, który będzie adresem roboczym środowiska. Do tego adresu URL odwołuje się łącze lokacji platformy handlu elektronicznego przedstawione w usłudze LCS po zainicjowaniu środowiska. Adres URL wygenerowany przez system Commerce jest zapisany w formacie `https://<e-commerce tenant name>.commerce.dynamics.com`, gdzie nazwą dzierżawy platformy jest nazwa wprowadzona w usłudze LCS dla środowiska Commerce.
 
 Można również skorzystać z nazw hostów witryn produkcji w środowisku piaskownicy. Ta opcja jest idealna, jeśli witryna ma być kopiowana ze środowiska piaskownicy do produkcji.
 
@@ -102,9 +102,9 @@ Jeśli ciąg kwerendy domeny nie jest podany w środowisku z podanymi wieloma do
 
 ## <a name="traffic-forwarding-in-production"></a>Przekazywanie ruchu w produkcji
 
-Istnieje możliwość symulowania wielu domen za pomocą parametrów kwerendy domeny w samym punkcie końcowym commerce.dynamics.com. Jeśli jednak konieczne jest przechodzenie do trybu produkcji, należy przesłać dalej ruch dla domeny niestandardowej do punktu końcowego `<e-Commerce tenant name>.commerce.dynamics.com`.
+Istnieje możliwość symulowania wielu domen za pomocą parametrów kwerendy domeny w samym punkcie końcowym commerce.dynamics.com. Jeśli jednak konieczne jest przechodzenie do trybu produkcji, należy przesłać dalej ruch dla domeny niestandardowej do punktu końcowego `<e-commerce tenant name>.commerce.dynamics.com`.
 
-Punkt końcowy `<e-Commerce tenant name>.commerce.dynamics.com` nie obsługuje niestandardowych warstw sieci Secure Sockets Layer (SSLs), więc domeny niestandardowe należy skonfigurować przy użyciu usługi front door service lub sieci CDN. 
+Punkt końcowy `<e-commerce tenant name>.commerce.dynamics.com` nie obsługuje niestandardowych warstw sieci Secure Sockets Layer (SSLs), więc domeny niestandardowe należy skonfigurować przy użyciu usługi front door service lub sieci CDN. 
 
 Aby skonfigurować domeny niestandardowe przy użyciu usługi front door service lub sieci CDN, dostępne są dwie opcje:
 
@@ -152,17 +152,17 @@ Wystąpienie Azure Front Door dostarczone wraz z Commerce nie obsługuje domen A
 
   ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-  [Wdrażanie nowej witryny handlu elektronicznego](deploy-ecommerce-site.md)
+  [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
 
   [Konfigurowanie kanału sklepu internetowego](online-stores.md)
 
   [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-  [Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+  [Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
   [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-  [Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+  [Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
   [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

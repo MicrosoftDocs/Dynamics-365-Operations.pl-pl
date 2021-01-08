@@ -19,11 +19,11 @@ ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817361"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414879"
 ---
 # <a name="content-block-module"></a>Moduł bloku zawartości
 
@@ -79,7 +79,7 @@ Poniższy obraz przedstawia przykład modułu bloku zawartości z układem funkc
 
 Aby dodać moduł bohatera do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.
 
-1. Przejdź do **Szablonów**i utwórz szablon strony o nazwie **Szablon bloku zawartości**.
+1. Przejdź do **Szablonów** i utwórz szablon strony o nazwie **Szablon bloku zawartości**.
 1. W **Głównym** gnieździe na stronie domyślnej dodaj moduł bohatera.
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Za pomocą utworzonego właśnie szablonu Hero utwórz stronę o nazwie **Strona bloku zawartości**.

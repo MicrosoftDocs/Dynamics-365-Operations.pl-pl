@@ -19,16 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 95bc75596f6f014b58160022f41ae86a825c5afc
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124757"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527273"
 ---
 # <a name="create-a-job-in-attract"></a>Tworzenie oferty pracy w Attract
 
 [!include [banner](includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 W tym temacie opisano elementy funkcji w Microsoft Dynamics 365 Talent: Attract. Ponadto wyjaśniono, jak utworzyć funkcję.
 

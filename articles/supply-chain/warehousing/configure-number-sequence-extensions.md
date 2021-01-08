@@ -4,7 +4,7 @@ description: W tym temacie opisano funkcje, które umożliwiają obsługę rozsz
 author: GarmMSFT
 manager: tfehr
 ms.date: 06/10/2020
-ms.topic: configure-number-sequence-extensions
+ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cee5047a8c80aa850d9dd1bb872188a822ba8328
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
+ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4016132"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "4435665"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurowanie sekwencji identyfikatorów dla przepływów magazynowych
 
@@ -52,7 +52,7 @@ Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorz
 Aby skonfigurować rozszerzenia sekwencji identyfikatorów w systemie, wykonaj następujące kroki.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-1. Na karcie **Ogólne** , w polu **Prefiks firmy GS1** i wprowadź prefiks GS1 firmy. Ta wartość będzie mieć wpływ na wszystkie sekwencje identyfikatorów, w których prefiks GS1 jest uwzględniony jako segment.
+1. Na karcie **Ogólne**, w polu **Prefiks firmy GS1** i wprowadź prefiks GS1 firmy. Ta wartość będzie mieć wpływ na wszystkie sekwencje identyfikatorów, w których prefiks GS1 jest uwzględniony jako segment.
 1. Jeśli chcesz wygenerować numery list przewozowy dla etykiet grupy czynności, na karcie **Raporty** zaznacz pole wyboru **Generuj numer listu przewozowego podczas drukowania etykiet grup czynności**.
 
     > [!NOTE]
@@ -64,7 +64,7 @@ Aby skonfigurować rozszerzenia sekwencji identyfikatorów w systemie, wykonaj n
     Aby uzyskać więcej informacji o dostosowywaniu domyślnych sekwencji identyfikatorów i/lub dodawaniu nowych sekwencji, zapoznaj się z następną sekcją. Można również usunąć dowolną z tych sekwencji, jeśli nie są one potrzebne.
 
 1. Wróć do **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-1. Na karcie **Sekwencje identyfikatorów** wybierz odpowiednie rozszerzenie sekwencji identyfikatorów, które ma być używane do generowania numerów identyfikacyjnych, identyfikatorów etykiet grup czynności, identyfikatorów kontenerów (w tym przypadku należy wybrać odpowiednią sekwencję **identyfikatorów SSCC-18** ) i/lub identyfikatory listów przewozowych (w tym przypadku należy wybrać sekwencję **List przewozowy** ). Domyślnie rozszerzenia sekwencji identyfikatorów są obsługiwane tylko dla tych czterech typów identyfikatorów.
+1. Na karcie **Sekwencje identyfikatorów** wybierz odpowiednie rozszerzenie sekwencji identyfikatorów, które ma być używane do generowania numerów identyfikacyjnych, identyfikatorów etykiet grup czynności, identyfikatorów kontenerów (w tym przypadku należy wybrać odpowiednią sekwencję **identyfikatorów SSCC-18**) i/lub identyfikatory listów przewozowych (w tym przypadku należy wybrać sekwencję **List przewozowy**). Domyślnie rozszerzenia sekwencji identyfikatorów są obsługiwane tylko dla tych czterech typów identyfikatorów.
 
 Jeśli dla jednej z tych sekwencji identyfikatorów zostanie wygenerowany nowy identyfikator, zostanie użyta nowa logika.
 
@@ -85,10 +85,10 @@ Aby utworzyć i edytować sekwencje identyfikatorów, należy wykonać następuj
     | Typ segmentu | opis |
     |---|---|
     | Stała | Ten typ segmentu dodaje ten sam stały tekst dla każdego wygenerowanego identyfikatora w sekwencji. W polu **Wartość** wprowadź wymagany tekst. Pole **Długość** jest automatycznie aktualizowane do długości tekstu wprowadzonego w polu **Wartość**. |
-    | Sekwencja numerów | W polu **Wartość** wprowadź znak numeru ( *\#* ) dla każdego znaku, który ma być pokazywany w wygenerowanej kolejności. Sama sekwencja identyfikatorów może generować dłuższe liczby, ale tylko znaki z prawej strony będą wyświetlane. Pole **Długość** jest automatycznie aktualizowane do liczby znaków identyfikatora wprowadzonego w polu **Wartość**.<p>Aby zachować zgodność z wymaganiami GS1 dotyczącymi numerów SSCC-18, upewnij się, że długość tego segmentu wynosi 16 minus długość prefiksu GS1.</p> |
-    | Prefiks kodu GS1 | Ten typ segmentu umożliwia dodanie wartości ustawionej w polu **Prefiks firmy GS1** na stronie **Parametry zarządzania magazynem**. W polu **Wartość** wyświetlana jest wartość ustawiona na stronie **Parametry zarządzania magazynem** , a w polu **Długość** wyświetlana jest liczba znaków w wartości. Pola **Wartość** i **Długość** są tylko do odczytu. |
+    | Sekwencja numerów | W polu **Wartość** wprowadź znak numeru (*\#*) dla każdego znaku, który ma być pokazywany w wygenerowanej kolejności. Sama sekwencja identyfikatorów może generować dłuższe liczby, ale tylko znaki z prawej strony będą wyświetlane. Pole **Długość** jest automatycznie aktualizowane do liczby znaków identyfikatora wprowadzonego w polu **Wartość**.<p>Aby zachować zgodność z wymaganiami GS1 dotyczącymi numerów SSCC-18, upewnij się, że długość tego segmentu wynosi 16 minus długość prefiksu GS1.</p> |
+    | Prefiks kodu GS1 | Ten typ segmentu umożliwia dodanie wartości ustawionej w polu **Prefiks firmy GS1** na stronie **Parametry zarządzania magazynem**. W polu **Wartość** wyświetlana jest wartość ustawiona na stronie **Parametry zarządzania magazynem**, a w polu **Długość** wyświetlana jest liczba znaków w wartości. Pola **Wartość** i **Długość** są tylko do odczytu. |
     | Identyfikator aplikacji | W polu **Wartość** wprowadź identyfikator aplikacji określony w odpowiednich zasadach GS1 dla tego typu sekwencji identyfikatorów. Na przykład wprowadź wartość *00* dla SSCC lub *420* dla listu przewozowego. Pole **Długość** jest automatycznie aktualizowane do długości identyfikatora wprowadzonego w polu **Wartość**. |
-    | Typ opakowania | W przypadku towarów, które można jasno zidentyfikować, ten typ segmentu powoduje dodanie wartości pola z odpowiedniej grupy sekwencji jednostek (ze strony **Grupy sekwencji jednostek** ). (To zachowanie jest zgodne z istniejącą logiką dla numerów identyfikacyjnych.) W przypadku numerów identyfikacyjnych zawierających wiele jednostek magazynowych (SKU) ten typ segmentu domyślnie dodaje wartość *0* (zero). W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na wartość *P* , a pole **Długość** zawsze ma wartość *1*.|
-    | Cyfra kontrolna | W tym typie segmentu jest dodawana cyfra kontrolna, czyli obliczenie modulo 10. (To zachowanie jest zgodne z istniejącą logiką dla identyfikatorów numerów identyfikacyjnych.) W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na znak daszka ( *^* ), a pole **Długość** zawsze ma wartość *1*. |
+    | Typ opakowania | W przypadku towarów, które można jasno zidentyfikować, ten typ segmentu powoduje dodanie wartości pola z odpowiedniej grupy sekwencji jednostek (ze strony **Grupy sekwencji jednostek**). (To zachowanie jest zgodne z istniejącą logiką dla numerów identyfikacyjnych.) W przypadku numerów identyfikacyjnych zawierających wiele jednostek magazynowych (SKU) ten typ segmentu domyślnie dodaje wartość *0* (zero). W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na wartość *P*, a pole **Długość** zawsze ma wartość *1*.|
+    | Cyfra kontrolna | W tym typie segmentu jest dodawana cyfra kontrolna, czyli obliczenie modulo 10. (To zachowanie jest zgodne z istniejącą logiką dla identyfikatorów numerów identyfikacyjnych.) W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na znak daszka (*^*), a pole **Długość** zawsze ma wartość *1*. |
 
 1. Aby wyświetlić przykład końcowego formatu numerów, należy sprawdzić pole **Format** w dolnej części skróconej karty **Segmenty**.

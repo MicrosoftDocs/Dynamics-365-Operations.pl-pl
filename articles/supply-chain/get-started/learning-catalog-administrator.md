@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4b0c8a265971c4a3f0b83ac1d6404b7d4aa82660
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: ba93bdcb64237af627c5a6d5adb834583f08f768
+ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793810"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4516626"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog szkoleń dla administratorów Dynamics 365 Supply Chain Management
 
@@ -46,7 +46,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Zarządzanie projektem implementacji w Finance and Operations](https://docs.microsoft.com/learn/paths/implement-finance-operations/) | Poznaj najważniejsze elementy i najważniejsze wskazówki dotyczące zarządzania pomyślnym projektem implementacji Finance and Operations. Od pierwszego kroku planowania i projektowania metodologii projektu, korzystania z usług FastTrack Services, strategii rozwoju, zarządzania danymi itp. najlepszym sposobem utrzymania i monitorowania operacji po rozpoczęciu eksploatacji. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 11.5 godzin |
 | [Administrowanie systemem — strona główna](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/system-administration-home-page) | Ten temat wskazuje zawartość dla administratorów systemów Microsoft Dynamics 365 for Finance and Operations. Ta zawartość ułatwi im skonfigurowanie systemu w celu płynnej i efektywnej pracy w organizacji. | Dokumentacja | |
 | [Finance and Operations: Przygotowanie do korzystania z usługi Dynamics 365 (DYN542PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-onboarding-to-dynamics-365-1-10-19) | FastTrack oferuje usługę wdrażania do każdego Dynamics 365 for Finance and Operations projektu. W tym TechTalk wyjaśnimy proces wdrażania, przechodzenie przez zawartość sesji wdrażania i pokażemy, jak wydajnie i wygodnie można wdrażać pracowników w najbliższej przyszłości. Ta sesja jest szczególnie odpowiednia dla każdego, kto współpracuje z klientami na wczesnym etapie projektu, między zamknięciem umowy licencyjnej i zainicjowaniem projektu implementacji. | Bezpłatna rejestracja konferencji w sieci Web | 62 minut |
-| [Wdrażanie lokalnie (lokalne dane biznesowe) (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dołącz to porozmawianie techniczno, aby zapoznać się z omówieniem opcji wdrażania lokalnego Dynamics 365 for Finance and Operations dla Enterprise Edition. W tej sesji zostanie wyświetlona architektura rozwiązania lokalnego wdrożenia, aspektów ALM, wymagań systemowych i sposobu zainicjowania projektu usług cyklu życia systemu. | Bezpłatna rejestracja konferencji w sieci Web | 48 minut |
+| [Wdrażanie lokalnie (lokalne dane biznesowe) (DYN382PAL2)](https://community.dynamics.com/365/b/techtalks/posts/on-premises-local-business-data-deployment-october-19-2017) | Dołącz do jednej z naszych rozmów na temat technologii dotyczącej opcji wdrożenia lokalnego Dynamics 365 for Finance and Operations (Enterprise Edition). W tej sesji przyjrzymy się architekturze rozwiązań w zakresie wdrożenia lokalnego, aspektom zarządzania cyklem życia aplikacji, wymaganiom systemowym i sposobom inicjowania projektu usługi Life Cycle Services. | Bezpłatna rejestracja konferencji w sieci Web | 48 minut |
 | [Kopiowanie do firmy (DYN383PAL) ](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | W tej sesji zostanie omówiona nowa funkcja w strukturze zarządzania danymi, która jest kopiowana do firmy. Najpierw zapoznajemy nowe funkcje dodane do struktury zarządzania danymi w platformie 8 dla obszaru roboczego, szablonów i projektów danych, a następnie zapoznaj się z dodatkową funkcjonalnością dodaną do kopii w firmie. | Bezpłatna rejestracja konferencji w sieci Web | 54 minut |
 
 ## <a name="core-development"></a>Podstawowe programowanie<a name="core-development"></a>

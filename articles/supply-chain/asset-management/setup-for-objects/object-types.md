@@ -19,11 +19,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 5a5db915c94cf9a454dc39e9174b3282a3f6bb75
-ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "3889488"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435130"
 ---
 # <a name="asset-types"></a>Typy składników majątku
 
@@ -79,12 +79,12 @@ Zazwyczaj zlecenia pracy, które są tworzone ręcznie, są związane z konserwa
 
 3. Wybierz opcję **Nowa**, aby ręcznie utworzyć konfigurację typu składnika majątku.
 4. W zależności od tego, jak szczegółowa powinna być konfiguracja typu składnika majątku, dokonaj odpowiednich wyborów w polach **Typ składnika majątku**, **Producent** oraz **Model**.
-5. Jeśli umowa gwarancyjna jest powiązana z typem składnika majątku, wybierz umowę w polach **Gwarancja dostawcy**oraz **Gwarancja klienta**. 
+5. Jeśli umowa gwarancyjna jest powiązana z typem składnika majątku, wybierz umowę w polach **Gwarancja dostawcy** oraz **Gwarancja klienta**. 
 6. Na skróconej karcie **Części zamienne** wybierz **Dodaj**, aby dodać części zamienne do wybranego ustawienia typu składnika majątku.
 7. Aby zatwierdzić część zamienną, wybierz wiersz części zamiennych, a następnie wybierz **Zatwierdź**. Można wybrać wiele wierszy do zatwierdzenia.
 8. Aby sprawdzić, czy część zamienna jest używana w innym miejscu w module Zarządzanie składnikami majątku (na przykład w odniesieniu do składników majątku i zleceń pracy), wybierz wiersz części zamiennych, a następnie wybierz **Używająca pozycja**, aby otworzyć stronę **Używająca pozycja**. Aby wyświetlić wszystkie aktywne części zamienne na liście, zaznacz pole wyboru **Aktywne**. Aby wyświetlić tylko zatwierdzone części zamienne, należy zaznaczyć pole wyboru **Zatwierdzone**.
 9. Na skróconej karcie **Plany konserwacji** wybierz opcję **Dodaj**, aby dodać plany konserwacji do wybranego ustawienia typu składnika majątku.
-10. Aby skopiować konfigurację typu składnika majątku do innej konfiguracji, można użyć funkcji Kopiuj. Wybierz konfigurację typu składnika majątku, do której chcesz skopiować konfigurację, wybierz opcję **Kopiuj konfigurację**i wybierz konfigurację typu składnika majątku, z której chcesz skopiować konfigurację. Ustawienia różnych opcji określają, ile informacji jest dołączonych. Po zakończeniu wybierz przycisk **OK**, aby skopiować konfigurację.
+10. Aby skopiować konfigurację typu składnika majątku do innej konfiguracji, można użyć funkcji Kopiuj. Wybierz konfigurację typu składnika majątku, do której chcesz skopiować konfigurację, wybierz opcję **Kopiuj konfigurację** i wybierz konfigurację typu składnika majątku, z której chcesz skopiować konfigurację. Ustawienia różnych opcji określają, ile informacji jest dołączonych. Po zakończeniu wybierz przycisk **OK**, aby skopiować konfigurację.
 
 > [!NOTE]
 > Jeśli masz wiele wierszy części zamiennych i planów konserwacji, które będą używane ponownie, funkcja Kopiuj umożliwia szybkie i łatwe konfigurowanie danych dla wielu kombinacji ustawień typu składnika majątku.

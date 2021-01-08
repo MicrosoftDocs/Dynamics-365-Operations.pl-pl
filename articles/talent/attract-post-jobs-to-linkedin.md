@@ -18,11 +18,11 @@ ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
 ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833012"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4462201"
 ---
 # <a name="post-jobs-to-linkedin-from-attract"></a>Publikowanie ofert pracy w serwisie LinkedIn z poziomu aplikacji Attract
 

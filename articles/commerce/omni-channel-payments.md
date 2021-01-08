@@ -19,11 +19,11 @@ ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
 ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
-ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "3819820"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4415062"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 

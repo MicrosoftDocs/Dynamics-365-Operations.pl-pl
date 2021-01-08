@@ -17,11 +17,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018168"
+ms.locfileid: "4435617"
 ---
 # <a name="create-a-purchase-order"></a>Tworzenie zamówienia zakupu
 
@@ -44,8 +44,8 @@ W tym temacie pokazano sposób ręcznego tworzenia zamówienia sprzedaży. Najcz
 
 ## <a name="add-a-purchase-order-line"></a>Dodawanie wiersza zamówienia zakupu
 1. Wybieranie **Wiersz zamówienia zakupu**.
-2. Wybierz ​ **Wymiary**. Produkty mogą być w wariantach zróżnicowanych według wymiarów, takich jak kolor, rozmiar lub styl. Produkty mogą być również skonfigurowane do używania wymiarów magazynowania, takich jak oddział i magazyn. Istnieją również opcjonalne wymiary śledzenia, takie jak numery partii i numery seryjne. Aby zwiększyć efektywność wprowadzania zamówień, można dodać pola często używanych wymiarów bezpośrednio do siatki zamówień.  
-3. Zaznacz pole wyboru **Kolor**. Opcjonalnie: Jeśli zaznaczysz pole **Zapisz ustawienia** , przy następnym otwarciu strony zamówienia zakupu wybrane wymiary będą wyświetlane również w siatce wierszy zamówienia.  
+2. Wybierz ​**Wymiary**. Produkty mogą być w wariantach zróżnicowanych według wymiarów, takich jak kolor, rozmiar lub styl. Produkty mogą być również skonfigurowane do używania wymiarów magazynowania, takich jak oddział i magazyn. Istnieją również opcjonalne wymiary śledzenia, takie jak numery partii i numery seryjne. Aby zwiększyć efektywność wprowadzania zamówień, można dodać pola często używanych wymiarów bezpośrednio do siatki zamówień.  
+3. Zaznacz pole wyboru **Kolor**. Opcjonalnie: Jeśli zaznaczysz pole **Zapisz ustawienia**, przy następnym otwarciu strony zamówienia zakupu wybrane wymiary będą wyświetlane również w siatce wierszy zamówienia.  
 4. Kliknij przycisk **OK**.
 5. W polu **Numer pozycji** wybierz wartość **T0004**.
 
@@ -60,7 +60,7 @@ W tym temacie pokazano sposób ręcznego tworzenia zamówienia sprzedaży. Najcz
     - Pole **Cena jednostkowa** zazwyczaj zawiera wartości z umowy zakupu lub umowy handlowej. Istnieje możliwość zmiany ceny jednostkowej w poszczególnych wierszach zamówienia, na przykład jeśli specjalna cena została wynegocjowana z dostawcą.  
     - Pole **Rabat** zawiera kwotę rabatu na jednostkę. O ten rabat jest pomniejszana cena jednostkowa. Rabat zazwyczaj jest wstawiany automatycznie z umów zakupu lub umów handlowych, ale istnieje możliwość ręcznego zastąpienia wartości w poszczególnych wierszach, jeżeli wynegocjowano z dostawcą inne rabaty.  
     - Można wprowadzić procent rabatu, który zmniejsza kwotę netto w wierszu. Procent rabat zazwyczaj jest często automatycznie z umów zakupu lub umów handlowych, ale istnieje możliwość ręcznego zastąpienia wartości w poszczególnych wierszach, jeżeli wynegocjowano z dostawcą inny procent rabatu.  
-    - Wartość w polu **Kwota netto** jest obliczana na podstawie innych pól wiesza, w tym ilości, ceny jednostkowej, rabatu i procentu rabatu. Istnieje możliwość zmiany kwoty netto, ale wtedy pola **Cena jednostkowa** , **Rabat** i **Procent rabatu** będą puste, a podczas księgowania względem wiersza zaksięgowana kwota będzie proporcjonalna do kwoty netto. Zwykle do wyświetlania kwoty netto w wierszu jest używane pole **Kwota netto**.  
+    - Wartość w polu **Kwota netto** jest obliczana na podstawie innych pól wiesza, w tym ilości, ceny jednostkowej, rabatu i procentu rabatu. Istnieje możliwość zmiany kwoty netto, ale wtedy pola **Cena jednostkowa**, **Rabat** i **Procent rabatu** będą puste, a podczas księgowania względem wiersza zaksięgowana kwota będzie proporcjonalna do kwoty netto. Zwykle do wyświetlania kwoty netto w wierszu jest używane pole **Kwota netto**.  
 
 8. Rozwiń sekcję **Szczegóły wiersza**.
 9. Wybierz kartę **Dostawa**. Do każdego wiersza zamówienia można przypisać unikatową datę dostawy. Data jest dziedziczona z pola w nagłówku zamówienia zakupu, ale można ją zmienić.  
@@ -68,9 +68,9 @@ W tym temacie pokazano sposób ręcznego tworzenia zamówienia sprzedaży. Najcz
 ## <a name="review-order-totals"></a>Przegląd sum zamówienia
 1. Wybierz **Sumy**.
 
-    - Jeśli nie widać akcji **Sumy** , w okienku akcji wybierz kartę **Zamówienie zakupu**.  
+    - Jeśli nie widać akcji **Sumy**, w okienku akcji wybierz kartę **Zamówienie zakupu**.  
     - To okno dialogowe pokazuje sumy dla całego zamówienia.  
-    - Pole **Wybór** umożliwia zmianę podstawy obliczania sum. Na przykład można wybrać opcję **Ilość z dokumentu przyjęcia produktów** , aby pokazać sumy odnoszące się do przetworzonych ilości produktów, lub opcję **Ilość zamówiona** , aby pokazać zamówioną ilość produktu.  
+    - Pole **Wybór** umożliwia zmianę podstawy obliczania sum. Na przykład można wybrać opcję **Ilość z dokumentu przyjęcia produktów**, aby pokazać sumy odnoszące się do przetworzonych ilości produktów, lub opcję **Ilość zamówiona**, aby pokazać zamówioną ilość produktu.  
 
 2. Kliknij przycisk **OK**.
 

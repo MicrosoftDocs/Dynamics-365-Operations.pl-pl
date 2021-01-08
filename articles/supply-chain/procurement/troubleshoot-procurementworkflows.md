@@ -20,11 +20,11 @@ ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
 ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018544"
+ms.locfileid: "4435649"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>Rozwiązywanie problemów z przepływami pracy związanymi z zaopatrzeniem i sourcingiem
 
@@ -32,7 +32,7 @@ W tym temacie opisano, jak rozwiązać problemy, które mogą wystąpić podczas
 
 ## <a name="error-when-re-submitting-a-purchase-order-to-the-workflow-after-a-change-changes-to-purchase-order-x-are-allowed-only-in-a-draft-state-when-change-management-is-activated"></a>Błąd podczas ponownego przesyłania zamówienia zakupu do przepływu pracy po zmianie: „Zmiany w zamówieniu X są dozwolone tylko w stanie Wersja robocza, gdy zarządzanie zmianami jest aktywne”
 
-Ten problem występuje tylko wtedy, gdy zamówienie zakupu było w stanie *Potwierdzonym* przed zapisaniem zmian. Jeśli zażądasz zmian w czasie, gdy zamówienie zakupu znajduje się w stanie *Zatwierdzone* , przepływ pracy może zostać przetworzony pomyślnie.
+Ten problem występuje tylko wtedy, gdy zamówienie zakupu było w stanie *Potwierdzonym* przed zapisaniem zmian. Jeśli zażądasz zmian w czasie, gdy zamówienie zakupu znajduje się w stanie *Zatwierdzone*, przepływ pracy może zostać przetworzony pomyślnie.
 
 ### <a name="error-description"></a>Opis błędu
 
@@ -48,7 +48,7 @@ SysWorkflowQueue-resume
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 Ten błąd zostanie rozwiązany za pomocą [niniejszego artykułu z bazy wiedzy Microsoft Knowledge Base (KB)](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
@@ -56,13 +56,13 @@ Ten błąd zostanie rozwiązany za pomocą [niniejszego artykułu z bazy wiedzy 
 
 Ten problem może wystąpić z powodu niespójności w dystrybucji zamówień zakupu.
 
-Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej* , należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+Aby odblokować ten wystawiony błąd i zresetować zamówienie zakupu do stanu *Wersji roboczej*, należy przejść do obszaru **Zaopatrzenie i sourcing \> Zadania okresowe \> Wyczyść \> Reset dystrybucji zamówienia zakupu**. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu w blogu: [Rozwiązywanie błędów dystrybucji zamówienia zakupu w Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="if-a-delivery-remainder-is-canceled-on-a-purchase-order-where-change-management-is-turned-on-the-purchase-order-goes-to-a-confirmed-state"></a>Jeśli reszta dostawy została anulowana w zamówieniu zakupu, w którym jest włączone zarządzanie zmianami, zamówienie zakupu przechodzi do stanu potwierdzonego.
 
 ### <a name="issue-description"></a>Opis problemu
 
-W przypadku zamówienia zakupu, które jest związane z zarządzaniem zmianami, jeśli jedyną żądaną zmianą jest anulowanie reszty dostawy w jednym lub kilku wierszach, zamówienie zakupu będzie przechodzić bezpośrednio do stanu *Potwierdzone* , a arkusz nie zostanie utworzony.
+W przypadku zamówienia zakupu, które jest związane z zarządzaniem zmianami, jeśli jedyną żądaną zmianą jest anulowanie reszty dostawy w jednym lub kilku wierszach, zamówienie zakupu będzie przechodzić bezpośrednio do stanu *Potwierdzone*, a arkusz nie zostanie utworzony.
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
@@ -74,7 +74,7 @@ Jeśli powinno to znaleźć odzwierciedlenie w potwierdzeniu zamówienia, iloś�
 
 ### <a name="issue-description"></a>Opis problemu
 
-Po anulowaniu zamówień zakupu, które były w stanie *Potwierdzone* , anulowane zamówienia zakupu nadal są wyświetlane na liście wersji roboczych zamówień zakupu w obszarze roboczym **Przygotowanie zamówienia zakupu**.
+Po anulowaniu zamówień zakupu, które były w stanie *Potwierdzone*, anulowane zamówienia zakupu nadal są wyświetlane na liście wersji roboczych zamówień zakupu w obszarze roboczym **Przygotowanie zamówienia zakupu**.
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 

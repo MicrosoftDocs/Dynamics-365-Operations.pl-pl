@@ -16,11 +16,11 @@ ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
 ms.openlocfilehash: 1be07c754e563298d82f6ca54f09ae3aa9118602
-ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175430"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414919"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Włączanie i konfigurowanie opłat automatycznych według kanałów
 

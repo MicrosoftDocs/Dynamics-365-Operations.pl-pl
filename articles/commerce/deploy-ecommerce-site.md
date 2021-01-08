@@ -1,6 +1,6 @@
 ---
-title: Wdrażanie nowej dzierżawy e-commerce
-description: W tym temacie opisano sposób wdrażania nowej dzierżawy e-Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS).
+title: Wdrażanie nowej dzierżawy handlu elektronicznego
+description: W tym temacie opisano sposób wdrażania nowej witryny e-Commerce Dynamics 365 Commerce za pomocą Lifecycle Services (usługi LCS) Microsoft Dynamics.
 author: psimolin
 manager: annbe
 ms.date: 07/02/2020
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 00f35b516dbf6ab4d4d9171c84a16b89f6afe832
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 157dc8225e5bbf9338a1b5a79a2880e8a8c4bf10
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533282"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517289"
 ---
-# <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy e-commerce
+# <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy handlu elektronicznego
 
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób wdrażania nowej witryny e-Commerce za pomocą Microsoft Dynamics Lifecycle Services (usługi LCS).
+W tym temacie opisano sposób wdrażania nowej witryny e-Commerce Dynamics 365 Commerce za pomocą Lifecycle Services (usługi LCS) Microsoft Dynamics.
 
 ## <a name="overview"></a>Omówienie
 
@@ -37,7 +37,7 @@ Microsoft Dynamics Lifecycle Services (usługi LCS) to oparty na chmurze obszar 
 
 Aby dowiedzieć się więcej o usługi LCS, zobacz [Przewodnik użytkownika usługi Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
     
-## <a name="get-started"></a>Wprowadzenie
+## <a name="get-started"></a>Rozpocznij
 
 Aby można było zainicjować e-Commerce, należy zainicjować projekt, środowisko i Retail Cloud Scale Unit (RCSU). Aby wykonać inicjalizację w usługi LCS, trzeba mieć uprawnienia do roli Właściciel projektu lub Menedżer środowiska. Topologie środowiska produkcyjnego i piaskownicy są obsługiwane.
 
@@ -50,7 +50,7 @@ Ta procedura służy do inicjowania funkcji e-Commerce w istniejącym środowisk
 Przed rozpoczęciem należy upewnić się, że istnieją następujące wymagane informacje:
 
 - RCSU, który będzie używany.
-- Grupa zabezpieczeń Azure Active Directory Microsoft, która będzie używana dla administratorów systemu w e-Commerce.
+- Grupa zabezpieczeń Microsoft Azure Active Directory, która będzie używana dla administratorów systemu w e-Commerce.
 - Grupa zabezpieczeń Azure Active Directory Microsoft, która będzie używana dla moderatorów ocen i recenzji.
 - Domeny, które będą skojarzone ze środowiskiem.
 
@@ -82,7 +82,7 @@ Po zebraniu wymaganych informacji należy wykonać poniższe kroki w celu zainic
     
 Gdy e-Commerce jest inicjowany z usługi LCS, system Inicjuje obsługę kilku składników wymaganych w e-Commerce i kojarzy je ze środowiskiem. Po zakończeniu obsługi administracyjnej karta **e-Commerce** na stronie **Zarządzanie Retail** jest aktualizowana w celu uwzględnienia tej zmiany. Na stronie są wyświetlane najnowsze wdrożenia dostosowań oraz stan wszystkich innych trwających wdrożeń. Zawiera także łącza do witryny e-Commerce oraz narzędzia do zarządzania witryną e-Commerce, gdzie tworzone są witryny.
 
-## <a name="access-site-builder"></a>Dostęp do konstruktora witryn
+## <a name="access-commerce-site-builder"></a>Dostęp do konstruktora witryn
 
 Aby uzyskać dostęp do konstruktora witryn, przejdź na kartę **e-Commerce** na stronie **Zarządzanie Retail** w usłudze LCS i wybierz **narzędzia zarządzania witryny e-Commerce**. Strona docelowa konstruktora witryn umożliwia wyświetlenie widoku na poziomie dzierżawy. Z poziomu tej strony można:
 
@@ -97,11 +97,11 @@ Aby uzyskać dostęp do konstruktora witryn, przejdź na kartę **e-Commerce** n
 
 [Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
 
-[Kojarzenie witryny online z kanałem](associate-site-online-store.md)
+[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
 
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
-[Przekaż adresy URL przekierowań luzem](upload-bulk-redirects.md)
+[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
 
 [Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
 

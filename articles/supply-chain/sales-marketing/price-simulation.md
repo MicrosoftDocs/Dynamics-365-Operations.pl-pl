@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
-ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/14/2020
-ms.locfileid: "4006266"
+ms.locfileid: "4435525"
 ---
 # <a name="price-simulation"></a>Symulacja ceny
 
@@ -35,7 +35,7 @@ Symulacja ceny oferty zawiera nową łączną kwotą, opartą na proponowanej no
 
 Symulacja ceny nie powoduje zmiany ceny w ofercie. Symulacja ceny jest stosowana do całej oferty, jest traktowana jako specjalny rabat w nagłówku oferty. Symulacja ceny jest stosowana do określonych towarów, jest traktowana jako specjalny rabat w wierszach oferty. Cena jednostkowa sprzedaży w utworzonym wierszu sprzedaży nie ulega zmianie po wprowadzeniu symulacji cen. Zamiast tego jest wprowadzany rabat o określonej procentowo wartości, odpowiadający obniżce ceny w wierszu oferty. Po przeprowadzeniu symulacji cen, jednostkowe ceny sprzedaży i rabaty procentowe są transferowane do wiersza oferty lub nagłówka oferty.  
 
->[Uwaga] Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
+>[Uwaga!] Podczas wykonywania symulacji cen pod uwagę jest brana tylko bieżąca waluta sprzedaży. Natomiast podczas przeglądania wartości ofert jest widoczna zarówno waluta sprzedaży, jak i waluta podstawowa dla w firmy.  
 
 Dodatkowe towary, które powinny zostać dodane do wierszy oferty mogą uruchamiać rabaty wiersza lub rabaty wspólne. Mogą wywoływać rabat końcowy, co skutkuje zmianą marży pokrycia i współczynników marży dla wierszy oferty i rabatem całościowym.  
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
+ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817713"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4556436"
 ---
 # <a name="select-a-site-theme"></a>Wybór motywu witryny
 
@@ -32,7 +32,7 @@ W tym temacie opisano sposób ustawiania lub zmieniania motywu witryny w Microso
 
 ## <a name="overview"></a>Omówienie
 
-Układ i styl witryny (np. czcionki, rozmiary i kolory) są definiowane przez wybrany motyw i mają zastosowanie w odniesieniu do witryny. Motyw jest tworzony i wdrażany przez programistę w firmie użytkownika. Aby zapoznać się z omówieniem motywów, zajrzyj do [Omówienie funkcji motywowania](http://). Aby uzyskać więcej informacji dotyczących sposobu tworzenia i wdrażania motywów, zobacz [Tworzenie nowego motywu](http://).
+Układ i styl witryny (np. czcionki, rozmiary i kolory) są definiowane przez wybrany motyw i mają zastosowanie w odniesieniu do witryny. Motyw jest tworzony i wdrażany przez programistę w firmie użytkownika. Aby zapoznać się z omówieniem motywów, zajrzyj do [Omówienie funkcji motywowania](e-commerce-extensibility/theming.md). Aby uzyskać więcej informacji dotyczących sposobu tworzenia i wdrażania motywów, zobacz [Tworzenie nowego motywu](e-commerce-extensibility/create-theme.md).
 
 Domyślnie podczas tworzenia oddziałów jest używany motyw o nazwie **Fabrikam**. Ten motyw domyślny jest dostarczany jako część biblioteki modułu handlu elektronicznego. Po wdrożeniu dodatkowych motywów dla witryny można skonfigurować witrynę tak, aby korzystała z jednego z nich.
 
@@ -63,3 +63,8 @@ Aby wybrać motyw zastosowany w odniesieniu do witryny, należy wykonać następ
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
+
+[Omówienie funkcji motywowania](e-commerce-extensibility/theming.md)
+
+[Tworzenie nowego motywu](e-commerce-extensibility/create-theme.md)
+

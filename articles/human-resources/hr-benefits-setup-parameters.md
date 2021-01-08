@@ -1,9 +1,9 @@
 ---
-title: Ustawianie parametrów obszaru roboczego Zarządzanie świadczeniami
-description: Tu opisano konfigurowanie parametrów obszaru roboczego Zarządzanie świadczeniami dostępnego w programie Microsoft Dynamics 365 Human Resources.
+title: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
+description: Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego w Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: tfehr
-ms.date: 07/16/2020
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
-ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
+ms.openlocfilehash: b50c4f71789c34f08ce810312f3c3198303b031e
+ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4057035"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692704"
 ---
-# <a name="set-benefits-management-parameters"></a>Ustawianie parametrów zarządzania świadczeniami
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Konfigurowanie parametrów zarządzania świadczeniami i samoobsługi pracownika etatowego dla wszystkich firm
 
-Zanim będzie można konfigurować plany urlopów w module Microsoft Dynamics 365 Human Resources, należy skonfigurować parametry obszaru roboczego Zarządzanie świadczeniami. Te parametry służą do ustawiania wartości domyślnych, kodów przyczyny i innych opcji.
+Zanim będzie można konfigurować plany świadczeń w module Microsoft Dynamics 365 Human Resources, należy skonfigurować parametry obszaru roboczego Zarządzanie świadczeniami. Te parametry służą do ustawiania wartości domyślnych, kodów przyczyny i innych opcji. 
 
 ## <a name="configure-general-parameters"></a>Konfigurowanie parametrów ogólnych
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Udostępniane parametry Human Resources**.
 
-2. Na karcie **Ogólne** wprowadź wartości w następujących polach:
+2. Na karcie **Zarządzanie świadczeniami** wprowadź wartości w następujących polach:
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Kraj/region** | Pole **Kraj/region** określa kolejność wyświetlania kodów pocztowych/jednostek administracyjnych. Wybrany kraj jest wyświetlany jako pierwszy na liście rozwijanej. |
    | **Kod przyczyny rejestracji** | Umożliwia wybór domyślnego kodu przyczyny, który będzie używany podczas tworzenia planów dla pracowników etatowych w trakcie przetwarzania otwartej rejestracji. |
@@ -45,10 +45,12 @@ Zanim będzie można konfigurować plany urlopów w module Microsoft Dynamics 36
    | **Kod przyczyny zmiany stawki** | Kod przyczyny, który ma być używany podczas anulowania i ponownego otwierania planu świadczeń pracowniczych w trakcie procesu aktualizacji zmiany stawki. Wskazuje, które rekordy zostały zmienione przez proces aktualizacji zmiany stawki. |
    | **Roczne wynagrodzenie z tytułu świadczenia** | Umożliwia ustawienie kwoty **Świadczenia do wynagrodzenia rocznego** dla pracownika. Przy ustalaniu kwot pokrycia w Human Resources zamiast kwoty rocznej dla stałej płacy będzie używana kwota **Świadczenia do wynagrodzenia rocznego**. |
    | **Nowo zatrudniona osoba kwalifikuje się** | Określa, czy nowo zatrudnione osoby kwalifikują się do planu. |
-   | **Okres rejestracji nowo zatrudnionej osoby** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby.</br></br>**Uwaga** : to ustawienie zastępuje każdy okres rejestracji nowo zatrudnionej osoby ustawiony w regule uprawnienia do planu. |
+   | **Okres rejestracji nowo zatrudnionej osoby** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby.</br></br>**Uwaga**: to ustawienie zastępuje każdy okres rejestracji nowo zatrudnionej osoby ustawiony w regule uprawnienia do planu. |
    | **Domyślna częstotliwość wypłat** | Domyślna częstotliwość płac, która ma być używana przy dodawaniu nowych pracowników. |
    | **Zdarzenia zmiany sytuacji życiowej zostały włączone** | Włącza obsługę zmian sytuacji życiowej. |
    | **Ukryj starsze formularze świadczeń** | Umożliwia ukrycie starszych formularzy świadczeń. |
+   | **Weryfikacja świadczenia** | Tekst weryfikacyjny używany podczas realizacji świadczeń w samoobsłudze. |
+   | **Automatyczny wybór osób wyznaczonych** | Określa, czy osoby na utrzymaniu i beneficjenci mają być automatycznie wybierani na podstawie ich uprawnień do opcji planu. |
 
 3. Wybierz opcję **Zapisz**.
 
@@ -64,3 +66,5 @@ Zanim będzie można konfigurować plany urlopów w module Microsoft Dynamics 36
    | **Automatyczny wybór osób wyznaczonych** | Określa, czy osoby na utrzymaniu i beneficjenci mają być automatycznie wybierane na podstawie ich uprawnień do opcji planu. |
 
 3. Wybierz opcję **Zapisz**.
+
+

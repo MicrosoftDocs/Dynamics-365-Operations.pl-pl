@@ -17,11 +17,11 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
-ms.sourcegitcommit: de715b7fda2f1548f2f443b9e0f6d09f5b881d61
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2020
-ms.locfileid: "3034270"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4420096"
 ---
 # <a name="develop-a-compensation-structure"></a>Opracowywanie struktury wynagrodzeń
 

@@ -17,11 +17,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
 ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
-ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4017697"
+ms.locfileid: "4435643"
 ---
 # <a name="outbound-sorting"></a>Sortowanie towarów wychodzących
 
@@ -62,7 +62,7 @@ Stacja pakowania jest traktowana jako lokalizacja. Pracownicy magazynowi, którz
 1. W polu **Pracownik** wybierz użytkownika docelowego z listy pracowników.
 1. Wybierz pozycję **Wybierz**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. Na skróconej karcie **Użytkownicy** wybierz opcję **Nowy** , aby utworzyć konto urządzenia przenośnego, i określ dla niego następujące wartości:
+1. Na skróconej karcie **Użytkownicy** wybierz opcję **Nowy**, aby utworzyć konto urządzenia przenośnego, i określ dla niego następujące wartości:
 
     - **Identyfikator użytkownika:** wprowadź unikatowy identyfikator.
     - **Nazwa użytkownika:** wprowadź nazwę identyfikatora.
@@ -70,7 +70,7 @@ Stacja pakowania jest traktowana jako lokalizacja. Pracownicy magazynowi, którz
     - **Nazwa menu:** *Główne*
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
-1. Pojawi się okno dialogowe **Ustaw hasło** , w którym można utworzyć proste hasło, za pomocą którego użytkownik może zalogować w aplikacji mobilnej. Ustaw następujące wartości:
+1. Pojawi się okno dialogowe **Ustaw hasło**, w którym można utworzyć proste hasło, za pomocą którego użytkownik może zalogować w aplikacji mobilnej. Ustaw następujące wartości:
 
     - **Hasło:** wprowadź proste hasło.
     - **Potwierdź hasło:** Wprowadź ponownie to samo hasło.
@@ -82,7 +82,7 @@ Stacja pakowania jest traktowana jako lokalizacja. Pracownicy magazynowi, którz
 ### <a name="create-a-location-type"></a>Tworzenie typu lokalizacji
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Typy lokalizacji**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć typ lokalizacji, i określ dla niej następujące wartości:
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć typ lokalizacji, i określ dla niej następujące wartości:
 
     - **Typ lokalizacji:** *SORTOWANIE*
     - **Opis:** *Sortowanie*
@@ -92,7 +92,7 @@ Stacja pakowania jest traktowana jako lokalizacja. Pracownicy magazynowi, którz
 ### <a name="set-up-warehouse-management-parameters"></a>Konfigurowanie parametrów zarządzania magazynem
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Parametry zarządzania magazynem**.
-1. Na karcie **Ogólne** , na skróconej karcie **Typy lokalizacji** ustaw pole **Typ lokalizacji sortowania** na *Sortowanie*.
+1. Na karcie **Ogólne**, na skróconej karcie **Typy lokalizacji** ustaw pole **Typ lokalizacji sortowania** na *Sortowanie*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
 ### <a name="set-up-a-location-profile"></a>Ustaw profil lokalizacji
@@ -117,7 +117,7 @@ Stacja pakowania jest traktowana jako lokalizacja. Pracownicy magazynowi, którz
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Lokalizacje**.
 1. W nagłówku wyczyść pole wyboru **Generuj cyfry kontroli dla lokalizacji**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć lokalizację, i określ dla niej następujące wartości:
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć lokalizację, i określ dla niej następujące wartości:
 
     - **Magazyn:** *62*
     - **Lokalizacja:** *SORT*
@@ -146,13 +146,13 @@ W tym scenariuszu zostanie utworzony szablon sortowania towarów wychodzących w
     - **Typ weryfikacji sortowania:** *Skan pozycji*
     - **Utwórz pracę przy zamknięciu stanowiska:** *Tak*
 
-        Jeśli opcja jest ustawiona na *Tak* , po zamknięciu stanowiska zostanie utworzona praca, aby przenieść zapasy do końcowej lokalizacji wysyłki. Jeśli opcja jest ustawiona na *Nie* , zapasy będą natychmiast pobierane dla zamówienia w momencie zamknięcia stanowiska.
+        Jeśli opcja jest ustawiona na *Tak*, po zamknięciu stanowiska zostanie utworzona praca, aby przenieść zapasy do końcowej lokalizacji wysyłki. Jeśli opcja jest ustawiona na *Nie*, zapasy będą natychmiast pobierane dla zamówienia w momencie zamknięcia stanowiska.
 
     - **Przypisanie stanowiska:** *Automatyczne*
 
         W przypadku ustawienia tego pola na *Ręcznie* użytkownik musi zawsze wskazać, do którego stanowiska należy sortować zapasy. W przypadku ustawienia pola na *Automatycznie* system w miarę możliwości automatycznie poprowadzi zapasy do stanowiska na podstawie podziałów w szablonie sortowania.
 
-1. Wybierz **Zapisz** , aby udostępnić opcję **Edytuj kwerendę** w okienku akcji.
+1. Wybierz **Zapisz**, aby udostępnić opcję **Edytuj kwerendę** w okienku akcji.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W edytorze zapytań na karcie **Sortowanie** dodaj wiersz o następujących wartościach:
 
@@ -176,7 +176,7 @@ W tym scenariuszu zostanie utworzony szablon sortowania towarów wychodzących w
     - **Nazwa pola odwołania:** *Usługa przewoźnika*
     - **Grupuj według pola:** Należy zaznaczyć to pole wyboru, aby pogrupować wysyłki według usługi przewozowej.
 
-1. Wybierz przycisk **OK** , aby zapisać ustawienia i zamknąć okienko dialogowe.
+1. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okienko dialogowe.
 
 ### <a name="set-up-container-packing-policies"></a>Ustawianie zasad pakowania kontenerów
 
@@ -202,14 +202,14 @@ W tym scenariuszu zostanie utworzony szablon sortowania towarów wychodzących w
 Utwórz nowy profil pakowania, który będzie używany razem z funkcją sortowania.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Opakowanie \> Profile pakowania**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć linię, i określ dla niej następujące wartości:
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć linię, i określ dla niej następujące wartości:
 
     - **Identyfikator profilu pakowania:** *Sortowanie*
     - **Opis:** *Sortowanie*
     - **Zasady pakowania kontenerów:** *Sortowanie*
     - **Tryb identyfikatora kontenera:** *Automatyczny*
     - **Typ kontenera:** *Pudełko-duże*
-    - **Automatycznie utwórz kontener przy zamknięciu kontenera:** Wyczyszczone (= *Nie* )
+    - **Automatycznie utwórz kontener przy zamknięciu kontenera:** Wyczyszczone (= *Nie*)
 
 1. Wybierz opcję **Zapisz**.
 
@@ -218,7 +218,7 @@ Utwórz nowy profil pakowania, który będzie używany razem z funkcją sortowan
 Umożliwia skonfigurowanie klasy pracy, która będzie używana razem z sortowaniem.
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Klasy robocze**.
-1. W okienku akcji wybierz opcję **Nowy** , aby utworzyć klasę pracy dla sortowania, i określ dla niej następujące wartości:
+1. W okienku akcji wybierz opcję **Nowy**, aby utworzyć klasę pracy dla sortowania, i określ dla niej następujące wartości:
 
     - **Identyfikator klasy roboczej:** *Sortowanie*
     - **Opis:** *Sortowanie*
@@ -245,11 +245,11 @@ Umożliwia utworzenie elementu menu urządzenia przenośnego w celu zbudowania p
 
     - **Kod działania:** *Sortowanie towarów wychodzących*
 
-        Jeśli to pole jest ustawione na wartość *Sortowanie towarów wychodzących* , wyświetlane jest pole **Identyfikator szablonu sortowania towarów wychodzących**.
+        Jeśli to pole jest ustawione na wartość *Sortowanie towarów wychodzących*, wyświetlane jest pole **Identyfikator szablonu sortowania towarów wychodzących**.
 
     - **Użyj przewodnika procesu:** *Tak*
 
-        Jeśli w polu **Kod działania** wybrano opcję *Sortowanie towarów wychodzących* , ta opcja jest automatycznie ustawiana na wartość *Tak*.
+        Jeśli w polu **Kod działania** wybrano opcję *Sortowanie towarów wychodzących*, ta opcja jest automatycznie ustawiana na wartość *Tak*.
 
     - **Identyfikator szablonu sortowania towarów wychodzących:** *Autopraca*
 
@@ -268,8 +268,8 @@ Następnie Utwórz element menu, który pozwoli użytkownikom przenieść posort
     - **Tryb:** *Praca*
     - **Używanie istniejącej pracy:** *Tak*
 
-1. Na skróconej karcie **Ogólne** , pole **Sterowane przez** powinno być ustawione na wartość *Sterowane przez użytkownika*.
-1. Na skróconej karcie **Klasy pracy** wybierz opcję **Nowy** , a następnie określ następujące wartości:
+1. Na skróconej karcie **Ogólne**, pole **Sterowane przez** powinno być ustawione na wartość *Sterowane przez użytkownika*.
+1. Na skróconej karcie **Klasy pracy** wybierz opcję **Nowy**, a następnie określ następujące wartości:
 
     - I **dentyfikator klasy pracy:** *SORTOWANIE*
     - **Typ zlecenia pracy:** *Szablon pracy pobrania z posortowanych zapasów*
@@ -310,15 +310,15 @@ Teraz musisz dodać nowe elementy menu do menu urządzenia przenośnego.
     - **Magazyn:** *62*
     - **Wiele jednostek SKU:** *Nie*
 
-1. Wybierz opcję **Zapisz** , aby pasek narzędzi na skróconej karcie **Wiersze** stał się dostępny.
-1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy** , a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz**, aby pasek narzędzi na skróconej karcie **Wiersze** stał się dostępny.
+1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy**, a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Sekwencja:** *1*
     - **Od:** *0*
     - **Do:** *1 000 000*
 
-1. Wybierz opcję **Zapisz** , aby pasek narzędzi na skróconej karcie **Dyrektywy akcji lokalizacji** stał się dostępny.
-1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy** , a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz**, aby pasek narzędzi na skróconej karcie **Dyrektywy akcji lokalizacji** stał się dostępny.
+1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy**, a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Sekwencja:** *1*
     - **Nazwa:** *Baydoor*
@@ -326,7 +326,7 @@ Teraz musisz dodać nowe elementy menu do menu urządzenia przenośnego.
 1. Wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz pozycję **Edytuj kwerendę**.
 1. W edytorze zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** ma wartość *Lokalizacja*. Umożliwia ustawienie pola **Kryterium** dla tego wiersza na *Baydoor*.
-1. Wybierz przycisk **OK** , aby zapisać ustawienia i zamknąć okno dialogowe kwerendy.
+1. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okno dialogowe kwerendy.
 
 #### <a name="set-up-a-multiple-sku-directive"></a>Konfigurowanie wielu dyrektyw SKU
 
@@ -345,15 +345,15 @@ Teraz musisz dodać nowe elementy menu do menu urządzenia przenośnego.
     - **Magazyn:** *62*
     - **Wiele SKU:** *Tak*
 
-1. Wybierz opcję **Zapisz** , aby pasek narzędzi na skróconej karcie **Wiersze** stał się dostępny.
-1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy** , a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz**, aby pasek narzędzi na skróconej karcie **Wiersze** stał się dostępny.
+1. Na skróconej karcie **Wiersze** wybierz opcję **Nowy**, a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Sekwencja:** *1*
     - **Od:** *0*
     - **Do:** *1 000 000*
 
-1. Wybierz opcję **Zapisz** , aby pasek narzędzi na skróconej karcie **Dyrektywy akcji lokalizacji** stał się dostępny.
-1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy** , a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
+1. Wybierz opcję **Zapisz**, aby pasek narzędzi na skróconej karcie **Dyrektywy akcji lokalizacji** stał się dostępny.
+1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz opcję **Nowy**, a następnie określ następujące wartości w nowym wierszu: Zaakceptuj wartość domyślną dla wszystkich pozostałych pól.
 
     - **Sekwencja:** *1*
     - **Nazwa:** *Baydoor Multi*
@@ -361,21 +361,21 @@ Teraz musisz dodać nowe elementy menu do menu urządzenia przenośnego.
 1. Wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Akcje dyrektywy lokalizacji** wybierz pozycję **Edytuj kwerendę**.
 1. W edytorze zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** ma wartość *Lokalizacja*. Umożliwia ustawienie pola **Kryterium** dla tego wiersza na *Baydoor*.
-1. Wybierz przycisk **OK** , aby zapisać ustawienia i zamknąć okno dialogowe kwerendy.
+1. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okno dialogowe kwerendy.
 
 ### <a name="set-up-work-templates"></a>Ustaw szablony pracy
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablony pracy**.
 1. Zmień wartość pola **Typ zlecenia pracy** na *Pobranie z posortowanych zapasów*.
-1. W okienku akcji wybierz opcję **Nowe** , aby utworzyć szablon.
+1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć szablon.
 1. Na karcie **Omówienie** ustaw następujące wartości:
 
     - **Sekwencja:** *1*
     - **Szablon pracy:** *Sortowanie*
     - **Opis szablonu pracy:** *Sortowanie*
 
-1. Wybierz opcję **Zapisz** , aby skrócona karta **Szczegóły szablonu pracy** stała się dostępna.
-1. Na skróconej karcie **Szczegóły szablonu pracy** wybierz opcję **Nowy** , aby dodać wiersz, a następnie określ dla niego następujące wartości:
+1. Wybierz opcję **Zapisz**, aby skrócona karta **Szczegóły szablonu pracy** stała się dostępna.
+1. Na skróconej karcie **Szczegóły szablonu pracy** wybierz opcję **Nowy**, aby dodać wiersz, a następnie określ dla niego następujące wartości:
 
     - **Typ pracy:** *Pobranie*
     - I **dentyfikator klasy pracy:** *SORTOWANIE*
@@ -402,7 +402,7 @@ Ten scenariusz symuluje sytuację, w której spakowane kontenery powinny być au
     - **Konto odbiorcy:** *US-005*
     - **Magazyn:** *62*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 
     Nowe zamówienie zakupu (PO) zostało otwarte.
 
@@ -413,15 +413,15 @@ Ten scenariusz symuluje sytuację, w której spakowane kontenery powinny być au
     - **Usługa przewozowa:** *Lotnicza*
 
 1. Przełącz się do widoku **Wiersz**.
-1. Jeśli nowy wiersz nie został dodany automatycznie do siatki na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , aby dodać.
+1. Jeśli nowy wiersz nie został dodany automatycznie do siatki na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać.
 1. Dla nowego wiersza zamówienia należy określić następujące wartości:
 
     - **Numer pozycji:** *A0001*
     - **Ilość:** *2*
 
-1. Gdy nowy wiersz zamówienia jest wciąż wybrany na skróconej karcie **Wiersze zamówienia sprzedaży** , w menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
-1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii** , aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
-1. Zamknij stronę **Rezerwacja** , aby powrócić do zamówienia sprzedaży.
+1. Gdy nowy wiersz zamówienia jest wciąż wybrany na skróconej karcie **Wiersze zamówienia sprzedaży**, w menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
+1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii**, aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
+1. Zamknij stronę **Rezerwacja**, aby powrócić do zamówienia sprzedaży.
 1. W okienku akcji na karcie **Magazyn** w grupie **Akcje** wybierz opcję **Zwolnienie do magazynu**.
 1. Wyświetlany jest komunikat informacyjny, który pokazuje wysyłkę i wyciągi z tego zamówienia. Zanotuj identyfikator grupy czynności i numery identyfikacyjne przesyłki.
 
@@ -434,25 +434,25 @@ Ten scenariusz symuluje sytuację, w której spakowane kontenery powinny być au
     - **Konto odbiorcy:** *US-006*
     - **Magazyn:** *62*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
 1. Nowe zamówienie zakupu (PO) zostało otwarte. Powinno zawierać pusty wiersz w siatce na skróconej karcie **Wiersze zamówienia sprzedaży**. Ustaw następujące wartości w tym wierszu zamówienia:
 
     - **Pozycja:** *A0001*
     - **Ilość:** *1*
 
 1. Na skróconej karcie **Szczegółów wiersza** na karcie **Dostawa** należy określić wartość w polu **Metoda dostawy** na *Flowe-STD*.
-1. Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz** , a następnie określ następujące wartości w drugim wierszu:
+1. Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, a następnie określ następujące wartości w drugim wierszu:
 
     - **Pozycja:** *A0002*
     - **Ilość:** *1*
 
 1. Na skróconej karcie **Szczegółów wiersza** na karcie **Dostawa** należy zmienić wartość w polu **Metoda dostawy** na *Air C-Air*.
 1. Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz pierwszy wiersz zamówienia. W menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
-1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii** , aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
-1. Zamknij stronę **Rezerwacja** , aby powrócić do zamówienia sprzedaży.
+1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii**, aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
+1. Zamknij stronę **Rezerwacja**, aby powrócić do zamówienia sprzedaży.
 1. Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz drugi wiersz zamówienia. W menu **Zapasy** nad siatką wybierz opcję **Rezerwacja**.
-1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii** , aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
-1. Zamknij stronę **Rezerwacja** , aby powrócić do zamówienia sprzedaży.
+1. Na stronie **Rezerwacja** wybierz opcję **Rezerwacja partii**, aby zarezerwować pełną ilość z wybranego wiersza w magazynie.
+1. Zamknij stronę **Rezerwacja**, aby powrócić do zamówienia sprzedaży.
 1. W okienku akcji na karcie **Magazyn** w grupie **Akcje** wybierz opcję **Zwolnienie do magazynu**.
 1. Wyświetlany jest komunikat informacyjny, który pokazuje wysyłkę i wyciągi z tego zamówienia. Zwróć uwagę, że utworzono dwa numery identyfikacyjne grupy czynności i dwa numery identyfikacyjne przesyłki, po jednym dla każdego trybu dostawy dla wierszy zamówienia sprzedaży.
 
@@ -465,12 +465,12 @@ Ten scenariusz symuluje sytuację, w której spakowane kontenery powinny być au
 
 Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenieść elementy do stacji pakowania.
 
-1. Na urządzeniu przenośnym zaloguj się do magazynu *62* , używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
+1. Na urządzeniu przenośnym zaloguj się do magazynu *62*, używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Pobranie sprzedaży**.
 1. W polu **Identyfikator** wprowadź identyfikator pracy utworzony dla zamówienia sprzedaży 1.
 1. Kliknij przycisk **OK**.
-1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny, który został utworzony dla zamówienia sprzedaży 1. Należy zauważyć, że jest wyświetlana lokalizacja pobrania ( *masowo-001* ), pozycja ( *A0001* ) oraz ilość ( *2 sztuki* ).
+1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny, który został utworzony dla zamówienia sprzedaży 1. Należy zauważyć, że jest wyświetlana lokalizacja pobrania (*masowo-001*), pozycja (*A0001*) oraz ilość (*2 sztuki*).
 1. Kliknij przycisk **OK**.
 1. Umożliwia przejrzenie informacji na stronie **Zamówienia sprzedaży - Odłożenie**. Pole **Loc** powinno wskazywać, że pobrane towary przechodzą na lokalizację *Pakunek*.
 1. Kliknij przycisk **OK**.
@@ -481,7 +481,7 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
 
 1. W polu **Identyfikator** wprowadź identyfikator pracy utworzony dla zamówienia sprzedaży 2, gdzie wiersz 1 ma element *A0001*.
 1. Kliknij przycisk **OK**.
-1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny. Należy zauważyć, że jest wyświetlana lokalizacja pobrania ( *masowo-001* ), pozycja ( *A0001* ) oraz ilość ( *1 sztuki* ).
+1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny. Należy zauważyć, że jest wyświetlana lokalizacja pobrania (*masowo-001*), pozycja (*A0001*) oraz ilość (*1 sztuki*).
 1. Kliknij przycisk **OK**.
 1. Umożliwia przejrzenie informacji na stronie **Zamówienia sprzedaży - Odłożenie**. Pole **Loc** powinno wskazywać, że pobrane towary przechodzą na lokalizację *Pakunek*.
 1. Kliknij przycisk **OK**.
@@ -490,7 +490,7 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
 
 1. W polu **Identyfikator** wprowadź identyfikator pracy utworzony dla zamówienia sprzedaży 2, gdzie wiersz 2 ma element *A0002*.
 1. Kliknij przycisk **OK**.
-1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny. Należy zauważyć, że jest wyświetlana lokalizacja pobrania ( *masowo-002* ), pozycja ( *A0001* ) oraz ilość ( *1 sztuki* ).
+1. Na stronie **Zamówień sprzedaży - Pobranie** wprowadź docelowy numer identyfikacyjny. Należy zauważyć, że jest wyświetlana lokalizacja pobrania (*masowo-002*), pozycja (*A0001*) oraz ilość (*1 sztuki*).
 1. Kliknij przycisk **OK**.
 1. Umożliwia przejrzenie informacji na stronie **Zamówienia sprzedaży - Odłożenie**. Pole **Loc** powinno wskazywać, że pobrane towary przechodzą na lokalizację *Pakunek*.
 1. Kliknij przycisk **OK**.
@@ -512,8 +512,8 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
     - **Lokalizacja:** *Pakiet*
     - **Identyfikator profilu pakowania:** *Sortowanie*
 
-1. Kliknij przycisk **OK** , aby zamknąć okno dialogowe.
-1. Na stronie **Pakiet** , w polu **Numer identyfikacyjny lub wysyłka** , wprowadź docelowy numer identyfikacyjny dla zamówienia sprzedaży 1. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
+1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
+1. Na stronie **Pakiet**, w polu **Numer identyfikacyjny lub wysyłka**, wprowadź docelowy numer identyfikacyjny dla zamówienia sprzedaży 1. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
 1. W okienku akcji wybierz opcję **Nowy kontener**.
 1. Zaakceptuj wszystkie ustawienia domyślne i kliknij przycisk **OK**. Zanotuj identyfikator kontenera.
 1. Na skróconej karcie **Pakowanie przedmiotów** ustaw następujące wartości:
@@ -522,7 +522,7 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
     - **Identyfikator:** pozycja *A0001*
 
 1. W okienku akcji wybierz opcję **Zamknij kontener**.
-1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu** , aby zaktualizować pole **Waga brutto**.
+1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu**, aby zaktualizować pole **Waga brutto**.
 1. Kliknij przycisk **OK**. Kontener zostanie przeniesiony do lokalizacji *SORTOWANIA* i będzie gotowy do sortowania.
 1. Utwórz drugi kontener, aby dodać drugi towar z numeru identyfikacyjnego dla zamówienia sprzedaży 1 do nowego kontenera.
 1. W okienku akcji wybierz opcję **Nowy kontener**.
@@ -533,12 +533,12 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
     - **Identyfikator:** pozycja *A0001*
 
 1. W okienku akcji wybierz opcję **Zamknij kontener**.
-1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu** , aby zaktualizować pole **Waga brutto**.
+1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu**, aby zaktualizować pole **Waga brutto**.
 1. Kliknij przycisk **OK**. Kontener zostanie przeniesiony do lokalizacji *SORTOWANIA* i będzie gotowy do sortowania.
 
 #### <a name="pack-sales-order-2-into-containers"></a>Pakowanie zamówienia 2 sprzedaży do kontenerów
 
-1. Na stronie **Pakiet** , w polu **Numer identyfikacyjny lub wysyłka** , wprowadź docelowy numer identyfikacyjny dla wiersza 1 zamówienia sprzedaży 2. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
+1. Na stronie **Pakiet**, w polu **Numer identyfikacyjny lub wysyłka**, wprowadź docelowy numer identyfikacyjny dla wiersza 1 zamówienia sprzedaży 2. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
 1. W okienku akcji wybierz opcję **Nowy kontener**.
 1. Zaakceptuj wszystkie ustawienia domyślne i kliknij przycisk **OK**. Zanotuj identyfikator kontenera.
 1. Na skróconej karcie **Pakowanie przedmiotów** ustaw następujące wartości:
@@ -547,9 +547,9 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
     - **Identyfikator:** pozycja *A0001*
 
 1. W okienku akcji wybierz opcję **Zamknij kontener**.
-1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu** , aby zaktualizować pole **Waga brutto**.
+1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu**, aby zaktualizować pole **Waga brutto**.
 1. Kliknij przycisk **OK**. Kontener zostanie przeniesiony do lokalizacji *SORTOWANIA* i będzie gotowy do sortowania.
-1. Wpolu **Numer identyfikacyjny lub wysyłka** , wprowadź docelowy numer identyfikacyjny dla wiersza 2 zamówienia sprzedaży 2. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
+1. Wpolu **Numer identyfikacyjny lub wysyłka**, wprowadź docelowy numer identyfikacyjny dla wiersza 2 zamówienia sprzedaży 2. Następnie należy wybrać **Kartę** lub klawisz **Enter** na klawiaturze w celu wychodzenia z pola.
 1. W okienku akcji wybierz opcję **Nowy kontener**.
 1. Zaakceptuj wszystkie ustawienia domyślne i kliknij przycisk **OK**. Zanotuj identyfikator kontenera.
 1. Na skróconej karcie **Pakowanie przedmiotów** ustaw następujące wartości:
@@ -558,7 +558,7 @@ Zakończ utworzoną pracę, korzystając z urządzenia przenośnego, aby przenie
     - **Pole identyfikatora:** pozycja *A0002*
 
 1. W okienku akcji wybierz opcję **Zamknij kontener**.
-1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu** , aby zaktualizować pole **Waga brutto**.
+1. W oknie dialogowym **Zamknij kontener** wybierz opcję **Pobierz wagę z systemu**, aby zaktualizować pole **Waga brutto**.
 1. Kliknij przycisk **OK**. Kontener zostanie przeniesiony do lokalizacji *SORTOWANIA* i będzie gotowy do sortowania.
 
 Aby wyświetlić szczegóły kontenera, należy przejść do **Zarządzanie magazynem \> Pakowanie i konteneryzacja \> Kontenery** oraz wyszukać identyfikatory kontenerów, które zostały utworzone podczas pakowania.
@@ -572,13 +572,13 @@ Aby wyświetlić szczegóły kontenera, należy przejść do **Zarządzanie maga
 
 #### <a name="sort-the-first-container"></a>Sortuj pierwszy kontener
 
-1. Na urządzeniu przenośnym zaloguj się do magazynu *62* , używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
+1. Na urządzeniu przenośnym zaloguj się do magazynu *62*, używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Kompilacja palety**.
 1. W polu **LP/Con** wprowadź pierwszy identyfikator kontenera skojarzony z zamówieniem sprzedaży 1.
 1. Kliknij przycisk **OK**.
 1. Ponieważ nie istnieją obecnie pozycje sortowania, należy je określić. W polu **Identyfikator stanowiska sortowania** wprowadź *SP01*.
-1. Ponieważ żaden numer identyfikacyjny nie jest aktualnie skojarzony z pozycją sortowania *SP01* , należy określić jeden z nich. W polu **Numer identyfikacyjny** wprowadź *PLP01*.
+1. Ponieważ żaden numer identyfikacyjny nie jest aktualnie skojarzony z pozycją sortowania *SP01*, należy określić jeden z nich. W polu **Numer identyfikacyjny** wprowadź *PLP01*.
 1. Kliknij przycisk **OK**.
 1. Ponieważ sprawdzanie poprawności pozycji sortowania jest włączone, należy ponownie wprowadzić identyfikator pozycji sortowania. W polu **Identyfikator stanowiska sortowania** wprowadź *SP01*.
 1. Kliknij przycisk **OK**.
@@ -592,7 +592,7 @@ Aby wyświetlić szczegóły kontenera, należy przejść do **Zarządzanie maga
 
 #### <a name="sort-the-remaining-containers"></a>Posortuj pozostałe pojemniki
 
-1. Na urządzeniu przenośnym zaloguj się do magazynu *62* , używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
+1. Na urządzeniu przenośnym zaloguj się do magazynu *62*, używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Kompilacja palety**.
 1. W polu **LP/Con** wprowadź drugi identyfikator kontenera skojarzony z zamówieniem sprzedaży 1.
@@ -623,7 +623,7 @@ Po posortowaniu wszystkich zapasów należy zamknąć to stanowisko, aby można 
 
 #### <a name="close-a-position-from-the-mobile-device"></a>Zamykanie stanowiska z urządzenia przenośnego
 
-1. Na urządzeniu przenośnym zaloguj się do magazynu *62* , używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
+1. Na urządzeniu przenośnym zaloguj się do magazynu *62*, używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Kompilacja palety**.
 1. W polu **LP/Con** wprowadź identyfikator kontenera, który został posortowany w celu posortowania pozycji *SP01*.
@@ -645,23 +645,23 @@ Po posortowaniu wszystkich zapasów należy zamknąć to stanowisko, aby można 
 
 Należy wykonać posortowaną pracę pobrania z magazynu. Po zakończeniu Inwentaryzacja zostanie pobrana do zamówienia sprzedaży. W tym momencie obowiązują wszystkie inne procesy magazynowe.
 
-1. Na urządzeniu przenośnym zaloguj się do magazynu *62* , używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
+1. Na urządzeniu przenośnym zaloguj się do magazynu *62*, używając identyfikatora użytkownika utworzonego dla tego scenariusza (lub identyfikatora użytkownika dla istniejącego użytkownika danych demonstracyjnych).
 1. W menu głównym wybierz opcję **Wychodzące**.
 1. W menu **Wychodzące** wybierz opcję **Ładowanie z sortowania**.
 1. Wprowadź identyfikator docelowego z pierwszej pozycji sortowania, *SP01*. Ustaw wartość w polu **Identyfikator** na *PLP01*.
 1. Kliknij przycisk **OK**.
-1. Strona **Odbieranie sortowanych zapasów: Odbiór** zawiera listę prac pobrań, które muszą zostać wykonane. Pobranie z lokalizacji *SORTOWANIE* i docelowego numeru identyfikacyjnego *PLP01* , który ma wiele towarów i ilość *3*.
+1. Strona **Odbieranie sortowanych zapasów: Odbiór** zawiera listę prac pobrań, które muszą zostać wykonane. Pobranie z lokalizacji *SORTOWANIE* i docelowego numeru identyfikacyjnego *PLP01*, który ma wiele towarów i ilość *3*.
 1. Kliknij przycisk **OK**.
-1. Strona **Odbieranie sortowanych zapasów: Odłożenie** zawiera listę prac odkładania, które muszą zostać wykonane. Odkładanie z lokalizacji *Baydoor* i docelowego numeru identyfikacyjnego *PLP01* , który ma wiele towarów i ilość *3*.
+1. Strona **Odbieranie sortowanych zapasów: Odłożenie** zawiera listę prac odkładania, które muszą zostać wykonane. Odkładanie z lokalizacji *Baydoor* i docelowego numeru identyfikacyjnego *PLP01*, który ma wiele towarów i ilość *3*.
 1. Kliknij przycisk **OK**.
 
     Praca została zakończona.
 
 1. Wprowadź docelowy numer identyfikacyjny z drugie pozycji sortowania, *SP02*. Ustaw wartość w polu **Identyfikator** na *PLP02*.
 1. Kliknij przycisk **OK**.
-1. Strona **Odbieranie sortowanych zapasów: Odbiór** zawiera listę prac pobrań, które muszą zostać wykonane. Pobranie z lokalizacji *SORTOWANIE* i docelowego numeru identyfikacyjnego *PLP02* , który ma wiele towarów i ilość *1*.
+1. Strona **Odbieranie sortowanych zapasów: Odbiór** zawiera listę prac pobrań, które muszą zostać wykonane. Pobranie z lokalizacji *SORTOWANIE* i docelowego numeru identyfikacyjnego *PLP02*, który ma wiele towarów i ilość *1*.
 1. Kliknij przycisk **OK**.
-1. Strona **Odbieranie sortowanych zapasów: Odłożenie** zawiera listę prac odkładania, które muszą zostać wykonane. Odkładanie z lokalizacji *Baydoor* i docelowego numeru identyfikacyjnego *PLP02* , który ma wiele towarów i ilość *1*.
+1. Strona **Odbieranie sortowanych zapasów: Odłożenie** zawiera listę prac odkładania, które muszą zostać wykonane. Odkładanie z lokalizacji *Baydoor* i docelowego numeru identyfikacyjnego *PLP02*, który ma wiele towarów i ilość *1*.
 1. Kliknij przycisk **OK**.
 
     Praca została zakończona.

@@ -20,11 +20,11 @@ ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003540"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414829"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Zarządzanie użytkownikami i rolami e-Commerce
 

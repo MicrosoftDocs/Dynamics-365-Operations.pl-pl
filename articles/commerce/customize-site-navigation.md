@@ -18,11 +18,11 @@ ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817237"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414926"
 ---
 # <a name="customize-site-navigation"></a>Dostosowywanie nawigacji w witrynie
 

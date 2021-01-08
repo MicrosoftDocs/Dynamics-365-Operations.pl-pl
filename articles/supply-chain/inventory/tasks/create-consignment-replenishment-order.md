@@ -18,11 +18,11 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
-ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "4018360"
+ms.locfileid: "4435629"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych
 
@@ -33,7 +33,7 @@ Ten temat pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyj
 ## <a name="create-a-consignment-replenishment-order"></a>Tworzenie zamówienia uzupełnienia zapasów konsygnacyjnych
 1. W okienku nawigacji wybierz kolejno **Moduły > Zaopatrzenie i sourcing > Konsygnacja > Zamówienia uzupełnienia zapasów konsygnacyjnych**.
 2. Wybierz pozycję **Nowy**.
-3. W polu **Konto dostawcy** wybierz dostawca **US-104** (należy wybrać dostawcę, który jest zarejestrowany jako właściciel na stronie **właściciele zapasów** ). 
+3. W polu **Konto dostawcy** wybierz dostawca **US-104** (należy wybrać dostawcę, który jest zarejestrowany jako właściciel na stronie **właściciele zapasów**). 
 4. Kliknij przycisk **OK**.
 5. Wybierz **Dodaj wiersz**.
 6. W polu **Kod pozycji** wpisz typ `M9211CI` (należy wybrać towar skonfigurowany dla zapasów konsygnacyjnych).
@@ -42,7 +42,7 @@ Ten temat pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyj
 9. W polu **Potwierdzona data dostawy** wpisz datę.
 10. Rozwiń sekcję **Szczegóły wiersza**.
 11. Wybierz kartę **Wymiary magazynowe**.
-12. Aby pokazać właściciela w polu **Właściciel wymiarów magazynowych** , odśwież stronę. Dostawca US-104 jest teraz wymieniony jako właściciel.  
+12. Aby pokazać właściciela w polu **Właściciel wymiarów magazynowych**, odśwież stronę. Dostawca US-104 jest teraz wymieniony jako właściciel.  
 
 ## <a name="check-the-inventory-transaction-status"></a>Sprawdzanie stanu transakcji magazynowej
 1. Wybierz **Zapasy**.

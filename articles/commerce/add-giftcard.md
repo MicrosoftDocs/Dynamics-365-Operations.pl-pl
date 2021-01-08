@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b7d28e041b8adc828a2447ab09a0c1d28cc2aec0
-ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
+ms.openlocfilehash: fa6b98bb41c0845cfa3ab36767f304ad70f46399
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4022012"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4415105"
 ---
 # <a name="gift-card-module"></a>Moduł kart upominkowych
 
@@ -86,6 +86,8 @@ Aby uzyskać instrukcje dotyczące dodawania modułu kart upominkowych do strony
 [Moduł adresu wysyłki](ship-address-module.md)
 
 [Moduł opcji dostawy](delivery-options-module.md)
+
+[Moduł informacji o odbiorze](pickup-info-module.md)
 
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
