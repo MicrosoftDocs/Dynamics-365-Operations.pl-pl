@@ -1,0 +1,109 @@
+---
+title: Moduł bloku zawartości
+description: W tym temacie opisano moduły bloku zawartości i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application User
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.search.industry: ''
+ms.author: anupamar
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: 7a8b1c214ba31b7c47cecbe67bef493f5fa450fc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4414879"
+---
+# <a name="content-block-module"></a><span data-ttu-id="f95f2-103">Moduł bloku zawartości</span><span class="sxs-lookup"><span data-stu-id="f95f2-103">Content block module</span></span>
+
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="f95f2-104">W tym temacie opisano moduły bloku zawartości i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="f95f2-104">This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.</span></span>
+
+## <a name="overview"></a><span data-ttu-id="f95f2-105">Omówienie</span><span class="sxs-lookup"><span data-stu-id="f95f2-105">Overview</span></span>
+
+<span data-ttu-id="f95f2-106">Moduł bloku zawartości jest używany do marketingowych produktów lub promocji przy użyciu kombinacji obrazów i tekstu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-106">A content block module is used to market products or promotions through a combination of images and text.</span></span> <span data-ttu-id="f95f2-107">Na przykład sprzedawca może dodać moduł bloku zawartości do strony głównej witryny e-Commerce, aby promować nowy produkt i zwrócić uwagę odbiorców.</span><span class="sxs-lookup"><span data-stu-id="f95f2-107">For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.</span></span>
+
+<span data-ttu-id="f95f2-108">Moduł bloku zawartości jest sterowany przez dane z systemu zarządzania zawartością (CMS).</span><span class="sxs-lookup"><span data-stu-id="f95f2-108">A content block module is driven by data from the content management system (CMS).</span></span> <span data-ttu-id="f95f2-109">Jest to samodzielny moduł, który nie zależy od innych modułów na stronie.</span><span class="sxs-lookup"><span data-stu-id="f95f2-109">It's a stand-alone module that doesn't depend on any other modules on the page.</span></span> <span data-ttu-id="f95f2-110">Moduł bloku zawartości można umieścić na dowolnej stronie witryny, w której detalista chce dokonać obrotu lub promować coś (na przykład produktów, sprzedaży lub funkcji).</span><span class="sxs-lookup"><span data-stu-id="f95f2-110">A content block module can be put on any site page where a retailer wants to market or promote something (for example, products, sales, or features).</span></span>
+
+## <a name="examples-of-content-block-module-in-e-commerce"></a><span data-ttu-id="f95f2-111">Przykłady modułów bloku zawartości w e-Commerce</span><span class="sxs-lookup"><span data-stu-id="f95f2-111">Examples of content block module in e-Commerce</span></span>
+
+- <span data-ttu-id="f95f2-112">Moduł bloku zawartości może być używany na stronie głównej witryny e-Commerce w celu wyróżnienia promocji i nowych produktów.</span><span class="sxs-lookup"><span data-stu-id="f95f2-112">A content block module can be used on the home page of an e-Commerce site to highlight promotions and new products.</span></span>
+- <span data-ttu-id="f95f2-113">Moduł bloku zawartości może być używany na stronie Szczegóły produktu w celu zaprezentowania informacji o produkcie.</span><span class="sxs-lookup"><span data-stu-id="f95f2-113">A content block module can be used on a product details page to showcase product information.</span></span>
+- <span data-ttu-id="f95f2-114">W module bloku zawartości można umieścić wiele modułów bohatera w celu wyróżnienia wielu produktów lub promocji.</span><span class="sxs-lookup"><span data-stu-id="f95f2-114">Multiple content block modules can be put inside a carousel module to highlight multiple products or promotions.</span></span>
+
+## <a name="content-block-modules-and-themes"></a><span data-ttu-id="f95f2-115">Moduły i motywy bloków zawartości</span><span class="sxs-lookup"><span data-stu-id="f95f2-115">Content block modules and themes</span></span>
+
+<span data-ttu-id="f95f2-116">Moduły bloku zawartości mogą obsługiwać różne układy i style oparte na motywie.</span><span class="sxs-lookup"><span data-stu-id="f95f2-116">Content block modules can support various layouts and styles based on a theme.</span></span> <span data-ttu-id="f95f2-117">Na przykład kompozycja Fabrikam obsługuje trzy warianty układu modułu bloku zawartości: Hero, funkcja i kafelek.</span><span class="sxs-lookup"><span data-stu-id="f95f2-117">For example, the Fabrikam theme supports three layout variations of a content block module: hero, feature, and tile.</span></span> <span data-ttu-id="f95f2-118">Układ Hero pokazuje obraz w tle z nakładką tekstową.</span><span class="sxs-lookup"><span data-stu-id="f95f2-118">The hero layout shows an image on the background with text overlay.</span></span> <span data-ttu-id="f95f2-119">Układ funkcji pokazuje obraz i tekst obok siebie.</span><span class="sxs-lookup"><span data-stu-id="f95f2-119">The feature layout shows an image and text side by side.</span></span> <span data-ttu-id="f95f2-120">Układ kafelków umożliwia stosowanie wielu bloków zawartości w formacie kafelka.</span><span class="sxs-lookup"><span data-stu-id="f95f2-120">The tile layout allows multiple content blocks in a tile format.</span></span>
+
+<span data-ttu-id="f95f2-121">Ponadto motyw może udostępniać różne właściwości dla każdego układu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-121">In addition, the theme can expose different properties for each layout.</span></span> <span data-ttu-id="f95f2-122">Programista motywu może utworzyć więcej układów o większej liczbie stylów przy użyciu modułu bloku zawartości.</span><span class="sxs-lookup"><span data-stu-id="f95f2-122">A theme developer can build more layouts with more styles using the content block module.</span></span>
+
+<span data-ttu-id="f95f2-123">Poniższy obraz przedstawia przykład modułu bloku zawartości z układem Hero.</span><span class="sxs-lookup"><span data-stu-id="f95f2-123">The following image shows an example of a content block module with a hero layout.</span></span>
+
+![Przykład modułu bohatera](./media/Hero.PNG)
+
+<span data-ttu-id="f95f2-125">Poniższy obraz przedstawia przykład modułu bloku zawartości z układem funkcji.</span><span class="sxs-lookup"><span data-stu-id="f95f2-125">The following image shows an example of a content block module with a feature layout.</span></span>
+
+![Przykłady modułów funkcji](./media/Feature.PNG)
+
+## <a name="content-block-module-properties"></a><span data-ttu-id="f95f2-127">Właściwości modułu bloku zawartości</span><span class="sxs-lookup"><span data-stu-id="f95f2-127">Content block module properties</span></span>
+
+| <span data-ttu-id="f95f2-128">Nazwa właściwości</span><span class="sxs-lookup"><span data-stu-id="f95f2-128">Property name</span></span>  | <span data-ttu-id="f95f2-129">Wartości</span><span class="sxs-lookup"><span data-stu-id="f95f2-129">Values</span></span> | <span data-ttu-id="f95f2-130">Opis</span><span class="sxs-lookup"><span data-stu-id="f95f2-130">Description</span></span> |
+|----------------|--------|-------------|
+| <span data-ttu-id="f95f2-131">Wizerunek</span><span class="sxs-lookup"><span data-stu-id="f95f2-131">Image</span></span>          | <span data-ttu-id="f95f2-132">Plik obrazu</span><span class="sxs-lookup"><span data-stu-id="f95f2-132">Image file</span></span> | <span data-ttu-id="f95f2-133">Obraz może służyć do pokazania produktu lub promocji.</span><span class="sxs-lookup"><span data-stu-id="f95f2-133">An image can be used to showcase a product or a promotion.</span></span> <span data-ttu-id="f95f2-134">Obraz można przekazać do galerii obrazów lub można użyć istniejącego obrazu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-134">An image can be uploaded to the image gallery, or an existing image can be used.</span></span> |
+| <span data-ttu-id="f95f2-135">Nagłówek</span><span class="sxs-lookup"><span data-stu-id="f95f2-135">Heading</span></span>        | <span data-ttu-id="f95f2-136">Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**)</span><span class="sxs-lookup"><span data-stu-id="f95f2-136">Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**)</span></span> | <span data-ttu-id="f95f2-137">Każdy moduł bohatera może mieć nagłówek.</span><span class="sxs-lookup"><span data-stu-id="f95f2-137">Every hero module can have a heading.</span></span> <span data-ttu-id="f95f2-138">Domyślnie w nagłówku jest używany znacznik nagłówka **H2**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-138">By default, the **H2** heading tag is used for the heading.</span></span> <span data-ttu-id="f95f2-139">Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności.</span><span class="sxs-lookup"><span data-stu-id="f95f2-139">However, the tag can be changed to meet accessibility requirements.</span></span> |
+| <span data-ttu-id="f95f2-140">Akapit</span><span class="sxs-lookup"><span data-stu-id="f95f2-140">Paragraph</span></span>      | <span data-ttu-id="f95f2-141">Tekst akapitu</span><span class="sxs-lookup"><span data-stu-id="f95f2-141">Paragraph text</span></span> | <span data-ttu-id="f95f2-142">Moduły bohatera obsługują tekst akapitu w formacie RTF.</span><span class="sxs-lookup"><span data-stu-id="f95f2-142">Hero modules support paragraph text in rich text format.</span></span> <span data-ttu-id="f95f2-143">Obsługiwane są pewne podstawowe funkcje tekstu sformatowanego, takie jak pogrubiony, podkreślony, kursywa i hiperłącza.</span><span class="sxs-lookup"><span data-stu-id="f95f2-143">Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks.</span></span> <span data-ttu-id="f95f2-144">Niektóre z tych możliwości mogą być zastąpione przez motyw strony stosowany do modułu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-144">Some of these capabilities can be overridden by the page theme that is applied to the module.</span></span> |
+| <span data-ttu-id="f95f2-145">Link</span><span class="sxs-lookup"><span data-stu-id="f95f2-145">Link</span></span>           | <span data-ttu-id="f95f2-146">Tekst łącza, adres URL łącza, dostęp do bogatych aplikacji internetowych (ARIA) **i Otwórz łącze na nowej karcie**</span><span class="sxs-lookup"><span data-stu-id="f95f2-146">Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab**</span></span> | <span data-ttu-id="f95f2-147">Moduły bohatera obsługują łącza do jednego lub wielu „wywołań akcji”.</span><span class="sxs-lookup"><span data-stu-id="f95f2-147">Hero modules support one or more "call to action" links.</span></span> <span data-ttu-id="f95f2-148">Jeśli zostanie dodane łącze, tekst łącza, adres URL i etykieta ARIA są wymagane.</span><span class="sxs-lookup"><span data-stu-id="f95f2-148">If a link is added, link text, a URL, and an ARIA label are required.</span></span> <span data-ttu-id="f95f2-149">Etykiety ARIA powinny być opisowe w celu spełnienia wymagań dotyczących ułatwień dostępu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-149">ARIA labels should be descriptive to meet accessibility requirements.</span></span> <span data-ttu-id="f95f2-150">Łącza można tak skonfigurować, aby były otwierane na nowej karcie.</span><span class="sxs-lookup"><span data-stu-id="f95f2-150">Links can be configured so that they are opened on a new tab.</span></span> |
+
+## <a name="content-block-module-properties-exposed-by-the-fabrikam-theme"></a><span data-ttu-id="f95f2-151">Właściwości modułu bloku zawartości dostępne w motywie Fabrikam</span><span class="sxs-lookup"><span data-stu-id="f95f2-151">Content block module properties exposed by the Fabrikam theme</span></span> 
+
+| <span data-ttu-id="f95f2-152">Nazwa właściwości</span><span class="sxs-lookup"><span data-stu-id="f95f2-152">Property name</span></span>  | <span data-ttu-id="f95f2-153">Wartości</span><span class="sxs-lookup"><span data-stu-id="f95f2-153">Values</span></span> | <span data-ttu-id="f95f2-154">Opis</span><span class="sxs-lookup"><span data-stu-id="f95f2-154">Description</span></span> |
+|----------------|--------|-------------|
+| <span data-ttu-id="f95f2-155">Umiejscowienie tekstu</span><span class="sxs-lookup"><span data-stu-id="f95f2-155">Text placement</span></span> | <span data-ttu-id="f95f2-156">**Lewo**, **Prawo**, **Środek**</span><span class="sxs-lookup"><span data-stu-id="f95f2-156">**Left**, **Right**, **Center**</span></span> | <span data-ttu-id="f95f2-157">Właściwość ta określa pozycję tekstu w odniesieniu do obrazu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-157">This property defines the position of the text on the image.</span></span> <span data-ttu-id="f95f2-158">Dotyczy tylko układu Hero.</span><span class="sxs-lookup"><span data-stu-id="f95f2-158">It only applies to the hero layout.</span></span> |
+| <span data-ttu-id="f95f2-159">Motyw tekstu</span><span class="sxs-lookup"><span data-stu-id="f95f2-159">Text theme</span></span>     | <span data-ttu-id="f95f2-160">**Jasny** lub **ciemny**</span><span class="sxs-lookup"><span data-stu-id="f95f2-160">**Light** or **Dark**</span></span> | <span data-ttu-id="f95f2-161">Schemat kolorów może zostać zdefiniowany dla tekstu na podstawie obrazu tła.</span><span class="sxs-lookup"><span data-stu-id="f95f2-161">A color scheme can be defined for the text, based on the background image.</span></span> <span data-ttu-id="f95f2-162">Na przykład, jeśli obraz ma ciemne tło, można zastosować motyw jasny, aby tekst był bardziej widoczny i spełniał proporcje kolorów dla celów ułatwień dostępu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-162">For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes.</span></span> <span data-ttu-id="f95f2-163">Dotyczy tylko układu Hero.</span><span class="sxs-lookup"><span data-stu-id="f95f2-163">It only applies to the hero layout.</span></span>|
+| <span data-ttu-id="f95f2-164">Umiejscowienie obrazu</span><span class="sxs-lookup"><span data-stu-id="f95f2-164">Image placement</span></span>       | <span data-ttu-id="f95f2-165">**Lewy**, **prawy**</span><span class="sxs-lookup"><span data-stu-id="f95f2-165">**Left**,  **Right**</span></span> | <span data-ttu-id="f95f2-166">Właściwość ta określa, czy obraz powinien znajdować się po lewej czy po prawej stronie tekstu.</span><span class="sxs-lookup"><span data-stu-id="f95f2-166">This property specifies if the image should be to the left or right of the text.</span></span> <span data-ttu-id="f95f2-167">Dotyczy tylko układu funkcji.</span><span class="sxs-lookup"><span data-stu-id="f95f2-167">It only applies to the feature layout.</span></span>  |
+
+## <a name="add-a-content-block-module-to-a-new-page"></a><span data-ttu-id="f95f2-168">Dodawanie modułu zaawansowanego bloku zawartości do nowej strony</span><span class="sxs-lookup"><span data-stu-id="f95f2-168">Add a content block module to a new page</span></span>
+
+<span data-ttu-id="f95f2-169">Aby dodać moduł bohatera do nowej strony i ustawić wymagane właściwości, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="f95f2-169">To add a hero module to a new page and set the required properties, follow these steps.</span></span>
+
+1. <span data-ttu-id="f95f2-170">Przejdź do **Szablonów** i utwórz szablon strony o nazwie **Szablon bloku zawartości**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-170">Go to **Templates**, and create a page template that is named **Content block template**.</span></span>
+1. <span data-ttu-id="f95f2-171">W **Głównym** gnieździe na stronie domyślnej dodaj moduł bohatera.</span><span class="sxs-lookup"><span data-stu-id="f95f2-171">In the **Main** slot of the default page, add a hero module.</span></span>
+1. <span data-ttu-id="f95f2-172">Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.</span><span class="sxs-lookup"><span data-stu-id="f95f2-172">Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span>
+1. <span data-ttu-id="f95f2-173">Za pomocą utworzonego właśnie szablonu Hero utwórz stronę o nazwie **Strona bloku zawartości**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-173">Use the hero template that you just created to create a page that is named **Content block page**.</span></span>
+1. <span data-ttu-id="f95f2-174">Na domyślnej stronie wybierz gniazdo **Główne**, następnie wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-174">In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.</span></span>
+1. <span data-ttu-id="f95f2-175">W oknie dialogowym **Dodawanie modułu** w obszarze **Wybierz moduły** wybierz moduł bohatera i wybierz przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-175">In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.</span></span>
+1. <span data-ttu-id="f95f2-176">W drzewie konspektu po lewej wybierz moduł bloku zawartości.</span><span class="sxs-lookup"><span data-stu-id="f95f2-176">In the outline tree on the left, select the content block module.</span></span>
+1. <span data-ttu-id="f95f2-177">W panelu właściwości po prawej wybierz **Dodaj obraz**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-177">In the properties pane on the right, select **Add an image**.</span></span> <span data-ttu-id="f95f2-178">Następnie należy wybrać istniejący obraz lub przekazać nowy obraz.</span><span class="sxs-lookup"><span data-stu-id="f95f2-178">Then either select an existing image or upload a new image.</span></span>
+1. <span data-ttu-id="f95f2-179">Wybierz **Nagłówek**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-179">Select **Heading**.</span></span>
+1. <span data-ttu-id="f95f2-180">W oknie dialogowym **nagłówek** dodaj tekst nagłówka, wybierz poziom nagłówka, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-180">In the **Heading** dialog box, add the heading text, select the heading level, and then select **OK**.</span></span>
+1. <span data-ttu-id="f95f2-181">W obszarze **tekst sformatowany**,dodaj tekst w miarę potrzeb.</span><span class="sxs-lookup"><span data-stu-id="f95f2-181">Under **Rich Text**, add text as you require.</span></span>
+1. <span data-ttu-id="f95f2-182">Wybierz **Dodaj łącze**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-182">Select **Add Link**.</span></span>
+1. <span data-ttu-id="f95f2-183">W oknie dialogowym **Łącze** dodaj tekst łącza, adres URL łącza oraz etykietę Aria dla łącza, a następnie kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-183">In the **Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.</span></span>
+1. <span data-ttu-id="f95f2-184">Wybierz układ **Hero**.</span><span class="sxs-lookup"><span data-stu-id="f95f2-184">Select the **Hero** layout.</span></span>
+1. <span data-ttu-id="f95f2-185">Wybierz **Zapisz**, a następnie wybierz opcję **Podgląd**, aby wyświetlić podgląd strony.</span><span class="sxs-lookup"><span data-stu-id="f95f2-185">Select **Save**, and then select **Preview** to preview the page.</span></span>
+1. <span data-ttu-id="f95f2-186">Wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.</span><span class="sxs-lookup"><span data-stu-id="f95f2-186">Select **Finish editing** to check in the template, and then select **Publish** to publish it.</span></span> 
+
+## <a name="additional-resources"></a><span data-ttu-id="f95f2-187">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="f95f2-187">Additional resources</span></span>
+
+[<span data-ttu-id="f95f2-188">Omówienie biblioteki modułów</span><span class="sxs-lookup"><span data-stu-id="f95f2-188">Module library overview</span></span>](starter-kit-overview.md)
+
+[<span data-ttu-id="f95f2-189">Moduł transparentu promocyjnego</span><span class="sxs-lookup"><span data-stu-id="f95f2-189">Promo banner module</span></span>](add-alert.md)
+
+[<span data-ttu-id="f95f2-190">Moduł karuzeli</span><span class="sxs-lookup"><span data-stu-id="f95f2-190">Carousel module</span></span>](add-carousel.md)
+
+[<span data-ttu-id="f95f2-191">Moduł bloku tekstu</span><span class="sxs-lookup"><span data-stu-id="f95f2-191">Text block module</span></span>](add-content-rich-block.md)
+
+[<span data-ttu-id="f95f2-192">Moduł odtwarzacza wideo</span><span class="sxs-lookup"><span data-stu-id="f95f2-192">Video player module</span></span>](add-video-player.md)

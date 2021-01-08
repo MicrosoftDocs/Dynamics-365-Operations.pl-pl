@@ -1,0 +1,119 @@
+---
+title: Serie czynności konserwacyjnych
+description: W tym temacie wyjaśniono serie czynności konserwacyjnych w module Zarządzanie składnikami majątku.
+author: josaw1
+manager: tfehr
+ms.date: 08/27/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: EntAssetRoundTable
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4435257"
+---
+# <a name="maintenance-rounds"></a><span data-ttu-id="51ec3-103">Serie czynności konserwacyjnych</span><span class="sxs-lookup"><span data-stu-id="51ec3-103">Maintenance rounds</span></span>
+
+[!include [banner](../../includes/banner.md)]
+
+ 
+
+<span data-ttu-id="51ec3-104">Serie czynności konserwacyjnych można konfigurować w **Zarządzanie składnikami majątku** odniesieniu do różnych składników majątku, na których trzeba wykonywać podobne zadania w regularnych odstępach czasu.</span><span class="sxs-lookup"><span data-stu-id="51ec3-104">In **Asset Management**, you can create maintenance rounds for various assets, on which you need to carry out a similar task at regular intervals.</span></span> <span data-ttu-id="51ec3-105">Na przykład zadania smarowania lub inspekcje bezpieczeństwa, które trzeba wykonać na kilku maszynach w tych samych interwałach.</span><span class="sxs-lookup"><span data-stu-id="51ec3-105">For example, lubrication jobs or safety inspection jobs that need to be carried out on a number of machines within the same intervals.</span></span> <span data-ttu-id="51ec3-106">Pierwszym krokiem jest utworzenie rundy serwisowego, w tym środków trwałych wymagających tej samej formy zadania konserwacji.</span><span class="sxs-lookup"><span data-stu-id="51ec3-106">First step is to create a maintenance round, including assets that require the same form of maintenance job.</span></span> <span data-ttu-id="51ec3-107">Następnie należy zaplanować zaokrąglenia obsługi.</span><span class="sxs-lookup"><span data-stu-id="51ec3-107">Next, you schedule the maintenance rounds.</span></span> <span data-ttu-id="51ec3-108">Po ukończeniu harmonogramu zaokrąglania eksploatacji można wyświetlić wszystkie rekordy zadań odnoszące się do tej rundy we **Wszystkich wierszach harmonogramu konserwacji** i **Otwieranie wierszy harmonogramu konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-108">When you have completed the maintenance rounds schedule, you can see all the job records relating to the round in the **All maintenance schedule** and **Open maintenance schedule lines**.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="51ec3-109">Liczby zaokrąglania konserwacji można również skonfigurować w lokalizacjach funkcjonalnych, które mają być wykonane na środkach trwałych instalowanych w lokalizacji funkcjonalnej w momencie tworzenia zamówienia pracy opartego na zaokrąglaniu.</span><span class="sxs-lookup"><span data-stu-id="51ec3-109">Maintenance rounds can also be set up on functional locations to be completed on the assets installed on the functional location at the time of creation of the round-based work order.</span></span> <span data-ttu-id="51ec3-110">Aby uzyskać więcej informacji temat konfiguracji funkcji serii czynności konserwacyjnych w [Tworzenie lokalizacji czynności konserwacyjnych](../functional-locations/create-functional-locations.md).</span><span class="sxs-lookup"><span data-stu-id="51ec3-110">Refer to [Create functional locations](../functional-locations/create-functional-locations.md) for more information on the setup of maintenance rounds on functional locations.</span></span>
+
+## <a name="set-up-a-maintenance-round"></a><span data-ttu-id="51ec3-111">Ustaw serii czynności konserwacyjnych</span><span class="sxs-lookup"><span data-stu-id="51ec3-111">Set up a maintenance round</span></span>
+
+1. <span data-ttu-id="51ec3-112">Kliknij **Zarządzanie składnikami majątku** > **Konfiguracja** > **Konserwacja zapobiegawcza** > **Serie czynności konserwacyjnych**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-112">Click **Asset management** > **Setup** > **Preventive maintenance** > **Maintenance rounds**.</span></span>
+
+2. <span data-ttu-id="51ec3-113">Kliknij przycisk **Nowy**, aby utworzyć nową serię czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-113">Click **New** to create a new maintenance round.</span></span>
+
+3. <span data-ttu-id="51ec3-114">Wstaw identyfikator polu **Seria czynności konserwacyjnych**, a następnie wprowadź nazwę dla opcji Konserwacja w polu **nazwa**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-114">Insert and ID in the **Maintenance round** field, and a name for the maintenance round in the **Name** field.</span></span>
+
+4. <span data-ttu-id="51ec3-115">W polu **Data rozpoczęcia** wybierz datę rozpoczęcia.</span><span class="sxs-lookup"><span data-stu-id="51ec3-115">Select a start date for the round in the **Start date** field.</span></span>
+
+5. <span data-ttu-id="51ec3-116">W polach **Zakończ w ciągu dni** i **Zakończ w ciągu godzin** się w godzinach można wstawić oczekiwaną datę zakończenia w dniach lub godzinach.</span><span class="sxs-lookup"><span data-stu-id="51ec3-116">In the **Finish within days** and **Finish within hours** fields, you can insert expected end date in days or hours.</span></span> <span data-ttu-id="51ec3-117">Oczekiwana data końcowa jest obliczana w odniesieniu do daty początkowej, która jest obliczana podczas tworzenia wierszy harmonogramu konserwacji.</span><span class="sxs-lookup"><span data-stu-id="51ec3-117">The expected end date is calculated relative to the start date, which is calculated when maintenance schedule lines are created.</span></span> <span data-ttu-id="51ec3-118">Na przykład można wstawić wartość „7” w polu **zakończenie w ciągu dni**, aby wskazać, że powiązane zadanie powinno zostać wykonane w ciągu tygodnia od daty rozpoczęcia.</span><span class="sxs-lookup"><span data-stu-id="51ec3-118">For example, you can insert "7" in the **Finish within days** field to indicate that the related job should be completed within a week from the start date.</span></span>
+
+6. <span data-ttu-id="51ec3-119">Wybierz wartość „tak” w przycisku przełącznika **Automatyczne tworzenie** jeśli zlecenia pracy mają być automatycznie tworzone z wierszy harmonogramu konserwacji, które zostały utworzone na podstawie tej serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-119">Select "Yes" on the **Auto create** toggle button if work orders should automatically be created from maintenance schedule lines that are created from this maintenance round.</span></span>
+
+7. <span data-ttu-id="51ec3-120">W polu **Typ zlecenia pracy** wybierz typ zlecenia pracy, które ma być używane dla zleceń produkcyjnych utworzonych na podstawie tej serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-120">In the **Work order type** field, select the work order type to be used on work orders created from this maintenance round.</span></span>
+
+8. <span data-ttu-id="51ec3-121">W polu **Poziom usług** wybierz poziom usług zlecenia pracy, które ma być używane dla zleceń produkcyjnych utworzonych na podstawie tej serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-121">In the **Service level** field, select the work order service level to be used on work orders created from this maintenance round.</span></span>
+
+9. <span data-ttu-id="51ec3-122">Na skróconej karcie kliknij **wiersze składników majątku** kliknij przycisk **Dodaj**, aby dodać składnik majątku do serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-122">On the **Asset lines** FastTab, click **Add** to add an asset to the maintenance round.</span></span>
+
+10. <span data-ttu-id="51ec3-123">Numer wiersza jest automatycznie wstawiany w polu **Numer wiersza** w celu wskazania kolejności środków trwałych w serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-123">A line number is automatically inserted in the **Line number** field to indicate the sequence of the assets in maintenance round.</span></span>
+
+11. <span data-ttu-id="51ec3-124">Wybierz składnik majątku w polu **Składnik majątku**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-124">Select the asset in the **Asset** field.</span></span>
+
+12. <span data-ttu-id="51ec3-125">W polu typ zadania konserwacji Wybierz **typ zadania konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-125">Select the maintenance job type for the asset in the **Maintenance job type** field.</span></span>
+
+13. <span data-ttu-id="51ec3-126">W razie potrzeby wybierz **Wariant typu zadania konserwacji** i **Zawód** powiązany z typem zadania konserwacji.</span><span class="sxs-lookup"><span data-stu-id="51ec3-126">If required, select **Maintenance job typ variant** and **Trade** related to the maintenance job type.</span></span>
+
+14. <span data-ttu-id="51ec3-127">Wybierz cykl (dzień, tydzień itd.) w polu **Typ okresu**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-127">Select the recurrence (day, week, etc.) in the **Period type** field.</span></span>
+
+15. <span data-ttu-id="51ec3-128">W polu **częstotliwość okresu** wstaw liczbę powtórzeń dla serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-128">In the **Period frequency** field, insert the number of recurrences for the maintenance round.</span></span> <span data-ttu-id="51ec3-129">Przykład: Jeśli w polu **Typ okresu** wybrano wartość dzień, a w tym polu zostanie wstawiony numer 7, nowe wiersze serii czynności konserwacyjnych są tworzone tylko raz w tygodniu.</span><span class="sxs-lookup"><span data-stu-id="51ec3-129">Example: If you have selected "Day" in the **Period type** field, and you insert the number "7" in this field, new maintenance round lines are created during preventive maintenance scheduling once a week.</span></span>
+
+16. <span data-ttu-id="51ec3-130">W polu **Data rozpoczęcia** wybierz datę początkową środka trwałego, który ma zostać uwzględniony w serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-130">Select a start date for the asset to be included in the maintenance round in the **Start date** field.</span></span> <span data-ttu-id="51ec3-131">Ta data może być inna od daty początkowej ustawionej dla serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-131">This date may differ from the start date set on the maintenance round.</span></span>
+
+17. <span data-ttu-id="51ec3-132">Aby dodać więcej składników majątku do serii czynności konserwacyjnych, powtarzaj kroki od 9 do 16.</span><span class="sxs-lookup"><span data-stu-id="51ec3-132">Repeat steps 9-16 to add more assets to the maintenance round.</span></span>
+
+18. <span data-ttu-id="51ec3-133">Na skróconej karcie kliknij **Wiersze lokalizacji czynności konserwacyjnych** kliknij przycisk **Dodaj**, aby dodać składnik majątku do serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-133">On the **Functional location lines** FastTab, click **Add** to add a functional location to the maintenance round.</span></span> <span data-ttu-id="51ec3-134">Zobacz opis powiązanych pól powyżej.</span><span class="sxs-lookup"><span data-stu-id="51ec3-134">Refer to the description of the related fields above.</span></span> <span data-ttu-id="51ec3-135">Te same pola są dostępne w przypadku tworzenia wierszy środków trwałych, ale w razie potrzeby można również wybrać **producenta** i **model** dla lokalizacji czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-135">The same fields are available as for creating an asset line, but you can also select **Manufacturer** and **Model** for a functional location, if required.</span></span> <span data-ttu-id="51ec3-136">Jeśli w wierszu wybrano tylko lokalizację czynności konserwacyjnych, ale nie zostaną wybrane opcje w **Typ składnika majątku**, **producent**, **model**, **Typ zadania konserwacji**, **Wariant typu zadania konserwacji** i **Zawód**, wszystkie składniki majątku związane z tą lokalizacją czynności konserwacyjnych w czasie planowania konserwacji zostaną uwzględnione w serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-136">If you only select a functional location on a line, but make no selections in **Asset type**, **Manufacturer**, **Model**, **Maintenance job type**, **Maintenance job type variant** and **Trade**, all assets related to that functional location at the time of maintenance scheduling will be included in the maintenance round.</span></span>
+
+19. <span data-ttu-id="51ec3-137">Na skróconej karcie **pule** kliknij przycisk **Dodaj**, aby wybrać pulę zleceń pracy, która ma zostać uwzględniona w serii czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-137">On the **Pools** FastTab, click **Add** to select a work order pool to be included in the maintenance round.</span></span> <span data-ttu-id="51ec3-138">Kilka pul zleceń pracy można połączyć z jedną serią czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-138">Several work order pools can be connected to one maintenance round.</span></span>
+
+20. <span data-ttu-id="51ec3-139">Zapisz ustawienia.</span><span class="sxs-lookup"><span data-stu-id="51ec3-139">Save your setup.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="51ec3-140">Pola **Składniki majątku** i **Wiersze** znajdujące się w grupie **Szczegóły** na skróconej karcie **Nagłówek** zawierają łączną liczbę środków trwałych i wierszy związanych z wybraną serią czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-140">The **Assets** and **Lines** fields located in the **Details** group on the **Header** FastTab show the total number of assets and lines related to the selected maintenance round.</span></span>
+
+<span data-ttu-id="51ec3-141">Poniższa ilustracja przedstawia i przykład cyklu eksploatacji zawierającego trzy składniki majatku.</span><span class="sxs-lookup"><span data-stu-id="51ec3-141">The illustration below shows and example of a maintenance round containing three assets.</span></span>
+
+![Rysunek 1](media/13-preventive-maintenance.png)
+
+
+## <a name="schedule-maintenance-rounds"></a><span data-ttu-id="51ec3-143">Planowanie serii czynności konserwacyjnych</span><span class="sxs-lookup"><span data-stu-id="51ec3-143">Schedule maintenance rounds</span></span>
+
+<span data-ttu-id="51ec3-144">Po skonfigurowaniu serii czynności konserwacyjnych należy uruchomić zadanie harmonogramu w celu zaplanowania wszystkich zadań związanych z serią czynności konserwacyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-144">When you've set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.</span></span>
+
+1. <span data-ttu-id="51ec3-145">Kliknij **Zarządzanie składnikami majątku** > **Okresowe** > **Konserwacja zapobiegawcza** > **Planowanie serii czynności konserwacyjnych** lub **Zarządzanie składnikami majątku** > **Wspólne** > **Harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji** lub **Otwieranie puli harmonogramów konserwacji** > na liście wybierz harmonogram konserwacji > przycisk **Serie czynności konserwacyjnych**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-145">Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select maintenance schedule line in the list > **Maintenance rounds** button.</span></span>
+
+2. <span data-ttu-id="51ec3-146">W polu **okres** wybierz typ okresu, który ma być używany dla zadania planowania.</span><span class="sxs-lookup"><span data-stu-id="51ec3-146">In the **Period** field, select the period type to be used for the scheduling job.</span></span>
+
+3. <span data-ttu-id="51ec3-147">W polu **częstotliwość okresu** wstaw liczbę okresów, które mają zostać uwzględnione w zadaniu planowania.</span><span class="sxs-lookup"><span data-stu-id="51ec3-147">In the **Period frequency** field, insert the number of periods to be included in the scheduling job.</span></span> <span data-ttu-id="51ec3-148">Rozpoczęcie planowania to data bieżąca.</span><span class="sxs-lookup"><span data-stu-id="51ec3-148">The start of the scheduling is the current date.</span></span>
+
+4. <span data-ttu-id="51ec3-149">Wybierz wartość tak w polu przełącznik **automatyczne tworzenie**, jeśli zlecenie ma być automatycznie tworzone na podstawie serii czynności konserwacyjnych</span><span class="sxs-lookup"><span data-stu-id="51ec3-149">Select "Yes" on the **Auto create** toggle button if a work order should automatically be created on the basis of a maintenance round.</span></span>
+
+>[!NOTE]
+><span data-ttu-id="51ec3-150">Jeśli ten przycisk przełącznika ma wartość "tak", a przycisk przełącznika **automatyczne tworzenie** jest również zaznaczone jako "tak" w serii czynności konserwacyjnych w formularzu **Serie czynności konserwacyjnych**, to zlecenia są tworzone na podstawie wierszy serii czynności konserwacyjnych, a zostaną również utworzone wiersze harmonogramu konserwacji ze stanem „utworzone zlecenie pracy”.</span><span class="sxs-lookup"><span data-stu-id="51ec3-150">If this toggle button is set to "Yes", and the **Auto create** toggle button is also set to "Yes" on the maintenance round in **Maintenance rounds** form, work orders are created based on the maintenance round lines, and maintenance schedule lines with status "Work order created" are also created.</span></span> <span data-ttu-id="51ec3-151">Jeśli tylko jeden z opcji **automatycznego tworzenia** jest skonfigurowany jako „tak” w menu rozwijanym w **Serie czynności konserwacyjnych** są tworzone tylko wiersze harmonogramu konserwacji o stanie „utworzone”.</span><span class="sxs-lookup"><span data-stu-id="51ec3-151">If only one of the **Auto create** toggle buttons is set to "Yes", in this drop-down or in **Maintenance rounds**, only maintenance schedule lines are created with status "Created".</span></span> <span data-ttu-id="51ec3-152">W takim przypadku zlecenia pracy nie są tworzone.</span><span class="sxs-lookup"><span data-stu-id="51ec3-152">In that case, no work orders are created.</span></span>
+
+5. <span data-ttu-id="51ec3-153">W razie potrzeby można wybrać serir czynności konserwacyjnych lub inną datę rozpoczęcia zadania planowania.</span><span class="sxs-lookup"><span data-stu-id="51ec3-153">If required, you can select specific rounds or another start date for the schedule job.</span></span> <span data-ttu-id="51ec3-154">Kliknij **Filtruj** i dodaj serie czynności konserwacyjnych, które mają zostać uwzględnione.</span><span class="sxs-lookup"><span data-stu-id="51ec3-154">Click **Filter**, and add the rounds to be included.</span></span>
+
+6. <span data-ttu-id="51ec3-155">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-155">Click **OK**.</span></span>
+
+7. <span data-ttu-id="51ec3-156">Teraz widzisz serie czynności konserwacyjnych w **Zarządzanie składnikami majątku** > **Wspólne** > **harmonogram konserwacji** > **Wszystkie harmonogramy konserwacji** lub **Otwieranie wierszy harmonogramu konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-156">You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**.</span></span> <span data-ttu-id="51ec3-157">Jeśli zaplanowane seria czynności konserwacyjnych jest połączone z pulą zleceń roboczych, wiersze harmonogramu konserwacji można również wyświetlać w **Otwieranie puli harmonogramów konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-157">If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**.</span></span> <span data-ttu-id="51ec3-158">Wiersze harmonogramu konserwacji utworzone z serii mają typ odwołania „serie czynności konserwacyjnych”.</span><span class="sxs-lookup"><span data-stu-id="51ec3-158">Maintenance schedule lines created from a round have the reference type "Maintenance rounds".</span></span>
+
+<span data-ttu-id="51ec3-159">W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialogowym **Planowanie serii czynności konserwacyjnych** oraz wiersze harmonogramu konserwacji utworzone we **Wszystkich harmonogramach konserwacji** na podstawie tego zadania harmonogramu.</span><span class="sxs-lookup"><span data-stu-id="51ec3-159">The two illustrations below show a schedule job in the **Schedule maintenance rounds** dialog, and the maintenance schedule lines created in **All maintenance schedule** based on that schedule job.</span></span>
+
+![Rysunek 2](media/14-preventive-maintenance.png)
+
+![Rysunek 3](media/15-preventive-maintenance.png)
+
+- <span data-ttu-id="51ec3-162">Jeśli zlecenia produkcyjne są tworzone ręcznie na środkach, które zostały objęte gwarancją dostawcy, wyświetlane jest okno dialogowe, które użytkownik będzie wiedział o gwarancji.</span><span class="sxs-lookup"><span data-stu-id="51ec3-162">When work orders are manually created on assets that are covered by a vendor warranty, a dialog box is shown to make the user aware of the warranty.</span></span> <span data-ttu-id="51ec3-163">Utworzenie zlecenia produkcyjnego może zostać anulowane.</span><span class="sxs-lookup"><span data-stu-id="51ec3-163">The creation of the work order can then be canceled.</span></span> <span data-ttu-id="51ec3-164">Sprawdzanie relacji gwarancji jest pomijane dla automatycznie tworzonych zleceń produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="51ec3-164">The check for a warranty relation is omitted for work orders that are automatically created.</span></span>  
+- <span data-ttu-id="51ec3-165">Istnieje możliwość skonfigurowania zadania wsadowego w skróconej karcie **Uruchom w tle** w celu zaplanowania serii w regularnych odstępach czasu.</span><span class="sxs-lookup"><span data-stu-id="51ec3-165">You can set up a batch job on the **Run in the background** FastTab to schedule rounds at regular intervals.</span></span>  
+- <span data-ttu-id="51ec3-166">Jeśli seria jest uwzględniona w kilku pulach zleceń pracy (zapoznaj się z [Pule zleceń pracy](../work-orders/work-order-pools.md)), jest wyświetlany jeden rekord dla każdej puli w **Otwieranie puli harmonogramów konserwacji**.</span><span class="sxs-lookup"><span data-stu-id="51ec3-166">If a round is included in several work order pools (refer to [Work order pools](../work-orders/work-order-pools.md)), one record is shown for each pool in **Open maintenance schedule pools**.</span></span> <span data-ttu-id="51ec3-167">W ten sposób można zoptymalizować opcje filtrowania dla pul zleceń pracy.</span><span class="sxs-lookup"><span data-stu-id="51ec3-167">This is done to optimize the filtering options for work order pools.</span></span>
+
