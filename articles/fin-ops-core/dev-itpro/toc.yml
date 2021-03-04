@@ -14,12 +14,12 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update dla wersji 10.0.17 (kwiecień 2021)
+                  href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Aktualizacja Platform update dla wersji 10.0.16 (luty 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: Aktualizacja Platform update dla wersji 10.0.15 (styczeń 2021)
                   href: get-started/whats-new-platform-updates-10-0-15.md
-                - name: Aktualizacja Platform update w wersji 10.0.14 (listopad 2020)
-                  href: get-started/whats-new-platform-updates-10-0-14.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje Platform
@@ -122,9 +122,9 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Tworzenie rekordów przy użyciu szablonów rekordów
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Integracja danych przy użyciu Common Data Service
+                - name: Integracja danych przy użyciu Dataverse
                   items:
-                    - name: Omówienie integracji danych przy użyciu Common Data Service
+                    - name: Omówienie integracji danych przy użyciu Dataverse
                       href: data-entities/data-integration-cds.md
                     - name: Integracja o podwójnym zapisie
                       items:
@@ -192,11 +192,11 @@
                                   href: data-entities/dual-write/sites-warehouses-mapping.md
                             - name: Integracja firmy
                               items:
-                                - name: Pojęcie firmy w usługach Common Data Services
+                                - name: Pojęcie firmy w usługach Dataverse
                                   href: data-entities/dual-write/company-data.md
-                                - name: Inicjowanie z danymi firmy
+                                - name: Inicjowanie danych firmy
                                   href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Hierarchia organizacyjna w usłudze Common Data Service
+                            - name: Hierarchia organizacyjna w usłudze Dataverse
                               href: data-entities/dual-write/organization-mapping.md
                             - name: Dane finansowe i podatkowe
                               items:
@@ -206,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Zintegrowane dane główne podatków
                                   href: data-entities/dual-write/tax-mapping.md
+                            - name: Integrowanie zaopatrzenia w Supply Chain Management z Field Service
+                              href: data-entities/dual-write/scm-field-service-procurement.md
+                            - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Supply Chain Management
+                              href: data-entities/dual-write/pricing-engine.md
                             - name: Prospekt do gotówki w podwójnym zapisie
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Dynamics 365 Supply Chain Management
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
                               href: data-entities/dual-write/commerce-pricing.md
                             - name: Wewnętrzne składniki majątku do obsługi
@@ -220,23 +222,25 @@
                               href: data-entities/dual-write/inventory-availability.md
                         - name: Obsługa podwójnego zapisu
                           items:
-                            - name: Obsługa rozwiązań Field Service i rozwiązań Project Service Automation
+                            - name: Obsługa rozwiązań Field Service i Project Service Automation
                               href: data-entities/dual-write/field-service-project-service-automation.md
+                            - name: Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
+                              href: data-entities/dual-write/migrate-prospect-to-cash.md
                             - name: Rozwiązywanie problemów
                               items:
-                                - name: 'Sprawdź, czy w aplikacjach Finance and Operations i Common Data Service jest skonfigurowany tryb podwójnego zapisu'
+                                - name: Sprawdzenie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
                                   href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                                 - name: Rozwiązywanie problemów podczas konfiguracji początkowej
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                                 - name: Rozwiązywanie problemów podczas synchronizacji początkowej
                                   href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
+                                - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
                                   href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                                 - name: Rozwiązywanie problemów z synchronizacją na żywo
                                   href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                                 - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
                                   href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Rozwiązywanie problemów związanych z aktualizacjami aplikacji Finance and Operations
+                                - name: Rozwiązywanie problemów z aktualizacjami aplikacji Finance and Operations
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Rozwiązywanie ogólnych problemów
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
@@ -338,8 +342,12 @@
               items:
                 - name: Omówienie zadań importowania i eksportowania danych
                   href: data-entities/data-import-export-job.md
-                - name: Najlepsze rozwiązania w zakresie importowania załączników za pomocą jednostki Arkusz finansowy
+                - name: Synchronizowanie daty i godziny w zadaniach importu
+                  href: data-entities/data-synchronize-date-and-time.md
+                - name: Importowanie załączników za pomocą jednostki Arkusz finansowy
                   href: data-entities/tips-tricks-import-general-journal-entity.md
+                - name: Optymalizowanie migracji danych na potrzeby aplikacji Finance and Operations
+                  href: sysadmin/optimize-data-migration.md
             - name: Opracowywanie jednostek danych
               items:
                 - name: Zasady projektowania i najlepsze rozwiązania dotyczące jednostek danych
@@ -442,7 +450,9 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Pobieranie stanu działania operacji
                       href: database/api/v1/reference-get-status.md
-        - name: Dane demonstracyjne
+                    - name: Rozpoczynanie i zatrzymywanie środowisk
+                      href: database/api/v1/reference-start-stop-environments.md
+        - name: Demo data
           items:
             - name: Omówienie danych demonstracyjnych
               href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
@@ -808,60 +818,6 @@
                       href: dev-ref/xpp-string-run-time-functions.md
                 - name: Tabele systemowe
                   href: dev-ref/system-tables.md
-                - name: Klasy systemowe
-                  items:
-                    - name: Lista klas systemowych
-                      href: dev-ref/system-classes/toc.yml
-                    - name: Klasy systemowe pogrupowane alfabetycznie
-                      items:
-                        - name: Klasy — A
-                          href: dev-ref/a-classes.md
-                        - name: Klasy — B
-                          href: dev-ref/b-classes.md
-                        - name: Klasy — C
-                          href: dev-ref/c-classes.md
-                        - name: Klasy — D
-                          href: dev-ref/d-classes.md
-                        - name: Klasy — E
-                          href: dev-ref/e-classes.md
-                        - name: Klasy — F
-                          href: dev-ref/f-classes.md
-                        - name: Klasy — G
-                          href: dev-ref/g-classes.md
-                        - name: Klasy — H
-                          href: dev-ref/h-classes.md
-                        - name: Klasy — I
-                          href: dev-ref/i-classes.md
-                        - name: Klasy — J
-                          href: dev-ref/j-classes.md
-                        - name: Klasy — K
-                          href: dev-ref/k-classes.md
-                        - name: Klasy — L
-                          href: dev-ref/l-classes.md
-                        - name: Klasy — M
-                          href: dev-ref/m-classes.md
-                        - name: Klasy — N
-                          href: dev-ref/n-classes.md
-                        - name: Klasy — O
-                          href: dev-ref/o-classes.md
-                        - name: Klasy — P
-                          href: dev-ref/p-classes.md
-                        - name: Klasy — Q
-                          href: dev-ref/q-classes.md
-                        - name: Klasy — R
-                          href: dev-ref/r-classes.md
-                        - name: Klasy — S
-                          href: dev-ref/s-classes.md
-                        - name: Klasy — T
-                          href: dev-ref/t-classes.md
-                        - name: Klasy — U
-                          href: dev-ref/u-classes.md
-                        - name: Klasy — V
-                          href: dev-ref/v-classes.md
-                        - name: Klasy — W
-                          href: dev-ref/w-classes.md
-                        - name: Klasy — X
-                          href: dev-ref/x-classes.md
             - name: Możliwości rozszerzania
               items:
                 - name: Możliwości rozszerzania — strona główna
@@ -1008,7 +964,7 @@
                   href: perf-test/multi-user-testing-local-test-controller.md
                 - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK i usługi Azure DevOps
                   href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Przewodnik rozwiązywania problemów związanych z testowaniem przez jednego lub wielu użytkowników przy użyciu zestawu Performance SDK
+                - name: Przewodnik rozwiązywania problemów związanych z testowaniem za pomocą zestawu Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Zestaw Performance SDK i testowanie przez wielu użytkowników w środowiskach lokalnych
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1022,7 +978,7 @@
                   href: perf-test/testing-validation.md
                 - name: Projekty testowe w programie Visual Studio
                   href: perf-test/testing-support.md
-                - name: Wdrażanie środowisk obsługujących ciągłą kompilację i automatyzację testów
+                - name: Wdrażanie i wykorzystywanie środowisk obsługujących ciągłą kompilację i automatyzację testów
                   href: perf-test/continuous-build-test-automation.md
                 - name: Filtrowanie w środowisku SysTest przy użyciu atrybutów klas i metod
                   href: perf-test/systest-filtering.md
@@ -1172,11 +1128,13 @@
           items:
             - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
               href: power-platform/overview.md
+            - name: Omówienie dodatków
+              href: power-platform/add-ins-overview.md
             - name: Modelowanie jednostek
               href: power-platform/entity-modeling.md
             - name: Zarządzanie cyklem życia aplikacji
               href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations oraz odwołanie administracyjne Common Data Service
+            - name: Finance and Operations oraz odwołanie administracyjne Dataverse
               href: power-platform/admin-reference.md
             - name: Portale Power Apps z Finance and Operations
               href: power-platform/power-portal-reference.md
@@ -1420,8 +1378,8 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Przypadki testu pochodnego
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Korzystanie z samouczka narzędzia Regression Suite Automation Tool i innych funkcji
-              href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
+            - name: Samouczek narzędzia Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-tutorial.md
             - name: Najlepsze praktyki
               href: perf-test/rsat/rsat-best-practices.md
             - name: Testowanie diagnostyczne danych przy użyciu narzędzia Regression Suite Automation Tool
@@ -1467,7 +1425,7 @@
             - name: Uzyskiwanie pomocy technicznej dotyczącej aplikacji Finance and Operations i usług Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Omówienie pomocy technicznej usługi Dynamics 365
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
+              href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Finance and Operations obsługiwanego przez firmę 21Vianet w Chinach
               href: lifecycle-services/21vianet-support.md
             - name: Konfigurowanie pomocy technicznej dla aplikacji Finance and Operations
@@ -1506,6 +1464,8 @@
                   href: sysadmin/tasks/create-new-users.md
                 - name: Zarządzanie sesjami użytkownika
                   href: sysadmin/user-session-management.md
+                - name: Blokowanie dostępu według lokalizacji przy użyciu funkcji dostępu warunkowego rozwiązania Azure AD
+                  href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
                 - name: Zbiorowe importowanie użytkowników
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Konfigurowanie podziału obowiązków
@@ -1524,6 +1484,8 @@
                   href: sysadmin/create-simple-security-policy.md
             - name: Zachowanie zgodności z wymaganiami dotyczącymi licencji użytkowników
               href: sysadmin/stay-compliant-user-license-requirement.md
+            - name: Wyświetlanie stanu licencji niezależnego dostawcy oprogramowania
+              href: sysadmin/view-isv-license-status.md
             - name: Automatyzacja procesu
               href: sysadmin/process-automation.md
             - name: Przetwarzanie wsadowe
@@ -1542,17 +1504,15 @@
                   href: sysadmin/batch-active-period-dst.md
                 - name: Rola zabezpieczeń Menedżer partii
                   href: sysadmin/runby.md
-                - name: Zadanie wsadowe do obsługi defragmentacji indeksu SQL
-                  href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Konfigurowanie alertów dotyczących zadań wsadowych
                   href: sysadmin/alerts.md
                 - name: Rozszerzone formularze zadań wsadowych
                   href: sysadmin/enhanced-forms.md
                 - name: Czyszczenie historii zadań wsadowych
                   href: sysadmin/batch-history-cleanup.md
-                - name: Przerywanie wykonywania zadania wsadowego
+                - name: Anulowanie wykonywania zadania wsadowego
                   href: sysadmin/batch-abort.md
-            - name: Doradca optymalizacji
+            - name: Konsultant optymalizacji
               items:
                 - name: Omówienie Doradcy optymalizacji
                   href: sysadmin/optimization-advisor-overview.md

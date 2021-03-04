@@ -72,12 +72,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.17 (marzec 2021)
+                      href: get-started/whats-new-changed-10-0-17.md
                     - name: Rozwiązanie Finance w wersji 10.0.16 (luty 2021)
                       href: get-started/whats-new-changed-10-0-16.md
                     - name: Rozwiązanie Finance w wersji 10.0.15 (styczeń 2021)
                       href: get-started/whats-new-changed-10-0-15.md
-                    - name: Rozwiązanie Finance w wersji 10.0.14 (listopad 2020)
-                      href: get-started/whats-new-changed-10-0-14.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
@@ -175,7 +175,7 @@
                 - name: Architektura aplikacji Finance and Operations
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/finance/toc.json
+                  href: /dynamics365/fasttrack/index
                 - name: Przygotowanie do przeprowadzenia projektu implementacji
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: Planowanie środowiska
@@ -336,21 +336,13 @@
               href: accounts-receivable/payment-insights-overview.md
             - name: Profile księgowania odbiorców
               href: accounts-receivable/customer-posting-profiles.md
-            - name: Kopiuj odbiorców przy użyciu udostępnionych sekwencji identyfikatorów
+            - name: Kopiowanie odbiorców przy użyciu udostępnionych sekwencji numerów
               href: accounts-receivable/copy-customer.md
             - name: Przepływ pracy odbiorcy
               href: accounts-receivable/customer-workflow.md
-            - name: Omówienie rozpoznawania przychodu
-              href: accounts-receivable/revenue-recognition-overview.md
-            - name: Konfiguracja rozpoznawania przychodów
-              href: accounts-receivable/revenue-recognition-setup.md
-            - name: Rozpoznawanie odroczonego przychodu
-              href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
-            - name: Rozpoznawanie przychodów z zamówień sprzedaży
-              href: accounts-receivable/revenue-recognition-so-basics.md
             - name: Konfigurowanie i przetwarzanie faktur cyklicznych
               href: accounts-receivable/set-up-process-recurring-invoices.md
-            - name: Zasady podziału księgowań i wpisy w arkuszu księgi podrzędnej dla faktur niezależnych
+            - name: Zasady podziału księgowań i zapisy w arkuszu księgi podrzędnej dla faktur niezależnych
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Profile księgowania odbiorców
               href: accounts-receivable/customer-posting-profiles.md
@@ -384,10 +376,30 @@
               href: accounts-receivable/set-up-bills-exchange.md
             - name: Zamykanie rozrachunków z odbiorcami
               href: accounts-receivable/close-accounts-receivable.md
-            - name: Płatności i rozliczenia
+            - name: Rozpoznawanie przychodu
               items:
                 - name: Omówienie rozpoznawania przychodu
                   href: accounts-receivable/revenue-recognition-overview.md
+                - name: Konfiguracja rozpoznawania przychodów
+                  href: accounts-receivable/revenue-recognition-setup.md
+                - name: Rozpoznawanie odroczonego przychodu
+                  href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
+                - name: Rozpoznawanie przychodów z zamówień sprzedaży
+                  href: accounts-receivable/revenue-recognition-so-basics.md
+                - name: Pakiety rozpoznawania przychodów
+                  href: accounts-receivable/rev-rec-bundles.md
+                - name: Zmiana alokacji rozpoznawania przychodów
+                  href: accounts-receivable/rev-rec-reallocation.md
+                - name: Zmiana alokacji rozpoznawania przychodów — scenariusz 1
+                  href: accounts-receivable/rev-rec-reallocation-scenario-1.md
+                - name: Zmiana alokacji rozpoznawania przychodów — scenariusz 2
+                  href: accounts-receivable/rev-rec-reallocation-scenario-2.md
+                - name: Zmiana alokacji rozpoznawania przychodów — scenariusz 3
+                  href: accounts-receivable/rev-rec-reallocation-scenario-3.md
+                - name: Zmiana alokacji rozpoznawania przychodów — scenariusz 4
+                  href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+            - name: Płatności i rozliczenia
+              items:
                 - name: Omówienie płatności odbiorców
                   href: cash-bank-management/tasks/customer-payment-overview.md
                 - name: Scentralizowane płatności na potrzeby rozrachunków z odbiorcami
@@ -470,9 +482,13 @@
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Zarządzanie notatkami zaawansowanymi
               href: localizations/emea-ita-exil-structured-notes.md
+            - name: Odwołania do oryginalnych faktur w fakturach korygujących
+              href: accounts-receivable/original-invoice-numbers-credit-notes.md
+            - name: Chronologicznie numerowanie dokumentów i załączników
+              href: accounts-receivable/chrono-numbers.md
         - name: Budżetowanie
           items:
-            - name: Budżetowanie – strona główna
+            - name: Budżetowanie — strona główna
               href: budgeting/budgeting-overview.md
             - name: Omówienie planowania budżetu
               href: budgeting/budget-planning-overview-configuration.md
@@ -504,6 +520,8 @@
               href: cash-bank-management/cash-bank-management.md
             - name: Prognozowanie przepływów pieniężnych
               href: cash-bank-management/cash-flow-forecasting.md
+            - name: Rozwiązywanie problemów z ustawieniami prognozowania przepływów pieniężnych
+              href: cash-bank-management/cash-flow-forecasting-tsg.md
             - name: Obszar roboczy Zarządzanie bankami
               href: cash-bank-management/Bank-management-workspace.md
             - name: Bank — przeszacowanie w walucie obcej
@@ -848,10 +866,14 @@
                   href: asset-leasing/record-rou-asset-depreciation.md
                 - name: Odwrotnie księgowane transakcje wynajmu
                   href: asset-leasing/reverse-posted-lease-trans.md
+                - name: Konwencje wynajmu składnika majątku
+                  href: asset-leasing/asset-leasing-convention.md
                 - name: Korygowanie wynajmu
                   href: asset-leasing/adjust-lease.md
                 - name: Utrata wartości składnika majątku z prawem do użytkowania
                   href: asset-leasing/impair-rou-asset.md
+                - name: Proponowanie zakończenia wynajmu
+                  href: asset-leasing/lease-termination.md
                 - name: Kojarzenie wynajmu ze środkiem trwałym
                   href: asset-leasing/associate-lease-with-fixed-asset.md
                 - name: Rejestrowanie wynajmów w walutach obcych
@@ -920,6 +942,16 @@
                       href: general-ledger/consolidate-online.md
                     - name: Generowanie skonsolidowanych sprawozdań finansowych
                       href: general-ledger/generating-consolidated-financial-statements.md
+                    - name: Importowanie danych oddziałów z plików
+                      href: general-ledger/import-subsidiary-data-from-files.md
+                    - name: Eksportowanie danych oddziałów do pliku
+                      href: general-ledger/export-subsidiary-data-to-file.md
+                    - name: Konsolidacja z importem — format
+                      href: general-ledger/consolidate-with-import-format.md
+                    - name: Przygotowanie firmy do użycia w procesie konsolidacji
+                      href: general-ledger/prepare-company-for-consolidation.md
+                    - name: Konfigurowanie firmy zależnej do konsolidacji
+                      href: general-ledger/set-up-subsidiary-company-for-consolidation.md
                 - name: Tworzenie grup konsolidacji i dodatkowego konta konsolidacyjnego
                   href: general-ledger/tasks/create-consolidation-groups.md
                 - name: Typy kont głównych
@@ -1004,6 +1036,8 @@
                   href: general-ledger/import-currency-exchange-rates.md
                 - name: Pojedynczy załącznik
                   href: general-ledger/one-voucher.md
+                - name: Pojedynczy załącznik — często zadawane pytania
+                  href: general-ledger/one-voucher-faq.md
                 - name: Rozliczenia księgi
                   href: general-ledger/ledger-settlements.md
             - name: Zamknięcie na koniec okresu
@@ -1018,6 +1052,8 @@
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Zbiorowe zamykanie okresów obrachunkowych
                   href: general-ledger/tasks/mass-financial-period-close.md
+                - name: Działania na koniec roku — często zadawane pytania
+                  href: general-ledger/faq-year-end-activities.md
             - name: Podatek
               items:
                 - name: Omówienie podatku
@@ -1054,14 +1090,28 @@
                   href: general-ledger/dual-currency-for-tax.md
                 - name: Specyfikacja podatku według raportu transakcji księgi
                   href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: Konfigurowanie okresów rozliczania podatku
+                - name: Ustawianie okresów rozliczania podatku
                   href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Konfigurowanie potrąconych zaliczek na podatek
-                  href: general-ledger/tasks/set-up-withholding-tax.md
                 - name: Wyświetlanie zaksięgowanych transakcji podatkowych
                   href: general-ledger/tasks/view-posted-sales-tax-transactions.md
                 - name: Drukowanie raportu Płatności podatku według kodu
                   href: general-ledger/print-sales-tax-payment-by-code-report.md
+            - name: Potrącona zaliczka na podatek
+              items:
+                - name: Konfigurowanie potrąconych zaliczek na podatek
+                  href: general-ledger/tasks/set-up-withholding-tax.md
+                - name: Globalna potrącona zaliczka na podatek
+                  items:
+                    - name: Omówienie globalnych potrąconych zaliczek na podatek
+                      href: general-ledger/global-withholding-tax-overview.md
+                    - name: Konfigurowanie globalnych potrąconych zaliczek na podatek
+                      href: general-ledger/set-up-global-withholding-tax.md
+                    - name: Potrącona zaliczka na podatek w transakcjach zakupu
+                      href: general-ledger/withholding-tax-in-purchase-transactions.md
+                    - name: Potrącona zaliczka na podatek w transakcjach sprzedaży
+                      href: general-ledger/withholding-tax-in-sales-transactions.md
+                    - name: Tworzenie płatności potrąconej zaliczki na podatek
+                      href: general-ledger/create-a-withholding-tax-payment.md
             - name: Pulpit inspekcji
               items:
                 - name: Reguły audytu
@@ -1070,6 +1120,52 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definiowanie zasad audytu dla dokumentów źródłowych
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+        - name: Raportowanie finansowe
+          items:
+            - name: Rozpoczynanie pracy z raportowaniem finansowym
+              href: general-ledger/financial-reporting-getting-started.md
+            - name: Omówienie raportowania finansowego
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
+            - name: Składniki raportu finansowego
+              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+            - name: Możliwości waluty w ramach raportowania finansowego
+              href: general-ledger/financial-reporting-currency-capability.md
+            - name: Raporty finansowe bilansu
+              href: general-ledger/balance-sheet-financial-reports.md
+            - name: Generowanie raportów finansowych
+              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
+            - name: Raport finansowy zestawienia dochodów
+              href: general-ledger/income-statement-financial-report.md
+            - name: Raporty finansowe bilansu próbnego
+              href: general-ledger/trial-balance-financial-reports.md
+            - name: Wyświetlanie raportów finansowych
+              href: general-ledger/view-financial-reports.md
+            - name: Interfejs Projektanta raportów
+              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
+            - name: Skróty klawiaturowe dla raportów finansowych
+              href: general-ledger/financial-reporting-keyboard-shortcuts.md
+            - name: Preferencje użytkownika w projektancie raportów finansowych
+              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
+            - name: Zaawansowane opcje formatowania
+              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Organizowanie składników raportu w projektancie raportów
+              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
+            - name: Definicje raportów
+              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
+            - name: Definicje wierszy
+              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Definicje kolumny
+              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
+            - name: Definicje drzewa raportowania w raportach finansowych
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+            - name: Modyfikowanie komórek definicji wiersza
+              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Resetowanie składnicy danych raportowania finansowego
+              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
+            - name: Kiedy zresetować składnicę danych
+              href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
+            - name: Raportowanie finansowe — często zadawane pytania
+              href: general-ledger/financial-reporting-faq.md
         - name: Szczegółowe dane finansowe
           items:
             - name: Szczegółowe dane finansowe — strona główna
@@ -1306,48 +1402,6 @@
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
             - name: Obliczanie kanadyjskiego ujednoliconego podatku od sprzedaży
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
-        - name: Raportowanie finansowe
-          items:
-            - name: Rozpoczynanie pracy z raportowaniem finansowym
-              href: general-ledger/financial-reporting-getting-started.md
-            - name: Omówienie raportowania finansowego
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
-            - name: Składniki raportu finansowego
-              href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
-            - name: Możliwości waluty w ramach raportowania finansowego
-              href: general-ledger/financial-reporting-currency-capability.md
-            - name: Raporty finansowe bilansu
-              href: general-ledger/balance-sheet-financial-reports.md
-            - name: Generowanie raportów finansowych
-              href: ../fin-ops-core/dev-itpro/analytics/generate-financial-report.md?toc=/dynamics365/finance/toc.json
-            - name: Raport finansowy zestawienia dochodów
-              href: general-ledger/income-statement-financial-report.md
-            - name: Raporty finansowe bilansu próbnego
-              href: general-ledger/trial-balance-financial-reports.md
-            - name: Wyświetlanie raportów finansowych
-              href: general-ledger/view-financial-reports.md
-            - name: Interfejs Projektanta raportów
-              href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-            - name: Skróty klawiaturowe dla raportów finansowych
-              href: general-ledger/financial-reporting-keyboard-shortcuts.md
-            - name: Preferencje użytkownika w projektancie raportów finansowych
-              href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
-            - name: Zaawansowane opcje formatowania
-              href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Organizowanie składników raportu w projektancie raportów
-              href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
-            - name: Definicje raportów
-              href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
-            - name: Definicje wierszy
-              href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Definicje kolumny
-              href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Definicje drzewa raportowania w raportach finansowych
-              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
-            - name: Modyfikowanie komórek definicji wiersza
-              href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Resetowanie składnicy danych raportowania finansowego
-              href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
         - name: Globalizacja
           items:
             - name: Zasoby globalizacji
@@ -1358,18 +1412,30 @@
               items:
                 - name: Omówienie dodatku do fakturowania elektronicznego
                   href: localizations/e-invoicing-service-overview.md
-                - name: Utwórz konto magazynu usług Azure i Key Vault
+                - name: Składniki administracyjne dodatku do fakturowania elektronicznego
+                  href: localizations/e-invoicing-service-administration.md
+                - name: Konfigurowanie dodatku do fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
+                  href: localizations/e-invoicing-configuration-rcs.md
+                - name: Wystawianie faktur elektronicznych w rozwiązaniach Finance i Supply Chain Management
+                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                - name: Tworzenie konta magazynu usług Azure i Key Vault
                   href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego
-                  href: localizations/e-invoicing-get-started.md
-                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Brazylii
-                  href: localizations/e-invoicing-bra-get-started.md
-                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Włoch
-                  href: localizations/e-invoicing-ita-get-started.md
-                - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Meksyku
-                  href: localizations/e-invoicing-mex-get-started.md
-                - name: Ustawianie dodatku do fakturowania elektronicznego
-                  href: localizations/e-invoicing-setup.md
+                - name: Rozpocznij
+                  items:
+                    - name: Rozpoczynanie pracy z dodatkiem do fakturowania elektronicznego — administrowanie usługami
+                      href: localizations/e-invoicing-get-started-service-administration.md
+                    - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego
+                      href: localizations/e-invoicing-get-started.md
+                    - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Brazylii
+                      href: localizations/e-invoicing-bra-get-started.md
+                    - name: Faktury elektroniczne odbiorcy w Egipcie
+                      href: localizations/emea-egy-e-invoices.md
+                    - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Włoch
+                      href: localizations/e-invoicing-ita-get-started.md
+                    - name: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Meksyku
+                      href: localizations/e-invoicing-mex-get-started.md
+                    - name: Ustawianie dodatku do fakturowania elektronicznego
+                      href: localizations/e-invoicing-setup.md
             - name: Australia
               items:
                 - name: Australia — omówienie
@@ -1710,6 +1776,14 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Konfigurowanie formatu dokumentu płatności
                   href: localizations/tasks/set-up-payment-slip-format.md
+            - name: Egipt
+              items:
+                - name: Egipt — omówienie
+                  href: localizations/egypt.md
+                - name: Konfiguracja numerów rejestracyjnych w Egipcie
+                  href: localizations/emea-egy-reg-numbers.md
+                - name: Konfiguracja układu faktury dla Egiptu
+                  href: localizations/emea-egy-invoice-layout.md
             - name: Estonia
               items:
                 - name: Estonia — omówienie
@@ -1800,6 +1874,8 @@
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
                 - name: Wspomagane normy dla elektronicznego fakturowania
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
+                - name: Wymuszone generowanie faktur elektronicznych
+                  href: localizations/emea-eur-forced-einvoices.md
                 - name: Odwołanie do oryginalnej faktury (Europa Wschodnia)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
                 - name: Wyszukiwanie osób za pomocą identyfikatora VAT
@@ -1968,6 +2044,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: System fakturowania online
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Raporty podatków dla Węgier
+                  href: localizations/emea-hun-sales-tax-reports.md
                 - name: Odroczone obliczenia podatku
                   href: localizations/emea-hun-deferred-vat.md
             - name: Islandia
@@ -2224,6 +2302,8 @@
                   href: localizations/italy.md
                 - name: Szczegóły sprawozdań VAT
                   href: localizations/emea-ita-vat-statements-details.md
+                - name: Kwartalne raporty komunikacji dotyczące podatku VAT
+                  href: localizations/emea-ita-quarterly-vat-communication.md
                 - name: Raport czarnej listy
                   href: localizations/emea-ita-black-list-report.md
                 - name: Data uzyskania kwalifikacji
@@ -2278,6 +2358,10 @@
                   href: localizations/emea-ita-e-invoices.md
                 - name: Roczne sprawozdanie podatkowe
                   href: localizations/emea-ita-yearly-tax-communication.md
+                - name: Możliwość śledzenia płatności
+                  href: localizations/emea-ita-payment-traceability.md
+                - name: Kontrola zunifikowanej daty księgowania
+                  href: localizations/emea-ita-post-date-control.md
             - name: Japonia
               items:
                 - name: Japonia — omówienie
@@ -2826,6 +2910,10 @@
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Rejestry podatku od składników aktywów
                       href: localizations/rus-assets-tax-registers.md
+                    - name: Rejestr podatków odroczonych
+                      href: localizations/rus-deferred-expenses-register.md
+                    - name: Rejestry podatku — przepływy pieniężne
+                      href: localizations/rus-cash-flow-tax-registers.md
             - name: Arabia Saudyjska
               items:
                 - name: Arabia Saudyjska — omówienie
@@ -2906,6 +2994,10 @@
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Niezrealizowany podatek VAT
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Wymiary oddziału podatkowego
+                  href: localizations/apac-tha-tax-branch-dimensions.md
+                - name: Raport dotyczący należnego podatku VAT
+                  href: localizations/apac-tha-sales-vat-report.md
                 - name: Potrącona zaliczka na podatek
                   href: localizations/apac-tha-withholding-tax.md
             - name: Zjednoczone Emiraty Arabskie (ZEA)
@@ -2991,7 +3083,7 @@
                 - name: Opracowywanie planu sukcesji
                   href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
                 - name: Wprowadzanie kart czasu pracy projektu
-                  href: ../human-resources/hr-personnel-enter-project-timesheets.md?toc=/dynamics365/finance/toc.json
+                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
                 - name: Projekty zatrudnienia grupowego
                   href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
                 - name: Tworzenie projektu zatrudnienia grupowego
@@ -3307,6 +3399,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
                 - name: Funkcje
                   items:
+                    - name: Kontener
+                      items:
+                        - name: Funkcje kontenera
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/finance/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
                     - name: Data i godzina
                       items:
                         - name: Funkcje daty i godziny
@@ -3529,6 +3627,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
                         - name: 'Typ: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Kontener: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/finance/toc.json
                         - name: 'Data i godzina: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
                         - name: 'Data i godzina: DateToDateTime'
@@ -3570,7 +3670,11 @@
                         - name: Uruchamianie formatów projektu umożliwiających dynamiczne dodawanie kolumn do raportów programu Excel
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
                 - name: Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: Projektowanie nowej konfiguracji modułu Raportowanie elektroniczne w celu generowania raportów w formacie programu Word
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/finance/toc.json
+                    - name: Ponowne użycie konfiguracji modułu Raportowanie elektroniczne z szablonami programu Excel do generowania raportów w formacie programu Word
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Projektowanie konfiguracji w celu wypełniania szablonów w formacie PDF
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
                 - name: Osadzanie obrazów i kształtów
@@ -3587,6 +3691,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
+                - name: Pominięcie znaków BOM w wygenerowanych plikach
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json
             - name: Aktualizowanie danych aplikacji przy użyciu modułu Raportowanie elektroniczne
               items:
                 - name: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji
@@ -3646,7 +3752,7 @@
                         - name: Importowanie konfiguracji z GR
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Importowanie zaktualizowanych wersji konfiguracji raportowania elektronicznego
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Rozszerzone filtrowanie w celu znalezienia konfiguracji w GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Przesyłanie konfiguracji do GR
@@ -3710,38 +3816,40 @@
                         - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
                     - name: Debugowanie źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Generowanie obrazów kodów kreskowych przy użyciu opcji KOD KRESKOWY
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie mapowania modeli
                   items:
                     - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
-                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: Zarządzanie kilkoma mapowaniami pochodnymi dla pojedynczego elementu głównego modelu
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie formatów
                   items:
                     - name: Wybieranie definicji modeli podczas tworzenia formatów
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
                     - name: Konfiguracja formatów raportowania elektronicznego do używania parametrów określonych dla firmy
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/finance/toc.json
                     - name: Konfiguracja parametrów formatu raportowania elektronicznego dla firmy
-                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/finance/toc.json
                     - name: Odraczanie wykonania elementów formatu raportowania elektronicznego
                       items:
                         - name: Odraczanie wykonania elementu sekwencji
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/finance/toc.json
                         - name: Odraczanie wykonania elementu XML
-                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/finance/toc.json
                     - name: Projektowanie raportów wielojęzycznych
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Kompresowanie dużych dokumentów wychodzących
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Sprawdzanie skonfigurowanych składników modułu Raportowanie elektroniczne
-                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Ścieżka względna w powiązaniach danych
-                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
-            - name: Używanie rozwiązań modułu Raportowanie elektroniczne w aplikacji Finance and Operations
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+            - name: Używanie rozwiązań modułu Raportowanie elektroniczne w rozwiązaniu Finance
               items:
                 - name: Konfigurowanie struktury
                   items:
@@ -3775,6 +3883,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
                     - name: Konfigurowanie miejsc docelowych
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurowanie miejsc docelowych zależnych od akcji
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
                 - name: Ustawianie odwołania do formatu raportowania elektronicznego
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
@@ -3815,6 +3925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
                     - name: Aktualizacja Application Update 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Aktualizacja Application Update 10.0.17
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji

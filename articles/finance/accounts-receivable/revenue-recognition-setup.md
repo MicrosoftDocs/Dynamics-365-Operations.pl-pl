@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b90c98628fef2006addb64a6b880ab4020edb8cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459707"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995573"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -30,6 +29,8 @@ Dodano nowy moduł **Rozpoznawanie przychodów** obejmujący elementy menu dla w
 
 > [!NOTE]
 > Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
+
+> Funkcje rozpoznawania przychodów, w tym funkcja pakietu, nie są obsługiwane w kanałach Commerce (handel elektroniczny, punkt sprzedaży, biuro obsługi). Towary skonfigurowane pod kątem rozpoznawania przychodu nie powinny być dodawane do zamówień ani transakcji tworzonych w kanałach Commerce.
 
 Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
 
