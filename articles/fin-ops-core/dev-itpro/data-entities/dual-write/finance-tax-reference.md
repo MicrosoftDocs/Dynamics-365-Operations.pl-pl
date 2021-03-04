@@ -37,3 +37,6 @@ Dane finansowe i podatkowe są integrowane przy użyciu następujących mapowań
 
 + [Zintegrowana księga](ledger-mapping.md)
 + [Zintegrowane dane główne podatków](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

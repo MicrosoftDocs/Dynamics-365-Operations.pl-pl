@@ -126,3 +126,6 @@ Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

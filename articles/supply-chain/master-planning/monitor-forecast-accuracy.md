@@ -50,3 +50,6 @@ Supply Chain Management oblicza następujące typy dokładności prognoz:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

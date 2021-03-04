@@ -63,3 +63,6 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Podaj listę transakcji urlopów i nieobecności dla zasobów Ludzkich
 
 Śledzenie czasu wolnego pracowników i monitorowanie, jak czas wolny jest obliczany nie tylko pomaga działowi HR w odpowiadaniu na pytania pracowników, ale także zapewnia odpowiednie wynagrodzenie za czas wolny. Zasoby ludzkie mają teraz nowy widok transakcji (dotacje, naliczenia, korekty i żądania) aby zobaczyć, co kryje się za saldami czasu wolnego.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

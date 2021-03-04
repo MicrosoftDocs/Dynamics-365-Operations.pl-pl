@@ -309,3 +309,6 @@ Aby dowiedzieć się, jak wyszukać format ER **Format, aby uzyskać informacje 
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Umożliwia konfigurowanie parametrów formatu ER dla firmy](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

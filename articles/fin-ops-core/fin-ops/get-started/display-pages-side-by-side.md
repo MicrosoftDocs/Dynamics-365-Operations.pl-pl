@@ -48,3 +48,6 @@ Przed rozpoczęciem korzystania z funkcji **Otwórz w nowym oknie** należy tak 
 Funkcja **Otwórz w nowym oknie** jest dostępna tylko, gdy więcej niż jedna strona jest otwarta w oknie. Ponadto wyskakujące okienko zostanie automatycznie zamknięte, gdy nie ma więcej otwartych stron (tj. gdy ostatnia strona w tym oknie zostanie zamknięta). System zamyka również otwarte strony po przejściu do innego obszaru w aplikacji. W związku z tym jeśli masz otwarte wyskakujące okienko i przejdziesz do innego obszaru w aplikacji, wyskakujące okienka są automatycznie zamknięte, ponieważ strony w tych oknach zostały zamknięte przez system.
 
 Górny pasek w wyskakujących okienkach wyświetlają informację o firmie, w której strona została otwarta, i jest tylko do odczytu. Wyskakujące okienko bazuje również na głównym oknie przeglądarki. W przypadku zamknięcia lub odświeżana okna głównego, wszystkie wyskakujące okienka stają się tylko do odczytu. Jeśli tak się stanie, nadal można wyświetlić informacje w tych oknach, ale dane nie są interaktywne.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Firma A obsługuje rekordy finansowe dla kilku małych firm. Jednym z klientów 
 
 [Tworzenie przedmiotów serwisu](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

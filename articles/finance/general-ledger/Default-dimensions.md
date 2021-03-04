@@ -127,3 +127,6 @@ Niektóre z poniższych zasobów odnoszą się do starszej wersji naszego oprogr
 [Ustawienia domyślne wymiarów w zasadach podziałów księgowań](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Ustawienia domyślne wymiarów w strukturze wymiarów](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

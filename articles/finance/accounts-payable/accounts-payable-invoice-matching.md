@@ -194,3 +194,6 @@ Aby uzyskać więcej informacji, zobacz [Trzyelementowe zasady uzgadniania](thre
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

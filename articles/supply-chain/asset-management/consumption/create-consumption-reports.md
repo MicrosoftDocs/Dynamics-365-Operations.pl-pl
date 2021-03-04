@@ -78,3 +78,6 @@ Po zaksięgowaniu zużycia w zleceniach pracy można wydrukować raport dotyczą
 >[!NOTE]
 >Można również wygenerować [raport zlecenia pracy](../work-orders/work-order-report.md) zawierający więcej szczegółów zlecenia.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

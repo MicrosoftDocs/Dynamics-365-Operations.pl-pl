@@ -243,3 +243,6 @@ Aby pobrać zarchiwizowaną historię wykonania, przejdź do obszaru roboczego z
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Aby uzyskać więcej informacji, zobacz [Stawki podatku na podstawie pól Podsta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Naucz się wyszukiwać dostawców na podstawie określonych kryteriów. W tym pr
 6. W polu Kraj/region wpisz wartość.
 7. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

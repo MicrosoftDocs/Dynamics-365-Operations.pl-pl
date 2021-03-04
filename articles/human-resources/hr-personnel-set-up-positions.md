@@ -67,3 +67,6 @@ Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozy
 30. W polu Dział wprowadź lub wybierz wartość.
 31. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

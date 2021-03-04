@@ -118,3 +118,6 @@ Wybierz typ wiersza **Dostawca**, jeśli w procesie produkcji występuje podwyko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

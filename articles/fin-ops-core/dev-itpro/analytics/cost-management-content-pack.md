@@ -207,3 +207,6 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Firmy                                          | Nazwy firm                              |
 | Kalendarze obrachunkowe                                        | Kalendarz obrachunkowy, Rok, Kwartał, Okres, Miesiąc   |
 | Witryna                                                    | Identyfikator, Nazwa, Adres, Województwo, Kraj               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

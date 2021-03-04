@@ -72,3 +72,6 @@ Aby uzyskać szczegółowe informacje na temat dodawania modułu menu nawigacji 
 [Zgodność z plikami cookie](cookie-compliance.md)
 
 [Moduł nagłówka](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

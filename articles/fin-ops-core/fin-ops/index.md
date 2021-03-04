@@ -145,3 +145,6 @@ Wiele z tych informacji dotyczy również produktów pokrewnych: Dynamics 365 Co
 
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

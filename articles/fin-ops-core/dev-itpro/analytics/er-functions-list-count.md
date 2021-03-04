@@ -55,3 +55,6 @@ Funkcja `COUNT (SPLIT("abcd" , 3))` zwraca wartość **2**, ponieważ funkcja `S
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

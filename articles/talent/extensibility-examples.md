@@ -79,3 +79,6 @@ Aby pobrać **Aplikację Poleceń**, przejdź do [Dynamics 365 Talent do rozwią
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migracja aplikacji między dzierżawcami i środowiskami](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

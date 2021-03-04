@@ -93,3 +93,6 @@ Zafakturowane zamówienia zakupu zarejestrują zobowiązanie na koncie dostawcy 
 ## <a name="vendor-performance"></a>Wydajność dostawcy
 
 Wydajność i przegląd zakupów obsługują *raporty zaopatrzenia i rozrachunków z dostawcami,* które obejmują analizy wydatków i analizy wydajności dostawców.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

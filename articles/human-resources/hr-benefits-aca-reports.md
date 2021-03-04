@@ -68,3 +68,6 @@ Można wyeksportować wygenerowaną listę pracowników, używając dowolnej opc
 Jeśli musisz zgłosić osoby objęte świadczeniem, ponieważ jako pracodawca oferujesz dodatkowe świadczenia finansowane przez siebie, możesz także wyświetlić wszystkie osoby na utrzymaniu objęte takimi planami świadczeń oznaczone jako **Podlega zgłoszeniu na mocy ACA**, klikając akcję Wyświetl świadczenie dla osoby na utrzymaniu na pasku w okienku akcji.
 
 **Uwaga:** W oknie zapytania będą wyświetlane tylko świadczenia, których plan został oznaczony jako **Podlega zgłoszeniu na mocy ACA**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

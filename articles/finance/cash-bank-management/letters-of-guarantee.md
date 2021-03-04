@@ -65,3 +65,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 [Konfigurowanie instrumentów bankowych i profilów księgowania dla poręczeń](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

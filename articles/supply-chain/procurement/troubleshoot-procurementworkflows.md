@@ -80,3 +80,6 @@ Po anulowaniu zamówień zakupu, które były w stanie *Potwierdzone*, anulowane
 
 Ten problem występuje tylko w przypadku zamówień zakupu, które podlegają zarządzaniu zmianami. Dzieje się tak, ponieważ anulowanie jest uznawane za zmianę, która musi zostać zatwierdzona. Zatwierdzenie może być wykonane automatycznie przez system. Dlatego procesowi jest przesłanie anulowanego zamówienia zakupu do przepływu pracy zatwierdzania, aby można było przejść do stanu *Zatwierdzone*. W tym momencie zamówienie zakupu nie będzie już wyświetlane na liście wersji roboczych zamówień zakupu w obszarze roboczym **Przygotowywania zamówienia zakupu**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

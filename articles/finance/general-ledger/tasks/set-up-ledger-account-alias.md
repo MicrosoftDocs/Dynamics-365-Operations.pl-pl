@@ -41,3 +41,6 @@ W tej procedurze pokazano, jak utworzyć alias konta, który zawiera skrót do w
 9. W polu Początkowy fokus wybierz wymiar, który otrzyma fokus, jeśli jest używany alias.
     * Po wpisaniu skrótu oraz wypełnieniu pól danych konta i wymiarów kursor znajdzie się w polu Początkowy fokus.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

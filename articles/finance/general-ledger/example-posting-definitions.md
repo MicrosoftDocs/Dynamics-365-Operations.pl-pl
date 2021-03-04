@@ -128,3 +128,6 @@ W tym przykładzie dowolne konto będące częścią Struktury konta — zyski i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

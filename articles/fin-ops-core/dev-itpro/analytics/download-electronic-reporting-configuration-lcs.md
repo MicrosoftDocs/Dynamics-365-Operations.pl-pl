@@ -76,3 +76,6 @@ W tym temacie wyjaśniono, jak pobrać najnowszą wersję [konfiguracji modułu 
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
 [Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

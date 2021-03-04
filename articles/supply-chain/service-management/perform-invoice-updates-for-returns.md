@@ -57,3 +57,6 @@ W przypadku skonfigurowania wsadowego przetwarzania aktualizacji faktur zamówie
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Nie można zwolnić częściowo wysłanego ładunku do magazynu. Po wydaniu do m
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 [KB problem 470069](https://fix.lcs.dynamics.com/Issue/Details?kb=4574490&bugId=470069&dbType=3&qc=84ce1e09d7032d8b8ef86f5a0c68b86badf3dfaf29686c5ebbe97c53c0957b5f) („Częściowo wysłane ładunki można ponownie pogrupować w grupy czynności i ponownie przetworzyć”) został naprawiony w [wydaniu 10.0.15](../get-started/whats-new-scm-10-0-15.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

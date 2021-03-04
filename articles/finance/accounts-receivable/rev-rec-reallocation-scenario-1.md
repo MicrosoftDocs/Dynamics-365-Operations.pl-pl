@@ -58,3 +58,6 @@ Aby zakończyć proces zmiany alokacji, wybierz opcję **Przetwarzanie**. Nawet 
 > Aby dostarczyć kontekst, w jakim są wyświetlane dodatkowe towary, można dodać do siatki inne kolumny, takie jak **Identyfikator zmiany alokacji** i **Zamówienie sprzedaży**.
 > 
 > [![Dodatkowe kolumny na stronie Alokacje ceny przychodu](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

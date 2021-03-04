@@ -42,3 +42,6 @@ W polu **Grupa umów serwisowych** strony **Parametry modułu Zarządzanie serwi
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Tworzenie grup umów serwisowych](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

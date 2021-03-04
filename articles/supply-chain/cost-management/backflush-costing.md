@@ -126,3 +126,6 @@ Należy okresowo uruchamiać wycenę wsteczną, aby wyceniać wartość PWT i ge
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

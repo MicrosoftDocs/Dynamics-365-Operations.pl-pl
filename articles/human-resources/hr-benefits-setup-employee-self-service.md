@@ -72,3 +72,6 @@ W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafe
    | **Zakończenie** | Data i godzina, do kiedy kafelek powinien być dostępny. |
 
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

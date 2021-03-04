@@ -114,3 +114,6 @@ Aby dezaktywować plik zastępowania CSS w witrynie, wykonaj następujące kroki
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -103,3 +103,6 @@ Jeśli dostawcy używają interfejsu współpracy z dostawcami, mogą w nim moni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

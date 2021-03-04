@@ -97,3 +97,6 @@ W tej procedurze pokazano sposób konfigurowania danych głównych stawki. Zwykl
     * Określ kod pocztowy źródła dostawy, dla którego ma obowiązywać to przypisanie podstawy stawki.
 10. W polu **Kraj/region odbioru** wpisz „Stany Zjednoczone”.
 11. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

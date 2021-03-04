@@ -67,3 +67,6 @@ Funkcja `FA_SUM ("COMP-000001", "Current", Date1, Date2)` zwraca kontener danych
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

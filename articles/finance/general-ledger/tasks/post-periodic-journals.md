@@ -58,3 +58,6 @@ Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, te
 27. W polu **Numer arkusza okresowego** wprowadź lub wybierz wartość.
 28. Na liście kliknij łącze w wybranym wierszu.
 29. Kliknij przycisk **OK**. Arkusz okresowy może teraz zostać przejrzany, zatwierdzony lub zaksięgowany, w zależności od wymagań i konfiguracji.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Aby uzyskać więcej informacji, zobacz [Metody i konwencje amortyzacji](depreci
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

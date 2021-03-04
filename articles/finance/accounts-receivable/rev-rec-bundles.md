@@ -110,3 +110,6 @@ Arkusz faktur utworzony po zaksięgowaniu nie zawiera towaru nadrzędnego z paki
 Należy pamiętać, że arkusz faktur nie zawiera towaru nadrzędnego z pakietu, ponieważ wszelkie procesy realizowane po zaksięgowaniu faktury są oparte na tym arkuszu faktur. Jeśli na przykład na karcie **Sprzedaż** w okienku akcji zostanie utworzona faktura korygująca, to będzie ona obejmować towary składowe, a nie towar nadrzędny.
 
 [![Faktura korygująca zawierająca towary składowe, a nie towar nadrzędny](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Konfiguracja planowania wykonania, która jest związana z zleceniami pracy, mo�
 6. Wybierz opcję **Zapisz**.
 
 ![Zaplanowane wykonanie](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

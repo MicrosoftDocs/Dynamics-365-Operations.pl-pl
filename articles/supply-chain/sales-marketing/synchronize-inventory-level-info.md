@@ -91,3 +91,6 @@ Można zastosować filtry za pomocą funkcji Zaawansowane zapytanie i filtrowani
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Zapasy produkt (z rozwiązania Supply Chain Management do rozwiązania Field Service): Zapasy produktu
 
 [![Mapowanie szablonu w integracji danych](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Funkcja `DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))` zwraca wartość **
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje daty i godziny](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -180,3 +180,6 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 
 [Wybieranie technologii integracji danych](hr-admin-integration-choose-technology.md)</br>
 [Konfiguruj integrację z programem Common Data Service](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

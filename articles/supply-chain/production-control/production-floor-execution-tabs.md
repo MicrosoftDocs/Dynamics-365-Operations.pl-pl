@@ -79,3 +79,6 @@ Po zaprojektowaniu wszystkich potrzebnych kart można je skojarzyć z konfigurac
 1. W razie potrzeby dodaj kolejne karty.
 
 1. Przyciski **Przenieś w górę** i **Przenieś w dół** na pasku narzędzi służą do rozmieszczania kart według potrzeb. Zakładki będą wyświetlane od lewej do prawej w kolejności pokazanej na powyższym zrzucie ekranu (zakładka u góry jest pokazana po lewej stronie).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,5 @@ Po utworzeniu planu urlopów i nieobecności w programie Dynamics 365 Human Reso
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Tworzenie planu urlopów i nieobecności](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

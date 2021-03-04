@@ -47,3 +47,6 @@ Ta procedura pokazuje, jak skonfigurować i zaplanować termin dokowania dla ła
 6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

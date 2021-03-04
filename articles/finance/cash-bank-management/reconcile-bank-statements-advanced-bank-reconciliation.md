@@ -96,3 +96,6 @@ Transakcje na wyciągu bankowym, które w arkuszu uzgadniania zostały oznaczone
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

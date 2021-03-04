@@ -44,3 +44,6 @@ Ta procedura skupia się na tworzeniu duplikatu istniejącej reguły Kanban. Jes
 3. Kliknij przycisk OK.
     * Należy zwrócić uwagę, że został utworzony duplikat reguły Kanban 000017.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

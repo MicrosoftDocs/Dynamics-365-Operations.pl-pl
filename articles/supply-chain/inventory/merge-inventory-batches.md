@@ -140,3 +140,6 @@ Arkusz magazynowy scalenia partii można zatwierdzić ze strony listy **Wszystki
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Dlaczego po scaleniu towaru w ilości efektywnej nie widać w arkuszu magazynowym informacji dotyczących ilości efektywnej?
 Można scalać partie towarów w ilości efektywnej tak samo, jak inne towary. Jednakże informacje o ilości efektywnej nie są wyświetlane w arkuszu magazynowym. Zaleca się sprawdzenie informacji o ilości efektywnej przed przeniesieniem scalenia partii do arkusza magazynowego.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

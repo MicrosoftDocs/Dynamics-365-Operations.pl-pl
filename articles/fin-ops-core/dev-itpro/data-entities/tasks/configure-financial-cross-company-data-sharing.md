@@ -59,3 +59,6 @@ Ten przewodnik po zadaniach wymaga platformy Dynamics AX w wersji 7.1 lub nowsze
 27. Odśwież stronę.
 28. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

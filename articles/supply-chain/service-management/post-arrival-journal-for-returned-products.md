@@ -58,3 +58,6 @@ Po zaksięgowaniu arkusza zwrócone towary są rejestrowane w zapasach, a formul
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -149,3 +149,6 @@ Aby skonfigurować odpowiedź interfejsów API dostępności produktu, wykonaj n
 [Zastosuj ustawienia zapasów](inventory-settings.md)
 
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

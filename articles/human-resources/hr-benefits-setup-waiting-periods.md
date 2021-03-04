@@ -45,3 +45,6 @@ W programie Microsoft Dynamics 365 Human Resources dni oczekiwania wyznaczają p
    | **Dzień oczekiwania** | Umożliwia wybranie dnia oczekiwania używanego do obliczania daty oczekiwania. |
 
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

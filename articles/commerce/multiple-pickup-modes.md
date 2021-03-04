@@ -86,3 +86,6 @@ Jeśli dla kanału jest dostępnych wiele trybów dostawy — odbioru, w momenci
 ## <a name="considerations-for-distributed-order-management"></a>Informacje ważne dla funkcji zarządzania zamówieniami rozdzielonymi
 
 [Funkcje zarządzania zamówieniami rozproszonymi (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) w module Commerce ignorują wszystkie wiersze sprzedaży oznaczone do odbioru w sklepie. Te funkcje zostały zaktualizowane, aby upewnić się, że wiersze sprzedaży połączone z skonfigurowanymi metodami dostawy odbioru pomijają logikę modelu DOM i nie zostaną ponownie przydzielone do nowego magazynu realizacji.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

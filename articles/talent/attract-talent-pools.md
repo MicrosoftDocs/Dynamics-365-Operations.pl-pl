@@ -149,3 +149,6 @@ Często kilku dobrych kandydatów na funkcję nie zostanie wybranych, ale nie ch
 1. Na stronie zgłoszenia wybierz opcję **Dodaj do puli umiejętności**. Zostanie wyświetlona lista pul umiejętności, do których masz dostęp.
 
 1. Wybierz lub wyszukaj pulę umiejętności, a następnie kliknij przycisk **Dodaj**, aby dodać kandydata do tej puli umiejętności.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

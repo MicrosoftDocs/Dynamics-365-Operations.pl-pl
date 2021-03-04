@@ -65,3 +65,6 @@ Ta lista jest udostępniana, aby umożliwić Ci uwzględnianie usuniętych i prz
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

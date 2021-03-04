@@ -73,3 +73,6 @@ Aby skonfigurować szablony wiadomości e-mail dla konkretnych metod dostawy w p
 [Tworzenie zamówień w biurach obsługi](tasks/create-call-center-orders.md)
 
 [Zmienianie metody dostawy w punkcie sprzedaży](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
 
 [Konfigurowanie hierarchii organizacyjnych](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

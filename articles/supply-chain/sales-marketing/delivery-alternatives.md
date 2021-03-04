@@ -153,3 +153,6 @@ Na tej karcie są eksponowane skutki wybranej alternatywnej opcji dostawy. Klikn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

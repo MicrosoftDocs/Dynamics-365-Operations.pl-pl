@@ -37,3 +37,6 @@ Ta procedura pokazuje, jak utworzyć element menu urządzenia przenośnego dla p
 5. W polu Tryb wybierz opcję „Pośrednie”.
 6. W polu Kod działania wybierz opcję „Konsoliduj numery identyfikacyjne”.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

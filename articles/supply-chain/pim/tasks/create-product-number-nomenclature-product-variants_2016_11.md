@@ -102,3 +102,6 @@ Ta procedura pokazuje, jak skonfigurować konwencję nazewnictwa numerów produk
 43. Zamknij stronę.
 44. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

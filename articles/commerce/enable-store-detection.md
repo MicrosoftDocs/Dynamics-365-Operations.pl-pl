@@ -69,3 +69,6 @@ Aby włączyć wykrywanie sklepu opartego na lokalizacji w module Commerce, wyko
 [Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

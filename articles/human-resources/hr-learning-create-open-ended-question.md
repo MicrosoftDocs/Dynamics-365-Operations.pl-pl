@@ -38,3 +38,6 @@ Pytania otwarte umożliwiają osobom udzielającym odpowiedzi udzielanie własny
     * Dla pytań otwartych jest używany typ danych wejściowych Tekst lub Notatka.  
 6. W polu Tekst wprowadź pytanie.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

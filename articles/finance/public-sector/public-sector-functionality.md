@@ -72,3 +72,6 @@ Poniższa tabela pokazuje związek między tym kluczem konfiguracji a innymi klu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -176,3 +176,6 @@ Dodany język będzie teraz dostępny, co umożliwi skonfigurowanie witryny do u
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ W celu sporządzenia prognozy wykorzystania miejsca można wygenerować raport *
 
 4. W polu **Typ obciążenia pracą** wybierz opcję **Objętość** lub **Masa**, aby wskazać jednostkę operacyjną obszaru, dla której ma zostać sporządzona prognoza miejsca.
 5. W polu **Ustawienia wykorzystania miejsca** wybierz konfigurację wykorzystania miejsca, na której ma bazować prognoza.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

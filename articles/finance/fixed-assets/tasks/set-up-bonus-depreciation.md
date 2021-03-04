@@ -49,3 +49,6 @@ W tej procedurze pokazano, jak utworzyć specjalny odpis amortyzacyjny i skojarz
     * Domyślna wartość ustawienia Wartość procentowa lub Kwota pochodzi z konfiguracji specjalnego odpisu amortyzacyjnego.  
 8. W polu Priorytet wprowadź liczbę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

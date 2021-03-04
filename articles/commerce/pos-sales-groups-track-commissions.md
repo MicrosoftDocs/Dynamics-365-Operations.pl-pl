@@ -88,3 +88,6 @@ W aplikacji punktu sprzedaży użytkownicy mogą konfigurować siatki przyciskó
 ## <a name="calculating-commissions"></a>Naliczanie prowizji
 
 Prowizja jest obliczana dla pracowników we wskazanych grupach sprzedaży w momencie księgowania zestawienia lub zamówienia sprzedaży. Kwota prowizji jest określana na podstawie udziału pracownika w prowizji, zgodnie z definicją w grupie sprzedaży oraz odnośnymi ustawieniami obliczania prowizji dla odbiorcy i/lub produktów w transakcji.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

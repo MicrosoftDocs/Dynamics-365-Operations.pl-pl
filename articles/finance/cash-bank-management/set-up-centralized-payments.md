@@ -58,3 +58,6 @@ Można zdefiniować domyślne opisy dla załączników rozliczeń międzyfirmowy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

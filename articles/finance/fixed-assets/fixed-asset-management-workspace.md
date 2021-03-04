@@ -74,3 +74,6 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 | Mapy wycen        | Szczegóły dotyczące środków trwałych |
 
 Aby wyświetlić analizy z danymi, należy najpierw odświeżyć zagregowaną miarę AssetTransactionMeasure na stronie **Magazyn jednostek**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

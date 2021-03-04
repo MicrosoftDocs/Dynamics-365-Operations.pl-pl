@@ -78,3 +78,6 @@ Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera
 | Części zamienne          | Wyświetl listę zatwierdzonych i i alternatywnych części zamiennych, które mogą być użyte w składniku majątku.                                                                               |
 | Zużycie składnika majątku    | Drukuj raport, który pokazuje rejestracje zużycia na składniku majątku.                                                                                                |
 | Usterka składnika majątku          | Drukuj raport, który pokazuje rejestracje usterek na składniku majątku.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Gdy zamówienia są wybrane, zostanie wyświetlona lista wszystkich produktów p
 
 Jeśli zamówienie jest w pełni zwrócone, kwota podatków zwrócona odbiorcy będzie równa kwocie pierwotnie naliczonego podatku.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

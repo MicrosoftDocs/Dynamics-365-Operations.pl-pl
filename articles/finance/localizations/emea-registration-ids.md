@@ -112,3 +112,6 @@ Aby uzyskać więcej informacji na temat przetwarzania identyfikatorów rejestra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

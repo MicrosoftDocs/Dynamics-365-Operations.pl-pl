@@ -96,3 +96,6 @@ Aby uzyskać więcej informacji o modułach zarządzania kontach i sposobach ich
 
 [Omówienie stron koszyka i realizacji zamówienia](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -146,3 +146,6 @@ Aby skonfigurować moduł selektora sklepu, aby wyświetlał dostępne sklepy dl
 [Interfejsy API REST Map Bing](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Moduł map](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

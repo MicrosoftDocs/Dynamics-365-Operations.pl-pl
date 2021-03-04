@@ -78,3 +78,6 @@ W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano pr
 34. Wybierz kartę **Przegląd**. Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  
 35. Wybierz kartę **Podpisy**. Pracownik i Menedżer mogą wyrejestrować się z przeglądu. Po złożeniu wszystkich wymaganych podpisów stan zmienia się na **Zakończono** i nie można wprowadzać więcej zmian.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

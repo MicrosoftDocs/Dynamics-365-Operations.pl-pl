@@ -108,3 +108,6 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
 
 Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Musisz przyznać dostęp dodatkowym użytkownikom aplikacji. Trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył program Human Resources, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy. Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

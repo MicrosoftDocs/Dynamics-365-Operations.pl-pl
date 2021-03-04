@@ -89,3 +89,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 1.  W aplikacji komórkowej zaznacz obszar roboczy **Firmowa książka adresowa**.
 2.  W polu **Szukaj** wprowadź imię, nazwisko, tytuł lub dział pracownika, aby rozpocząć wyszukiwanie.
 3.  Wybierz pracownika. Zostanie wyświetlona strona **Profil pracownika**. Informacje na tej stronie obejmują imię, nazwisko, tytuł i dział pracownika.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

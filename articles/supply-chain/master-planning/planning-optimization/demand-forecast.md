@@ -274,3 +274,6 @@ Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wyk
 ### <a name="reduce-a-forecast-by-transactions"></a>Redukcja prognoz według transakcji
 
 Po wybraniu metody **Transakcje — klucz redukcji** lub **Transakcje — okres dynamiczny** do redukcji prognozowanego zapotrzebowania można wybrać, które transakcje będą uwzględniane w redukowaniu prognozy. Na stronie **Grupy zapotrzebowania** na skróconej karcie **Inne** w polu **Zmniejsz prognozę o** wybierz **Wszystkie transakcje**, jeśli wszystkie transakcje mają redukować prognozę, lub **Zamówienia**, jeśli tylko zamówienia sprzedaży mają redukować prognozę.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

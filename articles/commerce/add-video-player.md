@@ -106,3 +106,6 @@ Aby dodać moduł odtwarzacza wideo do nowej strony i ustawić wymagane właści
 [Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł bloku zawartości](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

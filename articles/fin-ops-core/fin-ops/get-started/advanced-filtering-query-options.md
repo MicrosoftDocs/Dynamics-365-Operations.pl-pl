@@ -242,3 +242,6 @@ Zobacz tabelę w następnej sekcji, aby uzyskać szczegóły o metodzie wprowadz
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

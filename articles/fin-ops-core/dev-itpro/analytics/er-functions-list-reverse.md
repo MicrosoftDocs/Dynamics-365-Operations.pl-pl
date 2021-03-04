@@ -59,3 +59,6 @@ Jeśli opcja **Vendor** jest skonfigurowana jako źródło danych raportowania e
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

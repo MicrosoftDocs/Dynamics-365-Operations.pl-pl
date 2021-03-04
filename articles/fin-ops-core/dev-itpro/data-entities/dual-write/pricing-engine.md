@@ -69,3 +69,6 @@ Po wypełnieniu pól w Sales obowiązują następujące ograniczenia:
 + Konfigurowanie opłat i alokacji opłat w Supply Chain Management nie jest replikowane w Sales.
 + W przypadku cen nie są uwzględniane specjalne ceny detaliczne określone w polu **Kanał detaliczny** na stronie wiersz zamówienia sprzedaży w Supply Chain Management.
 + Nie są brane pod uwagę rabaty zdefiniowane w sekcji **Zarządzania przydziałem handlowym** w Supply Chain Management.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

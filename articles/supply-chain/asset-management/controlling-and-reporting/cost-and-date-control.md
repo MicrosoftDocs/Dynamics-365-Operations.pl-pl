@@ -108,3 +108,6 @@ Na poniższym zrzucie ekranu pokazano przykładowe wyniki obliczania w oknie **K
 ![Przykładowe wyniki obliczeń w oknie Kontrola dat zlecenia pracy](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

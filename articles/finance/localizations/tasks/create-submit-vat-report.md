@@ -35,3 +35,6 @@ Ta procedura prowadzi przez proces tworzenia i przesyłania raportu VAT urzędow
 5. Wybierz opcję Tak w polu Utwórz elektroniczny dokument podatku.
 6. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

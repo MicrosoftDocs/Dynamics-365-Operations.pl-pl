@@ -114,3 +114,5 @@ Jeśli poproszono o produkt z zewnętrznego katalogu dostawcy, nie można usuną
 
 - [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)
 - [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

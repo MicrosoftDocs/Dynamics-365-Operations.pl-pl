@@ -153,3 +153,6 @@ Można wyświetlić, czy zwolniony produkt może być używany jako składnik lu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

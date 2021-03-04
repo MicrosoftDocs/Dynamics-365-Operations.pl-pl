@@ -65,3 +65,6 @@ Poniższa procedura opisuje relację między składnikami majątku, zleceniami p
 
 7. Aby wyświetlić przegląd projektów skojarzonych z środkiem trwałym, należy wybrać **Środki trwałe** > **Środki trwałe** > **Środki trwałe**, a następnie w polu **Numer środka trwałego** wybrać łącze dla środka trwałego w celu otwarcia widoku szczegółów. Rozwiń **Pokrewne okienko informacji** po prawej stronie strony i wybierz skróconą kartę **Skojarzone projekty**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ W tym artykule przedstawiono sposób konfigurowania typów kontaktów osobistych
    | **Wiek** | Maksymalny wiek uprawnionego kontaktu osobistego w planie świadczeń. To pole jest aktywne tylko po wybraniu relacji. Ten wiek jest porównywany z obliczonym wiekiem kontaktu osobistego. Obliczony wiek to: (Data objęcia świadczeniem - data urodzenia kontaktu osobistego / 365) Ta liczba jest zawsze liczbą całkowitą. |
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Funkcje rekordów w module raportowania elektronicznego (ER) mogą być używane
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Język formuł raportowania elektronicznego](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

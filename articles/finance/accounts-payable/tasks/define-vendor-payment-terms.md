@@ -47,3 +47,6 @@ W tym temacie opisano sposób konfigurowania warunków płatności dla faktur od
 16. Wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur odbiorcy, a następnie wprowadź konto główne, do którego zostanie zaksięgowany rabat gotówkowy dla faktur od dostawcy. Jeśli w polu **Konta przeciwstawne rabatów** jest ustawiona opcja **Użyj konta głównego dla rabaty dostawcy**, będzie używane konto główne. Jeśli wybierzesz opcję **Konta w wierszach faktury**, rabat gotówkowy będzie księgowany na kontach środków trwałych/wydatków z wierszy faktury.  
 17. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

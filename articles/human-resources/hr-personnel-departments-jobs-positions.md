@@ -165,3 +165,6 @@ Można modyfikować informacje wymienione w poprzedniej tabeli dla pozycji lub z
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

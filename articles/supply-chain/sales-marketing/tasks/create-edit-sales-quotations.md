@@ -70,3 +70,6 @@ Ta procedura przedstawia sposób tworzenia i aktualizowania oferty sprzedaży. M
 13. Kliknij opcję **Zamówienia sprzedaży**.
 14. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

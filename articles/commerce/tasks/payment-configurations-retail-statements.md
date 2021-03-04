@@ -53,3 +53,6 @@ To nagranie wykorzystuje firmę demonstracyjną USRT.
     * Wybierz konto, na którym mają być księgowane kwoty przekazywane do sejfu.  
 8. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Aby uzyskać więcej informacji, zobacz [Omówienie uzgadniania faktur rozrachun
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

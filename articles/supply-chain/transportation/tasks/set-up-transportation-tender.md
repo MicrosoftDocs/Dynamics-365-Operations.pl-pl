@@ -48,3 +48,6 @@ W tej procedurze pokazano sposób konfigurowania metody płatności za transport
 7. Kliknij przycisk Prześlij.
 8. Wybierz trasę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

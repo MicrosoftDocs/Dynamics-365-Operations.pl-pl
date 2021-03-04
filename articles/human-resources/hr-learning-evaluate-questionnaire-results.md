@@ -72,3 +72,5 @@ Można użyć statystyk kwestionariusza do analizy wyników wypełnionego kwesti
 -   Określ lub sprawdź poprawność kryteriów do analizy wyników według cech respondenta lub kwestionariusza. Na przykład, wybierając **kod pocztowy**, można analizować korelację między lokalizacją respondenta i poprawnymi odpowiedziami.
 
 Ustawienia określone przez użytkownika są zapisywane i mogą być używane do okresowego ponownego obliczania wyników.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

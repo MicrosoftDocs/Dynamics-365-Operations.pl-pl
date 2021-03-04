@@ -93,3 +93,6 @@ Możesz projektować kwestionariusze i administrować nimi, aby zbierać informa
 - [Projektowanie kwestionariuszy](../../../talent/design-questionnaires.md)
 - [Dystrybuowanie i planowanie kwestionariuszy](../../../talent/distribute-questionnaires.md)
 - [Wyświetlanie i ocenianie wyników kwestionariuszy](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

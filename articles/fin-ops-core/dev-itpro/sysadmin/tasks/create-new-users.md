@@ -55,3 +55,6 @@ Użytkownicy zewnętrzni dla dzierżawy, na którą wdrożono środowisko, musz�
 4. Wybierz **Importuj użytkowników**.
 5. Kliknij przycisk **Zamknij**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ W tej procedurze pokazano sposób tworzenia atrybutu partii, przypisywania domy�
 22. Kliknij przycisk Zapisz.
 23. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

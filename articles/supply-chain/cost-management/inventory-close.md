@@ -87,3 +87,6 @@ Czasami może być konieczne wycofanie ukończonego zamknięcia zapasów w celu 
 > [!NOTE] 
 > Można ponownie otworzyć tylko ostatni okres zapasów, który został zamknięty. Aby cofnąć wcześniejsze zamknięcie zapasów, należy wycofać jedno po drugim wszystkie kolejne zamknięcie, począwszy od najnowszego.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

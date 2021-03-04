@@ -98,3 +98,6 @@ Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stron
 
 System sprawdza, czy kwota wynagrodzenia określona dla planu wynagrodzeń typu stopniowego lub pasmowego mieści się zakresie wyznaczonym przez maksymalne i minimalne punkty odniesienia dla danego poziomu wynagrodzeń w zadaniu pracownika. Jeśli kwota wynagrodzenia jest spoza dozwolonym zakresem, pojawia się ostrzeżenie lub komunikat o błędzie w zależności od poziomu tolerancji ustawionego w planie stałych wynagrodzeń.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

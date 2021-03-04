@@ -110,3 +110,6 @@ Aby uzyskać więcej informacji, zobacz temat [Kredyty i windykacja w rozrachunk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

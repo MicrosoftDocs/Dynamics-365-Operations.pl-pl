@@ -61,3 +61,6 @@ Zawarte tu informacje dotyczą wszystkich krajów/regionów Europy. Zadanie utwo
     * Przypisz utworzony typ rejestracji do wstępnie zdefiniowanej kategorii rejestracji.  
 22. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

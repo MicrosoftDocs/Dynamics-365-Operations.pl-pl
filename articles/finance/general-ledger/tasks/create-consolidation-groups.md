@@ -47,3 +47,6 @@ W tej procedurze pokazano, jak utworzyć grupę kont konsolidacji, a następnie 
 8. W polu Konto konsolidacji wpisz wartość.
 9. W polu Nazwa konta konsolidacji wpisz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

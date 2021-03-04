@@ -107,3 +107,6 @@ Aby przekierować adres URL do innego adresu URL, wykonaj następujące kroki.
 [Konfigurowanie nazwy domeny](configure-your-domain-name.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

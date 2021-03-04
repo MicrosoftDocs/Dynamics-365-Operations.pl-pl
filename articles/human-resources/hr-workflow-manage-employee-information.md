@@ -73,3 +73,6 @@ Aby skonfigurować podstawowy przepływ pracy uruchamiany w momencie, gdy pracow
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

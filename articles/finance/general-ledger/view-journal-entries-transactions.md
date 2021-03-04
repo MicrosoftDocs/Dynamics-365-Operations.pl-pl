@@ -61,3 +61,6 @@ Oprócz raportów finansowych można używać następujących raportów księgow
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

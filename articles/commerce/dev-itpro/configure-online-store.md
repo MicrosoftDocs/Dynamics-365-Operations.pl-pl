@@ -62,3 +62,6 @@ Tematy wymienione w tabeli poniżej pomagają skonfigurować składniki modułu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

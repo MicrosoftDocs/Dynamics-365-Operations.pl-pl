@@ -159,3 +159,6 @@ Można dodać opis planu, aby pomóc pracownikom w wyborze świadczeń. Wprowadz
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
 2. Wybierz opcję **Programy kredytu elastycznego**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

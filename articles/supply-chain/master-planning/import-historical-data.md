@@ -59,3 +59,6 @@ Po zaimportowaniu historycznych danych popytu można generować prognozy popytu.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -171,3 +171,6 @@ Dla tej kombinacji musisz skonfigurować następujące pola:
 
 > [!IMPORTANT]
 > Aby funkcja zarządzania zamówieniami rozdzielonymi mogła uwzględniać te koszty, gdy zostanie uruchomiona, musisz dodać współczynnik kosztu do odpowiedniego profilu realizacji.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

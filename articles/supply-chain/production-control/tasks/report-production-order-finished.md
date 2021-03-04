@@ -52,3 +52,6 @@ W tej procedurze pokazano sposób raportowania zlecenia produkcyjnego jako ukoń
 4. Na liście kliknij łącze w wybranym wierszu.
     * Arkusz zgłoszonych wyrobów gotowych jest księgowany. Jeśli chcesz dokonać korekt w arkuszu, można ręcznie utworzyć nowy arkusz, gdzie można dokonać zmian.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

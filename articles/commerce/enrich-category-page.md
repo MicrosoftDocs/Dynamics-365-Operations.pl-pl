@@ -65,3 +65,6 @@ Aby wzbogacić stronę kategorii, należy wykonać następujące czynności.
 [Wzbogacanie strony produktu](enrich-product-page.md)
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

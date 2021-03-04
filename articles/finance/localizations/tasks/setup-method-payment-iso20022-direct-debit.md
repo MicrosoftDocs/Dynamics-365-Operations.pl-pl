@@ -53,3 +53,6 @@ Jest to trzecia z pięciu procedur, które razem przedstawiają proces płatnoś
     * Wybierz parametr Wymaga zgody dla formatów płatności od odbiorców, które wymagają zawarcia informacji o zgodzie w komunikacie płatności. Dotyczy to na przykład poleceń zapłaty SEPA.  
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

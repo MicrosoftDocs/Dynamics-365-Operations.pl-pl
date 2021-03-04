@@ -71,3 +71,6 @@ Ta procedura pokazuje sposób rozpoczynania zlecenia produkcyjnego na wydziale p
 7. Kliknij przycisk Księguj.
 8. Kliknij przycisk OK.
     * W arkuszu karty marszruty jest rejestrowany czas spędzony na poszczególnych operacjach. Mogą być również podawane ilości towarów prawidłowych i błędnych.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

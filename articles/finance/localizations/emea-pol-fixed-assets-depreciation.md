@@ -108,3 +108,6 @@ Firmy w Polsce mogą łączyć środki trwałe z grupami amortyzacji. Grupy amor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

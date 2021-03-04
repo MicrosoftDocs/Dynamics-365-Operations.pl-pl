@@ -154,3 +154,6 @@ Konto wybrane dla każdego typu wydatków jest obciążane po wygenerowaniu pła
 
 > [!NOTE]
 > Konto przeciwstawne jest wybierane na poziomie wynajmu w wierszach harmonogramu płatności kosztów wykonawczych. Konto przeciwstawne może być powiązane z dostawcą lub z kontem księgowym.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

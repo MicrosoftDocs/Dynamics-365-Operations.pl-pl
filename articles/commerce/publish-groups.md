@@ -155,3 +155,6 @@ Obecnie funkcja grup publikowania obsługuje tylko zawartość witryny interneto
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Dostosowywanie nawigacji w witrynie](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

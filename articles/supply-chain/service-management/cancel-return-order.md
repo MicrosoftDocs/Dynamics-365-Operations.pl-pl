@@ -49,3 +49,6 @@ Aby zapisać rekord planowanego zwrotu, zamiast usuwać zamówienie zwrotu, moż
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ W tym temacie pokazano sposób używania pulpitu planowania wysyłki ładunku w 
 5. Wybierz opcję **Przypisz**.
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

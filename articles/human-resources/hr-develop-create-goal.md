@@ -58,3 +58,6 @@ Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łącz
     * Często istnieje kilka celów, które są takie same lub podobne dla członków zespołu lub wszystkich pracowników.     Administrator działu kadr lub kierownik może utworzyć grupy celów zawierające jeden lub więcej szablonów celów. Możesz dodać cele z grupy celów, a następnie zmodyfikować je, dostosowując do swojej osi czasu.  
     * Podczas tworzenia przeglądu można dodać do niego cele. Aby dowiedzieć się, jak dodać cele do swoich przeglądów, skorzystaj z przewodników po zadaniach dotyczących przeglądów.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

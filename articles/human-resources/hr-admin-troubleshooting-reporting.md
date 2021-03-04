@@ -49,3 +49,6 @@ Użytkownik nie może dostosować osadzonych raportów programu Microsoft Power 
 **Rozwiązanie długoterminowe**
 
 Dodatkowe opcje Power BI będą dostępne i więcej danych i jednostek będzie wchodzić w skład Common Data Service.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

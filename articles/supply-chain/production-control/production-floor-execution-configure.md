@@ -94,3 +94,6 @@ Zadanie wsadowe okresowo oczyszcza wpisy w tabeli odwołań dla urządzeń, któ
 1. W okienku akcji wybierz opcję **Oczyść konfiguracje klientów**.
 1. W oknie dialogowym **Oczyść konfigurację klientów** w polu **Liczba dni** ustaw liczbę dni nieaktywności (przed dniem dzisiejszym), które mają być brane pod uwagę. Wszystkie konfiguracje i rekordy logowania dla urządzeń, które nie były aktywne w tym czasie, zostaną usunięte.
 1. Wybierz przycisk **OK**, aby oczyścić odpowiednie konfiguracje na podstawie **Liczby dni**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

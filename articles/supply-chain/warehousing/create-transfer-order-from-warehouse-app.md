@@ -334,3 +334,6 @@ Zamówienia przeniesienia są tworzone bez użycia funkcji **Kontrola daty dosta
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Czy mogę wykorzystać numer identyfikacyjny, w którym dostępne są fizyczne ujemne zapasy?
 
 Funkcja obsługuje tylko dodatnie fizyczne ilości dostępnych zapasów. Przed przypisaniem numerów identyfikacyjnych do zamówienia przeniesienia należy upewnić się, że na poziomie magazynu i stanu zapasów są dodatnie fizyczne ilości dostępnych zapasów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

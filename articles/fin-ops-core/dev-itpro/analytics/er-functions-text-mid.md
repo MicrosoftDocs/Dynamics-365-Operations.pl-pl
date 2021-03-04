@@ -69,3 +69,6 @@ Funkcja `MID ("Sample", 2, 3)` zwraca wartość **„amp”**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje tekstowe](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

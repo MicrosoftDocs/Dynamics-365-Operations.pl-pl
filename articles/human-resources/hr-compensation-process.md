@@ -77,3 +77,6 @@ Po dokonaniu przeglądu kwot wynagrodzeń dla pracownika i wprowadzeniu korekt w
 Gdy jedno lub więcej zdarzeń pracowników otrzyma aktualizację stanu do Zatwierdzone, mogą zostać załadowane do rekordów stałego wynagrodzenia pracowników. Można to zrobić poprzez zaznaczenie pojedynczo każdego zdarzenia pracownika i kliknięcie przycisku **Załaduj wynagrodzenie pracownika etatowego** na stronie **Wyniki pracownika etatowego** albo poprzez kliknięcie przycisku **Załaduj wynagrodzenie** na stronie **Wyniki procesu** i załadowanie na raz wszystkich zatwierdzonych zdarzeń pracowników.
 
 Kliknięcie przycisku **OK** w oknie dialogowym **Załaduj wynagrodzenie** spowoduje dodanie wierszy niezerowych akcji dotyczących wynagrodzeń do strony **Stałe wynagrodzenie pracownika etatowego**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

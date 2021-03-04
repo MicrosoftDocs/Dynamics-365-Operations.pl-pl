@@ -85,3 +85,6 @@ Aby korzystać z rozwiązania integracyjnego Field Service, należy zainstalowa�
 - Field Service (wersja 8.2.0.286) lub nowsza wersja w programie Dynamics 365 9.1.x - z listopada 2018
 - Rozwiązanie Prospekt na gotówkę (P2C) dla programu Dynamics 365, wersja 1.15.0.1 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
 - Rozwiązanie 'Field Service Integration, Project and Inventory' dla programu Dynamics 365, wersja 2.0.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.p2cfieldserviceintegrationv2).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

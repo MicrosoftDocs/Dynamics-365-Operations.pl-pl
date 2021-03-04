@@ -90,3 +90,6 @@ Wymagania wstępne:
 12. Kliknij przycisk Zakończ.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

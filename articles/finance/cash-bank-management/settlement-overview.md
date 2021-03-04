@@ -78,3 +78,6 @@ Podczas próby rozliczenia transakcji można zauważyć symbol wskazujący, że 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Rozlicz resztę](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

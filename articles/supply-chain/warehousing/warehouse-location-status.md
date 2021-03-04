@@ -169,3 +169,6 @@ Przykładowy scenariusz wymaga przygotowania dwóch profilów lokalizacji.
 
 > [!NOTE]
 > Pola lokalizacji są aktualizowane tylko przez transakcje magazynowe. Jeśli zapasy są przenoszone przy użyciu arkusza lub procesów innych niż procesy WHS, pola nie zostaną zaktualizowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

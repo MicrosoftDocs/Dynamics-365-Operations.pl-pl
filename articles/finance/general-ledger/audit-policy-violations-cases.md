@@ -61,3 +61,6 @@ Aby uzyskać więcej informacji, zobacz [Reguły inspekcji](audit-policy-rules.m
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

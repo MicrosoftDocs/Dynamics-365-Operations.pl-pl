@@ -144,3 +144,6 @@ Następujące obowiązki i uprawnienia zostały dodane dla automatyzacji propozy
 | Zapytanie o wystąpienia harmonogramu | Pracownik ds. rozrachunków z dostawcami, pracownik scentralizowanych płatności rozrachunków z dostawcami | Obowiązek ten przyznaje prawa wyświetlania wystąpień automatyzacji propozycji płatności oraz wystąpień przez następujące uprawnienia:<ul><li>Wyświetlanie wystąpień harmonogramu</li><li>Wyświetl widok tygodniowy wystąpienia</li></ul> |
 | Zapytanie o serię harmonogramu      | None                                                                       | Obowiązek ten przyznaje prawa do przeglądania ustawień serii i zdarzeń poprzez następujące uprawnienia:<ul><li>Wyświetlanie wystąpień harmonogramu</li><li>Wyświetlanie strony listy wystąpień</li><li>Wyświetl widok tygodniowy wystąpienia</li></ul>|
 | Obsługa wystąpień harmonogramu     | None                                                                       | Obowiązek ten przyznaje prawa do tworzenia i obsługiwania wystąpienia przez następujące uprawnienia:<ul><li>Obsługa wystąpień harmonogramu</li><li>Wyświetl widok tygodniowy wystąpienia</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

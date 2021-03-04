@@ -84,3 +84,6 @@ Można ręcznie tworzyć wiersze pozycji dla składników majątku.
 5. Jeśli element wygaśnie, w polu **Wygaśnięcie** wprowadź datę końcową.
 6. W polu **Numer pozycji** wybierz pozycję. Nazwa jest automatycznie wprowadzana w polu **Nazwa produktu**.
 7. W polu **Ilość** wprowadź używaną ilość. Pole **Jednostka** jest aktualizowane automatycznie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

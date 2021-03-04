@@ -58,3 +58,6 @@ Po zakończeniu importu trzeba będzie przypisać role użytkownikom.
 ## <a name="run-in-a-sandbox-environment"></a>Uruchamianie w środowisku piaskownicy
 1. Wybierz opcję **Import wsadowy**.
 2. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

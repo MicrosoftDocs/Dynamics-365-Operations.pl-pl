@@ -50,3 +50,6 @@ Jest to piąta z pięciu procedur, które razem ilustrują proces płatności do
     3.    W polu **Nazwa pliku** wpisz wartość. Na przykład z powodu płatności EUR wygenerowany plik będzie zgodny z SEPA. Polecenie przelewu ISO20022 i inne formaty płatności dostawców mogą też służyć do generowania płatności w innych walutach.
     4.    W polu **Konto bankowe** wprowadź lub wybierz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -239,3 +239,5 @@ Użytkownik utworzy zamówienie zakupu z trzema wierszami: dwa wiersze dla tego 
 
 > [!TIP]
 > Ten scenariusz można powtórzyć, ale zmienić wartość **Rozmiar** - *Nie* na skróconej karcie **Zezwalaj na mieszanie wymiarów produktów** w profilu **Profile lokalizacji** zbiorczej *BULK*, tak aby żaden z wymiarów produktu nie mógł być mieszany. W takim przypadku po odebraniu zamówienia zakupu każdy wariant produktu zostanie umieszczony w nowym miejscu.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

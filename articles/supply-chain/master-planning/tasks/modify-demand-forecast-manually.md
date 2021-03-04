@@ -43,3 +43,6 @@ W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorz
 1. Kliknij przycisk **Otwórz** w Microsoft Office.
 2. Kliknij opcję **Edytuj prognozę popytu** w programie Excel. W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz mieć włączoną opcję „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

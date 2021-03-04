@@ -58,3 +58,6 @@ Ta procedura zawiera instruktaż tworzenia nowej stacji sprzętowej. Nowy profil
 23. W polu Identyfikator terminalu EFT wpisz wartość.
 24. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

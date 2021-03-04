@@ -117,3 +117,6 @@ Jeśli to rozwiązanie ma być używane w przypadku dużej ilości danych transa
 [FIRSTORNULL, funkcja ER](er-functions-list-firstornull.md)
 
 [WHERE, funkcja ER](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

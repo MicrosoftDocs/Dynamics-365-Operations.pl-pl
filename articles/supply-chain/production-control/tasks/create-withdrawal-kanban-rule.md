@@ -64,3 +64,6 @@ W tej procedurze pokazano konfigurację niezbędną do utworzenia reguły Kanban
     * Spowoduje to utworzenie 2 kart Kanban.  
     * Należy zwrócić uwagę, że dla tej reguły Kanban wycofania zostały utworzone 2 karty Kanban, każda na 5 sztuk.  Jest to ostatni krok w tej procedurze.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

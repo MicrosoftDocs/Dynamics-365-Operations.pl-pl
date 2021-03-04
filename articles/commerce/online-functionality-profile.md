@@ -67,3 +67,6 @@ Poniższy obraz przedstawia przykładowy profil funkcji online.
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
 
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

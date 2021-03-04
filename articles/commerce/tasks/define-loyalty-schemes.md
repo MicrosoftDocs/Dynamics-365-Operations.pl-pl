@@ -70,3 +70,6 @@ Ta procedura zawiera instruktaż definiowania schematu lojalnościowego. Schemat
 27. Kliknij przycisk Zapisz.
     * Po każdej modyfikacji kanałów w schemacie lojalnościowym należy uruchomić funkcję Przetwarzanie programów lojalnościowych. W ten sposób kanały będą używały zaktualizowanych schematów lojalnościowych.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

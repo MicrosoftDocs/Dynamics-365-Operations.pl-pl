@@ -301,3 +301,6 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

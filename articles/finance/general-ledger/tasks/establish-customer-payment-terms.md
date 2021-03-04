@@ -57,3 +57,6 @@ Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności. W
 26. W polu **konto główne rabatów dostawcy** wprowadź konto główne, na którym będzie księgowany rabat gotówkowy dla faktur dostawcy.
 27. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

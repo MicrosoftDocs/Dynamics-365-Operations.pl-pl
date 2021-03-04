@@ -46,3 +46,6 @@ Można dodatkowo uściślić wyszukiwanie, wybierając typ dokumentu, na przykł
 [![Zastosowano filtr i import dla typu dokumentu biznesowego](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG) 
 
 Przefiltrowane wyniki mogą być importowane do repozytorium RCS lub środowiska Dynamics 365 Finance albo indywidualnie, albo jako zbiór. W tym celu należy wybrać grupę konfiguracji i kliknąć przycisk **Importuj**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

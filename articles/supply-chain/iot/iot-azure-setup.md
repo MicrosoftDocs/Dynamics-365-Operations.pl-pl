@@ -162,3 +162,6 @@ Aby zapisać klucz tajny dla parametrów połączenia pamięci podręcznej Redis
 > Za każdym razem, gdy parametry połączenia są aktualizowane, musisz również zaktualizować wartości kluczy tajnych.
 
 Aprowizowanie wymaganych zasobów platformy Azure zostało zakończone. Następny krok to [zainstalowanie dodatku analizy Internetu rzeczy (IoT) w usługach Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

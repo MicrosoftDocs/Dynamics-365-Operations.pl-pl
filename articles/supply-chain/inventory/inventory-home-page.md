@@ -58,3 +58,6 @@ Opinie, wiadomości i inne informacje o module Zarządzaniu zapasami i innych ro
 
 ### <a name="task-guides"></a>Przewodniki zadań
 Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk **Pomoc** na dowolnej stronie
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

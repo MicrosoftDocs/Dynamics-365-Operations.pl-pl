@@ -128,3 +128,6 @@ Wartości stylu ustawienia wstępnego są aktywne w całej publicznej witrynie s
 [Dodawanie języków do witryny](add-languages-to-site.md)
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

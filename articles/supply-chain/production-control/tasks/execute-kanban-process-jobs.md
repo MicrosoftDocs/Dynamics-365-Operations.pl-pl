@@ -57,3 +57,6 @@ Ta procedura skupia się na wykonywaniu zadań procesu w systemie Kanban. Pierws
 6. W polu Ilość dobrych wprowadź liczbę.
 7. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

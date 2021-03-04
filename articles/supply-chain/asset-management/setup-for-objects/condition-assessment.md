@@ -66,3 +66,6 @@ Po dokonaniu rejestracji oceny warunków dla składnika majątku można wydrukow
 
 >[!NOTE]
 >Można również zarejestrować oceny stanu w zleceniu pracy (**Zarządzanie składnikiem majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy** > **Ocena warunku**.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -102,3 +102,6 @@ Jeśli pole **Dziedzicz współtwórców opinii z zespołu rekrutacyjnego** jest
 Działanie rozmowy kwalifikacyjnej jest opcjonalne w trzech komponentach: **Pytanie o dostępność kandydata**, **Harmonogram** oraz **Opinia**. Użyj działania rozmowy kwalifikacyjnej w szablonie zadania, jeśli chcesz uwzględnić żądanie dostępności wszystkich kandydatów, harmonogramu i informacje zwrotnych w ramach procesu zamiast używać ich osobno.
 
 Aby zmniejszyć lub zwiększyć liczbę kandydatów zapraszanych na rozmowy kwalifikacyjne, wybierz wartość w polu **Z kim przeprowadzisz rozmowę kwalifikacyjną**. Dostępne opcje to **Wszyscy kandydaci**, **Zewnętrzni kandydaci** i **Wewnętrzni kandydaci**. Na przykład, jeśli chcesz pominąć wewnętrznych kandydatów w pierwszym cyklu rozmów kwalifikacyjnych, ustaw pole **Z kim przeprowadzisz rozmowę kwalifikacyjną** jako **Zewnętrzni kandydaci**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

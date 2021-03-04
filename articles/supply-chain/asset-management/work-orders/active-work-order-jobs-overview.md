@@ -43,3 +43,6 @@ Na poniższej ilustracji pokazano przykład strony listy **Zadania konserwacji a
 
 Krótki opis przycisków na stronie listy **Zadania konserwacji aktywnych zleceń pracy** można znaleźć w temacie [Wprowadzenie do zleceń pracy](../work-orders/introduction-to-work-orders.md), w którym opisano identyczne przyciski.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Fantomowych BOM można również używać dla list składowych zawierających si
 Na ilustracji poniżej (a) to BOM produktu G i części F, a (b) to arkusz marszruty dla produktu G i części F.
 
 ![Produkt G i część F z arkuszami marszruty](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Następujące raporty zawierają informacje na temat obiektów:
 - [Raport kodów licencji i kluczy konfiguracji](../sysadmin/license-codes-configuration-keys-report.md)
 - [Dostępne raporty usługi SQL Server Reporting Services (SSRS)](SSRS-report.md)
 - [Raport typów przepływów pracy](../../fin-ops/organization-administration/workflow-types-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

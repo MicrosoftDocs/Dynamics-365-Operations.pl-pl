@@ -98,3 +98,6 @@ Można zdefiniować wiele grup obliczania BOM, w zależności od wymaganego zró
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

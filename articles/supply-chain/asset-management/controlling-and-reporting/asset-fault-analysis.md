@@ -109,3 +109,6 @@ W poniższym zrzutie ekranu dodano **Typ**, a w tym przykładzie jest pokazane n
 >[!NOTE]
 >Aby zapoznać się z omówieniem wszystkich rejestracji błędów utworzonych na zleceniach pracy i żądaniach konserwacji kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Usterka składnika majątku** > **Usterki składnika majątku**. Na stronie **Usterki składnika majątku** wybierz rejestrację usterek składnika majątku i rozwiń okienko **Informacje pokrewne**, aby wyświetlić informacje dotyczące powiązanego zlecenia pracy lub żądania konserwacji.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

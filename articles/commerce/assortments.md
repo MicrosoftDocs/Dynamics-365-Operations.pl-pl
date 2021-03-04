@@ -107,3 +107,6 @@ Planując i organizując asortymenty dla swojego wdrożenia Commerce, należy wz
 - **Sprzedaż i zwroty poza asortymentami** — ta funkcja pozwala sprzedawcom detalicznym efektywnie zarządzać liczebnością asortymentów poprzez ograniczenie dostępności produktów tylko do tych, które należą do podstawowego asortymentu sklepu. Pomaga również reagować w sytuacjach, gdy produkt został omyłkowo pominięty z asortyment lub zwrócony poza datami obowiązywania asortymentu.
 
 Jeśli dane produktu nie istnieją w bazie danych kanału, aplikacja POS wykonuje w czasie rzeczywistym wywołania do centrali w celu pobrania wymaganych informacji, dzięki czemu produkt można sprzedać, zwrócić lub umieścić w zamówieniu klienta. Informacje o produkcie pobrane w ten sposób są dostępne tylko w zakresie danej transakcji. Produkt nie jest dodawany do definicji asortymentu. W związku później również będą wykonywane wywołania w czasie rzeczywistym tylko w razie potrzeby.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

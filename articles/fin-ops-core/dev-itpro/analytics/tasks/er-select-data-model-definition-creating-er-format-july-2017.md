@@ -98,3 +98,6 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Należy zauważyć, że teraz tylko jedna pozycja główna jest dostępna do mapowania źródeł danych aplikacji. Podczas wprowadzania jednego lub więcej mapowań modeli tylko pozycje głównego modelu, które są mapowane na źródła danych aplikacji, mogą być wybierane jako definicja modelu podczas dodawania formatu raportowania elektronicznego.   
 5. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

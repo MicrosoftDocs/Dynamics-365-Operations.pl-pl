@@ -250,3 +250,6 @@ W tym scenariuszu przedstawiono sposób, w jaki ustawienia opisane wcześniej w 
 1. W nowo utworzonym zamówieniu sprzedaży, na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz opcję **Dodaj wiersz**, aby dodać kolejny wiersz.
 1. W tym nowym wierszu ustaw pole **Numer pozycji** na wartość *M9200* oraz pole **Ilość** na *1*.
 1. Powtórz wiersze od 6 do 9, aby zarezerwować wiersz i zwolnić go do magazynu. Tak jak wcześniej, system tworzy **nową** wysyłkę dla dodanego wiersza. Ponieważ jednak przedmiot pochodzi z grupy towarów **CarAudio**, **nie spełnia ograniczeń ustawionych dla grupy mieszania ładunków**. Dlatego jest **dodawany do nowego ładunku**. Jeśli grupa mieszania ładunku nie zostałaby określona w szablonie kompilacji ładunku, ta wysyłka zostałaby dodana do pierwszego ładunku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Aby dodać moduł iframe do strony w celu wyświetlenia zewnętrznego wideo, nal
 [Omówienie biblioteki modułów](starter-kit-overview.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

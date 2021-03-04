@@ -205,3 +205,6 @@ Dodatkowe informacje związane z aktywacją obejmują dane pracownika, który zm
 ### <a name="client-data-synchronization"></a>Synchronizacja danych klienta
 
 Wszystkie zmiany na kliencie punktu sprzedaży, z wyjątkiem zmian stanu aktywacji urządzenia, działają dopiero po zsynchronizowaniu z bazą danych kanału. Aby zsynchronizować zmiany z bazą danych kanału, wybierz kolejno opcje **Retail i Commerce** &gt; **Składniki IT w handlu detalicznym i innym** &gt; **Harmonogram dystrybucji** i uruchom wymagany harmonogram dystrybucji. W przypadku zmian na kliencie należy uruchomić harmonogramy dystrybucji **Rejestry** i **Konfiguracja kanału**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Strona **Omówienie atrybutu składnika majątku** zawiera osobny wiersz dla ka�
 3. Kliknij przycisk **OK**. Lista zawiera wszystkie składniki majątku, które używają wybranego typu składnika majątku. Dla każdego składnika majątku wszystkie powiązane typy atrybutów składnika majątku są wyświetlane w tym samym wierszu.
 
 Strona **Atrybut składnika majątku** zawiera osobny wiersz dla każdego typu atrybutu, który jest używany w składniku majątku. Aby otworzyć tę stronę, wybierz **Zarządzanie składnikami majątku** \> **Informacje** \> **Składniki majątku** \> **Atrybut składnika majątku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

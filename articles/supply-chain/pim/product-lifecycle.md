@@ -109,3 +109,6 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 - [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu](tasks/product-lifecycle-state-released-product.md)
 - [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu](tasks/obsolete-product-variants.md)
 - [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -75,3 +75,6 @@ Można cofnąć rozliczenie, która nastąpiło przez pomyłkę.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualizowanie listy kont uwzględnionych na liście transakcji
 
 Wybierz opcję **Konta rozliczenia księgi**, aby otworzyć okno dialogowe służące do edytowania kont uwzględnionych na liście transakcji. Kliknij przycisk **Nowy**, aby dodać nowe konta do listy. Ta lista jest używana do filtrowania transakcji wyświetlanych na stronie **Rozliczenia księgi**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Można wysyłać powiadomienia do odpowiednich osób po ponownym uruchomieniu lu
     </table>
 
 8. Powtórz kroki od 3 do 7 dla każdego zdarzenia wybranego w kroku 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

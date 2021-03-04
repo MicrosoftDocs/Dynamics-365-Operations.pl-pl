@@ -88,3 +88,6 @@ Funkcja `NUMERALSTOTEXT (120.21, "RU", "EUR", true, 2)` zwraca wartość **„с
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje tekstowe](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

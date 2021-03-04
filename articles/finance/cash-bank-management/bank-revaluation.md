@@ -88,3 +88,6 @@ Transakcja przeszacowania w walucie obcej jest też podzielona na wymiary, któr
 Jeśli musisz wycofać transakcję przeszacowania, kliknij przycisk **Wycofaj transakcję** znajdujący się na stronie **Przeszacowanie w walucie obcej** w okienku akcji. Zostanie utworzony nowy rekord historyczny przeszacowania w walucie obcej na potrzeby prowadzenia dziennika historii pokazującego, kiedy przeszacowania nastąpiły lub zostały wycofane.
 
 Aby cofnąć kilka przeszacowań, musisz najpierw cofnąć najnowsze przeszacowanie. Następnie cofaj starsze przeszacowania według ich dat. Następnie można przetworzyć nowe przeszacowania dla okresów, w których przeszacowania zostały cofnięte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

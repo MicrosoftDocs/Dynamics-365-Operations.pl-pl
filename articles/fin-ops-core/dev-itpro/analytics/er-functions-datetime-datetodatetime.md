@@ -59,3 +59,6 @@ Funkcja `DATETODATETIME (DATEVALUE ("2019-11-12T16:00:00.0000000-07:00", "O"))` 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje daty i godziny](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

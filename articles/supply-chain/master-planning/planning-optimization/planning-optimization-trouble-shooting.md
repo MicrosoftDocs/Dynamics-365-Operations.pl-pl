@@ -75,3 +75,6 @@ Jest to związane z oczekującą funkcją, która jest planowana jako część o
 [Rozpoczęcie optymalizacji planowania](get-started.md)
 
 [Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

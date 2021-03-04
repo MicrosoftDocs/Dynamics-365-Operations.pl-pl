@@ -55,3 +55,6 @@ Jeśli nie zdefiniowano numeru środka trwałego w szablonie dodatku programu Ex
 
 > [!WARNING]
 > Rekord środka trwałego nie zostanie usunięty, jeśli transakcje zostały zaksięgowane w skojarzonej księdze, lub jeśli nowo utworzony środek trwały został wprowadzony w wierszu arkusza, ale nie zostanie zaksięgowany. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

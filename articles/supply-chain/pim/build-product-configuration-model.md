@@ -163,3 +163,6 @@ Jeśli konfiguracja zostanie wykonana w oddziale lub nawet w firmie, która ró�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

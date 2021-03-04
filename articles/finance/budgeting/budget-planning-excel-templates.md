@@ -130,3 +130,6 @@ Można również tworzyć i używać tabel i wykresów przestawnych w celu dodat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

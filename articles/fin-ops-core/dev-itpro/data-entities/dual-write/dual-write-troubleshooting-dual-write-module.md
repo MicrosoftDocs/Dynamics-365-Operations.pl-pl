@@ -87,3 +87,6 @@ Poprawka dla tego błędu jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
 + Być może w mapowaniu brakuje pól źródłowych lub docelowych. Jeśli brak pola w aplikacji Finance and Operations, należy wykonać kroki w sekcji [Problem braku pól jednostki dla map](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Jeśli brakuje pola w Dataverse, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby pola były automatycznie wstawiane ponownie do mapowania.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

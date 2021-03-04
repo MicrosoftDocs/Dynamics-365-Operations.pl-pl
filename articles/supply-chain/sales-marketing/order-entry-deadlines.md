@@ -109,3 +109,6 @@ W następującej tabeli pokazano terminy wprowadzania zamówień obu oddziałów
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

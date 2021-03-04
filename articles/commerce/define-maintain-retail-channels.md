@@ -89,3 +89,6 @@ Commerce używa hierarchii organizacji do tworzenia struktury w kanałach. Hiera
 > [!NOTE]
 > Aby korzystać z funkcji sprzedaży w aplikacji Commerce, klucz konfiguracji dla opcji **Wielokrotna wysyłka** musi być włączony. Ten klucz konfiguracji można znaleźć w kluczach **konfiguracji handlu** w obszarze **Administracja systemem**\> **Instalator** \> **Konfiguracja licencji**. Jest to wymagane z powodu różnych operacji weryfikacji na podstawie adresu dostawy skonfigurowanego na poziomie wiersza zamówienia sprzedaży.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Na poniższym zrzucie ekranu pokazano przykład obliczania **Formant godzin skł
 Innym sposobem obliczenia godziny jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie należy kliknąć przycisk **Formant godzin** na skróconej karcie **Ogólne**. Wybrane środki trwałe są automatycznie wstawiane do pola **Składnik majątku** na skróconej karcie **Rekordy do uwzględnienia**. Kliknij **OK** woknie dialogowym **Formant godzin składnika majątku**, a następnie zostanie wyświetlona wartość obliczona dla wybranych składników. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

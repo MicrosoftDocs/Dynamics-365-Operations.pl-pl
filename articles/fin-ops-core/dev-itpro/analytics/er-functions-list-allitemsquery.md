@@ -72,3 +72,6 @@ CUSTINVOICETRANS T3 WHERE...
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

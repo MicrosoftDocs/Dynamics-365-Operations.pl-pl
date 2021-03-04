@@ -113,3 +113,5 @@ Pobierany plik jest plikiem .zip zawierający:
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Wycofywanie aplikacji Dynamics 365 Talent: Attract i Dynamics 365 Talent: Onboard](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

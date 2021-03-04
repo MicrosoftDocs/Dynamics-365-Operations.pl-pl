@@ -94,3 +94,6 @@ Gdy utworzysz propozycje kompensaty w arkuszu i propozycja zostanie następnie z
 **P: Czy funkcja kompensaty jest dostępna dla wszystkich krajów i regionów?**
 
 **O:** Funkcja kompensaty jest dostępna tylko dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

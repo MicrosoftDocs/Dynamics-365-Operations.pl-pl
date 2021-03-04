@@ -189,3 +189,6 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Istnieje również możliwość ręcznego korygowania prognozy na stronie **Szcz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ W tym temacie zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy prod
 19. W okienku akcji kliknij opcję **Pobierz i zapakuj**.
 20. Wybierz **Dokument dostawy**. Strona **Arkusz dokumentu dostawy** zawiera wszystkie dokumenty dostawy, które zostały wygenerowane dla zamówienia. W razie potrzeby można przejrzeć szczegóły każdego dokumentu i je wydrukować.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

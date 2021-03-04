@@ -63,3 +63,6 @@ Zaksięgowane arkusze załączników mogą być zapisywane jako szablony załąc
 29. W polu **Kwota** wprowadź kwotę, którą chcesz zastosować do załącznika. Pole **Kwota** jest wyświetlane tylko po wybraniu typu szablonu załącznika Procent.  
 30. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

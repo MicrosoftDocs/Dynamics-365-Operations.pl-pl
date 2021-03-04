@@ -83,3 +83,6 @@ W tej procedurze pokazano sposób tworzenia modelu konfiguracji produktu i wprow
 17. W polu W serii wprowadź liczbę.
 18. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

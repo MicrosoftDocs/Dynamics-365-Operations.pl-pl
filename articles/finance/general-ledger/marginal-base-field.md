@@ -186,3 +186,6 @@ Aby uzyskać więcej informacji, zobacz [Opcje obliczania Cała kwota i Zakres d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

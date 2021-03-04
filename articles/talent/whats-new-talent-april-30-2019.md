@@ -101,3 +101,6 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 ### <a name="email-support-for-alerts"></a>Pomoc techniczna e-mail dla alertów
 
 Aktualizacja platformy 26 dla Finance and Operations pozwala użytkownikom tworzyć reguły alertów, które automatycznie wysyłają powiadomienia do kontaktów w wyniku wyzwolenia przez zdarzenie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

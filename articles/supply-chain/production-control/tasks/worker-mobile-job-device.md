@@ -68,3 +68,6 @@ W tym przykładzie należy sprawdzić, czy użytkownik „SHANNON” ma przypisa
 6. W polu **Jednostka produkcyjna** można ustawić domyślny filtr dla pracownika. Daje to pewność, że gdy pracownik loguje się do urządzenia, wyświetlane są tylko zadania produkcyjne dla wybranej jednostki produkcyjnej. Wprowadź odpowiednią wartość.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

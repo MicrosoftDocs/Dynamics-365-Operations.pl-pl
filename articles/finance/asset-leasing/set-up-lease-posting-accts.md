@@ -84,3 +84,6 @@ Aby przypisać konta do utworzonych ksiąg i grup wynajmu, należy skonfigurowa�
     > [!NOTE]
     > Wybrane konto finansowe lub operacyjne będzie obciążane podczas księgowania faktury za zaplanowany wydatek.
     > Parametr **Kompensacja wydatku z tytułu wynajmu** będzie używany jako typ księgowania dla transakcji na kosztach wykonawczych, ale księgowanie będzie dokonywane na koncie zdefiniowanym w polu **Konto przeciwstawne** w oknie **Wiersze harmonogramu płatności kosztów wykonawczych** w szczegółach wynajmu lub formularzu księgi wynajmu.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

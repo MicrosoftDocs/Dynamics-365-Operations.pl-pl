@@ -82,3 +82,6 @@ Planista produkcji można utworzyć bazową prognozę przy użyciu modeli progno
 5. Kliknij opcję Szczegóły wiersza prognozy.
     * Na tej stronie można wyświetlić wartości dokładności, popyt historyczny i prognozę. Można także modyfikować prognozę.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

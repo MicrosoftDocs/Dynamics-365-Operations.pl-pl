@@ -175,3 +175,6 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
 
 - [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 - [Możliwości rozszerzania — strona główna](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

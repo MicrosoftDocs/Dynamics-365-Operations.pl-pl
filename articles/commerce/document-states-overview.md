@@ -61,3 +61,6 @@ W poniższej tabeli przedstawiono stany dokumentów elementów strony w Commerce
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Dostosowywanie nawigacji w witrynie](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

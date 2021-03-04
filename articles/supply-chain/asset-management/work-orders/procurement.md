@@ -100,3 +100,6 @@ Poniższa ilustracja przedstawia przykład strony **Zamówienie zakupu** z nacis
 
 Podobnie, aby wyświetlić lub wprowadzić numer działania powiązany z wierszem zapotrzebowania na zakup zlecenia pracy, na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** należy wybrać rekord zapotrzebowania na zakup, a następnie w kolumnie **Zapotrzebowanie na zakup** wybrać łącze dla tego zapotrzebowania. Pole **Numer działania** można znaleźć na karcie **Projekt** na skróconej karcie **Szczegóły wiersza**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

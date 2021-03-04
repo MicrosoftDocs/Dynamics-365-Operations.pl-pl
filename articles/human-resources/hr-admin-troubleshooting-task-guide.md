@@ -63,3 +63,6 @@ Wykonaj następujące kroki, aby powtórzyć odtworzyć przewodnik zadania z LCS
 2. Wybierz **Otwórz z LCS**.
 3. Wybierz bibliotekę i węzeł BPM, który ma zapisany przewodnik zadania.
 4. Otwórz przewodnik zadania.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Jeśli przepisy nie nakazują używania ciągłej sekwencji numerów, zaleca si�
 W przypadku awarii zasilania, błędu aplikacji lub innego nieoczekiwanego problemu system nie może automatycznie odtworzyć numerów dla ciągłych sekwencji numerów. Proces oczyszczania można uruchomić ręcznie lub automatycznie w celu odzyskania zagubionych numerów.
 
 Należy dokładnie rozważyć zużycie serwera podczas planowania procesu oczyszczania. Zalecane jest przeprowadzanie oczyszczania jako zadania wsadowego w godzinach poza szczytem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -202,3 +202,6 @@ Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj nastę
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

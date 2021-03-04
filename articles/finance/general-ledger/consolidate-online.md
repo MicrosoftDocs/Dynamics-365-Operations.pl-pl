@@ -96,3 +96,6 @@ Na karcie **Przeliczanie walut** zdefiniuj firmę, konto, typ kursu wymiany i ku
 Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

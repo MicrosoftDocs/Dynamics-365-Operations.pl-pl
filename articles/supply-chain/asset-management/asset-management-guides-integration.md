@@ -114,3 +114,6 @@ Aby skojarzyć przewodnik z szablonem listy kontrolnej konserwowanego składnika
 
 - [Przegląd o podwójnym zapisie](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Omówienie zarządzania składnikami majątku](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

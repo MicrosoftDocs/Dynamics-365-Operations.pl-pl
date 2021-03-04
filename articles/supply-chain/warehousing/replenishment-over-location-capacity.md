@@ -408,3 +408,6 @@ Teraz może być pobrane zamówienie sprzedaży 2. Po zakończeniu pracy uzupeł
 - Można ręcznie zastępować dostępność pracy uzupełniania zapasów dla każdego nagłówka pracy na stronie **Szczegóły pracy**.
 - Jeśli system ustawi dostępność pracy uzupełniania zapasów, będzie ona uwzględniać zapasy znajdujące się już w lokalizacji przed ukończeniem pracy
 - Każda część pracy z zamówieniem sprzedaży jest połączona z określoną pracą uzupełniania zapasów. Nie ma odpowiedniej funkcji dostępności pracy w sprzedaży.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

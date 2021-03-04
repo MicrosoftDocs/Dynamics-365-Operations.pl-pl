@@ -140,3 +140,6 @@ Grupa czynności jest przetwarzana i tworzy pracę dla zarezerwowanych ilości w
 Jeśli wysyłka ma stan **W grupie czynności** lub wyższy, aktualizacje ilości w wierszu zamówienia sprzedaży nie są odzwierciedlane lub sprawdzane w odniesieniu do wiersza ładunku skojarzonego z wysyłką. Zmiany ilości w wierszu ładunku muszą być wprowadzane bezpośrednio w wierszu ładunku.
 
 Sprawdzanie poprawności jest wykonywane po utworzeniu pracy dla wiersza ładunku i wykonaniu rezerwacji. Zmniejszenie ilości w wierszu zamówienia sprzedaży jest następnie sprawdzane w odniesieniu do rezerwacji wiersza pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

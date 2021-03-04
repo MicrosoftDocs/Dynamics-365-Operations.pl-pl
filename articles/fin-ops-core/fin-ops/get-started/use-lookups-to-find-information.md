@@ -83,3 +83,6 @@ Zamiast tego użytkownik musi wyczyścić wartości formantu wyszukiwania, otwor
 Po zastosowaniu filtra (zobacz obraz poniżej) użytkownik może odnaleźć i zaznaczyć wiersz w zwykły sposób.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Wykonaj poniższe kroki, aby dodać godziny sklepu do wydrukowanych przyjęć w 
 W przyjęciu w punkcie sprzedaży zostaną uwzględnione godziny sklepu. Jeśli w szablonie uwzględniono dni wolne od pracy, zostaną one wyświetlone na paragonie.
 
 ![Przykład paragonu](../dev-itpro/media/Storehours3.png "Przykład paragonu")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

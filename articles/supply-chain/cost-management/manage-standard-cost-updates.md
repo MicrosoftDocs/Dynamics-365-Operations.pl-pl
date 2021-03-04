@@ -49,3 +49,6 @@ W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

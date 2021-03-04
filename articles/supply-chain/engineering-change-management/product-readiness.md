@@ -148,3 +148,6 @@ Dla każdego dodawanego wiersza należy określić następujące pola:
 | Kwestionariusz | Umożliwia wybranie kwestionariusza, który ma być używany dla listy kontrolnej. Lista kontrolna jest lokalną listą kontrolną w firmie, w której jest wykonywane sprawdzanie gotowości. System musi być w stanie ocenić, czy na liście kontrolnej jest poprawnie udzielona odpowiedź. Dlatego należy skonfigurować listę kontrolną, aby ocena była przeprowadzana na podstawie prawidłowych odpowiedzi. Aby uzyskać więcej informacji na temat tworzenia kwestionariuszy, zobacz temat [Używanie kwestionariuszy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) i tematy pokrewne. |
 | Automatyczne zatwierdzanie | Rekordy kontroli gotowości zawierają pole wyboru **Zatwierdzona** wskazujące stan zatwierdzenia. Zaznacz pole wyboru **Automatyczne zatwierdzanie** dla kontroli, które mają zostać zatwierdzone natychmiast po zakończeniu przez przypisanego do nich użytkownika. Wyczyść to pole wyboru, aby wymagać wyraźnego zatwierdzenia jako dodatkowego kroku. |
 | Wymagany | Zaznacz to pole wyboru w przypadku kontroli, które musi wykonać przypisany użytkownik. Obowiązkowych kontroli nie można pominąć. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

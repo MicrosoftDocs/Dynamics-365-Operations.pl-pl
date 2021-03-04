@@ -59,3 +59,6 @@ Ta procedura służy do konfigurowania obszaru roboczego Kontrola kosztów, tak 
 27. W polu Węzeł hierarchii wymiarów obiektów kosztów wprowadź lub wybierz wartość.
     * Po wybraniu hierarchii wymiarów obiektów kosztów rozwiń hierarchię wymiarów składników kosztów, aby zobaczyć żądane wartości kosztów. Na przykład po rozwinięciu hierarchii do poziomu Koszty ogólne produkcji można zobaczyć wartość.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

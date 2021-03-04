@@ -63,3 +63,6 @@ Funkcja `NUMBERVALUE( "1 234,56", ",", " ")` zwraca wartość **1234,56**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje konwersji typu](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

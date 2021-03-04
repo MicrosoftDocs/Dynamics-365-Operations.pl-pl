@@ -55,3 +55,6 @@ Po zaimportowaniu danych do modułu Rachunek kosztów można ich użyć do tworz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

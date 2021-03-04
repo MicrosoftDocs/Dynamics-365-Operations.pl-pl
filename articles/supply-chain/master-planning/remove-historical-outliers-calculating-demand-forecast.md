@@ -51,3 +51,6 @@ Można wykluczyć wartości odstające, aby zwiększyć dokładność prognozy. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Sprawdzanie poprawności nie zawiera obliczeń. Należy przetestować model konf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

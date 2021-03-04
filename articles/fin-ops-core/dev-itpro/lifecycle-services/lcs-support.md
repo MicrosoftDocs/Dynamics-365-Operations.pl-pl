@@ -68,3 +68,6 @@ W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Ope
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

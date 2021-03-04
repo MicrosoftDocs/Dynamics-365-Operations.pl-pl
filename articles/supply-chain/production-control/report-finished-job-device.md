@@ -239,3 +239,6 @@ Aby określić, czy pracownicy powinni ponownie używać istniejącego numeru id
 
 > [!NOTE]
 > Aby skonfigurować etykietę, wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Wybór trasy dokumentów \> Układy wyboru trasy dokumentów**. Aby uzyskać więcej informacji, zajrzyj do [Włącz drukowanie etykiet numerów identyfikacyjnych](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

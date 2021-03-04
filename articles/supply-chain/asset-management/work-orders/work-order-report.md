@@ -51,3 +51,6 @@ Na poniższej ilustracji pokazano przykład raportu dotyczącego zlecenia pracy,
 
 ![Rysunek 2](media/21-work-orders.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ W tym temacie wyjaśniono, jak utworzyć grupę uprawnień dla punktu sprzedaży
 16. W polu Grupa uprawnień dla punktu sprzedaży wprowadź lub wybierz wartość. Wszyscy pracownicy na Stanowiskach dla tego zadania będą używali ustawień tej grupy uprawnień punktu sprzedaży, chyba że odnośne uprawnienia zostały zastąpione pracownikom na poziomie ich Stanowisk.  
 17. Wybierz opcję **Zapisz**. Gdy zmiany zostaną zapisane, należy uruchomić harmonogram dystrybucji do pracowników, aby wysłać zmiany do kanałów.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

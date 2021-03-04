@@ -82,3 +82,6 @@ Definicje kolumn zawierają różnego rodzaju kolumny oferujący różne poziomu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Aby skonfigurować integrację między usługą rachunku kosztów a Dynamics 365
 ## <a name="related-resources"></a>Powiązane zasoby
 
 [Usługa rachunu kosztów — strona główna](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

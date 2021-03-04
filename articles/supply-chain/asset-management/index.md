@@ -38,3 +38,6 @@ Poniższy obrazek jest ilustracją interfejsów do innych modułów w Finance an
 ![Omówienie sposobu integracji zarządzania składnikami majątku](media/overview-integrate2.jpg)
 
 Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie zadań związanych z zarządzaniem i serwisowaniem wielu typów urządzeń w firmie, na przykład maszyn, urządzeń produkcyjnych i pojazdów. Zarządzanie składnikami majątku wspiera rozwiązania w wielu branżach.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

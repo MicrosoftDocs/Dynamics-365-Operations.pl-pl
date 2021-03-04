@@ -68,3 +68,6 @@ Zamówienia zwrotu towaru tworzy się zazwyczaj po odebraniu i sprawdzeniu zwró
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

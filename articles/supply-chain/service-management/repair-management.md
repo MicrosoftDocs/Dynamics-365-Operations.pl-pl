@@ -113,3 +113,6 @@ Po rozwiązaniu problemu można zamknąć wiersz naprawy. Ustaw etap naprawy z w
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

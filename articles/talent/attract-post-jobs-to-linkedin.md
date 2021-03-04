@@ -80,3 +80,6 @@ Jeśli występują problemy z publikacją ofert pracy w serwisie LinkedIn, przej
 [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 
 [Rozwiązywanie problemów integracji z serwisem LinkedIn](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

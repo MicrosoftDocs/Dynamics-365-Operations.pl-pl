@@ -53,3 +53,6 @@ Gdy użytkownicy inicjują ofertę w module Sprzedaż, struktura podwójnego zap
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Od prospekta do kasy w podwójnym zapisie](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

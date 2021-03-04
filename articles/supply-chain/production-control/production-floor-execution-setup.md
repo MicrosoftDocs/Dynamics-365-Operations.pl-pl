@@ -80,3 +80,6 @@ W górnej części pokazanej poniżej pokazano, jak interfejs jest domyślnie pr
 Domyślnie interfejs wykonywania rozkładu pracy automatycznie rejestruje się, jeśli nikt nie używa go przez 12 godzin. Użytkownik Supply Chain Management musi się ponownie zalogować. Można jednak wydłużyć limit czasu do 90 dni.
 
 Aby wydłużyć limit czasu, zaloguj się w module Supply Chain Management i przejdź do **Administrowanie systemem \> Użytkownicy \> Rozszerzenia sesji**. Określ konto użytkownika Supply Chain Management służące do logowania się do urządzenia oraz liczbę godzin, dla których sesja powinna pozostać aktywna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

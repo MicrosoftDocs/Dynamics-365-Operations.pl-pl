@@ -208,3 +208,6 @@ W poniższym scenariuszu używana jest aplikacja magazynowa na urządzeniu przen
 
     > [!NOTE]
    > System tworzy jeden identyfikator pracy dla każdego przeniesienia, które musi zostać ukończone. Jeśli zostanie określona lokalizacja, która już zawiera zapasy, zostanie utworzony tylko jeden identyfikator pracy. W przypadku określenia nowej lokalizacji tworzone są dwa identyfikatory pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

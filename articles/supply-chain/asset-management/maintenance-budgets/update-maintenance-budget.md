@@ -75,3 +75,6 @@ Na stronie **Wiersze budżetu konserwacji** można ręcznie dodać nowy wiersz b
 
 - Wiadomo, że odnawianiem niektórych środków trwałych znajduje się obecnie w fazie planowania, ale powiązane zadania nie zostały jeszcze utworzone w module Zarządzanie składnikami majątku. Należy jednak uwzględnić koszty budżetowe tych zadań, które mają być uwzględnione w budżecie konserwacji.
 - Nowe środki trwałe lub typy środków zostały utworzone od czasu dokonania budżetu konserwacji, ale nie skonfigurowano jeszcze planów konserwacji dla tych składników lub typów składników majątku. Należy jednak uwzględnić koszty budżetowe tych składników majątku, które mają być uwzględnione w budżecie konserwacji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Dodatkowe przyciski na stronie **Kategorie kosztu** umożliwiają dostęp do inf
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

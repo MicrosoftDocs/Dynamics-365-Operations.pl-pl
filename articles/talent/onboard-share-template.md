@@ -71,3 +71,6 @@ Microsoft Dynamics 365 Talent: Onboard pozwala udostępniać przewodniki wdraża
 - [Nowości i zmiany w Dynamics 365 Talent](./whats-new.md)
 - [Plany wydań](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Uzyskiwanie pomocy technicznej dotyczącej rozwiązania Microsoft Dynamics 365 Talent](./talent-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

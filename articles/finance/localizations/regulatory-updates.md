@@ -87,3 +87,6 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 - Wszystkie planowane i udostępnione aktualizacje wymagane przepisami prawa znajdziesz w [wyszukiwarce problemów Lifecycle Service](https://lcs.dynamics.com/Logon/Index) (wymagane zalogowanie).
 - Aby uzyskać listę lokalizacji obsługiwanych, zobacz [Przewodnik dostępności w różnych krajach](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

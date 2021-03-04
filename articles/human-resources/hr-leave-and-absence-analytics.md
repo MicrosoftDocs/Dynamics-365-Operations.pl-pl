@@ -45,3 +45,5 @@ Moduł Dynamics 365 Human Resources udostępnia funkcje analityczne pokazujące 
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Tworzenie planu urlopów i nieobecności](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

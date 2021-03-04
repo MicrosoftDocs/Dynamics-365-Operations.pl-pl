@@ -43,3 +43,6 @@ Ten problem może być tylko kwestią czasu. Wykonaj poniższe czynności, aby u
 1. Wybierz **Edytuj** u góry strony i ustaw planowaną datę/godzinę rozpoczęcia na wartość, która odświeży analizy bliżej czasu bieżącego.
 
 ![Zadania wsadowe](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

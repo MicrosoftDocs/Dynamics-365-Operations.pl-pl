@@ -80,3 +80,6 @@ Na stronie z listą **Wszystkie składniki majątku** można wydrukować raport 
 >[!NOTE]
 >Aby wydrukować raport usterek dla kilku składników majątku lub typów składników majątku, kliknij pozycję **Zarządzanie składnikami majątku** > **Raporty** > **Składniki majątku** > **Usterka składnika majątku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

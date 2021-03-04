@@ -50,3 +50,6 @@ Amortyzacja bez żadnego zaokrąglania została obliczona jako 2444,44. Jak poka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

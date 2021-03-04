@@ -35,3 +35,6 @@ W tej procedurze pokazano sposób tworzenia nowego stanu cyklu życia produktu. 
 3. W polu Stan wpisz wartość.
 4. Wypełnij pole Opis.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

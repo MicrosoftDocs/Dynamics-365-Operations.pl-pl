@@ -66,3 +66,6 @@ Aby dodać moduł ikony koszyka, zobacz [Moduł nagłówka](author-header-module
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ To zadanie tworzy umowę instrumentu bankowego w celu przetwarzania poręczenia.
 5. Kliknij przycisk Zapisz.
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

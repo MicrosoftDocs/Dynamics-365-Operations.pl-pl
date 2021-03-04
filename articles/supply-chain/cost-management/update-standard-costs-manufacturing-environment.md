@@ -48,3 +48,6 @@ Każdy przykład wymaga specyficznego sposobu aktualizacji kosztów standardowyc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

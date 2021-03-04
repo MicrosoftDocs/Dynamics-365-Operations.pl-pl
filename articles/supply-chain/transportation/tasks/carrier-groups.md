@@ -38,3 +38,6 @@ Jeśli istnieje wiele przewoźników i usług przewozowych dla tego samego segme
 1. W polu **Nazwa** wprowadź opisową nazwę grupy.
 1. Na **skróconej karcie Szczegóły** dodaj wiersz, a następnie wybierz firmę przewozową i usługę przewoźnika. Powtarzaj ten krok, dopóki nie dodasz tylu przewoźników, ile jest potrzebnych dla grupy.
 1. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

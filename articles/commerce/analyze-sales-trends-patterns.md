@@ -43,3 +43,6 @@ Użytkownicy mogą również badać trendy i wzorce sprzedaży w ujęciu godzino
 - Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
 - Obszar roboczy **Finanse sklepu** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Finanse sklepu** &gt; **Raporty** &gt; **Raport sprzedaży w kanale wg godzin**
 - Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport sprzedaży w kanale wg godzin**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

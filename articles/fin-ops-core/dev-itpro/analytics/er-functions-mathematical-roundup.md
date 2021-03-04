@@ -67,3 +67,6 @@ Funkcja `ROUNDUP (1200.767, -3)` zaokrągla w górę do najbliższej wielokrotno
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje matematyczne](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -138,3 +138,6 @@ Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do 
 Aby zapoznać się z przykładem, należy zapoznać się z formularzem [Włączanie odbiorcy v3 — Mapa tabeli kontaktów](enable-entity-map.md#enable-table-map)
 
 W celu rozwiązania alternatywnego opartego na woluminach danych w każdej jednostce, która musi uruchomić synchronizację początkową, należy zapoznać się z [Zagadnienia dotyczące synchronizacji początkowej](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

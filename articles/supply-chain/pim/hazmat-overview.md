@@ -62,3 +62,6 @@ Aby uzyskać więcej informacji na temat konfigurowania przepisów i wartości m
 ## <a name="warehouse-management"></a>Zarządzanie magazynem
 
 Podczas przygotowywania wysyłki w module Zarządzanie magazynem można wydrukować kilka nowych raportów korzystających z informacji skonfigurowanych w module Zarządzanie informacjami o produktach. Aby uzyskać więcej informacji o dostępnych raportach i sposobach ich używania, zapoznaj się z [zapytaniami i raportami dotyczącymi materiałów niebezpiecznych](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Ponadto w ulepszonej strukturze kategorii produktów kierownik ds. merchadisingu
 Nowej ulepszonej struktury można używać dla właściwości produktów w celu określania, które zaktualizowane właściwości produktów mają być rozpowszechniane do powiązanych produktów. Na stronie **Hierarchia produktów Commerce** w okienku akcji wybierz opcję **Kategoria**, a następnie wybierz opcję **Aktualizuj produkty**, aby otworzyć okno dialogowe **Aktualizuj produkty**.
 
 ![Okno dialogowe Aktualizuj produkty](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

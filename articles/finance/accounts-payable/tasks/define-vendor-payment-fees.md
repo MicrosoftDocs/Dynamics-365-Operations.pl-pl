@@ -59,3 +59,6 @@ Skonfiguruj opłaty od płatności dla dostawcy. W zadaniu wykorzystano firmę d
     * Ta waluta dotyczy opłaty. Waluta płatności jest używana do zdefiniowania, kiedy reguła opłat powinna być stosowana na podstawie waluty płatności. Na przykład bank może nakładać opłatę podczas dokonywania płatności w euro, podczas gdy płatności w innych walutach nie są obciążane.  
 18. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

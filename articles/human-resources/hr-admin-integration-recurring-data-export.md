@@ -205,3 +205,6 @@ Na poniższej ilustracji przedstawiono działanie programu Logic Apps Designer, 
 W tym samouczku przedstawiono sposób użycia aplikacji logicznej do eksportowania danych z modułu zasoby ludzkie i zapisywania eksportowanych danych do folderu OneDrive for Business. Kroki tego samouczka można modyfikować zgodnie z wymaganiami firmy.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

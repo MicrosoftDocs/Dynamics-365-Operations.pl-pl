@@ -68,3 +68,6 @@ Zanim będzie można konfigurować plany świadczeń w module Microsoft Dynamics
 3. Wybierz opcję **Zapisz**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

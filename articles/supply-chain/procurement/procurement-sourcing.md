@@ -104,3 +104,6 @@ Zaopatrzenie i sourcing obejmują wszystkie etapy od identyfikacji popytu na pro
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

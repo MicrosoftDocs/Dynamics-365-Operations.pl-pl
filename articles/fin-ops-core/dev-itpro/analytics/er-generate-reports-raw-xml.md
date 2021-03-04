@@ -37,3 +37,6 @@ Można użyć nowego elementu formatu **RAW XML** do zaprojektowania formatów R
 > Należy pamiętać, że struktura nie kontroluje, czy zawartości XML umieszczana w wygenerowanym dokumencie za pomocą elementu formatu **RAW XML**, jest poprawna.
 
 Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodniki po zadaniach **Użycie nieprzetworzonych danych XML do generowania raportów XML (część 1: model danych)** i **Użycie nieprzetworzonych danych XML do generowania raportów XML (część 2: projektowanie i tworzenie raportów)**, które są częścią procesu biznesowego **7.5.4.3 Pobieranie/opracowywanie składników usług/rozwiązań informatycznych (10677)** i można je pobrać z [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Te wskazówki zadania przeprowadzą Cię przez proces konfigurowania formatu ER w celu wstawienia nieprzetworzonych danych XML do wygenerowanych plików.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

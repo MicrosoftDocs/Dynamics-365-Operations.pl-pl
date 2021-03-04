@@ -205,3 +205,6 @@ Menu **Akcje** można też użyć do utworzenia nowego procesu przez skopiowanie
 Innym przydatnym poleceniem w menu **Akcje** jest **Wyświetlenie stanu procesu budżetu**. To polecenie graficznie pokazuje plany budżetu w procesie wraz z odpowiednimi danymi, takimi jak stan przepływu pracy planów, podsumowania według kwot i jednostki oraz przechodzenie jednym kliknięciem do samych planów budżetu.
 
 [![Stan procesu planowania budżetu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

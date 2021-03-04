@@ -73,3 +73,6 @@ Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera
 | Wyślij użyczony składnik majątku                  | Wybierz użyczony składnik majątku, który powinien być tymczasowy zamiennikiem składnika majątku wybranego w wybranym żądaniu konserwacji. |
 | Zwróć użyczony składnik majątku                | Zarejestruj użyczony składnik majątku jako zwrócony. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

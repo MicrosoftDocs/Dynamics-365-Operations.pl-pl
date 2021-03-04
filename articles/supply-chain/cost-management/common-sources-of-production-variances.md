@@ -63,3 +63,6 @@ Poniżej przedstawiono niektóre typowe źródła odchyleń w **podstawiania pro
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

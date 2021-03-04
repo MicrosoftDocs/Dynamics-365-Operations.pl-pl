@@ -423,3 +423,6 @@ Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domen
 
 [Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Można skonfigurować system, aby wysyłał wiadomości e-mail do użytkowników
 
 > [!NOTE]
 > Szablony wiadomości e-mail przepływu pracy będą czerpane z szablonów wiadomości e-mail systemu lub szablonów wiadomości e-mail organizacji w zależności od tego, czy przepływ pracy jest przepływem pracy na poziomie systemu (nie dotyczący firmy), czy na poziomie organizacji (dotyczący firmy).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

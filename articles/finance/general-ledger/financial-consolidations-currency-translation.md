@@ -182,3 +182,6 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Raportowanie 
 
 ## <a name="generating-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

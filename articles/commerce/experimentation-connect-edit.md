@@ -95,3 +95,6 @@ Jeśli zdefiniowano **całkowity** zakres eksperymentu w kreatorze **Łączenie 
 
 ## <a name="next-step"></a>Następne kroki
 [Podgląd i publikowanie eksperymentu](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

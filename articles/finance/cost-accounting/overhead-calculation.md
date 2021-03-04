@@ -1415,3 +1415,6 @@ W rachunkowości finansowej koszt 10 000,00 za energię elektryczną jest księg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

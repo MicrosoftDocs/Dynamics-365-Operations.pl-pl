@@ -54,3 +54,6 @@ Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osią
 20. W polu Opis wpisz „Dziękuję za całą pomoc podczas konferencji!”.
 21. Kliknij przycisk Wyślij.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

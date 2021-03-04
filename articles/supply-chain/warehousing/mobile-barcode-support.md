@@ -35,3 +35,6 @@ Aplikacja magazynowa dla rozwiązania Dynamics 365 Supply Chain Management zosta
 
 Zalecamy, aby odbiorcy przetestowali aplikację mobilną do skanowania Magazyn na wybranych urządzeniach przed ich zakupem.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

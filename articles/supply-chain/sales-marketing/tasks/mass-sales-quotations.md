@@ -101,3 +101,6 @@ Ta procedura przedstawia sposób efektywnego tworzenia ofert zawierających zest
 11. Wybierz kolejno opcje Sprzedaż i marketing > Oferty sprzedaży > Wszystkie oferty.
     * Sprawdź, czy oferty zostały utworzone dla wszystkich odbiorców określonych w procedury aktualizacji grupowej zgodnie z wybranym szablonem.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

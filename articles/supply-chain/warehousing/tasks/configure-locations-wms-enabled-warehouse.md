@@ -175,3 +175,6 @@ W tym przewodniku pokazano, jak skonfigurować lokalizację dla nowego magazynu 
 6. Na liście kliknij łącze w wybranym wierszu.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

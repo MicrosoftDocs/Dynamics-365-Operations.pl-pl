@@ -50,3 +50,6 @@ To zadanie przedstawia sposób przypisywania szablonu faktury niezależnej do od
     + Rocznie — Wybierz tę opcję i podaj liczbę lat w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 lata będzie generowana faktura dla tego odbiorcy.  
 14. W polu **Na** wprowadź liczbę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -227,3 +227,6 @@ Czas realizacji + Dni ujemne + dzisiejsza data – wymagany termin
 System używa tylko planowanych zamówień dostawy, które znajdują się w danym horyzoncie czasowym, i tworzy nowe zamówienie planowane poza nim. Zaletą dynamicznej liczby dni z ujemnym dniem jest to, że będzie on obejmował czas realizacji poszczególnych produktów, aby ponownie używać istniejących zamówień i uniknąć tworzenia nowych zamówień planowanych, które będą się kończyć na późniejszy dzień, z powodu opóźnień spowodowanych przez czas realizacji. 
 
 Aby uzyskać więcej informacji, przejszyj [Dni ujemne i dynamiczne dni ujemne](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

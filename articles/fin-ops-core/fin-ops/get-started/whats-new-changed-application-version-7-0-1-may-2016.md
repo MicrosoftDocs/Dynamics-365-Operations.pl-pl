@@ -106,3 +106,6 @@ W tym artykule opisano nowe oraz zmienione funkcje dostępne w aplikacji Microso
 [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (maj 2016 r.)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

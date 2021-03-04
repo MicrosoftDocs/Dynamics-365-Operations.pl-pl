@@ -114,3 +114,6 @@ W poniższej tabeli opisano skróty klawiaturowe, które mogą być używane po 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

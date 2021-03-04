@@ -68,3 +68,6 @@ W tym przewodniku po zadaniach opisano fakturowanie zamówienia sprzedaży, łą
 10. Kliknij **Anuluj**.
 11. Kliknij przycisk **Tak**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

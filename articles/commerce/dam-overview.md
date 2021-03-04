@@ -60,3 +60,6 @@ Funkcje cyfrowych składników majątku i zarządzania znajdują się w obszarze
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

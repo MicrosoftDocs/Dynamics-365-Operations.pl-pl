@@ -59,3 +59,6 @@ Funkcja `CN_GBT_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH", 3)` zwraca war
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

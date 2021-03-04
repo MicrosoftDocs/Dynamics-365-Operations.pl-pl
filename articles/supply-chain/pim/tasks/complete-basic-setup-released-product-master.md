@@ -53,3 +53,6 @@ Jest to trzecia z ośmiu procedur opisujących sposób tworzenia kombinacji dla 
 20. Zamknij stronę.
 21. Zamknij formularz **Szczegóły zwolnionego produktu**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

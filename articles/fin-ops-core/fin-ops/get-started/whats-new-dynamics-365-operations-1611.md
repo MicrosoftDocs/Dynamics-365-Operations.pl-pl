@@ -945,3 +945,6 @@ Obecnie moduł Retail Modern POS jest dostępny tylko jako aplikacja systemu Win
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Nowości i zmiany w rozwiązaniu Finance and Operations — strona główna](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

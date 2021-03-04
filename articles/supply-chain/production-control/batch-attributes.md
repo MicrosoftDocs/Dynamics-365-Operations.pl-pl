@@ -53,3 +53,6 @@ Można wyszukiwać atrybuty partii podczas rezerwowania partii dla zamówienia s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

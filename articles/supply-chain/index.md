@@ -106,3 +106,6 @@ Wiele tematów dotyczących zarządzania wytwarzaniem i łańcuchem dostaw możn
 ## <a name="elearning-courses"></a>Kursy eLearning
 
 W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Supply Chain Management w Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

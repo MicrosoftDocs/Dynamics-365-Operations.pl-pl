@@ -37,3 +37,6 @@ Ta procedura zawiera instruktaż sposobu zwalniania produkt lub produktu główn
 6. Kliknij przycisk Dalej.
 7. Kliknij przycisk Zakończ.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

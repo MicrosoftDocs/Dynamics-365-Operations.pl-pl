@@ -78,3 +78,6 @@ Nowa opcja umożliwi menedżerom wyświetlanie wyników zarówno ich bezpośredn
 Mamy przyjemność poinformować o tym, że rozwiązania Talent od 1 sierpnia 2019 r. będą dostępne w regionach Kanada i Azja Południowo-Wschodnia. Dzięki tej zmianie można tworzyć środowiska w regionach Kanada i Azja, a wszystkie dane Talent będą obsługiwane wyłącznie w tych lokalizacjach. Środowisko w tych nowych regionach można utworzyć, wybierając lokalizację w oknie dialogowym Nowe środowisko i używając tego środowiska do inicjowania obsługi Talent w LCS, zgodnie z opisem [Inicjowanie obsługi rozwiązania Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Migracja danych istniejących projektów z innych regionów do Kanady i Azji nie jest obsługiwana. Tylko nowe projekty mogą zostać zainicjowane do tych nowych obsługiwanych regionów.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

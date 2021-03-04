@@ -61,3 +61,6 @@ Aby rozpocząć konfigurowanie tych informacji, należy utworzyć rozporządzeni
 ## <a name="warehouse-management"></a>Zarządzanie magazynem
 
 Po przygotowaniu wysyłki można wydrukować kilka nowych raportów. W tych raportach są używane informacje skonfigurowane w module Zarządzanie informacjami o produktach.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

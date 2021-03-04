@@ -98,3 +98,6 @@ Surowiec można zwolnić dla częściowej ilości wyrobów gotowych lub w okreś
     Dostępne jednostki są zdefiniowane w identyfikatorze grupy sekwencji jednostki wyrobu gotowego.
 
     Przykładowo, wyrób gotowy ma następującą konwersję jednostki z funtów (lbs.) na palety (PL): 1 PL = 100 funtów. Aby utworzyć zlecenie produkcyjne na 10 000 funtów wyrobów gotowych można zwolnić surowce na planowaną do produkcji liczbę palet. Wybierz **PL** jako jednostkę, a następnie wybierz odpowiednią liczbę w polu **Ilość**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

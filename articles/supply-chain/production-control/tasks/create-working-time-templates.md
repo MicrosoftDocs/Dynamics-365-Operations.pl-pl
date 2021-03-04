@@ -79,3 +79,6 @@ Szablony czasu pracy określają godziny pracy w tygodniu i są używane do gene
 3. Rozwiń sekcję Niedziela.
 4. W polu Zamknięte dla pobrania wybierz opcję Tak.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

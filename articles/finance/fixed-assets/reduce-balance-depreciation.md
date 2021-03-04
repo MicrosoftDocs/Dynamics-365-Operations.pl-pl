@@ -85,3 +85,6 @@ Jeśli używasz metody Degresywna, 30 procent podstawy amortyzacji (wartość ks
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

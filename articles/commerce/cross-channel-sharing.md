@@ -137,3 +137,6 @@ W przypadku użycia podstawowego adresu URL kanału i przejścia do adresu URL s
 [Dokumentowanie stanów i cyklów życia](document-states-overview.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

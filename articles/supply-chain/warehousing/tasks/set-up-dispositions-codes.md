@@ -41,3 +41,6 @@ Ta procedura skupia się na skonfigurowaniu kod dyspozycji, którego można uży
 6. W polu Kod dyspozycji zwrotu wpisz wartość.
     * Kod dyspozycji zwrotu określa pozostałą część procesu zamówienia zwrotu dla zarejestrowanych towarów. W tym przykładzie odbiorca powinien otrzymać fakturę korygującą. Dodaj kod dyspozycji zwrotu zawierający akcję Uznanie.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

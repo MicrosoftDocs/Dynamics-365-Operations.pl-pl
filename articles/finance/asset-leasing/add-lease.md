@@ -89,3 +89,6 @@ Wszystkie wpisy w arkuszu, które są tworzone w module Wynajem składnika mają
 
 > [!NOTE]
 > Nie można ręcznie utworzyć Arkusza wynajmu składnika majątku. Jest on tworzony automatycznie podczas tworzenia harmonogramów wynajmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

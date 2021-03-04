@@ -69,3 +69,6 @@ Jest to czwarta z pięciu procedur, które razem przedstawiają proces płatnoś
 8. Kliknij przycisk OK.
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ W tej procedurze pokazano, jak utworzyć nową hierarchię kategorii oraz przypi
 8. Na liście kliknij łącze w wybranym wierszu.
 9. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ Ujednolicona biblioteka APQC (z maja 2016 r.) zawiera przewodniki po zadaniach, 
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 16. Wybierz **Nowy interwał okresu**. Po wprowadzeniu pierwszego interwału okresu nowe okresy mogą być tworzone automatycznie. Później można wrócić i dodawać nowe interwały okresu zgodnie z wymaganiami.  
 17. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

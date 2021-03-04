@@ -296,3 +296,6 @@ Firma Fabrikam odbiera płatność 75,00 od odbiorcy 4000, Northwind Traders. P�
 | Rozrachunki z odbiorcami (Fabrikam West)    |              | 75,00         |
 | Należne od Fabrikam East (Fabrikam West) | 25,00        |               |
 | Rozrachunki z odbiorcami (Fabrikam West)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

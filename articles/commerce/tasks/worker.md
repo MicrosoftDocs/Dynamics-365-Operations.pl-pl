@@ -57,3 +57,6 @@ Ta procedura ilustruje sposób konfigurowania pracownika jako przedstawiciela ha
 6. W polu Grupa domyślna wprowadź lub wybierz wartość.
 7. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

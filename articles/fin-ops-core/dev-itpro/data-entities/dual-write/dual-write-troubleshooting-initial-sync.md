@@ -211,3 +211,6 @@ Jeśli istnieją wiersze w jednostce klienta mają wartości w polach **ContactP
     Początkowa synchronizacja wierszy jest teraz zakończona.
 
 8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla jednostki **Klienci V3**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

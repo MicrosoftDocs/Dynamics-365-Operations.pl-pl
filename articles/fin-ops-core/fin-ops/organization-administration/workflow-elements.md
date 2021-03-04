@@ -89,3 +89,6 @@ Poniższe elementy pozwalają projektować przepływy pracy z alternatywnymi odd
 ### <a name="subworkflow"></a>Podrzędny przepływ pracy
 
 *Podrzędny przepływ pracy* jest przepływem pracy, który działa w kontekście innego przepływu pracy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

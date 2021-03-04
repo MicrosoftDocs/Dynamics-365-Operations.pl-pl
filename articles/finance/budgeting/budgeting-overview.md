@@ -70,3 +70,6 @@ Na przykład można określić, kto wykonuje budżetowanie, co jest ujęte w bud
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

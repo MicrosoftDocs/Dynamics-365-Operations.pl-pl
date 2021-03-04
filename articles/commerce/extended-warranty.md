@@ -239,3 +239,6 @@ Gwarancja to usługa oferowana dla konkretnego, unikatowego produktu. W Dynamics
 [Konfigurowanie asortymentów](set-up-assortments.md)
 
 [Omówienie sekwencji identyfikatorów](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

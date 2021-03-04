@@ -53,3 +53,6 @@ W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek 
 
     ![Rysunek 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

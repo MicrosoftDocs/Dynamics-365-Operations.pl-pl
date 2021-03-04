@@ -71,3 +71,6 @@ Aby utworzyć szablon procesu rekrutacji, wykonaj poniższe czynności.
     - Aby usunąć działanie, rozwiń je, a następnie kliknij przycisk kosza w nagłówku działania.
 
 8. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

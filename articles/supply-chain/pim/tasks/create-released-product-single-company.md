@@ -103,3 +103,6 @@ Ta procedura prowadzi przez proces tworzenia jednego zwolnionego produktu w rama
 12. Na liście znajdź i zaznacz odpowiedni rekord.
 13. Na liście kliknij łącze w wybranym wierszu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

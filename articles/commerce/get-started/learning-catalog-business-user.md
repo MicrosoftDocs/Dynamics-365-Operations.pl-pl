@@ -52,3 +52,6 @@ Aby uzyskać informacje dotyczące funkcji udostępnianych innym aplikacjom Fina
 | Zawartość | opis  | Format   | Długość    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurowanie handlu elektronicznego w Dynamics 365 Commerce i praca z nim](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Kanały online i witryna handlu elektronicznego Dynamics 365   Commerce umożliwiające detalistom tworzenie obecności online ich marki. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

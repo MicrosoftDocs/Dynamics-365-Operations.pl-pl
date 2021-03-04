@@ -48,3 +48,6 @@ Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wyb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

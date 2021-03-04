@@ -129,3 +129,6 @@ Te zadania są przeznaczone dla administratorów systemu.
 8. W polu Kraj/region wpisz „PRT”.
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

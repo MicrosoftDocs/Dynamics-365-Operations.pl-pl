@@ -67,3 +67,6 @@ Ta procedura służy do tworzenia i przypisywania zasady alokacji kosztów wraz 
 5. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
 6. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

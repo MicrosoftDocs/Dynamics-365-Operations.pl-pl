@@ -196,3 +196,6 @@ Konfigurowanie integracji z modułem Power BI. Aby uzyskać więcej informacji, 
 [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

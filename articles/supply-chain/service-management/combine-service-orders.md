@@ -113,3 +113,6 @@ Dodatkowe grupowanie wierszy zlecenia serwisowego w zlecenia serwisowe zostanie 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

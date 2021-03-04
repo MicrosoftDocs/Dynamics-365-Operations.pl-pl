@@ -397,3 +397,6 @@ W tym scenariuszu paleta 3 zostanie zaakceptowana.
 1. Wybierz przycisk menu (**≡**) u góry strony, a następnie w menu wybierz opcję **Anuluj**, aby wrócić do menu.
 
 Teraz możesz zamknąć aplikację mobilną.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

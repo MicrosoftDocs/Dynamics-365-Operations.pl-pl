@@ -57,3 +57,6 @@ Dane aplikacji są używane do wypełniania raportów w pakiecie zawartości Szk
 | Training\_Position        | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Imię, drugie imię i nazwisko                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Tytuł i data ustalenia stażu pracy                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

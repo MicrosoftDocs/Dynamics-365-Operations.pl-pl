@@ -53,3 +53,6 @@ W tym temacie opisano sposób konfigurowania przepływu pracy zatwierdzania, kt�
 14. Na stronie **Utwórz przepływ pracy** wybierz opcję **Zamknij**.
 14. Zaznacz nowy przepływ pracy, a następnie wybierz opcję **Wersje**. Następnie wybierz opcję **Uaktywnij**, aby się upewnić, że przepływ pracy jest aktywny.
 15. Kliknij przycisk **Zamknij**. Zostanie wyświetlona nowa aktywna wersja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -137,3 +137,6 @@ Program Dynamics 365 Finance nie umożliwia wydrukowania formularza 1096 „Rocz
 **Aktualizacja danych formularza 1099 za pośrednictwem konta głównego** to nowa funkcja dla sektora publicznego, którą można włączyć w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja umożliwia powiązanie wartości formularza 1099 dla dostawcy za pośrednictwem konta głównego w obszarze podziału księgowań, a nie na domyślnym koncie w rekordzie dostawcy.
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie dostawców dla raportowania 1099](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

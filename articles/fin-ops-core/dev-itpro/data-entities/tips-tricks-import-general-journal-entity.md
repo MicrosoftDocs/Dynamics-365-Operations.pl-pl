@@ -65,3 +65,6 @@ W poniższych sekcjach opisano wpływ tych ustawień. Wyjaśniają one także, w
 - Jeśli w polu **Numer załącznika** ustawiono wartość **Utworzone automatycznie**, import nie powiedzie się. Ustawienie **Utworzone automatycznie** nie jest obsługiwane dla pola **Numer załącznika**.
 
 Domyślnie jednostka Arkusz finansowy używa przetwarzania opartego na zestawie. Po zbadaniu wymagań biznesowych organizacji można zmienić wartość ustawienia **Przetwarzanie oparte na zestawie**, klikając opcję **Jednostki danych** w obszarze roboczym **Zarządzanie danymi**. Przetwarzanie oparte na zestawie przyspiesza proces importowania. Jeśli nie używasz przetwarzania opartego na zestawie, importowanie jednostki Arkusz finansowy będzie wolniejsze.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

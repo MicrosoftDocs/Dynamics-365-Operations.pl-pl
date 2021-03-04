@@ -1233,3 +1233,6 @@ Zwróć uwagę, że stopka wygenerowanego raportu nie zawiera nazwy formatu ER, 
 - [Funkcja IF](er-functions-logical-if.md)
 - [Funkcja ORDERBY](er-functions-list-orderby.md)
 - [Funkcja SESSIONNOW](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

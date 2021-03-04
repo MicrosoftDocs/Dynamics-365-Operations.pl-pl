@@ -65,3 +65,6 @@ W tej procedurze pokazano sposób tworzenia harmonogramu dostaw na podstawie zam
 22. Kliknij przycisk OK.
 23. Kliknij przycisk Tak.
 24. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

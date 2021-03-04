@@ -132,3 +132,6 @@ Lokalizację czynności konserwacyjnych z powiązanymi lokalizacjami podrzędnym
 
 >[!NOTE]
 >Jeśli nie można usunąć lokalizacji czynności konserwacyjnych, można ją obsługiwać, konfigurując w tym celu stan cyklu życia lokalizacji czynności konserwacyjnych. Na przykład można skonfigurować etap „Uznany za odpadki” lub „Usunięty”, który nie powinien być aktywnym etapem, w formularzu **Stany czasu trwania lokalizacji czynności konserwacyjnych**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

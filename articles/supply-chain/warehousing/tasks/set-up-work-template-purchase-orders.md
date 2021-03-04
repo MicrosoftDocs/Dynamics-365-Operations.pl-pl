@@ -61,3 +61,6 @@ W tym temacie opisano konfigurowanie prostego szablonu pracy, który ma być uż
 6. W polu **Identyfikator klasy roboczej** wpisz wartość. Instrukcje pobierania i odkładania są zestawem. Każdy zestaw pobrania/odłożenia musi mieć tę samą klasę pracy. Użyj tej samej klasy pracy, jak podana w instrukcji pobrania.  
 7. Wybierz opcję **Zapisz**. Należy zwrócić uwagę, że pole wyboru **Ważne** jest teraz zaznaczone.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

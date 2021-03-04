@@ -296,3 +296,6 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 ## <a name="notes-and-tips"></a>Notatki i porady
 
 W przypadku, gdy identyfikator grupy staje się nadrzędnym numerem identyfikacyjnym dla zagnieżdżonej palety, pozycja jest automatycznie podawana podczas skanowania identyfikatora grupy. Nie trzeba skanować kolejnych numerów identyfikacyjnych, nawet jeśli dla generowania numerów identyfikacyjnych jest ustawiona wartość ręczna.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -227,3 +227,6 @@ Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigow
 [Raportowanie finansowe](financial-reporting-intro.md)
 
 [Generowanie raportów finansowych](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

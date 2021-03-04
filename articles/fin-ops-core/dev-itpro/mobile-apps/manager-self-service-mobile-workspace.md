@@ -97,3 +97,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 1.  Kliknij opcję **Wyślij pochwałę**. 
 1. Wprowadź tekst pochwały, jaką chcesz wysłać. 
 1. Wybierz opcję **Gotowe**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

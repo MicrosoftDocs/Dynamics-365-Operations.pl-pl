@@ -61,3 +61,6 @@ Jest to przydatne w przypadku, gdy użytkownik chce uzyskać przegląd spodziewa
 >[!NOTE]
 >Aby skoncentrować się tylko na planowaniu zdolności produkcyjnych w odniesieniu do zaplanowanych zleceń pracy, zobacz [Obliczanie obciążenia zdolności produkcyjnych na zaplanowanych zleceniach pracy](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

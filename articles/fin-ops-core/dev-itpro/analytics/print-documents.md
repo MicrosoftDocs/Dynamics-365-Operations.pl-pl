@@ -74,3 +74,6 @@ Na poniższym diagramie przedstawiono podstawowe składniki pomagające obsługi
 [![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Należy zwrócić uwagę, że jedną drukarkę można zarejestrować w wielu Agentach rozsyłania dokumentów. Aby odczytywać preferencje drukarki, hostowana usługa używa ścieżki sieciowej, która unikatowo identyfikuje każdą drukarkę sieciową. W związku z tym nawet jeśli drukarka jest zarejestrowana na wielu klientach, pojawia się jako jedna opcja wyboru na liście dostępnych drukarek w aplikacjach.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

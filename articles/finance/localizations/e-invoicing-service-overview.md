@@ -113,3 +113,6 @@ Włączenie i używanie Faktur elektronicznych może wymagać przesłania ograni
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Meksyku](e-invoicing-mex-get-started.md)
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch](e-invoicing-ita-get-started.md)
 - [Skonfiguruj dodatek Faktury elektroniczne](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

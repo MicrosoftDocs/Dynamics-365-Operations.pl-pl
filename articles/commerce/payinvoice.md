@@ -45,3 +45,6 @@ Aby te scenariusze były dostępne, należy skonfigurować profil funkcji dla sk
 
 > [!NOTE]
 > Płatność lub rozliczenie kwot częściowych nie są jeszcze obsługiwane.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

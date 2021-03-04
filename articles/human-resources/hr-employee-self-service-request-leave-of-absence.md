@@ -53,3 +53,6 @@ Możesz przesłać wniosek o urlop i sprawdzić stan swoich wniosków urlopu w D
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Wstrzymywanie urlopu](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

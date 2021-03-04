@@ -59,3 +59,6 @@ Następnie należy skojarzyć konta z typami wydatków. Te konta będą obciąż
 7. W odpowiednich polach wybierz konto główne leasingu finansowego i konto główne leasingu operacyjnego.
 
 Po wykonaniu tych kroków można dodawać wydatki za pomocą wierszy w sekcji **Harmonogram płatności kosztów wykonawczych** na stronie **Szczegóły wynajmu** dla wybranej umowy wynajmu. Wydatki można dodawać również podczas tworzenia nowej umowy wynajmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ W miarę zmieniających się przedsiębiorstw i zmian okoliczności ryzyko kredy
 Istnieje możliwość uruchomienia procesu **Aktualizuj statystyki salda odbiorcy** w celu zaktualizowania obliczania statystyk salda wyświetlanego na stronie **Informacje o statystykach salda**. Te informacje służą do obliczania wyników ryzyka i wartości wyświetlanych w polach informacji statystycznych dotyczących odbiorcy na stronie **Odbiorca**.
 
 Po uruchomieniu tego procesu system aktualizuje statystykę salda odbiorcy dla jednego odbiorcy. Aby skonfigurować zadanie przetwarzania wsadowego w celu uruchomienia procesu dla wielu odbiorców, można skorzystać ze strony **Oblicz statystykę salda** (**Zarządzanie kredytem \> Zadania okresowe \> Oblicz statystykę salda**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Jeśli tworzysz wpis do budżetu pierwotnego przy użyciu modelu i wartości wym
     * Aby skonfigurować opcjonalne ustawienia, u góry strony kliknij ikonę odblokowania.  
 18. Kliknij przycisk Aktualizuj.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

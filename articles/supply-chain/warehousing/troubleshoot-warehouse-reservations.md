@@ -78,3 +78,6 @@ Jednakże w przypadku użycia towaru, który ma „partię poniżej” hierarchi
 Jest to celowe. Jeśli wymiar zostanie umieszczony powyżej wymiaru **Lokalizacji** w hierarchii rezerwacji, musi zostać on określony przed zwolnieniem do magazynu. Microsoft ocenił ten błąd i ustalił, że jest on ograniczeniem funkcji w trakcie zwalniania do magazynu z warsztatu planowania wysyłki ładunku. Ilości częściowe nie mogą zostać zwolnione, jeśli nie określono co najmniej jednego wymiaru powyżej **Lokalizacji**.
 
 Aby uzyskać więcej informacji, zobacz [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

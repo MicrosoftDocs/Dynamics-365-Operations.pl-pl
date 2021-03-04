@@ -94,3 +94,6 @@ Aby uzyskać instrukcje dotyczące dodawania modułu kart upominkowych do strony
 [Obsługa zewnętrznych kart upominkowych](./dev-itpro/gift-card.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Za pomocą funkcji anulowania pracy można anulować tylko pracę następująceg
 Aby odblokować pracę, system anuluje wszystkie pozostałe wiersze pracy i naprawia dane magazynu skojarzone z określonym przez użytkownika identyfikatorem pracy. Następnie można wznowić wszystkie zwykłe operacje obsługi magazynu, które obejmują uwzględnioną ilość pozycji.
 
 Aby umieścić uwzględnioną pozycję w określonej lokalizacji po anulowaniu pracy, użytkownik musi skorzystać z operacji przeniesienia zapasów lub korekty ilości na urządzeniu przenośnym.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -500,3 +500,6 @@ Kwerendy przedstawione w poprzednich przykładach mogą zwracać wynik podobny d
 ```
 
 Należy zwrócić uwagę, że pola ilości są ustrukturyzowane i w postaci słownika miar i skojarzonych z nimi wartości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Na stronie **grup zapotrzebowania** można wybrać komunikaty akcji, które maj�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

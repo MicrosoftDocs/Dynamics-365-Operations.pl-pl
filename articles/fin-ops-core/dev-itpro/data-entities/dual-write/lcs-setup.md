@@ -90,3 +90,6 @@ Aby skonfigurować połączenie podwójnego zapisu, należy wykonać następują
 
 > [!NOTE]
 > Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finance and Operations, a następnie wybierz opcję **Rozłącz**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

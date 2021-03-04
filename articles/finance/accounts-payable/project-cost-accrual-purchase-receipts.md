@@ -83,3 +83,6 @@ Faktura od dostawcy pozostanie w stanie oczekiwania do momentu nadejścia rzeczy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

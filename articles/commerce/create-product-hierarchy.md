@@ -80,3 +80,6 @@ Grupy atrybutów kategorii można również przypisać do każdej grupy w zależ
 [Zarządzanie kategoriami produktów i produktami ](category-management-product-creation.md)
 
 [Zmiana porządku sortowania dla podmiotów merchandisingowych](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

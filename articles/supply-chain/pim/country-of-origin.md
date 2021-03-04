@@ -91,3 +91,6 @@ Podczas generowania raportu BOM można uwzględnić kraj pochodzenia dla każdej
 Raport zawierający informacje o kraju pochodzenia każdej części jest generowany i pokazywany. Oto przykład tabeli raportu.
 
 ![Raport kraju pochodzenia](media/country-of-origin-report.png "Raport kraju pochodzenia")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

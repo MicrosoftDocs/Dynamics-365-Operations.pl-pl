@@ -96,3 +96,6 @@ Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

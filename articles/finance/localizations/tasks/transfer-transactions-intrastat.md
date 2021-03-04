@@ -153,3 +153,6 @@ Ta procedura pokazuje, jak skonfigurować parametry systemu Intrastat i przesła
     
 Przejrzyj przeniesione dane, w tym kraj/region miejsca docelowego/wysyłki, kraj pochodzenia, wagę, ilość, ilość w jednostkach dodatkowych, oznaczenie asortymentu, kod transakcji, kwoty na fakturach i kwoty statystyczne. W razie potrzeby można zmodyfikować te dane.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

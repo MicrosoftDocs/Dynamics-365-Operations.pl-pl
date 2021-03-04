@@ -102,3 +102,6 @@ Można utworzyć polisę ubezpieczeniową i gwarancje na stronie **Wszyscy odbio
     W tym przypadku efektywny limit kredytu to 125 000 (= A + \[B × C\]).
     
     Jeśli jednak zostanie zaznaczone pole wyboru **Uwzględnij w ekspozycji**, **Aktualizuj limit kredytu** będzie wynosić 50 000 (= 50,00 procent z 100 000), a wartość ekspozycji wynosi 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

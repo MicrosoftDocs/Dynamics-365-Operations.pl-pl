@@ -54,3 +54,6 @@ W tej procedurze pokazano, jak utworzyć nową księgę środków trwałych i sk
     * Należy zauważyć, że okresy amortyzacji są obliczane po ustawieniu okresu użytkowania.  
     * Można ustawić konwencję amortyzacji zgodnie z wymogami dla celów podatkowych.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -179,3 +179,6 @@ Zwróć uwagę na następujące zachodzące zdarzenia:
 - Zwolnienie do magazynu jest wyzwalane dla połączonego zamówienia sprzedaży.
 - Praca obejmująca wysyłkę i przeładunek kompletacyjny jest tworzona na podstawie zwolnienia. Ta praca instruuje operatora magazynu, że powinien pobrać ilości wymagane do zrealizowania wiersza zamówienia sprzedaży i umieścić je w lokalizacji wychodzącej określonej w dyrektywie lokalizacji przeładunku kompletacyjnego.
 - Jeśli ilość w zleceniu produkcyjnym jest większa niż ilość wymagana przez zamówienie sprzedaży, jest tworzona zwykła praca odłożenia. Ta praca instruuje operatora magazynu, że powinien pobrać ilość wyrobów gotowych pozostałą po przeładunku kompletacyjnym i przenieść ją do zwykłego magazynu zgodnie z dyrektywą lokalizacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

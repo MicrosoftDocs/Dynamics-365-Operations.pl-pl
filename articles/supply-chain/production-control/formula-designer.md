@@ -121,3 +121,6 @@ Kliknij przycisk **Ustawienia**, aby dostosować informacje wyświetlane w widok
 |     lista BOM     | Użyj pól wyboru, aby wybrać kryteria pokazane w strukturze drzewa. W projektancie formuł wybrane kryteria są wyświetlane u dołu obydwu kart. |
 |    Marszruta    |                                           Użyj pól wyboru, aby wybrać kryteria pokazane dla marszrut.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

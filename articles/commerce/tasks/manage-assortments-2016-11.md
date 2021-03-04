@@ -55,3 +55,6 @@ Ta procedura przedstawia sposób tworzenia i publikowania nowego asortymentu pro
 1. Kliknij przycisk Publikuj.
 2. Kliknij przycisk Tak.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

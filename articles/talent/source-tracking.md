@@ -102,3 +102,6 @@ Aby uniknąć negatywnych skutków w interfejsie użytkownika, nie edytuj i nie 
 - **Inna**
 
 Zamiast tego można rozszerzyć wyliczenia **źródła talentu**, aby dodać inne typy źródeł.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

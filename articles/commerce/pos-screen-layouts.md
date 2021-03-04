@@ -205,3 +205,6 @@ Projektant siatki przycisków pozwala konfigurować siatki przycisków, których
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Instalowanie projektanta układów aplikacji Retail Point of Sale (POS)](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

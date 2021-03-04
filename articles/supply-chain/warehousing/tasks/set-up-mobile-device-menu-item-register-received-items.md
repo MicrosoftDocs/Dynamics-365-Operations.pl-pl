@@ -60,3 +60,6 @@ Zadania z przewodnika można wykonać przy użyciu danych firmy demonstracyjnej 
 6. Wybierz opcję **Zapisz**.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

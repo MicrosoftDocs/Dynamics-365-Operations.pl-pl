@@ -218,3 +218,6 @@ Aby wyświetlić, do których planach budżetowych dodano stanowisko podlegając
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

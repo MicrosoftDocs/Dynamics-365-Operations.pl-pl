@@ -303,3 +303,6 @@ Jeśli jednak do tworzenia kodów kreskowych jest używane źródło danych **Ko
 - [Aplikacje docelowe Raportowania elektronicznego](electronic-reporting-destinations.md)
 - [Język formuł raportowania elektronicznego](er-formula-language.md)
 - [Funkcja NUMBERFORMAT](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

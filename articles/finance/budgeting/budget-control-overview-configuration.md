@@ -127,3 +127,6 @@ Po włączeniu kontroli budżetu użytkownicy otrzymają komunikaty ostrzeżeń 
 Z tej strony użytkownicy mogą przechodzić do strony **Statystyk kontroli budżetu według okresu**, aby obejrzeć szczegóły dotyczące dostępności i rezerwacji budżetu dla wybranej kombinacji wymiarów kontroli budżetu. Użytkownicy mogą również przejść do strony **Statystyka kontroli budżetu** w celu wyświetlenia dostępności budżetu dla wszystkich kombinacji wymiarów finansowych, które są używane w kontroli budżetu. 
 
 Po włączeniu kontroli budżetu dla zamówień zakupu menedżer budżetu może w obszarze roboczym **Budżety i prognozy księgi** sprawdzić kolejkę wszystkich niepotwierdzonych zamówień zakupu, które mają ostrzeżenia i błędy kontroli budżetu. Jeśli menedżer budżetu ma skonfigurowane uprawnienia ponadbudżetowe, może potwierdzać zamówienia zakupu bezpośrednio w obszarze roboczym.    
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

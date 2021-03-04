@@ -152,3 +152,6 @@ Można określić liczbę transakcji finansowych, które będą tworzone podczas
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

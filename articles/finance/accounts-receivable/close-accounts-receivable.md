@@ -62,3 +62,6 @@ Tworzenie i przesyłanie listy sprzedaży do Unii Europejskiej
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

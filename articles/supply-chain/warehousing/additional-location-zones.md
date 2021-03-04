@@ -58,3 +58,6 @@ Aby móc używać funkcji *Dodatkowa strefa lokalizacji*, należy ją włączyć
 7. Wybierz opcję **Utwórz**.
 8. Otrzymujesz komunikaty informujące o dodaniu nowych lokalizacji. Wybierz przycisk **Pokaż komunikaty**, aby wyświetlić komunikaty.
 9. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Lokalizacje**. Nowe lokalizacje są wyświetlane na liście – dostępne są wszystkie pola strefy (to znaczy, istniejące pole strefy i nowe dodatkowe pola).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

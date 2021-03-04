@@ -55,3 +55,6 @@ Na tym etapie nowe pole oraz dane dla niego powinny być dostępne do edycji w p
 [Edytowanie wymiarów finansowych dla transakcji sprzedaży detalicznej](edit-financial-dim.md)
 
 [Tworzenie skoroszytu programu Excel w celu edytowania transakcji detalicznych](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

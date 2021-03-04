@@ -60,3 +60,6 @@ Upewnij się, że pole Konto odbiorcy zawiera numer odbiorcy US-001.
     * Istnieją dwie umowy rabatu wiersza na produkt T0012, określając 5 procent rabatu za ilość wiersza zamówienia od 1 do 10 oraz 7 procent rabatu dla ilości w zamówieniu powyżej 10. Należy zwrócić uwagę, że rabaty są stosowane do grupy produktów, w tym przykładzie grupy o kodzie 01, do której należy produkt T0012.  
 4. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

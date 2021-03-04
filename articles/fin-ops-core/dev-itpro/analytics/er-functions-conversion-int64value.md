@@ -73,3 +73,6 @@ Funkcja `INT64VALUE ( VALUE("22565422744.77"))` zwraca wartość *Int64* wynosz�
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje konwersji typu](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

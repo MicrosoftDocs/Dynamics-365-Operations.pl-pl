@@ -131,3 +131,6 @@ Realizacja zamówienia w punkcie sprzedaży obejmuje filtrowanie ułatwiające u
 - Data utworzenia
 - Data dostawy
 - Data przyjęcia
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ W tej procedurze wyjaśniono sposób modyfikowania konfiguracji formatu raportow
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Używanie zmodyfikowanej wersji roboczej formatu ER w przetwarzaniu arkusza płatności
 
 Przejrzyj utworzony arkusz, w tym nowy szczegół wierszy płatności — datę płatności.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

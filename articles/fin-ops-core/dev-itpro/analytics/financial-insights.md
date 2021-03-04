@@ -247,3 +247,6 @@ Informacje zawarte w poniższych materiałach nie są wymagane, aby można było
 - [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

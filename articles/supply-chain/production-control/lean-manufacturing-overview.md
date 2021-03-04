@@ -83,3 +83,6 @@ Oprócz tego produkcja oszczędna (lean manufacturing) obsługuje procesy zakupu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

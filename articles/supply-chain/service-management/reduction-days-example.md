@@ -121,3 +121,6 @@ W czasie fakturowania transakcji za miesiąc marzec 2011 roku cena sprzedaży 20
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

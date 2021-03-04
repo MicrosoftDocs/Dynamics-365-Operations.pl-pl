@@ -73,3 +73,6 @@ Jeśli funkcja lub moduł witryny handlu elektronicznego używa nieistotnego pli
 [Moduł zgody na pliki cookie](cookie-consent-module.md) 
  
 [Moduł nagłówka](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

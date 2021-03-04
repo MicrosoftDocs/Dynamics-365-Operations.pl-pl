@@ -167,3 +167,6 @@ Następujące pola zmieniają działanie procesu księgowania.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

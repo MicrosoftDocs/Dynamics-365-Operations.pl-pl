@@ -83,3 +83,6 @@ Ponadto można włączyć pola **Godzina rozpoczęcia** i **Godzina zakończenia
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

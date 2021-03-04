@@ -259,3 +259,6 @@ Użytkownik, który konfiguruje parametry procesu ZO może utworzyć wiele szabl
 - %createddate%
 
 Jeśli zmiana jest wymagana i jest wysyłana po przesłaniu ZO , zapytanie ofertowe zostanie wysłane do wszystkich zaproszonych dostawców. Opublikowany dokument zostaną również zaktualizowane na stronie **Otwarte opublikowane zapytania ofertowe**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

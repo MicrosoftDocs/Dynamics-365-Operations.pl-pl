@@ -87,3 +87,6 @@ Aby dodać moduł harmonijki do strony Często zadawanych pytań i ustawić wyma
 [Moduł tabularny](add-tab.md)
 
 [Moduł bloku tekstu](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

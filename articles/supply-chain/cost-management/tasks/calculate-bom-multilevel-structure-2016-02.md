@@ -49,3 +49,6 @@ W tej procedurze pokazano, jak obliczyć koszt wyrobu gotowego przy użyciu wiel
 11. Zamknij stronę.
 12. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

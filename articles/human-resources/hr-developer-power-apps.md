@@ -60,3 +60,5 @@ Aby pobrać **Power Automate — połączenie SQL i wykonywanie**, przejdź do s
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

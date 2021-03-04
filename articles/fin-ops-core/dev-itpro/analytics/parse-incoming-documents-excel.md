@@ -46,3 +46,6 @@ Jeśli jeszcze nie odtwarzano przewodnika po zadaniu [ER Tworzenie wymaganych ko
 | Opis zawartości    | Plik                                                            |
 |------------------------|-----------------------------------------------------------------|
 | Konfiguracja modelu ER | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

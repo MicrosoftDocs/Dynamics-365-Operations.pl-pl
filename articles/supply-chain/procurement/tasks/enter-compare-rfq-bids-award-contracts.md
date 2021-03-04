@@ -107,3 +107,6 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 ## <a name="view-the-purchase-order-that-is-generated"></a>Wyświetlanie wygenerowanego zamówienia zakupu
 
 W okienku akcji na karcie **Ogólne** wybierz opcję **Zamówienie zakupu**. Na wyświetlonej stronie widać zamówienie zakupu wygenerowane w momencie akceptacji oferty.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

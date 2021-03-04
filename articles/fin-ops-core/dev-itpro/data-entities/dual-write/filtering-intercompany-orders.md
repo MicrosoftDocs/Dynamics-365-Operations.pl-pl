@@ -65,3 +65,6 @@ Każda ze standardowych jednostek w usłudze Common Data Service jest rozszerzan
 7. Po rozszerzeniu jednostki **Oferty** zastosuj filtr z `CUSTGROUP !=  "<company>"` jako ciągiem zapytania.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Nagłówek oferty sprzedaży, edytowanie zapytania":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

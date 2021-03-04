@@ -81,3 +81,6 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Magazyny (rozwiązanie Supply Chain Management do rozwiązania Field Service): Magazyn
 
 [![Mapowanie szablonu w integracji danych](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

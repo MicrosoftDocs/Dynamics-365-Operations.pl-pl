@@ -350,3 +350,6 @@ Jeśli decyzja musi zostać podjęta w określonym czasie, wykonaj następujące
     - **Lata** — Wybierz dzień, tydzień i miesiąc, do kiedy należy podjąć decyzję. Może to być na przykład piątek trzeciego tygodnia grudnia.
 
 4. W przypadku przekroczenia tego limitu czasu system sam podejmie decyzję. Na liście **Akcja** zaznacz opcję, którą system powinien wybrać.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

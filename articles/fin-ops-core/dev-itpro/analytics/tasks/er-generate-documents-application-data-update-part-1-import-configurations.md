@@ -75,3 +75,6 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
     * Przejrzyj strukturę formatu używaną do generowania raportu Intrastat. Należy zwrócić uwagę na to, że jest ona przeznaczona do generowania pliku XML przez wypełnianie danymi z modelu danych zależnego od pozycji głównej „Dla dokumentu wychodzącego”. Upewnij się, że nazwa wygenerowanego pliku jest zdefiniowana w formularzu okna dialogowego użytkownika (do tego jest używane źródło danych „fn”).   
 30. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

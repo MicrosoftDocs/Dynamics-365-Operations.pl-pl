@@ -65,3 +65,6 @@ Kroki te można wykonać przy użyciu dowolnego zestawu danych. Aby wykonać te 
     * Przykładowe mapowanie Intrastat  
 5. Kliknij przycisk Utwórz konfigurację.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

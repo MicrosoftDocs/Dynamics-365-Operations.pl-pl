@@ -210,3 +210,6 @@ Oprócz ograniczeń, które obecnie dotyczą produktów w ilości efektywnej, oz
 
 > [!NOTE]
 > Powyższe informacje o znacznikach ilości efektywnej są prawidłowe tylko wtedy, gdy produkt w ilości efektywnej ma metodę śledzenia wymiarów znaczników ilości efektywnej, która jest w pełni śledzona (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i wszystkie wymiary przechowywania**). Jeśli towar w ilości efektywnej jest tylko częściowo śledzony znacznikami (to znaczy, jeśli parametr **Metoda śledzenia wymiaru znaczników ilości efektywnej** w zasadzie obsługi towarów w ilości efektywnej jest ustawiany na **Wymiary produktu, wymiary śledzenia i stan zapasów**), obowiązują dodatkowe ograniczenia. Ponieważ w tym przypadku widoczność jest tracona między znacznikiem i zapasami, niektóre dodatkowe scenariusze nie są obsługiwane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

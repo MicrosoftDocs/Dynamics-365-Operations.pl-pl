@@ -57,3 +57,6 @@ Wykonaj poniższe kroki, aby rozwiązać problemy z szablonami ER, do których n
 Podobny problem może wystąpić w przypadku migrowania wystąpienia aplikacji do innej lokalizacji, która została użyta jako lokalizacja docelowa migracji, dla której magazyn obiektów blob już zawiera pliki szablonów ER.
 
 Ponieważ możesz mieć kilka konfiguracji formatu ER, ten proces może być czasochłonny. Z tego względu preferowane jest użycie funkcji [tworzenia kopii zapasowych szablonów ER](er-backup-storage-templates.md) do automatycznego odzyskiwania szablonów z przerwanymi odwołaniami.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

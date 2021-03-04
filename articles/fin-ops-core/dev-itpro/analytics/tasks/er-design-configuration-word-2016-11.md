@@ -99,3 +99,6 @@ Otwórz ten dokument w programie Word i wykonaj następujące czynności:
 16. Kliknij przycisk **OK**.
 17. Kliknij przycisk **OK**. Zbadaj wygenerowane dane wyjściowe. Zwróć uwagę, że utworzone dane wyjściowe są przedstawione w formacie programu Word i zawierają szczegóły przetworzonych płatności.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

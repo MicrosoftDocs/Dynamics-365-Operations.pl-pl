@@ -67,3 +67,6 @@ Tworzony jest typ lokalizacji czynności konserwacyjnych, który ma być używan
 
 >[!NOTE] 
 >Na skróconej karcie **Ogólne** można uzyskać przegląd liczby typów składników majątku, planów konserwacji, wymagań dotyczących atrybutów składników majątku, dozwolonych typów, atrybutów i lokalizacji czynności konserwacyjnych, które są skonfigurowane na typ lokalizacji czynności konserwacyjnych. Pole **Lokalizacje czynności konserwacyjnych** pokazuje liczbę lokalizacji czynności konserwacyjnych, które używają typu lokalizacji czynności konserwacyjnych. Można użyć przycisku **Kopiuj**, aby skopiować ustawienia z typu lokalizacji czynności konserwacyjnych do wybranego typu lokalizacji czynności konserwacyjnych.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Nowe opcje dodano do urlopów i nieobecności (parametry **Zasoby ludzkie**) umo
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Działania związane z zatrudnieniem pracownika utknęły w stanie „Przepływ pracy zakończony”
 Wprowadzono zmiany, aby rozwiązać problem polegający na tym, że niewielka liczba przepływów pracy kończyła się stanem „Przepływ pracy zakończony”. Nowe przepływy pracy powinny teraz przechodzić do stanu „Ukończony” po zakończeniu przepływu pracy. Wszystkie przepływy pracy w stanie ukończenia przepływu pracy zostaną przełączone w stan błędu, który pozwoli na ich zaktualizowanie lub usunięcie, w zależności od potrzeb. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

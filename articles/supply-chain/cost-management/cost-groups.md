@@ -54,3 +54,6 @@ Do grupy kosztów można przypisać typ grupy kosztów oraz działanie służąc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

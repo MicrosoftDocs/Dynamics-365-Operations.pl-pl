@@ -258,3 +258,6 @@ Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z ko
 
 - Wideo: [Konfiguracja zarządzania magazynem — zaawansowana](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Temat pomocy: [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

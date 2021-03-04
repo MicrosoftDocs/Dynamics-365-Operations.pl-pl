@@ -103,3 +103,6 @@ W tym przykładzie wybierzesz żądaną wersję konfiguracji raportowania elektr
     W tym przykładzie zaznacz wersję tej konfiguracji mającą stan **Udostępniono**.
 
     Należy zauważyć, że teraz jest również dostępna udostępniona wersja 1 wybranej konfiguracji przykładowego modelu danych.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

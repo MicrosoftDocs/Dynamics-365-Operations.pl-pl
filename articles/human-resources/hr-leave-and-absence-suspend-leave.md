@@ -49,3 +49,6 @@ Jeśli naliczenia są przetwarzane podczas zawieszenia urlopu pracownika, nie zo
 - [Konfigurowanie typów urlopów i nieobecności](hr-leave-and-absence-types.md)
 - [Naliczanie do planów urlopów i nieobecności](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

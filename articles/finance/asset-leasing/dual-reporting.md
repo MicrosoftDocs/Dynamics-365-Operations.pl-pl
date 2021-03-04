@@ -523,3 +523,6 @@ Po utworzeniu i zaksięgowaniu wszystkich tych wpisów w arkuszu będą widoczne
 | 11         | Umorzenie |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

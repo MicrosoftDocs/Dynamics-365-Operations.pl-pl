@@ -42,3 +42,6 @@ W programie Microsoft Dynamics 365 Human Resources dni oczekiwania wyznaczają m
    | **Dzień** | Dzień miesiąca, na który system powinien ustawić datę okresu oczekiwania. |
    
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

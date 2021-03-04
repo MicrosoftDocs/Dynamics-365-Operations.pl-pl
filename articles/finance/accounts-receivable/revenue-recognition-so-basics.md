@@ -97,3 +97,6 @@ Przycisk **Alokacja ceny przychodu** jest nadal dostępny, dzięki czemu można 
 Harmonogram oczekiwanego rozpoznawania przychodów zostanie usunięty i zastąpiony ostatecznym harmonogramem rozpoznawania przychodów. Szczegóły harmonogramu przychodu są zachowywane dla każdego wiersza zamówienia sprzedaży i są wykorzystywane do zwalniania przychodów odroczonych do faktycznych przychodów, gdy zobowiązania umowne zostaną spełnione.
 
 [![Ostateczny harmonogram rozpoznawania przychodów.](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

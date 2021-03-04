@@ -67,3 +67,6 @@ Ta procedura zawiera instruktaż tworzenia nowego kanału online i dodawania go 
 3. Wykonaj harmonogram dystrybucji 1070, aby zsynchronizować zmiany z bazą danych kanału. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

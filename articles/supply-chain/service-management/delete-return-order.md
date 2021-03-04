@@ -44,3 +44,6 @@ Formularz **Usuwanie zamówień zwrotu** umożliwia usunięcie wielu zamówień 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

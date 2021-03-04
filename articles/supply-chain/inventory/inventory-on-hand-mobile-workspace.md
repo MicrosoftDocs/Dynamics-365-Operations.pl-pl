@@ -130,3 +130,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
     -   Według zapasów fizycznych (widok przedstawia łączną ilość)
     -   Według fizycznie zarezerwowanych zapasów (widok przedstawia ilość zarezerwowaną)
     -   Według fizycznie dostępnych zapasów (ten widok przedstawia dostępną ilość, która nie ma żadnych rezerwacji)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

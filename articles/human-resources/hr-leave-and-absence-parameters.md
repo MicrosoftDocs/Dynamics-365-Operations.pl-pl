@@ -92,3 +92,6 @@ Przed skonfigurowaniem urlopów i nieobecności w module Dynamics 365 Human Reso
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

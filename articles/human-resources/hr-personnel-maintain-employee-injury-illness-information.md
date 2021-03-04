@@ -93,3 +93,6 @@ To nagranie zadania obejmuje podstawowe kroki tworzenia sprawy dotyczącej urazu
 36. Kliknij przycisk Zapisz.
     * Stan sprawy można zaktualizować w dowolnym momencie.  Ustaw stan sprawy na W toku, jeśli rozpatrywanie zgłoszenia urazu lub choroby nadal trwa.  Po zamknięciu zdarzenia można tylko dodawać lub usuwać koszty, zabiegi lub dokumenty związane ze zdarzeniem.  Aby zmodyfikować inne informacje, należy ponownie otworzyć sprawę.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

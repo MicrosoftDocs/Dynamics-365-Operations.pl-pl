@@ -94,3 +94,6 @@ Aby zdezaktywować weryfikację przestrzegania określonych reguł, wybierz moż
 [Tworzenie reguł dla Doradcy optymalizacji](./create-rules-optimization-advisor.md)
 
 [Doradca optymalizacji w Dynamics 365 for Finance and Operations (film)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

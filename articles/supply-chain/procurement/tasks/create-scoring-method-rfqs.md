@@ -47,3 +47,6 @@ W tej procedurze pokazano sposób tworzenia metody punktowania. Metoda punktowan
 14. W polu Początek zakresu wpisz liczbę.
 15. W polu Koniec zakresu wpisz liczbę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

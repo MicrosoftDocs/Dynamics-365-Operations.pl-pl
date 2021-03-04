@@ -45,3 +45,6 @@ Przed użyciem tej procedury upewnij się, że utworzono co najmniej przepływ p
 
 8. Aby zatrzymać przepływ pracy, na stronie **Historia przepływu pracy** wybierz pozycję **Odwołaj**. W wyświetlonym oknie dialogowym wpisz komentarz, a następnie wybierz przycisk **OK**.
 9. Aby dezaktywować przepływ pracy lub uaktywnić uprzednio utworzony przepływ pracy, wybierz kolejno opcje **Wynajem składnika majątku \> Ustawienia \> Przepływ pracy wynajmu**. Następnie na stronie **Przepływ pracy wynajmu** wybierz kolejno opcje **Przepływ pracy \> Wersje**. Aby bieżący przepływ pracy stał się nieaktywny, wybierz aktywną umowę wynajmu w oknie dialogowym wersji wynajmu, a następnie wybierz opcję **Dezaktywuj**. Aby uaktywnić istniejący przepływ pracy, wybierz przepływ pracy, a następnie wybierz opcję **Uaktywnij**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

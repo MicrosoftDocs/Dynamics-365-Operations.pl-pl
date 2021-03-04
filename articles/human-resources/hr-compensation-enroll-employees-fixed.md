@@ -39,3 +39,6 @@ Menedżer ds. wynagrodzenia i świadczeń może przypisywać pracowników do pla
     * Jeśli plan stałych wynagrodzeń jest planem typu Krok, zaznacz krok zawierający stawkę płacy odpowiednią dla pracownika. Jeśli plan stałych wynagrodzeń jest planem typu Pasmo lub Kategoria, wprowadź stawkę płacy pracownika. Stawka płacy będzie weryfikowana względem ustawień tolerancji dla planu oraz minimalnego i maksymalnego punktu odniesienia w poziomie wynagrodzeń dla zadania.  
 8. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

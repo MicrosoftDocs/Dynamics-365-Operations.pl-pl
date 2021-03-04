@@ -193,3 +193,6 @@ Rozpoznawanie przychodów może być również używane dla zamówień sprzedaż
 
 - **Odroczony przychód faktury** (pod **Kontami przychodów**) — umożliwia wprowadzenie konta głównego dla ceny przychodu, która jest księgowana jako przychód odroczony (zamiast przychód). Cena przychodu jest odroczona, jeśli wiersz zamówienia sprzedaży ma harmonogram przychodów.
 - **Odroczony koszt** (pod **Kontami kosztów**) — umożliwia wprowadzenie konta głównego dla kwoty kosztu własnego sprzedaży, księgowanej do odroczonego kosztu własnego sprzedaży, jeśli przychód jest również odroczony.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

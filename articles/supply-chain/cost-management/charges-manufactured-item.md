@@ -40,3 +40,6 @@ Opłaty za wytwarzany towar są zawsze uwzględniane w koszcie jednostkowym tego
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

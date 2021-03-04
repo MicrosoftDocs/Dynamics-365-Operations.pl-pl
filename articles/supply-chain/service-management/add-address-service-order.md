@@ -75,3 +75,6 @@ Aby dodać inny adres do zlecenia serwisowego, wykonaj następujące czynności:
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Po utworzeniu stanów cyklu życia zlecenia pracy, które są wymagane dla zlece
 9. Zapisz model cyklu życia zlecenia pracy.
 
 ![Strona Modele cyklu życia zlecenia pracy](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

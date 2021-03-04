@@ -48,3 +48,6 @@ Przetwórz zmiany stawki świadczenia w Microsoft Dynamics 365 Human Resources, 
    4. Kliknij przycisk **OK**. Proces będzie uruchamiany z parametrami określonymi przez użytkownika.
 
 4. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

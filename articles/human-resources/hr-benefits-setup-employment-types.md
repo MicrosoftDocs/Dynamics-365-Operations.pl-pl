@@ -41,3 +41,6 @@ W programie Dynamics 365 Human Resources ustaw typy zatrudnienia pasujące do pr
    | **Opis** | Opis typu zatrudnienia. |
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

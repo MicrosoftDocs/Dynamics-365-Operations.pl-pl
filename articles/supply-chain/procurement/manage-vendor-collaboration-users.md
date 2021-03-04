@@ -94,3 +94,6 @@ Aby poprosić o modyfikację ról zabezpieczeń dla użytkownika:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

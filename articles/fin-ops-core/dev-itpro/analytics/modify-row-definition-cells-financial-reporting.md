@@ -529,3 +529,6 @@ Zestaw wartości wymiarów jest nazwaną grupą wartości wymiarów. Zestaw wart
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród 
 10. Kliknij przycisk Zatwierdzone.
     * Po zatwierdzeniu rekordu można go załadować do oficjalnego rekordu wynagrodzenia pracownika. Nowe wynagrodzenie będzie obowiązywać od dnia transakcji ustawionego w procesie wynagrodzenia.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

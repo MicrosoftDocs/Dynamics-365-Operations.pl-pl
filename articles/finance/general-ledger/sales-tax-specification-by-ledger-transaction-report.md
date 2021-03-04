@@ -58,3 +58,6 @@ Podczas generowania tego raportu, wyświetlane są następujące pola domyślne.
 Aby w raporcie były wyświetlane tylko konta niepodatkowe, należy skonfigurować warunek filtru, taki jak gwiazdka (\*), co pokazano na poniższej ilustracji.
 
 ![Raport przedstawiający konta niepodatkowe](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

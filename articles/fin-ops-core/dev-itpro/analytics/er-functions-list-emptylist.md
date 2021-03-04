@@ -55,3 +55,6 @@ Funkcja `EMPTYLIST (SPLIT ("abc", 1))` zwraca nową pustą listę, która ma tak
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

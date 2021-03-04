@@ -54,3 +54,6 @@ Wiersz faktury zostanie wyłączony z automatycznego przetwarzania jeśli spełn
 - Wartość **Stanu automatycznego dopasowania odbioru** w wierszu faktury to **Niepowodzenie**.
 - Faktura jest używana.
 - Faktura znajduje się w systemie przepływu pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

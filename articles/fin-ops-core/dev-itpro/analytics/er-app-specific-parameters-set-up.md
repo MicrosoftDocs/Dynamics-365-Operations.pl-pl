@@ -260,3 +260,6 @@ W powyższym przykładzie uzyskano dostęp do parametrów specyficznych dla apli
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Skonfiguruj formaty ER do używania parametrów określonych dla firmy](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

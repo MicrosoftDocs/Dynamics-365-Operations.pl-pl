@@ -182,3 +182,6 @@ Aby skonfigurować sejfy, wykonaj następujące czynności.
 
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

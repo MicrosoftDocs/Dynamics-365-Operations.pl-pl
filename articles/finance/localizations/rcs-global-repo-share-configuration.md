@@ -75,3 +75,6 @@ Konfiguracja jest udostępniana organizacji zewnętrznej i jest dostępna dla te
 ![Konfiguracja udostępniona organizacji zewnętrznej](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Aby cofnąć udostępnianie konfiguracji poprzednio udostępnionej organizacji zewnętrznej, wybierz konfigurację i kliknij pozycję **Anuluj udostępnianie**, a następnie wybierz przycisk **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

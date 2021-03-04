@@ -66,3 +66,6 @@ W tej procedurze pokazano sposób obliczania propozycji minimalnego zapotrzebowa
 5. W **okienku akcji** kliknij pozycję Plan.
 6. Kliknij opcję **Zapotrzebowanie na towary**. Zwróć uwagę, że pole **Ilość minimalna** zostało zaktualizowane o nową ilość minimalną z arkusza zapasu bezpieczeństwa.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

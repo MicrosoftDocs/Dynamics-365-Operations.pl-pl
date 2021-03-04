@@ -87,3 +87,6 @@ Supply Chain Management zawiera strategię kompilowania ładunku o nazwie Strate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ Wśród raportów dodatkowych, które są dostępne, jest raport **Pozycje progn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -133,3 +133,6 @@ Wykonaj poniższe kroki, aby utworzyć listę znanych środków zaradczych dla u
 
 > [!NOTE]
 > Istnieje możliwość zmiany nazw objawów usterek, obszarów, typów, przyczyn i środków zaradczych stosownie do potrzeb. Zmiany nazwy są automatycznie odzwierciedlane w powiązanych z nią rejestracjach błędów.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

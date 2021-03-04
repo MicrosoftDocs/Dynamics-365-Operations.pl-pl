@@ -50,3 +50,6 @@ Można rejestrować szczegóły czeku postdatowanego otrzymanego od odbiorcy. Mo
 15. Kliknij przycisk Księguj.
 16. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

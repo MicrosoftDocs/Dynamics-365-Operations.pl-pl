@@ -53,3 +53,6 @@ Ta zmiana powoduje dodanie opcji usuwania w formularzu **pracownicy bez zatrudni
 5. Ustaw zezwolenie na **usuwanie**.
 6. Wybierz kartę **nieopublikowane obiekty**.
 7. Wybierz opcję **Publikuj wszystko**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

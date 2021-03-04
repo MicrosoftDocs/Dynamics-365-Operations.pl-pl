@@ -49,3 +49,6 @@ Należy utworzyć nowy element menu z trybem Praca, który nie wykorzystuje istn
 - Przyjęcie i odłożenie mieszanego numeru identyfikacyjnego
 
 Dostępne są następujące opcje identyfikujące wiersze dokumentu źródłowego: pozycja zamówienia zakupu, wiersz zamówienia zakupu, zamówienia zwrotu, pozycja zamówienia przeniesienia i wiersz zamówienia przeniesienia. Te opcje mogą zmieniać kolejność przyjęcia dla pojedynczego numeru identyfikacyjnego. Ostatnia opcja to według pozycji ładunku. Do numeru identyfikacyjnego można dodać wiele towarów, ale nie można się przełączać między różnymi ładunkami.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

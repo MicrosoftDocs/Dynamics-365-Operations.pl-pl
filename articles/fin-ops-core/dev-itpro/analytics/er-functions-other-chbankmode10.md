@@ -55,3 +55,6 @@ Funkcja `CH_BANK_MOD_10 ("VEND-200002")` zwraca wartość **3**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

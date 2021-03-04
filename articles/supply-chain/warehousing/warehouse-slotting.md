@@ -384,3 +384,6 @@ Po umieszczeniu wszystkich wymaganych elementów można skonfigurować rozpisani
 1. Wybierz cykliczność powtarzania automatycznego.
 
 W przypadku ćwiczeń w tym scenariuszu **nie należy** ustawiać automatycznego rozpisania na przedziały.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

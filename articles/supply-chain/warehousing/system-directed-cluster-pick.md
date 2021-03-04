@@ -207,3 +207,6 @@ Aby można było skonfigurować pobieranie dla grupy sterowane przez system, nal
 1. Ostatnim krokiem na urządzeniu przenośnym jest **Umieszczenie** grupy w ostatecznej lokalizacji. Kliknij przycisk **OK**
     - Po potwierdzeniu operacji odłożenia grupa jest zamykana i dzielona na podstawie wartości ustawionej w polu **Podziel grupę w** w profilu grupy. Identyfikatory pracy są również zamknięte.
 1. Na urządzeniu przenośnym jest wyświetlany komunikat „Grupa kompletna”.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

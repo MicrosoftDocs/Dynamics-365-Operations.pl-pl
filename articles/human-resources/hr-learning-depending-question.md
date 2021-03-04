@@ -56,3 +56,6 @@ Pytania warunkowe umożliwiają określenie, jakie pytanie uzupełniające zosta
 10. W drzewie zaznacz element „Pytania\Otrzymuję uczciwe wynagrodzenie za wykonywaną pracę.”.
     * Należy zauważyć, że drzewo pytań zostało zaktualizowane w celu pokazania zależności.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

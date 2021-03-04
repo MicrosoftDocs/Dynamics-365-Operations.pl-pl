@@ -59,3 +59,6 @@ Ta procedura poprowadzi Cię przez proces tworzenia i księgowania arkusza przen
 1. Kliknij przycisk **Zapasy**.
 2. Kliknij opcję **Transakcje**. W tym miejscu widać transakcje, które zostały utworzone podczas księgowania arkusza.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

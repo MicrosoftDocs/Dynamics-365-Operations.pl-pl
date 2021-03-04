@@ -163,3 +163,5 @@ Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności
 ### <a name="review-types"></a>Typy przeglądów
 
 Typy przeglądów wydajności pomagają sterować działaniem przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

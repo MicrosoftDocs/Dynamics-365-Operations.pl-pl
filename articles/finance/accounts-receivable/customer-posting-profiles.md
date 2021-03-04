@@ -140,3 +140,6 @@ Określ następujące wartości do konfigurowania profilu księgowania:
 
 Aby uzyskać więcej informacji, zobacz [Przegląd płatności odbiorców](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

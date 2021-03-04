@@ -128,3 +128,6 @@ Po wybraniu kafelka **Zmiany adresu** na nowej stronie są wyświetlane szczegó
 > Jeśli chcesz otrzymywać alert lub pocztę e-mail o tych zmianach adresu, możesz utworzyć nową regułę alertu na karcie **Opcje** w okienku akcji. Aby uzyskać więcej informacji dotyczących sposobu tworzenia reguł, zobacz [Tworzenie reguł alertów](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
 
 > Jeśli chcesz skonfigurować przepływ pracy dla zmiany adresu, możesz wybrać opcję **Wyślij zewnętrznie** w regule alertu, a następnie użyć Power Automate do wyzwolenia zdarzenia biznesowego i skonfigurowania przepływu pracy. Aby uzyskać więcej informacji, zajrzyj do [Alerty jako zdarzenia biznesowe](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

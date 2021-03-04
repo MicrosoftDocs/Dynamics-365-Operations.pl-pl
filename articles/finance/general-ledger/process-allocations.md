@@ -44,3 +44,6 @@ Reguły alokacji księgi mogą służyć do obsługi planów budżetowych. Korzy
 > [!NOTE]
 > Nie można użyć międzyfirmowych reguł alokacji księgi dla planów budżetu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

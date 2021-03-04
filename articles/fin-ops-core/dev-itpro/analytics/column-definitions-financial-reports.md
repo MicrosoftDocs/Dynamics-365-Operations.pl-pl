@@ -599,3 +599,6 @@ Można podzielić kwotę w kolumnie przez określoną liczbę okresów. Na przyk
 [Definicje wierszy w Projektancie raportów finansowych](row-definitions-financial-reporting.md)
 
 [Zaawansowane opcje formatowania w raportowaniu finansowym](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Jeśli składnik majątku ma powiązane podrzędne składniki majątku, można g
 
 > [!NOTE]
 > Jeśli nie można usunąć składnika majątku przy użyciu tej procedury, innym sposobem obsługi usuwania jest Konfigurowanie stanu cyklu życia składnika majątku w tym celu. Na przykład można skonfigurować stan cyklu życia jako **Uznany za odpadki** lub **Usunięty** na stronie **Stany cyklu życia składników majątku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

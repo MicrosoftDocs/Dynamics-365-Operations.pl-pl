@@ -61,3 +61,6 @@ Rozliczenie będzie miało wartość 100,00 i będzie obejmowało płatność 99
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

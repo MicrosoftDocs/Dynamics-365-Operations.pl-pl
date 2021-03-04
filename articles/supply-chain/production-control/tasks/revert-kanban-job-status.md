@@ -55,3 +55,6 @@ Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanba
     * Wybierz to samo zadanie.  
     * Należy zauważyć, że stan zadania w systemie kanban został przywrócony do Zaplanowane, co jest wskazywane przez pustą ikonę na karcie Kanban.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

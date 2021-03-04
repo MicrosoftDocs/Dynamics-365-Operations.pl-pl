@@ -66,3 +66,6 @@ Faktury zaliczkowe są często stosowaną praktyką biznesową. Dostawca wystawi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

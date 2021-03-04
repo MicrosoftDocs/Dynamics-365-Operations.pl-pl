@@ -301,3 +301,6 @@ Na poniższej ilustracji przedstawiono przykład innej strony generowanego rapor
 
 - [ER Projektowanie konfiguracji do generowania raportów w formacie OPENXML (listopad 2016)](tasks/er-design-reports-openxml-2016-11.md)
 - [Projektowanie konfiguracji raportowania elektronicznego w celu generowania raportów w formacie programu Word](tasks/er-design-configuration-word-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

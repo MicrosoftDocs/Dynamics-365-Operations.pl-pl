@@ -44,3 +44,5 @@ Ta wersja zawiera następujące zmiany w integracji LinkedIn Recruiter w module 
 - Aktualizacje obsługi przeglądarki (portal LinkedIn od dnia 1 lipca 2020 r. nie obsługuje już przeglądarki Internet Explorer 11)
 
 Aby uzyskać więcej informacji, zajrzyj do [Pozyskiwanie kandydatów za pomocą usługi LinkedIn Recruiter w module Attract](attract-linkedin-recruiter.md).
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Faktury cykliczne są używane do fakturowania odbiorców regularnie na tę sam�
 6. Kliknij przycisk Księguj.
     * Zaksięguj wybrane faktury.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Na stronie **zamówienia planowanego** na karcie **opóźnień** jest **Żądana
 --------
 
 [Ustawienia zapotrzebowania](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

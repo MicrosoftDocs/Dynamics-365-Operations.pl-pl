@@ -118,3 +118,6 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Automatycznie wysyłaj ponaglenia           |     Typy akcji ponagleń spowodują wysłanie listu podczas automatyzacji.                                      |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Tworzenie działań na potrzeby automatyzacji                |     Służy do tworzenia i zamykania działań dla typów akcji niezwiązanych z działaniami w celu wyświetlenia wszystkich zautomatyzowanych kroków podjętych na koncie.        |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Dni do przechowywania automatyzacji procesu windykacji     |     Definiuje liczbę dni przechowywania historii windykacji.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

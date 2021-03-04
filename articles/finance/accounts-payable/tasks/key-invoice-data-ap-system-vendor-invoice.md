@@ -73,3 +73,6 @@ Ten przewodnik zadania pomoże utworzyć fakturę od dostawcy na podstawie zamó
 19. Kliknij przycisk **Księguj**.
 20. Zamknij formularz. Zwróć uwagę, że zamówienie zakupu nie jest już wyświetlane jako otrzymane, ale niezafakturowane.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

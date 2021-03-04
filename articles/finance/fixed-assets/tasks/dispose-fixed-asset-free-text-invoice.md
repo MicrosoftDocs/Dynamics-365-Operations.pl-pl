@@ -41,3 +41,6 @@ W tym temacie pokazano sposób likwidacji środka trwałego przy użyciu faktury
 10. W polu **Środek trwały** wprowadź lub wybierz wartość.
 11. Wybierz opcję **Zaksięguj**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

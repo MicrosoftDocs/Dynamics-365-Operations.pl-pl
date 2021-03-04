@@ -46,3 +46,6 @@ Aby dowiedzieć się więcej na temat podstawowych zasad stosowanych przez Micro
 [Dodawanie strony zasad ochrony prywatności](add-privacy-page.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Opinie, wiadomości i inne informacje możesz znaleźć w blogu usługi [Microso
 ### <a name="videos"></a>Filmy
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

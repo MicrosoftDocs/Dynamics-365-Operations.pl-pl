@@ -117,3 +117,6 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 [Synchronizowanie nagłówków faktur i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales](sales-invoice-template-mapping-direct.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

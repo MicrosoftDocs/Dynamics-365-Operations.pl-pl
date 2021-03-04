@@ -56,3 +56,6 @@ Jeśli pole **Wycofaj naliczenia przy korekcie** w formularzu **Parametry moduł
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

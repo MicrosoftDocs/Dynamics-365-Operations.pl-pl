@@ -96,3 +96,6 @@ Obszar roboczy zawiera podsumowanie kafelków i dwie listy. Lista **Otwarte spra
 ### <a name="manually-creating-a-new-released-product"></a>Ręczne tworzenie nowego zwolnionego produktu
 
 Można ręcznie utworzyć zwolniony produkt w jednej sesji, w zależności od procesów biznesowych stosowanych w organizacji oraz od reguł decydujących o tym, czy tej funkcji należy użyć. Ta funkcja powoduje utworzenie nowego produktu i jego automatyczne zwolnienie do bieżącej firmy. Aby utworzyć nowy produkt, kliknij opcję **Zwolnione produkty** w obszarze roboczym **Obsługa zwolnionego produktu** lub na stronie listy **Zwolniony produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

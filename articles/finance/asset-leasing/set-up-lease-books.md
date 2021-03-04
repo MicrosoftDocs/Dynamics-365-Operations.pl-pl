@@ -53,3 +53,6 @@ Aby utworzyć księgę wynajmu, wykonaj następujące czynności.
     | Próg krótkiego terminu                     | Wprowadź liczbę miesięcy, która ma być używana jako próg wynajmu krótkoterminowego. Jeśli wartość okresu wynajmu jest mniejsza lub równa liczbie miesięcy wprowadzonej w tym polu, system zaklasyfikuje wynajem jako krótkoterminowy i zastosuje metodę odroczonego czynszu. |
     | Próg niskiej wartości                      | Wprowadź kwotę, która ma być używana jako próg wynajmu o niskiej wartości. Jeśli wartość godziwa składnika majątku jest mniejsza lub równa wartości wprowadzonej w tym polu, system zaklasyfikuje wynajem jako mający niską wartość i zastosuje metodę odroczonego czynszu. |
     | Płatność dla dostawcy                            | Ustaw w tej opcji wartość **Tak**, aby zezwolić na księgowanie opłat z tytułu wynajmu jako faktury na koncie dostawcy określonym dla każdej umowy wynajmu. Po zaksięgowaniu opłaty z tytułu wynajmu konto dostawcy zostanie uznane. Jeśli ta opcja ma wartość **Nie**, będzie uznawane konto ustawione dla typu księgowania **Opłata z tytułu wynajmu** na stronie **Parametry księgowania wynajmu**. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

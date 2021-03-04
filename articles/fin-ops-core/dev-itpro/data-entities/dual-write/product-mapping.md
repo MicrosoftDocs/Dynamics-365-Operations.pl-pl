@@ -223,3 +223,6 @@ Następnie, gdy synchronizacja zostanie włączona i ma miejsce, produkty z Fina
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Migracja danych produktu z innych aplikacji Dynamics 365 do Finance and Operations
 
 Jeśli inne aplikacje Dynamics 365 mają produkty, które nie są obecne w Finance and Operations, administrator może najpierw wykorzystać **EcoResReleasedProductCreationV2Entity** do importowania tych produktów do Finance and Operations. Po drugie, należy dopasować dane produktu do Finance and Operations oraz innych aplikacji Dynamics 365, tak jak opisano powyżej. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

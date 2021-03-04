@@ -104,3 +104,6 @@ Aby dodać moduł galerii multimediów do strony marketingowej, wykonaj następu
 [Moduł kontenera](add-container-module.md)
 
 [Przekazanie obrazów](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

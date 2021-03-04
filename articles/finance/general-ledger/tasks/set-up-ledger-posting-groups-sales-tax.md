@@ -42,3 +42,6 @@ Podatek jest obliczany i księgowany na kontach głównych określonych w grupac
 11. W polu **Rabat gotówkowy odbiorcy** wybierz konto główne do księgowania rabatów gotówkowych dla **kodów podatków** skojarzonych z tą **grupą księgowania**. To ustawienie jest opcjonalne i jeśli konto nie zostanie wprowadzone, będzie używane konto główne z **kodów rabatów gotówkowych**. Może być korzystne używanie różnych kont dla poszczególnych **grup księgowania**, jeśli w oknie **Grupy podatków** zaznaczono opcję Cofnij podatek od rabatu gotówkowego.  
 12. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Podobnie, w kolumnie **stanu firmy zewnętrznej** można wyświetlić następuj�
 Poniższy diagram przedstawia oba zestawy stanów oraz sposób ich powiązania.
 
 [ ![Stany eksperymentów](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

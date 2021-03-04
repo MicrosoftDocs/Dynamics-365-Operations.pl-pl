@@ -70,3 +70,6 @@ Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzeda
 38. W **okienku akcji** kliknij pozycję Sprzedaż.
 39. Kliknij opcję **Cena sprzedaży**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

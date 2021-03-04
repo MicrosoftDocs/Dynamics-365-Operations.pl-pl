@@ -42,3 +42,6 @@ Ta procedura dotyczy wszystkich krajów/regionów Europy. Procedurę utworzono p
 7. Kliknij przycisk Znajdź.
     * Zostaną wyświetlone wszystkie strony o takim identyfikatorze rejestracji.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

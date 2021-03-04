@@ -91,3 +91,6 @@ Jeśli zostało włączone **Rozszerzone wyszukiwanie konfiguracji formatu ER, z
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Struktura API raportowania elektronicznego ER](er-apis-app73.md)
 - [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

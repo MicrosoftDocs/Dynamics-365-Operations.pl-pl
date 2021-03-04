@@ -232,3 +232,6 @@ Następujące role zapewniają dostęp tylko do odczytu w przeglądarce załącz
 + **Pracownik ds. rozrachunków z dostawcami** i **Menedżer ds. rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Obsługa faktur od dostawcy.
 
 Domyślnie jeśli rola użytkownika zawiera prawa do edycji na każdej stronie, użytkownik będzie miał również prawa do edycji w przeglądarce załączników dla akcji wyróżniania, blokowania i adnotowania. Jednak jeśli istnieją scenariusze, w których określona rola powinna mieć prawa do edycji na stronie, ale nie w przeglądarce załączników, można użyć odpowiednich uprawnień z poprzedniej listy, aby zaspokoić wymogi tych przypadków użycia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

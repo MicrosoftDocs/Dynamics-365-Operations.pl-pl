@@ -51,3 +51,6 @@ Kody odsetek można konfigurować do obliczania różnych kwot odsetek na podsta
 21. Wprowadź miesięczne oprocentowanie, które posłuży do obliczania odsetek począwszy od miesiąca 7. W tym przykładzie jest to 2,5.
 22. Kliknij przycisk Zamknij, aby zakończyć określanie ustawień.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

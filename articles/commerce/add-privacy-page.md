@@ -109,3 +109,6 @@ Teraz można odwoływać się do fragmentu w szablonie dla innych stron witryny.
 [Zgodność z plikami cookie](cookie-compliance.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

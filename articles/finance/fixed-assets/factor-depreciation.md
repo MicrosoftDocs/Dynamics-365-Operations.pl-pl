@@ -79,3 +79,6 @@ Wartość w polu **Współczynnik** jest równa **50**. W tym przypadku amortyza
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

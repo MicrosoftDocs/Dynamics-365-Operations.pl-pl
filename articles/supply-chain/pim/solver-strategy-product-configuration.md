@@ -73,3 +73,6 @@ W poniższej tabeli przedstawiono zalecenia dotyczące strategii doboru solveró
 [Algorytmy heurystyczne](https://techterms.com/definition/heuristic)
 
 [Problem spełnienia ograniczeń](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

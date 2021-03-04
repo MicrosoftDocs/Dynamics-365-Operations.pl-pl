@@ -267,3 +267,6 @@ W module Zarządzanie składnikami majątku można automatycznie aktualizować z
 2. W oknie **Aktualizuj prognozę typów zadań konserwacji**, dla **Rekordy do uwzględnienia** na skróconej karcie, można dodawać wybrane opcje dla konkretnych typów zadań obsługi, które są wymagane. Wybierz **Filtruj**, a następnie **wybierz**, aby wybrać opcje.
 3. Na skróconej karcie **uruchom w tle** w razie potrzeby możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe.
 4. Wybierz przycisk **OK**, aby rozpocząć aktualizację prognozy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ten temat przedstawia sposób tworzenia szablonu rekordu, tak aby wartości pól
 13. Kliknij przycisk **OK**.
 14. Kliknij przycisk **Zamknij**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Ponadto trzeba pamiętać, że maksymalne dozwolone księgowanie przeciwstawne f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

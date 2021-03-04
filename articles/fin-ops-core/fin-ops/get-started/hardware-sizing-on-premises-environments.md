@@ -141,3 +141,6 @@ Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą L
 ## <a name="virtualization-and-oversubscription"></a>Wirtualizacja i nadsubskrypcja
 
 Usługi newralgiczne, takie jak serwer AOS, powinny być umieszczone na hostach wirtualnych mających dedykowane zasoby — rdzenie, pamięć operacyjną i dyski.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

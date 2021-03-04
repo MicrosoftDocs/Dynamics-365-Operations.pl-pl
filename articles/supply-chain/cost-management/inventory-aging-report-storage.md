@@ -57,3 +57,6 @@ Aby móc używać tej funkcji, musisz ją włączyć w systemie. Administratorzy
     > Formularz nie będzie zawierać sum częściowych, które są zdefiniowane w układzie raportu.
 
 Jednostka danych **raportu wiekowania zapasów** umożliwia eksportowanie danych wyjściowych raportu **magazynu raportów wiekowania zapasów** przez zastosowanie filtru dla pola **Identyfikator procesu — nazwa** w dowolnym formacie obsługiwanym przez funkcję zarządzania danymi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

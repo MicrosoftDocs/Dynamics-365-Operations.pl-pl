@@ -46,3 +46,6 @@ Ta procedura prowadzi przez proces tworzenia rekordów urlopów pracowników. Mo
     * Na przykład: Urlop w związku z adopcją  
 12. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

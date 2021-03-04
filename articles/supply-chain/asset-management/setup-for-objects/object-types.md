@@ -97,3 +97,6 @@ Na stronie **Części zamienne** można również tworzyć nowe części zamienn
 
 Aby sprawdzić, czy część zamienna w wybranym wierszu jest używana gdziekolwiek indziej w module Zarządzanie składnikami majątku (na przykład w odniesieniu do składników majątku i zleceń pracy), wybierz **Używająca pozycja**, aby otworzyć stronę **Używająca pozycja**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

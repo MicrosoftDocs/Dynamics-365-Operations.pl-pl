@@ -61,3 +61,6 @@ W tej procedurze pokazano sposób ręcznego obsługiwania informacji dotyczącyc
 6. Kliknij przycisk Zapisz.
     * Po zapisaniu podania o pracę można dołączać do niego dokumenty, w tym o doświadczeniu, nagrodach i list motywacyjny kandydata.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

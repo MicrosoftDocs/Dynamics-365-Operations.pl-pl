@@ -108,3 +108,6 @@ Strona **Certyfikaty podwójnego zastosowania** umożliwia konfigurowanie wymaga
     | Drukowanie na fakturze | To pole wyboru należy zaznaczyć, aby wydrukować numer certyfikatu na fakturach, które są adresowane do określonego kraju w ciągu określonego zakresu dat. |
     | Drukowanie na dokumencie dostawy | To pole wyboru należy zaznaczyć, aby wydrukować numer certyfikatu na dokumencie dostawy, które są adresowane do określonego kraju w ciągu określonego zakresu dat. |
     | Drukowanie na zamówieniach sprzedaży | To pole wyboru należy zaznaczyć, aby wydrukować numer certyfikatu na zamówieniu sprzedaży, które są adresowane do określonego kraju w ciągu określonego zakresu dat. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Aby włączyć tę funkcję dla wszystkich firm, należy wykonać następujące 
 Przycisk **Nowy dokument** umożliwia użytkownikom tworzenie i edytowanie szablonu w konfiguracji formatu sprawozdawczości elektronicznej (ER) dostarczonej przez innego dostawcę. W przykładzie przedstawionym w tym temacie dostawcą jest Microsoft. Kliknięcie przycisku **Nowy dokument** powoduje wyświetlenie wszystkich szablonów należących do bieżącego i innych dostawców. Po wybraniu szablonu, zostanie on otwarty do edycji. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
 Aby uzyskać więcej informacji, zajrzyj do omówienia [Zarządzania dokumentami biznesowymi](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

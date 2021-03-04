@@ -72,3 +72,6 @@ Ten temat przeprowadzi Cię przez proces tworzenia umowy zakupu. Zazwyczaj robi 
 5. Wybierz **Potwierdzenia umowy zakupu**. Opcja **Podgląd/drukuj** umożliwia wygenerowanie dokumentu umowy zakupu, który następnie można wydrukować lub wysłać do dostawcy. Jeśli później zaktualizujesz umowę i ponownie ją potwierdzisz, obie wersje będą wyświetlane w tym miejscu.  
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

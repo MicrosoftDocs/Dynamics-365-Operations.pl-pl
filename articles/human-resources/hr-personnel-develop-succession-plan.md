@@ -60,3 +60,6 @@ Wraz z rozwojem organizacji i planowaniem sukcesji często warto znaleźć kogo�
 28. Kliknij przycisk Raport.
     * W raporcie najlepiej pasujące pozycje znajdą się u góry listy.  Widać element luki.  Jest to różnica między poziomem, który został podany w mapowaniu umiejętności, a poziomem umiejętności przypisanym do osoby.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Uzyskiwanie dostępu do Konstruktora BOM przy użyciu relacji przedmiotu serwisu
 
 W przypadku automatycznego tworzenia zleceń serwisowych dotyczących umowy serwisowej relacje przedmiotów serwisu w umowie znajdują się także w tworzonych zleceniach serwisowych.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

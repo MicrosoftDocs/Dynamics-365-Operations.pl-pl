@@ -69,3 +69,6 @@ W tym temacie pokazano sposób konfigurowania elementu menu urządzenia przenoś
 5. Wybierz strzałkę wskazującą w prawo.
 6. Wybierz opcję **Zapisz**.
 7. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

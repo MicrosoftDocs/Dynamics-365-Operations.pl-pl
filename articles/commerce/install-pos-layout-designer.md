@@ -63,3 +63,6 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Konfigurowanie, instalowanie i aktywacja Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

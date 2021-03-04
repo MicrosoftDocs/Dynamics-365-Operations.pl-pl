@@ -111,3 +111,6 @@ Usuwanie rekordów naliczeń dla określonego planu i zakresu dat. Daty naliczan
 
 [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)</br>
 [Tworzenie planu urlopu i nieobecności](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

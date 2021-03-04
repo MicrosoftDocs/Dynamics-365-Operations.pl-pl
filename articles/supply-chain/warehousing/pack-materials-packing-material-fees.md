@@ -112,3 +112,6 @@ Możesz wydrukować wagi materiałów opakowań na fakturze i wskazać, kto pła
 
 1. Wybierz kolejno pozycje **Rozrachunki z odbiorcami \> Ustawienia \> Parametry modułu rozrachunków z odbiorcami**.
 1. Na karcie **Aktualizacje** na skróconej karcie **Faktury** określ opcję **Drukuj wagę materiału opakowania** na **Tak**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

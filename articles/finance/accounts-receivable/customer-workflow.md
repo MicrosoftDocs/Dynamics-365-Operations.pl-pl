@@ -60,3 +60,6 @@ Jeśli będzie dostępna co najmniej jedna proponowana zmiana, w okienku akcji z
     Status na stronie zmienia się na **Zmiany oczekują na zatwierdzenie**.
 
 Przepływ pracy jest zgodny ze standardowym procesem przepływu pracy w aplikacji. Osoba zatwierdzająca jest kierowana na stronę **Odbiorca**, gdzie może przejrzeć zmiany na stronie **Proponowane zmiany**, a następnie wybrać **Przepływ pracy \> Zatwierdź**, aby zatwierdzić przepływ pracy. Po wykonaniu wszystkich zatwierdzeń pola zostaną zaktualizowane za pomocą proponowanych przez Ciebie wartości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

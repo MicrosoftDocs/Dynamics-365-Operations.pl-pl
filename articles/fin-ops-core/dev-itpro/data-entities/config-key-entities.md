@@ -94,3 +94,6 @@ Sprawdzanie podczas wykonywania jest uruchamiane przy użyciu metadanych kluczy 
 Po każdym zaktualizowaniu kluczy konfiguracji na poziomie jednostki, tabeli lub pola należy odświeżyć listę jednostek w strukturze zarządzania danymi. Daje to pewność, że struktura pobierze najnowsze ustawienia kluczy konfiguracji. Do czasu odświeżenia listy jednostek będzie wyświetlane następujące ostrzeżenie na stronie listy jednostek. Aktualizacje kluczy konfiguracji zaczną obowiązywać natychmiast po odświeżeniu listy jednostek. Po wprowadzaniu modyfikacji kluczy konfiguracji zalecamy sprawdzenie poprawności istniejących projektów danych i zadań, aby mieć pewność, że działają zgodnie z oczekiwaniami.
 
 ![Pola docelowe](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

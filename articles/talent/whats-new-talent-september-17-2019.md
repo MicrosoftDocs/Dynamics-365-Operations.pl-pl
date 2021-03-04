@@ -59,3 +59,6 @@ W tej wersji pola rodzina zadań zostały dodane do strony **Zarządzania zmiana
 Ta funkcja jest teraz dostępna w środowiskach piaskownicy. Aby włączyć tę funkcję, przejdź do **Administrowanie systemem > Łącza > Ustawienia > Parametry systemowe > Funkcje w wersji zapoznawczej**. Wybierz **Formularz i nawigację rozszerzonego pracownika**. Dzięki temu zmiany są włączone dla wszystkich użytkowników. Opcję tę można wyłączyć w dowolnym momencie.
 
 Aby uzyskać więcej informacji, zajrzyj do [Usprawnione wprowadzanie pracowników i nawigacja](./streamlined-employee-entry.md). Aby zapoznać się ze zmianami, oglądnij film [Dynamics 365 for Talent przegląd 2. fali publikacji 2019](https://aka.ms/ROGT19RW2ROV).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

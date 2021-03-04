@@ -82,3 +82,6 @@ Ulepszone sortowanie w Dynamics 365 Commerce umożliwia odbiorcom sortowanie, wy
 [Domyślna strona docelowa kategorii i strona wyników wyszukiwania – omówienie](category-search-page-overview.md)
 
 [Zarządzanie metadanymi SEO](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

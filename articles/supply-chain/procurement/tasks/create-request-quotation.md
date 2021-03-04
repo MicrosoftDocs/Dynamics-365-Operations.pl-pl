@@ -81,3 +81,6 @@ Po określeniu podstawowych informacji o ZO, określ towary lub usługi, na któ
 4. Zamknij stronę.
 5. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

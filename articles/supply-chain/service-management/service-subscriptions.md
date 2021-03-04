@@ -38,3 +38,6 @@ Kod okresu oznacza okres obowiązywania opłaty subskrypcji lub interwał, w jak
 Kod okresu jest definiowany w grupie subskrypcji serwisowych. Jest on określany dla subskrypcji za pomocą grupy subskrypcji serwisowych. Każda nowo tworzona opłata subskrypcji ma sugerowaną datę początkową. Jest to data rozpoczęcia okresu (jeśli jest to pierwszy utworzony okres) lub data zakończenia poprzedniego okresu (jeśli jest to drugi lub następny okres).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

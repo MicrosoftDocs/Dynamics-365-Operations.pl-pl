@@ -160,3 +160,6 @@ Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kie
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Informacje o organizacji wewnętrznej Dataverse pochodzą z dwóch tabel, **jedn
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

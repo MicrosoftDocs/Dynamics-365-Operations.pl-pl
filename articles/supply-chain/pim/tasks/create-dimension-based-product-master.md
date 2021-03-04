@@ -42,3 +42,6 @@ W tej procedurze pokazano sposób tworzenia nowego produktu głównego przy uży
     * Wybierz technologię Konfiguracja oparta na wymiarach.  
 9. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

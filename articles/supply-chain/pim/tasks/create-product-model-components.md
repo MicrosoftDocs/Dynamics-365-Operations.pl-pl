@@ -38,3 +38,6 @@ Modele konfiguracji produktów opartych na ograniczeniach wykorzystują składni
 7. Wypełnij pole Opis.
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Możliwość odwoływania arkusza w przepływie pracy o stanie „nieodwracalny�
 
 ## <a name="delete-journal-lines"></a>Usuń wiersze arkusza
 Możliwość szybkiego usuwania wszystkich wierszy arkusza jest włączana w arkuszu w obszarze **funkcje** > **Usuń wiersze arkusza**. Aby włączyć tę funkcję, w obszarze **zarządzanie funkcjami** wybierz opcję **Usuń optymalizacje wydajności arkusza**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

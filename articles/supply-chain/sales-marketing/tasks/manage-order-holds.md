@@ -70,3 +70,6 @@ Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lu
     - Operacja **Usuń i prześlij** ma zastosowanie tylko w przypadku korzystania z funkcji Biuro obsługi.  
 8. Kliknij opcję **Usuń wstrzymania**. Wstrzymanie zostało zdjęte z zamówienia i usunięte z listy aktywnych wstrzymań. Aby wyświetlić wszystkie wstrzymania lub ich podzbiór zgodnie z określonym stanem, zmień wartość w polu Pokaż.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

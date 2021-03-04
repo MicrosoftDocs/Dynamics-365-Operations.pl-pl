@@ -49,3 +49,6 @@ Aby zamapować stan transportu na stan przewoźnika, wykonaj następujące kroki
 1. Wybierz kod stanu transportu, który ma być mapowany do kodu wybranego przewoźnika wysyłki.
 1. Wprowadź kod zewnętrzny używany przez przewoźnika.
 1. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

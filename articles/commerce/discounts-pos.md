@@ -69,3 +69,6 @@ Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku
 Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku, gdy kontrola współbieżności rabatu jest ustawiona na **najlepszą cenę tylko w ramach priorytetu, zawsze w ramach związku między priorytetami**.
 
 ![Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami](./media/Model_2.png "Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

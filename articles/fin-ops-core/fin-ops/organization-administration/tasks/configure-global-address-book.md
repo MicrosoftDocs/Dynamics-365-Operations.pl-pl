@@ -45,3 +45,6 @@ Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej U
 13. Na liście znajdź i zaznacz odpowiedni rekord. Naciśnij klawisz Shift, aby zaznaczyć wiele ról, które mają zostać dodane do okienka **Wybrane role**, a następnie kliknij strzałkę, aby dodać wybrane role.  
 14. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Funkcja `OR (1=2, "a"="a")` zwraca wartość **TRUE**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje logiczne](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

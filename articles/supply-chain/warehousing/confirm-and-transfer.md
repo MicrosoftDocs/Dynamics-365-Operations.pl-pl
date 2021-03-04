@@ -230,3 +230,6 @@ Istnieje również możliwość potwierdzenia, że relacje transakcji zostały z
 - Opcja **Podziału ilości na nowe obciążenie** działa również w przypadku, gdy niektóre nagłówki pozostałej pracy pozostałej mają stan *W toku*. Z tego względu można nadal korzystać z tych funkcji nawet wtedy, gdy pracownicy obsługują już zamówienia pobrania.
 - Jeśli zostanie wybrana opcja **Anuluj niezrealizowaną ilość**, a istnieje praca pozostała mająca stan *Otwarte* lub *W toku*, zostanie wyświetlony następujący komunikat o błędzie: „Nie można anulować pozostałej ilości do załadunku. Dla ładunku istnieje praca”.
 - W przypadku wybrania opcji **Anuluj niezrealizowaną ilość** w przypadku braku pracy pozostałej, ale w ładunku są niezwolnione wiersze ładunku, pojawia się następujący komunikat o błędzie: „Nie można potwierdzić wysyłki ładunku, ponieważ ilość towaru przekracza wartość procentową zdefiniowaną w ramach dostawy”. Aby uniknąć tego błędu, można ustawić wartość procentową **Niedoboru w dostawie** w niezwolnionym wierszu na 100 procent. Niezwolnione wiersze nie zostaną przeniesione do nowego ładunku, ale bieżący ładunek zostanie potwierdzony z użyciem opcji niedoboru w dostawie. W takim przypadku nie będzie można ponownie zwolnić oryginalnego zamówienia. Dlatego konieczne będzie obsłużenie go w inny sposób.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

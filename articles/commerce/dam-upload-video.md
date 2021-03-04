@@ -73,3 +73,6 @@ Jeśli wiele typów zasobów jest przekazywanych jednocześnie (na przykład obr
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

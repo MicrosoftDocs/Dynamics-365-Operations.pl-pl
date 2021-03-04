@@ -45,3 +45,6 @@ W zależności od zasad obowiązujących w firmie towary w wysyłce zwrotu mogą
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

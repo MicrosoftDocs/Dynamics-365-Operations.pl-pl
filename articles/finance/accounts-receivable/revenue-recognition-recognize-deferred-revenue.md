@@ -108,3 +108,6 @@ Zmiany umowy mają następujący wpływ na szczegóły harmonogramu przychodów:
 - Jeśli przychód został rozpoznany dla produktu, część przychodu została niepoprawnie rozpoznana, ponieważ uznanie zostało oparte na nieprawidłowym harmonogramie przychodów. Te wiersze muszą zostać wycofane i ponownie rozpoznane na podstawie nowego harmonogramu. W tym scenariuszu tworzone są nowe wiersze harmonogramu przychodu z kwotami ujemnymi w początkowej dacie rozpoznania. Następnie zostaną utworzone nowe wiersze w celu rozpoznania kwot na podstawie nowego harmonogramu przychodów. Na przykład 8 sierpnia 2019 r. uznano przychód na kwotę 10,53 USD. 8 września 2019 r. uznano przychód 13,16 USD. Dlatego dla tej samej daty tworzone są dwa nowe wiersze. Jeden wiersz dla kwoty 10,53 USD, a drugi dla 13,16 USD. Następnie zostaną utworzone 24 nowe wiersze, a między nimi zostanie rozdzielony łączny przychód 160,61 USD. Wiersze wycofujące można zaksięgować, uruchamiając proces **Tworzenie arkusza**.
 
 [![Harmonogram rozpoznawania przychodów](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

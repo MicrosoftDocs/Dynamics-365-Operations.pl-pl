@@ -124,3 +124,6 @@ Aby skonfigurować integrację wykonaj następujące czynności:
     4. W szczegółowym zakresie można mieć wiele środowisk w Customer Insights, np. środowiska testowe i produkcyjne. W polu **identyfikator wystąpienia środowiska** wprowadź odpowiednie środowisko.
     5. W polu **alternatywny identyfikator klienta** wprowadź właściwość w Customer Insights, który jest mapowany na konto odbiorcy. (W Commerce numer konta odbiorcy jest identyfikatorem odbiorcy.)
     6. Pozostałe trzy właściwości są miarami, które będą widoczne w kartotece odbiorcy w książce klienta. W kartotece odbiorcy można wybrać maksymalnie trzy miary, które mają zostać wyświetlone (Nie trzeba jednak wybierać żadnych miar) Jak wspomniano wcześniej, system pokazuje te wartości najpierw, a następnie pokazuje wartości dla grupy atrybutów książki klienta.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

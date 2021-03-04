@@ -39,3 +39,6 @@ To nagranie wykorzystuje firmę demonstracyjną DEMF.
 6. W polu **Krótki opis** wprowadź opis przeznaczony do celów wewnętrznych.
 7. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

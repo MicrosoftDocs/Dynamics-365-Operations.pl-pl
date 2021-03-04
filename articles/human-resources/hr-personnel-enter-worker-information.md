@@ -45,3 +45,6 @@ Gdy osoba rekrutująca utworzy projekt zatrudnienia grupowego i wygeneruje stano
 8. Na liście usuń oznaczenie wybranego wiersza.
     * Wybierz następne stanowisko w projekcie i kontynuuj wprowadzanie informacji o każdej osobie, którą chcesz zatrudnić.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

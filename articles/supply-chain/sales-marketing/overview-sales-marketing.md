@@ -125,3 +125,6 @@ Faktura pro forma to faktura przygotowana jako oszacowanie rzeczywistej kwoty fa
 #### <a name="blogs"></a>Blogi
 
 Przegląd procesu sprzedaży można znaleźć we wpisie [Jak działa sprzedaż w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

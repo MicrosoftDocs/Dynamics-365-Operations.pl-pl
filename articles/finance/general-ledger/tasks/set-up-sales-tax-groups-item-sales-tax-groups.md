@@ -50,3 +50,6 @@ W tym nagraniu zadania przejdziesz przez proces konfigurowania grup podatków i 
 19. Na liście kliknij łącze w wybranym wierszu.
 20. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

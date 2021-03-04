@@ -65,3 +65,6 @@ Niniejsza procedura umożliwia uruchamianie i zatrzymywanie rejestrowania czasu 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

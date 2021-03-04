@@ -224,3 +224,6 @@ Aby uzyskać prawidłowo przeliczone kwoty podczas używania walut, aplikacja Ra
 Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać więcej informacji na temat sposobu wprowadzania szczegółowych informacji o konsolidacji w trybie online, zobacz [Konsolidacje finansowe online](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

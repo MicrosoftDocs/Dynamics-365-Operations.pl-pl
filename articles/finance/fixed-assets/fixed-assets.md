@@ -60,3 +60,6 @@ Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

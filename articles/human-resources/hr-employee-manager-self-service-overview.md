@@ -214,3 +214,5 @@ Kierownictwo może zobaczyć wszystkie cele zespołu za pośrednictwem kafelka *
 Na karcie **Recenzje** znajduje się podsumowanie przeglądów pracowników w poszczególnych stanach: **w toku**, **gotowe do przejrzenia** i **końcowe recenzje**. Aby uzyskać dostęp do recenzji pracownika, wybierz przycisk **Szczegóły**, a następnie wybierz opcję Recenzje, które chcesz współpracować. W zależności od tego, gdzie znajduje się przegląd w ramach procesu przepływu pracy, można sprawdzić, czy przegląd jest dostępny do aktualizacji. 
 
 Możesz  zobaczyć wszystkie recenzje twojego zespołu za pośrednictwem kafelka **Recenzje wydajności zespołu** w sekcji **Podsumowania** **Mojego zespołu**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

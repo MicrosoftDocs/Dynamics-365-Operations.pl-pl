@@ -43,3 +43,6 @@ W poniższej tabeli przedstawiono pakiety zawartości usługi Power BI, z który
 | [Sprzedaż i rentowność](sales-profitability-performance-content-pack.md) | <ul><li>Przychód wg regionów</li><li>10 najważniejszych odbiorców wg przychodów</li><li>10 najważniejszych produktów wg przychodów</li></ul> |
 | [Zarządzanie kredytami i windykacją](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Zaległości odbiorców</li><li>Odbiorcy przekraczający limit kredytu</li><li>Wiekowane salda</li></ul> |
 | [Analiza wydatków zakupowych](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Zakupy wg miesięcy/dni</li><li>10 dostawców z najwyższymi zakupami</li><li>10 najczęściej kupowanych produktów</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

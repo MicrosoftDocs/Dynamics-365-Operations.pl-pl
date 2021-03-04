@@ -103,3 +103,6 @@ Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **
 ## <a name="hiring-applicants"></a>Zatrudnianie kandydatów
 
 Kandydatów zatrudnia się na stronie **Zgłoszenia**. Po zatrudnieniu kandydata rekord zgłoszenia otrzymuje stan **Zatrudniony**, a rekord osoby w globalnej książce adresowej jest kojarzony z rekordem nowego pracownika. Zmiany w danych globalnej książki adresowej dla nowego rekordu pracownika są również wyświetlane w rekordzie kandydata. Zmniejsza to ilość danych, które trzeba wprowadzić, gdyby nowy pracownik złożył wniosek o zatrudnienie na innym stanowisku w tym samym przedsiębiorstwie. Aby zatrudnić istniejącego pracownika na nowym stanowisku, kliknij opcję **Zmień stanowisko** w menu rozwijanym **Stan zgłoszenia** i uruchom proces przeniesienia.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

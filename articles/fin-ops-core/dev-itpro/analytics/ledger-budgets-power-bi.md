@@ -57,3 +57,6 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 | Księgi                   | Księgi, które można wyfiltrować jako bieżące księgi dla raportu              |
 | Kody budżetu              | Kody budżetu, według których będą filtrowane raporty                                                |
 | Firmy            | Firmy, które można wyfiltrować jako bieżące firmy dla raportu |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

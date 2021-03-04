@@ -55,3 +55,6 @@ Ta procedura prowadzi przez proces tworzenia wymiaru finansowego kanału handlu 
 24. Na liście kliknij łącze w wybranym wierszu.
 25. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Ten przewodnik po zadaniach zawiera instruktaż tworzenia i nabywania środka tr
 17. Na liście kliknij łącze w wybranym wierszu.
 18. Kliknij przycisk **Księguj**. Środek trwały zostanie utworzony i nabyty podczas księgowania faktury.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Reguły dystrybucji kosztów są używane do rozdzielania kosztów, które zosta
 5. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
 6. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

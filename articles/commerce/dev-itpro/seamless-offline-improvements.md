@@ -56,3 +56,6 @@ Parametry rozwiązania Commerce są zazwyczaj buforowane. Po zaktualizowaniu teg
 
 - [Funkcjonalność offline punktu sprzedaży (POS)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Operacje online i offline w punkcie sprzedaży (POS)](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

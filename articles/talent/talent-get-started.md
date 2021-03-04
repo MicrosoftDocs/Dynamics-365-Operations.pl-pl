@@ -66,3 +66,6 @@ Opinie, wiadomości i inne informacje dotyczące modułu Rozrachunki z dostawcam
 ### <a name="videos"></a>Filmy wideo
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

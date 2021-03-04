@@ -71,3 +71,6 @@ Podczas tworzenia zleceń serwisowych ręcznie lub automatycznie z poziomu wiers
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ W tej procedurze pokazano sposób konfigurowania programu lojalnościowego z dwo
 39. Zamknij stronę.
 40. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

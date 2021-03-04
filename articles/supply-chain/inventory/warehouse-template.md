@@ -98,3 +98,6 @@ Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu
 ## <a name="related-topic"></a>Powiązany temat
 
 [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

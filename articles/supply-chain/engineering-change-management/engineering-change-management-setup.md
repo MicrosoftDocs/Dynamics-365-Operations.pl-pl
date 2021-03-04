@@ -91,3 +91,6 @@ Dla każdego zestawu reguł ustaw następujące pola:
 - **Ważność** — umożliwia wybór poziomu ważności, dla którego mają być ustanawiane reguły. Do tworzenia i nadawanie nazw poziomom służy strona **Ważności zmian inżynieryjnych**. (Więcej informacji można znaleźć w poprzedniej sekcji.)
 
 Użyj przycisków na skróconej karcie **Reguły**, aby dodać lub usunąć regułę dotyczącą bieżącego ustawienia ważności. Każda reguła ma pole **Reguły** i **Nazwa**. Reguły są ustanawiane przez system i wskazują typy zmian, jakie może mieć produkt. Nazwa określa typ zmiany.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

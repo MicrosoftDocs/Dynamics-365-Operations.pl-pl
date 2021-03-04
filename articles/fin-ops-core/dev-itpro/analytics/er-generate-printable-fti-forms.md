@@ -224,3 +224,6 @@ Dla wyrażenia **Emailing.TxtToUse.Body** w przykładowym formacie skonfigurowan
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 [Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

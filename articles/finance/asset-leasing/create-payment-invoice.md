@@ -49,3 +49,6 @@ Można tworzyć miesięczne faktury za pojedyncze wynajmy lub można skorzystać
 6. Po zaksięgowaniu transakcji można wyświetlić informacje o transakcjach i wartości bilansowej zobowiązania z tytułu wynajmu, wybierając **Transakcje zobowiązań** w księdze wynajmu.
 
     W harmonogramie płatności zostanie zaznaczone pole wyboru **Arkusz zaksięgowany**, a w wierszu będzie wyświetlany numer arkusza faktur. Po utworzeniu arkusza płatności i zapisu dla tego arkusza należy wycofać ten wpis, aby można było go ponownie utworzyć.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

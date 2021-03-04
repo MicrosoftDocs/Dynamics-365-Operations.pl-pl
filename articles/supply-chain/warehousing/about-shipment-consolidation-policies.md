@@ -135,3 +135,6 @@ Poniższa tabela zawiera podsumowanie sposobu działania konsolidacji wysyłek, 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

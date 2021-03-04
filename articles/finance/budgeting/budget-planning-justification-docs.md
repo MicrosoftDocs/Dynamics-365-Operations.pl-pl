@@ -72,3 +72,6 @@ Menedżera budżetu tworzy szablon planu budżetu w programie Microsoft Word i p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

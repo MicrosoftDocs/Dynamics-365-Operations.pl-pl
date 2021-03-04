@@ -118,3 +118,6 @@ Domyślne konta wybiera się na stronie **Ustawienia konta domyślnego**, któr�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

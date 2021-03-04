@@ -73,3 +73,6 @@ Strona listy **Planowania zadań Kanban** zawiera pole informacyjne pokazujące 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Na stronie **Transakcja składnika majątku** są wyświetlane transakcje, któr
 Aby wyświetlić transakcje wydatków z tytułu wynajmu, wybierz umowę wynajmu na stronie **Podsumowanie wynajmu**, a następnie wybierz opcję **Księgi**, aby otworzyć księgi wynajmu dołączone do rekordu wynajmu. Następnie wybierz opcję **Transakcje wydatkowe**.
 
 Na stronie **Transakcje wydatkowe** są wyświetlane wszystkie wydatki, które zostały zaksięgowane dla wynajmu, takie jak koszty odsetek, wydatki amortyzacji i wszelkie koszty wykonawcze.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

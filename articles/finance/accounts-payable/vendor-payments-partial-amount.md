@@ -54,3 +54,6 @@ Możesz dokonać częściowej płatności, jeśli kwota pozostała do zapłaceni
 
 
 Aby uzyskać więcej informacji, zobacz [Przegląd płatności dla dostawcy](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

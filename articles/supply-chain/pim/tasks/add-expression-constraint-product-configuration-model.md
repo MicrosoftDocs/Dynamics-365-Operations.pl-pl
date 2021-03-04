@@ -51,3 +51,6 @@ W tej procedurze pokazano, jak można dodać nowe wyrażenie ograniczenia do mod
 4. Kliknij przycisk Zamknij.
 5. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

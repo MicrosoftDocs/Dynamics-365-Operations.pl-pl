@@ -113,3 +113,6 @@ Utworzone mapowanie modelu zostaje uruchomione w celach testowych, aby zobaczyć
     * Kliknij przycisk Przeglądaj i wybierz plik Response4.xml.
 16. Kliknij przycisk OK.
     * Przejrzyj wygenerowane dane wyjściowe. Typ odpowiedzi został teraz poprawnie rozpoznany jako równy dla pliku Response1.xml.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Dostawców możesz także kopiować za pomocą funkcji wyszukiwania numeru ident
 
 1. Zostanie wyświetlona opcja **Kopiuj dostawcę**. Domyślnie ta opcja ma wartość **Nie**. Aby skopiować dostawcę do bieżącej firmy, ustaw dla tej opcji wartość **Tak**.
 2. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy dostawca.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

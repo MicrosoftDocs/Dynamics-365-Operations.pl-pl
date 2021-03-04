@@ -155,3 +155,6 @@ W przypadku użycia aplikacji magazynowej do uruchomienia pobierania pracy wedł
 ## <a name="other-blocked-operations"></a>Inne zablokowane operacje
 
 Wszystkie operacje, które modyfikują wiersze pracy, transakcje dotyczące magazynu pracy lub łącza uzupełniania związane z pracą, która jest podzielona, będą kończyć się niepowodzeniem i wyświetlany będzie następujący komunikat o błędzie: „Praca z identyfikatorem \#\#\#\# jest obecnie dzielona”.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

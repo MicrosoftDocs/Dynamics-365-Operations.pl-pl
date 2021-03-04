@@ -250,3 +250,6 @@ Jeżeli zapis w arkuszu księgi podrzędnej jest nieprawidłowy w podglądzie pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

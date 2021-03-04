@@ -75,3 +75,6 @@ Stopka zawierająca informację o prawach autorskich jest automatycznie wyświet
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

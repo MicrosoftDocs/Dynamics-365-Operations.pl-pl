@@ -142,3 +142,6 @@ Organizacje mogą oferować pracownikom wiele różnych typów urlopów. Jednak 
 ### <a name="view-performance-information-for-direct-and-extended-reports-in-manager-self-service"></a>Wyświetlanie informacji o wydajności dla bezpośrednich i rozszerzonych raportów w module Self-Service Manager
 
 Nowa opcja umożliwi menedżerom wyświetlanie wyników zarówno ich bezpośrednich raportów, jak i raportów rozszerzonych. Obecnie menedżerowie liniowi mogą przypisywać i aktualizować cele wydajności oraz wystawiać nowe recenzje. Ponadto bezpośredni menedżerowie i ich pracownicy mogą utrzymywać i aktualizować dzienniki wydajności, aby zapewnić sprawny przebieg procesu przeglądu wydajności. Po zaimplementowaniu tej zmiany menedżerowie będą mogli wyświetlać i obsługiwać informacje związane z wydajnością raportów rozszerzonych, a także raporty bezpośrednie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

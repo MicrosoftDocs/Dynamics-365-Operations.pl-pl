@@ -281,3 +281,6 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 6. W polu **Konto bankowe** wybierz pozycję **DEMF OPER**.
 7. W oknie dialogowym **Generowanie płatności** wybierz przycisk **OK**.
 8. W oknie dialogowym **Parametry raportu elektronicznego** wybierz przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Podczas tworzenia dostawy bezpośredniej, sprzedawane towary nigdy faktycznie ni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

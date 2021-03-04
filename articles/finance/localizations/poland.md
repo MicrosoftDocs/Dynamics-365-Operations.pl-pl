@@ -42,3 +42,6 @@ Ten temat zawiera łącza do zasobów dokumentacji dla Polski.
 - [Zestawienie obrotów i sald](emea-pol-turnover-balances-statement.md)
 - [Podział różnic kursowych dla RzD/RzO](emea-pol-split-ap-ar-exchange-difference.md)
 - [Deklaracja VAT z rejestrami (JPK_V7M, VDEK)](emea-pol-vdek.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

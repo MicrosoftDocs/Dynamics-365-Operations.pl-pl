@@ -63,3 +63,6 @@ W tej procedurze pokazano sposób definiowania jednostki miary, wprowadzania tł
 6. Kliknij przycisk **OK**.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

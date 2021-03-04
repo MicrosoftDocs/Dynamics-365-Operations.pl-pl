@@ -160,3 +160,6 @@ Wykres Gantta można otworzyć z następujących stron.
 
 [Wizualne planowanie produkcji (skrypt demonstracyjny)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

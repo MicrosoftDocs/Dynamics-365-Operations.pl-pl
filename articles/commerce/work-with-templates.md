@@ -150,3 +150,6 @@ Po przejrzeniu zmian w szablonie należy wykonać jedną z następujących czynn
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Praca z układami predefiniowanymi](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

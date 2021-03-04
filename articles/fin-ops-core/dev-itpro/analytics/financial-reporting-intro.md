@@ -96,3 +96,6 @@ Następujące składniki aparatu sprawozdawczości finansowej zapewniają łatwe
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 [Generowanie raportów finansowych](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ W tym temacie wyjaśniono, jak konfigurować producentów składników majątku 
 2. W kolumnie **Składnik majątku** wybierz łącze dla składnika majątku. Zostanie wyświetlona strona **Szczegóły**.
 3. Wybierz opcję **Edycja**.
 4. Na skróconej karcie **Ogólne** wybierz wartości w polach **Producent** i **Model**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

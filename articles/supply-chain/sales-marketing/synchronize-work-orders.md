@@ -77,3 +77,6 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Zlecenia pracy z projektem (Field Service do Supply Chain Management): WorkOrderService
 
 [![Mapowanie szablonu w integracji danych](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

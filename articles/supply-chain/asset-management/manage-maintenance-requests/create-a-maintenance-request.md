@@ -74,3 +74,6 @@ W widoku szczegółów można aktualizować różne informacje. Oto kilka przyk�
 
 > [!NOTE]
 > Jeśli wybierzesz składnik majątku podczas tworzenia żądania konserwacji, można dodać jeden błąd do zasobu. Po utworzeniu żądania konserwacji można dodać więcej błędów, zgodnie z żądaniem. Aby dodać błędy, wybierz opcję **błąd składnika majątku** na stronie **wszystkie żądania konserwacji**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

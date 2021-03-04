@@ -48,3 +48,6 @@ W tym przewodniku po zadaniach zostaną przeniesienie informacje finansowe księ
     * Przejrzyj wyniki przed przeniesieniem ksiąg środków trwałych.  
 10. Kliknij przycisk **Przeniesienie**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

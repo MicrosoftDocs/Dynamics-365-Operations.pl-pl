@@ -46,3 +46,6 @@ Aby przeklasyfikować środek trwały, należy wykonać następujące kroki:
 5. W polu **Data przeklasyfikowania** wprowadź datę.
 6. W polu **Seria załączników** wprowadź lub wybierz wartość.
 7. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

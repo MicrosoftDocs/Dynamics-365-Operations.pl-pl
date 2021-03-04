@@ -108,3 +108,5 @@ W ramach wywołania interfejsu API przesyłania moduł Human Resources przeprowa
 
 - [MyLeaveRequests — omówienie](hr-developer-api-myleaverequests-overview.md)
 - [Uwierzytelnianie](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

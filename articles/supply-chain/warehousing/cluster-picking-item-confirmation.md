@@ -42,3 +42,6 @@ Weryfikacja towarów w pobieraniu dla grupy działa tak samo, jak w zwykłych pr
 |        Opcja        |                                    opis                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Potwierdzenie produktu | Umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

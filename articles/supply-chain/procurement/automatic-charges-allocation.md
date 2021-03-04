@@ -177,3 +177,6 @@ Poniżej przedstawiono procedurę alokowania opłat na poziomie nagłówka w wie
         > Podczas pracy z siatką **Wybierz linie do wykluczenia z alokacji**, należy pamiętać, aby pozostawić siatkę otwartą do momentu wybrania opcji **Alokacja**. Jeśli zamkniesz siatkę przed wybraniem opcji **Alokacja**, ustawienia w siatce zostaną utracone. Z tego względu opłaty będą alokowane na podstawie poprzednio zdefiniowanych kryteriów.
 
 1. Wybierz przycisk **Alokacja**, aby zastosować ustawienia i zamknąć okienko dialogowe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

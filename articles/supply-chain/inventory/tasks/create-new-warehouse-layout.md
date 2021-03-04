@@ -63,3 +63,6 @@ W tym temacie opisano sposób konfigurowania informacji na temat lokalizacji w m
 7. Zamknij stronę.
 8. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

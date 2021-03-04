@@ -76,3 +76,6 @@ Aby ukończyć przewodnik po zadaniach, należy pobrać następujące pliki:
 
 - [Konfiguracja modelu ER — CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [Konfiguracja formatu ER — CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

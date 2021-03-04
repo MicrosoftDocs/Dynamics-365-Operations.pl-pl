@@ -680,3 +680,6 @@ W przypadku generowania raportu JPK-V7M w formacie XML za okres krótszy niż pe
 
 - Tag **\<Miesiac\>** będzie zawierać informacje o interwale dat, za który jest generowany raport.
 - Tag **\<P_\*\>** części **Deklaracja** raportu zawiera obliczone wartości reprezentujące agregację kwot z części **SprzedazWiersz** i **ZakupWiersz** raportu. Wartości w tym tagu zostaną zaokrąglone do dwucyfrowej wartości dziesiętnej, ale nie wartości całkowitej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -329,3 +329,6 @@ Wartość **Limit czasu prób optymalizacji** umożliwia określenie liczby seku
 
 > [!NOTE]
 > Wartości ustawione dla limitów czasu zostaną zastosowane zarówno do planowania zwolnionych zleceń produkcyjnych, jak i planowanych zamówień w ramach modułu MRP. Dlatego ustawienie bardzo wysokich wartości może znacząco zwiększyć czas działania procesu MRP w przypadku działania planu z wieloma zaplanowanymi zleceniami produkcyjnymi.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Można także wprowadzić komunikat potwierdzenia, który zostanie wyświetlony 
 4.  Otwórz kartę **Kraj/regiony**, aby wybrać kraj/region, dla którego ma zostać użyta konfiguracja.
 5.  Dokończ konfigurację, postępując zgodnie ze wskazówkami dotyczącymi konfiguracji domyślnej.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

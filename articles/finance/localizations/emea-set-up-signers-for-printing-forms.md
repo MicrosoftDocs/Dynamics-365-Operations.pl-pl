@@ -165,3 +165,6 @@ Funkcjonalność danych urzędowych pokazuje domyślne predefiniowane osoby podp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

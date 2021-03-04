@@ -56,3 +56,6 @@ Aby skonfigurować kalendarz, należy wykonać następujące czynności:
 10. Aby przypisać kalendarz do pracowników, w okienku akcji wybierz opcję **Przypisz do pracowników etatowych**. Zaznacz pracowników, którym chcesz przypisać ten kalendarz, i kliknij przycisk **Przypisz**.
 
 Pracownicy nie muszą mieć przypisanych kalendarzy. Jeśli zdefiniowano kalendarz czasu pracy, dni wolne są automatycznie wykluczane z wniosku o czas wolny. Ilość w godzinach lub dniach jest domyślnie ustawiana według czasów pracy określonych w kalendarzu. Jeśli pracownik nie ma przypisanego kalendarza, wszystkie dni są dostępne dla przyznania czasu wolnego, a ilość czasu wolnego nie jest domyślna dla wniosku. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

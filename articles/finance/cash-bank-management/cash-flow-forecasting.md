@@ -150,3 +150,6 @@ Ponadto można wyświetlać dane prognozowania przepływów pieniężnych dla ok
 - **Prognoza dostaw**: opcja **Prognozy przepływów pieniężnych** pozwala obejrzeć przyszłe przepływy pieniężne skojarzone z prognozą dostaw wybranego towaru.
 - **Prognoza popytu**: opcja **Prognozy przepływów pieniężnych** pozwala obejrzeć przyszłe przepływy pieniężne skojarzone z prognozą popytu na wybrany towar.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Zwróć uwagę na odbiorcę i numery towarów wybrane dla procesu naliczania pro
 3. Zamknij stronę.
 4. Wybierz **Załącznik**. Można przejrzeć transakcje załącznika dla kwot prowizji, które zostały zaksięgowane na wstępnie zdefiniowanych kontach wydatków z tytułu prowizji i należnych prowizji.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

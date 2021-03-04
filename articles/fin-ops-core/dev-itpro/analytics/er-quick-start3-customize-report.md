@@ -671,3 +671,6 @@ Stan wersji 32.6.7.2 został zmieniony z **Wersji roboczej** na **Zakończone**,
 - [Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service](er-download-configurations-global-repo.md)
 - [Tworzenie faktury niezależnej](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
 - [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Funkcja `INTVALUE (-100.77)` zwraca wartość *Int* wynoszącą **-100**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje konwersji typu](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

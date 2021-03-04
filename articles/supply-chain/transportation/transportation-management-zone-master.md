@@ -36,3 +36,6 @@ Zarządzanie transportem umożliwia dzielenie lokalizacji geograficznych na stre
 - **Optymalizowanie planowania trasy** — przez przypisanie konkretnych planów tras do wybranych stref.
 
 Strefy można określać na podstawie wartości pól metadanych (takich jak kraj, zakres kodów pocztowych lub usługa przewoźnika), które kwalifikują każdą strefę. Definicje stref nie są wymagane, jeśli cenniki transportu nie korzystają z koncepcji strefy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

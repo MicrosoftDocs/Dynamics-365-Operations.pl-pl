@@ -50,3 +50,6 @@ W module Zarządzanie składnikami majątku można skonfigurować dokumenty w ta
 
 4. Wybierz **Załączniki**. Zostanie wyświetlona standardowa strona **Obsługa dokumentów**.
 5. Skonfiguruj dokumenty lub notatki, które powinny być dołączone do rekordu dokumentu składnika majątku. Po dołączeniu dokumentów w polu **Załączniki** pokazuje się liczba dokumentów powiązanych z rekordem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

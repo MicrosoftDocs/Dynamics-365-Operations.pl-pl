@@ -136,3 +136,6 @@ Aby skonfigurować grupę cenową, należy wykonać następujące czynności.
 [Konfigurowanie i używanie alertów o oszustwie](set-up-fraud-alerts.md)
 
 [Konfigurowanie programów sprzedaży ciągłej dla biur obsługi](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

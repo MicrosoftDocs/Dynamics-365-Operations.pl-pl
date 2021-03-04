@@ -89,3 +89,6 @@ W tym przypadku dwie dostępne sztuki towaru COMP zostały uwzględnione. Ale, z
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ W tej procedurze pokazano, jak utworzyć konto dostawcy oraz dodać informacje a
 7. Zamknij stronę.
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

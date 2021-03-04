@@ -88,3 +88,6 @@ Metoda amortyzacji degresywnej 175% dzieli wartość 175% między lata okresu u�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

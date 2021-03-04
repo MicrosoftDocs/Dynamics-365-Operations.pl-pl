@@ -46,3 +46,6 @@ W tej procedurze pokazano sposób konfigurowania nowej definicji kodu kreskowego
 12. Kliknij przycisk Zapisz.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

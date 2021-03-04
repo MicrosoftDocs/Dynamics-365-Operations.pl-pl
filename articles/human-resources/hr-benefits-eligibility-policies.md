@@ -49,3 +49,6 @@ Użytkownik określa zakres reguły w obrębie zasady. Jeśli na przykład użyt
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

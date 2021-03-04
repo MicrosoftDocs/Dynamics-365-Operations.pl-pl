@@ -53,3 +53,6 @@ Aby uzyskać więcej informacji na temat konfiguracji, która jest powiązana z 
 
 > [!NOTE]
 > Jeśli zmienisz rekord poziomu usługi składnika majątku na stronie **Poziomy usługi składnika majątku** już po jego użyciu w zleceniu pracy, poziom usługi na żądaniach konserwacji i zleceniach pracy nie jest odpowiednio aktualizowany.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

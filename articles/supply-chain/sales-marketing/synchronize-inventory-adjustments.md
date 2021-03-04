@@ -79,3 +79,6 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Przeniesienie zapasów (z rozwiązania Field Service do Supply Chain Management): Przeniesienie zapasów
 
 [![Mapowanie szablonu w integracji danych](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

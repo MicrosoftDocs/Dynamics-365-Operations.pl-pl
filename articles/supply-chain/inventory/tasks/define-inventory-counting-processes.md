@@ -85,3 +85,6 @@ Ten temat ukazuje konfigurację podstawowych procesów inwentaryzacji poprzez ut
 5. W menu rozwijanym pola **Grupa inwentaryzacji** wybierz grupę inwentaryzacji. Można wybrać określoną grupę inwentaryzacji, która ma być stosowana do towaru w wybranym magazynie. Podczas inwentaryzowania w tym magazynie ta zasada inwentaryzacji zastąpi ogólną zasadę inwentaryzacji towaru.  
 6. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

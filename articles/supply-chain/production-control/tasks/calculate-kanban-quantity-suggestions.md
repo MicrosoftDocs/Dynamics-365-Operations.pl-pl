@@ -85,3 +85,6 @@ Ta procedura skupia się na optymalizowaniu wielkości i liczby kart Kanban dla 
     * Należy zauważyć, że jest to stała liczba kart Kanban 4 z obliczenia liczby kart Kanban.  
 5. Kliknij kartę ListPanel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

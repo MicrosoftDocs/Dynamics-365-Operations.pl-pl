@@ -99,3 +99,6 @@ Podczas wyświetlania podglądu stron opartych na szablonie, do którego dodano 
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

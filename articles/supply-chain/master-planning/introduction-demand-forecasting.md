@@ -100,3 +100,6 @@ Należy zauważyć, że jednostka miary prognozy popytu nie musi mieć żadnych 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

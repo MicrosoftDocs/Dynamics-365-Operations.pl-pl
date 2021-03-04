@@ -113,3 +113,6 @@ Nie możesz przypisać systemu stałych wynagrodzeń pracownikowi, dopóki nie z
 
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

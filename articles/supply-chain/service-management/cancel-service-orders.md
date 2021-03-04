@@ -78,3 +78,6 @@ Zaznaczone zlecenia serwisowe zostaną anulowane lub ich stan postępu **Anulowa
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

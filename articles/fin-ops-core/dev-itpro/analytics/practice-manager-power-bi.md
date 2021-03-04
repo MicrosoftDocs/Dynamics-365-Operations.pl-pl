@@ -117,3 +117,6 @@ Poniżej opisano zagregowane miary, które są używane w każdej jednostce.
 | Najważniejsza zagregowana miara       | Pole               | opis |
 |---------------------------------|---------------------|-------------|
 | Planowany koszt ukończonego działania | Sum(TotalCostPrice) | Całkowity koszt własny w oszacowaniach dla wszystkich typów transakcji projektu zawierających ukończone zadania. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

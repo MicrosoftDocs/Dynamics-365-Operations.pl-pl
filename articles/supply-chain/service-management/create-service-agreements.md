@@ -62,3 +62,6 @@ W tym temacie opisano sposób korzystania z funkcji w modułach Zarządzanie ser
 [Omówienie opracowania i ustanawiania przeglądów umów serwisowych](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

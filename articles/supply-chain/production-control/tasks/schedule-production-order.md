@@ -55,3 +55,6 @@ W tej procedurze pokazano sposób planowania zlecenia produkcyjnego. Dane wykorz
 6. Zamknij stronę.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

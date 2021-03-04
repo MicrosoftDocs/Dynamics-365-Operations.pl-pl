@@ -93,3 +93,6 @@ Można również używać podwójnych warstw. Jeśli w formularzu **Konfiguracja
    | **Wskaźnik osoby palącej kredytu elastycznego** | Liczba elastycznych punktów kredytowych, jakie trzeba wydać na świadczenie, oparta na obliczeniu zdefiniowanym dla poziomu warstwy dla osób palących. |
 
 5. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

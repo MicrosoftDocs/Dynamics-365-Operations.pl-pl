@@ -146,3 +146,6 @@ Wymiar wersji działa podobnie do innych wymiarów produktu. Jednak ze względu 
 
 > [!IMPORTANT]
 > Jeśli włączysz wymiar wersji i użyjesz go, niektóre rozwiązania odwołujące się do wymiarów magazynowych mogą przestać działać zgodnie z oczekiwaniami. Aby potwierdzić i rozwiązać te problemy, skontaktuj się z niezależnym dostawcą oprogramowania (ISV), aby uzyskać rozwiązania, których dotyczy problem. Aby uzyskać więcej informacji, skorzystaj z opcji [Włącz wymiar wersji](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Można wybrać dowolnego pracownika jako preferowanego technika dla umowy serwis
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

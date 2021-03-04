@@ -81,3 +81,6 @@ Po utworzeniu nowego zlecenia serwisowego dla umowy serwisowej, która ma przypi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

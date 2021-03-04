@@ -62,3 +62,6 @@ Przy tworzeniu połączeń w definicjach księgowania obowiązują następujące
 Aby uzyskać więcej informacji, zobacz [Przykłady definicji księgowania](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

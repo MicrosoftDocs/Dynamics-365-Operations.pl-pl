@@ -66,3 +66,6 @@ Można pobrać plik PDF zawierający listy krajów, regionów i języków obsłu
 
 Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

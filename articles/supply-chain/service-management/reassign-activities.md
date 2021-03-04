@@ -58,3 +58,6 @@ Aby ponownie przypisać działanie do innego pracownika, należy wykonać nastę
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

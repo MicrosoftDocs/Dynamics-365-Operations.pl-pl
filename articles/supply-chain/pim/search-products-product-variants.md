@@ -87,3 +87,6 @@ Zachowaniem domyślnym przy wprowadzaniu wiersza zamówienia sprzedaży jest otw
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

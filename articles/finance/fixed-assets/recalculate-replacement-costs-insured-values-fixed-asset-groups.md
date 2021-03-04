@@ -78,3 +78,6 @@ Następnego dnia menedżer informuje Cię, że komputery spadły o 8% zamiast 10
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

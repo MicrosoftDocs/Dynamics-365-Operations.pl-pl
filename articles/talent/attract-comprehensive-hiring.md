@@ -85,3 +85,6 @@ Istnieje wiele powodów, z których możesz nie widzieć funkcji Attract widoczn
 
 - Współpracownik pracuje na wersji próbnej lub licencjonowanej Attract z dodatkiem kompleksowej obsługi rekrutacji, a Ty pracujesz na podstawowej wersji Attract.
 - Masz Attract z dodatkiem kompleksowej obsługi rekrutacji, ale jeszcze nie zostały przypisane poprawne role do używania wszystkich funkcji. Aby uzyskać więcej informacji, zobacz [Zarządzanie zabezpieczeniami i rolami w aplikacji Attract](security-attract.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

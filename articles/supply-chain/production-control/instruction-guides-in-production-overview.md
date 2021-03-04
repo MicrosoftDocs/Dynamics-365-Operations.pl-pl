@@ -410,3 +410,6 @@ Jeśli moduł Supply Chain Management generuje zadania dla wydziału produkcyjne
 - W przypadku zdefiniowania kilku relacji operacji marszruty, które obejmują relację *Wszystkie* i przypisywania do nich przewodników w danym zadaniu będą wyświetlana tylko przewodniki z najbardziej szczegółowej relacji.  
 
 ![Diagram rozpoznawania odpowiednich przewodników](media/instruction-guides-Resolve.png "Diagram rozpoznawania odpowiednich przewodników")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

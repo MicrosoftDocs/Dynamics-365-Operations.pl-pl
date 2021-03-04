@@ -54,3 +54,6 @@ Ta procedura pokazuje, jak utworzyć kryterium wyboru ceny sprzedaży dla modeli
 4. W polu Kryteria wybierz opcję Grupa odbiorców 10. 
 5. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

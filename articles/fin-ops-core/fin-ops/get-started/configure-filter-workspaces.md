@@ -63,3 +63,6 @@ Jeśli poszczególne sekcje obszaru roboczego mają własne filtry, każdą sekc
 [![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Podobnie jak w przypadku filtra całego obszaru roboczego, wybierz lub wprowadź wartość, aby według niej wyfiltrować zawartość sekcji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

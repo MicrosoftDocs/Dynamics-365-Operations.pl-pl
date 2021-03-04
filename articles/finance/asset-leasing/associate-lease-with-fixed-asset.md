@@ -54,3 +54,6 @@ Po zaksięgowaniu wpisu w arkuszu początkowego uznania transakcja jest wyświet
 
 > [!NOTE]
 > Jeśli użytkownik skojarzy środek trwały z wynajmem, przyciski **Amortyzacja środka trwałego** i **Utrata wartości wynajmu** są wyłączone w module Wynajem składnika majątku. Transakcje amortyzacji składnika majątku i utraty wartości wynajmu można wyświetlić w module Środki trwałe. Przycisk **Transakcje składnika majątku**, który powoduje otwarcie formularza kwerendy, również jest wyłączony. Formularz kwerendy **Transakcje składnika majątku** można również otworzyć w module Środki trwałe.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

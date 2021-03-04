@@ -115,3 +115,6 @@ Poniższa tabela zawiera więcej informacji o dodatkowych działaniach, które s
 | Dostępność         | Wyświetlanie informacji ATP o wybranej kombinacji wariantów dla wybranej lokalizacji. |
 | Pokaż wszystkie lokalizacje   | Przełączanie na standardowy widok wyszukiwania zapasów i wyróżnianie informacji o dostępności zapasów wariantu towaru we wszystkich sklepach w grupie lokalizatora sklepów oraz w centrach dystrybucyjnych o typie **Standardowy/Domyślnie**. |
 | Wyświetlanie szczegółów produktu | Przekierowywanie użytkownika do strony **Szczegóły produktu** skojarzonego produktu głównego. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

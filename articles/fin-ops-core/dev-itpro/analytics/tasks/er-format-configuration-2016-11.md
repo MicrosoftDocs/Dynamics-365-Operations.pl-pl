@@ -158,3 +158,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 42. Kliknij przycisk **Zapisz**.
 43. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

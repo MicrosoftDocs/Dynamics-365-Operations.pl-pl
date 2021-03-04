@@ -115,3 +115,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
  - [Przeglądanie informacji o windykacji](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

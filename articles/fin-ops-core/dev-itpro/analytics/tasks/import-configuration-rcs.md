@@ -55,3 +55,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administratora systemu
 5. Kliknij przycisk **Zamknij**. 
 6. Wybierz żądaną wersję konfiguracji modułu ER i kliknij przycisk **Importuj**, aby przenieść ją do bieżącego wystąpienia.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

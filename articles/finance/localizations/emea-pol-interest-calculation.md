@@ -100,3 +100,6 @@ W Polsce stawki odsetek od podatku określa Minister Finansów. Dostawca oblicza
 11. W ustawieniu **Odsetki od podatków** zaznacz opcję **Tak**, aby obliczać odsetki rynkowe oraz odsetki od podatków.
 12. Na skróconej karcie **Rekordy do uwzględnienia** wybierz opcję **Filtr**, aby znaleźć i wybrać rekordy dla obliczania odsetek.
 13. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

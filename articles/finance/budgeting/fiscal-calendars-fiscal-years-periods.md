@@ -64,3 +64,6 @@ Można użyć strony Kalendarz księgi, aby wyświetlić szczegóły dla kalenda
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

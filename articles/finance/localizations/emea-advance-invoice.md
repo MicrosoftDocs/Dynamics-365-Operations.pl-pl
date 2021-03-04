@@ -153,3 +153,6 @@ Utwórz zamówienie zakupu lub wybierz istniejące zamówienie zakupu. Kliknij o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ W programie Dynamics 365 Human Resources kody przyczyn są używane do wyjaśnia
    | **Opis** | Opis kodu przyczyny. |
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

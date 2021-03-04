@@ -102,3 +102,6 @@ Aby zastosować filtrowanie na podstawie kontekstu firmy w formularzach niestand
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Zastosuj kontekst firmy":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

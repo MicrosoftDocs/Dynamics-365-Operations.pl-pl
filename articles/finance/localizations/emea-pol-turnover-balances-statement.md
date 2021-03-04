@@ -41,3 +41,6 @@ Standardowy sposób obliczania salda konta polega na zapisaniu różnicy między
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

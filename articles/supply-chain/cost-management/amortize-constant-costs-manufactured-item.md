@@ -47,3 +47,6 @@ Obliczona kwota zamortyzowanych stałych kosztów wytworzonego towaru jest okre�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ Jeśli ten błąd nadal nie jest naprawiony, wykonaj następujące kroki.
 4. Otwórz stronę **Mapowania tabeli** ze strony **Podwójny zapis** w aplikacji Finance and Operations.
 5. Jeśli atrybut nie został automatycznie wypełniony na mapie, dodaj go ręcznie, klikając przycisk **Dodaj atrybut**, a następnie klikając przycisk **Zapisz**. 
 6. Wybierz mapę i kliknij przycisk **Uruchom**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

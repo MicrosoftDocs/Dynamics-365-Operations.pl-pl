@@ -43,3 +43,6 @@ W tym temacie opisano sposób tworzenia profilu lokalizacji w Dynamics 365 Suppl
 10. W polu **Pozwól na inwentaryzację ciągłą** wybierz opcję **Tak**.
 11. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

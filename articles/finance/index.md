@@ -73,3 +73,6 @@ Przepisy krajowe/regionalne wpływają na ustawienia podatku i inne aspekty zarz
 
 Funkcja zarządzania łańcuchem dostaw obejmuje części procesu „procure-to-pay” zawierającego zapotrzebowanie, zamawianie, przyjmowanie, fakturowanie i płatności za towary i usługi, które kupuje organizacja. Więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją zawiera [strona główna aplikacji Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -380,3 +380,6 @@ W pierwszej transakcji — dla subskrypcji 00020\_135 — cena sprzedaży 550 eu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

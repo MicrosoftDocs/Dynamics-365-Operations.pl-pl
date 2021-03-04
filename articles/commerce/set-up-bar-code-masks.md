@@ -83,3 +83,6 @@ Aby można było używać masek kodów kreskowych, muszą one zostać przypisane
 5. Kliknij przycisk **Zapisz**.
 
 Teraz można używać maski kodu kreskowego do tworzenia kodów kreskowych dla produktów. Powyższe czynności są przykładowym sposobem tworzenia masek kodów kreskowych dla produktów, ale także ilustrują sposób tworzenia masek kodów kreskowych dla dowolnych obsługiwanych typów kodów kreskowych. Maski, typy i długości kodów kreskowych należy dostosowywać do użytku w swoim konkretnym środowisku.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

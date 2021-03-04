@@ -78,3 +78,6 @@ W przypadku wystąpienia błędu weryfikacji można wyeliminować tylko po skont
 
 > [!NOTE]
 > Oprócz tego w przyszłej wersji pojawią się też dodatkowe reguły weryfikacji dostosowane do innych scenariuszy.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -331,3 +331,6 @@ W tym przykładzie jest tworzony wiersz zamówienia zwrotu przy użyciu funkcji 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

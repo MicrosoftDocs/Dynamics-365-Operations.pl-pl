@@ -65,3 +65,6 @@ Są dostępne dla następujących rozwiązań PowerBI.com z [Microsoft AppSource
 - Zarządzanie kosztami
 - [Wyniki finansowe](financial-performance-power-bi-content-pack.md)
 - [Wyniki kanału detalicznego ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

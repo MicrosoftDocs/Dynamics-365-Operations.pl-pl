@@ -84,3 +84,6 @@ Można skonfigurować kody przyczyny, aby były wymagane przy modyfikacjach śro
 Wreszcie na karcie **Sekwencje numerów** należy określić numerację środków trwałych. Numeracja w polu **Środek trwały** może zostać zastąpiona przez numerację z pola **Grupa środków trwałych**, jeśli została określona.
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie środka trwałego](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

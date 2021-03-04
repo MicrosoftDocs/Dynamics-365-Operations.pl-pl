@@ -479,3 +479,6 @@ Rozliczona kwota znajduje odzwierciedlenie w polu <strong>Rozliczona waluta</str
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

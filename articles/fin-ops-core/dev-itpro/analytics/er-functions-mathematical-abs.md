@@ -55,3 +55,6 @@ Funkcja `ABS (-1)` zwraca wartość **1**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje matematyczne](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Zwolnione produkty i warianty, w których pole **Stan cyklu życia produktu** po
 Aby uzyskać więcej informacji na temat stanów cyklu życia produktów, zapoznaj się z [Omówienie stanów cyklu życia produktu](../../pim/product-lifecycle.md).
 
 Aby uzyskać szczegółowe informacje, które obejmują kroki korzystania ze stanów cyklu życia produktu w celu wykluczenia produktów z planowania głównego i obliczeń na poziomie BOM, zobacz [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego](../../pim/tasks/exclude-products-master-planning.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

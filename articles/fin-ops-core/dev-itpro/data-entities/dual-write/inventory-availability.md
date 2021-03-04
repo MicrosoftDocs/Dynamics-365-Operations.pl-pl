@@ -57,3 +57,6 @@ Okno dialogowe zwraca informacje o ATP z Supply Chain Management. Informacje te 
 - Ilość przychodu
 - Ilość rozchodu
 - Ilość dostępnych zapasów
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

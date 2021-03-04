@@ -113,3 +113,6 @@ Po przejrzeniu przypisanego Ci zamówienia zakupu i zapoznaniu się z instrukcja
 5. Wybierz odpowiednią akcję.
 6. Na stronie **Wykonaj zadanie** wprowadź komentarz. Należy zauważyć, że po wybraniu akcji **Delegowanie** musisz wybrać użytkownika, któremu zadanie zostanie delegowane.
 7. Wybierz opcję **Gotowe**. Po odświeżeniu obszaru roboczego zamówienie zakupu przestanie być widoczne na liście. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

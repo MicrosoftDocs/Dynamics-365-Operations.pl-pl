@@ -40,3 +40,6 @@ W tej procedurze pokazano sposób definiowania grup konfiguracji produktów prze
 7. W polu Nazwa wpisz wartość.
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

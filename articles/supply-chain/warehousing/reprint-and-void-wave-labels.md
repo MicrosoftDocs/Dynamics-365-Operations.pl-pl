@@ -218,3 +218,6 @@ Wyjątki pracy kontrolują zachowanie krótkiego pobrania. Wykonaj poniższe czy
 1. Wybierz opcję **Krótkie pobranie**.
 1. Umożliwia wybranie kodu wyjątku pracy utworzonego dla tego scenariusza.
 1. Jeśli wybrano poprawny wyjątek, pole wyboru **Unieważnij i ponownie drukuj** powinno być dostępne. Zaznacz to pole i potwierdź. Po potwierdzeniu, sekwencja rzutowania etykiet określona przez pole **Identyfikatora kompilacji etykiety** jest obliczana ponownie na podstawie zmienionej ilości w wierszu pracy. Następnie zostanie ponownie wydrukowana na określonej drukarce.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

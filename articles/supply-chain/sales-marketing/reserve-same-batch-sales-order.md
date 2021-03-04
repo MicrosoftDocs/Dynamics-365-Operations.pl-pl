@@ -45,3 +45,6 @@ Podczas rezerwowania zapasów produktu w wierszu zamówienia sprzedaży, dla kt�
 - Partia nie ma wystarczającej liczby pozostałych dni przydatności (według daty ważności, daty przydatności i liczby dni możliwej sprzedaży u odbiorcy).
 
 W przypadku towarów skojarzonych z grupą wymiarów magazynowania, w której jest włączona opcja **Używaj procesów zarządzania magazynem**, można zarezerwować określone numery partii przy użyciu hierarchii rezerwacji o wymiarze magazynowym numer partii zdefiniowanym powyżej wymiaru lokalizacji. Strona **Rezerwacja partii** dla wierszy sprzedaży i zamówień przeniesienia umożliwia również wybranie i zarezerwowanie wielu wierszy na podstawie dostępnych numerów partii. Aby uzyskać więcej informacji na temat czynności, które należy wykonać w przypadku korzystania z hierarchii rezerwacji z wymiarem numeru partii poniżej lokalizacji, należy zapoznać się z tematem [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadani
 8. Kliknij przycisk OK.
 9. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

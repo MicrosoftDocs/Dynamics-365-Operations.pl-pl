@@ -122,3 +122,6 @@ Jeśli nie masz dostępu do stron, które są używane do ukończenia zadań opi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

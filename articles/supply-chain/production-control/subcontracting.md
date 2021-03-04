@@ -303,3 +303,6 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     ![Wykresy porównania kosztów](./media/subcontract35_cost-comparison-charts.png)
 
 Brak danych konfiguracyjnych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

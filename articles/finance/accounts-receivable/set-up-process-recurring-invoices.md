@@ -67,3 +67,6 @@ Po zaksięgowaniu faktur cyklicznych można je drukować ze strony listy faktur 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

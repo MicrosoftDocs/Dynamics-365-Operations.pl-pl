@@ -113,3 +113,6 @@ Jako alternatywy do korzystania z formularza **Przegląd przyjęć** można uży
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

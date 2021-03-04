@@ -78,3 +78,6 @@ Przejrzyj wygenerowany plik XML.
 6. Zamknij stronę.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

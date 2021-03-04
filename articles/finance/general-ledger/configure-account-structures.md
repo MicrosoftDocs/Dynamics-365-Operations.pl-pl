@@ -107,3 +107,6 @@ Podczas konfigurowania struktur kont zaleca się przestrzeganie pewnych najlepsz
 Jeśli nowe ustawienie lub zmiana struktury konta została zakończona, należy je aktywować. Jeśli struktura konta jest przypisana do księgi, ten proces aktywacji może potrwać bardzo długo, ponieważ wszystkie niezaksięgowane transakcje w systemie muszą zostać zsynchronizowane z nową strukturą. Zmiany struktury konta nie mają wpływu na zaksięgowane transakcje.
 
 Aby uzyskać więcej informacji, zobacz [Planowanie planu kont](plan-chart-of-accounts.md), [Wymiary finansowe](financial-dimensions.md) i [Wpisywanie kombinacji wymiarów i kont (formant Wpis podzielony na segmenty)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

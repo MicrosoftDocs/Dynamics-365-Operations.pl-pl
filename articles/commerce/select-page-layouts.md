@@ -78,3 +78,6 @@ Aby wybrać inny układ dla istniejącej strony, wykonaj następujące kroki.
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

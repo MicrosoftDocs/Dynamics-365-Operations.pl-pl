@@ -65,3 +65,6 @@ Stany zapasów można zmieniać przy użyciu strony **Dostępne zapasy według l
 > - Na stronie **Dostępne zapasy według lokalizacji** można grupować wiersze na podstawie wyświetlonych wymiarów, korzystając z przycisku **Wyświetl wymiary**, i zmieniać stan w wybranych wierszach.
 > - Na stronie **Dostępne zapasy według lokalizacji** można wybrać wiele rekordów, a następnie za pomocą przycisku **Zmiana stanu zapasów** zmienić wszystkie te rekordy jednocześnie.
 > - W przypadku zadania okresowego **Zmiana stanu zapasów** użytkownik może filtrować wiersze według wymiarów śledzenia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

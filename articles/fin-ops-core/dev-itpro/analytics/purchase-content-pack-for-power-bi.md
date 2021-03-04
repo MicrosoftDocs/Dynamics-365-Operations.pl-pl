@@ -154,3 +154,6 @@ Następujące najważniejsze wymiary w pakiecie zawartości są używane jako fi
 | Daty                  | Daty, Przesunięcie roku                                    |
 
 Domyślnie pakiet zawartości przestawia dane bieżącego roku kalendarzowego. Można jednak zmienić wartość filtra dat w sekcji filtrów raportu. Można również zmienić wartość filtra firm.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

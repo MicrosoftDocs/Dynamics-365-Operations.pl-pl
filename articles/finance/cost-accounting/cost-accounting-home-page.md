@@ -53,3 +53,6 @@ Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

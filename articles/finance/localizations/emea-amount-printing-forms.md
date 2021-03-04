@@ -54,3 +54,6 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
 
 5. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, kt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

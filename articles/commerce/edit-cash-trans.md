@@ -120,3 +120,6 @@ Aby edytować zbiorczo transakcje, które nie są połączone z zestawieniem w c
 [Tworzenie skoroszytu programu Excel w celu edytowania transakcji detalicznych](create-excel-edit.md)
 
 [Dodawanie pól do skoroszytu programu Excel w celu edytowania transakcji detalicznych](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

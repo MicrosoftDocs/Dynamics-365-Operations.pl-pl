@@ -45,3 +45,6 @@ Na stronie **Podwójny zapis** może zostać wyświetlony komunikat o błędzie 
 *Jednostka o nazwie „msdyn\_dualwriteentitymap” z namemapping = „Logical” nie została znaleziona w MetadataCache.*
 
 Aby rozwiązać ten problem, upewnij się, że w Dataverse jest zainstalowany podstawowe rozwiązanie podwójnego zapisywania. Podstawowe rozwiązanie dotyczące podwójnego zapisywania jest warunkiem koniecznym do uzyskania świadomości rozwiązania.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

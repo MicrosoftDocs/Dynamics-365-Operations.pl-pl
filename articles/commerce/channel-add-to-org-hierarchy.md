@@ -82,3 +82,6 @@ Poniższy obraz przedstawia hierarchię z różnymi dodanymi kanałami.
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
     
 [Konfigurowanie kanału internetowego](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

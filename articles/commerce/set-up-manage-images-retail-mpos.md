@@ -209,3 +209,6 @@ Obrazy katalogu, pracownika, odbiorcy i kategorii, które muszą być używane w
 5. Należy wykonać podobną procedurę dla kategorii, pracownika i odbiorcy.
 
     [![Obraz offline](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

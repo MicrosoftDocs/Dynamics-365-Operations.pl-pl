@@ -121,3 +121,6 @@ Gdy wszystkie towary są zarejestrowane, kierownik magazynu lub kierownik ds. za
 
 ## <a name="summary"></a>Sumarycznie
 Strona **Przegląd przyjęć** może pomóc kierownikowi magazynu i pracownikom magazynu uzyskać obraz oczekiwanej pracy, którą należy wykonać w ramach procesu przychodzącego. Strona może również służyć do rozpoczęcia procesu przybycia towaru, ponieważ można wtedy śledzić towary od chwili ich pierwszego wejścia do magazynu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

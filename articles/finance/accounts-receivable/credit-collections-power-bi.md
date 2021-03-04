@@ -77,3 +77,6 @@ Pakiet zawartości usługi Power BI **CustCollectionsBICrossCompany** obejmuje r
 | Ponaglenia         | <ul><li>Kwoty kodu ponaglenia</li><li>Szczegóły kwoty kodu ponaglenia</li><li>Kwoty ponagleń według firmy</li><li>Kwoty ponagleń według grupy odbiorców</li><li>Kwoty ponagleń według regionów</li></ul> |
 
 Wykresy i kafelki we wszystkich tych raportach można filtrować i przypinać do pulpitu nawigacyjnego. Aby uzyskać więcej informacji na temat filtrowania i przypinania w usłudze Power BI, zobacz [Tworzenie i konfigurowanie pulpitu nawigacyjnego](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Można także użyć funkcji eksportu danych źródłowych do wyeksportowania danych podsumowanych w wizualizacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

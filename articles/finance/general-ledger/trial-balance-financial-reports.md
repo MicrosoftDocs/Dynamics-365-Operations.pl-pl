@@ -110,3 +110,6 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

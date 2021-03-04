@@ -69,3 +69,6 @@ Ta procedura tworzy regułę Kanban poprzez użycie ustawienia zdarzenia wiersza
     * Należy zauważyć, że karta Kanban dla ilości 27 została utworzona w celu przetwarzania działania na podstawie utworzonej reguły Kanban.  
     * To jest ostatni krok.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

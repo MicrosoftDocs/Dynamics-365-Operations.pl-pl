@@ -41,3 +41,6 @@ W tej procedurze pokazano sposób generowania raportu uzgodnienia podatku, któr
 6. W polu Pokaż szczegóły opcję Tak.
 7. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

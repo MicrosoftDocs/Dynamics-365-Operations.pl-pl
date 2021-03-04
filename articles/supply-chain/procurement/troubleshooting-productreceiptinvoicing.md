@@ -110,3 +110,6 @@ Poniższa procedura przedstawia jeden ze sposobów odtworzenia błędu.
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Zależy to od ustawień parametrów dla faktur i grup faktur. Aby uzyskać więcej informacji, zajrzyj do następującego wpisu na blogu: [Uwzględnianie opłaty za zakup i zmiany stanu zapasów](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

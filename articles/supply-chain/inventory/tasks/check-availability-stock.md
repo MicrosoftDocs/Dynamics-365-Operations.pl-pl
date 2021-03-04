@@ -60,3 +60,6 @@ Ta procedura pokazuje, jak sprawdzić ilość dostępnych i fizycznie dostępnyc
 5. Kliknij przycisk **OK**.
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

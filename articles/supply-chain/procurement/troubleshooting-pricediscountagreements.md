@@ -125,3 +125,6 @@ To zachowanie jest oczekiwane. Zapotrzebowania nie zawsze są zatwierdzane, wię
 
 Możesz tworzyć umowy handlowe dla dowolnych odpowiedzi na zapytanie ofertowe (ZO), niezależnie od tego, czy zostały zaakceptowane, czy odrzucone. Aby uzyskać więcej informacji, zobacz [Omówienie zapytań ofertowych (ZO)](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -200,3 +200,6 @@ Aby uzyskać bardziej analityczny podgląd różnych mierników wydajności prom
 
 Aby uzyskać bardziej analityczny podgląd różnych mierników wydajności promocji, można użyć widoku Analiza. Aby przejść do widoku Analiza, kliknij kolejno opcje **Sprzedaż i marketing** \> **Odpisy handlowe** \> **Umowy dotyczące odpisu handlowego**. W okienku akcji kliknij pozycję **Analiza**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

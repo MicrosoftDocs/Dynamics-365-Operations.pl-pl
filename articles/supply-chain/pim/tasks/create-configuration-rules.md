@@ -55,3 +55,6 @@ W tej procedurze zostaną utworzone reguły konfiguracji, które mogą być uży
     * Zaznacz numer towaru, który zostanie zaznaczony lub którego zaznaczenie zostanie anulowane, zależnie od wybranej metody.  
 18. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

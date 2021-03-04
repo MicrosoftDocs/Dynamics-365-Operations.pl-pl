@@ -58,3 +58,6 @@ Sposób budowania hierarchii lokalizacji czynności konserwacyjnych zależy od w
 Na poniższej ilustracji przedstawiono przykład lokalizacji czynności konserwacyjnych, które są oparte na klientach.
 
 ![Diagram przedstawiający lokalizacje czynności konserwacyjnych na podstawie klientów](media/04-overview-image.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

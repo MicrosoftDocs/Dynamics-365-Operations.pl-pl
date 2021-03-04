@@ -41,3 +41,6 @@ W tej procedurze pokazano sposób definiowania jednostek kontroli kosztów w ksi
 10. W polu Wymiar wprowadź lub wybierz wartość.
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

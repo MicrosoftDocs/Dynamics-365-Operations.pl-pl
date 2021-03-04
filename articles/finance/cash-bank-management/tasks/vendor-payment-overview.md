@@ -63,3 +63,6 @@ Ten przewodnik po zadaniach zawiera instruktaż różnych metod służących do 
 33. Kliknij przycisk **OK**, aby wygenerować płatności.
 34. Kliknij przycisk **Księguj**, jeśli wszystkie płatności są zatwierdzone i wygenerowane. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Składniki kosztów reprezentują najniższy poziom szczegółów kosztów, dlat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

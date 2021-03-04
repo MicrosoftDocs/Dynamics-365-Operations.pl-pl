@@ -181,3 +181,6 @@ Odśwież jednostki danych w Finance, przechodząc do **Zarządzanie danymi \> P
 - Zarządzanie danymi:
 
   - [Zarządzanie danymi](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Aby wybrać motyw zastosowany w odniesieniu do witryny, należy wykonać następ
 
 [Tworzenie nowego motywu](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

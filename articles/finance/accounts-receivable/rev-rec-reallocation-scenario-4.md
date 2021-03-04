@@ -77,3 +77,6 @@ Jeśli zostanie wybrana opcja **Załącznik**, w arkuszu faktur jest wyświetlan
 Następnie otwórz stronę **Wszyscy odbiorcy** (**Rozrachunki z odbiorcami \> Odbiorcy \> Wszyscy odbiorcy**), wybierz odbiorcę **US\_SI\_0003**, a następnie wybierz opcję **Transakcje**. Na stronie **Transakcje odbiorcy** znajduje się tylko faktura oryginalna (000008) wraz z oryginalnym wpisem księgowania. Jako że dla opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** wybrano wartość **Nie** na stronie **Parametry księgi głównej**, aktualizowana jest tylko księga główna. W związku z tym wpisy wycofania i zaktualizowane wpisy księgowania nie są wyświetlane. Należy zwrócić uwagę na fakt, że wyświetlane są transakcje korekty przychodu utworzone w [scenariuszu 3](rev-rec-reallocation-scenario-3.md).
 
 [![Oryginalny wpis księgowania na stronie Transakcje odbiorcy](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

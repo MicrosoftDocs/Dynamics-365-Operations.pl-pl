@@ -88,3 +88,6 @@ Podczas próby włączenia map może pojawić się następujący komunikat o bł
 *Błąd podwójnego zapisywania — Rejestracja wtyczki nie powiodła się: \[(nie można uzyskać mapy partycji Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Błąd przekracza maksymalną liczbę partycji dozwoloną w mapowaniu Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. Wystąpił co najmniej jeden błąd.*
 
 Bieżący limit czasu połączenia ze środowiskiem wynosi około 40 tabel prawnych. Ten błąd występuje podczas próby włączenia map, a więcej niż 40 tabel prawnych jest połączonych między środowiskami.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

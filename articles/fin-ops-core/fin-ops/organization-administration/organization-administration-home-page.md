@@ -101,3 +101,6 @@ Szablony rekordów pomagają w szybkim tworzeniu rekordów w systemie. Można ut
 - [Konfigurowanie zarządzania dokumentami](configure-document-management.md)
 - [Konfigurowanie i wysyłanie wiadomości e-mail](configure-email.md)
 - [Dane dotyczące daty/godziny i strefy czasowe](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

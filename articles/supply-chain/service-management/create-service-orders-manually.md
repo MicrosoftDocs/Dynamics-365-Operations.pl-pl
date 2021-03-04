@@ -102,3 +102,6 @@ Zlecenie serwisowe można utworzyć na podstawie formularza **Zamówienia sprzed
 
 [Utwórz zlecenia serwisowe (formularz klasy)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Dane aplikacji są używane do wypełniania raportów w pakiecie zawartości Wyn
 | Workforce\_WorkerName             | Imię, drugie imię i nazwisko                                                                       | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | Workforce\_WorkerTitle            | Tytuł i data ustalenia stażu pracy                                                                                   | Workforce\_CurrentWorker, Workforce\_TerminatedWorker, Workforce\_WorkerTrend |
 | Workforce\_WorkerTrend            | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job, Workforce\_WorkerBenefit |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

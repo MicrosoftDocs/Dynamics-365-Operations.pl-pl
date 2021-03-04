@@ -139,3 +139,6 @@ Kwota rabatu gotówkowego zostanie zmniejszona z 10,50 do 10,00. Płatność i f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

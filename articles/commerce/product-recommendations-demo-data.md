@@ -90,3 +90,6 @@ Rozszerzenie zawiera plik danych o nazwie „RecoMockDataset.csv”, który zezw
 [Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

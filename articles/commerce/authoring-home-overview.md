@@ -122,3 +122,6 @@ Po załadowaniu narzędzia autorskiego możesz wybrać opcję **Strona główna*
 [Zagadnienia optymalizacji wyszukiwarki dla witryny](search-engine-optimization-considerations.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

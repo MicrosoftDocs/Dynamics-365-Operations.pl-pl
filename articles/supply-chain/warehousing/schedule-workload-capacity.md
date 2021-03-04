@@ -80,3 +80,6 @@ Jeśli te informacje nie zostały określone poprawnie, zostanie wyświetlony ko
 3. W polu **Typ zamówienia** zaznacz opcję **Planowane i potwierdzone**, **Planowane** lub **Potwierdzone**, aby wskazać typ zamówień, których mają dotyczyć prognozy w raporcie.
 4. W polu **Typ obciążenia pracą** wybierz typ obciążenia i w ten sposób wskazać, czy prognoza możliwości obciążenia ma dotyczyć objętości, czy masy.
 5. W polu **Możliwości obciążenia pracą** wybierz konfigurację możliwości obciążenia pracą.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

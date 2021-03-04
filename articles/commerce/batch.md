@@ -45,3 +45,6 @@ Aby zdefiniować domyślny identyfikator partii, który będzie używany podczas
 
 > [!NOTE]
 > W wersji 10.0.5 rozwiązania Retail została wprowadzona pomoc techniczna do ulepszonej obsługi towarów śledzonych w partii podczas księgowania zestawienia dla scenariuszy niezaawansowanego zarządzania magazynem.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

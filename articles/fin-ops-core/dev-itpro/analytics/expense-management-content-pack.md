@@ -93,3 +93,6 @@ Pakiet zawartości zawiera zestaw stron raportów. Każda strona zawiera zestaw 
 | Statystyki pracownika etatowego | Raporty wydatków według typu kosztu            |
 |                     | Wydatki osobiste                       |
 |                     | Raporty z wydatków według grup statystycznych     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

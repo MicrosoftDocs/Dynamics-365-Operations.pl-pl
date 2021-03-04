@@ -123,3 +123,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 
 > [!NOTE]
 > Ten sam plik został zaimportowany jako projekt formatu; traktuj atrybut „identyfikator” dla elementu „dokument” jako opcjonalny.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

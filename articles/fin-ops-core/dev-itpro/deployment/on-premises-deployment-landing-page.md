@@ -72,3 +72,6 @@ Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu 
 - [Usunięte lub wycofane funkcje Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Zasady dotyczące cyklu życia oprogramowania i wydania wersji lokalnych](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

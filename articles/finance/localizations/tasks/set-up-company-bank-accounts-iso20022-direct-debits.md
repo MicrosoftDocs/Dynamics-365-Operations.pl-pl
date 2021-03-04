@@ -60,3 +60,6 @@ Jest to druga z pięciu procedur, które razem przedstawiają proces płatności
     * Na przykład wybierz konto bankowe „DEMF OPER”.  
 6. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

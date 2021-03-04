@@ -45,3 +45,6 @@ Aby uzyskać więcej informacji, zobacz [Nabywanie środków trwałych za pomoc�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

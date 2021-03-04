@@ -88,3 +88,6 @@ Na poniższej karcie przedstawiono firmę dodaną w katalogu głównym hierarchi
 [Omówienie kanałów](channels-overview.md)
 
 [Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

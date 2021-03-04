@@ -102,3 +102,6 @@ W aplikacji Finance and Operations w wersji 10.0.5 funkcja magazynowania kopii z
 [Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
 
 [Konfigurowanie struktury modułu Raportowanie elektroniczne (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

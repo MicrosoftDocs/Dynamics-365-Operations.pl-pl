@@ -74,3 +74,6 @@ Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia stałej
     * Spowoduje to utworzenie 5 kart Kanban.  
     * Należy zwrócić uwagę, że dla tej reguły Kanban produkcji zostało utworzonych 5 kart Kanban, każda na 10 sztuk. Jest to ostatni krok w tej procedurze.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

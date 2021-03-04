@@ -55,3 +55,6 @@ Szybkie ustalanie wskaźników stopnia pilności zlecenia serwisowego umożliwia
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

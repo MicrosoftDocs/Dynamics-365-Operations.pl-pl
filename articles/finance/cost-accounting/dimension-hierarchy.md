@@ -333,3 +333,6 @@ Ustawienia hierarchii list dostępu umożliwiają kontrolowanie danych, które s
 > [!NOTE] 
 > - Aby hierarchia list dostępu mogła wpływać na dane w programie Power BI, należy w tym programie sparować hierarchię list dostępu i zabezpieczenia na poziomie wiersza w programie Power BI. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarchia list dostępu nie pomaga zabezpieczyć eksportu danych do programu Excel. W związku z tym tego narzędzia sprawozdawczego mogą używać tylko księgowi i menedżerowie kosztów, którzy muszą mieć pełny dostęp w celu wyświetlania danych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

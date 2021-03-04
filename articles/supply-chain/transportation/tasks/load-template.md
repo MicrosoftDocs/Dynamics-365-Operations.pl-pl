@@ -54,3 +54,6 @@ W tym temacie opisano sposób konfigurowania szablonów ładunków i kojarzenia 
 1. W okienku akcji na karcie **Popyt i podaż** w grupie **Dodaj** kliknij opcję **Do nowego transportu**.
 1. W oknie dialogowym **Szablon ładunku** w polu **Identyfikator szablonu ładunku** wybierz szablon do zastosowania.
 1. Wybierz przycisk **OK**, aby zastosować szablon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

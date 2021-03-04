@@ -78,3 +78,6 @@ Aby utworzyć i skonfigurować skoroszyt programu Excel, by móc edytować trans
 [Edytowanie wymiarów finansowych dla transakcji sprzedaży detalicznej](edit-financial-dim.md)
 
 [Dodawanie pól do skoroszytu programu Excel w celu edytowania transakcji detalicznych](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

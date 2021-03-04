@@ -54,3 +54,6 @@ Aby włączyć zarządzanie niezgodnościami, wykonaj następujące kroki:
 [Procesy zarządzania jakością](quality-management-processes.md)
 
 [Konfigurowanie warunków wstępnych zarządzania brakiem zgodności](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

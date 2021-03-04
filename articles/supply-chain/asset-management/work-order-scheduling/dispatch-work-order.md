@@ -60,3 +60,6 @@ Na poniższym rysunku pokazano przykładowe opcje wysyłki w oknie dialogowym **
 [!NOTE]
 Aby usunąć harmonogram w zleceniu pracy, wybierz zlecenie pracy w obszarze **Wszystkie zlecenia pracy** i kliknij pozycję **Usuń harmonogram** na karcie **Ogólne**. Pamiętaj, aby ręcznie zaktualizować stan cyklu życia zlecenia pracy w przypadku usuwania harmonogramu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

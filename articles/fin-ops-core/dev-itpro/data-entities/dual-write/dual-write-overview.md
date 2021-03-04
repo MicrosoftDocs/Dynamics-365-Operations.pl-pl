@@ -109,3 +109,6 @@ Aby utworzyć równość z odpowiednikami aplikacji Finance and Operations, syst
 
 Aby uzyskać więcej informacji o nadchodzących zmianach, zapoznaj się z [nowościami lub zmianami dotyczącymi podwójnego zapisu](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

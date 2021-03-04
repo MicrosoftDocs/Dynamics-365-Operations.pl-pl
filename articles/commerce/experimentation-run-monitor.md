@@ -53,3 +53,6 @@ Jeśli z dowolnej przyczyny konieczna jest modyfikacja odmiany, należy wykonać
 
 ## <a name="next-step"></a>Następne kroki
 [Podwyższanie poziomu odmiany i kończenie eksperymentu](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

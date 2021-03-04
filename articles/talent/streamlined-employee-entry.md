@@ -91,3 +91,6 @@ Karta **Stanowiska** na głównej stronie pracownika stanowi pełny widok wszyst
 
 [![Pozycje](./media/Worker-position-history.png)](./media/Worker-position-history.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

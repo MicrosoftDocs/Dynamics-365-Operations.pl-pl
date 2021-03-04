@@ -55,3 +55,6 @@ W tym przewodniku po zadaniach pokazano dodawanie wymiaru finansowego opartego n
 9. W polu **Wartość wymiaru** wpisz nazwę, która będzie opisywać wartość wymiaru finansowego.
 10. W polu **Opis** wprowadź opis przedstawiający wartość wymiaru finansowego.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

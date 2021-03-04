@@ -109,3 +109,6 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 [Moduł pola zakupu](add-buy-box.md)
 
 [Omówienie rekomendacji produktów](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

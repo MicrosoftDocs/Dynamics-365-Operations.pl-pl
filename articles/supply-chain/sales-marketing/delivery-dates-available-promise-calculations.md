@@ -81,3 +81,6 @@ Z tego powodu data wysyłki jest ustawiana na 10 dni od teraz na podstawie oblic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

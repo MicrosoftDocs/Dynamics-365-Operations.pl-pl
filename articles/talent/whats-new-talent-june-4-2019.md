@@ -98,3 +98,6 @@ Nowa opcja umożliwi menedżerom wyświetlanie wyników zarówno ich bezpośredn
 ### <a name="print-performance-reviews"></a>Drukowanie przeglądów wydajności
 
 Pracownicy, menedżerowie i dział personalny będą mogli drukować przegląd wydajności pracownika.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

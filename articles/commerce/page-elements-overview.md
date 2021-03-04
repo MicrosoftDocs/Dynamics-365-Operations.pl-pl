@@ -64,3 +64,6 @@ Poniższa tabela przedstawia podsumowanie pojęć, które powinny być znane, gd
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Dostosowywanie nawigacji w witrynie](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

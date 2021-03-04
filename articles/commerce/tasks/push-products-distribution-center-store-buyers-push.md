@@ -53,3 +53,6 @@ Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania dystrybucji 
 19. Kliknij opcję Utwórz zamówienie.
 20. Kliknij przycisk Tak.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

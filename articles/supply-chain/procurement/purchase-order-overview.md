@@ -92,3 +92,6 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

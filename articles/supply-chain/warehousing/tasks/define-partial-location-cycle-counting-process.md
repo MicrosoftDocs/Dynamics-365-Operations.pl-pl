@@ -73,3 +73,6 @@ Używając planów inwentaryzacji ciągłej do tworzenia pracy inwentaryzacji, m
 14. Kliknij przycisk OK.
 15. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Formatem używanym w tym przykładzie jest Polecenie przelewu ISO20022, ale moż
 21. W polu Temat wpisz wartość.
 22. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

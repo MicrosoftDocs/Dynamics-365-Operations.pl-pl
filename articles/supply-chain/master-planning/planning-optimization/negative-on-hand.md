@@ -87,3 +87,6 @@ Wynik jest planowanym zamówieniem o ilości 25 szt. (= 25 szt. &minus; 0 szt.) 
 [Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
 
 [Anuluj planowanie pracy](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

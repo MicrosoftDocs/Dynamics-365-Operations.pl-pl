@@ -156,3 +156,6 @@ Po uruchomieniu analizy brakujących kont dostępne są następujące skróty kl
 [Raporty finansowe](financial-reporting-intro.md)
 
 [Interfejs Projektanta raportów](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Przyciski w grupie **Projekt** na karcie **Zlecenie pracy** okienka akcji są po
 >[!NOTE]
 >Aby uwzględnić prognozy utworzone w zleceniu pracy podczas planowania głównego, użyj modelu prognozy wybranego na stronie **Parametry zarządzania składnikami majątku**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

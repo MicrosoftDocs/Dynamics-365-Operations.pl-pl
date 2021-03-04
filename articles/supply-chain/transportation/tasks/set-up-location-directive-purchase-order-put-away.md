@@ -86,3 +86,6 @@ W tym temacie wyjaśniono sposób konfigurowania prostej dyrektywy lokalizacji. 
 4. W polu **Kryteria** wpisz wartość.
 5. Kliknij przycisk **OK**. Można kontynuować dodawanie wierszy dyrektywy i działań dyrektywy, aż zostaną objęte wszystkie możliwe scenariusze w magazynie.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

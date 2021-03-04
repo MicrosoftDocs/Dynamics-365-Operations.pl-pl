@@ -38,3 +38,6 @@ Księga rachunku kosztów reprezentuje całościowo jednostkę raportowania. Jes
 8. W polu Wymiar statystyczny wprowadź lub wybierz wartość.
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Jest to celowe. Wybrany adres musi być klasyfikowany jako adres dostawy. W prze
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Czy mogę znaleźć użytkownika, który anulował zamówienie zakupu?
 
 Te informacje są śledzone tylko wtedy, gdy zamówienie zakupu podlega zarządzaniu zmianami. W przypadku korzystania z zarządzania zmianami można sprawdzić, kto przesłał tę zmianę (anulowanie) i, kto ją zatwierdził.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

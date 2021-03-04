@@ -209,3 +209,6 @@ W przypadku konsolidacji w księdze głównej dodano nową opcję w celu konsoli
 -  Teraz można określić, czy w firmie źródłowej ma być używana waluta rozliczeniowa czy waluta raportowania, jako waluta transakcji w konsolidowanej firmie.
 
 - Kwoty w walucie księgowej lub sprawozdawczej pochodzące od spółki źródłowej będą kopiowane bezpośrednio do kwot w walucie księgowej lub raportowanej w spółce konsolidacyjnej, jeżeli którakolwiek z tych walut jest taka sama. Kwoty w walucie księgowania i raportowania w konsolidowanej firmie są obliczane przy użyciu kursu wymiany, jeśli żadna z tych walut nie jest taka sama.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

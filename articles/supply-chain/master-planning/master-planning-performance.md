@@ -162,3 +162,6 @@ Przed uruchomieniem kroku zapotrzebowania następuje etap wstępnego zapotrzebow
 - **Pojedyncza procedura ciężka w danym czasie** — nie uruchamia planowania głównego razem z żadną inną operacją ciężkiej procedury.
 - **Przegląd dziennika sesji.**
 - **Filtrowanie towarów** — użycie stanu cyklu życia do wykluczenia towarów z przebiegu planowania głównego. (Nie używaj numerów pozycji.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

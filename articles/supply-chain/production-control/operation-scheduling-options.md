@@ -134,3 +134,6 @@ Bieżące wartości można zapisać jako domyślne. Dostępne są dwie opcje:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

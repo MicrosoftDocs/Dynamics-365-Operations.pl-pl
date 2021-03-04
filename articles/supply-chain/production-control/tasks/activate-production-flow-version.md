@@ -41,3 +41,6 @@ Zanim będzie można tworzyć zadania w systemie Kanban i przetwarzać działani
 5. Kliknij Aktywacja.
 6. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

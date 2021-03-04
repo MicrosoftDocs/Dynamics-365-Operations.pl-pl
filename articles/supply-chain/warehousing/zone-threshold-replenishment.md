@@ -344,3 +344,6 @@ Oto kilka uwag i porad dotyczących pracy z tą funkcją:
 
 - Jeśli są używane lokalizacje dynamiczne, praca uzupełniająca zostanie utworzona dla pierwszej dostępnej lokalizacji lub dla lokalizacji, która już zawiera zapasy, jeśli dla akcji dyrektywy lokalizacji skonfigurowano stosowanie strategii **Konsolidacja**.
 - Jeśli są używane stałe lokalizacje, a nie strefy, należy użyć [standardowego minimalnego/maksymalnego uzupełnienia zapasów](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

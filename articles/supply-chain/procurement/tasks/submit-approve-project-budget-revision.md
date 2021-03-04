@@ -46,3 +46,6 @@ W tym zadaniu jest wykorzystywany zestaw danych firmy SSI.
 12. W polu Komentarz wpisz wartość.
 13. Kliknij przycisk Prześlij.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

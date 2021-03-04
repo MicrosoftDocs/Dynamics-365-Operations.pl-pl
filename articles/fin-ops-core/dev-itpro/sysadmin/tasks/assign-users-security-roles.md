@@ -57,3 +57,6 @@ Użytkownicy ręcznie przypisani do ról zabezpieczeń muszą również zostać 
 2. W drzewie wybierz rolę, a następnie w menu **Użytkownicy przypisani do roli** wybierz pozycję **Ręcznie przypisz/wyklucz użytkowników**.
 4. W obszarze **Przypisz użytkowników do roli lub wyklucz użytkowników z roli** użytkownicy, do których nie przypisano roli, są wyświetlani z **trybem przypisania** ustawionym na **Brak**. Wybierz co najmniej jednego użytkownika, do którego ma zostać przypisana rola.
 5. W **okienku akcji** wybierz pozycję **Przypisz do roli**. **Tryb przypisania** jest aktualizowany do opcji **Ręcznie**, a użytkownicy mają teraz przypisaną nową rolę.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

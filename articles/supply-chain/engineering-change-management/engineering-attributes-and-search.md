@@ -94,3 +94,6 @@ Należy określić kategorię inżynieryjną, do której należy dany produkt. K
 Funkcja wyszukiwania atrybutów inżynieryjnych umożliwia znajdowanie produktów przez wyszukiwanie wartości ich atrybutów inżynieryjnych. Dzięki temu można łatwo znajdować produkty inżynieryjne na podstawie ich charakterystyki. Można przeszukiwać produkty należące do kategorii produktów inżynieryjnych lub przeszukiwać wszystkie produkty.
 
 Wyszukiwanie jest dostępne na stronach danych głównych produktu oraz na podstawie towarów transakcyjnych w systemie, takich jak zamówienia sprzedaży. W przypadku towaru transakcyjnego można skorzystać ze **strony wyszukiwania atrybutów inżynierskich** w celu wyszukania produktu. Następnie można skorzystać z przycisku **Dodaj jako nowy wiersz**, aby dodać produkt do wierszy zamówienia sprzedaży. Produkty z wyników wyszukiwania można również dodawać bezpośrednio do zamówienia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

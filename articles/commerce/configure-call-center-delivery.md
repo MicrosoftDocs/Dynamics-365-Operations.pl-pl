@@ -95,3 +95,6 @@ Opcjonalnie można dołączyć kod przyspieszenia do wszelkich metod dostawy sko
 Na przykład dla zamówień, które zostaną wysłane w następnym dniu pocztą lotniczą, pobranie musi zostać wykonane w magazynie do 13.00. W takim przypadku można utworzyć kod przyspieszenia, a następnie połączyć go z dowolną metodą dostawy w następnym dniu skonfigurowanym w systemie. Gdy magazyn tworzy grupę czynności, właściwy kod przyspieszenia w polu **Przyspieszeń** może być używany jako filtr, tak aby pobranie było wykonywane tylko dla zamówień, które mają metodę dostawy połączoną z tym kodem.
 
 Ponadto podczas wprowadzania zamówienia w biurze obsługi można ręcznie zastosować kod przyspieszenia do nagłówka zamówienia sprzedaży lub indywidualnego wiersza zamówienia sprzedaży. Tu również kod może służyć do sortowania lub raportowania. Czasami zamówienie wymaga szczególnego obchodzenia się ze względu na problemy z obsługą klienta. W takim wypadku można zastosować określony kod przyspieszenia do nagłówka lub wierszy zamówienia, aby ułatwić identyfikację i priorytetyzację zamówienia w procesie realizacji.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

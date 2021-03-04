@@ -207,3 +207,6 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Prospekt na gotówkę](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

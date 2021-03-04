@@ -185,3 +185,6 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
     * Sprawdź, czy w raporcie znajdują się transakcje z numerem dokumentu banku, limit instrumentu, wykorzystaną kwotą i kwotą salda instrumentu.  
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Ta funkcja jest dostępna w firmach, których adresem podstawowym jest Dania.
 16. Kliknij przycisk Zapisz.
 17. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

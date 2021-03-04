@@ -81,3 +81,6 @@ Funkcja `REPLACE ("abcdef", "cd", "GH", false)` zastępuje wzorzec **"cd"** cią
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje tekstowe](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Opcja **Zastąpienia na poziomie organizacji** jest używana do określania nagr
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

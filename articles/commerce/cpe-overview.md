@@ -64,3 +64,6 @@ Aby aprowizować środowisko oceny usługi Commerce, zobacz [Aprowizowanie środ
 [Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce](cpe-optional-features.md)
 
 [Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

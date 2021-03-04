@@ -134,3 +134,6 @@ Poniższy obraz przedstawia przykład konfiguracji przypisania grupy realizacji.
 [Konfigurowanie kanału biura obsługi](channel-setup-callcenter.md)
 
 [Łącznik płatności usługi Dynamics 365 dla Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Inwentaryzacja cykliczna jest procesem magazynowym, który służy do inspekcji 
 21. Kliknij przycisk **OK**.
 22. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -216,3 +216,6 @@ W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można p
 [Tworzenie i edytowanie jednostek wirtualnych zawierających dane z zewnętrznego źródła danych](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Co to są portale Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Omówienie tworzenia aplikacji w Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

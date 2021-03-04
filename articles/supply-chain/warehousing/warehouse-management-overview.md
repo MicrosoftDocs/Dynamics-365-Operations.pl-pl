@@ -74,3 +74,6 @@ Opinie, wiadomości i inne informacje dotyczące modułu Zarządzanie magazynem 
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

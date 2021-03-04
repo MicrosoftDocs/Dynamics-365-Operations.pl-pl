@@ -62,3 +62,6 @@ Ta procedura skupia się na planowaniu zadań przetwarzania w systemie Kanban dl
     * Należy zauważyć, że oba zadania zostały dodane do żądanego okresu.  
     * W tej sekcji Zdolności produkcyjne w okresie widać obciążenie dla każdego okresu. Pola Zużycie pokazuje zużycie zaplanowane w tym okresie. Jeśli planowane zużycie jest wyższe niż zdolności produkcyjne dostępne w tym okresie, zostanie zaznaczone przeciążone zużycie.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

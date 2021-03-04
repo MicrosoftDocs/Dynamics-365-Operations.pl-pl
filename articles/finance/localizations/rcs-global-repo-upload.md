@@ -98,3 +98,6 @@ Wersja konfiguracji zostanie usunięta i zostanie wyświetlony komunikat z potwi
 > [!NOTE]
 > Konfiguracje mogą być usuwane tylko przez dostawcę konfiguracji, który je utworzył. Jeśli konfiguracja została udostępniona innej organizacji, przed jej usunięciem należy cofnąć udostępnianie.
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

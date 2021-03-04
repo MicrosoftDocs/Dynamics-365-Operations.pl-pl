@@ -44,3 +44,6 @@ W tym temacie wyjaśniono, jak przetwarzać żądania alokacji. Na stronie Przet
 9. Wybierz opcję **Zaksięguj**.
 10. Wybierz opcję **Zaksięguj**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

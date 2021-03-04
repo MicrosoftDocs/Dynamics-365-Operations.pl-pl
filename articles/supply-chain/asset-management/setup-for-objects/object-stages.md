@@ -70,3 +70,6 @@ Po utworzeniu stanów cyklu życia wymaganego składnika majątku można skonfig
 
 6. Wybierz pozycję **Aktualizacje stanu cyklu życia**, aby określić stany cyklu życia składnika majątku, które mogą być wybranym stanem cyklu życia.
 7. Możesz użyć skróconej karty **Stan składnika majątku**, jeśli obsługujesz składniki majątku otrzymywane do naprawy. W sekcji **Przychodzące/wychodzące** można wybrać stany cyklu życia składnika majątku, aby wskazać przepływ pracy dla składnika majątku otrzymywanego w celu naprawy. Jeśli użyczasz składników majątku klientom lub oddziałom, w sekcji **Użyczenie** wybierz stany cyklu życia użyczonych składników majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

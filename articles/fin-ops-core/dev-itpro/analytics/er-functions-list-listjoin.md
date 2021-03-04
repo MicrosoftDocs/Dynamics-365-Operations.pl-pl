@@ -83,3 +83,6 @@ Struktura tej listy składa się z pojedynczego pola **Ilość** typu `Real`, po
 [Lista funkcji](er-functions-category-list.md)
 
 [Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych](er-debug-data-sources.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

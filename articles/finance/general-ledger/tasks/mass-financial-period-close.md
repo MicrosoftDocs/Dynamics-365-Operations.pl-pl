@@ -42,3 +42,6 @@ W tym temacie pokazano sposób zawieszania okresu lub trwałego zamykania okresu
 11. Wybierz opcję **Aktualizuj stan okresu** i ustaw stan **Wstrzymane**, **Otwarte** lub **Trwale zamknięty**. **Otwarte** wskazuje, że można księgować w okresie, pod warunkiem, że użytkownik ma dostęp. Wartość **Wstrzymane** oznacza, że nie może księgować w okresie, ale okres można otworzyć ponownie. Wartość **Trwale zamknięty** oznacza, że okres jest zamknięty i już nigdy nie można go otworzyć. Nie można księgować korekt. Nie zaleca się ustawiania okresu na **Trwale zamknięty** do czasu zakończenia wszystkich korekt i inspekcji.  
 12. Wybierz **Aktualizuj**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

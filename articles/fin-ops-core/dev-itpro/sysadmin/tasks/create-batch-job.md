@@ -54,3 +54,6 @@ Zadanie wsadowe to grupa podzadań, które są przesyłane do wystąpienia serwe
     - **Wstrzymane**: Ustaw status zadania wsadowego jako **wstrzymane**, żeby zostało usunięte z planu zadań wsadowych. Jest to odpowiednik *stop*.
     - **Oczekujące**: Ustaw status zadania wsadowego jako **oczekujące**, żeby zostało wpisane na listę zadań oczekujących na dodanie do planu zadań wsadowych. Jest to odpowiednik *iść*.
 5. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

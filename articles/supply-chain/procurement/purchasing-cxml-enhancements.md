@@ -277,3 +277,6 @@ Aby wyświetlić zawartość potwierdzenia dostawcy lub odpowiedzi na błędy, w
 
 - [Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

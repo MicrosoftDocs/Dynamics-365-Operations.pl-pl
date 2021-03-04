@@ -67,3 +67,6 @@ Zanim ograniczenie tabeli będzie mogło zacząć obowiązywać w modelu konfigu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

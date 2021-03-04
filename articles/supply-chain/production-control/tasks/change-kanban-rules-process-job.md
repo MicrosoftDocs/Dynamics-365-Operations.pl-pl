@@ -49,3 +49,6 @@ Ta procedura skupia się na zmianie używanej reguły kanban dla danej karty Kan
 7. Kliknij przycisk Zakończ.
     * Teraz zadanie w systemie Kanban używa innej reguły Kanban. Może to być przydatne do wyrównywania obciążenia komórek roboczych.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

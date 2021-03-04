@@ -123,3 +123,6 @@ Na poniższej ilustracji przedstawiono przykład zamówienia w handlu elektronic
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Moduł informacji o odbiorze](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ W przypadku zaplanowanych zadań konserwacji zapobiegania następnym krokiem jes
 
 5. Kliknij przycisk **OK**. Utworzono co najmniej jedno zlecenie pracy.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

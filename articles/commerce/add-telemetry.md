@@ -122,3 +122,6 @@ Aby dodać zewnętrzny skrypt bezpośrednio do szablonu w konstruktorze stron, n
 [Dodawanie powiadomienia o prawach autorskich](add-copyright-notice.md)
 
 [Dodawanie języków do witryny](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

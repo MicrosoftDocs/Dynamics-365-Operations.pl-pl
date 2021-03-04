@@ -58,3 +58,6 @@ Na stronie **Aktywne użyczone składniki majątku** można wyświetlić listę 
 3. W polu **Zwrócone** wpisz datę i godzinę.
 4. Kliknij przycisk **OK**.
 5. Odśwież stronę listy **Aktywne użyczone składniki majątku**. Zauważ, że użyczonego składnika majątku już na niej nie ma.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

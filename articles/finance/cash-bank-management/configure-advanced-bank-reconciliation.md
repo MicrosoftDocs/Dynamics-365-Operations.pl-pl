@@ -61,3 +61,6 @@ Opcja **Uzgodnij po imporcie** powoduje automatyczne sprawdzanie poprawność wy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

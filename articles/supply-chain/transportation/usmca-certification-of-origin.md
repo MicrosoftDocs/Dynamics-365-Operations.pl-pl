@@ -140,3 +140,6 @@ Użytkownik podpisujący certyfikat musi ręcznie wprowadzić liczbę stron (do 
 ### <a name="page-numbers"></a>Numery stron
 
 Bieżąca strona i liczba stron wydrukowanych u dołu dokumentu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

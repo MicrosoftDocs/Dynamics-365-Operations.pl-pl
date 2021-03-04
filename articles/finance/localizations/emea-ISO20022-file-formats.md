@@ -129,3 +129,6 @@ Aby uzyskać więcej informacji na temat raportowania elektronicznego, zobacz [O
 - [Konfigurowanie metody płatności przelewu ISO20022](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Konfigurowanie metody płatności poleceniem zapłaty ISO20022](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Konfigurowanie dostawców i kont bankowych dostawców dla poleceń przelewu ISO20022](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

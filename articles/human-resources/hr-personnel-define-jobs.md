@@ -71,3 +71,6 @@ To zadanie jest zorientowane na utworzenie nowego zadania (pracy). Jest ona wyko
 33. Przełącz rozwinięcie sekcji Wykształcenie.
 34. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

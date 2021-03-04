@@ -61,3 +61,6 @@ Aby usunąć eksperyment w narzędziu do tworzenia witryn Commerce, wykonaj nast
 
 ## <a name="previous-step"></a>Poprzedni krok
 [Uruchamianie i monitorowanie eksperymentu](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

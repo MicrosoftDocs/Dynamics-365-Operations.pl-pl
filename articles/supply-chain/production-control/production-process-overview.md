@@ -88,3 +88,6 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

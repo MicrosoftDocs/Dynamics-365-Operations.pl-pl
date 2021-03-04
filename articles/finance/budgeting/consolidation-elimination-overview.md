@@ -90,3 +90,6 @@ Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej i
 Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

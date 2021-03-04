@@ -117,3 +117,6 @@ W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialo
 - Istnieje możliwość skonfigurowania zadania wsadowego w skróconej karcie **Uruchom w tle** w celu zaplanowania serii w regularnych odstępach czasu.  
 - Jeśli seria jest uwzględniona w kilku pulach zleceń pracy (zapoznaj się z [Pule zleceń pracy](../work-orders/work-order-pools.md)), jest wyświetlany jeden rekord dla każdej puli w **Otwieranie puli harmonogramów konserwacji**. W ten sposób można zoptymalizować opcje filtrowania dla pul zleceń pracy.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

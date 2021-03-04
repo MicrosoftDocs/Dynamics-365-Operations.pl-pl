@@ -102,3 +102,5 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
 - [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)
 - [Przewodnik dewelopera](hr-developer-overview.md)
 - [Przewodnik użytkownika](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

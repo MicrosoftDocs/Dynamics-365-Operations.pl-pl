@@ -41,3 +41,6 @@ Menedżer ds. wynagrodzenia i świadczeń może rejestrować pracowników w plan
 8. Przełącz rozwinięcie sekcji Zastąpienia na poziomie organizacji.
     * Jeśli należy wziąć pod uwagę wyniki osiągane przez pracownika, różne działy lub dział inny niż przypisany w stanowisku pracownika, można zastąpić dział. Wartość w kolumnie Procent musi mieć łącznie 100.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

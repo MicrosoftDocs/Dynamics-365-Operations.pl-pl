@@ -145,3 +145,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 46. Zamknij stronę.
 ![Strona projektanta Operacji ER](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

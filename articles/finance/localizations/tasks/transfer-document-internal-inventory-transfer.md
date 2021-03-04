@@ -74,3 +74,6 @@ Ta procedura pokazuje, jak utworzyć dokumenty przeniesienia w celu przesunięci
 10. Kliknij opcję Dokument dostawy.
 11. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

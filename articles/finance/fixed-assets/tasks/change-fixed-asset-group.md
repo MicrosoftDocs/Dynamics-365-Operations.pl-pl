@@ -46,3 +46,6 @@ W przewodniku jest wykorzystywana firma demonstracyjna USMF.
 6. Kliknij przycisk OK.
 7. Kliknij przycisk Tak.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

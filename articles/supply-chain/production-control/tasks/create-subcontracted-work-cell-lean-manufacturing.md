@@ -71,3 +71,6 @@ Aby wymodelować pracę podwykonawczą dla produkcji oszczędnej, należy utworz
 24. W polu Jednostka kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 25. Rozstrzygnij zmiany w jednostce.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

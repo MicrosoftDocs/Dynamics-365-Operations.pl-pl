@@ -57,3 +57,6 @@ Funkcja `ISVALIDCHARACTERISO7064 ("AT61")` zwraca wartość **FALSE**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

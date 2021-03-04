@@ -93,3 +93,6 @@ Poniższa procedura umożliwia konfigurowanie metody płatności dla płatności
 
 > [!NOTE]
 > Konta przeciwstawne należy skonfigurować dla obu metod płatności używanych w sklepie — wpłacania gotówki oraz usunięcia lub przyjęcia środków płatniczych. Spowoduje to utworzenie zbilansowanych zapisów księgi głównej dla transakcji usunięcia lub przyjęcia środków płatniczych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

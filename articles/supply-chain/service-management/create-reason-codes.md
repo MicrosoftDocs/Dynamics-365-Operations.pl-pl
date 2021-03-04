@@ -41,3 +41,6 @@ Po wyświetleniu monitu o podanie kodu przyczyny wyjaśniającego powód aktuali
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

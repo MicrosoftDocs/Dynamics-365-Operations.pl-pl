@@ -111,3 +111,6 @@ Planista produkcji planuje zapotrzebowania materiałowe na zapasy, które są pr
 19. W polu Wyłącz wszystkie procesy planowania wybierz opcję Nie.
 20. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

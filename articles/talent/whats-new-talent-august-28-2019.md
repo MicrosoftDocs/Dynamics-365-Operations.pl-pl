@@ -90,3 +90,6 @@ Aby uzyskać więcej informacji, zajrzyj do [Usprawnione wprowadzanie pracownik�
 ### <a name="platform-update-29"></a>Aktualizacja platformy Update 29
 
 Aby uzyskać więcej informacji dotyczących 29. aktualizacji platformy, zobacz [Podgląd funkcji w aktualizacji platformy 29 Dynamics 365 for Finance and Operations (Październik 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

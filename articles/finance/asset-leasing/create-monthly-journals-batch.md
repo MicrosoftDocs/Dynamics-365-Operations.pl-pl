@@ -37,3 +37,6 @@ Aby skonfigurować zadanie wsadowe lub przetwarzać faktury płatności, amortyz
 > Kolejne transakcje, takie jak harmonogramy amortyzacji zobowiązań, płatności, amortyzacja i wydatki, będą księgowane dopiero po zaksięgowaniu początkowego oddzielenia dla odpowiednich dzierżaw.
 >
 > Wpisy w arkuszu są tworzone, ale nie są księgowane, dopóki nie zostanie wybrane polecenie **Uruchom**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

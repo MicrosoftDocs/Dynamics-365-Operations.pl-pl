@@ -209,3 +209,6 @@ Istnieje kilka etapów procesu tworzenia oferty, które mogą być konfigurowane
 
 
 Aby uzyskać więcej informacji o procesie tworzenia oferty, zobacz [Twórz, zatwierdzaj i podpisuj oferty](./creating-offers.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ Następnie April księguje płatność. Gdy otwiera stronę **Transakcje dostawc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

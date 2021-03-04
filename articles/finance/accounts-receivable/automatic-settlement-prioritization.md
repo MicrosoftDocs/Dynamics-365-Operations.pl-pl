@@ -83,3 +83,6 @@ W przypadku braku priorytetu rozliczenia zdefiniowanego przez użytkownika trans
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

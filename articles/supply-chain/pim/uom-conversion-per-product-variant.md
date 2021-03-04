@@ -107,3 +107,6 @@ Aby wyeksportować konwersje jednostek do programu Excel, na stronie **Konwersje
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zarządzanie jednostką miary](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

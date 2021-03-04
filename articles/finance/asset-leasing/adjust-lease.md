@@ -82,3 +82,6 @@ Jeśli wynajem został zmodyfikowany, można wyświetlić jego różne wersje. M
 
 2. Aby wyświetlić harmonogramy historyczne, otwórz zmodyfikowany wynajem na stronie **Podsumowanie wynajmu**, wybierz żądaną księgę, a następnie w okienku akcji wybierz opcję **Historia wersji księgi**.
 3. Na stronie **Wersja księgi** wybierz żądaną wersję i żądany harmonogram do wyświetlenia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ To nagranie wykorzystuje firmę demonstracyjną USMF. Czynności te wykonuje men
 24. Zamknij stronę.
 25. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

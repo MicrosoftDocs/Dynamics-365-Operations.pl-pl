@@ -74,3 +74,6 @@ Po opublikowaniu zaktualizowanego fragmentu nagłówka wszystkie strony witryny,
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Aby zapewnić pełną elastyczność w trybie mieszanym, zalecamy używanie prod
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

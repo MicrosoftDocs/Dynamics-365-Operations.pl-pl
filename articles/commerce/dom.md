@@ -256,3 +256,6 @@ Poniżej przedstawiono niektóre kwestie, o których należy pamiętać podczas 
 - Obecnie funkcja DOM sprawdza tylko zamówienia, które są tworzone w kanałach handlu. Zamówienia sprzedaży są identyfikowane jako zamówienia sprzedaży detalicznej, jeśli dla opcji **Commerce — sprzedaż** jest ustawiona wartość **Tak**.
 - Firma Microsoft nie przetestowała funkcji DOM z wykorzystaniem zaawansowanych funkcji zarządzania magazynem. Klienci i partnerzy powinni zachować ostrożność i ustalić, czy funkcja DOM jest zgodna z zaawansowanymi funkcjami zarządzania magazynem i istotnymi dla nich procesami.
 - Funkcja DOM jest dostępna tylko w chmurowej wersji aplikacji Commerce. Nie jest ona obsługiwana w przypadku wdrożeń lokalnych.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

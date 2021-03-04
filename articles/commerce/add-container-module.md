@@ -142,3 +142,6 @@ Aby dodać moduł kontenera do nowej strony i ustawić wymagane właściwości, 
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Jeśli w **Ustawieniach miejsca docelowego** nadano parametrowi **Włączone** w
 
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

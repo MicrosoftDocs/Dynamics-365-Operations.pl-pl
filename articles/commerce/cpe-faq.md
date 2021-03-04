@@ -71,3 +71,6 @@ Wydłużenie limitu czasu jest wyjątkiem od normy i jest brane pod uwagę oddzi
 [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](cpe-bopis.md)
 
 [Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Następujące dane są używane do wypełniania raportów w pakiecie zawartości
 | Pozycja         | Stanowisko, tytuł i równoważnik pełnego etatu (FTE)                  | Terminarz kursu, Uczestnicy kursu |
 | Nazwisko pracownika etatowego    | Imię, drugie imię i nazwisko                             | Uczestnicy kursu |
 | Tytuł pracownika   | Tytuł i data ustalenia stażu pracy                                         | Uczestnicy kursu |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

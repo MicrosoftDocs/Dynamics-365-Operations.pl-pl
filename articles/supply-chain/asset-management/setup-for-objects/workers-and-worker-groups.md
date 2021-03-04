@@ -64,3 +64,6 @@ Można również tworzyć grupy konserwatorów i kojarzyć z nimi konserwatorów
 6. Jeśli grupa zasobów powinna być powiązana z wybraną grupą konserwatorów, wybierz opcję **Kopiuj z grupy zasobów**. W polu **Grupa** wybierz grupę zasobów, z której chcesz skopiować ustawienia kalendarza. Następnie w polu **Grupa pracowników** wybierz grupę pracowników, do której chcesz skopiować ustawienia kalendarza grupy zasobów. Ten krok jest istotny tylko wtedy, gdy chcesz, aby konserwatorzy używali kalendarza związanego z zasobem (centrum pracy) w trakcie planowania zlecenia pracy.
 
     Pole na skróconej karcie **Szczegóły** pokazuje liczbę konserwatorów skonfigurowanych w wybranej grupie konserwatorów.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

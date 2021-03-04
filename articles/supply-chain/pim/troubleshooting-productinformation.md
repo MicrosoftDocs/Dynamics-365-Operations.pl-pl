@@ -152,3 +152,6 @@ Jeśli wariant produktu został już wydany w firmie A i podjęto próbę zwolni
 Przycisk **Nowy** na stronie **Zwolnione warianty produktu** powoduje utworzenie wariantu i zwolnienie go w kontekście firmy. Jeśli wariant został już utworzony, nie można go zwolnić w innej firmie przy użyciu przycisku **Nowy**.
 
 Aby rozwiązać ten problem, otwórz stronę **Produktu głównego** i wybierz pozycję **Zwolnij produkt**, aby zwolnić istniejący wariant w wybranej firmie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

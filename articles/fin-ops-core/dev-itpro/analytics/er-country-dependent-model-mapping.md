@@ -496,3 +496,6 @@ Upewnij się, że konfiguracja mapowania modelu udostępnionego nie jest oznaczo
 - Co najmniej jedna wersja konfiguracji mapowania modelu ER ma **stan zakończony** lub **udostępniony**. W tym przypadku wersja o najwyższym numerze wersji zostanie użyta w celu wykonania formatu ER.
 - Opcja **Uruchom wersję roboczą** dla konfiguracji mapowania modelu ER jest włączona. W tym przypadku wersja o statusie **Wersja robocza** zostanie użyta w celu wykonania formatu ER.
 > Opcja **Uruchom wersję roboczą** staje się dostępna na stronie **konfiguracje** dla każdej konfiguracji mapowania modelu ER, jeśli jest włączony parametr **Uruchom ustawienia** użytkownika ER.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

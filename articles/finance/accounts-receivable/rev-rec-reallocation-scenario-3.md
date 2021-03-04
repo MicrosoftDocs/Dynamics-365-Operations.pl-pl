@@ -81,3 +81,6 @@ Zamówienie sprzedaży zostanie ponownie zafakturowane pod kątem dodanej pozycj
 [![Strona transakcji na załączniku z księgowanym wpisem księgowania](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Jako że suma przychodu i sprzedaży jest większa niż 319,50$, różnica jest księgowana dla kwoty 14,48$. Kwota ta powoduje rozliczenie salda z konta Częściowe rozliczenie przychodu faktury. To saldo zostało zaktualizowane w nowym wpisie księgowania, który został zaksięgowany po zmianie alokacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

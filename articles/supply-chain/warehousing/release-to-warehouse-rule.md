@@ -131,3 +131,6 @@ W tym scenariuszu przedstawiono sposób działania funkcji dla magazynów, dla k
 
 > [!NOTE]
 > Ten sam wynik jest oczekiwany, gdy drugi wiersz jest częściowo zarezerwowany. W takim przypadku praca zostanie utworzona dla zarezerwowanej ilości w wierszu, ale nie dla ilości niezarezerwowanej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

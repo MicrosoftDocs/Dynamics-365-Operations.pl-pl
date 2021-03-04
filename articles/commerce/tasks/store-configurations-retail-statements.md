@@ -49,3 +49,6 @@ Ta procedura prowadzi przez konfiguracje sprzedaży sklepu sieci sprzedaży, kt�
 17. Wybierz opcję „Tak” w **Podziel wg metody zestawienia** , aby zestawienia były tworzone dla każdej zdefiniowanej metody wykonywania zestawień. To działanie może być przydatne, jeśli wydajność księgowania wymaga poprawy dla sklepów o dużym wolumenie transakcji, ponieważ spowoduje to utworzenie wielu mniejszych zestawień, które mogą być przetwarzane jednocześnie.  
 18. Na karcie skróconej **Ogólne** w polu **Domyślny odbiorca** można wybrać konto odbiorcy na potrzeby sprzedaży klientom przypadkowym.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

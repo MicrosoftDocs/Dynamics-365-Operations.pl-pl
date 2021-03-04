@@ -289,3 +289,6 @@ Gdy skonfigurowane źródło danych zostanie uruchomione podczas [kontrolowania]
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Śledzenie wykonywania formatu ER w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

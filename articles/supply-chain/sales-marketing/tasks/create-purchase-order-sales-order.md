@@ -69,3 +69,6 @@ Ta procedura pokazuje, jak utworzyć zamówienie zakupu oparte na zamówieniu sp
     - Opcja **Partia odwołań** gwarantuje, że koszty z bieżącego zakupu obciążą dołączone zamówienie sprzedaży.  
     - Aby przejść do źródłowego zamówienia sprzedaży, można otworzyć łącze znajdujące się w polu **Numer odwołania**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dost�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

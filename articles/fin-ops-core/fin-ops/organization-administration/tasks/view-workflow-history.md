@@ -46,3 +46,6 @@ W tym temacie opisano wyświetlenie stanu dokumentu przesłanego do systemu prze
     - Przycisk **Przypisz** ponownie powoduje otwarcie okna dialogowego, w którym można przepisać element pracy do innego użytkownika.  
     - Upewnij się, że jest rozwinięta sekcja **Szczegóły śledzenia**. W tej sekcji można obejrzeć historię przepływu pracy dla wybranego dokumentu.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

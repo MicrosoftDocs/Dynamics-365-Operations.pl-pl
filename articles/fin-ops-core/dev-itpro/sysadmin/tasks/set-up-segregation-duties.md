@@ -40,3 +40,6 @@ Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez 
 12. W polu **Ograniczenie zabezpieczeń** wpisz wartość. Wprowadź opis czynności, które trzeba wykonać, aby zmniejszyć ryzyko związane z zabezpieczeniami. Można na przykład ograniczyć ryzyko poprzez wykonanie bardziej szczegółowych przeglądów procesu, przeprowadzanie co miesiąc przeglądu menedżerskiego lub udostępnienie zasobów innym działom.     
 13. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

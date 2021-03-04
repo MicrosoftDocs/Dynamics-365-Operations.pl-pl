@@ -83,3 +83,6 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](../../dev-itpro/data-entities/data-entities.md).
 7.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 8.  Wprowadź zmiany. Aktualizacja wszystkich wymiarów zapasów może nieco potrwać. Można monitorować postęp za pomocą zadań wsadowych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

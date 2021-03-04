@@ -71,3 +71,6 @@ Proces uaktualniania spowoduje przeniesienie istniejących ustawień i wszystkic
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

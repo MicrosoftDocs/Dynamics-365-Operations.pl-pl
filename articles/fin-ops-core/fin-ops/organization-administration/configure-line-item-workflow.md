@@ -54,3 +54,6 @@ Wykonaj następujące kroki, aby określić, czy ten sam przepływ pracy będzie
     6. Aby sprawdzić, czy wprowadzony zbiór warunków jest poprawnie skonfigurowany, kliknij przycisk **Testuj**. Na stronie **Warunek testowy przepływu pracy** w obszarze **Sprawdź poprawność warunku** wybierz rekord i kliknij przycisk **Testuj**. System oszacuje rekord i określi, czy rekord spełnia określone warunki. Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do strony **Właściwości**.
 
     Na karcie **Przepływy pracy** wybierz przepływ pracy, który ma być używany do przetwarzania pozycji w wierszach spełniających utworzony zbiór warunków.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

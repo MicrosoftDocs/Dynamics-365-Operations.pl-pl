@@ -131,3 +131,6 @@ Aby zastosować personalizację do istniejącej listy rekomendacji w module stro
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

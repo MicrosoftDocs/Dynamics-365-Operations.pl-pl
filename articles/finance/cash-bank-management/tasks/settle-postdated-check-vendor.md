@@ -52,3 +52,6 @@ Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstra
 10. Kliknij opcję Załącznik.
 11. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

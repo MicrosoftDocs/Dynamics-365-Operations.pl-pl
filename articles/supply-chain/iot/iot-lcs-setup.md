@@ -56,3 +56,6 @@ Konfiguracja usługi LCS jest teraz zakończona. Następnym krokiem jest [skonfi
 2. W usługach LCS przejdź do szczegółów środowiska Supply Chain Management.
 3. Przewiń w dół do sekcji **Dodatki środowiska**.
 4. Wybierz pozycję **Odinstaluj** dla dodatku analizy Internetu rzeczy (IoT).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

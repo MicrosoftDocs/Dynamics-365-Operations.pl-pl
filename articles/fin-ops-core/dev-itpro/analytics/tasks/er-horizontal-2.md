@@ -51,3 +51,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 8. Kliknij przycisk OK.
     * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że nowo utworzony plik programu Excel zawiera taką samą liczbę kolumn, jak wybrana dla wymiarów finansowych. Nagłówek raportu w tych kolumnach reprezentuje nazwy wymiarów finansowych. Wiersze transakcji w tych kolumnach reprezentują wymiary finansowe. Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia .  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

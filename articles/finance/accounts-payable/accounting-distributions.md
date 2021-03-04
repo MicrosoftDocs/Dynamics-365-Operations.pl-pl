@@ -57,3 +57,6 @@ Ogólne funkcje zasad podziału księgowań oferują następujące opcje przetwa
 W wersji 10.0.13 dodano funkcję sprawdzającą poprawność tabeli zasad podziału księgowań, aby upewnić się, że nowe pola są poprawnie skonfigurowane. Ta funkcja nazywa się **Włącz dodatkową weryfikację poprawności danych dla dokumentów za pomocą struktury księgowej dokumentów źródłowych**. Aby korzystać z tej funkcji, należy ją włączyć za pomocą obszaru roboczego **Zarządzanie funkcjami**. Aby włączyć tę funkcję, wyszukaj nazwę funkcji w polu **Wyszukiwania** na stronie **Zarządzanie funkcjami**, a następnie wybierz pozycję **Włącz teraz**.
 
 Aby uzyskać więcej informacji, zobacz [Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur od dostawcy](accounting-distributions-subledger-journal-entries-vendor-invoices.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

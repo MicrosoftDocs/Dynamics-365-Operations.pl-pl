@@ -55,3 +55,6 @@ Poniższa procedura umożliwia wstawienie dodatkowego pola BankTransactionType d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

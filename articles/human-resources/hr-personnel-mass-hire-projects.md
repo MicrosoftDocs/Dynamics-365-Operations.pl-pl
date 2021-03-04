@@ -82,3 +82,6 @@ Na stronie **projektu zatrudnienia grupowego** kliknij **Otwórz projekt** lub *
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

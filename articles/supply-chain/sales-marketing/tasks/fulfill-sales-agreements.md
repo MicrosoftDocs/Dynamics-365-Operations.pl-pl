@@ -90,3 +90,6 @@ W tej procedurze pokazano, jak zrealizować zamówienie sprzedaży poprzez skoja
 23. Kliknij opcję Dołączona umowa sprzedaży.
 24. Kliknij kartę Realizacja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

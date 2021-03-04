@@ -50,3 +50,6 @@ W tej procedurze pokazano sposób konfigurowania przypisania usług dodatkowych.
 14. W polu Opłata za usługi dodatkowe wpisz liczbę.
 15. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

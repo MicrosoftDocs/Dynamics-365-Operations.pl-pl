@@ -41,3 +41,6 @@ Urzędy skarbowe to jednostki, do których należy zgłaszać i przekazywać zeb
 10. W polu Zaokrąglenie wpisz liczbę.
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

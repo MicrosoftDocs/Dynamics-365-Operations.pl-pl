@@ -193,3 +193,6 @@ Istnieje jeden wyjątek od reguły mówiącej o tym, że równoważenie partii m
 Jeżeli formuła zawiera substancję aktywną dla produktu, w którym włączono obsługę procesów zarządzania magazynem, ale numer partii jest poniżej lokalizacji w hierarchii rezerwacji, do szarży produkcyjnej nie można zastosować równoważenia partii.
 
 Szarża produkcyjna, do której nie można zastosować równoważenia partii, przechodzi przez zwykły cykl przetwarzania szarż produkcyjnych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

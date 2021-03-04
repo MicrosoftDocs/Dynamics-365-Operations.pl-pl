@@ -82,3 +82,6 @@ W poniższej tabeli przedstawiono, co jest przedmiotem kosztu i co jest obiektem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -376,3 +376,6 @@ Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad w
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

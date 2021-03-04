@@ -116,3 +116,6 @@ Priorytet realizacji zapotrzebowania na zapasy bezpieczeństwa jest obniżany, j
 Na etapie realizacji zapotrzebowania planowania głównego priorytet uzupełniania zapasów bezpieczeństwa nie jest już obniżany. Dostępnych zapasów można użyć przed innymi typami zapotrzebowania. Podczas obliczania opóźnienia zostanie dodana nowa logika w celu uniknięcia opóźnionych wierszy sprzedaży, zapotrzebowania wiersza BOM i wszystkich innych typów zapotrzebowania w celu określenia, czy mogą zostać dostarczone na czas, pod warunkiem że używane są zapasy bezpieczeństwa. Jeżeli system określi, że może zminimalizować opóźnienia, używając zapasów bezpieczeństwa, wiersze sprzedaży lub BOM zastąpią początkowe zapotrzebowania zapasami bezpieczeństwa, a system uruchomi uzupełnianie zapasów bezpieczeństwa.
 
 Jeżeli plan lub towar nie jest skonfigurowany do opóźnionego obliczania, ograniczenie zapasów bezpieczeństwa będzie miało taki sam priorytet jak inne typy zapotrzebowania. Oznacza to, że występuje rezerwa dostępnych zapasów i innych dostępnych zapasów przed innymi typami popytu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

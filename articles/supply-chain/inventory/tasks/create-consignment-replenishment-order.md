@@ -62,3 +62,6 @@ Ten temat pokazuje, jak utworzyć zamówienie uzupełnienia zapasów konsygnacyj
 3. Wybierz **Przegląd**. Towary, które zostały przyjęte jako zapasy konsygnacyjne będące własnością dostawcy, są dostępne. Pozostała ilość w zamówieniu uzupełnienia zapasów konsygnacyjnych jest wyświetlana w polu **Zamówione w sumie**.  
 4. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

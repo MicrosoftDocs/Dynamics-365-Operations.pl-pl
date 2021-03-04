@@ -70,3 +70,6 @@ Można uruchomić zadanie **Liczba oczekujących składników majątku**, aby sp
 3. To zadanie można skonfigurować tak, aby było uruchamiane jako zadanie wsadowe, na przykład raz dziennie.
 
 **Uwaga:** Jeśli dane w zamówieniu zakupu zostały zmienione *po* utworzeniu składnika majątku na podstawie odpowiedniej pozycji, zmiany te nie zostaną odzwierciedlone w składniku majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

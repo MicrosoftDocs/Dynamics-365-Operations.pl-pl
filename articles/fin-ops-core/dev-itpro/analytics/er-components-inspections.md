@@ -813,3 +813,6 @@ Aby dowiedzieć się, jak zsynchronizować strukturę formatu z szablonem ER w e
 [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

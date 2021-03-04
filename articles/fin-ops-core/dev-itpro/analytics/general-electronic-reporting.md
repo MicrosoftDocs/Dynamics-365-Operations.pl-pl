@@ -367,3 +367,6 @@ Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składni
 
 - [Tworzenie konfiguracji Raportowania elektronicznego (ER)](electronic-reporting-configuration.md)
 - [Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

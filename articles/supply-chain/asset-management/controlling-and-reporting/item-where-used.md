@@ -71,3 +71,6 @@ Na poniższym zrzucie ekranu widać przykład obliczeń dla pozycji używającej
 
 ![Przykład obliczenia dla używającej pozycji](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

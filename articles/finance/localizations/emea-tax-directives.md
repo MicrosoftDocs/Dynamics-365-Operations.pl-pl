@@ -33,3 +33,6 @@ Dyrektywa UE zawiera przepisy wymagające stosowania przez wszystkie państwa cz
 
 > [!NOTE]
 > Należy sprawdzić, czy pole **Specyfikacja podatku** jest ustawione na **Waluta rejestracji** lub **Waluta rejestracji i firmy** na stronie **Ustawienia formularza** na karcie **Ogólne** (**Rozrachunki z odbiorcami > Konfiguracja > Formularze > Ustawienia formularza** lub **Zarządzanie projektami i ich księgowanie > Konfiguracja > Formularze > Ustawienia formularza**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

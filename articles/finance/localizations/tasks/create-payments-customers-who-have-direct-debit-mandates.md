@@ -68,3 +68,6 @@ Jest to piąta z pięciu procedur, które razem przedstawiają proces płatnośc
 11. Kliknij przycisk OK.
 12. Kliknij przycisk OK.
 13. Kliknij opcję Utwórz płatności.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

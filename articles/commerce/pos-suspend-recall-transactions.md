@@ -82,3 +82,6 @@ Aby szybko i łatwo wznowić zawieszoną transakcję, zeskanuj kod kreskowy na w
 ### <a name="void-a-suspended-transaction"></a>Unieważnienie zawieszonej transakcji
 
 Można unieważnić zawieszone transakcje przez ich wywołanie a następnie wykonanie operacji **Unieważnij transakcję** lub przez wybranie transakcji z listy **Wycofaj transakcję** i wybranie opcji **Unieważnij** na pasku aplikacji. Ewentualnie można skonfigurować sklepu do wyświetlania użytkownikom monitów o unieważnienie zawieszonych transakcji w chwili kończenia zmiany.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

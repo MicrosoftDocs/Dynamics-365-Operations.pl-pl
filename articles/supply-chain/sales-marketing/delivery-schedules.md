@@ -57,3 +57,6 @@ W przypadku potwierdzenia oferty sprzedaży wyświetlane zamówienia sprzedaży 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

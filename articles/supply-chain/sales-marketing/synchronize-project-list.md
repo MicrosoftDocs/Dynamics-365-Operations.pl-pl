@@ -67,3 +67,6 @@ Włączanie śledzenia zmian w projektach jednostek danych
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekty (rozwiązanie Supply Chain Management do rozwiązania Field Service): Porjekty
 
 [![Mapowanie szablonu w integracji danych](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

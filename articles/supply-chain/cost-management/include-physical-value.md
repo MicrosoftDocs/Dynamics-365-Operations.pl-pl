@@ -60,3 +60,6 @@ Podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wyniesie 
 
 > [!NOTE]
 > Jeśli dla tego towaru zostałoby zaznaczone pole wyboru **Włącz wartość fizyczną**, podczas księgowania zamówienia sprzedaży zaksięgowana kwota kosztu wynosiłaby 12,00 zł.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

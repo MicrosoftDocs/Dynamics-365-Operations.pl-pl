@@ -109,3 +109,6 @@ Jak opisano w poprzednij sekcji, podczas tworzenia puli można dodawać zlecenia
 
 Jeśli chcesz usunąć wybrane zlecenie pracy z puli zleceń pracy, powtórz te kroki, ale wybierając opcję **Usuń** w kroku 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

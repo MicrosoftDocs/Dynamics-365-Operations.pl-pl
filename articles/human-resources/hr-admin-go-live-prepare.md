@@ -91,3 +91,5 @@ Po przesłaniu listy kontrolnej architekt rozwiązań FastTrack dokona przegląd
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Rozpoczynanie eksploatacji — często zadawane pytania](hr-admin-go-live-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ W tej procedurze pokazano, jak utworzyć domyślny stan cyklu życia produktu, a
 > [!NOTE]
 > Załóżmy, że skonfigurowano stan aktywny. W takim przypadku można wybrać aktywny, aby zezwolić na użycie produktu w planowaniu głównym o obliczaniu na poziomie BOM. Oczywiście ma to sens tylko wówczas, gdy określono wszystkie dane szczegółowe produkty wymagane do spójnego planowania.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

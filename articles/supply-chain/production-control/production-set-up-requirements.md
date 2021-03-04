@@ -81,3 +81,6 @@ W wypadku stosowania marszrut operacje muszą zostać zdefiniowane dla każdej s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

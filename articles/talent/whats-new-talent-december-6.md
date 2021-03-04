@@ -143,3 +143,6 @@ Zaktualizowane mapowanie powinno wyglądać tak.
 
 ![Przekształcenie pola płci](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

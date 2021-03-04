@@ -62,3 +62,6 @@ Lista wyników wyszukiwania jest ograniczona do 10 pozycji. Jeśli w wynikach ni
 ## <a name="development"></a>Programowanie
 
 Z programistycznego punktu widzenia funkcja nawigacji z wyszukiwaniem jest łatwa do wykorzystania, ponieważ wdrażane elementy menu mogą pojawiać się w wynikach wyszukiwania niemal natychmiast. Jeśli tylko elementy menu mają łącza do okienka nawigacji lub pulpitu nawigacyjnego, automatycznie stają się one dostępne do wyszukiwania.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

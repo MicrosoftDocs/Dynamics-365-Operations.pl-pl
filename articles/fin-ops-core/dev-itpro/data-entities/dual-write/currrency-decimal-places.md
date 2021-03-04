@@ -95,3 +95,6 @@ Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty uż
 ### <a name="tables-currency-field"></a>tabele: pole Waluta
 
 Liczba miejsc dziesiętnych, które można skonfigurować dla określonych pól waluty, jest ograniczona do czterech.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Ta procedura poprowadzi przez proces tworzenia nowego produktu w hierarchii prod
 8. W polu Numer produktu wpisz wartość.
 9. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

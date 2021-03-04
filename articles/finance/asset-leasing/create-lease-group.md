@@ -50,3 +50,6 @@ Po utworzeniu grup wynajmu można przypisać księgi do każdej grupy. Podczas t
 1. Przejdź do **Wynajem składnika majątku \> Ustawienia \> Grupa wynajmu**.
 2. Wybierz grupę wynajmu, a następnie wybierz opcję **Księgi**.
 3. Wybierz opcję **Nowy**, a następnie w polu **Typ księgi** wybierz księgę, która ma zostać przypisana do grupy wynajmu. Można przypisać wiele ksiąg do grupy wynajmu, jeśli wynajem musi być księgowany na różne sposoby.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

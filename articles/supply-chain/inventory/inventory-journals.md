@@ -117,3 +117,6 @@ Te dwa arkusze magazynowe obsługują scenariusz *Inicjowanie zapasów* tylko w 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Jednostki danych](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 |    Saldo dostawcy do salda odbiorcy     |                                                                                                                   <ul><li>Saldo dostawcy do salda odbiorcy</li><li>Saldo dostawcy do salda odbiorcy wg firm</li><li>Szczegóły salda dostawcy do salda odbiorcy</li></ul>                                                                                                                    |
 |    Faktury z wstrzymaniem płatności     |                                                                                         <ul><li>Faktury z wstrzymaniem płatności</li><li>Szczegóły faktur z wstrzymaniem płatności</li><li>Faktury z wstrzymaniem płatności wg firm</li><li>Faktury z wstrzymaniem płatności wg grup dostawców</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

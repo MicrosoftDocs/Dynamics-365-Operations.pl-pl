@@ -56,3 +56,6 @@ Administratorzy mogą zezwolić uwierzytelnionym użytkownikom na samodzielną r
 ### <a name="custom-extensions"></a>Rozszerzenia niestandardowe
 
 Administratorzy mogą tworzyć własne rozszerzenia służące do zarządzania niektórymi usługami rezygnacji użytkowników. Aby uzyskać więcej informacji, zobacz [Wywoływanie interfejsów API w usłudze Retail Server](e-commerce-extensibility/call-retail-server-apis.md) i [rozszerzalność kanału online](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właś
 [Moduł bloku zawartości](add-hero-module.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

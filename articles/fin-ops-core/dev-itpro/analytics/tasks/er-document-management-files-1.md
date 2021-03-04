@@ -74,3 +74,6 @@ Utworzysz własną konfigurację modelu faktur sprzedaży na podstawie konfigura
 3. W polu Nazwa wpisz „Model faktur sprzedaży (niestandardowy)”.
 4. Kliknij przycisk Utwórz konfigurację.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

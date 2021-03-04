@@ -163,3 +163,6 @@ Sieć CDN powinna być teraz poprawnie skonfigurowana, aby można było jej uży
 [Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

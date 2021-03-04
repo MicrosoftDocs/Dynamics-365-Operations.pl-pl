@@ -115,3 +115,6 @@ Poniższy obraz przedstawia przykład konfiguracji dla zwolnionego produktu..
 [Tworzenie firm](channels-legal-entities.md)
 
 [Utwórz grupę wariantów](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

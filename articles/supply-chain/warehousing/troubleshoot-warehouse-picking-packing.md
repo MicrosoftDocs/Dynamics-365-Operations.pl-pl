@@ -110,3 +110,6 @@ Używając procesu *Pobieranie dla grupy sterowane przez system*, jeśli skonfig
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Aby rozwiązać ten problem, edytuj profil grupy i w opcji **Aktywuj stanowiska** określ wartość *Nie*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Aby importować i eksportować dane produktu, musisz używać jednostek danych. 
 
 > [!NOTE]
 > Jednostki danych **Zwolnione produkty (wersja 2)** można używać do importowania produktów do systemu tylko wtedy, gdy udostępniony produkt został już utworzony. W przeciwnym razie, aby zaimportować produkty do systemu, należy użyć jednostki **Tworzenie produktu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

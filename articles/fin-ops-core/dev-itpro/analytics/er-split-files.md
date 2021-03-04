@@ -47,3 +47,6 @@ Aby dowiedzieć się więcej o tej funkcji, należy odtworzyć przewodnik po zad
 [Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

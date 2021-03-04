@@ -82,3 +82,6 @@ W przypadku korzystania z dwóch walut lub w przypadku korzystania z jednej walu
 Zrealizowane zyski i straty to zyski i straty z zakończonych transakcji. Są one rejestrowane w zestawieniu zysków i strat. Niezrealizowane zyski i straty to zyski i straty, które się zmaterializowały, chociaż transakcja nie została dokonana. Oznacza to, że zaksięgowano na przykład fakturę, ale faktura nie została jeszcze rozliczona i zapłacona. Niezrealizowane zyski i straty są rejestrowane w bilansie.
 
 Aby uzyskać więcej informacji na temat sposobu korzystania z dwóch walut, zobacz [Dwie waluty](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

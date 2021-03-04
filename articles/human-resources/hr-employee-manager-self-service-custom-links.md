@@ -48,3 +48,6 @@ Aby skorzystać z tej funkcji, Włącz **Łącza niestandardowe w samoobsłudze 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Przegląd samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

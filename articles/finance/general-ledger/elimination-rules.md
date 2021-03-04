@@ -155,3 +155,6 @@ Wybierz firmę będącą źródłem skonsolidowanych danych, a następnie wybier
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

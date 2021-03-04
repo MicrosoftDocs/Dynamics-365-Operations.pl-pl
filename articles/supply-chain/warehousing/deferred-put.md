@@ -110,3 +110,6 @@ Obszar roboczy **Monitorowanie pracy wychodzącej** ma dwa kafelki ułatwiające
 ## <a name="deleting-completed-tasks"></a>Usuwanie wykonanych zadań
 
 Można usunąć odroczone zadania przetwarzania odłożenia, które zostały zakończone, zaznaczając je i usuwając je na stronie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

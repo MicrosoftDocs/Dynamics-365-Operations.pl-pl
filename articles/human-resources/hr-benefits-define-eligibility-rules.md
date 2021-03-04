@@ -69,3 +69,6 @@ Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej 
 10. Kliknij przycisk Zapisz.
 11. Zamknij formularz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

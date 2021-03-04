@@ -45,3 +45,6 @@ Jest to pierwsze z pięciu zadań, które razem ilustrują proces płatności do
     * Jeśli przycisk Importuj nie jest dostępny, oznacza to, że konfiguracja została już zaimportowana.  
 9. Kliknij przycisk Tak.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

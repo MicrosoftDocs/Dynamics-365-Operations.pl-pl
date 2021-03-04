@@ -71,3 +71,6 @@ Zarządzanie usługami można zintegrować z następującymi modułami:
 
   
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

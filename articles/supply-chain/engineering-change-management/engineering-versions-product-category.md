@@ -162,3 +162,6 @@ Inżynieryjne BOM i marszruty są tworzone z wersji inżynieryjnej, w której ma
 W przypadku produktów, w których używasz wymiaru *wersji* produktu (wraz z logistycznym wpływem na transakcje), wersja jest również dodawana do BOM i marszrut. To zachowanie ułatwia rozróżnianie BOM i marszrut z kolejnymi wersjami niezależnie od ustawienia **Wymuszaj efektywność**.
 
 W przypadku produktów, w których nie używasz wymiaru *wersji* produktu (bez logistycznego wpływu na transakcje), wersja nie jest dodawana do BOM ani marszrut. Z tego powodu nie będzie różnic między BOM i marszrutami kolejnych wersji. W takim przypadku zdecydowanie zaleca się ustawienie opcji **Wymuszaj efektywność** na wartość *Tak*. W ten sposób można zapobiec nakładaniu się wersji inżynierskich, a także aktywować zestawienie komponentów i marszrutę nowszej wersji bez konieczności uprzedniej dezaktywacji zestawienia komponentów i marszruty poprzedniej wersji. Jeśli w tym przypadku ustawienie opcji **Wymuszaj efektywność** wartość *Tak*, należy ręcznie dezaktywować BOM i marszruty w starszych wersjach, aby umożliwić aktywację najnowszej wersji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

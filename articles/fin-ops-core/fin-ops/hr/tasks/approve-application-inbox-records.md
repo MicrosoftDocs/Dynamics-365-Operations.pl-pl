@@ -48,3 +48,6 @@ W tej procedurze pokazano sposób przeglądania podań o pracę otrzymanych za p
 2. Na liście kliknij łącze w wybranym wierszu.
 3. Rozwiń sekcję Załączniki.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

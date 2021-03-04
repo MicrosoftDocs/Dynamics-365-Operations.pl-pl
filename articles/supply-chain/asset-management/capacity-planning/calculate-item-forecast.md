@@ -60,3 +60,6 @@ Jest to przydatne w przypadku, gdy użytkownik chce uzyskać przegląd oczekiwan
 8. Kliknij przycisk **Wyświetl wymiary**, jeśli chcesz wyświetlić wymiary produktu, magazynu lub śledzenia związane z towarami. Wybierz odpowiednie pola wyboru i kliknij **OK**.
 
 ![Rysunek 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

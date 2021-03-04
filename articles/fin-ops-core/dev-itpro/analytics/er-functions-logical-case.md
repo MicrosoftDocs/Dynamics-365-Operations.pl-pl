@@ -83,3 +83,6 @@ Funkcja `CASE( DATETIMEFORMAT( NOW(), "MM"), "10", "WINTER", "11", "WINTER", "12
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje logiczne](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

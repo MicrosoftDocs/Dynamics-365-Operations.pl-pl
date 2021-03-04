@@ -50,3 +50,6 @@ Usługa wysyła powiadomienia e-mail przy użyciu wstępnie zdefiniowanych szabl
 Poniższa ilustracja pokazuje strukturę powiadomień o alertach po ich odebraniu pocztą e-mail.
 
 [![Powiadomienia o alertach oparte na szablonach i służące do rejestrowania tworzenia, zmian pól i wykrywania szablonów](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

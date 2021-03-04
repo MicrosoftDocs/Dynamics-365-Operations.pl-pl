@@ -51,3 +51,6 @@ Towar zostanie w ten sposób powiązany z przedmiotem serwisu, a wymiary magazyn
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Ten temat pokazuje, jak włączyć automatyczne drukowanie etykiety z numerem se
 7. Wybierz opcję **Zapisz**.
 8. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

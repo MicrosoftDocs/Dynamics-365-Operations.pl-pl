@@ -54,3 +54,6 @@ Aby skonfigurować zaplanowane zadanie wsadowe w celu uruchomienia potwierdzenia
 1. Aby dodać zadanie wsadowe do kolejki przetwarzania wsadowego, należy wybrać opcję **OK** w oknie dialogowym **Potwierdzanie wysyłki**.
 
 Aby uzyskać więcej informacji, zobacz [Omówienie przetwarzania wsadowego](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

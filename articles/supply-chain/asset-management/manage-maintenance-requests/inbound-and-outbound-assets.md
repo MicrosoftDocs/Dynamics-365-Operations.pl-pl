@@ -71,3 +71,6 @@ Po ukończeniu zadania konserwacji lub naprawy można zarejestrować zasób jako
 2. Wybierz składnik majątku lub żądanie konserwacji.
 3. Wybierz opcję **Dostarcz zasoby**.
 4. W polu **Dostarczone** wpisz datę i godzinę. Następnie wybierz opcję **OK**. Rekord zostanie usunięty ze strony listy **Zasoby wychodzące**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

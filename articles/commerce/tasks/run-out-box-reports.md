@@ -64,3 +64,6 @@ Dane wykorzystane do stworzenia tego nagrania pochodzą z firmy demonstracyjnej 
 5. Kliknij przycisk Eksportuj.
 6. Kliknij opcję PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

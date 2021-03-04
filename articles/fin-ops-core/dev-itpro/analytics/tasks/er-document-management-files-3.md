@@ -119,3 +119,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 23. Kliknij przycisk Zapisz.
 24. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Więcej informacji na temat każdego kroku procesu eksperymentowania można znal
 
 ## <a name="next-step"></a>Następne kroki
 [Określanie hipotezy i ustalanie metryki sukcesu eksperymentu](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

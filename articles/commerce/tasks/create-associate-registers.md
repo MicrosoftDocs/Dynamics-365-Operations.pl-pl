@@ -44,3 +44,6 @@ Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS). Proc
     * Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji. Ta wartość jest często nazywana „Identyfikatorem terminala” lub „TID”. Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.  
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

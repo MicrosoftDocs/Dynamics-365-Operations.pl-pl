@@ -253,3 +253,6 @@ Aby utworzyć nowy wynajem, należy wykonać następujące kroki.
 
    Na stronie **Transakcje zobowiązań z tytułu wynajmu** wyświetlane jest początkowe uznanie, płatność odsetek za wynajem, płatność za wynajem i saldo zobowiązania z tytułu wynajmu. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

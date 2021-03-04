@@ -80,3 +80,6 @@ Można przypisać krok zatwierdzania do następujących grup uczestników.
 - [Definiowanie przepływów pracy procesów biznesowych dla zapotrzebowań na zakup](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Przepływ pracy zapotrzebowań na zakup](purchase-requisitions-workflow.md)
 - [Wdrażanie dostawców](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

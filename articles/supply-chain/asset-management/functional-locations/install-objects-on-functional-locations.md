@@ -83,3 +83,6 @@ Gdy dane konfiguracyjne są dostępne, możesz przystąpić do tworzenia składn
 1. Na stronie **Wszystkie lokalizacje czynności konserwacyjnych** upewnij się, że lokalizacja czynności konserwacyjnych, w której ma zostać automatycznie utworzony składnik majątku, korzysta z typu lokalizacji czynności konserwacyjnych utworzonego w tym celu.
 2. Wybierz lokalizację czynności konserwacyjnych na liście.
 3. Wybierz pozycję **Aktualizuj stan lokalizacji czynności konserwacyjnych**, a następnie wybierz stan cyklu życia utworzony w tym celu. Jeden składnik majątku jest teraz automatycznie instalowany w lokalizacji czynności konserwacyjnych. Tan składnik majątku ma tę samą nazwę co lokalizacja czynności konserwacyjnych.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

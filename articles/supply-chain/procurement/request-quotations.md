@@ -247,3 +247,6 @@ W przykładzie poniżej widać najwyższy i najniższy stan w sprawie ZO, gdzie 
 | Zaakceptowanie jednej z ofert. (lub co najmniej jeden wiersz) |                          Odebrane                           |                           Zaakceptowana                           |                    Odebrane                    |                    Zaakceptowana                     |                   Odebrane                   |                   Zaakceptowana                    |
 |           Odrzucenie wszystkich innych ofert.           |                          Odrzucona                           |                           Zaakceptowana                           |                    Odrzucona                    |                    Zaakceptowana                     |                   Odrzucona                   |                   Zaakceptowany                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

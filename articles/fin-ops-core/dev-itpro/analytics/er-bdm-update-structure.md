@@ -106,3 +106,6 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

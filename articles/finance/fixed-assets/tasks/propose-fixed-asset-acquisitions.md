@@ -43,3 +43,6 @@ W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozyc
 - W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.  
 11. Na stronie wybierz kartę **Księgi**.
 12. Wybierz opcję **Zaksięguj**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

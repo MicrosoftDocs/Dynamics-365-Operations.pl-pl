@@ -64,3 +64,5 @@ Jednostka MyLeaveRequests w programie Microsoft Dynamics 365 Human Resources udo
 
 - [Przesyłanie wniosku o urlop do przepływu pracy](hr-developer-api-myleaverequests-submit.md)
 - [Uwierzytelnianie](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

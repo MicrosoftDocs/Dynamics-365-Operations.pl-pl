@@ -69,3 +69,6 @@ Funkcja `IF (1=2, "condition is met", "condition is not met")` zwraca ciąg **"c
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje logiczne](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

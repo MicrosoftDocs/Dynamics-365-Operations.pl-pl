@@ -727,3 +727,6 @@ Wartość znacznika **WartoscZamowien** węzła **ZamowienieCtrl** jest obliczan
 
 Generowanie raportów SAF-T za długi okres, taki jak miesiąc lub kwartał, może powodować objęcie bardzo dużej ilości danych i zajmować dużo czasu. W takich przypadkach zaleca się używanie zadań wsadowych. Okno dialogowe dla każdego raportu SAF-T zawiera kartę **Uruchom w tle**. Otwórz tę kartę, aby ustawić generowanie raportu w trybie wsadowym. Zaznacz pole wyboru **Przetwarzanie wsadowe**. Aby uzyskać więcej informacji na temat przetwarzania wsadowego, zobacz temat [Omówienie przetwarzania wsadowego](../../dev-itpro/sysadmin/batch-processing-overview.md). Aby przejrzeć zadania wsadowe lub znaleźć wygenerowany plik, otwórz okno **Administrowanie organizacją** > **Raportowanie elektroniczne** > **Zadania raportowania elektronicznego** i znajdź wiersz związany z zadaniem. W **menu głównym** wybierz **Pokaż dziennik**. Jeżeli nic nie jest wyświetlane, oznacza to, że podczas generowania pliku nie zostały utworzone żadne komunikaty. Aby zobaczyć plik, w **menu głównym** wybierz **Pokaż pliki**, znajdź żądany plik i w **menu głównym** wybierz **Otwórz**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

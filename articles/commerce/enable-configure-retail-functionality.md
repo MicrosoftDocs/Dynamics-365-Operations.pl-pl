@@ -69,3 +69,6 @@ Po zakończeniu inicjowania należy skonfigurować dodatkowe dane handlowe. Oto 
 - Kanały Commerce
 - Kasy i urządzenia
 - Asortymenty
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

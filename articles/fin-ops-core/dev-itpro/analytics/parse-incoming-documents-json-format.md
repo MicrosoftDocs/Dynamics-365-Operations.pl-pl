@@ -50,3 +50,6 @@ Ponadto, należy wypełnić [ER Utwórz wymagane konfiguracje do zaimportowania 
 | Nazwa                  | Nazwa pliku |
 |------------------------|-----------|
 | Konfiguracja modelu ER | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=874111) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

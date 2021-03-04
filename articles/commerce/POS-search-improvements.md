@@ -118,3 +118,6 @@ W nadchodzącej wersji Commerce, sprzedawcy detaliczni będą mogli skonfigurowa
 
 Aby zapobiec nieoczekiwanem problemom z wydajnością, ta konfiguracja jest ukryta za flagą lotu o nazwie **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. Dlatego w celu wyświetlenia ustawienia interfejs użytkownika (UI) **Tryb domyślnego wyszukiwania klientów**, należy utworzyć bilet pomocy technicznej dla systemu testowania akceptacji użytkowników (UAT) i środowisk produkcyjnych. Po otrzymaniu biletu zespół inżynierów będzie pracował ze sprzedawcą, aby upewnić się, że sprzedawca przeprowadza testy w środowiskach nieprodukcyjnych, aby ocenić wydajność i wdrożyć wymagane optymalizacje.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

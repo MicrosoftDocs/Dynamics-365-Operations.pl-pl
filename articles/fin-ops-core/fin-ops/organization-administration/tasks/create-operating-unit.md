@@ -41,3 +41,6 @@ Jednostka operacyjna to organizacja używana do dzielenia formantu zasobów ekon
     + Wprowadź informacje dotyczące metod komunikacji, takie jak adresy e-mail, adresy URL i numery telefonów. Aby wprowadzić nowy rekord komunikacji, kliknij przycisk Nowy. Aby zmodyfikować istniejący rekord komunikacji, wybierz kolejno opcje **Więcej opcji > Zaawansowane**.   
 6. Opcjonalnie zmień **Numer jednostki operacyjnej** w razie potrzeby. Należy zauważyć, że ten numer jest unikatowym identyfiktorem dla pasującego rekordu **Jednostki** i nie może być taki sam jak jakakolwiek inna jednostka operacyjna.
 7. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Ten temat prowadzi przez proces konfigurowania programu sprzedaży ciągłej (zn
     * Gdy ten towar jest sprzedawany przez biuro obsługi, jest do niego stosowana dodatkowa logika biznesowa z wybranego programu sprzedaży ciągłej.  
 7. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

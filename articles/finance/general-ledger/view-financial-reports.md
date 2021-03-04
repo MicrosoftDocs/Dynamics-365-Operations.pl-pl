@@ -87,3 +87,6 @@ Aby wyeksportować raport finansowy, w okienku akcji kliknij **Eksportuj**. Rapo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

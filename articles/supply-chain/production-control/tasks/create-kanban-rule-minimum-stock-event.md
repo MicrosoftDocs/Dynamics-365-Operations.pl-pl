@@ -68,3 +68,6 @@ Ta procedura skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban
 5. Rozwiń sekcję Karty Kanban.
     * Należy zauważyć, że została utworzona karta Kanban w celu przeniesienia potrzebnego materiału do magazynu 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

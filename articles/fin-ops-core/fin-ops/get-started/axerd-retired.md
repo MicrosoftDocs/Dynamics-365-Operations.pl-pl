@@ -35,3 +35,6 @@ Strony HTML znajdują się w repozytorium pod adresem [https://github.com/Micros
 Opis sposobu tworzenia własnych diagramów ERD znajduje się na stronie [https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm](https://github.com/Microsoft/ax-2012-doc-tools/blob/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Help-HowToUse-AxErd.htm)
 
 Rozwiązanie znajduje się w katalogu głównym folderu [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

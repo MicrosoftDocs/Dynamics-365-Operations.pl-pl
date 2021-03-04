@@ -73,3 +73,6 @@ Wprowadzasz źródło danych **DS** typu *Pole obliczeniowe*, które zawiera wyr
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

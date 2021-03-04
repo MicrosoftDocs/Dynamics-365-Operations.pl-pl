@@ -119,3 +119,6 @@ Aby zagwarantować, że nagłówek ma się pojawiać na każdej stronie, należy
 [Moduł wyboru witryny](site-selector.md)
 
 [Moduł wyboru sklepu](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

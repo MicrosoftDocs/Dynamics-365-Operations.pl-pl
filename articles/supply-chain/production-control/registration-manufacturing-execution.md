@@ -62,3 +62,6 @@ Pracownicy mogą wykonywać różne typy rejestracji w uruchomieniu produkcji dl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

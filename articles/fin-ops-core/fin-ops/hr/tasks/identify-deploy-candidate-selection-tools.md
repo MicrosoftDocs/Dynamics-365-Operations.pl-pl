@@ -57,3 +57,6 @@ Znajdowanie puli wykwalifikowanych kandydatów do zapełnienia wakatów może by
 24. Zamknij stronę.
 25. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

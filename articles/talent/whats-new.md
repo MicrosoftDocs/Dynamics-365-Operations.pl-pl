@@ -33,3 +33,6 @@ Co tydzień pojawia się nowe wydanie aplikacji Talent. Wersje te są wymienione
 
 Spis treści będzie aktualizowany co tydzień, więc zaglądaj tu regularnie i sprawdzaj, jakie nowe funkcje i zmiany wprowadziliśmy w najnowszych wersjach aplikacji Talent.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

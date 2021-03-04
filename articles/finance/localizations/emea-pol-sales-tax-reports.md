@@ -432,3 +432,6 @@ Po skonfigurowaniu kosztów niepodlegających odliczeniu na stronie **Arkusze CI
 - **Drukowanie raportu**
 
 Okienko pola informacji zawiera sumy w arkuszu oraz łączną kwotę zaległości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

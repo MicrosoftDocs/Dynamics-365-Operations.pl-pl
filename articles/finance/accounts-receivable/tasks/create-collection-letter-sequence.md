@@ -59,3 +59,6 @@ Ten przewodnik po zadaniach umożliwia tworzenie kolejki ponagleń. W zadaniu wy
 26. Rozwiń skróconą kartę **Notatka**.
 27. Wprowadź tekst, jaki ma być wyświetlany dla ponaglenia o wybranym kodzie. Ten tekst można przetłumaczyć na wiele języków za pomocą menu Tłumaczenia widocznego nad polem notatki.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

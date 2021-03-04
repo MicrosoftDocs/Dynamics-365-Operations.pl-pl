@@ -64,3 +64,6 @@ Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej USMF.
 6. Na liście wybierz **Identyfikator użytkownika**. Na przykład 24.
 7. Rozwiń skróconą kartę **Praca**.
 8. W polu **Zezwalaj na ręczną zmianę alokacji pozycji** wybierz opcję **Tak**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

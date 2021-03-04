@@ -128,3 +128,6 @@ Następująca tabela przedstawia najważniejsze wymiary używane jako filtry do 
 | Jednostki                  | Identyfikator i Nazwa                                                   |
 | Zasoby                 | Identyfikator zasobu, Nazwa zasobu, Typ zasobu i Grupa zasobów |
 | Produkty                  | Numer produktu, Nazwa produktu, Identyfikator towaru i Grupa towarów         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

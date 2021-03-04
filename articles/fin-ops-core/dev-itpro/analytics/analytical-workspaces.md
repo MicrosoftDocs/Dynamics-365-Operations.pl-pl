@@ -45,3 +45,6 @@ ms.locfileid: "4683145"
 - [Obszar roboczy płatności dla dostawców](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Pakiet zawartości usługi Power BI Wydajność magazynu](warehouse-power-bi-content.md)
 - [Pakiet zawartości usługi Power BI Metryki pracowników](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 
 - [Definiowanie wymiarów finansowych](tasks/define-financial-dimensions.md)
 - [Obsługa domyślnych szablonów wymiaru finansowego](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

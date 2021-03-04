@@ -93,3 +93,6 @@ Organizacje mogą wymagać ustawienia kodów przyczyn dla określonych typów ur
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Wskaż typ wystąpienia podczas inicjowania obsługi administracyjnej w aplikacji Talent
 
 Podczas inicjowania obsługi nowego wystąpienia aplikacji Talent można wskazać, czy typ wystąpienia to **produkcja** czy **piaskownica**, co pozwala na wczesne testowanie nowych funkcji. Wszystkie istniejące wystąpienia aplikacji Talent zostaną zaktualizowane do typu wystąpienia produkcji. Jeśli chcesz, aby jedno z istniejących wystąpień zostało zaktualizowane do typu wystąpienia piaskownicy, skontaktuj się z pomocą techniczną, aby zainicjować żądanie zmiany.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

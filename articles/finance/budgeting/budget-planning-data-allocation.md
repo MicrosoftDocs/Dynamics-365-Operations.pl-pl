@@ -77,3 +77,6 @@ Na koniec należy dodać zautomatyzowane zadanie dla alokacji etapu planowania b
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

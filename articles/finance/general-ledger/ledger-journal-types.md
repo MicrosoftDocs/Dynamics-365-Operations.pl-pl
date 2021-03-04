@@ -68,3 +68,6 @@ W tym temacie opisano typy arkuszy, które można skonfigurować dla arkuszy fin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

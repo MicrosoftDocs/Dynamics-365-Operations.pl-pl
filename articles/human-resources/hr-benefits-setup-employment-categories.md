@@ -36,3 +36,6 @@ W programie Dynamics 365 Human Resources ustaw kategorie zatrudnienia pasujące 
 3. Wypełnij pola **Typ pracownika**, **Kategoria zatrudnienia** i **Opis**.
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

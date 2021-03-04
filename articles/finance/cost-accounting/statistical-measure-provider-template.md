@@ -346,3 +346,6 @@ Jeśli w regule dystrybucji kosztów jako podstawę alokacji przypisano wstępni
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Podstawy alokacji](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

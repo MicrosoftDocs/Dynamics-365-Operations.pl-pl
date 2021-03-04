@@ -44,3 +44,6 @@ W tym temacie wyjaśniono, jak dostosować podatek od sprzedaży na fakturze od 
 13. Kliknij przycisk **OK**.
 14. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

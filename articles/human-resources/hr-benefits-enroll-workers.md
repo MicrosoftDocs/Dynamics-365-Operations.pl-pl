@@ -58,3 +58,6 @@ Ta procedura pokazuje, jak można zapisać jednego pracownika na jedno lub więc
 14. Na liście kliknij łącze w wybranym wierszu.
 15. Ta strona umożliwia wyświetlanie pracowników, którzy są zarejestrowani na świadczenie, a także pracowników, którzy nie są zarejestrowani.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

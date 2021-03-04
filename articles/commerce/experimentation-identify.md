@@ -40,3 +40,6 @@ Aby sprawdzić hipotezę, sukces lub niepowodzenie eksperymentu powinno być bez
 
 ## <a name="next-step"></a>Następne kroki
 [Konfigurowanie eksperymentu](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

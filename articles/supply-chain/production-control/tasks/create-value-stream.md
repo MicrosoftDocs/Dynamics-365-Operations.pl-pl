@@ -49,3 +49,6 @@ Strumienie wartości są jednostkami operacyjnymi, które grupują jeden lub wie
 2. Zamknij stronę.
 3. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

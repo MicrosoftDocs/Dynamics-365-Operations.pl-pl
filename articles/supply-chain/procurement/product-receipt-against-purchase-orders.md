@@ -69,3 +69,6 @@ Do tej strony można przejść z grupy akcji **Przyjęcie** na stronie **Zamówi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Poniższa tabela zawiera łącza do informacji o podstawowych zadaniach kwestion
 | [Projektowanie kwestionariusza](hr-learning-design-questionnaires.md) | Z tego artykułu dowiesz się, jak zaprojektować kwestionariusz. Proces projektowania obejmuje konfigurowanie wymagań wstępnych, odpowiedzi i pytań, a następnie łączenie ich w kwestionariusz. |
 | [Dystrybuowanie i planowanie kwestionariuszy](hr-learning-distribute-questionnaires.md) | Ten artykuł zawiera informacje o sposobach dystrybuowania kwestionariusza do respondentów i ich wypełniania. |
 | [Wyświetlanie i ocenianie wyników kwestionariusza](hr-learning-evaluate-questionnaire-results.md) | Ten artykuł zawiera informacje o sposobach przeglądania i oceniania wyników z wypełnionych kwestionariuszy. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Można zamknąć pracę jako **Stanowisko obsadzone** po ukończeniu przez co na
    > Można zamknąć pracę jako **Stanowisko obsadzone** tylko po ukończeniu przez co najmniej jedną relację biznesową etapu oferty. Jeśli dla podania o pracę nie wybrano **Oferta zaakceptowana** lub jeśli w aplikacji nie jest wyświetlany stan **Zaakceptowana** w ofercie, opcja **Stanowisko obsadzone** nie będzie dostępna w liście rozwijanej **Powód**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

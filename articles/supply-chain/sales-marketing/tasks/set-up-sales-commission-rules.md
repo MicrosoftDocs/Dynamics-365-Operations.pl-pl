@@ -96,3 +96,6 @@ W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śled
 17. Na liście zaznacz utworzoną wcześniej grupa prowizji.
 18. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

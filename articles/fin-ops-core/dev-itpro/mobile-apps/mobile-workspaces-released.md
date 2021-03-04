@@ -41,3 +41,6 @@ W tym temacie wymieniono listę mobilnych obszarów roboczych, których można u
 | [Zamówienia sprzedaży](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Pozwala być na bieżąco z zamówieniami sprzedaży.                                                                                                                          |  2017 stycznia                  |
 | [Portal współpracy z dostawcami](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Dostawcy mogą być na bieżąco z zamówieniami zakupu, które zostały im wysłane do zatwierdzenia. Mogą również wyświetlać informacje o nowych i zaktualizowanych zamówieniach zakupu i osobach kontaktowych. |2017 stycznia    |
 | [Zarządzanie składnikami majątku](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Ten obszar roboczy umożliwia użytkownikom wyświetlanie i tworzenie żądań konserwacji i zleceń pracy. Użytkownicy mogą również wyświetlać przypisane zadania dotyczące zleceń pracy w widoku kalendarza lub listy. Można również wyświetlać i wyszukiwać zasoby i lokalizacje czynności konserwacyjnych. |2019 października    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

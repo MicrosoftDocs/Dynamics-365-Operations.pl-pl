@@ -93,3 +93,6 @@ Kroki opisane w tym temacie umożliwiają skonfigurowanie usługi SQL Server Rep
 13. Kliknij przycisk **Zakończ**, aby zamknąć **Menedżera konfiguracji usługi Reporting Services**.
 
     [![Zamykanie Menedżera konfiguracji usługi Reporting Services](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

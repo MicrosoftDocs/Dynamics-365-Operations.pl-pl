@@ -99,3 +99,6 @@ Dostępna jest dodatkowa pomoc w formie przewodników zadania w aplikacji Financ
 #### <a name="videos"></a>Filmy
 
 Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Na poniższej ilustracji przedstawiono graficzny przegląd różnych projektów 
 
 ![Rysunek 6](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

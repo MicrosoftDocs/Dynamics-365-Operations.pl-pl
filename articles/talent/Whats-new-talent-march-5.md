@@ -80,3 +80,6 @@ W wielu organizacjach menedżerowie ds. wynagrodzeń i świadczeń mają dostęp
 
 ###  <a name="platform-update-24-for-finance-and-operations"></a>Aktualizacja 24 platformy dla Finance and Operations
 Aby uzyskać dodatkowe szczegółowe informacje dotyczące Platform update 24 dla Finance and Operations, zobacz [Nowe lub zmienione funkcje w Platform update 24 Finance and Operations (2019 marca)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

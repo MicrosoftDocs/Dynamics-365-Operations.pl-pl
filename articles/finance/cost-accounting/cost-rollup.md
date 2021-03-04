@@ -301,3 +301,6 @@ Wyraźne rozgraniczenie między **alokacją kosztów** a **zasadami akumulacji k
 -  [Wymiary składników kosztów](cost-elements.md)
 -  [Hierarchia wymiarów](dimension-hierarchy.md)
 -  [Obliczenie narzutu](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

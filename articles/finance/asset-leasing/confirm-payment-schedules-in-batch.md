@@ -42,3 +42,6 @@ Aby potwierdzić wiele harmonogramów płatności, należy wykonać następując
     - Aby potwierdzić wszystkie księgi, włącz parametr **Dla wszystkich ksiąg**.
 
 Informacje dotyczące nowo potwierdzonych ksiąg są wyświetlane na stronie **Potwierdzone księgi**. Po potwierdzeniu harmonogramów płatności początkowe wpisy w arkuszu rozpoznawania mogą być księgowane za wynajmy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

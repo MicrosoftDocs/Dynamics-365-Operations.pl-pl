@@ -56,3 +56,6 @@ Ponieważ Dynamics 365 Commerce działa według zasady „to co widzisz, jest ty
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

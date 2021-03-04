@@ -74,3 +74,6 @@ Po zaksięgowaniu transakcji finansowej stan rekordu tej transakcji przyjmuje wa
 -   Arkusze magazynowe z ilością ujemną, takie jak przeniesienie, zyski i straty, zliczanie, BOM i przeniesienie.
 
 Transakcje zmniejszające ilość są księgowane według dynamicznych średnich kosztów własnych. Z tego powodu proces zamknięcia magazynu jest wymagany w celu rozliczenia transakcji rozchodu z transakcjami przychodu, według modelu magazynu przypisanego dla danego towaru.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

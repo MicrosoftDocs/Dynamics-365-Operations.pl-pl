@@ -251,3 +251,6 @@ Aby zagwarantować wprowadzanie poprawnych wartości do firmy, należy wziąć p
 ## <a name="see-also"></a>Informacje dodatkowe
 
 Aby kontynuować dyskusję, zapoznaj się z oryginałem [Jak uzyskać informacje o liczbie (dynamicznych) dni ujemnych](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/) na blogu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

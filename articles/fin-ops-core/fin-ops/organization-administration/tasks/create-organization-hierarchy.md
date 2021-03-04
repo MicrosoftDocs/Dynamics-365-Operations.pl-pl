@@ -48,3 +48,6 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
     - W razie potrzeby dodaj organizację.  
     - Aby dodać organizację, kliknij przycisk **Edytuj**, a następnie opcję **Wstaw** , aby dodać organizację. Po zakończeniu wprowadzania zmian można **zapisać** wersję roboczą i/lub **opublikować** zmiany.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

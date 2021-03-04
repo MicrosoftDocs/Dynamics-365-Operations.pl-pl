@@ -162,3 +162,6 @@ Ze względów wydajnościowych i technicznych obecnie pola niestandardowe można
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Czy mogę odwoływać się do niestandardowych pól z poziomu narzędzi deweloperskich?  
 
 Pola niestandardowe mogą być zarządzane tylko za pośrednictwem interfejsu użytkownika i nie może odwoływać się do niego kod. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

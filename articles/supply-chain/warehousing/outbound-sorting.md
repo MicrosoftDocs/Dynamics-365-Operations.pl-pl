@@ -667,3 +667,6 @@ Należy wykonać posortowaną pracę pobrania z magazynu. Po zakończeniu Inwent
     Praca została zakończona.
 
 Od tego momentu obowiązują wszystkie inne procesy magazynowe.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

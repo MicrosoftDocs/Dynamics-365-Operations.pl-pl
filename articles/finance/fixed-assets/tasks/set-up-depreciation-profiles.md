@@ -40,3 +40,6 @@ Profile amortyzacji określają typ i częstotliwość amortyzacji danego środk
 7. W polu **Częstotliwość okresu** wybierz opcję.
 8. Zamknij formularz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

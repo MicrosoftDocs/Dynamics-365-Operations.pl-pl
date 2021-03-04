@@ -380,3 +380,6 @@ Dlatego, jak widzieliście, funkcjonowanie dowolnego formatu ER może być oceni
 - [Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi](er-trace-reports-compare-baseline.md)
 - [ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej](tasks/er-upgrade-format.md)
 - [ER Importowanie konfiguracji z usługi Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

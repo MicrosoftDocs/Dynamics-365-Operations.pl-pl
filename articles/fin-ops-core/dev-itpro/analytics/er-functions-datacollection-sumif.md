@@ -67,3 +67,6 @@ Aby uzyskać więcej informacji i przykładów dotyczących korzystania z tej fu
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje gromadzenia danych](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

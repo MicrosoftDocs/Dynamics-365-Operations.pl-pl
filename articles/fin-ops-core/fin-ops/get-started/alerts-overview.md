@@ -88,3 +88,6 @@ Film wideo [Sposób używania alertów do monitorowania filtrowanych danych](htt
 Film wideo [Opcje reguł alertów](https://youtu.be/cpzimwOjicM) (widoczny powyżej) jest zawarty na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

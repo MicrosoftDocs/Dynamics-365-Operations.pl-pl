@@ -104,3 +104,6 @@ Na podstawie pól wybranych do uwzględnienia w schemacie, każdy węzeł wyświ
 **Opcja dodatkowa**
 
 W programie Human Resources również można używać obszaru roboczego **Osoby** w celu wyświetlenia niektórych informacji dotyczących hierarchii.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

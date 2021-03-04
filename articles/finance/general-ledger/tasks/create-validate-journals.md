@@ -43,3 +43,6 @@ W tej procedurze zostaną utworzone i zweryfikowane arkusze i wiersze arkuszy. P
 12. Kliknij przycisk **Księguj**.
 13. Kliknij opcję **Załącznik**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

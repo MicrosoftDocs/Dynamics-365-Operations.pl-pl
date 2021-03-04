@@ -121,3 +121,6 @@ Aby skorzystać z jednej z osób sprawdzających wydatki, które zostały skonfi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

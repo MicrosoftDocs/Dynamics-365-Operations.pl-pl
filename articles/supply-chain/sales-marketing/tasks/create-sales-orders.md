@@ -68,3 +68,6 @@ Produkty sprzedawane przez organizację mogą występować w wariantach zróżni
     Strona **Sumy** pokazuje szczegóły całego zamówienia. Obejmuje to kwotę sumy częściowej, czyli sumę wszystkich kwot netto z wierszy skorygowaną o ewentualne rabaty do wierszy, łączną kwotę faktury, czyli kwota sumy częściowej skorygowaną o ewentualne rabaty na poziomie zamówienia, opłaty, podatek, ewentualne limity kredytowe przyznane odbiorcy, itd. Kwota faktury jest kwotą, która pojawi się w dokumencie faktury wystawionej odbiorcy.  
     
 3. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

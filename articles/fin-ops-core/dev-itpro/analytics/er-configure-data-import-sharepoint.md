@@ -206,3 +206,6 @@ Przejrzyj kod w klasie `BankImport_RU` modelu `Application Suite`, aby zobaczyć
 
 [Zmiany w interfejsie API struktury ER w aktualizacji Application update 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

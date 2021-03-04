@@ -121,3 +121,6 @@ Aby uzyskać więcej informacji dotyczących zarządzania zawartością witryny,
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
 
 [Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

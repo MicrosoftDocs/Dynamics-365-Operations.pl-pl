@@ -221,3 +221,6 @@ Gdy dokument stanie **Wnioskowany**, jego stan jest widoczny na karcie **Aktywne
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Operacja zapasów wychodzących w punkcie sprzedaży](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

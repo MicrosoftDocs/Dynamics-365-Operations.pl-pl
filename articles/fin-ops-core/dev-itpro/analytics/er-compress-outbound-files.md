@@ -94,3 +94,6 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
 [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Odłóż wykonanie elementów XML w formatach raportowania elektronicznego](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

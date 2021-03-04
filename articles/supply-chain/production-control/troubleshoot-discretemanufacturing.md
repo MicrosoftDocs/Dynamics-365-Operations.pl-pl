@@ -142,3 +142,6 @@ Nie możesz zgłosić błędnej ilości w zleceniu produkcyjnym, chyba że zgło
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Czy mogę prześledzić numery seryjne wyrobów gotowych w porównaniu z numerami seryjnymi towarów zużytych?
 
 Nie można prześledzić numerów seryjnych wyrobów gotowych względem numerów seryjnych materiałów, które zlecenie produkcyjne zużywa do wytworzenia tych wyrobów gotowych. Ten scenariusz nie jest obecnie obsługiwany. Obejściem jest tworzenie zleceń produkcyjnych dla ilości 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

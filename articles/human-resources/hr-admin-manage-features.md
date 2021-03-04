@@ -94,3 +94,5 @@ W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobo
 
 - [Co nowego: Human Resources](hr-admin-whats-new.md)
 - [Plan wydawniczy rozwiązań Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

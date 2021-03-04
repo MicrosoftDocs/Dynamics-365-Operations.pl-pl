@@ -210,3 +210,6 @@ Zgodnie z opisem opisanym wcześniej w tym temacie atrybuty **Etykieta** i **Opi
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Funkcje raportowania elektronicznego](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

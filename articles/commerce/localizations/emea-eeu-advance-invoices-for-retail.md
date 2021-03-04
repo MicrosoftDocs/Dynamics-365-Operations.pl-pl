@@ -88,3 +88,6 @@ Wykonaj następujące kroki, aby umożliwić drukowanie dokumentów z aplikacji 
 
 4. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 5. Wybierz zadanie **1090**, a następnie kliknij przycisk **Uruchom teraz**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ Poniższa ilustracja przedstawia przepływ pracy, tworząc plany konserwacji i s
 
 ![Rysunek 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

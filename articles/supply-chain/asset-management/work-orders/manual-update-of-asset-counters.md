@@ -64,3 +64,6 @@ Na stronie **Liczniki składników majątku** (**Zarządzanie składnikami mają
 >[!NOTE]
 >Istnieje możliwość skonfigurowania zakresu w celu zdefiniowania odchyleń dla ręcznej rejestracji licznika. Można również określić typ komunikatu, który będzie wyświetlany, jeśli rejestracje znajdują się poza zdefiniowanym zakresem. Aby uzyskać więcej informacji na temat sposobu konfigurowania liczników, zobacz [Liczniki](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

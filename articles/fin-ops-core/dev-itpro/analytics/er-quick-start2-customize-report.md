@@ -514,3 +514,6 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Pobieranie konfiguracji ER z usługi Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Dzięki tworzeniu zamówień na podstawie cząstkowego kanału informacyjnego wp
 > Elementy menu **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Oblicz zestawienia w partii** i **Retail i Commerce > Retail i Commerce — składniki IT > Księgowanie w punkcie sprzedaży > Księguj zestawienia w partii** zostały w tej nowej funkcji usunięte.
 
 Typy zestawień transakcyjnych i sprawozdań finansowych mogą też być tworzone ręcznie. Przejdź do **Retail i Commerce > Kanały > Sklepy** i kliknij pozycję **Zestawienia**. Kliknij **Nowe**, a następnie wybierz typ zestawienia, które chcesz utworzyć. Pola na stronie **Zestawienia** i akcje pod **Grupa zestawień** strony wyświetlą odpowiednie dane i akcje na podstawie wybranego typu zestawienia.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

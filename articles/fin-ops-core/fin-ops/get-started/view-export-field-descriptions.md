@@ -107,3 +107,6 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Dostosowywanie opisów pól](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

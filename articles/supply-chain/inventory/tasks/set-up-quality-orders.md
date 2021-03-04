@@ -136,3 +136,5 @@ W tej procedurze pokazano sposób włączania procesu zarządzania jakością, g
 
 > [!NOTE]
 > Funkcja *Zarządzania jakością dla procesów magazynowych* zapewnia dodatkowe opcje konfiguracji skojarzeń jakości. Dodaje nowy warunek (**Odpowiedni typ magazynu**) i nowe ustawienie (**Zasady przetwarzania jakości**). Jeśli ta funkcja jest włączona, szczegóły można uzyskać w temacie [Zarządzanie jakością w procesach magazynowych](../quality-management-for-warehouses-processes.md).
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -280,3 +280,6 @@ Jeśli trzeba ocenić ten model mapowania przy użyciu metadanych innej wersji a
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 Możesz również otworzyć instrukcje **Przygotuj metadane aplikacji, które mogą być użyte w RCS** w aplikacji lub **Uzyskaj dostęp do metadanych aplikacji przez konfigurację ER** i **Uzyskaj dostęp do metadanych aplikacji przez inne połączone aplikacje** w RCS. Te przewodniki mogą zostać pobrane ze strony [Przewodniki Elektronicznego Raportowania dla Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

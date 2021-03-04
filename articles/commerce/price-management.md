@@ -240,3 +240,6 @@ Ponadto **tylko** aparat kalkulacji cen obsługuje następujące funkcje cen:
 Cena jest jednym z najważniejszych czynników kontrolujących decyzje dotyczące kupowania wielu odbiorców, a wielu z nich przed dokonaniem zakupu porównuje ceny w różnych oddziałach. Aby zapewnić konkurencyjne ceny, detaliści uważnie obserwują swoich konkurentów i często organizują promocje. Dlatego też, aby ułatwić tym detalistom przyciąganie odbiorców, bardzo ważne jest, by w wyszukiwaniu produktów, funkcja przeglądania, listy i strona szczegółów produktów pokazywały najbardziej dokładne ceny.
 
 W nadchodzącej wersji modułu Commerce interfejs programowania aplikacji (API) **GetActivePrices** będzie zwracał ceny obejmujące rabaty proste (np. rabaty jednowierszowe niezależne od innych towarów w koszyku). W ten sposób wyświetlane ceny są zbliżone do rzeczywistej kwoty, jaką odbiorcy zapłacą za towary. Ten interfejs API będzie uwzględniał wszystkie typy rabatów prostych: oparte na przynależności, lojalnościowe, oparte na katalogach i oparte na kanałach. Ponadto interfejs API zwróci nazwy i informacje o ważności dla zastosowanych rabatów, dzięki czemu sprzedawcy detaliczni będą mogli dostarczać bardziej szczegółowy opis ceny i zachęcać do pośpiechu, jeśli ważność rabatu ma wkrótce wygasnąć.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Ta procedura skupia się na przenoszeniu planowanych zadań przetwarzania w syst
 2. Kliknij opcję **W przód**. Należy zauważyć, że zadanie zostało przeniesione o jeden wiersz w dół na liście. 
 
 3. Kliknij opcję **Wstecz**. Należy zauważyć, że zadanie zostało przeniesione o jeden wiersz w górę na liście.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

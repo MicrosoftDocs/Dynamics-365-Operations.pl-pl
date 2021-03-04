@@ -109,3 +109,6 @@ Aby wyznaczyć osoby zatwierdzające, wykonaj następujące kroki:
 1. Na stronie **Opcje** na karcie **Konta** kliknij opcję **Wyznacz osobę zatwierdzającą**.
 2. W polu **Identyfikator użytkownika osoby zatwierdzającej** wybierz identyfikator użytkownika, który ma podpisywać zmiany dokonane przez innego użytkownika.
 3. W polu **Identyfikator użytkownika osoby potrzebującej podpisu** wybierz identyfikator użytkownika, którego zmiany mają być podpisywane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

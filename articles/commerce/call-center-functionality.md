@@ -69,3 +69,6 @@ Ta strona zawiera łącza do odnośnej dokumentacji związanej z instalacją, ko
 ## <a name="configure-continuity-programs"></a>Konfigurowanie programów sprzedaży ciągłej
 
 [Konfigurowanie programów sprzedaży ciągłej dla biur obsługi](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

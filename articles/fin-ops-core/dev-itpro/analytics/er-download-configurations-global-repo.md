@@ -90,3 +90,6 @@ W tym temacie opisano sposób pobierania [konfiguracji raportowania elektroniczn
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

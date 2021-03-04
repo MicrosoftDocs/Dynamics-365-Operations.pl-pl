@@ -245,3 +245,6 @@ W jednostkach obciążenia skalą, tymi dwoma zadaniami wsadowymi można zarząd
 
 - Przetwarzanie rekordów tabeli grupy czynności
 - Przetwarzanie zdarzeń przeniesienia kontroli wykonania grupy czynności
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

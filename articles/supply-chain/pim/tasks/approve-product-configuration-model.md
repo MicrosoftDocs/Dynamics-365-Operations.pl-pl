@@ -49,3 +49,6 @@ Wykonanie tej procedury wymaga dostępności co najmniej jednego modelu konfigur
     * Aktywuj wersję modelu produktu. W danym momencie może istnieć tylko jeden aktywny produkt o danym modelu.  
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

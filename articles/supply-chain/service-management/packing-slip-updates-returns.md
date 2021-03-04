@@ -49,3 +49,6 @@ Podczas aktualizacji dokumentu dostawy dla towaru zwróconego na podstawie umowy
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

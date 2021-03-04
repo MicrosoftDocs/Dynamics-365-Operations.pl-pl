@@ -42,3 +42,6 @@ Na przykład zamówienie sprzedaży zawiera dwa elementy: jeden do dostawy i jed
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Stan wydania dotyczy tylko wierszy zamówień, w których towary są włączone dla zarządzania magazynem. W związku z tym stan zwolnienia pozostanie *Częściowo zwolniony* w tym scenariuszu. Firma Microsoft oceniła ten błąd i ustaliła, że jest to ograniczenie funkcji. Rozszerzenie może zostać dodane jako część procesu dokumentu dostawy i fakturowania w celu zaktualizowania stanu wydania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

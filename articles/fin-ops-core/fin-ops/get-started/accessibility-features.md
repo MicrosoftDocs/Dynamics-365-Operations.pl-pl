@@ -97,3 +97,6 @@ Na smartfonach i innych małych ekranach kontrolki i układ formularza będą do
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Wytyczne dotyczące podejścia z uwzględnieniem ułatwiania dostępu w swoich konfiguracjach niestandardowych dla programistów i klientów
 
 Aby uzyskać więcej informacji na temat najlepszych praktyk firmy Microsoft w zakresie ułatwiania dostępu, zobacz [Ułatwienia dostępu w formularzach, produktach i kontrolkach](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

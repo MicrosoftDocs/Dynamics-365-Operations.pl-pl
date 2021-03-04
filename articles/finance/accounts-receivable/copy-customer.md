@@ -64,3 +64,6 @@ Odbiorców możesz także kopiować za pomocą funkcji wyszukiwania numeru ident
 
 1. Zostanie wyświetlona opcja **Kopiuj odbiorcę**. Domyślnie ta opcja ma wartość **Nie**. Aby skopiować odbiorcę do bieżącej firmy, ustaw dla tej opcji wartość **Tak**. 
 2. Wybierz pozycję **Wybierz**. Zostanie otworzony nowy odbiorca.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

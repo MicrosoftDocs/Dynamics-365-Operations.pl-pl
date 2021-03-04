@@ -173,3 +173,6 @@ Aby skonfigurować moduł kontenera na stronie, wykonaj następujące kroki.
 
 [Praca z grupami publikowania](publish-groups.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

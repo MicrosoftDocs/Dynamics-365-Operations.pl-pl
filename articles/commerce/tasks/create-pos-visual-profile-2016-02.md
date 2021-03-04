@@ -48,3 +48,6 @@ Ta procedura prowadzi przez proces tworzenia profilu graficznego nowego punktu s
 17. Na liście kliknij łącze w wybranym wierszu.
 18. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

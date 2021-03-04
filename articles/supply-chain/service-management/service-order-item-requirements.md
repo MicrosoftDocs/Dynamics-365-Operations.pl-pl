@@ -70,3 +70,6 @@ Jeśli dla zlecenia serwisowego jest utworzone zapotrzebowanie na towary, to tak
 
 [Zapotrzebowanie na towary (formularz)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

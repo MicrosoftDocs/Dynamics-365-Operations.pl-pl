@@ -1373,3 +1373,6 @@ Aplikacja na tablety z systemem Windows 8 zawierała funkcje wprowadzania i zatw
 |     <strong>Powiązane obszary produktów</strong>     |                                              Księga główna                                              |
 |             <strong>Stan</strong>             |                                      Usunięto w systemie Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

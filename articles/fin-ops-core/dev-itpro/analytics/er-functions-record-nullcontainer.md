@@ -60,3 +60,6 @@ Funkcja `NULLCONTAINER (SPLIT ("abc", 1))` zwraca nowy pusty rekord, który ma t
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje zapisu](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -504,3 +504,6 @@ Należy określić skojarzenie jakości dla każdego odchylenia w procesie bizne
 [Zarządzanie brakiem zgodności](enable-nonconformance-management.md)
 
 [Zarządzanie jakością dla procesów magazynowych](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

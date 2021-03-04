@@ -134,3 +134,6 @@ Aby korzystać z szablonów BOM, należy skonfigurować dwie numeracje. Jedna z 
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

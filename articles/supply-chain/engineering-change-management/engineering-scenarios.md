@@ -411,3 +411,6 @@ Produkt może zostać teraz zwolniony do firmy *USMF*, a następnie wysłany do 
 1. Wybierz każdą firmę, do której chcesz zwolnić produkty.
 1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Wydania** i wrócić do strony zlecenia zmiany.
 1. W okienku akcji na karcie **Zlecenie zmiany** w grupie **Wydania produktów** wybierz opcję **Przetwórz**, aby zwolnić zmienione produkty do wybranych firm. Możesz również wybrać opcję **Zwolnij strukturę produktu**, aby rozpocząć proces zwalniania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla 
 29. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
 30. Kliknij przycisk Zastosuj do siatki.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

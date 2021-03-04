@@ -95,3 +95,6 @@ Obliczanie BOM dla konkretnego zamówienia jest odmianą obliczania BOM dla wytw
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

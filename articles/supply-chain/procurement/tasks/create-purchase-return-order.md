@@ -68,3 +68,6 @@ W tej procedurze pokazano, jak utworzyć zamówienie zwrotu zakupu przy użyciu 
 4. W polu **Dokument przyjęcia produktów** wpisz wartość. To pole służy do wprowadzania odwołania, które będzie używane jako załącznik dla arkusza dokumentu przyjęcia produktów.  
 5. Kliknij przycisk **OK**. Towary zostały teraz zarejestrowane jako wysłane w zamówieniu zwrotu zakupu oraz utworzono arkusz dokumentu przyjęcia produktów. Można użyć akcji Dokument przyjęcia produktów, aby przejrzeć arkusze utworzone z zamówieniem zakupu i sprawdzić, co zostało przyjęte lub zwrócone i kiedy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

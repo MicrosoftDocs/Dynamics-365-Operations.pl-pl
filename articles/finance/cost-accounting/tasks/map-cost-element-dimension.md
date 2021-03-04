@@ -44,3 +44,6 @@ Kontroler kosztów może za pomocą tej procedury zamapować wymiar składników
     * W tym przykładzie wybierz element członkowski wymiaru 6001004 Telefon.  
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

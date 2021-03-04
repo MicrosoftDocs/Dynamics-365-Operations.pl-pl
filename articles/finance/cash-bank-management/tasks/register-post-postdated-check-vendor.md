@@ -56,3 +56,6 @@ Rolą w tym przewodniku po zadaniach jest Skarbnik. W zadaniu wykorzystano firm�
 16. Zamknij stronę.
 17. Kliknij kartę Czeki postdatowane.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

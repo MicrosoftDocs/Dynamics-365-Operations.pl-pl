@@ -151,3 +151,6 @@ Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu 
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 [Zasoby platformy mobilnej](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

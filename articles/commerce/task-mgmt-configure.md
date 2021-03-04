@@ -111,3 +111,6 @@ Poniższa ilustracja przedstawia przykład kafelka **Zadania** na stronie głów
 [Przypisywanie list zadań do sklepów lub pracowników etatowych](task-mgmt-assign-lists.md)
 
 [Zarządzanie zadaniami w punkcie sprzedaży](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Aby używać zintegrowanej usługi [Microsoft Accessibility Insights](https://ac
 [Wzbogacanie strony produktu](enrich-product-page.md)
 
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

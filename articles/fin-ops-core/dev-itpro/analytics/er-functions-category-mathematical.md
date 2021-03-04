@@ -47,3 +47,6 @@ Funkcje matematyczne w module raportowania elektronicznego (ER) mogą służyć 
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Język formuł raportowania elektronicznego](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

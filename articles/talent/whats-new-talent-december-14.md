@@ -151,3 +151,6 @@ Zaktualizowane mapowanie powinno wyglądać jak na poniższych ilustracjach.
 ![Zadanie Pracownicy na pracownika](./media/WorkerMapping.png)
 
 ![Przekształcenie pola płci](./media/WorkerTransform.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

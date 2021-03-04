@@ -56,3 +56,6 @@ Niektóre typy działań produkcyjnych mogą mieć zastosowanie do szacowania i 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

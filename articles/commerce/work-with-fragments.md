@@ -136,3 +136,6 @@ Fragment można również edytować, zaznaczając go na stronie, w szablonie lub
 [Praca z układami predefiniowanymi](work-with-layouts.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

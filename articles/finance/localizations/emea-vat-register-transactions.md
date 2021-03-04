@@ -34,3 +34,6 @@ Firmy mające adres podstawowy w Estonii, na Litwie, w Czechach, na Węgrzech, �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

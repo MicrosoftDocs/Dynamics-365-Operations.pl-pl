@@ -53,3 +53,6 @@ Te opcji powinny być używane tylko, jeśli anulowanie zadania planowania głó
 4. W obszarze **Zadania wsadowe** wybierz zadania do zakończenia.
 5. Kliknij pozycję **Zmień stan**, wybierz pozycję **Anuluj** i kliknij przycisk **OK**.
 6. Na skróconej karcie **Zadania wsadowe** kliknij pozycję **Przerwij**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

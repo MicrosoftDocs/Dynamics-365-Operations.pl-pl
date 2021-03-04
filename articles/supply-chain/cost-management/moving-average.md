@@ -155,3 +155,6 @@ W tym przykładzie ruchomej średniej raport wartości zapasów jest drukowany w
 
 > [!NOTE]
 > Nie można uzgodnić księgi głównej z magazynem za pomocą opcji **Sortowanie czasu transakcji**. Raport musi być wydrukowany za pomocą opcji **Data księgowania**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

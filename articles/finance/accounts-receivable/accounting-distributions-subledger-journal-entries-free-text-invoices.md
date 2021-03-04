@@ -136,3 +136,6 @@ Przed zaksięgowaniem faktury niezależnej, można wyświetlić pełny wpis ksi�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

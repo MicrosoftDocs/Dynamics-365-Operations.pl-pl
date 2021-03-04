@@ -676,3 +676,6 @@ Pracownicy mogą podać informacje z paszportów. Te informacje mają typ identy
 
 Pracownicy mogą zadeklarować wiele numerów identyfikacyjnych typu **Paszport**. Jednak tylko obecnie aktywny wpis paszportu jest integrowany z usługą Dayforce. Jeśli wszystkie wpisy paszportów wygasły, z systemem Dayforce zostanie zintegrowany ostatnio wystawiony paszport.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

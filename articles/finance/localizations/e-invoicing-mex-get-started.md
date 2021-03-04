@@ -299,3 +299,6 @@ Włączenie funkcji MX-00010 i MX-00016 (faktura CFDI i anulowanie CFDI) może w
 - [Omówienie dodatku Faktur elektronicznych](e-invoicing-service-overview.md)
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md)
 - [Skonfiguruj dodatek Faktury elektroniczne](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

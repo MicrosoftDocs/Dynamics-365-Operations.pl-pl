@@ -114,3 +114,6 @@ Poniższe tematy uwzględniają różne scenariusze dotyczące rozpoznawania prz
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 2](rev-rec-reallocation-scenario-2.md) — zostają wprowadzone dwa zamówienia sprzedaży, po czym odbiorca dodaje pozycję do umowy po zafakturowaniu pierwszego zamówienia sprzedaży.
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 3](rev-rec-reallocation-scenario-3.md) — do istniejącego, zafakturowanego zamówienia sprzedaży zostaje dodany nowy wiersz.
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 4](rev-rec-reallocation-scenario-4.md) — z istniejącego, częściowo zafakturowanego zamówienia sprzedaży zostaje usunięty wiersz.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Gdy kandydat prześle zgłoszenie na jedną lub więcej funkcji, może wybrać o
 ## <a name="internal-jobs"></a>Funkcje wewnętrzne
 
 Obecnie funkcje oznaczone jako wewnętrzne i opublikowane w witrynie rozwoju kariery w aplikacji Attract nie są wyświetlane w witrynie rozwoju kariery. Są one dostępne wyłącznie za pośrednictwem bezpośredniego adresu URL **Zgłoś się**, który można skopiować z aplikacji Attract.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

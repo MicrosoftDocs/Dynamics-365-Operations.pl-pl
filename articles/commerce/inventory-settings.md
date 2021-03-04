@@ -93,3 +93,6 @@ Poniższy obraz pokazuje przykład wózka z komunikatem o stanie magazynowym (�
 [Moduł wyboru sklepu](store-selector.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

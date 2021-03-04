@@ -111,3 +111,6 @@ Następujące składniki są istotne dla strony wyników wyszukiwania
 
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

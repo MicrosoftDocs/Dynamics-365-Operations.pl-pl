@@ -47,3 +47,6 @@ Każde wystąpienie może zostać zmodyfikowane bez wpływu na inne wystąpienia
 ## <a name="developer-documentation"></a>Dokumentacja dewelopera
 
 Struktura automatyzacji procesów umożliwia programistom rozszerzenie struktury automatyzacji procesów. W dokumentacji [Struktura automatyzacji procesów](../process-automation/process-automation-framework.md) znajdują się informacje dotyczące sposobu tworzenia niestandardowych procesów, które trzeba uruchomić przez serwer przetwarzania wsadowego zaplanowanego za pomocą Kreatora automatyzacji procesów i automatycznie wyświetlanych w widoku Kalendarz.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

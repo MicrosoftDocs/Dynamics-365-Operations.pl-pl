@@ -53,3 +53,6 @@ Należy także skonfigurować czas realizacji dostawy między magazynami na stro
 2. W polu **Punkt przyjęcia** wybierz **magazyn**.
 3. Wybierz **Magazyn wysyłki**, **Magazyn przyjęcia** i **Dni transportu**. 
 4. (Opcjonalnie) Można również ustawić czas transportu, w zależności od metody dostawy, w obszarze **Dni transportu na metodę dostawy**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

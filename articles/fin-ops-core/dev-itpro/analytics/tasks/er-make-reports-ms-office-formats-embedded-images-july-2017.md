@@ -90,3 +90,6 @@ Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę
  30. W polu Zezwalaj na tworzenie przelewu testowego dla nieaktywnych kont bankowych zaznacz opcję Tak.  
  31. Kliknij przycisk Zapisz.  
  32. Zamknij stronę.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

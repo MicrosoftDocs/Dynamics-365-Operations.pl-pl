@@ -66,3 +66,6 @@ Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Dla każdego p
     * Stan Rozpoczęty oznacza, że projekt jest gotowy do przyjmowania wniosków.  
 33. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

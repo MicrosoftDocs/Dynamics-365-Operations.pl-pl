@@ -80,3 +80,6 @@ Dodano informacje metadanych dotyczące tabeli rekordów Intrastat.
 3.    Kliknij przycisk **OK**. 
     
 Utworzona konfiguracja metadanych ER została zapisana jako plik XML, który można importować do RCS i użyć jako źródło informacji o metadanych dla domeny biznesowej w handlu zagranicznym. Na podstawie tych informacji można określić mapowanie między metadanymi aplikacji a modelem danych ER.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

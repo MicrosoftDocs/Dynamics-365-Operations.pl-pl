@@ -142,3 +142,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 4.  Zaznacz odbiorcę.
 5.  Wybierz opcję **Informacje kontaktowe** lub **Zamówienia sprzedaży**. Jeśli zaznaczono opcję **Zamówienia sprzedaży**, zostanie wyświetlona lista zamówień sprzedaży dla wybranego odbiorcy.
 6.  Wybierz opcję **Zamówienie sprzedaży**. Teraz można obejrzeć informacje o wierszach zamówienia sprzedaży, informacje o wysyłkach, informacje kontaktowe odbiorcy i informacje kontaktowe osoby przyjmującej zamówienie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

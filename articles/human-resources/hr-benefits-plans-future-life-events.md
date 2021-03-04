@@ -46,3 +46,6 @@ W module Dynamics 365 Human Resources można zaplanować przyszłe zmiany sytuac
    | Wiersz | Numer wiersza przyszłej zmiany sytuacji życiowej. |
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

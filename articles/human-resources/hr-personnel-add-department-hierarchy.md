@@ -54,3 +54,6 @@ Aby dodać dział do hierarchii działu, wykonaj następujące kroki:
 
 ## <a name="steps-for-creating-a-department"></a>Etapy tworzenia działu
 Zobacz artykuł [Definiowanie nowych działów](../fin-and-ops/hr/tasks/define-new-departments.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego działu. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

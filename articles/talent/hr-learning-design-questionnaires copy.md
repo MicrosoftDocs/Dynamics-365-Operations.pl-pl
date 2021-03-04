@@ -246,3 +246,6 @@ Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz 
 
 [Wyświetlanie i ocenianie wyników kwestionariuszy](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

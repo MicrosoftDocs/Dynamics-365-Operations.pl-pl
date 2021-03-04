@@ -99,3 +99,6 @@ Aby zgłosić awarię środowiska produkcji, należy wykonać proces opisany w t
  ## <a name="see-also"></a>Informacje dodatkowe
 
  [Przygotowywanie do rozpoczęcia eksploatacji](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

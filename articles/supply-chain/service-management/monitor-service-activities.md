@@ -60,3 +60,6 @@ Kliknij kolejno opcje **Zarządzanie serwisem** \> **Okresowe** \> **Pulpit wysy
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

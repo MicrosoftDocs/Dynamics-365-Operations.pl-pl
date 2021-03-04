@@ -60,3 +60,6 @@ Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazw
 Czasami funkcja jest domyślnie włączona i nie można jej wyłączyć (na przykład w obszarze roboczym **zarządzanie funkcjami**).
  
 Gdy funkcja jest ogólnie dostępna, może być włączana lub wyłączana w środowiskach produkcyjnych. Przestrzeń robocza **Zarządzanie funkcjami** wskazuje, kiedy funkcja podglądu stanie się obowiązkowa. Ta data zazwyczaj jest równa 1 października lub 1 kwietnia w celu dostosowania ich do półrocznych planów zwolnień. Nie można wyłączać obowiązkowych funkcji. Dopóki ta funkcja nie stanie się obowiązkowa, można ją włączać i wyłączać we wszystkich środowiskach.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

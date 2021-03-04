@@ -48,3 +48,6 @@ Ta procedura prowadzi przez proces konfigurowania projektu zatrudnienia grupoweg
     * Opcjonalnie wybierz dział dla nowych stanowisk.  
 13. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

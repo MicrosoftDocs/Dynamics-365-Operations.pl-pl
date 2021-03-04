@@ -37,3 +37,6 @@ Ta procedura zawiera instruktaż pobierania wstępnie zdefiniowanej stacji sprz�
 5. Na liście znajdź i zaznacz odpowiedni rekord.
 6. Kliknij przycisk Pobierz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

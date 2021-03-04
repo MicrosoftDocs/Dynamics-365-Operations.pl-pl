@@ -62,3 +62,6 @@ Jeśli jest używane księgowanie cząstkowych zestawień źródeł danych, dzi�
 Szczegóły związane z uzgodnieniem finansowym dla zmiany są zsynchronizowane z modułem Commerce Headquarters za pomocą zadania ściągania.
 
 Sprawozdania finansowe sieci sprzedaży w module Commerce Headquarters nie obliczają sum, aby móc pokazać szczegóły w wierszach wyciągu. Zamiast tego używane są ostateczne kwoty w kliencie punktu sprzedaży do tworzenia i księgowania sprawozdań finansowych w module detalicznym.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

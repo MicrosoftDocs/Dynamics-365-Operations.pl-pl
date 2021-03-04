@@ -62,3 +62,6 @@ Pole **Alokacja kosztów produktu ubocznego** na stronie **Produkty towarzysząc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

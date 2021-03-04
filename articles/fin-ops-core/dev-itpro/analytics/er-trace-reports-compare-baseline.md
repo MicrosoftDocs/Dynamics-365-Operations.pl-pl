@@ -243,3 +243,6 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Konfigurowanie struktury modułu Raportowanie elektroniczne (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

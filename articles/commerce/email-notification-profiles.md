@@ -96,3 +96,6 @@ Aby można było wysyłać wiadomości, należy skonfigurować usługę poczty w
 [Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
 
 [Omówienie organizacji i hierarchii organizacyjnych](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

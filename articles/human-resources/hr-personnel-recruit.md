@@ -227,3 +227,5 @@ Jeśli zajdzie potrzeba, można odrzucić kandydata po jego zatrudnieniu. Na prz
 [Konfigurowanie jednostek wirtualnych usługi Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organizowanie pracowników](hr-personnel-departments-jobs-positions.md)<br>
 [Konfigurowanie składników funkcji](hr-personnel-jobs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

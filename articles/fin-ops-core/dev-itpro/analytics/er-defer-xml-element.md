@@ -243,3 +243,6 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 - [Konfigurowanie formatu do inwentaryzacji i sumowania](./tasks/er-format-counting-summing-1.md)
 - [Śledzenie wykonywania formatu ER w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 - [Odłóż wykonanie elementów sekwencji w formatach ER](er-defer-sequence-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który prze
 15. Rozwiń lub zwiń sekcję Informacje kontaktowe.
 16. Rozwiń lub zwiń sekcję Informacje osobiste.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

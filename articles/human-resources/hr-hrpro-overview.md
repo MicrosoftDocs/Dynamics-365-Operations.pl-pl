@@ -128,3 +128,6 @@ Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcj
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

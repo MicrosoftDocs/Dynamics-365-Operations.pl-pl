@@ -300,3 +300,6 @@ Dalsze informacje o dostawcach konfiguracji ER znajdują się w temacie [Tworzen
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 - [Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ W przypadku używania źródeł zewnętrznych, takich jak DMF do wyświetlania l
 
 [Dane daty i godziny](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Preferowana strefa czasowa użytkownika](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

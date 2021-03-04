@@ -47,3 +47,6 @@ Po wybraniu nowej metody dostawy zostanie wyświetlona strona transakcji. Aby pr
 [Tworzenie zamówień w biurach obsługi](tasks/create-call-center-orders.md)
 
 [Dostosowywanie wiadomości e-mail dotyczących transakcji według metod dostawy](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

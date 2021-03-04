@@ -41,3 +41,6 @@ Jeśli występuje konflikt z planem kont, można zmienić separator planu kont i
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Jak ustalić, czy środowisko wymaga aktualizacji separatorów 
 Jeśli separatory w uaktualnionym środowisku powodują konflikt, może występować niestabilność podczas wprowadzania wartości w formancie wpisu podzielonego na segmenty lub formacie wprowadzania wymiarów. Oznacza to, że trzeba będzie zawsze używać wyszukiwań lub wysuwanych menu podczas wprowadzania kombinacji wymiarów i kont.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Organizacje przyznają pulę czasu wolnego/urlopów zależnie od tego, kiedy pra
 ## <a name="known-issue"></a>Znany problem
 
 -   **Problem:** podczas dodawania nowego załącznika do pracownika przyciski **Nowy** i **Edytuj** są wyszarzone. **Obejście:** przed otwarciem strony załącznika upewnij się, że pola informacji na stronie **Pracownik** są zamknięte. Jeśli pola informacji są zamknięte podczas wczytywania strony **Pracownik**, przyciski w sekcji **Załączniki** będą włączone. (Ten problem zostanie rozwiązany w następnej aktualizacji platformy).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ W pełni wysłane zamówienia przeniesienia są przenoszone na kartę **Zakończ
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Operacja zapasów przychodzących w punkcie sprzedaży](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

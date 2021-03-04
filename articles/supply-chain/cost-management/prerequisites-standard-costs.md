@@ -80,3 +80,6 @@ Odbiorcy, którzy chcą przestawić istniejące towary na model zapasów z koszt
 
 - [Jak ustawić standardowe koszty w materiałów bezpośrednich w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Koszty standardowe bezpośredniej robocizny w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

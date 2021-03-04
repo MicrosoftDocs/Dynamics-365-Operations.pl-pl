@@ -114,3 +114,6 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 [Stosowanie filtrów do planu](plan-filters.md)
 
 [Anuluj planowanie pracy](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

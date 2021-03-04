@@ -87,3 +87,6 @@ Poniższy przykład ilustruje sposób modyfikowania strony głównej przez zmian
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

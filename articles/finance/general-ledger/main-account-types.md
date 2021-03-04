@@ -41,3 +41,6 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie kategorii konta główne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

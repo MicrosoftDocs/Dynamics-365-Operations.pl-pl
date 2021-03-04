@@ -55,3 +55,6 @@ Funkcja `CURCredRef ("VEND-200002")` zwraca wartość **"2200002"**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inne funkcje (specyficzne dla domeny biznesowej)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

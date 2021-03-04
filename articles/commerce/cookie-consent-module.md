@@ -62,3 +62,6 @@ Aby uzyskać więcej informacji o fragmentach i modułach nagłówka, skorzystaj
 [Moduł nagłówka](author-header-module.md) 
 
 [Zgodność z plikami cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

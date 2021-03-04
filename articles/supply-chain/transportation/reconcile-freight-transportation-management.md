@@ -47,3 +47,6 @@ Aby użyć automatycznego uzgadniania, należy określić harmonogram uzgadniani
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

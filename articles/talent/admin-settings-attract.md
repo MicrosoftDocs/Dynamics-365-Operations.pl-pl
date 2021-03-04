@@ -69,3 +69,6 @@ Można również skonfigurować opcje związane ze środowiskiem obsługi kandyd
 Można także ustawić i wymuszać daty ważności ofert. Po ustawieniu opcji **Wymagaj daty ważności dla wszystkich ofert** na **Tak** oferty wygasają po określonej przez Ciebie liczbie godzin lub dni.
 
 Aby uzyskać więcej informacji o zarządzaniu ofertami, zobacz [Konfigurowanie zarządzania ofertami](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

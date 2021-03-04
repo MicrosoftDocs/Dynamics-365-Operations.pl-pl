@@ -67,3 +67,6 @@ Możesz teraz przypisać strategię kompilowania ładunku do szablonu kompilowan
 1. Przejrzyj proponowane ładunki i proponowane wiersze ładunku.
 1. W okienku akcji wybierz opcję **Utwórz ładunki**, aby utworzyć ładunki oparte na wierszach dokumentu źródłowego na skróconej karcie **Wiersze proponowanego ładunku**.
 1. Zamknij stronę **Pulpit kompilowania ładunku**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

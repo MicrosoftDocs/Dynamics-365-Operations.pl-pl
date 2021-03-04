@@ -70,3 +70,6 @@ Na skróconej karcie **Docelowe konto księgowe** będzie to samo konto wydatku,
 > Opcjonalnie można skorzystać z przycisku **Kopiuj**, aby zduplikować wybraną alokację.
 
 Po utworzeniu warunku alokacji dla konta głównego system automatycznie zaksięguje nowy załącznik w przypadku zaksięgowania załącznika, który odpowiada źródłowym wymiarom finansowym w warunkach alokacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

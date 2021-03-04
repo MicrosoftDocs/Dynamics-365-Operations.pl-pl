@@ -97,3 +97,6 @@ Niektóre zmiany trzeba przetworzyć, aby stały się aktywne.
 - [Przetwórz uprawnienia do świadczeń z powodu zmiany sytuacji życiowej](hr-benefits-process-life-event-eligibility.md)
 - [Przetwórz zmiany stawki](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

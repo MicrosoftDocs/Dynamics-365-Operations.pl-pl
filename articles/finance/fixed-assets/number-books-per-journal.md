@@ -47,3 +47,6 @@ Zadanie przetwarzania wsadowego wyklucza zamknięte księgi. Na przykład w zada
 Limit liczby ksiąg jest stosowany, jeśli w tym samym arkuszu nie istnieją zduplikowane identyfikatory składników majątku. Jeśli jednak identyfikator składnika majątku jest taki sam, jak identyfikator księgi, liczba ksiąg na arkusz może zostać przekroczona w celu utrzymania identyfikatora składnika majątku w tym samym arkuszu.
 
 Na przykład istnieje 5001 identyfikatory środków trwałych, z każdym identyfikatorem środka trwałego są powiązane trzy księgi, a każda księga składników majątku jest księgowana w tej samej warstwie księgowania. Wykonujesz amortyzacja przez trzy kolejne miesiące bez sumowania. Arkusz amortyzacji zostanie utworzony za pomocą zadania wsadowego, a system utworzy siedem arkuszy, które mają 667 identyfikatorów składników majątku, i trzy księgi dla każdego identyfikatora środka trwałego. Ogółem powstanie 2001 ksiąg. W związku z tym w ciągu trzech miesięcy na potrzeby zachowania tych samych identyfikatorów składników majątku w tym samym arkuszu powstaną 6003 wiersze arkuszy. System utworzy także jeden arkusz, który ma 332 identyfikatory środków trwałych, i trzy księgi dla każdego identyfikatora środka trwałego. W ciągu trzech miesięcy powstanie 2988 wierszy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

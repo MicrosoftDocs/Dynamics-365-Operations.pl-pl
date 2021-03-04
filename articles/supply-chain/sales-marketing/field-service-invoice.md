@@ -108,3 +108,6 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Faktury za umowy (rozwiązanie Field Service do Supply Chain Management): Wiersze faktur
 
 [![Mapowanie szablonu w integracji danych](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

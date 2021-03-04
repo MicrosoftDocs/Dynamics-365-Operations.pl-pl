@@ -72,3 +72,6 @@ W tym artykule opisano sposób wyświetlania wyników procesu.
    | **Stan wyniku** | Ta opcja będzie Uprawniona lub Niekwalifikująca się. Stan wyniku jest nieuprawniony, jeśli pracownik nie spełnił kryteriów reguły uprawnień, jeśli pracownik nie dostarczył wymaganych informacji, takich jak częstotliwość płac lub stałe wynagrodzenie, lub jeśli w planie świadczeń brakuje informacji, co uniemożliwia zarejestrowanie się pracowników. |
    | **Komunikat wyniku** | Wskazuje, dlaczego pracownik nie kwalifikuje się do planu świadczeń lub jeśli została przekazana reguła uprawnienia. |
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

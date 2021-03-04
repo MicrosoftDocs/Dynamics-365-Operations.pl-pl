@@ -81,3 +81,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 25. Kliknij przycisk OK.
     * Przeanalizuj utworzony plik płatności w formacie XML. Porównaj go z zaprojektowanym układem dokumentu i zdefiniowanymi atrybutami transakcji płatności.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

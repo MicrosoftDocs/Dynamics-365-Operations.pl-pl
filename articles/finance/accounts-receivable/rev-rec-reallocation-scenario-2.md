@@ -90,3 +90,6 @@ Następuje zaksięgowanie drugiego zamówienia sprzedaży. Łączna kwota faktur
 [![Strona transakcji na załączniku z księgowanym wpisem księgowania](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Jako że suma przychodu i sprzedaży jest większa niż 1170,44$, różnica jest księgowana dla kwoty -130,17$. Kwota ta powoduje rozliczenie salda z konta Częściowe rozliczenie przychodu faktury. To saldo jest księgowane w nowym wpisie księgowania po zmianie alokacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

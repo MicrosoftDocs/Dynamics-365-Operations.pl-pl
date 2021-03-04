@@ -84,3 +84,6 @@ Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,5 @@ Menedżerowie mogą zarządzać wnioskami urlopowymi w obszarze roboczym **Samoo
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Tworzenie planu urlopów i nieobecności](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

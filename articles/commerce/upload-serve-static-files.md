@@ -107,3 +107,6 @@ Aby zmienić ścieżkę adresu URL, wykonaj następujące kroki.
 [Przycinanie obrazów](dam-crop-images.md)
 
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

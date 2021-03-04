@@ -48,3 +48,6 @@ Aby uzyskać więcej informacji, zobacz [Księgowanie z użyciem ksiąg pochodny
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

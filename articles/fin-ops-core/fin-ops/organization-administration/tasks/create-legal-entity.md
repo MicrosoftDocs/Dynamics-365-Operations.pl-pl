@@ -45,3 +45,6 @@ Firma to organizacja, która jest identyfikowana przez rejestrację urzędową. 
 15. Rozwiń sekcję **Rejestracja podatkowa**. W sekcji **Rejestracja podatkowa** wprowadź numery rejestrowe używane w zeznaniach dla urzędów skarbowych.
 16. Rozwiń sekcję **Podatek 1099**. W sekcji **Podatek 1099** wprowadź dane formularza 1099 dla firmy.  
 17. Kliknij przycisk **Zapisz**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

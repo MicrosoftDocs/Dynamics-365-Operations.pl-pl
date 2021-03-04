@@ -67,3 +67,6 @@ Ten temat pokazuje jak przeprowadzić zarządzanie niezgodnościami na podstawie
 2. Wybierz **Zamknij tę niezgodność**.
 3. Wybierz opcję **Tak**.
 4. Zamknij strony.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

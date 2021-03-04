@@ -71,3 +71,6 @@ Funkcja Anuluj uzgodnienie wyciągu bankowego umożliwia anulowanie uzgodnienia 
 Rozliczenia wyciągu bankowego można anulować tylko w porządku chronologicznym, w którym zostały wprowadzone. Gdy uzgodnienie wyciągu bankowego zostanie anulowane, nowe transakcje i korekty zostaną wycofane, a wszystkie inne transakcje zostaną oznaczone jako nieuzgodnione.
  
 Aby anulować uzgadnianie wyciągu bankowego, wybierz wyciąg bankowy i wybierz **Wyciąg bankowy > Anuluj uzgodnienie konta bankowego**. Na stronie **Anulowanie uzgodnienia konta bankowego** podaj **kod przyczyny**, **komentarz przyczyny** oraz **datę anulowania**. Wybierz **OK**, aby rozpocząć anulowanie. Uwaga: data anulowania wyciągu bankowego musi być w dniu lub po dacie wyciągu bankowego. Po anulowaniu rozliczenia wyciągu bankowego pole **Data anulowania** dla wyciągu bankowego zostanie zaktualizowane o podany **termin anulowania**. Wybierz przycisk **Transakcje**, aby wyświetlić transakcje, dla których uzgodnienie zostało anulowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

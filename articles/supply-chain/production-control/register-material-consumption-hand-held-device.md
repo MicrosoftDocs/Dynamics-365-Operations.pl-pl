@@ -92,3 +92,6 @@ Po zakończeniu rejestrowania kliknij przycisk **Gotowe**, aby zaksięgować ark
 -   Materiał może być zużywany ponad miarę. Na przykład jeśli szacuje się, że materiał zostanie zużyty w ilości 100 kg, można go zużyć ponad miarę, na przykład w ilości 105 kg.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

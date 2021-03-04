@@ -58,3 +58,6 @@ Podczas zmieniania zadania na stanowisku **rodzina zadań** będzie teraz domyś
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Poprawa wydajności podczas renderowania obszarów roboczych
 Karty analityczne w obszarze roboczym będą teraz wczytywane tylko w przypadku otwierania tych stron. Podczas początkowego renderowania strony w lewym górnym rogu będzie widoczny wskaźnik.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

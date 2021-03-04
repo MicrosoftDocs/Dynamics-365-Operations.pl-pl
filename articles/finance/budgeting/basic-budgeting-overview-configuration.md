@@ -88,3 +88,6 @@ Firma, która korzysta z funkcji planowania budżetu może tworzyć i używać *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Poniższa procedura umożliwia dodanie importowanej jednostki wyciągu bankowego
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -130,3 +130,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli administratora systemu
 3. Kliknij przycisk **Przeglądaj** i wybierz plik **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Kliknij przycisk **OK**.
 5. Przejrzyj wygenerowany plik. Zauważmy, że ten sam plik został zaimportowany, ponieważ projekt formatu uwzględnia teraz atrybut „id” dla elementu „dokument” jako opcjonalny.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

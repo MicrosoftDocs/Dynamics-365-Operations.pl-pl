@@ -62,3 +62,6 @@ Należy pamiętać o wykonaniu zamknięcia zapasów w dacie %3 (31-01-2019), odp
 ## <a name="inventory-aging-report-discrepancies"></a>Rozbieżności w raportach wiekowania zapasów
 
 **Raport wiekowania zapasów** zawiera różne wartości wyświetlane w różnych wymiarach przechowywania (np. oddział lub magazyn). Aby uzyskać więcej informacji o logice raportowania, zobacz [Przykłady i logika raportu wiekowania zapasów](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

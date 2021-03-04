@@ -76,3 +76,6 @@ Zapisz numer tworzonego zamówienia zakupu, a także numer towaru i oddział uż
     * Po kliknięciu przycisku OK sprawdź pasek komunikatów. Powinien tam być komunikat z informacją, że operacja została wykonana.  
 5. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

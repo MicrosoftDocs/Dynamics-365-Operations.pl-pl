@@ -67,3 +67,6 @@ Rekordy stron można wprowadzić w globalnej książce adresowej albo na stronie
 ## <a name="can-i-translate-address-information-for-party-records"></a>Czy można tłumaczyć informacje adresowe dla rekordów stron?
 
 Można ustawić tłumaczenia informacji adresowych, tak aby były wyświetlane w języku użytkownika (systemu) w programie, ale w innym języku w dokumentach, takich jak zamówienia sprzedaży. Można wprowadzić tłumaczenia nazw krajów/regionów, celów adresów oraz sekwencji nazw. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. W takim przypadku możesz wyświetlić rekord klienta po duńsku w programie, ale wyświetlić informacje adresowe po francusku w drukowanym zamówieniu sprzedaży. Podczas konfigurowania tłumaczenia należy wprowadzić tłumaczenie dla każdego elementu na liście. Elementy bez tłumaczenia będą zawsze wyświetlane w języku systemu. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. Jeśli nie wprowadzisz hiszpańskich (ESP) tłumaczeń informacji adresowych, będą one wyświetlane po duńsku zarówno w programie jaki w drukowanych dokumentach.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

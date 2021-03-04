@@ -91,3 +91,6 @@ Aby dodać nową stronę do swojej witryny, wykonaj następujące kroki.
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

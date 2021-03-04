@@ -136,3 +136,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Dodatkowe informacje dotyczące sposobu drukowania etykiet
 
 Aby uzyskać więcej informacji o konfigurowaniu i drukowaniu etykiet, należy zapoznać się z tematem [Włączanie drukowania etykiet numerów identyfikacyjnych](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

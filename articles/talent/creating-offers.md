@@ -153,3 +153,6 @@ Ofertę można wycofać od kandydata w dowolnym momencie z różnych przyczyn.
 ## <a name="closing-an-offer"></a>Zamykanie oferty 
 
 Gdy oferta zostanie zaakceptowana, odrzucona lub wycofana bez konieczności podejmowania dalszych kroków, możesz zamknąć ofertę, tak aby w tym pakiecie oferty nie można było wprowadzać żadnych dalszych zmian.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

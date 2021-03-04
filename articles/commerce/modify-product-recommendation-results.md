@@ -121,3 +121,6 @@ Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wyko
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

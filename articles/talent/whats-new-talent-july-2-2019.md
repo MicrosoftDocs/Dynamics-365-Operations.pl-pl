@@ -55,3 +55,6 @@ Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent
 ## <a name="changes-in-core-hr"></a>Zmiany w Core HR
 
 Ta wersja zawiera drobne poprawki błędów dla rozwiązania Dynamics 365 Talent: Core HR.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -164,3 +164,6 @@ Niektóre formuły nie mogą być testowane w czasie projektowania. Na przykład
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
 - [Język formuł raportowania elektronicznego](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

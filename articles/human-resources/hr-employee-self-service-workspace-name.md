@@ -45,3 +45,6 @@ Jeśli użytkownik ma ochotników lub innych pracowników, może chcieć zmieni�
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Przegląd samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Po utworzeniu w globalnej książki adresowej można utworzyć dodatkowe książ
 **Decyzja:**
 
 - Ile dodatkowych książek adresowych zostało utworzonych?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Ten temat wyjaśnia, jak identyfikować i rozwiązywać konflikty w podziale obo
 1. Wybierz kolejno **okienko nawigacji > Moduły > Administrowanie systemem > Zabezpieczenia > Podział obowiązków > Reguły podziału obowiązków**. Wybierz regułę.  
 2. Wybierz **Sprawdź poprawność obowiązków i ról**. Jeśli którakolwiek istniejąca rola narusza wybraną regułę, jest wyświetlany komunikat zawierający nazwę roli oraz nazwy obowiązków powodujących konflikt. Administrator musi wskazać środki minimalizacji ryzyka związanego z zabezpieczeniami lub zmodyfikować rolę, tak aby nie naruszała reguł podziału obowiązków. Jeśli żadna rola nie narusza wybranej reguły, komunikat wskazuje, że wszystkie role są zgodne.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Pomyślnie zsynchronizowane zamówienia zostają domyślnie wstrzymane w oparciu
 [Tworzenie skoroszytu programu Excel w celu edytowania transakcji detalicznych](create-excel-edit.md)
 
 [Dodawanie pól do skoroszytu programu Excel w celu edytowania transakcji detalicznych](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Użytkownik usługi Commerce wykonuje procedurę obliczania, zatwierdzania i prz
 - Rejestrowanie nieobecności
 
 Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

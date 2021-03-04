@@ -68,3 +68,6 @@ Wykresy i kafelki w tych raportach można filtrować oraz przypinać do pulpitu 
 | Analiza kwalifikacji pracowników  | Certyfikaty, poziom, data poziomu i umiejętności                                                                    | Nazwisko pracownika etatowego, Kwalifikacje |
 | Wydajność              | Ocena, opis i model oceniania                                                                      | Bieżący pracownik, Bieżące stanowisko, Trend pracowników, Umiejętności preferowane w zadaniu, Przeszłe przypisania stanowisk, Trend stanowisk, Pracownik z rozwiązanym stosunkiem pracy |
 | Kwalifikacje                    | Umiejętności, typ umiejętności i klasyfikacja                                                                              | Analiza kwalifikacji pracowników, Umiejętności preferowane w zadaniu |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

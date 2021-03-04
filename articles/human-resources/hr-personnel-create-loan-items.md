@@ -59,3 +59,6 @@ Przedmioty pożyczek są rekordami, które pomagają śledzić fizyczne przedmio
 14. Kliknij przycisk OK.
 15. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

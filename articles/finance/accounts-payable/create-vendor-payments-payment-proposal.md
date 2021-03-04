@@ -123,3 +123,6 @@ Dla każdej metody płatności można zdefiniować standardowe konto płatności
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

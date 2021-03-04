@@ -111,3 +111,6 @@ Klikając płatności przy niewystarczających funduszach na stronie kolekcje mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

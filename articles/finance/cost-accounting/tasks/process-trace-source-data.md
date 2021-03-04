@@ -45,3 +45,6 @@ Całe przetwarzanie danych jest wykonywane przez zadania. Dla każdego zadania i
     * W tym przykładzie wybierz opcję Obrachunkowy 2017 Okres 9.  
 14. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

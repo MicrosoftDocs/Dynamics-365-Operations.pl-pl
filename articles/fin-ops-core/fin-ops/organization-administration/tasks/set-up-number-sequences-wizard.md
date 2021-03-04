@@ -38,3 +38,6 @@ Sekwencje numeracji są używane do generowania czytelnych, unikatowych identyfi
 4. Wybierz pozycję **Następny**.
 5. Wybierz **Zakończ**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ Na stronie **Czeki** wykonuje się zadania konserwacyjne związane z czekami. Na
 Aby otworzyć stronę **Czeki**, przejdź do **Zarządzanie gotówką i bankami \> Konta bankowe \> Konta bankowe**, a następnie w okienku akcji na karcie **Zarządzanie płatnościami** w grupie **Informacje pokrewne**, wybierz opcję **Czeki**. Możesz też wybrać opcje **Zarządzanie gotówką i bankami \> Zapytania i raporty \> Czeki**.
 
 Następnie, aby utworzyć czeki, które mają status **Pusty** w okienku akcji wybierz **Utwórz puste czeki**. Gdy system tworzy puste czeki, powiązane konto bankowe zostaje tymczasowo dezaktywowane. To zachowanie zmniejsza ryzyko, że płatności będą generowane w tym samym czasie, gdy tworzone są puste czeki. Po zakończeniu przetwarzania powiązane konto bankowe zostanie ponownie aktywowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

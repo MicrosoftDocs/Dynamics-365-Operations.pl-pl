@@ -53,3 +53,6 @@ Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania r�
     > Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.
 
 3. Aby skonfigurować poszczególne gałęzie, zobacz [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-branch-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

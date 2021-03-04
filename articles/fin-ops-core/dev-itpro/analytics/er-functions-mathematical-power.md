@@ -63,3 +63,6 @@ Funkcja `POWER (4, 0.5)` zwraca wartość **2**.
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Funkcje matematyczne](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

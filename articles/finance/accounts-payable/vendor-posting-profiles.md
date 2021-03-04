@@ -119,3 +119,6 @@ Określ następujące wartości do konfigurowania profilu księgowania.
 | **Rozliczenie** | Wybierz tę opcję, aby włączyć automatyczne rozliczanie transakcji, które mają ten profil księgowania. Jeśli ta opcja jest wyczyszczona, należy ręcznie rozliczyć transakcje na stronie **Rozliczanie otwartych transakcji**. |
 | **Anuluj**     | Wybierz tę opcję, aby umożliwić anulowanie transakcji, które mają ten profil księgowania.                                                                                                               |
 | **Zamknij**      | Umożliwia wybranie docelowego profilu księgowania, który ma zostać włączony po zamknięciu transakcji bieżącego profilu księgowania. Transakcja jest traktowana jako zamknięta, jeśli jest w pełni rozliczona.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

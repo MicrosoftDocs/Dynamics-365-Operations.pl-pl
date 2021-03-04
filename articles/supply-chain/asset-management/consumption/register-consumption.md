@@ -95,3 +95,6 @@ Podczas rejestracji zużycia wymiary finansowe powiązane z różnymi typami rej
 >[!NOTE]
 >Dla wszystkich trzech typów rejestracji kombinacja wymiarów finansowych jest sprawdzana, a niewłaściwe kombinacje są puste. To jest Standardowa konfiguracja z innymi aplikacjami Finance and Operations.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

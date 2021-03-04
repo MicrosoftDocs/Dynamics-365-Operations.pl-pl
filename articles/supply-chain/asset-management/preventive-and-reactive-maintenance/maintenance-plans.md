@@ -194,3 +194,6 @@ Na poniższej ilustracji przedstawiono przykład planu konserwacji składnika ma
 
 ![Rysunek 7](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

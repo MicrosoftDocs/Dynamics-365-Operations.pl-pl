@@ -88,3 +88,6 @@ Jeśli masz raport, który zawiera inne dane niż te, których można by się sp
 2.  Wyeksportuj raport do programu Excel.
 
 Teraz powinno być możliwe skopiowanie danych z raportu rozwiązania Financial Reporting w programie Excel do raportu bilansu próbnego D365 oraz porównanie kolumn „Saldo zamknięcia”.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

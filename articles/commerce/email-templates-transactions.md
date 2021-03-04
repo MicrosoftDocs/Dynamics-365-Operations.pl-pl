@@ -203,3 +203,6 @@ Aby uzyskać więcej informacji o sposobie konfigurowania wiadomości e-mail w a
 [Ustawianie paragonów w wiadomościach e-mail](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Wysyłanie paragonów pocztą e-mail z aplikacji Modern POS](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

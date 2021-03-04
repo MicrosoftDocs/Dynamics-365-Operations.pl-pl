@@ -48,3 +48,6 @@ W tym artykule przedstawiono sposób uruchamiania tego procesu w celu uzyskania 
    4. Kliknij przycisk **OK**. Proces będzie uruchamiany z parametrami określonymi przez użytkownika.
 
 4. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

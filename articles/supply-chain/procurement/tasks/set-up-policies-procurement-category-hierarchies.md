@@ -52,3 +52,6 @@ Niniejszej procedury należy użyć w celu skonfigurowania reguły dla zamówion
 6. W polu **Wybór dostawcy** wybierz opcję. Zaznacz regułę mającą kontrolować, jakiego rodzaju dostawców można wybierać dla kategorii podczas tworzenia zapotrzebowań.  
 7. Kliknij przycisk **Zamknij**. Zdefiniowane przez Ciebie reguły dotyczą zapotrzebowań typu Zużycie. Jeśli trzeba zdefiniować zasady dla zapotrzebowań typu Uzupełnienie zapasów, należy utworzyć regułę dla typu reguły o nazwie „Reguła dostępu do kategorii uzupełniania”.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

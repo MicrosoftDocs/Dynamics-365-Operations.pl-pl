@@ -111,3 +111,6 @@ Skorygowany koszt na godzinę i czas zadania są księgowane w arkuszu produkcji
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

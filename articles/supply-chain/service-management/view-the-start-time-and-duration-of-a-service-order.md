@@ -59,3 +59,6 @@ Można również wyświetlać informacje o rozpoczęciu i zatrzymaniu rejestracj
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

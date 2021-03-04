@@ -64,3 +64,6 @@ Parametr **Ilość** określa, czy w partii ma być zwolniona cała ilość czy 
 -   Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień** dla zamówień przeniesienia, kliknij kolejno opcje **Zarządzanie magazynem** \> **Zwolnij do magazynu** \> **Automatyczne zwalnianie zamówień przeniesienia**.
 
 -   Aby ustawić parametry **Ilość** i **Zezwalaj na częściowe zwalnianie zamówień** dla zamówień sprzedaży, kliknij kolejno opcje **Zarządzanie magazynem** \> **Zwolnij do magazynu** \> **Automatyczne zwalnianie zamówień sprzedaży**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

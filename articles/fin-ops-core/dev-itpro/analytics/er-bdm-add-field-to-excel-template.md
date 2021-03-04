@@ -169,3 +169,6 @@ Zmodyfikowany szablon jest używany do generowania raportu faktury niezależnej 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
 
 [Projektowanie konfiguracji do generowania raportów w formacie OPENXML](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

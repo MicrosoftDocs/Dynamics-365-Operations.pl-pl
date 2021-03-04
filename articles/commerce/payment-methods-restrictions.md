@@ -61,3 +61,6 @@ Po wybraniu dla ustawienia **Ogranicz zwroty bez paragonu** wartości **Tak**, d
 
 Jeśli dla transakcji istnieją zarówno zwrot z dokumentem przyjęcia, jak i zwrot bez paragonu, warunek ograniczenia nie zostanie zastosowany, ponieważ transakcja będzie przepływem pracy zwrotu z dokumentem przyjęcia. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

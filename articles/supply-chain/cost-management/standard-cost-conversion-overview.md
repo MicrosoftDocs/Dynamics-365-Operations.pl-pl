@@ -102,3 +102,6 @@ Raport **Sprawozdanie z analizy odchyleń** umożliwia analizowanie odchyleń pr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

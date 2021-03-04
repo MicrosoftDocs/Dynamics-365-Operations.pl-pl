@@ -144,3 +144,6 @@ Przy tak dużej liczbie dostępnych technologii integracji zdecydowanie się na 
 <sup>2</sup>firma Microsoft bardzo inwestuje w zwiększanie zakresu pokrycia danych dla jednostek Common Data Service. Zalecamy użycie Common Data Service, jeśli jest dostępna. Obecnie zakres pokrycia danych w usłudze Common Data Service jest niższy w porównaniu do jednostek struktury DMF i jednostek obsługujących protokuł OData.
 
 <sup>3</sup>Dostęp do bazy danych SQL można uzyskać programistycznie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

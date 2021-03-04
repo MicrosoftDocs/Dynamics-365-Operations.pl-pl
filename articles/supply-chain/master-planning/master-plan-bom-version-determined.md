@@ -44,3 +44,6 @@ Prawidłowa wersja BOM, czy to oddziałowa, czy ogólna, musi spełnić wymagane
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

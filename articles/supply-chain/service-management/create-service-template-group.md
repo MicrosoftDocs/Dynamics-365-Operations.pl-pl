@@ -39,3 +39,6 @@ Grup szablonów serwisu można używać do sortowania i filtrowania szablonów s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

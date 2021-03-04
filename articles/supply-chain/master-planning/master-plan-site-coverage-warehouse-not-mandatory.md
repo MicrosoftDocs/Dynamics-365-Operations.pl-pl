@@ -63,3 +63,6 @@ Na poniższej ilustracji przedstawiono przebieg planowania głównego. Parametry
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

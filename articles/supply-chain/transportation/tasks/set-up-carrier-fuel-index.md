@@ -67,3 +67,6 @@ W tym przewodniku przedstawiono sposób tworzenia regionu indeksu paliwowego, in
 12. Na liście kliknij łącze w wybranym wierszu.
 13. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -124,3 +124,6 @@ W module Zarządzanie składnikami majątku można automatycznie aktualizować z
 Na poniższej ilustracji pokazano przykład okna dialogowego **Aktualizacja prognozy zlecenia pracy**.
 
 ![Rysunek 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

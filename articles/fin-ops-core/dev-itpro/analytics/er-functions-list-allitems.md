@@ -65,3 +65,6 @@ Jeśli wprowadzisz **Vend** jako źródło danych z typem danych *Lista rekordó
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Lista funkcji](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

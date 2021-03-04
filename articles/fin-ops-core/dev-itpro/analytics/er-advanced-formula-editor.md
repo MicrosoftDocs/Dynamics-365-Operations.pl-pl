@@ -171,3 +171,6 @@ Edytor jest obecnie obsługiwany w następujących przeglądarkach sieci Web:
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 - [Edytor Monaco](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

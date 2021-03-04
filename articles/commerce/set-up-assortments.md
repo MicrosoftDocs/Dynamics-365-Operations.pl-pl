@@ -55,3 +55,6 @@ Po spełnieniu wymagań wstępnych można tworzyć asortyment i przypisywać go 
 2. Wybierz kanały grup wysokiego poziomu kanałów, których dotyczy asortyment.
 3. Dodaj kategorie produktu, pojedyncze produkty lub ich warianty do asortymentu. Można uwzględnić wszystkie produkty w konkretnej kategorii lub można wykluczyć wybrane produkty z kategorii, która jest uwzględniona w asortymencie.
 4. Opublikuj asortyment. Po opublikowaniu asortymentu harmonogram Asortymenty jest uruchamiany automatycznie. Ten proces generuje listę produktów. Po zakończeniu tego procesu, produkty stają się dostępne dla kanałów przypisanych do asortymentu produktów. Jeśli wprowadzono zmiany asortymentu, który został opublikowany lub kanałów przypisanych do asortymentu, należy zaktualizować asortyment. Do aktualizacji asortymentu, gdy zostaną wprowadzone zmiany, można uruchomić zadanie przetwarzania wsadowego asortymentu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

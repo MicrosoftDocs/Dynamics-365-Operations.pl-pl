@@ -50,3 +50,6 @@ Aby zapewnić lepszą widoczność różnych kwot w koszyku, zostały w nim doda
 - **Zastosowana kaucja** — kwota kaucji, która jest stosowana do transakcji, gdy użytkownik pobiera zamówienie odbiorcy. Jeśli nie określono żadnych zastąpień kaucji oraz została skonfigurowana kaucja 10-procentowa, to kwota w tym polu stanowi 90 procent sumy zamówienia odbiorcy.
 - **Kwota zrealizowana** — łączna kwota dla wierszy, w których ustawiono metodę dostawy **Wyniesienie**, gdy zamówienie klienta zostało utworzone lub zmodyfikowane albo podczas wymiany zamówienia odbiorcy. Kwota w tym polu obejmuje podatki i opłaty.
 - **Kwota zwrotu** — suma dla wierszy, które zawierają ilości ujemne podczas wymiany zamówienia odbiorcy. Kwota w tym polu obejmuje podatki i opłaty.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

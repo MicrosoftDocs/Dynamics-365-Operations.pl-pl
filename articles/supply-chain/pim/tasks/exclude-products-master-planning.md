@@ -44,3 +44,6 @@ Ta procedura dotyczy tworzenia nowego cyklu życia produktu który wyklucza prod
 5. Na liście oznacz wybrany wiersz.
 6. W polu Stan cyklu życia produktu wprowadź lub wybierz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

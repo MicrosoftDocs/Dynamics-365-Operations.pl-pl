@@ -354,3 +354,6 @@ Poniższe scenariusze ilustrują sposób korzystania z zasad konsolidacji wysył
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

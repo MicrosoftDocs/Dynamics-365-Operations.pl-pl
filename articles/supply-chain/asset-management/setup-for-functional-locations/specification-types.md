@@ -64,3 +64,6 @@ Tworzenie własnych typów atrybutów. Ponadto można przenosić wymiary produkt
 9. Zapisz rekord.
 
     Pole **Typy lokalizacji czynności konserwacyjnych** pokazuje liczbę lokalizacji funkcjonalnych, które używają typu atrybutu. Pole **Typy składników majątku** zawiera liczbę typów składników majątku, które są używane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

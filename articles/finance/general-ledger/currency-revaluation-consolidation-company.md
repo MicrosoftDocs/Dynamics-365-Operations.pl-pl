@@ -89,3 +89,6 @@ Zobaczysz dodatkowe transakcje dla kwot w walucie raportowania.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

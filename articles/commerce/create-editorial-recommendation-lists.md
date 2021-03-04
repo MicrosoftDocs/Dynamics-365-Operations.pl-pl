@@ -75,3 +75,6 @@ Aby utworzyć wyselekcjonowaną listę rekomendacji produktów, wykonaj następu
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

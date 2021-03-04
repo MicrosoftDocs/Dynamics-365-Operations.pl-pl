@@ -111,3 +111,6 @@ Następujące najważniejsze zagregowane miary są używane jako podstawa w paki
 | Wydajność wysyłki        | Wysłane wg produktów                       | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
 | Wydajność wysyłki        | Wysłane wg odbiorców                      | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
 | Wydajność wysyłki        | Wysłane wg oddziałów/magazynów              | CustPackingSlipOnTimeStatus           | Wcześnie, Na czas i Późno (zobacz opisy we wcześniejszej części tej tabeli). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

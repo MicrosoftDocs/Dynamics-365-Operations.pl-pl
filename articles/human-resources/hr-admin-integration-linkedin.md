@@ -190,3 +190,6 @@ Następujące szczegóły są importowane i uwzględniane w nowym rekordzie prac
 
 [Konfigurowanie jednostek wirtualnych usługi Common Data Service](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Co to jest usługa Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
