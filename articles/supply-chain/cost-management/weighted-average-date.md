@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435038"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963745"
 ---
 # <a name="weighted-average-date"></a>Średnia ważona z datą
 
@@ -38,7 +37,7 @@ Jeśli do tego dnia miało miejsce tylko jedno przyjęcie, nie trzeba obliczać 
 
 Średnia ważona na dzień na potrzeby wyceny zapasów jest obliczana w następujący sposób: 
 
-Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
+Średnia ważona = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
 
 Podczas zamknięcia zapasów obliczenia są wykonywane na każdy dzień okresu zamknięcia, zgodnie z poniższą ilustracją. 
 
@@ -51,7 +50,7 @@ Transakcje magazynowe powodujące wydania z zapasów, takie jak transakcje wynik
 
 Rozliczenia to księgowania dotyczące zamknięcia magazynu, które dostosowują wartość rozchodów do właściwej średniej ważonej na dzień zamknięcia. 
 
-**Uwaga:** Aby uzyskać więcej informacji o rozliczeniach, zobacz artykuł o zamknięciu zapasów. Poniższe przykłady ilustrują skutek zastosowania metody średniej ważonej w pięciu konfiguracjach:
+**Uwaga:** aby uzyskać więcej informacji o rozliczeniach, zobacz artykuł dotyczący zamknięcia zapasów. Poniższe przykłady ilustrują skutek zastosowania metody średniej ważonej w pięciu konfiguracjach:
 
 -   Rozliczenie bezpośrednie z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
 -   Rozliczenie sumaryczne z zastosowaniem średniej ważonej na dzień bez opcji **Włącz wartość fizyczną**
@@ -196,6 +195,3 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

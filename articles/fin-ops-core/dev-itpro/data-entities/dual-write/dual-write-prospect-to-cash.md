@@ -3,7 +3,7 @@ title: Od prospekta do kasy w podwójnym zapisie
 description: Ten temat zawiera informacje dotyczące prospektów do kasy w ramach podwójnego zapisu.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 01/27/2020
+ms.date: 01/07/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 3b482a2754bb4bcaca5410da72c21897fd066a41
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3f88d7249af515670c0a3e73a5ef890f04133d19
+ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683654"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959608"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -37,6 +37,11 @@ W interfejsach aplikacji można uzyskać dostęp do Stanów przetwarzania i info
 
 ![Przepływ danych o podwójnym zapisie od prospekta do kasy](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
+Aby uzyskać informacje o integracji odbiorcy i kontaktów, zobacz temat [Zintegrowany wzorzec klienta](customer-mapping.md). Aby uzyskać informacje na temat integracji produktów, zobacz temat [Ujednolicone działanie produktu](product-mapping.md).
+
+> [!NOTE]
+> W przypadku usługi Dynamics 365 Sales prospekt i odbiorca odwołują się do rekordu w tabeli **Konta**, w której kolumna **RelationshipType** to **Prospekt** lub **Odbiorca**. Jeśli logika biznesowa zawiera proces kwalifikacji **konta**, w którym najpierw jest tworzony rekord **konta** i zakwalifikowany jako prospekt, a następnie jako odbiorca, rekord jest synchronizowany z aplikacją Finance and Operations tylko wtedy, gdy jest to odbiorca (`RelationshipType=Customer`). Jeśli chcesz, aby wiersz **Konto** był synchronizowany jako prospekt, musisz mieć niestandardową mapę, aby zintegrować dane prospektu.
+
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
 Aby można było synchronizować oferty sprzedaży, należy zaktualizować poniższe ustawienia.
@@ -46,11 +51,11 @@ Aby można było synchronizować oferty sprzedaży, należy zaktualizować poni�
 W Sales przejdź do **Ustawienia \> Administracja \> Ustawienia systemu \> Sprzedaż** i upewnij się, że używane są następujące ustawienia:
 
 - Opcja systemowa **Użyj systemowego obliczania cen** jest ustawiona na **Tak**.
-- Pole **Metoda kalkulacji rabatów** jest ustawione na **Pozycja w wierszu**.
+- Kolumna **Metoda kalkulacji rabatów** jest ustawiona na **Pozycja w wierszu**.
 
 ### <a name="sites-and-warehouses"></a>Oddział i magazyny
 
-W Supply Chain Management pola **oddział** i **magazyn** są wymagane w odniesieniu do wierszy oferty i wierszy zamówień. Jeśli ustawienie oddziału i magazynu zostanie ustawione w domyślnych ustawieniach zamówienia, pola te zostaną automatycznie ustawione podczas dodawania produktu do wiersza oferty lub wiersza zamówienia. 
+W Supply Chain Management kolumny **oddział** i **magazyn** są wymagane w odniesieniu do wierszy oferty i wierszy zamówień. Jeśli ustawienie oddziału i magazynu zostanie ustawione w domyślnych ustawieniach zamówienia, kolumny te zostaną automatycznie ustawione podczas dodawania produktu do wiersza oferty lub wiersza zamówienia. 
 
 ### <a name="number-sequences-for-quotations-and-orders"></a>Sekwencje numerów ofert i zamówień
 
@@ -62,9 +67,9 @@ Na przykład sekwencja numerów w Supply Chain Management ma wartość **1, 2, 3
 
 Oferty sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Management. W przypadku tworzenia oferty w Sales jest ona synchronizowana z Supply Chain Management w czasie rzeczywistym. Podobnie, w przypadku tworzenia oferty w Supply Chain Management jest ona synchronizowana z Sales w czasie rzeczywistym. Należy uwzględnić następujące informacje:
 
-+ Można dodać rabat do produktu w ofercie. W takim przypadku rabat zostanie zsynchronizowany z Supply Chain Management. Pola **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Ta konfiguracja nie obsługuje mapowania integracji. Zamiast tego w obecnym kształcie systemu pola **Cena**, **Rabat**, **Opłata** i **Podatek** są zarządzane i obsługiwane przez program Supply Chain Management.
-+ Pola tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu**, **Rabat** i **Kwota frachtu**.
-+ Pola **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
++ Można dodać rabat do produktu w ofercie. W takim przypadku rabat zostanie zsynchronizowany z Supply Chain Management. Kolumny **Rabat**, **Opłaty** i **Podatek** w nagłówku są kontrolowane przez konfigurację w programie Supply Chain Management. Ta konfiguracja nie obsługuje mapowania integracji. Zamiast tego w obecnym kształcie systemu kolumny **Cena**, **Rabat**, **Opłata** i **Podatek** są zarządzane i obsługiwane przez program Supply Chain Management.
++ Kolumny tylko do odczytu w nagłówku oferty sprzedaży: **% rabatu**, **Rabat** i **Kwota frachtu**.
++ Kolumny **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te kolumny, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana tabela.
 
 Jeśli używane jest także rozwiązanie Field Service, należy ponownie włączyć parametr **Szybkie utworzenie wiersza oferty**. Ponowne włączenie parametru umożliwia kontynuowanie tworzenia wierszy oferty przy użyciu funkcji szybkiego tworzenia.
 1. Przejdź do aplikacji Dynamics 365 Sales.
@@ -82,7 +87,7 @@ Zamówienia sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Manag
 + Obliczanie i zaokrąglanie rabatów:
 
     - Model obliczania rabatu w rozwiązaniu Sales różni się od modelu obliczania rabatu w rozwiązaniu Supply Chain Management. W rozwiązaniu Supply Chain Management kwota ostatecznego rabatu w wierszu sprzedaży może wynikać z połączenia kwot rabatu i procentów rabatu. Jeżeli ta kwota ostatecznego rabatu zostanie podzielona przez ilość w wierszu, może nastąpić zaokrąglenie. Jednakże to zaokrąglenie nie jest uznawane, jeżeli zaokrąglony rabat na jednostkę zostanie zsynchronizowany z rozwiązaniem Sales. Aby zapewnić, że pełna kwota rabatu z wiersza sprzedaży w rozwiązaniu Supply Chain Management zostanie prawidłowo zsynchronizowana z rozwiązaniem Sales, należy zsynchronizować pełną kwotę bez dzielenia przez ilość w wierszu. Dlatego w rozwiązaniu Sales należy zdefiniować metodę obliczania rabatu jak **Pozycja w wierszu**.
-    - Po zsynchronizowaniu wiersza zamówienia sprzedaży z rozwiązania Sales do rozwiązania Supply Chain Management używana jest pełna kwota rabatu wiersza. Ponieważ rozwiązanie Supply Chain Management nie ma pola umożliwiającego przechowywania pełnej kwoty rabatu dla wiersza, kwota jest dzielona przez ilość i przechowywana w polu **Rabat wiersza**. Każde zaokrąglenie powstałe podczas tego dzielenia jest przechowywane w polu **Opłaty od sprzedaży** w wierszu sprzedaży.
+    - Po zsynchronizowaniu wiersza zamówienia sprzedaży z rozwiązania Sales do rozwiązania Supply Chain Management używana jest pełna kwota rabatu wiersza. Ponieważ rozwiązanie Supply Chain Management nie ma kolumny umożliwiającej przechowywanie pełnej kwoty rabatu dla wiersza, kwota jest dzielona przez ilość i przechowywana w kolumnie **Rabat wiersza**. Każde zaokrąglenie powstałe podczas tego dzielenia jest przechowywane w kolumnie **Opłaty od sprzedaży** w wierszu sprzedaży.
 
 ### <a name="example-synchronization-from-sales-to-supply-chain-management"></a>Przykład: synchronizacja z Sales do Supply Chain Management
 
@@ -98,7 +103,7 @@ W przypadku synchronizacji z Supply Chain Management do Sales można uzyskać na
 
 ## <a name="dual-write-solution-for-sales"></a>Podwójny zapis dla Sales
 
-Nowe pola zostały dodane do jednostki **Zamówienie** i są wyświetlane na stronie. Większość tych pól jest wyświetlana na karcie **integracja** w module Sales. Aby dowiedzieć się więcej o mapowaniu pól stanu, patrz [Skonfiguruj mapowanie dla pól stanu zamówienia sprzedaży](sales-status-map.md).
+Nowe kolumny zostały dodane do tabeli **Zamówienie** i są wyświetlane na stronie. Większość tych kolumn jest wyświetlana na karcie **integracja** w module Sales. Aby dowiedzieć się więcej o mapowaniu kolumn stanu, zobacz [Skonfiguruj mapowanie dla kolumn stanu zamówienia sprzedaży](sales-status-map.md).
 
 + Przyciski **Utwórz fakturę** i **Anuluj zamówienie** na stronie **zamówienia sprzedaży** są ukryte w Sales.
 + Wartość **Stan zamówienia sprzedaży** pozostanie **Aktywna**, aby zapewnić przepływ zmian z rozwiązania Supply Chain Management do zamówienia sprzedaży w programie Sales. Aby kontrolować to zachowanie, ustaw wartość domyślną pola **Kod stanu \[Stan\]** na **Aktywne**.
@@ -107,18 +112,18 @@ Nowe pola zostały dodane do jednostki **Zamówienie** i są wyświetlane na str
 
 Faktury sprzedaży są tworzone w Supply Chain Management i synchronizowane z programem Sales. Należy uwzględnić następujące informacje:
 
-+ Pole **Numer faktury** zostało dodane do jednostki **Faktura** i jest wyświetlane na stronie.
++ Kolumna **Numer faktury** została dodana do tabeli **Faktura** i jest wyświetlana na stronie.
 + Przycisk **Utwórz fakturę** na stronie **Zamówienie sprzedaży** jest ukryty, ponieważ faktury zostaną utworzone w rozwiązaniu Supply Chain Management i zsynchronizowane z programem Sales. Strony **Faktura** nie można edytować, ponieważ faktury zostaną zsynchronizowane z rozwiązania Supply Chain Management.
 + Wartość **Stan zamówienia sprzedaży** automatycznie zmienia się na **Zafakturowano** po zsynchronizowaniu powiązanej faktury z rozwiązania Supply Chain Management do programu Sales. Ponadto właściciel zamówienia sprzedaży, u którego utworzono fakturę jest przypisywany jako właściciel faktury. Dlatego właściciel zamówienia sprzedaży może wyświetlić fakturę.
-+ Pola **Warunki frachtu**, **Warunki dostawy** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
++ Kolumny **Warunki frachtu**, **Warunki dostawy** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te kolumny, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana tabela.
 
 ## <a name="templates"></a>Szablony
 
 Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działają wspólnie podczas interakcji, jak pokazano w poniższej tabeli.
 
-| Aplikacje Finance and Operations | Aplikacje oparte na modelu w systemie Dynamics 365 | opis |
+| Aplikacje Finance and Operations | Aplikacje Customer Engagement | opis |
 |-----------------------------|-----------------------------------|-------------|
-| Nagłówki faktur sprzedaży wer. 2    | faktury                          |             |
+| Nagłówki faktur sprzedaży wer. 2    | faktury                          | Tabela nagłówków faktur sprzedaży (wersja 2) w aplikacji Finance and Operations zawiera faktury dla zamówień sprzedaży i faktury niezależne. W przypadku podwójnego zapisu jest stosowany filtr usługi Dataverse, który odfiltruje wszystkie dokumenty faktur niezależnych. |
 | Wiersze faktur sprzedaży wer. 2      | invoicedetails                    |             |
 | Nagłówki zamówień sprzedaży CDS     | salesorders                       |             |
 | Wiersze zamówienia sprzedaży CDS       | salesorderdetails                 |             |
@@ -135,6 +140,11 @@ Oto powiązane mapowania tabeli podstawowej dla prospektu do gotówki:
 + [Wszystkie produkty do msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
 + [Cennik](product-mapping.md)
 
+## <a name="limitations"></a>Ograniczenia
+- Zamówienia zwrotu nie są obsługiwane.
+- Faktury kredytowe nie są obsługiwane.
+- Wymiary finansowe muszą być ustawione dla danych głównych, na przykład dla odbiorcy lub dostawcy. Gdy odbiorca jest dodawany do oferty lub zamówienia sprzedaży, wymiary finansowe skojarzone z rekordem odbiorcy automatycznie przepływają do zamówienia. Obecnie podwójny zapis nie uwzględnia danych wymiarów finansowych dla danych głównych. 
+
 [!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
@@ -150,6 +160,3 @@ Oto powiązane mapowania tabeli podstawowej dla prospektu do gotówki:
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

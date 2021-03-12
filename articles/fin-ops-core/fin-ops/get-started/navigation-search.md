@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b68182ff7da07f350e2eacaf569089e0fdf44a8d
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695068"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799115"
 ---
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
@@ -62,6 +62,3 @@ Lista wyników wyszukiwania jest ograniczona do 10 pozycji. Jeśli w wynikach ni
 ## <a name="development"></a>Programowanie
 
 Z programistycznego punktu widzenia funkcja nawigacji z wyszukiwaniem jest łatwa do wykorzystania, ponieważ wdrażane elementy menu mogą pojawiać się w wynikach wyszukiwania niemal natychmiast. Jeśli tylko elementy menu mają łącza do okienka nawigacji lub pulpitu nawigacyjnego, automatycznie stają się one dostępne do wyszukiwania.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

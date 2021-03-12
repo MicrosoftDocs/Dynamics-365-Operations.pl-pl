@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 268014
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eaac1c35bb6d6f6d0e2cfa8e160d4fabf6cbde3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c17ec8720dc40ba50aa2364e03cf363c1122a9c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408373"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962805"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Edytowanie identyfikator faktur w zamówieniach sprzedaży dla Europy Wschodniej
 
@@ -61,6 +60,3 @@ Firmom w Czechach, Estonii, na Węgrzech, Litwie, Łotwie i w Polsce opcja **Edy
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

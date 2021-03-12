@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414846"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963117"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurowanie metod dostawy i opłat w biurze obsługi
 
@@ -95,6 +94,3 @@ Opcjonalnie można dołączyć kod przyspieszenia do wszelkich metod dostawy sko
 Na przykład dla zamówień, które zostaną wysłane w następnym dniu pocztą lotniczą, pobranie musi zostać wykonane w magazynie do 13.00. W takim przypadku można utworzyć kod przyspieszenia, a następnie połączyć go z dowolną metodą dostawy w następnym dniu skonfigurowanym w systemie. Gdy magazyn tworzy grupę czynności, właściwy kod przyspieszenia w polu **Przyspieszeń** może być używany jako filtr, tak aby pobranie było wykonywane tylko dla zamówień, które mają metodę dostawy połączoną z tym kodem.
 
 Ponadto podczas wprowadzania zamówienia w biurze obsługi można ręcznie zastosować kod przyspieszenia do nagłówka zamówienia sprzedaży lub indywidualnego wiersza zamówienia sprzedaży. Tu również kod może służyć do sortowania lub raportowania. Czasami zamówienie wymaga szczególnego obchodzenia się ze względu na problemy z obsługą klienta. W takim wypadku można zastosować określony kod przyspieszenia do nagłówka lub wierszy zamówienia, aby ułatwić identyfikację i priorytetyzację zamówienia w procesie realizacji.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

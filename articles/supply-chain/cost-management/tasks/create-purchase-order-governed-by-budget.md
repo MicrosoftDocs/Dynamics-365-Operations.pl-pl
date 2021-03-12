@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 319eb0070a3677035e2a5d89744e80cd38c08d8e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cbfbbef3bd7c7398f0f17b6cddbbff8c4755638d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435299"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963720"
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Tworzenie zamówienia zakupu regulowanego budżetem
 
@@ -62,6 +61,3 @@ Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dos
 4. Kliknij opcję Błędy lub ostrzeżenia dotyczące sprawdzania budżetu.
 5. Kliknij przycisk Zamknij.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

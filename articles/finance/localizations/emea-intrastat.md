@@ -3,7 +3,7 @@ title: Omówienie systemu Intrastat
 description: Ten temat zawiera informacje o sprawozdawczości Intrastat o handlu towarami i — w niektórych przypadkach — usługami między krajami/regionami Unii Europejskiej (UE). Omówiono proces sprawozdawczości oraz opisano wymagane ustawienia i warunki wstępne.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a70108696d6187126c23eca1779553210cd4a9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9396637c27707f1732d06ec704c7e609aa6c170b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408381"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962730"
 ---
 # <a name="intrastat-overview"></a>Omówienie systemu Intrastat
 
@@ -197,7 +196,7 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 <td><ul>
 <li><strong>Ogólne</strong> — pozwala określić następujące informacje:
 <ul>
-<li>Domyślne kody transakcji dla zamówień sprzedaży, zamówień zakupu, faktur korygujących i zamówień przeniesienia. Kod transakcji ustawiony dla faktur korygujących jest również używany jako kod zwrotu towarów fizycznych i jest używany do obsługi odchyleń zwrotów towarów fizycznych względem faktur korygujących.</li>
+<li>Domyślne kody transakcji dla zamówień sprzedaży, zamówień zakupu, faktur korygujących i zamówień przeniesienia. Kod transakcji ustawiony dla faktur korygujących jest również używany jako kod zwrotu towarów fizycznych i jest używany do obsługi odchyleń zwrotów towarów fizycznych względem faktur korygujących. Zwroty towarów fizycznych są raportowane w transferze Intrastat w innym kierunku. Zwrot przesyłki jest raportowany jako nadanie, a zwrot przesyłki jako nadejście.</li>
 <li>Pracownik odpowiedzialny za przygotowywanie raportów Intrastat.</li>
 </ul></li>
 <li><strong>Minimalny limit</strong> — pozwala określić ustawienia aktualizacji transakcji, które są poniżej progu:
@@ -240,6 +239,3 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 </tbody>
 </table>
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

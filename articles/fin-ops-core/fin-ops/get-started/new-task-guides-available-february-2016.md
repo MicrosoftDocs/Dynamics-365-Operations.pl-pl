@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74d5b92f8f8864544e6b333bd957206f02a2503f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 39e6d6bf4161641ae22de56dac69bc6217649878
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695096"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799106"
 ---
 # <a name="new-task-guides-february-2016"></a>Nowe przewodniki po zadaniach (luty 2016 r.)
 
@@ -645,6 +645,3 @@ Ujednolicona biblioteka APQC (z lutego 2016 r.) zawiera przewodniki po zadaniach
 [Nowe lub zaktualizowane przewodniki po zadaniach (sierpień 2016 r.)](new-updated-task-guides-available-august-2016.md)
 
 [Nowe lub zaktualizowane przewodniki po zadaniach (listopad 2016 r.)](new-task-guides-november-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

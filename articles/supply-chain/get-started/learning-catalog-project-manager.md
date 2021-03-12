@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 73662929f116ce6128c57a71037298f208c3c16b
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 5585ad96ec689b55c00e123fc465684436028823
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963617"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Katalog szkoleń dla kierowników projektów wdrożeniowych współpracujących z Dynamics 365 Supply Chain Management
 
@@ -107,6 +106,3 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu |
 | [Egzamin MB-320: Microsoft Dynamics 365 for Finance and Operations Produkcja](https://docs.microsoft.com/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Egzamin ten mierzy swoją zdolność do wykonywania następujących zadań technicznych: Konfigurowanie i Konfigurowanie produkcji; umożliwia tworzenie i zarządzanie produkcją oraz zamówieniami oszczędnymi; Tworzenie i przetwarzanie zamówień partii produkcji oraz zarządzanie nimi. | Egzamin, koszty różnią się w zależności od regionu |
 | [Egzamin MB-330: Microsoft Dynamics 365 for Finance and Operations, Zarządzanie łańcuchem dostaw](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Egzamin ten mierzy możliwość wykonania następujących zadań technicznych: implementowanie zarządzania informacjami o produktach; implementowanie zarządzania zapasami; Implementowanie procesów łańcucha dostaw i zarządzanie nimi; implementowanie zarządzania magazynem i zarządzanie transportem oraz wykonywanie procesów biznesowych. | Egzamin, koszty różnią się w zależności od regionu |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
