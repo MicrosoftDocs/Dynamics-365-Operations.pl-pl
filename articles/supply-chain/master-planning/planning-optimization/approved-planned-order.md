@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7975088be898ccecceb1f7be009cecff107f6e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c29ede7ad8916a97b4a04b68f41961f79810e0c8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435196"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983576"
 ---
 # <a name="approve-planned-orders"></a>Zatwierdzanie zamówień planowanych
 
@@ -43,6 +42,3 @@ Należy zauważyć, że zatwierdzanie zamówień planowanych jest opcjonalnym kr
 - **Zatwierdzone:** Jeśli chcesz zachować zmiany lub zaakceptować zamówienie planowane, zmień stan na *Zatwierdzone*. Zamówienia planowane ze stanem *Zatwierdzone* są uważane za ustalone w określonej ilości w planowaniu głównym, więc nie można ich modyfikować ani usuwać podczas późniejszego przebiegu planowania głównego. Aby to osiągnąć, logika planowania kopiuje *zatwierdzone* zamówienia planowane ze starej wersji planu do nowej wersji planu podczas planowania głównego. Należy zauważyć, że *Zatwierdzone* zamówienia planowane są uznawane za dostawę tylko w ramach określonego planu głównego.
 
 Można zarządzać planowanymi zamówieniami z obszaru roboczego **Planowanie główne**, listy **Zamówienie planowane** lub list **Planowane zamówienia zakupu**, **Planowane zlecenia produkcyjne** i **Planowane przeniesienie**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 584ea00c64df5e31d47e40aa32d7b266ff842de6
-ms.sourcegitcommit: 4e55bd178e315dfa132ec77fe705d68c68460b44
+ms.openlocfilehash: 7ff72721b9ed13e3457d72fa1896f663020eacff
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4435660"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983757"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.14 (listopad 2020 r.)
 
@@ -64,6 +63,3 @@ W temacie [Usunięte lub przestarzałe funkcje w Dynamics 365 Supply Chain Manag
 Zanim jakakolwiek funkcja zostanie usunięta z produktu, powiadomienie o zaniechaniu będzie anonsowane w sekcji na temat [usuniętych lub przestarzałych funkcji w Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 miesięcy przed usunięciem.
 
 W przypadku zmian, które wpływają tylko na czas kompilacji, ale są zgodne z trybem piaskownicy i środowiskami produkcyjnymi, czas niezgodności będzie krótszy niż 12 miesięcy. Zazwyczaj są to aktualizacje funkcjonalne, które należy wykonać w kompilatorze.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

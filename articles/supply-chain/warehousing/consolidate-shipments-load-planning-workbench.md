@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0af6764742532cbe181c8a20e7bf783b0e6d7cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434987"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983099"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Konsolidowanie wysyłek przy użyciu polecenia Zwolnij do magazynu z pulpitu planowania wysyłki ładunku
 
@@ -261,6 +260,3 @@ Powinny zostać utworzone cztery następujące wysyłki:
 
 - [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
 - [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

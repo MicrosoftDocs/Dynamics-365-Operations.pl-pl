@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db0d78c7a6fa69aa4e0c4c82f92c33daabda073f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435408"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983348"
 ---
 # <a name="set-up-hazardous-materials"></a>Ustawianie materiałów niebezpiecznych
 
@@ -284,6 +283,3 @@ Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **
 Specyfikacja *Tunelu materiału niebezpiecznego* ogranicza typy tuneli, przez które można przetransportować materiały niebezpieczne, podając zidentyfikowaną listę typów tuneli, które muszą być używane. Kategorie tunelu są ustanawiane przez odpowiednie przepisy dotyczące niebezpiecznych przewozów materiałów. Ta specyfikacja dotyczy zazwyczaj transportu drogowego.
 
 Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **Zarządzanie informacjami o produktach \> Konfiguracja \> Dokumentacja wysyłki dot. materiałów niebezpiecznych \> Tunel materiału niebezpiecznego**. Na stronie **Tunel materiału niebezpiecznego** można utworzyć dowolną liczbę identyfikatorów tunelu i skonfigurować każdy z nich przy użyciu kodu identyfikacji oraz krótkiego opisu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

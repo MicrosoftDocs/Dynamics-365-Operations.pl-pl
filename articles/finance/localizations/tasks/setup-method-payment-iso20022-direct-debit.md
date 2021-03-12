@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPaymMode
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 38afbc3a49d9020540a56e58ce51196b53d6a9e1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2cd5c174b0f3e3e15678513cecade020705beda
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446683"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982136"
 ---
 # <a name="setup-method-of-payment-for-iso20022-direct-debit"></a>Konfigurowanie metody płatności poleceniem zapłaty ISO20022
 
@@ -53,6 +52,3 @@ Jest to trzecia z pięciu procedur, które razem przedstawiają proces płatnoś
     * Wybierz parametr Wymaga zgody dla formatów płatności od odbiorców, które wymagają zawarcia informacji o zgodzie w komunikacie płatności. Dotyczy to na przykład poleceń zapłaty SEPA.  
 9. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

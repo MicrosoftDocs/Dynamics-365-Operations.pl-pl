@@ -19,11 +19,11 @@ ms.author: anbichse
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 2943d0095e4c9421725b90e579b7cbb841038ab7
-ms.sourcegitcommit: fd097f6f76f0d8428038fa3655b3188bf093b517
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692752"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4984607"
 ---
 # <a name="configure-benefits-management-parameters-per-company"></a>Konfigurowanie parametrów zarządzania świadczeniami w firmie
 
@@ -42,5 +42,3 @@ Dla każdej organizacji oferującej świadczenia należy skonfigurować ustawien
    | **Domyślny adres e-mail nadawcy** | Adres e-mail, który ma być użyty do wysłania wiadomości e-mail z potwierdzeniem. |
 
 3. Wybierz opcję **Zapisz**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

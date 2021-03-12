@@ -1,5 +1,5 @@
 ---
-title: Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
+title: Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 description: Wahania kursów wymiany powodują, że wartość teoretyczna (wartość księgowa) otwartych transakcji w walutach obcych zmienia się w czasie. Ten artykuł zawiera informacje o procesie przeszacowania w walucie obcej, który jest wykonywany, aby zaktualizować wartość otwartych transakcji w modułach Rozrachunki z odbiorcami i Rozrachunki z dostawcami.
 author: kweekley
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb7a101fa9ef84ec3873bcd8054b8198db8d58c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446937"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985244"
 ---
-# <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie obcej dla rozrachunków z odbiorcami i rozrachunków z dostawcami
+# <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Przeszacowanie w walucie dla rozrachunków z odbiorcami i rozrachunków z dostawcami
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,6 +65,3 @@ Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

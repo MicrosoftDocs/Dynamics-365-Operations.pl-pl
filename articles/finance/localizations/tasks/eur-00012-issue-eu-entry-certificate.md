@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0091af30b917aab3b8c4572a72a20d8d2d5d52e2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b20f7d498439f2b2064d52ab621225f3c35ca8b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984796"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Wystawianie świadectwa wywozowego UE
 
@@ -87,6 +86,3 @@ Ta procedura poprowadzi przez proces włączania obsługi świadectw wywozowych 
 4. W okienku akcji kliknij pozycję Faktura.
 5. Kliknij opcję Wyświetl wystawione świadectwa wywozowe.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

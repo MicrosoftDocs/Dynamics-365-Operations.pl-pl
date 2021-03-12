@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e84bb167395c06295b0e8ef8b9fd98aa4bc0cc14
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: b8c527e578fee6abfeeade99fba8070365c020bd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4435668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983857"
 ---
 # <a name="troubleshoot-cost-management"></a>Rozwiązywanie problemów z zarządzaniem kosztami
 
@@ -63,5 +62,22 @@ Należy pamiętać o wykonaniu zamknięcia zapasów w dacie %3 (31-01-2019), odp
 
 **Raport wiekowania zapasów** zawiera różne wartości wyświetlane w różnych wymiarach przechowywania (np. oddział lub magazyn). Aby uzyskać więcej informacji o logice raportowania, zobacz [Przykłady i logika raportu wiekowania zapasów](inventory-aging-report.md).
 
+## <a name="an-update-conflict-occurs-when-the-inventory-valuation-method-is-either-standard-cost-or-moving-average"></a>Konflikt aktualizacji występuje, gdy metodą inwentaryzacji zapasów jest Koszt standardowy lub Średnia ruchoma
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Podczas równoległego księgowania dokumentów, takich jak arkusze magazynowe, faktury zamówień zakupu lub faktury zamówień sprzedaży, w celu uzyskania skalowalności i wydajności, może zostać wyświetlony komunikat o błędzie informujący o konflikcie aktualizacji i niektóre dokumenty mogą nie zostać zaksięgowane. Ten problem występuje, gdy metodą inwentaryzacji zapasów jest *Koszt standardowy* lub *Średnia ruchoma*. Obie te metody są metodami kosztów ciągłych. Innymi słowy, ostateczny koszt jest określony w momencie księgowania.
+
+Jeśli jest stosowana metoda *Średnia ruchoma*, komunikat o błędzie przypomina ten przykład:
+
+> Wartość zapasów xx,xx nie jest oczekiwana po obliczeniu proporcjonalnych wydatków
+
+Jeśli jest stosowana metoda *Koszt standardowy*, komunikat o błędzie przypomina ten przykład:
+
+> Koszt standardowy jest niezgodny z wartością zapasów finansowych po aktualizacji. Wartość = xx,xx, ilość = yy,yy, koszt standardowy = zz,zz
+
+Do czasu wydania przez firmę Microsoft rozwiązania problemu należy rozważyć użycie następujących rozwiązań, aby wyeliminować lub zredukować te błędy:
+
+- Zaksięguj ponownie dokumenty, których księgowanie nie powiodło się.
+- Utwórz dokumenty z mniejszą liczbą wierszy.
+- Unikaj wartości dziesiętnych kosztu standardowego. Spróbuj zdefiniować koszt standardowy, tak aby pole **Ilość dla ceny** było ustawione na *1*. Jeśli musisz określić wartość **ilości dla ceny** większą niż *1*, spróbuj zminimalizować liczbę miejsc dziesiętnych w standardowym koszcie jednostkowym. (Najlepiej, aby było mniej niż dwa miejsca dziesiętne) Na przykład należy unikać definiowania standardowych ustawień kosztu, takich jak **Cena** = *10* i **Ilość dla ceny** = *3*, ponieważ spowoduje to koszt standardowy jednostkowy 3,333333 (gdzie wartość dziesiętna jest powtarzana).
+- W większości dokumentów należy unikać sytuacji, w których wiele wierszy zawiera taką samą kombinację wymiarów produktów i wymiarów magazynu finansowego.
+- Zmniejsz stopień równoległości. (W takim przypadku system może przyspieszyć, ponieważ występuje mniej konfliktów i ponownych prób aktualizacji).

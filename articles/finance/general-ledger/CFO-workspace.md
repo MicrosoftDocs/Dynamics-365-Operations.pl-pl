@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3817c6688339735c7478e85786efe15bd2372c91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 457c547947ce6182d03e7a8276b380bc08535bca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446777"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985119"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Dodawanie wymiarów finansowych do obszaru roboczego Dyrektor finansowy
 
@@ -56,6 +55,3 @@ W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego D
 16. Skompiluj projekt, a następnie otwórz aplikację, aby wyświetlić rezultat.
 
     [![Skonfigurowana przestrzeń robocza](./media/workspace.png)](./media/workspace.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

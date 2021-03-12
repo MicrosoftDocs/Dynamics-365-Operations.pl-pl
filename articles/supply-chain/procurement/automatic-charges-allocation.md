@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435523"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983180"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatyczna alokacja opłat
 
@@ -177,6 +176,3 @@ Poniżej przedstawiono procedurę alokowania opłat na poziomie nagłówka w wie
         > Podczas pracy z siatką **Wybierz linie do wykluczenia z alokacji**, należy pamiętać, aby pozostawić siatkę otwartą do momentu wybrania opcji **Alokacja**. Jeśli zamkniesz siatkę przed wybraniem opcji **Alokacja**, ustawienia w siatce zostaną utracone. Z tego względu opłaty będą alokowane na podstawie poprzednio zdefiniowanych kryteriów.
 
 1. Wybierz przycisk **Alokacja**, aby zastosować ustawienia i zamknąć okienko dialogowe.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

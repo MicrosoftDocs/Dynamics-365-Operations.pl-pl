@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a0c8dabc91d4d69d3f7098672611610a4ec73ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 09f7efbfa0b4b96b52350afb961710057d6a2f92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446904"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984916"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog szkoleń dla kierowników projektów wdrożeniowych współpracujących z Dynamics 365 Finance
 
@@ -95,6 +94,3 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu | |
 | [Egzamin MB — 310: Microsoft Dynamics 365 for Finance and Operations, finanse](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. | Egzamin, koszty różnią się w zależności od regionu | |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, konsultant funkcjonalny funkcji finansowych](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Pakiet Microsoft Certified Dynamics 365 for Finance and Operations:, konsultanci działający w ramach działań finansowych — pozwalają ujednolicić globalne Finanse i operacje oraz zautomatyzować zadania i przepływy pracy, usprawniają zamawianie odbiorców, sprzedawanie, fakturowanie i raportowanie. | Certyfikat, koszty różnią się w zależności od regionu |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
