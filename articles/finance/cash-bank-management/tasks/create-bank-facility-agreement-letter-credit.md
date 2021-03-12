@@ -11,43 +11,42 @@ ms.technology: ''
 ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb624700e0b052de977fabecf9670b3515d32ab7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bffb5c802e8fa261e52197d1293ffb15c35981f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446785"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989172"
 ---
-# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="5699a-103">Tworzenie umowy instrumentu bankowego na akredytywę</span><span class="sxs-lookup"><span data-stu-id="5699a-103">Create a bank facility agreement for a letter of credit</span></span>
+# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="d00c4-103">Tworzenie umowy instrumentu bankowego na akredytywę</span><span class="sxs-lookup"><span data-stu-id="d00c4-103">Create a bank facility agreement for a letter of credit</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="5699a-104">To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do przetwarzania akredytywy.</span><span class="sxs-lookup"><span data-stu-id="5699a-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="5699a-105">Przed rozpoczęciem tego zadania warto skonfigurować instrumenty bankowe i profile księgowania.</span><span class="sxs-lookup"><span data-stu-id="5699a-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="5699a-106">Zadanie wykorzystuje firmę demonstracyjną „USMF”.</span><span class="sxs-lookup"><span data-stu-id="5699a-106">This task uses the demo company 'USMF'.</span></span>  
+<span data-ttu-id="d00c4-104">To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do przetwarzania akredytywy.</span><span class="sxs-lookup"><span data-stu-id="d00c4-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="d00c4-105">Przed rozpoczęciem tego zadania warto skonfigurować instrumenty bankowe i profile księgowania.</span><span class="sxs-lookup"><span data-stu-id="d00c4-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="d00c4-106">Zadanie wykorzystuje firmę demonstracyjną „USMF”.</span><span class="sxs-lookup"><span data-stu-id="d00c4-106">This task uses the demo company 'USMF'.</span></span>  
 
 
-## <a name="create-bank-facility-agreement"></a><span data-ttu-id="5699a-107">Tworzenie umowy instrumentu bankowego</span><span class="sxs-lookup"><span data-stu-id="5699a-107">Create Bank facility agreement</span></span>
-1. <span data-ttu-id="5699a-108">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Akredytywy > Umowy instrumentu bankowego.</span><span class="sxs-lookup"><span data-stu-id="5699a-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
-2. <span data-ttu-id="5699a-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5699a-109">Click New.</span></span>
-3. <span data-ttu-id="5699a-110">W polu Numer umowy wpisz numer umowy zawartej z bankiem.</span><span class="sxs-lookup"><span data-stu-id="5699a-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
-4. <span data-ttu-id="5699a-111">W polu Konto bankowe wprowadź numer rachunku banku wystawiającego akredytywę.</span><span class="sxs-lookup"><span data-stu-id="5699a-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
-5. <span data-ttu-id="5699a-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5699a-112">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="5699a-113">W polu Data początkowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="5699a-113">In the Start date field, enter a date and time.</span></span>
-7. <span data-ttu-id="5699a-114">W polu Data końcowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="5699a-114">In the End date field, enter a date and time.</span></span>
-8. <span data-ttu-id="5699a-115">Rozwiń lub zwiń sekcję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="5699a-115">Expand or collapse the General section.</span></span>
-9. <span data-ttu-id="5699a-116">Kliknij przycisk Dodaj wiersz.</span><span class="sxs-lookup"><span data-stu-id="5699a-116">Click Add line.</span></span>
-10. <span data-ttu-id="5699a-117">W polu Typ instrumentu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="5699a-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
-11. <span data-ttu-id="5699a-118">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="5699a-118">In the list, find and select the desired record.</span></span>
-12. <span data-ttu-id="5699a-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="5699a-119">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="5699a-120">W polu Limit wprowadź kwotę instrumentu wynegocjowaną z bankiem.</span><span class="sxs-lookup"><span data-stu-id="5699a-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
-14. <span data-ttu-id="5699a-121">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5699a-121">Click Save.</span></span>
-15. <span data-ttu-id="5699a-122">Kliknij przycisk Rozszerz, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="5699a-122">Click Extend to open the drop dialog.</span></span>
-16. <span data-ttu-id="5699a-123">W polu Nowy numer umowy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5699a-123">In the New agreement number field, type a value.</span></span>
-17. <span data-ttu-id="5699a-124">W polu Data końcowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="5699a-124">In the End date field, enter a date and time.</span></span>
-18. <span data-ttu-id="5699a-125">Kliknij przycisk Rozszerz.</span><span class="sxs-lookup"><span data-stu-id="5699a-125">Click Extend.</span></span>
-19. <span data-ttu-id="5699a-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5699a-126">Close the page.</span></span>
+## <a name="create-bank-facility-agreement"></a><span data-ttu-id="d00c4-107">Tworzenie umowy instrumentu bankowego</span><span class="sxs-lookup"><span data-stu-id="d00c4-107">Create Bank facility agreement</span></span>
+1. <span data-ttu-id="d00c4-108">Wybierz kolejno opcje Zarządzanie gotówką i bankami > Akredytywy > Umowy instrumentu bankowego.</span><span class="sxs-lookup"><span data-stu-id="d00c4-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
+2. <span data-ttu-id="d00c4-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d00c4-109">Click New.</span></span>
+3. <span data-ttu-id="d00c4-110">W polu Numer umowy wpisz numer umowy zawartej z bankiem.</span><span class="sxs-lookup"><span data-stu-id="d00c4-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
+4. <span data-ttu-id="d00c4-111">W polu Konto bankowe wprowadź numer rachunku banku wystawiającego akredytywę.</span><span class="sxs-lookup"><span data-stu-id="d00c4-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
+5. <span data-ttu-id="d00c4-112">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="d00c4-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="d00c4-113">W polu Data początkowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="d00c4-113">In the Start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="d00c4-114">W polu Data końcowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="d00c4-114">In the End date field, enter a date and time.</span></span>
+8. <span data-ttu-id="d00c4-115">Rozwiń lub zwiń sekcję Ogólne.</span><span class="sxs-lookup"><span data-stu-id="d00c4-115">Expand or collapse the General section.</span></span>
+9. <span data-ttu-id="d00c4-116">Kliknij przycisk Dodaj wiersz.</span><span class="sxs-lookup"><span data-stu-id="d00c4-116">Click Add line.</span></span>
+10. <span data-ttu-id="d00c4-117">W polu Typ instrumentu kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d00c4-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="d00c4-118">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="d00c4-118">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="d00c4-119">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="d00c4-119">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="d00c4-120">W polu Limit wprowadź kwotę instrumentu wynegocjowaną z bankiem.</span><span class="sxs-lookup"><span data-stu-id="d00c4-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
+14. <span data-ttu-id="d00c4-121">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d00c4-121">Click Save.</span></span>
+15. <span data-ttu-id="d00c4-122">Kliknij przycisk Rozszerz, aby otworzyć rozwijane okno dialogowe.</span><span class="sxs-lookup"><span data-stu-id="d00c4-122">Click Extend to open the drop dialog.</span></span>
+16. <span data-ttu-id="d00c4-123">W polu Nowy numer umowy wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="d00c4-123">In the New agreement number field, type a value.</span></span>
+17. <span data-ttu-id="d00c4-124">W polu Data końcowa wprowadź datę i godzinę.</span><span class="sxs-lookup"><span data-stu-id="d00c4-124">In the End date field, enter a date and time.</span></span>
+18. <span data-ttu-id="d00c4-125">Kliknij przycisk Rozszerz.</span><span class="sxs-lookup"><span data-stu-id="d00c4-125">Click Extend.</span></span>
+19. <span data-ttu-id="d00c4-126">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d00c4-126">Close the page.</span></span>
 
