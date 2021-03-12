@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,51 +17,51 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 2cf8d43062ec527755fdf1a28f0ea3ceac1fbc15
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594485"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003835"
 ---
-# <a name="crop-images"></a><span data-ttu-id="794c8-103">Przytnij obrazy</span><span class="sxs-lookup"><span data-stu-id="794c8-103">Crop images</span></span>
+# <a name="crop-images"></a><span data-ttu-id="657cb-103">Przytnij obrazy</span><span class="sxs-lookup"><span data-stu-id="657cb-103">Crop images</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="794c8-104">W tym temacie opisano, jak przyciąć obrazy w kreatorze witryny w Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="794c8-104">This topic describes how to crop images in Microsoft Dynamics 365 Commerce site builder.</span></span>
+<span data-ttu-id="657cb-104">W tym temacie opisano, jak przyciąć obrazy w kreatorze witryny w Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="657cb-104">This topic describes how to crop images in Microsoft Dynamics 365 Commerce site builder.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="794c8-105">Omówienie</span><span class="sxs-lookup"><span data-stu-id="794c8-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="657cb-105">Omówienie</span><span class="sxs-lookup"><span data-stu-id="657cb-105">Overview</span></span>
 
-<span data-ttu-id="794c8-106">Biblioteka multimediów kreatora witryn Commerce umożliwia kadrowanie obrazów w celu ich zoptymalizowania dla różnych typów modułów i okienka ekranu.</span><span class="sxs-lookup"><span data-stu-id="794c8-106">The Commerce site builder Media Library allows you to crop images to optimize them for different module types and viewports.</span></span>
+<span data-ttu-id="657cb-106">Biblioteka multimediów kreatora witryn Commerce umożliwia kadrowanie obrazów w celu ich zoptymalizowania dla różnych typów modułów i okienka ekranu.</span><span class="sxs-lookup"><span data-stu-id="657cb-106">The Commerce site builder Media Library allows you to crop images to optimize them for different module types and viewports.</span></span>
 
-## <a name="crop-an-image"></a><span data-ttu-id="794c8-107">Przytnij obraz</span><span class="sxs-lookup"><span data-stu-id="794c8-107">Crop an image</span></span>
+## <a name="crop-an-image"></a><span data-ttu-id="657cb-107">Przytnij obraz</span><span class="sxs-lookup"><span data-stu-id="657cb-107">Crop an image</span></span>
 
-<span data-ttu-id="794c8-108">Aby przyciąć obraz w konstruktorze witryn, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="794c8-108">To crop an image in site builder, follow these steps.</span></span>
+<span data-ttu-id="657cb-108">Aby przyciąć obraz w konstruktorze witryn, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="657cb-108">To crop an image in site builder, follow these steps.</span></span>
 
-1. <span data-ttu-id="794c8-109">W lewym okienku nawigacyjnym w module kreatora witryn Commerce wybierz **bibliotekę multimediów**.</span><span class="sxs-lookup"><span data-stu-id="794c8-109">In the left navigation pane of Commerce site builder, select **Media Library**.</span></span>
-1. <span data-ttu-id="794c8-110">W oknie głównym wybierz obraz, który chcesz zmodyfikować.</span><span class="sxs-lookup"><span data-stu-id="794c8-110">In the main window, select the image you want to modify.</span></span>
-1. <span data-ttu-id="794c8-111">Na pasku poleceń wybierz opcję **Edytuj**.</span><span class="sxs-lookup"><span data-stu-id="794c8-111">On the command bar, select **Edit**.</span></span>
-1. <span data-ttu-id="794c8-112">Wybierz obraz, by wejść w **tryb edycji**.</span><span class="sxs-lookup"><span data-stu-id="794c8-112">Select the image to enter **Edit Mode**.</span></span>
-1. <span data-ttu-id="794c8-113">W obszarze **tryb edycji** wybierz opcję **Edytuj widok według modułów**.</span><span class="sxs-lookup"><span data-stu-id="794c8-113">Under **Edit Mode**, select **Edit View by Module**.</span></span>
-1. <span data-ttu-id="794c8-114">Z menu rozwijanego **moduł** wybierz typ modułu.</span><span class="sxs-lookup"><span data-stu-id="794c8-114">From the **Module** drop-down menu, select the module type.</span></span>
-1. <span data-ttu-id="794c8-115">Z menu rozwijanego **Wyświetl typ** wybierz typ wyświetlania.</span><span class="sxs-lookup"><span data-stu-id="794c8-115">From the **View type** drop-down menu, select the view type.</span></span>
-1. <span data-ttu-id="794c8-116">Z menu rozwijanego **Umieszczenie** wybierz umieszczenie obrazu.</span><span class="sxs-lookup"><span data-stu-id="794c8-116">From the **Placement** drop-down menu, select the image placement.</span></span>
-1. <span data-ttu-id="794c8-117">Z menu rozwijanego **Okienko ekranu** wybierz typ rozmiar okienka.</span><span class="sxs-lookup"><span data-stu-id="794c8-117">From the **Viewport** drop-down menu, select the viewport size.</span></span>
-1. <span data-ttu-id="794c8-118">Obraz jest nałożony na obszar odpowiadający regionowi przycinania.</span><span class="sxs-lookup"><span data-stu-id="794c8-118">The image is overlaid with the area representing the crop region.</span></span> <span data-ttu-id="794c8-119">W razie potrzeby Przenieś obszar kadrowania i zmień jego rozmiar.</span><span class="sxs-lookup"><span data-stu-id="794c8-119">Move and resize the crop region as needed.</span></span> <span data-ttu-id="794c8-120">Współczynnik proporcji będzie obsługiwany automatycznie.</span><span class="sxs-lookup"><span data-stu-id="794c8-120">The aspect ratio will be maintained automatically.</span></span>
-1. <span data-ttu-id="794c8-121">Po zakończeniu pracy na pasku poleceń wybierz opcję **Zapisz**, a następnie wybierz opcję **Zakończ edycję**.</span><span class="sxs-lookup"><span data-stu-id="794c8-121">When you're done, on the command bar, select **Save**, and then select **Finish editing**.</span></span> 
+1. <span data-ttu-id="657cb-109">W lewym okienku nawigacyjnym w module kreatora witryn Commerce wybierz **bibliotekę multimediów**.</span><span class="sxs-lookup"><span data-stu-id="657cb-109">In the left navigation pane of Commerce site builder, select **Media Library**.</span></span>
+1. <span data-ttu-id="657cb-110">W oknie głównym wybierz obraz, który chcesz zmodyfikować.</span><span class="sxs-lookup"><span data-stu-id="657cb-110">In the main window, select the image you want to modify.</span></span>
+1. <span data-ttu-id="657cb-111">Na pasku poleceń wybierz opcję **Edytuj**.</span><span class="sxs-lookup"><span data-stu-id="657cb-111">On the command bar, select **Edit**.</span></span>
+1. <span data-ttu-id="657cb-112">Wybierz obraz, by wejść w **tryb edycji**.</span><span class="sxs-lookup"><span data-stu-id="657cb-112">Select the image to enter **Edit Mode**.</span></span>
+1. <span data-ttu-id="657cb-113">W obszarze **tryb edycji** wybierz opcję **Edytuj widok według modułów**.</span><span class="sxs-lookup"><span data-stu-id="657cb-113">Under **Edit Mode**, select **Edit View by Module**.</span></span>
+1. <span data-ttu-id="657cb-114">Z menu rozwijanego **moduł** wybierz typ modułu.</span><span class="sxs-lookup"><span data-stu-id="657cb-114">From the **Module** drop-down menu, select the module type.</span></span>
+1. <span data-ttu-id="657cb-115">Z menu rozwijanego **Wyświetl typ** wybierz typ wyświetlania.</span><span class="sxs-lookup"><span data-stu-id="657cb-115">From the **View type** drop-down menu, select the view type.</span></span>
+1. <span data-ttu-id="657cb-116">Z menu rozwijanego **Umieszczenie** wybierz umieszczenie obrazu.</span><span class="sxs-lookup"><span data-stu-id="657cb-116">From the **Placement** drop-down menu, select the image placement.</span></span>
+1. <span data-ttu-id="657cb-117">Z menu rozwijanego **Okienko ekranu** wybierz typ rozmiar okienka.</span><span class="sxs-lookup"><span data-stu-id="657cb-117">From the **Viewport** drop-down menu, select the viewport size.</span></span>
+1. <span data-ttu-id="657cb-118">Obraz jest nałożony na obszar odpowiadający regionowi przycinania.</span><span class="sxs-lookup"><span data-stu-id="657cb-118">The image is overlaid with the area representing the crop region.</span></span> <span data-ttu-id="657cb-119">W razie potrzeby Przenieś obszar kadrowania i zmień jego rozmiar.</span><span class="sxs-lookup"><span data-stu-id="657cb-119">Move and resize the crop region as needed.</span></span> <span data-ttu-id="657cb-120">Współczynnik proporcji będzie obsługiwany automatycznie.</span><span class="sxs-lookup"><span data-stu-id="657cb-120">The aspect ratio will be maintained automatically.</span></span>
+1. <span data-ttu-id="657cb-121">Po zakończeniu pracy na pasku poleceń wybierz opcję **Zapisz**, a następnie wybierz opcję **Zakończ edycję**.</span><span class="sxs-lookup"><span data-stu-id="657cb-121">When you're done, on the command bar, select **Save**, and then select **Finish editing**.</span></span> 
 
-<span data-ttu-id="794c8-122">Po zakończeniu przycinania niestandardowego modyfikacje obrazów zaczną obowiązywać niemal natychmiast.</span><span class="sxs-lookup"><span data-stu-id="794c8-122">After custom cropping is completed, image modifications will take effect almost immediately.</span></span>
+<span data-ttu-id="657cb-122">Po zakończeniu przycinania niestandardowego modyfikacje obrazów zaczną obowiązywać niemal natychmiast.</span><span class="sxs-lookup"><span data-stu-id="657cb-122">After custom cropping is completed, image modifications will take effect almost immediately.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="794c8-123">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="794c8-123">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="657cb-123">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="657cb-123">Additional resources</span></span>
 
-[<span data-ttu-id="794c8-124">Omówienie zarządzania cyfrowymi składnikami majątku</span><span class="sxs-lookup"><span data-stu-id="794c8-124">Digital asset management overview</span></span>](dam-overview.md)
+[<span data-ttu-id="657cb-124">Omówienie zarządzania cyfrowymi składnikami majątku</span><span class="sxs-lookup"><span data-stu-id="657cb-124">Digital asset management overview</span></span>](dam-overview.md)
 
-[<span data-ttu-id="794c8-125">Przekazanie obrazów</span><span class="sxs-lookup"><span data-stu-id="794c8-125">Upload images</span></span>](dam-upload-images.md)
+[<span data-ttu-id="657cb-125">Przekazanie obrazów</span><span class="sxs-lookup"><span data-stu-id="657cb-125">Upload images</span></span>](dam-upload-images.md)
 
-[<span data-ttu-id="794c8-126">Przekazanie wideo</span><span class="sxs-lookup"><span data-stu-id="794c8-126">Upload video</span></span>](dam-upload-video.md)
+[<span data-ttu-id="657cb-126">Przekazanie wideo</span><span class="sxs-lookup"><span data-stu-id="657cb-126">Upload video</span></span>](dam-upload-video.md)
 
-[<span data-ttu-id="794c8-127">Przekaż pliki</span><span class="sxs-lookup"><span data-stu-id="794c8-127">Upload files</span></span>](dam-upload-files.md)
+[<span data-ttu-id="657cb-127">Przekaż pliki</span><span class="sxs-lookup"><span data-stu-id="657cb-127">Upload files</span></span>](dam-upload-files.md)
 
-[<span data-ttu-id="794c8-128">Dostosowywanie punktów ogniskowych obrazu</span><span class="sxs-lookup"><span data-stu-id="794c8-128">Customize image focal points</span></span>](dam-custom-focal-point.md)
+[<span data-ttu-id="657cb-128">Dostosowywanie punktów ogniskowych obrazu</span><span class="sxs-lookup"><span data-stu-id="657cb-128">Customize image focal points</span></span>](dam-custom-focal-point.md)
 
-[<span data-ttu-id="794c8-129">Przekazywanie i obsługiwanie plików statycznych</span><span class="sxs-lookup"><span data-stu-id="794c8-129">Upload and serve static files</span></span>](upload-serve-static-files.md)
+[<span data-ttu-id="657cb-129">Przekazywanie i obsługiwanie plików statycznych</span><span class="sxs-lookup"><span data-stu-id="657cb-129">Upload and serve static files</span></span>](upload-serve-static-files.md)
