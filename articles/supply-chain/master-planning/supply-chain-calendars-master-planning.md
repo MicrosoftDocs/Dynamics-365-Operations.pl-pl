@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435246"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001806"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendarze i planowanie główne
 
@@ -143,6 +142,3 @@ W kontekście kalendarza grupy zapotrzebowania należy wziąć pod uwagę, że j
 
 ### <a name="updating-scm-related-calendars"></a>Aktualizowanie kalendarzy związanych z SCM
 Wszystkie odpowiednie kalendarze powinny być przypisywane w ich odpowiednich miejscach (dostawca, odbiorca, magazyn, tryb dostawy lub grupa zapotrzebowania), ale równie ważne jest ich aktualizowanie zgodnie z zachodzącymi zmianami. System określi daty zamówień produkcji, przeniesienia, zakupu i sprzedaży w zależności od kombinacji przypisanych kalendarzy. Najlepszym rozwiązaniem jest wyjaśnienie, kto odpowiada za przydzielanie i aktualizowanie kalendarzy w odpowiadających im obszarach. W przypadku awarii lub innych nadzwyczajnych zmiany w daniach roboczych należy konieczne zaktualizować kalendarze zgodnie z tymi okolicznościami. Wszystkie zadania, które zależą od kalendarzy, takie jak planowanie główne i planowanie produkcji, muszą zostać uruchomiony ponownie po wykonaniu aktualizacji kalendarzy. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

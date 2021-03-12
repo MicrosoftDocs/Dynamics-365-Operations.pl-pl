@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemainLimit, RCashReportJour_PL, RCashTable, RCashTableBalance, RCashTableCredLimit, RCashTableLastRevaluation, RCashTableTransactions, RCashTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c22da535afeeb7e57c19ecc2c4f221be1e124da3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408399"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002866"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Zarządzanie gotówką podręczną dla Europy Wschodniej i Rosji
 
@@ -479,6 +478,3 @@ Rozliczona kwota znajduje odzwierciedlenie w polu <strong>Rozliczona waluta</str
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

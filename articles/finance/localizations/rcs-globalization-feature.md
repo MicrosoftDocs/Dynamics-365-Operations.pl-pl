@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: ae46dab5250fbe8096f43e420cb7ef33a5862af0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b701e6bfa14ac30e02bfe79666963db4ee657302
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446707"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002801"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Usługi Regulatory Configuration Services (RCS) — funkcje globalizacji
 
@@ -252,6 +251,3 @@ Użytkownicy usług globalizacji mogą zarządzać środowiskiem, aby skonfiguro
 10. Wybierz opcję **Publikuj**, aby opublikować środowisko.
 
     ![Opublikowane środowisko](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

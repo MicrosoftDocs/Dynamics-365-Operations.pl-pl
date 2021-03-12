@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f89203850b302b769b22920fa5c42d2b0b877684
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bed4cfb4875231d11ad76e4403c7995519d56e73
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414973"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003685"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurowanie i realizowanie zadań księgowania zestawień
 
@@ -44,6 +43,3 @@ Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadani
 8. Kliknij przycisk OK.
 9. Kliknij przycisk OK.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

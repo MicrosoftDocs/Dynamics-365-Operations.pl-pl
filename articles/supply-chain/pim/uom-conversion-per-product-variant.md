@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435511"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001706"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 
@@ -59,7 +58,7 @@ Aby skonfigurować produkt główny w celu obsługi konwersji jednostek na waria
     - **Produkt** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla produktu głównego. Ta konwersja jednostek będzie używana jako rezerwowa dla wszystkich wariantów produktu, dla których nie zdefiniowano żadnej konwersji jednostek.
     - **Wariant produktu** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla określonego wariantu produktu. Użyj pola **Wariant produktu**, aby wybrać wariant.
 
-    ![![Dodawanie nowej konwersji jednostek](media/uom-new-conversion.png "Dodawanie nowej konwersji jednostek")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Dodawanie nowej konwersji jednostek](media/uom-new-conversion.png "Dodawanie nowej konwersji jednostek")
 
 1. Aby skonfigurować konwersję jednostek, skorzystaj z dostępnych pól.
 1. Wybierz przycisk **OK**, aby zapisać nową konwersję jednostek.
@@ -107,6 +106,3 @@ Aby wyeksportować konwersje jednostek do programu Excel, na stronie **Konwersje
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zarządzanie jednostką miary](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

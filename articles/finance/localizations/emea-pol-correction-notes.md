@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263404
 ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 373d50abb6745b56865277e5ad9a29f741768211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0c4a92d6f291104a9d792d5e183a5a751bfaa9b7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408398"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002855"
 ---
 # <a name="correction-notes"></a>Noty korygujące
 
@@ -47,6 +46,3 @@ Jeśli dostawca wystawia firmie dokument sprzedaży, ale błędnie wpisze adres 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

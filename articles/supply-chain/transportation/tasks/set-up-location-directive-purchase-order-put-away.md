@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fd6814163afba0c5b4c99e45a703b00948b73d6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435594"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004909"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu
 
@@ -86,6 +85,3 @@ W tym temacie wyjaśniono sposób konfigurowania prostej dyrektywy lokalizacji. 
 4. W polu **Kryteria** wpisz wartość.
 5. Kliknij przycisk **OK**. Można kontynuować dodawanie wierszy dyrektywy i działań dyrektywy, aż zostaną objęte wszystkie możliwe scenariusze w magazynie.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

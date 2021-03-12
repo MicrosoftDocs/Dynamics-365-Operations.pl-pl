@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 985d3cbba4ab662a11987152eb66941da6dbb7eb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446672"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003393"
 ---
 # <a name="collections-in-accounts-receivable"></a>Windykacje w module Rozrachunki z odbiorcami
 
@@ -111,6 +110,3 @@ Klikając płatności przy niewystarczających funduszach na stronie kolekcje mo
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 11464
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad77b65f38b5f3b792e61634f09da916470d2d1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db8dab0aef0349632d19ad407336a18641c358d1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408366"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002977"
 ---
 # <a name="foreign-currency-revaluation-for-bank-accounts"></a>Przeszacowanie w walucie obcej dla kont bankowych
 
@@ -72,6 +71,3 @@ Musisz przeszacować i dostosować konta bankowe, jeśli istnieje różnica kurs
 
 > [!NOTE]
 > W księdze głównej są wyświetlane dwie oddzielne transakcje: jedna w walucie rozliczeniowej i jedna w walucie raportowania.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

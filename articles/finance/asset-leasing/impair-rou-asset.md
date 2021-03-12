@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 9822a11dbb277726b60ff82843bd26314e968345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4447009"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003263"
 ---
 # <a name="impair-right-of-use-assets"></a>Utrata wartości składników majątku z prawem do użytkowania
 
@@ -102,6 +101,3 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
 7. Aby wyświetlić efekt netto utraty wartości, przejdź do tabeli transakcji na pasywach i aktywach. Zauważ, że wydatek utraty wartości zmniejszył wartość składnika majątku z PDU, ale wartość bilansowa zobowiązania z tytułu wynajmu nie uległa zmianie.
 
 Utrata wartości ma jeszcze jeden efekt, który należy wziąć pod uwagę. Ponieważ wartość składnika majątku z PDU jest teraz znacznie mniejsza od wartości zobowiązania z tytułu wynajmu, musi być amortyzowana inaczej niż wcześniej. Dokładniej rzecz biorąc składnik majątku jest teraz amortyzowany liniowo przez pozostałe 84 miesiące wynajmu, licząc od daty transakcji.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

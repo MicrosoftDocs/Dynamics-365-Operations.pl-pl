@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustVendTransPostingLog_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 270544
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d527f5417ddee57a54b0d65b1de0b4c8ced6ab75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd01c97b170a7f29ad87617d5071b1860a522b27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005908"
 ---
 # <a name="view-transactions-on-settlement-for-eastern-europe"></a>Wyświetlanie transakcji w rozliczeniu dla Europy Wschodniej
 
@@ -48,6 +47,3 @@ Informacje dotyczące rozliczenia są rejestrowane i mogą być wyświetlane na 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

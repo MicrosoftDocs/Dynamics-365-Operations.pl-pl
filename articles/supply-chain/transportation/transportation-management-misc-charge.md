@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2b703d770c7f9ea684716368cf1e7dbe5fec8710
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: cb503072fb76e04aa01ff2d231c756eeb244c65a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435693"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004709"
 ---
 # <a name="transportation-management-miscellaneous-charges"></a>Dodatkowe opłaty za zarządzanie transportem
 
@@ -31,6 +30,3 @@ Podobnie jak w przypadku wszystkich innych opłat, opłaty generowane przez tran
 Przejdź do **Zarządzanie transportem > Konfiguracja > Ocena > Opłaty różne**, aby zdefiniować kryteria kwalifikujące, które określają, kiedy dany **Kod opłat** jest stosowany do opłaty.
 
 Należy mieć co najmniej jedną konfigurację dla każdego odpowiedniego ustawienia **Modułu opłat** (*Odbiorca* i *Dostawca*), gdzie **Typ opłaty dodatkowej** jest ustawiony jako *Brak*. Jeśli nie ma takiej konfiguracji, opłata dodatkowa *nie* zostanie dodana do zamówienia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

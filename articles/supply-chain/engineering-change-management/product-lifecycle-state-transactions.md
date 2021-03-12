@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005334"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stany cyklu życia produktu i transakcje
 
@@ -76,6 +75,3 @@ Następujące pola są dostępne dla każdego procesu wymienionego na skróconej
 | Zasady | Wybierz jedną z następujących wartości, aby określić, czy i w jaki sposób bieżący proces będzie dozwolony dla produktów znajdujących się w tym stanie cyklu życia:<ul><li>**Włączone** — proces biznesowy jest dozwolony.</li><li>**Zablokowano** — proces nie jest dozwolony. Jeśli użytkownik spróbuje użyć procesu na produkcie, który jest w tym stanie cyklu życia, system zablokuje próbę i zamiast tego wyświetli błąd. Na przykład można blokować produkty wycofane z eksploatacji od zakupu.</li><li>**Włączone z ostrzeżeniem** — proces jest dozwolony, ale zostanie wyświetlone ostrzeżenie. Na przykład możesz chcieć, aby prototypowy produkt został umieszczony w zleceniu produkcyjnym, które jest tworzone przez dział badań i rozwoju. Jednak inne działy powinny mieć świadomość, że nie powinni jeszcze generować produktu.</li></ul> |
 
 Jeśli dodajesz więcej reguł stanu cyklu życia jako dostosowanie, możesz wyświetlić te reguły w interfejsie użytkownika (UI), wybierając **Odśwież procesy** w górnym panelu. Przycisk **Odśwież procesy** jest dostępny tylko dla administratorów.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

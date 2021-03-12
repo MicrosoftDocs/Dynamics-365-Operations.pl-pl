@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventCostDimParmFixed
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26adc89c2f4f71a1b989a44c32fc5b2133a31134
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9ea74aa6efd4cd29c6c5deca9917224f8cfd605c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435355"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002005"
 ---
 # <a name="view-cost-object-balance"></a>Wyświetlanie salda obiektu kosztu
 
@@ -40,6 +39,3 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 8. Wyczyść pole wyboru Lokalizacja.
 9. Kliknij przycisk OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

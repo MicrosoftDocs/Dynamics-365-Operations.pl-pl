@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435544"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004634"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
 
@@ -120,7 +119,7 @@ Strategia FIFO znajduje lokalizację, która zawiera najstarszą datę wiekowani
 1. Na stronie **Zamówienie sprzedaży** w okienku akcji na karcie **Magazyn** wybierz grupę **Akcje** i wybierz **Zwolnij do magazynu**. Zostanie wyświetlony komunikat. System tworzy wysyłkę, dodaje ją do nowego ładunku i tworzy wymaganą pracę.
 1. Na skróconej karcie **Wiersze zamówienia sprzedaży** w menu **Magazyn** wybierz opcję **Szczegóły pracy**, aby otworzyć pracę utworzoną dla tego zamówienia sprzedaży. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie*, wskazuje wartość **Lokalizacja** jako *FL-002*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najstarszą datę wiekowania (FIFO).
 1. Wybierz **Magazyn \> Szczegóły wysyłki**.
-1. Na skróconej karcie ***Ogólne** zauważ identyfikator grupy czynności, aby można było z niej skorzystać w scenariuszu 2.
+1. Na skróconej karcie **_Ogólne_* zanotuj identyfikator grupy czynności, aby można było z niego skorzystać w scenariuszu 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenariusz 2: Konfigurowanie i używanie przedawnienia lokalizacji LIFO
 
@@ -140,6 +139,3 @@ Strategia LIFO znajduje lokalizację, która zawiera najnowszą datę wiekowania
 1. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie*, wskazuje wartość **Lokalizacja** jako *FL-001*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najnowszą datę wiekowania (LIFO).
 
 W tych scenariuszach można było zobaczyć, jak strategia wiekowania lokalizacji kieruje pracę do lokalizacji zapasów, w której znajdują się najstarsze lub najnowsze zapasy, w zależności od wybranej strategii.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

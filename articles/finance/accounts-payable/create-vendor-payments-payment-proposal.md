@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57e8ce38241933b16252f1c918b0f763a8f1be08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b047a1abaa6b19096740f589281c837643d796b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446776"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003535"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Tworzenie płatności od dostawców za pomocą propozycji płatności
 
@@ -69,7 +68,7 @@ W dniu 1 lipca April płaci dostawcom. Używa propozycji płatności, aby szybci
 
 ### <a name="option-1-by-cash-discount"></a>Opcja 1: Według rabatu gotówkowego
 
-April wybiera **rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
+April wybiera **Rabat gotówkowy** jako typ propozycji. Wprowadza zakres dat od 26 czerwca do 10 lipca. W propozycji zostaną uwzględnione następujące faktury:
 
 -   1002, ponieważ data rabatu 4 lipca mieści się w zakresie dat płatności.
 -   1004, ponieważ data rabatu 1 lipca mieści się w zakresie dat płatności.
@@ -119,10 +118,7 @@ Funkcja kontroli wymiarów umożliwia kontrolowanie grupowania wierszy generowan
 
 #### <a name="bank-account-selection"></a>Wybór konta bankowego
 
-Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Te kombinacje można skonfigurować na stronie **Metody płatności**, naciskając przycisk  **Konta bankowe** dostępny dla każdej metody płatności i wybierając ustawienie **Typ konta księgowania** = **Bank**.
+Dla każdej metody płatności można zdefiniować standardowe konto płatności obciążających niezależnie od kontekstu krajowego. Konto jest ustawiane w wierszach płatności generowanych przez propozycję. Za pomocą funkcji konta bankowego można zdefiniować wiele kont bankowych obciążeń, które będą zarządzane według wymiaru i waluty lub ich dowolnej kombinacji, i używać różnych kont zależnie od potrzeb. Te kombinacje można skonfigurować na stronie **Metody płatności**, naciskając przycisk **Konta bankowe** dostępny dla każdej metody płatności i wybierając ustawienie **Typ konta księgowania** = **Bank**.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c1e9a566b7dc4dc2ed1970294a22e72b0bd21a7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408367"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003013"
 ---
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
@@ -160,6 +159,3 @@ Po zakończeniu procesu generowania raportów w danym okresie (na przykład, kie
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6e2919c003d1dc67b988345260b2747364752222
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435615"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004784"
 ---
 # <a name="immediate-replenishment"></a>Natychmiastowe uzupełnianie zapasów
 
@@ -57,6 +56,3 @@ Jeśli funkcja natychmiastowego uzupełniania zapasów jest wybrana dla wiersza 
 
 - Upewnij się, że zastosowany szablon uzupełnienia zapasów popytu jest skonfigurowany tak, aby używał poprawnych szablonów lokalizacji i szablonów pracy typu **Uzupełnianie zapasów**.
 - Upewnij się, że jest wystarczająca ilość dostępnych zapasów w lokalizacjach, gdzie szablon uzupełniania zapasów popytu szuka dostępnych zapasów dla uzupełnienia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

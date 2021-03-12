@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14341
 ms.assetid: 7bd02e32-2416-4ac6-8a60-85525267fdb7
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a4632056d6873cfeb748251c77becc410f5cf54
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 90a8ec6fa1515b179b0cf1df034d8217b926cc5a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446847"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003560"
 ---
 # <a name="centralized-payments-for-accounts-payable"></a>Scentralizowane płatności dla rozrachunków z dostawcami
 
@@ -301,6 +300,3 @@ Firma Fabrikam generuje płatność w kwocie 75,00 na koncie 3004 dostawcy, Four
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

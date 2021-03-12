@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005384"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametry zarządzania zmianami projektowymi
 
@@ -57,6 +56,3 @@ W poniższej tabeli opisano pola dostępne na **karcie Zarządzanie zmianami in�
 | Reguła ważności | Umożliwia wybranie sposobu ustanawiania wagi zlecenia zmiany inżynieryjnej. Jeśli użytkownik oczekuje na wprowadzenie wartości w polu **Ważność**, należy wybrać opcję *ręcznie*. Wybierz opcję *Oblicz* aby system obliczał wartość pola **Ważność** po wybraniu opcji **Oblicz ważność** w okienku akcji w żądaniu zmiany inżynieryjnej. W takim przypadku system będzie używał reguł ważności zdefiniowanych na **stronie zestawów reguł ważności**. Wybierz opcję *Oblicz automatycznie* aby wartość **pola ważności** była automatycznie obliczana i wypełniana zgodnie z zestawami reguł ważności. |
 | Ponowne zwolnienie produktów objętych wpływem | To pole jest używane podczas ponownego wydawania produktów za pośrednictwem zlecenia zmiany inżynierskiej. W oknie dialogowym **zwalnianie** można określić, czy mają być proponowane wszystkie produkty, czy tylko produkty, których dotyczy problem. |
 | Poziomy BOM do zwolnienia | Głębokość poziomu BOM do wydania. Jeśli BOM ma więcej poziomów (o ile jest głębszy) niż wartość określona w tym miejscu, zostaną zwolnione tylko poziomy określone przez określoną wartość. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

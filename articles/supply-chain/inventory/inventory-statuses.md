@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eca9d3e4e15d11d2a9a1b531028de230ffc43913
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594609"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001831"
 ---
 # <a name="inventory-statuses"></a>Stany zapasów
 
@@ -65,6 +64,3 @@ Stany zapasów można zmieniać przy użyciu strony **Dostępne zapasy według l
 > - Na stronie **Dostępne zapasy według lokalizacji** można grupować wiersze na podstawie wyświetlonych wymiarów, korzystając z przycisku **Wyświetl wymiary**, i zmieniać stan w wybranych wierszach.
 > - Na stronie **Dostępne zapasy według lokalizacji** można wybrać wiele rekordów, a następnie za pomocą przycisku **Zmiana stanu zapasów** zmienić wszystkie te rekordy jednocześnie.
 > - W przypadku zadania okresowego **Zmiana stanu zapasów** użytkownik może filtrować wiersze według wymiarów śledzenia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

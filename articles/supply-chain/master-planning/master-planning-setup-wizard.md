@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f2ec94b8d3bce9ca9fb565fe06b268f5c7458fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435353"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005034"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
@@ -209,6 +208,3 @@ W kreatorze są wprowadzane następujące wartości dla Contoso Retailer:
     - **Odpowiedź:** „Tak, zgodnie z definicją w planie głównym”. Wprowadzana jest wartość **1 dzień**.
 
     Contoso używa zatwierdzonych zapotrzebowań ze sklepów, aby tworzyć planowane zamówienia zakupu w celu uzupełnienia tych magazynów. Ponieważ planowanie główne jest uruchamiane każdego dnia, zapotrzebowania z ostatniego dnia zostaną uwzględnione w planowaniu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
