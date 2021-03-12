@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,31 +18,31 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a4f701a85979cce3fa4840b48279c45ec565612b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2616c613e5f6b99c19afad33860aaf0e84d16fe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435455"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999913"
 ---
-# <a name="view-plan-history-and-planning-logs"></a><span data-ttu-id="8f4f5-103">Wyświetlanie dzienników historii i planowania planów</span><span class="sxs-lookup"><span data-stu-id="8f4f5-103">View plan history and planning logs</span></span>
+# <a name="view-plan-history-and-planning-logs"></a><span data-ttu-id="7eff7-103">Wyświetlanie dzienników historii i planowania planów</span><span class="sxs-lookup"><span data-stu-id="7eff7-103">View plan history and planning logs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="8f4f5-104">W tym temacie opisano sposób wyświetlania historii zadań planowania wyzwalanych przez funkcję optymalizacji planowania w Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-104">This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="7eff7-104">W tym temacie opisano sposób wyświetlania historii zadań planowania wyzwalanych przez funkcję optymalizacji planowania w Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="7eff7-104">This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.</span></span>
 
-<span data-ttu-id="8f4f5-105">Aby wyświetlić historię planu, należy otworzyć plan, przechodząc do **Planowanie główne** \> **Ustawienia** \> **Plany** \> **Plany główne** i wybierając opcję **historia**.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-105">To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**.</span></span> <span data-ttu-id="8f4f5-106">Historia zawiera listę wszystkich zadań wybranego planu.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-106">The history lists all the jobs for the selected plan.</span></span> <span data-ttu-id="8f4f5-107">Lista zawiera zakończone i aktywne zadania.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-107">The list includes completed and active jobs.</span></span>
+<span data-ttu-id="7eff7-105">Aby wyświetlić historię planu, należy otworzyć plan, przechodząc do **Planowanie główne** \> **Ustawienia** \> **Plany** \> **Plany główne** i wybierając opcję **historia**.</span><span class="sxs-lookup"><span data-stu-id="7eff7-105">To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**.</span></span> <span data-ttu-id="7eff7-106">Historia zawiera listę wszystkich zadań wybranego planu.</span><span class="sxs-lookup"><span data-stu-id="7eff7-106">The history lists all the jobs for the selected plan.</span></span> <span data-ttu-id="7eff7-107">Lista zawiera zakończone i aktywne zadania.</span><span class="sxs-lookup"><span data-stu-id="7eff7-107">The list includes completed and active jobs.</span></span>
 
-<span data-ttu-id="8f4f5-108">Oprócz wyświetlania czasu rozpoczęcia i stanu zadań można wyświetlać dziennik dla określonego zadania.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-108">In addition to seeing the start time and status of jobs, you can view the log for a specific job.</span></span> <span data-ttu-id="8f4f5-109">Dziennik zawiera dodatkowe informacje i ostrzeżenia.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-109">The log includes additional information and warnings.</span></span> <span data-ttu-id="8f4f5-110">Nie wszystkie zadania mają dziennik.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-110">Not all jobs have a log.</span></span> <span data-ttu-id="8f4f5-111">Aby wyświetlić dziennik zadania, wybierz opcję **dziennik**.</span><span class="sxs-lookup"><span data-stu-id="8f4f5-111">To view the log for a job, select **Log**.</span></span>
+<span data-ttu-id="7eff7-108">Oprócz wyświetlania czasu rozpoczęcia i stanu zadań można wyświetlać dziennik dla określonego zadania.</span><span class="sxs-lookup"><span data-stu-id="7eff7-108">In addition to seeing the start time and status of jobs, you can view the log for a specific job.</span></span> <span data-ttu-id="7eff7-109">Dziennik zawiera dodatkowe informacje i ostrzeżenia.</span><span class="sxs-lookup"><span data-stu-id="7eff7-109">The log includes additional information and warnings.</span></span> <span data-ttu-id="7eff7-110">Nie wszystkie zadania mają dziennik.</span><span class="sxs-lookup"><span data-stu-id="7eff7-110">Not all jobs have a log.</span></span> <span data-ttu-id="7eff7-111">Aby wyświetlić dziennik zadania, wybierz opcję **dziennik**.</span><span class="sxs-lookup"><span data-stu-id="7eff7-111">To view the log for a job, select **Log**.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="8f4f5-112">Powiązane zasoby</span><span class="sxs-lookup"><span data-stu-id="8f4f5-112">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="7eff7-112">Powiązane zasoby</span><span class="sxs-lookup"><span data-stu-id="7eff7-112">Related resources</span></span>
 
-[<span data-ttu-id="8f4f5-113">Omówienie planowania optymalizacji</span><span class="sxs-lookup"><span data-stu-id="8f4f5-113">Planning Optimization overview</span></span>](planning-optimization-overview.md)
+[<span data-ttu-id="7eff7-113">Omówienie planowania optymalizacji</span><span class="sxs-lookup"><span data-stu-id="7eff7-113">Planning Optimization overview</span></span>](planning-optimization-overview.md)
 
-[<span data-ttu-id="8f4f5-114">Rozpocznij pracę z optymalizacją planowania</span><span class="sxs-lookup"><span data-stu-id="8f4f5-114">Get started with Planning Optimization</span></span>](get-started.md)
+[<span data-ttu-id="7eff7-114">Rozpocznij pracę z optymalizacją planowania</span><span class="sxs-lookup"><span data-stu-id="7eff7-114">Get started with Planning Optimization</span></span>](get-started.md)
 
-[<span data-ttu-id="8f4f5-115">Analiza dopasowywania optymalizacją planowania</span><span class="sxs-lookup"><span data-stu-id="8f4f5-115">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
+[<span data-ttu-id="7eff7-115">Analiza dopasowywania optymalizacją planowania</span><span class="sxs-lookup"><span data-stu-id="7eff7-115">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
 
-[<span data-ttu-id="8f4f5-116">Stosowanie filtrów do planu</span><span class="sxs-lookup"><span data-stu-id="8f4f5-116">Apply filters to a plan</span></span>](plan-filters.md)
+[<span data-ttu-id="7eff7-116">Stosowanie filtrów do planu</span><span class="sxs-lookup"><span data-stu-id="7eff7-116">Apply filters to a plan</span></span>](plan-filters.md)
 
-[<span data-ttu-id="8f4f5-117">Anuluj planowanie pracy</span><span class="sxs-lookup"><span data-stu-id="8f4f5-117">Cancel a planning job</span></span>](cancel-planning-job.md)
+[<span data-ttu-id="7eff7-117">Anuluj planowanie pracy</span><span class="sxs-lookup"><span data-stu-id="7eff7-117">Cancel a planning job</span></span>](cancel-planning-job.md)

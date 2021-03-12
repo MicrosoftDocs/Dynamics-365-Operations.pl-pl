@@ -11,46 +11,45 @@ ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3903f1fe5b5f7d2755ec895eded73de6d165e68e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f52c868cda97e7da5ebb6107fc2c6fe4605d05f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435053"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001381"
 ---
-# <a name="create-service-subscriptions-from-a-project"></a><span data-ttu-id="70ce2-103">Tworzenie subskrypcji serwisu na podstawie projektu</span><span class="sxs-lookup"><span data-stu-id="70ce2-103">Create service subscriptions from a project</span></span>    
+# <a name="create-service-subscriptions-from-a-project"></a><span data-ttu-id="60573-103">Tworzenie subskrypcji serwisu na podstawie projektu</span><span class="sxs-lookup"><span data-stu-id="60573-103">Create service subscriptions from a project</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="70ce2-104">Można utworzyć subskrypcję serwisu na podstawie projektu w module **Zarządzanie projektami i ich księgowanie**.</span><span class="sxs-lookup"><span data-stu-id="70ce2-104">You can create a service subscription from a project in **Project management and accounting**.</span></span>
+<span data-ttu-id="60573-104">Można utworzyć subskrypcję serwisu na podstawie projektu w module **Zarządzanie projektami i ich księgowanie**.</span><span class="sxs-lookup"><span data-stu-id="60573-104">You can create a service subscription from a project in **Project management and accounting**.</span></span>
 
-1.  <span data-ttu-id="70ce2-105">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** \> **Wspólne** \> **Projekty** \> **Wszystkie projekty**.</span><span class="sxs-lookup"><span data-stu-id="70ce2-105">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span> <span data-ttu-id="70ce2-106">Otwórz projekt, dla którego ma zostać utworzona subskrybcja.</span><span class="sxs-lookup"><span data-stu-id="70ce2-106">Open the project that you want to create a subscription for.</span></span>
+1.  <span data-ttu-id="60573-105">Kliknij kolejno opcje **Zarządzanie projektami i ich księgowanie** \> **Wspólne** \> **Projekty** \> **Wszystkie projekty**.</span><span class="sxs-lookup"><span data-stu-id="60573-105">Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**.</span></span> <span data-ttu-id="60573-106">Otwórz projekt, dla którego ma zostać utworzona subskrybcja.</span><span class="sxs-lookup"><span data-stu-id="60573-106">Open the project that you want to create a subscription for.</span></span>
 
-2.  <span data-ttu-id="70ce2-107">W formularzu **Projekty** w **okienku akcji** na karcie **Zarządzaj** kliknij kolejno opcje **Serwis** \> **Subskrypcja serwisu**.</span><span class="sxs-lookup"><span data-stu-id="70ce2-107">On the **Projects** form, on the **Action Pane**, on the **Manage** tab, click **Service** \> **Service subscription**.</span></span>
+2.  <span data-ttu-id="60573-107">W formularzu **Projekty** w **okienku akcji** na karcie **Zarządzaj** kliknij kolejno opcje **Serwis** \> **Subskrypcja serwisu**.</span><span class="sxs-lookup"><span data-stu-id="60573-107">On the **Projects** form, on the **Action Pane**, on the **Manage** tab, click **Service** \> **Service subscription**.</span></span>
 
-3.  <span data-ttu-id="70ce2-108">W formularzu **Subskrypcja** w polu **Subskrypcja serwisu** wprowadź unikatowy numer identyfikacyjny.</span><span class="sxs-lookup"><span data-stu-id="70ce2-108">On the **Subscription** form, in the **Service subscription** field, enter a unique identification number.</span></span> <span data-ttu-id="70ce2-109">Numer projektu zostanie automatycznie wprowadzony do subskrypcji dla wybranego projektu.</span><span class="sxs-lookup"><span data-stu-id="70ce2-109">The project number is entered automatically into the subscription for the selected project.</span></span>
+3.  <span data-ttu-id="60573-108">W formularzu **Subskrypcja** w polu **Subskrypcja serwisu** wprowadź unikatowy numer identyfikacyjny.</span><span class="sxs-lookup"><span data-stu-id="60573-108">On the **Subscription** form, in the **Service subscription** field, enter a unique identification number.</span></span> <span data-ttu-id="60573-109">Numer projektu zostanie automatycznie wprowadzony do subskrypcji dla wybranego projektu.</span><span class="sxs-lookup"><span data-stu-id="60573-109">The project number is entered automatically into the subscription for the selected project.</span></span>
 
-4.  <span data-ttu-id="70ce2-110">Wprowadź pozostałe informacje w grupie formularzu .</span><span class="sxs-lookup"><span data-stu-id="70ce2-110">Enter the remaining information in the form.</span></span>
+4.  <span data-ttu-id="60573-110">Wprowadź pozostałe informacje w grupie formularzu .</span><span class="sxs-lookup"><span data-stu-id="60573-110">Enter the remaining information in the form.</span></span>
 
-<span data-ttu-id="70ce2-111">Teraz możesz tworzyć transakcje dotyczące subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="70ce2-111">You can now create subscription transactions for the subscription.</span></span>
+<span data-ttu-id="60573-111">Teraz możesz tworzyć transakcje dotyczące subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="60573-111">You can now create subscription transactions for the subscription.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="70ce2-112">Jeśli jest skonfigurowana sekwencja numerów dla grupy subskrypcji, identyfikator subskrypcji jest generowany automatycznie w momencie określenia grupy subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="70ce2-112">If you have set up a number sequence for the subscription group, a subscription ID is generated automatically for the subscription when you specify the subscription group.</span></span></P>
+> <P><span data-ttu-id="60573-112">Jeśli jest skonfigurowana sekwencja numerów dla grupy subskrypcji, identyfikator subskrypcji jest generowany automatycznie w momencie określenia grupy subskrypcji.</span><span class="sxs-lookup"><span data-stu-id="60573-112">If you have set up a number sequence for the subscription group, a subscription ID is generated automatically for the subscription when you specify the subscription group.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="70ce2-113">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="70ce2-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="60573-113">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="60573-113">See also</span></span>
 
-[<span data-ttu-id="70ce2-114">Subskrypcja — ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="70ce2-114">Subscription sales prices</span></span>](subscription-sales-prices.md)
+[<span data-ttu-id="60573-114">Subskrypcja — ceny sprzedaży</span><span class="sxs-lookup"><span data-stu-id="60573-114">Subscription sales prices</span></span>](subscription-sales-prices.md)
 
   
 
