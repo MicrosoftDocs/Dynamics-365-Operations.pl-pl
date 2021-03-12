@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6f5ce460cc2915d1d4d9b5699723a62ed7f94599
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40d657a02df0cba66918a6853ec62621501cfdfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435472"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989800"
 ---
 # <a name="cancel-a-master-planning-job"></a>Anulowanie zadania planowania głównego
 
@@ -53,6 +52,3 @@ Te opcji powinny być używane tylko, jeśli anulowanie zadania planowania głó
 4. W obszarze **Zadania wsadowe** wybierz zadania do zakończenia.
 5. Kliknij pozycję **Zmień stan**, wybierz pozycję **Anuluj** i kliknij przycisk **OK**.
 6. Na skróconej karcie **Zadania wsadowe** kliknij pozycję **Przerwij**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3dacc755b3d4d3b5c7f51f6bac7c2e9c62773ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 91ec6e1610c472d9c16020e4a7c38705059f0331
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446851"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988808"
 ---
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
@@ -97,6 +96,3 @@ Jednakże jeśli używasz podatku warunkowego, rozliczasz się z urzędem skarbo
 Jeśli jako metoda płatności jest używany czek postdatowany, w momencie utworzenia płatności konto bankowe nie zostanie rozliczone. W niektórych krajach podatek VAT staje się zobowiązaniem „zrealizowanym”, gdy płatność jest rozliczana przez bank, co oznacza, że czek postdatowany został rozliczony. Tę funkcję można włączyć, wybierając opcję **Realizuj podatek warunkowy w momencie wystawiania czeków postdatowanych** w obszarze **Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami > Czeki postdatowane**.
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie potrąconych zaliczek na podatek](tasks/set-up-withholding-tax.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

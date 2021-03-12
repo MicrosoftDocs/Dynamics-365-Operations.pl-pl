@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 274063
 ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: b2fa38afc95064cea29e408747bf0d22ec548a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f76f67899cf8a30b16bb7ece218b28cffdda57c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408389"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990122"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]
@@ -432,6 +431,3 @@ Po skonfigurowaniu kosztów niepodlegających odliczeniu na stronie **Arkusze CI
 - **Drukowanie raportu**
 
 Okienko pola informacji zawiera sumy w arkuszu oraz łączną kwotę zaległości.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

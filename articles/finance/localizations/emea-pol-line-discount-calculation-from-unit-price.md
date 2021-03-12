@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263424
 ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa60d4602604838ddb5296362627fcf82af06440
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f865789d7fe3ec8d200e75cf552e5291d1049af3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408393"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990144"
 ---
 # <a name="line-discount-calculation-from-the-unit-price-for-poland"></a>Obliczanie rabatu wiersza od ceny jednostkowej dla Polski
 
@@ -53,6 +52,3 @@ Parametr **Obliczanie rabatu liniowego** wpływa na następujące dokumenty:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

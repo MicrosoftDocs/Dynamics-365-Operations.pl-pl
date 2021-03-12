@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Currency
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264254
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd42a64bb384561cc0c4a8c9baf1213860691849
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: a1c4131376b2da86b9cf7e1252ebd88edd7e050d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4408401"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988360"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Aktualizowanie sposobu wyświetlania kwot w raportach i dokumentach
 
@@ -54,6 +53,3 @@ Aby skonfigurować długie i krótkie nazwy jednostek i podjednostek walut dla j
 
 5. Wybierz opcję **Zapisz**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

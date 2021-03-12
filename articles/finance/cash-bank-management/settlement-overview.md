@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 650b0ef0123cf9acf42c2e7460693b555897744f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a4ad8a124b2de2d364e11b6a32f8845ef438e1d1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446786"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989180"
 ---
 # <a name="settlement-overview"></a>Omówienie rozliczeń
 
@@ -78,6 +77,3 @@ Podczas próby rozliczenia transakcji można zauważyć symbol wskazujący, że 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Rozlicz resztę](settle-remainder.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

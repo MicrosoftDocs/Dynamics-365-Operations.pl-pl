@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55f5f6e5048f70e744cb3dc82a2a279aae69b4af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3d2ef7d6549bdeb3ba2afd2a594f36b47c912db
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446934"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990774"
 ---
 # <a name="create-cost-objects"></a>Tworzenie obiektów kosztów 
 
@@ -51,6 +50,3 @@ W tej procedurze pokazano sposób tworzenia obiektów kosztów, importując wymi
 ## <a name="view-the-imported-cost-centers"></a>Wyświetlanie zaimportowanych centrów kosztów
 1. Kliknij opcję Wyświetl elementy członkowskie wymiaru.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

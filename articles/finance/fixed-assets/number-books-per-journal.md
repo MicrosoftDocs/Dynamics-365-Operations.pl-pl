@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d4ba98cefdc0b555eedfaa56b6a3ca4870b5de93
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
+ms.openlocfilehash: cfb9a9e1456a7d9067e3c4369a7eb7150326655d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650678"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988959"
 ---
 # <a name="number-of-books-per-journal"></a>Liczba ksiąg na arkusz
 
@@ -46,7 +45,7 @@ Zadanie przetwarzania wsadowego wyklucza zamknięte księgi. Na przykład w zada
 
 Limit liczby ksiąg jest stosowany, jeśli w tym samym arkuszu nie istnieją zduplikowane identyfikatory składników majątku. Jeśli jednak identyfikator składnika majątku jest taki sam, jak identyfikator księgi, liczba ksiąg na arkusz może zostać przekroczona w celu utrzymania identyfikatora składnika majątku w tym samym arkuszu.
 
-Na przykład istnieje 5001 identyfikatory środków trwałych, z każdym identyfikatorem środka trwałego są powiązane trzy księgi, a każda księga składników majątku jest księgowana w tej samej warstwie księgowania. Wykonujesz amortyzacja przez trzy kolejne miesiące bez sumowania. Arkusz amortyzacji zostanie utworzony za pomocą zadania wsadowego, a system utworzy siedem arkuszy, które mają 667 identyfikatorów składników majątku, i trzy księgi dla każdego identyfikatora środka trwałego. Ogółem powstanie 2001 ksiąg. W związku z tym w ciągu trzech miesięcy na potrzeby zachowania tych samych identyfikatorów składników majątku w tym samym arkuszu powstaną 6003 wiersze arkuszy. System utworzy także jeden arkusz, który ma 332 identyfikatory środków trwałych, i trzy księgi dla każdego identyfikatora środka trwałego. W ciągu trzech miesięcy powstanie 2988 wierszy.
+Na przykład istnieje 5001 identyfikatory środków trwałych, z każdym identyfikatorem środka trwałego są powiązane trzy księgi, a każda księga składników majątku jest księgowana w tej samej warstwie księgowania. Wykonujesz amortyzacja przez trzy kolejne miesiące bez podsumowania.  Arkusz amortyzacji zostanie utworzony za pomocą zadania wsadowego, a system utworzy siedem arkuszy, które mają 667 identyfikatorów składników majątku, i trzy księgi dla każdego identyfikatora środka trwałego. Ogółem powstanie 2001 ksiąg. W związku z tym w ciągu trzech miesięcy na potrzeby zachowania tych samych identyfikatorów składników majątku w tym samym arkuszu powstaną 6003 wiersze arkuszy. System utworzy także jeden arkusz, który ma 332 identyfikatory środków trwałych, i trzy księgi dla każdego identyfikatora środka trwałego. W ciągu trzech miesięcy powstanie 2988 wierszy.
 
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+> [!Note] 
+> Jeśli parametr **Podsumuj amortyzację** jest włączony podczas tworzenia propozycji amortyzacji, wartość w polu **Liczba ksiąg na arkusz** — propozycja amortyzacji nie ma żadnego wpływu. W tym przypadku liczba ksiąg na arkusz wynosi 6000, co jest limitem zdefiniowanym wewnętrznie.

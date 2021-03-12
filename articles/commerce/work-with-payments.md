@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e7636f5c664634c680edf2ff9d8bae5ebb9035af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8fede81aa8c61eddba72b9ba2e780d61731f8253
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414956"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989259"
 ---
 # <a name="payment-methods-in-call-centers"></a>Metody płatności w biurach obsługi
 
@@ -53,6 +52,3 @@ Podczas definiowania metod płatności należy je łączyć z kontem księgowym 
 W scenariuszach przetwarzania zwrotów biuro obsługi korzysta również z niektórych metod płatności zdefiniowanych w module Rozrachunki z odbiorcami. Aby skonfigurować te formy płatności, wybierz kolejno opcje **Handel detaliczny i inny** \> **Ustawienia kanału** \> **Ustawienia biura obsługi** \> **Metody zwrotu biura obsługi**. Należy wykonać tę konfigurację, aby przetwarzać czeki zwrotu do odbiorców. Na przykład jeśli odbiorca pierwotnie zapłacił za zamówienie gotówką lub czekiem, użytkownik może chcieć wysłać odbiorcy czek zwrotu za pośrednictwem modułu Rozrachunki z odbiorcami. W takim przypadku typy płatności gotówką i czekiem w biurze obsługi należy zamapować na poprawne metody płatności w module Rozrachunki z odbiorcami w celu zagwarantowania, że zwrot będzie poprawnie przetwarzany.
 
 Ponadto jeśli użytkownik przetwarza zamówienie zwrotu jako użytkownik biura obsługi w aplikacji Commerce, ale nie jest w stanie połączyć zwrotu z pierwotną sprzedażą, należy zdefiniować metodę płatności **Zwrot** w parametrach biura obsługi. Wybierz kolejno opcje **Handel detaliczny i inny** \> **Ustawienia kanału** \> **Ustawienia biura obsługi** \> **Parametry biura obsługi**, a następnie na karcie **Autoryzacja zwrotu/zwrot** w polu **Metoda płatności** upewnij się, że jest zdefiniowana metoda płatności. Ustawiona tu metoda płatności będzie używana do obsługi zwrotów. Zazwyczaj będzie to metoda związana z czekiem lub kontem odbiorcy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

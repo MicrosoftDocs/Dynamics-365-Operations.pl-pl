@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7dc9f85bf90e6ddf9badf656eb136e28a71b036f
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 3051a3b5895a46801a1a154324ec9872dfcb82a0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594120"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989561"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -209,6 +208,3 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 § Gdy punkt sprzedaży działa w trybie offline do zwrotu można wycofać tylko transakcje w bieżącej bazie danych offline.
 
 \*\* Gdy punkt sprzedaży działa w trybie offline, w arkuszu są widoczne tylko transakcje w bazie danych bieżącego kanału offline.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

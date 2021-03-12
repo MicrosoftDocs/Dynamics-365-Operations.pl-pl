@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 249b7eced6eb0c6bbcbbe14125c8cfdd98ce5f3d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68f4be770f84f0a47f0568bf0a0a33d18123c4f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408392"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990140"
 ---
 # <a name="activate-storno-accounting-for-poland"></a>Aktywowanie stornowania dla Polski
 
@@ -82,6 +81,3 @@ Na stronie **Parametry modułu rozrachunków z dostawcami** w obszarze **Faktura
  8. W polu **Data faktury** wprowadź datę.  
  9. Kliknij przycisk **Księguj**.  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

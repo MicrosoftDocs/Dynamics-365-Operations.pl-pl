@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 948beb7baa19c69530dca52b5d4c119b69f8f011
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2bd821fdfe62475849e6d3b80d3a2c377bbabf4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446929"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990624"
 ---
 # <a name="cost-accounting-terminology"></a>Terminologia z dziedziny rachunku kosztów
 
@@ -205,6 +204,3 @@ Zestawienia to widoki dla menedżerów odpowiedzialnych za kontrolowanie kosztó
 Wersje są używane do symulowania, wyświetlania i porównywania różnych wyników. Domyślnie wszystkie koszty rzeczywiste są wyświetlane w jednej wersji podstawowej określanej jako *rzeczywista*. Dla budżetów i obliczeń można pracować z tyloma wersjami, ile jest potrzebnych. Można na przykład zaimportować dane budżetu do oryginalnej wersji, a następnie skorygować budżet w nowej wersji. Dla obliczeń można tworzyć wiele wersji. W tych różnych wersjach można wówczas tworzyć obliczenia przy użyciu różnych reguł obliczeniowych, które będą stosowane dla alokacji kosztów.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

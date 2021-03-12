@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263534
 ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a4777fa320f8a12af28f24532f4858722ef934f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddaa561cb59baa30827d5aba0bb3f8da97bc3f36
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408390"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990125"
 ---
 # <a name="duplicate-sales-invoice-numbering-for-poland"></a>Numerowanie duplikatów faktur sprzedaży dla Polski
 
@@ -41,6 +40,3 @@ Aby usunąć duplikat faktury, kliknij przycisk **Usuń**. **Uwaga:** Można usu
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

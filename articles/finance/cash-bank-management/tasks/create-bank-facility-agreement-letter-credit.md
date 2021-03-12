@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankDocumentFacilityAgreement, BankAccountTableLookUp, BankDocumentFacilityAgreementExtension, DefaultDashboard
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb624700e0b052de977fabecf9670b3515d32ab7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bffb5c802e8fa261e52197d1293ffb15c35981f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446785"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989172"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Tworzenie umowy instrumentu bankowego na akredytywę
 
@@ -51,6 +50,3 @@ To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do prze
 18. Kliknij przycisk Rozszerz.
 19. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 7171
 ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8617785ea969f9f4facaccdf81cfaf5344c30839
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2dcb51c730da3f2ad155675f06f5c1cd9e8476d2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446710"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988666"
 ---
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania
 
@@ -186,6 +185,3 @@ Aby uzyskać więcej informacji, zobacz [Opcje obliczania Cała kwota i Zakres d
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

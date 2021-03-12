@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: Poland
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0f6413d55215915e3d6f00b3d980db8ee5b2abe2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dd6dbd0ca95f623d67bc322f3771f117e0813c34
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408394"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990128"
 ---
 # <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie numeracji według magazynów
 
@@ -57,6 +56,3 @@ Istnieje możliwość skonfigurowania sekwencji numerów dla dokumentów dostawy
 
 > [!NOTE]
 > Można również skonfigurować numerację dokumentów dostawy według magazynu dla zamówienia sprzedaży. W tym celu należy wybrać określony magazyn na stronie **Dokument dostawy**. Po zaksięgowaniu dokumentu dostawy stan zamówienia nie zmieni się na **Dostarczone** lub **Otrzymano** w zamówieniu sprzedaży, dopóki wszystkie wiersze sprzedaży dla wszystkich magazynów nie zostaną zaksięgowane dla tego zamówienia sprzedaży. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

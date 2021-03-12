@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b09d7d203f1bb58fad26a109962005affa6d307
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 85c1faebe9a61ad2e708ba26c7a5f0cad15f5f8b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988208"
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Konfigurowanie odbiorców i kont bankowych odbiorców dla poleceń zapłaty ISO20022
 
@@ -69,6 +68,3 @@ Jest to czwarta z pięciu procedur, które razem przedstawiają proces płatnoś
 8. Kliknij przycisk OK.
 9. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

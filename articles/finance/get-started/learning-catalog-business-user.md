@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990246"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Katalog szkoleń dla użytkowników Dynamics 365 Finance
 
@@ -54,12 +53,10 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Konfigurowanie i używanie budżetowania w Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Każda organizacja, niezależnie od tego, czy jest prywatna, czy publiczna, określa cele finansowe i operacyjne, tworząc budżety. Dzięki zespołowej i opartej na procesie planowania budżetu procesowi budżetu można zwiększyć efektywność. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 3.5 godzin |
 | [Konfigurowanie środków trwałych i zarządzanie nimi w Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych możesz zarządzać nimi, amortyzując je i ustalając próg kapitalizacji. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju lub regionie prawodawstwem dotyczącym księgowania. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4.5 godzin |
 | [Rozpocznij pracę z rachunku kosztów dla łańcuchów dostaw w Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Moduł Rachunek kosztów pozwala zbierać dane z różnych źródeł, takich jak księga główna, księgi podrzędne, budżety i zasoby informacji statystycznych. Następnie można analizować, sumować i oceniać dane kosztów, dzięki czemu kierownictwo może podejmować najlepsze decyzje w kwestii aktualizacji cen, budżetów, kontroli kosztów i tak dalej.  | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 1 godzina  |
+| [Praca z modułem Zarządzanie wydatkami w Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maksymalizuj rentowność i minimalizuj koszty dzięki dokładnym funkcjom zarządzania wydatkami w Dynamics 365 Project Operations. Dowiedz się, jak skonfigurować system oraz tworzyć i zatwierdzać raporty z wydatków. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin  |
 
 ## <a name="exam"></a>Egzamin<a name="exam"></a>
 
 | Zawartość | opis  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 Fundamentals](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Udowodni, że rozumiesz Microsoft Dynamics 365; Power Platform; pojęcia chmury; opcje licencjonowania; opcje wdrożenia i wydania. | Egzamin, koszty różnią się w zależności od regionu |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

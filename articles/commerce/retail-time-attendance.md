@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e28df09ecb592ae7df360d1b2d0bf06339c1410d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415059"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989384"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zarządzanie czasem i frekwencją w module Retail
 
@@ -139,6 +138,3 @@ Użytkownik usługi Commerce wykonuje procedurę obliczania, zatwierdzania i prz
 - Rejestrowanie nieobecności
 
 Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](https://technet.microsoft.com/library/aa573180.aspx).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
