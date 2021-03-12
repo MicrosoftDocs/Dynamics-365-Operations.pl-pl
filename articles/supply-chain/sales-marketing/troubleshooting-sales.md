@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435180"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974792"
 ---
 # <a name="troubleshoot-sales-orders"></a>Rozwiązywanie problemów z zamówieniami sprzedaży
 
@@ -59,6 +58,8 @@ Można utworzyć zamówienia zakupu na podstawie zamówienia sprzedaży. Aby uzy
 Można anulować tylko zamówienia sprzedaży i zamówienia zwrotu, które są w stanie *Utworzone*. Aby uzyskać więcej informacji, zobacz [Anulowanie zamówienia zwrotu](../service-management/cancel-return-order.md).
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>Kiedy próbuję anulować zamówienie sprzedaży, pojawia się błąd „Nie można usunąć rezerwacji, ponieważ utworzono pracę, która opiera się na rezerwacjach”.
+
+Kod błędu: WAX4661
 
 Jeśli praca jest skojarzona z zamówieniem sprzedaży, nie można anulować zamówienia sprzedaży, dopóki praca nie zostanie anulowana i wycofana. To wymaganie ma zastosowanie nawet wtedy, gdy praca skojarzona z zamówieniem sprzedaży jest zamknięta.
 
@@ -110,7 +111,4 @@ Supply Chain Management nie obsługuje obecnie obliczania prowizji za zaksięgow
 
 Pozycja pakietu jest niedostępna dla zamówienia zakupu, ponieważ w przypadku zbadania wierszy zamówienia sprzedaży dla towaru pakietu można zauważyć, że ilość wynosi *0* (zero), a stan jest *Anulowany*. Jest to celowe. Zamówienie sprzedaży kupuje tylko składniki towaru pakietu. Nie powoduje to nabycia samego towaru w pakiecie.
 
-Jeśli trzeba kupić pakiet, należy rozważyć, czy należy go oznaczyć jako element pakietu, ponieważ jest on obecnie przeznaczony do scenariuszy rozpoznawania przychodów. Aby uzyskać więcej informacji o elementach pakietów, zobacz temat [Pakiety](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Jeśli trzeba kupić pakiet, należy rozważyć, czy należy go oznaczyć jako element pakietu, ponieważ jest on przeznaczony do scenariuszy rozpoznawania przychodów. Aby uzyskać więcej informacji o elementach pakietów, zobacz temat [Pakiety](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).

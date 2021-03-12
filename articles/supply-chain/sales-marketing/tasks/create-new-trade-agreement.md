@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e49793fc7f6b3f37bafae05770d4b23d24171329
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435028"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974892"
 ---
 # <a name="create-a-new-trade-agreement"></a>Tworzenie nowej umowy handlowej
 
@@ -71,8 +70,10 @@ Ta procedura przedstawia sposób tworzenia umowy handlowej, w której jest rejes
 5. Zamknij stronę.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
+
+### <a name="whitepaper"></a>Oficjalny dokument
+Aby uzyskać więcej informacji, pobierz następujący oficjalny dokument (napisany w celu obsługi systemu AX2012, ale nadal dotyczy aplikacji Dynamics 365 Supply Chain Management)
+- [Umowy handlowe](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### <a name="community-blogs"></a>Blogi społeczności
 - [Ceny sprzedaży w Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

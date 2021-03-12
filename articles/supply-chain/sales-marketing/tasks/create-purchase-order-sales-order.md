@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4576e442c2f270932e20472a6c340dcac6d45246
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5cabb1647b2008bbb67a7b9d6789fddab66b54e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435622"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974842"
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Tworzenie zamówienia zakupu na podstawie zamówienia sprzedaży
 
@@ -69,6 +68,3 @@ Ta procedura pokazuje, jak utworzyć zamówienie zakupu oparte na zamówieniu sp
     - Opcja **Partia odwołań** gwarantuje, że koszty z bieżącego zakupu obciążą dołączone zamówienie sprzedaży.  
     - Aby przejść do źródłowego zamówienia sprzedaży, można otworzyć łącze znajdujące się w polu **Numer odwołania**.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

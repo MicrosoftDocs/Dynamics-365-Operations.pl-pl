@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 24d57982981ca7b72e43c086ace381e420acb06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672451"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975693"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
@@ -48,6 +47,8 @@ Aby tworzyć i generować raporty finansowe firmy, należy ustawić następując
 -   Ledger
 -   Plan kont
 -   Waluta
+-   Księguj transakcję na co najmniej jednym koncie
+-   Konto główne jest wymienione w kolumnie Wybrane w **Księga główna > Ustawienia księgi głównej > Konfiguracja Financial Reporting**
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Udzielanie zabezpieczeń do Raportowania finansowego
 Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
@@ -173,6 +174,3 @@ Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynu
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)
 - [Definicje drzewa raportowania w raportach finansowych](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45884bd5ff70b31c62a7e0affafb6c5ddb457be3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435500"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974867"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Wysyłanie towarów z zamówień sprzedaży bez przekazywania do magazynu
 
@@ -56,6 +55,3 @@ W tym temacie zilustrowano sposób aktualizacji zamówienia sprzedaży, gdy prod
 19. W okienku akcji kliknij opcję **Pobierz i zapakuj**.
 20. Wybierz **Dokument dostawy**. Strona **Arkusz dokumentu dostawy** zawiera wszystkie dokumenty dostawy, które zostały wygenerowane dla zamówienia. W razie potrzeby można przejrzeć szczegóły każdego dokumentu i je wydrukować.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

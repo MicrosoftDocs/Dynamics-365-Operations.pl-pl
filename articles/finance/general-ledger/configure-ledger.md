@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 929ab7ae66a217de836ce49373faed76325c4d3a
-ms.sourcegitcommit: ac0a676c91e3053ad7f9432d576c9af3ff98a99a
+ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4447016"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975823"
 ---
 # <a name="configure-ledgers"></a>Konfigurowanie ksiąg
 
@@ -82,6 +81,3 @@ W przypadku korzystania z dwóch walut lub w przypadku korzystania z jednej walu
 Zrealizowane zyski i straty to zyski i straty z zakończonych transakcji. Są one rejestrowane w zestawieniu zysków i strat. Niezrealizowane zyski i straty to zyski i straty, które się zmaterializowały, chociaż transakcja nie została dokonana. Oznacza to, że zaksięgowano na przykład fakturę, ale faktura nie została jeszcze rozliczona i zapłacona. Niezrealizowane zyski i straty są rejestrowane w bilansie.
 
 Aby uzyskać więcej informacji na temat sposobu korzystania z dwóch walut, zobacz [Dwie waluty](dual-currency.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

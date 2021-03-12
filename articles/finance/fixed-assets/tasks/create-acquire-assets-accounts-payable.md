@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b27ccc3b4c4f5470d3a5b8ed7347e269c6793b87
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446830"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976048"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Tworzenie i nabywanie środków trwałych z modułu Rozrachunki z dostawcami
 
@@ -56,6 +55,3 @@ Ten przewodnik po zadaniach zawiera instruktaż tworzenia i nabywania środka tr
 17. Na liście kliknij łącze w wybranym wierszu.
 18. Kliknij przycisk **Księguj**. Środek trwały zostanie utworzony i nabyty podczas księgowania faktury.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

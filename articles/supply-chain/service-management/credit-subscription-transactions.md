@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c4cbc3cd5deff709ac0818358dcc87fa69a7d872
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ff8dbf5cad2cc1fa2cd465420629e39c9ffb512b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974617"
 ---
 # <a name="credit-subscription-transactions"></a>Transakcje subskrypcji kredytu 
 
@@ -56,6 +55,3 @@ Jeśli pole **Wycofaj naliczenia przy korekcie** w formularzu **Parametry moduł
 
 
  
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

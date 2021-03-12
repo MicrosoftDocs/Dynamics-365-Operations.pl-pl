@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446916"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975771"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -125,7 +124,7 @@ Można ustawić daty, od kiedy i do kiedy reguła eliminacji ma obowiązywać. J
 
 Po określeniu podstawowych właściwości kliknij przycisk **Wiersze** i zdefiniuj faktyczne reguły przetwarzania. Możliwe są dwie opcje eliminacji: eliminowanie kwoty zmiany netto lub zdefiniowanie stałej kwoty.
 
-Wybierz konta źródłowe. Można użyć gwiazdki (\*) jako symbolu wieloznacznego. Na przykład wartość **1\*** spowoduje używanie jako źródła danych alokacji wszystkich kont rozpoczynających się od **1**.
+Wybierz konta źródłowe. Można użyć gwiazdki (\*) jako symbolu wieloznacznego. Na przykład wartość **1\**_ spowoduje używanie jako źródła danych alokacji wszystkich kont rozpoczynających się od _* 1**.
 
 Po wybraniu kont źródłowych należy w polu **Specyfikacja konta** określić używane konto z firmy docelowej. Wybierz opcję **Źródło**, aby używać tego samego konta głównego, jak zdefiniowane w polu konta źródłowego. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, należy określić konto docelowe.
 
@@ -182,6 +181,3 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Raportowanie 
 
 ## <a name="generating-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 Aby uzyskać informacje o scenariuszach, w których mogą być tworzone skonsolidowane sprawozdania finansowe, zobacz [Generowanie skonsolidowanych sprawozdań finansowych](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

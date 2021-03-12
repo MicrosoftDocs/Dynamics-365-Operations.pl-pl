@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e9135e52356b5025a8018028825371b967531b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 124239f661e6b70815954fc988a70c512188359b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408376"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975374"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 
@@ -94,6 +93,3 @@ Gdy utworzysz propozycje kompensaty w arkuszu i propozycja zostanie następnie z
 **P: Czy funkcja kompensaty jest dostępna dla wszystkich krajów i regionów?**
 
 **O:** Funkcja kompensaty jest dostępna tylko dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

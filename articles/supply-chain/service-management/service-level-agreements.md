@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServicelevelagreement
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01cdfe519e55ca2a9aa17f4ac181ee675b2793cf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1f2cfa8b72e515b6237914499af626ff8262429d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435310"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974367"
 ---
 # <a name="service-level-agreements-overview"></a>Omówienie umów dotyczących poziomu usług       
 
@@ -81,6 +80,3 @@ Po utworzeniu nowego zlecenia serwisowego dla umowy serwisowej, która ma przypi
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

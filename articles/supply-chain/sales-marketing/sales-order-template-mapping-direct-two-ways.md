@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435417"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974992"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z elementami w rozwiązaniu Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Dynamics 365 Sales i Dynamics 365 Supply Chain Management.
 
@@ -64,8 +65,8 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 | Zarządzanie łańcuchem dostaw  | Sprzedaż             |
 |-------------------------|-------------------|
-| Nagłówki zamówień sprzedaży CDS | SalesOrders       |
-| Wiersze zamówienia sprzedaży CDS   | SalesOrderDetails |
+| Nagłówki zamówienia sprzedaży w usłudze Dataverse | SalesOrders       |
+| Wiersze zamówienia sprzedaży w usłudze Dataverse   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
@@ -75,7 +76,7 @@ Nie trzeba tworzyć zamówień w rozwiązaniu Sales. Można utworzyć nowe zamó
 
 W rozwiązaniu Supply Chain Management filtry w szablonie zapewniają, że w synchronizacji uwzględniane są tylko odpowiednie zamówienia sprzedaży.
 
-- W zamówieniu sprzedaży klient zamawiający i fakturujący muszą pochodzić z rozwiązania Sales, aby zostali uwzględnieni w synchronizacji. W rozwiązaniu Supply Chain Management pola **OrderingCustomerIsExternallyMaintained** i **InvoiceCustomerIsExternallyMaintained** służą do filtrowania zamówień sprzedaży z jednostek danych.
+- W zamówieniu sprzedaży klient zamawiający i fakturujący muszą pochodzić z rozwiązania Sales, aby zostali uwzględnieni w synchronizacji. W rozwiązaniu Supply Chain Management kolumny **OrderingCustomerIsExternallyMaintained** i **InvoiceCustomerIsExternallyMaintained** służą do filtrowania zamówień sprzedaży z tabel danych.
 - Zamówienie sprzedaży w rozwiązaniu Supply Chain Management musi zostać potwierdzone. Z rozwiązaniem Sales są synchronizowane tylko potwierdzone zamówienia sprzedaży lub zamówienia sprzedaży o wyższym statusie przetwarzania, takim jak **Wysłano** lub **Zafakturowano**.
 - Po utworzeniu lub zmodyfikowaniu zamówienia sprzedaży należy wykonać zadanie wsadowe **Obliczanie sum sprzedaży** w rozwiązaniu Supply Chain Management. Z rozwiązaniem Sales zostaną synchronizowane tylko zamówienia sprzedaży, dla których obliczono sumy sprzedaży.
 
@@ -103,10 +104,10 @@ Po zsynchronizowaniu wiersza zamówienia sprzedaży z rozwiązania Sales do rozw
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Rozwiązanie Prospekt na gotówkę dla aplikacji Sales
 
-Nowe pola zostały dodane do jednostki **Zamówienie** i są wyświetlane na stronie:
+Nowe kolumny zostały dodane do tabeli **Zamówienie** i są wyświetlane na stronie:
 
 - **Jest obsługiwane zewnętrznie**— ustaw tę opcję na **Tak**, gdy zamówienie pochodzi z programu Supply Chain Management.
-- **Stan przetwarzania** — to pole służy do wyświetlania stanu przetwarzania zamówienia w rozwiązaniu Supply Chain Management. Dostępne są następujące wartości:
+- **Stan przetwarzania** — ta kolumna służy do wyświetlania stanu przetwarzania zamówienia w rozwiązaniu Supply Chain Management. Dostępne są następujące wartości:
 
     - **Robocza** — stan początkowy po utworzeniu zamówienia w rozwiązaniu Sales. W rozwiązaniu Sales można edytować tylko zamówienia o tym stanie przetwarzania.
     - **Aktywna** — stan po uaktywnieniu zamówienia w rozwiązaniu Sales za pomocą przycisku **Uaktywnij**.
@@ -141,7 +142,7 @@ Przed zsynchronizowaniem zamówień sprzedaży należy zaktualizować poniższe 
 - Przejdź do okna **Ustawienia** &gt; **Administracja** &gt; **Ustawienia systemu** &gt; **Sprzedaż** i sprawdź, czy używane są następujące ustawienia:
 
     - Opcja **Użyj systemowego obliczania cen** jest ustawiona na **Tak**.
-    - Pole **Metoda kalkulacji rabatów** jest ustawione na **Pozycja w wierszu**.
+    - Kolumna **Metoda kalkulacji rabatów** jest ustawiona na **Pozycja w wierszu**.
 
 ### <a name="setup-in-supply-chain-management"></a>Ustawienia Supply Chain Management
 
@@ -151,10 +152,10 @@ Jeśli używasz również integracji zlecenia, należy skonfigurować pochodzeni
 
 1. Wybierz kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Pochodzenie sprzedaży**.
 2. Wybierz opcję **Nowy**, aby utworzyć nowe pochodzenie sprzedaży.
-3. W polu **Pochodzenie sprzedaży** nadaj nazwę pochodzeniu sprzedaży, taką jak **SalesOrder**.
-4. W polu **Opis** wprowadź opis, taki jak **Zamówienie sprzedaży ze Sprzedaży**.
+3. W kolumnie **Pochodzenie sprzedaży** nadaj nazwę pochodzeniu sprzedaży, taką jak **SalesOrder**.
+4. W kolumnie **Opis** wprowadź opis, taki jak **Zamówienie sprzedaży ze Sprzedaży**.
 5. Zaznacz pole wyboru **Przypisanie typu pochodzenia**.
-6. W polu **Typ pochodzenia sprzedaży** ustaw wartość **Integracja zamówienia sprzedaży**.
+6. W kolumnie **Typ pochodzenia sprzedaży** ustaw wartość **Integracja zamówienia sprzedaży**.
 7. Wybierz opcję **Zapisz**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Konfiguracja w projekcie integracji Zamówienia sprzedaży (z Sales do Supply Chain Management) — projekt integracji danych bezpośrednich
@@ -181,12 +182,12 @@ Jeśli używasz również integracji zlecenia, należy skonfigurować pochodzeni
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
 > [!NOTE]
-> Pola **Warunki płatności**, **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te pola, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana jednostka.
+> Kolumny **Warunki płatności**, **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te kolumny, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana tabela.
 
 Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integratorze danych.
 
 > [!NOTE]
-> Mapowanie pokazuje, które informacje z pól zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management lub z rozwiązania Supply Chain Management do rozwiązania Sales.
+> Mapowanie pokazuje, które informacje z kolumn zostaną zsynchronizowane z rozwiązania Sales do rozwiązania Supply Chain Management lub z rozwiązania Supply Chain Management do rozwiązania Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Zlecenia sprzedaży (Supply Chain Management do Sales) — bezpośrednie: OrderHeader
 
@@ -207,6 +208,3 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Prospekt na gotówkę](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
