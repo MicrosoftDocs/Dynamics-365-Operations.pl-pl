@@ -18,42 +18,103 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4456231"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839556"
 ---
-# <a name="inventory-availability-in-dual-write"></a><span data-ttu-id="4f277-103">Dostępność zapasów w podwójnym zapisie</span><span class="sxs-lookup"><span data-stu-id="4f277-103">Inventory availability in dual-write</span></span>
+# <a name="inventory-availability-in-dual-write"></a><span data-ttu-id="e4dd6-103">Dostępność zapasów w podwójnym zapisie</span><span class="sxs-lookup"><span data-stu-id="e4dd6-103">Inventory availability in dual-write</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4f277-104">Korzystając z dostępności zapasów, można sprawdzić stan zapasów przed dodaniem produktu do stron **Oferty**, **Zamówienia** lub **Faktury** w Microsoft Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="4f277-104">By using inventory availability, you can check your inventory before you add a product to the **Quotations**, **Orders**, or **Invoices** page in Microsoft Dynamics 365 Sales.</span></span> <span data-ttu-id="4f277-105">Na przykład sprawdzenie zapasów i określenie daty realizacji jest jednym z kluczowych zadań w procesie [od prospektu do gotówki](dual-write-prospect-to-cash.md).</span><span class="sxs-lookup"><span data-stu-id="4f277-105">For example, you check inventory and determine a fulfillment date as one key task in the [prospect-to-cash](dual-write-prospect-to-cash.md) process.</span></span>
+<span data-ttu-id="e4dd6-104">Korzystając z dostępności zapasów, można sprawdzić stan zapasów przed dodaniem produktu do stron **Oferty**, **Zamówienia** lub **Faktury** w Microsoft Dynamics 365 Sales.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-104">By using inventory availability, you can check your inventory before you add a product to the **Quotations**, **Orders**, or **Invoices** page in Microsoft Dynamics 365 Sales.</span></span> <span data-ttu-id="e4dd6-105">Na przykład sprawdzenie zapasów i określenie daty realizacji jest jednym z kluczowych zadań w procesie [od prospektu do gotówki](dual-write-prospect-to-cash.md).</span><span class="sxs-lookup"><span data-stu-id="e4dd6-105">For example, you check inventory and determine a fulfillment date as one key task in the [prospect-to-cash](dual-write-prospect-to-cash.md) process.</span></span>
 
-<span data-ttu-id="4f277-106">Jeśli nie ma wystarczającej ilości zapasów, można oszacować datę dostawy na podstawie przewidywanych przyjęć i problemów z zapasami.</span><span class="sxs-lookup"><span data-stu-id="4f277-106">If you don't have enough inventory, you can estimate a delivery date, based on projected inventory receipts and issues.</span></span> <span data-ttu-id="4f277-107">Można również sprawdzić informacje o dostępności zapasów (ATP), w której można znaleźć ilość ATP w wstępnie zdefiniowanym horyzoncie czasowym.</span><span class="sxs-lookup"><span data-stu-id="4f277-107">You can also check the product's available-to-promise (ATP) information, where you can find the ATP quantity in the predefined time fence.</span></span>
+<span data-ttu-id="e4dd6-106">Jeśli nie ma wystarczającej ilości zapasów, można oszacować datę dostawy na podstawie przewidywanych przyjęć i problemów z zapasami.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-106">If you don't have enough inventory, you can estimate a delivery date, based on projected inventory receipts and issues.</span></span> <span data-ttu-id="e4dd6-107">Można również sprawdzić informacje o dostępności zapasów (ATP), w której można znaleźć ilość ATP w wstępnie zdefiniowanym horyzoncie czasowym.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-107">You can also check the product's available-to-promise (ATP) information, where you can find the ATP quantity in the predefined time fence.</span></span>
 
-## <a name="on-hand-inventory"></a><span data-ttu-id="4f277-108">Dostępne zapasy</span><span class="sxs-lookup"><span data-stu-id="4f277-108">On-hand inventory</span></span>
+## <a name="on-hand-inventory"></a><span data-ttu-id="e4dd6-108">Dostępne zapasy</span><span class="sxs-lookup"><span data-stu-id="e4dd6-108">On-hand inventory</span></span>
 
-<span data-ttu-id="4f277-109">W Dynamics 365 Sales jest dodany nowy przycisk **Dostępne zapasy** do nagłówka stron **Oferty**, **Zamówienia** i **Faktury**.</span><span class="sxs-lookup"><span data-stu-id="4f277-109">In Dynamics 365 Sales, a new **On-hand Inventory** button has been added to the header of the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="4f277-110">Wybranie tego przycisku powoduje wyświetlenie okna dialogowego, w którym można określić firmę i produkt, dla którego mają zostać sprawdzone dostępne zapasy.</span><span class="sxs-lookup"><span data-stu-id="4f277-110">When you select this button, a dialog box appears, where you can specify the company and the product that you want to check the on-hand inventory for.</span></span> <span data-ttu-id="4f277-111">W tym oknie dialogowym są wyświetlane takie same informacje jak [Dostępne zapasy](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span><span class="sxs-lookup"><span data-stu-id="4f277-111">This dialog box shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span></span>
+<span data-ttu-id="e4dd6-109">W Dynamics 365 Sales jest dodany nowy przycisk **Dostępne zapasy** do nagłówka stron **Oferty**, **Zamówienia** i **Faktury**.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-109">In Dynamics 365 Sales, a new **On-hand Inventory** button has been added to the header of the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="e4dd6-110">Wybranie tego przycisku powoduje wyświetlenie okna dialogowego, w którym można określić firmę i produkt, dla którego mają zostać sprawdzone dostępne zapasy.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-110">When you select this button, a dialog box appears, where you can specify the company and the product that you want to check the on-hand inventory for.</span></span> <span data-ttu-id="e4dd6-111">W tym oknie dialogowym są wyświetlane takie same informacje jak [Dostępne zapasy](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span><span class="sxs-lookup"><span data-stu-id="e4dd6-111">This dialog box shows the same information as [On-hand inventory](../../../../supply-chain/inventory/tasks/check-availability-stock.md).</span></span>
 
-<span data-ttu-id="4f277-112">W oknie dialogowym są zwracane informacje o zapasach z Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4f277-112">The dialog box returns the inventory information from Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="4f277-113">Informacje te obejmują następujące ilości:</span><span class="sxs-lookup"><span data-stu-id="4f277-113">This information includes the following quantities:</span></span>
+<span data-ttu-id="e4dd6-112">W oknie dialogowym są zwracane informacje o zapasach z Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-112">The dialog box returns the inventory information from Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="e4dd6-113">Informacje te obejmują następujące ilości:</span><span class="sxs-lookup"><span data-stu-id="e4dd6-113">This information includes the following quantities:</span></span>
 
-- <span data-ttu-id="4f277-114">Ilość dostępnych zapasów</span><span class="sxs-lookup"><span data-stu-id="4f277-114">On-hand quantity</span></span>
-- <span data-ttu-id="4f277-115">Zarezerowowana dostępna ilość</span><span class="sxs-lookup"><span data-stu-id="4f277-115">Reserved on-hand quantity</span></span>
-- <span data-ttu-id="4f277-116">Dostępna ilość na stanie</span><span class="sxs-lookup"><span data-stu-id="4f277-116">Available on-hand quantity</span></span>
-- <span data-ttu-id="4f277-117">Ilość zamówiona</span><span class="sxs-lookup"><span data-stu-id="4f277-117">Ordered quantity</span></span>
-- <span data-ttu-id="4f277-118">Ilość na zamówienie</span><span class="sxs-lookup"><span data-stu-id="4f277-118">On-order quantity</span></span>
-- <span data-ttu-id="4f277-119">Zarezerwowana zamówiona ilość</span><span class="sxs-lookup"><span data-stu-id="4f277-119">Reserved ordered quantity</span></span>
-- <span data-ttu-id="4f277-120">Łączna dostępna ilość</span><span class="sxs-lookup"><span data-stu-id="4f277-120">Total available quantity</span></span>
+- <span data-ttu-id="e4dd6-114">Ilość dostępnych zapasów</span><span class="sxs-lookup"><span data-stu-id="e4dd6-114">On-hand quantity</span></span>
+- <span data-ttu-id="e4dd6-115">Zarezerowowana dostępna ilość</span><span class="sxs-lookup"><span data-stu-id="e4dd6-115">Reserved on-hand quantity</span></span>
+- <span data-ttu-id="e4dd6-116">Dostępna ilość na stanie</span><span class="sxs-lookup"><span data-stu-id="e4dd6-116">Available on-hand quantity</span></span>
+- <span data-ttu-id="e4dd6-117">Ilość zamówiona</span><span class="sxs-lookup"><span data-stu-id="e4dd6-117">Ordered quantity</span></span>
+- <span data-ttu-id="e4dd6-118">Ilość na zamówienie</span><span class="sxs-lookup"><span data-stu-id="e4dd6-118">On-order quantity</span></span>
+- <span data-ttu-id="e4dd6-119">Zarezerwowana zamówiona ilość</span><span class="sxs-lookup"><span data-stu-id="e4dd6-119">Reserved ordered quantity</span></span>
+- <span data-ttu-id="e4dd6-120">Łączna dostępna ilość</span><span class="sxs-lookup"><span data-stu-id="e4dd6-120">Total available quantity</span></span>
 
-## <a name="atp-information"></a><span data-ttu-id="4f277-121">Informacje ATP</span><span class="sxs-lookup"><span data-stu-id="4f277-121">ATP information</span></span>
+## <a name="atp-information"></a><span data-ttu-id="e4dd6-121">Informacje ATP</span><span class="sxs-lookup"><span data-stu-id="e4dd6-121">ATP information</span></span>
 
-<span data-ttu-id="4f277-122">W Sales nowy przyscisk **Informacje ATP** został dodany do wiersza pozycji na stronach **Oferty**, **Zamówienia** i **Faktury**.</span><span class="sxs-lookup"><span data-stu-id="4f277-122">In Sales, a new **ATP Information** button has been added to line items on the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="4f277-123">Wybranie przycisku powoduje wyświetlenie okna dialogowego, w którym można określić firmę, produkt, oddział zapasów, magazyn zapasów i ilośc zamówienia.</span><span class="sxs-lookup"><span data-stu-id="4f277-123">When you select this button, a dialog box appears, where you can specify the company, product, inventory site, inventory warehouse, and order quantity.</span></span> <span data-ttu-id="4f277-124">To okno dialogowe ma takie same ustawienia, które są opisane w obszarze [Zobowiązanie do zamówienia](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span><span class="sxs-lookup"><span data-stu-id="4f277-124">This dialog box has the same settings that are described in [Order promising](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span></span>
+<span data-ttu-id="e4dd6-122">W Sales nowy przyscisk **Informacje ATP** został dodany do wiersza pozycji na stronach **Oferty**, **Zamówienia** i **Faktury**.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-122">In Sales, a new **ATP Information** button has been added to line items on the **Quotes**, **Orders**, and **Invoices** pages.</span></span> <span data-ttu-id="e4dd6-123">Wybranie przycisku powoduje wyświetlenie okna dialogowego, w którym można określić firmę, produkt, oddział zapasów, magazyn zapasów i ilośc zamówienia.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-123">When you select this button, a dialog box appears, where you can specify the company, product, inventory site, inventory warehouse, and order quantity.</span></span> <span data-ttu-id="e4dd6-124">To okno dialogowe ma takie same ustawienia, które są opisane w obszarze [Zobowiązanie do zamówienia](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span><span class="sxs-lookup"><span data-stu-id="e4dd6-124">This dialog box has the same settings that are described in [Order promising](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).</span></span>
 
-<span data-ttu-id="4f277-125">Okno dialogowe zwraca informacje o ATP z Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="4f277-125">The dialog box returns the ATP information from Supply Chain Management.</span></span> <span data-ttu-id="4f277-126">Informacje te obejmują następujące ilości:</span><span class="sxs-lookup"><span data-stu-id="4f277-126">This information includes the following quantities:</span></span>
+<span data-ttu-id="e4dd6-125">Okno dialogowe zwraca informacje o ATP z Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-125">The dialog box returns the ATP information from Supply Chain Management.</span></span> <span data-ttu-id="e4dd6-126">Informacje te obejmują następujące ilości:</span><span class="sxs-lookup"><span data-stu-id="e4dd6-126">This information includes the following quantities:</span></span>
 
-- <span data-ttu-id="4f277-127">Ilość ATP</span><span class="sxs-lookup"><span data-stu-id="4f277-127">ATP quantity</span></span>
-- <span data-ttu-id="4f277-128">Ilość przychodu</span><span class="sxs-lookup"><span data-stu-id="4f277-128">Receipt quantity</span></span>
-- <span data-ttu-id="4f277-129">Ilość rozchodu</span><span class="sxs-lookup"><span data-stu-id="4f277-129">Issue quantity</span></span>
-- <span data-ttu-id="4f277-130">Ilość dostępnych zapasów</span><span class="sxs-lookup"><span data-stu-id="4f277-130">On-hand quantity</span></span>
+- <span data-ttu-id="e4dd6-127">Ilość ATP</span><span class="sxs-lookup"><span data-stu-id="e4dd6-127">ATP quantity</span></span>
+- <span data-ttu-id="e4dd6-128">Ilość przychodu</span><span class="sxs-lookup"><span data-stu-id="e4dd6-128">Receipt quantity</span></span>
+- <span data-ttu-id="e4dd6-129">Ilość rozchodu</span><span class="sxs-lookup"><span data-stu-id="e4dd6-129">Issue quantity</span></span>
+- <span data-ttu-id="e4dd6-130">Ilość dostępnych zapasów</span><span class="sxs-lookup"><span data-stu-id="e4dd6-130">On-hand quantity</span></span>
+
+## <a name="how-it-works"></a><span data-ttu-id="e4dd6-131">Jak działa</span><span class="sxs-lookup"><span data-stu-id="e4dd6-131">How it works</span></span>
+
+<span data-ttu-id="e4dd6-132">Po wybraniu przycisku **Dostępne zapasy** na stronie **Oferty**, **Zamówienia** lub **Faktury** zostanie wykonane na żywo wywołanie podwójnego zapisu dla interfejsu API **dostępnych zapasów**.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-132">When you select the **On-hand Inventory** button on the **Quotes**, **Orders**, or **Invoices** page, a live dual-write call is made to the **Onhand inventory** API.</span></span> <span data-ttu-id="e4dd6-133">Interfejs API oblicza stan dostępnych zapasów danego produktu.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-133">The API calculates the on-hand inventory for the given product.</span></span> <span data-ttu-id="e4dd6-134">Wynik jest przechowywany w tabelach **InventCDSInventoryOnHandRequestEntity** i **InventCDSInventoryOnHandEntryEntity**, a następnie zapisywany w tabeli w trybie podwójnego zapisu usługi Dataverse.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-134">The result is stored in the **InventCDSInventoryOnHandRequestEntity** and **InventCDSInventoryOnHandEntryEntity** tables, and then is written to Dataverse by dual-write.</span></span> <span data-ttu-id="e4dd6-135">Aby korzystać z tej funkcji, należy uruchomić następujące mapy podwójnego zapisu.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-135">To use this functionality, you need to run the following dual-write maps.</span></span> <span data-ttu-id="e4dd6-136">Pomiń wstępną synchronizację podczas uruchamiania map.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-136">Skip initial synchronization when you run the maps.</span></span>
+
+- <span data-ttu-id="e4dd6-137">Wpisy dostępnych zapasów CDS (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="e4dd6-137">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
+- <span data-ttu-id="e4dd6-138">Żądania dostępnych zapasów CDS (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="e4dd6-138">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
+
+## <a name="templates"></a><span data-ttu-id="e4dd6-139">Szablony</span><span class="sxs-lookup"><span data-stu-id="e4dd6-139">Templates</span></span>
+<span data-ttu-id="e4dd6-140">Dla danych dotyczących dostępnych zapasów są dostępne następujące szablony.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-140">The following templates are available for the exposing the onhand inventory data.</span></span>
+
+<span data-ttu-id="e4dd6-141">Aplikacje Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="e4dd6-141">Finance and Operations apps</span></span> | <span data-ttu-id="e4dd6-142">Aplikacja Customer Engagement</span><span class="sxs-lookup"><span data-stu-id="e4dd6-142">Customer engagement app</span></span> | <span data-ttu-id="e4dd6-143">opis</span><span class="sxs-lookup"><span data-stu-id="e4dd6-143">Description</span></span> 
+---|---|---
+[<span data-ttu-id="e4dd6-144">Dostępne wpisy zapasów CDS</span><span class="sxs-lookup"><span data-stu-id="e4dd6-144">CDS inventory on-hand entries</span></span>](#145) | <span data-ttu-id="e4dd6-145">msdyn_inventoryonhandentries</span><span class="sxs-lookup"><span data-stu-id="e4dd6-145">msdyn_inventoryonhandentries</span></span> |
+[<span data-ttu-id="e4dd6-146">Żądania dostępnych zapasów CDS</span><span class="sxs-lookup"><span data-stu-id="e4dd6-146">CDS inventory on-hand requests</span></span>](#147) | <span data-ttu-id="e4dd6-147">msdyn_inventoryonhandrequests</span><span class="sxs-lookup"><span data-stu-id="e4dd6-147">msdyn_inventoryonhandrequests</span></span> |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a><span data-ttu-id="e4dd6-148">Wpisy dostępnych zapasów CDS (msdyn_inventoryonhandentries)</span><span class="sxs-lookup"><span data-stu-id="e4dd6-148">CDS inventory on-hand entries (msdyn_inventoryonhandentries)</span></span>
+
+<span data-ttu-id="e4dd6-149">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Dataverse.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-149">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
+
+<span data-ttu-id="e4dd6-150">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="e4dd6-150">Finance and Operations field</span></span> | <span data-ttu-id="e4dd6-151">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="e4dd6-151">Map type</span></span> | <span data-ttu-id="e4dd6-152">Pole Customer Engagement</span><span class="sxs-lookup"><span data-stu-id="e4dd6-152">Customer engagement field</span></span> | <span data-ttu-id="e4dd6-153">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="e4dd6-153">Default value</span></span>
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a><span data-ttu-id="e4dd6-154">Żądania dostępnych zapasów CDS (msdyn_inventoryonhandrequests)</span><span class="sxs-lookup"><span data-stu-id="e4dd6-154">CDS inventory on-hand requests (msdyn_inventoryonhandrequests)</span></span>
+
+<span data-ttu-id="e4dd6-155">Ten szablon synchronizuje dane między aplikacjami Finance and Operations i usługami Dataverse.</span><span class="sxs-lookup"><span data-stu-id="e4dd6-155">This template synchronizes data between Finance and Operations apps and Dataverse.</span></span>
+
+<span data-ttu-id="e4dd6-156">Pole aplikacji Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="e4dd6-156">Finance and Operations field</span></span> | <span data-ttu-id="e4dd6-157">Typ mapy</span><span class="sxs-lookup"><span data-stu-id="e4dd6-157">Map type</span></span> | <span data-ttu-id="e4dd6-158">Pole Customer Engagement</span><span class="sxs-lookup"><span data-stu-id="e4dd6-158">Customer engagement field</span></span> | <span data-ttu-id="e4dd6-159">Wartość domyślna</span><span class="sxs-lookup"><span data-stu-id="e4dd6-159">Default value</span></span>
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

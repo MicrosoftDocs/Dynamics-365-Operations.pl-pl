@@ -10,41 +10,40 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7be50eba098b7b28594c8e18c721579f4bb2e879
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c51c77f4b9f411ae45fb955032aa40cb34738e9a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414993"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4964778"
 ---
-# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a><span data-ttu-id="84e0f-103">Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów z rejestrów</span><span class="sxs-lookup"><span data-stu-id="84e0f-103">Create financial dimensions for POS registers and configure dimension values on registers</span></span>
+# <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a><span data-ttu-id="d5357-103">Tworzenie wymiarów finansowych dla rejestrów punktu sprzedaży i konfigurowanie wartości wymiarów z rejestrów</span><span class="sxs-lookup"><span data-stu-id="d5357-103">Create financial dimensions for POS registers and configure dimension values on registers</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="84e0f-104">Ta procedura prowadzi przez proces tworzenia wymiarów finansowych dla kas w punkcie sprzedaży (POS) i pokazuje, jak konfigurować wartości wymiarów finansowych w kasach.</span><span class="sxs-lookup"><span data-stu-id="84e0f-104">This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers.</span></span> <span data-ttu-id="84e0f-105">Procedura nie ma innych czynności pokrewnych, takich jak tworzenie zestawów wymiarów i struktur kont.</span><span class="sxs-lookup"><span data-stu-id="84e0f-105">This procedure doesn't include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="84e0f-106">Te zadania znajdują się w innych artykułach.</span><span class="sxs-lookup"><span data-stu-id="84e0f-106">Those tasks can be found in other topics.</span></span> <span data-ttu-id="84e0f-107">To nagranie wykorzystuje firmę demonstracyjną USRT.</span><span class="sxs-lookup"><span data-stu-id="84e0f-107">This recording uses USRT demo company.</span></span>
+<span data-ttu-id="d5357-104">Ta procedura prowadzi przez proces tworzenia wymiarów finansowych dla kas w punkcie sprzedaży (POS) i pokazuje, jak konfigurować wartości wymiarów finansowych w kasach.</span><span class="sxs-lookup"><span data-stu-id="d5357-104">This procedure walks through creating financial dimensions for point of sale (POS) registers, and demonstrates how to configure financial dimension values on registers.</span></span> <span data-ttu-id="d5357-105">Procedura nie ma innych czynności pokrewnych, takich jak tworzenie zestawów wymiarów i struktur kont.</span><span class="sxs-lookup"><span data-stu-id="d5357-105">This procedure doesn't include other related steps, such as creating dimension sets and account structures.</span></span> <span data-ttu-id="d5357-106">Te zadania znajdują się w innych artykułach.</span><span class="sxs-lookup"><span data-stu-id="d5357-106">Those tasks can be found in other topics.</span></span> <span data-ttu-id="d5357-107">To nagranie wykorzystuje firmę demonstracyjną USRT.</span><span class="sxs-lookup"><span data-stu-id="d5357-107">This recording uses USRT demo company.</span></span>
 
-1. <span data-ttu-id="84e0f-108">Wybierz kolejno opcje Księga główna > Plan kont > Wymiary > Wymiary finansowe.</span><span class="sxs-lookup"><span data-stu-id="84e0f-108">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
-2. <span data-ttu-id="84e0f-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="84e0f-109">Click New.</span></span>
-3. <span data-ttu-id="84e0f-110">W polu Użyj wartości z wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="84e0f-110">In the Use values from field, select an option.</span></span>
-4. <span data-ttu-id="84e0f-111">W polu Wymiar menu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="84e0f-111">In the Dimension name field, type a value.</span></span>
-5. <span data-ttu-id="84e0f-112">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="84e0f-112">Click Activate.</span></span>
-6. <span data-ttu-id="84e0f-113">Kliknij przycisk Zamknij.</span><span class="sxs-lookup"><span data-stu-id="84e0f-113">Click Close.</span></span>
-7. <span data-ttu-id="84e0f-114">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="84e0f-114">Click Activate.</span></span>
-8. <span data-ttu-id="84e0f-115">Kliknij opcję Wartości wymiarów.</span><span class="sxs-lookup"><span data-stu-id="84e0f-115">Click Dimension values.</span></span>
-9. <span data-ttu-id="84e0f-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="84e0f-116">Close the page.</span></span>
-10. <span data-ttu-id="84e0f-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="84e0f-117">Click Save.</span></span>
-11. <span data-ttu-id="84e0f-118">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="84e0f-118">Close the page.</span></span>
-12. <span data-ttu-id="84e0f-119">Wybierz kolejno opcje Retail i Commerce > Ustawienia kanału > Ustawienia punktu sprzedaży > Rejestry.</span><span class="sxs-lookup"><span data-stu-id="84e0f-119">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
-13. <span data-ttu-id="84e0f-120">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="84e0f-120">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="84e0f-121">Przełącz rozwinięcie sekcji Wymiary finansowe.</span><span class="sxs-lookup"><span data-stu-id="84e0f-121">Toggle the expansion of the Financial dimensions section.</span></span>
-15. <span data-ttu-id="84e0f-122">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="84e0f-122">Click Edit.</span></span>
-16. <span data-ttu-id="84e0f-123">W polu Terminal kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="84e0f-123">In the Terminal field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="84e0f-124">Na liście znajdź i wybierz wartość wymiaru dla aktualizowanej kasy.</span><span class="sxs-lookup"><span data-stu-id="84e0f-124">In the list, find and select the dimension value for the register being updated.</span></span>
-18. <span data-ttu-id="84e0f-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="84e0f-125">Click Save.</span></span>
+1. <span data-ttu-id="d5357-108">Wybierz kolejno opcje Księga główna > Plan kont > Wymiary > Wymiary finansowe.</span><span class="sxs-lookup"><span data-stu-id="d5357-108">Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.</span></span>
+2. <span data-ttu-id="d5357-109">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="d5357-109">Click New.</span></span>
+3. <span data-ttu-id="d5357-110">W polu Użyj wartości z wybierz opcję.</span><span class="sxs-lookup"><span data-stu-id="d5357-110">In the Use values from field, select an option.</span></span>
+4. <span data-ttu-id="d5357-111">W polu Wymiar menu wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="d5357-111">In the Dimension name field, type a value.</span></span>
+5. <span data-ttu-id="d5357-112">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="d5357-112">Click Activate.</span></span>
+6. <span data-ttu-id="d5357-113">Kliknij przycisk Zamknij.</span><span class="sxs-lookup"><span data-stu-id="d5357-113">Click Close.</span></span>
+7. <span data-ttu-id="d5357-114">Kliknij Aktywacja.</span><span class="sxs-lookup"><span data-stu-id="d5357-114">Click Activate.</span></span>
+8. <span data-ttu-id="d5357-115">Kliknij opcję Wartości wymiarów.</span><span class="sxs-lookup"><span data-stu-id="d5357-115">Click Dimension values.</span></span>
+9. <span data-ttu-id="d5357-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5357-116">Close the page.</span></span>
+10. <span data-ttu-id="d5357-117">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d5357-117">Click Save.</span></span>
+11. <span data-ttu-id="d5357-118">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="d5357-118">Close the page.</span></span>
+12. <span data-ttu-id="d5357-119">Wybierz kolejno opcje Retail i Commerce > Ustawienia kanału > Ustawienia punktu sprzedaży > Rejestry.</span><span class="sxs-lookup"><span data-stu-id="d5357-119">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
+13. <span data-ttu-id="d5357-120">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="d5357-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="d5357-121">Przełącz rozwinięcie sekcji Wymiary finansowe.</span><span class="sxs-lookup"><span data-stu-id="d5357-121">Toggle the expansion of the Financial dimensions section.</span></span>
+15. <span data-ttu-id="d5357-122">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="d5357-122">Click Edit.</span></span>
+16. <span data-ttu-id="d5357-123">W polu Terminal kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.</span><span class="sxs-lookup"><span data-stu-id="d5357-123">In the Terminal field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="d5357-124">Na liście znajdź i wybierz wartość wymiaru dla aktualizowanej kasy.</span><span class="sxs-lookup"><span data-stu-id="d5357-124">In the list, find and select the dimension value for the register being updated.</span></span>
+18. <span data-ttu-id="d5357-125">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="d5357-125">Click Save.</span></span>
 
