@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOrderListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19291
 ms.assetid: e97f1d3d-1306-4c42-b2bc-d1755fe574d5
 ms.search.region: Global
@@ -19,29 +18,29 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faeb90aa3366a58b746c0b397dd950bfb8c9024f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2098cb458821146f6d1bf029591493ac745626f1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435391"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966462"
 ---
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="a9dae-103">Skonsolidowane szarże produkcyjne</span><span class="sxs-lookup"><span data-stu-id="a9dae-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="a5dbb-103">Skonsolidowane szarże produkcyjne</span><span class="sxs-lookup"><span data-stu-id="a5dbb-103">Consolidated batch orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a9dae-104">W tym artykule opisano koncepcję skonsolidowanych szarż produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="a9dae-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="a5dbb-104">W tym artykule opisano koncepcję skonsolidowanych szarż produkcyjnych.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="a9dae-105">Wytwarzany produkt masowy jest uznawany za element nadrzędny, natomiast produkt zapakowany jest uznawany za element podrzędny.</span><span class="sxs-lookup"><span data-stu-id="a9dae-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="a9dae-106">Relacja między produktem masowym a produktem zapakowanym jest wyrażona jako konwersja produktu masowego.</span><span class="sxs-lookup"><span data-stu-id="a9dae-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="a9dae-107">Konwersja produktu masowego jest definiowana względem produktu masowego.</span><span class="sxs-lookup"><span data-stu-id="a9dae-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="a5dbb-105">Wytwarzany produkt masowy jest uznawany za element nadrzędny, natomiast produkt zapakowany jest uznawany za element podrzędny.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="a5dbb-106">Relacja między produktem masowym a produktem zapakowanym jest wyrażona jako konwersja produktu masowego.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="a5dbb-107">Konwersja produktu masowego jest definiowana względem produktu masowego.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="a9dae-108">Zapakowane produkty mogą być pakowane w kontenery tej samej wielkości lub różnej wielkości, które są uznawane za pojedynczą jednostkę.</span><span class="sxs-lookup"><span data-stu-id="a9dae-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="a9dae-109">Dzięki konsolidacji zamówień dla produktu masowego można wyświetlić wszystkie pokrewne szarże produkcyjne w jednym widoku, by lepiej określić wszelkie pozostałe prace, które muszą zostać wykonane.</span><span class="sxs-lookup"><span data-stu-id="a9dae-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="a5dbb-108">Zapakowane produkty mogą być pakowane w kontenery tej samej wielkości lub różnej wielkości, które są uznawane za pojedynczą jednostkę.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="a5dbb-109">Dzięki konsolidacji zamówień dla produktu masowego można wyświetlić wszystkie pokrewne szarże produkcyjne w jednym widoku, by lepiej określić wszelkie pozostałe prace, które muszą zostać wykonane.</span><span class="sxs-lookup"><span data-stu-id="a5dbb-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="a9dae-110">Skonsolidowana szarża produkcyjna może zawierać dowolną kombinację następujących zamówień:</span><span class="sxs-lookup"><span data-stu-id="a9dae-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="a5dbb-110">Skonsolidowana szarża produkcyjna może zawierać dowolną kombinację następujących zamówień:</span><span class="sxs-lookup"><span data-stu-id="a5dbb-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="a9dae-111">Pojedyncze zamówienie produktu zbiorczego i wiele zamówień produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a9dae-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="a9dae-112">Wiele zamówień produktu zbiorczego i wiele zamówień produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a9dae-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="a9dae-113">Wiele zamówień produktu zbiorczego i jedno zamówienie produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a9dae-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="a9dae-114">Tylko zamówienia produktów zapakowanych</span><span class="sxs-lookup"><span data-stu-id="a9dae-114">Only packed orders</span></span>
+-   <span data-ttu-id="a5dbb-111">Pojedyncze zamówienie produktu zbiorczego i wiele zamówień produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a5dbb-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="a5dbb-112">Wiele zamówień produktu zbiorczego i wiele zamówień produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a5dbb-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="a5dbb-113">Wiele zamówień produktu zbiorczego i jedno zamówienie produktu zapakowanego</span><span class="sxs-lookup"><span data-stu-id="a5dbb-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="a5dbb-114">Tylko zamówienia produktów zapakowanych</span><span class="sxs-lookup"><span data-stu-id="a5dbb-114">Only packed orders</span></span>
 
 
 
