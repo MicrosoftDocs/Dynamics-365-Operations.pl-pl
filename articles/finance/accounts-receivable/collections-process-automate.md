@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446669"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969708"
 ---
 # <a name="collections-process-automation"></a>Automatyzacja procesu windykacji
 
@@ -118,6 +117,3 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Automatycznie wysyłaj ponaglenia           |     Typy akcji ponagleń spowodują wysłanie listu podczas automatyzacji.                                      |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Tworzenie działań na potrzeby automatyzacji                |     Służy do tworzenia i zamykania działań dla typów akcji niezwiązanych z działaniami w celu wyświetlenia wszystkich zautomatyzowanych kroków podjętych na koncie.        |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Dni do przechowywania automatyzacji procesu windykacji     |     Definiuje liczbę dni przechowywania historii windykacji.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

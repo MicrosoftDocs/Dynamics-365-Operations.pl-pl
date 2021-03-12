@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MainAccountCategory, MainAccountCategoryLink
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e0a015283064af2287013bccc065b4467a308c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0d53181d63f7b362662d993e21671e9b685b5dfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446724"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968434"
 ---
 # <a name="set-up-main-account-categories"></a>Konfigurowanie kategorii konta głównego
 
@@ -42,6 +41,3 @@ W tym temacie wyjaśniono sposób konfigurowania kategorii konta głównego. Kat
 3. Zaznacz lub wyczyść pole wyboru **Połączone**, aby wybrać konta główne.
 4. Kliknij przycisk **OK**.
 5. Wybierz opcję **Tak**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

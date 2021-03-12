@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-23
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 52b77e794ee38add556ac01d62c973b38c48a548
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42088d8c005cf3fc04e768f1b8e8c8ca0b8c6993
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435134"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967739"
 ---
 # <a name="cost-calculation-level"></a>Poziom obliczania kosztu
 
@@ -57,6 +56,3 @@ Tworzone jest zlecenie produkcyjne dla produktu C, a produkt A jest dodawany do 
     - **Produkt C:** 2
 
 To zachowanie gwarantuje, że zmiany BOM zlecenia produkcyjnego nie wpływają na kolejne obliczenia kosztów.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

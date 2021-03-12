@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446903"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968986"
 ---
 # <a name="electronic-messaging"></a>Obsługa wiadomości elektronicznych
 
@@ -536,6 +535,3 @@ Można teraz usunąć lub zaktualizować stan wiadomości. Aby zaktualizować st
 ![Aktualizowanie stanu wiadomości](media/update-status.png)
 
 Stan wiadomości jest ustawiony na **Przygotowane** i możesz teraz wygenerować raport, wybierając **Generowanie raportu**. Raport zostanie wygenerowany, a stan wiadomości i dziennik akcji zostaną zaktualizowane. Aby obejrzeć wygenerowany raport, wybierz przycisk **załącznik** (symbol spinacza) w prawym górnym rogu strony.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

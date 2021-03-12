@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446915"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969011"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
@@ -38,7 +37,7 @@ Można wybrać **Kalendarzowy** lub **Obrachunkowy** w polu **Rok amortyzacji** 
 
 ### <a name="calendar"></a>Kalendarz
 
-Jeśli wybrano opcję **Kalendarz** w polu ***Rok amortyzacji***, za rok przyjmuje się okres między 1 stycznia a 31 grudnia, nawet jeśli rok obrachunkowy jest zdefiniowany inaczej. Opcja **Kalendarzowy** aktualizuje podstawę amortyzacji w dniu 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
+W przypadku wybrania opcji **Kalendarz** w polu **_Rok amortyzacji_*_ przyjmowany jest rok od 1 stycznia do 31 grudnia, nawet jeśli kalendarz obrachunkowy został zdefiniowany inaczej. Opcja _* Kalendarz** powoduje aktualizację podstawy amortyzacji 1 stycznia każdego roku. Podstawą amortyzacji jest zazwyczaj wartość księgową netto minus wartość odzyskana. W poniższym przykładzie podstawa amortyzacji stanowi kolejny numer w pierwszym wyrażeniu w obliczeniach w kolumnie Obliczenia. W przypadku wybrania opcji **Kalendarzowy** jako rok amortyzacji, dostępne są następujące opcje są dostępne w polu **Częstotliwość okresu**:
 
 -   **Roczne** — księgowanie kwoty 31 grudnia.
 -   **Miesięczne** — służy do księgowania miesięcznej kwoty pod koniec każdego miesiąca kalendarzowego.
@@ -80,6 +79,3 @@ Kwota amortyzacji jest taka sama co roku: (koszt nabycia - wartość odzyskana) 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

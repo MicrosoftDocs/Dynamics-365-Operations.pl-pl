@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 799c479c750fcaf296f3e2787fa38416af51963c
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516858"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967777"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -110,6 +109,3 @@ Aby przejrzeć historię zadań produkcji, które zostały przetworzone na jedno
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania
 
 _Zadanie procesora produkcyjnego w centrum produkcji_ przetwarza dane z centrum do jednostki skali. To zadanie jest uruchamiane automatycznie po wdrożeniu obciążenia pracą modułu uruchomienie produkcji. Można jednak uruchomić ją ręcznie w dowolnym momencie, przechodząc do **Kontrola produkcji \> Zadania okresowe \> Zarządzanie obciążeniem backoffice \> Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

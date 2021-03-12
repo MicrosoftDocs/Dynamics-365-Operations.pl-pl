@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b75ee76a1fb874652415a2174441f629955d763a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446877"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968596"
 ---
 # <a name="create-account-structures"></a>Tworzenie struktur kont
 
@@ -61,6 +60,3 @@ Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta. W k
 29. W **okienku akcji** kliknij pozycję **Aktywuj**.
 30. Kliknij **Aktywacja**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

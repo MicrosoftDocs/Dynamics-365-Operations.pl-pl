@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f641d75e06b11ca325d2624f836fc2a7c92d69e4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec16ba09cc7c942119bab1d992856c3ffcd5c628
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446704"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968561"
 ---
 # <a name="establish-customer-payment-terms"></a>Definiowanie warunków płatności dla odbiorcy
 
@@ -57,6 +56,3 @@ Ta procedura określa konfigurację rabatu gotówkowego i terminu płatności. W
 26. W polu **konto główne rabatów dostawcy** wprowadź konto główne, na którym będzie księgowany rabat gotówkowy dla faktur dostawcy.
 27. Kliknij przycisk **Zapisz**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

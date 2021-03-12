@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMCostDistributionRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 66921d5eddb31ffba0946c41f634719a684e4ad1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b269c731776e26df24658feedfa301181c309a14
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446730"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969285"
 ---
 # <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady dystrybucji kosztów do jednostki kontroli kosztów
 
@@ -73,6 +72,3 @@ Reguły dystrybucji kosztów są używane do rozdzielania kosztów, które zosta
 5. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
 6. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

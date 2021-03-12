@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a149b35c6964166207effc799a02cd4c59bbb843
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446726"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968736"
 ---
 # <a name="mass-financial-period-close"></a>Zbiorowe zamykanie okresów obrachunkowych
 
@@ -42,6 +41,3 @@ W tym temacie pokazano sposób zawieszania okresu lub trwałego zamykania okresu
 11. Wybierz opcję **Aktualizuj stan okresu** i ustaw stan **Wstrzymane**, **Otwarte** lub **Trwale zamknięty**. **Otwarte** wskazuje, że można księgować w okresie, pod warunkiem, że użytkownik ma dostęp. Wartość **Wstrzymane** oznacza, że nie może księgować w okresie, ale okres można otworzyć ponownie. Wartość **Trwale zamknięty** oznacza, że okres jest zamknięty i już nigdy nie można go otworzyć. Nie można księgować korekt. Nie zaleca się ustawiania okresu na **Trwale zamknięty** do czasu zakończenia wszystkich korekt i inspekcji.  
 12. Wybierz **Aktualizuj**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

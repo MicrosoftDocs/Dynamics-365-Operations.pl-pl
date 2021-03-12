@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: FinancialDimensionDefaultTemplates, DimensionLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a53eed5127267614ce8fb46622be59f77e68217e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ecc9adac17a6313e88ac568d016daf8d05b8d818
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446727"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968634"
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Obsługa domyślnych szablonów wymiarów finansowych
 
@@ -42,6 +41,3 @@ W tym temacie pokazano sposób konfigurowania domyślnych szablonów wymiarów f
 11. Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.
 12. Wybierz opcję **Zapisz**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 259664
 ms.assetid: 5dd8db08-cd96-4f7e-9e65-b05ca815d580
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7afe9225b8fc966ca154a5eb7421e8d4cc7c3023
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 08784385dd1fead13f538b4e856b4bac6651a560
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415051"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969933"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Dodawanie rekomendacji produktu w punkcie sprzedaży
 
@@ -92,6 +91,3 @@ Aby skonfigurować rekomendacje produktu, wykonaj następujące czynności:
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

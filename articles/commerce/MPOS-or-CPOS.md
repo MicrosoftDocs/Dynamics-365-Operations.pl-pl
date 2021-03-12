@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 508fda28d8f815f030e7b163709393f70904a5fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414849"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970110"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Wybór między aplikacjami Modern POS (MPOS) i Cloud POS
 
@@ -105,6 +104,3 @@ Podczas planowania wdrożenia punktu sprzedaży w sklepach należy wziąć pod u
 - **Urządzenia sprzętowe/peryferyjne** — jednym z istotnych aspektów systemu punktu sprzedaży Retail jest jego zdolność do obsługi urządzeń peryferyjnych punktu sprzedaży, takich jak drukarki, szuflady na gotówkę i terminale płatnicze. Co prawda wszystkie dostępne opcje punktu sprzedaży mogą korzystać z urządzeń peryferyjnych, jednak wyłącznie punkt MPOS dla systemu Windows obsługuje je w sposób bezpośredni. W przypadku wszystkich innych zastosowań wymagana jest co najmniej jedna stacja sprzętowa. Takie podejście zwiększa elastyczność, jednak wymaga wdrożenia, skonfigurowania i obsługi dodatkowych składników.
 - **Wymagania systemowe** — wymagania systemowe dla aplikacji punktu sprzedaży się różnią. Przed podjęciem ostatecznej decyzji należy sprawdzić najnowsze informacje. Przykładowo punkt CPOS obsługuje więcej systemów operacyjnych, ponieważ działa w przeglądarce. Aby uzyskać więcej informacji na temat wymagań systemowych, zobacz [Wymagania systemowe dla wdrożeń w chmurze](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Wdrażanie i obsługa** — złożoność wymagań związanych z wdrożeniem i obsługą może być różna w zależności od wybranych opcji wdrożenia i aplikacji. Na przykład w przypadku wdrożenia punktu CPOS hostowanego w chmurze nie ma potrzeby instalowania i aktualizowania go na każdym urządzeniu. Dlatego to podejście w znacznym stopniu zmniejsza złożoność oraz koszt. Jednak w przypadku wdrożenia punktu MPOS na każdym rejestrze i aktywacji trybu offline w połączeniu z wdrożeniem współdzielonych stacji sprzętowych znacznie zwiększa się liczba punktów końcowych wymagających zarządzania.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

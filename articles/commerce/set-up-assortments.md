@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15811
 ms.assetid: d2580048-e798-4b33-85f9-d1bad7d262fc
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 26614d319453041177e8072793f09f52ebfd51fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415040"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969833"
 ---
 # <a name="set-up-assortments"></a>Konfigurowanie asortymentów
 
@@ -55,6 +54,3 @@ Po spełnieniu wymagań wstępnych można tworzyć asortyment i przypisywać go 
 2. Wybierz kanały grup wysokiego poziomu kanałów, których dotyczy asortyment.
 3. Dodaj kategorie produktu, pojedyncze produkty lub ich warianty do asortymentu. Można uwzględnić wszystkie produkty w konkretnej kategorii lub można wykluczyć wybrane produkty z kategorii, która jest uwzględniona w asortymencie.
 4. Opublikuj asortyment. Po opublikowaniu asortymentu harmonogram Asortymenty jest uruchamiany automatycznie. Ten proces generuje listę produktów. Po zakończeniu tego procesu, produkty stają się dostępne dla kanałów przypisanych do asortymentu produktów. Jeśli wprowadzono zmiany asortymentu, który został opublikowany lub kanałów przypisanych do asortymentu, należy zaktualizować asortyment. Do aktualizacji asortymentu, gdy zostaną wprowadzone zmiany, można uruchomić zadanie przetwarzania wsadowego asortymentu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,14 +3,13 @@ title: Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób aprowizowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4415096"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969908"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -131,6 +130,22 @@ Aby zainicjować jednostkę CSU, należy wykonać następujące kroki.
 
 Jeśli nie możesz znaleźć łącza **Zarządzaj** w widoku Szczegóły środowiska, skontaktuj się z osobą kontaktową z firmą Microsoft w celu uzyskania pomocy.
 
+Podczas procesu wdrażania może zostać wyświetlony następujący komunikat o błędzie:
+
+> Środowiska ewaluacyjne (demonstracyjne / testowe) muszą zarejestrować aplikację łącznika jednostek skalowania \<application ID\> w Headquarters.
+
+Jeśli inicjalizacja jednostki CSU nie powiedzie się i zostanie wyświetlony ten komunikat o błędzie, zanotuj identyfikator aplikacji, który jest unikatowym identyfikatorem globalnym (GUID), a następnie wykonaj kroki opisane w następnej sekcji, aby zarejestrować aplikację wdrożeniową CSU w siedzibie Commerce headquarters.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Rejestrowanie aplikacji do wdrażania CSU w Commerce Headquarters (w razie potrzeby)
+
+Aby zarejestrować aplikację do wdrażania CSU w Commerce headquarters, wykonaj następujące kroki.
+
+1. W Commerce Headquarters wybierz kolejno opcje **Administrowanie systemem \> Konfiguracja \> aplikacje Azure Active Directory**.
+1. W kolumnie **Identyfikator klienta** wprowadź identyfikator aplikacji z otrzymanego komunikatu o błędzie inicjowania CSU.
+1. W kolumnie **Nazwa** wprowadź dowolny opisowy tekst (na przykład **Ewaluacja CSU**).
+1. W kolumnie **Identyfikator użytkownika** wprowadź wartość **RetailServiceAccount**.
+1. Ponów próbę inicjowania i wdrażania CSU z usługi LCS.
+
 ### <a name="initialize-e-commerce"></a>Inicjalizowanie e-Commerce
 
 Aby zainicjować usługę e-Commerce, należy wykonać następujące kroki.
@@ -176,6 +191,3 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska oceny usługi
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

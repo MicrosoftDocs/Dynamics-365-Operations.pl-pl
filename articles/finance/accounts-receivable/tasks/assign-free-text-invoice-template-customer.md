@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 19742c53406cd1c616e8be1172b93157437132e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fb5dd96cb71dcee6db97ad1074e7e75565ac4101
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446694"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969635"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Przypisywanie szablonu faktury niezależnej do odbiorcy
 
@@ -50,6 +49,3 @@ To zadanie przedstawia sposób przypisywania szablonu faktury niezależnej do od
     + Rocznie — Wybierz tę opcję i podaj liczbę lat w polu Na. Na przykład, jeśli zostanie wprowadzona wartość 2, co 2 lata będzie generowana faktura dla tego odbiorcy.  
 14. W polu **Na** wprowadź liczbę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

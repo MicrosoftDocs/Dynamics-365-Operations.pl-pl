@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7f721a05c8b74f1cfcf43177b73129751483650e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446825"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968511"
 ---
 # <a name="post-periodic-journals"></a>Księgowanie arkuszy okresowych
 
@@ -58,6 +57,3 @@ Arkusze okresowe są czasami nazywane arkuszami cyklicznymi, ponieważ kwota, te
 27. W polu **Numer arkusza okresowego** wprowadź lub wybierz wartość.
 28. Na liście kliknij łącze w wybranym wierszu.
 29. Kliknij przycisk **OK**. Arkusz okresowy może teraz zostać przejrzany, zatwierdzony lub zaksięgowany, w zależności od wymagań i konfiguracji.   
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
