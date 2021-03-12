@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3113202b1f38bc528733c980321d60bb9ad23dde
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435654"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992202"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Udoskonalenia cXML dotyczące zakupów
 
@@ -277,6 +276,3 @@ Aby wyświetlić zawartość potwierdzenia dostawcy lub odpowiedzi na błędy, w
 
 - [Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

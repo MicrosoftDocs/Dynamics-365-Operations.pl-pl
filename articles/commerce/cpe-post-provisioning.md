@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fa92a581a96de6bed26b4a0c6601ebd9d5088347
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414834"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993432"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -164,6 +163,3 @@ Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

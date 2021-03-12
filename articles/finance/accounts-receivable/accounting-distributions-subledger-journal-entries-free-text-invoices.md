@@ -1,5 +1,5 @@
 ---
-title: Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur niezależnych
+title: Zasady podziału księgowań i wpisy w arkuszu księgi dla faktur niezależnych
 description: Zasady podziału księgowań służą do określania sposobu księgowania kwot, takich jak przychody, podatki lub opłaty, na fakturze niezależnej. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury niezależnej, będzie posiadać jedną lub więcej zasad podziału księgowań.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3141
 ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 515d0a9c35507fad04b776e1f0b6225ac5a162d3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446647"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993208"
 ---
-# <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Zasady podziału księgowań i zapisów w arkuszu księgi podrzędnej dla faktur niezależnych
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Zasady podziału księgowań i wpisy księgi podrzędnej dla faktur niezależnych
 
 [!include [banner](../includes/banner.md)]
 
@@ -136,6 +135,3 @@ Przed zaksięgowaniem faktury niezależnej, można wyświetlić pełny wpis ksi�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

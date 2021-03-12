@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-13
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 371d98eefa482fc3e430f2f0977ddffb9dd0d30e
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 02c31aa3862df8dabc2b8c065dc3a94877d237f6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645099"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992427"
 ---
 # <a name="exclude-products-that-have-specific-product-lifecycle-states"></a>Wykluczanie produktów z określonymi stanami cyklu życia produktu
 
@@ -42,6 +41,3 @@ Zwolnione produkty i warianty, w których pole **Stan cyklu życia produktu** po
 Aby uzyskać więcej informacji na temat stanów cyklu życia produktów, zapoznaj się z [Omówienie stanów cyklu życia produktu](../../pim/product-lifecycle.md).
 
 Aby uzyskać szczegółowe informacje, które obejmują kroki korzystania ze stanów cyklu życia produktu w celu wykluczenia produktów z planowania głównego i obliczeń na poziomie BOM, zobacz [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego](../../pim/tasks/exclude-products-master-planning.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

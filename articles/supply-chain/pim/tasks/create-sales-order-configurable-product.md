@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 988d87757019d20dcaf675af925166ed376685f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77404694b3426f9ef051721191b607f91c908cc4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435215"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992327"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Tworzenie zamówienia sprzedaży dla konfigurowalnego produktu
 
@@ -53,6 +52,3 @@ Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w z
 
 ## <a name="select-the-product-configuration"></a>Wybór konfiguracji produktu
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

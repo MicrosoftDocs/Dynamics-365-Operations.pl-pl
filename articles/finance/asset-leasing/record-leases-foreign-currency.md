@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 92177d4f808bfec88dabe9277c3d584ed02e401e
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7f70442450cc1c814ae23e41a1feb3a63f2aade8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446993"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992896"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Rejestrowanie wynajmów w walutach obcych
 
@@ -53,6 +52,3 @@ Podczas tworzenia wpisów w arkuszu dotyczących wydatków amortyzacji w odniesi
 Ostateczna kwota wydatku amortyzacji może zostać obliczona przy użyciu nieco innego kursu wymiany, tak aby składnik majątku z PDU był w pełni amortyzowany w walucie rozliczeniowej i walucie raportowania.
 
 Jeśli wynajem został przeklasyfikowany jako **Odroczony czynsz**, system automatycznie wyczyści kursy wymiany w walutach rozliczeniowej i raportowania, jeśli zostały one już zdefiniowane.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

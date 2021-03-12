@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c7d4cacbf56243830633f4d0fd3c57071b08ab56
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527345"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991872"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synchronizowanie nagłówków ofert i wierszy zamówień sprzedaży w rozwiązaniu Supply Chain Management bezpośrednio z elementami w rozwiązaniu Sales
 
@@ -35,7 +34,7 @@ ms.locfileid: "4527345"
 Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania nagłówków i wierszy ofert sprzedaży bezpośrednio między Dynamics 365 Supply Chain Management a Dynamics 365 Sales.
 
 > [!NOTE]
-> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+> Zanim zaczniesz używać rozwiązania Prospekt na gotówkę, zapoznaj się z tematem [Integrowanie danych na platformie Microsoft Dataverse for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Przepływ danych w rozwiązaniu Prospekt na gotówkę
 
@@ -63,8 +62,8 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 | Sprzedaż        | Zarządzanie łańcuchem dostaw     |
 |--------------|----------------------------|
-| Cytaty       | Nagłówek oferty sprzedaży CDS |
-| QuoteDetails | Wiersze oferty sprzedaży CDS  |
+| Cytaty       | Nagłówek oferty sprzedaży w usłudze Dataverse |
+| QuoteDetails | Wiersze oferty sprzedaży w usłudze Dataverse  |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
@@ -143,6 +142,3 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 [Prospekt na gotówkę](prospect-to-cash.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

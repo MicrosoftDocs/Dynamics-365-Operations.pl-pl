@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a189bbdd360d07b2b5198fa357380fd9a89ac167
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446734"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992971"
 ---
 # <a name="process-collection-letters"></a>Przetwarzanie ponagleń
 
@@ -88,6 +87,3 @@ Aby zignorować płatności i noty kredytowe przy obliczaniu kodu ponaglenia, wy
 
 1. Przejdź do **Okienko nawigacji > Moduły > Kredyty i windykacja > Ustawienia > Parametry modułu rozrachunków z odbiorcami** i kliknij kartę **Windykacje**. 
 2. Zmień wartość opcji **Ignoruj płatności i noty kredytowe przy obliczaniu kodu ponaglenia** na **Tak**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

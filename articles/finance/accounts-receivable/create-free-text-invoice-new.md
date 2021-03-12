@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1ac06e7d702ffe3a8cdb6bd2823f2ffdc055c722
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 726d4979059417871a00626c55da32fa4286cb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446666"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991124"
 ---
 # <a name="create-a-free-text-invoice"></a>Tworzenie faktury niezależnej
 
@@ -30,8 +29,8 @@ W tym temacie opisano sposób tworzenia faktur niezależnych. Ta procedura wykor
 
 ## <a name="create-a-free-text-invoice"></a>Tworzenie faktury niezależnej
 
-1. Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Faktury \> Wszystkie faktury niezależne**.
-2. Wybierz **Nowy**.
+1. Wybierz kolejno opcje **Rozrachunki z odbiorcami (lub Księga sprzedaży) \> Faktury \> Wszystkie faktury niezależne**.
+2. Wybierz pozycję **Nowy**.
 3. W polu **Konto odbiorcy** wybierz wartość.
 
     * Domyślnie kontem faktury będzie konto wybrane jako konto odbiorcy.
@@ -85,6 +84,3 @@ Po skopiowaniu wierszy można edytować informacje zgodnie z potrzebami.
 Fakturę niezależną można utworzyć na podstawie szablonu. Gdy na karcie **Faktura** wybierzesz opcję **Nowe z szablonu**, można wybrać nazwę szablonu i konto odbiorcy dla nowej faktury niezależnej. Wartości domyślne, takie jak warunki płatności i metoda płatności, mogą być automatycznie wprowadzane na podstawie danych odbiorcy lub też można użyć wartości zapisanych w szablonie.
 
 Zostanie utworzona nowa faktura niezależna i można w niej edytować wartości zgodnie z potrzebami.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ec8ee7f8ba7493e5334c1a4106351c3661aa00a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7efa7acda84184228c167f0c5419b790c5f24d9d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446772"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993121"
 ---
 # <a name="configure-accounts-receivable-and-credit-and-collections"></a>Konfigurowanie modułu rozrachunki z odbiorcami oraz kredytu i windykacji
 
@@ -110,6 +109,3 @@ Aby uzyskać więcej informacji, zobacz temat [Kredyty i windykacja w rozrachunk
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

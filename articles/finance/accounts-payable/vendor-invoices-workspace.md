@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
-ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.openlocfilehash: 04aca717c3f255799699d63fb74ee0b543f8c8ba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4446958"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993270"
 ---
 # <a name="vendor-invoice-entry-workspace"></a>Obszar roboczy wpisu faktury od dostawcy
 
@@ -117,6 +116,3 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 | Faktury, których nie udało się zaimportować | <ul><li>Faktury, których nie udało się zaimportować</li><li>Faktury, których nie udało się zaimportować według firmy</li></ul> |
 | Przyczyny niepowodzenia automatyzacji | <ul><li>Faktury zakończone niepowodzeniem</li><li>Faktury zakończone niepowodzeniem przez firmę</li><li>Faktury zakończone niepowodzeniem przez grupę dostawców</li></ul> |
 | Stan przepływu pracy                | <ul><li>Faktury w przepływie pracy</li><li>Wystąpienia przepływu pracy faktur dla dostawców</li><li>Przypisanie na osobę zatwierdzającą</li><li>Przepływ pracy faktury od dostawcy na firmę</li><li>Średnia liczba dni w przepływie pracy wg osób zatwierdzających</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

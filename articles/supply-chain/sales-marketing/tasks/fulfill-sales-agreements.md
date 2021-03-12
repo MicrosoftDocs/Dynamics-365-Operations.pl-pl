@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesTableListPage, SalesTable, AgreementLine, SalesCreateOrder,  SalesEditLines, SalesAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d3a35c7140b886f931df48e583b1582201b6547
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fca2f8777f5ce3b6a96be7fcab4f011aefd9d80b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435025"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991771"
 ---
 # <a name="fulfill-sales-agreements"></a>Realizacja umów sprzedaży
 
@@ -90,6 +89,3 @@ W tej procedurze pokazano, jak zrealizować zamówienie sprzedaży poprzez skoja
 23. Kliknij opcję Dołączona umowa sprzedaży.
 24. Kliknij kartę Realizacja.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

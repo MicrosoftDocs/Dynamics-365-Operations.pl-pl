@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1d33dbbd37daaa75f4b64359194a2328728b27f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446670"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991265"
 ---
 # <a name="credit-management-setup"></a>Konfiguracja zarządzania kredytem 
 
@@ -153,6 +152,3 @@ Aby dodać wiersze reprezentujące limit kredytu, który zostanie wygenerowany n
 2. Umożliwia wybranie operatora porównania definiującego sposób oceniania informacji o grupie punktacji.
 3. Umożliwia wprowadzenie wartości, która powinna być porównywana z wartością określoną dla grupy punktacji.
 4. Umożliwia wprowadzenie limitu kredytowego, który powinien zostać przypisany, jeśli informacje o odbiorcy odpowiadają wartości określonej dla grupy punktacji. Można na przykład utworzyć automatyczny limit kredytu dla **Niskiej** grupy punktacji. Jeśli lata w firmie są jedną z grup punktacji, można zdefiniować jeden wiersz, który przypisuje klientowi limit kredytu 100 000, jeśli odbiorca jest w ciągu pięciu lat, a drugi wiersz przypisuje limit kredytu 200 000, jeśli klient był w trakcie prowadzenia działalności przez okres 10 lat.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
