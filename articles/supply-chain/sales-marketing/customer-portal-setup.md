@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e61fc5f7151a0bb61d496d47f4ad4e727a2a1d65
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2153bbca2be7c72e48b9dc51b1f7fdbe2ab89903
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529537"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977745"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Instalowanie, konfigurowanie i aktualizowanie portalu klienta
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529537"
 Aby zaimplementować Portal odbiorców, należy dysponować następującymi licencjami:
 
 - **Portale Power Apps** — Ta licencja jest wymagana do obsługi portalu klienta. Portale są licencjonowane na podstawie użycia. Aby uzyskać więcej informacji, zajrzyj do [wymagań licencyjnych dotyczących portali Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Podwójny zapis** — wymagane są licencje niezbędne do włączenia podwójnego zapisywania dla jednostek Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe dotyczące podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Podwójny zapis** — wymagane są licencje niezbędne do włączenia podwójnego zapisywania dla tabel Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Wymagania systemowe dotyczące podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Zależności od podwójnego zapisu i portali Power Apps
 
@@ -39,13 +38,13 @@ Portal klienta zależy od portali Power Apps i podwójnego zapisu, co pokazano n
 
 ![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 
-W przeciwieństwie do innych funkcji Supply Chain Management, szablon Portalu klienta znajduje się w portalach Power Apps. Z tego względu Portal klienta jest ograniczony przez funkcje i możliwości dostarczane przez portale Power Apps i podmioty zamawiające z podwójnym zapisem.
+W przeciwieństwie do innych funkcji Supply Chain Management, szablon Portalu klienta znajduje się w portalach Power Apps. Z tego względu Portal klienta jest ograniczony przez funkcje i możliwości dostarczane przez portale Power Apps i tabele z podwójnym zapisem.
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Konfiguracja wymagana do włączenia portalu klienta
 
 Po upewnieniu się, że użytkownik dysponuje wymaganymi licencjami, można skonfigurować podwójny zapis w sposób opisany w [instrukcjach wstępnej synchronizacji podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
 
-Należy pamiętać, aby w podwójnym zapisywaniu włączyć następujące mapowania jednostek:
+Należy pamiętać, aby w podwójnym zapisywaniu włączyć następujące mapowania tabel:
 
 - Nagłówek zamówienia sprzedaży
 - Szczegóły zamówienia sprzedaży
@@ -80,12 +79,9 @@ Aby dowiedzieć się, jak można skonfigurować i dostosować Portal klienta, na
 - [Dokumentacja portali Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview)
 - [Dokumentacja podwójnego zapisu](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-Aby efektywnie zarządzać portalami, należy zrozumieć portale Power Apps i cykl życia Common Data Service. Aby uzyskać więcej informacji, zobacz następujące zasoby:
+Aby efektywnie zarządzać portalami, należy zrozumieć portale Power Apps i cykl życia Microsoft Dataverse. Aby uzyskać więcej informacji, zobacz następujące zasoby:
 
 - [Cykl życia portalu — informacje](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
 - [Uaktualnianie portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migruj konfigurację portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Zarządzanie cyklem życia rozwiązania: Dynamics 365 dla aplikacji Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

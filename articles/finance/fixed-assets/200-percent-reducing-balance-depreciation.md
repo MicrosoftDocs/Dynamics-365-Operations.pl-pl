@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13951
 ms.assetid: 69b4e010-7683-4dc2-8a06-6d572f37e903
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0474a8cecccaf1e23874458c27e0bea991140b6c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f012f934015e334aea468b5b62741749103d7790
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446845"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978746"
 ---
 # <a name="200-percent-reducing-balance-depreciation"></a>200% amortyzacja degresywna
 
@@ -81,15 +80,12 @@ Metoda amortyzacji degresywnej 200% dzieli wartość 200% między lata okresu u�
 
 | Okres | Obliczenie kwoty rocznej amortyzacji | Wartość księgowa             | Wartość księgowa netto pod koniec roku |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Rok 1 | (11 000 – 1000) × 40% = 4000                | 11 000 – 4000 = 7000 | 11 000 – 1000 – 4000 = 6000        |
-| Rok 2 | 6000 × 40% = 2400                           | 7000 – 2400 = 4600  | 6000 – 2400 = 3600                 |
-| Rok 3 | 3600 × 40% = 1440                           | 4600 – 1440 = 3160  | 3600 – 1440 = 2160                 |
+| Rok 1 | (11000 – 1000) × 40% = 4000                | 11000 – 4000 = 7000 | 11000 – 1000 – 4000 = 6000        |
+| Rok 2 | 6000 × 40% = 2400                           | 7000 – 2400 = 4600  | 6000 – 2400 = 3600                 |
+| Rok 3 | 3600 × 40% = 1440                           | 4600 – 1440 = 3160  | 3600 – 1440 = 2160                 |
 
 > [!NOTE] 
 > Zwykle kiedy kwota, która jest obliczana przy użyciu metody amortyzacji degresywnej 200%, stanie się niższa od kwoty, która może zostać obliczona za pomocą metody liniowej, następuje przejście do metody liniowej dla pozostałego okresu użytkowania.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

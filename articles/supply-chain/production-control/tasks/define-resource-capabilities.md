@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c07d3fe1969f3baea484991e74f668eade813d78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 93b30cbe660d224f0a92f4e412d2b1ba33af3f9b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434923"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977845"
 ---
 # <a name="define-resource-capabilities"></a>Definiowanie możliwości zasobu
 
@@ -49,6 +48,3 @@ Możliwości zasobu opisują, jakie operacje może wykonywać zasób. Podczas pl
 5. W polu Poziom wprowadź liczbę.
     * Po określeniu, że zadanie lub operacja wymaga określonej możliwości, można także określić minimalny wymagany poziom. Użyj poziomu możliwości w celu odróżnienia zasobów, które mogą wykonać to samo zadanie, ale z różną szybkością, siłą, rozmiarami itd.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

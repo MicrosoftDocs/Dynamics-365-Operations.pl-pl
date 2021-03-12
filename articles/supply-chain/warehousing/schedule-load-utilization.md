@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WMSSpaceUtilSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87455077c69834c9ace6409f4cc611ae6e14beb4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ac4dcba153b8da3d62261326c3c4e169325c2210
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435014"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977395"
 ---
 # <a name="schedule-load-utilization"></a>Planowanie wykorzystania przestrzeni magazynowej
 
@@ -72,6 +71,3 @@ W celu sporządzenia prognozy wykorzystania miejsca można wygenerować raport *
 
 4. W polu **Typ obciążenia pracą** wybierz opcję **Objętość** lub **Masa**, aby wskazać jednostkę operacyjną obszaru, dla której ma zostać sporządzona prognoza miejsca.
 5. W polu **Ustawienia wykorzystania miejsca** wybierz konfigurację wykorzystania miejsca, na której ma bazować prognoza.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

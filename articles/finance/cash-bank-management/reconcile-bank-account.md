@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abc86aa5c3863eba34f726b543792408a542383
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446872"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976373"
 ---
 # <a name="reconcile-a-bank-account"></a>Uzgadnianie konta bankowego
 
@@ -71,6 +70,3 @@ Funkcja Anuluj uzgodnienie wyciągu bankowego umożliwia anulowanie uzgodnienia 
 Rozliczenia wyciągu bankowego można anulować tylko w porządku chronologicznym, w którym zostały wprowadzone. Gdy uzgodnienie wyciągu bankowego zostanie anulowane, nowe transakcje i korekty zostaną wycofane, a wszystkie inne transakcje zostaną oznaczone jako nieuzgodnione.
  
 Aby anulować uzgadnianie wyciągu bankowego, wybierz wyciąg bankowy i wybierz **Wyciąg bankowy > Anuluj uzgodnienie konta bankowego**. Na stronie **Anulowanie uzgodnienia konta bankowego** podaj **kod przyczyny**, **komentarz przyczyny** oraz **datę anulowania**. Wybierz **OK**, aby rozpocząć anulowanie. Uwaga: data anulowania wyciągu bankowego musi być w dniu lub po dacie wyciągu bankowego. Po anulowaniu rozliczenia wyciągu bankowego pole **Data anulowania** dla wyciągu bankowego zostanie zaktualizowane o podany **termin anulowania**. Wybierz przycisk **Transakcje**, aby wyświetlić transakcje, dla których uzgodnienie zostało anulowane.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

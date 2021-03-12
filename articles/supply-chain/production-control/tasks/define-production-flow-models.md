@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434924"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977870"
 ---
 # <a name="define-production-flow-models"></a>Definiowanie modeli przepływu produkcji
 
@@ -46,6 +45,3 @@ Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności pr
 8. W polu Reakcja na niedobór zdolności produkcyjnych wybierz opcję.
     * Opóźnij — Odroczenie pełnego popytu w zdarzeniu planowania do następnego dostępnego dnia produkcji mającego dostępną produktywność. Anuluj — Zakończenie automatycznego planowania w zdarzeniu planowania i pozostawienie powiązanych zadań niezaplanowanych.   Dodaj do żądanego dnia — Planowanie żądanych zadań na żądany okres. Powoduje to przeciążenie komórki w danym dniu i wymaga od planisty przeglądu i ręcznej interakcji.   Dystrybucja do dostępnych okresów — Rozdział różnych zadań zdarzenia planowania między wszystkie dostępne produkcji dni, począwszy od pierwszego dostępnego dnia. Minimalną ilością do rozdziału jest ilość z zadania w systemie Kanban. Dystrybucja powoduje przypisanie minimalnej ilości planowania (ilości z kart Kanban) do każdego dnia o wystarczającej dostępnej produktywności.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

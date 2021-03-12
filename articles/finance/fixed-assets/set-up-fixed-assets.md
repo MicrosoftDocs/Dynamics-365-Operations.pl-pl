@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13771
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c42522f69ecf2eb25d8d9384737115826ff4cda
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446951"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978518"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurowanie środków trwałych
 
@@ -84,6 +83,3 @@ Można skonfigurować kody przyczyny, aby były wymagane przy modyfikacjach śro
 Wreszcie na karcie **Sekwencje numerów** należy określić numerację środków trwałych. Numeracja w polu **Środek trwały** może zostać zastąpiona przez numerację z pola **Grupa środków trwałych**, jeśli została określona.
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie środka trwałego](tasks/create-fixed-asset.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

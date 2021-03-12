@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f961dc379ceeeae9bbceec1baaa9b9be21316f3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0f28be8993d5fc0a1632cf7a534808e64980c09b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435554"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977045"
 ---
 # <a name="set-up-containerization"></a>Konfigurowanie konteneryzacji
 
@@ -81,6 +80,3 @@ W tym temacie opisano sposób zautomatyzowania konteneryzacji ładunków w modul
 11. W polu **Wybór pola** wprowadź lub wybierz wartość.
 12. Kliknij przycisk **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

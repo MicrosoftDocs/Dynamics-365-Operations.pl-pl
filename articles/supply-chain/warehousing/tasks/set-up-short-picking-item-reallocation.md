@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ab8baf846d65e6fefe9ca575b5af5a2dbceac666
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976895"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
 
@@ -64,6 +63,3 @@ Do stworzenia tej procedury wykorzystano dane z firmy demonstracyjnej USMF.
 6. Na liście wybierz **Identyfikator użytkownika**. Na przykład 24.
 7. Rozwiń skróconą kartę **Praca**.
 8. W polu **Zezwalaj na ręczną zmianę alokacji pozycji** wybierz opcję **Tak**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

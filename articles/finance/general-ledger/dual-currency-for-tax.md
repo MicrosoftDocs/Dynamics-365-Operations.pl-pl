@@ -3,7 +3,7 @@ title: Obsługa podwójnej waluty dla podatku
 description: W tym temacie opisano sposób rozszerzania funkcji księgowania podwójnej waluty w domenie podatkowej oraz wpływu na potrzeby obliczania i księgowania podatku
 author: EricWang
 manager: Ann Beebe
-ms.date: 12/16/2019
+ms.date: 12/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 9e5db8e4bbd14aa30196e3be617cdfcb72c091fd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e3e7ff93ca3c6a2266ba0f33c8eac7ceade0d4d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446756"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978613"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Obsługa podwójnej waluty dla podatku
 [!include [banner](../includes/banner.md)]
@@ -44,8 +43,7 @@ Aby uzyskać więcej informacji na temat podwójnej waluty, zobacz [Dwie waluty]
 
 W związku z obsługą dwóch walut w zarządzaniu funkcjami są dostępne dwie nowe funkcje: 
 
-- Konwersja podatku (wydanie w wersji 10.0.9)
-- Automatyczne saldo rozliczeń podatkowych w walucie raportowania (wydanie w wersji 10.0.11)
+- Konwersja podatku (nowość w wersji 10.0.13)
 
 Obsługa podwójnej waluty dla podatków gwarantuje, że podatki są obliczane dokładnie w walucie podatkowej, a saldo rozliczenia podatku jest dokładnie obliczane w walucie rozliczeniowej i walucie raportowania. 
 
@@ -145,6 +143,3 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Dwie waluty](dual-currency.md)
 - [Omówienie podatku](indirect-taxes-overview.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

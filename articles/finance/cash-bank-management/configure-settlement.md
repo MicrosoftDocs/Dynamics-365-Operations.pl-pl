@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ebc6fcfe20082f76007eabb86d5e33dbfc900dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446938"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976464"
 ---
 # <a name="configure-settlement"></a>Konfigurowanie rozliczenia
 
@@ -67,6 +66,3 @@ Aby uniknąć dodatkowych zapisów księgowych, po stronie debetowej i kredytowe
 
 -   Organizacje często używają stałych wymiarów do wypełniania zerami wymiarów finansowych, który nie są wymagane. Jest to przypadek typowy dla kont bilansowych, takich jak rozrachunki z odbiorcami/rozrachunki z dostawcami. Struktur kont można używać, aby nie śledzić wymiarów finansowych, które są zazwyczaj wypełniane zerami.  Można usunąć wymiar finansowy dla kont bilansowych, co wyeliminuje konieczność używania stałych wymiarów.
 -   Jeśli organizacja wymaga stałych wymiarów na koncie głównym rozrachunków z odbiorcami/dostawcami, znajdź sposób na domyślne ustawianie stałego wymiaru w płatności, tak aby wartości stałego wymiaru była przechowywana w transakcji z dostawcą dla płatności. Dzięki temu system będzie mógł odtworzyć rozrachunki z odbiorcami/rozrachunki z dostawcami konta głównego, aby uwzględnić wartości ustalonego wymiaru. Stała wartość wymiaru może być zdefiniowana jako wartość domyślna dla dostawców lub nazwy arkusza dla arkusza płatności.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

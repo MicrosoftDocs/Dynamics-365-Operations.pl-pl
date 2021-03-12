@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 262554
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a68c00fc7fc6742da7b2732897fd21e0028f1493
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: edbaebbfed66424ed37104cdd28a87f378b46b4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408360"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978304"
 ---
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 
@@ -64,6 +63,3 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 - [Zaliczki na rzecz pracownika (Europa Wschodnia)](tasks/advance-payment-employee.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
