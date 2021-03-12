@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b4b9abff57386fda61e3a83b0b8f18e533c8758c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 48d8fd06217d318fa8208e11ffa5624f6be25be1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694648"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796713"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Delegowanie pozycji pracy w przepływie pracy
 
@@ -60,6 +60,3 @@ Jeśli zamierzasz być poza biurem lub nie będziesz mieć możliwości wykonywa
 8. W polu **Data/godzina zakończenia** wprowadź datę i godzinę.
 9. Aby aktywować regułę delegowania, zaznacz pole wyboru **Włączone**. 
 10. W polu **Komentarz** wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

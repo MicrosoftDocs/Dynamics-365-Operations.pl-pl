@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7a9e12eae7065bb37fc0ddbb579a0437120c165
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 39dd9a86ffb04d18f61c75fb2c9634e441dc823b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693528"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797906"
 ---
 # <a name="view-and-export-field-descriptions"></a>Wyświetlanie i eksportowanie opisów pól
 
@@ -107,6 +107,3 @@ Aby uzyskać informacje o różnych sposobach znajdowania stron, zobacz sekcję 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Dostosowywanie opisów pól](../../dev-itpro/user-interface/customize-field-help.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

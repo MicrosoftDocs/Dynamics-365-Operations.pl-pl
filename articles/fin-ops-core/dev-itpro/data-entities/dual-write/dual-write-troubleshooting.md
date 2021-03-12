@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688266"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744548"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -65,23 +65,23 @@ Aby włączyć śledzenie, należy wykonać następujące kroki.
 
 1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **System** wybierz pozycję **Administracja**.
 2. Na stronie **Administracja** wybierz opcję **Konfiguracja systemu**.
-3. Na karcie **Dostosowywanie**, w polu **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie**, aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
+3. Na karcie **Dostosowywanie**, w kolumnie **Wtyczki i niestandardowe śledzenie działania przepływu pracy** zaznacz opcję **Wszystkie**, aby włączyć dziennik śledzenia wtyczek. Jeśli chcesz rejestrować dzienniki śledzenia tylko w przypadku wystąpienia wyjątków, możesz zamiast tego wybrać **Wyjątek**.
 
 
 Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
 1. Zaloguj się do aplikacji opartej na modelu na platformie Dynamics 365, otwórz stronę **Ustawienia**, a następnie w obszarze **Dostosowywanie** wybierz pozycję **Dziennik śledzenia wtyczek**.
-2. Znajdź dzienniki śledzenia, w których w polu **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Znajdź dzienniki śledzenia, w których w kolumnie **Nazwa typu** jest ustawiona wartość **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Kliknij dwukrotnie towar, aby wyświetlić pełny dziennik, a następnie w skróconej karcie **Wykonania** przejrzyj tekst **Bloku wiadomości**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finance and Operations
 
 **Wymagana rola do wyświetlania błędów:** błędy podwójnego zapisywania administratora systemu Dataverse mogą pojawić się w aplikacji Finance and Operations. W niektórych przypadkach pełny tekst komunikatu o błędzie jest niedostępny, ponieważ wiadomość jest zbyt długa lub zawiera informacje identyfikacyjne (dane osobowe). Pełne rejestrowanie błędów można włączyć, wykonując następujące kroki:
 
-1. Wszystkie konfiguracje projektu w aplikacjach Finance and Operations mają właściwość **IsDebugMode** w jednostce **DualWriteProjectConfiguration**. Otwórz jednostkę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel.
+1. Wszystkie konfiguracje projektu w aplikacjach Finance and Operations mają właściwość **IsDebugMode** w tabeli **DualWriteProjectConfiguration**. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel.
 
     > [!TIP]
-    > Łatwym sposobem otwarcia jednostki jest włączenie trybu **Projektowania** w dodatku Excel, a następnie dodanie **DualWriteProjectConfigurationEntity** do arkusza. Aby uzyskać więcej informacji, zobacz: [Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel](../../office-integration/use-excel-add-in.md).
+    > Łatwym sposobem otwarcia tabeli jest włączenie trybu **Projektowania** w dodatku Excel, a następnie dodanie **DualWriteProjectConfigurationEntity** do arkusza. Aby uzyskać więcej informacji, zobacz: [Otwieranie danych tabeli w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel](../../office-integration/use-excel-add-in.md).
 
 2. Właściwość **IsDebugMode** należy skonfigurować jako wartość **Tak** dla projektu.
 3. Uruchom scenariusz, który generuje błędy.
@@ -118,10 +118,7 @@ Teraz można połączyć nowe środowisko.
 Po utworzeniu zamówienia sprzedaży w systemie Dynamics 365 Sales, kliknięcie **+ Dodaj produkty** może spowodować przekierowanie do formularza wiersza zamówienia Dynamics 365 Project Operations. Nie ma sposobu na podstawie tego formularza, aby wyświetlić formularz **Informacji** o wierszu zamówienia sprzedaży. Opcja dotycząca **Informacji** nie jest wyświetlana w polu listy rozwijanej pod **Nowy wiersz zamówienia**. Dzieje się tak, ponieważ Project Operations zostało zainstalowane w danym środowisku.
 
 Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące kroki:
-1. Umożliwia przejście do jednostki **Wiersza zamówienia**.
+1. Przejdź do tabeli **Wiersz zamówienia**.
 2. Znajdź formularz **Informacje** w węźle formularze. 
 3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**. 
 4. Zmień ustawienie zabezpieczeń, aby było **Wyświetlane dla wszystkich**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: e2b652f11db62eb58ffc2ec2fc4322149e7d45d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5132fd85fdf2c08ccded9db590328c394a2f984e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680079"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744700"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Hierarchia organizacyjna w usłudze Dataverse
 
@@ -49,11 +49,11 @@ Informacje o produkcie zawierają wszystkie informacje związane z produktem i j
 
 Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | opis
 -----------------------|--------------------------------|---
-Cele hierarchii organizacji | msdyn_internalorganizationhierarchypurposes | Ten szablon umożliwia jednokierunkową synchronizację jednostki cel hierarchii organizacyjnej.
-Typ hierarchii organizacyjnej | msdyn_internalorganizationhierarchytypes | Ten szablon umożliwia jednokierunkową synchronizację jednostki typu hierarchii organizacyjnej.
-Hierarchia organizacyjna - opublikowana | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację jednostki opublikowanej hierarchii organizacyjnej.
+Cele hierarchii organizacji | msdyn_internalorganizationhierarchypurposes | Ten szablon umożliwia jednokierunkową synchronizację tabeli celu hierarchii organizacyjnej.
+Typ hierarchii organizacyjnej | msdyn_internalorganizationhierarchytypes | Ten szablon umożliwia jednokierunkową synchronizację tabeli typu hierarchii organizacyjnej.
+Hierarchia organizacyjna — opublikowana | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację tabeli opublikowanej hierarchii organizacyjnej.
 Jednostka operacyjna | msdyn_internalorganizations |
-Firmy | msdyn_internalorganizations |
+Osoby prawne | msdyn_internalorganizations |
 Firmy | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
 
 [!include [banner](../../includes/dual-write-symbols.md)]
@@ -73,6 +73,3 @@ Informacje o organizacji wewnętrznej Dataverse pochodzą z dwóch tabel, **jedn
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

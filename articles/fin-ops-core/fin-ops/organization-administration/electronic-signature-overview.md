@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7f842477ddfb88662f37ae311215f08c6b0173
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 051bb023d3456dae0be30de3897b282c2d50c5af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693191"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797635"
 ---
 # <a name="electronic-signatures-overview"></a>Omówienie podpisów elektronicznych
 
@@ -109,6 +109,3 @@ Aby wyznaczyć osoby zatwierdzające, wykonaj następujące kroki:
 1. Na stronie **Opcje** na karcie **Konta** kliknij opcję **Wyznacz osobę zatwierdzającą**.
 2. W polu **Identyfikator użytkownika osoby zatwierdzającej** wybierz identyfikator użytkownika, który ma podpisywać zmiany dokonane przez innego użytkownika.
 3. W polu **Identyfikator użytkownika osoby potrzebującej podpisu** wybierz identyfikator użytkownika, którego zmiany mają być podpisywane.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

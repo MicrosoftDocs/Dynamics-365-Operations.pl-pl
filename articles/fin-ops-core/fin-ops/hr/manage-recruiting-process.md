@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6f440a42ea475a42c803475d82e3027625bf4db
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694916"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798050"
 ---
 # <a name="manage-recruiting-processes"></a>Zarządzanie procesami rekrutacji
 
@@ -103,6 +103,3 @@ Elementy **Rozmowy kwalifikacyjne z kandydatami** można planować na stronie **
 ## <a name="hiring-applicants"></a>Zatrudnianie kandydatów
 
 Kandydatów zatrudnia się na stronie **Zgłoszenia**. Po zatrudnieniu kandydata rekord zgłoszenia otrzymuje stan **Zatrudniony**, a rekord osoby w globalnej książce adresowej jest kojarzony z rekordem nowego pracownika. Zmiany w danych globalnej książki adresowej dla nowego rekordu pracownika są również wyświetlane w rekordzie kandydata. Zmniejsza to ilość danych, które trzeba wprowadzić, gdyby nowy pracownik złożył wniosek o zatrudnienie na innym stanowisku w tym samym przedsiębiorstwie. Aby zatrudnić istniejącego pracownika na nowym stanowisku, kliknij opcję **Zmień stanowisko** w menu rozwijanym **Stan zgłoszenia** i uruchom proces przeniesienia.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,25 +11,24 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72db7660c07b2f57f8609ab6c14964193e842d75
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688574"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797348"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
 [!include[banner](../includes/banner.md)]
 
-Każdy skonfigurowany składnik w postaci [formatu](general-electronic-reporting.md#FormatComponentOutbound) i [mapowania modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) może być [weryfikowany](er-fillable-excel.md#validate-an-er-format) w czasie projektowania. Podczas tego sprawdzania spójności jest przeprowadzane sprawdzanie spójności w celu uniknięcia problemów, które mogą wystąpić w czasie wykonywania, takich jak błędy wykonywania i pogorszenie wydajności. Dla każdego znalezionego problemu jest podawana ścieżka do problematycznego elementu. W przypadku niektórych problemów jest dostępna automatyczna poprawka.
+Każdy skonfigurowany składnik w postaci [formatu](general-electronic-reporting.md#FormatComponentOutbound) i [mapowania modelu](general-electronic-reporting.md#data-model-and-model-mapping-components) modułu [Raportowanie elektroniczne (ER)](general-electronic-reporting.md) może być [weryfikowany](er-fillable-excel.md#validate-an-er-format) w czasie projektowania. Podczas tego sprawdzania spójności jest uruchamiane sprawdzanie spójności w celu uniknięcia problemów, które mogą wystąpić w czasie wykonywania, takich jak błędy wykonywania i pogorszenie wydajności. Dla każdego znalezionego problemu test podaje ścieżkę do problematycznego elementu. W przypadku niektórych problemów jest dostępna automatyczna poprawka.
 
 Domyślnie sprawdzanie poprawności jest stosowane automatycznie w następujących przypadkach dla konfiguracji ER, która zawiera wspomniane wcześniej składniki ER:
 
@@ -69,7 +68,7 @@ Aby pominąć sprawdzanie poprawności podczas importowania konfiguracji, wykona
 2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
 3. W opcji **Weryfikuj konfigurację po zaimportowaniu** ustaw wartość **Nie**.
 
-Aby pominąć sprawdzanie poprawności w przypadku zmiany stanu lub jej podstawy (bazy) wersji, wykonaj następujące kroki.
+Aby pominąć walidację w przypadku zmiany stanu lub jej podstawy (bazy) wersji, wykonaj następujące kroki.
 
 1. Przejdź do opcji **Administrowanie organizacją \> Raporty elektroniczne \> Konfiguracje**.
 2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
@@ -101,7 +100,7 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 <td>Wadliwe</td>
 <td>
 <p>Nie można przekształcić wyrażenia typu &lt;typ&gt; na pole typu &lt;typ&gt;.</p>
-<p><b>Błąd czasu wykonywania:</b> Wyjątek o danym typie</p>
+<p><b>Błąd czasu wykonywania:</b> Wyjątek dla typu</p>
 </td>
 </tr>
 <tr>
@@ -211,7 +210,7 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 
 ## <a name="type-conversion"></a><a id="i1"></a>Konwersja typu
 
-W module ER następuje sprawdzenie, czy typ danych pola modelu danych jest zgodny z typem danych wyrażenia skonfigurowanego jako powiązanie tego pola. Jeśli typy danych są niezgodne, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że moduł ER nie może przekonwertować wyrażenia typu A na pole typu B.
+W module ER następuje sprawdzenie, czy typ danych pola modelu danych jest zgodny z typem danych wyrażenia skonfigurowanego jako powiązanie tego pola. Jeśli typy danych są niezgodne, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że moduł ER nie może przekonwertować wyrażenia typu A na pole typu B.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -226,11 +225,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 6. W projektancie modelu danych zmień typ danych pola **X** z **Liczba całkowita** na **Int64**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![sprawdzanie poprawności edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-01.gif)
+    ![walidacja edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-01.gif)
 
 8. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję składnika mapowania modelu wybranej konfiguracji ER na stronie **Konfiguracje**.
 
-    ![Sprawdzanie poprawności w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje](./media/er-components-inspections-01a.png)
+    ![Walidacja w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje](./media/er-components-inspections-01a.png)
 
 9. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że wartość typu **Liczba całkowita** zwracana przez wyrażenie `INTVALUE(100)` źródła danych **Y** nie może być przechowywana w polu modelu danych **X** o typie **Int64**.
 
@@ -286,7 +285,7 @@ Zaktualizuj mapowanie formatu elementu formatu **X**, zmieniając wyrażenie z `
 
 ## <a name="missing-configuration-element"></a><a id="i3"></a>Brak elementu konfiguracji
 
-W module ER następuje sprawdzenie, czy wyrażenia wiązania zawierają tylko źródła danych skonfigurowane w edytowalnym składniku ER. Dla każdego powiązania zawierającego źródło danych, którego nie ma w edytowalnym składniku ER, występuje błąd sprawdzania poprawności w projektancie operacji ER lub projektancie mapowania modelu ER.
+W module ER następuje sprawdzenie, czy wyrażenia wiązania zawierają tylko źródła danych skonfigurowane w edytowalnym składniku ER. Dla każdego powiązania zawierającego źródło danych, którego nie ma w edytowalnym składniku ER, występuje błąd walidacji w projektancie operacji ER lub projektancie mapowania modelu ER.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -321,7 +320,7 @@ W okienku źródła danych w projektancie mapowania modelu ER dodaj ponownie źr
 
 ## <a name="executability-of-an-expression-with-filter-function"></a><a id="i4"></a>Wykonywalność wyrażenia z funkcją FILTER
 
-Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Źródło danych typu **Lista rekordów** jest używane jako argument tej funkcji i określa źródło aplikacji dla tego wywołania. Moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w funkcji `FILTER`. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że wyrażenie ER zawierające funkcję `FILTER` nie może zostać uruchomione w czasie wykonywania. 
+Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Źródło danych typu **Lista rekordów** jest używane jako argument tej funkcji i określa źródło aplikacji dla tego wywołania. Moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w funkcji `FILTER`. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że wyrażenie ER zawierające funkcję `FILTER` nie może zostać uruchomione w czasie wykonywania. 
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -359,7 +358,7 @@ Zmień wyrażenie w źródle danych **FilteredVendor** z `FILTER(Vendor, Vendor.
 
 ## <a name="executability-of-a-groupby-data-source"></a><a id="i5"></a>Wykonywalność źródła danych typu GROUPBY
 
-Źródło danych typu **GROUPBY** dzieli wyniki zapytania na grupy rekordów, zazwyczaj w celu wykonania jednej lub więcej agregacji w każdej grupie. Każde źródło danych typu **GROUPBY** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **GROUPBY** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **GROUPBY** nie może być uruchamiane w czasie wykonywania.
+Źródło danych typu **GROUPBY** dzieli wyniki zapytania na grupy rekordów, zazwyczaj w celu wykonania jednej lub więcej agregacji w każdej grupie. Każde źródło danych typu **GROUPBY** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **GROUPBY** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **GROUPBY** nie może być uruchamiane w czasie wykonywania.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -406,7 +405,7 @@ Zmień wartość pola **Lokalizacja wykonywania** dla źródła danych **Grouped
 
 ## <a name="executability-of-a-join-data-source"></a><a id="i6"></a>Wykonywalność źródła danych typu JOIN
 
-Źródło danych typu [JOIN](er-join-data-sources.md) łączy rekordy z dwóch lub więcej tabel bazy danych na podstawie pól pokrewnych. Każde źródło danych typu **JOIN** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **JOIN** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródeł danych, do których istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania SQL do co najmniej jednego przywoływanego źródła danych, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **JOIN** nie może być uruchamiane w czasie wykonywania.
+Źródło danych typu [JOIN](er-join-data-sources.md) łączy rekordy z dwóch lub więcej tabel bazy danych na podstawie pól pokrewnych. Każde źródło danych typu **JOIN** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **JOIN** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródeł danych, do których istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania SQL do co najmniej jednego przywoływanego źródła danych, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **JOIN** nie może być uruchamiane w czasie wykonywania.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -454,11 +453,11 @@ Zmień wyrażenie źródła danych **Vendor.FilteredTrans** z `WHERE(Trans, Tran
 
 #### <a name="option-2"></a>Opcja 2
 
-Zmień wartość pola **Wykonaj** dla źródła danych **JoinedList** z **Zapytanie** na **W pamięci**. Nie zalecamy zmiany wartości dla tabeli zawierającej dużą ilość danych (tabela transakcji), ponieważ zostaną pobrane wszystkie rekordy, a sprzężenie zostanie dokonane w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności. Zostanie wyświetlone ostrzeżenie sprawdzania poprawności informujące o tym ryzyku.
+Zmień wartość pola **Wykonaj** dla źródła danych **JoinedList** z **Zapytanie** na **W pamięci**. Nie zalecamy zmiany wartości dla tabeli zawierającej dużą ilość danych (tabela transakcji), ponieważ zostaną pobrane wszystkie rekordy, a sprzężenie jest przeprowadzane w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności. Zostanie wyświetlone ostrzeżenie sprawdzania poprawności informujące o tym ryzyku.
 
 ## <a name="preferability-of-filter-vs-where-function"></a><a id="i7"></a>Preferowanie funkcji FILTER wobec WHERE
 
-Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Funkcja [WHERE](er-functions-list-where.md) pobiera wszystkie rekordy z podanego źródła, a wyboru rekordów dokonuje w pamięci. Źródło danych typu **Lista rekordów** jest używane jako argument obu funkcji i określa źródło pozyskiwania rekordów. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **WHERE**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie sprawdzania poprawności. Odebrany komunikat zaleca użycie funkcji **FILTER** zamiast funkcji **WHERE**, ponieważ działa ona sprawniej.
+Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Funkcja [WHERE](er-functions-list-where.md) pobiera wszystkie rekordy z podanego źródła, a wyboru rekordów dokonuje w pamięci. Źródło danych typu **Lista rekordów** jest używane jako argument obu funkcji i określa źródło pozyskiwania rekordów. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **WHERE**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie walidacji. Odebrany komunikat zaleca użycie funkcji **FILTER** zamiast funkcji **WHERE**, ponieważ działa ona sprawniej.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -473,7 +472,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 9. Nazwij nowe źródło danych **FilteredVendor** i skonfiguruj je tak, aby zawierało wyrażenie `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie poprawności w celu skontrolowania edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-07a.png)
+    ![Walidacja w celu skontrolowania edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-07a.png)
 
 11. Zauważ, że ostrzeżenia sprawdzania poprawności zalecają używanie funkcji **FILTER** zamiast funkcji **WHERE** dla źródeł danych **FilteredVendor** i **FilteredTrans**.
 
@@ -489,11 +488,11 @@ Alternatywnie można zaznaczyć wiersz jednego ostrzeżenia w siatce, a następn
 
 ### <a name="manual-resolution"></a>Ręczne rozwiązywanie
 
-Można ręcznie skorygować wyrażenia we wszystkich źródłach danych wymienionych w siatce sprawdzania poprawności, zastępując funkcję **WHERE** funkcją **FILTER**.
+Można ręcznie skorygować wyrażenia we wszystkich źródłach danych wymienionych w siatce walidacji, zastępując funkcję **WHERE** funkcją **FILTER**.
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Preferowanie funkcji ALLITEMSQUERY wobec ALLITEMS
 
-Funkcje [ALLITEMS](er-functions-list-allitems.md) i [ALLITEMSQUERY](er-functions-list-allitemsquery.md) wbudowane w module ER służą do uzyskania spłaszczonej wartości **Lista rekordów** zawierającej listę rekordów reprezentujących wszystkie elementy pasujące do podanej ścieżki. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **ALLITEMS**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie sprawdzania poprawności. Odebrany komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS**, ponieważ działa ona sprawniej.
+Funkcje [ALLITEMS](er-functions-list-allitems.md) i [ALLITEMSQUERY](er-functions-list-allitemsquery.md) wbudowane w module ER służą do uzyskania spłaszczonej wartości **Lista rekordów** zawierającej listę rekordów reprezentujących wszystkie elementy pasujące do podanej ścieżki. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **ALLITEMS**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie walidacji. Odebrany komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS**, ponieważ działa ona sprawniej.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -573,11 +572,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
     ![Sprawdzanie poprawności elementów formatu powiązanych ze źródłami danych na stronie Projektant formatów](./media/er-components-inspections-09c.png)
 
-16. Zauważ, że występują błędy sprawdzania poprawności. Komunikat stwierdza, że w czasie wykonywania może być zgłaszany błąd dla skonfigurowanych elementów formatu **Zestawienie\\Strona\\Name** i **Zestawienie\\Strona\\AccountNum**, jeżeli lista **model.Vendor** jest pusta.
+16. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że w czasie wykonywania może być zgłaszany błąd dla skonfigurowanych elementów formatu **Statement\\Party\\Name** i **Statement\\Party\\AccountNum**, jeżeli lista `model.Vendor` jest pusta.
 
     ![Błąd sprawdzania poprawności powiadamiający o potencjalnym błędzie w skonfigurowanych elementach formatu](./media/er-components-inspections-09d.png)
 
-Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia, wybrania opcji **Uruchom** w celu uruchomienia formatu oraz wybrania numeru konta nieistniejącego dostawcy. Ponieważ żądany dostawca nie istnieje, lista **model.Vendor** będzie pusta (czyli nie będzie zawierała żadnych rekordów).
+Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia, wybrania opcji **Uruchom** w celu uruchomienia formatu oraz wybrania numeru konta nieistniejącego dostawcy. Ponieważ żądany dostawca nie istnieje, lista `model.Vendor` będzie pusta (czyli nie będzie zawierała żadnych rekordów).
 
 ![Błędy czasu wykonywania występujące po uruchomieniu mapowania formatu](./media/er-components-inspections-09e.png)
 
@@ -589,15 +588,15 @@ Dla wybranego wiersza w siatce na karcie **Ostrzeżenia** można wybrać opcję 
 
 #### <a name="option-1"></a>Opcja 1
 
-Można ręcznie powiązać element formatu **Zestawienie\\Strona\\Name** z elementem źródła danych **model.Vendor**. W czasie wykonywania powiązanie spowoduje najpierw wywołanie źródła danych **model.Vendor**. Gdy źródło danych **model.Vendor** zwróci pustą listę rekordów, zagnieżdżone elementy formatu nie zostaną uruchomione. Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla tej konfiguracji formatu.
+Można ręcznie powiązać element formatu **Statement\\Party\\Name** z elementem źródła danych `model.Vendor`. W czasie wykonywania powiązanie spowoduje najpierw wywołanie źródła danych `model.Vendor`. Gdy źródło danych `model.Vendor` zwróci pustą listę rekordów, zagnieżdżone elementy formatu nie zostaną uruchomione. Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla tej konfiguracji formatu.
 
 ![Powiązanie elementu formatu z elementem źródła danych na stronie Projektant formatów](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Opcja 2
 
-Zmień powiązanie elementu formatu **Zestawienie\\Strona\\Name** z `model.Vendor.Name` na `FIRSTORNULL(model.Vendor).Name`. Zaktualizowane powiązanie warunkowo konwertuje pierwszy rekord źródła danych **model.Vendor** o typie **Lista rekordów** na nowe źródło danych o typie **Rekord**. To nowe źródło danych zawiera ten sam zestaw pól.
+Zmień powiązanie elementu formatu **Zestawienie\\Strona\\Name** z `model.Vendor.Name` na `FIRSTORNULL(model.Vendor).Name`. Zaktualizowane powiązanie warunkowo konwertuje pierwszy rekord źródła danych `model.Vendor` o typie **Lista rekordów** na nowe źródło danych o typie **Rekord**. To nowe źródło danych zawiera ten sam zestaw pól.
 
-- Jeśli w źródle danych jest dostępny co najmniej jeden rekord **model.Vendor**, pola tego rekordu są wypełniane wartościami z pól pierwszego rekordu źródła danych **model.Vendor**. W tym przypadku zaktualizowane powiązanie zwraca nazwę dostawcy.
+- Jeśli w źródle danych jest dostępny co najmniej jeden rekord `model.Vendor`, pola tego rekordu są wypełniane wartościami z pól pierwszego rekordu źródła danych `model.Vendor`. W tym przypadku zaktualizowane powiązanie zwraca nazwę dostawcy.
 - W przeciwnym razie każde pole tworzonego rekordu jest wypełniane domyślną wartością o typie danych tego pola. W tym przypadku jest zwracany pusty ciąg jako wartość domyślna typu danych **Ciąg**.
 
 Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla elementu formatu **Zestawienie\\Strona\\Name**, gdy jest on powiązany z wyrażeniem `FIRSTORNULL(model.Vendor).Name`.
@@ -606,13 +605,13 @@ Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla elementu
 
 #### <a name="option-3"></a>Opcja 3
 
-Jeśli chcesz jawnie określić dane wprowadzane w wygenerowanym dokumencie, gdy źródło danych **model.Vendor** o typie **Lista rekordów** nie zwraca żadnych rekordów (w tym przykładzie tekst **Niedostępne**), zmień powiązanie elementu formatu **Zestawienie\\Strona\\Name** z `model.Vendor.Name` na `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Można również użyć wyrażenia `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
+Jeśli chcesz jawnie określić dane wprowadzane w wygenerowanym dokumencie, gdy źródło danych `model.Vendor` o typie **Lista rekordów** nie zwraca żadnych rekordów (w tym przykładzie tekst **Niedostępne**), zmień powiązanie elementu formatu **Statement\\Party\\Name** z `model.Vendor.Name` na `IF(NOT(ISEMPTY(model.Vendor)), model.Vendor.Name, "Not available")`. Można również użyć wyrażenia `IF(COUNT(model.Vendor)=0, model.Vendor.Name, "Not available")`.
 
 ### <a name="additional-consideration"></a><a id="i9a"></a>Dodatkowe zagadnienia
 
-Inspekcja ostrzega również o innym potencjalnym problemie. Domyślnie po powiązaniu elementów formatu **Zestawienie\\Strona\\Name** i **Zestawienie\\Strona\\AccountNum** z odpowiednimi polami źródła danych **model.Vendor** o typie **Lista rekordów** te powiązania zostaną uruchomione i będą przyjmować wartości odpowiednich pól pierwszego rekordu źródła danych **model.Vendor**, jeśli ta lista nie jest pusta.
+Inspekcja ostrzega również o innym potencjalnym problemie. Domyślnie po powiązaniu elementów formatu **Statement\\Party\\Name** and **Statement\\Party\\AccountNum** z odpowiednimi polami źródła danych `model.Vendor` o typie **Lista rekordów** te powiązania zostaną uruchomione i będą przyjmować wartości odpowiednich pól pierwszego rekordu źródła danych `model.Vendor`, jeśli ta lista nie jest pusta.
 
-Ponieważ nie powiązano elementu formatu **Zestawienie\\Strona** ze źródłem danych **model.Vendor**, element **Zestawienie\\Strona** nie będzie iterowany dla każdego rekordu źródła danych **model.Vendor** podczas wykonywania formatu. Zamiast tego wygenerowany dokument zostanie wypełniony informacjami tylko z pierwszego rekordu listy rekordów, jeśli ta lista zawiera wiele rekordów. Może więc wystąpić błąd, jeśli format jest przeznaczony do wypełnienia wygenerowanego dokumentu informacjami o wszystkich dostawcach ze źródła danych **model.Vendor**. Aby rozwiązać ten problem, należy powiązać element **Zestawienie\\Strona** ze źródłem danych **model.Vendor**.
+Ponieważ nie powiązano elementu formatu **Statement\\Party** ze źródłem danych `model.Vendor`, element **Statement\\Party** nie będzie iterowany dla każdego rekordu źródła danych `model.Vendor` podczas wykonywania formatu. Zamiast tego wygenerowany dokument zostanie wypełniony informacjami tylko z pierwszego rekordu listy rekordów, jeśli ta lista zawiera wiele rekordów. Może więc wystąpić błąd, jeśli format jest przeznaczony do wypełnienia wygenerowanego dokumentu informacjami o wszystkich dostawcach ze źródła danych `model.Vendor`. Aby rozwiązać ten problem, należy powiązać element **Statement\\Party** ze źródłem danych `model.Vendor`.
 
 ## <a name="executability-of-an-expression-with-filter-function-caching"></a><a id="i10"></a>Wykonywalność wyrażenia z funkcją FILTER (buforowanie)
 
@@ -699,7 +698,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
 14. Powiąż elementy formatu z podanymi źródłami danych w następujący sposób:
 
-    - Powiąż element formatu **Zestawienie\\Strona** z elementem źródła danych **model.Vendor**.
+    - Powiąż element formatu **Statement\\Party** z elementem źródła danych `model.Vendor`.
     - Powiąż element formatu **Zestawienie\\Strona\\Name** z polem źródła danych **model.Vendor.Name**.
     - Powiąż element formatu **Zestawienie\\Strona\\AccountNum** z polem źródła danych **model.Vendor.AccountNumber**.
 
@@ -813,6 +812,3 @@ Aby dowiedzieć się, jak zsynchronizować strukturę formatu z szablonem ER w e
 [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

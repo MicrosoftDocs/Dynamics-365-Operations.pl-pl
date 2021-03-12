@@ -3,7 +3,7 @@ title: Omówienie zarządzania dokumentami biznesowymi
 description: Ten temat zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b50a170bb9e584501fe780239228dc871ca7750
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1e657ffbad88aeb9fd238112954f5555496ac329
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681311"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740963"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -41,26 +41,19 @@ Obecnie funkcja zarządzania dokumentami biznesowymi jest zaimplementowana tylko
 
 ## <a name="supported-microsoft-office-applications"></a>Obsługiwane aplikacje pakietu Microsoft Office
 
-Aby używać funkcji zarządzania dokumentami biznesowymi do edytowania szablonów w formatach programu Excel lub Word poprzez użycie aplikacji klasycznych pakietu Microsoft Office, należy zainstalować pakiet Microsoft Office  2010 lub nowszy. Jest obługiwana w chmurze i nie jest ona obsługiwana w przypadku wdrożeń lokalnych.
+Aby używać funkcji zarządzania dokumentami biznesowymi do edytowania szablonów w formatach programu Excel lub Word poprzez użycie aplikacji klasycznych pakietu Microsoft Office, należy zainstalować pakiet Microsoft Office  2010 lub nowszy. To rozwiązanie jest obsługiwane we wdrożeniach w chmurze i lokalnych.
+
+Aby używać funkcji zarządzania dokumentami biznesowymi do edytowania szablonów w formatach programu Excel lub Word poprzez użycie aplikacji platformy Microsoft 365, należy zainstalować pakiet Microsoft 365 Office w ramach subskrypcji internetowej. To rozwiązanie jest obsługiwane we wdrożeniu w chmurze.
 
 ## <a name="business-document-availability"></a>Dostępność dokumentu biznesowego
 
-Następujące raporty z szablonami opartymi na programie Excel będą dostępne przy wydaniu publicznej wersji zapoznawczej:
+Kompletna lista raportów planowanych na dzień wydania w październiku 2019 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-**Rozrachunki z odbiorcami** (Sierpień 2019 r.)
+Kompletna lista raportów planowanych na dzień wydania w październiku 2020 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych — szablony programu Word](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
-- Faktura zaliczkowa sprzedaży
-- Dokument dostawy dla zamówienia sprzedaży
+Więcej raportów będzie dostępnych w przyszłych wersjach. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. Aby się dowiedzieć, jak przejrzeć listę dostępnych obecnie raportów, zobacz poniżej sekcję [Lista konfiguracji ER wydanych w aplikacji Finance w celu obsługi konfigurowalnych dokumentów biznesowych](#list-of-configurations-cbd).
 
-**Rozrachunki z dostawcami** (Sierpień 2019 r.)
-
-- Faktura zaliczkowa zakupu
-- Zamówienie zakupu
-- Dokument dostawy dla zamówienia zakupu
-
-Dostępnych będzie więcej raportów. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. 
-
-Kompletną listę raportów planowanych na dzień wydania w październiku 2019 można znaleźć w [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
+Wykonaj przykład z tego tematu, aby dowiedzieć się więcej na temat tej funkcji.
 
 ## <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 
@@ -74,24 +67,24 @@ Przykładowe konfiguracje ER są używane w przykładzie tej procedury. Do bież
 
 **Przykładowe rozwiązanie fakturowania dla odbiorcy ER**
 
-| **Plik**                                  | **Zawartość**                                |
-|-------------------------------------------|--------------------------------------------|
+| Plik                                      | Zawartość |
+|-------------------------------------------|---------|
 | Model fakturowania odbiorcy.wersja.2.xml    | [Konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 | Raport FTI odbiorcy (GER).wersja.2.3.xml | [Konfiguracja darmowego formularza ER faktury niezależnej](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Rozwiązanie do sprawdzania płatności przykładowego ER**
 
-| **Plik**                                  | **Zawartość**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model czeków.wersja.10.xml          | [Konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Formularz drukowania czeków.wersja.10.9.xml  | [Konfiguracja formatu ER czeku płatności](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Plik                                     | Zawartość |
+|------------------------------------------|---------|
+| Model czeków.wersja.10.xml         | [Konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Formularz drukowania czeków.wersja.10.9.xml | [Konfiguracja formatu ER czeku płatności](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 **Przykładowe rozwiązanie ER w handlu zagranicznym**
 
-| **Plik**                                  | **Zawartość**                                |
-|-------------------------------------------|--------------------------------------------|
-| Model Intrastat.wersja.1.xml             | [Konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Raport Intrastat.version.1.9.xml          | [Konfiguracja formatu ER raportu kontroli Intrastat](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Plik                             | Zawartość |
+|----------------------------------|---------|
+| Model Intrastat.wersja.1.xml    | [Konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Raport Intrastat.version.1.9.xml | [Konfiguracja formatu ER raportu kontroli Intrastat](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 Aby zaimportować każdy plik, należy wykonać poniższą procedurę Dokonaj importu konfiguracji *modelu danych* ER dla każdego rozwiązania ER w tabelach powyżej zanim zimportujesz odpowiadającą konfigurację *formatu* ER.
 
@@ -101,15 +94,13 @@ Aby zaimportować każdy plik, należy wykonać poniższą procedurę Dokonaj im
 4. Wybierz przycisk **Przeglądaj**, aby załadować wymagany plik XML.
 5. Wybierz przycisk **OK**, aby potwierdzić import konfiguracji.
 
-![Strona konfiguracji raportowania elektronicznego](./media/BDM-Overview-ERSolutions.png)
-
+![Strona konfiguracji ER z potwierdzeniem importu konfiguracji](./media/BDM-Overview-ERSolutions.png)
 
 Alternatywnie można zaimportować oficjalnie opublikowane konfiguracje formatów w formacie ER z Microsoft Dynamics Lifecycle Service (usługi LCS). Na przykład aby wykonać tę procedurę, można zaimportować najnowszą wersję konfiguracji formatu modułu **Darmowy tekst faktury (Excel)**. Odpowiednie konfiguracje mapowań modelu danych i modelu ER zostaną zaimportowane automatycznie.
 
 ![Strona zawartości biblioteki składników współużytkowanych usługi LCS](./media/BDM-Overview-SharedAssetLibrary.png)
 
 Aby uzyskać więcej informacji o importowaniu konfiguracji ER, zapoznaj się z [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md).
-
 
 ## <a name="enable-business-document-management"></a>Włącz zarządzanie dokumentem biznesowym
 
@@ -122,7 +113,7 @@ Aby włączyć funkcję zarządzania dokumentem biznesowym dla wszystkich firm, 
 3. Wybierz opcję **Włącz teraz**, aby włączyć wybraną funkcję.
 4. Odśwież stronę, aby uzyskać dostęp do nowej funkcji.
 
->[!NOTE]
+> [!NOTE]
 > Aby uzyskać więcej informacji o korzystaniu z interfejsu użytkownika dla nowego dokumentu w zarządzaniu dokumentami biznesowymi, należy zapoznać się z tematem [Nowy interfejs użytkownika dokumentu w module Zarządzanie dokumentami biznesowymi](er-business-document-management-new-template-ui.md).
 
 ![Obszar roboczy zarządzanie funkcjami](./media/BDM-Overview-FMEnabling.png)
@@ -134,21 +125,22 @@ Aby uzyskać więcej informacji o aktywowaniu nowych funkcji, zapoznaj się z [Z
 Informacje zawarte w poniższych sekcjach służą do konfigurowania podstawowych parametrów zarządzania dokumentem biznesowym.
 
 ### <a name="prerequisites-for-parameter-setup"></a>Wymagania wstępne dotyczące ustawień parametrów
+
 Aby można było skonfigurować zarządzanie dokumentami biznesowymi, należy skonfigurować wymagany typ dokumentu w strukturze zarządzania dokumentami. Ten typ dokumentu służy do określania tymczasowego przechowywania dokumentów w formatach pakietu Office (programy Excel i Word), które są używane jako szablony raportów ER. Tymczasowy szablon magazynu można edytować przy użyciu aplikacji klasycznych pakietu Office.
 
 Dla tego typu dokumentu muszą być wybrane następujące wartości atrybutów:
 
-| **Nazwa atrybutu**  | **Wartość atrybutu**   |
-|---------------------|-----------------------|
-| Klasa               | Dołącz plik           |
-| Grupa               | Plik                  |
-| Lokalizacja            | SharePoint            |
+| Nazwa atrybutu | Wartość atrybutu |
+|----------------|-----------------|
+| Klasa          | Dołącz plik     |
+| Grupa          | Plik            |
+| Lokalizacja       | SharePoint      |
 
 Aby uzyskać informacje dotyczące konfigurowania wymaganych parametrów zarządzania dokumentami i typów dokumentów, należy zapoznać się z [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Ustaw tyo dokumentu Zarządzania dokumentami](./media/BDM-Overview-DMSetting.png)
 
-### <a name=""></a><a name="SetupBdmParameters">Konfigurowanie parametrów</a>
+### <a name="set-up-parameters"></a><a name="SetupBdmParameters"></a>Konfigurowanie parametrów
 
 Do konfigurowania parametrów podstawowych zarządzania dokumentami biznesowymi służy strona parametry **Parametry dokumentu biznesowego**. Tylko określeni użytkownicy mają dostęp do strony. W tym:
 
@@ -159,7 +151,7 @@ Aby skonfigurować podstawowe parametry dla wszystkich firm, należy wykonać po
 
 1. Zaloguj się jako użytkownik z dostępem do strony **Parametry dokumentu biznesowego**.
 2. Przejdź do **Administrowanie organizacją** \> **Raportowanie elektroniczne** \> **Zarządzanie dokumentem biznesowym** \> **Parametry dokumentu biznesowego**.
-3.    Na stronie **Parametry dokumentu biznesowego** na karcie **Załączniki** w polu **SharePoint typu dokumentu** określ typ dokumentu, który ma być używany do tymczasowego przechowywania szablonów w formatach pakietu Office, podczas gdy są edytowane przy użyciu aplikacji klasycznych pakietu Office. 
+3. Na stronie **Parametry dokumentu biznesowego** na karcie **Załączniki** w polu **SharePoint typu dokumentu** określ typ dokumentu, który ma być używany do tymczasowego przechowywania szablonów w formatach pakietu Office, podczas gdy są edytowane przy użyciu aplikacji klasycznych pakietu Office. 
 
 > [!NOTE]
 > Dla tego parametru są dostępne tylko typy dokumentów skonfigurowane przy użyciu lokalizacji SharePoint.
@@ -175,7 +167,7 @@ Wybrany typ dokumentu jest specyficzny dla firmy i będzie używany, gdy użytko
 
 Domyślnie, gdy dostęp do uprawnień Zarządzania dokumentami biznesowymi nie jest włączony, każdy użytkownik mający dostęp do obszaru roboczego Zarządzania dokumentami biznesowymi będzie widział wszystkie szablony rozwiązań ER, które są dostępne. W obszarze roboczym Zarządzania dokumentami biznesowymi zostaną wyświetlone tylko te szablony, które znajdują się w konfiguracjach formatów ER i są oznaczone tagiem **Typ dokumentu biznesowego**.
 
-![Strona konfiguracji raportowania elektronicznego](./media/BDM-Overview-ERFormatTags.png)
+![Strona konfiguracji ER z tagiem typu dokumentu biznesowego](./media/BDM-Overview-ERFormatTags.png)
 
 Lista szablonów dostępnych w obszarze roboczym zarządzania dokumentami biznesowymi może być ograniczona przez skonfigurowanie uprawnień dostępu. Może to być ważne w przypadku użycia różnych szablonów do tworzenia dokumentów biznesowych dla różnych domen biznesowych (obszarów funkcjonalnych) oraz umożliwiania określonym użytkownikom dostępu do różnych szablonów do edycji w obszarze roboczym zarządzania dokumentami biznesowymi.
 
@@ -197,13 +189,13 @@ Aby włączyć funkcję dostępu do zarządzania dokumentem biznesowym dla wszys
 
     Na poniższym rysunku pokazano, co jest dostępne w obszarze roboczym zarządzanie dokumentami biznesowymi dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**. Korzystając z bieżącego ustawienia uprawnień dostępu, użytkownik może edytować szablony dokumentów biznesowych z różnych obszarów funkcjonalnych, w tym fakturowania, raportowania i płatności wykonawczych.
 
-    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Strona obszaru roboczego Zarządzanie dokumentami biznesowymi dla urzędnika z działu rozrachunków z odbiorcami](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Na stronie **konfigurator uprawnień dostępu** wybierz **Ustawienia uprawnień dostępu**.
 4. W oknie **ustawienia uprawnień dostępu do edytowania szablonów** włącz opcję **Zastosuj skonfigurowane uprawnienia dostępu**.
 5. Wybierz **OK**, aby potwierdzić włączenie uprawnień dostępu zarządzanie dokumentami biznesowymi.
 
-    ![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Potwierdzanie uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Wybierz przycisk **Dodaj**, aby wprowadzić nową rolę biznesową, dla której mają być skonfigurowane uprawnienia dostępu do szablonów zarządzania dokumentami biznesowymi.
 7. W oknie dialogowym **Role zabezpieczeń** wybierz rolę **pracownika rozrachunków z odbiorcami**, a następnie wybierz przycisk **OK**, aby potwierdzić wybór roli.
@@ -215,7 +207,7 @@ Aby włączyć funkcję dostępu do zarządzania dokumentem biznesowym dla wszys
 
 11. Przełącz **pokrewne okienko informacyjne** od prawej strony bieżącej strony. W okienku **informacji pokrewnych** są wyświetlane informacje o sposobie stosowania skonfigurowanych uprawnień dostępu, w tym o tym, jakie szablony konfiguracji ról będą dostępne dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**.
 
-    ![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Okienko informacji pokrewnych na stronie konfiguratora uprawnień dostępu](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Na karcie **Uprawnienia dostępu wg znaczników konfiguracji** konfiguracji wybierz opcję **Dodaj**.
 13. W oknie dialogowym **wybierz konfigurację** zaznacz opcję Konfiguracja formatu ER **Raport Intrastat**.
@@ -226,11 +218,11 @@ Bieżące ustawienie oznacza każdego użytkownika przypisanego do roli **Pracow
 - Szablony mające wartość, czyli **fakturowanie** dla znacznika **obszaru funkcjonalnego**.
 - Szablony z konfiguracji formatów ER, które są wymienione na karcie **Uprawnienia dostępu wg konfiguracji** (szablony z konfiguracji formatu **raportu Intrastat** w domenie **raportowania ustawowego** w tym przykładzie).
 
-![Konfiguracja uprawnień dostępu do zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesAccess4.png)
+![Skrócone karty uprawnień dostępu na stronie konfiguratora uprawnień dostępu](./media/BDM-Overview-TemplatesAccess4.png)
 
 Na poniższym rysunku pokazano, co jest dostępne w obszarze roboczym zarządzanie dokumentami biznesowymi dla użytkowników przypisanych do roli **Pracownik ds. rozrachunków z odbiorcami**. Przy użyciu bieżącego ustawienia uprawnień dostępu zarządzanie dokumentami biznesowymi użytkownik może edytować szablony dokumentów biznesowych za pomocą domeny **fakturowania** oraz konfiguracji formatu w **raportach Intrastat**. Szablony z domeny **płatności** są niedostępne dla roli **Pracownik ds. rozrachunków z odbiorcami**.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesForAlice2.png)
+![Edytowanie szablonów dokumentów biznesowych na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-TemplatesForAlice2.png)
 
 > [!NOTE]
 > Reguły **Uprawnienia dostępu wg konfiguracji** są przechowywane przy użyciu unikatowego identyfikatora konfiguracji formatu ER. Oznacza to, że te reguły nie zostaną usunięte po usunięciu konfiguracji ER odwołującej się do tych reguł. Po zaimportowaniu usuniętych konfiguracji z powrotem do wystąpienia te reguły będą odnosiły się do nich na nowo. Nie ma potrzeby ponownego konfigurowania reguł po ponownym zaimportowaniu usuniętych konfiguracji.
@@ -252,7 +244,7 @@ Jeśli jest wyłączona funkcja **Wyglądający jak Office interfejs użytkownik
 - Szablony, których właścicielem jest dostawca konfiguracji ER, (czyli dostawca aktualnie oznaczony jako aktywny w obszarze roboczym **Raportowanie elektroniczne**). Po wybraniu jednego z tych szablonów można wybrać opcję **Edytuj szablon**, aby rozpocząć lub kontynuować edycję szablonu.
 - Szablony, które są własnością innych dostawców konfiguracji ER. Po wybraniu jednego z tych szablonów można wybrać **Nowy dokument** w celu utworzenia kopii, która jest własnością dostawcy konfiguracji ER, a następnie rozpocząć edycję kopii.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate1.png)
+![Listy szablonów na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate1.png)
 
 Zawartość wybranego szablonu jest przedstawiana na karcie **szablony**. Wybierz kartę **szczegóły**, aby przejrzeć szczegóły wybranego szablonu, a także szczegóły konfiguracji formatu ER, w którym znajduje się ten szablon. Zauważ, że wszystkie szablony mają stan **opublikowane** i nie zawierają szczegółów w kolumnie **korekta**. Oznacza to, że te szablony nie są obecnie edytowane.
 
@@ -265,7 +257,7 @@ Aby pracować z szablonami należącymi do innych dostawców konfiguracji ER, na
 1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz szablon **drukowania czeków z listy**.
 2. Kliknij kartę **Szczegóły**.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate2.png)
+![Strona obszaru roboczego zarządzania dokumentami biznesowymi, karta Szczegóły](./media/BDM-Overview-EditingTemplate2.png)
 
 Opcja **Edytuj szablon** jest dostępna dla wybranego szablonu. Ta opcja jest zawsze dostępna dla szablonu w konfiguracji formatu modułu, który jest własnością aktywnego dostawcy konfiguracji usługi ER (**Litware, Inc.** w tym przykładzie). Po wybraniu opcji **Edytuj szablon**, istniejący szablon z wersji roboczej w źródłowej konfiguracji formatu w module ER będzie dostępny do edycji.
 
@@ -273,14 +265,14 @@ Opcja **Edytuj szablon** jest dostępna dla wybranego szablonu. Ta opcja jest za
 
 1. W obszarze roboczym zarządzanie dokumentami biznesowymi wybierz dokument, który ma być używany jako szablon.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate3.png)
+    ![Wybierz dokument na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Wybierz opcję **Nowy dokument**, a w polu tytuł **Tytuł**, w razie potrzeby, zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
-4. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
-5. W polu **Komentarz** zmień komentarz dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
-6. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji
+2. Wybierz opcję **Nowy dokument**, a w polu tytuł **Tytuł**, w razie potrzeby, zmień tytuł szablonu edytowalnego. Tekst będzie używany do napełniania nazwy tworzonej automatycznie konfiguracji formatu ER. Należy zauważyć, że wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER)**) będzie zawierać edytowany szablon, zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. W tym samym czasie, niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla innego użytkownika.
+3. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+4. W polu **Komentarz** zmień komentarz dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
+5. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate4.png)
+![Potwierdź rozpoczęcie procesu edycji w celu utworzenia nowego szablonu](./media/BDM-Overview-EditingTemplate4.png)
 
 Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością tego i innego dostawcy (Microsoft w tym przykładzie), a który nie ma żadnych poprawek. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
@@ -290,21 +282,21 @@ Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji format
 2. W polu **nazwa** Zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 3. W polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 
-    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate5.png)
+    ![Edytowanie szablonu na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate5.png)
 
-5. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
+4. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
 Otworzy się strona **Edytor szablonów BDM**. Wybrany szablon będzie dostępny do edycji w trybie online za pomocą Microsoft 365.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout1.png)
+![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Edytuj szablon w Microsoft 365</a>
+### <a name="edit-a-template-in-microsoft-365"></a><a name="EditInOffice365"></a>Edytowanie szablonu na platformie Microsoft 365
 
 Szablony można modyfikować za pomocą Microsoft 365. Na przykład w przypadku witryny Office Online w nagłówku szablonu należy zmienić czcionkę z pola **zwykły** na **pogrubiony**. Te zmiany są automatycznie przechowywane jako szablon edytowalny, który jest przechowywany w magazynie podstawowego szablonu (domyślnie magazyn obiektów BLOB systemu Azure). Jest to skonfigurowane dla struktury ER systemu.
 
-![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout2.png)
+![Zmiana czcionki na pogrubioną w nagłówku szablonu na stronie edytora szablonu zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name=""></a><a name="EditInOfficeDesktopApp">Edytowanie szablonu w aplikacji pulpitu pakietu Office</a>
+### <a name="edit-a-template-in-the-office-desktop-application"></a><a name="EditInOfficeDesktopApp"></a>Edytowanie szablonu w aplikacji pulpitu pakietu Office
 
 > [!NOTE]
 > Ta funkcja jest dostępna tylko w przypadku, gdy parametr **Typ dokumentu SharePoint** jest poprawnie skonfigurowany. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie narzędzia integracji](#SetupBdmParameters).
@@ -312,15 +304,15 @@ Szablony można modyfikować za pomocą Microsoft 365. Na przykład w przypadku 
 1. Wybierz opcję **Otwórz w aplikacji klasycznej**, aby zmodyfikować szablon za pomocą funkcji aplikacji pulpitu pakietu Office (w tym przykładzie programu Excel). Szablon edytowalny jest kopiowany z magazynu trwałego do tymczasowego magazynu skonfigurowanego w parametrach zarządzania dokumentami biznesowymi SharePoint jako folder.
 2. Potwierdź, że chcesz otworzyć szablon z tymczasowego przechowywania plików w aplikacji klasycznej programu Office Excel.
 
-    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout3.png)
+    ![Szablon otwarty w aplikacji klasycznej Excel](./media/BDM-Overview-EditingLayout3.png)
 
 3. Modyfikowanie szablonu. Na przykład zmień czcionkę pól podpowiedzi w nagłówku szablonu, zmieniając kolor z **Czarny** na **Niebieski**.
 
-    ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout4.png)
+    ![Modyfikowanie koloru czcionki w nagłówku szablonu za pomocą aplikacji klasycznej Excel](./media/BDM-Overview-EditingLayout4.png)
 
 4. Wybierz **Zapisz** w aplikacji klasycznej programu Excel, aby zapisać zmiany w szablonie w magazynie tymczasowym.
 
-    ![Strona edytora szablonów zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingLayout5.png)
+    ![Zapisywanie zmian na stronie edytora szablonów zarządzania dokumentami biznesowymi za pomocą aplikacji klasycznej Excel](./media/BDM-Overview-EditingLayout5.png)
 
 5. Zamknij aplikację pulpitu programu Excel.
 6. Wybierz opcję **Synchronizuj przechowywaną kopię**, aby zsynchronizować tymczasowy magazyn szablonu z trwałym magazynem szablonów.
@@ -340,7 +332,7 @@ Szablony można modyfikować za pomocą Microsoft 365. Na przykład w przypadku 
 
 Zaktualizowany szablon jest wyświetlany na karcie **szablon**. Zauważ, że stan edytowanego szablonu to teraz **wersja robocza**, a bieżąca wersja nie jest już pusta. Oznacza to, że proces edycji tego szablonu został rozpoczęty.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate5.png)
+![Wyświetlanie zaktualizowanego szablonu na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-EditingTemplate5.png)
 
 ### <a name="test-the-modified-template"></a>Testowanie zmodyfikowanego szablonu 
 
@@ -353,7 +345,7 @@ Zaktualizowany szablon jest wyświetlany na karcie **szablon**. Zauważ, że sta
     ![Strona ustawień zarządzania drukowaniem](./media/BDM-Overview-TestRun1.png)
 
 6. Naciśnij klawisz **Escape**, aby zamknąć bieżącą stronę
-7. Wybierz opcję **Drukuj**, a następnie kliknij opcję **wybrane**.
+7. Wybierz opcję **Drukuj**, a następnie wybierz opcję **Wybrane**.
 8. Pobierz dokument i otwórz go za pomocą aplikacji pulpitu programu Excel.
 
 ![Strona faktur niezależnych](./media/BDM-Overview-TestRun2.png)
@@ -367,7 +359,7 @@ Zmodyfikowany szablon jest używany do generowania raportu faktury niezależnej 
 3. W razie potrzeby w polu **nazwa** zmień nazwę drugiej poprawki i oprzyj ją na aktualnie aktywnej pierwszej korekcie.
 4. Jeśli istnieje potrzeba, w polu **Komentarz** zmień uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 
-    ![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-AddRevision.png)
+    ![Tworzenie wersji szablonu na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-AddRevision.png)
 
     Utworzono nową wersję szablonu, która została zapisana w magazynie trwałego szablonu. Teraz możesz kontynuować edytowanie szablonu drugiej poprawki, która jest obecnie wybrana jako aktywna.
 
@@ -385,22 +377,25 @@ Zmodyfikowany szablon jest używany do generowania raportu faktury niezależnej 
 
 Podczas edytowania szablonu z formatu ER, który jest własnością bieżącego aktywnego dostawcy, zostanie zaproponowana opcja odwołania wprowadzonych zmian w szablonie.
 
-![Omówienie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-RevokeChanges.png)
+![Odrzucanie zmian szablonu na stronie obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-Overview-RevokeChanges.png)
 
 1. Na stronie **Edytor szablonów BDM** wybierz kartę **szablon**.
 2. Wybierz **Cofnij**.
 3. Jeśli wybierzesz **OK**, aby anulować zmiany wprowadzone dla szablonu, zmodyfikowany szablon zostanie zastąpiony oryginalnym szablonem, a wszystkie zmiany zostaną usunięte. Po cofnięciu zmian w szablonie będzie można usunąć szablon. Wybierz **Anuluj**, aby poznać inne opcje.
 
 ### <a name="publish-a-modified-template"></a>Publikacja szablonu zmodyfikowanego
+
 1. Na stronie **Edytor szablonów BDM** wybierz kartę **szablon** i wybierz **Opublikuj**.
 2. Jeśli zostanie wybrana **OK** w celu potwierdzenia publikowania, wersja robocza raportu **kopii FTI raportu odbiorcy (GER)** formatu ER, która zawiera zmodyfikowany szablon, zostanie oznaczona jako zakończona. Zmodyfikowany szablon staje się dostępny dla innych użytkowników. Wersje ukończone tego formatu ER zachowają tylko ostatnią aktywną korektę szablonu. Inne zmiany zostaną usunięte. Wybierz **Anuluj**, aby poznać inne opcje.
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Wybrałem **Edytuj dokument**, ale zamiast otwierania strony **Edytora szablonów BDM** w Finance and Operations, otrzymuję przekierowanie do strony Microsoft 365.
-Jest to znany problem z przekierowaniem Microsoft 365. Dzieje się tak po pierwszym zalogowaniu Microsoft 365. W celu obejścia tego problemu należy wybrać **Wstecz** w przeglądarce, aby przejść z powrotem.
+### <a name="i-selected-edit-document-but-instead-of-going-to-the-bdm-template-editor-page-in-finance-i-was-sent-to-the-microsoft-365-webpage"></a>Po wybraniu pozycji Edytuj dokument zamiast strony edytora szablonów BDM w aplikacji Finance nastąpiło przekierowanie do strony internetowej Microsoft 365.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Wiem, jak edytować szablon, używając Microsoft 365 w pierwszej sesji aplikacji i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy można to zrobić za pomocą aplikacji pulpitu Office?
+Jest to znany problem z przekierowaniem do platformy Microsoft 365. Występuje on po pierwszym zalogowaniu do Microsoft 365. Aby obejść ten problem, wybierz opcję **Wstecz** w przeglądarce, aby powrócić do poprzedniej strony.
+
+### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-and-adjust-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-use-the-office-desktop-application-in-the-same-way"></a>Wiem, jak edytować szablon, używając Microsoft 365 w pierwszej sesji aplikacji, i jak używać szablonu w drugiej sesji aplikacji podczas dopasowywania szablonu oraz dostosowywać szablon, aby zobaczyć, jak zmiany wpływają na wygenerowany dokument biznesowy. Czy mogę używać aplikacji klasycznej Office w taki sam sposób?
+
 Tak, można. W pierwszej sesji aplikacji wybierz opcję **Otwórz w aplikacji klasycznej**. Szablon będzie przechowywany w tymczasowym magazynie plików i otwarty w aplikacji pulpitu Office. Następnie wykonaj następujące kroki, aby przejrzeć zmiany w szablonie w wygenerowanym dokumencie biznesowym:
 
 1. Wprowadź zmiany w szablonie przy użyciu aplikacji pulpitu pakietu Office.
@@ -408,7 +403,8 @@ Tak, można. W pierwszej sesji aplikacji wybierz opcję **Otwórz w aplikacji kl
 3. Na stronie **Edytor szablonów BDM** w pierwszej sesji aplikacji wybierz opcję **Synchronizuj kopię przechowywaną**.
 4. Wykonaj ten szablon formatu ER aplikacji w drugiej sesji aplikacji.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Jest wyświetlany komunikat o błędzie „Wartość nie może być zerowa". Nazwa parametru: „externalId” po wybraniu **Otwórz w aplikacji klasycznej**. Jak mogę to obejść? 
+### <a name="when-i-select-open-in-desktop-app-i-receive-the-following-error-message-value-cannot-be-null-parameter-name-externalid-how-do-i-work-around-this-issue"></a>Gdy w aplikacji klasycznej wybiorę opcję Otwórz, pojawia się następujący komunikat o błędzie: „Wartość nie może być wartością null. Nazwa parametru: externalId”. Jak mogę obejść ten problem?
+
 Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domenie Azure AD, które różnią się od domeny Azure AD, która została użyta do wdrożenia tego wystąpienia. Ponieważ usługa SharePoint, która jest używana do przechowywania szablonów do udostępniania ich do edycji za pomocą aplikacji klasycznych pakietu Office, należy do tej samej domeny, nie ma żadnych uprawnień dostępu do usługi SharePoint. Aby rozwiązać ten problem, zaloguj się do bieżącego wystąpienia, używając poświadczeń użytkownika z poprawną domeną Azure AD.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
@@ -421,8 +417,165 @@ Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domen
 
 [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurowanie raportowania elektronicznego (ER) do ściągania danych do usługi Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Lista konfiguracji ER zwolnionych w aplikacji Finance na potrzeby obsługi konfigurowalnych dokumentów biznesowych
 
+[Lista](general-electronic-reporting.md#list-of-configurations) konfiguracji ER elektronicznego dla aplikacji Finance jest aktualizowana w sposób ciągły. Otwórz [repozytorium globalne](er-download-configurations-global-repo.md), aby przejrzeć listę aktualnie obsługiwanych konfiguracji ER. Repozytorium globalne można [filtrować](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) w celu przejrzenia listy konfiguracji ER używanych do obsługi konfigurowalnych dokumentów biznesowych.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Filtrowanie zawartości repozytorium globalnego na stronie Repozytorium konfiguracji](./media/bdm-overview-filterglobalrepo.gif)
+
+W poniższej tabeli pokazano listę konfiguracji ER, które obsługują konfigurowalne dokumenty biznesowe, wydane w aplikacji Finance do grudnia 2020 r.
+
+| Konfiguracja modelu danych    | Konfiguracje formatu                           |
+|-----------------------------|-------------------------------------------------|
+| Model listu przewozowego        | List przewozowy (Excel)                          |
+|                             | List przewozowy (Word)                           |
+| Model certyfikatu pochodzenia | Certyfikat pochodzenia (Excel)                   |
+|                             | Certyfikat pochodzenia (Word)                    |
+| Model faktury               | Nota debetowa i kredytowa dla klienta (Excel)          |
+|                             | Nota debetowa i kredytowa dla klienta (Word)           |
+|                             | Faktura niezależna (Excel)                       |
+|                             | Faktura niezależna (Excel) (BH)                  |
+|                             | Faktura niezależna (FR) (Excel)                  |
+|                             | Faktura niezależna (LT) (Excel)                  |
+|                             | Faktura niezależna (LV) (Excel)                  |
+|                             | Faktura niezależna (PL) (Excel)                  |
+|                             | Faktura niezależna (CZ) (Excel)                  |
+|                             | Faktura niezależna (EE) (Excel)                  |
+|                             | Faktura niezależna (HU) (Excel)                  |
+|                             | Faktura niezależna (TH) (Excel)                  |
+|                             | Faktura niezależna (Word)                        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (Excel)             |
+|                             | Pozycje wiersza umowy dotyczącej projektu (CZ) (Excel)        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (Excel) (BH)        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (HU) (Excel)        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (LT) (Excel)        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (PL) (Excel)        |
+|                             | Pozycje wiersza umowy dotyczącej projektu (Word)              |
+|                             | Wydanie zatrzymania klienta dla projektu (Excel)      |
+|                             | Wydanie zatrzymania klienta dla projektu (CZ) (Excel) |
+|                             | Wydanie zatrzymania klienta dla projektu (HU) (Excel) |
+|                             | Wydanie zatrzymania klienta dla projektu (LT) (Excel) |
+|                             | Wydanie zatrzymania klienta dla projektu (PL) (Excel) |
+|                             | Wydanie zatrzymania klienta dla projektu (TH) (Excel) |
+|                             | Wydanie zatrzymania klienta dla projektu (Word)       |
+|                             | Faktura projektu (Excel)                         |
+|                             | Faktura projektu (Word)                          |
+|                             | Faktura projektu (AE) (Excel)                    |
+|                             | Faktura projektu (CZ) (Excel)                    |
+|                             | Faktura projektu (Excel) (BH)                    |
+|                             | Faktura projektu (HU) (Excel)                    |
+|                             | Faktura projektu (JP) (Excel)                    |
+|                             | Faktura projektu (LT) (Excel)                    |
+|                             | Faktura projektu (PL) (Excel)                    |
+|                             | Faktura projektu (TH) (Excel)                    |
+|                             | Pełna faktura projektu (MY) (Excel)               |
+|                             | Prosta faktura projektu (MY) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (Excel)                  |
+|                             | Faktura dotycząca zarządzania projektem (CZ) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (Excel) (BH)             |
+|                             | Faktura dotycząca zarządzania projektem (HU) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (JP) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (LT) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (PL) (Excel)             |
+|                             | Faktura dotycząca zarządzania projektem (Word)                   |
+|                             | Faktura zaliczkowa zakupu (Excel)                |
+|                             | Faktura zaliczkowa zakupu (Word)                 |
+|                             | Faktura zaliczkowa sprzedaży (Excel)                   |
+|                             | Faktura zaliczkowa sprzedaży (Word)                    |
+|                             | Faktura zaliczkowa sprzedaży (PL) (Excel)              |
+|                             | Faktura sprzedaży (Excel)                           |
+|                             | Faktura sprzedaży (Excel) (BH)                      |
+|                             | Faktura sprzedaży (Excel) (CZ)                      |
+|                             | Faktura sprzedaży (Excel) (EE)                      |
+|                             | Faktura sprzedaży (Excel) (FR)                      |
+|                             | Faktura sprzedaży (Excel) (HU)                      |
+|                             | Faktura sprzedaży (Excel) (IN)                      |
+|                             | Faktura sprzedaży (Excel) (LT)                      |
+|                             | Faktura sprzedaży (Excel) (LV)                      |
+|                             | Faktura sprzedaży (Excel) (PL)                      |
+|                             | Faktura sprzedaży (Excel) (TH)                      |
+|                             | Faktura sprzedaży (Word)                            |
+|                             | Faktura handlowa TMS (Excel)                  |
+|                             | Faktura handlowa TMS (Word)                   |
+|                             | Dokument faktury od dostawcy (Excel)                 |
+|                             | Dokument faktury od dostawcy (CZ) (Excel)            |
+|                             | Dokument faktury od dostawcy (HU) (Excel)            |
+|                             | Dokument faktury od dostawcy (IN) (Excel)            |
+|                             | Dokument faktury od dostawcy (LT) (Excel)            |
+|                             | Dokument faktury od dostawcy (LV) (Excel)            |
+|                             | Dokument faktury od dostawcy (MY) (Excel)            |
+|                             | Dokument faktury od dostawcy (Word)                  |
+| Model zamówienia                 | Potwierdzenie umowy (Excel)                  |
+|                             | Potwierdzenie umowy (Word)                   |
+|                             | Potwierdzenie umowy zakupu (Excel)         |
+|                             | Potwierdzenie umowy zakupu (Word)          |
+|                             | Zamówienie zakupu (Excel)                          |
+|                             | Zamówienie zakupu (CZ) (Excel)                     |
+|                             | Zapytanie dotyczące zamówienia zakupu (CZ) (Excel)             |
+|                             | Zamówienie zakupu (HU) (Excel)                     |
+|                             | Zapytanie dotyczące zamówienia zakupu (HU) (Excel)             |
+|                             | Zamówienie zakupu (Word)                           |
+|                             | Zapytanie dotyczące zamówienia zakupu (Excel)                  |
+|                             | Zapytanie dotyczące zamówienia zakupu (Word)                   |
+|                             | Potwierdzenie zamówienia sprzedaży (Excel)                |
+|                             | Potwierdzenie zamówienia sprzedaży (CZ) (Excel)           |
+|                             | Potwierdzenie zamówienia sprzedaży (HU) (Excel)           |
+|                             | Potwierdzenie zamówienia sprzedaży (Word)                 |
+| Model listy pobrania          | Zawartość kontenera (Excel)                      |
+|                             | Zawartość kontenera (Word)                       |
+|                             | Lista ładunków (Excel)                               |
+|                             | Lista ładunków (Word)                                |
+|                             | Lista pobrania (Excel)                            |
+|                             | Lista pobrania (CZ) (Excel)                       |
+|                             | Lista pobrania (Word)                             |
+|                             | Lista pobrania dla produkcji (Excel)                    |
+|                             | Lista pobrania dla produkcji (Word)                     |
+|                             | Lista odbioru wysyłki dla ładunku (Excel)             |
+|                             | Lista odbioru wysyłki dla ładunku (Word)              |
+|                             | Lista odbioru wysyłki dla wysyłki (Excel)         |
+|                             | Lista odbioru wysyłki dla wysyłki (Word)          |
+|                             | Lista odbioru wysyłki dla grupy czynności (Excel)             |
+|                             | Lista odbioru wysyłki dla grupy czynności (Word)              |
+| Model płatności               | Zawiadomienie o płatności klienta (Excel)                 |
+|                             | Zawiadomienie o płatności klienta (Word)                  |
+|                             | Zawiadomienie o płatności dostawcy (Excel)                   |
+|                             | Zawiadomienie o płatności dostawcy (Word)                    |
+| Model oferty             | Oferta dotycząca projektu (Excel)                       |
+|                             | Oferta dotycząca projektu (Word)                        |
+|                             | Zapytanie ofertowe (Excel)                   |
+|                             | Zapytanie ofertowe (akceptacja) (Excel)          |
+|                             | Zapytanie ofertowe (akceptacja) (Word)           |
+|                             | Zapytanie ofertowe (odrzucenie) (Excel)          |
+|                             | Zapytanie ofertowe (odrzucenie) (Word)           |
+|                             | Zapytanie ofertowe (zwrot) (Excel)          |
+|                             | Zapytanie ofertowe (zwrot) (Word)           |
+|                             | Zapytanie ofertowe (Word)                    |
+|                             | Oferta sprzedaży (Excel)                         |
+|                             | Oferta sprzedaży (CZ) (Excel)                    |
+|                             | Oferta sprzedaży (HU) (Excel)                    |
+|                             | Oferta sprzedaży (Word)                          |
+|                             | Potwierdzenie oferty sprzedaży (Excel)            |
+|                             | Potwierdzenie oferty sprzedaży (Word)             |
+| Model uzgodnienia        | Wyciąg z konta klienta, zewnętrzny (Excel)             |
+|                             | Wyciąg z konta klienta, zewnętrzny (CN) (Excel)        |
+|                             | Wyciąg z konta klienta, zewnętrzny (Word)              |
+|                             | Wyciąg z konta klienta, Francja (Excel)          |
+| Model przypomnienia              | Ponaglenie (Excel)                  |
+|                             | Ponaglenie (CN) (Excel)             |
+|                             | Ponaglenie (Word)                   |
+|                             | Nota odsetkowa klienta (Excel)                  |
+|                             | Nota odsetkowa klienta (Word)                   |
+| Model listu przewozowego               | Oferta przetargowa dotycząca ładunku (Excel)                             |
+|                             | Oferta przetargowa dotycząca ładunku (Word)                              |
+|                             | Dokument dostawy dla zamówienia zakupu (Excel)             |
+|                             | Dokument dostawy dla zamówienia zakupu (CZ) (Excel)        |
+|                             | Dokument dostawy dla zamówienia zakupu (Word)              |
+|                             | Marszruta (Excel)                                   |
+|                             | Marszruta (Word)                                    |
+|                             | Dokument dostawy dla zamówienia sprzedaży (Excel)                |
+|                             | Dokument dostawy dla zamówienia sprzedaży (CZ) (Excel)           |
+|                             | Dokument dostawy dla zamówienia sprzedaży (LT) (Excel)           |
+|                             | Dokument dostawy dla zamówienia sprzedaży (PL) (Excel)           |
+|                             | Dokument dostawy dla zamówienia sprzedaży (Word)                 |

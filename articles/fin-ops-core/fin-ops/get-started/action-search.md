@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694195"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798654"
 ---
 # <a name="action-search"></a>Wyszukiwanie akcji
 
@@ -35,7 +35,7 @@ Strony w produkcie głównie wyświetlają polecenia w okienkach akcji, zarówno
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-Klawisze skrótu są już niedostępne, ale zostały zastąpione funkcją wyszukiwania akcji. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
+Funkcja wyszukiwania akcji zastępuje klawisze skrótu, które są już niedostępne. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
 
 ## <a name="using-action-search"></a>Korzystanie z funkcji wyszukiwania akcji
 
@@ -53,7 +53,7 @@ Wyszukiwanie akcji można też uruchomić za pomocą kombinacji klawiszy Ctrl+/ 
 
 ## <a name="understanding-the-results-list"></a>Opis listy wyników
 
-Często trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni rozumieć, do czego służy. Dlatego dla każdego elementu na liście wyników wyświetlane są dodatkowe informacje, które pomagają zorientować się, które przyciski są widoczne na liście. W szczególności wyświetlana jest „ścieżka” przycisku. Ścieżka może wyróżniać etykiety następujących elementów interfejsu użytkownika:
+Często trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni rozumieć, do czego służy. Dlatego dla każdego elementu wyświetlane są dodatkowe informacje, które pomagają zorientować się, które przyciski są widoczne na liście. W szczególności wyświetlana jest „ścieżka” przycisku. Ścieżka może wyróżniać etykiety następujących elementów interfejsu użytkownika:
 
 - Karta Okienko akcji
 - Grupa przycisków
@@ -65,7 +65,7 @@ Na przykład w polu **wyszukiwania akcji** wpisujesz **tot** i sprawdzasz listę
 
 [![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
-W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okienka akcji u góry strony. Wyszukiwanie akcji zawiera jednak również wyniki z widocznych pasków narzędzi umieszczonych w innych miejscach na stronie. Na przykład wyszukujesz przycisk **Dostępne zapasy**, który znajduje się na skróconej karcie **Wiersze zamówienia sprzedaży**. W tym przypadku ścieżka do przycisku na liście wyników (**Wiersze zamówienia sprzedaży** &gt; **Zapasy** &gt; **Widok**) informuje, że ten przycisk znajduje się w nagłówku **Widok** w przycisku menu **Zapasy** na skróconej karcie **Wiersze zamówienia sprzedaży**.
+W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okienka akcji u góry strony. Wyszukiwanie akcji zawiera jednak również wyniki z widocznych pasków narzędzi w innych miejscach na stronie. Na przykład wyszukujesz przycisk **Dostępne zapasy** na skróconej karcie **Wiersze zamówienia sprzedaży**. W tym przypadku ścieżka do przycisku na liście wyników (**Wiersze zamówienia sprzedaży** &gt; **Zapasy** &gt; **Widok**) informuje, że ten przycisk znajduje się w nagłówku **Widok** w przycisku menu **Zapasy** na skróconej karcie **Wiersze zamówienia sprzedaży**.
 
 [![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
@@ -75,6 +75,3 @@ W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okien
 ## <a name="action-search-vs-navigation-search"></a>Wyszukiwanie akcji a wyszukiwanie nawigacji
 
 Wyszukiwanie akcji służy do znajdowania i wykonywania akcji na stronie, do wyszukiwania i poruszania się na stronach służy oddzielny mechanizm wyszukiwania. Aby uzyskać więcej informacji na temat tej funkcji, zobacz artykuł [Nawigacja z wyszukiwaniem](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

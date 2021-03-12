@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686082"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740815"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Lista funkcji modułu ER w kategorii konwersji typu
 
@@ -38,6 +38,14 @@ Funkcje konwersji typu w module raportowania elektronicznego (ER) mogą być uż
 | [IntValue](er-functions-conversion-intvalue.md)       | Ta funkcja zwraca wartość *Int*, która reprezentuje określony ciąg. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Ta funkcja zwraca wartość *rzeczywistą*, która jest konwertowana z określonej wartości typu *Ciąg*. Podczas konwersji są uwzględniane wybrane separatory dziesiętne i separatory grupowania cyfr. |
 | [Wartość](er-functions-conversion-value.md)             | Ta funkcja zwraca wartość *rzeczywistą*, która jest konwertowana z określonej wartości typu *Ciąg*. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Funkcje konwersji typu w kategorii kontenerów
+
+W poniższej tabeli opisano funkcje konwersji typu w kategorii [kontenerów](er-functions-category-container.md).
+
+| Funkcja | opis |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Funkcja ta przekształca określone dane wejściowe typu *Ciąg* na element danych o typie danych *Kontener*. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Funkcje konwersji typu w kategorii daty i godziny
 
@@ -79,6 +87,3 @@ W poniższej tabeli opisano funkcje konwersji typu w [kategorii tekstu](er-funct
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Język formuł raportowania elektronicznego](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

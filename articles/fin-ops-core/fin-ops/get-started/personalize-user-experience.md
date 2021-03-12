@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e46c392c43b63ef443f66d8ea8f9e91a9df3d126
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693239"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797497"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -195,6 +195,3 @@ W przypadku użytkowników, którzy jeszcze nie włączyli funskcji [Zapisane wi
 W przypadku personalizowania konfiguracji wymiarów magazynowych na stronie należy wziąć pod uwagę ustawienia utworzone przy użyciu opcji **Wyświetl wymiary**. Na przykład można użyć personalizacji w celu ukrycia kolumny dla wymiaru zapasów Numer partii, ale kolumna pojawi się przy następnym otwarciu strony. To zachowanie występuje, ponieważ ustawienia **Wyświetlanie wymiarów** sterują wyświetlanymi kolumnami wymiaru zapasów. Ustawienia w sekcji **Wyświetlanie wymiarów** mają zastosowanie do wszystkich stron i zastępują wszelkie spersonalizowane konfiguracje pól wymiarów magazynowych na poszczególnych stronach.
 
 Tym samym w poprzednim przykładzie, jeśli nie chcesz wyświetlania kolumny dla wymiaru inwentaryzacji numeru partii na stronie, musisz wyczyścić ten wymiar w ramach opcji tabeli **Wyświetl wymiary** dla tej strony.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

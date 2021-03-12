@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683574"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744644"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Rozwiązywanie problemów podczas synchronizacji początkowej
 
@@ -98,7 +98,7 @@ Mogą pojawić się komunikaty o błędach, jeśli którekolwiek z mapowań zawi
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Rozwiązywanie błędów w mapowaniu tabeli dostawców V2-na-msdyn_vendors
 
-Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Dostawców V2** do **msdyn\_vendors**, jeśli tabeli mają istniejące wiersze z wartościami w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**. Błędy są spowodowane tym, że **InvoiceVendorAccountNumber** jest polem odwołującym się do siebie, a **PrimaryContactPersonId** jest odwołaniem cyklicznym w mapowaniu dostawcy.
+Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Dostawców V2** do **msdyn\_vendors**, jeśli tabeli mają istniejące wiersze z wartościami w kolumnach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**. Błędy są spowodowane tym, że **InvoiceVendorAccountNumber** jest kolumną odwołującą się do siebie, a **PrimaryContactPersonId** jest odwołaniem cyklicznym w mapowaniu dostawcy.
 
 Otrzymane komunikaty o błędach będą miały następujący format:
 
@@ -109,26 +109,26 @@ Oto kilka przykładów:
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Nie znaleziono wyszukiwania: 000056. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Nie znaleziono wyszukiwania:  V24-1. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Jeśli istnieją wiersze w jednostce dostawcy mają wartości w polach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej.
+Jeśli istnieją wiersze w tabeli dostawcy mają wartości w kolumnach **PrimaryContactPersonId** i **InvoiceVendorAccountNumber**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej.
 
-1. W aplikacji Finance and Operations usuń pola **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z mapowania i zapisz mapowanie.
+1. W aplikacji Finance and Operations usuń kolumny **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z mapowania i zapisz mapowanie.
 
     1. Przejdź na stronę mapowanie podwójnego dostępu dla **Dostawcy V2 (msdyn\_vendors)** i wybierz kartę **Mapowanie tabeli**. W lewym filtrze wybierz pozycję **Finance and Operations apps.Vendors V2**. W prawym filtrze wybierz opcję **Sales.Vendor**.
-    2. Wyszukaj **primarycontactperson**, aby odnaleźć pole źródłowe **PrimaryContactPersonId**.
+    2. Wyszukaj **primarycontactperson**, aby odnaleźć kolumnę źródłową **PrimaryContactPersonId**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
-        ![Usuwanie pola PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Usuwanie kolumny PrimaryContactPersonId](media/vend_selfref3.png)
 
-    4. Powtórz te kroki, aby usunąć pole **InvoiceVendorAccountNumber**.
+    4. Powtórz te kroki, aby usunąć kolumnę **InvoiceVendorAccountNumber**.
 
-        ![Usuwanie pola InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Usuwanie kolumny InvoiceVendorAccountNumber](media/vend-selfref4.png)
 
     5. Zapisz zmiany w mapowaniu.
 
-2. Wyłącz śledzenie zmian dla jednostki **Dostawcy V2**.
+2. Wyłącz śledzenie zmian dla tabeli **Dostawcy V2**.
 
     1. W obszarze roboczym **Zarządzanie danymi** wybierz kafelek **Tabele danych**.
-    2. Wybierz jednostkę **Dostawcy V2**.
+    2. Wybierz tabelę **Dostawcy V2**.
     3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
 
         ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
@@ -138,14 +138,14 @@ Jeśli istnieją wiersze w jednostce dostawcy mają wartości w polach **Primary
         ![Wybór opcji Wyłącz śledzenie zmian](media/selfref_tracking.png)
 
 3. Uruchom synchronizację wstępną mapowania **Dostawców V2 (msdyn\_vendors)**. Synchronizacja początkowa powinna zostać pomyślnie uruchomiona bez żadnych błędów.
-4. Uruchom synchronizację początkową dla mapowania **Kontaktów z CDS V2 (kontakty)**. Musisz zsynchronizować to odwzorowanie, jeśli chcesz zsynchronizować podstawowe pole kontaktu w jednostce dostawcy, ponieważ początkowa synchronizacja musi być również wykonana dla wierszy kontaktów.
-5. Dodaj pola **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z powrotem do mapowania **Dostawcy v2 (msdyn\_vendors)** i zapisz mapowanie.
+4. Uruchom synchronizację początkową dla mapowania **Kontaktów z CDS V2 (kontakty)**. Musisz zsynchronizować to odwzorowanie, jeśli chcesz zsynchronizować podstawową kolumnę kontaktu w tabeli dostawcy, ponieważ początkowa synchronizacja musi być również wykonana dla wierszy kontaktów.
+5. Dodaj kolumny **PrimaryContactPersonId** i **InvoiceVendorAccountNumber** z powrotem do mapowania **Dostawcy v2 (msdyn\_vendors)** i zapisz mapowanie.
 6. Uruchom ponownie synchronizację wstępną mapowania **Dostawców V2 (msdyn\_vendors)**. Ponieważ śledzenie zmian jest wyłączone, wszystkie wiersze zostaną zsynchronizowane.
-7. Wyłącz ponownie śledzenie zmian dla jednostki **Dostawcy V2**.
+7. Wyłącz ponownie śledzenie zmian dla tabeli **Dostawcy V2**.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Rozwiąż błędy w mapowaniu tabeli Klienci V3-do-Kont
 
-Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Klienci V3** do **Kont**, jeśli tabele mają istniejące wiersze z wartościami w polach **ContactPersonID** i **InvoiceAccount**. Te błędy są spowodowane tym, że **InvoiceAccount** jest polem odwołującym się do siebie, a **ContactPersonID** jest odwołaniem cyklicznym w mapowaniu dostawcy.
+Można napotkać następujące błędy wstępne synchronizacji w przypadku mapowania **Klienci V3** do **Kont**, jeśli tabele mają istniejące wiersze z wartościami w kolumnach **ContactPersonID** i **InvoiceAccount**. Te błędy są spowodowane tym, że **InvoiceAccount** jest kolumną odwołującą się do siebie, a **ContactPersonID** jest odwołaniem cyklicznym w mapowaniu dostawcy.
 
 Otrzymane komunikaty o błędach będą miały następujący format:
 
@@ -156,26 +156,26 @@ Oto kilka przykładów:
 - *Nie można rozpoznać identyfikatora GUID dla pola: primarycontactid.msdyn\_contactpersonid. Nie znaleziono wyszukiwania: 000056. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Nie można rozpoznać identyfikatora GUID dla pola: msdyn\_billingaccount.accountnumber. Nie znaleziono wyszukiwania: 1206-1. Spróbuj użyć tych adresów URL, aby sprawdzić, czy istnieją dane referencyjne: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Jeśli istnieją wiersze w jednostce klienta mają wartości w polach **ContactPersonID** i **InvoiceAccount**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej. Z tego podejścia można skorzystać w przypadku dowolnych gotowych tabel, takich jak **Konta** i **Kontakty**.
+Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactPersonID** i **InvoiceAccount**, należy wykonać kroki opisane w poniższej sekcji w celu pomyślnego zakończenia synchronizacji początkowej. Z tego podejścia można skorzystać w przypadku dowolnych gotowych tabel, takich jak **Konta** i **Kontakty**.
 
-1. W aplikacji Finance and Operations usuń pola **ContactPersonID** i **InvoiceAccount** z mapowania **Klienci V3 (konta)** i nstępnie zapisz mapowanie.
+1. W aplikacji Finance and Operations usuń kolumny **ContactPersonID** i **InvoiceAccount** z mapowania **Klienci V3 (konta)** i nstępnie zapisz mapowanie.
 
     1. Na stronie mapowanie podwójnego dostępu dla **Klienci V3 (konta)** i wybierz kartę **Mapowanie tabeli** . W lewym filtrze wybierz pozycję **Finance and Operations app.Customers V3**. W prawym filtrze wybierz **Dataverse.Account**.
-    2. Wyszukaj **contactperson**, aby odnaleźć pole źródłowe **ContactPersonID**.
+    2. Wyszukaj **contactperson**, aby odnaleźć kolumnę źródłową **ContactPersonID**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
-        ![Usuwanie pola ContactPersonID](media/cust_selfref3.png)
+        ![Usuwanie kolumny ContactPersonID](media/cust_selfref3.png)
 
-    4. Powtórz te kroki, aby usunąć pole **InvoiceAccount**.
+    4. Powtórz te kroki, aby usunąć kolumnę **InvoiceAccount**.
 
-        ![Usuwanie pola InvoiceAccount](media/cust_selfref4.png)
+        ![Usuwanie kolumny InvoiceAccount](media/cust_selfref4.png)
 
     5. Zapisz zmiany w mapowaniu.
 
-2. Wyłącz śledzenie zmian dla jednostki **Klienci V3**.
+2. Wyłącz śledzenie zmian dla tabeli **Klienci V3**.
 
     1. W obszarze roboczym **Zarządzanie danymi** wybierz kafelek **Tabele danych**.
-    2. Wybierz jednostkę **Klienci V3**.
+    2. Wybierz tabelę **Klient (wersja 3)**.
     3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
 
         ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
@@ -190,7 +190,7 @@ Jeśli istnieją wiersze w jednostce klienta mają wartości w polach **ContactP
     > [!NOTE]
     > Istnieją dwa mapy o tej samej nazwie. Pamiętaj, aby wybrać mapę, która ma następujący opis na karcie **Szczegóły**: **Szablon 2Dual-write do synchronizacji między kontaktami dostawcy FO.CDS V2 i CDS. Wymaga nowego pakietu \[Dynamics365SupplyChainExtended\].**
 
-5. Dodaj pola **InvoiceAccount** i **ContactPersonId** z powrotem do mapowania **Klienci V3 (Konta)** i nastepnie zapisz mapowanie. Teraz zarówno pole **InvoiceAccount**, jak i pole **ContactPersonId** są ponownie częścią trybu synchronizacji na żywo. W następnym kroku wykonasz synchronizację początkową dla tych pól.
+5. Dodaj kolumny **InvoiceAccount** i **ContactPersonId** z powrotem do mapowania **Klienci V3 (Konta)** i nastepnie zapisz mapowanie. Teraz zarówno kolumna **InvoiceAccount**, jak i kolumna **ContactPersonId** są ponownie częścią trybu synchronizacji na żywo. W następnym kroku wykonasz synchronizację początkową dla tych kolumn.
 6. Uruchom ponownie synchronizację początkową dla mapowania **Klienci V3 (Konta)**. Ponieważ śledzenie zmian jest wyłączone, dae dla **InvoiceAccount** i **ContactPersonId** będą zsynchronizowane z aplikacji Finance and Operations do Dataverse.
 7. Aby synchronizować dane dla **InvoiceAccount** i **ContactPersonId** z Dataverse do aplikacji Finance and Operations, należy skorzystać z projektu integracji danych.
 
@@ -210,7 +210,4 @@ Jeśli istnieją wiersze w jednostce klienta mają wartości w polach **ContactP
 
     Początkowa synchronizacja wierszy jest teraz zakończona.
 
-8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla jednostki **Klienci V3**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla tabeli **Klienci (wersja 3)**.

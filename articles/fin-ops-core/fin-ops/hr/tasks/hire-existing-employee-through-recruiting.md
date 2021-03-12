@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df30e403c4b1c7d3abc88ae98c73d797bceef02
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 42a6fbdad19db3c85509078c9f7549a6397f93fc
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693119"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797266"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Zatrudnianie istniejących pracowników etatowych przez rekrutację
 
@@ -40,6 +40,3 @@ Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są ju�
 9. Kliknij opcję Zmień stanowisko.
     * W tym momencie można również zmienić wynagrodzenie. Jeśli wynagrodzenie nie zostanie przypisane w tej chwili, można to zmienić, przechodząc do formularza pracownika, klikając kartę Wynagrodzenie i wybierając opcję „Plan stałych wynagrodzeń”. Po zaznaczeniu opcji „Zmień stanowisko” stan zgłoszenia zostanie zaktualizowana na „Zatrudniony”.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

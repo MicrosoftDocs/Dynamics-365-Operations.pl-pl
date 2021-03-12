@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e6fb7d38bd3ca78538ca10a15f6fb09bba52a3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693911"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796905"
 ---
 # <a name="address-books-faq"></a>Książki adresowe — często zadawane pytania
 
@@ -67,6 +67,3 @@ Rekordy stron można wprowadzić w globalnej książce adresowej albo na stronie
 ## <a name="can-i-translate-address-information-for-party-records"></a>Czy można tłumaczyć informacje adresowe dla rekordów stron?
 
 Można ustawić tłumaczenia informacji adresowych, tak aby były wyświetlane w języku użytkownika (systemu) w programie, ale w innym języku w dokumentach, takich jak zamówienia sprzedaży. Można wprowadzić tłumaczenia nazw krajów/regionów, celów adresów oraz sekwencji nazw. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. W takim przypadku możesz wyświetlić rekord klienta po duńsku w programie, ale wyświetlić informacje adresowe po francusku w drukowanym zamówieniu sprzedaży. Podczas konfigurowania tłumaczenia należy wprowadzić tłumaczenie dla każdego elementu na liście. Elementy bez tłumaczenia będą zawsze wyświetlane w języku systemu. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. Jeśli nie wprowadzisz hiszpańskich (ESP) tłumaczeń informacji adresowych, będą one wyświetlane po duńsku zarówno w programie jaki w drukowanych dokumentach.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

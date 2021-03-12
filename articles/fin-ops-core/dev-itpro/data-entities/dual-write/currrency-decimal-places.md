@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 6a0f114bce6bdb7813c93e9441744d67cd043c30
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683746"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744382"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migracja typu danych Waluta dla podwójnego zapisu
 
@@ -44,11 +44,11 @@ Migracja jest opcjonalna. Jeśli można korzystać z pomocy technicznej dla wię
 
 ## <a name="requesting-migration-from-microsoft"></a>Żądanie migracji od Microsoft
 
-Przechowywanie w istniejących polach waluty w Dataverse nie obsługuje więcej niż czterech miejsc dziesiętnych. Dlatego podczas procesu migracji wartości walut są kopiowane do nowych pól wewnętrznych w bazie danych. Ten proces jest wykonywany w sposób ciągły, dopóki nie zostaną zmigrowane wszystkie dane. Wewnętrznie na zakończenie migracji nowe typy magazynów zastępują stare typy magazynów, ale wartości danych nie są zmieniane. Następnie pola waluty mogą obsługiwać maksymalnie 10 miejsc dziesiętnych. W trakcie procesu migracji Dataverse może nadal korzystać z systemu bez zakłóceń.
+Przechowywanie w istniejących kolumnach waluty w Dataverse nie obsługuje więcej niż czterech miejsc dziesiętnych. Dlatego podczas procesu migracji wartości walut są kopiowane do nowych kolumn wewnętrznych w bazie danych. Ten proces jest wykonywany w sposób ciągły, dopóki nie zostaną zmigrowane wszystkie dane. Wewnętrznie na zakończenie migracji nowe typy magazynów zastępują stare typy magazynów, ale wartości danych nie są zmieniane. Następnie kolumny waluty mogą obsługiwać maksymalnie 10 miejsc dziesiętnych. W trakcie procesu migracji Dataverse może nadal korzystać z systemu bez zakłóceń.
 
 W tym samym czasie kursy wymiany są modyfikowane w taki sposób, aby obsługiwały maksymalnie 12 miejsc dziesiętnych zamiast bieżącego limitu wynoszący 10. Ta zmiana jest wymagana w celu zapewnienia, że liczba miejsc dziesiętnych jest taka sama w obu wersjach aplikacji Finance and Operations i Dataverse.
 
-Migracja nie powoduje zmiany żadnych danych. Po przekonwertowaniu pól waluta i kurs wymiany administratorzy mogą skonfigurować system do 10 miejsc dziesiętnych dla pól walut, określając liczbę miejsc dziesiętnych dla każdej waluty transakcji i ceny.
+Migracja nie powoduje zmiany żadnych danych. Po przekonwertowaniu kolumn waluta i kurs wymiany administratorzy mogą skonfigurować system do 10 miejsc dziesiętnych dla kolumn walut, określając liczbę miejsc dziesiętnych dla każdej waluty transakcji i ceny.
 
 ### <a name="request-a-migration"></a>Żądaj migracji
 
@@ -72,29 +72,26 @@ Po zakończeniu migracji Dataverse możne przechowywać numery zawierające wię
 
 Aby wprowadzić tę zmianę, należy zaktualizować następujące ustawienia w Power Apps:
 
-+ **Ustawienia systemowe: dokładność waluty dla ceny** — Pole **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie** określa sposób zachowania się waluty w przypadku wybrania **Precyzji wyceny**.
-+ **Zarządzanie firmą: waluty** — Pole **Dokładność waluty** umożliwia określenie niestandardowej liczby miejsc dziesiętnych dla określonej waluty. Istnieje powrót do ustawienia dotyczącego całej organizacji.
++ **Ustawienia systemowe: dokładność waluty dla ceny** — kolumna **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie** określa sposób zachowania się waluty w przypadku wybrania **Precyzji wyceny**.
++ **Zarządzanie firmą: waluty** — kolumna **Dokładność waluty** umożliwia określenie niestandardowej liczby miejsc dziesiętnych dla określonej waluty. Istnieje powrót do ustawienia dotyczącego całej organizacji.
 
 Istnieją pewne ograniczenia:
 
-+ Nie można skonfigurować pola waluta w jednostce.
++ Nie można skonfigurować kolumny waluty w tabeli.
 + Można określić więcej niż cztery miejsca dziesiętne tylko na poziomach **Ceny** i **Waluta transakcji**.
 
 ### <a name="system-settings-currency-precision-for-pricing"></a>Ustawienia systemowe: dokładność waluty dla ceny
 
-Po zakończeniu migracji Administratorzy mogą skonfigurować dokładność waluty. Przejdź do **Ustawienia \> Administracja** i wybierz **Ustawienia systemowe**. Następnie na karcie **Ogólne** zmień wartość pola **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie**, co pokazano na poniższej ilustracji.
+Po zakończeniu migracji Administratorzy mogą skonfigurować dokładność waluty. Przejdź do **Ustawienia \> Administracja** i wybierz **Ustawienia systemowe**. Następnie na karcie **Ogólne** zmień wartość kolumny **Ustaw dokładność waluty, która jest używana do ustalania cen w całym systemie**, co pokazano na poniższej ilustracji.
 
 ![Ustawienia systemowe dla waluty](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Zarządzanie firmą: waluty
 
-Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty używanej do ustalania cen, można ją zmienić. Przejdź do **Ustawienia \> Zarządzanie firmą**, wybierz opcję **Waluty** i wybierz walutę, która ma zostać zmieniona. Następnie w polu **Dokładność waluty** należy określić żądaną liczbę miejsc dziesiętnych, jak to pokazano na poniższej ilustracji.
+Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty używanej do ustalania cen, można ją zmienić. Przejdź do **Ustawienia \> Zarządzanie firmą**, wybierz opcję **Waluty** i wybierz walutę, która ma zostać zmieniona. Następnie w kolumnie **Dokładność waluty** należy określić żądaną liczbę miejsc dziesiętnych, jak to pokazano na poniższej ilustracji.
 
 ![Ustawienia waluty dla określonego ustawienia regionalnego](media/specific-currency.png)
 
-### <a name="tables-currency-field"></a>tabele: pole Waluta
+### <a name="tables-currency-column"></a>tabele: kolumna Waluta
 
-Liczba miejsc dziesiętnych, które można skonfigurować dla określonych pól waluty, jest ograniczona do czterech.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Liczba miejsc dziesiętnych, które można skonfigurować dla określonych kolumn waluty, jest ograniczona do czterech.

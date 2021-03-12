@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694502"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798434"
 ---
 # <a name="create-alert-rules"></a>Tworzenie reguł alertów
 
@@ -40,7 +40,7 @@ Zadania wsadowe dla alertów dotyczących zmian danych i terminów muszą być u
 
 Zdarzeniem wyzwalającym regułę alertu może być nadejście określonego dnia lub wystąpienie konkretnej zmiany. Wyzwalacze zdarzeń definiuje się na skróconej karcie **Prześlij mi alert, gdy** w oknie dialogowym **Utwórz regułę alertu**. Dostępność zdarzeń dla konkretnych pól jest uzależniona od wybranego wyzwalacza.
 
-Jeśli na przykład konfigurujesz regułę alertu dla pola **Data rozpoczęcia**, właściwe są zdarzenia zależne od terminów. Z tego względu dla tego pola jest dostępny typ zdarzenia **należne w**. Jednak dla pola takiego jak **Centrum kosztu** zdarzenie zależne od terminu wykonania się nie nadaje. Z tego względu typ zdarzenia **należne w** nie jest dostępny. Zamiast tego jest dostępny typ zdarzenia **zmodyfikowano**.
+Jeśli na przykład konfigurujesz regułę alertu dla pola **Data rozpoczęcia**, właściwe są zdarzenia zależne od terminów. Z tego względu dla tego pola jest dostępny typ zdarzenia `is due in`. Jednak dla pola takiego jak **Centrum kosztu** zdarzenie zależne od terminu wykonania się nie nadaje. Z tego względu typ zdarzenia `is due in` nie jest dostępny. Zamiast tego jest dostępny typ zdarzenia `has changed`.
 
 ## <a name="event-types"></a>Typy zdarzeń
 
@@ -77,7 +77,7 @@ Na skróconej karcie **Prześlij mi alert za pomocą** w oknie dialogowym **Utw�
 
 ## <a name="alerts-as-business-events"></a>Alerty jako zdarzenia biznesowe
 
-Alerty mogą być wysyłane zewnętrznie za pomocą struktury zdarzeń biznesowych. Podczas tworzenia alertu ustaw **Dla całej organizacji** na **Nie** i ustaw **Wyślij zewnętrznie** na **Tak**. Po wyzwoleniu zdarzenia biznesowego przez alert, można wywołać przepływ wbudowany w Power Automate, korzystając z polecenia **w przypadku wystąpienia zdarzenia biznesowego** na łączniku Finance and Operations lub jawnie wysłać zdarzenie do punktu końcowego zdarzeń biznesowych za pośrednictwem katalogu **zdarzeń biznesowych**.
+Możesz wysyłać alerty zewnętrznie za pomocą struktury zdarzeń biznesowych. Podczas tworzenia alertu ustaw **Dla całej organizacji** na **Nie** i ustaw **Wyślij zewnętrznie** na **Tak**. Po wyzwoleniu zdarzenia biznesowego przez alert, można wywołać przepływ wbudowany w Power Automate, korzystając z polecenia **w przypadku wystąpienia zdarzenia biznesowego** na łączniku Finance and Operations lub jawnie wysłać zdarzenie do punktu końcowego zdarzeń biznesowych za pośrednictwem katalogu **zdarzeń biznesowych**.
 
 ## <a name="create-an-alert-rule"></a>Tworzenie reguły alertu
 
@@ -86,22 +86,19 @@ Alerty mogą być wysyłane zewnętrznie za pomocą struktury zdarzeń biznesowy
 2. W okienku akcji na karcie **Opcje** w grupie **Udostępnij** wybierz opcję **Utwórz regułę alertu**.
 3. W oknie dialogowym **Utwórz regułę alertu** w polu **Pole** zaznacz pole do monitorowania.
 4. W polu **Zdarzenie** wybierz typ zdarzenia.
-5. Na skróconej karcie **Prześlij mi alert dla** wybierz żądaną opcję. Aby wysłać alert jako zdarzenie biznesowe, należy się upewnić, że **dla całej organizacji** jest ustawiona wartość **nie**.
+5. Na skróconej karcie **Prześlij mi alert dla** wybierz żądaną opcję. Aby wysłać alert jako zdarzenie biznesowe, ustaw wartość opcji **Dla całej organizacji** na **Nie**.
 6. Jeśli reguła alertu powinna się dezaktywować w określonym dniu, na skróconej karcie **Przesyłaj mi alerty do** zaznacz datę końcową.
-7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst używany jako nagłówek tematu dla e-maila ten będzie wyświetlany po wyzwoleniu alertu. Aby wysłać Alert jako zdarzenie biznesowe , należy przypisać opcję **Wyślij zewnętrznie** na **tak**.
-8. W polu **Wiadomość** wprowadź opcjonalną wiadomość. Wprowadzony tekst jest komunikatem, jaki otrzymuje użytkownik po wyzwoleniu alertu.
+7. Na skróconej karcie **Prześlij mi alert za pomocą** w polu **Temat** zaakceptuj domyślny nagłówek tematu wiadomości e-mail lub wprowadź nowy temat. Tekst stanie się nagłówkiem tematu wiadomości e-mail po wyzwoleniu alertu. Aby wysłać Alert jako zdarzenie biznesowe , należy przypisać opcję **Wyślij zewnętrznie** na **tak**.
+8. W polu **Wiadomość** wprowadź opcjonalną wiadomość. Wprowadzony tekst staje się wiadomością, jaką otrzymuje użytkownik po wyzwoleniu alertu.
 9. Kliknij przycisk **OK**, aby zapisać ustawienia i utworzyć regułę alertu.
 
 ## <a name="limitations-and-workarounds"></a>Ograniczenia i rozwiązania
 
 ### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Rozwiązanie problemu dotyczącego tworzenia alertów dla pomocniczych źródeł danych w formularzu
-Nie można utworzyć alertów dla niektórych dodatkowych źródeł danych w formularzach. Na przykład podczas tworzenia alertów w formularzu profile księgowania odbiorcy lub dostawcy dostępne są tylko pola w nagłówku (CustLedger lub VendLedger), a nie kont wymiaru. Obejście tego ograniczenia polega na użyciu parametru **SysTableBrowser** w celu otwarcia tej tabeli jako podstawowego źródła danych. 
+Nie możesz tworzyć alertów dla niektórych dodatkowych źródeł danych w formularzach. Na przykład podczas tworzenia alertów w formularzu profile księgowania odbiorcy lub dostawcy dostępne są tylko pola w nagłówku (CustLedger lub VendLedger), a nie kont wymiaru. Obejście tego ograniczenia polega na użyciu parametru **SysTableBrowser** w celu otwarcia tej tabeli jako podstawowego źródła danych. 
 1. Otwórz tabelę w formularzu **SysTableBrowser**.
     ```
         https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
     ```
 2. Utwórz alert z formularza SysTableBrowser.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

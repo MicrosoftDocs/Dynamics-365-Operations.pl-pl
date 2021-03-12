@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c2e10c56a2bd53b1bda9704e13324aa5a0d96848
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 120fc00de7b66490c491d70b38aae79190de708f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692875"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797290"
 ---
 # <a name="hiring-candidate-through-recruiting"></a>Zatrudnianie kandydata przez rekrutację
 
@@ -45,6 +45,3 @@ Ta procedura umożliwia osobie rekrutującej zatrudnienie kandydata, który prze
 15. Rozwiń lub zwiń sekcję Informacje kontaktowe.
 16. Rozwiń lub zwiń sekcję Informacje osobiste.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

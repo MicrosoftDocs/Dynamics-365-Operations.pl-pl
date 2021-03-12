@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692973"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798360"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -32,7 +32,7 @@ Funkcje są dodawane i aktualizowane w każdym wydaniu. Środowisko zarządzania
 
 ## <a name="the-feature-management-workspace"></a>Obszar roboczy Zarządzanie funkcjami
 
-Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowiedni kafelek na pulpicie nawigacyjnym. Zobaczysz stronę, która zawiera listę funkcji dla wszystkich wersji, które są obsługiwane przez funkcję zarządzania funkcjami. Z biegiem czasu firma Microsoft zwiększy funkcjonalność zarządzania funkcjami, tak aby były dostępne dodatkowe funkcje do łatwiejszego zarządzania funkcjami.
+Obszar roboczy **zarządzanie funkcjami** można otworzyć, wybierając odpowiedni kafelek na pulpicie nawigacyjnym. Zobaczysz stronę, która zawiera listę funkcji dla wszystkich wersji, które są obsługiwane przez funkcję zarządzania funkcjami. Z biegiem czasu firma Microsoft zwiększy funkcjonalność zarządzania funkcjami, tak aby były dostępne kolejne funkcje do łatwiejszego zarządzania funkcjami.
 
 Lista funkcji zawiera następujące informacje:
 
@@ -101,8 +101,8 @@ Wszystkie funkcje, które mogą być włączone, zostaną włączone. Jeśli fun
 
 Domyślnie wszystkie funkcje dodawane do środowiska są wyłączone, o ile nie są obowiązkowe. Jeśli jednak chcesz, aby wszystkie nowe funkcje były automatycznie włączane, możesz użyć listy rozwijanej pod tytułem obszaru roboczego, aby zmienić to, co dzieje się przy dodawaniu nowych funkcji.
 
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie włączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
-- Wybierz opcję **Wszystkie nowe funkcje będą domyślnie wyłączone**, jeśli chcesz aby wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję `Enable new features automatically`, aby wszystkie nowe funkcje były automatycznie włączane po dodaniu ich do Twojego środowiska.
+- Wybierz opcję `Do not enable new features automatically`, aby domyślnie wszystkie nowe funkcje były automatycznie wyłączane po dodaniu ich do Twojego środowiska.
 
 
 Jeśli włączysz wszystkich funkcji automatycznie, spowoduje to włączenie wszystkich funkcji, które byłyby włączone, po kliknięciu przycisku **Włącz wszystkie**. Nie zostaną włączone funkcje wymagające potwierdzenia lub funkcje, które nie mogą być włączone, dopóki nie zostanie podjęta akcja.
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Co to jest implementacja IFeatureLifecycle przez niektóre klasy funkcji?
 IFeatureLifecycle jest wewnętrznym mechanizmem Microsoft określającym etap cyklu funkcji. Funkcje mogą być następujące:
-- PrivatePreview — wymaga, aby pakiet testowy był widoczny.
-- PublicPreview — wyświetlana domyślnie, ale z ostrzeżeniem, że funkcja jest w wersji zapoznawczej.
-- Zwolniona — w pełni zwolniona.
+- `PrivatePreview` — wymaga, aby pakiet testowy był widoczny.
+- `PublicPreview` — wyświetlana domyślnie, ale z ostrzeżeniem, że funkcja jest w wersji zapoznawczej.
+- `Released`— całkowicie wydane.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

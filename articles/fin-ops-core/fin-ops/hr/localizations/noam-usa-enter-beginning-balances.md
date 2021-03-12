@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693409"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797791"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Wprowadzanie sald początkowych listy płac
 
@@ -166,6 +166,3 @@ Istnieje możliwość wycofywania i ponownego wprowadzania transakcji. Aby wysto
 2. Kliknij przycisk **Tak**, gdy zostanie wyświetlony komunikat „Wycofanie tego sprawozdania o wynagrodzeniach spowoduje utworzenie wycofującego sprawozdania o wynagrodzeniach, które będzie do niego przeciwstawne. Żadnego z tych sprawozdań o wynagrodzeniach nie można edytować. Czy chcesz wycofać to sprawozdanie o wynagrodzeniach?” . 
 
 Po wycofaniu sprawozdania o wynagrodzeniach można wygenerować nowe sprawozdanie o wynagrodzeniach dla pracownika ze sprawozdania o zarobkach, które utworzono wcześniej. Pamiętaj, aby przed wygenerowaniem nowego sprawozdania o wynagrodzeniach poprawić wszelkie nieprawidłowe wiersze w sprawozdaniu o zarobkach, a następnie wygenerować nowe sprawozdania o wynagrodzeniach z właściwymi kwotami. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

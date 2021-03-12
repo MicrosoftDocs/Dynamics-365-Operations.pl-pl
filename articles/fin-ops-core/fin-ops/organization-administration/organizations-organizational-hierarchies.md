@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3d0e414b12043a72a447f62bf353e84654b0df1
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694342"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797053"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Omówienie organizacji i hierarchii organizacyjnych
 
@@ -67,6 +67,3 @@ Hierarchie organizacyjne umożliwiają przeglądanie i raportowanie działalnoś
 Każdej hierarchii jest przypisywany. Cel hierarchii określa typy organizacji, które mogą być uwzględniane w hierarchii. Cel decyduje również o tym, w których scenariuszach aplikacji można używać hierarchii.
 
 Organizacje w hierarchii mogą współużytkować parametry, zasady i transakcje. Organizacja może dziedziczyć lub zastępować parametry swojej organizacji nadrzędnej. Jednak współużytkowane dane główne, takie jak produkty i książki adresowe, dotyczą całej organizacji i nie można ich zastąpić dla poszczególnych organizacji. Tworzenie organizacji i hierarchii wymaga dokładnego zaplanowania. Więcej informacji można znaleźć w temacie [Planowanie hierarchii organizacyjnej](plan-organizational-hierarchy.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

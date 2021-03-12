@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2973454e585f8ee45c0b6ee95c8b41e93bc2d962
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e622f9a0a50cd6c5dbcbaf9cd5d56b691232c849
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694294"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797609"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Czynności w procesach zatwierdzania w przepływie pracy
 
@@ -141,6 +141,3 @@ Zażądanie przez osobę zatwierdzającą wprowadzenia zmian w dokumencie powodu
 Na przykład Sam przesłał raport z wydatków na kwotę 12 000 USD, a ten dokument jest przypisany do Sue. Jeśli Sue poprosi o wprowadzenie zmian, raport z wydatków jest wysyłany z powrotem do Sama.
 
 Sam może ponownie przesłać raport z wydatków. Może on najpierw wprowadzić żądane zmiany lub ponownie przesłać oryginalną wersję raportu z wydatków. Jeśli Sam ponownie prześle raport, zostanie on wysłany do zatwierdzenia do Franka, ponieważ Frank jest pierwszą osobą zatwierdzającą w procesie zatwierdzania.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

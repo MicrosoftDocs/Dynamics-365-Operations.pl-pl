@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681335"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728096"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Aktualizowanie struktury szablonu dokumentu biznesowego 
 
@@ -56,7 +56,7 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 5. Wybierz **OK**, aby utworzyć nowy szablon.
 
     > [!NOTE]
-    > Jeśli jeszcze nie zalogowano się do systemu Office Online, nastąpi [przekierowanie do strony logowania Office 365](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Aby powrócić do środowiska Finance, wybierz przycisk **Wstecz** w przeglądarce.
+    > Jeśli jeszcze nie zalogowano się do systemu Office Online, nastąpi [przekierowanie do strony logowania Office 365](er-business-document-management.md#frequently-asked-questions). Aby powrócić do środowiska Finance, wybierz przycisk **Wstecz** w przeglądarce.
 
     Nowy szablon zostanie otwarty do edycji w osadzonym formancie Excel Online na stronie Edytor szablonów.
 
@@ -106,6 +106,3 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

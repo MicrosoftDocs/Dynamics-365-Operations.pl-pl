@@ -1,6 +1,6 @@
 ---
-title: Ustaw Mapowanie pól stanu zamówienia sprzedaży
-description: W tym temacie opisano sposób konfigurowania pól stanu zamówienia sprzedaży na potrzeby podwójnego zapisywania.
+title: Ustawianie mapowania kolumn stanu zamówienia sprzedaży
+description: W tym temacie opisano sposób konfigurowania kolumn stanu zamówienia sprzedaży na potrzeby podwójnego zapisywania.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4456193"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744306"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Ustaw Mapowanie pól stanu zamówienia sprzedaży
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ustawianie mapowania kolumn stanu zamówienia sprzedaży
 
 [!include [banner](../../includes/banner.md)]
 
-Pola wskazujące stan zamówienia sprzedaży mają różne wartości wyliczenia w Microsoft Dynamics 365 Supply Chain Management i Dynamics 365 Sales. Dodatkowe ustawienia są wymagane do mapowania tych pól w trybie podwójnego zapisu.
+Kolumny wskazujące stan zamówienia sprzedaży mają różne wartości wyliczenia w Microsoft Dynamics 365 Supply Chain Management i Dynamics 365 Sales. Dodatkowe ustawienia są wymagane do mapowania tych kolumn w trybie podwójnego zapisu.
 
-## <a name="fields-in-supply-chain-management"></a>Pola w Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>Kolumny w Supply Chain Management
 
-W Supply Chain Management dwa pola odzwierciedlają stan zamówienia sprzedaży. Pola, które muszą być zmapowane, to **Stan** i **Stan dokumentu**.
+W Supply Chain Management dwie kolumny odzwierciedlają stan zamówienia sprzedaży. Kolumny, które muszą być zmapowane, to **Stan** i **Stan dokumentu**.
 
 Wyliczenie **Stan** określa ogólny stan zamówienia. Ten stan jest wyświetlany w nagłówku zamówienia.
 
@@ -53,9 +53,9 @@ Wyliczenie **Stan dokumentu** oferuje następujące wartości:
 - Dokument dostawy
 - Faktura VAT
 
-## <a name="fields-in-sales"></a>Pola w Sales
+## <a name="columns-in-sales"></a>Kolumny w aplikacji Sales
 
-W Sales dwa pola odzwierciedlają stan zamówienia sprzedaży. Pola, które muszą być zmapowane, to **Stan** i **Przetwarzanie dokumentu**.
+W aplikacji Sales dwie kolumny odzwierciedlają stan zamówienia sprzedaży. Kolumny, które muszą być zmapowane, to **Stan** i **Przetwarzanie dokumentu**.
 
 Wyliczenie **Stan** określa ogólny stan zamówienia. Ma następujące wartości:
 
@@ -95,7 +95,7 @@ W poniższej tabeli przedstawiono mapowanie **Stanu przetwarzania** między Sale
 
 ## <a name="setup"></a>Konfiguracja
 
-Aby skonfigurować mapowanie dla pól stanu zamówienia sprzedaży, należy włączyć atrybuty **IsSOPIntegrationEnabled** i **isIntegrationUser**.
+Aby skonfigurować mapowanie dla kolumn stanu zamówienia sprzedaży, należy włączyć atrybuty **IsSOPIntegrationEnabled** i **isIntegrationUser**.
 
 Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
 
@@ -110,14 +110,14 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
 
 Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
 
-1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system**, wybierz pozycję **Jednostka użytkownika**, a następnie otwórz **Formularz \> Użytkownik**.
+1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system**, wybierz pozycję **Tabela użytkownika**, a następnie otwórz **Formularz \> Użytkownik**.
 
     ![Otwieranie formularza użytkownika](media/sales-map-user.png)
 
 2. W Eksploratorze pól znajdź **Tryb użytkownika integracyjnego** i kliknij go dwukrotnie, aby dodać go do formularza. Zapisz zmiany.
 
-    ![Dodanie pola tryb użytkownika integracyjnego do formularza](media/sales-map-field-explorer.png)
+    ![Dodanie kolumny trybu użytkownika integracyjnego do formularza](media/sales-map-field-explorer.png)
 
 3. W module Sprzedaż należy posłużyć do **Ustawienia \> Zabezpieczenia \> Użytkownicy** i zmień widok z **Włączeni użytkownicy** na **Uzytkownicy aplikacji**.
 
@@ -145,11 +145,8 @@ Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
 
     ![Lista użytkowników aplikacji](media/sales-map-user-mode.png)
 
-5. Zmień wartość w polu **Tryb użytkownika integracyjnego** na **Tak**.
+5. Zmień wartość w kolumnie **Tryb użytkownika integracyjnego** na **Tak**.
 
-    ![Zmiana wartości pola Tryb użytkownika integracji](media/sales-map-user-mode-yes.png)
+    ![Zmiana wartości kolumny Tryb użytkownika integracji](media/sales-map-user-mode-yes.png)
 
 Twoje zamówienia sprzedaży są teraz zamapowane.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685570"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744620"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Rozwiązywanie problemów z synchronizacją na żywo
 
@@ -46,11 +46,11 @@ Może pojawić się następujący komunikat o błędzie podczas tworzenia wiersz
 
 Aby rozwiązać ten problem, należy wykonać kroki opisane w [Wymagania systemowe i wymagania wstępne](requirements-and-prerequisites.md). Aby wykonać te kroki, użytkownicy aplikacji podwójnego odpisu, którzy utworzyli w Dataverse, muszą mieć rolę administratora systemu. Domyślny zespół będący właścicielem musi mieć również rolę Administratora systemu.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Synchronizacja na żywo dla jakiejkolwiek firmy powoduje, że podczas tworzenia wiersza w aplikacji Finance and Operations jest wciąż zgłaszany podobny błąd
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Synchronizacja na żywo dla jakiejkolwiek tabeli powoduje, że podczas tworzenia wiersza w aplikacji Finance and Operations jest wciąż zgłaszany podobny błąd
 
 **Wymagana rola w celu rozwiązania problemu:** administrator systemu
 
-Przy każdej próbie zapisania danych jednostki w aplikacji Finance and Operations może pojawić się komunikat o błędzie podobny do następującego:
+Przy każdej próbie zapisania danych tabeli w aplikacji Finance and Operations może pojawić się komunikat o błędzie podobny do następującego:
 
 *Nie można zapisać zmian w bazie danych. Jednostka pracy nie może zatwierdzić transakcji. Nie można zapisać danych do jednostki uoms. Zapis do UnitOfMeasureEntity nie powiódł się. Komunikatu o błędzie nie można zsynchronizować z jednostką uoms.*
 
@@ -58,8 +58,8 @@ Aby rozwiązać ten problem, należy upewnić się, że istnieją dane referency
 
 Jeśli istnieją dane po obu stronach i potwierdzono, że ten błąd nie jest związany z danymi, wykonaj następujące kroki.
 
-1. Zatrzymaj powiązaną jednostkę.
-2. Zaloguj się do aplikacji Finance and Operations i upewnij się, że w tabelach DualWriteProjectConfiguration i DualWriteProjectFieldConfiguration istnieją wiersze dla jednostki, której dotyczy niepowodzenie. Oto przykład kwerendy, która wygląda tak jak w przypadku niepowodzenia jednostki **Klienci**.
+1. Zatrzymaj powiązaną tabelę.
+2. Zaloguj się do aplikacji Finance and Operations i upewnij się, że w tabelach DualWriteProjectConfiguration i DualWriteProjectFieldConfiguration istnieją wiersze dla tabeli, której dotyczy niepowodzenie. Oto przykład zapytania, które wygląda tak jak w przypadku niepowodzenia tabeli **Klienci**.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Jeśli istnieją dane po obu stronach i potwierdzono, że ten błąd nie jest zw
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Jeśli istnieją wiersze dla jednostki, której dotyczy błąd, nawet po zatrzymaniu mapowania tabeli, usuń te wiersze, które są powiązane z niepowodzeniem. Należy zwrócić uwagę na kolumnę **projectname** w tabeli DualWriteProjectConfiguration i pobrać rekord w tabeli DualWriteProjectFieldConfiguration, używając nazwy projektu w celu usunięcia wiersza.
+3. Jeśli istnieją wiersze dla tabeli, której dotyczy błąd, nawet po zatrzymaniu mapowania tabeli, usuń te wiersze, które są powiązane z niepowodzeniem dla tabeli. Należy zwrócić uwagę na kolumnę **projectname** w tabeli DualWriteProjectConfiguration i pobrać wiersz w tabeli DualWriteProjectFieldConfiguration, używając nazwy projektu w celu usunięcia wiersza.
 4. Rozpocznij mapowanie tabeli. Sprawdź, czy dane są zsynchronizowane bez problemów.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Obsługa błędów uprawnień do odczytu lub odczytu podczas tworzenia danych w aplikacji Finance and Operations
@@ -127,6 +127,3 @@ Aby naprawić problem, należy wykonać następujące czynności.
 
 3. Upewnij się, że kolumna **externalenvironmentURL** ma poprawny Dataverse lub adres URL aplikacji. Usuń wszystkie zduplikowane wiersze, które wskazują na nieprawidłowy adres URL Dataverse. Usuń odpowiednie wiersze z tabel DUALWRITEPROJECTFIELDCONFIGURATION i DUALWRITEPROJECTCONFIGURATION.
 4. Zatrzymaj mapowanie tabeli, a następnie uruchom je ponownie
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

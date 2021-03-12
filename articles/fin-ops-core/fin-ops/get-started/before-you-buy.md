@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: adbc9d0bc4632c661b40001a54685192b9ae2d23
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694143"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798556"
 ---
 # <a name="before-you-buy"></a>Zanim kupisz
 
@@ -30,7 +30,7 @@ Nowy w  Dynamics 365 Finance, Dynamics 365 Supply Chain Management lub Dynamics 
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Krok drugi: Wypróbuj Finance and Operations bezpłatnie przez 30 dni
 
-Możesz wypróbować 365 for Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce przez 30 dni poprzez prostą rejestrację pocztą e-mail. Wersja próbna aplikacje Finance and Operations zawiera przewodniki po zadaniach Rozpoczęcie pracy, które oferują instrukcje krok po kroku umożliwiające obejrzenie konkretnych scenariuszy w działaniu. Produkt umożliwia poznanie i przećwiczenie scenariuszy, ale nie można go dostosowywać. Dołączone są dane demonstracyjne, które ułatwiają korzystanie z produktu i zwiększają użyteczność całego procesu. 3 dni przed wygaśnięciem wersji próbnej zostanie wysłana wiadomość e-mail z przypomnieniem. Szczegółowe informacje znajdziesz na stronie [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+Możesz wypróbować 365 for Finance, Dynamics 365 Supply Chain Management lub Dynamics 365 Commerce przez 30 dni poprzez prostą rejestrację pocztą e-mail. Wersja próbna aplikacje Finance and Operations zawiera przewodniki po zadaniach Rozpoczęcie pracy, które oferują instrukcje krok po kroku umożliwiające obejrzenie konkretnych scenariuszy w działaniu. Produkt umożliwia poznanie i przećwiczenie scenariuszy, ale nie można go dostosowywać. Dołączone są dane demonstracyjne, które ułatwiają korzystanie z produktu i zwiększają użyteczność całego procesu. 3 dni przed wygaśnięciem wersji próbnej zostanie wysłana wiadomość e-mail z przypomnieniem. Szczegółowe informacje znajdziesz w temacie [Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>Krok 2: Wybieranie opcji wdrożenia
 
@@ -93,6 +93,3 @@ Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>W przypadku uaktualniania z systemu Dynamics AX 2012 lub migracji z systemu AX 2009
 
 Jeśli jesteś klientem, który uaktualniania z systemu Microsoft Dynamics AX 2012 lub migruje z systemu Microsoft Dynamics AX 2009, być może masz prawo do dłuższego okresu próbnego. Napisz na adres <daxcf@microsoft.com>, aby uzyskać więcej informacji.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 47c07dd0e2f311b61297340a48a5a31cb1de3903
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78a7cdc18476a1c523c83c92ca6f354c3ba806dc
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685672"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744860"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Wskazówki dotyczące konfiguracji podwójnego zapisu
 
@@ -36,7 +36,7 @@ ms.locfileid: "4685672"
 Można skonfigurować połączenie podwójnego zapisywania między środowiskiem Finance and Operations a środowiskiem Dataverse.
 
 + Środowisko **Finance and Operations** stanowi podstawową platformę dla aplikacji **Finance and Operations** (np. Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce i Dynamics 365 Human Resources).
-+ **Środowisko Dataverse** stanowi podstawową platformę aplikacji opartych na **aplikacjach do zakontraktowania odbiorcy** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing i Dynamics 365 Project Service Automation).
++ **Środowisko Dataverse** stanowi podstawową platformę **aplikacji typu Customer Engagement** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Column Service, Dynamics 365 Marketing i Dynamics 365 Project Service Automation).
 
 > [!IMPORTANT]
 > Moduł Human Resources w Dynamics 365 Finance obsługuje połączenia dwukrotnego zapisu, ale aplikacja Dynamics 365 Human Resources nie.
@@ -138,6 +138,3 @@ Aby uzyskać łącza do przykładowych i alternatywnych rozwiązań, zajrzyj do 
 Aby zapoznać się z przykładem, należy zapoznać się z formularzem [Włączanie odbiorcy v3 — Mapa tabeli kontaktów](enable-entity-map.md#enable-table-map)
 
 W celu rozwiązania alternatywnego opartego na woluminach danych w każdej jednostce, która musi uruchomić synchronizację początkową, należy zapoznać się z [Zagadnienia dotyczące synchronizacji początkowej](initial-sync-guidance.md).
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
