@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51524ad6918d962d70a8a700f135f96e236f7d34
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414858"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000882"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definiowanie i obsługa kanałów sprzedaży detalicznej
 
@@ -89,6 +88,3 @@ Commerce używa hierarchii organizacji do tworzenia struktury w kanałach. Hiera
 > [!NOTE]
 > Aby korzystać z funkcji sprzedaży w aplikacji Commerce, klucz konfiguracji dla opcji **Wielokrotna wysyłka** musi być włączony. Ten klucz konfiguracji można znaleźć w kluczach **konfiguracji handlu** w obszarze **Administracja systemem**\> **Instalator** \> **Konfiguracja licencji**. Jest to wymagane z powodu różnych operacji weryfikacji na podstawie adresu dostawy skonfigurowanego na poziomie wiersza zamówienia sprzedaży.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

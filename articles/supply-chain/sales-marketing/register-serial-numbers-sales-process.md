@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4f5a04e85d3cc34111b7421fbff6cbde413b7c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435150"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001531"
 ---
 # <a name="working-with-serialized-items"></a>Praca z towarami seryjnymi
 
@@ -51,12 +50,12 @@ Konfiguracja grupy wymiarów śledzenia, która jest przypisana do tego produktu
 Można utworzyć częściowe faktury i dokumenty dostawy dla zamówień sprzedaży i zarejestrować tylko numery seryjne dla towarów, które są objęte fakturami i dokumentami dostawy. Aby utworzyć fakturę częściową w przypadku posiadania więcej niż jednego dokumentu dostawy dla zamówienia sprzedaży, można umieścić numery seryjne z więcej niż jednego dokumentu dostawy. Jednak może istnieć tylko jeden dokument dostawy, na którym nie są uwzględniane wszystkie numery seryjne. Na przykład, jeśli istnieją trzy dokumenty dostawy i każda zawiera dwa towary seryjne, nie można utworzyć faktury częściowej dla jednego towaru z każdego dokumentu dostawy.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Co należy zrobić, jeśli numer seryjny nie jest czytelny?
-Jeśli numeru seryjnego nie można odczytać ani zeskanować, można utworzyć pusty wiersz dla pozycji, klikając przycisk **Nie można odczytać** na stronie **Numery seryjne**. Jeśli numer seryjny stanie się dostępny później, można zaktualizować fakturę lub dokument dostawy. Aby uzyskać więcej informacji zobacz następną sekcję „Czy można poprawić lub zmienić numery seryjne, które zostały zarejestrowane dla zamówienia sprzedaży?”
+Jeśli numeru seryjnego nie można odczytać ani zeskanować, można utworzyć pusty wiersz dla pozycji, klikając przycisk **Nie można odczytać** na stronie **Numery seryjne**. Jeśli numer seryjny stanie się dostępny później, można zaktualizować fakturę lub dokument dostawy. Aby uzyskać więcej informacji, zobacz następną sekcję „Czy można poprawić lub zmienić numery seryjne, które zostały zarejestrowane dla zamówienia sprzedaży?”
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Czy można poprawić lub zmienić numery seryjne, które zostały zarejestrowane dla zamówienia sprzedaży?
 Tak, można poprawić numery seryjne, o ile spełnione są następujące warunki:
--   **Faktury** — można zmienić numery seryjnych dla towarów, które nie zostały jeszcze zafakturowane. Dokument dostawcy jest również aktualizowany. Jednak, jeśli wiersz zamówienia sprzedaży został poprawiony poprzez rejestrację ilości ujemnej, nie można zmienić numerów seryjnych dla wiersza zamówienia sprzedaży.
--   **Dokumenty dostawy** — nie można częściowo zmieniać wiersza dokumentu dostawy, który zawiera towary seryjne. Musisz wycofać pełną ilość dla wiersza. Jeśli dokument dostawy został anulowany lub skorygowany, nie trzeba ponownie zarejestrować wycofanych numerów seryjnych podczas tworzenia nowego dokumentu dostawy dla tych samych zapasów seryjnych. Zostaną użyte liczby, które zostały zarejestrowane.
+-   **Faktury** — można zmienić numery seryjnych dla towarów, które nie zostały jeszcze zafakturowane. Dokument dostawcy jest również aktualizowany. Jednak, jeśli wiersz zamówienia sprzedaży został poprawiony poprzez rejestrację ilości ujemnej, nie można zmienić numerów seryjnych dla wiersza zamówienia sprzedaży.
+-   **Dokumenty dostawy** — nie można częściowo zmieniać wiersza dokumentu dostawy, który zawiera towary seryjne. Musisz wycofać pełną ilość dla wiersza. Jeśli dokument dostawy został anulowany lub skorygowany, nie trzeba ponownie zarejestrować wycofanych numerów seryjnych podczas tworzenia nowego dokumentu dostawy dla tych samych zapasów seryjnych. Zostaną użyte liczby, które zostały zarejestrowane.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Czy można wyświetlać numery seryjne, które zostały wysłane razem z określonym dokumentem dostawy lub zostały uwzględnione na fakturze?
 Tak, można uruchomić zapytanie na wierszu arkusza dokumentu dostawy lub wierszy arkusza faktury w celu wyświetlenia listy wszystkich numerów seryjnych, które zostały uwzględnione w dokumencie.
@@ -80,6 +79,3 @@ Ta funkcjonalność jest dostępna dla wszystkich ról, które mogą obsługiwa�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, ForecastSales
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 105cf50698889e81804155cdac3a8b484cbf87d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd931a378b057026eff57b34c9f5740df8adacef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435055"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999838"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ręczne modyfikowanie prognozy popytu
 
@@ -43,6 +42,3 @@ W tej procedurze pokazano sposób modyfikowania prognozy dla towaru. Dane wykorz
 1. Kliknij przycisk **Otwórz** w Microsoft Office.
 2. Kliknij opcję **Edytuj prognozę popytu** w programie Excel. W programie Excel można dodawać, usuwać i edytować wiersze prognozy popytu. Jeśli nie widzisz danych w programie Excel, musisz mieć włączoną opcję „Nie wylogowuj mnie” i zaufać aplikacji połączenia danych.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

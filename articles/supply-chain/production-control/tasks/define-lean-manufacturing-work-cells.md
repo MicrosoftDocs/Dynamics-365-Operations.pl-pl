@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4f460fb42be5cbeda55a82e536e2a83cd2f6b608
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 96c65690b7d67bffc2cf09c4ea34c84755f8530a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434926"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001556"
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definiowanie komórek roboczych produkcji lean manufacturing
 
@@ -100,6 +99,3 @@ Komórka robocza to specjalna postać grupy zasobów, które mogą być używane
 ## <a name="save"></a>Zapisz
 1. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

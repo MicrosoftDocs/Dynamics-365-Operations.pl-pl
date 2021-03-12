@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0aaacf28701542d329afedd8206a12f7c11b7ac7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999988"
 ---
 # <a name="coverage-settings"></a>Ustawienia zapotrzebowania
 
@@ -66,6 +65,3 @@ Do każdej metody uzupełnień jest przypisany jeden z następujących kodów za
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie planów głównych](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

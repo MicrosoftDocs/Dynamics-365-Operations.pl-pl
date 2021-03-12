@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 51a6b19e84f368bf72b664e120f262ddcf7c7611
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: cff4ee39d4c27e9a0dfc891e0f95278040ede877
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435682"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999788"
 ---
 # <a name="product-lifecycle-state-overview"></a>Omówienie stanów cyklu życia produktu
 
@@ -109,6 +108,3 @@ W celu wybrania i aktualizacji zwolnionych produktów i wariantów produktów na
 - [Przypisywanie stanu cyklu życia produktu do zwolnionego produktu](tasks/product-lifecycle-state-released-product.md)
 - [Znajdowanie wariantów przestarzałych produktów i przypisywanie stanu cyklu życia produktu](tasks/obsolete-product-variants.md)
 - [Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego](tasks/exclude-products-master-planning.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
