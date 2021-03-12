@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435638"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966112"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Wysyłanie zamówień jako dostaw bezpośrednich
 
@@ -82,6 +81,3 @@ W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zam�
     - Strona Dostawa bezpośrednia działa jak pulpit dostarczający pracownikowi działu zakupów całościowy obraz wszystkich wierszy zamówienia sprzedaży, które mają być dostarczane bezpośrednio, i umożliwia tworzenie odpowiednich zamówień zakupu. Ponadto na kartach Potwierdzenie i Dostawa można wyświetlać otwarte zamówienia z dostawą bezpośrednią i zamówienia potwierdzone.  
     - Po utworzeniu zamówienia dostawy bezpośrednie jest ono automatycznie przenoszone na kartę Potwierdzenie. Zamówienie można potwierdzić bezpośrednio z tej strony. Po potwierdzeniu zakupu jest on automatyczne przenoszony do karty Dostawa, na której można zarejestrować jego otrzymanie.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

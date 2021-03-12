@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 57f09bf907407e19ae0e693de64510f7f4efbf0b
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4435532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966286"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
 
@@ -80,6 +79,3 @@ W górnej części pokazanej poniżej pokazano, jak interfejs jest domyślnie pr
 Domyślnie interfejs wykonywania rozkładu pracy automatycznie rejestruje się, jeśli nikt nie używa go przez 12 godzin. Użytkownik Supply Chain Management musi się ponownie zalogować. Można jednak wydłużyć limit czasu do 90 dni.
 
 Aby wydłużyć limit czasu, zaloguj się w module Supply Chain Management i przejdź do **Administrowanie systemem \> Użytkownicy \> Rozszerzenia sesji**. Określ konto użytkownika Supply Chain Management służące do logowania się do urządzenia oraz liczbę godzin, dla których sesja powinna pozostać aktywna.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

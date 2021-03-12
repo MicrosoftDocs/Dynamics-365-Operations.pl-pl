@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414832"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965127"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Utwórz i skonfiguruj rozszerzone gwarancje
 
@@ -142,7 +141,7 @@ Grupa gwarancyjna jest relacją między pozycje gwarancyjne i pozycje podlegają
 
 Aby skonfigurować przypisanie grupy gwarancji w Commerce, należy wykonać następujące czynności.
 
-1. Przejdź do **Retail i Commerce \> Produkty i kategorie \> Gwarancja \> Grupy gwarancji**.
+1. Przejdź do **Retail i Commerce \> Produkty i kategorie \> Gwarancja \> Grupy gwarancji**.
 1. Wybierz pozycję **Nowy**, aby utworzyć grupę gwarancji.
 1. W polu **Nazwa** wprowadź nazwę nowej grupy.
 1. Na skróconej karcie **Ogólne** w polu **Opis** wpisz opis grupy.
@@ -239,6 +238,3 @@ Gwarancja to usługa oferowana dla konkretnego, unikatowego produktu. W Dynamics
 [Konfigurowanie asortymentów](set-up-assortments.md)
 
 [Omówienie sekwencji identyfikatorów](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

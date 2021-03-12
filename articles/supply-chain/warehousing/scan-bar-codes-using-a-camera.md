@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71ec15b2568eefd8bea99e64c258a65461a7ad95
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435016"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965651"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Skanowanie kodów kreskowych za pomocą aparatu w rozwiązaniu – aplikacja magazynowa
 
@@ -55,6 +54,3 @@ Na stronie Aparat po kliknięciu przycisku Aparat będzie on wyszarzony podczas 
 
 Kierując aparat na kod kreskowy, w celu uzyskania najlepszego wyniku utrzymuj kod kreskowy w granicach nawiasów kwadratowych. Jeśli kod kreskowy zostanie zeskanowany pomyślnie, rezultat zostanie przetworzony, po czym nastąpi przejście do następnego kroku. Jeśli następny krok zawiera kolejne pole wejściowe z ustawionym preferowanym trybem wprowadzania Skanowanie, strona Aparat zostanie ponownie uruchomiona. Jeśli w następnym kroku nie występuje pole obsługujące skanowanie, strona Aparat nie zostanie zainicjowana.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

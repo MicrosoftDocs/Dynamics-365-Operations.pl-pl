@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 7c0f98ffc6ede74f93523b9fa9800e7b6617d9b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435438"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966662"
 ---
 # <a name="vendor-rebates"></a>Rabaty dostawcy
 
@@ -167,6 +166,3 @@ Proces obsługi rabatów dostawcy obejmuje wiele zadań śledzenia ręcznego, kt
 - Generowanie prawidłowych roszczeń dotyczących rabatu
 - Naliczenie oczekiwanych należności i tymczasowego zysku w księdze głównej
 - Aktualizacja salda dostawcy i rachunku strat i zysków o należny odpis
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
