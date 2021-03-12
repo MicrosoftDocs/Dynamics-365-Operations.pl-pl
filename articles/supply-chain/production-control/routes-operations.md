@@ -12,19 +12,18 @@ ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, Ro
 ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: daed55821617e688811ffc33ee8bc2847c37c242
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435034"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986586"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -260,6 +259,3 @@ Z tego względu po aktywacji Nakładania pozostałe ustawienia (zarządzanie zad
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

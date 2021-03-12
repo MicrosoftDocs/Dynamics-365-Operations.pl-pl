@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435670"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987486"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Wersje inżynieryjne i kategorie produktów inżynieryjnych
 
@@ -162,6 +161,3 @@ Inżynieryjne BOM i marszruty są tworzone z wersji inżynieryjnej, w której ma
 W przypadku produktów, w których używasz wymiaru *wersji* produktu (wraz z logistycznym wpływem na transakcje), wersja jest również dodawana do BOM i marszrut. To zachowanie ułatwia rozróżnianie BOM i marszrut z kolejnymi wersjami niezależnie od ustawienia **Wymuszaj efektywność**.
 
 W przypadku produktów, w których nie używasz wymiaru *wersji* produktu (bez logistycznego wpływu na transakcje), wersja nie jest dodawana do BOM ani marszrut. Z tego powodu nie będzie różnic między BOM i marszrutami kolejnych wersji. W takim przypadku zdecydowanie zaleca się ustawienie opcji **Wymuszaj efektywność** na wartość *Tak*. W ten sposób można zapobiec nakładaniu się wersji inżynierskich, a także aktywować zestawienie komponentów i marszrutę nowszej wersji bez konieczności uprzedniej dezaktywacji zestawienia komponentów i marszruty poprzedniej wersji. Jeśli w tym przypadku ustawienie opcji **Wymuszaj efektywność** wartość *Tak*, należy ręcznie dezaktywować BOM i marszruty w starszych wersjach, aby umożliwić aktywację najnowszej wersji.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

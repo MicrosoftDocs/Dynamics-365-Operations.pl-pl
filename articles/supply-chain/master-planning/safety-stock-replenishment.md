@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dbc0ca146327fada1325f4b11965c23948d3565d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435000"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987261"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
@@ -116,6 +115,3 @@ Priorytet realizacji zapotrzebowania na zapasy bezpieczeństwa jest obniżany, j
 Na etapie realizacji zapotrzebowania planowania głównego priorytet uzupełniania zapasów bezpieczeństwa nie jest już obniżany. Dostępnych zapasów można użyć przed innymi typami zapotrzebowania. Podczas obliczania opóźnienia zostanie dodana nowa logika w celu uniknięcia opóźnionych wierszy sprzedaży, zapotrzebowania wiersza BOM i wszystkich innych typów zapotrzebowania w celu określenia, czy mogą zostać dostarczone na czas, pod warunkiem że używane są zapasy bezpieczeństwa. Jeżeli system określi, że może zminimalizować opóźnienia, używając zapasów bezpieczeństwa, wiersze sprzedaży lub BOM zastąpią początkowe zapotrzebowania zapasami bezpieczeństwa, a system uruchomi uzupełnianie zapasów bezpieczeństwa.
 
 Jeżeli plan lub towar nie jest skonfigurowany do opóźnionego obliczania, ograniczenie zapasów bezpieczeństwa będzie miało taki sam priorytet jak inne typy zapotrzebowania. Oznacza to, że występuje rezerwa dostępnych zapasów i innych dostępnych zapasów przed innymi typami popytu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5f9573fd220cd8b6a58f81e4d17ca65234f41beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6bb18f876e7d279624f60f01c5fbf4e449e9ab27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435082"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986886"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>Tworzenie stanu cyklu życia produktu w celu wykluczania produktów z planowania głównego
 
@@ -44,6 +43,3 @@ Ta procedura dotyczy tworzenia nowego cyklu życia produktu który wyklucza prod
 5. Na liście oznacz wybrany wiersz.
 6. W polu Stan cyklu życia produktu wprowadź lub wybierz wartość.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

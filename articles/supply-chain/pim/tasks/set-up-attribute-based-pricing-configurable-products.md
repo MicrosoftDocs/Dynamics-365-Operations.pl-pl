@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a75f3afcf4761ac6a9575eae9a620a1e9f01c8e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b2f9a78902ff1a0333c46c8ad9142338678b6e7d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435072"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986786"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurowanie opartej na atrybutach wyceny konfigurowalnych produktów
 
@@ -52,6 +51,3 @@ W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Waru
 8. W polu **Wyrażenie** wpisz wartość. Na przykład wpisz `50`. 
 9. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435199"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987560"
 ---
 # <a name="inventory-close"></a>Zamknięcie zapasów
 
@@ -60,7 +59,7 @@ Niektóre zadania, które można wykonać na stronie **Zamknięcie i korekta**, 
 Konta księgowe aktualizowane wskutek tych zadań są powiązane z pierwotną transakcja magazynową. Na przykład jeśli zamówienie sprzedaży jest rozliczane względem zamówienia zakupu, konta księgi głównej użyte w pierwotnym zamówieniu sprzedaży zostaną skorygowane. To zachowanie występuje nawet wtedy, gdy konta księgowe grupy towarów przypisanej do towaru zostały zmienione po zaksięgowania zamówienia sprzedaży. Gdy zamknięcie zapasów utworzy kwotę rozliczenia, kwota zostanie zaksięgowana na pierwotnych kontach księgowych, a nie na nowych kontach księgowych przypisanych do towaru. Księga główna może także zostać aktualizowana po wycofaniu zamknięcia zapasów. 
 
 > [!NOTE] 
-> - Zamknięcie zapasów jest wymaganym krokiem w procedurze zamykania miesiąca dla wszystkich modeli magazynu. Obejmuje to standardowe i ruchome koszty średnie. Nie będzie można zamknąć okresu obrachunkowego, dopóki nie zostanie przeprowadzone zamknięcie magazynu z datą zakończenia okresu.
+> - Zamknięcie zapasów jest wymaganym krokiem w procedurze zamykania miesiąca dla wszystkich modeli magazynu, poza średnią ruchomą.  W przypadku próby zamknięcia okresu finansowego bez wcześniejszego zamknięcia magazynu w dniu zakończenia okresu zostanie pojawi się ostrzeżenie.
 > - Przed uruchomieniem procedury zamknięcia można wyświetlić listę towarów, które nie mogą zostać rozliczone podczas aktualizacji.
 > - Zaleca się wykonywanie zamknięcia zapasów poza godzinami szczytu, kiedy zasoby obliczeniowe mogą być bardziej równomiernie rozdzielone.
 
@@ -87,6 +86,3 @@ Czasami może być konieczne wycofanie ukończonego zamknięcia zapasów w celu 
 > [!NOTE] 
 > Można ponownie otworzyć tylko ostatni okres zapasów, który został zamknięty. Aby cofnąć wcześniejsze zamknięcie zapasów, należy wycofać jedno po drugim wszystkie kolejne zamknięcie, począwszy od najnowszego.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa9d42c20540f2ee2240cc4f2b180140c3f9a628
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: ae3da8ee77636a2d2257e01f5876f5542469f7da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517095"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986061"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
@@ -136,6 +135,3 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

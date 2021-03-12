@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Poland
 ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b38bb95254d5a9713f361a8dd5d9f2455471922a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8ccf6e95da4df0aa673f6d36e8b5782474ad4eea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408378"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985935"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -266,6 +265,3 @@ Wykonaj następujące kroki, aby utworzyć możliwe do wdrożenia pakiety, któr
 
 1. Uruchom narzędzie **msbulid** dla całego zestawu Retail Software Development Kit (SDK), aby utworzyć pakiety do wdrożenia.
 1. Zastosuj pakiety za pośrednictwem Microsoft Dynamics Lifecycle Services (LCS) lub ręcznie. Aby uzyskać więcej informacji, zobacz [Pakiety Retail SDK](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

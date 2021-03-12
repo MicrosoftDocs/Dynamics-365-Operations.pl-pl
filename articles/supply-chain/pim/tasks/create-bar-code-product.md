@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b178701ca745a4317bf271bba726741e104f0804
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e660ff80db4c73d99efb781e5c55a244769dc6e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435231"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986961"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Tworzenie kodu kreskowego dla produktu
 
@@ -43,6 +42,3 @@ W tym temacie pokazano sposób ręcznego tworzenia kodu kreskowego przy użyciu 
 12. Wybierz opcję **Zapisz**.
 13. Zamknij stronę. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
