@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1c32b577007c400f3528a110436eb97aaabefe2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9da49ae17d6c25166f6b0e05e3c45fc991c9a54d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435270"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994161"
 ---
 # <a name="execute-kanban-process-jobs"></a>Wykonywanie zadań procesu w systemie Kanban
 
@@ -57,6 +56,3 @@ Ta procedura skupia się na wykonywaniu zadań procesu w systemie Kanban. Pierws
 6. W polu Ilość dobrych wprowadź liczbę.
 7. Kliknij przycisk OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

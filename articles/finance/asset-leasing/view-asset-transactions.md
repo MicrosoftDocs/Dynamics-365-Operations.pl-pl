@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7008891d194dc990d13a9f56db155c6990aae0c0
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 76c7eff17df92b01317544112099e391fd05d105
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4447012"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995375"
 ---
 # <a name="view-liability-asset-and-expense-transactions"></a>Wyświetlanie zobowiązania, składnika majątku i transakcji wydatków
 
@@ -48,6 +47,3 @@ Na stronie **Transakcja składnika majątku** są wyświetlane transakcje, któr
 Aby wyświetlić transakcje wydatków z tytułu wynajmu, wybierz umowę wynajmu na stronie **Podsumowanie wynajmu**, a następnie wybierz opcję **Księgi**, aby otworzyć księgi wynajmu dołączone do rekordu wynajmu. Następnie wybierz opcję **Transakcje wydatkowe**.
 
 Na stronie **Transakcje wydatkowe** są wyświetlane wszystkie wydatki, które zostały zaksięgowane dla wynajmu, takie jak koszty odsetek, wydatki amortyzacji i wszelkie koszty wykonawcze.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

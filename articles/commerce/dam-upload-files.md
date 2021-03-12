@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4acd3bec32cdfe627f6eb33dd5dc652f7cff74a8
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: 3392f5f36d04e8cb0a9d6e6b7db31ff62c987649
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594219"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995777"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Przekaż pliki inne niż obrazy i wideo
 
@@ -98,6 +97,3 @@ Aby przekazać plik do kreatora witryny w usłudze Commerce, wykonaj następują
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

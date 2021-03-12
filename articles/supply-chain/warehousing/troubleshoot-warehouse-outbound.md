@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 56bd91d8a6fe895317021d806e180df3a2db302b
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 165ac8145ad75c2c6619764b9abe855b9d32eb46
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645460"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993985"
 ---
 # <a name="troubleshoot-outbound-warehouse-operations"></a>Rozwiązywanie problemów dotyczących wychodzących operacji magazynowych
 
@@ -62,6 +61,3 @@ Towar jest dodawany do wiersza sprzedaży w celu bezpośredniej dostawy z magazy
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Firma Microsoft oceniła ten błąd i ustaliła, że jest to ograniczenie funkcji. Obecnie usługa WMS nie obsługuje dostawy bezpośredniej. Dlatego też, aby można było skorzystać z dostawy bezpośredniej, należy wybrać pozycję i magazyn spoza WMS.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

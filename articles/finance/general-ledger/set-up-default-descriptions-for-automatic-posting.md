@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: ''
 ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446630"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994747"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Ustawianie opisów domyślnych dla automatycznego księgowania
 
@@ -87,6 +86,3 @@ Po wykonaniu kroków w procedurze [Ustawianie opisów domyślnych](#set-up-defau
 2. W polu **Tabela odwołań** zaznacz tabelę bazy danych, z której chcesz dodać do opisu dane parametru.
 3. W polu **Pole odwołania** zaznacz pole, z którego chcesz dodać do opisu dane parametru.
 4. Powtórz kroki od 1 do 3, aby dodać więcej parametrów.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

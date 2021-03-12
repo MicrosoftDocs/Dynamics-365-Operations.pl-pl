@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a1f9abae20d0f2e71790a3b27337338dc042b52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8d4987a824b786401c41c6ae63c8486ce7eb0c5d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414829"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995698"
 ---
 # <a name="manage-e-commerce-users-and-roles"></a>Zarządzanie użytkownikami i rolami e-Commerce
 
@@ -71,6 +70,3 @@ Po utworzeniu witryny użytkownik będący w grupach zabezpieczeń skojarzonych 
 [Zagadnienia optymalizacji wyszukiwarki dla witryny](search-engine-optimization-considerations.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

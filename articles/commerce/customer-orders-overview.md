@@ -3,7 +3,7 @@ title: Zamówienia odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414927"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995802"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
 
@@ -52,9 +51,9 @@ Aby skorzystać z zamówień odbiorców, należy skonfigurować metody dostawy, 
 
 ### <a name="set-up-fulfillment-groups"></a>Ustawianie grup realizacji
 
-Niektóre sklepy lub lokalizacje magazynowe mogą nie być w stanie zrealizować zamówień odbiorcy. Konfigurując grupy realizacji, organizacja może określić, które sklepy i lokalizacje magazynowe będą widoczne jako opcje dla użytkowników tworzących zamówienia odbiorców w punkcie sprzedaży. Grupy realizacji są konfigurowane na stronie **Grupy realizacji**. Organizacje mogą utworzyć tyle grup realizacji, ile jest potrzebnych. Po zdefiniowaniu grupy realizacji, jest ona połączona z sklepem za pomocą przycisku na karcie **Konfiguracja** w okienku akcji na stronie **Sklepy**.
+Niektóre sklepy lub lokalizacje magazynowe mogą nie być w stanie zrealizować zamówień odbiorcy. Konfigurując grupy realizacji, organizacja może określić, które sklepy i lokalizacje magazynowe będą widoczne jako opcje dla użytkowników tworzących zamówienia odbiorców w punkcie sprzedaży. Grupy realizacji są konfigurowane na stronie **Grupy realizacji**. Organizacje mogą utworzyć tyle grup realizacji, ile jest potrzebnych. Po zdefiniowaniu grupy realizacji, jest ona połączona z sklepem za pomocą przycisku wybierajac **Przypisanie grupy realizacji** na karcie **Konfiguracja** w okienku akcji na stronie **Sklepy**.
 
-W programie Commerce w wersji 10.0.12 i nowszych organizacje mogą określać, czy kombinacje magazynu lub magazynu/sklepu, które są zdefiniowane w grupach realizacji, mogą być używane do wysyłki, do odbioru lub do wysyłki i odbioru. W związku z tym sklep ma dodatkową elastyczność umożliwiającą obsługę magazynu i opcji przechowywania, które są widoczne dla użytkowników tworzących zamówienie z odbiorem lub zamówienie z wysyłką. Aby skorzystać z tych opcji konfiguracji, należy włączyć możliwość określania lokalizacji, w której jest włączona funkcja **wysyłki lub odbioru w ramach funkcji grupy realizacji**. Jeśli magazyn połączony z grupą realizacji nie jest sklepem, można go skonfigurować tylko jako lokalizację wysyłki. Nie można jej użyć, jeśli w punkcie sprzedaży skonfigurowano zamówienia z odbiorem.
+W programie Commerce w wersji 10.0.12 i nowszych organizacje mogą określać, czy kombinacje magazynu i magazynu/sklepu, które są zdefiniowane w grupach realizacji, mogą być używane do wysyłki, do odbioru lub do wysyłki i odbioru. Zapewnia to firmie dodatkową elastyczność w określaniu, które magazyny mogą zostać wybrane podczas tworzenia zamówienia klienta na towary do wysyłki, a które sklepy można wybrać podczas tworzenia zamówienia klienta na towary do odbioru. Aby skorzystać z tych opcji konfiguracji, należy włączyć możliwość określania lokalizacji, w której jest włączona funkcja **Możliwość określenia lokalizacji jako „Wysyłka” lub „Odbiór” włączonej w grupie Fulfillment**. Jeśli magazyn połączony z grupą realizacji nie jest sklepem, można go skonfigurować tylko jako lokalizację wysyłki. Nie można jej użyć, jeśli w punkcie sprzedaży skonfigurowano zamówienia z odbiorem.
 
 ![Strona grup realizacji](media/customer-order-fulfillment-group.png)
 
@@ -99,7 +98,10 @@ Upewnij się, że [układ ekranu punktu sprzedaży](https://docs.microsoft.com/d
 
 ![Operacje na ekranie transakcja w punkcie sprzedaży](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Praca z zamówieniami odbiorcy w punkcie sprzedaży
+## <a name="work-with-customer-orders-in-pos"></a>Praca z zamówieniami odbiorcy w punkcie sprzedaży
+
+> [!NOTE]
+> Funkcja rozpoznawania przychodów nie jest obecnie obsługiwana w kanałach Commerce (handel zagraniczny, POS, biuro obsługi). Elementy skonfigurowane z rozpoznawaniem przychodów nie powinny być dodawane do zamówień utworzonych w kanałach Commerce. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Utwórz zamówienie odbiorcy dla produktów, które zostaną wysłane do odbiorcy
 
@@ -118,7 +120,7 @@ Upewnij się, że [układ ekranu punktu sprzedaży](https://docs.microsoft.com/d
 2. Dodaj produkty do koszyka.
 3. Wybierz opcję **Odbierz wybrane** lub **Odbierz wszystko**, aby zainicjować konfigurację odbioru zamówienia.
 4. Umożliwia wybranie lokalizacji przechowywania, z której odbiorca będzie pobierał wybrane produkty.
-5. Umożliwia wybranie daty pobrania.
+5. Wybierz datę pobrania pozycji.
 6. Należy użyć funkcji płatności, aby zapłacić za wszelkie kwoty należne lub użyć operacji **Zastąpienia depozytu**, aby zmienić kwoty należne, a następnie zastosować płatność.
 7. Jeśli pełna suma zamówienia nie została zastosowana, określ, czy odbiorca ma udzielić płatności później (przy odbiorze), czy też karta kredytowa będzie teraz obciążona a następnie używana i przechwycona w momencie odbioru.
 
@@ -127,12 +129,10 @@ Upewnij się, że [układ ekranu punktu sprzedaży](https://docs.microsoft.com/d
 Zamówienia detaliczne utworzone w ramach kanału online lub sklepowego mogą zostać odwołane i edytowane w punkcie sprzedaży zgodnie, jeśli zajdzie taka potrzeba.
 
 > [!IMPORTANT]
-> Zamówień tworzonych w kanale biura obsługi nie można edytować za pośrednictwem punktu sprzedaży, jeśli [Włącz kończenie zamówienia](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) jest włączone dla kanału biura obsługi. Aby zapewnić poprawne przetwarzanie płatności, zamówienia utworzone w kanale biura obsługi i korzystające z funkcji włączania zamówień muszą być edytowane za pośrednictwem aplikacji centrum obsługi w module Commerce Headquarter.
+> Nie wszystkie zamówienia detaliczne można edytować za pomocą aplikacji POS. Zamówień tworzonych w kanale biura obsługi nie można edytować za pośrednictwem punktu sprzedaży, jeśli [Włącz kończenie zamówienia](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) jest włączone dla kanału biura obsługi. Aby zapewnić poprawne przetwarzanie płatności, zamówienia utworzone w kanale biura obsługi i korzystające z funkcji włączania zamówień muszą być edytowane za pośrednictwem aplikacji centrum obsługi w module Commerce Headquarter.
 
-W wersji 10.0.13 lub starszej Commerce użytkownicy mogą edytować obsługiwane zamówienia odbiorców w punkcie sprzedaży tylko wtedy, gdy zamówienia są w pełni otwarte. Jeśli jakiekolwiek wiersze zamówienia zostały już przetworzone w celu realizacji (pobranie, pakowanie itd.), zamówienie zostanie zablokowane do edycji w punkcie sprzedaży.
+W wersji 10.0.17 i późniejszej użytkownicy mogą edytować uprawnione zamówienia za pomocą aplikacji punktu sprzedaży, nawet jeśli zamówienie jest częściowo zrealizowane. Jednak zamówienia, które są w pełni zafakturowane nadal nie mogą być edytowane za pośrednictwem punktu sprzedaży. Aby włączyć tę funkcję, należy włączyć opcję **Edytowanie częściowo spełnionych zamówień w punktach sprzedaży** w obszarze roboczym **Zarządzanie funkcjami**. Jeśli ta funkcja nie jest włączona lub jeśli używasz wersji 10.0.16 lub starszej, użytkownicy będą mogli edytować zamówienia klientów w punkcie sprzedaży tylko wtedy, gdy zamówienie jest w pełni otwarte. Ponadto, jeśli ta funkcja jest włączona, możesz ograniczyć sklepy, które mogą edytować częściowo zrealizowane zamówienia. Opcję wyłączenia tej funkcji dla określonych sklepów można skonfigurować w profilu **Funkcjonalność** na skróconej karcie **Ogólne**.
 
-> [!NOTE]
-> W programie Commerce Version 10.0.14 funkcja, która została udostępniona w ramach [wersji zapoznawczej](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms) umożliwia edytowanie zamówień odbiorców w punkcie sprzedaży, nawet jeśli niektóre zamówienia zostały już zrealizowane. Jednak zamówienia, które są w pełni zafakturowane nadal nie mogą być edytowane za pośrednictwem punktu sprzedaży. Aby przetestować tę funkcję w wersji zapoznawczej i udostępnić dodatkowe informacje zwrotne, należy włączyć opcję **(Wersja zapoznawcza) Edytowanie częściowo spełnionych zamówień w punktach sprzedaży** w obszarze roboczym **Zarządzanie funkcjami**. Zamówienia odbiorcy pochodzące z kanału biura obsługi i korzystające z funkcji Włącz opcję wypełniania zamówień nie mogą być edytowane nawet po włączeniu tej funkcji.
 
 1. Wybierz **Odwołaj zamówienie**.
 2. Skorzystaj z **Wyszukiwania**, aby wprowadzić filtry w celu znalezienia zamówienia, a następnie wybierz przycisk **Zastosuj**.
@@ -170,6 +170,3 @@ Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawio
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
