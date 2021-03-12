@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage, PMFSeqReqRoute, PMFSeqReqRouteChanges, PMFSeqReqSchedDetailsFactBox, PMFSequenceGroup, PMFSequenceItemTable, PMFSequenceTable, PmfSeqWrkCtrCapRes
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db2c881f60b6e5251e2bcdf198da9e1c9f39a0e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e22c767a3de8fd937d9032a5bf285dfb4ced3d55
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435181"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981070"
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Określanie sekwencji zadań produkcji procesowej
 
@@ -71,6 +70,3 @@ Ta procedura wykorzystuje farby dla przykładu prezentującego sposób ustawieni
 8. Użyj szybkiego filtru, aby filtrować na podstawie pola Numer pozycji z wartością „P300”.
     * Zwróć uwagę, że zamówienia są teraz ustawione w kolejności według priorytetu koloru i rozmiaru, a planowane zamówienia rozpoczynają się od najwcześniejszej daty zamówienia i daty dostawy. Sprawdź poprawność zawartości kolumny Data zamówienia lub pola Data rozpoczęcia w polu informacji Szczegóły harmonogramu.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

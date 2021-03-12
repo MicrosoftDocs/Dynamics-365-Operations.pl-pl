@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a9e09a1d0dbd6c0dc94b5668bb29de6605e2ca9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414886"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980214"
 ---
 # <a name="add-a-privacy-policy-page"></a>Dodawanie strony zasad ochrony prywatności
 
@@ -109,6 +108,3 @@ Teraz można odwoływać się do fragmentu w szablonie dla innych stron witryny.
 [Zgodność z plikami cookie](cookie-compliance.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

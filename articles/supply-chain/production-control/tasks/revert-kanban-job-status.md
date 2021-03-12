@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9cca5ea3a4c33c7f36acd18a8af7034466b3b580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bc147ec517b8141b4764f67d21b4c4a2e4d6e6e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435185"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981163"
 ---
 # <a name="revert-kanban-job-status"></a>Przywróć stan zadania Kanban
 
@@ -48,13 +47,10 @@ Ta procedura skupia się na cofnięciu błędnego stanu zadania w systemie Kanba
     * Wybierz pierwsze zadanie, które właśnie zostało przygotowane.  
 2. W okienku akcji kliknij pozycję Produkcja.
 3. Kliknij opcję Przywrócenie stanu.
-    * Można użyć alternatywnej reguły Kanban, gdy są spełnione następujące warunki:  - Strategia uzupełniania jest taka sama dla obu reguł.  - Wersja przepływu produkcji jest taka sama dla obu reguł.  - Dostarczany produkt jest taki sam dla obu reguł.  - Wszelkie działania poprzedzające skonfigurowane dla ostatniego działania w regułach Kanban muszą być takie same w obu regułach.  - Te same wymiary dostarczanych zapasów muszą być skonfigurowane dla obu reguł.  - Jednostka obsługi musi mieć stan Nie przypisano.  - Konfiguracja kart Kanban zdarzeń musi być taka sama.  
+    * Można użyć alternatywnej reguły Kanban, gdy są spełnione następujące warunki:  - Strategia uzupełniania jest taka sama dla obu reguł.  - Wersja przepływu produkcji jest taka sama dla obu reguł.  - Dostarczany produkt jest taki sam dla obu reguł.  - Wszelkie działania poprzedzające skonfigurowane dla ostatniego działania w regułach Kanban muszą być takie same w obu regułach.  - Te same wymiary dostarczanych zapasów muszą być skonfigurowane dla obu reguł.  - Jednostka załadunkowa musi mieć stan Nie przypisano.  - Konfiguracja kart Kanban zdarzeń musi być taka sama.  
     * Upewnij się, że nowy stan to Zaplanowane.  
 4. Kliknij przycisk OK.
 5. Na liście usuń oznaczenie wybranego wiersza.
     * Wybierz to samo zadanie.  
     * Należy zauważyć, że stan zadania w systemie kanban został przywrócony do Zaplanowane, co jest wskazywane przez pustą ikonę na karcie Kanban.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

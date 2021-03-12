@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 141273
 ms.assetid: 3ee2f32b-02aa-420b-8990-e6aa5fc6bda3
 ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09b24b88ee5f8104aabd11397d5bd2745e846cb0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: adea87b6341860a9aa1625811270274e02a88b26
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446679"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4978946"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Rozwiązywanie problemów z importowaniem pliku wyciągu bankowego
 
@@ -108,6 +107,3 @@ W tabeli poniżej przedstawiono przykłady definicji układów technicznych plik
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

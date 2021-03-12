@@ -1,5 +1,5 @@
 ---
-title: Rozliczenie płatności częściowej dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy
+title: Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących
 description: Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14222
 ms.assetid: 2b19f7fd-9ff9-4ee4-bddf-f582946d008e
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 923ab0305ac75c1156984c7a6d051f036479a16d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 701376cd080a5dda4c985aced1b08c7cb2147c27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446643"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979445"
 ---
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Rozliczenie płatności częściowej dostawcy, do której zastosowano rabaty na fakturach korygujących dostawcy
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących
 
 [!include [banner](../includes/banner.md)]
 
@@ -71,6 +70,3 @@ April może przejrzeć transakcje dostawcy na stronie **transakcji dostawcy**, w
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529585"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980813"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Omówienie portalu klienta dla Dynamics 365 Supply Chain Management
 
@@ -64,11 +63,8 @@ Portal odbiorców jest dostarczany jako szablon portali Power Apps. Zależy to o
 
 [Portale Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview) to funkcja umożliwiająca użytkownikom tworzenie zewnętrznej witryny sieci Web, do której mogą się logować osoby spoza organizacji. Do tworzenia portali nie jest wymagane kodowanie. Portal klienta to jeden z wielu [szablonów portalu Dynamics 365](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) dostępnych w firmie Microsoft.
 
-[Podwójny zapis](https://docs.microsoft.com/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami opartymi na modelach Dynamics 365 i aplikacjami Finance and Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance and Operations i Common Data Service. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od jednostek synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich jednostek musi być włączona funkcja podwójnego zapisywania.
+[Podwójny zapis](https://docs.microsoft.com/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance and Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance and Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
 
 ![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 
 Portal odbiorcy działa jako punkt wyjścia dla organizacji, które chcą używać portali Power Apps, aby zbudować zewnętrznie dochodzącą witrynę sieci Web, która korzysta z danych z własnej instalacji Supply Chain Management. Pomaga organizacjom łączyć dwa zapisy, Supply Chain Management i portale Power Apps.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

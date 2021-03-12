@@ -10,17 +10,16 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 981d1c604a7ed461f207e78c8c7f073aff03be9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414867"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980005"
 ---
 # <a name="assortment-management"></a>Zarządzanie asortymentem
 
@@ -107,6 +106,3 @@ Planując i organizując asortymenty dla swojego wdrożenia Commerce, należy wz
 - **Sprzedaż i zwroty poza asortymentami** — ta funkcja pozwala sprzedawcom detalicznym efektywnie zarządzać liczebnością asortymentów poprzez ograniczenie dostępności produktów tylko do tych, które należą do podstawowego asortymentu sklepu. Pomaga również reagować w sytuacjach, gdy produkt został omyłkowo pominięty z asortyment lub zwrócony poza datami obowiązywania asortymentu.
 
 Jeśli dane produktu nie istnieją w bazie danych kanału, aplikacja POS wykonuje w czasie rzeczywistym wywołania do centrali w celu pobrania wymaganych informacji, dzięki czemu produkt można sprzedać, zwrócić lub umieścić w zamówieniu klienta. Informacje o produkcie pobrane w ten sposób są dostępne tylko w zakresie danej transakcji. Produkt nie jest dodawany do definicji asortymentu. W związku później również będą wykonywane wywołania w czasie rzeczywistym tylko w razie potrzeby.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

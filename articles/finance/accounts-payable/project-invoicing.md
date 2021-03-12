@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ba2f9d69295f9f5cfb4a2a791be781de32b50f46
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446751"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979595"
 ---
 # <a name="project-invoicing"></a>Fakturowanie projektu
 
@@ -75,7 +74,7 @@ Jeśli Twoja organizacja wymaga, aby propozycje faktur zostały przejrzane przed
 
 ### <a name="view-grant-information-on-project-invoice-list-pages"></a>Wyświetlanie informacji o dotacji na stronach listy faktur projektu
 
-Użytkownicy sektora publicznego mogą dodawać **Identyfikator dotacji** i **Nazwę dotacji** do stron list **Propozycje faktur projektu** i **Faktury projektu**. Te kolumny są włączone za pomocą funkcji **Dodaj informacje o dotacji do stron listy faktur projektu**. Ta funkcja jest domyślnie wyłączona i można ją włączyć w  **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc we włączaniu tej funkcji, skontaktuj się z administratorem systemu.
+Użytkownicy sektora publicznego mogą dodawać **Identyfikator dotacji** i **Nazwę dotacji** do stron list **Propozycje faktur projektu** i **Faktury projektu**. Te kolumny są włączone za pomocą funkcji **Dodaj informacje o dotacji do stron listy faktur projektu**. Ta funkcja jest domyślnie wyłączona i można ją włączyć w **Obszary robocze > Zarządzanie funkcjami**. Aby uzyskać pomoc we włączaniu tej funkcji, skontaktuj się z administratorem systemu.
 
 ## <a name="on-account-invoicing"></a>Fakturowanie akonto
 Kwota wprowadzona do faktury akonto dla projektu opiera się na czasie, procencie ukończenia oraz innych warunkach fakturowania, określonych w umowie powiązanego projektu. Kwota jest nie obliczana na podstawie godzin, towarów, wydatków lub opłat, które zostały zaksięgowane do projektu. 
@@ -132,6 +131,3 @@ Można utworzyć fakturę z kwotą ujemną i taka faktura jest klasyfikowana jak
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

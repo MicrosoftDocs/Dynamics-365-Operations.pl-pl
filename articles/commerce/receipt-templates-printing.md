@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415045"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979760"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurowanie i projektowanie formatów paragonów
 
@@ -46,6 +45,10 @@ W tym artykule opisano modyfikowanie układów formularzy w celu sterowania spos
     - **Nie Drukuj** — paragon nie jest drukowany.
     - **Monituj użytkownika** — użytkownik jest proszony o wydrukowanie paragonu.
     - **Zgodnie z wymogami** — ta opcja jest używana tylko dla paragonów za upominek. Gdy ta opcja jest zaznaczona, użytkownik może drukować paragon ze strony **zmiany**, jeśli paragon za upominek jest wymagany.
+
+## <a name="print-images"></a>Drukuj obrazy
+
+Konstruktor paragonów zawiera zmienną **Logo**, która może być używana do określania obrazów do wydrukowania na paragonie. Obrazy uwzględnione w paragonach przy użyciu zmiennej **Logo** powinny być plikami map bitowych (bmp). Jeśli obraz .bmp jest określony w projektancie paragonów, ale nie jest drukowany po wysłaniu do drukarki, może to oznaczać, że rozmiar pliku jest zbyt duży lub wymiary obrazu w pikselach nie są zgodne z drukarką. W takim przypadku należy spróbować zmniejszyć rozdzielczość pliku obrazu.   
 
 ## <a name="design-a-receipt-format"></a>Projektowanie formatu paragonu
 
@@ -82,6 +85,3 @@ Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu
 
 > [!NOTE]
 > Jeśli używane są dwie drukarki, jedna drukarka może służyć do standardowych 40-kolumnowych paragonów. Druga drukarka jest zwykle używana do drukowania paragonów pełnostronicowych, które muszą zawierać więcej informacji. Paragony te uwzględniają paragony do zamówienia sprzedaży odbiorcy i faktury odbiorcy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

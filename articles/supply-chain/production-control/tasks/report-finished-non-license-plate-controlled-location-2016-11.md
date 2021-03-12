@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a9010b95cfd0528cd3b532627d19a3b340bdca4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 180035668d9c8a03b83f669af7459725eecc8def
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434917"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981188"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>Zgłaszanie wyrobów gotowych do lokalizacji niekontrolowanej przez numer identyfikacyjny (zgłoszenie, maj 2016)
 
@@ -62,6 +61,3 @@ Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lok
 18. Kliknij opcję Szczegóły pracy.
     * Po zgłoszeniu zlecenia produkcyjnego jako gotowego nie została wygenerowana żadna praca odłożenia. Dzieje się tak, ponieważ zdefiniowano zasadę pracy, która blokuje generowanie pracy, gdy produkt L0101 jest zgłaszany jako gotowy do lokalizacji 001.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

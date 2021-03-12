@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a6c4b7103874a6d955b21e99b8e219a039d4b55
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 02511fea05cb1dfde17b1b8acaac97dcc136c062
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434945"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981262"
 ---
 # <a name="create-a-kanban-rule-using-a-kanban-line-event"></a>Tworzenie reguły Kanban przy użyciu zdarzenia wiersza karty Kanban
 
@@ -69,6 +68,3 @@ Ta procedura tworzy regułę Kanban poprzez użycie ustawienia zdarzenia wiersza
     * Należy zauważyć, że karta Kanban dla ilości 27 została utworzona w celu przetwarzania działania na podstawie utworzonej reguły Kanban.  
     * To jest ostatni krok.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

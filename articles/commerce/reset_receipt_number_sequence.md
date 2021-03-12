@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414873"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979728"
 ---
 # <a name="reset-receipt-numbers"></a>Resetowanie numerów paragonów 
 
@@ -68,6 +67,3 @@ Aby wyczyścić przyszłe daty resetowania, można skorzystać z funkcji **czysz
 
 > [!NOTE]
 > W zależności od wybranej daty wyzerowania i formatu paragonu mogą istnieć zduplikowane numery paragonów. Mimo że system punktu sprzedaży (POS) może obsłużyć te sytuacje, zwiększa się czas wymagany do przetworzenia zwrotów, ponieważ klienci z jednostkami sprzedażowymi muszą wybierać spośród zduplikowanych przyjęć. Inne komplikacje związane z oczyszczaniem danych mogą wystąpić, jeśli duplikaty paragonów nie zostały zaplanowane. Z tego względu zaleca się stosowanie dynamicznych znaków daty (na przykład **DDD**, **mm**, **DD** i **RR**) w celu uniknięcia zduplikowanych numerów paragonów po wyzerowaniu.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

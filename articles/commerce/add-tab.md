@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c9d897113442f14b95539efb9fec9482be96447a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42c3cd99897627dbcdbdec91cfdb03d5743f7388
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414885"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980189"
 ---
 # <a name="tab-module"></a>Moduł karty
 
@@ -84,6 +83,3 @@ Aby dodać moduł karty do strony i ustawić właściwości, wykonaj następują
 [Moduł typu accordion](add-accordion.md)
 
 [Moduł bloku tekstu](add-content-rich-block.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

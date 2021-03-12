@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247193732a49cf0d26f0437f57f3ed66061a118
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446753"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979545"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Faktury zaliczkowe a zaliczki
 
@@ -51,7 +50,7 @@ Zasady księgowości stosowane w niektórych krajach/regionach wymagają, aby za
 3.  Utwórz arkusz płatności, a następnie utwórz nową płatność.
 4.  Można oznaczać flagami płatność jako zaliczkę. Jeśli płatność jest oznaczona jako zaliczka, płatność jest księgowana na kontach księgowych zdefiniowanych w profilu księgowania ustawionym w krokach 1 i 2. Ponadto jeśli płatność jest oznaczona jako zaliczka, obliczane są podatki. W niektórych krajach podatki muszą być płacone w chwili rejestracji zaliczki, nawet jeśli nie ma jeszcze faktury.
 5.  Zaksięguj przedpłatę.
-6.  Opcjonalnie: Można rozliczyć zaliczkę dla zamówienia zakupu lub zamówienia sprzedaży przed utworzeniem faktury. Na stronie zamówienia sprzedaży lub zamówienia zakupu, w okienku akcji, użyj opcji **Rozlicz transakcje**.
+6.  Opcjonalnie: Można rozliczyć zaliczkę dla zamówienia zakupu lub zamówienia sprzedaży przed utworzeniem faktury. Na stronie zamówienia sprzedaży lub zamówienia zakupu, w okienku akcji, użyj opcji **Rozlicz transakcje**.
 7.  Po tym jak dostawca dostarczy towary lub zrealizuje usługi zarejestruj fakturę. Jeśli w kroku 6 zaliczka została rozliczona dla zamówienia zakupu lub zamówienia sprzedaży, zaliczka jest automatycznie rozliczana dla utworzonej faktury. Jeśli zaliczka nie została rozliczona dla zamówienia zakupu lub zamówienia sprzedaży, można ręcznie rozliczyć ją dla faktury za pomocą opcji **Rozlicz transakcje** na stronie odbiorcy lub dostawcy. Kwota zaliczki jest następnie wycofywana z tymczasowego konta księgowego rozrachunków z dostawcami/rozrachunków z odbiorcami. Ponadto, jeśli zostały obliczone podatki, są one wycofywane, bo faktura zawiera rzeczywiste podatki.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Omówienie procesu fakturowania zaliczek
@@ -66,6 +65,3 @@ Faktury zaliczkowe są często stosowaną praktyką biznesową. Dostawca wystawi
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

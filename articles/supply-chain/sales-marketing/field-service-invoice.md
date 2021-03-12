@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f1790366cebf317472bc1ef9a5ecd2a19fe755d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528252"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980838"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Supply Chain Management
 
@@ -55,23 +54,23 @@ Następująca synchronizacja jest wymagana, zanim będzie można zsynchronizowa�
 
 | Field Service  | Zarządzanie łańcuchem dostaw                 |
 |----------------|----------------------------------------|
-| faktury       | Nagłówki faktur niezależnych dla odbiorców (usługa CDS) |
-| invoicedetails | Wiersze faktur niezależnych dla odbiorców (usługa CDS)   |
+| faktury       | Nagłówki faktur niezależnych dla odbiorców w usłudze Dataverse |
+| invoicedetails | Wiersze faktur niezależnych dla odbiorców w usłudze Dataverse   |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Faktury tworzone na podstawie umowy w programie Field Service mogą być synchronizowane z programem Supply Chain Management za pomocą projektu integracji danych realizowanego w usłudze Common Data Service (CDS). Aktualizacje tych faktur będą synchronizowane z fakturami niezależnymi w programie Supply Chain Management, jeśli faktury niezależne mają stan księgowania **W trakcie przetwarzania**. Po zaksięgowaniu faktur niezależnych w programie Supply Chain Management i zaktualizowaniu stanu księgowania na **Zakończone** nie będzie można synchronizować aktualizacji z programu Field Service.
+Faktury tworzone na podstawie umowy w programie Field Service mogą być synchronizowane z programem Supply Chain Management za pomocą projektu integracji danych realizowanego w usłudze Microsoft Dataverse (CDS). Aktualizacje tych faktur będą synchronizowane z fakturami niezależnymi w programie Supply Chain Management, jeśli faktury niezależne mają stan księgowania **W trakcie przetwarzania**. Po zaksięgowaniu faktur niezależnych w programie Supply Chain Management i zaktualizowaniu stanu księgowania na **Zakończone** nie będzie można synchronizować aktualizacji z programu Field Service.
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service
 
-Do jednostki **Faktury** dodano pole **Zawiera wiersze ze źródłem umowy**. To pole pomaga zagwarantować, że są synchronizowane tylko faktury utworzone na podstawie umowy. Wartością jest **prawda**, jeśli faktura zawiera co najmniej jeden wiersz faktury pochodzący z umowy.
+Do tabeli **Faktury** dodano kolumnę **Zawiera wiersze ze źródłem umowy**. Ta kolumna pomaga zagwarantować, że są synchronizowane tylko faktury utworzone na podstawie umowy. Wartością jest **prawda**, jeśli faktura zawiera co najmniej jeden wiersz faktury pochodzący z umowy.
 
-Do jednostki **Wiersz faktury** dodano pole **Zawiera źródło umowy**. To pole pomaga zagwarantować, że są synchronizowane tylko wiersze faktur utworzone na podstawie umowy. Wartością jest **prawda**, jeżeli wiersz faktury pochodzi z umowy.
+Do tabeli **Wiersz faktury** dodano kolumnę **Zawiera źródło umowy**. Ta kolumna pomaga zagwarantować, że są synchronizowane tylko wiersze faktury utworzone na podstawie umowy. Wartością jest **prawda**, jeżeli wiersz faktury pochodzi z umowy.
 
-Pole **Data faktury** jest wymagane w aplikacji Supply Chain Management. W związku z tym musi mieć wartość w programie Field Service, zanim będzie mogła nastąpić synchronizacja. Aby spełnić ten wymóg, dodano następującą logikę:
+Pole **Data faktury** jest wymagane w aplikacji Supply Chain Management. W związku z tym kolumna musi mieć wartość w programie Field Service, zanim będzie mogła nastąpić synchronizacja. Aby spełnić ten wymóg, dodano następującą logikę:
 
-- Jeśli pole **Data faktury** jest puste w jednostce **Faktura** (tzn. jeśli nie ma wartości), jest w nim ustawiana bieżąca data podczas dodawania wiersza faktury pochodzącego z umowy.
-- Użytkownik może zmienić wartość w polu **Data faktury**. Jednak gdy użytkownik próbuje zapisać fakturę pochodzącą z umowy, widzi błąd procesu biznesowego, jeśli pole **Data faktury** jest puste na fakturze.
+- Jeśli kolumna **Data faktury** jest puste w tabeli **Faktura** (tzn. jeśli nie ma wartości), jest w nim ustawiana bieżąca data podczas dodawania wiersza faktury pochodzącego z umowy.
+- Użytkownik może zmienić wartość w kolumnie **Data faktury**. Jednak gdy użytkownik próbuje zapisać fakturę pochodzącą z umowy, widzi błąd procesu biznesowego, jeśli kolumna **Data faktury** jest pusta na fakturze.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
@@ -108,6 +107,3 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Faktury za umowy (rozwiązanie Field Service do Supply Chain Management): Wiersze faktur
 
 [![Mapowanie szablonu w integracji danych](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

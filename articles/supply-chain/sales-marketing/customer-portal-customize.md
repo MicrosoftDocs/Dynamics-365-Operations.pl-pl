@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 7849f354817f189bf7c844bbe2944f94c8fffe83
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527370"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980863"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Dostosowywanie i korzystanie z Portalu klienta
 
@@ -40,9 +39,9 @@ Poniższe tematy umożliwiają zapoznanie się z podstawowymi portalami Power Ap
 - [Zarządzanie zawartością portalu](https://docs.microsoft.com/dynamics365/portals/manage-portal-content) — w tym temacie wyjaśniono, jak można zarządzać i dostosowywać zawartość obszaru w portalu.
 - [Edycja CSS](https://docs.microsoft.com/powerapps/maker/portals/edit-css) — ten temat pomaga wprowadzać bardziej złożone dostosowania do interfejsu użytkownika (UI) portalu.
 - [Utwórz motyw dla swojego portalu](https://docs.microsoft.com/dynamics365/portals/create-theme) – w tym temacie opisano sposób tworzenia motywu interfejsu użytkownika portalu.
-- [Tworzenie i uwidacznianie zawartości portalu w prosty sposób](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) – ten temat pomaga w zarządzaniu danymi i jednostkami używanymi w portalu.
+- [Tworzenie i uwidacznianie zawartości portalu w prosty sposób](https://docs.microsoft.com/dynamics365/portals/create-expose-portal-content) — ten temat pomaga w zarządzaniu danymi i tabelami używanymi w portalu.
 - [Konfigurowanie kontaktu do użycia w portalu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) — w tym temacie opisano sposób tworzenia i dostosowywania ról użytkowników oraz sposobu działania zabezpieczeń i uwierzytelniania w portalach Power Apps.
-- [Konfigurowanie notatek dla formularzy encji i formularzy sieci Web w portalach](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) — w tym temacie opisano sposób dodawania dokumentów i dodatkowego magazynu do portalu.
+- [Konfigurowanie notatek dla formularzy tabel i formularzy internetowych w portalach](https://docs.microsoft.com/powerapps/maker/portals/configure-notes) — w tym temacie opisano sposób dodawania dokumentów i dodatkowego magazynu do portalu.
 - [Obsługa błędów w witrynie sieci Web portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/view-portal-error-log) — w tym temacie opisano sposób wyświetlania dzienników błędów portalu i przechowywania ich na koncie magazynu obiektów BLOB Microsoft Azure.
 
 ## <a name="customize-the-order-creation-process"></a>Dostosowywanie procesu tworzenia zamówień
@@ -91,7 +90,7 @@ Poniżej przedstawiono standardowe etapy składania zamówienia z poziomu portal
 
 Aby zapewnić płynne działanie użytkownika, Portal klienta automatycznie wprowadza wartości dla kilku wymaganych pól. Te wartości są oparte na informacjach z rekordu kontaktu odbiorcy, który przesyła zamówienie.
 
-Dla każdego [rekordu kontaktu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) należącego do odbiorcy, który będzie używał portalu klienta do przesyłania zamówień, należy określić wartości dla następujących wymaganych pól. W przeciwnym razie pojawią się błędy.
+Dla każdego [wiersza kontaktu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) należącego do odbiorcy, który będzie używał portalu klienta do przesyłania zamówień, należy określić wartości dla następujących wymaganych pól. W przeciwnym razie pojawią się błędy.
 
 - **Firma** – Wybierz firmę, do której należy zamówienie.
 - **Potencjalny klient** – Konto odbiorcy skojarzone z zamówieniem magazynowym
@@ -99,7 +98,7 @@ Dla każdego [rekordu kontaktu](https://docs.microsoft.com/powerapps/maker/porta
 - **Waluta** — Waluta ceny
 - **Kraj/region wysyłki** — Umożliwia wprowadzenie kraju lub regionu, do którego zostaną dostarczone towary
 
-Dla jednostki zamówienia sprzedaży automatycznie ustawiane są następujące pola:
+Dla tabeli zamówienia sprzedaży automatycznie ustawiane są następujące pola:
 
 - **Język** — Język zamówienia (domyślnie jest pobierana wartość z rekordu kontaktu)
 - **Kraj/region dostawy** — kraj lub region, do którego są dostarczane towary (wartość domyślna jest pobierana z rekordu kontaktu)
@@ -116,7 +115,7 @@ Dla jednostki zamówienia sprzedaży automatycznie ustawiane są następujące p
 
 Można dowolnie modyfikować wygląd i interfejs użytkownika portalu odbiorcy, jeśli nie zmieni się podstawowego procesu tworzenia zamówienia. Aby zmienić proces tworzenia zamówienia, należy pamiętać o kilku punktach.
 
-Nie należy usuwać następujących pól z jednostki Zamówienie sprzedaży w Common Data Service, ponieważ są one wymagane do utworzenia zamówienia sprzedaży w trybie podwójnych odpisów:
+Nie należy usuwać następujących kolumn z tabeli zamówienia sprzedaży w Microsoft Dataverse, ponieważ są one wymagane do utworzenia zamówienia sprzedaży w trybie podwójnych odpisów:
 
 - **Firma** – Wybierz firmę, do której należy zamówienie.
 - **Nazwa** — Nazwa zamówienia sprzedaży
@@ -127,7 +126,7 @@ Nie należy usuwać następujących pól z jednostki Zamówienie sprzedaży w Co
 - **Język** — Język zamówienia (zazwyczaj jest to język potencjalnego odbiorcy)
 - **Opis adresu dostawy** — adres dostawy zamówienia sprzedaży
 
-W przypadku towarów wymagane są następujące pola:
+W przypadku towarów wymagane są następujące kolumny:
 
 - **Produkt** — produkt do zamówienia
 - **Ilość** — Ilość wybranego produktu
@@ -135,11 +134,11 @@ W przypadku towarów wymagane są następujące pola:
 - **Kraj/region wysyłki** — kraj lub region dostawy
 - **Opis adresu dostawy** — adres dostawy zamówienia
 
-Należy upewnić się, że portal odbiorcy w jakiś sposób przesyła wartości dla wszystkich tych pól.
+Należy upewnić się, że portal odbiorcy w jakiś sposób przesyła wartości dla wszystkich tych kolumn.
 
-Jeśli chcesz dodać pola do strony lub usunąć pola, zapoznaj się z tematem [Twórz lub edytuj szybkie formularze, aby usprawnić wprowadzanie danych](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
+Jeśli chcesz dodać kolumny do strony lub usunąć kolumny, zapoznaj się z tematem [Twórz lub edytuj szybkie formularze, aby usprawnić wprowadzanie danych](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/customize/create-edit-quick-create-forms).
 
-Aby zmienić ustawienia i sposób ustawiania wartości pól podczas zapisywania strony, należy zapoznać się z poniższymi informacjami w dokumentacji portali Power Apps:
+Aby zmienić ustawienia i sposób ustawiania wartości kolumn podczas zapisywania strony, należy zapoznać się z poniższymi informacjami w dokumentacji portali Power Apps:
 
 - [Wstępnie wypełnione pole](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#prepopulate-field)
 - [Ustawienie wartości przy zapisywaniu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-web-form-metadata#set-value-on-save)
@@ -176,6 +175,3 @@ Więcej informacji na temat konfigurowania i dostosowywania portalu klienta moż
 - [Uaktualnianie portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Migruj konfigurację portalu](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Zarządzanie cyklem życia rozwiązania: Dynamics 365 dla aplikacji Customer Engagement](https://www.microsoft.com/download/details.aspx?id=57777)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

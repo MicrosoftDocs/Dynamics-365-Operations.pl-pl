@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b0985169f7ffadbf97ed4f237c8ec11120cfc3e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435453"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981001"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania
 
@@ -66,6 +65,3 @@ W tej procedurze pokazano sposób obliczania propozycji minimalnego zapotrzebowa
 5. W **okienku akcji** kliknij pozycję Plan.
 6. Kliknij opcję **Zapotrzebowanie na towary**. Zwróć uwagę, że pole **Ilość minimalna** zostało zaktualizowane o nową ilość minimalną z arkusza zapasu bezpieczeństwa.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
