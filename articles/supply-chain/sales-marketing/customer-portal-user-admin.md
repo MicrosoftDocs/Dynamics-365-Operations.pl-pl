@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528300"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996783"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 
@@ -39,11 +38,11 @@ Film [Zaproś klientów do rejestracji i korzystania z Twojego portalu klienta](
 
 ## <a name="prerequisite-setup"></a>Wymagania wstępne dotyczące konfiguracji
 
-Kontakty w portalach Power Apps są przechowywane jako rekordy w jednostkach **Kontakty** w Common Data Service. Podwójne zapisanie następnie synchronizuje te rekordy do Microsoft Dynamics 365 Supply Chain Management, jeśli jest to wymagane.
+Kontakty w portalach Power Apps są przechowywane jako rekordy w tabeli **Kontakty** w Microsoft Dataverse. Podwójne zapisanie następnie synchronizuje te rekordy do Microsoft Dynamics 365 Supply Chain Management, jeśli jest to wymagane.
 
 ![Diagram systemu dla kontaktów Portalu klienta](media/customer-portal-contacts.png "Diagram systemu dla kontaktów Portalu klienta")
 
-Przed rozpoczęciem zapraszania nowych odbiorców należy się upewnić, że mapowanie jednostek **Kontaktów** zostało włączone w trybie podwójnego zapisywania.
+Przed rozpoczęciem zapraszania nowych odbiorców należy się upewnić, że mapowanie tabeli **Kontaktów** zostało włączone w trybie podwójnego zapisywania.
 
 ## <a name="the-invitation-process"></a>Proces zaproszenia
 
@@ -58,15 +57,15 @@ Po utworzeniu kontaktu należy go wyświetlić w Supply Chain Management.
 
 Aby uzyskać więcej informacji, przejrzyj informacje [Konfigurowanie kontaktu do użycia w portalu](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) w dokumentacji portali Power Apps.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Uprawnienia ról i jednostek sieci Web gotowe do użycia
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Uprawnienia ról i tabel internetowych gotowe do użycia
 
-Role użytkowników w portalach Power Apps są definiowane przez [role sieci Web](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) i [uprawnienia jednostki](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Kilka ról jest zdefiniowanych dla portalu klienta od razu. Można tworzyć nowe role, a także modyfikować i usuwać istniejące role.
+Role użytkowników w portalach Power Apps są definiowane przez [role internetowe](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) i [uprawnienia tabeli](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Kilka ról jest zdefiniowanych dla portalu klienta od razu. Można tworzyć nowe role, a także modyfikować i usuwać istniejące role.
 
 ### <a name="out-of-box-web-roles"></a>Gotowe do użycia role sieci Web
 
 W tej sekcji opisano role sieci Web dostarczane z portalem klienta.
 
-Aby uzyskać więcej informacji na temat modyfikowania nieużywanych ról użytkowników, odwiedź witrynę [Tworzenie ról w sieci Web dla portali](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) i [Dodaj zabezpieczenia oparte na rekordach, korzystając z uprawnień jednostki dla portali](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) w dokumentacji portali Power Apps.
+Aby uzyskać więcej informacji na temat modyfikowania nieużywanych ról użytkowników, odwiedź witrynę [Tworzenie ról w sieci Web dla portali](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) i [Dodaj zabezpieczenia oparte na rekordach, korzystając z uprawnień tabeli dla portali](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) w dokumentacji portali Power Apps.
 
 #### <a name="administrator"></a>Administrator
 
@@ -96,6 +95,3 @@ W poniższej tabeli przedstawiono zamówienia sprzedaży, które użytkownicy na
 
 > [!NOTE]
 > Mimo że zarówno Sam, jak i Jane są kontaktami pracującymi dla klienta X, widzą tylko złożone przez siebie zamówienia i nic więcej. Chociaż May ma zamówienie w systemie, nie widzi tego zamówienia w portalu klienta, ponieważ jest nieautoryzowanym użytkownikiem. (Dodatkowo musiała złożyć zamówienie za pośrednictwem innego kanału niż portal klienta).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

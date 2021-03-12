@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 530abffb4c80a2d2f0e58e0c5a34294f7cba0b1a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435634"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998460"
 ---
 # <a name="work-policies"></a>Zasady pracy
 
@@ -301,6 +300,3 @@ Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoz
 Więcej informacji na temat otrzymywania tablic rejestracyjnych i zasad pracy, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

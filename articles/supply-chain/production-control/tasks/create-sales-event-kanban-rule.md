@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1759adea6db8120078e2f32bff79178545c2328a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd8d55619f52fcd1beff7a27ff814b3dc00dd25a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434936"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998635"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Tworzenie reguły Kanban dla zdarzenia sprzedaży
 
@@ -74,6 +73,3 @@ Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły
 2. Kliknij opcję Wyświetl drzewo oznaczania transakcji.
     * Zwróć uwagę, że jest tworzona karta Kanban z taką samą ilością, jak ilość w wierszu sprzedaży. Można również wyświetlić wydania materiałów potrzebnych do wytworzenia produktu L0050. Jest to ostatni krok w tej procedurze.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528930"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998510"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management
 
@@ -62,13 +61,13 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 | **Field Service** | **Zarządzanie łańcuchem dostaw** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | Nagłówki zamówień sprzedaży CDS |
-| msdyn_workorderservices | Wiersze zamówienia sprzedaży CDS   |
-| msdyn_workorderproducts | Wiersze zamówienia sprzedaży CDS   |
+| msdyn_workorders        | Nagłówki zamówienia sprzedaży w usłudze Dataverse |
+| msdyn_workorderservices | Wiersze zamówienia sprzedaży w usłudze Dataverse   |
+| msdyn_workorderproducts | Wiersze zamówienia sprzedaży w usłudze Dataverse   |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 
-Zlecenia pracy są tworzone w aplikacji Field Service. Jeśli zlecenia pracy zawierają tylko zewnętrznie obsługiwane produkty, a wartość w polu **Stan zlecenia pracy** różni się od wartości w polach **Otwarte — niezaplanowane** i **Zamknięte — anulowane**, zlecenia pracy mogą być synchronizowane z aplikacją Supply Chain Management za pośrednictwem projektu integracji danych z usługą Common Data Service. Aktualizacje w zleceniach pracy będą synchronizowane jako zamówienia sprzedaży w programie Supply Chain Management. Do tych aktualizacji należą informacje o typie źródła i stanie.
+Zlecenia pracy są tworzone w aplikacji Field Service. Jeśli zlecenia pracy zawierają tylko zewnętrznie obsługiwane produkty, a wartość w polu **Stan zlecenia pracy** różni się od wartości w polach **Otwarte — niezaplanowane** i **Zamknięte — anulowane**, zlecenia pracy mogą być synchronizowane z aplikacją Supply Chain Management za pośrednictwem projektu integracji danych z usługą Microsoft Dataverse. Aktualizacje w zleceniach pracy będą synchronizowane jako zamówienia sprzedaży w programie Supply Chain Management. Do tych aktualizacji należą informacje o typie źródła i stanie.
 
 ## <a name="estimated-versus-used"></a>Szacowane a używane
 
@@ -273,6 +272,3 @@ Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus n
 Filtr: (msdynce_headersystemstatus ne 690970005) i (msdynce_headersystemstatus ne 690970000) i (msdynce_orderhasexternalmaintainedproductsonly eq true) i ((msdyn_linestatus eq 690970001) lub (msdynce_headersystemstatus eq 690970004) lub (msdyn_allocated ne true))
 
 [![Mapowanie szablonu w integracji danych](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c4ac28d35bcd6ed0c1fc8d0700c52008d2f4f6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4728c90b37af6d536cd5a8b919be92f4a88c6489
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435138"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996583"
 ---
 # <a name="customer-returns-overview"></a>Omówienie zwrotów od odbiorcy
 
@@ -54,6 +53,3 @@ Przypisz kod dyspozycji po odebraniu towaru lub podczas kontroli fizycznej zwró
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434990"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996333"
 ---
 # <a name="confirm-and-transfer"></a>Potwierdź i przenieś
 
@@ -230,6 +229,3 @@ Istnieje również możliwość potwierdzenia, że relacje transakcji zostały z
 - Opcja **Podziału ilości na nowe obciążenie** działa również w przypadku, gdy niektóre nagłówki pozostałej pracy pozostałej mają stan *W toku*. Z tego względu można nadal korzystać z tych funkcji nawet wtedy, gdy pracownicy obsługują już zamówienia pobrania.
 - Jeśli zostanie wybrana opcja **Anuluj niezrealizowaną ilość**, a istnieje praca pozostała mająca stan *Otwarte* lub *W toku*, zostanie wyświetlony następujący komunikat o błędzie: „Nie można anulować pozostałej ilości do załadunku. Dla ładunku istnieje praca”.
 - W przypadku wybrania opcji **Anuluj niezrealizowaną ilość** w przypadku braku pracy pozostałej, ale w ładunku są niezwolnione wiersze ładunku, pojawia się następujący komunikat o błędzie: „Nie można potwierdzić wysyłki ładunku, ponieważ ilość towaru przekracza wartość procentową zdefiniowaną w ramach dostawy”. Aby uniknąć tego błędu, można ustawić wartość procentową **Niedoboru w dostawie** w niezwolnionym wierszu na 100 procent. Niezwolnione wiersze nie zostaną przeniesione do nowego ładunku, ale bieżący ładunek zostanie potwierdzony z użyciem opcji niedoboru w dostawie. W takim przypadku nie będzie można ponownie zwolnić oryginalnego zamówienia. Dlatego konieczne będzie obsłużenie go w inny sposób.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
