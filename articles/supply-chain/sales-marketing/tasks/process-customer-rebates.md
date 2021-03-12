@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54242bfac2fa8dbdd982d36083c1dd0f4b8e077e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006798"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generowanie i przetwarzanie rabatów dla odbiorców
 
@@ -82,6 +81,3 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
     - Konto naliczania rabatów zostało uznane kwotą reprezentującą przyszłe zobowiązanie odbiorcy.
     - Konto wydatków rabatowych zostało obciążone kwotą reprezentującą koszt poniesiony w związku ze sprzedażą.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

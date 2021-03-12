@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e07542a369506b810704012bd1b07557b79f50d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 184ce418ff2ec4b891a24b2b75d37b6b4f5d23f3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435399"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006648"
 ---
 # <a name="post-arrival-journal-for-returned-products"></a>Księgowanie arkusza przyjęcia dla zwrotu produktów 
 
@@ -58,6 +57,3 @@ Po zaksięgowaniu arkusza zwrócone towary są rejestrowane w zapasach, a formul
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

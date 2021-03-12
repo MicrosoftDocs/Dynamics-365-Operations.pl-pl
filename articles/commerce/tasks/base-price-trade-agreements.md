@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PriceDiscGroup, RetailStoreTable, RetailChannelPriceGroup, EcoResProductDetailsExtended, PriceDiscAdmTable, PriceDiscAdm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db3a91807c0cfb51426c03eeaf7785168e6ad0de
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415001"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006065"
 ---
 # <a name="base-price-and-trade-agreements"></a>Podstawa ceny i umowy handlowe
 
@@ -70,6 +69,3 @@ Ta procedura poprowadzi przez proces tworzenia umów handlowych na cenę sprzeda
 38. W **okienku akcji** kliknij pozycję Sprzedaż.
 39. Kliknij opcję **Cena sprzedaży**.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
