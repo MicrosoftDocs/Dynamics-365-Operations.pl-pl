@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b0976494a8bb128ae6bb40cbcdf7c691185f23
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435467"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970513"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
@@ -84,8 +83,8 @@ Na karcie **Klucze alokacji** można określić **Parametry algorytmu prognozy**
 - **Wartość procentowa poziomu ufności**: Przedział wiarygodności zawiera zakres wartości będących dobrymi danymi szacunkowymi dla prognozy popytu. Wiarygodność na poziomie 95% oznacza, że występuje 5-procentowe ryzyko, że w przyszłości popyt wykroczy poza zakres wiarygodności.
 - **Wymuszaj sezonowość**: Określa, czy w modelu ma być używany określony typ sezonowości. Dotyczy to tylko ARIMA i ETS only. Opcje: AUTOMATYCZNE (domyślne), BRAK, DADATKOWE, ZWIELOKROTNIONE.
 - **Model prognozowania**: Opcje: ARIMA, ETS, STL, ETS + ARIMA, ETS + STL, ALL. Aby wybrać model najlepszego dopasowania, należy skorzystaćz opcji **WSZYSTKIE**.
-- **Maksymalna wartość prognozy**: Określa maksymalną wartość, która ma być użyta dla prognoz. Format: +1E[n] lub stała numeryczna.
-- **Minimalna wartość prognozy**: Określa minimalną wartość, która ma być użyta dla prognoz. Format: -1E[n] lub stała numeryczna.
+- **Maksymalna wartość prognozy**: Określa maksymalną wartość, która ma być użyta dla prognoz. Format: + 1E[n] lub stała numeryczna.
+- **Minimalna wartość prognozy**: Określa minimalną wartość, która ma być użyta dla prognoz. Format: - 1E[n] lub stała numeryczna.
 - **Brak podstawiania wartości**: Określa sposób wypełniania przerw w danych historycznych. Opcje: wartość liczbowa, ŚREDNIA, POPRZEDNIA, INTERPOLACJA LINIOWA, INTERPOLACJA WIELOMIANOWA.
 - **Brak zakresu podstawiania wartości**: Określa, czy podstawianie wartości ma zastosowanie tylko do zakresu danych każdego z poszczególnych atrybutów stopnia szczegółowości, czy do całego zestawu danych. Opcje: GRANULARITY_ATTRIBUTE (domyślny), GLOBALNY.
 - **Wskazówka sezonowości**: W przypadku danych sezonowych należy wprowadzić wskazówkę do modelu prognozowania w celu zwiększenia dokładności prognozy. Format: liczba całkowita, reprezentująca liczbę przedziałów powtórzeń wzoru popytu. Na przykład wprowadź wartość „6” dla danych, które powtarzają się co 6 miesięcy.
@@ -102,6 +101,3 @@ Na karcie **Klucze alokacji** można określić **Parametry algorytmu prognozy**
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

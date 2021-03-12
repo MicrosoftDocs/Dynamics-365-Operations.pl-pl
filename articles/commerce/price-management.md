@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972462"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -240,6 +239,3 @@ Ponadto **tylko** aparat kalkulacji cen obsługuje następujące funkcje cen:
 Cena jest jednym z najważniejszych czynników kontrolujących decyzje dotyczące kupowania wielu odbiorców, a wielu z nich przed dokonaniem zakupu porównuje ceny w różnych oddziałach. Aby zapewnić konkurencyjne ceny, detaliści uważnie obserwują swoich konkurentów i często organizują promocje. Dlatego też, aby ułatwić tym detalistom przyciąganie odbiorców, bardzo ważne jest, by w wyszukiwaniu produktów, funkcja przeglądania, listy i strona szczegółów produktów pokazywały najbardziej dokładne ceny.
 
 W nadchodzącej wersji modułu Commerce interfejs programowania aplikacji (API) **GetActivePrices** będzie zwracał ceny obejmujące rabaty proste (np. rabaty jednowierszowe niezależne od innych towarów w koszyku). W ten sposób wyświetlane ceny są zbliżone do rzeczywistej kwoty, jaką odbiorcy zapłacą za towary. Ten interfejs API będzie uwzględniał wszystkie typy rabatów prostych: oparte na przynależności, lojalnościowe, oparte na katalogach i oparte na kanałach. Ponadto interfejs API zwróci nazwy i informacje o ważności dla zastosowanych rabatów, dzięki czemu sprzedawcy detaliczni będą mogli dostarczać bardziej szczegółowy opis ceny i zachęcać do pośpiechu, jeśli ważność rabatu ma wkrótce wygasnąć.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

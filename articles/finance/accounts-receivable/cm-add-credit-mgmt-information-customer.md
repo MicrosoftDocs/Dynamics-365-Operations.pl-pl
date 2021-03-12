@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 919aa50136f02a44eb69146589496ad1284721f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a04180a5dbec1e08d0149beeed0495a0d13af76c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446768"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971735"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Dodaj informacje dotyczące zarządzania kredytem odbiorców
 
@@ -102,6 +101,3 @@ Można utworzyć polisę ubezpieczeniową i gwarancje na stronie **Wszyscy odbio
     W tym przypadku efektywny limit kredytu to 125 000 (= A + \[B × C\]).
     
     Jeśli jednak zostanie zaznaczone pole wyboru **Uwzględnij w ekspozycji**, **Aktualizuj limit kredytu** będzie wynosić 50 000 (= 50,00 procent z 100 000), a wartość ekspozycji wynosi 75 000 (= A + \[B × C\] – B).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

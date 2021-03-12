@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: fa4074c23baa74983f4922d2d09d7da81c943bfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4435665"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973842"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurowanie sekwencji identyfikatorów dla przepływów magazynowych
 
@@ -92,6 +91,3 @@ Aby utworzyć i edytować sekwencje identyfikatorów, należy wykonać następuj
     | Cyfra kontrolna | W tym typie segmentu jest dodawana cyfra kontrolna, czyli obliczenie modulo 10. (To zachowanie jest zgodne z istniejącą logiką dla identyfikatorów numerów identyfikacyjnych.) W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na znak daszka (*^*), a pole **Długość** zawsze ma wartość *1*. |
 
 1. Aby wyświetlić przykład końcowego formatu numerów, należy sprawdzić pole **Format** w dolnej części skróconej karty **Segmenty**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

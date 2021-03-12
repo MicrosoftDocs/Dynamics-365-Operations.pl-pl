@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 747c67812b0a357c35778c82531e9db7e99e510b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414953"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972714"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Określenia optymalnej kombinacji rabatów nakładających się
 
@@ -84,6 +83,3 @@ Aby rozwiązać problem lawinowo wzrastającej liczby kombinacji wymagających o
 ![Formuła obliczania wartości krańcowej](./media/overlapping-discount-combo-06.jpg)
 
 Po obliczeniu wartości krańcowej każdego rabatu dla zbioru wspólnych produktów rabaty są stosowane do wspólnych produktów kolejno od najwyższej wartości krańcowej do najniższej wartości krańcowej. W przypadku tej metody wszystkie pozostałe możliwości rabatów nie są porównywane przy każdym stosowaniu jednego wystąpienia rabatu. Zamiast tego nakładające się rabaty są porównywane jeden raz, a następnie stosowane kolejno. Nie są wykonywane żadne inne porównania. Na stronie **Parametry sprzedaży** na karcie **Rabat** można skonfigurować próg przełączania na metodę wartości krańcowej. Dopuszczalny czas na obliczenie rabatu końcowego różni się w poszczególnych branżach wykorzystujących sprzedaż detaliczną. Jednakże zasadniczo wynosi on od kilkudziesięciu milisekund do jednej sekundy.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

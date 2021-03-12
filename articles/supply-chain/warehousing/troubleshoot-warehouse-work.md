@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a00ae517ff583e4231099d8e9f5d5b5a696cf7f7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 3015ec777953cedb5a5d8eea873ed1043cac04cb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645800"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970249"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Rozwiązywanie problemów pracy magazynowej
 
@@ -50,6 +49,3 @@ Brak wymiaru śledzenia **właściciela**, jeśli do tworzenia przesunięć jest
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Firma Microsoft oceniła ten błąd i ustaliła, że jest to ograniczenie funkcji. Obecnie procesy zarządzania magazynem obsługują tylko zapasy będące własnością osoby prawnej.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

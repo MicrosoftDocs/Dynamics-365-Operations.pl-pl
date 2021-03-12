@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14564
 ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 3823dd02f9bc2da935ac7e9845c6314d7cbfcfaa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4446969"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971659"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Rozliczenie płatności częściowej odbiorcy, do której zastosowano rabaty na fakturach korygujących dostawcy
 
@@ -61,6 +60,3 @@ Rozliczenie będzie miało wartość 100,00 i będzie obejmowało płatność 99
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

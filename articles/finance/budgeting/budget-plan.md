@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446928"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971285"
 ---
 # <a name="budget-planning"></a>Planowanie budżetu
 
@@ -106,7 +105,7 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 2.5. Wybierz opcję „Udziel dostępu do określonych organizacji”. Wskaż hierarchię organizacyjną utworzoną w pierwszym kroku. Wybierz węzeł Finanse i kliknij przycisk Udziel dostępu wraz z podrzędnymi. 
 
-***Ważne!*** *Upewnij się, że znajdujesz się w kontekście firmy DEMF podczas wykonywania tego zadania, ponieważ zabezpieczenia na poziomie organizacji są stosowane do firmy.* 
+**_Ważne!_* _ _Upewnij się, że znajdujesz się w kontekście firmy DEMF podczas wykonywania tego zadania, ponieważ zabezpieczenia na poziomie organizacji są stosowane do firmy* 
 
 ### <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
 3.1. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na stronie scenariuszy zwróć uwagę na scenariusze, które wykorzystasz w dalszej części ćwiczenia: Wartości rzeczywiste w poprzednim roku i Zabudżetowane. 
@@ -247,6 +246,3 @@ C. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

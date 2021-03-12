@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1714054
 ms.assetid: 79a1a3b9-3a36-4162-8839-ec39b5e26602
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 123be2430f910dfbea438cb6a51be7203eb39fc8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434885"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970288"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uaktualnienie zarządzania magazynem z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -83,6 +82,3 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](../../dev-itpro/data-entities/data-entities.md).
 7.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 8.  Wprowadź zmiany. Aktualizacja wszystkich wymiarów zapasów może nieco potrwać. Można monitorować postęp za pomocą zadań wsadowych.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
