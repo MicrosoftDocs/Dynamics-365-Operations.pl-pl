@@ -1,6 +1,6 @@
 ---
 title: Rozwiązywanie problemów podczas konfiguracji początkowej
-description: Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas wstępnej instalacji podwójnego zapisywania między aplikacjami Finance and Operations i Dataverse.
+description: Ten temat zawiera informacje ułatwiające rozwiązywanie problemów, które mogą wystąpić podczas integracji podwójnego zapisu.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129988"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -71,13 +71,13 @@ Aby zapewnić zgodę aplikacji, wykonaj następujące kroki.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Sprawdź, czy dane firmy i zespoły podwójnego zapisywania są poprawnie skonfigurowane podczas łączenia
 
-Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Dataverse zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć jednostkę **firmy (CDM\_Company)**, należy wykonać następujące kroki:
+Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Dataverse zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć tabelę **firmy (CDM\_Company)**, należy wykonać następujące kroki:
 
 1. W aplikacji opartej na modelu w Dynamics 365 wybierz filtr w prawym górnym rogu.
 2. Z listy rozwijanej wybierz **Firma**.
 3. Wybierz opcję **Uruchom**, aby zobaczyć wyniki.
 4. Umożliwia wybór firmy połączonej w przypadku skonfigurowania podwójnego zapisywania.
-5. Sprawdź, czy w polu **Domyślnego zespołu będącego właścicielem** znajduje się wartość. Na poniższej ilustracji pole **Domyślny zespół będący właścicielem** jest ustawione na **USMF podwójnego zapisywania**.
+5. Sprawdź, czy w kolumnie **Domyślnego zespołu będącego właścicielem** znajduje się wartość. Na poniższej ilustracji kolumna **Domyślny zespół będący właścicielem** jest ustawiona na **USMF podwójnego zapisywania**.
 
     ![Weryfikowanie domyślnego zespołu będącego właścicielem](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Podczas próby włączenia map może pojawić się następujący komunikat o bł
 *Błąd podwójnego zapisywania — Rejestracja wtyczki nie powiodła się: \[(nie można uzyskać mapy partycji Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Błąd przekracza maksymalną liczbę partycji dozwoloną w mapowaniu Menedżera okien pulpitu-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\]. Wystąpił co najmniej jeden błąd.*
 
 Bieżący limit czasu połączenia ze środowiskiem wynosi około 40 tabel prawnych. Ten błąd występuje podczas próby włączenia map, a więcej niż 40 tabel prawnych jest połączonych między środowiskami.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

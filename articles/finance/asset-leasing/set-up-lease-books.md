@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131012"
 ---
 # <a name="set-up-lease-books"></a>Konfigurowanie ksiąg wynajmu
 
@@ -53,6 +52,4 @@ Aby utworzyć księgę wynajmu, wykonaj następujące czynności.
     | Próg krótkiego terminu                     | Wprowadź liczbę miesięcy, która ma być używana jako próg wynajmu krótkoterminowego. Jeśli wartość okresu wynajmu jest mniejsza lub równa liczbie miesięcy wprowadzonej w tym polu, system zaklasyfikuje wynajem jako krótkoterminowy i zastosuje metodę odroczonego czynszu. |
     | Próg niskiej wartości                      | Wprowadź kwotę, która ma być używana jako próg wynajmu o niskiej wartości. Jeśli wartość godziwa składnika majątku jest mniejsza lub równa wartości wprowadzonej w tym polu, system zaklasyfikuje wynajem jako mający niską wartość i zastosuje metodę odroczonego czynszu. |
     | Płatność dla dostawcy                            | Ustaw w tej opcji wartość **Tak**, aby zezwolić na księgowanie opłat z tytułu wynajmu jako faktury na koncie dostawcy określonym dla każdej umowy wynajmu. Po zaksięgowaniu opłaty z tytułu wynajmu konto dostawcy zostanie uznane. Jeśli ta opcja ma wartość **Nie**, będzie uznawane konto ustawione dla typu księgowania **Opłata z tytułu wynajmu** na stronie **Parametry księgowania wynajmu**. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Konwencja wynajmu                       | Umożliwia wybór konwencji dla daty rozpoczęcia dzierżawy:<ul><li><b>Brak</b> — jako daty rozpoczęcia należy użyć daty rozpoczęcia wynajmu.</li><li><b>Pełny miesiąc</b> — Jako datę rozpoczęcia użyj pierwszego dnia miesiąca, w którym przypada data rozpoczęcia wynajmu.</li></ul><p>Wybranie opcji <b>Brak</b> stanowi ryzyko, że harmonogramy umorzenia zobowiązań i amortyzacji środków trwałych zostaną naliczone i zaksięgowane wydatki w ciągu miesiąca, a nie na koniec miesiąca. Wybranie opcji <b>Pełny miesiąc</b> zapewnia, że system zaczną rozliczać wynajem pierwszego dnia miesiąca, a wydatki za cały miesiąc zostaną naliczone i zaksięgowane w ostatnim dniu miesiąca.</p><p><strong>Uwaga:</strong> Funkcję konwencji wynajmu należy włączyć za pomocą funkcji Zarządzanie funkcjami. W obszarze roboczym <b>Zarządzanie funkcjami</b> znajdź i wybierz funkcję o nazwie <b>Konwencja dzierżawy dla funkcji wynajmu środków trwałych</b>, a następnie wybierz opcję <b>Włącz teraz</b>.</p> |

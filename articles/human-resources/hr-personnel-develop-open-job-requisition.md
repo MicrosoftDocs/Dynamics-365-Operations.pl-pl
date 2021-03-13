@@ -1,71 +1,68 @@
 ---
-title: Opracowywanie i otwieranie zapotrzebowania na stanowisko
+title: Tworzenie i otwieranie zapotrzebowania na stanowisko
 description: Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/29/2018
+manager: tfehr
+ms.date: 02/03/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: human-resources
 ms.technology: ''
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3207d61536422255b574fd126f16075fcddc2c93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: da6f9caaabcba81549eddf5cafcf02dc2b0dc2cd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129574"
 ---
-# <a name="develop-and-open-job-requisition"></a>Opracowywanie i otwieranie zapotrzebowania na stanowisko
+# <a name="create-and-open-job-requisition"></a>Tworzenie i otwieranie zapotrzebowania na stanowisko
 
+Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Po utworzeniu projektu rekrutacji można wykonać następujące zadania:
 
+- Wpisz ogłoszenie o pracę dla projektu.
+- Publikowanie ogłoszenie na stronach witryny Samoobsługa pracownika eedytowego.
+- Skojarz podania o pracę z projektem.
+- Śledzić działania dla tego projektu. 
 
-Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Dla każdego projektu rekrutacji można skonfigurować informacje takie jak zadanie, do którego odbywa się rekrutacja, imię i nazwisko osoby rekrutującej, stan projektu oraz dział, w którym będzie zlokalizowane zadanie. Po utworzeniu projektu rekrutacji można napisać ogłoszenie o pracę dla projektu, opublikować oferty na stronach w portalu samoobsługi pracowniczej, skojarzyć podania o pracę z projektem oraz śledzić działania w tym projekcie. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby rozpocząć procedurę, wybierz kolejno opcje Zasoby ludzkie > Rekrutacja > Projekty rekrutacji > Projekty rekrutacji.
-
-1. Kliknij przycisk Nowy.
-2. W polu Projekt rekrutacji wpisz wartość.
-3. Wypełnij pole Opis.
-4. W polu Osoba rekrutująca kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście znajdź i zaznacz odpowiedni rekord.
-6. Na liście kliknij łącze w wybranym wierszu.
-7. Kliknij opcję Wybierz.
-8. W polu Dział kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-9. Na liście kliknij łącze w wybranym wierszu.
-10. W polu Zadanie kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-11. Na liście znajdź i zaznacz odpowiedni rekord.
-12. Na liście kliknij łącze w wybranym wierszu.
-13. W polu Liczba wolnych posad wprowadź liczbę.
-14. W polu Menedżer ds. zatrudniania kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-15. Na liście znajdź i zaznacz odpowiedni rekord.
-16. Na liście kliknij łącze w wybranym wierszu.
-17. Kliknij opcję Wybierz.
-18. W polu Ostateczny termin zgłoszenia wprowadź datę.
-19. Kliknij opcję Nośnik.
-    * Projekty rekrutacji zawierają opcję określenia środków masowego przekazu, które mają być wykorzystywane do reklamowania wolnych stanowisk.  
-20. Kliknij przycisk Nowy.
-21. W polu Nośnik kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-22. Na liście kliknij łącze w wybranym wierszu.
-23. W polu Data początkowa wprowadź datę.
-24. W polu Data końcowa wprowadź datę.
-25. Kliknij przycisk Zapisz.
-26. Zamknij stronę.
-27. Kliknij opcję Oferty pracy.
-28. Kliknij przycisk Zapisz.
-29. Zamknij stronę.
-30. Zaznacz lub wyczyść pole wyboru Wyświetl na ekranie samoobsługi pracownika.
-    * Zaznacz pole wyboru Wyświetl na ekranie samoobsługi pracownika, aby pracownicy widzieli projekt rekrutacji na swoich stronach w portalu samoobsługi pracowniczej.  
-31. Kliknij opcję Stan projektu rekrutacji.
-32. Kliknij przycisk Rozpocznij.
-    * Stan Rozpoczęty oznacza, że projekt jest gotowy do przyjmowania wniosków.  
-33. Kliknij przycisk OK.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+1. Wybierz kolejno opcje **Zasoby ludzkie > Rekrutacja > Projekty rekrutacji > Projekty rekrutacji**.
+2. Wybierz pozycję **Nowy**.
+3. W polu **Projekt rekrutacji** wprowadź lub wybierz wartość.
+4. W polu **Opis** wprowadź lub wybierz wartość.
+5. W polu **Osoba rekrutująca** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+6. Na liście znajdź i zaznacz rekord.
+7. Na liście wybierz łącze w wybranym wierszu.
+8. Wybierz opcję **Wybierz**.
+9. W polu Dział wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+10. Na liście wybierz łącze w wybranym wierszu.
+11. W polu **Zadanie** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
+12. Na liście znajdź i zaznacz rekord.
+13. Na liście wybierz łącze w wybranym wierszu.
+14. W polu **Liczba wolnych posad** wprowadź liczbę.
+15. W polu **Menedżer ds. zatrudniania** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+16. Na liście znajdź i zaznacz rekord.
+17. Na liście wybierz łącze w wybranym wierszu.
+18. Wybierz opcję **Wybierz**.
+19. W polu **Ostateczny termin zgłoszenia** wprowadź datę.
+20. Wybierz **Nośnik**. Projekty rekrutacji zawierają opcję określenia środków masowego przekazu, które mają być wykorzystywane do reklamowania wolnych stanowisk.  
+21. Wybierz pozycję **Nowy**.
+22. W polu **Nośnik** kliknij rozwijany przycisk, aby otworzyć wyszukiwanie.
+23. Na liście wybierz łącze w wybranym wierszu.
+24. W polu **Data początkowa** wprowadź datę.
+25. W polu **Data końcowa** wprowadź datę.
+26. Wybierz opcję **Zapisz**.
+27. Zamknij stronę.
+28. Wybierz oferty pracy.
+29. Wybierz opcję **Zapisz**.
+30. Zamknij stronę.
+31. Zaznacz lub wyczyść pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Wybierz pole wyboru **Wyświetl na ekranie samoobsługi pracownika**. Zaznaczenie tego wyboru powoduje, że projekt rekrutacji jest widoczny dla pracowników na ich stronach witryny Samoobsługa pracownika etatowego.
+32. Wybierz **Stan projektu rekrutacji**.
+33. Wybierz **Start**. Stan **Rozpoczęty** oznacza, że projekt jest gotowy do przyjmowania wniosków.  
+34. Kliknij przycisk **OK**.

@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
+title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
 description: Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683630"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131252"
 ---
-# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z modułem podwójnego zapisu w aplikacjach Finance and Operations
+# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +44,7 @@ Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcj
 
 **Wymagane poświadczenia w celu rozwiązania problemu:** Ten sam użytkownik, który skonfigurował podwójne zapisywanie.
 
-Podczas próby skonfigurowania nowej jednostki na potrzeby podwójnego zapisywania może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
+Podczas próby skonfigurowania nowej tabeli na potrzeby podwójnego zapisu może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
 
 *Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany)*
 
@@ -77,7 +77,7 @@ Ten błąd występuje, gdy połączone środowisko Dataverse jest niedostępne.
 
 Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Dołącz śledzenie sieci, aby zespół integracji danych mógł oznaczyć mapy jako **Nie uruchomione** na zapleczu.
 
-## <a name="error-while-trying-to-start-an-table-mapping"></a>Błąd podczas próby uruchomienia mapowania tabeli
+## <a name="error-while-trying-to-start-a-table-mapping"></a>Błąd podczas próby uruchomienia mapowania tabeli
 
 Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może się pojawić komunikat o błędzie podobny do następującego:
 
@@ -86,7 +86,4 @@ Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może się poj
 Poprawka dla tego błędu jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
-+ Być może w mapowaniu brakuje pól źródłowych lub docelowych. Jeśli brak pola w aplikacji Finance and Operations, należy wykonać kroki w sekcji [Problem braku pól jednostki dla map](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Jeśli brakuje pola w Dataverse, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby pola były automatycznie wstawiane ponownie do mapowania.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacji Finance and Operations nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.

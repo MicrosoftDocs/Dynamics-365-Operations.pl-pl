@@ -2,7 +2,7 @@
 title: Ustawianie informacji dotyczących urazów i chorób
 description: Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z powodu zagrożeń w miejscu pracy.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 117ae1d690221dbbe0cf4287a3f986cdb3606623
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 39c569bb4f3f532feb9e716309878617c136989b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420082"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128216"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ustawianie informacji dotyczących urazów i chorób
 
@@ -65,6 +65,3 @@ Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z pow
     * Agencje raportujące to podmioty, którym muszą być zgłaszane zdarzenia. Zaznacz pole wyboru Domyślnie obok instytucji będącej domyślną agencją na potrzeby raportowania urazów i chorób.  
 23. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

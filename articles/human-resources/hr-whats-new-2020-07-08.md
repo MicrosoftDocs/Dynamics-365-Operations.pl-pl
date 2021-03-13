@@ -1,8 +1,8 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (08 lipiec 2020)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 8 lipca 2020 roku.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528480"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130404"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (8 lipiec 2020)
 
@@ -71,9 +71,9 @@ Utworzone i zmodyfikowane pola systemowe są teraz włączane w tabeli **WorkCal
 
 Ta wersja koryguje błąd (odwołanie o wartości null) w ulepszonym wpisie pracownika podczas zatrudniania pracownika przy użyciu opcji **Zatrudniania i dodawania szczegółów**.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Zmiany wprowadzone w jednostce pracownika Common Data Service nie są odzwierciedlane w Human Resources (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Zmiany wprowadzone w jednostce pracownika Dataverse nie są odzwierciedlane w Human Resources (455652)
 
-Zmiany wprowadzone w poniższych polach w jednostce **Pracownik** w Common Data Service z ostaną teraz wyświetlone w Human Resources:
+Zmiany wprowadzone w poniższych polach w jednostce **Pracownik** w Dataverse z ostaną teraz wyświetlone w Human Resources:
 
 - **Pracuje z domu**
 - **Data stażu pracy**
@@ -131,9 +131,9 @@ Jednostka DMF jest teraz dostępna dla wstrzymań naliczania.
 
 ## <a name="coming-soon"></a>Wkrótce
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Jednostki listy kontrolnej uwzględnione w Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Jednostki listy kontrolnej uwzględnione w Dataverse
 
-Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Dataverse.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
@@ -141,6 +141,3 @@ Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przeno
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

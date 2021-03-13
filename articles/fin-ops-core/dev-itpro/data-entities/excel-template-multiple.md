@@ -1,5 +1,5 @@
 ---
-title: Importowanie danych z szablonów jednostek danych programu Excel zawierających wiele arkuszy
+title: Szablony danych z wieloma arkuszami
 description: W tym temacie opisano, jak przeprowadzić import danych przy użyciu szablonów jednostki danych programu Excel do Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688086"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130588"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importowanie danych z szablonów jednostek danych programu Excel zawierających wiele arkuszy
+# <a name="data-templates-with-multiple-worksheets"></a>Szablony danych z wieloma arkuszami
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ W przypadku gdy konieczne jest przekazanie nowej wersji tego samego pliku lub ca
 ## <a name="upload-a-file-using-run-project"></a>Przekazywanie pliku przy użyciu funkcji Uruchom projekt
 
 Plik programu Excel można przekazać, używając opcji **Uruchom projekt** w celu wykonania projektu importu. Należy uważać, aby przekazać tylko pliki, które zawierają te same arkusze co istniejące mapowania w jednostkach danych w projekcie danych. Jeżeli w nowym przekazanym pliku arkusz nie zostanie znaleziony, system wyświetli komunikat o błędzie i zatrzyma import. Jeżeli mapowanie w arkuszu musi zostać zmienione, mapowania w projekcie danych należy najpierw zaktualizować z poziomu projektu danych przed użyciem pliku w ramach funkcji **Uruchom projekt**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

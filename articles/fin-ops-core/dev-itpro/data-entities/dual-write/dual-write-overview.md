@@ -1,6 +1,6 @@
 ---
-title: Przegląd o podwójnym zapisie
-description: Ten temat stanowi omówienie podwójnego zapisu. Podwójny zapis to infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami opartymi na modelach Microsoft Dynamics 365 i aplikacjami Finance and Operations.
+title: Omówienie podwójnego zapisu
+description: Ten temat zawiera opis podwójnego zapisu, który zapewnia współpracę prawie w czasie rzeczywistym między aplikacjami Customer Engagement a aplikacjami Finance and Operations.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685620"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130012"
 ---
-# <a name="dual-write-overview"></a>Przegląd o podwójnym zapisie
+# <a name="dual-write-overview"></a>Omówienie podwójnego zapisu
 
 [!include [banner](../../includes/banner.md)]
 
@@ -53,7 +53,7 @@ Infrastruktura podwójnego zapisu jest rozszerzalna i niezawodna i obejmuje nast
 + Połączony widok działań i dzienników błędów dla administratorów danych
 + Możliwość konfigurowania niestandardowych alertów i progów oraz subskrybowanie powiadomień
 + Intuicyjny interfejs użytkownika służący do filtrowania i przekształcania
-+ Możliwość ustawiania i wyświetlania zależności i relacji jednostek
++ Możliwość ustawiania i wyświetlania zależności i relacji tabel
 + Rozszerzalność dla tabel i map standardowych i niestandardowych
 + Niezawodne zarządzanie cyklem życia zasobu
 + Korzystanie z gotowej konfiguracji wstępnej dla nowych odbiorców
@@ -93,7 +93,7 @@ Podwójny zapis dostarcza integrację danych między aplikacjami Microsoft Dynam
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Co oznacza podwójny zapis dla programistów i architektów aplikacji do personalizowania obsługi klienta?
 
-Podwójny odpis automatyzuje przepływ danych między aplikacjami Finance and Operations i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat encji, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach Finance and Operations.
+Podwójny odpis automatyzuje przepływ danych między aplikacjami Finance and Operations i aplikacjami służącymi do personalizowania obsługi klienta. Podwójny zapis składa się z dwóch rozwiązań AppSource, które są zainstalowane w Dataverse. W rozwiązaniach jest rozszerzany schemat tabeli, wtyczki i przepływy pracy w ramach Dataverse, dzięki czemu można je skalować do rozmiarów ERP. W przypadku pomyślnej implementacji deweloperzy i architekci aplikacji do personalizowania obsługi klienta muszą zrozumieć te zmiany i współpracować z ich odpowiednikami w aplikacjach Finance and Operations.
 
 Aby utworzyć równość z odpowiednikami aplikacji Finance and Operations, system podwójnego zapisu tworzy istotne zmiany w schemacie Dataverse. W przypadku zrozumienia planu można uniknąć przepracowania projektu i dodatkowej pracy w przyszłości.
 
@@ -103,12 +103,9 @@ Aby utworzyć równość z odpowiednikami aplikacji Finance and Operations, syst
 
 + Aby zapobiec utracie danych podczas przesyłania walut między aplikacjami Finance and Operations i Dataverse, można rozszerzyć liczbę miejsc dziesiętnych w typie danych Waluta dla aplikacji służących do spersonalizowanej obsługi klienta. Funkcja automatycznie tłumaczy istniejące wiersze na nowy stan rozszerzony na warstwie metadanych. W trakcie tego procesu wartość waluty jest tłumaczona na dane dziesiętne, a nie dane pieniężne, a wartość waluty obsługuje do 10 miejsc po przecinku. Ta funkcja jest opcjonalna. Organizacje, które nie potrzebują korzystać z więcej niż 4 miejsc po przecinku, nie muszą jej używać. Aby uzyskać więcej informacji, przejrzyj [migrację danych typu Waluta w systemie podwójnego zapisu](currrency-decimal-places.md).
 
-+ [Efektywność danych](../../dev-tools/date-effectivity.md) zostanie dodana do Dataverse. Będzie obsługiwać przeszłe, obecne i przyszłe dane w tej samej encji.
++ [Efektywność danych](../../dev-tools/date-effectivity.md) zostanie dodana do Dataverse. Będzie obsługiwać przeszłe, obecne i przyszłe dane w tej samej tabeli.
 
 + [Konwersje jednostek](../../../../supply-chain/pim/tasks/manage-unit-measure.md) produktów są obsługiwane w przypadku produktów, ofert, zamówień i faktur.
 
 Aby uzyskać więcej informacji o nadchodzących zmianach, zapoznaj się z [nowościami lub zmianami dotyczącymi podwójnego zapisu](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

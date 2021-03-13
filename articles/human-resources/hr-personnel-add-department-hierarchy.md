@@ -2,7 +2,7 @@
 title: Tworzenie działów i dołączanie ich do hierarchii działów
 description: Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalnego organizacji. Dział jest odpowiedzialny za określony obszar organizacji, np. sprzedaż, księgowość lub zasoby ludzkie. Działy pozwalają tworzyć raporty dotyczące obszarów funkcyjnych. Działy mogą mieć odpowiedzialność zysków i strat.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420001"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130380"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Tworzenie działów i dołączanie ich do hierarchii działów
 
@@ -54,6 +54,3 @@ Aby dodać dział do hierarchii działu, wykonaj następujące kroki:
 
 ## <a name="steps-for-creating-a-department"></a>Etapy tworzenia działu
 Zobacz artykuł [Definiowanie nowych działów](../fin-and-ops/hr/tasks/define-new-departments.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego działu. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

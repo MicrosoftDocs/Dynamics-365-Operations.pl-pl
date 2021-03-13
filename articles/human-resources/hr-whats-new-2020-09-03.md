@@ -1,9 +1,9 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (03 września 2020 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 3 września 2020 roku.
-author: Darinkramer
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41763a8817d0c39b14284a247cf3e46678e7811b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527466"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130864"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (3 września 2020 r.)
 
@@ -106,9 +106,9 @@ Ta funkcja promuje także opcje przepływu pracy, które znajdują się w formul
 
 ## <a name="coming-soon"></a>Wkrótce
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Jednostki listy kontrolnej uwzględnione w Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Jednostki listy kontrolnej uwzględnione w Dataverse
 
-Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Dataverse.
 
 ### <a name="benefits-management-reason-codes"></a>Kody przyczyn zarządzania korzyściami
 
@@ -120,6 +120,3 @@ Kody przyczyn zarządzania korzyściami zostaną wkrótce połączone z istniej�
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

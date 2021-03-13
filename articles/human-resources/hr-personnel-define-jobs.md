@@ -2,7 +2,7 @@
 title: Definiowanie nowych zadań
 description: To zadanie jest zorientowane na utworzenie nowego zadania (pracy).
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d7a469b7f09c6cf3a051991698a00317dc125d2
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420087"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130277"
 ---
 # <a name="define-new-jobs"></a>Definiowanie nowych zadań
 
@@ -71,6 +71,3 @@ To zadanie jest zorientowane na utworzenie nowego zadania (pracy). Jest ona wyko
 33. Przełącz rozwinięcie sekcji Wykształcenie.
 34. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Konfigurowanie stanowisk
 description: Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart, HcmAllWorkersListPart, HcmPosition, HcmPositionNewPosition, HcmJobLookup, HcmPositionReportsToDialog, HcmPositionLookup, FinancialDimensionDefaultTemplatesLookup, DimensionLookup, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6c078060984169d14a0fb64cf54fc134e8f26ccb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 335031731a02980cba24d2424c1505df64effbac
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420077"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130480"
 ---
 # <a name="set-up-positions"></a>Konfigurowanie stanowisk
 
@@ -67,6 +67,3 @@ Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozy
 30. W polu Dział wprowadź lub wybierz wartość.
 31. Kliknij przycisk Zapisz.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

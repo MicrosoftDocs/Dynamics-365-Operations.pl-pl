@@ -2,7 +2,7 @@
 title: Wyświetlanie zmian adresu i zarządzanie nimi
 description: W tym temacie wyjaśniono, w jaki sposób można przeglądać i zarządzać zmianami adresu w Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a69d723b45e834b022491c8eaf2a7fb580e54f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420012"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152060"
 ---
 # <a name="view-and-manage-address-changes"></a>Wyświetlanie zmian adresu i zarządzanie nimi
 
@@ -125,9 +125,6 @@ Pracownicy działu kadr mogą wyświetlać i monitorować zmiany adresów z obsz
 Po wybraniu kafelka **Zmiany adresu** na nowej stronie są wyświetlane szczegółowe informacje o wszelkich zmianach adresu. Opcjonalnie można wybrać opcję **Dołącz przyszłe zmiany adresu** w prawym górnym rogu, aby wyświetlić zmiany w adresie z przyszłą datą.
 
 > [!NOTE]
-> Jeśli chcesz otrzymywać alert lub pocztę e-mail o tych zmianach adresu, możesz utworzyć nową regułę alertu na karcie **Opcje** w okienku akcji. Aby uzyskać więcej informacji dotyczących sposobu tworzenia reguł, zobacz [Tworzenie reguł alertów](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
+> Jeśli chcesz otrzymywać alert lub pocztę e-mail o tych zmianach adresu, możesz utworzyć nową regułę alertu na karcie **Opcje** w okienku akcji. Aby uzyskać więcej informacji dotyczących sposobu tworzenia reguł, zobacz [Tworzenie reguł alertów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
 
-> Jeśli chcesz skonfigurować przepływ pracy dla zmiany adresu, możesz wybrać opcję **Wyślij zewnętrznie** w regule alertu, a następnie użyć Power Automate do wyzwolenia zdarzenia biznesowego i skonfigurowania przepływu pracy. Aby uzyskać więcej informacji, zajrzyj do [Alerty jako zdarzenia biznesowe](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> Jeśli chcesz skonfigurować przepływ pracy dla zmiany adresu, możesz wybrać opcję **Wyślij zewnętrznie** w regule alertu, a następnie użyć Power Automate do wyzwolenia zdarzenia biznesowego i skonfigurowania przepływu pracy. Aby uzyskać więcej informacji, zajrzyj do [Alerty jako zdarzenia biznesowe](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
