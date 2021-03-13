@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ae3d8a7c437ffd41a4864bd8548aa84c8ab8f32
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c368e461860a41d0110f5aed79c2aac49c437d68
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435083"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011422"
 ---
 # <a name="create-an-intercompany-plan"></a>Tworzenie planu międzyfirmowego
 
@@ -54,6 +53,3 @@ Ta procedura pokazuje, jak utworzyć plan międzyfirmowy. Dane wykorzystane do s
 2. Na liście kliknij łącze w wybranym wierszu. Kliknij łącze do planu statycznego. Musisz być w firmie USMF.  
 3. Kliknij opcję **Zamówienia planowane**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

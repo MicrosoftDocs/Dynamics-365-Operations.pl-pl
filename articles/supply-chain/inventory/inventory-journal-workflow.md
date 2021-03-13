@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434981"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011679"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Przepływy pracy zatwierdzania arkuszy magazynowych
 
@@ -31,6 +30,13 @@ W tym temacie opisano sposób konfigurowania i używania przepływów pracy zatw
 
 > [!NOTE]
 > Przepływy pracy zatwierdzania arkuszy magazynowych dotyczą tylko transakcji zarejestrowanych przy użyciu modułu Zarządzanie zapasami. Nie działają z arkuszami magazynowymi wyzwalanymi w module zarządzania magazynem.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Włączanie funkcji przepływów pracy zatwierdzania arkuszy magazynowych
+
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
+
+- **Moduł:** *Zarządzanie zapasami i magazynem*
+- **Nazwa funkcji:** *Przepływ pracy zatwierdzania arkusza magazynowego*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Utwórz przepływy pracy zatwierdzania arkusza zapasów
 
@@ -112,6 +118,3 @@ Aby przejrzeć historię przepływu pracy dla arkusza:
 1. W okienku nawigacji rozwiń **Zarządzanie zapasami \> Wpisy w arkuszu \> Elementy**, a następnie wybierz typ arkusza magazynowego.
 1. Otwórz odpowiedni arkusz.
 1. W okienku akcji wybierz przycisk **Przepływu pracy**, aby otworzyć okno dialogowe rozwijane. Wybierz **Historia przepływu pracy**. Aby uzyskać więcej informacji, zobacz [Wyświetl historię przepływu pracy](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

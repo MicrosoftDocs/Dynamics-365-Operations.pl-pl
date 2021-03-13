@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83a62966e343a9b1c073c2d6ec1c1b69b1daddbb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 36f908e02c996c0d0a636fd9295b84fcc16b6b63
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435301"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011779"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>Obliczanie BOM przy użyciu struktury jednopoziomowej (luty 2016)
 
@@ -44,6 +43,3 @@ W tej procedurze pokazano, jak obliczyć koszt wyrobu gotowego przy użyciu jedn
     * Może być konieczne kliknięcie przycisku wielokropka (...), aby wyświetlić tę opcję w górnym menu.    Oto elementy składowe kosztu:  *   10 pochodzi z opcji ITEM_A, 10 z opcji ITEM_B i 10 z opcji BOM_2. W tym przypadku opcja BOM_2 nie ma żadnych szczegółów, ponieważ tę wartość ręcznie wpisano jako koszt standardowy 10, tzn. nie jest to wynik obliczenia.  *  Wartość 7 została ustalona na podstawie czasu przezbrajania i jest kosztem stałym, a dodatkowa wartość 7 została ustalona na podstawie czasu procesu (wykonywania operacji).  *   Istnieją również inne kwoty, które odpowiadają kosztom pośrednim.  
 9. @SysTaskRecorder:_RequestClose
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

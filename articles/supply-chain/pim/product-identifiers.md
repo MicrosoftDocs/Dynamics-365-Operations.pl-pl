@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f28193f9671bcae1345d5c1085ea3f2446e6e088
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529193"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011378"
 ---
 # <a name="product-identifiers"></a>Identyfikatory produktów
 
@@ -44,7 +43,7 @@ W wielu przypadkach numer produktu nie jest pierwotnie tworzony w Dynamics 365 S
 
 Podczas wdrażania programu Supply Chain Management należy zwrócić szczególną uwagę na strategię numerowania produktów. Dobry system numerowania usprawnia logistykę i pomaga uniknąć błędów. Dobry identyfikator produktu zawiera maksymalnie 15 znaków. Najlepiej, aby miał nie więcej niż 10 znaków i zawierał maksymalnie 5 znaków klasyfikujących. Można również używać aliasów do szybkiego wyszukiwania. Alias jest dodatkową nazwę reprezentującą klasyfikacje produktu.
 
-Jeśli jest używany Common Data Service, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Common Data Service. Warianty produktów są synchronizowane z usługą Common Data Service jako odrębne produkty.
+Jeśli jest używany Microsoft Dataverse, numer produktu w module Supply Chain Management jest także numerem produktu w formularzu Microsoft Dataverse. Warianty produktów są synchronizowane z usługą Dataverse jako odrębne produkty.
 
 ## <a name="item-number-and-product-dimensions"></a>Numer towaru i wymiary produktu
 
@@ -167,7 +166,7 @@ Poniższa tabela zawiera przegląd wyników importu i ręcznego tworzenia przy o
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Identyfikator jednostki Produkt (eksport wszystkich identyfikatorów produktów)
 
-Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi CDS umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi CDS nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka identyfikatora Common Data Service jednostki produktu** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
+Model Identyfikator jednostki Produkt został utworzony, aby w wersji 1.0 usługi Dataverse umożliwić obsługę wszystkich identyfikatorów używanych do odwoływania się do produktu. Aby uprościć to zadanie, wszystkie identyfikatory są agregowane do jednej globalnej tabeli identyfikatorów, dzięki czemu mogą zostać wyeksportowane jako jeden model. Należy zauważyć, że ta wersja usługi Dataverse nie używa modelu identyfikatorów produktów. Z tego względu jednostka **Jednostka identyfikatora Common Data Service jednostki produktu** i ten proces mają ograniczone praktyczne zastosowanie i prawdopodobnie ulegną zmianie w przyszłości.
 
 Tabela identyfikatorów produktów jest globalną tabelą wypełnianą na podstawie wszystkich tabel odwołań głównej firmy za pomocą cyklicznego zadania wsadowego. Należy wybrać firmę i hierarchię kategorii produktów jako definicję globalnego zakresu produktów głównych. Generowanie globalnej tabeli identyfikatorów produktów jest ograniczone do produktów zwalnianych do wybranej firmy oraz produktów będących elementami członkowskimi hierarchii produktów wybranej dla roli **Common Data Service** w hierarchii kategorii produktów.
 
@@ -175,7 +174,7 @@ W tym procesie zakłada się, że dane produktów głównych są przechowywane g
 
 Wykonaj następujące kroki, aby skonfigurować środowisko.
 
-1. Wybierz hierarchię kategorii dla usługi CDS. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Common Data Service**, należy utworzyć nowe skojarzenie. Wybierz rolę **Common Data Service**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą CDS.
+1. Wybierz hierarchię kategorii dla usługi Dataverse. Jeśli na stronie **Skojarzenia ról hierarchii kategorii** żadna hierarchia nie jest skojarzona z rolą **Common Data Service**, należy utworzyć nowe skojarzenie. Wybierz rolę **Common Data Service**, a następnie skojarz hierarchię kategorii reprezentującą portfolio produktów, które powinno być synchronizowane z usługą Dataverse.
 2. Wybierz firmę dla globalnych danych głównych produktów. Na stronie **Parametry modułu Zarządzanie informacjami o produktach** na karcie **Atrybuty produktu** zaznacz główną firmę, w której są głównie przechowywane identyfikatory produktów i towarów.
 3. Zdefiniuj typy kodów i kody identyfikatorów, które powinny zostać wyeksportowane. Wybierz kolejno opcje **Zarządzanie informacjami o produktach** &gt; **Ustawienia** &gt; **Kody identyfikujące produkty**. Aby wygenerować typy kodów identyfikatorów, wybierz opcję **Generuj kody**. Wpis kodu typu zostanie wygenerowany dla każdego typu identyfikatora znalezionego w wybranej firmie.
 
@@ -190,6 +189,3 @@ Teraz można używać jednostek danych **Jednostka identyfikatora Common Data Se
 ## <a name="related-topic"></a>Powiązany temat
 
 [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

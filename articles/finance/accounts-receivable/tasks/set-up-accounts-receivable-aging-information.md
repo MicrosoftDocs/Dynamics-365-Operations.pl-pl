@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustVendReportInterval, CustAgingSnapshot, CustCollectionsPoolsListPage, CustCollections
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 439be64a864056cc19fd156f664a4b90601be040
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 19b60d5fcfba995d08f12d0548f41a0c3d2781fb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446818"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012093"
 ---
 # <a name="set-up-and-generate-accounts-receivable-aging-information"></a>Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami
 
@@ -59,6 +58,3 @@ Ten podręcznik pomoże skonfigurować definicję okresu wiekowania, wiekować s
 2. Wybierz odbiorcę z saldem.
 3. Rozwiń pole informacji **Wiekowanie** i obejrzyj wiekowane salda. Definicja okresu wiekowania dla pola informacji jest pobierana z domyślnej definicji okresu wiekowania określonej w parametrach. Można ją zmienić za pomocą menu Zbierz.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

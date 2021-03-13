@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435608"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014490"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Zadanie czyszczenia wpisów dostępnych zapasów do zarządzania magazynem
 
@@ -50,7 +49,12 @@ Po uruchomieniu zadania ma on przydzielony rozmiar 100. Innymi słowy podejmie p
 
 ## <a name="possible-user-impact"></a>Możliwy wpływ użytkownika
 
-Użytkownicy mogą mieć wpływ na to, jeśli zadanie oczyszczania wpisów dostępnych zapasów usunie wszystkie rekordy dla danego poziomu (np. na poziomie numeru identyfikacyjnego). W takim przypadku funkcja umożliwiająca wyświetlanie zapasów, które były wcześniej dostępne na numerze identyfikacyjnym, może nie działać zgodnie z oczekiwaniami, ponieważ odpowiednie wpisy stanu zapasów nie są już dostępne. (Funkcja ta sprawdza warunek **Ilość \<\> 0** w ustawieniach **Wyświetlania wymiarów**, gdy użytkownicy wyświetlają informacje o dostępnych zapasach.) Jednak wzrost wydajności, jaki zapewnia zadanie oczyszczania, powinien być uwzględniony w tej niewielkiej utracie funkcjonalności.
+Użytkownicy mogą mieć wpływ na to, jeśli zadanie oczyszczania wpisów dostępnych zapasów usunie wszystkie rekordy dla danego poziomu (np. na poziomie numeru identyfikacyjnego). W takim przypadku funkcja umożliwiająca wyświetlanie zapasów, które były wcześniej dostępne na numerze identyfikacyjnym, może nie działać zgodnie z oczekiwaniami, ponieważ odpowiednie wpisy stanu zapasów nie są już dostępne. Może stać się tak na przykład w następujących sytuacjach:
+
+- Na liście **dostępnych zapasów**, gdy użytkownik usuwa warunek **Ilość \<\>0** lub wybiera warunek **Zamknięte transakcje** w ustawieniach **wyświetlania wymiarów**.
+- W raporcie **Zapasy fizyczne według wymiarów magazynowych** dla przeszłych okresów, gdy użytkownik ustawia parametr **Na dzień**.
+
+Jednak poprawa wydajności zapewniana przez zadanie oczyszczania powinna nadrobić te małe straty w funkcjonalności.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Umożliwia ustawienie maksymalnego czasu wykonywania
 
@@ -58,6 +62,3 @@ Domyślnie ustawienie **Maksymalny czas wykonania** jest niedostępne. Aby go u�
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Maksymalny czas wykonywania zadania oczyszczania dla wpisów dostępnych zapasów w magazynie*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

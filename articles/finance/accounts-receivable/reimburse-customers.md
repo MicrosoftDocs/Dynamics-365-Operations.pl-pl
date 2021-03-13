@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ae6a3078743fc9cd43c71bc1d4531c0553ee53bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644544"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012146"
 ---
 # <a name="reimburse-customers"></a>Zwroty do odbiorców
 
@@ -49,6 +48,3 @@ Podczas tworzenia transakcji zwrotu, tworzona jest faktura od dostawcy na kwotę
 
 5. Aby wyświetlić utworzone transakcje zwrotu nadpłaty, skorzystaj z raportu **Zwrot nadpłaty** (**Rozrachunki z odbiorcami \> Zapytania i raporty \> Raport Zwrot nadpłat**).
 6. W module Rozrachunki z dostawcami należy utworzyć płatność dla faktur od dostawcy utworzonych w wyniku procesu zwrotu nadpłaty. Aby uzyskać informacje o sposobach płacenia dostawcom, zapoznaj się z tematem [Omówienie płatności dla dostawców](../accounts-payable/Vendor-payments-workspace.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

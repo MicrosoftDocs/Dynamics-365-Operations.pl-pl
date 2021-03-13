@@ -10,15 +10,14 @@ ms.technology: ''
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 29a8e1812e89df40968afd751fbb989155217d1f
-ms.sourcegitcommit: ec78608eb96478b7a57928b60aece129d6799c5b
+ms.openlocfilehash: 0b411398811fcf27b53a584d0285c14e51f504df
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4581957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012101"
 ---
 # <a name="vat-declaration-with-registers-jpk_v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 
@@ -680,6 +679,3 @@ W przypadku generowania raportu JPK-V7M w formacie XML za okres krótszy niż pe
 
 - Tag **\<Miesiac\>** będzie zawierać informacje o interwale dat, za który jest generowany raport.
 - Tag **\<P_\*\>** części **Deklaracja** raportu zawiera obliczone wartości reprezentujące agregację kwot z części **SprzedazWiersz** i **ZakupWiersz** raportu. Wartości w tym tagu zostaną zaokrąglone do dwucyfrowej wartości dziesiętnej, ale nie wartości całkowitej.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c396060017db6d7ce830b350f242d3097876e50
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414960"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012320"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Rezygnacja ze zbierania zdarzeń aktywności internetowej
 [!include [banner](includes/banner.md)]
@@ -56,6 +55,3 @@ Administratorzy mogą zezwolić uwierzytelnionym użytkownikom na samodzielną r
 ### <a name="custom-extensions"></a>Rozszerzenia niestandardowe
 
 Administratorzy mogą tworzyć własne rozszerzenia służące do zarządzania niektórymi usługami rezygnacji użytkowników. Aby uzyskać więcej informacji, zobacz [Wywoływanie interfejsów API w usłudze Retail Server](e-commerce-extensibility/call-retail-server-apis.md) i [rozszerzalność kanału online](e-commerce-extensibility/overview.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

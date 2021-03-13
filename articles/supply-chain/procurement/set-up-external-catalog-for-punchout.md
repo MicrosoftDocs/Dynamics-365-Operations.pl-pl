@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 description: W tym temacie opisano używanie zewnętrznego katalogu (dynamicznie dostępnego katalogu dostawcy, PunchOut) w celu zbierania informacji ofertowych od dostawcy i dodawania ich do zapotrzebowania.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dc6a38b1a9eebdee64762671bb501e5e1294399
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435600"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016384"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 
@@ -54,19 +53,18 @@ Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrze
 W tej sekcji dokładniej omówiono 4 zadania z poprzedniej części.
 
 1. Wprowadź nazwę i opis katalogu zewnętrznego dostawcy. Wprowadzona nazwa pojawi się w koszyku reprezentującym zewnętrzny katalog, który będzie wyświetlany pracownikom tworzącym zapotrzebowania. Pracownicy mogą kliknąć koszyk, a zostanie otwarty katalog w witrynie zewnętrznego katalogu dostawcy.
-2. Dodaj obraz przy użyciu akcji  **Obraz z katalogu zewnętrznego**. Obraz pojawi się w koszyku reprezentującym zewnętrzny katalog, który będzie wyświetlany pracownikom tworzącym zapotrzebowania. Należy zwrócić uwagę, że szerokość i wysokość obrazu muszą być takie same. W przeciwnym razie obraz nie będzie wyświetlany poprawnie.
-3. Określ, czy witryna sieci Web zewnętrznego katalogu dostawcy ma być wyświetlana w tym samym oknie przeglądarki, w którym pracownik utworzył zapotrzebowanie, czy też w nowym oknie.
+2. Dodaj obraz przy użyciu akcji **Obraz z katalogu zewnętrznego**. Obraz pojawi się w koszyku reprezentującym zewnętrzny katalog, który będzie wyświetlany pracownikom tworzącym zapotrzebowania. Należy zwrócić uwagę, że szerokość i wysokość obrazu muszą być takie same. W przeciwnym razie obraz nie będzie wyświetlany poprawnie.
+3. Określ, czy witryna internetowa zewnętrznego katalogu dostawcy ma być wyświetlana w tym samym oknie przeglądarki, w którym pracownik utworzył zapotrzebowanie, czy też w nowym oknie.
 4. Wybierz dostawcę dla katalogu. Na liście **Firmy** jest wiersz dla każdej firmy, w której skonfigurowano dostawcę. Aby zezwolić użytkownikom na wnioskowanie o produkty bezpośrednio z katalogu dostawcy w niektórych firmach, a w innych nie, można użyć przycisku **Zabroń dostępu** lub **Zezwalaj na dostęp** dla każdej firmy, w której katalog ma być dostępny lub nie.
 5. W polu **Domyślne wygaśnięcie (dni)** wprowadź liczbę dni, przez jaką oferta otrzymana z zewnętrznego katalogu jest ważna i może być używana do kupowania od zewnętrznego dostawcy. Po utworzeniu oferty i pobraniu jej z witryny zewnętrznego katalogu dostawcy oferta jest ważna na dzień określony bieżącą datą systemową i pozostaje ważna przez liczbę dni wprowadzoną w tym polu.
-6. Kliknij przycisk **Dodaj**, aby rozpocząć mapowanie kategorii zaopatrzenia na zewnętrzny katalog. Następnie na liście Nazwa kategorii wybierz kategorię. Lista kategorii jest podzbiorem kategorii zaopatrzenia, do których zamapowano dostawcę we wszystkich firmach skonfigurowanych dla tego dostawcy.
+6. Kliknij przycisk **Dodaj**, aby rozpocząć mapowanie kategorii zaopatrzenia na zewnętrzny katalog. Następnie na liście Nazwa kategorii wybierz kategorię. Lista kategorii jest podzbiorem kategorii zaopatrzenia, do których zamapowano dostawcę we wszystkich firmach skonfigurowanych dla tego dostawcy.
 
     > [!NOTE]
-    > Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia dostępu do kategorii dla kupującej firmy lub przyjmującej jednostki operacyjnej. Możliwość wybierania z zewnętrznego katalogu wymaga zezwolenia na dostęp do co najmniej jednej kategorii zaopatrzenia zamapowanej do katalogu.
+    > Zasady zaopatrzenia są używane w celu zezwolenia na dostęp lub ograniczenia dostępu do kategorii dla kupującej firmy lub przyjmującej jednostki operacyjnej. Możliwość wybierania z zewnętrznego katalogu wymaga zezwolenia na dostęp do co najmniej jednej kategorii zaopatrzenia zamapowanej do katalogu.
 
 7. Skonfiguruj komunikat żądania konfiguracji cXML, który będzie wysyłany dostawcy. Format automatycznie generowanego komunikatu jest minimalnym szablonem wymaganym do rozpoczęcia sesji. Wprowadź wartości znaczników.
 
-W dowolnym momencie można ponownie załadować systemowy szablon komunikatu, klikając przycisk **Przywróć format komunikatu**. 
-Należy zauważyć, że jeśli przywrócisz format komunikatu, bieżący komunikat zostanie zastąpiony przez automatycznie wygenerowany format komunikatu, który ma puste znaczniki.
+W dowolnym momencie można ponownie załadować systemowy szablon komunikatu, klikając przycisk **Przywróć format komunikatu**. Należy zauważyć, że jeśli przywrócisz format komunikatu, bieżący komunikat zostanie zastąpiony przez automatycznie wygenerowany format komunikatu, który ma puste znaczniki.
 
 ### <a name="cxml-setup-message"></a>Komunikat konfiguracyjny cXML
 Poniżej znajduje się opis znaczników zawartych w szablonie:
@@ -91,7 +89,7 @@ Nadaj elementowi zewnętrznemu nazwę, którą dostawca może rozpoznać, i zama
 Więcej informacji o protokole cXML można znaleźć w [witrynie internetowej cXML.org](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Komunikat ogłaszania zwrotnego
-Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do Supply Chain Management. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikat bazuje na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania.
+Komunikat ogłaszania zwrotnego to komunikat otrzymywany od dostawcy, gdy użytkownik finalizuje transakcję w zewnętrznej witrynie i wraca do Supply Chain Management. Komunikatów ogłaszania zwrotnego nie można konfigurować. Komunikaty bazują na definicji protokołu cXML. Poniżej przedstawiono informacje, które mogą wchodzić w skład komunikatu ogłaszania zwrotnego otrzymywanego w wierszu zapotrzebowania.
 
 | Komunikat otrzymywany od dostawcy | Skopiowano do wiersza zapotrzebowania|
 |------------------------------|----------------------------------------------------------|
@@ -114,5 +112,3 @@ Jeśli poproszono o produkt z zewnętrznego katalogu dostawcy, nie można usuną
 
 - [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)
 - [Używanie katalogów zewnętrznych dla rozwiązania PunchOut e-procurement](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

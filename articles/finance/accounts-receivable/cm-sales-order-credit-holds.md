@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 102ea4285407a4f4985cc8dd46ebc1ad21fc6f67
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012270"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Wstrzymania kredytu dla zamówień sprzedaży
 [!include [banner](../includes/banner.md)]
@@ -265,6 +264,3 @@ Zamówienia sprzedaży o wymuszonej przyczynie wstrzymania nie mogą zostać zwo
 Zarządzanie kredytami może być używane obecnie tylko dla zamówień sprzedaży. Faktury niezależne, punkty zamówień sprzedaży i biura obsługi zamówień będą używały tymczasowych limitów kredytowych oraz ubezpieczeń/gwarancji dodawanych do korekty limitu kredytu. Nie będą one używały reguł blokowania i nie zostaną umieszczone na liście blokad, jeśli wystąpił problem z limitem kredytu.
 
 Brak obsługi faktur projektu w zarządzaniu kredytami.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

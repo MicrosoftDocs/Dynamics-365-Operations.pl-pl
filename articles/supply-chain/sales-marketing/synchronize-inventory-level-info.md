@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 1228339c12d26f7b91875d15f0daa8da2869cba0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 828dd1324c2692b7b3f4bc15c5e50b3dbee8b72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435106"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010929"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synchronizowanie informacji na poziomie zapasów z rozwiązania Supply Chain Management do rozwiązania Field Service 
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
@@ -51,7 +52,7 @@ Następujące zadania synchronizacji są wymagane, zanim będzie można zsynchro
 
 | Field Service                      | Zarządzanie łańcuchem dostaw                |
 |------------------------------------|----------------------------------------|
-| msdynce_externalproductinventories | CDS Dostępne zapasy według magazynu     |
+| msdynce_externalproductinventories | Dostępne zapasy Dataverse według magazynu     |
 
 ## <a name="entity-flow"></a>Przepływ jednostek
 Informacje poziomu zapasów z Finance and Operations są wysyłane do Field Service dla wybranych produktów. Informacje poziomu zapasów obejmują: 
@@ -91,6 +92,3 @@ Można zastosować filtry za pomocą funkcji Zaawansowane zapytanie i filtrowani
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Zapasy produkt (z rozwiązania Supply Chain Management do rozwiązania Field Service): Zapasy produktu
 
 [![Mapowanie szablonu w integracji danych](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

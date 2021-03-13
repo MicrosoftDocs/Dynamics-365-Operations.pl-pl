@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ff64f28af570b792f73b51aa9caf06dd2445b2ca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a598f0356034a22ee7fc0902360b8862a1944558
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435108"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010979"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synchronizowanie przesunięć magazynowych i korekt z rozwiązania Field Service do rozwiązania Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania korekt i przeniesień zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
@@ -45,27 +46,27 @@ Poniższy szablon i podstawowe zadania są używane do synchronizowania stanu i 
 - Korekty zapasów
 - Przeniesienia zapasów
 
-## <a name="entity-set"></a>Zestaw jednostek
+## <a name="table-set"></a>Zestaw tabel
 | Field Service                     | Zarządzanie łańcuchem dostaw                          |
 |-----------------------------------|----------------------------------------------------|
-| msdyn_inventoryadjustmentproducts |   CDS Nagłówki i wiersze arkuszy korekt zapasów |
-| msdyn_inventoryadjustmentproducts | CDS Nagłówki i wiersze arkuszy przesunięć magazynowych   |
+| msdyn_inventoryadjustmentproducts | Nagłówki i wiersze arkuszy korekt zapasów w usłudze Dataverse |
+| msdyn_inventoryadjustmentproducts | Nagłówki i wiersze arkuszy przesunięć magazynowych w usłudze Dataverse   |
 
-## <a name="entity-flow"></a>Przepływ jednostek
+## <a name="table-flow"></a>Przepływ tabeli
 Korekty i przeniesienia zapasów dokonane w Field Service będą synchronizowane w Supply Chain Management, gdy **Stan księgowania** zostaje zmieniony z **Utworzone** na **Zaksięgowane**. Kiedy to nastąpi, zamówienie korekty lub przeniesienia zostanie zablokowane i będzie dostępne tylko do odczytu. Oznacza to, że korekty i przeniesienia mogą być księgowane w Supply Chain Management, ale nie mogą być modyfikowane. W Supply Chain Management możesz ustawić zadanie wsadowe do automatycznego księgowania korekt i przenoszenia arkuszy magazynowych wygenerowanych za pomocą integracji. Zobacz wymagania wstępne poniżej, aby uzyskać szczegółowe informacje o sposobie włączania zadania wsadowego.
 
 ## <a name="field-service-crm-solution"></a>Rozwiązanie CRM Field Service 
-Pole **Jednostka magazynowa** zostało dodane do jednostki **Produkt**. To pole jest wymagane ponieważ jednostka sprzedaży i magazynowa nie zawsze jest taka sama w Supply Chain Management i jednostka magazynowa jest wymagana dla Zapasów w magazynie w Supply Chain Management.
-Po ustawieniu produktu w produkcie korekty zapasów dla korekt zapasów i przeniesień zapasów jednostka zostanie pobrana z wartości produktu w magazynie. Jeśli wartość zostanie znaleziona, pole **Jednostka** zostanie zablokowane na Produkt korekty zapasów.
+Kolumna **Jednostka magazynowa** została dodana do tabeli **Produkt**. Ta kolumna jest wymagana, ponieważ jednostka sprzedaży i magazynowa nie zawsze jest taka sama w Supply Chain Management i jednostka magazynowa jest wymagana dla Zapasów w magazynie w Supply Chain Management.
+Po ustawieniu produktu w produkcie korekty zapasów dla korekt zapasów i przeniesień zapasów jednostka zostanie pobrana z wartości produktu w magazynie. Jeśli wartość zostanie znaleziona, kolumna **Jednostka** zostanie zablokowana na Produkt korekty zapasów.
 
-Pole **Stan księgowania** zostało dodane zarówno do jednostki **Korekta zapasów**, jak i **Przeniesienie zapasów**. To pole jest używane jako filtr podczas wysyłania korekty lub przeniesienia do Supply Chain Management. Domyślną wartością tego pola jest Utworzone (1), ale nie jest ono wysyłane do Supply Chain Management. Po zaktualizowaniu wartości Zaksięgowane (2) jest ona wysyłana do Supply Chain Management ale potem nie możesz już zmienić korekty ani przeniesienia ani dodawać nowych wierszy.
+Kolumna **Stan księgowania** została dodana zarówno do tabeli **Korekta zapasów**, jak i tabeli **Przeniesienie zapasów**. Ta kolumna jest używana jako filtr podczas wysyłania korekty lub przeniesienia do Supply Chain Management. Domyślną wartością tej kolumny jest Utworzone (1), ale nie jest ono wysyłane do Supply Chain Management. Po zaktualizowaniu wartości Zaksięgowane (2) jest ona wysyłana do Supply Chain Management ale potem nie możesz już zmienić korekty ani przeniesienia ani dodawać nowych wierszy.
 
-Pole **Sekwencja numerów** zostało dodane do jednostki **Produktu korekty zapasów**. To pole zapewnia, że integracja ma unikatowy numer, więc integracja może utworzyć i zaktualizować korektę. Podczas tworzenia pierwszego produktu korekty zapasów utworzy on nowy rekord w jednostce **P2C AutoNumber** do obsługi serii numerów i używanego prefiksu.
+Kolumna **Sekwencja numerów** została dodana do tabeli **Produktu korekty zapasów**. Ta kolumna zapewnia, że integracja ma unikatowy numer, więc integracja może utworzyć i zaktualizować korektę. Podczas tworzenia pierwszego produktu korekty zapasów utworzy on nowy rekord w tabeli **P2C AutoNumber** do obsługi serii numerów i używanego prefiksu.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Wymagania wstępne i ustawienia mapowania
 
 ### <a name="supply-chain-management"></a>Zarządzanie łańcuchem dostaw
-Arkusze magazynowe integracji wygenerowane przez integrację mogą być automatycznie księgowane za pomocą zadania wsadowego. Tę opcję włącza się z: **Zarządzanie zapasami > Zadania okresowe > Integracja z usługą CDS > Księguj arkusze magazynowe integracji**.
+Arkusze magazynowe integracji wygenerowane przez integrację mogą być automatycznie księgowane za pomocą zadania wsadowego. Tę opcję włącza się z: **Zarządzanie zapasami > Zadania okresowe > Integracja z usługą Dataverse > Księguj arkusze magazynowe integracji**.
 
 ## <a name="template-mapping-in-data-integration"></a>Mapowanie szablonu w integracji danych
 
@@ -79,6 +80,3 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Przeniesienie zapasów (z rozwiązania Field Service do Supply Chain Management): Przeniesienie zapasów
 
 [![Mapowanie szablonu w integracji danych](./media/FSTrans1.png)](./media/FSTrans1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
