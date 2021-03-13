@@ -2,7 +2,7 @@
 title: Ustawianie reguł zaokrąglania
 description: W programie Dynamics 365 Human Resources istnieje możliwość skonfigurowania reguł zaokrąglania spełniających konkretne potrzeby organizacji.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,21 +18,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8a9b0c33d2e0c47b351463b4b3630a91c6bd9999
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a603c31e3a36072b6456bea212ad176009c8b48
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420098"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113832"
 ---
-# <a name="set-up-rounding-rules"></a><span data-ttu-id="bce8a-103">Ustawianie reguł zaokrąglania</span><span class="sxs-lookup"><span data-stu-id="bce8a-103">Set up rounding rules</span></span>
+# <a name="set-up-rounding-rules"></a><span data-ttu-id="79b0f-103">Ustawianie reguł zaokrąglania</span><span class="sxs-lookup"><span data-stu-id="79b0f-103">Set up rounding rules</span></span>
 
-<span data-ttu-id="bce8a-104">W programie Dynamics 365 Human Resources istnieje możliwość skonfigurowania reguł zaokrąglania spełniających konkretne potrzeby organizacji.</span><span class="sxs-lookup"><span data-stu-id="bce8a-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
+<span data-ttu-id="79b0f-104">W programie Dynamics 365 Human Resources istnieje możliwość skonfigurowania reguł zaokrąglania spełniających konkretne potrzeby organizacji.</span><span class="sxs-lookup"><span data-stu-id="79b0f-104">You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.</span></span>
 
-1. <span data-ttu-id="bce8a-105">W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Reguły zaokrąglania**.</span><span class="sxs-lookup"><span data-stu-id="bce8a-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
+1. <span data-ttu-id="79b0f-105">W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Reguły zaokrąglania**.</span><span class="sxs-lookup"><span data-stu-id="79b0f-105">In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.</span></span>
 
-2. <span data-ttu-id="bce8a-106">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="bce8a-106">Select **New**.</span></span>
+2. <span data-ttu-id="79b0f-106">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="79b0f-106">Select **New**.</span></span>
 
-3. <span data-ttu-id="bce8a-107">Wypełnij pola **Zaokrąglanie do najbliższej**, **Scenariusz** i **Metoda zaokrąglenia**.</span><span class="sxs-lookup"><span data-stu-id="bce8a-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
+3. <span data-ttu-id="79b0f-107">Wypełnij pola **Zaokrąglanie do najbliższej**, **Scenariusz** i **Metoda zaokrąglenia**.</span><span class="sxs-lookup"><span data-stu-id="79b0f-107">Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.</span></span>
 
-4. <span data-ttu-id="bce8a-108">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="bce8a-108">Select **Save**.</span></span> 
+4. <span data-ttu-id="79b0f-108">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="79b0f-108">Select **Save**.</span></span> 
