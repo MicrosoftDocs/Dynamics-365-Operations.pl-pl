@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689573"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154094"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -32,7 +32,55 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="feature-removed-effective-january-28-2021"></a>Funkcja usunięta 28 stycznia 2021 r.
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Zadanie wsadowe do obsługi defragmentacji indeksu SQL
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Ta funkcja została usunięta w celu zmniejszenia kosztów ogólnych działania, monitorowania i obsługi zarządzania indeksami przez odbiorców. |
+| **Zamieniona przez inną funkcję?**   | W przyszłości zarządzanie indeksami będzie wykonywane przez usługi Microsoft. Będzie to się odbywać w sposób ciągły bez wpływu na obciążenia użytkowników. |
+| **Powiązane obszary produktów**         | Aplikacje Finance and Operations|
+| **Opcja wdrażania**              | Wdrożenie w chmurze — dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
+| **Stan**                         | Ta funkcja została usunięta. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.17 aplikacji Finance and Operations
+
+> [!IMPORTANT]
+> Wersja 10.0.17 jest dostępna w wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Aktualizacje do jednej wersji usługi — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Aby można było obsługiwać najnowsze wersje Visual Studio, niektóre zmiany należy wprowadzać w odniesieniu do rozszerzeń X++ dla Visual Studio. Te zmiany są niezgodne z Visual Studio 2015. |
+| **Zamieniona przez inną funkcję?**   | Visual Studio 2017 zamieni Visual Studio 2015 jako wdrożoną i wymaganą wersję. |
+| **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane. Po zaktualizowaniu poprzednie narzędzia X++ zostaną usunięte z programu Visual Studio 2015, a zaktualizowane narzędzia nie zostaną zainstalowane w programie Visual Studio 2015. Nie ma to wpływu na hostowane kompilacje. W przypadku tworzenia maszyn wirtualnych potok kompilacji (definicja kompilacji) należy ręcznie zaktualizować, aby można było zmienić zależność od wersji MSBuild 14.0 (Visual Studio 2015) do wersji MSBuild 15.0 (Visual Studio 2017), zgodnie z opisem w temacie [Aktualizowanie potoku w starszej wersji w usłudze Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Awatar użytkownika 
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Awatar użytkownika wyświetlany po prawej stronie paska nawigacji został pobrany za pomocą interfejsu API z kontrolki nagłówka usługi Dynamics 365, która jest przestarzała. |
+| **Zamieniona przez inną funkcję?**   | Użytkownicy widzą swoje inicjały w okręgu na pasku nawigacji. Ten sam wygląd jest obecnie stosowany w przypadku komputerów deweloperskich. |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Usunięto od wersji 10.0.17 |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Enterprise Portal (EP) — uznanie za rozwiązanie przestarzałe  
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Artefakty metadanych skojarzone z aplikacją Dynamics AX 2012 Enterprise Portal (EP) są przestarzałe, ponieważ portal EP nigdy nie był obsługiwany w aplikacjach Finance and Operations. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane. Cały kod EP ma zostać usunięty w wersji z października 2021 r. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.15 aplikacji Finance and Operations
 
@@ -192,6 +240,3 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poprzednie oświadczenia o usuniętych lub wycofanych funkcjach
 Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane w poprzednich wersjach, zobacz temat [Usunięte lub wycofane funkcje w poprzednich wersjach](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

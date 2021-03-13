@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527417"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152204"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 26 września 2020 r.
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527417"
 
 W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
-Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>W tej wersji
 
@@ -58,7 +57,7 @@ W tej wersji uwzględniono następujące poprawki błędów.
 | 481401 | Przetwarzanie naliczania jest zawieszane, gdy podstawa naliczania jest późniejsza niż data początkowa naliczania i na koniec miesiąca | Przetwarzanie naliczeń zostało zaktualizowane w taki sposób, aby nie miało opóźnienia, jeśli podstawa daty naliczenia jest późniejsza niż data początkowa naliczania i na koniec miesiąca. |
 | 447167 | Listy rekordów wygasania zawierają nieaktywnych pracowników | Karta **Rekordy wygasania** w module **Zarządzanie personelem** obejmuje nieaktywnych pracowników. W tej chwili obejmuje tylko aktywnych pracowników. |
 | 486840 | Niewłaściwe opuszczenie wniosku urlopowego zostanie otwarte z **Elementy pracy przypisane do mnie** | Wybranie urlopu z prośbą urlopową z **Elementy pracy przypisane do mnie** nie powoduje już otwarcia ostatniego urlopu nieobecności przypisanego bieżącemu użytkownikowi. |
-| 506868 | Common Data Service Nie ustawiono pola **Tytuł** dla jednostki **Stanowiska zadania** | Pole **Tytuł** w jednostkach **Zadania** i **Stanowisko zadania** jest wyświetlane jako nieokreślone. Wyświetlone zostanie pole **Tytuł**. |
+| 506868 | Dataverse Nie ustawiono pola **Tytuł** dla jednostki **Stanowiska zadania** | Pole **Tytuł** w jednostkach **Zadania** i **Stanowisko zadania** jest wyświetlane jako nieokreślone. Wyświetlone zostanie pole **Tytuł**. |
 | 430359 | Nie można uzyskać dostępu do zadań listy czynności do odłączania z przypisanymi rolami menedżera i pracownika | Pracownicy z przyszłą datą zakończenia zatrudnienia nie mogą uzyskać dostępu do swoich zadań kontrolnych, jeśli mają tylko rolę pracownika lub menedżera. Obecnie użytkownicy mający tylko rolę pracownika lub menedżera mogą uzyskiwać dostęp do zadań odłączania z przyszłą datą zakończenia zatrudnienia. |
 | 458102 | Nowy pracownik nie jest wyświetlany w jednostce **Informacje o liście płac pracowników** podczas jej tworzenia | W jednostce informacji o liście płac pracownika znajdują się nowi pracownicy bez konieczności otwierania informacji o liście płac dla pracownika przed wyeksportowaniem jednostki. |
 
@@ -85,6 +84,3 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 [Przegląd Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Zarządzanie procesem](hr-admin-setup-update-process.md)
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

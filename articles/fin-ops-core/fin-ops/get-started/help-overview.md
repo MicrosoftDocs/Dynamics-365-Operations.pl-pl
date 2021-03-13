@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695146"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154160"
 ---
 # <a name="help-system"></a>System Pomocy
 
@@ -163,7 +163,4 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 | [Docs.microsoft.com/poprzednie wersje](/previous-versions/dynamics/) | Ta strona hostuje zawartość z poprzednich wydań. |
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/) | Ta witryna hostuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Ta witryna zawiera informacje na temat oceny i sprzedaży. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Ta witryna hostuje materiały szkoleniowe oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w tej witrynie może wymagać planu usług. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Ta witryna hostuje materiały szkoleniowe oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w tej witrynie może wymagać planu usług. |

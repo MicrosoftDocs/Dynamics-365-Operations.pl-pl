@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a406db6d78302fa05596a58fffb7464222d4bfea
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154184"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 
@@ -34,9 +33,19 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.16
+
+### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>„Deklaracja VAT (CZ)” i „Eksport deklaracji kontrolnej (CZ)” Elektroniczne formaty raportowania dla Republiki Czeskiej
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowymi formatami |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane: do 22 stycznia 2022 r. Nie planujemy już obsługiwać formatów „deklaracja VAT (CZ)” i „eksport wyciągu kontrolnego (CZ)”. Raportowanie elektroniczne (ER). W modelu „deklaracja podatkowa” wprowadzono nowe formaty XML deklaracji VAT (CZ), deklaracji VAT Excel (CZ), deklaracji kontroli VAT XML (CZ). |
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>Format raportowania elektronicznego „Format eksportu transakcji księgi (BE)” i odpowiadający mu model „Eksport transakcji księgi (BE)” dla Belgii
 
@@ -107,6 +116,3 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poprzednie oświadczenia o usuniętych lub wycofanych funkcjach
 Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane w poprzednich wersjach, zobacz temat [Usunięte lub wycofane funkcje w poprzednich wersjach](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

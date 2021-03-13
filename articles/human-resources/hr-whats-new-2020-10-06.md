@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe01a2b82b72bf38bb537ed7b2bf5560235817d9
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 036b43d8730b52bddc93c0fc3b47d9d62649e898
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529835"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152180"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (6 października 2020 r.)
 
@@ -31,7 +30,7 @@ ms.locfileid: "4529835"
 
 W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w rozwiązaniu Dynamics 365 Human Resources. Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
-Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2020 wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>W tej wersji
 
@@ -73,13 +72,13 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | --- | --- | --- |
 | Aplikacja Human Resources w Microsoft Teams | [Urlop pracownika etatowego i nieobecność pracowników w Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Aplikacja Human Resources w Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md) |
 | Rozszerzone żądania i zatwierdzenia przepływu pracy | [Usprawnienia dotyczące przepływu pracy zarządzania organizacją i kadrami](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Opcja konfiguracji do pozycjonowania elementów pracy na liście elementów do mnie przypisanych](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Jednostki wirtualne w Common Data Service dla Human Resources | [Rozwiń dane podstawowe Dynamics 365 Human Resources w Common Data Service](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurowanie jednostek wirtualnych usługi Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Jednostki wirtualne w Dataverse dla Human Resources | [Rozwiń dane podstawowe Dynamics 365 Human Resources w Dataverse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurowanie jednostek wirtualnych usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## <a name="coming-soon"></a>Wkrótce
 
 Następujące nowe funkcje są zaplanowane w przyszłych wydaniach:
 
-- **Jednostki listy kontrolnej zawarte w Common Data Service**: Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+- **Jednostki listy kontrolnej zawarte w Dataverse**: Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Dataverse.
 
 - **Kody przyczyn zarządzania korzyściami**: Kody przyczyn zarządzania korzyściami zostaną wkrótce połączone z istniejącymi kodami przyczyn w Human Resources. Jeśli kody przyczyn zostały utworzone w ramach zarządzania świadczeniami o długości przekraczającej 15 znaków, należy zmienić nazwę kodu przyczyny w formularzu **Kody przyczyn** na nazwę zawierającą 15 lub mniej znaków. Po zaktualizowaniu nazwy kod przyczyny pojawi się pod istniejącym formularzem w module Zarządzanie kadrami. Ta zmiana będzie dostępna w przyszłości i nie będzie miała wpływu na istniejącą funkcję.
 
@@ -90,9 +89,6 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2020, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2020, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

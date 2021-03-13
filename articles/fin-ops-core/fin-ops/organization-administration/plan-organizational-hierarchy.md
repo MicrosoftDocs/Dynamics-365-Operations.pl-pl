@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 986d8986375aac9454483d89c46c1b2b6f52e68e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694696"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154416"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
@@ -166,7 +166,7 @@ Jednostki operacyjne używają kontekstu kraju firmy nadrzędnej. Operacyjne jed
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jeśli organizacja jest modelowana jako firma
 
-Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Microsoft Dynamics Localization Portal](https://mbs.microsoft.com/customersource/global/ax/support/support-news/GFMLocalizationPortalMC). (Wymagane jest logowanie w CustomerSource).
+Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/). (Wymagane jest logowanie w CustomerSource).
 
 > [!NOTE]
 > Warstwy księgowania w księdze głównej pozwalają na dodawanie wpisów korygujących dla firmy nadrzędnej, która stosuje inne standardy księgowania niż firma podrzędna. Na przykład dla firmy stosującej zasady ogólnie przyjęte w Wielkiej Brytanii (UK GAAP) można dokonać wpisów korygujących w warstwie księgowania. Te wpisy mogą być konsolidowane dla firmy nadrzędnej, która używa ogólnie przyjętych zasad rachunkowości (GAAP) w Stanach Zjednoczonych. Wpisy korygujące nie wpływają na raportowanie UK GAAP.
@@ -241,6 +241,3 @@ Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę nas
 - Przed modelowaniem głównych scenariuszy restrukturyzacji użyj efektywnych dat hierarchii w celu wykonania analizy wpływu i testów weryfikacyjnych.
 - Użyj trybu roboczego w celu zmiany hierarchii, zanim opublikujesz nową wersję w środowisku produkcyjnym.
 - Ogranicz liczbę osób, które mają uprawnienia do dodawania i usuwania organizacji z hierarchii w środowisku produkcyjnym. Mniejsza liczba zmniejsza ryzyko, że mogą wystąpić kosztowne błędy i trzeba będzie dokonywać korekt.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
