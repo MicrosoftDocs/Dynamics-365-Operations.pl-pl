@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664279"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077585"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Projektowanie interfejsu wykonania hal produkcyjnych
 
@@ -57,7 +56,7 @@ Aby utworzyć i skonfigurować nową kartę, wykonaj następujące kroki:
 1. W nagłówku strony wprowadź następujące ustawienia:
 
     - **Nazwa karty** — umożliwia określenie nazwy karty.
-    - **Widok główny** — umożliwia wybór spośród dwóch wstępnie zdefiniowanych list zadań (*Aktywnych zadań* lub *Wszystkich zadań*).
+    - **Widok główny** — umożliwia wybór spośród trzech wstępnie zdefiniowanych list zadań (*Aktywne zadania*, *Wszystkie zadania* lub *Moje urządzenie*).
     - **Widok szczegółów** — umożliwia wybór pustej wartości lub **Szczegółów zadania**. Jeśli wybierzesz pustą wartość, na karcie nie będzie widoku szczegółowego. Jeśli wybierzesz **Szczegóły zadania**, widok szczegółowy będzie zawierał szczegółowy opis oferty pracy wybranej na liście ofert pracy w widoku głównym.
 
 1. W sekcji **Główny pasek narzędzi** wybierz przyciski, które mają być dostępne na głównym pasku narzędzi. W kolumnie **Dostępne akcje** jest wyświetlana lista wszystkich przycisków, które można dodać. Kolumna **Wybrane akcje** zawiera listę wszystkich przycisków zawartych w bieżącej konfiguracji. Użyj przycisków między kolumnami, aby w razie potrzeby przenieść wybrane elementy między kolumnami. Użyj przycisków w górę iw dół obok kolumny **Wybrane akcje**, aby kontrolować kolejność, w jakiej przyciski są prezentowane w interfejsie użytkownika.
@@ -79,6 +78,3 @@ Po zaprojektowaniu wszystkich potrzebnych kart można je skojarzyć z konfigurac
 1. W razie potrzeby dodaj kolejne karty.
 
 1. Przyciski **Przenieś w górę** i **Przenieś w dół** na pasku narzędzi służą do rozmieszczania kart według potrzeb. Zakładki będą wyświetlane od lewej do prawej w kolejności pokazanej na powyższym zrzucie ekranu (zakładka u góry jest pokazana po lewej stronie).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

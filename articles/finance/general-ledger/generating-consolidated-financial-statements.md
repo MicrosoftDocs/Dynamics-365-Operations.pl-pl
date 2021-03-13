@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446850"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044028"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 
@@ -67,14 +66,14 @@ Poniższa ilustracja pokazuje definicję kolumny w formacie wyświetlania obok s
 ![Definicja kolumny w formacie „obok siebie”](./media/column-definition-side-by-side-format.png "Definicja kolumny w formacie „obok siebie”")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolidacje wykorzystujące struktury organizacyjne tworzone na podstawie firm
-Hierarchie organizacyjne, które zawierają wymiary lub firmy, dynamicznie tworzą definicje drzew raportowania w aplikacji Raportowanie finansowe. Prostym sposobem usprawnienia konsolidacji jest dodanie hierarchii organizacyjnej do raportu w module Raportowanie finansowe. Na podstawie daty raportu aplikacja Raportowanie finansowe wybierze hierarchię organizacyjną na dzień wejścia w życie lub wcześniej, jak pokazano na poniższej ilustracji.
+Hierarchie organizacyjne, które zawierają wymiary lub firmy, dynamicznie tworzą definicje drzew raportowania w aplikacji Raportowanie finansowe. Prostym sposobem usprawnienia konsolidacji jest dodanie hierarchii organizacyjnej do raportu w module Raportowanie finansowe. Na podstawie daty raportu aplikacja Financial reporting wybierze hierarchię organizacyjną na dzień wejścia w życie lub wcześniej, jak pokazano na poniższej ilustracji.
 
 ![Dynamiczne tworzenie definicji drzewa raportowania](./media/dynamically-create-reporting-tree-definitions.png "Dynamiczne tworzenie definicji drzewa raportowania")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolidacje obejmujące eliminacje
 Częstym składnikiem procesu konsolidacji są transakcje eliminacji. W tym przykładzie podczas konsolidacji jest eliminowanych pięć kont: 142600, 211400, 401420, 401180 i 510820. Firmy mogą inaczej skonfigurować swoje konta międzyfirmowe. Na przykład niektóre firmy ustawiają ostatnią cyfrę jako 9, jeśli konto jest używane w transakcjach międzyfirmowych. Niezależnie od wybranej metody znajomość kont międzyfirmowych pozwala wyświetlać eliminacje w skonsolidowanych sprawozdaniach finansowych.
 
-Na poniższej ilustracji przedstawiono definicję kolumny dla skonsolidowanego rachunku zysków i strat. Dla każdej firmy za pomocą filtru wymiaru zdefiniowano trzy międzyfirmowe konta wynikowe. Kolumna D zawiera konta eliminacji tylko dla firmy USMF, a kolumna E zawiera eliminacje tylko dla firmy DEMF. Obie kolumny — D i E — są skonfigurowane tak, aby **nie** były drukowane w sprawozdaniu finansowym.
+Na poniższej ilustracji przedstawiono definicję kolumny dla skonsolidowanego rachunku zysków i strat. Dla każdej firmy za pomocą filtru wymiaru zdefiniowano trzy międzyfirmowe konta wynikowe. Kolumny F, G i H zawierają konta eliminacji tylko dla firm USMF, USRT i DEMF. Te kolumny są skonfigurowane tak, aby **nie** były drukowane w sprawozdaniu finansowym.
 
 ![Skonsolidowane sprawozdanie o dochodach definicji kolumny](./media/column-definition-consolidated-income-statement.png "Skonsolidowane sprawozdanie o dochodach definicji kolumny")
 
@@ -224,6 +223,3 @@ Aby uzyskać prawidłowo przeliczone kwoty podczas używania walut, aplikacja Ra
 Aby uzyskać więcej informacji o konsolidacjach i przeliczaniu walut, zobacz temat nadrzędny tego tematu — [Omówienie konsolidacji finansowych i przeliczania walut](./financial-consolidations-currency-translation.md).
 
 Aby uzyskać więcej informacji na temat sposobu wprowadzania szczegółowych informacji o konsolidacji w trybie online, zobacz [Konsolidacje finansowe online](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -3,52 +3,51 @@ title: Zarządzanie aktualizacjami kosztu standardowego
 description: Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion
+ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 69992
 ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7beeafa6d0bb22a687278ccebc3127409e1ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
+ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435276"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "5024677"
 ---
 # <a name="manage-standard-cost-updates"></a>Zarządzanie aktualizacjami kosztu standardowego
 
 [!include [banner](../includes/banner.md)]
 
-Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji. 
+Aktualizacjami dotyczącymi danych kosztów standardowych można zarządzać za pomocą dwóch różnych metod — metody jednej wersji lub metody dwóch wersji.
 
 Metoda jednej wersji zakłada użycie jednej wersji zawierającej wszystkie rekordy kosztów. Te rekordy obejmują koszty pierwotne i wszystkie aktualizacje kosztów.
 
-Metoda dwóch wersji zakłada użycie jednej wersji z rekordami kosztów pierwotnych i drugiego z rekordami wszystkich aktualizacji kosztów. Główną zaletą metody dwóch wersji jest wyraźne nakreślenie i śledzenie zmian kosztów w oddzielnych wersjach ceny bez naruszania oryginalnej wersji ceny. Metody dwóch wersji można używać do identyfikowania wielu wzrostów kosztów z osobnymi wersjami ceny zawierającymi rekordy wzrostów kosztów. 
+Metoda dwóch wersji zakłada użycie jednej wersji z rekordami kosztów pierwotnych i drugiego z rekordami wszystkich aktualizacji kosztów. Główną zaletą metody dwóch wersji jest wyraźne nakreślenie i śledzenie zmian kosztów w oddzielnych wersjach ceny bez naruszania oryginalnej wersji ceny. Metody dwóch wersji można używać do identyfikowania wielu wzrostów kosztów z osobnymi wersjami ceny zawierającymi rekordy wzrostów kosztów.
 
-**Przykład** 
+## <a name="example"></a>Przykład
 
-Poniżej pokazano, jak używać metod jednej i dwóch wersji do aktualizacji kosztów standardowych i środowisku produkcyjnym. Na przykład aktualizacje, które odzwierciedlają nowe pozycje lub korekty. Załóżmy, że metoda jednej wersji przedstawia koszty standardowe w bieżącym roku. Identyfikator dla tej wersji to 2016-STD. Wersja 2016-STD zawiera bieżące aktywne koszty wszystkich pozycji. Oprócz tego zawiera wszystkie kategorie kosztów związanych z marszrutami oraz wzory obliczeń narzutów znane na początku 2016 r. 2016-STD jest pierwotną wersją wyceny.
+Poniżej pokazano, jak używać metod jednej i dwóch wersji do aktualizacji kosztów standardowych i środowisku produkcyjnym. Na przykład aktualizacje, które odzwierciedlają nowe pozycje lub korekty. Załóżmy, że metoda jednej wersji przedstawia koszty standardowe w bieżącym roku. Identyfikator dla tej wersji to 2020-STD. Wersja 2020-STD zawiera bieżące aktywne koszty wszystkich pozycji. Oprócz tego zawiera wszystkie kategorie kosztów związanych z marszrutami oraz wzory obliczeń narzutów znane na początku 2020 r. 2020-STD jest pierwotną wersją wyceny.
 
--   **Aktualizacja danych o kosztach w metodzie jednej wersji** — w metodzie jednej wersji wersja ceny pierwotnej 2016-STD zawiera wszystkie rekordy kosztów. Aktualizacje kosztu są rejestrowane w 2016-STD i otrzymują stan „Oczekujące”. Koszty oczekujące można wprowadzić ręcznie dla nowych zakupionych towarów lub można je uwzględnić w obliczeniach w celu wykazania odchyleń. Gdy używana jest metoda jednej wersji, obliczenia BOM nie wymagają zasady rezerwowości źródła danych, ponieważ wszystkie aktywne koszty są zawarte w tej wersji ceny. Po aktywacji kosztów oczekujących oryginalna wersja ceny 2016-STD będzie znów zawierać aktywne koszty bieżące.
--   **Metoda dwóch wersji** — W metodzie dwóch wersji aktualizacji danych o kosztach jest wymagana dodatkowa wersja ceny zawierająca wyłącznie aktualizacje. Przyjmijmy, że identyfikator będzie wyglądał następująco: 2016-STD-ZMIANY. Aktualizacje kosztu są rejestrowane w 2016-STD-CHANGES i otrzymują stan „Oczekujące”. W przypadku metody dwóch wersji obliczenia BOM kosztów oczekujących produkowanych elementów wymagają zasady rezerwowości źródła danych. Zasada rezerwowości może zostać wyrażona jako koszty aktywne lub określona wersja ceny 2016-STD, ponieważ oba parametry identyfikują źródło danych o kosztach, jeśli nie istnieje ono w wersji ceny 2016-STD-ZMIANY. Zasada rezerwowości może zostać wyrażona jako koszty aktywne lub określona wersja ceny 2016-STD, ponieważ oba parametry identyfikują źródło danych o kosztach, jeśli nie istnieje ono w wersji ceny 2016-STD-ZMIANY. Po aktywacji kosztów oczekujących dodatkowa wersja ceny 2016-STD-ZMIANY będzie zawierać aktywne koszty bieżące odzwierciedlające aktualizację, a oryginalna wersja ceny 2016-STD pozostanie bez zmian.Identyfikator dla tej wersji to 2016-STD-ZMIANY. Zasada dwóch wersji oznacza, że zasady blokowania oryginalnej wersji ceny powinny zapobiegać aktualizacjom. Dodatkowa wersja ceny powinna zawierać dokładnie takie same zasady co oryginalna wersja ceny z wyjątkiem daty początkowej oraz udostępniać selektywne użycie zasad blokowania zezwalających na aktualizacje. Określona data początkowa powinna zostać zaktualizowana o każdy zbiór zmian uwzględniających zaplanowaną datę aktywacji.
+- **Aktualizacja danych o kosztach w metodzie jednej wersji** — w metodzie jednej wersji wersja ceny pierwotnej 2020-STD zawiera wszystkie rekordy kosztów. Aktualizacje kosztu są rejestrowane w 2020-STD i otrzymują stan Oczekujące. Koszty oczekujące można wprowadzić ręcznie dla nowych zakupionych towarów lub można je uwzględnić w obliczeniach w celu wykazania odchyleń. Gdy używana jest metoda jednej wersji, obliczenia BOM nie wymagają zasady rezerwowości źródła danych, ponieważ wszystkie aktywne koszty są zawarte w tej wersji ceny. Po aktywacji kosztów oczekujących oryginalna wersja ceny 2020-STD będzie znów zawierać aktywne koszty bieżące.
+- **Metoda dwóch wersji** — W metodzie dwóch wersji aktualizacji danych o kosztach jest wymagana dodatkowa wersja ceny zawierająca wyłącznie aktualizacje. Przyjmijmy, że identyfikator będzie wyglądał następująco: 2020-STD-ZMIANY. Aktualizacje kosztu są rejestrowane w 2020-STD-CHANGES i otrzymują stan Oczekujące. W przypadku metody dwóch wersji obliczenia BOM kosztów oczekujących produkowanych elementów wymagają zasady rezerwowości źródła danych. Dzieje się tak, ponieważ dodatkowa wersja wyceny 2020-STD-CHANGES zawiera tylko podzestaw danych kosztów. Zasada rezerwowości może zostać wyrażona jako koszty aktywne lub określona wersja ceny 2020-STD, ponieważ oba parametry identyfikują źródło danych o kosztach, jeśli nie istnieje ono w wersji ceny 2020-STD-ZMIANY. Po aktywacji kosztów oczekujących dodatkowa wersja ceny 2020-STD-CHANGES będzie zawierać aktywne koszty bieżące odzwierciedlające aktualizację, a oryginalna wersja ceny 2020-STD pozostanie bez zmian. Zasada dwóch wersji oznacza, że zasady blokowania oryginalnej wersji ceny powinny zapobiegać aktualizacjom. Dodatkowa wersja ceny powinna zawierać dokładnie takie same zasady co oryginalna wersja ceny z wyjątkiem daty początkowej oraz udostępniać selektywne użycie zasad blokowania zezwalających na aktualizacje. Określona data początkowa powinna zostać zaktualizowana o każdy zbiór zmian uwzględniających zaplanowaną datę aktywacji.
 
-W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do zarządzania aktualizacjami za rok 2016. Można użyć więcej niż jedną dodatkową wersję wyceny, na przykład osobną wersję dla poszczególnych zbiorów aktualizacji. Jeśli używanych jest kilka opcji dodatkowej wyceny, domyślnej wyraża się jako koszty aktywne, ponieważ koszty aktywne są rozciągnięte jest na kilka wersji.
+W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do zarządzania aktualizacjami za rok 2020. Można użyć więcej niż jedną dodatkową wersję wyceny, na przykład osobną wersję dla poszczególnych zbiorów aktualizacji. Jeśli używanych jest kilka opcji dodatkowej wyceny, domyślnej wyraża się jako koszty aktywne, ponieważ koszty aktywne są rozciągnięte jest na kilka wersji.
 
+## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Wymiary finansowe dla przeszacowania kosztu standardowego
 
+Aktywowanie nowej ceny standardowej zwykle powoduje przeszacowanie wartości dostępnych zapasów o transakcje przeszacowania kosztu standardowego. Zazwyczaj w transakcjach są wówczas księgowane wymiary finansowe towaru. Aby jednak określić, czy i w jaki sposób są księgowane wymiary finansowe, należy za pomocą funkcji [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włączyć funkcję o nazwie *Opcje domyślnego wymiaru finansowego dla przesądu kosztów standardowych zapasów*. Po włączeniu tej funkcji wybierz opcje **Zarządzanie kosztami > Ustawienia zasad księgowania zapasów > Parametry** i ustaw jedną z następujących wartości nowej listy rozwijanej **źródła wymiarów finansowych**:
 
-
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- **Brak** — nie zaksięgowano wymiarów finansowych w przypadku transakcji z przeszacowaniem w walucie obcej. Jeśli struktura konta obejmuje wymagany wymiar finansowy, proces przeszacowania nadal będzie uruchamiany, ale utworzy wpisy księgowe bez wymiarów finansowych. W takim przypadku użytkownicy otrzymają najpierw komunikat ostrzegawczy, aby w razie potrzeby anulować przeszacowanie.
+- **Tabela** — wymiary finansowe pozycji są księgowane w ramach transakcji przeszacowania. Jest to ustawienie domyślne i jest zgodne z oryginalnym zachowaniem systemu bez włączania funkcji *Opcje domyślnego wymiaru finansowego dla przeszacowania kosztów standardowych zapasów*.
+- **Zaksięgowanie** — oznacza, że wymiary finansowe przeszacowywanej transakcji zostały zaksięgowane w transakcjach z przeszacowaniem. Domyślnie wymiary finansowe z konta magazynowego oryginalnej transakcji są używane zarówno dla konta magazynowego, jak i konta przeszacowania.

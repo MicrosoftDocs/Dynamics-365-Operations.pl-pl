@@ -1,6 +1,6 @@
 ---
 title: Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
-description: Ten przewodnik zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania (RE) poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER.
+description: Ten temat zawiera informacje, jak ponownie użyć istniejącej logiki aplikacji w konfiguracjach elektronicznego raportowania poprzez wywołanie wymaganych metod klas aplikacji w wyrażeniach ER.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2de6464aaceadd60a82a70f428f42cd4f864eb8
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682028"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092092"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>Projektowanie wyrażeń ER do wywoływania metod klas aplikacji
 
@@ -157,6 +157,3 @@ W celach testowych wykonaj mapowanie formatu z użyciem pliku SampleIncomingMess
 2. Kliknij przycisk OK.
     * Przejrzyj dane wyjściowe w formacie XML, które reprezentują dane zaimportowane z wybranego pliku i przeniesione do modelu danych. Należy zauważyć, że tylko 3 wiersze zaimportowanego pliku TXT zostały przetworzone. Nieprawidłowy kod IBAN w wierszu 4 został pominięty, a w dzienniku informacyjnym pojawił się komunikat o błędzie.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

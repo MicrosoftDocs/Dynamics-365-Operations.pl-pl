@@ -1,6 +1,6 @@
 ---
 title: Przekazywanie konfiguracji do usługi Lifecycle Services
-description: Ten temat wyjaśnia, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może utworzyć nową konfigurację raportowania elektronicznego (ER) i przekazać ją do usługi Microsoft Dynamics Lifecycle Services (LCS).
+description: Ten temat wyjaśnia sposób tworzenia nowej konfiguracji modułu Raportowanie elektroniczne (ER) i przekazywania jej do usług Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684170"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092548"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Przekazywanie konfiguracji do usługi Lifecycle Services
 
@@ -145,6 +145,3 @@ W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc.
     Przekazana konfiguracja ER powinna zostać wyświetlona na liście.
 
     Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia, jeśli dostawcy mają dostęp do tego projektu usługi LCS.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

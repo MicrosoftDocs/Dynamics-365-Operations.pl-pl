@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594989"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053420"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Włączanie wielu metod dostawy dla zamówień klientów
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 W Microsoft Dynamics 365 Commerce w wersji 10.0.16 i nowszej organizacje mogą definiować wiele trybów dostawy, które klienci lub współpracownicy mogą wybrać podczas tworzenia zamówienia, które będzie odebrane w sklepie. W ten sposób organizacje mogą oferować klientom wiele opcji odbioru. Na przykład wielu sprzedawców oferuje klientom możliwość wyboru odbioru w sklepie lub odbioru „przy krawężniku”. System Commerce obsługuje konfigurację różnych trybów odbioru. Użytkownicy mogą korzystać z nich podczas tworzenia zamówień dla klientów w ramach dowolnego kanału handlowego (elektroniczny, call center, sklep).
 
@@ -86,6 +85,3 @@ Jeśli dla kanału jest dostępnych wiele trybów dostawy — odbioru, w momenci
 ## <a name="considerations-for-distributed-order-management"></a>Informacje ważne dla funkcji zarządzania zamówieniami rozdzielonymi
 
 [Funkcje zarządzania zamówieniami rozproszonymi (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) w module Commerce ignorują wszystkie wiersze sprzedaży oznaczone do odbioru w sklepie. Te funkcje zostały zaktualizowane, aby upewnić się, że wiersze sprzedaży połączone z skonfigurowanymi metodami dostawy odbioru pomijają logikę modelu DOM i nie zostaną ponownie przydzielone do nowego magazynu realizacji.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

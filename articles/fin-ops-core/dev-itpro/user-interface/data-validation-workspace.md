@@ -1,6 +1,6 @@
 ---
 title: Obszar roboczy Lista kontrolna weryfikacji danych
-description: Obszar roboczy Lista kontrolna weryfikacji danych umożliwia śledzenie procesów sprawdzania poprawności danych dla różnych firm, obszarów i osób. Lista kontrolna może być używana podczas nowej implementacji, po wykonaniu uaktualnienia lub po migracji.
+description: Obszar roboczy Lista kontrolna weryfikacji danych umożliwia śledzenie procesów sprawdzania poprawności danych dla różnych firm, obszarów i osób.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,12 +14,12 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687582"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092338"
 ---
 # <a name="data-validation-checklist-workspace"></a>Obszar roboczy Lista kontrolna weryfikacji danych
 
@@ -39,8 +39,7 @@ Kafelki **Podsumowanie** zawierają przegląd procesu, a wskaźniki ułatwiają 
 
 W sekcji **Zadania i stan** stan całego projektu sprawdzania poprawności danych jest wyświetlany na różne sposoby: według firmy, obszaru i listy zadań. Można również wybrać filtr pokazujący stan dla określonego przedsiębiorstwa. Każda karta stanu pokazuje podział według procentu ukończenia oraz według liczby pozostałych zadań.
 
-Na ostatniej karcie jest szczegółowa lista zadań. Ta lista pokazuje wszystkie zadania.
-Listę zadań można filtrować na kilka sposobów. Kliknij przycisk **Edytuj zadanie**, aby zmienić stan zadania i lub przydzielić zadanie. Kliknij przycisk **Załączniki**, aby wyświetlić załączniki do zadania.
+Na ostatniej karcie jest szczegółowa lista zadań. Ta lista pokazuje wszystkie zadania. Listę zadań można filtrować na kilka sposobów. Kliknij przycisk **Edytuj zadanie**, aby zmienić stan zadania i lub przydzielić zadanie. Kliknij przycisk **Załączniki**, aby wyświetlić załączniki do zadania.
 
 Nazwa zadania jest hiperłączem do strony, na którą użytkownik musi przejść, aby ukończyć pracę. To hiperłącze można ustawić przy użyciu pola **Nazwa elementu menu** podczas edytowania lub tworzenia zadania z formularza **Konfiguruj projekt weryfikacji danych**.
 
@@ -57,6 +56,3 @@ Aby można było używać obszaru roboczego **Lista kontrolna weryfikacji danych
 Za pomocą obszarów zadań można grupować zadania weryfikacji danych w logiczne obszary własności w obrębie organizacji. Obszarami zadań mogą być na przykład Rozrachunki z dostawcami, Rozrachunki z odbiorcami lub Księga główna.
 
 Pole **Nazwa elementu menu** jest skojarzone z pracą w zadaniu i pozwala przejść bezpośrednio do skojarzonej strony z łącza zadania w obszarze roboczym. Na przykład zadanie weryfikacji danych polegające na wygenerowaniu raportu **Wiekowanie rozrachunków z dostawcami** dla modułu Rozrachunki z dostawcami może być połączone ze stroną **Raport o wiekowaniu rozrachunków z dostawcami** strony.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

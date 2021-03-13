@@ -1,6 +1,6 @@
 ---
 title: ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej
-description: W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu lub Deweloper raportowania elektronicznego może zarządzać konfiguracją formatu raportowania elektronicznego (ER).
+description: W tym temacie opisano sposób obsługi konfiguracji formatu raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 17fe6d772040c73959685920743225c128421951
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684268"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092573"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Uaktualnianie formatu poprzez przyjęcie jego nowej wersji bazowej
 
@@ -243,6 +243,3 @@ W tym celu firma Proseware, Inc. musi zmienić wersję konfiguracji stanowiącą
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testowanie niestandardowego formatu generowania plików płatności
 W równoległej sesji Finance and Operations wykonaj procedurę „Używanie utworzonego formatu do generowania elektronicznych dokumentów płatności”. W parametrach metody płatności elektronicznych wybierz utworzony format „BACS (niestandardowy, fikcyjny, brytyjski)”. Upewnij się, że utworzony plik płatności zawiera ostatnio wprowadzony przez firmę Proseware, Inc. węzeł XML przedstawiający kod konta IBAN zgodnie wymogami regionalnymi. Plik powinien również zawierać ostatnio wprowadzony przez firmę Litware, Inc. węzeł XML przedstawiający kod banku SWIFT zgodnie wymogami krajowymi.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

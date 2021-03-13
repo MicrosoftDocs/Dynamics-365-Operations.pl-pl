@@ -1,6 +1,6 @@
 ---
 title: ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 2 — Rozszerzanie modelu danych)
-description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników).
+description: W tym temacie opisano sposób konfigurowania formatu raportowania elektronicznego (ER) do używania plików zarządzania dokumentami (załączników) w danych wyjściowych ER. (część 2)
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5923a14f4ba544154bf40391896d29826d3ce1b1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9cd06cdfd9bae57577c2e3ec97848e319b197f41
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681818"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092598"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-2---extend-data-model"></a>ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 2 — Rozszerzanie modelu danych)
 
@@ -91,6 +91,3 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 26. Kliknij przycisk Wykonaj.
 27. Kliknij przycisk OK.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

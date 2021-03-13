@@ -1,7 +1,7 @@
 ---
 title: Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 description: Ten temat zawiera informacje dotyczące komórkowego obszaru roboczego Zatwierdzenia zamówienia zakupu, w którym można wyświetlać zamówienia zakupu i reagować na niej poprzez różne czynności. Można na przykład zatwierdzić lub odrzucić zamówienie zakupu.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 30211
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68676fba895dcc91fd3dba065788f3be3a6e9ee4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7f952f3af36620a20a5c991fd9e1ccfd56119f47
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435392"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022313"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobilny obszar roboczy Zatwierdzenie zamówienia zakupu
 
@@ -113,6 +112,3 @@ Po przejrzeniu przypisanego Ci zamówienia zakupu i zapoznaniu się z instrukcja
 5. Wybierz odpowiednią akcję.
 6. Na stronie **Wykonaj zadanie** wprowadź komentarz. Należy zauważyć, że po wybraniu akcji **Delegowanie** musisz wybrać użytkownika, któremu zadanie zostanie delegowane.
 7. Wybierz opcję **Gotowe**. Po odświeżeniu obszaru roboczego zamówienie zakupu przestanie być widoczne na liście. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

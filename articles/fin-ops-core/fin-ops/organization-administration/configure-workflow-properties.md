@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bd3c9bea010099f83d16dad70261bc2d46a1dac
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: e3cb5dc59373b7af76fffa1b1c59728c84dfb5fb
+ms.sourcegitcommit: fd62ab3d399b0d6ea0d362f1d403a300e84a576d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693289"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "5067630"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurowanie właściwości przepływu pracy
 
@@ -73,6 +73,9 @@ Istnieje możliwość udostępniania instrukcji użytkownikom, którzy będą pr
     4. W polu **Przetłumaczony tekst** wprowadź tekst.
     5. Aby spersonalizować tekst, możesz wstawić symbole zastępcze. Aby uzyskać instrukcje dotyczące sposobu wprowadzania symbolu zastępczego, zobacz krok 3.
     6. Kliknij przycisk **Zamknij**.
+
+> [!NOTE]
+> Nie można dodać symboli zastępczych, używając funkcji kopiowania i wklejania, ponieważ informacje docelowe nie zostały poprawnie wklejone. Użyj interfejsu, aby dodać symbole zastępcze.
 
 ## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Określ, kiedy ten przepływ pracy jest używany w warunkach aktywacji
 
@@ -179,6 +182,3 @@ Aby wprowadzić komentarze dotyczące zmian zastosowanych w przepływie pracy, n
 2. W polu **Wprowadź komentarze dotyczące przepływu pracy** wprowadź komentarze.
 3. Przejrzyj wprowadzone komentarze. Po dodaniu komentarzy nie można ich modyfikować.
 4. Kliknij przycisk **Dodaj**, aby dodać komentarze do obszaru **Historia komentarzy**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

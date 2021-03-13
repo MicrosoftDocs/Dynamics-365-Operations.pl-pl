@@ -1,6 +1,6 @@
 ---
 title: Projektowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji
-description: Aby wykonać kroki opisane w tej procedurze, należy najpierw wykonać procedurę „ER Generowanie dokumentów z aktualizacją danych aplikacji (Część 1 — Importowanie konfiguracji)”.
+description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) do generowania dokumentu elektronicznego. (część 1 — importowanie konfiguracji).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d099836ba00ffa1d4fd002af4ac3e6045b41c6a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 417c419dc6925bac337fe74a2f057395316ec75d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684602"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092929"
 ---
 # <a name="design-configurations-to-generate-documents-that-have-application-data"></a>Projektowanie konfiguracji w celu generowania dokumentów zawierających dane aplikacji
 
@@ -58,6 +58,3 @@ Przed rozpoczęciem zmień kontekst kraju firmy DEMF z DEU (Niemcy) na BEL (Belg
 10. Zamknij stronę.
 11. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

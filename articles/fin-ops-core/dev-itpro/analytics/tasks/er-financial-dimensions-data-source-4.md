@@ -1,6 +1,6 @@
 ---
 title: ER Używanie wymiarów finansowych jako źródła danych (Część 4 — Wykonanie raportu)
-description: W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować model raportowania elektronicznego (ER), aby używał on wymiarów finansowych jako źródła danych w raportach ER.
+description: W tym temacie opisano sposób konfigurowania modelu raportowania elektronicznego w celu używania wymiarów finansowych jako źródła danych dla raportów ER. (część 4)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb7f49310aa25ff7c17ab4bcd50e1842be84fe2d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c1fe332de84339d3369ba495ca13f50c4901f366
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684746"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092282"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 4 — Wykonanie raportu)
 
@@ -49,6 +49,3 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 ![Strona konfiguracji raportowania elektronicznego](../media/er-financial-dimensions-guides-run3.png)
     * Przejrzyj wygenerowane dane wyjściowe. Dla każdej transakcji wybranej partii są przedstawiane wymiary finansowe z odpowiedniego zestawu wymiarów. Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia .  
 ![Strona konfiguracji raportowania elektronicznego](../media/er-financial-dimensions-guides-run4.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

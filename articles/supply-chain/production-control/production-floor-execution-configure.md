@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
-ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
+ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664303"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077484"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -65,6 +64,12 @@ Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej,
 
 - Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
 
+### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
+
+Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykonywania produkcji. Pracownicy mogą użyć tej karty, aby wybrać składnik majątku połączony z zasobem maszynowym, który jest w obrębie wybranego filtru listy zadań. Dla wybranego składnika majątku dla urządzenia pracownik może wyświetlić stan i kondycję składnika majątku z wartości liczników dla maksymalnie czterech wybranych liczników. Jeżeli chcesz skorzystać z tej funkcji, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
 Aby utworzyć i zarządzać konfiguracjami urządzeń, przejdź do **Kontrola produkcji \> Konfiguracja \> Uruchomienie produkcji \> Konfigurowanie interfejsu wykonania hal produkcyjnych**. Na stronie **Konfigurowanie interfejsu wykonania hal produkcyjnych** wyświetlana jest lista istniejących konfiguracji. Na tej stronie można wykonać następujące akcje:
@@ -94,6 +99,3 @@ Zadanie wsadowe okresowo oczyszcza wpisy w tabeli odwołań dla urządzeń, któ
 1. W okienku akcji wybierz opcję **Oczyść konfiguracje klientów**.
 1. W oknie dialogowym **Oczyść konfigurację klientów** w polu **Liczba dni** ustaw liczbę dni nieaktywności (przed dniem dzisiejszym), które mają być brane pod uwagę. Wszystkie konfiguracje i rekordy logowania dla urządzeń, które nie były aktywne w tym czasie, zostaną usunięte.
 1. Wybierz przycisk **OK**, aby oczyścić odpowiednie konfiguracje na podstawie **Liczby dni**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

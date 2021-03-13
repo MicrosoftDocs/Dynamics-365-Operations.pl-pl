@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 40c6794fdf25da44a75aba4a502a89966c0ec4d0
-ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
+ms.openlocfilehash: 4b89e911f3c6eb8ffa0cfe049ef9bfc2ed306021
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4435533"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077638"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -41,11 +40,11 @@ Pozostałe sekcje w tym temacie opisują sposób interakcji pracowników z inter
 
 ## <a name="all-jobs-tab"></a>Karta wszystkie zadania
 
-Na karcie **Wszystkie zadania** znajduje się lista zadań pokazująca wszystkie zadania produkcyjne o stanie *Nierozpoczęte*, *Zatrzymane* lub *Rozpoczęte*.
+Na karcie **Wszystkie zadania** znajduje się lista zadań pokazująca wszystkie zadania produkcyjne o stanie *Nierozpoczęte*, *Zatrzymane* lub *Rozpoczęte*. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
 
 ![Karta wszystkie zadania](media/pfei-all-jobs-tab.png "Karta wszystkie zadania")
 
-Lista zadań ma następujące kolumny: (Liczby odpowiadają liczbom na poprzedniej ilustracji).
+Lista zadań ma następujące kolumny: Liczby odpowiadają liczbom na poprzedniej ilustracji.
 
 1. **Kolumna wyboru** — skrajna kolumna z lewej strony używa znaczników wyboru w celu wskazania zadań wybranych przez pracownika. Pracownicy mogą wybierać wiele zadań na liście jednocześnie. Aby wybrać wszystkie zadania z listy, zaznacz znacznik wyboru w nagłówku kolumny. W przypadku wybrania jednego zadania szczegóły dotyczące tego zadania są wyświetlane w dolnej części strony.
 1. **Kolumna stanu zadania** — w tej kolumnie są używane symbole wskazujące stan każdego zadania. Zadania bez symbolu w tej kolumnie mają stan *Nierozpoczęty*. Zielony trójkąt wskazuje zadania o stanie *Rozpoczęte*. Dwie żółte linie pionowe wskazują zadania o stanie *Zatrzymane*.
@@ -60,9 +59,11 @@ Lista zadań ma następujące kolumny: (Liczby odpowiadają liczbom na poprzedni
 
 ## <a name="active-jobs-tab"></a>Karta aktywne zadania
 
+Na kartach **Aktywne zadania** znajduje się lista wszystkich zadań, które już rozpoczął zalogowany pracownik. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
+
 ![Karta aktywne zadania](media/pfei-active-jobs-tab.png "Karta aktywne zadania")
 
-Lista zadań na karcie **Aktywne zadania** ma następujące kolumny:
+Lista aktywnych zadań ma następujące kolumny:
 
 - **Kolumna wyboru** — skrajna kolumna z lewej strony używa znaczników wyboru w celu wskazania zadań wybranych przez pracownika. Pracownicy mogą wybierać wiele zadań na liście jednocześnie. Aby wybrać wszystkie zadania z listy, zaznacz znacznik wyboru w nagłówku kolumny. W przypadku wybrania jednego zadania szczegóły dotyczące tego zadania są wyświetlane w dolnej części strony.
 - **Zamówienia** — w tej kolumnie jest wyświetlany numer zlecenia produkcyjnego dla zadania.
@@ -72,6 +73,28 @@ Lista zadań na karcie **Aktywne zadania** ma następujące kolumny:
 - **Zakończono** — w tej kolumnie jest wyświetlana ilość, która została już zakończona dla zadania.
 - **Wyrzucono** — w tej kolumnie jest wyświetlana ilość, która została już wyrzucona dla zadania.
 - **Pozostało** — w tej kolumnie jest wyświetlana ilość pozostała do wypełnienia dla zadania.
+
+## <a name="my-machine-tab"></a>Karta Moje urządzenie
+
+Na karcie **Moje urządzenie** pracownicy mogą wybrać składnik majątku, który jest połączony z zasobem urządzenia w obrębie filtru ustawionego na karcie **Wszystkie zadania**. Pracownik może następnie wyświetlić stan i kondycję wybranego składnika majątku, odczytując wartości dla maksymalnie czterech wybranych liczników oraz listy ostatnich żądań konserwacji oraz zarejestrowanych przestojów. Pracownik może także zażądać konserwacji wybranego składnika majątku oraz zarejestrowania i edycji przestoju urządzenia. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
+ 
+![Karta Moje urządzenie](media/pfei-my-machine-tab.png "Karta Moje urządzenie")
+
+Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby odpowiadają liczbom na poprzedniej ilustracji.
+
+1. **Urządzenie — składnik majątku** — umożliwia wybór składnika majątku do śledzenia. Rozpocznij wpisywanie nazwy, aby wybrać z listy pasujących składników majątku, lub wybierz ikonę szkła powiększającego, aby wybrać z listy wszystkich składników majątku skojarzonych z zasobami w filtrze listy zadań.
+
+    > [!NOTE]
+    > Użytkownicy aplikacji Supply Chain Management mogą w razie potrzeby przypisać zasób do każdego składnika majątku, korzystając ze strony **Wszystkie składniki majątku** (na karcie **Środki trwałe** przy użyciu listy rozwijanej **Zasób**). Aby uzyskać więcej informacji, zobacz [Tworzenie składnika majątku](../asset-management/objects/create-an-object.md).
+
+1. **Ustawienia** — wybranie ikony narzędzia pozwala otworzyć okno dialogowe, w którym można wybrać liczniki do wyświetlenia dla wybranego składnika majątku dla urządzenia. Wartości tych liczników są wyświetlane w górnej części karty **Zarządzanie składnikami majątku**. Menu **Ustawienia** (widoczne na poniższym zrzucie ekranu) umożliwia włączenie maksymalnie czterech liczników. Dla każdego licznika, który chcesz włączyć, wybierz licznik przy użyciu pola wyszukiwania u góry kafelka. W polu wyszukiwania są wymienione wszystkie liczniki skojarzone ze składnikiem majątku wybranym u góry strony **Zarządzanie składnikami majątku**. Ustawienie każdego licznika w celu monitorowania wartości **zagregowanej** lub ostatniej wartości **rzeczywistej**. Na przykład, jeśli ustawisz licznik, który śledzi czas pracy komputera w godzinach, należy ustawić go na **Zagregowana**. Jeśli licznik jest ustawiany w celu pomiaru ostatniej zaktualizowanej temperatury lub ciśnienia, należy ustawić dla niego wartość **Rzeczywista**. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okienko dialogowe.
+
+    ![Karta Moje urządzenie](media/pfei-my-machine-tab-settings.png "Karta Moje urządzenie")
+
+1. **Zażądaj konserwacji** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można utworzyć żądanie konserwacji. Możesz podać opis i uwagę. Żądanie zostanie przesłane do użytkownika aplikacji Supply Chain Management, który będzie mógł przekonwertować żądanie konserwacji na zlecenie pracy dotyczące konserwacji.
+1. **Zarejestruj przestój** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można zarejestrować przestój urządzenia. Możesz wybrać kod przyczyny i wprowadzić okres przestoju w postaci zakresu dat/godzin. Rejestracja przestoju urządzania jest używana do obliczenia wydajności składnika majątku dla urządzenia.
+1. **Wyświetl lub edytuj** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można edytować lub wyświetlać istniejące rekordy przestoju.
+
 
 ## <a name="starting-and-completing-production-jobs"></a>Rozpoczynanie i kończenie zadań produkcyjnych
 
@@ -124,7 +147,7 @@ Na przykład Shannon, pracownica hali w firmie Contoso, chce uczestniczyć w spo
 
 W obu przypadkach, po potwierdzeniu przez Shannon wyboru, przechodzi do strony logowania lub strony, która będzie czekać, aż potwierdzi, że wróciła ze swojej pośredniej działalności. Wyświetlana strona zależy od konfiguracji interfejsu wykonywania pomieszczeń produkcyjnych. (Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](production-floor-execution-configure.md).)
 
-## <a name="working-on-breaks"></a>Praca z przerwami
+## <a name="registering-breaks"></a>Rejestrowanie przerw
 
 Pracownicy mogą rejestrować przerwy. Przerwy można definiować elastycznie, zgodnie z opisem w [Płaca oparta na rejestracjach](pay-based-on-registrations.md).
 
@@ -146,6 +169,3 @@ Pracownicy mogą otwierać dokument dołączony do stanowiska, wybierając odpow
 1. Pracownik pracuje z przewodnikiem w celu uzyskania informacji o zadaniu.
 
 Aby uzyskać więcej informacji na temat sposobu tworzenia, przypisywania i używania przewodników dla HoloLens, zapoznaj się z tematem [Zapewnianie przewodników Guides rzeczywistości mieszanej dla pracowników w produkcji](instruction-guides-in-production-overview.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

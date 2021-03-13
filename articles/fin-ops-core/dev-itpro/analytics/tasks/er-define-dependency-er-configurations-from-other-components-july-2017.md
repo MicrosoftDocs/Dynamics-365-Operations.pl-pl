@@ -1,6 +1,6 @@
 ---
-title: Definiowanie zależności konfiguracji ER od innych składników
-description: W celu wykonania tych kroków należy najpierw wykonać kroki w przewodniku po zadaniu ER Zarządzanie konfiguracjami mapowania modelu oraz mieć dostęp do usługi Microsoft Dynamics Lifecycle Services (LCS).
+title: Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
+description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego (ER) i określenia jej zależności od innych składników oprogramowania.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/23/2017
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681980"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092157"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji ER od innych składników
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników
 
 [!include [banner](../../includes/banner.md)]
 
@@ -139,6 +139,3 @@ Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytoriu
 26. W drzewie rozwiń węzeł „Przykładowy model danych”.
     * Należy zauważyć, że konfiguracja mapowania modelu „Przykładowe mapowanie” została pobrana wraz z wybraną konfiguracją modelu danych. Oba pliki są pobierane razem, ponieważ model „Przykładowe mapowanie” został zdefiniowany jako implementujący wybrany model danych i ma zastosowanie do aplikacji. Konfiguracja „Przykładowe mapowanie (alternatywne)” nie została pobrana, ponieważ nie jest spełniony warunek dla wymaganej wersji aplikacji.   
     * Gdy się zalogujesz do programu Finance and Operations, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

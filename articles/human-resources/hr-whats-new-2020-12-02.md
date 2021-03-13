@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669184"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080045"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 2 grudnia 2020 r.
 
@@ -61,7 +60,7 @@ W tej wersji uwzględniono następujące poprawki błędów.
 | 514087 | BenefitEligibilityProcessResult powinien zawierać element data/godzina, który został użyty podczas przetwarzania. | Wynik przetwarzania BenefitEligibity obejmuje obecnie sygnaturę data/godzina dla ostatniego przetwarzania, której wcześniej brakowało. |
 | 526903 | Rejestracja świadczenia nie powiedzie się w przypadku planów z osobami zależnymi, gdy opcja **Automatyczny wybór osób wyznaczonych** jest włączona w opcji **Udostępniane parametry zasobów ludzkich**. | Rozwiązano błąd, w którym rejestracja świadczeń nie była możliwa dla osób pozostających na utrzymaniu, gdy włączona została opcja **Automatyczny wybór osób wyznaczonych** dla domyślnych osób wyznaczonych. |
 | 521922 | Parametr **Pokaż nieobecność bez szczegółu** pokazuje szczegóły wniosków o czas wolny w kalendarzu nieobecności zespołu. | Typ urlopu, kolor typu urlopu i szczegóły dnia były wyświetlane w kalendarzu nieobecności zespołu, jeśli opcja **Pokaż nieobecność bez szczegółu** została ustawiona na **Tak** w opcji **Parametry urlopów i nieobecności**. Zostało to rozwiązane, więc teraz typ urlopu nie jest wyświetlany, a domyślny kolor typu urlopu (ciemnoniebieski) jest używany dla wszystkich typów urlopów w kalendarzu nieobecności zespołu. |
-| 527316 | Zmiany tytułu dla zadania, stanowiska i powiadomień pracownika nie są synchronizowane. | Zbiór tytułu został wcześniej dodany do jednostek zadania, stanowiska i pracownika. Synchronizacja tego zbioru działa w przypadku synchronizacji modułu Human Resources z usługą Common Data Service, ale nie działała w przypadku powiadomień z usługi Common Data Service. Zostało to rozwiązane. |
+| 527316 | Zmiany tytułu dla zadania, stanowiska i powiadomień pracownika nie są synchronizowane. | Zbiór tytułu został wcześniej dodany do jednostek zadania, stanowiska i pracownika. Synchronizacja tego zbioru działa w przypadku synchronizacji modułu Human Resources z usługą Dataverse, ale nie działała w przypadku powiadomień z usługi Dataverse. Zostało to rozwiązane. |
 | 512275 | Umożliwia usunięcie opcji koloru z **Parametry urlopów i nieobecności**. | Teraz, gdy kolory są zdefiniowane dla typu urlopu, opcje kolorów nie są już potrzebne w opcji **Parametry urlopów i nieobecności**, więc zostały usunięte. |
 | 437112 | Mylący tekst komunikatu o błędzie podczas przypisywania stanowiska pracownika. | Zaktualizowano komunikat o błędzie podczas zatrudniania pracownika i próby przypisania pracownika do stanowiska, które nie jest aktywne. Zaktualizowano komunikat **Określone stanowisko nie jest aktywne na dzień rozpoczęcia zatrudnienia. Sprawdź czas trwania tego stanowiska.** |
 | 527816 | Problemy z wydajnością na stronie **Czas wolny**. | Zwiększona wydajność na stronie **Czas wolny**. |
@@ -92,6 +91,3 @@ Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, za
 [Omówienie rozwiązania Dynamics 365 Human Resources 2020, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
