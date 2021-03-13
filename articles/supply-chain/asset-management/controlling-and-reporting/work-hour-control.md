@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0d2f4e86b5dec84d4a24db6a4f9f9f16f6a765bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435117"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018478"
 ---
 # <a name="work-hour-control"></a>Kontrola godzin pracy
 
@@ -74,6 +73,3 @@ Na poniższym zrzucie ekranu pokazano przykład obliczania **Formant godzin skł
 Innym sposobem obliczenia godziny jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie należy kliknąć przycisk **Formant godzin** na skróconej karcie **Ogólne**. Wybrane środki trwałe są automatycznie wstawiane do pola **Składnik majątku** na skróconej karcie **Rekordy do uwzględnienia**. Kliknij **OK** woknie dialogowym **Formant godzin składnika majątku**, a następnie zostanie wyświetlona wartość obliczona dla wybranych składników. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435419"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020211"
 ---
 # <a name="procurement"></a>Zaopatrzenie
 
@@ -100,6 +99,3 @@ Poniższa ilustracja przedstawia przykład strony **Zamówienie zakupu** z nacis
 
 Podobnie, aby wyświetlić lub wprowadzić numer działania powiązany z wierszem zapotrzebowania na zakup zlecenia pracy, na stronie listy **Zapotrzebowanie na zakup zlecenia pracy** należy wybrać rekord zapotrzebowania na zakup, a następnie w kolumnie **Zapotrzebowanie na zakup** wybrać łącze dla tego zapotrzebowania. Pole **Numer działania** można znaleźć na karcie **Projekt** na skróconej karcie **Szczegóły wiersza**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

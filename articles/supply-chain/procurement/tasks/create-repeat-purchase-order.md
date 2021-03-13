@@ -1,7 +1,7 @@
 ---
 title: Tworzenie zamówienia powtórnego zakupu
 description: W tym temacie pokazano, jak utworzyć powtarzalne zamówienie zakupu poprzez skopiowanie wierszy z wcześniejszego dokumentu zamówienia zakupu do nowego lub istniejącego zamówienia zakupu.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/29/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bf5e92ad6bc62dd008a51aacca891cb7253a723
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435574"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017349"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Tworzenie zamówienia powtórnego zakupu
 
@@ -70,6 +69,3 @@ Zamiast kopiować całe zamówienie, częściej tworzy się nowe zamówienie zak
 4. Wybierz wiersz dla żadanego zamówienia zakupu. Należy zauważyć, że został zaznaczony również pojedynczy wiersz zamówienia znajdujący się w tym zamówienia zakupu.  
 5. Kliknij przycisk **OK**. Dodatkowy wiersz zamówienia został dodany do zamówienia zakupu.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

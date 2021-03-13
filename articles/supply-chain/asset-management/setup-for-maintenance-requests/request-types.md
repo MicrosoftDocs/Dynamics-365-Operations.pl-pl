@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d353f084e0d3e056f1b5ff5af6437ba211def8ec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56a83457097b64d195eec53000b29b2f16251772
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435335"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019336"
 ---
 # <a name="maintenance-request-types"></a>Typy żądania konserwacji
 
@@ -45,6 +44,3 @@ Typ żądania konserwacji określa przynależność do grupy stanów cyklu życi
 Na poniższej ilustracji pokazano przykład strony **Typy żądań konserwacji**.
 
 ![Strona Typy żądania konserwacji](media/07-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

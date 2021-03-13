@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435330"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020661"
 ---
 # <a name="asset-management-parameters"></a>Parametry zarządzania składnikami majątku
 
@@ -34,21 +33,20 @@ W module Zarządzanie składnikami majątku należy skonfigurować ogólne param
 > [!NOTE]
 > Aby skonfigurować system obejmujący dane demonstracyjne dotyczące testowania funkcji Zarządzania składnikami majątku, zapoznaj się z tematem [Wdrażanie środowiska demonstracyjnego](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md).
 
-Łącze **Składniki majątku**
+## <a name="the-assets-tab"></a>Karta Składniki majątku
+
+Karta **Składniki majątku** zawiera następujące ustawienia:
 
 - **Domyślną lokalizacją czynności konserwacyjnych** jest standardowa lokalizacja czynności konserwacyjnych, która jest automatycznie wybierana w składnikach majątku podczas tworzenia nowych składników majątku.  
 - W polu **Standardowy kalendarz** wybierz kalendarz, który ma być używany do obliczania wskaźników KPI składnika majątku, jeśli składnik majątku nie jest zaznaczony.  
 - W polu **Widok** wybierz widok standardowy, który jest wyświetlany po otwarciu **Widok składnika majątku** (**Zarządzanie składnikami majątku** > **Wspólne** > **Składniki majątku** > **Widok składników majątku**).
 - **Domyślny typ żądania** to standardowy typ żądania konserwacji, który jest wybierany automatycznie podczas tworzenia nowego żądania.  
-- Jeśli chcesz utworzyć projekty, które odnoszą się do składników majątku, relacje projektu dotyczące wyboru **głównego projektu**, **hierarchii projektu** i opcji **automatycznego tworzenia projektów** są skonfigurowane w **parametrach zarządzania składnikami majątku**.  
-- W polu **maska projektu zlecenia pracy** definiujesz liczbę projektów podrzędnych dozwolonych dla zleceń pracy i podrzędnych składników majątku. Maska zlecenia pracy służy do definiowania, ile zleceń pracy mogą być tworzone na składnik majątku i używane w projekcie zadania pokrewnego zlecenia pracy. Maska zlecenia pracy jest ustawiona w polu **Maska powiązanego zlecenia pracy** w **parametrach zarządzania aktywami** (**Zarządzanie składnikami majątku** > **Ustawienia** > **Parametry zarządzania składnikami majątku** > **Zlecenia pracy**).  
-    >[!NOTE]
-    >Format dla maski pokrewnego zlecenia pracy to kilka znaków skrótu (#), w zależności od maksymalnej liczby zleceń pracy, które mają zostać utworzone na składniku majątku. Przykład: ## pozwala na utworzenie do 99 podprojektów.  
 - Prognozy dotyczące typów zadań są przechowywane w projekcie wybranym w polu **Projekt prognozy**. Dla każdego typu zadania nowe działanie jest tworzone automatycznie w projekcie prognozy. Prognozy dotyczące typu zadania są następnie zapisywane w projekcie prognozy.  
-- W polu **Model** wybierz model prognozy używany dla typu zadania i prognoz zleceń pracy.  
+- W polu **Model** wybierz model prognozy używany dla typu zadania i prognoz zleceń pracy.
 
+## <a name="the-work-orders-tab"></a>Karta Zlecenia pracy
 
-Łącze **Zlecenia pracy**
+Karta **Zlecenia pracy** zawiera następujące ustawienia:
 
 - **Domyślny typ zlecenia** definiuje ustawienia standardowe podczas tworzenia zlecenia pracy.  
 - **Typ zlecenia prewencyjnego** definiuje typ zlecenia pracy używany podczas tworzenia zleceń pracy z planów konserwacji. Jeśli to pole pozostanie puste, używany jest typ zlecenia pracy określony w polu **Domyślny typ zlecenia pracy**.  
@@ -67,8 +65,9 @@ W module Zarządzanie składnikami majątku należy skonfigurować ogólne param
     - Konfigurację serii czynności konserwacyjnych  
 - Na skróconej karcie **Kategoria** znajdują się domyślne kategorie odnoszące się do zużycia w zleceniach pracy.  
 
+## <a name="the-work-order-scheduling-tab"></a>Karta Planowanie zlecenia pracy
 
-Łącze **Planowanie zlecenia pracy**
+Karta **Planowanie zlecenia pracy** zawiera następujące ustawienia na skróconej karcie **Ogólne**:
 
 - **Horyzont czasowy harmonogramu** określa okres w dniach, obliczony od oczekiwanej daty rozpoczęcia zlecenia pracy, podczas którego są planowane zadania dotyczące zlecenia pracy.  
 - **Plan główny** odnosi się do zasobów w module **Administrowanie organizacją**. Jeśli w tym polu zostanie wybrany plan główny, można wyświetlić rezerwacje zdolności produkcyjnych związane ze zleceniami pracy w **Rezerwacji zdolności produkcyjnych** (**Administrowanie organizacją** > **Zasoby** > **Zasoby** > wybierz zasób > karta **Zasób** > przycisk **Rezerwacja zdolności produkcyjnych**). Jeśli zostawisz to pole puste, będzie można wyświetlić obciążenie zdolności produkcyjnych powiązane ze zleceniami pracy w **Obciążeniu zdolności produkcyjnych** (**Administrowanie organizacją** \> **Zasoby** \> **Zasoby** wybierz zasób \> karta \> **Zasób** \> przycisk **Rezerwacja zdolności produkcyjnych**).  
@@ -100,13 +99,10 @@ Pola opisane poniżej na liście poniżej odnoszą się do obliczonych wyników 
   - Przy założeniu, że żaden odpowiedzialny pracownik ani grupa odpowiedzialnych pracowników nie zostały wybrane w zleceniu pracy do zaplanowania — dodajesz i odejmujesz przykładowe wartości wyniku oceny w polach **Preferowany pracownik**, **Grupa preferowanych pracowników**, **Lokalizacja składnika majątku** oraz **Data początkowa** powyżej i otrzymujesz sumę 3 010,00. Oznacza to wysoki wynik dla pracownika, który jest już wybrany jako preferowany pracownik, a także uwzględniony w grupie preferowanych pracowników w zleceniu pracy, i pracownik znajduje się również w tym samym obiekcie co składnik majątku, dla którego musi zostać zaplanowane zadanie. Oznacza to, że istnieje duża szansa, że pracownik, o którym mowa, zostanie wybrany do ukończenia zadania podczas planowania zlecenia pracy.  
   - Jeśli wartość „0,00” jest wstawiana w jednym z ośmiu pól powyżej, ten wynik oceny nie będzie używany podczas planowania zlecenia pracy.  
 
-Łącze **Typy dokumentów**
+## <a name="the-document-types-tab"></a>Karta Typy dokumentów
 
 Wybierz typy dokumentów, które powinny być dostępne do drukowania załączników związanych z raportem zlecenia pracy. W tym celu wybierz typ dokumentu w sekcji **Dostępne** i wybierz ![strzałkę do przodu](media/15-setup-for-objects.png). Jeśli chcesz usunąć wybrany typ dokumentu, wybierz typ dokumentu w sekcji **Wybrane**, a następnie wybierz ![strzałkę wstecz](media/16-setup-for-objects.png).
 
-Łącze **Numery kolejne**
+## <a name="the-number-sequences-tab"></a>Karta Sekwencje numerów
 
 Wybierz żądane sekwencje numerów w tej sekcji. Istnieją dwie sekwencje numerów dla składników majątku: jedna dla składników majątku utworzonych ręcznie, a druga dla składników majątku utworzonych za pośrednictwem oczekujących składników majątku.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

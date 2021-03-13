@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435255"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017967"
 ---
 # <a name="maintenance-downtime-activities"></a>Działania w ramach przerwy konserwacyjnej
 
@@ -97,6 +96,3 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 - Istnieje możliwość kopiowania zasobów z jednej czynności związanej z obsługą przestojów do innej. We **Wszystkie działania w ramach przerwy konserwacyjnej**, wybierz przycisk **Kopiuj działania w ramach przerwy konserwacyjnej** i dokonaj wyboru w polach **Z działań w ramach przerwy konserwacyjnej** i **Do działań w ramach przerwy konserwacyjnej** i kliknij **OK**.
 - We **Wszystkie działania w ramach przerwy konserwacyjnej** kliknij przycisk **Wiersze harmonogramu konserwacji** lub **Aktywne zlecenia pracy**, aby otworzyć powiązane listy i wyświetlić wiersze związane z wybraną obsługą działań dotyczących przerw.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

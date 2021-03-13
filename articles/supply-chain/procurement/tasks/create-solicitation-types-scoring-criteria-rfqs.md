@@ -1,7 +1,7 @@
 ---
 title: Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO
 description: W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b3876238a191cbbacc4e8c435bb798232e6fd6f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 40625152a579bb269411d026d77d449902c8d4bc
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435328"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016813"
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO
 
@@ -52,6 +51,3 @@ W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć
 8. Kliknij przycisk OK.
 9. Zamknij stronę.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

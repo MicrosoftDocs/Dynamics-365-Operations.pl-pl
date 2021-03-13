@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
-ms.search.scope: Retail, Operations
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fc2af93880b634e6cec0015a2469fb8e4e56a7d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d27eec5ad2ec12d1f2e617fc3e182e2bbefa39a9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408364"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017247"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 
@@ -88,6 +87,3 @@ Wykonaj następujące kroki, aby umożliwić drukowanie dokumentów z aplikacji 
 
 4. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
 5. Wybierz zadanie **1090**, a następnie kliknij przycisk **Uruchom teraz**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

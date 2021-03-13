@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f91253c06fce6a52716f215411168179847379fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435065"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019486"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Omówienie zadań konserwacji aktywnych zleceń pracy
 
@@ -43,6 +42,3 @@ Na poniższej ilustracji pokazano przykład strony listy **Zadania konserwacji a
 
 Krótki opis przycisków na stronie listy **Zadania konserwacji aktywnych zleceń pracy** można znaleźć w temacie [Wprowadzenie do zleceń pracy](../work-orders/introduction-to-work-orders.md), w którym opisano identyczne przyciski.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

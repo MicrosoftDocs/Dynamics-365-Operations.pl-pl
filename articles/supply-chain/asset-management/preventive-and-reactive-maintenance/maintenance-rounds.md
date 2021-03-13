@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435257"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018553"
 ---
 # <a name="maintenance-rounds"></a>Serie czynności konserwacyjnych
 
@@ -117,6 +116,3 @@ W dwóch poniższych ilustracjach przedstawiono zadanie planowania w oknie dialo
 - Istnieje możliwość skonfigurowania zadania wsadowego w skróconej karcie **Uruchom w tle** w celu zaplanowania serii w regularnych odstępach czasu.  
 - Jeśli seria jest uwzględniona w kilku pulach zleceń pracy (zapoznaj się z [Pule zleceń pracy](../work-orders/work-order-pools.md)), jest wyświetlany jeden rekord dla każdej puli w **Otwieranie puli harmonogramów konserwacji**. W ten sposób można zoptymalizować opcje filtrowania dla pul zleceń pracy.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
