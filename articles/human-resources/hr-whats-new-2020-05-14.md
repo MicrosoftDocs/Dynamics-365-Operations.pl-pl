@@ -1,8 +1,8 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 14 maja 2020 roku.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127856"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (14 maja 2020 r.)
 
@@ -35,9 +35,9 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 
 Zmiany w platformie są uwzględniane w wydaniu z danego tygodnia. Aby uzyskać więcej informacji, zobacz temat [Aktualizacje platformy dla wersji 10.0.10 aplikacji Finance and Operations (maj 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ta wersja zawiera poprawki usterek i zmiany w zapisanych widokach.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Upewnij się, że listy wyboru usługi Common Data Service są spójne z wyliczeniami nieobecności (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Upewnij się, że listy wyboru usługi Dataverse są spójne z wyliczeniami nieobecności (436343)
 
-Listy wyboru usługi Common Data Service są teraz spójne z wyliczeniami nieobecności.
+Listy wyboru usługi Dataverse są teraz spójne z wyliczeniami nieobecności.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Umożliwienie użytkownikom konfigurowania przepływu pracy wniosku o urlop na podstawie ilości żądania (300044)
 
@@ -75,7 +75,7 @@ Ta zmiana naprawia błąd występujący w przypadku, gdy do planu urlopu przypis
 
 W przypadku tej zmiany transparent wprowadzający jest ukryty dla użytkowników, którzy nie są administratorami systemu ani administratorami zarządzania danymi. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Jednostka adresu pracownika Common Data Service działa inaczej w zależności od daty i godziny dla czasu obowiązywania dat w aplikacji Human Resources (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Jednostka adresu pracownika Dataverse działa inaczej w zależności od daty i godziny dla czasu obowiązywania dat w aplikacji Human Resources (425071)
 
 Ta zmiana powoduje, że informacje adresowe są wyrównywane w określonych scenariuszach na podstawie dat adresu.
 
@@ -119,5 +119,3 @@ Można określić typ urlopu przeniesienia do przodu dla sald przeniesionych na 
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

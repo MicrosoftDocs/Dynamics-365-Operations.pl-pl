@@ -1,8 +1,8 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (23 lipiec 2020)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 23 lipca 2020 roku.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f5e10d6d1dedfc251a1a00110b50c9096314d75b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528456"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127528"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (23 lipiec 2020)
 
@@ -33,7 +33,7 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>Usunięcie wymiarów finansowych na stanowisku nie działa zgodnie z oczekiwaniami (445476)
 
-Usunięcie wymiarów z stanowiska powoduje obecnie usunięcie tych samych stanowisk z Common Data Service.
+Usunięcie wymiarów z stanowiska powoduje obecnie usunięcie tych samych stanowisk z Dataverse.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>Pozycje poza hierarchią pokazują nieaktywne pozycje (397257)
 
@@ -94,9 +94,9 @@ Jednostka DMF jest teraz dostępna dla wstrzymań naliczania.
 
 ## <a name="coming-soon"></a>Wkrótce
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Jednostki listy kontrolnej uwzględnione w Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Jednostki listy kontrolnej uwzględnione w Dataverse
 
-Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Dataverse.
 
 ## <a name="platform-changes"></a>Zmiany w platformie
 
@@ -108,6 +108,3 @@ Aktualizacja Platform Update 10.0.12 (36)
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

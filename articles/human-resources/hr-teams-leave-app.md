@@ -2,7 +2,7 @@
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4420154"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128168"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -196,7 +196,6 @@ W aplikacji Human Resources w Teams pojawiają się następujące problemy ułat
 | --- | --- |
 | Powiększenie do 400% na pulpicie powoduje ukrycie niektórych przycisków akcji. | Zaleca się używanie lupy zamiast powiększenia do czasu, aż usuniemy problemy z tym poziomem powiększenia. |
 | Na karcie **Czas wolny** funkcja VoiceOver podczas odczytywania nagłówka siatki czasu wolnego informuje o akcji powiązanej z przyciskiem. | Nagłówek i elementy siatki są grupowane według lat i można je zwinąć. VoiceOver błędnie interpretuje je jako pozycję, z którą można powiązać działanie. |
-| Jeśli przeciągniesz palcem po ekranie, kiedy wyskakujące okienko lub menu jest otwarte, VoiceOver pominie odczytywanie zawartości okienka lub menu. | Przeglądaj zawartość, używając skanera linii papilarnych. |
 | Na karcie **Czas wolny** podczas przechodzenia do **Kodu przyczyny** w nowym wniosku uruchamia się dodatkowy gest przeciągnięcia. | Nie ma żadnego ukrytego formantu, do którego można uzyskać dostęp za pomocą tego gestu przeciągnięcia. |
 | Przy otwartym kalendarzu przeciągnięcie palcem na karcie **Czas wolny** prowadzi do obszaru poza formantem, zamiast na górę nowego wniosku lub do trybu edycji wniosku. | Kiedy dojdziesz do opcji **Przejdź do dzisiaj**, potraktuj tę pozycję jako koniec formantu i przesuń palcem w odwrotnym kierunku, aby wrócić na górę strony. |
 | VoiceOver nie odczytuje etykiet dat. | Daty, które wyświetlają się w parach, to zawsze **Data rozpoczęcia** i **Data zakończenia**. |
@@ -229,6 +228,3 @@ Aby ograniczyć dostęp do aplikacji Human Resources w Microsoft Teams organizac
 [Pobieranie i instalowanie aplikacji Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Centrum pomocy aplikacji Microsoft Teams](https://support.office.com/teams)</br>
 [Aplikacja Human Resources w Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

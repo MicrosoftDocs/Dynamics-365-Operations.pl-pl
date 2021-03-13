@@ -1,6 +1,6 @@
 ---
 title: Mobilny obszar roboczy Mój zespół
-description: Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności. Użytkownicy mogą również wysyłać pochwały osobom w swoich łańcuchach relacji służbowych.
+description: Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680977"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127552"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilny obszar roboczy Mój zespół
 
@@ -97,6 +97,3 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 1.  Kliknij opcję **Wyślij pochwałę**. 
 1. Wprowadź tekst pochwały, jaką chcesz wysłać. 
 1. Wybierz opcję **Gotowe**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

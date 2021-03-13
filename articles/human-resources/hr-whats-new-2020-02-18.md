@@ -1,8 +1,8 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (18 lutego 2020 r.)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 18 lutego 2020 roku.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e087095807f587536f2dad7e65fbc8beaa88878e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526985"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128072"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (18 lutego 2020 r.)
 
@@ -43,17 +43,17 @@ Teraz nowy formularz **Pracownik** zapamiętuje wartości wyszukiwania po zmiani
 
 Kafelki zarządzania stałymi i zmiennymi wynagrodzeniami wyświetlają poprawne rekordy w nowym formularzu **Pracownik**. Dotyczy wyłącznie funkcji podglądu usprawnionego formularza pracownika etatowego. Tę funkcję podglądu można włączyć w module **Zarządzanie funkcjami**. Aby uzyskać więcej informacji, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Puste pole stanu dla niektórych rekordów żądań urlopów w Common Data Service (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Puste pole stanu dla niektórych rekordów żądań urlopów w Dataverse (414915)
 
-Ta zmiana powoduje usunięcie błędu w Common Data Service, gdy pole **Stan** w żądaniu urlopu jest ustawione na wartość **Przegląd**. Common Data Service teraz odzwierciedla stan.
+Ta zmiana powoduje usunięcie błędu w Dataverse, gdy pole **Stan** w żądaniu urlopu jest ustawione na wartość **Przegląd**. Dataverse teraz odzwierciedla stan.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Analiza braków kwalifikacji jest możliwa tylko dla przypisanego zadania (411390)
 
 Można teraz przeprowadzić analizę braków kwalifikacji dla każdego zadania zdefiniowanego w Human Resources.
 
-## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Waluta systemowa nie jest synchronizowana z Common Data Service do Human Resources w nowych środowiskach (418011)
+## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Waluta systemowa nie jest synchronizowana z Dataverse do Human Resources w nowych środowiskach (418011)
 
-Waluta systemowa w Common Data Service może teraz być synchronizowana z Human Resources.
+Waluta systemowa w Dataverse może teraz być synchronizowana z Human Resources.
 
 ## <a name="in-preview"></a>Wersja próbna
 
@@ -63,9 +63,9 @@ Waluta systemowa w Common Data Service może teraz być synchronizowana z Human 
 
 ## <a name="coming-soon"></a>Wkrótce
 
-### <a name="updated-common-data-service-solution"></a>Zaktualizowano rozwiązanie Common Data Service
+### <a name="updated-dataverse-solution"></a>Zaktualizowano rozwiązanie Dataverse
 
-Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następującymi zmianami:
+Nowe rozwiązanie Dataverse będzie dostępne wkrótce z następującymi zmianami:
 
 | Opis | Zmiana |
 | ----------------------------------------- | --- |
@@ -76,7 +76,7 @@ Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następujący
 | Nowe jednostki ustawień wynagrodzeń o zmiennej wysokości | **Typ planu wynagrodzeń o zmiennej wysokości**</br>**Plan wynagrodzeń o zmiennej wysokości**</br>**Reguły wypłat**</br>**Poziom planu wynagrodzeń o zmiennej wysokości** |
 | Nowa jednostka **Zatrudnienie kalendarza pracownika** | Dodano **jednostkę kalendarza pracy** |
 | Nowa jednostka **Szczegół stanowiska listy płac** | Dodano **Szczegół stanowiska listy płac** |
-| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Common Data Service. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
+| Nowa jednostka **Tytuł** | Dodano **Tytuł**. Nowa jednostka **Tytułu** będzie uwzględniana w procesie synchronizacji między Human Resources a Dataverse. Nie będzie początkowo przywoływany z **Stanowiska pracy** lub jednostek **Zadań**. |
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
@@ -84,5 +84,3 @@ Nowe rozwiązanie Common Data Service będzie dostępne wkrótce z następujący
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

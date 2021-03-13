@@ -1,9 +1,9 @@
 ---
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (13 kwietnia 2020)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 13 kwietnia 2020 roku.
-author: Darinkramer
-manager: AnnBe
-ms.date: 4/13/2020
+author: andreabichsel
+manager: tfehr
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 3afc112f8a30bb187fbe37c9062afe7943e986ec
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528528"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127904"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (13 kwietnia 2020)
 
@@ -43,9 +43,9 @@ W przypadku zmiany pole **Dokładność zaokrąglania** jest teraz dostępne po 
 
 Teraz można edytować datę zakończenia rejestracji bez uzyskiwania błędu „Podstawa daty naliczania pola musi być wypełniona”.
 
-## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>Jednostka zatrudnienia nie jest synchronizowana z Common Data Service (430834)
+## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>Jednostka zatrudnienia nie jest synchronizowana z Dataverse (430834)
 
-Ta zmiana polega na usunięciu usterki, do której nie wykonano synchronizacji z Common Data Service danych dotyczących zatrudnienia po dodaniu wymiarów finansowych. 
+Ta zmiana polega na usunięciu usterki, do której nie wykonano synchronizacji z Dataverse danych dotyczących zatrudnienia po dodaniu wymiarów finansowych. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Usuń wiele obiektów nadrzędnych dla jednostki Zakres czasu w kalendarzu roboczym (431775)
 
@@ -97,5 +97,3 @@ Jeśli Podgląd dokumentów przechowywanych w SharePoint nie działa, spróbuj w
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
