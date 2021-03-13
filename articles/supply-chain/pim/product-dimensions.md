@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434996"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118688"
 ---
 # <a name="product-dimensions"></a>Wymiary produktu
 
@@ -122,7 +121,7 @@ Aby móc używać wymiaru wersji, należy ją włączyć w systemie. To zadanie 
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Obszary, w których wymiar wersji nie jest obsługiwany
 
-Poniższe obszary nie obsługują wymiaru wersji, ponieważ wprowadzenie tego wymiaru spowodowałoby powstanie zmian:
+W poniższych obszarach nie jest obsługiwany wymiar wersji (nadal możesz używać tych obszarów, ale nie będziesz mieć możliwości dodawania produktów z wersji (produktów, w których jest używany wymiar wersji) do tych obszarów). Na przykład nie można dodać towaru z wersją do katalogu dostawcy. Jest tak dlatego, że dodawanie produktów z wymiarem wersji do tych obszarów może spowodować zmiany powodujące niezgodność.
 
 - Miesięczne zestawienie kosztów
 - Pamięć podręczna zestawienia obiektów kosztów
@@ -146,6 +145,3 @@ Wymiar wersji działa podobnie do innych wymiarów produktu. Jednak ze względu 
 
 > [!IMPORTANT]
 > Jeśli włączysz wymiar wersji i użyjesz go, niektóre rozwiązania odwołujące się do wymiarów magazynowych mogą przestać działać zgodnie z oczekiwaniami. Aby potwierdzić i rozwiązać te problemy, skontaktuj się z niezależnym dostawcą oprogramowania (ISV), aby uzyskać rozwiązania, których dotyczy problem. Aby uzyskać więcej informacji, skorzystaj z opcji [Włącz wymiar wersji](#enable-version-dim).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

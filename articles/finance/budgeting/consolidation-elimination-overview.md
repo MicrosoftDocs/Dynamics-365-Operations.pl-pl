@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446919"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120486"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Omówienie konsolidacji i eliminacji
 
@@ -60,6 +59,7 @@ Opcja **Raport finansowy** oferuje obsługę nieograniczonej liczby walut raport
 Opcja **Raport finansowy** jest rozwiązaniem, ponieważ można wyświetlić szczegóły na poziomie transakcji dla tylu firm, ile jest w definicji drzewa raportowania.
 
 4.  Używamy planowania budżetu lub kontroli budżetu i dane muszą być skonsolidowane.
+
 Opcja **Raport finansowy** jest rozwiązaniem do konsolidacji planowania budżetu lub danych kontroli budżetu.
 
 5.  Nasze oddziały są rozproszone po całym świece i mamy wiele planów kont. Jaka jest najlepsza metoda do konsolidowania naszych danych?
@@ -86,10 +86,10 @@ Rozwiązaniem jest opcja **Raport finansowy**. Hierarchie organizacji zawierają
 
 Za pomocą opcji **Eksportuj salda firmy** można wyeksportować dane z jednej instancji, a następnie przy użyciu opcji **Konsoliduj z importu** w drugiej instancji można skonsolidować dane.
 
+11. Czy można wykonać konsolidację z budżetem w stanie **Wersja robocza**? 
+            
+W konsolidowanej firmie nie będzie można przetwarzać ani tworzyć budżetów. Zalecane jest korzystanie z funkcji Financial Reporting w celu konsolidacji wersji roboczej budżetów.
 
 Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
