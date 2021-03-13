@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2aaba8794bf0025f0449509752e4f197d3bf3db4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435288"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020996"
 ---
 # <a name="create-maintenance-budgets"></a>Tworzenie budżetu konserwacji
 
@@ -59,6 +58,3 @@ Kopiując istniejący budżet można również utworzyć nowy budżet konserwacj
 
 > [!NOTE]
 > Budżet konserwacji oblicza tylko koszty budżetowe na podstawie wierszy harmonogramu konserwacji. Aby obliczyć koszty rzeczywiste za ten sam okres, można wykonać obliczenia na stronie kontrola **Formant kosztów składników majątku**. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

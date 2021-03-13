@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bc78568e314c7cf83848ed2c39f9613d6ed638ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db0932c5a52030c1a7f0411163aee120e2173ca0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435120"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021146"
 ---
 # <a name="item-where-used"></a>Używająca pozycja
 
@@ -71,6 +70,3 @@ Na poniższym zrzucie ekranu widać przykład obliczeń dla pozycji używającej
 
 ![Przykład obliczenia dla używającej pozycji](media/12-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

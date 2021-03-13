@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderForecastToJournals, EntAssetWorkOrderForecast
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2686dd6db032239e2a3aac03f3998cee055302f6
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c60834a1f818b142a0f2f022d66fe1f42edeb536
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4435673"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020874"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 
@@ -124,6 +123,3 @@ W module Zarządzanie składnikami majątku można automatycznie aktualizować z
 Na poniższej ilustracji pokazano przykład okna dialogowego **Aktualizacja prognozy zlecenia pracy**.
 
 ![Rysunek 2](media/07-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

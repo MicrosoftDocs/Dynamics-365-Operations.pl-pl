@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eedc21dde32671b4f5539ac4e798a8e1329c191
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435522"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021289"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stany cyklu życia lokalizacji czynności konserwacyjnych
 
@@ -63,6 +62,3 @@ Po utworzeniu stanów cyklu życia wymaganych dla lokalizacji funkcjonalnych mo�
 5. Jeśli chcesz wybrać wszystkie dostępne stany dla modelu, kliknij przycisk ![Wybierz wszystkie dostępne etapy](media/03-setup-for-functional-locations.png). Wszystkie stany są przenoszone do sekcji **Wybrane cykle życia**.
 6. Jeśli chcesz usunąć wybrany stan z modelu, wybierz stan w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk ![strzałki wstecz](media/04-setup-for-functional-locations.png).
 7. Wybierz pozycję **Aktualizacje stanu cyklu życia**, aby określić, które stany cyklu życia mogą być zgodne z wybranym stanem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

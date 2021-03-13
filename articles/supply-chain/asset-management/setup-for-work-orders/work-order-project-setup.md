@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51837275203dc2d4f31dc4dec9bf970a7ebeba7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435048"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021561"
 ---
 # <a name="work-order-project-setup"></a>Ustawienia projektu zlecenia pracy
 
@@ -86,6 +85,3 @@ Konfiguracja pozwala na pełną integrację z modułem **Zarządzanie projektami
 > Podczas tworzenia wiersza zlecenia pracy, Zarządzanie składnikami majątku wyszukuje grupę projektów, która powinna być związana z projektem zadania zlecenia pracy. Wyszukiwanie jest oparte na konfiguracji opisanej w tym temacie. Każda grupa projektów ma powiązany Typ projektu. Grupy projektów, które mają typ **Czas i materiały** lub **Stała cena** są ważne tylko dla składników majątku związanych z kontem odbiorcy.
 >
 > W przypadku projektów nadrzędnych i grup projektów, gdy system wybiera dostępny projekt zlecenia pracy lub grupę projektów, wybór jest oparty na rekordach utworzonych za pomocą poprzedniej procedury. Zarządzanie składnikami majątku przechodzi między rekordami związanymi z projektem zlecenia pracy w celu sprawdzenia, czy jest możliwe jego dopasowanie. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, dla nadrzędnego projektu zlecenia pracy moduł Zarządzanie składnikami majątku najpierw sprawdza dopasowanie dla pola **Składnik majatku**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Typ składnika majątku**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Lokalizacja czynności konserwacyjnych** itd. Jak widać w układzie strony **Ustawienia projektu zlecenia pracy** to zachowanie oznacza, że aby znaleźć najbardziej konkretną kombinację, moduł Zarządzanie składnikami majątku sprawdza każdy rekord od prawej do lewej pod kątem dopasowania. Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest rekord domyślny, w którym jest wybrany tylko identyfikator projektu. Proces wyszukiwania powiązanej grupy projektów jest podobny. Zarządzanie składnikami majątku najpierw sprawdza, czy istnieje możliwe dopasowanie do pola **Składnik majątku**, a następnie dla pola **Typ składnika majątku**, a następnie dla pola **Typ zlecenia pracy**. Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest rekord domyślny, w którym jest wybrany tylko grupa projektu.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
