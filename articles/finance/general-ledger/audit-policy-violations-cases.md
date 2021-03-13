@@ -1,7 +1,7 @@
 ---
 title: Naruszenia zasad inspekcji i sprawy
 description: W tym artykule wyjaśniono, jak są generowane sprawy inspekcji na podstawie naruszeń reguł inspekcji. Znajdują się tu także informacje o różnych sposobach, w jakie zasady inspekcji wykorzystują funkcje zakresu dat wyboru dokumentów.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13091
 ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d14894d331037033b27fac3fd7ff98c5521eaf98
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446757"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022112"
 ---
 # <a name="audit-policy-violations-and-cases"></a>Naruszenia zasad inspekcji i sprawy
 
@@ -61,6 +60,3 @@ Aby uzyskać więcej informacji, zobacz [Reguły inspekcji](audit-policy-rules.m
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Omówienie zasad zakupów
 description: Ten artykuł zawiera informacje o zasadach zakupów. Zasady zakupów to zbiór reguł, który steruje procesem zapotrzebowań. Zasady zakupów ułatwiają administratorom zaopatrzenia wdrażanie strategii zaopatrzenia poprzez utworzenie struktury zasad dopasowanej do strategicznych wymagań zakupowych organizacji.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435657"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022213"
 ---
 # <a name="purchasing-policies-overview"></a>Omówienie zasad zakupów
 
@@ -151,6 +150,3 @@ Reguła tworzenia zamówienia zakupu i konsolidacji popytu definiuje reguły, kt
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

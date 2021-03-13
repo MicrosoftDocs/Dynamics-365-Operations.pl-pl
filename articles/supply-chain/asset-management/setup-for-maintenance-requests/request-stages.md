@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestLifecycleState, EntAssetRequestLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5849e3a8c3c619916c718032579d4fe6444fa49b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d3c2f717969b938d05e68ac775d31b6a5d5ec26a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435519"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022087"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stany cyklu życia żądania konserwacji
 
@@ -81,6 +80,3 @@ Po utworzeniu stanów cyklu życia, które są wymagane dla żądań konserwacji
 Na poniższej ilustracji pokazano przykład strony **Modele cyklu życia żądania konserwacji**.
 
 ![Strona Modele cyklu życia żądania konserwacji](media/06-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
