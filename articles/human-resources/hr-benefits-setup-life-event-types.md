@@ -2,7 +2,7 @@
 title: Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
 description: Program Microsoft Dynamics 365 Human Resources używa typów zmiany sytuacji życiowej do zdefiniowania zdarzeń, które uzasadniają aktualizowanie rejestracji pracowników na świadczenia.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420054"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113878"
 ---
 # <a name="configure-life-event-types"></a>Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
 
@@ -88,6 +88,3 @@ Podczas tworzenia typu zmiany sytuacji życiowej można wybierać spośród nast
 | **Zmiana wygaśnięcia zastąpienia reguły uprawnienia (niewyłączna dla Stanów Zjednoczonych)** | Zasoby ludzkie — zaawansowane > Świadczenia > Plany > Świadczenia > Zastąpienie reguły uprawnienia | Wykonanie przetwarzania zmiany sytuacji życiowej. Jeśli na przykład zmodyfikujesz datę ważności zastąpienia reguły uprawnienia w planie na dzisiaj o 17:00, dowolną godzinę po 17:00 lub dowolny z następnych dni, po czym wykonasz przetwarzanie zmiany sytuacji życiowej, pojawi się komunikat informujący o wygaśnięciu zastąpienia reguły uprawnienia. |
 | **Nowy plan świadczeń (niewyłączny dla Stanów Zjednoczonych)** | Zasoby ludzkie — zaawansowane > Świadczenia > Plany > Nowy | <ul><li>Dodanie opcji uprawnień do bieżącego planu</li><li>Dodanie nowego planu z dołączonymi opcjami uprawnień</li></ul></br></br>Pracownicy działu kadr powinni wykonać przetwarzanie uprawnień do świadczeń z powodu zmiany sytuacji życiowej. |
 | **Zmiana reguły uprawnienia (niewyłączna dla Stanów Zjednoczonych)** | Zasoby ludzkie — zaawansowane > Świadczenia > Reguły/opcje > Reguły uprawnienia | Wykonanie przetwarzania uprawnień do świadczeń z powodu zmiany sytuacji życiowej. Rejestrowane, gdy w rekordach encji **EhrBenefitEligibilityRule** zmieni się następująca wartość: **UseEmplCategory**, **UseEmplStatus** lub **UseEmplType**. Powoduje aktualizację tylko tych transakcji zmiany sytuacji życiowej, które już istnieją dla zmienionej reguły lub kryteriów uprawnień. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

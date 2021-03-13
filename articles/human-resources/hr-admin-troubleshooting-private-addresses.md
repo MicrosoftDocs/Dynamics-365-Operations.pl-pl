@@ -2,7 +2,7 @@
 title: Uzyskiwanie dostępu do adresów prywatnych według ról zabezpieczeń
 description: W tym artykule opisano, jak rozwiązać problem, gdy odbiorca nie ma dostępu do prywatnych adresów.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 11/02/2018
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6598094e7877a30c35e1b03794f82c8a4ec001a7
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420044"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113825"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Uzyskiwanie dostępu do adresów prywatnych według ról zabezpieczeń
 
@@ -39,6 +39,3 @@ Aby rozwiązać ten problem, odbiorca musi wykonać następujące kroki dla zdup
 3. Wybierz opcję **Zapisz**.
 
 ![Strona parametrów globalnej książki adresowej](media/GAD-parameters.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

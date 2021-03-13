@@ -2,7 +2,7 @@
 title: Nie można utworzyć środowiska w centrum administracyjnym usługi Power Apps
 description: W tym temacie wyjaśniono, co zrobić, jeśli administrator nie może utworzyć środowiska w Centrum administracyjnym Microsoft Power Apps.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68e6dbcbbc9811211570e968047f5faa8a2c8bd0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 664c644c9b34e3489b4134040e165d26202dbd38
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420045"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113853"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Nie można utworzyć środowiska w centrum administracyjnym usługi Power Apps
 
 **Wystawienie**
 
 - Administrator dzierżawy/środowiska nie może utworzyć środowiska w Centrum administracyjnym Microsoft Power Apps.
-- Licencja, która daje użytkownikom prawo do wykonywania kroku tworzenia środowiska nie została przypisana bezpośrednio do użytkownika, który wykonuje ten krok.
+- Użytkownik nie ma licencji, która daje prawo do tworzenia środowisk.
 
 **Rozwiązanie**
 
-Upewnij się, że administrator dzierżawy ma przypisaną prawidłową licencję usługi Power Apps P2 bezpośrednio do użytkownika, który wykona krok tworzenia środowiska. Poniżej przedstawiono plany usługowe Microsoft Dynamics, które zapewniają te prawa.
+Upewnij się, że administrator dzierżawy przypisał prawidłową licencję Power Apps P2 do użytkownika tworzącego środowisko. Następujące plany usług Microsoft Dynamics zapewniają uprawnienia do tworzenia środowisk:
 
 | Ogólna jednostka magazynowa produktu (SKU)       | Power Apps planu usług P2  |
 |------------------------------------------------|----------------------------|
@@ -44,6 +44,3 @@ Należy zwrócić uwagę, że różne wersje SKU pakietu Microsoft Office także
 
 1. Przejdź do [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Utwórz środowiska, postępując zgodnie z instrukcjami w [Provision Human Resouces](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

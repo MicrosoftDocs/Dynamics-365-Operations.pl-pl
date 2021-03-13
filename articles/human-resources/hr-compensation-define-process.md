@@ -2,7 +2,7 @@
 title: Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
 description: Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród dla pracowników objętych planami wynagrodzeń stałych i o zmiennej wysokości.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420095"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113816"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
 
@@ -100,6 +100,3 @@ Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród 
 10. Kliknij przycisk Zatwierdzone.
     * Po zatwierdzeniu rekordu można go załadować do oficjalnego rekordu wynagrodzenia pracownika. Nowe wynagrodzenie będzie obowiązywać od dnia transakcji ustawionego w procesie wynagrodzenia.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

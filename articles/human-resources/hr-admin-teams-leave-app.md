@@ -2,7 +2,7 @@
 title: Aplikacja Human Resources w Teams
 description: W tym temacie przedstawiono aplikację Microsoft Dynamics 365 Human Resources w Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/30/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e714be06984f399235f0799ef077a92deae64d9e
-ms.sourcegitcommit: b0aa724a18ab1fbb5a62925f048c54b2c676ebf4
+ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4476084"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113857"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -134,6 +134,3 @@ Aby ograniczyć dostęp do aplikacji Human Resources w Microsoft Teams organizac
 [Centrum pomocy aplikacji Microsoft Teams](https://support.office.com/teams)</br>
 [Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

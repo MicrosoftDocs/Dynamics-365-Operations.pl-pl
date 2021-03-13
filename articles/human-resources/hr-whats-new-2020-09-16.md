@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 74a87ddb4ed14042dd4e716ad64bc844a800a0a0
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527441"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113913"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (16 września 2020 r.)
 
@@ -110,9 +110,9 @@ Ta wersja zawiera dodatkowe opcje kalendarza dla kalendarzy urlopów i nieobecno
 
 ## <a name="coming-soon"></a>Wkrótce
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Jednostki listy kontrolnej uwzględnione w Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Jednostki listy kontrolnej uwzględnione w Dataverse
 
-Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Common Data Service.
+Jednostki listy kontrolnej dotyczące procesów wdrażania, odłączania, przenoszenia i obsługi procesów biznesowych będą wkrótce dostępne w Dataverse.
 
 ### <a name="benefits-management-reason-codes"></a>Kody przyczyn zarządzania korzyściami
 
@@ -124,6 +124,3 @@ Kody przyczyn zarządzania korzyściami zostaną wkrótce połączone z istniej�
 [Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

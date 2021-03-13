@@ -2,7 +2,7 @@
 title: Aprowizowanie rozwiązania Human Resources
 description: Ten artykuł przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1a57180c60be4b4686c274aecbf86f0bc6c8b2fb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527806"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113791"
 ---
 # <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
 
@@ -32,6 +32,23 @@ ms.locfileid: "4527806"
 Ten artykuł przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. Temat ten opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan rozwiązania Human Resources, a nie jesteś w stanie wykonać kroków opisanych w tym artykule, skontaktuj się z pomocą techniczną.
 
 Aby rozpocząć, administrator globalny powinien się zarejestrować w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) i utworzyć nowy projekt programu Human Resources. O ile problemy z licencją nie umożliwią zainicjowania modułu Human Resources, wsparcie działu pomocy technicznej ani przedstawicieli Dynamics Service Engineering (DSE) nie jest wymagane.
+
+## <a name="plan-human-resources-environments"></a>Planuj środowiska zasobów ludzkich
+
+Zanim utworzysz swoje pierwsze środowisko kadrowe, powinieneś dokładnie zaplanować jego potrzeby w swoim projekcie. Podstawowa subskrypcja działu kadr obejmuje dwa środowiska: środowisko produkcyjne i środowisko sandbox. W zależności od złożoności projektu może być konieczne zakupienie dodatkowych środowisk piaskownicy w celu obsługi działań projektowych. 
+
+Rozważania dotyczące dodatkowych środowisk obejmują między innymi następujące kwestie:
+
+- **Migracja danych**: Konieczne może być rozważenie dodatkowego środowiska do działań związanych z migracją danych, aby umożliwić używanie środowiska piaskownicy do celów testowych w całym projekcie. Dodatkowe środowisko umożliwia kontynuowanie działań migracji danych podczas jednoczesnego testowania i konfigurowania działań w innym środowisku.
+- **Integracja**: W celu skonfigurowania i testowania integracji należy wziąć pod uwagę dodatkowe środowisko. Może to obejmować natywne integracje, takie jak integracje Ceridian Dayforce LinkedIn Talent Hub, lub niestandardowe integracje, takie jak te dotyczące płac, systemów śledzenia kandydatów lub systemów świadczeń i dostawców.
+- **Szkolenie**: Możesz potrzebować osobnego środowiska, które jest skonfigurowane z zestawem danych szkoleniowych, aby przeszkolić pracowników w zakresie korzystania z nowego systemu. 
+- **Projekt wieloetapowy**: Możesz potrzebować dodatkowego środowiska do obsługi konfiguracji, migracji danych, testowania lub innych działań w fazie projektu, która jest planowana po początkowym uruchomieniu projektu.
+
+ > [!IMPORTANT]
+ > Zalecamy używanie środowiska produkcyjnego w całym projekcie jako środowiska konfiguracyjnego GOLD. Jest to ważne, ponieważ nie można skopiować środowiska piaskownicy do środowiska produkcyjnego. Dlatego po uruchomieniu środowisko GOLD jest środowiskiem produkcyjnym i w tym środowisku zakończysz działania związane z przełączaniem.</br></br>
+ > Zalecamy użycie piaskownicy lub innego środowiska do wykonania próbnego przełączenia przed uruchomieniem. Możesz to zrobić, odświeżając środowisko produkcyjne za pomocą konfiguracji GOLD w środowisku piaskownicy.</br></br>
+ > Zalecamy przechowywanie szczegółowej listy kontrolnej przełączania, która zawiera każdy z pakietów danych wymaganych do migracji ostatecznych danych do środowiska produkcyjnego podczas przełączania na żywo.</br></br>
+ > Zalecamy również, aby w całym projekcie używać środowiska piaskownicy jako środowiska TESTOWEGO. Jeśli potrzebujesz dodatkowych środowisk, Twoja organizacja może je kupić za dodatkową opłatą.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Tworzenie projektu LCS
 
@@ -88,7 +105,7 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
 
 2. Jedno środowisko modułu Human Resources jest mapowane na jedno środowisko usługi Power Apps.
 
-3. Środowisko usługi Power Apps zawiera rozwiązanie Human Resources wraz z towarzyszącymi Power Apps, Power Automate i aplikacjami Common Data Service. Usunięcie środowiska usługi Power Apps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska programu Human Resources można wybrać środowisko **Wersja próbna** lub **Wersja produkcyjna**. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
+3. Środowisko usługi Power Apps zawiera rozwiązanie Human Resources wraz z towarzyszącymi Power Apps, Power Automate i aplikacjami Dataverse. Usunięcie środowiska usługi Power Apps spowoduje wykasowanie znajdujących się w nim aplikacji. Podczas inicjowania obsługi administracyjnej środowiska programu Human Resources można wybrać środowisko **Wersja próbna** lub **Wersja produkcyjna**. Wybierz typ środowiska odpowiednio do tego, jak będzie używane. 
 
 4. Należy wziąć pod uwagę strategie integracja i testowanie danych, na przykład piaskownicę (wirtualne środowisko testowe), testy akceptacji użytkownika czy produkcję. Zalecamy rozważenie skutków dla danego wdrożenia, ponieważ później nie jest łatwo zmienić mapowanie środowiska Human Resources na inne środowisko usługi Power Apps.
 
@@ -108,6 +125,3 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
 
 Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Musisz przyznać dostęp dodatkowym użytkownikom aplikacji. Trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył program Human Resources, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy. Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

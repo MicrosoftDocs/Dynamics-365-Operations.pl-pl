@@ -2,7 +2,7 @@
 title: Kopiowanie wystąpienia
 description: Można skorzystać z usługi cyklu pomocy technicznej Microsoft Dynamics Lifecycle Services (usługi LCS), aby skopiować bazę danych firmy Microsoft Dynamics 365 Human Resources do środowiska piaskownicy (sandbox).
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527844"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113843"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
@@ -41,7 +41,7 @@ Aby skopiować wystąpienie, należy pamiętać o następujących wskazówkach:
 
 - Podczas kopiowania bazy danych Human Resources nie są kopiowane elementy (aplikacje lub dane) zawarte w środowisku Microsoft Power Apps. Aby uzyskać informacje o kopiowaniu elementów w środowisku Power Apps, zapoznaj się z tematem [Kopiuj środowisko](https://docs.microsoft.com/power-platform/admin/copy-environment). Środowisko Power Apps, które chcesz zastąpić, musi być środowiskiem piaskownicy. Musisz być globalnym administratorem dzierżawy, aby zmienić środowisko produkcyjne Power Apps w środowisko piaskownicy. Aby uzyskać więcej informacji o zmienianiu środowiska Power Apps, zapoznaj się z tematem [Przełącz wystąpienie](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service. Zobacz [Zastosuj niestandardowe pola do Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Dataverse, należy ponownie zastosować pola niestandardowe do tabeli Dataverse. Zobacz [Zastosuj niestandardowe pola do Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Efekty kopiowania bazy danych Human Resources
 
@@ -72,7 +72,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie wartości pola **Stan kopiowania** na **Zakończone**.
 
-   ![[Wybierz instancję do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Wybierz wystąpienie do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 
@@ -80,7 +80,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 
-7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Common Data Service. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Common Data Service dla przestrzeni roboczych](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Po zakończeniu procesu kopiowania zaloguj się do instancji docelowej i włącz integrację Dataverse. Aby uzyskać więcej informacji i instrukcji, zobacz [Konfigurowanie integracji Dataverse dla przestrzeni roboczych](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Elementy danych i stany
 
@@ -122,11 +122,11 @@ Wszyscy użytkownicy w docelowym środowisku piaskownicy, w tym Administratorzy,
 
 Wszyscy użytkownicy niebędący Administratorami w docelowym środowisku piaskownicy są wyłączeni w celu zapobiegania niepotrzebnego rejestrowania w środowisku piaskownicy. W razie potrzeby Administratorzy mogą ponownie włączyć użytkowników.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Zastosuj niestandardowe pola do Common Data Service
+## <a name="apply-custom-fields-to-dataverse"></a>Zastosuj niestandardowe pola do Dataverse
 
-Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Common Data Service, należy ponownie zastosować pola niestandardowe do encji Common Data Service.
+Jeśli użytkownik skopiuje wystąpienie do środowiska piaskownicy i chce zintegrować środowisko piaskownicy z systemem Dataverse, należy ponownie zastosować pola niestandardowe do tabeli Dataverse.
 
-Dla każdego pola niestandardowego, które jest uwidocznione na encjach Common Data Service należy wykonać następujące kroki:
+Dla każdego pola niestandardowego, które jest uwidocznione na tabelach Dataverse należy wykonać następujące kroki:
 
 1. Przejdź do pola niestandardowego i wybierz opcję **Edytuj**.
 
@@ -140,7 +140,7 @@ Dla każdego pola niestandardowego, które jest uwidocznione na encjach Common D
 
 6. Ponownie wybierz opcję **Zastosuj zmiany**.
 
-Proces cofania wyboru, stosowania zmian, ponownego wybierania i ponownego stosowania zmian powoduje wyświetlenie w schemacie, w którym w Common Data Service będą uwzględniane pola niestandardowe.
+Proces cofania wyboru, stosowania zmian, ponownego wybierania i ponownego stosowania zmian powoduje wyświetlenie w schemacie, w którym w Dataverse będą uwzględniane pola niestandardowe.
 
 Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz
 [Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

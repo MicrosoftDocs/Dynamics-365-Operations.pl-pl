@@ -1,7 +1,7 @@
 ---
 title: '`Dodatek Widoczność magazynu'
 description: W tym temacie opisano sposób instalowania i konfigurowania dodatku Widoczność magazynu dla systemu Dynamics 365 Supply Chain Management.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625072"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114677"
 ---
 # <a name="inventory-visibility-add-in"></a>Dodatek Widoczność magazynu
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Dodatek Widoczność magazynu jest niezależną i wysoko skalowalną mikrodostępną usługą, która umożliwia śledzenie dostępnych zapasów w czasie rzeczywistym, udostępniając w ten sposób globalny widok widoczności zapasów.
 
 Wszystkie informacje dotyczące dostępnych zapasów są eksportowane do usługi w czasie rzeczywistym przez integrację SQL niskiego poziomu. System zewnętrzny uzyskuje dostęp do usługi za pośrednictwem interfejsów API RESTful w celu uzyskania informacji o dostępnych zapasach w danym zbiorze wymiarów, pobierając w ten sposób listę dostępnych stanowisk.
 
-Widoczność zapasów to mikrousługa wbudowana w systemie Common Data Service, co oznacza, że można ją rozszerzyć przez budowanie Power Apps i stosowanie dostosowanych funkcji Power BI w celu spełnienia wymagań biznesowych. Możliwe jest również uaktualnienie indeksu do kwerend magazynowych.
+Widoczność zapasów to mikrousługa wbudowana w systemie Microsoft Dataverse, co oznacza, że można ją rozszerzyć przez budowanie Power Apps i stosowanie dostosowanych funkcji Power BI w celu spełnienia wymagań biznesowych. Możliwe jest również uaktualnienie indeksu do kwerend magazynowych.
 
 Widoczność zapasów zapewnia opcje konfiguracji, które umożliwiają integrację z wieloma systemami innych firm. Obsługuje on standardowy rozmiar magazynu, możliwe do dostosowania rozszerzenia i standardowe, konfigurowalne obliczone ilości.
 
@@ -80,28 +80,55 @@ Aby zainstalować dodatek Widoczność magazynu, trzeba:
 
 Aby uzyskać token usługi zabezpieczeń, wykonaj następujące czynności:
 
-1. Pobierz `aadToken` i wywołaj punkt końcowy: https://securityservice.operations365.dynamics.com/token.
-1. Zastąp `client_assertion` w treści swoim `aadToken`.
-1. Zastąp kontekst w treści środowiskiem, w którym chcesz wdrożyć dodatek.
-1. Zamień zakres w treści na następujące elementy:
+1. Zaloguj się do witryny Azure Portal i użyj go, aby znaleźć parametry `clientId` i `clientSecret` dla aplikacji Supply Chain Management.
+1. Pobiera token usługi Azure Active Directory (`aadToken`), przesyłając żądanie HTTP z następującymi właściwościami:
+    - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metoda** - `GET`
+    - **Treść (dane formularza)**:
 
-    - Zakres dla MCK — „https://inventoryservice.operations365.dynamics.cn/.default”  
-    (Identyfikator aplikacji Azure Active Directory i identyfikator dzierżawy MCK można znaleźć w `appsettings.mck.json` .)
-    - Zakres dla PROD — „https://inventoryservice.operations365.dynamics.com/.default”  
-    (Identyfikator aplikacji Azure Active Directory i identyfikator dzierżawy PROD można znaleźć w `appsettings.prod.json` .)
+        | klucz | wartość |
+        | --- | --- |
+        | client_id | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | resource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Otrzymasz w odpowiedzi token `aadToken`, który przypomina poniższy przykład.
 
-    Nowy raport powinien przypominać następujący przykład.
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formułuj żądanie JSON przypominające:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Gdzie:
+    - Wartość `client_assertion` musi być tokenem `aadToken` otrzymanym w poprzednim kroku.
+    - Wartość `context` musi być identyfikatorem środowiska, w którym ma zostać wdrożony dodatek.
+    - Ustaw wszystkie inne wartości, tak jak pokazano w przykładzie.
+
+1. Prześlij żądanie HTTP z następującymi właściwościami:
+    - **URL** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metoda** - `POST`
+    - **Nagłówek HTTP** — uwzględnij wersję interfejsu API (klucz to `Api-Version`, wartość to `1.0`)
+    - **Treść** — umożliwia dołączenie żądania JSON utworzonego w poprzednim kroku.
 
 1. Otrzymasz `access_token` w odpowiedzi. Do wywołania interfejsu API Widoczność magazynu potrzebny jest token elementu nośnego. Oto przykład.
 
@@ -500,6 +527,3 @@ Kwerendy przedstawione w poprzednich przykładach mogą zwracać wynik podobny d
 ```
 
 Należy zwrócić uwagę, że pola ilości są ustrukturyzowane i w postaci słownika miar i skojarzonych z nimi wartości.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

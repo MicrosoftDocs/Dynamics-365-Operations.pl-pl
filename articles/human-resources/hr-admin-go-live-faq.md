@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668952"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113835"
 ---
 # <a name="go-live-faq"></a>Rozpoczynanie eksploatacji — często zadawane pytania 
 
@@ -66,7 +66,7 @@ Chociaż nie możesz uzyskać bezpośredniego dostępu do zasobów platformy Azu
 
 - Bazę danych SQL Azure można wdrożyć we własnej dzierżawie Azure i za pomocą funkcji Używanie własnej bazy danych w celu zsynchronizowania danych. Aby uzyskać więcej informacji, zapoznaj się z tematem [Dobierz własną bazę danych (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-- Funkcji integracji Common Data Service można wykorzystywać do synchronizowania wybranych jednostek w bazie danych Common Data Service. Aby uzyskać więcej informacji, zobacz [Jednostki usługi Common Data Service](hr-developer-entities.md). 
+- Funkcji integracji Dataverse można wykorzystywać do synchronizowania wybranych jednostek w bazie danych Dataverse. Aby uzyskać więcej informacji, zobacz [Tabele Dataverse](hr-developer-entities.md). 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>Jak często jest wykonywana kopia zapasowa bazy danych produkcji? 
 
@@ -99,6 +99,3 @@ Aby zgłosić awarię środowiska produkcji, należy wykonać proces opisany w t
  ## <a name="see-also"></a>Informacje dodatkowe
 
  [Przygotowywanie do rozpoczęcia eksploatacji](hr-admin-go-live-prepare.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

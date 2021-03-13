@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4420143"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113809"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Przygotowanie do rozpoczęcia eksploatacji Human Resources
 
@@ -53,28 +53,36 @@ W poniższej tabeli wymieniono wszystkie kroki procesu, oczekiwany czas trwania 
 
 ## <a name="completing-the-lcs-methodology"></a>Kończenie metodologii usługi LCS
 
-Głównym punktem kontrolnym w każdym projekcie implementacji jest migracja środowiska produkcyjnego. 
-
-Aby zapewnić, że środowisko produkcyjne jest używane w operacjach na żywo, firma Microsoft postanowi o wystąpieniu produkcji tylko wtedy, gdy wdrożenie zbliża się do fazy **Działanie**, po ukończeniu wymaganych działań w metodologii usługi LCS. Aby uzyskać więcej informacji dotyczących środowisk w subskrypcji, zapoznaj się z  [Podręcznikiem systemu Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Klienci muszą dokończyć **Analizę**, **Projektowanie i opracowywanie**, a następnie **Testować** etapy w metodologii usługi LCS, zanim zostanie udostępniony przycisk  **Konfiguruj** , który zażąda środowiska produkcyjnego. Aby zakończyć fazę w usługi LCS, należy najpierw ukończyć każdy wymagany krok w tej fazie. Po zakończeniu wszystkich etapów w fazie można zakończyć całą fazę. Można zawsze ponownie otworzyć fazę później, jeśli trzeba wprowadzić zmiany. Aby uzyskać więcej informacji, przejrzyj temat  [Lifecycle Services (LCS) dla klientów aplikacji Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Proces wykonywania kroku składa się z dwóch części: 
+Głównym punktem kontrolnym w każdym projekcie implementacji jest migracja środowiska produkcyjnego. Proces wykonywania kroku składa się z dwóch części: 
 
 - Należy wykonać pracę rzeczywistą, na przykład analizę zgodnego ze szczeliną lub test akceptacji użytkownika (UAT). 
 - Zaznacz odpowiedni krok w metodologii usługi LCS jako zakończony. 
 
-Dobrą praktyką jest wykonywanie kroków z metodologii w miarę postępów z implementacją. Nie należy czekać do ostatniej minuty. Nie należy po prostu klikać wszystkich kroków, aby można było korzystać z środowiska produkcyjnego. W najlepszym interesie klienta leży stosowanie stałej implementacji. 
+Dobrą praktyką jest wykonywanie kroków z metodologii w miarę postępów z implementacją. Nie należy czekać do ostatniej minuty. W najlepszym interesie klienta leży stosowanie stałej implementacji. 
 
 ## <a name="uat-for-your-solution"></a>UAT dla rozwiązania
 
 Podczas fazy UAT należy przetestować wszystkie zaimplementowane procesy biznesowe oraz wszelkie dostosowania wprowadzone przez użytkownika w środowisku piaskownicy w projekcie implementacji. Aby zapewnić pomyślne wykonanie operacji, należy wziąć pod uwagę następujące kwestie, które należy wykonać w fazie UAT: 
 
+- Zalecamy, aby proces UAT rozpoczynał się w czystym i świeżym środowisku, w którym dane z konfiguracji GOLD są kopiowane do środowiska przed rozpoczęciem procesu UAT. Zalecamy używanie środowiska produkcyjnego jako środowiska GOLD do momentu uruchomienia, kiedy to środowisko stanie się produkcyjne.
 - Przypadki testowe obejmują cały zakres wymagań. 
 - Test za pomocą migrowanych danych. Dane te powinny zawierać dane główne, takie jak pracownicy, zadania i stanowiska. Należy również uwzględnić salda otwarcia, takie jak urlop i naliczenia nieobecności. Na koniec należy uwzględnić otwarte transakcje, takie jak bieżące rejestracje świadczeń. Zakończ testowanie ze wszystkimi typami danych, nawet jeśli zbiór danych nie został sfinalizowany. 
 - Przetestuj za pomocą poprawnych ról zabezpieczeń (ról domyślnych i ról niestandardowych), które są przypisane do użytkowników. 
 - Należy upewnić się, że rozwiązanie jest zgodne z dowolnymi wymogami przepisów prawnych obowiązującymi w firmie i w danym przemyśle. 
 - Umożliwia dokumentowanie wszystkich funkcji oraz uzyskanie akceptacji i zarejestrowania od odbiorcy. 
+
+## <a name="mock-go-live"></a>Symulacja rozpoczęcia
+
+Przed rozpoczęciem pracy należy wykonać próbne uruchomienie, aby przetestować kroki wymagane do przełączenia ze starszych systemów na nowy system. Powinieneś przeprowadzić próbne uruchomienie w środowisku piaskownicy i uwzględnić wszystkie kroki w planie przełączania.
+
+- Zalecamy używanie środowiska produkcyjnego jako środowiska konfiguracyjnego GOLD do momentu uruchomienia.
+- Upewnij się, że masz silny proces zarządzania, aby chronić środowisko produkcyjne przed przypadkowymi transakcjami lub aktualizacjami przed uruchomieniem.
+- Gdy wszystko będzie gotowe do użycia w trybie UAT lub podróży do pracy, odśwież środowisko piaskownicy ze środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Kopiowanie wystąpienia](hr-admin-setup-copy-instance.md).
+- Przetestuj każdy etap planu przełączania w środowisku piaskownicy, a następnie zweryfikuj środowisko piaskownicy, wykonując wyrywkowe kontrole lub testy ze skryptów UAT w środowisku.
+  - Testy powinny obejmować wszystkie migracje danych, w tym transformacje potrzebne do uruchomienia.
+  - Ten proces powinien uwzględniać odcięcie praktyk w przypadku starszych systemów.
+  - Pamiętaj, aby uwzględnić wszystkie etapy przełączania integracji lub kroki systemu zewnętrznego w przełączaniu próbnym.
+- Jeśli zauważysz jakiekolwiek problemy podczas próbnego przełączania, może być wymagane drugie cięcie próbne. Z tego powodu zalecamy zaplanowanie dwóch próbnych zmian w planie projektu.
 
 ## <a name="fasttrack-go-live-assessment"></a>Ocena rozpoczęcia eksploatacji FastTrack
 
@@ -91,5 +99,3 @@ Po przesłaniu listy kontrolnej architekt rozwiązań FastTrack dokona przegląd
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Rozpoczynanie eksploatacji — często zadawane pytania](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

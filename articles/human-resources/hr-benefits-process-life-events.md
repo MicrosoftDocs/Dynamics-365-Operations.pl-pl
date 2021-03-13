@@ -2,7 +2,7 @@
 title: Przetwarzanie zmian sytuacji życiowej
 description: W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ada986888a22afe83885985a694cd00ff94c9217
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42b7e2606bca4bb5eda1c9bfc7940f9067c4b943
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420017"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113817"
 ---
 # <a name="process-life-events"></a>Przetwarzanie zmian sytuacji życiowej
 
@@ -57,6 +57,3 @@ Na przykład jeśli dzisiejsza data to 1 lutego, a 14 lutego pracownik Jan Kowal
    4. Kliknij przycisk **OK**. Proces będzie uruchamiany z parametrami określonymi przez użytkownika.
 
 4. Kliknij przycisk **OK**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

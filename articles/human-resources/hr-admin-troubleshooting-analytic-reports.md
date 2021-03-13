@@ -2,7 +2,7 @@
 title: Rozwiązywanie problemów z raportami analitycznymi
 description: W tym artykule wyjaśniono, co należy zrobić, gdy zmiany w danych klienta nie pojawiają się w żadnych jego obszarach roboczych.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 99d9eb3a16e6470820a2eb0a19c1d50e89bd3d36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c5e1a1d7044567a07acedf71e65ed244275acfd9
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420099"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113856"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Rozwiązywanie problemów z raportami analitycznymi
 
@@ -43,6 +43,3 @@ Ten problem może być tylko kwestią czasu. Wykonaj poniższe czynności, aby u
 1. Wybierz **Edytuj** u góry strony i ustaw planowaną datę/godzinę rozpoczęcia na wartość, która odświeży analizy bliżej czasu bieżącego.
 
 ![Zadania wsadowe](media/batch-jobs.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

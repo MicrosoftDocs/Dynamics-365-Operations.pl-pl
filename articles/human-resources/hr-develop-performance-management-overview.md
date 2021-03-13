@@ -2,7 +2,7 @@
 title: Zarządzanie wydajnością
 description: Proces zarządzania wydajnością umożliwia pracowników dokumentowanie i omawianie ich działań z przełożonymi. Z kolei menedżerowie mogą dostarczać informacje zwrotne i wskazówki pracownikom.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
@@ -10,19 +10,19 @@ ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Human Resources
 ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 722ae95de3b1822f3c7246394c3d16b8b827723b
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420078"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115615"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
@@ -163,5 +163,3 @@ Typy źródeł arkusza wydajności opisują, skąd pochodzą arkusze wydajności
 ### <a name="review-types"></a>Typy przeglądów
 
 Typy przeglądów wydajności pomagają sterować działaniem przeglądu. Można włączyć lub wyłączyć przepływ pracy dla przeglądu. Jeżeli przegląd nie używa przepływu pracy, można zdefiniować domyślny stan, który będzie używany podczas tworzenia przeglądu. Można także określić, czy przegląd musi zostać podpisany przez pracownika i/lub menedżera.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

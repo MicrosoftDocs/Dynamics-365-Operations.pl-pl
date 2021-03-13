@@ -2,7 +2,7 @@
 title: Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
 description: Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osiągania celów lub efektywności działania w okresie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2a90a5f746e49e1a5df9910867e8cd35feb1147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 574925f0e278ad7bd3c654432fd0f862fd3c3259
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420008"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115879"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
 
@@ -54,6 +54,3 @@ Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osią
 20. W polu Opis wpisz „Dziękuję za całą pomoc podczas konferencji!”.
 21. Kliknij przycisk Wyślij.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

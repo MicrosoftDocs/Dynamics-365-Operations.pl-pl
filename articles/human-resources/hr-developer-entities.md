@@ -1,9 +1,9 @@
 ---
-title: Jednostki usługi Common Data Service
-description: Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Common Data Service do obsługi scenariuszy rozszerzalności i integracji.
+title: Tabele Dataverse
+description: Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Dataverse do obsługi scenariuszy rozszerzalności i integracji.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+manager: tfehr
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2f075a8e96af55b1363d2d51db377c5b25c38775
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4530013"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113890"
 ---
-# <a name="common-data-service-entities"></a>Jednostki usługi Common Data Service
+# <a name="dataverse-tables"></a>Tabele Dataverse
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Dataverse do obsługi scenariuszy rozszerzalności i integracji.
 
-Moduł Microsoft Dynamics 365 Human Resources wykorzystuje usługę Common Data Service do obsługi scenariuszy rozszerzalności i integracji.
+> [!NOTE]
+> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
 
-Aby uzyskać więcej informacji dotyczących usługi Common Data Service, zobacz temat [Co to jest usługa Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+Poniższe tabele Dataverse są dostępne w oparciu o encje Human Resources.
 
-W usłudze Common Data Service są dostępne są następujące jednostki aplikacji Human Resources.
+## <a name="benefit-tables"></a>Tabele świadczeń
 
-## <a name="benefit-entities"></a>Jednostki dotyczące świadczeń
-
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Częstotliwość obliczania świadczeń | cdm_benefitcalculationfrequency |
 | Częstotliwość obliczania okresu płac dla świadczeń | cdm_benefitcalculationfrequencypayperiod |
@@ -47,9 +46,9 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Plan świadczeń | cdm_benefitplan (niewłączone dla obsługi pól niestandardowych) |
 | Typ świadczenia | cdm_benefittype |
 
-## <a name="business-process-tasks-entities"></a>Jednostki zadań procesu biznesowego
+## <a name="business-process-tasks-tables"></a>Tabele zadań procesu biznesowego
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Kalendarz procesu biznesowego | cdm_businessprocesscalendar |
 | Przypisanie grupy procesu biznesowego | cdm_businessprocessgroupassignment |
@@ -58,11 +57,11 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Nagłówek szablonu listy kontrolnej | cdm_businessprocesstemplateheader |
 | Zadanie szablonu listy kontrolnej | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-entities"></a>Jednostki kompensacji
+## <a name="compensation-tables"></a>Tabele Wynagrodzenie
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
-| Stały plan wynagrodzeń | cdm_compensationfixedplan |
+| System stałych wynagrodzeń | cdm_compensationfixedplan |
 | Siatka wynagrodzeń | cdm_compensationgrid |
 | Poziom wynagrodzeń | cdm_compensationlevel |
 | Wynagrodzenie — częstotliwość wypłat | cdm_compensationpayfrequency |
@@ -75,11 +74,11 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Typ planu wynagrodzeń o zmiennej wysokości | cdm_compensationvariableplantype |
 | Zdarzenie dotyczące stałego wynagrodzenia | cdm_fixedcompensationevent |
 | Reguła wypłat | cdm_vestingrule |
-| Stałe wynagrodzenia pracowników | cdm_workerfixedcompensation |
+| Stałe wynagrodzenie pracownika | cdm_workerfixedcompensation |
 
-## <a name="organization-entities"></a>Jednostki dotyczące organizacji
+## <a name="organization-tables"></a>Tabele Organization
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Dział | cdm_department |
 | Zatrudnienie | cdm_employment |
@@ -95,33 +94,33 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Nazwa | cdm_title |
 
 > [!NOTE]
-> Wymiary finansowe dla **Typu stanowiska**, **Przypisania pracowników do stanowisk** i **Zatrudnienia** zapewniają integrację jednokierunkową do Common Data Service. Aktualizacje wymiarów finansowych obecnie nie są synchronizowane z usługi Common Data Service do Human Resources. 
+> Wymiary finansowe dla **Typu stanowiska**, **Przypisania pracowników do stanowisk** i **Zatrudnienia** zapewniają integrację jednokierunkową do Dataverse. Aktualizacje wymiarów finansowych obecnie nie są synchronizowane z usługi Dataverse do Human Resources. 
 
-## <a name="leave-and-absence-entities"></a>Jednostki dotyczące urlopów i nieobecności
+## <a name="leave-and-absence-tables"></a>Tabele Urlopy i nieobecności
 
-| Imię i nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Transakcja banku urlopów | cdm_leavebanktransaction |
-| Rejestracja urlopów | cdm_leaveenrollment |
+| Rejestracja urlopu | cdm_leaveenrollment |
 | Plan urlopów | cdm_leaveplan |
 | Wniosek urlopowy | cdm_leaverequest |
 | Szczegół wniosku urlopowego | cdm_leaverequestdetail |
 | Typ urlopu | cdm_leavetype |
 | Kod przyczyny typu nieobecności | cdm_leavetypereasoncode |
 
-## <a name="payroll-entities"></a>Jednostki dotyczące listy płac
+## <a name="payroll-tables"></a>Tabele listy płac
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
-| Cykl płac | cdm_paycycle |
+| Cykl kalkulacji płac | cdm_paycycle |
 | Okres kalkulacji płac | cdm_payperiod |
 | Kod zarobków dla listy płac | cdm_payrollearningcode |
 | Wypłata na konto bankowe | cdm_bankaccountdisbursement |
 | Region podatkowy | cdm_taxregion |
 
-## <a name="worker-entities"></a>Jednostki dotyczące pracownika
+## <a name="worker-tables"></a>Tabele pracowników
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Pracownik | cdm_worker |
 | Adres pracownika | cdm_workeraddress |
@@ -135,22 +134,22 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 | Zakres czasu w kalendarzu roboczym | cdm_workcalendartimeinterval (niewłączone dla obsługi pól niestandardowych) |
 | Konto bankowe pracownika | cdm_workerbankaccount |
 
-## <a name="worker-setup-entities"></a>Jednostki ustawień pracownika
+## <a name="worker-setup-tables"></a>Tabele ustawień pracownika
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Status kombatanta | cdm_veteranstatus |
 | Pochodzenie etniczne | cdm_ethnicorigin |
 | Kod przyczyny | cdm_reasoncode |
-| Agencja wystawiająca dokument identyfikacyjny danej osoby | cdm_personidentificationissuingagency |
+| Agencja wystawiająca identyfikator osoby | cdm_personidentificationissuingagency |
 
-## <a name="competency-entities"></a>Jednostki kwalifikacji
+## <a name="competency-tables"></a>Tabele kwalifikacji
 
-| Nazwisko | Jednostka |
+| Imię i nazwisko | Tabela |
 | --- | --- |
 | Typ kwalifikacji | cdm_skilltype |
 
-## <a name="entity-relationship-models"></a>Modele relacji między jednostkami
+## <a name="table-relationship-models"></a>Tabele modeli relacji
 
 ### <a name="worker"></a>Pracownik
 
@@ -178,8 +177,9 @@ W usłudze Common Data Service są dostępne są następujące jednostki aplikac
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Wybieranie technologii integracji danych](hr-admin-integration-choose-technology.md)</br>
-[Konfiguruj integrację z programem Common Data Service](hr-admin-integration-common-data-service.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Wybieranie technologii integracji danych](hr-admin-integration-choose-technology.md)<br>
+[Konfiguruj integrację z programem Dataverse](hr-admin-integration-common-data-service.md)<br>
+[Konfiguruj tabele wirtualne usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Często zadawanych pytań dotyczące tabel wirtualnych dla Human Resources](hr-admin-virtual-entity-faq.md)<br>
+[Co to jest usługa Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
+[Aktualizacje terminologii](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)

@@ -1,8 +1,8 @@
 ---
-title: Projektowanie kwestionariuszy
+title: Tworzenie kwestionariuszy
 description: W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420131"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115133"
 ---
-# <a name="design-questionnaires"></a>Projektowanie kwestionariuszy
+# <a name="create-questionnaires"></a>Tworzenie kwestionariuszy
 
 W tym artykule opisano proces tworzenia kwestionariusza. Pierwszym krokiem jest projektowanie kwestionariusza. Przy projektowaniu kwestionariusza, można nie tylko zapisać pytania i odpowiedzi, ale również utworzyć strukturę, która umożliwia rejestrowanie odpowiedzi i umieszczanie ich w tabelach. 
 
@@ -91,7 +91,7 @@ Kody sekwencji numerów służą do organizowania pytań i odpowiedzi. W oparciu
 Wszystkie parametry należy zdefiniować przed rozpoczęciem tworzenia danych. Można zmodyfikować ustawienia parametrów kwestionariusza w dowolnym momencie.
 
 ## <a name="questionnaire-components"></a>Składniki kwestionariusza
-Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz.  Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
+Kwestionariusze obejmują trzy główne elementy: grupy odpowiedzi zawierające odpowiedzi dla pytań wielokrotnego wyboru, pytania oraz sam kwestionariusz. Opcjonalnie można grupować pytania w kwestionariuszu w grupy wyników. Grupy wyników umożliwiają podziału pytań na kategorie i dostarczania dalszych analiz w kwestionariuszu. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -236,5 +236,3 @@ Aby używać pytań warunkowych to utworzenie hierarchii pytań w kwestionariusz
 Firma oferuje klientom towary i usługi. Zwykle w takich przypadkach niektórzy klienci kupują tylko towary, inni tylko usługi, a jeszcze jedni towary i usługi. Dlatego gdy firma rozsyła ankietę badania poziomu zadowolenia klientów, wprowadza do kwestionariusza strukturę warunkową, aby klienci, którzy nabywają same usługi, nie musieli odpowiadać na pytania dotyczące towarów. 
 
 Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz odpowiedź A na pytanie 1, następnym pytaniem w sekwencji jest pytanie 2. Jeśli jednak respondent wybierze odpowiedź B na pytanie 1, następnym pytaniem jest pytanie 5.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

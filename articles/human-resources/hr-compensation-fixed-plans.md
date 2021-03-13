@@ -2,7 +2,7 @@
 title: Tworzenie planów stałych wynagrodzeń
 description: Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć plan stałych wynagrodzeń i zarejestrować pracowników.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa370ad5b873d707aba865b7f90e22acfc4825ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420084"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113789"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Tworzenie planów stałych wynagrodzeń
 
@@ -98,6 +98,3 @@ Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stron
 
 System sprawdza, czy kwota wynagrodzenia określona dla planu wynagrodzeń typu stopniowego lub pasmowego mieści się zakresie wyznaczonym przez maksymalne i minimalne punkty odniesienia dla danego poziomu wynagrodzeń w zadaniu pracownika. Jeśli kwota wynagrodzenia jest spoza dozwolonym zakresem, pojawia się ostrzeżenie lub komunikat o błędzie w zależności od poziomu tolerancji ustawionego w planie stałych wynagrodzeń.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

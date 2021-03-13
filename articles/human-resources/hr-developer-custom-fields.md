@@ -2,7 +2,7 @@
 title: Pola niestandardowe
 description: W programie Dynamics 365 Human Resources można dodawać niestandardowe pola do stron.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 583e29d9b0bae34ffc2f519bb775b9e099682fe0
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: eb27808d72728e2e2ac98fdfb8fa0643ad8f3219
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529561"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115495"
 ---
 # <a name="custom-fields"></a>Pola niestandardowe
 
@@ -31,14 +31,12 @@ ms.locfileid: "4529561"
 
 W programie Dynamics 365 Human Resources można dodawać niestandardowe pola do stron. Aby uzyskać więcej informacji na temat tworzenia niestandardowych, zobacz [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-Większość jednostke Common Data Service wspiera pola niestandardowe. Aby uzyskać pełną listę jednostek Common Data Service, należy zapoznać się z [jednostkami Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+Większość tabel Dataverse obsługuje pola niestandardowe. Aby uzyskać pełną listę tabel Dataverse, należy zapoznać się z [tabelami Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
-Należy pamiętać o włączeniu wszystkich utworzonych pól niestandardowych, tak aby można było z nich skorzystać w usłudze Common Data Service. Aby uzyskać więcej informacji, zobacz [Udostępnianie niestandardowych pól w jednostkach danych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Należy pamiętać o włączeniu wszystkich utworzonych pól niestandardowych, tak aby można było z nich skorzystać w usłudze Dataverse. Aby uzyskać więcej informacji, zobacz [Udostępnianie niestandardowych pól w jednostkach danych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Jednostki usługi Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Tabele Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Udostępnianie niestandardowych pól w jednostkach danych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

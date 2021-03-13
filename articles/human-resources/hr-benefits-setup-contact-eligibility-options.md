@@ -2,7 +2,7 @@
 title: Konfigurowanie opcji uprawnień kontaktów osobistych
 description: W programie Microsoft Dynamics 365 Human Resources można skonfigurować opcje uprawnień dla kontaktów osobistych. Kontakty osobiste mogą być beneficjentami lub osobami na utrzymaniu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 137416477928fd4d6b4438f25df5afea93972027
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420089"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113864"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurowanie opcji uprawnień kontaktów osobistych
 
@@ -45,6 +45,3 @@ W tym artykule przedstawiono sposób konfigurowania typów kontaktów osobistych
    | **Wiek** | Maksymalny wiek uprawnionego kontaktu osobistego w planie świadczeń. To pole jest aktywne tylko po wybraniu relacji. Ten wiek jest porównywany z obliczonym wiekiem kontaktu osobistego. Obliczony wiek to: (Data objęcia świadczeniem - data urodzenia kontaktu osobistego / 365) Ta liczba jest zawsze liczbą całkowitą. |
 
 4. Wybierz opcję **Zapisz**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

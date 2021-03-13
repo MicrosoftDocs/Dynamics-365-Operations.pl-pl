@@ -2,7 +2,7 @@
 title: Tworzenie planu świadczeń
 description: Konfigurowanie planów świadczeń w module Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcbf4c1a7f136e5563bf1210b6c09228dad95dea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05d08862b880271fb4842bd7e77f04208f9c0bed
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420022"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113882"
 ---
 # <a name="create-a-benefits-plan"></a>Tworzenie planu świadczeń
 
@@ -159,6 +159,3 @@ Można dodać opis planu, aby pomóc pracownikom w wyborze świadczeń. Wprowadz
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Plany** wybierz opcję **Plany świadczeń**.
 
 2. Wybierz opcję **Programy kredytu elastycznego**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

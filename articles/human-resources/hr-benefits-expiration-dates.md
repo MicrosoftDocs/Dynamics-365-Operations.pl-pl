@@ -2,7 +2,7 @@
 title: Zarządzanie datami ważności świadczenia
 description: W tej procedurze pokazano, jak można wygasić lub przedłużyć świadczenie oraz zarządzać datami rejestracji pracowników zarejestrowanych na świadczenie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationResults, HcmWorker, HcmWorkerEnrollment, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 7332a95e1cd558336dc19bcb269ef89ce3721aa9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6e4eb882f564e2b74ae15cd54fcda6e5370b07d4
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419992"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113841"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Zarządzanie datami ważności świadczenia
 
@@ -46,6 +46,3 @@ W tej procedurze pokazano, jak można wygasić lub przedłużyć świadczenie or
 15. Kliknij opcję Świadczenia.
 16. Na liście znajdź świadczenie i zaznacz rekord. Zwróć uwagę na nową datę końcowa okresu obowiązywania.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

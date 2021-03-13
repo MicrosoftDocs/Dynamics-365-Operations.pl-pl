@@ -2,7 +2,7 @@
 title: Tworzenie przeglądów wydajności
 description: W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e83bcf60e494e6f04387727bedf41175faa07557
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420061"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115807"
 ---
 # <a name="create-performance-reviews"></a>Tworzenie przeglądów wydajności
 
@@ -78,6 +78,3 @@ W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano pr
 34. Wybierz kartę **Przegląd**. Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  
 35. Wybierz kartę **Podpisy**. Pracownik i Menedżer mogą wyrejestrować się z przeglądu. Po złożeniu wszystkich wymaganych podpisów stan zmienia się na **Zakończono** i nie można wprowadzać więcej zmian.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

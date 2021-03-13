@@ -2,7 +2,7 @@
 title: Aktualizowanie procesu
 description: Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako usługa (SaaS), które zapewnia ciągłe aktualizacje dla zmian w aplikacji i platformie.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4bb5f7dc17c8f4f3a54bd285cb55088f2176db4a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527819"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113827"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
@@ -43,7 +43,7 @@ Aktualizacje modułu Human Resources są stosowane do wszystkich środowisk auto
 
     Wszystkie obsługiwane centra danych są aktualizowane co dwa tygodnie, o ile nie zaznaczono inaczej. Stany Zjednoczone, Australia, Europa, Wielka Brytania, Azja i Kanada są objęte aktualizacjami co dwa tygodnie. 
 
-- **Aktualizacje rozwiązania Common Data Service**: te aktualizacje odbywają się w przybliżeniu co sześć tygodni, jeśli jest to konieczne. Obejmują nowe jednostki i zmiany istniejących jednostek w usłudze Common Data Service. Te aktualizacje są publikowane w tych samych regionach, jak aktualizacje co dwa tygodnie, a ich zreplikowanie do wszystkich centrów danych może potrwać do sześciu tygodni. Aktualizacje rozwiązania mogą być zbieżne z aktualizacjami usług co dwa tygodnie, ale nie muszą.
+- **Aktualizacje rozwiązania Dataverse**: te aktualizacje odbywają się w przybliżeniu co sześć tygodni, jeśli jest to konieczne. Obejmują nowe jednostki i zmiany istniejących jednostek w usłudze Dataverse. Te aktualizacje są publikowane w tych samych regionach, jak aktualizacje co dwa tygodnie, a ich zreplikowanie do wszystkich centrów danych może potrwać do sześciu tygodni. Aktualizacje rozwiązania mogą być zbieżne z aktualizacjami usług co dwa tygodnie, ale nie muszą.
 
 > [!NOTE]
 > Aktualizacje rozwiązania są dostępne we wszystkich centrach danych po opublikowaniu. Jeśli nie chcesz czekać na automatyczne zreplikowanie aktualizacji, możesz ręcznie zastosować te aktualizacje w dowolnym środowisku w dowolnym centrum danych.
@@ -105,6 +105,3 @@ Podczas testowania funkcji w wersji zapoznawczej lub sprawdzania nowych możliwo
 [Nowości i zmiany w module Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
 [Zasady dotyczące cyklu życia oprogramowania](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

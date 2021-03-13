@@ -1,9 +1,9 @@
 ---
-title: Konfigurowanie jednostek wirtualnych usługi Common Data Service
-description: W tym temacie przedstawiono sposób konfigurowania jednostek wirtualnych dla systemu Dynamics 365 Human Resources. Generuj i aktualizuj istniejące jednostki wirtualne oraz analizuj wygenerowane i dostępne jednostki.
+title: Konfiguruj tabele wirtualne usługi Dataverse
+description: W tym temacie przedstawiono sposób konfigurowania tabel wirtualnych dla systemu Dynamics 365 Human Resources. Generuj i aktualizuj istniejące tabele wirtualne oraz analizuj wygenerowane i dostępne tabele.
 author: andreabichsel
 manager: tfehr
-ms.date: 11/02/2020
+ms.date: 01/25/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,49 +18,54 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b590faeab600d04c9d5303693ec1e9ac682250d
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: cd299b51e38cc30c3e18f3ef9de1f43fa817b840
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645608"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113899"
 ---
-# <a name="configure-common-data-service-virtual-entities"></a>Konfigurowanie jednostek wirtualnych usługi Common Data Service
+# <a name="configure-dataverse-virtual-tables"></a>Konfiguruj tabele wirtualne usługi Dataverse
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Human Resources jest wirtualnym źródłem danych w usłudze Common Data Service. Obsługuje on pełne operacje tworzenia, odczytu, aktualizacji i usuwania (CRUD) z Common Data Service i Microsoft Power Platform. Dane dla jednostek wirtualnych nie są przechowywane w usłudze Common Data Service, ale w bazie danych aplikacji. 
+Dynamics 365 Human Resources jest wirtualnym źródłem danych w usłudze Microsoft Dataverse. Obsługuje on pełne operacje tworzenia, odczytu, aktualizacji i usuwania (CRUD) z Dataverse i Microsoft Power Platform. Dane dla tabel wirtualnych nie są przechowywane w usłudze Dataverse, ale w bazie danych aplikacji.
 
-Aby włączyć operacje CRUD dla jednostek zasobów ludzkich z usługi Common Data Service, należy udostępnić jednostki jako jednostki wirtualne w usłudze Common Data Service. Pozwala to na wykonywanie operacji CRUD z usługi Common Data Service i Microsoft Power Platform na danych znajdujących się w module Zasoby ludzkie. Operacje te obsługują również pełne sprawdzanie poprawności logiki biznesowej w celu zapewnienia integralności danych podczas zapisywania danych w jednostkach.
-
-## <a name="available-virtual-entities-for-human-resources"></a>Dostępne jednostki wirtualne dla modułu Zasoby ludzkie
-
-Wszystkie jednostki protokołu OData (Open Data Protocol) w module Zasoby ludzkie są dostępne jako jednostki wirtualne w usłudze Common Data Service. Są one również dostępne w programie Power Platform. Teraz możesz tworzyć aplikacje i środowiska z danymi bezpośrednio z modułu Zasoby ludzkie z pełnymi funkcjami CRUD bez kopiowania lub synchronizowania danych do usługi Common Data Service. Portale Power Apps umożliwiają tworzenie zewnętrznych stron internetowych, które pozwalają realizować scenariusze współpracy w zakresie procesów biznesowych w module Zasoby ludzkie.
-
-Można wyświetlić listę jednostek wirtualnych włączonych w środowisku i rozpocząć pracę z jednostkami w [Power Apps](https://make.powerapps.com) w rozwiązaniu **Dynamics 365 HR jednostek miarowych**.
-
-![Jednostki wirtualne HR Dynamics 365 w Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
-
-## <a name="virtual-entities-versus-natural-entities"></a>Jednostki wirtualne a jednostki naturalne
-
-Jednostki wirtualne dla modułu Zasoby ludzkie nie są takie same jak jednostki naturalne Common Data Service utworzone dla modułu Zasoby ludzkie. Jednostki naturalne dla modułu Zasoby ludzkie są generowane oddzielnie i utrzymywane w rozwiązaniu HCM Common w Common Data Service. W przypadku jednostek naturalnych dane są przechowywane w usłudze Common Data Service i wymagają synchronizacji z bazą danych aplikacji Zasoby ludzkie.
+Aby włączyć operacje CRUD dla jednostek zasobów ludzkich z usługi Dataverse, należy udostępnić jednostki jako tabele wirtualne w usłudze Dataverse. Pozwala to na wykonywanie operacji CRUD z usługi Dataverse i Microsoft Power Platform na danych znajdujących się w module Zasoby ludzkie. Operacje te obsługują również pełne sprawdzanie poprawności logiki biznesowej w celu zapewnienia integralności danych podczas zapisywania danych w jednostkach.
 
 > [!NOTE]
-> Aby uzyskać listę jednostek naturalnych usługi Common Data Service dla modułu Zasoby ludzkie, zobacz temat [Jednostki usługi Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+
+## <a name="available-virtual-tables-for-human-resources"></a>Dostępne tabele wirtualne dla modułu Zasoby ludzkie
+
+Wszystkie jednostki protokołu OData (Open Data Protocol) w module Zasoby ludzkie są dostępne jako tabele wirtualne w usłudze Dataverse. Są one również dostępne w programie Power Platform. Teraz możesz tworzyć aplikacje i środowiska z danymi bezpośrednio z modułu Zasoby ludzkie z pełnymi funkcjami CRUD bez kopiowania lub synchronizowania danych do usługi Dataverse. Portale Power Apps umożliwiają tworzenie zewnętrznych stron internetowych, które pozwalają realizować scenariusze współpracy w zakresie procesów biznesowych w module Zasoby ludzkie.
+
+Można wyświetlić listę tabel wirtualnych włączonych w środowisku i rozpocząć pracę z tabelami w [Power Apps](https://make.powerapps.com) w rozwiązaniu **Dynamics 365 HR tabel miarowych**.
+
+![Tabele wirtualne HR Dynamics 365 w Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+
+## <a name="virtual-tables-versus-native-tables"></a>Tabele wirtualne a tabele macierzyste
+
+Tabele wirtualne dla modułu Zasoby ludzkie nie są takie same jak tabele natywne Dataverse utworzone dla modułu Zasoby ludzkie. 
+
+Tabele natywne dla modułu Zasoby ludzkie są generowane oddzielnie i utrzymywane w rozwiązaniu HCM Common w Dataverse. W przypadku tabel natywnych dane są przechowywane w usłudze Dataverse i wymagają synchronizacji z bazą danych aplikacji Zasoby ludzkie.
+
+> [!NOTE]
+> Aby uzyskać listę tabel natywnych usługi Dataverse dla modułu Zasoby ludzkie, zobacz temat [Tabele usługi Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
 
 ## <a name="setup"></a>Konfiguracja
 
-Wykonaj te kroki konfiguracji, aby włączyć jednostki wirtualne w danym środowisku.
+Wykonaj te kroki konfiguracji, aby włączyć tabele wirtualne w danym środowisku.
 
-### <a name="enable-virtual-entities-in-human-resources"></a>Włącz jednostki wirtualne w module Zasoby ludzkie
+### <a name="enable-virtual-tables-in-human-resources"></a>Włącz tabele wirtualne w module Zasoby ludzkie
 
-Najpierw musisz włączyć jednostki wirtualne w obszarze roboczym **Zarządzanie funkcjami**.
+Najpierw musisz włączyć tabele wirtualne w obszarze roboczym **Zarządzanie funkcjami**.
 
 1. W module Human Resources wybierz opcję **administrowanie systemem**.
 
 2. Wybierz kafelek **Zarządzanie funkcjami**.
 
-3. Wybierz **obsługę jednostek wirtualnych w usłudze HR/CDS**, a następnie wybierz opcję **Włącz**.
+3. Wybierz **Obsługę tabel wirtualnych dla HR w Dataverse**, a następnie wybierz opcję **Włącz**.
 
 Aby uzyskać więcej informacji na temat włączania i wyłączania funkcji, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
 
@@ -74,13 +79,13 @@ Najpierw należy zarejestrować wystąpienie modułu Zasoby ludzkie w witrynie A
 
 3. Wybierz opcję **Nowa rejestracja**.
 
-4. W polu **Nazwa** wprowadź opisową nazwę aplikacji. Na przykład **Encje wirtualne Dynamics 365 Human Resources**.
+4. W polu **Nazwa** wprowadź opisową nazwę aplikacji. Na przykład **Tabele wirtualne Dynamics 365 Human Resources**.
 
 5. W polu **Identyfikator URI przekierowania** wprowadź adres URL obszaru nazw wystąpienia moduły Zasoby ludzkie.
 
 6. Wybierz opcję **Zarejestruj**.
 
-7. Po zakończeniu rejestracji w module Azure Portal zostanie wyświetlone okienko **Przegląd** rejestracji aplikacji , które zawiera **Identyfikator aplikacji (klienta)**. Zapisz teraz **identyfikator aplikacji (klienta)**. Te informacje wprowadzisz podczas [konfigurowania źródła danych jednostki wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+7. Po zakończeniu rejestracji w module Azure Portal zostanie wyświetlone okienko **Przegląd** rejestracji aplikacji , które zawiera **Identyfikator aplikacji (klienta)**. Zapisz teraz **identyfikator aplikacji (klienta)**. Te informacje wprowadzisz podczas [Konfigurowania źródła danych tabeli wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
 8. W lewym okienku nawigacji wybierz opcję **Certyfikaty i klucze tajne**.
 
@@ -88,14 +93,14 @@ Najpierw należy zarejestrować wystąpienie modułu Zasoby ludzkie w witrynie A
 
 10. Podaj opis, wybierz czas trwania i wybierz przycisk **Dodaj**.
 
-11. Zapisz wartość klucza tajnego. Te informacje wprowadzisz podczas [konfigurowania źródła danych jednostki wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-entity-data-source).
+11. Zapisz wartość klucza tajnego. Te informacje wprowadzisz podczas [Konfigurowania źródła danych tabeli wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Pamiętaj, aby w tym momencie zapisać wartość klucza tajnego. Klucz tajny nie jest nigdy wyświetlany ponownie po opuszczeniu tej strony.
 
-### <a name="install-the-dynamics-365-hr-virtual-entity-app"></a>Instalacja aplikacji Dynamics 365 HR Virtual Entity
+### <a name="install-the-dynamics-365-hr-virtual-table-app"></a>Instalacja aplikacji Dynamics 365 HR Virtual Entity
 
-Zainstaluj aplikację Dynamics 365 HR Virtual Entity w środowisku Power Apps, aby wdrożyć pakiet rozwiązania jednostek wirtualnych w usłudze Common Data Service.
+Zainstaluj aplikację Dynamics 365 HR Virtual Table w środowisku Power Apps, aby wdrożyć pakiet rozwiązania tabel wirtualnych w usłudze Dataverse.
 
 1. Otwórz [Centrum administracyjne Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -105,7 +110,7 @@ Zainstaluj aplikację Dynamics 365 HR Virtual Entity w środowisku Power Apps, a
 
 4. Wybierz akcję **Zainstaluj aplikację**.
 
-5. Wybierz **Dynamics 365 HR Virtual Entity** i kliknij przycisk **Dalej**.
+5. Wybierz **Dynamics 365 HR Virtual Table** i kliknij przycisk **Dalej**.
 
 6. Przejrzyj i zaznacz pole wyboru, aby wyrazić zgodę na warunki użytkowania usługi.
 
@@ -113,11 +118,11 @@ Zainstaluj aplikację Dynamics 365 HR Virtual Entity w środowisku Power Apps, a
 
 Instalacja potrwa kilka minut. Po zakończeniu przejdź do kolejnych kroków.
 
-![Instalacja aplikacji Dynamics 365 HR Virtual Entity z centrum administracyjnego Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
+![Instalacja aplikacji Dynamics 365 HR Virtual Table z centrum administracyjnego Power Platform](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
-### <a name="configure-the-virtual-entity-data-source"></a>Konfiguracja źródła danych jednostki wirtualnej 
+### <a name="configure-the-virtual-table-data-source"></a>Konfiguracja źródła danych tabeli wirtualnej 
 
-Następnym krokiem jest skonfigurowanie źródła danych jednostki wirtualnej w środowisku Power Apps. 
+Następnym krokiem jest skonfigurowanie źródła danych tabeli wirtualnej w środowisku Power Apps. 
 
 1. Otwórz [Centrum administracyjne Power Platform](https://admin.powerplatform.microsoft.com).
 
@@ -161,7 +166,7 @@ Następnym krokiem jest skonfigurowanie źródła danych jednostki wirtualnej w 
 Udziel uprawnień dwóm aplikacjom Azure AD w module zasoby ludzkie:
 
 - Aplikacji utworzonej dla Twojej dzierżawy w portalu Microsoft Azure
-- Aplikacji Dynamics 365 HR Virtual Entity zainstalowanej w środowisku Power Apps 
+- Aplikacji Dynamics 365 HR Virtual Table zainstalowanej w środowisku Power Apps 
 
 1. W module Zasoby ludzkie otwórz stronę **Aplikacje Azure Active Directory**.
 
@@ -174,48 +179,45 @@ Udziel uprawnień dwóm aplikacjom Azure AD w module zasoby ludzkie:
 3. Wybierz pozycję **Nowy**, aby utworzyć drugi rekord aplikacji:
 
     - **Identyfikator klienta**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Nazwa**: Dynamics 365 HR Virtual Entity
+    - **Nazwa**: Dynamics 365 HR Virtual Table
     - W polu **Identyfikator użytkownika** wybierz identyfikator użytkownika z uprawnieniami administratora w module Zasoby ludzkie i środowisku Power Apps.
 
-## <a name="generate-virtual-entities"></a>Generowanie jednostek wirtualnych
+## <a name="generate-virtual-tables"></a>Generowanie tabel wirtualnych
 
-Po zakończeniu pracy Instalatora można wybrać jednostki wirtualne, które mają zostać wygenerowane i włączone w instancji usługi Common Data Service.
+Po zakończeniu pracy Instalatora można wybrać tabele wirtualne, które mają zostać wygenerowane i włączone w instancji usługi Dataverse.
 
-1. W module Zasoby ludzkie otwórz stronę **Integracja Common Data Service (CDS)**.
+1. W module Zasoby ludzkie otwórz stronę **Integracja Dataverse**.
 
-2. Wybierz kartę **Jednostki wirtualne**.
+2. Wybierz kartę **Tabele wirtualne**.
 
 > [!NOTE]
-> **Włączenie przełączania jednostek wirtualnych** będzie automatycznie ustawiane na wartość **Tak**, gdy wszystkie wymagane ustawienia zostaną zakończone. Jeśli przełącznik ma wartość **Nie**, sprawdź kroki w poprzednich sekcjach tego dokumentu, aby upewnić się, że wszystkie ustawienia wymagań wstępnych zostały zakończone.
+> **Włączenie przełączania tabel wirtualnych** będzie automatycznie ustawiane na wartość **Tak**, gdy wszystkie wymagane ustawienia zostaną zakończone. Jeśli przełącznik ma wartość **Nie**, sprawdź kroki w poprzednich sekcjach tego dokumentu, aby upewnić się, że wszystkie ustawienia wymagań wstępnych zostały zakończone.
 
-3. Wybierz jednostki lub jednostki, w których chcesz utworzyć w Common Data Service.
+3. Wybierz tabelę lub tabele, w których chcesz utworzyć w Dataverse.
 
 4. Wybierz opcję **Generuj/Odśwież**.
 
-![Integracja z usługą Common Data Service](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Integracja z usługą Dataverse](./media/hr-admin-integration-common-data-service-integration.jpg)
 
-## <a name="check-entity-generation-status"></a>Sprawdź stan generacji jednostki
+## <a name="check-table-generation-status"></a>Sprawdź stan generacji tabel
 
-Jednostki wirtualne są generowane w Common Data Service w trakcie asynchronicznego procesu w tle. Aktualizacje w procesie są wyświetlane w centrum akcji. Szczegóły procesu, w tym dzienniki błędów, znajdują się na stronie **Automatyzacja procesów**.
+Tabele wirtualne są generowane w Dataverse w trakcie asynchronicznego procesu w tle. Aktualizacje w procesie są wyświetlane w centrum akcji. Szczegóły procesu, w tym dzienniki błędów, znajdują się na stronie **Automatyzacja procesów**.
 
 1. W module Human Resources otwórz stronę listy **Automatyzacja procesów**.
 
 2. Wybierz kartę **Procesy w tle**.
 
-3. Wybierz **Proces w tle asynchronicznego sondowania jednostki wirtualnej**.
+3. Wybierz **Proces w tle asynchronicznego sondowania tabeli wirtualnej**.
 
 4. Służy do **Wyświetl ostatnie wyniki**.
 
-W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można przejrzeć dziennik procesu, w tym wszystkie błędy zwrócone przez system Common Data Service.
+W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można przejrzeć dziennik procesu, w tym wszystkie błędy zwrócone przez system Dataverse.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Co to jest usługa Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Przegląd jednostki](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Omówienie relacji jednostek](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Tworzenie i edytowanie jednostek wirtualnych zawierających dane z zewnętrznego źródła danych](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Co to jest usługa Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tabele w Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
+[Omówienie relacji tabel](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
+[Tworzenie i edytowanie tabel wirtualnych zawierających dane z zewnętrznego źródła danych](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Co to są portale Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Omówienie tworzenia aplikacji w Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

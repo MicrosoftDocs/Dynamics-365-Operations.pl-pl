@@ -2,7 +2,7 @@
 title: Nowości i zmiany w rozwiązaniu Human Resources
 description: Każdego tygodnia udostępniamy nowe wydanie Microsoft Dynamics 365 Human Resources. Tematy wymienione tutaj szczegółowo opisują zmiany dokonane w każdym tygodniu.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 675a3f0faed0ce8be4ce2633585ce8e0cf1c9be7
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669091"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113917"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nowości i zmiany w rozwiązaniu Human Resources
 
@@ -49,6 +49,8 @@ Aby uzyskać więcej informacji na temat nadchodzących funkcji lub procesu aktu
 
 Aby zobaczyć, co nowego lub co zostało zmienione w nowych wersjach Human Resources co dwa tygodnie, należy zapoznać się z następującymi artykułami:
 
+[28 stycznia 2021 r.](hr-whats-new-2021-01-28.md)</br>
+[21 stycznia 2021 r.](hr-whats-new-2021-01-21.md)</br>
 [02 grudnia 2020 r.](hr-whats-new-2020-12-02.md)</br>
 [22 października 2020 r.](hr-whats-new-2020-10-22.md)</br>
 [16 września 2020 r.](hr-whats-new-2020-09-16.md)</br>
@@ -79,6 +81,3 @@ Aby zobaczyć, co nowego lub co zostało zmienione w nowych wersjach Human Resou
 [Omówienie rozwiązania Dynamics 365 Human Resources 2020, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

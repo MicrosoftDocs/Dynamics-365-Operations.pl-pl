@@ -1,5 +1,5 @@
 ---
-title: Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów (wersja zapoznawcza)
+title: Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 description: W tym temacie objaśniono proces przesyłania faktur od dostawców do systemu przepływu pracy i automatycznego dopasowywania zaksięgowanych wierszy dokumentu przyjęcia produktów do faktur od dostawcy.
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446641"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115663"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów (wersja zapoznawcza)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie objaśniono proces przesyłania faktur od dostawców do systemu przepływu pracy i automatycznego dopasowywania zaksięgowanych wierszy dokumentu przyjęcia produktów do faktur od dostawcy.
 
@@ -47,13 +45,10 @@ Proces będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia prod
 
 Wiersze faktury, które mają trzyelementowe zasady uzgadniania, gdzie dopasowana ilość przyjęcia jest mniejsza niż ilość fakturowana, zostaną uwzględnione w procesie automatycznego uzgadniania z produktami do przyjęcia.
 
-Aby wyświetlić stan **Ostatnia zgodność** dla faktur, które nie są częścią zautomatyzowanego procesu przesyłania do przepływu pracy, otwórz fakturę na stronie **Faktury od dostawcy**. Podczas wyświetlania faktury aktualizowane są odpowiednie informacje sprawdzania poprawności.
+Aby wyświetlić stan **Ostatnia zgodność** dla faktur, które nie są częścią zautomatyzowanego procesu przesyłania do przepływu pracy, otwórz fakturę na stronie **Faktury od dostawcy**. Podczas wyświetlania faktury aktualizowane są odpowiednie informacje sprawdzania poprawności. Stan **Ostatnie uzgadnianie** można zaktualizować automatycznie przy użyciu zadania **Weryfikuj uzgadnianie faktur** w tle. Proces automatycznego aktualizowania stanu **Ostatniego dopasowania** można skonfigurować na karcie **Procesy tła** na stronie **Automatyzacja procesu** (**Automatyzacje procesu\> Konfiguracja\> Automatyzacja procesów**).
 
 Wiersz faktury zostanie wyłączony z automatycznego przetwarzania jeśli spełniony jest dowolny z następujących warunków:
 
 - Wartość **Stanu automatycznego dopasowania odbioru** w wierszu faktury to **Niepowodzenie**.
 - Faktura jest używana.
 - Faktura znajduje się w systemie przepływu pracy.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Omówienie
 description: Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcje konfigurowania modułu Human Resources, konfigurowania wynagrodzenia i świadczeń dla pracowników oraz zarządzania pracownikami.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420135"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115253"
 ---
 # <a name="overview"></a>Omówienie
 
@@ -57,10 +57,9 @@ Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcj
 [Definiowanie działów](hr-personnel-define-departments.md)</br>
 [Definiowanie funkcji](hr-personnel-define-jobs.md)</br>
 [Używanie przepływów pracy do zarządzania informacjami pracowników etatowych](hr-workflow-manage-employee-information.md)</br>
-[Modyfikowanie relacji zależności służbowych](hr-personnel-modify-reporting-relationships-position.md)</br>
+[Modyfikowanie relacji zależności służbowych stanowiska](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Wprowadzanie informacji o pracowniku](hr-personnel-enter-worker-information.md)</br>
 [Wypożyczanie przedmiotów pracownikom](hr-personnel-loan-item-worker.md)</br>
-[Wprowadzanie kart czasu pracy projektu](hr-personnel-enter-project-timesheets.md)</br>
 [Projekty zatrudnienia grupowego](hr-personnel-mass-hire-projects.md)</br>
 [Konfigurowanie stanowisk](hr-personnel-set-up-positions.md)</br>
 [Ustawianie informacji dotyczących urazów i chorób](hr-personnel-set-up-injury-illness-information.md)</br>
@@ -128,6 +127,3 @@ Podręcznik użytkownika programu Dynamics 365 Human Resources zawiera instrukcj
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

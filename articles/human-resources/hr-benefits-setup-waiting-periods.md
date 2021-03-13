@@ -2,7 +2,7 @@
 title: Konfigurowanie okresów oczekiwania
 description: W programie Microsoft Dynamics 365 Human Resources dni oczekiwania wyznaczają punkt kontrolny, który ma być używany w planach świadczeń.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 07ceed65a0346912d4be012a5cec502b0f0a6149
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4420080"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113776"
 ---
 # <a name="configure-waiting-periods"></a>Konfigurowanie okresów oczekiwania
 
@@ -45,6 +45,3 @@ W programie Microsoft Dynamics 365 Human Resources dni oczekiwania wyznaczają p
    | **Dzień oczekiwania** | Umożliwia wybranie dnia oczekiwania używanego do obliczania daty oczekiwania. |
 
 4. Wybierz opcję **Zapisz**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

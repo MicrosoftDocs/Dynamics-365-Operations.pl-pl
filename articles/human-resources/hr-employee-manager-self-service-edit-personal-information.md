@@ -2,7 +2,7 @@
 title: Edytuj informacje osobiste
 description: W tym artykule opisano sposób edycji informacji osobistych w Samoobsłudze pracownika i menedżera.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0158bd4ee74e24006e338c0477ee0ac4210b1bf5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419994"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115349"
 ---
 # <a name="edit-personal-information"></a>Edytuj informacje osobiste
 
@@ -72,6 +72,3 @@ Parametry ustawione w globalnej książce adresowej ustalają role, które mogą
     - Aby przekazać obraz, wybierz opcję **Przekaż nowy obraz**.
     - Aby usunąć obraz, zaznacz go, a następnie wybierz opcję **Usuń**.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

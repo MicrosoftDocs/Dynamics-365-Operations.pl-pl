@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9a35abcb8a2f6aa8031c8d84a44c2a8ad93883ac
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: f615584785ba48a140e4e97991a4594047fea8ee
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669185"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113777"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutowanie kandydatów
 
@@ -38,7 +38,7 @@ Dynamics 365 Human Resources ułatwia zarządzanie wnioskami o rekrutację. Uspr
 W przypadku braku oddzielnej aplikacji do rekrutacji kandydatami w module Human Resources można również zarządzać ręcznie.
 
 >[!NOTE]
->Jeśli jesteś administratorem lub deweloperem i chcesz zintegrować moduł Human Resources z aplikacją do rekrutacji innego producenta, zobacz [Konfigurowanie integracji usługi Common Data Service](hr-admin-integration-common-data-service.md) i [Konfigurowanie jednostek wirtualnych usługi Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)
+>Jeśli jesteś administratorem lub deweloperem i chcesz zintegrować moduł Human Resources z aplikacją do rekrutacji innego producenta, zobacz [Konfigurowanie integracji usługi Dataverse](hr-admin-integration-common-data-service.md) i [Konfigurowanie tabel wirtualnych usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Aplikacje do integracji rekrutacji można również znaleźć na stronie [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics).
 >
@@ -46,15 +46,13 @@ W przypadku braku oddzielnej aplikacji do rekrutacji kandydatami w module Human 
 
 ## <a name="enable-recruiting-requests"></a>Włącz wnioski o rekrutację
 
-Aby przesyłać wnioski o rekrutację w module Human Resources, należy najpierw włączyć tę funkcję w **Parametrach modułu Human Resources**.
+Aby przesyłać wnioski o rekrutację w module Human Resources, należy najpierw włączyć tę funkcję w **Udostępnionych parametrach modułu Human Resources**.
 
 1. W obszarze roboczym **Zarządzanie personelem** wybierz **Łącza**.
 
-2. W obszarze **Konfiguracja** wybierz opcję **Parametry modułu Human Resources**.
+2. W obszarze **Konfiguracja** wybierz opcję **Udostępniane parametry zasobów ludzkich**.
 
-3. Na karcie **Ogólne** w obszarze **REKRUTACJA** przy opcji **Włącz wnioski o rekrutację** ustaw **Tak**.
-
-   ![Włącz wnioski o rekrutację](./media/hr-recruit-0-enable-requests.png)
+3. Na karcie **Rekrutacja** w obszarze **REKRUTACJA** przy opcji **Włącz wnioski o rekrutację** ustaw **Tak**.
 
 ## <a name="add-a-recruiting-request-location"></a>Dodawanie lokalizacji wniosku o rekrutację
 
@@ -224,8 +222,6 @@ Jeśli zajdzie potrzeba, można odrzucić kandydata po jego zatrudnieniu. Na prz
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Konfigurowanie jednostek wirtualnych usługi Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Konfiguruj tabele wirtualne usługi Dataverse](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organizowanie pracowników](hr-personnel-departments-jobs-positions.md)<br>
 [Konfigurowanie składników funkcji](hr-personnel-jobs.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
