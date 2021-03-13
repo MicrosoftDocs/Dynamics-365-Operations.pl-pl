@@ -1,7 +1,7 @@
 ---
 title: Szukanie dostawców
 description: Naucz się wyszukiwać dostawców na podstawie określonych kryteriów.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: VendSearchCriterion, VendSearchAddCategory, VendSearchAddReviewCriterionGroup, VendSearchResults, VendSearchAddReviewCriterion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc28deb979fe8dc4e31befe6d4d5f6f91388f13e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7caa146532d2bce06b009c45da635327766a88d1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435650"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020711"
 ---
-# <a name="search-for-vendors"></a><span data-ttu-id="6cda0-103">Szukanie dostawców</span><span class="sxs-lookup"><span data-stu-id="6cda0-103">Search for vendors</span></span>
+# <a name="search-for-vendors"></a><span data-ttu-id="e5e8e-103">Szukanie dostawców</span><span class="sxs-lookup"><span data-stu-id="e5e8e-103">Search for vendors</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6cda0-104">Naucz się wyszukiwać dostawców na podstawie określonych kryteriów.</span><span class="sxs-lookup"><span data-stu-id="6cda0-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="6cda0-105">W tym przykładzie przedstawiono sposób wyszukiwania dostawców, którzy są zatwierdzeni dla określonej kategorii zaopatrzenia i mają adres podstawowy w określonym kraju.</span><span class="sxs-lookup"><span data-stu-id="6cda0-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="6cda0-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="6cda0-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="6cda0-107">To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="6cda0-107">This task would usually be carried out by a procurement professional.</span></span>
+<span data-ttu-id="e5e8e-104">Naucz się wyszukiwać dostawców na podstawie określonych kryteriów.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="e5e8e-105">W tym przykładzie przedstawiono sposób wyszukiwania dostawców, którzy są zatwierdzeni dla określonej kategorii zaopatrzenia i mają adres podstawowy w określonym kraju.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="e5e8e-106">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="e5e8e-107">To zadanie jest zazwyczaj wykonywane przez pracownika działu zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-107">This task would usually be carried out by a procurement professional.</span></span>
 
-1. <span data-ttu-id="6cda0-108">Wybierz kolejno opcje Zaopatrzenie i sourcing > Dostawcy > Wyszukiwanie dostawcy.</span><span class="sxs-lookup"><span data-stu-id="6cda0-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
-2. <span data-ttu-id="6cda0-109">Kliknij ikonę plusa, aby otworzyć stronę Wybór kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="6cda0-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
-3. <span data-ttu-id="6cda0-110">W drzewie zaznacz element „CORP PROCUREMENT CATEGORIES\OFFICE MACHINES”.</span><span class="sxs-lookup"><span data-stu-id="6cda0-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
-    * <span data-ttu-id="6cda0-111">Jeśli wykonujesz procedurę w przewodniku po zadaniach, przed wybraniem właściwego węzła może być konieczne kliknięcie ikony odblokowania.</span><span class="sxs-lookup"><span data-stu-id="6cda0-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="6cda0-112">Jeśli nie używasz firmy USMF, wybierz jedną z posiadanych kategorii.</span><span class="sxs-lookup"><span data-stu-id="6cda0-112">If you're not using USMF, select one of the categories that you have.</span></span>  
-4. <span data-ttu-id="6cda0-113">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="6cda0-113">Click Add.</span></span>
-    * <span data-ttu-id="6cda0-114">W tym miejscu można wybrać więcej niż jedną kategorię.</span><span class="sxs-lookup"><span data-stu-id="6cda0-114">It's possible to select more than one category here.</span></span> <span data-ttu-id="6cda0-115">Jeśli tak zrobisz, wyszukiwanie znajdzie wszystkich dostawców, którzy zostali zatwierdzeni dla co najmniej jednej kategorii.</span><span class="sxs-lookup"><span data-stu-id="6cda0-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
-5. <span data-ttu-id="6cda0-116">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="6cda0-116">Click OK.</span></span>
-6. <span data-ttu-id="6cda0-117">W polu Kraj/region wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="6cda0-117">In the Country/region field, type a value.</span></span>
-7. <span data-ttu-id="6cda0-118">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="6cda0-118">Click OK.</span></span>
+1. <span data-ttu-id="e5e8e-108">Wybierz kolejno opcje Zaopatrzenie i sourcing > Dostawcy > Wyszukiwanie dostawcy.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-108">Go to Procurement and sourcing > Vendors > Vendor search.</span></span>
+2. <span data-ttu-id="e5e8e-109">Kliknij ikonę plusa, aby otworzyć stronę Wybór kategorii zaopatrzenia.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-109">Click on the Plus icon to open the Procurement category selection page.</span></span>  
+3. <span data-ttu-id="e5e8e-110">W drzewie zaznacz element „CORP PROCUREMENT CATEGORIES\OFFICE MACHINES”.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-110">In the tree, select 'CORP PROCUREMENT CATEGORIES\OFFICE MACHINES'.</span></span>
+    * <span data-ttu-id="e5e8e-111">Jeśli wykonujesz procedurę w przewodniku po zadaniach, przed wybraniem właściwego węzła może być konieczne kliknięcie ikony odblokowania.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-111">If you're running this procedure as a task guide, you may have to click the Unlock button before you can select the correct node.</span></span> <span data-ttu-id="e5e8e-112">Jeśli nie używasz firmy USMF, wybierz jedną z posiadanych kategorii.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-112">If you're not using USMF, select one of the categories that you have.</span></span>  
+4. <span data-ttu-id="e5e8e-113">Kliknij przycisk Dodaj.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-113">Click Add.</span></span>
+    * <span data-ttu-id="e5e8e-114">W tym miejscu można wybrać więcej niż jedną kategorię.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-114">It's possible to select more than one category here.</span></span> <span data-ttu-id="e5e8e-115">Jeśli tak zrobisz, wyszukiwanie znajdzie wszystkich dostawców, którzy zostali zatwierdzeni dla co najmniej jednej kategorii.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-115">If you do so, the search will find all the vendors that are approved for at least one of the categories.</span></span>  
+5. <span data-ttu-id="e5e8e-116">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-116">Click OK.</span></span>
+6. <span data-ttu-id="e5e8e-117">W polu Kraj/region wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-117">In the Country/region field, type a value.</span></span>
+7. <span data-ttu-id="e5e8e-118">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="e5e8e-118">Click OK.</span></span>
 
