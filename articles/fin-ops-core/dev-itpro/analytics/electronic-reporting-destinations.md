@@ -1,9 +1,9 @@
 ---
 title: Miejsca docelowe raportowania elektronicznego (ER)
-description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi sprawozdawczości elektronicznej (ER), typów obsługiwanych lokalizacji docelowych oraz względów bezpieczeństwa.
+description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687166"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097288"
 ---
-# <a name="electronic-reporting-er-destinations"></a>Lokalizacje docelowe raportowania elektronicznego (ER)
+# <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +62,7 @@ W oknie dialogowym **Raport Intrastat**, na skróconej karcie **Uruchom w tle**,
 Jeśli opcja **Przetwarzanie wsadowe** zostanie ustawiona na wartość **Tak**, format ER zostanie uruchomiony w trybie [wsadowym](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Odpowiednie zadanie wsadowe zostanie utworzone na podstawie parametrów określonych na karcie **Uruchamianie w tle** okna dialogowego **Parametry modułu ER**.
 
 > [!NOTE]
-> Opis zadania jest inicjowany w celu poinformowania o uruchomieniu mapowania formatu ER. Zawiera on również nazwę wykonywanego składnika ER.
+> Opis zadania informuje Cię o uruchomieniu mapowania formatu ER. Zawiera on również nazwę uruchamianego składnika ER.
 
 [![Uruchamianie formatu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -95,6 +95,8 @@ W wersjach Finance **wcześniejszych niż 10.0.9** można utworzyć **jedno miej
 Można na przykład użyć tej możliwości do skonfigurowania lokalizacji docelowych plików dla składnika pliku używanego do generowania dokumentu wychodzącego w formacie programu Excel. Jeden cel ([archiwalny](er-destination-type-archive.md)) można skonfigurować do przechowywania oryginalnego pliku programu Excel w archiwum zadań ER, a następnie można skonfigurować inne miejsce docelowe ([e-mail](er-destination-type-email.md)), aby jednocześnie [konwertować](#OutputConversionToPDF)  plik programu Excel na format PDF i wysłać plik PDF pocztą elektroniczną.
 
 [![Konfigurowanie wielu lokalizacji docelowych dla pojedynczego elementu formatu](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+
+Po uruchomieniu formatu ER są zawsze uruchamiane wszystkie miejsca docelowe skonfigurowane dla składników tego formatu. Ponadto w aplikacji Finance w **wersji 10.0.17 i nowszych** funkcja miejsc docelowych ER została poprawiona i teraz umożliwia skonfigurowanie różnych zestawów miejsc docelowych dla jednego formatu ER. Każdy zestaw jest oznaczany jako skonfigurowany dla określonej akcji użytkownika. Interfejs API ER został [rozszerzony](er-apis-app10-0-17.md), dzięki czemu można określić, że użytkownik wykonuje akcję, uruchamiając format ER. Podany kod akcji jest przekazywany do miejsc docelowych ER. W zależności od podanego kodu akcji można uruchamiać różne miejsca docelowe w formacie ER. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie miejsc docelowych ER zależnych od akcji](er-action-dependent-destinations.md).
 
 ## <a name="destination-types"></a>Typy miejsc docelowych
 
@@ -154,7 +156,7 @@ Jeśli wyczyścisz pole **Zatrzymaj przetwarzanie przy błędzie** dla składnik
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Konwersja danych wyjściowych do formatu PDF
 
-Opcja konwersji pliku PDF umożliwia konwertowanie danych wyjściowych z formatu Microsoft Office (Excel/Word) na format PDF.
+Opcja konwersji pliku PDF umożliwia konwertowanie danych wyjściowych z formatu Microsoft Office (Excel lub Word) na format PDF.
 
 ### <a name="make-pdf-conversion-available"></a>Udostępnij konwersję PDF
 
@@ -164,21 +166,20 @@ Aby w bieżącej instancji Finance była dostępna opcja konwersji plików PDF, 
 
 ### <a name="applicability"></a>Możliwość zastosowania
 
-Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie Microsoft Office Excel programu Word (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF.
+Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie pakietu Office (Excel lub Word) (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF.
 
 ### <a name="limitations"></a>Ograniczenia
 
 > [!NOTE]
 > Ta funkcja jest funkcją podglądu i podlega warunkom użytkowania opisanym w [Temacie uzupełniającym warunki użytkowania w podglądzie Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> Opcja konwersji pliku PDF jest dostępna tylko dla wdrożeń w chmurze.
->
-> Wytworzony plik PDF jest ograniczony do maksymalnej liczby 300 stron.
->
-> W aplikacji Microsoft Dynamics 365 Finance w wersji 10.0.9 (kwiecień 2020 r.) w dokumencie PDF tworzonym na podstawie formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. W wydaniu aplikacji Dynamics 365 Finance w wersji 10.0.10 (maj 2020 r.) można [określić orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
->
-> Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do konwersji danych wyjściowych, które nie zawierają czcionek osadzonych.
+Opcja konwersji pliku PDF jest dostępna tylko dla wdrożeń w chmurze.
+
+Wygenerowany dokument PDF jest ograniczony do maksymalnej długości wynoszącej 300 stron.
+
+W aplikacji Finance w **wersji 10.0.9** w dokumencie PDF wytwarzanym z formatu wyjściowego programu Excel jest obsługiwana tylko pozioma orientacja strony. W aplikacji Finance w **wersji 10.0.10 (maj 2020 r.) lub nowszych** można określić [orientację strony](#SelectPdfPageOrientation) w dokumencie PDF, który jest tworzony na podstawie danych wyjściowych programu Excel podczas konfigurowania miejsca docelowego ER.
+
+Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do konwertowania danych wyjściowych, które nie zawierają czcionek osadzonych.
 
 ### <a name="use-the-pdf-conversion-option"></a>Użyj opcji konwersji na PDF
 
@@ -188,16 +189,16 @@ Aby włączyć konwersję pliku PDF dla pliku docelowego, zaznacz pole wyboru **
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Wybierz orientację strony do konwersji na format PDF</a>
 
-W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można określić orientację strony pliku PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
+W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można określić orientację strony dokumentu PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
 
 [![Wybierz orientację strony do konwersji na format PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Aby można było wybrać orientację strony PDF, należy zainstalować rozwiązanie Microsoft Dynamics 365 Finance w wersji 10.0.10 (maj 2020) lub nowszej.
+> Aby można było wybrać orientację strony PDF, należy zainstalować rozwiązanie Finance w wersji 10.0.10 lub nowszej.
 >
 > Wybrana orientacja strony jest stosowana do wszystkich konfiguracji ER, które są generowane w formacie programu Excel, a następnie konwertowane na format PDF.
 >
-> Jeśli przekonwertowany plik PDF został utworzony na podstawie konfiguracji ER w formacie programu Word, orientacja strony pliku PDF jest pobierana z dokumentu programu Word.
+> Jeśli konfiguracja ER w formacie programu Word jest konwertowana na PDF, orientacja strony dokumentu PDF jest pobierana z dokumentu programu Word.
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 
@@ -225,7 +226,7 @@ Nie. Jest używany domyślny magazyn dużych obiektów binarnych usługi Microso
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Jaki jest cel opcji Aplikacja docelowa pliku w ustawieniach miejsca docelowego? Do czego służy to ustawienie?
 
-Miejsce docelowe **Plik** jest używane do sterowania oknem dialogowym. Jeśli włączysz tę lokalizację docelową lub jeśli dla konfiguracji nie zdefiniowano żadnego miejsca docelowego, po utworzeniu pliku wyjściowego pojawi się okno dialogowe otwierania lub zapisywania.
+Miejsce docelowe **Plik** służy do sterowania oknem dialogowym przeglądarki internetowej po uruchomieniu formatu ER w trybie interaktywnym. Jeśli włączysz tę lokalizację docelową lub jeśli dla konfiguracji nie zdefiniowano żadnego miejsca docelowego, po utworzeniu pliku wyjściowego w przeglądarce internetowej pojawi się okno dialogowe otwierania lub zapisywania.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Czy możecie dać przykład formuły powodującej odwołanie do konta dostawcy, któremu można wysłać wiadomość e-mail?
 
@@ -237,7 +238,6 @@ Twój format musi być dostępny w konfiguracjach raportowania elektronicznego. 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
+[Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji](er-action-dependent-destinations.md)

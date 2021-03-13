@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cada62078b71dd304e90951ab0f4c1643beaa48c
+ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446854"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5107727"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -55,25 +54,26 @@ Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, oblicza
 
 Przypuśćmy na przykład, że księgujesz następujący załącznik wielowierszowy.
 
-[![Przykład ](./media/example.png)](./media/example.png)
+[![Przykład załącznika wieloliniowego](./media/example.png)](./media/example.png)
 
 Następnie generujesz raport **Wydatki według dostawców** w obszarze roboczym **Szczegółowe dane finansowe**. W tym raporcie salda kont wydatków są grupowane według grupy dostawców, a potem według dostawców. Podczas generowania raportu system nie może ustalić, które grupy dostawców/dostawcy ponieśli wydatek w kwocie 250,00. Ponieważ brakuje szczegółów transakcji, system zakłada, że cały wydatek 250,00 został poniesiony przez pierwszego dostawcę znalezionego w załączniku. W związku z tym wydatek 250,00, który został uwzględniony w saldzie konta głównego 600120, jest wyświetlana dla tej grupy dostawców/dostawcy. Jest jednak bardzo prawdopodobne, że pierwszy dostawca w załączniku nie jest właściwym dostawcą. Dlatego raport jest prawdopodobnie błędny.
 
-[![Koszty](./media/expenses.png)](./media/expenses.png)
+[![Raport wydatków według dostawców](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Przyszłość funkcjonalności pojedynczego załącznika
 
-Ze względu na wspomniane wcześniej problemy funkcjonalność pojedynczego załącznika zostanie wycofana. Jednak ponieważ brak tej funkcjonalności spowodowałby brak niektórych potrzebnych funkcji, funkcjonalność nie zostanie wycofana od razu w całości. Wycofanie odbędzie się według następującego harmonogramu:
+Ta funkcja jest ostatecznie przestarzała z powodu problemów, które mogą wystąpić podczas korzystania z Pojedynczego załącznika. Jednak ponieważ istnieją luki funkcjonalne, które zależą od tej funkcji, wycofanie nie nastąpi od razu. Wycofanie odbędzie się według następującego harmonogramu:
 
-- **Wydanie z wiosny 2018 r.** — Domyślnie funkcjonalność będzie wyłączona za pomocą parametru **Zezwalaj na wiele transakcji w jednym załączniku** na karcie **Ogólne** na stronie **Parametry księgi głównej**. Jednak można ją włączyć, jeśli organizacja używa scenariusza z lukami funkcjonalnymi wymienionymi w dalszej części tego tematu.
+- **Wydanie z wiosny 2018 r.** — Ta funkcjonalność jest wyłączona za pomocą parametru **Zezwalaj na wiele transakcji w jednym załączniku** na karcie **Ogólne** na stronie **Parametry księgi głównej**. Można ją jednak ponownie włączyć, jeśli w organizacji występuje scenariusz, który należy do jednej z luk funkcjonalnych wymienionych w dalszej części tego tematu.
 
-    - Jeśli klienci mają scenariusze biznesowe, które nie wymagają funkcji pojedynczego załącznika, nie należy jej włączać. Jeśli ta funkcja jest używana, mimo iż istnieje inne rozwiązanie, Microsoft nie będzie naprawiać „usterek” w obszarach wymienionych w dalszej części tego tematu.
-    - Przestań używać pojedynczego załącznika w integracjach, chyba że funkcjonalność jest wymagana dla jednej z luk funkcjonalnych.
+    - Jeśli scenariusz biznesowy nie wymaga Pojedynczego załącznika, zaleca się wyłączenie tej funkcji. Jeśli użyjesz go, mimo że istnieje inne rozwiązanie, firma Microsoft nie usunie „błędów” w obszarach zidentyfikowanych w dalszej części tego tematu.
+    - Zalecamy zaprzestanie korzystania z Pojedynczego załącznika na integracje, chyba że potrzebujesz funkcjonalności dla jednej z udokumentowanych luk funkcjonalnych.
 
-- **Późniejsze wydania** — zostaną wyeliminowane wszystkie luki funkcjonalne. **Po uzupełnieniu luk funkcjonalnych i dostarczeniu nowych funkcji minie co najmniej jeden rok, zanim funkcjonalność jednego załącznika zostanie trwale wyłączona**, ponieważ klienci i niezależni dostawcy oprogramowania (ISV) muszą mieć wystarczająco dużo czasu na zareagowanie na nowe funkcje. Na przykład mogą być zmuszeni zaktualizować swoje procesy biznesowe, jednostki i integracje.
+- **Późniejsze wydania** – Niektóre z podanych wymagań biznesowych można zaspokoić tylko za pomocą funkcjonalności pojedynczego załącznika. Firma Microsoft musi zagwarantować, że po wycofaniu funkcjonalności wszystkie określone wymagania biznesowe będą spełniane w systemie. Dlatego nowe funkcje będą prawdopodobnie dodawane, aby wypełnić luki funkcjonalne. Firma Microsoft nie może zapewnić konkretnego rozwiązania, ponieważ każda luka w funkcjach jest inna i musi być oceniana na podstawie wymagań biznesowych. Niektóre luki funkcjonalne zostaną prawdopodobnie zastąpione funkcjami, które pomogą spełnić określone wymagania biznesowe. Jednak inne luki można wypełnić, kontynuując zezwalanie na zapis w dzienniku, tak jak w przypadku użycia Pojedynczego załącznika, ale ulepszając system, aby śledził więcej szczegółów w razie potrzeby.
 
-> [!IMPORTANT]
-> Opcja **Tylko jeden numer załącznika** **nie** została usunięta z konfiguracji nazwy arkusza. Ta opcja jest nadal obsługiwana, gdy załącznik zawiera tylko typy kont księgowych. Klienci muszą zachować ostrożność podczas używania tego ustawienia, ponieważ załącznik nie zostanie zaksięgowany, jeśli użyją opcji **Tylko jeden numer załącznika**, a następnie wprowadzą więcej niż jednego odbiorcę, dostawcę, bank, środek trwały lub projekt. Ponadto klienci nadal mogą wprowadzić kombinację typów kont księgi podrzędnej, na przykład płatność w jednym załączniku zawierającym typy kont **Dostawca**/**Bank**.
+Po wypełnieniu wszystkich luk funkcjonalnych firma Microsoft komunikuje się z firmą, że ta funkcja będzie przestarzała. Jednak deprecja będzie obowiązywać przez przynajmniej rok po tym komunikacie. Firma Microsoft nie może podać oszacowania, kiedy funkcja Jednego załącznika będzie przestarzała, ale prawdopodobnie upłyną co najmniej dwa lata, zanim nastąpi wycofanie. Zasadą firmy Microsoft jest pozostawienie co najmniej 12 miesięcy między ogłoszeniem wycofanej funkcjonalności a faktycznym wycofaniem, tak aby klienci i niezależni dostawcy oprogramowania (ISV) mieli czas na reakcję na zmianę. Na przykład organizacja może być zmuszona do zaktualizowania swoich procesów biznesowych, jednostek i integracji.
+
+Wycofanie Pojedynczego załącznika to znacząca zmiana, o której będziemy szeroko informować. W ramach tej komunikacji firma Microsoft zaktualizuje ten temat, opublikuje wpis na blogu Microsoft Dynamics 365 Finance, zaktualizuje temat „Usunięte lub przestarzałe funkcje”, poinformuje o zmianie na odpowiednich konferencjach firmy Microsoft i tak dalej.
 
 ## <a name="why-use-one-voucher"></a>Dlaczego watro używać funkcjonalności pojedynczego załącznika?
 
@@ -186,6 +186,3 @@ Jeżeli trzeba dokonać korekty na koncie księgowym modułu Rozrachunki z odbio
 ### <a name="the-system-allows-it"></a>System na to pozwala
 
 Organizacje często korzystają z funkcjonalności pojedynczego załącznika dlatego, że po prostu system na to pozwala. Niestety, nie wiedzą o skutkach używania tego mechanizmu.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

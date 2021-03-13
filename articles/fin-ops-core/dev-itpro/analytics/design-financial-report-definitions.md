@@ -1,6 +1,6 @@
 ---
 title: Definicje raportów w Projektancie raportów finansowych
-description: Ten artykuł zawiera informacje o definicjach raportów. Definicja raportu to składnik (blok konstrukcyjny) raportu, który używa definicji wiersza, kolumny i opcjonalnej definicji drzewa raportowania do tworzenia raportu. Definicja raportu zawiera również opcje i ustawienia umożliwiające dostosowywanie raportu.
+description: Ten artykuł zawiera informacje o definicjach raportów.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 779548dc49be0a92456df791017045803f70bd86
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7d5531112cfb803912849af3af785b2a69a79f3d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683118"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093421"
 ---
 # <a name="report-definitions-in-financial-report-designer"></a>Definicje raportów w Projektancie raportów finansowych
 
@@ -84,6 +84,3 @@ W poniższej tabeli opisano karty w definicji raportu oraz sposób wykorzystania
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

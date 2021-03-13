@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4446976"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104236"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Usługa dodatku Faktur elektronicznych ma obowiązek przechowywać wszystkie dane biznesowe w zasobach Microsoft Azure będących własnością firmy użytkownika. Aby upewnić się, że usługa działa poprawnie i że wszystkie dane biznesowe, które są potrzebne i generowane przez dodatek Faktury elektroniczne, są dostępne tylko dla tego dodatku, musisz utworzyć dwa główne zasoby platformy Azure:
-
-- Konto magazynu systemu Azure (magazyn obiektów BLOB) do przechowywania faktur elektronicznych
-- Magazyn kluczy systemu Azure do przechowywania certyfikatów i identyfikatora URI (Uniform Resource Identifier) konta magazynu
-
-> [!NOTE]
-> Dedykowany zasób magazynu kluczy i magazyn obiektów blob klienta muszą być przydzielone specjalnie do użytku z dodatkiem Fakturowanie elektroniczne.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -91,6 +80,3 @@ W tym temacie przedstawiono dwa główne kroki:
 9. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Dodatek Faktury elektroniczne**.
 10. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
 11. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

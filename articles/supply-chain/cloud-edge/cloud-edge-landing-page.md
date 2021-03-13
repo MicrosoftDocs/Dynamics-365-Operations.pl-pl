@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3a23ee452535423684c6d210a448ee768379fa08
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 28301cdfb86d00ea6f04e996fe7fb1485e83b2d4
+ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516856"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104971"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
 
@@ -165,7 +164,7 @@ Teraz można rozpocząć konfigurowanie jednostek skali i obciążeń w środowi
 
 > [!IMPORTANT]
 > Konfigurując jednostki skalowania w chmurze, można [wykonać wszystkie wymagane kroki w portalu Menedżera jednostki skalowania](#scale-unit-manager-portal).
-<!-- >
+<!-- 
 > If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
 
 ### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Zarządzanie jednostkami i obciążeniem skali chmury przy użyciu portalu Menedżera jednostki skalowania
@@ -176,7 +175,7 @@ Przejdź do [portalu Menedżera jednostki skalowania ](https://aka.ms/SCMSUM)i z
 
 Aby dodać jedną lub więcej jednostek skali, które są dostępne w topologii, wybierz opcję **Dodaj jednostki skalowania**. W podglądzie powinna zostać wyświetlona jednostka skali chmury, która została wdrożona z jednego z kodów promocyjnych, który został przyjęty jako część programu podglądu.
 
-<!-- > [!IMPORTANT]
+<!--  [!IMPORTANT]
 > In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
 
 Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciążenie pracą** można dodać magazyn lub obciążenie pracą produkcyjną do jednej z jednostek skali. Dla każdego obciążenia należy określić kontekst procesów, które będą należały do obciążenia pracą. W przypadku obciążeń zarządzania magazynem kontekst jest określonym magazynem w określonym oddziale i firmie. W przypadku obciążeń pracą dotyczącą produkcji, kontekst jest określonym oddziałem w firmie.
@@ -189,6 +188,3 @@ Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciąż
 <!-- ### Create an edge scale unit using your custom on-premises hardware appliance
 
 In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

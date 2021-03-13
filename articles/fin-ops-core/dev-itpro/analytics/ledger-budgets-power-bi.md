@@ -1,7 +1,7 @@
 ---
 title: Pakiet zawartości Wartości rzeczywiste a budżet dostępny dla usługi Power BI
-description: W tym temacie opisano pakiet zawartość Wartości rzeczywiste a budżet dostępny dla usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów oferowanych w pakiecie, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
-author: ryansandness
+description: W tym temacie opisano pakiet zawartość Wartości rzeczywiste a budżet dostępny dla usługi Power BI. Wyjaśniono w nim sposób uzyskiwania dostępu do raportów oraz przedstawiono informacje o modelu danych.
+author: panolte
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
@@ -12,15 +12,15 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 908b96af5b3d67f265953648edd6aa7ec31556a4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685280"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093855"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Pakiet zawartości Wartości rzeczywiste a budżet dostępny dla usługi Power BI
 
@@ -57,6 +57,3 @@ W poniższej tabeli przedstawiono szczegóły dotyczące mierników, które znaj
 | Księgi                   | Księgi, które można wyfiltrować jako bieżące księgi dla raportu              |
 | Kody budżetu              | Kody budżetu, według których będą filtrowane raporty                                                |
 | Firmy            | Firmy, które można wyfiltrować jako bieżące firmy dla raportu |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

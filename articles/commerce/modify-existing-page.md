@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 47a7d17b97631ba469a9b68f5f6cf492ebccde6f
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4415021"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097313"
 ---
 # <a name="modify-an-existing-site-page"></a>Modyfikacja istniejącej strony witryny
 
@@ -88,5 +87,4 @@ Poniższy przykład ilustruje sposób modyfikowania strony głównej przez zmian
 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)

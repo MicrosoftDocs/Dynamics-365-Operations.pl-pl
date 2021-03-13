@@ -1,6 +1,6 @@
 ---
 title: Definicje wierszy w Projektancie raportów finansowych
-description: Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym. Definicję wiersza można łączyć z definicjami kolumn, drzewa raportowania i raportów, by tworzyć grupy elementów konstrukcyjnych dostępne dla wielu firm.
+description: Definicja wiersza to składnik (blok konstrukcyjny) raportu, który określa zawartość każdego wiersza w raporcie finansowym.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 274fa4bd137407c504f74335291e4c8e7999625b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688290"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093272"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Definicje wierszy w Projektancie raportów finansowych
 
@@ -187,6 +187,3 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Przegląd obsługi relacji z klientami
 description: Ten temat zawiera omówienie nowych możliwości relacji z klientami dostępnych w aplikacji sklepu.
 author: bebeale
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 01/29/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: d76668fa16a7634e7fbd953afaa6c89eed5457a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 206031f5ddbaedb2b581a452fe8979252647f0c4
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414936"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097262"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -106,24 +105,30 @@ Aby włączyć integrację Customer Insights z Commerce, należy upewnić się, 
 
 Aby skonfigurować integrację wykonaj następujące czynności:
 
-1. W portalu Azure Zarejestruj aplikację. Ta aplikacja będzie używana do uwierzytelniania z Customer Insights. Aby uzyskać instrukcje, [Skorzystaj z systemu szybkiego startu: Zarejestruj aplikację na platformie tożsamości Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
-2. Generowanie sekretnej aplikacji Zapisz klucz tajny i Zachowaj go w bezpiecznym miejscu, ponieważ będzie potrzebny później. Należy również wybrać czas trwania okresu ważności klucza tajnego.
+1. W portalu Azure zarejestruj nową aplikację i zanotuj nazwę aplikacji, jej identyfikator oraz klucz tajny. Te informacje będą używane do uwierzytelniania między usługami między Commerce i Customer Insights. Zwróć uwagę na tajny klucz, ponieważ będzie on wymagany do zapisania go w magazynie kluczy. W poniższym przykładzie użyj CI_Access_name, CI_Access_AppID, CI_Access_Secret odpowiednio dla nazwy aplikacji, identyfikatora aplikacji i klucza tajnego. Aby uzyskać więcej informacji, [Skorzystaj z systemu szybkiego startu: Zarejestruj aplikację na platformie tożsamości Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Należy wykonać odpowiednie kroki, aby pamiętać o zmianie klucza tajnego przed jego wygaśnięciem. W przeciwnym razie integracja zostanie zatrzymana niespodziewanie.
 
-3. Utwórz magazyn kluczy Azure i Zapisz klucz tajny aplikacji. Aby uzyskać instrukcje, [Skorzystaj z opcji szybkiego startu: set i Pobierz klucz tajny z magazynu kluczy systemu Azure przy użyciu portalu Azure Portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
-4. Włącz dostęp do magazynu kluczy platformy Azure z Commerce. Aby wykonać ten krok, trzeba mieć identyfikator aplikacji i klucz tajny. Aplikacja może być identyczna z aplikacją utworzoną w kroku 1 lub być nową aplikacją. (Innymi słowy, można korzystać z aplikacji utworzonej w kroku 1 w przypadku dostępu do magazynu kluczy i dostępu do usługi Customer Insights albo można utworzyć unikatową aplikację dla każdego typu dostępu.) Aby uzyskać instrukcje, [Przejrzyj główne poświadczenia usługi sklepów w magazynie kluczy stosu Azure](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
-5. W Headquarters przejdź do **Administrowanie systemem \> Ustawienia \> Parametry usługi Key Vault** i wprowadź wymagane informacje dotyczące magazynu kluczy. Następnie w polu **klient magazynu kluczy** wprowadź identyfikator aplikacji, który został użyty w kroku 4, aby umożliwić Commerce dostęp do kluczy tajnych w magazynie kluczy.
-6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych bezpieczną listą), należy przejść do sekcji Customer Insights i uzyskać dostęp do **Widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. W module Commerce na stronie **Parametry Commerce** na karcie **relacje z klientam**, na skróconej karcie **Dynamics 365 Customer Insights** należy wykonać następujące kroki:
+2. Przejdź do instancji Customer Insights i wyszukaj nazwę aplikacji utworzonej powyżej (w tym przykładzie „CI_Access_name”).
+3. Utwórz magazyn kluczy platformy Azure i zanotuj nazwę i adres URL (w tym przykładzie „KeyVaultName”, „KeyVaultURL”). Aby uzyskać instrukcje, [Skorzystaj z opcji szybkiego startu: set i Pobierz klucz tajny z magazynu kluczy systemu Azure przy użyciu portalu Azure Portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+4. Zapisz sekret (w tym przykładzie „CI_Access_Secret”) w magazynie. Kiedy ten sekret jest przechowywany w magazynie, otrzymuje nazwę. Zanotuj tajną nazwę (w tym przykładzie „SecretName”).
+5. Aby uzyskać dostęp do klucza tajnego z Azure Key Vault, musisz utworzyć inną aplikację z identyfikatorem aplikacji i wpisem tajnym (w tym przykładzie „KeyVault_Access_AppID” i „KeyVault_Access_Secret”). Pamiętaj, że tajny klucz jest bezpieczny, ponieważ nie będzie wyświetlany ponownie.
+6. Następnie musisz nadać aplikacji uprawnienia dostępu do Key Vault z Commerce przy użyciu interfejsów API. Przejdź do strony aplikacji w Azure Portal. W sekcji **Zarządzaj** wybierz uprawnienia **Interfejsu API**. Dodaj uprawnienie dostępu do **Klucza systemu Azure**. Dla tego uprawnienia wybierz pozycję **Zasady dostępu**. Wybierz szablon jako **Zarządzanie wpisami tajnymi**, a następnie wybierz opcje **Pobierz**, **Lista**, **Odszyfruj** i **Szyfruj**. 
+5. W Commerce headquarters przejdź do **Administrowanie systemem \> Ustawienia \> Parametry usługi Key Vault** i wprowadź wymagane informacje dotyczące magazynu kluczy. Następnie w polu **klient magazynu kluczy** wprowadź identyfikator aplikacji, który został użyty w kroku 4, aby umożliwić Commerce dostęp do kluczy tajnych w magazynie kluczy.
+6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych bezpieczną listą), należy przejść do sekcji Customer Insights i wybrać dostęp do **Widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+7. Na stronie **Administrowanie systemem > Ustawienia > Parametry Key Vault** w usługach Commerce HQ zaktualizuj pola w sposób opisany poniżej: 
 
-    1. W polu **identyfikator aplikacji** wprowadź identyfikator zgłoszenia użyty w kroku 1.
-    2. W polu **tajna nazwa** wprowadź nazwę klucza tajnego magazynu kluczy utworzonego w kroku 5.
-    3. Ustaw **Włącz Customer Insights** ustaw wartość **Tak**. Jeśli konfiguracja nie powiedzie się z dowolnego powodu, zostanie wyświetlony komunikat o błędzie, a ta opcja będzie ustawiona jako **nie**.
-    4. W szczegółowym zakresie można mieć wiele środowisk w Customer Insights, np. środowiska testowe i produkcyjne. W polu **identyfikator wystąpienia środowiska** wprowadź odpowiednie środowisko.
-    5. W polu **alternatywny identyfikator klienta** wprowadź właściwość w Customer Insights, który jest mapowany na konto odbiorcy. (W Commerce numer konta odbiorcy jest identyfikatorem odbiorcy.)
-    6. Pozostałe trzy właściwości są miarami, które będą widoczne w kartotece odbiorcy w książce klienta. W kartotece odbiorcy można wybrać maksymalnie trzy miary, które mają zostać wyświetlone (Nie trzeba jednak wybierać żadnych miar) Jak wspomniano wcześniej, system pokazuje te wartości najpierw, a następnie pokazuje wartości dla grupy atrybutów książki klienta.
+- **Adres URL klucza**: KeyVaultURL (z kroku 3 powyżej).
+- **Klient Key Vault**: „KeyVault_Access_AppID” (z kroku 5 powyżej).
+- **Wpis tajny Key Vault**: „KeyVault_Access_Secret” (z kroku 5 powyżej).
+- W sekcji **Wpisy tajne**:
+    - **Nazwa**: dowolna nazwa, na przykład „CISecret”.
+    - **Opis**: dowolna wartość.
+    - **Wpis tajny**: **vault**://<Name of key vault>/<name of secret>> W tym przykładzie będzie to „vault://KeyVaultName/SecretName”.
 
+Po zaktualizowaniu pól wybierz pozycję **Sprawdzanie** poprawności, aby zagwarantować dostęp do tajnych danych przez aplikację Commerce.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+8. W Commerce na stronie **Parametry Commerce** na karcie **Obsługa relacji z klientami** na skróconej karcie **Dynamics 365 Customer Insights** ustaw **Identyfikator aplikacji** „CI_Access_AppID” (z kroku 1 powyżej). W przypadku **Wpisów tajnych** należy wybrać wpis tajny wprowadzony w kroku 7 powyżej („CISecret”). Ustaw **Włącz Customer Insights** ustaw wartość **Tak**. Jeśli konfiguracja z jakiegoś powodu nie powiedzie się, zostanie wyświetlony komunikat o błędzie, a ta opcja zostanie ustawiona na **Nie**. 
+
+W szczegółowym zakresie można mieć wiele środowisk w Customer Insights, np. środowiska testowe i produkcyjne. W polu **identyfikator wystąpienia środowiska** wprowadź odpowiednie środowisko. W polu **alternatywny identyfikator klienta** wprowadź właściwość w Customer Insights, który jest mapowany na konto odbiorcy. (W portalu Commerce numer konta odbiorcy jest identyfikatorem odbiorcy.) Pozostałe trzy właściwości to miary, które będą pokazywane na karcie odbiorcy w księdze klienta. W kartotece odbiorcy można wybrać maksymalnie trzy miary, które mają zostać wyświetlone Nie trzeba jednak wybierać żadnych miar. Jak już kazano wcześniej, system najpierw wyświetla te wartości, a następnie wyświetla wartości dla grupy atrybutów księgi klienta.

@@ -1,6 +1,6 @@
 ---
 title: Typ miejsca docelowego raportowania elektronicznego (ER)
-description: Ten temat objaśnia konfigurowanie lokalizacji docelowej e-mail dla poszczególnych składników FOLDER lub FILE formatu sprawozdawczości elektronicznej (ER) skonfigurowanych do generowania dokumentów wychodzących.
+description: Ten temat zawiera wyjaśnienia dotyczące konfigurowania miejsca docelowego poczty e-mail dla każdego składnika typu FOLDER lub PLIK w formacie raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690133"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094111"
 ---
 # <a name="email-er-destination-type"></a>Typ miejsca docelowego raportowania elektronicznego (ER)
 
@@ -65,8 +65,6 @@ Jeśli jako typ adresu e-mail wybierzesz opcję **Adres e-mail zarządzania druk
 - W polu **Źródło poczty e-mail** wybierz opcję **Brak**.
 - W polu **Dodatkowe adresy e-mail, oddzielone średnikiem (;)** wprowadź stałe adresy e-mail.
 
-![Konfigurowanie stałego adresu e-mail](./media/er_destinations-emailfixedaddress.png)
-
 Alternatywnie adresy e-mail można pozyskać z danych kontaktowych strony, dla której jest generowany dokument wychodzący. Aby używać adresów e-mail, które nie są stałe, w polu **Źródło poczty e-mail** zaznacz [rolę](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) strony dla plikowego miejsca docelowego. Obsługiwane są następujące role:
 
 - Klient
@@ -92,8 +90,6 @@ Na stronie **Projektant formuł** w polu **Formuła** wprowadź specyficzne dla 
 
 Jeśli numery kont skonfigurowanej roli są unikatowe w całym wystąpienia rozwiązania Microsoft Dynamics 365 Finance, pole **Firma źródła poczty e-mail** w oknie **Wiadomość e-mail do** może pozostać puste.
 
-![Puste pole Firma źródła poczty e-mail](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Alternatywnie może istnieć sytuacja, że różne strony w [globalnej książce adresowej](../../fin-ops/organization-administration/overview-global-address-book.md) zostały zarejestrowane w różnych firmach ([osobach prawnych](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) w taki sposób, że wszystkie używają tego samego numeru konta do wypełniania skonfigurowanej roli. W takim przypadku numery kont skonfigurowanej roli nie są unikatowe w całym wystąpieniu rozwiązania Finance. Dlatego w celu jawnego wybrania strony nie można określić tylko numeru konta. Należy również określić firmę, w której zakresie strona została zarejestrowana do wypełniania skonfigurowanej roli. Kliknij przycisk **Powiąż** (symbol łańcucha) obok pola **Firma źródła poczty e-mail** w oknie dialogowym **Wiadomość e-mail do**, aby otworzyć stronę [aby otworzyć stronę](general-electronic-reporting-formula-designer.md). Następnie można skorzystać z tej strony, aby skonfigurować formułę zwracającą w czasie wykonywania kod firmy, w której zakresie musi się znajdować żądane źródło.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Aby określić typ adresów e-mail, które muszą być używane w czasie wykonyw
 
 > [!NOTE]
 > Jeśli w polu **Cel** wybrano cele i równocześnie w opcji **Kontakt podstawowy** ustawiono wartość **Tak**, w czasie wykonywania będą używane wszystkie wiadomości e-mail spełniające co najmniej jedno skonfigurowane kryterium.
-
-![Konfigurowanie konta atrybutów źródła poczty e-mail](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>Adres e-mail konfiguracji
 
@@ -145,6 +139,3 @@ Na poniższej ilustracji przedstawiono proces grupowania poszczególnych składn
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 - [Projektant formuł w module Raportowanie elektroniczne (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

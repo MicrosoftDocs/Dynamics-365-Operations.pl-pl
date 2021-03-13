@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 08/11/2020
+ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 274193
 ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 6b1f96e7184f07bea85ddf91869860681be2af06
-ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
+ms.openlocfilehash: 551a70a75d3f11b671c780e9213beb3d7ec77586
+ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665525"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5099860"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -34,60 +33,150 @@ Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla pod
 Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten dokument zawiera informacje o formatach dla Polski. Niniejszy dokument odnosi się do funkcji, która nie została jeszcze wdrożona.
 
 ## <a name="set-up-the-standard-audit-file-for-tax-for-poland"></a>Konfigurowanie standardowego pliku audytu dla podatku dla Polski
-Aby określić format raportowania elektronicznego (ER) dla każdego schematu SAF-T, kliknij przycisk kolejno opcje **Księga główna > Ustawienia księgi > Parametry księgi głównej**, a następnie na karcie **Standardowy plik audytu dla podatków (SAF-T)** skonfiguruj konkretne formaty dla każdego z następujących schematów:
 
--   Księgi księgowania SAF
--   Wyciągi bankowe SAF
--   Zapasy SAF
--   Rejestry SAF zakupów i sprzedaży objętych podatkiem VAT
--   Faktury VAT SAF
+Aby określić format raportowania elektronicznego dla każdego schematu SAF-T, przejdź do **Księga główna \> Ustawienia księgi \> Parametry księgi głównej**. Na karcie **Standardowy plik inspekcji dla podatków (SAF-T)** skonfiguruj określoną kontrolkę dla każdego z poniższych schematów.
+
+| Parametr                           |  Format ER              |
+|-------------------------------------|-------------------------|
+| Księgi rachunkowe JPK                | Księgi księgowania (PL)   |
+| Wyciąg bankowy JPK                 | Wyciąg bankowy (PL)     |
+| Magazyn JPK                       | Zapasy (PL)          |
+| Ewidencje zakupu i sprzedaży VAT JPK | Rejestracja VAT (PL)       |
+| Faktury VAT JPK                    | Faktury VAT (PL)       |
 
 Każdy format raportowania elektronicznego powinien być wstępnie zdefiniowany i pozwalać na aktualizowanie w module Raportowanie elektroniczne.
 
-### <a name="main-accounts"></a>Konta główne
-W polskim JPK dane finansowe, główne konta używane w finansach muszą być powiązane z polskimi standardowymi rachunkami na potrzeby raportowania JPK. Wymagana konfiguracja jest podobna do [norweskich kont głównych JPK](emea-nor-satndard-audit-file-for-tax.md#main-accounts).
+Importowanie ostatniej wersji tych konfiguracji. Opis wersji zwykle zawiera numer artykułu z bazy wiedzy Microsoft Knowledge Base (KB). W tym artykule wyjaśniono zmiany wprowadzone w wersji konfiguracji. Narzędzie wyszukiwanie problemów w [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) umożliwia znalezienie artykułu z bazy wiedzy na podstawie numeru.
+
+> [!NOTE]
+> Po zaimportowaniu wszystkich konfiguracji ER z poprzedniej tabeli należy zmienić ustawienie opcji **Ustawione domyślne mapowanie modelu** na **Tak** w przypadku konfiguracji **Mapowanie jednolitych plików kontrolnych**.
+
+Aby uzyskać więcej informacji na temat pobierania konfiguracji modułu ER z globalnego repozytorium Microsoft, zapoznaj się z tematem [Pobieranie konfiguracji ER z repozytorium globalnego](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 ## <a name="generate-a-saf-accounting-books-file"></a>Generowanie pliku ksiąg księgowania SAF
+
+Na żądanie należy podać plik ksiąg księgowania SAF. Plik musi zawierać dane księgowe dla okresu raportowania. Musi również obejmować wybrane warstwy księgowania dla wszystkich głównych rachunków, które mają niezerowy zagregowany obrót lub transakcje w okresie sprawozdawczym.
+
 Aby wygenerować plik ksiąg księgowania SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Księgi księgowania SAF** i ustaw następujące parametry:
 
-|Parametr                                        |  opis            |
-|-------------------------------------------------|-------------------------|
-| **Od dnia**                                   | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych. |
-| **Do dnia**                                     | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.  |
-| **Identyfikacja urzędu**                    | Określ identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.|
-| **Warstwa księgowania**                               | Umożliwia wybranie jednej lub więcej warstwy księgowania, od której mają być uwzględniane transakcje. Ten parametr ma wpływ na wszystkie części raportu. |
-| **Czy saldo otwarcia ma być pokazywane jako obroty?** | Jeśli ten parametr jest zaznaczony, narastające obroty mają wpływ na saldo otwarcia. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
-| **Saldo rozwarte**                            | Ten parametr można włączać dla kont głównych, w których jest oznaczony odnośny parametr. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu.     |
-| **Transakcje zamknięcia**                        | Jeśli ten parametr jest zaznaczony, transakcje zamknięcia będą uwzględnione w eksportowanych danych. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
+| Parametr                                   | opis |
+|---------------------------------------------|-------------|
+| Od dnia                                   | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych. |
+| Data Do                                     | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych. |
+| Identyfikacja urzędu                    | Określ identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
+| Warstwa księgowania                               | Umożliwia wybranie jednej lub więcej warstwy księgowania, od której mają być uwzględniane transakcje. Ten parametr ma wpływ na wszystkie części raportu. |
+| Czy saldo otwarcia ma być pokazywane jako obroty? | Jeśli ten parametr jest zaznaczony, narastające obroty mają wpływ na saldo otwarcia. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
+| Saldo rozwarte                            | Ten parametr można włączać dla kont głównych, w których jest oznaczony odnośny parametr. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
+| Transakcje zamknięcia                        | Jeśli ten parametr jest zaznaczony, transakcje zamknięcia będą uwzględnione w eksportowanych danych. Ten parametr dotyczy tylko sekcji ZOiS w pliku eksportu. |
+| Uwzględnij konta główne sumy                 | To pole wyboru jest uwzględnione w oknie dialogowym raportu w **wersji 98.59.49** formatu ER **Ksiąg rachunkowych (PL)**. Za pomocą tego formatu ER można wygenerować raport zawierający konto zdefiniowane jako **Suma** w planie kont firmy. To pole wyboru jest domyślnie niezaznaczone. To pole należy zaznaczyć, **JPK_KR** raportu, w tym kont **Sum**, w części **ZOiS**. |
+| Pomiń część ZOiS                              | To pole wyboru jest uwzględnione w sekcji **Części raportu** w oknie dialogowym raportu w **wersji 78.45.25** formatu ER **Ksiąg rachunkowych (PL)**. Format ER umożliwia generowanie raportu bez części **ZOiS**. |
+| Pomiń część Dziennik                          | To pole wyboru jest uwzględnione w sekcji **Części raportu** w oknie dialogowym raportu w **wersji 78.45.25** formatu ER **Ksiąg rachunkowych (PL)**. Format ER umożliwia generowanie raportu bez części **Dziennik**. |
+| Pomiń część KontoZapis                        | To pole wyboru jest uwzględnione w sekcji **Części raportu** w oknie dialogowym raportu w **wersji 78.45.25** formatu ER **Ksiąg rachunkowych (PL)**. Format ER umożliwia generowanie raportu bez części **KontoZapis**. |
+| Pokaż wszystkie wymiary                         | To pole wyboru jest uwzględnione w sekcji **Transakcje księgi** w oknie dialogowym raportu w **wersji 98.59.49** formatu ER **Ksiąg rachunkowych (PL)**. Format raportu elektronicznego umożliwia generowanie raportu, który zawiera informacje o wymiarach finansowych, które są stosowane do wiersza załącznika w polach **KodKontaMa** i **KodKontaWinien** węzła **KontoZapis**. |
 
-Sprawozdanie to musi być dostarczone na żądanie i zawiera dane księgowania dla okresu sprawozdawczego. Obejmuje ono dane księgowania w wybranych warstwach księgowania dla wszystkich kont głównych, które w okresie sprawozdawczym mają niezerowe łączne obroty lub transakcje.
+Domyślnie pole wyboru **Pokaż wszystkie wymiary** nie jest zaznaczone. To pole należy zaznaczyć, aby uwzględnić pola **KodKontaMa** i **KodKontaWinien** w węźle **KontoZapis** jako wymiary finansowe. 
+
+![Przykładowe wymiary KontoZapis są wyłączone](media/jpk-kr-dim-off.png)
+
+Jeśli zaznaczono pole wyboru **Pokaż wszystkie wymiary**, węzeł **KontoZapis** pokazuje wszystkie wymiary.
+
+![Przykładowe wymiary KontoZapis są włączone](media/jpk-kr-dim-on.png)
+
+Z **wersją 98.59.49**, format ER **ksiąg rachunkowych (PL)** może generować plik Ksiąg księgowania SAF. Jednak przed wygenerowaniem pliku należy skonfigurować następujące elementy:
+
+- Ustaw pole **TypKonta** w węźle **ZOiS**.
+- Skonfiguruj pola **KodKategorii**, **OpisKategorii**, **KodPodkategorii** i **OpisPodKategorii** w węźle **ZOiS**.
+
+### <a name="the-typkonta-field"></a>Pole TypKonta 
+
+Dla pola **TypKonta** należy zgłosić z jedną z następujących wartości:
+
+- Bilansowe
+- Pozabilansowe
+- Rozliczeniowe
+- Wynikowe
+
+**Wersja 98.59.49 i nowsza** wersja formatu ER **Ksiąg rachunkowych (PL)** dla raportu umożliwia zdefiniowanie pola **TypKonta** na podstawie konta głównego i typu konta głównego.
+
+1. Otwórz obszar roboczy **Raportowanie elektroniczne**, a następnie w drzewie konfiguracji wybierz opcję **Standardowy plik inspekcji (SAF-T) \> SAF Polska \> Księgi księgowania (PL)**.
+2. W okienku akcji wybierz **Konfiguracje \> Parametry specyficzne dla aplikacji \> Ustawienia**.
+3. Wybierz najnowszą wersję formatu.
+4. Na skróconej karcie **Wyszukiwania** wybierz pozycję **TypKontaSelector**.
+5. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki.
+6. Jako ostatni wiersz dodaj wiersz z warunek **Niepuste** w kolumnach **Identyfikator konta** i **Typ konta**.
+7. W polu **Stan** wybierz opcję **Zakończone** i zapisz konfigurację aplikacji.
+
+### <a name="kodkategorii-opiskategorii-kodpodkategorii-and-opispodkategorii-fields"></a>Pola KodKategorii, OpisKategorii, KodPodkategorii i OpisPodKategorii
+
+Pola **KodKategorii**, **OpisKategorii**, **KodPodkategorii** i **OpisPodKategorii** w węźle **ZOiS** w raporcie muszą reprezentować kategorię i podkategorię według nazwy „Zespołu Kont Syntetycznych”. Aby uwzględnić to wymaganie, zostały użyte [grupy kont konsolidacji i dodatkowe konta konsolidacji](../budgeting/consolidation-account-groups-consolidation-accounts.md). Możesz użyć innych funkcji konta konsolidacyjnego, aby zdefiniować kategorię i podkategorie wraz z ich opisami dla wszystkich głównych rachunków, które będą używane w raporcie **JPK_KR**.
+
+1. Wybierz kolejno opcje **Księga główna \> Plan kont \> Konta \> Grupy kont konsolidacji**.
+2. Utwórz dwie nowe grupy: jedną dla kategorii i jedną dla podkategorii.
+
+    ![Strona Grupy kont konsolidacji](media/cons-acc-grp.png)
+
+3. Wybierz kolejno opcje **Księga główna \> Plan kont \> Konta \> Dodatkowe konta konsolidacji**.
+4. Utwórz kategorie i podkategorie dla wszystkich kont głównych na podstawie grup kont konsolidacyjnych utworzonych w kroku 2. 
+
+    - W przypadku kategorii określ wartość, która musi zostać zgłoszona w polu **KodKategorii** raportu w kolumnie **Konto konsolidacji** oraz w polu **OpisKategorii** raportu w kolumnie **Nazwa konta konsolidacji**. Podaj także opis.
+    - W przypadku podkategorii określ wartość, która musi zostać zgłoszona w polu **KodPodKategorii** raportu w kolumnie **Konto konsolidacji** oraz w polu **OpisPodKategorii** raportu w kolumnie **Nazwa konta konsolidacji**. Podaj także opis.
+
+    ![Strona Dodatkowe konta konsolidacji](media/add-cons-acc.png)
+
+5. Po zakończeniu konfigurowania kategorii i podkategorii zdefiniuj grupy kont konsolidacji, które należy wziąć pod uwagę w formacie ER. Otwórz obszar roboczy **Raportowanie elektroniczne**, a następnie w drzewie konfiguracji wybierz opcję **Standardowy plik inspekcji (SAF-T) \> SAF Polska \> Księgi księgowania (PL)**.
+6. W okienku akcji wybierz **Konfiguracje \> Parametry specyficzne dla aplikacji \> Ustawienia**.
+7. Wybierz najnowszą wersję formatu.
+8. Na skróconej karcie **Wyszukiwania** wybierz pozycję **ConsolidationTypeSelector**.
+9. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki.
+10. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste** dla wyniku wyszukiwania **Inne**.
+11. W polu **Stan** wybierz opcję **Zakończone**, a następnie zapisz konfigurację.
+
+    ![Parametr specyficzny dla aplikacji dla konta konsolidacji](media/cons-acco-app-params.png)
+
+### <a name="rodzajdowodu-and-opisdziennika-fields-under-the-dziennik-node"></a>Pola RodzajDowodu i OpisDziennika pod węzłem Dziennik
+Pole **RodzajDowodu** w węźle **Dziennik** raportu musi reprezentować typ załącznika księgowego zgodnie z artykułem 23, paragraf 2, pozycja 2 ustawy (UoR). Pole **OpisDziennika** musi przedstawiać opis czasopisma zgodnie z art. 14 ust. 3 i 4 ustawy. Aby spełnić ten wymóg, w formacie raportu wprowadzono nowe parametry specyficzne dla aplikacji w postaci dowolnego tekstu.
+
+1. Otwórz **obszar roboczy Raportowanie elektroniczne (ER)**, a następnie w drzewie konfiguracji wybierz opcję **Standardowy plik inspekcji (SAF-T) \> SAF Polska \> Księgi księgowania (PL)**.
+2. W okienku akcji wybierz **Konfiguracje \> Parametry specyficzne dla aplikacji \> Ustawienia**.
+3. Wybierz najnowszą wersję formatu.
+4. Na skróconej karcie **Wyszukiwania** wybierz pozycję **RodzajDowoduSelector**.
+5. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki. Ręcznie określ wartości w kolumnie **Wynik wyszukiwania** zgodnie z artykułem 23, paragraf 2, pozycja 2 ustawy.
+6. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste**.
+
+    ![Przykład parametru specyficznego dla aplikacji RodzajDowoduSelector](media/example-app-params-setup.png)
+
+7. Na skróconej karcie **Wyszukiwania** wybierz pozycję **OpisDziennikaSelector**.
+8. Na skróconej karcie **Warunki** zdefiniuj wymagane warunki. Ręcznie określ wartości w kolumnie **Wynik wyszukiwania** zgodnie z artykułem 14, paragrafy 3 i 4 ustawy.
+9. Jako ostatnie dwa wiersze dodaj wiersze z warunkami **Niepuste** i **Puste**.
+10. W polu **Stan** wybierz opcję **Zakończone**, a następnie zapisz konfigurację.
 
 ## <a name="generate-a-saf-bank-statement-file"></a>Generowanie pliku wyciągu bankowego SAF
+
 Aby wygenerować plik wyciągu bankowego SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Wyciąg bankowy SAF** i ustaw następujące parametry:
 
-| Parametr                    | opis                                                                        |
-|------------------------------|------------------------------------------------------------------------------------|
-| **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
-| **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
-| **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
-| **Konto bankowe**             | Umożliwia określenie rachunku bankowego, dla którego mają zostać wyeksportowane transakcje.                               |
+| Parametr                | opis                                                                        |
+|--------------------------|------------------------------------------------------------------------------------|
+| Od dnia                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
+| Data Do                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
+| Identyfikacja urzędu | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
+| Konto bankowe             | Umożliwia określenie rachunku bankowego, dla którego mają zostać wyeksportowane transakcje.                               |
 
 Plik **Wyciąg bankowy SAF** zawiera informacje o transakcjach zaksięgowanych w określonym przedziale czasu dla rachunku bankowego wybranego w oknie dialogowym raportu. Nazwa kontrahenta zgłoszona w elemencie **NazwaPodmiotu** jest pobierana od **Odbiorców** (**Rozrachunki z odbiorcami** > **Odbiorcy** > **Wszyscy odbiorcy**) i **Dostawców** (**Rozrachunki z dostawcami** > **Dostawcy** > **Wszyscy dostawcy**) danych głównych systemu zarejestrowanego w firmie w postaci, w jakiej są one powiązane z zaksięgowaną transakcją bankową. Opis operacji zgłoszony w elemencie **OpisOperacji** jest pobierany z pola **Opis** transakcji bankowej.
 
 ## <a name="generate-a-saf-inventory-file"></a>Generowanie pliku zapasów SAF
+
 Aby wygenerować plik zapasów SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Zapasy SAF** i ustaw następujące parametry:
 
-| Parametr                    | opis                                                                        |
-|------------------------------|------------------------------------------------------------------------------------|
-| **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
-| **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
-| **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
-| **Magazyn**                | Określ magazyn, dla którego mają zostać wyeksportowane transakcje.                                  |
-
-### 
+| Parametr                | opis                                                                        |
+|--------------------------|------------------------------------------------------------------------------------|
+| Od dnia                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
+| Data Do                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                |
+| Identyfikacja urzędu | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
+| Magazyn                | Określ magazyn, dla którego mają zostać wyeksportowane transakcje.                                  |
 
 ## <a name="generate-a-saf-vat-sales-and-purchase-register"></a>Generowanie rejestru SAF sprzedaży i zakupów objętych podatkiem VAT
-Zanim będzie można wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem od towarów i usług (VAT), należy wykonać następujące dodatkowe czynności konfiguracyjne:
+
+Zanim będzie można wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem od towarów i usług (VAT), należy wykonać następujące czynności konfiguracyjne.
 
 1. Skonfiguruj urzędy skarbowe.
 2. Konfigurowanie kodów podatków dla raportowania podatku VAT.
@@ -104,44 +193,46 @@ Aby uzyskać ogólne informacje dotyczące sposobu konfigurowania urzędu skarbo
 
 Kod raportowania jest liczbą całkowitą. Kody raportowania powinny być numerowane zgodnie z regułami obowiązującymi w firmie. Jednak zalecamy, aby różnicować kody według kierunku podatku. Na przykład zdefiniuj kod 5-cyfrowy i tak ustaw kody dla wszystkich transakcji wychodzących, które powinny być odzwierciedlane w pierwszej części schematu podatku VAT, aby były mniejsze lub równe 19999. Natomiast dla wszystkich transakcji przychodzących, które powinny być wykazywane w drugiej części systemu podatku VAT, ustaw kody tak, aby były większe lub równe 20000. W ten sposób uprościsz konfigurację raportów i eksportu danych, która opiera się na transakcjach podatkowych agregowanych według kodów raportowania. Oto przykład pokazujący użycie kodów sprawozdawczości podatkowej do generowania rejestru SAF sprzedaży i zakupów objętych podatkiem VAT. W tym przykładzie kody raportowania są w formacie *ABBCC*. Ten format składa się z następujących elementów:
 
--   **A** — Kierunek transakcji. Wartość wynosi **1** dla podatków wychodzących, **2** dla podatków przychodzących i **3** dla korekt.
--   **BB** — Kod podatku. Numeracja zachowuje kolejność wśród wszystkich kodów podatków.
--   **CC** — Numer typu transakcji wewnątrz kodu podatku. Parz tabela poniżej.
+- **A** – Kierunek transakcji. Wartość wynosi **1** dla podatków wychodzących, **2** dla podatków przychodzących i **3** dla korekt.
+- **BB** – Kod podatku. Numeracja zachowuje kolejność wśród wszystkich kodów podatków.
+- **CC** – Numer typu transakcji wewnątrz kodu podatku. Parz tabela poniżej.
 
-| Typ transakcji                      | Numer typu transakcji     |
-|---------------------------------------|-----------------------------|
-| **Sprzedaż opodatkowana**                     | 01                          |
-| **Sprzedaż wolna od podatku**                    | 02                          |
-| **Podatek należny**                 | 03                          |
-| **Opodatkowana faktura korygująca sprzedaży**         | 04                          |
-| **Faktura korygująca sprzedaży zwolnionej z podatku**      | 05                          |
-| **Podatek od faktury korygującej sprzedaży**    | 6                          |
-| **Zakup podlegający opodatkowaniu**                 | 07                          |
-| **Zakup wolny od podatku**                 | 08                          |
-| **Podatek naliczony**              | 09                          |
-| **Import opodatkowany**                    | 10                          |
-| **Przeciwstawna wartość importu podlegająca opodatkowaniu**             | 11                          |
-| **Podatek nienaliczony**                           | 12                          |
-| **Konto przeciwstawne podatku nienaliczonego**                    | 13                          |
-| **Opodatkowana faktura korygująca zakupu**      | 14                          |
-| **Faktura korygująca zakupu zwolnionego z podatku**   | 15                          |
-| **Podatek od faktury korygującej zakupu** | 16                          |
-| **Opodatkowana faktura korygująca importu**        | 17                          |
-| **Faktura korygująca przeciwstawnej wartości importu podlegającej opodatkowaniu** | 18                          |
+| Typ transakcji                  | Numer typu transakcji     |
+|-----------------------------------|-----------------------------|
+| Sprzedaż opodatkowana                     | 01                          |
+| Sprzedaż wolna od podatku                    | 02                          |
+| Podatek należny                 | 03                          |
+| Opodatkowana faktura korygująca sprzedaży         | 04                          |
+| Faktura korygująca sprzedaży zwolnionej z podatku      | 05                          |
+| Podatek od faktury korygującej sprzedaży    | 6                          |
+| Zakup podlegający opodatkowaniu                 | 07                          |
+| Zakup wolny od podatku                 | 08                          |
+| Podatek naliczony              | 09                          |
+| Import opodatkowany                    | 10                          |
+| Przeciwstawna wartość importu podlegająca opodatkowaniu             | 11                          |
+| Podatek nienaliczony                           | 12                          |
+| Konto przeciwstawne podatku nienaliczonego                    | 13                          |
+| Opodatkowana faktura korygująca zakupu      | 14                          |
+| Faktura korygująca zakupu zwolnionego z podatku   | 15                          |
+| Podatek od faktury korygującej zakupu | 16                          |
+| Opodatkowana faktura korygująca importu        | 17                          |
+| Faktura korygująca przeciwstawnej wartości importu podlegającej opodatkowaniu | 18                          |
 
 W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatkowej dla tego przykładu.
 
-<table width="100%">
+<table>
+<thead>
+<tr>
+<th>Kod podatku</th>
+<th>Kod raportowania podatku</th>
+<th>opis</th>
+<th>Nazwa znacznika w podatku VAT SAF-T</th>
+<th>Znak w podatku VAT SAF-T</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td><strong>Kod podatku</strong></td>
-<td><strong>Kod raportowania podatku</strong></td>
-<td><strong>Opis</strong></td>
-<td><strong>Nazwa znacznika w podatku VAT SAF-T</strong></td>
-<td><strong>Znak w podatku VAT SAF-T</strong></td>
-</tr>
-<tr>
-<td rowspan="4"><strong>ExportCust</strong></td>
+<td rowspan="4">ExportCust</td>
 <td>10101</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_11</td>
@@ -166,7 +257,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="2"><strong>Art100</strong></td>
+<td rowspan="2">Art100</td>
 <td>10201</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_12</td>
@@ -179,7 +270,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="5"><strong>VAT22_23</strong></td>
+<td rowspan="5">VAT22_23</td>
 <td>10301</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_19</td>
@@ -210,7 +301,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="5"><strong>VAT7_8</strong></td>
+<td rowspan="5">VAT7_8</td>
 <td>10401</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_17</td>
@@ -241,7 +332,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="5"><strong>VAT5</strong></td>
+<td rowspan="5">VAT5</td>
 <td>10501</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_15</td>
@@ -272,7 +363,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="3"><strong>VAT0</strong></td>
+<td rowspan="3">VAT0</td>
 <td>10601</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_13</td>
@@ -291,7 +382,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ART129</strong></td>
+<td rowspan="4">ART129</td>
 <td>10701</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_14</td>
@@ -316,7 +407,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>IntraEUGoods</strong></td>
+<td rowspan="4">IntraEUGoods</td>
 <td>10801</td>
 <td>Sprzedaż wolna od podatku</td>
 <td>K_21</td>
@@ -341,7 +432,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>+</td>
 </tr>
 <tr>
-<td rowspan="2"><strong>ExportOfGoods</strong></td>
+<td rowspan="2">ExportOfGoods</td>
 <td>10901</td>
 <td>Sprzedaż wolna od podatku</td>
 <td>K_22</td>
@@ -354,7 +445,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ImportOfGoodsART33</strong></td>
+<td rowspan="4">ImportOfGoodsART33</td>
 <td>20207</td>
 <td>Import opodatkowany</td>
 <td>K_45</td>
@@ -379,7 +470,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="5"><strong>ImportOfServices</strong></td>
+<td rowspan="5">ImportOfServices</td>
 <td>20207</td>
 <td>Import opodatkowany</td>
 <td>K_45</td>
@@ -410,7 +501,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="5"><strong>ImportART28</strong></td>
+<td rowspan="5">ImportART28</td>
 <td>20207</td>
 <td>Import opodatkowany</td>
 <td>K_45</td>
@@ -441,7 +532,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>ReverseCharge</strong></td>
+<td rowspan="4">ReverseCharge</td>
 <td>11301</td>
 <td>Sprzedaż opodatkowana</td>
 <td>K_34</td>
@@ -466,7 +557,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>-</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>FixedAssetPurch</strong></td>
+<td rowspan="4">FixedAssetPurch</td>
 <td>20107</td>
 <td>Zakup podlegający opodatkowaniu</td>
 <td>K_43</td>
@@ -491,7 +582,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>+</td>
 </tr>
 <tr>
-<td rowspan="4"><strong>GoodServPurch</strong></td>
+<td rowspan="4">GoodServPurch</td>
 <td>20207</td>
 <td>Zakup podlegający opodatkowaniu</td>
 <td>K_45</td>
@@ -516,7 +607,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>+</td>
 </tr>
 <tr>
-<td rowspan="2"><strong>CorrATR89b1</strong></td>
+<td rowspan="2">CorrATR89b1</td>
 <td>30101</td>
 <td>Podatek należny</td>
 <td>K_49</td>
@@ -529,7 +620,7 @@ W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatk
 <td>+</td>
 </tr>
 <tr>
-<td rowspan="2"><strong>CorrATR89b4</strong></td>
+<td rowspan="2">CorrATR89b4</td>
 <td>30201</td>
 <td>Podatek należny</td>
 <td>K_50</td>
@@ -550,9 +641,9 @@ W przypadku faktur, które nie zostały opłacone w ciągu 150 dni, można zasto
 
 Aby przejrzeć lub zmodyfikować konfigurację rejestru SAF sprzedaży i zakupów objętych podatkiem VAT, na stronie **Konfiguracje raportowania** na liście modeli zaznacz model **Standardowy plik audytu (SAF-T)**. Następnie kliknij przycisk **Projektant** i przejrzyj lub zmodyfikuj model. Aby przejrzeć lub zmodyfikować format rejestru SAF sprzedaży i zakupów objętych podatkiem VAT, na stronie **Konfiguracje raportowania** w obszarze **Standardowy plik audytu (SAF-T)** zaznacz opcję **Rejestr VAT (PL)** i kliknij przycisk **Projektant**. Aby uzyskać więcej informacji o raportowaniu elektronicznym, zobacz następujące tematy:
 
--   [Omówienie Raportowania elektroniczne](../../dev-itpro/analytics/general-electronic-reporting.md)
--   [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
--   [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../dev-itpro/analytics/electronic-reporting-configuration.md)
+- [Omówienie Raportowania elektroniczne](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Wymagania dotyczące tłumaczenia — Tworzenie konfiguracji raportowania elektronicznego](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
 Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raportowania opisanego w tabeli powyżej. Jeśli trzeba zaadaptować konfigurację do innego zestawu kodów raportowania, należy utworzyć pochodny format konfiguracji. W tym celu zaznacz format w drzewie konfiguracji, a następnie w **menu głównym** kliknij przycisk **Utwórz konfigurację**. Zaznacz opcję **Pochodna od nazwy:**, wypełnij pola **Nazwa** i **Opis** dotyczące nowego formatu, a następnie kliknij przycisk **Utwórz konfigurację**. Utworzony format jest kopią formatu nadrzędnego. Zaznacz utworzony format i w **menu głównym** kliknij przycisk **Projektant**, aby otworzyć projektanta formatów i zaktualizować format o żądane kody raportowania. Okno projektanta formatów jest podzielone na dwie części: lewa strona zawiera strukturę formatu (w przypadku rejestru VAT jest to schemat XML), a prawa strona zawiera model danych (dane). Po prawej stronie wybierz **Mapowanie**, a zostanie wyświetlone okienko **Model danych**. Model danych zawiera wszystkie pola wszystkich raportów SAF-T. Format rejestru VAT jest mapowany głównie do węzła **TaxTransaction**. Przewiń drzewo w dół i poszukaj oraz zaznacz ten węzeł. Wszystkie transakcje podatkowe są podzielone na dwie grupy: według znacznika **SprzedazWiersz** i według znacznika **ZakupWiersz**. Oraz zatytułowane odpowiednio **$SalesList** i **$PurchaseList**. Są to listy rekordów obliczane (filtrowane) według formuł. Formuły można przeglądać i modyfikować w redaktorze formuł. W tym celu należy zaznaczyć pole obliczeniowe lub listę rekordów (w tym konkretnym przypadku), a następnie w menu drzewa kliknąć przycisk **Edytuj**. Zmodyfikuj formuły dla grup **$SalesList** i **$PurchaseList** zgodnie z kodami raportowania używanymi w firmie, a następnie je zapisz. Okno projektanta formuł po lewej stronie zawiera model danych, gdzie można wybrać pola lub listy rekordów, natomiast z prawej strony zawiera wszystkie funkcje, które można implementować. (Więcej informacji o projektancie formatów — [Projektant formuł w raportowaniu elektronicznym](../../dev-itpro/analytics/general-electronic-reporting-formula-designer.md)). Po podzieleniu transakcji podatkowych na dwie grupy należy wewnątrz każdej grupy pogrupować transakcje dla każdego znacznika zgodnie z kodami raportowania używanymi w firmie. Znajdź pola obliczeniowe „list\_K” w grupach **$SalesList** i **$PurchaseList** i zaktualizuj ich formuły o swoje kody raportowania przy użyciu projektanta formuł. Po zaktualizowaniu formuł wszystkich węzłów „list\_K” odszukaj i zmodyfikuj elementy **SalasCtrl** i **PurchCtrl** odpowiednio w grupach **$SalesList** i **$PurchaseList**. Te węzły są używane odpowiednio przez znaczniki **SprzedazCtrl** i **ZakupCtrl**. Zasadniczo nie trzeba wprowadzać żadnych innych zmian w formacie. Zapisz format. Zamknij okno i dokończ konfigurowanie formatu za pomocą przycisku **Zmień stan** > **Zakończ** umieszczonego w menu wersji na skróconej karcie **Wersje** w oknie **Konfiguracje**.
 
@@ -560,17 +651,17 @@ Początkowo konfiguracja jest przykładem rejestru VAT opartego na kodach raport
 
 Aby wygenerować rejestr SAF sprzedaży i zakupów objętych podatkiem VAT, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Rejestr SAF sprzedaży i zakupów objętych podatkiem VAT** i ustaw następujące parametry:
 
-|   Parametr                  |   opis                                                                      |
-|------------------------------|------------------------------------------------------------------------------------|
-| **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
-| **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                               |
-| **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
+| Parametr                |   opis                                                                      |
+|--------------------------|------------------------------------------------------------------------------------|
+| Od dnia                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                               |
+| Data Do                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                               |
+| Identyfikacja urzędu | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu. |
 
 Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na karcie **Rekordy do uwzględnienia**.
 
 ## <a name="generate-a-saf-vat-invoices-file"></a>Generowanie pliku faktur VAT SAF
 
-Aby można było wygenerować plik faktur VAT SAF, należy wykonać następujące dodatkowe czynności konfiguracyjne:
+Aby można było wygenerować plik faktur VAT SAF, należy wykonać następujące czynności konfiguracyjne.
 
 1. Skonfiguruj urzędy skarbowe.
 2. Kody podatków dla raportowania podatku VAT.
@@ -609,9 +700,9 @@ Aby poprawnie raportować niektóre z ważnych znaczników w raporcie, należy z
 
     | Imię i nazwisko            | Krótki opis (Angielski) | Krótki opis (Polski) | Opis (Angielski) | Opis (Polski) |
     |-----------------|-----------------------|-----------------------|-----------------|-----------------|
-    | **TaxFree_LOOKUP** | Wolne od podatku | Wolne od podatku | Transakcje niepodlegające opodatkowaniu do dostarczenia towarów i usług poza krajem, zwolnione z opodatkowania. | Niepodlegające opodatkowaniu — transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
-    | **TaxExemptReason_LOOKUP** | Przyczyna zwolnienia z podatku | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | W przypadku dostawy towarów lub świadczenia usług, które są zwolnione z podatku zgodnie z artykułem 43 ustęp 1; Artykuł 113 sekcja 1 i 9; lub przepisy wydawane na podstawie artykułu 82, ust. 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 I 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
-    | **ItemType_LOOKUP** | Typ towaru | Rodzaj przedmiotu | Dostarczenie towarów używanych, dzieł sztuki, pozycji kolekcjonerskich i antyków, dla których podstawa podatkowa jest utworzona zgodnie z artykułem 120, ustęp czwarty, przypis 5. Nowe środki transportu są przedmiotem dostaw wewnątrz wspólnoty. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 I 5 marża; W przypadku, gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
+    | TaxFree_LOOKUP | Wolne od podatku | Wolne od podatku | Transakcje niepodlegające opodatkowaniu do dostarczenia towarów i usług poza krajem, zwolnione z opodatkowania. | Niepodlegające opodatkowaniu — transakcje dostawy towarów oraz świadczenia usług poza terytorium kraju; zwolnione z opodatkowania. |
+    | TaxExemptReason_LOOKUP | Przyczyna zwolnienia z podatku | Przyczyna lub podstawa zwolnienia z podatku lub jego zmniejszenia | W przypadku dostawy towarów lub świadczenia usług, które są zwolnione z podatku zgodnie z artykułem 43 ustęp 1; Artykuł 113 sekcja 1 i 9; lub przepisy wydawane na podstawie artykułu 82, ust. 3. | W przypadku dostawy towarów lub świadczenia usług zwolnionych od podatku na podstawie art. 43 ust. 1, art. 113 ust. 1 I 9 albo przepisów wydanych na podstawie art. 82 ust. 3. |
+    | ItemType_LOOKUP | Typ towaru | Rodzaj przedmiotu | Dostarczenie towarów używanych, dzieł sztuki, pozycji kolekcjonerskich i antyków, dla których podstawa podatkowa jest utworzona zgodnie z artykułem 120, ustęp czwarty, przypis 5. Nowe środki transportu są przedmiotem dostaw wewnątrz wspólnoty. | Dostawy towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich I antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 I 5 marża; W przypadku, gdy przedmiotem wewnątrzwspólnotowej dostawy są nowe środki transportu. |
 
 #### <a name="taxfree_lookup"></a>TaxFree_LOOKUP
 
@@ -622,10 +713,10 @@ W JPK_FA v. 2 wartość pola **P_12** może raportować następujące wartości 
 
 Należy skonfigurować i używać określonych kodów zwolnienia (**Podatek \> Konfiguracja \> Podatek \> Kody zwolnienia z podatku**) dla kodów podatków, które są ustawione jako zwolnione w grupach podatków (**Podatek \> Podatki pośrednie \> Podatek \> Kody zwolnienia z podatku**), aby rozróżnić transakcje podatkowe według tych kodów zwolnienia w raporcie. W celu utworzenia raportu należy zdefiniować, które kody zwolnienia muszą być raportowane przy użyciu podanych wartości znacznika **P_12**. Wybierz format **Faktury VAT (PL)**, otwórz **Konfiguracja** \> **Parametry specyficzne dla aplikacji** w okienku akcji wybierz opcję **Konfiguracja**. Aby uzyskać najnowszą wersję konfiguracji, na skróconej karcie **Wyszukiwania** wybierz opcję **TaxFree_LOOKUP**. Następnie, na **Warunkach** na skróconej karcie, zdefiniuj warunki dla następujących wyników wyszukiwania.
 
-| Wynik wyszukiwania               | Kody zwolnienia |
-|-----------------------------|--------------|
-| **np**                      | Umożliwia wybór kodów zwolnienia, które są używane dla transakcji podatkowych związanych z dostawą towarów i świadczeniem usług poza krajem. Jeśli istnieje więcej niż jeden kod zwolnienia tego typu, należy dodać wiersz dla każdego dodatkowego kodu zwolnienia używanego do transakcji dostawy towarów i świadczenia usług poza krajem. |
-| **zw**                      | Wybierz opcję **Nie pusty**. Wszystkie inne transakcje, które są zwolnione, ale w przypadku, gdy powód nie jest brany pod uwagę, będą raportowane jako opłaty dodatkowe w ramach transakcji krajowych. Ten wiersz musi być ostatnim wierszem na liście. Można sprawdzić, czy jest to ostatni wiersz, przeglądając wartość w kolumnie **Wiersz**. |
+| Wynik wyszukiwania           | Kody zwolnienia |
+|-------------------------|--------------|
+| np                      | Umożliwia wybór kodów zwolnienia, które są używane dla transakcji podatkowych związanych z dostawą towarów i świadczeniem usług poza krajem. Jeśli istnieje więcej niż jeden kod zwolnienia tego typu, należy dodać wiersz dla każdego dodatkowego kodu zwolnienia używanego do transakcji dostawy towarów i świadczenia usług poza krajem. |
+| zw                      | Wybierz opcję **Nie pusty**. Wszystkie inne transakcje, które są zwolnione, ale w przypadku, gdy powód nie jest brany pod uwagę, będą raportowane jako opłaty dodatkowe w ramach transakcji krajowych. Ten wiersz musi być ostatnim wierszem na liście. Można sprawdzić, czy jest to ostatni wiersz, przeglądając wartość w kolumnie **Wiersz**. |
 
 > [!NOTE]
 > Transakcje podatkowe oznaczone jako **Opłata zwrotna** będą raportowane jako **oo**. Nie jest wymagana żadna dodatkowa konfiguracja.
@@ -638,7 +729,7 @@ Warunki **TaxExemptReason_LOOKUP** są kodami zwolnienia z podatku zdefiniowanym
 
 - **P_19A** wskazuje, że dany akt został wystawiony, na podstawie którego podatnik stosuje zwolnienie z podatku.
 - **P_19B** wskazuje przepis dyrektywy 2006/112/WE, który zwalnia dostawę towarów lub takich usług z takiego podatku.
-- **P_19C** wskazuje inną podstawę prawną, która wskazuje, że dostawa towarów lub usług przynosi korzyści z wyłączenia.
+- **P_19C** wskazuje, że dostawa towarów lub świadczenie usług korzysta ze zwolnienia na innej podstawie prawnej.
 
 Określ jako ostatni warunek na liście, wynik **Inne** lub **Other** z wartością **Nie pusty** w kolumnie **Kod zwolnienia z podatku**.
 
@@ -652,26 +743,27 @@ Poniższe wartości są dostępne dla ustawień **ItemType_LOOKUP**.
 
 | Imię i nazwisko | Opis (Angielski) | Opis (Polski) | Konfiguracja |
 |------|------------------|------------------|-------|
-| **SecondHandGoods** | Dostawy towarów używanych, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z towarami używanymi w danym magazynie. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — towary używane** kod podatku będzie raportowana w **P_106E_3A**. |
-| **ArtWorks** | Dostawy dzieł sztuki, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z dziełami sztuki. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — dzieła sztuki** kod podatku będzie raportowana w **P_106E_3A**. |
-| **CollectorAntiques** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z przedmiotami kolekcjonerskimi i antykami. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — przedmioty kolekcjonerskie i antyki** kod podatku będzie raportowana w **P_106E_3A**. |
-| **Transport** | Wewnątrzwspólnotowe dostarczanie nowych środków transportu | Wewnątrzwspólnotowa dostawa nowych środków transportu | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z wewnątrzwspólnotowym dostawą nowych środków transportu. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony kod podatku **P_22** będzie raportowany z wartością **Prawda**. |
-| **Inna** | Inna | Inne | Należy określać wartość **Nie puste** w polu **Kod podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
+| SecondHandGoods | Dostawy towarów używanych, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z towarami używanymi w danym magazynie. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — towary używane** kod podatku będzie raportowana w **P_106E_3A**. |
+| ArtWorks | Dostawy dzieł sztuki, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Dostawy dzieł sztuk dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z dziełami sztuki. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — dzieła sztuki** kod podatku będzie raportowana w **P_106E_3A**. |
+| CollectorAntiques | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z przedmiotami kolekcjonerskimi i antykami. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony **procedura marży — przedmioty kolekcjonerskie i antyki** kod podatku będzie raportowana w **P_106E_3A**. |
+| Transport | Wewnątrzwspólnotowe dostarczanie nowych środków transportu | Wewnątrzwspólnotowa dostawa nowych środków transportu | Umożliwia określenie kodów podatków używanych w transakcjach powiązanych z wewnątrzwspólnotowym dostawą nowych środków transportu. Po zakończeniu tego ustawienia faktura zawierająca transakcje podatkowe, w której używany jest określony kod podatku **P_22** będzie raportowany z wartością **Prawda**. |
+| Inna | Inna | Inne | Należy określać wartość **Nie puste** w polu **Kod podatku**. Ta wartość musi być ostatnią na liście wartości. Ta wartość musi być obowiązkowa dla tego wyszukiwania. |
 
 Po zakończeniu konfigurowania wartości pól wyszukiwania określ pole **Stan** jako **Zakończone**, a następnie zapisz zmiany i zamknij stronę. 
 
 Jeśli dowolne pole wyszukiwania nie zawiera co najmniej jednej wartości **Nie puste**, podczas uruchamiania raportu zostanie wygenerowany błąd. Komunikat o błędzie będzie zawierać informację o braku parametrów specyficznych dla aplikacji.
 
-### <a name="generate-a-saf-vat-invoices"></a>Generowanie faktur VAT SAF
+### <a name="generate-a-saf-vat-invoice"></a>Generowanie faktury VAT SAF
 
-Aby wygenerować plik faktur VAT SAF, kliknij kolejno opcje **Księga główna > Zapytania i raporty > Standardowy plik audytu dla podatku (SAF-T) > Faktury VAT SAF** i ustaw następujące parametry:
+Aby wygenerować plik faktur VAT SAF, kliknij kolejno opcje **Księga główna \> Zapytania i raporty \> Standardowy plik audytu dla podatku (SAF-T) \> Faktury VAT SAF** i ustaw następujące parametry.
 
-|  Parametr                   | opis                                                                            |
-|------------------------------|----------------------------------------------------------------------------------------|
-| **Od dnia**                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                                   |
-| **Do dnia**                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                    |
-| **Identyfikacja urzędu** | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.     |
-| **Identyfikator faktury Od/Do**     | Określ zakres identyfikatorów faktur, aby ograniczyć ilość faktur wybieranych dla eksportu danych. |
+| Parametr                | opis                                                                            |
+|--------------------------|----------------------------------------------------------------------------------------|
+| Od dnia                | Umożliwia określenie pierwszego dnia zakresu eksportowania danych sprawozdawczych.                                   |
+| Data Do                  | Umożliwia określenie ostatniego dnia zakresu eksportowania danych sprawozdawczych.                                    |
+| Identyfikacja urzędu | Na liście zaznacz identyfikator urzędu skarbowego, który ma być używany w pliku eksportu.     |
+| Identyfikator faktury Od/Do       | Określ zakres identyfikatorów faktur, aby ograniczyć ilość faktur wybieranych dla eksportu danych. |
+| Kod waluty            | Określ kod waluty, dla której ma zostać wygenerowany raport. Raport będzie zawierał tylko faktury w określonej walucie. Aby wygenerować raport dla wszystkich walut w jednym pliku, należy pozostawić to pole puste. |
 
 Dodatkowe parametry wyboru można określić za pomocą funkcji **Filtr** na karcie **Rekordy do uwzględnienia**.
 
@@ -681,13 +773,13 @@ W wersji 3 raportu **JPK_FA** faktury z różnymi walutami dokumentów mogą by�
 
 #### <a name="p_14x-tags"></a>Znaczniki <P_14x>
 
-Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, gdy faktura jest księgowana w walucie innej niż **PLN**, znaczniki **<P_13x>**, **<P_14x>** i **<P_15>** muszą reprezentować kwoty w walucie faktury, a nowe znaczniki **<P_14xW>** muszą reprezentować kwoty powiązane w walucie **PLN**. Przyjmuje się, że wartość **PLN** jest definiowana jako waluta dla kodów podatków używanych w transakcjach, które zostaną uwzględnione w raporcie **JPK_FA**. Na podstawie tego założenia dla faktur, dla których waluta dokumentu różni się od waluty ustawionej w kodach podatków używanych w transakcjach podatkowych tego dokumentu, system zgłasza dodatkowe znaczniki **<P_14xW>** z kwotą w walucie kodu podatku (ponieważ zakłada się, że waluta jest wyrażona w **PLN**).
+Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, gdy faktura jest księgowana w walucie innej niż **PLN**, znaczniki **<P_13x>**, **<P_14x>** i **<P_15>** muszą reprezentować kwoty w walucie faktury, a nowe znaczniki **<P_14xW>** muszą reprezentować kwoty powiązane w walucie **PLN**. Przyjmuje się, że wartość **PLN** jest definiowana jako waluta dla kodów podatków używanych w transakcjach, które zostaną uwzględnione w raporcie **JPK_FA**. W oparciu o to założenie, gdy waluta dokumentu na fakturze różni się od waluty ustawionej w kodach podatku, które są używane w transakcjach podatkowych tego dokumentu, system zgłasza dodatkowe znaczniki **<P_14xW>**. Kwota znajduje się w walucie kodu podatku (ponieważ przyjmuje się, że jest to **PLN**.)
 
 #### <a name="p_18a-tag"></a>Znacznik <P_18A>
 
 KB #4339927 („Specjalna aktualizacja kraju dla Polski o podzielonej płatności w aplikacjach Dynamics 365 for Finance and Operations”) wprowadza ustawienia metod płatności jako podzielone płatności w module **Rozrachunki z odbiorcami**.
 
-Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, znacznik **<P_18A>** dla faktury musi być raportowany jako **Prawda**, jeśli dla tej faktury jest stosowany mechanizm podziału płatności. Aby określić, czy mechanizm podziału płatności został zastosowany dla faktury, system sprawdza parametr **Podziału płatności**, który został użyty podczas księgowania faktury i jest widoczny w odpowiedniej transakcji odbiorcy w tabeli CustTrans. Ważne jest, aby zachować konfigurację parametru **Podziału płatności** dla metod płatności stabilnych w celu zapewnienia prawidłowego raportowania.
+Zgodnie z wymaganiami wersji 3 raportu **JPK_FA**, znacznik **<P_18A>** dla faktury musi być raportowany jako **Prawda**, jeśli dla tej faktury jest stosowany mechanizm podziału płatności. Aby określić, czy mechanizm podziału płatności został zastosowany dla faktury, system sprawdza parametr **Podziału płatności**, który został użyty podczas księgowania faktury. Parametr jest odzwierciedlany w odpowiedniej transakcji odbiorcy w tabeli CustTrans. Należy zachować konfigurację parametru **Podziału płatności** dla metod płatności stabilnych w celu zapewnienia prawidłowego raportowania.
 
 #### <a name="p_22-tag"></a>Znacznik <P_22>
 
@@ -699,9 +791,9 @@ Zgodnie z wymogami raportu **JPK_FA** znacznik **<P_106E_3>** musi raportować w
 
 | Wartość znacznika <P_106E_3A> | Opis (Polski) | Opis (Angielski) | Sposób, w jaki Finance odróżnia znacznik |
 |--------|--------------------|------------------|-------|
-| **procedura marży — towary używane** | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy towarów używanych, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **SecondHandGoods** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** | 
-| **procedura marży - dzieła sztuki** | Dostawy dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy dzieł sztuki, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **ArtWorks** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** |
-| **procedura marży - przedmioty kolekcjonerskie i antyki** | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **CollectorAntiques** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** |
+| procedura marży — towary używane | Dostawy towarów używanych dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy towarów używanych, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **SecondHandGoods** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** | 
+| procedura marży - dzieła sztuki | Dostawy dzieł sztuki, przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy dzieł sztuki, dla których podstawę opodatkowania stanowi art. 120 ust. 4, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **ArtWorks** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** |
+| procedura marży - przedmioty kolekcjonerskie i antyki | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120 ust. 4 i 5 marża | Dostawy przedmiotów kolekcjonerskich i antyków, dla których podstawę opodatkowania stanowi zgodnie z art. 120, ustęp czwarty, przypis piąty | Zgodnie z konfiguracją kodów podatków w **ItemType_LOOKUP**, gdzie **Result** = **CollectorAntiques** w parametrach właściwych dla danej aplikacji w formacie **faktur VAT (PL)** |
 
 #### <a name="zamowienie-and-zamowieniectrl-nodes"></a>Węzły zamowienie i ZamowienieCtrl
 
@@ -711,13 +803,13 @@ Aby wykonać to wymaganie, system gromadzi informacje z bazy danych dla wierszy 
 
 | Nazwa znacznika | Opis (Polski) | Opis (Angielski) | Sposób zbierania informacji przez Finance |
 |--------|--------------------|------------------|-------|
-| **P_7Z** | Nazwa (rodzaj) towaru lub usługi | Nazwa (rodzaj) towaru lub usługi | Wartość przechowywana w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
-| **P_8AZ** | Miara zamówionego towaru lub zakres usługi | Jednostka miary zamówionego towaru lub zakresu usługi | Wartość jednostka miary przechowywana w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance (Jeśli pole jest puste, zostanie użyta opcja „usługa”). |
-| **P_8BZ** | Ilość zamówionego towaru lub zakres usługi | Ilość zamówionych towarów lub zakres usługi | Wartość ilości w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
-| **P_9AZ** | Cena jednostkowa netto | Cena jednostkowa netto | Wartość ceny w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
-| **P_11NettoZ** | Wartość zamówionego towaru lub usługi bez kwoty podatku | Wartość zamówionych towarów lub usług bez kwoty podatku | Wartość kwoty podstawy podatku, która jest obliczana dla wiersza zamówienia sprzedaży lub faktury niezależnej, na podstawie ilości przechowywanej w wierszu (**P_8BZ)**. |
-| **P_11VatZ** | Kwota podatku od zamówionego towaru lub usługi | Kwota podatku od zamówionego towaru lub usługi | Wartość kwoty podatku, która jest obliczana dla wiersza zamówienia sprzedaży lub faktury niezależnej, na podstawie ilości przechowywanej w wierszu (**P_8BZ)**. |
-| **P_12Z** | Stawka podatku | Stawka podatkowa | Obliczona wartość stawki podatku na podstawie konfiguracji podatku w wierszu zamówienia sprzedaży lub faktury niezależnej (Grupa podatków i Grupa podatków dla towaru). |
+| P_7Z | Nazwa (rodzaj) towaru lub usługi | Nazwa (rodzaj) towaru lub usługi | Wartość przechowywana w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
+| P_8AZ | Miara zamówionego towaru lub zakres usługi | Jednostka miary zamówionego towaru lub zakresu usługi | Wartość jednostka miary przechowywana w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance (Jeśli pole jest puste, zostanie użyta opcja „usługa”). |
+| P_8BZ | Ilość zamówionego towaru lub zakres usługi | Ilość zamówionych towarów lub zakres usługi | Wartość ilości w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
+| P_9AZ | Cena jednostkowa netto | Cena jednostkowa netto | Wartość ceny w wierszu zamówienia sprzedaży lub faktury niezależnej w bazie danych Finance |
+| P_11NettoZ | Wartość zamówionego towaru lub usługi bez kwoty podatku | Wartość zamówionych towarów lub usług bez kwoty podatku | Wartość kwoty podstawy podatku, która jest obliczana dla wiersza zamówienia sprzedaży lub faktury niezależnej, na podstawie ilości przechowywanej w wierszu (**P_8BZ)**. |
+| P_11VatZ | Kwota podatku od zamówionego towaru lub usługi | Kwota podatku od zamówionego towaru lub usługi | Wartość kwoty podatku, która jest obliczana dla wiersza zamówienia sprzedaży lub faktury niezależnej, na podstawie ilości przechowywanej w wierszu (**P_8BZ)**. |
+| P_12Z | Stawka podatku | Stawka podatkowa | Obliczona wartość stawki podatku na podstawie konfiguracji podatku w wierszu zamówienia sprzedaży lub faktury niezależnej (Grupa podatków i Grupa podatków dla towaru). |
 
 W odniesieniu do wartości raportowanych dla wierszy zamówień sprzedaży lub faktur niezależnych wartość w znaczniku **WartoscZamowienia** węzła **Zamowienie** jest obliczana jako suma wartości obliczonych dla kwoty podstawy podatku oraz kwoty podatku (**P_11NettoZ** + **P_11VatZ**) dla wszystkich wierszy dokumentu.
 
@@ -726,7 +818,3 @@ Wartość znacznika **WartoscZamowien** węzła **ZamowienieCtrl** jest obliczan
 ## <a name="using-batch-jobs-for-saft"></a>Używanie zadań wsadowych dla raportów SAFT
 
 Generowanie raportów SAF-T za długi okres, taki jak miesiąc lub kwartał, może powodować objęcie bardzo dużej ilości danych i zajmować dużo czasu. W takich przypadkach zaleca się używanie zadań wsadowych. Okno dialogowe dla każdego raportu SAF-T zawiera kartę **Uruchom w tle**. Otwórz tę kartę, aby ustawić generowanie raportu w trybie wsadowym. Zaznacz pole wyboru **Przetwarzanie wsadowe**. Aby uzyskać więcej informacji na temat przetwarzania wsadowego, zobacz temat [Omówienie przetwarzania wsadowego](../../dev-itpro/sysadmin/batch-processing-overview.md). Aby przejrzeć zadania wsadowe lub znaleźć wygenerowany plik, otwórz okno **Administrowanie organizacją** > **Raportowanie elektroniczne** > **Zadania raportowania elektronicznego** i znajdź wiersz związany z zadaniem. W **menu głównym** wybierz **Pokaż dziennik**. Jeżeli nic nie jest wyświetlane, oznacza to, że podczas generowania pliku nie zostały utworzone żadne komunikaty. Aby zobaczyć plik, w **menu głównym** wybierz **Pokaż pliki**, znajdź żądany plik i w **menu głównym** wybierz **Otwórz**.  
-
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

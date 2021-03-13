@@ -1,6 +1,6 @@
 ---
 title: Typ miejsca docelowego drukarka
-description: Ten temat wyjaśnia w jaki sposób konfigurować lokalizację docelową drukarka dla poszczególnych składników FOLDER lub FILE formatu sprawozdawczości elektronicznej (ER) skonfigurowanych do generowania dokumentów wychodzących w formacie PDF lub formatach Microsoft Office (Word\Excel).
+description: Ten temat zawiera wyjaśnienia dotyczące możliwości skonfigurowania miejsca docelowego drukarki dla każdego składnika typu FOLDER lub PLIK w formacie raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679613"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094086"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe drukarka
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe — drukarka
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,6 +70,3 @@ Aby podczas drukowania dokumentu wychodzącego w formacie programu Excel używan
 
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

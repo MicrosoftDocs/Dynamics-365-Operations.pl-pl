@@ -1,6 +1,6 @@
 ---
 title: Definicje kolumn w raportach finansowych
-description: Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik (blok konstrukcyjny) raportu, który określa zawartość kolumn raportu. Podobnie jak definicje wierszy, definicje kolumn podstawowych mogą być używane w wielu raportach.
+description: Ten artykuł zawiera informacje o definicjach kolumn. Definicja kolumny to składnik raportu, który określa zawartość kolumn raportu.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687237"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093116"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Definicje kolumn w raportach finansowych
 
@@ -226,7 +226,7 @@ Pewien użytkownik tworzy raport dla dynamicznej prognozy sześciu miesięcy. U�
 | Szerokość kolumna        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Sterowanie wydrukiem       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Użytkownik dwukrotnie klika komórkę nagłówka kolumny, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
+Następnie użytkownik dwukrotnie klika komórkę nagłówka w kolumnie B, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
 
 | Pole              | Wartość                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ Użytkownik dwukrotnie klika komórkę nagłówka kolumny, aby otworzyć okno di
 | Uzasadnienie      | Nie zostanie dokonany żaden wybór. |
 | Rozszerz od        | mld                     |
 | Rozszerz do          | BASE                  |
-| Nagłówek budżetu      | BASE+1 do końcowej kolumny  |
 
 Po wprowadzeniu informacji użytkownik klika przycisk **OK**. Następnie użytkownik dwukrotnie klika komórkę nagłówka w kolumnie C, aby otworzyć okno dialogowe **Nagłówek kolumny**, w którym wpisuje następujące informacje.
 
@@ -246,8 +245,8 @@ Po wprowadzeniu informacji użytkownik klika przycisk **OK**. Następnie użytko
 | Wstaw autotekst    | Nie zostanie dokonany żaden wybór. |
 | Opcje formatu     | Pole                   |
 | Uzasadnienie      | Nie zostanie dokonany żaden wybór. |
-| Rozszerz od        | C                     |
-| Rozszerz do          | BASE+2                |
+| Rozszerz od        | BASE+1                |
+| Rozszerz do          | P                     |
 
 Teraz za każdym razem gdy jest generowany ten raport, słowo „Rzeczywiste” będzie drukowane nad kolumnami zawierającymi dane rzeczywiste, a słowo „Budżet” — nad kolumnami zawierającymi prognozy budżetu. Oprócz tego liczba kolumn będzie co miesiąc odpowiednio korygowana.
 
@@ -599,6 +598,3 @@ Można podzielić kwotę w kolumnie przez określoną liczbę okresów. Na przyk
 [Definicje wierszy w Projektancie raportów finansowych](row-definitions-financial-reporting.md)
 
 [Zaawansowane opcje formatowania w raportowaniu finansowym](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

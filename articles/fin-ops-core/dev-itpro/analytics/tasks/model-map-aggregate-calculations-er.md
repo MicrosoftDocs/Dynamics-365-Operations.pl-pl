@@ -1,6 +1,6 @@
 ---
 title: Używanie konfiguracji mapowań modeli do obliczeń agregujących na poziomie bazy danych
-description: Ta procedura zawiera informacje na temat projektowania nowego mapowania modelu raportowania elektronicznego (ER) i stosowania wbudowanych funkcji ER w celu efektywnego obliczania agregacji.
+description: W tym temacie opisano sposób projektowania nowego mapowania modelu raportowania elektronicznego i zastosowanie wbudowanych funkcji ER w celu efektywnego obliczania agregacji.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f1c4ddf0fac5ba962c3dab545bfa7e0df4afa948
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684122"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094272"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Używanie konfiguracji mapowań modeli do obliczeń agregujących na poziomie bazy danych
 
@@ -116,6 +116,3 @@ Ta procedura została utworzona dla użytkowników z przypisaną rola administra
 68. Kliknij przycisk Zapisz.
     * Należy zwrócić uwagę, że pole „Wykonanie w” wskazuje, że to grupowanie będzie wykonane w czasie procesu w pamięci, nawet jeśli nie zdefiniowano żadnych agregacji, a wybrane źródło danych typu „Rekordy w tabeli” odnosi się do tej samej tabeli „Intrastat”. Dzieje się tak, ponieważ źródło danych zawiera kilka pól obliczeniowych, których jeszcze nie można przełożyć na poziom bazy danych SQL.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

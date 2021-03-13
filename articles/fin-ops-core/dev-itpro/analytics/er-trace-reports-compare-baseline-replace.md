@@ -1,6 +1,6 @@
 ---
 title: Poprawa śledzenia wyników wygenerowanych raportów ER i porównanie ich z wartościami wyjściowymi
-description: Ten temat zawiera informacje o tym, jak ulepszono funkcję linii bazowej ER w Microsoft Dynamics 365 for Finance and Operations wersja 10.0.3 (czerwiec 2019).
+description: W tym temacie opisano usprawnienia podstawowej funkcji ER w wersji Microsoft Dynamics 365 for Finance and Operations 10.0.3 (czerwiec 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682854"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094011"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Poprawa śledzenia wyników wygenerowanych raportów ER i porównanie ich z wartościami wyjściowymi
 
@@ -59,7 +59,7 @@ Oto kilka najważniejszych kroków:
 
 Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format, ale zasady linii bazowej nie zostały jeszcze dodane dla tej linii bazowej.
 
-![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline2.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego, w tej chwili bez reguł](media/GER-BaselineSample-AddBaseline2.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="make-a-new-baseline-rule"></a>Utwórz nową zasadę bazową
 
@@ -72,7 +72,7 @@ Linia bazowa została dodana do **Format do nauki podstawowych linii ER** format
 7. Kliknij przycisk **OK**.
 8. Wybierz **Linie bazowe**.
 
-    ![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+    ![Zrzut ekranu strony podstawy formatu raportowania elektronicznego, linie bazowe wybrane](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
     Wygenerowany plik wychodzący został automatycznie dołączony do linii bazowej wykonanego formatu ER. Reguła linii bazowej została automatycznie dodana do tej linii bazowej i zawiera również odniesienie do załączonego pliku.
 
@@ -130,7 +130,7 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 3. Na liście linii bazowych wybierz linię, która została skonfigurowana do **Format do nauki podstawowych linii ER**.
 4. Na skróconej karcie **Linie bazowe** wybierz **Usuń**, żeby usunąć zasadę linii bazowej. którą ustaliłes wcześniej.
 
-![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline3.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego, usunięta](media/GER-BaselineSample-AddBaseline3.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Zdefiniuj zamienniki dla powiązań zaprojektowanego formatu ER
 
@@ -138,7 +138,7 @@ Skonfiguruj linię bazową, aby ignorować stare zmieniające się części wyj�
 2. Na drzewie komponentów formatu rozwiń **Wyjście**, rozwiń **Wyjście\\Dokument**, a następnie zaznacz okienko dla **Wyjście\\Dokument\\ProcessingDateTime**.
 3. Kliknij przycisk **OK**.
 
-![Strona podstawy formatu raportowania elektronicznego](media/GER-BaselineSample-AddBaseline4.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Strona podstawy formatu raportowania elektronicznego, składniki](media/GER-BaselineSample-AddBaseline4.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 Wybrany komponent formatu ER został dodany do listy komponentów na skróconej karcie w **Zastąpienia**. Gdy podstawowy format ER jest uruchamiany w trybie debugowania, powiązanie formatu dla każdego komponentu zostanie zastąpione przez powiązanie pokazane w kolumnie **Powiązania**. Aby zmienić domyślne wiązanie dla komponentu wymienionego na skróconej karcie w **Zastąpienia** wybierz **Edytuj**.
 
@@ -207,6 +207,3 @@ Aby zaimportować ustawienia linii bazowej z pliku XML przechowywanego na serwer
 
 - [Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi](er-trace-reports-compare-baseline.md)
 - [Zasoby rejestratora zadań](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

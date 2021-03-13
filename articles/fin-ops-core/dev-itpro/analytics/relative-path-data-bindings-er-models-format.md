@@ -1,6 +1,6 @@
 ---
 title: Używanie ścieżki względnej w powiązaniach danych z modelami i formatami ER
-description: Narzędzie raportowanie elektroniczne (ER) pozwala użytkownikom definiować struktury formatu elektronicznego, a następnie opisywać, jak te struktury powinny być wypełniane przy użyciu danych i algorytmów, które znajdują się w aplikacji.
+description: Narzędzie Raportowanie elektroniczne pozwala Ci definiować struktury formatu elektronicznego, a następnie opisywać, jak te struktury powinny być wypełniane.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/03/2019
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2554dc33514185fa16868ee239c3e44ff675dd
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 321a85c675439b91b99ec5988494d7514a5c53f4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687481"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093144"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Używanie ścieżki względnej w powiązaniach danych z modelami i formatami ER
 
@@ -57,6 +57,3 @@ Ta funkcja nie powoduje przerwy w zgodności z poprzednimi wersjami platformy ER
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Język formuł ER](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: ER Mapowanie składników utworzonego formatu na elementy modelu danych (listopad 2016)
-description: W poniższej procedurze pokazano, jak użytkownik posiadający rolę Administrator systemu lub Deweloper raportowania elektronicznego może mapować elementy modelu danych na składniki utworzonej konfiguracji raportowania elektronicznego (ER), która definiuje format dokumentu elektronicznego dla domeny biznesowej płatności.
+description: W tym temacie opisano sposób mapowania elementów modelu danych na składniki utworzonej konfiguracji raportowania elektronicznego (ER).
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 109a6736196b6ed3d1445a9f1a70c5f2b9d5af58
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684338"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093780"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Mapowanie składników utworzonego formatu na elementy modelu danych (listopad 2016)
 
@@ -113,6 +113,3 @@ Każdą wersję formatu można skonfigurować jako dostępną do użycia począw
 1. Rozwiń sekcję Kody ISO krajów/regionów.
     * Można ograniczyć dostęp do każdego formatu, identyfikując określone kraje/regiony, w których format się stosuje. Gdy lista krajów/regionów dla określonego formatu jest pusta, tego formatu można używać dla dowolnej firmy. Jeśli do listy krajów/regionów zostaną wstawione jakieś kody ISO krajów/regionów, formatu można używać tylko w firmach, których adres podstawowy mieści się w danym kraju/regionie.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

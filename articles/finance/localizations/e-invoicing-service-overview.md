@@ -3,7 +3,7 @@ title: Omówienie dodatku Faktur elektronicznych
 description: W tym temacie przedstawiono informacje na temat dodatku Faktur elektronicznych w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4446975"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104215"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Omówienie dodatku Faktur elektronicznych
 
@@ -41,13 +40,13 @@ Dodatek Faktury elektroniczne może pomóc w osiągnięciu następujących celó
 - Łatwe do regulowania konfiguracje, które nie wymagają zmiany kodu
 - Uproszczone pakowanie konfiguracji
 - Wbudowana funkcja eksportowania, importowania i integrowania oraz łatwa rozszerzalność w przetwarzaniu dokumentów faktur elektronicznych
-- Łatwe ponowne użycie tych samych konfiguracji eksportu, importu i integracji między firmami
+- Łatwe ponowne wykorzystanie tych samych konfiguracji eksportu, importu i integracji w różnych firmach
 
 Aby korzystać z dodatku Faktury elektroniczne, należy go zainstalować z projektu w Microsoft Dynamics Lifecycle Services (LCS). Następnie postępuj zgodnie z procedurą konfiguracji, aby włączyć integrację z Finance lub Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Rozpocznij pracę z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Dostępność
+## <a name="service-availability"></a><a name="availability"></a>Dostępność usługi
 
-Początkowo dodatek Faktury elektroniczne jest dostępny dla wybranych klientów za pośrednictwem programu podglądowego. Później wersja zapoznawcza zostanie udostępniona dla szerszego grona klientów. Na koniec usługa stanie się ogólnie dostępna. Ponieważ funkcjonalność, która spełnia wymagania specyficzne dla kraju/regionu, może być ograniczona na różnych etapach wydania, należy zawsze sprawdzać najbardziej aktualną dokumentację, która podkreśla zakres i zakres obsługiwanych rozwiązań specyficznych dla kraju/regionu.
+Obecnie dodatek Fakturowanie elektroniczne jest dostępny dla klientów za pośrednictwem programu podglądowego, aw kolejnej fazie usługa stanie się ogólnodostępna. Ponieważ funkcjonalność, która spełnia wymagania specyficzne dla kraju/regionu, może być ograniczona na różnych etapach wydania, należy zawsze sprawdzać najbardziej aktualną dokumentację, która podkreśla zakres i zakres obsługiwanych rozwiązań specyficznych dla kraju/regionu.
 
 Dodatek Faktury elektroniczne jest wdrażany w następujących lokalizacjach geograficznych platformy Azure:
 
@@ -76,7 +75,7 @@ Dodatku Faktury elektroniczne można używać w scenariuszach, w których należ
     - Wbudowana, łatwo rozszerzalna i konfigurowalna integracja z dodatkowymi treściami dla kilku krajów
 
     > [!NOTE]
-    > Obecnie jest obsługiwanych ograniczona liczba przesłanek bezpośrednich. Więcej informacji znajduje się w sekcji [Dostępność](#availability) we wcześniejszej części tego tematu. Pomoc zostanie przedłużona w przyszłości.
+    > Obecnie jest obsługiwanych ograniczona liczba przesłanek bezpośrednich. Więcej informacji znajduje się w sekcji [Dostępność usługi](#availability) we wcześniejszej części tego tematu. Pomoc zostanie przedłużona w przyszłości.
 
 - Obsługa odpowiedzi z usług internetowych, w tym konfigurowalna obsługa komunikatów wyjątków
 - Obsługa podpisów elektronicznych (na przykład przy użyciu algorytmu podpisywania XMLDSig)
@@ -104,15 +103,9 @@ Na poniższej ilustracji przedstawiono przepływ danych do i z dodatku Faktury e
 ![Przepływ danych dla dodatku Faktury elektroniczne](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
-Włączenie i używanie Faktur elektronicznych może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostaną one przesłane do agencji zewnętrznych upoważnionych przez organy podatkowe w celu wysyłania faktur elektronicznych w predefiniowanych formatach wymaganych do integracji z usługami internetowymi tych rządów. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
+Włączenie i używanie dodatku Faktur elektronicznych może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostaną one przesłane do agencji zewnętrznych upoważnionych przez organy podatkowe w celu wysyłania faktur elektronicznych w predefiniowanych formatach wymaganych do integracji z usługami internetowymi tych rządów. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
-
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Brazylii](e-invoicing-bra-get-started.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Meksyku](e-invoicing-mex-get-started.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch](e-invoicing-ita-get-started.md)
-- [Skonfiguruj dodatek Faktury elektroniczne](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Administracja usługi](e-invoicing-service-administration.md)
+- [Skonfiguruj faktury elektroniczne w RCS](e-invoicing-configuration-rcs.md)
+- [Wystawiaj faktury elektroniczne w Finance i Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

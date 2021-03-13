@@ -1,7 +1,7 @@
 ---
 title: Zaawansowane opcje formatowania w raportowaniu finansowym
-description: Podczas tworzenia raportu w module raportowania finansowego są dostępne dodatkowe funkcje formatowania, włącznie z filtrami wymiarów, ograniczeniami kolumn i jednostek sprawozdawczych, wierszami niedrukowanymi i instrukcjami IF/THEN/ELSE w obliczeniach.
-author: ryansandness
+description: W tym temacie opisano zaawansowane funkcje formatowania, w tym filtry, ograniczenia, wiersze nie do drukowania i instrukcje warunkowe w obliczeniach.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683170"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093169"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
@@ -310,6 +310,3 @@ Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z 
 Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&).
 
 W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

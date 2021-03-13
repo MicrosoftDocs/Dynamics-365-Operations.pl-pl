@@ -1,6 +1,6 @@
 ---
 title: Pakiet zawartości Analiza rachunku kosztów dostępny w usłudze Power BI
-description: W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza rachunku kosztów usługi Power BI. Wyjaśniono, jak uzyskać dostęp do raportów programu Power BI, oraz zamieszczono informacje o modelu danych i jednostkach użytych do zbudowania pakietu.
+description: W tym temacie opisano, co się znajduje w pakiecie zawartości Analiza rachunku kosztów usługi Power BI.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683878"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093393"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Pakiet zawartości Analiza rachunku kosztów dostępny w usłudze Power BI
+# <a name="cost-accounting-analysis-power-bi-content"></a>Analiza rachunku kosztów dostępny w usłudze Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -123,6 +123,3 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Kalendarze obrachunkowe                   | Kalendarz, Opis kalendarza                                                                                       |
 | Lata obrachunkowe                       | Rok kalendarzowy                                                                                                        |
 | Okresy obrachunkowe                     | Okres roku kalendarzowego                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
-description: W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI. Ta funkcja pomaga zagwarantować, że użytkownicy widzą tylko dane usługi Power BI, do których mają dostęp.
+description: W tym temacie wyjaśniono, jak można rozpowszechnić zabezpieczenia na poziomie dostępu w module Rachunek kosztów do zabezpieczeń na poziomie wierszy w usłudze Microsoft Power BI.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 04ff1523f7b05fe8398513e913702b0f3c7c354c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d54ced21de112288c2f98c0bc895ca0d49c217e3
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682196"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093362"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
 
@@ -63,6 +63,3 @@ Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z j
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

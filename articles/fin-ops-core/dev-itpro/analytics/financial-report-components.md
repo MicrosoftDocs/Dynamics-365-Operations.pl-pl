@@ -1,6 +1,6 @@
 ---
 title: Składniki raportu finansowego
-description: W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej. Tymi blokami konstrukcyjnymi mogą być definicje wierszy, kolumn i drzewa raportowania. Artykuł wyjaśnia, jak organizować i blokować bloki konstrukcyjne oraz jak pracować z grupami bloków konstrukcyjnych.
+description: W tym artykule opisano, jak składniki (bloki konstrukcyjne) definicji raportów są wykorzystywane w sprawozdawczości finansowej.
 author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 97468be0bdea679ca7a52c5cef9c1e10950736e8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d066ee69887f05c8fe14eebac1111c4db26ec628
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682728"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093983"
 ---
 # <a name="financial-report-components"></a>Składniki raportu finansowego
 
@@ -126,6 +126,3 @@ Po otwarciu bloku konstrukcyjnego inni użytkownicy mają do niego dostęp tylko
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
