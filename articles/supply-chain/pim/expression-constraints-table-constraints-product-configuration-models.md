@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435421"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007718"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Ograniczenia wyrażenia i ograniczenia tabeli w modelach konfiguracji produktu.
 
@@ -168,8 +167,8 @@ W poniższych tabelach znajdują się listy operatorów i notacji infix, któryc
 </ul></td>
 </tr>
 <tr class="even">
-<td>Moc</td>
-<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy łączne prawostronnie). Dlatego <strong>Power[a, b, c]</strong> jest równoznaczne z <strong>Power[a, Power[b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
+<td>Potęga</td>
+<td>Wartość wykładnicza. Potęgowanie od prawej do lewej. (Innymi słowy jest łączna z prawej). Dlatego <strong>Power[a, b, c]</strong> jest równoznaczne z <strong>Power[a, Power[b, c]]</strong>. Operatora <strong>Power</strong> można użyć tylko pod warunkiem, że wykładnik jest dodatnią wartością stałą.</td>
 <td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operator:</strong> Power[x, 2] == y</li>
@@ -222,7 +221,7 @@ W następnej tabeli przedstawiono przykłady jak zapisać notację infix.
 |        (x)        |                           Nawiasy zastępują domyślny priorytet.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Dlaczego moje ograniczenia wyrażeń nie przechodzą pomyślnie sprawdzania poprawności?
-Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zarezerwowanych słów kluczowych, których nie można używać:
+Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla atrybutów, komponentów czy podskładniki w modelu konfiguracji produktu. Oto lista zastrzeżonych słów kluczowych, których nie można używać:
 
 -   Pułap
 -   Element
@@ -254,6 +253,3 @@ Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla a
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

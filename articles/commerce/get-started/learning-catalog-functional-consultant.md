@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 504433fba95893bc0af651d74f43dd112238e8c1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 942ab3e8758bfb6ba1f1fa1a7f8c455e932120a0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414916"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009806"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Katalog szkoleń dla konsultantów funkcjonalnych Dynamics 365 Commerce
 
@@ -55,6 +54,3 @@ Aby uzyskać informacje dotyczące funkcji udostępnianych innym aplikacjom Fina
 | Zawartość  | opis | Format  | Długość    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Konfigurowanie handlu elektronicznego w Dynamics 365 Commerce i praca z nim](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Kanały online i witryna handlu elektronicznego Dynamics 365 Commerce umożliwiające detalistom tworzenie obecności online ich marki. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin   |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

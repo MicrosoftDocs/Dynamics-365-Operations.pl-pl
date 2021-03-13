@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f50318e0a955d8244ba854aa1fd73ad7532b9198
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f54c02fc828d60f4ddb28be932bbf8eb137ee92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435197"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008187"
 ---
 # <a name="inventory-value-storage-report"></a>Raport magazynu wartości zapasów
 
@@ -106,6 +105,3 @@ W poniższym przykładzie przedstawiono sposób eksportowania raportu dotyczące
 1. Zostanie otwarta strona **podsumowanie wykonania**, na której możesz zobaczyć stan zadania eksportowania oraz listę wyeksportowanych jednostek. W obszarze **Stan przetwarzania jednostki** wybierz jednostkę **Wartość zapasów** z listy, a następnie wybierz opcję **Pobierz plik**, aby pobrać dane wyeksportowane z tej jednostki.
 
 Aby uzyskać więcej informacji o używaniu funkcji zarządzania danymi do eksportowania danych, patrze [omówienie importowania i eksportowania danych](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

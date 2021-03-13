@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4435646"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007498"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Rozwiązywanie problemów z zamówieniami zakupu
 
@@ -132,7 +131,7 @@ Można wydłużyć okres, dla którego dostawca został zatwierdzony. Obowiązuj
 
 W przykładzie scenariusza opisanego w opisie zagadnienia, gdy rekord ma datę wejścia w życie *11/01/2018* oraz datę ważności *Nigdy*, można zaimportować nowy rekord z datą wejścia w życie *10/01/2018* oraz datę ważności *Nigdy*. Nie można jednak skrócić okresu, tak aby Data wejścia w życie była aktualizowana do *12/01/2018* za pomocą funkcji zarządzania danymi. Tę zmianę należy wprowadzić w interfejsie użytkownika.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Po zmianie adresu dostawy w nagłówku zamówienia zakupu nazwa dostawy nie jest synchronizowana.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>Po zmianie adresu dostawy w nagłówku zamówienia zakupu nazwa dostawy nie jest synchronizowana.
 
 ### <a name="issue-description"></a>Opis problemu
 
@@ -145,6 +144,3 @@ Jest to celowe. Wybrany adres musi być klasyfikowany jako adres dostawy. W prze
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Czy mogę znaleźć użytkownika, który anulował zamówienie zakupu?
 
 Te informacje są śledzone tylko wtedy, gdy zamówienie zakupu podlega zarządzaniu zmianami. W przypadku korzystania z zarządzania zmianami można sprawdzić, kto przesłał tę zmianę (anulowanie) i, kto ją zatwierdził.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

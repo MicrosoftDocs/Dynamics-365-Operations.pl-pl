@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgShopSupervisorReleaseOrders
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9f7546b70ddef30d88a79b00fe31d4e82d9bfb9b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 84be2a4646cfc18cd1f25a4ec969acdb62cb2856
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4435158"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007248"
 ---
 # <a name="flushing-principles"></a>Reguły rozliczania
 
@@ -63,6 +62,3 @@ Reguła rozliczania Zakończenie wskazuje, że materiał będzie automatycznie z
 
 ### <a name="available-at-location"></a>Dostępne w lokalizacji
 Reguła rozliczania Dostępne w lokalizacji wskazuje, że materiał będzie automatycznie zużywany z chwilą zarejestrowania jako pobranego do produkcji. Materiał jest rejestrowany jako pobrany z lokalizacji z chwilą ukończenia pracy pobrania surowca lub gdy materiał jest dostępny w lokalizacji wejściowej produkcji, a wiersz materiału został zwolniony do magazynu. Lista pobrania wygenerowana w trakcie procesu jest księgowana w zadaniu wsadowym. Ta reguła ma zastosowanie, jeśli na przykład masz wiele działań pobrania do jednego zlecenia produkcyjnego. W takim wypadku nie trzeba ręcznie aktualizować listy pobrania i można uzyskać bieżący obraz saldo PWT.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

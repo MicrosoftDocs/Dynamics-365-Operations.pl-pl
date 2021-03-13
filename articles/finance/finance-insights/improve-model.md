@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646086"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009376"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Usprawnij model przewidywania (wersja zapoznawcza)
 
@@ -42,19 +41,19 @@ Jeśli organizacja wymaga tylko dwóch wyników, zmień wartości progowe wynik�
 
 ## <a name="select-fields"></a>Wybierz pola
 
-Wybierając pola, które mają być uwzględnione w modelu, należy pamiętać, że lista zawiera wszystkie pola dostępne w jednostce usługi Common Data Service, które są mapowane na dane w jeziorze danych na platformie Azure. Niektóre z tych pól **nie powinny** być zaznaczane. Pola, których nie należy zaznaczać, należą do jednej z trzech kategorii:
+Wybierając pola, które mają być uwzględnione w modelu, należy pamiętać, że lista zawiera wszystkie pola dostępne w tabeli usługi Microsoft Dataverse, które są mapowane na dane w Azure data lake. Niektóre z tych pól **nie powinny** być zaznaczane. Pola, których nie należy zaznaczać, należą do jednej z trzech kategorii:
 
-- Pole jest wymagane przez jednostkę usługi Common Data Service, ale w jeziorze danych nie ma dla niej żadnych danych.
+- Pole jest wymagane przez tabelę usługi Dataverse, ale w data lake nie ma dla niej żadnych danych.
 - Pole jest identyfikatorem i w związku z tym jest nieprzydatne dla funkcji uczenia maszynowego.
 - Pole reprezentuje informacje, które nie będą dostępne podczas przewidywania.
 
 W poniższych sekcjach przedstawiono pola dostępne dla jednostek faktury i odbiorcy oraz listę pól, które **nie powinny** być wybierane do trenowania. Kategoria określona dla każdego z tych pól nawiązuje do kategorii z poprzedzającej listy.
  
-### <a name="invoice-common-data-model-entity"></a>Jednostka wspólnego modelu danych Faktura
+### <a name="invoice-dataverse-table"></a>Tabela Faktura Dataverse
 
-Na poniższej ilustracji pokazano pola dostępne dla jednostki Faktura.
+Na poniższej ilustracji pokazano pola dostępne dla tabali Faktura.
 
-[![Pola dostępne dla jednostki Faktura](./media/available-fields.png)](./media/available-fields.png)
+[![Pola dostępne dla tabeli Faktura](./media/available-fields.png)](./media/available-fields.png)
 
 Następujących pól nie należy wybierać do trenowania:
 
@@ -65,11 +64,11 @@ Następujących pól nie należy wybierać do trenowania:
 - **Rekord źródłowy** (kategoria 2)
 - **Tabela źródłowa** (kategoria 2)
 
-### <a name="customer-common-data-model-entity"></a>Jednostka wspólnego modelu danych Odbiorca
+### <a name="customer-dataverse-table"></a>Tabela odbiorców Dataverse
 
-Na poniższej ilustracji pokazano pola dostępne dla jednostki Odbiorca.
+Na poniższej ilustracji pokazano pola dostępne dla tabeli Odbiorca.
 
-[![Pola dostępne dla jednostki Odbiorca](./media/related-entities.png)](./media/related-entities.png)
+[![Pola dostępne dla tabeli Odbiorca](./media/related-entities.png)](./media/related-entities.png)
 
 Następującego pola nie należy wybierać do trenowania:
 
@@ -83,6 +82,3 @@ Filtry obecnie nie obsługują scenariusza prognozowania płatności od odbiorc�
 
 #### <a name="privacy-notice"></a>Klauzula prywatności
 Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

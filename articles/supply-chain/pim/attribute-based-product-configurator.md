@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cba4b1eac33ae53e214297728c1cdf2710ebd9d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434888"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007923"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Ceny sprzedaży oparte na atrybutach dla konfiguracji produktu opartej na ograniczeniu
 
@@ -141,6 +140,3 @@ Ostatnim krokiem jest określenie cen sprzedaży opartych na atrybutach dla wers
 1. W okienku akcji otwórz kartę **Model** i z grupy **Szczegóły modelu produktu** wybierz pozycję **Wersje**.
 1. Zostanie otwarta strona **Wersje**. Upewnij się, że **Metoda kalkulacji cen** jest ustawiona na wartość **Oparta na atrybutach**.
     ![Ustawianie metody kalkulacji cen na opartą na atrybutach](media/prod-config-versions.png "Ustawianie metody kalkulacji cen na opartą na atrybutach")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
