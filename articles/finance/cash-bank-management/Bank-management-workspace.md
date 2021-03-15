@@ -63,3 +63,6 @@ Strona **Analizy** zawiera ważne wskaźniki dotyczące kont bankowych w bieżą
 -   Saldo wg waluty
 
 Analizy rachunków bankowych ze wszystkich firm można przeglądać w obszarze roboczym **Przegląd środków pieniężnych — wszystkie firmy**. Aby uzyskać więcej informacji, zobacz [Omówienie operacji gotówkowych - zawartość Power BI](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

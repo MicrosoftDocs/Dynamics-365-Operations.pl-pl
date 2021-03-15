@@ -133,3 +133,6 @@ W tym procesie można utworzyć wysyłkę na podstawie wymiarów *pakowania* tow
 1. Otwórz urządzenie przenośne, zaloguj się do magazynu 63 i przejdź do pozycji **Zapasy \> Dostosuj w**.
 1. Wprowadź **lokalizację** = *SHORT-01*. Utwórz nowy numer identyfikacyjny z **pozycją** = *A0001* i **ilością** = *1 szt.*
 1. Kliknij przycisk **OK**. Pojawi się błąd „Niepowodzenie lokalizacji SHORT-01, pozycja A0001 nie pasuje do wymiarów określonych dla lokalizacji”. Wynika to z tego, że wymiary typu *Magazyn* są większe niż wymiary określone w profilu lokalizacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

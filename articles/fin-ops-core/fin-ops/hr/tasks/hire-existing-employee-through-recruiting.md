@@ -40,3 +40,6 @@ Czasami wolne stanowiska mogą być obsadzane przez kandydatów, którzy są ju�
 9. Kliknij opcję Zmień stanowisko.
     * W tym momencie można również zmienić wynagrodzenie. Jeśli wynagrodzenie nie zostanie przypisane w tej chwili, można to zmienić, przechodząc do formularza pracownika, klikając kartę Wynagrodzenie i wybierając opcję „Plan stałych wynagrodzeń”. Po zaznaczeniu opcji „Zmień stanowisko” stan zgłoszenia zostanie zaktualizowana na „Zatrudniony”.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

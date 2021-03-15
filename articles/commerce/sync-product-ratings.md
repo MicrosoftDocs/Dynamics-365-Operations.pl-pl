@@ -134,3 +134,6 @@ Na poniższej ilustracji przedstawiono przykład ocen produktów w kanałach biu
 [Zarządzanie ocenami i recenzjami](manage-reviews.md)
 
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

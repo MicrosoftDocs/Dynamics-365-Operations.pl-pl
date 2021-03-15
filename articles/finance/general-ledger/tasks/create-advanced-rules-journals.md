@@ -57,3 +57,6 @@ Ta procedura prowadzi przez proces tworzenia zaawansowanych reguł dla arkuszy. 
 4. W drzewie zaznacz grupę, której chcesz pozwolić na księgowanie w tym arkuszu.
 5. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

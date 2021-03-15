@@ -65,3 +65,6 @@ Można skopiować lokalizacje z jednego magazynu do innego i tworzyć lokalizacj
 --------
 
 [Tworzenie nowego układu magazynu](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

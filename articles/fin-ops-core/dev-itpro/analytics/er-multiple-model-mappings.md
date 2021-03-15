@@ -182,3 +182,6 @@ Mapowanie modelu **Kopia faktury projektu** konfiguracji **Mapowanie modelu fakt
 - [Zarządzanie mapowaniem modelu modułu Raportowanie elektroniczne w oddzielnych konfiguracjach modułu Raportowanie elektroniczne](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju](er-country-dependent-model-mapping.md)
 - [Zmiany interfejsu API struktury raportowania elektronicznego](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Po skonfigurowaniu programu ciągłości zgodnie z opisem powyżej można utworz
 - **Rozszerzanie wierszy sprzedaży ciągłej** (jeśli wymagane) — rozszerzenie liczby przypadków, w których można powtarzać zdarzenia. Powtarzanie wysyłek można następnie powiększyć poza limit, który został ustawiony w polu **Próg powtarzania zdarzenia ciągłości pracy** w parametrach biura obsługi.
 - **Dokonaj aktualizacji ciągłości** (jeśli wymagane) — synchronizuj zmiany między program ciągłości i nadrzędnymi zamówieniami sprzedaży ciągłej.
 - **Zamknij wiersze i zamówienia nadrzędne ciągłe** — zamknij zamówienia ciągłe.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

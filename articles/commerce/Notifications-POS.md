@@ -76,3 +76,6 @@ Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że j
 Na poniższej ilustracji przedstawiono efekt wybrania opcji **Do góry, do prawej** i **Środek** w polu **Wyrównanie zawartości** dla przycisków o różnej wielkości.
 
 ![Aktywna zawartość na przyciskach aplikacji POS](./media/ButtonsWithLiveContent.png "Aktywna zawartość na przyciskach aplikacji POS")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

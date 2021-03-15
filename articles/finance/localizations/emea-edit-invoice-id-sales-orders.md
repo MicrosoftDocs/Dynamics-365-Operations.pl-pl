@@ -60,3 +60,6 @@ Firmom w Czechach, Estonii, na Węgrzech, Litwie, Łotwie i w Polsce opcja **Edy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

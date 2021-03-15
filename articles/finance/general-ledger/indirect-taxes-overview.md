@@ -96,3 +96,6 @@ Jednakże jeśli używasz podatku warunkowego, rozliczasz się z urzędem skarbo
 Jeśli jako metoda płatności jest używany czek postdatowany, w momencie utworzenia płatności konto bankowe nie zostanie rozliczone. W niektórych krajach podatek VAT staje się zobowiązaniem „zrealizowanym”, gdy płatność jest rozliczana przez bank, co oznacza, że czek postdatowany został rozliczony. Tę funkcję można włączyć, wybierając opcję **Realizuj podatek warunkowy w momencie wystawiania czeków postdatowanych** w obszarze **Zarządzanie gotówką i bankami > Ustawienia > Parametry modułu Zarządzanie gotówką i bankami > Czeki postdatowane**.
 
 Aby uzyskać więcej informacji, zobacz [Konfigurowanie potrąconych zaliczek na podatek](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

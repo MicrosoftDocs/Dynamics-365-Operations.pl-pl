@@ -134,3 +134,6 @@ Aby ograniczyć dostęp do aplikacji Human Resources w Microsoft Teams organizac
 [Centrum pomocy aplikacji Microsoft Teams](https://support.office.com/teams)</br>
 [Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 [Rejestrator zadań](task-recorder.md)
 
 [Tworzenie multimedialnych tematów Pomocy z Rejestratorem zadań (łącze zewnętrzne)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

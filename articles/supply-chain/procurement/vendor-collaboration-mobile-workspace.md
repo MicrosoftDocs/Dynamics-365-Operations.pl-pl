@@ -169,3 +169,6 @@ Są wyświetlane wszelkie zmiany wprowadzone w odpowiedzi na wiersz zamówienia.
 
 ### <a name="open-confirmed-orders"></a>Otwarte potwierdzone zamówienia
 Gdy zamówienie zakupu zostanie potwierdzone przez odbiorcę (tzn. jego stan zostanie zmieniony na **Potwierdzone**), pojawi się jako otwarte potwierdzone zamówienie. Pozostanie na tej liście do momentu, aż zostanie zarejestrowane jako przyjęte przez odbiorcę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

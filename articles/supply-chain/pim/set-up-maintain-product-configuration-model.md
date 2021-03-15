@@ -52,3 +52,6 @@ W tym artykule opisano kroki tworzenia i konfigurowania modelu konfiguracji prod
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

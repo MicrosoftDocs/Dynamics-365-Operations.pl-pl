@@ -109,3 +109,6 @@ Włączenie i używanie dodatku Faktur elektronicznych może wymagać przesłani
 - [Administracja usługi](e-invoicing-service-administration.md)
 - [Skonfiguruj faktury elektroniczne w RCS](e-invoicing-configuration-rcs.md)
 - [Wystawiaj faktury elektroniczne w Finance i Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

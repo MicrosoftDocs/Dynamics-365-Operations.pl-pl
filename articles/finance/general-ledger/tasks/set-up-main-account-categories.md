@@ -41,3 +41,6 @@ W tym temacie wyjaśniono sposób konfigurowania kategorii konta głównego. Kat
 3. Zaznacz lub wyczyść pole wyboru **Połączone**, aby wybrać konta główne.
 4. Kliknij przycisk **OK**.
 5. Wybierz opcję **Tak**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

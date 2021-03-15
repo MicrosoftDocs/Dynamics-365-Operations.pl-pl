@@ -146,3 +146,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 5. Wybierz ukończoną wersję bieżącej konfiguracji.
     * Należy zauważyć, że utworzona konfiguracja została zapisana jako ukończona wersja 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

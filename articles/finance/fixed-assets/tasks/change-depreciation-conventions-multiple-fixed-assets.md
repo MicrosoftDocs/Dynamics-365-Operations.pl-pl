@@ -48,3 +48,6 @@ To zadanie aktualizuje konwencję amortyzacji dla wybranej grupy środków trwa�
 15. Kliknij przycisk OK.
     *  Wyniki procesu są wyświetlane w raporcie Aktualizacja grupowa.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -81,3 +81,6 @@ Ilość BOM wynosi 1, a ilość produkcji — 110. Formuła zużycia: Od serii (
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

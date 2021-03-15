@@ -49,3 +49,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 ![Strona konfiguracji raportowania elektronicznego](../media/er-financial-dimensions-guides-run3.png)
     * Przejrzyj wygenerowane dane wyjściowe. Dla każdej transakcji wybranej partii są przedstawiane wymiary finansowe z odpowiedniego zestawu wymiarów. Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia .  
 ![Strona konfiguracji raportowania elektronicznego](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -84,3 +84,6 @@ Aby włączyć funkcję limitów ilości zamówień B2B w narzędziu do tworzeni
 [Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B](manage-b2b-users.md)
 
 [Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

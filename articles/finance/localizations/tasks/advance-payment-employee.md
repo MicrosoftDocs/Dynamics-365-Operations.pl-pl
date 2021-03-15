@@ -170,3 +170,6 @@ Ta procedura pokazuje, jak skonfigurować i zarejestrować transakcje dla posiad
 12. Zamknij stronę.
 13. Kliknij opcję Transakcje.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

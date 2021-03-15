@@ -66,3 +66,6 @@ Po wybraniu kafelka otwierana jest strona **Wszystkie grupy czynności produkcji
 Kafelek **Otwarta praca magazynowa wymagająca uwagi** zawiera liczbę wierszy BOM i wierszy formuły które zostały zwolnione do magazynu, mające nieprzetworzoną pracę i taką samą lub wcześniejszą datę surowca jako data obszaru roboczego. Wiersze muszą także zostać wykorzystane przez zasób operacji stosowany do filtra obszaru roboczego.
 
 Po wybraniu kafelka otwierana jest strona **Cała praca**. Ta strona jest filtrowana przez liczbę otwartych nagłówków pracy zawierających wiersze pracy ze zwolnionych wierszy BOM i wierszy formuły spełniających kryteria kafelka. Na stronie **Cała praca** można ręcznie przetworzyć pracę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

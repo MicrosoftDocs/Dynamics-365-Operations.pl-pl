@@ -53,3 +53,6 @@ Ten temat koncentruje się na konfiguracji profilu przeglądu przyjęć. Profil 
 17. Wybierz opcję **Zapisz**.
 18. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

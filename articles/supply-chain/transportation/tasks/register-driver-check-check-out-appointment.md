@@ -45,3 +45,6 @@ Ta procedura przedstawia sposób rejestracji ewidencjonowania i wyewidencjonowan
 1. Kliknij opcję Wyewidencjonowanie kierowcy.
 2. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

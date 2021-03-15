@@ -47,3 +47,6 @@ W tym temacie wymieniono kroki konfigurowania globalnego zaliczki na podatek dla
 7. Konfigurowanie grup dla potrąconych zaliczek na podatek na stronie **Grupy potrąconych zaliczek na podatek za pozycję** dla pozycji lub usługi.
 
 8. Ustaw **Minimalna kwota faktury** na stronie **Parametry księgi głównej > Potrącona zaliczka na podatek**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

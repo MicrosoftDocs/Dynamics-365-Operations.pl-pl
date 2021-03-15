@@ -109,3 +109,6 @@ Aby przejrzeć historię zadań produkcji, które zostały przetworzone na jedno
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania
 
 _Zadanie procesora produkcyjnego w centrum produkcji_ przetwarza dane z centrum do jednostki skali. To zadanie jest uruchamiane automatycznie po wdrożeniu obciążenia pracą modułu uruchomienie produkcji. Można jednak uruchomić ją ręcznie w dowolnym momencie, przechodząc do **Kontrola produkcji \> Zadania okresowe \> Zarządzanie obciążeniem backoffice \> Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

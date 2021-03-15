@@ -166,3 +166,6 @@ Proces obsługi rabatów dostawcy obejmuje wiele zadań śledzenia ręcznego, kt
 - Generowanie prawidłowych roszczeń dotyczących rabatu
 - Naliczenie oczekiwanych należności i tymczasowego zysku w księdze głównej
 - Aktualizacja salda dostawcy i rachunku strat i zysków o należny odpis
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

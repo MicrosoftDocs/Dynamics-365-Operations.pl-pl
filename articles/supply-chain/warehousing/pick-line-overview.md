@@ -68,3 +68,6 @@ Aby skonfigurować element menu urządzenia przenośnego w celu zapewnienia prze
     - W razie konieczności można skorzystać z pozostałych pól **Pole wyświetlane** w celu dodania do siedmiu dodatkowych pól wyświetlania. W każdym polu **Pole wyświetlane** wybierz nazwę pola wiersza pracy. W każdym wierszu zostanie wyświetlona wartość tego pola. Wartości będą wyświetlane w kolejności wybranej w tym miejscu. Niektóre pola **Pole wyświetlane** mogą pozostać puste, jeśli nie są wymagane wszystkie siedem wartości.
 
 1. W okienku akcji wybierz opcję **Zapisz**, a następnie zamknij stronę **Lista pól**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

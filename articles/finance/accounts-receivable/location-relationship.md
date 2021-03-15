@@ -73,3 +73,6 @@ Istnieją dwa sposoby dodawania nowego typu relacji:
     3.  Aby przeprowadzić test wypełniania nowego typu relacji, można utworzyć klasę wykonywalną i wywołać DirDataPopulation::insertDirRelationshipTypes() w Main(). Powinien zostać wyświetlony nowy typ relacji w **DirRelationshipTypeTable**. Będzie on widoczny na stronie **Typy relacji**.
 
         ![Klasa możliwa do uruchomienia](media/Runnable.PNG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

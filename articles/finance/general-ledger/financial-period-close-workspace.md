@@ -107,3 +107,6 @@ Po wykonaniu harmonogramu zamknięcia wybierz dla niego opcję **Zamknięty**. H
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

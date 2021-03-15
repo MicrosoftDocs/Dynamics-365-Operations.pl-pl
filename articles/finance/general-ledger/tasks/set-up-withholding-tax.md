@@ -48,3 +48,6 @@ W tym temacie wyjaśniono sposób konfigurowania potrąconej zaliczki na podatek
 18. Wybierz opcję **Zapisz**.
 19. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

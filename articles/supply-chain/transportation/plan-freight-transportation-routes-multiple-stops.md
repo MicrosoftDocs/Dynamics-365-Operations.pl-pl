@@ -52,3 +52,6 @@ Do proponowania ładunków Pulpit kompilowania ładunku używa adresów odbiorc�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

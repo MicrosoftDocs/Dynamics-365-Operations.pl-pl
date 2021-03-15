@@ -97,3 +97,6 @@ Saldo faktury wynosi teraz 0,00. Arnie wyświetla informacje na stronie **Transa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

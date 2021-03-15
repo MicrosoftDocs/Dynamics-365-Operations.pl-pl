@@ -72,3 +72,6 @@ Ta procedura zawiera instruktaż tworzenia pakietu produktów i użycia go w zam
 17. Kliknij przycisk Utwórz.
 18. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

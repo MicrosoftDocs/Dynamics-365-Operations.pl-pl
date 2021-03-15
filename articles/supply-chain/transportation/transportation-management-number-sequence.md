@@ -48,3 +48,6 @@ Aby połączyć sekwencję numerów z przewoźnikiem, należy wykonać następuj
 1. Wybierz opcję **Edycja**.
 1. Na skróconej karcie **Omówienie** wybierz opcję w polu **Sekwencja numerów produktów**.
 1. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

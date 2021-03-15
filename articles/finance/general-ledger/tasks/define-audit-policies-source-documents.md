@@ -87,3 +87,6 @@ W tym temacie pokazano sposób konfigurowania i uruchamiania reguł inspekcji. W
 57. Rozwiń sekcję **Powiązania**.
 58. Na liście znajdź i zaznacz odpowiedni rekord.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Pytania zamknięte umożliwiają udostępnienie osobie udzielającej odpowiedzi 
 5. W polu Grupa odpowiedzi wpisz lub wprowadź wartość.
 6. W polu Tekst wpisz wartość.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Strona **Wpisy kosztu** umożliwia filtrowanie według identyfikatora dokumentu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

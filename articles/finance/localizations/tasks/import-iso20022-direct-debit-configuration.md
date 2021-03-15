@@ -48,3 +48,6 @@ Jest to pierwsza z pięciu procedur, które razem przedstawiają proces płatno�
     * Jeśli przycisk Importuj nie jest dostępny, oznacza to, że konfiguracja została już zaimportowana.  
 9. Kliknij przycisk Tak.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

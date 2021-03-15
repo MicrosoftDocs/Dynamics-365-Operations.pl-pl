@@ -94,3 +94,6 @@ Aby dowiedzieć się więcej o integracji Dynamics 365 Human Resources z program
 [Omówienie rozwiązania Dynamics 365 Human Resources 2021, wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

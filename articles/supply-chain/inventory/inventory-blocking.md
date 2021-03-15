@@ -69,3 +69,6 @@ Można określić, które stany zapasów powodują blokowanie, za pomocą parame
 [Procesy zarządzania jakością](quality-management-processes.md)
 
 [Sprawdzenie jakości towarów](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

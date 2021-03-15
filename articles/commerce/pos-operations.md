@@ -208,3 +208,6 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 § Gdy punkt sprzedaży działa w trybie offline do zwrotu można wycofać tylko transakcje w bieżącej bazie danych offline.
 
 \*\* Gdy punkt sprzedaży działa w trybie offline, w arkuszu są widoczne tylko transakcje w bazie danych bieżącego kanału offline.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

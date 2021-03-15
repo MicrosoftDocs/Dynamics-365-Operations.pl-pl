@@ -51,3 +51,6 @@ Aktywowanie nowej ceny standardowej zwykle powoduje przeszacowanie wartości dos
 - **Brak** — nie zaksięgowano wymiarów finansowych w przypadku transakcji z przeszacowaniem w walucie obcej. Jeśli struktura konta obejmuje wymagany wymiar finansowy, proces przeszacowania nadal będzie uruchamiany, ale utworzy wpisy księgowe bez wymiarów finansowych. W takim przypadku użytkownicy otrzymają najpierw komunikat ostrzegawczy, aby w razie potrzeby anulować przeszacowanie.
 - **Tabela** — wymiary finansowe pozycji są księgowane w ramach transakcji przeszacowania. Jest to ustawienie domyślne i jest zgodne z oryginalnym zachowaniem systemu bez włączania funkcji *Opcje domyślnego wymiaru finansowego dla przeszacowania kosztów standardowych zapasów*.
 - **Zaksięgowanie** — oznacza, że wymiary finansowe przeszacowywanej transakcji zostały zaksięgowane w transakcjach z przeszacowaniem. Domyślnie wymiary finansowe z konta magazynowego oryginalnej transakcji są używane zarówno dla konta magazynowego, jak i konta przeszacowania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

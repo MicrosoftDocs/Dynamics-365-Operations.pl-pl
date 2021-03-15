@@ -63,3 +63,6 @@ Zakładamy, że Twoja organizacja chce ograniczyć dostęp do danych. Jeśli z j
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 Aby dowiedzieć się więcej na temat zabezpieczeń na poziomie wierszy w usłudze Power BI, zobacz [Zarządzanie zabezpieczeniami modelu w usłudze Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

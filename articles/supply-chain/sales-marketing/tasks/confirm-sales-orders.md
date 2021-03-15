@@ -63,3 +63,6 @@ Ta procedura przedstawia sposób potwierdzenia zamówień sprzedaży. Zobaczysz,
 11. Kliknij przycisk **OK**.
 12. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

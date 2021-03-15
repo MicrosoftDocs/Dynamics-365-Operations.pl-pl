@@ -236,3 +236,5 @@ Aby używać pytań warunkowych to utworzenie hierarchii pytań w kwestionariusz
 Firma oferuje klientom towary i usługi. Zwykle w takich przypadkach niektórzy klienci kupują tylko towary, inni tylko usługi, a jeszcze jedni towary i usługi. Dlatego gdy firma rozsyła ankietę badania poziomu zadowolenia klientów, wprowadza do kwestionariusza strukturę warunkową, aby klienci, którzy nabywają same usługi, nie musieli odpowiadać na pytania dotyczące towarów. 
 
 Alternatywnie można ustawić kwestionariusz tak, że jeśli respondent wybierz odpowiedź A na pytanie 1, następnym pytaniem w sekwencji jest pytanie 2. Jeśli jednak respondent wybierze odpowiedź B na pytanie 1, następnym pytaniem jest pytanie 5.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

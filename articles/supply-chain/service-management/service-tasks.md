@@ -89,3 +89,6 @@ W przypadku automatycznego tworzenia zleceń serwisowych zadania serwisowe mogą
 2. Na karcie **Ustawienia** w polu **Łączenie zleceń serwisowych** wybierz opcję **Według zadania serwisowego**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

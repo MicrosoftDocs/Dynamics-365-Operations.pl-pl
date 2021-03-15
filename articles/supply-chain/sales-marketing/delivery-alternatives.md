@@ -150,3 +150,6 @@ Na tej skróconej karcie są eksponowane skutki wybranej alternatywnej opcji dos
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zobowiązanie do zamówienia](delivery-dates-available-promise-calculations.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

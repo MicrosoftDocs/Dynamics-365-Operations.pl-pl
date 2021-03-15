@@ -71,3 +71,6 @@ Zapotrzebowania na towary dla zlecenia serwisowego są przetwarzane za pomocą p
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

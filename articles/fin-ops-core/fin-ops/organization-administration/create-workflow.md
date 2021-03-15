@@ -83,3 +83,6 @@ Gdy wszystko jest gotowe do zapisania i aktywacji przepływu pracy, wykonaj nast
 
     - Aby uaktywnić tę wersję przepływu pracy, kliknij przycisk **Uruchom nową wersję**. Gdy przepływ pracy jest aktywny, użytkownicy mogą przesyłać do niego dokumenty w celu przetwarzania.
     - Jeśli nie chcesz uaktywnić tej wersję, kliknij przycisk **Nie aktywuj nowej wersji**. Możesz aktywować przepływ pracy później.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Możesz uwzględnić kod przyczyny i komentarz podczas korygowania salda urlopu 
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

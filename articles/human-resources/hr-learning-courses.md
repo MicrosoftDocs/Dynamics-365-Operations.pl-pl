@@ -137,3 +137,6 @@ Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoob
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

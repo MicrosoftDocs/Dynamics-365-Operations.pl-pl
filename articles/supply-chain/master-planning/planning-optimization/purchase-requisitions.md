@@ -101,3 +101,6 @@ Podczas planowania głównego tworzone są dwa planowane zamówienia: jedno na t
 > Po zaakceptowaniu zamówienia planowanego z oznaczoną transakcją zapotrzebowania na zakup aparat planowania przechowuje oznaczanie transakcji dla zapotrzebowania na zakup. Jeśli później dowiemy się, że w zaakceptowanym zamówieniu brakuje określonej ilości wymaganej do zrealizowania zapotrzebowania na zakup, system utworzy nowe planowane zamówienie dla tej różnicy.
 
 Aby uzyskać dalsze informacje o zapotrzebowaniach na zakupu, zobacz [Omówienie zapotrzebowań na zakup](../../procurement/purchase-requisitions-overview.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

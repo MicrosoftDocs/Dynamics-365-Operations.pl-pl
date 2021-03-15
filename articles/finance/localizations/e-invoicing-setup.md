@@ -360,3 +360,6 @@ Wykonaj poniższe czynności, aby zarządzać cyklem życia funkcji dodatku Fakt
 
     > [!NOTE]
     > Po wybraniu opcji **Tak**, stan wersji konfiguracji zostanie automatycznie zmieniony z **Zakończono** na **Udostępnione**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Poniższy obraz przedstawia przykładowy węzeł z dodanymi grupami atrybutów p
 [Konfigurowanie asortymentów](set-up-assortments.md)
 
 [Zarządzanie atrybutami i grupami atrybutów](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

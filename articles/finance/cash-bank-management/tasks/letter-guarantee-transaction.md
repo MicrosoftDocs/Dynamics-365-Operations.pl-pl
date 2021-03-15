@@ -147,3 +147,6 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF.
     * Sprawdź zaksięgowanie wpisy w arkuszu.  
 16. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

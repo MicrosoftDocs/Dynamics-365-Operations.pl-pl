@@ -48,3 +48,6 @@ Podczas akceptowania zamówienia planowanego w oknie dialogowym **Akceptacja** w
 - **Nie** — zapasy nie są oznaczane.
 - **Standardowa** — oznaczanie zapasów jest aktualizowane zgodnie z oznaczaniem transakcji. Zamówienie zapotrzebowania (popytu) jest oznaczane na podstawie zamówienia realizacji (podaży). Jeśli w zamówieniu realizacji pozostanie pewna ilość, zamówienie nie zostanie oznaczone, a dane referencyjne będą puste. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane wyłącznie do zamówienia sprzedaży.
 - **Rozszerzona** — zarówno zamówienie zapotrzebowania (popyt), jak i zamówienie realizacji (podaż) są oznaczane niezależnie od tego, czy w zamówieniu realizacji pozostaje jakaś ilość. Na przykład jeśli zamówienie sprzedaży 100 ea otrzyma oznaczenie transakcji łączące je z zamówieniem zakupu 150 ea, informacje referencyjne zostaną przypisane zarówno do zamówienia sprzedaży, jak i do zamówienia zakupu.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

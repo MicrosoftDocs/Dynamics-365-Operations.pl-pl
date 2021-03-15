@@ -115,3 +115,6 @@ Używam wersji 10.0.16 lub nowszej i po uruchomieniu planowania głównego pojaw
 > Wypełnij poniższy kwestionariusz, aby rozpocząć i w razie potrzeby poprosić o wyjątek od migracji do optymalizacji planowania.
 
 **Odpowiedź:** Nie, planowanie główne nie jest zablokowane. Przebieg planowania głównego został ukończony pomyślnie i można go używać w zwykły sposób. Aby jednak uniknąć otrzymywania tego komunikatu o błędzie podczas przyszłych uruchomień planowania głównego, należy natychmiast przeprowadzić migrację do optymalizacji planowania lub zażądać wyjątku, korzystając z łącza w komunikacie o błędzie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

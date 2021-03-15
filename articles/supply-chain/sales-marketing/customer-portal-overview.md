@@ -68,3 +68,6 @@ Portal odbiorców jest dostarczany jako szablon portali Power Apps. Zależy to o
 ![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 
 Portal odbiorcy działa jako punkt wyjścia dla organizacji, które chcą używać portali Power Apps, aby zbudować zewnętrznie dochodzącą witrynę sieci Web, która korzysta z danych z własnej instalacji Supply Chain Management. Pomaga organizacjom łączyć dwa zapisy, Supply Chain Management i portale Power Apps.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

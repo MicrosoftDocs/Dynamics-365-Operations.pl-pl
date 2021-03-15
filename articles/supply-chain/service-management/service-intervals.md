@@ -93,3 +93,6 @@ Zostały utworzone trzy wiersze zlecenia serwisowego w ramach czasowych określo
 
 [Konfigurowanie ram czasowych serwisu](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

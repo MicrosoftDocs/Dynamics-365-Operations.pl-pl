@@ -381,3 +381,6 @@ Gdy zadanie ręczne zostanie przypisane użytkownikowi, musi on podjąć wobec n
 5. Zaznacz pole wyboru **Deleguj**, jeśli użytkownik ma mieć możliwość przypisania zadania do innego użytkownika.
 6. Zaznacz pole wyboru **Przypisz ponownie**, jeśli użytkownik ma mieć możliwość przypisania zadania innemu użytkownikowi w kolejce elementów roboczych.
 7. Zaznacz pole wyboru **Zwolnienie**, jeśli użytkownik ma mieć możliwość przypisania zadania do kolejki elementów roboczych. Następnie inny użytkownik może wykonać to zadanie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

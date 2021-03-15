@@ -111,3 +111,6 @@ Jeżeli do określenia kosztu własnego zwrotu użyjesz pola **Identyfikator par
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie m
 | Wszystkie grupy czynności | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla przetwarzania grupy czynności |
 | Warsztat planowania wysyłki ładunku | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla warsztatu planowania pracy |
 | Szczegóły pracy | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla strony szczegółów pracy |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

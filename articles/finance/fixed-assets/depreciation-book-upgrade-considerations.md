@@ -82,3 +82,6 @@ W obu metodach skrypt uaktualniania danych będzie również używał numeracji 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

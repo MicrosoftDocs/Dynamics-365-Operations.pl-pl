@@ -58,3 +58,6 @@ Dla pracownika, który powinien mieć możliwość przesuwania zarezerwowanych z
 Ta funkcja została także dodana wstecznie do systemu Microsoft Dynamics AX 2012 R3 i będzie dostępna w ramach zbiorczej aktualizacji CU12.
 Ponadto można ją pobrać oddzielnie jako pakiet KB 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -39,3 +39,6 @@ W przypadku próby ustawienia ilości sprzedaży (pole **SalesQty**) dla towaru 
 
 Nie można skonfigurować ilości sprzedaży dla produktów, które są pozycjami serwisu. Jeśli na przykład usługa jest oferowana do zainstalowania towaru, nie ma sensu, aby było możliwe zarejestrowanie ilości z powodu braku fizycznego towaru. Istnieje tylko usługa.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

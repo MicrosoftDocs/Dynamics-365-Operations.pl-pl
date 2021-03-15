@@ -47,3 +47,6 @@ Ta procedura zawiera instruktaż używania wag wariantów do automatycznego wype
 17. W polu Ilość wpisz wartość 1000.
 18. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

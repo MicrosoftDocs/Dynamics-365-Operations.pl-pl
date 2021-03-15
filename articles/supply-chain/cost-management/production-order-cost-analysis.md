@@ -64,3 +64,6 @@ Oddzielne raporty zapewniają informację o każdym typie transakcji. Raporty te
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

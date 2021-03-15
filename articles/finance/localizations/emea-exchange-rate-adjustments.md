@@ -96,3 +96,6 @@ Zachowanie systemu jest takie same, niezależnie od tego, czy w opcji **Korekta*
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

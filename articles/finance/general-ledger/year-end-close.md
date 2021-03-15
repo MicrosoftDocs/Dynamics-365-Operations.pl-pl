@@ -87,3 +87,6 @@ Aby uzyskać więcej informacji, zobacz [Zamknięcie księgi głównej na koniec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

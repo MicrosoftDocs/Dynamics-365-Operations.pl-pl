@@ -88,3 +88,6 @@ Aby dodać moduł blokuzaawansowanej zawartości do nowej strony i ustawić wyma
 
 [Moduł odtwarzacza wideo](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

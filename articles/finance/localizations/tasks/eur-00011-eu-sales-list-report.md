@@ -100,3 +100,6 @@ Procedura jest przeznaczona dla księgowych.
 7. Kliknij przycisk OK.
 8. W polu Wybór wybierz opcję „Zamknięte”.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

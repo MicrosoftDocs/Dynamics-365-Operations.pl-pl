@@ -39,3 +39,6 @@ Okna czasu umożliwiają optymalizowanie planowania wierszy zleceń serwisowych.
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Okna czasu](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

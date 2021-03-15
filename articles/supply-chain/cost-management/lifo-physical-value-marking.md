@@ -150,3 +150,6 @@ Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię tran
 - Każde zamknięcie magazynu zostało przedstawione w postaci czerwonej pionowej linii przerywanej z etykietą *Zamknięcie magazynu*.
 - Rozliczenia dokonane przed zamknięciem magazynu zostały przedstawione w postaci linii zakończonych strzałkami, biegnących ukośnie od przychodu do rozchodu.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Należy uwzględnić następujące informacje:
 
 - Możesz konfigurować liczniki powiązane z innym licznikiem. W tym przypadku jeśli licznik jest aktualizowany, powiązane liczniki są automatycznie aktualizowane w tym samym czasie. Aby uzyskać więcej informacji na temat sposobu konfigurowania powiązanych liczników, zobacz [Liczniki](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

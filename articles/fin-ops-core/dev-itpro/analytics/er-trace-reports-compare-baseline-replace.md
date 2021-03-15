@@ -207,3 +207,6 @@ Aby zaimportować ustawienia linii bazowej z pliku XML przechowywanego na serwer
 
 - [Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi](er-trace-reports-compare-baseline.md)
 - [Zasoby rejestratora zadań](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

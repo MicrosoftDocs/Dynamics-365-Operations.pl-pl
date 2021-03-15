@@ -58,3 +58,6 @@ Kopiując istniejący budżet można również utworzyć nowy budżet konserwacj
 
 > [!NOTE]
 > Budżet konserwacji oblicza tylko koszty budżetowe na podstawie wierszy harmonogramu konserwacji. Aby obliczyć koszty rzeczywiste za ten sam okres, można wykonać obliczenia na stronie kontrola **Formant kosztów składników majątku**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

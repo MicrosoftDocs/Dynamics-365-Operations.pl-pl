@@ -150,3 +150,6 @@ Ponadto sprzedawcy detaliczni mogą określać limit maksymalnej liczby punktów
 
     > [!NOTE]
     > W przeciwieństwie do innych rabatów okresowych, takich jak ilościowy, prosty, mieszany i progowy rabat wysyłkowy nie tworzy wierszy rabatu, tylko edytuje zmiany opłaty transportowej bezpośrednio i dodaje nazwę rabatu do opisu opłaty.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

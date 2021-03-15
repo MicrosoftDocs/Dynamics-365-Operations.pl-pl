@@ -51,3 +51,6 @@ Jest to czwarta z pięciu procedur, które razem ilustrują proces płatności d
 4. Na liście kliknij łącze w wierszu SEPA CT.
 5. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

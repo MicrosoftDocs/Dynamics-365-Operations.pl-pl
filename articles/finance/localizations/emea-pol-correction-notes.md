@@ -46,3 +46,6 @@ Jeśli dostawca wystawia firmie dokument sprzedaży, ale błędnie wpisze adres 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

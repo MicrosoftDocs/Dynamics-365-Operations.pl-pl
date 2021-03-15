@@ -99,3 +99,6 @@ Komórka robocza to specjalna postać grupy zasobów, które mogą być używane
 ## <a name="save"></a>Zapisz
 1. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

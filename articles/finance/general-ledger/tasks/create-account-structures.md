@@ -60,3 +60,6 @@ Ten przewodnik po zadaniach prowadzi przez proces tworzenia struktury konta. W k
 29. W **okienku akcji** kliknij pozycję **Aktywuj**.
 30. Kliknij **Aktywacja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Aby szybciej i łatwiej określić zadania związane z wierszem dyrektywy lokali
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

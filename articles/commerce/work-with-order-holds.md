@@ -102,3 +102,6 @@ Jeśli użytkownicy chcą usunąć wstrzymanie, ale wprowadzić dodatkowe zmiany
 ## <a name="reporting-options"></a>Opcje raportowania
 
 Wybierz kolejno opcje **Handel detaliczny i inny** \> **Zapytania i raporty** \> **Raporty biura obsługi** \> **Raport wstrzymań zamówień**, aby uruchomić raport o wstrzymaniach zamówień według zakresów dat, kodów wstrzymania lub innych pokrewnych kryteriów.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

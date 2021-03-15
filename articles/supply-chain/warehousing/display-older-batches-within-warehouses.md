@@ -39,3 +39,6 @@ Ustawienie **Wyświetl starsze partie w magazynie** jest dostępne w elementach 
 
 - W oknie **Zarządzanie magazynem** > **Ustawienia** > **Urządzenie przenośne** > **Elementy menu urządzenia przenośnego** w opcji **Użyj istniejącej pracy** ustaw wartość **Tak**, a następnie w polu **Pobierz z najstarszej partii** ustaw wartość **Ostrzegaj**. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

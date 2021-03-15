@@ -53,3 +53,6 @@ Aby uzyskać informacje dotyczące wykonywania określonych zadań na pulpicie w
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

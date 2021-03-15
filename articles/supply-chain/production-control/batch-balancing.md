@@ -186,3 +186,6 @@ Istnieją dwa wyjątki od reguły mówiącej o tym, że równoważenie partii mo
 1. Jeśli jednostka miary formuły różni się od jednostki miary zapasów substancji aktywnej, zamówienie partii nie ma zastosowania do równoważenia partii.
 
 Szarża produkcyjna, do której nie można zastosować równoważenia partii, przechodzi przez zwykły cykl przetwarzania szarż produkcyjnych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

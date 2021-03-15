@@ -54,3 +54,6 @@ Cena podstawowa lub indeks subskrypcji zostaną zaktualizowane o podaną wartoś
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

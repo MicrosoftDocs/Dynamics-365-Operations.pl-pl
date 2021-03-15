@@ -169,3 +169,6 @@ Pracownicy mogą otwierać dokument dołączony do stanowiska, wybierając odpow
 1. Pracownik pracuje z przewodnikiem w celu uzyskania informacji o zadaniu.
 
 Aby uzyskać więcej informacji na temat sposobu tworzenia, przypisywania i używania przewodników dla HoloLens, zapoznaj się z tematem [Zapewnianie przewodników Guides rzeczywistości mieszanej dla pracowników w produkcji](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

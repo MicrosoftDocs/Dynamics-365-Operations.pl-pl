@@ -56,3 +56,6 @@ W tym temacie pokazano sposób tworzenia zasad zakupów dopasowanych do procesó
 4. Kliknij przycisk **Zamknij**.
 - Teraz można skonfigurować inne reguły dla zasady zakupów. Należy zauważyć, że typ reguły nie może określać nakładających się reguł, które są aktywne w tym samym czasie w jednej zasadzie zaopatrzenia.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

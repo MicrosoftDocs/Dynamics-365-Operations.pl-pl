@@ -72,3 +72,6 @@ W tej procedurze opisano sposób konfigurowania firmy przewozowej i definiowania
 9. W polu **Aparat czasu tranzytu** wybierz opcję z menu rozwijanego.
 10. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ W poniższym scenariuszu działanie przeniesienia w zadaniu Kanban wycofania jes
 
 Po zużyciu ilości Kanban w lokalizacji wejściowej produkcji ilość Kanban jest zgłaszana jako pusta i do przepływu jest dodawana nowa karta Kanban. Po utworzeniu zadania Kanban jest dodawany wiersz grupy czynności do grupy czynności Kanban. Podczas przetwarzania grupy czynności Kanban jest tworzona praca magazynowa dla pobrania Kanban. Pracownik magazynu przetwarza pracę pobrania Kanban i otrzymuje instrukcję, aby pobrać materiał dla zadania Kanban z lokalizacji w magazynie. Gdy ten pracownik magazynu potwierdzi pobranie, zadanie Kanban jest automatycznie wypełniane i pracownik otrzymuje instrukcję, aby odłożyć materiał do lokalizacji wejściowej produkcji.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

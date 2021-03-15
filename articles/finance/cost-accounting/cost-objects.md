@@ -43,3 +43,6 @@ Aby ułatwić sobie importowania elementów członkowskich wymiarów obiektów k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ W tej procedurze pokazano sposób przypisywania stan cyklu życia produktu do zw
 5. W polu Stan cyklu życia produktu wprowadź lub wybierz wartość.
 6. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

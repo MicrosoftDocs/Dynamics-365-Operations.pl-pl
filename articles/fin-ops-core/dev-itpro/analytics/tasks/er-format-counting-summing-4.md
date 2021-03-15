@@ -103,3 +103,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 21. Kliknij przycisk Otwórz.
     * Przejrzyj utworzony plik XML zawierający szczegóły inwentaryzacji i sumowania, które zostały zebrane podczas wykonywania wybranej konfiguracji.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

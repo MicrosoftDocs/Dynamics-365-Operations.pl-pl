@@ -64,3 +64,6 @@ Szacowanie kosztów może także dostarczać następujących informacji:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

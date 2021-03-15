@@ -50,3 +50,6 @@ Amortyzację środków trwałych można uruchomić w wielu firmach w jednym krok
 5. Kliknij opcję Utwórz arkusz.
 6. Wybierz kolejno opcje Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

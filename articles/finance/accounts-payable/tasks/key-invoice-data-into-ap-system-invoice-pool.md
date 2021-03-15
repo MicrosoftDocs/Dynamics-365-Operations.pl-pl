@@ -67,3 +67,6 @@ W tym temacie opisano sposób używania rejestru faktur do tworzenia faktur. Nas
 13. Wybierz **transakcje**.
 14. Zaznacz utworzoną przez siebie fakturę. Naliczenie w rejestrze faktur zostało wycofane, a następnie zaksięgowane na odpowiednim koncie wydatków.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

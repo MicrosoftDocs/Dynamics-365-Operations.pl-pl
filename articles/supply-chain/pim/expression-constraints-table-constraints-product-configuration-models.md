@@ -253,3 +253,6 @@ Nie można używać zarezerwowanych słów kluczowych jako nazwy zamiennej dla a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

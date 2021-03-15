@@ -44,3 +44,6 @@ Typ żądania konserwacji określa przynależność do grupy stanów cyklu życi
 Na poniższej ilustracji pokazano przykład strony **Typy żądań konserwacji**.
 
 ![Strona Typy żądania konserwacji](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

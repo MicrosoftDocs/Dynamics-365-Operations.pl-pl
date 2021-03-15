@@ -110,3 +110,6 @@ Arnie zmienia wartość w polu **Użyj rabatu gotówkowego** z powrotem na **Nor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

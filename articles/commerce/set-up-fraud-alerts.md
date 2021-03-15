@@ -68,3 +68,6 @@ Zamówienie zostanie zapisane, ale z flagą **Nie przetwarzaj**. Ta flaga pozwal
 Aby zobaczyć podgląd i zarządzać zamówieniami, które są wstrzymane ze względu na kontrolę pod kątem oszustwa, przejdź do **Sprzedaży detalicznej i innej** \> **Odbiorców** \> **Wstrzymane zamówienia**. Na stronie **Wstrzymania zamówień** wybierz pozycję na liście, a następnie kliknij opcję **Wstrzymanie zamówienia**, aby zobaczyć bardziej szczegółowy widok zawierający m.in. informacje o przyczynie wstrzymania. Na skróconej karcie **Szczegóły oszustwa** można obejrzeć systematyczne kryteria oszustwa, dla których znaleziono pasujące elementy w zamówieniu, oraz zastosowane wyniki. Jeśli zamówienie zostało wstrzymane ręcznie, można przejrzeć wszystkie komentarze wprowadzone przez użytkownika, który nałożył zawieszenie, zaglądając do sekcji **Notatki dotyczące oszustwa** na skróconej karcie **Uwagi**.
 
 Aby uzyskać więcej informacji na temat pracy z funkcją wstrzymywania zamówień, zobacz [Wstrzymania zamówień](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

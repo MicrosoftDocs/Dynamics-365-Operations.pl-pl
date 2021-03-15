@@ -229,3 +229,6 @@ Poniższy wykres obrazuje tę serię transakcji ze skutkami zastosowania modelu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

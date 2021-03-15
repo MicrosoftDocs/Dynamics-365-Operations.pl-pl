@@ -47,3 +47,6 @@ Ta procedura służy do zarządzania źródłem danych księgi głównej dla ksi
 14. W polu Warstwa księgowania zaznacz opcję Bieżąca.
 15. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

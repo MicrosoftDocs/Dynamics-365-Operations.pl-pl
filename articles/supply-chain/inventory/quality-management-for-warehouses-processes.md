@@ -621,3 +621,6 @@ Istnieje możliwość skonfigurowania pracy i danych lokalizacji dla magazynu 51
 
 > [!NOTE]
 > Rozważ dodanie wpisu jakości do elementu menu urządzenia przenośnego, w którym w kodzie działania jest *Wyświetl listę otwartych prac*. Na przykład zobacz pozycje menu urządzenia mobilnego o nazwie **Lista prac** w danych demonstracyjnych. Najpierw dodaj klasę roboczą *Zlecenie kontroli jakości* do elementu menu skierowanego do użytkownika, ponieważ ta klasa robocza jest wymagana do wyświetlenia pracy na liście prac. Następnie dodaj klasę roboczą *Zlecenie kontroli jakości* do elementu menu **Lista prac**. Użytkownicy, którzy mają dostęp do listy prac, będą mogli pobierać i przetwarzać pracę, która jest automatycznie generowana na podstawie weryfikacji zlecenia kontroli jakości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -38,3 +38,6 @@ W tej procedurze pokazano, jak dodać nowe obliczenie do modelu konfiguracji pro
 4. Kliknij przycisk Zamknij.
 5. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

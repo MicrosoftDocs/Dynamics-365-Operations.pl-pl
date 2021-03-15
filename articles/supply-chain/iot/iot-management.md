@@ -61,3 +61,6 @@ Istnieje możliwość symulowania sygnałów urządzeń w fabryce. Aby uzyskać 
 + [Łączenie zestawu IoT DevKit AZ3166 z usługą Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-arduino-iot-devkit-az3166-get-started)
 + [Łączenie symulatora online Raspberry Pi z Azure IoT Hub (Node.js)](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 + [Omówienie akceleratora rozwiązania do symulacji urządzenia](https://docs.microsoft.com/azure/iot-accelerators/iot-accelerators-device-simulation-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

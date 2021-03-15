@@ -60,3 +60,6 @@ Jeśli zamierzasz być poza biurem lub nie będziesz mieć możliwości wykonywa
 8. W polu **Data/godzina zakończenia** wprowadź datę i godzinę.
 9. Aby aktywować regułę delegowania, zaznacz pole wyboru **Włączone**. 
 10. W polu **Komentarz** wprowadź komentarz wyjaśniający, dlaczego delegujesz elementy pracy.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

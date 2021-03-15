@@ -66,3 +66,5 @@ Projekty rekrutacji ułatwiają zarządzanie procesem rekrutacji. Po utworzeniu 
 32. Wybierz **Stan projektu rekrutacji**.
 33. Wybierz **Start**. Stan **Rozpoczęty** oznacza, że projekt jest gotowy do przyjmowania wniosków.  
 34. Kliknij przycisk **OK**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

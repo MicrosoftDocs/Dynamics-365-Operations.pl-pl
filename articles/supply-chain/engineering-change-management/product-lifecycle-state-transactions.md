@@ -75,3 +75,6 @@ Następujące pola są dostępne dla każdego procesu wymienionego na skróconej
 | Zasady | Wybierz jedną z następujących wartości, aby określić, czy i w jaki sposób bieżący proces będzie dozwolony dla produktów znajdujących się w tym stanie cyklu życia:<ul><li>**Włączone** — proces biznesowy jest dozwolony.</li><li>**Zablokowano** — proces nie jest dozwolony. Jeśli użytkownik spróbuje użyć procesu na produkcie, który jest w tym stanie cyklu życia, system zablokuje próbę i zamiast tego wyświetli błąd. Na przykład można blokować produkty wycofane z eksploatacji od zakupu.</li><li>**Włączone z ostrzeżeniem** — proces jest dozwolony, ale zostanie wyświetlone ostrzeżenie. Na przykład możesz chcieć, aby prototypowy produkt został umieszczony w zleceniu produkcyjnym, które jest tworzone przez dział badań i rozwoju. Jednak inne działy powinny mieć świadomość, że nie powinni jeszcze generować produktu.</li></ul> |
 
 Jeśli dodajesz więcej reguł stanu cyklu życia jako dostosowanie, możesz wyświetlić te reguły w interfejsie użytkownika (UI), wybierając **Odśwież procesy** w górnym panelu. Przycisk **Odśwież procesy** jest dostępny tylko dla administratorów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Jeśli wszystkie wiersze zlecenia serwisowego są oznaczone jako **Zaksięgowano
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

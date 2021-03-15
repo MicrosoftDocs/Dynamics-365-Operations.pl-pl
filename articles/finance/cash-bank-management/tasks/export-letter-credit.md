@@ -139,3 +139,6 @@ Przed uruchomieniem tej procedury wykonaj procedury „Konfigurowanie instrument
 3. Na liście kliknij łącze w wybranym wierszu.
     * Sprawdź, czy Stan wysyłki = Płatność otrzymana, a kwota salda = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

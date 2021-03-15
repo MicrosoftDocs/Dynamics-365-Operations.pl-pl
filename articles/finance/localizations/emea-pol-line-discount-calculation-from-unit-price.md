@@ -52,3 +52,6 @@ Parametr **Obliczanie rabatu liniowego** wpływa na następujące dokumenty:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

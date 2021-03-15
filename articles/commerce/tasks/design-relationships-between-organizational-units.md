@@ -62,3 +62,6 @@ Ta procedura prowadzi przez proces projektowania relacji między jednostkami org
 29. Kliknij przycisk Publikuj.
 30. Kliknij przycisk Zamknij.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

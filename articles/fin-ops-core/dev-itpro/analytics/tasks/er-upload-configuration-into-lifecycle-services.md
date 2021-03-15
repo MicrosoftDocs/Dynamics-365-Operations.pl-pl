@@ -145,3 +145,6 @@ W tym przykładzie utworzysz konfigurację dla przykładowej firmy Litware, Inc.
     Przekazana konfiguracja ER powinna zostać wyświetlona na liście.
 
     Należy zauważyć, że przekazaną konfigurację usługi LCS można zaimportować do innego wystąpienia, jeśli dostawcy mają dostęp do tego projektu usługi LCS.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

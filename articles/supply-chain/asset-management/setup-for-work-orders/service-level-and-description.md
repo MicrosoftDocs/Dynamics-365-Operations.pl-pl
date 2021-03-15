@@ -55,3 +55,6 @@ Podczas tworzenia zlecenia pracy można określić dla niego poziomy usług i do
 2. Wybierz pozycję **Nowy**.
 3. W polu **Opis** wprowadź opis.
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
 3. W polu **Środowisko** wprowadź nazwę środowiska dodatkowego fakturowania elektronicznego.
 4. Wybierz przycisk **Zapisz** i zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

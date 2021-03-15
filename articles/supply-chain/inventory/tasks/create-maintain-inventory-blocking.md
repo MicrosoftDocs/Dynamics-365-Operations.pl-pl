@@ -51,3 +51,6 @@ W tej procedurze pokazano, jak za pomocą funkcji blokowania zapasów zapobiec r
 2. Kliknij przycisk **Tak**.
 3. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Ponieważ dane z tabeli **Produkty** zaprojektowano tak, aby przepływały w jed
 ## <a name="quote-and-quote-product-tables"></a>Tabele Oferta i Produkty z oferty
 
 W przypadku tabeli **Oferta** postępuj zgodnie z instrukcjami w sekcji [Tabela Zamówienie](#order-table) wcześniej w tym temacie. W przypadku tabeli **Produkt z oferty** postępuj zgodnie z instrukcjami w sekcji [Tabela Produkty z zamówienia](#order-products-table).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

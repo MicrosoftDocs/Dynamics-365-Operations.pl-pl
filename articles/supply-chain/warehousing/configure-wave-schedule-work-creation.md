@@ -110,3 +110,6 @@ Strona **szczegółów planowanej pracy** (**Zarządzanie magazynem \> Praca \> 
 Aby wyświetlić zadania wsadowe przetwarzania grup czynności, wybierz **Zadania wsadowe** w okienku akcji na stronie **Wszystkie grupy czynności**.
 
 W tym miejscu można wyświetlić wszystkie szczegóły zadania wsadowego dla każdego z identyfikatorów zadań wsadowych.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ W celach testowych wykonaj mapowanie formatu z użyciem pliku SampleIncomingMess
 2. Kliknij przycisk OK.
     * Przejrzyj dane wyjściowe w formacie XML, które reprezentują dane zaimportowane z wybranego pliku i przeniesione do modelu danych. Należy zauważyć, że tylko 3 wiersze zaimportowanego pliku TXT zostały przetworzone. Nieprawidłowy kod IBAN w wierszu 4 został pominięty, a w dzienniku informacyjnym pojawił się komunikat o błędzie.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

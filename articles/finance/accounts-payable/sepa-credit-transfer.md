@@ -125,3 +125,6 @@ Podczas generowania płatności zostanie wygenerowany plik płatności, a użytk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

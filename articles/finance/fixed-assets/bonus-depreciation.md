@@ -64,3 +64,6 @@ Podwyższenie amortyzacji jest wprowadzane jako wartość procentowa lub jako kw
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

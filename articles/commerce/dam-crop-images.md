@@ -65,3 +65,6 @@ Po zakończeniu przycinania niestandardowego modyfikacje obrazów zaczną obowi�
 [Dostosowywanie punktów ogniskowych obrazu](dam-custom-focal-point.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

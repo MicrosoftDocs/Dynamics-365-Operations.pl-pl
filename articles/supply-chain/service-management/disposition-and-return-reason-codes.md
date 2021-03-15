@@ -53,3 +53,6 @@ Przypisz kod dyspozycji po odebraniu towaru lub podczas kontroli fizycznej zwró
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

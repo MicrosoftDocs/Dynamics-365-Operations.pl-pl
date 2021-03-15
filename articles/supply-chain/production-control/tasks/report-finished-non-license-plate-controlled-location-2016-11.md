@@ -61,3 +61,6 @@ Ten przewodnik po zadaniach zawiera przykład zgłaszania wyrobu gotowego do lok
 18. Kliknij opcję Szczegóły pracy.
     * Po zgłoszeniu zlecenia produkcyjnego jako gotowego nie została wygenerowana żadna praca odłożenia. Dzieje się tak, ponieważ zdefiniowano zasadę pracy, która blokuje generowanie pracy, gdy produkt L0101 jest zgłaszany jako gotowy do lokalizacji 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

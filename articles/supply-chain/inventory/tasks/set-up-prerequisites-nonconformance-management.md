@@ -79,3 +79,6 @@ Ten temat umożliwia aktywowanie procesów zarządzania brakiem zgodności. Brak
 4. W polu **Opis** wpisz wartość.
 5. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

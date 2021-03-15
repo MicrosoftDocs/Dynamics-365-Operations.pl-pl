@@ -36,3 +36,6 @@ Rejestrowanie i księgowanie wszystkich transakcji zleceń serwisowych odbywa si
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

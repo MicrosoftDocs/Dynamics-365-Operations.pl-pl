@@ -61,3 +61,6 @@ Towar jest dodawany do wiersza sprzedaży w celu bezpośredniej dostawy z magazy
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Firma Microsoft oceniła ten błąd i ustaliła, że jest to ograniczenie funkcji. Obecnie usługa WMS nie obsługuje dostawy bezpośredniej. Dlatego też, aby można było skorzystać z dostawy bezpośredniej, należy wybrać pozycję i magazyn spoza WMS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

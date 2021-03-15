@@ -42,3 +42,6 @@ Jako metodę stawki indeksowanej należy wybrać opcję **Różnica wartości st
 
 - Wybierz metodę **Różnica wartości stawki indeksowanej**, aby obliczać nową opłatę z tytułu wynajmu na podstawie różnicy między stawką indeksowaną w dniu rozpoczęcia a najbardziej aktualną stawką indeksowaną. Stawkę indeksowaną ustawia się w polu **Stawka indeksowana (%)**.
 - Wybierz metodę **Wartość stawki indeksowanej**, aby obliczać opłatę z tytułu wynajmu przy użyciu wartości procentowej określonej w polu **Stawka indeksowana (%)**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

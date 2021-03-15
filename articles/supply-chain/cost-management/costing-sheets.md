@@ -49,3 +49,6 @@ Arkusz wyceny jest wyświetlany jako część strony **Obliczanie kosztu pozycji
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

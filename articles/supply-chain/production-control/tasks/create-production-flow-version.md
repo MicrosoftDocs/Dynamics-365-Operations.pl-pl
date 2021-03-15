@@ -63,3 +63,6 @@ Ta procedura skupia się na tworzeniu nowej wersji przepływu produkcji. Aby mo�
     * Wprowadź liczbę dni w polu Okres rzeczywistego czasu cyklu. Okres rzeczywistego czasu cyklu jest liczbą dni agregowania zadań od faktycznej minuty wstecz, aby obliczyć rzeczywisty czas cyklu. Wartość można zmienić w dowolnym momencie i jest ona używana tylko do obliczania rzeczywistych czasów cykli.  
 13. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

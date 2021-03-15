@@ -239,3 +239,6 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 1. Wybierz opcję **Gotowe**.
 
     ![Dodawanie załącznika do żądania konserwacji](media/am-mobile-10.png "Dodawanie załącznika do żądania konserwacji")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

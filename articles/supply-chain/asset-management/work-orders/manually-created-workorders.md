@@ -165,3 +165,6 @@ Na poniższej ilustracji przedstawiono przykład okna dialogowego **Tworzenie zl
 >[!NOTE]
 >Jeśli chcesz, żeby zlecenia pracy były tworzone automatycznie, możesz zaplanować zadania planu konserwacji lub ustawić „Automatyczne tworzenie” [planów konserwacji](../preventive-and-reactive-maintenance/maintenance-plans.md) lub [serii czynności konserwacyjnych](../preventive-and-reactive-maintenance/maintenance-rounds.md) dla składnika majątku. Zlecenia pracy utworzone na podstawie żądań konserwacji na stronie listy **Wszystkie harmonogramy konserwacji** mają typy zadań konserwacji, które są wybrane w żądaniach konserwacji.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

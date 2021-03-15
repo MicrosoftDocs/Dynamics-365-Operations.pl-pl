@@ -73,3 +73,6 @@ Przed przetwarzaniem przyjęcia produktów należy potwierdzić zamówienie zaku
 6. Zwiń sekcję **Wiersze**.
 7. Wybierz **OK**, aby zaksięgować przyjęcie.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

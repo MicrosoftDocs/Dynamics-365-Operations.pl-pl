@@ -59,3 +59,6 @@ Podczas przypisywania użytkowników do ról reguły podziału obowiązków są 
 
 > [!NOTE]
 > Jeśli dla tego samego użytkownika zostanie wymienionych kilka konfliktów, wybierz rekord użytkownika i oszacuj przypisane role na stronie **Użytkownicy**. Aby uniknąć konfliktu, należy sprawdzić poprawność każdej reguły po jej dodaniu lub zmodyfikowaniu.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

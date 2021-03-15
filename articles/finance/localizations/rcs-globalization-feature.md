@@ -251,3 +251,6 @@ Użytkownicy usług globalizacji mogą zarządzać środowiskiem, aby skonfiguro
 10. Wybierz opcję **Publikuj**, aby opublikować środowisko.
 
     ![Opublikowane środowisko](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

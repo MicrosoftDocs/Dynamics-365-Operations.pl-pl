@@ -187,3 +187,6 @@ Tworzysz nowy model danych dla wybranej konfiguracji. Ta wersja konfiguracji bę
 65. Kliknij przycisk Zapisz.
 66. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

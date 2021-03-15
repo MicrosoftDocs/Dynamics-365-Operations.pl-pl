@@ -254,3 +254,6 @@ Uruchom to mapowanie formatu w celach testowych. Użyj pobranego wcześniej plik
 27. Zamknij stronę.
 28. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

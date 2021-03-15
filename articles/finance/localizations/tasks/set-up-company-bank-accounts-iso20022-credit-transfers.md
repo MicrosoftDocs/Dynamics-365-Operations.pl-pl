@@ -51,3 +51,6 @@ Jest to druga z pięciu procedur, które razem ilustrują proces płatności dos
 4. W polu Konto bankowe wprowadź lub wybierz wartość.
 5. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Aby dołączyć partnerów biznesowych i użytkowników w centrali Commerce, wyk
 [Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego](quantity-limits.md)
 
 [Omówienie sekwencji identyfikatorów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

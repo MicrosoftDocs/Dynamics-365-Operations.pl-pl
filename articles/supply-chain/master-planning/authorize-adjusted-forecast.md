@@ -50,3 +50,6 @@ Bardzo ważne jest, aby zrozumieć, jak działa pole wyboru **Zapisz korekty rę
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

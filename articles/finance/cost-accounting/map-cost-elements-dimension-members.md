@@ -52,3 +52,6 @@ Definicje mapowania wymiarów składników kosztów można w każdej chwili zakt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

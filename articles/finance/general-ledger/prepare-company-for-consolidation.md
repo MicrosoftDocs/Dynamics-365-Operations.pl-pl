@@ -67,3 +67,6 @@ Firma skonsolidowanej jest teraz skonfigurowana jako zadanie okresowe **Konsolid
 
 > [!NOTE]
 > Zanim będzie można przeprowadzić konsolidację, należy przygotować do niej oddziały firmy. Aby zapoznać się z dodatkowymi informacjami, zobacz [Konfigurowanie firmy zależnej do konsolidacji](set-up-subsidiary-company-for-consolidation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

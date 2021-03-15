@@ -302,3 +302,6 @@ Aby utworzyć stronę szczegółów faktury w narzędziu do tworzenia witryn, wy
 [Moduł bloku zawartości](../add-hero-module.md)
 
 [Kolekcja produktów](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

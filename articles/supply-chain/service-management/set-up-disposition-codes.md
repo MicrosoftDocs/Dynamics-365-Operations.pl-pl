@@ -56,3 +56,6 @@ Można także skonfigurować kod przyczyny pomagający w wyjaśnieniu przyczyn z
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

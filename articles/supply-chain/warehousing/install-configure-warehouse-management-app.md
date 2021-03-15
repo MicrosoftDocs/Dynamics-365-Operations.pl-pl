@@ -289,3 +289,6 @@ Jeśli urządzenie zostanie zgubione lub dostanie się w niepowołane ręce, nal
 1. Upewnij się, że identyfikator klienta jest zgodny z identyfikatorem klienta zanotowanym w kroku 2.
 1. Na pasku narzędzi wybierz pozycję **Usuń**.
 1. W wyświetlonym oknie komunikatu potwierdzenia wybierz przycisk **Tak**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

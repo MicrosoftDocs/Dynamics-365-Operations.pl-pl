@@ -280,3 +280,6 @@ Teraz, gdy funkcja *Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji*
     ![Lokalizacja stanowiska 1](media/LocationLicensePlatePositioning.png "Lokalizacja stanowiska 1")
 
 1. Wprowadź identyfikator numeru identyfikacyjnego, który został utworzony dla danej lokalizacji, a następnie postępuj zgodnie z instrukcjami, aby pobrać zamówienie sprzedaży.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

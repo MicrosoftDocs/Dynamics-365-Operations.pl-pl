@@ -108,3 +108,6 @@ Po przejrzeniu zmian w predefiniowanym szablonie należy wykonać jedną z nast�
 [Omówienie szablonów i układów](templates-layouts-overview.md)
 
 [Praca z szablonami](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

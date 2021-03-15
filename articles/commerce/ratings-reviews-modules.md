@@ -99,3 +99,6 @@ Moduł listy recenzji produktów zawiera miejsce, w którym można dodać moduł
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

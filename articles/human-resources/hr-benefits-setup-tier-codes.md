@@ -41,3 +41,6 @@ Program Dynamics 365 Human Resources używa kodów warstw ze stawkami świadcze�
    | **Opis** | Opis kodu warstwy świadczenia. |
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Analiza czasu potrzebnego na wykonanie poszczególnych procesów pracy może uł
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

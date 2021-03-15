@@ -80,3 +80,6 @@ Zasób operacyjny wykonuje działania projektu lub procesu produkcji. Ta procedu
 4. W polu Lokalizacja wejściowa wprowadź lub wybierz wartość.
     * Umożliwia określenie lokalizacji w magazynie, z której zasób operacyjny zużywa materiały.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

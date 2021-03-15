@@ -64,3 +64,6 @@ Język użytkownika punktu sprzedaży ustawia się w obszarze **Wszyscy pracowni
 | **Firma** | Domyślna                    | Domyślna                                                       |
 | **Sklep**   | Zastępuje ustawienie dla firmy          | Zastępuje ustawienie dla firmy                                             |
 | **Użytkownik**    | Zastępuje ustawienie dla sklepu lub firmy | Nigdy                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

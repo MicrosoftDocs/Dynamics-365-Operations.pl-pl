@@ -48,3 +48,6 @@ W tym przewodniku po zadaniach pokazano sposób rejestrowania faktur dostawców,
 12. Kliknij przycisk **Księguj**.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

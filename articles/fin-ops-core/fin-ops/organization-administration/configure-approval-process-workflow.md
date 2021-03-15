@@ -183,3 +183,6 @@ Proces zatwierdzania składa się z kroków zatwierdzania. Należy wykonać poni
 1. W edytorze przepływu pracy kliknij dwukrotnie procesu zatwierdzania. Edytor przepływu pracy wyświetli etapy procesu zatwierdzania.
 2. Aby dodać krok zatwierdzania, przeciągnij go z obszaru **Elementy przepływu pracy** na kanwę.
 3. Aby skonfigurować krok zatwierdzania, zobacz [Konfigurowanie kroków zatwierdzania w przepływie pracy](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

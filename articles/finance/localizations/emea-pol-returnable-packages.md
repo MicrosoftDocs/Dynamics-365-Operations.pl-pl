@@ -106,3 +106,6 @@ Aby wprowadzić informacje o opakowaniach zwracanych przez odbiorców, kliknij k
 Po zakończeniu wprowadzania informacji o zwrotach opakowań kliknij przycisk **Księguj**, aby zaksięgować transakcję zwrotu. Na stronie księgowania należy ustawić opcję **Drukuj** na **Tak**, aby wydrukować raport **Potwierdzenie zwrotu opakowań**. Aby ponowne wydrukować raport potwierdzenia później, można kliknąć przycisk **Drukuj** na stronie **Potwierdzenie zwrotu opakowań**. Użytkownicy mogą wysyłać zapytania o transakcje opakowaniami zwrotnymi. Kliknij kolejno opcje **Zarządzanie zapasami** &gt; **Ustawienia** &gt; **Materiały opakowań** &gt; **Opakowania zwrotne**, a następnie na karcie **Transakcje** kliknij opcję **Transakcje**, a zostanie otwarta strona **Transakcje opakowań zwrotnych**. Transakcje na opakowaniach zwrotnych będą miały wartości ujemne w polu **Liczba opakowań**. Kliknij opcję **Załącznik**, aby wyświetlić szczegóły wybranej transakcji. Kliknij przycisk **Drukowanie**, aby wydrukować raport **Potwierdzenie zwrotu opakowań**.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

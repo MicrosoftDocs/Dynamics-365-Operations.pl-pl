@@ -47,3 +47,6 @@ W obszarze roboczym **Zarządzanie funkcjami** włącz następującą funkcję: 
 Na poniższej ilustracji przedstawiono przykład generowanego raportu. Raport wskazuje, że kod raportowania **101** ma walutę **EUR**, jeśli w polu **Waluta podatku** jest ustawiona wartość **EUR** dla kodu podatku, do którego przypisano kod raportowania.
 
 ![Przykład raportu Płatności podatku według kodu](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

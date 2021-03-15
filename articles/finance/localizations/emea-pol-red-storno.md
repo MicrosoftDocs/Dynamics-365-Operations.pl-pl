@@ -81,3 +81,6 @@ Na stronie **Parametry modułu rozrachunków z dostawcami** w obszarze **Faktura
  8. W polu **Data faktury** wprowadź datę.  
  9. Kliknij przycisk **Księguj**.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

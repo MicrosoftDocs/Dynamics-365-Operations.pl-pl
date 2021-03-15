@@ -73,3 +73,6 @@ Ta procedura jest zorientowana na konfigurację potrzebną do utworzenia reguły
 2. Kliknij opcję Wyświetl drzewo oznaczania transakcji.
     * Zwróć uwagę, że jest tworzona karta Kanban z taką samą ilością, jak ilość w wierszu sprzedaży. Można również wyświetlić wydania materiałów potrzebnych do wytworzenia produktu L0050. Jest to ostatni krok w tej procedurze.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

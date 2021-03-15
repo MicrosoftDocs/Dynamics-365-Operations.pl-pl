@@ -88,3 +88,6 @@ Następujące jednostki zostały użyte jako podstawa w pakiecie zawartości roz
 - ChartofAccounts
 
 Te jednostki zostały użyte do utworzenia obliczanych miar w modelu danych. Obliczane miary są używane do obliczania kluczowych wskaźników wydajności (KPI) i generowania raportów, które są używane w pakiecie zawartości. Domyślnie pakiet zawartości grupuje dane z trzech ostatnich lat i jednego roku przyszłego. Aby uwzględnić dodatkowe obliczenia w raportach i pulpicie nawigacyjnym, można zmodyfikować [skoroszyt programu Microsoft Excel](https://docs.microsoft.com/dynamics/s-e/). Ten skoroszyt jest domyślnym modelem danych, który został użyty do utworzenia pakietu zawartości.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

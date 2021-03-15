@@ -118,3 +118,6 @@ Aby przejrzeć historię przepływu pracy dla arkusza:
 1. W okienku nawigacji rozwiń **Zarządzanie zapasami \> Wpisy w arkuszu \> Elementy**, a następnie wybierz typ arkusza magazynowego.
 1. Otwórz odpowiedni arkusz.
 1. W okienku akcji wybierz przycisk **Przepływu pracy**, aby otworzyć okno dialogowe rozwijane. Wybierz **Historia przepływu pracy**. Aby uzyskać więcej informacji, zobacz [Wyświetl historię przepływu pracy](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

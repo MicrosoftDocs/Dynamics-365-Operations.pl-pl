@@ -72,3 +72,6 @@ Ta procedura dotyczy wszystkich krajów/regionów Europy. Zadanie utworzono przy
 37. Kliknij kartę Ogólne.
     * Znajdź nowo utworzony wiersz i upewnij się, że nadawca wysłał towary z Włoch.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

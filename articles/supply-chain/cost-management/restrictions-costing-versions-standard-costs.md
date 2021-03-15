@@ -50,3 +50,6 @@ Dane o kosztach standardowych towaru mogą być kopiowane do rekordów innej wer
 
 [Przygotowanie do zarządzania kosztami standardowymi wyprodukowanych towarów](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

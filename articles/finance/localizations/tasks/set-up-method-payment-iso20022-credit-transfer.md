@@ -47,3 +47,6 @@ Jest to trzecia z pięciu procedur, które razem ilustrują proces płatności d
 10. W polu Konto płatności wpisz wartość „DEMF OPER”.
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Można dodać następujące obliczenia:
 
 - *ResultDecimal* = *Dane wejściowe* × *Procent* ÷ 100
 - *ResultInteger* = *ResultDecimal*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

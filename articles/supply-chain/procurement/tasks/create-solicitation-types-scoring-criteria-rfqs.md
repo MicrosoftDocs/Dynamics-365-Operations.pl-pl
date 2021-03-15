@@ -51,3 +51,6 @@ W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć
 8. Kliknij przycisk OK.
 9. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

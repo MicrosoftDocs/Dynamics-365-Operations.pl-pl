@@ -43,3 +43,6 @@ W tym temacie opisano sposób zatwierdzania dostawców dla poszczególnych kateg
 13. Zaznacz wartość **Nie** w polu **Dziedzicz dostawców po kategorii nadrzędnej:**.
 14. Zaznacz wartość **Tak** w polu **Dziedzicz dostawców po kategorii nadrzędnej:**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

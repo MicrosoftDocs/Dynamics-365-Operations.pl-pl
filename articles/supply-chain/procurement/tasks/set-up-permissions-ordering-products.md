@@ -44,3 +44,6 @@ W tym temacie pokazano, jak przyznać pracownikom uprawnienia do przygotowywania
 2. Za pomocą szybkiego filtru znajdź pracownika, który właśnie został dodany jako zleceniodawca.
 3. Zaznacz zleceniodawcę. Na liście wystawców znajdują się osoby uprawnione do zamawiania towarów w imieniu zleceniodawcy wybranego w lewym okienku.  W tym miejscu można dodawać kolejnych wystawców. Ten widok umożliwia również przyznanie uprawnień zleceniodawcy pozwalających tworzyć zapotrzebowania w firmach i jednostkach operacyjnych, które nie są podstawowymi firmami ani jednostkami operacyjnymi danej osoby.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

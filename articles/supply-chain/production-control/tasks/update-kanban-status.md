@@ -47,3 +47,6 @@ Gdy karta Kanban zostanie opróżniona przez pomyłkę lub otrzymana karta Kanba
 2. Na liście oznacz wybrany wiersz.
     * Zwróć uwagę, że pole Stan magazynowej jednostki obsługi ma wartość Opróżniono.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

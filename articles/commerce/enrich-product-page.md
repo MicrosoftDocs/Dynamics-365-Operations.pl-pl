@@ -74,3 +74,6 @@ Aby wzbogacić stronę produktu, należy wykonać następujące kroki.
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
 [Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

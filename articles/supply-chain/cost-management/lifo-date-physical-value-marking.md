@@ -156,3 +156,6 @@ Poniższa ilustracja pokazuje efekty modelu magazynu LIFO, gdy używane jest ozn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

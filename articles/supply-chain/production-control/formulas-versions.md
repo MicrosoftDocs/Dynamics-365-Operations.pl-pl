@@ -70,3 +70,6 @@ Funkcja Skalowalne jest dostępna tylko wtedy, gdy wszystkie składniki towaru w
 
 ## <a name="use-step-consumption"></a>Korzystanie ze zużycia etapowego
 Zużycie etapowe eliminuje konieczność wprowadzania ilości na karcie **Wiersz formuły** dla składnika. Zamiast tego konfigurowana jest funkcja Zużycie etapowe z wartościami **Od serii** i **Ilość**. Wybierane są informacje ze zużycia etapowego na rekord serii, które są zgodne z ilością w zamówieniu partii. Zużycie etapowe jest przydatne, gdy wielkość zużycia nie jest liniowa względem rozmiaru zamówienia partii i zwiększa wymaganie dopiero po osiągnięciu określonego progu ilości. Aby włączyć tę funkcję dla nowej formuły, w grupie **Obliczanie zużycia** zmień ustawienie formuły dla odpowiedniego składnika ze **Standardowe** na **Etapowe**. Tę metodę zużycia należy określić na karcie **Konfiguracja** strony **Wiersz formuły**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

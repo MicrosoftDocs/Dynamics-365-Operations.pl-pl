@@ -94,3 +94,6 @@ Można wycofać odsetki transakcji za pomocą przycisku **Historia** na karcie *
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

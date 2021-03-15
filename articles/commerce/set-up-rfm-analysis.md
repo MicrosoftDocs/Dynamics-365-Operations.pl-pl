@@ -96,3 +96,6 @@ Należy użyć tej procedury w celu wyświetlenia lub wyczyszczenia historii rek
 2. Na stronie **Analiza RFM** wybierz rekord do wyświetlenia.
 3. Aby wyświetlić historię rekordu, wybierz kartę skróconą **Historia**.
 4. Aby wyczyścić historię rekordu, wybierz opcję **Wyczyść historię**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

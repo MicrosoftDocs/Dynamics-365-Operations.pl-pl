@@ -42,3 +42,6 @@ W tym temacie pokazano sposób ręcznego tworzenia kodu kreskowego przy użyciu 
 12. Wybierz opcję **Zapisz**.
 13. Zamknij stronę. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

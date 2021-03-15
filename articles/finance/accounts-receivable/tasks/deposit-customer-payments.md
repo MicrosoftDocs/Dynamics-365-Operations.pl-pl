@@ -47,3 +47,6 @@ Wpłacanie płatności od odbiorców. W zadaniu wykorzystano firmę demonstracyj
 17. Kliknij przycisk **OK**. Pierwsza strona jest używana do utworzenia dokumentu wpłaty.  
 18. Kliknij przycisk **OK**. Drugim krokiem jest wydrukowanie dokumentu wpłaty, ale ten krok nie jest wymagany.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

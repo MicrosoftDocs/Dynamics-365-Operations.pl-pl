@@ -63,3 +63,6 @@ Moduł selektor witryn można dodać do [modułu nagłówka](author-header-modul
 [Moduł szlaków nawigacyjnych](add-breadcrumb.md)
 
 [Moduł menu nawigacji](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

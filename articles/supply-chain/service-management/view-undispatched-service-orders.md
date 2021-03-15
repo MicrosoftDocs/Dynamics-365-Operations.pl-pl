@@ -60,3 +60,6 @@ W tym temacie opisano sposób wyświetlania działań w zleceniu serwisowym, kt�
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

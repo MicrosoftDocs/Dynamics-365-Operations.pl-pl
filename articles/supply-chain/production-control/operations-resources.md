@@ -84,3 +84,6 @@ Podczas definiowania działania, takiego jak operacja marszruty lub prognoza god
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

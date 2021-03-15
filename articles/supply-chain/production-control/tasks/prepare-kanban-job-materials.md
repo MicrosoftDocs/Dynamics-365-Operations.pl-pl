@@ -41,3 +41,6 @@ To zadanie koncentruje się na przygotowaniu zadania przetwarzania w systemie Ka
 6. Kliknij przycisk Przygotuj.
     * Proces przygotowywania jest teraz zakończony. Zaznaczone pole wyboru dla wszystkich wierszy na liście pobrania wskazuje, że dostawa jest pobrana.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

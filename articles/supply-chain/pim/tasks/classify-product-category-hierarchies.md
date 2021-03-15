@@ -42,3 +42,6 @@ W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii ka
 11. W polu **Kategoria** wprowadź lub wybierz wartość.
 12. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

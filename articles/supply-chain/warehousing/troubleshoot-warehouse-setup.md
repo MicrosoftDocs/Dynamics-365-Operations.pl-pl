@@ -39,3 +39,6 @@ Użytkownik nie może korzystać z żadnej roli z wyjątkiem administratora, aby
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Emulator aplikacji urządzenia przenośnego jest skonfigurowany do pracy tylko z kontem administratora. W przypadku wszelkiego testowania i procesów działających na żywo zaleca się używanie samej aplikacji magazynowej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

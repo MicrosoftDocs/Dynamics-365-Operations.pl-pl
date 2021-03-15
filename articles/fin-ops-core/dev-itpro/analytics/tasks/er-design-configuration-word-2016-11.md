@@ -164,3 +164,6 @@ Aby uruchomić wersję roboczą formatu edytowalnego, należy oznaczyć go jako 
 
 - [Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word](../er-design-configuration-word.md)
 - [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

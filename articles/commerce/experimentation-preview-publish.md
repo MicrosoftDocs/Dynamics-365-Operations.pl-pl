@@ -59,3 +59,6 @@ W przypadku korzystania z grup publikacji z eksperymentami należy pamiętać o 
 
 ## <a name="next-step"></a>Następne kroki
 [Uruchamianie i monitorowanie eksperymentu](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

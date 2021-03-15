@@ -49,3 +49,6 @@ Ta procedura przedstawia sposób wyszukiwania informacji o karcie lojalnościowe
 15. Kliknij opcję Transakcje kartą.
 16. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Wybierz kolejno opcje **Handel detaliczny i inny \> Kanały \> Sklepy \> Wszystk
 Ta konfiguracja pozwala zagwarantować, że zestawienia tworzone w systemach zaplecza będą obejmowały te same transakcje, jak zawierane na zmianach w aplikacji POS, a dane będą sumowane według tej zmiany.
 
 Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

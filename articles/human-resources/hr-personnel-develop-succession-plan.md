@@ -56,3 +56,6 @@ W miarę wzrostu organizacji należy rozpocząć planowanie dziedziczenia. Podcz
 27. Wybierz opcję **Wynik**.
 28. Wybierz **Raport**. W raporcie najlepiej pasujące pozycje znajdą się u góry listy. Widać element luki. Brak to różnica między poziomem mapowania umiejętności a poziomem umiejętności danej osoby.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

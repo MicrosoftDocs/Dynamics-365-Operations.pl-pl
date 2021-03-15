@@ -226,3 +226,6 @@ Po wybraniu metody **Transakcje — klucz redukcji** lub **Transakcje — okres 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie planów głównych](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -276,3 +276,6 @@ Jeśli użytkownik nie podejmie działania wobec dokumentu w wyznaczonym czasie,
 
 5. Powtórz kroki od 3 do 4 dla każdego użytkownika, który powinien zostać dodany do ścieżki eskalacji. Można zmienić kolejność użytkowników.
 6. Jeśli użytkownicy wymienieni w ścieżce eskalacji nie odpowiedzą w wyznaczonym czasie, system automatycznie wykona operację na dokumencie. Aby określić akcję podejmowaną przez system, wybierz wiersz **Akcja**, a następnie na karcie **Zakończ działanie** wybierz akcję.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

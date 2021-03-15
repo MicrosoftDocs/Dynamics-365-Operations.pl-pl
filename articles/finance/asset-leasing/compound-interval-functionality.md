@@ -159,3 +159,6 @@ W poniższej tabeli wyszczególniono pierwsze 12 miesięcy harmonogramu płatno�
 
 > [!NOTE]
 > Jeśli typ annuity zostanie zmieniony na **Annuita należna**, płatność będzie w styczniu, a nie grudniu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Ta procedura pokazuje, jak dodać obraz/zdjęcie do produktu. Do utworzenia tego
 5. Kliknij przycisk Nowy.
     * Kliknij Przeglądaj. Znajdź zdjęcie, którego chcesz użyć, zaznacz je, a następnie zamknij okno dialogowe.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

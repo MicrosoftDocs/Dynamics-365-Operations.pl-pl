@@ -113,3 +113,6 @@ Aby ustawić atrybut **Wiek minimalny** dla elementu zawartości wideo, wykonaj 
 [Dodawanie strony zasad ochrony prywatności](add-privacy-page.md)
 
 [Zamień identyfikatory użytkowników skojarzone ze śledzonymi zmianami zawartości](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

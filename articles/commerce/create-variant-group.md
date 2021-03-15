@@ -72,3 +72,6 @@ Poniższy obraz przedstawia przykład konfiguracji przypisania grupy rozmiary dl
 [Konfigurowanie produktów sprzedaży detalicznej](set-up-retail-products.md)
 
 [Wymiary produktu](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

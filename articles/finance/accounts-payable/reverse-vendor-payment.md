@@ -82,3 +82,6 @@ Jeśli cofnięty czek został wystawiony w związku ze zwrotem pieniędzy dla od
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

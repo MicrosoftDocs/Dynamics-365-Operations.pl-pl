@@ -246,3 +246,6 @@ C. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

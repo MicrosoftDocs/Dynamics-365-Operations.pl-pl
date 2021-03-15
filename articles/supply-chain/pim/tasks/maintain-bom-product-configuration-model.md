@@ -57,3 +57,6 @@ Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu. Do utworz
     * Sprawdź, czy którykolwiek wymiar produktu jest aktywny i w związku z tym musi mieć przypisaną wartość lub atrybut.  
 9. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

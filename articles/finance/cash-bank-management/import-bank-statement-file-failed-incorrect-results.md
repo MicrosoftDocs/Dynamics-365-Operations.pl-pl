@@ -107,3 +107,6 @@ W tabeli poniżej przedstawiono przykłady definicji układów technicznych plik
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

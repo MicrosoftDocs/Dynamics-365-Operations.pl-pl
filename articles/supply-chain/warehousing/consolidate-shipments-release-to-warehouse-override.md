@@ -83,3 +83,6 @@ Aby przejrzeć utworzone wysyłki, wykonaj poniższe kroki.
 
 - [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
 - [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

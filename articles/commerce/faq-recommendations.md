@@ -99,3 +99,6 @@ Po włączeniu zaleceń dotyczących produktu należy dodać Panel rekomendacji 
 [Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
 
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

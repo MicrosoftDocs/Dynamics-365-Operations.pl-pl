@@ -150,3 +150,6 @@ Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
     ![Zmiana wartości kolumny Tryb użytkownika integracji](media/sales-map-user-mode-yes.png)
 
 Twoje zamówienia sprzedaży są teraz zamapowane.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

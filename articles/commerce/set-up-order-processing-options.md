@@ -83,3 +83,6 @@ Gdy skończysz konfigurować kanał biura obsługi i definiować użytkowników 
 > [!NOTE]
 > Aby korzystać z funkcji biura obsługi, klucz konfiguracji dla opcji **Wielokrotna wysyłka** musi być włączony. Ten klucz konfiguracji można znaleźć w kluczach **konfiguracji handlu** w obszarze **Administracja systemem**\> **Instalator** \> **Konfiguracja licencji**. Jest to wymagane z powodu funkcji biura obsługi, która wykonuje różne operacje weryfikacji na podstawie adresu dostawy skonfigurowanego na poziomie wiersza zamówienia sprzedaży. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

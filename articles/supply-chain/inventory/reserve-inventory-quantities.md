@@ -82,3 +82,6 @@ Na stronie **Parametry modułu Zarządzanie zapasami i magazynem** są dwie opcj
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Zasady rezerwacji zapasów na stronie Parametry produkcji
 
 Wartość pola **Rezerwacja** na karcie **Ogólne** na stronie **Parametry produkcji** określa domyślny punkt w procesie produkcji, gdzie powinny być rezerwowane zapasy. Na przykład zapasy mogą być rezerwowane podczas planowania lub rozpoczynania pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

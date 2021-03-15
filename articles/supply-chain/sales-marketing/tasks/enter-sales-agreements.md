@@ -56,3 +56,6 @@ W tym temacie pokazano sposób tworzenia umowy sprzedaży, która zobowiązuje j
 11. Kliknij przycisk **OK**.
 12. Zamknij stronę. Umowa jest teraz obowiązująca. Umowa teraz obowiązuje i można rozpocząć łączenie zamówień odbiorcy z umową w celu umożliwienia realizacji zadeklarowanego celu zakupowego.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

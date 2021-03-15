@@ -46,3 +46,6 @@ Kody kreskowe można tworzyć ręcznie lub automatycznie. Aby utworzyć kody kre
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Konfigurowanie masek kodów kreskowych](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

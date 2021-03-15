@@ -67,3 +67,6 @@ W tej procedurze pokazano sposób tworzenia, drukowania i księgowania not odset
 5. Kliknij przycisk **OK**.
 6. W polu **Stan** wybierz opcję „Zaksięgowano”.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -275,3 +275,6 @@ W tym scenariuszu pobranie klastra zostało zakończone i użytkownik jest prosz
     Zostanie wyświetlony komunikat „Pobieranie dla grupy zakończone”.
 
 Za pomocą elementu menu **Pobranie sprzedaży** można teraz pobrać pozostałą ilość. Następnie można skorzystać z elementu menu **Ładowanie sprzedaży**, aby przenieść elementy z lokalizacji pośredniej do doku załadunku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

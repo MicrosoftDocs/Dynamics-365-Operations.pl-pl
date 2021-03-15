@@ -78,3 +78,6 @@ Human Resources łączy dane osób z danymi operacyjnymi, aby ułatwić Optymali
 [Zarządzanie urlopami i nieobecnościami](hr-leave-and-absence-overview.md)</br>
 [Rozwój pracowników](hr-develop-performance-management-overview.md)</br>
 [Tworzenie kursów](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

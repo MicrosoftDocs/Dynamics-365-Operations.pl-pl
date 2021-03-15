@@ -38,3 +38,6 @@ Wymiary finansowe i konta główne są kluczowymi składnikami fazy planowania w
 - Unikaj stosowania wybranego separatora planu kont w wartościach wymiarów finansowych i kont głównych.
 
 Przestrzegając poniższych najważniejszych wskazówek, pomagasz zapewnić spójne reprezentowanie kolejności zdefiniowanej przez użytkownika w całym systemie.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -139,3 +139,6 @@ Na stronie **Inwentaryzacja cykliczna oczekuje na przegląd** można uzgodnić r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

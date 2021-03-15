@@ -38,3 +38,6 @@ Poniższy zrzut ekranu pokazuje przykład konserwatora, który jest powiązany z
 
 Ustawienia kalendarza dla narzędzi i składników majątku nie są potrzebne w odniesieniu do planowania zleceń pracy. Założeniem jest, że narzędzia i zasoby są dostępne 24 godziny na dobę w celu konserwacji.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

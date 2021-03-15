@@ -83,3 +83,6 @@ Aby dodać moduł karty do strony i ustawić właściwości, wykonaj następują
 [Moduł typu accordion](add-accordion.md)
 
 [Moduł bloku tekstu](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

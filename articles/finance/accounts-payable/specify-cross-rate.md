@@ -43,3 +43,6 @@ Na przykład gdy walutą rozliczeniową jest USD, a CAD jest waluta faktury, wte
 3.  Dla odbiorcy na stronie listy **Wszyscy odbiorcy** wybierz kolejno opcje **Windykacja > Rozlicz otwarte transakcje**. Dla dostawcy na stronie listy **Wszyscy dostawcy** wybierz kolejno opcje **Faktura > Rozlicz otwarte transakcje**. 
 4.  Wybierz transakcję właściwą dla płatności głównej, a następnie kliknij przycisk **Oznacz płatność**. Pole wyboru w kolumnie **Zaznacz** jest zaznaczone, a ikona informacji jest wyświetlana w kolumnie **Płatność główna**. 
 5.  W polu **Kurs krzyżowy** wprowadź przelicznik między walutą faktury a walutą płatności na dzień dokonania rozliczenia. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

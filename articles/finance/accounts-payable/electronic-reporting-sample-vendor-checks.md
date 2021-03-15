@@ -43,3 +43,6 @@ Microsoft Dynamics 365 Finance zawiera przykładowy formularz, w którym czek zn
 - Podczas generowania płatności dla skonfigurowanego konta bankowego w arkuszu płatności czeki zostaną wydrukowanie zgodnie z podanym formatem.
 
 Aby uzyskać więcej informacji, zobacz [Modyfikowanie formatu raportowania elektronicznego](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

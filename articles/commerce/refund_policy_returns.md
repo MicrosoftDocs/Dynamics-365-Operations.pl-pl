@@ -103,3 +103,6 @@ Aby wyświetlić dozwolone typy płatności zwrotnych w punkcie sprzedaży, nale
 
 
 ![Lista metod płatności](media/Return-policy-page5.PNG "Dozwolone typy płatności zwrotu")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

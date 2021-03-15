@@ -131,3 +131,6 @@ Można utworzyć fakturę z kwotą ujemną i taka faktura jest klasyfikowana jak
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

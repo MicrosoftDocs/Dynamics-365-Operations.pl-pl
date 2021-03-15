@@ -50,3 +50,6 @@ Wykonaj następujące kroki, aby zaprojektować i skonfigurować elementy odgał
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie tworzenia przepływów pracy](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

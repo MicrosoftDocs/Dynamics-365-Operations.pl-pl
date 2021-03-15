@@ -86,3 +86,6 @@ Aby używać zintegrowanej usługi [Microsoft Accessibility Insights](https://ac
 [Wzbogacanie strony docelowej kategorii](enrich-category-page.md)
 
 [Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

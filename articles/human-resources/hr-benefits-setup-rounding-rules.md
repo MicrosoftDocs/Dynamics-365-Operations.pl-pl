@@ -36,3 +36,6 @@ W programie Dynamics 365 Human Resources istnieje możliwość skonfigurowania r
 3. Wypełnij pola **Zaokrąglanie do najbliższej**, **Scenariusz** i **Metoda zaokrąglenia**.
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

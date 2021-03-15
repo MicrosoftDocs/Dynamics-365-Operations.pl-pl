@@ -143,3 +143,6 @@ Pozostałe metadane, na przykład Lokalizacja, nie będą wyświetlane na stroni
 --------
 
 [Omówienie instalowania i konfiguracji aplikacji magazynowej](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

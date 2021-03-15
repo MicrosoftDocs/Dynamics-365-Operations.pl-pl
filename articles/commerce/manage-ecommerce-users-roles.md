@@ -70,3 +70,6 @@ Po utworzeniu witryny użytkownik będący w grupach zabezpieczeń skojarzonych 
 [Zagadnienia optymalizacji wyszukiwarki dla witryny](search-engine-optimization-considerations.md)
 
 [Zarządzanie zasadami zabezpieczeń zawartości (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

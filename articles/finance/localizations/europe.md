@@ -99,3 +99,6 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 
 - [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Na przykład produkt X jest przypisany do grupy właścicieli *Szafy projektowe*
 ## <a name="product-owners-and-approvals"></a>Właściciele produktów i zatwierdzenia
 
 Ponieważ właściciele produktów wiedzą, czy określone zmiany inżynieryjne przyniosą korzyści ich produktom, często warto uwzględnić je jako część procesu zatwierdzania w zarządzaniu zmianami inżynierskimi. Możesz wdrożyć to podejście, ustawiając właścicieli produktów jako uczestniczących dostawców w przepływach pracy, które są używane do zarządzania zmianami inżynierskimi. Następnie system przydzieli zadania zatwierdzania w przepływach pracy w oparciu o produkty objęte żądaniami zmian inżynieryjnych i zleceniami zmian inżynieryjnych. Aby uzyskać więcej informacji, zobacz [Zarządzanie zmianami dotyczącymi produktów inżynieryjnych](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

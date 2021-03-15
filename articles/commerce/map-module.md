@@ -81,3 +81,6 @@ Aby uzyskać szczegółowe informacje dotyczące konfigurowania modułu mapy na 
 [Zarządzanie Mapami Bing dla swojej organizacji](./dev-itpro/manage-bing-maps.md)
 
 [Kontrolka sieci Web Bing Maps V8](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

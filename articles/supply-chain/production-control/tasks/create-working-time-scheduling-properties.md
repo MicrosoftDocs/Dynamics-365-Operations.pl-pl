@@ -43,3 +43,6 @@ Właściwości planowania czasu pracy są używane do dzielenia zakresów czasu 
 3. W polu Wartość wpisz wartość.
 4. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

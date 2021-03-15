@@ -38,3 +38,6 @@ Jeśli ustawisz w opcji **Włączone** wartość **Tak**, będzie tworzony podgl
 
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

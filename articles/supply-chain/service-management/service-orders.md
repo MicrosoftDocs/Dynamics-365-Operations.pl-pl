@@ -88,3 +88,6 @@ W drugiej połowie roku odbiorca doszedł do wniosku, że wizyty serwisowe są z
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

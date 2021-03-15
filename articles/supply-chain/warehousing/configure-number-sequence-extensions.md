@@ -91,3 +91,6 @@ Aby utworzyć i edytować sekwencje identyfikatorów, należy wykonać następuj
     | Cyfra kontrolna | W tym typie segmentu jest dodawana cyfra kontrolna, czyli obliczenie modulo 10. (To zachowanie jest zgodne z istniejącą logiką dla identyfikatorów numerów identyfikacyjnych.) W przypadku tego typu segmentu pole **Wartość** jest zawsze ustawione na znak daszka (*^*), a pole **Długość** zawsze ma wartość *1*. |
 
 1. Aby wyświetlić przykład końcowego formatu numerów, należy sprawdzić pole **Format** w dolnej części skróconej karty **Segmenty**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

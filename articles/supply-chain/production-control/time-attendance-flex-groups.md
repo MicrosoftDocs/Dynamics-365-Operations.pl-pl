@@ -184,3 +184,6 @@ Ta zmiana następuje po przeniesieniu, ponieważ elastyczne godziny pracy zosta�
 | 18.00 | 20.00 | 2    | 1.5       | 3            |
 | 20.00 | 21.00 | 1    | 2         | 2            |
 |          |          |      | **Suma** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

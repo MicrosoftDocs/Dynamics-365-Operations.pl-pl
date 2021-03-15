@@ -62,3 +62,6 @@ Domyślnie ustawienie **Maksymalny czas wykonania** jest niedostępne. Aby go u�
 
 - **Moduł:** *Zarządzanie magazynem*
 - **Nazwa funkcji:** *Maksymalny czas wykonywania zadania oczyszczania dla wpisów dostępnych zapasów w magazynie*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

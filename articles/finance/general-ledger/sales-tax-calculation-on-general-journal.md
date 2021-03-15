@@ -156,3 +156,6 @@ Poniższa tabela przedstawia ogólną regułę.
 | Podatek naliczony | Ujemny              | Konto podatku naliczonego | Ujemne (kredyt)  |
 | Podatek należny    | Dodatni              | Konto podatku należnego    | Ujemne (kredyt)  |
 | Podatek należny    | Ujemny              | Konto podatku należnego    | Dodatnie (Debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

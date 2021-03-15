@@ -53,3 +53,6 @@ Aby uzyskać więcej informacji, zobacz [Tworzenie grup konsolidacji i dodatkowy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

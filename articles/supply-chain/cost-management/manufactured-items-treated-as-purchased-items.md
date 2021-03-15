@@ -41,3 +41,6 @@ Aby zablokować takie obliczenia, wybierz flagę **Zatrzymanie rozłożenia** zn
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

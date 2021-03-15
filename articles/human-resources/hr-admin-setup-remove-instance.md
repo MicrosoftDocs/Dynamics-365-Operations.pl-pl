@@ -85,3 +85,6 @@ Aby przywrócić środowisko:
 
 > [!Warning]
 > Środowiska Power Apps są zapisywane tylko przez siedem dni po usunięciu. Musisz odzyskać środowisko w okresie siedmiu dni.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

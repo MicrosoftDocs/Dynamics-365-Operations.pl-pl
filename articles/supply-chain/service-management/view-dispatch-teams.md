@@ -52,3 +52,6 @@ Aby uzyskać więcej informacji o sposobie przypisywania pracownika do zespołu,
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

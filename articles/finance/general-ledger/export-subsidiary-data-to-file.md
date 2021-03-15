@@ -70,3 +70,6 @@ Strona **Eksportu** umożliwia (**Administrowanie systemem \> Obszary robocze \>
 5. Wybierz przycisk **OK**, aby uruchomić eksport.
 
 Po zakończeniu eksportu zostanie wyświetlony komunikat zawierający liczbę rekordów zapisanych w każdym pliku. Następnie można importować pliki w skonsolidowanej firmie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

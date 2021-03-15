@@ -56,3 +56,6 @@ Istnieje również możliwość uruchomienia planu dynamicznego, który będzie 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

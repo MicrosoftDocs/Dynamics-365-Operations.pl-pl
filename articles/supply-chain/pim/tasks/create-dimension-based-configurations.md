@@ -52,3 +52,6 @@ W tej procedurze pokazano sposób definiowania konfiguracji produktu opartego na
     * Wprowadzić opis konfiguracji wyjaśniający, co ona zawiera.  
 11. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

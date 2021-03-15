@@ -77,3 +77,6 @@ Aby dodać moduł szybkiego podglądu do modułu kolekcji produktów w narzędzi
 [Moduł kolekcji produktów](product-collection-module-overview.md)
 
 [Moduł wyników wyszukiwania](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

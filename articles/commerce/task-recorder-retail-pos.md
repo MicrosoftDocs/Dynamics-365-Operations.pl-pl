@@ -145,3 +145,6 @@ Po kliknięciu pozycji Przewodnik po zadaniu w wynikach wyszukiwania można wyś
 
 > [!NOTE]
 > Pomoc w programach Retail Modern POS and Cloud POS nie powoduje uruchamiania przewodników po zadaniach dopasowanych do otwartego formularza lub wykonywanej operacji. Należy wpisać nazwę procesu w polu wyszukiwania, a następnie kliknąć przycisk **Szukaj**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ W tej procedurze pokazano sposób tworzenia konta bankowego dla dostawcy. Proced
 25. W polu **Konto bankowe** zaznacz właśnie utworzone konto.
 26. Kliknij przycisk **Zapisz**. Adres może być dziedziczony z grupy bankowej (jeśli został tam określony) albo można go dodać w tym polu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

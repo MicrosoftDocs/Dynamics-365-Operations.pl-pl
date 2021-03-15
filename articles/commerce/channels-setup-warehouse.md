@@ -146,3 +146,6 @@ Poniższy obraz przedstawia szczegóły dotyczące skonfigurowanego magazynu.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

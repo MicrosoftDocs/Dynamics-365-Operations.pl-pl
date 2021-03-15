@@ -47,3 +47,6 @@ Ten temat opisuje kolejne kroki ręcznego tworzenia, obliczania i księgowania z
 12. Na stronie głównej wybierz opcję **Finanse sklepu**.
 13. Wybierz kartę **Zaksięgowane zestawienia**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

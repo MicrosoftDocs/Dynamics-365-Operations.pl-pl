@@ -50,3 +50,6 @@ W przypadku tych dokumentów Eksplorator źródeł księgowania pozwala też prz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

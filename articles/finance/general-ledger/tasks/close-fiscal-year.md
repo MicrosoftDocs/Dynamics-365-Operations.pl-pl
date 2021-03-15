@@ -82,3 +82,6 @@ Ta procedura prowadzi przez proces zamknięcia roku, który przenosi salda do no
 23. Zamknięcie na koniec roku domyślnie jest uruchamiane w trybie wsadowym. Dla długotrwałych procesów najlepszym rozwiązaniem jest uruchamianie ich w trybie wsadowym. Zazwyczaj procesy trwają długo, dlatego domyślnie jest używany tryb wsadowy.  
 24. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

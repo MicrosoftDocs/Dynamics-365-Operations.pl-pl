@@ -62,3 +62,6 @@ Po utworzeniu stanów cyklu życia wymaganych dla lokalizacji funkcjonalnych mo�
 5. Jeśli chcesz wybrać wszystkie dostępne stany dla modelu, kliknij przycisk ![Wybierz wszystkie dostępne etapy](media/03-setup-for-functional-locations.png). Wszystkie stany są przenoszone do sekcji **Wybrane cykle życia**.
 6. Jeśli chcesz usunąć wybrany stan z modelu, wybierz stan w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk ![strzałki wstecz](media/04-setup-for-functional-locations.png).
 7. Wybierz pozycję **Aktualizacje stanu cyklu życia**, aby określić, które stany cyklu życia mogą być zgodne z wybranym stanem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

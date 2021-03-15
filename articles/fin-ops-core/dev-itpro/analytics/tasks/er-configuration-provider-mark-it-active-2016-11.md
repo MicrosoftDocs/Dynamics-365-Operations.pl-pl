@@ -44,3 +44,6 @@ W tym temacie wyjaśniono, w jaki sposób użytkownik przypisany do roli Adminis
 2. Wybierz **Aktywuj**.
 
 ![Strona obszaru roboczego raportowania elektronicznego](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -37,3 +37,6 @@ W tej procedurze pokazano sposób tworzenia zestawienia PWT w zleceniu produkcyj
 6. W polu Od dnia ustaw wartość daty równą „2012-12-01”.
 7. W polu Do dnia ustaw wartość daty równą „2012-12-31”.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

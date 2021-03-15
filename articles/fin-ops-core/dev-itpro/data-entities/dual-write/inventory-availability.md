@@ -118,3 +118,6 @@ Pole aplikacji Finance and Operations | Typ mapy | Pole Customer Engagement | Wa
 
 
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

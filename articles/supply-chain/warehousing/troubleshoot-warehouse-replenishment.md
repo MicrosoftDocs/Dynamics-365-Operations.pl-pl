@@ -39,3 +39,6 @@ Praca pobrania została zablokowana z powodu zależnej pracy uzupełniania zapas
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 W przypadku użycia grupy czynności uzupełnienia popytu, jeśli lokalizacja pobrania musi być uzupełniana w celu zrealizowania zapotrzebowania zamówienia źródłowego, system tworzy zarówno pracę uzupełniającą, jak i pracę pobrania. Jednak system blokuje pracę pobrania do momentu zakończenia pracy uzupełniania. To zachowanie jest celowe, ponieważ lokalizacja pobrania nie ma wystarczającej ilości zapasów, dopóki praca uzupełniania zapasów nie zostanie zakończona. Zakończ pracę uzupełniania zapasów, a następnie przetwórz pracę pobrania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

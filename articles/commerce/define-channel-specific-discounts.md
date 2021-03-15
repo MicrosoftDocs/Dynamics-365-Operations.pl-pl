@@ -61,3 +61,6 @@ Przykład poniżej ilustruje zadania niezbędne do skonfigurowania rabatu kanał
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Korekty cen i rabaty](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

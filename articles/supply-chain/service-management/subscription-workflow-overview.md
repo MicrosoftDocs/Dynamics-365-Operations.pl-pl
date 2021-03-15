@@ -56,3 +56,6 @@ Na koniec każdego miesiąca miesięczne przychody z tytułu subskrypcji od klie
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

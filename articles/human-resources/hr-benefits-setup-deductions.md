@@ -52,3 +52,6 @@ Funkcja potrąceń w programie Microsoft Dynamics 365 Human Resources pozwala ok
 4. Aby śledzić zmiany konfiguracji stawki świadczenia i nimi zarządzać, wybierz opcję **Akcje**, a następnie wybierz opcję **Obsługuj wersje**.
 
 5. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

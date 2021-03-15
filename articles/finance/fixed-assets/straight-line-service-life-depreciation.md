@@ -107,3 +107,6 @@ Okres użytkowania korekty wartości początkowej jest taki sam jak środków tr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

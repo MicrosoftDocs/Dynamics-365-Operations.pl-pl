@@ -102,3 +102,6 @@ Zwykle magazyn wyjściowy i lokalizacja grupy zasobów podwykonawczych są bezpo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

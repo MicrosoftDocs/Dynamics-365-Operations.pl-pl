@@ -239,3 +239,6 @@ Użyj strony **Parametry handlu zagranicznego**, aby skonfigurować parametry w 
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Ta procedura poprowadzi przez proces włączania obsługi świadectw wywozowych 
 4. W okienku akcji kliknij pozycję Faktura.
 5. Kliknij opcję Wyświetl wystawione świadectwa wywozowe.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

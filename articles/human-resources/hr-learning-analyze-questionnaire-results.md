@@ -69,3 +69,6 @@ Statystyki kwestionariusza mogą służyć do obliczania wartości średnich, su
 2. Kliknij przycisk Wynik.
 3. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

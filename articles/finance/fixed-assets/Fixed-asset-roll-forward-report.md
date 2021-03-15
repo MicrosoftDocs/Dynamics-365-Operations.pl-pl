@@ -66,3 +66,6 @@ W poniższej tabeli przedstawiono pola dostępne w raporcie.
 |           Likwidacje: Wartość złomowania            |                                                                                               Wartość złomowania księgi środków trwałych zawierającej transakcję likwidacji poprzez złomowanie.                                                                                               |
 |           Likwidacje: Zysk/strata            |                                                                                 Wartość zysku lub straty obliczona w ramach transakcji likwidacji księgi środków trwałych.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

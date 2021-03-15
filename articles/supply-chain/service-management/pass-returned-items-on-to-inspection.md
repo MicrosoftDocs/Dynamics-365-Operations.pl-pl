@@ -55,3 +55,6 @@ Spowoduje to utworzenie w systemie zlecenia kwarantanny, a osoba lub dział wyko
 
 [Określanie sposobu likwidacji zwróconych towarów](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

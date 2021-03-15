@@ -59,3 +59,6 @@ Najwyższy węzeł drzewa odpowiada dostępnej ilości wybranego towaru oraz par
 9. Kliknij opcję **Zamówienia sprzedaży, towary wysłane**.
 10. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

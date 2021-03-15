@@ -58,3 +58,6 @@ Następnie włącz klucz konfiguracji **Zarządzanie zmianami inżynieryjnymi**,
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
 1. Rozwiń węzeł **Handel** i zaznacz pole wyboru **Zarządzanie zmianami inżynieryjnymi**.
 1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

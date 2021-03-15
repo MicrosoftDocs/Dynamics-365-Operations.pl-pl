@@ -58,3 +58,6 @@ W tej procedurze pokazano, jak utworzyć regułę Kanban, która obejmuje wiele 
     * Należy zauważyć, że karta Kanban ma dwa zadania przetwarzania z przepływu produkcji. Pierwsze z nich to SpeakerAssemblyAndPolish, a drugim jest SpeakerTestAndPackaging.  
     * To jest ostatni krok!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

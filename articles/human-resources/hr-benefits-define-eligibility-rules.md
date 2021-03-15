@@ -67,3 +67,6 @@ W tym temacie pokazano sposób tworzenia reguł i zasad uprawnień do świadcze�
 10. Wybierz opcję **Zapisz**.
 11. Zamknij formularz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -143,3 +143,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Dwie waluty](dual-currency.md)
 - [Omówienie podatku](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

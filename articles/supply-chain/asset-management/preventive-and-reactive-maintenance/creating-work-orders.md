@@ -95,3 +95,6 @@ Aby skonfigurować grupowanie dla automatycznie generowanych zleceń pracy, wyko
 1. Jeśli chcesz, aby opcje były stosowane podczas uruchamiania tylko niektórych planów konserwacji, na skróconej karcie **Rekordy do uwzględnienia** dodaj filtry zgodnie z potrzebami, tak jak w przypadku innych zadań wsadowych w aplikacji Microsoft Dynamics 365 Supply Chain Management.
 1. Na skróconej karcie **Uruchom w tle** skonfiguruj wymagane opcje przetwarzania wsadowego i planowania, tak jak w przypadku innych zadań wsadowych w aplikacji Supply Chain Management.
 1. Wybierz przycisk **OK**, aby uruchomić i/lub zaplanować wybrane plany konserwacji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

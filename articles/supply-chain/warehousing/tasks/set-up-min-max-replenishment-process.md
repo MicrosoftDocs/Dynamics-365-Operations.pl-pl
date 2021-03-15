@@ -119,3 +119,6 @@ W tej procedurze pokazano sposób konfigurowania nowego procesu uzupełniania za
 11. Kliknij przycisk **OK**.
 12. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

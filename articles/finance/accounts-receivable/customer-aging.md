@@ -144,3 +144,6 @@ Podczas generowania tego raportu, wyświetlane są następujące parametry domy�
 </tbody>
 </table>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

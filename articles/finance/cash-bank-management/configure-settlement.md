@@ -66,3 +66,6 @@ Aby uniknąć dodatkowych zapisów księgowych, po stronie debetowej i kredytowe
 
 -   Organizacje często używają stałych wymiarów do wypełniania zerami wymiarów finansowych, który nie są wymagane. Jest to przypadek typowy dla kont bilansowych, takich jak rozrachunki z odbiorcami/rozrachunki z dostawcami. Struktur kont można używać, aby nie śledzić wymiarów finansowych, które są zazwyczaj wypełniane zerami.  Można usunąć wymiar finansowy dla kont bilansowych, co wyeliminuje konieczność używania stałych wymiarów.
 -   Jeśli organizacja wymaga stałych wymiarów na koncie głównym rozrachunków z odbiorcami/dostawcami, znajdź sposób na domyślne ustawianie stałego wymiaru w płatności, tak aby wartości stałego wymiaru była przechowywana w transakcji z dostawcą dla płatności. Dzięki temu system będzie mógł odtworzyć rozrachunki z odbiorcami/rozrachunki z dostawcami konta głównego, aby uwzględnić wartości ustalonego wymiaru. Stała wartość wymiaru może być zdefiniowana jako wartość domyślna dla dostawców lub nazwy arkusza dla arkusza płatności.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

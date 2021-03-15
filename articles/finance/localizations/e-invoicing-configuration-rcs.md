@@ -290,3 +290,6 @@ Gdy jedna funkcja fakturowania elektronicznego jest pochodną innej, polecenie *
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Wystawiaj faktury elektroniczne w Finance i Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

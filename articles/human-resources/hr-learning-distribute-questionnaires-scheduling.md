@@ -129,3 +129,6 @@ Planowanie kwestionariuszy umożliwia planowanie i dystrybucję kwestionariuszy 
 2. Kliknij opcję Koniec.
 3. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

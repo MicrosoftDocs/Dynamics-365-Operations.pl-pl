@@ -39,3 +39,6 @@ Stan działań serwisowych można wyświetlić w formularzu **Pulpit wysyłki**.
 
 [Pulpit wysyłki (formularz)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

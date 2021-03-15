@@ -45,3 +45,6 @@ Procedura korzysta z roli Księgowy i danych firmy demonstracyjnej USMF.
     * Zaznacz opcję **Zwiększa okres użytkowania** na **Tak**, jeśli środek komplementarny wydłuża okres użytkowania składnika aktywów.  
     * To pole służy wyłącznie do celów informacyjnych. W celu przedłużenia okresu użytkowania zmodyfikuj go w modelach ewidencji i/lub księgach amortyzacji składnika aktywów.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

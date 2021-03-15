@@ -174,3 +174,6 @@ Wybierając akcję **Usuń** we wniosku o rejestrację potencjalnego dostawcy mo
 |         Zatwierdzona         |                                                                               Wniosek o nowego dostawcę został zatwierdzony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
 |         Odrzucona         |                                                                               Wniosek o nowego dostawcę został odrzucony.                                                                               |                                                                                                   Wniosek o rejestracje potencjalnego dostawcy, dane wprowadzone w kreatorze rejestracji dostawcy i wniosek o nowego dostawcę zostały usunięte.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

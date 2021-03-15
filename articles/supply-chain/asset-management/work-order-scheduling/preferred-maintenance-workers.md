@@ -67,3 +67,6 @@ Można również skonfigurować *odpowiedzialnych* konserwatorów, którzy mogą
 
 Podczas planowania zlecenia pracy różne wyniki są obliczane w celu określenia, którzy pracownicy powinni spełniać zadania związane z danym zleceniem (te okresy są ustawiane w **Parametry zarządzania składnikami majątku** > **Planowanie zlecenia pracy** łącze). Jeśli w przypadku dwóch lub więcej preferowanych pracowników konserwacji lub pracowników odpowiedzialnych za konserwacje uzyskuje się ten sam wynik podczas planowania zleceń, jeden pracownik jest wybierany losowo. W przeciwnym razie jest on zawsze pracownikiem o najwyższyej ocenie, który jest przydzielony do wykonania zlecenia pracy.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

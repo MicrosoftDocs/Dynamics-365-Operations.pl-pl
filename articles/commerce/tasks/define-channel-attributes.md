@@ -71,3 +71,6 @@ Wzbogać kanał przez dodanie atrybutów kanału i produktów. Przed zdefiniowan
 33. Kliknij przycisk OK.
 34. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

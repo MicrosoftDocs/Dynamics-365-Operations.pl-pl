@@ -50,3 +50,6 @@ Ta procedura przedstawia sposób przekonwertowania zatwierdzonych i przetworzony
     * Należy zwrócić uwagę, że do salda odbiorcy została dodana transakcja na kwotę ujemną, reprezentująca łączna kwotę rabatu, bez odwołania do faktury.   
 15. Kliknij przycisk Anuluj.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

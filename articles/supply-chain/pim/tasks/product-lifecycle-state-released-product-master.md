@@ -53,3 +53,6 @@ W tej procedurze pokazano sposób przypisywania stanu cyklu życia produktu do z
 2. Na liście oznacz wybrany wiersz.
 3. W polu Stan cyklu życia produktu wprowadź lub wybierz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

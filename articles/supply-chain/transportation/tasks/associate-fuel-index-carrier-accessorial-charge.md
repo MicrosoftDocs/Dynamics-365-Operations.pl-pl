@@ -77,3 +77,6 @@ W tym podręczniku pokazano sposób tworzenia przypisania usług dodatkowych, op
 6. Na liście kliknij łącze w wybranym wierszu.
 7. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

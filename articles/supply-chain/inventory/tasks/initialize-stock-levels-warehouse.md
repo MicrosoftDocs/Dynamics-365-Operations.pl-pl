@@ -59,3 +59,6 @@ W tej procedurze pokazano, jak ręcznie zaktualizować dostępne zapasy przy uż
 25. Zamknij stronę.
 26. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

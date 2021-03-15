@@ -67,3 +67,6 @@ Aby wyświetlić efekty procesu przeszacowania umów wynajmu realizowanych zgodn
 Można wyświetlić nowo wygenerowany harmonogram płatności rozpoczynający się w dniu przeszacowania oraz wyświetlić łączną zaktualizowaną kwotę płatności. Zostały również utworzone nowy harmonogram amortyzacji zobowiązań z tytułu wynajmu i harmonogram amortyzacji składnika majątku, aby odzwierciedlić skorygowany harmonogram płatności.
 
 Wpis w arkuszu spowodował automatyczne zaksięgowanie wpisu w arkusza korekty na koncie zmiany opłat z tytułu wynajmu powiązanych z przeszacowaniem indeksu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

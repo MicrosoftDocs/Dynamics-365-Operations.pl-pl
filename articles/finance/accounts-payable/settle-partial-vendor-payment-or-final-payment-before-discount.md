@@ -141,3 +141,6 @@ April księguje arkusz płatności i sprawdza transakcję dostawcy na stronie **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

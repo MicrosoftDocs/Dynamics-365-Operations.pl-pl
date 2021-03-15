@@ -139,3 +139,6 @@ W dniu 20 lipca April tworzy ostatnią płatność na kwotę 200,00. Rabat gotó
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

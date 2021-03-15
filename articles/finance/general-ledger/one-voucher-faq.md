@@ -51,3 +51,6 @@ Podobnie jak w przypadku każdej nowej funkcji, klienci muszą zapoznać się z 
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Po zidentyfikowaniu daty wycofania, gdzie zostanie ona przekazana?
 
 Wycofanie Pojedynczego załącznika to znacząca zmiana, o której będziemy szeroko informować. Zostanie on przekazany za pośrednictwem dokumentacji produktu, posta na blogu i ogłoszeń na odpowiednich konferencjach firmy Microsoft z dużym wyprzedzeniem przed datą wejścia w życie wycofania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

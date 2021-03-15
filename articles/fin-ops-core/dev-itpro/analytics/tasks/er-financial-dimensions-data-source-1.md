@@ -108,3 +108,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 
 ![Strona projektanta mapowania modelu danych ER](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

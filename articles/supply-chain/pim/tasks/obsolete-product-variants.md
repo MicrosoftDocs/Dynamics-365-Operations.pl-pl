@@ -72,3 +72,6 @@ Ta procedura przedstawia, jak znaleźć przestarzałe zwolnione produkty lub war
 
 8. Na liście znajdź i zaznacz odpowiedni rekord.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

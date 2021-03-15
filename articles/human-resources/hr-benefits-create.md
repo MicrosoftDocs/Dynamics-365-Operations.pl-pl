@@ -53,3 +53,6 @@ To zadanie pokazuje sposób tworzenia elementów świadczenia, które będą uż
 6. W polu Data wprowadzenia wprowadź datę i godzinę.
 7. Kliknij przycisk Utwórz świadczenie.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

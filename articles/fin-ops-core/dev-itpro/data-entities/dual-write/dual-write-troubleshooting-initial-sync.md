@@ -211,3 +211,6 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
     Początkowa synchronizacja wierszy jest teraz zakończona.
 
 8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla tabeli **Klienci (wersja 3)**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

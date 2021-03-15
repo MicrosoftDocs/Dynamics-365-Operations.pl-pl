@@ -72,3 +72,6 @@ Jeśli chcesz używać informacji o marszrucie do wyceny, potrzebne są dodatkow
 
 [Konfigurowanie produktów, które mogą być produkowane lub zamawiane](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

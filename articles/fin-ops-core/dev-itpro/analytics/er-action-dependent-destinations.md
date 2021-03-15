@@ -129,3 +129,6 @@ Poniższa lista dokumentów biznesowych jest kontrolowane przez funkcję **Przek
 [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Zmiany w interfejsie API struktury raportowania elektronicznego w aktualizacji Application update 10.0.17](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

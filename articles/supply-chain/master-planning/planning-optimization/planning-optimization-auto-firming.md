@@ -66,3 +66,6 @@ Zarówno Optymalizacja planowania, jak i aparat planowania wbudowany w firmę Mi
 - Automatyczne akceptowania jest oparte na dacie zapotrzebowania (Data końcowa).
 - W celu zagwarantowania akceptacji zamówień w odpowiednim czasie horyzont czasowy ustalania musi być dłuższy niż czas realizacji.
 - Jeśli chcesz ustalić wszystkie zamówienia, które muszą się rozpoczynać w bieżącym tygodniu, horyzont czasowy ustalania musi wynosić czas realizacji plus jeden tydzień.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -126,3 +126,6 @@ Aby dodać moduł realizacji transakcji do nowej strony i ustawić wymagane wła
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

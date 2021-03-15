@@ -44,3 +44,6 @@ W tej procedurze pokazano sposób zmiany relacji zależności służbowej dla pr
 12. W polu Stanowisko zwierzchnie wprowadź lub wybierz wartość.  Przykład: 000437.
 13. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

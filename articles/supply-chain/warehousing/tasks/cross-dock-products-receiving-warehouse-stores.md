@@ -48,3 +48,6 @@ Ta procedura prowadzi przez kolejne kroki tworzenia i przetwarzania przeładunku
 15. Na liście znajdź i zaznacz magazyn, który przyjął produkty.
 16. Kliknij opcję Zamówienie, aby wyświetlić zamówienia, które zostały utworzone dla wybranego magazynu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

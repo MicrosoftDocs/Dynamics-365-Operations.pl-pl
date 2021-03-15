@@ -135,3 +135,6 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

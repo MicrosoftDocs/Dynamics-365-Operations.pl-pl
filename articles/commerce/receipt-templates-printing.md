@@ -85,3 +85,6 @@ Profile paragonów są przypisywane bezpośrednio do drukarki za pomocą profilu
 
 > [!NOTE]
 > Jeśli używane są dwie drukarki, jedna drukarka może służyć do standardowych 40-kolumnowych paragonów. Druga drukarka jest zwykle używana do drukowania paragonów pełnostronicowych, które muszą zawierać więcej informacji. Paragony te uwzględniają paragony do zamówienia sprzedaży odbiorcy i faktury odbiorcy.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

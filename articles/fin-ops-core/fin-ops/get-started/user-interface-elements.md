@@ -86,3 +86,6 @@ Poniższy obraz przedstawia przykłady tych typów powiadomień.
 *Lista* to nazwa nadawana kolekcji rekordów, którą można przewijać. Te rekordy można przenieść na stronę, zaznaczając je. Często powoduje to otwarcie siatki.
 
 ![Poniższy rysunek przedstawia przykłady pasków narzędzi, siatek i list.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

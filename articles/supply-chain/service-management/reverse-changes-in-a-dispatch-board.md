@@ -50,3 +50,6 @@ Aby cofnąć niezapisane zmiany na tablicy alokacji zadań, wykonaj następując
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

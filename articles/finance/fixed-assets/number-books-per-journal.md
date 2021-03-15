@@ -49,3 +49,6 @@ Na przykład istnieje 5001 identyfikatory środków trwałych, z każdym identyf
 
 > [!Note] 
 > Jeśli parametr **Podsumuj amortyzację** jest włączony podczas tworzenia propozycji amortyzacji, wartość w polu **Liczba ksiąg na arkusz** — propozycja amortyzacji nie ma żadnego wpływu. W tym przypadku liczba ksiąg na arkusz wynosi 6000, co jest limitem zdefiniowanym wewnętrznie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

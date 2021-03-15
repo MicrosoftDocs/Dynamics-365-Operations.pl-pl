@@ -79,3 +79,6 @@ Aby wybrać inny układ dla istniejącej strony, wykonaj następujące kroki.
 
 [Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

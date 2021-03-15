@@ -105,3 +105,6 @@ Podczas księgowania dokumentu odpowiednia grupa numerów jest przypisywana do d
 
 > [!NOTE]
 > W niektórych krajach zaimplementowano już określoną logikę numeracji dokumentów. W tym przypadku logika specyficzna dla kraju zastąpi funkcję **Numerowania chronologicznego**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Na stronie **Profile stawek** można przejrzeć wszystkie dostępne profile staw
 
 > [!NOTE]
 > Profile utworzone na stronie **Przewoźnicy** są również wyświetlane na stronie **Profile ocen**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

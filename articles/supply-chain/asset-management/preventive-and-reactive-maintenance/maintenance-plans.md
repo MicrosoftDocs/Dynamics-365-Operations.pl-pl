@@ -238,3 +238,6 @@ Można skonfigurować system do automatycznego resetowania licznika za każdym r
 1. Przejdź do obszaru **Zarządzanie składnikami majątku \> Ustawienia \> Zlecenia pracy \> Stany cyklu życia**.
 1. W okienku listy wybierz stan cyklu życia zlecenia pracy, o którym powinien być resetowany odpowiedni licznik.
 1. Na skróconej karcie **Ogólne** ustaw opcję **Resetuj licznik** na *Tak*.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

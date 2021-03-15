@@ -68,3 +68,6 @@ Obszar roboczy **Wprowadzanie faktur od dostawców** umożliwia skoncentrowanie 
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatyzacja faktury od dostawcy — wznawianie przetwarzania automatyzacji dla wielu faktur
 Jeśli zaimportowana faktura nie zostanie pomyślnie przesłana do przepływu pracy za pośrednictwem zautomatyzowanego procesu, system usunie ją z dalszego automatycznego przetwarzania. Pracownik rozrachunków z dostawcami może przejrzeć i edytować fakturę, zanim zautomatyzowany proces prześle go do przepływu pracy. Jeśli przyczyna niepowodzenia może zostać usunięta za pomocą tej samej poprawki dla wielu faktur, można ponownie uruchomić zautomatyzowany proces na stronie **Wznawianie automatycznego przetwarzania faktur**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

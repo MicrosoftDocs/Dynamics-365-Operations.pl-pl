@@ -81,3 +81,6 @@ Ta procedura przedstawia sposób przetwarzania rabatów dla odbiorców na etapac
     - Konto naliczania rabatów zostało uznane kwotą reprezentującą przyszłe zobowiązanie odbiorcy.
     - Konto wydatków rabatowych zostało obciążone kwotą reprezentującą koszt poniesiony w związku ze sprzedażą.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

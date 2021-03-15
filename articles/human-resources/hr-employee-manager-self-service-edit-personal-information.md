@@ -72,3 +72,6 @@ Parametry ustawione w globalnej książce adresowej ustalają role, które mogą
     - Aby przekazać obraz, wybierz opcję **Przekaż nowy obraz**.
     - Aby usunąć obraz, zaznacz go, a następnie wybierz opcję **Usuń**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

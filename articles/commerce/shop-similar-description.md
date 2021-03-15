@@ -98,3 +98,6 @@ Na poniższej ilustracji przedstawiono pole wyboru **Włącz łącze kup podobni
 [Ręczne tworzenie zaleceń pod opieką](create-editorial-recommendation-lists.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

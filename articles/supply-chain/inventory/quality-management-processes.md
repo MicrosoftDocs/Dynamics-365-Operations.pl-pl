@@ -100,3 +100,6 @@ Warto określić niepowtarzalny typ dokumentu dla korekty na stronie **Typ dokum
 [Konfigurowanie zleceń kontroli jakości](tasks/set-up-quality-orders.md)
 
 [Sprawdzenie jakości towarów](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

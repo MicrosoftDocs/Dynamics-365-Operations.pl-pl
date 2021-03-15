@@ -67,3 +67,6 @@ Jeśli planujesz ustalać wiele zamówień w tym samym czasie, parallelizing prz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -186,3 +186,6 @@ Jeżeli trzeba dokonać korekty na koncie księgowym modułu Rozrachunki z odbio
 ### <a name="the-system-allows-it"></a>System na to pozwala
 
 Organizacje często korzystają z funkcjonalności pojedynczego załącznika dlatego, że po prostu system na to pozwala. Niestety, nie wiedzą o skutkach używania tego mechanizmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

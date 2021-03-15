@@ -81,3 +81,6 @@ W tym temacie opisano sposób tworzenia dostawy bezpośredniej na podstawie zam�
     - Strona Dostawa bezpośrednia działa jak pulpit dostarczający pracownikowi działu zakupów całościowy obraz wszystkich wierszy zamówienia sprzedaży, które mają być dostarczane bezpośrednio, i umożliwia tworzenie odpowiednich zamówień zakupu. Ponadto na kartach Potwierdzenie i Dostawa można wyświetlać otwarte zamówienia z dostawą bezpośrednią i zamówienia potwierdzone.  
     - Po utworzeniu zamówienia dostawy bezpośrednie jest ono automatycznie przenoszone na kartę Potwierdzenie. Zamówienie można potwierdzić bezpośrednio z tej strony. Po potwierdzeniu zakupu jest on automatyczne przenoszony do karty Dostawa, na której można zarejestrować jego otrzymanie.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

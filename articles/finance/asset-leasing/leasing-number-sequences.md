@@ -36,3 +36,6 @@ W tym temacie opisano sposób tworzenia numeracji dla identyfikatorów wynajmu. 
 4. Wybierz sekwencję numerów odwołania **Identyfikator wynajmu**. Ta numeracja zostanie użyta do wygenerowania unikatowego identyfikatora każdego wynajmu.
 5. Wybierz sekwencję numerów odwołania **Identyfikator procesu**. Ta numeracja zostanie użyta do wygenerowania unikatowego identyfikatora każdego procesu przeszacowania indeksu.
 6. Wybierz sekwencję numerów odwołania **Identyfikator propozycji rozwiązania umowy**. Ta sekwencja numerów zostanie wykorzystana do wygenerowania unikalnego identyfikatora dla każdej propozycji zakończenia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

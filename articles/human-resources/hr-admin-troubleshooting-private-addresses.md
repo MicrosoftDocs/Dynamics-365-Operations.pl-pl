@@ -39,3 +39,6 @@ Aby rozwiązać ten problem, odbiorca musi wykonać następujące kroki dla zdup
 3. Wybierz opcję **Zapisz**.
 
 ![Strona parametrów globalnej książki adresowej](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

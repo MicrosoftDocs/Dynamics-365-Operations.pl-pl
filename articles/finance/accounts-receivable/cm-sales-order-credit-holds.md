@@ -264,3 +264,6 @@ Zamówienia sprzedaży o wymuszonej przyczynie wstrzymania nie mogą zostać zwo
 Zarządzanie kredytami może być używane obecnie tylko dla zamówień sprzedaży. Faktury niezależne, punkty zamówień sprzedaży i biura obsługi zamówień będą używały tymczasowych limitów kredytowych oraz ubezpieczeń/gwarancji dodawanych do korekty limitu kredytu. Nie będą one używały reguł blokowania i nie zostaną umieszczone na liście blokad, jeśli wystąpił problem z limitem kredytu.
 
 Brak obsługi faktur projektu w zarządzaniu kredytami.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

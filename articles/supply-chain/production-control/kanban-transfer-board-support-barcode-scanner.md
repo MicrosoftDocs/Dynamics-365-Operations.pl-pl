@@ -191,3 +191,6 @@ Stan wybranego zadania oraz stan wszelkich niezaplanowanych zadań dla w dla kar
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

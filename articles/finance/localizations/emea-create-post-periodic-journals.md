@@ -47,3 +47,6 @@ Na przykład aby wygenerować kwartalne księgowania, wprowadź **4** w polu **L
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

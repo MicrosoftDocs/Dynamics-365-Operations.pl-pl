@@ -50,3 +50,6 @@ Faktury anulujące i korygujące można określić na dwa sposoby:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

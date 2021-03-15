@@ -74,3 +74,6 @@ Relacje zadań serwisowych tworzone dla zlecenia serwisowego są dostępne z poz
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

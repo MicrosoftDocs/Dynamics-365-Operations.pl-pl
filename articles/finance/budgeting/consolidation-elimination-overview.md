@@ -93,3 +93,6 @@ W konsolidowanej firmie nie będzie można przetwarzać ani tworzyć budżetów.
 Aby uzyskać więcej informacji, zobacz [Przeszacowanie waluty w konsolidowanej firmie](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

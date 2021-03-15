@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 „wyszukiwany termin”
 – lub –
 
 site:msdn.microsoft.com dynamics ax 2012 „wyszukiwany termin”
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

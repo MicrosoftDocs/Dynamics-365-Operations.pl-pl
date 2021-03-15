@@ -51,3 +51,6 @@ To zadanie prowadzi przez proces dodawania konta głównego do istniejącego pla
 21. W polu **Typ przeliczania waluty** wybierz metodę obliczania kursów wymiany dla konta.
 22. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

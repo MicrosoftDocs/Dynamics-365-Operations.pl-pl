@@ -60,3 +60,6 @@ Utwórz produkt główny dla wstępnie zdefiniowanych wariantów. Dane wykorzyst
 10. Kliknij przycisk **Zapisz**.
 11. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -174,3 +174,6 @@ W przypadku używania tej metody obliczania w sytuacji zwrotu części zamówien
 [Wielokanałowe zaawansowane opłaty automatyczne](omni-auto-charges.md)
 
 [Włączanie i konfigurowanie opłat automatycznych według kanałów](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

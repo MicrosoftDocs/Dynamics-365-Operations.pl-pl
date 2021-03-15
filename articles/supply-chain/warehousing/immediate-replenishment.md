@@ -56,3 +56,6 @@ Jeśli funkcja natychmiastowego uzupełniania zapasów jest wybrana dla wiersza 
 
 - Upewnij się, że zastosowany szablon uzupełnienia zapasów popytu jest skonfigurowany tak, aby używał poprawnych szablonów lokalizacji i szablonów pracy typu **Uzupełnianie zapasów**.
 - Upewnij się, że jest wystarczająca ilość dostępnych zapasów w lokalizacjach, gdzie szablon uzupełniania zapasów popytu szuka dostępnych zapasów dla uzupełnienia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

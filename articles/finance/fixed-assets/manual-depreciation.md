@@ -75,3 +75,6 @@ Suma wartości procentowych dla wszystkich interwałów nie musi być równa 100
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Waru
 8. W polu **Wyrażenie** wpisz wartość. Na przykład wpisz `50`. 
 9. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

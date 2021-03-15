@@ -55,3 +55,6 @@ Aby anulować wycofaną transakcję, należy wykonać następujące kroki.
 Po wybraniu opcji **Śledzenie wycofania** zostanie wyświetlone okno dialogowe, w którym są wyświetlane zarówno oryginalne transakcje, jak i transakcje wycofane, wraz z połączonym numerem śledzenia.
 
 Odwołania można również śledzić na odpowiedniej stronie **Harmonogramy**. Pole **Wycofaj** jest czyszczone, podczas gdy pole **Arkusz zaksięgowany** jest zaznaczane. Ponadto pole **Najnowszy numer arkusza** jest aktualizowana o numer arkusza transakcji anulowania, a pole **Numer arkusza** jest aktualizowane numerem arkusza wycofywania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

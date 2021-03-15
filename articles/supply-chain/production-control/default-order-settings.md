@@ -203,3 +203,6 @@ Aby ustawić opcji sprawdzania poprawności:
 1. Na karcie **Ogólne** ustawienie **Sprawdzania poprawności dla domyślnych ilości zamówienia** na jedną z następujących wartości:
     - **Ścisłe** — tę opcję należy wybrać, aby zapewnić, że wszystkie **Standardowe wartości ilości zamówienia** będą wielokrotnością wartości **Wiele** dla każdej skróconej karty (**Zamówienie zakupu**, **Zapasy** i **Zamówienie sprzedaży**).
     - **Standardowe** — tę opcję należy wybrać, aby zastosować sprawdzanie poprawności standardowe (która działa tak samo, jak gdy ta funkcja nie jest włączona).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

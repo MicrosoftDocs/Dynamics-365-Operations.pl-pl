@@ -57,3 +57,6 @@ Jeśli korzystasz z zasobów operacyjnych typu **zasoby ludzkie** połączonych 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

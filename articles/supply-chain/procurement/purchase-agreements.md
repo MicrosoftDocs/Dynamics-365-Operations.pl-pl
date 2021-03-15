@@ -113,3 +113,6 @@ Wymiary finansowe można skopiować do nagłówków dokumentu lub pojedynczych w
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

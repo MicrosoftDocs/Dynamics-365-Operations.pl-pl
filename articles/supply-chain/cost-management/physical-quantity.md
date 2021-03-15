@@ -146,3 +146,6 @@ Poniższa tabela przedstawia wynik obliczeń dla obiektu magazynu. Wyniki można
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

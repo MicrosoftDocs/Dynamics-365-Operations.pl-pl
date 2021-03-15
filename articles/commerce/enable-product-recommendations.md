@@ -113,3 +113,6 @@ Aby uzyskać informacje o spersonalizowanych rekomendacjach, zobacz [Włączanie
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

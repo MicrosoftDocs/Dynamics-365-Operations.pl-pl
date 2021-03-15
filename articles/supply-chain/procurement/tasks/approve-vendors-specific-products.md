@@ -61,3 +61,6 @@ W tej procedurze pokazano sposób zatwierdzania dostawców dla określonych prod
 31. Zamknij stronę.
 32. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

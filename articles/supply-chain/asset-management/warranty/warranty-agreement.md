@@ -54,3 +54,6 @@ Umowa gwarancyjna może zawierać kilka wierszy umowy w celu pokrycia gwarancji 
     4. W polu **procent** wprowadź wartość procentową pokrycia dla wiersza gwarancji. Wartość procentowa wskazuje stopień pokryty przez firmę.
 
 ![Strona Gwarancja](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

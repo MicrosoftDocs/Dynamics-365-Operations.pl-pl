@@ -51,3 +51,6 @@ Poniższe tematy zawierają opisy działania aparatu planowania podczas określa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

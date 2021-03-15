@@ -78,3 +78,6 @@ Zamiast sumować popyt na końcu procesu alokacji i uzupełniać zapasy na podst
 |   Dyrektywy lokalizacji   |                                                       Dyrektywy lokalizacji są wymagane w celu skierowania pracy do lokalizacji, w których jest wymagane uzupełnianie zapasów i z których będą pobierane zapasy.                                                        |
 |     Szablony pracy      |                                                   Szablony pracy typu <strong>Uzupełnianie zapasów</strong> są wymagane w celu utworzenia pracy uzupełniania zapasów, która spowoduje przeniesienie zapasów do żądanych lokalizacji.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

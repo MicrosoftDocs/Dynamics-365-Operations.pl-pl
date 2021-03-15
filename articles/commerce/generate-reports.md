@@ -137,3 +137,6 @@ Aby wygenerować raport **sprzedaży organizacji**, należy wykonać następują
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Commerce — strona główna](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

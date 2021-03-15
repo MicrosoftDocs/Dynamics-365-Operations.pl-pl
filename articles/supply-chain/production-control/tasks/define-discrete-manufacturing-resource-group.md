@@ -57,3 +57,6 @@ Grupa zasobów to zbiór zasobów operacyjnych, które zazwyczaj odpowiadają fi
 6. Na liście znajdź i zaznacz odpowiedni rekord.
 7. Na liście kliknij łącze w wybranym wierszu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

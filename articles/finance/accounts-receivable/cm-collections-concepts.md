@@ -121,3 +121,6 @@ Klikając **płatności przy niewystarczających funduszach** na stronie **Windy
 [Obsługa wstrzymania kredytu zamówień sprzedaży](./cm-sales-order-credit-holds.md)
 
 [Zadania okresowe zarządzania kredytami odbiorcy](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

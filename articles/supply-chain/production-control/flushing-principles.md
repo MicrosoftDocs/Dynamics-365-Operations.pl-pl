@@ -62,3 +62,6 @@ Reguła rozliczania Zakończenie wskazuje, że materiał będzie automatycznie z
 
 ### <a name="available-at-location"></a>Dostępne w lokalizacji
 Reguła rozliczania Dostępne w lokalizacji wskazuje, że materiał będzie automatycznie zużywany z chwilą zarejestrowania jako pobranego do produkcji. Materiał jest rejestrowany jako pobrany z lokalizacji z chwilą ukończenia pracy pobrania surowca lub gdy materiał jest dostępny w lokalizacji wejściowej produkcji, a wiersz materiału został zwolniony do magazynu. Lista pobrania wygenerowana w trakcie procesu jest księgowana w zadaniu wsadowym. Ta reguła ma zastosowanie, jeśli na przykład masz wiele działań pobrania do jednego zlecenia produkcyjnego. W takim wypadku nie trzeba ręcznie aktualizować listy pobrania i można uzyskać bieżący obraz saldo PWT.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

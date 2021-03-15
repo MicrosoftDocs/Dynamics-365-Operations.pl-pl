@@ -41,3 +41,6 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
     * Dołącz dodatkowe informacje do arkusza.  
     * Na przykład do arkusza można dołączyć zeskanowane świadectwo wywozowego UE.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

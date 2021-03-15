@@ -49,3 +49,6 @@ Jeśli ta sama osoba wymaga dostępu do portalu dostawców dla wielu kont dostaw
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

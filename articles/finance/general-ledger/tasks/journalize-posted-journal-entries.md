@@ -39,3 +39,6 @@ W tej procedurze pokazano sposób zapisywania zaksięgowanych zapisów arkusza w
 9. Kliknij przycisk **OK**, aby zamknąć stronę filtru.
 10. Kliknij przycisk **OK**, aby rozpocząć proces generowania arkuszy. Po zakończeniu procesu zostanie wygenerowany raport.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

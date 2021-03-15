@@ -73,3 +73,6 @@ Pola **alias**, **nazwa UPN** i **zewnętrzny identyfikator podrzędny** na karc
 [Tworzenie profilu funkcji handlu detalicznego](retail-functionality-profile.md)
 
 [Konfigurowanie pracownika](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ W tej procedurze pokazano, jak można wygasić lub przedłużyć świadczenie or
 15. Kliknij opcję Świadczenia.
 16. Na liście znajdź świadczenie i zaznacz rekord. Zwróć uwagę na nową datę końcowa okresu obowiązywania.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

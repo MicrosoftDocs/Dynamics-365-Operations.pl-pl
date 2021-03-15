@@ -184,3 +184,6 @@ Większość pól na zleceniach zmiany technologicznej jest taka sama, jak pola 
 | BHPiOŚ | Określ, czy zasady dotyczące BHPiOŚ mają być zastosowane do zmiany. W takim przypadku można wybrać odpowiednie reguły. |
 
 Aby skopiować informacje o zmianach dotyczących produktów, których dotyczy problem, można skorzystać z przycisku **Zachowaj/Skopiuj zmiany informacji**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Można połączyć kody informacji tak, aby po uruchomieniu jednego kodu informa
 **Przykład 2: Podłącz kody informacji do grup kodów informacji**
 
 W przypadku sprzedaży niektórych produktów, na przykład przenośnych urządzeń, zawsze chcemy zbierać określone informacje, takich jak numer telefonu, identyfikator urządzenia przenośnego (MEID) i numer seryjny. Chcemy jednak gromadzić też i inne informacje w przypadku komputera typu tablet niż w przypadku telefonu komórkowego. Można skonfigurować grupę kodów informacji zawierającą monity o numer telefonu, numer seryjny i MEID, a następnie dołączyć grupę kodów informacji do indywidualnego kodu informacji. Po uruchomieniu kodu informacji dla określonego produktu można uruchomić grupę kodów informacji, co ułatwi zbieranie danych wspólnych bez konieczności definiowania wielu zestawów połączonych kodów informacji dla każdego urządzenia.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

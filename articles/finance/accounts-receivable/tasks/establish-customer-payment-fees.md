@@ -50,3 +50,6 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 18. W polu **Waluta opłaty** wybierz walutę opłaty. Jest to waluta, w której zostanie utworzona opłata.  
 19. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

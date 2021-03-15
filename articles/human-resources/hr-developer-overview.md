@@ -62,3 +62,6 @@ Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestand
 - [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)
 - [Przewodnik administratora](hr-admin-overview.md)
 - [Przewodnik użytkownika](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -32,3 +32,6 @@ Aby skonfigurować rabaty na potrzeby zarządzania transportem, przejdź do **Za
 Możesz zdecydować, czy chcesz przekazać rabat klientowi (ustawiając typ rabatu na klienta), czy zachować go w firmie (ustawiając typ rabatu na nadawcę). Umożliwia to zdefiniowanie ustawień, w których marża jest pobierana z obliczonych opłat frachtowych.
 
 Możesz ustawić wiele kwalifikatorów dla każdego rabatu, takich jak przewoźnik, usługa przewoźnika, warunki dostawy, klient, miejsce docelowe i inne.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

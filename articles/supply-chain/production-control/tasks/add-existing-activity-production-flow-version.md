@@ -55,3 +55,6 @@ Zadanie wymaga przepływu produkcji z już utworzoną wersją i działaniami.
 3. Wprowadź lub wybierz wartość w polu Działanie.
 4. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -438,3 +438,6 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 [Stany zapasów](../inventory/inventory-statuses.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

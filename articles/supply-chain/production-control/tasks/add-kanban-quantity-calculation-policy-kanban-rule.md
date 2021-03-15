@@ -62,3 +62,6 @@ Ta procedura skupia się na tworzeniu zasady obliczania liczby kart Kanban oraz 
 8. Na liście kliknij łącze w wybranym wierszu.
     * Wybierz zasadę Speaker2016, którą utworzono w poprzednim podzadaniu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

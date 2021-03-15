@@ -57,3 +57,6 @@ Podczas kopiowania wierszy szablonu do zleceń serwisowych lub do umów serwisow
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Kopiowanie wierszy szablonów serwisu](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

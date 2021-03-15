@@ -96,3 +96,6 @@ Każde pole podczas edytowania różnie oddziałuje na transakcję:
 - **Edytowanie warunków rabatu gotówkowego** — zmieniają się rabaty gotówkowe na podstawie daty podstawy i warunków rabatu gotówkowego.
 
 Po zakończeniu edytowania ustawień płatności kliknij opcję **Zamknij**, aby zapisać wprowadzone zmiany.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

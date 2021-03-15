@@ -75,3 +75,6 @@ Jeśli włączono funkcję w wersji zapoznawczej o nazwie Korekty urlopów i nie
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Konfigurowanie typów urlopów i nieobecności](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

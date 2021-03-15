@@ -35,3 +35,6 @@ Właściwość **Cel uwierzytelnienie serwera** z certyfikatu V5 jest wystawiana
 Ta aktualizacja umożliwia rozwiązanie alternatywne dotyczące sprawdzania poprawności certyfikatów, co oznacza, że można ustanowić bezpieczną komunikację.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

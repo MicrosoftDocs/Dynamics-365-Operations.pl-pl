@@ -88,3 +88,6 @@ Aby dołączyć do programu lojalnościowego, strona marketingowa może zostać 
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

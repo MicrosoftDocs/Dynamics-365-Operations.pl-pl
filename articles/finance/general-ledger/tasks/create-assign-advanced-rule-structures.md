@@ -58,3 +58,6 @@ W tym temacie wyjaśniono, jak utworzyć i przypisać strukturę reguły zaawans
 17. Zamknij stronę.
 18. Wybierz **Aktywuj**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

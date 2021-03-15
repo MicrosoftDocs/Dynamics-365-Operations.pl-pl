@@ -161,3 +161,6 @@ Ponieważ konfiguracje raportowania elektronicznego są współużytkowane przez
 7. Kliknij przycisk OK.
     * Domyślna konfiguracja mapowania modelu jest używana przez tę konfigurację formatu do generowania dokumentu elektronicznego (utworzony produkt wyjściowy zawiera kod firmy).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -197,3 +197,6 @@ Podczas jednego kroku procesu konfiguracji system proponuje wartość konfigurac
 
 [Tworzenie konwencji nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

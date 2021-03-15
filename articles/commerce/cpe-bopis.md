@@ -163,3 +163,6 @@ Aby uzyskać wszystkie ogólne problemy, należy zawsze najpierw zapoznać się 
 [Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Omówienie płatności wielokanałowych](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

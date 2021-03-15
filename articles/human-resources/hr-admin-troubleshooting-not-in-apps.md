@@ -55,3 +55,6 @@ Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Micros
     ![Przycisk synchronizacji](media/get-more.png)
 
     Po zakończeniu synchronizacji program Human Resources będzie wyświetlany na stronie głównej.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

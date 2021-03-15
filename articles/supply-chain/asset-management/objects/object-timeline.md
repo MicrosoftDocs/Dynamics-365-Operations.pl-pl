@@ -48,3 +48,6 @@ Oś czasu jest aktualizowana za każdym razem, gdy strona jest otwarta. Zawiera 
 - Zlecenia pracy, w tym zaksięgowane pozycje i notatki
 - Błędy
 - Oceny warunku
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -66,3 +66,6 @@ Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu. Ta proced
 15. W polu Zapotrzebowanie wprowadź lub wybierz wartość.
 16. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -292,3 +292,6 @@ W obciążeniu w jednostce skali tymi zadaniami wsadowymi można zarządzać w o
 - Przetwarzanie rekordów tabeli grupy czynności
 - Procesor komunikatów piasty magazynu do jednostki skalowania
 - Przetwórz żądania aktualizacji ilości dla wierszy zamówienia magazynowego
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

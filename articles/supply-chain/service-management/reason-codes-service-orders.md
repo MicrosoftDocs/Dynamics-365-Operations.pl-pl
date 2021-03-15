@@ -49,3 +49,6 @@ Kody przyczyn są opcjonalne. Użytkownik może zdecydować, czy potrzebny jest 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

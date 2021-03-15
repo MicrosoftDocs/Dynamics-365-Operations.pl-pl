@@ -54,3 +54,6 @@ Dla wszystkich subskrypcji dołączonych do grupy subskrypcji można wykonywać 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

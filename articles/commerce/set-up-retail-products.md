@@ -39,3 +39,6 @@ Aby móc oferować produkty w kanałach handlowych do ponownej sprzedaży, musis
 4. **Dodawanie produktów do asortymentu.** Asortyment reprezentuje kolekcję produktów, które oferujesz w kanałach. Można zdefiniować jeden lub kilka asortymentów, a każdy produkt można włączyć do jednego lub większej liczby asortymentów. Aby przypisać produkty do kanałów, należy przypisać asortymenty do tych kanałów. Podczas tworzenia asortymentu można dodać produkty, które jeszcze nie zostały zwolnione do firmy. Trzeba jednak zwolnić produkty do firmy przed udostępnieniem ich w kanałach.
 5. **Dodawanie produktów do hierarchii nawigacji.** Aby można było przeglądać produkty online lub w punkcie sprzedaży, muszą zostać sklasyfikowane w hierarchii nawigacji Commerce.
 6. **Dodawanie produktów do katalogów.** Mimo że ten krok jest opcjonalny dla punktu sprzedaży, sklepy internetowe wymagają umieszczenia produktów w co najmniej jednym katalogu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -79,3 +79,6 @@ Kwota amortyzacji jest taka sama co roku: (koszt nabycia - wartość odzyskana) 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

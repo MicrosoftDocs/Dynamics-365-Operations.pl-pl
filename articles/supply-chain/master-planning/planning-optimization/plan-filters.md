@@ -58,3 +58,6 @@ Filtr planu jest skonfigurowany z pozycjami A, B i C. Następnie uruchamiane są
 [Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
 
 [Anuluj planowanie pracy](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

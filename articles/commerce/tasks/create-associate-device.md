@@ -40,3 +40,6 @@ Ta procedura zawiera instruktaż tworzenia nowego urządzenia i kojarzenia go z 
 9. Na liście kliknij łącze w wybranym wierszu.
 10. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

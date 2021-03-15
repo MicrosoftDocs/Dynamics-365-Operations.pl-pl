@@ -220,3 +220,6 @@ Poniższe przykłady przedstawiają informacje, które mogą być używane w def
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

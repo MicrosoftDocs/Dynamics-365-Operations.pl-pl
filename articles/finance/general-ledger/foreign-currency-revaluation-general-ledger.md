@@ -112,3 +112,6 @@ Można cofnąć wyniki przeszacowania bez zachowania chronologii, ale wtedy moż
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

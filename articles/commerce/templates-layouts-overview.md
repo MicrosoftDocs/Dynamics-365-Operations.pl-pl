@@ -111,3 +111,6 @@ Aby rozpocząć korzystanie ze wstępnie ustawionych układów, należy zapozna�
 [Praca z układami predefiniowanymi](work-with-layouts.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

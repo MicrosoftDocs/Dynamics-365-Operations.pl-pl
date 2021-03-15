@@ -47,3 +47,6 @@ W tym temacie opisano sposób działania propozycji amortyzacji partii i wyjaśn
 3. Wybierz **Linie**.
 4. Wybierz opcję **Zaksięguj**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

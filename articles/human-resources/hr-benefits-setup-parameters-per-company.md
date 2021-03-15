@@ -42,3 +42,5 @@ Dla każdej organizacji oferującej świadczenia należy skonfigurować ustawien
    | **Domyślny adres e-mail nadawcy** | Adres e-mail, który ma być użyty do wysłania wiadomości e-mail z potwierdzeniem. |
 
 3. Wybierz opcję **Zapisz**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

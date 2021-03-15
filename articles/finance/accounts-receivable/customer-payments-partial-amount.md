@@ -59,3 +59,6 @@ Odbiorca może dokonać częściowej płatności, jeśli pozostała kwota nie zo
 
 
 Aby uzyskać więcej informacji, zobacz [Deponowanie płatności odbiorców](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

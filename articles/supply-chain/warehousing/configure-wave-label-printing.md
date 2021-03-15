@@ -931,3 +931,6 @@ Etykiety grupy czynności można przeglądać i ponownie drukować z następują
 - Historia etykiet grupy czynności
 
 W przypadku większości tych stron można znaleźć odpowiednią funkcję, zaznaczając odpowiednie **Etykiety grupy czynności** w grupie **Informacje pokrewne** na karcie **Wysyłki** w okienku akcji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

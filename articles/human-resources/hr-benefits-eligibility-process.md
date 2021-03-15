@@ -54,3 +54,6 @@ Ta procedura pokazuje działanie procesu kwalifikowania do świadczeń. Po zako�
 25. Otwórz filtr kolumn Stan.
 26. Sortuj od A do Z
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

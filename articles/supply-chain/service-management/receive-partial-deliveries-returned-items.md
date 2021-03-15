@@ -50,3 +50,6 @@ Jeśli wysyłka zwrotu zawiera ilość mniejszą niż pełna ilość wiersza zam
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Jeśli po przetwarzaniu arkusza kasowego kwota w polu **Kwota do przeniesienia**
 
 - [Zaliczki na rzecz pracownika (Europa Wschodnia)](tasks/advance-payment-employee.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

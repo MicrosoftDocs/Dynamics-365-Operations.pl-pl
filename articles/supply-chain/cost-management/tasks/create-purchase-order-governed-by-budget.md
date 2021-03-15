@@ -61,3 +61,6 @@ Ta procedura służy do tworzenia zamówienia zakupu sprawdzanego pod kątem dos
 4. Kliknij opcję Błędy lub ostrzeżenia dotyczące sprawdzania budżetu.
 5. Kliknij przycisk Zamknij.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

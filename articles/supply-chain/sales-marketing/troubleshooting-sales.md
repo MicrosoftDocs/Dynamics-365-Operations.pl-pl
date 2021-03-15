@@ -112,3 +112,6 @@ Supply Chain Management nie obsługuje obecnie obliczania prowizji za zaksięgow
 Pozycja pakietu jest niedostępna dla zamówienia zakupu, ponieważ w przypadku zbadania wierszy zamówienia sprzedaży dla towaru pakietu można zauważyć, że ilość wynosi *0* (zero), a stan jest *Anulowany*. Jest to celowe. Zamówienie sprzedaży kupuje tylko składniki towaru pakietu. Nie powoduje to nabycia samego towaru w pakiecie.
 
 Jeśli trzeba kupić pakiet, należy rozważyć, czy należy go oznaczyć jako element pakietu, ponieważ jest on przeznaczony do scenariuszy rozpoznawania przychodów. Aby uzyskać więcej informacji o elementach pakietów, zobacz temat [Pakiety](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

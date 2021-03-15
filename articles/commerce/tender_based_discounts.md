@@ -71,3 +71,6 @@ Detaliści często wykluczają niektóre produkty, takie jak nowe towary lub poz
 
 > [!NOTE]
 > Jeśli konfiguracja **Nie zezwalaj na żadne rabaty** jest ustawiona wartość **Tak**, do produktu nie będą stosowane żadne rabaty. Nie będą nawet stosowane rabaty oparte na metodach płatności.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

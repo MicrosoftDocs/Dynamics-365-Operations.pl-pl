@@ -67,3 +67,6 @@ Komunikat powitalny będzie teraz wyświetlany u góry każdej strony witryny, k
 
 [Dodawanie kodu skryptu do stron witryny w celu obsługi telemetrii](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

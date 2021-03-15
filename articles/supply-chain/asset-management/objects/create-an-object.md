@@ -115,3 +115,6 @@ Na tej skróconej karcie można dodawać lub usuwać serie czynności konserwacy
 ## <a name="financial-dimensions"></a>Wymiary finansowe
 
 Można wybrać wymiary finansowe dla składnika majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

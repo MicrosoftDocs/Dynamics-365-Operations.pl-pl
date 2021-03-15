@@ -97,3 +97,6 @@ Na poniższej ilustracji pokazano przykład otrzymanego wykresu.
 ![Wizualizacja stanu strefy a pracy](media/work-viz-chart.png "Wizualizacja stanu strefy a pracy")
 
 Ten wykres zawiera dwie strefy o nazwach **FLOOR** i **BULK** oraz strefę o nazwie **Puste**. Strefa **Puste** reprezentuje wszystkie wiersze pracy, które nie są członkami żadnej strefy. Na wykresie zawsze są wyświetlane wszystkie niepowiązane filtrowane dane jako **Puste**, co zapewnia możliwie największą widoczność. W strefie **FLOOR** wykres przedstawia trzy zamknięte linie i cztery otwarte linie. W strefie **BULK** wykres przedstawia cztery zamknięte linie, jedną otwartą linię i 24 anulowane linie. Na koniec wykres pokazuje osiem zamkniętych linii, które nie są częścią żadnej strefy i dlatego są wymienione jako **Puste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

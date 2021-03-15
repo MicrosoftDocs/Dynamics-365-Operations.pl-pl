@@ -47,3 +47,6 @@ Można ustawić stan zlecenia produkcyjnego na **Zgłoszenie wyrobów gotowych**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

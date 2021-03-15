@@ -125,3 +125,6 @@ W następujących krokach wyjaśnimy, w jaki sposób użytkownik usługi Regulat
 > [!NOTE]
 > Ten sposób uzyskiwania informacji o metadanych aplikacji jest jedynym dostępnym dla aplikacji wdrażanych lokalnie (w przypadku gdy używany jest lokalny model danych biznesowych (LBD) lub lokalny model wdrażania).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

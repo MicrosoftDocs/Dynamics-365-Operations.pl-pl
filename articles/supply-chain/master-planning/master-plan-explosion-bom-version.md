@@ -47,3 +47,6 @@ Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

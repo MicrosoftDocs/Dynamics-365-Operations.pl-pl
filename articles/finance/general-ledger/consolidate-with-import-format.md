@@ -42,3 +42,6 @@ W poniższej tabeli wymieniono format importu, którego należy używać podczas
 | 6            | BusinessUnit, 1 Dział, 2 | Atrybuty wymiaru finansowego, które są zdefiniowane w kolejności segmentów.<p>Strona **Eksportuj** umożliwia sprawdzenie, jak są zdefiniowane atrybuty.</p> |
 | 7            | 002,1,658 | <ul><li>Wartość wymiaru finansowego</li><li>Wymiar finansowy jako indeks dostarczany w RecordDimensions</li><li>Niejednoznaczny, niepowtarzalny identyfikator rekordu powiązany z unikalnym identyfikatorem rekordu z RecordTrans lub RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Wartości wymiarów skojarzone z transakcją z rekordu RecordBudget</li><li>Wymiar finansowy jako indeks dostarczany w RecordDimensions</li><li>Niejednoznaczny identyfikator rekordu wiersza, który jest zgodny z kolejnością wierszy transakcji w pliku</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

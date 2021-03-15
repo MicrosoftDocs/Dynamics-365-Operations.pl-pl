@@ -57,3 +57,6 @@ W tej procedurze pokazano sposób rejestrowania towarów za pomocą arkusza przy
 2. Kliknij opcję Dokument przyjęcia produktów.
 3. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

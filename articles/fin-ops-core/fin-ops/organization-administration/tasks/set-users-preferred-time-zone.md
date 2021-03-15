@@ -35,3 +35,6 @@ W poniższym temacie pokazano, jak użytkownik w roli administratora systemu mo�
 5. W polu **Strefa czasowa** wybierz opcję z listy rozwijanej.
 6. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

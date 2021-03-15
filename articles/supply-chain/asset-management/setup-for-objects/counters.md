@@ -66,3 +66,6 @@ Gdy typy składników majątku zostaną dodane do typu licznika w obszarze **Lic
 
 ![Rysunek 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

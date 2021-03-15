@@ -853,3 +853,6 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
     - Zamówienia przeniesienia i pobranie surowca
 
 - Reguła konsolidacji kontenerów dla pakowania według jednostki dyrektywy ma pewne ograniczenia. W przypadku rezerwacji zamówionych zaleca się, aby nie stosować szablonów konstruowania kontenerów, w których jest włączone pole **pakowania według jednostek dyrektywy**. W bieżącym projekcie dyrektywy lokalizacji nie są używane podczas tworzenia pracy magazynowej. Dlatego tylko najniższa jednostka w grupie sekwencji jednostek (jednostka magazynowa) jest stosowana w trakcie kroku konteneryzacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ W tym przewodniku po zadaniach zostaną skonfigurowane profile księgowania śro
 88. W polu **Konto główne** podaj żądane wartości.
 89. W polu **Konto przeciwstawne** podaj żądane wartości.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

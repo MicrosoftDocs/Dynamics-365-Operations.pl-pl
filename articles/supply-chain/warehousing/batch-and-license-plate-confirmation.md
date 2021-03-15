@@ -47,3 +47,6 @@ Funkcjonalność potwierdzania partii i numeru identyfikacyjnego można skonfigu
 
 1. Na urządzeniu przenośnym w menu przejdź do pozycji Konfiguracja potwierdzenia pracy.  
 1. Wybierz opcję potwierdzania partii lub numeru identyfikacyjnego. Obie opcje są dostępne dla pobrań typów pracy, w których nie włączono opcji automatycznego potwierdzania.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

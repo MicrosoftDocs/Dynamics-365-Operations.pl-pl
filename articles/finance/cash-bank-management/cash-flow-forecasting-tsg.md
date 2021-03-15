@@ -52,3 +52,6 @@ Upewnij się, że skonfigurowano miary „Miara przepływu pieniężnego V2” i
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Czy jednostki magazynu jednostek zostały odświeżone?
 
 Należy okresowo odświeżać jednostki, aby mieć pewność, że dane są aktualne i dokładne. Aby ręcznie odświeżyć określoną jednostkę, przejdź do **Administrowanie systemem \> Konfiguracja \> Magazyn jednostek**, wybierz tę jednostkę, a następnie wybierz opcję **Odśwież**. Dane mogą być również aktualizowane automatycznie. Na stronie **Magazyn jednostek** ustaw opcję **Automatyczne odświeżanie** na wartość **Tak**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Nowa funkcja obsługi ładunków przychodzących *Przekroczenie przyjmowania ilo
 1. Przyjęcie nadmiernej ilości obciążenia pracą
 
 Aby uzyskać więcej informacji, zajrzyj do [Księguj zarejestrowane ilości produktów na podstawie zamówień zakupu](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

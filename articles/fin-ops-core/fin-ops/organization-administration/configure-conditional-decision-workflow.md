@@ -52,3 +52,6 @@ System decyduje, której gałęzi użyć, oceniając przesłany dokument, aby us
     2. Wybierz rekord w obszarze **Sprawdź poprawność warunku** formularza.
     3. Kliknij przycisk **Test**. System oszacuje rekord i określi, czy rekord spełnia określone warunki.
     4. Kliknij przycisk **OK** lub **Anuluj**, aby powrócić do formularza **Właściwości**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Podczas aktualizowania istniejącego żądania czasu wolnego można dodać zał�
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

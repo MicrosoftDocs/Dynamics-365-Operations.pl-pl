@@ -123,3 +123,6 @@ Następujące najważniejsze wymiary są używane jako filtry do dzielenia zagre
 | Kalendarze obrachunkowe                   | Kalendarz, Opis kalendarza                                                                                       |
 | Lata obrachunkowe                       | Rok kalendarzowy                                                                                                        |
 | Okresy obrachunkowe                     | Okres roku kalendarzowego                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

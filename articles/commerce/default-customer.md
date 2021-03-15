@@ -112,3 +112,6 @@ Poniższy obraz przedstawia przykład konfiguracji tworzenia odbiorcy.
 [Omówienie kanałów](channels-overview.md)
 
 [Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

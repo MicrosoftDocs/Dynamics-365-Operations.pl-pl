@@ -111,3 +111,6 @@ Aby uzyskać dostęp do konstruktora witryn, przejdź na kartę **e-Commerce** n
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

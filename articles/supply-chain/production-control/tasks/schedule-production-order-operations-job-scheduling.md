@@ -55,3 +55,6 @@ Ten temat skupia się na planowaniu zlecenia pracy przy użyciu funkcji planowan
 6. W okienku akcji kliknij opcję **Zlecenie produkcyjne**.
 7. Wybierz **Wszystkie zadania**. Należy zauważyć, że na podstawie aktywnej marszruty planowanie zadań tworzy 5 zadań.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

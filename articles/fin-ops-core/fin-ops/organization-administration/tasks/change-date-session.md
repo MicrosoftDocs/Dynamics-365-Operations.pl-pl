@@ -32,3 +32,6 @@ W tym temacie wyjaśniono, jak zmienić datę sesji. Domyślnie podczas wprowadz
 2. W polu **Data** wprowadź datę.
 3. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Jednym ze sposobów poprawienia wydajności przy użyciu wbudowanego aparatu pla
 
 > [!NOTE]
 > Ograniczy to okres rozłożeń wykonywanych dla tego planu głównego do jednego dnia.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

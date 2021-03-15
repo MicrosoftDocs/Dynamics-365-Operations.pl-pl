@@ -77,3 +77,6 @@ Ilustracja poniżej przedstawia przepływ danych.
 [Stosowanie filtrów do planu](plan-filters.md)
 
 [Anuluj planowanie pracy](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

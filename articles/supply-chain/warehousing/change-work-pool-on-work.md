@@ -148,3 +148,6 @@ Strona **Szczegóły pracy** służy do wyświetlania pracy, która została utw
 > Po wyświetleniu okna dialogowego **Zmień pulę pracy** pole **Identyfikator puli pracy** może domyślnie być puste Jeśli pole jest puste po wybraniu opcji **OK** w celu zastosowania zmian, Ppula pracy zostanie całkowicie usunięta z pracy.
 >
 > Oprócz przełączenia pul pracy można skorzystać z tej procedury, aby dodać pulę pracy do dowolnego elementu pracy, który jej nie ma, lub usunąć pulę pracy z dowolnego elementu pracy, który ją posiada.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

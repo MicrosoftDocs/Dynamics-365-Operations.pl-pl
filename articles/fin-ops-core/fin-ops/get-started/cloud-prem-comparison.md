@@ -176,3 +176,6 @@ Aby wyświetlić listę funkcji dostępnych we wdrożeniach lokalnych, zobacz [F
 
 \* W środowiskach lokalnych PerfTimer wyświetla tylko wyniki dla klienta.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

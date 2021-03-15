@@ -50,3 +50,6 @@ W tym temacie wyjaśniono sposób przetwarzania zlecenia kontroli jakości. Zada
 4. Kliknij przycisk **OK**.
 5. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Ta procedura prowadzi przez proces tworzenia wariantów produktu dla produktu g�
     * Opisy wszystkich wariantów można wygenerować na podstawie kombinacji wartości wymiarów produktu. Opisy są opcjonalne.  
 5. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

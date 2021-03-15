@@ -121,3 +121,6 @@ Ten temat zawiera krótki opis scenariuszy dla określonych krajów, takich jak 
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -106,3 +106,6 @@ Wybierz typy dokumentów, które powinny być dostępne do drukowania załączni
 ## <a name="the-number-sequences-tab"></a>Karta Sekwencje numerów
 
 Wybierz żądane sekwencje numerów w tej sekcji. Istnieją dwie sekwencje numerów dla składników majątku: jedna dla składników majątku utworzonych ręcznie, a druga dla składników majątku utworzonych za pośrednictwem oczekujących składników majątku.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

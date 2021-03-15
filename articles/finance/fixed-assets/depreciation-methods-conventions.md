@@ -90,3 +90,6 @@ Można wybrać jedną z następujących metod amortyzacji.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -835,3 +835,6 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
 [Symulator urządzeń peryferyjnych dla Commerce](dev-itpro/retail-peripheral-simulator.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

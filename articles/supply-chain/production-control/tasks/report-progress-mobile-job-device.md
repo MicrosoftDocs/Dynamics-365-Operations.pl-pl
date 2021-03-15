@@ -64,3 +64,6 @@ Aby można było uruchomić tę procedurę, musisz mieć rolę Administrator sys
 29. Kliknij przycisk OK.
 30. Wybierz przyczynę, dlaczego wyrejestrowujesz się wcześniej.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

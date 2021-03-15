@@ -150,3 +150,6 @@ Aby uzyskać więcej informacji na temat tworzenia pól niestandardowych, zobacz
 [Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -36,3 +36,6 @@ Procedura zadania rozliczenia i księgowania podatku rozlicza salda podatku na k
 5. W polu **Data transakcji** wprowadź datę.
 6. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

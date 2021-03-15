@@ -189,3 +189,6 @@ Teraz można używać jednostek danych **Jednostka identyfikatora Common Data Se
 ## <a name="related-topic"></a>Powiązany temat
 
 [Wyszukiwanie produktów i wariantów produktów podczas wprowadzania zamówień](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

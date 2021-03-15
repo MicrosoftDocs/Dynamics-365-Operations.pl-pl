@@ -40,3 +40,6 @@ Wykonaj następujące kroki, aby przenieść zlecenie serwisowe do następnego e
 4.  W formularzu **Zmień etap serwisu** wybierz odpowiedni etap.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

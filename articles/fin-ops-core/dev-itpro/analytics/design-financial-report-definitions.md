@@ -84,3 +84,6 @@ W poniższej tabeli opisano karty w definicji raportu oraz sposób wykorzystania
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

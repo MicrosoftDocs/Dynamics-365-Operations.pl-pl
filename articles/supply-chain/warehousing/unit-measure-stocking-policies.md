@@ -49,3 +49,6 @@ W ramach tworzenia zwolnionych produktów należy wybrać domyślne jednostki dl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

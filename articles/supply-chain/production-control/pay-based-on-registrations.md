@@ -598,3 +598,6 @@ Jeśli pracownik nie przyjdzie do pracy w dniu roboczym oraz nie ma planowanej n
 - Automatyczne wstawianie nieobecności
 
 Podczas obliczania dziennych rejestracji dla pracownika, który ma włączoną funkcję elastycznych godzin pracy, kod nieobecności określony w polu **Automatyczne wstawianie elastycznego czasu pracy-** jest używany jako domyślny kod nieobecności. Jeśli pracownik nie ma włączonej funkcji elastycznych godzin pracy, jest używany kod nieobecności określony w polu **Automatyczne wstawianie nieobecności**. Jeśli w firmie części pracowników ma, a część nie ma włączonej funkcji elastycznych godzin pracy, należy skonfigurować oba parametry.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

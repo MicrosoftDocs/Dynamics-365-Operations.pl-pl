@@ -56,3 +56,6 @@ Pola współczynników konwersji identyfikują przeliczniki z częstotliwości p
    | **Godzinowy współczynnik konwersji** | Roczny współczynnik konwersji dla częstotliwości płatności. Na przykład roczny współczynnik konwersji dla miesięcznej częstotliwości wypłat wynosi: </br></br>(12 miesięcznych płatności / 2080 godziny) = 0,005769
 
 4. Wybierz opcję **Zapisz**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

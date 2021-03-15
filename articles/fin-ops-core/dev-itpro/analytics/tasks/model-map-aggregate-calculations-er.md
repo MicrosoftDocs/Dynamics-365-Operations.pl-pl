@@ -116,3 +116,6 @@ Ta procedura została utworzona dla użytkowników z przypisaną rola administra
 68. Kliknij przycisk Zapisz.
     * Należy zwrócić uwagę, że pole „Wykonanie w” wskazuje, że to grupowanie będzie wykonane w czasie procesu w pamięci, nawet jeśli nie zdefiniowano żadnych agregacji, a wybrane źródło danych typu „Rekordy w tabeli” odnosi się do tej samej tabeli „Intrastat”. Dzieje się tak, ponieważ źródło danych zawiera kilka pól obliczeniowych, których jeszcze nie można przełożyć na poziom bazy danych SQL.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

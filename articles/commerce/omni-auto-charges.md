@@ -221,3 +221,6 @@ Jeśli użytkownik ręcznie zastąpi obliczone opłaty lub doda ręcznie opłat�
 
 [Proporcjonalne dzielenie opłat z nagłówka między pasujące wiersze sprzedaży](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

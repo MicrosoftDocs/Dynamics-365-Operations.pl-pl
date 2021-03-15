@@ -204,3 +204,6 @@ Zestawienia to widoki dla menedżerów odpowiedzialnych za kontrolowanie kosztó
 Wersje są używane do symulowania, wyświetlania i porównywania różnych wyników. Domyślnie wszystkie koszty rzeczywiste są wyświetlane w jednej wersji podstawowej określanej jako *rzeczywista*. Dla budżetów i obliczeń można pracować z tyloma wersjami, ile jest potrzebnych. Można na przykład zaimportować dane budżetu do oryginalnej wersji, a następnie skorygować budżet w nowej wersji. Dla obliczeń można tworzyć wiele wersji. W tych różnych wersjach można wówczas tworzyć obliczenia przy użyciu różnych reguł obliczeniowych, które będą stosowane dla alokacji kosztów.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

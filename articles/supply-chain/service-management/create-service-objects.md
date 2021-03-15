@@ -42,3 +42,6 @@ Przedmioty serwisu to aktywa i produkty klienta, dla których można wykonać us
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

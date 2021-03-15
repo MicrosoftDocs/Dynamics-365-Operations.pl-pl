@@ -65,3 +65,6 @@ W bibliotece modułów są dostępne następujące typy modułów:
 [Moduł nagłówka](author-header-module.md)
 
 [Moduł stopki](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

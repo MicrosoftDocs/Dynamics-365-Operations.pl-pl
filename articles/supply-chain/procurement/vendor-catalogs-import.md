@@ -69,3 +69,6 @@ Szablon pliku importu katalogu jest plikiem XSD służącym do utworzenia pliku 
 3. W oknie dialogowym **Zapisz jako** wybierz lokalizację, gdzie ma być przechowywany szablon pliku katalogu, i zapisz plik.
 
 Aby uzyskać więcej informacji i przykłady, zobacz ten wpis na blogu: [Katalogi dostawców w systemie Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

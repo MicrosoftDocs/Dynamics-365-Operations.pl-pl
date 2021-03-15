@@ -39,3 +39,6 @@ W tej procedurze pokazano sposób wyświetlania przyczyn dużego odchylenia prod
 6. Kliknij przycisk Wyświetl porównanie kosztów.
 7. Kliknij przycisk Zamknij.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

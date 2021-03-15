@@ -119,3 +119,6 @@ W tym przykładzie użyjesz utworzonych konfiguracji ER dla przykładowej firmy 
 23. Kliknij przycisk OK.
     * Przejrzyj produkt wyjściowy. Dane wyjściowe zostały wygenerowane jako dokument programu Word z osadzonymi obrazami prezentującymi logo firmy, podpis osoby upoważnionej i wybrany tekst znaku wodnego.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

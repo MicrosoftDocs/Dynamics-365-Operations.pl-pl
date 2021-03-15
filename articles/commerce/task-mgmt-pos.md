@@ -63,3 +63,6 @@ Na ilustracji przedstawiono kartę **Listy zadań**.
 [Tworzenie list zadań i dodawanie zadań](task-mgmt-create-lists.md)
 
 [Przypisywanie list zadań do sklepów lub pracowników etatowych](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

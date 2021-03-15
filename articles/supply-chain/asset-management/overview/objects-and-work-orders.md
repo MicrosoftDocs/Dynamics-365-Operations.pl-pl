@@ -54,3 +54,6 @@ Aby zaplanować i uruchomić zadanie konserwacji w zleceniu pracy, należy wykon
 
 > [!NOTE]
 > Generalnie w trakcie pracy w Dynamics 365 Supply Chain Management i module **Zarządzania składnikami majątku** wybierz opcję **Nowy**, aby utworzyć nowy rekord, wybierz **Edytuj**, aby zaktualizować istniejący rekord, a następnie wybierz **Zapisz**, aby zapisać nowy lub edytować dane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

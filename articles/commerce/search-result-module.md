@@ -90,3 +90,6 @@ Aby dodać moduł wyników wyszukiwania do strony kategorii, wykonaj następują
 [Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Moduł szybkiego podglądu](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

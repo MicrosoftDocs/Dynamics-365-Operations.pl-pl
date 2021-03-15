@@ -229,3 +229,6 @@ W tym przykładzie:
 
 - 10.00 (= 11.90 × 80.00 ÷ 95.20) to różnica kursowa powiązana z wartością netto na fakturze.
 - 1.90 (= 11.90 – 10.00) to różnica kursowa powiązana z wartością podatku na fakturze.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

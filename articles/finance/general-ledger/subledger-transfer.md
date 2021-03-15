@@ -41,3 +41,6 @@ Dostępne są następujące opcje przenoszenia partii w księdze podrzędnej.
 W wersji 10.0.8 dokonano ulepszeń w celu zwiększenia wydajności opcji asynchronicznej. Ta funkcja jest włączana pod nazwą **optymalizacji wydajności transferu podksięgi do księgi głównej**. 
  
 Ta funkcja poprawia przeniesienie danych z księgi podrzędnej do księgi głównej. Dzięki temu proces jest bardziej wydajny i grupuje w nim zestawy mniejszych transakcji do przeniesienia. Pozwala to na wydajniejsze korzystanie z serwera przetwarzania wsadowego. Ta funkcja wymaga skonfigurowania serwera przetwarzania wsadowego, trybu online i działania, aby można było korzystać z opcji transferu asynchronicznego. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

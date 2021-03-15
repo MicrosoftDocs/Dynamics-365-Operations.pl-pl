@@ -75,3 +75,6 @@ Potrącona zaliczka na podatek jest obliczana na podstawie **Arkusz płatności 
 Uzyskana kwota podatku potrąconego u źródła zostanie odjęta od płatności dostawcy i zaksięgowana na koncie **Potrąconej zaliczki na podatek** w powiązanym załączniku.
 
 ![Konto potrąconej zaliczki na podatek pokazujące powiązany załącznik](media/withholding-tax-adjusted.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

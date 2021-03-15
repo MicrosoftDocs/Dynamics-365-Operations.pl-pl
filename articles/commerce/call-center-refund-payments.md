@@ -108,3 +108,6 @@ Ewentualnie organizacja może ustawić opcję **Zezwalaj na zastępowanie płatn
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Metody płatności w biurach obsługi](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

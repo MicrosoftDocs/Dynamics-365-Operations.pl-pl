@@ -95,3 +95,6 @@ Amortyzacja jest zaniżona o 16,95 (983,62 – 966,67).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

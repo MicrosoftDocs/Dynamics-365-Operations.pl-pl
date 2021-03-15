@@ -96,3 +96,6 @@ Po opublikowaniu strony niestandardowej będzie ona wyświetlana zamiast strony 
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
 [Rozszerzanie kanału online](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

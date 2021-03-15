@@ -135,3 +135,6 @@ Weryfikacje numerów seryjnych będą również miały miejsce, gdy użytkownik 
 [Operacja zapasów przychodzących w punkcie sprzedaży](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Operacja zapasów wychodzących w punkcie sprzedaży](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

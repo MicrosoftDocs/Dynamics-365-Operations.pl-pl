@@ -130,3 +130,6 @@ Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Nie Kwota wiersza t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

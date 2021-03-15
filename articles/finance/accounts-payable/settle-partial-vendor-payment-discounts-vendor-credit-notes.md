@@ -70,3 +70,6 @@ April może przejrzeć transakcje dostawcy na stronie **transakcji dostawcy**, w
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

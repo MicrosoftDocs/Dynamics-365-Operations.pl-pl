@@ -71,3 +71,6 @@ Aby utworzyć relację przedmiotów serwisu dla zlecenia serwisowego, wykonaj na
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

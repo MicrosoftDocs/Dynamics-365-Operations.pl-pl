@@ -127,3 +127,6 @@ Aby utworzyć zlecenie pracy pobierania, należy wykonać poniższe kroki.
 
 > [!IMPORTANT]
 > W przypadku anulowania tylko części ilości w wierszu pracy należy również usunąć nieaktualną ilość z wiersza ładunku. W przeciwnym razie, jeśli niedobór w dostawie nie będzie skonfigurowany poprawnie, wiersz ładunku nie może być potwierdzony do wysyłki.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

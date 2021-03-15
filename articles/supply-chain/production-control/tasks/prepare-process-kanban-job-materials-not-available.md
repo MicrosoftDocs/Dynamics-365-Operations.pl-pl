@@ -51,3 +51,6 @@ Ta procedura jest zorientowana na przygotowanie zadania przetwarzania w systemie
 6. Kliknij przycisk Przygotuj.
     * Zwróć uwagę na ikonę w polu Stan zadania, która wskazuje, że zadanie jest gotowe.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -259,3 +259,6 @@ Z tego względu po aktywacji Nakładania pozostałe ustawienia (zarządzanie zad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

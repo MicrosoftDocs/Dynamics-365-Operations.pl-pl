@@ -54,3 +54,6 @@ Ta procedura prowadzi proces tworzenia nowej księgi amortyzacji i kojarzy ją z
 6. W polu Okres użytkowania wpisz liczbę.
     * Należy zauważyć, że wartość pola Okresy amortyzacji jest obliczana po ustawieniu okresu użytkowania.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

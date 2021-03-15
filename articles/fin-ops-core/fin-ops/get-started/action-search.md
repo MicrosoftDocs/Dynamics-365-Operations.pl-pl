@@ -75,3 +75,6 @@ W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okien
 ## <a name="action-search-vs-navigation-search"></a>Wyszukiwanie akcji a wyszukiwanie nawigacji
 
 Wyszukiwanie akcji służy do znajdowania i wykonywania akcji na stronie, do wyszukiwania i poruszania się na stronach służy oddzielny mechanizm wyszukiwania. Aby uzyskać więcej informacji na temat tej funkcji, zobacz artykuł [Nawigacja z wyszukiwaniem](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

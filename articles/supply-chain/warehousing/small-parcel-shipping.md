@@ -279,3 +279,6 @@ Aby zapakować wysyłkę, wykonaj następujące czynności.
     ![Przykładowa etykieta wysyłkowa](media/sps-label-example.png "Przykładowa etykieta wysyłkowa")
 
 1. Zwróć uwagę, że wartości pól **Identyfikator manifestu kontenera** oraz **Suma frachtu** zostały dodane jako otrzymane od przewoźnika.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

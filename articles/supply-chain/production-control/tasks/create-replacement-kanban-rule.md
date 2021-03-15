@@ -55,3 +55,6 @@ Ta procedura skupia się na zastąpieniu istniejącej reguły Kanban nową regu�
 1. W polu Ilość maksymalna ustaw wartość „100”.
     * Rozwiń skróconą kartę Ilości, aby wyświetlić pole Ilość maksymalna. Zmiana maksymalnej ilości na 100 pozwoli na przetwarzanie maksymalnie 100 kart Kanban.    Jest to ostatni krok w tym zadaniu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

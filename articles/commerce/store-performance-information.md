@@ -44,3 +44,6 @@ Ten raport zawiera migawkę poniższych podsumowań w ramach wydajności sklepu:
 - Podsumowanie podatków
 - Podsumowanie zastępowania cen
 - Podsumowanie rabatów
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

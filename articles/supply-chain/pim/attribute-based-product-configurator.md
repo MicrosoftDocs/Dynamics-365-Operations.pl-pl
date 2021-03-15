@@ -140,3 +140,6 @@ Ostatnim krokiem jest określenie cen sprzedaży opartych na atrybutach dla wers
 1. W okienku akcji otwórz kartę **Model** i z grupy **Szczegóły modelu produktu** wybierz pozycję **Wersje**.
 1. Zostanie otwarta strona **Wersje**. Upewnij się, że **Metoda kalkulacji cen** jest ustawiona na wartość **Oparta na atrybutach**.
     ![Ustawianie metody kalkulacji cen na opartą na atrybutach](media/prod-config-versions.png "Ustawianie metody kalkulacji cen na opartą na atrybutach")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

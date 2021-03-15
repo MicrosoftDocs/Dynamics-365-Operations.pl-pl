@@ -113,3 +113,6 @@ Zaleca się, aby te zadania wsadowe nie były uruchamiane zbyt często (co kilka
 > Ze względu na wydajność, gdy obliczenia dostępności zapasów w ramach kanału są używane do realizacji żądania dostępności zapasów przy użyciu logiki magazynowej obsługi handlu elektronicznego lub nowego kanału punktu sprzedaży, w obliczeniu jest używana pamięć podręczna do określenia, czy minęła wystarczająca liczba godzin do ponownego uruchomienia logiki obliczeń. Domyślna pamięć podręczna została ustawiona na 60 sekund. Na przykład po stronie kanału można włączyć obliczanie dla sklepu i wyświetlić dostępne zapasy produktu na stronie **wyszukiwania zapasów**. Jeśli zostanie sprzedana jedna jednostka produktu, strona **wyszukiwania zapasów** nie będzie pokazywała zmniejszonych zapasów, dopóki pamięć podręczna nie zostanie wyczyszczona. Po zaksięgowaniu transakcji przez użytkowników w punkcie sprzedaży należy poczekać 60 sekund przed sprawdzeniem, czy stan dostępnych zapasów został zmniejszony.
 
 Jeśli scenariusz biznesowy wymaga krótszego czasu pamięci podręcznej, skontaktuj się z przedstawicielem pomocy technicznej, aby uzyskać pomoc.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

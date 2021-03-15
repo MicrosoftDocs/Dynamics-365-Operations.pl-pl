@@ -157,3 +157,6 @@ Dodatkowe zasoby
 [Definiowanie uprawnień dostępu kontrolerów obiektów kosztów](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

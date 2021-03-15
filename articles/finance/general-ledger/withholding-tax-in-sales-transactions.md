@@ -63,3 +63,6 @@ Podczas tworzenia nowego zamówienia sprzedaży jako domyślne wpisy w wierszach
 Potrącona zaliczka na podatek jest obliczana i księgowana za pomocą **Arkusza płatności odbiorcy**. Można ręcznie skorygować stosowany kod potrąconej zaliczki na podatek oraz rzeczywistą kwotę potrąconej zaliczki na podatek na karcie **Potrącona zaliczka na podatek** na stronie **Rozlicz transakcje**.
 
 Obliczona kwota potrąconej zaliczki na podatek zostanie potrącona z płatności odbiorcy i zaksięgowana na koncie **Potrąconej zaliczki na podatek** w powiązanym załączniku.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

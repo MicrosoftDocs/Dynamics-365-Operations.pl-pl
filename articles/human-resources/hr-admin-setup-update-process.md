@@ -105,3 +105,6 @@ Podczas testowania funkcji w wersji zapoznawczej lub sprawdzania nowych możliwo
 [Nowości i zmiany w module Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
 [Zasady dotyczące cyklu życia oprogramowania](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

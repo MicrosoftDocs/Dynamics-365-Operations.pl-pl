@@ -130,3 +130,6 @@ Aby wyświetlić różne wersje, można wybrać datę graniczną w menu **Na dzi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

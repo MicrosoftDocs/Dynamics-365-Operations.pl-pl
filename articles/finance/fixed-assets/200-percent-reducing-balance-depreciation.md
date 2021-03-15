@@ -89,3 +89,6 @@ Metoda amortyzacji degresywnej 200% dzieli wartość 200% między lata okresu u�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Poniższy przykład ilustruje sposób modyfikowania strony głównej przez zmian
 [Weryfikowanie dostępności zawartości strony](verify-accessibility.md)
 
 [Tworzenie dynamicznych stron handlu elektronicznego na podstawie parametrów adresu URL](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

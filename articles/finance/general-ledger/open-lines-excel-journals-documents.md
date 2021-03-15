@@ -54,3 +54,6 @@ Aby dodać wymiary finansowe do szablonu, trzeba wprowadzić dodatkowe zmiany. A
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

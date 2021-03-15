@@ -61,3 +61,6 @@ W module Retail w wersji 10.0.3 i nowszych dostępne są ponadto następujące f
 - W trakcie uzgadniania, jeśli wybrana transakcja nie ma salda, użytkownik musi wprowadzić opis przyczyny niezbilansowania uzgodnienia. Użytkownicy mogą wybrać pojedynczą transakcję i uzgodnić ją z odpowiednim opisem przyczyny w razie potrzeby.
 - Użytkownicy mogą kontynuować uzgadnianie i nieuzgadnianie transakcji, aż zmiana zostanie zamknięta. Po zamknięciu zmiany transakcje nie mogą być nieuzgodnione.
 - Gdy użytkownik decyduje się na zamknięcie zmiany, moduł Commerce sprawdza, czy zmiana nie zawiera żadnych nieuzgodnionych transakcji zarządzania gotówką. Użytkownicy nie mogą zamknąć zmiany, jeśli zawiera nieuzgodnione transakcje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -235,3 +235,6 @@ W zależności od kraju lub regionu funkcja Fakturowanie elektroniczne może wym
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Meksyku](e-invoicing-mex-get-started.md)
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch](e-invoicing-ita-get-started.md)
 - [Faktury elektroniczne odbiorcy w Egipcie](emea-egy-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

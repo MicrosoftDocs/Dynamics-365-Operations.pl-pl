@@ -100,3 +100,6 @@ Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współd
 [Definiowanie zasad inspekcji dla dokumentów źródłowych](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

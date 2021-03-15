@@ -77,3 +77,6 @@ Użyj tej procedury do skonfigurowania podpisów elektronicznych. Podpis elektro
 10. Kliknij przycisk Zapisz.
 11. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

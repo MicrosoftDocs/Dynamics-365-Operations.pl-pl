@@ -48,3 +48,6 @@ Tematy przedstawione w tej sekcji zawierają omówienie procesu biznesowego obs�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

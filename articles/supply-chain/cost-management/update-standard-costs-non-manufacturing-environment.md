@@ -51,3 +51,6 @@ Aby skorygować, dopasować lub zaktualizować standardowe koszty nowych towaró
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

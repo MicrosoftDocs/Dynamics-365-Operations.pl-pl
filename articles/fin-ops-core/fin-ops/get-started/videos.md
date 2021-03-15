@@ -167,3 +167,6 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 [Filmy Informacje dotyczące nowych technologii o rozwiązaniu FastTrack](https://community.dynamics.com/365/b/techtalks?c=Finance%20and%20Operations) mają na celu zaprezentowanie szczegółów technicznych i najlepszych praktyk, które dostarczą klientom i partnerom szczegółowej wiedzy w konkretnych dziedzinach.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

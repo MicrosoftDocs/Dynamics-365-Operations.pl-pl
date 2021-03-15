@@ -35,3 +35,6 @@ Poprzez tworzenie wierszy na stronie **Zliczanie znaczników** na każdym towarz
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inwentaryzacja ciągła](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

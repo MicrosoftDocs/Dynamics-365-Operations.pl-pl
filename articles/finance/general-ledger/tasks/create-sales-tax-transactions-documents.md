@@ -59,3 +59,6 @@ Podatek od dokumentu oblicza się poprzez określenie grupy podatków i grupy po
 29. Kliknij opcję Podatek.
 30. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

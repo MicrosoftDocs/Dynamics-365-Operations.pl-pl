@@ -55,3 +55,6 @@ W tej procedurze pokazano sposób planowania zleceń produkcyjnych, które jeszc
 4. Kliknij opcję Materiały.
     * Na tej stronie widać szacowane zużycie materiału w operacjach zlecenia produkcyjnego oraz aktualnie dostępne zapasy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

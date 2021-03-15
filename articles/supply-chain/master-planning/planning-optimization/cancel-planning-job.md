@@ -59,3 +59,6 @@ Stan zadania będzie **anulowany** do momentu potwierdzenia przez usługę optym
 [Wyświetlanie dzienników historii i planowania planów](plan-history-logs.md)
 
 [Stosowanie filtrów do planu](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

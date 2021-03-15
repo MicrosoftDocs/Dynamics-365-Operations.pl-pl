@@ -38,3 +38,6 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 7. W polu Od dnia wprowadź datę.
 8. Wprowadź datę w polu Do dnia.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

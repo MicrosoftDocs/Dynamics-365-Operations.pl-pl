@@ -43,3 +43,6 @@ Aby włączyć raport cen, parametr **Włącz raport cen w sklepie** musi być w
 | Wyświetl produkty ze zmianami cen | Ustawienie **Tak** spowoduje wyświetlanie cen tylko dla tych dat, w których cena została zmieniona. Cena dla *jednego dnia przed* wybraną **Datą Od** zawsze będzie wyświetlana, tak aby kierownik sklepu mógł łatwo zidentyfikować produkty, których ceny nie zmieniły się przez cały wybrany okres, i mógł również łatwo wyświetlić bieżącą cenę. |
 
 Po wygenerowaniu raportu można pobrać plik programu Excel dla wszelkich dodatkowych potrzeb filtrowania. Raport cen może również służyć do sprawdzania historycznych cen produktów dla dat z przeszłości.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

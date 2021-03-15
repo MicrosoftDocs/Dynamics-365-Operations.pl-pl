@@ -44,3 +44,6 @@ W tej procedurze pokazano sposób wypożyczanie przedmiotu pracownikowi oraz rej
 2. Kliknij przycisk Edytuj.
 3. W polu Rzeczywisty zwrot wprowadź datę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

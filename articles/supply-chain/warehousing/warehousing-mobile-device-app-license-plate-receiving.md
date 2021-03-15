@@ -104,3 +104,6 @@ Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoz
 Aby uzyskać więcej informacji oscenariuszu produkcji *Zgłoszenie wyrobów gotowych*, zapoznaj się z [Omówienie zasad pracy magazynowej](warehouse-work-policies.md).
 
 Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

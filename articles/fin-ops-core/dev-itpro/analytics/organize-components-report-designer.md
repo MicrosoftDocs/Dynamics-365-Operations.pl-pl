@@ -148,3 +148,6 @@ W definicji raportu są zapisywane tylko ustawienia domyślnego okresu podstawow
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

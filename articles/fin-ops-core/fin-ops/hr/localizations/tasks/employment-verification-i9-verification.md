@@ -54,3 +54,6 @@ Zgodnie z Ustawą o reformie przepisów imigracyjnych i kontroli imigracji (IRCA
 22. W polu Numer dokumentu wprowadź lub wybierz wartość.
 23. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

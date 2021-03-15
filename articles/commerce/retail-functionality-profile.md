@@ -63,3 +63,6 @@ Poniższy obraz przedstawia przykładowy profil funkcji.
 [Omówienie układu ekranu](pos-screen-layouts.md)       
 
 [Konfigurowanie i instalowanie modułu Retail Hardware Station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

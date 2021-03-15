@@ -40,3 +40,6 @@ W tej procedurze pokazano sposób zwalniania zlecenia produkcyjnego. Dane wykorz
 6. Kliknij przycisk OK.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

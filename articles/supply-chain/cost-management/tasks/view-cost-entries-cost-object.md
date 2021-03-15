@@ -38,3 +38,6 @@ W tej procedurze pokazano sposób wyświetlania wpisów kosztu dla obiektu koszt
 7. Użyj szybkiego filtru, aby wyfiltrować pole Numer według wartości „p000031”.
     * Jeśli wpisy kosztów są puste, ustaw pole Od dnia na 31 stycznia 2012 r, a pole Do dnia na 31 grudnia 2012 r.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

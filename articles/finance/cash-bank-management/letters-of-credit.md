@@ -52,3 +52,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 [Tworzenie umowy instrumentu bankowego na akredytywę](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

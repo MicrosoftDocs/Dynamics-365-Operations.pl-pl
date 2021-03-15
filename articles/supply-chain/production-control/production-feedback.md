@@ -35,3 +35,6 @@ Informacje zwrotne o produkcji pozwalają pracownikowi lepiej zorientować się 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

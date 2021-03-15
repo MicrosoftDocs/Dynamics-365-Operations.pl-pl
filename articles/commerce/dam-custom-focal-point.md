@@ -59,3 +59,6 @@ Aby zdefiniować niestandardowy punkt ogniska dla obrazu, wykonaj następujące 
 [Przycinanie obrazów](dam-crop-images.md)
 
 [Przekazywanie i obsługiwanie plików statycznych](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

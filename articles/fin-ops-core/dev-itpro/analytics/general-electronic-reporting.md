@@ -298,3 +298,6 @@ Lista konfiguracji raportowania elektronicznego dla aplikacji Finanse jest aktua
 
 - [Tworzenie konfiguracji raportowania elektronicznego (ER)](electronic-reporting-configuration.md)
 - [Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ W tej procedurze pokazano sposób konfigurowania zasobu projektu. W tym zadaniu 
 20. Kliknij przycisk Zapisz.
 21. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

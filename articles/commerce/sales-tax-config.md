@@ -81,3 +81,6 @@ W przypadku wierszy zamówienia z określonym odbiorem w sklepie lub przy krawę
 
 [Obliczanie zwolnienia z podatku](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

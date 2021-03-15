@@ -71,3 +71,6 @@ Musisz przeszacować i dostosować konta bankowe, jeśli istnieje różnica kurs
 
 > [!NOTE]
 > W księdze głównej są wyświetlane dwie oddzielne transakcje: jedna w walucie rozliczeniowej i jedna w walucie raportowania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

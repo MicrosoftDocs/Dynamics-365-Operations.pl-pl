@@ -69,3 +69,6 @@ Na poniższej ilustracji przedstawiono przykład strony płatności handlu elekt
 [Moduł potwierdzenia zamówienia](order-confirmation-module.md)
 
 [Moduł szczegółów zamówienia](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ W każdej regule alokacji występują cztery składniki — ogólny, źródłowy
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

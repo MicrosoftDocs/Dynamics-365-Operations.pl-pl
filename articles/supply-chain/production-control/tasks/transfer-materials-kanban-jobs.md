@@ -65,3 +65,6 @@ Ta procedura skupia się na wycofywaniu zadania przeniesienia materiałów w sys
 2. Kliknij przycisk Wykonaj.
     * Spowoduje to zakończenie przeniesienia w obu zadaniach.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

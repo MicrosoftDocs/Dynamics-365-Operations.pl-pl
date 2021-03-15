@@ -232,3 +232,6 @@ Aby uniknąć problemów z przyszłymi rozliczeniami tej transakcji, zamiast uż
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

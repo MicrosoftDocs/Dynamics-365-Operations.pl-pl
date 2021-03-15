@@ -77,3 +77,6 @@ Aby zresetować komunikat o zdarzeniu niepowodzenia aplikacji magazynu:
 1. Kontynuuj pracę do momentu zresetowania wszystkich odpowiednich komunikatów.
 
 Można również usunąć komunikat o zdarzeniu **Niepowodzenie**, używając opcji **Usuń** na pasku narzędzi **Komunikaty zdarzeń aplikacji magazynu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

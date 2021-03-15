@@ -61,3 +61,6 @@ Ta procedura zawiera instruktaż wyświetlania listy dostawców płatności i ko
 24. Zaznacz pole wyboru Domyślny agent rozliczeniowy dla nowych kart kredytowych.
 25. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

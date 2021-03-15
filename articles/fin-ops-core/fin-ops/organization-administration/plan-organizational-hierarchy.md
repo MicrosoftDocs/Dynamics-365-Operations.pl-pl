@@ -241,3 +241,6 @@ Podczas implementowania hierarchii organizacyjnej należy wziąć pod uwagę nas
 - Przed modelowaniem głównych scenariuszy restrukturyzacji użyj efektywnych dat hierarchii w celu wykonania analizy wpływu i testów weryfikacyjnych.
 - Użyj trybu roboczego w celu zmiany hierarchii, zanim opublikujesz nową wersję w środowisku produkcyjnym.
 - Ogranicz liczbę osób, które mają uprawnienia do dodawania i usuwania organizacji z hierarchii w środowisku produkcyjnym. Mniejsza liczba zmniejsza ryzyko, że mogą wystąpić kosztowne błędy i trzeba będzie dokonywać korekt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

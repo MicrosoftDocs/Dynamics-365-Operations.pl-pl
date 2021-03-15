@@ -55,3 +55,6 @@ W tym temacie opisano proces tworzenia i księgowania arkusza inwentaryzacji zap
 1. Wybierz **Zapasy**.
 2. Wybierz **transakcje**. Tutaj można zobaczyć wszystkie powiązane transakcje, które zostaną utworzone podczas księgowania arkusza inwentaryzacji zapasów.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

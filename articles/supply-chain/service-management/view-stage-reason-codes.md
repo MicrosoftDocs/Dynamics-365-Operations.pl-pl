@@ -44,3 +44,6 @@ Można wyświetlić i zmodyfikować listę przyczyn etapów zlecenia serwisowego
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

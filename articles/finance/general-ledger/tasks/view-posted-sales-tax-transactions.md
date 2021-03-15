@@ -48,3 +48,6 @@ W tym temacie opisano kilka sposobów wyświetlania zaksięgowanych transakcji p
 2. W okienku akcji wybierz opcję **Kod podatku**.
 3. Wybierz **Zaksięgowany podatek**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

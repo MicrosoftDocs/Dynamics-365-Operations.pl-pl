@@ -56,3 +56,6 @@ Ta procedura przedstawia sposób przypisywania grup podatków do kanałów handl
 21. Na liście kliknij łącze w wybranym wierszu.
 22. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

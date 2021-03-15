@@ -49,3 +49,6 @@ Relację odwrotną można łatwo można skonfigurować na stronie **Księgowanie
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

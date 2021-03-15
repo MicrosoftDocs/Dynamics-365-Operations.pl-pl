@@ -85,3 +85,6 @@ Na stronie **Odbiorcy** dla każdego odbiorcy, który zgodził się płacić za 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

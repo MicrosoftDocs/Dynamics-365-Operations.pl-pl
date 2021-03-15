@@ -59,3 +59,6 @@ Domyślna wartość pola **Liczba elementów przepływu pracy przypadająca na p
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Co to jest funkcja błędów rozszerzonych przepływu pracy?
 Funkcja błędów rozszerzonych przepływu pracy w wersji 10.0.13 dodaje kody błędów w celu odróżnienia różnych klas błędów przepływu pracy. Komunikaty o błędach raportowane są głównie pod kątem mniejszych różnic w celu ich wyraźniejszego wyróżnienia.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

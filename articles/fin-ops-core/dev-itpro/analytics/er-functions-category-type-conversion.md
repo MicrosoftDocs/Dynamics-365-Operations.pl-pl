@@ -87,3 +87,6 @@ W poniższej tabeli opisano funkcje konwersji typu w [kategorii tekstu](er-funct
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
 [Język formuł raportowania elektronicznego](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

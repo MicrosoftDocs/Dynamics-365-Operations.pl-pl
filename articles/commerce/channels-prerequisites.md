@@ -85,3 +85,6 @@ Aby można było utworzyć kanał Dynamics 365 Commerce, należy wykonać kilka 
 [Konfigurowanie kanału sprzedaży](channel-setup-retail.md)
     
 [Konfigurowanie kanału internetowego](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

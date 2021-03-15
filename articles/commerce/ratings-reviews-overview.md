@@ -58,3 +58,6 @@ Rozwiązanie oceny i recenzje zawiera również szablon analizy biznesowej (BI),
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

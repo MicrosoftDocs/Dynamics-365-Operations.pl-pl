@@ -63,3 +63,6 @@ W AppBar użytkownik może wybrać operację. Niektóre operacje mogą nie być 
 - **Edycja** — pozwala użytkownikom na wprowadzanie zmian w wybranym zamówieniu odbiorcy.
 
 - **Odbiór** — powoduje uruchomienie przepływu odbioru umożliwiającego użytkownikowi wybranie produktów, które mają zostać pobrane, i utworzenie transakcji pobrania sprzedaży.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

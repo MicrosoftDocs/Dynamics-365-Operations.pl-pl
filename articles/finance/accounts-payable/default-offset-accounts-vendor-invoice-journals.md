@@ -97,3 +97,6 @@ Skorzystaj z poniższej tabeli, aby określić miejsce przypisania domyślnych k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

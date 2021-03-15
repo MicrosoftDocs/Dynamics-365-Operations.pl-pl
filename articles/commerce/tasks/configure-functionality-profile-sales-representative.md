@@ -36,3 +36,6 @@ Ta procedura pokazuje, jak skonfigurować ustawienia profilu funkcji sklepu, kt�
 4. W polu Monituj o podanie przedstawiciela handlowego zaznacz opcję.
 5. W polu Wymagaj przedstawiciela handlowego wybierz opcję Tak.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

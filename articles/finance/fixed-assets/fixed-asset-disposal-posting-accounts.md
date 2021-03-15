@@ -42,3 +42,6 @@ Transakcja likwidacji środka trwałego w puli środków trwałych o niskiej war
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

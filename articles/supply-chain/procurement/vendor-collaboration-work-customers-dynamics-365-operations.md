@@ -146,3 +146,6 @@ Dostępne informacje to nazwa dostawcy, adres, informacje kontaktowe, osoby kont
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zarządzanie użytkownikami portalu współpracy z dostawcami](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Ta procedura prowadzi przez definiowanie punktów lojalnościowych. Punkty lojal
 10. W polu Jednostka okresu ważności wybierz opcję.
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

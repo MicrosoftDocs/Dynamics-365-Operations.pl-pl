@@ -139,3 +139,6 @@ Usuniemy utworzone konfiguracje z systemu i pobierzemy je ponownie z repozytoriu
 26. W drzewie rozwiń węzeł „Przykładowy model danych”.
     * Należy zauważyć, że konfiguracja mapowania modelu „Przykładowe mapowanie” została pobrana wraz z wybraną konfiguracją modelu danych. Oba pliki są pobierane razem, ponieważ model „Przykładowe mapowanie” został zdefiniowany jako implementujący wybrany model danych i ma zastosowanie do aplikacji. Konfiguracja „Przykładowe mapowanie (alternatywne)” nie została pobrana, ponieważ nie jest spełniony warunek dla wymaganej wersji aplikacji.   
     * Gdy się zalogujesz do programu Finance and Operations, zarejestrujesz tego samego dostawcę, przejdziesz do tego samego projektu usługi LCS i pobierzesz tę samą konfigurację modelu danych, zostanie pobrana konfiguracja „Przykładowe mapowanie (alternatywne)”, natomiast konfiguracja „Przykładowe mapowanie” zostanie pominięta.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

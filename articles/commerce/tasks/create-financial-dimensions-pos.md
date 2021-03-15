@@ -47,3 +47,6 @@ Ta procedura prowadzi przez proces tworzenia wymiarów finansowych dla kas w pun
 17. Na liście znajdź i wybierz wartość wymiaru dla aktualizowanej kasy.
 18. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

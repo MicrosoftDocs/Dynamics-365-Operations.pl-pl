@@ -40,3 +40,6 @@ Aby zakończyć ważność i przetwarzanie wersji przepływu produkcji w określ
 6. W polu Data wygaśnięcia wprowadź datę i godzinę.
     * Po upływie daty ważności nowa wersja nie rozpocznie się ani nie uaktywni. Nie będzie można również tworzyć ani uruchamiać zadań dla tego przepływu produkcji. Natomiast będzie można dokończyć rozpoczęte zadania.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

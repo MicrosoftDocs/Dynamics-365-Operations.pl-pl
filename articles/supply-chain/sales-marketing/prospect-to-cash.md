@@ -81,3 +81,6 @@ Aby skorzystać z rozwiązania Prospekt na gotówkę, należy zainstalować nast
 
 - Dynamics 365 Sales wersja 1612 (8.2.1.207) (DB 8.2.1.207) online lub nowsza
 - Rozwiązanie Prospekt na gotówkę (P2C) dla programu Dynamics 365 Sales, wersja 1.15.0.0 lub nowsza. To rozwiązanie jest dostępne do pobrania z usługi AppSource. [Pobierz rozwiązanie Prospekt na gotówkę dla programu Dynamics 365](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

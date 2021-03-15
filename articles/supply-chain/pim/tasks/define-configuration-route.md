@@ -45,3 +45,6 @@ Ta procedura skupia się na definiowaniu marszruty konfiguracji, która decyduje
 15. Na liście kliknij łącze w wybranym wierszu.
 16. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

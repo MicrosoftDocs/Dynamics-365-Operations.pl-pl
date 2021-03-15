@@ -277,3 +277,6 @@ Plik konfiguracyjny znajduje się w folderze **Konfiguracja** projektu rozszerze
 - **Ciąg połączenia** — ten ciąg opisuje szczegóły połączenia do urządzenia w formacie obsługiwanym przez sterownik urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
 - **Data i godzina synchronizacji** — to ustawienie określa, czy należy zsynchronizować datę i godzinę drukarki ze stacją połączoną Hardware Station
 - **Limit czasu urządzenia** — ilość czasu, w milisekundach, przez który sterownik czeka na odpowiedź z urządzenia. Aby uzyskać szczegółowe informacje, zobacz dokumentację sterownika POSNET.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

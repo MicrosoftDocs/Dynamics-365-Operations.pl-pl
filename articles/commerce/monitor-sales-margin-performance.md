@@ -48,3 +48,6 @@ Ponadto dwa specjalne raporty wykorzystujące funkcję struktury hierarchicznej 
 - Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny i komercyjny** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem** &gt; **Raporty**
 - Obszar roboczy **Zarządzanie cenami i rabatami** &gt; **Handel detaliczny i komercyjny** &gt; **Ceny i rabaty** &gt; **Zarządzanie sklepem** &gt; **Raporty**
 - Sekcja **Zapytania i raporty** &gt; **Handel detaliczny i komercyjny** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

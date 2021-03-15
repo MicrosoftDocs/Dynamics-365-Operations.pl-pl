@@ -87,3 +87,6 @@ Podczas księgowania zestawienia, dla sprzedaży detalicznej w sprawozdaniu twor
 - Sprzedaż, dla której dodano odbiorcę w transakcji w programie POS, generuje oddzielne zamówienia sprzedaży i faktury, po jednej dla każdego unikatowego odbiorcy.
 
 Arkusze płatności są automatycznie tworzone dla płatności w zestawieniu, a zapasy są aktualizowane dla sklepu z punktem sprzedaży.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

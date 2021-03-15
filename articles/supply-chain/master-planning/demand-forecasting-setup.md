@@ -101,3 +101,6 @@ Na karcie **Klucze alokacji** można określić **Parametry algorytmu prognozy**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Na przykład:
 - Data wejścia w życie w akcji **Zatrudnij pracownika** jest datą wprowadzoną w polu **Data zatrudnienia**.
 - Data wejścia w życie w akcji **Przenieś pracownika** jest datą wprowadzoną w polu **Data rozpoczęcia przypisania** dla pracownika.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

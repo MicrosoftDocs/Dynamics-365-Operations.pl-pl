@@ -63,3 +63,6 @@ Daty w wierszu składnika kosztu stanowiska podlegającego prognozie muszą się
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

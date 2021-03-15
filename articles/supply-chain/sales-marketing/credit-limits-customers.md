@@ -137,3 +137,6 @@ Czasami konieczne może być ręczne sprawdzenie limitu kredytu odbiorcy. Limit 
 1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Wspólne** \> **Zamówienia sprzedaży** \> **Wszystkie zamówienia sprzedaży**. Kliknij dwukrotnie na zamówienie sprzedaży.
 
 2.  W formularzu **Zamówienie sprzedaży**, w okienku akcji, na karcie **Zarządzaj** kliknij opcję **Sprawdzanie limitu kredytu**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

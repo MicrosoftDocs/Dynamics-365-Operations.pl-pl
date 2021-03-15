@@ -57,3 +57,6 @@ Gdy w ustawieniu lokalizacji typu dokumentu zostanie zaznaczona wartość **Maga
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 - [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

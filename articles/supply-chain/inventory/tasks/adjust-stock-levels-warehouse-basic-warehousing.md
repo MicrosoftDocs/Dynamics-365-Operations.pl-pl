@@ -59,3 +59,6 @@ Ta procedura prowadzi przez proces tworzenia i księgowania arkusza korekt zapas
 5. Zamknij formularz.
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

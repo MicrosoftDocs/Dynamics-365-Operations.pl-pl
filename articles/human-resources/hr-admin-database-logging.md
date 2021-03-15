@@ -87,3 +87,6 @@ Aby skonfigurować czyszczenie dziennika bazy danych, wykonaj następujące krok
    - Data i godzina utworzenia
 
 3. Karta **Czyszczenie dziennika bazy danych** umożliwia określenie, kiedy ma być wykonywane zadanie oczyszczania dziennika. Domyślnie dzienniki bazy danych są dostępne przez 30 dni.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

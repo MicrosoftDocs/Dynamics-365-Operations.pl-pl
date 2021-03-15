@@ -65,3 +65,6 @@ Przedmioty serwisu można przypisać do grupy za pomocą formularza **Przedmioty
 [Tworzenie przedmiotów serwisu](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

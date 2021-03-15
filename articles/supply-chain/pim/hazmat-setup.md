@@ -283,3 +283,6 @@ Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **
 Specyfikacja *Tunelu materiału niebezpiecznego* ogranicza typy tuneli, przez które można przetransportować materiały niebezpieczne, podając zidentyfikowaną listę typów tuneli, które muszą być używane. Kategorie tunelu są ustanawiane przez odpowiednie przepisy dotyczące niebezpiecznych przewozów materiałów. Ta specyfikacja dotyczy zazwyczaj transportu drogowego.
 
 Aby skonfigurować wartości dla tej specyfikacji należy przejść do sekcji **Zarządzanie informacjami o produktach \> Konfiguracja \> Dokumentacja wysyłki dot. materiałów niebezpiecznych \> Tunel materiału niebezpiecznego**. Na stronie **Tunel materiału niebezpiecznego** można utworzyć dowolną liczbę identyfikatorów tunelu i skonfigurować każdy z nich przy użyciu kodu identyfikacji oraz krótkiego opisu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

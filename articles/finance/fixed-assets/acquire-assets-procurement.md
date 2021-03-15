@@ -108,3 +108,6 @@ Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

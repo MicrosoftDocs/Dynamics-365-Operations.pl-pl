@@ -108,3 +108,6 @@ Przykładowo pracownica rejestruje się przy wyjściu o 10:00 i wybiera kod nieo
 ### <a name="calculate-and-approve-absence"></a>Obliczanie i zatwierdzanie nieobecności
 
 - Wybierz opcję **Czas i frekwencja** &gt; **Przejrzyj i zatwierdź** &gt; **Zatwierdź lub oblicz**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

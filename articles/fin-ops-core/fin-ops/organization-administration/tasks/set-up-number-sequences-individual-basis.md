@@ -40,3 +40,6 @@ Ten temat wyjaśnia, jak konfiguruje się indywidualne sekwencje numerów. Sekwe
 8. Rozwiń sekcję **Ogólne**. Na skróconej karcie Ogólne określ, czy sekwencja identyfikatorów jest wprowadzana ręcznie oraz ciągła czy nieciągła. Poza tym umożliwia wprowadzenie największych i najmniejszych numerów, które mogą być używane w sekwencji. Nie zaleca się zmieniać nieciągłej sekwencji numerów na ciągłą sekwencji numerów. Nie będzie to naprawdę ciągła sekwencja numerów. Zmiana ta może też spowodować zduplikowanie naruszeń kluczy w bazie danych. Ponadto ciągłe sekwencje numerów mają największy wpływ na wydajność.   
 9. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

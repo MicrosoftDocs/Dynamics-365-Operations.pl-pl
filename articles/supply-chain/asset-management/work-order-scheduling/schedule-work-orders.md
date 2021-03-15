@@ -137,3 +137,6 @@ Aby wyświetlić wykres Gantta i pracować z nim, należy:
     - Aby ponownie zaplanować wyświetlone zlecenie pracy, zaznacz opcję i przeciągnij je do odpowiedniej nowej daty i godziny.
 
 1. W przypadku wprowadzenia jakichkolwiek zmian wybierz opcję **Zapisz** w okienku akcji, aby je zapisać.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

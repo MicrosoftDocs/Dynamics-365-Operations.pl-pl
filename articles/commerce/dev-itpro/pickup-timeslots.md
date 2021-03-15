@@ -127,3 +127,6 @@ W aplikacji biura obsługi agenci biura obsługi mogą wybrać punkt odbioru lub
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Moduł informacji o odbiorze](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

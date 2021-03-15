@@ -72,3 +72,6 @@ Po uruchomieniu skonfigurowanego formatu ER dołączony szablon programu Word je
 
 - [Ponowne używanie konfiguracji ER z szablonami programu Excel do generowania raportów w formacie programu Word](./tasks/er-design-configuration-word-2016-11.md)
 - [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

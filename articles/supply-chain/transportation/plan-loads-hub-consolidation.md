@@ -38,3 +38,6 @@ Zanim będzie można używać konsolidacji w centrum, należy włączyć opcję 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

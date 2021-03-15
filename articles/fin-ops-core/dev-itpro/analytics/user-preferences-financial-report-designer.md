@@ -72,3 +72,6 @@ W tym artykule wyjaśniono, jak skonfigurować preferencje użytkownika, aby dos
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raporty finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

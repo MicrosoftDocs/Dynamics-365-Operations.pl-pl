@@ -42,3 +42,6 @@ W tej procedurze pokazano sposób używania zapytań o transakcje w załącznika
 12. W okienku akcji kliknij pozycję **Dokument oryginalny**.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

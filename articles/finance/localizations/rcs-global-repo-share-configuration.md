@@ -72,3 +72,6 @@ Po utworzeniu konfiguracji w ramach dostawcy konfiguracji można udostępnić j�
 Konfiguracja jest udostępniana organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Z tego miejsca można ją zaimportować do wystąpienia usług RCS organizacji lub do jej wystąpień aplikacji Finance and Operations.
 
 6. Aby cofnąć udostępnianie konfiguracji poprzednio udostępnionej organizacji zewnętrznej, wybierz konfigurację i kliknij pozycję **Anuluj udostępnianie**, a następnie wybierz przycisk **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

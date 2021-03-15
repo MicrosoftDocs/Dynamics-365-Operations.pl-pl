@@ -78,3 +78,6 @@ Każdy wiersz umowy serwisowej zawiera szczegółowy opis proponowanych czynnoś
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Tworzenie umów o świadczenie usług](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

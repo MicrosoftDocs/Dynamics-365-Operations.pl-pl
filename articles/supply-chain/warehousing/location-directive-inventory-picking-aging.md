@@ -139,3 +139,6 @@ Strategia LIFO znajduje lokalizację, która zawiera najnowszą datę wiekowania
 1. Zwróć uwagę, że wiersz, w którym wartość **Typ pracy** to *Pobranie*, wskazuje wartość **Lokalizacja** jako *FL-001*. Ta lokalizacja zawiera numer identyfikacyjny, który ma najnowszą datę wiekowania (LIFO).
 
 W tych scenariuszach można było zobaczyć, jak strategia wiekowania lokalizacji kieruje pracę do lokalizacji zapasów, w której znajdują się najstarsze lub najnowsze zapasy, w zależności od wybranej strategii.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

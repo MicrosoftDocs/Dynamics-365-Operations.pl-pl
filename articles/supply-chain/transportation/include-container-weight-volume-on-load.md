@@ -44,3 +44,6 @@ Liczba kontenerów, którą należy uwzględnić dla ładunku jest obliczana na 
 -   Aby ustawić wagę i objętość dla kontenera kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Typy kontenerów**.
 
 -   Aby ustawić procent wykorzystania kontenerów, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Grupy kontenerów**, a następnie wprowadź wartość w polu **Procent wykorzystania kontenera**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

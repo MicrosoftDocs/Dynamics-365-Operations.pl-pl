@@ -150,3 +150,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „Tworzenie
 17. W polu **Konto bankowe** wpisz `GBSI OPER`.
 18. Zaznacz element **OK** i kliknij przycisk **OK** ponownie. Przejrzyj utworzony arkusz, łącznie ze szczegółami wierszy płatności oraz sumami dla każdego kodu waluty użytego w tym komunikacie płatności.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

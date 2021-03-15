@@ -142,3 +142,6 @@ Ten temat objaśnia proces sprawdzania informacji o windykacji, a także różny
 5. Wybierz **Pokaż listę**.
 - Wybierz konto odbiorcy lub zaakceptuj wpis domyślny. Domyślnie jest to konto odbiorcy wybrane na stronie listy lub w formularzu, z którego otwarto ten formularz. Jeśli formularz otwarto ze strony listy, odbiorcami na liście są odbiorcy należący do puli windykacji używanej na stronie listy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące 
 2. Znajdź formularz **Informacje** w węźle formularze. 
 3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**. 
 4. Zmień ustawienie zabezpieczeń, aby było **Wyświetlane dla wszystkich**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

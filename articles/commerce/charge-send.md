@@ -41,3 +41,6 @@ Funkcja Wysyłanie opłaty wykorzystuje następujące operacje punktu sprzedaży
 Możliwość wyboru adresów „wyślij do” pozostaje bez zmian.
 
 Metody wysyłki, których można użyć do realizacji wiersza zamówienia są oparte na konfiguracji prawidłowych trybów dostawy produktów i adresów. Ponieważ reguły dotyczące prawidłowych trybów dostawy są obsługiwane tylko w Headquarters (HQ), klient punktu sprzedaży wykonuje wywołanie w czasie rzeczywistym, aby pobrać prawidłowe tryby dostawy dla wiersza wysyłki.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

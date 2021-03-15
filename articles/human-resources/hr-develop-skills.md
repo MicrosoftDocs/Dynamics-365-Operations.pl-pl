@@ -62,3 +62,6 @@ Profile mapowania umiejętności pozwalają znaleźć bieżących pracowników l
 Można utworzyć analizę profilu kwalifikacji, aby wyświetlić listę kompetencji dla pracownika, kandydata lub osoby kontaktowej od określonego dnia. Można utworzyć analizę kwalifikacji do porównania umiejętności danej osoby i umiejętności, które są wymagane dla danego zadania.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

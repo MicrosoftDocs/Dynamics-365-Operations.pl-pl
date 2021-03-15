@@ -58,3 +58,6 @@ Jeśli po skonfigurowaniu w systemie używania kursów wymiany dla podatku VAT t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

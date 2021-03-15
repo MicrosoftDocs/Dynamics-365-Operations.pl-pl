@@ -77,3 +77,6 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 10. Kliknij przycisk Zapisz.
 11. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

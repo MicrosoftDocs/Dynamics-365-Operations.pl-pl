@@ -56,3 +56,6 @@ Zadanie utworzono przy użyciu zestawu danych firmy USSI.
 21. W polu **Komentarz** wpisz wartość.
 22. Kliknij przycisk **Prześlij**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Można umożliwić pracownikom kupowanie i sprzedawanie urlopu, tworząc zasadę
 [Naliczanie planów urlopów i nieobecności](hr-leave-and-absence-accrue.md)</br>
 [Kupuj i sprzedawaj urlop](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

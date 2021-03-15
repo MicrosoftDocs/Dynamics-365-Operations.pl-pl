@@ -52,3 +52,6 @@ Można utworzyć wpisy do rejestru budżetu wstępnego dla konkretnego modelu bu
 19. Kliknij przycisk Aktualizuj.
     * Aby wyświetlić wyniki aktualizacji, na niebieskim pasku kliknij przycisk Szczegóły komunikatu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

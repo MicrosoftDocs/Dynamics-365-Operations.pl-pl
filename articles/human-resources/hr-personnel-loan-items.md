@@ -55,3 +55,6 @@ Jeśli przedmiot został uszkodzony lub przestawiony, należy zarejestrować fik
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

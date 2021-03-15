@@ -89,3 +89,6 @@ W tym przewodniku po zadaniach pokazano, jak utworzyć zgodę na polecenie zapł
 3. Zaznacz odbiorcę, dla którego dodano zgodę.
 4. W polu **Identyfikator zgody na polecenie zapłaty** wprowadź lub wybierz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

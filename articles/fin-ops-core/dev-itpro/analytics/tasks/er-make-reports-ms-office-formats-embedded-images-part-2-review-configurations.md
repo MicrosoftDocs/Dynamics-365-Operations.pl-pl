@@ -91,3 +91,6 @@ Ta procedura jest przeznaczona dla użytkowników z przypisaną rola Administrat
     * Niektóre etykiety prezentowane w formularzu czeku z nadrukiem zostaną uwzględnione w raporcie podczas jego tworzenia do celów testowych. Jednak te etykiety nie będą drukowane podczas rzeczywistego drukowania, ponieważ formularz z nadrukiem już je zawiera.  
 15. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

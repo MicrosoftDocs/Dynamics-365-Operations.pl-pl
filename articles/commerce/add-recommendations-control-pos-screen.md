@@ -118,3 +118,6 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

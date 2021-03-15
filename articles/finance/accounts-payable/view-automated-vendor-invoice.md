@@ -37,3 +37,6 @@ Jeśli zaimportowana faktura podlega procesowi przesyłania do przepływu pracy�
 - **Wstrzymane** — wykonywane są zautomatyzowane procesy zdefiniowane na stronie **Parametry rozrachunków z dostawcami**, ale co najmniej jeden krok w procesie nie powiódł się. Stan **Wstrzymane** jest również stosowany, jeśli w polu **Uwzględnij w zautomatyzowanym przetwarzaniu** jest ustawiona wartość **Nie**. Te błędy można wyświetlić, wybierając opcję **Wyświetl ostatnie wyniki**.
 - **W przepływie pracy** — zaimportowana faktura została przesłana do systemu przepływu pracy przez zautomatyzowany proces przesyłania do przepływu pracy lub ręcznie.
 - **Przepływ pracy ukończony** — ukończono proces przepływu pracy dla zaimportowanej faktury.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

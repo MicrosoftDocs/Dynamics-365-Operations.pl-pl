@@ -45,3 +45,6 @@ Po wprowadzeniu arkusza można kliknąć opcję **Naliczenia finansowe** w menu 
 
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie schematów naliczania](tasks/create-accrual-schemes.md) i [Tworzenie transakcji naliczeń finansowych](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

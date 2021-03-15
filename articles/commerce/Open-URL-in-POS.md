@@ -82,3 +82,6 @@ Aby skonfigurować adres URL, który można otworzyć w punkcie sprzedaży, wyko
 5. Wybierz akcję **Otwórz URL**.
 6. Wprowadź URL, którego chcesz użyć.
 7. Skonfiguruj, czy należy otworzyć adres URL w nowym oknie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

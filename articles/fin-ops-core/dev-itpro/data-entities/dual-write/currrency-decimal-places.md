@@ -95,3 +95,6 @@ Jeśli precyzja waluty dla konkretnej waluty różni się od precyzji waluty uż
 ### <a name="tables-currency-column"></a>tabele: kolumna Waluta
 
 Liczba miejsc dziesiętnych, które można skonfigurować dla określonych kolumn waluty, jest ograniczona do czterech.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

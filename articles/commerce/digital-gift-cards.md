@@ -100,3 +100,6 @@ Aby skonfigurować niestandardową kwotę dla cyfrowej karty upominkowej w narz�
 [Tworzenie profilu funkcji online](online-functionality-profile.md)
 
 [Obsługa zewnętrznych kart upominkowych](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

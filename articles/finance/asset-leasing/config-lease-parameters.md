@@ -45,3 +45,6 @@ Niektóre ustawienia konfiguracji wpływają na sposób działania wynajmu skła
 
     > [!NOTE]
     > Zaleca się, aby ta opcja była ustawiona na wartość **Nie**. Ustawienie tej opcji jest używane jako weryfikacja i kontrola, która zapobiega przypadkowemu zamortyzowaniu zamkniętej wersji księgi. Pozostawienie wartości **Nie** tej opcji pozwala utrzymać dokładną wartość księgową netto i przyszłych obliczeń amortyzacji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

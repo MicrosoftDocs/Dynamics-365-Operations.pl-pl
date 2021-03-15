@@ -170,3 +170,6 @@ Aby można było skonfigurować grupowanie wierszy pobrania, należy utworzyć k
 >   - Wiersze pracy z niedokończoną pracą uzupełniania zapasów
 >   - Pobranie nadmiarowe
 >   - Pobieranie w niedomiarze wraz ze zmianą alokacji pozycji
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

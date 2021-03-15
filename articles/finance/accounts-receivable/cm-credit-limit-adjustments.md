@@ -123,3 +123,6 @@ Przepływy pracy **Korekty limitu kredytu** mogą być używane do wysyłania ko
 
 > [!NOTE]
 > Podczas tworzenia przepływu pracy **Korekty limitu kredytu** można go skonfigurować w taki sposób, aby korekty były księgowane automatycznie po zatwierdzeniu wierszy. Umożliwia uwzględnienie zadania **Księgowania arkusza automatycznie** w przepływie pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

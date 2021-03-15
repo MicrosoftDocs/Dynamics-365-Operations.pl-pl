@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Po pobraniu tokenu dostępu przekażesz go w nagłówku autoryzacji jako token okaziciela w każdym żądaniu wysyłanym do interfejsu API danych, jak opisano powyżej.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

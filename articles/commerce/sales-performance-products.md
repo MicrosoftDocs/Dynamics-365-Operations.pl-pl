@@ -43,3 +43,6 @@ Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty*
 - Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**
 - Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Handel detaliczny i inny** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**
 - Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

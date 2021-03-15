@@ -110,3 +110,6 @@ Zostanie utworzony nowy szablon BOM z wierszami odpowiadającymi wierszom BOM wy
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

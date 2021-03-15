@@ -300,3 +300,6 @@ Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoz
 Więcej informacji na temat otrzymywania tablic rejestracyjnych i zasad pracy, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

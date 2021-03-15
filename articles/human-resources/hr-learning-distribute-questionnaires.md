@@ -131,3 +131,6 @@ Po zaprojektowaniu i rozesłaniu kwestionariusza, kwestionariusz może zostać w
 Kwestionariusze można udostępnić wszystkich osobom w sieci, określonym użytkownikom lub grupom użytkowników.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

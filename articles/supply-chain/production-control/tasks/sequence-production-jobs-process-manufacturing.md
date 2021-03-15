@@ -70,3 +70,6 @@ Ta procedura wykorzystuje farby dla przykładu prezentującego sposób ustawieni
 8. Użyj szybkiego filtru, aby filtrować na podstawie pola Numer pozycji z wartością „P300”.
     * Zwróć uwagę, że zamówienia są teraz ustawione w kolejności według priorytetu koloru i rozmiaru, a planowane zamówienia rozpoczynają się od najwcześniejszej daty zamówienia i daty dostawy. Sprawdź poprawność zawartości kolumny Data zamówienia lub pola Data rozpoczęcia w polu informacji Szczegóły harmonogramu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

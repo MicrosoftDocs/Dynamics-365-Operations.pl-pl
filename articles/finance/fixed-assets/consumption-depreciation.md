@@ -67,3 +67,6 @@ Propozycja amortyzacji na 31 stycznia jest w następująca: szacowana ilość x 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

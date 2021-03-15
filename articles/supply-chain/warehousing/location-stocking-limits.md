@@ -103,3 +103,6 @@ Aby wyjaśnić ten pozorny błąd, należy poznać kryteria wyboru limitów skł
 
 > [!NOTE]
 > Nie można użyć limitów składowania w lokalizacji, by kontrolować na przykład uzupełnianie zapasów towarów, które mają różne ilości w tej samej lokalizacji. W takim wypadku należy zastosować *szablon uzupełnienia zapasów*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

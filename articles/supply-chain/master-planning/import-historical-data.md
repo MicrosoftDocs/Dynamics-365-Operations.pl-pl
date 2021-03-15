@@ -61,3 +61,6 @@ Po zaimportowaniu historycznych danych popytu można generować prognozy popytu.
 
 [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)  
 [Omówienie zadań importowania i eksportowania danych](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

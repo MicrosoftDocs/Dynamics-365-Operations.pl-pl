@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources rozłącza użytkowników, gdy są otwart
 Upewnij się, że tylko jedno środowisko jest otwarte w danej chwili dla danego typu przeglądarki. Użytkownicy mogą otwierać wiele sesji w tym samym środowisku (to znaczy wiele kart w tej samej przeglądarce).
 
 Użytkownicy, którzy chcą do przechodzić między dwiema środowiskami w tym samym czasie powinni otwierać każde środowisko w innym typie przeglądarki. (Na przykład użytkownik A może wyświetlić środowisko 1 w przeglądarce Chrome i środowisko 2 w Microsoft Edge).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

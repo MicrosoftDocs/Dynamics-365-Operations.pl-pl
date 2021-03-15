@@ -66,3 +66,6 @@ W ramach procesu zlecenia kwarantanny można przekazać zapasy do likwidacji. Po
 --------
 
 [Blokowanie zapasów](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -190,3 +190,6 @@ Następujące szczegóły są importowane i uwzględniane w nowym rekordzie prac
 
 [Konfiguruj tabele wirtualne usługi Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Co to jest usługa Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

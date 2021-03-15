@@ -132,3 +132,6 @@ Po uruchomieniu zdarzenia procesowego może zalecić korekty podwyżki uznaniowe
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

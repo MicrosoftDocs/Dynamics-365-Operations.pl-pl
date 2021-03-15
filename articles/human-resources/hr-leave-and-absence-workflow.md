@@ -81,3 +81,6 @@ Poniższe przykłady pokazują, jak można tworzyć różne typy warunków przep
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

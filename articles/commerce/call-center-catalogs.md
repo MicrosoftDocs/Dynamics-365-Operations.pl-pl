@@ -100,3 +100,6 @@ Na karcie **Katalogi** znajdują się również sekcje z opcjami konfiguracyjnym
 ## <a name="additional-notes"></a>Dodatkowe notatki
 
 Obecnie gdy identyfikator kodu źródłowego jest stosowany do zamówienia sprzedaży w biurze obsługi, służy do ustalania cen, promocji, skryptów i produktów przeznaczonych do sprzedaży dodatkowej/powiązanej specyficznych dla katalogu. System nie będzie zabraniać ani uniemożliwiać złożenia zamówienia sprzedaży na produkt nieznajdujący się w katalogu. Jeśli zostanie zamówiony towar, który nie jest częścią katalogu, system najpierw użyje **grupy cenowej** zdefiniowanej w kanale biura obsługi (**Retail i Commerce** \> **Kanały** \> **Biura obsługi** \> **Wszystkie biura obsługi**) dla ceny towaru lub promocji. Jeśli nie zostanie znaleziona żadna konkretna cena dla kanału, będzie używana podstawowa cena sprzedaży towaru.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

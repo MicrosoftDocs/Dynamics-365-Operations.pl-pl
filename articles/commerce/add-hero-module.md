@@ -106,3 +106,6 @@ Aby dodać moduł bohatera do nowej strony i ustawić wymagane właściwości, w
 [Moduł bloku tekstu](add-content-rich-block.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

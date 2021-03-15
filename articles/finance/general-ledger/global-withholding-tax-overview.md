@@ -44,3 +44,6 @@ Funkcjonalność globalnego podatku potrącanego u źródła została rozszerzon
 
 > [!NOTE]
 > Nie można włączona funkcja globalnej potrąconej zaliczki na podatek w przypadku krajów/regionów, w których istnieją już zlokalizowane rozwiązania dotyczące potrąconej zaliczki na podatek. To m.in. Indie, Brazylia, Tajlandia, Arabia Saudyjska, Irlandia, Wielka Brytania i Stany Zjednoczone.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

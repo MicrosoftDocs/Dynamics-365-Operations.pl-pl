@@ -90,3 +90,6 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

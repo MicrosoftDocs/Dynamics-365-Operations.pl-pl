@@ -97,3 +97,6 @@ Przejdź do **Ustawienia rozrachunków z dostawcami >Ustawienia > Ustawienia uzg
 
 1. Aby określić tolerancje dla poszczególnych dostawców, które zastępują domyślną tolerancję, wybierz **Konto dostawcy**.
 2. Wprowadź procent odchylenia, który akceptujesz dla tego dostawcy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

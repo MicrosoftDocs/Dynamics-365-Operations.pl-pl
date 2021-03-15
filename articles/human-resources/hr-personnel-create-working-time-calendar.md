@@ -43,3 +43,6 @@ Kalendarze opisują zdolności produkcyjne i czasy pracy zasobów operacyjnych. 
 12. Kliknij przycisk **OK**.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

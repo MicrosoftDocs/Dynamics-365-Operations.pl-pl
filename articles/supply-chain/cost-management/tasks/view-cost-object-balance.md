@@ -39,3 +39,6 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 8. Wyczyść pole wyboru Lokalizacja.
 9. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

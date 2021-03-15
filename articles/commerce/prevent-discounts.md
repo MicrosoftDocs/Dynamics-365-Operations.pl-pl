@@ -40,3 +40,6 @@ Następujące opcje, które można znaleźć na karcie **Sprzedaż** dla zwolnio
 > Te ustawienia nie ograniczają operacji ręcznej zmiany ceny, ponieważ ustawia ona podstawę ceny i nie jest traktowana jako rabat.
 
 [![Pole blokowania rabatów](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

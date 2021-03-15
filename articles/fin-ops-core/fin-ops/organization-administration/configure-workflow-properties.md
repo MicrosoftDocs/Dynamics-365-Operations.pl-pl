@@ -182,3 +182,6 @@ Aby wprowadzić komentarze dotyczące zmian zastosowanych w przepływie pracy, n
 2. W polu **Wprowadź komentarze dotyczące przepływu pracy** wprowadź komentarze.
 3. Przejrzyj wprowadzone komentarze. Po dodaniu komentarzy nie można ich modyfikować.
 4. Kliknij przycisk **Dodaj**, aby dodać komentarze do obszaru **Historia komentarzy**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

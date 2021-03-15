@@ -63,3 +63,6 @@ Praca pobrania surowca jest generowana podczas zwalniania. Praca jest generowana
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Działy to jednostki operacyjne, które reprezentują obszar funkcjonalny przeds
 16. W polu Opisz zmiany wpisz wartość.
 17. Kliknij przycisk Publikuj.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

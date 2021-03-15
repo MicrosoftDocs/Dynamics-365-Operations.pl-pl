@@ -45,3 +45,6 @@ Modele przepływu produkcji opisują sposób obliczania i obsługi zdolności pr
 8. W polu Reakcja na niedobór zdolności produkcyjnych wybierz opcję.
     * Opóźnij — Odroczenie pełnego popytu w zdarzeniu planowania do następnego dostępnego dnia produkcji mającego dostępną produktywność. Anuluj — Zakończenie automatycznego planowania w zdarzeniu planowania i pozostawienie powiązanych zadań niezaplanowanych.   Dodaj do żądanego dnia — Planowanie żądanych zadań na żądany okres. Powoduje to przeciążenie komórki w danym dniu i wymaga od planisty przeglądu i ręcznej interakcji.   Dystrybucja do dostępnych okresów — Rozdział różnych zadań zdarzenia planowania między wszystkie dostępne produkcji dni, począwszy od pierwszego dostępnego dnia. Minimalną ilością do rozdziału jest ilość z zadania w systemie Kanban. Dystrybucja powoduje przypisanie minimalnej ilości planowania (ilości z kart Kanban) do każdego dnia o wystarczającej dostępnej produktywności.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

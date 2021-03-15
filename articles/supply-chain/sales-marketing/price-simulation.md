@@ -144,3 +144,6 @@ Symulacja ceny wpływa tylko na wiersz, do którego jest stosowana, powodując z
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

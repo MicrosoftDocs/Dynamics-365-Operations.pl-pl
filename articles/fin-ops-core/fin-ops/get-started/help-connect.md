@@ -99,3 +99,6 @@ Aby współpracować z firmą Microsoft w zakresie tworzenia do narzędzi i proc
 [Zasoby rejestratora zadań](../../dev-itpro/user-interface/task-recorder.md)  
 [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Repozytorium GitHub pomocy niestandardowej](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

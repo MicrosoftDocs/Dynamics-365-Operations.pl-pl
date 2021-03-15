@@ -55,3 +55,6 @@ Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
 - [Zarządzanie witryną e-Commerce](online-store-overview.md)
 - [Ochrona przed oszustwami](dev-itpro/DFP.md)
 - [Projektowanie i rozszerzanie handlu](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

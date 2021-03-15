@@ -66,3 +66,6 @@ Każda ze standardowych tabel w usłudze Dataverse jest rozszerzana za pośredni
 8. Po rozszerzeniu tabeli **Oferty** zastosuj filtr z `CUSTGROUP != "<company>"` jako ciągiem zapytania.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Okno dialogowe edytowania zapytania dla nagłówka oferty sprzedaży usługi CDS":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

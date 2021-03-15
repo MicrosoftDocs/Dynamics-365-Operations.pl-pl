@@ -67,3 +67,6 @@ Transakcje środków trwałych dowolnego typu można księgować na stronie Arku
 Wartość pozostała Okresu amortyzacji środka trwałego nie jest aktualizowana, kiedy wiersz arkusza typu transakcji opisowej jest tworzony ręcznie lub importowany przez jednostkę danych. Ta wartość jest aktualizowana, kiedy proces propozycję amortyzacji jest używany do tworzenia wiersza arkusza.
 
 Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

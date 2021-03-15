@@ -87,3 +87,6 @@ Poprawka dla tego błędu jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
 + Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacji Finance and Operations nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

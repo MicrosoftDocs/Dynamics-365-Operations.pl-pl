@@ -200,3 +200,6 @@ Dla tej wysyłki utworzono nową grupę czynności, ponieważ używa ona innej u
 1. Wybierz identyfikator grupy czynności, która została utworzona na podstawie trzeciego zamówienia sprzedaży.
 1. Wybierz łącze identyfikatora grupy czynności, aby otworzyć stronę szczegółów.
 1. Należy zauważyć, że wysyłka została dodana do skróconej karty **Wierszy grupy czynności** wraz z wysyłką dla pierwszego zamówienia sprzedaży.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

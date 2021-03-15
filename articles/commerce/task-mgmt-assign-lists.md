@@ -91,3 +91,6 @@ Aby śledzić stan listy zadań dla wszystkich zadań przypisanych do Ciebie, na
 [Tworzenie list zadań i dodawanie zadań](task-mgmt-create-lists.md)
 
 [Zarządzanie zadaniami w punkcie sprzedaży](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

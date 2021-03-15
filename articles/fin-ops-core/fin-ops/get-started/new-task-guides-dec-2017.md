@@ -368,3 +368,6 @@ Po usunięciu linii BPM Przewodnik po zadaniach, który jest skojarzony z tym wi
 **Usunięto wiersze BPM**
 
 - Przenoszenie zaplanowanych zadań w systemie Kanban
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Poniższe zadania wsadowe powinny być uruchamiane w nocy lub po godzinach. Nale
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

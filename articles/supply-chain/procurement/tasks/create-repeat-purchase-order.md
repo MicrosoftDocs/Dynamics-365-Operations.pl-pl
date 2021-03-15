@@ -69,3 +69,6 @@ Zamiast kopiować całe zamówienie, częściej tworzy się nowe zamówienie zak
 4. Wybierz wiersz dla żadanego zamówienia zakupu. Należy zauważyć, że został zaznaczony również pojedynczy wiersz zamówienia znajdujący się w tym zamówienia zakupu.  
 5. Kliknij przycisk **OK**. Dodatkowy wiersz zamówienia został dodany do zamówienia zakupu.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

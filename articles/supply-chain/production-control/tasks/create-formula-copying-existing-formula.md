@@ -56,3 +56,6 @@ W tej procedurze pokazano, jak szybko utworzyć nową formułę przez skopiowani
 3. Kliknij przycisk OK.
 4. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

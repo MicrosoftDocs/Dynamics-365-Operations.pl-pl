@@ -139,3 +139,6 @@ Można wygenerować raport **Wysłane do klientów** w celu zidentyfikowania ilo
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Czy mogę śledzić produkty towarzyszące i produkty uboczne?
 Można śledzić produkty towarzyszące, ale nie można śledzić produktów ubocznych, ponieważ wymiary śledzenia zwykle nie są przypisane do produktów ubocznych. Podczas śledzenia towaru szczegóły śledzenia uwzględniają wszelkie pokrewne produkty towarzyszące. Węzeł, który zawiera produkt towarzyszący, zawiera określenie „co-product” (produkt towarzyszący) w szczegółach. Można również wyświetlić szczegóły dotyczące produktu towarzyszącego, zaznaczając węzeł w szczegółach śledzenia, a następnie klikając skróconą kartę **Produkcja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

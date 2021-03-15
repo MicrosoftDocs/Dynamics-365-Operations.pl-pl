@@ -76,3 +76,6 @@ Planowanie zadań bierze pod uwagę procenty wydajności określone dla zasobów
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

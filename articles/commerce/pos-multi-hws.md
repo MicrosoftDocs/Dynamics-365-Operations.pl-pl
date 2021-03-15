@@ -153,3 +153,6 @@ Pracownicy sklepu są proszeni o wybranie stacji sprzętowej tylko raz na transa
 - [Konfigurowanie aplikacji POS hybrid w systemach Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Omówienie obsługi urządzeń peryferyjnych w sieci](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

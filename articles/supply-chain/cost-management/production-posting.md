@@ -56,3 +56,6 @@ W **Parametrach kontroli produkcji** można użyć pola **Księgowanie w księdz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

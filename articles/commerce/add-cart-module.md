@@ -117,3 +117,6 @@ Aby dodać moduł koszyka do nowej strony i ustawić wymagane właściwości, wy
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
 
 [Tworzenie profilu funkcji online](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

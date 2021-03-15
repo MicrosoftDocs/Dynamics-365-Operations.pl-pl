@@ -803,3 +803,6 @@ W tej sekcji utworzysz zapisaną zmienną w pierwszym przypadku testowym, utworz
 2. Sprawdź, czy oba przypadki testowe zostały zaliczone.
 
     ![Pole Wynik z ustawieniem Powodzenie obu przypadków testowych](./media/setup_rsa_tool_105.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

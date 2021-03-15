@@ -141,3 +141,6 @@ Zażądanie przez osobę zatwierdzającą wprowadzenia zmian w dokumencie powodu
 Na przykład Sam przesłał raport z wydatków na kwotę 12 000 USD, a ten dokument jest przypisany do Sue. Jeśli Sue poprosi o wprowadzenie zmian, raport z wydatków jest wysyłany z powrotem do Sama.
 
 Sam może ponownie przesłać raport z wydatków. Może on najpierw wprowadzić żądane zmiany lub ponownie przesłać oryginalną wersję raportu z wydatków. Jeśli Sam ponownie prześle raport, zostanie on wysłany do zatwierdzenia do Franka, ponieważ Frank jest pierwszą osobą zatwierdzającą w procesie zatwierdzania.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Konfigurując etap usługi, możesz utworzyć wiele opcji lub odgałęzień moż
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

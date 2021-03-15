@@ -187,3 +187,6 @@ Aby ułatwić wyświetlanie kolumn, nad którymi pracujesz w definicji wiersza, 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Raportowanie finansowe](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

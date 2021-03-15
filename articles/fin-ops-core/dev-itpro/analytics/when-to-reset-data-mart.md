@@ -54,3 +54,6 @@ Istnieją pewne okoliczności, w przypadku których nie zaleca się resetowania 
 > W poniższych punktach określono dwie opcje, których zresetowanie składnicy danych *nie* spowoduje. <br>
 > - Resetowanie nie powoduje wyczyszczenia projektów raportów. <br>
 > - Resetowanie nie powoduje wyczyszczenia danych firmy lub użytkownika, chyba że zostaną wybrane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

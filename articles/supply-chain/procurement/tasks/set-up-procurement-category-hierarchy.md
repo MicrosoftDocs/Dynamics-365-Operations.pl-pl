@@ -44,3 +44,6 @@ W tej procedurze pokazano, jak utworzyć nowe węzły w hierarchii kategorii zao
 4. Zaznacz produkty, które mają zostać dodane do kategorii zaopatrzenia.
 5. Wybierz strzałkę, aby dodać produkty do tabeli **Wybrane**.
 6. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

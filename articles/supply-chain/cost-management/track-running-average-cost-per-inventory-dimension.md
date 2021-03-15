@@ -55,3 +55,6 @@ Dynamiczny średni koszt własny dla magazynu GW i partii AAA wynosi 11,20 zł.,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

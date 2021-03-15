@@ -61,3 +61,6 @@ Aby skonfigurować krytyczność, należy najpierw utworzyć typy krytyczności,
 - Krytyczność na zleceniu pracy jest przeliczana za każdym razem, gdy wiersz zlecenia pracy jest dodawany lub usuwany ze zlecenia pracy.
 - Jeśli zlecenie pracy zawiera kilka zadań pracy, najwyższy poziom krytyczności, zgodnie z polem **Współczynnik** na stronie **Typy krytyczności**, jest zawsze używana w zleceniu pracy.
 - Ogólnie rzecz biorąc, krytyczność składników majątku można zmienić na przestrzeni czasu. Krytyczność może mieć wpływ na zakup nowego sprzętu, remonty i tak dalej. Rozważ ponowną ocenę krytyczności składników majątku w regularnych odstępach czasu (np. raz na rok lub co dwa lata), aby upewnić się, że definicje krytyczności odpowiadają aktualnej konfiguracji produkcji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

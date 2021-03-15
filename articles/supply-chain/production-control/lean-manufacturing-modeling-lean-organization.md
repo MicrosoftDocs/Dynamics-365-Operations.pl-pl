@@ -66,3 +66,6 @@ W implementacji idei produkcji oszczędnej wybraliśmy podejście oparte na prze
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

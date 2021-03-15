@@ -100,3 +100,6 @@ Arnie wyświetla informacje na stronie **Transakcje dostawcy**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

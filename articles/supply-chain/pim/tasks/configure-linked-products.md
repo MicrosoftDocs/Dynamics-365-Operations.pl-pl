@@ -39,3 +39,6 @@ Ta procedura prowadzi przez kolejne etapy konfigurowania połączonych produktó
 10. Wprowadź liczbę w polu Ilość.
 11. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

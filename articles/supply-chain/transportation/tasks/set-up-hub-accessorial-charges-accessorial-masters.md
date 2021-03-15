@@ -53,3 +53,6 @@ W tej procedurze pokazano sposób tworzenia danych głównych usług dodatkowych
 9. Kliknij przycisk Zapisz.
 10. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Grupy harmonogramów produkcji oszczędnej tworzy się w celu grupowania i odró
 3. W polu Klucz alokacji towaru kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 4. Na liście kliknij łącze w wybranym wierszu.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

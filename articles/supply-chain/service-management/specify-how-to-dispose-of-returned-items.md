@@ -182,3 +182,6 @@ Dla każdego zdefiniowanego kodu dyspozycji musisz wybrać akcję dyspozycji. Ak
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

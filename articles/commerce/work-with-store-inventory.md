@@ -71,3 +71,6 @@ Inwentaryzacje mogą być zaplanowane lub niezaplanowane. Zaplanowane inwentaryz
 ## <a name="inventory-lookup"></a>Wyszukiwanie w magazynie
 
 Ilość produktów dostępną obecnie w wielu sklepach i magazynach można wyświetlić na stronie **Wyszukiwanie w magazynie**. Oprócz bieżącej ilości dostępnej w zapasach można wyświetlić przyszłe dostępności zapasów (ATP) dla każdego sklepu. Wybierz sklep, dla którego chcesz wyświetlić ilości ATP, a następnie wybierz opcję **Pokaż dostępność sklepu**. Aby uzyskać informacje o dostępnych opcjach konfiguracji, zapoznaj się z tematem [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

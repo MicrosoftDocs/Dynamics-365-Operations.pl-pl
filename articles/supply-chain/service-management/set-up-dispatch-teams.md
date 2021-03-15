@@ -53,3 +53,6 @@ W tym temacie opisano sposób tworzenia zespołu wysyłek. Po utworzeniu zespoł
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

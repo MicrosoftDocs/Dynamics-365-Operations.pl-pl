@@ -53,3 +53,6 @@ Dodatkowe zasoby
 
 [Tworzenie pozwolenia na polecenie zapłaty dla odbiorcy](tasks/create-direct-debit-mandate-customer.md) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

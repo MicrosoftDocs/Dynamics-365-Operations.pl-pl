@@ -55,3 +55,6 @@ W tym temacie wyjaśniono, jak dodawać wymiary finansowe do obszaru roboczego D
 16. Skompiluj projekt, a następnie otwórz aplikację, aby wyświetlić rezultat.
 
     [![Skonfigurowana przestrzeń robocza](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

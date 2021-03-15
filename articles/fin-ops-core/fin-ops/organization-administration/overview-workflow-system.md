@@ -71,3 +71,6 @@ Używanie systemu przepływu pracy w organizacji ma kilka zalet:
 + [Konfigurowanie odgałęzień równoległych w przepływie pracy](configure-parallel-branch-workflow.md)
 + [Konfigurowanie przepływów pracy dla pozycji w wierszach](configure-line-item-workflow.md)
 + [Przepływ pracy — często zadawane pytania](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

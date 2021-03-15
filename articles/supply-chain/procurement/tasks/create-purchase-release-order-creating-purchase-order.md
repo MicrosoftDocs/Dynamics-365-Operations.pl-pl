@@ -63,3 +63,6 @@ W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia z
 3. Zamknij stronę.
 4. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

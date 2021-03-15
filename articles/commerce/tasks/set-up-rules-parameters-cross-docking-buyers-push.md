@@ -47,3 +47,6 @@ Ta procedura pokazuje kolejne kroki tworzenia reguł uzupełnienia. Reguły uzup
 14. W polu Waga wprowadź liczbę.
 15. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

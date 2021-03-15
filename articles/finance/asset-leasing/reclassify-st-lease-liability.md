@@ -40,3 +40,6 @@ Aby utworzyć i zaksięgować wpis w arkuszu dotyczący przeklasyfikowania zobow
 4. Włącz parametr **Księguj**. Alternatywnie, jeśli wpis powinien zostać utworzony, ale nie zaksięgowany, pozostaw ten parametr wyłączony.
 5. Włącz parametr **Wyświetl podgląd przed zaksięgowaniem**, aby obejrzeć wpis przed jego zaksięgowaniem.
 6. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

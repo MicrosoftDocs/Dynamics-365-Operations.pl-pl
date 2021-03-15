@@ -73,3 +73,6 @@ Zadania wykorzystują firmę demonstracyjną „USMF”.
     * To konto będzie obciążane podczas księgowania marży początkowej, a uznawane podczas księgowania płatności.  
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Raport **Lista żądań konserwacji** zawiera listę wszystkich żądań konserw
 Na poniższej ilustracji przedstawiono przykładowy raport **Lista żądań konserwacji** dla wszystkich aktywnych żądań konserwacji.
 
 ![Raport listy żądania konserwacji](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Istnieje możliwość rejestrowania historii elementu w usłudze BOM. Za każdym
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

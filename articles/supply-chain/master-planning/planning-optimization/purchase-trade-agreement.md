@@ -89,3 +89,6 @@ Poniższa tabela zawiera przykłady, które pokazują, jak różne ustawienia wy
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Umowy zakupu](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

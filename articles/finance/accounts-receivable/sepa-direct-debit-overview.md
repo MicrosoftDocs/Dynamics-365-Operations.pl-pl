@@ -83,3 +83,6 @@ W ramach obu schematów poleceń zapłaty SEPA, odbiorcy mają określone prawa 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

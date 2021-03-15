@@ -108,3 +108,6 @@ Aby umożliwić pracownikom wprowadzenie tej zmiany, można utworzyć element me
 - **Wyświetl kolumnę Stan zapasów:** *Tak*
 
 W razie konieczności można skonfigurować inne pola na stronie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

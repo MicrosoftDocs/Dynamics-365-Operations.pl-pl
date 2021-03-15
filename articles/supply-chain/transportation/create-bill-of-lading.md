@@ -42,3 +42,6 @@ Jeśli ładunek obejmuje kilka wysyłek, można utworzyć główny list przewozo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

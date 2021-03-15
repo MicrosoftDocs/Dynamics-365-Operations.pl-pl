@@ -105,3 +105,6 @@ Dodatkowe zasoby
 - [Obszar roboczy Kontrola kosztów](cost-control-workspace.md)
 - [Hierarchia wymiarów](dimension-hierarchy.md)
 - [Konfigurowanie zabezpieczeń pakietu zawartości Rachunek kosztów](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

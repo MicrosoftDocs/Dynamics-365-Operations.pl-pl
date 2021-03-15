@@ -94,3 +94,6 @@ Tablicę harmonogramu Kanban można otworzyć przy użyciu elementu menu na nast
 
 [Planowanie zadań w systemie Kanban na potrzeby lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

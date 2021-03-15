@@ -54,3 +54,6 @@ Planista produkcji oblicza zapotrzebowanie na materiały i zdolności produkcyjn
 2. Kliknij przycisk Akceptuj.
 3. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

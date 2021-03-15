@@ -85,3 +85,6 @@ Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne. Aby zas
 15. W polu Jednostka kontroli kosztów wprowadź lub wybierz wartość.
 16. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

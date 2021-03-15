@@ -56,3 +56,6 @@ W poniższej tabeli opisano pola dostępne na **karcie Zarządzanie zmianami in�
 | Reguła ważności | Umożliwia wybranie sposobu ustanawiania wagi zlecenia zmiany inżynieryjnej. Jeśli użytkownik oczekuje na wprowadzenie wartości w polu **Ważność**, należy wybrać opcję *ręcznie*. Wybierz opcję *Oblicz* aby system obliczał wartość pola **Ważność** po wybraniu opcji **Oblicz ważność** w okienku akcji w żądaniu zmiany inżynieryjnej. W takim przypadku system będzie używał reguł ważności zdefiniowanych na **stronie zestawów reguł ważności**. Wybierz opcję *Oblicz automatycznie* aby wartość **pola ważności** była automatycznie obliczana i wypełniana zgodnie z zestawami reguł ważności. |
 | Ponowne zwolnienie produktów objętych wpływem | To pole jest używane podczas ponownego wydawania produktów za pośrednictwem zlecenia zmiany inżynierskiej. W oknie dialogowym **zwalnianie** można określić, czy mają być proponowane wszystkie produkty, czy tylko produkty, których dotyczy problem. |
 | Poziomy BOM do zwolnienia | Głębokość poziomu BOM do wydania. Jeśli BOM ma więcej poziomów (o ile jest głębszy) niż wartość określona w tym miejscu, zostaną zwolnione tylko poziomy określone przez określoną wartość. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

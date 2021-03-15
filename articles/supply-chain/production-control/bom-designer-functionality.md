@@ -120,3 +120,6 @@ Kliknij **Ustawienia**, aby dostosować dane wyświetlane w widoku drzewa w Kons
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

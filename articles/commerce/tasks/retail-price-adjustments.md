@@ -52,3 +52,6 @@ Ta procedura prowadzi przez proces tworzenia korekty cen sprzedaży. Korekta cen
 14. Zamknij stronę.
 15. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

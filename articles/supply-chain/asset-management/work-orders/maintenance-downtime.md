@@ -88,3 +88,6 @@ Kliknij **Zarządzanie składnikami majątku** > **Zapytania** > **Przerwa konse
 >[!NOTE]
 >Wszystkie kalendarze używane w module **Zarządzanie składnikami majątku** są konfigurowane w **Administrowanie organizacją** > **Ustawienia** > **Kalendarze** > **Kalendarze**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

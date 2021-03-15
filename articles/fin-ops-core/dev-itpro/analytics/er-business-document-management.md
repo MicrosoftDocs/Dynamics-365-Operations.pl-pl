@@ -579,3 +579,6 @@ W poniższej tabeli pokazano listę konfiguracji ER, które obsługują konfigur
 |                             | Dokument dostawy dla zamówienia sprzedaży (LT) (Excel)           |
 |                             | Dokument dostawy dla zamówienia sprzedaży (PL) (Excel)           |
 |                             | Dokument dostawy dla zamówienia sprzedaży (Word)                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

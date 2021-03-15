@@ -50,3 +50,6 @@ Następnie April arkusz płatności. Faktura jest całkowicie rozliczona przy u�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

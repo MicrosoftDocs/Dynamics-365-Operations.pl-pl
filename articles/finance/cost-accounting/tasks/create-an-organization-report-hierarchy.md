@@ -94,3 +94,6 @@ Ta procedura służy do tworzenia hierarchii raportów dla sprawozdawczości w o
     * Wybierz element członkowski wymiaru odpowiadający węzłowi.  
 59. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

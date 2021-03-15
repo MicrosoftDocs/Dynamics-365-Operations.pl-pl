@@ -38,3 +38,6 @@ Poniższe scenariusze przeprowadzą użytkownika przez proces konsolidacji wysy�
 
 - [Zasady konsolidacji wysyłki](about-shipment-consolidation-policies.md)
 - [Konfigurowanie zasad konsolidacji wysyłki](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

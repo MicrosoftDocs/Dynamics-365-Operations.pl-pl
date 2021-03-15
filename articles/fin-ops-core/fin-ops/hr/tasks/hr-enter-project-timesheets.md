@@ -51,3 +51,6 @@ Ta procedura pozwala tworzyć karty czasu pracy, używając pustego formularza k
 21. Kliknij przycisk **Prześlij**.
 22. Kliknij przycisk **Prześlij**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

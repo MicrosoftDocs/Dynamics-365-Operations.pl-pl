@@ -58,3 +58,6 @@ Ta procedura przedstawia sposób tworzenia umów handlowych na ceny sprzedaży p
 24. Kliknij kartę Reguły cen dla kategorii.
     * Na tej liście pojawią się reguły cen dla kategorii specyficzne dla kanału.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

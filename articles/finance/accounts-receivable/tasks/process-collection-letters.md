@@ -87,3 +87,6 @@ Aby zignorować płatności i noty kredytowe przy obliczaniu kodu ponaglenia, wy
 
 1. Przejdź do **Okienko nawigacji > Moduły > Kredyty i windykacja > Ustawienia > Parametry modułu rozrachunków z odbiorcami** i kliknij kartę **Windykacje**. 
 2. Zmień wartość opcji **Ignoruj płatności i noty kredytowe przy obliczaniu kodu ponaglenia** na **Tak**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Po zaznaczeniu wiersza koszyka i wybraniu opcji **Wybierz zaznaczone**, **Wyśli
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zamówienia odbiorców w aplikacji Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

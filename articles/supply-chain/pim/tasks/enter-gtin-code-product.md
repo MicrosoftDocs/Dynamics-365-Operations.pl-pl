@@ -41,3 +41,6 @@ Numery GTIN są przypisywane przez organizację GS1. W tym przykładzie wprowadz
 11. W polu GTIN wpisz wartość.
 12. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

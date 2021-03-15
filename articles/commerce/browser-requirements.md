@@ -47,3 +47,6 @@ Witryny Dynamics 365 Commerce są najlepiej obsługiwane przez następujące prz
 [Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

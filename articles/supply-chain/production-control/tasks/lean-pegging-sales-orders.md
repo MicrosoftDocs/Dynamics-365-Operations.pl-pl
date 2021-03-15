@@ -56,3 +56,6 @@ Ta procedura skupia się na sprawdzeniu poprawności drzewa oznaczania transakcj
 5. W drzewie zaznacz element „Wiersz sprzedaży 000832\Kanban 000558\Wydanie towaru L0001\Kanban 000559”.
     * Zadanie na drugiej karcie Kanban jest również zaplanowane, ponieważ całe drzewo oznaczania transakcji jest zaplanowane. Należy zauważyć, że stan zadania w systemie Kanban zmienił się z Niezaplanowane na Zaplanowane.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

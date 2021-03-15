@@ -66,3 +66,6 @@ Ponieważ firma inżynieryjna posiada dane techniczne, system ten kontroluje nas
 
     - Gdy te dokumenty są wydawane do innych firm, dokumenty są chronione przed usunięciem przez firmę operacyjną.
     - Inne firmy mogą dodawać zupełnie nowe dokumenty lokalne. Firma operacyjna posiada i obsługuje te lokalne dokumenty.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

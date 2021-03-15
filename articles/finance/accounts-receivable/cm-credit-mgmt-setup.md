@@ -78,3 +78,6 @@ W polu informacji **Statystyki zarządzania kredytami odbiorców** znajduje się
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Parametry sekwencji numerów i współużytkowanej sekwencji numerów
 
 Identyfikator arkusza jest wymagany do przetwarzania korekt limitu kredytu. Należy dodać numer korekty limitu kredytu, który ma być użyty do wygenerowania identyfikatora arkusza.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

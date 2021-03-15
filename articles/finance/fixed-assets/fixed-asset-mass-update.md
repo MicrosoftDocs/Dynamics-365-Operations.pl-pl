@@ -41,3 +41,6 @@ Po zaktualizowaniu konwencji amortyzacji dla środków trwałych można przetwor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

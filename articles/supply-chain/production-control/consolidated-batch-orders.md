@@ -45,3 +45,6 @@ Skonsolidowana szarża produkcyjna może zawierać dowolną kombinację następu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

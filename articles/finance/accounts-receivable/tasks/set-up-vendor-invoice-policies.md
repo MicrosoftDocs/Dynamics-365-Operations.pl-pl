@@ -72,3 +72,6 @@ W tym temacie opisano sposób konfigurowania zasad płatności dla faktur od dos
 16. Kliknij przycisk **OK**.
 17. Zamknij te strony, aby powrócić do strony głównej.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

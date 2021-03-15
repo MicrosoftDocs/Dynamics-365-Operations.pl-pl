@@ -54,3 +54,6 @@ Po utworzeniu żądań konserwacji można łatwo przekonwertować je na zlecenia
 
     ![Otwieranie nowego zlecenia pracy](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

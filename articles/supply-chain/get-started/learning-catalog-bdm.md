@@ -41,3 +41,6 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | Zawartość  | opis  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Dynamics 365 Fundamentals](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Udowodni, że rozumiesz Microsoft Dynamics 365, Power Platform, pojęcia chmury, opcje licencjonowania, opcje wdrożenia i wydania. | Egzamin, koszty różnią się w zależności od regionu |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ W tym przypadku powstaje wynik.
 | IA0001 | 1 | 2 | 2 |
 
 Należy zauważyć, że ustawienia w okienku **Filtry** dotyczą szczegółowej (nie zagregowanej) tabeli zapasów pokazanej na początku tej sekcji. Dlatego kryterium **Fizycznie dostępne** \| **mniejsze niż lub równe** \| _1_ powoduje wyszukanie dwóch wierszy z tabeli (pierwszy i trzeci wiersz, z których każdy pokazuje **Fizycznie dostępne** równą  _1_). Jednak w tym scenariuszu strona **Lista dostępnych** nie jest skonfigurowana do wyświetlania wymiaru **Magazynowego**. Z tego względu dwa oryginalne wiersze są agregowane w jeden wynikowy wiersz, ponieważ oba wiersze mają identyczne wartości we wszystkich widocznych wymiarach. Ten wiersz wydaje się naruszać kryterium filtrowania, ponieważ **Fizycznie dostępne** jest wyświetlana jako _2_. Jednak wynik jest poprawny, ponieważ ustawienia w okienku **Filtry** mają zastosowanie do tabeli źródłowej, a nie do zagregowanej tabeli wyświetlanej na stronie **Lista dostępnych**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

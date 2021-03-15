@@ -164,3 +164,6 @@ Raport Średnia ważona stawka rabatu spełnia wymogi dotyczące ujawniania śre
 |     Waluta                          |     Skrót użytej waluty transakcji. Wszystkie raporty dokonają konwersji waluty transakcyjnej na walutę raportowania.  |
 |     Pozostałe opłaty z tytułu wynajmu          |     Suma kwot niezapłaconych opłat z tytułu wynajmu z harmonogramu płatności od dnia **Data**.            |
 |     Pozostałe ważone płatności       |     Pozostałe opłaty z tytułu wynajmu pomnożone przez zastosowaną stawkę rabatu.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

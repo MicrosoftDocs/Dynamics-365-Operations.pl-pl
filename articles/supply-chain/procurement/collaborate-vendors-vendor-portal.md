@@ -103,3 +103,6 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Można przenieść informacje z bazy danych organizacji do zakładek w nowym dok
 8. Kontynuuj wpisywanie swojej wiadomości e-mail, w razie potrzeby wstawiając pola zakładek.
 9. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

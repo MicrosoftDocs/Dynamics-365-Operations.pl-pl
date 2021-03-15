@@ -96,3 +96,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 7. Kliknij przycisk OK.
     * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że oprócz komunikat faktury w formacie XML dla każdego załącznika utworzono również jeden plik. Pliki załączników są umieszczane w spakowanych danych wyjściowych w formacie binarnym.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

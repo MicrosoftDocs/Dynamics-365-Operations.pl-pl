@@ -40,3 +40,6 @@ Te dwie konwersje powodują zmianę dat między aplikacjami. Na przykład podwó
 4. Zmień **strefę czasową** na **Uniwersalny czas koordynowany** i zmień **język** na **En-US**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

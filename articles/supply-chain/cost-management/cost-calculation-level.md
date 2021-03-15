@@ -56,3 +56,6 @@ Tworzone jest zlecenie produkcyjne dla produktu C, a produkt A jest dodawany do 
     - **Produkt C:** 2
 
 To zachowanie gwarantuje, że zmiany BOM zlecenia produkcyjnego nie wpływają na kolejne obliczenia kosztów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

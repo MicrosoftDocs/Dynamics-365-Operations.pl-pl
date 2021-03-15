@@ -71,3 +71,6 @@ Ta procedura pokazuje, jak skonfigurować dane dla automatycznego uzgadniania fr
 11. W polu Kod przyczyny niedopłaty wprowadź lub wybierz wartość.
 12. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

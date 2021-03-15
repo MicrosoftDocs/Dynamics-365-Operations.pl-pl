@@ -174,3 +174,6 @@ Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynu
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)
 - [Definicje drzewa raportowania w raportach finansowych](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

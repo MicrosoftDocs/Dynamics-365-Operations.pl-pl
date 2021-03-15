@@ -86,3 +86,6 @@ W poniższej tabeli przedstawiono jednostki, na których bazuje pakiet.
 | Trend pracowników           | Liczba pracowników w okresie, stan osobowy, firma i stanowisko                                 | Firma, Położenie geograficzne, Nazwisko pracownika etatowego, Przełożony, Przesunięcie kalendarza, Data, Tytuł pracownika, Dane demograficzne, Zatrudnienie, Zadanie |
 | Projekt zatrudnienia grupowego        | Liczba projektów zatrudnienia grupowego, właściciel projektu oraz stan projektu                     | Firma, Wiersz zatrudnienia grupowego |
 | Wiersz zatrudnienia grupowego           | Dział, typ zatrudnienia i stanowisko                                           | Data, Zadanie, Projekt zatrudnienia grupowego |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 11. Kliknij przycisk OK.
     * Przejrzyj wygenerowane dane wyjściowe. Należy zauważyć, że dla każdego załącznika został utworzony jeden węzeł XML. Treść załączników zostanie zapisana w danych wyjściowych XML w formacie tekstowym MIME (base64).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

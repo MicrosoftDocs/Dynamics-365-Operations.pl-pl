@@ -54,3 +54,6 @@ Ta procedura służy do konfigurowania szablonu, który reprezentuje obiekty w s
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Salda będą aktualizowane automatycznie lub przejdą przez proces zatwierdzenia
 
 [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)</br>
 [Zarządzaj zasadami Kupowania i Sprzedawania urlopu](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

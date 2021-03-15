@@ -176,3 +176,6 @@ Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień
    | **Reguły uprawnienia** | Wybierz reguły uprawnień, które mają być stosowane do programu świadczeń. Reguły uprawnień definiuje się na karcie **Reguły uprawnienia** na tej stronie. |
    
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

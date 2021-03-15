@@ -41,3 +41,6 @@ Dane wykorzystane do stworzenia tego zadania pochodzą z firmy demonstracyjnej U
 7. Kliknij strzałkę, aby dodać wybrane dostępne zespoły do książki adresowej.
 8. Kliknij przycisk **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

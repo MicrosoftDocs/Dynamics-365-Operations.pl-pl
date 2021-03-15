@@ -54,3 +54,5 @@ Gdy zapotrzebowanie jest gotowe, użyj akcji **Przepływ pracy** > **Prześlij**
 
 - [Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Udoskonalenia cXML dotyczące zakupów](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

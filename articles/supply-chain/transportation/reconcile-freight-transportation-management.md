@@ -105,3 +105,6 @@ W tym przykładzie można wykonać uzgadnianie ręczne w inny sposób:
 1. Dopasuj kolejno faktury Inv1 i Inv 2 do FB. Rachunek FB jest w pełni dopasowany.
 
 Jak pokazano w tym przykładzie, uzgadnianie faktur za fracht z kwotami ujemnymi należy wykonać tylko ręcznie. Zapewnia to, że zawsze jest możliwe dopasowanie faktur za fracht z kwotami ujemnymi do w pełni dopasowanej opłaty frachtowej, ponieważ umożliwia to kontrolowanie kolejności uzgadniania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

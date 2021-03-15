@@ -123,3 +123,6 @@ Poniższa ilustracja przedstawia przykład mapowania szablonu w integracji danyc
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

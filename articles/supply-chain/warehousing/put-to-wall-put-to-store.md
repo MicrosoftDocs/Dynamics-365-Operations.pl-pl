@@ -540,3 +540,6 @@ Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatyczn
 
 > [!IMPORTANT]
 > Po utworzeniu pracy przesunięcia z lokalizacji sortowania nie można anulować pracy. W przeciwnym razie pozycja i kontenery w niej zostaną usunięte z systemu i nie będą dostępne do dalszego przetwarzania. Zapasy zostaną również usunięte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Funkcja zaawansowanego uzgodnienia konta bankowego pozwala importować wyciągi 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

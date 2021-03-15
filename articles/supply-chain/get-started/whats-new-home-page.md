@@ -67,3 +67,6 @@ Aby zobaczyć, co nowego lub zmieniła się w wersjach przed listopadem 2019 r.,
 | Microsoft Dynamics 365 for Operations                                 | 1611        | 7.1.1541.3036    | Listopad 2016    | [Nowości i zmiany w programie Dynamics 365 for Operations w wersji 1611 (listopad 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-dynamics-365-operations-1611.md)                |
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | 2016 maja         | [Nowości i zmiany w aplikacji Dynamics AX w wersji 7.0.1 (maj 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | 2016 lutego    | [Nowości i zmiany w systemie Dynamics AX 7.0 (luty 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

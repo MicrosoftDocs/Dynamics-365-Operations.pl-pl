@@ -168,3 +168,6 @@ Etapy w tej procedurze wyjaśniają sposób projektowania konfiguracji raportowa
 66. Zamknij stronę.
 67. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

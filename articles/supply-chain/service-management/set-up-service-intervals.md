@@ -53,3 +53,6 @@ Chcesz utworzyć ramy czasowe serwisu o długości 10 dni.
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Ramy czasowe serwisów ](service-intervals.md)  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

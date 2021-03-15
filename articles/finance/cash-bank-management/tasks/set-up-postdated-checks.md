@@ -56,3 +56,6 @@ Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstra
 18. Kliknij przycisk Zapisz.
 19. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

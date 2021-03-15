@@ -50,3 +50,6 @@ Ustawienia wprowadzone na karcie **Sekwencja numerów** określają sekwencje u�
 
 > [!NOTE]
 > Liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych. Ustawienia na karcie **Samoobsługa pracownika etatowego** określają informacje,jakie mogą wprowadzać menedżerowie w imieniu swoich pracowników.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

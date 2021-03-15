@@ -130,3 +130,6 @@ Twoja nowa dzierżawa B2C Azure AD powinna teraz pojawić się na liście w obsz
 [Dodawanie obsługi dla sieci dostarczania zawartości (CDN)](add-cdn-support.md)
 
 [Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

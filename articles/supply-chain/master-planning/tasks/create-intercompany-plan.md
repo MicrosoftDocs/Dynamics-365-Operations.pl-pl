@@ -53,3 +53,6 @@ Ta procedura pokazuje, jak utworzyć plan międzyfirmowy. Dane wykorzystane do s
 2. Na liście kliknij łącze w wybranym wierszu. Kliknij łącze do planu statycznego. Musisz być w firmie USMF.  
 3. Kliknij opcję **Zamówienia planowane**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Pracownicy z obowiązkami, które nie wymagają natychmiastowej reakcji, tak jak
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

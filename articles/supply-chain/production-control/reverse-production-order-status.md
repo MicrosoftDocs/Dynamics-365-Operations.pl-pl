@@ -52,3 +52,6 @@ Zmiana stanu zlecenia produkcyjnego z **Rozpoczęte** na **Zwolnione** powoduje 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

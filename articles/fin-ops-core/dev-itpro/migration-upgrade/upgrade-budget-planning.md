@@ -162,3 +162,6 @@ Dodano kilka jednostek danych umożliwiających szybkie wdrażanie funkcjonalno�
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

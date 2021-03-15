@@ -80,3 +80,6 @@ Bez względu na to, czy wykonano mapowanie kont, czy nie, przed rozpoczęciem te
 
 > [!NOTE]
 > Przy użyciu tej metody można utworzyć plan kont konsolidowanej firmy na podstawie planu kont jednej z firm zależnych. (Aby uzyskać więcej informacji, zobacz temat [Grupy kont konsolidacji i dodatkowe konta konsolidacji](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Następnie przypisz odpowiednią zasadę konwersji konsolidacji do każdego skonsolidowanego konta głównego i uruchom konsolidację dla wszystkich firm oddziału.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
 7. Aby wyświetlić efekt netto utraty wartości, przejdź do tabeli transakcji na pasywach i aktywach. Zauważ, że wydatek utraty wartości zmniejszył wartość składnika majątku z PDU, ale wartość bilansowa zobowiązania z tytułu wynajmu nie uległa zmianie.
 
 Utrata wartości ma jeszcze jeden efekt, który należy wziąć pod uwagę. Ponieważ wartość składnika majątku z PDU jest teraz znacznie mniejsza od wartości zobowiązania z tytułu wynajmu, musi być amortyzowana inaczej niż wcześniej. Dokładniej rzecz biorąc składnik majątku jest teraz amortyzowany liniowo przez pozostałe 84 miesiące wynajmu, licząc od daty transakcji.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Brak wymiaru śledzenia **właściciela**, jeśli do tworzenia przesunięć jest
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Firma Microsoft oceniła ten błąd i ustaliła, że jest to ograniczenie funkcji. Obecnie procesy zarządzania magazynem obsługują tylko zapasy będące własnością osoby prawnej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

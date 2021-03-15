@@ -36,3 +36,6 @@ Eksportowanie danych modelu konfiguracji produktu wymaga dostępności co najmni
 5. Kliknij opcję Eksportuj model produktu.
     * Zachowanie pobierania różni się między przeglądarkami i zależy od sposobu skonfigurowania ustawień zabezpieczeń.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

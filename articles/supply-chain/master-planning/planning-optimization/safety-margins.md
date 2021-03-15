@@ -182,3 +182,6 @@ Na przykład towar ma czas realizacji o jeden dzień dłuższy, ale zapas bezpie
 [Rozpoczęcie optymalizacji planowania](get-started.md)
 
 [Analiza dopasowań optymalizacji planowania](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

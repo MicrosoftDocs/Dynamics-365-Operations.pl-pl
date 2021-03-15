@@ -41,3 +41,6 @@ Istnieje możliwość skonfigurowania różnych typów żądań, które będą u
 Na poniższej ilustracji pokazano przykład strony listy **Wszystkie żądania konserwacji**.
 
 ![Strona Wszystkie listy żądań konserwacji](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

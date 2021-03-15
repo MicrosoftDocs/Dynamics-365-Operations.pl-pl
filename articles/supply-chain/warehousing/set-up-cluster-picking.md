@@ -79,3 +79,6 @@ W przypadku stosowania pobierania dla grupy bardzo ważne jest potwierdzanie tow
 1. Na urządzeniu przenośnym w menu otwórz formularz ustawień potwierdzenia pracy: **Zarządzanie magazynem** \> **Zarządzanie magazynem** \> **Ustawienia** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
 
 1. Na urządzeniu przenośnym w menu otwórz pozycję **Konfiguracja potwierdzenia pracy**. Opcja **Potwierdzenie produktu** umożliwia weryfikowanie każdego artykułu w zapasach z urządzenia przenośnego podczas skanowania.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

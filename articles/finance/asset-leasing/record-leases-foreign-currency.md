@@ -52,3 +52,6 @@ Podczas tworzenia wpisów w arkuszu dotyczących wydatków amortyzacji w odniesi
 Ostateczna kwota wydatku amortyzacji może zostać obliczona przy użyciu nieco innego kursu wymiany, tak aby składnik majątku z PDU był w pełni amortyzowany w walucie rozliczeniowej i walucie raportowania.
 
 Jeśli wynajem został przeklasyfikowany jako **Odroczony czynsz**, system automatycznie wyczyści kursy wymiany w walutach rozliczeniowej i raportowania, jeśli zostały one już zdefiniowane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

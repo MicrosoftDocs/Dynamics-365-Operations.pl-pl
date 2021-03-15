@@ -59,3 +59,6 @@ Wiersze szablonu serwisowego zostaną wówczas skopiowane do nowego zlecenia ser
 [Szablony serwisów](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

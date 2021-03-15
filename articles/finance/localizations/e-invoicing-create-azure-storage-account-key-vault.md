@@ -80,3 +80,6 @@ W tym temacie przedstawiono dwa główne kroki:
 9. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Dodatek Faktury elektroniczne**.
 10. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
 11. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 11. Wyświetl wyniki działania poszczególnych składników kosztów.
 12. Można także wyszukiwać konkretne składniki kosztów.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

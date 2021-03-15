@@ -54,3 +54,6 @@ Dlatego następujące wpisy księgowe są tworzone automatycznie w celu zbilanso
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

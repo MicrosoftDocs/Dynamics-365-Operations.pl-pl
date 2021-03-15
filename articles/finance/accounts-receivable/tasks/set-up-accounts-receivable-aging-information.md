@@ -58,3 +58,6 @@ Ten podręcznik pomoże skonfigurować definicję okresu wiekowania, wiekować s
 2. Wybierz odbiorcę z saldem.
 3. Rozwiń pole informacji **Wiekowanie** i obejrzyj wiekowane salda. Definicja okresu wiekowania dla pola informacji jest pobierana z domyślnej definicji okresu wiekowania określonej w parametrach. Można ją zmienić za pomocą menu Zbierz.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

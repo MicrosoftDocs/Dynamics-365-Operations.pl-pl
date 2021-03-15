@@ -81,3 +81,6 @@ Aby zmienić identyfikator użytkownika, należy zmienić nazwę klucza w bazie 
 Aby uzyskać więcej opcji implementacji użytkowników B2B, zobacz temat [Eksportowanie użytkowników B2B do usługi Azure AD](../implement-b2b.md).
 
 Aby uzyskać informacje o wstępnie skonfigurowanych kontach systemowych, zobacz temat [Wstępnie skonfigurowane konta systemowe](../pre-configured-system-accounts.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

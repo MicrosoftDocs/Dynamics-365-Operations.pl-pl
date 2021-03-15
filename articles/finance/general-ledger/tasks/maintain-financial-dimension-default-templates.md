@@ -41,3 +41,6 @@ W tym temacie pokazano sposób konfigurowania domyślnych szablonów wymiarów f
 11. Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.
 12. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Ten przewodnik wykorzystuje firmę demonstracyjną USMF. Ta procedura jest przez
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Zapisywanie faktury niezależnej jako szablonu
 Istniejącą fakturę niezależną można również zapisać jako szablon. Gdy na karcie Faktura wybierzesz opcję Zapisz do szablonu, wprowadź nazwę i opis szablonu. Jeśli szablon o tej nazwie już istnieje, zobaczysz o tym powiadomienie. Nadal można kliknąć przycisk OK, aby zastąpić istniejący szablon. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

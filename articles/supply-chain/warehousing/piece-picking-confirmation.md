@@ -50,3 +50,6 @@ W przypadku pracy typu Pobranie lub Inwentaryzacja są dostępne następujące o
 | Potwierdzenie pobrania sztuk | Dostępne dla typów prac Pobranie i Inwentaryzacja. Opcja Potwierdzenie produktu jest automatycznie zaznaczona. Umożliwia potwierdzenie każdego artykułu w zapasach z urządzenia przenośnego. |
 |  Maksymalna liczba sztuk  |                   Dostępne dla pracy pobrania, jeśli włączono funkcję potwierdzania pobrania sztuk. Ustawia limit liczby sztuk, które należy potwierdzić.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

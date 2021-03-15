@@ -49,3 +49,6 @@ W programie Microsoft Dynamics 365 Human Resources można tworzyć plany świadc
    | Plany | Skrócona karta Plany zawiera plany spełniające ustawione kryteria filtrowania. W każdym wierszu znajdują się odpowiednie opcje konfiguracji, które zostały ustawione przez pracowników działu kadr, oraz wybory rejestracji dokonane przez pracowników. Pole Kwalifikowany określa, czy wybrane opcje nie powodują konfliktu z wybranym planem. |
 
 4. Wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

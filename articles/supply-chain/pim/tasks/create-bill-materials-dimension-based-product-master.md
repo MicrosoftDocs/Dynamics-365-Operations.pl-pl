@@ -78,3 +78,6 @@ Przed wykonaniem tej procedury należy wykonać 4 poprzednie przewodniki z tej s
 5. Kliknij przycisk OK.
 6. Kliknij Aktywacja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

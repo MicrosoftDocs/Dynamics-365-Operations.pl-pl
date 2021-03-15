@@ -195,3 +195,6 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

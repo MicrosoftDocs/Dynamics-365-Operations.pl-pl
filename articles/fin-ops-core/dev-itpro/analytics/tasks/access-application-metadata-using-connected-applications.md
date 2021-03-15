@@ -113,3 +113,6 @@ Kroki w tym temacie wyjaśniają, w jaki sposób użytkownik usługi Regulatory 
 11. Zamknij stronę. 
 
 Gdy trzeba ocenić ten model mapowania przy użyciu metadanych innej wersji aplikacji, zarejestruj inną połączoną aplikację, przypisz ją do tego mapowania modelu i sprawdź poprawność względem nowych metadanych.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

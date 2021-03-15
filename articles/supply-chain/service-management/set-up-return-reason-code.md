@@ -62,3 +62,6 @@ Ta procedura pomaga skonfigurować kody przyczyny zwrotu, których można użyć
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

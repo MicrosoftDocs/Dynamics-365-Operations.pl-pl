@@ -69,3 +69,6 @@ W tej procedurze pokazano sposób włączania procesu listy płac dla modułu Cz
 7. Kliknij przycisk Edytuj.
 8. W polu Umowa płacowa wprowadź lub wybierz wartość.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ W tym przewodniku pokazano sposób używania rejestru faktur do tworzenia faktur
 10. Wybierz opcję **Zaksięguj**.
 11. Wybierz **Załącznik**, aby wyświetlić zapisy, które zostały zaksięgowane. Konto faktur oczekujących na zatwierdzenie zostanie wycofane i zastąpione kontem wydatków rzeczywistych.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -114,3 +114,6 @@ Wyniki różnią się ze względu na informacje, które są dostępne podczas tw
 [![Przykład 2](media/ReplenTemp_example_2.png "Przykład 2")](media/ReplenTemp_example_2_large.png)
 
 Dlatego, aby uzyskać maksymalną ilość w uzupełnianych lokalizacjach, należy ustawić opcję **Zezwalaj na podział** na *Tak* w dyrektywach lokalizacji dotyczących pobierania do uzupełnienia zapasów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

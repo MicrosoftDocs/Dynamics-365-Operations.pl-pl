@@ -87,3 +87,6 @@ Jeśli chcesz zgłosić osoby objęte ubezpieczeniem, ponieważ zapewniasz ubezp
 
 > [!NOTE]
 > W oknie informacji można wyświetlać tylko plany świadczeń oznaczone jako **Objęte zgłoszeniem do ACA**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -237,3 +237,6 @@ W przypadku odbierania zamówienia z więcej niż jedną metodą płatności i w
 - [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

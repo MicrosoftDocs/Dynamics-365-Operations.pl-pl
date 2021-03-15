@@ -61,3 +61,6 @@ Ta procedura przeprowadzi Cię przez proces sprzedawania w programie sprzedaży 
     * Wprowadź numer zamówienia sprzedaży zanotowany wcześniej w procedurze. Pozwoli to maksymalnie skrócić czas przetwarzania tej procedury. Pole Zamówienia sprzedaży jest opcjonalne — można przetwarzać wszystkie zamówienia z każdego programu.  
 21. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

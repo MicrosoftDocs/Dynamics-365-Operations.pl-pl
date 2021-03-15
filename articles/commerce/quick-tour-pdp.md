@@ -87,3 +87,6 @@ Jeśli zawartość marketingowa jest unikatowa dla określonego produktu, do PDP
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
 
 [Wzbogacanie strony szczegółów na temat produktu](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

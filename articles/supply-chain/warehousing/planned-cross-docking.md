@@ -315,3 +315,6 @@ Obecnie oba identyfikatory pracy mają taki sam docelowy numer identyfikacyjny. 
 Na poniższej ilustracji przedstawiono sposób ukończenia pracy przeładunku kompletacyjnego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 
 ![Praca przeładunku kompletacyjnego została zakończona](media/PlannedCrossDockingWork.png "Praca przeładunku kompletacyjnego została zakończona")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

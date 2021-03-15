@@ -198,3 +198,6 @@ Jeśli import się powiedzie, otrzymasz komunikat z potwierdzeniem. Jeżeli impo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

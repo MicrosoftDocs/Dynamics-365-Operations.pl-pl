@@ -52,3 +52,6 @@ Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej 
 3. Kliknij przycisk **OK**.
 4. Wybierz **Zamówienia planowane**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

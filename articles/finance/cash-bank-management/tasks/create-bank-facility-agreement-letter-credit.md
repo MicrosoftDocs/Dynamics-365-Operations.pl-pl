@@ -50,3 +50,6 @@ To zadanie poprowadzi przez proces tworzenia umowy instrumentu bankowego do prze
 18. Kliknij przycisk Rozszerz.
 19. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

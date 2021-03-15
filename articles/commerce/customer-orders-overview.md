@@ -170,3 +170,6 @@ Gdy opcja **Utwórz zamówienie odbiorcy w trybie asynchronicznym** jest ustawio
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Hybrydowe zamówienia odbiorców](hybrid-customer-orders.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Ta procedura wykorzystuje firmę demonstracyjną USMF. Czynności te wykonuje me
 10. W okienku akcji kliknij pozycję Przegląd.
 11. Kliknij przycisk Szczegóły uzgadniania.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

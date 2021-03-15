@@ -54,3 +54,6 @@ Opcję **Wyświetl szczegóły** można wyświetlić na kilka sposobów:
 
 - Jeśli formant ma funkcję **Wyświetl szczegóły** oraz jeśli formant ma wartość, ta wartość jest wyświetlana jako hiperłącze. Można kliknąć hiperłącze, aby otworzyć stronę zawierającą szczegółowe informacje.
 - Funkcja **Wyświetl szczegóły** jest również opcją w menu skrótów. Więcej informacji o tym, kiedy menu skrótów jest wyświetlane po kliknięciu prawym przyciskiem myszy, jak opisano w poprzedniej sekcji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

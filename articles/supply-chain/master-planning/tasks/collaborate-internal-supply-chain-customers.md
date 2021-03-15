@@ -42,3 +42,6 @@ W tej procedurze pokazano sposób wyświetlania wszystkich zamówień planowanyc
 8. Rozwiń sekcję Szczegóły dotyczące popytu przesyłane od odbiorcy do dostawcy.
     * W tej sekcji można zobaczyć szczegóły dotyczące sposobu zaspokojenia popytu. Zanim zobaczysz tutaj dodatkowe informacje, należy poczekać na wykonanie planowania głównego w firmie dostarczającej.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

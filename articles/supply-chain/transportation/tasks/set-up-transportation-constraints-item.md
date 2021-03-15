@@ -43,3 +43,6 @@ Ta procedura skonfiguruje ograniczenie transportu uniemożliwiające przewożeni
 10. Kliknij przycisk Zapisz.
 11. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

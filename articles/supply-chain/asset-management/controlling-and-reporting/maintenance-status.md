@@ -67,3 +67,6 @@ Na poniższym zrzucie ekranu zostały dodane informacje o lokalizacjach czynnoś
 
 ![Przykład miesięcznego obciążenia pracą z lokalizacjami czynności konserwacyjnych](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

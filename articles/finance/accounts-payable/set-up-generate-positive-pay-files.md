@@ -164,3 +164,6 @@ Jeśli trzeba zmodyfikować plik płatności dodatnich, można go wycofać. Na s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Zlecenie produkcyjne można tworzyć w następujących sytuacjach:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

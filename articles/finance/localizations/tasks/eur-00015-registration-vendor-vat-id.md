@@ -63,3 +63,6 @@ Przed wykonaniem tej procedury należy skonfigurować identyfikatory VAT. Ta pro
 25. W polu Numer identyfikacji podatkowej wprowadź lub wybierz wartość.
 26. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

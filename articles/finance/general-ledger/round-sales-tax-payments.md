@@ -130,3 +130,6 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 - [Funkcja zaokrąglanie](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

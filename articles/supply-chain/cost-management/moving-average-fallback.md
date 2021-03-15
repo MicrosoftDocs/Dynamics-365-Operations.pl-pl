@@ -45,3 +45,6 @@ Aby wybrać sekwencję kosztów rezerwowych dla obliczeń średniej ruchomej, na
     - **Koszt aktywny — cena towaru** — w organizacjach mogą występować problemy z wydajnością, jeśli są one używane w procesach biznesowych, w których zapasy są zwykle ujemne, a jednocześnie objętość transakcji jest wysoka. To ustawienie pomaga złagodzić te problemy z wydajnością.
 
 ![Parametry księgowania zapasów](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

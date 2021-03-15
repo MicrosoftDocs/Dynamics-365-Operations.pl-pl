@@ -83,3 +83,6 @@ Aby rozwiązać problem lawinowo wzrastającej liczby kombinacji wymagających o
 ![Formuła obliczania wartości krańcowej](./media/overlapping-discount-combo-06.jpg)
 
 Po obliczeniu wartości krańcowej każdego rabatu dla zbioru wspólnych produktów rabaty są stosowane do wspólnych produktów kolejno od najwyższej wartości krańcowej do najniższej wartości krańcowej. W przypadku tej metody wszystkie pozostałe możliwości rabatów nie są porównywane przy każdym stosowaniu jednego wystąpienia rabatu. Zamiast tego nakładające się rabaty są porównywane jeden raz, a następnie stosowane kolejno. Nie są wykonywane żadne inne porównania. Na stronie **Parametry sprzedaży** na karcie **Rabat** można skonfigurować próg przełączania na metodę wartości krańcowej. Dopuszczalny czas na obliczenie rabatu końcowego różni się w poszczególnych branżach wykorzystujących sprzedaż detaliczną. Jednakże zasadniczo wynosi on od kilkudziesięciu milisekund do jednej sekundy.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

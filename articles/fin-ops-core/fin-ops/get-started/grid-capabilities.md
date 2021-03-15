@@ -293,3 +293,6 @@ Ta sekcja zawiera listę znanych problemów związanych z nową kontrolą siatki
 ### <a name="quality-update-for-1009platform-update-33"></a>Aktualizacja jakości dla 10.0.9/aktualizacja Platform update 33
 
 - [KB 4550367] Wartości czasu nie są poprawnie sformatowane.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

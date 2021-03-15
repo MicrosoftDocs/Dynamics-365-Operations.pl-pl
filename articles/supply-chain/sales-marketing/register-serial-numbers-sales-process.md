@@ -79,3 +79,6 @@ Ta funkcjonalność jest dostępna dla wszystkich ról, które mogą obsługiwa�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

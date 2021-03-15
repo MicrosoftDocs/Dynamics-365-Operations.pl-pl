@@ -83,3 +83,6 @@ Przy inicjowaniu obliczania BOM można określić kilka źródeł informacji. Mo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

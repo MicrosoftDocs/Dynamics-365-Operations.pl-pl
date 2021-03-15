@@ -48,3 +48,6 @@ Możliwości zasobu opisują, jakie operacje może wykonywać zasób. Podczas pl
 5. W polu Poziom wprowadź liczbę.
     * Po określeniu, że zadanie lub operacja wymaga określonej możliwości, można także określić minimalny wymagany poziom. Użyj poziomu możliwości w celu odróżnienia zasobów, które mogą wykonać to samo zadanie, ale z różną szybkością, siłą, rozmiarami itd.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

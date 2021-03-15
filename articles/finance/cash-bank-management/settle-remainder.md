@@ -69,3 +69,6 @@ Aby rozliczyć resztę, należy wykonać następujące czynności:
 7)  Istnieje również możliwość utworzenia arkusza płatności z rozliczeniem reszty lub tylko zaksięgowania bez arkusza. Wybierz **Tak** dla **Edytuj w arkuszu**, aby utworzyć arkusz płatności. Można edytować utworzony arkusz płatności.
 8)  Kliknij **Rozliczanie reszty**. Jeśli wybrano opcję utworzenia arkusza, przycisk zmieni się na **Utwórz arkusz**. Kliknij zamiast tego **Utwórz arkusz**.
 9)  Jeśli utworzono arkusz płatności, strony arkusza zostanie otwarta po kliknięciu przycisku **Rozlicz resztę**. Wiersz zostanie dodany do arkusza z kwotą reszty do rozliczenia jako kwotą i kontem rozliczenia reszta jako kontem przeciwstawnym. Po dodaniu odbiorcy lub dostawcy w taki sposób, aby możliwe było przeniesienie kwoty rozliczenia na innego dostawcę lub odbiorcę, w arkuszu pojawi się nowy wiersz pozwalający przenieść kwotę rozliczenia na tego odbiorce lub dostawcę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

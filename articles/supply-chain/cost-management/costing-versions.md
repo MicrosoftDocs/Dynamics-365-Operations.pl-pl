@@ -67,3 +67,6 @@ Rekordy ceny zakupu dla towarów są również używane w celach informacyjnych.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

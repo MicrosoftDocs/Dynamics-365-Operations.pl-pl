@@ -53,3 +53,6 @@ Aby skonfigurować metryki sukcesu, wykonaj następujące kroki.
 
 ## <a name="next-step"></a>Następne kroki
 [Łączenie i edytowanie eksperymentu](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

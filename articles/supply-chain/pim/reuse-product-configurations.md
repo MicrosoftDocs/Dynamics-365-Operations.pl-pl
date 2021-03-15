@@ -44,3 +44,6 @@ Po zresetowaniu funkcji ponownego wykorzystywania konfiguracji wcześniej utworz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

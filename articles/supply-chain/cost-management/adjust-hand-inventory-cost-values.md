@@ -43,3 +43,6 @@ Ten towar został skonfigurowany przy użyciu modelu zapasów FIFO (pierwsze na 
 -   5 lutego: ilość 1, koszt 13,00 USD
 
 Aby ustawić koszt tych dwóch towarów na 15,00 USD, należy skorygować otwarte ilości dostępnych zapasów w ostatnim okresie zamknięcia magazynu za pomocą opcji korekty dostępnych zapasów. **Uwaga:** Datą księgowania transakcji korekty dostępnych zapasów będzie dzień ostatniego zamknięcia magazynu. Tego ustawienia nie można zmodyfikować.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

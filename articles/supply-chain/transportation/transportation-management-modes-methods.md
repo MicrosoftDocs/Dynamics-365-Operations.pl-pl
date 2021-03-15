@@ -46,3 +46,6 @@ Aby utworzyć metodę transportu, wykonaj następujące kroki:
 1. Wybierz **Nowy**, aby utworzyć nową metodę transportu.
 1. Wprowadź unikatowy identyfikator i opisową nazwę metody transportu.
 1. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -157,3 +157,6 @@ W poniższych krokach wyjaśniono, jak użytkownik w roli Administrator systemu 
 71. Zamknij stronę.
 72. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

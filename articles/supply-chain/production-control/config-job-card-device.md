@@ -94,3 +94,6 @@ Jednak jak wspomniano wcześniej, w przypadku korzystania z konfiguracji urządz
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zgłaszanie jako gotowych z urządzenia karty zadania.](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

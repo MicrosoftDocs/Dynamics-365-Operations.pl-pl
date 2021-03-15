@@ -149,3 +149,6 @@ Następujące funkcje integracji fiskalnej są także dostępne w zestawie SDK m
 Następujące starsze funkcje integracji fiskalnej, które są dostępne w zestawie Retail SDK, nie używają platformy integracji fiskalnej i zostaną wycofane w późniejszych aktualizacjach:
 
 - [Przykładowa integracja jednostki kontrolnej dla Szwecji (starsza wersja)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

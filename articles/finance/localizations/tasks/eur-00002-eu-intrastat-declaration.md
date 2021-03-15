@@ -113,3 +113,6 @@ Procedurę utworzono przy użyciu danych firmy demonstracyjnej DEMF.
     * Na przykład wybierz opcję „Wysyłki”.  
 27. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

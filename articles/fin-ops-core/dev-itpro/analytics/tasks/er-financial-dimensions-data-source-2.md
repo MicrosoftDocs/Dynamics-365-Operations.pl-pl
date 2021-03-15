@@ -147,3 +147,6 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 4. Kliknij przycisk Wykonaj.
 5. Kliknij przycisk OK.
 ![Strona projektanta mapowania modelu ER](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Aby można było skonfigurować odpowiedzialnych konserwatorów, należy skonfig
 Na poniższej ilustracji pokazano przykład strony **Odpowiedzialni konserwatorzy**.
 
 ![Strona Odpowiedzialni konserwatorzy](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

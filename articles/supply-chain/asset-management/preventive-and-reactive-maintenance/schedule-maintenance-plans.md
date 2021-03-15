@@ -75,3 +75,6 @@ Przedstawione tu przykłady pokazują, że wszystkie rejestracje liczników wyko
 
 ![Rysunek 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

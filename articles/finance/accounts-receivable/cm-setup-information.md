@@ -152,3 +152,6 @@ Aby dodać wiersze reprezentujące limit kredytu, który zostanie wygenerowany n
 2. Umożliwia wybranie operatora porównania definiującego sposób oceniania informacji o grupie punktacji.
 3. Umożliwia wprowadzenie wartości, która powinna być porównywana z wartością określoną dla grupy punktacji.
 4. Umożliwia wprowadzenie limitu kredytowego, który powinien zostać przypisany, jeśli informacje o odbiorcy odpowiadają wartości określonej dla grupy punktacji. Można na przykład utworzyć automatyczny limit kredytu dla **Niskiej** grupy punktacji. Jeśli lata w firmie są jedną z grup punktacji, można zdefiniować jeden wiersz, który przypisuje klientowi limit kredytu 100 000, jeśli odbiorca jest w ciągu pięciu lat, a drugi wiersz przypisuje limit kredytu 200 000, jeśli klient był w trakcie prowadzenia działalności przez okres 10 lat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

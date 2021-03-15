@@ -56,3 +56,6 @@ Istnieje możliwość skonfigurowania sekwencji numerów dla dokumentów dostawy
 
 > [!NOTE]
 > Można również skonfigurować numerację dokumentów dostawy według magazynu dla zamówienia sprzedaży. W tym celu należy wybrać określony magazyn na stronie **Dokument dostawy**. Po zaksięgowaniu dokumentu dostawy stan zamówienia nie zmieni się na **Dostarczone** lub **Otrzymano** w zamówieniu sprzedaży, dopóki wszystkie wiersze sprzedaży dla wszystkich magazynów nie zostaną zaksięgowane dla tego zamówienia sprzedaży. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

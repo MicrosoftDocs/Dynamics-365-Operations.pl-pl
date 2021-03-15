@@ -57,3 +57,6 @@ Jeśli po wybraniu pozycji do pobrania musisz zmienić ilość pobrania, możesz
 Jeśli funkcja **Popraw wygodę użytkownika w zakresie przetwarzania zamówień przy odbiorze w punkcie sprzedaży** jest włączona, organizacje mogą dodać przycisk operacji **Zmień wiersze pobrania** w układzie ekranu strony transakcji. Po utworzeniu koszyka transakcji pobrania w programie POS i wybraniu towarów można wybrać opcję **Zmień wiersze pobrania**, jeśli musisz zmienić przedmioty do odbioru, ale nie chcesz anulować całej transakcji. W wyświetlanym oknie dialogowym **Zmiana wierszy pobrania** można zmieniać elementy i ilości pobrania. Koszyk transakcji jest następnie aktualizowany, aby odzwierciedlić wprowadzone zmiany.
 
 ![Okno dialogowe zmiany elementów pobrania](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

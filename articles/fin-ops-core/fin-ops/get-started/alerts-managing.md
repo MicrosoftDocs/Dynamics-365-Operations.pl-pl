@@ -82,3 +82,6 @@ Jeśli skonfigurujesz okno czasowe przetwarzania wsadowego, alert zostanie wysł
 
 1. Wybierz kolejno opcje **Administrowanie systemem** &gt; **Zadania okresowe** &gt; **Alerty** &gt; **Alerty terminów**.
 2. W oknie dialogowym **Alerty terminów** wprowadź odpowiednie informacje.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

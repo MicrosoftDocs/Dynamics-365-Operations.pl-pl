@@ -43,3 +43,6 @@ Po znalezieniu rozbieżności konieczne może być skontaktowanie się z dostawc
 Aby uzyskać więcej informacji, zobacz [Badanie/rozwiązywanie wyjątków](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Jeśli zostanie wprowadzona nowa wersja certyfikatu, ale nie można jej aktualiz
 
 > [!NOTE]
 > W środowisku uruchomieniowym Commerce Runtime nowa wersja certyfikatu zostanie wywołana jako pierwsza. Jeśli certyfikat nie został jeszcze zaktualizowany w określonym sklepie lub na określonym terminalu, zostanie wywołana poprzednia wersja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

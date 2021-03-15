@@ -46,3 +46,6 @@ Aby zaksięgować korektę przejścia zgodnie z nowymi standardami rachunkowośc
 
 5. Aby wyświetlić wpis w arkuszu, wybierz opcję **Arkusze wynajmu składnika majątku**.
 6. Zaznacz nowy arkusz, a następnie wybierz opcję **Księguj**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

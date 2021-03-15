@@ -42,3 +42,6 @@ Na przykład jeśli cena podstawowa wynosi 1000 euro, a indeks 110, cena sprzeda
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

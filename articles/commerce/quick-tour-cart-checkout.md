@@ -106,3 +106,6 @@ Aby uzyskać więcej informacji dotyczących sposobu tworzenia strony realizacji
 [Omówienie stron szczegółów produktów](quick-tour-pdp.md)
 
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

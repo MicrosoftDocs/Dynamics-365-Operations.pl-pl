@@ -116,3 +116,6 @@ W poniższej tabeli pokazano wizualizacje dostępne na każdej stronie raportu.
 | Faktury, których nie udało się zaimportować | <ul><li>Faktury, których nie udało się zaimportować</li><li>Faktury, których nie udało się zaimportować według firmy</li></ul> |
 | Przyczyny niepowodzenia automatyzacji | <ul><li>Faktury zakończone niepowodzeniem</li><li>Faktury zakończone niepowodzeniem przez firmę</li><li>Faktury zakończone niepowodzeniem przez grupę dostawców</li></ul> |
 | Stan przepływu pracy                | <ul><li>Faktury w przepływie pracy</li><li>Wystąpienia przepływu pracy faktur dla dostawców</li><li>Przypisanie na osobę zatwierdzającą</li><li>Przepływ pracy faktury od dostawcy na firmę</li><li>Średnia liczba dni w przepływie pracy wg osób zatwierdzających</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

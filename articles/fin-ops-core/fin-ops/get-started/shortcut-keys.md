@@ -255,3 +255,6 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 
 [Skróty klawiaturowe dla analizy brakujących kont](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

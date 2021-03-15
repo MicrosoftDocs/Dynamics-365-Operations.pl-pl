@@ -177,3 +177,6 @@ W tej sekcji będziesz nadal pracować nad zleceniem pracy, nad którym rozpocz�
 1. W okienku akcji na karcie **Fakturowanie** wybierz opcję **Nowa propozycja faktury**.
 1. W oknie dialogowym **Tworzenie propozycji faktury** w sekcji **Transakcje projektu** zaznacz pole wyboru **Wybierz** dla każdego wiersza, który chcesz zafakturować.
 1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i wyświetlić nową propozycję faktury.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

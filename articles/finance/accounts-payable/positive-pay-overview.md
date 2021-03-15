@@ -48,3 +48,6 @@ Aby uzyskać więcej informacji, zobacz [Konfigurowanie i generowanie plików p�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

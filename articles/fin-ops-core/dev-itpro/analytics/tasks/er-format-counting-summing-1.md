@@ -56,3 +56,6 @@ Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wers
 8. W drzewie rozwiń węzeł „Model Intrastat”.
 9. W drzewie zaznacz element „Model Intrastat\Intrastat (Niemcy)”.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

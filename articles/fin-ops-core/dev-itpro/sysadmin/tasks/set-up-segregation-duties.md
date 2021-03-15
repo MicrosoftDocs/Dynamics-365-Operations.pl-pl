@@ -42,3 +42,6 @@ Można ustawić reguły rozdzielania zadań, które mają być wykonywane przez 
 
 > [!IMPORTANT] 
 > Podczas tworzenia reguły nie jest sprawdzana zgodność z regułami podziału obowiązków. Można utworzyć regułę, która powoduje konflikt z istniejącymi rolami. Istniejące przypisania ról użytkowników mogą także kolidować z nową regułą. Po utworzeniu lub zmodyfikowaniu reguły należy zweryfikować zgodność. Aby uzyskać więcej informacji, zobacz temat [Identyfikowanie i rozwiązywanie konfliktów w podziale obowiązków](identify-resolve-conflicts-segregation-duties.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

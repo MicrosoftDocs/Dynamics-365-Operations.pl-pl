@@ -82,3 +82,6 @@ Jeśli do aktualizacji umów wynajmu jest używana struktura importu wynajmów, 
 
 1. Wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Ustawienia \> Aktualizuj wybór pól**.
 2. Na wyświetlonej stronie wybierz pola, które mają zostać zaktualizowane, a następnie kliknij zieloną strzałkę, aby przenieść je do listy **Wybrane pola**. Tylko pola znajdujące się na liście **Wybrane pola** mogą być aktualizowane przy użyciu pakietu narzędzi importu wynajmu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

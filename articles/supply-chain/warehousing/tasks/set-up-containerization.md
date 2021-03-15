@@ -80,3 +80,6 @@ W tym temacie opisano sposób zautomatyzowania konteneryzacji ładunków w modul
 11. W polu **Wybór pola** wprowadź lub wybierz wartość.
 12. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

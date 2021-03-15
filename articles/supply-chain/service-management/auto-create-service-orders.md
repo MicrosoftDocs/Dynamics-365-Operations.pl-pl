@@ -58,3 +58,6 @@ Umowa serwisowa obowiązuje od 1 stycznia 2012 r. do 31 grudnia 2012 r. Do umowy
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

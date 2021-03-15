@@ -124,3 +124,6 @@ W celach testowych wykonaj mapowanie formatu z użyciem pliku 1099entriescsv.csv
     * Przejrzyj dane wyjściowe w formacie XML, które reprezentują dane zaimportowane z wybranego pliku i przeniesione do modelu danych. Należy zauważyć, że wszystkie 7 wierszy zaimportowanego pliku CSV zostało przetworzone. Wiersz 1 zawierający tytuły pól został pominięty, 4 transakcje zostały poprawnie przeanalizowane, a 2 transakcje zostały rozpoznane jako nieprawidłowe.
 3. Zamknij stronę.
 4. Zamknij stronę.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

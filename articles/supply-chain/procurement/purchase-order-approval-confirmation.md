@@ -98,3 +98,6 @@ Jeśli zamówienie zakupu jest w module zarządzanie zmianami, każda zmiana, ta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

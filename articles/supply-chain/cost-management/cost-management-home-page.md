@@ -64,3 +64,5 @@ Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami mo�
 #### <a name="task-guides"></a>Przewodniki zadań
 
 Dodatkowa pomoc jest dostępna jako przewodniki po zadaniach. Aby uzyskać dostęp do przewodników po zadaniach, kliknij przycisk Pomoc na dowolnej stronie.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

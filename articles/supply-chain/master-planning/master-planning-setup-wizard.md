@@ -208,3 +208,6 @@ W kreatorze są wprowadzane następujące wartości dla Contoso Retailer:
     - **Odpowiedź:** „Tak, zgodnie z definicją w planie głównym”. Wprowadzana jest wartość **1 dzień**.
 
     Contoso używa zatwierdzonych zapotrzebowań ze sklepów, aby tworzyć planowane zamówienia zakupu w celu uzupełnienia tych magazynów. Ponieważ planowanie główne jest uruchamiane każdego dnia, zapotrzebowania z ostatniego dnia zostaną uwzględnione w planowaniu.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

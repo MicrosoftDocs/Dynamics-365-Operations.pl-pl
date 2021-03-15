@@ -105,3 +105,6 @@ Supply Chain Management obsługuje teraz obliczania BOM, które obejmują usług
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -220,3 +220,6 @@ Aby uruchomić narzędzie do sprawdzenia zgodności, postępuj zgodnie z instruk
 1. W okienku akcji na karcie **Ładunki** w grupie **Działania** wybierz opcję **Sprawdzenie zgodności**.
 
 Zostanie wyświetlony komunikat informujący o wynikach kontroli.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -256,3 +256,6 @@ Wartości domyślne atrybutów można zastąpić dla poszczególnych produktów 
 
     > [!NOTE]
     > Jeśli utworzono współużytkowane multimedia produktów i współużytkowane atrybuty produktów, dotyczą one wszystkich produktów.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

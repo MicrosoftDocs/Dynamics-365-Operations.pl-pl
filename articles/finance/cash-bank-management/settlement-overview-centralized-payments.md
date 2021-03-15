@@ -107,3 +107,6 @@ W wypadku płatności do dostawców w transakcjach „należne do” i „należ
 
 ## <a name="withholding-tax"></a>Potrącona zaliczka na podatek
 Konto dostawcy skojarzone z fakturą służy do określania, czy powinna być obliczana zaliczka na podatek. Jeśli zaliczka na podatek ma zastosowanie, jest obliczana w firmie skojarzonej z fakturą. Jeśli firmy używają różnych walut, zostanie użyty kurs wymiany firmy skojarzonej z fakturą.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

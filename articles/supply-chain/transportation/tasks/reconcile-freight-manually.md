@@ -60,3 +60,6 @@ Podczas uzgadniania faktury przewoźnika z dokumentem opłaty frachtowej operacj
 5. Kliknij, aby otworzyć łącze znajdujące się w polu Odwołanie do identyfikatora arkusza.
 6. Kliknij przycisk Wiersze.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

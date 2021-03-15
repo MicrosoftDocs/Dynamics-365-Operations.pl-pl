@@ -68,3 +68,6 @@ Ten artykuł pokazuje sposób tworzenia elementów świadczenia, które będą u
 16. W polu Podstawa wybierz opcję.
 17. W polu Kwota lub stawka wpisz liczbę.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

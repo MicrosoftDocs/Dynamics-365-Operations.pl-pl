@@ -115,3 +115,6 @@ Na poniższej ilustracji przedstawiono pole wyboru **Włącz łącze zakup podob
 [Tworzenie rekomendacji z danymi demonstracyjnymi](product-recommendations-demo-data.md)
 
 [Rekomendacje produktów — często zadawane pytania](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

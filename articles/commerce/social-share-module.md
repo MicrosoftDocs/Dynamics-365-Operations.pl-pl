@@ -81,3 +81,6 @@ Aby dodać moduł udostępniania w mediach społecznościowych do pola zakupu, n
 [Moduł pola zakupu](add-buy-box.md)
 
 [Zgodność z plikami cookie](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Dzienniki przesyłania zawierają następujące funkcje dodatkowe:
 - **Anulowanie przesyłania** — ta funkcja umożliwia specjalny proces przesyłania w scenariuszach, w których faktura elektroniczna musi zostać zatwierdzona przez zewnętrzną usługę sieci web. Nakazuje dodatkowi Fakturowanie elektroniczne wysłanie do usługi sieciowej określonej wiadomości, która ma na celu anulowanie statusu zatwierdzonej faktury elektronicznej w bazie danych usługi internetowej.
 - **Ponowne prześlij dokument** — prześlij ponownie dokument elektroniczny, który został już przesłany do dodatku Fakturowanie elektroniczne. Na stronie **Szczegóły przesyłania** jest tworzony nowy dziennik.
 - **Wysyłanie powiązanego przesłania**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

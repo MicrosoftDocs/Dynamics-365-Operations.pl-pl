@@ -50,3 +50,6 @@ W tej procedurze pokazano sposób tworzenia obiektów kosztów, importując wymi
 ## <a name="view-the-imported-cost-centers"></a>Wyświetlanie zaimportowanych centrów kosztów
 1. Kliknij opcję Wyświetl elementy członkowskie wymiaru.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | 3        | Miejsce początkowe — kod pocztowy | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 4        | Miejsce docelowe — kod pocztowy   | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | Kraj przeznaczenia           | Przypisanie | Ciąg    | Kraj/region |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

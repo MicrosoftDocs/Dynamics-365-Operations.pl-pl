@@ -60,3 +60,6 @@ W tym przewodniku opisano sposób konfigurowania kryteriów, które określają,
 W przypadku zamówień sprzedaży i zamówień Kanban zapasy muszą być zarezerwowane przed zwolnieniem zamówienia do magazynu. W przeciwnym razie towary lub wiersze alokacji nie mogą zostać przetworzone w grupie czynności. W przypadku zleceń produkcyjnych można również wybrać opcję Zezwalaj na częściową rezerwację. Na przykład jest to przydatne w przypadku materiałów, których produkcję należy uruchomić, a z zakończeniem procesu można poczekać na dostępność dodatkowych materiałów. Jeśli zostanie wybrana ta opcja, należy ręcznie powtórzyć zwolnienia do procesu magazynowego, gdy dodatkowe materiały stają się dostępne.  
 25. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

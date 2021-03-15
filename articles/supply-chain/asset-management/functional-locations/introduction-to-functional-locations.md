@@ -82,3 +82,6 @@ Przyciski w okienku akcji są zorganizowane na kartach. Poniższa tabela zawiera
 | Usterki                              | Otwórz stronę **Usterki składniki majątku**, na której można wyświetlić listę zarejestrowanych usterek składników majątku, które są powiązane z wybraną lokalizacją czynności konserwacyjnych. |
 | Aktualizuj stan lokalizacji czynności konserwacyjnych    | Aktualizuj etap wybranej lokalizacji czynności konserwacyjnych.                                                                                        |
 | Dziennik stanu cyklu życia                 | Wyświetl dziennik pokazujący etapy wybranej lokalizacji czynności konserwacyjnych.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Aby korzystać z ocen i recenzji w witrynie, wykonaj następujące kroki.
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

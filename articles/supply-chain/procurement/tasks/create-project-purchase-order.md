@@ -47,3 +47,6 @@ W tej procedurze pokazano sposób tworzenia zamówienia zakupu do projektu. W ty
     * Sprawdź, czy cena sprzedaży i koszt własny są dostępne. Jeśli nie są dostępne, ale konieczne, wprowadź informacje.  
 14. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -241,3 +241,6 @@ Twój format musi być dostępny w konfiguracjach raportowania elektronicznego. 
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
 [Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Ta procedura skupia się na tworzenie formuły zawierającej te same składniki 
 5. Kliknij opcję Wybierz.
 6. Kliknij przycisk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Okno Powiązany załącznik zawiera załącznik z firmy przeciwstawnej zdefiniow
 3. Na liście oznacz wybrany wiersz.
 4. Kliknij opcję Załącznik.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

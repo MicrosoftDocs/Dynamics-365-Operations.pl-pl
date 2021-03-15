@@ -126,3 +126,6 @@ Po zgłoszeniu produktu jako gotowego na linii produkcyjnej jest on przenoszony 
 -   Scenariusz przeładunku kompletacyjnego jest obsługiwany dla towarów wchodzących w skład partii i serii, gdzie wymiary partii i numeru seryjnego są zdefiniowane powyżej i poniżej lokalizacji w hierarchii rezerwacji. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

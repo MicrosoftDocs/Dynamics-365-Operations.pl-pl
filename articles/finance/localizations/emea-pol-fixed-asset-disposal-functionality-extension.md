@@ -83,3 +83,6 @@ Domyślnie pole **Sprzedaż częściowa** zawiera wartość **100**. Gdy użytko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

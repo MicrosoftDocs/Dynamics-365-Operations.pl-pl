@@ -98,3 +98,6 @@ Następne zadanie polega na utworzeniu ZO w celu uzyskania od dostawców ofert n
 8. Wybierz stronę.
 9. Wybierz opcję Zakończone.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

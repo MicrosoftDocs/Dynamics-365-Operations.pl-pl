@@ -48,3 +48,6 @@ Ten przewodnik po zadaniach prowadzi przez generowanie transakcji naliczeń fina
 17. Kliknij przycisk OK.
 18. Kliknij przycisk Księguj.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

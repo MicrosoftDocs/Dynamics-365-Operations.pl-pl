@@ -65,3 +65,6 @@ W tym temacie wyjaśniono, jak utworzyć katalog zaopatrzenia. To zadanie jest z
 7. Wybierz pozycję **Dodaj do wierszy**.
 8. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

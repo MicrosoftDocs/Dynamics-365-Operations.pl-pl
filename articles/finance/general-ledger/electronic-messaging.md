@@ -535,3 +535,6 @@ Można teraz usunąć lub zaktualizować stan wiadomości. Aby zaktualizować st
 ![Aktualizowanie stanu wiadomości](media/update-status.png)
 
 Stan wiadomości jest ustawiony na **Przygotowane** i możesz teraz wygenerować raport, wybierając **Generowanie raportu**. Raport zostanie wygenerowany, a stan wiadomości i dziennik akcji zostaną zaktualizowane. Aby obejrzeć wygenerowany raport, wybierz przycisk **załącznik** (symbol spinacza) w prawym górnym rogu strony.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

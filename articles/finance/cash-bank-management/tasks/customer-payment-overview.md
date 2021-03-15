@@ -51,3 +51,6 @@ Ten przewodnik zadania zawiera instruktaż różnych metod służących do wprow
 21. W polu **Odwołanie do płatności** wprowadź odwołanie do płatności. Odwołanie do płatności jest wymagane tylko wtedy, jeśli płatność oznaczono do uwzględnienia na dokumencie wpłaty.  
 22. W **okienku akcji** kliknij przycisk **Księguj**, aby zaksięgować fakturę dla odbiorcy. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Aby uzyskać więcej informacji, zobacz [Wyświetlanie raportów finansowych](vi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -207,3 +207,6 @@ Wyświetlane są informacje o świadczeniach osób na utrzymaniu pracownika.
 
 > [!NOTE]
 > Na stronie są dostępne tylko plany świadczeń oznaczone jako **objęte zgłoszeniem do ACA**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -109,3 +109,6 @@ Jeśli w systemie jest włączona funkcja materiałów niebezpiecznych, **raport
 ## <a name="packing-list-report"></a>Raport list pakowania
 
 Jeśli w systemie jest włączona funkcja materiałów niebezpiecznych, listy te zawierają dodatkowe informacje związane z drukowanym tekstem dotyczącym wysyłki dla danego towaru. Ten raport jest dostępny na stronie **Wszystkie ładunki**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

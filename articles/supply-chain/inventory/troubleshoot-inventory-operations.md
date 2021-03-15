@@ -157,3 +157,6 @@ Ten problem występuje, gdy ilość transakcji magazynowej jest określona jako 
 
 > [!IMPORTANT]
 > Zdecydowanie zalecamy uważne edytowanie skryptu zgodnie z wymaganiami środowiska, testowanie go w środowisku testowym, a następnie sprawdzanie wynikowych danych przed uruchomieniem skryptu w środowisku produkcyjnym.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

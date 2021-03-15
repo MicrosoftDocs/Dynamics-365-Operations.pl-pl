@@ -65,3 +65,6 @@ Waluta rozliczeniowa firmy to EUR i obowiązuj następujący kurs wymiany do USD
 > [!NOTE]
 > Oblicz na stronach Parametry modułu rozrachunków z odbiorcami lub Parametry modułu rozrachunków z dostawcami wybrana jest opcja Oblicz rabaty gotówkowe dla częściowych zapłat, stosowany jest kurs wymiany z dnia dokonania płatności częściowej. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

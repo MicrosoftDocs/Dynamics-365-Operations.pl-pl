@@ -49,3 +49,6 @@ Chociaż sprawdzenie funkcjonalne aplikacji ERP nie może być w pełni anostycz
     - Sprawdź tylko poprawność po filtrowaniu według określonej transakcji zamiast w ogólnym sprawdzaniu poprawności. Na przykład dla liczby rekordów należy filtrować numer transakcji lub datę transakcji, dzięki czemu sprawdzanie poprawności wyklucza wszystkie inne transakcje. 
     - W przypadku sprawdzania salda odbiorcy lub kontroli budżetu najpierw Zapisz wartość, a następnie Dodaj wartość transakcji, aby sprawdzić oczekiwany wynik, zamiast sprawdzać poprawność stałej oczekiwanej wartości. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -136,3 +136,6 @@ Dostępne będą następujące strony i elementy menu związane z konfiguracją 
  - **Parametry handlu zagranicznego** (**Podatek** > **Konfiguracja** > **Podatek** > **Handel zagraniczny** > **Parametry handlu zagranicznego**). Patrz [Ustawianie właściwości kraju/regionu](#Set-up-Country/region-properties).
 
 Pole wyboru **Opłata zwrotna** będzie dostępne dla stron **Grupa podatków** i **Zaksięgowany podatek**. Więcej informacji zawierają sekcje, [Konfigurowanie grup podatków i grup podatków dla towarów](#sales-tax-item-sales-tax-groups), [Podatek odwrócony w fakturze sprzedaży](#reverse-charge-sale) i [Podatek odwrócony w fakturze zakupu](#reverse-charge-purchase).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

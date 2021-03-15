@@ -71,3 +71,6 @@ Moduł adresu wysyłki można dodać tylko do modułu realizacji transakcji. Aby
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

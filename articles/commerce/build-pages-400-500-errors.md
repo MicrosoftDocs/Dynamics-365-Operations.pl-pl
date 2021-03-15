@@ -82,3 +82,6 @@ Aby skonfigurować przekierowanie dla strony odpowiedzi na błąd kodu stanu, wy
 [Dodawanie nowej strony witryny](add-new-page.md)
 
 [Tworzenie adresu URL strony](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

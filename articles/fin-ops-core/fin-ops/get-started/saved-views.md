@@ -224,3 +224,6 @@ W przypadku stron z dużymi selektorami widoku zarówno (personalizacje i kweren
 
 - Jeśli przejdziesz do strony z kafelka, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli utworzono ten kafelek po włączeniu widoków, zaznaczenie kafelka spowoduje otwarcie strony z widokiem skojarzonym z tym kafelkiem.
 - Jeśli przejdziesz do strony i ten punkt wejścia zawiera kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Można to również potwierdzić, przełączając się do tego widoku po załadowaniu strony, ponieważ wtedy kwerenda widoku powinna zostać bezwzględnie wykonana.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

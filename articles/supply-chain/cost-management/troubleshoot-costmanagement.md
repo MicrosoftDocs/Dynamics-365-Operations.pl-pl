@@ -81,3 +81,6 @@ Do czasu wydania przez firmę Microsoft rozwiązania problemu należy rozważyć
 - Unikaj wartości dziesiętnych kosztu standardowego. Spróbuj zdefiniować koszt standardowy, tak aby pole **Ilość dla ceny** było ustawione na *1*. Jeśli musisz określić wartość **ilości dla ceny** większą niż *1*, spróbuj zminimalizować liczbę miejsc dziesiętnych w standardowym koszcie jednostkowym. (Najlepiej, aby było mniej niż dwa miejsca dziesiętne) Na przykład należy unikać definiowania standardowych ustawień kosztu, takich jak **Cena** = *10* i **Ilość dla ceny** = *3*, ponieważ spowoduje to koszt standardowy jednostkowy 3,333333 (gdzie wartość dziesiętna jest powtarzana).
 - W większości dokumentów należy unikać sytuacji, w których wiele wierszy zawiera taką samą kombinację wymiarów produktów i wymiarów magazynu finansowego.
 - Zmniejsz stopień równoległości. (W takim przypadku system może przyspieszyć, ponieważ występuje mniej konfliktów i ponownych prób aktualizacji).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

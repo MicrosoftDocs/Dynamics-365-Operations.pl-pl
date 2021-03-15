@@ -245,3 +245,6 @@ Dzienniki przesyłania można wyświetlić dla wszystkich przesłanych dokument�
 - [Omówienie dodatku Faktur elektronicznych](e-invoicing-service-overview.md)
 - [Rozpocznij pracę z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md)
 - [Skonfiguruj dodatek Faktury elektroniczne](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

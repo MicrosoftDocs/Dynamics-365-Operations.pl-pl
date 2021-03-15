@@ -38,3 +38,6 @@ W tej procedurze pokazano sposób tworzenia zamówienia sprzedaży dla dostawcy 
 5. Kliknij przycisk OK.
     * Zamówienie zakupu można teraz sfinalizować i przetwarzać jak każde inne zamówienie. Nie istnieją żadne specjalne cechy w tym procesie. Faktura uwzględni planowaną transakcję na koncie dostawcy utworzonym razem z zamówieniem, po czym zostanie przetworzona płatność.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

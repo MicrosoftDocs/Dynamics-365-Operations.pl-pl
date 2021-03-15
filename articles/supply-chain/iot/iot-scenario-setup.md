@@ -142,3 +142,6 @@ Aby wyłączyć scenariusz, wykonaj następujące kroki.
 2. Na kafelku dla scenariusza wybierz opcję **Konfiguruj**.
 3. Wybierz pozycję **Dalej**, aby przejść na ostatnia stronę kreatora.
 4. Wybierz opcję wyłączenia scenariusza.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

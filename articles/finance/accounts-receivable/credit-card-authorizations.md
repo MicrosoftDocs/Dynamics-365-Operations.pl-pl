@@ -79,3 +79,6 @@ Abu unieważnić autoryzację karty kredytowej, można zmienić metodę płatno�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

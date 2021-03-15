@@ -91,3 +91,6 @@ W tym temacie opisano proces tworzenia wniosku. Pokazuje różne sposoby wyszuki
 6. Zamknij stronę.
 7. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

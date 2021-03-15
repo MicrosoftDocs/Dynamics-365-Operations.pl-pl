@@ -40,3 +40,6 @@ Procedura zlecenia płatności podatku u źródła rozlicza salda podatku u źr�
 7. Kliknij przycisk **OK**.
 
 ![Parametry płatności potrąconej zaliczki na podatek](media/withholding-tax-payment.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

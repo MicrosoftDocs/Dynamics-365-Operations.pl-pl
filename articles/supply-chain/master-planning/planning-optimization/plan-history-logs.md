@@ -46,3 +46,6 @@ Oprócz wyświetlania czasu rozpoczęcia i stanu zadań można wyświetlać dzie
 [Stosowanie filtrów do planu](plan-filters.md)
 
 [Anuluj planowanie pracy](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

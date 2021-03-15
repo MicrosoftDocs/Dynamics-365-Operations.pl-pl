@@ -143,3 +143,6 @@ Następujące pola zostaną dodane do elementu menu na urządzeniu przenośnym p
 - Domyślny kod przyczyny zliczania
 - Wyświetl kod przyczyny zliczania
 - Edytuj kod przyczyny zliczania
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

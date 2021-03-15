@@ -57,3 +57,6 @@ Na przykład jeśli dzisiejsza data to 1 lutego, a 14 lutego pracownik Jan Kowal
    4. Kliknij przycisk **OK**. Proces będzie uruchamiany z parametrami określonymi przez użytkownika.
 
 4. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

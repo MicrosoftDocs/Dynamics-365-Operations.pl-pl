@@ -67,3 +67,6 @@ Aby wyczyścić przyszłe daty resetowania, można skorzystać z funkcji **czysz
 
 > [!NOTE]
 > W zależności od wybranej daty wyzerowania i formatu paragonu mogą istnieć zduplikowane numery paragonów. Mimo że system punktu sprzedaży (POS) może obsłużyć te sytuacje, zwiększa się czas wymagany do przetworzenia zwrotów, ponieważ klienci z jednostkami sprzedażowymi muszą wybierać spośród zduplikowanych przyjęć. Inne komplikacje związane z oczyszczaniem danych mogą wystąpić, jeśli duplikaty paragonów nie zostały zaplanowane. Z tego względu zaleca się stosowanie dynamicznych znaków daty (na przykład **DDD**, **mm**, **DD** i **RR**) w celu uniknięcia zduplikowanych numerów paragonów po wyzerowaniu.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

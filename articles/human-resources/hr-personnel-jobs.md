@@ -87,3 +87,6 @@ Zakresy odpowiedzialności pozwalają wskazać pełnione w ramach obowiązków s
 
 ## <a name="steps-for-creating-a-job"></a>Etapy tworzenia zadania
 Zobacz artykuł [Definiowanie nowych zadań](../fin-and-ops/hr/tasks/define-new-jobs.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego zadania. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

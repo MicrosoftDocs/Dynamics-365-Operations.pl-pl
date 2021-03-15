@@ -47,3 +47,6 @@ Informacje dotyczące rozliczenia są rejestrowane i mogą być wyświetlane na 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

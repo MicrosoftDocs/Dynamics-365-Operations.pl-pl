@@ -84,3 +84,6 @@ Po skopiowaniu wierszy można edytować informacje zgodnie z potrzebami.
 Fakturę niezależną można utworzyć na podstawie szablonu. Gdy na karcie **Faktura** wybierzesz opcję **Nowe z szablonu**, można wybrać nazwę szablonu i konto odbiorcy dla nowej faktury niezależnej. Wartości domyślne, takie jak warunki płatności i metoda płatności, mogą być automatycznie wprowadzane na podstawie danych odbiorcy lub też można użyć wartości zapisanych w szablonie.
 
 Zostanie utworzona nowa faktura niezależna i można w niej edytować wartości zgodnie z potrzebami.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

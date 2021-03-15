@@ -83,3 +83,6 @@ W przypadku scenariuszy planowania, które obejmują produkcję, zaleca się uni
 Chociaż podrzędne elementy zależne są automatycznie wykrywane i uwzględniane w planowaniu głównym, gdy jest używany wbudowany aparat planowania głównego, optymalizacja planowania nie wykonuje tej akcji.
 
 Jeśli na przykład do wytwarzania produktu B jest używany jeden element bolt ze struktury listy składowej (BOM) produktu A, w filtrze muszą zostać uwzględnione wszystkie produkty w strukturze BOM produktów A i B. Ze względu na to, że zapewnienie, że wszystkie produkty są częścią filtru, może być bardzo złożone, zalecamy uniknięcie odfiltrowanych przebiegów planowania głównego podczas realizacji zleceń produkcyjnych.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

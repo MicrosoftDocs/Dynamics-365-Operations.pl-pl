@@ -62,3 +62,6 @@ Przed podziałem środka trwałego na amortyzację stan księgi środków trwał
     - Dla nowego składnika aktywów jest tworzona transakcja nabycia na tę samą kwotę.
 
 4. Wybierz opcję **Zaksięguj**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

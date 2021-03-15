@@ -99,3 +99,6 @@ Ta procedura zawiera instruktaż tworzenia nowego kanału handlu i definiowania 
 65. Kliknij przycisk Zapisz.
 66. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

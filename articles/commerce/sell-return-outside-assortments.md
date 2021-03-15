@@ -45,3 +45,6 @@ Te typowe scenariusze są dostępne dla sprzedawców detalicznych używających 
 + Odbiór produktów w bieżącym sklepie lub innym sklepie.
 + Anulowanie zamówienia w bieżącym sklepie lub innym sklepie.
 + Zwrot zamówionych towarów z paragonem lub bez w bieżącym lub innym sklepie.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

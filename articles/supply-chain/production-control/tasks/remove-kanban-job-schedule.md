@@ -45,3 +45,6 @@ Ta procedura skupia się na usunięciu zaplanowanego zadania przetwarzania w sys
 4. Kliknij przycisk OK.
     * Spowoduje to przywrócenie bieżącego stanu zadania z „Zaplanowane” na „Niezaplanowane” i usunięcie go z tablicy procesów.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

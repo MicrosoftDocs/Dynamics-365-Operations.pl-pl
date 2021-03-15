@@ -44,3 +44,6 @@ Na przykład istnieją następujące okoliczności:
 Kwota amortyzacji pierwotnego składnika majątku wynosi 1822,25 zł. Ta kwota jest równa NBV przed zaksięgowaniem transakcji podziału (9111,25 zł) powiększonej o korektę wartości początkowej wygenerowaną podczas księgowania transakcji podziału (-8000 zł) oraz korektę amortyzacji wygenerowaną w trakcie transakcji podziału (711 zł). W efekcie amortyzacja za drugi rok wynosi (1822,25 × 18 procent) ÷ 12 = 27,33 zł.
 
 Kwota amortyzacji dla nowego środka trwałego w pierwszym roku wynosi (8000 × 18 procent) ÷ 12 = 120 zł.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

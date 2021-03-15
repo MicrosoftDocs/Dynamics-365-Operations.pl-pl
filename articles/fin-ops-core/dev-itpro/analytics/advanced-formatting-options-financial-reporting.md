@@ -310,3 +310,6 @@ Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z 
 Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&).
 
 W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

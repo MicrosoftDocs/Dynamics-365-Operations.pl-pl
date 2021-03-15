@@ -148,3 +148,6 @@ Arnie księguje arkusz i sprawdza transakcję odbiorcy na stronie **Transakcje o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

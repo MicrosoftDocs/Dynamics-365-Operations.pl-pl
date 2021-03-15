@@ -54,3 +54,6 @@ Ponadto jeśli w polu **Od dnia** dla okresu redukcji podano dzień 21 stycznia 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

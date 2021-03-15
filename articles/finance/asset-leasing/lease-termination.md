@@ -158,3 +158,6 @@ W poniższych tabelach przedstawiono wartości ustawione na kartach **Ogólne** 
 11. Aby wyświetlić efekt netto rozwiązania umowy, w którym aktywa ROU i zobowiązania z tytułu leasingu będą równe 0 (zero), otwórz tabele transakcji zobowiązań i aktywów.
 
 Stan wynajmu powinien teraz mieć stan **Przerwane**. Żadne dodatkowe wpisy w arkuszu nie będą księgowane dla tego wynajmu, chyba że zakończenie zostanie wycofane.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

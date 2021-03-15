@@ -109,3 +109,6 @@ Aby dodać niestandardowe opcje nawigacji do menu nawigacji, należy wykonać na
 [Tworzenie adresu URL strony](create-page-url.md)
 
 [Praca z grupami publikowania](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

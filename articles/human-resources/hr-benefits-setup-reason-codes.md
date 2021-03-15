@@ -79,3 +79,5 @@ Na stronie **Łącza** w obszarze roboczym **Zarządzanie świadczeniami** zosta
 Po migrowania kodów przyczyny do funkcji Zarządzania pracownikami opcja używania tych kodów w zarządzaniu świadczeniami jest automatycznie ustawiana na **Tak**.
 
 [![Użyj kodu przyczyny w zarządzaniu świadczeniami](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

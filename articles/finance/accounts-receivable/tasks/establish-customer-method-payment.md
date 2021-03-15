@@ -45,3 +45,6 @@ W tym temacie wyjaśniono, jak można utworzyć metodę płatności dla płatno�
 15. Karta **Atrybuty płatności** służy do określania, które atrybuty płatności mają być używane dla tej metody płatności.
 16. Wybierz opcję **Zapisz**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

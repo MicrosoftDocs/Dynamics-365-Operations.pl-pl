@@ -106,3 +106,6 @@ W poniższej tabeli przedstawiono formularze, które zapewniają obsługę skła
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ Ta procedura zawiera instruktaż konfigurowania i wykonywania cyklicznego zadani
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

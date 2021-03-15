@@ -96,3 +96,6 @@ Na poniższej ilustracji pokazano przykład widoku szczegółów **Działania w 
 - Istnieje możliwość kopiowania zasobów z jednej czynności związanej z obsługą przestojów do innej. We **Wszystkie działania w ramach przerwy konserwacyjnej**, wybierz przycisk **Kopiuj działania w ramach przerwy konserwacyjnej** i dokonaj wyboru w polach **Z działań w ramach przerwy konserwacyjnej** i **Do działań w ramach przerwy konserwacyjnej** i kliknij **OK**.
 - We **Wszystkie działania w ramach przerwy konserwacyjnej** kliknij przycisk **Wiersze harmonogramu konserwacji** lub **Aktywne zlecenia pracy**, aby otworzyć powiązane listy i wyświetlić wiersze związane z wybraną obsługą działań dotyczących przerw.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

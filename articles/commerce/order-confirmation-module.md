@@ -86,3 +86,6 @@ Aby dodać moduł potwierdzenia zamówienia do nowej strony i ustawić wymagane 
 [Moduł informacji o odbiorze](pickup-info-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Dlatego możliwe jest tworzenie oddzielnych budżetów dla najważniejszych kont
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

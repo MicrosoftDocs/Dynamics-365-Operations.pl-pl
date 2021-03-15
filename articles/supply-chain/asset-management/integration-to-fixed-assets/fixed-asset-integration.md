@@ -114,3 +114,6 @@ Aby usunąć istniejące powązanie między konserwowanym składnikiem majątku 
 1. Znajdź i otwórz środek trwały.
 1. Na skróconej karcie **Środka trwałego** wyczyść wartość w polu **Lokalizacja czynności konserwacyjnych**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

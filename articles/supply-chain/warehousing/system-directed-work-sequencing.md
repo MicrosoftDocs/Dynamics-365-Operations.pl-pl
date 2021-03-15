@@ -304,3 +304,6 @@ Zapytanie dotyczące sekwencji pracy sterowanej przez system ma wartość *zawie
 Dlatego w przykładzie z tego scenariusza identyfikator pracy *4* również został wyświetlony w ramach zapytania. Po jego utworzeniu dodano dwa wiersze: jeden dla 25 ea, a drugi dla 10 ea. Praca została przekazana użytkownikowi, ponieważ co najmniej jeden wiersz pracy miał ilość mniejszą niż 20 ea.
 
 W zależności od scenariusza można uniknąć takiego zachowania, korzystając z podziału pracy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

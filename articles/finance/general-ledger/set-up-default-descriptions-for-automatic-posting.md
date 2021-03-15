@@ -86,3 +86,6 @@ Po wykonaniu kroków w procedurze [Ustawianie opisów domyślnych](#set-up-defau
 2. W polu **Tabela odwołań** zaznacz tabelę bazy danych, z której chcesz dodać do opisu dane parametru.
 3. W polu **Pole odwołania** zaznacz pole, z którego chcesz dodać do opisu dane parametru.
 4. Powtórz kroki od 1 do 3, aby dodać więcej parametrów.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

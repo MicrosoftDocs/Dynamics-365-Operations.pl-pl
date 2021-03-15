@@ -153,3 +153,6 @@ Jeśli materiały zawsze mają być ręcznie odejmowane z zapasów, można uży�
 | Zgłoszenie wyrobów gotowych |   Automatyczne zużycie BOM    | <strong>Nigdy</strong>  |
 | Zgłoszenie wyrobów gotowych | Aktualizuj raport zakończonych online | <strong>Stan</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

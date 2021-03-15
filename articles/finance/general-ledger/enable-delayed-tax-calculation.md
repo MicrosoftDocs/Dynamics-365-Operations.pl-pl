@@ -64,3 +64,6 @@ System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawie
 4. Na karcie **Ustawienia** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
 ![Obraz strony arkusza finansowego](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

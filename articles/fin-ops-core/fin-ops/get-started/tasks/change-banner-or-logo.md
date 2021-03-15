@@ -39,3 +39,6 @@ Następująca procedura wymienia kroki, jakie administratorzy systemu mogą stos
 6. Otwórz **Okienko nawigacji > Moduły > Wspólne > Wspólne > Domyślny pulpit nawigacyjny**. Nowy transparent lub logo powinno być widoczne na pulpicie nawigacyjnym.  
     
     Może być konieczna zmiana firmy, za pomocą wybieraka firmy, na firmę, do której przekazano transparent.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Proces pakowania umożliwia sprawdzenie poprawności produktów i ich zapakowani
 8. W polu Jednostka wagi wprowadź lub wybierz wartość.
 9. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

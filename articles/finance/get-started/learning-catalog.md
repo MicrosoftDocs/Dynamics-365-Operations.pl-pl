@@ -178,3 +178,6 @@ Znajdź odpowiednie szkolenia online, warsztaty i wydarzenia dla swojej roli jak
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

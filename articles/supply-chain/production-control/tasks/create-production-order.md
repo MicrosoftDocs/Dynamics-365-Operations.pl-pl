@@ -70,3 +70,6 @@ W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego. Dane wykorzy
 6. Kliknij przycisk Zapisz.
 7. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

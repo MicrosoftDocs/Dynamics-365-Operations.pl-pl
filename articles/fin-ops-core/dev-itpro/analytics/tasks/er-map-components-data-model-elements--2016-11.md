@@ -113,3 +113,6 @@ Każdą wersję formatu można skonfigurować jako dostępną do użycia począw
 1. Rozwiń sekcję Kody ISO krajów/regionów.
     * Można ograniczyć dostęp do każdego formatu, identyfikując określone kraje/regiony, w których format się stosuje. Gdy lista krajów/regionów dla określonego formatu jest pusta, tego formatu można używać dla dowolnej firmy. Jeśli do listy krajów/regionów zostaną wstawione jakieś kody ISO krajów/regionów, formatu można używać tylko w firmach, których adres podstawowy mieści się w danym kraju/regionie.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

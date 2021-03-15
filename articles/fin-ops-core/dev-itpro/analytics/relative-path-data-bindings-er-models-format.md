@@ -57,3 +57,6 @@ Ta funkcja nie powoduje przerwy w zgodności z poprzednimi wersjami platformy ER
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Język formuł ER](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

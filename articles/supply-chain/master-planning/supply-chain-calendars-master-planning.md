@@ -142,3 +142,6 @@ W kontekście kalendarza grupy zapotrzebowania należy wziąć pod uwagę, że j
 
 ### <a name="updating-scm-related-calendars"></a>Aktualizowanie kalendarzy związanych z SCM
 Wszystkie odpowiednie kalendarze powinny być przypisywane w ich odpowiednich miejscach (dostawca, odbiorca, magazyn, tryb dostawy lub grupa zapotrzebowania), ale równie ważne jest ich aktualizowanie zgodnie z zachodzącymi zmianami. System określi daty zamówień produkcji, przeniesienia, zakupu i sprzedaży w zależności od kombinacji przypisanych kalendarzy. Najlepszym rozwiązaniem jest wyjaśnienie, kto odpowiada za przydzielanie i aktualizowanie kalendarzy w odpowiadających im obszarach. W przypadku awarii lub innych nadzwyczajnych zmiany w daniach roboczych należy konieczne zaktualizować kalendarze zgodnie z tymi okolicznościami. Wszystkie zadania, które zależą od kalendarzy, takie jak planowanie główne i planowanie produkcji, muszą zostać uruchomiony ponownie po wykonaniu aktualizacji kalendarzy. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

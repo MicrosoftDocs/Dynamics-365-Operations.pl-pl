@@ -62,3 +62,6 @@ Dostępne są następujące parametry:
 
 - **Liczba prób automatycznego dopasowania** — umożliwia wybór liczby prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Po osiągnięciu określonej liczby prób faktura zostanie usunięta z automatyzacji przetwarzania.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

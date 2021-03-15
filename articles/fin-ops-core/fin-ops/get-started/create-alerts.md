@@ -102,3 +102,6 @@ Nie możesz tworzyć alertów dla niektórych dodatkowych źródeł danych w for
     ```
 2. Utwórz alert z formularza SysTableBrowser.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

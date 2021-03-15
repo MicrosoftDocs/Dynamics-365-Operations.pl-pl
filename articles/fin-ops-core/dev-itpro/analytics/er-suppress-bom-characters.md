@@ -66,3 +66,6 @@ Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią proce
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Odłóż wykonanie elementów XML w formatach raportowania elektronicznego](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

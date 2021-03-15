@@ -58,3 +58,6 @@ Po wprowadzeniu symulowanych zmian kosztów oblicz koszty wytwarzanych towarów,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Czasami organizacja wstrzymuje realizację jakiegoś świadczenia. W takim przyp
 To samo dotyczy grupowego przedłużania świadczeń, za pomocą którego można wydłużyć datę ważności zarówno dla świadczenia, jak i dla rejestracji pracowników w danym świadczeniu, jeśli świadczenie ma być oferowane dłużej, niż pierwotnie zaplanowano.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

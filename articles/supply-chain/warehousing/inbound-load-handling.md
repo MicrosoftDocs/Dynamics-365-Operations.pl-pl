@@ -477,3 +477,6 @@ W tym scenariuszu pracownik otrzymujący zarejestruje przychodzące ilości prze
     - **Ilość** — wprowadź wartość _7_, która jest pozostałą ilością, jaką dostawca ma do dostarczenia jako część całkowitej ilości zamówienia zakupu równą 12 (gdzie 10 jest oryginalną ilością zamówienia, a wartość 2 to dozwolona ilość nadwyżki w dostawie równa 20%). Należy pamiętać, że 5 sztuk już zarejestrowano w pierwszym ładunku.
 
 Drugi ładunek został zaktualizoway z ilością 7 i może być odbiorem produktu — aktualizowanym na podstawie tej ilości.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

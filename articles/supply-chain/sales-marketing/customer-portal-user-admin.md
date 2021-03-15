@@ -95,3 +95,6 @@ W poniższej tabeli przedstawiono zamówienia sprzedaży, które użytkownicy na
 
 > [!NOTE]
 > Mimo że zarówno Sam, jak i Jane są kontaktami pracującymi dla klienta X, widzą tylko złożone przez siebie zamówienia i nic więcej. Chociaż May ma zamówienie w systemie, nie widzi tego zamówienia w portalu klienta, ponieważ jest nieautoryzowanym użytkownikiem. (Dodatkowo musiała złożyć zamówienie za pośrednictwem innego kanału niż portal klienta).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

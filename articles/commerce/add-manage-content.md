@@ -56,3 +56,6 @@ Aby rozpocząć, wybierz jeden z poniższych tematów.
 [Dokumentowanie stanów i cyklów życia](document-states-overview.md)
 
 [Włączanie i używanie udostępniania między kanałami](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

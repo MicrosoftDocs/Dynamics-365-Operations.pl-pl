@@ -86,3 +86,6 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 7.  Wybierz opcję **Załączniki**, aby wyświetlić wszelkie notatki lub pliki dołączone do faktury.
 8.  Na stronie **Szczegóły faktury** zaznacz odpowiednią akcję przepływu pracy, aby ukończyć proces przeglądu.
 9.  Wybierz opcję **Gotowe**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

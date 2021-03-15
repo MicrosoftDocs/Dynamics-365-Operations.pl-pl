@@ -41,3 +41,6 @@ Pierwszy rok służby minie w grudniu 2020 roku, co oznacza, że koniec pięciol
    [![Plan amortyzacji dla konwencji amortyzacji półrocznej](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Rozszerzone okresy amortyzacji dodane przez konwencję półroczną zapewniają bardziej precyzyjną alokację amortyzacji. Konwencja półroczna reprezentuje wydatki na amortyzację w bardziej równomierny sposób, co jest przydatne przy raportowaniu zestawienia zysków i strat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

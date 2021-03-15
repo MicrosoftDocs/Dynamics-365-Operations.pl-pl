@@ -53,3 +53,6 @@ Inkaso importowe pomaga zagwarantować, że sprzedający otrzyma płatność, gd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

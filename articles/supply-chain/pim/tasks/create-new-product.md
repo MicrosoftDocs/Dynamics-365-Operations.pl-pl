@@ -42,3 +42,6 @@ W tym temacie opisano sposób tworzenia nowego udostępnionego produktu. Zwykle 
 3. W polu **Grupa wymiaru śledzenia** wpisz lub wprowadź wartość. Grupa wymiarów śledzenia określa, które wymiary śledzenia należy wprowadzić dla każdej transakcji produktu i jak będą one obsługiwane w zapasach.  
 4. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

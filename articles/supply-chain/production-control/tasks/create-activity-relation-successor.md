@@ -65,3 +65,6 @@ Wymagania wstępne:
 12. Zamknij stronę.
 13. Odśwież stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,5 @@ Należy pamiętać o włączeniu wszystkich utworzonych pól niestandardowych, t
 [Tabele Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Tworzenie pól niestandardowych i praca z nimi](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Udostępnianie niestandardowych pól w jednostkach danych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

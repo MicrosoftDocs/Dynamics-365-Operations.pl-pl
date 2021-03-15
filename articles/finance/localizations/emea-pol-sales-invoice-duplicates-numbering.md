@@ -40,3 +40,6 @@ Aby usunąć duplikat faktury, kliknij przycisk **Usuń**. **Uwaga:** Można usu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

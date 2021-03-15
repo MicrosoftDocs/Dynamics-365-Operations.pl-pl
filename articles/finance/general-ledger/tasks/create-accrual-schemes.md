@@ -40,3 +40,6 @@ W tym temacie opisano sposób tworzenia schematu naliczania. W zadaniu wykorzyst
 10. W polu **Liczba wystąpień według okresu** wprowadź liczbę.
 11. W polu **Księguj transakcje** wybierz, kiedy transakcje mają być księgowane, np. **Miesięcznie**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

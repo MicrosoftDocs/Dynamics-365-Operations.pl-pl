@@ -92,3 +92,6 @@ Poniższa procedura pomaga zagwarantować, że utworzony szablon uzupełnienia z
 6. W **Kod czynności grupowych** wybierz kod kroku grupy czynności, który został utworzony dla typu szblonu uzupełnienia.
 
 Wykonaj następujące kroki dla każdej firmy.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

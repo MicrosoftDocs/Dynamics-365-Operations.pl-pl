@@ -44,3 +44,6 @@ Jeśli nie określisz okna czasu dla wiersza umowy serwisowej, wiersz zlecenia s
 
 [Tworzenie okien czasowych](create-time-windows.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

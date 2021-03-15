@@ -173,3 +173,6 @@ W funkcji księgowania zestawień wprowadzono również różne ulepszenia w sys
 
     - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Aktualizacja zapasów** w polu **Poziom szczegółowości** zaznacz wartość **Podsumowanie**.
     - Wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia central** \> **Parametry** \> **Parametry rozwiązania Commerce**. Następnie na karcie **Księgowanie** na skróconej karcie **Agregacja** w opcji **Transakcje na załączniku** ustaw wartość **Tak**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

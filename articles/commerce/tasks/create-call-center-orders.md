@@ -61,3 +61,6 @@ Ta procedura zawiera instruktaż wyszukiwania odbiorcy, tworzenia nowego zamówi
 
 [Zmienianie metody dostawy w punkcie sprzedaży](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

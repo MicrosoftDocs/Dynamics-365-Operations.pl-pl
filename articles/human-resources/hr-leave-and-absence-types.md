@@ -82,3 +82,6 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
 - [Wstrzymywanie urlopu](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

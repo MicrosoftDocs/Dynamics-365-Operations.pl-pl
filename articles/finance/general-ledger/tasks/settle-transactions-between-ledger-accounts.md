@@ -48,3 +48,6 @@ W tej procedurze pokazano, jak rozliczać transakcje między kontami księgowymi
 7. Kliknij opcję Rozliczenia księgi.
 8. Na liście oznacz wybrany wiersz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

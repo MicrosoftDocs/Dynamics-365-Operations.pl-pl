@@ -126,3 +126,6 @@ Kolor jest pokazywany tylko na najniższym poziomie na wykresie Gantta. Wybierz 
 1. W siatce wybierz wiersz, w którym **pole** w polu ma wartość **kod towaru**.
 1. Wprowadź wartość w polu **Kryterium**.
 1. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

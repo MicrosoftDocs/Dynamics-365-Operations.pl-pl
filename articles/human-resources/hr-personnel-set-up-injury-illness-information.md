@@ -65,3 +65,6 @@ Pracodawcy muszą je znać, kiedy pracownicy doznają urazu lub zachorują z pow
     * Agencje raportujące to podmioty, którym muszą być zgłaszane zdarzenia. Zaznacz pole wyboru Domyślnie obok instytucji będącej domyślną agencją na potrzeby raportowania urazów i chorób.  
 23. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

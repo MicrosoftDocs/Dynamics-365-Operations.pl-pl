@@ -41,3 +41,6 @@ Można skonfigurować następujące informacje dla faktur dla odbiorcy i zwrotny
 
     * Wybierz kolejno opcje **Administrowanie organizacją \> Sekwencje numerów \> Zarządzanie licznikami**. Powinien istnieć rekord, gdzie **Moduł** = **Sprzedaż**, a **Typ** = **Faktura**.
     * Wybierz kolejno opcje **Administrowanie organizacją \> Sekwencje numerów \> Konfiguracja numerowania faktur**. Zaznacz pole wyboru **Hande** dla wiersza numeracji używanego do numerowania faktur dla odbiorców.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

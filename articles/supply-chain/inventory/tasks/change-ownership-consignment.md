@@ -54,3 +54,6 @@ Ta procedura pokazuje, jak zmienić właściciela zapasów konsygnacyjnych z dos
 2. Kliknij przycisk OK.
 3. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Na poniższej ilustracji pokazano stronę z listą **Wszystkie harmonogramy kons
 
 ![Rysunek 1](media/16-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

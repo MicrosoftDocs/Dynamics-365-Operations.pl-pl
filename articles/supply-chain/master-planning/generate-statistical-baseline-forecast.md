@@ -77,3 +77,6 @@ Jeśli prognoza nie jest generowana dla dużego zestawu towarów, ale na przykł
 - [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
 
 - [Autoryzowanie skorygowanej prognozy](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

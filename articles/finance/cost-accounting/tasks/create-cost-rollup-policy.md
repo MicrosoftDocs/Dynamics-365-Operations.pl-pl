@@ -67,3 +67,6 @@ W tej procedurze pokazano, jak utworzyć zasadę akumulacji kosztów, a następn
     * Kontynuuj, aż wszystkie centra kosztów zostaną zamapowane na ich odnośne podrzędne składniki kosztów.  
 16. Kliknij przycisk Zapisz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

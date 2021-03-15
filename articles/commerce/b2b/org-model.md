@@ -62,3 +62,6 @@ Użytkownicy Commerce Headquarters mogą przeglądać wartości właściwości d
 [Konfigurowanie metody płatności na konto odbiorcy dla witryn handlu elektronicznego B2B](payment-method.md)
 
 [Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego](quantity-limits.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

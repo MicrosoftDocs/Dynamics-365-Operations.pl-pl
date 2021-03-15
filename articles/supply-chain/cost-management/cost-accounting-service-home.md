@@ -36,3 +36,6 @@ Dodatek usługa rachunku kosztów dla rozwiązania Microsoft Dynamics 365 Supply
 ## <a name="related-resources"></a>Powiązane zasoby
 
 [Rozpoczęcie korzystania z usługi rachunku kosztów](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

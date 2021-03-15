@@ -90,3 +90,6 @@ Użyj funkcji **Zainstaluj składnik majątku**, aby zainstalować strukturę sk
 4. W polu **Lokalizacja czynności konserwacyjnych** wybierz nową lokalizację.
 5. Domyślnie pole **Data wprowadzenia** jest ustawione na bieżącą datę i godzinę. Można jednak wybrać inną datę i godzinę, od której obowiązuje dana instalacja w strukturze składników majątku.
 6. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

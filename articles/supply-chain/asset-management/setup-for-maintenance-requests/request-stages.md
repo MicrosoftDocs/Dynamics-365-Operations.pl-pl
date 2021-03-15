@@ -80,3 +80,6 @@ Po utworzeniu stanów cyklu życia, które są wymagane dla żądań konserwacji
 Na poniższej ilustracji pokazano przykład strony **Modele cyklu życia żądania konserwacji**.
 
 ![Strona Modele cyklu życia żądania konserwacji](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

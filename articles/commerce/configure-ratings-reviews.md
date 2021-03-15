@@ -94,3 +94,6 @@ Aby uzyskać informacje na temat konfigurowania modułów oceny i przeglądu, pa
 [Konfiguruj moduły ocen i recenzji na stronach szczegółów produktu](ratings-reviews-modules.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

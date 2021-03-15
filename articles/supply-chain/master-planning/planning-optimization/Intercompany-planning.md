@@ -87,3 +87,6 @@ W tym przykładzie planowane zamówienie zakupu jest tworzone w firmie USMF w ce
 Na poniższej ilustracji pokazano, jak ten przykład może wyglądać na stronie **Wielopoziomowe oznaczanie transakcji** dla planowanego zlecenia produkcyjnego.
 
 ![Przykład obrotu międzyfirmowego obejmujący trzy firmy](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

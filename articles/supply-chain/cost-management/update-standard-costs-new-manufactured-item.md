@@ -52,3 +52,6 @@ Aby dodawać nowe towary produkcyjne przez cały okres zamrożenia, wykonaj poni
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

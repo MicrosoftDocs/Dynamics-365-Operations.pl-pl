@@ -82,3 +82,6 @@ To zadanie skupia się na konfiguracji potrzebnej do utworzenia reguły Kanban z
     * Zwróć uwagę na kartę Kanban utworzoną w celu dostarczenia towaru M0001 dla szacowanego zlecenia produkcyjnego.  
     * To jest ostatni krok!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

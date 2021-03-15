@@ -57,3 +57,6 @@ Istnieje kilka sposobów tworzenia składników kosztów w module Rachunek koszt
 1. Kliknij opcję Wyświetl elementy członkowskie wymiaru.
     * Umożliwia wyświetlanie zaimportowanych kont księgowych jako składników kosztów w firmie, do których mogą spływać koszty.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Aby potwierdzić, że metoda płatności na koncie klienta została włączona, 
 [Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego](quantity-limits.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

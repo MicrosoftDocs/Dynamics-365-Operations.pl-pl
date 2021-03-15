@@ -51,3 +51,6 @@ Aby uzyskać więcej informacji na temat stanów cyklu życia zlecenia pracy i e
 8. Wybierz opcję **Zapisz**.
 
 ![Typy zleceń pracy](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

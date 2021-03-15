@@ -50,3 +50,6 @@ Aby wyświetlić lub przypisać konwencję wynajmu, należy wykonać następują
 3. Wybierz opcję **Zapisz**.
 
 Po utworzeniu wynajmu data rozpoczęcia każdej książki jest automatycznie wprowadzana na podstawie wprowadzonej daty rozpoczęcia leasingu i konwencji wynajmu określonej dla książki.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

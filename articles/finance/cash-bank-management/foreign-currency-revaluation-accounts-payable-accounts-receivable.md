@@ -65,3 +65,6 @@ Po każdym uruchomieniu przeszacowania w walucie obcej jest wprowadzany zapis. Z
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

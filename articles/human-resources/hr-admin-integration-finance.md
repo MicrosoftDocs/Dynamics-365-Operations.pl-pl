@@ -255,3 +255,5 @@ Identyfikator lokalizacji używany w adresie pracownika nie jest częścią nume
 Poniższa ilustracja przedstawia przykład mapowania w szablonie w Integratorze danych. 
 
 ![Mapowanie w szablonie](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

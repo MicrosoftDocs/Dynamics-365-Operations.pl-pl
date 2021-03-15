@@ -72,3 +72,6 @@ Jeśli określono, że kod przyczyny jest wymagany, należy wprowadzić kod przy
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

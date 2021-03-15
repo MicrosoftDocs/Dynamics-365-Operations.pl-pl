@@ -54,3 +54,6 @@ W obszarze roboczym **Samoobsługa pracownika etatowego** pracownicy mogą przes
 [Zgłaszanie prośby o czas wolny](hr-employee-self-service-request-time-off.md)
 [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Do relacji przedmiotu serwisu można dołączyć szablon listy składowej (BOM).
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

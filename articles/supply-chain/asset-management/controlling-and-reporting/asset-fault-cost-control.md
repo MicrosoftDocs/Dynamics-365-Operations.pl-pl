@@ -61,3 +61,6 @@ W tym przykładzie przedstawiono obliczenia dotyczące kontroli kosztów usterki
     ![Rysunek 1](media/05-controlling-and-reporting.png)
 
 Informacje na temat konfigurowania usterek można znaleźć w temacie [Zarządzanie usterkami](../setup-for-work-orders/fault-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

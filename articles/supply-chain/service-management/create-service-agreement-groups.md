@@ -42,3 +42,6 @@ Grupy umów serwisowych są przydatne do sortowania i filtrowania umów serwisow
 ## <a name="related-topics"></a>Powiązane tematy
 
 [Omówienie umowy serwisowej](service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

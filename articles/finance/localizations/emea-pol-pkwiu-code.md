@@ -46,3 +46,6 @@ Hierarchie kategorii są używane do klasyfikowania produktów czy transakcji dl
 1. Kliknij kolejno **Zarządzanie informacjami o produktach** > **Wspólne** > **Zwolnione produkty**. 
 2. Wybierz zwolniony produkt, do którego chcesz przypisać kod PKWiU. W okienku akcji kliknij przycisk **Edytuj**. 
 3. Na skróconej karcie **Sprzedaż** wprowadź kod PKWiU dla zwolnionego produktu. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

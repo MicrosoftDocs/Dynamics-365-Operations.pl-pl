@@ -43,3 +43,6 @@ Aby przypisać użytkowników do ról używanych w module Wynajem składnika maj
 1. Wybierz kolejno opcje **Administrowanie systemem \> Zabezpieczenia \> Przypisywanie użytkowników do ról**.
 2. Wybierz rolę **Obsługa wynajmu**, **Pracownik wynajmu** lub **Wyświetl wynajem**, a następnie wybierz opcję **Ręcznie przypisz/wyklucz użytkowników**.
 3. Wybierz użytkownika, który ma zostać przypisany do roli, a następnie wybierz opcję **Przypisz do roli**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

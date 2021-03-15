@@ -42,3 +42,6 @@ Ta procedura przedstawia sposób wykorzystywania portalu współpracy z dostawca
 1. Wybierz kolejno opcje Portal współpracy z dostawcami > Zapasy konsygnacyjne > Dostępne zapasy konsygnacyjne.
     * Strona Dostępne zapasy konsygnacyjne pokazuje zapasy istniejące w magazynie odbiorcy, których jesteś właścicielem. Można pokazać dodatkowe wymiary, takie jak oddział i magazyn, klikając kartę Wyświetl wymiary.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

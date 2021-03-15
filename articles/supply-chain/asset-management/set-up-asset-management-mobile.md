@@ -84,3 +84,6 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 Aby uzyskać więcej informacji dotyczących pracy z mobilnym obszarem roboczym **Zarządzanie składnikami majątku**, zobacz temat [Korzystanie z mobilnego obszaru roboczego zarządzanie składnikami majątku](asset-management-mobile-workspace.md).
 
 Aby uzyskać więcej informacji o aplikacji mobilnej Finance and Operations (Dynamics 365), zobacz [stronę główną aplikacji mobilnej](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Aby skonfigurować relację między określonym raportem a typem arkusza, na str
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

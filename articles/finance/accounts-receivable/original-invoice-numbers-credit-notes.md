@@ -97,3 +97,6 @@ Gdy drukujesz dowolny tekst, noty kredytowe klienta i projektu, będą one zawie
 
 > [!NOTE]
 > Upewnij się, że formaty dokumentów do druku są poprawnie skonfigurowane, przy założeniu, że zostaną wydrukowane odniesienia do oryginalnych faktur.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

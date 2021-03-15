@@ -60,3 +60,6 @@ W tym temacie wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby 
 8. Ustaw opcję **Przetwarzanie wsadowe** na **Tak**, aby konsolidacja uruchamiała się jako zadanie wsadowe w określonym czasie. Aby natychmiast uruchomić konsolidację, wybierz przycisk **OK**. 
 
 Transakcje i salda, które zostały wskazane do konsolidacji w oddziałach, zostaną dodane do odpowiednich kont firmy skonsolidowanej.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

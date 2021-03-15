@@ -89,3 +89,6 @@ Na poniższym rysunku przedstawiono zrzut ekranu obliczania KPI dla czterech sk�
 - Można wybrać wiele składników majątku w obszarze **Wszystkie składniki majątku** i kliknąć przycisk **Wskaźniki KPI składnika majątku** na karcie **Ogólne**. Następnie kliknij przycisk **OK** w oknie dialogowym **Oblicz wskaźniki KPI składnika majątku**, aby obliczyć wskaźniki KPI wybranych składników majątku.  
 - Wyniki obliczeń wskaźnika KPI mogą obejmować [rejestracje przerw konserwacyjnych](../work-orders/maintenance-downtime.md), w zależności od konfiguracji i użycia kodów przyczyn przestojów związanych z konserwacją. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

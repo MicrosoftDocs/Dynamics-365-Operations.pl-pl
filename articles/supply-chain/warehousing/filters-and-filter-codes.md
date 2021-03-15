@@ -165,3 +165,6 @@ Aby skonfigurować kody filtrów dostawcy, należy wykonać następujące czynno
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Aby uzyskać więcej informacji, zobacz wpis w blogu na temat kodów filtrów magazynowych WMS](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

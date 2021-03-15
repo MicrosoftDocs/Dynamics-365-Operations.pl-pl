@@ -38,3 +38,6 @@ W tym temacie pokazano sposób tworzenia nowej grupy środków trwałych. Przewo
 8. W polu **Konwencja amortyzacji** wybierz opcję.
 9. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -225,3 +225,6 @@ Aby włączyć ręczne wykonywanie odroczonej rejestracji fiskalnej, należy dod
     1. Wybierz układ do zaktualizowania.
     2. Dodaj nowy przycisk i ustaw właściwość przycisku **Zakończ proces rejestracji fiskalnej**.
     3. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1090**, aby przenieść zmiany do bazy danych kanału.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

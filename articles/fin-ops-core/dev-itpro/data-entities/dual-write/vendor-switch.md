@@ -78,3 +78,6 @@ Aby stworzyć nowe procey przepływu pracy przy użyciu szablonów procesu przep
 4. Utwórz nowy proces przepływu pracy dla tabeli **Kontakt** i wybierz szablon procesu przepływu pracy **Aktualizowanie dostawców typu Osoba w tabeli dostawców**.
 5. Przepływy pracy można konfigurować jako przepływy pracy w czasie rzeczywistym lub w tle, zgodnie z wymaganiami użytkownika. Aby skonfigurować przepływ pracy jako przepływ pracy w tle, wybierz opcję **Konwertuj na przepływ pracy w tle**.
 6. Umożliwia aktywowanie przepływów pracy utworzonych dla tabel **Kontakt** i **Dostawca** w celu rozpoczęcia używania tabeli **Kontakt** do przechowywania informacji o dostawcy dla typu **Osoba**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

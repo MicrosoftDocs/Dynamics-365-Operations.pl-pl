@@ -52,3 +52,6 @@ W programie Microsoft Dynamics 365 Human Resources można przetwarzać dwa rodza
    4. Kliknij przycisk **OK**. Proces będzie uruchamiany z parametrami określonymi przez użytkownika.
 
 4. Kliknij przycisk **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

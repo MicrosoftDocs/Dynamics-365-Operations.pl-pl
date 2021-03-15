@@ -159,3 +159,6 @@ To działanie ma zastosowanie tylko wtedy, gdy produkt jest bezpośrednio wybran
 Na przykład produkt X jest przypisany do grupy właścicieli *Szafy projektowe*. Produkt X jest również częścią BOM produktu Y, który jest przypisany do grupy właścicieli produktów *Głośniki projektowe*. Jeśli użytkownik z grupy właścicieli produktu *Głośniki projektowe* wyda produkt Y i jego BOM, produkt X zostanie zwolniony razem z produktem Y.
 
 - Aby uzyskać więcej informacji, zobacz temat [Właściciele produktów](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

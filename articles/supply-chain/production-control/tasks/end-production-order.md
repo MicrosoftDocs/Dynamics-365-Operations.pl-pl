@@ -45,3 +45,6 @@ W tej procedurze pokazano sposób kończenia zlecenia produkcyjnego. Dane wykorz
 1. W okienku akcji kliknij pozycję Zarządzanie kosztami.
 2. Kliknij przycisk Wyświetl porównanie kosztów.
     * Po zakończeniu zlecenia produkcyjnego można porównywać szacowany koszt własny ze zrealizowanym kosztem własnym w celu uzyskania obrazu odchyleń względem kosztów produkcji.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

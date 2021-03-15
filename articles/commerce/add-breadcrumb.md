@@ -94,3 +94,6 @@ Aby dodać moduł nawigacyjnego do PDP i ustawić wymagane właściwości, wykon
 [Moduł pola zakupu](add-buy-box.md)
 
 [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

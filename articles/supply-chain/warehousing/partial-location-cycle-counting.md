@@ -61,3 +61,6 @@ W tym przykładzie musi być inwentaryzowany tylko towar o numerze A0001 w magaz
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Inwentaryzacja ciągła](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

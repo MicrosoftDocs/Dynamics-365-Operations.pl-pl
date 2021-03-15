@@ -73,3 +73,6 @@ W tym temacie pokazano sposób ręcznego tworzenia zamówienia sprzedaży. Najcz
 
 2. Kliknij przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

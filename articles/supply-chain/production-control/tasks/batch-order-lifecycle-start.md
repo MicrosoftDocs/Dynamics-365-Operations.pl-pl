@@ -91,3 +91,6 @@ Warunkiem wstępnym wykonania tej procedury przy użyciu innego zestawu danych j
 12. Zamknij stronę.
 13. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

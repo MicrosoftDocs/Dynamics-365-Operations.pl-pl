@@ -65,3 +65,6 @@ Ta konfiguracja umożliwia potwierdzenie środka transportu ładunku, który zaw
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ładunki** \> **Ładunki w transporcie**.
 2. W okienku akcji na karcie **Wyślij i odbierz** w grupie **Potwierdź** kliknij opcję **Transport**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

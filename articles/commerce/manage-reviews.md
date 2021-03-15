@@ -131,3 +131,6 @@ Aby wyświetlić trendy ocen i recenzji w konstruktorze witryn w module Commerce
 [Konfigurowanie ocen i recenzji](configure-ratings-reviews.md)
 
 [Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

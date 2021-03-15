@@ -93,3 +93,6 @@ Microsoft FastTrack dla Dynamics 365 to usługa wsparcia wdrożeniowego, która 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>W przypadku uaktualniania z systemu Dynamics AX 2012 lub migracji z systemu AX 2009
 
 Jeśli jesteś klientem, który uaktualniania z systemu Microsoft Dynamics AX 2012 lub migruje z systemu Microsoft Dynamics AX 2009, być może masz prawo do dłuższego okresu próbnego. Napisz na adres <daxcf@microsoft.com>, aby uzyskać więcej informacji.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

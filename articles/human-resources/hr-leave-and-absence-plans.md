@@ -383,3 +383,6 @@ Prognozowane saldo (30) = Kwota naliczeń (10 × 1) + Saldo bieżące (40) – K
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)
 - [Konfigurowanie typów urlopów i nieobecności](hr-leave-and-absence-types.md)
 - [Naliczanie do planów urlopów i nieobecności](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

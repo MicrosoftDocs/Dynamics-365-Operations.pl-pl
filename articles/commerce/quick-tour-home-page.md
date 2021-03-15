@@ -72,3 +72,6 @@ Główna sekcja strony głównej umożliwia podświetlanie produktów, kategorii
 [Omówienie stron koszyka i realizacji zamówienia](quick-tour-cart-checkout.md)
 
 [Omówienie stron zarządzania kontem](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

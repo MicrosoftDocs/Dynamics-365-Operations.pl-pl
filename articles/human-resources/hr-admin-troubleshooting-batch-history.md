@@ -64,3 +64,6 @@ Umożliwia zaplanowanie automatycznego zadania w celu oczyszczenia historii zada
 
 8. W razie potrzeby zmień dowolne inne parametry w obszarze **Uruchom w tle**, a następnie wybierz przycisk **OK**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

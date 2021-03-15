@@ -164,3 +164,6 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/) | Ta witryna hostuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Ta witryna zawiera informacje na temat oceny i sprzedaży. |
 | [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Ta witryna hostuje materiały szkoleniowe oraz raporty i oficjalne dokumenty do pobrania, a także jest główną witryną pomocy technicznej dla posiadaczy planów usług. Dostęp do niektórych zasobów w tej witrynie może wymagać planu usług. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

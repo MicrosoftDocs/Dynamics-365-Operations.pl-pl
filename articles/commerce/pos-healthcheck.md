@@ -82,3 +82,6 @@ Niestandardowe testy kondycji można również tworzyć w przypadku urządzeń, 
 ## <a name="related-articles"></a>Powiązane artykuły
 
 [Wyzwalacze aplikacji Modern POS (MPOS) i drukowanie](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

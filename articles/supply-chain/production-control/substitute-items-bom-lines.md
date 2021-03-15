@@ -48,3 +48,6 @@ Rozważmy następujący scenariusz: do spawania potrzebna jest metalowa płytka.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

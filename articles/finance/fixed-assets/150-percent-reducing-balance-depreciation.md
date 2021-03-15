@@ -87,3 +87,6 @@ Metoda amortyzacji degresywnej 150% dzieli wartość 150% między lata okresu u�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

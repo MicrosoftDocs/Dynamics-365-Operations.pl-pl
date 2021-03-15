@@ -87,3 +87,6 @@ Poniżej znajduje się wykaz ośmiu przewodników po zadaniach w kolejności, w 
 7.  [Tworzenie reguł konfiguracji](tasks/create-configuration-rules.md)
 8.  [Tworzenie konfiguracji opartych na wymiarach](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

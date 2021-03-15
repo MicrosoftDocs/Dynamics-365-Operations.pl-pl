@@ -85,3 +85,6 @@ Aby dodać moduł karuzeli do nowej strony i ustawić wymagane właściwości, w
 [Moduł bloku zawartości](add-hero-module.md)
 
 [Moduł odtwarzacza wideo](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

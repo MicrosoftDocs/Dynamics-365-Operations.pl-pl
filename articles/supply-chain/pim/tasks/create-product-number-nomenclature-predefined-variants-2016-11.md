@@ -57,3 +57,6 @@ Ten temat pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu 
 5. W polu **Nazewnictwo numerów wariantów produktu** wprowadź lub wybierz wartość.
 6. Zamknij stronę.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

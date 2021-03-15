@@ -52,3 +52,6 @@ Ta procedura pokazuje sposób zastosowania szablonu konfiguracji do produktu w z
 
 ## <a name="select-the-product-configuration"></a>Wybór konfiguracji produktu
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

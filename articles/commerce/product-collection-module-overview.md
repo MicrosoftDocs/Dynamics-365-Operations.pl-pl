@@ -112,3 +112,6 @@ W poniższej tabeli przedstawiono typy list, które są dostępne do wybrania w 
 [Omówienie rekomendacji produktów](product-recommendations.md)
 
 [Moduł szybkiego podglądu](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

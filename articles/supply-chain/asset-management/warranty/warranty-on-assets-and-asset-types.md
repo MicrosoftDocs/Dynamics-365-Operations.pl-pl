@@ -53,3 +53,6 @@ W tym temacie wyjaśniono, jak konfigurować gwarancje składników majątku i t
 
 > [!NOTE]
 > W przypadku tworzenia zlecenia pracy dla składnika majątku objętego gwarancją dostawcy, jeśli zlecenie pracy ma oczekiwaną datę rozpoczęcia w okresie gwarancji, zostanie wyświetlone powiadomienie dotyczące umowy gwarancyjnej. W razie konieczności można anulować zlecenie pracy.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
