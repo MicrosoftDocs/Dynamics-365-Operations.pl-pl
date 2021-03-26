@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 869230c0003735c1e9f48170a16ca9409a9edc19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cce0d408ac6d372fb726eff8fa4b0358ec200243
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976546"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211002"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Sprawdzanie spójności transakcji sprzedaży detalicznej
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano funkcje sprawdzania spójności transakcji w rozwiązaniu Microsoft Dynamics 365 Commerce. Moduł sprawdzania spójności umożliwia identyfikowanie i izolowanie niespójnych transakcji przed pobraniem ich przez proces księgowania zestawienia.
+W tym temacie opisano funkcje sprawdzania spójności transakcji w rozwiązaniu Microsoft Dynamics 365 Commerce. Moduł sprawdzania spójności umożliwia identyfikowanie i izolowanie niespójnych transakcji przed pobraniem ich za pomocą procesu księgowania zestawienia.
 
 Gdy zestawienie jest księgowane, księgowanie może zakończyć się niepowodzeniem z powodu niespójności danych w tabelach transakcji handlowych. Przyczyną tego problemu z danymi mogą być nieprzewidziane problemy w aplikacji punktu sprzedaży (POS) lub nieprawidłowy import transakcji z systemów POS innych firm. Przykłady wyświetlania tych niespójności: 
 
