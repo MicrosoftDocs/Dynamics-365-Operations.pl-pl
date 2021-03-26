@@ -72,14 +72,16 @@
                   items:
                     - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.18 (maj 2021)
+                      href: get-started/whats-new-scm-10-0-18.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.17 (kwiecień 2021)
                       href: get-started/whats-new-scm-10-0-17.md
                     - name: Supply Chain Management w wersji 10.0.16 (luty 2021)
                       href: get-started/whats-new-scm-10-0-16.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.15 (styczeń 2021)
-                      href: get-started/whats-new-scm-10-0-15.md
                 - name: Usunięte lub wycofane funkcje
                   items:
+                    - name: Usunięte lub wycofane funkcje — strona główna
+                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
                       href: get-started/removed-deprecated-features-scm-updates.md
                     - name: Usunięte lub wycofane funkcje w poprzednich wersjach
@@ -1349,6 +1351,8 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Śledzenie dynamicznych średnich kosztów dla wymiaru magazynowego
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
+            - name: Archiwizacja transakcji magazynowych
+              href: inventory/archive-inventory-transactions.md
             - name: Dodatek Widoczność magazynu
               href: inventory/inventory-visibility.md
         - name: Analiza Internetu rzeczy (IoT)
@@ -2021,6 +2025,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Wersje inżynieryjne i kategorie produktów inżynieryjnych
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Włącz zarządzanie zmianami w istniejących produktach
+              href: engineering-change-management/change-management-existing-products.md
             - name: Stan cyklu życia produktu i transakcje
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
@@ -2129,6 +2135,8 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
                           href: production-control/production-floor-execution-use.md
+                        - name: Style kontroli interfejsu użytkownika do wykonywania hal produkcyjnych
+                          href: production-control/production-floor-execution-styles.md
                     - name: Konfigurowanie karty zadań dla urządzeń
                       href: production-control/config-job-card-device.md
                     - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
@@ -2729,6 +2737,54 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Konfigurowanie ograniczeń transportu towaru
               href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Koszt z wyładunkiem
+          items:
+            - name: Omówienie modułu Koszt z wyładunkiem
+              href: landed-cost/landed-cost-overview.md
+            - name: Jak koszt z wyładunkiem różni się od zarządzania transportem
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: Ustawianie i konfigurowanie modułu Koszt z wyładunkiem
+              items:
+                - name: Parametry kosztu z wyładunkiem
+                  href: landed-cost/landed-cost-parameters.md
+                - name: Parametry zaopatrzenia i sourcingu kosztu z wyładunkiem
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Ustawienia stanu podróży
+                  href: landed-cost/voyage-status-setup.md
+                - name: Konfiguracja kontenera wysyłkowego
+                  href: landed-cost/shipping-container-setup.md
+                - name: Konfiguracja informacji o dostawie
+                  href: landed-cost/delivery-information-setup.md
+                - name: Ustawienia podróży wieloetapowej
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: Konfiguracja informacji o wysyłce
+                  href: landed-cost/shipping-information-setup.md
+                - name: Ustawienia wartości parametrów wyceny
+                  href: landed-cost/costing-parameters-setup.md
+                - name: Domyślne opisy dla księgi głównej
+                  href: landed-cost/defult-descriptions.md
+            - name: Ustawienia dostawcy dodane dla kosztu z wyładunkiem
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 'Praca z podróżą, kontenerami i folio'
+              items:
+                - name: Zarządzanie podróżą
+                  href: landed-cost/manage-voyages.md
+                - name: Zarządzanie kontenerami wysyłki
+                  href: landed-cost/manage-shipping-containers.md
+                - name: Zarządzanie foliami
+                  href: landed-cost/manage-folios.md
+            - name: Śledzenie podróży przychodzących i podróży kontenerów wysyłkowych
+              href: landed-cost/inbound-tracking.md
+            - name: Szacowanie i zarządzanie kosztami z wyładunkiem
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: Przetwarzanie w drodze
+              href: landed-cost/in-transit-processing.md
+            - name: Przetwarzanie transakcji z nadwyżką/niedoborem
+              href: landed-cost/over-under-transactions.md
+            - name: Zapytania o koszt z wyładunkiem
+              href: landed-cost/landed-cost-inquiries.md
+            - name: Raporty kosztu z wyładunkiem
+              href: landed-cost/landed-cost-reports.md
         - name: Zarządzanie magazynem
           items:
             - name: Omówienie zarządzania magazynem
@@ -2925,10 +2981,12 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: Konsolidacja pozycji — wykorzystanie lokalizacji
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: Rozwiązywanie problemów dotyczących pracy magazynowej
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: Podział pracy
                       href: warehousing/work-split.md
+                    - name: Interfejs urządzeń do obsługi materiałów (MHAX)
+                      href: warehousing/mhax.md
+                    - name: Rozwiązywanie problemów dotyczących pracy magazynowej
+                      href: warehousing/troubleshoot-warehouse-work.md
             - name: Konfiguracja magazynu
               items:
                 - name: Konfiguracja magazynu
@@ -2987,6 +3045,8 @@
                   items:
                     - name: Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
                       href: warehousing/install-configure-warehouse-management-app.md
+                    - name: Ustawienia użytkownika urządzenia przenośnego
+                      href: warehousing/mobile-device-user-settings.md
                     - name: Instalowanie i łączenie aplikacji magazynu
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji magazynu
