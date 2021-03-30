@@ -16,30 +16,33 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2415945c5a8f73e095627d638fcc572c50ffe8ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: af9743f17cebb3484c3ec5b0315347c575a474bd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964902"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247003"
 ---
-# <a name="create-and-associate-registers"></a><span data-ttu-id="8bf65-103">Tworzenie i kojarzenie kas</span><span class="sxs-lookup"><span data-stu-id="8bf65-103">Create and associate registers</span></span>
+# <a name="create-and-associate-registers"></a><span data-ttu-id="eb18d-103">Tworzenie i kojarzenie kas</span><span class="sxs-lookup"><span data-stu-id="eb18d-103">Create and associate registers</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8bf65-104">Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS).</span><span class="sxs-lookup"><span data-stu-id="8bf65-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="8bf65-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="8bf65-105">This procedure uses the demo data company USRT.</span></span>
+<span data-ttu-id="eb18d-104">Ta procedura przedstawia sposób tworzenia kasy w punkcie sprzedaży (POS).</span><span class="sxs-lookup"><span data-stu-id="eb18d-104">This procedure demonstrates how to create a point of sale (POS) register.</span></span> <span data-ttu-id="eb18d-105">Procedura wykorzystuje dane firmy demonstracyjnej USRT.</span><span class="sxs-lookup"><span data-stu-id="eb18d-105">This procedure uses the demo data company USRT.</span></span>
 
-1. <span data-ttu-id="8bf65-106">Wybierz kolejno opcje Retail i Commerce > Ustawienia kanału > Ustawienia punktu sprzedaży > Rejestry.</span><span class="sxs-lookup"><span data-stu-id="8bf65-106">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
-2. <span data-ttu-id="8bf65-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="8bf65-107">Click New.</span></span>
-3. <span data-ttu-id="8bf65-108">W polu Numer rejestru wpisz identyfikator nowej kasy.</span><span class="sxs-lookup"><span data-stu-id="8bf65-108">In the Register number field, type an ID for the new register.</span></span>
-    * <span data-ttu-id="8bf65-109">Identyfikator kasy zazwyczaj zawiera kody umożliwiające mapowanie rejestru do sklepu, do której należy, oraz do lokalizacji w sklepie.</span><span class="sxs-lookup"><span data-stu-id="8bf65-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
-4. <span data-ttu-id="8bf65-110">W polu Nazwa wprowadź opisową nazwę kasy.</span><span class="sxs-lookup"><span data-stu-id="8bf65-110">In the Name field, type a descriptive name for the register..</span></span>
-5. <span data-ttu-id="8bf65-111">W polu Numer sklepu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="8bf65-111">In the Store number field, enter or select a value.</span></span>
-6. <span data-ttu-id="8bf65-112">W polu Profil sprzętu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="8bf65-112">In the Hardware profile field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bf65-113">Profile sprzętu są używane do określania urządzeń peryferyjnych, które będą podłączone do kasy, takich jak szuflada kasowa czy drukarka paragonów.</span><span class="sxs-lookup"><span data-stu-id="8bf65-113">Hardware profiles are used to specify the peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
-7. <span data-ttu-id="8bf65-114">W polu Profil graficzny wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="8bf65-114">In the Visual profile field, enter or select a value.</span></span>
-    * <span data-ttu-id="8bf65-115">Profile graficzne są używane do określania obrazów używanych w tle okna i na stronie logowania do aplikacji punktu sprzedaży, jak również motywu przewodniego aplikacji punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="8bf65-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
-8. <span data-ttu-id="8bf65-116">W polu Numer kasy EFT w punkcie sprzedaży wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="8bf65-116">In the EFT POS register number field, type a value.</span></span>
-    * <span data-ttu-id="8bf65-117">Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji.</span><span class="sxs-lookup"><span data-stu-id="8bf65-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="8bf65-118">Ta wartość jest często nazywana „Identyfikatorem terminala” lub „TID”.</span><span class="sxs-lookup"><span data-stu-id="8bf65-118">This value is often called the "Terminal ID" or "TID".</span></span> <span data-ttu-id="8bf65-119">Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.</span><span class="sxs-lookup"><span data-stu-id="8bf65-119">The TID can generally be found on a sticker on the payment device.</span></span>  
-9. <span data-ttu-id="8bf65-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="8bf65-120">Click Save.</span></span>
+1. <span data-ttu-id="eb18d-106">Wybierz kolejno opcje Retail i Commerce > Ustawienia kanału > Ustawienia punktu sprzedaży > Rejestry.</span><span class="sxs-lookup"><span data-stu-id="eb18d-106">Go to Retail and Commerce > Channel setup > POS setup > Registers.</span></span>
+2. <span data-ttu-id="eb18d-107">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="eb18d-107">Click New.</span></span>
+3. <span data-ttu-id="eb18d-108">W polu Numer rejestru wpisz identyfikator nowej kasy.</span><span class="sxs-lookup"><span data-stu-id="eb18d-108">In the Register number field, type an ID for the new register.</span></span>
+    * <span data-ttu-id="eb18d-109">Identyfikator kasy zazwyczaj zawiera kody umożliwiające mapowanie rejestru do sklepu, do której należy, oraz do lokalizacji w sklepie.</span><span class="sxs-lookup"><span data-stu-id="eb18d-109">The register ID typically includes codes that help map the register to the store to which it belongs, and the location within the store.</span></span>  
+4. <span data-ttu-id="eb18d-110">W polu Nazwa wprowadź opisową nazwę kasy.</span><span class="sxs-lookup"><span data-stu-id="eb18d-110">In the Name field, type a descriptive name for the register..</span></span>
+5. <span data-ttu-id="eb18d-111">W polu Numer sklepu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="eb18d-111">In the Store number field, enter or select a value.</span></span>
+6. <span data-ttu-id="eb18d-112">W polu Profil sprzętu wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="eb18d-112">In the Hardware profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="eb18d-113">Profile sprzętu są używane do określania urządzeń peryferyjnych, które będą podłączone do kasy, takich jak szuflada kasowa czy drukarka paragonów.</span><span class="sxs-lookup"><span data-stu-id="eb18d-113">Hardware profiles are used to specify the peripherals that will be connected to the register, such as cash drawer and receipt printer.</span></span>  
+7. <span data-ttu-id="eb18d-114">W polu Profil graficzny wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="eb18d-114">In the Visual profile field, enter or select a value.</span></span>
+    * <span data-ttu-id="eb18d-115">Profile graficzne są używane do określania obrazów używanych w tle okna i na stronie logowania do aplikacji punktu sprzedaży, jak również motywu przewodniego aplikacji punktu sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="eb18d-115">Visual profiles are used to specify the images used in the POS background and login page as well as themes for the POS.</span></span>  
+8. <span data-ttu-id="eb18d-116">W polu Numer kasy EFT w punkcie sprzedaży wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="eb18d-116">In the EFT POS register number field, type a value.</span></span>
+    * <span data-ttu-id="eb18d-117">Numer kasy EFT w punkcie sprzedaży jest używany do informowania agenta rozliczeniowego, który terminal płatniczy wysyła żądania autoryzacji.</span><span class="sxs-lookup"><span data-stu-id="eb18d-117">The EFT POS register number is used to inform the payment processor which payment terminal is sending authorization requests.</span></span> <span data-ttu-id="eb18d-118">Ta wartość jest często nazywana „Identyfikatorem terminala” lub „TID”.</span><span class="sxs-lookup"><span data-stu-id="eb18d-118">This value is often called the "Terminal ID" or "TID".</span></span> <span data-ttu-id="eb18d-119">Identyfikator TID znajduje się zwykle na nalepce na urządzeniu płatniczym.</span><span class="sxs-lookup"><span data-stu-id="eb18d-119">The TID can generally be found on a sticker on the payment device.</span></span>  
+9. <span data-ttu-id="eb18d-120">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="eb18d-120">Click Save.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
