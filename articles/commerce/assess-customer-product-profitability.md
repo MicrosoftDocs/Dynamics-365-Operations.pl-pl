@@ -18,40 +18,43 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3770832cb8eee96931d8f8e68c726d5e09d3fceb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e0589748247cf9195116687cf70228b4ef36e29b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980061"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211553"
 ---
-# <a name="assess-customer-and-product-profitability"></a><span data-ttu-id="6d96f-103">Ocenianie rentowności odbiorców i produktów</span><span class="sxs-lookup"><span data-stu-id="6d96f-103">Assess customer and product profitability</span></span>
+# <a name="assess-customer-and-product-profitability"></a><span data-ttu-id="5f4e9-103">Ocenianie rentowności odbiorców i produktów</span><span class="sxs-lookup"><span data-stu-id="5f4e9-103">Assess customer and product profitability</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="6d96f-104">W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o rentowności odbiorców i produktów z danych Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="6d96f-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Dynamics 365 Commerce data.</span></span>
+<span data-ttu-id="5f4e9-104">W tym artykule wyjaśniono, jak za pomocą funkcji analizy w pamięci i w czasie rzeczywistym uzyskać dostęp, eksplorować i wyciągać wnioski o rentowności odbiorców i produktów z danych Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="5f4e9-104">This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Dynamics 365 Commerce data.</span></span>
 
-<span data-ttu-id="6d96f-105">W Commerce użytkownicy mogą analizować rentowność dla najlepszych odbiorców (10-100) na różnych poziomach hierarchii organizacji, na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="6d96f-105">As part of Commerce, users can study profitability for the top customers (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
+<span data-ttu-id="5f4e9-105">W Commerce użytkownicy mogą analizować rentowność dla najlepszych odbiorców (10-100) na różnych poziomach hierarchii organizacji, na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="5f4e9-105">As part of Commerce, users can study profitability for the top customers (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
-- <span data-ttu-id="6d96f-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="6d96f-106">Sales amount</span></span>
-- <span data-ttu-id="6d96f-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="6d96f-107">Quantity</span></span>
-- <span data-ttu-id="6d96f-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="6d96f-108">Gross profit margin</span></span>
-- <span data-ttu-id="6d96f-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="6d96f-109">Margin percentage</span></span>
+- <span data-ttu-id="5f4e9-106">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="5f4e9-106">Sales amount</span></span>
+- <span data-ttu-id="5f4e9-107">Ilość</span><span class="sxs-lookup"><span data-stu-id="5f4e9-107">Quantity</span></span>
+- <span data-ttu-id="5f4e9-108">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="5f4e9-108">Gross profit margin</span></span>
+- <span data-ttu-id="5f4e9-109">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="5f4e9-109">Margin percentage</span></span>
 
-<span data-ttu-id="6d96f-110">Na potrzeby tej analizy można używać gotowych raportów **Najlepsi sprzedaży**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="6d96f-110">For this assessment, you can use the out-of-box **Top customers** report, which you can open from any of the following locations:</span></span>
+<span data-ttu-id="5f4e9-110">Na potrzeby tej analizy można używać gotowych raportów **Najlepsi sprzedaży**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="5f4e9-110">For this assessment, you can use the out-of-box **Top customers** report, which you can open from any of the following locations:</span></span>
 
-- <span data-ttu-id="6d96f-111">Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych odbiorców**</span><span class="sxs-lookup"><span data-stu-id="6d96f-111">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top customers report**</span></span>
-- <span data-ttu-id="6d96f-112">Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych odbiorców**</span><span class="sxs-lookup"><span data-stu-id="6d96f-112">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top customers report**</span></span>
+- <span data-ttu-id="5f4e9-111">Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych odbiorców**</span><span class="sxs-lookup"><span data-stu-id="5f4e9-111">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top customers report**</span></span>
+- <span data-ttu-id="5f4e9-112">Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych odbiorców**</span><span class="sxs-lookup"><span data-stu-id="5f4e9-112">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top customers report**</span></span>
 
-<span data-ttu-id="6d96f-113">W ten sam sposób użytkownicy mogą analizować rentowność dla najlepszych produktów (10-100) na różnych poziomach hierarchii organizacji, na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="6d96f-113">Likewise, users can study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
+<span data-ttu-id="5f4e9-113">W ten sam sposób użytkownicy mogą analizować rentowność dla najlepszych produktów (10-100) na różnych poziomach hierarchii organizacji, na podstawie następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="5f4e9-113">Likewise, users can study profitability for the top products (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:</span></span>
 
-- <span data-ttu-id="6d96f-114">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="6d96f-114">Sales amount</span></span>
-- <span data-ttu-id="6d96f-115">Ilość</span><span class="sxs-lookup"><span data-stu-id="6d96f-115">Quantity</span></span>
-- <span data-ttu-id="6d96f-116">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="6d96f-116">Gross profit margin</span></span>
-- <span data-ttu-id="6d96f-117">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="6d96f-117">Margin percentage</span></span>
+- <span data-ttu-id="5f4e9-114">Kwota sprzedaży</span><span class="sxs-lookup"><span data-stu-id="5f4e9-114">Sales amount</span></span>
+- <span data-ttu-id="5f4e9-115">Ilość</span><span class="sxs-lookup"><span data-stu-id="5f4e9-115">Quantity</span></span>
+- <span data-ttu-id="5f4e9-116">Marża zysku brutto</span><span class="sxs-lookup"><span data-stu-id="5f4e9-116">Gross profit margin</span></span>
+- <span data-ttu-id="5f4e9-117">Wartość procentowa marży</span><span class="sxs-lookup"><span data-stu-id="5f4e9-117">Margin percentage</span></span>
 
-<span data-ttu-id="6d96f-118">Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="6d96f-118">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
+<span data-ttu-id="5f4e9-118">Na potrzeby tej analizy można używać gotowych raportów **Najlepsze produkty**, które można otworzyć z następujących lokalizacji:</span><span class="sxs-lookup"><span data-stu-id="5f4e9-118">For this assessment, you can use the out-of-box **Top products** report, which you can open from any of the following locations:</span></span>
 
-- <span data-ttu-id="6d96f-119">Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="6d96f-119">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top products report**</span></span>
-- <span data-ttu-id="6d96f-120">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Retail i Commerce** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="6d96f-120">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Products and categories** &gt; **Store management** &gt; **Reports** &gt; **Top products report**</span></span>
-- <span data-ttu-id="6d96f-121">Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="6d96f-121">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="5f4e9-119">Obszar roboczy **Zarządzanie sklepem** &gt; **Retail i Commerce** &gt; **Kanały** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="5f4e9-119">**Store management** workspace &gt; **Retail and Commerce** &gt; **Channels** &gt; **Store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="5f4e9-120">Obszar roboczy **Zarządzanie kategoriami i produktami** &gt; **Retail i Commerce** &gt; **Produkty i kategorie** &gt; **Zarządzanie sklepem** &gt; **Raporty** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="5f4e9-120">**Category and product management** workspace &gt; **Retail and Commerce** &gt; **Products and categories** &gt; **Store management** &gt; **Reports** &gt; **Top products report**</span></span>
+- <span data-ttu-id="5f4e9-121">Sekcja **Zapytania i raporty** &gt; **Retail i Commerce** &gt; **Zapytania i raporty** &gt; **Raporty ze sprzedaży** &gt; **Raport najlepszych produktów**</span><span class="sxs-lookup"><span data-stu-id="5f4e9-121">**Inquiries and reports** section &gt; **Retail and Commerce** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Top products report**</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
