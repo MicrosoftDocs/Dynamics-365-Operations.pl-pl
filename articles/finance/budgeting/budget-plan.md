@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05de2748b0cf7a2b09618aee5c41c8c797f2b3d3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971285"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210416"
 ---
 # <a name="budget-planning"></a>Planowanie budżetu
 
@@ -105,7 +105,7 @@ Planowanie budżetu używa specjalnych zasad zabezpieczeń do konfigurowania dos
 
 2.5. Wybierz opcję „Udziel dostępu do określonych organizacji”. Wskaż hierarchię organizacyjną utworzoną w pierwszym kroku. Wybierz węzeł Finanse i kliknij przycisk Udziel dostępu wraz z podrzędnymi. 
 
-**_Ważne!_* _ _Upewnij się, że znajdujesz się w kontekście firmy DEMF podczas wykonywania tego zadania, ponieważ zabezpieczenia na poziomie organizacji są stosowane do firmy* 
+***Ważne!** _ _Upewnij się, że znajdujesz się w kontekście firmy DEMF podczas wykonywania tego zadania, ponieważ zabezpieczenia na poziomie organizacji są stosowane do firmy* 
 
 ### <a name="task-3-create-scenarios"></a>Zadanie 3: Tworzenie scenariuszy
 3.1. Wybierz kolejno opcje Budżetowanie &gt; Ustawienia &gt; Planowanie budżetu &gt; Konfiguracja planowania budżetu. Na stronie scenariuszy zwróć uwagę na scenariusze, które wykorzystasz w dalszej części ćwiczenia: Wartości rzeczywiste w poprzednim roku i Zabudżetowane. 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 86cdd70919926243bbf2cb5cc2f26690accdac80
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ce75a191726fc430347f057ac511188acfbbf76e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993696"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213169"
 ---
 # <a name="cash-management-improvements"></a>Ulepszenia w zakresie zarządzania gotówką
 
@@ -32,7 +32,7 @@ ms.locfileid: "4993696"
 Zarządzanie gotówką jest kluczową funkcją dla sprzedawców detalicznych w sklepach fizycznych. Sklepy detaliczne chcą mieć systemy, które zapewnią im pełną identyfikowalność i możliwość rozliczania gotówki i jej przepływów między różnymi kasami i kasjerami w sklepie. Muszą oni być w stanie uzgodnić wszelkie różnice i określić odpowiedzialność.
 
 
-Microsoft Dynamics 365 Commerce ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
+Program Microsoft Dynamics 365 Commerce ma funkcje zarządzania gotówką w swojej aplikacji punktu sprzedaży. Jednak w wersjach aplikacji Retail starszych niż 10.0.3 funkcje zarządzania gotówką nie są na tyle rozbudowane, aby zapewnić pełną identyfikowalność przepływów gotówki w sklepach. Chociaż sprzedawcy detaliczni mogą uzgodnić gotówkę w sklepie, to nie są w stanie precyzyjnie określić odpowiedzialności w razie rozbieżności ze stanem faktycznym.
 
 
 W usłudze Retail w wersji 10.0.3 i nowszych sprzedawcy detaliczni zyskują identyfikowalność przepływów gotówki. W ramach tej identyfikowalności sprzedawcy detaliczni będą mogli definiować sejfy, tworzyć dwustronne transakcje kasowe oraz uzgadniać transakcje zarządzania gotówką.
