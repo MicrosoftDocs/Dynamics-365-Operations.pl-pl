@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1883281c62575ae0b48b6e584876185bb179b4f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 06f8ffdecd1f77468ed88043929f29b6957c2e6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986086"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206566"
 ---
-# <a name="breadcrumb-module"></a>Moduł nawigacyjny
+# <a name="breadcrumb-module"></a>Moduł szlaków nawigacyjnych
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduły nawigacyjne i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduły do stron nadrzędnych służą do tworzenia pomocniczej nawigacji na stronach witryny. Zazwyczaj są one wyświetlane u góry strony, pod nagłówkiem. Chociaż moduły stron nadrzędnych można dodawać do dowolnej strony, są one najczęściej używane na stronach szczegółów produktów (PDPs), do wyświetlania hierarchii kategorii produktów oraz szybkiego sposobu poruszania się po witrynie. Za pomocą modułu łączy wielokrotnych można również wyświetlić łącze „Powrót do wyników”, gdy użytkownicy otworzą PDP na stronie wyszukiwania lub listy. Dzięki temu użytkownicy mogą szybko powrócić do strony przefiltrowanej listy, aby kontynuować zakupy.
 

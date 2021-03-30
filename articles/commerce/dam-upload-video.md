@@ -1,6 +1,6 @@
 ---
 title: Przekaż pliki wideo
-description: W tym temacie opisano, jak przekazać pliki wideo do kreatora witryny w Microsoft Dynamics 365 Commerce.
+description: W tym temacie opisano, jak przesyłać pliki wideo w kreatorze witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 03/03/2020
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8cabcd3528308919697a9f2ecb2a81ad5acbe31
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d74e7116d68074bfc917784a8f51f85d5682c5d6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000932"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213849"
 ---
 # <a name="upload-videos"></a>Przekaż pliki wideo
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano, jak przekazać pliki wideo do kreatora witryny w Microsoft Dynamics 365 Commerce.
+W tym temacie opisano, jak przesyłać pliki wideo w kreatorze witryny w Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Omówienie
 

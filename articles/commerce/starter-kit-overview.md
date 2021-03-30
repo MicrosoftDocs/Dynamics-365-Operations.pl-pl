@@ -1,5 +1,5 @@
 ---
-title: Omówienie biblioteki modułów
+title: Przegląd biblioteki modułów
 description: W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4b3440c046ff055c8afa012c80c56aba741fef27
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fcb0c2317315308de51d8247d23a930f10c3de6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985568"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234300"
 ---
-# <a name="module-library-overview"></a>Omówienie biblioteki modułów
+# <a name="module-library-overview"></a>Przegląd biblioteki modułów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono bibliotekę modułów Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Biblioteka modułów Dynamics 365 Commerce to zbiór modułów, za pomocą których można utworzyć witrynę sieci Web e-Commerce. Moduły mają aspekty interfejsu użytkownika (UI) i aspekty zachowania funkcjonalnego.
 

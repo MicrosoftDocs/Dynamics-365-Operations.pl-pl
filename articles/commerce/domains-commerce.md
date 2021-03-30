@@ -1,5 +1,5 @@
 ---
-title: Domeny w Dynamics 365 Commerce
+title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrShoo
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: d855f2164e4ee0f0cdb220787eb96217523137e3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bafa49cc570ddf7e0ff9c3dcb1b6902fb341b790
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010254"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225796"
 ---
-# <a name="domains-in-dynamics-365-commerce"></a>Domeny w Dynamics 365 Commerce
+# <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 

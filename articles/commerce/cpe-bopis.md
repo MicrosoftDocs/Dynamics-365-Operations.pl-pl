@@ -1,6 +1,6 @@
 ---
 title: Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
-description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
+description: W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku ewaluacji Microsoft Dynamics 365 Commerce po jego zainicjowaniu.
 author: rubendel
 manager: annbe
 ms.date: 07/16/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ec1c556a70ed92a40d3cb2bf45fb6156b7dbf7fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 71f2fb3882b51cdaed9b231cd605949195deca17
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993482"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213873"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny usługi Dynamics 365 Commerce
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku oceny Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
+W tym temacie opisano sposób konfigurowania modułu kupowanie online, odbiór w sklepie (BOPIS) w środowisku Microsoft Dynamics 365 Commerce po zainicjowaniu środowiska.
 
 ## <a name="prerequisite"></a>Wymaganie wstępne
 
