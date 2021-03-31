@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cac7cf21c1ee30c20b6d7dfc1cad995d3f0323bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6bb674d9605959692ec5ca2dc7ebd54a6ea93cc6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4984737"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227895"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 Raport uzgodnienia VAT
 

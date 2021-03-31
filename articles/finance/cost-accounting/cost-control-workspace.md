@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3163975a8cc99c4b07fdbe03fa57ea6cfef53cd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995222"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226444"
 ---
 # <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 
@@ -56,7 +56,7 @@ Na skróconej karcie **Filtrowanie danych** można zdefiniować dane podstawowe 
 | Księga rachunku kosztów                                            | **Księga rachunku kosztów**, na której bazuje raport. Wartość jest ustalana na podstawie pola **Jednostka kontroli kosztów**. |
 | Jednostka kontroli kosztów                                                 | Wybrana wartość decyduje o księgi rachunku kosztów i obiektach kosztów, na których będzie oparty ten raport. |
 | Hierarchia wymiarów statystycznych, Hierarchia wymiarów składników kosztów | Rekord konfiguracji obszaru roboczego **Kontrola kosztów** może przekazywać wartości niepieniężne lub pieniężne, ale nie w tym samym układzie. Wybierz wartość w polu **Hierarchia wymiarów składników kosztów**, aby przekazywać wartości pieniężne. Wybierz wartość w polu **Hierarchia wymiarów statystycznych**, aby przekazywać wartości niepieniężne. Wybrany rekord hierarchii wymiarów określa strukturę poziomów raportowania i agregacji.<blockquote>[!NOTE]<br>Aby wyświetlić wartości niepieniężne i pieniężne obok siebie, można wyeksportować dane do programu Microsoft Excel dla pakietu zawartości usługi Microsoft Power BI.</blockquote> |
-| Hierarchia wymiarów obiektów kosztów                                   | Wybierz hierarchię wymiaru obiektu kosztów pasującą do definiowanego celu sprawozdawczości. |
+| Hierarchia wymiarów obiektu kosztów                                   | Wybierz hierarchię wymiaru obiektu kosztów pasującą do definiowanego celu sprawozdawczości. |
 | Pierwotna wersja budżetu                                           | Wybierz identyfikator wersji budżetu pełniącego rolę pierwotnego budżetu w kontekście tego raportu. |
 | Skorygowana wersja budżetu                                            | Wybierz identyfikator wersji budżetu pełniącego rolę skorygowanego budżetu w kontekście tego raportu. |
 
