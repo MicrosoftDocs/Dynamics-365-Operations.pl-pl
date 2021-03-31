@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7d0440514369f8271004993d009ef7c3a36edb53
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2c84b868247503f8fcb8f718f4ce9bd6ccb56c99
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5008073"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217132"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
 

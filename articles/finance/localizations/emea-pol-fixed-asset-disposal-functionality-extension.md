@@ -16,12 +16,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 51524aaecd1efd8fbf7cab19ef77d265456ed7dd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6268d55768a73bb6341bf952a7dad54d7faca20c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002841"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219879"
 ---
 # <a name="fixed-assets-disposal-for-poland"></a>Likwidacja środków trwałych dla Polski
 

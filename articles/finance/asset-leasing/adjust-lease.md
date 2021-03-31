@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130762"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219994"
 ---
 # <a name="adjust-leases"></a>Korygowanie wynajmów
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W temacie wyjaśniono sposób korygowania wynajmu. Korekta może być wymagana w przypadku zmodyfikowania warunków wynajmu, wydłużenia wynajmu lub zmiany innych okoliczności. Wynajem składników majątku jest zgodny z przepisami Accounting Standards Codification Topic 842 (ASC 842) i International Financial Reporting Standard 16 (IFRS 16) dotyczącymi korekt wynajmów. ASC 842-20-15-1 definiuje modyfikację wynajmu jako dowolną zmianę postanowień umowy, która powoduje zmianę zakresu wynajmu lub uwag do niego. Akapit 39 IFRS 16 wskazuje, że najemca musi zmienić wartość zobowiązania z tytułu wynajmu, tak aby odzwierciedlała ona zmiany w opłatach z tytułu wynajmu.
 
