@@ -16,29 +16,32 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d367c85211a33ba2d08b1380500124c76f82ada
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 61ad92804b583f0474b582b17dc381e9d77e38bf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987011"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218640"
 ---
-# <a name="classify-a-product-using-category-hierarchies"></a><span data-ttu-id="f6ca0-103">Klasyfikowanie produktu przy użyciu hierarchii kategorii</span><span class="sxs-lookup"><span data-stu-id="f6ca0-103">Classify a product using category hierarchies</span></span>
+# <a name="classify-a-product-using-category-hierarchies"></a><span data-ttu-id="367df-103">Klasyfikowanie produktu przy użyciu hierarchii kategorii</span><span class="sxs-lookup"><span data-stu-id="367df-103">Classify a product using category hierarchies</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f6ca0-104">W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii kategorii.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-104">This topic describes how to classify a product using category hierarchies.</span></span> <span data-ttu-id="f6ca0-105">Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-105">Use category hierarchies to classify products for export, procurement, sales, or other purposes.</span></span> <span data-ttu-id="f6ca0-106">To zadanie jest zwykle wykonywane przez menedżera produktu.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-106">This task is typically performed by a product manager.</span></span> <span data-ttu-id="f6ca0-107">W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-107">The example uses product number M0009 in demo data company USMF.</span></span>
+<span data-ttu-id="367df-104">W tym temacie opisano sposób klasyfikowania produktu przy użyciu hierarchii kategorii.</span><span class="sxs-lookup"><span data-stu-id="367df-104">This topic describes how to classify a product using category hierarchies.</span></span> <span data-ttu-id="367df-105">Hierarchie kategorii służą do klasyfikowania produktów na potrzeby eksportu, zaopatrzenia, sprzedaży lub innych celów.</span><span class="sxs-lookup"><span data-stu-id="367df-105">Use category hierarchies to classify products for export, procurement, sales, or other purposes.</span></span> <span data-ttu-id="367df-106">To zadanie jest zwykle wykonywane przez menedżera produktu.</span><span class="sxs-lookup"><span data-stu-id="367df-106">This task is typically performed by a product manager.</span></span> <span data-ttu-id="367df-107">W przykładzie użyto numeru produktu M0009 z danych firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="367df-107">The example uses product number M0009 in demo data company USMF.</span></span>
 
-1. <span data-ttu-id="f6ca0-108">Wybierz **Obsługa zwolnionego produktu**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-108">Select **Released product maintenance**.</span></span>
-2. <span data-ttu-id="f6ca0-109">Wybierz **Wszystkie zwolnione produkty**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-109">Select **All released products**.</span></span>
-3. <span data-ttu-id="f6ca0-110">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-110">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="f6ca0-111">W okienku akcji wybierz pozycję **Produkt**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-111">On the Action Pane, select **Product**.</span></span>
-5. <span data-ttu-id="f6ca0-112">Wybierz **Kategorie produktów**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-112">Select **Product categories**.</span></span>
-6. <span data-ttu-id="f6ca0-113">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-113">Select **New**.</span></span>
-7. <span data-ttu-id="f6ca0-114">W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-114">In the **Category hierarchy** field, enter or select a value.</span></span>
-8. <span data-ttu-id="f6ca0-115">W polu **Kategoria** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-115">In the **Category** field, enter or select a value.</span></span>
-9. <span data-ttu-id="f6ca0-116">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-116">Select **New**.</span></span>
-10. <span data-ttu-id="f6ca0-117">W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-117">In the **Category hierarchy** field, enter or select a value.</span></span>
-11. <span data-ttu-id="f6ca0-118">W polu **Kategoria** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-118">In the **Category** field, enter or select a value.</span></span>
-12. <span data-ttu-id="f6ca0-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="f6ca0-119">Close the page.</span></span>
+1. <span data-ttu-id="367df-108">Wybierz **Obsługa zwolnionego produktu**.</span><span class="sxs-lookup"><span data-stu-id="367df-108">Select **Released product maintenance**.</span></span>
+2. <span data-ttu-id="367df-109">Wybierz **Wszystkie zwolnione produkty**.</span><span class="sxs-lookup"><span data-stu-id="367df-109">Select **All released products**.</span></span>
+3. <span data-ttu-id="367df-110">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="367df-110">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="367df-111">W okienku akcji wybierz pozycję **Produkt**.</span><span class="sxs-lookup"><span data-stu-id="367df-111">On the Action Pane, select **Product**.</span></span>
+5. <span data-ttu-id="367df-112">Wybierz **Kategorie produktów**.</span><span class="sxs-lookup"><span data-stu-id="367df-112">Select **Product categories**.</span></span>
+6. <span data-ttu-id="367df-113">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="367df-113">Select **New**.</span></span>
+7. <span data-ttu-id="367df-114">W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="367df-114">In the **Category hierarchy** field, enter or select a value.</span></span>
+8. <span data-ttu-id="367df-115">W polu **Kategoria** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="367df-115">In the **Category** field, enter or select a value.</span></span>
+9. <span data-ttu-id="367df-116">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="367df-116">Select **New**.</span></span>
+10. <span data-ttu-id="367df-117">W polu **Hierarchia kategorii** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="367df-117">In the **Category hierarchy** field, enter or select a value.</span></span>
+11. <span data-ttu-id="367df-118">W polu **Kategoria** wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="367df-118">In the **Category** field, enter or select a value.</span></span>
+12. <span data-ttu-id="367df-119">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="367df-119">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
