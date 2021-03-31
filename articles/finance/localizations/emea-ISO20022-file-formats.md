@@ -15,12 +15,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0645f473214dd4f8edf56e93c44ed4d734c64b1b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48738f6af67bf40cac084d65aa4ff01935259c85
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988435"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209931"
 ---
 # <a name="import-iso20022-files"></a>Importowanie plików ISO20022
 

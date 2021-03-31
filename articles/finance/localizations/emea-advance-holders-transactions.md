@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: edbaebbfed66424ed37104cdd28a87f378b46b4b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 89522a0cca16e3d2cab660d39ab51ca63364aa4c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978304"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209908"
 ---
 # <a name="advance-holder-transactions"></a>Transakcje posiadacza zaliczki
 

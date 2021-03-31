@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-2-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: fb0b6f911636ef2a12b1fde43734e05af475ad2e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3050c20a0fec508330a609eea9f9dfebb53a8950
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985932"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5215672"
 ---
 # <a name="fiscal-printer-integration-sample-for-poland"></a>Przykładowa integracja drukarki fiskalnej dla Polski
 

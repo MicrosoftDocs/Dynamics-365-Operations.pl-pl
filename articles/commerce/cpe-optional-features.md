@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: def99a34404357e28501de5ccf11c6130d53f34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993457"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213825"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie opcjonalnych funkcji środowiska oceny usługi Dynamics 365 Commerce
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie opcjonalnych funkcji środowiska oceny rozwiązania Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
@@ -133,12 +133,12 @@ Podczas renderowania poczty e-mail te tokeny zostaną zastąpione rzeczywistymi 
 
 Poniższe tokeny mają zastosowanie do całego zamówienia sprzedaży.
 
-| Nazwa tokena | Token  |
+| Nazwa tokena | Token |
 |-------------------|-------|
 | Numer zamówienia      | %salesid% |
 | Nazwa odbiorcy   | %customername% |
 | Adres dostawy  | %deliveryaddress% |
-| Adres do faktury   | %customeraddress% |
+| Adres na fakturze   | %customeraddress% |
 | Data zamówienia        | %shipdate% |
 | Metoda dostawy     | %modeofdelivery% |
 | Dyskonto          | %discount% |
@@ -159,7 +159,7 @@ Dla każdego produktu w zamówieniu następujące tokeny są wypełniane wartoś
 | Nazwa produktu           | %lineproductname% |
 | opis            | %lineproductdescription% |
 | Ilość               | %linequantity% |
-| Cena wiersza jednostki        | %lineprice% (sprawdź) |
+| Cena wiersza jednostki        | %lineprice% (weryfikuj) |
 | Wszystkie pozycje w wierszu        | %linenetamount% |
 | rabat wiersza          | %linediscount% |
 | Data wysyłki              | %lineshipdate% |

@@ -17,12 +17,12 @@ ms.search.region: Poland
 ms.author: ilyako
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 90c87e43459d5960ac683ce95d6738d4abc88f4d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3b5b3a0233a0c53636b840bb31cc75c53aa081be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990137"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207219"
 ---
 # <a name="returnable-packaging-for-poland"></a>Opakowania zwrotne dla Polski
 [!include [banner](../includes/banner.md)]

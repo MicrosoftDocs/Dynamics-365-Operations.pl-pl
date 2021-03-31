@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 74dbad4cb348f19b51ba8b84a1cd41fc5049708e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 785ff004adcd94e7c4c6c5918d632ce662aa7989
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006342"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205129"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Za pomocą modułu wyboru sklepu można pobrać produkt z wybranego sklepu po zakupieniu online. W module Commerce 10.0.13 moduł wyboru zawiera także dodatkowe funkcje, które mogą zawierać stronę **Znajdź sklep**, która przedstawia sklepy w pobliżu.
 
