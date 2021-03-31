@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d27eec5ad2ec12d1f2e617fc3e182e2bbefa39a9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5199d745eea467408eed32c5cd5ba8f964fec497
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017247"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225726"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 
