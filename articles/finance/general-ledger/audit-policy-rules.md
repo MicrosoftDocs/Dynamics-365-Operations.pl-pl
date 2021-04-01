@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b3a0ffe81f4b56bdd388dc1ce2c00a99e0278cdf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021248"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262845"
 ---
-# <a name="audit-policy-rules"></a><span data-ttu-id="195a6-106">Reguły inspekcji</span><span class="sxs-lookup"><span data-stu-id="195a6-106">Audit policy rules</span></span>
+# <a name="audit-policy-rules"></a><span data-ttu-id="f4c1f-106">Reguły inspekcji</span><span class="sxs-lookup"><span data-stu-id="f4c1f-106">Audit policy rules</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="195a6-107">Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="195a6-108">Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="195a6-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="195a6-109">Każda reguła zasad jest wystąpieniem typu reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="195a6-110">Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła.</span><span class="sxs-lookup"><span data-stu-id="195a6-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
+<span data-ttu-id="f4c1f-107">Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="f4c1f-108">Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="f4c1f-109">Każda reguła zasad jest wystąpieniem typu reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="f4c1f-110">Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
 
-<a name="queries-and-query-types"></a><span data-ttu-id="195a6-111">Kwerendy i typy kwerend</span><span class="sxs-lookup"><span data-stu-id="195a6-111">Queries and query types</span></span>
+<a name="queries-and-query-types"></a><span data-ttu-id="f4c1f-111">Kwerendy i typy kwerend</span><span class="sxs-lookup"><span data-stu-id="f4c1f-111">Queries and query types</span></span>
 -----------------------
 
-<span data-ttu-id="195a6-112">Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="195a6-113">Typ reguły zasad określa drzewo obiektów aplikacji (Application Object Tree — AOT), które ma być używane jako punkt wyjścia dla tworzenia reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="195a6-114">Określa również typ kwerendy używany dla reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="195a6-115">Kwerenda określa dokument źródłowy, który ocenia reguła zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="195a6-116">Określa również pola w dokumencie źródłowym, które identyfikują zarówno podmiot prawny, jak i datę stosowaną po wybraniu dokumentów w celu inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="195a6-117">Typ kwerendy kontroluje domyślne pola na stronie kwerendy i na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="195a6-118">Poniższa tabela zawiera typy kwerend, które są dostępne dla reguł zasad inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-118">The following table shows the query types that are available for audit policy rules.</span></span>
+<span data-ttu-id="f4c1f-112">Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="f4c1f-113">Typ reguły zasad określa drzewo obiektów aplikacji (Application Object Tree — AOT), które ma być używane jako punkt wyjścia dla tworzenia reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="f4c1f-114">Określa również typ kwerendy używany dla reguły zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="f4c1f-115">Kwerenda określa dokument źródłowy, który ocenia reguła zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="f4c1f-116">Określa również pola w dokumencie źródłowym, które identyfikują zarówno podmiot prawny, jak i datę stosowaną po wybraniu dokumentów w celu inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="f4c1f-117">Typ kwerendy kontroluje domyślne pola na stronie kwerendy i na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="f4c1f-118">Poniższa tabela zawiera typy kwerend, które są dostępne dla reguł zasad inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-118">The following table shows the query types that are available for audit policy rules.</span></span>
 
 <table>
 <colgroup>
@@ -43,61 +43,64 @@ ms.locfileid: "5021248"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="195a6-119">Typ kwerendy</span><span class="sxs-lookup"><span data-stu-id="195a6-119">Query type</span></span></th>
-<th><span data-ttu-id="195a6-120">Cel</span><span class="sxs-lookup"><span data-stu-id="195a6-120">Purpose</span></span></th>
-<th><span data-ttu-id="195a6-121">Więcej informacji</span><span class="sxs-lookup"><span data-stu-id="195a6-121">More information</span></span></th>
+<th><span data-ttu-id="f4c1f-119">Typ kwerendy</span><span class="sxs-lookup"><span data-stu-id="f4c1f-119">Query type</span></span></th>
+<th><span data-ttu-id="f4c1f-120">Cel</span><span class="sxs-lookup"><span data-stu-id="f4c1f-120">Purpose</span></span></th>
+<th><span data-ttu-id="f4c1f-121">Więcej informacji</span><span class="sxs-lookup"><span data-stu-id="f4c1f-121">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="195a6-122">Warunkowe</span><span class="sxs-lookup"><span data-stu-id="195a6-122">Conditional</span></span></td>
-<td><span data-ttu-id="195a6-123">Oceń atrybuty dokumentu źródłowego pod kątem określonych wartości.</span><span class="sxs-lookup"><span data-stu-id="195a6-123">Evaluate source document attributes against specified values.</span></span></td>
+<td><span data-ttu-id="f4c1f-122">Warunkowe</span><span class="sxs-lookup"><span data-stu-id="f4c1f-122">Conditional</span></span></td>
+<td><span data-ttu-id="f4c1f-123">Oceń atrybuty dokumentu źródłowego pod kątem określonych wartości.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-123">Evaluate source document attributes against specified values.</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="195a6-124">Agregacja</span><span class="sxs-lookup"><span data-stu-id="195a6-124">Aggregate</span></span></td>
-<td><span data-ttu-id="195a6-125">Oceń wiele dokumentów źródłowych lub wierszy dokumentu źródłowego pod kątem reguły zasad poprzez zsumowanie wartości liczbowych.</span><span class="sxs-lookup"><span data-stu-id="195a6-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
+<td><span data-ttu-id="f4c1f-124">Agregacja</span><span class="sxs-lookup"><span data-stu-id="f4c1f-124">Aggregate</span></span></td>
+<td><span data-ttu-id="f4c1f-125">Oceń wiele dokumentów źródłowych lub wierszy dokumentu źródłowego pod kątem reguły zasad poprzez zsumowanie wartości liczbowych.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="195a6-126">Próbkowanie</span><span class="sxs-lookup"><span data-stu-id="195a6-126">Sampling</span></span></td>
-<td><span data-ttu-id="195a6-127">Losowo wybierz określony procent dokumentów źródłowych w celu oceny pod kątem naruszenia zasad.</span><span class="sxs-lookup"><span data-stu-id="195a6-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
-<td><span data-ttu-id="195a6-128">Po wybraniu tej opcji należy użyć strony Reguła inspekcji, aby określić procent dokumentów losowo wybranych do inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
+<td><span data-ttu-id="f4c1f-126">Próbkowanie</span><span class="sxs-lookup"><span data-stu-id="f4c1f-126">Sampling</span></span></td>
+<td><span data-ttu-id="f4c1f-127">Losowo wybierz określony procent dokumentów źródłowych w celu oceny pod kątem naruszenia zasad.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
+<td><span data-ttu-id="f4c1f-128">Po wybraniu tej opcji należy użyć strony Reguła inspekcji, aby określić procent dokumentów losowo wybranych do inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="195a6-129">Duplikat</span><span class="sxs-lookup"><span data-stu-id="195a6-129">Duplicate</span></span></td>
-<td><span data-ttu-id="195a6-130">Oceń dokumenty źródłowe, aby określić, czy zawierają zduplikowane wpisy w określonych polach.</span><span class="sxs-lookup"><span data-stu-id="195a6-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
-<td><span data-ttu-id="195a6-131">Po wybraniu tej opcji użyj strony Reguła inspekcji, aby określić liczbę dni dodawanych do początku zakresu dat wyboru dokumentów, jeśli dokumenty są oceniane pod kątem zduplikowanych wpisów.</span><span class="sxs-lookup"><span data-stu-id="195a6-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
+<td><span data-ttu-id="f4c1f-129">Duplikat</span><span class="sxs-lookup"><span data-stu-id="f4c1f-129">Duplicate</span></span></td>
+<td><span data-ttu-id="f4c1f-130">Oceń dokumenty źródłowe, aby określić, czy zawierają zduplikowane wpisy w określonych polach.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
+<td><span data-ttu-id="f4c1f-131">Po wybraniu tej opcji użyj strony Reguła inspekcji, aby określić liczbę dni dodawanych do początku zakresu dat wyboru dokumentów, jeśli dokumenty są oceniane pod kątem zduplikowanych wpisów.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="195a6-132">Wyszukiwanie wg listy</span><span class="sxs-lookup"><span data-stu-id="195a6-132">List search</span></span></td>
-<td><span data-ttu-id="195a6-133">Oceń dokumenty źródłowe pod kątem konkretnych obiektów.</span><span class="sxs-lookup"><span data-stu-id="195a6-133">Evaluate source documents for specific entities.</span></span></td>
-<td><span data-ttu-id="195a6-134">Dokument główny kwerendy określa dokument podlegający inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="195a6-135">Kwerenda musi być kwerendą listy, która zawiera odwołanie do tabeli dirpartytable.</span><span class="sxs-lookup"><span data-stu-id="195a6-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="195a6-136">Ta opcja może być używana wyłącznie z następującymi kwerendami AOT:</span><span class="sxs-lookup"><span data-stu-id="195a6-136">This option can be used only with the following AOT queries:</span></span>
+<td><span data-ttu-id="f4c1f-132">Wyszukiwanie wg listy</span><span class="sxs-lookup"><span data-stu-id="f4c1f-132">List search</span></span></td>
+<td><span data-ttu-id="f4c1f-133">Oceń dokumenty źródłowe pod kątem konkretnych obiektów.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-133">Evaluate source documents for specific entities.</span></span></td>
+<td><span data-ttu-id="f4c1f-134">Dokument główny kwerendy określa dokument podlegający inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="f4c1f-135">Kwerenda musi być kwerendą listy, która zawiera odwołanie do tabeli dirpartytable.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="f4c1f-136">Ta opcja może być używana wyłącznie z następującymi kwerendami AOT:</span><span class="sxs-lookup"><span data-stu-id="f4c1f-136">This option can be used only with the following AOT queries:</span></span>
 <ul>
-<li><span data-ttu-id="195a6-137"><span class="ui">AuditPolicyExpenseList</span> (Pracownicy etatowi monitorowani w raporcie z wydatków)</span><span class="sxs-lookup"><span data-stu-id="195a6-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
-<li><span data-ttu-id="195a6-138"><span class="ui">AuditPolicyPurchList</span> (Dostawcy monitorowani w zamówieniu zakupu)</span><span class="sxs-lookup"><span data-stu-id="195a6-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
-<li><span data-ttu-id="195a6-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Dostawcy monitorowani w fakturze od dostawcy)</span><span class="sxs-lookup"><span data-stu-id="195a6-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
+<li><span data-ttu-id="f4c1f-137"><span class="ui">AuditPolicyExpenseList</span> (Pracownicy etatowi monitorowani w raporcie z wydatków)</span><span class="sxs-lookup"><span data-stu-id="f4c1f-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
+<li><span data-ttu-id="f4c1f-138"><span class="ui">AuditPolicyPurchList</span> (Dostawcy monitorowani w zamówieniu zakupu)</span><span class="sxs-lookup"><span data-stu-id="f4c1f-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
+<li><span data-ttu-id="f4c1f-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Dostawcy monitorowani w fakturze od dostawcy)</span><span class="sxs-lookup"><span data-stu-id="f4c1f-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
 </ul>
-<span data-ttu-id="195a6-140">Po wybraniu tej opcji określ monitorowane jednostki na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
+<span data-ttu-id="f4c1f-140">Po wybraniu tej opcji określ monitorowane jednostki na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="195a6-141">Wyszukiwanie wg słów kluczowych</span><span class="sxs-lookup"><span data-stu-id="195a6-141">Keyword search</span></span></td>
-<td><span data-ttu-id="195a6-142">Oceń dokumenty źródłowe, aby określić, czy zawierają określone wyrazy.</span><span class="sxs-lookup"><span data-stu-id="195a6-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
-<td><span data-ttu-id="195a6-143">Po wybraniu tej opcji określ słowa do wyszukania jednostki na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="195a6-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="195a6-144">Strona Reguła inspekcji zawiera również opcje, które pozwalają wybrać tabele i pola do oceny pod kątem wprowadzonych wyrazów.</span><span class="sxs-lookup"><span data-stu-id="195a6-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
+<td><span data-ttu-id="f4c1f-141">Wyszukiwanie wg słów kluczowych</span><span class="sxs-lookup"><span data-stu-id="f4c1f-141">Keyword search</span></span></td>
+<td><span data-ttu-id="f4c1f-142">Oceń dokumenty źródłowe, aby określić, czy zawierają określone wyrazy.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
+<td><span data-ttu-id="f4c1f-143">Po wybraniu tej opcji określ słowa do wyszukania jednostki na stronie Reguła inspekcji.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="f4c1f-144">Strona Reguła inspekcji zawiera również opcje, które pozwalają wybrać tabele i pola do oceny pod kątem wprowadzonych wyrazów.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="common-parameters"></a><span data-ttu-id="195a6-145">Wspólne parametry</span><span class="sxs-lookup"><span data-stu-id="195a6-145">Common parameters</span></span>
-<span data-ttu-id="195a6-146">Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współdzielą te same parametry przetwarzania wsadowego i ten sam zakres dat wyboru dokumentów.</span><span class="sxs-lookup"><span data-stu-id="195a6-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="195a6-147">Te parametry są określane w zasadzie na stronie Opcje dodatkowe .</span><span class="sxs-lookup"><span data-stu-id="195a6-147">These parameters are specified for the policy in the Additional options page.</span></span>
+## <a name="common-parameters"></a><span data-ttu-id="f4c1f-145">Wspólne parametry</span><span class="sxs-lookup"><span data-stu-id="f4c1f-145">Common parameters</span></span>
+<span data-ttu-id="f4c1f-146">Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współdzielą te same parametry przetwarzania wsadowego i ten sam zakres dat wyboru dokumentów.</span><span class="sxs-lookup"><span data-stu-id="f4c1f-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="f4c1f-147">Te parametry są określane w zasadzie na stronie Opcje dodatkowe .</span><span class="sxs-lookup"><span data-stu-id="f4c1f-147">These parameters are specified for the policy in the Additional options page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="195a6-148">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="195a6-148">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="f4c1f-148">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="f4c1f-148">Additional resources</span></span>
 --------
 
-<span data-ttu-id="195a6-149">[Naruszenia zasad audytu i sprawy](audit-policy-violations-cases.md)
-[Definiowanie zasad inspekcji dla dokumentów źródłowych](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="195a6-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
+<span data-ttu-id="f4c1f-149">[Naruszenia zasad audytu i sprawy](audit-policy-violations-cases.md)
+[Definiowanie zasad inspekcji dla dokumentów źródłowych](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="f4c1f-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
 [Define audit policies for source documents](tasks/define-audit-policies-source-documents.md)</span></span>
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

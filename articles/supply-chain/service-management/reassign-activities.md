@@ -17,43 +17,46 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 644d40da7dc39e751e625b5c0e2f9493287a3936
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 36631a770bb7970e879814c98a72104bae8db8be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010629"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260980"
 ---
-# <a name="reassign-activities"></a><span data-ttu-id="80ef6-103">Ponowne przypisywanie działań</span><span class="sxs-lookup"><span data-stu-id="80ef6-103">Reassign activities</span></span> 
+# <a name="reassign-activities"></a><span data-ttu-id="9c7df-103">Ponowne przypisywanie działań</span><span class="sxs-lookup"><span data-stu-id="9c7df-103">Reassign activities</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="80ef6-104">W tym temacie opisano sposób ponownego przypisywania wykonania usługi od jednego pracownika do innego pracownika.</span><span class="sxs-lookup"><span data-stu-id="80ef6-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="80ef6-105">Możesz ponownie przypisać wykonanie usługi z jednego pracownika do innego, nawet jeśli ci pracownicy należą do różnych zespołów wysyłki.</span><span class="sxs-lookup"><span data-stu-id="80ef6-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
+<span data-ttu-id="9c7df-104">W tym temacie opisano sposób ponownego przypisywania wykonania usługi od jednego pracownika do innego pracownika.</span><span class="sxs-lookup"><span data-stu-id="9c7df-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="9c7df-105">Możesz ponownie przypisać wykonanie usługi z jednego pracownika do innego, nawet jeśli ci pracownicy należą do różnych zespołów wysyłki.</span><span class="sxs-lookup"><span data-stu-id="9c7df-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
 
-<span data-ttu-id="80ef6-106">Aby ponownie przypisać działanie do innego pracownika, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="80ef6-106">Use the following steps to reassign an activity to another worker:</span></span>
+<span data-ttu-id="9c7df-106">Aby ponownie przypisać działanie do innego pracownika, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="9c7df-106">Use the following steps to reassign an activity to another worker:</span></span>
 
-1.  <span data-ttu-id="80ef6-107">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Okresowe** \> **Pulpit wysyłki**.</span><span class="sxs-lookup"><span data-stu-id="80ef6-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="9c7df-107">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Okresowe** \> **Pulpit wysyłki**.</span><span class="sxs-lookup"><span data-stu-id="9c7df-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="80ef6-108">Aby zdefiniować konkretny okres, z którego chcesz obejrzeć działania, wpisz daty w polach **Od dnia** i **Do dnia**.</span><span class="sxs-lookup"><span data-stu-id="80ef6-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
+2.  <span data-ttu-id="9c7df-108">Aby zdefiniować konkretny okres, z którego chcesz obejrzeć działania, wpisz daty w polach **Od dnia** i **Do dnia**.</span><span class="sxs-lookup"><span data-stu-id="9c7df-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
 
-3.  <span data-ttu-id="80ef6-109">Wybierz, czy wyświetlić zamknięte działania i informacji dotyczących pokrewnych zespołów wysyłki, a następnie kliknij **OK**.</span><span class="sxs-lookup"><span data-stu-id="80ef6-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
+3.  <span data-ttu-id="9c7df-109">Wybierz, czy wyświetlić zamknięte działania i informacji dotyczących pokrewnych zespołów wysyłki, a następnie kliknij **OK**.</span><span class="sxs-lookup"><span data-stu-id="9c7df-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
 
-4.  <span data-ttu-id="80ef6-110">W formularzu **Pulpit wysyłki** kliknij opcję **Zaawansowane**, aby wyświetlić tylko wykres Gantta u góry strony.</span><span class="sxs-lookup"><span data-stu-id="80ef6-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="80ef6-111">Kliknij opcję **Proste**, aby wyświetlić wykres Gantta i karty w formularzu.</span><span class="sxs-lookup"><span data-stu-id="80ef6-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
+4.  <span data-ttu-id="9c7df-110">W formularzu **Pulpit wysyłki** kliknij opcję **Zaawansowane**, aby wyświetlić tylko wykres Gantta u góry strony.</span><span class="sxs-lookup"><span data-stu-id="9c7df-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="9c7df-111">Kliknij opcję **Proste**, aby wyświetlić wykres Gantta i karty w formularzu.</span><span class="sxs-lookup"><span data-stu-id="9c7df-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
 
-5.  <span data-ttu-id="80ef6-112">Rozwiń poszczególne listy zespołów wysyłek.</span><span class="sxs-lookup"><span data-stu-id="80ef6-112">Expand each dispatch team list.</span></span>
+5.  <span data-ttu-id="9c7df-112">Rozwiń poszczególne listy zespołów wysyłek.</span><span class="sxs-lookup"><span data-stu-id="9c7df-112">Expand each dispatch team list.</span></span>
 
-6.  <span data-ttu-id="80ef6-113">Aby ponownie przypisać działanie, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="80ef6-113">Use either of the following steps to reassign an activity:</span></span>
+6.  <span data-ttu-id="9c7df-113">Aby ponownie przypisać działanie, należy wykonać następujące kroki:</span><span class="sxs-lookup"><span data-stu-id="9c7df-113">Use either of the following steps to reassign an activity:</span></span>
     
-      - <span data-ttu-id="80ef6-114">Wybierz kolorową grafikę reprezentującą wykonanie usługi do ponownego przypisania.</span><span class="sxs-lookup"><span data-stu-id="80ef6-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="80ef6-115">Naciśnij klawisz SHIFT, a następnie przenieś tę grafikę do wiersza dla innego pracownika.</span><span class="sxs-lookup"><span data-stu-id="80ef6-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
+      - <span data-ttu-id="9c7df-114">Wybierz kolorową grafikę reprezentującą wykonanie usługi do ponownego przypisania.</span><span class="sxs-lookup"><span data-stu-id="9c7df-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="9c7df-115">Naciśnij klawisz SHIFT, a następnie przenieś tę grafikę do wiersza dla innego pracownika.</span><span class="sxs-lookup"><span data-stu-id="9c7df-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
     
-      - <span data-ttu-id="80ef6-116">Na karcie **Wszystko**, **Zespół**, **Niewysłane** lub **Powiązane** w polu **Pracownik** wprowadź imię i nazwisko pracownika, który zastępuje bieżącego pracownika dla działania.</span><span class="sxs-lookup"><span data-stu-id="80ef6-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
+      - <span data-ttu-id="9c7df-116">Na karcie **Wszystko**, **Zespół**, **Niewysłane** lub **Powiązane** w polu **Pracownik** wprowadź imię i nazwisko pracownika, który zastępuje bieżącego pracownika dla działania.</span><span class="sxs-lookup"><span data-stu-id="9c7df-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="80ef6-117">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="80ef6-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9c7df-117">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="9c7df-117">See also</span></span>
 
-[<span data-ttu-id="80ef6-118">Wykonania usługi</span><span class="sxs-lookup"><span data-stu-id="80ef6-118">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="9c7df-118">Wykonania usługi</span><span class="sxs-lookup"><span data-stu-id="9c7df-118">Service activities</span></span>](service-activities.md)
 
-[<span data-ttu-id="80ef6-119">Pulpit wysyłki</span><span class="sxs-lookup"><span data-stu-id="80ef6-119">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="9c7df-119">Pulpit wysyłki</span><span class="sxs-lookup"><span data-stu-id="9c7df-119">Dispatch board</span></span>](dispatch-board.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
