@@ -17,31 +17,34 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a67a4345271cbeffc100fc1d9077cc866846a4d4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 87ada5a97d2b716145082b3845fa87a12df57ef7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005849"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235604"
 ---
-# <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a><span data-ttu-id="36c51-103">Rozszerzone z RCS opcje filtrowania służące do wyszukiwania konfiguracji w RCS/repozytorium globalnym</span><span class="sxs-lookup"><span data-stu-id="36c51-103">RCS enhanced filtering options for finding configurations in the RCS/Global repository</span></span>
+# <a name="rcs-enhanced-filtering-options-for-finding-configurations-in-the-rcsglobal-repository"></a><span data-ttu-id="1067d-103">Rozszerzone z RCS opcje filtrowania służące do wyszukiwania konfiguracji w RCS/repozytorium globalnym</span><span class="sxs-lookup"><span data-stu-id="1067d-103">RCS enhanced filtering options for finding configurations in the RCS/Global repository</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="36c51-104">W tym temacie opisano ulepszone możliwości filtrowania w repozytorium globalnym Regulatory Configuration Services (RCS), które zostało udoskonalone w celu uwzględnienia możliwości filtrowania następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="36c51-104">This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the ability to filter with the following criteria:</span></span> 
-- <span data-ttu-id="36c51-105">**Kraj/region** — Na podstawie kodów krajów ISO</span><span class="sxs-lookup"><span data-stu-id="36c51-105">**Country/region** - Based on ISO country codes</span></span>  
-- <span data-ttu-id="36c51-106">Typy **Znaczników** dla:</span><span class="sxs-lookup"><span data-stu-id="36c51-106">**Tags** types for:</span></span>
-  - <span data-ttu-id="36c51-107">Obszar funkcjonalny</span><span class="sxs-lookup"><span data-stu-id="36c51-107">Functional area</span></span>
-  - <span data-ttu-id="36c51-108">Obszar funkcji</span><span class="sxs-lookup"><span data-stu-id="36c51-108">Feature area</span></span>
-  - <span data-ttu-id="36c51-109">Branża</span><span class="sxs-lookup"><span data-stu-id="36c51-109">Industry</span></span> 
-  - <span data-ttu-id="36c51-110">Dokument biznesowy</span><span class="sxs-lookup"><span data-stu-id="36c51-110">Business document</span></span> 
+<span data-ttu-id="1067d-104">W tym temacie opisano ulepszone możliwości filtrowania w repozytorium globalnym Regulatory Configuration Services (RCS), które zostało udoskonalone w celu uwzględnienia możliwości filtrowania następujących kryteriów:</span><span class="sxs-lookup"><span data-stu-id="1067d-104">This topic describes enhanced filtering capabilities for Regulatory Configuration Services (RCS) Global repository, which have been improved to include the ability to filter with the following criteria:</span></span> 
+- <span data-ttu-id="1067d-105">**Kraj/region** — Na podstawie kodów krajów ISO</span><span class="sxs-lookup"><span data-stu-id="1067d-105">**Country/region** - Based on ISO country codes</span></span>  
+- <span data-ttu-id="1067d-106">Typy **Znaczników** dla:</span><span class="sxs-lookup"><span data-stu-id="1067d-106">**Tags** types for:</span></span>
+  - <span data-ttu-id="1067d-107">Obszar funkcjonalny</span><span class="sxs-lookup"><span data-stu-id="1067d-107">Functional area</span></span>
+  - <span data-ttu-id="1067d-108">Obszar funkcji</span><span class="sxs-lookup"><span data-stu-id="1067d-108">Feature area</span></span>
+  - <span data-ttu-id="1067d-109">Branża</span><span class="sxs-lookup"><span data-stu-id="1067d-109">Industry</span></span> 
+  - <span data-ttu-id="1067d-110">Dokument biznesowy</span><span class="sxs-lookup"><span data-stu-id="1067d-110">Business document</span></span> 
 
-<span data-ttu-id="36c51-111">Aby ułatwić odkrywanie określonych lub powiązanych konfiguracji, można zastosować filtry, pojedynczo lub jako grupę.</span><span class="sxs-lookup"><span data-stu-id="36c51-111">To make it easier to discover specific or related configurations you can apply filters, either individually or as a group.</span></span> <span data-ttu-id="36c51-112">Aby na przykład znaleźć pojedynczy typ dokumentów biznesowych, które są związane z fakturami od dostawców, można zastosować filtr **Typu dokumentu biznesowego** w celu wyszukania tego typu dokumentu.</span><span class="sxs-lookup"><span data-stu-id="36c51-112">For example, to find a single type of 'configurable business documents that are related to vendor invoices, you could apply a **Business document type** filter to search for that type of document.</span></span> 
+<span data-ttu-id="1067d-111">Aby ułatwić odkrywanie określonych lub powiązanych konfiguracji, można zastosować filtry, pojedynczo lub jako grupę.</span><span class="sxs-lookup"><span data-stu-id="1067d-111">To make it easier to discover specific or related configurations you can apply filters, either individually or as a group.</span></span> <span data-ttu-id="1067d-112">Aby na przykład znaleźć pojedynczy typ dokumentów biznesowych, które są związane z fakturami od dostawców, można zastosować filtr **Typu dokumentu biznesowego** w celu wyszukania tego typu dokumentu.</span><span class="sxs-lookup"><span data-stu-id="1067d-112">For example, to find a single type of 'configurable business documents that are related to vendor invoices, you could apply a **Business document type** filter to search for that type of document.</span></span> 
 
-<span data-ttu-id="36c51-113">[![Sekcja filtru dla repozytorium globalnego](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span><span class="sxs-lookup"><span data-stu-id="36c51-113">[![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span></span> 
+<span data-ttu-id="1067d-113">[![Sekcja filtru dla repozytorium globalnego](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span><span class="sxs-lookup"><span data-stu-id="1067d-113">[![Filter section for Global repository](media/rcs-enhanced-filter-section.JPG)](./media/rcs-enhanced-filter-section.JPG)</span></span> 
 
-<span data-ttu-id="36c51-114">Można dodatkowo uściślić wyszukiwanie, wybierając typ dokumentu, na przykład „faktura od dostawcy”, i klikając przycisk **Zastosuj filtr**.</span><span class="sxs-lookup"><span data-stu-id="36c51-114">You can further refine the search by selecting document type, for example 'vendor invoice' and clicking **Apply filter**.</span></span> <span data-ttu-id="36c51-115">W poniższym przykładzie przedstawiono wyniki filtrowania **typu dokumentu biznesowego** z dodanym typem dokumentu.</span><span class="sxs-lookup"><span data-stu-id="36c51-115">The following example shows the results when filtering on **Business document type** with the document type added.</span></span> 
+<span data-ttu-id="1067d-114">Można dodatkowo uściślić wyszukiwanie, wybierając typ dokumentu, na przykład „faktura od dostawcy”, i klikając przycisk **Zastosuj filtr**.</span><span class="sxs-lookup"><span data-stu-id="1067d-114">You can further refine the search by selecting document type, for example 'vendor invoice' and clicking **Apply filter**.</span></span> <span data-ttu-id="1067d-115">W poniższym przykładzie przedstawiono wyniki filtrowania **typu dokumentu biznesowego** z dodanym typem dokumentu.</span><span class="sxs-lookup"><span data-stu-id="1067d-115">The following example shows the results when filtering on **Business document type** with the document type added.</span></span> 
 
-<span data-ttu-id="36c51-116">[![Zastosowano filtr i import dla typu dokumentu biznesowego](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span><span class="sxs-lookup"><span data-stu-id="36c51-116">[![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span></span> 
+<span data-ttu-id="1067d-116">[![Zastosowano filtr i import dla typu dokumentu biznesowego](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span><span class="sxs-lookup"><span data-stu-id="1067d-116">[![Applied filter and Import for business document type](media/rcs-enhanced-filtering-applied.JPG)](./media/rcs-enhanced-filtering-applied.JPG)</span></span> 
 
-<span data-ttu-id="36c51-117">Przefiltrowane wyniki mogą być importowane do repozytorium RCS lub środowiska Dynamics 365 Finance albo indywidualnie, albo jako zbiór.</span><span class="sxs-lookup"><span data-stu-id="36c51-117">Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set.</span></span> <span data-ttu-id="36c51-118">W tym celu należy wybrać grupę konfiguracji i kliknąć przycisk **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="36c51-118">To do this, select the group of configurations, and click **Import**.</span></span>
+<span data-ttu-id="1067d-117">Przefiltrowane wyniki mogą być importowane do repozytorium RCS lub środowiska Dynamics 365 Finance albo indywidualnie, albo jako zbiór.</span><span class="sxs-lookup"><span data-stu-id="1067d-117">Filtered results can be imported into a users RCS repository or a Dynamics 365 Finance environment, either individually or as a set.</span></span> <span data-ttu-id="1067d-118">W tym celu należy wybrać grupę konfiguracji i kliknąć przycisk **Importuj**.</span><span class="sxs-lookup"><span data-stu-id="1067d-118">To do this, select the group of configurations, and click **Import**.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
