@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: df71afd293edf9bec51f4bb337516bb1ee8e2c33
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bef2f06c9f7252e44037ddbf00b47d53f9af155a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002992"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252146"
 ---
 # <a name="exchange-rate-adjustments"></a>Korekty kursów wymiany
 
