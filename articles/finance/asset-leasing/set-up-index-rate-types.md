@@ -17,28 +17,31 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f362bf4a6b5de3ce16330aea08880b07b4145792
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b6d201329996f23d94c0fc76a9635d3bb99c931e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992871"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249684"
 ---
-# <a name="set-up-index-rates"></a><span data-ttu-id="aa1ca-104">Konfigurowanie stawek indeksowanych</span><span class="sxs-lookup"><span data-stu-id="aa1ca-104">Set up index rates</span></span>
+# <a name="set-up-index-rates"></a><span data-ttu-id="01158-104">Konfigurowanie stawek indeksowanych</span><span class="sxs-lookup"><span data-stu-id="01158-104">Set up index rates</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="aa1ca-105">Jeśli opłaty z tytułu wynajmu są uzależnione od indeksu, typy stawek indeksowanych można dodawać i obsługiwać w systemie.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-105">If lease payments depend on an index, the index rate types can be added and maintained in the system.</span></span> <span data-ttu-id="aa1ca-106">Aby przeszacować opłaty z tytułu wynajmu na stronie **Typ stawki indeksowanej**, proces przeszacowania stawki indeksowanej używa najnowszej stawki indeksowanej z dnia przeszacowania.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-106">To revalue the lease payments from the **Index rate type** page, the index rate revaluation process uses the most recent index rate from the date of revaluation.</span></span>
+<span data-ttu-id="01158-105">Jeśli opłaty z tytułu wynajmu są uzależnione od indeksu, typy stawek indeksowanych można dodawać i obsługiwać w systemie.</span><span class="sxs-lookup"><span data-stu-id="01158-105">If lease payments depend on an index, the index rate types can be added and maintained in the system.</span></span> <span data-ttu-id="01158-106">Aby przeszacować opłaty z tytułu wynajmu na stronie **Typ stawki indeksowanej**, proces przeszacowania stawki indeksowanej używa najnowszej stawki indeksowanej z dnia przeszacowania.</span><span class="sxs-lookup"><span data-stu-id="01158-106">To revalue the lease payments from the **Index rate type** page, the index rate revaluation process uses the most recent index rate from the date of revaluation.</span></span>
 
-<span data-ttu-id="aa1ca-107">Aby dodać typy stawek indeksowanych i stawki indeksowane, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-107">To add index rate types and index rates, follow these steps.</span></span>
+<span data-ttu-id="01158-107">Aby dodać typy stawek indeksowanych i stawki indeksowane, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="01158-107">To add index rate types and index rates, follow these steps.</span></span>
 
-1. <span data-ttu-id="aa1ca-108">Przejdź do **Wynajem składnika majątku \> Ustawienia \> Typ stawki indeksowanej**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-108">Go to **Asset leasing \> Setup \> Index rate type**.</span></span>
-2. <span data-ttu-id="aa1ca-109">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-109">Select **New**.</span></span>
-3. <span data-ttu-id="aa1ca-110">W odpowiednich polach wprowadź typ stawki oraz nazwę stawki indeksowanej.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-110">In the appropriate fields, enter the rate type and the name of the index rate.</span></span>
-4. <span data-ttu-id="aa1ca-111">Aby dodać nową wartość stawki indeksowanej, wybierz typ stawki indeksowanej, a następnie wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-111">To add a new index rate value, select the index rate type, and then select **Add**.</span></span>
-5. <span data-ttu-id="aa1ca-112">Zaznacz datę wejścia stawki w życie, a następnie wybierz wartość stawki.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-112">Select the effective start date of the rate, and select the rate value.</span></span>
+1. <span data-ttu-id="01158-108">Przejdź do **Wynajem składnika majątku \> Ustawienia \> Typ stawki indeksowanej**.</span><span class="sxs-lookup"><span data-stu-id="01158-108">Go to **Asset leasing \> Setup \> Index rate type**.</span></span>
+2. <span data-ttu-id="01158-109">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="01158-109">Select **New**.</span></span>
+3. <span data-ttu-id="01158-110">W odpowiednich polach wprowadź typ stawki oraz nazwę stawki indeksowanej.</span><span class="sxs-lookup"><span data-stu-id="01158-110">In the appropriate fields, enter the rate type and the name of the index rate.</span></span>
+4. <span data-ttu-id="01158-111">Aby dodać nową wartość stawki indeksowanej, wybierz typ stawki indeksowanej, a następnie wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="01158-111">To add a new index rate value, select the index rate type, and then select **Add**.</span></span>
+5. <span data-ttu-id="01158-112">Zaznacz datę wejścia stawki w życie, a następnie wybierz wartość stawki.</span><span class="sxs-lookup"><span data-stu-id="01158-112">Select the effective start date of the rate, and select the rate value.</span></span>
 
-<span data-ttu-id="aa1ca-113">Jako metodę stawki indeksowanej należy wybrać opcję **Różnica wartości stawki indeksowanej** lub **Wartość stawki indeksowanej**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-113">You must select either **Index rate value difference** or **Index rate value** as the index rate method.</span></span>
+<span data-ttu-id="01158-113">Jako metodę stawki indeksowanej należy wybrać opcję **Różnica wartości stawki indeksowanej** lub **Wartość stawki indeksowanej**.</span><span class="sxs-lookup"><span data-stu-id="01158-113">You must select either **Index rate value difference** or **Index rate value** as the index rate method.</span></span>
 
-- <span data-ttu-id="aa1ca-114">Wybierz metodę **Różnica wartości stawki indeksowanej**, aby obliczać nową opłatę z tytułu wynajmu na podstawie różnicy między stawką indeksowaną w dniu rozpoczęcia a najbardziej aktualną stawką indeksowaną.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-114">Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate.</span></span> <span data-ttu-id="aa1ca-115">Stawkę indeksowaną ustawia się w polu **Stawka indeksowana (%)**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-115">The index rate is defined in the **Index rate (%)** field.</span></span>
-- <span data-ttu-id="aa1ca-116">Wybierz metodę **Wartość stawki indeksowanej**, aby obliczać opłatę z tytułu wynajmu przy użyciu wartości procentowej określonej w polu **Stawka indeksowana (%)**.</span><span class="sxs-lookup"><span data-stu-id="aa1ca-116">Select the **Index rate value** method to calculate the lease payment by using the percentage that is specified in the **Index rate (%)** field.</span></span>
+- <span data-ttu-id="01158-114">Wybierz metodę **Różnica wartości stawki indeksowanej**, aby obliczać nową opłatę z tytułu wynajmu na podstawie różnicy między stawką indeksowaną w dniu rozpoczęcia a najbardziej aktualną stawką indeksowaną.</span><span class="sxs-lookup"><span data-stu-id="01158-114">Select the **Index rate value difference** method to calculate a new lease payment, based on the difference between the index rate on the start date and the most recent index rate.</span></span> <span data-ttu-id="01158-115">Stawkę indeksowaną ustawia się w polu **Stawka indeksowana (%)**.</span><span class="sxs-lookup"><span data-stu-id="01158-115">The index rate is defined in the **Index rate (%)** field.</span></span>
+- <span data-ttu-id="01158-116">Wybierz metodę **Wartość stawki indeksowanej**, aby obliczać opłatę z tytułu wynajmu przy użyciu wartości procentowej określonej w polu **Stawka indeksowana (%)**.</span><span class="sxs-lookup"><span data-stu-id="01158-116">Select the **Index rate value** method to calculate the lease payment by using the percentage that is specified in the **Index rate (%)** field.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
