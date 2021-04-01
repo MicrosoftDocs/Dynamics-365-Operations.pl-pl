@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8cef9d868c5c84949b10a591d8ab5993ac799d5c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 27308f9991a6ddb36ef1f2e93082187fbf867132
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989451"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254872"
 ---
 # <a name="assess-sales-performance-by-product"></a>Ocenianie wydajności sprzedaży według produktów
 
