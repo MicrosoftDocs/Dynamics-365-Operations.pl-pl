@@ -3,7 +3,7 @@ title: Moduł adresu wysyłki
 description: W tym temacie omówiono moduł adresu wysyłki i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6a5eb69c7746be419779b1a844ee35ec375a324c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e590c966ca6bd8111df5f91cbac0485afaa45c78
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985643"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234420"
 ---
 # <a name="shipping-address-module"></a>Moduł adresu wysyłki
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono moduł adresu wysyłki i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Moduł adresu wysyłki umożliwia klientom dodanie lub wybranie adresu wysyłki dla zamówienia podczas realizacji transakcji. Jeśli klient jest zalogowany, wszystkie adresy, które zostały wcześniej zapisane dla tego klienta, są wyświetlane, a klient może wybrać jeden z nich. Odbiorca może również dodać nowy adres. Moduł adresu wysyłki jest używany dla wszystkich pozycji w zamówieniu, które wymagają wysyłki.
 
@@ -49,6 +47,8 @@ Poniższa ilustracja przedstawia przykład nowego modułu adresu wysyłki na str
 |---------------|--------|-------------|
 | Nagłówek | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Opcjonalny nagłówek modułu adresu wysyłki. |
 | Pokaż typ adresu | **Prawda** lub **Fałsz** | Jeśli ta właściwość opcjonalna ma wartość **Prawda**, wyświetlany jest typ adresu, np. **Dom** lub **Firma**. Jeśli nie określono typu adresu, adres zostanie automatycznie zapisany jako **Typ**=**Inny**. |
+| Włącz automatyczne sugestie| **Prawda** lub **Fałsz** | Jeśli dla tej opcjonalnej właściwości zostanie ustawiona wartość **Prawda**, zostaną dostarczone automatyczne sugestie adresów. Te sugestie są oparte na mapach Bing. Aby uzyskać informacje dotyczące sposobu skonfigurowania integracji Map Bing dla swojej witryny, zobacz moduł [Selektor sklepu](store-selector.md). Ta funkcja jest dostępna w wersji Commerce 10.0.15.|
+|Opcje automatycznych sugestii| Numer| Jeśli funkcja automatycznych sugestii adresów jest włączona, można określić dodatkowe opcje, takie jak maksymalna liczba sugerowanych danych.|
 
 ## <a name="add-a-shipping-address-module-to-a-checkout-page-and-set-the-required-properties"></a>Dodaj moduł adresu wysyłki do strony realizacji zamówienia i ustaw wymagane właściwości
 
@@ -71,6 +71,8 @@ Moduł adresu wysyłki można dodać tylko do modułu realizacji transakcji. Aby
 [Moduł szczegółów zamówienia](order-confirmation-module.md)
 
 [Moduł karty upominkowej](add-giftcard.md)
+
+[Moduł wyboru sklepu](store-selector.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
