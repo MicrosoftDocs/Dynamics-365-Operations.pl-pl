@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ba08d2ee37e4fdd206de8ee84bd7c45fda67988
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 976175671ec5ee36f80ba2b2c787a67c18a9b769
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975365"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236306"
 ---
 # <a name="split-periods-in-periodic-journals"></a>Okresy podziału w arkuszach okresowych
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d0338447cba847f3677f5e3de7144fc75da01ddf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016938"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237383"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
@@ -80,19 +80,19 @@ Na stronie **Parametry modułu Zaopatrzenie i sourcing** można wybrać szablon 
 - %Przyczyna zwrotu oferty%
 - %Przyczyna sporządzenia poprawki%
 - %Poprawka przygotowana przez%
-- %Firma%
+- %Company%
 - %RFQ case name%
 - %Expiry Date Time%
 - %Date%
 
-Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje tekst, który pracownik działu zakupów może wpisać po zakończeniu poprawki w **kreatorze poprawek**. Wartości tokenów %poprawki przygotowane przez% i %firma% są automatycznie pobierane z ZO. Token %Date% jest zastępowany przez bieżącą datę.
+Tokeny %Przyczyna zwrotu oferty% i %Przyczyna sporządzenia poprawki% zastępuje tekst, który pracownik działu zakupów może wpisać po zakończeniu poprawki w **kreatorze poprawek**. Wartości tokenów %poprawki przygotowane przez% i %Company% są automatycznie pobierane z ZO. Token %Date% jest zastępowany przez bieżącą datę.
 
 Jeśli chcesz anulować ZO po jego wysłaniu, można to zrobić z poziomu sprawy ZO. W przypadku anulowania należy użyć szablonu wiadomości e-mail, aby wysłać powiadomienie o anulowaniu do osób kontaktowych dostawcy. Szablon należy wybrać na stronie **Parametry modułu Zaopatrzenie i sourcing**. Po utworzeniu szablon może zawierać następujące tokeny wymiany:
 
 - %Reason for cancellation%
 - %RFQ case%
 - %RFQ cancelled by%
-- %Firma%
+- %Company%
 - %RFQ case name%
 - %Date%
 

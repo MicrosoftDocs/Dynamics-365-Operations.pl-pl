@@ -15,12 +15,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-01
-ms.openlocfilehash: 07fcd94945f7ef8a2794f49d591944962aa2d045
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 36378e690714af757bc95247e4a418244eff4b62
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968337"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251103"
 ---
 # <a name="split-the-realized-exchange-difference-amount-into-the-difference-of-the-invoice-net-value-and-the-vat-amount"></a>Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 

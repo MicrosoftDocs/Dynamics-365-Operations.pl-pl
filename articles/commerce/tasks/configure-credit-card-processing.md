@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 611cc49d2373247da141d2fafc149d05f3bd13b0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d365dfce8e8fbd332111d96eeb2a431151d7a342
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006117"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234228"
 ---
 # <a name="configure-credit-card-processing"></a>Konfigurowanie przetwarzania karty kredytowej
 

@@ -12,12 +12,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 0b411398811fcf27b53a584d0285c14e51f504df
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9b8bb5963c90ebfd7495c3c75c0dee13a89f1c5c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012101"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236284"
 ---
 # <a name="vat-declaration-with-registers-jpk_v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 
@@ -417,9 +417,9 @@ Pakiet PL JPK_V7M EM setup.zip zawiera ustawienia przetwarzania JPK-V7M, które 
 
 Implementacja raportu JPK-V7M bazuje na tych samych kodach raportowania podatku, które zostały użyte w raporcie JPK_VAT. Aby uzyskać więcej informacji, zobacz temat [Ewidencja zakupów i sprzedaży VAT JPK](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
-W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie JPK_VAT i ich mapowanie z elementami **K_\** _ raportu JPK-V7M.
+W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie JPK_VAT i ich mapowanie z elementami **K_\*** raportu JPK-V7M.
 
-| _ *Nazwa elementu** | **Opis elementu**                                                                                                                                                                                                                                                     | **Kody raportowania podatku**                                                                            |
+| **Nazwa elementu** | **Opis elementu**                                                                                                                                                                                                                                                     | **Kody raportowania podatku**                                                                            |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | K_10             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów oraz świadczenia usług na terytorium Polski, zwolnionych od podatku                                                                                                                                                                                 | 10302, 10402, 10502, 10602                                                                               |
 | K_11             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów oraz świadczenia usług poza terytorium Polski                                                                                                                                                                                                       | 10101, 10102, 10104, 10105, 10201, 10204                                                                 |
@@ -557,18 +557,18 @@ Jeśli istnieje zaległa faktura dla odbiorcy, faktura, która jest wystawiana o
 2. Jeśli faktura nie zostanie zapłacona w ciągu 150 dni od terminu płatności, firma może zastosować zadanie okresowe [Zaległa kwota podatku VAT stanowiąca zadłużenie](emea-pol-sales-tax-reports.md#allowance-for-bad-debts), przechodząc do **Rozrachunki z odbiorcami** \> **Zadania okresowe** \> **Zaległa kwota podatku VAT stanowiąca zadłużenie**. Transakcje podatkowe generowane przez to zadanie są odzwierciedlane w raporcie JPK-V7M. Zawarte są następujące informacje:
 
     - Uwzględnione są wszystkie informacje o odbiorcy z oryginalnej faktury zaksięgowanej w etapie 1.
-    - Kwoty są raportowane w tych samych elementach **K_\** _, co w oryginalnej fakturze, ale ze znakiem ujemnym.
+    - Kwoty są raportowane w tych samych elementach **K_\***, co w oryginalnej fakturze, ale ze znakiem ujemnym.
     - Stosowane są te same markery, które zastosowano w oryginalnej fakturze.
-    - Jest stosowany marker _ *\<KorektaPodstawyOpodt\>**.
+    - Jest stosowany marker **\<KorektaPodstawyOpodt\>**.
 
      Ponadto kwota podstawy i kwota podatku z tej faktury (dokument wewnętrzny) są uwzględniane i zgłaszane w elementach **P_68** i **P_69** części deklaracji raportu.
 
 3. Jeśli faktura zostanie zaksięgowana po wystąpieniu obu etapów 1 i 2, firma musi ponownie zastosować zadanie okresowe **Zaległa kwota podatku VAT stanowiąca zadłużenie** w okresie, w którym faktura została zapłacona. Wynikowe transakcje podatkowe są odzwierciedlane w raporcie JPK-V7M. Zawarte są następujące informacje:
 
     - Uwzględnione są wszystkie informacje o odbiorcy z oryginalnej faktury zaksięgowanej w etapie 1.
-    - Kwoty są raportowane w tych samych elementach **K_\** _, co w oryginalnej fakturze, ale ze znakiem dodatnim.
+    - Kwoty są raportowane w tych samych elementach **K_\***, co w oryginalnej fakturze, ale ze znakiem dodatnim.
     - Stosowane są te same markery, które zastosowano w oryginalnej fakturze
-    - Jest stosowany marker _ *\<KorektaPodstawyOpodt\>**.
+    - Jest stosowany marker **\<KorektaPodstawyOpodt\>**.
 
     Kwota podstawy i kwota podatku z tej faktury (dokument wewnętrzny) **nie** są uwzględniane i zgłaszane w elementach **P_68** i **P_69** części deklaracji raportu.
 
