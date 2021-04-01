@@ -14,12 +14,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 68f4be770f84f0a47f0568bf0a0a33d18123c4f6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 02d2edec27265835165e92ebbec8709d4fff59d1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990140"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246832"
 ---
 # <a name="activate-storno-accounting-for-poland"></a>Aktywowanie stornowania dla Polski
 
