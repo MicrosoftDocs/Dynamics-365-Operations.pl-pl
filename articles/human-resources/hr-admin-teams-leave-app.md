@@ -3,7 +3,7 @@ title: Aplikacja Human Resources w Teams
 description: W tym temacie przedstawiono aplikację Microsoft Dynamics 365 Human Resources w Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113857"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487880"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia pracownikom szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Aby zażądać informacji, pracownicy mogą współpracować z botem. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Ponadto mogą wysyłać osobom informacje o zbliżającym się czasie wolnym w zespołach i czatach poza aplikacją Human Resources.
 
-![Bot w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-admin-teams-leave-app-bot.png)
+![Bot w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot.png)
 
 ![Karta Czas wolny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams 
 
 ## <a name="install-and-setup"></a>Instalowanie i konfigurowanie
 
-Aplikację Human Resources można znaleźć w sklepie rozwiązania Teams. Aby uzyskać informacje o instalowaniu aplikacji Teams, zapoznaj się z tematem [Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md).
+Aplikację Dynamics 365 Human Resources można znaleźć w sklepie rozwiązania Teams. Aby uzyskać informacje o instalowaniu aplikacji Teams, zapoznaj się z tematem [Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md).
 
 Aby uzyskać informacje dotyczące zarządzania uprawnieniami aplikacji w Teams, zapoznaj się z tematem [Zarządzanie zasadami uprawnień aplikacji w Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Jeśli chcesz, aby użytkownicy wyświetlali kalendarz urlopów i nieobecności w aplikacji, musisz włączyć **Kalendarz urlopów i nieobecności w Teams** w zarządzaniu funkcjami w zespołach. Aby uzyskać więcej informacji na temat włączania funkcji, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Włączanie powiadomień dla aplikacji Human Resources w Teams
 
-Jeśli chcesz, aby użytkownicy otrzymywali powiadomienia o żądaniu urlopu w aplikacji Teams, musisz włączyć powiadomienia w module Human Resources.
+Jeśli chcesz, aby użytkownicy otrzymywali powiadomienia o żądaniu urlopu w aplikacji Teams, musisz włączyć powiadomienia w module Dynamics 365 Human Resources.
 
 >[!NOTE]
->Tylko użytkownicy zalogowani do zespołów i korzystający z aplikacji Human Resources w Teams będą otrzymywali powiadomienia.
+>Tylko użytkownicy zalogowani do zespołów i korzystający z aplikacji Dynamics 365 Human Resources w Teams będą otrzymywali powiadomienia.
 
 1. W module Human Resources wybierz opcję **administrowanie systemem**.
 
@@ -66,7 +68,7 @@ Jeśli chcesz, aby użytkownicy otrzymywali powiadomienia o żądaniu urlopu w a
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Włączanie i wyłączanie powiadomień Teams dla poszczególnych użytkowników
 
-Po włączeniu powiadomień dla aplikacji Human Resources w Teams, można włączać lub wyłączać powiadomienia dla poszczególnych użytkowników.
+Po włączeniu powiadomień dla aplikacji Dynamics 365 Human Resources w Teams, można włączać lub wyłączać powiadomienia dla poszczególnych użytkowników.
 
 1. W module Human Resources wybierz opcję **administrowanie systemem**.
 
@@ -82,9 +84,28 @@ Po włączeniu powiadomień dla aplikacji Human Resources w Teams, można włąc
 
 6. Wybierz opcję **Zapisz**.
 
-## <a name="known-issues"></a>Znane problemy
+## <a name="supported-languages"></a>Obsługiwane języki
 
-| Wystawienie | Stan |
+Aplikacja Dynamics 365 Human Resources w Teams obsługuje następujące języki:
+
+| Identyfikator lokalizacji | Język |
+| --- | --- |
+| de-DE | Niemiecki (Niemcy) |
+| es-ES | Hiszpański (Hiszpania) |
+| es-MX | hiszpański (Meksyk) |
+| fr-CA | francuski (Kanada) |
+| fr-FR | Francuski (Francja) |
+| it-IT | Włoski (Włochy) |
+| nl-NL | Holenderski (Holandia) |
+| pt-BR | Portugalski (Brazylia) |
+| tr-TR | Turecki (Turcja) |
+| zh-CN | Chiński (Uproszczony) |
+
+## <a name="notes"></a>Notatki
+
+Następujące elementy pracy są projektowane w przyszłych wersjach:
+
+| Element pracy | Stan |
 | --- | --- |
 | Saldo jest niepoprawne podczas przesyłania czasu wolnego w przyszłości. | Prognozowanie nie jest jeszcze dostępne. Jest wyświetlane saldo dla bieżącej daty. |
 | Nie można anulować żądań typu **Trwa przegląd**. | Ta funkcja nie jest obecnie obsługiwana i zostanie dodana w przyszłym wydaniu. |
@@ -96,11 +117,11 @@ Jeśli użytkownik ma problemy z zalogowaniem się lub użyciem aplikacji Zespo�
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nie można zalogować się do aplikacji do aplikacji Human Resources w Teams
 
-Jeśli użytkownik kontaktuje się z Tobą, ponieważ nie może zalogować się do aplikacji, należy sprawdzić, czy użytkownik ma skojarzony rekord pracownika etatowego w module Human Resources.
+Jeśli użytkownik kontaktuje się z Tobą, ponieważ nie może zalogować się do aplikacji, należy sprawdzić, czy mają skojarzony rekord pracownika etatowego w module Human Resources.
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Błąd podczas zatwierdzania żądań urlopu w aplikacji Human Resources w Teams
 
-Jeśli użytkownik otrzyma komunikat o błędzie podczas próby zatwierdzenia żądań opuszczenia w aplikacji Teams, należy wykonać następujące kroki rozwiązywania problemów:
+Jeśli użytkownik otrzyma komunikat o błędzie podczas próby zatwierdzenia żądań opuszczenia w aplikacji Teams, należy wypróbować następujące kroki rozwiązywania problemów:
 
 1. Sprawdź, czy ich konta programu Teams są takie same, które służą do uzyskiwania dostępu do modułu Human Resources.
 

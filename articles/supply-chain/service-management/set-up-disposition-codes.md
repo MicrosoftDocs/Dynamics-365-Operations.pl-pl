@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977545"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470698"
 ---
 # <a name="set-up-disposition-codes"></a>Ustawianie kodów dyspozycji 
 
@@ -33,15 +33,15 @@ Można utworzyć kody dyspozycji w celu określania sposobu przetwarzania towaru
 
 Można także skonfigurować kod przyczyny pomagający w wyjaśnieniu przyczyn zwrócenia towaru. Aby uzyskać więcej informacji na temat kodów przyczyn, zobacz [Konfigurowanie kodów przyczyny zwrotu](set-up-return-reason-code.md).
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Kody dyspozycji**.
+1.  Przejdź do **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Kody dyspozycji**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N lub kliknij przycisk **Nowy**, aby utworzyć nowy kod dyspozycji.
+2.  Wybierz pozycję **Nowy**, aby utworzyć nowy kod dyspozycji.
 
 3.  Wprowadź unikatową nazwę opisową, zaznacz akcję i wpisz opis kodu dyspozycji.
 
-4.  W celu skojarzenia z tym kodem dyspozycji żądanych opłat wymaganych od odbiorcy kliknij przycisk **Opłaty**. Spowoduje to otwarcie formularza **Ustaw opłaty**.
+4.  W celu skojarzenia z tym kodem dyspozycji żądanych opłat wymaganych od odbiorcy wybierz przycisk **Opłaty**. Spowoduje to otwarcie formularza **Ustaw opłaty**.
 
-5.  Aby zdefiniować jakiekolwiek kody zewnętrzne zgodne z firmowymi kodami dyspozycji, kliknij przycisk **Kody zewnętrzne**. Spowoduje to otwarcie formularza **Kody zewnętrzne**.
+5.  Aby zdefiniować jakiekolwiek kody zewnętrzne zgodne z firmowymi kodami dyspozycji, wybierz przycisk **Kody zewnętrzne**. Spowoduje to otwarcie formularza **Kody zewnętrzne**.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

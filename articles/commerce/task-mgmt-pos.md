@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 889cc90b534de33ccd0e2bea367b2da42b5d72e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 18ba781795058de6228c712c6a22e59038e96368
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006192"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478369"
 ---
 # <a name="task-management-in-pos"></a>Zarządzanie zadaniami w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano zarządzanie zadaniami w aplikacji punktu sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Aplikacja punktu sprzedaży Dynamics 365 Commerce zawiera funkcje zarządzania zadaniami, które umożliwiają menedżerom i pracownikom sklepów zarządzanie zadaniami i aktualizowanie stanu zadań. Pracownicy sklepów mogą uzyskać dostęp do zadań, zaznaczając kafelek **Zadania** na stronie głównej punktu sprzedaży lub wybierając powiadomienia o zadaniach. Domyślnie pracownicy sklepów są przeniesieni na kartę **Moje zadania**, gdzie mogą przeglądać przypisane do nich zadania. Mogą jednak łatwo przełączać się do kart **Zaległe zadania**, **Zadania otwarte** i **Listy zadań**.
 

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 875d0ae7ae6b93f3fc29aeb4617671de289e6c63
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 9d2a8b50f88e1f321e376923ba1da8497cedc89f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115831"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465037"
 ---
 # <a name="create-a-goal"></a>Tworzenie celu
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Można tworzyć cele, dodawać działania do celów, śledzić miary oraz łączyć cele z przeglądem. Procedurę utworzono przy użyciu danych firmy demonstracyjnej USMF. Ta procedura dotyczy funkcji, która została dodana w programie Dynamics 365 for Operations w wersji 1611.
 

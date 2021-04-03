@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115083"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463341"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje nieobecności, które pracownicy mogą zgłaszać. Typy urlopów można dostosować zgodnie z potrzebami swojej organizacji. Przykłady typów urlopów:
 
@@ -72,8 +74,7 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
    
  3. Określ **Typ urlopu przeniesiony na późniejszy okres** na następny okres dla typu urlopu. Po wybraniu tej opcji wszelkie salda przeniesione zostaną przeniesione do określonego rodzaju urlopu. Typ urlopu do przodu musi być również uwzględniony w planie urlopu i nieobecności. 
  
- 4. Określ **Reguły wygasania** dla typu urlopu. Po skonfigurowaniu tej opcji możesz wybrać jednostkę dni lub miesięcy i ustawić czas wygaśnięcia. Można również określić datę wejścia w życie reguły wygasania. Salda urlopu, które istnieją w momencie wygaśnięcia, zostaną odjęte od typu urlopu i zostaną odzwierciedlone w saldzie urlopu. 
- 
+ 4. Określ **Reguły wygasania** dla typu urlopu. Po skonfigurowaniu tej opcji możesz wybrać jednostkę dni lub miesięcy i ustawić czas wygaśnięcia. Można również określić datę wejścia w życie reguły wygasania. Data wejścia w życie służy do określenia, kiedy należy rozpocząć uruchamianie zadania wsadowego przetwarzającego wygaśnięcie urlopu, a kiedy reguła zaczyna obowiązywać. Samo wygaśnięcie zawsze nastąpi w dniu rozpoczęcia planu urlopu, gdy zadanie wsadowe jest ustawione na przetwarzanie. Na przykład datą rozpoczęcia planu może być 01.01.2020, ale reguła została utworzona dopiero 01.06.2020. Ustawiając datę wejścia w życie na 01.06.2020, reguła będzie przetwarzana na granicy następnego roku, czyli 01.01.2021. Salda urlopu, które istnieją w momencie wygaśnięcia, zostaną odjęte od typu urlopu i zostaną odzwierciedlone w saldzie urlopu. 
  
 ## <a name="see-also"></a>Informacje dodatkowe
 

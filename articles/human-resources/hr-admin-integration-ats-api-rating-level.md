@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1ad37c7a5b961bb03d37775168dac91e606d2b08
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 2dbdbea7087d8bca8563da10d1bf9a97df24e8b3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125264"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464749"
 ---
 # <a name="rating-level"></a>Poziom oceniania
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym temacie opisano jednostkę Poziom oceniania dla Dynamics 365 Human Resources.
 

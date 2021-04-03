@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 723e46f98545e80551da9f79b6aeffc3eca48830
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130380"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466021"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Tworzenie działów i dołączanie ich do hierarchii działów
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalnego organizacji. Dział jest odpowiedzialny za określony obszar organizacji, np. sprzedaż, księgowość lub zasoby ludzkie. Działy pozwalają tworzyć raporty dotyczące obszarów funkcyjnych. Działy mogą mieć odpowiedzialność zysków i strat.
 

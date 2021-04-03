@@ -1,5 +1,5 @@
 ---
-title: Ustaw strony niestandardowe dla danych logowania użytkowników
+title: Konfiguracja stron niestandardowych do logowań użytkowników
 description: W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
 author: brianshook
 manager: annbe
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a55da9683c43ac75109fd256e481b02a4d565914
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3328fad5328ae1954a6749f9a5eebcb71c723698
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970085"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477955"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak budować niestandardowe strony w Microsoft Dynamics 365 Commerce, które obsługują niestandardowe logowanie dla użytkowników dzierżawców Azure Active Directory (Azure AD) dla klientów indywidualnych (B2C).
-
-## <a name="overview"></a>Omówienie
 
 Aby skorzystać ze stron niestandardowych, które są tworzone Dynamics 365 Commerce w celu obsługi przepływów logowania użytkowników, należy skonfigurować zasady Azure AD, które będą przywoływane w środowisku Commerce Environment. Można skonfigurować zasady B2C Azure AD „Rejestracja i logowanie”, „Edytowanie profili” i „Resetowanie hasła” za pomocą aplikacji B2C Azure AD. Do nazw dzierżawy i zasad B2C Azure AD można następnie odwoływać się podczas procesu udostępniania, który jest wykonywany dla środowiska Commerce przy użyciu usług Microsoft Dynamics Lifecycle Services (LCS).
 

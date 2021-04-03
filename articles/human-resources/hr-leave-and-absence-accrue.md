@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aed36a38c5d50767b5ac14ae82ca424f0c835ae0
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 348c8e5336854eb2a1c04a1f98a97a2c9dba7176
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116099"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464917"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Nalicz plany urlopów i nieobecności
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W programie Dynamics 365 Human Resources urlopy i nieobecności można naliczać dla wielu pracowników lub dla jednej osoby.
 

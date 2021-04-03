@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d16de8c339fadff074ef8ec30b0b4d6e3412569
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001856"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470776"
 ---
 # <a name="forecast-reduction-keys"></a>Klucze redukcji prognozy
 
@@ -198,7 +198,7 @@ W takim wypadku są tworzone następujące zamówienia planowane.
 Klucz redukcji prognozy jest używany w metodach **transakcje — klucz redukcji** i **procent — klucz redukcji** redukcji prognozowanego zapotrzebowania. Wykonaj następujące kroki, aby utworzyć i skonfigurować klucz redukcji.
 
 1. Przejdź do menu **Planowanie główne \> Konfiguracja \> Zapotrzebowanie \> Klucze redukcji**.
-2. Wybierz **nowy** lub naciśnij **Ctrl + N**, aby utworzyć klucz redukcji.
+2. Wybierz pozycję **Nowy**, aby utworzyć klucz redukcji.
 3. W polu **klucza redukcji** wprowadź unikatowy identyfikator klucza redukcji prognoz. Następnie w polu **Nazwa** nadaj nazwę. 
 4. Definiowanie okresów i procenta klucza redukcji w każdym okresie:
 
