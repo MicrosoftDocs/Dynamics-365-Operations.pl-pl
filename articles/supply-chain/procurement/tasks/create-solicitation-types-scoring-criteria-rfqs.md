@@ -15,39 +15,42 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 40625152a579bb269411d026d77d449902c8d4bc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cf196711799b78d7f4106b6693127d7f356b1d4e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016813"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262220"
 ---
-# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="81da8-103">Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO</span><span class="sxs-lookup"><span data-stu-id="81da8-103">Create solicitation types and scoring criteria for RFQs</span></span>
+# <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a><span data-ttu-id="5327f-103">Tworzenie typów zdobywania zamówień i kryteriów punktowania dla ZO</span><span class="sxs-lookup"><span data-stu-id="5327f-103">Create solicitation types and scoring criteria for RFQs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="81da8-104">W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania.</span><span class="sxs-lookup"><span data-stu-id="81da8-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="81da8-105">Pokazano także sposób użycia typu zdobywania zamówień w zapytaniu ofertowym (ZO), w następstwie czego jest ustawiana domyślna metoda punktowania.</span><span class="sxs-lookup"><span data-stu-id="81da8-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="81da8-106">Te zadania zazwyczaj wykonuje menedżer ds. zakupów.</span><span class="sxs-lookup"><span data-stu-id="81da8-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="81da8-107">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="81da8-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="81da8-108">Przed rozpoczęciem trzeba zapewnić dostępność metody punktowania.</span><span class="sxs-lookup"><span data-stu-id="81da8-108">You need to have a scoring method available before you start.</span></span>
+<span data-ttu-id="5327f-104">W tym przewodniku pokazano, jak utworzyć typ zdobywania zamówień i skojarzyć go z metodą punktowania.</span><span class="sxs-lookup"><span data-stu-id="5327f-104">This guide shows you how to create a solicitation type and associate this with a scoring method.</span></span> <span data-ttu-id="5327f-105">Pokazano także sposób użycia typu zdobywania zamówień w zapytaniu ofertowym (ZO), w następstwie czego jest ustawiana domyślna metoda punktowania.</span><span class="sxs-lookup"><span data-stu-id="5327f-105">It also shows how to use the solicitation type on a request for quotation (RFQ) which then sets the default scoring method.</span></span> <span data-ttu-id="5327f-106">Te zadania zazwyczaj wykonuje menedżer ds. zakupów.</span><span class="sxs-lookup"><span data-stu-id="5327f-106">These tasks would typically be carried out by a purchasing manager.</span></span> <span data-ttu-id="5327f-107">Można wykonać tę procedurę przy użyciu danych firmy demonstracyjnej USMF lub własnych danych.</span><span class="sxs-lookup"><span data-stu-id="5327f-107">You can use this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="5327f-108">Przed rozpoczęciem trzeba zapewnić dostępność metody punktowania.</span><span class="sxs-lookup"><span data-stu-id="5327f-108">You need to have a scoring method available before you start.</span></span>
 
 
-## <a name="create-a-solicitation-type"></a><span data-ttu-id="81da8-109">Tworzenie typu zdobywania zamówień</span><span class="sxs-lookup"><span data-stu-id="81da8-109">Create a solicitation type</span></span>
-1. <span data-ttu-id="81da8-110">Wybierz kolejno opcje Zaopatrzenie i sourcing > Ustawienia > Zapytanie ofertowe > Typ zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="81da8-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
-2. <span data-ttu-id="81da8-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="81da8-111">Click New.</span></span>
-3. <span data-ttu-id="81da8-112">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="81da8-112">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="81da8-113">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="81da8-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="81da8-114">W polu Metoda punktowa wybierz metodę punktowania, której chcesz używać dla tego typu zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="81da8-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
-6. <span data-ttu-id="81da8-115">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="81da8-115">Click Save.</span></span>
-7. <span data-ttu-id="81da8-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="81da8-116">Close the page.</span></span>
+## <a name="create-a-solicitation-type"></a><span data-ttu-id="5327f-109">Tworzenie typu zdobywania zamówień</span><span class="sxs-lookup"><span data-stu-id="5327f-109">Create a solicitation type</span></span>
+1. <span data-ttu-id="5327f-110">Wybierz kolejno opcje Zaopatrzenie i sourcing > Ustawienia > Zapytanie ofertowe > Typ zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="5327f-110">Go to Procurement and sourcing > Setup > Request for quotation > Solicitation type.</span></span>
+2. <span data-ttu-id="5327f-111">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5327f-111">Click New.</span></span>
+3. <span data-ttu-id="5327f-112">W polu Nazwa wpisz wartość.</span><span class="sxs-lookup"><span data-stu-id="5327f-112">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="5327f-113">Wypełnij pole Opis.</span><span class="sxs-lookup"><span data-stu-id="5327f-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="5327f-114">W polu Metoda punktowa wybierz metodę punktowania, której chcesz używać dla tego typu zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="5327f-114">In the Scoring method field, select the scoring method that you want to use for this solicitation type.</span></span>
+6. <span data-ttu-id="5327f-115">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="5327f-115">Click Save.</span></span>
+7. <span data-ttu-id="5327f-116">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5327f-116">Close the page.</span></span>
 
-## <a name="use-the-solicitation-type"></a><span data-ttu-id="81da8-117">Używanie typu zdobywania zamówień</span><span class="sxs-lookup"><span data-stu-id="81da8-117">Use the solicitation type</span></span>
-1. <span data-ttu-id="81da8-118">Wybierz kolejno opcje Zaopatrzenie i sourcing > Zapytania ofertowe > Wszystkie zapytania ofertowe.</span><span class="sxs-lookup"><span data-stu-id="81da8-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
-2. <span data-ttu-id="81da8-119">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="81da8-119">Click New.</span></span>
-3. <span data-ttu-id="81da8-120">W polu Typ zdobywania zamówień wybierz nowo utworzony typ zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="81da8-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
+## <a name="use-the-solicitation-type"></a><span data-ttu-id="5327f-117">Używanie typu zdobywania zamówień</span><span class="sxs-lookup"><span data-stu-id="5327f-117">Use the solicitation type</span></span>
+1. <span data-ttu-id="5327f-118">Wybierz kolejno opcje Zaopatrzenie i sourcing > Zapytania ofertowe > Wszystkie zapytania ofertowe.</span><span class="sxs-lookup"><span data-stu-id="5327f-118">Go to Procurement and sourcing > Requests for quotations > All requests for quotations.</span></span>
+2. <span data-ttu-id="5327f-119">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="5327f-119">Click New.</span></span>
+3. <span data-ttu-id="5327f-120">W polu Typ zdobywania zamówień wybierz nowo utworzony typ zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="5327f-120">In the Solicitation type field, select the solicitation type that you have just created.</span></span> 
     *   
-4. <span data-ttu-id="81da8-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="81da8-121">Click OK.</span></span>
-5. <span data-ttu-id="81da8-122">Kliknij opcję Kryteria punktowania.</span><span class="sxs-lookup"><span data-stu-id="81da8-122">Click Scoring criteria.</span></span>
-    * <span data-ttu-id="81da8-123">Wyświetlane kryteria punktowania pochodzą z metody punktowania skojarzonej z typem zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="81da8-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="81da8-124">Na tej stronie można dodawać i usuwać kryteria.</span><span class="sxs-lookup"><span data-stu-id="81da8-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="81da8-125">Istnieje również możliwość dodawania nowych kryteriów przez ich kopiowanie z innych metod punktowania.</span><span class="sxs-lookup"><span data-stu-id="81da8-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
-6. <span data-ttu-id="81da8-126">Kliknij opcję Kopiowanie kryteriów.</span><span class="sxs-lookup"><span data-stu-id="81da8-126">Click Copy criteria.</span></span>
-7. <span data-ttu-id="81da8-127">W polu Metoda punktowa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="81da8-127">In the Scoring method field, enter or select a value.</span></span>
-8. <span data-ttu-id="81da8-128">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="81da8-128">Click OK.</span></span>
-9. <span data-ttu-id="81da8-129">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="81da8-129">Close the page.</span></span>
+4. <span data-ttu-id="5327f-121">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5327f-121">Click OK.</span></span>
+5. <span data-ttu-id="5327f-122">Kliknij opcję Kryteria punktowania.</span><span class="sxs-lookup"><span data-stu-id="5327f-122">Click Scoring criteria.</span></span>
+    * <span data-ttu-id="5327f-123">Wyświetlane kryteria punktowania pochodzą z metody punktowania skojarzonej z typem zdobywania zamówień.</span><span class="sxs-lookup"><span data-stu-id="5327f-123">The scoring criteria that are shown are the ones from the scoring method that you associated with the solicitation type.</span></span> <span data-ttu-id="5327f-124">Na tej stronie można dodawać i usuwać kryteria.</span><span class="sxs-lookup"><span data-stu-id="5327f-124">You can choose to add or delete criteria on this page.</span></span> <span data-ttu-id="5327f-125">Istnieje również możliwość dodawania nowych kryteriów przez ich kopiowanie z innych metod punktowania.</span><span class="sxs-lookup"><span data-stu-id="5327f-125">It's also possible to add new criteria by copying them from other scoring methods.</span></span>  
+6. <span data-ttu-id="5327f-126">Kliknij opcję Kopiowanie kryteriów.</span><span class="sxs-lookup"><span data-stu-id="5327f-126">Click Copy criteria.</span></span>
+7. <span data-ttu-id="5327f-127">W polu Metoda punktowa wprowadź lub wybierz wartość.</span><span class="sxs-lookup"><span data-stu-id="5327f-127">In the Scoring method field, enter or select a value.</span></span>
+8. <span data-ttu-id="5327f-128">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="5327f-128">Click OK.</span></span>
+9. <span data-ttu-id="5327f-129">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="5327f-129">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
