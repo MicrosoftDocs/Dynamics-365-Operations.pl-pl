@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113878"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466045"
 ---
 # <a name="configure-life-event-types"></a>Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
 
-Microsoft Dynamics 365 Human Resources używa typów zmiany sytuacji życiowej do zdefiniowania zdarzeń, które uzasadniają aktualizowanie rejestracji pracowników na świadczenia. Na przykład zawarcie związku małżeńskiego czy narodziny dziecka. Każdy identyfikator typu zmiany sytuacji życiowej może być skojarzony tylko z jednym typem zmiany sytuacji życiowej. Jeśli na przykład utworzysz identyfikator zmiany sytuacji życiowej o nazwie Zmiana adresu, który jest skojarzony z typem zmiany sytuacji życiowej Adres pracownika etatowego, nie można utworzyć kolejnego identyfikatora o nazwie Zmiana adresu pracownika etatowego i skojarzyć go z typem zmiany sytuacji życiowej Zmiana adresu pracownika etatowego. 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources używa typów zmiany sytuacji życiowej do zdefiniowania zdarzeń, które uzasadniają aktualizowanie rejestracji pracowników na świadczenia. Na przykład zawarcie związku małżeńskiego czy narodziny dziecka. Każdy identyfikator typu zmiany sytuacji życiowej może być skojarzony tylko z jednym typem zmiany sytuacji życiowej. Jeśli na przykład utworzysz identyfikator zmiany sytuacji życiowej o nazwie Zmiana adresu, który jest skojarzony z typem zmiany sytuacji życiowej Adres pracownika etatowego, nie można utworzyć kolejnego identyfikatora o nazwie Zmiana adresu pracownika etatowego i skojarzyć go z typem zmiany sytuacji życiowej Zmiana adresu pracownika etatowego. 
 
 Po utworzeniu typów zmian sytuacji życiowej należy je skojarzyć z typami planów. Aby uzyskać więcej informacji, zobacz [Tworzenie typów planów](hr-benefits-setup-plan-types.md).
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f701d9e38e04769f1255e6f8cb3ee757bf22f96c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e3a4966aeb0adb50c82e4edd626ea9c0289703e3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113894"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464309"
 ---
 # <a name="set-up-flex-credit-programs"></a>Konfigurowanie programów kredytu elastycznego
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Za pomocą programów kredytu elastycznego w programie Microsoft Dynamics 365 Human Resources można rejestrować pracowników na świadczenia zgodnie z ustaloną wcześniej liczbą elastycznych punktów kredytowych. Pracownicy mogą wybrać sposób przydzielania ich elastycznych punktów kredytowych. Na przykład jeśli pracownik jest objęty planem ubezpieczenia zdrowotnego swojego małżonka, może chcieć wykorzystać punkty kredytowe, które normalnie przeznaczyłby na ubezpieczenie zdrowotne, na inne świadczenia. 
 

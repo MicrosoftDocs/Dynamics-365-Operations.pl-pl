@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8746f449f2b30b2e2119446c1912842c420acbfc
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
+ms.openlocfilehash: 27324b7705fe37ab00e169e8ea05c7768f32b120
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152060"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467344"
 ---
 # <a name="view-and-manage-address-changes"></a>Wyświetlanie zmian adresu i zarządzanie nimi
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym temacie wyjaśniono, w jaki sposób można wyświetlać zmiany adresu i zarządzać nimi na stronie **Edytuj dane osobowe pracownika sklepu internetowego** lub strony szczegółów **pracownika** w programie Dynamics 365 Human Resources.
 

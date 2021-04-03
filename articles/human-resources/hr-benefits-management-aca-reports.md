@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2e4b250f4a059719067a9e19bbf3ce4aecc9bb1f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 24df18f428e4ca14859bc34048a6bda5e03d1b2f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113896"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464381"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generowanie raportów ACA w zarządzaniu świadczeniami
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W jaki sposób zarządzanie świadczeniami pomaga w śledzeniu informacji, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA). Podobnie jak funkcja raportowania ACA w starym obszarze roboczym **Świadczenia**, ta funkcja dotyczy wyłącznie firm w Stanach Zjednoczonych.
 

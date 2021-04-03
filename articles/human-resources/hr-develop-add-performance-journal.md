@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 574925f0e278ad7bd3c654432fd0f862fd3c3259
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: a865ee37ed650c564961f6b3dd8773eea4f7b9ea
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115879"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465637"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Dodawanie do swojego arkusza wydajności i wysyłanie pochwały innej osobie
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Arkusz wydajności przechowuje informacje, które odnoszą się do sposobu osiągania celów lub efektywności działania w okresie. Z arkusza można także pochwalić działania współpracownika. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.
 
