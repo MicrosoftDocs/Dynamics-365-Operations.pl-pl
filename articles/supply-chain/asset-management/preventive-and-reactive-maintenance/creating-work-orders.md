@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131800"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500581"
 ---
 # <a name="creating-work-orders"></a>Tworzenie zlecenia pracy
 
@@ -62,8 +62,7 @@ Aby utworzyć zlecenia pracy na podstawie harmonogramu konserwacji, należy wyko
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Grupowanie wierszy zlecenia pracy tworzonych automatycznie podczas planowania konserwacji
 
-> [!IMPORTANT]
-> Funkcje opisane w tej sekcji są dostępne jako część wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Aktualizacje do jednej wersji usługi — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Ta funkcja umożliwia definiowanie reguł grupowania wierszy zleceń pracy w ramach pojedynczego zlecenia, gdy system jest tak ustawiony, aby generował zlecenia pracy automatycznie na podstawie planu konserwacji. Wcześniej generowane automatycznie zlecenia pracy mogły zawierać tylko jeden wiersz. Teraz jednak można grupować zlecenia według na przykład składnika majątku, typu składnika majątku lub lokalizacji czynności. (Ręcznie wygenerowane zlecenia pracy można już grupować w ten sposób, zgodnie z opisem w poprzedniej sekcji tego tematu).
 

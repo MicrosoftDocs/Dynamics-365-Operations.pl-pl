@@ -3,10 +3,9 @@ title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czas
 description: W tym temacie opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: NickSelin
 manager: AnnBe
-ms.date: 12/04/2020
+ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ba696fb7a8d9083d11cc29953cf1340a581afcf
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797348"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574132"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -205,12 +204,39 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 <td>Ostrzeżenie</td>
 <td>Zdefiniowana nazwa &lt;nazwa składnika&gt; nie istnieje w arkuszu programu Excel &lt;nazwa arkusza&gt;</td>
 </tr>
+<tr>
+<td><a href='#i14'>Niezsynchronizowany format</a></td>
+<td>Integralność danych</td>
+<td>Ostrzeżenie</td>
+<td>
+<p>Tag &lt;Znacznik formantu zawartości programu Word&gt; nie istnieje w pliku szablonu programu Word</p>
+<p><b>Błąd uruchamiania:</b> &lt;Znacznik formantu zawartości&gt; programu Word otagowanego nie istnieje w pliku szablonu programu Word.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i15'>brak domyślnego mapowania</a></td>
+<td>Integralność danych</td>
+<td>Wadliwe</td>
+<td>
+<p>Dla modelu danych o nazwie &lt;modelu (deskryptor główny)&gt; istnieje więcej niż jedno mapowanie modelu w nazwach &lt;konfiguracji rozdzielonych przecinkami&gt;. Ustaw jedną z konfiguracji jako domyślną</p>
+<p><b>Błąd uruchamiania:</b> Dla modelu danych o nazwie &lt;modelu (deskryptor główny)&gt; istnieje więcej niż jedno mapowanie modelu w nazwach &lt;konfiguracji rozdzielonych przecinkami&gt;. Ustaw jedną z konfiguracji jako domyślną.</p>
+</td>
+</tr>
+<tr>
+<td><a href='#i16'>Niespójne ustawienie składników nagłówka lub stopki</a></td>
+<td>Integralność danych</td>
+<td>Wadliwe</td>
+<td>
+<p>Nagłówki/stopki (&lt;typ składnika: nagłówek lub stopka&gt;) są niespójne</p>
+<p><b>Środowisko uruchomieniowe:</b> Jeśli zostanie wykonana wersja robocza skonfigurowanego formatu ER, ostatni skonfigurowany składnik jest używany w czasie wykonywania.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 ## <a name="type-conversion"></a><a id="i1"></a>Konwersja typu
 
-W module ER następuje sprawdzenie, czy typ danych pola modelu danych jest zgodny z typem danych wyrażenia skonfigurowanego jako powiązanie tego pola. Jeśli typy danych są niezgodne, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że moduł ER nie może przekonwertować wyrażenia typu A na pole typu B.
+W module ER następuje sprawdzenie, czy typ danych pola modelu danych jest zgodny z typem danych wyrażenia skonfigurowanego jako powiązanie tego pola. Jeśli typy danych są niezgodne, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że moduł ER nie może przekonwertować wyrażenia typu A na pole typu B.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -219,17 +245,17 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
     ![Pole X i typ danych Liczba całkowita dodane do drzewa trybu danych na stronie Model danych](./media/er-components-inspections-01.png)
 
-3. W okienku źródeł danych mapowania modelu dodaj źródło danych typu **Pole obliczeniowe**.
+3. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Pole obliczeniowe**.
 4. Nazwij nowe źródło danych **Y** i skonfiguruj je tak, aby zawierało wyrażenie `INTVALUE(100)`.
 5. Powiąż **X** z **Y**.
 6. W projektancie modelu danych zmień typ danych pola **X** z **Liczba całkowita** na **Int64**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![walidacja edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-01.gif)
+    ![Walidacja edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-01.gif)
 
 8. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję składnika mapowania modelu wybranej konfiguracji ER na stronie **Konfiguracje**.
 
-    ![Walidacja w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje](./media/er-components-inspections-01a.png)
+    ![Inspekcja w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje](./media/er-components-inspections-01a.png)
 
 9. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że wartość typu **Liczba całkowita** zwracana przez wyrażenie `INTVALUE(100)` źródła danych **Y** nie może być przechowywana w polu modelu danych **X** o typie **Int64**.
 
@@ -285,7 +311,7 @@ Zaktualizuj mapowanie formatu elementu formatu **X**, zmieniając wyrażenie z `
 
 ## <a name="missing-configuration-element"></a><a id="i3"></a>Brak elementu konfiguracji
 
-W module ER następuje sprawdzenie, czy wyrażenia wiązania zawierają tylko źródła danych skonfigurowane w edytowalnym składniku ER. Dla każdego powiązania zawierającego źródło danych, którego nie ma w edytowalnym składniku ER, występuje błąd walidacji w projektancie operacji ER lub projektancie mapowania modelu ER.
+W module ER następuje sprawdzenie, czy wyrażenia wiązania zawierają tylko źródła danych skonfigurowane w edytowalnym składniku ER. Dla każdego powiązania zawierającego źródło danych, którego nie ma w edytowalnym składniku ER, występuje błąd sprawdzania poprawności w projektancie operacji ER lub projektancie mapowania modelu ER.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -294,10 +320,10 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
     ![Drzewo modelu danych z polem X i typem danych Liczba całkowita na stronie Model danych](./media/er-components-inspections-01.png)
 
-3. W okienku źródeł danych mapowania modelu dodaj źródło danych typu **Pole obliczeniowe**.
+3. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Pole obliczeniowe**.
 4. Nazwij nowe źródło danych **Y** i skonfiguruj je tak, aby zawierało wyrażenie `INTVALUE(100)`.
 5. Powiąż **X** z **Y**.
-6. W projektancie mapowania modelu w okienku źródła danych usuń źródło danych **Y**.
+6. W projektancie mapowania modelu w okienku **źródła danych** usuń źródło danych **Y**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
     ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu](./media/er-components-inspections-03.gif)
@@ -316,11 +342,11 @@ Usuń powiązanie pola modelu danych **X** w celu zakończenia odwoływania do n
 
 #### <a name="option-2"></a>Opcja 2
 
-W okienku źródła danych w projektancie mapowania modelu ER dodaj ponownie źródło danych **Y**.
+W projektancie mapowania modelu w okienku **Źródła danych** ponownie dodaj źródło danych **Y**.
 
 ## <a name="executability-of-an-expression-with-filter-function"></a><a id="i4"></a>Wykonywalność wyrażenia z funkcją FILTER
 
-Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Źródło danych typu **Lista rekordów** jest używane jako argument tej funkcji i określa źródło aplikacji dla tego wywołania. Moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w funkcji `FILTER`. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że wyrażenie ER zawierające funkcję `FILTER` nie może zostać uruchomione w czasie wykonywania. 
+Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Źródło danych typu **Lista rekordów** jest używane jako argument tej funkcji i określa źródło aplikacji dla tego wywołania. Moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w funkcji `FILTER`. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że wyrażenie ER zawierające funkcję `FILTER` nie może zostać uruchomione w czasie wykonywania.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -358,7 +384,7 @@ Zmień wyrażenie w źródle danych **FilteredVendor** z `FILTER(Vendor, Vendor.
 
 ## <a name="executability-of-a-groupby-data-source"></a><a id="i5"></a>Wykonywalność źródła danych typu GROUPBY
 
-Źródło danych typu **GROUPBY** dzieli wyniki zapytania na grupy rekordów, zazwyczaj w celu wykonania jednej lub więcej agregacji w każdej grupie. Każde źródło danych typu **GROUPBY** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **GROUPBY** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **GROUPBY** nie może być uruchamiane w czasie wykonywania.
+Źródło danych typu **GROUPBY** dzieli wyniki zapytania na grupy rekordów, zazwyczaj w celu wykonania jednej lub więcej agregacji w każdej grupie. Każde źródło danych typu **GROUPBY** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **GROUPBY** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródła danych, do którego istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **GROUPBY** nie może być uruchamiane w czasie wykonywania.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -381,7 +407,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
 9. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do skonfigurowanego źródła danych **GroupedTrans**.
 
-    ![Weryfikowanie składnika mapowania modelu ER oraz sprawdzanie, czy można wykonać zapytanie do skonfigurowanego źródła danych GroupedTrans na stronie Projektant mapowania modelu](./media/er-components-inspections-05b.png)
+    ![Sprawdzanie poprawności komponentu mapowania modelu ER i sprawdzanie, czy można zapytać o źródło danych Group Trans na stronie projektanta mapowania modelu](./media/er-components-inspections-05b.png)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ źródło danych **Trans** zawiera zagnieżdżone pole typu **Pole obliczeniowe**, które nie zezwala na przekształcenie wywołania o źródło danych **GroupedTrans** na bezpośrednią instrukcję SQL.
 
@@ -405,7 +431,7 @@ Zmień wartość pola **Lokalizacja wykonywania** dla źródła danych **Grouped
 
 ## <a name="executability-of-a-join-data-source"></a><a id="i6"></a>Wykonywalność źródła danych typu JOIN
 
-Źródło danych typu [JOIN](er-join-data-sources.md) łączy rekordy z dwóch lub więcej tabel bazy danych na podstawie pól pokrewnych. Każde źródło danych typu **JOIN** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **JOIN** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródeł danych, do których istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania SQL do co najmniej jednego przywoływanego źródła danych, w projektancie mapowania modelu ER wystąpi błąd walidacji. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **JOIN** nie może być uruchamiane w czasie wykonywania.
+Źródło danych typu [JOIN](er-join-data-sources.md) łączy rekordy z dwóch lub więcej tabel bazy danych na podstawie pól pokrewnych. Każde źródło danych typu **JOIN** można tak skonfigurować, aby było uruchamiane na poziomie bazy danych lub w pamięci. Gdy źródło danych typu **JOIN** skonfigurowano tak, aby było uruchamiane na poziomie bazy danych, moduł ER sprawdza, czy można ustanowić bezpośrednie zapytanie SQL do źródeł danych, do których istnieje odwołanie w tym źródle danych. Jeśli nie można ustanowić bezpośredniego zapytania SQL do co najmniej jednego przywoływanego źródła danych, w projektancie mapowania modelu ER wystąpi błąd sprawdzania poprawności. Odebrany komunikat stwierdza, że skonfigurowane źródło danych **JOIN** nie może być uruchamiane w czasie wykonywania.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -457,7 +483,7 @@ Zmień wartość pola **Wykonaj** dla źródła danych **JoinedList** z **Zapyta
 
 ## <a name="preferability-of-filter-vs-where-function"></a><a id="i7"></a>Preferowanie funkcji FILTER wobec WHERE
 
-Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Funkcja [WHERE](er-functions-list-where.md) pobiera wszystkie rekordy z podanego źródła, a wyboru rekordów dokonuje w pamięci. Źródło danych typu **Lista rekordów** jest używane jako argument obu funkcji i określa źródło pozyskiwania rekordów. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **WHERE**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie walidacji. Odebrany komunikat zaleca użycie funkcji **FILTER** zamiast funkcji **WHERE**, ponieważ działa ona sprawniej.
+Funkcja [FILTER](er-functions-list-filter.md) wbudowana w module ER służy do uzyskiwania dostępu do tabel, widoków lub jednostek danych aplikacji poprzez wykonywanie pojedynczego wywołania SQL w celu uzyskania wymaganych danych w postaci listy rekordów. Funkcja [WHERE](er-functions-list-where.md) pobiera wszystkie rekordy z podanego źródła, a wyboru rekordów dokonuje w pamięci. Źródło danych typu **Lista rekordów** jest używane jako argument obu funkcji i określa źródło pozyskiwania rekordów. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **WHERE**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie sprawdzania poprawności. Odebrany komunikat zaleca użycie funkcji **FILTER** zamiast funkcji **WHERE**, ponieważ działa ona sprawniej.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -472,11 +498,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 9. Nazwij nowe źródło danych **FilteredVendor** i skonfiguruj je tak, aby zawierało wyrażenie `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Walidacja w celu skontrolowania edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-07a.png)
+    ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu](./media/er-components-inspections-07a.png)
 
 11. Zauważ, że ostrzeżenia sprawdzania poprawności zalecają używanie funkcji **FILTER** zamiast funkcji **WHERE** dla źródeł danych **FilteredVendor** i **FilteredTrans**.
 
-    ![Ostrzeżenia sprawdzania poprawności rekomendujące funkcję Filter zamiast funkcji Where na stronie Projektant mapowania modelu](./media/er-components-inspections-07b.png)
+    ![Zalecenie użycia funkcji FILTER zamiast funkcji WHERE na stronie projektanta odwzorowania modelu](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -484,7 +510,7 @@ Wybierz opcję **Napraw**, aby automatycznie zastąpić funkcję **WHERE** funkc
 
 Alternatywnie można zaznaczyć wiersz jednego ostrzeżenia w siatce, a następnie wybrać opcję **Napraw wybrane**. W tym przypadku wyrażenie jest automatycznie zmieniane tylko w źródle danych wymienionym w wybranym ostrzeżeniu.
 
-![Wybieranie opcji Napraw w celu automatycznego zastąpienia funkcji WHERE funkcją FILTER na stronie Projektant mapowania modelu](./media/er-components-inspections-07c.png)
+![Wybranie opcji Napraw, aby automatycznie zastąpić funkcję WHERE funkcją FILTER na stronie projektanta odwzorowania modelu](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Ręczne rozwiązywanie
 
@@ -492,7 +518,7 @@ Można ręcznie skorygować wyrażenia we wszystkich źródłach danych wymienio
 
 ## <a name="preferability-of-allitemsquery-vs-allitems-function"></a><a id="i8"></a>Preferowanie funkcji ALLITEMSQUERY wobec ALLITEMS
 
-Funkcje [ALLITEMS](er-functions-list-allitems.md) i [ALLITEMSQUERY](er-functions-list-allitemsquery.md) wbudowane w module ER służą do uzyskania spłaszczonej wartości **Lista rekordów** zawierającej listę rekordów reprezentujących wszystkie elementy pasujące do podanej ścieżki. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **ALLITEMS**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie walidacji. Odebrany komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS**, ponieważ działa ona sprawniej.
+Funkcje [ALLITEMS](er-functions-list-allitems.md) i [ALLITEMSQUERY](er-functions-list-allitemsquery.md) wbudowane w module ER służą do uzyskania spłaszczonej wartości **Lista rekordów** zawierającej listę rekordów reprezentujących wszystkie elementy pasujące do podanej ścieżki. Moduł ER sprawdza, czy można ustanowić bezpośrednie wywołanie SQL do źródła danych, do którego istnieje odwołanie w funkcji **ALLITEMS**. Jeśli nie można ustanowić bezpośredniego wywołania, w projektancie mapowania modelu ER wystąpi ostrzeżenie sprawdzania poprawności. Odebrany komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS**, ponieważ działa ona sprawniej.
 
 Poniższe kroki pokazują, jak może dojść do tego problemu.
 
@@ -505,11 +531,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 7. Nazwij nowe źródło danych **FilteredVendorTrans** i skonfiguruj je tak, aby zawierało wyrażenie `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Strona Projektant mapowania modelu, przycisk Weryfikuj](./media/er-components-inspections-08a.png)
+    ![Sprawdzanie edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-08a.png)
 
 9. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS** dla źródła danych **FilteredVendorTrans**.
 
-    ![Ostrzeżenie sprawdzania poprawności zalecające użycie funkcji ALLITEMSQUERY zamiast funkcji ALLITEMS w składniku mapowania modelu ER na stronie Projektant mapowania modelu](./media/er-components-inspections-08b.png)
+    ![Zalecenie użycia funkcji ALLITEMSQUERY zamiast funkcji ALLITEMS na stronie projektanta odwzorowania modelu](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -517,7 +543,7 @@ Wybierz opcję **Napraw**, aby automatycznie zastąpić funkcję **ALLITEMS** fu
 
 Alternatywnie można zaznaczyć wiersz jednego ostrzeżenia w siatce, a następnie wybrać opcję **Napraw wybrane**. W tym przypadku wyrażenie jest automatycznie zmieniane tylko w źródle danych wymienionym w wybranym ostrzeżeniu.
 
-![Strona Projektant mapowania modelu, zaznaczona opcja Napraw](./media/er-components-inspections-08c.png)
+![Wybranie opcji Napraw wybrane na stronie projektanta odwzorowania modelu](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Ręczne rozwiązywanie
 
@@ -540,7 +566,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
     ![Dodawanie zagnieżdżonych pól na stronie Model danych](./media/er-components-inspections-09a.png)
 
-6. W okienku źródeł danych mapowania modelu dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
+6. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
 7. Nazwij nowe źródło danych **Vendor**. W polu **Tabela** wybierz opcję **VendTable**, aby określić, że to źródło danych będzie żądało tabeli VendTable.
 8. Dodaj źródło danych typu **Ogólne \\ Parametr wprowadzany przez użytkownika**, aby szukać konta dostawcy w oknie dialogowym środowiska uruchomieniowego.
 9. Nazwij nowe źródło danych **RequestedAccountNum**. W polu **Etykieta** wpisz **Numer konta dostawcy**. W polu **Nazwa typu danych operacyjnych** pozostaw wartość domyślną **Opis**.
@@ -632,7 +658,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
 9. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie poprawności funkcji Filter zastosowanej do buforowanego źródła danych Vendor na stronie Projektant mapowania modelu](./media/er-components-inspections-10a.png)
+    ![Sprawdzanie poprawności funkcji FILTER, która jest stosowana do buforowanego źródła danych dostawcy na stronie projektanta mapowania modelu](./media/er-components-inspections-10a.png)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że funkcji **FILTER** nie można zastosować do buforowanego źródła danych **Vendor**.
 
@@ -669,12 +695,12 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **Name**.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **AccountNumber**.
 
-    ![Dodawanie zagnieżdżonych pól do elementu Vendor na stronie Model danych](./media/er-components-inspections-11a.png)
+    ![Dodawanie zagnieżdżonych pól do elementu Dostawca na stronie Model danych](./media/er-components-inspections-11a.png)
 
-6. W okienku źródeł danych mapowania modelu dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
+6. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
 7. Nazwij nowe źródło danych **Vendor**. W polu **Tabela** wybierz opcję **VendTable**, aby określić, że to źródło danych będzie żądało tabeli VendTable.
 8. Dodaj źródło danych typu **Ogólne \\ Parametr wprowadzany przez użytkownika**, aby wykonywać zapytanie o konto dostawcy w oknie dialogowym środowiska uruchomieniowego.
-9 Nazwij nowe źródło danych **RequestedAccountNum**. W polu **Etykieta** wpisz **Numer konta dostawcy**. W polu **Nazwa typu danych operacyjnych** pozostaw wartość domyślną **Opis**.
+9. Nazwij nowe źródło danych **RequestedAccountNum**. W polu **Etykieta** wpisz **Numer konta dostawcy**. W polu **Nazwa typu danych operacyjnych** pozostaw wartość domyślną **Opis**.
 10. Aby wyfiltrować dostawcę, o którego jest wykonywane zapytanie, dodaj źródło danych typu **Pole obliczeniowe**.
 11. Nazwij nowe źródło danych **FilteredVendor** i skonfiguruj je tak, aby zawierało wyrażenie `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 12. Powiąż elementy modelu danych ze skonfigurowanymi źródłami danych w następujący sposób:
@@ -685,7 +711,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     > [!NOTE]
     > Pole modelu danych **Vendor.Name** pozostaje niepowiązane.
 
-    ![Elementy modelu danych powiązane ze skonfigurowanymi źródłami danych oraz element modelu danych pozostający niepowiązany na stronie Projektant mapowania modelu](./media/er-components-inspections-11b.png)
+    ![Elementy modelu danych powiązane ze skonfigurowanymi źródłami danych i element trybu danych, który pozostaje niezwiązany na stronie projektanta mapowania modelu](./media/er-components-inspections-11b.png)
 
 13. W drzewie struktury formatu dodaj następujące elementy w celu wygenerowania dokumentu wychodzącego w formacie XML zawierającego szczegóły dostawców, o których jest wykonywane zapytanie:
 
@@ -726,7 +752,7 @@ Zmodyfikuj skonfigurowane mapowanie modelu, dodając powiązanie dla pola źród
 
 #### <a name="option-2"></a>Opcja 2
 
-Zmodyfikuj skonfigurowany format, usuwając powiązanie dla elementu formatu **Zestawienie\\Strona\\Name**.
+Zmodyfikuj skonfigurowany format, usuwając powiązanie dla elementu formatu **Zestawienie\\Strona\\Nazwa**.
 
 ## <a name="not-linked-template"></a><a id="i12"></a>Niepołączony szablon
 
@@ -743,7 +769,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
     ![Sprawdzanie poprawności edytowalnego składnika formatu pliku skoroszytu na stronie Projektant formatów](./media/er-components-inspections-12a.gif)
 
-7. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat stwierdza, że plik skoroszytu **B. xlsx** nie jest połączony z żadnymi składnikami i zostanie usunięty po zmianie stanu wersji konfiguracji.
+7. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat stwierdza, że plik skoroszytu B. xlsx nie jest połączony z żadnymi składnikami i zostanie usunięty po zmianie stanu wersji konfiguracji.
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -793,6 +819,55 @@ Zmodyfikuj skonfigurowany format, usuwając wszystkie elementy odwołujące się
 
 Aby dowiedzieć się, jak zsynchronizować strukturę formatu z szablonem ER w edytorze szablonu w module [Zarządzanie dokumentami biznesowymi](er-business-document-management.md), zobacz [Aktualizowanie struktury szablonu dokumentu biznesowego](er-bdm-update-structure.md).
 
+## <a name="not-synced-with-a-word-template-format"></a><a id="i14"></a>Nie zsynchronizowano z formatem szablonu programu Word
+
+Podczas [konfigurowania](er-fillable-excel.md) składnika formatu ER, aby używał szablonu programu Word do generowania dokumentu wychodzącego, można ręcznie dodać element **Excel\\Plik**, dodać wymagany szablon jako załącznik edytowalnego składnika, a następnie wybrać ten załącznik w dodanym elemencie **Excel\\Plik**.
+
+> [!NOTE]
+> Po dołączeniu dokumentu programu Word projektant formatu ER przedstawia edytowalny element jako **Word\\Plik**.
+
+W ten sposób wskażesz, że dodany element będzie wypełniał wybrany szablon w czasie wykonywania. Ponieważ dodany szablon programu Word został zaprojektowany zewnętrznie, edytowalny format ER może zawierać odniesienia do formantów zawartości programu Word, których brakuje w dodanym szablonie. Projektant formatu ER ostrzega o wszelkich niespójnościach między właściwościami elementów formatu ER, które odwołują się do kontrolek zawartości, które nie są zawarte w dodanym szablonie programu Word.
+
+Aby uzyskać przykład, który pokazuje, jak może wystąpić ten problem, zobacz temat [Konfigurowanie formatu edytowalnego w celu pomijania sekcji podsumowania](er-design-configuration-word-suppress-controls.md#configure-to-suppress-control).
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+#### <a name="option-1"></a>Opcja 1
+
+Zmodyfikuj skonfigurowany format, usuwając **Usuniętą** formułę z elementu formatu wymienionego w ostrzeżeniu weryfikacji.
+
+#### <a name="option-2"></a>Opcja 2
+
+Zmodyfikuj szablon programu Word, [dodając](er-design-configuration-word-suppress-controls.md#tag-control) wymagany znacznik do odpowiedniej kontroli zawartości programu Word.
+
+## <a name="no-default-mapping"></a><a id="i15"></a>Brak domyślnego mapowania
+
+Po inspekcji [Brak powiązania](#i11) sprawdzane powiązania formatu są sprawdzane na tle powiązań odpowiedniego składnika mapowania modelu. Ponieważ do wystąpienia finansowego można zaimportować [kilka](./tasks/er-manage-model-mapping-configurations-july-2017.md) konfiguracji mapowania modelu ER, a każda konfiguracja może zawierać stosowny składnik mapowania modelu, należy wybrać jedną konfigurację jako konfigurację domyślną. W przeciwnym razie podczas próby uruchomienia, edycji lub walidacji sprawdzonego formatu ER wystąpi wyjątek i zostanie wyświetlony następujący komunikat: „Istnieje więcej niż jedno mapowanie \<model name (root descriptor)\> modelu dla modelu danych w konfiguracjach \<configuration names separated by comma\>. Ustaw jedną z konfiguracji jako domyślną ”.
+
+Aby zapoznać się z przykładem, który pokazuje, jak może wystąpić ten problem i jak można go naprawić, zobacz [Zarządzanie kilkoma mapowaniami pochodnymi dla pojedynczego elementu głównego modelu](er-multiple-model-mappings.md).
+
+## <a name="inconsistent-setting-of-header-or-footer-components"></a><a id="i16"></a>Niespójne ustawienie składników nagłówka lub stopki
+
+[Konfigurując](er-fillable-excel.md) składnik formatu ER do generowania dokumentu wychodzącego za pomocą szablonu programu Excel, można dodać składnik **Excel\\Nagłówek**, aby wypełniać nagłówki u góry arkusza w skoroszycie programu Excel. Można również dodać składnik **Excel\\Stopka**, aby wypełniać stopki u dołu arkusza. W przypadku każdego składnika **Excel\\Nagłówek** lub **Excel\\Stopka**, który zostanie dodaj, należy ustawić właściwość **Wyglądu nagłówka/stopki**, aby określić strony, dla których składnik jest uruchamiany. Ponieważ dla jednego składnika arkusza można skonfigurować kilka składników **Excel\\Nagłówek** lub **Excel\\Stopka**, a dla różnych typów stron **Arkusza** programu Excel można generować nagłówki lub stopki różnych typów stron, należy skonfigurować jeden składnik **Excel\\Nagłówek** lub **Excel\\Stopka** dla określonej wartości właściwości **Wyglądu nagłówka/stopki**. Jeśli więcej niż jeden składnik **Excel\\Nagłówek** lub **Excel\\Stopka** jest skonfigurowany dla określonej wartości właściwości **Wygląd nagłówka/stopki** , wystąpi błąd weryfikacji i wyświetla następujący komunikat o błędzie: „Nagłówki / stopki (&lt;typ składnika: nagłówek lub stopka&gt;) są niespójne”.
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+#### <a name="option-1"></a>Opcja 1
+
+Zmodyfikuj skonfigurowany format, usuwając jeden z niespójnych składników **Excel\\Nagłówka** lub **Excel\\Stopki**.
+
+#### <a name="option-2"></a>Opcja 2
+
+Modyfikowanie wartości właściwości **Wyglądu nagłówka/stopki** dla jednego z niespójnych składników **Excel\\Nagłówek** lub **Excel\\Stopka**.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [ALLITEMS, funkcja ER](er-functions-list-allitems.md)
@@ -812,6 +887,10 @@ Aby dowiedzieć się, jak zsynchronizować strukturę formatu z szablonem ER w e
 [Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md)
 
 [Omówienie zarządzania dokumentami biznesowymi](er-business-document-management.md)
+
+[Pomijanie formantów zawartości programu Word w generowanych raportach](er-design-configuration-word-suppress-controls.md)
+
+[Zarządzanie kilkoma mapowaniami pochodnymi dla pojedynczego elementu głównego modelu](er-multiple-model-mappings.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

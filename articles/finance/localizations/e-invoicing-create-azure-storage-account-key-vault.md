@@ -3,7 +3,7 @@ title: Utwórz konto magazynu Azure i Magazyn kluczy
 description: W tym temacie opisano sposób tworzenia konta magazynu Azure i magazynu kluczy.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104236"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479352"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -77,9 +77,12 @@ W tym temacie przedstawiono dwa główne kroki:
 
     ![Nadanie certyfikatu uprawnień](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Dodatek Faktury elektroniczne**.
-10. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
-11. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
+9. W polu **Wybierz główny** wybierz opcję **Brak zaznaczonego**.
+10. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Usługi e-fakturowania**.
+11. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
+12. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

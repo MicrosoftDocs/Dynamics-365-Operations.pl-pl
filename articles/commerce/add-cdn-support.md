@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985961"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582726"
 ---
-# <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodaj obsługę dla sieci dostarczania zawartości (CDN)
-
+# <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak dodać sieć dostarczania treści (CDN) do środowiska Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Podczas konfigurowania środowiska e-Commerce w Dynamics 365 Commerce można skonfigurować je do pracy z usługą CDN. 
 
@@ -96,8 +93,8 @@ Aby skonfigurować regułę routingu w usłudze Azure Front Door Service, wykona
 1. W polu **Nazwa** wpisz **domyślna**.
 1. W polu **zaakceptowane protokoły** wybierz opcję **HTTP i HTTPS**.
 1. W polu **hosty frontonu** wprowadź **dynamics-ecom-tenant-name.azurefd.net**.
-1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\**.
-1. W obszarze _*Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
+1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\***.
+1. W obszarze **Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
 1. W polu **Pula wewnętrzna** wybierz opcję **ecom-backend**.
 1. W grupie pól **protokół przesyłania dalej** wybierz opcję **dopasowywanie żądań**. 
 1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
@@ -109,8 +106,8 @@ Aby skonfigurować regułę buforowania w usłudze Azure Front Door Service, wyk
 1. W polu **Nazwa** wpisz **statystyki**.
 1. W polu **zaakceptowane protokoły** wybierz opcję **HTTP i HTTPS**.
 1. W polu **hosty frontonu** wprowadź **dynamics-ecom-tenant-name.azurefd.net**.
-1. W obszarze **Wzory do dopasowania**, w górnym polu wprowadź wartość **/\_msdyn365/\_scnr/\**.
-1. W obszarze _*Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
+1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\_msdyn365/\_scnr/\***.
+1. W obszarze **Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
 1. W polu **Pula wewnętrzna** wybierz opcję **ecom-backend**.
 1. W grupie pól **protokół przesyłania dalej** wybierz opcję **dopasowywanie żądań**.
 1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
@@ -143,25 +140,7 @@ Sieć CDN powinna być teraz poprawnie skonfigurowana, aby można było jej uży
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Konfigurowanie nazwy domeny](configure-your-domain-name.md)
-
-[Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md)
-
-[Tworzenie witryny handlu elektronicznego](create-ecommerce-site.md)
-
-[Kojarzenie witryny Dynamics 365 Commerce z kanałem online](associate-site-online-store.md)
-
-[Zarządzanie plikami robots.txt](manage-robots-txt-files.md)
-
-[Zbiorowe przekazanie przekierowań adresów URL](upload-bulk-redirects.md)
-
-[Konfigurowanie dzierżawy B2C w usłudze Commerce](set-up-B2C-tenant.md)
-
-[Konfigurowanie stron niestandardowych do logowań użytkowników](custom-pages-user-logins.md)
-
-[Konfigurowanie wielu dzierżawców B2C w środowisku Commerce](configure-multi-B2C-tenants.md)
-
-[Włączanie wykrywania sklepu na podstawie lokalizacji](enable-store-detection.md)
+[Opcje implementacji sieci dostarczania zawartości](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

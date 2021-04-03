@@ -3,10 +3,9 @@ title: Usunięte lub wycofane funkcje w poprzednich wersjach
 description: W tym temacie opisano funkcje, które zostały usunięte lub które zostały zaplanowane do usunięcia z aplikacji Dynamics 365 for Finance and Operations i jej poprzednich wydań.
 author: sericks007
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: db276c693a729b919bc609bb4b94843bb11a8fe3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154392"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559337"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -39,7 +38,7 @@ W tym temacie opisano funkcje, które zostały usunięte lub wycofane z systemu 
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 z aktualizacją 31 platformy
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114677"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574229"
 ---
 # <a name="inventory-visibility-add-in"></a>Dodatek Widoczność magazynu
 
@@ -48,11 +48,64 @@ Aby uzyskać więcej informacji, zobacz [Zasoby w Lifecycle Services (LCS)](http
 Aby można było zainstalować dodatek Widoczność magazynu, trzeba:
 
 - Uzyskać projekt implementacji usługi LCS z co najmniej jednym wdrożonym środowiskiem.
-- Wygeneruj klucze beta dla oferty w LCS.
-- Włącz klucze beta dla usługi LCS.
-- Skontaktuj się z zespołem ds. produktu Widoczność magazynu Microsoft i podaj identyfikator środowiska, w którym chcesz wdrożyć dodatek Widoczność magazynu.
+- Upewnij się, że zostały spełnione wymagania wstępne dotyczące konfigurowania dodatków dostępnych w [Omówienie dodatków](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Widoczność zapasów nie wymaga podwójnego łączenia.
+- Skontaktuj się z zespołem widoczności pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) aby uzyskać następujące trzy wymagane pliki:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (jeśli uruchomiona wersja Supply Chain Management jest wcześniejsza niż 10.0.18)
+
+> [!NOTE]
+> Obecnie obsługiwanymi krajami i regionami są Kanada, Stany Zjednoczone i Unia Europejska (UE).
 
 Jeśli masz pytania dotyczące tych wymagań wstępnych, skontaktuj się z zespołem ds. produktu Widoczność magazynu.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ustaw Dataverse
+
+Aby skonfigurować Dataverse, wykonaj następujące czynności.
+
+1. Dodaj zasadę usługi do dzierżawy:
+
+    1. Zainstaluj moduł Azure AD PowerShell w wersji 2 zgodnie z opisem w [Zainstaluj Azure Active Directory PowerShell dla programu Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Uruchom następujące polecenie PowerShell.
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Utwórz użytkownika aplikacji dla Widoczność magazynu w Dataverse:
+
+    1. Otwórz adres URL środowiska Dataverse.
+    1. Przejdź do **Ustawienia zaawansowane \> System \> Zabezpieczenia \> Użytkownicy** i utwórz użytkownika aplikacji. Użyj menu Widok, aby zmienić widok strony na **Użytkowników aplikacji**.
+    1. Wybierz pozycję **Nowy**. Ustaw Identyfikator aplikacji na *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Identyfikator obiektu zostanie automatycznie załadowany po zapisaniu zmian) Możesz dostosować nazwę. Na przykład można zmienić go na *Widoczność magazynu*. Po zakończeniu wybierz przycisk **Zapisz**.
+    1. Wybierz pozycję **Przypisz rolę**, a następnie pozycję **Administrator systemu**. Jeśli istnieje rola o nazwie **Użytkownik Common Data Service** również ją zaznacz.
+
+    Aby uzyskać więcej informacji, zobacz [Utwórz użytkownika aplikacji](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Importuj plik `Inventory Visibility Dataverse Solution.zip`, który zawiera jednostki powiązane z konfiguracją Dataverse i Power Apps:
+
+    1. Przejdź do strony **Rozwiązania**.
+    1. Wybierz opcję **Importuj**.
+
+1. Importuj przepływ wyzwalacza uaktualnienia konfiguracji:
+
+    1. Przechodzenie do strony Microsoft Flow.
+    1. Upewnij się, że istnieje połączenie o nazwie *Dataverse (starsze)*. (Jeśli nie istnieje, utwórz go)
+    1. Importuj plik `Inventory Visibility Configuration Trigger.zip`. Po zaimportowaniu wyzwalacz pojawi się w obszarze **Moje przepływy**.
+    1. Inicjuj następujące cztery zmienne na podstawie informacji o środowisku:
+
+        - Identyfikator dzierżawy systemu Azure
+        - Identyfikator klienta aplikacji platformy Azure
+        - Wpis tajny klienta aplikacji platformy Azure
+        - Punkt końcowy Widoczności zapasów
+
+            Aby uzyskać więcej informacji o tej zmiennej, zobacz sekcję [Konfiguracja integracji widoczności zapasów](#setup-inventory-visibility-integration) w dalszej części tego tematu.
+
+        ![Wyzwalacz konfiguracji](media/configuration-trigger.png "Wyzwalacz konfiguracji")
+
+    1. Wybierz opcję **Włącz**.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Instalacja aplikacji dodatkowych
 
@@ -61,14 +114,16 @@ Aby zainstalować dodatek Widoczność magazynu, trzeba:
 1. Zalogować się do portalu [Microsoft LifeCycle Services (LCS)](https://lcs.dynamics.com/Logon/Index).
 1. Na stronie głównej wybierz projekt, w którym jest wdrożone środowisko.
 1. Na stronie projektu wybierz środowisko, w którym chcesz zainstalować dodatek.
-1. Na stronie środowiska przewiń w dół, aż zostanie wyświetlona sekcja **Dodatki środowiska**. Jeśli sekcja nie jest widoczna, należy upewnić się, że wstępnie wymagane klucze beta zostały w pełni przetworzone.
+1. Na stronie środowisko przewiń w dół do momentu, w sekcji **Dodatki środowiska**, w sekcji **Integracji Power Platform**, gdzie możesz znaleźć nazwę środowiska Dataverse.
 1. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
+
     ![Strona środowiska w LCS](media/inventory-visibility-environment.png "Strona środowiska w LCS")
+
 1. Wybierz opcję **Zainstaluj nowy dodatek**. Zostanie otwarta lista dostępnych dodatków.
-1. Wybierz **Usługę zapasy** z listy. (Uwaga: może to być teraz widoczne jako **Dodatek Widoczność magazynu dla Dynamics 365 Supply Chain Management** .)
+1. Z listy menu wybierz opcję **Widoczność magazynu**.
 1. Wprowadź wartości dla następujących pól środowiska:
 
-    - **AAD identyfikatora aplikacji**
+    - **Identyfikator aplikacji AAD (klienta)**
     - **Identyfikator AAD dzierżawy**
 
     ![Strona konfiguracji dodatku](media/inventory-visibility-setup.png "Strona konfiguracji dodatku")
@@ -76,11 +131,74 @@ Aby zainstalować dodatek Widoczność magazynu, trzeba:
 1. Zaakceptuj regulamin, zaznaczając pole wyboru **Regulamin**.
 1. Wybierz **Zainstaluj**. Stan dodatku będzie widoczny jako **Instalowany**. Po zakończeniu operacji odśwież stronę, aby zobaczyć zmianę stanu na **Zainstalowane**.
 
-### <a name="get-a-security-service-token"></a>Pobierz token usługi zabezpieczeń
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>Odinstalowywanie dodatku
+
+Aby odinstalować dodatek, wybierz opcję **Odinstaluj**. Po odświeżeniu LCS dodatek Widoczności magazynu zostanie usunięty. Proces dezinstalacji usuwa rejestrację dodatku, a także rozpoczyna zadanie czyszczenia wszystkich danych biznesowych przechowywanych w usłudze.
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Zużycie danych o dostępnych zapasach z Supply Chain Management
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Wdróż pakiet integracyjny Widoczność magazynu
+
+Jeśli korzystasz z rozwiązania Supply Chain Management w wersji 10.0.17 lub starszej, skontaktuj się z pokładowym zespołem pomocy technicznej ds. Widoczności zapasów pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby uzyskać paczkę z plikami. Następnie wdróż pakiet w LCS.
+
+> [!NOTE]
+> Jeśli podczas wdrażania wystąpi błąd niezgodności wersji, należy ręcznie zaimportować projekt X ++ do środowiska programistycznego. Następnie utwórz pakiet do wdrożenia w swoim środowisku programistycznym i wdróż go w środowisku produkcyjnym.
+> 
+> Kod jest dołączony do programu Supply Chain Management w wersji 10.0.18. Jeśli używasz tej lub nowszej wersji, wdrożenie nie jest wymagane.
+
+Upewnij się, że poniższe funkcje są włączone w środowisku Supply Chain Management. (Domyślnie są włączone).
+
+| Opis funkcji | Wersja kodu | Przełącz klasę |
+|---|---|---|
+| Włączanie lub wyłączanie korzystania z wymiarów magazynowych w tabeli InventSum | 10.0.11 | InventUseDimOfInventSumToggle |
+| Włączanie lub wyłączanie korzystania z wymiarów magazynowych w tabeli InventSumDelta | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Konfiguracja integracji Widoczności zapasów
+
+1. W Supply Chain Management otwórz obszar roboczy **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i włącz funkcję **Integracja widoczności magazynu**.
+1. Przejdź do witryny **Zarządzanie zapasami \> Konfiguracja \> Parametry integracji widoczności magazynu**, i wprowadź adres URL środowiska, w którym jest uruchamiana widoczność magazynu.
+
+    Znajdź region systemu Azure środowiska usługi LCS, a następnie wprowadź adres URL. Adres URL ma następujący formularz:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Na przykład, jeśli znajdujesz się w Europie, Twoje środowisko będzie mieć jeden z następujących adresów URL:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Obecnie dostępne są następujące regiony.
+
+    | Region systemu Azure | Krótka nazwa regionu |
+    |---|---|
+    | Australia Wschodnia | eau |
+    | Australia Południowo-Wschodnia | seau |
+    | Kanada środkowa | cca |
+    | Kanada wschodnia | eca |
+    | Europa Północna | neu |
+    | Europa Zachodnia | weu |
+    | Wschodnie stany USA | eus |
+    | Zachodnie stany USA | wus |
+
+1. Przejdź do **Zarządzanie zapasami \> Okresowe \> Integracja widoczności magazynu** i włącz zadanie. Wszystkie zdarzenia zmiany zapasów z Supply Chain Management zostaną teraz zaksięgowane w widoczności magazynu.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>Dodatek Widoczność magazynu w API publicznym
+
+Publiczny interfejs API REST w dodatku Widoczność magazynu przedstawia kilka konkretnych punktów końcowych integracji. Obsługuje on trzy główne typy interakcji:
+
+- Księgowanie dostępnych zmian zapasów w dodatku z systemu zewnętrznego
+- Badanie bieżących ilości dostępnych zapasów z systemu zewnętrznego
+- Automatyczna synchronizacja z dostępnymi zapasami Supply Chain Management
+
+Synchronizacja automatyczna nie jest częścią publicznego interfejsu API. Jest natomiast obsługiwane w tle środowisk, w których jest włączony dodatek Widoczność magazynu.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Uwierzytelnianie
+
+Token zabezpieczeń platformy służy do wywołania dodatku Widoczność magazynu. Dlatego należy wygenerować *token Azure Active Directory (Azure AD)* przy użyciu aplikacji Azure AD. Następnie należy użyć tokenu Azure AD, aby uzyskać *token dostępu* z usługi zabezpieczeń.
 
 Aby uzyskać token usługi zabezpieczeń, wykonaj następujące czynności:
 
-1. Zaloguj się do witryny Azure Portal i użyj go, aby znaleźć parametry `clientId` i `clientSecret` dla aplikacji Supply Chain Management.
+1. Zaloguj się do witryny Azure i użyj go, aby znaleźć parametry `clientId` i `clientSecret` dla aplikacji Supply Chain Management.
 1. Pobiera token usługi Azure Active Directory (`aadToken`), przesyłając żądanie HTTP z następującymi właściwościami:
     - **URL** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Metoda** - `GET`
@@ -140,27 +258,7 @@ Aby uzyskać token usługi zabezpieczeń, wykonaj następujące czynności:
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>Odinstalowywanie dodatku
-
-Aby odinstalować dodatek, wybierz opcję **Odinstaluj**. Odśwież usługi LCS i dodatek Widoczność magazynu zostanie usunięty. Proces odinstalowywania usunie rejestrację dodatku, a także uruchomi zadanie w celu oczyszczenia wszystkich danych biznesowych przechowywanych w usłudze.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Dodatek Widoczność magazynu w API publicznym
-
-Publiczny interfejs API REST w dodatku Widoczność magazynu przedstawia kilka konkretnych punktów końcowych integracji. Obsługuje on trzy główne typy interakcji:
-
-- Księgowanie dostępnych zmian zapasów w dodatku z systemu zewnętrznego.
-- Badanie bieżących ilości dostępnych zapasów z systemu zewnętrznego.
-- Automatyczna synchronizacja z Supply Chain Management.
-
-Synchronizacja automatyczna nie jest częścią publicznego interfejsu API, ale jest traktowana w tle dla środowisk, w których włączono dodatek widoczności magazynu.
-
-### <a name="authentication"></a>Uwierzytelnianie
-
-Token zabezpieczający platformy jest używany do wywoływania dodatku widoczności magazynu, więc musisz wygenerować token Azure Active Directory przy użyciu Azure Active Directory.
-
-Aby uzyskać więcej informacji na temat uzyskiwania tokenu zabezpieczającego, przejrzyj temat [Instalowanie dodatku Widoczność zapasów](#install-add-in).
-
-### <a name="configure-the-inventory-visibility-api"></a>Skonfiguruj interfejs API funkcji Widoczność magazynu
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Skonfiguruj interfejs API funkcji Widoczność magazynu
 
 Przed rozpoczęciem korzystania z usługi należy wykonać konfiguracje opisane w poniższych podsekcjach. Konfiguracja może się różnić w zależności od szczegółów środowiska. Obejmuje ono głównie cztery części:
 
@@ -257,7 +355,7 @@ Oto przykładowe zapytanie dotyczące produktu z kombinacją koloru i rozmiaru.
 
 #### <a name="custom-measurement"></a>Miara niestandardowa
 
-Domyślne ilości miar są połączone z Supply Chain Management, jednak może zaistnieć potrzeba utworzenia ilości składającej się z kombinacji domyślnych miar. W tym celu można skonfigurować niestandardowe ilości, które zostaną dodane do danych wyjściowych zapytań dostępnych zapasów.
+Domyślne ilości miar są połączone z Supply Chain Management. Jednakże może być wymagane, aby ilość składała się z kombinacji domyślnych miar. W tym celu można skonfigurować niestandardowe ilości, które zostaną dodane do danych wyjściowych zapytań dostępnych zapasów.
 
 Funkcja umożliwia po prostu zdefiniowanie zestawu miar, które będą dodawane, i/lub zestawu miar, które zostaną odjęte od miary niestandardowej.
 

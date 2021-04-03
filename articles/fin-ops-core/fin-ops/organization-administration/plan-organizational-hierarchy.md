@@ -3,10 +3,9 @@ title: Planowanie hierarchii organizacyjnej
 description: Przed skonfigurowaniem organizacji i hierarchii organizacyjnych upewnij się, że wiesz, jak najlepiej modelować firmę.
 author: sericks007
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 02/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c779b5948370444b0b474568bb63b347c4a0831
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 7bf683487a20203d49fbab680373fbf48a5c58b6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154416"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569368"
 ---
 # <a name="plan-your-organizational-hierarchy"></a>Planowanie hierarchii organizacyjnej
 
@@ -166,7 +165,7 @@ Jednostki operacyjne używają kontekstu kraju firmy nadrzędnej. Operacyjne jed
 
 #### <a name="if-the-organization-is-modeled-as-a-legal-entity"></a>Jeśli organizacja jest modelowana jako firma
 
-Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. Aby uzyskać informacje o tym, które raporty są dostępne dla każdego kraju/regionu, zobacz [Microsoft Dynamics Localization Portal](https://docs.microsoft.com/dynamics/s-e/). (Wymagane jest logowanie w CustomerSource).
+Dla krajów/regionów, które są obsługiwane, można utworzyć większość raportów ustawowych. 
 
 > [!NOTE]
 > Warstwy księgowania w księdze głównej pozwalają na dodawanie wpisów korygujących dla firmy nadrzędnej, która stosuje inne standardy księgowania niż firma podrzędna. Na przykład dla firmy stosującej zasady ogólnie przyjęte w Wielkiej Brytanii (UK GAAP) można dokonać wpisów korygujących w warstwie księgowania. Te wpisy mogą być konsolidowane dla firmy nadrzędnej, która używa ogólnie przyjętych zasad rachunkowości (GAAP) w Stanach Zjednoczonych. Wpisy korygujące nie wpływają na raportowanie UK GAAP.

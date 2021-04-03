@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e32924c71fd221caee4a7f413908120014ec8c5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0cda21addfdc524537177740ebba6414ef8b4b96
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022540"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260017"
 ---
 # <a name="create-consumption-reports"></a>Tworzenie raportu zużycia
 

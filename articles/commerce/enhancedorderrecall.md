@@ -3,7 +3,7 @@ title: Odwołanie operacji zamówienia w punkcie sprzedaży
 description: W tym temacie objaśniono możliwości funkcji dostępnych w przypadku ulepszonych stron wycofywania zamówień w punkcie sprzedaży.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010081"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585137"
 ---
 # <a name="recall-order-operation-in-pos"></a>Odwołanie operacji zamówienia w punkcie sprzedaży
 
@@ -35,7 +35,7 @@ Konfiguracja przycisku operacji **Odwołanie zamówienia** pozwala organizacjom 
 
 Opcje wyświetlania opisano poniżej.
 - **Brak** — ta opcja powoduje wdrożenie operacji bez określonego ekranu. Gdy użytkownik otworzy operację z tą konfiguracją, zostanie wyświetlony monit o wyszukanie i znalezienie zamówień lub wybrania wstępnie zdefiniowanego filtru zamówień.
-- **Zamówienia do realizacji** — gdy użytkownik uruchomi operację, zostanie ona automatycznie uruchomiona w celu przeszukania i wyświetlenia listy zamówień, które mają być zrealizowane przez sklep. Zamówienia te są konfigurowane do odbioru w sklepie lub wysyłki do sklepu, a wiersze tych zamówień nie zostały jeszcze pobrane ani zapakowane.
+- **Zamówienia do realizacji** — gdy użytkownik uruchomi operację, zostanie ona automatycznie uruchomiona w celu przeszukania i wyświetlenia listy zamówień, które mają być zrealizowane przez sklep użytkownika. Zamówienia te są konfigurowane do odbioru w sklepie lub wysyłki do sklepu, a wiersze tych zamówień nie zostały jeszcze pobrane ani zapakowane.
 - **Zamówienia do odbioru** — gdy użytkownik uruchomi operację, automatycznie zostanie wykonane zapytanie w celu przeszukania i wyświetlenia listy zamówień, które są skonfigurowane do odbioru w bieżącym sklepie użytkownika.
 - **Zamówienia do wysyłki** — gdy użytkownik uruchomi operację, automatycznie zostanie wykonane zapytanie w celu przeszukania i wyświetlenia listy zamówień, które są skonfigurowane do wysyłki z bieżącego sklepu użytkownika.
 
@@ -46,7 +46,7 @@ W przypadku uruchamiania operacji **Odwołanie zamówienia** z punktu sprzedaży
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-Po zastosowaniu kryteriów wyszukiwania w aplikacji zostanie wyświetlona lista pasujących zamówień sprzedaży.
+Po zastosowaniu kryteriów wyszukiwania w aplikacji zostanie wyświetlona lista pasujących zamówień sprzedaży. Należy pamiętać, że w przypadku korzystania z opcji wyszukiwania/filtrowania pobrane zamówienia nie muszą być zamówieniami połączonymi z bieżącym sklepem użytkownika. Ten proces wyszukiwania spowoduje pobranie i wyświetlenie dowolnego zamówienia odbiorcy, który spełnia kryteria wyszukiwania, nawet jeśli zamówienie zostało utworzone lub ustawione jako spełnione przez inny sklep/kanał lub lokalizację magazynu.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ Użytkownik może wybrać zamówienie z listy, aby wyświetlić dodatkowe szczeg
 
 W AppBar użytkownik może wybrać operację. Niektóre operacje mogą nie być włączane w zależności od stanu zamówienia.
 
-- **Zwrot** — powoduje wykonanie zwrotu dla co najmniej jednej faktury powiązanej z wybranym zamówieniem odbiorcy.
+- **Zwrot** — inicjuje proces tworzenia zwrotu dla dowolnego z produktów zafakturowanych w wybranym zamówieniu odbiorcy.
 
-- **Anuluj** — powoduje wygenerowanie pełnego anulowania wybranego zamówienia sprzedaży.
+- **Anuluj** — powoduje wygenerowanie pełnego anulowania wybranego zamówienia sprzedaży. Ta opcja nie będzie dostępna dla zamówień zainicjowanych za pośrednictwem kanału obsługi i nie można jej użyć do częściowego anulowania zamówienia.
 
 - **Zrealizuj** — przenosi użytkownika na stronę realizacji zamówienia, która zostanie wstępnie przefiltrowana pod kątem wybranego zamówienia. Zostaną wyświetlone tylko wiersze zamówienia otwarte do realizacji przez sklep użytkownika dla wybranego zamówienia.
 
-- **Edycja** — pozwala użytkownikom na wprowadzanie zmian w wybranym zamówieniu odbiorcy.
+- **Edycja** — pozwala użytkownikom na wprowadzanie zmian w wybranym zamówieniu odbiorcy. Zamówienia można edytować tylko w [pewnych scenariuszach](customer-orders-overview.md#edit-an-existing-customer-order).
 
-- **Odbiór** — powoduje uruchomienie przepływu odbioru umożliwiającego użytkownikowi wybranie produktów, które mają zostać pobrane, i utworzenie transakcji pobrania sprzedaży.
+- **Odbiór** — ta opcja jest dostępna, jeśli zamówienie ma jeden lub więcej wierszy przeznaczonych do pobrania w bieżącym sklepie użytkownika. Operacja powoduje uruchomienie przepływu odbioru umożliwiającego użytkownikowi wybranie produktów, które mają zostać pobrane, i utworzenie transakcji pobrania sprzedaży.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Dodaj powiadomienia do operacji wycofania zamówienia
+
+W wersji 10.0.18 lub nowszej można skonfigurować powiadomienia programu POS oraz alerty kafelków na żywo dla operacji **Odwołaj zamówienie**, jeśli jest to konieczne. Aby uzyskać więcej informacji, zobacz [Wyświetlanie powiadomień o zamówieniach w punkcie sprzedaży](notifications-pos.md)s  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

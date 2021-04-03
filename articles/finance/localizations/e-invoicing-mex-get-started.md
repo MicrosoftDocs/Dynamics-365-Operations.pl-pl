@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ec7417d44a7c2aa413a9cda75996c153727632dd
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988492"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592653"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Meksyku
 
@@ -291,7 +291,7 @@ Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronic
     ![Wyświetlanie anulowania dziennika przesyłania](media/e-Invoicing-services-get-started-MEX-View-cancellation-submission-log-details.png)
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
-Włączenie funkcji MX-00010 i MX-00016 (faktura CFDI i anulowanie CFDI) może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostanie to przekazane agencjom zewnętrznym upoważnionym przez organ podatkowy w celu wysyłania faktur elektronicznych do tego organu podatkowego w predefiniowanym formacie wymaganym do integracji z rządową usługą internetową. Administrator może włączać i wyłączać funkcje MX-00010 i MX-00016 (faktura CFDI i anulowanie CFDI) przechodząc do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**. Wybierz kartę **Funkcje**, wybierz wiersze zawierające funkcje MX-00010 i MX-00016, a następnie dokonaj odpowiedniego wyboru. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
+Włączenie i używanie funkcji **Meksykańska faktura elektroniczna CFDI (MX)** może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostanie to przekazane agencjom zewnętrznym upoważnionym przez organ podatkowy w celu wysyłania faktur elektronicznych do tego organu podatkowego w predefiniowanym formacie wymaganym do integracji z rządową usługą internetową. Administrator może włączyć lub wyłączyć funkcję **Meksykańska faktura elektroniczna CFDI (MX)**, przechodząc do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**. Wybierz kartę **Funkcje**, wybierz wiersze zawierające funkcję **Meksykańska faktura elektroniczna CFDI (MX)** a następnie dokonaj odpowiedniego wyboru. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
