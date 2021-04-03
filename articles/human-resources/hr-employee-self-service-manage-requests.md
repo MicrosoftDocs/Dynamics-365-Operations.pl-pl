@@ -18,24 +18,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a47065a28f116cde5ce2983acada2f735f8c5edf
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 86e6868b5172ea113fab63780773633427a45a1a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115301"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463197"
 ---
-# <a name="manage-leave-and-absence-requests"></a><span data-ttu-id="11fc9-103">Zarządzanie wnioskami o urlop i nieobecność</span><span class="sxs-lookup"><span data-stu-id="11fc9-103">Manage leave and absence requests</span></span>
+# <a name="manage-leave-and-absence-requests"></a><span data-ttu-id="a3cbe-103">Zarządzanie wnioskami o urlop i nieobecność</span><span class="sxs-lookup"><span data-stu-id="a3cbe-103">Manage leave and absence requests</span></span>
 
-<span data-ttu-id="11fc9-104">Można zarządzać wnioskami urlopowymi w obszarze roboczym **Samoobsługa pracownika etatowego** w programie Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="11fc9-104">Manage time-off requests from the **Employee self-service** workspace in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="11fc9-105">Wnioski mogą być prostymi wnioskami na jeden dzień lub obejmować wiele dni, z kilkoma typami urlopów i nieobecności.</span><span class="sxs-lookup"><span data-stu-id="11fc9-105">Requests might be simple single-day requests or multiple-day requests that include multiple leave and absence types.</span></span> <span data-ttu-id="11fc9-106">Jeśli funkcja przepływu pracy nie jest włączona, wnioski są automatycznie zatwierdzane.</span><span class="sxs-lookup"><span data-stu-id="11fc9-106">If a workflow isn't enabled, the requests are automatically approved.</span></span> <span data-ttu-id="11fc9-107">Gdy funkcja przepływu pracy jest włączona, zatwierdzenie może odbywać się automatycznie lub wymagać podpisania, zależnie od konfiguracji przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="11fc9-107">When a workflow is enabled, the approval can be automatic or require sign-off, depending on the workflow configuration.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="11fc9-108">W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Mój zespół**.</span><span class="sxs-lookup"><span data-stu-id="11fc9-108">In the **Employee self-service** workspace, select **My team**.</span></span>
+<span data-ttu-id="a3cbe-104">Można zarządzać wnioskami urlopowymi w obszarze roboczym **Samoobsługa pracownika etatowego** w programie Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-104">Manage time-off requests from the **Employee self-service** workspace in Dynamics 365 Human Resources.</span></span> <span data-ttu-id="a3cbe-105">Wnioski mogą być prostymi wnioskami na jeden dzień lub obejmować wiele dni, z kilkoma typami urlopów i nieobecności.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-105">Requests might be simple single-day requests or multiple-day requests that include multiple leave and absence types.</span></span> <span data-ttu-id="a3cbe-106">Jeśli funkcja przepływu pracy nie jest włączona, wnioski są automatycznie zatwierdzane.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-106">If a workflow isn't enabled, the requests are automatically approved.</span></span> <span data-ttu-id="a3cbe-107">Gdy funkcja przepływu pracy jest włączona, zatwierdzenie może odbywać się automatycznie lub wymagać podpisania, zależnie od konfiguracji przepływu pracy.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-107">When a workflow is enabled, the approval can be automatic or require sign-off, depending on the workflow configuration.</span></span>
 
-2. <span data-ttu-id="11fc9-109">W obszarze **Informacje dotyczące mojego zespołu** wybierz kartę **Urlopy i nieobecności**.</span><span class="sxs-lookup"><span data-stu-id="11fc9-109">Under **My team information**, select the **Leave and absence** tab.</span></span> 
+1. <span data-ttu-id="a3cbe-108">W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Mój zespół**.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-108">In the **Employee self-service** workspace, select **My team**.</span></span>
 
-3. <span data-ttu-id="11fc9-110">Wyświetl i zatwierdź wnioski urlopowe członków swojego zespołu zgodnie z potrzebami.</span><span class="sxs-lookup"><span data-stu-id="11fc9-110">View and approve your team members' time-off requests as necessary.</span></span>
+2. <span data-ttu-id="a3cbe-109">W obszarze **Informacje dotyczące mojego zespołu** wybierz kartę **Urlopy i nieobecności**.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-109">Under **My team information**, select the **Leave and absence** tab.</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="11fc9-111">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="11fc9-111">See also</span></span>
+3. <span data-ttu-id="a3cbe-110">Wyświetl i zatwierdź wnioski urlopowe członków swojego zespołu zgodnie z potrzebami.</span><span class="sxs-lookup"><span data-stu-id="a3cbe-110">View and approve your team members' time-off requests as necessary.</span></span>
 
-- [<span data-ttu-id="11fc9-112">Omówienie urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="11fc9-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="11fc9-113">Tworzenie planu urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="11fc9-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="a3cbe-111">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="a3cbe-111">See also</span></span>
+
+- [<span data-ttu-id="a3cbe-112">Omówienie urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="a3cbe-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="a3cbe-113">Tworzenie planu urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="a3cbe-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
