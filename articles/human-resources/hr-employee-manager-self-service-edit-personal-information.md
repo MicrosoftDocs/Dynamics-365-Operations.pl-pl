@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fe009de3a94bf3ea7885f8f794879e16c36a3266
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ed215c4577484269ddf5de20ad93417f8eef38d6
+ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115349"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "5502995"
 ---
 # <a name="edit-personal-information"></a>Edytuj informacje osobiste
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Informacje osobiste można edytować w Dynamics 365 Human Resources w obszarze **roboczym samoobsługi pracownika etatowego**.
 
@@ -38,13 +40,16 @@ Informacje osobiste, które można edytować, obejmują:
 - Metoda płatności
 - Obraz używany w Human Resources
 
+>[!NOTE]
+>Możesz nie być w stanie edytować niektórych typów danych osobowych, takich jak biznesowe dane kontaktowe. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
+
 Parametry ustawione w globalnej książce adresowej ustalają role, które mogą wyświetlać informacje osobiste użytkownika.
 
 1. W Human Resources wybierz opcję **Samoobsługa pracownika etatowego**.
 
 2. Wybierz opcję **Edytuj dane osobowe**.
 
-3. Aby zmienić adres, wybierz kartę **Adresy** . Wprowadzone zmiany pojawią się w obszarze roboczym **Zarządzanie kadrami**, aby poinformować o tym dział kadr. 
+3. Aby zmienić adres, wybierz kartę **Adresy** . Wprowadzone zmiany pojawią się w obszarze roboczym **Zarządzanie kadrami**, aby poinformować o tym dział kadr.
 
     - Kliknij przycisk **Dodaj**, aby dodać nowy adres.
     - Aby edytować istniejący adres, wybierz adres i wybierz opcję **Edytuj.**
@@ -52,11 +57,13 @@ Parametry ustawione w globalnej książce adresowej ustalają role, które mogą
     - Aby dodać lub usunąć kontakt, zaznacz opcję **Więcej opcji**, a następnie wybierz opcję **Zaawansowane**. W obszarze **Informacje o kontakcie** wybierz opcję **Dodaj** lub **Usuń** i w razie potrzeby zmodyfikuj odpowiednie pola.
     - Aby określić strefę czasową i lokalizację, wybierz opcję **Więcej opcji**, a następnie wybierz opcję **Zaawansowane**. W obszarze **Ogólne** edytuj pola w razie potrzeby.
 
-4. Aby zmienić szczegóły kontaktu, wybierz kartę **Szczegóły kontaktu**. Można podać różne typy informacji kontaktowych, w tym numery telefonów, adresy e-mail i platformy społecznościowe. Można zdefiniować szczegół kontaktu jako podstawowy, ale można go określić tylko dla każdego typu jako podstawowego. 
+4. Aby zmienić szczegóły kontaktu, wybierz kartę **Szczegóły kontaktu**. Można podać różne typy informacji kontaktowych, w tym numery telefonów, adresy e-mail i platformy społecznościowe. Można zdefiniować szczegół kontaktu jako podstawowy, ale można go określić tylko dla każdego typu jako podstawowego.
 
     - Kliknij przycisk **Dodaj**, aby dodać nową informację kontaktową. Odpowiednio zmodyfikuj pola.
     - Aby edytować istniejącą informację kontaktową, wybierz ją i wybierz opcję **Edytuj**. Odpowiednio zmodyfikuj pola.
     - Aby określić szczegółową osobę kontaktową jako prywatną, wybierz towar, wybierz opcję **Zaawansowane**, a następnie ustawienie przełącznika **prywatnego** na wartość **tak**. Kliknij przycisk **OK**.
+      >[!NOTE]
+      >Przycisk **Zaawansowane** jest niedostępny, jeśli administrator włączy funkcję **(Podgląd) Ogranicz pracownikom możliwość dodawania lub edytowania adresów i informacji kontaktowych w wybranych celach** w środowisku. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
   
 5. Aby zmienić kontakty osobiste, wybierz kartę **Kontakty osobiste**. Można wyznaczyć kontakty alarmowe, beneficjentów i osoby na utrzymaniu. Kontaktem może być osoba lub organizacja. Funkcja **Zarządzania świadczeniami** korzysta z osobistych informacji kontaktowych. Aby uzyskać więcej informacji, zobacz [Konfigurowanie opcji uprawnień do kontaktu osobistego](hr-benefits-setup-contact-eligibility-options.md).
 

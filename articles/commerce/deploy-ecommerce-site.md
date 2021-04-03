@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b750ee89a85688dcebe673f9c3ff13693e9fcad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d31e3e7248809a00ad51183b80205d1351567ab3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976745"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477883"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy handlu elektronicznego
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób wdrażania nowej witryny e-Commerce Dynamics 365 Commerce za pomocą Lifecycle Services (usługi LCS) Microsoft Dynamics.
-
-## <a name="overview"></a>Omówienie
 
 Microsoft Dynamics Lifecycle Services (usługi LCS) to oparty na chmurze obszar roboczy, za pomocą którego partnerzy i klienci mogą zarządzać swoimi projektami i środowiskami, wyświetlać najnowsze informacje o produktach i funkcjach Microsoft Dynamics oraz tworzyć, śledzić i przeglądać zdarzenia pomocy technicznej. Funkcje zarządzania e-Commerce są zintegrowane z usługi LCS.
 

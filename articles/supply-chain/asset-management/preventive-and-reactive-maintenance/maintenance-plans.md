@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EntAssetMaintenancePlan
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ec4929e9ea608318b83a2ae6033c4b25855f4dd
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077557"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500821"
 ---
 # <a name="maintenance-plans"></a>Plany konserwacji
 
@@ -195,8 +195,7 @@ Na poniższej ilustracji przedstawiono przykład planu konserwacji składnika ma
 
 ## <a name="counter-based-maintenance-enhancements"></a>Udoskonalenia konserwacji opartej na licznikach
 
-> [!IMPORTANT]
-> Funkcje opisane w tej sekcji są dostępne jako część wydania wersji zapoznawczej. Zawartość i funkcje mogą ulec zmianie. Aby uzyskać więcej informacji dotyczących wydań wersji zapoznawczych, zobacz [Aktualizacje do jednej wersji usługi — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Funkcja *ulepszeń konserwacji opartej na licznikach* zawiera następujące funkcje:
 

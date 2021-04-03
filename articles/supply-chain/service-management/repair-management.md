@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 265709f298d9310d5d647eaa029ece778d2e226e
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001355"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470648"
 ---
 # <a name="repair-management"></a>Zarządzanie naprawami       
 
@@ -37,15 +37,11 @@ Definiuje się ustawienia objawów, diagnozy i rozwiązania. Wszystkie te parame
 
 Następujące formularze ustawień służą do wprowadzania informacji, które będą służyć do określania objawów, diagnozy i sposobów rozwiązania dla napraw.
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Warunki**.
-
-2.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Obszary objawów**.
-
-3.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Obszary diagnoz**.
-
-4.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Rozwiązania**.
-
-5.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Etapy napraw**.
+- **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Warunki**.
+- **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Obszary objawów**.
+-  **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Obszary diagnoz**.
+- **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Rozwiązania**.
+- **Zarządzanie serwisem** \> **Ustawienia** \> **Naprawa** \> **Etapy napraw**.
 
 ## <a name="symptoms-and-conditions"></a>Objawy i warunki
 
@@ -81,19 +77,19 @@ Wiersze naprawy można utworzyć dla każdego etapu procesu naprawy.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Tworzenie wiersza naprawy do zlecenia serwisowego
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
 2.  Wybierz zlecenie serwisowe z przedmiotem serwisu wymagającym naprawienia.
 
-3.  Kliknij kolejno opcje **Naprawa** \> **Wiersze naprawy**, aby otworzyć formularz **Wiersze naprawy**.
+3.  Wybierz opcje **Naprawa** \> **Wiersze naprawy**, aby otworzyć formularz **Wiersze naprawy**.
 
-4.  Naciśnij klawisze CTRL+N, aby utworzyć nowy wiersz.
+4.  Wybierz pozycję **Nowy**, aby utworzyć nowy wiersz.
 
 5.  Wybierz przedmiot serwisu. Można wybrać dowolny przedmiot serwisu, dla którego skonfigurowano relację obiektu do zlecenia serwisowego.
 
-6.  Wybierz te predefiniowane objawy, diagnozy lub wartości wykonania, które są odpowiednie w wypadku danego wiersza naprawy, a następnie w razie potrzeby kliknij kartę **Notatka**, aby utworzyć notatkę do wiersza naprawy.
+6.  Wybierz te predefiniowane objawy, diagnozy lub wartości wykonania, które są odpowiednie w wypadku danego wiersza naprawy, a następnie w razie potrzeby wybierz kartę **Notatka**, aby utworzyć notatkę do wiersza naprawy.
 
-7.  Naciśnij klawisze CTRL+S, aby zapisać nowy wiersz naprawy. Pole **Data i godzina utworzenia** na karcie **Ogólne** w formularzu **Wiersze naprawy** zostanie zaktualizowane o godzinę zapisania.
+7.  Wybierz **Zapisz**, aby zapisać nowy wiersz naprawy. Pole **Data i godzina utworzenia** na karcie **Ogólne** w formularzu **Wiersze naprawy** zostanie zaktualizowane o godzinę zapisania.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Śledzenie postępu i rozwiązywanie problemu
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994010"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487104"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Rozwiązywanie problemów z konfiguracją magazynu
 
@@ -109,5 +109,32 @@ Aby umożliwić pracownikom wprowadzenie tej zmiany, można utworzyć element me
 
 W razie konieczności można skonfigurować inne pola na stronie.
 
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Profil zarządzania na rampie profilu lokalizacji nie zapobiega mieszaniu typów zapasów.
+
+### <a name="issue-description"></a>Opis problemu
+
+Korzystasz z *zasad konsolidacji przesyłek*. Skonfigurowano *profil zarządzania na rampie* dla *profilu lokalizacji*, ale po utworzeniu pracy typy zapasów są mieszane w ostatecznej lokalizacji.
+
+### <a name="issue-resolution"></a>Rozwiązywanie problemów
+
+Profile zarządzania na rampie wymagają wcześniejszego podziału pracy. Profil zarządzania na rampie oczekuje, że nagłówek pracy nie będzie zawierał wielu lokalizacji odłożyń.
+
+Aby profil zarządzania dokiem mógł efektywnie zarządzać mieszaniem zapasów, należy ustawić przerwę w nagłówku pracy.
+
+W tym przykładzie nasz profil zarządzania dokiem jest skonfigurowany tak, że **Typy zapasów, które nie powinny być mieszane**, są ustawione na *Identyfikator przesyłki*, a my ustawimy przerwę w nagłówku pracy:
+
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Szablony pracy**.
+1. Wybierz **Typ zlecenia pracy** do edycji (na przykład *Zamówienia zakupu*).
+1. Wybierz szablon pracy do edycji.
+1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
+1. Otwórz kartę **Sortowanie** i dodaj wiersz z następującymi ustawieniami:
+    - **Tabela** - *Tymczasowe transakcje pracy*
+    - **Tabela pochodna** - *Tymczasowe transakcje pracy*
+    - **Pole** - *Identyfikator wysyłki*
+1. Kliknij przycisk **OK**.
+1. Wróć do strony **Szablony pracy**. W okienku akcji wybierz **Podziały nagłówka pracy**.
+1. W okienku akcji wybierz pozycję **Edytuj**.
+1. Zaznacz pole wyboru skojarzone z **Polem o nazwie** *Identyfikator wysyłki*.
+1. Na okienku akcji wybierz opcję **Zapisz**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

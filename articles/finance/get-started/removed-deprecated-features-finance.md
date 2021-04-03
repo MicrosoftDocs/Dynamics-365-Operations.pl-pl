@@ -3,7 +3,7 @@ title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Finance.
 author: roschlom
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,15 +11,15 @@ ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: sericks
+ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7090a7461c7b77d74f081afd8f22db100cdf0792
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
+ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154184"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5474070"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 
@@ -33,7 +33,19 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 > [!NOTE]
-> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+> Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.17
+
+### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>Repozytorium usługi LCS jako opcja przechowywania w konfiguracjach raportowania elektronicznego
+
+|   |  |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Repozytorium globalne usługi Regulatory Configuration Service (RCS) zastąpiono |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Dynamics 365 Finance, Supply Chain Management i produkty w Project Operations|
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane: Do 1 kwietnia 2022 roku zamierzamy przestać obsługiwać repozytorium usługi Microsoft Dynamics Lifecycle Services (LCS) jako opcję przechowywania w konfiguracjach raportowania elektronicznego (ER). Nowe konfiguracje ER firmy Microsoft zostaną opublikowane w celu pobrania wyłącznie z repozytorium globalnym. Do repozytorium globalnego można uzyskać dostęp z produktów Dynamics 365 i usług RCS. Aby uzyskać więcej informacji, zobacz temat [Importowanie konfiguracji ER z usług RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md). |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10016-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.16
 

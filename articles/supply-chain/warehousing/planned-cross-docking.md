@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970313"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556273"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -37,12 +37,12 @@ W momencie przyjęcia zamówienia przychodzącego konfiguracja przeładunku komp
 > [!NOTE]
 > Transakcje magazynowe **nie są** rejestrowane, gdy praca przeładunku kompletacyjnego została anulowana, nawet jeśli ustawienie tej funkcji jest włączone w parametrach zarządzania magazynem.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Włącz funkcję planowanego przeładunku kompletacyjnego
+## <a name="turn-on-the-planned-cross-docking-features"></a>Włącz funkcje planowanego przeładunku kompletacyjnego
 
-Aby można było korzystać z funkcji zaawansowanego planowanego przeładunku kompletacyjnego, funkcja ta musi być włączona w systemie. Administratorzy mogą skorzystać z obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje w następującej kolejności:
 
-- **Moduł:** *Zarządzanie magazynem*
-- **Nazwa funkcji:** *Planowany zaawansowany przeładunek kompletacyjnego*
+1. *Planowany przeładunek kompletacyjny*
+2. *Szablony przeładunku kompletacyjnego z dyrektywami lokalizacji*
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -89,6 +89,10 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Sprawdź ponownie na paragonie dostawy:** *Nie*
 
         Ta opcja umożliwia zdefiniowanie, czy dostawa ma zostać sprawdzona ponownie podczas przyjęcia. Jeśli ta opcja ma wartość *Tak*, sprawdzane są zarówno maksymalne przedziały czasu, jak i zakres daty ważności.
+
+    - Pole **Kod dyrektywy** należy pozostawić puste
+
+        Ta opcja umożliwia systemowi korzystanie z dyrektyw lokalizacji, aby pomóc w określeniu najlepszej lokalizacji do przeniesienia zapasów kompletacyjnych. Możesz to skonfigurować, przypisując kod dyrektywy do każdego odpowiedniego szablonu przeładunku kompletacyjnego. Każdy kod dyrektywy określa unikatową dyrektywę lokalizacji.
 
     - **Sprawdzanie poprawności – okno czasowe:** *Tak*
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 004d9b4522335b481b640ef0fe35f4db66e3c9f5
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078298"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501301"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Ustawianie różnych wymiarów pakowania i przechowywania
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Niektóre towary są pakowane lub przechowywane w taki sposób, że konieczne może być śledzenie wymiarów fizycznych w inny sposób dla każdego z kilku różnych procesów. Funkcja *wymiarów produktu do pakowania* umożliwia skonfigurowanie jednego lub kilku typów wymiarów dla każdego produktu. Każdy typ wymiaru ma zestaw miar fizycznych (waga, szerokość, głębokość i wysokość) i ustala proces, w którym te wartości miar fizycznych mają zastosowanie. Gdy ta funkcja jest włączona, system obsługuje następujące typy wymiarów:
 
