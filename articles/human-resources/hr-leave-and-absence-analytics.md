@@ -18,30 +18,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 488745388312f0a2ef936dac2f8252431123fe33
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c20d0da62724202e5b6c750e646bc205542191aa
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116075"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468162"
 ---
-# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="8fb83-103">Wyświetlanie analiz urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="8fb83-103">View analytics for leave and absence</span></span>
+# <a name="view-analytics-for-leave-and-absence"></a><span data-ttu-id="640ea-103">Wyświetlanie analiz urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="640ea-103">View analytics for leave and absence</span></span>
 
-<span data-ttu-id="8fb83-104">Moduł Dynamics 365 Human Resources udostępnia funkcje analityczne pokazujące trendy urlopów i nieobecności w organizacji.</span><span class="sxs-lookup"><span data-stu-id="8fb83-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="8fb83-105">Wyświetlanie analiz urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="8fb83-105">View Leave and absence analytics</span></span>
+<span data-ttu-id="640ea-104">Moduł Dynamics 365 Human Resources udostępnia funkcje analityczne pokazujące trendy urlopów i nieobecności w organizacji.</span><span class="sxs-lookup"><span data-stu-id="640ea-104">Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.</span></span>
 
-1. <span data-ttu-id="8fb83-106">W obszarze roboczym **Urlopy i nieobecności** wybierz kartę **Analiza**.</span><span class="sxs-lookup"><span data-stu-id="8fb83-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
+## <a name="view-leave-and-absence-analytics"></a><span data-ttu-id="640ea-105">Wyświetlanie analiz urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="640ea-105">View Leave and absence analytics</span></span>
 
-2. <span data-ttu-id="8fb83-107">Na kartach u dołu wybierz jeden z następujących widoków:</span><span class="sxs-lookup"><span data-stu-id="8fb83-107">Choose one of the following views from the tabs along the bottom:</span></span>
+1. <span data-ttu-id="640ea-106">W obszarze roboczym **Urlopy i nieobecności** wybierz kartę **Analiza**.</span><span class="sxs-lookup"><span data-stu-id="640ea-106">In the **Leave and absence** workspace, select the **Analytics** tab.</span></span>
 
-   - <span data-ttu-id="8fb83-108">**Omówienie urlopów i nieobecności** — wyświetlanie wartości procentowych rejestracji na plany urlopów i wskaźników wykorzystania planów urlopów, miesięcznych naliczeń i sald oraz sald czasu wolnego z podziałem na menedżerów.</span><span class="sxs-lookup"><span data-stu-id="8fb83-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
+2. <span data-ttu-id="640ea-107">Na kartach u dołu wybierz jeden z następujących widoków:</span><span class="sxs-lookup"><span data-stu-id="640ea-107">Choose one of the following views from the tabs along the bottom:</span></span>
 
-   - <span data-ttu-id="8fb83-109">**Analiza bieżącego salda** — wyświetlanie szczegółowych informacji o saldach urlopów i naliczeniach.</span><span class="sxs-lookup"><span data-stu-id="8fb83-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
+   - <span data-ttu-id="640ea-108">**Omówienie urlopów i nieobecności** — wyświetlanie wartości procentowych rejestracji na plany urlopów i wskaźników wykorzystania planów urlopów, miesięcznych naliczeń i sald oraz sald czasu wolnego z podziałem na menedżerów.</span><span class="sxs-lookup"><span data-stu-id="640ea-108">**Leave and Absence Overview** - View enrollment percentages and utilization rates for your leave plans, monthly accruals and balances, and time-off balances by manager.</span></span>
 
-   - <span data-ttu-id="8fb83-110">**Analiza trendów sald** — wyświetlenie trendów sald urlopów z podziałem na miesiące i lata oraz wyświetlenie trendów za ostatnie 12 miesięcy.</span><span class="sxs-lookup"><span data-stu-id="8fb83-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
+   - <span data-ttu-id="640ea-109">**Analiza bieżącego salda** — wyświetlanie szczegółowych informacji o saldach urlopów i naliczeniach.</span><span class="sxs-lookup"><span data-stu-id="640ea-109">**Current Balance Analysis** - View detailed information about leave balances and accruals.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8fb83-111">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="8fb83-111">See also</span></span>
+   - <span data-ttu-id="640ea-110">**Analiza trendów sald** — wyświetlenie trendów sald urlopów z podziałem na miesiące i lata oraz wyświetlenie trendów za ostatnie 12 miesięcy.</span><span class="sxs-lookup"><span data-stu-id="640ea-110">**Balance Trend Analysis** - View trends in leave balances by month and by year, and view trends over the past 12 months.</span></span>
 
-- [<span data-ttu-id="8fb83-112">Omówienie urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="8fb83-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
-- [<span data-ttu-id="8fb83-113">Tworzenie planu urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="8fb83-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+## <a name="see-also"></a><span data-ttu-id="640ea-111">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="640ea-111">See also</span></span>
+
+- [<span data-ttu-id="640ea-112">Omówienie urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="640ea-112">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="640ea-113">Tworzenie planu urlopów i nieobecności</span><span class="sxs-lookup"><span data-stu-id="640ea-113">Create a leave and absence plan</span></span>](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
