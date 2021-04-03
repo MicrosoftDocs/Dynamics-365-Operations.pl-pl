@@ -15,29 +15,32 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ecc9adac17a6313e88ac568d016daf8d05b8d818
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7a03a277ef3ccc6796bc0a4f081dcec0d9a51fb7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968634"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240697"
 ---
-# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="42a8b-103">Obsługa domyślnych szablonów wymiarów finansowych</span><span class="sxs-lookup"><span data-stu-id="42a8b-103">Maintain financial dimension default templates</span></span>
+# <a name="maintain-financial-dimension-default-templates"></a><span data-ttu-id="b940b-103">Obsługa domyślnych szablonów wymiarów finansowych</span><span class="sxs-lookup"><span data-stu-id="b940b-103">Maintain financial dimension default templates</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="42a8b-104">W tym temacie pokazano sposób konfigurowania domyślnych szablonów wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="42a8b-104">This topic shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="42a8b-105">Szablony mogą służyć do szybkiego rozdziału kwot w dokumentach źródłowych.</span><span class="sxs-lookup"><span data-stu-id="42a8b-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
+<span data-ttu-id="b940b-104">W tym temacie pokazano sposób konfigurowania domyślnych szablonów wymiarów finansowych.</span><span class="sxs-lookup"><span data-stu-id="b940b-104">This topic shows how to set up financial dimension default templates.</span></span> <span data-ttu-id="b940b-105">Szablony mogą służyć do szybkiego rozdziału kwot w dokumentach źródłowych.</span><span class="sxs-lookup"><span data-stu-id="b940b-105">The templates can be used to quickly distribute amounts on source documents.</span></span>
 
-1. <span data-ttu-id="42a8b-106">W okienku nawigacji wybierz kolejno opcje **Moduły > Księga główna > Plan kont > Wymiary > Domyślne szablony wymiaru finansowego**.</span><span class="sxs-lookup"><span data-stu-id="42a8b-106">In the navigation pane, go to **Modules > General ledger > Chart of accounts > Dimensions > Financial dimension default templates**.</span></span>
-2. <span data-ttu-id="42a8b-107">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="42a8b-107">Select **New**.</span></span>
-3. <span data-ttu-id="42a8b-108">W polu **Identyfikator szablonu** wprowadź identyfikator szablonu.</span><span class="sxs-lookup"><span data-stu-id="42a8b-108">In the **Template ID** field, enter a Template ID.</span></span>
-4. <span data-ttu-id="42a8b-109">Wprowadź wartość procentową dla wartości pierwszego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="42a8b-109">Enter the percentage for the first dimension values.</span></span>
-5. <span data-ttu-id="42a8b-110">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="42a8b-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
-6. <span data-ttu-id="42a8b-111">Wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="42a8b-111">Select **Add**.</span></span>
-7. <span data-ttu-id="42a8b-112">Wprowadź kolejną wartość procentową dla wartości następnego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="42a8b-112">Enter another percent for the next dimension values.</span></span> <span data-ttu-id="42a8b-113">W tym przykładzie wprowadź wartość procentową, tak aby mieć przydzielone niecałe 100%.</span><span class="sxs-lookup"><span data-stu-id="42a8b-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span> 
-8. <span data-ttu-id="42a8b-114">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="42a8b-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
-9. <span data-ttu-id="42a8b-115">Wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="42a8b-115">Select **Add**.</span></span>
-10. <span data-ttu-id="42a8b-116">Wprowadź inną wartość procentową, która sprawi, że całkowita wartość procentowa będzie równa 100%.</span><span class="sxs-lookup"><span data-stu-id="42a8b-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
-11. <span data-ttu-id="42a8b-117">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="42a8b-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
-12. <span data-ttu-id="42a8b-118">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="42a8b-118">Select **Save**.</span></span>
+1. <span data-ttu-id="b940b-106">W okienku nawigacji wybierz kolejno opcje **Moduły > Księga główna > Plan kont > Wymiary > Domyślne szablony wymiaru finansowego**.</span><span class="sxs-lookup"><span data-stu-id="b940b-106">In the navigation pane, go to **Modules > General ledger > Chart of accounts > Dimensions > Financial dimension default templates**.</span></span>
+2. <span data-ttu-id="b940b-107">Wybierz pozycję **Nowy**.</span><span class="sxs-lookup"><span data-stu-id="b940b-107">Select **New**.</span></span>
+3. <span data-ttu-id="b940b-108">W polu **Identyfikator szablonu** wprowadź identyfikator szablonu.</span><span class="sxs-lookup"><span data-stu-id="b940b-108">In the **Template ID** field, enter a Template ID.</span></span>
+4. <span data-ttu-id="b940b-109">Wprowadź wartość procentową dla wartości pierwszego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="b940b-109">Enter the percentage for the first dimension values.</span></span>
+5. <span data-ttu-id="b940b-110">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="b940b-110">Enter the financial dimension values that correspond to the percent entered.</span></span>
+6. <span data-ttu-id="b940b-111">Wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="b940b-111">Select **Add**.</span></span>
+7. <span data-ttu-id="b940b-112">Wprowadź kolejną wartość procentową dla wartości następnego wymiaru.</span><span class="sxs-lookup"><span data-stu-id="b940b-112">Enter another percent for the next dimension values.</span></span> <span data-ttu-id="b940b-113">W tym przykładzie wprowadź wartość procentową, tak aby mieć przydzielone niecałe 100%.</span><span class="sxs-lookup"><span data-stu-id="b940b-113">For this example, enter a percentage so you still have less than 100% allocated.</span></span> 
+8. <span data-ttu-id="b940b-114">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="b940b-114">Enter the financial dimension values that correspond to the percent entered.</span></span>
+9. <span data-ttu-id="b940b-115">Wybierz opcję **Dodaj**.</span><span class="sxs-lookup"><span data-stu-id="b940b-115">Select **Add**.</span></span>
+10. <span data-ttu-id="b940b-116">Wprowadź inną wartość procentową, która sprawi, że całkowita wartość procentowa będzie równa 100%.</span><span class="sxs-lookup"><span data-stu-id="b940b-116">Enter another percent, which will make the total percent equal to 100%.</span></span>
+11. <span data-ttu-id="b940b-117">Wprowadź wartości wymiarów finansowych odpowiadające wprowadzonej wartości procentowej.</span><span class="sxs-lookup"><span data-stu-id="b940b-117">Enter the financial dimension values that correspond to the percent entered.</span></span>
+12. <span data-ttu-id="b940b-118">Wybierz opcję **Zapisz**.</span><span class="sxs-lookup"><span data-stu-id="b940b-118">Select **Save**.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

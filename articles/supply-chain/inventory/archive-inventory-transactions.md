@@ -1,0 +1,122 @@
+---
+title: Archiwizuj transakcje magazynowe
+description: W tym temacie opisano sposób archiwizowania danych transakcji magazynowych w celu zwiększenia wydajności systemu.
+author: sherry-zheng
+manager: tfehr
+ms.date: 03/01/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: InventTransArchiveProcessForm
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.search.region: Global
+ms.author: chuzheng
+ms.search.validFrom: 2021-03-01
+ms.dyn365.ops.version: Release 10.0.18
+ms.openlocfilehash: 3a0fa65eb728e4ce96bdfc3f7a0f04901551ccea
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556437"
+---
+# <a name="archive-inventory-transactions"></a><span data-ttu-id="dbc7b-103">Archiwizuj transakcje magazynowe</span><span class="sxs-lookup"><span data-stu-id="dbc7b-103">Archive inventory transactions</span></span>
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+<span data-ttu-id="dbc7b-104">Z czasem tabela transakcji magazynowych (`InventTrans`) będzie nadal wzrastać i zużywać więcej miejsca w bazie danych.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-104">Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space.</span></span> <span data-ttu-id="dbc7b-105">Z tego względu kwerendy wykonane dla tej tabeli będą stopniowo coraz wolniejsze.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-105">Therefore, queries that are made against the table will gradually become slower.</span></span> <span data-ttu-id="dbc7b-106">W tym temacie opisano, jak można używać funkcji *Archiwizuj transakcje magazynowe* do archiwizowania danych dotyczących transakcji magazynowych w celu zwiększenia wydajności systemu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-106">This topic describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="dbc7b-107">W wybranym zamkniętym okresie finansowym można zarchiwizować tylko finansowo zaktualizowane transakcje magazynowe.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-107">Only financially updated inventory transactions can be archived in a selected closed ledger period.</span></span> <span data-ttu-id="dbc7b-108">Aby można było zarchiwizować, finansowo zaktualizowane wychodzące transakcje magazynowe muszą mieć stan wydania *Sprzedane*, a przychodzące transakcje magazynowe muszą mieć stan przyjęcia *Zakupione*.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-108">To be archived, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.</span></span>
+
+<span data-ttu-id="dbc7b-109">Podczas archiwizowania transakcji magazynowych wszystkie powiązane transakcje są przenoszone do tabeli `InventTransArchive`.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-109">When you archive inventory transactions, all related transactions are moved to the `InventTransArchive` table.</span></span> <span data-ttu-id="dbc7b-110">Transakcje rozchodów magazynowych i transakcje przyjęcia materiałów są archiwizowane oddzielnie na podstawie kombinacji identyfikatora towaru (`itemId`) i identyfikatora wymiaru magazynowego (`inventDimId`) i są umieszczane w podsumowanych transakcjach rozchodów i zsumowanych przyjęć.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-110">Inventory issue transactions and inventory receipt transactions are archived separately, based on the combination of the item ID (`itemId`) and inventory dimension ID (`inventDimId`), and they are put into the summarized issue and summarized receipt transactions.</span></span>
+
+<span data-ttu-id="dbc7b-111">Jeśli kombinacja `itemId` i `inventDimId` zawiera tylko jedną transakcję przyjęcia lub wydania, transakcja nie zostanie zarchiwizowana.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-111">If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be archived.</span></span>
+
+## <a name="turn-on-the-feature-in-your-system"></a><span data-ttu-id="dbc7b-112">Włączanie funkcji w systemie</span><span class="sxs-lookup"><span data-stu-id="dbc7b-112">Turn on the feature in your system</span></span>
+
+<span data-ttu-id="dbc7b-113">Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Archiwum transakcji magazynowych*.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-113">If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature.</span></span>
+
+## <a name="things-to-consider-before-you-archive-inventory-transactions"></a><span data-ttu-id="dbc7b-114">Co należy wziąć pod uwagę przed zarchiwizować transakcje magazynowe</span><span class="sxs-lookup"><span data-stu-id="dbc7b-114">Things to consider before you archive inventory transactions</span></span>
+
+<span data-ttu-id="dbc7b-115">Przed zarchiwizowania transakcji magazynowych należy uwzględnić następujące scenariusze biznesowe, ponieważ operacja będzie dotyczyć ich:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-115">Before you archive inventory transactions, you should consider the following business scenarios, because they will be affected by the operation:</span></span>
+
+- <span data-ttu-id="dbc7b-116">Podczas inspekcji transakcji magazynowych z powiązanych dokumentów, takich jak wiersze zamówień zakupu, są one pokazywane jako zarchiwizowane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-116">When you audit inventory transactions from related documents, such as purchase order lines, they will be shown as archived.</span></span> <span data-ttu-id="dbc7b-117">Aby przejrzeć zarchiwizowane transakcje, musisz przejść do **Zarządzanie zapasami \> Zadania okresowe \> Oczyszczanie \> Archiwum transakcji magazynowych**.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-117">To review the archived transactions, you must go to **Inventory management \> Periodic tasks \> Clean up \> Inventory transactions archive**.</span></span>
+- <span data-ttu-id="dbc7b-118">Nie można anulować zamknięcia magazynu dla zarchiwizowanego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-118">Inventory closing can't be canceled for archived periods.</span></span> <span data-ttu-id="dbc7b-119">Aby było można anulować zamknięcie magazynu, należy wycofać archiwum transakcji magazynowych dla odpowiedniego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-119">Before you can cancel an inventory closing, you must reverse the inventory transaction archive for the relevant period.</span></span>
+- <span data-ttu-id="dbc7b-120">Nie można wykonać konwersji na koszt standardowy dla zarchiwizowanego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-120">Standard cost conversion can't be done for archived periods.</span></span> <span data-ttu-id="dbc7b-121">Przed wykonaniem standardowej konwersji kosztu należy wycofać archiwum transakcji magazynowych dla odpowiedniego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-121">Before you can do standard cost conversion, you must reverse the inventory transaction archive for the relevant period.</span></span>
+- <span data-ttu-id="dbc7b-122">Archiwizacja transakcji magazynowych ma wpływ na raporty zapasów, które pochodzą z transakcji magazynowych.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-122">Inventory reports that are sourced from inventory transactions will be affected when you archive inventory transactions.</span></span> <span data-ttu-id="dbc7b-123">Raporty te zawierają raporty wiekowania zapasów i raporty wartości zapasów.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-123">These reports include the inventory aging report and inventory value reports.</span></span>
+- <span data-ttu-id="dbc7b-124">Może to mieć wpływ na prognozy zapasów, jeśli są uruchamiane w czasie horyzontu zarchiwizowanego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-124">Inventory forecasts might be affected if they are run during the time horizon of archived periods.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="dbc7b-125">Wymagania wstępne</span><span class="sxs-lookup"><span data-stu-id="dbc7b-125">Prerequisites</span></span>
+
+<span data-ttu-id="dbc7b-126">Transakcje magazynowe można zarchiwizować tylko w okresach, w których są spełnione następujące warunki:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-126">Inventory transactions can be archived only during periods where the following conditions are met:</span></span>
+
+- <span data-ttu-id="dbc7b-127">Okres księgi musi być zamknięty.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-127">The ledger period must be closed.</span></span>
+- <span data-ttu-id="dbc7b-128">Zamykanie magazynu musi być uruchomione do daty archiwum lub późniejsza.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-128">Inventory closing must be run on or after the to-period date of the archive.</span></span>
+- <span data-ttu-id="dbc7b-129">Okres musi być co najmniej rok przed datą od okresu archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-129">The period must be at least one year before the from-period date of the archive.</span></span>
+- <span data-ttu-id="dbc7b-130">Nie mogą być żadne istniejące ponowne przeliczenia zapasów.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-130">There must not be any existing inventory recalculations.</span></span>
+
+## <a name="archive-inventory-transactions"></a><span data-ttu-id="dbc7b-131">Archiwizuj transakcje magazynowe</span><span class="sxs-lookup"><span data-stu-id="dbc7b-131">Archive inventory transactions</span></span>
+
+<span data-ttu-id="dbc7b-132">Aby zarchiwizować transakcje magazynowe, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-132">To archive inventory transactions, follow these steps.</span></span>
+
+1. <span data-ttu-id="dbc7b-133">Przejdź do **Zarządzanie zapasami** \> **Zadania okresowe** \> **Oczyszczanie** \> **Archiwum transakcji magazynowych**.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-133">Go to **Inventory management** \> **Periodic tasks** \> **Clean up** \> **Inventory transaction archive**.</span></span>
+
+    <span data-ttu-id="dbc7b-134">Zostanie wyświetlona strona **Archiwum transakcji magazynowych** z listą zarchiwizowanego rekordu procesu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-134">The **Inventory transactions archive** page appears and shows a list of archived process records.</span></span>
+
+    <span data-ttu-id="dbc7b-135">![Strona Archiwum transakcji magazynowych](media/archive-inventory-empty.png "Strona Archiwum transakcji magazynowych")</span><span class="sxs-lookup"><span data-stu-id="dbc7b-135">![Inventory transactions archive page](media/archive-inventory-empty.png "Inventory transactions archive page")</span></span>
+
+1. <span data-ttu-id="dbc7b-136">W okienku akcji wybierz opcję **Archiwum transakcji magazynowych**, aby utworzyć archiwum transakcji magazynowych.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-136">On the Action Pane, select **Inventory transactions archive** to create an inventory transaction archive.</span></span>
+1. <span data-ttu-id="dbc7b-137">W oknie dialogowym **Archiwum transakcji magazynowych** na skróconej karcie **Parametry** ustaw następujące pola:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-137">In the **Inventory transactions archive** dialog box, on the **Parameters** FastTab, set the following fields:</span></span>
+
+    - <span data-ttu-id="dbc7b-138">**Od dnia w zamkniętym okresie księgi** — umożliwia wybór najwcześniejszej daty transakcji do archiwizacji.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-138">**From date in closed ledger period** – Select the earliest transaction date to include in the archive.</span></span>
+    - <span data-ttu-id="dbc7b-139">**Do dnia w zamkniętym okresie księgi** — umożliwia wybór najpóźniejszej daty transakcji do archiwizacji.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-139">**To date in closed ledger period** – Select the latest transaction date to include in the archive.</span></span>
+
+    <span data-ttu-id="dbc7b-140">![Okno dialogowe Archiwum transakcji magazynowych](media/archive-inventory-dates.png "Okno dialogowe Archiwum transakcji magazynowych")</span><span class="sxs-lookup"><span data-stu-id="dbc7b-140">![Inventory transactions archive dialog box](media/archive-inventory-dates.png "Inventory transactions archive dialog box")</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="dbc7b-141">Do wyboru będą dostępne tylko okresy spełniające [wymagania wstępne](#prerequisites).</span><span class="sxs-lookup"><span data-stu-id="dbc7b-141">Only periods that meet the [prerequisites](#prerequisites) will be available for selection.</span></span>
+
+1. <span data-ttu-id="dbc7b-142">Na skróconej karcie **Uruchom w tle** skonfiguruj szczegóły przetwarzania wsadowego.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-142">On the **Run in the background** FastTab, set up batch processing details as you require.</span></span> <span data-ttu-id="dbc7b-143">W przypadku zadań wsadowych w Microsoft Dynamics 365 Supply Chain Management wykonaj typowe czynności.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-143">Follow the usual steps for batch jobs in Microsoft Dynamics 365 Supply Chain Management.</span></span>
+1. <span data-ttu-id="dbc7b-144">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-144">Select **OK**.</span></span>
+1. <span data-ttu-id="dbc7b-145">Zostanie wyświetlony komunikat z monitem o potwierdzenie, że chcesz kontynuować.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-145">You receive a message that prompts you to confirm that you want to continue.</span></span> <span data-ttu-id="dbc7b-146">Przeczytaj uważnie wiadomość, a następnie wybierz przycisk **Tak**, jeśli chcesz kontynuować.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-146">Read the message carefully, and then select **Yes** if you want to continue.</span></span>
+
+    <span data-ttu-id="dbc7b-147">Zostanie wyświetlony komunikat informujący, że zadanie archiwum transakcji magazynowych zostało dodane do kolejki przetwarzania wsadowego.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-147">You receive a message that states that your inventory transactions archive job has been added to the batch queue.</span></span> <span data-ttu-id="dbc7b-148">Zadanie rozpocznie teraz archiwizację transakcji magazynowych z wybranego okresu.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-148">The job will now start to archive inventory transactions from the selected period.</span></span>
+
+## <a name="view-archived-inventory-transactions"></a><span data-ttu-id="dbc7b-149">Wyświetl zarchiwizowane transakcje magazynowe</span><span class="sxs-lookup"><span data-stu-id="dbc7b-149">View archived inventory transactions</span></span>
+
+<span data-ttu-id="dbc7b-150">Strona **Archiwum transakcji magazynowych** pokazuje pełną historię archiwizacji.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-150">The **Inventory transactions archive** page shows your full archiving history.</span></span> <span data-ttu-id="dbc7b-151">Każdy wiersz w siatce zawiera informacje, takie jak data utworzenia archiwum, użytkownik, który je utworzył, oraz jego stan.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-151">Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.</span></span>
+
+<span data-ttu-id="dbc7b-152">![Archiwizacja historii na stronie archiwum transakcji magazynowych](media/archive-inventory-full.png "Archiwizacja historii na stronie archiwum transakcji magazynowych")</span><span class="sxs-lookup"><span data-stu-id="dbc7b-152">![Archiving history on the Inventory transactions archive page](media/archive-inventory-full.png "Archiving history on the Inventory transactions archive page")</span></span>
+
+<span data-ttu-id="dbc7b-153">Z listy rozwijanej w górnej części strony wybierz jedną z następujących wartości, aby przefiltrować archiwa pokazywane w siatce:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-153">In the drop-down list at the top of the page select one of the following values to filter the archives that are shown in the grid:</span></span>
+
+- <span data-ttu-id="dbc7b-154">**Aktywne** — pokazywane są tylko aktywne archiwa, a nie wycofane archiwa.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-154">**Active** – Show only active archives, not reversed archives.</span></span>
+- <span data-ttu-id="dbc7b-155">**Wszystkie** — pokazywane są wszystkie archiwa, aktywne i wycofane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-155">**All** – Show all archives, both active and reversed.</span></span>
+
+<span data-ttu-id="dbc7b-156">Dla każdego archiwum w siatce są dostarczane następujące informacje:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-156">For each archive in the grid, the following information is provided:</span></span>
+
+- <span data-ttu-id="dbc7b-157">**Aktywne** — znacznik wyboru wskazuje, że archiwum jest aktywne.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-157">**Active** – A check mark indicates that the archive is active.</span></span>
+- <span data-ttu-id="dbc7b-158">**Od daty** — data najstarszej transakcji, która może zostać uwzględniona w archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-158">**From date** – The date of the oldest transaction that can be included in the archive.</span></span>
+- <span data-ttu-id="dbc7b-159">**Do daty** — data najpóźniejszej transakcji, która może zostać uwzględniona w archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-159">**To date** – The date of the latest transaction that can be included in the archive.</span></span>
+- <span data-ttu-id="dbc7b-160">**Zaplanowane przez** — konto użytkownika, który utworzył archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-160">**Scheduled by** – The user account that created the archive.</span></span>
+- <span data-ttu-id="dbc7b-161">**Wykonane** – Data i godzina utworzenia archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-161">**Executed** – The date when the archive was created.</span></span>
+- <span data-ttu-id="dbc7b-162">**Wycofanie** — znacznik wyboru wskazuje, że archiwum zostało wycofane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-162">**Reverse** – A check mark indicates that the archive has been reversed.</span></span>
+- <span data-ttu-id="dbc7b-163">**Zatrzymaj bieżącą aktualizację** — znacznik wyboru wskazuje, że archiwum jest w toku, ale zostało wstrzymane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-163">**Stop current update** – A check mark indicates that the archive is in progress, but it has been paused.</span></span>
+- <span data-ttu-id="dbc7b-164">**Stan** — stan przetwarzania archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-164">**State** – The processing status of the archive.</span></span> <span data-ttu-id="dbc7b-165">Możliwe wartości to *Oczekujące*, *W toku* i *Zakończone*.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-165">The possible values are *Waiting*, *In progress*, and *Finished*.</span></span>
+
+<span data-ttu-id="dbc7b-166">Pasek narzędzi nad siatką zawiera następujące przyciski, których można używać do pracy z wybranym archiwum:</span><span class="sxs-lookup"><span data-stu-id="dbc7b-166">The toolbar above the grid provides the following buttons that you can use to work with a selected archive:</span></span>
+
+- <span data-ttu-id="dbc7b-167">**Zarchiwizowane transakcje** – Umożliwia wyświetlenie wszystkich szczegółów wybranego archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-167">**Archived transactions** – View the full details of the selected archive.</span></span> <span data-ttu-id="dbc7b-168">Na stronie **Zarchiwizowane transakcje** wyświetlane są wszystkie transakcje z archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-168">The **Archived transactions** page that appears shows all the transactions in the archive.</span></span>
+
+    <span data-ttu-id="dbc7b-169">![Strona zarchiwizowanej transakcji](media/archive-inventory-transactions.png "Strona zarchiwizowanej transakcji")</span><span class="sxs-lookup"><span data-stu-id="dbc7b-169">![Archived transactions page](media/archive-inventory-transactions.png "Archived transactions page")</span></span>
+
+    <span data-ttu-id="dbc7b-170">Aby wyświetlić więcej informacji o określonej transakcji na stronie **Zarchiwizowane transakcje**, zaznacz ją w siatce, a następnie w okienku akcji wybierz opcję **Szczegóły zarchiwizowanej transakcji**.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-170">To view more information about a specific transaction on the **Archived transactions** page, select it in the grid, and then, on the Action Pane, select **Archived transaction details**.</span></span> <span data-ttu-id="dbc7b-171">Na stronie **Szczegółów zarchiwizowanych transakcji** są wyświetlane informacje, takie jak księgowanie w księdze, powiązane odwołania do księgi podrzędnej i wymiary finansowe.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-171">The **Archived transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.</span></span>
+
+- <span data-ttu-id="dbc7b-172">**Wstrzymywanie archiwizacji** — wstrzymanie wybranego archiwum, które jest obecnie przetwarzane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-172">**Pause archiving** – Pause a selected archive that is currently being processed.</span></span> <span data-ttu-id="dbc7b-173">Wstrzymanie następuje dopiero po wygenerowaniu zadania archiwizacji.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-173">The pause takes effect only after the archiving task has been generated.</span></span> <span data-ttu-id="dbc7b-174">Dlatego może wystąpić krótkie opóźnienie, zanim wstrzymanie zacznie obowiązywać.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-174">Therefore, there might be a short delay before the pause takes effect.</span></span> <span data-ttu-id="dbc7b-175">Jeśli archiwum zostało wstrzymane, w polu **Zatrzymaj bieżącą aktualizację** jest wyświetlany znacznik wyboru.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-175">If an archive has been paused, a check mark appears in its **Stop current update** field.</span></span>
+- <span data-ttu-id="dbc7b-176">**Wznawianie archiwizacji** — Wznów przetwarzanie wybranego archiwum, które jest obecnie wstrzymane.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-176">**Resume archiving** – Resume processing for a selected archive that is currently paused.</span></span>
+- <span data-ttu-id="dbc7b-177">**Wycofanie** — wycofanie wybranego archiwum.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-177">**Reverse** – Reverse the selected archive.</span></span> <span data-ttu-id="dbc7b-178">Archiwum można wycofać tylko wtedy, gdy w polu **Stan** ustawiono wartość *Zakończono*.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-178">You can reverse an archive only if its **State** field is set to *Finished*.</span></span> <span data-ttu-id="dbc7b-179">Jeśli archiwum zostało wycofane, w polu **Wycofaj** jest wyświetlany znacznik wyboru.</span><span class="sxs-lookup"><span data-stu-id="dbc7b-179">If an archive has been reversed, a check mark appears in its **Reverse** field.</span></span>
