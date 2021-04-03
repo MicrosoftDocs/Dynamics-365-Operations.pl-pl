@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024677"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500605"
 ---
 # <a name="manage-standard-cost-updates"></a>Zarządzanie aktualizacjami kosztu standardowego
 
@@ -45,6 +45,8 @@ Poniżej pokazano, jak używać metod jednej i dwóch wersji do aktualizacji kos
 W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do zarządzania aktualizacjami za rok 2020. Można użyć więcej niż jedną dodatkową wersję wyceny, na przykład osobną wersję dla poszczególnych zbiorów aktualizacji. Jeśli używanych jest kilka opcji dodatkowej wyceny, domyślnej wyraża się jako koszty aktywne, ponieważ koszty aktywne są rozciągnięte jest na kilka wersji.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Wymiary finansowe dla przeszacowania kosztu standardowego
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktywowanie nowej ceny standardowej zwykle powoduje przeszacowanie wartości dostępnych zapasów o transakcje przeszacowania kosztu standardowego. Zazwyczaj w transakcjach są wówczas księgowane wymiary finansowe towaru. Aby jednak określić, czy i w jaki sposób są księgowane wymiary finansowe, należy za pomocą funkcji [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włączyć funkcję o nazwie *Opcje domyślnego wymiaru finansowego dla przesądu kosztów standardowych zapasów*. Po włączeniu tej funkcji wybierz opcje **Zarządzanie kosztami > Ustawienia zasad księgowania zapasów > Parametry** i ustaw jedną z następujących wartości nowej listy rozwijanej **źródła wymiarów finansowych**:
 

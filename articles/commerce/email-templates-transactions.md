@@ -3,7 +3,7 @@ title: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjny
 description: W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000794"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555252"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
@@ -39,7 +39,7 @@ Aby można było mapować określone zdarzenie transakcyjne na szablon wiadomoś
 
 Aby utworzyć szablon wiadomości e-mail, należy wykonać poniższe kroki.
 
-1. W centrali Commerce przejdź do **Szablony wiadomości e-mail organizacji**, które są znajdują się w **Retail i Commerce \> Ustawienia centrali \> Szablony wiadomości e-mail organizacji** lub **Administrowanie organizacją \> Konfiguracja \> Szablony wiadomości e-mail organizacji**.
+1. W centrali Commerce przejdź do **Retail i Commerce \> Ustawienia centrali \> Szablony wiadomości e-mail organizacji** lub **Administrowanie organizacją \> Konfiguracja \> Szablony wiadomości e-mail organizacji**.
 1. Wybierz pozycję **Nowy**.
 1. W obszarze **Ogólne** ustaw następujące pola:
 
@@ -78,28 +78,29 @@ Oto przykład.
 
 Poniższe symbole zastępcze pobierają i pokazują dane zdefiniowane na poziomie zamówienia sprzedaży (w przeciwieństwie do poziomu wiersza sprzedaży).
 
-| Nazwa symbolu zastępczego    | Wartość symbolu zastępczego                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Nazwa odbiorcy, który złożył zamówienie.                   |
-| salesid             | Identyfikator zamówienia powiązanego ze sprzedażą.                                       |
-| deliveryaddress     | Adres dostawy wysłanych zamówień.                         |
-| customeraddress     | Adres odbiorcy.                                     |
-| deliverydate        | Data dostawy.                                               |
-| shipdate            | Data wysyłki.                                                   |
-| modeofdelivery      | Metoda dostawy zamówienia.                                  |
-| opłaty             | Łączne opłaty za zamówienie.                                 |
-| podatek                 | Łączny podatek za zamówienie.                                     |
-| suma               | Łączna kwota zamówienia.                                  |
-| ordernetamount      | Łączna kwota zamówienia pomniejszona o łączny podatek.             |
-| rabat            | Łączny rabat dla zamówienia.                                |
-| storename           | Nazwa sklepu, w którym złożono zamówienie.                |
-| storeaddress        | Adres sklepu, w którym złożono zamówienie.                  |
-| storeopenfrom       | Godzina otwarcia sklepu, w którym złożono zamówienie.             |
-| storeopento         | Godzina zamknięcia sklepu, w którym złożono zamówienie.             |
-| pickupstorename     | Nazwa sklepu, w którym zamówienie zostanie odebrane.         |
-| pickupstoreaddress  | Adres sklepu, w którym zamówienie zostanie odebrane.      |
-| pickupopenstorefrom | Godzina otwarcia sklepu, w którym zamówienie zostanie odebrane. |
-| pickupopenstoreto   | Godzina zamknięcia sklepu, w którym zamówienie zostanie odebrane. |
+| Nazwa symbolu zastępczego     | Wartość symbolu zastępczego                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Nazwa odbiorcy, który złożył zamówienie.               |
+| salesid              | Identyfikator zamówienia powiązanego ze sprzedażą.                                   |
+| deliveryaddress      | Adres dostawy wysłanych zamówień.                     |
+| customeraddress      | Adres odbiorcy.                                 |
+| customeremailaddress | Adres e-mail wprowadzony przez klienta podczas realizacji zamówienia.     |
+| deliverydate         | Data dostawy.                                           |
+| shipdate             | Data wysyłki.                                               |
+| modeofdelivery       | Metoda dostawy zamówienia.                              |
+| opłaty              | Łączne opłaty za zamówienie.                             |
+| podatek                  | Łączny podatek za zamówienie.                                 |
+| suma                | Łączna kwota zamówienia.                              |
+| ordernetamount       | Łączna kwota zamówienia pomniejszona o łączny podatek.         |
+| rabat             | Łączny rabat dla zamówienia.                            |
+| storename            | Nazwa sklepu, w którym złożono zamówienie.            |
+| storeaddress         | Adres sklepu, w którym złożono zamówienie.              |
+| storeopenfrom        | Godzina otwarcia sklepu, w którym złożono zamówienie.         |
+| storeopento          | Godzina zamknięcia sklepu, w którym złożono zamówienie.         |
+| pickupstorename      | Nazwa sklepu, w którym zamówienie zostanie odebrane.     |
+| pickupstoreaddress   | Adres sklepu, w którym zamówienie zostanie odebrane.  |
+| pickupopenstorefrom  | Godzina otwarcia sklepu, w którym zamówienie zostanie odebrane. |
+| pickupopenstoreto    | Godzina zamknięcia sklepu, w którym zamówienie zostanie odebrane. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Symbole zastępcze wierszy zamówienia (poziom wiersza sprzedaży)
 
@@ -169,11 +170,8 @@ Oto przykład.
 
 Paragony można wysyłać pocztą e-mail do odbiorców, którzy dokonują zakupów w punkt sprzedaży detalicznej. Na ogół kroki prowadzące do utworzenia szablonu paragonów wysłanych w wiadomościach e-mail są takie same jak w przypadku tworzenia szablonów dla innych zdarzeń transakcyjnych. Wymagane są jednak następujące zmiany:
 
-- Identyfikatorem e-mail szablonu wiadomości e-mail musi być **emailRecpt**.
 - Tekst paragonu jest wstawiany do wiadomości e-mail za pomocą symbolu zastępczego **%message%**. Aby zapewnić prawidłowe renderowanie treści paragony, należy otoczyć symbol zastępczy **%message%** tagami HTML **&lt;pre&gt;** i **&lt;/pre&gt;**.
-- Podziały wierszy w kodzie HTML dla nagłówka i stopki wiadomości e-mail są konwertowane na tagi HTML **&lt;br /&gt;**, dzięki czemu treść paragonu jest poprawnie renderowana. Aby wyeliminować niepożądany pionowy wolny obszar w wiadomościach e-mail z paragonem, usuń podziały wierszy z dowolnego miejsca w kodzie HTML, gdzie odstęp pionowy nie jest wymagany.
-
-Aby uzyskać więcej informacji o sposobie konfigurowania paragonów w wiadomościach e-mail, zobacz temat [Ustawianie paragonów w wiadomościach e-mail](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Symbol **%receiptid%** zastępczy może służyć do pokazywania kodu PIN lub kodu kreskowygo reprezentującego identyfikator paragonu. (Kody PIN i kody kreskowe są dynamicznie generowane i obsługiwane przez usługę firmy trzeciej) Aby uzyskać więcej informacji na temat sposobu pokazywania kodu PIN lub kodu kreskowych w paragonie w wiadomościach e-mail, zobacz temat [Dodawanie kodu lub kodu kreskowych do wiadomości e-mail o transakcjach i paragonach](add-qr-code-barcode-email.md)..
 
 ## <a name="upload-the-email-html"></a>Przekazywanie kodu wiadomości e-mail
 

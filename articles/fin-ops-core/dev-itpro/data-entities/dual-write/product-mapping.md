@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115687"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560466"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -92,9 +91,13 @@ Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące r�
 
 W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy z tabeli, w której produkt jest wydawany w aplikacji Finance and Operations. Jeśli nie ma cennika w danej walucie, automatycznie zostanie utworzony cennik, a produkt zostanie do niego przypisany. 
 
+Obecna implementacja wtyczek z podwójnym zapisem, które kojarzą domyślny cennik z jednostką, wyszukują walutę skojarzoną z aplikacją Finance and Operations i znajdują pierwszy cennik w aplikacji angażującej klientów przy użyciu sortowania alfabetycznego w nazwie cennika. Aby ustawić domyślny cennik dla określonej waluty, gdy masz wiele cenników dla tej waluty, musisz zaktualizować nazwę cennika do nazwy, która jest wcześniejsza w kolejności alfabetycznej niż jakiekolwiek inne cenniki dla tej samej waluty.
+
 Produkty domyślne z Finance and Operations operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**. 
 
 Jeśli produkty są synchronizowane, należy wprowadzić wartość w polu **Jednostka sprzedaży** w aplikacji Finance and Operations, ponieważ jest to pole obowiązkowe w aplikacji Sales.
+
+Tworzenie rodzin produktów z Dynamics 365 Sales nie jest obsługiwane w przypadku synchronizacji produktów z podwójnym zapisem.
 
 Synchronizacja produktów odbywa się z aplikacji Finance and Operations do usługi Dataverse. Oznacza to, że wartości kolumn tabeli produktu mogą być zmieniane w Dataverse, ale po wyzwoleniu synchronizacji (po zmodyfikowaniu kolumny produktu w module w aplikacji Finance and Operations) zostaną one zastąpione wartościami w Dataverse. 
 
