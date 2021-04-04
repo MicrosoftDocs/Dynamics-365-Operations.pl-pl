@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105724"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556369"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -51,6 +51,8 @@ Aby utworzyć zamówienie magazynowe, należy wykonać następujące czynności.
 1. Wybierz kolejno opcje **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**.
 1. W okienku akcji na karcie **Magazyn** w grupie **Akcje** wybierz opcję **Zwolnienie do magazynu**.
 1. Aby wyświetlić powiązane wiersze zamówienia magazynowego, otwórz odpowiednie zamówienie zakupu, wybierz wiersz w sekcji **Wiersze zamówienia zakupu**, a następnie na pasku narzędzi wybierz pozycję **Magazyn \> Wiersze zamówienia magazynowego**. Aby wyświetlić wszystkie wiersze, przejdź do pozycji **Zarządzanie magazynem \> Zapytania i raporty \> Wiersze zamówienia magazynowego**.
+
+Proces *Zwalniania do magazynu* można również wyzwolić z zadania wsadowego, przechodząc na pozycję **Zarządzanie magazynem > Zwolnij do magazynu > Automatyczne zwalnianie zamówień zakupu**. Podczas konfigurowania zadania wsadowego można wybrać określone wiersze zamówienia zakupu na podstawie zapytania. Typowym scenariuszem byłoby skonfigurowanie powtarzającego się zadania wsadowego, które zwalnia wszystkie potwierdzone wiersze zamówienia zakupu, które mają nadejść następnego dnia.
 
 ## <a name="cancel-a-warehouse-order"></a>Anulowanie zamówienia magazynowego
 

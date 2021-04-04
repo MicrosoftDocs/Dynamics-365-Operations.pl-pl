@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c4cad56389c7a8fd6d37591c1ff335fff715707
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
+ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001831"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476706"
 ---
 # <a name="inventory-statuses"></a>Stany zapasów
 
@@ -45,6 +45,9 @@ Stan zapasów jest jednym z wymiarów w grupie wymiarów magazynowania. Stany za
 
 Można korzystać z pozycji magazynowych ze stanem niedostępne lub dostępne w przypadku pracy przychodzącej. Można na przykład utworzyć stan dostępny o nazwie *Gotowe*, stan niedostępny o nazwie *Uszkodzone* i stan zablokowany o nazwie *Zablokowane*. Podczas tworzenia zamówienia zakupu dla odebranych lub zwróconych towarów, jeśli wszystkie towary są uszkodzone, można zmienić stan zapasów tych towarów na *Uszkodzone* w wierszu zamówienia zakupu. Po przyjęciu tych towarów ich stan jest automatycznie ustawiany na *Zablokowane*. W przypadku zeskanowania uszkodzonych towarów za pomocą urządzenia przenośnego program Supply Chain Management może użyć dyrektywy lokalizacji i szablonów pracy, aby wyświetlać informacje o odpowiedniej lokalizacji lub zakresie lokalizacji, w których można odłożyć te towary. W przypadku zwróconych towarów na stronie *Transakcje magazynowe* tworzony jest typ **Rezerwacja**.
 
+> [!NOTE]
+> Nie możesz zmienić stanu zapasów w lokalizacjach, w których istnieje otwarta praca. Na przykład, jeśli dokonałeś zakupu dla towaru, ale nie wykonałeś kroku odkładania, to dla lokalizacji odbioru istniałaby otwarta praca i wystąpiłby błąd, gdybyś próbował zmienić stan zapasów w tej lokalizacji. Ukończenie lub anulowanie powiązanych prac pozwoliłoby na zmianę statusu.
+ 
 W przypadku pracy wychodzącej należy użyć towarów z dostępnym stanem zapasów. Jeśli masz towary ze stanem *Uszkodzone* i zostało dla nich uruchomione planowanie główne, pozycje te zostaną uznane za brakujące, a zapasy są uzupełniane automatycznie.
 
 Po skonfigurowaniu stanów zapasów można ustawić domyślny stan zapasów dla oddziału, towaru i magazynu. Można również ustawić domyślny stan dla zamówień sprzedaży, przeniesienia i zakupu. Domyślny stan dla zamówień sprzedaży i wychodzących zamówień przeniesienia opcja **Blokowanie towarów** nie może mieć wartości *Tak*. Stan zapasów przejmowany z domyślnych ustawień lokalizacji, magazynu, towaru, zamówienia zakupu, zamówienia przeniesienia czy zamówienia sprzedaży może zostać zmieniony za pomocą urządzenia przenośnego lub w wierszu zamówienia zakupu, zamówienia sprzedaży lub zamówienia przeniesienia.

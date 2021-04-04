@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 3564e7807ed81684d51de3185cea9b4f35f38d8b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113816"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468282"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Procesy wynagrodzeń służą do określania nowych kwot wynagrodzeń i nagród dla pracowników objętych planami wynagrodzeń stałych i o zmiennej wysokości. Procesy wynagrodzeń można uruchamiać wiele razy w celu przeprowadzenia analizy „co, jeśli” i zweryfikowania, czy wszystkie zmiany i ustawienia są poprawne. Ta procedura spowoduje utworzenie procesu wynagrodzenia, wykonanie go i wyświetlenie wyników. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 

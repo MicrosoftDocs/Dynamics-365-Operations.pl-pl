@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991722"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470675"
 ---
 # <a name="set-up-return-reason-codes"></a>Konfigurowanie kodów przyczyn zwrotu   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991722"
 
 ## <a name="set-up-return-reason-code-groups"></a>Konfigurowanie grup kodów przyczyn zwrotu 
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Grupy kodów przyczyn zwrotu**.
+1.  Przejdź do **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Grupy kodów przyczyn zwrotu**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, aby utworzyć wiersz dla nowej grupy kodów przyczyn zwrotów.
+2.  Wybierz **Nowy**, aby utworzyć wiersz dla nowej grupy kodów przyczyn zwrotów.
 
 3.  W polu **Grupa kodów przyczyn zwrotu** wpisz identyfikator tej grupy.
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991722"
 
 Ta procedura pomaga skonfigurować kody przyczyny zwrotu, których można użyć, aby wskazać, dlaczego produkt został zwrócony przez klienta.
 
-1.  Kliknij kolejno opcje **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Kody przyczyn zwrotu**.
+1.  Przejdź do **Sprzedaż i marketing** \> **Ustawienia** \> **Zamówienia sprzedaży** \> **Zwroty** \> **Kody przyczyn zwrotu**.
 
 2.  Naciśnij klawisze CTRL+N, aby utworzyć nowy wiersz kodu przyczyny zwrotu.
 

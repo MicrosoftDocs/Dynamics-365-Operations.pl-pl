@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991598"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470889"
 ---
 # <a name="set-up-subscription-groups"></a>Ustawianie grup subskrypcji 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Subskrypcje serwisowe** \> **Grupy subskrypcji**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Ustawienia** \> **Subskrypcje serwisowe** \> **Grupy subskrypcji**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N lub kliknij przycisk **Nowy**, aby utworzyć nową grupę subskrypcji.
+2.  Wybierz pozycję **Nowy**, aby utworzyć nową grupę subskrypcji.
 
 3.  W polu **Grupa subskrypcji** wprowadź opisową nazwę nowej grupy subskrypcji.
 

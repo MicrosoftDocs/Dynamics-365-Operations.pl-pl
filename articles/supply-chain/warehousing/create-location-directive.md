@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963317"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470526"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -239,7 +239,7 @@ Można określić wiele działań dyrektywy lokalizacji dla każdego wiersza. I 
     - **Zaokrąglanie w górę do pełnej partii LP i FEFO** — Ta strategia łączy elementy *rezerwacji partii FEFO* i *zaokrągla w górę do strategii z pełnym LP*. Jest ona ważna tylko dla pozycji z włączonymi partiami i dyrektyw lokalizacji, które mają typ prac *pobrania*. Wiersz musi mieć włączoną funkcję wsadową, aby można było użyć strategii *rezerwacji wsadowej FEFO*, zaś strategii *zaokrąglenia do pełnego LP* można użyć tylko do odnawiania. Jeśli ta strategia zostanie skonfigurowana razem z limitem składowania lokalizacji, może to spowodować, że wybrana lokalizacja pracy zostanie zastąpiona, a limity składowania zostaną pominięte.
     - **Zaokrąglij w górę do pełnego nr id.** – Ta strategia zaokrągla ilość zapasów, tak aby była zgodna z ilością na tablicach rejestracyjnych przypisaną do towarów, które muszą zostać pobrane. Tę strategię można stosować tylko do typu uzupełniania zapasów w dyrektywie lokalizacji typu *Pobranie*. Jeśli ta strategia zostanie skonfigurowana razem z limitem składowania lokalizacji, może to spowodować, że wybrana lokalizacja pracy zostanie zastąpiona, a limity składowania zostaną pominięte.
     - **Oparta na numerze ID** – Po zwolnieniu zamówienia do magazynu, w celu utworzenia pracy pobrania i odłożenia wykorzystywana jest strategia w dyrektywie lokalizacji. Można to zrobić dla wielu numerów identyfikacyjnych. Ta strategia oparta na numerach identyfikacyjnych będzie próbować zarezerwować i utworzyć pracę pobrania w odniesieniu do lokalizacji przechowujących żądane numery identyfikacyjne, które zostały skojarzone z wierszami zamówienia przeniesienia. Jeśli jednak nie można ukończyć tych akcji, ale nadal chcesz utworzyć pracę pobrania, powróć do innej strategii dotyczącej akcji dyrektyw dotyczących lokalizacji. W zależności od wymagań dotyczących procesu biznesowego można również wyszukać zapasy w innym obszarze magazynu.
-    - **Pusta lokalizacja bez przychodzącej pracy** – ta strategia jest używana do znajdowania pustych lokalizacji. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących. Tę strategię można stosować tylko do lokalizacji, które mają typ pracy *Pobranie*.
+    - **Pusta lokalizacja bez przychodzącej pracy** – ta strategia jest używana do znajdowania pustych lokalizacji. Lokalizacja jest uważana za pustą, jeśli nie ma w niej fizycznych zapasów i nie ma żadnych oczekiwanych prac przychodzących. Tę strategię można stosować tylko do lokalizacji, które mają typ pracy *Odłożenie*.
     - **Wiekowanie lokacji FIFO** Za pomocą strategii FIFO  można wysyłać zarówno towary śledzone wsadowo, jak i towary nieśledzone partiami, na podstawie daty wprowadzenia zapasów do magazynu. Ta możliwość może być szczególnie przydatna w przypadku nieśledzonych partii zapasów, gdy data wygaśnięcia nie jest dostępna do sortowania. Strategia FIFO znajduje lokalizację, która zawiera najstarszą datę wiekowania, oraz przydziela pobieranie na podstawie tej daty wiekowania.
     - **Wiekowanie lokacji LIFO** Za pomocą strategii LIFO można wysyłać zarówno towary śledzone wsadowo, jak i towary nieśledzone partiami, na podstawie daty wprowadzenia zapasów do magazynu. Ta możliwość może być szczególnie przydatna w przypadku nieśledzonych partii zapasów, gdy data wygaśnięcia nie jest dostępna do sortowania. Strategia LIFO znajduje lokalizację, która zawiera najnowszą datę wiekowania, oraz przydziela pobieranie na podstawie tej daty wiekowania.
 

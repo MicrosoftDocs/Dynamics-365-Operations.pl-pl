@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125432"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500629"
 ---
 # <a name="recruiting-request"></a>Wniosek o rekrutację
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym temacie opisano jednostkę Wniosku o rekrutację dla Dynamics 365 Human Resources.
 
@@ -98,7 +100,8 @@ Opisuje żądanie rekrutacji na stanowisko.
 | **Wartość identyfikatora typu zadania**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Tylko do odczytu<br>Opcjonalny<br>Klucz obcy: mshr_hcmjobtypeentityid jednostki mshr_hcmjobtypenentity | Wygenerowany przez system unikalny identyfikator typu stanowiska powiązanego ze stanowiskiem dla żądania rekrutacyjnego. |
 | **Stan zwolnienia**<br>mshr_exemptstatus<br>Zestaw opcji *JobExemptStatus* | Tylko do odczytu<br>Opcjonalny | Stan zwolnienia FLSA na podstawie typu zadania. |
 | **Szacowana data rozpoczęcia**<br>mshr_estimatedstartdate<br>*Data* | Czytaj/zapisz<br>Potrzebne | Szacowana data rozpoczęcia pracy przez kandydata. |
-| **Zewnętrzny opis**<br>mshr_externaldescription<br>*Ciąg* | Czytaj/zapisz<br>Opcjonalny | Opis pracy / stanowiska skierowany do kandydata. | Wynagrodzenie - niski próg<br>mshr_compensationlowthreshold<br>*Podwójne* | Czytaj/zapisz<br>Opcjonalny | Dolna granica poziomu wynagrodzenia. |
+| **Zewnętrzny opis**<br>mshr_externaldescription<br>*Ciąg* | Czytaj/zapisz<br>Opcjonalny | Opis pracy / stanowiska skierowany do kandydata. | 
+| **Wynagrodzenie - niski próg**<br>mshr_compensationlowthreshold<br>*Podwójne* | Czytaj/zapisz<br>Opcjonalny | Dolna granica poziomu wynagrodzenia. |
 | **Punkt kontrolny wynagrodzenia**<br>mshr_compensationcontrolpoint<br>*Podwójne* | Czytaj/zapisz<br>Opcjonalny | Punkt kontrolny dla poziomu wynagrodzeń. |
 | **Wynagrodzenie - wysoki próg**<br>mshr_compensationhighthreshold<br>*Podwójne* | Czytaj/zapisz<br>Opcjonalny | Górna granica poziomu wynagrodzenia. |
 | **Poziom wynagrodzeń**<br>mshr_compensationlevelid<br>*Ciąg* | Czytaj/zapisz<br>Opcjonalny | Poziom wynagrodzenia na stanowisku. Stanowisko może być ustawione z wieloma poziomami wynagrodzeń. Ten atrybut wskazuje wybrany poziom wynagrodzenia dla tego żądania. |

@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973767"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558269"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
 
 [!include [banner](../includes/banner.md)]
+
 
 Układ rozsyłania dokumentów określa układ etykiet numeru identyfikacyjnego oraz dane, które są na nich drukowane. Punkty wyzwalacza drukowania konfiguruje się podczas konfigurowania elementów menu urządzeń przenośnych i szablonów pracy.
 
@@ -51,6 +52,10 @@ W ramach procesu drukowania etykiet tekst `$LicensePlateId$` w tym przykładzie 
 Aby wyświetlić wartości, które będą drukowane, należy przejść do **Zarządzanie magazynem \> Zapytania i raporty \> Etykiety numerów identyfikacyjnych**.
 
 Wiele narzędzi do generowania etykiet ułatwia formatowanie tekstu w układzie etykiety. Wiele z tych narzędzi obsługuje ten format `$FieldName$`. Ponadto Microsoft Dynamics 365 Supply Chain Management stosuje specjalną logikę formatowania jako część mapowania pól dla układu rozsyłania dokumentów.
+
+## <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
+
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tym temacie, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ulepszone układy etykiet tablic rejestracyjnych*.
 
 ## <a name="custom-number-formats"></a>Niestandardowe formaty liczb
 

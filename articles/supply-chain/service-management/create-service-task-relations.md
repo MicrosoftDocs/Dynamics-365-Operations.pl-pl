@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5fd978c1e9db7e7ce3c06bbeb45b59854f1582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea5952376fe30f489d385c8f8295fbf86f2af085
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974667"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470744"
 ---
 # <a name="create-service-task-relations"></a>Tworzenie relacji zadania serwisowego    
 
@@ -32,13 +32,13 @@ Zadanie serwisowe można skojarzyć z umowami serwisowymi lub zleceniami serwiso
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Tworzenie relacji z umową serwisową
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Umowy serwisowe** \> **Umowy serwisowe**.
 
 2.  Wybierz istniejącą umowę serwisową lub utwórz nową.
 
-3.  W okienku akcji kliknij przycisk **Zadania serwisowe**.
+3.  W okienku akcji wybierz przycisk **Zadania serwisowe**.
 
-4.  W formularzu **Zadania serwisowe** naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do umowy serwisowej.
+4.  W formularzu **Zadania serwisowe** wybierz **Nowy**, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do umowy serwisowej.
 
 5.  Na karcie **Opis** wprowadź w polach tekstowych dowolne opisowe notatki wewnętrzne lub zewnętrzne.
 
@@ -50,13 +50,13 @@ Relacja zadań serwisowych utworzona dla umowy serwisowej jest dostępna z pozio
 
 ## <a name="create-a-relation-with-a-service-order"></a>Tworzenie relacji ze zleceniem serwisowym
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
 
 2.  Wybierz istniejące zlecenie serwisowe lub utwórz nowe.
 
-3.  W okienku akcji kliknij przycisk **Zadania serwisowe**.
+3.  W okienku akcji wybierz przycisk **Zadania serwisowe**.
 
-4.  W formularzu **Zadania serwisowe** naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do zlecenia serwisowego.
+4.  W formularzu **Zadania serwisowe** wybierz **Nowy**, aby utworzyć nowy wiersz, a następnie wybierz zadanie serwisowe z listy **Zadania serwisowe**, aby je dołączyć do zlecenia serwisowego.
 
 5.  Na karcie **Opis** wprowadź w polach tekstowych dowolne opisowe notatki wewnętrzne lub zewnętrzne.
 

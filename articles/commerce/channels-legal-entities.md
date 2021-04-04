@@ -1,5 +1,5 @@
 ---
-title: Tworzenie firm
+title: Utwórz firmy
 description: W tym temacie opisano sposób tworzenia firm w Microsoft Dynamics 365 Commerce, która musi zostać utworzona i skonfigurowana przed utworzeniem kanałów.
 author: samjarawan
 manager: annbe
@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9491feb004366a02155225bfb323773e130f3dc9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 016b67631a53139d12d65dfaf594f49b030326b1
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993610"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478219"
 ---
-# <a name="create-legal-entities"></a>Tworzenie firm
-
+# <a name="create-legal-entities"></a>Utwórz firmy
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia firm w Microsoft Dynamics 365 Commerce, która musi zostać utworzona i skonfigurowana przed utworzeniem kanałów.
-
-## <a name="overview"></a>Omówienie
 
 Firma to organizacja, która ma zarejestrowaną lub uchwaloną strukturę prawną. Firmy mogą zawierać zgodne z prawem umowy i wymaga się od nich przygotowywania zestawień na temat ich wydajności.
 

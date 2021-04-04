@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e56edc19591ba535518f1cac54d29427ca233ab9
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: aba4a073e714e950b8efed1692ff2de7b3d557fa
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113846"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468330"
 ---
 # <a name="configure-waiting-days"></a>Konfigurowanie dni oczekiwania
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W programie Microsoft Dynamics 365 Human Resources dni oczekiwania wyznaczają miesięczny punkt kontrolny, który ma być używany w planach świadczeń. Na przykład dzień oczekiwania 15 reprezentuje piętnasty dzień każdego miesiąca. 
 

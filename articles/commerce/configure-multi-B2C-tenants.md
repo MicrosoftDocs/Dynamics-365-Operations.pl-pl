@@ -16,20 +16,18 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a1af453349d69ef94d725e138a898c73ea052fa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997607"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477763"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania wielu dzierżawców (B2C) Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników na kanał w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Dynamics 365 Commerce używa tożsamości w chmurze B2C usługi Azure AD do obsługi poświadczeń użytkowników i przepływów uwierzytelniania. Użytkownicy mogą skorzystać z przepływów uwierzytelniania, aby zarejestrować się, zalogować i zresetować hasło. Azure AD B2C przechowuje poufne informacje o uwierzytelnianiu użytkownika, takie jak jego nazwa użytkownika i hasło. Rekord użytkownika jest unikatowy dla każdego dzierżawcy B2C i używa zarówno poświadczeń nazwy użytkownika (adresu e-mail), jak i poświadczeń dostawcy tożsamości społecznościowych.
 

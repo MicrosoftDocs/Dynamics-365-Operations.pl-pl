@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501133"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Planowanie główne z uwzględnieniem prognoz popytu
 
@@ -249,7 +249,7 @@ W takim wypadku są tworzone następujące zamówienia planowane.
 Klucz redukcji prognozy jest używany w metodach **transakcje — klucz redukcji** i **procent — klucz redukcji** redukcji prognozowanego zapotrzebowania. Wykonaj następujące kroki, aby utworzyć i skonfigurować klucz redukcji.
 
 1. Przejdź do menu **Planowanie główne \> Konfiguracja \> Zapotrzebowanie \> Klucze redukcji**.
-2. Wybierz **nowy** lub naciśnij **Ctrl + N**, aby utworzyć klucz redukcji.
+2. Wybierz pozycję **Nowy**, aby utworzyć klucz redukcji.
 3. W polu **klucza redukcji** wprowadź unikatowy identyfikator klucza redukcji prognoz. Następnie w polu **Nazwa** nadaj nazwę. 
 4. Definiowanie okresów i procenta klucza redukcji w każdym okresie:
 
@@ -265,8 +265,8 @@ Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wyk
 2. Na skróconej karcie **Inne** w polu **Klucz redukcji** wybierz klucz redukcji, który zostanie przypisany do grupy zapotrzebowania. Klucz redukcji następnie stosuje się do wszystkich elementów, które należą do grupy zapotrzebowania.
 3. Aby użyć klucza redukcji do obliczania redukcji prognozy w planowaniu głównym, to ustawienie należy zdefiniować w oknie ustawień planu głównego lub planu wg prognozy. Przejdź do jednej z następujących lokalizacji:
 
-    - Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz
-    - Planowanie główne \> Ustawienia \> Plany \> Plany główne
+    - **Planowanie główne \> Konfiguracja \> Plany \> Plany wg prognoz**
+    - **Planowanie główne \> Ustawienia \> Plany \> Plany główne**
 
 4. Na stronie **planów wg prognozy** lub **planów głównych** na skróconej karcie **ogólne** w polu **metoda używana do zmniejszenia prognozowanych zapotrzebowań** wybierz opcję **procent — klucz redukcji** lub **transakcje — klucz redukcji**.
 
@@ -274,5 +274,69 @@ Klucz redukcji prognoz musi być przypisany do grupy zapotrzebowania towaru. Wyk
 
 Po wybraniu metody **Transakcje — klucz redukcji** lub **Transakcje — okres dynamiczny** do redukcji prognozowanego zapotrzebowania można wybrać, które transakcje będą uwzględniane w redukowaniu prognozy. Na stronie **Grupy zapotrzebowania** na skróconej karcie **Inne** w polu **Zmniejsz prognozę o** wybierz **Wszystkie transakcje**, jeśli wszystkie transakcje mają redukować prognozę, lub **Zamówienia**, jeśli tylko zamówienia sprzedaży mają redukować prognozę.
 
+## <a name="forecast-models-and-submodels"></a>Modele prognozy i podmodele:
+
+W tej sekcji opisano, jak tworzyć modele prognoz i jak łączyć wiele modeli prognostycznych przez konfigurowanie podmodeli.
+
+*Model prognozy* nazywa i identyfikuje określoną prognozę. Po utworzeniu modelu prognozy można dodać do niego wiersze prognozy. Aby dodać wiersze prognozy dla wielu towarów, użyj strony **Wiersze prognozy popytu**. Aby dodać wiersze prognozy dla wybranej pozycji, użyj strony **Zwolnione produkty**.
+
+Model prognozy może uwzględniać prognozy z innych modeli prognozy. Aby uzyskać ten wynik, należy dodać inne modele prognozy jako *podmodele* nadrzędnego modelu prognozy. Zanim będzie można dodać model jako podmodel nadrzędnego modelu prognozy, należy utworzyć każdy z nich.
+
+Struktura wynikowa umożliwia sterowanie prognozami w rozbudowanej formie, ponieważ umożliwia łączenie (agregowanie) danych wejściowych z wielu poszczególnych prognoz. Dlatego z punktu widzenia planowania można łatwo połączyć prognozy w celu symulacji. Można na przykład skonfigurować symulację opartą na kombinacji zwykłej prognozy z prognozą dla promocji wiosennej.
+
+### <a name="submodel-levels"></a>Poziomy podmodelu
+
+Liczba podmodeli, które można dodać do nadrzędnego modelu prognozy, nie ma żadnego limitu. Struktura może mieć jednak tylko jeden poziom głębokości. Innymi słowy, model prognozy, który jest podmodelem innego modelu prognozy, nie może mieć własnych podmodeli. Podczas dodawania podmodeli do modelu prognozy system sprawdza, czy ten model prognozy nie jest już podmodelem innego modelu prognozy.
+
+Jeśli planowanie główne napotka podmodel, który ma własne podmodele, zostanie wyświetlony komunikat o błędzie.
+
+#### <a name="submodel-levels-example"></a>Przykład poziomów podmodelu
+
+Model prognozy A ma podmodel prognozy B. W związku z tym model prognozy B nie może mieć własnych podmodeli. W przypadku próby dodania podmodelu do modelu prognozy B zostanie wyświetlony następujący komunikat o błędzie: „Model prognozy B jest podmodelem modelu A”
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Agregowanie prognoz w różnych modelach prognoz
+
+Wiersze prognozy, które wystąpią tego samego dnia, będą agregowane w modelu prognozy i jego podmodelach.
+
+#### <a name="aggregation-example"></a>Przykład agregacji
+
+Model prognozowania A ma modele prognoz B i C jako podmodele.
+
+- Model prognoz A obejmuje prognozę popytu dla 2 sztuk (szt.) na 15 czerwca
+- Model prognoz B obejmuje prognozę popytu dla 3 szt. na 15 czerwca
+- Model prognoz C obejmuje prognozę popytu dla 4 szt. na 15 czerwca
+
+Wynikowa prognoza popytu będzie jednym popytem dla 9 sztuk (2 + 3 + 4) w dniu 15 czerwca.
+
+> [!NOTE]
+> Każdy podmodel używa własnych parametrów, a nie parametrów nadrzędnego modelu prognozy.
+
+### <a name="create-a-forecast-model"></a>Tworzenie modelu prognozy
+
+Aby utworzyć model prognozy, wykonaj następujące kroki.
+
+1. Przejdź do **Planowanie główne \> Konfiguracja \> Prognozowanie popytu \> Modele prognoz**.
+1. W okienku akcji wybierz opcję **Nowy**.
+1. Ustaw następujące pola dla nowego modelu prognozy:
+
+    - **Model** – Umożliwia wprowadzenie unikatowego identyfikatora modelu.
+    - **Nazwa** — umożliwia wprowadzenie opisowej nazwy modelu.
+    - **Zatrzymane** — zazwyczaj dla tej opcji należy ustawić wartość *Nie*. Ustaw wartość *Tak*, jeśli chcesz zapobiec edytowaniu wszystkich wierszy prognozy przypisanych do modelu.
+
+    > [!NOTE]
+    > Pola **Uwzględnij w prognozach przepływów pieniężnych** i pola na skróconej karcie **Projekt** nie są powiązane z planowaniem głównym. W związku z tym można je zignorować w tym kontekście. Należy je uwzględnić tylko podczas pracy z prognozami w module **Zarządzanie projektami i ich księgowanie**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Przypisywanie podmodelu do modelu prognozy
+
+Aby przypisać modele podrzędne do modelu prognozy, wykonaj następujące kroki.
+
+1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Prognoza \> Modele prognozy**.
+1. W okienku listy wybierz model prognozy, dla którego chcesz skonfigurować podmodel.
+1. Na skróconej karcie **Podmodele** wybierz opcję **Dodaj**, aby dodać wiersz do siatki.
+1. W nowym wierszu ustaw następujące pola:
+
+    - **Podmodel** — umożliwia wybór modelu prognozy, który ma być dodać jako podmodel. Ten model prognozy musi już istnieć i nie może mieć własnych podmodeli.
+    - **Nazwa** — umożliwia wprowadzenie opisowej nazwy podmodelu. Ta nazwa może na przykład wskazywać relację podmodelu do nadrzędnego modelu prognozy.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

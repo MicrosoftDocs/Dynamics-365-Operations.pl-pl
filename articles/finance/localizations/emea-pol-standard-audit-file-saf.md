@@ -3,7 +3,7 @@ title: Standardowy plik audytu (SAF) dla Polski
 description: Użytkownicy w firmach w Polsce mogą generować standardowe plik audytu dla podatku (SAF-T) w formacie XML. Ten temat zawiera informacje o formatach dla Polski.
 author: LizaGolub
 manager: AnnBe
-ms.date: 01/26/2021
+ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 551a70a75d3f11b671c780e9213beb3d7ec77586
-ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
+ms.openlocfilehash: 02ce13c23e12f1927a618aaef03a824109c4add0
+ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5099860"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5557442"
 ---
 # <a name="standard-audit-file-saf-for-poland"></a>Standardowy plik audytu (SAF) dla Polski
 
@@ -670,6 +670,23 @@ Aby można było wygenerować plik faktur VAT SAF, należy wykonać następując
 5. Skonfiguruj parametry charakterystyczne dla aplikacji dla formatu raportu.
 
 Kroki od jeden do cztery konfigurowania przypominają dodatkowe konfigurowanie wykonane dla **rejestru SAF sprzedaży i zakupów objętych podatkiem VAT**, z wyjątkiem czynności **Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu.**
+
+### <a name="enable-the-poland-saf-vat-invoices-jpk_fa-report-improvement-feature"></a>Włącz funkcję ulepszenia raportu (Polska) Faktury SAF VAT (JPK_FA)
+Począwszy od **128.60.76** ER **Faktury VAT (PL)**, muszą być włączone poprawione konfiguracje ER dla raportu JPK_FA. Wykonaj następujące kroki, aby włączyć konfiguracje.
+
+1. Przejdź do **Obszary robocze** > **Zarządzanie funkcjami** i włącz tę funkcję, **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)**. 
+    > [!NOTE]
+    > Po włączeniu lub wyłączeniem **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)** konfiguracja formatu ER w polu **Faktury VAT SAF** na stronie **Parametrów księgi głównej** zostanie wyczyszczona. Należy wypełnić pole **Faktury VAT SAF** w **Parametrach księgi głównej** przed uruchomieniem raportu **Faktur VAT SAF**. Po włączeniu funkcji **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)** zaimportuj i użyj wersji 128.60.76 formatu ER **Faktur VAT (PL)**.
+    
+2. Zaimportuj następujące elementy do obszaru roboczego raportowania elektronicznego:
+    - Format ER **Faktur VAT (PL)**: wersja **128.60.76** lub wyższa 
+    - **Standardowe mapowanie modelu pliku inspekcji**: wersja **128.255** lub wyższa
+    
+3. Wybierz kolejno opcje **Księga główna** > **Ustawienia księgi** > **Parametry księgi głównej**.
+4. Na karcie **Jednolity plik audytu dla podatku (SAT-T)**, w polu **Faktury VAT SAF** wybierz format ER, **Faktury VAT (PL)**. 
+    
+Jeśli jest włączona funkcja **(Polska) Poprawa raportu Faktury SAF VAT (JPK_FA)**, format ER **faktur VAT (PL)** będzie widać na liście tylko wtedy, gdy wcześniej zaimportowano wersję 128.60.76 lub nowszą z repozytorium globalnego.
+
 
 ### <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurowanie modelu i formatu raportowania elektronicznego dla raportu
 

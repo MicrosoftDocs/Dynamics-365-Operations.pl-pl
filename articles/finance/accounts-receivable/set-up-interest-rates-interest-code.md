@@ -3,7 +3,7 @@ title: Konfigurowanie stopy procentowej dla kodu odsetek
 description: Kody odsetek zawierają ustawienia określające, kiedy i jak i odsetki obciążają i jak są obliczane na kontach zaległych.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971637"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555372"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Konfigurowanie stopy procentowej dla kodu odsetek
 
@@ -46,10 +46,19 @@ Istnieje możliwość konfigurowania stóp odsetek, które są obliczane według
 
 - Kwota odsetek ma zastosowanie do wszystkich walut.
 - Można wprowadzić opcjonalne limity kwot odsetek.
-- Opcja <strong>Procent</strong> jest wybrana** <strong>w polu **Podstawa naliczania odsetek</strong> na stronie <strong>Skonfiguruj kody odsetek</strong>.
+- Opcja **Procent** jest wybrana w polu **Podstawa naliczania odsetek** na stronie **Skonfiguruj kody odsetek**.
 
 Na przykład aby ustawić kod odsetek, który ma stosować oprocentowanie 5 co dwa miesiące, gdy transakcja płatności faktury przekroczy termin płatności, wprowadź 2 w polu **Obliczaj odsetki co** i wybierz opcję **Miesiąc**.
 
+> [!NOTE] 
+> Nowy algorytm obliczania noty odsetkowej został dodany za pomocą funkcji zarządzania. Aby użyć tego algorytmu, włącz funkcję **(GBL) Zezwalaj na obliczanie odsetek na dzień jako procent roku podzielony przez 365**. Aby uzyskać więcej informacji o włączaniu funkcji, zobacz [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Wzór obliczania kwoty noty odsetkowej jest: 
+>  
+> Kwota noty odsetkowej = Kwota należnego * Odsetki rocznie % / 365 * Liczba dni opóźnienia
+>  
+> Ta funkcja jest włączana w wersji 10.0.18 i nowsze.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Stopy odsetek oparte na kwotach
 Można skonfigurować stopy procentowe, które obliczają określoną kwotę w walucie.
 - Kwotę odsetek określa się dla każdej waluty w kodzie odsetek.

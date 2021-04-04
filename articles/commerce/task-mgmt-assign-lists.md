@@ -15,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: ee924f5bf95d47814e7ca09b392a3d10b5e9b9dc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3d249809f15b50c59620d69a901a427dc3ecb2f0
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006267"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477591"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Przypisywanie list zadań do sklepów lub pracowników etatowych
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób przypisywania list zadań do sklepów lub pracowników w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Zarządzanie zadaniami w Dynamics 365 Commerce umożliwia przypisywanie listy zadań do wielu sklepów lub pracowników, a także na połączenie sklepów i pracowników. Na przykład Menedżer regionalny dla 20 sklepów może chcieć przypisać listę zadań **Przygotowania do sezonu świątecznego** do wszystkich 20 sklepów.
 

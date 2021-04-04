@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078295"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501109"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
 
@@ -38,11 +39,11 @@ Jeśli na przykład dla tych produktów są tworzone surowce lub składniki wyma
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Kontrola produkcji*
-- **Nazwa funkcji:** *Zastępowanie domyślnej rezerwacji produkcji*
+- **Nazwa funkcji:** *(Wersja zapoznawcza) Zastępowanie domyślnej rezerwacji produkcji*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Przypisywanie zasad rezerwacji produkcji do grupy modeli pozycji
 
-1. Przejdź do pozycji **Zarządzanie kosztami &gt; Ustawienia zasad księgowania zapasów &gt; Grupa modeli pozycji**.
+1. Przejdź do pozycji **Zarządzanie kosztami \> Ustawienia zasad księgowania zapasów \> Grupa modeli pozycji**.
 1. Utwórz lub wybierz grupę modeli pozycji.
 1. Na skróconej karcie **Zasady zapasów** zaznacz pole wyboru **Zastąp rezerwację produkcji pozycji**.
 1. W polu **Rezerwacja** wybierz zasadę rezerwacji dla pozycji należących do wybranej grupy modeli. (Te pozycje obejmują towary, które znajdują się w wierszu BOM lub formuły).
