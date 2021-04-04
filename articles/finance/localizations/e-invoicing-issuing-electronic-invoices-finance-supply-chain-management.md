@@ -3,7 +3,7 @@ title: Wystawiaj faktury elektroniczne w Finance i Supply Chain Management
 description: W tym temacie wyjaśniono, jak wystawiać faktury elektroniczne w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management za pomocą dodatku fakturowanie elektroniczne.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104424"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486960"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Wystawiaj faktury elektroniczne w Finance i Supply Chain Management
 
@@ -39,21 +39,31 @@ Aby rozpocząć wystawianie faktur elektronicznych za pośrednictwem dodatku Fak
 
 Każde odniesienie do funkcji odpowiada określonej funkcji fakturowania elektronicznego, która jest zgodna z wymaganiami dotyczącymi fakturowania elektronicznego w kraju / regionie.
 
-W poniższej tabeli przedstawiono listę odwołań do funkcji obsługiwanych przez dodatek Fakturowanie elektroniczne.
+W poniższej tabeli przedstawiono listę funkcji obsługiwanych przez dodatek Fakturowanie elektroniczne.
 
-| Odwołanie do funkcji | Imię i nazwisko                                              | Kraj/region |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e Federal — Brazylijska faktura elektroniczna       | Brazylia         |
-| BR-00095          | Brazylijskie faktury elektroniczne NFS-e               | Brazylia         |
-| DK-00001          | Faktury elektroniczne dla sektora publicznego (OIOUBL) – DK    | Dania        |
-| EG-00008          | Fakturowanie elektroniczne dla Egiptu                             | Egipt          |
-| ES-00025          | Faktura elektroniczna dla sektora publicznego           | Hiszpania          |
-| EUR-00023         | Fakturowanie elektroniczne Unii Europejskiej dla sektora publicznego       | Europa         |
-| ITA-00036         | IT - E-fakturowanie dla sektora publicznego (FatturaPA) | Włochy          |
-| MX-00010          | Faktury elektroniczne (CFDI)                                  | Meksyk         |
-| MX-00016          | Algorytm CFDI funkcji faktur elektronicznych — proces anulowania           | Meksyk         |
+| Imię i nazwisko                                              | Kraj/region |
+|---------------------------------------------------|----------------|
+|Austriacka faktura elektroniczna                        |Austria         |
+|Belgijska faktura elektroniczna                         |Belgia         |
+|NF-e Federal — Brazylijska faktura elektroniczna       |Brazylia          |
+|NFS-e — faktura elektroniczna usługi brazylijskiej (miasto)|Brazylia          |
+|Duńska faktura elektroniczna                          |Dania         |
+|Egipska faktura elektroniczna                        |Egipt           |
+|Estońska faktura elektroniczna                        |Estonia         |
+|Fińska faktura elektroniczna                         |Finlandia         |
+|Francuska faktura elektroniczna                          |Francja          |
+|Niemiecka faktura elektroniczna                          |Niemcy         |
+|PEPPOL — globalna faktura elektroniczna                 |Globalna          |
+|Włoska faktura elektroniczna                         |Włochy           |
+|CFDI — Meksykańska faktura elektroniczna                  |Meksyk          |
+|Holenderska faktura elektroniczna                           |Holandia     |
+|Norweska faktura elektroniczna                       |Norwegia          |
+|Hiszpańska faktura elektroniczna                         |Hiszpania           |
 
-W przypadkach, w których istnieje starsza funkcja fakturowania elektronicznego, obsługiwana w zakresie lokalizacji krajów, aktywacja referencji funkcji umożliwia wystawianie faktur elektronicznych za pośrednictwem dodatku Fakturowanie elektroniczne i wyłącza poprzednią funkcję.
+Jeśli istnieje starsza funkcja fakturowania elektronicznego, która jest obsługiwana w zakresie lokalizacji kraju / regionu, aktywacja jednej z tych funkcji wyłącza starszą funkcję i umożliwia wystawianie faktur elektronicznych za pośrednictwem dodatku Fakturowanie elektroniczne.
+
+> [!IMPORTANT]
+> Po włączeniu funkcji integracji dodatku Fakturowanie elektroniczne nowe doświadczenie w fakturowaniu elektronicznym jest domyślnie wyłączone. Za pomocą koncepcji funkcji można selektywnie włączyć nowe możliwości dla firm za pomocą funkcji specyficznych dla kraju/regionu. Opcja **Global** określa nowe możliwości dla pozostałych powiatów/regionów, które nie zostały wyszczególnione w tabeli.
 
 ## <a name="submit-electronic-documents"></a>Prześlij dokumenty elektroniczne
 

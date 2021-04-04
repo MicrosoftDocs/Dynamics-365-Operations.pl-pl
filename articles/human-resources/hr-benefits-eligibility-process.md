@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 20fb04613b34acc869db4fea016a23e80b0f1bb5
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 3720adf26d2cb942bc5d9f6988641bf5e504a852
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113790"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465133"
 ---
 # <a name="benefit-eligibility-process"></a>Przetwarzanie uprawnień do świadczeń
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ta procedura pokazuje działanie procesu kwalifikowania do świadczeń. Po zakończeniu procesu można wyświetlić wyniki. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
