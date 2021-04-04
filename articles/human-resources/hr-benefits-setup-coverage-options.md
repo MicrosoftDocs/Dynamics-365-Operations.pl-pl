@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: be263dbbec61f3fa9d169c1b9faa6be741adca33
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2e1d5fc80d93e41626da8eb5bdf8f389fb0bd531
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113840"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466189"
 ---
 # <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń. Na przykład opcje pokrycia mogą obejmować **Tylko pracownik** dla planu medycznego lub **Wynagrodzenie x2** dla planu ubezpieczenia na życie. Po zdefiniowaniu można ponownie użyć opcji świadczeń. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
 

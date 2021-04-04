@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4732b5dafc8074c5c59f10f02bbee7e22f51960a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 16260c66c2e92fb06664a8f20a5fc3ed4a964609
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116051"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468138"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>Tworzenie przepływu pracy zakupu i sprzedawania urlopów
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W programie Dynamics 365 Human Resources można utworzyć przepływ pracy, aby spójnie zarządzać wnioskami o sprzedaż i zakup urlopów. Przepływ pracy **Zakup i sprzedaż urlopu** umożliwia:
 

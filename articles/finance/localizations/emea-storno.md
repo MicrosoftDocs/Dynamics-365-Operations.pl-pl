@@ -15,12 +15,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 85f9a99383aca88306a29f15ba139076c9c3c81e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968324"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236212"
 ---
 # <a name="storno-accounting"></a>Stornowanie
 

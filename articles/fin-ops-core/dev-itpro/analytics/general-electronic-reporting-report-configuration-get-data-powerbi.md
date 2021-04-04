@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 34d4ad9106b2751c77db4fd03d83932e587a5332
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6e4bdb7be83bff8fc9491e360a480f44189730d2
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680127"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568708"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 
@@ -29,7 +28,7 @@ ms.locfileid: "4680127"
 
 W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI. Na potrzeby przykładu użyto transakcji Intrastat jako danych biznesowych, które muszą zostać przesłane. Funkcja wizualizacja mapy w programie Power BI wykorzystuje te dane transakcji Intrastat do przedstawienia widoku umożliwiającego analizę działań importowych/eksportowych firmy w raporcie programu Power BI.
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 
 Microsoft Power BI to zbiór usług oprogramowania, aplikacji i łączników, które wspólnie wydobywają z zewnętrznych źródeł danych spójne, realistyczne wizualnie i interaktywne wnioski. Raportowanie elektroniczne (ER) pozwala użytkownikom łatwo konfigurować źródła danych i zaplanować transfer danych z aplikacji do Power BI. Dane są przesyłane jako pliki w formacie arkusza OpenXML (plik skoroszytu programu Microsoft Excel). Przesłane pliki są przechowywane na serwerze programu Microsoft SharePoint, który został skonfigurowany do tego celu. Przechowywane pliki są używane w programie Power BI do tworzenia raportów zawierających wizualizacje (tabele, wykresy, mapy i tak dalej). Raporty programu Power BI są udostępniane użytkownikom programu Power BI i można je otwierać w pulpitach nawigacyjnych programu Power BI i na stronach aplikacji. W tym temacie wyjaśniono następujące zadania:
 

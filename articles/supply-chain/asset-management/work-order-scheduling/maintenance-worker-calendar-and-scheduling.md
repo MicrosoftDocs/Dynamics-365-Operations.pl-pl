@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c8856d0c7a7b76318755dc6bcdbb1859de1fa20a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ada3ab1afb5b9989510324148a6f26b215a200d3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021486"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252901"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalendarz konserwatora i planowanie
 

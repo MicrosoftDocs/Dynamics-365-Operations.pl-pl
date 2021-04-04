@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9aca699283a9de6ea551bd02184498aed88143e9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9774d5f4e97d3f768366ba552e5928929bacf508
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991647"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470936"
 ---
 # <a name="set-up-service-order-stages"></a>Ustawianie etapów zlecenia serwisowego 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Ustawienia** \> **Zlecenia serwisowe** \> **Etapy serwisu**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, aby utworzyć nowy rekord.
+2.  Wybierz pozycję **Nowy**, aby utworzyć nowy zapis.
 
 3.  W polach **Etap serwisu** i **Opis** wprowadź identyfikator i opis etapu serwisu.
 

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 26493306a8bd810f936b15160b07263ca41f87ae
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f3d64fa519cf4156adce43056c1c22362f0d7591
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115591"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465565"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Dopasowywanie umiejętności pracowników do potrzeb firmy
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Umiejętności pracowników, kandydatów lub osób kontaktowych, umożliwiające im skuteczne wykonywanie swoich obowiązków, można śledzić. Można również określić umiejętności, które są wymagane dla danego zadania.
 
