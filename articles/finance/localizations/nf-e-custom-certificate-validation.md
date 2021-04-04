@@ -17,21 +17,24 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f13e8b8229bbd9e174e5bde7858a468048ba309b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3efa05f49748f6bbff680f322a77cec24da46c0c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990093"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240586"
 ---
-# <a name="nf-e-custom-certificate-validation"></a><span data-ttu-id="73fc1-103">Sprawdzanie poprawności niestandardowego certyfikatu NF-e</span><span class="sxs-lookup"><span data-stu-id="73fc1-103">NF-e custom certificate validation</span></span>
+# <a name="nf-e-custom-certificate-validation"></a><span data-ttu-id="2c811-103">Sprawdzanie poprawności niestandardowego certyfikatu NF-e</span><span class="sxs-lookup"><span data-stu-id="2c811-103">NF-e custom certificate validation</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="73fc1-104">Po włączeniu funkcji weryfikacji niestandardowego certyfikatu NF-e niestandardowe sprawdzanie poprawności umożliwia połączenie z usługami sieci Web.</span><span class="sxs-lookup"><span data-stu-id="73fc1-104">When you turn the NF-e custom certificate verification feature, custom validation allows a connection with the web services.</span></span> <span data-ttu-id="73fc1-105">To połączenie jest wymagane do przesyłania dokumentu NF-e i uzyskania autoryzacji od SEFAZ.</span><span class="sxs-lookup"><span data-stu-id="73fc1-105">This connection is required to transmit NF-e and receive authorization from SEFAZ.</span></span>
+<span data-ttu-id="2c811-104">Po włączeniu funkcji weryfikacji niestandardowego certyfikatu NF-e niestandardowe sprawdzanie poprawności umożliwia połączenie z usługami sieci Web.</span><span class="sxs-lookup"><span data-stu-id="2c811-104">When you turn the NF-e custom certificate verification feature, custom validation allows a connection with the web services.</span></span> <span data-ttu-id="2c811-105">To połączenie jest wymagane do przesyłania dokumentu NF-e i uzyskania autoryzacji od SEFAZ.</span><span class="sxs-lookup"><span data-stu-id="2c811-105">This connection is required to transmit NF-e and receive authorization from SEFAZ.</span></span>
 
-<span data-ttu-id="73fc1-106">Właściwość **Cel uwierzytelnienie serwera** z certyfikatu V5 jest wystawiana przez brazylijski główny urząd certyfikacji.</span><span class="sxs-lookup"><span data-stu-id="73fc1-106">The **Server authentication purpose** property from the certificate V5 is issued by the Brazilian Root Certificate Authority.</span></span> <span data-ttu-id="73fc1-107">Ta właściwość jest domyślnie wyłączona i należy ją włączyć ręcznie.</span><span class="sxs-lookup"><span data-stu-id="73fc1-107">This property is turned off by default and must be manually enabled.</span></span> <span data-ttu-id="73fc1-108">W niektórych przypadkach automatyczna aktualizacja certyfikatów może przełączyć tę właściwość na wyłączoną.</span><span class="sxs-lookup"><span data-stu-id="73fc1-108">In some circumstances, the automatic certificate update can switch this property to no longer be enabled.</span></span> <span data-ttu-id="73fc1-109">Jeśli tak się stanie, wpływa to na połączenie TLS i nie jest już ono zaufane.</span><span class="sxs-lookup"><span data-stu-id="73fc1-109">If this happens, the TLS connection is affected and is no longer trusted.</span></span> <span data-ttu-id="73fc1-110">Ma to również wpływ na możliwość wydawania dokumentów NF-e w środowiskach produkcyjnych dla Stanów Minas Gerais (MG) i Paraná (PR).</span><span class="sxs-lookup"><span data-stu-id="73fc1-110">The ability to issue NF-e on production environments for states of Minas Gerais (MG) and Paraná (PR) states is also impacted.</span></span>
+<span data-ttu-id="2c811-106">Właściwość **Cel uwierzytelnienie serwera** z certyfikatu V5 jest wystawiana przez brazylijski główny urząd certyfikacji.</span><span class="sxs-lookup"><span data-stu-id="2c811-106">The **Server authentication purpose** property from the certificate V5 is issued by the Brazilian Root Certificate Authority.</span></span> <span data-ttu-id="2c811-107">Ta właściwość jest domyślnie wyłączona i należy ją włączyć ręcznie.</span><span class="sxs-lookup"><span data-stu-id="2c811-107">This property is turned off by default and must be manually enabled.</span></span> <span data-ttu-id="2c811-108">W niektórych przypadkach automatyczna aktualizacja certyfikatów może przełączyć tę właściwość na wyłączoną.</span><span class="sxs-lookup"><span data-stu-id="2c811-108">In some circumstances, the automatic certificate update can switch this property to no longer be enabled.</span></span> <span data-ttu-id="2c811-109">Jeśli tak się stanie, wpływa to na połączenie TLS i nie jest już ono zaufane.</span><span class="sxs-lookup"><span data-stu-id="2c811-109">If this happens, the TLS connection is affected and is no longer trusted.</span></span> <span data-ttu-id="2c811-110">Ma to również wpływ na możliwość wydawania dokumentów NF-e w środowiskach produkcyjnych dla Stanów Minas Gerais (MG) i Paraná (PR).</span><span class="sxs-lookup"><span data-stu-id="2c811-110">The ability to issue NF-e on production environments for states of Minas Gerais (MG) and Paraná (PR) states is also impacted.</span></span>
 
-<span data-ttu-id="73fc1-111">Ta aktualizacja umożliwia rozwiązanie alternatywne dotyczące sprawdzania poprawności certyfikatów, co oznacza, że można ustanowić bezpieczną komunikację.</span><span class="sxs-lookup"><span data-stu-id="73fc1-111">This update allows for an alternative solution for certificate validation, which means that it’s possible to establish a secure communication.</span></span>
+<span data-ttu-id="2c811-111">Ta aktualizacja umożliwia rozwiązanie alternatywne dotyczące sprawdzania poprawności certyfikatów, co oznacza, że można ustanowić bezpieczną komunikację.</span><span class="sxs-lookup"><span data-stu-id="2c811-111">This update allows for an alternative solution for certificate validation, which means that it’s possible to establish a secure communication.</span></span>
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
