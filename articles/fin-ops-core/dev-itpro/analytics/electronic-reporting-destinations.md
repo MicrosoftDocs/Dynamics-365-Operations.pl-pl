@@ -2,11 +2,10 @@
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097288"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569726"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -166,12 +165,14 @@ Aby w bieżącej instancji Finance była dostępna opcja konwersji plików PDF, 
 
 ### <a name="applicability"></a>Możliwość zastosowania
 
-Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie pakietu Office (Excel lub Word) (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF.
-
-### <a name="limitations"></a>Ograniczenia
+Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie pakietu Office (Excel lub Word) (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF. W wersjach **przed Finance 10.0.18** opcję można włączyć tylko w przypadku składników typu pliku programu **Excel\\File** używanych do generowania danych wyjściowych w formacie programu [Excel](er-fillable-excel.md) lub programu [Word](er-design-configuration-word.md) . Jednak w **wersji 10.0.18 i nowszej** można włączyć tę opcję dla składników typu **Common\\File**.
 
 > [!NOTE]
-> Ta funkcja jest funkcją podglądu i podlega warunkom użytkowania opisanym w [Temacie uzupełniającym warunki użytkowania w podglądzie Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Należy pamiętać o komunikacie ostrzegawczym, który jest wyświetlany po włączeniu opcji konwersji w formacie PDF dla składnika ER typu **Common\\File**. Ten komunikat informuje, że nie ma możliwości zagwarantowania, w czasie projektowania, że wybrany składnik pliku uwidacznia zawartość w formacie PDF lub konwertowalnym w formacie PDF w czasie wykonywania. Dlatego tę opcję należy włączyć tylko wtedy, gdy użytkownik upewnić się, że wybrany składnik pliku został skonfigurowany tak, aby uwidaczniać zawartość w formacie PDF lub w konwertowalnym formacie PDF w czasie wykonywania.
+> 
+> Jeśli włączysz opcję konwersji PDF składnika typu **Excel\\File**, jeśli ten składnik uwidacznia zawartość w formacie innym niż PDF i jeśli nie można przekonwertować udostępnianej zawartości na format PDF, w czasie wykonywania wystąpi wyjątek. Z dostarczanego komunikatu wynika, że wygenerowanej zawartości nie można przekonwertować na format PDF.
+
+### <a name="limitations"></a>Ograniczenia
 
 Opcja konwersji pliku PDF jest dostępna tylko dla wdrożeń w chmurze.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974567"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470792"
 ---
 # <a name="create-a-template-bom"></a>Tworzenie szablonu BOM   
 
@@ -33,9 +33,9 @@ Szablon BOM można utworzyć przy użyciu dowolnej z niżej opisanych metod. W p
 
 ## <a name="create-a-template-bom-manually"></a>Ręczne tworzenie szablonu BOM
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
+1.  Przejdź do **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
+2.  Wybierz **Nowy**, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
 
 3.  W obszarze **Kopiuj wiersze BOM z odwołania** wybierz opcję **Ręcznie**.
 
@@ -45,15 +45,15 @@ Szablon BOM można utworzyć przy użyciu dowolnej z niżej opisanych metod. W p
 
 6.  Korzystając z pól **Od dnia** i **Do dnia**, określ przedział dat, w którym szablon BOM ma być aktywny.
 
-7.  Kliknij przycisk **OK**
+7.  Kliknij przycisk **OK**.
 
 Zostanie utworzony nowy, pusty szablon BOM.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Tworzenie szablonu BOM na podstawie innego szablonu BOM
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
+1.  Wybierz **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
+2.  Wybierz **Nowy**, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
 
 3.  W obszarze **Kopiuj wiersze BOM z odwołania** wybierz opcję **Szablon BOM**.
 
@@ -63,15 +63,15 @@ Zostanie utworzony nowy, pusty szablon BOM.
 
 6.  Korzystając z pól **Od dnia** i **Do dnia**, określ przedział dat, w którym szablon BOM ma być aktywny.
 
-7.  Kliknij przycisk **OK**
+7.  Kliknij przycisk **OK**.
 
 Zostanie utworzony nowy szablon BOM przy użyciu wierszy odpowiadających wierszom pierwotnego szablonu BOM.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Tworzenie szablonu BOM na podstawie towaru BOM
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
+1.  Wybierz **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
+2.  Wybierz **Nowy**, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
 
 3.  W obszarze **Kopiuj wiersze BOM z odwołania** wybierz opcję **BOM**.
 
@@ -81,15 +81,15 @@ Zostanie utworzony nowy szablon BOM przy użyciu wierszy odpowiadających wiersz
 
 6.  Korzystając z pól **Od dnia** i **Do dnia**, określ przedział dat, w którym szablon BOM ma być aktywny.
 
-7.  Kliknij przycisk **OK**
+7.  Kliknij przycisk **OK**.
 
 Zostanie utworzony nowy szablon BOM z wierszami odpowiadającymi wierszom BOM wyświetlanym w formularzu **Listy składowe (BOM)**.
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Tworzenie szablonu BOM na podstawie BOM produkcji
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
+1.  Wybierz **Zarządzanie serwisem** \> **Ustawienia** \> **Przedmioty serwisu** \> **Szablony BOM**.
 
-2.  Naciśnij kombinację klawiszy CTRL+N, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
+2.  Wybierz **Nowy**, co spowoduje otwarcie formularza **Utwórz szablon BOM**.
 
 3.  W obszarze **Kopiuj wiersze BOM z odwołania** wybierz opcję **Produkcja**.
 
@@ -99,7 +99,7 @@ Zostanie utworzony nowy szablon BOM z wierszami odpowiadającymi wierszom BOM wy
 
 6.  Korzystając z pól **Od dnia** i **Do dnia**, określ przedział dat, w którym szablon BOM ma być aktywny.
 
-7.  Kliknij przycisk **OK**
+7.  Kliknij przycisk **OK**.
 
 Zostanie utworzony nowy szablon BOM z wierszami odpowiadającymi wierszom BOM wyświetlanym w formularzu **BOM**.
 

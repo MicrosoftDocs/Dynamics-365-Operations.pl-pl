@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142330"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487032"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142330"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> W tym temacie opisano sposób konfigurowania nowej aplikacji mobilnej Zarządzanie magazynem, która jest obecnie dostępna w publicznej wersji zapoznawczej. Jeśli chcesz, aby uzyskać informacje dotyczące konfigurowania starej aplikacji magazynowej, zobacz temat [Instalowanie i łączenie aplikacji magazynu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> W tym temacie opisano, jak skonfigurować nową aplikację mobilną Zarządzanie magazynem. Jeśli chcesz, aby uzyskać informacje dotyczące konfigurowania starej aplikacji magazynowej, zobacz temat [Instalowanie i łączenie aplikacji magazynu](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Publiczną wersję zapoznawczą aplikacji mobilnej Zarządzanie magazynem można pobrać w witrynie Microsoft App Center. Jest ona udostępniana jako składnik autonomiczny. Dlatego należy ją pobrać na każde urządzenie, a następnie skonfigurować do nawiązywania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
-
-W tym temacie opisano sposób instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
+W tym temacie opisano sposób pobierania i instalowania aplikacji mobilnej Zarządzanie magazynem na każdym urządzeniu przenośnym i konfigurowania jej w celu nawiązania połączenia ze środowiskiem aplikacji Supply Chain Management. Poszczególne urządzenia można konfigurować ręcznie lub można importować ustawienia połączenia za pośrednictwem pliku lub przez skanowanie kodu QR.
 
 ## <a name="system-requirements"></a>Wymagania systemowe
 
@@ -53,17 +51,27 @@ Aby móc używać aplikacji, należy w systemie włączyć powiązaną funkcję.
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Pobieranie aplikacji mobilnej Zarządzanie magazynem
 
-Aby pobrać aplikację, użyj jednego z następujących linków:
+W przypadku mniejszych wdrożeń możesz chcieć zainstalować aplikację na każdym urządzeniu z odpowiedniego sklepu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami.
 
-- **Windows (UWP):** [program App Center w wersji zapoznawczej — Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+W przypadku większych wdrożeń można zautomatyzować wdrażanie i / lub konfigurację aplikacji, co może być wygodniejsze, jeśli zarządzasz wieloma urządzeniami. Można na przykład używać rozwiązania do zarządzania urządzeniami przenośnymi i aplikacji przenośnych, takich jak [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Ponieważ ta aplikacja jest aplikacją w wersji zapoznawczej, do jej zainstalowania jest wymagane kilka dodatkowych kroków. Aby uzyskać szczegółowe informacje, zobacz temat [Instalowanie kompilacji z witryny App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Instalowanie aplikacji ze sklepu aplikacji
 
-- **Android:** [Program App Center w wersji zapoznawczej — Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Najłatwiejszym sposobem zainstalowania aplikacji na jednym urządzeniu jest zainstalowanie jej ze sklepu z aplikacjami, który zawsze udostępnia najnowszą ogólnie dostępną wersję. Usługa Microsoft Intune może także pobierać aplikacje ze sklepów aplikacji. Aby zainstalować aplikację ze sklepu aplikacji, użyj jednego z następujących łączy:
 
-    Ponieważ ta aplikacja jest aplikacją w wersji zapoznawczej, do jej zainstalowania jest wymagane kilka dodatkowych kroków. Aby uzyskać szczegółowe informacje, zobacz temat [Testowanie aplikacji dla systemu Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Zarządzanie magazynem w Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-W przypadku mniejszych wdrożeń możesz zainstalować aplikację na każdym urządzeniu z odpowiedniego sklepu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami. Można jednak zautomatyzować wdrażanie aplikacji i/lub konfigurację. Takie podejście może okazać się wygodne w przypadku korzystania z rozwiązania do zarządzania urządzeniami przenośnymi i zarządzania aplikacjami mobilnymi, takiego jak usługa [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Zarządzanie magazynem dla sklepu Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Pobierz aplikację z aplikacji Microsoft App Center
+
+Alternatywą dla instalacji ze sklepu z aplikacjami jest pobranie aplikacji z Microsoft App Center. Centrum aplikacji udostępnia pakiety do zainstalowania, które można załadować. Oprócz bieżącej wersji App Center umożliwia również pobieranie poprzednich wersji i może udostępniać wersje zapoznawcze z nadchodzącymi funkcjami, które można wypróbować. Aby pobrać bieżące, poprzednie lub podglądowe wersje aplikacji mobilnej Zarządzanie magazynem z Microsoft App Center, użyj jednego z poniższych łączy:
+
+- **Windows (UWP):** [Zarządzanie magazynem (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Aby uzyskać instrukcje dotyczące instalowania pobranego pakietu na urządzeniu z systemem Windows, a następnie konfigurowania wymaganych certyfikatów, zobacz [Instalowanie kompilacji z witryny App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Zarządzanie magazynem (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Jeśli pobierasz wersję zapoznawczą, musisz wykonać kilka dodatkowych czynności, aby ją zainstalować. Aby uzyskać szczegółowe informacje, zobacz temat [Testowanie aplikacji dla systemu Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 

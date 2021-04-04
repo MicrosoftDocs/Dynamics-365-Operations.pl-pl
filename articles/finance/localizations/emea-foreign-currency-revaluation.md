@@ -15,12 +15,12 @@ ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db8dab0aef0349632d19ad407336a18641c358d1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 86d62d5d281eaf243b61d2d86591257f758d5d3d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002977"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264983"
 ---
 # <a name="foreign-currency-revaluation-for-bank-accounts"></a>Przeszacowanie w walucie obcej dla kont bankowych
 

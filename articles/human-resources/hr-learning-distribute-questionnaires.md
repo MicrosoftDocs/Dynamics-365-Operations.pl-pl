@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a53d921f8c0761ec931831810b484cfbd00718
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: a8c79e7b39e092bb85677fed19a53d5b9bf24962
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115759"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464989"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Dystrybuowanie i planowanie kwestionariuszy
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 W tym artykule opisano sposób dystrybuowania kwestionariuszy, które można zaprojektować tak, aby były dostępne dla osoby lub grupy osób, które będą je wypełniać. 
 
