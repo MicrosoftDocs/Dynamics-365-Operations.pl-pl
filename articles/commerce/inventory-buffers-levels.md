@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012443"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478395"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurowanie buforów zapasów i poziomów zapasów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie wyjaśniono, jak skonfigurować bufory zapasów i poziomy zapasów, które decydują o wiadomościach o dostępności zapasów w witrynach Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 W Dynamics 365 Commerce w centrali przechowywane są dane magazynowe i różne kanały, takie jak aplikacje punkt sprzedaży (POS), magazyny handlu elektronicznego i inne zintegrowane aplikacje, które w sposób asynchroniczny ściągają i wypychanie. Dlatego dostępne wartości zapasów, które są uzyskiwane za pośrednictwem strony zapasów w Commerce headquarters, interfejsu użytkownika POS (UI) oraz interfejsów API dostępności zapasów e-Commerce, nie zawsze są w 100% dokładne w czasie rzeczywistym.
 
