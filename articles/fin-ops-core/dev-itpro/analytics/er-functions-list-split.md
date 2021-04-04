@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,71 +16,74 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1f11d68b697fdd363f429e60a79f1e1f97bab5b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 806a0995f0c138f4e80396bb993bc6f41bc7c827
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686399"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567349"
 ---
-# <a name="split-er-function"></a><span data-ttu-id="cf75e-103">SPLIT, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="cf75e-103">SPLIT ER function</span></span>
+# <a name="split-er-function"></a><span data-ttu-id="82f4e-103">SPLIT, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="82f4e-103">SPLIT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="cf75e-104">Funkcja `SPLIT` dzieli określony ciąg wejściowy na podciągi i zwraca wynik jako nową wartość *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="cf75e-104">The `SPLIT` function splits the specified input string into substrings and returns the result as a new *Record list* value.</span></span>
+<span data-ttu-id="82f4e-104">Funkcja `SPLIT` dzieli określony ciąg wejściowy na podciągi i zwraca wynik jako nową wartość *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="82f4e-104">The `SPLIT` function splits the specified input string into substrings and returns the result as a new *Record list* value.</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="cf75e-105">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="cf75e-105">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="82f4e-105">Składnia 1</span><span class="sxs-lookup"><span data-stu-id="82f4e-105">Syntax 1</span></span>
 
 ```vb
 SPLIT (input, length)
 ```
 
-<span data-ttu-id="cf75e-106">Ta składnia jest używana do dzielenia podanego ciągu wejściowego na podciągi, z których każdy ma określoną długość.</span><span class="sxs-lookup"><span data-stu-id="cf75e-106">This syntax is used to split the specified input string into substrings, each of which has the specified length.</span></span>
+<span data-ttu-id="82f4e-106">Ta składnia jest używana do dzielenia podanego ciągu wejściowego na podciągi, z których każdy ma określoną długość.</span><span class="sxs-lookup"><span data-stu-id="82f4e-106">This syntax is used to split the specified input string into substrings, each of which has the specified length.</span></span>
 
-## <a name="syntax-2"></a><span data-ttu-id="cf75e-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="cf75e-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="82f4e-107">Składnia 2</span><span class="sxs-lookup"><span data-stu-id="82f4e-107">Syntax 2</span></span>
 
 ```vb
 SPLIT (input, delimiter)
 ```
 
-<span data-ttu-id="cf75e-108">Ta składnia jest używana do dzielenia podanego ciągu wejściowego na podciągi przy użyciu podanego separatora.</span><span class="sxs-lookup"><span data-stu-id="cf75e-108">This syntax is used to split the specified input string into substrings, based on the specified delimiter.</span></span>
+<span data-ttu-id="82f4e-108">Ta składnia jest używana do dzielenia podanego ciągu wejściowego na podciągi przy użyciu podanego separatora.</span><span class="sxs-lookup"><span data-stu-id="82f4e-108">This syntax is used to split the specified input string into substrings, based on the specified delimiter.</span></span>
 
-## <a name="arguments"></a><span data-ttu-id="cf75e-109">Argumenty</span><span class="sxs-lookup"><span data-stu-id="cf75e-109">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="82f4e-109">Argumenty</span><span class="sxs-lookup"><span data-stu-id="82f4e-109">Arguments</span></span>
 
-<span data-ttu-id="cf75e-110">`input`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="cf75e-110">`input`: *String*</span></span>
+<span data-ttu-id="82f4e-110">`input`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="82f4e-110">`input`: *String*</span></span>
 
-<span data-ttu-id="cf75e-111">Tekst do podzielenia.</span><span class="sxs-lookup"><span data-stu-id="cf75e-111">The text to split.</span></span>
+<span data-ttu-id="82f4e-111">Tekst do podzielenia.</span><span class="sxs-lookup"><span data-stu-id="82f4e-111">The text to split.</span></span>
 
-<span data-ttu-id="cf75e-112">`length`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="cf75e-112">`length`: *Integer*</span></span>
+<span data-ttu-id="82f4e-112">`length`: *Liczba całkowita*</span><span class="sxs-lookup"><span data-stu-id="82f4e-112">`length`: *Integer*</span></span>
 
-<span data-ttu-id="cf75e-113">Maksymalna długość jednego podciągu.</span><span class="sxs-lookup"><span data-stu-id="cf75e-113">The maximum length of a single substring.</span></span>
+<span data-ttu-id="82f4e-113">Maksymalna długość jednego podciągu.</span><span class="sxs-lookup"><span data-stu-id="82f4e-113">The maximum length of a single substring.</span></span>
 
-<span data-ttu-id="cf75e-114">`delimiter`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="cf75e-114">`delimiter`: *String*</span></span>
+<span data-ttu-id="82f4e-114">`delimiter`: *Ciąg*</span><span class="sxs-lookup"><span data-stu-id="82f4e-114">`delimiter`: *String*</span></span>
 
-<span data-ttu-id="cf75e-115">Ogranicznik, który jest używany do dzielenia podciągów.</span><span class="sxs-lookup"><span data-stu-id="cf75e-115">A delimiter that is used to separate substrings.</span></span>
+<span data-ttu-id="82f4e-115">Ogranicznik, który jest używany do dzielenia podciągów.</span><span class="sxs-lookup"><span data-stu-id="82f4e-115">A delimiter that is used to separate substrings.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="cf75e-116">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="cf75e-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="82f4e-116">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="82f4e-116">Return values</span></span>
 
-<span data-ttu-id="cf75e-117">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="cf75e-117">*Record list*</span></span>
+<span data-ttu-id="82f4e-117">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="82f4e-117">*Record list*</span></span>
 
-<span data-ttu-id="cf75e-118">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="cf75e-118">The resulting list of records.</span></span>
+<span data-ttu-id="82f4e-118">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="82f4e-118">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="cf75e-119">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="cf75e-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="82f4e-119">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="82f4e-119">Usage notes</span></span>
 
-<span data-ttu-id="cf75e-120">Struktura rekordów listy, która jest zwracana, składa się z pola **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="cf75e-120">The record structure of the list that is returned consists of the **Value** field of the *String* type.</span></span> <span data-ttu-id="cf75e-121">Każdy zwracany rekord listy zawiera wygenerowane podciągi w tym polu.</span><span class="sxs-lookup"><span data-stu-id="cf75e-121">Every record of the list that is returned contains generated substrings in this field.</span></span>
+<span data-ttu-id="82f4e-120">Struktura rekordów listy, która jest zwracana, składa się z pola **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="82f4e-120">The record structure of the list that is returned consists of the **Value** field of the *String* type.</span></span> <span data-ttu-id="82f4e-121">Każdy zwracany rekord listy zawiera wygenerowane podciągi w tym polu.</span><span class="sxs-lookup"><span data-stu-id="82f4e-121">Every record of the list that is returned contains generated substrings in this field.</span></span>
 
-<span data-ttu-id="cf75e-122">Jeśli argument `delimiter` jest pusty, zostanie zwrócona nowa lista składająca się z jednego rekordu mającego pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="cf75e-122">If the `delimiter` argument is empty, the new list that is returned consists of one record that has the **Value** field of the *String* type.</span></span> <span data-ttu-id="cf75e-123">To pole zawiera tekst wejściowy.</span><span class="sxs-lookup"><span data-stu-id="cf75e-123">This field contains the input text.</span></span>
+<span data-ttu-id="82f4e-122">Jeśli argument `delimiter` jest pusty, zostanie zwrócona nowa lista składająca się z jednego rekordu mającego pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="82f4e-122">If the `delimiter` argument is empty, the new list that is returned consists of one record that has the **Value** field of the *String* type.</span></span> <span data-ttu-id="82f4e-123">To pole zawiera tekst wejściowy.</span><span class="sxs-lookup"><span data-stu-id="82f4e-123">This field contains the input text.</span></span>
 
-<span data-ttu-id="cf75e-124">Jeśli argument `input` jest pusty, zostanie zwrócona nowa pusta lista.</span><span class="sxs-lookup"><span data-stu-id="cf75e-124">If the `input` argument is empty, a new empty list is returned.</span></span> <span data-ttu-id="cf75e-125">Jeśli argument `input` lub `delimiter` jest nieokreślony (ma wartość null), aplikacja zgłasza wyjątek.</span><span class="sxs-lookup"><span data-stu-id="cf75e-125">If either the `input` or `delimiter` argument is unspecified (null), an application exception is thrown.</span></span>
+<span data-ttu-id="82f4e-124">Jeśli argument `input` jest pusty, zostanie zwrócona nowa pusta lista.</span><span class="sxs-lookup"><span data-stu-id="82f4e-124">If the `input` argument is empty, a new empty list is returned.</span></span> <span data-ttu-id="82f4e-125">Jeśli argument `input` lub `delimiter` jest nieokreślony (ma wartość null), aplikacja zgłasza wyjątek.</span><span class="sxs-lookup"><span data-stu-id="82f4e-125">If either the `input` or `delimiter` argument is unspecified (null), an application exception is thrown.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="cf75e-126">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="cf75e-126">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="82f4e-126">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="82f4e-126">Example 1</span></span>
 
-<span data-ttu-id="cf75e-127">Funkcja `SPLIT ("abcd", 3)` zwraca nową listę zawierającą dwa rekordy, które mają pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="cf75e-127">`SPLIT ("abcd", 3)` returns a new list that consists of two records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="cf75e-128">Pole **Wartość** w pierwszym rekordzie zawiera tekst **"abc"**, a pole **Wartość** w drugim rekordzie zawiera tekst **"d"**.</span><span class="sxs-lookup"><span data-stu-id="cf75e-128">The **Value** field in the first record contains the text **"abc"**, and the **Value** field in the second record contains the text **"d"**.</span></span>
+<span data-ttu-id="82f4e-127">Funkcja `SPLIT ("abcd", 3)` zwraca nową listę zawierającą dwa rekordy, które mają pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="82f4e-127">`SPLIT ("abcd", 3)` returns a new list that consists of two records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="82f4e-128">Pole **Wartość** w pierwszym rekordzie zawiera tekst **"abc"**, a pole **Wartość** w drugim rekordzie zawiera tekst **"d"**.</span><span class="sxs-lookup"><span data-stu-id="82f4e-128">The **Value** field in the first record contains the text **"abc"**, and the **Value** field in the second record contains the text **"d"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="cf75e-129">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="cf75e-129">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="82f4e-129">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="82f4e-129">Example 2</span></span>
 
-<span data-ttu-id="cf75e-130">Funkcja `SPLIT ("XAb aBy", "aB")` zwraca nową listę zawierającą trzy rekordy, które mają pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="cf75e-130">`SPLIT ("XAb aBy", "aB")` returns a new list that consists of three records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="cf75e-131">Pole **Wartość** w pierwszym rekordzie zawiera tekst **"X"**, pole **Wartość** w drugim rekordzie zawiera tekst **"&nbsp;"**, a pole **Wartość** w trzecim rekordzie zawiera tekst **"y"**.</span><span class="sxs-lookup"><span data-stu-id="cf75e-131">The **Value** field in the first record contains the text **"X"**, the **Value** field in the second record contains the text **"&nbsp;"**, and the **Value** field in the third record contains the text **"y"**.</span></span> 
+<span data-ttu-id="82f4e-130">Funkcja `SPLIT ("XAb aBy", "aB")` zwraca nową listę zawierającą trzy rekordy, które mają pole **Wartość** typu *Ciąg*.</span><span class="sxs-lookup"><span data-stu-id="82f4e-130">`SPLIT ("XAb aBy", "aB")` returns a new list that consists of three records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="82f4e-131">Pole **Wartość** w pierwszym rekordzie zawiera tekst **"X"**, pole **Wartość** w drugim rekordzie zawiera tekst **"&nbsp;"**, a pole **Wartość** w trzecim rekordzie zawiera tekst **"y"**.</span><span class="sxs-lookup"><span data-stu-id="82f4e-131">The **Value** field in the first record contains the text **"X"**, the **Value** field in the second record contains the text **"&nbsp;"**, and the **Value** field in the third record contains the text **"y"**.</span></span> 
 
-## <a name="additional-resources"></a><span data-ttu-id="cf75e-132">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="cf75e-132">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="82f4e-132">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="82f4e-132">Additional resources</span></span>
 
-[<span data-ttu-id="cf75e-133">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="cf75e-133">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="82f4e-133">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="82f4e-133">List functions</span></span>](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
