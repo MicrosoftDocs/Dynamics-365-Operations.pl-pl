@@ -17,40 +17,43 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02310ca9c0f42689f5a4cb52b22fc6e11121693c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0f604355d360683a346b49bdadb7b2662ce06b02
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006748"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204261"
 ---
-# <a name="move-service-order-lines"></a>Przenieś wiersze zlecenia serwisowego 
+# <a name="move-service-order-lines"></a><span data-ttu-id="516c6-103">Przenieś wiersze zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="516c6-103">Move service order lines</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.
+1.  <span data-ttu-id="516c6-104">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.</span><span class="sxs-lookup"><span data-stu-id="516c6-104">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  Kliknij dwukrotnie zlecenie serwisowe zawierające wiersze, które chcesz przenieść do innego zlecenia serwisowego.
+2.  <span data-ttu-id="516c6-105">Kliknij dwukrotnie zlecenie serwisowe zawierające wiersze, które chcesz przenieść do innego zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="516c6-105">Double-click the service order that contains the lines that you want to move to another service order.</span></span>
 
-3.  W formularzu **Zlecenia serwisowe** w okienku akcji kliknij przycisk **Przenieś wiersze**.
+3.  <span data-ttu-id="516c6-106">W formularzu **Zlecenia serwisowe** w okienku akcji kliknij przycisk **Przenieś wiersze**.</span><span class="sxs-lookup"><span data-stu-id="516c6-106">In the **Service orders** form, on the Action Pane, click the **Move lines** button.</span></span>
 
-4.  W formularzu **Przenieś wiersze zlecenia serwisowego** w polu **Zlecenie serwisowe** zaznacz zlecenie serwisowe, do którego chcesz przenieść wiersze.
+4.  <span data-ttu-id="516c6-107">W formularzu **Przenieś wiersze zlecenia serwisowego** w polu **Zlecenie serwisowe** zaznacz zlecenie serwisowe, do którego chcesz przenieść wiersze.</span><span class="sxs-lookup"><span data-stu-id="516c6-107">In the **Move service order lines** form, in the **Service order** field, select the service order that you want to move the lines to.</span></span>
 
-5.  Zaznacz pole wyboru **Usuń puste zlecenie serwisowe**, aby usunąć zlecenie serwisowe, z którego przeniesiono wiersze zlecenia serwisowego.
+5.  <span data-ttu-id="516c6-108">Zaznacz pole wyboru **Usuń puste zlecenie serwisowe**, aby usunąć zlecenie serwisowe, z którego przeniesiono wiersze zlecenia serwisowego.</span><span class="sxs-lookup"><span data-stu-id="516c6-108">Select the **Delete empty service order** check box to delete the service order that you moved the service order lines from.</span></span>
 
-6.  Kliknij przycisk **OK**.
+6.  <span data-ttu-id="516c6-109">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="516c6-109">Click **OK**.</span></span>
 
 
 > [!NOTE]
-> <P>Wiersze zlecenia serwisowego można przenosić jedynie między zleceniami serwisowymi dołączonymi do tej samej umowy serwisowej.</P>
+> <P><span data-ttu-id="516c6-110">Wiersze zlecenia serwisowego można przenosić jedynie między zleceniami serwisowymi dołączonymi do tej samej umowy serwisowej.</span><span class="sxs-lookup"><span data-stu-id="516c6-110">You can move service order lines only between service orders that are attached to the same service agreement.</span></span></P>
 
 
 
-## <a name="see-also"></a>Informacje dodatkowe
+## <a name="see-also"></a><span data-ttu-id="516c6-111">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="516c6-111">See also</span></span>
 
-[Zlecenia serwisowe](service-orders.md)
+[<span data-ttu-id="516c6-112">Zlecenia serwisowe</span><span class="sxs-lookup"><span data-stu-id="516c6-112">Service orders</span></span>](service-orders.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
