@@ -3,10 +3,9 @@ title: Lista funkcji modułu ER w kategorii funkcji logicznych
 description: Ten temat zawiera ogólne informacje o funkcjach logicznych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
 manager: kfend
-ms.date: 08/19/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a37b3341b05fde1283a21a0c52faec26cd1a7030
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 7310c2b269c3f4be03102160aebe0ed164a23a5c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686200"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561669"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Lista funkcji modułu ER w kategorii funkcji logicznych
 
@@ -36,9 +35,12 @@ Funkcje logiczne w module raportowania elektronicznego (ER) mogą służyć do p
 |----------|-------------|
 | [i](er-functions-logical-and.md)                       | Ta funkcja zwraca wartość *logiczną* **TRUE**, jeśli wszystkie wybrane warunki zostaną spełnione. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 | [Skrzynka](er-functions-logical-case.md)                     | Ta funkcja oblicza wartość określonego wyrażenia względem określonych alternatywnych opcji i zwraca wynik pierwszej opcji, która jest równa wartości określonego wyrażenia. W przeciwnym razie zwraca ona domyślny wynik opcjonalny, jeśli domyślny wynik jest określony jako ostatni argument wywołanej funkcji, który nie jest poprzedzony opcją. Wartość zwracana może być wartością dowolnego z obsługiwanych typów danych. |
+| [Zawiera](er-functions-logical-contains.md)             | Ta funkcja określa, czy określone dane wejściowe zawierają określony tekst. Zwraca wartość *logiczną* **TRUE**, jeśli określone dane wejściowe zawierają określony tekst. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
+| [Endswith](er-functions-logical-endswith.md)             | Ta funkcja określa, czy określone wejście kończy się określonym tekstem. Zwraca wartość *logiczną* **TRUE**, jeśli określone dane wejściowe kończą się określonym tekstem. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 | [Jeśli](er-functions-logical-if.md)                         | Ta funkcja zwraca pierwszą określoną wartość, jeśli jest spełniony podany warunek. W przeciwnym razie zwraca ona drugą określoną wartość. Wartość zwracana może być wartością dowolnego z obsługiwanych typów danych. |
 | [Nie](er-functions-logical-not.md)                       | Ta funkcja zwraca odwróconą wartość logiczną określonego warunku jako wartość *logiczną*. |
 | [Or](er-functions-logical-or.md)                         | Ta funkcja zwraca wartość *logiczną* **FALSE**, jeśli żadne wybrane warunki nie zostały spełnione. Jeśli dowolny wybrany warunek został spełniony, ta funkcja zwraca wartość *logiczną* **TRUE**. |
+| [Startswith](er-functions-logical-startswith.md)         | Ta funkcja określa, czy określone wejście zaczyna się określonym tekstem. Zwraca wartość *logiczną* **TRUE**, jeśli określone dane wejściowe zaczyna się określonym tekstem. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 | [ValueIn](er-functions-logical-valuein.md)               | Ta funkcja określa, czy podane dane wejściowe pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 | [ValueInLarge](er-functions-logical-valueinlarge.md)     | Ta funkcja określa, czy podane dane wejściowe typu *Int64* lub *Integer* pasują do którejkolwiek wartości określonego elementu na podanej liście. Zwraca ona *wartość logiczną* **TRUE**, jeśli określone dane wejściowe pasują do wyniku uruchamiania określonego wyrażenia dla co najmniej jednego rekord z danej listy. W przeciwnym wypadku zwraca ona wartość *logiczną* **FALSE**. |
 
