@@ -1,9 +1,9 @@
 ---
 title: Automatyzacja procesu windykacji
-description: W tym temacie opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej (np. rozmowy telefonicznej) lub ponagleń wysyłanych do odbiorcy.
+description: W tym temacie opisano proces konfigurowania strategii procesu windykacji, która umożliwia automatyczne identyfikowanie faktur odbiorców wymagających przypomnienia w formie wiadomości e-mail, operacji windykacyjnej lub ponagleń wysyłanych do odbiorcy.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969708"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582758"
 ---
 # <a name="collections-process-automation"></a>Automatyzacja procesu windykacji
 
@@ -32,6 +32,8 @@ Organizacje poświęcają znaczne ilości czasu na przeszukiwanie starych faktur
 
 ## <a name="collections-process-setup"></a>Konfiguracja procesu windykacji
 Na stronie **Konfiguracja procesu windykacji** (**Kredyty i windykacja > Konfiguracja > Konfiguracja procesu windykacji**) można utworzyć zautomatyzowany proces windykacji, który będzie planować działania, wysyłać wiadomości e-mail oraz tworzyć i wysyłać listy ponaglające. Etapy procesu są oparte na pierwszej lub najstarszej nieopłaconej fakturze W każdym kroku wykorzystywana jest właśnie ta faktura w celu określenia, jaka komunikacja lub działanie ma być przeprowadzane względem danego klienta.  
+
+Zespoły windykacji zwykle wysyłają wcześniejsze powiadomienie dotyczące każdej zaległej faktury, aby klient był powiadamiany o terminach płatności. Zaznaczenie opcji **Wstępnego duplikowania** można ustawić w taki sposób, aby zezwolić na działanie jednego kroku w każdej hierarchii procesów dla każdej faktury w czasie, do osiągnięcia tego etapu.
 
 ### <a name="process-hierarchy"></a>Hierarchia procesów
 Każda pula klientów może być przypisana tylko do jednej hierarchii procesów. Ranga hierarchii w tym kroku określa, który proces będzie miał pierwszeństwo, jeśli klient zostanie uwzględniony w więcej niż jednej puli z przypisaną hierarchią procesów. Identyfikator puli określa, którzy klienci będą przypisani do procesu. 
@@ -82,6 +84,7 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 |                                                           |     Dokument biznesowy                           |     Definiuje działanie lub szablon wiadomości e-mail, który jest używany w kroku procesu.                                                                        |
 |                                                           |     Kiedy                                          |     Określa, czy krok procesu ma nastąpić przed upływem terminu faktury, czy w dniu poprzedzającym ten termin, wspólnie z informacjami w polu **Dni w odniesieniu do daty płatności faktury**.        |
 |                                                           |     Dni w odniesieniu do daty płatności faktury        |     Wraz z polem **Kiedy** określa czas etapu procesu.                                                                          |
+|                                                           |     Wstępne monitowanie                                   |     Ten wybór pozwoli na ustawienie jednego kroku na hierarchię procesów i uruchamianie ich w stosunku do każdej faktury, która spełnia kryteria dotyczące czasu.                                                |
 |                                                           |     Odbiorca                                     |     Określa, czy wiadomość e-mail zostanie wysłana do klienta, grupy sprzedaży lub agenta windykacji.                                                   |
 |                                                           |     Kontakt w celach biznesowych                    |     Określa, który adres e-mail adresata jest używany w komunikacji e-mail.                                                                                 |
 
@@ -100,7 +103,7 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 ### <a name="collections-history"></a>Historia windykacji 
 |     Strona                              |     Pole     |      opis                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Konfiguracja procesu windykacji       |               |     Służy do wyświetlania najnowszej historii dla wybranej hierarchii procesów.     |
+|     Konfiguracja procesu windykacji       |               |     Służy do wyświetlania najnowszej historii dla wybranej hierarchii procesów.       |
 
 ### <a name="collection-process-assignment"></a>Przydzielanie procesu windykacji
 |     Strona                              |     Pole     |      opis                                                  |
@@ -110,6 +113,11 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 |     Podgląd przypisania procesu      |               |     Umożliwia wyświetlenie podglądu odbiorców, którzy zostaną przypisani do strategii po jej uruchomieniu.   |
 |     Podgląd przypisania odbiorcy     |               |     Służy do wyświetlania strategii przypisanej do określonego odbiorcy.    |
  
+ ### <a name="process-simulation"></a>Przetwórz symulację
+|     Strona                              |     Pole     |      opis                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Przetwórz symulację                 |               |     Umożliwia podgląd akcji, które zostaną utworzone, jeśli w tej chwili zostanie uruchomione wybrane automatyzacja procesów. |
+
 ### <a name="parameters"></a>Parametry
 |     Strona                                                                  |     Pole                                             |      opis                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
@@ -117,6 +125,7 @@ W poniższych tabelach przedstawiono strony i pola, z których można uzyskać d
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Automatycznie wysyłaj ponaglenia           |     Typy akcji ponagleń spowodują wysłanie listu podczas automatyzacji.                                      |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Tworzenie działań na potrzeby automatyzacji                |     Służy do tworzenia i zamykania działań dla typów akcji niezwiązanych z działaniami w celu wyświetlenia wszystkich zautomatyzowanych kroków podjętych na koncie.        |
 |     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Dni do przechowywania automatyzacji procesu windykacji     |     Definiuje liczbę dni przechowywania historii windykacji.                                                       |
+|     Parametry modułu rozrachunków z odbiorcami > Automatyzacja procesu windykacji     |     Wyklucz fakturę po aktywowaniu ostatniego kroku procesu    |     Faktura, która dotrę do ostatniego kroku procesu windykacji, nie będzie używana do tworzenia przyszłych typów akcji automatyzacji procesów. Następna najstarsza faktura określi następny krok automatyzacji procesu, aby zapewnić kontynuację akcji automatyzacji procesów windykacji.                                                        |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

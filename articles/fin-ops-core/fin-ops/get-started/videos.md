@@ -3,10 +3,9 @@ title: Pliki wideo
 description: Ta strona zawiera listę filmów instruktażowych i technicznych przygotowanych przez Microsoft, które dotyczą aplikacji Finance and Operations i są dostępne na YouTube i w innych witrynach.
 author: sericks007
 manager: AnnBe
-ms.date: 12/01/2020
+ms.date: 02/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: global
 ms.author: sericks
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 56fdfc400b5bc3e640e7951985d54ffa870f96c9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 70eddab17d94a7ff4a9f00117200a657ebfb24dd
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797882"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566229"
 ---
 # <a name="videos"></a>Filmy wideo 
 
@@ -90,13 +89,10 @@ Na [kanale rozwiązania Microsoft Dynamics 365 na YouTube](https://www.youtube.c
 - [Dodawanie pól niestandardowych](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 - [Osadź Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
-### <a name="expenses"></a>Koszty
-- [Obsługa wydatków](https://youtu.be/Ocy-MsTvEE0)
-
-### <a name="financial-reporting"></a>Raportowanie finansowe
+### <a name="financial-reporting"></a>Raporty finansowe
 - [Znajdowanie wersji Projektanta raportów](https://www.youtube.com/embed/icfA5Q3kp4w)
 
-### <a name="help-system"></a>System Pomocy
+### <a name="help-system"></a>System pomocy
 
 - [Jak wnieść wkład do Microsoft Dynamics 365 documentacji](https://youtu.be/m5djioozRbg)
 

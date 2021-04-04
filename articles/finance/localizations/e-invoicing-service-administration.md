@@ -3,7 +3,7 @@ title: Dodatkowe komponenty administracyjne do elektronicznego fakturowania
 description: Ten temat zawiera informacje o składnikach związanych z administrowaniem dodatkiem Fakturowanie elektroniczne.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104425"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592581"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Dodatkowe komponenty administracyjne do elektronicznego fakturowania
 
@@ -39,11 +39,15 @@ Użyj Microsoft Azure, aby utworzyć wpisy tajne dla magazynu kluczy i konta mag
 
 Użyj Microsoft Dynamics Lifecycle Services (LCS), aby włączyć dodatek dla mikrousług dla projektu wdrożenia LCS.
 
-W LCS wybierz kafelek **Zarządzanie funkcjami wersji zapoznawczej**, a następnie włącz funkcję **Usługi e-fakturowania**.
+> [!NOTE]
+> Instalacja dodatku mikrousługi w umacie LCS wymaga co najmniej maszyny wirtualnej warstwy 2. Aby uzyskać więcej informacji o planowaniu w środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) to interfejs używany do konfigurowania dodatku Fakturowanie elektroniczne. Zasoby takie jak środowiska i funkcje fakturowania elektronicznego są tworzone, utrzymywane i hostowane w RCS. Gdy zasoby są gotowe, są publikowane w usłudze dodatkowej Fakturowanie elektroniczne.
+
+Aby uzyskać informacje o rejestracji w RCS, zobacz temat [Regulatory services](https://marketing.configure.global.dynamics.com/).
 
 Aby uzyskać więcej informacji na temat RCS, zobacz [Regulatory Configuration Services (RCS) – funkcje globalizacji](rcs-globalization-feature.md)
 
@@ -53,22 +57,14 @@ Zanim będziesz mógł używać RCS do konfigurowania faktur elektronicznych, mu
 
 #### <a name="service-endpoint"></a>Punkt końcowy usługi
 
-Adres URL punktu końcowego dodatku do fakturowania elektronicznego może się różnić w zależności od lokalizacji geograficznej centrum danych platformy Azure. W poniższej tabeli przedstawiono dostępność według regionów:
+Dodatek Fakturowanie elektroniczne jest dostępny w kilku lokalizacjach geograficznych centrów danych platformy Azure. W poniższej tabeli przedstawiono dostępność według regionów.
 
-| Geografia centrum danych platformy Azure | Adres URL punktu końcowego usługi                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| Wschodnie stany USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| Zachodnie stany USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Europa Północna                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Europa Zachodnia                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>Identyfikator aplikacji
-
-Identyfikator aplikacji jest identyfikatorem dodatku Fakturowanie elektroniczne. W tym przypadku wartość jest stała: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>Identyfikator środowiska LCS
-
-Identyfikator środowiska LCS to identyfikator subskrypcji LCS Twojej organizacji.
+| Geografia centrum danych platformy Azure |
+|----------------------------|
+| Wschodnie stany USA                    |
+| Zachodnie stany USA                    |
+| Europa Północna                   |
+| Europa Zachodnia                    |
 
 ### <a name="service-environments"></a>Środowiska usługi
 

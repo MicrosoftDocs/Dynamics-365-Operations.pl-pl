@@ -3,7 +3,7 @@ title: Zacznij od administrowania usługą dodatkową dotyczącą fakturowania e
 description: W tym temacie opisano sposób rozpoczęcia pracy z dodatkiem Faktur elektronicznych.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104423"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592533"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Zacznij od administrowania usługą dodatkową dotyczącą fakturowania elektronicznego
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104423"
 Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następujące wymagania wstępne:
 
 - Musisz mieć dostęp do konta Microsoft Dynamics Lifecycle Services (LCS).
-- Musisz mieć projekt usługi LCS z wersją 10.0.13 lub nowszą firmy Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Ponadto te aplikacje muszą zostać wdrożone w jednej z następujących lokalizacji geograficznych platformy Azure:
+- Musisz mieć projekt usługi LCS z wersją 10.0.17 lub nowszą firmy Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Ponadto te aplikacje muszą zostać wdrożone w jednej z następujących lokalizacji geograficznych platformy Azure:
 
     - Wschodnie stany USA
     - Zachodnie stany USA
@@ -52,6 +52,13 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**.
 3. W sekcji **Funkcje w publicznych wersjach zapoznawczych** wybierz **usługę fakturowania elektronicznego**.
 4. Sprawdź, czy w opcji **Funkcja wersji zapoznawczej włączona** jest ustawiona wartość **Tak**.
+5. Na pulpicie nawigacyjnym usługi LCS wybierz projekt wdrożenia usługi LCS. Projekt usługi LCS musi być uruchomiony.
+7. Na karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
+8. Wybierz **usługi fakturowania elektronicznego** i w polu Identyfikator aplikacji usługi **AAD** wprowadź wartość **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
+10. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure.
+11. Przejrzyj warunki, a następnie zaznacz pole wyboru.
+12. Wybierz **Zainstaluj**.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Skonfiguruj parametry RCS z dodatkiem Faktury elektroniczne
 
@@ -73,7 +80,7 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 ## <a name="create-key-vault-secret"></a>Utwórz wpis tajny magazynu kluczy
 
 1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcja globalizacji**, a następnie w obszarze **Środowisko** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Dodatek Faktury elektroniczne**.
 3. Na stronie **Ustawienia środowiska**, w okienku akcji wybierz **Środowisko serwisu**, a następnie wybierz opcję **Parametry Key Vault**.
 4. Wybierz opcję **Nowy**, aby utworzyć klucz tajny.
 5. W polu **Nazwa** wprowadź nazwę wpisu tajnego magazynu kluczy. W polu **Opis wprowadź** opis.
@@ -82,22 +89,31 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
 ## <a name="create-storage-account-secret"></a>Utwórz klucz tajny konta magazynu
 
-1. Na stronie **Kluczowe parametry**, w sekcji **Certyfikaty** wybierz opcję **Dodaj**.
-2. W polu **Nazwa** wprowadź ten sam klucz tajny konta magazynu. W polu **Opis wprowadź** opis.
-3. W polu **Typ** zaznacz opcję **Certyfikat**.
-4. Wybierz przycisk **Zapisz** i zamknij stronę.
+1. Przejdź do **Administrowanie systemem** > **Ustawienia** > **Parametry Key Vault** i wybierz klucz tajny klucz.
+2. W sekcji **Certyfikaty** wybierz opcję **Dodaj**.
+3. W polu **Nazwa** wprowadź nazwę tajnych kont magazynowania, a w polu **Opis** wprowadź opis.
+4. W polu **Typ** zaznacz opcję **Certyfikat**.
+5. Wybierz przycisk **Zapisz** i zamknij stronę.
+
+## <a name="create-a-digital-certificate-secret"></a>Utwórz tajny kod certyfikatu cyfrowego
+
+1. Przejdź do **Administrowanie systemem** > **Ustawienia** > **Parametry Key Vault** i wybierz klucz tajny klucz.
+2. W sekcji **Certyfikaty** wybierz opcję **Dodaj**.
+3. W polu **Nazwa** wprowadź nazwę tajnych certyfikatów wirtualnych, a w polu **Opis** wprowadź opis.
+4. W polu **Typ** zaznacz opcję **Certyfikat**.
+5. Wybierz przycisk **Zapisz** i zamknij stronę.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Tworzenie środowiska dodatku Faktur elektronicznych
 
 1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcja globalizacji**, a następnie w obszarze **Środowisko** wybierz kafelek **Fakturowanie elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Dodatek Faktury elektroniczne**.
 
 ## <a name="create-a-service-environment"></a>Tworzenie środowiska usługi
 
 1. Na stronie **Ustawienia środowiska** w okienku akcji wybierz pozycję **Środowisko usługi**.
 2. Wybierz pozycję **Nowy**, aby utworzyć nowe środowisko usługi.
 3. W polu **Nazwa** wprowadź nazwę środowiska e-fakturowania. W polu **Opis wprowadź** opis.
-4. W polu **Tajny klucz tokenu sygnatury dostępu Współdzielonego magazynu** wybierz nazwę certyfikatu, który musi być używany do uwierzytelnienia dostępu do konta magazynu.
+4. W polu **Tajny klucz tokenu sygnatury dostępu Współdzielonego magazynu** wybierz nazwę klucza tajnego konta magazynu, który musi być używany do uwierzytelniania dostępu do konta magazynu.
 5. W sekcji **Użytkownicy** wybierz opcję **Dodaj**, aby dodać użytkownika, który może przesyłać faktury elektroniczne za pośrednictwem środowiska, a także połączyć się z kontem magazynu.
 6. W polu **Identyfikator użytkownika** wprowadź alias użytkownika. W polu **Adres e-mail** wprowadź adres e-mail dla użytkownika.
 7. Wybierz opcję **Zapisz**.

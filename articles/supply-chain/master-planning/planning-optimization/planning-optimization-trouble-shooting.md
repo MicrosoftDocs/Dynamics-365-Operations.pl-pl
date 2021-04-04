@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8e67a6faf52b51264555b06f56b289d19ca580d6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39583c244f09f54551d560e8b1dd9f1a5a1590cc
+ms.sourcegitcommit: 72f70c81176e86cda714a4712525f73514c895b7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992577"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "5457336"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Rozwiązywanie problemów z optymalizacją planowania 
 
@@ -48,12 +48,6 @@ Po włączeniu optymalizacji planowania wbudowany aparat planowania głównego j
 Optymalizacja planowania różni się od wbudowanego projektu planowania głównego w niektórych obszarach. Może to być również spowodowane przez oczekujące funkcje.
 
 **Poprawka**: uruchom analizę dopasowania optymalizacji planowania i przeanalizuj wyniki, używając odpowiedniej dokumentacji w celu zrozumienia ich wpływu. Aby uzyskać więcej informacji, zobacz [Analiza dopasowywania optymalizacją planowania](planning-optimization-fit-analysis.md).
-
-## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Planowanie główne nie uwzględnia horyzontu czasowego zapotrzebowania
-
-Jest to spowodowane przez funkcję oczekującą dla optymalizacji planowania.
-
-**Poprawka** : do momentu udostępnienia funkcji oczekującej można filtrować lub usuwać zamówienia planowane w celu usunięcia sugestii dotyczących dostaw poza horyzontem czasowym zapotrzebowania.
 
 ## <a name="cant-enable-planning-optimization"></a>Nie można włączyć optymalizacji planowania
 

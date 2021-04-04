@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 08659bac84b07f6e95a83b84612cb035b51cf28d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093169"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568473"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Zaawansowane opcje formatowania w raportowaniu finansowym
 
@@ -283,10 +282,10 @@ Aby ograniczyć obliczenia do jednej jednostki raportowania w drzewie raportowan
 > [!NOTE]
 > Do korzystania z tej funkcji raportowania drzewo muszą być skojarzone z definicją wiersza.
 
-Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji **IF @Jednostka**. Oto przykład: IF @Jednostka(SPRZEDAŻ) @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: IF @Jednostka(SPRZEDAŻ) OR @Jednostka(SPRZEDAŻZACHÓD) THEN 5 ELSE @100 Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
+Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych finansowych. Obliczenie jest rejestrowane w komórce **Powiązane formuły/wiersze/jednostki** definicji wiersza i ograniczeniu typu danych finansowych. Obliczenie musi używać obliczenia warunkowego, które zaczyna się od konstrukcji **IF \@Unit**. Oto przykład: IF @Jednostka(SPRZEDAŻ) @100 ELSE 0 To obliczenie obejmuje kwoty z wiersza 100 w każdej kolumnie raportu, ale tylko dla jednostki SPRZEDAŻ. Jeśli wiele jednostek ma nazwę SPRZEDAŻ, kwota pojawia się w każdej z tych jednostek. Ponadto wiersz 100 może być wierszem danych finansowych i może być zdefiniowany jako niedrukowany. W takim przypadku kwota nie pojawia się we wszystkich jednostkach drzewa. Można też ograniczyć kwotę do jednej kolumny raportu, np. kolumny H, korzystając z ograniczenia kolumny, aby drukować tylko wartość widoczną w tej kolumnie raportu. Można uwzględnić kombinacje **OR** w instrukcji **IF**. Oto przykład: **jeśli @Unit(SALES) lub @Unit(SALESWEST), wówczas 5 ELSE @100**. Można ograniczyć jednostkę w ograniczeniu typu obliczenia w jeden z następujących sposobów:
 
-- Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF @Jednostka(SPRZEDAŻ)** pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
-- Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF @Jednostka(ACME:SPRZEDAŻ**), aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
+- Wprowadź nazwę jednostki, aby uwzględnić jednostki, które spełniają kryteria. Na przykład **IF \@Jednostka(SPRZEDAŻ)** pozwala przeprowadzić obliczenie dla każdej jednostki o nazwie SPRZEDAŻ, nawet jeśli w drzewie raportowania jest kilka jednostek SPRZEDAŻ.
+- Wpisz nazwę firmy i jednostki, aby ograniczyć obliczenia do określonych jednostek w wybranej firmie. Na przykład wpisz **IF@Jednostka(ACME:SPRZEDAŻ)**, aby ograniczyć obliczenie do jednostek SPRZEDAŻ w firmie ACME.
 - Wpisz pełny kod hierarchii z drzewa raportowania, aby ograniczyć obliczanie do określonej jednostki. Na przykład wpisz **IF @Jednostka(PODSUMOWANIE^ACME^ZACHODNIA WYBRZEŻE^SPRZEDAŻ)**.
 
 > [!NOTE]
@@ -296,7 +295,7 @@ Wiersz obliczania może odnosić się do wiersza obliczania lub wiersza danych f
 
 1. W Projektancie raportów kliknij pozycję **Definicje wierszy**, a następnie otwórz definicję wiersza, którą chcesz zmodyfikować.
 2. Kliknij dwukrotnie komórkę **Kod formatu**, a następnie wybierz opcję **CAL**.
-3. Kliknij komórkę **Powiązane formuły/wiersze/jednostki**, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF @Jednostka**.
+3. Kliknij komórkę **Powiązane formuły/wiersze/jednostki**, a następnie wprowadź warunkowe obliczanie, które rozpoczyna się od konstrukcji **IF \@Unit**.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>Instrukcje IF/THEN/ELSE w definicji kolumny
 
@@ -310,6 +309,5 @@ Instrukcja **IF/THEN/ELSE** pozwala uzależnić każde obliczenie od wyników z 
 Raporty można projektować przy użyciu wartości wymiarów, które zawierają znak „i” (&).
 
 W polu **łącze do wymiaru finansowego** można wprowadzić wartość, np. **'P&L'**. Włączenie pojedynczych cudzysłowów (' ') po obu stronach wartości wymiaru oznacza, że jest używana wartość literalna, taka jak m.in. „i” (&).
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

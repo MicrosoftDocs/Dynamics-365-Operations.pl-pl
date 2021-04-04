@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104947"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580972"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -85,7 +85,14 @@ Piasta posiada następujące dane:
 > [!NOTE]
 > Przychodzący przepływ zamówienia zakupu różni się pod względem koncepcji od przepływu wychodzącego. Ten sam magazyn można obsługiwać w jednostce skalowania lub centrum w zależności od tego, czy zamówienie zakupu zostało zwolnione do magazynu, czy nie. Po zwolnieniu zamówienia do magazynu można pracować z tym zamówieniem wyłącznie po zalogowaniu się do jednostki skalowania.
 
-Jeśli jest używana funkcja *zwalniania do magazynu*, tworzone są [*zamówienia magazynowe*](cloud-edge-warehouse-order.md), a do jednostki skali jest przypisana własność powiązanego przepływu przyjęcia. Centrum nie będzie mogło zarejestrować przyjęcia przychodzącego.
+Jeśli jest używana funkcja *Zwalniania do magazynu*, tworzone są [*zamówienia magazynowe*](cloud-edge-warehouse-order.md), a do jednostki skali jest przypisana własność powiązanego przepływu przyjęcia. Centrum nie będzie mogło zarejestrować przyjęcia przychodzącego.
+
+Należy się zalogować do centrum, aby zainicjować proces *zwalniania do magazynu*. Przejdź na jedną z następujących stron, aby go uruchomić lub zaplanować:
+
+- **Zaopatrzenie i sourcing > Zamówienia zakupu > Wszystkie zamówienia zakupu > Magazyn > Akcje > Zwolnij do magazynu**
+- **Zarządzanie magazynem > Zwolnij do magazynu > Automatyczne zwalnianie zamówień zakupu**
+
+W przypadku korzystania z funkcji **Automatyczne zwalnianie zamówień zakupu** można wybierać określone wiersze zamówienia zakupu w oparciu o kwerendę. Typowym scenariuszem byłoby skonfigurowanie powtarzającego się zadania wsadowego, które zwalnia wszystkie potwierdzone wiersze zamówienia zakupu, które mają nadejść następnego dnia.
 
 Pracownicy magazynu mogą uruchomić proces odbioru za pomocą aplikacji magazynowej połączonej z jednostką miary skali. Dane są następnie rejestrowane przez jednostkę skali i podawane w odniesieniu do przychodzącego zamówienia magazynowego. Tworzenie i przetwarzanie kolejnych odłożeń będzie również obsługiwane przez jednostkę skali.
 
@@ -222,7 +229,7 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 | Przyjęcie i odłożenie wiersza zamówienia przeniesienia                        | Tak | Nr |
 | Anuluj pracę (przychodzące)                                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, ale tylko gdy zaznaczenie opcji <b>Wyrejestrowywanie paragonu podczas anulowania pracy</b> (na stronie <b>parametrów zarządzania magazynem</b>) zostanie usunięte</p> |
 | Zamówienie zakupu — przetwarzanie dokumentu przyjęcia produktów                          | Tak | Nr |
-| Przyjęcie zamówienia zakupu z dostawą z niedoborem                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nie, ponieważ można anulować tylko pełne ilości w wierszach zamówień magazynowych |
+| Przyjęcie zamówienia zakupu z dostawą z niedoborem                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak, ale tylko przez zgłoszenie wniosku o anulowanie z centrum |
 | Przyjęcie zamówienia zakupu z dostawą z nadmiarem                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak  |
 | Przyjęcie z utworzeniem pracy *przeładunku kompletacyjnego*                   | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
 | Przyjęcie z utworzeniem pracy *zlecenia kontroli jakości*                  | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |

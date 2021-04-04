@@ -3,10 +3,9 @@ title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychod
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094036"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574180"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -54,7 +53,7 @@ Musisz dodać składnik **Excel\\Plik** do skonfigurowanego formatu ER, aby wyge
 Aby określić układ dokumentu wychodzącego, dołącz skoroszyt programu Excel z rozszerzeniem xlsx do składnika **Excel\\Plik** jako szablon dokumentów wychodzących.
 
 > [!NOTE]
-> Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), który został skonfigurowany dla tego celu w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), który został skonfigurowany dla tego celu w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Dodawanie załącznika do składnika Excel\Plik](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Aby dowiedzieć się więcej na temat osadzania obrazów i kształtów, zobacz t
 
 Składnik **PageBreak** wymusza rozpoczęcie nowej strony przez program Excel. Ten składnik nie jest wymagany, jeśli ma być używany domyślne stronicowanie programu Excel, ale powinien być używany, jeśli chcesz, aby program Excel korzystał z formatu ER w celu utworzenia struktury stronicowania.
 
+## <a name="footer-component"></a>Składnik stopki
+
+Składnik **Stopki** służy do wypełniania stopek u dołu wygenerowanego arkusza w skoroszycie programu Excel.
+
+> [!NOTE]
+> Ten składnik można dodać dla każdego składnika **Arkusza**, aby określić różne stopki dla różnych arkuszy w generowanym skoroszycie programu Excel.
+
+Podczas konfigurowania pojedynczych składników **Stopki** można używać właściwości **Wyglądu nagłówka/stopki**, aby określić strony, do których składnik jest używany. Dostępne są następujące wartości:
+
+- **Dowolny** — umożliwia uruchomienie skonfigurowanego składnika **Stopki** dla dowolnej strony nadrzędnego arkusza programu Excel.
+- **Pierwszy** — umożliwia uruchomienie skonfigurowanego składnika **Stopki** dla pierwszej strony nadrzędnego arkusza programu Excel.
+- **Policzalne** — umożliwia uruchomienie skonfigurowanego pierwszego składnika **Stopki** dla policzalnych stron nadrzędnego arkusza programu Excel.
+- **Niepoliczalne** — umożliwia uruchomienie skonfigurowanego pierwszego składnika **Stopki** dla niepoliczalnych stron nadrzędnego arkusza programu Excel.
+
+Dla jednego składnika **Arkusza** można dodać kilka składników **stopki**, z których każdy ma inną wartość właściwości **Wyglądu Nagłówka/stopki**. W ten sposób można generować różne stopki dla różnych typów stron w arkuszu programu Excel.
+
+> [!NOTE]
+> Upewnij się, że każdy składnik **Stopka**, który dodajesz do pojedynczego składnika **Arkusza** ma inną wartość właściwości **Wyglądu Nagłówka/stopki**. W przeciwnym razie [wystąpi błąd weryfikacji](er-components-inspections.md#i16). Odbierany komunikat o błędzie powiadamia o niespójności.
+
+Pod dodanym składnikiem **Stopki** dodaj wymagane zagnieżdżone składniki ciągu **Text\\String**, **Text\\DateTime** lub innego typu. Skonfiguruj powiązania tych składników, aby określić sposób wypełnienia stopki strony.
+
+Można również użyć specjalnych [kodów formatowania](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers), aby poprawnie sformatować zawartość wygenerowanej stopki. Aby się dowiedzieć, jak korzystać z tego podejścia, wykonaj kroki opisane w [Przykładzie 1](#example-1), dalej w tym temacie.
+
+> [!NOTE]
+> Konfigurując formaty ER, należy wziąć pod uwagę limit programu Excel i [maksymalną liczbę znaków](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) dla jednego nagłówka lub stopki.
+
+## <a name="header-component"></a>Składnik nagłówka
+
+Składnik **Nagłówek** służy do wypełniania nagłówek u góry wygenerowanego arkusza w skoroszycie programu Excel. Jest używana jak składnik **Stopki**.
+
 ## <a name="edit-an-added-er-format"></a>Edytowanie dodanego formatu ER
 
 ### <a name="update-a-template"></a>Aktualizowanie szablonu
@@ -175,6 +204,48 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
     >[!NOTE]
     > Ponowne obliczanie formuł jest wymuszane ręcznie po otwarciu wygenerowanego dokumentu do podglądu za pomocą programu Excel.
     > Nie należy stosować tej opcji w przypadku konfigurowania miejsca docelowego modułu ER, które zakłada używanie wygenerowanego dokumentu bez obejrzenia jego podglądu w programie Excel (konwersja do pliku PDF, wysłanie wiadomości e-mail itp.), ponieważ wygenerowany dokument może nie zawierać wartości w komórkach z formułami.
+
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Przykład 1. Zawartość stopki formatu
+
+1. Użyj dostarczonych konfiguracji ER do [wygenerowania](er-generate-printable-fti-forms.md) dokumentu faktury elektronicznej (FTI) do wydrukowania.
+2. Przejrzyj stopkę wygenerowanego dokumentu. Należy zauważyć, że zawiera informacje o numerze bieżącej strony i łącznej liczbie stron w dokumencie.
+
+    ![Przejrzyj stopkę wygenerowanego dokumentu w formacie programu Excel](./media/er-fillable-excel-footer-1.gif)
+
+3. W konstruktorze formatów ER [otwórz](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) przykładowy format ER do przeglądu.
+
+    Stopka arkusza **Faktury** jest generowana na podstawie ustawień dwóch składników **Ciągu**, które znajdują się w składniku **Stopki**:
+
+    - Pierwszy składnik **Ciągu** wypełnia następujące specjalne kody formatowania, aby wymusić zastosowanie określonego formatowania w programie Excel:
+
+        - **&C** — umożliwia wyrównanie tekstu stopki do środka.
+        - **&"Segoe UI,Regular"&8** – tekst stopki należy prezentować w czcionce "Segoe UI Regular" w rozmiarze 8 punktów.
+
+    - Drugi składnik **Ciągu** wypełnia tekst zawierający numer bieżącej strony oraz łączną liczbę stron w bieżącym dokumencie.
+
+    ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów](./media/er-fillable-excel-footer-2.png)
+
+4. Dostosuj przykładowy format ER w celu zmodyfikowania stopki bieżącej strony:
+
+    1. [Utwórz](er-quick-start2-customize-report.md#DeriveProvidedFormat) pochodny **Darmowy niestandardowy format ER (Excel) faktury elektronicznej** oparty na przykładowym formacie ER.
+    2. Dodaj pierwszą nową parę składników **Ciągu** dla składnika **Stopki** arkusza **Faktura**:
+
+        1. Dodaj składnik **Ciąg**, który wyrówna nazwę firmy po lewej stronie i przedstawia ją w 8-punktowej czcionce "Segoe UI Regular" (**"&L&"Segoe UI,Regular"&8"**).
+        2. Dodaj **Ciąg**, który wypełnia nazwę firmy (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Dodaj drugą nową parę składników **Ciągu** dla składnika **Stopki** arkusza **Faktura**:
+
+        1. Dodaj składnik **Ciąg**, który wyrównuje datę przetwarzania z prawej strony i przedstawia ją w 8-punktowej czcionce "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
+        2. Umożliwia dodanie składnika **Ciągu**, który wypełnia datę przetwarzania w niestandardowym formacie (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów](./media/er-fillable-excel-footer-3.png)
+
+    4. [Ukończ](er-quick-start2-customize-report.md#CompleteDerivedFormat) wersję roboczą **Niestandardowej darmowej pochodnej faktury elektronicznej (Excel)** formatu ER.
+
+5. [Skonfiguruj](er-generate-printable-fti-forms.md#configure-print-management) zarządzanie drukowaniem, aby używać pochodnego formatu ER **Faktura niezależna (Excel) - niestandardowa** zamiast przykładowego formatu ER.
+6. Wygeneruj dokument FTI, który można wydrukować, i przejrzyj stopkę wygenerowanego dokumentu.
+
+    ![Sprawdzanie stopki wygenerowanego dokumentu w formacie programu Excel](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
