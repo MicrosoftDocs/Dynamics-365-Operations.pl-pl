@@ -2,11 +2,9 @@
 title: Finance — strona główna
 description: Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących funkcji zarządzania finansami w Microsoft Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218890"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813490"
 ---
 # <a name="finance-home-page"></a>Finance — strona główna
 
@@ -71,8 +69,10 @@ Przepisy krajowe/regionalne wpływają na ustawienia podatku i inne aspekty zarz
 
 ### <a name="additional-content"></a>Dodatkowa zawartość
 
-Funkcja zarządzania łańcuchem dostaw obejmuje części procesu „procure-to-pay” zawierającego zapotrzebowanie, zamawianie, przyjmowanie, fakturowanie i płatności za towary i usługi, które kupuje organizacja. Więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją zawiera [strona główna aplikacji Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md). 
+Funkcja zarządzania łańcuchem dostaw obejmuje części procesu „procure-to-pay” zawierającego zapotrzebowanie, zamawianie, przyjmowanie, fakturowanie i płatności za towary i usługi, które kupuje organizacja. Więcej informacji na temat możliwości zarządzania zakupami, zapasami i produkcją zawiera [strona główna aplikacji Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
+## <a name="elearning-courses"></a>Kursy eLearning
 
+W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Finance w Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Aktualizacja Platform update dla wersji 10.0.16 (luty 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Aktualizacja Platform update dla wersji 10.0.15 (styczeń 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Zintegrowany pracownik, praca i stanowisko'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Książka adresowa strony i globalna książka adresowa
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Korzystanie z usługi Power Portal z modelem danych strony
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Integracja uwag
                               href: data-entities/dual-write/notes-integration.md
                             - name: Odwołanie do mapowania
@@ -526,13 +528,15 @@
                   items:
                     - name: Konfigurowanie projektów lokalnych w usłudze LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurowanie i wdrażanie środowisk lokalnych
+                    - name: Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update w wersji od 12 do 40
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
                       href: deployment/deploy-retail-onprem.md
                     - name: Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Konserwacja środowiska
+                - name: Operacje środowiska
                   items:
                     - name: Stosowanie aktualizacji do wdrożenia lokalnego
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: 'Skonfiguruj węzły serwera AOS, przeznaczone tylko do przetwarzania wsadowego i tylko interakcyjne, we wdrożeniach lokalnych'
                       href: deployment/onprem-batchonly.md
+                    - name: Konfigurowanie wysokiej dostępności węzłów usług SQL Server Reporting Services (SSRS)
+                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurowanie serwerów proxy dla środowisk lokalnych
                       href: deployment/onprem-reverseproxy.md
                     - name: Diagnostyka we wdrożeniach lokalnych
@@ -1136,20 +1142,24 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integracja z usługą Microsoft Power Platform
           items:
-            - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
-              href: power-platform/overview.md
-            - name: Omówienie dodatków
-              href: power-platform/add-ins-overview.md
-            - name: Modelowanie jednostek
-              href: power-platform/entity-modeling.md
-            - name: Zarządzanie cyklem życia aplikacji
-              href: power-platform/application-lifecycle-management.md
-            - name: Finance and Operations oraz odwołanie administracyjne Dataverse
-              href: power-platform/admin-reference.md
-            - name: Portale Power Apps z Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Często zadawane pytania Finance and Operations dot. jednostek wirtualnych
-              href: power-platform/faq.md
+            - name: Jednostki wirtualne
+              items:
+                - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
+                  href: power-platform/overview.md
+                - name: Modelowanie jednostek
+                  href: power-platform/entity-modeling.md
+                - name: Zarządzanie cyklem życia aplikacji
+                  href: power-platform/application-lifecycle-management.md
+                - name: Finance and Operations oraz odwołanie administracyjne Dataverse
+                  href: power-platform/admin-reference.md
+                - name: Portale Power Apps z Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Często zadawane pytania Finance and Operations dot. jednostek wirtualnych
+                  href: power-platform/faq.md
+            - name: Dodatki
+              items:
+                - name: Omówienie dodatków
+                  href: power-platform/add-ins-overview.md
         - name: Platforma mobilna
           items:
             - name: Zasoby platformy mobilnej
@@ -1390,7 +1400,9 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Samouczek narzędzia Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
-            - name: Najlepsze praktyki
+            - name: Konfigurowanie użytkowników niebędących administratorami
+              href: perf-test/rsat/rsat-configure-nonadmin.md
+            - name: Najlepsze wskazówki
               href: perf-test/rsat/rsat-best-practices.md
             - name: Testowanie diagnostyczne danych przy użyciu narzędzia Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md

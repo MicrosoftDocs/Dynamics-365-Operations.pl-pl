@@ -2,11 +2,9 @@
 title: Rozpoznawanie przychodów z zamówień sprzedaży
 description: W tym temacie opisano podstawową funkcję rozpoznawania przychodów z zamówień sprzedaży i faktur. Rozpoznawanie przychodów jest dostępne w zamówieniu sprzedaży i na odpowiedniej fakturze utworzonej z zamówienia sprzedaży.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b59e7506f5b02ba7d5d522dd22f4e4bfd3e0c10b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245647"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817228"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Rozpoznawanie przychodów z zamówień sprzedaży
 
