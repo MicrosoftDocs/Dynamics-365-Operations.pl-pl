@@ -2,7 +2,6 @@
 title: ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 4 — inicjowanie formatu)
 description: W tym temacie opisano sposób konfigurowania formatu raportowania elektronicznego do używania plików zarządzania dokumentami w wynikach ER. (część 4)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -14,59 +13,59 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede71118f64eec27b150a4c575aead97d3174509
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: f7a7c9705d8b53ef13cd3faf13290f3f1b1d1c43
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559732"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749124"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a><span data-ttu-id="c2b3b-104">ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 4 — inicjowanie formatu)</span><span class="sxs-lookup"><span data-stu-id="c2b3b-104">ER Use Document Management files in format outputs (Part 4 - Run format)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a><span data-ttu-id="1a841-104">ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 4 — inicjowanie formatu)</span><span class="sxs-lookup"><span data-stu-id="1a841-104">ER Use Document Management files in format outputs (Part 4 - Run format)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c2b3b-105">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników).</span><span class="sxs-lookup"><span data-stu-id="c2b3b-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="c2b3b-106">Kroki można wykonać na danych firmy DEMF.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-106">These steps can be performed in the DEMF company.</span></span>
+<span data-ttu-id="1a841-105">W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli administratora systemu lub dewelopera raportowania elektronicznego może tak skonfigurować format raportowania elektronicznego (ER), aby w danych wyjściowych raportowania elektronicznego używać plików zarządzania danymi (załączników).</span><span class="sxs-lookup"><span data-stu-id="1a841-105">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="1a841-106">Kroki można wykonać na danych firmy DEMF.</span><span class="sxs-lookup"><span data-stu-id="1a841-106">These steps can be performed in the DEMF company.</span></span>
 
-<span data-ttu-id="c2b3b-107">W celu wykonania tych kroków należy najpierw wykonać kroki procedury „ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 3: Tworzenie formatu)”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-107">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 3: Create format)" procedure.</span></span>
+<span data-ttu-id="1a841-107">W celu wykonania tych kroków należy najpierw wykonać kroki procedury „ER Używanie plików zarządzania dokumentami w danych wyjściowych formatu (Część 3: Tworzenie formatu)”.</span><span class="sxs-lookup"><span data-stu-id="1a841-107">To complete these steps, you must first complete the steps in the "ER Use Document Management files in format outputs (Part 3: Create format)" procedure.</span></span>
 
-<span data-ttu-id="c2b3b-108">Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="1a841-108">Procedura dotyczy funkcji dodanej w programie Dynamics 365 for Operations w wersji 1611.</span><span class="sxs-lookup"><span data-stu-id="1a841-108">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a><span data-ttu-id="c2b3b-109">Dodawanie niezbędnych załączników dla zamówienia sprzedaży z jedną fakturą</span><span class="sxs-lookup"><span data-stu-id="c2b3b-109">Add necessary attachments for sales order of a single invoice</span></span>
-1. <span data-ttu-id="c2b3b-110">Wybierz kolejno opcje Rozrachunki z odbiorcami > Faktury > Otwarte faktury odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-110">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
-2. <span data-ttu-id="c2b3b-111">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-111">Use the Quick Filter to find records.</span></span> <span data-ttu-id="c2b3b-112">Na przykład wyfiltruj według pola Faktura z wartością „CIV-000148”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-112">For example, filter on the Invoice field with a value of 'CIV-000148'.</span></span>
-    * <span data-ttu-id="c2b3b-113">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="c2b3b-113">CIV-000148</span></span>  
-3. <span data-ttu-id="c2b3b-114">Kliknij, aby otworzyć łącze do wybranej faktury.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-114">Click to follow the selected invoice's link.</span></span>
-    * <span data-ttu-id="c2b3b-115">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="c2b3b-115">CIV-000148</span></span>  
-4. <span data-ttu-id="c2b3b-116">Kliknij, aby otworzyć łącze istniejące w polu Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-116">Click to follow the link in the Sales order field.</span></span>
-    * <span data-ttu-id="c2b3b-117">000148</span><span class="sxs-lookup"><span data-stu-id="c2b3b-117">000148</span></span>  
-5. <span data-ttu-id="c2b3b-118">W polu Wiersze lub nagłówek wybierz opcję Nagłówek.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-118">In the Lines or header field, select the option of Header.</span></span>
-    * <span data-ttu-id="c2b3b-119">Wybierz opcję Nagłówek, aby wskazać, że będzie to docelowe miejsce dodawania załączników.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-119">Select Header to indicate that this will be the target for adding attachments.</span></span>  
-6. <span data-ttu-id="c2b3b-120">Kliknij opcję Dołącz.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-120">Click Attach.</span></span>
-    * <span data-ttu-id="c2b3b-121">Dodaj kilka plików jako załączniki do tego zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-121">Add a few files as attachments for this sales order.</span></span> <span data-ttu-id="c2b3b-122">Użyj plików dokumentów o typach obsługiwanych w zarządzaniu dokumentami (z rozszerzeniem DOCX, DPF, XML, JPG itp.).</span><span class="sxs-lookup"><span data-stu-id="c2b3b-122">Use the files of the document types that are supported by the Document Management (with file extensions DOCX, DPF, XML, JPG, etc.).</span></span> <span data-ttu-id="c2b3b-123">Znajdź i zaznacz pliki, które mają zostać dołączone i być dalej przetwarzane z powiązaną fakturą w komunikacie elektronicznym raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-123">Browse and select files to be attached and further processed with the related invoice in the ER electronic message.</span></span>  
-7. <span data-ttu-id="c2b3b-124">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-124">Click New.</span></span>
-8. <span data-ttu-id="c2b3b-125">Kliknij opcję Plik.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-125">Click File.</span></span>
-9. <span data-ttu-id="c2b3b-126">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-126">Click New.</span></span>
-10. <span data-ttu-id="c2b3b-127">Kliknij opcję Plik.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-127">Click File.</span></span>
-11. <span data-ttu-id="c2b3b-128">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-128">Close the page.</span></span>
-12. <span data-ttu-id="c2b3b-129">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-129">Close the page.</span></span>
-13. <span data-ttu-id="c2b3b-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-130">Close the page.</span></span>
-14. <span data-ttu-id="c2b3b-131">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-131">Close the page.</span></span>
+## <a name="add-necessary-attachments-for-sales-order-of-a-single-invoice"></a><span data-ttu-id="1a841-109">Dodawanie niezbędnych załączników dla zamówienia sprzedaży z jedną fakturą</span><span class="sxs-lookup"><span data-stu-id="1a841-109">Add necessary attachments for sales order of a single invoice</span></span>
+1. <span data-ttu-id="1a841-110">Wybierz kolejno opcje Rozrachunki z odbiorcami > Faktury > Otwarte faktury odbiorcy.</span><span class="sxs-lookup"><span data-stu-id="1a841-110">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="1a841-111">Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy.</span><span class="sxs-lookup"><span data-stu-id="1a841-111">Use the Quick Filter to find records.</span></span> <span data-ttu-id="1a841-112">Na przykład wyfiltruj według pola Faktura z wartością „CIV-000148”.</span><span class="sxs-lookup"><span data-stu-id="1a841-112">For example, filter on the Invoice field with a value of 'CIV-000148'.</span></span>
+    * <span data-ttu-id="1a841-113">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="1a841-113">CIV-000148</span></span>  
+3. <span data-ttu-id="1a841-114">Kliknij, aby otworzyć łącze do wybranej faktury.</span><span class="sxs-lookup"><span data-stu-id="1a841-114">Click to follow the selected invoice's link.</span></span>
+    * <span data-ttu-id="1a841-115">CIV-000148</span><span class="sxs-lookup"><span data-stu-id="1a841-115">CIV-000148</span></span>  
+4. <span data-ttu-id="1a841-116">Kliknij, aby otworzyć łącze istniejące w polu Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="1a841-116">Click to follow the link in the Sales order field.</span></span>
+    * <span data-ttu-id="1a841-117">000148</span><span class="sxs-lookup"><span data-stu-id="1a841-117">000148</span></span>  
+5. <span data-ttu-id="1a841-118">W polu Wiersze lub nagłówek wybierz opcję Nagłówek.</span><span class="sxs-lookup"><span data-stu-id="1a841-118">In the Lines or header field, select the option of Header.</span></span>
+    * <span data-ttu-id="1a841-119">Wybierz opcję Nagłówek, aby wskazać, że będzie to docelowe miejsce dodawania załączników.</span><span class="sxs-lookup"><span data-stu-id="1a841-119">Select Header to indicate that this will be the target for adding attachments.</span></span>  
+6. <span data-ttu-id="1a841-120">Kliknij opcję Dołącz.</span><span class="sxs-lookup"><span data-stu-id="1a841-120">Click Attach.</span></span>
+    * <span data-ttu-id="1a841-121">Dodaj kilka plików jako załączniki do tego zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="1a841-121">Add a few files as attachments for this sales order.</span></span> <span data-ttu-id="1a841-122">Użyj plików dokumentów o typach obsługiwanych w zarządzaniu dokumentami (z rozszerzeniem DOCX, DPF, XML, JPG itp.).</span><span class="sxs-lookup"><span data-stu-id="1a841-122">Use the files of the document types that are supported by the Document Management (with file extensions DOCX, DPF, XML, JPG, etc.).</span></span> <span data-ttu-id="1a841-123">Znajdź i zaznacz pliki, które mają zostać dołączone i być dalej przetwarzane z powiązaną fakturą w komunikacie elektronicznym raportowania elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="1a841-123">Browse and select files to be attached and further processed with the related invoice in the ER electronic message.</span></span>  
+7. <span data-ttu-id="1a841-124">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="1a841-124">Click New.</span></span>
+8. <span data-ttu-id="1a841-125">Kliknij opcję Plik.</span><span class="sxs-lookup"><span data-stu-id="1a841-125">Click File.</span></span>
+9. <span data-ttu-id="1a841-126">Kliknij przycisk Nowy.</span><span class="sxs-lookup"><span data-stu-id="1a841-126">Click New.</span></span>
+10. <span data-ttu-id="1a841-127">Kliknij opcję Plik.</span><span class="sxs-lookup"><span data-stu-id="1a841-127">Click File.</span></span>
+11. <span data-ttu-id="1a841-128">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1a841-128">Close the page.</span></span>
+12. <span data-ttu-id="1a841-129">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1a841-129">Close the page.</span></span>
+13. <span data-ttu-id="1a841-130">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1a841-130">Close the page.</span></span>
+14. <span data-ttu-id="1a841-131">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="1a841-131">Close the page.</span></span>
 
-## <a name="run-the-designed-report-for-the-selected-invoice"></a><span data-ttu-id="c2b3b-132">Generowanie zaprojektowanego raportu dla wybranej faktury</span><span class="sxs-lookup"><span data-stu-id="c2b3b-132">Run the designed report for the selected invoice</span></span>
-1. <span data-ttu-id="c2b3b-133">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-133">Go to Organization administration > Electronic reporting > Configurations.</span></span>
-2. <span data-ttu-id="c2b3b-134">W drzewie rozwiń węzeł „Model faktur sprzedaży”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-134">In the tree, expand 'Customer invoice model'.</span></span>
-3. <span data-ttu-id="c2b3b-135">W drzewie rozwiń węzeł „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-135">In the tree, expand 'Customer invoice model\Customer invoice model (custom)'.</span></span>
-4. <span data-ttu-id="c2b3b-136">W drzewie zaznacz element „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)\Przykładowy komunikat faktury elektronicznej”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-136">In the tree, select 'Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message'.</span></span>
-5. <span data-ttu-id="c2b3b-137">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-137">Click Run.</span></span>
-6. <span data-ttu-id="c2b3b-138">Rozwiń sekcję Rekordy do uwzględnienia ().</span><span class="sxs-lookup"><span data-stu-id="c2b3b-138">Expand the Records to include () section.</span></span>
-7. <span data-ttu-id="c2b3b-139">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-139">Click Filter.</span></span>
-8. <span data-ttu-id="c2b3b-140">Zaznacz wiersz z arkuszem faktur dla odbiorcy i polem Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-140">Select the row of the Customer invoice journal and the Sales order field.</span></span>
-9. <span data-ttu-id="c2b3b-141">W polu Kryteria wpisz wartość „000148”.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-141">In the Criteria field, type '000148'.</span></span>
-    * <span data-ttu-id="c2b3b-142">W polu kryteriów „Zamówienie sprzedaży” wpisz numer zamówienia 000148.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-142">In the criteria "Sales order" field, type the order number 000148.</span></span>  
-10. <span data-ttu-id="c2b3b-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-143">Click OK.</span></span>
-11. <span data-ttu-id="c2b3b-144">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-144">Click OK.</span></span>
-    * <span data-ttu-id="c2b3b-145">Przejrzyj wygenerowane dane wyjściowe.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-145">Review the generated output.</span></span> <span data-ttu-id="c2b3b-146">Należy zauważyć, że dla każdego załącznika został utworzony jeden węzeł XML.</span><span class="sxs-lookup"><span data-stu-id="c2b3b-146">Note that for each attachment a single XML node has been created.</span></span> <span data-ttu-id="c2b3b-147">Treść załączników zostanie zapisana w danych wyjściowych XML w formacie tekstowym MIME (base64).</span><span class="sxs-lookup"><span data-stu-id="c2b3b-147">The attachment's content is populated to the XML output in MIME (base64) text format.</span></span>  
+## <a name="run-the-designed-report-for-the-selected-invoice"></a><span data-ttu-id="1a841-132">Generowanie zaprojektowanego raportu dla wybranej faktury</span><span class="sxs-lookup"><span data-stu-id="1a841-132">Run the designed report for the selected invoice</span></span>
+1. <span data-ttu-id="1a841-133">Wybierz kolejno opcje Administrowanie organizacją > Raportowanie elektroniczne > Konfiguracje.</span><span class="sxs-lookup"><span data-stu-id="1a841-133">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="1a841-134">W drzewie rozwiń węzeł „Model faktur sprzedaży”.</span><span class="sxs-lookup"><span data-stu-id="1a841-134">In the tree, expand 'Customer invoice model'.</span></span>
+3. <span data-ttu-id="1a841-135">W drzewie rozwiń węzeł „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)”.</span><span class="sxs-lookup"><span data-stu-id="1a841-135">In the tree, expand 'Customer invoice model\Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="1a841-136">W drzewie zaznacz element „Model faktur sprzedaży\Model faktur sprzedaży (niestandardowy)\Przykładowy komunikat faktury elektronicznej”.</span><span class="sxs-lookup"><span data-stu-id="1a841-136">In the tree, select 'Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message'.</span></span>
+5. <span data-ttu-id="1a841-137">Kliknij przycisk Uruchom.</span><span class="sxs-lookup"><span data-stu-id="1a841-137">Click Run.</span></span>
+6. <span data-ttu-id="1a841-138">Rozwiń sekcję Rekordy do uwzględnienia ().</span><span class="sxs-lookup"><span data-stu-id="1a841-138">Expand the Records to include () section.</span></span>
+7. <span data-ttu-id="1a841-139">Kliknij przycisk Filtr.</span><span class="sxs-lookup"><span data-stu-id="1a841-139">Click Filter.</span></span>
+8. <span data-ttu-id="1a841-140">Zaznacz wiersz z arkuszem faktur dla odbiorcy i polem Zamówienie sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="1a841-140">Select the row of the Customer invoice journal and the Sales order field.</span></span>
+9. <span data-ttu-id="1a841-141">W polu Kryteria wpisz wartość „000148”.</span><span class="sxs-lookup"><span data-stu-id="1a841-141">In the Criteria field, type '000148'.</span></span>
+    * <span data-ttu-id="1a841-142">W polu kryteriów „Zamówienie sprzedaży” wpisz numer zamówienia 000148.</span><span class="sxs-lookup"><span data-stu-id="1a841-142">In the criteria "Sales order" field, type the order number 000148.</span></span>  
+10. <span data-ttu-id="1a841-143">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1a841-143">Click OK.</span></span>
+11. <span data-ttu-id="1a841-144">Kliknij przycisk OK.</span><span class="sxs-lookup"><span data-stu-id="1a841-144">Click OK.</span></span>
+    * <span data-ttu-id="1a841-145">Przejrzyj wygenerowane dane wyjściowe.</span><span class="sxs-lookup"><span data-stu-id="1a841-145">Review the generated output.</span></span> <span data-ttu-id="1a841-146">Należy zauważyć, że dla każdego załącznika został utworzony jeden węzeł XML.</span><span class="sxs-lookup"><span data-stu-id="1a841-146">Note that for each attachment a single XML node has been created.</span></span> <span data-ttu-id="1a841-147">Treść załączników zostanie zapisana w danych wyjściowych XML w formacie tekstowym MIME (base64).</span><span class="sxs-lookup"><span data-stu-id="1a841-147">The attachment's content is populated to the XML output in MIME (base64) text format.</span></span>  
 
 
 

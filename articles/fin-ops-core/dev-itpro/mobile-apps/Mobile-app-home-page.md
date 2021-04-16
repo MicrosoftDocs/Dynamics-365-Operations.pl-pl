@@ -2,7 +2,6 @@
 title: Aplikacja mobilna — strona główna
 description: W tym temacie opisano aplikację mobilną Finance and Operations (Dynamics 365) i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
@@ -15,49 +14,49 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 925d1fff51317b592a7af61ebd797fa70ab5b6f4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cda743983f84edf0fa8c513013de812698cbb9ba
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567195"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748228"
 ---
-# <a name="mobile-app-home-page"></a><span data-ttu-id="c3a99-103">Aplikacja mobilna — strona główna</span><span class="sxs-lookup"><span data-stu-id="c3a99-103">Mobile app home page</span></span>
+# <a name="mobile-app-home-page"></a><span data-ttu-id="66899-103">Aplikacja mobilna — strona główna</span><span class="sxs-lookup"><span data-stu-id="66899-103">Mobile app home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c3a99-104">W tym temacie opisano aplikację mobilną **Finance and Operations (Dynamics 365)** i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.</span><span class="sxs-lookup"><span data-stu-id="c3a99-104">This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.</span></span>
+<span data-ttu-id="66899-104">W tym temacie opisano aplikację mobilną **Finance and Operations (Dynamics 365)** i zamieszczono łącza do zasobów, które mogą pomóc w jej zaimplementowaniu w organizacji.</span><span class="sxs-lookup"><span data-stu-id="66899-104">This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.</span></span>
 
-<a name="overview"></a><span data-ttu-id="c3a99-105">Przegląd</span><span class="sxs-lookup"><span data-stu-id="c3a99-105">Overview</span></span>
+<a name="overview"></a><span data-ttu-id="66899-105">Przegląd</span><span class="sxs-lookup"><span data-stu-id="66899-105">Overview</span></span>
 --------
 
-<span data-ttu-id="c3a99-106">Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-106">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="c3a99-107">Gdy administrator systemów informatycznych włączy komórkowe obszary robocze w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-107">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="c3a99-108">Aplikacja mobilna zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:</span><span class="sxs-lookup"><span data-stu-id="c3a99-108">The mobile app includes the following features that can help increase productivity:</span></span>
+<span data-ttu-id="66899-106">Aplikacja komórkowa umożliwia organizacji udostępnianie procesów biznesowych na urządzeniach przenośnych.</span><span class="sxs-lookup"><span data-stu-id="66899-106">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="66899-107">Gdy administrator systemów informatycznych włączy komórkowe obszary robocze w organizacji, użytkownicy mogą się logować do aplikacji i natychmiast zacząć wykonywać procesy biznesowe na swoich urządzeniach komórkowych.</span><span class="sxs-lookup"><span data-stu-id="66899-107">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="66899-108">Aplikacja mobilna zawiera następujące funkcje, które mogą pomóc zwiększyć wydajność pracy:</span><span class="sxs-lookup"><span data-stu-id="66899-108">The mobile app includes the following features that can help increase productivity:</span></span>
 
-- <span data-ttu-id="c3a99-109">Użytkownicy mogą przeglądać, edytować i przetwarzać dane biznesowe, nawet jeśli mają przerywaną łączność z siecią albo ich urządzenia przenośne są całkowicie w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="c3a99-109">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="c3a99-110">Gdy urządzenie ponownie nawiąże połączenie sieciowe, operacje na danych wykonane w trybie offline są synchronizowane automatycznie.</span><span class="sxs-lookup"><span data-stu-id="c3a99-110">When a device reestablishes a network connection, offline data operations are automatically synchronized.</span></span>
-- <span data-ttu-id="c3a99-111">Administratorzy IT i programiści mogą tworzyć i publikować mobilne obszary robocze spersonalizowane do organizacji.</span><span class="sxs-lookup"><span data-stu-id="c3a99-111">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="c3a99-112">Aplikacja wykorzystuje istniejące środowisko oprogramowania.</span><span class="sxs-lookup"><span data-stu-id="c3a99-112">The app uses your existing code assets.</span></span> <span data-ttu-id="c3a99-113">W związku z tym nie jest konieczne ponowne implementowanie procedur sprawdzania poprawności, logiki biznesowej ani konfiguracji zabezpieczeń.</span><span class="sxs-lookup"><span data-stu-id="c3a99-113">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
-- <span data-ttu-id="c3a99-114">Administratorzy IT i deweloperzy mogą łatwo projektować komórkowe obszary robocze za pomocą projektanta obszarów roboczych typu „wskaż i kliknij”, który jest zawarty w kliencie internetowym.</span><span class="sxs-lookup"><span data-stu-id="c3a99-114">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
-- <span data-ttu-id="c3a99-115">Administratorzy IT i deweloperzy mogą opcjonalnie optymalizować funkcje offline obszarów roboczych za pomocą struktury rozszerzania logiki biznesowej.</span><span class="sxs-lookup"><span data-stu-id="c3a99-115">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="c3a99-116">Ponieważ dane są cały czas przetwarzane, gdy urządzenie jest w trybie offline, scenariusz użytkowania mobilnego pozostaje bogaty funkcjonalnie i płynny, nawet jeśli urządzenia nie mają stałej łączności z siecią.</span><span class="sxs-lookup"><span data-stu-id="c3a99-116">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
+- <span data-ttu-id="66899-109">Użytkownicy mogą przeglądać, edytować i przetwarzać dane biznesowe, nawet jeśli mają przerywaną łączność z siecią albo ich urządzenia przenośne są całkowicie w trybie offline.</span><span class="sxs-lookup"><span data-stu-id="66899-109">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="66899-110">Gdy urządzenie ponownie nawiąże połączenie sieciowe, operacje na danych wykonane w trybie offline są synchronizowane automatycznie.</span><span class="sxs-lookup"><span data-stu-id="66899-110">When a device reestablishes a network connection, offline data operations are automatically synchronized.</span></span>
+- <span data-ttu-id="66899-111">Administratorzy IT i programiści mogą tworzyć i publikować mobilne obszary robocze spersonalizowane do organizacji.</span><span class="sxs-lookup"><span data-stu-id="66899-111">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="66899-112">Aplikacja wykorzystuje istniejące środowisko oprogramowania.</span><span class="sxs-lookup"><span data-stu-id="66899-112">The app uses your existing code assets.</span></span> <span data-ttu-id="66899-113">W związku z tym nie jest konieczne ponowne implementowanie procedur sprawdzania poprawności, logiki biznesowej ani konfiguracji zabezpieczeń.</span><span class="sxs-lookup"><span data-stu-id="66899-113">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
+- <span data-ttu-id="66899-114">Administratorzy IT i deweloperzy mogą łatwo projektować komórkowe obszary robocze za pomocą projektanta obszarów roboczych typu „wskaż i kliknij”, który jest zawarty w kliencie internetowym.</span><span class="sxs-lookup"><span data-stu-id="66899-114">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
+- <span data-ttu-id="66899-115">Administratorzy IT i deweloperzy mogą opcjonalnie optymalizować funkcje offline obszarów roboczych za pomocą struktury rozszerzania logiki biznesowej.</span><span class="sxs-lookup"><span data-stu-id="66899-115">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="66899-116">Ponieważ dane są cały czas przetwarzane, gdy urządzenie jest w trybie offline, scenariusz użytkowania mobilnego pozostaje bogaty funkcjonalnie i płynny, nawet jeśli urządzenia nie mają stałej łączności z siecią.</span><span class="sxs-lookup"><span data-stu-id="66899-116">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
 
-## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="c3a99-117">Elementy aplikacji mobilnej</span><span class="sxs-lookup"><span data-stu-id="c3a99-117">Elements of the mobile app</span></span>
-<span data-ttu-id="c3a99-118">Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje.</span><span class="sxs-lookup"><span data-stu-id="c3a99-118">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
+## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="66899-117">Elementy aplikacji mobilnej</span><span class="sxs-lookup"><span data-stu-id="66899-117">Elements of the mobile app</span></span>
+<span data-ttu-id="66899-118">Nawigacja w aplikacji mobilnej jest podzielona na cztery podstawowe koncepcje: pulpit nawigacyjny, obszary robocze, strony i akcje.</span><span class="sxs-lookup"><span data-stu-id="66899-118">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
 
-<span data-ttu-id="c3a99-119">[![Koncepcje nawigacyjne w aplikacji mobilnej](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="c3a99-119">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
+<span data-ttu-id="66899-119">[![Koncepcje nawigacyjne w aplikacji mobilnej](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="66899-119">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
 
-1. <span data-ttu-id="c3a99-120">Po uruchomieniu aplikacji przechodzisz do **pulpitu nawigacyjnego**.</span><span class="sxs-lookup"><span data-stu-id="c3a99-120">When you start the app, you go to the **dashboard**.</span></span>
-2. <span data-ttu-id="c3a99-121">Na pulpicie nawigacyjnym widać listę **obszarów roboczych**, które zostały opublikowane.</span><span class="sxs-lookup"><span data-stu-id="c3a99-121">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
-3. <span data-ttu-id="c3a99-122">W każdym obszarze roboczym widać listę **stron** dostępnych dla tego obszaru roboczego.</span><span class="sxs-lookup"><span data-stu-id="c3a99-122">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
-4. <span data-ttu-id="c3a99-123">Po przejściu do strony można wykonać kilka czynności.</span><span class="sxs-lookup"><span data-stu-id="c3a99-123">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="c3a99-124">Oto kilka przykładów:</span><span class="sxs-lookup"><span data-stu-id="c3a99-124">Here are some examples:</span></span>
+1. <span data-ttu-id="66899-120">Po uruchomieniu aplikacji przechodzisz do **pulpitu nawigacyjnego**.</span><span class="sxs-lookup"><span data-stu-id="66899-120">When you start the app, you go to the **dashboard**.</span></span>
+2. <span data-ttu-id="66899-121">Na pulpicie nawigacyjnym widać listę **obszarów roboczych**, które zostały opublikowane.</span><span class="sxs-lookup"><span data-stu-id="66899-121">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
+3. <span data-ttu-id="66899-122">W każdym obszarze roboczym widać listę **stron** dostępnych dla tego obszaru roboczego.</span><span class="sxs-lookup"><span data-stu-id="66899-122">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
+4. <span data-ttu-id="66899-123">Po przejściu do strony można wykonać kilka czynności.</span><span class="sxs-lookup"><span data-stu-id="66899-123">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="66899-124">Oto kilka przykładów:</span><span class="sxs-lookup"><span data-stu-id="66899-124">Here are some examples:</span></span>
 
-    - <span data-ttu-id="c3a99-125">Wyświetlanie szczegółowych danych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-125">View detailed data.</span></span>
-    - <span data-ttu-id="c3a99-126">Przechodzenie do innych stron zawierających pokrewne dane, takie jak szczegóły jednostek lub wiersze.</span><span class="sxs-lookup"><span data-stu-id="c3a99-126">Navigate to other pages for related data, such as entity details or lines.</span></span>
-    - <span data-ttu-id="c3a99-127">Wyświetlanie listy **akcji** dostępnych dla tej strony.</span><span class="sxs-lookup"><span data-stu-id="c3a99-127">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="c3a99-128">Akcje umożliwiają tworzenie nowych i edytowanie istniejących danych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-128">Actions let you create or edit existing data.</span></span>
+    - <span data-ttu-id="66899-125">Wyświetlanie szczegółowych danych.</span><span class="sxs-lookup"><span data-stu-id="66899-125">View detailed data.</span></span>
+    - <span data-ttu-id="66899-126">Przechodzenie do innych stron zawierających pokrewne dane, takie jak szczegóły jednostek lub wiersze.</span><span class="sxs-lookup"><span data-stu-id="66899-126">Navigate to other pages for related data, such as entity details or lines.</span></span>
+    - <span data-ttu-id="66899-127">Wyświetlanie listy **akcji** dostępnych dla tej strony.</span><span class="sxs-lookup"><span data-stu-id="66899-127">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="66899-128">Akcje umożliwiają tworzenie nowych i edytowanie istniejących danych.</span><span class="sxs-lookup"><span data-stu-id="66899-128">Actions let you create or edit existing data.</span></span>
 
-## <a name="implementation-process"></a><span data-ttu-id="c3a99-129">Projekt wdrażania</span><span class="sxs-lookup"><span data-stu-id="c3a99-129">Implementation process</span></span>
-<span data-ttu-id="c3a99-130">Na poniższej ilustracji przedstawiono proces wdrażania mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-130">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
+## <a name="implementation-process"></a><span data-ttu-id="66899-129">Projekt wdrażania</span><span class="sxs-lookup"><span data-stu-id="66899-129">Implementation process</span></span>
+<span data-ttu-id="66899-130">Na poniższej ilustracji przedstawiono proces wdrażania mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych.</span><span class="sxs-lookup"><span data-stu-id="66899-130">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
 
-<span data-ttu-id="c3a99-131">[![Proces implementacji aplikacji mobilnych](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span><span class="sxs-lookup"><span data-stu-id="c3a99-131">[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span></span>
+<span data-ttu-id="66899-131">[![Proces implementacji aplikacji mobilnych](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span><span class="sxs-lookup"><span data-stu-id="66899-131">[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span></span>
 
-<span data-ttu-id="c3a99-132">Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych.</span><span class="sxs-lookup"><span data-stu-id="c3a99-132">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="c3a99-133">Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="c3a99-133">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
+<span data-ttu-id="66899-132">Poniższa tabela zawiera łącza do zasobów, które mogą pomóc we wdrażaniu mobilnych obszarów roboczych dostarczanych przez Microsoft i niestandardowych mobilnych obszarów roboczych.</span><span class="sxs-lookup"><span data-stu-id="66899-132">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="66899-133">Numery w pierwszej kolumnie odpowiadają ponumerowanym krokom na poprzedniej ilustracji.</span><span class="sxs-lookup"><span data-stu-id="66899-133">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
 
 <table>
 <colgroup>
@@ -68,91 +67,91 @@ ms.locfileid: "5567195"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c3a99-134">Krok</span><span class="sxs-lookup"><span data-stu-id="c3a99-134">Step</span></span></th>
-<th><span data-ttu-id="c3a99-135">Rola</span><span class="sxs-lookup"><span data-stu-id="c3a99-135">Role</span></span></th>
-<th><span data-ttu-id="c3a99-136">Akcja</span><span class="sxs-lookup"><span data-stu-id="c3a99-136">Action</span></span></th>
-<th><span data-ttu-id="c3a99-137">Zasoby pomagające wykonać akcję</span><span class="sxs-lookup"><span data-stu-id="c3a99-137">Resources to help you complete the action</span></span></th>
+<th><span data-ttu-id="66899-134">Krok</span><span class="sxs-lookup"><span data-stu-id="66899-134">Step</span></span></th>
+<th><span data-ttu-id="66899-135">Rola</span><span class="sxs-lookup"><span data-stu-id="66899-135">Role</span></span></th>
+<th><span data-ttu-id="66899-136">Akcja</span><span class="sxs-lookup"><span data-stu-id="66899-136">Action</span></span></th>
+<th><span data-ttu-id="66899-137">Zasoby pomagające wykonać akcję</span><span class="sxs-lookup"><span data-stu-id="66899-137">Resources to help you complete the action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="c3a99-138">1</span><span class="sxs-lookup"><span data-stu-id="c3a99-138">1</span></span></td>
-<td><span data-ttu-id="c3a99-139">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="c3a99-139">System administrator</span></span></td>
-<td><span data-ttu-id="c3a99-140">Zaimplementuj aplikację Finance and Operations w organizacji.</span><span class="sxs-lookup"><span data-stu-id="c3a99-140">Implement the Finance and Operations app in your organization.</span></span></td>
-<td><ul><li><span data-ttu-id="c3a99-141">Jeśli w organizacji jeszcze nie wdrożono wersji oprogramowania Microsoft Dynamics 365, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>.</span><span class="sxs-lookup"><span data-stu-id="c3a99-141">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="c3a99-142">Aby wyświetlić listę komórkowych obszarów roboczych, których można używać, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</span><span class="sxs-lookup"><span data-stu-id="c3a99-142">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
+<td><span data-ttu-id="66899-138">1</span><span class="sxs-lookup"><span data-stu-id="66899-138">1</span></span></td>
+<td><span data-ttu-id="66899-139">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="66899-139">System administrator</span></span></td>
+<td><span data-ttu-id="66899-140">Zaimplementuj aplikację Finance and Operations w organizacji.</span><span class="sxs-lookup"><span data-stu-id="66899-140">Implement the Finance and Operations app in your organization.</span></span></td>
+<td><ul><li><span data-ttu-id="66899-141">Jeśli w organizacji jeszcze nie wdrożono wersji oprogramowania Microsoft Dynamics 365, zobacz <a href="../deployment/deploy-demo-environment.md">Wdrażanie środowiska demonstracyjnego</a>.</span><span class="sxs-lookup"><span data-stu-id="66899-141">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="66899-142">Aby wyświetlić listę komórkowych obszarów roboczych, których można używać, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</span><span class="sxs-lookup"><span data-stu-id="66899-142">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c3a99-143">2</span><span class="sxs-lookup"><span data-stu-id="c3a99-143">2</span></span></td>
-<td><span data-ttu-id="c3a99-144">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="c3a99-144">System administrator</span></span></td>
-<td><span data-ttu-id="c3a99-145"><strong>Jeśli używasz Microsoft Dynamics 365 for Operations w wersji 1611:</strong> Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c3a99-145"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="c3a99-146">Aby uzyskać więcej informacji, zobacz następujące tematy:</span><span class="sxs-lookup"><span data-stu-id="c3a99-146">See the following topics for more information:</span></span>
+<td><span data-ttu-id="66899-143">2</span><span class="sxs-lookup"><span data-stu-id="66899-143">2</span></span></td>
+<td><span data-ttu-id="66899-144">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="66899-144">System administrator</span></span></td>
+<td><span data-ttu-id="66899-145"><strong>Jeśli używasz Microsoft Dynamics 365 for Operations w wersji 1611:</strong> Pobranie i zainstalowanie aktualizacji KB, które włączą obsługę mobilnych obszarów roboczych dostarczanych przez Microsoft.</span><span class="sxs-lookup"><span data-stu-id="66899-145"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="66899-146">Aby uzyskać więcej informacji, zobacz następujące tematy:</span><span class="sxs-lookup"><span data-stu-id="66899-146">See the following topics for more information:</span></span>
 <ul>
 
-<li><span data-ttu-id="c3a99-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobilny obszar roboczy Kontrola kosztów</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="c3a99-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilny obszar roboczy Dostępne zapasy</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
-<li><span data-ttu-id="c3a99-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilny obszar roboczy Zamówienia sprzedaży</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="c3a99-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
-<li><span data-ttu-id="c3a99-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
-<li><span data-ttu-id="c3a99-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilny obszar roboczy Zarządzanie wydatkami</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
+<li><span data-ttu-id="66899-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobilny obszar roboczy Kontrola kosztów</a></span><span class="sxs-lookup"><span data-stu-id="66899-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="66899-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilny obszar roboczy Dostępne zapasy</a></span><span class="sxs-lookup"><span data-stu-id="66899-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
+<li><span data-ttu-id="66899-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobilny obszar roboczy Zamówienia sprzedaży</a></span><span class="sxs-lookup"><span data-stu-id="66899-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="66899-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych</a></span><span class="sxs-lookup"><span data-stu-id="66899-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
+<li><span data-ttu-id="66899-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilny obszar roboczy Wprowadzanie czasu projektu</a></span><span class="sxs-lookup"><span data-stu-id="66899-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
+<li><span data-ttu-id="66899-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilny obszar roboczy Zarządzanie wydatkami</a></span><span class="sxs-lookup"><span data-stu-id="66899-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
 
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c3a99-153">3</span><span class="sxs-lookup"><span data-stu-id="c3a99-153">3</span></span></td>
-<td><span data-ttu-id="c3a99-154">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="c3a99-154">System administrator</span></span></td>
-<td><span data-ttu-id="c3a99-155">Opublikowanie mobilnych obszarów roboczych dostarczonych przez Microsoft.</span><span class="sxs-lookup"><span data-stu-id="c3a99-155">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="c3a99-156"><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a>
-</span><span class="sxs-lookup"><span data-stu-id="c3a99-156"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+<td><span data-ttu-id="66899-153">3</span><span class="sxs-lookup"><span data-stu-id="66899-153">3</span></span></td>
+<td><span data-ttu-id="66899-154">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="66899-154">System administrator</span></span></td>
+<td><span data-ttu-id="66899-155">Opublikowanie mobilnych obszarów roboczych dostarczonych przez Microsoft.</span><span class="sxs-lookup"><span data-stu-id="66899-155">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="66899-156"><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a>
+</span><span class="sxs-lookup"><span data-stu-id="66899-156"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
 </span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c3a99-157">4</span><span class="sxs-lookup"><span data-stu-id="c3a99-157">4</span></span></td>
-<td><span data-ttu-id="c3a99-158">Programista lub niezależny dostawca oprogramowania (ISV)</span><span class="sxs-lookup"><span data-stu-id="c3a99-158">Developer or independent software vendor (ISV)</span></span></td>
-<td><span data-ttu-id="c3a99-159">Utworzenie niestandardowych mobilnych obszarów roboczych za pomocą platformy komórkowej.</span><span class="sxs-lookup"><span data-stu-id="c3a99-159">Use the mobile platform to create custom mobile workspaces.</span></span></td>
-<td><span data-ttu-id="c3a99-160"><a href="platform/mobile-platform-home-page.md">Platforma mobilna</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-160"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
+<td><span data-ttu-id="66899-157">4</span><span class="sxs-lookup"><span data-stu-id="66899-157">4</span></span></td>
+<td><span data-ttu-id="66899-158">Programista lub niezależny dostawca oprogramowania (ISV)</span><span class="sxs-lookup"><span data-stu-id="66899-158">Developer or independent software vendor (ISV)</span></span></td>
+<td><span data-ttu-id="66899-159">Utworzenie niestandardowych mobilnych obszarów roboczych za pomocą platformy komórkowej.</span><span class="sxs-lookup"><span data-stu-id="66899-159">Use the mobile platform to create custom mobile workspaces.</span></span></td>
+<td><span data-ttu-id="66899-160"><a href="platform/mobile-platform-home-page.md">Platforma mobilna</a></span><span class="sxs-lookup"><span data-stu-id="66899-160"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c3a99-161">5</span><span class="sxs-lookup"><span data-stu-id="c3a99-161">5</span></span></td>
-<td><span data-ttu-id="c3a99-162">Niezależny dostawca oprogramowania</span><span class="sxs-lookup"><span data-stu-id="c3a99-162">ISV</span></span></td>
-<td><span data-ttu-id="c3a99-163">Utworzenie wdrażalnego pakietu zawierającego niestandardowe mobilne obszary robocze i przekazanie pakietu do usługi Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="c3a99-163">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
-<td><span data-ttu-id="c3a99-164"><a href="../deployment/create-apply-deployable-package.md">Tworzenie wdrażalnego pakietu</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-164"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
+<td><span data-ttu-id="66899-161">5</span><span class="sxs-lookup"><span data-stu-id="66899-161">5</span></span></td>
+<td><span data-ttu-id="66899-162">Niezależny dostawca oprogramowania</span><span class="sxs-lookup"><span data-stu-id="66899-162">ISV</span></span></td>
+<td><span data-ttu-id="66899-163">Utworzenie wdrażalnego pakietu zawierającego niestandardowe mobilne obszary robocze i przekazanie pakietu do usługi Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="66899-163">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
+<td><span data-ttu-id="66899-164"><a href="../deployment/create-apply-deployable-package.md">Tworzenie wdrażalnego pakietu</a></span><span class="sxs-lookup"><span data-stu-id="66899-164"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c3a99-165">6</span><span class="sxs-lookup"><span data-stu-id="c3a99-165">6</span></span></td>
-<td><span data-ttu-id="c3a99-166">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="c3a99-166">System administrator</span></span></td>
-<td><span data-ttu-id="c3a99-167">Zastosowanie wdrażalnego pakietu zawierającego niestandardowe obszary robocze dostarczonego przez niezależnego dostawcę oprogramowania (ISV).</span><span class="sxs-lookup"><span data-stu-id="c3a99-167">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
-<td><span data-ttu-id="c3a99-168"><a href="../deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-168"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
+<td><span data-ttu-id="66899-165">6</span><span class="sxs-lookup"><span data-stu-id="66899-165">6</span></span></td>
+<td><span data-ttu-id="66899-166">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="66899-166">System administrator</span></span></td>
+<td><span data-ttu-id="66899-167">Zastosowanie wdrażalnego pakietu zawierającego niestandardowe obszary robocze dostarczonego przez niezależnego dostawcę oprogramowania (ISV).</span><span class="sxs-lookup"><span data-stu-id="66899-167">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
+<td><span data-ttu-id="66899-168"><a href="../deployment/apply-deployable-package-system.md">Stosowanie wdrażalnego pakietu</a></span><span class="sxs-lookup"><span data-stu-id="66899-168"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c3a99-169">7</span><span class="sxs-lookup"><span data-stu-id="c3a99-169">7</span></span></td>
-<td><span data-ttu-id="c3a99-170">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="c3a99-170">System administrator</span></span></td>
-<td><span data-ttu-id="c3a99-171">Opublikowanie niestandardowych mobilnych obszarów roboczych dostarczonych przez niezależnego dostawcę oprogramowania.</span><span class="sxs-lookup"><span data-stu-id="c3a99-171">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
-<td><span data-ttu-id="c3a99-172"><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-172"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
+<td><span data-ttu-id="66899-169">7</span><span class="sxs-lookup"><span data-stu-id="66899-169">7</span></span></td>
+<td><span data-ttu-id="66899-170">Administrator systemu</span><span class="sxs-lookup"><span data-stu-id="66899-170">System administrator</span></span></td>
+<td><span data-ttu-id="66899-171">Opublikowanie niestandardowych mobilnych obszarów roboczych dostarczonych przez niezależnego dostawcę oprogramowania.</span><span class="sxs-lookup"><span data-stu-id="66899-171">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
+<td><span data-ttu-id="66899-172"><a href="publish-mobile-workspace.md">Publikowanie mobilnego obszaru roboczego</a></span><span class="sxs-lookup"><span data-stu-id="66899-172"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="c3a99-173">8</span><span class="sxs-lookup"><span data-stu-id="c3a99-173">8</span></span></td>
-<td><span data-ttu-id="c3a99-174">Użytkownik</span><span class="sxs-lookup"><span data-stu-id="c3a99-174">User</span></span></td>
-<td><span data-ttu-id="c3a99-175">Pobieranie i instalowanie aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="c3a99-175">Download and install the mobile app.</span></span></td>
-<td><span data-ttu-id="c3a99-176">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations aplikacja dla systemu Android</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-176">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a></span></span><BR/><span data-ttu-id="c3a99-177">
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations aplikacja dla systemu iOS</a></span><span class="sxs-lookup"><span data-stu-id="c3a99-177">
+<td><span data-ttu-id="66899-173">8</span><span class="sxs-lookup"><span data-stu-id="66899-173">8</span></span></td>
+<td><span data-ttu-id="66899-174">Użytkownik</span><span class="sxs-lookup"><span data-stu-id="66899-174">User</span></span></td>
+<td><span data-ttu-id="66899-175">Pobieranie i instalowanie aplikacji mobilnej.</span><span class="sxs-lookup"><span data-stu-id="66899-175">Download and install the mobile app.</span></span></td>
+<td><span data-ttu-id="66899-176">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations aplikacja dla systemu Android</a></span><span class="sxs-lookup"><span data-stu-id="66899-176">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a></span></span><BR/><span data-ttu-id="66899-177">
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations aplikacja dla systemu iOS</a></span><span class="sxs-lookup"><span data-stu-id="66899-177">
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations app for iOS</a></span></span><BR/>
-<span data-ttu-id="c3a99-178">(system Windows Phone nie jest obsługiwany)</span><span class="sxs-lookup"><span data-stu-id="c3a99-178">(Windows Phone unsupported)</span></span>
+<span data-ttu-id="66899-178">(system Windows Phone nie jest obsługiwany)</span><span class="sxs-lookup"><span data-stu-id="66899-178">(Windows Phone unsupported)</span></span>
 </td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="c3a99-179">9</span><span class="sxs-lookup"><span data-stu-id="c3a99-179">9</span></span></td>
-<td><span data-ttu-id="c3a99-180">Użytkownik</span><span class="sxs-lookup"><span data-stu-id="c3a99-180">User</span></span></td>
-<td><span data-ttu-id="c3a99-181">Zalogowanie się do aplikacji mobilnej i jej używanie.</span><span class="sxs-lookup"><span data-stu-id="c3a99-181">Sign in, and use the mobile app.</span></span> <span data-ttu-id="c3a99-182">Aplikacja zawiera mobilne obszary robocze, które zostały opublikowane przez administratora systemu.</span><span class="sxs-lookup"><span data-stu-id="c3a99-182">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
-<td><span data-ttu-id="c3a99-183">Aby wyświetlić listę komórkowych obszarów roboczych dostarczonych przez Microsoft, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</span><span class="sxs-lookup"><span data-stu-id="c3a99-183">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
+<td><span data-ttu-id="66899-179">9</span><span class="sxs-lookup"><span data-stu-id="66899-179">9</span></span></td>
+<td><span data-ttu-id="66899-180">Użytkownik</span><span class="sxs-lookup"><span data-stu-id="66899-180">User</span></span></td>
+<td><span data-ttu-id="66899-181">Zalogowanie się do aplikacji mobilnej i jej używanie.</span><span class="sxs-lookup"><span data-stu-id="66899-181">Sign in, and use the mobile app.</span></span> <span data-ttu-id="66899-182">Aplikacja zawiera mobilne obszary robocze, które zostały opublikowane przez administratora systemu.</span><span class="sxs-lookup"><span data-stu-id="66899-182">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
+<td><span data-ttu-id="66899-183">Aby wyświetlić listę komórkowych obszarów roboczych dostarczonych przez Microsoft, zobacz <a href="mobile-workspaces-released.md">Ostatnio wydane mobilne obszary robocze</a>.</span><span class="sxs-lookup"><span data-stu-id="66899-183">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="troubleshooting"></a><span data-ttu-id="c3a99-184">Rozwiązywanie problemów</span><span class="sxs-lookup"><span data-stu-id="c3a99-184">Troubleshooting</span></span>
-[<span data-ttu-id="c3a99-185">Zasoby platformy mobilnej</span><span class="sxs-lookup"><span data-stu-id="c3a99-185">Mobile platform resources</span></span>](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+## <a name="troubleshooting"></a><span data-ttu-id="66899-184">Rozwiązywanie problemów</span><span class="sxs-lookup"><span data-stu-id="66899-184">Troubleshooting</span></span>
+[<span data-ttu-id="66899-185">Zasoby platformy mobilnej</span><span class="sxs-lookup"><span data-stu-id="66899-185">Mobile platform resources</span></span>](platform/mobile-platform-home-page.md#troubleshooting-the-app)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

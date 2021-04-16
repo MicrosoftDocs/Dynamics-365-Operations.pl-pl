@@ -2,7 +2,6 @@
 title: Funkcja LISTJOIN ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji LISTJOIN w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
@@ -16,72 +15,72 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6713823d8d089a677c39bc2a8b5cfe1d1b23b459
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: efee93df7d1cf40d016b36042bb5e7f33c47ae44
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563785"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5743806"
 ---
-# <a name="listjoin-er-function"></a><span data-ttu-id="034e4-103">Funkcja LISTJOIN ER</span><span class="sxs-lookup"><span data-stu-id="034e4-103">LISTJOIN ER function</span></span>
+# <a name="listjoin-er-function"></a><span data-ttu-id="f0131-103">Funkcja LISTJOIN ER</span><span class="sxs-lookup"><span data-stu-id="f0131-103">LISTJOIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="034e4-104">Funkcja `LISTJOIN` zwraca wartość typu *Lista rekordów*, która reprezentuje nową połączoną listę rekordów utworzoną na podstawie określonych argumentów.</span><span class="sxs-lookup"><span data-stu-id="034e4-104">The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.</span></span>
+<span data-ttu-id="f0131-104">Funkcja `LISTJOIN` zwraca wartość typu *Lista rekordów*, która reprezentuje nową połączoną listę rekordów utworzoną na podstawie określonych argumentów.</span><span class="sxs-lookup"><span data-stu-id="f0131-104">The `LISTJOIN` function returns a *Record list* value that represents a new joined list of records that is created from the specified arguments.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="034e4-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="034e4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f0131-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="f0131-105">Syntax</span></span>
 
 ```vb
 LIST (list 1 [, list 2, …, list N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="034e4-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="034e4-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="f0131-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="f0131-106">Arguments</span></span>
 
-<span data-ttu-id="034e4-107">`list 1`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="034e4-107">`list 1`: *Record list*</span></span>
+<span data-ttu-id="f0131-107">`list 1`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="f0131-107">`list 1`: *Record list*</span></span>
 
-<span data-ttu-id="034e4-108">Odwołanie do źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="034e4-108">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="034e4-109">Ten argument jest obowiązkowy.</span><span class="sxs-lookup"><span data-stu-id="034e4-109">This argument is mandatory.</span></span>
+<span data-ttu-id="f0131-108">Odwołanie do źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="f0131-108">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="f0131-109">Ten argument jest obowiązkowy.</span><span class="sxs-lookup"><span data-stu-id="f0131-109">This argument is mandatory.</span></span>
 
-<span data-ttu-id="034e4-110">`list N`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="034e4-110">`list N`: *Record list*</span></span>
+<span data-ttu-id="f0131-110">`list N`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="f0131-110">`list N`: *Record list*</span></span>
 
-<span data-ttu-id="034e4-111">Odwołanie do źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="034e4-111">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="034e4-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="034e4-112">These additional arguments are optional.</span></span>
+<span data-ttu-id="f0131-111">Odwołanie do źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="f0131-111">A reference to a data source of the *Record list* data type.</span></span> <span data-ttu-id="f0131-112">Te dodatkowe argumenty są opcjonalne.</span><span class="sxs-lookup"><span data-stu-id="f0131-112">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="034e4-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="034e4-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f0131-113">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="f0131-113">Return values</span></span>
 
-<span data-ttu-id="034e4-114">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="034e4-114">*Record list*</span></span>
+<span data-ttu-id="f0131-114">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="f0131-114">*Record list*</span></span>
 
-<span data-ttu-id="034e4-115">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="034e4-115">The resulting list of records.</span></span>
+<span data-ttu-id="f0131-115">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="f0131-115">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="034e4-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="034e4-116">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="f0131-116">Uwagi dotyczące użytkowania</span><span class="sxs-lookup"><span data-stu-id="f0131-116">Usage notes</span></span>
 
-<span data-ttu-id="034e4-117">Tworzona struktura listy zawiera tylko pola, które są prezentowane w strukturze każdej listy rekordów, wymienionej w argumentach.</span><span class="sxs-lookup"><span data-stu-id="034e4-117">The structure of the list that is created contains only the fields that are present in the structure of every record list that is referenced in the arguments.</span></span>
+<span data-ttu-id="f0131-117">Tworzona struktura listy zawiera tylko pola, które są prezentowane w strukturze każdej listy rekordów, wymienionej w argumentach.</span><span class="sxs-lookup"><span data-stu-id="f0131-117">The structure of the list that is created contains only the fields that are present in the structure of every record list that is referenced in the arguments.</span></span>
 
-## <a name="example"></a><span data-ttu-id="034e4-118">Przykład</span><span class="sxs-lookup"><span data-stu-id="034e4-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f0131-118">Przykład</span><span class="sxs-lookup"><span data-stu-id="f0131-118">Example</span></span>
 
-<span data-ttu-id="034e4-119">Wprowadź źródło danych **Rekord 1** typu `Container`.</span><span class="sxs-lookup"><span data-stu-id="034e4-119">You enter data source **Record 1** of the `Container` type.</span></span> <span data-ttu-id="034e4-120">To źródło danych zawiera następujące pola zagnieżdżone typu `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="034e4-120">This data source contains the following nested fields of the `Calculated field` type:</span></span>
+<span data-ttu-id="f0131-119">Wprowadź źródło danych **Rekord 1** typu `Container`.</span><span class="sxs-lookup"><span data-stu-id="f0131-119">You enter data source **Record 1** of the `Container` type.</span></span> <span data-ttu-id="f0131-120">To źródło danych zawiera następujące pola zagnieżdżone typu `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="f0131-120">This data source contains the following nested fields of the `Calculated field` type:</span></span>
 
-- <span data-ttu-id="034e4-121">**Kod**: to pole zawiera wyrażenie, które zwraca wartość typu `String`.</span><span class="sxs-lookup"><span data-stu-id="034e4-121">**Code**: This field contains an expression that returns a value of the `String` type.</span></span>
-- <span data-ttu-id="034e4-122">**Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.</span><span class="sxs-lookup"><span data-stu-id="034e4-122">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
+- <span data-ttu-id="f0131-121">**Kod**: to pole zawiera wyrażenie, które zwraca wartość typu `String`.</span><span class="sxs-lookup"><span data-stu-id="f0131-121">**Code**: This field contains an expression that returns a value of the `String` type.</span></span>
+- <span data-ttu-id="f0131-122">**Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.</span><span class="sxs-lookup"><span data-stu-id="f0131-122">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
 
-<span data-ttu-id="034e4-123">Wprowadź następnie źródło danych **Rekord 2** typu `Container`.</span><span class="sxs-lookup"><span data-stu-id="034e4-123">You then enter data source **Record 2** of the `Container` type.</span></span> <span data-ttu-id="034e4-124">To źródło danych zawiera następujące pola zagnieżdżone typu `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="034e4-124">This data source contains the following nested fields of the `Calculated field` type:</span></span>
+<span data-ttu-id="f0131-123">Wprowadź następnie źródło danych **Rekord 2** typu `Container`.</span><span class="sxs-lookup"><span data-stu-id="f0131-123">You then enter data source **Record 2** of the `Container` type.</span></span> <span data-ttu-id="f0131-124">To źródło danych zawiera następujące pola zagnieżdżone typu `Calculated field`:</span><span class="sxs-lookup"><span data-stu-id="f0131-124">This data source contains the following nested fields of the `Calculated field` type:</span></span>
 
-- <span data-ttu-id="034e4-125">**Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.</span><span class="sxs-lookup"><span data-stu-id="034e4-125">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
-- <span data-ttu-id="034e4-126">**IsValid**: to pole zawiera wyrażenie, które zwraca wartość typu `Boolean`.</span><span class="sxs-lookup"><span data-stu-id="034e4-126">**IsValid**: This field contains an expression that returns a value of the `Boolean` type.</span></span>
+- <span data-ttu-id="f0131-125">**Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.</span><span class="sxs-lookup"><span data-stu-id="f0131-125">**Amount**: This field contains an expression that returns a value of the `Real` type.</span></span>
+- <span data-ttu-id="f0131-126">**IsValid**: to pole zawiera wyrażenie, które zwraca wartość typu `Boolean`.</span><span class="sxs-lookup"><span data-stu-id="f0131-126">**IsValid**: This field contains an expression that returns a value of the `Boolean` type.</span></span>
 
 ![Strona projektanta mapowania modelu ER](./media/er-functions-list-listjoin-image1.gif)
 
-<span data-ttu-id="034e4-128">W takim przypadku wyrażenie `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` zwraca nową listę zawierającą dwa rekordy.</span><span class="sxs-lookup"><span data-stu-id="034e4-128">In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records.</span></span>
+<span data-ttu-id="f0131-128">W takim przypadku wyrażenie `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` zwraca nową listę zawierającą dwa rekordy.</span><span class="sxs-lookup"><span data-stu-id="f0131-128">In this case, the expression `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` returns a new list that contains two records.</span></span>
 
 ![Strona projektanta mapowania modelu ER z dwoma rekordami](./media/er-functions-list-listjoin-image2.gif)
 
-<span data-ttu-id="034e4-130">Struktura tej listy składa się z pojedynczego pola **Ilość** typu `Real`, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.</span><span class="sxs-lookup"><span data-stu-id="034e4-130">The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.</span></span>
+<span data-ttu-id="f0131-130">Struktura tej listy składa się z pojedynczego pola **Ilość** typu `Real`, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.</span><span class="sxs-lookup"><span data-stu-id="f0131-130">The structure of this list consists of a single **Amount** field of the `Real` type, because this field is the only field that is presented in every argument of the called function.</span></span>
 
 ![Strona projektanta mapowania modelu ER — pole ilości/liczby](./media/er-functions-list-listjoin-image3.gif)
 
-## <a name="additional-resources"></a><span data-ttu-id="034e4-132">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="034e4-132">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="f0131-132">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="f0131-132">Additional resources</span></span>
 
-[<span data-ttu-id="034e4-133">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="034e4-133">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="f0131-133">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="f0131-133">List functions</span></span>](er-functions-category-list.md)
 
-[<span data-ttu-id="034e4-134">Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych</span><span class="sxs-lookup"><span data-stu-id="034e4-134">Debug data sources of an executed ER format to analyze data flow and transformation</span></span>](er-debug-data-sources.md)
+[<span data-ttu-id="f0131-134">Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych</span><span class="sxs-lookup"><span data-stu-id="f0131-134">Debug data sources of an executed ER format to analyze data flow and transformation</span></span>](er-debug-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
