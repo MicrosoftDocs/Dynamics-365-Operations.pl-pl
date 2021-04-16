@@ -2,11 +2,9 @@
 title: Obsługa informacji dotyczących urazów i chorób pracowników
 description: Zaleca się najpierw wykonać przewodnik po zadaniach „Ustawienia urazów i chorób”, ponieważ część informacji konfiguracyjnych z niego jest używanych w tym miejscu.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a2f53acaa65589c30546e31739abc38941eb795
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 0ec14287f5dd4d45cf26deaf5acc4f4d5e91ba04
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465445"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791348"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Obsługa informacji dotyczących urazów i chorób pracowników
 

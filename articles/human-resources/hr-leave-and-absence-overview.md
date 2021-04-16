@@ -2,11 +2,9 @@
 title: Omówienie urlopów i nieobecności
 description: Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów. Umożliwia także przepływy pracy służące do zarządzania żądaniami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom zgłoszenie prośby o urlop lub nieobecność w pracy.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 827d0325fc9a97cf2b143e1c2705232dfd8a7ab2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463437"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794668"
 ---
 # <a name="leave-and-absence-overview"></a>Omówienie urlopów i nieobecności
 

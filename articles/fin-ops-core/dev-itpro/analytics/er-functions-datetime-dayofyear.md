@@ -2,7 +2,6 @@
 title: DAYOFYEAR, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji DAYOFYEAR w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba63c96355a6a7a1eccaddf39e47a3edb2d1e651
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 569e988db91ff992fb7db6e7fd6e8c6aa6a1a3e8
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563541"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5746922"
 ---
 # <a name="dayofyear-er-function"></a>DAYOFYEAR, funkcja ER
 

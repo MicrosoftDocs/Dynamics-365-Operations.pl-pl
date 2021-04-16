@@ -2,7 +2,6 @@
 title: Lista funkcji modułu ER w kategorii funkcji tekstowych
 description: Ten temat zawiera ogólne informacje o funkcjach tekstowych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eac084cf47b69d21f435dc6fe386693717af7cc
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a780424cf195a3ec15e6fcfc7cb30d74d5072df5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561573"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754405"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista funkcji modułu ER w kategorii funkcji tekstowych
 

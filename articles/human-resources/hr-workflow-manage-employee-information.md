@@ -2,11 +2,9 @@
 title: Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
 description: W tym artykule wyjaśniono, jak za pomocą funkcji przepływów pracy dostępnych w module Zasoby ludzkie zarządzać informacjami o pracownikach. Można na przykład skojarzyć przepływ pracy ze stanowiskiem oraz skonfigurować przepływ pracy zatwierdzania, który jest uruchamiany, gdy pracownicy zmodyfikuje swój rekord.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923ec7d3940124da4ada50d23f88e3ab3646a5a0
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: b76adc228a949d334213eda605972f062aa0e46b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463509"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791276"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Używanie przepływów pracy do zarządzania informacjami pracowników etatowych
 

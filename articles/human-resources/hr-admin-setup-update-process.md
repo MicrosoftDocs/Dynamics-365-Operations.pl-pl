@@ -2,11 +2,9 @@
 title: Aktualizowanie procesu
 description: Microsoft Dynamics 365 Human Resources to rozwiązanie typu oprogramowanie jako usługa (SaaS), które zapewnia ciągłe aktualizacje dla zmian w aplikacji i platformie.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466839"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791540"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
@@ -58,14 +56,14 @@ W razie potrzeby dla modułu Human Resources są również dostarczane następuj
 
 Wersje są przeglądane, testowane i weryfikowane w środowisku wewnętrznym. Zaakceptowane kompilacje są wdrażane w środowisku produkcyjnym.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Częstotliwośc wydawania wyjątków w wersji 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Częstotliwośc wydawania wyjątków w wersji 2021
 
-Aby uwzględnić dni wolne, harmonogram wydawanych aktualizacji dla listopada i grudnia 2020 roku jest następujący:
+Aby uwzględnić dni wolne, harmonogram wydawanych aktualizacji dla listopada i grudnia 2021 roku jest następujący:
 
-- Wersja listopadowa: 2 listopada – 13 listopada
-- Wersja grudniowa: 30 listopada – 11 grudnia
+- Wersja listopadowa: 1 listopada – 14 listopada
+- Wersja grudniowa: 29 listopada – 12 grudnia
  
-Dwutygodniowe odstępy pomiędzy wersjami zaczną zwnou obowiązywać od 11 stycznia 2021 roku.
+Dwutygodniowe odstępy pomiędzy wersjami zaczną zwnou obowiązywać od 10 stycznia 2022 roku.
 
 ## <a name="communications"></a>Komunikacja
 

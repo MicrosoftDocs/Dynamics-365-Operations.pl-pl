@@ -2,11 +2,9 @@
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 72fa3309b77717d0291b8b6828ed5bc4c65e95ab
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571735"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790579"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 

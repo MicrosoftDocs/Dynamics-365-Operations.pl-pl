@@ -2,11 +2,9 @@
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)
 description: W tym artykule opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 25 lutego 2020 roku.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5048c94543d0ee35bbc0f210a86a5d58ae901510
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: dc79c464f74961fd431f1d42583e4dcd67c30fb9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463773"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790411"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-25-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (25 lutego 2020 r.)
 

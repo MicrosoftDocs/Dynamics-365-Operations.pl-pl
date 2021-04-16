@@ -2,7 +2,6 @@
 title: Tworzenie pól niestandardowych i praca z nimi
 description: W tym temacie opisano, jak tworzyć niestandardowe pola za pomocą interfejsu użytkownika w celu dostosowania aplikacji do unikatowych potrzeb firmy.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9c97393419278e49b112f98ba6dcc4bec9565cb7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a07c1a81f0436664acdfd23975a99c6670c6fb1c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566277"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754759"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Tworzenie pól niestandardowych i praca z nimi
 

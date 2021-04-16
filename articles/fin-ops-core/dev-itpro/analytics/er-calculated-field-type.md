@@ -2,7 +2,6 @@
 title: Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 description: Ten temat zawiera informacje dotyczące używania typu pola obliczeniowego dla źródeł danych ER.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569208"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749496"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Obsługuj sparametryzowane wywołania źródeł danych ER typu pola obliczeniowego
 

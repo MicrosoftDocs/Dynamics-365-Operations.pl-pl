@@ -2,7 +2,6 @@
 title: Strona WebSearchAX została wycofana
 description: Musieliśmy zamknąć stronę WebSearchAX. Zalecamy, aby zamiast niej używać do przeszukiwania witryny ulubionej wyszukiwarki.
 author: margoc
-manager: AnnBe
 ms.date: 10/12/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 8fe20a8f43f15b668f12c5010abf89fc07ecb579
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 12f74ab741481f078607d1755b40d60b3a551dda
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566181"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754663"
 ---
 # <a name="websearchax-page-has-been-retired"></a>Strona WebSearchAX została wycofana
 
