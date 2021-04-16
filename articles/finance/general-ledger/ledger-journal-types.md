@@ -2,11 +2,9 @@
 title: Typy arkuszy księgi
 description: W tym temacie opisano typy arkuszy, które można skonfigurować dla arkuszy finansowych.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 135611ddf7e54a28a43f5f0795c993581d377550
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 34390014e0094518df45b1cc38e40ca4aa82de54
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248982"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823699"
 ---
 # <a name="ledger-journal-types"></a>Typy arkuszy księgi
 

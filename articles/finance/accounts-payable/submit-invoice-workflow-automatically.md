@@ -2,11 +2,9 @@
 title: Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 description: W tym temacie objaśniono proces przesyłania faktur od dostawców do systemu przepływu pracy i automatycznego dopasowywania zaksięgowanych wierszy dokumentu przyjęcia produktów do faktur od dostawcy.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84699746349024854a4eeb9cee62960ec38bc338
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231549"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827825"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Przesyłanie faktur do systemu przepływu pracy i dopasowywanie wierszy dokumentu przyjęcia produktów
 
@@ -41,7 +39,9 @@ Wartość **Przesłane przez** w przepływie pracy to identyfikator użytkownika
 
 System może automatycznie dopasowywać zaksięgowane dokumenty przyjęcia produktów do wierszy faktury jako część bezobsługowego procesu fakturowania rozrachunków z odbiorcami. Dla tego zadania muszą być zdefiniowane trzyelementowe zasady uzgadniania. Ta funkcja jest dostępna, jeśli została włączona funkcja **Automatyzacja faktur od dostawcy** na stronie **Zarządzanie funkcjami**.
 
-Proces będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. W ramach tego procesu można określić maksymalną liczbę prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Proces będzie uruchamiany w tle, co godzinę lub codziennie. Proces automatycznego dopasowywania można uruchomić jako część procesu przesyłania faktur do systemu przepływu pracy. Alternatywnie można uruchomić go jako proces autonomiczny. Ustawienia dopasowywania przyjęć produktów do wierszy faktur można skonfigurować na karcie **Automatyzacja faktur od dostawcy** strony **Parametry rozrachunków z dostawcami** (**Rozrachunki z dostawcami \> Konfiguracja \> Parametry rozrachunków z dostawcami**).
+Proces dopasowania będzie działał, dopóki dopasowana ilość z dokumentu przyjęcia produktów nie będzie równa ilości fakturowanej. Jeśli jednak istnieje wiele dokumentów przyjęcia produktów dla jednego wiersza faktury, musisz kilka razy uruchomić ten proces, aby uzyskać pełne dopasowanie ilości. Można określić maksymalną liczbę prób dopasowania przez systemu przyjęcia produktów do wiersza faktury przed poinformowaniem o niepowodzeniu procesu. Proces będzie uruchamiany w tle, co godzinę lub codziennie. 
+
+Proces automatycznego dopasowywania można uruchomić jako część procesu przesyłania faktur do systemu przepływu pracy. Alternatywnie można uruchomić go jako proces autonomiczny. Ustawienia dopasowywania przyjęć produktów do wierszy faktur można skonfigurować na karcie **Automatyzacja faktur od dostawcy** strony **Parametry rozrachunków z dostawcami** (**Rozrachunki z dostawcami \> Konfiguracja \> Parametry rozrachunków z dostawcami**).
 
 Wiersze faktury, które mają trzyelementowe zasady uzgadniania, gdzie dopasowana ilość przyjęcia jest mniejsza niż ilość fakturowana, zostaną uwzględnione w procesie automatycznego uzgadniania z produktami do przyjęcia.
 

@@ -2,11 +2,9 @@
 title: Chronologicznie numerowanie dokumentów i załączników
 description: W tym temacie wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
 author: ikond
-manager: AnnBe
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: NumberSequenceGroup
 audience: Application User
@@ -17,18 +15,17 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 4a27b6fdd1e244fb0cb8c5fcefc484494aeb88bd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254535"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838868"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologicznie numerowanie dokumentów i załączników
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 W niektórych krajach istnieje prawny wymóg numeracji dokumentów i powiązanych załączników w porządku chronologicznym. Chronologia musi być obsługiwana według okresów. Wszystkie numery należące do poprzednich okresów muszą być mniejsze od numerów należących do późniejszych okresów. Aby spełnić to wymaganie, zaimplementowano funkcje numerowania chronologicznego. W tym temacie wyjaśniono, jak skonfigurować i używać numerów chronologicznych dla odpowiednich dokumentów i powiązanych faktur obcych.
 

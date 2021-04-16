@@ -2,11 +2,9 @@
 title: Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
 description: 'W poprzednich wersjach istniały dwie koncepcje wyceny środków trwałych: modele ewidencji i księgi amortyzacji. W programie Microsoft Dynamics 365 for Operations (wydanie 1611) funkcje modeli ewidencji i ksiąg amortyzacji zostały scalone w pojedynczy obiekt zwany księgą.'
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26409b6416a5b4e93ccd051b1625633ea12e22ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212476"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826745"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Scalenie funkcjonalności modeli ewidencji i księgi amortyzacji środków trwałych
 
@@ -34,9 +32,8 @@ Nowa funkcjonalność księgi opiera się na wcześniejszej funkcjonalności mod
 ## <a name="setup"></a>Konfiguracja
 Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi podrzędnej środków trwałych. Księgi mają nową funkcję **Księguj w księdze głównej**, która pozwala wyłączyć księgowanie w księdze głównej i księgować tylko w księdze podrzędnej środków trwałych. Ta funkcja jest podobna do wcześniejszego zachowania funkcji księgowania stosowanego w księgach amortyzacji. Konfiguracja arkuszy ma nową warstwę księgowania o nazwie Brak. Tę warstwę księgowania dodano specjalnie dla transakcji na środkach trwałych. Aby zaksięgować transakcje dla ksiąg, które nie księgują w KG, należy użyć arkusza, w którym została ustawiona warstwa księgowania **Brak**.
 
-|                                                  |                                 |                                 |                                                         |
+| &nbsp;                                           | Księga amortyzacji               | Model ewidencji                     | Księga (nowa)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-|                                                  | Księga amortyzacji               | Model ewidencji                     | Księga (nowa)                                              |
 | Księgowanie w KG                                   | Nigdy                           | Zawsze                          | Opcja księgowania w KG                                |
 | Warstwy księgowania                                   | Nie dotyczy                  | 3: Bieżący, Operacje i Podatek | 11: Bieżący, Operacje, Podatek, 7 warstw niestandardowych i Brak |
 | Nazwy arkuszy                                    | Nazwy arkuszy księgi amortyzacji | KG — Nazwy arkuszy              | KG — Nazwy arkuszy                                      |
@@ -46,9 +43,8 @@ Domyślnie zapisy ksiąg są księgowane do księgi głównej (KG) i księgi pod
 ## <a name="processes"></a>Procesy
 Teraz procesy używają wspólnej strony. Niektóre procesy są dozwolone tylko wtedy, gdy w konfiguracji księgi opcja **Księguj w księdze głównej** ma ustawioną wartość **Nie**.
 
-|                                |                           |                     |                                          |
+| &nbsp;                                           | Księga amortyzacji               | Model ewidencji                     | Księga (nowa)                                              |
 |--------------------------------|---------------------------|---------------------|------------------------------------------|
-|                                | Księga amortyzacji         | Model ewidencji         | Księga (nowa)                               |
 | Wprowadzanie transakcji              | Arkusz księgi amortyzacji | Arkusz środków trwałych | Arkusz środków trwałych                      |
 | Podwyższenie amortyzacji             | Dozwolone                   | Niedozwolone         | Dozwolone                                  |
 | Usuwanie historycznych transakcji | Dozwolone                   | Niedozwolone         | Dozwolone, chyba że księgujesz w KG |
@@ -57,9 +53,8 @@ Teraz procesy używają wspólnej strony. Niektóre procesy są dozwolone tylko 
 ## <a name="inquiries-and-reports"></a>Zapytania i raporty
 Zapytania i raporty obsługują wszystkie księgi. Raporty, które nie są uwzględnione w tabeli poniżej, wcześniej obsługiwały modele ewidencji i księgi amortyzacji, i teraz nadal będą obsługiwały wszystkie typy ksiąg. Do raportów również zostało dodane pole **Warstwa księgowania**, dzięki czemu można łatwiej rozpoznać księgowania transakcji.
 
-|                                       |                                |                          |                          |
+| &nbsp;                                           | Księga amortyzacji               | Model ewidencji                     | Księga (nowa)                                              |
 |---------------------------------------|--------------------------------|--------------------------|--------------------------|
-|                                       | Księga amortyzacji              | Model ewidencji              | Księga (nowa)               |
 | Zapytania                             | Transakcje księgi amortyzacji | Transakcje środków trwałych | Transakcje środków trwałych |
 | Zestawienie środków trwałych                 | Niedozwolone                    | Dozwolone                  | Dozwolone                  |
 | Podstawa środka trwałego                     | Dozwolone                        | Niedozwolone              | Dozwolone                  |

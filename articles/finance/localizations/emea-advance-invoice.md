@@ -2,11 +2,9 @@
 title: Faktury zaliczkowe dla Europy Wschodniej
 description: Faktura zaliczkowa jest dokumentem, który można utworzyć dla odbiorcy lub dostawcy. Podaje ona kwotę, która ma zostać opłacona z góry z tytułu zamówienia sprzedaży. Ten temat zawiera informacje dotyczące faktur zaliczkowych dla Europy Wschodniej.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: epopov
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 24c0aa79426cd6e4a37764877b575b50a79b19df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8a4501ceb218a9431eb112822708d580844dd970
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209901"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839935"
 ---
 # <a name="advance-invoices-for-eastern-europe"></a>Faktury zaliczkowe dla Europy Wschodniej
 

@@ -2,11 +2,9 @@
 title: Tworzenie kodu odsetek z zakresem
 description: Kody odsetek można konfigurować do obliczania różnych kwot odsetek na podstawie zakresu wartości.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44b98436d6e0c40f0458dc4744b8b1d96baa8b54
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c18269d277f64433da35e7dc1675cd3afda8e070
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216576"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835035"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Tworzenie kodu odsetek z zakresem
 

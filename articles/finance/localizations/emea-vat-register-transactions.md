@@ -2,11 +2,9 @@
 title: Transakcje rejestru VAT dla Europy Wschodniej
 description: Ten temat zawiera informacje o transakcjach rejestru VAT dla Estonii, Litwy, Czech, Węgier, Łotwy i Polski.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 71f0a348c41bdc1abc792fcb58ce95ec211ce982
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a89dc7210037a8f642716e1b9459a83fad3d91c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224625"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840973"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje rejestru VAT dla Europy Wschodniej
 

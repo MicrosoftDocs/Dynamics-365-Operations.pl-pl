@@ -2,11 +2,9 @@
 title: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 description: W tym artykule opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0414f835b7797d2ed554f8d9dbd95b2ad47bba43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 48569da2d504e4c380ca89bfec4450ad1b9888e5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234124"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842375"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 
@@ -46,9 +44,8 @@ Jeśli kwota jest równa Maksymalnemu limitowi poprzedniego interwału i Minimal
 ## <a name="example-whole-amount-method-of-calculation"></a>Przykład: Metoda obliczania wg całej kwoty
 Na stronie Wartości kodu podatku stawki podatku są skonfigurowane przy użyciu następujących interwałów:
 
-|                   |                   |              |
+| Dolny limit     | Maksymalny limit     | Stawka podatku     |
 |-------------------|-------------------|--------------|
-| **Dolny limit** | **Maksymalny limit** | **Stawka podatku** |
 | 0,00              | 50,00             | 30%          |
 | 50,00             | 100,00            | 20%          |
 | 100,00            | 0,00              | 10%          |
@@ -65,9 +62,8 @@ Podatek jest obliczany według pełnej stawki opodatkowania.
 ## <a name="example-interval-method-of-calculation"></a> Przykład: Metoda obliczania wg interwału
 Na stronie Wartości stawki podatku są skonfigurowane przy użyciu następujących interwałów:
 
-|                   |                   |              |
+| Dolny limit     | Maksymalny limit     | Stawka podatku     |
 |-------------------|-------------------|--------------|
-| **Dolny limit** | **Maksymalny limit** | **Stawka podatku** |
 | 0,00              | 50,00             | 30%          |
 | 50,00             | 100,00            | 20%          |
 | 100,00            | 0,00              | 10%          |

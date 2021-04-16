@@ -2,11 +2,9 @@
 title: Konfigurowanie numeracji według magazynów
 description: W tym temacie omówiono konfigurowanie numeracji dokumentów przyjęcia produktów dla zakupu i dokumentów dostawy dla sprzedaży z podziałem na magazyny dla Polski.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 58b14b606cdbb50557096c545951f5fae65b22c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 31f8e561b03eb85e2fa213b2f404e5a5bfa0c3e4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832686"
 ---
 # <a name="set-up-number-sequences-by-warehouse"></a>Konfigurowanie numeracji według magazynów
 
