@@ -2,7 +2,6 @@
 title: REVERSE, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji REVERSE w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,48 +15,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f76582bc8b752fe0322bee8917d8649ed1c024ba
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 746a736c8797c1c1c5bd71d7d803be4212984595
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567373"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755211"
 ---
-# <a name="reverse-er-function"></a><span data-ttu-id="4f216-103">REVERSE, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="4f216-103">REVERSE ER function</span></span>
+# <a name="reverse-er-function"></a><span data-ttu-id="3815b-103">REVERSE, funkcja ER</span><span class="sxs-lookup"><span data-stu-id="3815b-103">REVERSE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4f216-104">Funkcja `REVERSE` zwraca określoną listę jako wartość *Lista rekordów* w odwróconej kolejności sortowania.</span><span class="sxs-lookup"><span data-stu-id="4f216-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
+<span data-ttu-id="3815b-104">Funkcja `REVERSE` zwraca określoną listę jako wartość *Lista rekordów* w odwróconej kolejności sortowania.</span><span class="sxs-lookup"><span data-stu-id="3815b-104">The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="4f216-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="4f216-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="3815b-105">Składnia</span><span class="sxs-lookup"><span data-stu-id="3815b-105">Syntax</span></span>
 
 ```vb
 REVERSE (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="4f216-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="4f216-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="3815b-106">Argumenty</span><span class="sxs-lookup"><span data-stu-id="3815b-106">Arguments</span></span>
 
-<span data-ttu-id="4f216-107">`list`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="4f216-107">`list`: *Record list*</span></span>
+<span data-ttu-id="3815b-107">`list`: *Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="3815b-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="4f216-108">Prawidłowa ścieżka elementu źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="4f216-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="3815b-108">Prawidłowa ścieżka elementu źródła danych o typie danych *Lista rekordów*.</span><span class="sxs-lookup"><span data-stu-id="3815b-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="4f216-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="4f216-109">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="3815b-109">Wartości zwracane</span><span class="sxs-lookup"><span data-stu-id="3815b-109">Return values</span></span>
 
-<span data-ttu-id="4f216-110">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="4f216-110">*Record list*</span></span>
+<span data-ttu-id="3815b-110">*Lista rekordów*</span><span class="sxs-lookup"><span data-stu-id="3815b-110">*Record list*</span></span>
 
-<span data-ttu-id="4f216-111">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="4f216-111">The resulting list of records.</span></span>
+<span data-ttu-id="3815b-111">Wynikowa lista rekordów.</span><span class="sxs-lookup"><span data-stu-id="3815b-111">The resulting list of records.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="4f216-112">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="4f216-112">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="3815b-112">Przykład 1</span><span class="sxs-lookup"><span data-stu-id="3815b-112">Example 1</span></span>
 
-<span data-ttu-id="4f216-113">Jeśli wprowadzisz źródło danych **DS** typu *Pole obliczeniowe* i zawiera ono wyrażenie `SPLIT ("C|B|A", "|")`, wyrażenie `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` zwraca wartość tekstową **„C”**.</span><span class="sxs-lookup"><span data-stu-id="4f216-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
+<span data-ttu-id="3815b-113">Jeśli wprowadzisz źródło danych **DS** typu *Pole obliczeniowe* i zawiera ono wyrażenie `SPLIT ("C|B|A", "|")`, wyrażenie `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` zwraca wartość tekstową **„C”**.</span><span class="sxs-lookup"><span data-stu-id="3815b-113">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="4f216-114">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="4f216-114">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="3815b-114">Przykład 2</span><span class="sxs-lookup"><span data-stu-id="3815b-114">Example 2</span></span>
 
-<span data-ttu-id="4f216-115">Jeśli opcja **Vendor** jest skonfigurowana jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, wyrażenie `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` zwraca listę dostawców posortowaną według nazw w porządku malejącym.</span><span class="sxs-lookup"><span data-stu-id="4f216-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
+<span data-ttu-id="3815b-115">Jeśli opcja **Vendor** jest skonfigurowana jako źródło danych raportowania elektronicznego odwołujące się do tabeli VendTable, wyrażenie `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` zwraca listę dostawców posortowaną według nazw w porządku malejącym.</span><span class="sxs-lookup"><span data-stu-id="3815b-115">If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4f216-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="4f216-116">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3815b-116">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="3815b-116">Additional resources</span></span>
 
-[<span data-ttu-id="4f216-117">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="4f216-117">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="3815b-117">Lista funkcji</span><span class="sxs-lookup"><span data-stu-id="3815b-117">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
