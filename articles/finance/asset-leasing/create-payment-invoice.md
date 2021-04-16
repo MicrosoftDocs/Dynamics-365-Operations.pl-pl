@@ -2,11 +2,9 @@
 title: Tworzenie faktur dla płatności
 description: W tym temacie opisano sposób tworzenia miesięcznych faktur za wynajem. Można tworzyć faktury za pojedyncze wynajmy lub można skorzystać z procesu przetwarzania wsadowego, aby utworzyć je dla wielu wynajmów.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,37 +15,37 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a8b9457b158afaa32718976a7a97f48411be0e1a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 51e4c44cf192754a832132ea1942baf18b43a755
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241529"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816011"
 ---
-# <a name="create-payment-invoices"></a><span data-ttu-id="4de70-104">Tworzenie faktur dla płatności</span><span class="sxs-lookup"><span data-stu-id="4de70-104">Create payment invoices</span></span>
+# <a name="create-payment-invoices"></a><span data-ttu-id="fefe6-104">Tworzenie faktur dla płatności</span><span class="sxs-lookup"><span data-stu-id="fefe6-104">Create payment invoices</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4de70-105">Można tworzyć miesięczne faktury za pojedyncze wynajmy lub można skorzystać z procesu przetwarzania wsadowego, aby utworzyć je dla wielu wynajmów.</span><span class="sxs-lookup"><span data-stu-id="4de70-105">You can create monthly invoices for individual leases, or you can use a batch process to create them for multiple leases.</span></span> <span data-ttu-id="4de70-106">Poniżej przedstawiono procedurę tworzenia poszczególnych wpisów płatności za wynajem, gdy jest włączona wartość parametru **Płatność do dostawcy** na stronie **Konfigurowanie ksiąg wynajmu**.</span><span class="sxs-lookup"><span data-stu-id="4de70-106">The following procedure shows how to create an individual lease payment entry when the **Pay to Vendor** parameter on the **Lease book setup** page is turned on.</span></span>
+<span data-ttu-id="fefe6-105">Można tworzyć miesięczne faktury za pojedyncze wynajmy lub można skorzystać z procesu przetwarzania wsadowego, aby utworzyć je dla wielu wynajmów.</span><span class="sxs-lookup"><span data-stu-id="fefe6-105">You can create monthly invoices for individual leases, or you can use a batch process to create them for multiple leases.</span></span> <span data-ttu-id="fefe6-106">Poniżej przedstawiono procedurę tworzenia poszczególnych wpisów płatności za wynajem, gdy jest włączona wartość parametru **Płatność do dostawcy** na stronie **Konfigurowanie ksiąg wynajmu**.</span><span class="sxs-lookup"><span data-stu-id="fefe6-106">The following procedure shows how to create an individual lease payment entry when the **Pay to Vendor** parameter on the **Lease book setup** page is turned on.</span></span>
 
-1. <span data-ttu-id="4de70-107">Na stronie **Podsumowanie wynajmu** wybierz wynajem, a następnie wybierz opcję **Ksiegi \> Harmonogram płatności**.</span><span class="sxs-lookup"><span data-stu-id="4de70-107">On the **Lease summary** page, select a lease, and then select **Books \> Payment schedule**.</span></span>
-2. <span data-ttu-id="4de70-108">Wybierz płatność, którą należy wykonać, a następnie wybierz opcję **Utwórz arkusz**.</span><span class="sxs-lookup"><span data-stu-id="4de70-108">Select the payment that must be made, and then select **Create journal**.</span></span> <span data-ttu-id="4de70-109">Zostanie wyświetlony komunikat informujący o utworzeniu arkusza dla wybranej płatności.</span><span class="sxs-lookup"><span data-stu-id="4de70-109">You receive a message that states that a journal was created against the selected payment.</span></span>
-3. <span data-ttu-id="4de70-110">Wybierz **Arkusze faktur**, a następnie wybierz fakturę, która musi zostać zapłacona.</span><span class="sxs-lookup"><span data-stu-id="4de70-110">Select **Invoice journals**, and then select the invoice that must be paid.</span></span>
-4. <span data-ttu-id="4de70-111">Na karcie **Wiersze** przejrzyj wpis w arkuszu przed zaksięgowaniem go w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="4de70-111">On the **Lines** tab, review the journal entry before you post it to the general ledger.</span></span>
-
-    > [!NOTE]
-    > <span data-ttu-id="4de70-112">Domyślnie tworzone wiersze faktury od dostawcy używają profilu księgowania dostawcy ze strony **Parametry rozrachunków z dostawcami**.</span><span class="sxs-lookup"><span data-stu-id="4de70-112">By default, the vendor invoice lines that are created use the vendor posting profile from the **Accounts payable parameters** page.</span></span>
-
-5. <span data-ttu-id="4de70-113">Wybierz poprawny arkusz, a następnie wybierz fakturę, która musi zostać zapłacona.</span><span class="sxs-lookup"><span data-stu-id="4de70-113">Select the correct journal, and then select the invoice that must be paid.</span></span>
-
-    <span data-ttu-id="4de70-114">W tym przykładzie parametr **Płatność do dostawcy** w księdze wynajmu jest włączony.</span><span class="sxs-lookup"><span data-stu-id="4de70-114">For this example, the **Pay to Vendor** parameter on the lease book is turned on.</span></span> <span data-ttu-id="4de70-115">Z tego względu faktura będzie znajdować się w arkuszu faktur.</span><span class="sxs-lookup"><span data-stu-id="4de70-115">Therefore, the invoice will be in the invoice journal.</span></span> <span data-ttu-id="4de70-116">W sekcji **Przegląd** znajduje się podsumowanie wpisu w arkuszu, a w sekcji **Wiersze** wyświetlane są szczegóły dotyczące rzeczywistych wpisów w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="4de70-116">The **Overview** section shows a summary of the journal entry, and the **Lines** section shows details of the actual journal lines.</span></span>
+1. <span data-ttu-id="fefe6-107">Na stronie **Podsumowanie wynajmu** wybierz wynajem, a następnie wybierz opcję **Ksiegi \> Harmonogram płatności**.</span><span class="sxs-lookup"><span data-stu-id="fefe6-107">On the **Lease summary** page, select a lease, and then select **Books \> Payment schedule**.</span></span>
+2. <span data-ttu-id="fefe6-108">Wybierz płatność, którą należy wykonać, a następnie wybierz opcję **Utwórz arkusz**.</span><span class="sxs-lookup"><span data-stu-id="fefe6-108">Select the payment that must be made, and then select **Create journal**.</span></span> <span data-ttu-id="fefe6-109">Zostanie wyświetlony komunikat informujący o utworzeniu arkusza dla wybranej płatności.</span><span class="sxs-lookup"><span data-stu-id="fefe6-109">You receive a message that states that a journal was created against the selected payment.</span></span>
+3. <span data-ttu-id="fefe6-110">Wybierz **Arkusze faktur**, a następnie wybierz fakturę, która musi zostać zapłacona.</span><span class="sxs-lookup"><span data-stu-id="fefe6-110">Select **Invoice journals**, and then select the invoice that must be paid.</span></span>
+4. <span data-ttu-id="fefe6-111">Na karcie **Wiersze** przejrzyj wpis w arkuszu przed zaksięgowaniem go w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="fefe6-111">On the **Lines** tab, review the journal entry before you post it to the general ledger.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="4de70-117">Jeśli parametr **Płatność do dostawcy** jest wyłączony, wpisy w arkuszu płatności będą wyświetlane na stronie **Wynajem składnika majątku** dla księgi wynajmu, a system utworzy wpis wynajmu składnika majątku zamiast faktury.</span><span class="sxs-lookup"><span data-stu-id="4de70-117">If the **Pay to Vendor** parameter is turned off, payment journal entries will be listed on the **Asset leasing** page for the lease book, and the system will create an asset leasing entry instead of an invoice.</span></span> <span data-ttu-id="4de70-118">Wpis opłaty z tytułu wynajmu zostanie zaksięgowany w nazwie arkusza określonej w polu **Arkusz wynajmu miesięcznego**.</span><span class="sxs-lookup"><span data-stu-id="4de70-118">The lease payment entry will be posted to the journal name that is specified in the **Monthly lease journal** field.</span></span>
+    > <span data-ttu-id="fefe6-112">Domyślnie tworzone wiersze faktury od dostawcy używają profilu księgowania dostawcy ze strony **Parametry rozrachunków z dostawcami**.</span><span class="sxs-lookup"><span data-stu-id="fefe6-112">By default, the vendor invoice lines that are created use the vendor posting profile from the **Accounts payable parameters** page.</span></span>
 
-6. <span data-ttu-id="4de70-119">Po zaksięgowaniu transakcji można wyświetlić informacje o transakcjach i wartości bilansowej zobowiązania z tytułu wynajmu, wybierając **Transakcje zobowiązań** w księdze wynajmu.</span><span class="sxs-lookup"><span data-stu-id="4de70-119">After the transaction is posted, you can view the transaction information and the carrying value of the lease liability by selecting **Liability transactions** in the lease book.</span></span>
+5. <span data-ttu-id="fefe6-113">Wybierz poprawny arkusz, a następnie wybierz fakturę, która musi zostać zapłacona.</span><span class="sxs-lookup"><span data-stu-id="fefe6-113">Select the correct journal, and then select the invoice that must be paid.</span></span>
 
-    <span data-ttu-id="4de70-120">W harmonogramie płatności zostanie zaznaczone pole wyboru **Arkusz zaksięgowany**, a w wierszu będzie wyświetlany numer arkusza faktur.</span><span class="sxs-lookup"><span data-stu-id="4de70-120">In the payment schedule, the **Journal posted** check box will be selected, and the line will show the invoice journal number.</span></span> <span data-ttu-id="4de70-121">Po utworzeniu arkusza płatności i zapisu dla tego arkusza należy wycofać ten wpis, aby można było go ponownie utworzyć.</span><span class="sxs-lookup"><span data-stu-id="4de70-121">After a payment journal and an entry for that journal have been created, you must reverse the entry before it can be re-created.</span></span>
+    <span data-ttu-id="fefe6-114">W tym przykładzie parametr **Płatność do dostawcy** w księdze wynajmu jest włączony.</span><span class="sxs-lookup"><span data-stu-id="fefe6-114">For this example, the **Pay to Vendor** parameter on the lease book is turned on.</span></span> <span data-ttu-id="fefe6-115">Z tego względu faktura będzie znajdować się w arkuszu faktur.</span><span class="sxs-lookup"><span data-stu-id="fefe6-115">Therefore, the invoice will be in the invoice journal.</span></span> <span data-ttu-id="fefe6-116">W sekcji **Przegląd** znajduje się podsumowanie wpisu w arkuszu, a w sekcji **Wiersze** wyświetlane są szczegóły dotyczące rzeczywistych wpisów w arkuszu.</span><span class="sxs-lookup"><span data-stu-id="fefe6-116">The **Overview** section shows a summary of the journal entry, and the **Lines** section shows details of the actual journal lines.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="fefe6-117">Jeśli parametr **Płatność do dostawcy** jest wyłączony, wpisy w arkuszu płatności będą wyświetlane na stronie **Wynajem składnika majątku** dla księgi wynajmu, a system utworzy wpis wynajmu składnika majątku zamiast faktury.</span><span class="sxs-lookup"><span data-stu-id="fefe6-117">If the **Pay to Vendor** parameter is turned off, payment journal entries will be listed on the **Asset leasing** page for the lease book, and the system will create an asset leasing entry instead of an invoice.</span></span> <span data-ttu-id="fefe6-118">Wpis opłaty z tytułu wynajmu zostanie zaksięgowany w nazwie arkusza określonej w polu **Arkusz wynajmu miesięcznego**.</span><span class="sxs-lookup"><span data-stu-id="fefe6-118">The lease payment entry will be posted to the journal name that is specified in the **Monthly lease journal** field.</span></span>
+
+6. <span data-ttu-id="fefe6-119">Po zaksięgowaniu transakcji można wyświetlić informacje o transakcjach i wartości bilansowej zobowiązania z tytułu wynajmu, wybierając **Transakcje zobowiązań** w księdze wynajmu.</span><span class="sxs-lookup"><span data-stu-id="fefe6-119">After the transaction is posted, you can view the transaction information and the carrying value of the lease liability by selecting **Liability transactions** in the lease book.</span></span>
+
+    <span data-ttu-id="fefe6-120">W harmonogramie płatności zostanie zaznaczone pole wyboru **Arkusz zaksięgowany**, a w wierszu będzie wyświetlany numer arkusza faktur.</span><span class="sxs-lookup"><span data-stu-id="fefe6-120">In the payment schedule, the **Journal posted** check box will be selected, and the line will show the invoice journal number.</span></span> <span data-ttu-id="fefe6-121">Po utworzeniu arkusza płatności i zapisu dla tego arkusza należy wycofać ten wpis, aby można było go ponownie utworzyć.</span><span class="sxs-lookup"><span data-stu-id="fefe6-121">After a payment journal and an entry for that journal have been created, you must reverse the entry before it can be re-created.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
