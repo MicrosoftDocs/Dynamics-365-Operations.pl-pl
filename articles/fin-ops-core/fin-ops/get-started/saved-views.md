@@ -2,7 +2,6 @@
 title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
@@ -14,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: eaf3c530553d2908f14829a31537927c3306400a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566408"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744622"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 ## <a name="introduction"></a>Wprowadzenie
 

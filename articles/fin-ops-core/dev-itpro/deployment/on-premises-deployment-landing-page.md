@@ -2,8 +2,7 @@
 title: Wdrożenie lokalne — strona główna
 description: Ten temat zawiera informacje i łącza do zasobów o wdrożeniach lokalnych.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564067"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749312"
 ---
 # <a name="on-premises-deployment-home-page"></a>Wdrożenie lokalne — strona główna
 
@@ -38,12 +37,14 @@ Można wdrożyć Dynamics 365 Finance + Operations (lokalnie). Po wybraniu typu 
 
 ## <a name="onboard"></a>Rekrutuj
 - [Konfigurowanie projektów lokalnych w usłudze Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Konfigurowanie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 12 i nowszych](setup-deploy-on-premises-pu12.md)
+- [Konfigurowanie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update 41 i nowszych](setup-deploy-on-premises-pu41.md)
+- [Ustawianie i wdrażanie środowisk lokalnych z użyciem aktualizacji Platform update w wersji od 12 do 40](setup-deploy-on-premises-pu12.md)
 - [Instalowanie urządzeń drukarek sieciowych w środowiskach lokalnych](../analytics/install-network-printer-onprem.md)
 - [Konfigurowanie usługi SQL Server Reporting Services dla wdrożeń lokalnych](../analytics/configure-ssrs-on-premises.md)
 - [Opracowywanie i wdrażanie modeli niestandardowych w środowiskach lokalnych](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Praca w lokalnym wdrożeniu
+- [Konfigurowanie wysokiej dostępności węzłów usług SQL Server Reporting Services (SSRS)](onprem-SSRSHA.md)
 - [Konfigurowanie zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importowanie konfiguracji raportowania elektronicznego (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generowanie, publikowanie i drukowanie dokumentów we wdrożeniach lokalnych](../analytics/printing-capabilities-on-premises.md)

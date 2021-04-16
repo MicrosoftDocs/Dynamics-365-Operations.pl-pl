@@ -2,7 +2,6 @@
 title: Plik miejsca docelowego raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące konfigurowania lokalizacji docelowej pliku dla formatu ER.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c597a627ab755e411469f3b3f847d43b7a875bdd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: f48d4c28f74d9eea7289b9911269527073304d6f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562005"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753487"
 ---
 # <a name="file-destination"></a>Aplikacja docelowa pliku
 

@@ -2,7 +2,6 @@
 title: Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
 description: Można zaprojektować formaty raportów elektronicznych ER, które wygenerują wychodzące dokumenty w formacie XML.
 author: NickSelin
-manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 07fb63f7d4255ca4f693e399a066fe3952e3df1b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 3e007b4feac612ecf74f60dd8a87d76efc7ab4c7
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566681"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752799"
 ---
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Generowanie raportów poprzez dodawanie treści w postaci nieprzetworzonego kodu XML
 

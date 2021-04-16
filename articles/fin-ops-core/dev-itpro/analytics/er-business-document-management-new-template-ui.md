@@ -2,7 +2,6 @@
 title: Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi
 description: Ten temat zawiera informacje dotyczące korzystania z interfejsu użytkownika nowego dokumentu w funkcji zarządzania dokumentami biznesowymi struktury modułu raportowania elektronicznego.
 author: v-anamir
-manager: AnnBe
 ms.date: 05/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7f8099f2f6872c34c30de918a6fc5fd27bcde958
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 4c430e21e3bf7f1c01c7b60c0bef58fb49c0c601
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565717"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748348"
 ---
 # <a name="new-document-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika dokumentu w zarządzaniu dokumentami biznesowymi
 

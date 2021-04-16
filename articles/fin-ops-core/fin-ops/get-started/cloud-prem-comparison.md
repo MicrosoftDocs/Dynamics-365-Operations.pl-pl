@@ -2,7 +2,6 @@
 title: Porównanie funkcji w chmurze i lokalnych
 description: Ten temat przedstawia funkcje obsługiwane w chmurze i lokalnie.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566643"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744058"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Porównanie funkcji w chmurze i lokalnych
 
@@ -43,9 +42,9 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |---------------------|-----------------------------|-----------|-----------------|
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
 |                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nie              |
-| Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             
+| Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
-|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak              |
+|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak             |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
 | Zarządzanie dokumentami                  |                                                                                           | Tak       | Tak             |
 | Zarządzanie finansami                 |                                                                                           | Tak       | Tak             |
@@ -62,8 +61,8 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
 |                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
 |                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
-|                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Nie              |
-|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nie              |
+|                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Tak             |
+|                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nr              |
 | Usługi Lifecycle Services                   |                                                                                           | Tak       | Tak             |
 |                                      | Konfigurowalne procesy biznesowe                                                           | Tak       | Nie              |
 | Lokalizacje                        |                                                                                           | Tak       | Tak             |
@@ -85,7 +84,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 
 | **Warstwowy**                | **Funkcja**             | **W chmurze** | **Lokalne** |
 |-------------------------|-------------------|-----------|-----------------|
-| Zarządzanie składnikami majątku                     |                                                                                           | Tak       | Nr |
+| Zarządzanie składnikami majątku                     |                                                                                           | Tak       | Nr              |
 | Zgodność i certyfikacje        |                                                                                           | Tak       | Tak             |
 |                                      | Certyfikacja SOC 1 Typ 1                                                                | Tak       | Nr              |
 | Rachunek kosztów                      |                                                                                           | Tak       | Tak             |
@@ -96,7 +95,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 | Integracja danych i zarządzanie nimi      |                                                                                           | Tak       | Tak             |
 |                                      | Rozszerzenie oparte na konfiguracji                                                            | Tak       | Nr              |
 |                                      | Eksport danych do własnego magazynu danych                                                    | Tak       | Tak             |
-|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak              |
+|                                      | Włączenie eksportu aktualizacji przyrostowych do jednostki danych                                 | Tak       | Tak             |
 |                                      | Integracje danych                                                                         | Tak       | Tak             |
 | Zarządzanie dokumentami                  |                                                                                           | Tak       | Tak             |
 | Pomoc                                 |                                                                                           | Tak       | Nie              |
@@ -111,7 +110,7 @@ W poniższej tabeli wymieniono zakresy aplikacji. Obsługa w chmurze i lokalnie 
 |                                      | Analityczne obszary robocze                                                                     | Tak       | Nr              |
 |                                      | Inteligentny proces biznesowy: zalecenia                                             | Tak       | Nr              |
 |                                      | Tworzenie raportów dla usługi Power BI za pomocą interfejsu OData z wykorzystaniem aplikacji Power BI lub narzędzi PowerQuery dla programu Excel    | Tak       | Nr              |
-|                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Nr              |
+|                                      | Usługi SQL Server Reporting Services (SSRS) obsługują skalowanie                                 | Tak       | Tak             |
 |                                      | Dane telemetryczne są przesyłane do chmury                                                   | Tak       | Nr              |
 | Zarządzanie zapasami                 |                                                                                           | Tak       | Tak             |
 | Usługi Lifecycle Services                   |                                                                                           | Tak       | Tak             |

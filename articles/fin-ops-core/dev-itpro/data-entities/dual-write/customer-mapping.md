@@ -2,7 +2,6 @@
 title: Zintegrowane dane główne odbiorcy
 description: W tym temacie opisano integrację danych odbiorcy między Finance and Operations i Dataverse.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 07/15/2019
 ms.topic: article
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 402342b459c366d0e198e3d0e946deb1f9e81739
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0015ca2ccbb0098a5a96bf56ff355fb2f9f8f626
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568133"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748930"
 ---
 # <a name="integrated-customer-master"></a>Zintegrowane dane główne odbiorcy
 

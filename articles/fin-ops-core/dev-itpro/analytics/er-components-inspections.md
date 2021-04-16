@@ -2,7 +2,6 @@
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 description: W tym temacie opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574132"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753847"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -666,19 +665,19 @@ Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występu
 
 ![Błąd czasu wykonywania występujący po uruchomieniu mapowania formatu na stronie Projektant formatów](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+### <a name="automatic-resolution&quot;></a>Automatyczne rozwiązywanie
 
 Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
 
-### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+### <a name=&quot;manual-resolution&quot;></a>Ręczne rozwiązywanie
 
-#### <a name="option-1"></a>Opcja 1
+#### <a name=&quot;option-1&quot;></a>Opcja 1
 
 Usuń flagę **Pamięć podręczna** ze źródła danych **Vendor**. Źródło danych **FilteredVendor** stanie się wykonywalne, ale źródło danych **Vendor**, do którego odwołuje się tabela VendTable, będzie używane za każdym razem, gdy jest wywoływane źródło danych **FilteredVendor**.
 
-#### <a name="option-2"></a>Opcja 2
+#### <a name=&quot;option-2&quot;></a>Opcja 2
 
-Zmień wyrażenie w źródle danych **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum="US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. W tym przypadku dostęp do źródła danych **Vendor**, do którego odwołuje się tabela VendTable, będzie uzyskiwany tylko podczas pierwszego wywołania źródła danych **Vendor**. Jednak wybór rekordów zostanie dokonany w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności.
+Zmień wyrażenie w źródle danych **FilteredVendor** z `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` na `WHERE(Vendor, Vendor.AccountNum="US-101")`. W tym przypadku dostęp do źródła danych **Vendor**, do którego odwołuje się tabela VendTable, będzie uzyskiwany tylko podczas pierwszego wywołania źródła danych **Vendor**. Jednak wybór rekordów zostanie dokonany w pamięci. Z tego względu ta metoda może spowodować pogorszenie wydajności.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Brak powiązania
 

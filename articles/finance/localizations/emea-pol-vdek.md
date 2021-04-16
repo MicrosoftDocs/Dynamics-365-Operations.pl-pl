@@ -5,19 +5,18 @@ author: liza-golub
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 9b8bb5963c90ebfd7495c3c75c0dee13a89f1c5c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3f27daccb1a1883c3bad04d0fafe977b0c0fcbaa
+ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236284"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5608602"
 ---
 # <a name="vat-declaration-with-registers-jpk_v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 

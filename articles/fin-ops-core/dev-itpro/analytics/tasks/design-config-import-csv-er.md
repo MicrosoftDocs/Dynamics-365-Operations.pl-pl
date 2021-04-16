@@ -2,7 +2,6 @@
 title: Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
 description: Za pomocą tej procedury można zaprojektować konfigurację raportowania elektronicznego w celu importowania danych do aplikacji Finance and Operations z zewnętrznego pliku w formacie CSV.
 author: NickSelin
-manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 82c3af7d49f725a045b17cbef00b56fdfa0383f3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 05beb15413362aea557fb80fb471c10e1f832184
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564125"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752539"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Projektowanie konfiguracji ER do importowania danych z zewnętrznych plików CSV
 

@@ -2,7 +2,6 @@
 title: Mobilny obszar roboczy Mój zespół
 description: Ten temat zawiera informacje o komórkowym obszarze roboczym Mój zespół, który umożliwia kierownikom wyświetlanie informacji o bezpośrednich podwładnych i pracownikach na dalszych szczeblach podwładności.
 author: ShielaSogge
-manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dc2f8b5195fb5210ca6399cbf744f210671f475
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 06ddad1f2df895da4819a06e3552acab8e9aff78
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570099"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744740"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilny obszar roboczy Mój zespół
 

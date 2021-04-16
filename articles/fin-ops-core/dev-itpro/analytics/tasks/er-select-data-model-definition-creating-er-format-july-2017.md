@@ -2,7 +2,6 @@
 title: Wybieranie definicji modeli danych podczas tworzenia formatów
 description: Aby wykonać kroki podane w tej procedurze, należy najpierw wykonać procedurę ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68c5114b8c1e2a2ac5d357ee9e75cc54c149f39d
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: b01f7afb6ca3bd1f317c25202e0cf72231008fca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564273"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744970"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Wybieranie definicji modeli danych podczas tworzenia formatów
 

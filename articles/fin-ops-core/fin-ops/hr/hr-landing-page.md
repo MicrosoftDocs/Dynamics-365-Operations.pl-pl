@@ -1,8 +1,7 @@
 ---
-title: Zasoby ludzkie — omówienie
-description: Moduł Zasoby ludzkie upraszcza wiele rutynowych zadań dokumentacyjnych oraz automatyzuje wiele procesów dotyczących obsady kadrowej w organizacji. Ponadto dla pracowników działu zasobów ludzkich stanowi platformę zarządzania odnośnymi obszarami. Te obszary obejmują rekrutację i utrzymanie pracowników etatowych, administrowanie świadczeniami, szkolenia, przeglądy wydajności i zarządzanie zmianami.
+title: Human Resources — omówienie
+description: Zasoby ludzkie usprawniają rutynowe zadania związane z prowadzeniem dokumentacji, automatyzują procesy związane z zatrudnianiem pracowników w organizacji i zapewniają personelowi zasobów ludzkich ramy do zarządzania obszarami nadzoru.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,14 +13,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566705"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752187"
 ---
-# <a name="human-resources-overview"></a>Zasoby ludzkie — omówienie
+# <a name="human-resources-overview"></a>Human Resources — omówienie
 
 [!include [banner](../includes/banner.md)]
 

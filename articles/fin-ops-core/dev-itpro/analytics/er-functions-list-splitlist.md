@@ -2,8 +2,7 @@
 title: SPLITLIST, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji SPLITLIST w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559145"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745576"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST, funkcja ER
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559145"
 
 Funkcja `SPLITLIST` dzieli określoną listę na listy podrzędne (lub partie), z których każda zawiera określoną liczbę rekordów. Zwraca ona wynik jako nową wartość typu *Lista rekordów*, która składa się z partii.
 
-## <a name="syntax"></a>Składnia
+## <a name="syntax-1"></a>Składnia 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Składnia 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenty
@@ -44,6 +49,10 @@ Prawidłowa ścieżka elementu źródła danych o typie danych *Lista rekordów*
 `number`: *Liczba całkowita*
 
 Maksymalna liczba rekordów na partię.
+
+`on-demand reading flag`: *Wartość logiczna*
+
+Wartość *logiczna* określająca, czy elementy podlist powinny być generowane na żądanie.
 
 ## <a name="return-values"></a>Wartości zwracane
 
@@ -62,6 +71,8 @@ Zwracana jest lista partii zawierająca następujące elementy:
 - **BatchNumber:** *Liczba całkowita*
 
     Numer bieżącej partii na zwróconej liście.
+
+Gdy flaga odczytu na żądanie ma wartość **Prawda**, podlisty są generowane na żądanie, co pozwala na zmniejszenie zużycia pamięci, ale może spowodować uszkodzenie wydajności, jeśli elementy nie są używane sekwencyjnie.
 
 ## <a name="example"></a>Przykład
 

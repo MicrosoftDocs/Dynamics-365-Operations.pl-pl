@@ -2,8 +2,7 @@
 title: ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
 description: W tym temacie opisano sposób projektowania konfiguracji raportowania elektronicznego w celu importowania danych do aplikacji Microsoft Dynamics 365 Finance z zewnętrznego pliku.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564297"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751469"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Tworzenie wymaganych konfiguracji do importowania danych z pliku zewnętrznego
 
 [!include [banner](../../includes/banner.md)]
 
-W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji z zewnętrznego pliku. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w przewodniku po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Należy również pobrać i zapisać lokalnie następujące pliki przy użyciu łączy z omówienia modułu Raportowanie elektroniczne (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+W poniższych krokach wyjaśniono, jak użytkownik przypisany do roli Administrator systemu lub Deweloper raportowania elektronicznego może projektować konfiguracje raportowania elektronicznego (ER) w celu importowania danych do aplikacji z zewnętrznego pliku. W tym przykładzie utworzysz wymagane konfiguracje ER dla przykładowej firmy Litware, Inc. Aby wykonać te kroki, najpierw trzeba wykonać kroki wymienione w przewodniku po zadaniu „ER Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego”. Kroki można wykonać przy użyciu zestawu danych firmy USMF. Musisz również pobrać i lokalnie zapisać następujące pliki: 
+
+| Opis zawartości                       | Nazwa pliku                                     |
+|-------------------------------------------|-----------------------------------------------|
+| Konfiguracja modelu danych ER - 1099 | [1099model,xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER format konfiguracji - 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Przykład pliku przychodzącego dokumentu w formacie XML                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Przykładowy skoroszyt do zarządzania danymi dokumentu przychodzącego                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 Moduł Raportowanie elektroniczne umożliwia użytkownikom biznesowym skonfigurowanie procesu importowania zewnętrznych plików danych do tabel w formacie .XML lub .TXT. Najpierw należy zaprojektować abstrakcyjny model danych i konfigurację modelu danych raportowania elektronicznego, aby reprezentować dane, które mają być importowane. Następnie należy zdefiniować strukturę importowanego pliku oraz metodę, która będzie używana do przeniesienia danych z pliku do abstrakcyjnego modelu danych. Dla abstrakcyjnego modelu danych należy utworzyć ER konfigurację formatu, która jest mapowana na zaprojektowany model danych. Następnie konfiguracja modelu danych musi zostać rozszerzona o mapowanie opisujące, jak importowane dane są utrwalane jako abstrakcyjny model danych i jak są wykorzystywane do aktualizowania tabel.  Do konfiguracji modelu danych raportowania elektronicznego należy dołączyć nowe mapowanie modelu, które opisuje powiązanie modelu danych z miejscami docelowymi aplikacji.  
 

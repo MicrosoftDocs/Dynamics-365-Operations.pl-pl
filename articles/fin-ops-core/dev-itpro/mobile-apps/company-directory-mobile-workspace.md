@@ -2,7 +2,6 @@
 title: Mobilny obszar roboczy Firmowa książka adresowa
 description: W tym temacie przedstawiono informacje o komórkowym obszarze roboczym Firmowa książka adresowa, gdzie użytkownicy mogą wyświetlać dane i kontaktować się z innymi pracownikami w organizacji.
 author: jcart1106
-manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6f48d369d5cd9d5ee0b234ce924ec0b80388c792
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 0b397f3a222ff6957ad4904df90c5db218903090
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570123"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748204"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilny obszar roboczy Firmowa książka adresowa
 
