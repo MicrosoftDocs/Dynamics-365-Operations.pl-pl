@@ -2,11 +2,9 @@
 title: Przetwórz uprawnienia do świadczeń z powodu zmiany sytuacji życiowej
 description: W tym artykule przedstawiono sposób uruchamiania tego procesu w celu uzyskania uprawnienia do użytkowania zdarzeń zmiany sytuacji życiowej.
 author: andreabichsel
-manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitLifeEventTypes, BenefitEligibilityProcessResultViewer
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fdb2f00675fa5191e05dcb99525c1ec9a8b16bd2
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 7eadf3480ccd703a059e80858ab44efc5b27d8d2
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466285"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803856"
 ---
 # <a name="process-life-event-eligibility"></a>Przetwórz uprawnienia do świadczeń z powodu zmiany sytuacji życiowej
 

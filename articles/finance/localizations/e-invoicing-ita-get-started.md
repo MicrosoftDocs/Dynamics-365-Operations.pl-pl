@@ -1,12 +1,10 @@
 ---
-title: Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne dla Włoch w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
+title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
+description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Włoch.
 author: gionoder
-manager: AnnBe
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,26 +15,26 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9c50000c98bdde2c9da43b3110686aa5d01e8081
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259227"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840107"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-italy"></a>Rozpocznij pracę z dodatkiem Faktury elektroniczne dla Włoch
+# <a name="get-started-with-electronic-invoicing-for-italy"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
 
 [!include [banner](../includes/banner.md)]
 
 
 > [!IMPORTANT]
-> Dodatek Faktury elektroniczne dla Włoch może obecnie nie obsługiwać wszystkich funkcji dostępnych dla faktur elektronicznych w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
+> Faktury elektroniczne dla Włoch może obecnie nie obsługiwać wszystkich funkcji dostępnych dla faktur elektronicznych w Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. 
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne dla Włoch. Przeprowadza użytkownika przez kolejne etapy konfiguracji, które są zależne od kraju w usługach Regulatory Configuration Services (RCS) i Finance. Prowadzi również użytkownika przez proces przesyłania faktur elektronicznych, które są generowane za pośrednictwem usługi w formacie **FatturaPA** specyficznym dla Włoch, oraz wyjaśnia, jak przeglądać wyniki przetwarzania.
+Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Włoch. Przeprowadza użytkownika przez kolejne etapy konfiguracji, które są zależne od kraju w usługach Regulatory Configuration Services (RCS) i Finance. Prowadzi również użytkownika przez proces przesyłania faktur elektronicznych, które są generowane za pośrednictwem usługi w formacie **FatturaPA** specyficznym dla Włoch, oraz wyjaśnia, jak przeglądać wyniki przetwarzania.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed wykonaniem kroków opisanych w tym temacie należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md).
+Przed wykonaniem kroków opisanych w tym temacie należy wykonać kroki opisane w temacie [Rozpoczynanie pracy z Fakturami elektronicznymi](e-invoicing-get-started.md).
 
 ## <a name="rcs-setup"></a>Konfiguracja RCS
 
@@ -48,7 +46,7 @@ Podczas instalacji RCS należy wykonać następujące zadania:
 4. Opublikuj funkcję fakturowania elektronicznego.
 
 > [!NOTE]
-> „Funkcja fakturowania elektronicznego” to ogólna nazwa zasobu, który jest skonfigurowany i opublikowany w celu wykorzystania serwera dodatku Faktury elektroniczne. W takim przypadku eksport elektronicznych faktur klienta jest funkcją fakturowania elektronicznego, którą skonfigurujesz.
+> „Funkcja fakturowania elektronicznego” to ogólna nazwa zasobu, który jest skonfigurowany i opublikowany w celu wykorzystania serwera Faktur elektronicznych. W takim przypadku eksport elektronicznych faktur klienta jest funkcją fakturowania elektronicznego, którą skonfigurujesz.
 
 ## <a name="import-the-e-invoicing-feature"></a>Importuj funkcję fakturowania elektronicznego
 
@@ -153,7 +151,7 @@ Funkcję fakturowania elektronicznego można opublikować, zmieniając stan wers
 
 ![Zmiana stanu funkcji fakturowania elektronicznego](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance"></a>Skonfiguruj integrację dodatku Faktury elektroniczne w Finance
+## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Skonfiguruj integrację Faktury elektroniczne w Finance
 
 Podczas instalacji Finance należy wykonać następujące zadania:
 
@@ -193,17 +191,17 @@ Podczas instalacji Finance należy wykonać następujące zadania:
 
 Podczas przetwarzania w Finance należy wykonać następujące zadania:
 
-1. Generuj włoskie faktury e-fakturowane za pomocą dodatku Faktury elektroniczne
+1. Generuj włoskie faktury e-fakturowane za pomocą Faktury elektroniczne
 2. Wyświetl dzienniki wykonywania i przejrzyj wyniki przetwarzania
 
 ### <a name="generate-electronic-invoices"></a>Generuj faktury elektroniczne
 
-Po włączeniu funkcji **Konfigurowalna integracja z dodatkiem Faktur elektronicznych** i aktywowaniu funkcji **IT00036** nie można już używać starego procesu Finance do generowania włoskich faktur elektronicznych. Zastępuje go nowym procesem o nazwie **Prześlij dokumenty elektroniczne**.
+Po włączeniu funkcji **Konfigurowalna integracja z Fakturami elektronicznymi** i aktywowaniu funkcji **IT00036** nie można już używać starego procesu Finance do generowania włoskich faktur elektronicznych. Zastępuje go nowym procesem o nazwie **Prześlij dokumenty elektroniczne**.
 
 Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty fakturowania elektronicznego.
 
 > [!NOTE]
-> Przed kontynuowaniem sprawdź, czy zostało zakończone wymagane ustawienie dla włoskich faktur elektronicznych. Aby uzyskać więcej informacji, zobacz [Faktury elektroniczne odbiorcy](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Należy pamiętać, że niektóre kroki konfiguracji opisane w tym temacie mogą być niedostępne z powodu aktywacji dodatku Faktury elektroniczne.
+> Przed kontynuowaniem sprawdź, czy zostało zakończone wymagane ustawienie dla włoskich faktur elektronicznych. Aby uzyskać więcej informacji, zobacz [Faktury elektroniczne odbiorcy](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Należy pamiętać, że niektóre kroki konfiguracji opisane w tym temacie mogą być niedostępne z powodu aktywacji Faktur elektronicznych.
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.
@@ -220,7 +218,7 @@ Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty 
 2. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Zapytania**.
 3. Wybierz przycisk **OK**, aby przesłać wybrane dokumenty.
 
-> ! [UWAGA] Podczas pierwszej próby przesłania dokumentu za pośrednictwem usługi zostaniesz poproszony o potwierdzenie połączenia z dodatkiem Faktury elektroniczne. Wybierz **Kliknij tutaj, aby połaczyć się się z usługą Elektronicznego przesyłania dokumentów**.
+> ! [UWAGA] Podczas pierwszej próby przesłania dokumentu za pośrednictwem usługi zostaniesz poproszony o potwierdzenie połączenia z funkcją Faktury elektroniczne. Wybierz **Kliknij tutaj, aby połaczyć się się z usługą Elektronicznego przesyłania dokumentów**.
 
 #### <a name="view-submission-logs"></a>Wyświetlanie dzienników przesyłania
 
@@ -242,9 +240,9 @@ Dzienniki przesyłania można wyświetlić dla wszystkich przesłanych dokument�
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-- [Omówienie dodatku Faktur elektronicznych](e-invoicing-service-overview.md)
-- [Rozpocznij pracę z dodatkiem Faktury elektroniczne](e-invoicing-get-started.md)
-- [Skonfiguruj dodatek Faktury elektroniczne](e-invoicing-setup.md)
+- [Omówienie fakturowania elektronicznego](e-invoicing-service-overview.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym](e-invoicing-get-started.md)
+- [Konfigurowanie fakturowania elektronicznego](e-invoicing-setup.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

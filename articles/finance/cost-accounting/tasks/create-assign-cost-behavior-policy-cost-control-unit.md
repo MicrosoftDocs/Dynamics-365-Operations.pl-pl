@@ -2,11 +2,9 @@
 title: Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
 description: Zachowanie kosztów to sklasyfikowanie kosztów jako stałe lub zmienne.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostBehaviorRule
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58f888a373af33832c24518fbb5483c3de2d1a58
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 757e5a5be94e7190f4dbb51d667dc8adec4b824a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208710"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826330"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Tworzenie i przypisywanie zasady zachowania kosztów do jednostki kontroli kosztów
 

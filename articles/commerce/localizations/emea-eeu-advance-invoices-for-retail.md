@@ -2,11 +2,9 @@
 title: Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 description: W tym temacie opisano, jak skonfigurować faktury zaliczkowe w aplikacji Commerce dla Europy Wschodniej.
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5199d745eea467408eed32c5cd5ba8f964fec497
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7bdd1d99ffbc1112226fd2db168cc5fc61615b9a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225726"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798838"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 

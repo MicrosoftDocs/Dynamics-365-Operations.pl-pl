@@ -1,27 +1,26 @@
 ---
 title: Definicje drzewa raportowania w raportach finansowych
 description: W tym artykule opisano definicje drzewa raportowania. Definicja drzewa raportowania to składnik raportu definiujący strukturę organizacji.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568782"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819945"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
@@ -74,7 +73,7 @@ Aby utworzyć definicję drzewa raportowania, należy wykonać następujące kro
     | Uwzględnij/położenie znaku       | W tej sekcji jest wyświetlona lista wymiarów zdefiniowanych w danych finansowych, a także liczba znaków w najdłużej wartości zdefiniowanej dla każdego wymiaru. Zaznacz pole wyboru obok wymiaru, aby uwzględnić ten wymiar w hierarchii drzewa raportowania. |
     | Hierarchia i zakresy segmentów     | Ta sekcja pokazuje hierarchię wymiarów. Na liście można przenosić wymiary, aby zmieniać kolejność raportowania. W polach **Od wymiaru** i **Do wymiaru** można określić zakres wartości dla każdego wymiaru. Jeśli nie określisz zakresu, wszystkie wartości wymiarów są wstawiane do drzewa raportowania.<blockquote>[!NOTE] Jeśli jest używanych kilka wymiarów, w wynikach zostaną zwrócone tylko kombinacje wymiarów, które zostały opublikowane.</blockquote> |
 
-    Aby obejrzeć zrzut ekranu pokazujący przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**, zobacz sekcję „Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów” w dalszej części tego artykułu.
+    Aby obejrzeć obraz pokazujący przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**, zobacz sekcję „Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów” w dalszej części tego artykułu.
 
 5. Aby utworzyć dodatkowe segmenty (np. poprzez podział jednego segmentu na dwa krótsze segmenty), kliknij prawidłową lokalizację w polu **Pozycja znaku**, a następnie kliknij przycisk **Podziel segment**.
 6. Aby scalić dwa segmenty w jeden, kliknij pole dowolnego z dwóch segmentów do scalenia, a następnie kliknij przycisk **Połącz segmenty**.
@@ -186,23 +185,23 @@ Oto struktura jednostek raportowania w poniższym drzewie raportowania:
 - Jednostki raportowania najniższego poziomu szczegółów (Home Sales, Auto Sales, Client Services i Operations) reprezentują działy w danych finansowych. Te jednostki raportowania znajdują się w zacienionym obszarze diagramu.
 - Jednostki podsumowania wyższego poziomu podsumowują informacje z jednostek szczegółów.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktura raportu zbiorczego Contoso — przykład 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktura jednostki raportowania — przykład 2
 
 Na diagramie poniżej drzewo raportowania ma strukturę organizacyjną podzieloną według funkcji biznesowych.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktura raportu zbiorczego Contoso — przykład 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów
 
 Ilustracja poniżej zawiera przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**. W tym przykładzie zwracanymi wynikami są kombinacje jednostek biznesowych, centrów kosztów i działów.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Wstaw jednostki raportowania](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Powstała definicja drzewa raportowania jest sortowana według jednostek biznesowych, następnie według centrów kosztów, a na końcu według działów. Wymiarem piątej jednostki raportowania jest **Jednostka biznesowa = \[001\], Centrum kosztu =\[\], Dział = \[022\]**. Identyfikuje on jednostkę raportowania dla kont, które są specyficzne dla jednostki biznesowej 001 i działu 022.
 
-[![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Ilustracja drzewa raportowania](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Przykłady akumulacji danych
 
@@ -210,15 +209,15 @@ Poniższe przykłady przedstawiają informacje, które mogą być używane w def
 
 #### <a name="example-1"></a>Przykład 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Wdrożenie w wielu firmach](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Przykład 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Wdrożenie w działach między firmami](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Raporty finansowe](financial-reporting-intro.md)
+[Raportowanie finansowe](financial-reporting-intro.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
