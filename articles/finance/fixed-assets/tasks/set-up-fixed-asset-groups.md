@@ -2,11 +2,9 @@
 title: Ustawianie grup środków trwałych
 description: W tym temacie pokazano sposób tworzenia nowej grupy środków trwałych.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetGroup, AssetGroupBookSetup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee3cec5c6abf08c88a61af2ec4bde6a863de2f95
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0c1b97193f09cfbb943522ca7af6bace9a14d9cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224652"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819561"
 ---
 # <a name="set-up-fixed-asset-groups"></a>Ustawianie grup środków trwałych
 
