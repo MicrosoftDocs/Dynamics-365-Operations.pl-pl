@@ -2,11 +2,9 @@
 title: Automatyczne propozycje płatności dla dostawcy
 description: W tym temacie wyjaśniono, w jaki sposób organizacje płacące dostawcom w harmonogramie cyklicznym mogą zautomatyzować proces generowania propozycji płatności dla dostawcy.
 author: kweekley
-manager: AnnBe
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d6a53b2cb48856083f3b2e40fca8adb92f4e5113
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250657"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820818"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatyczne propozycje płatności dla dostawcy
 

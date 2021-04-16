@@ -2,11 +2,9 @@
 title: Importowanie kursów wymiany walut
 description: Ten temat zawiera informacje o wymaganiach dotyczących importowania kursów referencyjnych dla walut obcych opublikowanych za pomocą bankowych kursów wymiany.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 37f3897f9f2a0db0bb7ccb6851fba36814ab0c7b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 20b8496bc3074eae6535eea4cfe0b254f2773e6a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249126"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823747"
 ---
 # <a name="import-currency-exchange-rates"></a>Importowanie kursów wymiany walut
 
@@ -35,9 +33,8 @@ W poniższych sekcjach opisano przepływ informacji używanych do konfigurowania
 ## <a name="configure-an-exchange-rate-provider"></a>Konfigurowanie dostawcy kursów wymiany
 Aby można było importować kursy wymiany walut, należy skonfigurować informacje wymagane przez dostawców oferujących kursy wymiany. Użyj strony **Konfigurowanie bankowych kursów wymiany**, aby wybrać dostawców kursu wymiany walut. Niektórzy dostawcy kursów wymiany są zawarci w danych demonstracyjnych w programie Dynamics 365 Finance. Poniższa tabela zawiera opisy formantów wspominanych na tej stronie.
 
-|           |                                                                                                                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pole** | **Opis**                                                                                                                                                                                                             |
+| Pole | opis                   |
+|-----------|-----------------------------------|
 | **Nazwa**  | Nazwa bankowego kursu wymiany.                                                                                                                                                                                     |
 | **Klucz**   | Unikatowy identyfikator informacji o poszczególnych konfiguracjach wymaganych przez dostawcę. Ta informacja jest automatycznie dodawana dla każdego dostawcy kursów wymiany dodanego przez użytkownika. |
 | **Value** | Informacje dla każdego klucza. Ta informacja jest dodawana dla każdego dostawcy kursów wymiany dodanego przez użytkownika.                                                                                         |
@@ -45,9 +42,8 @@ Aby można było importować kursy wymiany walut, należy skonfigurować informa
 ## <a name="import-currency-exchange-rates"></a>Importowanie kursów wymiany walut
 Można zaimportować kursy wymiany ze źródła dostawców kursów wymiany oraz dodać je na stronie **Kursy wymiany waluty**. Strona **Importowanie kursów wymiany walut** służy do importowania kursów wymiany. Poniższa tabela zawiera opisy pól, które są wymagane w celu pomyślnego wykonania procesu importu.
 
-|                                        |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pole**                              | **Opis**                                                                                                                                                                                                                                                                                                                                                             |
+| Pole | opis                   |
+|-----------|-----------------------------------|
 | **Typ kursu wymiany**                 | Typ kursu wymiany walut.                                                                                                                                                                                                                                                                                                                                                      |
 | **Bankowy kurs wymiany**             | Dostawca kursów wymiany walut.                                                                                                                                                                                                                                                                                                                                                  |
 | **Import od dnia**                       | Ten parametr określa, czy ma być importowany kurs z bieżącą datą, czy z konkretnego zakresu dat. Jeśli chcesz użyć zakresu dat, wprowadź lub wybierz daty początkową i końcową.                                                                                                                                                                                                                |

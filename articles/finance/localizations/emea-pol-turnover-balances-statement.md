@@ -2,11 +2,9 @@
 title: Zestawienie obrotów i sald dla Polski
 description: Ten temat zawiera informacje o funkcji zestawienia obrotów i sald dla Polski.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c8bae64fe3c59ea224e2e576c490b9a465ff3a9e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8cc933a22bbf47b357f0de6fb8a862b2d5135364
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236282"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823641"
 ---
 # <a name="turnover-and-balances-statement-for-poland"></a>Zestawienie obrotów i sald dla Polski
 

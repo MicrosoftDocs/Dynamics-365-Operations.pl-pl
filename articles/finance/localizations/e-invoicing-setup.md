@@ -1,12 +1,10 @@
 ---
-title: Skonfiguruj dodatek Faktury elektroniczne
-description: W tym temacie opisano sposób konfigurowania dodatku Faktur elektronicznych w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
+title: Konfigurowanie fakturowania elektronicznego
+description: W tym temacie opisano sposób konfigurowania Faktur elektronicznych w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,62 +15,62 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5821a512b2beaf7ba2b8015355f04562f7b3b38a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209953"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840011"
 ---
-# <a name="set-up-the-electronic-invoicing-add-on"></a>Skonfiguruj dodatek Faktury elektroniczne
+# <a name="set-up-electronic-invoicing"></a>Konfigurowanie fakturowania elektronicznego
 
 [!include [banner](../includes/banner.md)]
 
 
-Konfiguracja funkcji dodatku dla faktur elektronicznych to proces tworzenia wymaganej konfiguracji za pośrednictwem środowiska Regulatory Configuration Services (RCS) i publikowania tej konfiguracji na serwerze dodatku Faktury elektroniczne. Konfiguracja umożliwia tworzenie konfigurowalnych reguł, które umożliwiają dodatkowi Faktury elektroniczne używanie bezpiecznego protokołu przez Internet do komunikacji i wymiany danych z podmiotami zewnętrznymi za pośrednictwem usług internetowych.
+Konfiguracja funkcji dodatku dla faktur elektronicznych to proces tworzenia wymaganej konfiguracji za pośrednictwem środowiska Regulatory Configuration Services (RCS) i publikowania tej konfiguracji na serwerze dodatku Faktury elektroniczne. Konfiguracja umożliwia tworzenie konfigurowalnych reguł, które umożliwiają Faktury elektroniczne używanie bezpiecznego protokołu przez Internet do komunikacji i wymiany danych z podmiotami zewnętrznymi za pośrednictwem usług internetowych.
 
 Konfigurowalność opiera się na konfiguracji formatu raportowania elektronicznego (ER) jako środka do tworzenia treści, która jest wysyłana i odbierana za pośrednictwem plików cyfrowych. Zależy także od aranżacji akcji komunikacyjnych do wysyłania żądań i odbierania odpowiedzi z usług sieci Web innych firm bez konieczności pisania kodu.
 
 ## <a name="overview"></a>Omówienie
 
-„Funkcja dodatku Faktury elektroniczne” to ogólna nazwa zasobu, który jest skonfigurowany i opublikowany w celu wykorzystania serwera dodatku Faktury elektroniczne. Konfiguracja funkcji łączy między innymi wykorzystanie formatów konfiguracyjnych ER do tworzenia konfigurowalnych plików eksportu i importu oraz wykorzystanie akcji i przepływów akcji, aby umożliwić tworzenie konfigurowalnych reguł wysyłania żądań, importuj odpowiedzi i analizuj treść odpowiedzi.
+„Funkcja fakturowania elektronicznego” to ogólna nazwa zasobu, który jest skonfigurowany i opublikowany w celu wykorzystania serwera dodatku Faktury elektroniczne. Konfiguracja funkcji łączy między innymi wykorzystanie formatów konfiguracyjnych ER do tworzenia konfigurowalnych plików eksportu i importu oraz wykorzystanie akcji i przepływów akcji, aby umożliwić tworzenie konfigurowalnych reguł wysyłania żądań, importuj odpowiedzi i analizuj treść odpowiedzi.
 
 Na poniższej ilustracji przedstawiono główne składniki funkcji dodatkowej Faktury elektroniczne.
 
-![Omówienie funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Omówienie funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Z powodu różnic w formatach faktur i przepływach akcji ustawienia funkcji mogą być różne w zależności od kraju lub regionu lub zgodnie z wymaganiami biznesowymi.
 
-## <a name="set-up-the-electronic-invoicing-add-on-feature"></a>Skonfiguruj funkcje dodateku Faktury elektroniczne
+## <a name="set-up-the-electronic-invoicing-feature"></a>Ustawianie funkcji fakturowania elektronicznego
 
-Proces instalacji musi zostać ukończony w środowisku RCS. Wykonaj poniższe czynności, aby utworzyć nową funkcję dodatku Faktury elektroniczne.
+Proces instalacji musi zostać ukończony w środowisku RCS. Wykonaj poniższe czynności, aby utworzyć nową funkcję Faktury elektroniczne.
 
 1. Zaloguj się do swojego środowiska RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Dodatek Faktury elektroniczne**.
-3. Na stronie **Funkcje dodatku Faktur elektronicznych** wybierz opcję **Importuj**, aby zaimportować konfigurację modelu danych ER z repozytorium globalnego.
-4. Wybierz przycisk **Dodaj**, aby utworzyć elektroniczną funkcję dodawania dodatków do fakturowania. Funkcję można utworzyć od podstaw lub wyprowadzić z istniejącej funkcji dodatku Faktury elektroniczne.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Faktury elektroniczne**.
+3. Na stronie **Funkcje Faktur elektronicznych** wybierz opcję **Importuj**, aby zaimportować konfigurację modelu danych ER z repozytorium globalnego.
+4. Wybierz przycisk **Dodaj**, aby utworzyć elektroniczną funkcję faktur elektronicznych. Funkcję można utworzyć od podstaw lub wyprowadzić z istniejącej funkcji Faktury elektroniczne.
 
-    ![Dodawanie funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Dodawanie funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
-> Podczas tworzenia nowej funkcji dodawania dodatku Faktur elektronicznych jest ona ustawiona na numer wersji, a jej domyślnym stanem jest **Wersja robocza**.
+> Podczas tworzenia nowej funkcji Faktur elektronicznych jest ona ustawiona na numer wersji, a jej domyślnym stanem jest **Wersja robocza**.
 
 ### <a name="configurations"></a>Konfiguracje
 
-Konfiguracje zawierają konfiguracje formatu ER, które są wymagane do przekształceń i tworzenia plików, które będą wymieniane podczas komunikacji z usługami sieci Web innych firm. Funkcja dodatkowa Faktury elektroniczne może mieć dowolną liczbę konfiguracji formatu pliku ER, jaka jest wymagana, w oparciu o specyfikację techniczną integracji dostarczoną przez dostawcę usług internetowych.
+Konfiguracje zawierają konfiguracje formatu ER, które są wymagane do przekształceń i tworzenia plików, które będą wymieniane podczas komunikacji z usługami sieci Web innych firm. Funkcja Faktury elektroniczne może mieć dowolną liczbę konfiguracji formatu pliku ER, jaka jest wymagana, w oparciu o specyfikację techniczną integracji dostarczoną przez dostawcę usług internetowych.
 
-Wykonaj poniższe czynności, aby dodać formaty ER do funkcji dodatku Faktury elektroniczne.
+Wykonaj poniższe czynności, aby dodać formaty ER do funkcji Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Konfiguracje** wybierz opcję **Dodaj**, aby dodać konfiguracje formatów plików ER dla funkcji dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Konfiguracje** wybierz opcję **Dodaj**, aby dodać konfiguracje formatów plików ER dla funkcji dodatku Faktur elektronicznych.
 
-    ![Dodawanie konfiguracji funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Dodawanie konfiguracji funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
-    > Podczas tworzenia od podstaw funkcji dodatku Faktury elektroniczne należy ręcznie dodać wszystkie konfiguracje formatu pliku ER. W przypadku wyprowadzenia funkcji dodatku Faktury elektroniczne z istniejącej funkcji konfiguracje formatu pliku ER są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji dodatku Faktury elektroniczne.
+    > Podczas tworzenia od podstaw funkcji Faktury elektroniczne należy ręcznie dodać wszystkie konfiguracje formatu pliku ER. W przypadku wyprowadzenia funkcji Faktury elektroniczne z istniejącej funkcji konfiguracje formatu pliku ER są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji Faktury elektroniczne.
 
 2. Wybierz opcję **Edytuj**, aby otworzyć stronę **Projektant formatów**, na której możesz edytować konfigurację formatu pliku ER.
 
-    ![Edytowanie konfiguracji funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Edytowanie konfiguracji funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Podczas edytowania formatu stan wersji konfiguracji jest ustawiany na **Wersja robocza**.
@@ -83,20 +81,20 @@ Wykonaj poniższe czynności, aby dodać formaty ER do funkcji dodatku Faktury e
 
 ### <a name="feature-setups"></a>Konfiguracje funkcji
 
-Konfiguracje funkcji zawierają reguły komunikacji i zabezpieczeń z usługą sieci Web innej firmy. Dodatkowa funkcja Faktury elektroniczne może mieć tyle konfiguracji funkcji, ile jest wymaganych, w oparciu o regułę biznesową, którą chcesz zrealizować.
+Konfiguracje funkcji zawierają reguły komunikacji i zabezpieczeń z usługą sieci Web innej firmy. Funkcja Faktury elektroniczne może mieć tyle konfiguracji funkcji, ile jest wymaganych, w oparciu o regułę biznesową, którą chcesz zrealizować.
 
-Wykonaj poniższe czynności, aby dodać ustawienia funkcji do funkcji dodatku Faktury elektroniczne.
+Wykonaj poniższe czynności, aby dodać ustawienia funkcji do funkcji Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Ustawienia** wybierz opcję **Dodaj**, aby dodać ustawienia funkcji dla funkcji dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Ustawienia** wybierz opcję **Dodaj**, aby dodać ustawienia funkcji dla funkcji Faktur elektronicznych.
 
-    ![Dodawanie ustawień funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Dodawanie ustawień funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
-    > Podczas tworzenia od podstaw funkcji dodatku Faktury elektroniczne należy ręcznie dodać wszystkie wymagane ustawienia funkcji. W przypadku wyprowadzenia funkcji dodatku Faktury elektroniczne z istniejącej funkcji, wszystkie ustawienia funkcji są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji dodatku Faktury elektroniczne.
+    > Podczas tworzenia od podstaw funkcji Faktury elektroniczne należy ręcznie dodać wszystkie wymagane ustawienia funkcji. W przypadku wyprowadzenia funkcji Faktury elektroniczne z istniejącej funkcji, wszystkie ustawienia funkcji są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji Faktury elektroniczne.
 
 2. Wybierz opcję **Edytuj**, aby edytować ustawienia wersji funkcji.
 
-    ![Edycja ustawień funkcji dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Edytowanie ustawień funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Strona **Ustawienia wersji funkcji** umożliwia konfigurowanie akcji, reguł stosowania i zmiennych.
 
@@ -104,7 +102,7 @@ Wykonaj poniższe czynności, aby dodać ustawienia funkcji do funkcji dodatku F
 
 ### <a name="actions"></a>Akcje
 
-Akcje to wstępnie zdefiniowana lista operacji, która jest uruchamiana w kolejności sekwencyjnej. Ta lista przedstawia podział kroków, które są wymagane do pełnego wykonania funkcji dodatku Faktury elektroniczne. Akcje mogą obejmować, w tej samej funkcji dodatku Faktury elektroniczne, komunikację w obu kierunkach: wysyłanie zapytania o miejsce docelowe oraz otrzymywanie odpowiedzi i analizowanie jej treści.
+Akcje to wstępnie zdefiniowana lista operacji, która jest uruchamiana w kolejności sekwencyjnej. Ta lista przedstawia podział kroków, które są wymagane do pełnego wykonania funkcji Faktury elektroniczne. Akcje mogą obejmować, w tej samej funkcji Faktury elektroniczne, komunikację w obu kierunkach: wysyłanie zapytania o miejsce docelowe oraz otrzymywanie odpowiedzi i analizowanie jej treści.
 
 Każda akcja zawiera predefiniowaną listę parametrów, które są wymagane, aby akcja osiągnęła swój cel. Opcjonalnie można podać dodatkowe parametry.
 
@@ -255,7 +253,7 @@ Dostępne parametry różnią się w zależności od akcji wybranej na skrócone
 
 ### <a name="applicability-rules"></a>Reguły zastosowania
 
-Reguły stosowania umożliwiają tworzenie reguł logicznych, które określają kontekst użycia dla konfiguracji funkcji. Tym samym dopasowanie między kontekstem nadanym przez dokument biznesowy, który jest wysyłany do przetwarzania, wraz z kryteriami reguły zastosowania, określa, która funkcja dodatku Faktur elektronicznych jest używana do przetwarzania tego przesyłania.
+Reguły stosowania umożliwiają tworzenie reguł logicznych, które określają kontekst użycia dla konfiguracji funkcji. Tym samym dopasowanie między kontekstem nadanym przez dokument biznesowy, który jest wysyłany do przetwarzania, wraz z kryteriami reguły zastosowania, określa, która funkcja Faktur elektronicznych jest używana do przetwarzania tego przesyłania.
 
 #### <a name="set-up-applicability-rules"></a>Ustaw reguły zastosowania
 
@@ -290,7 +288,7 @@ W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Reguły 
 
 ### <a name="variables"></a>Zmienne
 
-Zmienne można tworzyć, a następnie stosować jako wartości wejściowe dla parametrów konkretnej akcji. Za ich pomocą można również wymieniać między usługą dodatkową Faktury Elektroniczne a klientem informacje będące wynikiem wykonania określonej akcji w ramach przepływu zgłoszeń.
+Zmienne można tworzyć, a następnie stosować jako wartości wejściowe dla parametrów konkretnej akcji. Za ich pomocą można również wymieniać między usługą Faktury Elektroniczne a klientem informacje będące wynikiem wykonania określonej akcji w ramach przepływu zgłoszeń.
 
 #### <a name="set-up-variables"></a>Ustaw zmienne
 
@@ -318,45 +316,45 @@ Podczas sprawdzania poprawności jest sprawdzana spójność całej konfiguracji
 
 ## <a name="environments"></a>Środowiska
 
-Środowisko dodatkowe Faktury elektroniczne musi być skojarzone z funkcją dodatku Faktury elektroniczne i włączone dla niego. Środowiska dodatku Faktury elektroniczne muszą zostać utworzone i opublikowane z wyprzedzeniem, poprzez skonfigurowanie funkcji globalizacji na koncie RCS organizacji.
+Środowisko Faktury elektroniczne musi być skojarzone z funkcją Faktury elektroniczne i włączone dla niego. Środowiska Faktury elektroniczne muszą zostać utworzone i opublikowane z wyprzedzeniem, poprzez skonfigurowanie funkcji globalizacji na koncie RCS organizacji.
 
-Wykonaj poniższe czynności, aby włączyć środowisko dodatkowe Faktury elektroniczne dla funkcji dodatku Faktury elektroniczne.
+Wykonaj poniższe czynności, aby włączyć środowisko Faktury elektroniczne dla funkcji Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **Środowiska** wybierz opcję **Włącz**, aby dodać środowisko dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Środowiska** wybierz opcję **Włącz**, aby dodać środowisko Faktur elektronicznych.
 2. W polu **Obowiązuje od** wprowadź datę, kiedy nowe środowisko zostanie wprowadzone.
 
-![Włączanie środowiska dodatku Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Włączanie środowiska Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organizacje
 
-Dodatkową funkcję Faktury elektroniczne można udostępniać w wielu organizacjach.
+Funkcję Faktury elektroniczne można udostępniać w wielu organizacjach.
 
-- Na stronie **Funkcje dodatku Faktur elektronicznych** na karcie **organizacje** wybierz pozycję **Udostępnij z** w celu dodania organizacji, z którą ma być udostępniana funkcja dodatku Faktur elektronicznych.
+- Na stronie **Funkcje Faktur elektronicznych** na karcie **organizacje** wybierz pozycję **Udostępnij z** w celu dodania organizacji, z którą ma być udostępniana funkcja Faktur elektronicznych.
 
-Aby zatrzymać udostępnianie funkcji dodatku Faktur elektronicznych w organizacji, wybierz opcję **Cofnij udostępnianie**.
+Aby zatrzymać udostępnianie funkcji Faktur elektronicznych w organizacji, wybierz opcję **Cofnij udostępnianie**.
 
 ## <a name="versions"></a>Wersje
 
-Wersje pomagają kontrolować czas trwania funkcji dodatku Faktur elektronicznych w sieci, zarządzając jej stanem. Można utworzyć nową wersję istniejącej funkcji dodatku Faktur elektronicznych, lub, jeśli została ukończona cała konfiguracja funkcji dodatku Faktur elektronicznych, można zmienić stan funkcji na **Zakończona**, a następnie **Opublikuj**.
+Wersje pomagają kontrolować czas trwania funkcji Faktur elektronicznych w sieci, zarządzając jej stanem. Można utworzyć nową wersję istniejącej funkcji Faktur elektronicznych, lub, jeśli została ukończona cała konfiguracja funkcji dodatku Faktur elektronicznych, można zmienić stan funkcji na **Zakończona**, a następnie **Opublikuj**.
 
-### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Utwórz nową wersję istniejącej funkcji dodatku Faktur elektronicznych
+### <a name="create-a-new-version-of-an-existing-electronic-invoicing-feature"></a>Utwórz nową wersję istniejącej funkcji Faktur elektronicznych
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na siatce po lewej, wybierz funkcję dodatku Faktur elektronicznych.
-2. Na karcie **Wersje** wybierz opcję **Nowa**, aby dodać nową wersję funkcji dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje Faktur elektronicznych** na siatce po lewej, wybierz funkcję Faktur elektronicznych.
+2. Na karcie **Wersje** wybierz opcję **Nowa**, aby dodać nową wersję funkcji Faktur elektronicznych.
 
-### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Zmiana stanu funkcji dodatku Faktur elektronicznych
+### <a name="change-the-status-of-the-electronic-invoicing-feature"></a>Zmiana stanu funkcji Faktur elektronicznych
 
-Wykonaj poniższe czynności, aby zarządzać cyklem życia funkcji dodatku Faktury elektroniczne.
+Wykonaj poniższe czynności, aby zarządzać cyklem życia funkcji Faktury elektroniczne.
 
-1. Na stronie **Funkcje dodatku Faktur elektronicznych** na siatce po lewej, wybierz funkcję dodatku Faktur elektronicznych.
+1. Na stronie **Funkcje Faktur elektronicznych** na siatce po lewej, wybierz funkcję Faktur elektronicznych.
 2. Na karcie **Wersje** wybierz pozycję **Zmień stan**, a następnie zmień stan z **Wersja robocza** na **Ukończone**.
-3. Zostanie wyświetlony monit o potwierdzenie zamiaru ukończenia funkcji dodatku Faktury elektroniczne i wszystkich jego składników. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
+3. Zostanie wyświetlony monit o potwierdzenie zamiaru ukończenia funkcji Faktury elektroniczne i wszystkich jego składników. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
 
     > [!NOTE]
-    > Po wybraniu opcji **Tak**, stan wersji konfiguracji, które są składnikami funkcji dodatku Faktury elektroniczne, jest automatycznie zmieniany z **Wersji roboczej** na **Ukończona**.
+    > Po wybraniu opcji **Tak**, stan wersji konfiguracji, które są składnikami funkcji Faktury elektroniczne, jest automatycznie zmieniany z **Wersji roboczej** na **Ukończona**.
 
 4. Wybierz **Zmień stan**, a następnie zmień stan z **Ukończone** na **Opublikuj**.
-5. Zostanie wyświetlony monit o potwierdzenie zamiaru publikacji funkcji dodatku Faktury elektroniczne i wszystkich jego składników dl globalnego repozytorium. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
+5. Zostanie wyświetlony monit o potwierdzenie zamiaru publikacji funkcji Faktury elektroniczne i wszystkich jego składników dl globalnego repozytorium. Wybierz opcję **Tak**, aby potwierdzić akcję, lub przycisk **Nie**, aby ją anulować.
 
     > [!NOTE]
     > Po wybraniu opcji **Tak**, stan wersji konfiguracji zostanie automatycznie zmieniony z **Zakończono** na **Udostępnione**.

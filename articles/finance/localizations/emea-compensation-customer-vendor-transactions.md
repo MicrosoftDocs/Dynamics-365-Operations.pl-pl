@@ -2,11 +2,9 @@
 title: Konfiguracja kompensacji odbiorców oraz dostawców
 description: Ten temat zawiera informacje o sposobach wykonywania procesu kompensat na kontach dostawców i odbiorców dla firm, które mają podstawowy adres działalności na Węgrzech lub w Polsce.
 author: mrolecki
-manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63fe1d081a80efa0fc794bf2f223d59019f6f908
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 368e8e85854cf53381f397304ea39c008dce16d1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236314"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839885"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Konfiguracja kompensacji odbiorców oraz dostawców
 

@@ -2,11 +2,9 @@
 title: Rozliczanie czeku postdatowanego od odbiorcy
 description: Można rozliczyć czek postdatowany po jego rozliczeniu przez bank.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPostDatedChecks, SystemDate, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abcd6532c294223e768d1a01d97309e35c30edbe
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f714e41f47a31bce16424de18878d2f5acb5028d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217417"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834556"
 ---
 # <a name="settle-a-postdated-check-from-a-customer"></a>Rozliczanie czeku postdatowanego od odbiorcy
 

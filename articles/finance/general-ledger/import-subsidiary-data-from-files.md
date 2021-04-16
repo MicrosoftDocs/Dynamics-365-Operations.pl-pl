@@ -2,11 +2,9 @@
 title: Importowanie danych oddziałów z plików
 description: W tym temacie wyjaśniono, jak przygotować dane z systemów zewnętrznych, aby można je było zaimportować do Microsoft Dynamics 365 Finance.
 author: jinniew
-manager: AnnBe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: f8e220599d8df9f560da1862f0909cbbaa3c7330
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0e122222e5d01d6616c1f1a9ce7c36f6aa901749
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249102"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826649"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importowanie danych oddziałów z plików
 

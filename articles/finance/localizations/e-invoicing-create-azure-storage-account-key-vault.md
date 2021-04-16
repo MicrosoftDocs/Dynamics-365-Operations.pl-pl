@@ -2,11 +2,9 @@
 title: Utwórz konto magazynu Azure i Magazyn kluczy
 description: W tym temacie opisano sposób tworzenia konta magazynu Azure i magazynu kluczy.
 author: gionoder
-manager: AnnBe
 ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
-ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
+ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/22/2021
-ms.locfileid: "5479352"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840227"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -44,7 +42,7 @@ W tym temacie przedstawiono dwa główne kroki:
 
 ## <a name="set-up-the-azure-storage-account-to-get-the-storage-account-uri"></a>Skonfiguruj konto magazynu Azure, aby uzyskać identyfikator URI konta magazynu
 
-1. Umożliwia otwarcie konta magazynu, które ma być używane z dodatkiem Faktury elektroniczne.
+1. Umożliwia otwarcie konta magazynu, które ma być używane z funkcją Faktury elektroniczne.
 2. Przejdź do **Usługa Blob** \> **Kontenery** i utwórz nowy kontener.
 3. Wprowadź nazwę kontenera i ustaw dla pola **Poziom dostępu publicznego** wartość **Prywatne (brak dostępu anonimowego)**.
 4. Otwórz kontener i przejdź do **Ustawienia \> Polityka dostępu**.
@@ -63,12 +61,12 @@ W tym temacie przedstawiono dwa główne kroki:
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Skonfiguruj Magazyn kluczy do przechowywania identyfikatora URI konta magazynu
 
-1. Otwórz magazyn kluczy, którego zamierzasz używać z dodatkiem Faktury elektroniczne.
+1. Otwórz magazyn kluczy, którego zamierzasz używać z Faktury elektroniczne.
 2. Przejdź do **Ustawienia** \> **Wpis tajny**, a następnie wybierz opcję **Generuj/Importuj**, aby utworzyć nowy wpis tajny.
 3. Na stronie **Tworzenie wpisu tajnego** w polu **Opcje przekazywania** wybierz opcję **Ręcznie**.
 4. Pozwala wprowadzić nazwę wpisu tajnego. Ta nazwa będzie używana podczas instalacji usługi w usłudze Regulatory Configuration Service (RCS) i będzie nazywana *nazwą klucza tajnego magazynu kluczy*.
 5. W polu **Wartość** wybierz opcję **Identyfikator URI podpisu dostępu udostępnionego**, a następnie wybierz opcję **Utwórz**.
-6. Skonfiguruj zasady dostępu, aby nadać dodatkowi Faktury elektroniczne odpowiedni poziom bezpiecznego dostępu do utworzonego klucza tajnego. Przejdź do **Ustawienia \> Zasad dostępu** i wybierz pozycję **Dodaj zasady dostępu**.
+6. Skonfiguruj zasady dostępu, aby nadać funkcji Faktury elektroniczne odpowiedni poziom bezpiecznego dostępu do utworzonego klucza tajnego. Przejdź do **Ustawienia \> Zasad dostępu** i wybierz pozycję **Dodaj zasady dostępu**.
 7. Umożliwia ustawienie tajnych uprawnień dla operacji **Rozpocznij** i **Lista**.
 
     ![Udzielanie dostępu do usługi](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)

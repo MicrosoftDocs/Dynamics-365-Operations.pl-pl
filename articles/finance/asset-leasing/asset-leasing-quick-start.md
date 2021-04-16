@@ -2,11 +2,9 @@
 title: Wynajem składnika majątku — rozpoczęcie
 description: W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b4f1bdf74dc5319f0b3ba145969b064ad33d5010
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229605"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814135"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
@@ -41,16 +39,16 @@ Wynajęty składnik majątku zawiera następujące główne składniki:
 
 - **Umowa wynajmu** — najmodawca jest właścicielem składnika aktywów i zgadza wynająć najemcy składnik majątku w wybranym okresie w zamian za okresowe opłaty z tytułu wynajmu. Oprócz umowy prawnej między najmodawcą a najemcą umowa najmu zawiera decyzje dotyczące zarządzania, takie jak prawdopodobieństwo użycia opcji odnowienia i przeniesienia własności.
 
-- **Obliczanie i klasyfikacja wynajmu według standardu księgowego** — obliczanie i klasyfikacja wynajmu identyfikuje standard rachunkowości, który będzie stosowany w początkowej i późniejszej wymiarze, a także test klasyfikacji określający jaki będzie typ wynajmu. Wynajem może być leasingiem finansowym, leasingiem operacyjnym, dzierżawą krótkoterminową lub wynajmem o niskiej wartości. System oblicza również wartość bieżącą przyszłych opłat z tytułu wynajmu w celu wyceny i klasyfikacji.
+- **Obliczanie i klasyfikacja wynajmu według standardu księgowego** — obliczanie i klasyfikacja wynajmu identyfikuje standard rachunkowości, który będzie stosowany w początkowej i późniejszej wymiarze, a także test klasyfikacji określający jaki będzie typ wynajmu. Wynajem może być leasingiem finansowym, leasingiem operacyjnym, dzierżawą krótkoterminową lub wynajmem o niskiej wartości. System oblicza również wartość netto bieżącą przyszłych opłat z tytułu wynajmu w celu wyceny i klasyfikacji.
 
-- **Transakcje wynajmu** — wynajem składnika majątku umożliwia początkowe uznawanie składnika majątku z prawem do użytkowania do leasingu w bilansie, a także dalszych miar w leasingu w bilansie lub poza bilansem. Początkowa transakcja uznania mierzy bieżącą wartość przyszłych opłat z tytułu wynajmu. Te dane służą do określenia wartości początkowego składnika majątku z prawem do użytkowania i zobowiązania z tytułu wynajmu, które ma wpływ na bilans organizacji. Kolejne miary miesięcznej transakcji wynajmu obejmują kumulację odsetek za zobowiązanie z tytułu wynajmu, które zwiększa zobowiązanie z tytułu wynajmu. Mierzy również naliczenie opłaty z tytułu wynajmu, które zmniejszają zobowiązanie z tytułu wynajmu, a które następnie zostaną wypłacone najmodawcy. Miara obejmuje także amortyzację składnika majątku z prawem do użytkowania.
+- **Transakcje wynajmu** — wynajem składnika majątku umożliwia początkowe uznawanie składnika majątku z prawem do użytkowania do leasingu w bilansie, a także dalszych miar w leasingu w bilansie lub poza bilansem. Początkowa transakcja uznania mierzy bieżącą wartość netto przyszłych opłat z tytułu wynajmu. Te dane służą do określenia wartości początkowego składnika majątku z prawem do użytkowania i zobowiązania z tytułu wynajmu, które ma wpływ na bilans organizacji. Kolejne miary miesięcznej transakcji wynajmu obejmują kumulację odsetek za zobowiązanie z tytułu wynajmu, które zwiększa zobowiązanie z tytułu wynajmu. Mierzy również naliczenie opłaty z tytułu wynajmu, które zmniejszają zobowiązanie z tytułu wynajmu, a które następnie zostaną wypłacone najmodawcy. Miara obejmuje także amortyzację składnika majątku z prawem do użytkowania.
 
   W przypadku wynajmu poza bilansem system oblicza wydatki na wynajem liniowy w zależności od tego, który z nich jest krótszy: ekonomiczny okres użytkowania składnika aktywów lub okres wynajmu. Korekty wynajmu mierzą modyfikacje umowy, takie jak wydłużenie lub rozszerzenie wynajmu transakcje utraty wartości, w których używane są składniki majątku z prawem do użytkowania w odniesieniu do kosztów nie do odzyskania.
 
   Wynajem składnika majątku jest integrowany z księgą główną w celu zapewnienia, że wszystkie zaksięgowane transakcje wynajmu zaktualizują plan kont. Wynajem składnika majątku jest integrowany jest integrowany z rozrachunkami z dostawcami w celu śledzenia faktur najmodawcy w rozrachunkach z dostawcami i obsługuje przyszłe płatności. Integracja ze środkami trwałymi pozwala śledzić dzierżawy w rejestrze środków trwałych i księgować składniki majątku z prawem do użytkowania, w tym wstępne uznanie, amortyzację i utratę wartości środka trwałego, z poziomu środków trwałych.   
 
 ## <a name="asset-leasing-components"></a>Komponenty wynajmu składnika majątku 
-Wynajem składnika majątku mapuje informacje o wynajmie, harmonogramy płatności, daty rozpoczęcia i zakończenia oraz częstotliwość płatności. Automatyzuje również obliczenia dotyczące wartości obecnej, miesięcznej opłaty z tytułu wynajmu, odsetek i amortyzacji wynajmu. W zależności od konfiguracji system wykonuje testy klasyfikacji wynajmu. System tworzy także i księguje odpowiednie transakcje leasingu, które są oparte na systemie zdefiniowanym przez stosowany standard rachunkowy.
+Wynajem składnika majątku mapuje informacje o wynajmie, harmonogramy płatności, daty rozpoczęcia i zakończenia oraz częstotliwość płatności. Automatyzuje również obliczenia dotyczące wartości netto obecnej, miesięcznej opłaty z tytułu wynajmu, odsetek i amortyzacji wynajmu. W zależności od konfiguracji system wykonuje testy klasyfikacji wynajmu. System tworzy także i księguje odpowiednie transakcje leasingu, które są oparte na systemie zdefiniowanym przez stosowany standard rachunkowy.
 
 Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmonogram płatności, testy klasyfikacji wynajmu i ksiąg wynajmu oraz odpowiadające im transakcje księgowania.
 
@@ -62,13 +60,13 @@ Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmo
 
 - **Okres użyteczności środków trwałych** — oznacza pozostałe okresy użyteczności środka trwałego, od daty rozpoczęcia wynajmu. Okres użyteczności środka trwałego będzie uwzględniany w równaniu testowym klasyfikacji. Różni się ona od okresu użyteczności zdefiniowanego w środkach trwałych.
 
-- **Krańcowa stopa procentowa** — to jest stopa procentowa, która zostanie użyta do obliczenia wartości obecnej. System użyje stawki niejawnej, jeśli jest zdefiniowana w danych wynajmu w celu obliczenia wartości bieżącej opłaty z tytułu wynajmu. Jeśli niejawna stawka nie jest zdefiniowana, system będzie używał krańcowej stopy procentowej.
+- **Krańcowa stopa procentowa** — to jest stopa procentowa, która zostanie użyta do obliczenia wartości netto obecnej. System użyje stawki niejawnej, jeśli jest zdefiniowana w danych wynajmu w celu obliczenia wartości netto bieżącej opłaty z tytułu wynajmu. Jeśli niejawna stawka nie jest zdefiniowana, system będzie używał krańcowej stopy procentowej.
 
 - **Typ annuity** — jest to opłata z tytułu wynajmu należna albo na początku okresu płatności, albo na koniec okresu. Może to być płatność zaliczkowa lub annuita należna (na początku okresu opłaty z tytułu wynajmu) lub zwykłą annuita (na koniec okresu opłaty z tytułu wynajmu).
 
   Pierwszy miesiąc będzie traktowany jako numer okresu zero dla płatności z góry pierwszy miesiąc będzie traktowany jako okres jeden dla zaległości w płatnościach.
 
-- **Interwał łączenia** — reprezentuje liczbę okresów łączenia odsetek na rok. Może to być comiesięcznie (12 okresów rocznie), kwartalnie (4 okresy rocznie), pół roku (2 okresy na rok) lub rocznie (1 okres na rok). Liczba okresów zostanie uwzględniona w obliczeniu wartości obecnej.
+- **Interwał łączenia** — reprezentuje liczbę okresów łączenia odsetek na rok. Może to być comiesięcznie (12 okresów rocznie), kwartalnie (4 okresy rocznie), pół roku (2 okresy na rok) lub rocznie (1 okres na rok). Liczba okresów zostanie uwzględniona w obliczeniu wartości netto obecnej.
 
 - **Data rozpoczęcia** — jest to data, z którą najmodawca udostępnia składnik aktywów do użycia przez najemcę. Wszystkie obliczenia i transakcje dotyczące wynajmu będą oparte na dacie rozpoczęcia. Data rozpoczęcia powinna przypadać na początku okresu (pierwszy dzień miesiąca), aby zapewnić dokładność kolejnych obliczeń. Można użyć pola **Data podpisu umowy** do wprowadzenia daty rzeczywistej, kiedy umowa została podpisana.
 
@@ -81,7 +79,7 @@ Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmo
 
 - **Częstotliwość płatności** — wskazuje, czy płatność jest miesięczna, kwartalna, półroczna czy coroczna. Data końcowa jest obliczana automatycznie na podstawie daty rozpoczęcia i liczby wprowadzonych okresów.
 
-- **Harmonogram płatności** — jest to obliczona wartość bieżąca na podstawie długości okresu objętego opłatami z tytułu wynajmu, kwotą płatności, okresów łączenia oraz typu annuity.
+- **Harmonogram płatności** — jest to obliczona wartość netto bieżąca na podstawie długości okresu objętego opłatami z tytułu wynajmu, kwotą płatności, okresów łączenia oraz typu annuity.
 
 - **Okresy** — są to okresy wynajmu odpowiadające interwałowi łączenia i typowi annuity. Interwał łączenia określa sposób podziału okresów. Można skonfigurować następujące interwały łączenia:
 
@@ -92,10 +90,10 @@ Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmo
 
 Pierwszy okres rozpoczyna się od okresu zero, jeśli typem annuity jest annuita należna. W przeciwnym wypadku pierwszy okres rozpoczyna się od okresu jeden, jeśli typem annuity są zaległości w płatnościach.
 
-- **Miesiące** — wskazuje liczbę miesięcy kalendarzowych w okresie trwania wynajmu. Kwota płatności to kwota należna zgodnie z definicją w częstotliwości płatności. Obliczona wartość bieżąca to opłata z tytułu wynajmu oparta na wartości bieżącej dla okresu, interwałach łączenia oraz krańcowej stopie procentowej.
+- **Miesiące** — wskazuje liczbę miesięcy kalendarzowych w okresie trwania wynajmu. Kwota płatności to kwota należna zgodnie z definicją w częstotliwości płatności. Obliczona wartość netto bieżąca to opłata netto z tytułu wynajmu oparta na wartości bieżącej dla okresu, interwałach łączenia oraz krańcowej stopie procentowej.
 
 > [!NOTE] 
-> Wartość bieżąca jest obliczana na podstawie rozliczonego równania przepływu gotówki.
+> Wartość netto bieżąca jest obliczana na podstawie rozliczonego równania przepływu gotówki.
 
 - **Księgi** — są to wstępnie skonfigurowane ustawienia, które będą skojarzone z każdym wynajmem. Księga określa stosowany standard księgowania, typy wynajmu i próg używany jako podstawa dla testów klasyfikacji. Testy klasyfikacji służą do automatycznego określania typu wynajmu.
 
@@ -107,7 +105,7 @@ Pierwszy okres rozpoczyna się od okresu zero, jeśli typem annuity jest annuita
 
   - **Okres wynajmu** — jest to wartość procentowa okresu użyteczności, który ma być używany w teście klasyfikacji. System klasyfikuje wynajem jako finansowy, jeśli typ wynajmu jest ustawiany automatycznie i jeśli okres wynajmu w okresie użyteczności środka trwałego, jest większy lub równy wartości procentowej określonej w tym polu.
 
-  - **Wartość bieżąca** — jest to wartość procentowa wartości godziwej składnika majątku, która ma być używana w teście klasyfikacji. System klasyfikuje wynajem jako finansowy, jeśli typ wynajmu jest ustawiany automatycznie i jeśli wartość bieżąca przyszłych opłat z tytułu wynajmu w okresie użyteczności środka trwałego jest większa lub równy wartości procentowej określonej w tym polu.
+  - **Wartość bieżąca netto** — jest to wartość procentowa wartości godziwej składnika majątku, która ma być używana w teście klasyfikacji. System klasyfikuje wynajem jako finansowy, jeśli typ wynajmu jest ustawiany automatycznie i jeśli wartość netto bieżąca przyszłych opłat z tytułu wynajmu w okresie użyteczności środka trwałego jest większa lub równy wartości procentowej określonej w tym polu.
 
   - **Wynajem krótkoterminowy** — jeśli okres wynajmu jest mniejszy lub równy zdefiniowanej wartości, wynajem zostanie zaklasyfikowany jako krótkoterminowy.
 
@@ -115,7 +113,7 @@ Pierwszy okres rozpoczyna się od okresu zero, jeśli typem annuity jest annuita
 
   - **Klasyfikacja wynajmu i transakcje** Klasyfikacja wynajmu jest procesem automatycznym, który umożliwia klasyfikowanie wynajmów na podstawie określonych progów w księgach, oprócz innych kryteriów testowania klasyfikacji w celu określenia, czy leasing jest leasingiem finansowym, leasingiem operacyjnym, wynajmem krótkoterminowym czy wynajmem o niskiej wartości. Umożliwia to również określenie, czy stosowany jest proces odroczonego czynszu.
 
-Do testów klasyfikacji należą Transfer własności, Opcja zakupu, Okres wynajmu, Obecna wartość i Unikatowy środek trwały. Na poniższym diagramie przedstawiono testy klasyfikacji wynajmu.
+Do testów klasyfikacji należą Transfer własności, Opcja zakupu, Okres wynajmu, Obecna wartość netto i Unikatowy środek trwały. Na poniższym diagramie przedstawiono testy klasyfikacji wynajmu.
 
 [![Testy klasyfikacji wynajmu](./media/overview-03.png)](./media/overview-03.png)
 
@@ -124,22 +122,22 @@ Każdy typ wynajmu różnie obsługuje księgowanie w zależności od transakcji
 ## <a name="asset-leasing-transactions"></a>Wynajem składnika majątku — transakcje
 
 #### <a name="initial-recognition"></a>Początkowe rozpoznawanie 
-Podczas początkowego uznawania wynajętego składnika majątku używana jest obliczona wartość obecna, co może być zgłaszane w bilansie. Odpowiedni wpis księgowy jest generowany automatycznie. Ta transakcja obciąża rachunek składnika majątku z prawem do użytkowania i uznaje rachunek zobowiązania leasingu operacyjnego w następujący sposób: Jeśli środek trwały jest skojarzony z wynajmem, wpis początkowego uznania zostanie określony jako nabycie środka trwałego. W tym scenariuszu należy zdefiniować profil księgowania środków trwałych, który będzie księgowany na koncie składnika majątku z prawem do użytkowania. 
+Podczas początkowego uznawania wynajętego składnika majątku używana jest obliczona wartość obecna netto, co może być zgłaszane w bilansie. Odpowiedni wpis księgowy jest generowany automatycznie. Ta transakcja obciąża rachunek składnika majątku z prawem do użytkowania i uznaje rachunek zobowiązania leasingu operacyjnego w następujący sposób: Jeśli środek trwały jest skojarzony z wynajmem, wpis początkowego uznania zostanie określony jako nabycie środka trwałego. W tym scenariuszu należy zdefiniować profil księgowania środków trwałych, który będzie księgowany na koncie składnika majątku z prawem do użytkowania. 
 
 > [!NOTE]
 > Leasing operacyjny jest obsługiwany tylko przez US GAAP ASC 842.
 
 |     Typ                                          |     Uznanie                     |     Strona kredytowa                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Leasing operacyjny w ramach US GAAP              |     Składnik majątku z prawem do użytkowania      |     Zobowiązanie z tytułu leasingu operacyjnego       |
-|     Leasing finansowy według MSSF i US GAAP        |     Składnik majątku z prawem do użytkowania      |     Zobowiązanie z tytułu leasingu operacyjnego       |
+|     Leasing operacyjny w ramach US GAAP            |     Składnik majątku z prawem do użytkowania        |     Zobowiązanie z tytułu leasingu operacyjnego     |
+|     Leasing finansowy według MSSF i US GAAP      |     Składnik majątku z prawem do użytkowania        |     Zobowiązanie z tytułu leasingu finansowego       |
 
 #### <a name="lease-liability-amortization-interest-expense"></a>Amortyzacja zobowiązania z tytułu wynajmu (koszty odsetek) 
 Odsetki dla wynajmu są uznawane przez obliczanie odsetek dla salda początkowego, okresu opłat z tytułu wynajmu, stopy procentowej odsetek oraz okresów złożonych w ciągu roku. Kwota odsetek zwiększa stan konta zobowiązanie z tytułu wynajmu operacyjnego przez jego uznanie, co będzie widoczny w bilansie organizacji. Transakcja obejmuje również zapis obciążenia na koncie kosztów odsetek, co jest uwzględnione w zestawieniu zysków i strat w leasingu finansowym oraz na koncie wydatków leasingowych dla leasingu operacyjnego.
 
-|     Typ                                          |     Uznanie                     |     Strona kredytowa                            |
+|     Typ                                          |     Uznanie                     |     Środki                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Wpis zobowiązania z tytułu leasingu operacyjnego w ramach US GAAP ASC 842    |     Odsetki          |     Zobowiązanie z tytułu leasingu operacyjnego         |
+|     Wpis zobowiązania z tytułu leasingu operacyjnego w ramach US GAAP ASC 842    |     Wydatek z tytułu wynajmu         |     Zobowiązanie z tytułu leasingu operacyjnego         |
 |     Wpis zobowiązania z tytułu leasingu finansowego w ramach MSSF i US GAAP      |     Odsetki          |     Zobowiązanie z tytułu leasingu finansowego           |
 
 #### <a name="accrued-lease-payment"></a>Naliczona opłata z tytułu wynajmu
@@ -151,7 +149,7 @@ Naliczona opłata z tytułu wynajmu jest uznawana za przyszłą płatność z ty
 |     Leasing finansowy według MSSF i US GAAP        |  Zobowiązanie z tytułu leasingu finansowego      |   Zobowiązanie wobec dostawcy (księga podrzędna)/Noty zobowiązań  |
 
 #### <a name="asset-depreciation"></a>Amortyzacja składnika majątku
-Składnik majątku z prawem do użytkowania jest amortyzowany w zależności od tego, co jest krótsze — okres użyteczności składnika majątku czy okres leasingu. Metoda obliczania amortyzacji dla US GAAP (ASC 842) jest oparta na różnicy między liniowymi wydatkami na wynajem a kwotą odsetek. Odsetki od leasingu finansowego są obliczane za pomocą standardowej metody liniowej. Amortyzacja wynajmu ma wpływ na zestawienie zysków i strat dzięki obciążeniu kosztami odsetek. Bilans jest zmieniany przez uznanie narastającego rachunku składnik majątku z prawem do użytkowania w leasingu finansowym. W przypadku leasingu operacyjnego amortyzacja jest uznawana na rachunku wydatków leasingowych. Jeśli wynajem jest połączony z środkiem trwałym, transakcje amortyzacji będą wykonywane tylko z modułu środków trwałych. 
+Składnik majątku z prawem do użytkowania jest amortyzowany w zależności od tego, co jest krótsze — okres użyteczności składnika majątku czy okres leasingu. Metoda obliczania amortyzacji dla leasingu operacyjnego US GAAP (ASC 842) jest oparta na różnicy między liniowymi wydatkami na wynajem a kwotą odsetek. Wycofanie leasingu finansowego są obliczane za pomocą standardowej metody liniowej. Amortyzacja wynajmu ma wpływ na zestawienie zysków i strat dzięki obciążeniu kosztami odsetek. Bilans jest zmieniany przez uznanie narastającego rachunku składnik majątku z prawem do użytkowania w leasingu finansowym. Jeśli wynajem jest połączony z środkiem trwałym, transakcje amortyzacji będą wykonywane tylko z modułu środków trwałych. 
 
 |     Typ                                          |     Uznanie                     |     Strona kredytowa                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |

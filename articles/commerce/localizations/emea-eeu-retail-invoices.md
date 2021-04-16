@@ -2,11 +2,9 @@
 title: Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach wschodnioeuropejskich
 description: W tym temacie opisano sposób konfigurowania informacji do faktur dla odbiorców i zwrotnych zamówień sprzedaży w krajów środkowoeuropejskich.
 author: epopov
-manager: annbe
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4f5ac2403b5d47f5443e8166fd2bd69d20924628
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f79208b2508ed3879aa626389564b10a1d78c165
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225706"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798828"
 ---
 # <a name="customer-invoices-and-return-sales-orders-in-eastern-european-countries"></a>Faktury dla odbiorcy i zwrotne zamówienia sprzedaży w krajach wschodnioeuropejskich
 
