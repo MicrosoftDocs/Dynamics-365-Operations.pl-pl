@@ -2,11 +2,9 @@
 title: Likwidacja środka trwałego z wykorzystaniem faktury niezależnej
 description: W tym temacie wyjaśniono sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a24deecd27c977474ef3457063040157a4e3c7d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c0ed2c3a43f3167735b816354ea681aa8d9a7fb9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205093"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817132"
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Likwidacja środka trwałego z wykorzystaniem faktury niezależnej
 

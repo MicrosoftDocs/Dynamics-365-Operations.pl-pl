@@ -2,11 +2,9 @@
 title: Mechanizm opłaty zwrotnej dla schematu VAT/GST
 description: W tym temacie opisano, jak skonfigurować odwrócony podatek od towarów i usług (VAT) dla krajów europejskich i Arabii Saudyjskiej i Singapurze.
 author: epodkolz
-manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 007fab0594c443a3060d6b6640b032ec270f5298
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236251"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818310"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanizm opłaty zwrotnej dla schematu VAT/GST
 

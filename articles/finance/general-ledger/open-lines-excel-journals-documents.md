@@ -2,11 +2,9 @@
 title: Publikowanie wierszy arkuszy i dokumentów z programu Excel
 description: W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Znajdują się tu informacje dotyczące różnych szablonów, których można używać w zależności od typu wprowadzanych transakcji.
 author: kweekley
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f87ce1dcbae779f875abcbffd1781bbf076b1b7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2211f666b2b1dc7600639007794ab8133b58b2cb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230257"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834483"
 ---
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publikowanie wierszy arkuszy i dokumentów z programu Excel
 
@@ -32,9 +30,8 @@ W tym temacie wyjaśniono, jak wprowadzać i publikować wiersze arkuszy finanso
 
 Użytkownicy mogą wprowadzać i publikować wiersze arkuszy finansowych z programu Microsoft Excel. Gdy użytkownik utworzy arkusz, przycisk **Otwórz wiersze w programie Excel** powoduje wyświetlanie dostępnych szablonów. Szablony są przeznaczone do obsługi określonych scenariuszy, jednak nie każda kombinacja typu konta jest obsługiwana w arkuszu. W poniższej tabeli przedstawiono dostępne szablony i obsługiwane przez nie typy kont.
 
-|                          |                                                                                                                         |                                                                                         |
+| Szablon             | Obsługiwane typy kont | Jak uzyskać dostęp do szablonu                                                          |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Szablon**             | **Obsługiwane typy kont**                                                                                             | **Jak uzyskać dostęp do szablonu**                                                          |
 | Wiersze arkusza księgi     | Konto: Konto przeciwstawne Księga, Odbiorca, Dostawca, Bank: Międzyfirmowe Księga, Odbiorca, Dostawca, Bank jest obsługiwane.       | Arkusze finansowe                                                                         |
 | Rejestr faktur         | Konto: Konto przeciwstawne Dostawca: Międzyfirmowe Księga nie jest obsługiwane.                                                    | Rejestr faktur rozrachunków z dostawcami                                                                     |
 | Arkusz faktur          | Konta: Konto przeciwstawne Dostawca: Międzyfirmowe Księga jest obsługiwane.                                                      | Arkusz faktur rozrachunków z dostawcami                                                                      |

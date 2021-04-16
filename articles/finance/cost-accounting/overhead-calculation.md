@@ -2,11 +2,9 @@
 title: Obliczenie narzutu
 description: W tym temacie opisano typowe procesy służące obliczaniu i podzielaniu kosztów ogólnych.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation, CAMOverheadRateCalculationJournalEntry, CAMFormulaAllocationBase
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 882804141a6b520e2420343958c7a6b02a7e09ae
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2dddc22128621dc148a253cd568430587f294544
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208854"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822910"
 ---
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 

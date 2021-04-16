@@ -1,12 +1,10 @@
 ---
-title: Skonfiguruj dodatek do fakturowania elektronicznego w Regulatory Configuration Services (RCS)
-description: W tym temacie wyjaśniono, jak skonfigurować dodatek Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
+title: Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
+description: W tym temacie wyjaśniono, jak skonfigurować Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,32 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592629"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840251"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Skonfiguruj dodatek do fakturowania elektronicznego w Regulatory Configuration Services (RCS)
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Ten temat zawiera informacje o możliwościach konfiguracyjnych Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
 
-Ten temat zawiera informacje o możliwościach konfiguracyjnych dodatku Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
-
-To dzięki możliwościom konfiguracji dodatek Fakturowanie elektroniczne pomaga spełnić wymagania biznesowe i regulacyjne dotyczące faktur elektronicznych bez konieczności kodowania. A w scenariuszach, w których tekstury elektroniczne muszą być elektronicznie zatwierdzane przez usługi sieciowe, opcje konfiguracyjne również spełnić wymagania dotyczące wymiany wiadomości z usługami sieciowymi bez wykonania kodu.
+To dzięki możliwościom konfiguracji funkcji Fakturowanie elektroniczne pomaga spełnić wymagania biznesowe i regulacyjne dotyczące faktur elektronicznych bez konieczności kodowania. A w scenariuszach, w których tekstury elektroniczne muszą być elektronicznie zatwierdzane przez usługi sieciowe, opcje konfiguracyjne również spełnić wymagania dotyczące wymiany wiadomości z usługami sieciowymi bez wykonania kodu.
 
 ## <a name="electronic-reporting"></a>Raportowanie elektroniczne
 
-Raportowanie elektroniczne (ER) obsługuje dodatek Fakturowanie elektroniczne.
+Raportowanie elektroniczne (ER) obsługuje Fakturowanie elektroniczne.
 
-Mapowanie i formaty modelu danych to konfigurowalne komponenty, które są tworzone i obsługiwane za pośrednictwem ER i używane w dodatku Fakturowanie elektroniczne. Projektant formatu ER to narzędzie do tworzenia i obsługi formatów plików. Służy do konfigurowania funkcji fakturowania elektronicznego.
+Mapowanie i formaty modelu danych to konfigurowalne komponenty, które są tworzone i obsługiwane za pośrednictwem ER i używane w Fakturowanie elektroniczne. Projektant formatu ER to narzędzie do tworzenia i obsługi formatów plików. Służy do konfigurowania funkcji fakturowania elektronicznego.
 
 Aby uzyskać więcej informacji, zobacz [Omówienie raportowania elektronicznego (RE)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="electronic-invoicing-features"></a>Funkcje fakturowania elektronicznego
 
-Funkcje fakturowania elektronicznego są odpowiedzialne za generowanie faktur elektronicznych za pośrednictwem dodatku Fakturowanie elektroniczne. Hermetyzują reguły konfiguracji i używają ich do przetwarzania danych, które Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management wysyłają do dodatku Fakturowanie elektroniczne i do faktur elektronicznych.
+Funkcje fakturowania elektronicznego są odpowiedzialne za generowanie faktur elektronicznych za pośrednictwem funkcji Fakturowanie elektroniczne. Hermetyzują reguły konfiguracji i używają ich do przetwarzania danych, które Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management wysyłają do funkcji Fakturowanie elektroniczne i do faktur elektronicznych.
 
 Funkcje obsługują również scenariusze, w których wymagana jest zgodność ze specyfikacjami formatu pliku, a wynikiem jest samodzielny plik elektroniczny. W większości przypadków specyfikacje formatu pliku są publikowane przez organ podatkowy.
 
@@ -81,13 +77,13 @@ W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które s
 
 Funkcje fakturowania elektronicznego obejmują następujące grupy konfigurowalnych składników:
 
-- **Formaty** — Formaty pozwalają skonfigurować, co musi generować dodatek Fakturowanie elektroniczne, gdy dokument elektroniczny staje się fakturą elektroniczną. Formaty obejmują konfigurację formatu faktury elektronicznej oraz plików i wiadomości używanych do przesyłania żądań i otrzymywania odpowiedzi, gdy wymagana jest komunikacja z zewnętrzną usługą sieciową.
-- **Akcje** — Akcje umożliwiają skonfigurowanie sposobu, w jaki dodatek Fakturowanie elektroniczne generuje przekształcenie dokumentu elektronicznego przesłanego przez rozwiązanie Finance and Supply Chain Management w fakturę elektroniczną.
-- **Reguły stosowania** – Reguły stosowania pozwalają skonfigurować kontekst, który musi uwzględniać dodatek Fakturowanie elektroniczne, aby przetwarzać funkcję fakturowania elektronicznego.
-- **Zmienne** — zmienne umożliwiają skonfigurowanie obsługi logiki konfiguracji. Zmienne mogą być wartościami wejściowymi do wykonywania określonej akcji. Alternatywnie mogą służyć jako wymiana wartości między rozwiązaniami Finance and Supply Chain Management a dodatkiem do fakturowania elektronicznego.
-- **Mapowanie modelu dokumentu elektronicznego** – Odwzorowanie modelu dokumentu elektronicznego umożliwia skonfigurowanie mapowania modelu ER. Mapowanie modelu definiuje mapowanie danych faktury abstrakcyjnej, która jest zintegrowana z dodatkiem Fakturowanie elektroniczne podczas przesyłania dokumentów elektronicznych.
+- **Formaty** — Formaty pozwalają skonfigurować, co musi generować Fakturowanie elektroniczne, gdy dokument elektroniczny staje się fakturą elektroniczną. Formaty obejmują konfigurację formatu faktury elektronicznej oraz plików i wiadomości używanych do przesyłania żądań i otrzymywania odpowiedzi, gdy wymagana jest komunikacja z zewnętrzną usługą sieciową.
+- **Akcje** — Akcje umożliwiają skonfigurowanie sposobu, w jaki Fakturowanie elektroniczne generuje przekształcenie dokumentu elektronicznego przesłanego przez rozwiązanie Finance and Supply Chain Management w fakturę elektroniczną.
+- **Reguły stosowania** – Reguły stosowania pozwalają skonfigurować kontekst, który musi uwzględniać Fakturowanie elektroniczne, aby przetwarzać funkcję fakturowania elektronicznego.
+- **Zmienne** — zmienne umożliwiają skonfigurowanie obsługi logiki konfiguracji. Zmienne mogą być wartościami wejściowymi do wykonywania określonej akcji. Alternatywnie mogą służyć jako wymiana wartości między rozwiązaniami Finance and Supply Chain Management a funkcją fakturowania elektronicznego.
+- **Mapowanie modelu dokumentu elektronicznego** – Odwzorowanie modelu dokumentu elektronicznego umożliwia skonfigurowanie mapowania modelu ER. Mapowanie modelu definiuje mapowanie danych faktury abstrakcyjnej, która jest zintegrowana z funkcją Fakturowanie elektroniczne podczas przesyłania dokumentów elektronicznych.
 - **Model kontekstu faktury** — Model kontekstu faktury umożliwia skonfigurowanie modelu kontekstu faktury ER i zdefiniowanie kontekstu funkcji fakturowania elektronicznego.
-- **Typy odpowiedzi** – Typy odpowiedzi umożliwiają skonfigurowanie, co dodatek Fakturowanie elektroniczne musi aktualizować w rozwiązaniu Finance and Supply Chain Management w wyniku przetwarzania faktury elektronicznej.
+- **Typy odpowiedzi** – Typy odpowiedzi umożliwiają skonfigurowanie, co Fakturowanie elektroniczne musi aktualizować w rozwiązaniu Finance and Supply Chain Management w wyniku przetwarzania faktury elektronicznej.
 
 ### <a name="formats"></a>Formaty
 
@@ -237,7 +233,7 @@ Wersje funkcji fakturowania elektronicznego mają cykl życia, który ma maksyma
 
 - **Wersja robocza** — jeśli wersja funkcji ma ten stan, można edytować jej atrybuty konfiguracji oraz dowolne artefakty (na przykład konfiguracje formatów plików).
 - **Ukończono** — jeśli wersja funkcji ma ten stan, została opublikowana w repozytorium globalnym skojarzonym z organizacją. Nie można już edytować wersji funkcji ani składników funkcji ER.
-- **Opublikowano** — jeśli wersja funkcji ma ten stan, została opublikowana w dodatku Fakturowanie elektroniczne. Nie można już edytować wersji funkcji ani składników funkcji ER.
+- **Opublikowano** — jeśli wersja funkcji ma ten stan, została opublikowana w funkcji Fakturowanie elektroniczne. Nie można już edytować wersji funkcji ani składników funkcji ER.
 
 ### <a name="feature-configurations"></a>Konfiguracje funkcji
 
@@ -266,14 +262,14 @@ Za pomocą konfiguracji aplikacji można skonfigurować część funkcji fakturo
 
 W RCS można użyć polecenia **Wdrożenie**, aby opublikować wersję funkcji fakturowania elektronicznego. Wybierz opcję **Rozmieszczaj**, a następnie wybierz jedną z następujących opcji w celu zdefiniowania celu wdrożenia: 
 
-- **Środowisko usługi** — jeśli celem wdrożenia jest środowisko usługi, wersja funkcji fakturowania elektronicznego jest opublikowana w środowisku usług. Dodatek Fakturowanie elektroniczne jest wtedy gotowy do odbierania i przetwarzania dokumentów elektronicznych wysyłanych przez Finance i Supply Chain Management.
+- **Środowisko usługi** — jeśli celem wdrożenia jest środowisko usługi, wersja funkcji fakturowania elektronicznego jest opublikowana w środowisku usług. Fakturowanie elektroniczne jest wtedy gotowy do odbierania i przetwarzania dokumentów elektronicznych wysyłanych przez Finance i Supply Chain Management.
 - **Połączona aplikacja** — Jeśli celem wdrożenia jest połączona aplikacja, konfiguracja dostarczona przez instalację aplikacji jest zapisywana w instancji Finance i Supply Chain Management, która była wcześniej z nią skojarzona.
 
 Tylko wersje funkcji fakturowania elektronicznego, które mają stan **Zakończono**, mogą być wdrażane w środowisku usług lub połączonej aplikacji.
 
 ### <a name="removing-feature-versions"></a>Usuwanie wersji funkcji
 
-W RCS za pomocą polecenia **Cofnij wdrożenie** można usunąć określoną wersję funkcji fakturowania elektronicznego ze środowiska usługowego w dodatku Fakturowanie elektroniczne.
+W RCS za pomocą polecenia **Cofnij wdrożenie** można usunąć określoną wersję funkcji fakturowania elektronicznego ze środowiska usługowego w funkcji Fakturowanie elektroniczne.
 
 > [!IMPORTANT]
 > Polecenie **Cofnij wdrożenie** działa tylko w środowiskach usług. Nie usuwa wersji funkcji fakturowania elektronicznego z połączonych aplikacji.

@@ -2,7 +2,6 @@
 title: Obszar roboczy zarządzania świadczeniami
 description: W tym temacie opisano obszar roboczy Zarządzanie świadczeniami w rozwiązaniu Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
@@ -18,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8f17685dab8159522ec88af0fa6ca9c99c346b7b
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 9b8dcad04e85a4beb2fe68e9d6fad4ec794e3ade
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5488215"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805833"
 ---
 # <a name="benefits-management-workspace"></a>Obszar roboczy zarządzania świadczeniami
 

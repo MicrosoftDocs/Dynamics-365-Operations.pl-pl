@@ -2,7 +2,6 @@
 title: COUNTIF, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji COUNTIF w module Raportowanie elektroniczne (ER).
 author: NickSelin
-manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 19ceb8d3023aadeb6307ed5d930587a8f00f63b7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: bebb3d3b810e68fa6a0d3f4deb92b750b7c9a9f3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561381"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5755307"
 ---
 # <a name="countif-er-function"></a>COUNTIF, funkcja ER
 

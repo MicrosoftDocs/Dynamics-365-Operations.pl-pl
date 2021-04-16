@@ -2,11 +2,9 @@
 title: Opracowywanie struktury wynagrodzeń
 description: W tym artykule przedstawiono proces tworzenia stałego planu wynagrodzeń i przypisywania pracowników do planu za pomocą reguł kwalifikowalności.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5030203877ebdf885fb55c7946bfd4ee0c883c2e
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 75d1a05d4f94689581e2a67a13adeef6b14ac0cd
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465685"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800910"
 ---
 # <a name="develop-a-compensation-structure"></a>Opracowywanie struktury wynagrodzeń
 

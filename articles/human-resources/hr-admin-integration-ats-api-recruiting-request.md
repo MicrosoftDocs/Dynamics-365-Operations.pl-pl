@@ -2,11 +2,9 @@
 title: Wniosek o rekrutację
 description: W tym temacie opisano jednostkę Wniosku o rekrutację dla Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: dd2f2fc74261c6eea3033567fe020c4e03c60637
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500629"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5805185"
 ---
 # <a name="recruiting-request"></a>Wniosek o rekrutację
 

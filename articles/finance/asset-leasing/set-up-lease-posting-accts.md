@@ -2,11 +2,9 @@
 title: Konfigurowanie kont księgowania wynajmu
 description: W tym temacie wymieniono konta księgowania wymagane dla transakcji wynajmu składników majątku oraz objaśniono sposób definiowania kont księgowania na stronie Parametry księgowania wynajmu.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 183560dca385d618eb11d1580b0f82dcaa50474e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0367cd5454178c9404942c9f2e8cfeeb326af700
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249612"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5811468"
 ---
 # <a name="set-up-lease-posting-accounts"></a>Konfigurowanie kont księgowania wynajmu
 

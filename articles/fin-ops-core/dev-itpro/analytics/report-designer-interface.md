@@ -2,7 +2,6 @@
 title: Interfejs Projektanta raportów
 description: Ten artykuł wyjaśnia, jak się poruszać w Projektancie raportów i jak używać różnych opcji do własnych potrzeb.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: cdd3e4a535c97a72f070cdd3789f0479965245d4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569951"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754357"
 ---
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 

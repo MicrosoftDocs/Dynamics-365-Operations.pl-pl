@@ -2,11 +2,9 @@
 title: Typy księgowania wynajmu
 description: W tym temacie opisano typy księgowania używane w transakcjach wynajmu składników majątku.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229509"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841148"
 ---
 # <a name="lease-posting-types"></a>Typy księgowania wynajmu
 
@@ -90,15 +88,6 @@ Konto jest łączone z kontem przeciwstawnym składnika majątku z PDU. Konto je
 **Przykładowe wpisy w arkuszu:** Naliczanie amortyzacji<br>
 **Strona Winien:** Wydatek amortyzacji XXX<br>
 **Strona Ma:** Umorzenie XXX
-
-## <a name="retained-earnings"></a>Wstrzymane dochody
-
-Konto jest łączone z zyskami zatrzymanymi. Konto może być obciążane lub uznawane we wpisie w arkuszu dotyczącym korekty przejścia przy użyciu metody pełnej retrospekcji lub metody aktualizacji skumulowanej typu A. Różnica między początkową wartością składnika majątku z PDU a zobowiązaniem z tytułu wynajmu jest księgowana w zyskach zatrzymanych. Sporadycznie modyfikacja wynajmu może również wpłynąć na zyski zatrzymane, jeśli klasyfikacja wynajmu zmieni się z leasingu finansowego na operacyjny i w ten sposób spowoduje zwiększenie lub zmniejszenie wartości składnika majątku z PDU, tak aby była ona równa wartości zobowiązania z tytułu wynajmu.
-
-**Przykładowe wpisy w arkuszu:** Korekta przejścia (metoda pełnej retrospekcji lub aktualizacji skumulowanej typu A)<br>
-**Strona Winien:** Zobowiązanie z tytułu wynajmu XXX<br>
-**Strona Ma:** Należność z tytułu wynajmu XXX<br>
-**Strona Ma:** Zyski zatrzymane XXX
 
 ## <a name="variable-payment"></a>Zmienna płatność
 

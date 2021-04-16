@@ -1,12 +1,10 @@
 ---
 title: Prognozowanie przepływów pieniężnych
 description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 98bf906569f99c74fef747381e8f27b1d9f91a5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819657"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
@@ -45,8 +43,7 @@ Funkcjonalność prognozowania środków pieniężnych można zintegrować z mod
 - **Wpisy do rejestru budżetu** — wpisy do rejestru budżetu, które wybrano dla prognoz przepływów pieniężnych.
 - **Prognozy popytu** — wiersze modelu prognozy zapasów, które wybrano dla prognoz przepływów pieniężnych.
 - **Prognozy dostaw** — wiersze modelu prognozy zapasów, które wybrano dla prognoz przepływów pieniężnych.
-
-Mimo iż nie ma bezpośredniej integracji z modułem Zarządzanie projektami i ich księgowanie, istnieje kilka sposobów na uwzględnienie transakcji projektu w prognozie przepływów pieniężnych. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu.
+- **Prognozy projektów** — prognozy zarządzania projektami i ich księgowania za pomocą modelu prognozy.
 
 ## <a name="configuration"></a>Konfiguracja
 
@@ -96,6 +93,14 @@ W prognozach przepływów pieniężnych można uwzględniać prognozy dostaw zap
 Nowa karta na stronie **Konfiguracja prognozowania przepływów pieniężnych** umożliwia kontrolowanie wymiarów finansowych, które mają być używane do filtrowania, w obszarze roboczym **Prognozowanie przepływów pieniężnych**. Ta karta będzie wyświetlana tylko wtedy, gdy jest włączona funkcja prognoz przepływów pieniężnych. 
 
 Na karcie **Wymiary** wybierz z listy wymiary, które mają być użyte do filtrowania, a następnie za pomocą klawiszy strzałek przenieś je do prawej kolumny. Do filtrowania danych prognozy przepływów pieniężnych można wybrać tylko dwa wymiary. 
+
+### <a name="project-management-and-accounting"></a>Zarządzanie projektami i ich księgowanie
+
+W wersji 10.0.17 nowa funkcja umożliwia integrację z funkcjami zarządzania projektami i ich księgowania oraz prognozowania przepływów pieniężnych. W obszarze roboczym **Zarządzanie funkcjami** włącz funkcję **Prognoza dla projektu przepływów pieniężnych**, aby uwzględnić prognozowane koszty i przychody w prognozie przepływów pieniężnych. Na karcie **Zarządzanie projektami i ich księgowanie** na stronie **Ustawienia prognozy przepływów pieniężnych** wybierz typy projektów i typy transakcji, które powinny być uwzględnione w prognozie przepływów pieniężnych. Następnie wybierz model prognozy projektu. Podmodel typu redukcji działa najlepiej. Konta płynności wprowadzone w ustawieniach rozrachunków z odbiorcami są używane jako domyślne konta płynności. Dlatego nie trzeba wprowadzać domyślnych kont płynności podczas ustawienia prognozy przepływów pieniężnych. Można również użyć modelu budżetu, ale tylko jeden typ można wybrać na stronie **Ustawień prognozy przepływów pieniężnych** dla zarządzania projektami i ich księgowania. Model prognozy oferuje najbardziej elastyczny sposób zarządzania projektami i ich księgowania lub działania w ramach Project Operations.
+
+Po włączeniu funkcji prognozy przepływów pieniężnych można wyświetlać prognozę przepływów pieniężnych dla każdego projektu na stronie **Wszystkie projekty**. W okienku akcji na karcie **Plan** kliknij w grupie **Prognoza** wybierz opcję **Prognoza przepływów pieniężnych**. W obszarach roboczych **Przegląd gotówki** (zobacz sekcję [Raportowanie](#reporting) w dalszej części tego tematu) typ transakcji prognozy projektu pokazuje przychody (przychód prognozy projektu) i przychody (koszty prognoz projektu). Kwoty można uwzględniać tylko wtedy, gdy pole **Etap projektu** w obszarze roboczym **Przegląd gotówki** ma wartość **W trakcie**.
+
+Transakcje projektu są nadal uwzględniane w prognozie przepływów pieniężnych na kilka sposobów, niezależnie od tego, czy funkcja **Prognozy przepływów pieniężnych** jest włączona. Zaksięgowane faktury projektu są uwzględniane w prognozie jako część otwartych transakcji odbiorcy. Zamówienia sprzedaży i zamówienia zakupu inicjowane przez projekt są uwzględniane w prognozie jako otwarte zamówienia po ich wprowadzeniu w systemie. Można także przenieść prognozy projektu do modelu budżetu księgi. Następnie ten model budżetu księgi zostanie uwzględniony w prognozie przepływów pieniężnych jako część wpisów do rejestru budżetu. Jeśli funkcja **Prognozy projektu przepływów pieniężnych** jest włączona, nie należy przenosić prognoz projektu do modelu budżetu księgi, ponieważ ta akcja spowoduje zliczanie prognoz projektów dwa razy.
 
 ### <a name="calculation"></a>Obliczenie
 

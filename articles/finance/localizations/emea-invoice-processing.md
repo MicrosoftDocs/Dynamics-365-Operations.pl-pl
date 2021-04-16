@@ -2,11 +2,9 @@
 title: Przetwarzanie faktur
 description: Ten temat zawiera informacje dotyczące przetwarzania faktur dla Europy Wschodniej.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, VendParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7293efd7f107666d8aab77ab3eed3a58f5c53cc3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ec3cd6088f311c25d8c506fda7563064669b5ea
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212941"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814969"
 ---
 # <a name="invoice-processing"></a>Przetwarzanie faktur
 

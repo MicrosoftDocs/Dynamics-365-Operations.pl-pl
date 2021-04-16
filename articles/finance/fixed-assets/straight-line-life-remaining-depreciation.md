@@ -2,11 +2,9 @@
 title: Amortyzacja za pozostały liniowy okres użytkowania
 description: Ten artykuł zawiera omówienie metody amortyzacji Liniowy pozostały okres użytkowania.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823b2569670adfbf04038abca656e34f0199fce1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: bd7bc6d773d85a1ba02151b96bf80f970845d4a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210102"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818519"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Amortyzacja za pozostały liniowy okres użytkowania
 
@@ -57,10 +55,10 @@ Jeśli zostanie wybrana opcja **Obrachunkowy** w polu **Rok amortyzacji**, będz
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Przykład amortyzacji liniowej środków trwałych, które nie uległy zmianie
 Środek trwały ma następujące właściwości.
 
-|                     |        |
+| Pole               | Wartość  |
 |---------------------|--------|
-| Koszt nabycia    | 11 000 |
-| Wartość odzyskana       | 1 000  |
+| Koszt nabycia    | 11,000 |
+| Wartość odzyskana       | 1 000  |
 | Podstawa amortyzacji   | 10000 |
 | Okres użytkowania (lata)  | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych      |
 | Amortyzacja roczna | 2 000  |

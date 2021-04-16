@@ -2,11 +2,9 @@
 title: Rozszerz aplikację Talent o usługi Power Apps i Power Automate
 description: W tym artykule opisano przykładowe scenariusze rozszerzeń programu Microsoft Dynamics 365 Human Resources używanych przez Microsoft Power Apps i Microsoft Power Automate.
 author: negudava
-manager: tfehr
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: edc2352fa53ac93c582b608b65fc624ff5dcd2a4
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: ad55de4b660de89d323f32a1ce2911d880c24ec5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467080"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793568"
 ---
 # <a name="extend-with-power-apps-and-power-automate"></a>Rozszerzanie o usługi Power Apps i Power Automate
 

@@ -2,11 +2,9 @@
 title: Zarządzanie informacjami dotyczącymi klienta dla Polski
 description: W tym temacie opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
 author: sepism
-manager: ''
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 7d3b239088987546372f0b1265931ed947e7aeaf
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a238b47a269df7994d73b79ff7b82add02d437f1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254953"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798801"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 

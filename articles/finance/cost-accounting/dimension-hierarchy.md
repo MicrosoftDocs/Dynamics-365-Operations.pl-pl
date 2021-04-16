@@ -2,11 +2,9 @@
 title: Hierarchia wymiarów
 description: Ten temat zawiera informacje o hierarchiach wymiarów. Hierarchie wymiarów służą do definiowania struktury raportowania, zasad kosztów i ustawień zabezpieczeń w module Rachunek kosztów.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217393"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810181"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
@@ -124,12 +122,13 @@ Hierarchię wymiarów spełniającą wymagania sprawozdawcze organizacji można 
 
 Hierarchię wymiarów dla sprawozdawczości można skonfigurować w sposób pokazany poniżej.
 
-|                   | Zakresy elementów członkowskich wymiaru   |                         |
+**Zakresy elementów członkowskich wymiaru**
+
+|   Węzły           |   Element członkowskiego wymiaru źródłowego   |   Element członkowski wymiaru docelowego   |
 |-------------------|---------------------------|-------------------------|
-| **Węzły**         | **Element członkowskiego wymiaru źródłowego** | **Element członkowski wymiaru docelowego** |
 | Organizacja      |                           |                         |
 | &nbsp;&nbsp;Administrator         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finanse   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finanse   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Zasoby ludzkie        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produkcja    |                           |                         |
@@ -146,12 +145,13 @@ Hierarchię wymiarów spełniającą wymóg zasady można skonfigurować w spos�
 
 Hierarchię wymiarów dla zasady można skonfigurować w sposób pokazany poniżej.
 
-|                   | Zakresy elementów członkowskich wymiaru   |                         |
+**Zakresy elementów członkowskich wymiaru**
+
+|   Węzły           |   Element członkowskiego wymiaru źródłowego   |   Element członkowski wymiaru docelowego   |
 |-------------------|---------------------------|-------------------------|
-| **Węzły**         | **Element członkowskiego wymiaru źródłowego** | **Element członkowski wymiaru docelowego** |
 | Zachowanie kosztów     |                           |                         |
 | &nbsp;&nbsp;Koszt stały    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Koszt zmienny | 40001                     | 40010                   |
+| &nbsp;&nbsp;Koszt zmienny | 40001                     | 40010                   |
 
 > [!NOTE]
 > W obszarze **Zakresy elementów członkowskich wymiaru** węzeł może zawierać 1:_n_ zakresów elementów członkowskich wymiaru. Można wstawić identyfikatory elementów członkowskich wymiaru, które jeszcze nie istnieje jako elementy członkowskie wymiaru. Ta funkcjonalność pozwala przygotować hierarchię na przyszłe potrzeby.  
@@ -297,9 +297,10 @@ Potencjalnie wszyscy menadżerowie mają dostęp do poufnych danych biznesowych,
 
 W projektancie hierarchii jest dostępna nowa skrócona karta **Użytkownicy**. Na niej można wstawić jeden lub więcej identyfikatorów użytkowników w każdym węźle w hierarchii.
 
-|                 | Użytkownicy            | Zakresy elementów członkowskich wymiaru   |                         |
+**Zakresy użytkowników i elementów członkowskich wymiaru**
+
+|   Węzły         |   Identyfikator użytkownika        |   Element członkowski wymiaru początkowego   |   Element członkowski wymiaru docelowego   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Węzły**       | **Identyfikator użytkownika**      | **Element członkowskiego wymiaru źródłowego** | **Element członkowski wymiaru docelowego** |
 | Organizacja    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administrator         | kwiecień            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finanse   | Alicia           | CC002                     | CC003                   |

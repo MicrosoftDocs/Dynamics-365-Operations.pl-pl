@@ -1,12 +1,10 @@
 ---
-title: Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Egiptu
-description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.
+title: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
+description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z funkcją Faktury elektroniczne dla Egiptu w Finance i Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,35 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 68ee08226f440e850a080600dbf5e16768b45e43
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: f6175a50a88d2d636bfafc5988265b8657630758
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592605"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840203"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on-for-egypt"></a>Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego dla Egiptu
+# <a name="get-started-with-electronic-invoicing-for-egypt"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z dodatkiem Faktury elektroniczne dla Egiptu. W tym temacie podasz informacje o krokach konfiguracji zależnych od kraju w Regulatory Configuration Services (RCS) i uzupełnij czynności opisane w temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne dla Egiptu. W tym temacie podasz informacje o krokach konfiguracji zależnych od kraju w Regulatory Configuration Services (RCS) i uzupełnij czynności opisane w temacie [Wprowadzenie do Fakturowania elektronicznego](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-for-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Specyficzna dla kraju konfiguracja egipskiej faktury elektronicznej (EG) Funkcja fakturowania elektronicznego
 
-Aby skonfigurować egipską fakturę elektroniczną (EG), należy wykonać kilka czynności. Niektóre parametry z konfiguracji są publikowane z wartościami domyślnymi, więc należy je przejrzeć i zaktualizować, aby lepiej pasowały do operacji biznesowej.
+Niektóre parametry dostępne w funkcji **Faktura elektroniczna Elektroniczna (EGIPT)** są publikowane z wartościami domyślnymi. Przejrzyj te wartości, a w razie potrzeby zaktualizuj je, aby lepiej odzwierciedlały operację biznesową przed wdrożeniem funkcji fakturowania elektronicznego w środowisku usługi.
+
+Opisano w sekcji **Specyficzna dla kraju konfiguracja funkcji fakturowania elektronicznego** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
 Przed zakończeniem procedury opisanej w tej sekcji musisz:
 
-- Utwórz tajny kod certyfikatu cyfrowego w sposób opisany w temacie **Tworzenie tajnej sekcji certyfikatu cyfrowego** w temacie [Wprowadzenie do administrowania usługą dodatku Fakturowanie elektroniczne](e-invoicing-get-started-service-administration.md). Do celów testowych egipski urząd skarbowy zapewnia specjalne testowe certyfikaty cyfrowe, których należy używać tylko na etapie testowania i weryfikacji rozwiązania. Aby uzyskać więcej informacji, odwiedź witrynę internetową egipskiego organu podatkowego, korzystając z łącza znajdującego się w [Egipskim zestawie SDK do e-fakturowania](https://sdk.sit.invoicing.eta.gov.eg/faq/).
-- Utwórz egipską fakturę elektroniczną (EG) Funkcja fakturowania elektronicznego dla swojej organizacji, zgodnie z opisem w sekcji **Tworzenie faktur elektronicznych w sekcji Dostawca organizacji** w [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+- Utwórz tajny kod certyfikatu cyfrowego w sposób opisany w temacie **Tworzenie tajnej sekcji certyfikatu cyfrowego** w temacie [Wprowadzenie do administrowania usługą Fakturowanie elektroniczne](e-invoicing-get-started-service-administration.md). Do celów testowych egipski urząd skarbowy zapewnia specjalne testowe certyfikaty cyfrowe, których należy używać tylko na etapie testowania i weryfikacji rozwiązania. Aby uzyskać więcej informacji, odwiedź witrynę internetową egipskiego organu podatkowego, korzystając z łącza znajdującego się w [Egipskim zestawie SDK do e-fakturowania](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 
-1. W RCS w sekcji **Funkcje** obszaru roboczego **funkcji Globalizacja** wybierz kafelek **dodatku Fakturowanie elektroniczne**.
-2. Na stronie **Funkcje dodawania fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Egipska faktura elektroniczna (EG)**.
+1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
+2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Egipska faktura elektroniczna (EG)**.
 3. Na karcie **Wersje** sprawdź, czy jest wybrana **Wersja robocza**.
 4. Na karcie **Ustawienia** w siatce wybierz ustawienia funkcji **Faktury sprzedaży**.
 5. Wybierz opcję **Edycja**, a na karcie **Akcje** w grupie pól **Akcje** wybierz pozycję **Podpisz dokument JSON dla urzędu skarbowego**.
@@ -52,18 +51,16 @@ Przed zakończeniem procedury opisanej w tej sekcji musisz:
 7. W grupie pól **Akcje** wybierz opcję **Integruj z usługą ETA**. Powtórz ten krok dla dwóch wystąpień tej akcji.
 8. W grupie pól **Parametry** wybierz **Adres URL usługi sieci Web** i **Adres URL usługi logowania** oraz w razie potrzeby przejrzyj parametry adresu URL. Odwiedź witrynę egipskiego urzędu skarbowego, aby uzyskać adres URL do testowania i produkcji, korzystając z linku podanego w [Egipskim zestawie SDK do e-fakturowania](https://sdk.sit.invoicing.eta.gov.eg/faq/).
 9. Wybierz przycisk **Zapisz** i zamknij stronę.
-10. Aby skonfigurować konfigurację aplikacji, zobacz temat [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+10. Aby wdrożyć funkcję fakturowania elektronicznego w środowisku usługi, zobacz temat [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
 ## <a name="country-specific-configuration-of-the-application-setup-for-the-egyptian-electronic-invoice-eg-electronic-invoicing-feature"></a>Specyficzna dla kraju konfiguracja konfiguracji aplikacji dla egipskiej faktury elektronicznej (EG) Funkcja fakturowania elektronicznego
 
-Konfiguracja konfiguracji aplikacji dla **Egipskiej faktury elektronicznej (EG) Funkcja fakturowania elektronicznego** wymaga wykonania określonych czynności. Należy wykonać te czynności przed wdrożeniem funkcji Fakturowanie elektroniczne w środowisku usługi dodatku Fakturowanie elektroniczne.
+Przed wdrożeniem konfiguracji aplikacji w aplikacji Finance lub Supply Chain Management wykonaj poniższe kroki.
 
-### <a name="prerequisites"></a>Wymagania wstępne
+Opisano w sekcji **Specyficzna dla kraju konfiguracja aplikacji** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
-Przed zakończeniem procedury opisanej w tej sekcji utwórz i zainicjuj **Egipską fakturę elektroniczną (EG)** Funkcja fakturowania elektronicznego, aby skonfigurować ustawienia aplikacji dla **Egipskiej faktury elektronicznej (EG)** Funkcja fakturowania elektronicznego, zgodnie z opisem w sekcji **Konfigurowanie konfiguracji aplikacji** w temacie [Zacznij korzystać z dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
-
-1. W RCS w sekcji **Funkcje** obszaru roboczego **funkcji Globalizacja** wybierz kafelek **dodatku Fakturowanie elektroniczne**.
-2. Na stronie **Funkcje dodawania fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Egipska faktura elektroniczna (EG)**.
+1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
+2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Egipska faktura elektroniczna (EG)**.
 3. Na karcie **Wersje** sprawdź, czy jest wybrana **Wersja robocza**.
 4. Na karcie **Ustawienia** wybierz pozycję **Ustawienia aplikacji** i w polu **Połączona aplikacja** wybierz aplikację, w której chcesz wdrożyć.
 5. Sprawdź, czy jest wybrany arkusz faktur dla odbiorcy, w polu **Nazwa tabeli**.
@@ -75,7 +72,7 @@ Przed zakończeniem procedury opisanej w tej sekcji utwórz i zainicjuj **Egipsk
 11. W polu **Stan przesyłania** wybierz **W trakcie**.
 12. W polu **Nazwa jednostki danych** wybierz pozycję **Nagłówki faktur sprzedaży w wersji 2**.
 13. W polu **Mapowanie modelu** wybierz opcję **Import danych odpowiedzi z Egiptu** z **(wersja zapoznawcza) Import danych odpowiedzi z Egiptu**, a następnie wybierz **Zapisz**.
-14. Aby wdrożyć funkcję fakturowania elektronicznego, zobacz temat [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
+14. Aby wdrożyć konfigurację aplikacji w połączonej aplikacji Finance lub Supply Chain Management, zobacz temat [Rozpoczynanie pracy z fakturowaniem elektronicznym](e-invoicing-get-started.md).
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 
@@ -83,9 +80,9 @@ Włączenie i używanie funkcji **Egipska faktura elektroniczna (EG)** może wym
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Omówienie dodatku do fakturowania elektronicznego](e-invoicing-service-overview.md)
-- [Rozpoczynanie pracy z dodatkiem do fakturowania elektronicznego — administrowanie usługami](e-invoicing-get-started-service-administration.md)
-- [Rozpoczynanie pracy z dodatkiem fakturowania elektronicznego](e-invoicing-get-started.md)
+- [Omówienie fakturowania elektronicznego](e-invoicing-service-overview.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami](e-invoicing-get-started-service-administration.md)
+- [Rozpoczynanie pracy z fakturowaniem elektronicznym](e-invoicing-get-started.md)
 - [Faktury elektroniczne odbiorcy w Egipcie](emea-egy-e-invoices.md)
 
 
