@@ -2,7 +2,6 @@
 title: Ogranicz edytowanie informacji osobistych
 description: Ograniczanie pracownikom możliwości edytowania szczegółów kontaktu w Dynamics 365 Human Resources.
 author: andreabichsel
-manager: tfehr
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d4785232dbb21c5f8a800497fb0cfd3c64dea2d8
-ms.sourcegitcommit: 45d10d0c25b3ec585323709bb97ba1895b500429
+ms.openlocfilehash: 727e0d4dbc5b330045bc9f91abab4d43b09e4382
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "5503043"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794812"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Ogranicz edytowanie informacji osobistych
 

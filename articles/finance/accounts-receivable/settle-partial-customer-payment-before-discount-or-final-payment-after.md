@@ -2,11 +2,9 @@
 title: Rozlicz częściową płatność przed datą rabatu z płatnością końcową po dacie rabatu
 description: W tym artykule omówiono wpływ rozliczania płatności za faktury dla odbiorców. Scenariusz koncentruje się na skutkach w księdze podrzędnej, a nie w księdze głównej.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250561"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835154"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Rozlicz częściową płatność przed datą rabatu z płatnością końcową po dacie rabatu
 
@@ -48,7 +46,7 @@ Firma Fabrikam sprzedaje towary odbiorcy 4027. Fabrikam oferuje rabat gotówkowy
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Jeśli nie zmienisz wartości **Kwota do rozliczenia** na 297,00, wyświetlane wartości **Kwota rabatu gotówkowego** będą różne. Jednak wartość 3,00 będzie brana za wartość rabatu gotówkowego po zaksięgowaniu płatności, ponieważ rozliczenie automatycznie dostosowuje wartość **Kwota do rozliczenia**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
 | Data rabatu           | 7/09/2015 |
 | Kwota rabatu gotówkowego         | 10,00     |
@@ -73,9 +71,9 @@ Arnie księguje tę płatność. Teraz saldo faktury wynosi 700,00. Następując
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 7/09/2015 |
 | Kwota rabatu gotówkowego         | 0,00      |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 3,00      |
@@ -89,10 +87,10 @@ Jeśli Arnie zmieni wartość w polu **Użyj rabatu gotówkowego** na **Zawsze**
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
-| Kwota rabatu gotówkowego         | 7,00      |
+| Data rabatu           | 7/09/2015 |
+| Kwota rabatu gotówkowego         | 7.00      |
 | Użyj rabatu gotówkowego            | Zawsze    |
 | Pobrany rabat gotówkowy          | 3,00      |
 | Kwota rabatu gotówkowego do pobrania | 7,00      |

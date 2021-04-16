@@ -2,11 +2,9 @@
 title: Konfigurowanie i zarządzanie rejestrowaniem bazy danych
 description: Można śledzić zmiany w tabelach i polach w Dynamics 365 Human Resources z rejestrowaniem w bazie danych.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467656"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801342"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurowanie i zarządzanie rejestrowaniem bazy danych
 
@@ -68,7 +66,22 @@ Aby poprawić wydajność, ogranicz wpisy dziennika, wybierając określone pola
 Aby skonfigurować rejestrowanie bazy danych, można skorzystać z kreatora **Rejestracji zmian w bazie danych**. Kreator stanowi elastyczny sposób konfigurowania rejestrowania tabel lub pól.
 
 1. Przejdź do **Administrowanie systemem > Łącza > Baza danych > Ustawienia dziennika bazy danych**. Wybierz opcję **Nowy**, aby uruchomić kreatora **Rejestracji zmian w bazie danych**.
-2. Wykonaj czynności w kreatorze.
+2. Wybierz pozycję **Następny**. 
+3. Na stronie **Tabele i pola** kreatora wybierz tabele i pola, w których chcesz włączyć rejestrowanie bazy danych, i wybierz przycisk **Dalej**.
+
+   > [!Note]
+   > Rejestrowanie bazy danych nie jest dostępne we wszystkich tabelach w bazie danych Zasoby ludzkie. Wybranie opcji **Pokaż wszystkie tabele** pod listą spowoduje rozwinięcie listy tabel i pól w celu pokazania wszystkich tabel baz danych, dla których jest dostępne rejestrowanie bazy danych, ale będzie to podzestaw pełnej listy tabel bazy danych.
+
+4. Na stronie **Typy zmian** w kreatorze wybierz operacje na danych, dla których chcesz śledzić zmiany poszczególnych tabel i pól, a następnie wybierz przycisk **Dalej**. Opis operacji dotyczących danych dostępnych do rejestrowania znajduje się w poniższej tabeli.
+5. Na stronie **Zakończ** przejrzyj zmiany, które zostaną wprowadzone, i wybierz przycisk **Zakończ**.
+
+| Operacja | opis |
+| -- | -- |
+| Śledź nowe transakcje | Utwórz dziennik dla nowych rekordów, które są tworzone w tabeli. |
+| Aktualizowanie | Umożliwia tworzenie dziennika aktualizacji rekordów tabeli lub aktualizacji pojedynczych pól w tabeli. Jeśli użytkownik wybierze opcję rejestrować aktualizacje tabeli, po każdym zaktualizowaniu dowolnego pola rekordu w tabeli tworzony jest rekord dziennika. Jeśli użytkownik wybierze opcję rejestrować aktualizacje określonych pól, rekord dziennika jest tworzony tylko podczas aktualizacji tych pól rekordów tabel. |
+| Usuwanie | Utwórz dziennik dla rekordów usuniętych z tabeli. |
+| Klucz zmiany nazwy | Utwórz rekord dziennika po zmianie nazwy klucza tabeli. |
+
 
 ## <a name="clean-up-database-logs"></a>Oczyszczanie dzienników bazy danych
 

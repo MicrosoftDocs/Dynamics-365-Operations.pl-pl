@@ -2,11 +2,9 @@
 title: Automatyzacja obsługi faktur dla zeskanowanych dokumentów
 description: W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
 author: abruer
-manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05a796e7ea520e7f25be9e0a1f766b08f75254bb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239658"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841244"
 ---
-# <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja obsługi faktur dla zeskanowanych dokumentów
+# <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja faktur dla zeskanowanych dokumentów
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano dostępne funkcje kompleksowej automatyzacji obsługi faktur od dostawców, w tym nawet faktur zawierających załączniki.
+W tym temacie wyjaśniono jednostki danych, które są dostępne do kompleksowej automatyzacji faktur od dostawców, w tym faktur z załącznikami.
 
 Organizacje, które chcą usprawnić swoje procesy rozrachunków z dostawcami (AP), często wskazują na przetwarzanie faktur jako na jeden z głównych obszarów przetwarzania, który powinien być bardziej efektywny. W wielu przypadkach takie organizacje przekazują przetwarzanie papierowych faktur zewnętrznym dostawcom usług optycznego rozpoznawania znaków (OCR). Następnie otrzymują metadane faktur nadające się do odczytu maszynowego razem z zeskanowanego obrazem każdej faktury. Aby pomóc w automatyzacji, jest następnie budowane rozwiązanie „ostatniej mili”, które umożliwia wykorzystywanie tych artefaktów w systemie fakturowania. Teraz umożliwia tę automatyzację „ostatniej mili” włączoną w standardzie, za pomocą rozwiązania do automatyzacji obsługi faktur.
 
@@ -90,9 +88,9 @@ Faktury importowane za pośrednictwem pakietów danych mogą być skojarzone z f
 
 W scenariuszach, gdzie faktury od dostawców wchodzą do programu Finance and Operations wskutek integracji, musi istnieć prosty sposób, w jaki członek zespołu rozrachunków z dostawcami może przetwarzać wyjątki lub niepomyślnie rozliczone faktury oraz tworzyć faktury oczekujące z niepomyślnie rozliczonych faktur. Taka funkcjonalność przetwarzania wyjątków faktur od dostawców jest obecnie częścią programu Finance and Operations.
 
-### <a name="exceptions-list-page"></a>Strona listy wyjątków
+### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Faktura od dostawcy, dla których nie można zaimportować strony listy
 
-Nowa strona listy dla wyjątków faktur jest dostępna w oknie **Rozrachunki z dostawcami** > **Faktury** > **Niepowodzenia importu** > **Faktury od dostawców, których importowanie nie powiodło się**. Na tej stronie są pokazane wszystkie rekordy nagłówków faktur od dostawców z tabeli tymczasowej jednostki danych Nagłówek faktury od dostawcy. Należy zauważyć, że można wyświetlić te same rekordy z obszaru roboczego **Zarządzanie danymi**, w którym można również wykonać te same czynności, jakie są dostępne w funkcji obsługi wyjątków. Jednak interfejs użytkownika funkcji obsługi wyjątków jest zoptymalizowany dla użytkownika funkcjonalnego.
+Nowa strona listy dla wyjątków faktur jest dostępna w oknie **Rozrachunki z dostawcami** > **Faktury** > **Niepowodzenia importu** > **Faktury od dostawców, których importowanie nie powiodło się**. Na tej stronie są pokazane wszystkie rekordy nagłówków faktur od dostawców z tabeli tymczasowej jednostki danych Nagłówek faktury od dostawcy. Należy zwrócić uwagę, że te same rekordy można wyświetlić z obszaru roboczego **Zarządzanie danymi**. Możesz również wykonać te same czynności, które są dostępne w funkcji obsługi wyjątków z obszaru roboczego **Zarządzanie danymi**. Funkcja obsługi wyjątków została zoptymalizowana dla funkcjonalnego użytkownika, co ułatwia korzystanie z nich.
 
 ![Strona listy wyjątków](media/vendor_invoice_automation_02.png)
 
@@ -118,24 +116,17 @@ Na tej stronie listy znajdują się następujące pola dostępne wskutek integra
 Ta strona listy ma również okienko podglądu, którego można używać w następujące sposoby:
 
 + Wyświetlenie całego komunikatu o błędzie, tak aby nie trzeba było rozwijać kolumny **Komunikat o błędzie** w siatce.
-+ Wyświetlanie całej listy załączników faktury, jeśli jakiekolwiek załączniki towarzyszyły fakturze.
 
 Na stronie listy można wykonywać następujące akcje:
 
 + **Edytuj** — Służy do otwierania rekordu wyjątku w trybie edycji umożliwiającym rozwiązywanie problemów.
 + **Opcje** — Przechodzenie do standardowych opcji dostępnych na stronach list. Można użyć opcji **Dodaj do obszaru roboczego**, aby przypiąć stronę listy wyjątków do swojego obszaru roboczego jako listę lub kafelek.
 
-### <a name="exception-details-page"></a>Strona szczegółów wyjątków
+### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Faktura od dostawcy, dla których nie można zaimportować stronę szczegółów
 
-Po uruchomieniu trybu edycji pojawia się strona szczegółów wyjątków dla faktury, w której występują problemy. Jeśli istnieją jakiekolwiek załączniki, faktura i domyślny załącznik są wyświetlane obok siebie na stronie szczegółów wyjątków.
+Po rozpoczęciu trybu edycji zostanie otwarta strona **Szczegółów faktur od dostawców**, dla których nie powiodło się zaimportowanie faktury z problemami. Jeśli występują problemy z fakturą z załącznikiem, załącznik nie zostanie wyświetlony. Załącznik musi być ponownie dołączony do faktury.
 
-![Strona szczegółów wyjątków](media/vendor_invoice_automation_03.png)
-
-Na powyższej ilustracji nie odnaleziono żadnych wierszy nagłówka odebranej faktury od dostawcy. Z tego względu sekcja wierszy jest pusta.
-
-Strona szczegółów wyjątków obsługuje następującą operację:
-
-+ **Utwórz fakturę oczekującą** — Po rozwiązaniu problemów z fakturą w ramach przetwarzania wyjątków można kliknąć ten przycisk, aby utworzyć fakturę oczekującą. Tworzenie faktur oczekujących jest wykonywane w tle (jako operacja asynchroniczna).
+Strona **Szczegółów faktur od dostawców**, których nie udało się zaimportować, umożliwia utworzenie faktury oczekującej. Po rozwiązaniu problemów z fakturą w ramach przetwarzania wyjątków można kliknąć przycisk **Utwórz fakturę oczekującą**, aby utworzyć fakturę oczekującą. Faktura oczekująca zostanie utworzona w tle. 
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Usługa udostępniona a przetwarzanie wyjątków wewnątrz organizacji
 
@@ -187,7 +178,7 @@ Tylko jeden dokument można ustawić jako załącznik domyślny. Po ustawieniu d
 
 Nowy przycisk dostępny na stronach zapytań **Przetwarzanie wyjątków**, **Faktura oczekująca** i **Arkusz faktur** umożliwia pokazywanie lub ukrywanie przeglądarki załączników.
 
-### <a name="security"></a>Zabezpieczenia
+## <a name="security"></a>Zabezpieczenia
 
 Następujące akcje w przeglądarce załączników są kontrolowane przez zabezpieczenia oparte na rolach:
 
@@ -212,7 +203,7 @@ Następujące role zapewniają dostęp tylko do odczytu lub odczytu i zapisu w p
 + **Pracownik ds. rozrachunków z dostawcami** i **Menedżer ds. rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Obsługa faktur od dostawcy.
 + **Pracownik ds. rozrachunków z dostawcami**, **Menedżer ds. rozrachunków z dostawcami**, **Pracownik ds. płatności scentralizowanych w rozrachunkach z dostawcami** i **Pracownik ds. płatności rozrachunków z dostawcami** — Do tych ról jest przypisany obowiązek Zapytanie o stan faktury od dostawcy.
 
-### <a name="invoice-exception-details-page"></a>Strona szczegółów wyjątków faktur
+### <a name="vendor-invoice-attachment"></a>Załącznik faktur od dostawców
 
 Następujące uprawnienia zapewniają dostęp tylko do odczytu lub odczytu i zapisu w przeglądarce załączników dla akcji wyróżniania, blokowania i adnotowania.
 

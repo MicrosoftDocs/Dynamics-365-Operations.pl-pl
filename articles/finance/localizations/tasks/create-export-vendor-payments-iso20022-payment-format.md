@@ -2,11 +2,9 @@
 title: Tworzenie i eksport płatności dla dostawcy przy użyciu formatu płatności ISO20022
 description: W tej procedurze pokazano sposób tworzenia wierszy w arkuszu płatności dostawcy oraz generowania pliku płatności dla dostawcy na przykładzie polecenia przelewu ISO2022.
 author: mrolecki
-manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c3d538a4e032ca9cfafff3232ad235019654ed7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 18c7d0b6c5c6a7f598f4b94f4dcf02df498d74cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231483"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822712"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Tworzenie i eksportowanie płatności dla dostawcy przy użyciu formatu płatności ISO20022
 

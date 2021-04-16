@@ -2,11 +2,9 @@
 title: Rekrutacja wymaga edukacji
 description: W tym temacie opisano jednostkę Rekrutacja wymaga edukacji dla Dynamics 365 Human Resources.
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: efc5c4813f8abd869e8137052c4aeb356a930d0b
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 00bcbe2b86df65c594e5dda57cb58815b132278c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465973"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5789691"
 ---
 # <a name="recruiting-request-education"></a>Rekrutacja wymaga edukacji
 

@@ -2,11 +2,9 @@
 title: Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu
 description: W tym artykule przedstawiono sposób rozliczania częściowych płatności od odbiorców w przypadku istnienia wielu okresów rabatu.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241721"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835107"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu
 
@@ -56,7 +54,7 @@ Arnie może wyświetlić tę transakcję na stronie **Transakcje dostawcy**.
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**. Jeśli nie zmienisz wartości **Kwota do rozliczenia** na **294,00**, wyświetlane wartości **Kwota rabatu gotówkowego** będą różne. Jednak wartość 6,00 będzie brana za wartość rabatu gotówkowego po zaksięgowaniu płatności, ponieważ rozliczenie automatycznie dostosowuje wartość **Kwota do rozliczenia**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Data rabatu gotówkowego           | 6/30/2015 |
 | Kwota rabatu gotówkowego         | 20,00     |
@@ -75,7 +73,7 @@ Po zaksięgowaniu płatności saldo faktury wynosi 700,00.
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Data rabatu gotówkowego           | 7/09/2015 |
 | Kwota rabatu gotówkowego         | 30,00     |

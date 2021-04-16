@@ -2,11 +2,9 @@
 title: EUR-00012 Wystawianie świadectwa wywozowego UE
 description: Ta procedura poprowadzi przez proces włączania obsługi świadectw wywozowych UE, konfigurowania konta odbiorcy do obsługi świadectw oraz wystawiania świadectw.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 95c1f3f87175a2c2a2887a4ed2ebde1bd7d1c0b9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98a6566d37e77415e01c38055dc16aec35c5ce7e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821822"
 ---
 # <a name="eur-00012-issue-an-eu-entry-certificate"></a>EUR-00012 Wystawianie świadectwa wywozowego UE
 

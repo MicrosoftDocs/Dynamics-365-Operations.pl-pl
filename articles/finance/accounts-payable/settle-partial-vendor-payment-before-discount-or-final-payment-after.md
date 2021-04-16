@@ -2,11 +2,9 @@
 title: Rozlicz płatność częściową przed datą rabatu i płatność końcową po dacie rabatu
 description: Ten artykuł prowadzi przez scenariusz, w którym jest dokonywanych wiele płatności częściowych — niektóre w okresie rabatu gotówkowego, a inne poza okresem rabatu gotówkowego.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227335"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810349"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Rozlicz płatność częściową przed datą rabatu i płatność końcową po dacie rabatu
 
@@ -48,9 +46,9 @@ Firma Fabrikam nabywa towary od dostawcy 3057. Fabrikam otrzymuje rabat gotówko
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 7/09/2015 |
 | Kwota rabatu gotówkowego         | -10,00    |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
@@ -73,9 +71,9 @@ April płaci resztę faktury 15 lipca, czyli po okresie rabatu. Na stronie **Roz
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie transakcji**. April możne sprawdzić, czy rabat 3,00 został już wzięty.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
+| Data rabatu           | 7/09/2015 |
 | Kwota rabatu gotówkowego         | 0,00      |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | -3,00     |
@@ -99,10 +97,10 @@ Jeśli dostawca oferuje April rabat mimo zapłacenia po dacie rabatu, może ona 
 
 Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie transakcji**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/09/2015 |
-| Kwota rabatu gotówkowego         | 7,00      |
+| Data rabatu           | 7/09/2015 |
+| Kwota rabatu gotówkowego         | 7.00      |
 | Użyj rabatu gotówkowego            | Zawsze    |
 | Pobrany rabat gotówkowy          | -3,00     |
 | Kwota rabatu gotówkowego do pobrania | -7,00     |

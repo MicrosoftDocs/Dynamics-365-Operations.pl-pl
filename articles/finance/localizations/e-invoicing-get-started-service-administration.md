@@ -1,12 +1,10 @@
 ---
-title: Zacznij od administrowania usługą dodatkową dotyczącą fakturowania elektronicznego
-description: W tym temacie opisano sposób rozpoczęcia pracy z dodatkiem Faktur elektronicznych.
+title: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
+description: W tym temacie opisano sposób rozpoczęcia pracy z funkcją Faktur elektronicznych.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,18 +15,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592533"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840155"
 ---
-# <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Zacznij od administrowania usługą dodatkową dotyczącą fakturowania elektronicznego
+# <a name="get-started-with-electronic-invoicing-service-administration"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -46,7 +42,7 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 - Musisz aktywować funkcję globalizacji dla swojego konta RCS w zarządzaniu funkcjami. Aby uzyskać więcej informacji, zobacz [Regulatory Configuration Services (RCS) – funkcje globalizacji](rcs-globalization-feature.md).
 - Musisz utworzyć magazyn kluczy i konto magazynu na platformie Azure. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i magazyn kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
 
-## <a name="install-the-add-on-for-microservices-in-lifecycle-services"></a>Zainstaluj dodatek dla mikrousług w Lifecycle Services
+## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Zainstaluj dodatek dla mikrousług w Lifecycle Services
 
 1. Zaloguj się do swojego konta LCS.
 2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**.
@@ -54,13 +50,14 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 4. Sprawdź, czy w opcji **Funkcja wersji zapoznawczej włączona** jest ustawiona wartość **Tak**.
 5. Na pulpicie nawigacyjnym usługi LCS wybierz projekt wdrożenia usługi LCS. Projekt usługi LCS musi być uruchomiony.
 7. Na karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
-8. Wybierz **usługi fakturowania elektronicznego** i w polu Identyfikator aplikacji usługi **AAD** wprowadź wartość **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
+8. Wybierz **usługi fakturowania elektronicznego**.
+9. W polu **Identyfikator aplikacji AAD** wprowadź nazwę **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
 10. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure.
 11. Przejrzyj warunki, a następnie zaznacz pole wyboru.
 12. Wybierz **Zainstaluj**.
 
 
-## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Skonfiguruj parametry RCS z dodatkiem Faktury elektroniczne
+## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Skonfiguruj parametry RCS z Faktury elektroniczne
 
 1. Zaloguj się do swojego konta RCS.
 2. W module **Powiązane odnośniki**, w obszarze roboczym **Raportowanie elektroniczne** wybierz opcję **Parametry raportowania elektronicznego**.
@@ -74,58 +71,56 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
     | Europa Zachodnia                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
 4. Upewnij się, że pole **Identyfikator aplikacji** ma ustawioną wartość **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ta wartość jest stałą wartością.
-5. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator konta subskrypcji LCS.
+5. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator środowiska LCS.
 6. Wybierz przycisk **Zapisz** i zamknij stronę.
 
-## <a name="create-key-vault-secret"></a>Utwórz wpis tajny magazynu kluczy
+## <a name="create-key-vault-references"></a>Tworzenie zasobu magazynu kluczy
 
 1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Dodatek Faktury elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Faktury elektroniczne**.
 3. Na stronie **Ustawienia środowiska**, w okienku akcji wybierz **Środowisko serwisu**, a następnie wybierz opcję **Parametry Key Vault**.
-4. Wybierz opcję **Nowy**, aby utworzyć klucz tajny.
-5. W polu **Nazwa** wprowadź nazwę wpisu tajnego magazynu kluczy. W polu **Opis wprowadź** opis.
-6. W polu **URI magazynu kluczy** wklej klucz tajny z Azure Key Vault.
+4. Wybierz opcję **Nowy**, aby utworzyć klucz tajny referencji.
+5. W polu **Nazwa** wprowadź nazwę wpisu tajnego magazynu kluczy referencji. W polu **Opis wprowadź** opis.
+6. W polu **URI magazynu kluczy** wklej klucz tajny z Azure Key Vault. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i magazyn kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
 7. Wybierz opcję **Zapisz**.
 
 ## <a name="create-storage-account-secret"></a>Utwórz klucz tajny konta magazynu
 
-1. Przejdź do **Administrowanie systemem** > **Ustawienia** > **Parametry Key Vault** i wybierz klucz tajny klucz.
-2. W sekcji **Certyfikaty** wybierz opcję **Dodaj**.
-3. W polu **Nazwa** wprowadź nazwę tajnych kont magazynowania, a w polu **Opis** wprowadź opis.
-4. W polu **Typ** zaznacz opcję **Certyfikat**.
-5. Wybierz przycisk **Zapisz** i zamknij stronę.
+1. Na stronie **Ustawienia środowiska**, w okienku akcji wybierz **Środowisko usługi** > **Parametry Key Vault**.
+2. Wybierz **Referencje wpisu tajnego** i w sekcji **Certyfikaty** wybierz opcję **Dodaj**.
+3. W polu **Nazwa** wprowadź ten nazwę klucza tajnyego konta magazynu. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i magazyn kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
+4. W polu **Opis wprowadź** opis.
+5. W polu **Typ** wybierz **Wpis tajny**.
+6. Wybierz przycisk **Zapisz** i zamknij stronę.
 
 ## <a name="create-a-digital-certificate-secret"></a>Utwórz tajny kod certyfikatu cyfrowego
 
-1. Przejdź do **Administrowanie systemem** > **Ustawienia** > **Parametry Key Vault** i wybierz klucz tajny klucz.
-2. W sekcji **Certyfikaty** wybierz opcję **Dodaj**.
-3. W polu **Nazwa** wprowadź nazwę tajnych certyfikatów wirtualnych, a w polu **Opis** wprowadź opis.
-4. W polu **Typ** zaznacz opcję **Certyfikat**.
-5. Wybierz przycisk **Zapisz** i zamknij stronę.
-
-## <a name="create-an-electronic-invoicing-add-on-environment"></a>Tworzenie środowiska dodatku Faktur elektronicznych
-
-1. Zaloguj się do swojego konta RCS.
-2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Dodatek Faktury elektroniczne**.
+1. Na stronie **Ustawienia środowiska**, w okienku akcji wybierz **Środowisko serwisu**, a następnie wybierz opcję **Parametry Key Vault**.
+2. Wybierz **Referencje wpisu tajnego** i w sekcji **Certyfikaty** wybierz opcję **Dodaj**.
+3. W polu **Nazwa** wprowadź ten nazwę klucza tajnego cyfrowego certyfikatu. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i magazyn kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
+4. W polu **Opis wprowadź** opis.
+5. W polu **Typ** zaznacz opcję **Certyfikat**.
+6. Wybierz przycisk **Zapisz** i zamknij stronę.
 
 ## <a name="create-a-service-environment"></a>Tworzenie środowiska usługi
 
-1. Na stronie **Ustawienia środowiska** w okienku akcji wybierz pozycję **Środowisko usługi**.
-2. Wybierz pozycję **Nowy**, aby utworzyć nowe środowisko usługi.
-3. W polu **Nazwa** wprowadź nazwę środowiska e-fakturowania. W polu **Opis wprowadź** opis.
-4. W polu **Tajny klucz tokenu sygnatury dostępu Współdzielonego magazynu** wybierz nazwę klucza tajnego konta magazynu, który musi być używany do uwierzytelniania dostępu do konta magazynu.
-5. W sekcji **Użytkownicy** wybierz opcję **Dodaj**, aby dodać użytkownika, który może przesyłać faktury elektroniczne za pośrednictwem środowiska, a także połączyć się z kontem magazynu.
-6. W polu **Identyfikator użytkownika** wprowadź alias użytkownika. W polu **Adres e-mail** wprowadź adres e-mail dla użytkownika.
-7. Wybierz opcję **Zapisz**.
-8. Jeśli faktury dotyczące Twojego kraju / regionu wymagają łańcucha certyfikatów do stosowania podpisów cyfrowych, w okienku Akcja wybierz **Parametry Key Vault**, a następnie wybierz **Łańcuch certyfikatów** i wykonaj następujące kroki:
-
+1. Zaloguj się do swojego konta RCS.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Środowiska** wybierz kafelek **Faktury elektroniczne**.
+3. Na stronie **Ustawienia środowiska** w okienku akcji wybierz pozycję **Środowisko usługi**.
+4. Wybierz pozycję **Nowy**, aby utworzyć nowe środowisko usługi.
+5. W polu **Nazwa** wprowadź nazwę środowiska e-fakturowania. W polu **Opis wprowadź** opis.
+6. W polu **Tajny klucz tokenu sygnatury dostępu Współdzielonego magazynu** wybierz nazwę klucza tajnego konta magazynu, który musi być używany do uwierzytelniania dostępu do konta magazynu.
+7. W sekcji **Użytkownicy** wybierz opcję **Dodaj**, aby dodać użytkownika, który może przesyłać faktury elektroniczne za pośrednictwem środowiska, a także połączyć się z kontem magazynu.
+8. W polu **Identyfikator użytkownika** wprowadź alias użytkownika. W polu **Adres e-mail** wprowadź adres e-mail dla użytkownika.
+9. Wybierz opcję **Zapisz**.
+10. Jeśli faktury dotyczące Twojego kraju / regionu wymagają łańcucha certyfikatów do stosowania podpisów cyfrowych, w okienku Akcja wybierz **Parametry Key Vault**, a następnie wybierz **Łańcuch certyfikatów** i wykonaj następujące kroki:
     1. Wybierz pozycję **Nowy**, aby utworzyć łańcuch certyfikatów.
     2. W polu **Nazwa** wprowadź nazwę łańcucha certyfikatów. W polu **Opis wprowadź** opis.
     3. W sekcji **Certyfikaty** wybierz pozycję **Dodaj**, aby dodać certyfikat do łańcucha.
     4. Przycisk **W górę** lub **W dół** umożliwia zmianę pozycji certyfikatu w łańcuchu.
     5. Wybierz przycisk **Zapisz** i zamknij stronę.
     6. Zamknij stronę.
-9. Na stronie **Środowisko usługi** w okienku akcji wybierz opcję **Publikuj**, aby opublikować środowisko w chmurze. Wartość pola **Stan** jest zmieniana na **Opublikowana**.
+11. Na stronie **Środowisko usługi** w okienku akcji wybierz opcję **Publikuj**, aby opublikować środowisko w chmurze. Wartość pola **Stan** jest zmieniana na **Opublikowana**.
 
 ## <a name="create-a-connected-application"></a>Utwórz połączoną aplikację
 
@@ -144,12 +139,12 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 3. W polu **Środowisko usługi** wybierz środowisko usługi.
 4. Wybierz przycisk **Zapisz** i zamknij stronę.
 
-## <a name="set-up-the-electronic-invoicing-add-on-integration-in-finance-and-supply-chain-management"></a>Skonfiguruj integrację dodatku Faktur elektronicznych w rozwiązaniach Finance i Supply Chain Management
+## <a name="set-up-electronic-invoicing-integration-in-finance-and-supply-chain-management"></a>Skonfiguruj integrację Faktur elektronicznych w rozwiązaniach Finance lub Supply Chain Management
 
-### <a name="turn-on-the-electronic-invoicing-add-on-integration-feature"></a>Funkcja integracji faktur elektronicznych jest włączana za pośrednictwem terminów wyświetlania
+### <a name="turn-on-the-electronic-invoicing-integration-feature"></a>Funkcja integracji faktur elektronicznych jest włączana za pośrednictwem terminów wyświetlania
 
 1. Zaloguj się do wystąpienia Finance lub Supply Chain Management.
-2. W obszarze roboczym **Zarządzanie funkcjami** wyszukaj funkcję **Integracja dodatku do elektronicznego fakturowania**. Jeśli ta funkcja nie jest wyświetlana na stronie, wybierz pozycję **Sprawdź, czy nie są aktualizacje**.
+2. W obszarze roboczym **Zarządzanie funkcjami** wyszukaj funkcję **Integracja elektronicznego fakturowania**. Jeśli ta funkcja nie jest wyświetlana na stronie, wybierz pozycję **Sprawdź, czy nie są aktualizacje**.
 3. Wybierz funkcję, a następnie wybierz **Wyłącz teraz**.
 
 ### <a name="set-up-the-service-endpoint-url"></a>Konfigurowanie adresu URL punktu końcowego usługi
@@ -164,8 +159,18 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
     | Europa Północna                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
     | Europa Zachodnia                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
 
-3. W polu **Środowisko** wprowadź nazwę środowiska dodatkowego fakturowania elektronicznego.
+3. W polu **Środowisko** wprowadź nazwę środowiska usługowego opublikowaną w Fakturowaniu elektronicznym.
 4. Wybierz przycisk **Zapisz** i zamknij stronę.
 
+### <a name="enable-flighting-keys"></a>Włącz klucze lotów
+
+Włącz klucze lotów dla rozwiązania Microsoft Dynamics 365 Finance lub Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.17 lub wcześniejszych. 
+1. Wykonaj następujące polecenie SQL:
+
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
+    
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
+
+2. Wykonaj polecenie IISreset dla wszystkich AOS.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Wprowadzanie środka komplementarnego dla środka trwałego
 description: W tej procedurze pokazano, jak dodać środek komplementarny do istniejącego środka trwałego.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetAddition
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 35e447ff9652861de4f7f310f68e8180a69589b4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 38b37b5c5717146618d54bf552145c33d46308f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210005"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817167"
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Wprowadzanie środka komplementarnego dla środka trwałego
 

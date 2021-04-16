@@ -2,11 +2,9 @@
 title: Podstawowe pojęcia związane z zarządzaniem windykacjami
 description: Tematy definiują podstawowe pojęcia dotyczące zarządzania windykacją.
 author: mikefalkner
-manager: AnnBe
 ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d71d436f561f0c9b0d8caef00191d1eb9b56580
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7f23f3668bfc344b2964c1b0062a5ed1174df05c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257689"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835395"
 ---
 # <a name="collections-management-key-concepts"></a>Podstawowe pojęcia związane z zarządzaniem windykacjami
 
