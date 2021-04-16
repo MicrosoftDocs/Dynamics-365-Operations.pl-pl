@@ -2,11 +2,9 @@
 title: Sprawozdania podatkowe dla Polski
 description: Ten temat zawiera informacje o sprawozdawczości podatku VAT w Polsce oraz podaje informacje, które są wymagane przez prawo w rejestrach podatku VAT w Polsce.
 author: mrolecki
-manager: AnnBe
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: AX 7.0.1
 ms.search.validFrom: 2016-05-31
-ms.openlocfilehash: 5ad85c34701843cef8fdc33333559c61e027127f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4ea91d988d5d639bfcdcb31b7de20a8bc3655254
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236684"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837974"
 ---
 # <a name="sales-tax-reports-for-poland"></a>Sprawozdania podatkowe dla Polski
 [!include [banner](../includes/banner.md)]

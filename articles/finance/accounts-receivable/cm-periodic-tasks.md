@@ -2,11 +2,9 @@
 title: Zadania okresowe zarządzania kredytami
 description: W tym temacie opisano zadania okresowe, które są niezbędne w procesie zarządzania limitami kredytowymi dla odbiorców.
 author: mikefalkner
-manager: AnnBe
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a034d563c12c4ba8b99e13b30ea2683555a01276
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5e5d1ad7b0b151d67bd96513e9ce0c82c172a601
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254494"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835299"
 ---
 # <a name="periodic-credit-management-tasks"></a>Okresowe zadania zarządzania kredytami
 

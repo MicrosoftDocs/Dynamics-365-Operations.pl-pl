@@ -2,11 +2,9 @@
 title: Proponowanie nabycia środka trwałego
 description: W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych.
 author: saraschi2
-manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 03/17/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
@@ -15,18 +13,22 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 426a5e42c1fc26958ab37eddd915334f8b0e19cc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d529cd53b41827a78b282afd4d2c69d2f2db555e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205035"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817179"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Proponowanie nabycia środka trwałego
 
 [!include [banner](../../includes/banner.md)]
 
 W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozycji nabycia zdefiniowanej w arkuszu środków trwałych. Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF. Aby nabyć środek trwały za pośrednictwem arkusza propozycji środków trwałych, należy najpierw utworzyć rekord środka trwałego, a następnie zdefiniować cenę nabycia w księdze składników majątku.
+
+## <a name="create-an-asset-acquisition-proposal"></a>Tworzenie propozycji nabycia składnika majątku
+
+Aby utworzyć propozycję nabycia składnika majątku, należy wykonać następujące kroki. 
 
 1. W okienku nawigacji przejdź do **Moduły > Środki trwałe > Wpisy w arkuszu > Arkusz środków trwałych**.
 2. Wybierz pozycję **Nowy**.
@@ -38,10 +40,16 @@ W tym temacie pokazano sposób nabywania środka trwałego przy użyciu propozyc
 8. Zaznacz wiersz **Numer środka trwałego**.
 9. W polu **Kryteria** wprowadź lub wybierz wartość. Skonfiguruj pozostałe kryteria środków trwałych, które chcesz nabyć za pomocą tej propozycji.  
 10. Wybierz dwa razy **OK**, aby wyjść z okienka.
-- Sprawdź utworzone wiersze transakcji.  
+- Sprawdź, czy są utworzone wiersze transakcji.  
 - W propozycji nabycia zostaną uwzględnione tylko środki trwałe, które w księdze mają ustawioną datę nabycia i cenę nabycia.  
 11. Na stronie wybierz kartę **Księgi**.
 12. Wybierz opcję **Zaksięguj**.
 
+## <a name="include-default-financial-dimensions-in-an-acquisition-proposal"></a>Uwzględnij domyślne wymiary finansowe w propozycji nabycia
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Transakcję nabycia można utworzyć za pomocą dodatków programu Excel, przechodząc do pozycji **Składniki majątku > Wpisy w arkuszu > Arkusz składników majątku**. Utwórz nowy arkusz i przenieś do sekcji **Wiersze** na stronie, wybierz ikonę programu Excel, a następnie wybierz wiersz arkusza składników majątku. System utworzy i otworzy szablon programu Excel reprezentujący wiersze arkusza. Można dodać dane do wierszy arkusza, które dodajesz do szablonu, a następnie opublikować je z powrotem w systemie. 
+
+Jeśli dla wybranej księgi składników majątku zostały ustawione wymiary domyślne oraz odpowiednie składniki majątku wprowadzone w szablonie programu Excel, domyślne wymiary finansowe będą wywoływane z danych główne księgi składników majątku, gdy arkusz zostanie opublikowany w programie Excel w systemie. Aby podczas publikowania arkusza składników majątku w dodatku programu Excel automatycznie uwzględniać wymiary finansowe w księdze składników majątku, należy wcześniej skonfigurować wymiary domyślne.  
+
+
+[!INCLUDE [footer-include](../../../includes/footer-banner.md)]

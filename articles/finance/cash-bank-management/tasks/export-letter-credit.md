@@ -2,11 +2,9 @@
 title: Akredytywa eksportowa
 description: Ta procedura poprowadzi przez proces tworzenia akredytywy eksportowej.
 author: kweekley
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 127f38e7db0a8c0703fd95274f45ff4ca49c131e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 260ef2d05e1f21708817346af2db2841aa6acdd9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225449"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834795"
 ---
 # <a name="export-letter-of-credit"></a>Akredytywa eksportowa
 

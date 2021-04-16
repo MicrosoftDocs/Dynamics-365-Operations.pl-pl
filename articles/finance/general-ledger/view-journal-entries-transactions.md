@@ -2,11 +2,9 @@
 title: Wyświetlanie wpisów w arkuszu i transakcji
 description: W tym artykule wyjaśniono różne sposoby, za pomocą których można przeglądać zapisy w arkuszu i transakcje.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerTransVoucher
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1875911695b1bde0b5ce4f969ad7a0c88717dc6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60524def2a676845bbaff8f25669a70fd8c3f5c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234148"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5816914"
 ---
 # <a name="view-journal-entries-and-transactions"></a>Wyświetlanie wpisów w arkuszu i transakcji
 

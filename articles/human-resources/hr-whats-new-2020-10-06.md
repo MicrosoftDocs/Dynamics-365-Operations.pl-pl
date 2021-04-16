@@ -2,11 +2,9 @@
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (6 października 2020 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Human Resources w dniu 6 października 2020 roku.
 author: jcart1106
-manager: tfehr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 330b037e2ba50ed090fd41b0990d6cf37d9d8b01
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 132d91c2a17fa5116d7aa6650e4ee807a03030bb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5463557"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802294"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (6 października 2020 r.)
 
