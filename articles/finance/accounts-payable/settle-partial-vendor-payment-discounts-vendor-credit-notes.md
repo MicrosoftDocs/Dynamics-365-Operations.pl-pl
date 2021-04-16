@@ -2,11 +2,9 @@
 title: Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących
 description: Ten artykuł prowadzi przez scenariusz, w którym faktura korygująca jest rozliczana względem faktury.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e634796c7143c14a872c721f298f3ab28cbddd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227311"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827849"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Rozliczanie częściowej płatności dla dostawcy, do której zastosowano rabaty na fakturach korygujących
 
@@ -42,9 +40,9 @@ Dostawcy firmy Fabrikam dają rabaty gotówkowe na fakturach korygujących. Dost
 
 Informacje o rabacie na fakturze korygującej pojawiają się w dolnej części strony **Rozliczanie otwartych transakcji**.
 
-|                              |           |
+| Pole                        | Wartość     |
 |------------------------------|-----------|
-| Data rabatu gotówkowego           | 7/13/2015 |
+| Data rabatu           | 7/13/2015 |
 | Kwota rabatu gotówkowego         | 2.00      |
 | Użyj rabatu gotówkowego            | Normalna    |
 | Pobrany rabat gotówkowy          | 0,00      |
