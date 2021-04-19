@@ -2,11 +2,9 @@
 title: Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska oceny Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,60 +14,60 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 241853c12c5b6a7fdbd1cf7353b4274f4dd99cc1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e42618a522f5ad551f608605300c30b5ffb8e299
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213897"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795938"
 ---
-# <a name="dynamics-365-commerce-evaluation-environment-faq"></a><span data-ttu-id="91a37-103">Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-103">Dynamics 365 Commerce evaluation environment FAQ</span></span>
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a><span data-ttu-id="cfd8b-103">Często zadawane pytania dotyczące środowiska oceny rozwiązania Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-103">Dynamics 365 Commerce evaluation environment FAQ</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="91a37-104">Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska oceny Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="91a37-104">This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.</span></span>
+<span data-ttu-id="cfd8b-104">Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące środowiska oceny Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-104">This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce evaluation environment.</span></span>
 
-<span data-ttu-id="91a37-105">**Czy możemy użyć środowiska oceny usługi Commerce jako sklepu internetowego dla klientów, którzy obecnie wdrażają aplikację Retail?**</span><span class="sxs-lookup"><span data-stu-id="91a37-105">**Can we use the Commerce evaluation environment as an e-Commerce storefront for customers that currently implement Retail?**</span></span>
+<span data-ttu-id="cfd8b-105">**Czy możemy użyć środowiska oceny usługi Commerce jako sklepu internetowego dla klientów, którzy obecnie wdrażają aplikację Retail?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-105">**Can we use the Commerce evaluation environment as an e-Commerce storefront for customers that currently implement Retail?**</span></span>
 
-<span data-ttu-id="91a37-106">Nr</span><span class="sxs-lookup"><span data-stu-id="91a37-106">No.</span></span> <span data-ttu-id="91a37-107">Środowisko oceny Commerce jest przeznaczone wyłącznie do oceny.</span><span class="sxs-lookup"><span data-stu-id="91a37-107">The Commerce evaluation environment is only for evaluation.</span></span> <span data-ttu-id="91a37-108">Jeśli wymagane jest środowisko dla klienta, który implementuje aplikację Retail, skontaktuj się z firmą Microsoft.</span><span class="sxs-lookup"><span data-stu-id="91a37-108">If you require an environment for a customer that implements Retail, contact Microsoft.</span></span>
+<span data-ttu-id="cfd8b-106">Nr</span><span class="sxs-lookup"><span data-stu-id="cfd8b-106">No.</span></span> <span data-ttu-id="cfd8b-107">Środowisko oceny Commerce jest przeznaczone wyłącznie do oceny.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-107">The Commerce evaluation environment is only for evaluation.</span></span> <span data-ttu-id="cfd8b-108">Jeśli wymagane jest środowisko dla klienta, który implementuje aplikację Retail, skontaktuj się z firmą Microsoft.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-108">If you require an environment for a customer that implements Retail, contact Microsoft.</span></span>
 
-<span data-ttu-id="91a37-109">**Czy środowisko oceny usługi Commerce może służyć do aprowizowania funkcji handlu elektronicznego jako uzupełnienie istniejącej aplikacji/środowiska, które implementuje aplikację Retail?**</span><span class="sxs-lookup"><span data-stu-id="91a37-109">**Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**</span></span>
+<span data-ttu-id="cfd8b-109">**Czy środowisko oceny usługi Commerce może służyć do aprowizowania funkcji handlu elektronicznego jako uzupełnienie istniejącej aplikacji/środowiska, które implementuje aplikację Retail?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-109">**Can the Commerce evaluation environment be used to provision the e-Commerce features on top of an existing application/environment that implements Retail?**</span></span>
 
-<span data-ttu-id="91a37-110">Nie (głównie).</span><span class="sxs-lookup"><span data-stu-id="91a37-110">No (mostly).</span></span> <span data-ttu-id="91a37-111">Składniki oceny aplikacji Commerce są dostępne tylko w środowiskach zgodnych z konfiguracjami określonymi w wymaganiach wstępnych i przewodniku obsługi administracyjnej.</span><span class="sxs-lookup"><span data-stu-id="91a37-111">The Commerce evaluation components are available only to environments that match the configurations that are specified in the prerequisites and provisioning guide.</span></span> <span data-ttu-id="91a37-112">Ponadto wymagane podstawowe dane demonstracyjne nie będą dostępne w środowiskach wdrożonych z początkową wersją wcześniejszą niż 10.0.8.</span><span class="sxs-lookup"><span data-stu-id="91a37-112">Additionally, the required base demo data won't be available in environments that were deployed with an initial release that is earlier than 10.0.8.</span></span> 
+<span data-ttu-id="cfd8b-110">Nie (głównie).</span><span class="sxs-lookup"><span data-stu-id="cfd8b-110">No (mostly).</span></span> <span data-ttu-id="cfd8b-111">Składniki oceny aplikacji Commerce są dostępne tylko w środowiskach zgodnych z konfiguracjami określonymi w wymaganiach wstępnych i przewodniku obsługi administracyjnej.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-111">The Commerce evaluation components are available only to environments that match the configurations that are specified in the prerequisites and provisioning guide.</span></span> <span data-ttu-id="cfd8b-112">Ponadto wymagane podstawowe dane demonstracyjne nie będą dostępne w środowiskach wdrożonych z początkową wersją wcześniejszą niż 10.0.8.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-112">Additionally, the required base demo data won't be available in environments that were deployed with an initial release that is earlier than 10.0.8.</span></span> 
 
-<span data-ttu-id="91a37-113">**Jakie koszty są zaangażowane we wdrażanie środowiska oceny usługi Commerce na platformie Microsoft Azure za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS)?**</span><span class="sxs-lookup"><span data-stu-id="91a37-113">**What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**</span></span>
+<span data-ttu-id="cfd8b-113">**Jakie koszty są zaangażowane we wdrażanie środowiska oceny usługi Commerce na platformie Microsoft Azure za pośrednictwem usług Microsoft Dynamics Lifecycle Services (LCS)?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-113">**What costs are involved in deploying the Commerce evaluation environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**</span></span>
 
-<span data-ttu-id="91a37-114">Tradycyjne środowisko demonstracyjne//główne Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce (maszyna wirtualna \[VM\]) będzie hostowana w Twojej subskrypcji platformy Azure.</span><span class="sxs-lookup"><span data-stu-id="91a37-114">A traditional Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce headquarters demo environment (virtual machine \[VM\]) will be hosted in your Azure subscription.</span></span> <span data-ttu-id="91a37-115">Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.</span><span class="sxs-lookup"><span data-stu-id="91a37-115">You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.</span></span>
+<span data-ttu-id="cfd8b-114">Tradycyjne środowisko demonstracyjne//główne Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce (maszyna wirtualna \[VM\]) będzie hostowana w Twojej subskrypcji platformy Azure.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-114">A traditional Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce headquarters demo environment (virtual machine \[VM\]) will be hosted in your Azure subscription.</span></span> <span data-ttu-id="cfd8b-115">Możesz użyć [kalkulatora cen platformy Azure](https://azure.microsoft.com/pricing/calculator/), aby oszacować ten koszt.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-115">You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.</span></span>
 
-<span data-ttu-id="91a37-116">Inne składniki, takie jak Commerce Scale Unit, Commerce Site Builder i Twoja witryna handlu elektronicznego, będą dostępne jako oprogramowanie jako usługa (SaaS) i będą obsługiwane przez firmę Microsoft.</span><span class="sxs-lookup"><span data-stu-id="91a37-116">Other components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site will be available as software as a service (SaaS) and hosted by Microsoft.</span></span>
+<span data-ttu-id="cfd8b-116">Inne składniki, takie jak Commerce Scale Unit, Commerce Site Builder i Twoja witryna handlu elektronicznego, będą dostępne jako oprogramowanie jako usługa (SaaS) i będą obsługiwane przez firmę Microsoft.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-116">Other components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site will be available as software as a service (SaaS) and hosted by Microsoft.</span></span>
 
-<span data-ttu-id="91a37-117">**Które regiony geograficzne platformy Azure są obecnie obsługiwane w środowisku oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="91a37-117">**Which Azure geographies are currently supported for the Commerce evaluation environment?**</span></span>
+<span data-ttu-id="cfd8b-117">**Które regiony geograficzne platformy Azure są obecnie obsługiwane w środowisku oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-117">**Which Azure geographies are currently supported for the Commerce evaluation environment?**</span></span>
 
-<span data-ttu-id="91a37-118">Środowisko oceny usługi Commerce można wdrożyć tylko w regionie Ameryka Północna.</span><span class="sxs-lookup"><span data-stu-id="91a37-118">The Commerce evaluation environment can be deployed only in the North America geography.</span></span>
+<span data-ttu-id="cfd8b-118">Środowisko oceny usługi Commerce można wdrożyć tylko w regionie Ameryka Północna.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-118">The Commerce evaluation environment can be deployed only in the North America geography.</span></span>
 
-<span data-ttu-id="91a37-119">**Czy istnieje wirtualny dysk twardy (VHD) z możliwością pobrania, który ma pełną opcję maszyny wirtualnej OneBox?**</span><span class="sxs-lookup"><span data-stu-id="91a37-119">**Is there a downloadable virtual hard disk (VHD) that has the complete OneBox virtual machine (VM) option?**</span></span>
+<span data-ttu-id="cfd8b-119">**Czy istnieje wirtualny dysk twardy (VHD) z możliwością pobrania, który ma pełną opcję maszyny wirtualnej OneBox?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-119">**Is there a downloadable virtual hard disk (VHD) that has the complete OneBox virtual machine (VM) option?**</span></span>
 
-<span data-ttu-id="91a37-120">Dynamics 365 Commerce i Commerce Scale Unit to w całości oprogramowanie jako usługa (SaaS) i muszą być hostowane w chmurze.</span><span class="sxs-lookup"><span data-stu-id="91a37-120">Dynamics 365 Commerce and Commerce Scale Unit are completely software as a service (SaaS) and must be cloud-hosted.</span></span>
+<span data-ttu-id="cfd8b-120">Dynamics 365 Commerce i Commerce Scale Unit to w całości oprogramowanie jako usługa (SaaS) i muszą być hostowane w chmurze.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-120">Dynamics 365 Commerce and Commerce Scale Unit are completely software as a service (SaaS) and must be cloud-hosted.</span></span>
 
-<span data-ttu-id="91a37-121">**Jak długo można używać środowiska oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="91a37-121">**How long can the Commerce evaluation environment be used?**</span></span>
+<span data-ttu-id="cfd8b-121">**Jak długo można używać środowiska oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-121">**How long can the Commerce evaluation environment be used?**</span></span>
 
-<span data-ttu-id="91a37-122">Środowisko oceny Commerce ma 30-dniowy limit czasu od daty udostępnienia składników SaaS, takich jak Commerce Scale Unit, narzędzie do tworzenia witryn Commerce i Twoja witryna handlu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="91a37-122">The Commerce evaluation environment has a 30-day time limit from the date when SaaS components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site are provisioned.</span></span>
+<span data-ttu-id="cfd8b-122">Środowisko oceny Commerce ma 30-dniowy limit czasu od daty udostępnienia składników SaaS, takich jak Commerce Scale Unit, narzędzie do tworzenia witryn Commerce i Twoja witryna handlu elektronicznego.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-122">The Commerce evaluation environment has a 30-day time limit from the date when SaaS components such as Commerce Scale Unit, Commerce site builder, and your e-Commerce site are provisioned.</span></span>
 
-<span data-ttu-id="91a37-123">**Czy mogę przedłużyć limit czasu dla mojego środowiska oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="91a37-123">**Can I extend the time limit for my Commerce evaluation environment?**</span></span>
+<span data-ttu-id="cfd8b-123">**Czy mogę przedłużyć limit czasu dla mojego środowiska oceny usługi Commerce?**</span><span class="sxs-lookup"><span data-stu-id="cfd8b-123">**Can I extend the time limit for my Commerce evaluation environment?**</span></span>
 
-<span data-ttu-id="91a37-124">Wydłużenie limitu czasu jest wyjątkiem od normy i jest brane pod uwagę oddzielnie dla każdego przypadku.</span><span class="sxs-lookup"><span data-stu-id="91a37-124">Extension of the time limit is an exception to the norm and is considered on a case-by-case basis.</span></span> <span data-ttu-id="91a37-125">Aby uzyskać pomoc, skontaktuj się z partnerem firmy Microsoft.</span><span class="sxs-lookup"><span data-stu-id="91a37-125">You should reach out to your Microsoft partner contact for assistance.</span></span>
+<span data-ttu-id="cfd8b-124">Wydłużenie limitu czasu jest wyjątkiem od normy i jest brane pod uwagę oddzielnie dla każdego przypadku.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-124">Extension of the time limit is an exception to the norm and is considered on a case-by-case basis.</span></span> <span data-ttu-id="cfd8b-125">Aby uzyskać pomoc, skontaktuj się z partnerem firmy Microsoft.</span><span class="sxs-lookup"><span data-stu-id="cfd8b-125">You should reach out to your Microsoft partner contact for assistance.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="91a37-126">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="91a37-126">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="cfd8b-126">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="cfd8b-126">Additional resources</span></span>
 
-[<span data-ttu-id="91a37-127">Omówienie środowiska oceny usługi Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-127">Dynamics 365 Commerce evaluation environment overview</span></span>](cpe-overview.md)
+[<span data-ttu-id="cfd8b-127">Omówienie środowiska oceny usługi Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-127">Dynamics 365 Commerce evaluation environment overview</span></span>](cpe-overview.md)
 
-[<span data-ttu-id="91a37-128">Ustanowienie środowiska oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-128">Provision a Dynamics 365 Commerce evaluation environment</span></span>](provisioning-guide.md)
+[<span data-ttu-id="cfd8b-128">Ustanowienie środowiska oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-128">Provision a Dynamics 365 Commerce evaluation environment</span></span>](provisioning-guide.md)
 
-[<span data-ttu-id="91a37-129">Konfigurowanie środowiska oceny usługi Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-129">Configure a Dynamics 365 Commerce evaluation environment</span></span>](cpe-post-provisioning.md)
+[<span data-ttu-id="cfd8b-129">Konfigurowanie środowiska oceny usługi Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-129">Configure a Dynamics 365 Commerce evaluation environment</span></span>](cpe-post-provisioning.md)
 
-[<span data-ttu-id="91a37-130">Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-130">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
+[<span data-ttu-id="cfd8b-130">Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-130">Configure BOPIS in a Dynamics 365 Commerce evaluation environment</span></span>](cpe-bopis.md)
 
-[<span data-ttu-id="91a37-131">Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="91a37-131">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
+[<span data-ttu-id="cfd8b-131">Konfigurowanie opcjonalnych funkcji środowiska oceny Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="cfd8b-131">Configure optional features for a Dynamics 365 Commerce evaluation environment</span></span>](cpe-optional-features.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

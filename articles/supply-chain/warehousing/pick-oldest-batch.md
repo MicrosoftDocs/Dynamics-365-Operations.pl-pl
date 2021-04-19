@@ -2,11 +2,9 @@
 title: Pobieranie najstarszej partii na urządzeniu przenośnym
 description: W tym temacie opisano sposób konfigurowania i stosowania opcji pobierania najstarszej partii z urządzenia przenośnego.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -16,30 +14,30 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e0deadaeb403e1f645309a141c5678fbe3f716
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eb0012689cc814daaf8f685c81d4630164b6e0c5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232894"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810445"
 ---
-# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="ea3ed-103">Pobieranie najstarszej partii na urządzeniu przenośnym</span><span class="sxs-lookup"><span data-stu-id="ea3ed-103">Pick oldest batch on a mobile device</span></span>
+# <a name="pick-oldest-batch-on-a-mobile-device"></a><span data-ttu-id="e2df4-103">Pobieranie najstarszej partii na urządzeniu przenośnym</span><span class="sxs-lookup"><span data-stu-id="e2df4-103">Pick oldest batch on a mobile device</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ea3ed-104">Dostęp do konfiguracji **Pobierz z najstarszej partii** można uzyskać z menu urządzenia przenośnego, a następnie ustawić w niej wymuszanie lub ostrzeganie pracowników magazynu, aby pobierali najstarszą partia w swojej obecnej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
+<span data-ttu-id="e2df4-104">Dostęp do konfiguracji **Pobierz z najstarszej partii** można uzyskać z menu urządzenia przenośnego, a następnie ustawić w niej wymuszanie lub ostrzeganie pracowników magazynu, aby pobierali najstarszą partia w swojej obecnej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="e2df4-104">You can access the configuration **Pick oldest batch** via a mobile device menu and it allows you to force or warn warehouse workers to pick the oldest batch in their current location.</span></span>  
 
-## <a name="where-it-applies"></a><span data-ttu-id="ea3ed-105">Zastosowanie</span><span class="sxs-lookup"><span data-stu-id="ea3ed-105">Where it applies</span></span>
-<span data-ttu-id="ea3ed-106">Funkcjonalność pobierania najstarszej partii jest konfigurowana w menu urządzenia przenośnego i wpływa na pobieranie towarów w partiach poniżej.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="e2df4-105">Zastosowanie</span><span class="sxs-lookup"><span data-stu-id="e2df4-105">Where it applies</span></span>
+<span data-ttu-id="e2df4-106">Funkcjonalność pobierania najstarszej partii jest konfigurowana w menu urządzenia przenośnego i wpływa na pobieranie towarów w partiach poniżej.</span><span class="sxs-lookup"><span data-stu-id="e2df4-106">Pick oldest batch is configured on mobile device menu items and effects the pick for batch below items.</span></span>
 
-## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="ea3ed-107">Konfigurowanie pobierania najstarszej partii</span><span class="sxs-lookup"><span data-stu-id="ea3ed-107">How to set up the configuration for Pick oldest batch</span></span> 
-<span data-ttu-id="ea3ed-108">Dla towarów skonfigurowanych do wykorzystywania istniejącej pracy w opcji **Pobierz z najstarszej partii** na urządzeniu komórkowym można ustawić wartość **Brak**, **Ostrzegaj** lub **Wymuszaj**.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a><span data-ttu-id="e2df4-107">Konfigurowanie pobierania najstarszej partii</span><span class="sxs-lookup"><span data-stu-id="e2df4-107">How to set up the configuration for Pick oldest batch</span></span> 
+<span data-ttu-id="e2df4-108">Dla towarów skonfigurowanych do wykorzystywania istniejącej pracy w opcji **Pobierz z najstarszej partii** na urządzeniu komórkowym można ustawić wartość **Brak**, **Ostrzegaj** lub **Wymuszaj**.</span><span class="sxs-lookup"><span data-stu-id="e2df4-108">For items that are set to use existing work, **Pick oldest batch** can be set to **None**, **Warn**, or **Force** from a mobile device menu.</span></span>
 
-<span data-ttu-id="ea3ed-109">**Brak**: Pracownicy nie będą dostawać żadnych komunikatów i mogą pobierać dowolne partie w swoich lokalizacjach.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
+<span data-ttu-id="e2df4-109">**Brak**: Pracownicy nie będą dostawać żadnych komunikatów i mogą pobierać dowolne partie w swoich lokalizacjach.</span><span class="sxs-lookup"><span data-stu-id="e2df4-109">**None**: Workers will not receive any messages and they will be allowed to pick any batch in their location.</span></span>
 
-<span data-ttu-id="ea3ed-110">**Ostrzegaj** i **Wymuszaj**: Gdy pracownik zaznaczy partię, nad formantem partii będzie wyświetlana lista partii z najstarszymi datami ważności.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="ea3ed-111">Jeśli lokalizacja jest kontrolowana przez numer identyfikacyjny, nad formantem numeru identyfikacyjnego zostanie wyświetlona lista numerów identyfikacyjnych z najstarszymi partiami.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
--   <span data-ttu-id="ea3ed-112">**Ostrzeganie**: Jeśli pracownik wybierze numer identyfikacyjny lub partię, która nie znajduje się na wyświetlanej liście, formant będzie wygaszony i pojawi się ostrzeżenie, że istnieje starsza partia do wybrania.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="ea3ed-113">Aby móc kontynuować pracę, pracownik może ponownie wybrać ten sam numer identyfikacyjny lub partię.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
--   <span data-ttu-id="ea3ed-114">**Wymuszaj**: Pracownicy będą cały czas otrzymywać komunikat, że istnieje starsza partia do pobrania.</span><span class="sxs-lookup"><span data-stu-id="ea3ed-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
+<span data-ttu-id="e2df4-110">**Ostrzegaj** i **Wymuszaj**: Gdy pracownik zaznaczy partię, nad formantem partii będzie wyświetlana lista partii z najstarszymi datami ważności.</span><span class="sxs-lookup"><span data-stu-id="e2df4-110">**Warn** and **Force**:  A list of the batch(es) with the oldest expiration date will be displayed above the batch control when the worker selects a batch.</span></span> <span data-ttu-id="e2df4-111">Jeśli lokalizacja jest kontrolowana przez numer identyfikacyjny, nad formantem numeru identyfikacyjnego zostanie wyświetlona lista numerów identyfikacyjnych z najstarszymi partiami.</span><span class="sxs-lookup"><span data-stu-id="e2df4-111">If the location is license plate controlled, a list of license plates that have the oldest batch will be displayed above the license plate control.</span></span> 
+-   <span data-ttu-id="e2df4-112">**Ostrzeganie**: Jeśli pracownik wybierze numer identyfikacyjny lub partię, która nie znajduje się na wyświetlanej liście, formant będzie wygaszony i pojawi się ostrzeżenie, że istnieje starsza partia do wybrania.</span><span class="sxs-lookup"><span data-stu-id="e2df4-112">**Warn**: If a worker chooses a license plate or batch that is not on the shown list, the control will be blanked and a warning will be shown that there is an older batch to select.</span></span> <span data-ttu-id="e2df4-113">Aby móc kontynuować pracę, pracownik może ponownie wybrać ten sam numer identyfikacyjny lub partię.</span><span class="sxs-lookup"><span data-stu-id="e2df4-113">To be allowed to continue the work, the worker can select the same license plate or batch again.</span></span>  
+-   <span data-ttu-id="e2df4-114">**Wymuszaj**: Pracownicy będą cały czas otrzymywać komunikat, że istnieje starsza partia do pobrania.</span><span class="sxs-lookup"><span data-stu-id="e2df4-114">**Force**: Workers will continue to receive the message that there is an older batch to pick.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
