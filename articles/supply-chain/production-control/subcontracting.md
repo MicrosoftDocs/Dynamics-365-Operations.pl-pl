@@ -2,11 +2,9 @@
 title: Podwykonawstwo
 description: Ten temat pomoże stworzyć przewodnik funkcjonalności podwykonawstwa w produkcji w programie Dynamics 365 Supply Chain Management.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255548"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825189"
 ---
 # <a name="subcontracting"></a>Podwykonawstwo
 
@@ -210,7 +208,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
 
     ![Dwa zestawy pracy pobrania surowców na stronie Praca](./media/subcontract22_work-page.png)
 
-26. Uruchom aplikację magazynową, aby wykonać przetwarzanie pracy magazynowej dla operacji 10.
+26. Uruchom aplikację Warehouse Management, aby wykonać przetwarzanie pracy magazynowej dla operacji 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     - W polu **Od nr operacji** wybierz wartość **10**.
     - W polu **Do nr operacji** wybierz wartość **10**.
 
-    ![Wartości ustawiane na karcie Ogólne](./media/subcontract23_start-dialog.png)
+    ![Wartości ustawiane na karcie Ogólne 1](./media/subcontract23_start-dialog.png)
 
 31. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Rozpoczęcie** i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 
     Zauważ, że stan zlecenia produkcyjnego został zmieniony na **Rozpoczęte**. Materiały dla operacji 10 są używane poprzez automatyczne zaksięgowanie arkusza listy pobrania. Zużycie czasu w operacji 10 jest uwzględniane poprzez automatyczne zaksięgowanie arkusza karty marszruty.
 
-32. Uruchom aplikację magazynową, aby wykonać przetwarzanie pracy magazynowej dla operacji 20.
+32. Uruchom aplikację Warehouse Management, aby wykonać przetwarzanie pracy magazynowej dla operacji 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     - W polu **Ilość** wpisz wartość **10**.
     - W opcji **Księgowanie listy pobrania** wybierz wartość **Nie**.
 
-    ![Wartości ustawiane na karcie Ogólne](./media/subcontract24_general-tab.png)
+    ![Wartości ustawiane na karcie Ogólne 2](./media/subcontract24_general-tab.png)
 
 35. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Rozpoczęcie** i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 

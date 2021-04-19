@@ -2,11 +2,9 @@
 title: Synchronizowanie zleceń z projektem z rozwiązania Field Service do Supply Chain Management
 description: Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania zamówień z numerem projektu między programem Dynamics 365 Field Service a Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: d2364378ce8992666e374ec6f665c180d2fa1981
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d733bf3256fa1f6c572bd0aa35c228490d409bbc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258030"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836501"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Synchronizowanie zleceń z projektem z rozwiązania Field Service do Supply Chain Management
 

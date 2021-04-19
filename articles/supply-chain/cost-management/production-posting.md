@@ -2,11 +2,9 @@
 title: Księgowanie produkcji
 description: Ten artykuł zawiera informacje o różnych typach księgowań w procesie produkcji.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemGroup, ProjCategory, WrkCtrResourceGroup, WrkCtrTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fa5040e1923a1ff7135f1311a260f65c75b8ead
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b49e34e44ca4cd3162928f0d512b467aa4c752d9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245282"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830299"
 ---
 # <a name="production-posting"></a>Księgowanie produkcji
 

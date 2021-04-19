@@ -2,11 +2,9 @@
 title: Wysyłka małych paczek
 description: Ten temat zawiera informacje dotyczące funkcji Wysyłka małych paczek (SPS). Ta funkcja umożliwia aplikacji Microsoft Dynamics 365 Supply Chain Management przesyłanie do przewoźnika szczegółów dotyczących spakowanego kontenera, a następnie odbieranie od niego etykiety wysyłkowej, stawki kosztów i numeru śledzenia.
 author: Mirzaab
-manager: tfehr
 ms.date: 01/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSRateEngine, TMSCarrier, CustTable, TMSShippingCarrierCustomerAccount, TMSSmallParcelShippingFeature
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-08
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 37f07139853c30da25c067a3d736b4b9bf4eb361
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3969ee6b46f38fe2650881fb0183c60aadce6c8a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501181"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831177"
 ---
 # <a name="small-parcel-shipping"></a>Wysyłka małych paczek
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Funkcja wysyłki małych paczek (SPS) umożliwia aplikacji Microsoft Dynamics 365 Supply Chain Management bezpośrednią interakcję z przewoźnikami, zapewniając strukturę komunikacji za pośrednictwem interfejsów API przewoźnika. Ta funkcja jest przydatna w przypadku wysyłki pojedynczych zamówień sprzedaży za pośrednictwem przewoźników komercyjnych, zamiast wysyłki kontenerów lub ładunków częściowych (LTL).
 

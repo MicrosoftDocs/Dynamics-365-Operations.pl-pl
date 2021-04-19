@@ -2,11 +2,9 @@
 title: Grupowanie szablonów grup czynności
 description: Grupowanie szablonów grupy czynności umożliwia systemowi korzystanie z ustawień szablonu grupy czynności w celu określenia, na podstawie zdefiniowanych kryteriów, sposobu podziału zwolnionych wierszy i przypisania ich do nowych lub istniejących grup czynności. Ta funkcja może być przydatna w magazynach, w których grupy czynności są tworzone na podstawie określonych kryteriów, w przypadku gdy kierownicy preferują automatyczne, a nie ręczne, tworzenie grup czynności.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 520338683443105ffd1df7fc2569cd95a5f50879
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a591624f6611148abe4888e67d8d3a9bbea9cd27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245137"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838041"
 ---
 # <a name="wave-template-grouping"></a>Grupowanie szablonów grup czynności
 

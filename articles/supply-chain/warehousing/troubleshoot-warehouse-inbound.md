@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów dotyczących przychodzących operacji magazynowych
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z przychodzącymi operacjami magazynowymi w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250889"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828233"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Rozwiązywanie problemów dotyczących przychodzących operacji magazynowych
 
@@ -65,5 +63,22 @@ Nowa funkcja obsługi ładunków przychodzących *Przekroczenie przyjmowania ilo
 
 Aby uzyskać więcej informacji, zajrzyj do [Księguj zarejestrowane ilości produktów na podstawie zamówień zakupu](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Podczas rejestrowania zamówień przychodzących wyświetlany jest następujący komunikat o błędzie: „Ilość jest nieprawidłowa”.
+
+### <a name="issue-description"></a>Opis problemu
+
+Jeśli w polu **Zasady grupowania identyfikatorów** jest ustawiona wartość *Użytkownik zdefiniowany* dla elementu menu urządzenia przenośnego używanego do rejestrowania zamówień przychodzących, pojawia się komunikat o błędzie („Ilość jest prawidłowa”) i nie można zakończyć rejestracji.
+
+### <a name="issue-cause"></a>Przyczyna problemu
+
+Gdy *Zdefiniowana przez użytkownika* jest używana jako zasada grupowania numerów identyfikacyjnych, system rozdziela przychodzące zapasy na osobne numery identyfikacyjne, zgodnie z grupą sekwencji jednostek. Jeśli do śledzenia otrzymywanego towaru używane są numery partii lub serii, ilości każdej partii lub serii należy określić zgodnie z zarejestrowanym numerem identyfikacyjnym. Jeśli ilość określona dla numeru rejestracyjnego przekracza ilość, która nadal musi zostać odebrana dla bieżących wymiarów, zostanie wyświetlony komunikat o błędzie.
+
+### <a name="issue-resolution"></a>Rozwiązywanie problemów
+
+Podczas rejestrowania towaru za pomocą elementu menu urządzenia przenośnego, w którym w polu **Zasady grupowania numerów identyfikacyjnych** jest ustawiona wartość *Zdefiniowana przez użytkownika*, system może wymagać potwierdzenia lub wprowadzenia numerów identyfikacyjnych, numerów partii lub numerów seryjnych.
+
+Na stronie potwierdzenia dla bieżącego numeru identyfikacyjnego system pokazuje ilość zaalokowana dla bieżącego numeru identyfikacyjnego. Na stronach potwierdzenia przetwarzania wsadowego lub seryjnego w systemie będzie pokazywana ilość, jaka musi zostać jeszcze odebrana dla bieżącego numeru seryjnego. Zawiera również pole, w którym można wprowadzić ilość do rejestracji dla tej kombinacji numeru identyfikacyjnego i numeru seryjnego. W tym przypadku upewnij się, że ilość zarejestrowana dla tego numeru identyfikacyjnego nie przekracza ilości, która musi być jeszcze otrzymana.
+
+Jeśli podczas rejestracji zamówienia przychodzącego generowana jest zbyt wiele numerów identyfikacyjnych, wartość pola **Zasady grupowania numerów identyfikacyjnych** może zostać zmieniona na *Grupowanie numerów identyfikacyjnych*, można przypisać do towaru nową grupę sekwencji jednostek lub można dezaktywować opcję **Grupowania numerów identyfikacyjnych** dla tej grupy sekwencji jednostek.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

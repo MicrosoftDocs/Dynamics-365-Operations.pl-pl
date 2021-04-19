@@ -2,11 +2,9 @@
 title: Poziom obliczania kosztu
 description: W tym temacie opisano poziom BOM o nazwie poziom obliczania kosztu. Ten poziom BOM wyklucza produkcję i zamówienia partii z obliczeń.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-23
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 1cfbbb6aadbd24a0352776285f6c60ff10f59549
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f7cde239107528a6bc2aeb0e424d024d4f3fb2a6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251033"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839494"
 ---
 # <a name="cost-calculation-level"></a>Poziom obliczania kosztu
 

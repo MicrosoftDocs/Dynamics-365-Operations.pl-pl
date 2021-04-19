@@ -2,11 +2,9 @@
 title: Zasady pracy
 description: W tym temacie opisano sposób konfigurowania zasad pracy.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248554"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838137"
 ---
 # <a name="work-policies"></a>Zasady pracy
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować system i aplikację magazynu, tak aby obsługiwała ona zasady pracy. Funkcji tej można używać do szybkiego rejestrowania zapasów bez tworzenia odkładów w przypadku przyjmowania zamówień zakupu lub przenoszenia lub podczas kończenia procesów produkcyjnych. Ten temat zawiera ogólne informacje. Aby uzyskać szczegółowe informacje związane z otrzymywaniem numeru identyfikacyjnego, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](warehousing-mobile-device-app-license-plate-receiving.md).
+W tym temacie wyjaśniono, jak skonfigurować system i aplikację Warehouse Management, tak aby obsługiwała ona zasady pracy. Funkcji tej można używać do szybkiego rejestrowania zapasów bez tworzenia odkładów w przypadku przyjmowania zamówień zakupu lub przenoszenia lub podczas kończenia procesów produkcyjnych. Ten temat zawiera ogólne informacje. Aby uzyskać szczegółowe informacje związane z otrzymywaniem numeru identyfikacyjnego, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md).
 
-Zasady pracy kontrolują, czy praca magazynowa jest tworzona, gdy wyprodukowany towar jest raportowany jako gotowy, czy gdy towary są przyjmowane za pomocą aplikacji magazynowej. Poszczególne zasady pracy definiuje się, definiując warunki ich zastosowania: typy i procesy zlecenia produkcyjnego, lokalizacja magazynu oraz (opcjonalnie) produkty. Na przykład zamówienie zakupu dotyczące produktu *A0001* musi zostać odebrane w lokalizacji *RECV* w magazynie *24*. Później produkt jest zużywany w innym procesie w lokalizacji *RECV*. W takim przypadku można skonfigurować zasady pracy, aby zapobiec tworzeniu pracy odkładanej, gdy pracownik zgłasza produkt *A0001* otrzymany w lokalizacji *RECV*.
+Zasady pracy kontrolują, czy praca magazynowa jest tworzona, gdy wyprodukowany towar jest raportowany jako gotowy, czy gdy towary są przyjmowane za pomocą aplikacji Warehouse Management. Poszczególne zasady pracy definiuje się, definiując warunki ich zastosowania: typy i procesy zlecenia produkcyjnego, lokalizacja magazynu oraz (opcjonalnie) produkty. Na przykład zamówienie zakupu dotyczące produktu *A0001* musi zostać odebrane w lokalizacji *RECV* w magazynie *24*. Później produkt jest zużywany w innym procesie w lokalizacji *RECV*. W takim przypadku można skonfigurować zasady pracy, aby zapobiec tworzeniu pracy odkładanej, gdy pracownik zgłasza produkt *A0001* otrzymany w lokalizacji *RECV*.
 
 > [!NOTE]
 > - Aby zasada pracy była aktywna, należy zdefiniować co najmniej jedną lokalizację na skróconej karcie **Lokalizacji zapasów** na stronie **Zasady pracy**. 
@@ -297,7 +295,7 @@ Po zgłoszeniu zlecenia produkcyjnego jako gotowego nie została wygenerowana pr
 
 Aby uzyskać więcej informacji o elementach menu urządzeń przenośnych, zapoznaj się z tematem [Konfigurowanie urządzeń przenośnych do pracy magazynowej](configure-mobile-devices-warehouse.md).
 
-Więcej informacji na temat otrzymywania tablic rejestracyjnych i zasad pracy, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](warehousing-mobile-device-app-license-plate-receiving.md).
+Więcej informacji na temat otrzymywania tablic rejestracyjnych i zasad pracy, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](warehousing-mobile-device-app-license-plate-receiving.md).
 
 Aby uzyskać więcej informacji o zarządzaniu ładunkami przychodzącymi, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](inbound-load-handling.md).
 

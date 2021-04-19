@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów z rezerwacjami w module zarządzania magazynem
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z rezerwacjami w magazynie w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248722"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828113"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Rozwiązywanie problemów z rezerwacjami w module zarządzania magazynem
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z rezerwacjami w magazynie w Microsoft Dynamics 365 Supply Chain Management.
+
+Aby uzyskać tematy związane z rejestracją numerów partii i numerów seryjnych, zobacz [Rozwiązywanie problemów z hierarchiami rezerwacji partii i numerów seryjnych w magazynie](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Otrzymuje następujący komunikat o błędzie: „Nie można usunąć rezerwacji, ponieważ utworzono pracę, która opiera się na rezerwacjach”.
 
@@ -63,20 +63,6 @@ Ten problem może wystąpić, jeśli system nie może zaktualizować ilości zap
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
 Ten problem jest prawdopodobnie spowodowany otwarta pracą. Ukończ pracę lub odbierz bez tworzenia pracy. Upewnij się, że żadne transakcje magazynowe nie rezerwują ilości fizycznie. Na przykład tymi transakcjami mogą być otwarte zlecenia kontroli jakości, rekordy blokowania zapasów lub zamówienia wyjścia.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Pojawia się następujący komunikat o błędzie: „Aby przypisać do grupy czynności, wiersze ładunku muszą określać wymiary powyżej lokalizacji. Aby przypisać te wymiary, zarezerwuj i ponownie utwórz wiersz ładunku”.
-
-### <a name="issue-description"></a>Opis problemu
-
-W przypadku użycia towaru, który ma „partię powyżej” hierarchii rezerwacji (z wymiarem **numer partii** umieszczonym *nad* **wymiarem lokalizacji**), polecenie **Zwolnij do magazynu** na stronie **Pulpitu planowania ładunku** dla ilości częściowej nie działa. Pojawia się ten komunikat o błędzie i nie utworzono żadnej pracy dla ilości częściowej.
-
-Jednakże w przypadku użycia towaru, który ma „partię poniżej” hierarchii rezerwacji (z wymiarem **numer partii** umieszczonym *pod* wymiarem **lokalizacji**) można zwolnić ładunek ze strony **Warsztat planowania wysyłki ładunku** dla ilości częściowej.
-
-### <a name="issue-resolution"></a>Rozwiązywanie problemów
-
-Jest to celowe. Jeśli wymiar zostanie umieszczony powyżej wymiaru **Lokalizacji** w hierarchii rezerwacji, musi zostać on określony przed zwolnieniem do magazynu. Microsoft ocenił ten błąd i ustalił, że jest on ograniczeniem funkcji w trakcie zwalniania do magazynu z warsztatu planowania wysyłki ładunku. Ilości częściowe nie mogą zostać zwolnione, jeśli nie określono co najmniej jednego wymiaru powyżej **Lokalizacji**.
-
-Aby uzyskać więcej informacji, zobacz [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

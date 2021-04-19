@@ -2,11 +2,9 @@
 title: Stan lokalizacji w magazynie
 description: Ten temat stanowi przegląd funkcji stanu lokalizacji w magazynie.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSLocation
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: e343fbd33ca616b0e20efb1f1fd66ed4863a72dd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4f31fd424760aa677df9235e53dc4af20cc2ea94
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248626"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837352"
 ---
 # <a name="warehouse-location-status"></a>Stan lokalizacji w magazynie
 
@@ -53,7 +51,7 @@ Aby móc używać funkcji *Status lokalizacji magazynu*, należy ją włączyć 
 
 ### <a name="prepare-the-sample-data-that-is-required-for-the-example-scenario"></a>Przygotuj przykładowe dane wymagane dla scenariusza przykładowego
 
-Przed rozpoczęciem pracy nad scenariuszem należy aktywować przykładowe dane i skonfigurować funkcję zgodnie z opisem w tej sekcji. Aby wykonać przykładowy scenariusz, należy skorzystać z aplikacji magazynowej lub emulatora opartego na przeglądarce. Podane tutaj kroki korzystają z aplikacji magazynowej. Kroki dla emulatora opartego na przeglądarce są podobne.
+Przed rozpoczęciem pracy nad scenariuszem należy aktywować przykładowe dane i skonfigurować funkcję zgodnie z opisem w tej sekcji. Aby wykonać przykładowy scenariusz, należy skorzystać z aplikacji Warehouse Management lub emulatora opartego na przeglądarce. Podane tutaj kroki korzystają z aplikacji Warehouse Management. Kroki dla emulatora opartego na przeglądarce są podobne.
 
 #### <a name="use-the-usmf-legal-entity"></a>Użyj firmy USMF
 

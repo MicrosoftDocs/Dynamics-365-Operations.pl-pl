@@ -1,12 +1,10 @@
 ---
 title: Gwarancje na składniki majątku i typy składników majątku
 description: W tym temacie wyjaśniono, jak konfigurować gwarancje składników majątku i typów składników majatku w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 78ac93b1e681fca7d7eefd921f282a8496aa9d0a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f05f5af76aeb037d606d38a368a49d011f0d2bd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245330"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825573"
 ---
 # <a name="warranties-on-assets-and-asset-types"></a>Gwarancje na składniki majątku i typy składników majątku
 

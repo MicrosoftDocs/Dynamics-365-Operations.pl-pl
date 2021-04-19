@@ -2,11 +2,9 @@
 title: Podział pracy
 description: Ten temat zawiera informacje dotyczące funkcji podziału pracy. Ta funkcja umożliwia dzielenie dużych zleceń roboczych na kilka mniejszych zleceń produkcyjnych, które można następnie przypisać do wielu pracowników magazynu. Dzięki temu ta sama praca może być pobierana jednocześnie przez kilku pracowników magazynu.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245089"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830769"
 ---
 # <a name="work-split"></a>Podział pracy
 
@@ -69,7 +67,7 @@ Funkcja *Podziału pracy* powoduje dodanie poniższych dwóch przycisków do kar
 >
 > - Obecnie praca jest dzielona przez innego użytkownika. W przypadku próby otwarcia strony podziału dla pracy, która jest już podzielona przez innego użytkownika, pojawia się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona. Spróbuj ponownie za kilka minut. Jeśli ten komunikat będzie nadal wyświetlany, skontaktuj się z kierownikiem”.
 
-Nowa przyczyna blokowania pracy — *Podział pracy* wskazuje, kiedy identyfikator pracy jest w trakcie dzielenia. Jest ona wyświetlana zarówno na stronie **Podziału pracy**, jak i w aplikacji magazynu, jeśli użytkownik podejmie próbę uruchomienia pracy. Jeśli są używane przyczyny blokowania, nazwa pola **Zablokowanej grupy czynności** w identyfikatorze pracy zostaje zmieniona na **Zablokowane**.
+Nowa przyczyna blokowania pracy — *Podział pracy* wskazuje, kiedy identyfikator pracy jest w trakcie dzielenia. Jest ona wyświetlana zarówno na stronie **Podziału pracy**, jak i w aplikacji Warehouse Management, jeśli użytkownik podejmie próbę uruchomienia pracy. Jeśli są używane przyczyny blokowania, nazwa pola **Zablokowanej grupy czynności** w identyfikatorze pracy zostaje zmieniona na **Zablokowane**.
 
 ## <a name="initiate-a-work-split"></a>Inicjowanie podziału pracy
 
@@ -147,9 +145,9 @@ Aby zakończyć pracę z podziałem, należy usunąć przyczynę blokady *Podzia
 
 Po usunięciu przyczyny zablokowania *Podziału pracy* można uruchomić pracę na urządzeniu przenośnym, pod warunkiem, że w identyfikatorze pracy stan **Zablokowane** jest ustawiony wartość *Nie*.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Blokowanie użytkowników w aplikacji magazynowej
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Blokowanie użytkowników w aplikacji mobilnej Warehouse Management
 
-W przypadku użycia aplikacji magazynowej do uruchomienia pobierania pracy według identyfikatora pracy, pojawi się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona”. Jeśli zostanie wyświetlony ten komunikat, wybierz przycisk **Anuluj**. Następnie można kontynuować przetwarzanie innej pracy.
+W przypadku użycia aplikacji Warehouse Management do uruchomienia pobierania pracy według identyfikatora pracy, pojawi się następujący komunikat o błędzie: „Praca o identyfikatorze \#\#\#\# jest obecnie dzielona”. Jeśli zostanie wyświetlony ten komunikat, wybierz przycisk **Anuluj**. Następnie można kontynuować przetwarzanie innej pracy.
 
 ## <a name="other-blocked-operations"></a>Inne zablokowane operacje
 

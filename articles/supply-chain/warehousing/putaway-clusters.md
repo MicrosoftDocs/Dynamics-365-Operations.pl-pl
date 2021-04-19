@@ -2,11 +2,9 @@
 title: Grupy odłożenia
 description: Grupy odłożenia umożliwiają w tym samym czasie pobieranie wielu numerów identyfikacyjnych, a następnie ich odłożenie w różnych lokalizacjach. Mogą być bardzo przydatne w firmach detalicznych, w których numery identyfikacyjne zazwyczaj nie są pełnymi paletami zapasów.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228448"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840372"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -230,7 +228,7 @@ Ten scenariusz symuluje przetwarzanie grupy odłożenia.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Przyjmowanie i sortowanie zapasów w grupie
 
-1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz opcję **Odbiór i sortowanie grupy**.
 1. W polu **Ponum** wprowadź numer zamówienia zakupu.
@@ -272,7 +270,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
 #### <a name="put-the-cluster-away"></a>Odłóż grupę
 
-1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest skonfigurowany dla magazynu *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest ustawiony dla magazynu *61*.
 1. W menu głównym wybierz opcję **Przychodzące**.
 1. W menu **Przychodzące** wybierz **Grupa odłożenia**.
 1. Wybierz **Identyfikator grupy** i wprowadź identyfikator grupy, który został wprowadzony wcześniej dla zamkniętej grupy.

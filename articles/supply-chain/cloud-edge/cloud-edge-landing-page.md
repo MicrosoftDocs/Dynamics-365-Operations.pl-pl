@@ -2,11 +2,9 @@
 title: Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
 description: Ten temat przedstawia informacje na temat zarządzania jednostką skali chmury i urządzenia brzegowego przy produkcji i wykonywaniu zadań magazynowych.
 author: cabeln
-manager: ''
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-09-23
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fb0d8e0226b11e93503979c202da917de1df6319
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240444"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836717"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
 
@@ -124,10 +122,10 @@ Aby uzyskać więcej informacji, zajrzyj do [szczegółów obciążenia pracą j
 Przy zarządzaniu magazynem w jednostki skali chmury i urządzenia brzegowego zapewniają następujące możliwości, nawet jeśli jednostki brzegowe nie są połączone z centrum:
 
 - Przetwarzanie wybranych metod grupy czynności jest włączone dla zamówień sprzedaży i uzupełniania popytu.
-- Pracownicy magazynu mogą uruchamiać pracę magazynową sprzedaży i uzupełnienia popytu, korzystając z aplikacji magazynowej.
-- Pracownicy magazynu mogą uzyskiwać dostęp do dostępnych zapasów za pośrednictwem aplikacji magazynu.
-- Pracownicy magazynu mogą tworzyć i uruchamiać przesunięcia zapasów za pośrednictwem aplikacji magazynu.
-- Pracownicy magazynu mogą rejestrować zamówienia zakupu i wykonywać odłożenia pracy przy użyciu aplikacji magazynowej
+- Pracownicy magazynu mogą uruchamiać pracę magazynową sprzedaży i uzupełnienia popytu, korzystając z aplikacji Warehouse Management.
+- Pracownicy magazynu mogą uzyskiwać dostęp do dostępnych zapasów za pośrednictwem aplikacji Warehouse Management.
+- Pracownicy magazynu mogą tworzyć i uruchamiać przesunięcia zapasów za pośrednictwem aplikacji Warehouse Management.
+- Pracownicy magazynu mogą rejestrować zamówienia zakupu i wykonywać odłożenia pracy przy użyciu aplikacji Warehouse Management.
 
 Aby uzyskać więcej informacji, zajrzyj do [szczegółów obciążenia pracą jednostki skali w magazynie](cloud-edge-workload-warehousing.md).
 

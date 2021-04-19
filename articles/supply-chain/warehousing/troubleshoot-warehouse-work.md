@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów pracy magazynowej
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z pracą magazynową w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1814f7b23efda2cabdb7bfc7bea4de6e3d6ec2f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 08cc074fe851b952ebfc942ae3d1cb05240d3b91
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237066"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837448"
 ---
 # <a name="troubleshoot-warehouse-work"></a>Rozwiązywanie problemów pracy magazynowej
 
@@ -40,11 +38,11 @@ Nie można przenieść numeru identyfikacyjnego za pomocą elementu menu **przes
 
 Ten problem zostanie rozwiązany przez wprowdzane zmiany [KB 4571546](https://fix.lcs.dynamics.com/Issue/Details?kb=4571546&bugId=467880&dbType=3&qc=5b46d7faa9cc326cebfe9854cb30be8ea30b21ef33d3572c325fbb21202de687). Wprowadzenie tych zmian powoduje, że pole **numeru seryjnego** będzie opcjonalne, jeśli są dozwolone puste przyjęcie i pustego wydanie.
 
-## <a name="i-receive-the-following-error-message-in-the-warehouse-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>W aplikacji magazynu jest zgłaszany następujący komunikat o błędzie podczas przetwarzania przesunięć: „Właściciel zapasów %1 jest niedozwolony w tym procesie”.
+## <a name="i-receive-the-following-error-message-in-the-warehouse-management-mobile-app-when-i-process-movements-the-inventory-owner-1-is-not-allowed-in-this-process"></a>W aplikacji Warehouse Management jest zgłaszany następujący komunikat o błędzie podczas przetwarzania przesunięć: „Właściciel zapasów %1 jest niedozwolony w tym procesie”.
 
 ### <a name="issue-description"></a>Opis problemu
 
-Brak wymiaru śledzenia **właściciela**, jeśli do tworzenia przesunięć jest używana aplikacja magazynowa. Zwykły arkusz przesunięć zapasów z klienta Supply Chain Management działa zgodnie z oczekiwaniami i może być księgowany tylko wtedy, gdy jest wypełniony wymiar **właściciel**.
+Brak wymiaru śledzenia **właściciela**, jeśli do tworzenia przesunięć jest używana aplikacja Warehouse Management. Zwykły arkusz przesunięć zapasów z klienta Supply Chain Management działa zgodnie z oczekiwaniami i może być księgowany tylko wtedy, gdy jest wypełniony wymiar **właściciel**.
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 

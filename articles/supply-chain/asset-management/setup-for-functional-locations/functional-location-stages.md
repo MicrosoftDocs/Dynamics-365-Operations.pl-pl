@@ -1,12 +1,10 @@
 ---
 title: Stany cyklu życia lokalizacji czynności konserwacyjnych
 description: W tym temacie opisano sposób konfigurowania stanów lokalizacji czynności konserwacyjnych i modeli cyklu życia w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ded5fb032676a261566254427abcb642924451d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228738"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837760"
 ---
 # <a name="functional-location-lifecycle-states"></a>Stany cyklu życia lokalizacji czynności konserwacyjnych
 

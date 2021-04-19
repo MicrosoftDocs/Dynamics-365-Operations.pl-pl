@@ -2,11 +2,9 @@
 title: Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 description: W tym temacie opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235347"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835637"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -66,7 +64,7 @@ Gdy ładunek przychodzący po raz pierwszy dociera do magazynu, pracownicy magaz
 
 - **Menu urządzenia przenośnego jest skonfigurowane do wsparcia odbierania ładunku**
 
-    [Aplikacja magazynowa](install-configure-warehousing-app.md) na urządzenia mobilne obsługuje tylko następujące procesy tworzenia pracy:
+    [Aplikacja Warehouse Management](../warehousing/install-configure-warehouse-management-app.md) na urządzenia mobilne obsługuje tylko następujące procesy tworzenia pracy:
 
     - Odbierana pozycja ładunku
     - Odbierana i odłożona pozycja ładunku
@@ -285,7 +283,7 @@ Aby pracować z tymi scenariuszami przy użyciu określonych przykładowych reko
 
 Zanim pracownik etatowy magazynu będzie mógł skorzystać z urządzenia przenośnego w celu zarejestrowania zapasów przychodzących, które są połączone z ładunkiem, należy utworzyć w tym celu element menu urządzenia przenośnego.
 
-W tej sekcji zostanie utworzony element menu urządzenia przenośnego i dodany do istniejącego menu. Pracownik magazynu może następnie wybrać pozycję menu w aplikacji magazynowania.
+W tej sekcji zostanie utworzony element menu urządzenia przenośnego i dodany do istniejącego menu. Pracownik magazynu może następnie wybrać pozycję menu w aplikacji Warehouse Management.
 
 1. Przejdź do **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Elementy menu urządzenia przenośnego** i upewnij się, że menu urządzenia przenośnego zawiera element menu z następującymi ustawieniami:
 

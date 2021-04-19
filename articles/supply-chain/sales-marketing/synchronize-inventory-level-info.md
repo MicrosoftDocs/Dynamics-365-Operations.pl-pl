@@ -2,11 +2,9 @@
 title: Synchronizowanie informacji na poziomie zapasów z rozwiązania Supply Chain Management do rozwiązania Field Service
 description: Ten temat zawiera omówienie szablonów i podstawowych zadań, które są używane do synchronizowania danych poziomu zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/07/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0822bf4bdbb687e040e2ce04842ef263b8dc0e1a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c0db0c143abb8ce26a4a3007845050e4ddb02363
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243088"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840588"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synchronizowanie informacji na poziomie zapasów z rozwiązania Supply Chain Management do rozwiązania Field Service 
 

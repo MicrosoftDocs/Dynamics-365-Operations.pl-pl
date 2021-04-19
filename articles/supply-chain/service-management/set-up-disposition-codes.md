@@ -2,11 +2,9 @@
 title: Ustawianie kodów dyspozycji
 description: Można utworzyć kody dyspozycji w celu określania sposobu przetwarzania towaru zwracanego od odbiorcy.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnDispositionCode
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: c5049c6d1fc5fcfae3bb6c7da1dd8d078ce9c33e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470698"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835781"
 ---
 # <a name="set-up-disposition-codes"></a>Ustawianie kodów dyspozycji 
 

@@ -1,12 +1,10 @@
 ---
-title: Konfigurowanie i używanie drukowania etykiet w grupie czynności
+title: Drukowanie etykiety grupy czynności
 description: W tym temacie opisano drukowanie etykiet w grupie czynności i opisano sposób jego konfigurowania.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 05/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
@@ -15,14 +13,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: a08f10c1f5c3ff5b9023f37614c4e113b3a6b30d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fe04b841dbb3bb237de53f74d73f2b3f9162ae6b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211773"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840444"
 ---
-# <a name="set-up-and-use-wave-label-printing"></a>Konfigurowanie i używanie drukowania etykiet w grupie czynności
+# <a name="wave-label-printing"></a>Drukowanie etykiety grupy czynności
 
 [!include [banner](../includes/banner.md)]
 
@@ -932,5 +930,8 @@ Etykiety grupy czynności można przeglądać i ponownie drukować z następują
 
 W przypadku większości tych stron można znaleźć odpowiednią funkcję, zaznaczając odpowiednie **Etykiety grupy czynności** w grupie **Informacje pokrewne** na karcie **Wysyłki** w okienku akcji.
 
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Ponowne drukowanie i unieważnianie etykiet grupy czynności](reprint-and-void-wave-labels.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

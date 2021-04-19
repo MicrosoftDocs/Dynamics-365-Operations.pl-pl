@@ -2,11 +2,9 @@
 title: Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 description: Ten temat zawiera informacje o funkcji umożliwiającej skalowanie jednostek miar na uruchamianie wybranych procesów z poziomu obciążenia pracą w module Zarządzanie magazynem.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580972"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832401"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -70,7 +68,7 @@ Piasta posiada następujące dane:
 - Alokacja zamówienia i przetwarzanie ładunku wychodzącego
 - Wydanie do magazynu, tworzenie wysyłek, tworzenie grupy czynności i procesy finalizacji grupy czynności
 
-Jednostki te są zależne od rzeczywistego przetwarzania grupy czynności (np. przydziału pracy, pracy uzupełniania i tworzenia popytu) po wydaniu grupy czynności. W związku z tym pracownicy magazynu mogą przetwarzać pracę wychodzącą za pomocą aplikacji magazynowej połączonej z jednostką miary skali.
+Jednostki te są zależne od rzeczywistego przetwarzania grupy czynności (np. przydziału pracy, pracy uzupełniania i tworzenia popytu) po wydaniu grupy czynności. W związku z tym pracownicy magazynu mogą przetwarzać pracę wychodzącą za pomocą aplikacji Warehouse Management połączonej z jednostką miary skali.
 
 ![Przetwarzanie przepływu grupy czynności](./media/wes-wave-processing-ga.png "Przetwarzanie przepływu grupy czynności")
 
@@ -94,7 +92,7 @@ Należy się zalogować do centrum, aby zainicjować proces *zwalniania do magaz
 
 W przypadku korzystania z funkcji **Automatyczne zwalnianie zamówień zakupu** można wybierać określone wiersze zamówienia zakupu w oparciu o kwerendę. Typowym scenariuszem byłoby skonfigurowanie powtarzającego się zadania wsadowego, które zwalnia wszystkie potwierdzone wiersze zamówienia zakupu, które mają nadejść następnego dnia.
 
-Pracownicy magazynu mogą uruchomić proces odbioru za pomocą aplikacji magazynowej połączonej z jednostką miary skali. Dane są następnie rejestrowane przez jednostkę skali i podawane w odniesieniu do przychodzącego zamówienia magazynowego. Tworzenie i przetwarzanie kolejnych odłożeń będzie również obsługiwane przez jednostkę skali.
+Pracownicy magazynu mogą uruchomić proces odbioru za pomocą aplikacji Warehouse Management połączonej z jednostką miary skali. Dane są następnie rejestrowane przez jednostkę skali i podawane w odniesieniu do przychodzącego zamówienia magazynowego. Tworzenie i przetwarzanie kolejnych odłożeń będzie również obsługiwane przez jednostkę skali.
 
 Jeśli nie są używane *procesy magazynowe*, a w związku z tym nie są używane *zamówienia magazynowe*, centrum może przetwarzać przyjęcie magazynowe i przetwarzanie pracy niezależnie od jednostek skalowania.
 
@@ -117,10 +115,10 @@ Użytkownicy, którzy działają jako kierownicy magazynu tylko w jednostkach sk
 Następujące procesy wykonania magazynu mogą być włączone dla WES obciążenia pracą jednostki skali:
 
 - Wybrane metody grupy czynności dla zamówień sprzedaży i przeniesienia (alokacja, uzupełnianie zapasów popytu, konteneryzacja, tworzenie pracy i drukowanie etykiet grupy czynności)
-- Przetwarzanie pracy magazynowej zamówień sprzedaży i przeniesienia przy użyciu aplikacji magazynu (łącznie z pracą uzupełniania zapasów)
-- Badanie dostępnych zapasów przy użyciu aplikacji magazynowej
-- Tworzenie i uruchamianie przesunięć magazynowych przy użyciu aplikacji magazynowej
-- Rejestrowanie zamówień zakupu i wykonywanie odłożenia pracy przy użyciu aplikacji magazynowej
+- Przetwarzanie pracy magazynowej zamówień sprzedaży i przeniesienia przy użyciu aplikacji Warehouse Management (łącznie z pracą uzupełniania zapasów)
+- Badanie dostępnych zapasów przy użyciu aplikacji Warehouse Management
+- Tworzenie i uruchamianie przesunięć magazynowych przy użyciu aplikacji Warehouse Management
+- Rejestrowanie zamówień zakupu i wykonywanie odłożenia pracy przy użyciu aplikacji Warehouse Management
 
 Następujące typy zleceń roboczych są obecnie obsługiwane w przypadku obciążeń WES w wdrożeniach jednostek skali:
 
@@ -133,7 +131,7 @@ Następujące typy zleceń roboczych są obecnie obsługiwane w przypadku obcią
 Obecnie żadne inne typy przetwarzania dokumentów źródłowych nie są obsługiwane w jednostkach skali. Na przykład w przypadku obciążenia pracą WES w jednostce skalowania nie można wykonać procesu przyjęcia zamówienia przeniesienia (przyjęcie przeniesienia) ani procesu inwentaryzacji cyklicznej.
 
 > [!NOTE]
-> Elementy menu i przyciski menu urządzenia przenośnego dla nieobsługiwanych funkcji nie są pokazywane w _aplikacji magazynu_, jeśli są połączone z wdrożeniem jednostki skalowania.
+> Elementy menu i przyciski menu urządzenia przenośnego dla nieobsługiwanych funkcji nie są pokazywane w _aplikacji Warehouse Management_, jeśli są połączone z wdrożeniem jednostki skalowania.
 
 > [!WARNING]
 > W przypadku uruchamiania obciążenia pracą na jednostkę skali nie można uruchamiać nieobsługiwanych procesów dla określonego magazynu w centrali. Tabele podane dalej w tym temacie zawierają opis obsługiwanych możliwości.
@@ -164,7 +162,7 @@ Następująca funkcja zarządzania magazynem nie jest obecnie obsługiwana w obc
 - Przetwarzanie pracy magazynowej z uwagami do wysyłki
 - Przetwarzanie pracy magazynowej z wyzwalaniem progu inwentaryzacji ciągłej
 - Przetwarzanie pracy magazynowej przy użyciu automatyzacji obsługi materiałów/magazynu
-- Korzystanie z obrazu danych produktu głównego (na przykład w aplikacji magazynu)
+- Korzystanie z obrazu danych produktu głównego (na przykład w aplikacji Warehouse Management)
 
 > [!WARNING]
 > Niektóre funkcje magazynu nie będą dostępne dla magazynów, w których jest uruchomione obciążenie pracą zarządzania magazynem w jednostce skalowania, a ponadto nie są obsługiwane w centrum ani w obciążeniu jednostki skalowania.
@@ -253,7 +251,7 @@ W poniższej tabeli pokazano, które operacje magazynowe i obsługa wyjątków s
 | Transakcje                                           | Tak | Tak                          |
 | Przeniesienie według szablonu                               | Tak | Tak                          |
 | Przeniesienie magazynu                                 | Tak | Nr                           |
-| Tworzenie zamówienia przeniesienia z aplikacji magazynu           | Tak | Nr                           |
+| Tworzenie zamówienia przeniesienia z aplikacji mobilnej Warehouse Management           | Tak | Nr                           |
 | Korekta (wejście/wyjście)                                | Tak | Nr                           |
 | Zmiana stanu zapasów                            | Tak | Nr                           |
 | Przetwarzanie rozbieżności w inwentaryzacji ciągłej | Tak | Nr                           |

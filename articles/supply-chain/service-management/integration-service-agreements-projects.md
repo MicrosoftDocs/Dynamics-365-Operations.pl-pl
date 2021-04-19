@@ -2,11 +2,9 @@
 title: Integracja umów serwisowych i projektów
 description: Podczas pracy z wierszami umów serwisowych i umowami serwisowymi wykorzystywane są dane ustawiane w obszarach modułu Zarządzanie projektami i ich księgowanie.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd0a7de17e8ff098220fd183b714b77225cc217f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c9855915bd4d1f8ebb0c73bf53e7032af4972c45
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247317"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831578"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integracja umów serwisowych i projektów 
 

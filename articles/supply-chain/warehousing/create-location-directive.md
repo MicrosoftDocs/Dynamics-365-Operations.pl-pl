@@ -2,11 +2,9 @@
 title: Praca z dyrektywami lokalizacji
 description: W tym temacie opisano sposób pracy z dyrektywami lokalizacji. Dyrektywy lokalizacji to zdefiniowane przez użytkownika zasady pomagające w zidentyfikowaniu lokalizacji pobrania i odłożenia do celów przesunięcia magazynowego.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470526"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838401"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -152,7 +150,7 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
     > [!IMPORTANT]
     > Aby można było wykonywać zarówno ładowanie z wieloma pozycjami, jak i pojedyncze jednostki SKU, należy określić dwa wiersze o tej samej strukturze i konfiguracji, ale dla opcji **wielu jednostek SKU** należy ustawić wartość *tak* dla jednego wiersza, a *nie* dla drugiego. Dlatego dla operacji odłożenia potrzeba dwóch dyrektyw lokalizacji, które są identyczne, nawet jeśli w pracy o danym identyfikatorze nie trzeba stosować rozróżniania między zdefiniowaniem jednej a wielu jednostek SKU. Często, jeśli nie zostaną skonfigurowane obie te dyrektywy lokalizacji, nieoczekiwane lokalizacje procesów biznesowych będą pochodzić z dyrektywy dotyczącej lokalizacji zastosowania. Należy użyć podobnej konfiguracji dla dyrektyw lokalizacji, które mają **Typ pracy** określony jako *pobranie*, jeśli zachodzi potrzeba przetwarzania zamówień zawierających wiele jednostek SKU.
 
-    W przypadku wierszy pracy obsługujących więcej niż jeden kod towaru należy używać opcji **wielu jednostek SKU**. (Kod pozycji będzie pusty w szczegółach pracy i będzie wyświetlany jako **Wiele** na stronach przetwarzania w aplikacji magazynu.)
+    W przypadku wierszy pracy obsługujących więcej niż jeden kod towaru należy używać opcji **wielu jednostek SKU**. (Kod pozycji będzie pusty w szczegółach pracy i będzie wyświetlany jako **Wiele** na stronach przetwarzania w aplikacji Warehouse Management.)
 
     W typowym scenariuszu przykładowym szablon pracy jest skonfigurowany w taki sposób, aby miał więcej niż jedną parę pobranie/odłożenie. W takim przypadku można wyszukać określoną lokalizację przemieszczania, która ma być używana dla wierszy **Typu pracy** jako *Odłożenie*.
 
@@ -171,7 +169,7 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami dla typów zleceń roboczych](#fields-specific-types).
 
-- **Kod dyspozycji** — to pole jest używane w dyrektywach lokalizacji, które mają typ *zlecenia zakupu*, *towary gotowe odłożone* lub *zamówienia zwrotu* oraz typ pracy *odłożenie*. Za jego pomocą można kierować przepływem do używania konkretnej dyrektywy lokalizacji, w zależności od kodu dyspozycji wybranego przez pracownika w aplikacji magazynowej. Można na przykład skierować towary do lokalizacji inspekcji przed ich zwróceniem do magazynu. Kod dyspozycji można połączyć ze stanem zapasów. W ten sposób można go użyć do zmiany stanu zapasów jako części procesu przyjmowania. Na przykład użytkownik ma kod dyspozycji, *QA*, który ustawia stan zapasów na *QA*. Następnie można umieścić oddzielną dyrektywę lokalizacji w celu przeniesienia jej zapasów do lokalizacji kwarantanny.
+- **Kod dyspozycji** — to pole jest używane w dyrektywach lokalizacji, które mają typ *zlecenia zakupu*, *towary gotowe odłożone* lub *zamówienia zwrotu* oraz typ pracy *odłożenie*. Za jego pomocą można kierować przepływem do używania konkretnej dyrektywy lokalizacji, w zależności od kodu dyspozycji wybranego przez pracownika w aplikacji Warehouse Management. Można na przykład skierować towary do lokalizacji inspekcji przed ich zwróceniem do magazynu. Kod dyspozycji można połączyć ze stanem zapasów. W ten sposób można go użyć do zmiany stanu zapasów jako części procesu przyjmowania. Na przykład użytkownik ma kod dyspozycji, *QA*, który ustawia stan zapasów na *QA*. Następnie można umieścić oddzielną dyrektywę lokalizacji w celu przeniesienia jej zapasów do lokalizacji kwarantanny.
 
     > [!NOTE]
     > To pole jest dostępne tylko dla wybranych typów zlecenia produkcyjnego, w których jest dozwolone uzupełnienie zapasów. Aby uzyskać pełną listę, należy zapoznać się z [polami dla typów zleceń roboczych](#fields-specific-types).

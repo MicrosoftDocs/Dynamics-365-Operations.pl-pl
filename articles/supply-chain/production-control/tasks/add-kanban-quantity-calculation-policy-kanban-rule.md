@@ -2,11 +2,9 @@
 title: Dodawanie zasady obliczania liczby kart Kanban do reguły Kanban
 description: Ta procedura skupia się na tworzeniu zasady obliczania liczby kart Kanban oraz dodaniu jej do reguły Kanban w celu zoptymalizowania wielkości i liczby kart Kanban.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a32753701c9e06c46ed9b2a9c4b0329f62f15597
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd53d21f26596ac9ef394f61588b7778dc3de0fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255476"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825093"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Dodawanie zasady obliczania liczby kart Kanban do reguły Kanban
 

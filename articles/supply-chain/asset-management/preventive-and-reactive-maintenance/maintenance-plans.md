@@ -1,12 +1,10 @@
 ---
 title: Plany konserwacji
 description: W tym temacie wyjaśniono analizę plany konserwacji w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500821"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839614"
 ---
 # <a name="maintenance-plans"></a>Plany konserwacji
 
@@ -195,8 +193,6 @@ Na poniższej ilustracji przedstawiono przykład planu konserwacji składnika ma
 
 ## <a name="counter-based-maintenance-enhancements"></a>Udoskonalenia konserwacji opartej na licznikach
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Funkcja *ulepszeń konserwacji opartej na licznikach* zawiera następujące funkcje:
 
 - Opcja automatycznego wstawiania licznika o wartości *0* (zero) podczas tworzenia środka trwałego. Ta opcja może być użyteczna w przypadku używania konserwacji predykcyjnej opartej na licznikach. Jeśli funkcja *udoskonaleń konserwacji opartej na licznikach* nie jest używana, liczniki o wartości *0* (zero) muszą być wstawiane ręcznie.
@@ -209,7 +205,7 @@ Funkcja *ulepszeń konserwacji opartej na licznikach* zawiera następujące funk
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie składnikami majątku*
-- **Nazwa funkcji:** *(Wersja zapoznawcza) Udoskonalenia konserwacji opartej na licznikach*
+- **Nazwa funkcji:** *Udoskonalenia konserwacji opartej na licznikach*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Tworzenie i inicjowanie liczników podczas tworzenia składnika majątku
 

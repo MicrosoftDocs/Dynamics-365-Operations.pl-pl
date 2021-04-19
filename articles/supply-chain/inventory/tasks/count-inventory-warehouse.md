@@ -2,11 +2,9 @@
 title: Liczenie zapasów w magazynie
 description: W tym temacie opisano proces tworzenia i księgowania arkusza inwentaryzacji zapasów w celu policzenia określonego towaru w lokalizacji w magazynie.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 452822eaf26c26e4c9e00f909dbd18127f6fc781
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 24b8bc2daff2d7df6279c76f4d9a0e83244c7988
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230111"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834056"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Liczenie zapasów w magazynie
 

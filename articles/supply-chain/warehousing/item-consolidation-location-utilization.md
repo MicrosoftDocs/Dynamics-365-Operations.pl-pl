@@ -2,11 +2,9 @@
 title: Konsolidacja pozycji — wykorzystanie lokalizacji
 description: Ten temat zawiera informacje o funkcjach ułatwiających menedżerom magazynów wyświetlanie i filtrowanie objętościowe wykorzystania lokalizacji w magazynie. Menedżerowie mogą wybierać lokalizacje i tworzyć pracę przesunięcia zapasów bezpośrednio na stronie konsolidacji towaru w celu konsolidowania towarów, a w ten sposób lepiej korzystać z przestrzeni magazynowej.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3b20b41d27e5faeac7ea88940c086ae33390dc29
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217012"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835585"
 ---
 # <a name="item-consolidation---location-utilization"></a>Konsolidacja pozycji — wykorzystanie lokalizacji
 
@@ -149,7 +147,7 @@ W tej sekcji opisano sposób przygotowania systemu do użycia konsolidacji pozyc
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
-W poniższym scenariuszu używana jest aplikacja magazynowa na urządzeniu przenośnym do tworzenia *korekt w* zapasów w dwóch lokalizacjach w magazynie.
+W poniższym scenariuszu używana jest aplikacja Warehouse Management do tworzenia *korekt w* zapasów w dwóch lokalizacjach w magazynie.
 
 ### <a name="add-inventory-to-locations"></a>Dodaj zapasy do lokalizacji
 

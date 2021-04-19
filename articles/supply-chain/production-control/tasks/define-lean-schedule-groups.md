@@ -2,11 +2,9 @@
 title: Definiowanie grup harmonogramów produkcji oszczędnej
 description: Grupy harmonogramów produkcji oszczędnej tworzy się w celu grupowania i odróżniania produktów w planowaniu w systemie Kanban.
 author: cvocph
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e4ad3eb1f7c73d0b6671e2d1698d0647f6dbb93
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 647e721a0616ceae387322517f2955d75c06bfd2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5257250"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828761"
 ---
 # <a name="define-lean-schedule-groups"></a>Definiowanie grup harmonogramów produkcji oszczędnej
 

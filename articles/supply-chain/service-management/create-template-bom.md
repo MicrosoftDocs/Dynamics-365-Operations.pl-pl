@@ -2,11 +2,9 @@
 title: Tworzenie szablonu BOM
 description: Szablon BOM można utworzyć przy użyciu różnych metod.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5afcb8171b674281faf8100d5c01fdff8d6ff764
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
+ms.openlocfilehash: 781df7611ec1e3ee9d3013f971232700df38ada0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470792"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836309"
 ---
 # <a name="create-a-template-bom"></a>Tworzenie szablonu BOM   
 

@@ -2,11 +2,9 @@
 title: Tworzenie zlecenia pracy
 description: W tym temacie opisano tworzenie zleceń pracy w module Zarządzanie składnikami majątku.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500581"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836741"
 ---
 # <a name="creating-work-orders"></a>Tworzenie zlecenia pracy
 
@@ -62,8 +60,6 @@ Aby utworzyć zlecenia pracy na podstawie harmonogramu konserwacji, należy wyko
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Grupowanie wierszy zlecenia pracy tworzonych automatycznie podczas planowania konserwacji
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Ta funkcja umożliwia definiowanie reguł grupowania wierszy zleceń pracy w ramach pojedynczego zlecenia, gdy system jest tak ustawiony, aby generował zlecenia pracy automatycznie na podstawie planu konserwacji. Wcześniej generowane automatycznie zlecenia pracy mogły zawierać tylko jeden wiersz. Teraz jednak można grupować zlecenia według na przykład składnika majątku, typu składnika majątku lub lokalizacji czynności. (Ręcznie wygenerowane zlecenia pracy można już grupować w ten sposób, zgodnie z opisem w poprzedniej sekcji tego tematu).
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Włącz grupowanie dla automatycznie generowanych zleceń pracy
@@ -71,7 +67,7 @@ Ta funkcja umożliwia definiowanie reguł grupowania wierszy zleceń pracy w ram
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Zarządzanie składnikami majątku*
-- **Nazwa funkcji:** *(Wersja zapoznawcza) Stosowanie reguł grupowania zleceń pracy podczas uruchamiania planu konserwacji*
+- **Nazwa funkcji:** *Stosowanie reguł grupowania zleceń pracy podczas uruchamiania planu konserwacji*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Konfiguruj grupowanie dla automatycznie generowanych zleceń pracy
 

@@ -2,11 +2,9 @@
 title: Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 description: Ten temat zawiera informacje dotyczące możliwości zamówień magazynowych, które są używane jako część obciążenia jednostek skalowania magazynów.
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556369"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836693"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556369"
 
 *Zamówienia magazynowe* to rodzaj zamówienia utworzonego w celu obsługi wdrożeń magazynu centrum i jednostki skalowania. Umożliwiają one odbieranie zapasów podczas uruchamiania obciążenia magazynu na jednostce skalowania. Są one obecnie używane tylko z zamówieniami zakupu.
 
-Zamówienia magazynowe są używane w ramach przetwarzania zarządzania magazynem, na przykład gdy aplikacja magazynu służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania przychodzącego zamówienia zakupu. Zamówienia magazynowe są tworzone w ramach procesu *Zwalnianie do magazynu* dostępnego dla zamówień zakupu, w których określono magazyn jednostek skalowania oraz towary, dla których można używać procesów zarządzania magazynem.
+Zamówienia magazynowe są używane w ramach przetwarzania zarządzania magazynem, na przykład gdy aplikacja Warehouse Management służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania przychodzącego zamówienia zakupu. Zamówienia magazynowe są tworzone w ramach procesu *Zwalnianie do magazynu* dostępnego dla zamówień zakupu, w których określono magazyn jednostek skalowania oraz towary, dla których można używać procesów zarządzania magazynem.
 
 > [!IMPORTANT]
 > Zamówienia magazynowe są dostępne tylko we wdrożeniach, które korzystają z [obciążenia zarządzania magazynem dla jednostek skali chmury i urządzeń brzegowych](cloud-edge-workload-warehousing.md).
@@ -70,7 +68,7 @@ Aby anulować wiersze zamówienia magazynowego, należy wykonać następujące c
 
 ## <a name="monitor-a-warehouse-order"></a>Monitorowanie zamówienia magazynowego
 
-W widoku **wierszy zamówienia magazynowego** można monitorować postęp przyjmowania towarów przychodzącego, przeglądając wartości w kolumnie **Ilość pozostała do odebrania**. Aby wyświetlić szczegóły dotyczące pracy wykonanej za pomocą aplikacji magazynu, wykonaj jedną z poniższych czynności.
+W widoku **wierszy zamówienia magazynowego** można monitorować postęp przyjmowania towarów przychodzącego, przeglądając wartości w kolumnie **Ilość pozostała do odebrania**. Aby wyświetlić szczegóły dotyczące pracy wykonanej za pomocą aplikacji Warehouse Management, wykonaj jedną z poniższych czynności.
 
 - Przejdź do obszaru **Zarządzanie magazynem \> Zapytania i raporty \> Wiersze zamówień magazynowych** i użyj filtru, aby znaleźć szukane wiersze.
 - Przejdź do pozycji **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu** i otwórz odpowiednie zamówienie zakupu. W sekcji **Wiersze zamówienia zakupu** zaznacz jeden lub więcej wierszy, a następnie na pasku narzędzi wybierz pozycje **Magazyn \> Wpisy przyjęcia do magazynu**.

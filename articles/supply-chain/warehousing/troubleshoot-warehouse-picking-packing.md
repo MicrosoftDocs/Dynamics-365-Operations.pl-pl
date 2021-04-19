@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów dotyczących pobierania i pakowania
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pobierania i pakowania w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 01e33b63e09a035f5243bd57faf53b522737c987
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a54fa9dc21fb1691d74905a1215f4dfea31f136
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223249"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828137"
 ---
 # <a name="troubleshoot-picking-and-packing"></a>Rozwiązywanie problemów dotyczących pobierania i pakowania
 
@@ -44,7 +42,7 @@ Pole **Domyślna lokalizacja przychodu** jest puste dla magazynu tranzytowego ma
 
 ### <a name="issue-description"></a>Opis problemu
 
-Ten komunikat o błędzie pojawia się w aplikacji magazynowania podczas skanowania identyfikatora numeru identyfikacyjnego.
+Ten komunikat o błędzie pojawia się w aplikacji Warehouse Management podczas skanowania identyfikatora numeru identyfikacyjnego.
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
@@ -68,7 +66,7 @@ Ten komunikat o błędzie jest wyświetlany podczas próby przeprowadzenia *dzie
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
-Pracownik magazynu musi skorzystać z procesu *Pobieranie w niedomiarze* w aplikacji magazynu. Jeśli próbujesz pobrać wiele partii z tej samej lokalizacji, możesz również skorzystać z opcji **Pełny** w aplikacji magazynowej.
+Pracownik magazynu musi skorzystać z procesu *Pobieranie w niedomiarze* w aplikacji Warehouse Management. Jeśli próbujesz pobrać wiele partii z tej samej lokalizacji, możesz również skorzystać z opcji **Pełny** w aplikacji.
 
 ## <a name="i-cant-move-inventory-to-a-location-that-is-license-platecontrolled"></a>Nie można przenieść zapasów do lokalizacji, kontrolowanej za pomocą numeru identyfikacyjnego.
 

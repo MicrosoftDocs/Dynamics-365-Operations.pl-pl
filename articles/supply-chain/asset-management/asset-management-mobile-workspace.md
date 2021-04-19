@@ -1,27 +1,25 @@
 ---
 title: Używanie mobilnego obszaru roboczego zarządzania składnikami majątku
 description: Ten temat zawiera informacje o mobilnym obszarze roboczym zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 65b3261367243b747b790c4a9ce5b4189aca85c8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5260137"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837952"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Używanie mobilnego obszaru roboczego zarządzania składnikami majątku
 

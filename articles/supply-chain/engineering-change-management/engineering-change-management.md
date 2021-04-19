@@ -2,11 +2,9 @@
 title: Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 description: Ten temat zawiera informacje o zarządzaniu zmianami inżynieryjnymi. Zarządzanie zmianami inżynieryjnymi umożliwia strukturalne procesy zarządzania zmianami produktów inżynierskich, proponowanie, zgłaszanie i Dokonywanie zmian, recenzowanie i zatwierdzanie zmian, ocenianie ich wpływu na istniejące transakcje oraz na dalszych tematach.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmRequestPriorityChart,EngChgEcmRequestListPage,EngChgEcmRequestFilteredPart,EngChgEcmRequestDetails,EngChgEcmReason,EngChgEcmProjTableInformation,EngChgEcmProductRoute,EngChgEcmProductRelease,EngChgEcmProductPreview, EngChgEcmWhereUsed, EngChgEcmInventTrans,EngChgEcmHeaderSelection,EngChgEcmHeaderPreviewPart,EngChgEcmHeaderFilteredPart,EngChgEcmHeaderDetails, EngChgCaseWhereUsedAnalysis, EngChgCaseValidatorMessage
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 24892195a9f1c39e891e2dcb95482f019ba05365
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262340"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830035"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 

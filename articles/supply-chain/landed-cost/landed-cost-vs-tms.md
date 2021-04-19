@@ -2,7 +2,6 @@
 title: Koszt z wyładunkiem vs. Zarządzanie transportem
 description: Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem, zarządzaniem transportem (TMS) i kosztem dostawy. W tym temacie podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500725"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833864"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Koszt z wyładunkiem vs. Zarządzanie transportem
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management udostępnia dwa różne moduły do pracy z transportem: **Zarządzaniem transportem** (TMS) i **Kosztem dostawy**. W tym temacie podsumowano funkcje wspólne dla obu modułów i podkreślono różnice między nimi. Informacji tych można użyć w celu decydowania, które moduły najlepiej pasują do procesów biznesowych. Może się okazać, że niektóre praktyki biznesowe działają lepiej w przypadku TMS, podczas gdy inne najlepiej sprawdzają się w przypadku kosztów z wyładunkiem. Następnie, w zależności od wymagań firmy, można wybrać opcję używania wyłącznie jednego modułu lub można połączyć te dwa moduły.
 
@@ -158,15 +156,15 @@ Zarówno system TMS, jak i koszt z wyładunkiem zapewniają funkcje zarządzania
 
 ### <a name="tms-receiving-by-container-features"></a>Odbiór TMS przez funkcje kontenera
 
-TMS obsługuje przychodzące ASN, wszystkie warianty odbioru za pośrednictwem aplikacji magazynowej oraz wszystkie metody odbioru za pośrednictwem klienta Supply Chain Management.
+TMS obsługuje przychodzące ASN, wszystkie warianty odbioru za pośrednictwem aplikacji Warehouse Management oraz wszystkie metody odbioru za pośrednictwem klienta Supply Chain Management.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Otrzymywanie kosztów wyładunku według funkcji kontenera
 
 W celu obsługi odbioru przez kontener, Koszt z wyładunkiem tworzy rekordy kontenera wysyłkowego i kojarzy zamówienia zakupu z określonym kontenerem wysyłkowym za pomocą jego identyfikatora kontenera. Koszty ogólne mogą być następnie stosowane do tego kontenera wysyłkowego i rozbijane, tak aby były skojarzone z odpowiednimi zamówieniami zakupu.
 
-Kontenery w kosztach z wyładunkiem mogą być odbierane za pośrednictwem nowego typu przyjęcia, który jest nazywany *przyjęciem towarów w drodze*, za pomocą arkuszy przyjęcia lub przyjęcia za pomocą urządzenia przenośnego. W przypadku korzystania z arkuszy przybycia ilości można zainicjować na pomocą towarów w zamówieniu tranzytowym lub z wierszy oryginalnego zamówienia zakupu w kontenerze. Koszt z wyładunkiem zapewnia dwa typy pracy do odbioru za pośrednictwem aplikacji magazynu.
+Kontenery w kosztach z wyładunkiem mogą być odbierane za pośrednictwem nowego typu przyjęcia, który jest nazywany *przyjęciem towarów w drodze*, za pomocą arkuszy przyjęcia lub przyjęcia za pomocą urządzenia przenośnego. W przypadku korzystania z arkuszy przybycia ilości można zainicjować na pomocą towarów w zamówieniu tranzytowym lub z wierszy oryginalnego zamówienia zakupu w kontenerze. Koszt z wyładunkiem zapewnia dwa typy pracy do odbioru za pośrednictwem aplikacji Warehouse Management.
 
-Koszt z wyładunkiem nie dostarcza ASN dla elektronicznego przyjęcia towarów. Ponadto nie obsługuje przepływów aplikacji magazynowych, które przetwarzają przyjęcie ładunku, przyjęcie na numer identyfikacyjny lub przyjęcie mieszanego numeru identyfikacyjnego.
+Koszt z wyładunkiem nie dostarcza ASN dla elektronicznego przyjęcia towarów. Ponadto nie obsługuje przepływów aplikacji Warehouse Management, które przetwarzają przyjęcie ładunku, przyjęcie na numer identyfikacyjny lub przyjęcie mieszanego numeru identyfikacyjnego.
 
 ## <a name="rate-shopping-by-vendor"></a>Wyszukanie stawek według dostawców
 

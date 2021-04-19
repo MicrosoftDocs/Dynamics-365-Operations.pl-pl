@@ -2,11 +2,9 @@
 title: Kontrola jakości
 description: Ten temat zawiera informacje dotyczące funkcji Kontrola jakości. Ta funkcja pozwala pracownikom magazynowym na szybkie sprawdzenie jakości podczas przyjmowania towarów do obszaru doków przychodzących.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 31afcfcb9d8dbb91f4ea4e3e7a7282c2a87328d4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228472"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838233"
 ---
 # <a name="quality-check"></a>Kontrola jakości
 
@@ -301,7 +299,7 @@ Po utworzeniu zamówienia zakupu można go odebrać za pomocą elementu menu **W
 
 #### <a name="receive-pallet-1"></a>Odbiór palety 1
 
-1. Zaloguj się do aplikacji magazynowania jako użytkownik dla magazynu *51*. (Wprowadź *51* jako identyfikator użytkownika i *1* jako hasło.)
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik dla magazynu *51*. (Wprowadź *51* jako identyfikator użytkownika i *1* jako hasło.)
 1. Przejdź do **Przychodzące \> Wiersz zamówienia zakupu – przyjęcie**.
 1. W polu **PONUM** wprowadź numer zamówienia zakupu.
 1. Potwierdź numer zamówienia zakupu.

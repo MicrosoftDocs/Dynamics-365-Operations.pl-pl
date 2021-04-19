@@ -2,11 +2,9 @@
 title: Odbieranie częściowych dostaw zwracanych towarów
 description: Dostawy częściowe są definiowane pod względem wierszy zamówienia zwrotu, a nie wysyłek zamówienia zwrotu.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da4020afc8832ed9bef88f5387533ee6cd09645b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 51213f8f46638b0cce10251e761d7f276c39d924
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234808"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836141"
 ---
 # <a name="receive-partial-deliveries-of-returned-items"></a>Odbieranie częściowych dostaw zwracanych towarów    
 

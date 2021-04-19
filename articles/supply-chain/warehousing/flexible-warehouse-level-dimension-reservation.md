@@ -2,11 +2,9 @@
 title: Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
 description: W tym temacie opisano zasady rezerwacji zapasów, które umożliwiają firmom sprzedaż produktów śledzonych partiami i uruchamianie ich zagadnień logistycznych w miarę operacji obsługujących WMS, rezerwując określone partie dla zamówień sprzedaży odbiorców, nawet jeśli hierarchia rezerwacji jest skojarzone z produktami nie zezwalają na rezerwację konkretnych partii.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235419"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835685"
 ---
-# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Zasada rezerwacji wymiarów na poziomie magazynu elastycznego
+# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
 
 [!include [banner](../includes/banner.md)]
 
-Jeśli hierarchia rezerwacji zapasów typu „Lokalizacja towaru\[poniżej\]” jest skojarzona z produktami, firmy, które sprzedają produkty śledzone partiami i uruchamiają ich logistykę jako operacje włączone dla systemu zarządzania Microsoft Dynamics 365 Warehouse Management System (WMS), nie mogą zarezerwować określonych partii tych produktów dla zamówień sprzedaży odbiorców.
+Jeśli hierarchia rezerwacji zapasów typu *Partia poniżej\[lokalizacja\]* jest skojarzona z produktami, firmy, które sprzedają produkty śledzone partiami i uruchamiają ich logistykę jako operacje włączone dla systemu zarządzania Microsoft Dynamics 365 Warehouse Management System (WMS), nie mogą zarezerwować określonych partii tych produktów dla zamówień sprzedaży odbiorców.
 
 W podobny sposób nie można zarezerwować określonych numerów identyfikacyjnych dla produktów w zamówieniach sprzedaży, gdy te produkty są skojarzone z domyślną hierarchią rezerwacji.
 
-W tym temacie opisano zasady rezerwacji zapasów, które pozwalają tym firmom zarezerwować określone partie lub numery identyfikacyjne, nawet jeśli produkty są skojarzone z hierarchią rezerwacji „\[Lokalizacja\]” towaru poniżej.
+W tym temacie opisano zasady rezerwacji zapasów, które pozwalają tym firmom zarezerwować określone partie lub numery identyfikacyjne, nawet jeśli produkty są skojarzone z hierarchią rezerwacji *Partia poniżej\[lokalizacja\]*.
 
 ## <a name="inventory-reservation-hierarchy"></a>Hierarchie rezerwacji zapasów
 
 Ta sekcja podsumowuje istniejącą hierarchię rezerwacji zapasów.
 
-Hierarchia rezerwacji zapasów określa, że w zakresie, w jakim dotyczy to wymiarów przechowywania, zamówienie wymaga obowiązkowych wymiarów oddziału, magazynu i stanu zapasów, podczas gdy logika magazynu jest odpowiedzialna za przypisanie lokalizacji do wnioskowane ilości i rezerwowanie lokalizacji. Innymi słowy, w interakcjach między zamówieniem popytu a operacjami magazynowymi, oczekuje się, że zamówienie musi być wysłane z magazynu (czyli oddziału i magazynu). Następnie magazynpolega na logice, aby znaleźć wymaganą ilość miejsca w pomieszczeniu magazynowym.
+Hierarchia rezerwacji zapasów dyktuje, że jeśli chodzi o wymiary magazynu, zamówienie na żądanie zawiera obowiązkowe wymiary lokalizacji, magazynu i stanu zapasów. Innymi słowy, wymiary obowiązkowe to wszystkie wymiary powyżej wymiaru lokalizacji w hierarchii rezerwacji, podczas gdy logika magazynu jest odpowiedzialna za przypisanie lokalizacji do żądanych ilości i rezerwację lokalizacji. W interakcjach między zamówieniem popytu a operacjami magazynowymi, oczekuje się, że zamówienie musi być wysłane z magazynu (czyli oddziału i magazynu). Następnie magazynpolega na logice, aby znaleźć wymaganą ilość miejsca w pomieszczeniu magazynowym.
 
 Jednak w celu odzwierciedlenia modelu operacyjnego firmy, wymiary śledzenia (numery partii i numery seryjne) podlegają większej elastyczności. Hierarchia rezerwacji zapasów może uwzględniać scenariusze, w których obowiązują następujące warunki:
 
-- Firma korzysta z operacji magazynowych w celu zarządzania pobieraniem ilości o numerach partii lub seryjnych po znalezieniu ilości w przestrzeni magazynowej. Ten model jest często określany mianem *lokalizacji towaru\[poniżej\]*. Jest zwykle używany w przypadku, gdy identyfikacja numeru partii produktu lub numeru seryjnego nie ma znaczenia dla odbiorców, którzy nakładają popyt na firmę sprzedającą.
-- Jeśli numery partii lub numerów seryjnych są częścią specyfikacji zamówienia odbiorcy i są rejestrowane na zamówieniu popytu, operacje magazynowe, które wyszukują ilości w magazynie, są ograniczone przez określone żądane numery i nie mogą być zmieniane. Ten model jest często określany mianem *lokalizacji towaru\[powyżejj\]*.
+- Firma korzysta z operacji magazynowych w celu zarządzania pobieraniem ilości o numerach partii lub seryjnych *po* znalezieniu ilości w przestrzeni magazynowej. Ten model jest często określany mianem *Partia poniżej\[lokalizacja\]* lub *Seria poniżej\[lokalizacja\]*. Jest zwykle używany w przypadku, gdy identyfikacja numeru partii produktu lub numeru seryjnego nie ma znaczenia dla odbiorców, którzy nakładają popyt na firmę sprzedającą.
+- Firma korzysta z operacji magazynowych w celu zarządzania pobieraniem ilości o numerach partii lub seryjnych *przed* znalezieniem ilości w przestrzeni magazynowej. Jeśli numery partii lub numery seryjne są niezbędne jako część specyfikacji zamówienia klienta, są one rejestrowane w zamówieniu na żądanie, a operacje magazynowe, które znajdują ilości w magazynie, nie mogą ich zmienić. Ten model jest często określany mianem lokalizacji towaru *Partia powyżej\[lokalizacja\]* lub *Seryjne powyżej\[lokalizacja\]*. Ponieważ wymiary powyżej lokalizacji są konkretnymi wymaganiami dotyczącymi wymagań, które muszą zostać spełnione, logika magazynu ich nie przydzieli. Wymiary te **muszą** być zawsze określone w zamówieniu popytu lub w powiązanych rezerwacjach.
 
 W tych scenariuszach wyzwanie polega na tym, że tylko jedna hierarchia rezerwacji zapasów może być przypisana do każdego zwolnionego produktu. Dlatego w przypadku modułu WMS do obsługi śledzonych elementów, gdy przypisanie hierarchii określa, kiedy numer partii lub seryjny ma zostać zarezerwowany (gdy zamówienie jest wykonywane lub w trakcie pracy pobrania magazynowego), nie można zmienić tego chronometrażu na zasadzie ad hoc.
 
@@ -49,16 +47,16 @@ W tych scenariuszach wyzwanie polega na tym, że tylko jedna hierarchia rezerwac
 
 ### <a name="business-scenario"></a>Scenariusz biznesowy
 
-W tym scenariuszu firma korzysta z strategii zapasów, w której gotowe towary są śledzone według numerów partii. Ta firma również korzysta z obciążenia pracą WMS. Ponieważ w ramach tego obciążenia istnieje dobrze wyposażona logika planowania i uruchamiania operacji pobierania i wysyłania magazynowych dla towarów z włączonym przetwarzaniem wsadowym, większość gotowych towarów jest skojarzona z hierarchią rezerwacji "zapasów poniżej\[lokalizacji\]". Zaletą tego typu konfiguracji operacyjnej jest to, że decyzje (które są skutecznymi decyzjami dotyczącymi rezerwacji), które partie do pobrania i miejsca, gdzie mają zostać umieszczone w magazynie, są odkładane do momentu rozpoczęcia operacji pobrania z magazynu. Nie zostają one wykonane, gdy zamówienie odbiorcy zostanie złożone.
+W tym scenariuszu firma korzysta z strategii zapasów, w której gotowe towary są śledzone według numerów partii. Ta firma również korzysta z obciążenia pracą WMS. Ponieważ w ramach tego obciążenia istnieje dobrze wyposażona logika planowania i uruchamiania operacji pobierania i wysyłania magazynowych dla towarów z włączonym przetwarzaniem wsadowym, większość gotowych towarów jest skojarzona z hierarchią rezerwacji *Partii poniżej\[lokalizacji\]*. Zaletą tego typu konfiguracji operacyjnej jest to, że decyzje (które są skutecznymi decyzjami dotyczącymi rezerwacji), które partie do pobrania i miejsca, gdzie mają zostać umieszczone w magazynie, są odkładane do momentu rozpoczęcia operacji pobrania z magazynu. Nie zostają one wykonane, gdy zamówienie odbiorcy zostanie złożone.
 
-Mimo że hierarchia rezerwacji "Lokalizacji towaru\[poniżej\]" obsługuje również cele biznesowe firmy, wiele odbiorców z firmy prowadzącej działalność w firmie wymaga tej samej partii, którą zostały wcześniej zakupione podczas zamawiania produktów. Z tego względu firma poszukuje elastyczności w sposobie obsługi reguł rezerwacji partii, dzięki czemu w zależności od zapotrzebowania klienta dla tego samego towaru mają miejsce następujące zachowania:
+Mimo że hierarchia rezerwacji "*Partia poniżej\[lokalizacja\]* obsługuje również cele biznesowe firmy, wiele odbiorców z firmy prowadzącej działalność w firmie wymaga tej samej partii, którą zostały wcześniej zakupione podczas zamawiania produktów. Z tego względu firma poszukuje elastyczności w sposobie obsługi reguł rezerwacji partii, dzięki czemu w zależności od zapotrzebowania klienta dla tego samego towaru mają miejsce następujące zachowania:
 
 - Numer partii może zostać zarejestrowany i zarezerwowany, gdy zamówienie jest wykonywane przez przetwórcę sprzedaży, i nie można go zmienić podczas operacji magazynowych i/lub w przypadku innych zapotrzebowań. To zachowanie pomaga zagwarantować, że zamówiony numer partii jest wysyłany do odbiorcy.
 - Jeśli numer partii nie jest ważny dla odbiorcy, operacje magazynowe mogą określać numer partii podczas pracy pobierania, po zakończeniu rejestracji i rezerwacji zamówienia sprzedaży.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Umożliwienie rezerwacji konkretnej partii w zamówieniu sprzedaży
 
-Aby określić wymaganą elastyczność w zachowaniu rezerwacji partii dla towarów skojarzonych z hierarchią rezerwacji magazynowej "Lokalizacji towaru\[poniżej\], menedżerowie magazynów muszą zaznaczyć pole wyboru **Zezwalaj na rezerwację na zamówieniu** na zapotrzebowaniu dla **Numeru partii** na stronie **hierarchie rezerwacji zapasów**.
+Aby określić wymaganą elastyczność w zachowaniu rezerwacji partii dla towarów skojarzonych z hierarchią rezerwacji magazynowej *Partia poniżej\[lokalizacja\]* , menedżerowie magazynów muszą zaznaczyć pole wyboru **Zezwalaj na rezerwację na zamówieniu na zapotrzebowaniu** dla **Numeru partii** na stronie **Hierarchie rezerwacji zapasów**.
 
 ![Uczynienie hierarchii rezerwacji zapasów elastyczną](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ W przypadku wybrania poziomu **Numeru partii** w hierarchii wszystkie wymiary po
 >
 > **Numer partii** i **Numer identyfikacyjny** są jedynymi poziomami hierarchii otwartymi dla elastycznych zasad rezerwacji. Innymi słowy, nie można zaznaczyć pola wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dla **Lokalizacji** lub poziomu **Numeru identyfikacyjnego**.
 >
-> Jeśli hierarchia rezerwacji zawiera wymiar numeru seryjnego (który musi być zawsze poniżej poziomu **numeru partii**), a w przypadku rezerwacji specyficznej dla danej partii dla numeru partii, system będzie kontynuował obsługę rezerwacji numerów seryjnych i operacji pobrania na podstawie reguł dotyczących zasad rezerwacji „Numer poniżej\[lokalizacji\]”.
+> Jeśli hierarchia rezerwacji zawiera wymiar numeru seryjnego (który musi być zawsze poniżej poziomu **Numeru partii**), a w przypadku rezerwacji specyficznej dla danej partii dla numeru partii, system będzie kontynuował obsługę rezerwacji numerów seryjnych i operacji pobrania na podstawie reguł dotyczących zasad rezerwacji *Seria poniżej\[lokalizacja\]*.
 
-W dowolnym momencie można zezwolić na przetwarzanie specyficznego przetwarzania wsadowego istniejącej hierarchii rezerwacji „Lokalizacja towaru\[poniżej\]” w rozmieszczeniu. Ta zmiana nie wpłynie na rezerwacje i otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na zamówienie popytu**, jeśli dla jednego lub większej liczby towarów skojarzonych z tą hierarchią rezerwacji istnieją transakcje magazynowe typu **zamówione**, **zarezerwowane fizycznie** lub **zamówione**.
+W dowolnym momencie można zezwolić na przetwarzanie specyficznego przetwarzania wsadowego istniejącej hierarchii rezerwacji *Partia poniżej\[lokalizacja\]* w rozmieszczeniu. Ta zmiana nie wpłynie na rezerwacje i otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na zamówienie popytu**, jeśli dla jednego lub większej liczby towarów skojarzonych z tą hierarchią rezerwacji istnieją transakcje magazynowe typu **zamówione**, **zarezerwowane fizycznie** lub **zamówione**.
 
 > [!NOTE]
 > Jeśli istniejąca hierarchia rezerwacji dla towaru nie zezwala na specyfikację partii w zamówieniu, można ją ponownie przypisać do hierarchii rezerwacji, która pozwala na określenie partii, pod warunkiem że struktura poziomu hierarchii jest taka sama w obu hierarchiach. Aby wykonać ponowne przypisanie, należy skorzystać z funkcji **Zmień rezerwację pozycji**. Ta zmiana może być odpowiednia, jeśli chcesz zapobiec elastycznej rezerwacji wsadowej dla podzestawu pozycji śledzonych wsadowo, ale zezwól na to w pozostałej części teczki produktów.
 
-Niezależnie od tego, czy zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu zapotrzebowania**, jeśli nie chcesz zarezerwować określonego numeru partii dla towaru w wierszu zamówienia, będzie nadal obowiązywała domyślna logika operacji magazynowych obowiązująca dla hierarchii rezerwacji "lokalizacja towaru \[poniżej\]”.
+Niezależnie od tego, czy zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu zapotrzebowania**, jeśli nie chcesz zarezerwować określonego numeru partii dla towaru w wierszu zamówienia, będzie nadal obowiązywała domyślna logika operacji magazynowych obowiązująca dla hierarchii rezerwacji *Partia poniżej\[lokalizacja\]*.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Rezerwacja określonego numeru partii dla zamówienia odbiorcy
 
-Po skonfigurowaniu śledzonej partii pozycji „Lokalizacja towaru\[ poniżej\]” w hierarchii rezerwacji zapasów można zezwolić na rezerwacje określonych numerów partii w zamówieniach sprzedaży, jednak przetwórcy zamówień sprzedaży mogą przyjmować zamówienia odbiorców dla tego samego towaru w jeden z następujących sposobów, w zależności od wniosku klienta:
+Po skonfigurowaniu śledzonej partii pozycji *Partia poniżej\[lokalizacja\]* w hierarchii rezerwacji zapasów można zezwolić na rezerwacje określonych numerów partii w zamówieniach sprzedaży, jednak przetwórcy zamówień sprzedaży mogą przyjmować zamówienia odbiorców dla tego samego towaru w jeden z następujących sposobów, w zależności od wniosku klienta:
 
 - **Wprowadź szczegóły zamówienia bez określania numeru partii** — to podejście należy stosować w przypadku, gdy specyfikacja partii produktu nie jest ważna dla odbiorcy. Wszystkie istniejące procesy skojarzone z obsługą zamówienia tego typu System pozostają niezmienione. Część użytkowników nie wymaga żadnych dodatkowych okoliczności.
 - **Wprowadź szczegóły zamówienia i Zarezerwuj określony numer partii** — tego podejścia należy użyć w przypadku, gdy odbiorca zażąda konkretnej partii. Zazwyczaj odbiorcy zażądają konkretnej partii, gdy będą zamawiali produkty uprzednio nabyte. Ten typ rezerwacji specyficznej dla danej partii jest określany mianem *rezerwacji do zamówienia*.
 
 Następujący zbiór reguł jest ważny podczas przetwarzania ilości, a numer partii jest zatwierdzany w określonym zamówieniu:
 
-- Aby zezwolić na rezerwację określonego numeru partii towaru w zasadzie rezerwacji „Lokalizacja towaru \[poniżej\]”, system musi zarezerwować wszystkie wymiary w górę w lokalizacji. Ten zakres zazwyczaj zawiera wymiar numeru identyfikacyjnego.
+- Aby zezwolić na rezerwację określonego numeru partii towaru w zasadzie rezerwacji *Partia poniżej\[lokalizacja\]*, system musi zarezerwować wszystkie wymiary w górę w lokalizacji. Ten zakres zazwyczaj zawiera wymiar numeru identyfikacyjnego.
 - Dyrektywy lokalizacji nie są używane, gdy jest tworzona praca pobrania dla wiersza sprzedaży, w którym jest używana rezerwacja partii zamówienia.
 - Podczas przetwarzania magazynu pracy dla partii zakontraktowanych na zamówienie ani użytkownik, ani systemow nie mogą zmieniać numeru partii. (Przetwarzanie obejmuje obsługę wyjątków)
 
@@ -131,19 +129,19 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 2. Wybierz pozycję **Nowy**.
 3. W nagłówku zamówienia sprzedaży w sekcji **Konto odbiorcy** wprowadź **US-003**.
 4. Dodaj wiersz dla nowego produktu i wprowadź **10** jako ilość. Upewnij się, że pole **Magazyn** zawiera wartość **24**.
-5. W skróconej karcie **Wiersz zamówienia sprzedaży** wybierz pozycję **Zapasy**, a następnie w grupie **Obsługa** wybierz opcję **Rezerwacja partii**. Na stronie **Rezerwacja partii** jest wyświetlana lista partii dostępnych do rezerwacji dla wiersza zamówienia. W tym przykładzie przedstawiono ilość **20** dla numeru partii **B11** i ilość **10** dla numeru partii **B22**. Należy pamiętać, że nie można uzyskać dostępu do strony **rezerwacja partii** z wiersza, jeśli towar w tym wierszu jest skojarzony z hierarchią rezerwacji "Lokalizacja towaru\[poniżej\], chyba że jest skonfigurowany tak, aby zezwalać na rezerwacje specyficzne dla danej partii.
+5. W skróconej karcie **Wiersz zamówienia sprzedaży** wybierz pozycję **Zapasy**, a następnie w grupie **Obsługa** wybierz opcję **Rezerwacja partii**. Na stronie **Rezerwacja partii** jest wyświetlana lista partii dostępnych do rezerwacji dla wiersza zamówienia. W tym przykładzie przedstawiono ilość **20** dla numeru partii **B11** i ilość **10** dla numeru partii **B22**. Należy pamiętać, że nie można uzyskać dostępu do strony **Rezerwacja partii** z wiersza, jeśli towar w tym wierszu jest skojarzony z hierarchią rezerwacji *Partia poniżej\[lokalizacja\]*, chyba że jest skonfigurowany tak, aby zezwalać na rezerwacje specyficzne dla danej partii.
 
     > [!NOTE]
     > Aby zarezerwować określoną partię dla zamówienia sprzedaży, należy skorzystać ze strony **Rezerwacja partii**.
     >
-    > Jeśli numer partii zostanie wprowadzony bezpośrednio w wierszu zamówienia sprzedaży, system zatrzyma się, tak jakby wprowadzono określoną wartość partii towaru, która podlega zasadom rezerwacji „Lokalizacja towaru\[poniżej\]”. Po zapisaniu wiersza pojawi się komunikat ostrzegawczy. Jeśli użytkownik potwierdzi, że numer partii ma być określony bezpośrednio w wierszu zamówienia, wiersz nie będzie obsługiwany przez zwykłą logikę zarządzania magazynem.
+    > Jeśli numer partii zostanie wprowadzony bezpośrednio w wierszu zamówienia sprzedaży, system zatrzyma się, tak jakby wprowadzono określoną wartość partii towaru, która podlega zasadom rezerwacji *Partia poniżej\[lokalizacja\]*. Po zapisaniu wiersza pojawi się komunikat ostrzegawczy. Jeśli użytkownik potwierdzi, że numer partii ma być określony bezpośrednio w wierszu zamówienia, wiersz nie będzie obsługiwany przez zwykłą logikę zarządzania magazynem.
     >
-    > Jeśli zarezerwujesz ilość na stronie **Rezerwacja**, nie zostanie zarezerwowana żadna określona partia, a wykonywanie operacji magazynowych dla wiersza będzie odbywać się zgodnie z regułami dotyczącymi rezerwacji w obszarze „Lokalizacja towaru\[poniżej\]”.
+    > Jeśli zarezerwujesz ilość na stronie **Rezerwacja**, nie zostanie zarezerwowana żadna określona partia, a wykonywanie operacji magazynowych dla wiersza będzie odbywać się zgodnie z regułami dotyczącymi rezerwacji w obszarze *Partia poniżej\[lokalizacja\]*.
 
-    Na ogół ta strona działa i jest współdziałana w taki sam sposób, w jaki działa i jest aktywnie związana z elementami, które mają skojarzoną hierarchię rezerwacji dla typu „Lokalizacja towaru\[powyżej\]”. Obowiązują jednak następujące wyjątki:
+    Ogólnie, ta strona działa i działa w ten sam sposób w przypadku elementów, które mają powiązaną hierarchię rezerwacji typu *Partia powyżej\[lokalizacja\]*. Obowiązują jednak następujące wyjątki:
 
     - Numery **Partii przekazane do wiersza źródłowego** skróconej karcie są wyświetlane zgodnie z numerami partii, które są zarezerwowane dla danego wiersza zamówienia. Wartości partii w siatce będą wyświetlane w cyklu realizacji wiersza zamówienia, w tym w etapach przetwarzania magazynu. Z drugiej strony, na **Przeglądowej** karcie skróconej, zwykła rezerwacja wiersza zamówienia (czyli rezerwacja wykonana dla wymiarów powyżej poziomu **Lokalizacji**) jest wyświetlana w siatce w górę do momentu utworzenia pracy magazynowej. Jednostka pracy przejmuje wówczas rezerwację wiersza, a rezerwacja wiersza nie jest już wyświetlana na stronie. **Numery partii przekazane do wiersza źródłowego** na skróconej karcie ułatwiają zagwarantowanie, że moduł przetwarzający zamówienia sprzedaży może wyświetlić numery partii, które zostały przekazane do zamówienia odbiorcy w dowolnym momencie, w trakcie fakturowania.
-    - Oprócz rezerwowania konkretnej partii użytkownik może ręcznie wybrać lokalizację i numer identyfikacyjny danej partii, zamiast zezwalać na automatyczne wybieranie numeru identyfikacyjnego danej partii. Ta możliwość jest związana z projektem mechanizmu rezerwacji partii zakontraktowanego zamówienia. Tak jak wspomniano wcześniej, aby zezwolić na rezerwację określonego numeru partii towaru w zasadzie rezerwacji „Lokalizacja towaru\[poniżej\]”, system musi zarezerwować wszystkie wymiary w górę w lokalizacji. Z tego względu prace magazynowe będą miały te same wymiary magazynowe, które zostały zarezerwowane przez użytkowników pracujących z tymi zamówieniami i nie zawsze będą reprezentować położenie magazynu towarów, które jest wygodne, a nawet możliwe dla operacji pobierania. Jeśli przetwórcy zamówień są świadomi ograniczeń magazynowych, może zaistnieć potrzeba ręcznego wybrania konkretnych lokalizacji i numerów identyfikacyjnych podczas rezerwowania partii. W takim przypadku użytkownik musi skorzystać z funkcji **wymiarów wyświetlanych** w nagłówku strony i musi dodać lokalizację i numer identyfikacyjny w siatce w skróconej karcie **Przegląd**.
+    - Oprócz rezerwowania konkretnej partii użytkownik może ręcznie wybrać lokalizację i numer identyfikacyjny danej partii, zamiast zezwalać na automatyczne wybieranie numeru identyfikacyjnego danej partii. Ta możliwość jest związana z projektem mechanizmu rezerwacji partii zakontraktowanego zamówienia. Tak jak wspomniano wcześniej, aby zezwolić na rezerwację określonego numeru partii towaru w zasadzie rezerwacji *Partia poniżej\[lokalizacja\]*, system musi zarezerwować wszystkie wymiary w górę w lokalizacji. Z tego względu prace magazynowe będą miały te same wymiary magazynowe, które zostały zarezerwowane przez użytkowników pracujących z tymi zamówieniami i nie zawsze będą reprezentować położenie magazynu towarów, które jest wygodne, a nawet możliwe dla operacji pobierania. Jeśli przetwórcy zamówień są świadomi ograniczeń magazynowych, może zaistnieć potrzeba ręcznego wybrania konkretnych lokalizacji i numerów identyfikacyjnych podczas rezerwowania partii. W takim przypadku użytkownik musi skorzystać z funkcji **wymiarów wyświetlanych** w nagłówku strony i musi dodać lokalizację i numer identyfikacyjny w siatce w skróconej karcie **Przegląd**.
 
 6. Na stronie **rezerwacja partii** wybierz wiersz dla **B11** wsadowego, a następnie wybierz opcję **wiersz rezerwy**. Podczas automatycznej rezerwacji nie ma żadnej wskazanej logiki do przypisywania lokalizacji i numerów identyfikacyjnych. Ilość można wprowadzić ręcznie w polu **rezerwacja**. Zwróć uwagę, że w przypadku skróconej karty **numerów partii przekazanych do wiersza źródłowego**, zestaw **B11** jest wyświetlany jako **Zatwierdzony**.
 
@@ -172,7 +170,7 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
     Praca, która obsługuje operację pobrania dla ilości partii, która jest potwierdzona w wierszu zamówienia sprzedaży, ma następujące cechy:
 
     - Aby utworzyć pracę, system używa szablonów roboczych, ale nie zawiera dyrektyw lokalizacji. Wszystkie standardowe ustawienia zdefiniowane dla szablonów pracy, takie jak Maksymalna liczba wierszy pobrania lub określony jednostka miary, zostaną zastosowane w celu ustalenia, kiedy należy utworzyć nową pracę. Jednak reguły skojarzone z dyrektywami lokalizacji do identyfikowania lokalizacji pobrania nie są uwzględniane, ponieważ rezerwacja rezerwacji zamówień już określa wszystkie wymiary magazynowe. Te wymiary magazynowe obejmują wymiary na poziomie składowania w magazynie. Dlatego praca dziedziczy te wymiary bez konieczności konsultowania dyrektyw lokalizacji.
-    - Numer partii nie jest wyświetlany w wierszu pobrania (podobnie jak w przypadku wiersza pracy utworzonego dla towaru, który ma skojarzoną hierarchię rezerwacji z lokalizacji\[powyżej\]) zamiast tego numer partii „od” i wszystkie inne wymiary magazynowe są wyświetlane w transakcji magazynowej dla wiersza pracy, do której odwołuje się skojarzone transakcje magazynowe.
+    - Numer partii nie jest wyświetlany w wierszu pobrania (podobnie jak w przypadku wiersza pracy utworzonego dla towaru, który ma skojarzoną hierarchię rezerwacji *Partia powyżej\[lokalizacja\]*) zamiast tego numer partii „od” i wszystkie inne wymiary magazynowe są wyświetlane w transakcji magazynowej dla wiersza pracy, do której odwołuje się skojarzone transakcje magazynowe.
 
         ![Transakcja magazynowa magazynu dla pracy, która pochodzi z rezerwacji zamówienia](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ W dowolnym momencie wdrożenia można włączyć rezerwację numeru identyfikacy
 
 Nawet jeśli zaznaczono pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu** dla poziomu **Numeru identyfikacyjnego**, nadal można *nie* zarezerwować określonego numeru identyfikacyjnego w zamówieniu. W takim przypadku stosuje się domyślną logikę operacji magazynowych obowiązującą dla danej hierarchii rezerwacji.
 
-Aby zarezerwować określony numer identyfikacyjny, należy użyć [protokołu OData (Open Data Protocol)](../../fin-ops-core/dev-itpro/data-entities/odata.md). W aplikacji można to zrobić bezpośrednio z poziomu zamówienia sprzedaży, używając opcji **Rezerwacja-zamówienie według numeru identyfikacyjnego** polecenia **Otwórz w programie Excel**. W danych jednostki, które są otwarte w dodatku Excel, należy wprowadzić następujące dane związane z rezerwacjami, a następnie wybrać opcję **Publikuj** w celu wysłania danych z powrotem do Supply Chain Management:
+Aby zarezerwować określony numer identyfikacyjny, należy użyć procesu [Otwartego protokołu danych (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). W aplikacji można dokonać tej rezerwacji bezpośrednio z zamówienia sprzedaży, używając opcji **Rezerwacje zatwierdzone przez zamówienie dla każdego numer identyfikacyjny** w poleceniu **Otwórz w programie Excel**. W danych jednostki, które są otwarte w dodatku Excel, należy wprowadzić następujące dane związane z rezerwacjami, a następnie wybrać opcję **Publikuj** w celu wysłania danych z powrotem do Supply Chain Management:
 
 - Odwołanie (Tylko wartość *Zamówienia sprzedaży* jest obsługiwana.)
 - Numer zamówienia (Wartość może być pochodną partii.)
@@ -409,7 +407,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>Wybierz opcję <strong>Sugeruj</strong>.</li>
 <li>Potwierdź nową lokalizację sugerowaną na podstawie dostępności ilości partii.</li>
 </ol>
@@ -426,7 +424,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nr</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Zastąp lokalizację</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>Umożliwia ręczne wprowadzenie lokalizacji.</li>
 </ol>
 </td>
@@ -454,7 +452,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pełne</strong> w aplikacji magazynowej po rozpoczęciu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Pełne</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrania</strong>, wprowadź częściową ilość wymaganego pobrania, aby wskazać pełną wydajność.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Rozpocznij przenoszenie w aplikacji magazynowej.</li>
+<li>Rozpocznij przesunięcie w aplikacji mobilnej Warehouse Management.</li>
 <li>Wprowadź początkową i końcową lokalizację.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>Powód</strong>, wpisz <strong>Brak realokacji</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>Powód</strong>, wpisz <strong>Brak realokacji</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Tak</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 <li>Wybierz numer lokalizacji/numer identyfikacyjny na liście.</li>
@@ -724,7 +722,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nr</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 </ol>
@@ -737,7 +735,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nr</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z ręczną zmianą alokacji</strong>.</li>
 <li>Wybierz numer lokalizacji/numer identyfikacyjny na liście.</li>
@@ -761,7 +759,7 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
 <td>Nie dotyczy</td>
 <td>
 <ol>
-<li>Wybierz element menu <strong>Pobranie w niedomiarze</strong> w aplikacji magazynowej po uruchomieniu pracy pobrania.</li>
+<li>Wybierz element menu <strong>Krótki odbiór</strong> w aplikacji Warehouse Management po rozpoczęciu pracy pobrania.</li>
 <li>W polu <strong>Ilość pobrana z krótkiego odbioru</strong> wpisz wartość <strong>0</strong> (zero).</li>
 <li>W polu <strong>przyczyna</strong> wybierz opcję <strong>krótkie pobieranie z automatyczną zmianą alokacji</strong>.</li>
 </ol>
@@ -853,6 +851,14 @@ Poniższe tabele zawierają przegląd, w jaki sposób system obsługuje zarezerw
     - Zamówienia przeniesienia i pobranie surowca
 
 - Reguła konsolidacji kontenerów dla pakowania według jednostki dyrektywy ma pewne ograniczenia. W przypadku rezerwacji zamówionych zaleca się, aby nie stosować szablonów konstruowania kontenerów, w których jest włączone pole **pakowania według jednostek dyrektywy**. W bieżącym projekcie dyrektywy lokalizacji nie są używane podczas tworzenia pracy magazynowej. Dlatego tylko najniższa jednostka w grupie sekwencji jednostek (jednostka magazynowa) jest stosowana w trakcie kroku konteneryzacji.
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+- [Numery partii w Warehouse Management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Rezerwowanie tej samej partii dla zamówienia sprzedaży](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Pobieranie najstarszej partii na urządzeniu przenośnym](pick-oldest-batch.md)
+- [Potwierdzenie partii i numeru identyfikacyjnego](batch-and-license-plate-confirmation.md)
+- [Rozwiązywanie problemów dotyczących rezerwacji w module zarządzania magazynem](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

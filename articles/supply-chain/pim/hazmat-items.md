@@ -2,11 +2,9 @@
 title: Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach
 description: W tym temacie opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 7e0564802bc53ce21236ffc6ed065bf6abac7c78
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b0fb2f77b4e95c90e3eb8a4c74929deead34de5c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5243160"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829409"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Materiały niebezpieczne w produktach, zamówieniach, wysyłkach i ładunkach
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano sposób ustawiania właściwości dot. niebezpiecznych materiałów dla wydawanych produktów, określania limitów magazynowych dotyczących towarów niebezpiecznych oraz sposobu uwzględniania materiałów niebezpiecznych w zamówieniu sprzedaży, wysyłce lub ładunku.
 

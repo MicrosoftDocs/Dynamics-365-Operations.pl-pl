@@ -2,11 +2,9 @@
 title: Omówienie zarządzania usługą
 description: W module Zarządzanie serwisem można ustalić umowy serwisowe i subskrypcje serwisu, obsługiwać zlecenia serwisowe i zapytania odbiorców oraz analizować usługi świadczone klientom i zarządzać nimi.
 author: ShylaThompson
-manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7d39b65644a5673987dc12c34b42c72813412b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 915815d6be726141aa78d55c4fe98b75ae762189
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835901"
 ---
 # <a name="service-management-overview"></a>Omówienie zarządzania usługą
 

@@ -1,12 +1,10 @@
 ---
 title: Planowanie planów konserwacji
 description: W tym temacie wyjaśniono tworzenie planów konserwacji w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84711412d799f9d3cce02e0740ec065ef42d8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223561"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837808"
 ---
 # <a name="schedule-maintenance-plans"></a>Planowanie planów konserwacji
 

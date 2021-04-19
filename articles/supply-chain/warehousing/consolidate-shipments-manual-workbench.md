@@ -2,11 +2,9 @@
 title: Konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
 description: W tym temacie przedstawiono scenariusz, w którym wiele zamówień jest zwalnianych do magazynu, a później konsolidowanych w ramach wysyłek przy użyciu pulpitu konsolidacji wysyłki.
 author: GarmMSFT
-manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 9b7dc72d789fd331c3636c406ac6a45566ba81ca
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 29dd403ce2378beb6f4ba71a0b3c0836eed7566a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242188"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838425"
 ---
 # <a name="consolidate-shipments-by-using-the-shipment-consolidation-workbench"></a>Konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
 
