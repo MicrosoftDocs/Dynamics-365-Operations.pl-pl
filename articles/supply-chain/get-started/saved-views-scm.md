@@ -2,11 +2,9 @@
 title: Standardowe zapisane widoki w aplikacji Supply Chain Management
 description: W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500701"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821256"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardowe zapisane widoki w aplikacji Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management zawiera kilka zapisanych widoków, które można włączyć i używać. Niektóre z tych standardowych zapisanych widoków są optymalizowane i nazwane dla określonej roli lub zadania (na przykład „Kontrola jakości” lub „Przyjęcie”). Inne są optymalizowane, tak aby uwzględniały tylko pola i ustawienia, które zgodnie ze statystykami Microsoft dotyczącymi użytkowania są najczęściej używane przez klientów. Te zapisane widoki są zazwyczaj nazywane widokami *uproszczonymi*. W tym temacie opisano standardowe zapisane widoki, które są dostępne, oraz sposób ich włączania i dostosowywania.
 
@@ -82,14 +79,16 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zaopatrzenie i
 
 ## <a name="saved-views-for-the-production-control-module"></a>Zapisane widoki dla modułu Kontrola produkcji
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 W poniższej tabeli opisano zapisane widoki dostępne dla modułu Kontrola produkcji.
 
 | Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
 |---|---|---|---|
-| Strona listy składowej (BOM) zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona szczegółów zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona listy pobrania zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
-| Strona listy zleceń produkcyjnych | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla kontroli produkcji |
+| Strona listy składowej (BOM) zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | (Wersja zapoznawcza) Zapisane widoki kontroli produkcji |
+| Strona szczegółów zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | (Wersja zapoznawcza) Zapisane widoki kontroli produkcji |
+| Strona listy pobrania zlecenia produkcyjnego | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | (Wersja zapoznawcza) Zapisane widoki kontroli produkcji |
+| Strona listy zleceń produkcyjnych | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | (Wersja zapoznawcza) Zapisane widoki kontroli produkcji |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Zapisane widoki dla modułu Sprzedaż i marketing
 

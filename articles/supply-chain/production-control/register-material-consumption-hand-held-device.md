@@ -2,11 +2,9 @@
 title: Rejestracja na urządzeniu przenośnym zużycia materiałów
 description: W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a4afc4b0c8d9a7109201326169311e85798d532
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209401"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814543"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 

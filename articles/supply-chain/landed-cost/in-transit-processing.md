@@ -2,7 +2,6 @@
 title: Przetwarzanie towarów w transporcie
 description: W tym temacie opisano, jak pracować z zamówieniami towarów w drodze. Jeśli dla zamówienia lub podróży zostanie ustawione użycie przetwarzania towarów w drodze, towary mogą zostać zafakturowane przed ich otrzymaniem do magazynu w celu zużycia.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500411"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823416"
 ---
 # <a name="goods-in-transit-processing"></a>Przetwarzanie towarów w transporcie
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano, jak pracować z zamówieniami towarów w drodze. Ten typ zamówienia jest używany tylko przez moduł **Koszt z wyładunkiem**. Gdy zamówienie lub podróż są skonfigurowane do przetwarzania towarów w tranzycie, nie musisz czekać, aż towary znajdą się w magazynie, zanim będzie można je zafakturować. Natomiast towary są fakturowane, gdy opuszczają magazyn lub port pochodzenia dostawcy i koszty finansowe są uznawane w momencie rozpoczynania podróży. Ta funkcja umożliwia prawidłowe przenoszenie własności zapasów, ponieważ towary często stają się właściwością organizacji użytkownika, gdy opuszczają port wysyłki.
 
@@ -135,7 +133,7 @@ Koszt z wyładunkiem powoduje dodanie do elementów menu urządzenia przenośneg
 
 Ustawienia konfiguracyjne dla tych procesów są podobne do ustawień dla [procesów przyjmowania zamówień zakupu i odkładania pracy](https://technet.microsoft.com/library/dn553216.aspx). Jednak w procesie *Odbierania i odłożenia towarów w drodze* jest również dodano następujące pole.
 
-- **Włącz zakończenie kontenera wysyłkowego** — jeśli ta opcja ma wartość *Tak*, po zakończeniu pracy odłożenia aplikacja magazynu udostępni dodatkową opcję o nazwie **Kontener wysyłkowy zakończony**. Po wybraniu tej opcji pracownik zostanie poproszony o potwierdzenie zakończenia kontenera. W tym momencie wszystkie krótkie przychody będą przetwarzane jako transakcje.
+- **Włącz zakończenie kontenera wysyłkowego** — jeśli ta opcja ma wartość *Tak*, po zakończeniu pracy odłożenia aplikacja Warehouse Management udostępni dodatkową opcję o nazwie **Kontener wysyłkowy zakończony**. Po wybraniu tej opcji pracownik zostanie poproszony o potwierdzenie zakończenia kontenera. W tym momencie wszystkie krótkie przychody będą przetwarzane jako transakcje.
 
 ### <a name="location-directives"></a>Dyrektywy lokalizacji
 

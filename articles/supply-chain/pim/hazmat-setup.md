@@ -2,11 +2,9 @@
 title: Ustawianie materiałów niebezpiecznych
 description: W tym temacie opisano sposób konfigurowania danych wymaganych do klasyfikowania towarów jako materiałów niebezpiecznych. Podczas tworzenia zamówienia sprzedaży zawierającego towar, który jest zaklasyfikowany jako materiał niebezpieczny, system generuje dokumentację materiału niebezpiecznego dla tego zamówienia sprzedaży, gdy jest on wysyłany.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0f0b706568048480cf5bf85cfcb4388666432212
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5cf323272926936ba6397a9f98cfff8d8a31d091
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266110"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820353"
 ---
 # <a name="set-up-hazardous-materials"></a>Ustawianie materiałów niebezpiecznych
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Aby skorzystać z funkcji materiałów niebezpiecznych, należy najpierw skonfigurować dane wymagane do klasyfikowania towarów jako materiałów niebezpiecznych. Następnie, podczas tworzenia zamówienia sprzedaży zawierającego towar, który jest zaklasyfikowany jako materiał niebezpieczny, system generuje dokumentację materiału niebezpiecznego dla tego zamówienia sprzedaży, gdy jest on wysyłany.
 

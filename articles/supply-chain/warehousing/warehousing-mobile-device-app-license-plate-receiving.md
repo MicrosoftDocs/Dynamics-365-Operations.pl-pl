@@ -1,12 +1,10 @@
 ---
-title: Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
-description: W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+title: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
+description: W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245161"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823198"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano sposób konfigurowania aplikacji magazynowej w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
+W tym temacie opisano sposób konfigurowania aplikacji mobilnej Warehouse Management w celu obsługi procesu odbierania numerów identyfikacyjnych przy użyciu numeru identyfikacyjnego do otrzymywania zapasu fizycznego.
 
 Ta funkcja służy do szybkiego rejestrowania przyjęcia przychodzącego zapasu, który jest powiązany z zawiadomieniem o zaliczce na poczet wysyłki (ASN). System automatycznie tworzy ASN, gdy procesy zarządzania magazynem służą do wysłania zamówienia przeniesienia. W procesie zamówienia zakupu można ręcznie zarejestrować ASN lub można go zaimportować automatycznie za pomocą procesu przychodzącej jednostki danych ASN.
 
@@ -72,7 +70,7 @@ Aby udostępnić tę funkcję w systemie, należy włączyć funkcję *Ulepszeni
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Wyświetlanie lub pomijanie strony Podsumowanie przyjęcia
 
-Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji Warehouse w ramach procesu odbierania numerów identyfikacyjnych.
+Funkcji *Kontroluj, czy wyświetlać stronę podsumowania odbioru na urządzeniach mobilnych* można użyć w celu wykorzystania dodatkowego przepływu aplikacji Warehouse Management w ramach procesu odbierania numerów identyfikacyjnych.
 
 Gdy ta funkcja jest włączona, pozycje menu urządzenia mobilnego dotyczące odbioru i odłożenia tablicy rejestracyjnej oraz odłożenia tablicy rejestracyjnej będą zapewniać ustawienie **Wyświetl stronę podsumowania przyjęcia**. To ustawienie ma następujące opcje:
 

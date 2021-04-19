@@ -2,11 +2,9 @@
 title: Strategie uzupełniania zapasów
 description: Ten temat zawiera informacje o strategiach uzupełniania zapasów i objaśnieniach, w jaki sposób można skorzystać z pola Strategia uzupełnienia zapasów w wierszach szablonu uzupełnienia grupy popytu w celu wybrania sposobu uzupełniania zapasów.
 author: mirzaab
-manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: a66d48c6636f9f2012c92945868728d8430c1cbe
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256046"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814519"
 ---
 # <a name="replenishment-strategies"></a>Strategie uzupełniania zapasów
 

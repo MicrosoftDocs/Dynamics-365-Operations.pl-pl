@@ -2,11 +2,9 @@
 title: Umieść na ścianie - odłożenie do sklepu
 description: Ten temat zawiera informacje o funkcji Umieść na ścianie - odłóż do sklepu. Ta funkcja umożliwia obsługę scenariuszy, w których trzeba skonsolidować produkt do obszaru tymczasowego na podstawie kryteriów konfigurowalnych. Umożliwia skrócenie czasu pobrania, ponieważ umożliwia pobranie go do jednego docelowego numeru identyfikacyjnego i może spowodować użycie większej liczby stanowisk niż pobranie w klastrze.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228520"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823294"
 ---
 # <a name="put-to-wall---put-to-store"></a>Umieść na ścianie - odłożenie do sklepu
 
@@ -524,7 +522,7 @@ Teraz, gdy wszystkie zapasy zostały wprowadzone do lokalizacji sortowania, nale
 
 Jeśli stanowiska sortowania powinny być zamykane ręcznie, opcja **Automatycznie zamknij stanowisko sortowania** dla szablonu wychodzącego sortowania musi mieć wartość *Nie*, a zamknięcie musi być wykonane przed przeniesieniem zapasów do obszaru bramy dokującej. Stanowiska mogą być zamknięte na różne sposoby:
 
-- Poprzez aplikację magazynową:
+- Poprzez aplikację mobilną Warehouse Management:
 
     - Użytkownik może skanować jeden z towarów znajdujących się już na stanowisku, a następnie wybrać opcję **Zamknij**, aby zamknąć stanowisko.
     - Jeśli użytkownik zeskanuje kontener, który został już posortowany, wyświetlany jest komunikat o błędzie. Użytkownik może jednak nadal zamknąć stanowisko.

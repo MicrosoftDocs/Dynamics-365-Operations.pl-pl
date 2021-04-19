@@ -2,11 +2,9 @@
 title: Konfigurowanie zasobów platformy Azure dla analizy Internetu rzeczy (IoT)
 description: W tym temacie opisano sposób tworzenia i konfigurowania zasobów platformy Microsoft Azure potrzebnych do przeprowadzania analizy Internetu rzeczy (IoT).
 author: robinarh
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f728f3b5736bc7368ffb39bf2be398fb91fb373e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 722904aa75a9d95b99c83f39a1d79b9c796714b3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224961"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821112"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurowanie zasobów platformy Azure dla analizy Internetu rzeczy (IoT)
 

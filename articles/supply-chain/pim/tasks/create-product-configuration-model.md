@@ -2,11 +2,9 @@
 title: Tworzenie modelu konfiguracji produktu
 description: W tej procedurze pokazano sposób tworzenia modelu konfiguracji produktu i wprowadzania podstawowych informacji, takich jak atrybuty i podskładniki.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCCreateProductConfigurationModel, PCProductConfigurationModelDetails, PCBOMLineDetails
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e89c2c1659b8e995350762cb9e9b77a1e10c831f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b87b411ed24f89a674ec3fb7ac44d3ab1d8a720a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218520"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819994"
 ---
 # <a name="create-a-product-configuration-model"></a>Tworzenie modelu konfiguracji produktu
 

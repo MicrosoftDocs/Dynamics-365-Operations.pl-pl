@@ -2,7 +2,6 @@
 title: Szacowanie kosztów z wyładunkiem i zarządzanie nimi
 description: W systemie automatycznie są używane ustawienia kosztów, które określają szacowanie kosztów z wyładunkiem. W tym temacie opisano, jak można definiować różne scenariusze w celu zapewnienia dokładniejszego oszacowania.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/26/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-26
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: cbd652f2b29f7a78ad9e4e1d3dda4a3ef8a9f3f3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 510f5fc4910dde2f91fe2d666abb23a9bd7381f1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501277"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823440"
 ---
 # <a name="estimate-and-manage-landed-costs"></a>Szacowanie kosztów z wyładunkiem i zarządzanie nimi
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W systemie są używane [automatycznie ustawienia kosztów](auto-cost-setup.md), które określają szacowanie kosztów z wyładunkiem. Ponadto można definiować różne scenariusze w celu zapewnienia dokładniejszego oszacowania. Te scenariusze są przechowywane. W związku z tym można je później przejrzeć i porównać z wartościami rzeczywistymi w raporcie. Można również zaktualizować cenę towaru.
 

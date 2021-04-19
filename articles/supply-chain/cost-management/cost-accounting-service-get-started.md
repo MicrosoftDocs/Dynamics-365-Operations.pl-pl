@@ -2,11 +2,9 @@
 title: Rozpoczęcie korzystania z usługi rachunku kosztów (prywatna wersja zapoznawcza)
 description: Ten temat zawiera szczegółowe informacje dotyczące licencjonowania i instrukcje dotyczące instalacji dla usługi rachunku kosztów.
 author: AndersGirke
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bbf2df112657342245aca2bd02e06cee7e51ea82
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b6756e3745aa4596bd5d63ad15aaf4385cfc4813
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251057"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813202"
 ---
 # <a name="get-started-with-the-cost-accounting-service-private-preview"></a>Rozpoczęcie korzystania z usługi rachunku kosztów (prywatna wersja zapoznawcza)
 

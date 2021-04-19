@@ -2,11 +2,9 @@
 title: Grupy obliczeń BOM
 description: Ten artykuł zawiera informacje o grupach obliczania dla list składowych (BOM) oraz ich konfigurowaniu. Aby uruchomić obliczanie BOM, należy utworzyć grupy obliczania i przypisać je do poszczególnych towarów albo utworzyć domyślną grupę obliczania. Ustawienia obliczania z grupy obliczania są następnie używane jako wartości domyślne na stronie Obliczanie BOM podczas obliczania listy składowej.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5927b1c31cf15e2fb92c15d4abc06bfa0403e33d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ce954b61b4d6a12f2bc62a71ef2e1bc69732a4c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266302"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813298"
 ---
 # <a name="bom-calculations-groups"></a>Grupy obliczeń BOM
 

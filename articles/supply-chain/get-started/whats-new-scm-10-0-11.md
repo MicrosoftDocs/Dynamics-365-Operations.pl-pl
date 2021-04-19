@@ -2,11 +2,9 @@
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.11 (czerwiec 2020)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.11.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 16195e8dd99161cd812dea7dd6f3024b10b94713
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fa6a57266838fff4c34384337200fc6f24cbe640
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259002"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821184"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.11 (lipiec 2020)
 
@@ -39,7 +37,7 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 
 - [Magazyn raportu dostępnych zapasów](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Numer identyfikacyjny odbieranający ulepszenia dla aplikacji magazynu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Numer identyfikacyjny odbieranający ulepszenia dla aplikacji magazynu](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
 - [Ulepszenia rezerwacji wierszy dla formularza rezerwacji numeru partii](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Aby uzyskać więcej informacji, zobacz [Rezerwowanie takiej samej partii na potrzeby zamówienia sprzedaży](../sales-marketing/reserve-same-batch-sales-order.md).
 
