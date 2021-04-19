@@ -2,11 +2,9 @@
 title: Domeny w rozwiązaniu Dynamics 365 Commerce
 description: W tym temacie opisano sposób obsługiwania domen w rozwiązaniach Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bafa49cc570ddf7e0ff9c3dcb1b6902fb341b790
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d4381c64b69f8b62dcb509407c4f04dcee696ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225796"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792806"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -40,7 +38,7 @@ Podczas inicjowania obsługi środowiska handlu elektronicznego w [Microsoft Dyn
 
 Na poniższej ilustracji przedstawiono ekran konfiguracji usługi handlu elektronicznego LCS z wyróżnionym polem **obsługiwane nazwy hostów**. 
 
-![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**](./media/Domains_ProvisioningeCommerceScreen.png)
+![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Można utworzyć żądanie usługi w celu dodania dodatkowych domen do środowiska, jeśli już konfiguracja miała już miejsce. Aby utworzyć zlecenie usługi w ramach LCS, w środowisku należy przejść do **Pomocy technicznej \> Problemy** i wybrać opcję **Prześlij zdarzenie**.
 

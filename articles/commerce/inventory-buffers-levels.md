@@ -2,11 +2,9 @@
 title: Konfigurowanie buforów zapasów i poziomów zapasów
 description: W tym temacie wyjaśniono, jak skonfigurować bufory zapasów i poziomy zapasów, które decydują o dostępności zapasów w witrynach Microsoft Dynamics 365 Commerce.
 author: boycezhu
-manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ca6cea9e0e7f1fd3eba3082c5a33e8b2d6dec878
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478395"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798920"
 ---
 # <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurowanie buforów zapasów i poziomów zapasów
 

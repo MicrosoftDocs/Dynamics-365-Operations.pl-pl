@@ -2,11 +2,9 @@
 title: Uzgodnienia finansowe w sklepach detalicznych
 description: W tym temacie opisano uzgodnienia finansowe w sklepach detalicznych dla punktu sprzedaży dla rozwiązania Microsoft Dynamics 365 Commerce.
 author: anpurush
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 99c238ecfbb6cb29f4fefefdca32525b99a01dc8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0f57f3119039337922dcd4035e1c4d64e6ae7295
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251338"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792398"
 ---
 # <a name="financial-reconciliation-in-retail-stores"></a>Uzgodnienie finansowe w sklepach detalicznych
 

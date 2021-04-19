@@ -2,11 +2,9 @@
 title: Przegląd przyjęć
 description: Ten temat zawiera informacje dotyczące funkcji przeglądu przyjęć. Strona Przegląd przyjęć jest częścią tej funkcji i zawiera przegląd wszystkich towarów, których przybycia oczekuje się jako towary przychodzące.
 author: perlynne
-manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 2bc0cfc3c4689953c867109da4e414d4291515f9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 734fbdd6f62c192580029a24844fff78fda8b919
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5219420"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809597"
 ---
 # <a name="arrival-overview"></a>Przegląd przyjęć
 

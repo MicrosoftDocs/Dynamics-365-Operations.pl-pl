@@ -2,11 +2,9 @@
 title: Omówienie stron koszyka i realizacji zamówienia
 description: Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f7c708aa7f1a858e78cdbda809b90b944606022
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244799"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792250"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Omówienie stron koszyka i realizacji zamówienia
 
 [!include [banner](includes/banner.md)]
 
 Ten temat stanowi omówienie stron koszyka i realizacji transakcji w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Strona koszyka w witrynie e-Commerce zawiera wszystkie towary dodane przez odbiorcę do koszyka. Strona koszyka jest budowana przy użyciu modułu koszyka. Moduł koszyka jest kontenerem obsługującym wszystkie moduły wymagane do zaprezentowania towarów w koszyku. Moduł koszyk może również wykorzystywać inne moduły do wyświetlania podsumowania zamówień i kodów promocyjnych, które zostały zastosowane do zamówienia odbiorcy.
 

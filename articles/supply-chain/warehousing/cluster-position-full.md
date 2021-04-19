@@ -2,11 +2,9 @@
 title: Stanowisko w grupie pełne
 description: Ten temat zawiera informacje dotyczące funkcji Stanowisko w grupie pełne. Ta funkcja oferuje alternatywę dla sztywnego egzekwowania reguł przerwy w pracy, gdy jest używana funkcja pobierania dla grupy. Zezwala ona na większy margines błędu w ramach ograniczeń dotyczących objętości kontenerów lub pojemników.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233014"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808853"
 ---
 # <a name="cluster-position-full"></a>Stanowisko w grupie pełne
 
@@ -213,7 +211,7 @@ Powinny zostać utworzone dwa identyfikatory pracy, z których każdy ma dwa wie
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Wykonywanie przepływu urządzeń przenośnych — konfiguracja potwierdzenia pracy dla produktu
 
-1. Zaloguj się do aplikacji magazynowania jako użytkownik w magazynie *61*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie *61*.
 1. Przejdź do **Wychodzące \> Tworzenie pobrania w grupie**.
 
     Zostanie wyświetlona strona **ZADANIE: Przypisz pracę do grupy**.

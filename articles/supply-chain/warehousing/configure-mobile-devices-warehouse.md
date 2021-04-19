@@ -2,11 +2,9 @@
 title: Konfigurowanie urządzeń przenośnych do pracy magazynowej
 description: W tym temacie opisano sposób konfigurowania elementów menu, których pracownicy magazynu używają do wykonywania różnych czynności na urządzeniach przenośnych.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232990"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808805"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -64,7 +62,7 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Pamięć podręczna usuwania sekwencji numerów | Usuń cyfry sekwencji numerów z pamięci podręcznej sekwencji numerów. To działanie jest zwykle wykonywane przez administratora systemu, aby rozwiązać problemy podczas korzystania z urządzeń przenośnych. |
 | Zmień dyspozycję partii | Umożliwia zezwolenie pracownikom na określenie kodu dyspozycji partii dla towaru i partii. Wybranie tej opcji spowoduje zaktualizowanie kodu dyspozycji określony dla danej partii. |
 | Wyświetl listę otwartych prac | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę**, który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy.|
-| Utwórz zamówienie przeniesienia z numery identyfikacyjnego | Umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji magazynowej. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](create-transfer-order-from-warehouse-app.md)
+| Utwórz zamówienie przeniesienia z numery identyfikacyjnego | Umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji Warehouse Management. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu

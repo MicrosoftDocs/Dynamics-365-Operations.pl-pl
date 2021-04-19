@@ -1,25 +1,23 @@
 ---
 title: Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 description: W tej procedurze pokazano sposób korzystania z umowy zakupu podczas tworzenia zamówienia zakupu.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4e9a0551c0755fd006fc030d2e1bf4f28efe951
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cd3f837590cd7fe09ad385d0baac6c16fcf145d0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211964"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812269"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Tworzenie zlecenia wydania zakupu na podstawie umów zakupu
 

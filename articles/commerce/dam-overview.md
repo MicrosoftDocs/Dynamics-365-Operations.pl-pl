@@ -2,11 +2,9 @@
 title: Omówienie zarządzania cyfrowymi składnikami majątku
 description: W tym temacie omówiono zarządzanie cyfrowymi składnikami majątku w kreatorze witryn Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b5e134c70ad81876beacd38eb58442d3784d57d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 46a61db1add12bb90f3915cf0390dc78c8dce033
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222519"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799284"
 ---
 # <a name="digital-asset-management-overview"></a>Omówienie zarządzania cyfrowymi składnikami majątku
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono zarządzanie cyfrowymi składnikami majątku w kreatorze witryn Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Biblioteka multimedialna konstruktora witryn Dynamics 365 Commerce zawiera funkcje zaawansowanego zarządzania zasobami cyfrowymi, w tym obsługę następujących elementów:
 - Zasoby graficzne

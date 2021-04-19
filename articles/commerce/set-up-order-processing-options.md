@@ -2,11 +2,9 @@
 title: Konfigurowanie kanałów biura obsługi
 description: Ten temat zawiera informacje dotyczące sposobu przetwarzania zamówień dla biur obsługi przy użyciu modułu Dynamics 365 Commerce.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2feb789e8942708bdad533dbdc28b2070a06e6be
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5ec0e13c8ecfb6003cbb905e66fc102074e7b9b6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264487"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795532"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurowanie kanałów biura obsługi
 

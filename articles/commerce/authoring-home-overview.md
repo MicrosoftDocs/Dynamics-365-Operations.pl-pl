@@ -2,11 +2,9 @@
 title: Omówienie strony tworzenia
 description: Ten temat zawiera omówienie strony tworzenia w Microsoft Dynamics 365 Commerce.
 author: brendans
-manager: annbe
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 030fa93e938df0ab22dd3e85c2d48d149ac239df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b5e1e7dd669a9608d385086cf24d388b065c9ca6
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5211304"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799884"
 ---
 # <a name="authoring-page-overview"></a>Omówienie strony tworzenia
 
@@ -29,8 +27,6 @@ ms.locfileid: "5211304"
  [!include [banner](includes/banner.md)]
 
 Ten temat zawiera omówienie strony tworzenia w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Witryny sieci Web można tworzyć w celu obsługi różnych potrzeb biznesowych. Mogą one reprezentować całą firmę, oferować jeden kanał działalności lub kierować konkretną grupę odbiorców lub segmentów odbiorców. Na przykład producent odzieży może mieć witrynę sieci Web, która zawiera wszystkie posiadane marki. Ten sam producent odzieży może wówczas mieć oddzielną witrynę sieci Web dla każdej z tych marek, a także zbiór witryn sieci Web, które są przeznaczone dla odzieży luksusowej, outdoor lub dziecięcej.
 

@@ -2,11 +2,9 @@
 title: Strony i moduły zarządzania kontem
 description: Ten temat obejmuje strony i moduły zarządzania kontami w Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206638"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796301"
 ---
 # <a name="account-management-pages-and-modules"></a>Strony i moduły zarządzania kontem
 
@@ -51,9 +49,9 @@ Strona historia zamówień korzysta z modułu historia zamówień w celu wyświe
 
 Strona szczegóły zamówienia zawiera szczegółowe informacje dotyczące poszczególnych zamówień i jest dostępna na stronie historia zamówień. Używa modułu szczegóły zamówienia, który wymaga identyfikatora sprzedaży lub identyfikatora transakcji w celu pobrania szczegółów zamówienia.
 
-### <a name="user-profile-page"></a>Strona profil użytkownika
+### <a name="my-profile-page"></a>Strona Mój profil
 
-Na stronie profilu użytkownika są wyświetlane szczegóły dotyczące konta użytkownika, takie jak nazwa użytkownika i adres e-mail. Używa on szczegółów profilu użytkownika i modułu edytuj profil użytkownika. Chociaż adresu e-mail nie da się usunąć, można go edytować. Strona profilu użytkownika zawiera także preferencje użytkownika, które umożliwiają użytkownikowi włączenie lub rezygnację z niektórych funkcji, takich jak personalizacja list rekomendacji. 
+Na stronie Mój profil można wyświetlić szczegóły profilu konta użytkownika, korzystając z modułu profilu konta. Na stronie pokazano adres e-mail skojarzony z kontem użytkownika, a także preferencje ustawione dla tego konta. W przypadku konfigurowania niestandardowych atrybutów odbiorcy, w sekcji „Informacje dodatkowe” są także wyświetlane te atrybuty. Użytkownicy mogą edytować swoje imię i nazwisko, preferencje lub dodatkowe informacje (jeśli są dostępne).
 
 ### <a name="user-address-page"></a>Strona adres e-mail użytkownika
 

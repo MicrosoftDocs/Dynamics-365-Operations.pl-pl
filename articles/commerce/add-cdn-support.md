@@ -2,11 +2,9 @@
 title: Dodaj obsługę dla sieci dostarczania zawartości (CDN)
 description: W tym temacie opisano, jak dodać sieć dostarczania treści (CDN) do środowiska Microsoft Dynamics 365 Commerce.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582726"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797846"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
 
@@ -39,13 +37,9 @@ Nazwa hosta lub punkt końcowy, który jest generowany podczas procesu zastrzega
 
 Ponadto *statystyki* (pliki JavaScript lub kaskadowe arkusze stylów \[CSS\]) z modułu Commerce są doręczane z poziomu punktu końcowego, który jest generowany przez moduł Commerce wygenerowany (\*.commerce.dynamics.com). Statyczne dane mogą być buforowane tylko wtedy, gdy nazwa hosta lub punkt końcowy, który został wygenerowany przez moduł commerce, jest umieszczony za CDN.
 
-## <a name="set-up-ssl"></a>Konfigurowanie systemu SSL
+## <a name="set-up-ssl"></a>Ustaw format SSL
 
-Aby zapewnić, że protokół SSL jest skonfigurowany, a statyczne są buforowane, należy skonfigurować sieć CDN w taki sposób, aby była skojarzona z nazwą hosta wygenerowaną przez moduł Commerce dla danego środowiska. Ponadto należy buforować następujący wzorzec wyłącznie dla statycznych: 
-
-/\_msdyn365/\_scnr/\*
-
-Po zainicjowaniu obsługi środowiska Commerce w dostarczonej niestandardowej domenie lub po dostarczeniu niestandardowej domeny środowiska za pomocą żądania obsługi, należy wskazać domenę niestandardową dla nazwy hosta lub punktu końcowego, który jest generowany przez moduł Commerce.
+Po zainicjowaniu obsługi środowiska Commerce w dostarczonej niestandardowej domenie lub po dostarczeniu niestandardowej domeny środowiska za pomocą żądania obsługi, należy współpracować z zespołem wprowadzającym Commerce w celu zaplanowania zmian w systemie DNS.
 
 Jak wcześniej wspomniano, wygenerowana nazwa hosta lub punkt końcowy obsługuje certyfikat SSL tylko dla \*.commerce.dynamics.com. Nie obsługuje on protokołu SSL dla domen niestandardowych.
 
@@ -62,7 +56,7 @@ Proces konfiguracji sieci CDN składa się z następujących ogólnych kroków:
 
 1. Dodaj hosta frontonu
 1. Skonfiguruj pulę zaplecza.
-1. Konfigurowanie reguł routingu i buforowania
+1. Konfigurowanie reguł wyboru trasy.
 
 ### <a name="add-a-front-end-host"></a>Dodaj hosta frontonu.
 
@@ -74,8 +68,9 @@ Aby uzyskać informacje na temat konfigurowania usługi Azure Front Door Service
 
 Aby skonfigurować pulę zaplecza w usłudze Azure Front Door Service, wykonaj nastepujące kroki.
 
-1. Dodaj **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** do puli zaplecza jako hosta niestandardowego z pustym nagłówkiem hosta zaplecza końcowego.
+1. Dodaj **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** do puli wewnętrznej bazy danych jako niestandardowego hosta, który ma nagłówek hosta wewnętrznej bazy danych, który jest taki sam jak **&lt;ecom-tenant-name&gt;.commerce.dynamics.com**.
 1. W obszarze **równoważenie obciążenia** pozostaw wartości domyślne.
+1. Wyłącz testy kondycji dla puli wewnętrznej bazy danych.
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie zaplecza** w usłudze Azure Front Door Service z podaną nazwą hosta zaplecza.
 
@@ -84,6 +79,10 @@ Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie zaplecza** w u
 Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie puli zaplecza** w usłudze Azure Front Door Service z domyślnymi wartościami równoważenia obciążenia.
 
 ![Kontynuacja Okno dialogowe Dodawanie puli wewnętrznej bazy danych](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Pamiętaj, aby wyłączyć **Sondy kondycji** podczas konfigurowania własnej usługi Azure Front Door dla handlu.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Konfigurowanie reguł w usłudze Azure Front Door Service
 
@@ -100,24 +99,6 @@ Aby skonfigurować regułę routingu w usłudze Azure Front Door Service, wykona
 1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
 1. Ustawienie opcji **Buforowanie** na **wyłączone**.
 
-Aby skonfigurować regułę buforowania w usłudze Azure Front Door Service, wykonaj następujące kroki.
-
-1. Dodawanie reguły buforowania.
-1. W polu **Nazwa** wpisz **statystyki**.
-1. W polu **zaakceptowane protokoły** wybierz opcję **HTTP i HTTPS**.
-1. W polu **hosty frontonu** wprowadź **dynamics-ecom-tenant-name.azurefd.net**.
-1. W obszarze **wzory do dopasowania**, w górnym polu wprowadź wartość **/\_msdyn365/\_scnr/\***.
-1. W obszarze **Szczegóły marszruty** ustaw opcję **Typ marszruty** na **Prześlij dalej**.
-1. W polu **Pula wewnętrzna** wybierz opcję **ecom-backend**.
-1. W grupie pól **protokół przesyłania dalej** wybierz opcję **dopasowywanie żądań**.
-1. Ustawienie opcji **ponownego zapisywania adresów URL** na **wyłączone**.
-1. Ustawienie opcji **Buforowanie** na **wyłączone**.
-1. W polu **Zachowanie buforowania ciągu zapytania** wybierz opcję **Buforuj każdy unikatowy adres URL**.
-1. W grupie pól **kompresja dynamiczna** wybierz opcję **włączone**.
-
-Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie reguły** w usłudze Azure Front Door Service.
-
-![Onko dialogowe dodaj regułę](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Jeśli domena, której będziesz korzystać, jest już aktywna i na żywo, Utwórz bilet pomocy technicznej na kafelku **Pomocy technicznej** w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/), aby uzyskać pomoc w następnych etapach. Aby uzyskać więcej informacji, przejrzyj temat [Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub usług Lifecycle Services (usługi LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).

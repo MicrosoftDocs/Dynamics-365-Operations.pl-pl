@@ -2,11 +2,9 @@
 title: Omówienie stron zarządzania kontem
 description: W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4cd4ee3ef2b1c3538ec267fe12eef38d525f6a83
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244822"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792274"
 ---
 # <a name="account-management-pages-overview"></a>Omówienie stron zarządzania kontem
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie omówiono strony zarządzania kontami w firmie Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Strony zarządzania kontami umożliwiają użytkownikom wyświetlanie informacji związanych z ich kontami i zamówieniami. Strony zarządzania kontem obejmują stronę docelową zarządzania kontem oraz strony z profilem użytkownika, adresami, historią zamówień, szczegółami zamówień, punktami lojalnościowymi i listą życzeń.
 

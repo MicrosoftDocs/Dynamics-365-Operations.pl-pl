@@ -2,11 +2,9 @@
 title: Modyfikacja istniejącej strony witryny
 description: W tym temacie opisano sposób modyfikowania istniejącej strony witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6afd19a01520813e54871f4849aeb18f4424173c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b633965e45c16cb4e5991fab67783b867223f6ec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223054"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803736"
 ---
 # <a name="modify-an-existing-site-page"></a>Modyfikacja istniejącej strony witryny
-
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób modyfikowania istniejącej strony witryny w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 W przypadku konieczności zmodyfikowania strony pierwszym krokiem jest otwarcie jej w edytorze stron. Przejdź do witryny, która zawiera stronę, a następnie na liście stron znajdź żądaną stronę. Jeśli nie możesz znaleźć strony, możesz skorzystać z funkcji wyszukiwania rozszerzonego narzędzia autorskiego. Należy wpisać dokładną nazwę strony lub wpisać kilka pierwszych liter, a następnie gwiazdkę (\*). Zostanie wyświetlona filtrowana lista stron. Tej listy można użyć, aby znaleźć żądaną stronę. Po znalezieniu poprawnej strony wybierz nazwę strony, aby otworzyć stronę w edytorze stron.
 

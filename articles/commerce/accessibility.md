@@ -2,11 +2,9 @@
 title: Funkcje i możliwości dostępności
 description: Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 13f035a080eb41b4a69cc31b7275d87a5836c686
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206662"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796325"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funkcje i możliwości dostępności
-
 
 [!include [banner](includes/banner.md)]
 
 Ten temat zawiera informacje na temat funkcji i możliwości ułatwień dostępu w usłudze Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Funkcje i możliwości ułatwień dostępu umożliwiają wszystkim użytkownikom dostęp do akcji i ich wykonywanie ich, dzięki czemu mogą osiągać założone cele. Ten szeroki zakres użytkowników może wymagać narzędzi wspomagających dla słuchu, wzroku, mobilności lub neuroróżnorodności.
 

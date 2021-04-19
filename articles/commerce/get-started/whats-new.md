@@ -2,11 +2,9 @@
 title: Nowości i zmiany w programie Dynamics 365 Retail
 description: Ta strona wskazuje materiały, które mogą pomóc dowiedzieć się o nowych funkcjach w najnowszych wersjach programu Microsoft Dynamics 365 Retail.
 author: sericks007
-manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 690e73bfe24be3ba3cf6d25b361b2afb0938d02f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0bbbe8ba0fa2616fa3d93a30a3f53d74c1b746d9
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206211"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797101"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Nowości i zmiany w programie Dynamics 365 Retail
 

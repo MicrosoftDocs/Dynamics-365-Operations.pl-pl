@@ -2,11 +2,9 @@
 title: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
 description: W tym temacie opisano sposób konfigurowania wielu dzierżawców (B2C) na kanał Microsoft Azure Active Directory (Azure AD) na potrzeby uwierzytelniania użytkowników w środowisku specjalnym w ramach systemu Dynamics 365 Commerce.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477763"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796106"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
 
@@ -55,10 +53,6 @@ Na poniższej ilustracji przedstawiono wielu dzierżawców B2C w środowisku Com
 
 Jeśli użytkownik zdecyduje, że firma wymaga odrębnych dzierżawców B2C na kanał w tym samym środowisku handlowym, należy wykonać procedury opisane w poniższych sekcjach, aby zażądać tej funkcji.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Zażądaj włączenia B2C na kanał w środowisku
-
-Obecnie, aby dzierżawy B2C dla poszczególnych kanałów były dostępne w tym samym środowisku Commerce, należy przesłać żądanie do Dynamics 365 Commerce. Aby uzyskać więcej informacji, patrz [Uzyskaj pomoc techniczną dla usług Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) lub omów ten błąd, kontaktując się z serwisem Commerce.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>Konfiguruj dzierżawy B2C w swoim środowisku
 
 Aby skonfigurować dzierżawy B2C w środowisku, należy wykonać odpowiednie procedury opisane w tej sekcji.
@@ -79,11 +73,11 @@ Aby dodać dzierżawcę B2C Azure AD do środowiska, wykonaj następujące kroki
     - **Identyfikator GUID klienta**: należy wprowadzić identyfikator dzierżawcy B2C Azure AD, który jest wyświetlany w portalu Azure (nie identyfikator aplikacji dla dzierżawcy B2C).
     - **Identyfikator zasad edycji profilu**: Wprowadź identyfikator zasad (nazwę zasad w portalu Azure).
 
-1. Po zakończeniu wprowadzania tych informacji wybierz przycisk **OK**, aby zapisać zmiany.
+1. Po zakończeniu wprowadzania tych informacji wybierz przycisk **OK**, aby zapisać zmiany. Twoja nowa dzierżawa B2C Azure AD powinna teraz pojawić się na liście w obszarze **Zarządzanie aplikacjami B2C**.
 
 > [!NOTE]
 > Należy pozostawić takie pola, jak **zakres**, **nieinteraktywny identyfikator zasad**, **nieinteraktywny identyfikator klienta**, **niestandardowa domena logowania**, a **identyfikator zasad rejestracji** pusty, chyba że zespół Dynamics 365 Commerce poinstruuje użytkownika o jego ustawienie.
-Twoja nowa dzierżawa B2C Azure AD powinna teraz pojawić się na liście w obszarze **Zarządzanie aplikacjami B2C**.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Zarządzaj lub usuwaj dzierżawcę B2C Azure AD
 
@@ -97,6 +91,7 @@ Twoja nowa dzierżawa B2C Azure AD powinna teraz pojawić się na liście w obsz
 > Jeśli dzierżawa B2C jest skonfigurowana dla witryny aktywnej/opublikowanej, użytkownicy mogli być zalogowani przy użyciu kont obecnych w dzierżawie. Jeśli usuniesz skonfigurowanego dzierżawcy w menu **Ustawienia dzierżawy \> Dzierżawca B2C**, usuniesz skojarzenie tej dzierżawy B2C z witryn, które są skojarzone z dowolnymi kanałami dzierżawcy. W takim przypadku użytkownicy mogą nie mieć możliwości logowania się do swoich kont. Z tego względu należy zachować wyjątkową ostrożność podczas usuwania skonfigurowanego dzierżawcy.
 >
 > Po usunięciu skonfigurowanego dzierżawcy, dzierżawa B2C i rekordy będą nadal przechowywane, ale konfiguracja systemu Commerce w tej dzierżawie zostanie zmieniona lub usunięta. Użytkownicy próbujący zarejestrować się lub zalogować się do witryny będą tworzyć nowy rekord konta w domyślnej lub nowo skojarzonej dzierżawie B2C, skonfigurowanej dla kanału witryny.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Konfigurowanie kanału za pomocą dzierżawcy B2C
 
 1. Zaloguj się do modułu tworzenia witryn Commerce w swoim środowisku jako administrator systemu. Aby skonfigurować dzierżawców B2C Azure AD, musisz być administratorem systemu dla środowiska Commerce.
