@@ -2,11 +2,9 @@
 title: Tworzenie zlecenia produkcyjnego
 description: W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego.
 author: johanhoffmann
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 audience: Application User
@@ -16,59 +14,59 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dec447302da3a3bbca7d9c3e783af54bc77dfe70
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9e9358811f35e0417099ae65b0206e32a1455f84
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259825"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828977"
 ---
-# <a name="create-a-production-order"></a><span data-ttu-id="9d19c-103">Tworzenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="9d19c-103">Create a production order</span></span>
+# <a name="create-a-production-order"></a><span data-ttu-id="caf69-103">Tworzenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="caf69-103">Create a production order</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="9d19c-104">W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="9d19c-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="9d19c-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9d19c-106">Jest to pierwsza z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="caf69-104">W tej procedurze pokazano sposób tworzenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-104">This procedure shows how to create a production order.</span></span> <span data-ttu-id="caf69-105">Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.</span><span class="sxs-lookup"><span data-stu-id="caf69-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="caf69-106">Jest to pierwsza z siedmiu procedur, które wyjaśniają cykl życia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-106">This is the first procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="create-a-production-order"></a><span data-ttu-id="9d19c-107">Tworzenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="9d19c-107">Create a production order</span></span>
-1. <span data-ttu-id="9d19c-108">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="9d19c-108">Go to Production control > Production orders > All production orders.</span></span>
-2. <span data-ttu-id="9d19c-109">Kliknij opcję Nowe zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="9d19c-109">Click New production order.</span></span>
-3. <span data-ttu-id="9d19c-110">W polu Numer pozycji wpisz „D0001”.</span><span class="sxs-lookup"><span data-stu-id="9d19c-110">In the Item number field, type 'D0001'.</span></span>
-4. <span data-ttu-id="9d19c-111">W polu Dostawa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-111">In the Delivery field, enter a date.</span></span>
-    * <span data-ttu-id="9d19c-112">Data dostawy wskazuje, kiedy zlecenie produkcyjne powinno się zakończyć, aby dostawa nastąpiła w na czas.</span><span class="sxs-lookup"><span data-stu-id="9d19c-112">The delivery date indicates when the production order should end in order to deliver on time.</span></span> <span data-ttu-id="9d19c-113">Ta data może być wykorzystywana w procesie planowania.</span><span class="sxs-lookup"><span data-stu-id="9d19c-113">This date can be used in the scheduling process.</span></span> <span data-ttu-id="9d19c-114">Na przykład można zaplanować zlecenie z datą wsteczną względem daty dostawy.</span><span class="sxs-lookup"><span data-stu-id="9d19c-114">For example, you can schedule the order backward from the delivery date.</span></span>  
-5. <span data-ttu-id="9d19c-115">W polu Ilość wpisz wartość 20.</span><span class="sxs-lookup"><span data-stu-id="9d19c-115">Set Quantity to '20'.</span></span>
-    * <span data-ttu-id="9d19c-116">Uwaga: W polu Numer BOM jest automatycznie wyświetlana liczba wszystkich aktywnych BOM bieżącego towaru, ale można zmienić BOM zlecenia produkcyjnego, wybierając aktywny BOM z listy zatwierdzonych wersji BOM.</span><span class="sxs-lookup"><span data-stu-id="9d19c-116">Note: The BOM number field automatically displays the number of any active BOM for the current item, but you can change the BOM for the production order by selecting an active BOM from the list of approved BOM versions.</span></span>    <span data-ttu-id="9d19c-117">W polu Numer marszruty jest automatycznie wyświetlana liczba wszystkich aktywnych marszrut bieżącego towaru, ale można zmienić marszrutę zlecenia produkcyjnego, wybierając aktywną marszrutę z listy zatwierdzonych wersji marszruty.</span><span class="sxs-lookup"><span data-stu-id="9d19c-117">The Route number field automatically displays the number of any active Route for the current item, but you can change the Route for the production order by selecting an active Route from the list of approved Route versions.</span></span>  
-6. <span data-ttu-id="9d19c-118">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="9d19c-118">Click Create.</span></span>
+## <a name="create-a-production-order"></a><span data-ttu-id="caf69-107">Tworzenie zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="caf69-107">Create a production order</span></span>
+1. <span data-ttu-id="caf69-108">Wybierz kolejno opcje Kontrola produkcji > Zlecenia produkcyjne > Wszystkie zlecenia produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="caf69-108">Go to Production control > Production orders > All production orders.</span></span>
+2. <span data-ttu-id="caf69-109">Kliknij opcję Nowe zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="caf69-109">Click New production order.</span></span>
+3. <span data-ttu-id="caf69-110">W polu Numer pozycji wpisz „D0001”.</span><span class="sxs-lookup"><span data-stu-id="caf69-110">In the Item number field, type 'D0001'.</span></span>
+4. <span data-ttu-id="caf69-111">W polu Dostawa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="caf69-111">In the Delivery field, enter a date.</span></span>
+    * <span data-ttu-id="caf69-112">Data dostawy wskazuje, kiedy zlecenie produkcyjne powinno się zakończyć, aby dostawa nastąpiła w na czas.</span><span class="sxs-lookup"><span data-stu-id="caf69-112">The delivery date indicates when the production order should end in order to deliver on time.</span></span> <span data-ttu-id="caf69-113">Ta data może być wykorzystywana w procesie planowania.</span><span class="sxs-lookup"><span data-stu-id="caf69-113">This date can be used in the scheduling process.</span></span> <span data-ttu-id="caf69-114">Na przykład można zaplanować zlecenie z datą wsteczną względem daty dostawy.</span><span class="sxs-lookup"><span data-stu-id="caf69-114">For example, you can schedule the order backward from the delivery date.</span></span>  
+5. <span data-ttu-id="caf69-115">W polu Ilość wpisz wartość 20.</span><span class="sxs-lookup"><span data-stu-id="caf69-115">Set Quantity to '20'.</span></span>
+    * <span data-ttu-id="caf69-116">Uwaga: W polu Numer BOM jest automatycznie wyświetlana liczba wszystkich aktywnych BOM bieżącego towaru, ale można zmienić BOM zlecenia produkcyjnego, wybierając aktywny BOM z listy zatwierdzonych wersji BOM.</span><span class="sxs-lookup"><span data-stu-id="caf69-116">Note: The BOM number field automatically displays the number of any active BOM for the current item, but you can change the BOM for the production order by selecting an active BOM from the list of approved BOM versions.</span></span>    <span data-ttu-id="caf69-117">W polu Numer marszruty jest automatycznie wyświetlana liczba wszystkich aktywnych marszrut bieżącego towaru, ale można zmienić marszrutę zlecenia produkcyjnego, wybierając aktywną marszrutę z listy zatwierdzonych wersji marszruty.</span><span class="sxs-lookup"><span data-stu-id="caf69-117">The Route number field automatically displays the number of any active Route for the current item, but you can change the Route for the production order by selecting an active Route from the list of approved Route versions.</span></span>  
+6. <span data-ttu-id="caf69-118">Kliknij przycisk Utwórz.</span><span class="sxs-lookup"><span data-stu-id="caf69-118">Click Create.</span></span>
 
-## <a name="validate-the-production-order"></a><span data-ttu-id="9d19c-119">Weryfikacja zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="9d19c-119">Validate the production order</span></span>
-1. <span data-ttu-id="9d19c-120">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="9d19c-120">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="9d19c-121">Kliknij łącze do numeru nowo utworzonego zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-121">Click the link for the production order number that you have just created.</span></span> <span data-ttu-id="9d19c-122">Spowoduje to otwarcie strony szczegółów zlecenia.</span><span class="sxs-lookup"><span data-stu-id="9d19c-122">This will open the details page for the order.</span></span>  
-2. <span data-ttu-id="9d19c-123">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="9d19c-123">Click Edit.</span></span>
-3. <span data-ttu-id="9d19c-124">W polu Dostawa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-124">In the Delivery field, enter a date.</span></span>
-    * <span data-ttu-id="9d19c-125">Na przykład można zmienić datę dostawy zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-125">For example, you can change the delivery date for the production order.</span></span>  
-4. <span data-ttu-id="9d19c-126">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9d19c-126">Click Save.</span></span>
-5. <span data-ttu-id="9d19c-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-127">Close the page.</span></span>
+## <a name="validate-the-production-order"></a><span data-ttu-id="caf69-119">Weryfikacja zlecenia produkcyjnego</span><span class="sxs-lookup"><span data-stu-id="caf69-119">Validate the production order</span></span>
+1. <span data-ttu-id="caf69-120">Na liście kliknij łącze w wybranym wierszu.</span><span class="sxs-lookup"><span data-stu-id="caf69-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="caf69-121">Kliknij łącze do numeru nowo utworzonego zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-121">Click the link for the production order number that you have just created.</span></span> <span data-ttu-id="caf69-122">Spowoduje to otwarcie strony szczegółów zlecenia.</span><span class="sxs-lookup"><span data-stu-id="caf69-122">This will open the details page for the order.</span></span>  
+2. <span data-ttu-id="caf69-123">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="caf69-123">Click Edit.</span></span>
+3. <span data-ttu-id="caf69-124">W polu Dostawa wprowadź datę.</span><span class="sxs-lookup"><span data-stu-id="caf69-124">In the Delivery field, enter a date.</span></span>
+    * <span data-ttu-id="caf69-125">Na przykład można zmienić datę dostawy zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-125">For example, you can change the delivery date for the production order.</span></span>  
+4. <span data-ttu-id="caf69-126">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="caf69-126">Click Save.</span></span>
+5. <span data-ttu-id="caf69-127">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="caf69-127">Close the page.</span></span>
 
-## <a name="update-the-bom"></a><span data-ttu-id="9d19c-128">Aktualizacja BOM</span><span class="sxs-lookup"><span data-stu-id="9d19c-128">Update the BOM</span></span>
-1. <span data-ttu-id="9d19c-129">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="9d19c-129">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="9d19c-130">Kliknij opcję BOM.</span><span class="sxs-lookup"><span data-stu-id="9d19c-130">Click BOM.</span></span>
-    * <span data-ttu-id="9d19c-131">Otwórz stronę BOM, aby sprawdzić poprawność danych BOM, które zostały skopiowane z domyślnych danych podczas tworzenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-131">Open the BOM page to validate the BOM data that was copied from the default data when the production order was created.</span></span> <span data-ttu-id="9d19c-132">W tej procedurze należy zaktualizować ilość w BOM.</span><span class="sxs-lookup"><span data-stu-id="9d19c-132">In this procedure, you need to update the quantity for a BOM.</span></span>  
-3. <span data-ttu-id="9d19c-133">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="9d19c-133">Click Edit.</span></span>
-4. <span data-ttu-id="9d19c-134">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="9d19c-134">In the Quantity field, enter a number.</span></span>
-    * <span data-ttu-id="9d19c-135">Zmiana ilości w wierszu BOM ma wpływ na szacowane koszty zużycia materiałów dla zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-135">Changing the quantity on the BOM line affects the cost estimate of material consumption for the production order.</span></span>  
-5. <span data-ttu-id="9d19c-136">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9d19c-136">Click Save.</span></span>
-6. <span data-ttu-id="9d19c-137">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-137">Close the page.</span></span>
+## <a name="update-the-bom"></a><span data-ttu-id="caf69-128">Aktualizacja BOM</span><span class="sxs-lookup"><span data-stu-id="caf69-128">Update the BOM</span></span>
+1. <span data-ttu-id="caf69-129">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="caf69-129">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="caf69-130">Kliknij opcję BOM.</span><span class="sxs-lookup"><span data-stu-id="caf69-130">Click BOM.</span></span>
+    * <span data-ttu-id="caf69-131">Otwórz stronę BOM, aby sprawdzić poprawność danych BOM, które zostały skopiowane z domyślnych danych podczas tworzenia zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-131">Open the BOM page to validate the BOM data that was copied from the default data when the production order was created.</span></span> <span data-ttu-id="caf69-132">W tej procedurze należy zaktualizować ilość w BOM.</span><span class="sxs-lookup"><span data-stu-id="caf69-132">In this procedure, you need to update the quantity for a BOM.</span></span>  
+3. <span data-ttu-id="caf69-133">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="caf69-133">Click Edit.</span></span>
+4. <span data-ttu-id="caf69-134">Wprowadź liczbę w polu Ilość.</span><span class="sxs-lookup"><span data-stu-id="caf69-134">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="caf69-135">Zmiana ilości w wierszu BOM ma wpływ na szacowane koszty zużycia materiałów dla zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-135">Changing the quantity on the BOM line affects the cost estimate of material consumption for the production order.</span></span>  
+5. <span data-ttu-id="caf69-136">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="caf69-136">Click Save.</span></span>
+6. <span data-ttu-id="caf69-137">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="caf69-137">Close the page.</span></span>
 
-## <a name="update-the-production-route"></a><span data-ttu-id="9d19c-138">Aktualizacja marszruty produkcji</span><span class="sxs-lookup"><span data-stu-id="9d19c-138">Update the production route</span></span>
-1. <span data-ttu-id="9d19c-139">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="9d19c-139">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="9d19c-140">Kliknij opcję Marszruta.</span><span class="sxs-lookup"><span data-stu-id="9d19c-140">Click Route.</span></span>
-    * <span data-ttu-id="9d19c-141">Otwórz stronę Marszruta, aby sprawdzić poprawność danych marszruty produkcji, które zostały skopiowane z domyślnych danych podczas tworzenia zlecenia.</span><span class="sxs-lookup"><span data-stu-id="9d19c-141">Open the Route page to validate the data of the production route that was copied from the default data when the order was created.</span></span> <span data-ttu-id="9d19c-142">W tej procedurze należy zaktualizować ilość w jednej operacji w marszrucie produkcji.</span><span class="sxs-lookup"><span data-stu-id="9d19c-142">In this procedure, you need to update the quantity for one of the operations in the production route.</span></span>  
-3. <span data-ttu-id="9d19c-143">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="9d19c-143">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="9d19c-144">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="9d19c-144">Click Edit.</span></span>
-5. <span data-ttu-id="9d19c-145">W polu Ilość z procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-145">In the Process qty. field, enter a number.</span></span>
-    * <span data-ttu-id="9d19c-146">Zmiana czasu procesu wpływa na szacowane zużycie w marszrucie i koszt zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="9d19c-146">Changing the process time affects the estimated route consumption and the cost of the production order.</span></span>  
-6. <span data-ttu-id="9d19c-147">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="9d19c-147">Click Save.</span></span>
-7. <span data-ttu-id="9d19c-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="9d19c-148">Close the page.</span></span>
+## <a name="update-the-production-route"></a><span data-ttu-id="caf69-138">Aktualizacja marszruty produkcji</span><span class="sxs-lookup"><span data-stu-id="caf69-138">Update the production route</span></span>
+1. <span data-ttu-id="caf69-139">W okienku akcji kliknij opcję Zlecenie produkcyjne.</span><span class="sxs-lookup"><span data-stu-id="caf69-139">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="caf69-140">Kliknij opcję Marszruta.</span><span class="sxs-lookup"><span data-stu-id="caf69-140">Click Route.</span></span>
+    * <span data-ttu-id="caf69-141">Otwórz stronę Marszruta, aby sprawdzić poprawność danych marszruty produkcji, które zostały skopiowane z domyślnych danych podczas tworzenia zlecenia.</span><span class="sxs-lookup"><span data-stu-id="caf69-141">Open the Route page to validate the data of the production route that was copied from the default data when the order was created.</span></span> <span data-ttu-id="caf69-142">W tej procedurze należy zaktualizować ilość w jednej operacji w marszrucie produkcji.</span><span class="sxs-lookup"><span data-stu-id="caf69-142">In this procedure, you need to update the quantity for one of the operations in the production route.</span></span>  
+3. <span data-ttu-id="caf69-143">Na liście znajdź i zaznacz odpowiedni rekord.</span><span class="sxs-lookup"><span data-stu-id="caf69-143">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="caf69-144">Kliknij przycisk Edytuj.</span><span class="sxs-lookup"><span data-stu-id="caf69-144">Click Edit.</span></span>
+5. <span data-ttu-id="caf69-145">W polu Ilość z procesu wpisz liczbę.</span><span class="sxs-lookup"><span data-stu-id="caf69-145">In the Process qty. field, enter a number.</span></span>
+    * <span data-ttu-id="caf69-146">Zmiana czasu procesu wpływa na szacowane zużycie w marszrucie i koszt zlecenia produkcyjnego.</span><span class="sxs-lookup"><span data-stu-id="caf69-146">Changing the process time affects the estimated route consumption and the cost of the production order.</span></span>  
+6. <span data-ttu-id="caf69-147">Kliknij przycisk Zapisz.</span><span class="sxs-lookup"><span data-stu-id="caf69-147">Click Save.</span></span>
+7. <span data-ttu-id="caf69-148">Zamknij stronę.</span><span class="sxs-lookup"><span data-stu-id="caf69-148">Close the page.</span></span>
 
 
 

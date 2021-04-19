@@ -2,11 +2,9 @@
 title: Omówienie zarządzania magazynem
 description: Zarządzanie magazynem umożliwia monitorowanie i automatyzację procesów magazynowych.
 author: ShylaThompson
-manager: tfehr
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSWorkPool
 audience: Application User
@@ -15,60 +13,60 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7d48ecd834c226fb40bede7519a476bd4c5f0ad
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e0330cb8c11252a67ad92fd028707e4135b510c9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248578"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837328"
 ---
-# <a name="warehouse-management-overview"></a><span data-ttu-id="c3507-103">Omówienie zarządzania magazynem</span><span class="sxs-lookup"><span data-stu-id="c3507-103">Warehouse management overview</span></span>
+# <a name="warehouse-management-overview"></a><span data-ttu-id="8c07c-103">Omówienie zarządzania magazynem</span><span class="sxs-lookup"><span data-stu-id="8c07c-103">Warehouse management overview</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c3507-104">Moduł zarządzania magazynem umożliwia zarządzanie procesami magazynowymi w firmach produkcyjnych, dystrybucyjnych i w sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="c3507-104">The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="c3507-105">Ten moduł oferuje różnorodne funkcje w celu obsługi magazynu na optymalnym poziomie w dowolnej chwili.</span><span class="sxs-lookup"><span data-stu-id="c3507-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="c3507-106">Zarządzanie magazynem jest w pełni zintegrowane z innymi procesami biznesowymi, takimi jak transport, produkcja, kontrola jakości, zakupy, przenoszenie, sprzedaż i zwroty.</span><span class="sxs-lookup"><span data-stu-id="c3507-106">Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
+<span data-ttu-id="8c07c-104">Moduł zarządzania magazynem umożliwia zarządzanie procesami magazynowymi w firmach produkcyjnych, dystrybucyjnych i w sprzedaży detalicznej.</span><span class="sxs-lookup"><span data-stu-id="8c07c-104">The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies.</span></span> <span data-ttu-id="8c07c-105">Ten moduł oferuje różnorodne funkcje w celu obsługi magazynu na optymalnym poziomie w dowolnej chwili.</span><span class="sxs-lookup"><span data-stu-id="8c07c-105">This module has a wide range of features to support the warehouse facility at an optimal level, at any time.</span></span> <span data-ttu-id="8c07c-106">Zarządzanie magazynem jest w pełni zintegrowane z innymi procesami biznesowymi, takimi jak transport, produkcja, kontrola jakości, zakupy, przenoszenie, sprzedaż i zwroty.</span><span class="sxs-lookup"><span data-stu-id="8c07c-106">Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="c3507-107">Rozpoczynanie pracy</span><span class="sxs-lookup"><span data-stu-id="c3507-107">Get started</span></span>
-<span data-ttu-id="c3507-108">Aby rozpocząć pracę z modułem Zarządzanie magazynem należy dokończyć konfigurację ogólnych parametrów magazynu w celu obsługi procesów biznesowych Twojej firmy.</span><span class="sxs-lookup"><span data-stu-id="c3507-108">To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.</span></span>
+## <a name="get-started"></a><span data-ttu-id="8c07c-107">Rozpoczynanie pracy</span><span class="sxs-lookup"><span data-stu-id="8c07c-107">Get started</span></span>
+<span data-ttu-id="8c07c-108">Aby rozpocząć pracę z modułem Zarządzanie magazynem należy dokończyć konfigurację ogólnych parametrów magazynu w celu obsługi procesów biznesowych Twojej firmy.</span><span class="sxs-lookup"><span data-stu-id="8c07c-108">To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.</span></span>
 
-- <span data-ttu-id="c3507-109">Przejdź do strony **Parametry zarządzania magazynem** w obszarze **Zarządzanie magazynem** > **Konfiguracja**, aby skonfigurować ogólne parametry magazynu.</span><span class="sxs-lookup"><span data-stu-id="c3507-109">Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.</span></span>
+- <span data-ttu-id="8c07c-109">Przejdź do strony **Parametry zarządzania magazynem** w obszarze **Zarządzanie magazynem** > **Konfiguracja**, aby skonfigurować ogólne parametry magazynu.</span><span class="sxs-lookup"><span data-stu-id="8c07c-109">Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.</span></span>
 
-<span data-ttu-id="c3507-110">Należy skonfigurować składniki dla przychodzących i wychodzących przepływów pracy procesów magazynowych zgodnie z wymaganiami biznesowymi.</span><span class="sxs-lookup"><span data-stu-id="c3507-110">You must configure components for inbound and outbound warehouse process workflows according to business requirements.</span></span> <span data-ttu-id="c3507-111">Najważniejsze składniki, które należy skonfigurować to szablony grupy czynności, szablony pracy, pule pracy i dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="c3507-111">The most important components that you must configure are wave templates, work templates, work pools, and location directives.</span></span>
+<span data-ttu-id="8c07c-110">Należy skonfigurować składniki dla przychodzących i wychodzących przepływów pracy procesów magazynowych zgodnie z wymaganiami biznesowymi.</span><span class="sxs-lookup"><span data-stu-id="8c07c-110">You must configure components for inbound and outbound warehouse process workflows according to business requirements.</span></span> <span data-ttu-id="8c07c-111">Najważniejsze składniki, które należy skonfigurować to szablony grupy czynności, szablony pracy, pule pracy i dyrektywy lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="8c07c-111">The most important components that you must configure are wave templates, work templates, work pools, and location directives.</span></span>
 
-- [<span data-ttu-id="c3507-112">Omówienie konfiguracji magazynu</span><span class="sxs-lookup"><span data-stu-id="c3507-112">Warehouse configuration overview</span></span>](warehouse-configuration.md)
-- [<span data-ttu-id="c3507-113">Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</span><span class="sxs-lookup"><span data-stu-id="c3507-113">Control warehouse work by using work templates and location directives</span></span>](control-warehouse-location-directives.md)
-- [<span data-ttu-id="c3507-114">Konfigurowanie urządzeń przenośnych do pracy magazynowej</span><span class="sxs-lookup"><span data-stu-id="c3507-114">Set up mobile devices for warehouse work</span></span>](configure-mobile-devices-warehouse.md)
-- [<span data-ttu-id="c3507-115">Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="c3507-115">Set up a location directive for purchase order put-away</span></span>](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
-- [<span data-ttu-id="c3507-116">Konfigurowanie szablonu pracy dla zamówień zakupu</span><span class="sxs-lookup"><span data-stu-id="c3507-116">Set up a work template for purchase orders</span></span>](./tasks/set-up-work-template-purchase-orders.md)
+- [<span data-ttu-id="8c07c-112">Omówienie konfiguracji magazynu</span><span class="sxs-lookup"><span data-stu-id="8c07c-112">Warehouse configuration overview</span></span>](warehouse-configuration.md)
+- [<span data-ttu-id="8c07c-113">Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji</span><span class="sxs-lookup"><span data-stu-id="8c07c-113">Control warehouse work by using work templates and location directives</span></span>](control-warehouse-location-directives.md)
+- [<span data-ttu-id="8c07c-114">Konfigurowanie urządzeń przenośnych do pracy magazynowej</span><span class="sxs-lookup"><span data-stu-id="8c07c-114">Set up mobile devices for warehouse work</span></span>](configure-mobile-devices-warehouse.md)
+- [<span data-ttu-id="8c07c-115">Konfigurowanie dyrektywy lokalizacji dla odłożenia zamówienia zakupu</span><span class="sxs-lookup"><span data-stu-id="8c07c-115">Set up a location directive for purchase order put-away</span></span>](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+- [<span data-ttu-id="8c07c-116">Konfigurowanie szablonu pracy dla zamówień zakupu</span><span class="sxs-lookup"><span data-stu-id="8c07c-116">Set up a work template for purchase orders</span></span>](./tasks/set-up-work-template-purchase-orders.md)
 
-## <a name="warehouse-management-processes"></a><span data-ttu-id="c3507-117">Procesy zarządzania magazynem</span><span class="sxs-lookup"><span data-stu-id="c3507-117">Warehouse management processes</span></span>
-- <span data-ttu-id="c3507-118">Zintegrowana obsługa dokumentów źródłowych dla zamówień sprzedaży, zwrotów, zamówień przeniesienia, zamówień produkcji i kanban</span><span class="sxs-lookup"><span data-stu-id="c3507-118">Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban</span></span>  
-- <span data-ttu-id="c3507-119">Elastyczna obsługa procesów roboczych materiałów przychodzących i wychodzących na podstawie kwerend</span><span class="sxs-lookup"><span data-stu-id="c3507-119">Flexible, inbound and outbound material workflow support based on queries</span></span>
-- <span data-ttu-id="c3507-120">Pełna integracja z ofertami produkcji i transportu</span><span class="sxs-lookup"><span data-stu-id="c3507-120">Full integration with the Manufacturing and Transportation offerings</span></span>
-- <span data-ttu-id="c3507-121">Pełna kontrola limitów składowania w lokalizacji i danych wolumetrycznych lokalizacji</span><span class="sxs-lookup"><span data-stu-id="c3507-121">Full control of location stocking limits and location volumetrics</span></span>
-- <span data-ttu-id="c3507-122">Właściwości zapasów kontrolowane przez stan zapasów</span><span class="sxs-lookup"><span data-stu-id="c3507-122">Inventory properties controlled by inventory status</span></span>
-- <span data-ttu-id="c3507-123">Pełna obsługa partii i pozycji seryjnych</span><span class="sxs-lookup"><span data-stu-id="c3507-123">Full batch and serial item support</span></span>
-- <span data-ttu-id="c3507-124">Różne funkcje odbioru towarów</span><span class="sxs-lookup"><span data-stu-id="c3507-124">Various item receiving capabilities</span></span>
-- <span data-ttu-id="c3507-125">Wiele strategii pobierania</span><span class="sxs-lookup"><span data-stu-id="c3507-125">Multiple picking strategies</span></span>
-- <span data-ttu-id="c3507-126">Obsługa nowej generacji skanerów kodów kreskowych od razu po rozpoczęciu pracy</span><span class="sxs-lookup"><span data-stu-id="c3507-126">Out-of-the-box support for the next generation of barcode scanners</span></span>
-- <span data-ttu-id="c3507-127">Typy palet/kontenerów dla procesów magazynowych</span><span class="sxs-lookup"><span data-stu-id="c3507-127">Pallet/container types for warehouse processes</span></span>
-- <span data-ttu-id="c3507-128">Zaawansowane funkcje liczenia</span><span class="sxs-lookup"><span data-stu-id="c3507-128">Advanced counting capabilities</span></span>
-- <span data-ttu-id="c3507-129">Drukowanie etykiet i marszruta etykiet z obsługą języka Zebra ZPL</span><span class="sxs-lookup"><span data-stu-id="c3507-129">Label printing and label routing with Zebra ZPL support</span></span>
-- <span data-ttu-id="c3507-130">Integracja analizy biznesowej z usługą Power BI</span><span class="sxs-lookup"><span data-stu-id="c3507-130">Business intelligence integration into Power BI</span></span>
-- <span data-ttu-id="c3507-131">Ręczne i automatyczne przesuwanie zapasów</span><span class="sxs-lookup"><span data-stu-id="c3507-131">Manual and automatic movement of inventory</span></span>
-- <span data-ttu-id="c3507-132">W pełni zintegrowana kontrola jakości (QMS)</span><span class="sxs-lookup"><span data-stu-id="c3507-132">Fully-integrated quality control (QMS)</span></span>
-- <span data-ttu-id="c3507-133">Pełne śledzenie obsługi materiałów przez pracowników</span><span class="sxs-lookup"><span data-stu-id="c3507-133">Full traceability of workers' material handling</span></span>
-- <span data-ttu-id="c3507-134">Przetwarzanie wychodzących grup czynności</span><span class="sxs-lookup"><span data-stu-id="c3507-134">Outbound wave processing</span></span>
-- <span data-ttu-id="c3507-135">Obsługa ręcznego pakowania i automatycznej konteneryzacji</span><span class="sxs-lookup"><span data-stu-id="c3507-135">Manual packing and automatic containerization support</span></span>
-- <span data-ttu-id="c3507-136">Wybór grupy</span><span class="sxs-lookup"><span data-stu-id="c3507-136">Cluster picking</span></span>
-- <span data-ttu-id="c3507-137">Prosty przeładunek kompletacyjny</span><span class="sxs-lookup"><span data-stu-id="c3507-137">Simple cross docking</span></span>
+## <a name="warehouse-management-processes"></a><span data-ttu-id="8c07c-117">Procesy zarządzania magazynem</span><span class="sxs-lookup"><span data-stu-id="8c07c-117">Warehouse management processes</span></span>
+- <span data-ttu-id="8c07c-118">Zintegrowana obsługa dokumentów źródłowych dla zamówień sprzedaży, zwrotów, zamówień przeniesienia, zamówień produkcji i kanban</span><span class="sxs-lookup"><span data-stu-id="8c07c-118">Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban</span></span>  
+- <span data-ttu-id="8c07c-119">Elastyczna obsługa procesów roboczych materiałów przychodzących i wychodzących na podstawie kwerend</span><span class="sxs-lookup"><span data-stu-id="8c07c-119">Flexible, inbound and outbound material workflow support based on queries</span></span>
+- <span data-ttu-id="8c07c-120">Pełna integracja z ofertami produkcji i transportu</span><span class="sxs-lookup"><span data-stu-id="8c07c-120">Full integration with the Manufacturing and Transportation offerings</span></span>
+- <span data-ttu-id="8c07c-121">Pełna kontrola limitów składowania w lokalizacji i danych wolumetrycznych lokalizacji</span><span class="sxs-lookup"><span data-stu-id="8c07c-121">Full control of location stocking limits and location volumetrics</span></span>
+- <span data-ttu-id="8c07c-122">Właściwości zapasów kontrolowane przez stan zapasów</span><span class="sxs-lookup"><span data-stu-id="8c07c-122">Inventory properties controlled by inventory status</span></span>
+- <span data-ttu-id="8c07c-123">Pełna obsługa partii i pozycji seryjnych</span><span class="sxs-lookup"><span data-stu-id="8c07c-123">Full batch and serial item support</span></span>
+- <span data-ttu-id="8c07c-124">Różne funkcje odbioru towarów</span><span class="sxs-lookup"><span data-stu-id="8c07c-124">Various item receiving capabilities</span></span>
+- <span data-ttu-id="8c07c-125">Wiele strategii pobierania</span><span class="sxs-lookup"><span data-stu-id="8c07c-125">Multiple picking strategies</span></span>
+- <span data-ttu-id="8c07c-126">Obsługa nowej generacji skanerów kodów kreskowych od razu po rozpoczęciu pracy</span><span class="sxs-lookup"><span data-stu-id="8c07c-126">Out-of-the-box support for the next generation of barcode scanners</span></span>
+- <span data-ttu-id="8c07c-127">Typy palet/kontenerów dla procesów magazynowych</span><span class="sxs-lookup"><span data-stu-id="8c07c-127">Pallet/container types for warehouse processes</span></span>
+- <span data-ttu-id="8c07c-128">Zaawansowane funkcje liczenia</span><span class="sxs-lookup"><span data-stu-id="8c07c-128">Advanced counting capabilities</span></span>
+- <span data-ttu-id="8c07c-129">Drukowanie etykiet i marszruta etykiet z obsługą języka Zebra ZPL</span><span class="sxs-lookup"><span data-stu-id="8c07c-129">Label printing and label routing with Zebra ZPL support</span></span>
+- <span data-ttu-id="8c07c-130">Integracja analizy biznesowej z usługą Power BI</span><span class="sxs-lookup"><span data-stu-id="8c07c-130">Business intelligence integration into Power BI</span></span>
+- <span data-ttu-id="8c07c-131">Ręczne i automatyczne przesuwanie zapasów</span><span class="sxs-lookup"><span data-stu-id="8c07c-131">Manual and automatic movement of inventory</span></span>
+- <span data-ttu-id="8c07c-132">W pełni zintegrowana kontrola jakości (QMS)</span><span class="sxs-lookup"><span data-stu-id="8c07c-132">Fully-integrated quality control (QMS)</span></span>
+- <span data-ttu-id="8c07c-133">Pełne śledzenie obsługi materiałów przez pracowników</span><span class="sxs-lookup"><span data-stu-id="8c07c-133">Full traceability of workers' material handling</span></span>
+- <span data-ttu-id="8c07c-134">Przetwarzanie wychodzących grup czynności</span><span class="sxs-lookup"><span data-stu-id="8c07c-134">Outbound wave processing</span></span>
+- <span data-ttu-id="8c07c-135">Obsługa ręcznego pakowania i automatycznej konteneryzacji</span><span class="sxs-lookup"><span data-stu-id="8c07c-135">Manual packing and automatic containerization support</span></span>
+- <span data-ttu-id="8c07c-136">Wybór grupy</span><span class="sxs-lookup"><span data-stu-id="8c07c-136">Cluster picking</span></span>
+- <span data-ttu-id="8c07c-137">Prosty przeładunek kompletacyjny</span><span class="sxs-lookup"><span data-stu-id="8c07c-137">Simple cross docking</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c3507-138">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="c3507-138">Additional resources</span></span>
-### <a name="whats-new-and-in-development"></a><span data-ttu-id="c3507-139">Nowe i opracowywane funkcje</span><span class="sxs-lookup"><span data-stu-id="c3507-139">What's new and in development</span></span>
-<span data-ttu-id="c3507-140">Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane.</span><span class="sxs-lookup"><span data-stu-id="c3507-140">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="8c07c-138">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="8c07c-138">Additional resources</span></span>
+### <a name="whats-new-and-in-development"></a><span data-ttu-id="8c07c-139">Nowe i opracowywane funkcje</span><span class="sxs-lookup"><span data-stu-id="8c07c-139">What's new and in development</span></span>
+<span data-ttu-id="8c07c-140">Przejdź na stronę [Plan rozwoju usługi Microsoft Dynamics 365](https://roadmap.dynamics.com/), aby zobaczyć, jakie nowe funkcje zostały wydane, a jakie są jeszcze opracowywane.</span><span class="sxs-lookup"><span data-stu-id="8c07c-140">Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.</span></span>
 
-### <a name="blogs"></a><span data-ttu-id="c3507-141">Blogi</span><span class="sxs-lookup"><span data-stu-id="c3507-141">Blogs</span></span>
-<span data-ttu-id="c3507-142">Opinie, wiadomości i inne informacje dotyczące modułu Zarządzanie magazynem możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).</span><span class="sxs-lookup"><span data-stu-id="c3507-142">You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).</span></span>
+### <a name="blogs"></a><span data-ttu-id="8c07c-141">Blogi</span><span class="sxs-lookup"><span data-stu-id="8c07c-141">Blogs</span></span>
+<span data-ttu-id="8c07c-142">Opinie, wiadomości i inne informacje dotyczące modułu Zarządzanie magazynem możesz znaleźć w [blogu usługi Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog).</span><span class="sxs-lookup"><span data-stu-id="8c07c-142">You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).</span></span>
 
 
  
