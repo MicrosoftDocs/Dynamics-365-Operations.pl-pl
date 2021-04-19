@@ -2,11 +2,9 @@
 title: Moduł płatności
 description: W tym temacie omówiono moduł płatności i wyjaśniono, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d9c0956e30d413f5ae695cf75b06fb58711b2944
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222506"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804486"
 ---
 # <a name="payment-module"></a>Moduł płatności
 

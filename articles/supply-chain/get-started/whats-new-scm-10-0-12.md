@@ -2,11 +2,9 @@
 title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.12 (sierpień 2020 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258978"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832209"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.12 (sierpień 2020 r.)
 
@@ -47,9 +45,9 @@ To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z 
 
 - [Podstawowe informacje dotyczące analizy IoT](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Aby uzyskać więcej informacji, zobacz [Analiza Internetu rzeczy (IoT) — strona główna](../iot/iot-intelligence-home-page.md).
 
-- [Numer identyfikacyjny odbieranający ulepszenia dla aplikacji magazynu (część dalsza)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Aby uzyskać więcej informacji, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji magazynowej](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Numer identyfikacyjny odbieranający ulepszenia dla aplikacji magazynu (część dalsza)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Aby uzyskać więcej informacji, zobacz [Odbieranie numerów identyfikacyjnych za pomocą aplikacji Warehouse Management](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Wdrożenie zbiorowe mobilnej aplikacji Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie przeglądu aplikacji magazynowych](../warehousing/install-configure-warehousing-app.md).
+- [Wdrożenie zbiorowe mobilnej aplikacji Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz temat [Instalowanie i łączenie aplikacji Warehouse Management](../warehousing/install-configure-warehouse-management-app.md).
 
 - [Maksymalny czas wykonywania zadania oczyszczania wpisów dostępnych zapasów w zarządzaniu magazynem](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Aby uzyskać więcej informacji, zobacz [Zadanie oczyszczania wpisów towarów na stanie w Zarządzaniu magazynem](../warehousing/onhand-cleanup.md).
 

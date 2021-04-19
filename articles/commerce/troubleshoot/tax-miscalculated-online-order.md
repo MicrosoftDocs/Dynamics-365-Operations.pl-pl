@@ -2,7 +2,6 @@
 title: Podatki w zamówieniach online są niepoprawnie obliczone
 description: Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą pomóc w nieprawidłowym obliczniu podatków od zamówień online lub gdy grupa podatków w wierszu sprzedaży nie jest poprawnie ustawiona.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 421df7545e285950ef8a3c4b753c8c6dc5f26422
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 7f71add679e1d24f80db8ce3990058b591128ec1
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585479"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801418"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Podatki w zamówieniach online są niepoprawnie obliczone
 

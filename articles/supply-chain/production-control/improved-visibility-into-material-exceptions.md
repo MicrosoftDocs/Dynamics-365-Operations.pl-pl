@@ -2,13 +2,11 @@
 title: Uzyskiwanie wglądu w wyjątki dotyczące materiałów
 description: W tym temacie opisano, jak uzyskać lepszy wgląd w wyjątki dotyczące materiałów dla zleceń produkcyjnych i zamówień partii.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246172"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831993"
 ---
 # <a name="visibility-into-material-exceptions"></a>Uzyskiwanie wglądu w wyjątki dotyczące materiałów
 
@@ -59,7 +57,11 @@ Po wybraniu kafelka zostanie otwarta strona **Zwolnij do magazynu**. Ta strona z
 
 Po zwolnieniu wiersza BOM lub wiersza formuły jest on dodawany do nowej grupy czynności produkcji lub istniejącej otwartej grupy czynności, w zależności od konfiguracji szablonu grupy czynności produkcji. Za pomocą konfiguracji szablonu grupy czynności można także skonfigurować grupę czynności tak, aby była automatycznie przetwarzana po zwolnieniu wiersza BOM lub wiersza formuły. Podczas przetwarzania grupy czynności jest tworzona praca magazynowa dla pobrania surowców. Jeżeli szablon grupy czynności jest skonfigurowany tak, aby grupy czynności nie były przetwarzane w momencie zwolnienia, grupa czynności pozostaje w stanie nieprzetworzonym. Kafelek **Nieprzetworzone grupy czynności wymagające uwagi** zawiera liczbę wierszy BOM i wierszy formuły które zostały zwolnione do magazynu w nieprzetworzonych grupach czynności, i mające taką samą lub wcześniejszą datę surowca jako data obszaru roboczego. Wiersze muszą także zostać wykorzystane przez zasób operacji stosowany do filtra obszaru roboczego.
 
-Po wybraniu kafelka otwierana jest strona **Wszystkie grupy czynności produkcji**. Ta strona jest filtrowana przez liczbę otwartych grup czynności zawierających wiersze grup czynności ze zwolnionych wierszy BOM i wierszy formuły spełniających kryteria kafelka. Na stronie **Wszystkie grupy czynności produkcji** można ręcznie przetworzyć grupę czynności.
+Po wybraniu kafelka otwierana jest strona **Wszystkie grupy czynności produkcji**. Ta strona jest filtrowana przez liczbę otwartych grup czynności zawierających wiersze grup czynności ze zwolnionych wierszy BOM i wierszy formuły spełniających kryteria kafelka.
+
+### <a name="manually-maintain-production-waves"></a>Ręczna obsługa wszystkich procesów produkcyjnych
+
+Na stronie **Wszystkie grupy czynności produkcji** można używać przycisków na karcie **Grupy czynności** w okienku akcji, aby ręcznie **Przetwarzać** i **Zwalniać** grupy czynności. Możesz również użyć opcji **Obsługa produkcji**, aby wyświetlić i obsługiwać dane **Puli BOM produkcji**, które są używane do obsługi procesu machania.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Otwarta praca magazynowa wymagająca uwagi
 

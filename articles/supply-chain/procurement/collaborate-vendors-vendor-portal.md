@@ -1,12 +1,10 @@
 ---
 title: Współpraca z dostawcami za pomocą portalu dostawców
 description: W tym temacie wyjaśniono, jak pracownicy działu zakupów mogą używać portalu dostawców do współpracy z dostawcami zewnętrznymi w trakcie procesu potwierdzenia zamówień zakupu. Informacje te dotyczą tylko wersji systemu Dynamics AX z lutego i maja 2016 roku.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9334f5a822d42daf8abae6bcc03a60e93ab33976
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9a9500efb2a2bab19c3ee1c81455adfda8bef03f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206974"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822498"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 

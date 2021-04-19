@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów z uaktualnieniem i migracją do zaawansowanego zarządzania magazynem
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas uaktualnienia i migracji do zaawansowanego zarządzania magazynem.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208094"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826402"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Rozwiązywanie problemów z uaktualnieniem i migracją do zaawansowanego zarządzania magazynem
 
@@ -34,11 +32,11 @@ W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić 
 
 ### <a name="issue-description"></a>Opis problemu
 
-Ten komunikat o błędzie jest wyświetlany w aplikacji magazynu, ponieważ certyfikaty z podpisem własnym nie są zaufane w systemie Android 8 lub wyższym w środowiskach lokalnych.
+Ten komunikat o błędzie jest wyświetlany w aplikacji Warehouse Management, ponieważ certyfikaty z podpisem własnym nie są zaufane w systemie Android 8 lub wyższym w środowiskach lokalnych.
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
-Należy skorzystać z zewnętrznego (publicznego) urzędu certyfikującego (CA). Poprawka dotycząca tego problemu jest dostępna w wersji 1.9.0.0 aplikacji magazynu. Aby uzyskać więcej informacji o tym problemie i sposobach jego rozwiązywania, zapoznaj się z tematami [Rozwiązywanie problemów z połączeniem aplikacji magazynowej](troubleshoot-warehouse-app-connection.md).
+Należy skorzystać z zewnętrznego (publicznego) urzędu certyfikującego (CA). Poprawka dotycząca tego problemu jest dostępna w wersji 1.9.0.0 aplikacji magazynu. Aby uzyskać więcej informacji o tym problemie i sposobach jego rozwiązywania, zapoznaj się z tematami [Rozwiązywanie problemów z połączeniem z aplikacją mobilną Warehouse Management](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Jaki jest zatwierdzony proces przenoszenia się z magazynu podstawowego do magazynu zaawansowanego?
 

@@ -2,11 +2,9 @@
 title: Przekaż pliki inne niż obrazy i wideo
 description: W tym temacie opisano sposób przekazywania plików binarnych innych niż obrazy i wideo w kreatorze witryn rozwiązania Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c065aa961cf5c2d6770ae47c63a75953e6d38e00
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 380bcccd1053cbcc276e964ce97f16d1d39ea75a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222544"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799260"
 ---
 # <a name="upload-files-other-than-images-and-videos"></a>Przekazanie plików innych niż obrazy i wideo
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób przekazywania plików innych niż obrazy i wideo w kreatorze witryn rozwiązania Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Biblioteka medialna kreatora witryn Commerce obsługuje przekazywanie składników binarnych innych niż obrazy i wideo. Może to być na przykład przekazanie plików programów Microsoft Excel, Microsoft Word, Microsoft PowerPoint lub PDF.
 

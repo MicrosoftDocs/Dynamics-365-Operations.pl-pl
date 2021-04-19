@@ -2,7 +2,6 @@
 title: Transakcje z nadwyżką/niedoborem
 description: Ten temat zawiera informacje, które pomogą w skonfigurowaniu szczegółów zasad dotyczących transakcji nadwyżki/niedoboru, tak aby system mógł określić, jak zarządzać nadmiernym i niepełnym przetwarzaniem towarów w momencie ich przyjęcia.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500989"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833744"
 ---
 # <a name="overunder-transactions"></a>Transakcje z nadwyżką/niedoborem
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Gdy zamówienia w transporcie są przetwarzane, system oczekuje, że ilość towaru, która jest odbierana w docelowym magazynie do zużycia, będzie zgodna z ilością określoną w wierszach zamówienia zakupu, które są skojarzone z podróżą. Jednak ponieważ dokładna ilość w wierszach zamówienia zakupu nie zawsze jest odebrana w magazynie, moduł **Koszt z wyładunkiem** definiuje zestaw reguł, które są używane do obsługi nadbierania i niedobierania towarów. Te reguły są szczególnie ważne, ponieważ oryginalne zamówienie zakupu zostało zafakturowane i nie można go już modyfikować. Konfigurując szczegóły zasad transakcji powyżej / poniżej, umożliwiasz systemowi określenie, w jaki sposób zarządzać nadmiernym i niepełnym przetwarzaniem towarów w momencie ich przyjęcia. Można także ręcznie zarządzać zapasami i ich zapasami, korzystając ze strony **Transakcje nadwyżki/niedoboru**.
 

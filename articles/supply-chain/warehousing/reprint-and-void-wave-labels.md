@@ -2,10 +2,8 @@
 title: ponowne drukowanie i unieważnienie etykiet grup czynności
 description: W tym temacie wyjaśniono sposób unieważnienia i ponownego drukowania istniejących etykiet grupy czynności.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228376"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817372"
 ---
 # <a name="reprint-and-void-wave-labels"></a>ponowne drukowanie i unieważnienie etykiet grup czynności
 
@@ -218,5 +216,8 @@ Wyjątki pracy kontrolują zachowanie krótkiego pobrania. Wykonaj poniższe czy
 1. Umożliwia wybranie kodu wyjątku pracy utworzonego dla tego scenariusza.
 1. Jeśli wybrano poprawny wyjątek, pole wyboru **Unieważnij i ponownie drukuj** powinno być dostępne. Zaznacz to pole i potwierdź. Po potwierdzeniu, sekwencja rzutowania etykiet określona przez pole **Identyfikatora kompilacji etykiety** jest obliczana ponownie na podstawie zmienionej ilości w wierszu pracy. Następnie zostanie ponownie wydrukowana na określonej drukarce.
 
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Drukowanie etykiety grupy czynności](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

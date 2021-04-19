@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów z optymalizacją planowania
 description: W tym temacie opisano sposób rozwiązywania problemów, które mogą wystąpić podczas pracy z optymalizacją planowania.
 author: ChristianRytt
-manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 39583c244f09f54551d560e8b1dd9f1a5a1590cc
-ms.sourcegitcommit: 72f70c81176e86cda714a4712525f73514c895b7
+ms.openlocfilehash: 2100235fadabe6af87849aab7d9ec55d85ea66fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "5457336"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812890"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Rozwiązywanie problemów z optymalizacją planowania 
 

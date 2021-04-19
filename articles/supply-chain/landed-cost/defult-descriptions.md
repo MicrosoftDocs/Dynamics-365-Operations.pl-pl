@@ -2,7 +2,6 @@
 title: Domyślne opisy księgi głównej
 description: Opisów domyślnych można użyć do zaktualizowania pola Opis w księgowaniach załączników do księgi głównej.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 47c5c9e71dba7a0cb7c798c167208faebeb5af6c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: d5a38af57d614ae2c93b0af74ec4a1c085519d46
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500387"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841910"
 ---
 # <a name="default-descriptions-for-the-general-ledger"></a>Domyślne opisy księgi głównej
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Opisów domyślnych można użyć do zaktualizowania pola **Opis** w księgowaniach załączników do księgi głównej. Ta funkcjonalność została ulepszona tak, aby działała z kosztem dostawy.
 
