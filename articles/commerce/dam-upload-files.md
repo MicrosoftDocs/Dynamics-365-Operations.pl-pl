@@ -2,11 +2,9 @@
 title: Przekaż pliki inne niż obrazy i wideo
 description: W tym temacie opisano sposób przekazywania plików binarnych innych niż obrazy i wideo w kreatorze witryn rozwiązania Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,86 +15,84 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c065aa961cf5c2d6770ae47c63a75953e6d38e00
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 380bcccd1053cbcc276e964ce97f16d1d39ea75a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222544"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799260"
 ---
-# <a name="upload-files-other-than-images-and-videos"></a><span data-ttu-id="c1262-103">Przekazanie plików innych niż obrazy i wideo</span><span class="sxs-lookup"><span data-stu-id="c1262-103">Upload files other than images and videos</span></span>
+# <a name="upload-files-other-than-images-and-videos"></a><span data-ttu-id="1e398-103">Przekazanie plików innych niż obrazy i wideo</span><span class="sxs-lookup"><span data-stu-id="1e398-103">Upload files other than images and videos</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="c1262-104">W tym temacie opisano sposób przekazywania plików innych niż obrazy i wideo w kreatorze witryn rozwiązania Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="c1262-104">This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
+<span data-ttu-id="1e398-104">W tym temacie opisano sposób przekazywania plików innych niż obrazy i wideo w kreatorze witryn rozwiązania Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="1e398-104">This topic describes how to upload files other than images and videos in Microsoft Dynamics 365 Commerce site builder.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="c1262-105">Omówienie</span><span class="sxs-lookup"><span data-stu-id="c1262-105">Overview</span></span>
+<span data-ttu-id="1e398-105">Biblioteka medialna kreatora witryn Commerce obsługuje przekazywanie składników binarnych innych niż obrazy i wideo.</span><span class="sxs-lookup"><span data-stu-id="1e398-105">The Commerce site builder Media Library supports the uploading of binary assets other than images or videos.</span></span> <span data-ttu-id="1e398-106">Może to być na przykład przekazanie plików programów Microsoft Excel, Microsoft Word, Microsoft PowerPoint lub PDF.</span><span class="sxs-lookup"><span data-stu-id="1e398-106">For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.</span></span>
 
-<span data-ttu-id="c1262-106">Biblioteka medialna kreatora witryn Commerce obsługuje przekazywanie składników binarnych innych niż obrazy i wideo.</span><span class="sxs-lookup"><span data-stu-id="c1262-106">The Commerce site builder Media Library supports the uploading of binary assets other than images or videos.</span></span> <span data-ttu-id="c1262-107">Może to być na przykład przekazanie plików programów Microsoft Excel, Microsoft Word, Microsoft PowerPoint lub PDF.</span><span class="sxs-lookup"><span data-stu-id="c1262-107">For example, you might want to upload Microsoft Excel, Microsoft Word, Microsoft PowerPoint, or PDF files.</span></span>
+<span data-ttu-id="1e398-107">Następujące typy dokumentów są obsługiwane:</span><span class="sxs-lookup"><span data-stu-id="1e398-107">The following document types are supported:</span></span>
+- <span data-ttu-id="1e398-108">7Z</span><span class="sxs-lookup"><span data-stu-id="1e398-108">7Z</span></span>
+- <span data-ttu-id="1e398-109">AVI</span><span class="sxs-lookup"><span data-stu-id="1e398-109">AVI</span></span>
+- <span data-ttu-id="1e398-110">CS</span><span class="sxs-lookup"><span data-stu-id="1e398-110">CS</span></span>
+- <span data-ttu-id="1e398-111">CSS</span><span class="sxs-lookup"><span data-stu-id="1e398-111">CSS</span></span>
+- <span data-ttu-id="1e398-112">DOC</span><span class="sxs-lookup"><span data-stu-id="1e398-112">DOC</span></span>
+- <span data-ttu-id="1e398-113">DOCX</span><span class="sxs-lookup"><span data-stu-id="1e398-113">DOCX</span></span>
+- <span data-ttu-id="1e398-114">EPUB</span><span class="sxs-lookup"><span data-stu-id="1e398-114">EPUB</span></span>
+- <span data-ttu-id="1e398-115">GIF</span><span class="sxs-lookup"><span data-stu-id="1e398-115">GIF</span></span>
+- <span data-ttu-id="1e398-116">INDD</span><span class="sxs-lookup"><span data-stu-id="1e398-116">INDD</span></span>
+- <span data-ttu-id="1e398-117">JAR</span><span class="sxs-lookup"><span data-stu-id="1e398-117">JAR</span></span>
+- <span data-ttu-id="1e398-118">JPG</span><span class="sxs-lookup"><span data-stu-id="1e398-118">JPG</span></span>
+- <span data-ttu-id="1e398-119">JPEG</span><span class="sxs-lookup"><span data-stu-id="1e398-119">JPEG</span></span>
+- <span data-ttu-id="1e398-120">JS</span><span class="sxs-lookup"><span data-stu-id="1e398-120">JS</span></span>
+- <span data-ttu-id="1e398-121">MP3</span><span class="sxs-lookup"><span data-stu-id="1e398-121">MP3</span></span>
+- <span data-ttu-id="1e398-122">MP4</span><span class="sxs-lookup"><span data-stu-id="1e398-122">MP4</span></span>
+- <span data-ttu-id="1e398-123">MPEG</span><span class="sxs-lookup"><span data-stu-id="1e398-123">MPEG</span></span>
+- <span data-ttu-id="1e398-124">MPG</span><span class="sxs-lookup"><span data-stu-id="1e398-124">MPG</span></span>
+- <span data-ttu-id="1e398-125">ODP</span><span class="sxs-lookup"><span data-stu-id="1e398-125">ODP</span></span>
+- <span data-ttu-id="1e398-126">ODS</span><span class="sxs-lookup"><span data-stu-id="1e398-126">ODS</span></span>
+- <span data-ttu-id="1e398-127">ODT</span><span class="sxs-lookup"><span data-stu-id="1e398-127">ODT</span></span>
+- <span data-ttu-id="1e398-128">PDF</span><span class="sxs-lookup"><span data-stu-id="1e398-128">PDF</span></span>
+- <span data-ttu-id="1e398-129">PNG</span><span class="sxs-lookup"><span data-stu-id="1e398-129">PNG</span></span>
+- <span data-ttu-id="1e398-130">PPT</span><span class="sxs-lookup"><span data-stu-id="1e398-130">PPT</span></span>
+- <span data-ttu-id="1e398-131">PPTX</span><span class="sxs-lookup"><span data-stu-id="1e398-131">PPTX</span></span>
+- <span data-ttu-id="1e398-132">PS</span><span class="sxs-lookup"><span data-stu-id="1e398-132">PS</span></span>
+- <span data-ttu-id="1e398-133">QXP</span><span class="sxs-lookup"><span data-stu-id="1e398-133">QXP</span></span>
+- <span data-ttu-id="1e398-134">RAR</span><span class="sxs-lookup"><span data-stu-id="1e398-134">RAR</span></span>
+- <span data-ttu-id="1e398-135">RTF</span><span class="sxs-lookup"><span data-stu-id="1e398-135">RTF</span></span>
+- <span data-ttu-id="1e398-136">SVG</span><span class="sxs-lookup"><span data-stu-id="1e398-136">SVG</span></span>
+- <span data-ttu-id="1e398-137">TAR</span><span class="sxs-lookup"><span data-stu-id="1e398-137">TAR</span></span>
+- <span data-ttu-id="1e398-138">TGZ</span><span class="sxs-lookup"><span data-stu-id="1e398-138">TGZ</span></span>
+- <span data-ttu-id="1e398-139">TXT</span><span class="sxs-lookup"><span data-stu-id="1e398-139">TXT</span></span>
+- <span data-ttu-id="1e398-140">WMV</span><span class="sxs-lookup"><span data-stu-id="1e398-140">WMV</span></span>
+- <span data-ttu-id="1e398-141">XLS</span><span class="sxs-lookup"><span data-stu-id="1e398-141">XLS</span></span>
+- <span data-ttu-id="1e398-142">XLSX</span><span class="sxs-lookup"><span data-stu-id="1e398-142">XLSX</span></span>
+- <span data-ttu-id="1e398-143">Plik XML</span><span class="sxs-lookup"><span data-stu-id="1e398-143">XML</span></span>
+- <span data-ttu-id="1e398-144">ZIP</span><span class="sxs-lookup"><span data-stu-id="1e398-144">ZIP</span></span>
 
-<span data-ttu-id="c1262-108">Następujące typy dokumentów są obsługiwane:</span><span class="sxs-lookup"><span data-stu-id="c1262-108">The following document types are supported:</span></span>
-- <span data-ttu-id="c1262-109">7Z</span><span class="sxs-lookup"><span data-stu-id="c1262-109">7Z</span></span>
-- <span data-ttu-id="c1262-110">AVI</span><span class="sxs-lookup"><span data-stu-id="c1262-110">AVI</span></span>
-- <span data-ttu-id="c1262-111">CS</span><span class="sxs-lookup"><span data-stu-id="c1262-111">CS</span></span>
-- <span data-ttu-id="c1262-112">CSS</span><span class="sxs-lookup"><span data-stu-id="c1262-112">CSS</span></span>
-- <span data-ttu-id="c1262-113">DOC</span><span class="sxs-lookup"><span data-stu-id="c1262-113">DOC</span></span>
-- <span data-ttu-id="c1262-114">DOCX</span><span class="sxs-lookup"><span data-stu-id="c1262-114">DOCX</span></span>
-- <span data-ttu-id="c1262-115">EPUB</span><span class="sxs-lookup"><span data-stu-id="c1262-115">EPUB</span></span>
-- <span data-ttu-id="c1262-116">GIF</span><span class="sxs-lookup"><span data-stu-id="c1262-116">GIF</span></span>
-- <span data-ttu-id="c1262-117">INDD</span><span class="sxs-lookup"><span data-stu-id="c1262-117">INDD</span></span>
-- <span data-ttu-id="c1262-118">JAR</span><span class="sxs-lookup"><span data-stu-id="c1262-118">JAR</span></span>
-- <span data-ttu-id="c1262-119">JPG</span><span class="sxs-lookup"><span data-stu-id="c1262-119">JPG</span></span>
-- <span data-ttu-id="c1262-120">JPEG</span><span class="sxs-lookup"><span data-stu-id="c1262-120">JPEG</span></span>
-- <span data-ttu-id="c1262-121">JS</span><span class="sxs-lookup"><span data-stu-id="c1262-121">JS</span></span>
-- <span data-ttu-id="c1262-122">MP3</span><span class="sxs-lookup"><span data-stu-id="c1262-122">MP3</span></span>
-- <span data-ttu-id="c1262-123">MP4</span><span class="sxs-lookup"><span data-stu-id="c1262-123">MP4</span></span>
-- <span data-ttu-id="c1262-124">MPEG</span><span class="sxs-lookup"><span data-stu-id="c1262-124">MPEG</span></span>
-- <span data-ttu-id="c1262-125">MPG</span><span class="sxs-lookup"><span data-stu-id="c1262-125">MPG</span></span>
-- <span data-ttu-id="c1262-126">ODP</span><span class="sxs-lookup"><span data-stu-id="c1262-126">ODP</span></span>
-- <span data-ttu-id="c1262-127">ODS</span><span class="sxs-lookup"><span data-stu-id="c1262-127">ODS</span></span>
-- <span data-ttu-id="c1262-128">ODT</span><span class="sxs-lookup"><span data-stu-id="c1262-128">ODT</span></span>
-- <span data-ttu-id="c1262-129">PDF</span><span class="sxs-lookup"><span data-stu-id="c1262-129">PDF</span></span>
-- <span data-ttu-id="c1262-130">PNG</span><span class="sxs-lookup"><span data-stu-id="c1262-130">PNG</span></span>
-- <span data-ttu-id="c1262-131">PPT</span><span class="sxs-lookup"><span data-stu-id="c1262-131">PPT</span></span>
-- <span data-ttu-id="c1262-132">PPTX</span><span class="sxs-lookup"><span data-stu-id="c1262-132">PPTX</span></span>
-- <span data-ttu-id="c1262-133">PS</span><span class="sxs-lookup"><span data-stu-id="c1262-133">PS</span></span>
-- <span data-ttu-id="c1262-134">QXP</span><span class="sxs-lookup"><span data-stu-id="c1262-134">QXP</span></span>
-- <span data-ttu-id="c1262-135">RAR</span><span class="sxs-lookup"><span data-stu-id="c1262-135">RAR</span></span>
-- <span data-ttu-id="c1262-136">RTF</span><span class="sxs-lookup"><span data-stu-id="c1262-136">RTF</span></span>
-- <span data-ttu-id="c1262-137">SVG</span><span class="sxs-lookup"><span data-stu-id="c1262-137">SVG</span></span>
-- <span data-ttu-id="c1262-138">TAR</span><span class="sxs-lookup"><span data-stu-id="c1262-138">TAR</span></span>
-- <span data-ttu-id="c1262-139">TGZ</span><span class="sxs-lookup"><span data-stu-id="c1262-139">TGZ</span></span>
-- <span data-ttu-id="c1262-140">TXT</span><span class="sxs-lookup"><span data-stu-id="c1262-140">TXT</span></span>
-- <span data-ttu-id="c1262-141">WMV</span><span class="sxs-lookup"><span data-stu-id="c1262-141">WMV</span></span>
-- <span data-ttu-id="c1262-142">XLS</span><span class="sxs-lookup"><span data-stu-id="c1262-142">XLS</span></span>
-- <span data-ttu-id="c1262-143">XLSX</span><span class="sxs-lookup"><span data-stu-id="c1262-143">XLSX</span></span>
-- <span data-ttu-id="c1262-144">Plik XML</span><span class="sxs-lookup"><span data-stu-id="c1262-144">XML</span></span>
-- <span data-ttu-id="c1262-145">ZIP</span><span class="sxs-lookup"><span data-stu-id="c1262-145">ZIP</span></span>
+## <a name="upload-a-file"></a><span data-ttu-id="1e398-145">Przekaż plik</span><span class="sxs-lookup"><span data-stu-id="1e398-145">Upload a file</span></span>
 
-## <a name="upload-a-file"></a><span data-ttu-id="c1262-146">Przekaż plik</span><span class="sxs-lookup"><span data-stu-id="c1262-146">Upload a file</span></span>
+<span data-ttu-id="1e398-146">Aby przekazać plik do kreatora witryny w usłudze Commerce, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="1e398-146">To upload a file to Commerce site builder, follow these steps.</span></span>
 
-<span data-ttu-id="c1262-147">Aby przekazać plik do kreatora witryny w usłudze Commerce, wykonaj następujące kroki.</span><span class="sxs-lookup"><span data-stu-id="c1262-147">To upload a file to Commerce site builder, follow these steps.</span></span>
+1. <span data-ttu-id="1e398-147">W okienku nawigacji po lewej stronie wybierz pozycję **Biblioteka multimedialna**.</span><span class="sxs-lookup"><span data-stu-id="1e398-147">In the left navigation pane, select **Media Library**.</span></span>
+1. <span data-ttu-id="1e398-148">Na pasku poleceń wybierz opcję **Przekaż \> Przekaż elementy multimedialne**.</span><span class="sxs-lookup"><span data-stu-id="1e398-148">On the command bar, select **Upload \> Upload Media Items**.</span></span>
+1. <span data-ttu-id="1e398-149">W Eksploratorze plików wybierz jeden lub więcej plików, a następnie wybierz opcję **Otwórz**.</span><span class="sxs-lookup"><span data-stu-id="1e398-149">In File Explorer, select one or more files and then select **Open**.</span></span>
+1. <span data-ttu-id="1e398-150">W oknie dialogowym **przekazywanie elementu multimedialnego** wprowadź odpowiednio tytuł, opis i metadane słów kluczowych.</span><span class="sxs-lookup"><span data-stu-id="1e398-150">In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.</span></span>
+1. <span data-ttu-id="1e398-151">Jeśli chcesz opublikować pliki po natychmiastowym przekazaniu, zaznacz pole wyboru **Publikuj elementy multimedialne po przekazaniu**.</span><span class="sxs-lookup"><span data-stu-id="1e398-151">To publish the file(s) immediately after upload, select the **Publish media items after upload** check box.</span></span>
+1. <span data-ttu-id="1e398-152">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="1e398-152">Select **OK**.</span></span>
 
-1. <span data-ttu-id="c1262-148">W okienku nawigacji po lewej stronie wybierz pozycję **Biblioteka multimedialna**.</span><span class="sxs-lookup"><span data-stu-id="c1262-148">In the left navigation pane, select **Media Library**.</span></span>
-1. <span data-ttu-id="c1262-149">Na pasku poleceń wybierz opcję **Przekaż \> Przekaż elementy multimedialne**.</span><span class="sxs-lookup"><span data-stu-id="c1262-149">On the command bar, select **Upload \> Upload Media Items**.</span></span>
-1. <span data-ttu-id="c1262-150">W Eksploratorze plików wybierz jeden lub więcej plików, a następnie wybierz opcję **Otwórz**.</span><span class="sxs-lookup"><span data-stu-id="c1262-150">In File Explorer, select one or more files and then select **Open**.</span></span>
-1. <span data-ttu-id="c1262-151">W oknie dialogowym **przekazywanie elementu multimedialnego** wprowadź odpowiednio tytuł, opis i metadane słów kluczowych.</span><span class="sxs-lookup"><span data-stu-id="c1262-151">In the **Upload Media Item** dialog box, enter title, description, and keyword metadata as needed.</span></span>
-1. <span data-ttu-id="c1262-152">Jeśli chcesz opublikować pliki po natychmiastowym przekazaniu, zaznacz pole wyboru **Publikuj elementy multimedialne po przekazaniu**.</span><span class="sxs-lookup"><span data-stu-id="c1262-152">To publish the file(s) immediately after upload, select the **Publish media items after upload** check box.</span></span>
-1. <span data-ttu-id="c1262-153">Kliknij przycisk **OK**.</span><span class="sxs-lookup"><span data-stu-id="c1262-153">Select **OK**.</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="1e398-153">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="1e398-153">Additional resources</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c1262-154">Dodatkowe zasoby</span><span class="sxs-lookup"><span data-stu-id="c1262-154">Additional resources</span></span>
+[<span data-ttu-id="1e398-154">Omówienie zarządzania cyfrowymi składnikami majątku</span><span class="sxs-lookup"><span data-stu-id="1e398-154">Digital asset management overview</span></span>](dam-overview.md)
 
-[<span data-ttu-id="c1262-155">Omówienie zarządzania cyfrowymi składnikami majątku</span><span class="sxs-lookup"><span data-stu-id="c1262-155">Digital asset management overview</span></span>](dam-overview.md)
+[<span data-ttu-id="1e398-155">Przekazanie obrazów</span><span class="sxs-lookup"><span data-stu-id="1e398-155">Upload images</span></span>](dam-upload-images.md)
 
-[<span data-ttu-id="c1262-156">Przekazanie obrazów</span><span class="sxs-lookup"><span data-stu-id="c1262-156">Upload images</span></span>](dam-upload-images.md)
+[<span data-ttu-id="1e398-156">Przekazanie wideo</span><span class="sxs-lookup"><span data-stu-id="1e398-156">Upload video</span></span>](dam-upload-video.md)
 
-[<span data-ttu-id="c1262-157">Przekazanie wideo</span><span class="sxs-lookup"><span data-stu-id="c1262-157">Upload video</span></span>](dam-upload-video.md)
+[<span data-ttu-id="1e398-157">Przycinanie obrazów</span><span class="sxs-lookup"><span data-stu-id="1e398-157">Crop images</span></span>](dam-crop-images.md)
 
-[<span data-ttu-id="c1262-158">Przycinanie obrazów</span><span class="sxs-lookup"><span data-stu-id="c1262-158">Crop images</span></span>](dam-crop-images.md)
+[<span data-ttu-id="1e398-158">Dostosowywanie punktów ogniskowych obrazu</span><span class="sxs-lookup"><span data-stu-id="1e398-158">Customize image focal points</span></span>](dam-custom-focal-point.md)
 
-[<span data-ttu-id="c1262-159">Dostosowywanie punktów ogniskowych obrazu</span><span class="sxs-lookup"><span data-stu-id="c1262-159">Customize image focal points</span></span>](dam-custom-focal-point.md)
-
-[<span data-ttu-id="c1262-160">Przekazywanie i obsługiwanie plików statycznych</span><span class="sxs-lookup"><span data-stu-id="c1262-160">Upload and serve static files</span></span>](upload-serve-static-files.md)
+[<span data-ttu-id="1e398-159">Przekazywanie i obsługiwanie plików statycznych</span><span class="sxs-lookup"><span data-stu-id="1e398-159">Upload and serve static files</span></span>](upload-serve-static-files.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
