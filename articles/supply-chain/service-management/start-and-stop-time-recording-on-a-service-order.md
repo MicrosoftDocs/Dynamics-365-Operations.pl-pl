@@ -2,11 +2,9 @@
 title: Rozpoczynanie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego
 description: Można rozpocząć i zatrzymać rejestrowania czasu dla zlecenia serwisowego.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,49 +15,49 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcec3cfde34959de73132c8d764df25fb676d140
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cc205daa35c898147559427b071d1d2c2720de3a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242356"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817468"
 ---
-# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="3b3ca-103">Rozpoczynanie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="3b3ca-103">Start and stop time recording on a service order</span></span> 
+# <a name="start-and-stop-time-recording-on-a-service-order"></a><span data-ttu-id="53343-103">Rozpoczynanie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego</span><span class="sxs-lookup"><span data-stu-id="53343-103">Start and stop time recording on a service order</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="3b3ca-104">Niniejsza procedura umożliwia uruchamianie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego, dla którego jest zdefiniowana umowa dotycząca poziomu usług.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
+<span data-ttu-id="53343-104">Niniejsza procedura umożliwia uruchamianie i zatrzymywanie rejestrowania czasu dla zlecenia serwisowego, dla którego jest zdefiniowana umowa dotycząca poziomu usług.</span><span class="sxs-lookup"><span data-stu-id="53343-104">Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.</span></span>
 
-## <a name="start-time-recording"></a><span data-ttu-id="3b3ca-105">Rozpoczynanie rejestrowania czasu</span><span class="sxs-lookup"><span data-stu-id="3b3ca-105">Start time recording</span></span>
+## <a name="start-time-recording"></a><span data-ttu-id="53343-105">Rozpoczynanie rejestrowania czasu</span><span class="sxs-lookup"><span data-stu-id="53343-105">Start time recording</span></span>
 
-1.  <span data-ttu-id="3b3ca-106">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="53343-106">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.</span><span class="sxs-lookup"><span data-stu-id="53343-106">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="3b3ca-107">Kliknij kartę **Zlecenie serwisowe**. W **okienku akcji** w grupie **Umowa dotycząca poziomu usług** kliknij przycisk **Rozpocznij**.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
+2.  <span data-ttu-id="53343-107">Kliknij kartę **Zlecenie serwisowe**. W **okienku akcji** w grupie **Umowa dotycząca poziomu usług** kliknij przycisk **Rozpocznij**.</span><span class="sxs-lookup"><span data-stu-id="53343-107">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.</span></span>
 
-3.  <span data-ttu-id="3b3ca-108">Wprowadź datę i godzinę uruchomienia rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-108">Enter the date and time that the time recording should be started.</span></span>
+3.  <span data-ttu-id="53343-108">Wprowadź datę i godzinę uruchomienia rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="53343-108">Enter the date and time that the time recording should be started.</span></span>
 
-## <a name="stop-time-recording"></a><span data-ttu-id="3b3ca-109">Zatrzymaj rejestrację czasu</span><span class="sxs-lookup"><span data-stu-id="3b3ca-109">Stop time recording</span></span>
+## <a name="stop-time-recording"></a><span data-ttu-id="53343-109">Zatrzymaj rejestrację czasu</span><span class="sxs-lookup"><span data-stu-id="53343-109">Stop time recording</span></span>
 
-1.  <span data-ttu-id="3b3ca-110">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
+1.  <span data-ttu-id="53343-110">Kliknij kolejno opcje **Zarządzanie serwisem** \> **Wspólne** \> **Zlecenia serwisowe** \> **Zlecenia serwisowe**.</span><span class="sxs-lookup"><span data-stu-id="53343-110">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span>
 
-2.  <span data-ttu-id="3b3ca-111">Kliknij kartę **Zlecenie serwisowe**. W **okienku akcji** w grupie **Umowa dotycząca poziomu usług** kliknij przycisk **Zatrzymaj**.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
+2.  <span data-ttu-id="53343-111">Kliknij kartę **Zlecenie serwisowe**. W **okienku akcji** w grupie **Umowa dotycząca poziomu usług** kliknij przycisk **Zatrzymaj**.</span><span class="sxs-lookup"><span data-stu-id="53343-111">Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.</span></span>
 
-3.  <span data-ttu-id="3b3ca-112">Wprowadź datę i godzinę zatrzymania rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-112">Enter the date and time that the time recording should be stopped.</span></span>
+3.  <span data-ttu-id="53343-112">Wprowadź datę i godzinę zatrzymania rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="53343-112">Enter the date and time that the time recording should be stopped.</span></span>
 
-4.  <span data-ttu-id="3b3ca-113">Wybierz opcję **Dodaj do przyczyny unieważnienia** i wybierz kod przyczyny z listy **Kod przyczyny etapów**, aby podać przyczynę zatrzymania rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
+4.  <span data-ttu-id="53343-113">Wybierz opcję **Dodaj do przyczyny unieważnienia** i wybierz kod przyczyny z listy **Kod przyczyny etapów**, aby podać przyczynę zatrzymania rejestrowania czasu.</span><span class="sxs-lookup"><span data-stu-id="53343-113">Select **Add a revocation reason**, and select a reason code in the **Stage reason code** list to provide a reason for stopping the time recording.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="3b3ca-114">Jeśli w formularzu <STRONG>Parametry modułu Zarządzanie serwisem</STRONG> jest zaznaczona opcja <STRONG>Kod przyczyny dotyczący przekroczenia czasu</STRONG>, należy podać kod przyczyny, zanim będzie można zatrzymać rejestrowanie czasu.</span><span class="sxs-lookup"><span data-stu-id="3b3ca-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
+> <P><span data-ttu-id="53343-114">Jeśli w formularzu <STRONG>Parametry modułu Zarządzanie serwisem</STRONG> jest zaznaczona opcja <STRONG>Kod przyczyny dotyczący przekroczenia czasu</STRONG>, należy podać kod przyczyny, zanim będzie można zatrzymać rejestrowanie czasu.</span><span class="sxs-lookup"><span data-stu-id="53343-114">If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</span></span></P>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="3b3ca-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="3b3ca-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="53343-115">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="53343-115">See also</span></span>
 
-<span data-ttu-id="3b3ca-116">[Rozpocznij rejestrowanie czasu dla umowy SLA (formularz)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3b3ca-116">[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span></span>
+<span data-ttu-id="53343-116">[Rozpocznij rejestrowanie czasu dla umowy SLA (formularz)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="53343-116">[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))</span></span>
 
-<span data-ttu-id="3b3ca-117">[Zatrzymaj rejestrowanie czasu dla umowy SLA (formularz)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="3b3ca-117">[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span></span>
+<span data-ttu-id="53343-117">[Zatrzymaj rejestrowanie czasu dla umowy SLA (formularz)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="53343-117">[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))</span></span>
 
   
 
