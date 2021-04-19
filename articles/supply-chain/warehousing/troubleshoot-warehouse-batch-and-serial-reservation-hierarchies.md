@@ -1,0 +1,75 @@
+---
+title: Rozwiązywanie problemów z hierarchiami rezerwacji partii i numerów seryjnych w magazynie
+description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z hierarchiami rezerwacji, które używają wymiarów wsadowych lub seryjnych.
+author: perlynne
+ms.date: 3/12/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application user
+ms.reviewer: kamaybac
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: perlynne
+ms.search.validFrom: 3/12/2021
+ms.openlocfilehash: a1abb6f8657484d43d434076e5ee38d1c63fe2ff
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838185"
+---
+# <a name="troubleshoot-warehouse-batch-and-serial-reservation-hierarchies"></a><span data-ttu-id="9ac48-103">Rozwiązywanie problemów z hierarchiami rezerwacji partii i numerów seryjnych w magazynie</span><span class="sxs-lookup"><span data-stu-id="9ac48-103">Troubleshoot warehouse batch and serial reservation hierarchies</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="9ac48-104">W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z hierarchiami rezerwacji, które używają wymiarów wsadowych lub seryjnych.</span><span class="sxs-lookup"><span data-stu-id="9ac48-104">This topic describes how to fix common issues that you might encounter while you work with reservation hierarchies that use batch or serial dimensions.</span></span>
+
+<span data-ttu-id="9ac48-105">Aby uzyskać więcej informacji, zobacz [Elastyczne zasady rezerwacji wymiarów na poziomie magazynu](flexible-warehouse-level-dimension-reservation.md).</span><span class="sxs-lookup"><span data-stu-id="9ac48-105">For more information, see [Flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md).</span></span>
+
+<span data-ttu-id="9ac48-106">Hierarchia rezerwacji pozycji określa wymagania wymiarów magazynowania, które muszą być spełnione, aby przypisać lokalizację do zamówienia popytu.</span><span class="sxs-lookup"><span data-stu-id="9ac48-106">The reservation hierarchy of an item dictates the requirement of storage dimensions that must be fulfilled to assign a location to a demand order.</span></span> <span data-ttu-id="9ac48-107">Wymiary te można opisać jako *wymiary powyżej lokalizacji* dla wszystkich wymiarów, które muszą zostać spełnione przed przypisanie lokalizacji, oraz *wymiarów poniżej lokalizacji* dla wymiarów, które można alokować po przypisaniu lokalizacji do zlecenia popytu.</span><span class="sxs-lookup"><span data-stu-id="9ac48-107">These dimensions can be described as *dimensions above location*, for all the dimensions that must be fulfilled before a location is assigned, and *dimensions below location*, for dimensions that can be allocated after a location has been assigned to the demand order.</span></span> <span data-ttu-id="9ac48-108">Te hierarchie rezerwacji są nazywane także hierarchiami rezerwacji *nad partiami* i *partiami poniżej*, lub hierarchiami rezerwacji *serii nadrzędnych* i *serii podrzędnych*.</span><span class="sxs-lookup"><span data-stu-id="9ac48-108">These reservation hierarchies are also known as *batch-above* and *batch-below* reservation hierarchies, or *serial-above* and *serial-below* reservation hierarchies.</span></span>
+
+<span data-ttu-id="9ac48-109">Zapasy można pomyślnie zaalokować tylko wtedy, gdy nie ma przerw w wymiarach powyżej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9ac48-109">Inventory can be successfully allocated only if there are no gaps in the dimensions above location.</span></span> <span data-ttu-id="9ac48-110">Na przykład w hierarchii rezerwacji *nad partią* oczekiwano wymiarów **Lokalizacji,** **Magazyn** i **Numer partii**, które mają być określone w zamówieniu popytu.</span><span class="sxs-lookup"><span data-stu-id="9ac48-110">For example, in a *batch-above* reservation hierarchy, you expect **Site,** **Warehouse,** and **Batch number** dimensions to be specified on the demand order.</span></span> <span data-ttu-id="9ac48-111">Brak dowolnego z tych wymiarów spowoduje niepowodzenie procesu alokacji.</span><span class="sxs-lookup"><span data-stu-id="9ac48-111">If any of these dimensions are missing, the allocation process will fail.</span></span> <span data-ttu-id="9ac48-112">Natomiast w hierarchii rezerwacji *partia poniżej* lub *seria poniżej* może być określony w zamówieniu popytu, ale proces alokacji tego nie wymaga.</span><span class="sxs-lookup"><span data-stu-id="9ac48-112">By contrast, in a *batch-below* or *serial-below* reservation hierarchy, a batch or serial number might be specified on the demand order, but the allocation process doesn't require it.</span></span>
+
+## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a><span data-ttu-id="9ac48-113">Pojawia się następujący komunikat o błędzie: „Aby przypisać do grupy czynności, wiersze ładunku muszą określać wymiary powyżej lokalizacji.</span><span class="sxs-lookup"><span data-stu-id="9ac48-113">I receive the following error message: "To be assigned to wave, load lines must specify the dimensions above the location.</span></span> <span data-ttu-id="9ac48-114">Aby przypisać te wymiary, zarezerwuj i ponownie utwórz wiersz ładunku”.</span><span class="sxs-lookup"><span data-stu-id="9ac48-114">To assign these dimensions, reserve and recreate the load line."</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="9ac48-115">Opis problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-115">Issue description</span></span>
+
+<span data-ttu-id="9ac48-116">W przypadku użycia towaru, który ma rezerwację *partię powyżej* hierarchii rezerwacji, polecenie **Zwolnij do magazynu** na stronie **Pulpitu planowania ładunku** dla wyzwolenia ilości częściowej nie działa.</span><span class="sxs-lookup"><span data-stu-id="9ac48-116">When you use an item that has a *batch-above* reservation hierarchy, the **Release to warehouse** command on the **Load planning workbench** page doesn't work if you try to release a load for a partial quantity.</span></span> <span data-ttu-id="9ac48-117">Pojawia się ten komunikat o błędzie i nie utworzono żadnej pracy dla ilości częściowej.</span><span class="sxs-lookup"><span data-stu-id="9ac48-117">You receive this error message, and no work is created for the partial quantity.</span></span>
+
+<span data-ttu-id="9ac48-118">Jeśli jednak używasz towaru, który ma hierarchię rezerwacji *partia poniżej*, możesz zwolnić ładunek dla ilości częściowej ze strony **Środowisko pracy planowania ładunku**.</span><span class="sxs-lookup"><span data-stu-id="9ac48-118">However, when you use an item that has a *batch-below* reservation hierarchy, you can release a load for a partial quantity from the **Load planning workbench** page.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="9ac48-119">Przyczyna problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-119">Issue cause</span></span>
+
+<span data-ttu-id="9ac48-120">Jeśli wymiar zostanie umieszczony powyżej wymiaru **Lokalizacji** w hierarchii rezerwacji, musi zostać on określony przed zwolnieniem do magazynu.</span><span class="sxs-lookup"><span data-stu-id="9ac48-120">When a dimension is above the **Location** dimension in the reservation hierarchy, it must be specified before the release to the warehouse.</span></span> <span data-ttu-id="9ac48-121">Ilości częściowe nie mogą zostać zwolnione, jeśli nie określono co najmniej jednego wymiaru powyżej **Lokalizacji**.</span><span class="sxs-lookup"><span data-stu-id="9ac48-121">Partial quantities can't be released if one or more dimensions above **Location** aren't specified.</span></span>
+
+## <a name="the-auto-reservation-prompt-for-a-batch-number-is-triggered-even-though-there-is-available-inventory"></a><span data-ttu-id="9ac48-122">Monit o automatyczną rezerwację dla numeru partii jest wyzwalany, nawet jeśli istnieją dostępne zapasy.</span><span class="sxs-lookup"><span data-stu-id="9ac48-122">The auto-reservation prompt for a batch number is triggered even though there is available inventory.</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="9ac48-123">Opis problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-123">Issue description</span></span>
+
+<span data-ttu-id="9ac48-124">Gdy używasz towaru, który ma hierarchię rezerwacji *partia powyżej* w magazynie, w którym nie włączono procesów magazynowych, a rezerwacja automatyczna jest włączona, monit automatycznej rezerwacji o numer partii jest wyświetlany, nawet jeśli tylko jedna partia jest dostępne do pobrania.</span><span class="sxs-lookup"><span data-stu-id="9ac48-124">When you use an item that has a *batch-above* reservation hierarchy in a warehouse that hasn't enabled warehouse processes, and automatic reservation is enabled, the auto-reservation prompt for a batch number is shown even if only one batch is available for picking.</span></span>
+
+<span data-ttu-id="9ac48-125">Jednak w przypadku używania tego samego towaru w magazynie, w którym są włączone procesy magazynowe, monit o automatyczną rezerwację nie jest wyświetlany.</span><span class="sxs-lookup"><span data-stu-id="9ac48-125">However, when you use the same item in a warehouse where warehouse processes are enabled, the auto-reservation prompt isn't shown.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="9ac48-126">Przyczyna problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-126">Issue cause</span></span>
+
+<span data-ttu-id="9ac48-127">Jeśli hierarchia rezerwacji jest zdefiniowana jako *partia nad* lub *seria nad*, w zamówieniach popytu zawsze musi być określony wymiar, do których istnieje odwołanie (**Numer partii** lub **Numer seryjny**).</span><span class="sxs-lookup"><span data-stu-id="9ac48-127">If a reservation hierarchy is defined as *batch-above* or *serial-above*, the referenced dimension (**Batch number** or **Serial number**) must always be specified on demand orders.</span></span> <span data-ttu-id="9ac48-128">Procesy magazynowe mogą być w stanie wypełnić informacje, jeśli jest dostępny jeden numer partii lub numer seryjny.</span><span class="sxs-lookup"><span data-stu-id="9ac48-128">Warehouse processes might be able to complete the information if a single batch or serial number is available.</span></span> <span data-ttu-id="9ac48-129">Jednak magazyn nie jest włączony dla procesów magazynowych, użytkownik musi zawsze określić wszystkie wymiary powyżej opcji **Lokalizacja**.</span><span class="sxs-lookup"><span data-stu-id="9ac48-129">However, because the warehouse isn't enabled for warehouse processes, the user must always specify all the dimensions above **Location**.</span></span>
+
+## <a name="slotting-templates-that-have-the-consider-on-hand-slot-criterion-dont-consider-current-on-hand-inventory-for-batch-enabled-items"></a><span data-ttu-id="9ac48-130">Szablony gniazda, dla których kryterium Uwzględnianie dostępnych zapasów nie są uwzględniane bieżące dostępne zapasy dla towarów, dla których włączono partię.</span><span class="sxs-lookup"><span data-stu-id="9ac48-130">Slotting templates that have the Consider on-hand slot criterion don't consider current on-hand inventory for batch-enabled items.</span></span>
+
+<span data-ttu-id="9ac48-131">Aby uzyskać więcej informacji, zajrzyj do [Rozpisywanie na przedziały w magazynie](warehouse-slotting.md).</span><span class="sxs-lookup"><span data-stu-id="9ac48-131">For more information, see [Warehouse slotting](warehouse-slotting.md).</span></span>
+
+### <a name="issue-description"></a><span data-ttu-id="9ac48-132">Opis problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-132">Issue description</span></span>
+
+<span data-ttu-id="9ac48-133">Szablony gniazda, dla których kryterium *Uwzględnianie dostępnych zapasów* nie są uwzględniane bieżące dostępne zapasy dla towarów *partii powyżej*.</span><span class="sxs-lookup"><span data-stu-id="9ac48-133">Slotting templates that have the *Consider on-hand* slot criterion don't consider current on-hand inventory for *batch-above* items.</span></span> <span data-ttu-id="9ac48-134">Są one rozważane tylko wtedy, gdy numer partii jest określony w wierszu zamówienia sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="9ac48-134">They consider it only if the batch number is specified on the sales order line.</span></span>
+
+<span data-ttu-id="9ac48-135">Jednak w przypadku towarów stanu *partii poniżej* aktualny stan dostępnych zapasów jest traktowany zgodnie z oczekiwaniami.</span><span class="sxs-lookup"><span data-stu-id="9ac48-135">However, when you use *batch-below* items, the current on-hand inventory is considered as expected.</span></span>
+
+### <a name="issue-cause"></a><span data-ttu-id="9ac48-136">Przyczyna problemu</span><span class="sxs-lookup"><span data-stu-id="9ac48-136">Issue cause</span></span>
+
+<span data-ttu-id="9ac48-137">Nagłówek szablonu schowania można zdefiniować dla strategii *Zamówione*, *Zarezerwowane* lub *Zwolniony popyt*.</span><span class="sxs-lookup"><span data-stu-id="9ac48-137">The slotting template header can be defined for the *Ordered,* *Reserved*, or *Released* demand strategy.</span></span> <span data-ttu-id="9ac48-138">W strategii *Zamówiono* popytu obowiązują te same wymagania hierarchii rezerwacji, które dotyczą rezerwacji lub zwalniania do procesów magazynowych.</span><span class="sxs-lookup"><span data-stu-id="9ac48-138">For the *Ordered* demand strategy, the same reservation hierarchy requirements apply that apply to reservation or release to warehouse processes.</span></span> <span data-ttu-id="9ac48-139">Dlatego w przypadku towarów, które mają hierarchie rezerwacji *partia powyżej* i *seria poniżej*, numer partii lub numer seryjny musi być określony w zamówieniu popytu (sprzedaż lub przeniesienie).</span><span class="sxs-lookup"><span data-stu-id="9ac48-139">Therefore, for items that have *batch-above* and *serial-below* reservation hierarchies, the batch or serial number must be specified on the demand order (sales or transfer).</span></span> <span data-ttu-id="9ac48-140">Strategii *Zarezerwowanego* popytu można również użyć w celu wybrania numeru partii lub numeru seryjnego przed wygenerowaniem popytu gniazda magazynowego.</span><span class="sxs-lookup"><span data-stu-id="9ac48-140">Alternatively, the *Reserved* demand strategy can be used to select the batch or serial number before the warehouse slotting demand is generated.</span></span>
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
