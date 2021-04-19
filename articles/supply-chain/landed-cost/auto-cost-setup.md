@@ -2,7 +2,6 @@
 title: Ustawienia kosztów automatycznych
 description: W tym temacie opisano sposób skonfigurowania reguł kosztów dla różnych poziomów podróży przychodzącej. Na podstawie tych reguł system oblicza koszty i automatycznie je dodaje. W związku z tym użytkownik nie musi ręcznie dodawać kosztów.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501157"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841966"
 ---
 # <a name="auto-costs-setup"></a>Ustawienia kosztów automatycznych
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Strona **Koszty automatyczne** umożliwia skonfigurowanie reguł kosztów dla różnych obszarów kosztów (takich jak podróży, kontenery wysyłki, folio, zamówienia zakupu, towary lub wiersze zamówienia przeniesienia). Na podstawie reguł i pól wybranych przez użytkowników podczas tworzenia rekordów dla jednego z obszarów kosztów system automatycznie obliczy koszty i doda je. W związku z tym użytkownik nie musi ręcznie dodawać kosztów.
 

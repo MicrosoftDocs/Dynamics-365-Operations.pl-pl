@@ -1,12 +1,10 @@
 ---
 title: Typy lokalizacji czynności konserwacyjnych
 description: W tym temacie opisano sposób tworzenia typów lokalizacjach czynności konserwacyjnych w module Zarządzanie składnikami majątku.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfccc362563d698fea7815c0e39cb50826caead0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 708c27dbf568ca8bea6ec0b775afac9b80759581
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224530"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837736"
 ---
 # <a name="functional-location-types"></a>Typy lokalizacji czynności konserwacyjnych
 

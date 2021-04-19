@@ -2,11 +2,9 @@
 title: Monitorowanie wykonywania usługi
 description: Formularz Pulpit wysyłki pozwala na pierwszy rzut oka ocenić stan aktualizacji różnych zaplanowanych działań serwisowych i zapewnia narzędzia śledzenia ogólnego przebiegu realizacji zleceń serwisowych w firmie.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2cd65140dd550d0bf4ae2fef4d5a50e1e2ab31c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 19cfa9bb32c9180d216b27fef9404972e2991864
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204285"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810740"
 ---
 # <a name="monitor-service-activities"></a>Monitorowanie wykonywania usługi 
 

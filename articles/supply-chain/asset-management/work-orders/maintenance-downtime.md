@@ -1,12 +1,10 @@
 ---
 title: Przerwa konserwacyjną dla zleceń pracy
 description: Ten temat wyjaśnia, jak można utworzyć rejestracje przestojów podczas obsługi dla środka trwałego wybranego w zleceniu pracy.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba24ae9e82debf9a67761e4e2ca0817e1645db28
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209738"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813732"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Przerwa konserwacyjną dla zleceń pracy
 

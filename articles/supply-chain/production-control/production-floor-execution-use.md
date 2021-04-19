@@ -2,11 +2,9 @@
 title: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 description: W tym temacie opisano sposób korzystania z interfejsu wykonywania pomieszczeń produkcyjnych z punktu widzenia pracownika.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500797"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814663"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Interfejs wykonywania pomieszczeń produkcyjnych jest zoptymalizowany pod kątem interakcji dotykowej. Jego projekt stanowi kontrast wizualny odpowiadający wymaganiom dotyczącym ułatwień dostępu w środowisku produkcyjnym. Oferuje wszystkie te same możliwości funkcjonalne, co urządzenie karty zadań. Pozwala to także na uruchamianie wielu zadań równolegle z listy zadań. (Ta możliwość jest również nazywana *przydzieleniem zadań*) Ponadto na podstawie listy zadań pracownicy mogą otwierać Przewodnik utworzony w przewodniku Microsoft Dynamics 365 Guide. W ten sposób mogą uzyskać instrukcje wizualne w HoloLens.
 
@@ -90,7 +87,7 @@ Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby od
 
 1. **Ustawienia** — wybranie ikony narzędzia pozwala otworzyć okno dialogowe, w którym można wybrać liczniki do wyświetlenia dla wybranego składnika majątku dla urządzenia. Wartości tych liczników są wyświetlane w górnej części karty **Zarządzanie składnikami majątku**. Menu **Ustawienia** (widoczne na poniższym zrzucie ekranu) umożliwia włączenie maksymalnie czterech liczników. Dla każdego licznika, który chcesz włączyć, wybierz licznik przy użyciu pola wyszukiwania u góry kafelka. W polu wyszukiwania są wymienione wszystkie liczniki skojarzone ze składnikiem majątku wybranym u góry strony **Zarządzanie składnikami majątku**. Ustawienie każdego licznika w celu monitorowania wartości **zagregowanej** lub ostatniej wartości **rzeczywistej**. Na przykład, jeśli ustawisz licznik, który śledzi czas pracy komputera w godzinach, należy ustawić go na **Zagregowana**. Jeśli licznik jest ustawiany w celu pomiaru ostatniej zaktualizowanej temperatury lub ciśnienia, należy ustawić dla niego wartość **Rzeczywista**. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okienko dialogowe.
 
-    ![Karta Moje urządzenie](media/pfei-my-machine-tab-settings.png "Karta Moje urządzenie")
+    ![Ustawienia karty Moje urządzenie](media/pfei-my-machine-tab-settings.png "Ustawienia karty Moje urządzenie")
 
 1. **Zażądaj konserwacji** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można utworzyć żądanie konserwacji. Możesz podać opis i uwagę. Żądanie zostanie przesłane do użytkownika aplikacji Supply Chain Management, który będzie mógł przekonwertować żądanie konserwacji na zlecenie pracy dotyczące konserwacji.
 1. **Zarejestruj przestój** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można zarejestrować przestój urządzenia. Możesz wybrać kod przyczyny i wprowadzić okres przestoju w postaci zakresu dat/godzin. Rejestracja przestoju urządzania jest używana do obliczenia wydajności składnika majątku dla urządzenia.

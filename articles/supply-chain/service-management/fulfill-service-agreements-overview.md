@@ -2,11 +2,9 @@
 title: Omówienie realizacji umów serwisowych
 description: Ten temat zawiera omówienie zadań związanych z wypełnianiem umów serwisowych.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca869f2de60ba7a73f61e16143876557ae1017dc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b23ab70ea06daf2b2b91fc93ac1d77d73649693c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247364"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824517"
 ---
 # <a name="fulfill-service-agreements-overview"></a>Omówienie realizacji umów serwisowych 
 

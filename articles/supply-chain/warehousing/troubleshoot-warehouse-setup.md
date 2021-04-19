@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów z konfiguracją
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas konfiguracji magazynów w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f2e111930431e908e5aaa2f08d04adbb2d952f0f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d1ed8e3b6f13f83e3c870b17b423cf42ad0ecc1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208118"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828065"
 ---
 # <a name="troubleshoot-warehouse-setup"></a>Rozwiązywanie problemów z konfiguracją
 
@@ -38,7 +36,7 @@ Użytkownik nie może korzystać z żadnej roli z wyjątkiem administratora, aby
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
-Emulator aplikacji urządzenia przenośnego jest skonfigurowany do pracy tylko z kontem administratora. W przypadku wszelkiego testowania i procesów działających na żywo zaleca się używanie samej aplikacji magazynowej.
+Emulator aplikacji urządzenia przenośnego jest skonfigurowany do pracy tylko z kontem administratora. W przypadku wszelkiego testowania i procesów działających na żywo zaleca się używanie samej aplikacji Warehouse Management.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

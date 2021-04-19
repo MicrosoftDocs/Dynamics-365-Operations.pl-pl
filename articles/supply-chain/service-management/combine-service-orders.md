@@ -2,11 +2,9 @@
 title: Łączenie zleceń serwisowych
 description: Zlecenia serwisowe można łączyć.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7bd3ac8cf3c025b082b33247fcd020aebc010bc8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 41b4a3234e4104372f1052d89c2417984e9cd10d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247725"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840564"
 ---
 # <a name="combine-service-orders"></a>Łączenie zleceń serwisowych   
 

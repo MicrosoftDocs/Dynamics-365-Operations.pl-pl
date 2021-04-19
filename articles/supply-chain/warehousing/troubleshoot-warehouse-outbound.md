@@ -2,11 +2,9 @@
 title: Rozwiązywanie problemów dotyczących wychodzących operacji magazynowych
 description: W tym temacie opisano, jak rozwiązać typowe problemy, które mogą wystąpić podczas pracy z wychodzącymi operacjami magazynowymi w Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1344a1c16bf72b31f7aaf18aaeb6e08c7bc9d87e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 919b6f433db47f24adc9a474942557a1467d1f71
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5223273"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828185"
 ---
 # <a name="troubleshoot-outbound-warehouse-operations"></a>Rozwiązywanie problemów dotyczących wychodzących operacji magazynowych
 

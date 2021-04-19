@@ -1,12 +1,10 @@
 ---
 title: Rozwiązywanie problemów z zarządzaniem kosztami
 description: W tym temacie opisano sposób rozwiązywania problemów, które mogą wystąpić podczas pracy z zarządzaniem kosztami.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834296"
 ---
 # <a name="troubleshoot-cost-management"></a>Rozwiązywanie problemów z zarządzaniem kosztami
 
@@ -37,7 +35,7 @@ Funkcje [Magazyn raportów wiekowania zapasów](inventory-aging-report-storage.m
 
 Sumy częściowe mogą powodować problemy podczas eksportowania wyniku, zwłaszcza jeśli użytkownicy zmienią sekwencję rekordów.
 
-Aby sprawdzić sumy częściowe, można wyeksportować wyniki do Microsoft Excel. Alternatywnie, jeśli chcesz sprawdzić sumy częściowe w ramach Supply Chain Management, użyj funkcji [Zarządzanie funkcjamit](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby włączyć funkcje *Kontrolka nowej siatki* i *(Wersja zapoznawcza) Grupowania w siatkach*, które zapewniają znacznie bardziej elastyczny sposób wyświetlania sum częściowych dla dowolnej grupy według kolumny. Aby uzyskać dodatkowe informacje, zobacz [Zdolności siatki](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Aby sprawdzić sumy częściowe, można wyeksportować wyniki do Microsoft Excel. Alternatywnie, jeśli chcesz sprawdzić sumy częściowe w ramach Supply Chain Management, użyj funkcji [Zarządzanie funkcjamit](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby włączyć funkcje *Kontrolka nowej siatki* i *Grupowania w siatkach*, które zapewniają znacznie bardziej elastyczny sposób wyświetlania sum częściowych dla dowolnej grupy według kolumny. Aby uzyskać dodatkowe informacje, zobacz [Zdolności siatki](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Raport magazynowania wartości zapasów nie obsługuje informacji o koncie księgowym
 

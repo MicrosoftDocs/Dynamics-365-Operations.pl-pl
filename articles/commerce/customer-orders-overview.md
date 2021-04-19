@@ -2,11 +2,9 @@
 title: Zamówienia odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220517"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821015"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
 
@@ -61,7 +59,8 @@ W programie Commerce w wersji 10.0.12 i nowszych organizacje mogą określać, c
 
 Podczas pracy z zamówieniami klientów w punkcie sprzedaży należy wziąć pod uwagę niektóre ustawienia kanału sklepu. Te ustawienia znajdują się na stronie **Sklepy** w module Commerce Headquarter.
 
-- **Magazyn** — to pole wskazuje Magazyn używany do realizacji zamówień skonfigurowanych do wysyłki ze sklepu.
+- **Magazyn** — To pole wskazuje magazyn, który będzie używany podczas zmniejszania zapasów na potrzeby zamówień typu „transakcje kasowe i przeniesienia” oraz „pobrania” klientów powiązanych z tym sklepem. Zgodnie z najlepszą praktyką zachęcamy do korzystania z unikalnych magazynów dla każdego kanału sklepu, aby zapobiec konfliktom z logiką biznesową w różnych sklepach.
+- **Magazyn wysyłek** — To pole wskazuje magazyn, który będzie używany podczas zmniejszania zapasów na zamówienia klientów, które mają zostać wysłane z wybranego sklepu. Jeśli funkcja **Możliwość określania lokalizacji jako „Wysyłka” lub „Odbiór” włączona w grupie Realizacji** została włączona w danym środowisku, użytkownicy punktu dostępu mogą wybrać określony magazyn do wysyłki w programie POS, zamiast wybierać sklep do wysyłki. Dlatego, gdy ta funkcja jest włączona, magazyn wysyłkowy nie jest już używany, ponieważ użytkownik wybierze określony magazyn do wysłania zamówienia od momentu utworzenia zamówienia.
 - **Przypisanie grupy realizacji** — wybranie tego przycisku (na karcie **Konfiguracja** w okienku akcji) umożliwia połączenie grup realizacji, do których są pokazywane opcje dotyczące lokalizacji pobrania lub pośrednicy dla wysyłki podczas tworzenia zamówień odbiorców w punkcie sprzedaży.
 - **Użycie podatku według lokalizacji docelowej** — ta opcja wskazuje, czy adres wysyłkowy jest używany do określania grupy podatków stosowanej do wierszy zamówienia wysyłanych na adres odbiorcy.
 - **Użycie podatku opartego na odbiorcy** — ta opcja wskazuje, czy grupa podatków zdefiniowana dla adresu odbiorcy jest używana do opodatkowania zamówień odbiorców tworzonych w sprzedaży w celu wysyłki w domu odbiorcy.

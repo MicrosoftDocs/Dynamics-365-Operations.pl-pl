@@ -2,11 +2,9 @@
 title: Mieszanie wymiarów produktów w lokalizacji
 description: Ten temat zawiera informacje dotyczące mieszania rozmiarów produktów w lokalizacji. Ta funkcja profilu lokalizacji pomaga poprawić zarządzanie lokalizacjami, gdy używane są różne warianty produktu lub produkty mają różne wymiary – np. w branży modowej. Dzięki temu można określić, czy konfiguracje, kolory, style i rozmiary mogą być mieszane dla określonego profilu lokalizacji, czy dozwolony jest np. tylko jeden z tych wymiarów lub jakieś połączenie możliwości, które można umieścić w tej samej lokalizacji.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217036"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831297"
 ---
 # <a name="location-product-dimension-mixing"></a>Mieszanie wymiarów produktów w lokalizacji
 
@@ -206,9 +204,9 @@ Użytkownik utworzy zamówienie zakupu z trzema wierszami: dwa wiersze dla tego 
 
 1. Wybierz opcję **Zapisz**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Odbiór wierszy zamówienia zakupu w aplikacji magazynowej
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Odbiór wierszy zamówienia zakupu w aplikacji Warehouse Management
 
-1. Zaloguj się do aplikacji magazynowej jako użytkownik, który jest uruchomiony dla magazynu *24*.
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik, który jest uruchomiony dla magazynu *24*.
 1. Wybierz menu **Przychodzące**.
 1. Wybierz **Wiersz zamówienia zakupu – przyjęcie**.
 1. Zaznacz pole **PONUM**, a następnie wprowadź numer zamówienia zakupu.

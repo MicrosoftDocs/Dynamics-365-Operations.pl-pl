@@ -2,11 +2,9 @@
 title: Tworzenie i aktualizacja godzin w sklepie
 description: W tym temacie opisano sposób tworzenia i aktualizowania godzin sklepu w programie Commerce Headquarters.
 author: josaw1
-manager: AnnBe
 ms.date: 7/30/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 00c532dfa9ceed2cda6652496d874cb82785dc7b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5230647"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792936"
 ---
 # <a name="create-and-update-store-hours"></a>Tworzenie i aktualizacja godzin w sklepie
 

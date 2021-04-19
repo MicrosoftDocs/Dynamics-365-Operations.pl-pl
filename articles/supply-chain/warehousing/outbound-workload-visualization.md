@@ -2,11 +2,9 @@
 title: Wychodzące wizualizacje obciążenia pracą
 description: Ten temat zawiera informacje o wychodzących wizualizacjach obciążenia pracą. Ta funkcja umożliwia kierownikom i kierownikom magazynów tworzenie niestandardowych wykresów obciążenia, które można wykorzystać do monitorowania postępu bieżącej pracy i jej pozostałej ilości. Kierownicy magazynów mogą tworzyć wiele widoków i konfigurować automatyczne odświeżanie, gdy tego potrzebują.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b7512ea6ad2e97db388bac6750482f7ed967140
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225938"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810493"
 ---
 # <a name="outbound-workload-visualization"></a>Wychodzące wizualizacje obciążenia pracą
 

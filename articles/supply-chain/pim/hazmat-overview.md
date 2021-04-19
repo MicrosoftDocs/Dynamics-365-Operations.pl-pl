@@ -2,11 +2,9 @@
 title: Omówienie materiałów niebezpiecznych
 description: Ten temat zawiera przegląd funkcji związanych z obsługą i dokumentami materiałów niebezpiecznych podczas zarządzania informacjami o produktach i zarządzania magazynem.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231895"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829385"
 ---
 # <a name="hazardous-materials-overview"></a>Omówienie materiałów niebezpiecznych
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W celu zachowania zgodności z przepisami dotyczącymi wysyłki i transportu, organizacje, które dostarczają materiały, które są sklasyfikowane jako towary niebezpieczne, muszą zawierać dodatkowe dokumentacji wraz z ich wysyłką. Funkcja materiałów niebezpiecznych umożliwia klientom przechowywanie informacji związanych ze zwolnionymi pozycjami. Te informacje mogą być następnie używane w celu przygotowania dokumentacji dotyczącej wysyłki. Organizacja, która dostarcza towary niebezpieczne, musi dysponować własnymi procesami i procedurami służącymi do zarządzania procesem wysyłki. Microsoft Dynamics 365 Supply Chain Management to tylko narzędzie, które może pomóc w wygenerowaniu wymaganych dokumentów.
 

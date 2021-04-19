@@ -2,11 +2,9 @@
 title: Uzupełnianie zapasów ponad pojemność lokalizacji
 description: Ten temat zawiera informacje dotyczące funkcji uzupełniania zapasów pojemności lokalizacji. Ta funkcja umożliwia utworzenie wszystkich prac związanych z uzupełnianiem zapasów, które będą wymagane w danym dniu, i zarządza dostępnością tych prac, aby zapewnić, że w lokalizacji pobrania nie zabraknie zapasów ani nie przekroczą pojemności.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228400"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823246"
 ---
 # <a name="replenishment-over-location-capacity"></a>Uzupełnianie zapasów ponad pojemność lokalizacji
 
@@ -241,7 +239,7 @@ W zależności od ilości dostępnych ilości pracy mogą być nieco niezmienne.
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Identyfikator numeru identyfikacyjnego dostępnych zapasów
 
-W dalszej części tego scenariusza będzie używana aplikacja magazynu (lub emulator), gdzie należy zidentyfikować numer identyfikacyjny w celu ukończenia scenariuszy pobierania i uzupełniania zapasów.
+W dalszej części tego scenariusza będzie używana aplikacja Warehouse Management (lub emulator), gdzie należy zidentyfikować numer identyfikacyjny w celu ukończenia scenariuszy pobierania i uzupełniania zapasów.
 
 Aby znaleźć identyfikatory numerów identyfikacyjnych, które będą potrzebne później, należy wykonać poniższe kroki.
 
@@ -266,7 +264,7 @@ Uzupełnianie lokalizacji w magazynie jest wykonywane dla pierwszych dwóch iden
 
 #### <a name="replenishment"></a>Uzupełnianie zapasów
 
-1. Zaloguj się do aplikacji magazynowania jako użytkownik w magazynie *61*. (Wprowadź *61* jako identyfikator użytkownika i *1* jako hasło.)
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie *61*. (Wprowadź *61* jako identyfikator użytkownika i *1* jako hasło.)
 1. Przejdź do **Zapasy \> Uzupełnienie**.
 
     Zostanie wyświetlony monit o wykonanie pierwszej pracy uzupełniania zapasów. Wyświetlany jest numer pozycji, ilość i lokalizacja do pobrania.
@@ -296,7 +294,7 @@ Dopóki w lokalizacji nie zostanie pobrana wystarczająca ilość zapasów w cel
 
 Aby można było ukończyć pozostałe zadanie uzupełniania zapasów, lokalizacja pobrania musi zostać wyczerpana z zapasów do poziomu, w którym może zostać odblokowana pozostała praca uzupełniająca. Innymi słowy, suma ilości dostępnych zapasów w lokalizacji i ilości uzupełniania nie może przekroczyć wartości **Ilości przepełnienia**. Gdy ta suma jest mniejsza niż ilość przepełnienia, zostanie odblokowana pozostała praca uzupełniająca.
 
-1. Zaloguj się do aplikacji magazynowania jako użytkownik w magazynie *61*. (Wprowadź *61* jako identyfikator użytkownika i *1* jako hasło.)
+1. Zaloguj się do aplikacji Warehouse Management jako użytkownik w magazynie *61*. (Wprowadź *61* jako identyfikator użytkownika i *1* jako hasło.)
 1. Przejdź do **Wychodzące \> Pobieranie sprzedaży**.
 1. Wprowadź pierwszy identyfikator pracy dla zamówienia sprzedaży 1.
 

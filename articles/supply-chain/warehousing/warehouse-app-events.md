@@ -2,11 +2,9 @@
 title: Zdarzenia aplikacji magazynowej
 description: W tym temacie opisano przetwarzanie zdarzeń aplikacji magazynu używane do przetwarzania komunikatów zdarzeń aplikacji magazynowych w ramach zadania wsadowego.
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 0bafcbd5306860cb80d6e813aabf83853a9011c1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d63cdea8917bed762bf8d970a408e5931aec48b7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248650"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837400"
 ---
 # <a name="warehouse-app-event-processing"></a>Przetwarzanie zdarzenia aplikacji magazynu
 
 [!include [banner](../includes/banner.md)]
 
-Zadania wsadowe działające w module Supply Chain Management mogą używać danych z kolejki do przetwarzania zdarzeń wydawanych przez aplikację magazynu w celu reagowania w razie potrzeby na zdarzenia sygnalizujące. Ta funkcja umożliwia dodanie odpowiednich zdarzeń do kolejki w odpowiedzi na określone typy akcji podejmowanych przez pracowników korzystających z aplikacji. Przykładem jest użycie opcji **Utwórz i przetwórz zamówienia przeniesienia z funkcji aplikacji magazynu**, nagłówek i wiersze zamówienia przeniesienia są tworzone i aktualizowane w wewnętrznej odpowiedzi, gdy system uruchamia zadanie wsadowe **Przetwarzanie zdarzeń aplikacji magazynu**.
+Zadania wsadowe działające w module Supply Chain Management mogą używać danych z kolejki do przetwarzania zdarzeń wydawanych przez aplikację Warehouse Management w celu reagowania w razie potrzeby na zdarzenia sygnalizujące. Ta funkcja umożliwia dodanie odpowiednich zdarzeń do kolejki w odpowiedzi na określone typy akcji podejmowanych przez pracowników korzystających z aplikacji. Przykładem jest użycie opcji *Utwórz i przetwórz zamówienia przeniesienia z funkcji aplikacji magazynu*, nagłówek i wiersze zamówienia przeniesienia są tworzone i aktualizowane w wewnętrznej odpowiedzi, gdy system uruchamia zadanie wsadowe **Przetwarzanie zdarzeń aplikacji magazynu**.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>Włączanie funkcji Przetwarzanie zdarzeń aplikacji magazynu
 
@@ -50,7 +48,7 @@ Umożliwia konfigurowanie zaplanowanego zadania wsadowego w celu przetwarzania z
 
 ## <a name="query-warehouse-app-events"></a>Kwerenda zdarzeń aplikacji magazynu
 
-Komunikaty dotyczące kolejki zdarzeń i zdarzeń generowane przez aplikację magazynu można przeglądać, przechodząc do **Zarządzanie magazynem \> Zapytania i raporty \> Dzienniki urządzeń przenośnych \> Zdarzenia aplikacji magazynu**.
+Komunikaty dotyczące kolejki zdarzeń i zdarzeń generowane przez aplikację Warehouse Management można przeglądać, przechodząc do **Zarządzanie magazynem \> Zapytania i raporty \> Dzienniki urządzeń przenośnych \> Zdarzenia aplikacji magazynu**.
 
 ## <a name="the-standard-event-queue-process"></a>Standardowy proces kolejki zdarzeń
 

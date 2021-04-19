@@ -2,11 +2,9 @@
 title: Strategia zmiennej na potrzeby konfiguracji produktów
 description: W tym temacie opisano, jak za pomocą strategii doboru solverów poprawić działanie konfiguracji produktu.
 author: cvocph
-manager: tfehr
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c368fe3ede2818f28e2063ae22cdfd49cd9bc68f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 82332a8ac8a68f5a9092ae08a094514827f39113
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244190"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812722"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Strategia zmiennej na potrzeby konfiguracji produktów
 

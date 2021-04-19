@@ -2,11 +2,9 @@
 title: Tworzenie zasobu operacyjnego
 description: Zasób operacyjny wykonuje działania projektu lub procesu produkcji.
 author: sorenva
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 514b0b27065b4318891a84f364b39e8e378d6a4a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9ab91c449293338469fa2832156a85c4c32301fd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255092"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829049"
 ---
 # <a name="create-an-operations-resource"></a>Tworzenie zasobu operacyjnego
 

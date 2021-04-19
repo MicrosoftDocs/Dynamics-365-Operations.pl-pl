@@ -1,12 +1,10 @@
 ---
 title: Tworzenie zamówień przeniesienia z aplikacji magazynu
-description: W tym temacie opisano sposób tworzenia i przetwarzania zamówień przeniesienia z funkcji aplikacji magazynowej
+description: W tym temacie opisano sposób tworzenia i przetwarzania zamówień przeniesienia z funkcji aplikacji Warehouse Management
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 855b057706bc2f8315084a3cebec6f855a4d01e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214137"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838377"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
 [!include [banner](../includes/banner.md)]
 
-Ta funkcja umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji magazynowej. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji, aby dodać je do zamówienia przeniesienia. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych.
+Ta funkcja umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji Warehouse Management. Pracownik rozpoczyna od wybrania magazynu docelowego i może skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji, aby dodać je do zamówienia przeniesienia. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych.
 
-## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie tworzenia zamówień przeniesienia z funkcji aplikacji magazynowej
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Włączanie tworzenia zamówień przeniesienia z funkcji aplikacji magazynowej
 
 Aby móc używać tej funkcji, musi zostać włączona w systemie razem z warunkami wstępnymi. Administratorzy mogą skorzystać ze strony [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją w razie potrzeby.
 
@@ -50,8 +48,8 @@ Poniżej przedstawiono ogólne wskazówki dotyczące konfigurowania elementu men
 1. Wybierz pozycję **Nowy**, aby dodać nową pozycję menu. Następnie wprowadź następujące ustawienia, aby rozpocząć:
 
     - **Nazwa elementu menu** — przypisz nazwę w takiej postaci, w jakiej powinna się ona pojawiać w Supply Chain Management.
-    - **Tytuł** — przypisz nazwę menu w takiej postaci, w jakiej powinna się pojawić w aplikacji magazynowej.
-    - **Tryb** — wybierz ustawienie *Pośrednie* (ta aplikacja magazynowa nie utworzy pracy).
+    - **Tytuł** — przypisz nazwę menu w takiej postaci, w jakiej powinna się pojawić w aplikacji Warehouse Management.
+    - **Tryb** — wybierz ustawienie *Pośrednie* (ta pozycja menu nie utworzy pracy).
     - **Kod działania** — wybierz ustawienie *Utwórz zamówienia przeniesienia na podstawie numerów identyfikacyjnych*, aby umożliwić pracownikom magazynowym tworzenie zamówienia przeniesienia na podstawie jednego lub większej liczby zeskanowanych numerów identyfikacyjnych.
 
 1. Użyj ustawienia **Zasady tworzenia wierszy zamówienia przeniesienia**, aby określić sposób tworzenia wierszy zamówienia przeniesienia dla tego elementu menu. Linie zostaną utworzone/zaktualizowane na podstawie dostępnych zapasów zarejestrowanych dla zeskanowanych numerów identyfikacyjnych. Wybierz jedną z następujących wartości:
@@ -74,7 +72,7 @@ Poniżej przedstawiono ogólne wskazówki dotyczące konfigurowania elementu men
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Tworzenie zamówienia przeniesienia na podstawie numerów identyfikacyjnych
 
-Aplikacja magazynowa ma prosty proces tworzenia zamówień przeniesienia na podstawie numerów identyfikacyjnych. W tym celu pracownik wykonuje następujące czynności, korzystając z aplikacji magazynowej:
+Aplikacja Warehouse Management ma prosty proces tworzenia zamówień przeniesienia na podstawie numerów identyfikacyjnych. W tym celu pracownik wykonuje następujące czynności, korzystając z aplikacji Warehouse Management:
 
 1. Utwórz zamówienie przeniesienia i określ magazyn docelowy.
 1. Wybierz każdy numer identyfikacyjny do wysłania.
@@ -258,9 +256,9 @@ W tym przykładzie używane są dwa **zdarzenia aplikacji magazynowych** (*Tworz
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Uzyskiwanie informacji o zdarzeniach aplikacji magazynowej
 
-Komunikaty dotyczące kolejki zdarzeń i zdarzeń generowane przez aplikację magazynu można przeglądać, przechodząc do **Zarządzanie magazynem \> Zapytania i raporty \> Dzienniki urządzeń przenośnych \> Zdarzenia aplikacji magazynu**.
+Komunikaty dotyczące kolejki zdarzeń i zdarzeń generowane przez aplikację Warehouse Management można przeglądać, przechodząc do **Zarządzanie magazynem \> Zapytania i raporty \> Dzienniki urządzeń przenośnych \> Zdarzenia aplikacji magazynu**.
 
-Komunikaty zdarzenia *Tworzenie zamówienia przeniesienia* uzyskają stan *Oczekujące*, co oznacza, że zadanie wsadowe **Przetwarzanie zdarzeń aplikacji magazynowej** nie będzie odbierać i przetwarzać komunikatów zdarzeń. Jeśli komunikat zdarzenia zostanie zaktualizowany do stanu *W kolejce*, zadanie wsadowe przetworzy zdarzenia. Będzie to mieć miejsce w tym samym czasie co tworzenie zdarzenia *Zakończ zamówienie przeniesienia* (gdy pracownik wybierze przycisk **Zakończ zamówienie** w aplikacji magazynowej). Po przetworzeniu komunikatów o zdarzeniach *Tworzenia zamówienia przeniesienia* stan jest aktualizowany na *Zakończone* lub *Niepowodzenie*. Jeśli stan *Zakończ zamówienie przeniesienia* zostanie zmieniony na *Zakończone*, wszystkie powiązane ze sobą zdarzenia zostaną usunięte z kolejki.
+Komunikaty zdarzenia *Tworzenie zamówienia przeniesienia* uzyskają stan *Oczekujące*, co oznacza, że zadanie wsadowe **Przetwarzanie zdarzeń aplikacji magazynowej** nie będzie odbierać i przetwarzać komunikatów zdarzeń. Jeśli komunikat zdarzenia zostanie zaktualizowany do stanu *W kolejce*, zadanie wsadowe przetworzy zdarzenia. Będzie to mieć miejsce w tym samym czasie co tworzenie zdarzenia *Zakończ zamówienie przeniesienia* (gdy pracownik wybierze przycisk **Zakończ zamówienie** w aplikacji Warehouse Management). Po przetworzeniu komunikatów o zdarzeniach *Tworzenia zamówienia przeniesienia* stan jest aktualizowany na *Zakończone* lub *Niepowodzenie*. Jeśli stan *Zakończ zamówienie przeniesienia* zostanie zmieniony na *Zakończone*, wszystkie powiązane ze sobą zdarzenia zostaną usunięte z kolejki.
 
 Ponieważ **Zdarzenia aplikacji magazynowej** dotyczące tworzenia danych zamówienia przeniesienia nie będą przetwarzane przez zadanie wsadowe, zanim komunikat zostanie zaktualizowany do stanu *W kolejce*, trzeba będzie wyszukać żądane numery zamówień przeniesienia jako część pola **Identyfikator**. Pole **Identyfikator** znajduje się w nagłówku strony **Zdarzenia aplikacji magazynowej**.
 
@@ -276,11 +274,11 @@ Aby uzyskać więcej informacji, zobacz temat [Przetwarzania zdarzeń aplikacji 
 
 Podczas tego scenariusza zaszły następujące zdarzenia:
 
-1. Za pomocą aplikacji magazynowej wybrano element menu, w którym jest używany kod działania **Tworzenie zamówienia przeniesienia z numerów identyfikacyjnych**.
+1. Za pomocą aplikacji Warehouse Management wybrano element menu, w którym jest używany kod działania **Tworzenie zamówienia przeniesienia z numerów identyfikacyjnych**.
 1. W aplikacji został wyświetlony monit o wybranie magazynu docelowego dla zamówienia przeniesienia. Magazyn źródłowy jest zawsze tym, który jest obecnie zalogowany pracownik.
 1. W przypadku wybrania magazynu docelowego system zarezerwował numer identyfikacyjny dla nadchodzącego zamówienia przeniesienia (na podstawie kolejnych numerów zamówień przeniesienia zdefiniowanych w systemie), ale nie utworzył jeszcze zamówienia przeniesienia.
 1. Podczas skanowania numeru identyfikacyjnego *LP10* zawierającego dostępne zapasy, które powinny zostać przeniesione do nowego magazynu **zdarzenie aplikacji magazynowej** zostało dodane do kolejki zdarzeń w celu późniejszego przetworzenia. Zdarzenie magazynu zawierało szczegółowe informacje dotyczące skanowania, w tym numer zamierzonego zamówienia przeniesienia.
-1. W aplikacji magazynowej po wybraniu przycisku **Zakończ zamówienie** zostało utworzone nowe zdarzenie aplikacji magazynowej **Zakończ zamówienie przeniesienia** oraz powiązane z nim zdarzenie, a opcja **Tworzenie zamówienia przeniesienia** zmieniło stan na **W kolejce**.
+1. W aplikacji Warehouse Management po wybraniu przycisku **Zakończ zamówienie** zostało utworzone nowe zdarzenie aplikacji magazynowej **Zakończ zamówienie przeniesienia** oraz powiązane z nim zdarzenie, a opcja **Tworzenie zamówienia przeniesienia** zmieniło stan na **W kolejce**.
 1. W zapleczu **Zadanie wsadowe Przetwarzaj zdarzenia aplikacji magazynowej** pobrało zdarzenie **W kolejce**, a następnie zebrało dostępne zapasy związane z zeskanowanym numerem identyfikacyjnym. Na podstawie stanu dostępnych zapasów utworzono rekord rzeczywistego zamówienia przeniesienia i powiązane wiersze. Zadanie wypełniło również pole **Zasady wysyłki wychodzącej** dla zamówienia przeniesienia z wartością opartą na konfiguracji *Zwolnienie i potwierdzenie wysyłki* i powiązało numer identyfikacyjny z wierszami strategii **Oparta na numerze identyfikacyjnym**.
 1. Na podstawie wartości pola **Zasady wysyłki wychodzącej** kwerenda **zadanie wsadowe Automatyczne zwalnianie zamówień przeniesienia** zwolniło zamówienie przeniesienia do magazynu wysyłki. Z powodu konfiguracji używanych funkcji **Szablon grupy czynności**, **Szablon pracy** i **Dyrektywy lokalizacji** praca wykorzystała procesy automatyczne, co spowodowało aktualizację **Stan ładunku** na *Załadowane*.
 1. **Zadanie wsadowe Przetwarzanie wysyłek wychodzących** jest wykonywane dla ładunku, co powoduje wysłanie zamówienia przeniesienia i wygenerowanie wcześniejszego zawiadomienia o wysyłce (ASN).
@@ -294,13 +292,13 @@ Podczas tego scenariusza zaszły następujące zdarzenia:
 
 Funkcja *Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej* musi być włączona. Aby uzyskać więcej informacji, zobacz temat [Włączanie tworzenia zamówień przeniesienia z aplikacji magazynowej](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-app-processes"></a>Procesy aplikacji magazynowej
+### <a name="warehouse-management-mobile-app-processes"></a>Procesy aplikacji mobilnej Zarządzanie magazynem
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Dlaczego nie widzę przycisku menu „Zakończ zamówienie"?
 
 Do zamówienia przeniesienia musi być przypisany co najmniej jeden numer identyfikacyjny.
 
-#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Czy kilku użytkowników aplikacji magazynowej może jednocześnie dodawać numery identyfikacyjne do tego samego zamówienia przeniesienia?
+#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Czy kilku użytkowników aplikacji Warehouse Management może jednocześnie dodawać numery identyfikacyjne do tego samego zamówienia przeniesienia?
 
 Tak, kilku pracowników magazynu może skanować numery identyfikacyjne w tym samym zamówieniu przeniesienia.
 
@@ -312,11 +310,11 @@ Nie, w danym momencie numer identyfikacyjny może być dodany tylko do jednego z
 
 Nie, do zamówienia przeniesienia ze zdarzeniem aplikacji magazynowej **Zakończ zamówienie przeniesienia** nie można dodać kolejnych numerów identyfikacyjnych.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak można znaleźć istniejące zamówienia przeniesienia, które mają być używane za pośrednictwem przycisku „Wybierz zamówienie przeniesienia” w aplikacji magazynowej, jeśli zamówienie nie zostało jeszcze utworzone w systemie wewnętrznej bazy danych?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Jak można znaleźć istniejące zamówienia przeniesienia, które mają być używane za pośrednictwem przycisku „Wybierz zamówienie przeniesienia” w aplikacji Warehouse Management, jeśli zamówienie nie zostało jeszcze utworzone w systemie wewnętrznej bazy danych?
 
 Obecnie nie można wyszukiwać zamówień przeniesienia w aplikacji, ale można znaleźć numery zamówień przeniesienia na stronie **Zdarzenia aplikacji magazynowej**. Aby uzyskać więcej informacji, zobacz temat [Informacje o zdarzeniach aplikacji magazynowej](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Czy można ręcznie wybrać numer zamówienia przeniesienia, który ma być używany w aplikacji magazynowej?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Czy można ręcznie wybrać numer zamówienia przeniesienia, który ma być używany w aplikacji Warehouse Management?
 
 Obsługiwane są tylko automatycznie generowane numery zamówień przeniesienia za pośrednictwem sekwencji numerów.
 

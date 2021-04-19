@@ -2,7 +2,6 @@
 title: Zarządzanie podróżami
 description: W tym temacie opisano sposób pracy z podróżami. Podróż zazwyczaj przedstawia statek. Jednak w zależności od twoich praktyk i procedur może reprezentować dostawcę, zamówienie zakupu lub inny element, który ma sens dla Twojej organizacji.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501013"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833792"
 ---
 # <a name="manage-voyages"></a>Zarządzanie podróżami
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Podróż zazwyczaj przedstawia statek. Jednak w zależności od twoich praktyk i procedur może reprezentować dostawcę, zamówienie zakupu lub inny element, który ma sens dla Twojej organizacji.
 
@@ -74,9 +72,9 @@ W poniższej tabeli opisano akcje, które są dostępne bezpośrednio na karcie 
 | Księguj fakturę | Opublikuj fakturę dla wszystkich linii zamówień w podróży. Jeśli towary w podróży przejdą przez proces przetwarzania towarów w tranzycie, wiersze zamówienia zakupu zostaną zafakturowane przed zakończeniem procesu odbioru. Po zafakturowaniu oryginalnego zamówienia zakupu zostaną utworzone zamówienia towarów w drodze, które są skojarzone z oryginalnymi wierszami zamówienia zakupu. Zamówienia te mogą następnie zostać odebrane przez magazyn. W przypadku wysyłek obejmujących wiele firm otwierane jest nowe okno dialogowe księgowania faktur dla każdej firmy. |
 | Wyślij zamówienie przeniesienia | Opublikuj zlecenie transferu dla wszystkich linii zlecenia transferu w podróży. Po wybraniu tego przycisku do aktualizacji będą dostępne tylko polecenia przeniesienia. |
 | Przyjmuj zamówienie przeniesienia | Opublikuj paragonu zlecenia dla wszystkich linii zlecenia transferu w podróży. |
-| Przyjmuj towar w drodze | Odbierz wszystkie linie zamówień, które są w trakcie podróży. Ten przycisk jest jedną z trzech dostępnych opcji odbioru towarów w tranzycie podczas podróży. (Pozostałe dwie opcje to przycisk **Utwórz arkusz przybycia**, który jest opisany w dalszej części tej tabeli, oraz aplikacja magazynowa). Ta opcja jest najprostszą opcją i umożliwia przetwarzanie towarów w tranzycie z magazynu towarów w tranzycie i do magazyn docelowy. Jeśli chcesz mieć większą kontrolę nad procesem, skorzystaj z dziennika przybycia lub urządzenia mobilnego, aby przetworzyć przyjęcie towarów. |
+| Przyjmuj towar w drodze | Odbierz wszystkie linie zamówień, które są w trakcie podróży. Ten przycisk jest jedną z trzech dostępnych opcji odbioru towarów w tranzycie podczas podróży. (Pozostałe dwie opcje to przycisk **Utwórz arkusz przybycia**, który jest opisany w dalszej części tej tabeli, oraz aplikacja Warehouse Management). Ta opcja jest najprostszą opcją i umożliwia przetwarzanie towarów w tranzycie z magazynu towarów w tranzycie i do magazyn docelowy. Jeśli chcesz mieć większą kontrolę nad procesem, skorzystaj z dziennika przybycia lub urządzenia mobilnego, aby przetworzyć przyjęcie towarów. |
 | Znajdź koszty automatyczne | Znajdź odpowiednie koszty podróży. Jeśli te koszty zostały już znalezione lub zaktualizowane, pojawi się następujący komunikat: „Istnieją niezafakturowane wiersze kosztów. Czy chcesz je zastąpić?" Wszelkie koszty, które nie były związane z podróżą w czasie tworzenia, zostaną znalezione. Koszty podróży, które są związane z podróżą i które zostały zafakturowane, nie zostaną nadpisane. |
-| Utwórz arkusz przyjęcia | <p>Otwórz okno dialogowe **Tworzenie arkusza przybycia**, w którym można utworzyć arkusz przybycia określający lokalizację. W oknie dialogowym dostępne są następujące opcje:</p><ul><li>**Utwórz z towarów w drodze** lub **Utwórz z zamówienia przeniesienia** – Etykieta tej opcji zmienia się w zależności od tego, czy korzystasz z procesu transportu towarów. Ustaw ją na *Tak*, aby otworzyć stronę dziennika przybycia, która umożliwia przetwarzanie standardowego dziennika przybycia dla towarów w tranzycie, które są skojarzone z podróżą. Jeśli towar został już przyjęty w docelowym magazynie docelowym, nie zostanie dodany do wierszy arkusza przybycia.</li><li>**Inicjuj ilość** — Ustaw tę opcję na *Tak*, aby zainicjować ilość, która zostanie odebrana, na podstawie ilości towarów określonej w wierszu podróży. Jeżeli linia rejsu została częściowo odebrana, ta ilość będzie ilością pozostałą. Zaleca się, aby ta opcja była ustawiona na wartość *Tak*.</li><li>**Utwórz z wierszy zamówienia** – Ustaw tę opcję na *Tak*, aby pobrać wartość z wierszy zamówienia.</li></ul><p>Ten przycisk jest jedną z trzech dostępnych opcji odbioru towarów podczas podróży. (Pozostałe opcje to przycisk **Odbierz towary w drodze**, który opisano wcześniej w tej tabeli, oraz aplikację magazynu)</p> |
+| Utwórz arkusz przyjęcia | <p>Otwórz okno dialogowe **Tworzenie arkusza przybycia**, w którym można utworzyć arkusz przybycia określający lokalizację. W oknie dialogowym dostępne są następujące opcje:</p><ul><li>**Utwórz z towarów w drodze** lub **Utwórz z zamówienia przeniesienia** – Etykieta tej opcji zmienia się w zależności od tego, czy korzystasz z procesu transportu towarów. Ustaw ją na *Tak*, aby otworzyć stronę dziennika przybycia, która umożliwia przetwarzanie standardowego dziennika przybycia dla towarów w tranzycie, które są skojarzone z podróżą. Jeśli towar został już przyjęty w docelowym magazynie docelowym, nie zostanie dodany do wierszy arkusza przybycia.</li><li>**Inicjuj ilość** — Ustaw tę opcję na *Tak*, aby zainicjować ilość, która zostanie odebrana, na podstawie ilości towarów określonej w wierszu podróży. Jeżeli linia rejsu została częściowo odebrana, ta ilość będzie ilością pozostałą. Zaleca się, aby ta opcja była ustawiona na wartość *Tak*.</li><li>**Utwórz z wierszy zamówienia** – Ustaw tę opcję na *Tak*, aby pobrać wartość z wierszy zamówienia.</li></ul><p>Ten przycisk jest jedną z trzech dostępnych opcji odbioru towarów podczas podróży. (Pozostałe opcje to przycisk **Odbierz towary w drodze**, który opisano wcześniej w tej tabeli, oraz aplikację Warehouse Management.)</p> |
 | Nalicz koszty | Koszty można naliczać, gdy typ kosztu ma konto księgowe określone dla obciążenia. Ten przycisk jest zwykle używany, gdy zapasy są w transporcie lub gdy towary zostały odebrane i zafakturowane. |
 | Agreguj koszty | Przenieś koszty z poziomu kontenera wysyłkowego do poziomu podróży. Możesz użyć tego przycisku w scenariuszu usług wspólnych/wysyłki, w którym wiele podmiotów współdzieli pojemnik wysyłkowy lub miejsce na karton. Na przykład podróż ma 40-stopowy kontener transportowy i 20-stopowy kontener transportowy, a podział odbywa się według objętości. W takim przypadku towary/podmioty, które dzielą lub wykorzystują przestrzeń w 20-stopowym kontenerze wysyłkowym, mogą zostać ukarane. Aby sprawiedliwie rozłożyć koszty, niektóre organizacje mogą chcieć przenieść koszty na podróż i rozłożyć je na podstawie metody podziału na poziomie podróży. |
 | Zmień szablon podróży | Otwórz okno dialogowe, w którym możesz zmienić szablon podróży. Po zmianie szablonu koszty podróży zostaną usunięte. W związku z tym konieczne może być wybranie opcji **Znajdź koszty automatyczne** (zobacz opis wcześniejszy w tej tabeli) lub ręczne ręczne dodanie kosztów ponownie. |

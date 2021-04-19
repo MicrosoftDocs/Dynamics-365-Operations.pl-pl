@@ -2,11 +2,9 @@
 title: Udostępnianie przewodników po rzeczywistości mieszanej pracownikom produkcji
 description: W tym temacie opisano sposób integrowania modułu zarządzania produkcją w systemie Microsoft Dynamics 365 Supply Chain Management z Dynamics 365 Guides.
 author: cabeln
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 48e0dfeba1a9744c90608d4d9009484df91c4b85
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 59fe3996013737198d4fbc86d64f8ef9dbe035e4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246148"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829361"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Udostępnianie przewodników po rzeczywistości mieszanej pracownikom produkcji
 

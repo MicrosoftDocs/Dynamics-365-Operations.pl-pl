@@ -2,11 +2,9 @@
 title: Praca z predefiniowanymi ustawieniami stylów
 description: W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 55d333c3ae94b17dabaef3c697c698f068a06543
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7279b52f801c2cb2f156d220d1a456b773d10f33
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226598"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791758"
 ---
 # <a name="work-with-style-presets"></a>Praca z predefiniowanymi ustawieniami stylów
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano, jak pracować z predefiniowanymi ustawieniami stylów w konstruktorze witryn Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Ustawienie predefiniowane stylu jest zapamiętanym zestawem wszystkich wartości stylów, które są tworzone w motywie danej witryny. Można go użyć do natychmiastowego zmiany wyglądu witryny za pomocą konstruktora witryn. Ustawienia predefiniowane stylów umożliwiają autorom modułu Commerce site Builder szybkie zmienianie, przeglądanie i uaktywnianie zbioru wartości stylów w ich oddziale, bez konieczności używania arkuszy stylów kaskadowych (CSS) lub wdrażania motywów. Style czcionek, style przycisków i kolory oddziału są typowymi przykładami zmiennych stylów, którymi można zarządzać za pomocą predefiniowanych ustawień stylu.
 

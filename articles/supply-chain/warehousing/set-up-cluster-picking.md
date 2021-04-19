@@ -2,11 +2,9 @@
 title: Konfiguruj pobieranie dla grupy
 description: W tym temacie opisano sposób konfigurowania funkcji pobierania dla grupy oraz stosowania potwierdzania towaru z pobieraniem dla grupy.
 author: Mirzaab
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b3df8cf5e63fe97925f17001e836a41c703dfc9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 481db453656097de8eeb93c89306509493cce3c3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239237"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831201"
 ---
 # <a name="set-up-cluster-picking"></a>Konfiguruj pobieranie dla grupy
 
