@@ -68,7 +68,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Kroki instalacji składników kanału Retail w środowisku lokalnym
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Zakup rozwiązania Finance + Operations (on-premises)
+                - name: Kup rozwiązanie Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Wskazówki dotyczące implementacji Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
@@ -280,7 +280,7 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurowanie i instalowanie modułu Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
-                - name: Masowe wdrażanie składników samoobsługi
+                - name: Masowe wdrażanie starszych składników samoobsługi rozwiązania
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Zdarzenia składników rozwiązania Commerce używane na potrzeby diagnostyki i rozwiązywania problemów
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -1056,6 +1056,16 @@
                       href: author-header-module.md
                     - name: Moduł stopki
                       href: author-footer-module.md
+                - name: 'Moduły strony, metadanych i skryptu'
+                  items:
+                    - name: Moduł domyślnej strony
+                      href: default-page-module.md
+                    - name: Moduły podsumowania strony
+                      href: page-summary-module.md
+                    - name: Moduł metatagów
+                      href: metatags-module.md
+                    - name: Moduły skryptów wbudowanych i zewnętrznych
+                      href: script-module.md
                 - name: Moduły strony szczegółów produktu
                   items:
                     - name: Moduł pola zakupu

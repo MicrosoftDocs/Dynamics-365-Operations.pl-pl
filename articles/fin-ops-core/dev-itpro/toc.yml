@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Korzystanie z usługi Power Portal z modelem danych strony
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Uaktualnianie do modelu globalnej książki adresowej i strony
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Integracja uwag
                               href: data-entities/dual-write/notes-integration.md
                             - name: Odwołanie do mapowania
@@ -714,6 +716,8 @@
               items:
                 - name: Język X++ i funkcje debugera
                   href: dev-tools/new-x-debugger-features.md
+                - name: Wymagania programu Visual Studio 2017 dla języka X++
+                  href: dev-tools/developer-tools-vs2017.md
                 - name: Debugowanie kodu w języku X++
                   href: dev-tools/debug-xpp.md
                 - name: Klasy EventHandlerResult w scenariuszach dotyczących żądań lub odpowiedzi
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Obowiązywanie dat
               href: dev-tools/date-effectivity.md
-            - name: Licencjonowanie dostawców ISV
-              href: dev-tools/isv-licensing.md
-            - name: Licencjonowanie dostawców ISV lokalnie
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Tworzenie dla niezależnych dostawców oprogramowania
+              items:
+                - name: Łączenie modułów języka X++ z pakietami za pomocą ISV Studio
+                  href: dev-tools/isv-studio-solutions.md
+                - name: Licencjonowanie dostawców ISV
+                  href: dev-tools/isv-licensing.md
+                - name: Licencjonowanie dostawców ISV lokalnie
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: Ogólne rozporządzenie o ochronie danych (RODO)
           items:
             - name: Omówienie Ogólnego rozporządzenia o ochronie danych (RODO)
@@ -1142,10 +1150,10 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Integracja z usługą Microsoft Power Platform
           items:
+            - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
+              href: power-platform/overview.md
             - name: Jednostki wirtualne
               items:
-                - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
-                  href: power-platform/overview.md
                 - name: Modelowanie jednostek
                   href: power-platform/entity-modeling.md
                 - name: Zarządzanie cyklem życia aplikacji
@@ -1454,6 +1462,8 @@
               href: lifecycle-services/support-experience.md
             - name: Zarządzanie środowiskami pomocy technicznej aplikacji Finance and Operations
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Obsługa i monitorowanie produkcji
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Administrowanie systemem
           items:
             - name: Administrowanie systemem — strona główna

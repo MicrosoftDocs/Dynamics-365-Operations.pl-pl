@@ -932,8 +932,10 @@
                   href: general-ledger/general-ledger-account-balances.md
                 - name: Definiowanie wymiarów finansowych
                   href: general-ledger/tasks/define-financial-dimensions.md
-                - name: Obsługa domyślnych szablonów wymiarów finansowych
+                - name: Obsługa domyślnych szablonów wymiaru finansowego
                   href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                - name: Zestawy wymiarów finansowych
+                  href: general-ledger/financial-dimension-sets.md
                 - name: Tworzenie struktur kont
                   href: general-ledger/tasks/create-account-structures.md
                 - name: Wymiary finansowe i księgowanie
@@ -1414,38 +1416,66 @@
           items:
             - name: Zasoby globalizacji
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+            - name: Usługi globalizacji
+              items:
+                - name: Omówienie usług globalizacji
+                  href: localizations/globalization-services-overview.md
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Omówienie usługi Regulatory Configuration Service
+                      href: localizations/rcs-overview.md
+                    - name: Regulatory Configuration Service — funkcje globalizacji
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
+                      href: localizations/rcs-global-repo-upload.md
+                - name: Fakturowanie elektroniczne
+                  items:
+                    - name: Omówienie fakturowania elektronicznego
+                      href: localizations/e-invoicing-service-overview.md
+                    - name: Składniki administracyjne fakturowania elektronicznego
+                      href: localizations/e-invoicing-service-administration.md
+                    - name: Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
+                      href: localizations/e-invoicing-configuration-rcs.md
+                    - name: Wystawianie faktur elektronicznych w rozwiązaniach Finance i Supply Chain Management
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                    - name: Tworzenie konta magazynu usługi Azure i Key Vault
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                    - name: Rozpocznij
+                      items:
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
+                          href: localizations/e-invoicing-get-started-service-administration.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym
+                          href: localizations/e-invoicing-get-started.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii
+                          href: localizations/e-invoicing-bra-get-started.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
+                          href: localizations/e-invoicing-eg-get-started.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
+                          href: localizations/e-invoicing-ita-get-started.md
+                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
+                          href: localizations/e-invoicing-mex-get-started.md
+                        - name: Ustawianie fakturowania elektronicznego
+                          href: localizations/e-invoicing-setup.md
+                    - name: Fakturowanie elektroniczne — często zadawane pytania
+                      href: localizations/e-invoicing-faq.md
+                - name: Obliczanie podatku
+                  items:
+                    - name: Omówienie obliczania podatku
+                      href: localizations/global-tax-calcuation-service-overview.md
+                    - name: Rozpoczynanie pracy z obliczaniem podatku
+                      href: localizations/global-get-started-with-tax-calculation-service.md
+                    - name: Obsługa funkcji podatków dla zamówień przeniesienia
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                    - name: Dodawanie pól danych w konfiguracjach podatków
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                    - name: Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                    - name: Wiele numerów rejestracji podatku VAT
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Ustawianie środowiska wyszukiwania danych głównych
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
             - name: Aktualizacje wymagane przepisami prawa
               href: localizations/regulatory-updates.md
-            - name: Fakturowanie elektroniczne
-              items:
-                - name: Omówienie fakturowania elektronicznego
-                  href: localizations/e-invoicing-service-overview.md
-                - name: Składniki administracyjne fakturowania elektronicznego
-                  href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
-                  href: localizations/e-invoicing-configuration-rcs.md
-                - name: Wystawianie faktur elektronicznych w rozwiązaniach Finance i Supply Chain Management
-                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-                - name: Tworzenie konta magazynu usług Azure i Key Vault
-                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Rozpocznij
-                  items:
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
-                      href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym
-                      href: localizations/e-invoicing-get-started.md
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii
-                      href: localizations/e-invoicing-bra-get-started.md
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
-                      href: localizations/e-invoicing-eg-get-started.md
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
-                      href: localizations/e-invoicing-ita-get-started.md
-                    - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
-                      href: localizations/e-invoicing-mex-get-started.md
-                    - name: Konfigurowanie fakturowania elektronicznego
-                      href: localizations/e-invoicing-setup.md
-                - name: Fakturowanie elektroniczne — FAQ
-                  href: localizations/e-invoicing-faq.md
             - name: Australia
               items:
                 - name: Australia — omówienie
@@ -1468,6 +1498,8 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Sprawozdanie VAT
                   href: localizations/emea-aut-vat-statement-details.md
+                - name: Raport usług międzynarodowych
+                  href: localizations/emea-aut-cross-border-services-report.md
             - name: Bahrajn
               items:
                 - name: Bahrajn — omówienie
@@ -1492,6 +1524,8 @@
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Raporty uzgodnienia
                   href: localizations/emea-bel-reconciliation-reports.md
+                - name: Raporty arkusza
+                  href: localizations/emea-bel-journal-reports.md
                 - name: Konfigurowanie raportów salda płatności
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Konfiguracja i obsługa badania PRODCOM
@@ -1692,7 +1726,7 @@
               items:
                 - name: Chiny — omówienie
                   href: localizations/china.md
-                - name: Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach
+                - name: Finance and Operations — obsługiwane przez firmę 21Vianet w Chinach
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Porównanie list składowych (BOM)
                   href: localizations/apac-chn-bom-comparison.md
@@ -2118,32 +2152,6 @@
                       href: localizations/ind-news-letter-10-0-13.md
                     - name: Nowości i zmiany w wersji 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
-                - name: Środki trwałe
-                  items:
-                    - name: Przegląd środków trwałych w Indiach
-                      href: localizations/apac-ind-fixed-assets.md
-                    - name: Dołączanie dziennego kalendarza do księgi środków trwałych
-                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Obliczanie amortyzacji zmianowej
-                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Tworzenie grupy modeli magazynu dla pozycji kapitałowych
-                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Tworzenie i księgowanie amortyzacji
-                      href: localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definiowanie typu zmiany i branży dla ksiąg oraz dołączanie do środka trwałego
-                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Wycofywanie transakcji środków trwałych
-                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Obliczanie amortyzacji zmianowej
-                      href: localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Konfigurowanie dziennego kalendarza obrachunkowego
-                      href: localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Konfigurowanie parametrów w celu obliczania amortyzacji
-                      href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Konfigurowanie amortyzacji grupy środków trwałych w księgach amortyzacji
-                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Przenoszenie pozycji kapitałowych do środka trwałego
-                      href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Podatki pośrednie
                   items:
                     - name: Podatek GST (Indie)
@@ -2300,6 +2308,10 @@
                                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                                 - name: Zwroty płatności odbiorcy
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Transakcje zarządzania projektem
+                              items:
+                                - name: Transakcje projektu dotyczące podatku od towarów i usług (GST)
+                                  href: localizations/apac-ind-gst-project-transactions.md
                             - name: Korekta podatku
                               items:
                                 - name: Korekta kwoty podatku
@@ -2336,11 +2348,37 @@
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: TCS od sprzedaży towarów
                           href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                - name: Środki trwałe
+                  items:
+                    - name: Omówienie środków trwałych w Indiach
+                      href: localizations/apac-ind-fixed-assets.md
+                    - name: Dołączanie dziennego kalendarza do księgi środków trwałych
+                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+                    - name: Obliczanie amortyzacji zmianowej
+                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+                    - name: Tworzenie grupy modeli magazynu dla pozycji kapitałowych
+                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
+                    - name: Tworzenie i księgowanie amortyzacji
+                      href: localizations/apac-ind-calculate-post-depreciation.md
+                    - name: Definiowanie typu zmiany i branży dla ksiąg oraz dołączanie do środka trwałego
+                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
+                    - name: Wycofywanie transakcji środków trwałych
+                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+                    - name: Obliczanie amortyzacji zmianowej
+                      href: localizations/apac-ind-calculation-shift-depreciation.md
+                    - name: Konfigurowanie dziennego kalendarza obrachunkowego
+                      href: localizations/tasks/apac-ind-day-based-calendar.md
+                    - name: Konfigurowanie parametrów w celu obliczania amortyzacji
+                      href: localizations/tasks/apac-ind-set-up-depreciation.md
+                    - name: Konfigurowanie amortyzacji grupy środków trwałych w księgach amortyzacji
+                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                    - name: Przenoszenie pozycji kapitałowych do środka trwałego
+                      href: localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Włochy
               items:
                 - name: Włochy — omówienie
                   href: localizations/italy.md
-                - name: Szczegóły sprawozdań VAT
+                - name: Szczegóły sprawozdań podatku VAT
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kwartalne raporty komunikacji dotyczące podatku VAT
                   href: localizations/emea-ita-quarterly-vat-communication.md
@@ -2958,6 +2996,8 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Rejestry wydatków klasyfikowanych
                       href: localizations/rus-rated-expenses-registers.md
+                    - name: Rejestry podatku od zadłużenia rozrachunków z dostawcami i odpisy zadłużeń
+                      href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
             - name: Arabia Saudyjska
               items:
                 - name: Arabia Saudyjska — omówienie
@@ -3034,14 +3074,20 @@
                   href: localizations/thailand.md
                 - name: Raporty kart zapasów
                   href: localizations/apac-tha-stock-card-reports.md
+                - name: Faktury podatkowe
+                  href: localizations/apac-tha-tax-invoices.md
                 - name: Faktura podatkowa podstawiania/korekty
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
                 - name: Niezrealizowany podatek VAT
                   href: localizations/apac-tha-unrealized-vat.md
+                - name: Średni podatek VAT dla transakcji zakupu
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Wymiary oddziału podatkowego
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Raport dotyczący należnego podatku VAT
                   href: localizations/apac-tha-sales-vat-report.md
+                - name: Średni podatek VAT dla transakcji zakupu
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Potrącona zaliczka na podatek
                   href: localizations/apac-tha-withholding-tax.md
             - name: Zjednoczone Emiraty Arabskie (ZEA)
@@ -3869,10 +3915,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Modyfikowanie i uruchamianie formatów w celu używania plików zarządzania dokumentami
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Debugowanie źródeł danych
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Generowanie obrazów kodów kreskowych przy użyciu opcji KOD KRESKOWY
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurowanie źródeł danych WYSZUKIWANIA do używania parametrów specyficznych dla raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Debugowanie źródeł danych
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie mapowania modeli
                   items:
                     - name: Konfigurowanie mapowań modelu raportowania elektronicznego w zależności od kraju
