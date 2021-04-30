@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753703"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894155"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
 
@@ -27,7 +27,7 @@ Interfejs API raportowania elektronicznego pozwala rozszerzyć listę lokalizacj
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Wdróż topologię, która obsługuje ciągłą kompilację. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Musisz mieć dostęp do tej topologii w jednej z następujących ról:
+Wdróż topologię, która obsługuje ciągłą kompilację. Więcej informacji znajdziesz w [Wdrażanie topologii obsługujących ciągłą budowę i automatyzację testów](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). Musisz mieć dostęp do tej topologii w jednej z następujących ról:
 
 - Deweloper raportowania elektronicznego
 - Konsultant funkcjonalny raportowania elektronicznego
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Zmodyfikuj istniejącą klasę `AssetRollForwardService` i wpisz kod źródłowy, który skonfiguruje fabrykę niestandardowego miejsca docelowego dla modułu uruchamiającego raport. Zauważ, że podczas konstruowania fabryki niestandardowego miejsca docelowego jest przekazywany parametr oparty na aplikacji, który określa folder docelowy. W ten sposób folder docelowy jest używany do przechowywania wygenerowanych plików.
 
     > [!NOTE] 
-    > Upewnij się, że podany folder (w tym przykładzie **c:\\0**) jest obecny w lokalnym systemie plików serwera, na którym jest uruchomiona usługa AOS. W przeciwnym razie w czasie wykonywania zostanie zgłoszony wyjątek [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
+    > Upewnij się, że podany folder (w tym przykładzie **c:\\0**) jest obecny w lokalnym systemie plików serwera, na którym jest uruchomiona usługa AOS. W przeciwnym razie w czasie wykonywania zostanie zgłoszony wyjątek [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1).
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

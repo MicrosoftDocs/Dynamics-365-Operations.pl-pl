@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 26e1dc53126c0615332457aa785415c4c7112bbd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9aebb1c8ba7cf4fee3f0471a10872de1e23ce6
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842728"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908863"
 ---
 # <a name="dynamics-365-commerce-and-microsoft-teams-integration-faq"></a>Integracja z usługami Dynamics 365 Commerce i Microsoft Teams — często zadawane pytania
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ten temat zawiera odpowiedzi dotyczące często zadawanych pytań dotyczących integracji Microsoft Dynamics 365 Commerce i Microsoft Teams.
 

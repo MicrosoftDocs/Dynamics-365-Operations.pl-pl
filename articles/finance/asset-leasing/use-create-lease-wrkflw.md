@@ -2,11 +2,11 @@
 title: Używanie przepływów pracy zatwierdzeń wynajmów
 description: W tym temacie opisano sposób używania przepływów pracy do zatwierdzania umów wynajmu składników majątku oraz do śledzenia stanu i historii przepływów pracy.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2f9fc8e337206111b0f2ac1cca87131abe7f283c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b4926ee45841c9fdd5a3cf7d12452e1f06d868c6
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827537"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880721"
 ---
 # <a name="use-lease-approval-workflows"></a>Używanie przepływów pracy zatwierdzeń wynajmów
 

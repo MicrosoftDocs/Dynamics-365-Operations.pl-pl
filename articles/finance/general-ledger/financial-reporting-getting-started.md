@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811298"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897043"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
@@ -148,7 +148,7 @@ Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** l
 * W obszarze Internet Explorer wybierz opcję **Ustawienia**, a następnie wybierz **Opcje internetowe**. Wybierz kartę **Zabezpieczenia**. Wybierz opcję Zaufane witryny. W obszarze o nazwie poziom zabezpieczeń dla tej strefy Zmień opcję na **Średni — niski**.
 * Wyłącz funkcję blokowania wyskakujących okienek w przeglądarce.
 * Do zainstalowania Struktury Microsoft .NET 4.6.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
-* Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli w przeglądarce Chrome pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Aby uzyskać więcej informacji na temat rozszerzenia ClickOnce w przeglądarce Chrome, zobacz [Wymagania systemowe dla wdrożeń w chmurze](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli w przeglądarce Chrome pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Aby uzyskać więcej informacji na temat rozszerzenia ClickOnce w przeglądarce Chrome, zobacz [Wymagania systemowe dla wdrożeń w chmurze](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Jeśli używasz razem przeglądarek Microsoft Edge i Chrome, nie musisz instalować rozszerzenia ClickOnce dla Microsoft Edge Chromium. Trzeba jednak włączyć opcję ClickOnce, aby móc pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.
      1. Otwórz nową przeglądarkę w programie Microsoft Edge.
      2. Wprowadź **edge://flags** i wybierz **Enter**.

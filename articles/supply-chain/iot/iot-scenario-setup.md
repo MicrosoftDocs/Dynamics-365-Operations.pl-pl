@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2927a976c38e9ed8166c62b030d665a159119ae1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 36be4a85dbbd28839afd45b6ed167b4c8181ae72
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826426"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909508"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Ustawienia scenariusza dla analizy Internetu rzeczy (IoT)
 
@@ -42,7 +42,7 @@ Scenariusz **przestoju sprzętu** obejmuje następujące zależności:
 Aby skonfigurować scenariusz, wykonaj następujące kroki.
 
 1. Zaloguj się do modułu Supply Chain Management.
-2. Włącz flagę funkcji analizy Internetu rzeczy (IoT). Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+2. Włącz flagę funkcji analizy Internetu rzeczy (IoT). Aby uzyskać więcej informacji, zapoznaj się z tematem [Zarządzanie funkcjami — omówienie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 3. Skonfiguruj metryki. Aby uzyskać więcej informacji, zobacz temat [.Jak skonfigurować metryki](iot-metrics-setup.md#configure-metrics).
 4. Przejdź do **Kontroli produkcji \> Konfiguracji \> Analizy IoT \> Zarządzanie scenariuszami**.
 6. Na kafelku **Przestój sprzętu** wybierz opcję **Konfiguruj**, aby otworzyć Kreator konfiguracji.

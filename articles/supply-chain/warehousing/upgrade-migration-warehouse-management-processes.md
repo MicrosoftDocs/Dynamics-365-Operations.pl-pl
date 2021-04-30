@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe8969345b8499bacfeecb0a1535174ce988eabc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 31bfc203e9db28acee4b5b52b36f64d90dc4f714
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837424"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909262"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Uaktualnienie zarządzania magazynem z Microsoft Dynamics AX 2012 do Supply Chain Management 
 
@@ -66,7 +66,7 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 1.  Utwórz co najmniej jeden nowy profil lokalizacji.
 2.  Kliknij kolejno opcje **Zarządzanie magazynem** &gt; **Ustawienia** &gt; **Włącz procesy zarządzania magazynem** &gt; **Włącz konfigurowanie magazynu**.
 3.  Na stronie **Włącz konfigurowanie magazynu** dodaj magazyn, który powinien być włączony. Ten krok można wykonać bezpośrednio na stronie lub za pomocą integracji z programem Microsoft Office.
-4.  Przypisz profil lokalizacji do wszystkich lokalizacji. Ten krok można łatwo wykonać bezpośrednio ze strony, wykorzystując integrację z programem Microsoft Office. Można eksportować i importować dane lub używać funkcji przetwarzania jednostek danych dostępnych w module [Zarządzanie danymi](../../dev-itpro/data-entities/data-entities.md).
+4.  Przypisz profil lokalizacji do wszystkich lokalizacji. Ten krok można łatwo wykonać bezpośrednio ze strony, wykorzystując integrację z programem Microsoft Office. Można eksportować i importować dane lub używać funkcji przetwarzania jednostek danych dostępnych w module [Zarządzanie danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 5.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 6.  Wprowadź zmiany.
 
@@ -77,7 +77,7 @@ Aby można było używać zwolnionych produktów w module **Zarządzanie magazyn
 3.  Na stronie **Hierarchia rezerwacji** zdefiniuj nową hierarchię rezerwacji zgodnie z magazynem i grupami wymiarów śledzenia dla towaru.
 4.  Utwórz jedną lub więcej grup numeracji jednostek, które zawierają co najmniej te same jednostki, jak używane do jednostek magazynowych towarów.
 5.  Kliknij kolejno opcje **Zarządzanie magazynem** &gt; **Ustawienia** &gt; **Włącz procesy zarządzania magazynem** &gt; **Zmiana grupy wymiarów magazynowania dla towarów**.
-6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](../../dev-itpro/data-entities/data-entities.md).
+6.  Na stronie **Zmiana grupy wymiarów magazynowania dla towarów** dodaj numery towarów, grup wymiarów magazynowania i grupy numeracji jednostek. Ten krok można wykonać bezpośrednio na stronie, wykorzystując integrację z programem Microsoft Office, lub przy użyciu przetwarzania jednostek danych w module [Zarządzanie danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 7.  Sprawdź poprawność zmian. W ramach procesu sprawdzania poprawności następują różne weryfikacje integralności danych. Jako część większego procesu uaktualniania może wystąpić konieczność rozwiązania zaistniałych problemów w implementacji źródłowej. W takim przypadku będzie potrzebne dodatkowe uaktualnienie danych.
 8.  Wprowadź zmiany. Aktualizacja wszystkich wymiarów zapasów może nieco potrwać. Można monitorować postęp za pomocą zadań wsadowych.
 

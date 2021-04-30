@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833408"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909410"
 ---
 # <a name="set-up-master-planning"></a>Ustawianie planowania głównego
 
@@ -106,11 +106,11 @@ Dla każdego planu, na **głównej** skróconej karcie strony **Planów główny
 
 ### <a name="operations-scheduling"></a>Planowanie operacji
 
-Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie. Planowanie operacji nie powoduje rozłożenia operacji marszruty produkcji w zadania. Aby uzyskać więcej informacji na temat planowania operacji , należy zapoznać się z tematem [Planowanie operacji](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Funkcji planowania operacji można używać, aby przedstawić ogólne oszacowanie procesu produkcji w wybranym okresie. Planowanie operacji nie powoduje rozłożenia operacji marszruty produkcji w zadania. Aby uzyskać więcej informacji na temat planowania operacji , należy zapoznać się z tematem [Planowanie operacji](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Planowanie zadań
 
-Planowanie zadań jest bardziej szczegółową metodą planowania, w której każda operacja jest dzielona na poszczególne zadania lub zadania. Planowanie zadań obejmuje informacje dotyczące zdolności produkcyjnych. Zazwyczaj służy ono do planowania poszczególnych zadań na produkcji w perspektywie czasowej bieżącej lub krótkoterminowej. Aby uzyskać więcej informacji na temat planowania zadań, należy zapoznać się z tematem [Planowanie zadań](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Planowanie zadań jest bardziej szczegółową metodą planowania, w której każda operacja jest dzielona na poszczególne zadania lub zadania. Planowanie zadań obejmuje informacje dotyczące zdolności produkcyjnych. Zazwyczaj służy ono do planowania poszczególnych zadań na produkcji w perspektywie czasowej bieżącej lub krótkoterminowej. Aby uzyskać więcej informacji na temat planowania zadań, należy zapoznać się z tematem [Planowanie zadań](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Horyzonty czasowe w dniach
 
@@ -158,7 +158,7 @@ Komunikaty akcji sugerują zmiany, które można wprowadzać w istniejącym zam�
 
 Ustawienie opcji **Komunikat akcji** na wartość **tak** powoduje, że można zastąpić komunikat akcji horyzontu czasowego, który został zdefiniowany dla towaru podczas planowania głównego. Jeśli ta opcja jest wybrana, należy wprowadzić liczbę dni, dla których w planowaniu głównym będą generowane komunikaty akcji dotyczące zapotrzebowania. Komunikat akcji horyzontu czasowego pojemności jest obliczany od daty bieżącej do przodu.
 
-Aby uzyskać więcej informacji o komunikatach akcji, zapoznaj się z [komunikatami akcji](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Aby uzyskać więcej informacji o komunikatach akcji, zapoznaj się z [komunikatami akcji](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Obliczanie komunikatów akcji powoduje dłuższy czas pracy planowania głównego. Jeśli komunikaty akcji nie są regularnie analizowane i stosowane (codziennie, co tydzień itd.), należy rozważyć wyłączenie obliczeń podczas przebiegu planowania głównego Aby wyłączyć obliczanie, na stronie **Plany główne** ustaw wartość w polu horyzont czasowy **komunikatu akcji** na **0** (zero) dla planu głównego, który jest uruchomiony. Upewnij się również, że ustawienie **Komunikatu akcji** jest wyłączone dla wszystkich grup zapotrzebowania.
@@ -223,7 +223,7 @@ Czas realizacji + Dni ujemne + dzisiejsza data – wymagany termin
 
 System używa tylko planowanych zamówień dostawy, które znajdują się w danym horyzoncie czasowym, i tworzy nowe zamówienie planowane poza nim. Zaletą dynamicznej liczby dni z ujemnym dniem jest to, że będzie on obejmował czas realizacji poszczególnych produktów, aby ponownie używać istniejących zamówień i uniknąć tworzenia nowych zamówień planowanych, które będą się kończyć na późniejszy dzień, z powodu opóźnień spowodowanych przez czas realizacji. 
 
-Aby uzyskać więcej informacji, przejszyj [Dni ujemne i dynamiczne dni ujemne](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Aby uzyskać więcej informacji, przejszyj [Dni ujemne i dynamiczne dni ujemne](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

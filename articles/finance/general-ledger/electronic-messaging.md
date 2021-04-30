@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823795"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897607"
 ---
 # <a name="electronic-messaging"></a>Obsługa wiadomości elektronicznych
 
@@ -29,7 +29,7 @@ W ostatnim czasie władze i prawodawcy różnych krajów i regionów na całym �
 
 Funkcjonalność wiadomości elektroniczne w Finance obsługuje wiele procesów elektronicznej współpracy między Finance a systemami administracji państwowej do raportowania, przesyłania i odbierania oficjalnych informacji.
 
-Funkcje wiadomości elektroniczne są zintegrowane z modułem **raportowania elektronicznego** (ER). Dlatego należy skonfigurować formaty ER dla wiadomości elektronicznych. Aby uzyskać więcej informacji, zobacz [Raportowanie elektroniczne (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funkcje wiadomości elektroniczne są zintegrowane z modułem **raportowania elektronicznego** (ER). Dlatego należy skonfigurować formaty ER dla wiadomości elektronicznych. Aby uzyskać więcej informacji, zobacz [Raportowanie elektroniczne (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Obsługa wiadomości elektronicznych opiera się na następujących jednostkach:
 
@@ -56,7 +56,7 @@ Funkcji wiadomości elektronicznych obsługuje następujące scenariusze:
 
 ## <a name="set-up-electronic-messaging"></a>Konfigurowanie wiadomości elektronicznych
 
-Wiadomości elektroniczne mogą ułatwić obsługę różnych elektronicznych procesów raportowania dla różnych typów dokumentów. W niektórych scenariuszach złożonych wiadomości elektroniczne ustawiono tak, aby miały kombinację wielu statusów wiadomości, statusów elementów wiadomości, działań, dodatkowych pól i wykonywalnych klas. W tych scenariuszach pakiety jednostek danych są dostępne do importu. Korzystając z tych pakietów jednostek danych należy importować je do firmy przy użyciu narzędzia do zarządzania danymi. Aby uzyskać więcej informacji dotyczących sposobu używania narzędzia do zarządzania danymi, zobacz [zarządzanie danymi](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Wiadomości elektroniczne mogą ułatwić obsługę różnych elektronicznych procesów raportowania dla różnych typów dokumentów. W niektórych scenariuszach złożonych wiadomości elektroniczne ustawiono tak, aby miały kombinację wielu statusów wiadomości, statusów elementów wiadomości, działań, dodatkowych pól i wykonywalnych klas. W tych scenariuszach pakiety jednostek danych są dostępne do importu. Korzystając z tych pakietów jednostek danych należy importować je do firmy przy użyciu narzędzia do zarządzania danymi. Aby uzyskać więcej informacji dotyczących sposobu używania narzędzia do zarządzania danymi, zobacz [zarządzanie danymi](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Jeśli nie importujesz pakietu jednostek danych, możesz ręcznie ustawić funkcje wiadomości elektronicznych. W takim przypadku należy skonfigurować następujące elementy:
 

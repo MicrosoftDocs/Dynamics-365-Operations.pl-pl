@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 50c9ac9106487fe04ccf704907c59b9a414b6cc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a85cd2590bd9c6cabcd0001d5de81746c1d4f63
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840756"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907846"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Omówienie portalu klienta dla Dynamics 365 Supply Chain Management
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840756"
 
 Nowoczesne systemy łańcuchów dostaw są oparte na integracji. Wymagają, aby działy zapasów, zapotrzebowania klientów i sprzedaży były zintegrowane zamiast przebywać w osobnych silosach. Portal klienta pomaga organizacjom, którzy działają na Microsoft Dynamics 365 Supply Chain Management ulepszyć tę integrację i skutecznie informować swoich klientów.
 
-Portal odbiorców to szablon [portali Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview), który pozwala firmom tworzyć zewnętrznie firmy (B2B, Business-to-Business) dla scenariuszy związanych z przetwarzaniem zamówień sprzedaży. W szablonie jest używana funkcja [podwójnego zapisywania](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page), Supply Chain Management i portale Power Apps, które umożliwiają klientom zewnętrznym przedsiębiorstw wyświetlanie i tworzenie danych z środowiska Dynamics 365 firmy.
+Portal odbiorców to szablon [portali Power Apps](/powerapps/maker/portals/overview), który pozwala firmom tworzyć zewnętrznie firmy (B2B, Business-to-Business) dla scenariuszy związanych z przetwarzaniem zamówień sprzedaży. W szablonie jest używana funkcja [podwójnego zapisywania](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), Supply Chain Management i portale Power Apps, które umożliwiają klientom zewnętrznym przedsiębiorstw wyświetlanie i tworzenie danych z środowiska Dynamics 365 firmy.
 
 Szablon Portal odbiorcy zawiera wszystkie możliwości dostosowywania oferowane przez funkcję portali ofert Power Apps. Szablon można łatwo zmodyfikować w celu przedstawienia marki firmy, zwiększenia funkcjonalności i zmiany środowiska użytkownika. Wszystkie funkcje tego szablonu mogą być modyfikowane w wybranym polu.
 
@@ -48,20 +48,20 @@ Plik wideo [Omówienie szablonu Portalu klienta w Dynamics 365 Supply Chain Mana
 Portal klientów jest przeznaczony dla firm korzystających z Supply Chain Management i mający następujące cechy:
 
 - Chcą zbudować zewnętrzną stronę internetową, która przekazuje informacje o przetwarzaniu zamówień (takie jak status zamówienia lub informacje o koncie) bezpośrednio z Supply Chain Management do klientów korporacyjnych.
-- Są one przenoszone z Dynamics AX 2012 do Supply Chain Management i poprzednio korzystały z [samoobsługowego portalu dla odbiorców AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
+- Są one przenoszone z Dynamics AX 2012 do Supply Chain Management i poprzednio korzystały z [samoobsługowego portalu dla odbiorców AX 2012](/dynamicsax-2012/appuser-itpro/about-the-customer-self-service-portal).
 
 Następujące typy organizacji **nie są** dobrym kandydatami do implementacji portalu klienta:
 
-- Firmy, które chcą zbudować witrynę sieci Web dla odbiorców nienależących do przedsiębiorstwa. Firmy te powinny rozważyć utworzenie [witryny sieci Web e-commerce Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/create-ecommerce-site).
+- Firmy, które chcą zbudować witrynę sieci Web dla odbiorców nienależących do przedsiębiorstwa. Firmy te powinny rozważyć utworzenie [witryny sieci Web e-commerce Dynamics 365 Commerce](../../commerce/create-ecommerce-site.md).
 - Firmy, które używają już istniejących portali Power Apps w podobnym celu. Firmy te nie będą otrzymywały żadnych dodatkowych korzyści z portalu klienta. Portal odbiorców jest dostarczany jako szablon pełniący rolę przewodnika i punkt wyjścia dla odbiorców, którzy chcą „przyłączyć kropki” między dwoma odczytami, Supply Chain Management i portalami Power Apps. Jeśli została już skonfigurowana witryna sieci Web, która służy do tego celu, nie można uzyskać większej ilości wartości z szablonu portalu klienta w celu ponownego zainicjowania obsługi administracyjnej tej witryny sieci Web.
 
 ## <a name="how-does-it-work"></a>Jak to działa?
 
 Portal odbiorców jest dostarczany jako szablon portali Power Apps. Zależy to od portali Power Apps i podwójnego zapisywania.
 
-[Portale Power Apps](https://docs.microsoft.com/powerapps/maker/portals/overview) to funkcja umożliwiająca użytkownikom tworzenie zewnętrznej witryny sieci Web, do której mogą się logować osoby spoza organizacji. Do tworzenia portali nie jest wymagane kodowanie. Portal klienta to jeden z wielu [szablonów portalu Dynamics 365](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) dostępnych w firmie Microsoft.
+[Portale Power Apps](/powerapps/maker/portals/overview) to funkcja umożliwiająca użytkownikom tworzenie zewnętrznej witryny sieci Web, do której mogą się logować osoby spoza organizacji. Do tworzenia portali nie jest wymagane kodowanie. Portal klienta to jeden z wielu [szablonów portalu Dynamics 365](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) dostępnych w firmie Microsoft.
 
-[Podwójny zapis](https://docs.microsoft.com/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance and Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance and Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
+[Podwójny zapis](/powerapps/maker/portals/overview) to gotowa infrastruktura umożliwiająca współpracę w czasie rzeczywistym między aplikacjami oferującymi spersonalizowaną obsługę klienta a aplikacjami Finance and Operations. Podwójny zapis toi dwukierunkowa integracja między aplikacjami Finance and Operations i Microsoft Dataverse. Tym samym umożliwia korzystanie ze zintegrowanego środowiska użytkownika w aplikacjach. Portal klienta jest zależny od tabel synchronizowanych z podwójnym zapisywaniem. Zanim dane z modułu Supply Chain Management mogą być nadawane w portalu klienta, dla wszystkich odpowiednich tabel musi być włączona funkcja podwójnego zapisywania.
 
 ![Zależności portalu klienta](media/customer-portal-elements.png "Zależności portalu klienta")
 

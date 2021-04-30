@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: a4a2cfb7754a0074e37f1a5b4b99594b2b0861d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1693df7d535a340306d2b817ce008c292bad521
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827104"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897679"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Raport przesunięcia środków trwałych do przodu
 
@@ -28,7 +28,7 @@ ms.locfileid: "5827104"
 
 Raport **Przesunięcie środków trwałych** do przodu przedstawia, w czytelnym formacie programu Microsoft Excel, szczegółowe dane środków trwałych wymagane do zamknięcia okresu, sprawozdań finansowych i sprawozdawczości podatkowej. Raport zawiera początkowe i końcowe salda środków trwałych, łącznie z przesunięciami w związku z wyceną w okresie, oraz informacje o wszelkich nabyciach i zbyciach/likwidacjach środków trwałych zaistniałych w okresie. Dane są raportowane dla poszczególnych środków trwałych, a dodatkowo wartości są sumowane dla grup środków trwałych i dla firm.
 
-Raport **Przesunięcie środków trwałych do przodu** używa struktury modułu Raportowanie elektroniczne (ER). Aby można było wygenerować raport, konfiguracje modelu środków trwałych i rolowania środków trwałych muszą zostać zaimportowane z usługi Microsoft Dynamics Lifecycle Services (LCS). Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+Raport **Przesunięcie środków trwałych do przodu** używa struktury modułu Raportowanie elektroniczne (ER). Aby można było wygenerować raport, konfiguracje modelu środków trwałych i rolowania środków trwałych muszą zostać zaimportowane z usługi Microsoft Dynamics Lifecycle Services (LCS). Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
 Ten raport jest dostępny w Microsoft Dynamics 365 for Finance and Operations Enterprise Edition 7.3 lub jako osobna poprawka dla Microsoft Dynamics 365 for Finance and Operations Enterprise Edition (z lipca 2017). W środowiskach, w których zainstalowano wersję z lipca 2017 roku, należy zastosować trzy poprawki:
 

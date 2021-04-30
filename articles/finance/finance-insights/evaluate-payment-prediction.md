@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818636"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897919"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -41,7 +41,7 @@ To łącze prowadzi do aplikacji AI Builder, gdzie można uzyskać więcej infor
 
 Na stronie, która zostanie otwarta, znajdują się następujące informacje:
 
-- W sekcji **Wydajność** ocena punktowa wydajności modelu daje perspektywę jakość modelu. Aby uzyskać więcej informacji o tej ocenie punktowej, zapoznaj się z tematem [Wydajność modelu przewidywania](https://docs.microsoft.com/ai-builder/prediction-performance) w dokumentacji aplikacji AI Builder.
+- W sekcji **Wydajność** ocena punktowa wydajności modelu daje perspektywę jakość modelu. Aby uzyskać więcej informacji o tej ocenie punktowej, zapoznaj się z tematem [Wydajność modelu przewidywania](/ai-builder/prediction-performance) w dokumentacji aplikacji AI Builder.
 - Sekcja **Dane o największym wpływie** pokazuje, jak ważne są różne typy danych wejściowych dla modelu. Można ocenić zawartość tej listy i towarzyszące wartości procentowe w celu określenia, czy informacje są zgodne z Twoją wiedzą o firmie o rynku.
 
     [![Sekcje Wydajność i Dane o największym wpływie w modelu przewidywania](./media/models.png)](./media/models.png)

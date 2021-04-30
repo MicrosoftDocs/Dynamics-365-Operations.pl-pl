@@ -2,7 +2,8 @@
 title: Moduł wyboru sklepu
 description: W tym temacie opisano moduł wyboru sklepu i opisano, jak dodać go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798640"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853424"
 ---
 # <a name="store-selector-module"></a>Moduł wyboru sklepu
 
@@ -32,11 +33,32 @@ Za pomocą modułu wyboru sklepu można pobrać produkt z wybranego sklepu po za
 
 Moduł wyboru sklepów umożliwia użytkownikom wprowadzenie lokalizacji (miasto, województwo, adres itd.) w celu wyszukania sklepów w promieniu wyszukiwania. Gdy moduł jest otwierany po raz pierwszy, system używa lokalizacji przeglądarki odbiorcy w celu znalezienia sklepów (jeśli wyrażono zgodę).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Użycie modułu wyboru sklepu w e-commerce
+## <a name="store-selector-module-usage"></a>Korzystanie z Modułu wyboru sklepu
 
 - Moduł wyboru sklepu może być używany na stronie Szczegóły produktu (PDP) w celu wybrania sklepu do pobrania.
 - Moduł wyboru sklepu może być używany na stronie koszyka w celu wybrania sklepu do pobrania.
 - Moduł wyboru sklepu może być używany na autonomicznej stronie, na której są wyświetlane wszystkie dostępne sklepy.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfiguracja grupy realizacji zamówień w centrali Commerce
+
+Aby selektor sklepu wyświetlał dostępne sklepy, grupa realizacji musi być skonfigurowana w centrali Commerce. Aby uzyskać więcej informacji, zobacz [Ustawianie grup realizacji](customer-orders-overview.md#set-up-fulfillment-groups).
+
+Ponadto dla każdego sklepu w grupie realizacji należy określić szerokość i długość geograficzną lokalizacji sklepu w centrali.
+
+Aby wprowadzić wartości szerokości i długości geograficznej dla lokalizacji sklepu w siedzibie Commerce, wykonaj następujące kroki.
+
+1. Przejdź do **Zarządzanie zapasami \> Konfiguracja \> Podział magazynu**.
+1. Wybierz lokalizację magazynu w lewym okienku.
+1. Na skróconej karcie **Adresy** wybierz pozycję **Zaawansowane**.
+
+    ![Przykład szczegółów sklepu w centrali](./media/Store-address.png)
+
+1. W okienku akcji wybierz pozycję **Edytuj**.
+1. Na skróconej karcie **Ogólne** wprowadź wartości **Szerokości geograficznej** i **Długości geograficznej**.
+
+    ![Przykład konfiguracji szerokości geograficznej i długości geograficznej dla sklepu w centrali](./media/Store-latitude-longitude.png)
+
+1. Na okienku akcji wybierz opcję **Zapisz**. 
 
 ## <a name="bing-maps-integration"></a>Integracja z mapami Bing
 
@@ -48,6 +70,7 @@ W przypadku interfejsu API REST z automatyczną sugestią musisz upewnić się, 
 - Do dyrektywy **img-src**, dodaj **&#42;.virtualearth.net**.
 - Do dyrektywy **script-src**, **dodaj &#42;.bing.com, &#42;.virtualearth.net**.
 - Do dyrektywy **script style-src**, dodaj **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>Tryb odbioru w sklepie
 

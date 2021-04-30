@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835613"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908959"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 
@@ -50,7 +50,7 @@ Aby móc używać aplikacji, należy w systemie włączyć powiązaną funkcję.
 
 W przypadku mniejszych wdrożeń możesz chcieć zainstalować aplikację na każdym urządzeniu z odpowiedniego sklepu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami.
 
-W przypadku większych wdrożeń można zautomatyzować wdrażanie i / lub konfigurację aplikacji, co może być wygodniejsze, jeśli zarządzasz wieloma urządzeniami. Można na przykład używać rozwiązania do zarządzania urządzeniami przenośnymi i aplikacji przenośnych, takich jak [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+W przypadku większych wdrożeń można zautomatyzować wdrażanie i / lub konfigurację aplikacji, co może być wygodniejsze, jeśli zarządzasz wieloma urządzeniami. Można na przykład używać rozwiązania do zarządzania urządzeniami przenośnymi i aplikacji przenośnych, takich jak [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Instalowanie aplikacji ze sklepu aplikacji
 
@@ -65,10 +65,10 @@ Najłatwiejszym sposobem zainstalowania aplikacji na jednym urządzeniu jest zai
 Alternatywą dla instalacji ze sklepu z aplikacjami jest pobranie aplikacji z Microsoft App Center. Centrum aplikacji udostępnia pakiety do zainstalowania, które można załadować. Oprócz bieżącej wersji App Center umożliwia również pobieranie poprzednich wersji i może udostępniać wersje zapoznawcze z nadchodzącymi funkcjami, które można wypróbować. Aby pobrać bieżące, poprzednie lub podglądowe wersje aplikacji mobilnej Zarządzanie magazynem z Microsoft App Center, użyj jednego z poniższych łączy:
 
 - **Windows (UWP):** [Zarządzanie magazynem (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Aby uzyskać instrukcje dotyczące instalowania pobranego pakietu na urządzeniu z systemem Windows, a następnie konfigurowania wymaganych certyfikatów, zobacz [Instalowanie kompilacji z witryny App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    Aby uzyskać instrukcje dotyczące instalowania pobranego pakietu na urządzeniu z systemem Windows, a następnie konfigurowania wymaganych certyfikatów, zobacz [Instalowanie kompilacji z witryny App Center](/appcenter/distribution/installation).
 
 - **Android:** [Zarządzanie magazynem (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Jeśli pobierasz wersję zapoznawczą, musisz wykonać kilka dodatkowych czynności, aby ją zainstalować. Aby uzyskać szczegółowe informacje, zobacz temat [Testowanie aplikacji dla systemu Android](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Jeśli pobierasz wersję zapoznawczą, musisz wykonać kilka dodatkowych czynności, aby ją zainstalować. Aby uzyskać szczegółowe informacje, zobacz temat [Testowanie aplikacji dla systemu Android](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 
@@ -103,11 +103,11 @@ Aby umożliwić aplikacji mobilnej Zarządzanie magazynem interakcję z konkretn
 
 Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług internetowych w usłudze Azure AD, zapoznaj się z następującymi zasobami:
 
-- Aby uzyskać instrukcje dotyczące konfigurowania aplikacji usług internetowych w usłudze Azure AD przy użyciu programu Windows PowerShell, zapoznaj się z tematem [Instrukcje: używanie Azure PowerShell do tworzenia jednostki usługi przy użyciu certyfikatu](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Aby uzyskać instrukcje dotyczące konfigurowania aplikacji usług internetowych w usłudze Azure AD przy użyciu programu Windows PowerShell, zapoznaj się z tematem [Instrukcje: używanie Azure PowerShell do tworzenia jednostki usługi przy użyciu certyfikatu](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Aby uzyskać kompletne informacje dotyczące ręcznego tworzenia aplikacji usługi internetowej w usłudze Azure AD, zapoznaj się z następującymi tematami:
 
-    - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app)
+    - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
 
@@ -135,7 +135,7 @@ Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połąc
 
 Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację mobilną Zarządzanie magazynem. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
-Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja mobilna Zarządzanie magazynem. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja mobilna Zarządzanie magazynem. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurowanie aplikacji przez zaimportowanie ustawień połączenia
 

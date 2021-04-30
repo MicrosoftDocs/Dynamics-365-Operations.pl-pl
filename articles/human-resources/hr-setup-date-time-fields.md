@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: efda2b54f9228ac539e6ba2d18f85bf3ad15a6ff
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3a8bc27bb4560b4a15aef483ff465c4b943bf02b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802438"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889891"
 ---
 # <a name="understand-date-and-time-fields"></a>Opis pól Data i Godzina
 
@@ -93,8 +93,8 @@ W przypadku używania źródeł zewnętrznych, takich jak DMF do wyświetlania l
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Dane daty i godziny](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
-[Preferowana strefa czasowa użytkownika](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+[Dane daty i godziny](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
+[Preferowana strefa czasowa użytkownika](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826697"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897871"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generowanie skonsolidowanych sprawozdań finansowych
 
@@ -34,7 +34,7 @@ Najprostszą metodą konsolidowania za pomocą aplikacji Raportowanie finansowe 
 3. Utworzenie drzewa raportowania zawierającego węzeł raportowania dla każdej firmy uwzględnionej w skonsolidowanych raportach.
 
 > [!TIP]
-> Aby uzyskać więcej informacji na temat tworzenia i zarządzania definicjami wierszy, definicjami kolumn i drzewami raportowania, zobacz [Składniki raportu finansowego](../../dev-itpro/analytics/financial-report-components.md).
+> Aby uzyskać więcej informacji na temat tworzenia i zarządzania definicjami wierszy, definicjami kolumn i drzewami raportowania, zobacz [Składniki raportu finansowego](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Ilustracja poniżej przedstawia sposób wykorzystania definicji drzewa raportowania w module Raportowanie finansowe do zidentyfikowania każdej firmy, która będzie konsolidowana.
 

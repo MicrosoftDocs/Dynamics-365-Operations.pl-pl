@@ -2,11 +2,11 @@
 title: Konfigurowanie przepływów pracy zatwierdzeń wynajmów
 description: W tym temacie opisano sposób konfigurowania przepływu pracy zatwierdzania, który będzie uruchamiany podczas tworzenia nowej umowy wynajmu.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4d5416b3b24d5fbb3ac46afb3c672212d41d42d5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e7280bbf60901266c81a0c89395c5183f991425
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827561"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881669"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Konfigurowanie przepływów pracy zatwierdzeń wynajmów
 

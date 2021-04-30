@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823416"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909458"
 ---
 # <a name="goods-in-transit-processing"></a>Przetwarzanie towarów w transporcie
 
@@ -40,7 +40,7 @@ Włączenie modułu **Koszt z wyładunkiem** pozwala na obsługę funkcji *towar
 
 Jeśli dla odpowiednich rekordów warunków dostawy dla opcji **Zarządzania towarami w drodze** jest ustawiona wartość *Tak*, towary są umieszczane w magazynie towarów w drodze. Ta akcja jest wyzwalana tylko wtedy, gdy przyjęcie na magazyn nie jest przetwarzane przed przetworzeniem faktury. Gdy warunki dostawy zamówienia są ustawione na używanie towarów w tranzycie, użytkownicy nie mogą już księgować dokumentu przyjęcia produktów dla zamówienia zakupu. W razie próby wystąpi błąd. Komunikat o błędzie oznacza, że muszą korzystać z funkcji towarów w drodze, aby kontynuować.
 
-Aby pracować z informacjami o warunkach dostawy dla towarów w drodze, przejdź do **Zaopatrzenie i sourcing \> Konfiguracja \> Dystrybucja \> Warunki dostawy**. W poniższej tabeli opisano pola, które moduł **Koszt z wyładunkiem** dodaje do strony **Warunki dostawy** w celu obsługi funkcji towarów w drodze. Oba pola znajdują się na skróconej karcie **Ogólne**. Aby uzyskać więcej informacji o innych polach na tej stronie, zobacz [Warunki dostawy (formularz)](https://technet.microsoft.com/library/aa575567.aspx).
+Aby pracować z informacjami o warunkach dostawy dla towarów w drodze, przejdź do **Zaopatrzenie i sourcing \> Konfiguracja \> Dystrybucja \> Warunki dostawy**. W poniższej tabeli opisano pola, które moduł **Koszt z wyładunkiem** dodaje do strony **Warunki dostawy** w celu obsługi funkcji towarów w drodze. Oba pola znajdują się na skróconej karcie **Ogólne**. Aby uzyskać więcej informacji o innych polach na tej stronie, zobacz [Warunki dostawy (formularz)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Pole | opis |
 |---|---|
@@ -55,7 +55,7 @@ Koszt ziemny powoduje dodanie dwóch nowych typów magazynu: *towarów w drodze*
 
 Magazyn towarów w drodze będzie powiązany z magazynem *towarów w drodze*, a ten magazyn będzie używany do przetwarzania towarów na zamówieniach towarów w drodze przed ich otrzymaniem w magazynie docelowym. Na ogół wystarczy jeden magazyn towarów w drodze do każdego z nich, jeśli jedynymi wymiarami magazynowymi używanymi do zarządzania zapasami są: Miejsce i Magazyn. Jeśli używany jest również wymiar magazynowy Lokalizacja, należy skonfigurować magazyn towarów w tranzycie dla każdej kombinacji oddziału i magazynu, aby można było również określić domyślną lokalizację.
 
-Aby pracować z ustawieniami towarów w drodze dla magazynów, przejdź do **Zarządzanie zapasami \> Konfiguracja \> Podział magazynu \> Magazyny**. W poniższej tabeli opisano pola, które moduł **Koszt z wyładunkiem** dodaje do strony **Magazyny** w celu obsługi funkcji towarów w drodze. Oba pola znajdują się na skróconej karcie **Ogólne**. Aby uzyskać informacje o innych polach na stronie, zobacz [Magazyny (formularz)](https://technet.microsoft.com/library/aa620570.aspx).
+Aby pracować z ustawieniami towarów w drodze dla magazynów, przejdź do **Zarządzanie zapasami \> Konfiguracja \> Podział magazynu \> Magazyny**. W poniższej tabeli opisano pola, które moduł **Koszt z wyładunkiem** dodaje do strony **Magazyny** w celu obsługi funkcji towarów w drodze. Oba pola znajdują się na skróconej karcie **Ogólne**. Aby uzyskać informacje o innych polach na stronie, zobacz [Magazyny (formularz)](/dynamicsax-2012//warehouses-form).
 
 | Pole | opis |
 |---|---|
@@ -109,7 +109,7 @@ Towary można również odbierać, tworząc arkusz przybycia. Arkusz przybycia m
     - **Utwórz z towarów w drodze** — Ustaw dla tej opcji wartość *Tak*, aby dla wybranej podróży, kontenera lub folio pobrane zostały ilości z wybranych wierszy w drodze.
     - **Utwórz z wierszy zamówienia** – Ustaw tę opcję na wartość *Tak*, aby ustawić domyślną ilość w arkuszu przybycia z wierszy zamówienia zakupu. Domyślną ilość w arkuszu przybycia można ustawić w ten sposób tylko wtedy, gdy ilość w wierszu zamówienia zakupu odpowiada ilości w zamówieniu towarów w drodze.
 
-1. Przetwarzaj arkusz przyjęcia towaru zgodnie z opisem w [Rejestrowanie przychodów towaru na arkuszu przyjęć towarów](https://technet.microsoft.com/library/aa571129.aspx).
+1. Przetwarzaj arkusz przyjęcia towaru zgodnie z opisem w [Rejestrowanie przychodów towaru na arkuszu przyjęć towarów](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Arkusz przyjęć jest zwykle używany w sytuacjach, w których używane są lokalizacje i śledzenie partii / serii, ale zarządzanie magazynem nie jest używane.
@@ -131,15 +131,14 @@ Koszt z wyładunkiem powoduje dodanie do elementów menu urządzenia przenośneg
 - Przyjmowanie pozycji towaru w drodze
 - Odbieranie i odkładanie pozycji w drodze
 
-Ustawienia konfiguracyjne dla tych procesów są podobne do ustawień dla [procesów przyjmowania zamówień zakupu i odkładania pracy](https://technet.microsoft.com/library/dn553216.aspx). Jednak w procesie *Odbierania i odłożenia towarów w drodze* jest również dodano następujące pole.
+Ustawienia konfiguracyjne dla tych procesów są podobne do ustawień dla [procesów przyjmowania zamówień zakupu i odkładania pracy](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). Jednak w procesie *Odbierania i odłożenia towarów w drodze* jest również dodano następujące pole.
 
 - **Włącz zakończenie kontenera wysyłkowego** — jeśli ta opcja ma wartość *Tak*, po zakończeniu pracy odłożenia aplikacja Warehouse Management udostępni dodatkową opcję o nazwie **Kontener wysyłkowy zakończony**. Po wybraniu tej opcji pracownik zostanie poproszony o potwierdzenie zakończenia kontenera. W tym momencie wszystkie krótkie przychody będą przetwarzane jako transakcje.
 
 ### <a name="location-directives"></a>Dyrektywy lokalizacji
 
-Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Dyrektywy lokalizacji**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [typy zlecenia dla zamówienia zakupu](https://technet.microsoft.com/library/dn553184.aspx).
+Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Dyrektywy lokalizacji**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [typy zlecenia dla zamówienia zakupu](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Szablony pracy
 
-Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Szablony pracy**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [szablony pracy dla zamówienia zakupu](https://technet.microsoft.com/library/dn553184.aspx).
-
+Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Szablony pracy**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [szablony pracy dla zamówienia zakupu](/dynamicsax-2012/appuser-itpro/create-a-work-template).

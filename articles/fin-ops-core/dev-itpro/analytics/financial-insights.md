@@ -2,8 +2,7 @@
 title: Analiza finansowa
 description: Wykorzystując usługę Microsoft Power BI, obszar roboczy Szczegółowe dane finansowe zbiera w jednym miejscu kluczowe wskaźniki wydajności (KPI) dotyczące finansów, wykresy i sprawozdania finansowe.
 author: kweekley
-manager: AnnBe
-ms.date: 05/22/2019
+ms.date: 04/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 22de5f3e2e475aa681be2d8868fb1d939f3f8638
-ms.sourcegitcommit: 4c57c16fe7ecd2a9840158aa69646ee47152e5f1
+ms.openlocfilehash: 71fd1ad15320fda162a289e9c5741aec2ce76778
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5572373"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894915"
 ---
 # <a name="financial-analysis"></a>Analiza finansowa
 
@@ -65,10 +64,9 @@ Dane obszaru roboczego **Analiza finansowa** są pobierane z magazynu jednostek 
 
 Należy zaktualizować następujące jednostki, aby widzieć dane w obszarach roboczych **Analiza finansowa**:
 
-- BudgetActivityMeasure
 - Dane transakcji raportowania finansowego, wer. 3 
+- Kredyty i windykacja wer. 2
 - CustCollectionsBIMeasurements
-- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Moduł Zakupy
 - Moduł Sprzedaż
@@ -241,9 +239,9 @@ Usługa Power BI nie oferuje opcji ukrywania i wyświetlania pustych wierszy. Je
 
 Informacje zawarte w poniższych materiałach nie są wymagane, aby można było używać osadzonych raportów w obszarach roboczych **Analiza finansowa** w środowisku produkcyjnym. Przydają się jedynie do środowisk programistycznych oraz jeśli chcesz osadzać własne raporty usługi Power BI.
 
-- [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
+- [Przechodzenie do analitycznych obszarów roboczych i raportów w środowisku jednoczęściowym](/archive/blogs/dynamicsaxbi/accessing-analytical-workspaces-on-1box-environment)
 
-- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
+- [Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded](/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
