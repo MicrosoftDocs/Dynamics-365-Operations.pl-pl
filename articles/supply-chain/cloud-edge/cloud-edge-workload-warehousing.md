@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832401"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899174"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832401"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Wykonanie magazynowe w jednostkach skali
 
-Ta funkcja umożliwia jednostkom miary skalowanie uruchamianie wybranych procesów z poziomu funkcji zarządzania magazynem. Jednostki skali chmury wykonują swoje obciążenie pracą w chmurze, korzystając z dedykowanych zdolności produkcyjnych w wybranym regionie Microsoft Azure. W przypadku jednostek skali krawędzi można uruchamiać pewne obciążenia niezależnie od pomieszczeń, nawet jeśli jednostki skalowania są tymczasowo odłączone od chmury.
+Ta funkcja umożliwia jednostkom miary skalowanie uruchamianie wybranych procesów z poziomu funkcji zarządzania magazynem.
 
 W tym temacie wykonania zarządzania magazynem w magazynie zdefiniowanym jako jednostka skali określa się jako *system realizacji magazynu* (*Wes*).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Musi istnieć centrum i jednostka skali dla Dynamics 365 Supply Chain Management, która została wdrożona wraz z obciążeniem zarządzania magazynem. Aby uzyskać więcej informacji na temat architektury i procesu wdrożenia, zobacz [Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych](cloud-edge-landing-page.md).
+Musi istnieć centrum i jednostka skali dla Dynamics 365 Supply Chain Management, która została wdrożona wraz z obciążeniem zarządzania magazynem. Aby uzyskać więcej informacji na temat architektury i procesu wdrożenia, zobacz [Użyj jednostek skalowania, aby zwiększyć odporność obciążeń związanych z zarządzaniem łańcuchem dostaw](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Sposób działania obciążenia pracą WES na jednostkach skali
 
@@ -297,6 +297,8 @@ W obciążeniu w jednostce skali tymi zadaniami wsadowymi można zarządzać w o
 - Przetwarzanie rekordów tabeli grupy czynności
 - Procesor komunikatów piasty magazynu do jednostki skalowania
 - Przetwórz żądania aktualizacji ilości dla wierszy zamówienia magazynowego
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

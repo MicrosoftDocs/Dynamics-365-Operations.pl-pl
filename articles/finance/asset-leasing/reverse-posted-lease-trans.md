@@ -2,11 +2,11 @@
 title: Wycofywanie zaksięgowanych transakcji wynajmu
 description: W tym temacie wyjaśniono, jak wycofać zaksięgowaną transakcję wynajmu. Każdą transakcję utworzoną za pośrednictwem modułu Wynajem składnika majątku można wycofać.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseTransactions
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 955b4f71f5698cf2f482129f00c676d70f6cef9b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 55eb7c5f2419bf1cb2ac0a33a82ab931a3ef380f
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823054"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881549"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Wycofywanie zaksięgowanych transakcji wynajmu
 

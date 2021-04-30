@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803496"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891061"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Konfigurowanie składników funkcji
 
@@ -86,7 +86,7 @@ Zarządzanie zadaniami zlecenia odbywa się na stronie **Zadania zlecenia**. Na 
 Zakresy odpowiedzialności pozwalają wskazać pełnione w ramach obowiązków służbowych, procesy i produkty, za które jest odpowiedzialny pracownik zajmujący stanowisko obejmujące to zadanie. Na przykład dla zadania o nazwie „Księgowy” jednym z zakresów odpowiedzialności może być „Raporty finansowe dla produktu A”. Zarządzanie zakresami odpowiedzialności odbywa się na stronie **Zakres odpowiedzialności**, do której można przejść za pomocą funkcji wyszukiwania. Na stronie **Zakres odpowiedzialności** wprowadź nazwę i opis zbioru obowiązków. W polu **Notatka** można opcjonalnie wprowadzić dodatkowe informacje. Notatki mogą być aktualizowane dla określonego zadania bez zmiany notatek wprowadzonych w tym miejscu.
 
 ## <a name="steps-for-creating-a-job"></a>Etapy tworzenia zadania
-Zobacz artykuł [Definiowanie nowych zadań](../fin-and-ops/hr/tasks/define-new-jobs.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego zadania. 
+Zobacz artykuł [Definiowanie nowych zadań](./hr-personnel-define-jobs.md) zawierający procedurę krok po kroku dotyczącą tworzenia nowego zadania. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

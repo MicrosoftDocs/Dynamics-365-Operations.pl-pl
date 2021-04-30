@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a94c5371db10fa4f0090f2d177b1a01233ab0f30
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fe02a7b785b7d53763f314eec4d9b23fe723173a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826042"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910192"
 ---
 # <a name="inventory-journals"></a>Arkusze magazynowe
 
@@ -95,7 +95,7 @@ Jednostki danych obsługują następujące typy scenariuszy integracji:
 -    Usługa synchroniczna (OData)
 -  Integracja asynchroniczna
 
-Aby uzyskać więcej informacji, zobacz [Jednostki danych](../../dev-itpro/data-entities/data-entities.md).
+Aby uzyskać więcej informacji, zobacz [Jednostki danych](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Nie wszystkie arkusze magazynowe obsługują usługę OData, dlatego nie można używać aplikacji łącznika danych programu Excel do publikowania, aktualizowania i importowania danych z powrotem do Supply Chain Management. 
@@ -113,7 +113,7 @@ Te dwa arkusze magazynowe obsługują scenariusz *Inicjowanie zapasów* tylko w 
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Jednostki danych](../../dev-itpro/data-entities/data-entities.md)
+[Jednostki danych](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2f5dd1d6bc520c9f5349c77dfcabdf2d538881ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c1112ba8394afb3aa9c9b4f68249524498bd8b32
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840059"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894890"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
 
@@ -86,7 +86,7 @@ Nową wersję można utworzyć, jeśli na przykład adresy URL muszą zostać za
 
     ![Otwieranie strony Projektanta formatów](media/e-Invoicing-services-get-started-MEX-Configuration-ER-format-designer.png)
 
-3. Strona **Projektant formatów** umożliwia edytowanie i wyświetlanie konfiguracji plików formatu ER. Aby uzyskać więcej informacji, zobacz [Twórz konfiguracje dokumentów elektronicznych](../../dev-itpro/analytics/electronic-reporting-configuration.md).
+3. Strona **Projektant formatów** umożliwia edytowanie i wyświetlanie konfiguracji plików formatu ER. Aby uzyskać więcej informacji, zobacz [Twórz konfiguracje dokumentów elektronicznych](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
     ![Strona projektanta formatu](media/e-Invoicing-services-get-started-MEX-ER-format-designer.png)
 
@@ -161,7 +161,7 @@ Aby skonfigurować Faktury elektroniczne w Finance, wykonaj następujące czynno
 ### <a name="import-the-er-data-model-er-data-model-mapping-and-context-configurations-for-cfdi-invoices"></a>Importuj model danych modelu ER, mapowanie modelu danych ER i konfiguracje kontekstowe dla faktur CFDI
 
 1. Zaloguj się do Finance.
-2. W obszarze roboczym **Raportowanie elektroniczne** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny**, zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. W obszarze roboczym **Raportowanie elektroniczne** w sekcji **Dostawcy konfiguracji** wybierz kafelek **Microsoft**. Upewnij się, że ten dostawca konfiguracji jest skonfigurowany jako **Aktywny**. Aby uzyskać informacje o tym, jak ustawić dostawcę jako **Aktywny**, zobacz [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Wybierz **Repozytoria**.
 4. Wybierz pozycję **Zasób globalny \> Otwórz**.
 5. Importowanie **Model faktury**, **Mapowanie modelu faktury**, **Format faktury CFDI (MX)**, **Format żądania anulowania faktury CFDI (MX)** oraz **Format anulowania faktury CFDI (MX)**.
@@ -215,7 +215,7 @@ Podczas przetwarzania faktur CFDI w Finance za pomocą Faktur elektronicznych mo
 Po włączeniu funkcji **Konfigurowalna integracja z Fakturami elektronicznymi** nie można już używać procesu **Eksport/Import faktury elektronicznej** (**Rozrachunki z odbiorcami \> Faktury \> Faktury elektroniczne**) do przesyłania faktrur CFDI. Zastępuje go nowym procesem o nazwie **Prześlij dokumenty elektroniczne**.
 
 > [!NOTE]
-> Przed użyciem nowego procesu **Przesyłania dokumentów elektronicznych** należy sprawdzić, czy zostało zakończone wymagane ustawienie meksykańskiego fakturowania elektronicznego. Aby uzyskać więcej informacji, zobacz [CFDI wersja układu 3.3](https://docs.microsoft.com/dynamics365/finance/localizations/latam-mex-cfdi-3-3).
+> Przed użyciem nowego procesu **Przesyłania dokumentów elektronicznych** należy sprawdzić, czy zostało zakończone wymagane ustawienie meksykańskiego fakturowania elektronicznego. Aby uzyskać więcej informacji, zobacz [CFDI wersja układu 3.3](./latam-mex-cfdi-3-3.md).
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy zawsze w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839374"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908789"
 ---
 # <a name="cost-management-home-page"></a>Zarządzanie kosztami — strona główna
 
@@ -43,7 +43,7 @@ Do modułów Księgowanie zapasów i Księgowanie produkcji można przejść z o
 
 Moduł Księgowanie produkcji umożliwia obsługę [kalkulacji doliczeniowej zleceniowej](production-order-cost-analysis.md) w zleceniach produkcyjnych i szarżach produkcyjnych oraz [wyceny wstecznej](backflush-costing.md) w produkcji oszczędnej.
 
-[Pakiet zawartości Zarządzanie kosztami usługi Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
+[Pakiet zawartości Zarządzanie kosztami usługi Power BI](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) zapewnia zaawansowany wgląd w zapasy i zapasy pracy w toku (PWT) oraz przepływy kosztów między tymi zapasami z podziałem na kategorie w ujęciu czasowym. Informacje mogą być również wykorzystywane jako szczegółowe uzupełnienie sprawozdania finansowego.
 
 ### <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -57,7 +57,7 @@ W artykule [Obliczenia BOM za pomocą arkusza wyceny](https://www.microsoft.com/
 
 #### <a name="blogs"></a>Blogi
 
-Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](https://blogs.msdn.microsoft.com/axmfg) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
+Opinie, wiadomości i inne informacje na temat modułu Zarządzanie kosztami można znaleźć w [blogu zespołu ds. badań i rozwoju modułu Wytwarzanie systemu Dynamics AX](/archive/blogs/axmfg/) oraz [blogu zespołu ds. badań i rozwoju modułu Zarządzanie łańcuchem dostaw systemu Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm). Mimo że część z tych wpisów została napisana dla poprzedniej wersji modułu Zarządzanie kosztami, to w obecnej wersji są również używane te same pojęcia i podobne procedury.
 
 #### <a name="task-guides"></a>Przewodniki zadań
 

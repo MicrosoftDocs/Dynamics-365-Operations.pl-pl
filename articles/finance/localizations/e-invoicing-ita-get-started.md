@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23cb0523b6d6d065ad19f6c3bddf881b0dc82a7d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840107"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894784"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
 
@@ -201,7 +201,7 @@ Po włączeniu funkcji **Konfigurowalna integracja z Fakturami elektronicznymi**
 Dokumenty można przesyłać ręcznie na podstawie zapotrzebowania na dokumenty fakturowania elektronicznego.
 
 > [!NOTE]
-> Przed kontynuowaniem sprawdź, czy zostało zakończone wymagane ustawienie dla włoskich faktur elektronicznych. Aby uzyskać więcej informacji, zobacz [Faktury elektroniczne odbiorcy](https://docs.microsoft.com/dynamics365/finance/localizations/emea-ita-e-invoices). Należy pamiętać, że niektóre kroki konfiguracji opisane w tym temacie mogą być niedostępne z powodu aktywacji Faktur elektronicznych.
+> Przed kontynuowaniem sprawdź, czy zostało zakończone wymagane ustawienie dla włoskich faktur elektronicznych. Aby uzyskać więcej informacji, zobacz [Faktury elektroniczne odbiorcy](./emea-ita-e-invoices.md). Należy pamiętać, że niektóre kroki konfiguracji opisane w tym temacie mogą być niedostępne z powodu aktywacji Faktur elektronicznych.
 
 1. Przejdź do **Administrowanie organizacją \> Okresowe \> Dokumenty elektroniczne \> Prześlij dokumenty elektroniczne**.
 2. W przypadku pierwszego przesłania dokumentu należy w ustawieniu opcji **Ponowne przesłanie dokumentów** wybrać wartość **Nie**. Jeśli konieczne jest ponowne przesłanie dokumentu za pośrednictwem usługi, należy skonfigurować tę opcję na wartość **Ttak**.

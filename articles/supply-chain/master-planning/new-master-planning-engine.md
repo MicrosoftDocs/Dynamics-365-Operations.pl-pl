@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9590213ef73f7623aff10d4c8ee3efbea0e7984b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823464"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907698"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
@@ -63,8 +63,12 @@ Obecnie wyjątki dotyczące migracji optymalizacji planowania są istotne tylko 
 
 Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do wygaśnięcia wyjątku. Administrator środowiska zostanie poinformowany, gdy wymagane funkcje staną się dostępne i rozpocznie się okres karencji.
 
+Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962).
+
+![Schemat blokowy wyjątków](media/exception-diagram.png "Schemat blokowy wyjątków")
+
 > [!NOTE]
-> Możesz zażądać wyjątku tylko dla środowisk produkcyjnych, a nie dla środowisk piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
+> Możesz zażądać wyjątku tylko dla dzierżawców, którzy obecnie zawierają lub będą zawierać środowisko produkcyjne, a nie dla dzierżawców ze środowiskami piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753583"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894083"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word
 
@@ -38,7 +38,7 @@ Aby użyć dokumentu programu Word jako szablonu raportów w formacie programu W
 Składnik formatu ER rozwiązania musi zawierać element formatu **Excel\\Plik**, a ten element formatu musi być połączony z dokumentem programu Word, który będzie używany jako szablon do generowania raportów w czasie wykonywania. Aby skonfigurować składnik formatu ER, należy otworzyć [wersję roboczą](general-electronic-reporting.md#component-versioning) utworzonej konfiguracji ER w projektancie formatów ER. Następnie dodaj element **Excel\\Plik**, dołącz szablon programu Word do edytowalnego formatu ER i połącz ten szablon z dodanym elementem **Excel\\Plik**.
 
 > [!NOTE]
-> Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), który został poprzednio [skonfigurowany](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) w obszarze parametrów ER w celu przechowywania szablonów formatów ER.
+> Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), który został poprzednio [skonfigurowany](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) w obszarze parametrów ER w celu przechowywania szablonów formatów ER.
 
 ![Dołączanie szablonu na stronie Projektant formatów](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Możesz dodać zagnieżdżone elementy **Excel\\Zakres** i **Excel\\Komórka** d
 
 ![Dodawanie zagnieżdżonych elementów na stronie Projektant formatów](./media/er-design-configuration-word-image4.gif)
 
-Podczas zapisywania zmian w formacie ER w czasie projektowania hierarchiczna struktura formatu jest przechowywana w dołączonym szablonie programu Word jako [niestandardowa część XML](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) o nazwie **Raport**. Musisz uzyskać dostęp do zmodyfikowanego szablonu, pobrać go z aplikacji Finance, zapisać lokalnie i otworzyć w aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono lokalnie przechowywany szablon przykładowy dla raportu kontrolnego zawierającego niestandardową część XML o nazwie **Raport**.
+Podczas zapisywania zmian w formacie ER w czasie projektowania hierarchiczna struktura formatu jest przechowywana w dołączonym szablonie programu Word jako [niestandardowa część XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) o nazwie **Raport**. Musisz uzyskać dostęp do zmodyfikowanego szablonu, pobrać go z aplikacji Finance, zapisać lokalnie i otworzyć w aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono lokalnie przechowywany szablon przykładowy dla raportu kontrolnego zawierającego niestandardową część XML o nazwie **Raport**.
 
 ![Wyświetlanie przykładowego szablonu raportu w aplikacji klasycznej Word](./media/er-design-configuration-word-image5.gif)
 
-Gdy powiązania elementów formatu **Excel\\Zakres** i **Excel\\Komórka** są uruchamiane w czasie wykonywania, dane, które każde powiązanie dostarcza, jest umieszczane w wygenerowanym dokumencie programu Word jako indywidualne pole niestandardowej części XML **Raport**. Aby wprowadzić wartości z pól niestandardowej części XML w generowanym dokumencie, musisz dodać odpowiednie [kontrolki zawartości](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) programu Word do szablonu programu Word, aby służyły jako symbole zastępcze dla danych, które będą wypełniane w czasie wykonywania. Aby określić sposób wypełnienia kontrolek zawartości, zamapuj każdą kontrolkę zawartości do odpowiedniego pola niestandardowej części XML **Raport**.
+Gdy powiązania elementów formatu **Excel\\Zakres** i **Excel\\Komórka** są uruchamiane w czasie wykonywania, dane, które każde powiązanie dostarcza, jest umieszczane w wygenerowanym dokumencie programu Word jako indywidualne pole niestandardowej części XML **Raport**. Aby wprowadzić wartości z pól niestandardowej części XML w generowanym dokumencie, musisz dodać odpowiednie [kontrolki zawartości](/office/client-developer/word/content-controls-in-word) programu Word do szablonu programu Word, aby służyły jako symbole zastępcze dla danych, które będą wypełniane w czasie wykonywania. Aby określić sposób wypełnienia kontrolek zawartości, zamapuj każdą kontrolkę zawartości do odpowiedniego pola niestandardowej części XML **Raport**.
 
 ![Dodawanie i mapowanie kontrolek zawartości w aplikacji klasycznej Word](./media/er-design-configuration-word-image6.gif)
 

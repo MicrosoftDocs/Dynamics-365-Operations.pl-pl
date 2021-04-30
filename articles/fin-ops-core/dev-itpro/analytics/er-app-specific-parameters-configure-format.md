@@ -2,7 +2,8 @@
 title: Skonfiguruj formaty ER do używania parametrów określonych dla firmy
 description: W tym temacie wyjaśniono, w jaki sposób można skonfigurować format raportowania elektronicznego (ER) do używania z określonymi dla firmy parametrami.
 author: NickSelin
-ms.date: 03/24/2021
+manager: AnnBe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3802675b2fe0615f4c2ad682462a233c67f18f1a
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751185"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853500"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Skonfiguruj formaty ER do używania parametrów określonych dla firmy
 
@@ -28,7 +29,7 @@ ms.locfileid: "5751185"
 
 ## <a name="overview"></a>Omówienie
 
-W wielu formatach elektronicznego raportowania (ER), które należy zaprojektować, należy filtrować dane przy użyciu zbioru wartości, które są właściwe dla poszczególnych firm danego wystąpienia (np. zestawy kodów podatków do filtrowania transakcji podatkowych). Obecnie, jeśli filtrowanie tego typu jest skonfigurowane w formacie ER, wartości zależne od firmy (np. kody podatków) są używane w wyrażeniach formatu ER w celu określenia reguł filtrowania danych. Z tego względu format ER jest zgodny z daną firmą, a w celu wygenerowania wymaganych raportów należy utworzyć pochodne kopie oryginalnego formatu ER dla każdej firmy, w której ma być uruchamiany format ER. Każdy pochodny format ER musi być edytowany w celu przeniesienia do niego wartości właściwych dla firmy, który jest zmieniany w systemie, o ile oryginalna (podstawowa) wersja została zaktualizowana, wyeksportowana ze środowiska testowego i zaimportowana do środowiska produkcyjnego, jeśli musi zostać wdrożona do produkcji użycia itd. Dlatego obsługa tego typu skonfigurowanego rozwiązania ER jest dość skomplikowana i czasochłonna z kilku powodów:
+W wielu formatach elektronicznego raportowania (ER), które należy zaprojektować, należy filtrować dane przy użyciu zbioru wartości, które są właściwe dla poszczególnych firm danego wystąpienia (np. zestawy kodów podatków do filtrowania transakcji podatkowych). Obecnie, jeśli filtrowanie tego typu jest skonfigurowane w formacie ER, wartości zależne od firmy (np. kody podatków) są używane w wyrażeniach formatu ER w celu określenia reguł filtrowania danych. Z tego względu format ER jest zgodny z daną firmą, a w celu wygenerowania wymaganych raportów należy utworzyć pochodne kopie oryginalnego formatu ER dla każdej firmy, w której ma być uruchamiany format ER. Każdy pochodny format ER musi być edytowany w celu przeniesienia do niego wartości właściwych dla firmy, który jest zmieniany w systemie, o ile oryginalna (podstawowa) wersja została zaktualizowana, wyeksportowana ze środowiska testowego i zaimportowana do środowiska produkcyjnego, jeśli musi zostać wdrożona do produkcji użycia itd. Dlatego obsługa tego typu skonfigurowanego rozwiązania ER jest skomplikowana i czasochłonna z kilku powodów:
 
 -   Im więcej jest firm, tym więcej konfiguracji formatu ER trzeba będzie zachować.
 -   Obsługa konfiguracji ER wymaga, aby użytkownicy biznesowi mieli wiedzę na temat ER.
@@ -86,7 +87,7 @@ W tym przykładzie utworzysz konfigurację dla przykładowej Litware, Inc. Aby u
 
     ![Źródło Model.Data.Summary podsumowanie pokazuje listę transakcji podatkowych](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
-    Pole **Model.Data.Summary.Level** zostało skonfigurowane w taki sposób, aby zawierało wyrażenie ER. Należy zwrócić uwagę, że kody podatków (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** i **InVAT0**) są mocno zakodowane w tej konfiguracji. W związku z tym ten format ER jest zależny od firmy, w której skonfigurowano kody podatków.
+    Pole **Model.Data.Summary.Level** zostało skonfigurowane w taki sposób, aby zawierało wyrażenie ER. Kody podatków (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** i **InVAT0**) są mocno zakodowane w tej konfiguracji. W związku z tym ten format ER jest zależny od firmy, w której skonfigurowano kody podatków.
 
     ![Pole Model.Data.Summary.Level z kodami stałymi podatków](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
@@ -153,12 +154,12 @@ Następnie należy dodać nowe źródło danych w celu określenia sposobu, w ja
 1.  Na karcie **mapowanie** wybierz opcję **Dodaj**.
 2.  Wybierz **wyliczenia formatów\wyszukiwanie**.
 
-    Użytkownik stwierdził, że każda reguła określona przez użytkowników biznesowych w celu rozpoznania poziomu opodatkowania zwróci wartość wyliczenia formatu ER. Należy zauważyć, że typ źródła danych **wyszukiwania** może być dostępny w **modelu danych** i blokach **Dynamics 365 for Operations** oprócz bloku **wyliczenia formatu**. W związku z tym wyliczenia modeli danych ER i wyliczenia aplikacji mogą służyć do określenia typu wartości zwracanych dla źródeł danych tego typu.
+    Użytkownik stwierdził, że każda reguła określona przez użytkowników biznesowych w celu rozpoznania poziomu opodatkowania zwróci wartość wyliczenia formatu ER. Należy zauważyć, że typ źródła danych **wyszukiwania** może być dostępny w **modelu danych** i blokach **Dynamics 365 for Operations** oprócz bloku **wyliczenia formatu**. W związku z tym wyliczenia modeli danych ER i wyliczenia aplikacji mogą służyć do określenia typu wartości zwracanych dla źródeł danych tego typu. Aby dowiedzieć się więcej o źródłach danych **Wyszukiwania**, zobacz temat [Konfiguracja źródeł danych wyszukiwania, aby używać funkcji parametrów specyficznych dla aplikacji ER](er-lookup-data-sources.md).
     
 3.  W polu **Nazwa** wpisz **Reguła**.
 4.  W polu **Wyliczenie formatów** wybierz **Lista poziomów opodatkowania**.
 
-    Określono tylko, że dla każdej reguły określonej w tym źródle danych użytkownik biznesowy musi wybrać jedną z wartości z **listy poziomów opodatkowania** do wyliczenia jako wartość zwróconą.
+    Określono, że dla każdej reguły określonej w tym źródle danych użytkownik biznesowy musi wybrać jedną z wartości z **listy poziomów opodatkowania** do wyliczenia jako wartość zwróconą.
     
 5.  Wybierz **Edytuj wyszukiwania**.
 6.  Wybierz **Kolumny**.
@@ -190,7 +191,7 @@ Następnie należy dodać nowe źródło danych w celu określenia sposobu, w ja
     
     ![Strona projektanta formatów z nowym źródłem danych](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
-    Należy zauważyć, że Ocena skonfigurowanych reguł zależy od typu danych pól, które zostały wybrane w celu zdefiniowania warunków tych reguł. Po wybraniu pola, które jest skonfigurowane jako pole typu danych **numerycznych** lub **dat**, kryteria różnią się od kryteriów opisanych wcześniej dla typu **ciąg**. W przypadku pól **numerycznych** i **dat** reguła musi być określona jako zakres wartości. Warunek reguły zostanie wówczas uznany za spełniony, gdy wartość przekazywana do źródła danych znajduje się w skonfigurowanym zakresie.
+    Ocena skonfigurowanych reguł zależy od typu danych pól, które zostały wybrane w celu zdefiniowania warunków tych reguł. Po wybraniu pola, które jest skonfigurowane jako pole typu danych **numerycznych** lub **dat**, kryteria różnią się od kryteriów opisanych wcześniej dla typu **ciąg**. W przypadku pól **numerycznych** i **dat** reguła musi być określona jako zakres wartości. Warunek reguły zostanie wówczas uznany za spełniony, gdy wartość przekazywana do źródła danych znajduje się w skonfigurowanym zakresie.
     
     Ilustracja poniżej zawiera przykład tego rodzaju ustawień. Oprócz pole **Model.Data.Tax.Code** w typie danych **Ciąg** w polu **Model.Tax.Summary.Base** w **właściwe** służy do określania warunków dla źródła danych wyszukiwania.
     
@@ -306,7 +307,9 @@ Aby dowiedzieć się, jak wyszukać format ER **Format, aby uzyskać informacje 
 
 [Projektant formuł w module Raportowanie elektroniczne](general-electronic-reporting-formula-designer.md)
 
-[Umożliwia konfigurowanie parametrów formatu ER dla firmy](er-app-specific-parameters-set-up.md)
+[Konfiguracja parametrów formatu raportowania elektronicznego dla firmy](er-app-specific-parameters-set-up.md)
+
+[Konfiguracja źródeł danych wyszukiwania, aby używać funkcji parametrów specyficznych dla aplikacji ER](er-lookup-data-sources.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818687"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867454"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Tworzenie projektu integratora danych (wersja zapoznawcza)
 
@@ -59,6 +59,7 @@ W tym temacie opisano sposób tworzenia projektu integratora danych.
     1. Utwórz projekty integracji danych dla następujących szablonów przy użyciu utworzonego właśnie zestawu połączeń:
 
         - Wyniki wglądu w płatności od odbiorców (CDS do Fin and Ops)
+            - Jeśli używasz wersji 10.0.17 lub nowszej, musisz użyć szablonu o nazwie, Wynik analizy płatności klienta (CDS do Fin i Ops 10.0.17+).
         - Wyniki szeregów czasowych przepływów pieniężnych (CDS do Fin and Ops)
         - Wyniki szeregów czasowych budżetu (CDS do Fin and Ops)
 

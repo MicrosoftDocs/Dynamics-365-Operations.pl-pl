@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841774"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908378"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendarze i planowanie główne
 
@@ -90,7 +90,7 @@ Aby wskazać daty, kiedy odbiorca może przyjąć dostawy, można przypisać kal
 
 Należy pamiętać, że można dla każdego odbiorcy można dodać tylko jeden kalendarz. Jeśli chcesz dodać kalendarz dla każdego adresu odbiorcy, możesz utworzyć jednego odbiorcę dla każdego adresu i następnie przypisać do nich odpowiedni kalendarz. 
 
-Na żądaną datę przyjęcia w wierszach zamówienia sprzedaży wpływa kalendarz odbiorcy i metoda kontroli daty dostawy. Można znaleźć więcej informacji o sposobie obliczania najwcześniejszej daty dostawy w temacie [Zobowiązanie do zamówienia.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Na żądaną datę przyjęcia w wierszach zamówienia sprzedaży wpływa kalendarz odbiorcy i metoda kontroli daty dostawy. Można znaleźć więcej informacji o sposobie obliczania najwcześniejszej daty dostawy w temacie [Zobowiązanie do zamówienia.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Kalendarz wysyłek dla firmy
 Aby wskazać daty, kiedy firma może wysłać towary, można ustawić kalendarz w **Administrowanie organizacją > Organizacje > Firmy**. Wybierz firmę i dodaj kalendarz na karcie **Handel zagraniczny i logistyka** w polu **Kalendarz wysyłek**. Kalendarz wysyłek będzie działać jako źródło wartości domyślnych dla wszystkich kalendarzy magazynu w firmie. 

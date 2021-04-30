@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 882e9ba310930cd6a9c638c60d5be7edc6809335
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e63c5f3f327870b616eb93f80544c4f1e89980e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821208"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909628"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.10 (Maj 2020 r.)
 
@@ -33,19 +33,19 @@ W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsof
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](https://docs.microsoft.com/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
+To wydanie obejmuje następujące nowe funkcje. Tytuły funkcji łączą się z dodatkowymi informacjami w witrynie [plany wydań](/dynamics365/release-plans/). Dodatkowe łącza wskazują dodatkową dokumentację lub pliki wideo, które są obecnie dostępne dla tej funkcji. Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
-- [Rozszerzanie użycia istniejących znaczników ilości efektywnej z zarządzaniem magazynem](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+- [Rozszerzanie użycia istniejących znaczników ilości efektywnej z zarządzaniem magazynem](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
 
-- [Rozszerzenia zarządzania obciążeniem pracą przychodzącą do zarządzania magazynem](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Aby uzyskać więcej informacji, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](../warehousing/inbound-load-handling.md).
+- [Rozszerzenia zarządzania obciążeniem pracą przychodzącą do zarządzania magazynem](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Aby uzyskać więcej informacji, zajrzyj do [Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu](../warehousing/inbound-load-handling.md).
 
-- [Ulepszenia drukowania etykiet dla zarządzania magazynem](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Aby uzyskać więcej informacji, należy zapoznać się z tematem [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md)
+- [Ulepszenia drukowania etykiet dla zarządzania magazynem](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Aby uzyskać więcej informacji, należy zapoznać się z tematem [Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych](../warehousing/document-routing-layout-for-license-plates.md)
 
-- [Planowanie główne obejmuje towary z dostępnych zapasów, gdy są włączone filtry przetwarzania wstępnego](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+- [Planowanie główne obejmuje towary z dostępnych zapasów, gdy są włączone filtry przetwarzania wstępnego](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
-- [Nowe jednostki danych dla obszaru produkcji](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nowe jednostki danych dla obszaru produkcji](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Zarządzanie jakością dla procesów magazynowych](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Aby zapoznać sie ze szczegółami, zobacz [Zarządzanie jakością dla procesów magazynowych](../inventory/quality-management-for-warehouses-processes.md).
+- [Zarządzanie jakością dla procesów magazynowych](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Aby zapoznać sie ze szczegółami, zobacz [Zarządzanie jakością dla procesów magazynowych](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -61,7 +61,7 @@ Aby uzyskać informacje dotyczące poprawek usterek zawartych w tej aktualizacji
 
 Interesują Cię nadchodzące i ostatnio wprowadzone możliwości którejkolwiek z naszych aplikacji lub platform biznesowych?
 
-Zajrzyj do [Dynamics 365: plan wydania 2020 aktualizacja 1](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
+Zajrzyj do [Dynamics 365: plan wydania 2020 aktualizacja 1](/dynamics365-release-plan/2020wave1/index). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 

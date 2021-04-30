@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805113"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890059"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfiguruj tabele wirtualne usługi Dataverse
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources jest wirtualnym źródłem danych w usłudze Micros
 Aby włączyć operacje CRUD dla jednostek zasobów ludzkich z usługi Dataverse, należy udostępnić jednostki jako tabele wirtualne w usłudze Dataverse. Pozwala to na wykonywanie operacji CRUD z usługi Dataverse i Microsoft Power Platform na danych znajdujących się w module Zasoby ludzkie. Operacje te obsługują również pełne sprawdzanie poprawności logiki biznesowej w celu zapewnienia integralności danych podczas zapisywania danych w jednostkach.
 
 > [!NOTE]
-> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Jednostki Human Resources odpowiadają tabelom Dataverse. Aby uzyskać więcej informacji o Dataverse (poprzednio Common Data Service) i aktualizacjach terminologii, zobacz [Co to jest Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Dostępne tabele wirtualne dla modułu Zasoby ludzkie
 
@@ -51,7 +51,7 @@ Tabele wirtualne dla modułu Zasoby ludzkie nie są takie same jak tabele natywn
 Tabele natywne dla modułu Zasoby ludzkie są generowane oddzielnie i utrzymywane w rozwiązaniu HCM Common w Dataverse. W przypadku tabel natywnych dane są przechowywane w usłudze Dataverse i wymagają synchronizacji z bazą danych aplikacji Zasoby ludzkie.
 
 > [!NOTE]
-> Aby uzyskać listę tabel natywnych usługi Dataverse dla modułu Zasoby ludzkie, zobacz temat [Tabele usługi Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Aby uzyskać listę tabel natywnych usługi Dataverse dla modułu Zasoby ludzkie, zobacz temat [Tabele usługi Dataverse](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -71,7 +71,7 @@ Aby uzyskać więcej informacji na temat włączania i wyłączania funkcji, zob
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Rejestracja aplikacji w usłudze Microsoft Azure
 
-Najpierw należy zarejestrować wystąpienie modułu Zasoby ludzkie w witrynie Azure Portal, aby platforma tożsamości Microsoft mogła udostępniać usługi uwierzytelniania i autoryzacji aplikacjom i użytkowników. Aby uzyskać więcej informacji o rejestrowaniu aplikacji na platformie Azure, zobacz temat [Szybki Start: rejestracja aplikacji na platformie tożsamości Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Najpierw należy zarejestrować wystąpienie modułu Zasoby ludzkie w witrynie Azure Portal, aby platforma tożsamości Microsoft mogła udostępniać usługi uwierzytelniania i autoryzacji aplikacjom i użytkowników. Aby uzyskać więcej informacji o rejestrowaniu aplikacji na platformie Azure, zobacz temat [Szybki Start: rejestracja aplikacji na platformie tożsamości Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
 1. Otwórz portal [Microsoft Azure](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Najpierw należy zarejestrować wystąpienie modułu Zasoby ludzkie w witrynie A
 
 10. Podaj opis, wybierz czas trwania i wybierz przycisk **Dodaj**.
 
-11. Zapisz wartość klucza tajnego. Te informacje wprowadzisz podczas [Konfigurowania źródła danych tabeli wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Zanotuj wartość tajnych właściwości tabeli **Wartość**. Te informacje wprowadzisz podczas [Konfigurowania źródła danych tabeli wirtualnej](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Pamiętaj, aby w tym momencie zapisać wartość klucza tajnego. Klucz tajny nie jest nigdy wyświetlany ponownie po opuszczeniu tej strony.
@@ -215,12 +215,11 @@ W okienku slideout wyświetlane są najnowsze wyniki wykonania procesu. Można p
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Co to jest usługa Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Tabele w Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Omówienie relacji tabel](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Tworzenie i edytowanie tabel wirtualnych zawierających dane z zewnętrznego źródła danych](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Co to są portale Power Apps?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Omówienie tworzenia aplikacji w Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
+[Co to jest usługa Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tabele w Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
+[Omówienie relacji tabel](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Tworzenie i edytowanie tabel wirtualnych zawierających dane z zewnętrznego źródła danych](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Co to są portale Power Apps?](/powerapps/maker/portals/overview)<br>
+[Omówienie tworzenia aplikacji w Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

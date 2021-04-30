@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818567"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898067"
 ---
 # <a name="finance-insights-home-page-preview"></a>Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 
@@ -31,7 +31,7 @@ Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne mo
 
 Wersja zapoznawcza Finance Insights jest dostępna dla wdrożeń próbnych w Stanach Zjednoczonych Ameryki, Europie i Zjednoczonym Królestwie. Firma Microsoft stopniowo zwiększa obsługę wielu regionów.
 
-Funkcje wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli sztucznej inteligencji (AI) utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Funkcje wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli sztucznej inteligencji (AI) utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -43,7 +43,7 @@ Aby zawnioskować o udział w programie zapoznawczym, wypełnij [umowę na korzy
 
 ### <a name="system-requirements"></a>Wymagania systemowe
 
-Do korzystania z wersji zapoznawczej modułu Szczegółowe dane finansowe jest wymagane środowisko piaskownicy warstwy 2 (wielostanowiskowe). Aby uzyskać informacje kontekstowe o środowiskach, należy zapoznać się z tematem [Planowanie środowiska](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Do korzystania z wersji zapoznawczej modułu Szczegółowe dane finansowe jest wymagane środowisko piaskownicy warstwy 2 (wielostanowiskowe). Aby uzyskać informacje kontekstowe o środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Wymagania dotyczące wersji
 
@@ -79,7 +79,7 @@ Należy utworzyć projekt integratora danych, tak aby dane wygenerowane przez mo
 Po wykonaniu kroków konfiguracyjnych i skonfigurowaniu danych demonstracyjnych należy włączyć i skonfigurować każdą funkcję, która ma być używana: prognozy płatności od odbiorców, prognozowanie przepływów pieniężnych i propozycji budżetowych.
 
 ### <a name="enable-customer-payment-predictions"></a>Włączanie prognoz płatności odbiorcy
-Jeśli do testowania prognoz płatności od odbiorców są używane dane demonstracyjne, może być konieczne zaimportowanie dodatkowych danych demonstracyjnych w celu pomyślnego utworzenia modelu AI. Aby się zapoznać z konkretnymi krokami importowania danych demonstracyjnych, zajrzyj do tematu [Konfigurowanie danych demonstracyjnych dla prognoz płatności](set-up-demo-data.md).
+Jeśli do testowania prognoz płatności od odbiorców są używane dane demonstracyjne, może być konieczne zaimportowanie dodatkowych danych demonstracyjnych w celu pomyślnego utworzenia modelu AI. 
 
 Aby włączyć prognozy płatności od odbiorców, należy wykonać procedurę tworzenia modelu uczenia maszynowego, który będzie używał danych organizacji do generowania prognoz dotyczących tego, kiedy odbiorcy prawdopodobnie zapłacą zaległe faktury oraz kiedy prawdopodobnie zostaną zapłacone konkretne faktury. Aby uzyskać więcej informacji i poznać dokładną procedurę, przeczytaj temat [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md). 
 

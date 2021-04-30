@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825333"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909139"
 ---
 # <a name="purchase-order-overview"></a>Omówienie zamówień zakupu
 
@@ -41,7 +41,7 @@ Poniższe artykuły zawierają omówienie różnych etapów, przez które przech
 -   [Tworzenie zamówień zakupu](purchase-order-creation.md)
 -   [Zatwierdzanie i potwierdzanie zamówień zakupu](purchase-order-approval-confirmation.md)
 -   [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
--   [Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Omówienie faktur od dostawców](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Typy zamówień zakupu
 Istnieją trzy typy zamówień zakupu. Podczas tworzenia zamówienia zakupu należy określić jego typ. Na stronie **Parametry modułu Zaopatrzenie i sourcing** można skonfigurować domyślny typ nowych zamówień.
@@ -85,7 +85,7 @@ Pole **Stan zatwierdzenia** jest używane, gdy zamówienie zakupu przechodzi prz
 
 [Przyjęcie produktów na podstawie zamówień zakupu](product-receipt-against-purchase-orders.md)
 
-[Omówienie faktur od dostawców](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Omówienie faktur od dostawców](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

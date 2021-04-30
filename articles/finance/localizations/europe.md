@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3954660e04b4da26908b9b981fa043474e62bf59
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 382cfc3eaacd0610491646f32e8c7684e0451d7f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832627"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892380"
 ---
 # <a name="europe-overview"></a>Europa — omówienie
 
@@ -96,8 +96,8 @@ Ten temat zawiera informacje i łącza do zasobów, które mogą pomóc w konfig
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Omówienie raportowania elektronicznego](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Omówienie raportowania elektronicznego](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Pobieranie konfiguracji Raportowania elektronicznego z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

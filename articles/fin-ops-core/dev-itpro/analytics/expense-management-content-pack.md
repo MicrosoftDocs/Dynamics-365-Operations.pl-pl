@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743514"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893259"
 ---
 # <a name="expense-management-power-bi-content"></a>Zarządzanie wydatkami — zawartość usługi Power BI
 
@@ -41,7 +41,7 @@ Dwa pakiety zawartości Power BI są dostępne do użytku z modułem Zarządzani
 Wszystkie kwoty są wyświetlane w walucie firmy. Wyświetlane są dane dla wszystkich firm, ale w razie potrzeby można dodać filtr firmy. 
 
 ## <a name="accessing-the-power-bi-content"></a>Przechodzenie do pakietu zawartości usługi Power BI
-Zawartość Expense Admin Dashboard.pbix i Expense Personal Dashboard.pbix Power BI można znaleźć w bibliotece zasobów współużytkowanych Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Zawartość Expense Admin Dashboard.pbix i Expense Personal Dashboard.pbix Power BI można znaleźć w bibliotece zasobów współużytkowanych Microsoft Dynamics Lifecycle Services (LCS). Aby dowiedzieć się więcej o pobieraniu pakietu zawartości i jego implementowaniu w swojej organizacji, zobacz [Pakiety zawartości dla usługi Power BI w usłudze LCS od Microsoft i partnerów](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Zawartość znajduje się w obszarze roboczym Zarządzanie wydatkami jako zawartość osadzona Power Bi. Właściciel wydatków może wyświetlić własne wydatki, ale tylko pracownicy ds. rozrachunków z dostawcami mają dostep do treści administratora i mogą oglądać wszystkie wydatki użytkownika.
 
 ## <a name="refreshing-the-power-bi-content"></a>Odświeżanie zawartości Power BI

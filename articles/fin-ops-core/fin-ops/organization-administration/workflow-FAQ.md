@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11604389ff598c70e15709c9e3e04b6ec436f6a6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747208"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890364"
 ---
 # <a name="workflow-faq"></a>Przepływ pracy — często zadawane pytania
 
@@ -45,9 +45,9 @@ Poniżej znajduje się kilka kluczowych obszarów, w których należy pamiętać
     - W przyszłej aktualizacji zostanie dodany komunikat centrum akcji, dzięki czemu użytkownikowi zostanie przypisany element pracy przepływu pracy. 
 - Dodawanie powiadomień do przepływów pracy
     - Komunikaty centrum akcji mogą być tworzone dla określonych użytkowników, takich jak wiadomość utworzona z przepływu pracy w X ++.
-    - [Przepływy pracy mają zdarzenia biznesowe](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), których odbiorca może wywoływać w celu wyzwolenia Przepływów, które mają wyszukiwane przez nich powiadomienia.   
+    - [Przepływy pracy mają zdarzenia biznesowe](../../dev-itpro/business-events/business-events-workflow.md), których odbiorca może wywoływać w celu wyzwolenia Przepływów, które mają wyszukiwane przez nich powiadomienia.   
 
-Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) w Microsoft Power Automate w celu wprowadzenia dodatkowych lub różnych powiadomień.
+Podsumowując, jeśli użytkownik nie otrzyma odpowiedniego powiadomienia z centrum akcji, gdy ma przypisany element pracy przepływu pracy, będzie korzystać [ze zdarzeń biznesowych przepływu pracy](../../dev-itpro/business-events/business-events-workflow.md) w Microsoft Power Automate w celu wprowadzenia dodatkowych lub różnych powiadomień.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Dlaczego Edytor przepływu pracy nie może być uruchomiony w programie AD FS?
 Podczas uruchamiania w usługach Active Directory Federation Services (AD FS) w uaktualnionym środowisku, edytor przepływu pracy może mieć problemy z uruchomieniem. Jeśli tak, upewnij się, że adres URL „https://dynamicsaxworkfloweditor/” jest dodawany do właściwości **Microsoft Dynamics 365 for Operations (Lokalne — Przepływ pracy — Aplikacja natywna)** w ustawieniach usługi ADFS.

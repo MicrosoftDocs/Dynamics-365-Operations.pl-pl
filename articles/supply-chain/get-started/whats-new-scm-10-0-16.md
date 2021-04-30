@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829988"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909926"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.16 (luty 2021 r.)
 
@@ -33,17 +33,17 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
+To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
-- [Dostosowywany interfejs wykonywania produkcji warsztatowej](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Aby uzyskać więcej informacji, zobacz [Konfiguracja urządzenia do uruchamiania interfejsu wykonywania produkcji warsztatowej](../production-control/production-floor-execution-setup.md).
+- [Dostosowywany interfejs wykonywania produkcji warsztatowej](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Aby uzyskać więcej informacji, zobacz [Konfiguracja urządzenia do uruchamiania interfejsu wykonywania produkcji warsztatowej](../production-control/production-floor-execution-setup.md).
 
-- [Dodatek widoczności zapasów dla Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Aby uzyskać więcej informacji, zobacz [Dodatek widoczności zapasów](../inventory/inventory-visibility.md)
+- [Dodatek widoczności zapasów dla Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Aby uzyskać więcej informacji, zobacz [Dodatek widoczności zapasów](../inventory/inventory-visibility.md)
 
 - Zunifikowana sekwencja numerów dla identyfikatorów zadań<br> - Aby uzyskać więcej informacji, zobacz temat [Zunifikowana sekwencja numerów dla identyfikatorów zadań](../production-control/unified-job-ids.md).
 
-- [Sprawdź poprawność numerów licencji w wierszach dokumentu źródłowego](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji magazynu](../warehousing/warehouse-configuration.md).
+- [Sprawdź poprawność numerów licencji w wierszach dokumentu źródłowego](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Aby uzyskać więcej informacji, zobacz [Omówienie konfiguracji magazynu](../warehousing/warehouse-configuration.md).
 
-- [Wychodzące wizualizacje obciążenia pracą magazynu](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Aby uzyskać więcej informacji, zobacz [Wychodząca wizualizacja obciążenia](../warehousing/outbound-workload-visualization.md)
+- [Wychodzące wizualizacje obciążenia pracą magazynu](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Aby uzyskać więcej informacji, zobacz [Wychodząca wizualizacja obciążenia](../warehousing/outbound-workload-visualization.md)
 
 Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
@@ -99,7 +99,7 @@ Aby uzyskać informacje dotyczące poprawek usterek zawartych w każdej aktualiz
 
 Interesują Cię nadchodzące i ostatnio wprowadzone możliwości którejkolwiek z naszych aplikacji lub platform biznesowych?
 
-Zajrzyj do [Dynamics 365: plan wydania 2020 aktualizacja 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
+Zajrzyj do [Dynamics 365: plan wydania 2020 aktualizacja 2](/dynamics365-release-plan/2020wave2/index). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 

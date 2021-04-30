@@ -1,169 +1,195 @@
 ---
-title: Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
+title: Użyj jednostek skalowania, aby zwiększyć odporność obciążeń Supply Chain Management
 description: Ten temat przedstawia informacje na temat zarządzania jednostką skali chmury i urządzenia brzegowego przy produkcji i wykonywaniu zadań magazynowych.
 author: cabeln
-ms.date: 10/06/2020
+ms.date: 04/13/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: SCM
+ms.search.region: Global
 ms.author: cabeln
-ms.search.validFrom: 2020-09-23
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.search.validFrom: 2021-04-13
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: c47088edd89413d196e904bc7eaa115585bf8464
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836717"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899150"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
+# <a name="use-scale-units-to-help-increase-resilience-for-supply-chain-management-workloads"></a>Użyj jednostek skalowania, aby zwiększyć odporność obciążeń Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Jednostki skali chmury i urządzenia brzegowego umożliwiają dystrybucję obciążenia pracą produkcyjną i wykonaniem magazynów w różnych środowiskach. Ta funkcja może ułatwić poprawę wydajności, zapobiegać przerwom w świadczeniu usług oraz maksymalizuje czas pracy. Jest on dostarczany przez następujące dodatki:
+> [!IMPORTANT]
+> Możliwość jednostki skali dla Microsoft Dynamics 365 Dynamics 365 Supply Chain Management jest udostępniana użytkownikowi na warunkach regulujących korzystanie z usługi. Aby uzyskać więcej informacji, zobacz [Informacje prawne Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
+>
+> Włączając jednostki skali chmury i krawędzi, należy pamiętać, że pewne dane związane z konfiguracją i przetwarzaniem jednostek skali granicznej mogą być przechowywane w centrum danych znajdującym się w Stanach Zjednoczonych. Aby dowiedzieć się więcej o przetwarzaniu danych w chmurze i jednostek skali urządzenia brzegowego, zobacz sekcję [Przetwarzanie danych podczas zarządzania jednostkami skali](#data-processing-management) w dalszej części tego tematu.
 
-- Dodatek jednostki skali chmury dla Dynamics 365 Supply Chain Management
-- Dodatek jednostki skali urządzenia brzegowego dla Dynamics 365 Supply Chain Management
+## <a name="core-value-proposition-for-scale-units"></a>Propozycja wartości podstawowej dla jednostek skali
 
 Firmy pracujące z produkcją i dystrybucją muszą mieć możliwość uruchamiania podstawowych procesów biznesowych 24/7, bez przerw i w skali. Jednostki skali chmury i urządzenia brzegowego umożliwiają firmom uruchamianie kluczowych procesów produkcyjnych i magazynowych, nawet w obliczu przerwanej łączności sieciowej lub opóźnienia.
 
-## <a name="public-preview-information"></a>Informacje o publicznej wersji zapoznawczej
+Jednostki skali chmury i urządzenia brzegowego umożliwiają dystrybucję obciążenia pracą produkcyjną i wykonaniem magazynów w różnych środowiskach. Ta funkcja może ułatwić poprawę wydajności, zapobiegać przerwom w świadczeniu usług oraz maksymalizuje czas pracy. Jednostki skali są dostarczane za pośrednictwem następujących dodatków do subskrypcji Supply Chain Management:
 
-Podgląd zapewnia jedno środowisko, które działa jako centralne centrum Dynamics 365 Supply Chain Managementśrodowiska i jedno środowisko działające jako jednostka skali chmury.
+- Dodatek jednostki skali w chmurze Dynamics 365 Supply Chain Management (*dostępne od kwietnia 2021*)
+- Dodatek jednostki skali na krawędzi w chmurze Dynamics 365 Supply Chain Management (*dostępne wkrótce*)
 
-<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
-
-### <a name="preview-availability"></a>Dostępność wersji zapoznawczej
-
-Podgląd dla jednostek skali w chmurze i urządzeń brzegowych jest dostępny dla istniejących odbiorców modułu Zarządzanie łańcuchem dostaw w październiku 2020.
-
-Aby uzyskać dostęp do październikowej wersji zapoznawczej 10.0.15/platform update 39 w celu wdrożenia w środowisku [Microsoft Dynamics Lifecycle Services (usługi LCS)](https://lcs.dynamics.com/v2), musisz należeć do programu wczesnego dostępu PEAP dla Supply Chain Management. Można dołączyć protokół PEAP, jeśli jesteś już członkiem szerszego programu [Dynamics Insider Program](https://experience.dynamics.com/insider). Wybierz tylko określony program o nazwie „operacje finansowe &: podgląd wersji programu Access (PEAP)”
-
-> [!IMPORTANT]
-> Możliwość tworzenia jednostek skali w Supply Chain Management jest dostępna tylko wtedy, gdy użytkownik zgodzi się na warunki [wersji zapoznawczej Cloud + Edge dla Finance and Operations](https://Aka.ms/SCMCnETerms).
-
-### <a name="data-processing-for-the-preview"></a>Przetwarzanie danych dla podglądu
-
-W podglądzie publicznym niektóre usługi zarządzania będą przechowywane tylko w Stanach Zjednoczonych. Jeśli jednak funkcja jest ogólnie dostępna, te usługi zarządzania będą dostępne we wszystkich lokalizacjach obsługiwanych przez Supply Chain Management. Ma to wpływ na transfer i przechowywanie informacji administracyjnych używanych przez Menedżera jednostki skalowania, w tym:
-
-- Nazwy i identyfikatory dzierżaw
-- Twój identyfikator projektu LCS
-- Adresy e-mail administratora służące do logowania
-- Identyfikatory środowiska dla jednostki centrum i skali
-- Konfiguracje obciążenia
-- Zebrane metryki (takie jak czas oczekiwania i przepływność) wyświetlane na stronie analizy mapy
-
-Dane przenoszone do i przechowywane w Stanach Zjednoczonych centra danych zostaną usunięte po zamknięciu środowiska podglądu.
-
-### <a name="sign-up-for-the-preview"></a>Rejestracja w celu uzyskania wersji zapoznawczej
-
-Aby zarejestrować się w chmurze i podglądzie Supply Chain Management, Twoja organizacja musi mieć już środowisko chmurowe Supply Chain Management.
-
-Możliwości jednostki skalowania są obecnie w publicznej wersji Preview. Podczas rejestrowania się należy skorzystać z konta użytkownika w określonym dzierżawie. Ponadto użytkownik musi być właścicielem projektu lub administratorem środowiska w usługi LCS dla aktywnego projektu usługi LCS systemu Dynamics 365 w tym dzierżawie.
-
-Po zapisaniu się w celu uzyskania podglądu wybierzesz dzierżawcę i przejdziesz przez kroki rejestracji. Gdy tylko firma Microsoft będzie mogła przydzielić dyspozycyjność w wersji Preview, wyśle do Ciebie wiadomość e-mail zawierającą szczegóły dotyczące zainicjowania obsługi oraz kody promocji środowisk (centrum i jednostki skali) dla odpowiedniego projektu usługi LCS. Można wówczas wdrożyć te dwa środowiska jako środowiska testowe warstwy 2. Te środowiska będą obowiązywać 60 dni od daty utworzenia kodów promocyjnych. Nie należy używać tych dwóch środowisk, dopóki nie zostanie ukończony krok opisany w następnym akapicie.
-
-Po potwierdzeniu firmie Microsoft, że te dwa środowiska zostały wdrożone za pomocą kodów awansowania, jedno z środowisk zostanie skonfigurowane do pracy jako centrum, a drugi zostanie skonfigurowany do pracy jako jednostka skali. Następnie można skonfigurować jednostki skali i wdrożyć wybrane obciążenia magazynowe i obciążenie pracą przy użyciu [modułu Menedżer jednostki skali](https://aka.ms/SCMSUM).
-
-Środowisko podglądu zostanie automatycznie usunięte po 60 dniach. Mogą jednak zostać usunięte wcześniej, jeśli okaże się, że nie są używane. Po usunięciu środowisk podglądu można utworzyć konto i kolejno w kolejce, aby utworzyć nowe wdrożenie w wersji Preview.
-
-Aby zarejestrować się w celu uzyskania podglądu, przejdź do [portalu Menedżera jednostki skalowania](https://aka.ms/SCMSUM).
-
-### <a name="limitations-that-apply-during-the-preview-period"></a>Ograniczenia, które obowiązują w okresie podglądu
-
-> [!IMPORTANT]
-> W przypadku początkowej fazy programu podglądu dla tej funkcji firma Microsoft obsługuje tylko te koncentratory, które mają jednostki skalowania w chmurze, a nie koncentratory o jednostce skali krawędzi. Jednostki skali krawędzi są instalowane lokalnie i oczekuje się, że będą dostępne podczas nadchodzącej fazy programu.
-
-Ponieważ jednostki skali chmury i krawędzi są funkcją podglądu, związane z nimi usługi są obecnie dostępne w ograniczonych krajach i regionach. Włączając jednostki skali chmury i krawędzi, należy pamiętać, że pewne dane związane z konfiguracją i przetwarzaniem jednostek skali granicznej mogą być przechowywane w centrum danych znajdującym się w Stanach Zjednoczonych. Włączenie jednostek skali w chmurze i krawędzi powoduje również zgodę na [warunki wersji zapoznawczej Finance and Operations dla chmury i Edge](https://Aka.ms/SCMCnETerms). Aby dowiedzieć się więcej o jednostkach chmury i brzegowej, zapoznaj się z [dokumentacją ](https://aka.ms/scmcne).
-
-Twoja prywatność jest ważna dla Microsoft. Więcej informacji na ten temat znajduje się w [zasadach zachowania poufności informacji ](https://aka.ms/privacy).
-
-> [!IMPORTANT]
-> Nie wszystkie funkcje biznesowe są w pełni obsługiwane w podglądzie publicznym, gdy są obciążenia są używane dla jednostki skali. Aby uzyskać więcej informacji na temat obciążeń funkcjonalnych, zobacz opisy parametrów w dalszej części tego tematu.
+Możliwości obciążenia są udostępniane w sposób ciągły poprzez stopniowe ulepszenia.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Jednostki skali i wydzielone obciążenie pracą
 
+Jednostki skali rozszerzają centralne środowisko centrum Supply Chain Management przez dodanie dedykowanych zdolności produkcyjnych. Jednostki skalowania mogą być uruchamiane w chmurze. Alternatywnie mogą działać na obrzeżach, lokalnie w lokalnym zakładzie.
+
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 z jednostkami skali":::
 
-Jednostki skali rozszerzają centralne środowisko centrum Supply Chain Management przez dodanie dedykowanych zdolności produkcyjnych. Jednostki skalowania mogą być uruchamiane w chmurze. Można je również uruchamiać na krawędziach w lokalnych lokalach instrumentu. Jednostki skalowania mogą być tymczasowo odłączone od środowiska centrum. Po podłączeniu jednostki skalowania uzyskują wszystkie informacje wymagane do uruchomienia dedykowanego przetwarzania przydzielonych obciążeń.
+Jednostki skali zapewniają odporność, niezawodność i skalowalność dla przypisanych obciążeń. Jednostki skali na krawędzi można tymczasowo odłączyć od środowiska centrum chmury, a pracownicy nadal pracują w przypisanych obciążeniach na krawędzi.
 
-:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Opcje skalowania jednostki w podglądzie publicznym":::
+*Obciążenie* pracą jest zdefiniowanym zestawem funkcji biznesowych, który może być rozważony i delegowany do jednostki skalowania. Chociaż obciążenie związane z zarządzaniem magazynem zostało zwolnione, obciążenie związane z wykonywaniem produkcji jest nadal dostępne w wersji zapoznawczej.
 
-W przypadku wersji zapoznawczej można skonfigurować środowisko centralne z wybranymi obciążeniami w jednostce skali chmury, korzystając z portalu Menedżera jednostki skalowania. Uczestnicy wersji zapoznawczej, którzy mają dostęp do lokalnych danych biznesowych (LBD) w środowisku lokalnym, mogą również skonfigurować środowisko LBD jako jednostkę skali krawędzi.
+Można skonfigurować środowisko centrum i jednostki skalowania w chmurze dla wybranych obciążeń, korzystając z [portalu Menedżera jednostki skalowania](https://sum.dynamics.com).. Możesz również przypisać wiele obciążeń na jednostkę skali. Aby uzyskać informacje o wymaganiach wstępnych i ograniczeniach dotyczących jednostek skalowania w chmurze w bieżącej wersji, zobacz sekcję [Wymagania wstępne i ograniczenia dotyczące jednostek skalowania w chmurze](#cloud-scale-unit-prerequisites) w dalszej części tematu.
 
-Obciążenie pracą jest zdefiniowanym zestawem funkcji biznesowych, który może być rozważony i delegowany do jednostki skalowania. Obecnie w podglądzie są wymienione dwa typy obciążeń:
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości zarządzania pracą magazynową w jednostce skalowania
 
-- Wykonywanie produkcji
-- Zarządzanie magazynem
+Obciążenie zarządzania magazynem jest pierwszym rozproszonym obciążeniem dla jednostek skalowania, które zostało udostępnione do ogólnej dostępności.
 
-Można przypisać jeden z każdego typu obciążenia na jednostkę skali. 
+W przypadku zarządzania magazynem jednostki wagowe zapewniają następujące możliwości:
+
+- System może przetwarzać wybrane metody fal dla zleceń sprzedaży i uzupełniania zapasów.
+- Pracownicy magazynu mogą uruchamiać pracę magazynową sprzedaży i uzupełnienia popytu, korzystając z aplikacji Warehouse Management.
+- Pracownicy magazynu mogą uzyskiwać dostęp do dostępnych zapasów za pośrednictwem aplikacji Warehouse Management.
+- Pracownicy magazynu mogą tworzyć i uruchamiać przesunięcia zapasów za pośrednictwem aplikacji Warehouse Management.
+- Pracownicy magazynu mogą rejestrować zamówienia zakupu i wykonywać odłożenia pracy przy użyciu aplikacji Warehouse Management.
+
+Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości wykonywania produkcyjnych w jednostkach skali
 
-W module Uruchomienie produkcji jednostki skali chmury i urządzenia brzegowego zapewniają następujące możliwości, nawet jeśli jednostki brzegowe nie są połączone z chmurą:
+Pierwsza wersja obciążenia produkcyjnego jest obecnie w wersji zapoznawczej i zapewnia następujące możliwości:
 
 - Operatorzy maszyn i kierownicy mogą uzyskać dostęp do operacyjnego planu produkcji.
 - Operatorzy maszynowi mogą regularnie aktualizować plan, uruchamiając dyskretne i przetwarzające zadania produkcyjne.
 - Kierownik produkcji może skorygować plan operacyjny.
 - Pracownicy mogą uzyskać dostęp do modułu czas i frekwencja do zarejestrowania i wyrejestrowania się na brzegu, aby zapewnić poprawne Obliczanie wynagrodzeń pracowników.
 
-Aby uzyskać więcej informacji, zajrzyj do [szczegółów obciążenia pracą jednostki skali](cloud-edge-workload-manufacturing.md).
+Aby uzyskać więcej informacji, zobacz temat [Obciążenia wykonywania produkcji dla jednostek skalowania w chmurze i na urządzeniach brzegowych](cloud-edge-workload-manufacturing.md).
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedykowane możliwości zarządzania pracą magazynową w jednostce skalowania
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Uwagi przed włączeniem dystrybuowanej, topologii hybrydowej dla Supply Chain Management
 
-Przy zarządzaniu magazynem w jednostki skali chmury i urządzenia brzegowego zapewniają następujące możliwości, nawet jeśli jednostki brzegowe nie są połączone z centrum:
+Włączając rozproszoną topologię hybrydową, przenosisz środowisko chmurowe Supply Chain Management, tak aby działało jako centrum. Możesz również skojarzyć dodatkowe środowiska, które są skonfigurowane jako jednostki skalowania w chmurze lub na krawędzi.
 
-- Przetwarzanie wybranych metod grupy czynności jest włączone dla zamówień sprzedaży i uzupełniania popytu.
-- Pracownicy magazynu mogą uruchamiać pracę magazynową sprzedaży i uzupełnienia popytu, korzystając z aplikacji Warehouse Management.
-- Pracownicy magazynu mogą uzyskiwać dostęp do dostępnych zapasów za pośrednictwem aplikacji Warehouse Management.
-- Pracownicy magazynu mogą tworzyć i uruchamiać przesunięcia zapasów za pośrednictwem aplikacji Warehouse Management.
-- Pracownicy magazynu mogą rejestrować zamówienia zakupu i wykonywać odłożenia pracy przy użyciu aplikacji Warehouse Management.
+### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Wymagania wstępne i ograniczenia dotyczące jednostek skalowania w chmurze
 
-Aby uzyskać więcej informacji, zajrzyj do [szczegółów obciążenia pracą jednostki skali w magazynie](cloud-edge-workload-warehousing.md).
+W bieżącej wersji dla jednostek skalowania niektóre funkcje nie są jeszcze dostępne, ale mogą być dodawane w kolejnych wersjach w miarę upływu czasu.
 
-## <a name="onboard-scale-units-for-your-supply-chain-management-environment"></a>Wdrażanie jednostki skali dla środowiska Supply Chain Management
+#### <a name="you-must-be-a-licensed-customer-of-supply-chain-management"></a>Musisz być licencjonowanym klientem Supply Chain Management
 
-### <a name="deploy-the-preview-for-cloud-and-edge-scale-units"></a>Uruchomienie wersji zapoznawczej dla jednostek skalowania chmury i urządzenia brzegowego
+Aby dołączyć do topologii rozproszonej, musisz mieć licencję na Supply Chain Management. Twoje istniejące środowisko chmurowe stanie się centrum Twojej topologii hybrydowej. Możesz zadeklarować zarówno środowiska piaskownicy, jak i środowiska produkcyjne jako środowiska centralne, a także możesz dodawać jednostki skalowania zgodnie z nabytymi dodatkami.
 
-Na poniższej ilustracji przedstawiono przepływ zapisywania i tworzenia zainicjowania obsługi dla jednostki skalowania w chmurze w wersji zapoznawczej.
+#### <a name="your-existing-project-must-be-administered-via-the-global-commercial-version-of-lcs"></a>Twój istniejący projekt musi być administrowany za pośrednictwem globalnej komercyjnej wersji LCS
 
-:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Kroki rejestracji dla wesji zapoznawczej":::
+Twój istniejący projekt Microsoft Dynamics Lifecycle Services (LCS) musi spełniać następujące wymagania dotyczące wersji:
 
-### <a name="select-your-lcs-project-tenant-and-the-detailed-preview-process"></a>Wybierz dzierżawę projektu usługi LCS i szczegółowy proces wersji zapoznawczej
+- Projekt musi być administrowany za pośrednictwem globalnej komercyjnej wersji LCS pod adresem [lcs.dynamics.com](https://lcs.dynamics.com).
+- Wersje lokalne usługi LCS (takie jak [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) i [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)) nie są obsługiwane.
+- Wersje usługi LCS w chmurze rządowej nie są obsługiwane.
+- Wersja Mooncake usługi LCS nie jest obsługiwana.
 
-W wersji zapoznawczej [portalu Menedżera jednostki skalowania](https://aka.ms/SCMSUM) jest wyświetlana lista dzierżawców, do których należy konto, oraz miejsce, w którym użytkownik jest administratorem projektu usługi LCS.
+#### <a name="your-current-production-environment-must-be-of-the-self-service-type-in-lcs"></a>Twoje bieżące środowisko produkcyjne musi być typu samoobsługowego w LCS
 
-Jeśli poszukiwany dzierżawca nie znajduje się na liście, przejdź do [usługi LCS ](https://lcs.dynamics.com/v2)i upewnij się, że jesteś administratorem środowiska lub właścicielem projektu usługi LCS dla tego dzierżawcy. Należy zauważyć, że tylko Azure Active Directory(Azure AD) konta z wybranej dzierżawy są upoważnione do ukończenia korzystania z funkcji zapisywania się.
-
-> [!NOTE]
-> Po zastosowaniu zmian w usługi LCS może upłynąć do 30 minut w celu odzwierciedlenia zmian w liście dzierżawców.
-
-Dla każdej dzierżawy na liście jest wyświetlany stan zapisywania się.
-
-:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej dla dzierżawcy":::
-
-Wybierz łącze **Kliknij, aby się zarejestrować** w celu zarejestrowania Twojej dzierżawy usługi LCS w celu uczestnictwa w wersji Preview. Musisz zaakceptować warunki. Należy również podać firmowy adres e-mail, pod którym firma Microsoft może wysłać komunikację powiązaną z procesem zapisywania się w wersji Preview.
-
-:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Rejestracja zgłoszenia w celu uzyskania subskrypcji w wersji zapoznawczej dla dzierżawcy":::
-
-Firma Microsoft sprawdzi Twoją prośbę i poinformuje o następnych krokach, wysyłając wiadomość e-mail na adres podany w formularzu zapisywania się.
-
-Po przyznaniu dostępu do programu podglądu, dla projektu usługi LCS zostaną wyświetlone dwa kody promocyjne. Teraz można stosować kody promocyjne do wdrażania dwóch środowisk w usługi LCS. W środowiskach musi być używany protokół PEAP 10.0.15 Release lub nowszy. Po zakończeniu stosowania kodów awansowania należy powiadomić firmę Microsoft (zgodnie z instrukcjami), aby umożliwić nam zakończenie włączania środowisk dla funkcji podglądu. Firma Microsoft informuje o zakończeniu tego kroku konfiguracji systemu.
-
-Teraz można rozpocząć konfigurowanie jednostek skali i obciążeń w środowisku podglądu.
+Twoje obecne środowisko produkcyjne musi być oznaczone typem **Samoobsługa** w LCS. Ten typ wskazuje, że dzierżawca projektu LCS został już przekonwertowany, tak aby obsługiwał model hostingu Azure Service Fabric.
 
 > [!IMPORTANT]
-> Konfigurując jednostki skalowania w chmurze, można [wykonać wszystkie wymagane kroki w portalu Menedżera jednostki skalowania](#scale-unit-manager-portal).
-<!-- 
-> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
+> Typy środowisk, które działają jako infrastruktura jako usługa (IaaS), nie są obsługiwane. Te środowiska są zwykle oznaczone typem **Zarządzane przez firmę Microsoft** w LCS. Jeśli masz środowiska tego typu, skontaktuj się z osobą kontaktową w firmie Microsoft, aby poznać harmonogram migracji do typu **Samoobsługa**.
+
+Firma Microsoft jest w trakcie przenoszenia wszystkich środowisk chmurowych rozwiązania Supply Chain Management z modelu IaaS do topologii hostowanej w Service Fabric. To posunięcie zapewnia lepszą skalowalność i ułatwia zarządzanie usługami. Dlatego operacje wdrażania i konserwacji są szybsze. Podobnie składniki usług są migrowane do koncepcji mikrousług, a model hostingu usług [przejdzie](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) z modelu maszyny wirtualnej (VM) do lekkiej architektury kontenerowej.
+
+Ostatecznie ta sama konteneryzowana infrastruktura usług oparta na Service Fabric będzie obsługiwać zarówno wystąpienia usługi w chmurze, jak i skrajne, niezależnie od tego, czy wystąpienie jest centrum w chmurze, czy też jednostką skalowania w chmurze lub na brzegu.
+
+Zanim będzie można dołączyć do topologii hybrydowej, która obsługuje jednostki skalowania, dzierżawca projektu musi zostać przeniesiony do modelu hostowanego w Service Fabric. Ponadto każde środowisko, które będzie działać jako centrum, musi zostać przekonwertowane.
+
+> [!TIP]
+> Aby zapytać o stan dzierżawy projektu LCS, wyszukaj typ swojego środowiska w [LCS](https://lcs.dynamics.com/) lub skontaktuj się z partnerem lub osobą kontaktową firmy Microsoft.
+
+#### <a name="local-business-data-on-premises-environments-arent-supported-as-hubs-for-scale-units"></a>Lokalne środowiska danych biznesowych (lokalne) nie są obsługiwane jako centra dla jednostek skalowania
+
+Środowiska lokalne nie mogą działać jako centra dla jednostek skalowania. Środowiska koncentratora muszą zawsze być hostowane w chmurze.
+
+#### <a name="scale-unit-management-capabilities-are-limited"></a>Możliwości zarządzania jednostkami wagi są ograniczone
+
+Możliwości zarządzania, które mogą pomóc w przenoszeniu obciążeń, są ograniczone. Niektóre operacje zarządzania nie są obsługiwane w sposób samoobsługowy i może być konieczne poproszenie o pomoc techniczną za pośrednictwem partnera lub osoby kontaktowej firmy Microsoft. Przykłady obejmują pewne przesunięcia obciążenia między jednostkami skalowania i tymczasowe ruchy ad hoc w scenariuszach katastrof.
+
+#### <a name="metrics-and-measurements-arent-yet-available"></a>Metryki i miary nie są jeszcze dostępne
+
+Metryki i miary, które mogą pomóc w wyborze najlepszej aplikacji dla jednostek skali, nie są jeszcze dostępne. Skontaktuj się z osobą kontaktową firmy Microsoft lub partnerem wdrożeniowym, aby wybrać najkorzystniejszą aplikację.
+
+### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Przetwarzanie danych podczas zarządzania jednostkami skali
+
+Gdy włączysz środowisko Dynamics 365 do obsługi rozproszonej, hybrydowej topologii dla jednostek chmurowych i jednostek skali brzegowej, niektóre usługi zarządzania będą hostowane tylko w Stanach Zjednoczonych, tak jak w przypadku LCS. To zachowanie wpływa na przesyłanie i przechowywanie niektórych informacji administracyjnych i konfiguracyjnych, które są używane przez [portal Menedżer jednostek skalowania](https://sum.dynamics.com). Oto kilka przykładów:
+
+- Nazwy i identyfikatory dzierżaw
+- Twój identyfikator projektu LCS
+- Adresy e-mail administratora i właściciela projektu, które są używane do logowania
+- Identyfikatory środowiska dla jednostki centrum i skali
+- Konfiguracje obciążeń, w tym nazwy i adresy fizyczne podmiotów prawnych i obiektów, aby Twoja topologia mogła być pokazana na mapie geograficznej
+- Zebrane metryki (takie jak opóźnienie i przepustowość), które będą wyświetlane na stronie analizy mapy, aby pomóc Ci wybrać najbardziej korzystne wykorzystanie jednostek skali
+
+Dane przesyłane i przechowywane w centrach danych w USA zostaną usunięte zgodnie z zasadami przechowywania danych firmy Microsoft. Twoja prywatność jest ważna dla Microsoft. Więcej informacji na ten temat znajduje się w [zasadach zachowania poufności informacji ](https://go.microsoft.com/fwlink/?LinkId=521839).
+
+## <a name="onboarding-in-two-stages"></a>Dołączanie w dwóch etapach
+
+Proces dołączania do rozproszonej topologii hybrydowej składa się z dwóch etapów. Na pierwszym etapie należy sprawdzić poprawność dostosowań, aby upewnić się, że działają one w topologii rozproszonej z jednostkami skalowania. Środowiska sandbox i produkcyjne są przenoszone dopiero w drugim etapie.
+
+### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Etap 1: ocena dostosowań w jedno-pudełkowych środowiskach programistycznych
+
+Zanim zaczniesz wdrażać swoje piaskownice lub środowiska produkcyjne, zalecamy zbadanie jednostek skalowania w konfiguracji programistycznej, takiej jak środowisko typu one-box (znane również jako środowisko warstwy 1), aby można było weryfikować procesy, dostosowania, i rozwiązania. Na tym etapie dane i dostosowania zostaną zastosowane w środowiskach typu „one-box”. Jedno środowisko pełni rolę centrum, a drugie jednostki skali. Te ustawienia zapewniają najlepszą identyfikację i rozwiązywanie problemów. Do ukończenia tego etapu można również użyć najnowszej kompilacji wczesnego dostępu (PEAP).
+
+W przypadku etapu 1 należy używać [narzędzi wdrażania jednostek skalowania w środowiskach programistycznych o jednym polu](https://github.com/microsoft/SCMScaleUnitDevTools). Te narzędzia umożliwiają konfigurowanie centrów i jednostek skalowania w jednym lub dwóch oddzielnych środowiskach typu one-box. Narzędzia są dostarczane w wersji binarnej oraz w kodzie źródłowym w serwisie GitHub. Przejmij stronę typu wiki projektu, która zawiera [Przewodnik krok po kroku](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide), w którym opisano sposób korzystania z tych narzędzi.
+
+### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Etap 2: Nabywanie dodatków oraz wdrażanie w piaskownicy i środowiskach produkcyjnych
+
+Aby dołączyć jedno ze swoich środowisk piaskownicy lub środowisk produkcyjnych do nowej topologii, należy nabyć dodatki dla co najmniej jednej jednostki skalowania w chmurze (a w przyszłości - dla jednostek skalowania brzegowego). Dodatki przyznają odpowiednie miejsca na projekty i środowiska w [LCS](https://lcs.dynamics.com/), aby można było wdrożyć środowiska jednostek skalowania.
+
+> [!NOTE]
+> Dodatki jednostek skalowania nie są połączone z ograniczoną liczbą użytkowników, ale mogą być używane przez dowolnego użytkownika w istniejącej subskrypcji na podstawie ról przypisanych przez administratora.
+
+Jednostki wagowe są oferowane w wielu jednostkach magazynowych (SKU) i opcjach cenowych. Dlatego możesz wybrać opcję, która najlepiej odpowiada planowanej miesięcznej liczbie transakcji i wymaganiom dotyczącym wydajności.
+
+Podstawowa jednostka SKU jest znana jako *Podstawowa*, a bardziej wydajna jednostka SKU jest znana jako *Standardowa*. Każdy SKU jest wstępnie załadowany określoną liczbą miesięcznych transakcji. Możesz jednak zwiększyć miesięczny budżet transakcji, dodając dodatki nadwyżkowe dla każdej jednostki SKU.
+
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Dodatki dla jednostek skalowania w chmurze":::
+
+> [!TIP]
+> Aby określić rozmiar, który najlepiej odpowiada Twoim potrzebom, we współpracy z partnerem i firmą Microsoft ustal wielkość wymaganej miesięcznej transakcji.
+
+Zakup każdego dodatku jednostki skali nie tylko zapewnia miesięczną liczbę transakcji, ale także uprawnia do określonej liczby miejsc w środowisku w LCS. Za każdy dodatek Jednostki skalowania w chmurze masz prawo do jednego nowego miejsca produkcyjnego i jednego nowego miejsca w piaskownicy. Podczas procesu wdrażania zostanie dodany nowy projekt LCS, który ma te miejsca. Prawa użytkowania dla gniazd są powiązane, więc gniazda muszą być używane jako jednostki skalowania, które mają centrum w chmurze.
+
+Dodatki nadwyżkowe nie uprawniają do nowych miejsc w środowisku.
+
+Jeśli chcesz zdobyć więcej środowisk piaskownicy, możesz kupić dodatkowe zwykłe miejsca w piaskownicy. Firma Microsoft pomoże włączyć te gniazda jako jednostki skalowania piaskownicy dla topologii hybrydowej.
+
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Wbudowany w rozproszoną, hybrydową topologię do Supply Chain Management
+
+### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Wybierz dzierżawę projektu usługi LCS i szczegółowy proces dołączania
+
+Po zakończeniu planowania sposobu dołączania do rozproszonej, hybrydowej topologii Supply Chain Management, będziesz korzystać z [portalu menedżera jednostek skalowania](https://aka.ms/SCMSUM), aby rozpocząć proces wdrażania. W portalu wybierz kartę **Dynamics 365 Tenants**. Ta karta jest wyświetlana lista dzierżawców, do których należy konto, oraz miejsce, w którym użytkownik jest administratorem projektu usługi LCS.
+
+Jeśli poszukiwany dzierżawca nie znajduje się na liście, przejdź do [usługi LCS ](https://lcs.dynamics.com/v2)i upewnij się, że jesteś administratorem środowiska lub właścicielem projektu usługi LCS dla tego dzierżawcy. Tylko Azure Active Directory(Azure AD) konta z wybranej dzierżawy są upoważnione do ukończenia korzystania z funkcji zapisywania się.
+
+> [!NOTE]
+> Po zastosowaniu zmian w LCS lista dzierżawców może zająć do 30 minut, zanim zmiany zostaną odzwierciedlone.
+
+Dla każdej dzierżawy na liście jest wyświetlany stan dołączania.
+
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Lista dzierżawców na karcie Dynamics 365 Tenants":::
+
+Wybierz pozycję **Kliknij tutaj, aby rozpocząć** dołączanie żądań dla dzierżawy usługi LCS. Musisz zaakceptować warunki. Należy również podać firmowy adres e-mail, pod którym firma Microsoft może wysłać komunikację powiązaną z procesem dołączania.
+
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Rejestracja zgłoszenia w celu uzyskania subskrypcji w wersji zapoznawczej dla dzierżawcy":::
+
+Firma Microsoft sprawdzi Twoją prośbę i poinformuje o następnych krokach, wysyłając wiadomość e-mail na adres podany w formularzu zapisywania się. Firma Microsoft będzie ściśle z Tobą współpracować, aby włączyć jednostki skalowania w topologii hybrydowej dla Twojego scenariusza biznesowego.
+
+Po zakończeniu dołączania można użyć portu do skonfigurowania jednostek skalowania i obciążeń.
 
 ### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Zarządzanie jednostkami i obciążeniem skali chmury przy użyciu portalu Menedżera jednostki skalowania
 
@@ -171,21 +197,15 @@ Przejdź do [portalu Menedżera jednostki skalowania ](https://aka.ms/SCMSUM)i z
 
 :::image type="content" source="media/cloud_edge-Manage.png" alt-text="Obsługa jednostki skalowania i zarządzanie obciążeniem — doświadczenie":::
 
-Aby dodać jedną lub więcej jednostek skali, które są dostępne w topologii, wybierz opcję **Dodaj jednostki skalowania**. W podglądzie powinna zostać wyświetlona jednostka skali chmury, która została wdrożona z jednego z kodów promocyjnych, który został przyjęty jako część programu podglądu.
+Aby dodać jedną lub więcej jednostek skali, które są dostępne w subskrypcjach, wybierz opcję **Dodaj jednostki skalowania**.
 
-<!--  [!IMPORTANT]
-> In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
-
-Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciążenie pracą** można dodać magazyn lub obciążenie pracą produkcyjną do jednej z jednostek skali. Dla każdego obciążenia należy określić kontekst procesów, które będą należały do obciążenia pracą. W przypadku obciążeń zarządzania magazynem kontekst jest określonym magazynem w określonym oddziale i firmie. W przypadku obciążeń pracą dotyczącą produkcji, kontekst jest określonym oddziałem w firmie.
+Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciążenie pracą** można dodać obciążenie zarządzania magazynem do jednej z jednostek skali. Dla każdego obciążenia należy określić kontekst procesów, które będą należały do obciążenia pracą. W przypadku obciążeń zarządzania magazynem kontekst jest określonym magazynem w określonym oddziale i firmie.
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Tworzenie obciążenia pracą":::
 
-> [!IMPORTANT]
-> Portal Menedżera jednostki skalowania w podglądzie nie umożliwia usuwania obciążenia z jednostek skali lub cofania przypisania jednostki skali od koncentratora po wykonaniu przydziału. Jeśli trzeba usunąć przypisanie, należy skontaktować się z osobą kontaktową w celu uzyskania podglądu programu.
+> [!TIP]
+> Z biegiem czasu do środowiska Menedżer jednostek skalowania będą dodawane stopniowe ulepszenia, aby ułatwić operacje zarządzania cyklem życia. Specyficzne możliwości dla bieżącej wersji są udokumentowane w podręczniku wprowadzającym, który jest dostępny dla klientów, którzy są w trakcie wdrażania do rozproszonej, hybrydowej topologii Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
 
-<!-- ### Create an edge scale unit using your custom on-premises hardware appliance
-
-In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
-
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

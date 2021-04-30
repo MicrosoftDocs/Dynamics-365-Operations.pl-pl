@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792032"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906656"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -38,6 +38,8 @@ Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trz
 
 > [!NOTE]
 > Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w Commerce staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
+> 
+> Podczas używania kuponu w kanale centrum obsługi należy zaznaczyć przycisk **Oblicz ponownie** **(karta Sprzedaż > Oblicz > Oblicz ponownie)**, aby zastosowano rabat skojarzony z kuponem. Ten dodatkowy krok zostanie usunięty w przyszłej wersji.
 
 ### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841486"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910168"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatyczna alokacja opłat
 
@@ -144,7 +144,7 @@ Po skonfigurowaniu kodów opłat automatyczne należy wykonać poniższe kroki w
     - **Oddział** i **Magazyn** — umożliwia określenie oddziału i magazynu, jeśli opłaty mają być stosowane tylko do określonego oddziału i magazynu.
     - **Zachowaj** – Zaznacz ro pole wyboru, aby zachować transakcje opłat po zafakturowaniu, żeby opłata była stosowana po każdym utworzeniu nowej faktury dla wybranego konta odbiorcy.
 
-1. **Tylko dla zamówień sprzedaży:** Jeśli chcesz obliczyć opłaty warstwowe, zajrzyj do [Opłaty warstwowe w zamówieniach sprzedaży](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
+1. **Tylko dla zamówień sprzedaży:** Jeśli chcesz obliczyć opłaty warstwowe, zajrzyj do [Opłaty warstwowe w zamówieniach sprzedaży](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Alokuj opłaty z nagłówka do wiersza
 

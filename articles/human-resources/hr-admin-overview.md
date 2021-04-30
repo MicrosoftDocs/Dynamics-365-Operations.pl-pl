@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3eb5d686ff6edf11cdbde6c4799a99815719da71
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801150"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889771"
 ---
 # <a name="administration-overview"></a>Omówienie administracji
 
@@ -46,10 +46,10 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
   - [Konfigurowanie integracji z rozwiązaniem Dayforce](hr-admin-integration-dayforce.md)
   - [Tworzenie aplikacji do cyklicznego eksportowania danych](hr-admin-integration-recurring-data-export.md)
   - Integracja z pakietem Office
-    - [Integracja z pakietem Office — samouczek](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Aktualizowanie danych jednostki w programie Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Tworzenie funkcji otwierania w programie Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Rozwiązywanie problemów z integracją z pakietem Office](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Integracja z pakietem Office — samouczek](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Aktualizowanie danych jednostki w programie Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Tworzenie funkcji otwierania w programie Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Rozwiązywanie problemów z integracją z pakietem Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - [Zarządzanie funkcjami](hr-admin-manage-features.md)
 
@@ -84,7 +84,7 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
   - [Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Rozwiązywanie problemów z modułem Human Resources
-  - [Uzyskiwanie pomocy technicznej](hr-admin-troubleshooting-support.md)
+  - [Uzyskiwanie pomocy technicznej](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
   - [Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia](hr-admin-troubleshooting-batch-history.md)
   - [Raporty analityczne nie są aktualizowane](hr-admin-troubleshooting-analytic-reports.md)
   - [Nie można utworzyć środowiska w centrum administracyjnym usługi Power Apps](hr-admin-troubleshooting-power-apps.md)

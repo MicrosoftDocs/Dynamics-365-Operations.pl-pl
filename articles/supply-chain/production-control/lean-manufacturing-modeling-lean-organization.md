@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dfc0497286ae0286cde05412c82fcaac76f4042a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 476dfd6be55ce484cb9bc101ac27dc6181f3c010
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837640"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910384"
 ---
 # <a name="modeling-a-lean-organization"></a>Modelowanie organizacji oszczędnej
 
@@ -51,7 +51,7 @@ Strumień przyszłej wartości można modelować jako wersję przepływu produkc
 
 Sam strumień wartości jest modelowany jako jednostka operacyjna. Z tego względu strumień wartości może służyć jako wymiar finansowy.
 
-Aby uzyskać więcej informacji o jednostkach operacyjnych, zobacz [Tworzenie nowej jednostki operacyjnej](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
+Aby uzyskać więcej informacji o jednostkach operacyjnych, zobacz [Tworzenie nowej jednostki operacyjnej](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>Wycena produkcji oszczędnej w oparciu o przepływ produkcji
 Okresowa konsolidacja kosztu przepływu produkcji koryguje powiązane konto PWT i pozwala na określenie odchyleń dla produktów dostarczanych przez przepływ produkcji.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813924"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908574"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
 
@@ -30,12 +30,12 @@ Przed dołączeniem przewodników do zleceń pracy modułu Zarządzanie składni
 - [Skonfigurowanie aplikacji Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) w wersji 10.0.9 lub nowszej.
 - [Włączenie podwójnego zapisu w aplikacji Supply Chain Management](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Włączenie dystrybucji testowej](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) funkcji **MRGuidesFeature**. (W przypadku środowisk produkcyjnych należy najpierw przesłać bilet pomocy technicznej, aby dzierżawa została dodana do grupy dystrybucji testowej).
-- [Włączenie następujących kluczy konfiguracji](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) na stronie **Konfiguracja licencji**:
+- [Włączenie następujących kluczy konfiguracji](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) na stronie **Konfiguracja licencji**:
 
     - Zarządzanie składnikami majątku \> Rzeczywistość mieszana zarządzania składnikami majątku
     - Rzeczywistość mieszana \> Przewodnik w rzeczywistości mieszanej
 
-- [Skonfigurowanie aplikacji Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) w wersji 200.0.0.96 lub nowszej.
+- [Skonfigurowanie aplikacji Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) w wersji 200.0.0.96 lub nowszej.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Używanie aplikacji Dynamics 365 Guides z zarządzaniem składnikami majątku
 
@@ -47,8 +47,8 @@ Aby skojarzyć przewodnik z szablonem listy kontrolnej konserwowanego składnika
 
 1. Utwórz przewodnik, korzystając z aplikacji Dynamics 365 Guides na komputer i urządzenie HoloLens. Aby uzyskać więcej informacji dotyczących sposobu tworzenia przewodnika, zobacz następujące tematy:
 
-    - [Tworzenie przewodnika przy użyciu aplikacji komputerowej](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Umieszczanie hologramów przy użyciu aplikacji HoloLens](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Tworzenie przewodnika przy użyciu aplikacji komputerowej](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Umieszczanie hologramów przy użyciu aplikacji HoloLens](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. W aplikacji Supply Chain Management [utwórz szablon listy konserwowanego składnika majątku](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Skojarz utworzony przewodnik z wierszem listy kontrolnej konserwowanego składnika majątku w nowym szablonie listy kontrolnej konserwowanego składnika majątku:

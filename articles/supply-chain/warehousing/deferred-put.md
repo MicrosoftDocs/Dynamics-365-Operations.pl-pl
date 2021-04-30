@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3dad97e13624449d287ded74e7e25f94eb0dbde3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f571f80330d2cc7858ef11271b0466d71aa9709c
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838329"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908018"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Odroczone przetwarzanie pracy magazynowej
 
@@ -28,7 +28,7 @@ W tym temacie opisano funkcje, która udostępnia odroczone przetwarzanie operac
 
 Funkcja odroczonego przetwarzania umożliwia pracownikom magazynu kontynuowanie innych prac podczas przetwarzania operacji odłożenia w tle. Odroczonego przetwarzania jest przydatne, gdy wiele wierszy pracy musi być przetwarzanych i pracownik może pozwolić, aby praca była przetwarzana asynchronicznie. Jest to również przydatne, kiedy na serwer zdarzają się nieplanowane wydłużenia czasu przetwarzania, a zwiększony czas przetwarzania może wpłynąć na produktywność użytkownika.
 
-Przetwarzanie w tle uzyskuje się za pomocą struktury SysOperation. Aby uzyskać więcej informacji, zobacz temat [Omówienie struktury SysOperation](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+Przetwarzanie w tle uzyskuje się za pomocą struktury SysOperation. Aby uzyskać więcej informacji, zobacz temat [Omówienie struktury SysOperation](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>Konfigurowanie zasad przetwarzania pracy
 

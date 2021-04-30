@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b994473b4535c255f87551a6d97e197516fc2a9c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88d3f1fba05d944e78e4595018d190c3dc41e076
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745844"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907918"
 ---
 # <a name="create-new-users"></a>Tworzenie nowych użytkowników
 
@@ -29,10 +29,10 @@ Aby można było uzyskać dostęp do aplikacji Finance and Operations, należy n
 Aby uzyskać informacje dotyczące sposobu kupowania i licencji na aplikacje Finance and Operations, zobacz [Podręcznik licencjonowania Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Przypisywanie licencji do użytkownika
-Administratorzy systemów mogą [przypisywać licencje do użytkowników](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) w [centrum administracyjnym Microsoft 365](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Administratorzy systemów mogą [przypisywać licencje do użytkowników](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) w [centrum administracyjnym Microsoft 365](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Dodaj użytkownika zewnętrznego w usłudze Azure AD i przypisz licencję 
-Użytkownicy zewnętrzni muszą być reprezentowani w katalogu dzierżawcy (Azure Active Directory (Azure AD)), aby można było im przypisać licencje. Użytkownicy zewnętrzni powinni zostać dodani do dzierżawy Azure AD jako użytkownik gość, a następnie przypisani do odpowiednich licencji. Wymaganie dotyczące aplikacji Finance and Operations jest takie, aby użytkownik-gość korzystał z usługi Azure AD. Aby uzyskać więcej informacji, odwiedź sekcję [Dodawanie użytkowników współpracy w module B2B Azure Active Directory w portalu Azure Portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Użytkownicy zewnętrzni muszą być reprezentowani w katalogu dzierżawcy (Azure Active Directory (Azure AD)), aby można było im przypisać licencje. Użytkownicy zewnętrzni powinni zostać dodani do dzierżawy Azure AD jako użytkownik gość, a następnie przypisani do odpowiednich licencji. Wymaganie dotyczące aplikacji Finance and Operations jest takie, aby użytkownik-gość korzystał z usługi Azure AD. Aby uzyskać więcej informacji, odwiedź sekcję [Dodawanie użytkowników współpracy w module B2B Azure Active Directory w portalu Azure Portal](/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Importowanie nowych użytkowników z usługi Azure AD 
 1. Wybierz kolejno opcje **Administrowanie systemem** \> **Użytkownicy** \> **Użytkownicy**.
@@ -57,7 +57,7 @@ Użytkownicy zewnętrzni muszą być reprezentowani w katalogu dzierżawcy (Azur
 7. W polu **Firma** wybierz domyślną firmę startową dla użytkownika. 
 8. Wybierz opcję **Zapisz**.
 
-Wartości dla dostawcy tożsamości i identyfikatora telemetrii zostaną zaktualizowane na podstawie wywołania programu [Microsoft Graph](https://docs.microsoft.com/graph/overview) po zapisaniu rekordu użytkownika. Identyfikator telemetrii jest oparty na identyfikatorze obiektu/identyfikatorze zabezpieczeń (SID) w usłudze Azure AD.
+Wartości dla dostawcy tożsamości i identyfikatora telemetrii zostaną zaktualizowane na podstawie wywołania programu [Microsoft Graph](/graph/overview) po zapisaniu rekordu użytkownika. Identyfikator telemetrii jest oparty na identyfikatorze obiektu/identyfikatorze zabezpieczeń (SID) w usłudze Azure AD.
 
 > [!NOTE]
 > Po dodaniu użytkownika musisz przypisać role i odpowiednie organizacje. Więcej informacji można znaleźć w [Przypisywanie użytkowników do ról zabezpieczeń](assign-users-security-roles.md). Warunkowo może być również wymagane skojarzenie użytkownika z **osobą** i zaktualizowanie **opcji użytkownika**, takich jak język.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838401"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911303"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -44,8 +44,8 @@ Aby można było utworzyć dyrektywę lokalizacji, należy wykonać poniższe kr
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Magazyn \> Magazyny**.
 1. Tworzenie magazynu.
 1. Na skróconej karcie **Magazyn** ustaw opcję **Użyj procesów zarządzania magazynami** na *Tak*.
-1. Utwórz lokalizacje, typy lokalizacji, profile lokalizacji i formaty lokalizacji. Aby uzyskać więcej informacji, przejrzyj [Konfigurowanie lokalizacji w magazynie z obsługą WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Tworzenie oddziałów, stref i grupy stref. Aby uzyskać więcej informacji, przejrzyj [Konfiguracja magazynu](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) i [Konfigurowanie lokalizacji w magazynie z obsługą WMS](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Utwórz lokalizacje, typy lokalizacji, profile lokalizacji i formaty lokalizacji. Aby uzyskać więcej informacji, przejrzyj [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Tworzenie oddziałów, stref i grupy stref. Aby uzyskać więcej informacji, przejrzyj [Konfiguracja magazynu](../../commerce/channels-setup-warehouse.md) i [Konfigurowanie lokalizacji w magazynie z obsługą WMS](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Typy zleceń roboczych dyrektyw dotyczących lokalizacji
 
@@ -143,7 +143,7 @@ Pola w **dyrektywach lokalizacji** na skróconej karcie są charakterystyczne dl
 - **Kod dyrektywy** – Umożliwia wybranie kodu dyrektywy, który ma zostać skojarzony z szablonem pracy lub szablonem uzupełnienia zapasów. Na stronie **kod dyrektywy** można utworzyć nowe kody, za pomocą których można połączyć szablony pracy lub uzupełnienia z dyrektywą lokalizacji. Możesz również użyć kodów dyrektywy do ustanowienia połączenia między dowolnym wierszem szablonu pracy a dyrektywą dotyczącą lokalizacji (taką jak drzwi do hali lub lokalizacja sceny).
 
     > [!TIP]
-    > Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system nie przeszuka dyrektywy lokalizacji według kodu sekwencji. W zamian zostanie wyszukany kod dyrektywy. W ten sposób można bardziej precyzyjnie określić szablon lokalizacji, który jest używany do określonego kroku w szablonie roboczym, na przykład etapu przygotowania materiałów.
+    > Jeśli kod dyrektywy jest ustawiony, kiedy praca musi zostać wygenerowana, system nie przeszuka dyrektywy lokalizacji według kodu sekwencji. W zamian zostanie wyszukany kod dyrektywy. W ten sposób można bardziej precyzyjnie określić dyrektywę lokalizacji, która jest używana do określonego kroku w szablonie roboczym, na przykład etapu przygotowania materiałów.
 
 - **Wiele SKU** – Ustaw tę opcję na *Tak*, aby używać wielu jednostek magazynowych (SKU) w lokalizacji. Na przykład dla lokalizacji drzwi ładowania musi być włączone wiele jednostek SKU. Jeśli zostanie włączona wiele jednostek SKU, lokalizacja umieszczania zostanie określona w pracy w oczekiwany sposób. Jednak lokalizacja umieszczania będzie mogła obsługiwać tylko wiele pozycji (Jeśli praca obejmuje różne jednostki SKU, które muszą zostać pobrane i umieszczone). Nie będzie mógł obsłużyć operacji załadowania z jedną jednostką SKU. Jeśli ta opcja zostanie ustawiona na *nie*, lokalizacja umieszczania będzie określona tylko wtedy, gdy dla danego odłożenia jest używany tylko jeden rodzaj jednostki SKU.
 
@@ -249,7 +249,7 @@ W tym scenariuszu należy zdefiniować dwa działania dyrektywy lokalizacji. Pie
 
 ## <a name="next-step"></a>Następne kroki
 
-Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z kodem szablonu pracy dla utworzenia pracy. Aby uzyskać więcej informacji, zobacz [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Po utworzeniu dyrektywy lokalizacji, każdy kod dyrektywy można skojarzyć z kodem szablonu pracy dla utworzenia pracy. Aby uzyskać więcej informacji, zobacz [Kontrola pracy magazynu za pomocą szablonów pracy i dyrektyw lokalizacji](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

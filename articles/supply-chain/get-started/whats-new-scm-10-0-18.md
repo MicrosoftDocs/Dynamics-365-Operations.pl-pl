@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832137"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909360"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Podgląd Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
 
@@ -35,15 +35,15 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
-To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
+To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
-- Automatyczne zwalnianie zamówień zakupu (rozszerzenie dla [Wykonywanie w magazynie z jednostkami skalowania w chmurze](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatyczne zwalnianie zamówień zakupu (rozszerzenie dla [Wykonywanie w magazynie z jednostkami skalowania w chmurze](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Aby uzyskać więcej informacji, zobacz temat [Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Usprawnienia wydajności zapasów i archiwizacja na poziomie przedsiębiorstwa](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Aby uzyskać więcej informacji, zobacz temat [Archiwizuj transakcje magazynowe](../inventory/archive-inventory-transactions.md).
+- [Usprawnienia wydajności zapasów i archiwizacja na poziomie przedsiębiorstwa](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Aby uzyskać więcej informacji, zobacz temat [Archiwizuj transakcje magazynowe](../inventory/archive-inventory-transactions.md).
 
-- [Zarządzanie rabatami](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Aby uzyskać więcej informacji, zajrzyj do omówienia [Omówienie modułu Zarządzanie rabatami](../rebate-management/rebate-management-overview.md)
+- [Zarządzanie rabatami](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Aby uzyskać więcej informacji, zajrzyj do omówienia [Omówienie modułu Zarządzanie rabatami](../rebate-management/rebate-management-overview.md)
 
-- Uproszczony interfejs tylko do wejścia i wyjścia do pracy (ulepszona funkcja [Ulepszony interfejs wykonywania hali produkcyjnej do celów produkcyjnych](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md).
+- Uproszczony interfejs tylko do wejścia i wyjścia do pracy (ulepszona funkcja [Ulepszony interfejs wykonywania hali produkcyjnej do celów produkcyjnych](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md).
 
 Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne. 
 
@@ -70,7 +70,7 @@ Aby uzyskać informacje dotyczące poprawek usterek zawartych w każdej aktualiz
 
 Interesują Cię nadchodzące i ostatnio wprowadzone możliwości którejkolwiek z naszych aplikacji lub platform biznesowych?
 
-Zajrzyj do [Dynamics 365: plan wydania 2021 aktualizacja 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
+Zajrzyj do [Dynamics 365: plan wydania 2021 aktualizacja 1](/dynamics365-release-plan/2021wave1/). Zebraliśmy w jednym dokumencie wszystkie szczegóły, których możesz używać na potrzeby planowania.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Usunięte i przestarzałe funkcje Supply Chain Management
 

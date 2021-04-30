@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 59a421b5e81366845901c44486acb3dfa3781850
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753655"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894107"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odłóż wykonanie elementów sekwencji w formatach ER
 
@@ -42,7 +42,7 @@ Opcja **Odroczonego wykonania** nie ma zastosowania w przypadku sekwencji skonfi
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Przykład: Odłóż wykonanie elementu sekwencji w formatacie ER
 
-Poniższe kroki wyjaśniają, jak użytkownik w roli Administratora systemu lub konsultanta funkcjonalnego lub raportu elektronicznego [(rola)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) może skonfigurować format ER, który zawiera element sekwencji, w którym kolejność wykonywania różni się od kolejności w hierarchii formatu.
+Poniższe kroki wyjaśniają, jak użytkownik w roli Administratora systemu lub konsultanta funkcjonalnego lub raportu elektronicznego [(rola)](../sysadmin/tasks/assign-users-security-roles.md) może skonfigurować format ER, który zawiera element sekwencji, w którym kolejność wykonywania różni się od kolejności w hierarchii formatu.
 
 Kroki można wykonać na danych przykładowej firmy **USMF** w Microsoft Dynamics 365 Finance.
 

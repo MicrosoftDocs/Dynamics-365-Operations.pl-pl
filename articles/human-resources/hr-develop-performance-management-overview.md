@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789643"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890754"
 ---
 # <a name="performance-management"></a>Zarządzanie wydajnością
 
@@ -93,7 +93,7 @@ Można również użyć sekcji **Kompetencje**, aby przedyskutować, przejrzeć 
 
 Można tworzyć nowe przeglądy oparte na utworzonych szablonach. Na przykład można mieć szablony dla rozmów bezpośrednich, planów rozwoju i przeglądów okresowych. Szablon można wybrać podczas tworzenia nowego przeglądu.
 
-Aby wydrukować recenzje, wybierz przycisk **Drukuj recenzję**. Jeśli nie widzisz przycisku na stronie **Recenzja**, upewnij się, że włączono funkcję w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Aby wydrukować recenzje, wybierz przycisk **Drukuj recenzję**. Jeśli nie widzisz przycisku na stronie **Recenzja**, upewnij się, że włączono funkcję w obszarze roboczym **Zarządzanie funkcjami**. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Możliwość drukowania wyników oceny wydajności jest dostępna tylko w Human Resources. Nie jest ona dostępna w Dynamics 365 Finance.

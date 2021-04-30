@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825405"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909163"
 ---
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
@@ -65,7 +65,7 @@ Czasami trzeba podzielić zamówioną ilość, tak aby różne części zostały
 Opłaty mogą być automatycznie dodawane do wierszy zamówienia zakupu, jeśli skonfigurowano automatyczne opłaty dla dostawcy lub grupy opłat dostawcy oraz dla pozycji lub grupy opłat za pozycje. Jednak najczęściej opłaty są dodawane ręcznie na poziomie wiersza zamówienia. Aby dodać opłatę, otwórz stronę **Obsługuj opłaty** za pomocą działania **Obsługuj opłaty** w menu **Finanse** w widoku **Wiersze**. Zaletą dodawania opłat bezpośrednio na poziomie wiersza zamówienia jest to, że opłatę można przydzielić jako koszt zapasów. Aby skonfigurować kody opłat w celu ujęcia kosztu produktu, należy użyć **Pozycja** po stronie debetowej (obciążeniowej). Tego rodzaju opłaty muszą być przydzielone z nagłówka zamówienia zakupu do wierszy, aby można było potwierdzić zamówienie. Na przykład można chcieć przydzielić opłaty na podstawie ilości w każdym wierszu. Kategoria opłat wpływa również na sposób ujmowania opłat. Na przykład opłaty stałe określają stałą kwotę, a opłaty Procentowe są obliczane jako procent kwoty netto w wierszu zamówienia. Zamówienia zakupu mogą być przypisane do ładunku, a ładunek może zawierać preliminarz oczekiwanych wydatków z tytułu kosztów transportu. Wydatek ten można przydzielić z powrotem od ładunku do wierszy zamówienia zakupu.
 
 ## <a name="purchase-order-actions"></a>Akcje związane z zamówieniem zakupu
-Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](../../fin-and-ops/get-started/action-search.md), aby znaleźć odpowiednią pozycję menu.  
+Po dodaniu nagłówka i wierszy do zamówienia zakupu często należy wykonać dodatkowe kroki, zanim zamówienie będzie gotowe do potwierdzenia. Ponieważ jest dostępnych bardzo dużo opcji, warto użyć funkcji [Wyszukiwanie akcji](../../fin-ops-core/fin-ops/get-started/action-search.md), aby znaleźć odpowiednią pozycję menu.  
 
 Produkty w zamówieniu można konfigurować w taki sposób, aby zawierały pozycje dodatkowe. Pozycje dodatkowe to produkty, które muszą lub mogą zostać kupione razem z innymi produktami. Pozycje dodatkowe mogą być dodawane bezpłatnie jako produkty towarzyszące lub też można decydować, czy mają być dodawane do zamówienia, czy nie. Pozycje dodatkowe można przejrzeć po każdym dodanym wierszu zamówienia. Jednakże prawdopodobnie bardziej wygodne będzie przejrzeć i dodać odpowiednie pozycje dodatkowe razem dla wszystkich wierszy zamówienia za pomocą strony **Pozycje dodatkowe**, którą można otworzyć z okienka akcji.  
 

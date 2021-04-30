@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835580"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909386"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalowanie i łączenie aplikacji magazynu
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835580"
 > W tym temacie opisano sposób konfigurowania starej aplikacji magazynu (która jest obecnie przestarzała). Jeśli chcesz uzyskać informacje dotyczące konfigurowania nowej aplikacji mobilnej Zarządzanie magazynem, zobacz temat [Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> W tym temacie opisano sposób konfigurowania aplikacji magazynu dla wdrożeń w chmurze. Jeśli szukasz informacji dotyczących sposobu konfigurowania aplikacji magazynu dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> W tym temacie opisano sposób konfigurowania aplikacji magazynu dla wdrożeń w chmurze. Jeśli szukasz informacji dotyczących sposobu konfigurowania aplikacji magazynu dla wdrożeń lokalnych, zapoznaj się z tematem [Magazynowanie we wdrożeniach lokalnych](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Aplikacja magazynowa jest dostępna w sklepie Google Play i sklepie Microsoft Store. Jest ona udostępniana jako składnik autonomiczny. Dlatego należy ją pobrać na każde urządzenie, a następnie skonfigurować do nawiązywania połączenia ze środowiskiem aplikacji Microsoft Dynamics 365 Supply Chain Management.
 
@@ -54,7 +54,7 @@ Aby pobrać aplikację, użyj jednego z następujących linków:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing w sklepie Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 w sklepie Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-W przypadku mniejszych wdrożeń możesz zainstalować aplikację z odpowiedniego sklepu na każdym urządzeniu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami. Natomiast w aplikacji magazynowej w wersji 1.7.0.0 lub nowszej można również zautomatyzować wdrażanie i/lub konfigurację aplikacji. Takie podejście może okazać się wygodne w przypadku korzystania z rozwiązania do zarządzania urządzeniami przenośnymi i zarządzania aplikacjami mobilnymi, takiego jak usługa [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+W przypadku mniejszych wdrożeń możesz zainstalować aplikację z odpowiedniego sklepu na każdym urządzeniu, a następnie ręcznie skonfigurować połączenie z używanymi środowiskami. Natomiast w aplikacji magazynowej w wersji 1.7.0.0 lub nowszej można również zautomatyzować wdrażanie i/lub konfigurację aplikacji. Takie podejście może okazać się wygodne w przypadku korzystania z rozwiązania do zarządzania urządzeniami przenośnymi i zarządzania aplikacjami mobilnymi, takiego jak usługa [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Aby uzyskać informacje na temat dodawania aplikacji za pomocą usługi Intune, zapoznaj się z tematem [Dodawanie aplikacji do usługi Microsoft Intune](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Tworzenie aplikacji usługi internetowej w usłudze Azure Active Directory
 
@@ -89,11 +89,11 @@ Aby umożliwić aplikacji magazynowej interakcję z konkretnym serwerem Supply C
 
 Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług internetowych w usłudze Azure AD, zapoznaj się z następującymi zasobami:
 
-- Aby uzyskać instrukcje dotyczące konfigurowania aplikacji usług internetowych w usłudze Azure AD przy użyciu programu Windows PowerShell, zapoznaj się z tematem [Instrukcje: używanie Azure PowerShell do tworzenia jednostki usługi przy użyciu certyfikatu](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Aby uzyskać instrukcje dotyczące konfigurowania aplikacji usług internetowych w usłudze Azure AD przy użyciu programu Windows PowerShell, zapoznaj się z tematem [Instrukcje: używanie Azure PowerShell do tworzenia jednostki usługi przy użyciu certyfikatu](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Aby uzyskać kompletne informacje dotyczące ręcznego tworzenia aplikacji usługi internetowej w usłudze Azure AD, zapoznaj się z następującymi tematami:
 
-    - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app)
+    - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
 
@@ -121,7 +121,7 @@ Uwierzytelnianie za pomocą usługi Azure AD zapewnia bezpieczny sposób połąc
 
 Certyfikaty mogą być używane jako wpisy tajne w celu udowodnienia tożsamości aplikacji w przypadku żądania tokenu. Publiczna część certyfikatu jest przekazywana do rejestracji aplikacji w witrynie Azure Portal, podczas gdy pełny certyfikat musi zostać wdrożony na każdym urządzeniu, na którym zainstalowano aplikację magazynową. Organizacja jest odpowiedzialna za zarządzanie certyfikatem w kategorii wymiany itd. Można używać certyfikatów z podpisem własnym, ale zawsze należy używać certyfikatów bez możliwości eksportowania.
 
-Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja magazynowa. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Certyfikat musi zostać udostępniony lokalnie na każdym urządzeniu, na którym działa aplikacja magazynowa. Aby uzyskać informacje dotyczące sposobu zarządzania certyfikatami urządzeń kontrolowanych przez usługę Intune w przypadku korzystania z usługi Intune, zapoznaj się z tematem [Używanie certyfikatów do uwierzytelniania w usłudze Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurowanie aplikacji przez zaimportowanie ustawień połączenia
 

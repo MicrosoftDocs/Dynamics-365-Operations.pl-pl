@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840227"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893809"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840227"
 
 Zanim będzie można wykonać czynności opisane w tym temacie, należy upewnić się, że wykonano następujące zadania:
 
-- Tworzenie zasobu magazynu kluczy w Azure. Aby uzyskać więcej informacji o tej funkcji, zobacz: [Informacje o usłudze Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).
-- Utwórz konto magazynu Azure (magazyn obiektów BLOB). Aby uzyskać więcej informacji, przejrzyj temat [Obsługa konta magazynu Azure](https://docs.microsoft.com/azure/storage/blobs/).
+- Tworzenie zasobu magazynu kluczy w Azure. Aby uzyskać więcej informacji o tej funkcji, zobacz: [Informacje o usłudze Azure Key Vault](/azure/key-vault/general/overview).
+- Utwórz konto magazynu Azure (magazyn obiektów BLOB). Aby uzyskać więcej informacji, przejrzyj temat [Obsługa konta magazynu Azure](/azure/storage/blobs/).
 
 ## <a name="overview"></a>Omówienie
 
@@ -83,4 +83,3 @@ W tym temacie przedstawiono dwa główne kroki:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791954"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857280"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -142,6 +142,9 @@ W kontekście urządzeń peryferyjnych platforma UWP odnosi się do obsługi urz
 ### <a name="keyboard-wedge"></a>Czytnik podłączany do klawiatury
 
 Urządzenia czytników podłączanych do klawiatury wysyłają dane do komputera tak, jakby były one wpisywane z klawiatury. W związku z tym domyślnie pole aktywne w punkcie sprzedaży otrzymuje dane, które są skanowane lub sczytywane z paska magnetycznego. W niektórych przypadkach może to powodować skanowanie niewłaściwych typów danych do nieodpowiednich pól. Na przykład kod kreskowy może być skanowany do pola, które jest przeznaczone do wprowadzania danych karty kredytowej. W wielu przypadkach w punkcie sprzedaży istnieje logika, która rozpoznaje, czy dane wejściowe pochodzą z kodu kreskowego czy z przeciągnięcia karty. W związku z tym dane są obsługiwane prawidłowo. Jednakże gdy urządzenia są skonfigurowane jako zgodne ze standardem OPOS, a nie jako czytniki podłączane do klawiatury, użytkownik ma większą kontrolę nad sposobem wykorzystania danych z tych urządzeń, ponieważ więcej „wie” o urządzeniu, z którego pochodzą dane. Na przykład dane ze skanera kodów kreskowych są automatycznie rozpoznawane jako kod kreskowy, a odnośny rekord w bazie danych jest znajdowany łatwiej i szybciej niż podczas standardowego wyszukiwania uruchamianego dla czytników podłączanych do klawiatury.
+
+> [!NOTE]
+> Jeśli w punkcie sprzedaży używane są skanery klinowe klawiatury, należy je zaprogramować tak, aby wysyłały powrót karety lub zdarzenie **Enter** po ostatnim skanowanym znaku. Jeśli ta konfiguracja nie zostanie wykonana, skanery klinowe klawiatury nie będą działać poprawnie. Aby uzyskać szczegółowe informacje na temat dołączania zdarzenia powrotu karetki, zapoznaj się z dokumentacją dostarczoną przez producenta urządzenia.  
 
 ### <a name="native-printer"></a>Macierzysta drukarka
 

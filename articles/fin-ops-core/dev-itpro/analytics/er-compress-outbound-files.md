@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: cd056798773bce492e429f8cca2ef39cb59bf739
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753823"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894179"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego 
 
 [!include [banner](../includes/banner.md)]
 
-Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
+Możesz użyć [Struktury raportowania elektronicznego (ER)](general-electronic-reporting.md), aby skonfigurować rozwiązanie, które pobiera dane transakcyjne w celu wygenerowania dokumentu wychodzącego. Wygenerowany dokument może być dość duży. Po wygenerowaniu tego typu dokumentu używana jest pamięć [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations). W pewnym momencie dokument musi zostać pobrany z aplikacji Microsoft Dynamics 365 Finance. Obecnie maksymalny rozmiar pojedynczego dokumentu wygenerowanego w module ER jest ograniczony do 2 gigabajtów (GB). Ponadto Finance [ograniczają](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) obecnie rozmiar pobranego pliku do 1 GB. Dlatego należy skonfigurować rozwiązanie ER, które zmniejsza prawdopodobieństwo, że te ograniczenia zostaną przekroczone i że zostanie wyświetlony wyjątek **Strumień był zbyt długi** lub **Przepełnienie lub niedomiar w operacji arytmetycznej**.
 
 Podczas konfigurowania rozwiązania można dostosować format ER w Projektancie operacji, dodając element główny typu **Folder**, aby skompresować zawartość generowaną przez dowolny z jego zagnieżdżonych elementów. Kompresja działa „w samą porę”, dzięki czemu maksymalne zużycie pamięci i rozmiar pobieranego pliku można zmniejszyć.
 

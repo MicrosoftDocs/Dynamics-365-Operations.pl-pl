@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ca8868069fca4453efbb76694702a554da6d7aa6
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791540"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892282"
 ---
 # <a name="update-process"></a>Aktualizowanie procesu
 
@@ -39,7 +39,7 @@ Aktualizacje są publikowane regularnie dla wszystkich środowisk. Program Human
 
 Aktualizacje modułu Human Resources są stosowane do wszystkich środowisk automatycznie. Dla modułu Human Resources są publikowane dwa typy wydań:
 
-- **Aktualizacje usług**: Aktualizacje pojawiają się co dwa tygodnie, zawierają poprawki błędów i nowe funkcje. Aktualizacje usług obejmują także odpowiednie aktualizacje platformy, kiedy są one publikowane. Aby zapoznać się z orientacyjnym harmonogramem publikowania aktualizacji platformy, zobacz [Tabela 3: Wydania platformy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Aktualizacje co dwa tygodnie zawierają wdrożenia globalne w różnych regionach. Aby uzyskać więcej informacji o aktualizacjach co dwa tygodnie, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Aktualizacje usług**: Aktualizacje pojawiają się co dwa tygodnie, zawierają poprawki błędów i nowe funkcje. Aktualizacje usług obejmują także odpowiednie aktualizacje platformy, kiedy są one publikowane. Aby zapoznać się z orientacyjnym harmonogramem publikowania aktualizacji platformy, zobacz [Tabela 3: Wydania platformy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). Aktualizacje co dwa tygodnie zawierają wdrożenia globalne w różnych regionach. Aby uzyskać więcej informacji o aktualizacjach co dwa tygodnie, zobacz [Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Wszystkie obsługiwane centra danych są aktualizowane co dwa tygodnie, o ile nie zaznaczono inaczej. Stany Zjednoczone, Australia, Europa, Wielka Brytania, Azja i Kanada są objęte aktualizacjami co dwa tygodnie. 
 
@@ -71,11 +71,11 @@ W lokalizacjach wymienionych poniżej można dowiedzieć się, co szykujemy w mo
 
 - [Plan rozwoju rozwiązania Dynamics 365 Human Resources](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Plany wydań Dynamics 365](https://docs.microsoft.com/dynamics365/release-plans/)
+- [Plany wydań Dynamics 365](/dynamics365/release-plans/)
 
 - [Nowości i zmiany w Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
-- [Wyszukiwanie problemów w usługach Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (tylko błędy platformy)
+- [Wyszukiwanie problemów w usługach Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (tylko błędy platformy)
 
 - [Blog o rozwiązaniu Human Resources](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -83,7 +83,7 @@ W lokalizacjach wymienionych poniżej można dowiedzieć się, co szykujemy w mo
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Funkcje w wersji zapoznawczej w środowisku piaskownicy
 
-Funkcje w wersji zapoznawczej można weryfikować w środowisku piaskownicy przed ich włączeniem w środowisku produkcyjnym. Aby uzyskać więcej informacji o włączaniu funkcji, zobacz [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Funkcje w wersji zapoznawczej można weryfikować w środowisku piaskownicy przed ich włączeniem w środowisku produkcyjnym. Aby uzyskać więcej informacji o włączaniu funkcji, zobacz [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazwyczaj 30-60 dni. Najważniejsze funkcje są zazwyczaj dostępne w październiku i kwietniu każdego roku po okresie podglądu. Po wyświetleniu nowych możliwości w obszarze roboczym zarządzanie funkcjami można je włączyć. Niektóre funkcje mogą być domyślnie włączone.
 
@@ -101,9 +101,9 @@ Podczas testowania funkcji w wersji zapoznawczej lub sprawdzania nowych możliwo
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Plany wydań rozwiązań Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans)</br>
+[Plany wydań rozwiązań Dynamics 365 i Power Platform](/dynamics365/release-plans)</br>
 [Nowości i zmiany w module Dynamics 365 Human Resources](hr-admin-whats-new.md)</br>
-[Zasady dotyczące cyklu życia oprogramowania](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
+[Zasady dotyczące cyklu życia oprogramowania](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
 
 
 

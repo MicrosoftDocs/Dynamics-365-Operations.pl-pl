@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809789"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899102"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -29,9 +29,10 @@ ms.locfileid: "5809789"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Obciążenie związane z produkcją jest w tym momencie dostępne w wersji zapoznawczej.
 > Nie wszystkie funkcje biznesowe są w pełni obsługiwane w podglądzie publicznym, gdy są używane jednostki skali obciążenia pracą.
 
-W module Uruchomienie produkcji jednostki skali chmury i urządzenia brzegowego zapewniają następujące możliwości, nawet jeśli jednostki brzegowe nie są połączone z centrum:
+W wykonaniu produkcyjnym jednostki wagowe zapewniają następujące możliwości:
 
 - Operatorzy maszyn i kierownicy mogą uzyskać dostęp do operacyjnego planu produkcji.
 - Operatorzy maszynowi mogą regularnie aktualizować plan, uruchamiając dyskretne i przetwarzające zadania produkcyjne.
@@ -108,5 +109,6 @@ Aby przejrzeć historię zadań produkcji, które zostały przetworzone na jedno
 
 _Zadanie procesora produkcyjnego w centrum produkcji_ przetwarza dane z centrum do jednostki skali. To zadanie jest uruchamiane automatycznie po wdrożeniu obciążenia pracą modułu uruchomienie produkcji. Można jednak uruchomić ją ręcznie w dowolnym momencie, przechodząc do **Kontrola produkcji \> Zadania okresowe \> Zarządzanie obciążeniem backoffice \> Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania**.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

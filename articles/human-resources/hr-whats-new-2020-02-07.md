@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: adfedbfeb3f4602d0c4d9b8cccec80749eaae2a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b2b9f2b244f0f49d1ae0bd1cb220653583ee23a5
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790531"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890989"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (7 lutego 2020 r.)
 
@@ -55,7 +55,7 @@ Następujące funkcje w wersji zapoznawczej są dostępne od 3 lutego 2020 r.:
 
 ### <a name="platform-update-32"></a>Aktualizacja platformy Update 32 
 
-Aktualizacja platformy 32 będzie wkrótce dostępna. [Więcej informacji o aktualizacji platformy 32 znajdziesz tutaj](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Aktualizacja platformy 32 będzie wkrótce dostępna. [Więcej informacji o aktualizacji platformy 32 znajdziesz tutaj](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ### <a name="updated-dataverse-solution"></a>Zaktualizowano rozwiązanie Dataverse
 
@@ -75,7 +75,7 @@ Nowe rozwiązanie Dataverse będzie dostępne wkrótce z następującymi zmianam
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2019, wydanie 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
 

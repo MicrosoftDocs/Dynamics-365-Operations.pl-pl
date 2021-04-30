@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a81e5c56e219ec9d7fb95ac6cc053fb13601f0f2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ac4c15b4dbf60f378ba325adedb377e12585481a
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801174"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889963"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurowanie integracji z rozwiązaniem Finance
 
@@ -29,7 +29,7 @@ ms.locfileid: "5801174"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](https://docs.microsoft.com/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
+Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
 
 ![Przepływ integracji z programu Human Resources do programu Finance](./media/hr-admin-integration-finance-flow.png)
 
@@ -248,7 +248,7 @@ Proces integracji z Human Resources do Finance będzie próbował dopasować rek
 
 Ten problem może nastąpić z obszarem **Pracownik**, gdzie do wykonania dopasowania jest używany **Numer pracownika** oraz **Stanowiska**. W obszarze Funkcje nie są używane sekwencje numerów. W efekcie jeśli ten sam identyfikator funkcji istnieje zarówno w Human Resources, jak i w Finance, informacje z Human Resources zastąpią informacje w Dynamics 365 Finance. 
 
-Aby zapobiec problemom ze zduplikowanymi identyfikatorami, można w [numeracji](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) dodać prefiks albo określić w niej numer początkowy, który wykracza poza zakres drugiego systemu. 
+Aby zapobiec problemom ze zduplikowanymi identyfikatorami, można w [numeracji](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json) dodać prefiks albo określić w niej numer początkowy, który wykracza poza zakres drugiego systemu. 
 
 Identyfikator lokalizacji używany w adresie pracownika nie jest częścią numeracji. Jeśli podczas integrowania adresu pracownika z modułu Human Resources do aplikacji Finance adres pracownika już istnieje w aplikacji Finance, może zostać utworzony zduplikowany rekord adresu. 
 

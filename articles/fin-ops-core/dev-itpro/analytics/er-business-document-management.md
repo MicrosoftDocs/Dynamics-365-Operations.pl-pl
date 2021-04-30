@@ -2,7 +2,7 @@
 title: Omówienie zarządzania dokumentami biznesowymi
 description: Ten temat zawiera informacje dotyczące sposobu korzystania z funkcji zarządzania dokumentami biznesowymi w ramach modułu raportowania elektronicznego.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749544"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891312"
 ---
 # <a name="business-document-management-overview"></a>Omówienie zarządzania dokumentami biznesowymi
 
@@ -45,9 +45,9 @@ Aby używać funkcji zarządzania dokumentami biznesowymi do edytowania szablon�
 
 ## <a name="business-document-availability"></a>Dostępność dokumentu biznesowego
 
-Kompletna lista raportów planowanych na dzień wydania w październiku 2019 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+Kompletna lista raportów planowanych na dzień wydania w październiku 2019 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych w programach Word i Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-Kompletna lista raportów planowanych na dzień wydania w październiku 2020 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych — szablony programu Word](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+Kompletna lista raportów planowanych na dzień wydania w październiku 2020 znajduje się w temacie [Konfigurowalne raporty dotyczące dokumentów biznesowych — szablony programu Word](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Więcej raportów będzie dostępnych w przyszłych wersjach. Powiadomienia specjalne o dodatkowych raportach będą wysyłane oddzielnie. Aby się dowiedzieć, jak przejrzeć listę dostępnych obecnie raportów, zobacz poniżej sekcję [Lista konfiguracji ER wydanych w aplikacji Finance w celu obsługi konfigurowalnych dokumentów biznesowych](#list-of-configurations-cbd).
 
@@ -272,7 +272,23 @@ Opcja **Edytuj szablon** jest dostępna dla wybranego szablonu. Ta opcja jest za
 
 ![Potwierdź rozpoczęcie procesu edycji w celu utworzenia nowego szablonu](./media/BDM-Overview-EditingTemplate4.png)
 
+Jeśli nie ma żadnego dostawcy, zostanie zaproponowane utworzenie. Jeśli nie ma aktywnego dostawcy, zostanie zaproponowane wybranie go do aktywacji.
+
+Aby utworzyć dostawcę, zmień nazwę dostawcy w polu **Nazwa**, zaktualizuj adres internetowy nowego dostawcy w polu **Adresu internetowego** i wybierz przycisk **OK**, aby potwierdzić.
+
+   ![Utwórz nowego dostawcę w BDM](./media/bdm_create_provider.png)
+
+Aby uaktywnić istniejącego dostawcę, wybierz nazwę dostawcy w polu **Dostawca konfiguracji** i wybierz przycisk **OK**, aby ustawić dostawcę jako aktywnego.
+
+   ![Aktywuj dostawcę w BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Każdy szablon BDM odnosi się do dostawcy jako autora konfiguracji. Z tego względu dla szablonu jest wymagany aktywny dostawca.
+
+
 Opcja **Nowy dokument** jest zawsze dostępna dla szablonu w konfiguracji formatu ER, który jest własnością tego i innego dostawcy (Microsoft w tym przykładzie), a który nie ma żadnych poprawek. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
+
+
 
 ### <a name="start-editing-a-template"></a>Rozpocznij edycję szablonu
 
@@ -419,7 +435,7 @@ Najprawdopodobniej zalogowano się do bieżącego wystąpienia aplikacji w domen
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Lista konfiguracji ER zwolnionych w aplikacji Finance na potrzeby obsługi konfigurowalnych dokumentów biznesowych
 
-[Lista](general-electronic-reporting.md#list-of-configurations) konfiguracji ER elektronicznego dla aplikacji Finance jest aktualizowana w sposób ciągły. Otwórz [repozytorium globalne](er-download-configurations-global-repo.md), aby przejrzeć listę aktualnie obsługiwanych konfiguracji ER. Repozytorium globalne można [filtrować](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) w celu przejrzenia listy konfiguracji ER używanych do obsługi konfigurowalnych dokumentów biznesowych.
+[Lista](general-electronic-reporting.md#list-of-configurations) konfiguracji ER elektronicznego dla aplikacji Finance jest aktualizowana w sposób ciągły. Otwórz [repozytorium globalne](er-download-configurations-global-repo.md), aby przejrzeć listę aktualnie obsługiwanych konfiguracji ER. Repozytorium globalne można [filtrować](../../../finance/localizations/enhanced-filtering-global-repo.md) w celu przejrzenia listy konfiguracji ER używanych do obsługi konfigurowalnych dokumentów biznesowych.
 
 ![Filtrowanie zawartości repozytorium globalnego na stronie Repozytorium konfiguracji](./media/bdm-overview-filterglobalrepo.gif)
 
