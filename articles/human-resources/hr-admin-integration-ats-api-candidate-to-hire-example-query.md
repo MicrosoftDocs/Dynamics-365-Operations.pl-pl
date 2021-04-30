@@ -14,31 +14,31 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ea6fc745ffb5892a32196394cb28cb5e646b7639
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a8c3655e7ff609eedbf92fa90a36b65002f40306
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795076"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893479"
 ---
-# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="bffc5-103">Przykład kwerendy dotyczącej kandydata do zatrudnienia</span><span class="sxs-lookup"><span data-stu-id="bffc5-103">Example query for Candidate to hire</span></span>
+# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="4ef0d-103">Przykład kwerendy dotyczącej kandydata do zatrudnienia</span><span class="sxs-lookup"><span data-stu-id="4ef0d-103">Example query for Candidate to hire</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="bffc5-104">Ten temat zawiera przykładowe zapytanie dotyczące jednostki Kandydata do zatrudnienia w Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="bffc5-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="4ef0d-104">Ten temat zawiera przykładowe zapytanie dotyczące jednostki Kandydata do zatrudnienia w Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="bffc5-105">W tym temacie przedstawiono przykład demonstrujący, jak można używać *głębokich wstawień* do tworzenia wszystkich szczegółów nowego rekordu kandydata w jednej operacji interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="bffc5-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="bffc5-106">Aby uzyskać więcej informacji o operacjach głębokości, zobacz temat [Tworzenie powiązanych rekordów jednostek w jednej operacji](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="bffc5-106">For more information about deep inserts, see [Create related entity records in one operation](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
+<span data-ttu-id="4ef0d-105">W tym temacie przedstawiono przykład demonstrujący, jak można używać *głębokich wstawień* do tworzenia wszystkich szczegółów nowego rekordu kandydata w jednej operacji interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="4ef0d-106">Aby uzyskać więcej informacji o operacjach głębokości, zobacz temat [Tworzenie powiązanych rekordów jednostek w jednej operacji](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="4ef0d-106">For more information about deep inserts, see [Create related entity records in one operation](/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
 
-<span data-ttu-id="bffc5-107">Jednostka **mshr_hcmcandidatetohireentity** jest unikatowa ze względu na jej relację z jednostką **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="bffc5-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="bffc5-108">Wiele właściwości na tym **mshr_hcmcandidatetohireentity** (na przykład **mshr_firstname**, **mshr_lastname** i **mshr_birthdate**) pochodzi od rekordu **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="bffc5-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="bffc5-109">Jeśli rekord nowego kandydata zostanie zaksięgowany bez **mshr_hcmcandidatetohireentity** wstawiania o głębokości, wartości tych właściwości można definiować bezpośrednio w rekordzie **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="bffc5-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="bffc5-110">Skojarzony **mshr_dirpersonentity** jest tworzony niejawnie przy użyciu zdefiniowanych wartości dla właściwości.</span><span class="sxs-lookup"><span data-stu-id="bffc5-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="bffc5-111">Następnie możesz utworzyć inne powiązane rekordy encji (takie jak umiejętności lub wykształcenie) jako oddzielne wywołania interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="bffc5-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
+<span data-ttu-id="4ef0d-107">Jednostka **mshr_hcmcandidatetohireentity** jest unikatowa ze względu na jej relację z jednostką **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="4ef0d-108">Wiele właściwości na tym **mshr_hcmcandidatetohireentity** (na przykład **mshr_firstname**, **mshr_lastname** i **mshr_birthdate**) pochodzi od rekordu **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="4ef0d-109">Jeśli rekord nowego kandydata zostanie zaksięgowany bez **mshr_hcmcandidatetohireentity** wstawiania o głębokości, wartości tych właściwości można definiować bezpośrednio w rekordzie **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="4ef0d-110">Skojarzony **mshr_dirpersonentity** jest tworzony niejawnie przy użyciu zdefiniowanych wartości dla właściwości.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="4ef0d-111">Następnie możesz utworzyć inne powiązane rekordy encji (takie jak umiejętności lub wykształcenie) jako oddzielne wywołania interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
 
-<span data-ttu-id="bffc5-112">Jeśli jednak chcesz użyć głębokiego wstawiania do tworzenia wszystkich powiązanych jednostek w jednej operacji, właściwości specyficzne dla jednostki **mshr_dirpersonentity** muszą być zdefiniowane na tym zagnieżdżonym poziomie operacji.</span><span class="sxs-lookup"><span data-stu-id="bffc5-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
+<span data-ttu-id="4ef0d-112">Jeśli jednak chcesz użyć głębokiego wstawiania do tworzenia wszystkich powiązanych jednostek w jednej operacji, właściwości specyficzne dla jednostki **mshr_dirpersonentity** muszą być zdefiniowane na tym zagnieżdżonym poziomie operacji.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
 
-<span data-ttu-id="bffc5-113">Ten przykład pokazuje, jak można utworzyć rekord kandydata, powiązany rekord osoby oraz umiejętności i wykształcenie osoby na trzech zagnieżdżonych poziomach przy użyciu głębokiego wstawiania w jednej operacji interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="bffc5-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
+<span data-ttu-id="4ef0d-113">Ten przykład pokazuje, jak można utworzyć rekord kandydata, powiązany rekord osoby oraz umiejętności i wykształcenie osoby na trzech zagnieżdżonych poziomach przy użyciu głębokiego wstawiania w jednej operacji interfejsu API.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bffc5-114">W tym przykładzie nie są dołączane wszystkie właściwości poszczególnych jednostek API.</span><span class="sxs-lookup"><span data-stu-id="bffc5-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="bffc5-115">Jest uproszczony w celach demonstracyjnych.</span><span class="sxs-lookup"><span data-stu-id="bffc5-115">It is simplified for demonstration purposes.</span></span>
+> <span data-ttu-id="4ef0d-114">W tym przykładzie nie są dołączane wszystkie właściwości poszczególnych jednostek API.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="4ef0d-115">Jest uproszczony w celach demonstracyjnych.</span><span class="sxs-lookup"><span data-stu-id="4ef0d-115">It is simplified for demonstration purposes.</span></span>
 
-<span data-ttu-id="bffc5-116">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="bffc5-116">**Request**</span></span>
+<span data-ttu-id="4ef0d-116">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="4ef0d-116">**Request**</span></span>
 
 ```http
 
@@ -100,7 +100,7 @@ Accept: application/json
 }
 ```
 
-<span data-ttu-id="bffc5-117">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="bffc5-117">**Response**</span></span>
+<span data-ttu-id="4ef0d-117">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="4ef0d-117">**Response**</span></span>
 
 ```http
 
@@ -110,9 +110,9 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="bffc5-118">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="bffc5-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4ef0d-118">Informacje dodatkowe</span><span class="sxs-lookup"><span data-stu-id="4ef0d-118">See also</span></span>
 
-[<span data-ttu-id="bffc5-119">Wprowadzenie do interfejsu API integracji systemu śledzenia kandydatów</span><span class="sxs-lookup"><span data-stu-id="bffc5-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="4ef0d-119">Wprowadzenie do interfejsu API integracji systemu śledzenia kandydatów</span><span class="sxs-lookup"><span data-stu-id="4ef0d-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
