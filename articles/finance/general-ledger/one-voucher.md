@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: e98f1803e43df0fbd5ab700b959faaeee017b7a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834507"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897775"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -48,7 +48,7 @@ Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza �
 
 ## <a name="issues-with-one-voucher"></a>Problemy z pojedynczym załącznikiem
 
-Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
+Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, obliczania podatku, wycofywania transakcji, uzgadniania księgi podrzędnej z księgą główną, sprawozdawczości finansowej itd. (Aby uzyskać więcej informacji o problemach, które mogą wystąpić podczas rozliczania, zobacz na przykład [Jeden załącznik z wieloma rekordami odbiorców lub dostawców](../accounts-payable/single-voucher-multiple-customer-vendor-records.md)). Do prawidłowego działania i sprawozdawczości te procesy i raporty wymagają szczegółów transakcji. Mimo iż przy odpowiedniej konfiguracji w organizacji niektóre scenariusze nadal mogą działać prawidłowo, często występują problemy przy wprowadzaniu wielu transakcji do jednego załącznika.
 
 Przypuśćmy na przykład, że księgujesz następujący załącznik wielowierszowy.
 

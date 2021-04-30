@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 53e9c42f718665165be97e5022a9e767b0436e59
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 61f86cd6168d700a5316768b328466b08d9e8f51
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802222"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892616"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 lutego 2021 r.
 
@@ -32,7 +32,7 @@ W tym temacie opisano nowe, zmienione i wkrótce dostępne funkcje dostępne w r
 
 Aby uzyskać więcej informacji na temat procesu aktualizacji i harmonogramu, należy zapoznać się z tematem [Aktualizacja procesu](hr-admin-setup-update-process.md).
 
-Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2021 wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Aby uzyskać więcej informacji o nowych funkcjach i oczekiwanych ogólnych datach dostępności, zapoznaj się z [omówieniem Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>W tej wersji
 
@@ -44,7 +44,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Aplikacja Dynamics 365 Human Resources dla Microsoft Teams | [Urlop pracownika etatowego i nieobecność pracowników w Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Aplikacja Human Resources w Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md) |
+| Aplikacja Dynamics 365 Human Resources dla Microsoft Teams | [Urlop pracownika etatowego i nieobecność pracowników w Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Aplikacja Human Resources w Teams](./hr-admin-teams-leave-app.md)<br>[Zarządzanie wnioskami o urlop w Teams](hr-teams-leave-app.md) |
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 
@@ -68,9 +68,9 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 
 | Funkcja | Plan wydań | Dokumentacja |
 | --- | --- | --- |
-| Międzyfirmowe wyświetlanie urlopu dla menedżerów | [Międzyfirmowe wyświetlanie urlopu pracownika etatowego dla menedżerów](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurowanie parametrów urlopu i nieobecności](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| Obszar roboczy zarządzania świadczeniami | [Obszar roboczy zarządzania korzyściami (wersja zapoznawcza)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Obszar roboczy zarządzania świadczeniami](hr-benefits-management-workspace.md) |
-| Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych | [Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Ogranicz edytowanie informacji osobistych](hr-employee-self-service-restrict-editing.md)|
+| Międzyfirmowe wyświetlanie urlopu dla menedżerów | [Międzyfirmowe wyświetlanie urlopu pracownika etatowego dla menedżerów](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurowanie parametrów urlopu i nieobecności](./hr-leave-and-absence-parameters.md) |
+| Obszar roboczy zarządzania świadczeniami | [Obszar roboczy zarządzania korzyściami (wersja zapoznawcza)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Obszar roboczy zarządzania świadczeniami](hr-benefits-management-workspace.md) |
+| Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych | [Ograniczenie pracownikom możliwości edytowania biznesowych danych kontaktowych](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Ogranicz edytowanie informacji osobistych](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>Wkrótce
 
@@ -78,15 +78,15 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | --- | --- |
 | Umiejętności wprowadzone przez menedżera dla swoich pracowników mogą być automatycznie zatwierdzane w przepływie pracy | Wkrótce. |
 
-Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Aby uzyskać pełną listę zaplanowanych funkcji i ich zaplanowanych wersji, zajrzyj do [omówienia Dynamics 365 Human Resources 2021 wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Aktualizacje terminologii dla Microsoft Dataverse
 
-Od 2020 listopada Common Data Service zmieniło nazwę na [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). Więcej informacji można znaleźć w [oficjalnym oświadczeniu](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) na stronie bloga Power Apps. Wraz ze zmianą tej nazwy niektóre terminologii Dataverse zostały zaktualizowane. Na przykład *jednostka* to teraz *tabela*, a *pole* to teraz *kolumna*. Aby uzyskać więcej informacji, zobacz [Aktualizacje terminologii](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
+Od 2020 listopada Common Data Service zmieniło nazwę na [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Więcej informacji można znaleźć w [oficjalnym oświadczeniu](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) na stronie bloga Power Apps. Wraz ze zmianą tej nazwy niektóre terminologii Dataverse zostały zaktualizowane. Na przykład *jednostka* to teraz *tabela*, a *pole* to teraz *kolumna*. Aby uzyskać więcej informacji, zobacz [Aktualizacje terminologii](/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
 
 W tej wersji terminologia związana z integracją Dynamics 365 Human Resources z Dataverse została zaktualizowana w całej aplikacji, aby odzwierciedlić te zmiany. Na przykład formularz **integracji Common Data Service** jest teraz **integracją Microsoft Dataverse**.
 
-Aby dowiedzieć się więcej o integracji Dynamics 365 Human Resources z programem Microsoft Dataverse, zobacz temat [Konfigurowanie integracji Microsoft Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) i [Konfigurowanie tabel wirtualnych Microsoft Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Aby dowiedzieć się więcej o integracji Dynamics 365 Human Resources z programem Microsoft Dataverse, zobacz temat [Konfigurowanie integracji Microsoft Dataverse](./hr-admin-integration-common-data-service.md) i [Konfigurowanie tabel wirtualnych Microsoft Dataverse](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="updates-to-service-deployment"></a>Aktualizacje wdrożenia usługi
 
@@ -94,12 +94,12 @@ Począwszy od wydania z 22 lutego 2021 roku, dopasowywliśmy wdrożenie aktualiz
 
 Będziemy nadal postępować zgodnie z dwutygodniowym cyklem wdrażania. Pacjenci mogą spodziewali się, że sprzyjają, że są zwykle stosowane w ich środowiskach zasobów ludzkich w trakcie cyklu dwutygodniowego niż w doświadczeniach.
 
-Aby uzyskać więcej informacji na temat usługi procesu aktualizacji, należy zapoznać się z tematem [Aktualizacja procesu](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
+Aby uzyskać więcej informacji na temat usługi procesu aktualizacji, należy zapoznać się z tematem [Aktualizacja procesu](./hr-admin-setup-update-process.md).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)</br>
-[Omówienie rozwiązania Dynamics 365 Human Resources 2021, wydanie 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Omówienie rozwiązania Dynamics 365 Human Resources 2021, wydanie 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Aktualizowanie procesu](hr-admin-setup-update-process.md)</br>
 [Zarządzanie funkcjami](hr-admin-manage-features.md)
 

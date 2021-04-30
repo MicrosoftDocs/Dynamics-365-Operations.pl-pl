@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750065"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893184"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -183,11 +183,11 @@ Należy zauważyć, że ten typ repozytorium jest dostępny w następujących ś
 
 Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE)](./electronic-reporting-import-ger-configurations.md).
 
-Repozytorium **RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia [Configuration service (RCS)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia i używać do raportowania elektronicznego.
+Repozytorium **RCS** zapewnia dostęp do listy konfiguracji określonego wystąpienia [Configuration service (RCS)](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) wybranego na etapie rejestracji repozytorium. ER pozwala importować kompletne lub udostępniane konfiguracje z wybranego wystąpienia RCS do bieżącego wystąpienia i używać do raportowania elektronicznego.
 
 Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE) z RCS](./rcs-download-configurations.md).
 
-**Repozytorium globalne** umożliwia dostęp do listy konfiguracji w repozytorium globalnym w [Configuration service](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tego rodzaju repozytorium ER może być rejestrowane tylko dla dostawcy firmy Microsoft. Z repozytorium globalnego można importować najnowsze wersje konfiguracji ER do bieżącego wystąpienia.
+**Repozytorium globalne** umożliwia dostęp do listy konfiguracji w repozytorium globalnym w [Configuration service](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Tego rodzaju repozytorium ER może być rejestrowane tylko dla dostawcy firmy Microsoft. Z repozytorium globalnego można importować najnowsze wersje konfiguracji ER do bieżącego wystąpienia.
 
 Aby uzyskać więcej informacji, zobacz [Importowanie konfiguracji raportowania elektronicznego (RE) z repozytorium globalnego w Configuration service](./er-download-configurations-global-repo.md).
 

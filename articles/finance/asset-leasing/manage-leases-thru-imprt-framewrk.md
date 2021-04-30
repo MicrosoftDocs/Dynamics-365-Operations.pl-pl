@@ -2,11 +2,11 @@
 title: Zarządzanie wynajmami za pośrednictwem struktury importu wynajmów
 description: W tym temacie objaśniono sposób używania struktury importu wynajmów do jednoczesnego korygowania wielu umów wynajmu.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 26fb195ff18dc0c86d3546b782265043c2c78bf4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 083adf0a4bb74ac65e6f8b5077f65c74eb3fa337
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819801"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880917"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Zarządzanie wynajmami za pośrednictwem struktury importu wynajmów
 
@@ -53,7 +53,7 @@ Funkcja porównania umożliwia porównanie importowanego rekordu z odpowiednim r
 > [!NOTE]
 > Funkcja Porównaj nie działa dla umów wynajmu o typie procesu **Dodaj rekord**, ponieważ nie ma nic do porównania z taką umową wynajmu.
 >
-> Aby jednocześnie porównać wiele umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe \> Porównaj** > **Porównaj**.
+> Aby jednocześnie porównać wiele umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe** i wybierz **Porównaj**.
 
 Dla każdej jednostki można wyświetlić różnice między tym, co jest aktualnie w systemie, a tym, co się znajduje w tabelach przemieszczania. Dla każdej jednostki w tabelach przemieszczania kliknij opcję **Zobacz różnice**. Wyświetlone okno dialogowe zawiera wartość bieżącą i proponowaną wartość pośrednią.
 
@@ -62,17 +62,17 @@ Można także zaktualizować wartość pośrednią, zmieniając ją w kolumnie *
 Można sprawdzić poprawność umów wynajmu, aby upewnić się, że rekordy zostaną wprowadzone do systemu bez błędów. Przed rozpoczęciem migracji rekordu wynajmu system wykonuje kilka weryfikacji, aby umożliwić pomyślne zaimportowanie rekordu. Aby sprawdzić poprawność pojedynczej umowy wynajmu, wybierz pozycję **Weryfikuj**.
 
 > [!NOTE]
-> Aby jednocześnie sprawdzić poprawność wielu umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe \> Weryfikuj** > **Porównaj**.
+> Aby jednocześnie sprawdzić poprawność wielu umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe** i wybierz **Weryfikuj**.
 
 Aby przetworzyć pojedynczą umowę wynajmu, wybierz opcję **Migruj rekordy wynajmu** na stronie **Nagłówek importu**. Podczas migrowania umowy wynajmy system wykonuje akcję określoną w polu **Typ procesu**.
 
 > [!NOTE]
-> Aby jednocześnie sprawdzić poprawność wielu umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe \> Weryfikuj** > **Porównaj**.
+> Aby jednocześnie dokonać migracji wielu umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe** i wybierz **Migracja**.
 
 Po porównaniu umów wynajmu można uruchomić raport, aby wyświetlić różnice między wszystkimi umowami wynajmu objętymi daną operacją importu. Aby uruchomić raport dla jednej umowy wynajmu, zaznacz tę umowę w danych pośrednich, a następnie wybierz kolejno opcje **Porównaj i wyświetl raport \> Raport o różnicach**.
 
 > [!NOTE]
-> Aby jednocześnie sprawdzić poprawność wielu umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Zapytania i raporty \> Raport o różnicach** > **Porównaj**.
+> Aby jednocześnie porównać wiele umów wynajmu, wybierz kolejno opcje **Wynajem składnika majątku \> Struktura importu wynajmów \> Okresowe** i wybierz **Porównaj**. 
 
 ## <a name="set-up-update-fields"></a>Konfigurowanie aktualizowanych pól
 

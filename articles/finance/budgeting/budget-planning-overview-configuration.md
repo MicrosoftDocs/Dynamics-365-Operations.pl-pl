@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822138"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898217"
 ---
 # <a name="budget-planning-overview"></a>Omówienie planowania budżetu
 
@@ -75,7 +75,7 @@ Na poniższej ilustracji widać przykład, gdzie centrala firmy szacuje kwoty po
 
 Na stronie **Hierarchia organizacyjna** można określić hierarchię organizacyjną jako hierarchię planowania budżetu dla każdego procesu planowania budżetu. Hierarchia planowania budżetu nie musi pasować do standardowej hierarchii organizacyjnej, która jest używana do innych celów. Ponieważ ta hierarchia służy do agregowania i dystrybucji danych, można zaprojektować dla niej inną strukturę. W przykładowym schemacie działy sprzedaży są poniżej poziomu centrali obejmującego działy budżetu i finansowy. Ta struktura prawdopodobnie różni się od struktury służącej do zarządzania operacjami działów sprzedaży. Do każdego procesu planowania budżetu można przypisać tylko hierarchię organizacyjną.
 
-Więcej informacji można znaleźć w temacie [Organizacje i hierarchie organizacyjne](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Więcej informacji można znaleźć w temacie [Organizacje i hierarchie organizacyjne](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Zabezpieczenia użytkownika
 
@@ -163,7 +163,7 @@ Oprócz kolumn dla kwot budżetu można zdefiniować kolumny dla pól projektu, 
 
 W przypadku przykładowego schematu można utworzyć kolumny scenariuszy „sprzedaż”, „kontrakty” i „Prognoza”. (Na poniższej ilustracji pokazano odpowiednią sekcję schematu.) Można następnie podzielić jeden lub wszystkie z tych scenariuszy na osobne kolumny dla każdego kwartału roku obrachunkowego, tak aby menedżer ds. sprzedaży w dziale mógł dokładnie wprowadzać kwoty prognozy dla każdego okresu.
 
-[![Kolumny](./media/columns.png)](./media/columns.png)
+[![Ilustracja sekcji schematu dodawania kolumn](./media/columns.png)](./media/columns.png)
 
 Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu „Szacowanie”, kolumny „Prognoza” są dostępne do edycji, a kolumny „Sprzedaż w poprzednim roku” i „Umowy” są tylko do odczytu.
 

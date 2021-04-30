@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835637"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910022"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
 W tym temacie opisano proces obsługi magazynu dla ładunków przychodzących zamówień zakupu.
 
-Dla każdego ładunku przychodzącego system powinien już zawierać powiązane zamówienie sprzedaży i może również zawierać powiązaną specyfikację ładunku i/lub plan transportu. Aby uzyskać więcej informacji na temat tworzenia ładunków przychodzących i zarządzania nimi, odwiedź temat [Proces biznesowy: planowanie transportu dla ładunków przychodzących](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Dla każdego ładunku przychodzącego system powinien już zawierać powiązane zamówienie sprzedaży i może również zawierać powiązaną specyfikację ładunku i/lub plan transportu. Aby uzyskać więcej informacji na temat tworzenia ładunków przychodzących i zarządzania nimi, odwiedź temat [Proces biznesowy: planowanie transportu dla ładunków przychodzących](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Omówienie: sposób tworzenia, rejestrowania i odbierania ładunków przychodzących
 
@@ -38,11 +38,11 @@ Na poniższej ilustracji przedstawiono typowy przepływ obsługi ładunków przy
 
 1. **Tworzony jest rekord ładunku przychodzącego w celu zaplanowania przyjęcia i jego zawartości.**
 
-    Rekord ładunku przychodzącego reprezentuje wysyłkę przez dotawcę jednego lub więcej zamówień zakupu. Oczekuje się, że ładunek dociera do magazynu jako jedna fizyczna jednostka transportowa (np. ładunek ciężarówki). Rekord ładunku przychodzącego jest używany do planowania i umożliwia koordynatorowi logistyki śledzenie postępu ładunku od dostawcy. Służy on również do rejestrowania ilości w wierszach zamówienia oraz do zarządzania postępem w ramach operacji magazynowych, takich jak przybycie i praca odkładania. Ładunki mogą być tworzone automatycznie lub ręcznie i mogą być oparte na zamówieniu zakupu lub zaawansowanym zawiadomieniu o wysyłce (ASN) od dostawcy. Aby uzyskać więcej informacji, zajrzyj do części [Tworzenie lub modyfikowanie ładunku przychodzącego](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Rekord ładunku przychodzącego reprezentuje wysyłkę przez dotawcę jednego lub więcej zamówień zakupu. Oczekuje się, że ładunek dociera do magazynu jako jedna fizyczna jednostka transportowa (np. ładunek ciężarówki). Rekord ładunku przychodzącego jest używany do planowania i umożliwia koordynatorowi logistyki śledzenie postępu ładunku od dostawcy. Służy on również do rejestrowania ilości w wierszach zamówienia oraz do zarządzania postępem w ramach operacji magazynowych, takich jak przybycie i praca odkładania. Ładunki mogą być tworzone automatycznie lub ręcznie i mogą być oparte na zamówieniu zakupu lub zaawansowanym zawiadomieniu o wysyłce (ASN) od dostawcy. Aby uzyskać więcej informacji, zajrzyj do części [Tworzenie lub modyfikowanie ładunku przychodzącego](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Dostawca potwierdza wysyłkę ładunku.**
 
-    Po wysłaniu ładunku przez dostawcę koordynator logistyki w magazynie odbierającym potwierdza wysyłkę ładunku. Jeśli firma odbierająca używa modułu **Zarządzanie transportem**, potwierdzenie przychodzącej wysyłki wyzwoli inne procesy zarządzania ładunkiem, które są skojarzone z ładunkami przychodzącymi. Aby uzyskać więcej informacji, zajrzyj do [Potwierdzenie ładunku do wysyłki](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Po wysłaniu ładunku przez dostawcę koordynator logistyki w magazynie odbierającym potwierdza wysyłkę ładunku. Jeśli firma odbierająca używa modułu **Zarządzanie transportem**, potwierdzenie przychodzącej wysyłki wyzwoli inne procesy zarządzania ładunkiem, które są skojarzone z ładunkami przychodzącymi. Aby uzyskać więcej informacji, zajrzyj do [Potwierdzenie ładunku do wysyłki](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Ładunek dociera do magazynu, a pracownicy rejestrują ilości.**
 

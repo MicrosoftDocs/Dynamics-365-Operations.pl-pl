@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753343"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893939"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Zezwalaj użytkownikom na konfigurowanie odwołania do formatu modelu konfiguracji z repozytorium globalnego
 
@@ -30,7 +30,7 @@ Można użyć narzędzia [Raportowanie elektroniczne](general-electronic-reporti
 
 Zazwyczaj należy określić, jaki format ER musi być używany w pewnym procesie biznesowym. W tym celu należy wybrać jeden format ER w polu wyszukiwania, które jest skonfigurowane jako część parametrów specyficznych dla procesu biznesowego. Te pola odnośników są zwykle implementowane przy użyciu odpowiedniego interfejsu API struktury ER systemu. Aby uzyskać więcej informacji, należy zapoznać się z [kodem interfejsu API programu ER w celu wyświetlenia wyszukiwania mapowania formatu](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Na przykład podczas konfigurowania [parametrów handlu zagranicznego](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), należy skonfigurować odwołania do poszczególnych formatów ER, które będą używane do generowania deklaracji Intrastat i raportu kontroli deklaracji Intrastat. Poniższe zrzuty ekranu pokazują, w jaki sposób ma wyglądać pole wyszukiwania formatów ER na stronie **parametry handlu zagranicznego**.
+Na przykład podczas konfigurowania [parametrów handlu zagranicznego](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), należy skonfigurować odwołania do poszczególnych formatów ER, które będą używane do generowania deklaracji Intrastat i raportu kontroli deklaracji Intrastat. Poniższe zrzuty ekranu pokazują, w jaki sposób ma wyglądać pole wyszukiwania formatów ER na stronie **parametry handlu zagranicznego**.
 
 Jeśli bieżące wystąpienie Finance nie zawiera żadnych formatów skojarzonych z procesami biznesowymi Intrastat, to pole odnośnika będzie puste.
 

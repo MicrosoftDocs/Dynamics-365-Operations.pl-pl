@@ -2,7 +2,7 @@
 title: SPLIT, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji SPLIT w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745600"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853450"
 ---
 # <a name="split-er-function"></a>SPLIT, funkcja ER
 
@@ -79,6 +79,14 @@ Funkcja `SPLIT ("abcd", 3)` zwraca nową listę zawierającą dwa rekordy, któr
 ## <a name="example-2"></a>Przykład 2
 
 Funkcja `SPLIT ("XAb aBy", "aB")` zwraca nową listę zawierającą trzy rekordy, które mają pole **Wartość** typu *Ciąg*. Pole **Wartość** w pierwszym rekordzie zawiera tekst **"X"**, pole **Wartość** w drugim rekordzie zawiera tekst **"&nbsp;"**, a pole **Wartość** w trzecim rekordzie zawiera tekst **"y"**. 
+
+## <a name="example-3"></a>Przykład 3
+
+Za pomocą funkcji [INDEX](er-functions-list-index.md) można uzyskać dostęp do poszczególnych elementów określonego ciągu wejściowego. Jeśli wprowadzisz źródło danych **MojaLista** typu **Pole obliczeniowe** i skonfigurujesz je na wyrażenie `SPLIT("abc", 1)`, wyrażenie `INDEX(MyList,2).Value` zwraca wartość tekstową **„b”**.
+
+## <a name="example-4"></a>Przykład 4
+
+Za pomocą funkcji [INDEX](er-functions-list-enumerate.md) można również uzyskać dostęp do poszczególnych elementów określonego ciągu wejściowego. Po wprowadzeniu źródła danych **MyList** dla typu **Pole obliczeniowe** i skonfigurowaniu dla niego wyrażenia `SPLIT("abc", 1)`, a następnie wprowadzeniu źródła danych **EnumeratedList** dla typu **Pole obliczeniowe** i skonfigurowaniu dla niego wyrażenia `ENUMERATE(MyList)` wyrażenie `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` zwraca tekst **„b”**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

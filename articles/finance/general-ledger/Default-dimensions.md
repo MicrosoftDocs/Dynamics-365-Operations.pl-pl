@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823867"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897315"
 ---
 # <a name="financial-dimensions-and-posting"></a>Wymiary finansowe i księgowanie 
 
@@ -83,17 +83,17 @@ Wymiar domyślny w nagłówku arkusza spowoduje, że dział 023 będzie stosowan
 
 Jednak podczas księgowania wiersza jest stosowany wymiar stały, a wiersz jest księgowany do działu 022. Na poniższej ilustracji przedstawiono zaksięgowany załącznik, w którym do konta sprzedaży został zastosowany stały wymiar.
 
-[![Transakcje na załączniku](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Transakcje z załącznikami z zastosowanym stałym wymiarem](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Przykład 2
 
 W tym przykładzie użyto tych samych ustawień, co w pierwszym przykładzie. Jednak dodamy drugi składnik i użyjemy wymiaru Dział jako wymiaru bilansowania. Na poniższej ilustracji **Dział** jest ustawiony jako wymiar finansowy bilansowania w księdze firmy USMF.
 
-[![Księga](./media/ledger.png)](./media/ledger.png)
+[![Ilustracja przedstawiająca deparatment jako wymiar finansowy bilansowania](./media/ledger.png)](./media/ledger.png)
 
 Gdy jest używana ta sama konfiguracja nagłówka arkusza i księgowana ta sama transakcja, stały wymiar jest stosowany najpierw. Następnie jest stosowana logika bilansowania w celu zagwarantowania, że każdy dział ma wpis zbilansowany. Na poniższej ilustracji przedstawiono transakcje załączników, które zawierają zapis bilansowania po zastosowaniu wymiaru stałego.
 
-[![Transakcje na załączniku](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Transakcje z załącznikiem po zastosowaniu zapisu bilansowania](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Przykład 3
 
@@ -119,11 +119,11 @@ Niektóre z poniższych zasobów odnoszą się do starszej wersji naszego oprogr
 
 [Planowanie planu kont](plan-chart-of-accounts.md) 
 
-[Planowanie planu kont w systemie AX 2012 (blog)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) — to łącze prowadzi do 1. części siedmioczęściowej serii.
+[Planowanie planu kont w systemie AX 2012 (blog)](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) — to łącze prowadzi do 1. części siedmioczęściowej serii.
 
-[Ustawienia domyślne wymiarów w zasadach podziałów księgowań](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Ustawienia domyślne wymiarów w zasadach podziałów księgowań](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Ustawienia domyślne wymiarów w strukturze wymiarów](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Ustawienia domyślne wymiarów w strukturze wymiarów](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

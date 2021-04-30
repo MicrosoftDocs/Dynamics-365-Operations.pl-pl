@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830743"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897169"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Przegląd przeniesienia kredytu SEPA
 
@@ -54,7 +54,7 @@ Format płatności polecenia przelewu dla krajów europejskich jest implementowa
 Należy zawsze przejść do biblioteki zasobów wspólnych w usłudze Microsoft Dynamics Lifecycle Services (LCS) i wyświetlić najbardziej aktualną listę dostępnych plików, które mają typ składnika aktywów **Konfiguracja GER**. Następna sekcja — „Co trzeba skonfigurować?” — zawiera łącze do tematu, który wyjaśnia sposób tworzenia repozytorium usługi LCS na potrzeby przeglądania dostępnych konfiguracji i importowania wybranych konfiguracji.
 
 ## <a name="what-do-i-have-to-set-up"></a>Co trzeba skonfigurować?
--   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Zanim będzie można tworzyć pliki poleceń przelewu, należy zaimportować co najmniej jedną aktywną konfigurację polecenia przelewu do konfiguracji raportowania elektronicznego. Instrukcje znajdują się w temacie [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   W przypadku konfigurowania metod płatności do rozrachunków z dostawcami należy zaznaczyć pole wyboru **Ogólne raportowanie elektroniczne** i wybrać odpowiedni format polecenia przelewu ISO (np. **Polecenie przelewu ISO 20022 (AT)**) jako konfigurację formatu eksportu.
 -   Należy także skonfigurować informacje firmy i konta bankowego.
 -   Do tworzenia prawidłowych płatności poleceniami przelewu są potrzebne numery kont bankowych, numery IBAN i czasami kody SWIFT (BIC) lub inne identyfikatory. W związku z tym należy je skonfigurować dla konta bankowego dostawcy i konta bankowego organizacji wnioskującej o przelew.

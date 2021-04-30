@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 59fe3996013737198d4fbc86d64f8ef9dbe035e4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829361"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910096"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Udostępnianie przewodników po rzeczywistości mieszanej pracownikom produkcji
 
@@ -102,8 +102,8 @@ Aby włączyć instrukcje w procesach produkcyjnych, Supply Chain Management zap
 Aby można było użyć tej funkcji, system musi zawierać następujące elementy:
 
 - Dynamics 365 Supply Chain Management, wersja 10.0.15 lub nowsza
-- [Podwójny zapis](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write) dla aplikacji Supply Chain Management.
-- [Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) w wersji 400.0.1.48 lub nowszej
+- [Podwójny zapis](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md) dla aplikacji Supply Chain Management.
+- [Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) w wersji 400.0.1.48 lub nowszej
 
 ### <a name="turn-on-the-feature"></a>Włączanie funkcji
 

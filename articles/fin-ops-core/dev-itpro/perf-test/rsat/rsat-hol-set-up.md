@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745204"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909041"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Konfigurowanie i instalowanie samouczka narzędzia Regression Suite Automation Tool
 
@@ -54,7 +54,7 @@ Ten temat jest samouczkiem, który pomaga w konfigurowaniu systemu i rozpoczynan
 
 ### <a name="user-eligibility"></a>Uprawnienia użytkownika
 
-Użytkownik musi być utworzony w usłudze Azure DevOps i mieć poziom subskrypcji zapewniający dostęp do planów testów usługi Azure. Licencja Plany testów usługi Azure DevOps jest wymagana tylko wtedy, gdy użytkownik tworzy przypadki testowe i zarządza nimi (czyli nie każdy użytkownik narzędzia RSAT musi mieć tę licencję). Aby uzyskać informacje dotyczące wymagań dotyczących licencji, zapoznaj się z [wymaganiami dotyczącymi licencji](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Użytkownik musi być utworzony w usłudze Azure DevOps i mieć poziom subskrypcji zapewniający dostęp do planów testów usługi Azure. Licencja Plany testów usługi Azure DevOps jest wymagana tylko wtedy, gdy użytkownik tworzy przypadki testowe i zarządza nimi (czyli nie każdy użytkownik narzędzia RSAT musi mieć tę licencję). Aby uzyskać informacje dotyczące wymagań dotyczących licencji, zapoznaj się z [wymaganiami dotyczącymi licencji](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### <a name="create-a-new-azure-devops-project"></a>Tworzenie nowego projektu w usłudze Azure DevOps
 

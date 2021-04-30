@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793832"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889843"
 ---
 # <a name="manage-features-in-human-resources"></a>Zarządzanie funkcjami w module Zasoby ludzkie
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793832"
 
 W ramach ciągłego wdrażania nowych funkcji zarządzania w aplikacji Microsoft Dynamics 365 Human Resources chcemy stworzyć klientom możliwość jak najszybszego zetknięcia się z nimi. Te funkcje są dostępne gdyż są prawie gotowe do ogólnego udostępnienia i przeszły wszechstronne testy. Jednak zanim je upublicznimy powszechnie, chcemy jeszcze poznać finalne opinie klientów i przeprowadzić ostatnią weryfikację.
 
-Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Human Resources, zobacz [Nowości i zmiany w aplikacji Human Resources](hr-admin-whats-new.md) oraz [Informacje o planie wydawniczym Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Aby uzyskać więcej informacji o nowych funkcjach w aplikacji Human Resources, zobacz [Nowości i zmiany w aplikacji Human Resources](hr-admin-whats-new.md) oraz [Informacje o planie wydawniczym Dynamics 365 i Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Obszar roboczy **zarządzanie funkcjami** zawiera listę funkcji dostarczanych w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Obszar roboczy **zarządzanie funkcjami** zawiera listę funkcji dostarczanych w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Aby uzyskać więcej informacji o zarządzaniu funkcjami funkcji, zapoznaj się z [Zarządzanie funkcjami — omówienie](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Wszystkie nowe funkcje pozostają w podglądzie przez co najmniej 30 dni, a zazwyczaj 30-60 dni. Najważniejsze funkcje są zazwyczaj dostępne w październiku i kwietniu każdego roku po okresie podglądu. Po wyświetleniu nowych możliwości w obszarze roboczym **zarządzanie funkcjami** można je włączyć. Niektóre funkcje mogą być domyślnie włączone.
 
@@ -93,6 +93,6 @@ W przesyłanych opiniach i recenzjach produktu nie podawaj żadnych danych osobo
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Co nowego: Human Resources](hr-admin-whats-new.md)
-- [Plan wydawniczy rozwiązań Dynamics 365 i Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Plan wydawniczy rozwiązań Dynamics 365 i Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

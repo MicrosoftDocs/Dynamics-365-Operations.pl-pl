@@ -1,8 +1,8 @@
 ---
-title: Usługa obliczania podatku (wersja zapoznawcza)
-description: W tym temacie wyjaśniono ogólny zakres i funkcje usługi obliczania podatku.
+title: Obliczanie podatku (wersja zapoznawcza)
+description: W tym temacie wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: wangchen
-ms.date: 03/02/2021
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,59 +16,57 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 518d3fda7b97e55d23beea6a1ba0e50b44a7aa0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3df952e0632807e55f176e63dc2047be5e622ec2
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818231"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892356"
 ---
-# <a name="tax-calculation-service-preview"></a>Usługa obliczania podatku (wersja zapoznawcza)
+# <a name="tax-calculation-preview"></a>Obliczanie podatku (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Usługa obliczania podatku to hyper-skalowalna usługa wielowątkowa, która umożliwia aparatowi Global tax engine automatyzowanie i upraszczanie procesu określania i obliczania podatków. Aparat podatków jest w pełni konfigurowalny. Elementy, które można konfigurować, obejmują model danych podlegających opodatkowaniu, kod podatku, macierz możliwości stosowania podatku oraz formułę obliczania podatku. Aparat podatków działa na podstawowej platformie usług Microsoft Azure i oferuje nowoczesne technologie oraz skalowalność.
+Obliczanie podatku to hyper-skalowalna usługa wielowątkowa, która umożliwia aparatowi Global tax engine automatyzowanie i upraszczanie procesu określania i obliczania podatków. Aparat podatków jest w pełni konfigurowalny. Elementy, które można konfigurować, obejmują model danych podlegających opodatkowaniu, kod podatku, macierz możliwości stosowania podatku oraz formułę obliczania podatku. Aparat podatków działa na podstawowej platformie usług Microsoft Azure i oferuje nowoczesne technologie oraz skalowalność.
 
-Usługa obliczania podatku jest zintegrowana z Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Można ją także zintegrować Dynamics 365 Project Operations i Dynamics 365 Commerce z innymi aplikacjami firmy i innych firm.
+Obliczanie podatku jest zintegrowane z Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Można ją także zintegrować Dynamics 365 Project Operations i Dynamics 365 Commerce z innymi aplikacjami firmy i innych firm.
 
-Usługa obliczania podatku jest opartym na firmie Microsoft aparatem podatków, który oferuje wystawczą skalowalność. Możne pomóc wykonać następujące zadania:
+Obliczanie podatku jest mikrousługą opartą na firmie Microsoft aparatem podatków, która oferuje wystawczą skalowalność. Możne pomóc wykonać następujące zadania:
 
-- Skonfiguruj usługę obliczania podatku za pomocą usługi konfiguracji przepisów (RCS). Usługa RCS jest rozszerzoną wersją konstruktora raportowania elektronicznego i jest dostępna jako autonomiczna usługa.
+- Skonfiguruj usługę Obliczania podatku za pomocą Regulatory Configuration Service (RCS). Usługa RCS jest rozszerzoną wersją konstruktora raportowania elektronicznego i jest dostępna jako autonomiczna usługa.
 - Umożliwia konfigurowanie macierzy podatków w celu automatycznego określania kodów i stawek podatkowych.
 - Skonfiguruj macierz podatkową, aby automatycznie określić numer rejestracji podatkowej.
 - Skonfiguruj projektanta obliczeń podatku w celu zdefiniowania formuł i warunków.
 - Udostępnij rozwiązanie dotyczące określania podatków i obliczania w różnych firmach.
 
-Aby użyć usługi obliczania podatku, zainstaluj dodatek usługi obliczania podatku z swojego projektu w usłudze Microsoft Dynamics Lifecycle Services (LCS). Następnie należy ukończyć konfigurację w rcs i włączyć usługę obliczania podatku w Finance i Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Rozpocznij pracę z usługą podatkową](https://go.microsoft.com/fwlink/?linkid=2138482).
+Aby użyć usługi obliczania podatku, zainstaluj dodatek usługi obliczania podatku z swojego projektu w usłudze Microsoft Dynamics Lifecycle Services (LCS). Następnie należy ukończyć konfigurację w rcs i włączyć usługę obliczania podatku w Finance i Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Rozpocznij pracę z usługą podatkową](./global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Dostępność
 
-Usługa obliczania podatku jest dostępna tylko w środowiskach piaskownicy i dla wybranych klientów za pośrednictwem publicznego programu w wersji Preview. Ostatecznie stają się one ogólnie dostępne dla wszystkich odbiorców oraz w środowiskach produkcyjnych.
+Obliczanie podatku jest dostępne tylko w środowiskach piaskownicy i dla wybranych klientów za pośrednictwem publicznego programu w wersji zapoznawczej. Ostatecznie stają się one ogólnie dostępne dla wszystkich odbiorców oraz w środowiskach produkcyjnych.
 
-W usłudze obliczania podatku będą dostarczane nowe funkcje. Dlatego należy często sprawdzać najczęściej dostępną dokumentację, aby dowiedzieć się o zakresie i zakresie obsługiwanych funkcji.
+Nowe funkcje będą nadal dostarczane, więc pamiętaj, aby często sprawdzać najbardziej aktualną dokumentację, aby dowiedzieć się o zasięgu i zakresie obsługiwanych funkcji.
 
-Usługa obliczania podatku jest wdrożona w następujących lokalizacjach geograficznych systemu Azure. Zostanie on również wdrożony w większej liczby geografów systemu Azure w zależności od potrzeb klientów:
+Obliczanie podatku jest wdrożone w następujących lokalizacjach geograficznych systemu Azure. Zostanie on również wdrożony w większej liczby geografów systemu Azure w zależności od potrzeb klientów:
 
 - Stany Zjednoczone
 - Europa
-- Francja
-- Wielka Brytania
 
 > [!NOTE]
-> Usługa obliczania podatku nie obsługuje lokalnych wdrożeń rozwiązania Dynamics 365. Nie obsługuje także wcześniejszych wersji, takich jak Dynamics AX 2012.
+> Obliczanie podatku nie obsługuje lokalnych wdrożeń rozwiązania Dynamics 365. Nie obsługuje także wcześniejszych wersji, takich jak Dynamics AX 2012.
 
 ## <a name="feature-highlights"></a>Najważniejsze cechy
 
 - Konfigurowalna macierz podatkowa do automatycznego określania i obliczania podatku
-- Obsługa wielu numerów rejestracji VAT
+- Obsługa wielu numerów rejestracji podatkowej
 - Obsługa zamówień przeniesienia do określania i obliczania podatku
-- Obsługa zamówień przeniesienia w celu określenia wielu numerów rejestracji VAT
+- Obsługa zamówień przeniesienia w celu określenia wielu numerów rejestracji podatkowej
 
 ## <a name="supported-transactions"></a>Obsługiwane transakcje
 
-Usługa obliczania podatku może być włączona przez firmę i transakcję. Obsługiwane są następujące transakcje:
+Obliczanie podatku może być włączone przez firmę i transakcję. Obsługiwane są następujące transakcje:
 
 - Proces sprzedaży
 
@@ -107,10 +105,10 @@ Usługa obliczania podatku może być włączona przez firmę i transakcję. Obs
 
 ## <a name="related-resources"></a>Powiązane zasoby
 
-[Rozpocznij pracę z usługą podatkową](https://go.microsoft.com/fwlink/?linkid=2138482)
+[Rozpocznij pracę z usługą podatkową](./global-get-started-with-tax-calculation-service.md)
 
-[Wielokrotny numer rejestracji VAT](https://go.microsoft.com/fwlink/?linkid=2153387)
+[Wielokrotny numer rejestracji VAT](./emea-multiple-vat-registration-numbers.md)
 
-[Obsługa funkcji podatków dla zamówienia przeniesienia](https://go.microsoft.com/fwlink/?linkid=2153388)
+[Obsługa funkcji podatków dla zamówienia przeniesienia](./tasks/tax-feature-support-for-transfer-order.md)
 
-[Jak utworzyć rozszerzenie w usłudze podatków](https://go.microsoft.com/fwlink/?linkid=2138483)
+[Jak utworzyć rozszerzenie w usłudze podatków](./tax-service-add-data-fields-tax-integration-by-extension.md)

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828041"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897703"
 ---
 # <a name="mobile-invoice-approvals"></a>Zatwierdzanie faktur na urządzeniach przenośnych
 
@@ -32,7 +32,7 @@ Opcje mobilne pozwalają użytkownikom biznesowym na projektowanie środowiska m
 
 | Wymaganie wstępne                                                                                            | opis                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Podręcznik wprowadzający do platformy komórkowej                                                                                |[Platforma mobilna](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Podręcznik wprowadzający do platformy komórkowej                                                                                |[Platforma mobilna](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Środowisko, w którym zainstalowano wersję 1611 oraz aktualizację nr 3 platformy (z listopada 2016 r.)                   |
 | Instalacja poprawki KB 3204341.                                                                              | Rejestrator zadań może błędnie nagrywać dwa polecenia Zamknij dla rozwijanych okien dialogowych; Poprawka jest dołączona do aktualizacji nr 3 platformy (aktualizacja z listopada 2016 r.). |
 | Instalacja poprawki KB 3207800.                                                                              | Ta poprawka umożliwia wyświetlanie załączników na klientach mobilnych. Poprawka jest dołączona do aktualizacji nr 3 platformy (aktualizacja z listopada 2016 r.).           |
@@ -213,7 +213,7 @@ Aby zaprojektować stronę szczegółów faktur dla urządzeń przenośnych, uż
 
 11. Po dodaniu wszystkich pól z dwóch poprzednich kroków kliknij przycisk **Gotowe**. Strona musi przypominać tę na ilustracji poniżej.
     
-    [![Strona po dodaniu pól](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Ilustracja pokazująca dodane dodatkowe pola](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Kliknij przycisk **Gotowe**, aby wyjść z trybu edycji.
 

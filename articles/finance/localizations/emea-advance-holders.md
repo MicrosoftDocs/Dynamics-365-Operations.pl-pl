@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dabde875e719ca2ffb5033cdbb8229e005203eae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0f3ce6684cb98e3e459f33ce7c34cd9955abd59
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839942"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894870"
 ---
 # <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 
@@ -78,7 +78,7 @@ Aby poprawnie zarejestrować i zaksięgować zamówienie zakupu w kontekście po
 
 ### <a name="create-an-advance-holder"></a>Tworzenie posiadacza zaliczki
 
-Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu)](../../fin-and-ops/hr/tasks/enter-worker-information.md). 
+Przed utworzeniem posiadacza zaliczki muszą już istnieć skonfigurowani pracownicy. Aby uzyskać więcej informacji, zobacz [Wprowadzanie informacji o pracowniku (przewodnik po zadaniu)](../../human-resources/hr-personnel-enter-worker-information.md). 
 
 1. Wybierz kolejno opcje **Rozrachunki z dostawcami** \> **Posiadacze zaliczek** \> **Posiadacze zaliczek**.
 

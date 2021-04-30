@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752973"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908348"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel 
 
@@ -45,7 +45,7 @@ Aby dowiedzieć się więcej na temat sposobu używania dodatku programu Excel, 
 2. Wybierz opcję **Otwórz w programie Excel**, a następnie otwórz wygenerowany skoroszyt. Ten skoroszyt zawiera informacje o powiązaniu jednostki, wskaźnik do środowiska oraz wskaźnik do dodatku programu Excel.
 3. W programie Excel wybierz opcję **Włącz edytowanie**, co umożliwi uruchamianie dodatku programu Excel. Dodatek programu Excel jest uruchamiany w okienku z prawej strony okna programu Excel.
 4. Jeśli uruchamiasz dodatek programu Excel po raz pierwszy, wybierz opcję **Ufaj temu dodatkowi**.
-5. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w aplikacji Finance and Operations. Jeżeli jest to możliwe, dodatek programu Excel użyje poprzedniego kontekstu logowania z przeglądarki i automatycznie Cię zaloguje. (Aby uzyskać informacje o przeglądarce używanej na podstawie systemu operacyjnego, zobacz temat [Przeglądarki używane przez dodatki pakietu Office](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby upewnić się, że logowanie się powiodło, należy sprawdzić nazwę użytkownika w prawym górnym rogu dodatku programu Excel. 
+5. Jeśli zostanie wyświetlony monit o zalogowanie, wybierz opcję **Zaloguj**, a następnie zaloguj się przy użyciu tych samych poświadczeń, jak używane do logowania w aplikacji Finance and Operations. Jeżeli jest to możliwe, dodatek programu Excel użyje poprzedniego kontekstu logowania z przeglądarki i automatycznie Cię zaloguje. (Aby uzyskać informacje o przeglądarce używanej na podstawie systemu operacyjnego, zobacz temat [Przeglądarki używane przez dodatki pakietu Office](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) Aby upewnić się, że logowanie się powiodło, należy sprawdzić nazwę użytkownika w prawym górnym rogu dodatku programu Excel. 
 
 Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy zauważyć, że nie będzie żadnych danych w skoroszycie, dopóki dodatek programu Excel ich nie wczyta.
 
@@ -60,7 +60,7 @@ Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy 
 
 6. Wybierz przycisk **OK**, a następnie przycisk **Tak**, aby potwierdzić zmianę. Dodatek programu Excel zostanie ponownie uruchomiony i załaduje metadane.
 
-    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji [Rozwiązywanie problemów](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) w tym temacie.
+    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji [Rozwiązywanie problemów](../office-integration/use-excel-add-in.md#troubleshooting) w tym temacie.
 
 7. Wybierz opcję **Projekt** Dodatek programu Excel pobierze metadane jednostki.
 8. Wybierz opcję **Dodaj tabelę**. Zostanie wyświetlona lista jednostek. Jednostki są wyświetlane w formacie „Nazwa — Etykieta”.
@@ -138,7 +138,7 @@ Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku pro
 
 - **Przycisk Ładuj aplety jest widoczny** — jeśli po zalogowaniu dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, wybierz ją, wyloguj się, a następnie zaloguj ponownie.
 - **Wyświetlany jest komunikat „Zabronione”** — jeśli podczas ładowania metadanych przez dodatek programu Excel zostanie wyświetlony komunikat „Zabronione”, oznacza to, że konto zalogowane do dodatku programu Excel nie ma uprawnień do używania docelowej usługi, wystąpienia lub bazy danych. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, wybierz ją, wyloguj się, a następnie zaloguj ponownie.
-- **W programie Excel jest wyświetlana pusta strona internetowa** — jeśli w trakcie procesu logowania otwiera się pusta strona sieci Web, konto wymaga usług AD FS, ale wersja programu Excel, w której jest uruchomiony dodatek programu Excel, jest zbyt stara, aby załadować okno dialogowe logowania. Aby rozwiązać ten problem, należy zaktualizować używaną wersję programu Excel. W celu zaktualizowania wersji programu Excel, gdy jesteś w przedsiębiorstwie znajdującym się w odroczonym kanale, użyj [narzędzia wdrażania pakietu Office](https://technet.microsoft.com/library/jj219422.aspx), aby [przełączyć z kanału odroczonego do bieżącego](https://technet.microsoft.com/library/mt455210.aspx).
+- **W programie Excel jest wyświetlana pusta strona internetowa** — jeśli w trakcie procesu logowania otwiera się pusta strona sieci Web, konto wymaga usług AD FS, ale wersja programu Excel, w której jest uruchomiony dodatek programu Excel, jest zbyt stara, aby załadować okno dialogowe logowania. Aby rozwiązać ten problem, należy zaktualizować używaną wersję programu Excel. W celu zaktualizowania wersji programu Excel, gdy jesteś w przedsiębiorstwie znajdującym się w odroczonym kanale, użyj [narzędzia wdrażania pakietu Office](/deployoffice/overview-office-deployment-tool), aby [przełączyć z kanału odroczonego do bieżącego](/deployoffice/overview-update-channels).
 - **Podczas publikowania zmian danych otrzymujesz komunikat o przekroczeniu limitu czasu** — jeśli podczas próby publikowania zmian danych w jednostce zostanie przekroczony limit czasu, rozważ zmniejszenie rozmiaru partii publikowania dla tego skoroszytu. Jednostki, które wyzwalają większe ilości logiki zmian rekordów, mogą wymagać wysłania aktualizacji w mniejszych partiach, aby uniknąć przekroczenia limitów czasu.
 
 

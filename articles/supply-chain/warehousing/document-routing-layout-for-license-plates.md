@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838281"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907994"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
 
@@ -73,7 +73,7 @@ Poniższe przykłady pokazują, jak można dostosować wartość w polu Ilość 
 - Aby zawsze były wyświetlane cztery cyfry (przy użyciu zer jako symboli zastępczych), należy użyć formularza `$Qty:0000$`. Na przykład, jeśli ilość wynosi 10, etykieta będzie zawierać „0010”.
 - Aby zawsze były wyświetlane dwa miejsca dziesiętne, należy zastosować zapis `$Qty:0.00$`. Na przykład, jeśli ilość wynosi 10, etykieta będzie zawierać „10.00”.
 
-Aby uzyskać pełną listę dostępnych ciągów formatu liczb, zajrzyj do [Niestandardowe ciągi formatów liczb](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Aby uzyskać pełną listę dostępnych ciągów formatu liczb, zajrzyj do [Niestandardowe ciągi formatów liczb](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Niestandardowe formaty ciągów
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 W tym przykładzie data 30 kwietnia 2020 będzie drukowana jako „30-04-2020”.
 
-Aby uzyskać pełną listę dostępnych formatów daty/czasu, zajrzyj do [Niestandardowe formaty daty/czasu](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Aby uzyskać pełną listę dostępnych formatów daty/czasu, zajrzyj do [Niestandardowe formaty daty/czasu](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Drukowanie pojedynczych wierszy z danych wielowierszowych
 

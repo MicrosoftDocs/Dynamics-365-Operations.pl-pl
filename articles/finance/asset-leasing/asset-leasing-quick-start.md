@@ -2,11 +2,11 @@
 title: Wynajem składnika majątku — rozpoczęcie
 description: W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów.
 author: moaamer
-ms.date: 10/16/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,18 +15,20 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814135"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892440"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie opisano możliwości wynajmu składników majątku i kroki tworzenia wynajmu składników majątku i wyświetlania informacji dotyczących tych wynajmów. W tym temacie opisano również terminologię używaną w interfejsie użytkownika i w dokumentacji. Wynajem składnika majątku jest zaawansowaną funkcją służącą do zarządzania, śledzenia i automatyzowania transakcji finansowych wynajmowanych składników majątku w Microsoft Dynamics 365 Finance. Wynajem składników majątku jest zgodny z międzynarodowymi standardami rachunkowości (MSSF 16) i standardami finansowymi (ASC 842). Wynajem składników aktywów wyszukuje i przetwarza informacje o dzierżawie oraz ułatwia generowanie wpisy w arkuszu w cyklu wynajmu od początkowego rozpoznania, miesięcznych wpisów w arkuszu, do utraty ważności zakończenia wynajmu. Wynajem składników majątku integruje się płynnie z innymi komponentami Dynamics 365 Finance, w tym Środkami trwałymi, Rozrachunki z dostawcami i Księga główna.
+
+Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** znajdź i wybierz funkcję o nazwie **Wynajem składnika majątku**, a następnie wybierz przycisk **Włącz teraz**.
 
 Aby uzyskać więcej informacji dotyczących standardów księgowania, zapoznaj się z dokumentacją standardową dla MSSF 16 i US ASC 842.
 

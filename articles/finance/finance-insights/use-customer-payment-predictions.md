@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 51cd69563a7a5b30e932f1aad828d095cc55b075
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21c5236b6d7e7ce7bd968f1511723a3646fe7a29
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827225"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897799"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Korzystanie z prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -102,7 +102,7 @@ Jeśli dokładność nie jest zadowalająca, wybierz łącze **Zwiększ dokładn
 
 Publiczna wersja zapoznawcza Finance Insights jest dostępna do wypróbowania we wdrożeniach w Stanach Zjednoczonych Ameryki, Europie i Zjednoczonym Królestwie. Firma Microsoft stopniowo zwiększa obsługę wielu regionów.
 
-Funkcje publicznej wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli AI utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+Funkcje publicznej wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli AI utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 

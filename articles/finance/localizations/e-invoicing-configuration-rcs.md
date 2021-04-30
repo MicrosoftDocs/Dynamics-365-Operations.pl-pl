@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840251"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897727"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 
@@ -50,6 +50,14 @@ Wreszcie, funkcje obsługują wymianę wiadomości z zewnętrznymi usługami sie
 
 Dostępność funkcji fakturowania elektronicznego zależy od kraju lub regionu. Chociaż niektóre funkcje są ogólnie dostępne, inne są w wersji zapoznawczej.
 
+#### <a name="generally-available-features"></a>Ogólnie dostępne funkcje
+
+W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które są obecnie dostępne ogólnie.
+
+| Kraj/region | Nazwa funkcji                         | Dokument biznesowy |
+|----------------|--------------------------------------|-------------------|
+| Egipt          | Egipska faktura elektroniczna (EG) | Faktury sprzedaży i faktury za projekty |
+
 #### <a name="preview-features"></a>Funkcje w wersji zapoznawczej
 
 W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które są obecnie dostępne w wersji zapoznawczej.
@@ -61,7 +69,6 @@ W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które s
 | Brazylia         | Brazylijski NF-e (BR)                  | Dokument fiskalny modelu 55, listy korekty, anulowania i odrzucenia |
 | Brazylia         | Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych |
 | Dania        | Duńska faktura elektroniczna (DK)       | Faktury sprzedaży i faktury za projekty |
-| Egipt          | Egipska faktura elektroniczna (EG) | Faktury sprzedaży i faktury za projekty |
 | Estonia        | Estońska faktura elektroniczna (EE)     | Faktury sprzedaży i faktury za projekty |
 | Finlandia        | Fińska faktura elektroniczna (FI)      | Faktury sprzedaży i faktury za projekty |
 | Francja         | Francuska faktura elektroniczna (FR)       | Faktury sprzedaży i faktury za projekty |
@@ -202,6 +209,91 @@ W poniższej tabeli wymieniono dostępne akcje oraz informacje o tym, czy są on
 | Wywołaj usługę meksykańskiego certyfikatu PAC                      | Integracja z meksykańską usługą PAC w celu przesyłania CFDI.                      | Wersja próbna           |
 | Przetwarzanie odpowiedzi                              | Przeanalizuj odpowiedź otrzymaną z wywołania usługi sieci web.                     | Ogólnie dostępne  |
 | Użyj MS Power Automate                         | Integruj z przepływem zbudowanym w Microsoft Power Automate.                       | Wersja próbna           |
+
+### <a name="applicability-rules"></a>Reguły zastosowania
+
+Reguły stosowania to konfigurowalne klauzule, które są zdefiniowane na poziomie funkcji fakturowania elektronicznego. Reguły są skonfigurowane tak, aby zapewnić kontekst do wykonywania funkcji fakturowania elektronicznego za pośrednictwem zestawu funkcji fakturowania elektronicznego.
+
+Gdy dokument biznesowy z Finance lub Supply Chain Management jest przesyłany do fakturowania elektronicznego, dokument biznesowy nie zawiera wyraźnego odniesienia, które umożliwia ustawieniu funkcji fakturowania elektronicznego wywołanie określonej funkcji fakturowania elektronicznego w celu przetworzenia zgłoszenia.
+
+Niemniej jednak, odpowiednio skonfigurowany, dokument biznesowy zawiera niezbędne elementy, które umożliwiają fakturowanie elektroniczne w celu ustalenia, którą funkcję fakturowania elektronicznego należy wybrać, a następnie wygenerowania faktury elektronicznej.
+
+Reguły stosowania umożliwiają zestawowi fakturowania elektronicznego znalezienie dokładnych funkcji fakturowania elektronicznego, których należy użyć do przetworzenia przedłożenia. Odbywa się to poprzez dopasowanie treści z przesłanego dokumentu biznesowego do klauzul z Reguł stosowalności.
+
+Na przykład dwie funkcje fakturowania elektronicznego z powiązanymi regułami stosowalności są wdrażane w zestawie możliwości fakturowania elektronicznego.
+
+| Funkcja fakturowania elektronicznego | Reguły zastosowania        |
+|------------------------------|--------------------------- |
+| A                            | <p>Kraj = BR</p><p>i</p><p>Osoba prawna = BRMF</p>  |
+| mld                            | <p>Kraj = MX</p><p>i</p><p>Osoba prawna = MXMF</p>  |
+
+Jeśli dokument biznesowy z Finance lub Supply Chain Management zostanie przesłany do zestawu funkcji Fakturowanie elektroniczne, dokument biznesowy zawiera następujące atrybuty wypełnione jako:
+
+- Kraj = BR
+- Osoba prawna = BRMF
+
+W zestawie możliwości fakturowania elektronicznego jest wybierana funkcja fakturowania elektronicznego **A**, która umożliwia przetwarzanie przesyłania i generowanie faktury elektronicznej.
+
+Podobnie, jeśli dokument biznesowy zawiera:
+
+- Kraj = MX
+- Osoba prawna = MXMF
+
+W celu wygenerowania faktury elektronicznej wybrano funkcję fakturowania elektronicznego **B**.
+
+Konfiguracja reguł możliwości zastosowania nie może być niejednoznaczna. Oznacza to, że dwie lub więcej funkcji fakturowania elektronicznego nie może mieć tych samych klauzul, w przeciwnym razie nie doprowadzi to do braku wyboru. W przypadku duplikowania funkcji fakturowania elektronicznego, aby uniknąć niejednoznaczności, należy zastosować dodatkowe klauzule, aby umożliwić ustawieniu funkcji fakturowania elektronicznego rozróżnienie między tymi dwoma funkcjami fakturowania elektronicznego.
+
+Rozważmy na przykład funkcję fakturowania elektronicznego **C**. Ta funkcja jest kopią funkcji fakturowania elektronicznego **A**.
+
+| Funkcja fakturowania elektronicznego | Reguły zastosowania        |
+|------------------------------|--------------------------- |
+| A                            | <p>Kraj = BR</p><p>i</p><p>Osoba prawna = BRMF</p>  |
+| C                            | <p>Kraj = BR</p><p>i</p><p>Osoba prawna = BRMF</p>  |
+
+W tym przykładzie funkcja **C** jest przed przesłaniem dokumentu biznesowego, który zawiera następujące elementy:
+
+- Kraj = BR
+- Osoba prawna = BRMF
+
+Funkcja fakturowania elektronicznego nie jest w stanie rozróżnić, która funkcja fakturowania elektronicznego musi zostać użyta do przetworzenia zgłoszenia, ponieważ zgłoszenia zawierają dokładnie te same klauzule.
+
+Aby dokonać rozróżnienia między tymi dwiema funkcjami za pomocą reguł stosowania, należy dodać nową klauzulę do jednej z funkcji, aby umożliwić ustawieniu fakturowania elektronicznego wybranie odpowiedniej funkcji fakturowania elektronicznego.
+
+| Funkcja fakturowania elektronicznego | Reguły zastosowania        |
+|------------------------------|--------------------------- |
+| A                            | <p>Kraj = BR</p><p>i</p><p>Osoba prawna = BRMF</p>  |
+| C                            | <p>Kraj = BR</p><p>i</p><p>Osoba prawna = BRMF</p><p>i</p><p>Model=55</p>  |
+
+Do obsługi tworzenia bardziej złożonych klauzul są dostępne następujące zasoby:
+
+Operatory logiki:
+- i
+- lub
+
+Typy operatorów:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Większe lub równe
+- Mniejsze lub równe
+- Contains
+- Zaczyna się od
+
+Typy danych:
+- Ciąg
+- Identyfikator
+- Wartość logiczna
+- Data
+- UUID
+
+Możliwość grupowania i rozgrupowania klauzul.
+Przykład wygląda następująco.
+
+| Funkcja fakturowania elektronicznego | Reguły zastosowania        |
+|------------------------------|--------------------------- |
+| C                            | <p>Kraj = BR</p><p>i</p><p>( Osoba prawna = BRMF</p><p>lub</p><p>Model=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Dostawcy konfiguracji
 

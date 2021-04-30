@@ -16,18 +16,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c4b5b6db9126f9b520945f63b24db26fdbdccf8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2bc35794a83365205ebc0907419d3f0801713580
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816635"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908450"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurowanie magazynu przy użyciu szablonu konfiguracji magazynu
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu. Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć. Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).
+W tym temacie wyjaśniono sposób konfigurowania magazynu przy użyciu szablonu konfiguracji magazynu. Dostępnych jest kilka wstępnie zdefiniowanych szablonów konfiguracji, których można użyć. Aby uzyskać informacje na temat korzystania z tych szablonów, zobacz [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Scenariusze, w których przydatne są szablony konfiguracji
 
@@ -88,13 +88,13 @@ Można pobrać plik zip pakietu danych. Ten plik zawiera wszystkie dane w wybran
 4. Wybierz opcję **+ Dodaj plik** i przekaż plik zip pakietu danych.
 5. Wybierz opcję **Importuj**. W widoku **Rozszerzony** można użyć opcji **Filtr**, aby szybko uzyskać przegląd problemów, które mogą wystąpić podczas importu.
 
-Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md).
+Opcja **Wyświetl dziennik wykonywania** umożliwia uzyskanie szczegółowych informacji o każdej importowanej jednostce danych. Aby szybko pobrać dane docelowe, można użyć widoku danych pośrednich. Umożliwia to sprawdzenie wyglądu zaimportowanych danych na powiązanych stronach w aplikacji. Jeżeli używane są szablony danych domyślnych, sekwencja importu dla każdej jednostki danych działa we wstępnie zdefiniowany sposób, aby zapewnić, że najpierw zostaną zaimportowane wszystkie dane zależne. Jeżeli częścią projektu są niestandardowe jednostki danych, należy zdefiniować prawidłową sekwencję. Aby uzyskać więcej informacji, zobacz temat [Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Aby uzyskać więcej informacji na temat sposobu korzystania z szablonu magazynu do skopiowania konfiguracji magazynu z jednej firmy do nowej firmy w tym samym wystąpieniu, zobacz ten 3 minutowy film w serwisie YouTube o [sposobie użycia szablonu magazynu służy do kopiowania konfiguracji w Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
 ## <a name="related-topic"></a>Powiązany temat
 
-[Szablony danych konfiguracji](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Szablony danych konfiguracji](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

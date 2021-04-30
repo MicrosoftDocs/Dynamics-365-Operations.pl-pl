@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829698"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909434"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
@@ -45,13 +45,13 @@ Na pierwszej stronie kreatora znajdują się pytania o konkretne wymagania firmy
 
 Jeśli liczba obliczanych wątków przekracza 75 procent dostępnej liczby wątków, stosowane jest ograniczenie 75 procent liczby wątków dostępnych dla każdego klienta. (Liczba dostępnych wątków zostanie ustalona dla każdego klienta).
 
-Aby uzyskać więcej informacji, zobacz temat [Liczba wątków](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Aby uzyskać więcej informacji, zobacz temat [Liczba wątków](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Rozmiar pakietu
 
 Rozmiar pakietu zostanie ustawiony na **1**. Ta wartość jest często najlepszą wartością, ponieważ pomaga poprawić wydajność planowania głównego.
 
-Aby uzyskać więcej informacji, zobacz temat [Liczba zadań w pakiecie zadań wątku](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Aby uzyskać więcej informacji, zobacz temat [Liczba zadań w pakiecie zadań wątku](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Rozmiar pakietu akceptacji
 
@@ -64,7 +64,7 @@ Obliczanie pakietu = (Liczba zamówień planowanych × (Horyzont czasowy akcepta
 
 Rozmiar pamięci podręcznej zostanie ustawiony na **Maksymalny**. Ta wartość jest często najlepszą wartością, ponieważ pomaga poprawić wydajność planowania głównego.
 
-Aby uzyskać więcej informacji, zobacz [Przydzielanie czasu do zadań w pakiecie zadań](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Aby uzyskać więcej informacji, zobacz [Przydzielanie czasu do zadań w pakiecie zadań](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Konfiguracja produkcji
 
@@ -88,7 +88,7 @@ Pozostałe pytania na tej stronie i odpowiedzi na nie podążają tym samym sche
 - **Tak, zgodnie z definicją tego planu głównego** – opcja **Plan prognozy (horyzont czasowy)** jest ustawiona na **Tak**. Zostanie użyta wprowadzona liczba dni i zastąpi wartości ustawione w grupach zapotrzebowania.
 - **Tak, zgodnie z definicją w grupie zapotrzebowania** – opcja **Plan prognozy (horyzont czasowy)** będzie ustawiona na **Nie**.
 
-Aby uzyskać więcej informacji o planowaniu zadań, zobacz temat [Planowanie zadań](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Aby uzyskać więcej informacji o planowaniu zadań, zobacz temat [Planowanie zadań](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Opcje planowania
 
@@ -99,7 +99,7 @@ Odpowiedź na pierwsze pytanie na tej stronie („Czy trzeba zaplanować operacj
 - **Tak** – zostanie użyte planowanie zadań.
 - **Nie** — zostanie użyty harmonogram operacji.
 
-Aby uzyskać więcej informacji, zobacz tematy [Planowanie operacji](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) i [Planowanie zadań](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Aby uzyskać więcej informacji, zobacz tematy [Planowanie operacji](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) i [Planowanie zadań](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Aktualizacje popytu i podaży
 
@@ -135,7 +135,7 @@ Contoso Manufacturer jest firmą produkcyjną produkującą głośniki. Kupuje o
 - Zakład produkcyjny produkuje produkty końcowe. Posiada określoną liczbę frezarek i wiertarek, które są używane do obróbki komponentów. Poszczególne komponenty muszą być przetwarzane przez te maszyny.
 - Jest wielu dostawców. Średni czas realizacji wynosi jeden tydzień. Grupa elementów od tego samego dostawcy będzie miała czas realizacji siedmiu tygodni.
 
-W kreatorze są wprowadzane następujące wartości dla Contoso Manufacturer:
+W kreatorze są wprowadzane następujące wartości dla  Contoso Manufacturer:
 
 - **Zapotrzebowanie:**
 
@@ -153,7 +153,7 @@ W kreatorze są wprowadzane następujące wartości dla Contoso Manufacturer:
     - **Pytanie:** „Czy trzeba zaplanować operacje podzielone na poszczególne zadania?”
     - **Odpowiedź:** „Tak”.
 
-    Firma Contoso Manufacturing musi zaplanować i ustawić harmonogram poszczególnych zadań, które będą wykonywane na wydziale produkcyjnym. W związku z tym będzie używać planowania zadań.
+    Contoso Manufacturing musi zaplanować i ustawić harmonogram poszczególnych zadań, które będą wykonywane na wydziale produkcyjnym. W związku z tym będzie używać planowania zadań.
 
 - **Zdolności produkcyjne:**
 
@@ -191,7 +191,7 @@ W kreatorze są wprowadzane następujące wartości dla Contoso Retailer:
     - **Pytanie:** „Czy chcesz użyć planu prognozy w planowaniu głównym, aby planowane zamówienia były sugerowane do spełniania prognozowanego popytu?”
     - **Odpowiedź:** „Tak, zgodnie z definicją w planie głównym”.
 
-    Firma Contoso uwzględniła prognozę popytu, aby przewidzieć swoją sprzedaż. Dlatego planowanie główne musi zalecać planowane zamówienia celem spełnienia prognozy.
+    Contoso uwzględniła prognozę popytu, aby przewidzieć swoją sprzedaż. Dlatego planowanie główne musi zalecać planowane zamówienia celem spełnienia prognozy.
 
 - **Akceptacja:**
 

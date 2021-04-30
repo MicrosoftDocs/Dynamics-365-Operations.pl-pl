@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e67749e6f10b1c9202605b26164e30e5d39aa28
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b1f8264c5496761232f4856212e3cc4bdea584c7
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793592"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893156"
 ---
 # <a name="development-overview"></a>Omówienie programowania
 
@@ -46,10 +46,10 @@ Ten przewodnik dewelopera zawiera informacje o interfejsie API i polach niestand
   - [Konfigurowanie integracji z rozwiązaniem Dayforce](hr-admin-integration-dayforce.md)
   - [Tworzenie aplikacji do cyklicznego eksportowania danych](hr-admin-integration-recurring-data-export.md)
   - Integracja z pakietem Office
-    - [Integracja z pakietem Office — samouczek](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Aktualizowanie danych jednostki w programie Excel](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Tworzenie funkcji otwierania w programie Excel](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
-    - [Rozwiązywanie problemów z integracją z pakietem Office](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Integracja z pakietem Office — samouczek](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Aktualizowanie danych jednostki w programie Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Tworzenie funkcji otwierania w programie Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Rozwiązywanie problemów z integracją z pakietem Office](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
 - Dokumentacja interfejsu API jednostki
   - [Uwierzytelnianie](hr-developer-api-authentication.md)

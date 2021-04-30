@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805089"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890011"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurowanie integracji z rozwiązaniem Dayforce
 
@@ -53,8 +53,8 @@ Po włączeniu integracji następuje utworzenie pakietu i plików eksportu danyc
 
 Aby uzyskać więcej informacji o kontach magazynu w usłudze Azure i ciągach połączeń z usługą Azure Storage, zobacz następujące artykuły poświęcone usłudze Azure:
 
-- [Konta magazynu w usłudze Azure — informacje](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurowanie ciągów połączeń z usługą Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Konta magazynu w usłudze Azure — informacje](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurowanie ciągów połączeń z usługą Azure Storage](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Dane techniczne, gdy integracja listy płac jest włączona
 
@@ -65,6 +65,7 @@ Włączenie integracji listy płac ma dwa główne skutki:
 
 > [!NOTE]
 > Pakiet danych przesłany do punktu końcowego SFTP jest szyfrowany przy użyciu klucza unikalnego dla pakietu. Klucz to Azure Key Vault dostępny jedynie przez Ceridian. Nie jest możliwe odszyfrowanie i sprawdzenie zawartości pakietu danych. Jeśli chcesz sprawdzić zawartość pakietu danych, musisz ręcznie wyeksportować projekt danych „Eksportu integracji płac”, pobrać go, a następnie otworzyć. Ręczny eksport nie zastosuje szyfrowania ani nie dokona transferu pakietu.
+> W przypadkach, w których pliki integracji są wysyłane ze środowiska Dynamics 365 Human Resources UAT lub Sandbox do środowiska Ceridian Dayforce Test, możesz użyć następującego adresu URL magazynu kluczy: https://payrollintegrationprod.vault.azure.net
 
 ## <a name="configure-your-data"></a>Konfigurowanie danych 
 
@@ -124,10 +125,10 @@ System Dayforce tworzy następujące potrącenia w oparciu o wpływ na listę p�
 
 Aby uzyskać więcej informacji o sposobie definiowania programu świadczeń i zarządzania nim, zobacz następujące artykuły:
 
-- [Dostarczanie programu świadczeń dla pracowników etatowych](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Utwórz nowe świadczenie](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definiowanie zasad i reguł uprawnień do świadczenia](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Rejestrowanie i usuwanie świadczeń dla pracowników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Dostarczanie programu świadczeń dla pracowników etatowych](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Utwórz nowe świadczenie](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definiowanie zasad i reguł uprawnień do świadczenia](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Rejestrowanie i usuwanie świadczeń dla pracowników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Wynagrodzenie 
 
@@ -137,20 +138,20 @@ Program Dayforce wykorzystuje informacje o wynagrodzeniach do obliczania godzino
 
 Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz następujące artykuły:
 
-- [Tworzenie planów stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Tworzenie planów wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Opracowywanie struktury i planu pensji/wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Przetwarzanie wynagrodzenia](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Tworzenie planów stałych wynagrodzeń](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Tworzenie planów wynagrodzeń o zmiennej wysokości](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Opracowywanie struktury i planu pensji/wynagrodzeń](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Przetwarzanie wynagrodzenia](/dynamics365/unified-operations/talent/process-compensation)
+- [Definiowanie procesu związanego z wynagrodzeniem i obliczanie wyników](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Zarejestrowanie pracownika w systemie stałych wynagrodzeń](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Zarejestrowanie pracownika w systemie wynagrodzeń o zmiennej wysokości](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Funkcje 
 
 Funkcja to zbiór zadań i obowiązków, które są wymagane od osoby wykonującej funkcję. Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Konfigurowanie składników funkcji](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definiowanie nowych funkcji](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Konfigurowanie składników funkcji](/dynamics365/unified-operations/talent/create-job)
+- [Definiowanie nowych funkcji](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Pozycje
 
@@ -174,8 +175,8 @@ Jeśli z tą samą funkcją jest skojarzonych wiele stanowisk w tym samym dziale
 
 Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Konfigurowanie stanowisk](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organizowanie pracowników za pomocą działów, funkcji i stanowisk](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Konfigurowanie stanowisk](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Działy
 
@@ -183,8 +184,8 @@ Dział to jednostka operacyjna należąca do kategorii lub obszaru funkcjonalneg
 
 Aby uzyskać więcej informacji, zobacz następujące artykuły:
 
-- [Tworzenie działu i kojarzenie go z hierarchią działów](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definiowanie nowych działów](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Tworzenie działu i kojarzenie go z hierarchią działów](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definiowanie nowych działów](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Cykle płac i okresy płac
 

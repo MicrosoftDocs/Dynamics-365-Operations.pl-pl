@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753439"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894011"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe — drukarka
 
@@ -30,7 +30,7 @@ Wygenerowany dokument można wysłać bezpośrednio do drukarki sieciowej w celu
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Przed rozpoczęciem należy zainstalować i skonfigurować agenta rozsyłania dokumentów, a następnie zarejestrować drukarki sieciowe. W celu zdobycia większezj ilości informacji, zobacz [Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Przed rozpoczęciem należy zainstalować i skonfigurować agenta rozsyłania dokumentów, a następnie zarejestrować drukarki sieciowe. W celu zdobycia większezj ilości informacji, zobacz [Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć](./install-document-routing-agent.md).
 
 ## <a name="make-the-printer-destination-available"></a>Umożliwia udostępnienie drukarki jako miejsca docelowego
 

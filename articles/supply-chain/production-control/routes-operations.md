@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6be472336ce8ea58973e897c42f6ee9ae92c0761
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819287"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908935"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -79,7 +79,7 @@ Marszruta musi zostać zatwierdzona, żeby można było jej użyć w procesie pl
 
 Każdą marszrutę można z osobna zatwierdzać lub odmawiać zatwierdzenia. Należy zwrócić uwagę, że jeśli marszruta jest niezatwierdzona, wszystkie powiązane wersje marszruty są również niezatwierdzone. W oknie Parametry kontroli produkcji można określić, czy marszruty mogą być niezatwierdzone i czy zatwierdzone marszruty można edytować.  
 
-Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza każdą marszrutę, można wymagać podpisów elektronicznych dla zatwierdzania marszrut. Wtedy użytkownicy będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza każdą marszrutę, można wymagać podpisów elektronicznych dla zatwierdzania marszrut. Wtedy użytkownicy będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ## <a name="operations"></a>Działania operacyjne
 Operacja jest etapem procesu produkcji. Każda operacja ma identyfikator i prosty opis. Następujące tabele przedstawiają typowe przykłady operacji w warsztacie.
@@ -185,7 +185,7 @@ Podczas aktywacji wersji marszruty wyznaczasz ją jako domyślną wersję marszr
 
 ### <a name="electronic-signatures"></a>Podpisy elektroniczne
 
-Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza i aktywuje każdą wersję marszruty, można wymagać podpisów elektronicznych dla tych zadań. Wtedy użytkownicy, którzy zatwierdzają i aktywują wersje marszrut, będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](../../fin-and-ops/organization-administration/electronic-signature-overview.md).
+Jeśli trzeba prowadzić dziennik przechowujący informacje o tym, kto zatwierdza i aktywuje każdą wersję marszruty, można wymagać podpisów elektronicznych dla tych zadań. Wtedy użytkownicy, którzy zatwierdzają i aktywują wersje marszrut, będą musieli potwierdzić swoją tożsamość za pomocą [podpisu elektronicznego](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md).
 
 ### <a name="product-change-that-uses-case-management"></a>Zmiany w produkcie używającym funkcji zarządzania sprawami
 
@@ -253,7 +253,7 @@ Z tego względu po aktywacji Nakładania pozostałe ustawienia (zarządzanie zad
 
 - [Możliwości zasobu](resource-capabilities.md)
 
-- [Omówienie podpisów elektronicznych](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+- [Omówienie podpisów elektronicznych](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
 
 
 

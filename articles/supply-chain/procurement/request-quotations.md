@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df430dada52ac1aa910a3d2007aacf65d8032383
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812554"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910046"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Omówienie zapytań ofertowych (ZO)
 
@@ -43,7 +43,7 @@ Sprawy ZO można tworzyć z zamówień planowanych lub zapotrzebowań na zakup a
 
 Po przygotowaniu sprawy ZO i dodaniu dostawców wybierz opcję **Wyślij** (**Wysyłanie i publikowanie** w przypadku podmiotów z sektora publicznego) w sprawie ZO. Dla każdego dostawcy, do którego wysłano ZO generowany jest arkusz ZO. Można skonfigurować opcje drukowania dla akcji wysyłania, aby wydrukować raport dla każdego dostawcy w celu archiwizowania, lub wysłać raporty na adresy e-mail dostawców. Ponadto arkusz ZO dla każdego dostawcy może służyć do generowania raportu, który można wysłać lub później ponownie wysłać do dostawcy. Można również skonfigurować akcję wysłania, aby wygenerować arkusz odpowiedzi, który mogą wypełniać dostawcy.
 
-W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
+W tym temacie opisano proces obsługi ZO, gdy nie jest używana współpraca z dostawcą. Jeśli system jest skonfigurowany do współpracy z dostawcami, dostawcy mogą wprowadzić oferty bezpośrednio w rozwiązaniu Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) i [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](vendor-collaboration-work-external-vendors.md).
 
 Jeżeli po wysłaniu wymagana jest zmiana ZO, po zakończeniu można ponownie wysłać ZO do dostawców, korzystając z dwóch akcji zmian: Utwórz i Finalizuj.
 
@@ -165,7 +165,7 @@ Jeżeli skonfigurowano proces zmiany tak, aby był bardziej restrykcyjny, przed 
 
 W przypadku skonfigurowania mniej restrykcyjnej metody wprowadzania zmian nie trzeba wybierać opcji **Utwórz** przed zmodyfikowaniem pól w sprawie ZO, które zostało już wysłane. Trzeba jednak ręczne wpisać informację o zmianie na ZO i wysłać tę sprawę ponownie. Należy pamiętać, że tej metody można użyć tylko wtedy, gdy żadne odpowiedzi (oferty) nie były edytowane. Jeżeli wprowadzono odpowiedź i jest ona w stanie **Odebrana** przycisk **Wyślij** jest niedostępny. W takim przypadku należy wybrać opcję **Utwórz**, a następnie **Finalizuj**, podobnie jak w bardziej restrykcyjnym procesie. Odpowiedź jest następnie resetowana, aby uwzględniała zmiany w sprawie ZO.
 
-Jeżeli dostawcy korzystają z interfejsu portalu współpracy dostawcami do wprowadzania ofert, należy zawsze użyć procesu zmiany do powiadomienia dostawców o zmianach w sprawie ZO. Ten proces pozwala zapobiec sytuacji, w której dostawcy składają oferty dotyczące nieaktualnej sprawy ZO, gdy ich oferta jest w toku. Aby uzyskać więcej informacji o portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Jeżeli dostawcy korzystają z interfejsu portalu współpracy dostawcami do wprowadzania ofert, należy zawsze użyć procesu zmiany do powiadomienia dostawców o zmianach w sprawie ZO. Ten proces pozwala zapobiec sytuacji, w której dostawcy składają oferty dotyczące nieaktualnej sprawy ZO, gdy ich oferta jest w toku. Aby uzyskać więcej informacji o portalu współpracy z dostawcami, zobacz [Współpraca z dostawcami zewnętrznymi przy użyciu modułu Współpraca z dostawcami](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Jeżeli chcesz zastąpić dodatkowych dostawców do oferty i nie wprowadzono zmian w sprawie RFQ case, możesz użyć przycisku **Wyślij**. Dodani dostawcy będą widoczni na stronie **Wyślij** i otrzymają zaproszenie w wiadomości e-mail.
 

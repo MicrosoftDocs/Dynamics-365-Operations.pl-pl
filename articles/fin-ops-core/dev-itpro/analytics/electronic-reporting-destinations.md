@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03dd6f81185e8944019eaadbb77690e4cd9ba9a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751323"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893611"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -57,7 +57,7 @@ Zachowanie domyślne konfiguracji formatu ER jest uzależnione od typu wykonania
 
 W oknie dialogowym **Raport Intrastat**, na skróconej karcie **Uruchom w tle**, jeśli dla opcji **Przetwarzanie wsadowe** zostanie ustawiona wartość **Nie**, format ER zostanie natychmiast uruchomiony w trybie interaktywnym. Po pomyślnym zakończeniu tego wykonania wygenerowany dokument wychodzący zostanie udostępniony do pobrania.
 
-Jeśli opcja **Przetwarzanie wsadowe** zostanie ustawiona na wartość **Tak**, format ER zostanie uruchomiony w trybie [wsadowym](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview). Odpowiednie zadanie wsadowe zostanie utworzone na podstawie parametrów określonych na karcie **Uruchamianie w tle** okna dialogowego **Parametry modułu ER**.
+Jeśli opcja **Przetwarzanie wsadowe** zostanie ustawiona na wartość **Tak**, format ER zostanie uruchomiony w trybie [wsadowym](../sysadmin/batch-processing-overview.md). Odpowiednie zadanie wsadowe zostanie utworzone na podstawie parametrów określonych na karcie **Uruchamianie w tle** okna dialogowego **Parametry modułu ER**.
 
 > [!NOTE]
 > Opis zadania informuje Cię o uruchomieniu mapowania formatu ER. Zawiera on również nazwę uruchamianego składnika ER.
@@ -70,7 +70,7 @@ Informacje o tym zadaniu można znaleźć w kilku miejscach:
 - Przejdź do pozycji **Administracja organizacją** \> **Raportowanie elektroniczne** \> **Zadania raportowania elektronicznego**, aby sprawdzić stan zaplanowanego zadania i wyniki wykonania zakończonego zadania. Po pomyślnym zakończeniu wykonywania zadania wybierz pozycję **Pokaż pliki** na stronie **Zadania raportowania elektronicznego**, aby pobrać wygenerowany dokument wychodzący.
 
     > [!NOTE]
-    > Ten dokument jest przechowywany jako załącznik bieżącego rekordu zadania i jest kontrolowany przez strukturę [zarządzania dokumentami](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management). [Typ dokumentu](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) używany do przechowywania artefaktów ER tego typu jest konfigurowany w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+    > Ten dokument jest przechowywany jako załącznik bieżącego rekordu zadania i jest kontrolowany przez strukturę [zarządzania dokumentami](../../fin-ops/organization-administration/configure-document-management.md). [Typ dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) używany do przechowywania artefaktów ER tego typu jest konfigurowany w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 - Na stronie **Zadania raportowania elektronicznego** wybierz pozycję **Pokaż pliki**, aby wyświetlić listę błędów i ostrzeżeń wygenerowanych podczas wykonywania zadania.
 

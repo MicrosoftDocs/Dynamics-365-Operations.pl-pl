@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c734b62dff6fc6151e192f239ad319b78f8faa8f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825213"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908042"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Współpraca z odbiorcami przy użyciu modułu Współpraca z dostawcami
 
@@ -31,7 +31,7 @@ W tym temacie opisano używanie portalu współpracy z dostawcami do zarządzani
 - **Potwierdzenie zamówienia zakupu** — monitorowanie i odpowiadanie na zamówienia zakupu.
 - **Składanie ofert przez dostawców** — wyświetlanie zapytań ofertowych (ZO) i odpowiadanie na nie przez wprowadzanie ofert.
 - **Informacje o dostawcy** — wyświetlanie i aktualizowanie danych głównych dostawcy.
-- **Fakturowanie** — praca z fakturami. Ten temat nie dotyczy obszaru roboczego **Fakturowanie**. Aby uzyskać więcej informacji o tym obszarze roboczym, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Fakturowanie** — praca z fakturami. Ten temat nie dotyczy obszaru roboczego **Fakturowanie**. Aby uzyskać więcej informacji o tym obszarze roboczym, zobacz [Obszar roboczy fakturowania w portalu współpracy z dostawcami](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Dostawcy mogą także monitorować informacje o zapasach konsygnacyjnych.
 
