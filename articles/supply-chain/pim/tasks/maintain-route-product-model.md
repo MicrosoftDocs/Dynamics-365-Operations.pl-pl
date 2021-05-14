@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45c6b1e6e75645bb17ce4defa0bca0e6d2131b6e
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817996"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921272"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Obsługa marszruty modelu produktu
 
@@ -26,43 +26,43 @@ ms.locfileid: "5817996"
 
 Wykonanie tej procedury wymaga istnienia modelu konfiguracji produktu. Ta procedura wykorzystuje w kolejnych krokach model Głośnik o wysokiej jakości zdefiniowany w firmie demonstracyjnej USMF.
 
-
 ## <a name="add-a-route-operation"></a>Dodawanie operacji marszruty
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Modele konfiguracji produktu.
-3. Na liście znajdź i zaznacz odpowiedni rekord.
+
+1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
+1. Na liście znajdź i zaznacz odpowiedni rekord.
     * Do tego ćwiczenia wybierz model Głośnik o wysokiej jakości.  
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Rozwiń sekcję Operacje marszruty.
-6. Kliknij przycisk Dodaj.
-7. W polu Nazwa wpisz wartość.
-8. Wypełnij pole Opis.
-9. Kliknij przycisk Zapisz.
+1. Na liście wybierz łącze w wybranym wierszu.
+1. Rozwiń sekcję **Operacje marszruty**.
+1. Wybierz opcję **Dodaj**.
+1. W polu **Nazwa** wpisz wartość.
+1. W polu **Opis** wpisz wartość.
+1. Wybierz opcję **Zapisz**.
 
 ## <a name="enter-route-operation-details"></a>Wprowadzanie szczegółów operacji marszruty
-1. Kliknij opcję Szczegóły operacji marszruty.
-2. W polu Operacja wprowadź lub wybierz wartość.
-3. W polu Nr operacji Nr wpisz liczbę.
+
+1. Wybierz opcję **Szczegóły operacji marszruty**.
+1. W polu **Operacja** wprowadź lub wybierz wartość.
+1. W polu **Nr operacji** wpisz liczbę.
     * Numery operacji decydują o kolejności czynności w marszrucie.  
     * Każda właściwość operacji marszruty może przybierać wartość statyczną lub być zmapowana do atrybutu. Mapowanie do atrybutu spowoduje ustawianie wartość w trakcie konfigurowania.  
-4. W polu Grupa marszruty wpisz lub wprowadź wartość.
+1. W polu **Grupa marszruty** wpisz lub wprowadź wartość.
     * Grupa marszrut określa podstawowe zachowania dotyczące wyceny, zużycia i konfiguracji.  
-5. Kliknij kartę Ustawienia.
-6. Kliknij kartę Czasy.
-7. W polu Ilość z procesu wpisz liczbę.
+1. Kliknij kartę **Konfiguracja**.
+1. Kliknij kartę **Czasy**.
+1. W polu **Ilość z procesu** wpisz liczbę.
     * Określ, ile będzie przetwarzanych w jednej operacji.  
-8. W polu Godziny/czas wpisz liczbę.
+1. W polu **Godziny/czas** wpisz liczbę.
     * Wprowadź współczynnik czasu.  
-9. Zaznacz pole wyboru Ustaw.
-10. W polu Czas procesu wpisz liczbę.
+1. Zaznacz pole wyboru **Ustaw**.
+1. W polu **Czas procesu** wpisz liczbę.
     * Określ czas przetwarzania dla podanej ilości.  
-11. Kliknij kartę Zapotrzebowanie na zasoby.
-12. Kliknij przycisk Dodaj.
-13. Na liście oznacz wybrany wiersz.
-14. W polu Typ wymagania wybierz opcję.
+1. Kliknij kartę **Zapotrzebowanie na zasoby**.
+1. Wybierz opcję **Dodaj**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Typ wymagania** wybierz opcję.
     * Zdecyduj, czy chcesz określić konkretne zasoby czy możliwości, które muszą posiadać.  
-15. W polu Zapotrzebowanie wprowadź lub wybierz wartość.
-16. Kliknij przycisk OK.
+1. W polu **Zapotrzebowanie** wprowadź lub wybierz wartość.
+1. Kliknij przycisk **OK**.
 
 
 

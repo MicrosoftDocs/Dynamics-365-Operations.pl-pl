@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 54929f924bd9c2b59dec453cf580e0b2bc149d38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799476"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937069"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Zmiana porządku sortowania dla podmiotów merchandisingowych
 
@@ -84,7 +84,7 @@ Kolejność wyświetlania dla hierarchii nawigacji kanału jest odzwierciedlona 
 ![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

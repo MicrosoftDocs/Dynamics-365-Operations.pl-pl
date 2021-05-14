@@ -2,7 +2,7 @@
 title: Moduł kart upominkowych
 description: W tym temacie opisano moduły kart upominkowych i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a4e4e06ab7032d68fcd36a8e80bc714ebaaac821
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
+ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797678"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5962770"
 ---
 # <a name="gift-card-module"></a>Moduł karty upominkowej
 
@@ -63,6 +63,26 @@ W konstruktorze witryn Commerce w **Ustawienia witryny \> Rozszerzenia** istniej
 
 > [!IMPORTANT]
 > Te ustawienia są dostępne w wydaniu Dynamics 365 Commerce 10.0.11 i są wymagane tylko wtedy, gdy potrzebna jest pomoc techniczna dla kart upominkowych SVS i Givex. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+
+## <a name="extend-internal-gift-cards-for-use-in-e-commerce-storefronts"></a>Rozszerzanie wewnętrznych kart upominkowych do użytku w witrynach handlu elektronicznego
+
+Domyślnie wewnętrzne karty upominkowe nie są przystosowane do używania w witrynach handlu elektronicznego. Dlatego zanim zezwolisz na to, aby wewnętrzne karty upominkowe zostały użyte do płatności, musisz je skonfigurować za pomocą rozszerzeń, które ułatwiają ich zabezpieczanie. Oto obszary kart upominkowych, które należy rozszerzyć, zanim zezwolisz na używanie w środowisku produkcyjnym wewnętrznych kart upominkowych:
+
+- **Numer karty upominkowej** — Sekwencje numerów służą do generowania numerów kart upominkowych dla wewnętrznych kart upominkowych. Ponieważ sekwencje numerów można łatwo przewidzieć, należy rozszerzyć generowanie numerów kart upominkowych, tak aby numery wystawianych kart upominkowych były wybierane losowo, w sposób kryptograficznie bezpieczny.
+- **GetBalance** — Interfejs API **GetBalance** służy do odczytywania sald karty upominkowej. Domyślnie ten interfejs API jest publiczny. Jeśli do wyszukiwania sald karty upominkowej nie jest wymagany numer PIN, istnieje ryzyko użycia interfejsu API **GetBalance** do wyszukiwania numerów kart upominkowych z saldami. Wdrożenie zarówno wymagań dotyczących numeru PIN dla wewnętrznych kart upominkowych, jak i dławienie interfejsu API pomaga złagodzić ryzyko.
+- **PIN** — domyślnie wewnętrzne karty upominkowe nie obsługują numeru PIN. Wewnętrzne karty upominkowe należy rozszerzyć o wymóg podania PIN w celu odczytania salda. Ta funkcja umożliwia także blokowanie kart upominkowych po kolejnych niepoprawnych próbach wprowadzenia numeru PIN.
+
+## <a name="enable-gift-card-payments-for-guest-checkout"></a>Włączanie płatności kartą upominkową podczas realizacji transakcji przez gościa
+
+Domyślnie płatności kartą upominkową nie są dostępne podczas realizacji transakcji przez gościa (anonimowego). Aby je włączyć, wykonaj następujące kroki.
+
+1. W centrali Commerce przejdź do lokalizacji **Retail i Commerce \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Punkt sprzedaży \> Operacje punktu sprzedaży**.
+1. Wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) nagłówek siatki, a następnie wybierz polecenie **Wstaw kolumny**.
+1. W oknie dialogowym **Wstawianie kolumn** zaznacz pole wyboru **AllowAnonymousAccess**.
+1. Wybierz **Aktualizuj**.
+1. W przypadku operacji **520** (saldo na karcie upominkowej) i **214** ustaw wartość **AllowAnonymousAccess** na **1**.
+1. Wybierz opcję **Zapisz**.
+1. Wykonaj zadanie harmonogram **1090**, aby zsynchronizować zmiany z bazą danych kanału. 
 
 ## <a name="add-a-gift-card-module-to-a-page"></a>Dodawanie modułu kart upominkowych do strony
 

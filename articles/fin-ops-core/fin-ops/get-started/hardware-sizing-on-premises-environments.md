@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 55dc237629b7b595b03d48adabc6b31492171e25
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748752"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923487"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -134,7 +134,7 @@ W wydaniu o ogólnej dostępności można wdrożyć tylko jeden węzeł usługi 
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Planowanie i przygotowywanie wdrożenia samodzielnego klastra usługi Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Usługa Orchestrator zarządza wdrożeniem i pokrewną komunikacją z usługą LCS. Ta usługa jest wdrażana jako podstawowa usługa platformy Service Fabric i wymaga co najmniej trzech maszyn wirtualnych. Usługa znajduje się w tej samej lokalizacji, co usługi organizowania platformy Service Fabric. Szacując dla niej zapotrzebowanie na elementy infrastruktury, należy się kierować szczytowym obciążeniem klastra. Aby uzyskać więcej informacji, zobacz [Planowanie i przygotowywanie wdrożenia samodzielnego klastra usługi Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Wirtualizacja i nadsubskrypcja
 

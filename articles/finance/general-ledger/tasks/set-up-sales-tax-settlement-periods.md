@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd11068a31b5324d87416e7c00f75a59743f695a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83587df3963d215fec020150e6b707e431c1b6eb
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813514"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944784"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Konfigurowanie okresów rozliczania podatku
 
@@ -37,9 +37,7 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 7. W polu **Warunki płatności** wybierz odpowiedni rekord z menu rozwijanego. Odpowiedni urząd skarbowy można skonfigurować jako dostawcę, a wtedy funkcja rozliczania podatku utworzy otwartą fakturę od dostawcy. Warunki płatności decydują o terminie płatności otwartej faktury od dostawcy.  
 8. Wybierz typ interwałów okresu rozliczeniowego.
 9. Wprowadź liczbę jednostek interwału okresu w okresie. Na przykład kwartał ma 3 miesiące.
-10. Zaznacz lub wyczyść pole wyboru **Użyj przetwarzania wsadowego w celu rozliczenia podatku**. Proces rozliczania dla okresu rozliczeniowego może być wykonywany w trybie wsadowym w tle. Jest to zalecane dla dużej liczby transakcji podatkowych w interwale okresu.  
-    > [!NOTE]
-    > Obecnie nie jest to obsługiwane w Hiszpanii, Japonii i Holandii.
+10. Zaznacz lub wyczyść pole wyboru **Użyj przetwarzania wsadowego w celu rozliczenia podatku**. Proces rozliczania dla okresu rozliczeniowego może być wykonywany w trybie wsadowym w tle. Jest to zalecane dla dużej liczby transakcji podatkowych w interwale okresu.
 11. Zaznacz lub wyczyść pole wyboru **Zapobiegaj generowaniu transakcji podatków przeciwstawnych**. Domyślnie system generuje transakcje podatków przeciwstawnych w trakcie rozliczania, co może spowalniać działanie, jeżeli w okresie występuje duża liczba transakcji podatkowych. Zaznaczenie tego pola wyboru uniemożliwi generowanie transakcji podatków przeciwstawnych.
 12. Rozwiń kartę **Interwały okresu**.
 13. Wybierz opcję **Dodaj**.

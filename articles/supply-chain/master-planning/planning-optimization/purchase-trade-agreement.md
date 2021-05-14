@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 138bf58e07d4d6df3c2106e4176e02fcdb0a6dba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
+ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820425"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5961712"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Planowanie główne za pomocą umów handlowych zakupu
 
@@ -67,7 +67,7 @@ Po przygotowaniu systemu zgodnie z opisem w poprzedniej sekcji należy wykonać 
 1. Powtórz tę procedurę dla każdego odpowiedniego produktu.
 
 > [!NOTE]
-> Waluta w wierszu umowy handlowej zakupu musi być zgodna z walutą wybranego dostawcy. Planowanie główne będzie zawierać tylko informacje z wierszy umowy handlowej zakupu, których waluta pasuje do waluty dostawcy.
+> Optymalizacja planowania obsługuje wielowalutowe umowy handlowe. Podczas wyszukiwania umowy handlowej przy użyciu opcji **Najniższa cena jednostkowa** system uwzględni wiersze umowy handlowej zakupu z różnymi walutami, pod warunkiem że między walutą wiersza umowy handlowej a walutą rozliczeniową firmy został zdefiniowany kurs wymiany. W przeciwnym razie wiersz umowy handlowej będzie ignorowany i podczas planowania głównego będzie wyświetlany błąd. Dlatego planowanie główne będzie zawierać informacje ze wszystkich odpowiednich wierszy umowy handlowej zakupu, w których ceny mogą być konwertowane na walutę rozliczeniową.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Przykłady zastosowania Optymalizacji planowania w odnalezieniu dostawcy i czasu realizacji
 

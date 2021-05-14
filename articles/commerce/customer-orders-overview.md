@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821015"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936737"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
 
@@ -42,7 +42,7 @@ Przed próbą użycia funkcji zamówienia odbiorcy w punkcie sprzedaży należy 
 
 ### <a name="configure-modes-of-delivery"></a>Konfigurowanie metod dostawy
 
-Aby skorzystać z zamówień odbiorców, należy skonfigurować metody dostawy, które mogą być używane w kanale sklepu. Należy zdefiniować co najmniej jedną metodę dostawy, która może być używana, gdy wiersze zamówienia są wysyłane do odbiorcy z sklepu. Należy zdefiniować co najmniej jedną metodę odbioru, która może być używana, gdy wiersze zamówienia są odbierane w sklepie. Metody dostawy są definiowane na stronie **Metody dostawy** w module Commerce Headquarter. Aby uzyskać więcej informacji dotyczących konfigurowania metody dostawy, należy zapoznać się z tematem [Ustawianie metod dostawy](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+Aby skorzystać z zamówień odbiorców, należy skonfigurować metody dostawy, które mogą być używane w kanale sklepu. Należy zdefiniować co najmniej jedną metodę dostawy, która może być używana, gdy wiersze zamówienia są wysyłane do odbiorcy z sklepu. Należy zdefiniować co najmniej jedną metodę odbioru, która może być używana, gdy wiersze zamówienia są odbierane w sklepie. Metody dostawy są definiowane na stronie **Metody dostawy** w module Commerce Headquarter. Aby uzyskać więcej informacji dotyczących konfigurowania metody dostawy, należy zapoznać się z tematem [Ustawianie metod dostawy](./configure-call-center-delivery.md#define-delivery-modes).
 
 ![Strona metod dostawy](media/customer-order-modes-of-delivery.png)
 
@@ -78,19 +78,19 @@ Przed próbą utworzenia zamówień odbiorców w punkcie sprzedaży należy skon
 - **Procent opłaty za anulowanie** — jeśli z tytułu anulowania zamówienia odbiorcy będzie naliczana opłata, należy podać kwotę tej opłaty.
 - **Kod opłaty za anulowanie** — umożliwia określenie kodu opłaty za rozrachunki z odbiorcami, który ma być używany, gdy opłata za anulowanie jest stosowana do anulowanych zamówień odbiorców w punkcie sprzedaży. Kod opłaty definiuje logikę księgowania finansowego dla opłaty za anulowanie.
 - **Kod opłaty transportowej** — jeśli w polu **Używania opcji zaawansowanego automatycznego pobierania opłat** wybrana jest opcja **Tak**, to ustawienie parametru nie ma znaczenia. Jeśli ta opcja ma wartość **Nie**, użytkownicy będą proszeni o ręczne wprowadzenie opłaty transportowej podczas tworzenia zamówień odbiorców w punkcie sprzedaży. Ten parametr służy do mapowania kodu opłaty za rozrachunki z odbiorcami, który będzie stosowany do zamówień w momencie, gdy użytkownicy wprowadzą opłatę transportową. Kod opłaty definiuje logikę księgowania finansowego dla opłaty transportowej.
-- **Korzystanie z zaawansowanych opłat automatycznych** — tę opcję należy ustawiać na **Tak**, aby przy tworzeniu zamówień odbiorców w punkcie sprzedaży były obliczane automatyczne opłaty systemowe. Te opłaty automatyczne mogą być używane do obliczania opłat za wysyłkę lub innych opłat związanych z zamówieniem lub produktem. Aby uzyskać informacje dotyczące konfiguracji funkcji zaawansowanych opłat automatycznych i korzystania z nich, należy zapoznać się z [Wielokanałowe zaawansowane opłaty automatyczne](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Korzystanie z zaawansowanych opłat automatycznych** — tę opcję należy ustawiać na **Tak**, aby przy tworzeniu zamówień odbiorców w punkcie sprzedaży były obliczane automatyczne opłaty systemowe. Te opłaty automatyczne mogą być używane do obliczania opłat za wysyłkę lub innych opłat związanych z zamówieniem lub produktem. Aby uzyskać informacje dotyczące konfiguracji funkcji zaawansowanych opłat automatycznych i korzystania z nich, należy zapoznać się z [Wielokanałowe zaawansowane opłaty automatyczne](./omni-auto-charges.md).
 
 ![Karta zamówienia odbiorcy na stronie parametrów Commerce](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualizowanie układów ekranu transakcji w punkcie sprzedaży
 
-Upewnij się, że [układ ekranu punktu sprzedaży](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) jest skonfigurowany do obsługi tworzenia i zarządzania zamówieniami odbiorców oraz że skonfigurowano wszystkie wymagane operacje punktu sprzedaży. Poniżej przedstawiono niektóre operacje punktu sprzedaży, które są zalecane do prawidłowej obsługi tworzenia i zarządzania zamówieniami odbiorców:
+Upewnij się, że [układ ekranu punktu sprzedaży](./pos-screen-layouts.md) jest skonfigurowany do obsługi tworzenia i zarządzania zamówieniami odbiorców oraz że skonfigurowano wszystkie wymagane operacje punktu sprzedaży. Poniżej przedstawiono niektóre operacje punktu sprzedaży, które są zalecane do prawidłowej obsługi tworzenia i zarządzania zamówieniami odbiorców:
 - **Wyślij wszystkie produkty** — ta operacja służy do określenia, że wszystkie wiersze w koszyku będą wysyłane do miejsca docelowego.
 - **Wyślij wybrane produkty** — ta operacja służy do określenia, że wszystkie wybrane w koszyku wiersze będą wysyłane do miejsca docelowego.
 - **Odbiór wszystkich produktów** — ta operacja służy do określenia, że wszystkie wiersze w koszyku będą odebrane z wybranego miejsca.
 - **Odbiór wybranych produktów** — ta operacja służy do określenia, że wybrane wiersze w koszyku będą odebrane z wybranego miejsca.
 - **Wyniesienie wszystkich produktów** — ta operacja służy do określenia, że będą wszystkie wiersze w danym koszyku zostaną wyniesione. Jeśli ta operacja jest używana w punkcie sprzedaży, zamówienie odbiorcy zostanie przekonwertowane na transakcję kasową i przeniesienia.
-- **Wyniesienie wybranych produktów** — ta operacja służy do określenia, że wybrane wiersze w koszyku będą wyniesione przez odbiorcę w momencie zakupu. Ta operacja jest przydatna tylko w scenariuszu realizacji [zamówienia hybrydowego](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders).
+- **Wyniesienie wybranych produktów** — ta operacja służy do określenia, że wybrane wiersze w koszyku będą wyniesione przez odbiorcę w momencie zakupu. Ta operacja jest przydatna tylko w scenariuszu realizacji [zamówienia hybrydowego](./hybrid-customer-orders.md).
 - **Odwołanie zamówienia** — ta operacja służy do wyszukiwania i pobierania zamówień odbiorcy, dzięki czemu użytkownicy w punkcie sprzedaży mogą edytować, anulować lub wykonywać w razie potrzeby operacje związane z realizacją.
 - **Zmiana metody dostawy** — ta operacja umożliwia szybką zmianę trybu dostawy dla wierszy, które zostały już skonfigurowane do wysyłki, bez konieczności przechodzenia przez przepływ „Wyślij wszystkie produkty” lub „Wyślij wybrane produkty”.
 - **Zastąpienie depozytu** — tej operacji można użyć do zmiany kwoty wpłaty zapłaconej przez odbiorcę dla wybranego zamówienia odbiorcy.
@@ -128,7 +128,7 @@ Upewnij się, że [układ ekranu punktu sprzedaży](https://docs.microsoft.com/d
 Zamówienia detaliczne utworzone w ramach kanału online lub sklepowego mogą zostać odwołane i edytowane w punkcie sprzedaży zgodnie, jeśli zajdzie taka potrzeba.
 
 > [!IMPORTANT]
-> Nie wszystkie zamówienia detaliczne można edytować za pomocą aplikacji POS. Zamówień tworzonych w kanale biura obsługi nie można edytować za pośrednictwem punktu sprzedaży, jeśli [Włącz kończenie zamówienia](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) jest włączone dla kanału biura obsługi. Aby zapewnić poprawne przetwarzanie płatności, zamówienia utworzone w kanale biura obsługi i korzystające z funkcji włączania zamówień muszą być edytowane za pośrednictwem aplikacji centrum obsługi w module Commerce Headquarter.
+> Nie wszystkie zamówienia detaliczne można edytować za pomocą aplikacji POS. Zamówień tworzonych w kanale biura obsługi nie można edytować za pośrednictwem punktu sprzedaży, jeśli [Włącz kończenie zamówienia](./set-up-order-processing-options.md#enable-order-completion) jest włączone dla kanału biura obsługi. Aby zapewnić poprawne przetwarzanie płatności, zamówienia utworzone w kanale biura obsługi i korzystające z funkcji włączania zamówień muszą być edytowane za pośrednictwem aplikacji centrum obsługi w module Commerce Headquarter.
 
 W wersji 10.0.17 i późniejszej użytkownicy mogą edytować uprawnione zamówienia za pomocą aplikacji punktu sprzedaży, nawet jeśli zamówienie jest częściowo zrealizowane. Jednak zamówienia, które są w pełni zafakturowane nadal nie mogą być edytowane za pośrednictwem punktu sprzedaży. Aby włączyć tę funkcję, należy włączyć opcję **Edytowanie częściowo spełnionych zamówień w punktach sprzedaży** w obszarze roboczym **Zarządzanie funkcjami**. Jeśli ta funkcja nie jest włączona lub jeśli używasz wersji 10.0.16 lub starszej, użytkownicy będą mogli edytować zamówienia klientów w punkcie sprzedaży tylko wtedy, gdy zamówienie jest w pełni otwarte. Ponadto, jeśli ta funkcja jest włączona, możesz ograniczyć sklepy, które mogą edytować częściowo zrealizowane zamówienia. Opcję wyłączenia tej funkcji dla określonych sklepów można skonfigurować w profilu **Funkcjonalność** na skróconej karcie **Ogólne**.
 
@@ -153,7 +153,7 @@ W wersji 10.0.17 i późniejszej użytkownicy mogą edytować uprawnione zamówi
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>Finalizowanie wysyłki lub odbioru zamówienia odbiorcy z punktu sprzedaży
 
-Po utworzeniu zamówienia towary zostaną pobrane przez odbiorcę z lokalizacji magazynu lub wysłane, w zależności od konfiguracji zamówienia. Aby uzyskać więcej informacji na temat tego procesu, zapoznaj się z dokumentacją [realizacji zamówienia w sklepie](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview).
+Po utworzeniu zamówienia towary zostaną pobrane przez odbiorcę z lokalizacji magazynu lub wysłane, w zależności od konfiguracji zamówienia. Aby uzyskać więcej informacji na temat tego procesu, zapoznaj się z dokumentacją [realizacji zamówienia w sklepie](./order-fulfillment-overview.md).
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Asynchroniczny przepływ transakcji w zamówieniach odbiorców
 

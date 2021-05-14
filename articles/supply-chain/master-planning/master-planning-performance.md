@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 73ef52580ffe80c6c5cc9f77c2088d071a749ca7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 27c1f910fc9fa533877726562c45a9eaa13e2858
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833456"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935816"
 ---
 # <a name="improve-master-planning-performance"></a>Zwiększanie wydajności planowania głównego
 
@@ -79,14 +79,14 @@ Trudno przewidzieć, która opcja będzie lepsza, ponieważ każdy przypadek zal
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Liczba zamówień w pakiecie akceptacji
 
-**Liczba lub zamówienia w parametrze pakietu określającego pakiet** określa łączną liczbę zamówień, które będą przetwarzane w danym momencie przez poszczególne wątki/partie. Powoduje to paralelizację procesu autoakceptowania.
+**Liczba lub zamówienia w parametrze pakietu określającego pakiet** określa łączną liczbę zamówień, które będą przetwarzane w danym momencie przez poszczególne wątki/partie. Powoduje to równoległe wykonywanie procesu automatycznego ustalania.
 
-**Liczbę zamówień w pakiecie określającym** można określić w sekcji **Wydajność** na karcie **Ogólne** na stronie **Parametry planowania głównego** (**planowanie główne \> Ustawienia \> Parametry planowania głównego**). Paralelizacja procesu autoustalania jest oparta na zamówieniach, które muszą zostać przetworzone razem. Na przykład jeśli ten parametr ma wartość **50**, na przykład każdy wątek lub zadanie wsadowe będzie pobierać 50 zamówień w tym samym czasie i przetwarzać je razem. W celu znalezienia najlepszej wartości zalecamy użycia metody prób i błędów. Można jednak obliczać wartość początkową przy użyciu następującej formuły:
+**Liczbę zamówień w pakiecie określającym** można określić w sekcji **Wydajność** na karcie **Ogólne** na stronie **Parametry planowania głównego** (**planowanie główne \> Ustawienia \> Parametry planowania głównego**). Równoległe wykonywanie procesu automatycznego ustalania jest oparte na zamówieniach, które muszą zostać przetworzone razem. Na przykład jeśli ten parametr ma wartość **50**, na przykład każdy wątek lub zadanie wsadowe będzie pobierać 50 zamówień w tym samym czasie i przetwarzać je razem. W celu znalezienia najlepszej wartości zalecamy użycia metody prób i błędów. Można jednak obliczać wartość początkową przy użyciu następującej formuły:
 
 (Liczba zamówień na pakiet) = (Liczba pozycji na żądanie ÷ liczba wątków)
 
 > [!NOTE]
-> Jeśli **Liczba zamówień w parametrze pakietu określającego** ustawiona jest na **0** (zero), to nie wystąpi żadna paralelizacja procesu autoakceptowania. Cały proces zostanie uruchomiony w jednym zadaniu wsadowym i będzie miał skumulowany czas pracy. Z tego powodu czas trwania planowania głównego zostanie zwiększony. Dlatego zalecamy ustawienie tego parametru na wartość większą niż **0** (zero).
+> Jeśli **Liczba zamówień w parametrze pakietu określającego** ustawiona jest na **0** (zero), proces automatycznego ustalania nie będzie wykonywany równolegle. Cały proces zostanie uruchomiony w jednym zadaniu wsadowym i będzie miał skumulowany czas pracy. Z tego powodu czas trwania planowania głównego zostanie zwiększony. Dlatego zalecamy ustawienie tego parametru na wartość większą niż **0** (zero).
 
 ### <a name="time-fences"></a>Horyzonty czasowe
 

@@ -2,7 +2,7 @@
 title: Omówienie raportowania elektronicznego (RE)
 description: Ten temat zawiera omówienie narzędzia Raportowanie elektroniczne. Opisano w nim najważniejsze pojęcia, obsługiwane scenariusze i formaty, które są częścią rozwiązania.
 author: NickSelin
-ms.date: 12/07/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893184"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944372"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -236,7 +236,7 @@ Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po za
 
 Projektant formatów w aplikacji ER może służyć do redagowania dokumentu elektronicznego w formacie arkusza OPENXML. 
 
-Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu **ER Tworzenie konfiguracji dla raportów w formacie OPENXML** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**). W ramach kroku przewodnika po zadaniu importowania szablonu użyj plik programu Excel [Szablon raportu o płatnościach (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) jako szablonu.
+Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu **ER Tworzenie konfiguracji dla raportów w formacie OPENXML** (część procesu biznesowego **7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)**). W ramach kroku przewodnika po zadaniu importowania szablonu użyj plik programu Excel [Szablon raportu o płatnościach (SampleVendPaymWsReport.xlsx)](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) jako szablonu.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Tworzenie konfiguracji do generowania dokumentów elektronicznych w formacie dokumentu programu Word
 
@@ -244,8 +244,8 @@ Projektant formatów w aplikacji ER może służyć do redagowania dokumentu ele
 
 Aby zapoznać się z tym scenariuszem w szczegółach, obejrzyj przewodnik po zadaniu ER Projektowanie konfiguracji do generowania raportów w formacie Microsoft WORD (część procesu biznesowego 7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)). W ramach kroku przewodnika po zadaniu importowania szablonu użyj następujących plików programu Word jako szablonów formatu ER:
 
-- [Szablon raportu o płatnościach (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Ograniczony szablon raportu o płatnościach (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Szablon raportu o płatnościach (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Ograniczony szablon raportu o płatnościach (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Tworzenie konfiguracji do importowania danych z przychodzących dokumentów elektronicznych
 
@@ -253,10 +253,10 @@ Projektant formatów w aplikacji ER może służyć do opisania dokumentu elektr
 
 Aby zapoznać się z tym scenariuszem w szczegółach, odtwórz przewodnik po zadaniu Tworzenie wymaganych konfiguracji ER do importowania danych z pliku zewnętrznego (część procesu biznesowego 7.5.4.3 Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)). Do odtworzenia tego przewodnika użyj następujących plików:
 
-- [Konfiguracja modelu danych ER (1099model.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Konfiguracja formatu ER (1099format.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Przykładowy dokument przychodzący w formacie XML (1099entries.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
-- [Przykładowy skoroszyt do zarządzania danymi dokumentu przychodzącego (1099entries.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
+- [Konfiguracja modelu danych ER (1099model.xml)](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)
+- [Konfiguracja formatu ER (1099format.xml)](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)
+- [Przykładowy dokument przychodzący w formacie XML (1099entries.xml)](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)
+- [Przykładowy skoroszyt do zarządzania danymi dokumentu przychodzącego (1099entries.xlsx)](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx)
 
 ### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Przechowywanie zaprojektowanego składnika formatu w konfiguracji formatu
 

@@ -2,7 +2,7 @@
 title: Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 description: W tym temacie wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753559"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951992"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 
@@ -158,6 +158,31 @@ ER obsługuje różne sposoby określania języka wygenerowanego raportu. W polu
 - **Zdefiniowane w czasie wykonywania** — generowanie raportu w języku określonym w czasie wykonywania. W przypadku wybrania tej wartości w polu **Język** skonfiguruj wyrażenie ER, która zwraca kod języka dla języka, na przykład język odpowiedniego odbiorcy.
 
     ![Określ w projektancie operacji ER język zdefiniowany w czasie wykonania jako język generowanego raportu](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Formatowanie specyficzne dla kultury
+
+ER obsługuje różne sposoby określania kultury wygenerowanego raportu. Dlatego poprawnego formatowania odpowiedniego dla danej kultury można użyć dla daty, czasu i wartości liczbowych. Podczas projektowania formatu ER, na karcie **Format**, w polu **Preferencje kultury** można wybrać jedną z następujących wartości dla każdego składnika formatu typu **Plik\\Common**, **Plik\\Excel**, **Plik\\PDF** lub **PDF\\Merger**:
+
+- **Preferencje użytkownika** — sformatowanie wartości zgodnie z preferowaną przez użytkownika kulturę. Do definicji tej kultury służy pole **Data, godzina i format liczby** na karcie **Preferencje** na stronie **Opcje użytkownika**.
+
+    ![Definiowanie preferowanej kultury użytkownika jako kultury generowanego raportu w konstruktorze operacji ER](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Jawnie zdefiniowane** — format wartości zgodnie z kulturę określoną w czasie projektowania.
+
+    ![Definiowanie kultury, która została określona w czasie projektowania, jako kultury generowanego raportu w konstruktorze operacji ER](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Zdefiniowane w czasie wykonywania** — format wartości zgodnie z kulturę określoną w czasie wykonywania. Po wybraniu tej wartości na karcie **Mapowanie** w polu **Data, godzina i format liczby** skonfiguruj wyrażenie ER, które zwraca kod kultury dla kultury, takie jak kultura odpowiedniego odbiorcy.
+
+    ![Definiowanie kultury, która została określona w czasie wykonywania, jako kultury generowanego raportu w konstruktorze operacji ER](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> Składnik ER, dla którego definiujesz określoną kulturę, może zawierać podrzędne składniki ER, skonfigurowane do wstawienia jako wartość tekstowa. Domyślnie do formatowania wartości tych składników jest używana kultura składnika nadrzędnego. Można używać następujących wbudowanych funkcji ER do konfigurowania powiązań dla tych składników i stosowania alternatywnej kultury formatowania wartości:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> W wersji 10.0.20 i nowszych do formatowania wartości podczas [konwersji PDF](electronic-reporting-destinations.md#OutputConversionToPDF) wygenerowanego dokumentu używane są ustawienia lokalne składników formatu typu **Plik\\Common** i **Plik\\Excel**.
 
 ## <a name="translation"></a>Przeliczanie walut
 

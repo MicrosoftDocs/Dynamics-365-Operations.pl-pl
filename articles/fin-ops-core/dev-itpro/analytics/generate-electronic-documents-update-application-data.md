@@ -2,7 +2,7 @@
 title: Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji przy użyciu modułu ER
 description: Można projektować formaty raportowania elektronicznego (ER), które będą używane w aplikacji do generowania wychodzących dokumentów elektronicznych.
 author: NickSelin
-ms.date: 11/01/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 863c69446e9a7d447847483ec129788e85a8fd58
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5f66a173c7d66f915a7802e42caf1a36f661eea1
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750041"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944324"
 ---
 # <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Generowanie dokumentów elektronicznych i aktualizowanie danych aplikacji przy użyciu raportowania elektronicznego (ER)
 
@@ -35,9 +35,9 @@ Dzięki tej funkcjonalności jeden format ER może służyć do generowania wych
 
 Aby dowiedzieć się więcej o tej funkcji, odtwórz przewodniki po zadaniach ER Generowanie dokumentów z aktualizacją danych aplikacji (część 7.5.4.3 procesu biznesowego Nabywanie/opracowywanie składników usług/rozwiązań informatycznych (10677)), które prowadzą przez kolejne etapy procesu sprawozdawczości i archiwizacji Intrastat. Następujące pliki są wymagane do wykonania pewnych kroków w tych przewodnikach po zadaniach. Pobierz i zapisz te pliki na swoim lokalnym komputerze.
 
-- [Konfiguracja modelu danych ER: Intrastat (model)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [Konfiguracja mapowania modelu ER: Intrastat (mapowanie)](https://go.microsoft.com/fwlink/?linkid=849038)
-- [Konfiguracja formatu ER: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+- [Konfiguracja modelu danych ER: Intrastat (model)](https://download.microsoft.com/download/9/c/e/9ceeacbe-c13e-422e-96f2-594c4a6b45b7/Intrastatmodel.xml)
+- [Konfiguracja mapowania modelu ER: Intrastat (mapowanie)](https://download.microsoft.com/download/2/1/d/21ddaaeb-64c5-4408-a35f-1ccb922d40a4/Intrastatmapping.xml)
+- [Konfiguracja formatu ER: Intrastat (format)](https://download.microsoft.com/download/8/b/b/8bbb8891-e88d-4739-b92a-2d1d2fffcb79/Intrastatformat.xml)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

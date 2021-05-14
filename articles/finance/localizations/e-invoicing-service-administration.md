@@ -2,7 +2,7 @@
 title: Składniki administracyjne fakturowania elektronicznego
 description: Ten temat zawiera informacje o składnikach związanych z administrowaniem Fakturowaniem elektronicznym.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840035"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963198"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Składniki administracyjne fakturowania elektronicznego
 
@@ -31,7 +31,7 @@ Ten temat zawiera informacje o składnikach związanych z administrowaniem Faktu
 
 ## <a name="azure"></a>Azure
 
-Użyj Microsoft Azure, aby utworzyć wpisy tajne dla magazynu kluczy i konta magazynu. Następnie użyj tej funkcji w konfiguracji funkcji Fakturowanie elektroniczne.
+Użyj Microsoft Azure, aby utworzyć wpisy tajne dla Key Vault i konta magazynu. Następnie użyj tej funkcji w konfiguracji funkcji Fakturowanie elektroniczne.
 
 ## <a name="lifecycle-services"></a>Usługa Lifecycle Services
 
@@ -85,12 +85,14 @@ Klienci mogą tworzyć dowolną liczbę środowisk usługowych. Wszystkie środo
 Usługa Fakturowanie elektroniczne jest odpowiedzialna za przechowywanie wszystkich danych biznesowych w zasobach platformy Azure należących do Twojej firmy. Aby upewnić się, że usługa działa poprawnie i że wszystkie dane biznesowe, które są potrzebne i generowane przez Faktury elektroniczne, są dostępne tylko dla tego dodatku, musisz utworzyć dwa główne zasoby platformy Azure:
 
 - Konto magazynu systemu Azure (magazyn obiektów BLOB) do przechowywania faktur elektronicznych
-- Magazyn kluczy platformy Azure, w którym będą przechowywane certyfikaty i jednolity identyfikator zasobów (URI) konta magazynu
+- Magazyn Azure Key Vault, w którym będą przechowywane certyfikaty i jednolity identyfikator zasobów (URI) konta magazynu
 
-> [!NOTE]
-> Dedykowany magazyn kluczy i konto magazynu klienta muszą być przydzielone specjalnie do użytku z Fakturowaniem elektronicznym.
 
-Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i magazyn kluczy](e-invoicing-create-azure-storage-account-key-vault.md).
+Dedykowany magazyn Key Vault i konto magazynu klienta muszą być przydzielone specjalnie do użytku z Fakturowaniem elektronicznym. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Aby monitorować kondycję magazynu Key Vault i odbierać alerty, skonfiguruj monitor Azure dla magazynu Key Vault. Włączenie rejestrowania magazynu Key Vault umożliwia monitorowanie, jak, kiedy i kto uzyskuje dostęp do magazynów Key Vault. Aby uzyskać więcej informacji, zobacz temat [Monitorowanie i alerty Azure Key Vault](/azure/key-vault/general/alert) i [Włączanie rejestrowania magazynu Key Vault](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Dobrą praktyką jest rotacja wpisów tajnych. Aby uzyskać więcej informacji, zapoznaj się z [dokumentacją wpisów tajnych](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Użytkownicy
 

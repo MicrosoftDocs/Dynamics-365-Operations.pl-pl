@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d910b89330865b0bcf3f6cd05b761506f339a45f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b51e4b4d00da2babb5128d8c4c22139b0c1853d4
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841678"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920736"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Tworzenie planu materiałów dla produktów towarzyszących
 
@@ -26,88 +26,88 @@ ms.locfileid: "5841678"
 
 Planista produkcji planuje zapotrzebowania materiałowe na zapasy, które są produktami towarzyszącymi formuły. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USP2.
 
-
 ## <a name="create-requirement-for-a-co-product"></a>Tworzenie zapotrzebowania na produkt towarzyszący
-1. Przejdź do domyślnego pulpitu nawigacyjnego.
-2. Kliknij opcję Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania.
-3. Kliknij przycisk Nowy.
-4. Kliknij opcję zamówienie sprzedaży.
-5. W polu Konto odbiorcy wpisz wartość.
+
+1. Przejdź do lokalizacji **Sprzedaż i marketing \> Obszary robocze \> Przetwarzanie zamówienia sprzedaży i zapytania o nie**.
+1. Wybierz pozycję **Nowy**.
+1. Wybierz opcję **Zamówienie sprzedaży**.
+1. W polu **Konto odbiorcy** wpisz wartość.
     * Przykład: US-001  
-6. Kliknij przycisk OK.
-7. W polu Numer towaru wpisz wartość.
+1. Kliknij przycisk **OK**.
+1. W polu **Numer towaru** wpisz wartość.
     * Przykład: P6003  
-8. Wprowadź liczbę w polu Ilość.
+1. W polu **Ilość** wpisz liczbę.
     * Przykład: 50000  
-9. Kliknij przycisk Zapisz.
+1. Wybierz opcję **Zapisz**.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Tworzenie planu materiałów dla produktów towarzyszących
+
 1. Zamknij stronę.
-2. Zamknij stronę.
-3. Kliknij opcję Planowanie główne.
-4. W polu Plan kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-5. Na liście kliknij łącze w wybranym wierszu.
+1. Zamknij stronę.
+1. Wybierz opcję **Planowanie główne**.
+1. W polu **Plan** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+1. Na liście wybierz łącze w wybranym wierszu.
     * Przykład: Plan główny  
-6. Kliknij przycisk Uruchom.
-7. Rozwiń lub zwiń sekcję Rekordy do uwzględnienia.
-8. Kliknij przycisk Filtr.
-9. Na liście zaznacz wiersz, gdzie Pole = Numer towaru.
-10. W polu Kryteria wpisz wartość.
+1. Wybierz opcję **Uruchom**.
+1. Rozwiń lub zwiń sekcję **Rekordy do uwzględnienia**.
+1. Wybierz **Filtry**.
+1. Na liście zaznacz wiersz, gdzie **Pole** = *Numer towaru*.
+1. W polu **Kryteria** wpisz wartość.
     * Przykład: P6003  
-11. Kliknij przycisk OK.
-12. Kliknij przycisk OK.
-13. Kliknij opcję Zamówienia planowane.
-14. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Numer towaru z wartością „6000”.
+1. Kliknij przycisk **OK**.
+1. Kliknij przycisk **OK**.
+1. Wybierz **Zamówienia planowane**.
+1. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład ustaw filtr na pole **Numer towaru** z wartością 'P6000'.
     * Wyfiltruj według towaru formuły będącego produktem towarzyszącym towaru, dla którego utworzono zamówienie sprzedaży.  
-15. Na liście oznacz wybrany wiersz.
+1. Na liście oznacz wybrany wiersz.
     * Wybierz dowolny wiersz zwrócony przez filtr.  
-16. Na liście kliknij łącze w wybranym wierszu.
-17. Rozwiń lub zwiń sekcję Oznaczanie transakcji.
-18. Na liście kliknij łącze w wybranym wierszu.
+1. Na liście wybierz łącze w wybranym wierszu.
+1. Rozwiń sekcję **Oznaczanie transakcji**.
+1. Na liście wybierz łącze w wybranym wierszu.
     * Zamówienie planowane jest kojarzone z zamówieniem sprzedaży na produkt towarzyszący.  
-19. Zamknij stronę.
+1. Zamknij stronę.
 
-## <a name="create-requirement-for-a-co-product"></a>Tworzenie zapotrzebowania na produkt towarzyszący
-1. Przejdź do domyślnego pulpitu nawigacyjnego.
-2. Kliknij opcję Przetwarzanie zamówienia sprzedaży i dotyczące go zapytania.
-3. Kliknij przycisk Nowy.
-4. Kliknij opcję zamówienie sprzedaży.
-5. W polu Konto odbiorcy wpisz wartość.
+## <a name="create-a-second-requirement-for-a-co-product"></a>Tworzenie drugiego zapotrzebowania na produkt towarzyszący
+
+1. Przejdź do lokalizacji **Sprzedaż i marketing \> Obszary robocze \> Przetwarzanie zamówienia sprzedaży i zapytania o nie**.
+1. Wybierz pozycję **Nowy**.
+1. Wybierz opcję **Zamówienie sprzedaży**.
+1. W polu **Konto odbiorcy** wpisz wartość.
     * Przykład: US-001  
-6. Kliknij przycisk OK.
-7. W polu Numer towaru wpisz wartość.
+1. Kliknij przycisk **OK**.
+1. W polu **Numer towaru** wpisz wartość.
     * Przykład: P6003  
-8. Wprowadź liczbę w polu Ilość.
+1. W polu **Ilość** wpisz liczbę.
     * Przykład: 50000  
-9. Kliknij przycisk Zapisz.
+1. Wybierz opcję **Zapisz**.
 
-## <a name="create-a-material-plan-for-co-products"></a>Tworzenie planu materiałów dla produktów towarzyszących
-1. W polu Plan kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
-2. Na liście kliknij łącze w wybranym wierszu.
+## <a name="create-a-second-material-plan-for-co-products"></a>Tworzenie drugiego planu materiałów dla produktów towarzyszących
+
+1. W polu **Plan** wybierz przycisk rozwijany, aby otworzyć wyszukiwanie.
+2. Na liście wybierz łącze w wybranym wierszu.
     * Przykład: Plan główny  
-3. Kliknij przycisk Uruchom.
-4. Rozwiń lub zwiń sekcję Rekordy do uwzględnienia.
-5. Kliknij przycisk Filtr.
-6. Na liście zaznacz wiersz, gdzie Pole = Numer towaru.
-7. W polu Kryteria wpisz wartość.
+3. Wybierz opcję **Uruchom**.
+4. Rozwiń lub zwiń sekcję **Rekordy do uwzględnienia**.
+5. Wybierz **Filtry**.
+6. Na liście zaznacz wiersz, gdzie **Pole** = *Numer towaru*.
+7. W polu *Kryteria* wpisz wartość.
     * Przykład: P6003  
-8. Kliknij przycisk OK.
-9. Kliknij przycisk OK.
-10. Kliknij opcję Zamówienia planowane.
-11. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Numer towaru z wartością „6000”.
+8. Kliknij przycisk **OK**.
+9. Kliknij przycisk **OK**.
+10. Wybierz **Zamówienia planowane**.
+11. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład ustaw filtr na pole **Numer towaru** z wartością 'P6000'.
     * Wyfiltruj według towaru formuły będącego produktem towarzyszącym towaru, dla którego utworzono zamówienie sprzedaży.  
 12. Na liście oznacz wybrany wiersz.
     * Wybierz dowolny wiersz zwrócony przez filtr.  
-13. Na liście kliknij łącze w wybranym wierszu.
-14. Rozwiń lub zwiń sekcję Oznaczanie transakcji.
-15. Na liście kliknij łącze w wybranym wierszu.
+13. Na liście wybierz łącze w wybranym wierszu.
+14. Rozwiń lub zwiń sekcję **Oznaczanie transakcji**.
+15. Na liście wybierz łącze w wybranym wierszu.
     * Zamówienie planowane jest kojarzone z zamówieniem sprzedaży na produkt towarzyszący.  
 16. Zamknij stronę.
-17. Kliknij opcję Planowanie główne.
-18. Wybierz kolejno opcje Planowanie główne > Ustawienia > Parametry planowania głównego.
-19. W polu Wyłącz wszystkie procesy planowania wybierz opcję Nie.
+17. Wybierz opcję **Planowanie główne**.
+18. Wybierz kolejno opcje **Planowanie główne \> Ustawienia \> Parametry planowania głównego**.
+19. W polu **Wyłącz wszystkie procesy planowania** wybierz opcję *Nie*.
 20. Zamknij stronę.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

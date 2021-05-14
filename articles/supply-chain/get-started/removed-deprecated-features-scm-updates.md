@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia w Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 12/07/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909654"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947551"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Supply Chain Management
 
@@ -32,6 +32,19 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 > [!NOTE]
 > Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.19
+
+### <a name="job-card-device"></a>Urządzenie karty zadań
+
+|   |   |
+|---|---|
+| **Przyczyna wycofania/usunięcia** | [Urządzenie karty zadań](../production-control/config-job-card-device.md) jest zastępowane przez nowy [interfejs wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md). |
+| **Zamieniona przez inną funkcję?**   | Tak, [urządzenie karty zadań](../production-control/config-job-card-device.md) zostanie zastąpione przez nowy [interfejs wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md). |
+| **Powiązane obszary produktów** | Supply Chain Management — kontrola produkcji |
+| **Opcja wdrażania** | Wdrożenie w chmurze i lokalne |
+| **Stan** | Wycofane. Urządzenie karty zadań będzie objęte pomocą techniczną z poprawkami usterki i zabezpieczeń, ale udoskonalenia funkcji nie będą już dostarczane. Po kwietniu 2022 r. urządzenie karty zadań nie będzie już obsługiwane, a klienci zostaną poproszeni o przejście na nowy interfejs wykonywania hal produkcyjnych. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Supply Chain Management 10.0.18
 

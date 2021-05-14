@@ -2,7 +2,7 @@
 title: Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 description: Ten temat przedstawia proces konfigurowania deklaracji VAT z ewidencjami (zwanej także JPK_V7M, VDEK) w Polsce.
 author: liza-golub
-ms.date: 11/18/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 3f27daccb1a1883c3bad04d0fafe977b0c0fcbaa
-ms.sourcegitcommit: 66dd0268aea4e1353f7efd74e226de24fa56f56c
+ms.openlocfilehash: c00147fac6e698348ab601470a40b1b0de84b79a
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "5608602"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960037"
 ---
 # <a name="vat-declaration-with-registers-jpk_v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 
@@ -56,7 +56,7 @@ Poniższe zadania przygotowują Dynamics 365 Finance do raportowania JPK_V7M:
 
 Aby przygotować moduł Finance na potrzeby raportowania JPK_V7M, należy zaimportować następujące wersje lub nowsze wersje konfiguracji ER.
 
-| **Nazwa konfiguracji ER**         | **Typ**           | **Opis**                                                                                                 |
+| Nazwa konfiguracji ER             | Typ               | opis                                                                                                 |
 |-----------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------|
 | Standardowy plik audytu (SAF-T)       | Model              | Wspólny model ER dla jednolitych plików kontrolnych.                                                                   |
 | Mapowanie modelu jednolitego pliku kontrolnego | Mapowanie modelu      | Mapowanie modelu definiujące źródła danych dla raportów polskiego jednolitego pliku kontrolnego (JPK).                       |
@@ -78,7 +78,7 @@ W zależności od danych transakcji podatkowych wartości niektórych elementów
 
 Format zawiera następujące pola wyszukiwania konfiguracji:
 
-| **Imię i nazwisko**                      | **Opis**                                                                                                                                                                                                                                                                                         | **Wpływ**                                                                                                                                                                                       |
+| Imię i nazwisko                      | opis                                                                                                                                                                                                                                                                                         | Wpływ                                                                                                                                                                                       |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ImportSelector                | Oznaczenie, które jest związane z podatkiem naliczonym od przywozu towarów, w tym towarów opodatkowanych zgodnie z artykułem 33a ustawy o VAT                                                                                                                                                            | To pole wyszukiwania służy do definiowania wartości markera **IMP** dla dokumentów zakupu.                                                                                                      |
 | ProceduralMarkingsSelector    | Oznaczenia związane z procedurami                                                                                                                                                                                                                                                         | To pole wyszukiwania służy do definiowania wartości następujących markerów dokumentów sprzedaży: **SW**, **EE**, **TP**, **TT-WNT**, **TT_D**, **I_42**, **I_63**, **B_SPV**, and **B_SPV_DOSTAWA**. |
@@ -90,7 +90,7 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 | PurchaseDocumentTypesSelector | Oznaczenie typu dokumentu zakupu                                                                                                                                                                                                                                                      | To pole wyszukiwania służy do definiowania typów dokumentu zakupu **MK**, **VAT_RR** i **WEW**.                                                                                                 |
 
 1. W obszarze roboczym **raportowanie elektroniczne** wybierz kafelek **konfiguracje raportowania**.
-2. Na stronie **Konfiguracje** rozwiń węzeł **Jednolity plik kontrolny (SAF-T)** i wybierz opcję **Format XML JPK-V7M (PL)**.
+2. Na stronie **Konfiguracje** rozwiń węzeł **Standardowy plik audytu (SAF-T)** i wybierz opcję **Format XML JPK-V7M (PL)**.
 3. W okienku akcji na karcie **Konfiguracje** w grupie **Parametry specyficzne dla aplikacji** wybierz opcję **Konfiguracja**.
 
     ![Grupa parametrów specyficznych dla aplikacji](media/setup-app-spec-params.jpg)
@@ -104,8 +104,7 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 
 #### <a name="import-transactions-importtransaction"></a>Transakcje importowe (ImportTransaction)
 
-
-| **Imię i nazwisko**          | **Etykieta (EN)** | **Etykieta (PL)** | **Opis (EN)**                                                                                                                         | **Opis (PL)**                                                                                                            |
+| Imię i nazwisko          | Etykieta (EN) | Etykieta (PL) | Opis (EN)                                                                                                                         | Opis (PL)                                                                                                            |
 |-------------------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | ImportTransaction | Import         | Import         | Oznaczenie, które jest związane z podatkiem naliczonym od przywozu towarów, w tym towarów opodatkowanych zgodnie z artykułem 33a ustawy o VAT | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 
@@ -120,17 +119,17 @@ Zdefiniuj warunki na podstawie głównych źródeł danych bieżącej firmy, aby
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **ImportTransaction**.
 
-| **Imię i nazwisko** | **Etykieta (EN)** | &nbsp;  | **Etykieta (PL)** | **Opis (EN)**                                                                                                                         | **Opis (PL)**                                                                                                            |
-|----------|----------------|---|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Import   | Import         |   | Import         | Oznaczenie, które jest związane z podatkiem naliczonym od przywozu towarów, w tym towarów opodatkowanych zgodnie z artykułem 33a ustawy o VAT | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
-| Inne     | Inna          |   |                |                                                                                                                                              |                                                                                                                                 |
+| Imię i nazwisko | Etykieta (EN) | Etykieta (PL) | Opis (EN)                                                                                                                         | Opis (PL)                                                                                                            |
+|----------|----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| Import   | Import         | Import         | Oznaczenie, które jest związane z podatkiem naliczonym od przywozu towarów, w tym towarów opodatkowanych zgodnie z artykułem 33a ustawy o VAT | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
+| Inne     | Inna          |                |                                                                                                                                              |                                                                                                                                 |
 
 > [!NOTE]
 > Należy pamiętać, że należy dodać **Inne** (**Inne**), które muszą zbierać dane z innych przypadków jako ostatni element na liście. Wartość **Wiersz** musi być ostatnią wartością w tabeli. W kolumnie **Kod podatku** dla wyniku wyszukiwania **Inne** wybierz **\*Niepuste\***.
 
 #### <a name="procedural-markings-proceduralmarkingsselector"></a>Oznaczenia dotyczące procedur (ProceduralMarkingsSelector)
 
-| **Imię i nazwisko**                   | **Etykieta (EN)**      | **Etykieta (PL)**                | **Opis (EN)**                            | **Opis (PL)**          |
+| Imię i nazwisko                   | Etykieta (EN)      | Etykieta (PL)                | Opis (EN)                            | Opis (PL)          |
 |----------------------------|---------------------|-------------------------------|-------------------------------------------------|-------------------------------|
 | ProceduralMarkingsSelector | Oznaczenia dotyczące procedur | Oznaczenia dotyczące procedur | Oznaczenia związane z procedurami | Oznaczenia dotyczące procedur |
 
@@ -140,12 +139,14 @@ W przypadku tego pola wyszukiwania dostępne są następujące główne źródł
 - Grupa podatków
 - Identyfikator konta odbiorcy
 - Grupa odbiorców
+- Identyfikator konta dostawcy (na podstawie KB4615826)
+- Grupa dostawców (na podstawie KB4615826)
 
 To pole wyszukiwania definiuje warunki oparte na głównych źródłach danych bieżącej firmy. Warunki te dają w wyniku marker **1** dla odpowiadającego mu elementu z listy oznaczeń, które są związane z procedurami pod tagiem **\<SprzedazWiersz\>**. Można zaznaczyć więcej niż jedno oznaczenie dla tego samego rekordu należnego podatku VAT. Dlatego, jeśli firma musi zgłosić odmienne oznaczenia, muszą być zdefiniowane odrębne warunki.
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **ProceduralMarkingsSelector**.
 
-| **Imię i nazwisko**       | **Etykieta (EN)**                                                                                            | **Etykieta (PL)**                                                         | **Opis (EN)**                                                                                                                                                                                         | **Opis (PL)**                                                                                                                                                                               |
+| Imię i nazwisko       | Etykieta (EN)                                                                                            | Etykieta (PL)                                                         | Opis (EN)                                                                                                                                                                                         | Opis (PL)                                                                                                                                                                               |
 |----------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SW             | Sprzedaż wysyłkowa                                                                                           | Sprzedaży wysyłkowej                                                   | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy o VAT                                                                                         | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy                                                                                                           |
 | EE             | Telekomunikacja                                                                                        | Usługi telekomunikacyjne                                              | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy o VAT                                                                                | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy                                                                                              |
@@ -164,8 +165,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **Procedu
 
 #### <a name="goods-and-services-supplying-types-servicedeliveryselector"></a>Typy dostawy towarów i usług (ServiceDeliverySelector)
 
-
-| **Imię i nazwisko**                | **Etykieta (EN)**                     | **Etykieta (PL)**              | **Opis (EN)**                                                   | **Opis (PL)**                             |
+| Imię i nazwisko                | Etykieta (EN)                     | Etykieta (PL)              | Opis (EN)                                                   | Opis (PL)                             |
 |-------------------------|------------------------------------|-----------------------------|------------------------------------------------------------------------|--------------------------------------------------|
 | ServiceDeliverySelector | Dostawy i świadczenia usług | Dostawy I świadczenia usług | Wskaźnik związany z dostawą i świadczeniem usług | Oznaczenie dotyczące dostawy i świadczenia usług |
 
@@ -180,7 +180,7 @@ To pole wyszukiwania definiuje warunki oparte na głównych źródłach danych b
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **ServiceDeliverySelector**.
 
-| **Imię i nazwisko** | **Etykieta (EN)**                                      | **Etykieta (PL)**                                      | **Opis (EN)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Opis (PL)**                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Imię i nazwisko | Etykieta (EN)                                      | Etykieta (PL)                                      | Opis (EN)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Opis (PL)                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------|-----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | GTU_01   | Dostawa napojów alkoholowych                       | Dostawa napojów alkoholowych                        | Dostawa napojów alkoholowych - alkoholu etylowego, piwa, wina, napojów fermentowanych i wyrobów pośrednich, w rozumieniu przepisów o podatku akcyzowym                                                                                                                                                                                                                                                                                                                          | Dostawa napojów alkoholowych - alkoholu etylowego, piwa, wina, napojów fermentowanych i wyrobów pośrednich, w rozumieniu przepisów o podatku akcyzowym                                                                                                                                                                                                                                                                                      |
 | GTU_02   | Dostawa towarów, o których mowa w art. 103, poz. 5aa | Dostawa towarów, o których mowa w art. 103 ust. 5aa | Dostawa towarów, o których mowa w art. 103, poz. 5aa ustawy o VAT                                                                                                                                                                                                                                                                                                                                                                                                           | Dostawa towarów, o których mowa w art. 103 ust. 5aa ustawy                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -202,7 +202,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **Service
 
 #### <a name="declaration-markers-declarationmarkersselector"></a>Markery deklaracji (DeclarationMarkersSelector)
 
-| **Imię i nazwisko**                   | **Etykieta (EN)**      | **Etykieta (PL)**     | **Opis (EN)**                                   | **Opis (PL)**                                     |
+| Imię i nazwisko                   | Etykieta (EN)      | Etykieta (PL)     | Opis (EN)                                   | Opis (PL)                                     |
 |----------------------------|---------------------|--------------------|--------------------------------------------------------|----------------------------------------------------------|
 | DeclarationMarkersSelector | Markery deklaracji | Markery deklaracji | Markery z części deklaracji dla transakcji podatkowych | Znaczniki z części deklaracji dla transakcji podatkowych |
 
@@ -220,7 +220,7 @@ To pole wyszukiwania definiuje warunki oparte na głównych źródłach danych b
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **DeclarationMarkersSelector**.
 
-| **Imię i nazwisko** | **Etykieta (EN)**                               | **Etykieta (PL)**                             | **Opis (EN)**                                                                                                                                               | **Opis (PL)**                                                                     |
+| Imię i nazwisko | Etykieta (EN)                               | Etykieta (PL)                             | Opis (EN)                                                                                                                                               | Opis (PL)                                                                     |
 |----------|----------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | P_65     | Czynności, o których mowa w art. 122 | Czynności o których mowa w art. 122 ustawy | Podatnik wykonywał w okresie rozliczeniowym czynności, o których mowa w art. 122 ustawy o VAT. Zwolnienie z podatku dostawy, importu i zakupu złota inwestycyjnego | Podatnik wykonywał w okresie rozliczeniowym czynności, o których mowa w art. 122 ustawy  |
 | P_65     | Obniżenie kwoty zobowiązania podatkowego                      | Obniżenie kwoty zobowiązania podatkowego   | Podatnik korzysta z obniżenia zobowiązania podatkowego, o którym mowa w art. 108d ustawy o VAT                                                   | Podatnik korzysta z obniżenia zobowiązania podatkowego, o którym mowa w art. 108d ustawy |
@@ -231,7 +231,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania dla **DeclarationMarkersSe
 
 #### <a name="input-vat--margin-zakupvat_marzaselector"></a>Naliczony podatek VAT — marża (ZakupVAT_MarzaSelector)
 
-| **Imię i nazwisko**               | **Etykieta (EN)**      | **Etykieta (PL)**      | **Opis (EN)**                                                                                                                                                                                                                                                                                    | **Opis (PL)**                                                                                                                                                                                                                                                     |
+| Imię i nazwisko               | Etykieta (EN)      | Etykieta (PL)      | Opis (EN)                                                                                                                                                                                                                                                                                    | Opis (PL)                                                                                                                                                                                                                                                     |
 |------------------------|---------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZakupVAT_MarzaSelector | Markery deklaracji | Podatek VAT — marża | Kwota zakupu towarów i usług od innych podatników na bezpośrednią korzyść turystów oraz ilość towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków związanych ze sprzedażą, które są opodatkowane na podstawie marży, zgodnie z artykułem 120 ustawy o VAT | Kwota nabycia towarów i usług nabytych od innych podatników dla bezpośredniej korzyści turysty, a także nabycia towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków związanych ze sprzedażą opodatkowaną na zasadzie marży zgodnie z art. 120 ustawy |
 
@@ -244,7 +244,7 @@ To pole wyszukiwania umożliwia zdefiniowanie różnych warunków poboru kwot, k
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **ZakupVAT_MarzaSelector**.
 
-| **Imię i nazwisko**       | **Etykieta (EN)**     | **Etykieta (PL)**      | **Opis (EN)**                                                                                                                                                                                                                                                                                    | **Opis (PL)**                                                                                                                                                                                                                                                     |
+| Imię i nazwisko       | Etykieta (EN)     | Etykieta (PL)      | Opis (EN)                                                                                                                                                                                                                                                                                    | Opis (PL)                                                                                                                                                                                                                                                     |
 |----------------|--------------------|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ZakupVAT_Marza | Naliczony podatek VAT — marża | Podatek VAT — marża | Kwota zakupu towarów i usług od innych podatników na bezpośrednią korzyść turystów oraz ilość towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków związanych ze sprzedażą, które są opodatkowane na podstawie marży, zgodnie z artykułem 120 ustawy o VAT | Kwota nabycia towarów i usług nabytych od innych podatników dla bezpośredniej korzyści turysty, a także nabycia towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków związanych ze sprzedażą opodatkowaną na zasadzie marży zgodnie z art. 120 ustawy |
 
@@ -253,7 +253,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania dla **ZakupVAT_MarzaSelect
 
 #### <a name="document-types-for-sales-salesdocumenttypesselector"></a>Typy dokumentów dla sprzedaży (SalesDocumentTypesSelector)
 
-| **Imię i nazwisko**                   | **Etykieta (EN)** | **Etykieta (PL)** | **Opis (EN)**                            | **Opis (PL)**        |
+| Imię i nazwisko                       | Etykieta (EN)     | Etykieta (PL)     | Opis (EN)                                | Opis (PL)            |
 |----------------------------|----------------|----------------|-------------------------------------------------|-----------------------------|
 | SalesDocumentTypesSelector | Typ dokumentu   | Typ dokumentu  | Oznaczenie typu dokumentu sprzedaży | Oznaczenie dowodu sprzedaży |
 
@@ -267,7 +267,7 @@ W przypadku tego pola wyszukiwania dostępne są następujące główne źródł
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **SalesDocumentTypesSelector**.
 
-| **Imię i nazwisko** | **Etykieta (EN)**                                                   | **Etykieta (PL)**                                   | **Opis (EN)**                                                                              | **Opis (PL)**                                                   |
+| Imię i nazwisko | Etykieta (EN)                                                   | Etykieta (PL)                                   | Opis (EN)                                                                              | Opis (PL)                                                   |
 |----------|------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | FP       | Faktura, o której mowa w art. 109, ust. 3d | Faktura, o której mowa w art. 109 ust. 3d ustawy | Faktura, o której mowa w art. 109, ust. 3d ustawy o VAT | Faktura, o której mowa w art. 109 ust. 3d ustawy                       |
 | RO       | Dokument zbiorczy wewnętrzny                                        | Dokument zbiorczy wewnętrzny                     | Dokument zbiorczy wewnętrzny zawierający sprzedaż z kas rejestrujących                              | Dokument zbiorczy wewnętrzny zawierający sprzedaż z kas rejestrujących |
@@ -281,7 +281,7 @@ Aby uzyskać więcej informacji dotyczących sposobu raportowania typów dokumen
 
 #### <a name="output-vat--margin-sprzedazvat_marzaselector"></a>Należny podatek VAT — marża (SprzedazVAT_MarzaSelector)
 
-| **Imię i nazwisko**                  | **Etykieta (EN)**      | **Etykieta (PL)**      | **Opis (EN)**                                                                                                                                | **Opis (PL)**                                                                                                               |
+| Imię i nazwisko                  | Etykieta (EN)      | Etykieta (PL)      | Opis (EN)                                                                                                                                | Opis (PL)                                                                                                               |
 |---------------------------|---------------------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | SprzedazVAT_MarzaSelector | Należny podatek VAT — marża | VAT należny — marża | Wartość sprzedaży brutto dostaw towarów i usług, które są opodatkowane na podstawie marży, zgodnie z artykułami 119 i 120 ustawy o podatku VAT | Wartość sprzedaży brutto dostawy towarów i świadczenia usług opodatkowanych na zasadach marży zgodnie z art. 119 i art. 120 ustawy |
 
@@ -294,7 +294,7 @@ To pole wyszukiwania umożliwia definiowanie różnych warunków w celu raportow
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **SprzedazVAT_MarzaSelector**.
 
-| **Imię i nazwisko** | **Etykieta (EN)**                                    | **Etykieta (PL)**                                 | **Opis (EN)**                                                                                                                                           | **Opis (PL)**                                                                                                                      |
+| Imię i nazwisko | Etykieta (EN)                                    | Etykieta (PL)                                 | Opis (EN)                                                                                                                                           | Opis (PL)                                                                                                                      |
 |----------|---------------------------------------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | MR_T     | Usług turystyki opodatkowane na zasadach marży | Usług turystyki opodatkowane na zasadach marży | Świadczenie usług turystyki opodatkowane na zasadach marży zgodnie z art. 119 ustawy o VAT                                              | Świadczenie usług turystyki opodatkowane na zasadach marży zgodnie z art. 119 ustawy                                                      |
 | MR_UZ    | Dostawa towarów używanych, dzieł sztuki i antyków              | Dostawa towarów używanych, dzieł sztuki i antyków       | Dostawa towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, opodatkowana na zasadach marży zgodnie z art. 120 ustawy o VAT | Dostawa towarów używanych, dzieł sztuki, przedmiotów kolekcjonerskich i antyków, opodatkowana na zasadach marży zgodnie z art. 120 ustawy |
@@ -305,7 +305,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania dla **SprzedazVAT_MarzaSel
 
 #### <a name="document-types-for-purchases-purchasedocumenttypesselector"></a>Typy dokumentów dla zakupów (PurchaseDocumentTypesSelector)
 
-| **Imię i nazwisko**                      | **Etykieta (EN)**        | **Etykieta (PL)**  | **Opis (EN)**                               | **Opis (PL)**     |
+| Imię i nazwisko                      | Etykieta (EN)        | Etykieta (PL)  | Opis (EN)                               | Opis (PL)     |
 |-------------------------------|-----------------------|-----------------|----------------------------------------------------|--------------------------|
 | PurchaseDocumentTypesSelector | Typ faktury zakupu | Dokument zakupu | Oznaczenie typu dokumentu zakupu | Oznaczenie dowodu zakupu |
 
@@ -321,7 +321,7 @@ To pole wyszukiwania wyznacza kombinację kodu podatku (**Kod podatku**), identy
 
 W poniższej tabeli przedstawiono wyniki wyszukiwania dla **PurchaseDocumentTypesSelector**.
 
-| **Imię i nazwisko** | **Etykieta (EN)**                             | **Etykieta (PL)**          | **Opis (EN)**                                                                                                                                                          | **Opis (PL)**                                                                                                                  |
+| Imię i nazwisko | Etykieta (EN)                             | Etykieta (PL)          | Opis (EN)                                                                                                                                                          | Opis (PL)                                                                                                                  |
 |----------|--------------------------------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | MK       | Faktura, o której mowa w art. 21  | Faktura art. 21         | Faktura wystawiona przez podatnika będącego dostawcą lub usługodawcą, który wybrał metodę kasową rozliczeń określoną w art. 21 ustawy o VAT | Faktura wystawiona przez podatnika będącego dostawcą lub usługodawcą, który wybrał metodę kasową rozliczeń określoną w art. 21 ustawy |
 | VAT_RR   | Faktura, o której mowa w art. 116 | Faktura VAT RR, art. 116 | Faktura VAT RR, o której mowa w art. 116 ustawy o VAT                                                                                                             | Faktura VAT RR, o której mowa w art. 116 ustawy                                                                                       |
@@ -348,11 +348,11 @@ Aby uzyskać więcej informacji o zarządzaniu danymi, zobacz [Zarządzanie dany
 
 Teraz musisz zaimportować dane z pliku PL JPK_V7M EM setup.zip do wybranej firmy.
 
-1. W obszarze roboczym **Zarządzanie danymi** wybierz opcję **Import**, w polu **Format danych źródłowych** wybierz opcję **Pakiet** i utwórz nowy projekt importowania, naciskając przycisk Nowy w okienku akcji.
-2. Kliknij przycisk Dodaj plik na skróconej karcie Wybierz jednostki.
+1. W obszarze roboczym **Zarządzanie danymi** wybierz opcję **Import**, w polu **Format danych źródłowych** wybierz opcję **Pakiet** i utwórz nowy projekt importowania, naciskając przycisk **Nowy** w okienku akcji.
+2. Na skróconej karcie **Wybierz jednostki** wybierz pozycję **Dodaj plik**.
 3. Wybierz **Przekaż i dodaj**, wybierz plik **PL JPK_V7M EM setup**.**zip** na komputerze i przekaż go.
-4. Kliknij przycisk Zamknij, gdy jednostki z pakietu zostaną wyszczególnione na liście w siatce.
-5. Kliknij przycisk Importuj w okienku akcji, aby rozpocząć importowanie danych z jednostek danych.
+4. Kliknij przycisk **Zamknij**, gdy jednostki z pakietu zostaną wyszczególnione na liście w siatce.
+5. Kliknij przycisk **Importuj** w okienku akcji, aby rozpocząć importowanie danych z jednostek danych.
 
     ![Strona ustawień EM PL JPK_V7M](media/import-data-entities.jpg)
 
@@ -382,6 +382,8 @@ Podczas przetwarzania JPK_V7M używana jest klasa wykonywalna **EMGenerateJPKVDE
 
 W oknie dialogowym klasy wykonywalnej grupa parametrów **Oznaczenie sprzedaży właściwe dla sprzedaży detalicznej** jest używana w scenariuszach właściwych dla sprzedaży detalicznej. Aby uzyskać więcej informacji dotyczących sposobu raportowania typów dokumentów **RO** i **FP** dla operacji handlu detalicznego, zapoznaj się z sekcją „Raportowanie typów dokumentów RO i FP dla operacji handlu detalicznego” w dalszej części tego tematu.
 
+Okno dialogowe dla klasy wykonywalnej zawiera parametr **Uwzględnij kody daty raportu VAT**. Ten parametr służy do zbierania transakcji VAT w raporcie na podstawie reguł, które definiujesz w kodach daty raportu VAT. Ten parametr nie ma wpływu na transakcje specyficzne dla sieci sprzedaży, które będą zgłaszane jako typ dokumentu **FP**. Aby uzyskać więcej informacji o funkcji kodów daty raportu VAT, zobacz temat [Ustawianie kodów daty raportu VAT](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
+
 ### <a name="set-up-security-roles-for-electronic-message-processing"></a>Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych
 
 Różne grupy użytkowników mogą wymagać dostępu do przetwarzania JPK_V7M. Można ograniczyć dostęp do przetwarzania na podstawie grup zabezpieczeń zdefiniowanych w systemie.
@@ -396,7 +398,7 @@ Aby ograniczyć dostęp do przetwarzania JPK_V7M, należy wykonać następujące
 Aby wprowadzić kod urzędu w dodatkowym polu **KodUrzedu**, należy wykonać poniższe kroki.
 
 1. Przejdź do menu **Podatek** \> **Ustawienia** \> **Obsługa wiadomości elektronicznych** \> **Przetwarzanie wiadomości elektronicznych**.
-2. Wybierz Przetwarzanie **JPK-V7M**.
+2. Wybierz przetwarzanie **JPK-V7M**.
 3. Na skróconej karcie **Dodatkowe pole** wybierz dodatkowe pole **KodUrzedu**, a następnie, w polu **Wartość domyślna** określ kod urzędu, który ma być raportowany w elemencie \<**KodUrzedu**\> raportu.
 
 ## <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
@@ -418,7 +420,7 @@ Implementacja raportu JPK-V7M bazuje na tych samych kodach raportowania podatku,
 
 W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie JPK_VAT i ich mapowanie z elementami **K_\*** raportu JPK-V7M.
 
-| **Nazwa elementu** | **Opis elementu**                                                                                                                                                                                                                                                     | **Kody raportowania podatku**                                                                            |
+| Nazwa elementu | Opis elementu                                                                                                                                                                                                                                                     | Kody raportowania podatku                                                                            |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | K_10             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów oraz świadczenia usług na terytorium Polski, zwolnionych od podatku                                                                                                                                                                                 | 10302, 10402, 10502, 10602                                                                               |
 | K_11             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów oraz świadczenia usług poza terytorium Polski                                                                                                                                                                                                       | 10101, 10102, 10104, 10105, 10201, 10204                                                                 |
@@ -453,8 +455,8 @@ W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie 
 | K_43             | Wysokość podatku naliczonego przysługującego do odliczenia z podstaw określonych w art. 86 ust. 2 ustawy o VAT, na warunkach określonych w ustawie o VAT wynikająca z nabycia pozostałych towarów i usług                                                 | 20209                                                                                                    |
 | K_44             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o których mowa w art. 90a–90c oraz art. 91 ustawy o VAT, z tytułu nabycia towarów i usług zaliczanych u podatnika do środków trwałych                                 | 20116                                                                                                    |
 | K_45             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o których mowa w art. 90a–90c oraz art. 91 ustawy o VAT, z tytułu nabycia pozostałych towarów i usług                                                                         | 20216                                                                                                    |
-| K_46             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o której mowa w art. 89b ust. 1 ustawy o VAT                                                                                                                                           | 30101, 30102 **Uwaga:** w scenariuszu „zaległości” może zostać pobrana kwota z **K_43** lub **K_41**. |
-| K_47             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o której mowa w art. 89b ust. 4 ustawy o VAT                                                                                                                                           | 30201, 30202 **Uwaga:** w scenariuszu „zaległości” kwotę można zebrać dla **K_43** lub **K_41**. |
+| K_46             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o której mowa w art. 89b ust. 1 ustawy o VAT                                                                                                                                           | <p>30101, 30102</p><p>**Uwaga:** w scenariuszu „zaległości” może zostać pobrana kwota z **K_43** lub **K_41**.</p> |
+| K_47             | Wysokość podatku naliczonego wynikająca z korekt podatku naliczonego, o której mowa w art. 89b ust. 4 ustawy o VAT                                                                                                                                           | <p>30201, 30202</p><p>**Uwaga:** w scenariuszu „zaległości” może zostać pobrana kwota z **K_43** lub **K_41**.</p> |
 
 ### <a name="create-an-electronic-message-for-jpk-v7m-reporting"></a>Tworzenie wiadomości elektronicznej raportowania JPK-V7M
 
@@ -472,20 +474,23 @@ W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie 
 6. W dodatkowym polu **CelZlozenia** określ, czy przesyłany raport jest złożeniem deklaracji czy korektą. Dwie wartości są dozwolone:
 
     - **1** — to złożenie jest pierwszym złożeniem deklaracji za podany okres. Ta wartość jest wartością domyślną.
-    - **2** — to złożenie jest korektą deklaracji za podany okres.
+    - **2** — to złożenie jest poprawionym złożeniem deklaracji za podany okres.
 
-Można również określić ręczne wartości następujących elementów deklaracji.
+Można także określić wartości ręczne dla następujących dodatkowych pól, które są powiązane z elementami deklaracji.
 
-| **Imię i nazwisko** | **Opis (EN)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | **Opis (PL)**                                                                                                                                                                                                                          |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| P_39     | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji                                                                                                                                                                   |
-| P_49     | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego. Kwota wykazana w **P_49** nie może być większa niż **P_38** – **P_48**. Jeśli **P_38** – **P_48** jest mniejsze lub równe 0 (zero), należy wykazać **0**.                                                                                                                                                                                                                                                                                                                | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego                                                                                                              |
-| P_50     | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość podatku objęta zaniechaniem poboru. Wartość **P_50** nie może być większa niż **P_38** – **P_48** – **P_49**. Jeśli **P_38** – **P_48** – **P_49** jest mniejsze lub równe 0 (zero) lub większe lub równe **P_50**, należy wykazać **0**.                                                                                                                                                                                                                                                                                                                                                                                            | Wysokość podatku objęta zaniechaniem poboru                                                                                                                                                                                                   |
-| P_52     | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy. W przypadku gdy kwota **P_48** jest większa lub równa **P_38** lub kwota ulgi z tytułu zakupu kas rejestrujących jest wyższa od nadwyżki podatku należnego nad naliczonym - w **P_52** wykazuje się pozostałą kwotę ulgi z tytułu zakupu kas rejestrujących, przysługującą podatnikowi do zwrotu lub do odliczenia od podatku należnego za następne okresy rozliczeniowe. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
-| P_55     | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a ustawy o VAT: 1-tak: zwrot na rachunek VAT podatnika w terminie 25 dni.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a ustawy: 1 - tak                                                                                                                                                                        |
-| P_60     | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Zaliczenie zwrotu podatku na poczet przyszłych zobowiązań podatkowych.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych                                                                                                                                                                     |
-| P_61     | Ciąg (1..240), który musi zostać użyty, jeśli użyte jest **P_60**. Rodzaj przyszłego zobowiązania podatkowego.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Rodzaj przyszłego zobowiązania podatkowego                                                                                                                                                                                                    |
-| P_ORDZU  | Ciąg (1.. 240). Uzasadnienie przyczyn złożenia korekty zwrotu VAT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Uzasadnienie przyczyn złożenia korekty                                                                                                                                                                                                        |
+| Imię i nazwisko     | Znacznik deklaracji | Opis (EN) | Opis (PL) |
+|----------|------------------------|------------------|------------------|
+| P_39     | P_39 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
+| P_49     | P_49 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego. Kwota wykazana w **P_49** nie może być większa niż **P_38** – **P_48**. Jeśli **P_38** – **P_48** jest mniejsze lub równe 0 (zero), należy wykazać **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
+| P_50     | P_50 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość podatku objęta zaniechaniem poboru. Wartość **P_50** nie może być większa niż **P_38** – **P_48** – **P_49**. Jeśli **P_38** – **P_48** – **P_49** jest mniejsze lub równe zero (0) lub większe lub równe **P_50**, należy wykazać **0**. | Wysokość podatku objęta zaniechaniem poboru |
+| P_52     | P_52 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie i zwracana w danym okresie rozliczeniowym. Ewentualnie kwota wydana na zakup kas rejestrujących, która zwiększa kwotę podatku naliczonego do przeniesienia na następny okres rozliczeniowy. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
+| P_54     | P_54 | Kwota nadwyżki naliczonego podatku, która musi zostać zwrócona na konto wskazane przez podatnika. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
+| P_54_Powód | P_55, P_56, P_57, P_58, w zależności od wyboru użytkownika | Zwrot na konto bankowe, o którym mowa w art. 87, ust. 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), lub 5a (**P_58**) ustawy o podatku VAT. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
+| P_60     | P_60 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Zaliczenie zwrotu podatku na poczet przyszłych zobowiązań podatkowych. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
+| P_61     | P_61 | Ciąg (1..240), który musi zostać użyty, jeśli użyte jest **P_60**. Rodzaj przyszłego zobowiązania podatkowego. | Rodzaj przyszłego zobowiązania podatkowego |
+| P_ORDZU  | P_ORDZU | Ciąg (1.. 240). Uzasadnienie przyczyn złożenia korekty zwrotu VAT. | Uzasadnienie przyczyn złożenia korekty |
+
+Dodatkowe pole **P_54_Powód** jest dostępne od wersji 98.194 konfiguracji ER **JPK-V7M XML format (PL)** i wersji 98.194.50 konfiguracji ER **JPK-V7M Excel format (PL)**. Może zostać zaimportowane przy użyciu pliku **PL JPK_V7M EM setup v.5 KB4614816.zip** (wersja 5 lub nowsza pakietu encji danych zawierającego wstępnie zdefiniowaną konfiguracją elektronicznej wymiany danych).
 
 ### <a name="generate-the-jpk-v7m-report-in-excel-format-for-preview"></a>Wygeneruj raport JPK-V7M w formacie Excel do podglądu
 
@@ -560,13 +565,13 @@ Jeśli istnieje zaległa faktura dla odbiorcy, faktura, która jest wystawiana o
     - Stosowane są te same markery, które zastosowano w oryginalnej fakturze.
     - Jest stosowany marker **\<KorektaPodstawyOpodt\>**.
 
-     Ponadto kwota podstawy i kwota podatku z tej faktury (dokument wewnętrzny) są uwzględniane i zgłaszane w elementach **P_68** i **P_69** części deklaracji raportu.
+    Ponadto kwota podstawy i kwota podatku z tej faktury (dokument wewnętrzny) są uwzględniane i zgłaszane w elementach **P_68** i **P_69** części deklaracji raportu.
 
 3. Jeśli faktura zostanie zaksięgowana po wystąpieniu obu etapów 1 i 2, firma musi ponownie zastosować zadanie okresowe **Zaległa kwota podatku VAT stanowiąca zadłużenie** w okresie, w którym faktura została zapłacona. Wynikowe transakcje podatkowe są odzwierciedlane w raporcie JPK-V7M. Zawarte są następujące informacje:
 
     - Uwzględnione są wszystkie informacje o odbiorcy z oryginalnej faktury zaksięgowanej w etapie 1.
     - Kwoty są raportowane w tych samych elementach **K_\***, co w oryginalnej fakturze, ale ze znakiem dodatnim.
-    - Stosowane są te same markery, które zastosowano w oryginalnej fakturze
+    - Stosowane są te same markery, które zastosowano w oryginalnej fakturze.
     - Jest stosowany marker **\<KorektaPodstawyOpodt\>**.
 
     Kwota podstawy i kwota podatku z tej faktury (dokument wewnętrzny) **nie** są uwzględniane i zgłaszane w elementach **P_68** i **P_69** części deklaracji raportu.
@@ -616,7 +621,7 @@ Jeśli zaznaczono pole wyboru **Zagregowane dokumenty fiskalne**, faktury krajow
 
 Jeśli raport zawiera zagregowany dokument typu **RO**, ma on następujące pola nagłówka.
 
-| **Tag raportowania**  | **Wartość**                             |
+| Tag raportowania      | Wartość                                 |
 |--------------------|---------------------------------------|
 | KodKrajuNadaniaTIN | PL                                    |
 | NrKontrahenta      | BRAK                                  |
@@ -637,7 +642,7 @@ Domyślnie pole wyboru **Raportuj faktury z kasy fiskalnej** jest wyczyszczone. 
 
 Pola faktur z kasy fiskalnej z poniższej tabeli muszą być wypełnione.
 
-| **Tag raportowania**  | **Wartość**                                                                                                           |
+| Tag raportowania      | Wartość                                                                                                               |
 |--------------------|---------------------------------------------------------------------------------------------------------------------|
 | KodKrajuNadaniaTIN | PL                                                                                                                  |
 | NrKontrahenta      | „BRAK” lub RetailTransactionFiscalCustomer.SerializedData                                                            |
@@ -649,7 +654,7 @@ Pola faktur z kasy fiskalnej z poniższej tabeli muszą być wypełnione.
 
 Pola tabeli SAFTTaxTransByReportingCode_PL są wypełniane na podstawie następujących źródeł danych.
 
-| **Nazwa tabeli**                        | **Nazwy pól**                                                                                    |
+| Nazwa tabeli                            | Nazwy pól                                                                                        |
 |---------------------------------------|----------------------------------------------------------------------------------------------------|
 | RetailTransactionTable                | Typ, EntryStatus, StatementId, kanał, sklep, Terminal, TransactionId                            |
 | RetailTransactionTaxTrans             | TaxCode, TaxPercentage, TaxBaseAmount, kwota, IsExempt, kanał, StoreId, Terminal, TransactionId |
@@ -679,5 +684,8 @@ W przypadku generowania raportu JPK-V7M w formacie XML za okres krótszy niż pe
 - Tag **\<Miesiac\>** będzie zawierać informacje o interwale dat, za który jest generowany raport.
 - Tag **\<P_\*\>** części **Deklaracja** raportu zawiera obliczone wartości reprezentujące agregację kwot z części **SprzedazWiersz** i **ZakupWiersz** raportu. Wartości w tym tagu zostaną zaokrąglone do dwucyfrowej wartości dziesiętnej, ale nie wartości całkowitej.
 
+## <a name="report-invoices-from-counterparties-in-different-countries-that-have-identical-nip-numbers"></a>Raportuje faktury od kontrahentów z różnych krajów, którzy mają identyczne numery NIP 
+
+Struktura danych w raporcie JPK_V7M zawiera dane z pierwszego kodu kraju/regionu ISO, który został znaleziony w tabeli **Numery identyfikacji podatkowej** i zaksięgowany w tabeli **Transakcje podatkowe**. Stosuj różne numery identyfikacji podatkowej dla kontrahentów z różnych krajów. Aby podczas konfigurowania rozróżnić identyczne numery identyfikacji podatkowej z różnych krajów, należy użyć prefiksu z kodem ISO kraju/regionu. Dwie pierwsze litery kodu ISO kraju/regionu zostaną pominięte podczas raportowania w znaczniku **NrDostawcy**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d5d5303b6d81ad182e0e28a51790166b833bee7b
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754807"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923314"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -140,7 +140,7 @@ Zarządzanie funkcjami umożliwia kontrolowanie funkcji, które są dostarczane 
 
 ## <a name="new-features-are-optional-for-12-months"></a>Nowe funkcje są opcjonalne przez 12 miesięcy
 
-Jeśli zainstalowana zostanie nowa funkcja niekrytyczna, korzystanie z niej jest opcjonalne przez okres 12 miesięcy. Dzięki temu użytkownik i jego organizacja mają czas na zaplanowanie wdrożenia funkcji i przetestowania jej w ramach codziennych operacji. Aby uzyskać więcej informacji, zobacz [Aktualizacje do jednej wersji usługi – często zadawane pytania](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
+Jeśli zainstalowana zostanie nowa funkcja niekrytyczna, korzystanie z niej jest opcjonalne przez okres 12 miesięcy. Dzięki temu użytkownik i jego organizacja mają czas na zaplanowanie wdrożenia funkcji i przetestowania jej w ramach codziennych operacji. Aby uzyskać więcej informacji, zobacz [Aktualizacje do jednej wersji usługi – często zadawane pytania](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Korzystanie z funkcji Zarządzanie funkcjami w celu włączania funkcji ISV lub funkcji niestandardowych
 
@@ -161,7 +161,7 @@ Zasada polega na tym, że wszystkie nowe funkcje będą obowiązywać przez okre
 Czas wydania aktualizacji jest zmienny, czas aktualizacji środowiska jest zmienny, a klienci mogą zdecydować się na pominięcie niektórych aktualizacji. W wyniku tego trudno jest ustalić konkretne daty. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Gdzie jest dokumentacja funkcji, które są wprowadzane jako obowiązkowe? 
-Dokumentacja pochodzi od zespołów aplikacji. Często są one wymienione w [usuniętych lub przestarzałych funkcjach](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features). 
+Dokumentacja pochodzi od zespołów aplikacji. Często są one wymienione w [usuniętych lub przestarzałych funkcjach](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Czy istnieje powiadomienie dotyczące produktu lub sygnał, że funkcja jest wymagana do włączenia? 
 Mechanizm powiadamiania związany z wprowadzaniem wymaganej funkcji nie istnieje dzisiaj.

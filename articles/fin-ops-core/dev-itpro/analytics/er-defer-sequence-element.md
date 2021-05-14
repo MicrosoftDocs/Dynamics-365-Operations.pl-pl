@@ -2,7 +2,7 @@
 title: Odłóż wykonanie elementów sekwencji w formatach ER
 description: W tym temacie wyjaśniono, jak odroczyć wykonanie elementu sekwencji w formacie modułu raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: a7904924d1c2830287e26eb9fb71bd9a03f210d9
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894107"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944516"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Odłóż wykonanie elementów sekwencji w formatach ER
 
@@ -57,14 +57,14 @@ Jeśli nie zakończono jeszcze analizy przykładu, w sekcji [Wstrzymaj wykonywan
 
 | Opis zawartości            | Nazwa pliku |
 |--------------------------------|-----------|
-| Konfiguracja modelu danych ER    | [Model do nauki elementów odłożonych.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sesja mapowania konfiguracji modelu ER | [Mapowanie do nauki elementów odłożonych.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguracja modelu danych ER    | [Model do nauki elementów odłożonych.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Sesja mapowania konfiguracji modelu ER | [Mapowanie do nauki elementów odłożonych.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Przed rozpoczęciem należy również pobrać i zapisać następującą konfigurację przykładowego rozwiązania ER.
 
 | Opis zawartości     |Nazwa pliku |
 |-------------------------|----------|
-| ER format konfiguracji | [Format do nauki sekwencji odłożonych.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER format konfiguracji | [Format do nauki sekwencji odłożonych.version.1.1.xml](https://download.microsoft.com/download/0/f/5/0f55c341-8285-4d92-a46d-475d9a010927/Formattolearndeferredsequences.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importuj przykładowe konfiguracje formatu ER
 
@@ -169,7 +169,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
 1. Na stronie **Projektant formatów** wybierz opcję **Uruchom**.
 2. Pobierz plik oferowany przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredSequence-Run.png)
+    ![Pobrany przykładowy plik raportu](./media/ER-DeferredSequence-Run.png)
 
 Zauważ, że wiersz podsumowania 22 przedstawia sumę wartości podatku dla przetwarzanych transakcji. Ponieważ format jest skonfigurowany do używania powiązania **model.Data.Summary.Total**, aby zwrócić tę sumę, suma jest obliczana przez wywołanie agregacji **TotalSum** dla **zgrupowanego** źródła danych typu *GroupBy*, który korzysta z mapowania modelu. Aby można było obliczyć tę agregację, mapowanie modeli powtarza się dla wszystkich transakcji, które zostały wybrane w **filtrowanym** źródle danych. Porównując czasy wykonania wierszy 21 i 22, można ustalić, że obliczenie sumy zajęło 10 milisekund (ms). Porównując czasy wykonania wierszy 2 i 21, można ustalić, że wygenerowanie wszystkich linii wierszy transakcji zajęło 7 milisekund (ms). W związku z tym wymagana było 17 ms.
 
@@ -202,7 +202,7 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 12. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 13. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredSequence-Run1.png)
+    ![Pobrany plik — zsumowane wartości podatku](./media/ER-DeferredSequence-Run1.png)
 
     Wiersz 21 zawiera bieżącą sumę wartości podatku, które są obliczane dla wszystkich przetworzonych transakcji przy użyciu wygenerowanego wyniku jako źródła danych. To źródło danych rozpoczyna się od początku raportu i jest kontynuowane przez ostatnią transakcję podatkową. Wiersz 22 zawiera sumę wartości podatku dla wszystkich przetworzonych transakcji, które są obliczane w mapowaniu modelu przy użyciu źródła danych typu *GroupBy*. Zauważ, że te wartości są równe. Z tego względu można użyć sumowania danych wyjściowych zamiast **GroupBy**. Porównując czasy wykonania wierszy 2 i 21, można ustalić, że wygenerowanie i zsumowanie wszystkich linii wierszy transakcji zajęło 9 milisekund (ms). Z tego względu, jeśli chodzi o generowanie szczegółowych wierszy i sumowanie wartości podatku, zmodyfikowany format jest o około dwa razy szybszy niż format oryginalny.
 
@@ -211,7 +211,7 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 16. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 17. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredSequence-Run2.png)
+    ![Pobrany plik z edytowaną formułą](./media/ER-DeferredSequence-Run2.png)
 
     Należy zauważyć, że suma bieżąca wartości podatku w ostatnim wierszu szczegółów transakcji jest teraz równa sumie w wierszu podsumowania.
 
@@ -224,7 +224,7 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredSequence-Run3.png)
+    ![Pobrany plik do sumowania w nagłówku raportu](./media/ER-DeferredSequence-Run3.png)
 
     Należy zauważyć, że suma wartości podatku w wierszu podsumowania 2 jest teraz równa 0 (zero), ponieważ ta suma jest teraz obliczana na podstawie wygenerowanych danych wyjściowych. Po wygenerowaniu wiersza 2 wygenerowane dane wyjściowe nie zawierają jeszcze wierszy z informacjami o transakcjach. Można skonfigurować ten format, aby odroczyć wykonanie elementu sekwencji **Raport\\Wiersze\\Podsumowanie**, dopóki sekwencja **Raport\\Wiersze\\Rekord** nie zostanie uruchomiony dla wszystkich wierszy raportu dla transakcji podatkowych.
 
@@ -238,7 +238,7 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredSequence-Run4.png)
+    ![Pobrany plik — odroczone wykonanie](./media/ER-DeferredSequence-Run4.png)
 
     Element sekwencji **Raport\\Wiersze\\Podsumowanie** jest teraz uruchamiany tylko po uruchomieniu wszystkich pozostałych elementów zagnieżdżonych pod jego elementem **Raport\\Wiersze**. Dlatego jest uruchamiany po uruchomieniu elementu sekwencji **Raport\\Wiersze\\Rekord** dla wszystkich transakcji podatkowych źródła danych **model.Data.List**. Czasy wykonania wierszy 1, 2 i 3 oraz ostatni wiersz, 22, odsłoń ten fakt.
 

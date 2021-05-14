@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800454"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937019"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -60,7 +60,7 @@ Pracownicy działu sprzedaży mogą również wykorzystywać notatki do przechwy
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integracja z programem Dynamics 365 Customer Insights
 
-Za pomocą aplikacji Dynamics 365 Customer Insights detaliści mogą agregować dane z różnych systemów używanych przez klientów do współpracy z marką detaliczną. Następnie mogą wykorzystać te dane do wygenerowania pojedynczego widoku klienta i uzyskania szczegółowych informacji. Integracja Customer Insights z Commerce umożliwia wybranie jednego lub większej liczby miar, które powinny być przedstawione w kartotece klienta w książce klienta. Na przykład Detaliści mogą skorzystać z danych w usłudze Customer Insights, aby obliczyć „prawdopodobieństwo zmian” dla klienta i zdefiniować „następną najlepszą akcję” Jeśli te wartości są zdefiniowane jako miary, mogą być wyświetlane w kartotece klienta i mogą zawierać kluczowe informacje dla sprzedawców. Aby uzyskać więcej informacji o Customer Insights, zobacz dokumentację [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview). Aby uzyskać więcej informacji o tej funkcji, zobacz: [Miary](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Za pomocą aplikacji Dynamics 365 Customer Insights detaliści mogą agregować dane z różnych systemów używanych przez klientów do współpracy z marką detaliczną. Następnie mogą wykorzystać te dane do wygenerowania pojedynczego widoku klienta i uzyskania szczegółowych informacji. Integracja Customer Insights z Commerce umożliwia wybranie jednego lub większej liczby miar, które powinny być przedstawione w kartotece klienta w książce klienta. Na przykład Detaliści mogą skorzystać z danych w usłudze Customer Insights, aby obliczyć „prawdopodobieństwo zmian” dla klienta i zdefiniować „następną najlepszą akcję” Jeśli te wartości są zdefiniowane jako miary, mogą być wyświetlane w kartotece klienta i mogą zawierać kluczowe informacje dla sprzedawców. Aby uzyskać więcej informacji o Customer Insights, zobacz dokumentację [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview). Aby uzyskać więcej informacji o tej funkcji, zobacz: [Miary](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Ustawianie relacji z klientami
 
@@ -73,7 +73,7 @@ Aby włączyć funkcję relacji z klientami w środowisku, należy wykonać nast
 2. Włącz funkcję **Relacja z klientami**, zaznaczając opcję **Włącz teraz**.
 3. Na stronie **Parametry Commerce** na karcie **sekwencja numerów** wybierz wiersz **identyfikatora księgi klienta**. W polu **kod sekwencji numerów** wybierz kod każdej sekwencji numerów. System użyje tej sekwencji numerów do przypisania identyfikatora do ksiąg klientów.
 4. Wybierz opcję **Zapisz**.
-5. Utwórz nową grupę atrybutów zawierającą atrybuty, które mają być przechwytywane dla odbiorców, którzy są zarządzani w księgach klientów Zobacz instrukcje w [Atrybuty i grupy atrybutów](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Utwórz nową grupę atrybutów zawierającą atrybuty, które mają być przechwytywane dla odbiorców, którzy są zarządzani w księgach klientów Zobacz instrukcje w [Atrybuty i grupy atrybutów](./attribute-attributegroups-lifecycle.md).
 
     - Umożliwia zdefiniowanie wymaganych atrybutów, które **mogą być rafinowane**. Klienci współpracowników mogą następnie wykorzystać te atrybuty do filtrowania swojej księgi klienta.
     - Umożliwia ustawienie kolejności wyświetlania dla tych atrybutów. Ta kolejność wyświetlania decyduje o tym, które atrybuty powinny być pokazywane w kartotece odbiorcy w książce klienta. Kolejność wyświetlania 1 jest traktowana jako większa niż wartość w kolejności wyświetlania równa 2. Dlatego atrybut, który ma kolejność wyświetlania równą 1, będzie wyświetlany przed atrybutem, który ma kolejność wyświetlania równą 2.
@@ -103,18 +103,18 @@ Aby włączyć integrację Customer Insights z Commerce, należy upewnić się, 
 
 Aby skonfigurować integrację wykonaj następujące czynności:
 
-1. W portalu Azure zarejestruj nową aplikację i zanotuj nazwę aplikacji, jej identyfikator oraz klucz tajny. Te informacje będą używane do uwierzytelniania między usługami między Commerce i Customer Insights. Zwróć uwagę na tajny klucz, ponieważ będzie on wymagany do zapisania go w magazynie kluczy. W poniższym przykładzie użyj CI_Access_name, CI_Access_AppID, CI_Access_Secret odpowiednio dla nazwy aplikacji, identyfikatora aplikacji i klucza tajnego. Aby uzyskać więcej informacji, [Skorzystaj z systemu szybkiego startu: Zarejestruj aplikację na platformie tożsamości Microsoft](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. W portalu Azure zarejestruj nową aplikację i zanotuj nazwę aplikacji, jej identyfikator oraz klucz tajny. Te informacje będą używane do uwierzytelniania między usługami między Commerce i Customer Insights. Zwróć uwagę na tajny klucz, ponieważ będzie on wymagany do zapisania go w magazynie kluczy. W poniższym przykładzie użyj CI_Access_name, CI_Access_AppID, CI_Access_Secret odpowiednio dla nazwy aplikacji, identyfikatora aplikacji i klucza tajnego. Aby uzyskać więcej informacji, [Skorzystaj z systemu szybkiego startu: Zarejestruj aplikację na platformie tożsamości Microsoft](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Należy wykonać odpowiednie kroki, aby pamiętać o zmianie klucza tajnego przed jego wygaśnięciem. W przeciwnym razie integracja zostanie zatrzymana niespodziewanie.
 
 2. Przejdź do instancji Customer Insights i wyszukaj nazwę aplikacji utworzonej powyżej (w tym przykładzie „CI_Access_name”).
-3. Utwórz magazyn kluczy platformy Azure i zanotuj nazwę i adres URL (w tym przykładzie „KeyVaultName”, „KeyVaultURL”). Aby uzyskać instrukcje, [Skorzystaj z opcji szybkiego startu: set i Pobierz klucz tajny z magazynu kluczy systemu Azure przy użyciu portalu Azure Portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Utwórz magazyn kluczy platformy Azure i zanotuj nazwę i adres URL (w tym przykładzie „KeyVaultName”, „KeyVaultURL”). Aby uzyskać instrukcje, [Skorzystaj z opcji szybkiego startu: set i Pobierz klucz tajny z magazynu kluczy systemu Azure przy użyciu portalu Azure Portal](/azure/key-vault/quick-create-portal).
 4. Zapisz sekret (w tym przykładzie „CI_Access_Secret”) w magazynie. Kiedy ten sekret jest przechowywany w magazynie, otrzymuje nazwę. Zanotuj tajną nazwę (w tym przykładzie „SecretName”).
 5. Aby uzyskać dostęp do klucza tajnego z Azure Key Vault, musisz utworzyć inną aplikację z identyfikatorem aplikacji i wpisem tajnym (w tym przykładzie „KeyVault_Access_AppID” i „KeyVault_Access_Secret”). Pamiętaj, że tajny klucz jest bezpieczny, ponieważ nie będzie wyświetlany ponownie.
 6. Następnie musisz nadać aplikacji uprawnienia dostępu do Key Vault z Commerce przy użyciu interfejsów API. Przejdź do strony aplikacji w Azure Portal. W sekcji **Zarządzaj** wybierz uprawnienia **Interfejsu API**. Dodaj uprawnienie dostępu do **Klucza systemu Azure**. Dla tego uprawnienia wybierz pozycję **Zasady dostępu**. Wybierz szablon jako **Zarządzanie wpisami tajnymi**, a następnie wybierz opcje **Pobierz**, **Lista**, **Odszyfruj** i **Szyfruj**. 
 5. W Commerce headquarters przejdź do **Administrowanie systemem \> Ustawienia \> Parametry usługi Key Vault** i wprowadź wymagane informacje dotyczące magazynu kluczy. Następnie w polu **klient magazynu kluczy** wprowadź identyfikator aplikacji, który został użyty w kroku 4, aby umożliwić Commerce dostęp do kluczy tajnych w magazynie kluczy.
-6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych bezpieczną listą), należy przejść do sekcji Customer Insights i wybrać dostęp do **Widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Aby dodać aplikację utworzoną w kroku 1 do listy bezpiecznych aplikacji (czasami nazywanych bezpieczną listą), należy przejść do sekcji Customer Insights i wybrać dostęp do **Widoku** aplikacji. Aby uzyskać instrukcje instalacji, zobacz [Uprawnienia](/dynamics365/ai/customer-insights/pm-permissions).
 7. Na stronie **Administrowanie systemem > Ustawienia > Parametry Key Vault** w usługach Commerce HQ zaktualizuj pola w sposób opisany poniżej: 
 
 - **Adres URL klucza**: KeyVaultURL (z kroku 3 powyżej).

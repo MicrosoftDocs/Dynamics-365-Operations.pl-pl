@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f54d0ea87d8ce5ffdf5600995004e558ddd86fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c30c520e7265c2676937f5191844f6789c364e6
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833264"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921248"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Konfigurowanie opartej na atrybutach wyceny konfigurowalnych produktów
 
@@ -28,17 +28,18 @@ W tym temacie pokazano sposób konfigurowania wyceny opartej na atrybutach. Waru
 
 
 ## <a name="create-a-new-price-model"></a>Tworzenie nowego modelu ceny
-1. Wybierz **Definicja modelu wariantu produktu** na stronie głównej.
-2. Wybierz **Modele konfiguracji produktu** w sekcji **łącza**.
-3. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie wybieraj łącza z nazwą.
-4. W okienku akcji kliknij pozycję **Model**.
-5. Wybierz **Modele ceny**.
-6. Wybierz pozycję **Nowy**.
-7. W polu **Nazwa modelu ceny** wpisz wartość. Użyj nazwy, która sprawi, że model będzie łatwy do zidentyfikowania.  
-8. W polu **Opis** wpisz wartość.
-9. Wybierz opcję **Zapisz**.
+
+1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
+1. Na liście zaznacz wiersz **Głośnik o wysokiej jakości**, ale nie wybieraj łącza z nazwą.
+1. W okienku akcji kliknij pozycję **Model**.
+1. Wybierz **Modele ceny**.
+1. Wybierz pozycję **Nowy**.
+1. W polu **Nazwa modelu ceny** wpisz wartość. Użyj nazwy, która sprawi, że model będzie łatwy do zidentyfikowania.  
+1. W polu **Opis** wpisz wartość.
+1. Wybierz opcję **Zapisz**.
 
 ## <a name="add-price-elements"></a>Dodawanie elementów ceny
+
 1. Wybierz opcję **Edycja**. Każdy składnik w modelu produktu może mieć element ceny podstawowej i dowolną liczbę reguł wyrażenia ceny. Można również dodawać ceny w różnych walutach.  
 2. W polu **Wyrażenie podstawy ceny** wpisz wartość. Na przykład wpisz 100. Wyrażenie ceny podstawowej może być wartością liczbową lub mieć formę obliczenia arytmetycznego, w którym występuje jeden lub więcej atrybutów.  
 3. Wybierz opcję **Dodaj**.

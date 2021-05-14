@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857377"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941090"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -52,11 +52,11 @@ Te wymagania wstępne są wymagane:
 
 2. Zaloguj się w [Microsoft Azure](https://portal.azure.com/).
 
-3. Wybierz [grupę zasobów](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Wybierz [grupę zasobów](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Utwórz [konto magazynu](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) w utworzonej grupie zasobów.
+4. Utwórz [konto magazynu](/azure/storage/common/storage-account-create?tabs=azure-portal) w utworzonej grupie zasobów.
 
-5. Utwórz [fabryke danych](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) w utworzonej powyżej grupie zasobów.
+5. Utwórz [fabryke danych](/azure/data-factory/quickstart-create-data-factory-portal) w utworzonej powyżej grupie zasobów.
 
 6. Otwórz fabrykę danych i wybierz kafelek **Twórz i Monitoruj**.
 
@@ -81,7 +81,7 @@ Te wymagania wstępne są wymagane:
     FO Połączone Service_properties_type Properties_service Principal Id | Określ identyfikator klienta aplikacji.
     Dynamics Crm Linked Service_properties_type Properties_username | Nazwa użytkownika do połączenia z Dynamics.
 
-    Aby uzyskać więcej informacji, zobacz tematy [Ręcznie podwyższaj szablon usługi Resource Manager dla każdego środowiska](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Połączone właściwości usługi](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) i [Skopiuj dane za pomocą usługi Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Aby uzyskać więcej informacji, zobacz tematy [Ręcznie podwyższaj szablon usługi Resource Manager dla każdego środowiska](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Połączone właściwości usługi](/azure/data-factory/connector-dynamics-ax#linked-service-properties) i [Skopiuj dane za pomocą usługi Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Po wdrożeniu sprawdź poprawność zestawów danych, przepływu danych i połączonej usługi fabryki danych.
 
@@ -158,7 +158,7 @@ Te wymagania wstępne są wymagane:
 8. Zaimportuj nowe rekordy **Strony** w aplikacji Finance and Operations.
 
     + Pobierz plik `FONewParty.csv` z magazynu obiektów blob Azure. Ścieżka w `partybootstrapping/output/FONewParty.csv`.
-    + Skonwertuj plik `FONewParty.csv` na plik programu Excel i zaimportuj go do aplikacji Finance and Operations.  Jeśli import CSV działa dla Ciebie, możesz zaimportować plik CSV bezpośrednio. Uruchomienie importowania może potrwać kilka godzin, w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Skonwertuj plik `FONewParty.csv` na plik programu Excel i zaimportuj go do aplikacji Finance and Operations.  Jeśli import CSV działa dla Ciebie, możesz zaimportować plik CSV bezpośrednio. Uruchomienie importowania może potrwać kilka godzin, w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
 
     ![Importowanie rekordów strony Datavers](media/data-factory-import-party.png)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890083"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951939"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optymalizacja zadań wsadowych BYOD w harmonogramie
 
@@ -89,6 +89,12 @@ Funkcja BYOD ma następujące ograniczenia:
 **Problem:** Podczas wykonywania pełnego wypychania dla danej encji widoczne jest wiele rekordów BYOD po wybraniu instrukcji **wybierz**. Jednak w przypadku wypychania przyrostowego widoczna jest tylko liczba rekordów w BYOD. Wygląda na to, jakby przyrostowa metoda wypychania usunęła wszystkie rekordy i dodała tylko zmienione rekordy w BYOD.
 
 **Rozwiązanie:** tabele śledzenia zmian SQL mogą nie znajdować się w oczekiwanym stanie. W przypadku tego typu sytuacji zaleca się wyłączenie śledzenia zmian dla jednostki, a następnie włączenie funkcji z powrotem. Aby uzyskać więcej informacji, przejrzyj temat [Włączanie śledzenia zmian dla encji](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Tabele przemieszczania nie są czyszczone
+
+**Problem:** Podczas korzystania z funkcji przemieszczania w projekcie tabele przemieszczania nie są poprawnie czyszczone. Dane w tabelach wciąż przyrastają, powodując problemy z wydajnością.
+
+**Rozwiązanie:** W tabelach przemieszczania jest zachowywanych siedem dni historii. Dane historyczne starsze niż siedem dni są automatycznie usuwane z tabel przemieszczania przez zadanie **Oczyszczanie przemieszczania importu i eksportu**. Jeśli to zadanie zostanie zablokowane, tabele nie będą poprawnie czyszczone. Ponowne uruchomienie tego zadania wsadowego spowoduje automatyczne wyczyszczenie tabel przemieszczania.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

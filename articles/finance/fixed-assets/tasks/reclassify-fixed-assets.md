@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8935213c4629de408a48df5e54a2122324e1b3e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823939"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944721"
 ---
 # <a name="reclassify-fixed-assets"></a>Zmień klasyfikację środków trwałych
 
@@ -27,11 +27,25 @@ Aby przeklasyfikować środek trwały, należy przenieść go do nowej grupy śr
 
 Po przeklasyfikowaniu środka trwałego:
 
-* Wszystkie księgi dla istniejącego środka trwałego zostają utworzone dla nowego środka trwałego. Wszystkie informacje skonfigurowane dla oryginalnego środka trwałego zostają skopiowane do nowego środka stałego. Stan ksiąg oryginalnego środka trwałego zostaje ustawiony na Zamknięte. 
+- Wszystkie księgi dla istniejącego środka trwałego zostają utworzone dla nowego środka trwałego. Wszystkie informacje skonfigurowane dla oryginalnego środka trwałego zostają skopiowane do nowego środka stałego. Stan ksiąg oryginalnego środka trwałego zostaje ustawiony na Zamknięte. 
 
-* Nowe księgi nowego środka stałego zawierają datę przeklasyfikowania w polu **Data nabycia**. Data w polu **Data rozpoczęcia amortyzacji** jest kopiowana z oryginalnych informacji o środku trwałym. Jeśli amortyzacja jest już rozpoczęta, to w polu **Data ostatniego uruchomienia amortyzacji** zostaje wyświetlona data przeklasyfikowania. 
+- Nowe księgi nowego środka stałego zawierają datę przeklasyfikowania w polu **Data nabycia**. Data w polu **Data rozpoczęcia amortyzacji** jest kopiowana z oryginalnych informacji o środku trwałym. Jeśli amortyzacja jest już rozpoczęta, to w polu **Data ostatniego uruchomienia amortyzacji** zostaje wyświetlona data przeklasyfikowania. 
 
-* Transakcje istniejącego środka trwałego zostają anulowane i wygenerowane ponownie dla nowego środka trwałego.
+- Transakcje istniejącego środka trwałego zostają anulowane i wygenerowane ponownie dla nowego środka trwałego.
+
+- W przypadku przeklasyfikowania środka trwałego z transakcją przeniesienia w **centrum akcji** zostanie wyświetlony komunikat informujący, że transakcja przeniesienia nie została zakończona w trakcie procesu przeklasyfikowania. Konieczne jest zakończenie transakcji przeniesienia w celu przeniesienia istniejących transakcji przeklasyfikowania do odpowiednich wymiarów finansowych. 
+
+   W procesie przeklasyfikowania system uruchamia następujące akcje w celu przeklasyfikowania salda środków trwałych z oryginalnego środka trwałego do nowego środka trwałego. 
+   
+   - Proces przeklasyfikowania kopiuje dane z oryginalnej księgi środków trwałych do nowej księgi środków trwałych.
+
+   - Transakcja przeklasyfikowania wykorzystuje informacje z oryginalnego zaksięgowanego nabycia, które zawiera informacje o wymiarach finansowych zawartych w transakcji nabycia.  
+   
+   - Jednocześnie proces przeklasyfikowania wycofuje oryginalną transakcję nabycia i przeniesienia środka trwałego. 
+
+Poniższy diagram i procedura stanowią przykład procesu przeklasyfikowania. 
+
+[![Diagram pokazujący proces przeklasyfikowania](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Aby przeklasyfikować środek trwały, należy wykonać następujące kroki:
 

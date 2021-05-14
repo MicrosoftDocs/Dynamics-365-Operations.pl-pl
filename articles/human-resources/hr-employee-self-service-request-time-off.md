@@ -2,7 +2,7 @@
 title: Żądanie czasu wolnego
 description: W programie Dynamics 365 Human Resources można prosić o czas wolny.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790699"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924861"
 ---
 # <a name="request-time-off"></a>Żądanie czasu wolnego
 
@@ -45,7 +45,7 @@ W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, 
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Dodaj załącznik do istniejącego żądania
 
-Podczas aktualizowania istniejącego żądania czasu wolnego można dodać załącznik. Można również zobaczyć wszystkie powiązane wnioski dotyczące konkretnej daty. 
+Podczas aktualizowania istniejącego żądania czasu wolnego można dodać załącznik. Można również zobaczyć wszystkie powiązane wnioski dotyczące konkretnej daty.
 
 ## <a name="view-leave-balances"></a>Wyświetlanie sald urlopów
 
@@ -58,6 +58,20 @@ Podczas aktualizowania istniejącego żądania czasu wolnego można dodać zał�
 1. W obszarze roboczym **Samoobsługa pracownika etatowego** na kafelku **Bilans czasu wolnego** wybierz opcję **Więcej** (...).
 
 2. Aby wyświetlić zatwierdzone wnioski urlopowe, wybierz opcję **Zatwierdzony czas wolny**. Aby wyświetlić oczekujące wnioski urlopowe, wybierz opcję **Żądania czasu wolnego**.
+
+## <a name="cancel-time-off-requests"></a>Anulowanie wniosków dotyczących czasu wolnego
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. W obszarze roboczym **Samoobsługa pracownika etatowego** na kafelku **Bilans czasu wolnego** wybierz opcję **Wyświetl czas wolny**.
+
+2. W formularzu **Czas wolny** wybierz co najmniej jeden wniosek dotyczący czasu wolnego, aby go anulować.
+
+3. Wybierz przycisk **Anuluj**.
+
+4. W okienku **Szczegóły anulowania** wprowadź komentarz, a następnie wybierz opcję **Prześlij**.
+
+   ![Anulowanie wniosku urlopowego](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

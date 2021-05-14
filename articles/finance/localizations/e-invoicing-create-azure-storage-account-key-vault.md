@@ -2,7 +2,7 @@
 title: Utwórz konto magazynu Azure i Magazyn kluczy
 description: W tym temacie opisano sposób tworzenia konta magazynu Azure i magazynu kluczy.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893809"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963246"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -80,6 +80,10 @@ W tym temacie przedstawiono dwa główne kroki:
 11. Wybierz opcję **Dodaj**, a następnie wybierz opcję **Zapisz zmiany magazynu kluczy**.
 12. Na stronie **Przegląd** skopiuj wartość **Nazwa DNS** dla magazynu kluczy. Ta wartość będzie używana podczas instalacji usługi w RCS i będzie określana jako *Identyfikator URI magazynu kluczy*.
 
+> [!NOTE]
+> Aby uzyskać dodatkowe zabezpieczenia konta magazynu, skonfiguruj funkcję Azure Defender for Storage.
+> 
+> Aby uzyskać więcej informacji, zobacz [Wprowadzenie do funkcji Azure Defender for Storage](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

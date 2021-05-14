@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908837"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941233"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguracja korzystania z modułu Finance Insights (wersja zapoznawcza)
 
@@ -42,228 +42,36 @@ Aby wdrożyć środowiska, wykonaj następujące kroki.
 
 ## <a name="configure-dataverse"></a>Skonfiguruj usługę Dataverse
 
-Można wykonać następującą procedurę ręcznego konfigurowania lub przyspieszyć proces konfigurowania, korzystając z dostarczonego skryptu programu Windows PowerShell. Po zakończeniu działania skryptu programu PowerShell program udostępnia wartości potrzebne do skonfigurowania modułu Finance Insights. 
+Wykonaj następujące kroki, aby skonfigurować Dataverse for Finance Insights.
 
+1. Otwórz stronę środowiska w u usługach LCS i sprawdź, czy sekcja **Integracja Power Platform** jest już skonfigurowana.
+    1. Jeśli jest już skonfigurowana, na liście powinna znajdować się nazwa środowiska Dataverse połączona ze środowiskiem Dynamics 365 Finance. Skopiuj nazwę środowiska Dataverse.
+    2. Jeśli nie jest skonfigurowana, należy wykonać następujące czynności:
+        1. Wybierz przycisk **Ustawienia** w sekcji Integracja Power Platform. Skonfigurowanie środowiska może potrwać do godziny.
+        2. Gdy środowisko Dataverse zostanie poprawnie skonfigurowane, na liście powinna zostać wyświetlona nazwa środowiska Dataverse połączona ze środowiskiem Dynamics 365 Finance. Skopiuj nazwę środowiska Dataverse.
 > [!NOTE]
-> Otwórz program PowerShell na komputerze, aby uruchomić skrypt. Może być potrzebny program PowerShell w wersji 5. Opcja „Wypróbuj to" interfejsu wierszu polecenia Microsoft Azure może nie działać.
+> Po skonfigurowaniu środowiska **NIE należy** wybierać przycisku Łącze do usługi **CDS for Apps**. Nie jest to potrzebne w przypadku aplikacji Finance Insights i pozbawiłoby możliwości wykonywania wymaganych dodatków środowiska w usługach LCS.
 
-# <a name="manual-configuration-steps"></a>[Procedura ręcznego konfigurowania](#tab/configuration-steps)
-
-1. Otwórz the [Centrum administracyjne Power Platform](https://admin.powerplatform.microsoft.com/) i wykonaj następujące kroki, aby utworzyć nowe środowisko Dataverse w tym samym dzierżawcy Active Directory:
+2. Otwórz the [Centrum administracyjne Power Platform](https://admin.powerplatform.microsoft.com/) i wykonaj następujące kroki, aby utworzyć nowe środowisko Dataverse w tym samym dzierżawcy Active Directory:
 
     1. Otwórz stronę **Środowiska**.
 
         [![Strona Środowiska](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
-    2. Wybierz opcję **Nowe środowisko**.
-    3. W polu **Typ** wybierz opcję **Piaskownica**.
-    4. Ustaw wartość opcji **Utwórz bazę danych** na **Tak**.
-    5. Wybierz pozycję **Następny**.
-    6. Wybierz język i walutę organizacji.
-    7. Zaakceptuj wartości domyślne wszystkich pozostałych pól.
-    8. Wybierz opcję **Zapisz**.
-    9. Odśwież stronę **Środowiska**.
-    10. Poczekaj, aż wartość pola **Stan** zostanie zaktualizowana na **Gotowe**.
-    11. Zanotuj identyfikator organizacji Dataverse.
-    12. Wybierz środowisko, a następnie wybierz **Ustawienia**.
-    13. Wybierz **Zasoby \> Wszystkie ustawienia starego typu**.
-    14. Na górnym pasku nawigacyjnym wybierz opcję **Ustawienia**, a następnie wybierz opcję **Dostosowania**.
-    15. Wybierz **Zasoby deweloperskie**.
-    16. Umożliwia skopiowanie wartości **Identyfikator organizacji Dataverse**.
-    17. Zanotuj adres URL organizacji Dataverse z paska adresu przeglądarki. Może to być na przykład adres URL `https://org42b2b3d3.crm.dynamics.com`.
+    2. Wybierz środowisko Dataverse utworzone powyżej,, a następnie wybierz opcję **Ustawienia**.
+    3. Wybierz **Zasoby \> Wszystkie ustawienia starego typu**.
+    4. Na górnym pasku nawigacyjnym wybierz opcję **Ustawienia**, a następnie wybierz opcję **Dostosowania**.
+    5. Wybierz **Zasoby deweloperskie**.
+    6. Umożliwia skopiowanie wartości **Identyfikator organizacji Dataverse**.
+    7. Zanotuj adres URL organizacji Dataverse z paska adresu przeglądarki. Może to być na przykład adres URL `https://org42b2b3d3.crm.dynamics.com`.
 
-2. Jeśli planowane jest użycie funkcji prognoz przepływów pieniężnych lub funkcji prognoz budżetu, należy wykonać następujące kroki w celu zaktualizowania limitu adnotacji dla organizacji na co najmniej 50 megabajtów (MB):
+3. Jeśli planowane jest użycie funkcji prognoz przepływów pieniężnych lub funkcji prognoz budżetu, należy wykonać następujące kroki w celu zaktualizowania limitu adnotacji dla organizacji na co najmniej 50 megabajtów (MB):
 
     1. Otwórz portal [Power Apps](https://make.powerapps.com).
     2. Wybierz nowo utworzone środowisko, a następnie wybierz **Ustawienia zaawansowane**.
     3. Wybierz **Ustawienia \> Konfiguracja poczty e-mail**.
     4. Zmień wartość w polu **Maksymalny rozmiar pliku** na **51 200**. (Wartość jest wyrażona w kilobajtach \[KB\]).
     5. Wybierz przycisk **OK**, aby zapisać zmiany.
-
-# <a name="windows-powershell-configuration-script"></a>[Skrypt konfiguracji programu Windows PowerShell](#tab/powershell-configuration-script)
-
-```azurecli-interactive
-Write-Output 'The following modules need to be present for execution of this script:'
-Write-Output '  Microsoft.PowerApps.Administration.PowerShell'
-Write-Output '  Microsoft.PowerApps.PowerShell'
-Write-Output '  Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-
-try {
-    $moduleConsent = Read-Host 'Is it ok to install or update these modules as needed? (yes/no)'
-    if ($moduleConsent -ne 'yes' -and $moduleConsent -ne 'y') {
-        Write-Warning 'User declined to install required modules.'
-        return
-    }
-
-    $module = 'Microsoft.PowerApps.Administration.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '2.0.61' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '2.0.61' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.PowerApps.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '1.0.9' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '1.0.9' -AllowClobber -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    $module = 'Microsoft.Xrm.Tooling.CrmConnector.PowerShell'
-    if (-not (Get-InstalledModule -Name $module -MinimumVersion '3.3.0.892' -ErrorAction SilentlyContinue)) {
-        Install-Module -Name $module -MinimumVersion '3.3.0.892' -Force
-        Write-Output ('Installed {0} module.' -f $module)
-    }
-    else {
-        Write-Output ('{0} module found.' -f $module)
-    }
-
-    Write-Output '================================================================================='
-
-    $useMfa = $false
-    $useMfaPrompt = Read-Host "Does your organization require the use of multi-factor authentication? (yes/no)"
-    if ($useMfaPrompt -eq 'yes' -or $useMfaPrompt -eq 'y') {
-        $useMfa = $true
-    }
-    if(-not $useMfa) {
-        $credential = Get-Credential -Message 'Power Apps Credential'
-    }
-
-    $orgFriendlyName = Read-Host "Enter the name of the CDS Organization to use or create: (blank for 'FinanceInsightsOrg')"
-    if ($orgFriendlyName.Trim() -eq '') {
-        $orgFriendlyName = 'FinanceInsightsOrg'
-    }
-
-    $isDefaultOrgPrompt = Read-Host ("Is '" + $orgFriendlyName + "' the default organization for your tenant? (yes/no)")
-    if ($isDefaultOrgPrompt -eq 'yes' -or $isDefaultOrgPrompt -eq 'y') {
-        $isDefaultOrg = $true
-    }
-
-    if ($credential) {
-        Add-PowerAppsAccount -Username $credential.UserName -Password $credential.Password
-    }
-    else {
-        Add-PowerAppsAccount
-    }
-
-    if ($isDefaultOrg) {
-        $orgMatch = ('(default)')
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { $_.IsDefault -eq $true })
-    }
-    else {
-        $orgMatch = ('{0} (*)' -f $orgFriendlyName)
-        $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.IsDefault -eq $false -and ($_.DisplayName -eq $orgFriendlyName -or $_.DisplayName -like $orgMatch)) })
-    }
-
-    $getCrmOrgParams = @{ 'OnlineType' = 'Office365' }
-    if ($credential) {
-        $getCrmOrgParams.Credential = $credential
-    }
-
-    if ($null -eq $environment) {
-        Write-Output '================================================================================='
-        Write-Output 'PowerApps environment not found. A new one will be provisioned.'
-
-        $invalid = 'invalid'
-
-        $location = $invalid
-        $cdsLocations = (Get-AdminPowerAppEnvironmentLocations | Select-Object LocationName).LocationName
-        while (-not ($location -in $cdsLocations)) {
-            $location = (Read-Host -Prompt "Enter the location in which to create the new PowerApps environment: ('help' to see values)")
-            if ($location -eq 'help') {
-                $cdsLocations
-            }
-        }
-
-        $currency = $invalid
-        $cdsCurrencies = (Get-AdminPowerAppCdsDatabaseCurrencies -Location $location | Select-Object CurrencyName).CurrencyName
-        while ($currency -ne '' -and -not ($currency -in $cdsCurrencies)) {
-            $currency = (Read-Host -Prompt "Enter the currency to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($currency -eq 'help') {
-                $cdsCurrencies
-            }
-        }
-
-        $language = $invalid
-        $cdsLanguages = (Get-AdminPowerAppCdsDatabaseLanguages -Location $location | Select-Object LanguageName, LanguageDisplayName)
-        while ($language -ne '' -and -not ($language -in $cdsLanguages.LanguageName)) {
-            $language = (Read-Host -Prompt "Enter the language name to use for the new PowerApps environment: ('help' to see values, blank for default)")
-            if ($language -eq 'help') {
-                $cdsLanguages | Format-Table -Property LanguageName, LanguageDisplayName
-            }
-        }
-
-        Write-Output 'Provisioning PowerApps environment. This may take several minutes.'
-
-        $sleep = 15
-
-        $envParams = @{ 'DisplayName' = $orgFriendlyName; 'EnvironmentSku' = 'Sandbox'; 'ProvisionDatabase' = $true; 'Location' = $location; 'WaitUntilFinished' = $true }
-        if ($language.Trim() -ne '') {
-            $envParams.LanguageName = $language
-        }
-        if ($currency.Trim() -ne '') {
-            $envParams.CurrencyName = $currency
-        }
-        $newEnvResult = New-AdminPowerAppEnvironment @envParams
-        if (($null -eq $newEnvResult) -or ($newEnvResult.CommonDataServiceDatabaseProvisioningState -ne 'Succeeded')) {
-            Write-Warning 'Failed to create to PowerApps environment'
-            if ($null -ne $newEnvResult) {
-                $newEnvResult
-            }
-        }
-        else {
-            $environment = $null
-            $retryCount = 0
-            while (($null -eq $environment) -and ($retryCount -lt 5)) {
-                Start-Sleep -Seconds $sleep
-                $environment = (Get-AdminPowerAppEnvironment | Where-Object { ($_.DisplayName -like $orgMatch) })
-            }
-            Write-Output ("Provisioned PowerApps environment with name: '" + $environment.DisplayName + "'")
-        }
-
-        Write-Output 'Waiting for CDS organization provisioning. This may take several minutes.'
-        if (-not $credential) {
-            $sleep = 120
-            Write-Output 'You may be prompted for credentials multiple times while checking the status of the provisioning.'
-        }
-
-        while ($null -eq $crmOrg) {
-            Start-Sleep -Seconds $sleep
-            $crmOrg = (Get-CrmOrganizations @getCrmOrgParams) | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-    else {
-        $crmOrgs = Get-CrmOrganizations @getCrmOrgParams
-        if ($UseDefaultOrganization -eq $true) {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -match $orgMatch }
-        }
-        else {
-            $crmOrg = $crmOrgs | Where-Object { $_.FriendlyName -eq $orgFriendlyName }
-        }
-    }
-
-    Write-Output '================================================================================='
-    Write-Output 'Values for PowerAI LCS Add-In:'
-    Write-Output ("  CDS organization url:             " + $crmOrg.WebApplicationUrl)
-    Write-Output ("  CDS organization ID:              " + $crmOrg.OrganizationId)
-}
-catch {
-    Write-Error $_.Exception.Message
-    Write-Warning $_.Exception.StackTrace
-    $inner = $_.Exception.InnerException
-    while ($null -ne $inner) {
-        Write-Output 'Inner Exception:'
-        Write-Error $_.Exception.Message
-        Write-Warning $_.Exception.StackTrace
-        $inner = $inner.InnerException
-    }
-}
-```
----
 
 ## <a name="configure-the-azure-setup"></a>Konfigurowanie ustawień platformy Azure
 
@@ -295,11 +103,14 @@ Aby skonfigurować platformę Azure przy użyciu skryptu programu Windows PowerS
 
 1. W [portalu Azure](https://portal.azure.com) przejdź do docelowej subskrypcji Azure. Naciśnij przycisk **Cloud Shell** na prawo od pola **wyszukiwania**.
 2. Wybierz opcję **PowerShell**.
-3. Jeśli zostanie wyświetlony odpowiedni monit, utwórz magazyn. Następnie przekaż skrypt programu Windows PowerShell do sesji.
-4. Uruchom skrypt.
-5. Postępuj zgodnie z instrukcjami, aby uruchomić skrypt.
-6. Korzystając z informacji z wyników skryptu, zainstaluj dodatek **Eksport do Data Lake** w LCS.
-7. Za pomocą informacji z wyników skryptu można włączyć magazyn jednostek na stronie **Połączenia danych** w module Finance (**Administrowanie systemem \> Parametry systemu \> Połączenia danych**).
+3. Jeśli zostanie wyświetlony odpowiedni monit, utwórz magazyn.
+4. Przejdź do karty **Azure CLI** i wybierz polecenie **Kopiuj**.  
+5. Otwórz notatnik i wklej skrypt programu PowerShell. Zapisz plik jako ConfigureDataLake.ps1.
+6. Przekaż skrypt programu Windows PowerShell do sesji, używając opcji menu do przekazania w Cloud Shell.
+7. Uruchom skrypt .\ConfigureDataLake.ps1.
+8. Postępuj zgodnie z instrukcjami, aby uruchomić skrypt.
+9. Korzystając z informacji z wyników skryptu, zainstaluj dodatek **Eksport do Data Lake** w LCS.
+10. Za pomocą informacji z wyników skryptu można włączyć magazyn jednostek na stronie **Połączenia danych** w module Finance (**Administrowanie systemem \> Parametry systemu \> Połączenia danych**).
 
 ### <a name="manual-setup"></a>Konfiguracja ręczna
 
@@ -975,24 +786,24 @@ Dodatek zostanie zainstalowany w ciągu kilku minut.
 
     | Wartość                                                    | opis |
     |----------------------------------------------------------|-------------|
-    | Adres URL organizacji CDS                                     | Adres URL organizacji Dataverse wystąpienia Dataverse. Aby znaleźć tę wartość, otwórz [Portal Power Apps](https://make.powerapps.com), naciśnij przycisk **Ustawienia** (symbol narzędzia) w górnym prawym górnym rogu, wybierz opcję **Ustawienia zaawansowane** i skopiuj adres URL. (Adres URL kończy się na „dynamics.com”). |
-    | Identyfikator organizacji CDS                                               | Identyfikator środowiska wystąpienia Dataverse. Aby znaleźć tę wartość, otwórz [Portal Power Apps](https://make.powerapps.com), naciśnij przycisk **Ustawienia** (symbol narzędzia) w górnym prawym górnym rogu, wybierz opcję **Dostosowania \> Zasoby deweloperskie \> Informacje referencyjne wystąpienia** i skopiuj wartość **Identyfikator**. |
-    | Identyfikator dzierżawcy CDS (identyfikator katalogu z AAD)               | Identyfikator dzierżawcy wystąpienia Dataverse. Aby znaleźć tę wartość, otwórz [portal Azure](https://portal.azure.com), przejdź do **Azure Active Directory** i skopiuj wartość **Identyfikatora dzierżawcy**. |
-    | Podaj identyfikator obiektu użytkownika, który ma rolę administratora systemu | Identyfikator obiektu użytkownika Azure AD w programie Dataverse. Ten użytkownik musi być administratorem wystąpienia Dataverse. Aby znaleźć tę wartość, otwórz [portal Azure](https://portal.azure.com), przejdź **Azure Active Directory \> Użytkownicy**, wybierz użytkownika, a następnie w sekcji **Tożsamość** skopiuj wartość **Identyfikator obiektu**. |
-    | Czy to jest domyślne środowisko CDS dla dzierżawcy?      | To pole wyboru należy zaznaczyć, jeśli wystąpienie Dataverse było pierwszym wystąpieniem produkcyjnym, które zostało utworzone. Jeśli wystąpienie Dataverse zostało utworzone ręcznie, należy wyczyścić to pole wyboru. |
-
+    | Adres URL organizacji CDS                                     | Adres URL organizacji Dataverse skopiowany z góry. |
+    | Identyfikator organizacji CDS                                               | Identyfikator organizacji Dataverse skopiowany z góry. |
+5. Włącz opcję **Czy to jest domyślne środowisko CDS dla dzierżawcy**.
+    
 ## <a name="configure-the-entity-store"></a>Konfigurowanie magazynu jednostek
 
 Aby skonfigurować magazyn jednostek w środowisku Finance, należy wykonać następujące kroki.
 
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Parametry systemu \> Połączenia danych**.
-2. Zmień ustawienie opcji **Włącz integrację Data Lake** na **Tak**.
-3. Ustaw następujące pola magazynu kluczy:
+2. Ustaw następujące pola magazynu kluczy:
 
     - **Identyfikator aplikacji (klienta)** — wprowadź utworzony wcześniej identyfikator klienta aplikacji.
     - **Wpis tajny aplikacji** — wprowadź wpis tajny zapisany dla utworzonej wcześniej aplikacji.
     - **Nazwa DNS** — nazwa systemu DNS (Domain Name System) znajduje się na stronie szczegółów aplikacji dla utworzonej wcześniej aplikacji.
     - **Nazwa wpisu tajnego** — wprowadź **storage-account-connection-string**.
+3. Włącz opcję **Włącz integrację danych w usłudze Data Lake**.
+4. Naciśnij łącze **Testuj Azure Key Vault** i sprawdź, czy nie ma żadnych błędów.
+5. Naciśnij łącze **Testuj magazyn usługi Azure** i sprawdź, czy nie ma żadnych błędów.
 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
 

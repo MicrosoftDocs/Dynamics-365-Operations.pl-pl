@@ -1,8 +1,8 @@
 ---
 title: Przegląd budżetu
 description: Prawie każda firma, która używa funkcji finansowych w Microsoft Dynamics 365 Finance, będzie musiała mieć możliwość tworzenia raportów porównujących kwoty budżetowe z rzeczywistymi. Ten artykuł wyjaśnia minimalną konfigurację niezbędną do tworzenia budżetów w Finance and Operations lub ich wczytywania z innych programów.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827465"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960056"
 ---
 # <a name="budgeting-overview"></a>Omówienie budżetu 
 
@@ -71,7 +71,7 @@ Funkcja wprowadzona w programie Microsoft Dynamics 365 Finance w wersji 10.0.7 (
 
 Funkcja **Wpisy rejestru budżetu tylko dla ilości** umożliwia zaksięgowanie wpisu rejestru budżetu zawierającego kwoty jako tylko ilości. Można na przykład zaksięgować wpis budżetu z ilością 32 i ceną równą zero, w wyniku czego kwota wyniesie zero. Ilości tej można następnie użyć w kontekście raportu finansowego w celu określenia ceny za ilość. Zauważ, że zapytania i raporty w ramach tej funkcji nie zostały zaktualizowane; funkcja umożliwia jedynie zaksięgowanie kwoty wynoszącej zero.
 
-Funkcja **Wpisy rejestru budżetu dla domyślnego typu kwoty** pozwala, aby domyślny typ kwoty we wpisie rejestru budżetu był inny niż wydatek. Wiersz wpisu rejestru budżetu będzie teraz domyślnie ustawiany na wydatek, jeśli typem konta głównego jest wydatek; będzie domyślnie ustawiany na przychód, jeśli typem konta głównego jest wydatek oraz będzie domyślnie ustawiany na wydatek dla wszystkich innych typów kont.
+Funkcja **Wpisy rejestru budżetu dla domyślnego typu kwoty** pozwala, aby domyślny typ kwoty we wpisie rejestru budżetu był inny niż wydatek. Wiersz wpisu rejestru budżetu będzie teraz domyślnie ustawiany na wydatek, jeśli typem konta głównego jest wydatek; będzie domyślnie ustawiany na przychód, jeśli typem konta głównego jest przychód oraz będzie domyślnie ustawiany na wydatek dla wszystkich innych typów kont.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Korzystanie z obszarów roboczych i stron zapytania do śledzenia budżetu i wartości rzeczywistych
 Menedżer budżetu może sprawdzić bieżący stan budżetu w obszarze roboczym **Budżety i prognozy księgi**. Karty **Wydatki przekraczające budżet** i **Przychody poniżej budżetu** zawierają szybki widok kombinacji wymiaru finansowego, gdzie cele budżetu nie zostały osiągnięte lub zbliżają się do progu. Można dostosować wartość procentowa progu budżetu i zestawy wymiarów finansowych, które są używane na tych kartach, klikając **Konfiguruj mój obszar roboczy**. Można kliknąć opcję **Menedżerowie jednostki**, aby wyświetlić pracowników odpowiedzialnych za określone kombinacje wymiarów finansowych wybrane na tych kartach. Na przykład, jeśli zobaczysz, że budżet wydatków działu operacji przekracza próg, możesz łatwo znaleźć menedżera działu operacji i skontaktować się z nim w celu omówienia problemu. 

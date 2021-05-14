@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 2d1f8ed9def03afc97c0b4c5ea86430ff089aac6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cef7abbbf2a94e26b6b9e66492cd7347d3b4d1f2
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819239"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920068"
 ---
 # <a name="rebate-management-groups"></a>Zarządzanie rabatami — grupy
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Obliczenia rabatów i potrąceń mogą być oparte na grupach. Grupy zarządzania rabatami mogą być tworzone dla odbiorców, dostawców i towarów. Można je dołączyć do rekordu głównego.
 

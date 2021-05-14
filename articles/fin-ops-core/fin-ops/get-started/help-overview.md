@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e33a2d4c50d17125a91b3b55b46626c6199575c8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: d88801baafb9a6decfb6c04f708b3f7e1257b487
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897823"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923453"
 ---
 # <a name="help-system"></a>System Pomocy
 
@@ -39,7 +39,7 @@ We wszystkich tych aplikacjach pomoc specyficzna dla produktu jest dostępna z p
 
 ## <a name="help-on-docsmicrosoftcom"></a>Pomoc w witrynie docs.microsoft.com
 
-Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) to domyślne źródło dokumentacji produktu dla wymienionych wcześniej aplikacji. Witryna ta oferuje następujące funkcje:
+Witryna docs.microsoft.com ([docs.microsoft.com/dynamics365/](/dynamics365/)) to domyślne źródło dokumentacji produktu dla wymienionych wcześniej aplikacji. Witryna ta oferuje następujące funkcje:
 
 - **Dostęp do najaktualniejszych treści** — dzięki witrynie Microsoft szybciej i elastyczniej tworzy, dostarcza i aktualizuje dokumentację produktu. Dzięki temu masz łatwy dostęp do najnowszych informacji technicznych.
 - **Zawartość pisana przez ekspertów** — zawartość witryny jest otwarta i pozwala na współtworzenie przez członków społeczności wewnątrz firmy Microsoft i poza nią.
@@ -50,7 +50,7 @@ Zawartość witryny docs.microsoft.com można znaleźć przy użyciu dowolnej wy
 
 Aby subskrybować kanał informacyjny RSS (Really Simple Syndication) obejmujący wszystkie aktualizacje dotyczące zawartości witryny docs.microsoft.com, wybierz następujący link:
 
-[Źródło danych RSS](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
+[Źródło danych RSS](/api/search/rss?$filter=scopes%2fany(t%3a+t+eq+%27Unified+Operations%27)&locale=en-us)
 
 ### <a name="leave-us-feedback"></a>Zostaw nam opinię
 
@@ -73,7 +73,7 @@ Użytkownik może tworzyć i edytować dokumentacje. Aby rozpocząć, wybierz pr
 
 Wideo [Jak należy przyczyniać się do dokumentacji Microsoft Dynamics 365](https://youtu.be/m5djioozRbg) (pokazany powyżej), jest zawarty w kanale YouTube Microsoft Dynamics 365 w systemie.
 
-Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współautorów witryny Docs](https://docs.microsoft.com/contribute) opublikowanego przez zespół, który stworzył witrynę docs.microsoft.com.
+Aby uzyskać więcej informacji, zapoznaj się z [podręcznikiem dla współautorów witryny Docs](/contribute) opublikowanego przez zespół, który stworzył witrynę docs.microsoft.com.
 
 > [!NOTE]
 > Obecnie akceptujemy współtworzenie tylko treści w języku angielskim.
@@ -155,12 +155,13 @@ W poniższej tabeli wymieniono nasze witryny internetowe. Witryny z gwiazdką (\
 | Oddział | opis |
 |------|-------------|
 | [Docs.microsoft.com](/dynamics365/) | Ta strona hostuje dokumentację wszystkich produktów dla rozwiązania Dynamics 365 lub łączy się z nią. |
-| [Microsoft Learn](https://docs.microsoft.com/learn/) | Jest to bezpłatna witryna programu Microsoft eLearning. |
+| [Microsoft Learn](/learn/) | Jest to bezpłatna witryna programu Microsoft eLearning. |
 | [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/)\* | Ta witryna oferuje obszar roboczy współpracy oparty na chmurze, w którym klienci i ich partnerzy mogą całościowo zarządzać projektami — od przedsprzedaży po wdrożenie i bieżącą eksploatację. Jest ona przydatna we wszystkich fazach implementacji. |
 | [Blog pomocy technicznej](https://aka.ms/AXSupportBlog) | Ta witryna zawiera porady i wskazówki publikowane przez zespół pomocy technicznej. |
 | [Docs.microsoft.com/poprzednie wersje](/previous-versions/dynamics/) | Ta strona hostuje zawartość z poprzednich wydań. |
 | [Społeczność użytkowników produktów Dynamics](https://community.dynamics.com/) | Ta witryna hostuje blogi, fora i wideo. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Ta witryna zawiera informacje na temat oceny i sprzedaży. |
+
 
 
 

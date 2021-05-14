@@ -2,7 +2,7 @@
 title: Odłóż wykonanie elementów sekwencji XML w formatach ER
 description: W tym temacie wyjaśniono, jak odroczyć wykonanie elementu XML w formacie modułu raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894059"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944492"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Odłóż wykonanie elementów sekwencji XML w formatach ER
 
@@ -59,14 +59,14 @@ Jeśli nie zakończono jeszcze analizy przykładu, w sekcji [Wstrzymaj wykonywan
 
 | Opis zawartości            | Nazwa pliku |
 |--------------------------------|-----------|
-| Konfiguracja modelu danych ER    | [Model do nauki elementów odłożonych.version.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Sesja mapowania konfiguracji modelu ER | [Mapowanie do nauki elementów odłożonych.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Konfiguracja modelu danych ER    | [Model do nauki elementów odłożonych.version.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Sesja mapowania konfiguracji modelu ER | [Mapowanie do nauki elementów odłożonych.version.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Przed rozpoczęciem należy również pobrać i zapisać następującą konfigurację przykładowego rozwiązania ER na maszynę lokalną.
 
 | Opis zawartości     | Nazwa pliku |
 |-------------------------|-----------|
-| ER format konfiguracji | [Format do nauki odłożonych elementów XML.version.1.1.xml.](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER format konfiguracji | [Format do nauki odłożonych elementów XML.version.1.1.xml.](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importuj przykładowe konfiguracje formatu ER
 
@@ -164,7 +164,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
 1. Na stronie **Projektant formatów** wybierz opcję **Uruchom**.
 2. Pobierz plik oferowany przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredXml-Run.png)
+    ![Pobrany plik w zaimportowanym formacie](./media/ER-DeferredXml-Run.png)
 
 Zauważ, że węzeł podsumowania przedstawia sumę wartości podatku dla przetwarzanych transakcji. Ponieważ format jest skonfigurowany do używania powiązania **model.Data.Summary.Total**, aby zwrócić tę sumę, suma jest obliczana przez wywołanie agregacji **TotalSum** dla **zgrupowanego** źródła danych typu *GroupBy*, który korzysta z mapowania modelu. Aby można było obliczyć tę agregację, mapowanie modeli powtarza się dla wszystkich transakcji, które zostały wybrane w **filtrowanym** źródle danych. Porównując czasy wykonania węzła podsumowania z ostatnim węzłem rekordu, można ustalić, że obliczenie sumy trwało 12 milisekund (ms). Porównując czasy wykonania pierwszego i ostatniego węzła rekordów, można ustalić, że wygenerowanie węzłów rekordów zajęło 9 milisekund (ms). W związku z tym wymagana było 21 ms.
 
@@ -196,7 +196,7 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 11. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 12. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredXml-Run1.png)
+    ![Wygenerowana lista wartości podatku z sumą bieżącą](./media/ER-DeferredXml-Run1.png)
 
     Ostatni węzeł rekordów zawiera bieżącą sumę wartości podatku, które są obliczane dla wszystkich przetworzonych transakcji przy użyciu wygenerowanego wyniku jako źródła danych. To źródło danych rozpoczyna się od początku raportu i jest kontynuowane przez ostatnią transakcję podatkową. Węzeł podsumowania zawiera sumę wartości podatku dla wszystkich przetworzonych transakcji, które są obliczane w mapowaniu modelu przy użyciu źródła danych typu *GroupBy*. Zauważ, że te wartości są równe. Z tego względu można użyć sumowania danych wyjściowych zamiast **GroupBy**. Porównując czasy wykonania pierwszego węzła rekordów i węzła podsumowania, można ustalić, że wygenerowanie wszystkich rekordów i sumowanie zajęło 11 milisekund (ms). Z tego względu, jeśli chodzi o generowanie węzłów rekordów i sumowanie wartości podatku, zmodyfikowany format jest o około dwa razy szybszy niż format oryginalny.
 
@@ -205,7 +205,7 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 15. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 16. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredXml-Run2.png)
+    ![Wygenerowana lista wartości podatku przy użyciu edytowanej formuły](./media/ER-DeferredXml-Run2.png)
 
     Należy zauważyć, że suma bieżąca wartości podatku w ostatnim węźle rekordów jest teraz równa sumie w węźle podsumowania.
 
@@ -218,7 +218,7 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredXml-Run3.png)
+    ![Pobrany plik wartości podatku dla nagłówka raportu](./media/ER-DeferredXml-Run3.png)
 
     Należy zauważyć, że suma wartości podatku w węźle jest teraz równa 0 (zero), ponieważ ta suma jest teraz obliczana na podstawie wygenerowanych danych wyjściowych. Po wygenerowaniu pierwszego węzła rekordów wygenerowane dane wyjściowe nie zawierają jeszcze węzłów rekordów z informacjami o transakcjach. Można skonfigurować ten format, aby odroczyć wykonanie elementu sekwencji **Raport\\Wiadomość\\Podsumowanie**, dopóki sekwencja **Raport\\Wiadomość\\Rekord** nie zostanie uruchomiony dla wszystkich wierszy raportu dla transakcji podatkowych.
 
@@ -232,7 +232,7 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik](./media/ER-DeferredXml-Run4.png)
+    ![Pobrany plik odroczonego wykonania](./media/ER-DeferredXml-Run4.png)
 
     Element sekwencji **Raport\\Wiadomość\\Podsumowanie** jest teraz uruchamiany tylko po uruchomieniu wszystkich pozostałych elementów zagnieżdżonych pod jego elementem **Raport\\Wiadomość**. Dlatego jest uruchamiany po uruchomieniu elementu sekwencji **Raport\\Wiadomość\\Rekord** dla wszystkich transakcji podatkowych źródła danych **model.Data.List**. Czasy wykonania pierwszego i ostatniego rekordu oraz węzły nagłówka i podsumowania ujawniają ten fakt.
 

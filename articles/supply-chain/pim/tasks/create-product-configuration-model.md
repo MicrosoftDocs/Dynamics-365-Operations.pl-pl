@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b87b411ed24f89a674ec3fb7ac44d3ab1d8a720a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2cb9e33d7bab6ca9cd378ec40baa796d1a933ece
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819994"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921372"
 ---
 # <a name="create-a-product-configuration-model"></a>Tworzenie modelu konfiguracji produktu
 
@@ -28,57 +28,59 @@ W tej procedurze pokazano sposób tworzenia modelu konfiguracji produktu i wprow
 
 
 ## <a name="create-a-product-model"></a>Tworzenie modelu produktu
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Modele konfiguracji produktu.
-3. Kliknij przycisk Nowy.
-4. W polu Nazwa wpisz wartość.
-5. Wypełnij pole Opis.
-6. W polu Strategia zmiennej wybierz opcję.
+
+1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
+1. Wybierz pozycję **Nowy**.
+1. W polu **Nazwa** wpisz wartość.
+1. W polu **Opis** wpisz wartość.
+1. W polu **Strategia zmiennej** wybierz opcję.
     * Strategia zmiennej określa sposób przetwarzania ograniczeń w modelu konfiguracji produktu opartej na ograniczeniach. Wybranie tej opcji może mieć wpływ na działanie modelu konfiguracji produktu.  
-7. W polu Nazwa wpisz wartość.
+1. W polu **Nazwa** wpisz wartość.
     * Składnik główny reprezentuje modelu konfiguracji produktu, ale może być używany również w innych modelach produktów.  
-8. Kliknij przycisk OK.
-9. W polu Użyj ponownie konfiguracji wybierz opcję.
+1. Kliknij przycisk **OK**.
+1. W polu **Użyj ponownie konfiguracji** wybierz opcję.
     * Jeśli parametr Użyj ponownie konfiguracji jest ustawiony na Tak, system będzie sprawdzał istnienie identycznych konfiguracji po każdej sesji konfigurowania i wykorzystywał je, jeśli znajdzie dokładne odpowiedniki.  
 
 ## <a name="add-attributes"></a>Dodaj atrybuty
-1. Rozwiń sekcję Atrybuty.
-2. Kliknij przycisk Dodaj.
+
+1. Rozwiń sekcję **Atrybuty**.
+2. Wybierz opcję **Dodaj**.
 3. Na liście oznacz wybrany wiersz.
-4. W polu Nazwa wpisz wartość.
-5. W polu Nazwa zmiennej wpisz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. W polu **Nazwa zmiennej** wpisz wartość.
     * Nazwa zmiennej jest używana przez solver ograniczeń w konfiguratorze produktów. Nie może zawierać spacji ani znaków specjalnych, z wyjątkiem _(podkreślenia).  
-6. Wypełnij pole Opis.
+6. W polu **Opis** wpisz wartość.
     * Tekst opisu jest wyświetlany użytkownikowi konfiguracji i dlatego może służyć jako pomoc przy wyborze odpowiedniej wartość atrybutu.  
-7. W polu Typ atrybutu wprowadź lub wybierz wartość.
+7. W polu **Typ atrybutu** wprowadź lub wybierz wartość.
     * Typ atrybutu określa, które wartości są dostępne dla atrybutu.  
-8. Zaznacz pole wyboru Uwzględnij w ponownym użyciu.
+8. Zaznacz pole wyboru **Uwzględnij w ponownym użyciu**.
     * Ta opcja jest dostępna tylko po zaznaczeniu opcji Użyj ponownie konfiguracji. Zaznaczenie pola wyboru Uwzględnij w ponownym użyciu spowoduje, że atrybut będzie brany pod uwagę, gdy system szuka dokładnie pasującego elementu.  
 
 ## <a name="add-subcomponents"></a>Dodawanie podskładników
-1. Rozwiń sekcję Składniki podrzędne.
-2. Kliknij przycisk Dodaj.
+
+1. Rozwiń sekcję **Składniki podrzędne**.
+2. Wybierz opcję **Dodaj**.
 3. Na liście oznacz wybrany wiersz.
-4. W polu Nazwa wpisz wartość.
-5. W polu Nazwa zmiennej wpisz wartość.
-6. Wypełnij pole Opis.
-7. W polu Składnik wprowadź lub wybierz wartość.
+4. W polu **Nazwa** wpisz wartość.
+5. W polu **Nazwa zmiennej** wpisz wartość.
+6. W polu **Opis** wpisz wartość.
+7. W polu **Składnik** wprowadź lub wybierz wartość.
     * Każdy podskładnik musi się odwoływać do definicji składnika. Ten projekt obsługuje składniki wielokrotnego użytku i zapewnia, że po zdefiniowaniu składnika będzie go może używać w wielu modelach produktów.  
-8. Kliknij przycisk Zapisz.
-9. Kliknij opcję Szczegóły wiersza BOM.
+8. Wybierz opcję **Zapisz**.
+9. Wybierz opcję **Szczegóły wiersza BOM**.
     * Formularz Szczegóły wiersza BOM pozwala użytkownikowi wybrać wymagane właściwości podskładnika. Każdej właściwości można nadać stałą wartość lub zmapować ją na atrybut. Mapowanie na atrybut spowoduje, że właściwość wiersza BOM będzie otrzymywać różne wartości w zależności od wybranej konfiguracji.  
-10. W polu Numer towaru wprowadź lub wybierz wartość.
+10. W polu **Kod towaru** wpisz lub wprowadź wartość.
     * Każdy podskładnik reprezentuje konfigurowalny produkt główny z technologią konfiguracji opartej na ograniczeniach. Odwoływanie odbywa się za pomocą numeru towaru.  
-11. Zaznacz pole wyboru Ustaw.
-12. W polu Obliczanie wybierz opcję Tak.
+11. Zaznacz pole wyboru **Ustaw**.
+12. W polu **Obliczanie** wybierz opcję **Tak**.
     * Ustawienie opcji obliczania zapewnia, że produkt będzie uwzględniany przy wykonywaniu obliczeń kosztów dla produktu.  
-13. Kliknij kartę Ustawienia.
-14. Zaznacz pole wyboru Ustaw.
-15. Wprowadź liczbę w polu Ilość.
+13. Kliknij kartę **Konfiguracja**.
+14. Zaznacz pole wyboru **Ustaw**.
+15. W polu **Ilość** wpisz liczbę.
     * Pole ilości określa, jaka część tego produktu będzie zużywana w skonfigurowanym produkcie.  
-16. Zaznacz pole wyboru Ustaw.
-17. W polu W serii wprowadź liczbę.
-18. Kliknij przycisk OK.
+16. Zaznacz pole wyboru **Ustaw**.
+17. W polu **W serii** wprowadź liczbę.
+18. Kliknij przycisk **OK**.
 
 
 

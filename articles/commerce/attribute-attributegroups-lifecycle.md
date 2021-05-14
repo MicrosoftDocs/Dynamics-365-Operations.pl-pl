@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797264"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936811"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Zarządzanie atrybutami i grupami atrybutów
 
@@ -101,7 +101,7 @@ Poniżej przedstawiono pozostałe opcje metadanych atrybutów dostępne na stron
 
 Te opcje były pierwotnie przeznaczone do poprawy funkcji wyszukiwania w sklepach internetowych. Co prawda usługa Commerce nie zawiera w standardzie funkcjonalności sklepu internetowego, ale obejmuje zestaw SDK do opracowywania oprogramowania do handlu elektronicznego. Odbiorcy mogą używać tego zestawu SDK do wprowadzania produktów do dowolnych indeksów wyszukiwania. Mimo iż dane produktów są importowane, odbiorcy nadal powinni być w stanie odróżniać dane, które można przeszukiwać, na których można wykonywać zapytania itd. W ten sposób mogą zbudować optymalny indeks obejmujący tylko atrybuty, które *w ich opinii* powinny być indeksowane.
 
-Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Aby uzyskać więcej informacje o przeznaczeniu tych pozostałych opcji, zobacz [Omówienie schematu wyszukiwania w programie SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Ustawienia filtrów atrybutów
 

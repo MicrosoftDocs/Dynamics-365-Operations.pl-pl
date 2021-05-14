@@ -2,7 +2,7 @@
 title: Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 description: Ten temat zawiera informacje o funkcji umożliwiającej skalowanie jednostek miar na uruchamianie wybranych procesów z poziomu obciążenia pracą w module Zarządzanie magazynem.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,17 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899174"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944420"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Nie wszystkie funkcje zarządzania magazynem w firmie są w pełni obsługiwane w przypadku magazynów, w których jest uruchomione obciążenie pracą z jednostką skalowania. Należy pamiętać, aby użyć tylko tych procesów, które opisano w tym temacie jako obsługiwane.
@@ -49,15 +48,16 @@ Jednostka skali może obsługiwać tylko te dane, które są z nią właściciel
 
 Jednostki skali dzielą się na następujące dane:
 
-- **Dane przetwarzania grupy czynności** — wybrane metody przetwarzania grupy czynności są obsługiwane jako część przetwarzania grupy czynności skali.
-- **Dane przetwarzania pracy** — obsługiwane są następujące typy przetwarzania zamówień pracy:
+- **Dane przetwarzania grupy wysyłek** — wybrane metody przetwarzania grupy czynności są obsługiwane jako część przetwarzania grupy czynności skali.
+- **Dane przetwarzania pracy** — praca magazynowa utworzona na jednostkę skalowania będzie należeć do określonej jednostki skalowania. Obsługiwane są następujące typy przetwarzania zlecenia:
 
   - **Przesunięcia zapasów** (ręczne przenoszenie i przenoszenie według pracy według szablonu)
+  - **Inwentaryzacja ciągła** oraz proces zatwierdzania/odrzucania w ramach operacji inwentaryzacji
   - **Zamówienia zakupu** (praca odłożenia za pośrednictwem zamówienia magazynowego, jeśli zamówienia zakupu nie są skojarzone z ładunkami)
   - **Zamówienia zakupu** (prosta praca pobierania i ładowania)
   - **Zamówienia przeniesienia** (tylko wychodzące z prostą pracą pobierania i ładowania)
 
-- **Dane przyjęcia zamówienia magazynowego** — te dane są używane tylko dla zamówień zakupu, które są ręcznie zwalniane do magazynu.
+- **Dane przyjęcia zamówienia magazynowego** — te dane są używane tylko dla zamówień zakupu, które zostały zwolnione do magazynu.
 - **Dane numeru identyfikacyjnego — numery identyfikacyjne** mogą być tworzone na koncentratorze i w jednostkach skali. Dostarczono dedykowaną obsługę konfliktów. Zauważ, że te dane nie są właściwe dla magazynu.
 
 ## <a name="outbound-process-flow"></a>Przepływ procesu wychodzącego
@@ -72,6 +72,14 @@ Jednostki te są zależne od rzeczywistego przetwarzania grupy czynności (np. p
 
 ![Przetwarzanie przepływu grupy czynności](./media/wes-wave-processing-ga.png "Przetwarzanie przepływu grupy czynności")
 
+### <a name="process-work-and-ship"></a>Przetwarzanie pracy i wysyłki
+
+Gdy tylko ostateczny proces pracy odłoży zapasy w końcowej lokalizacji wysyłki (bramie dokowej), jednostka skalowania wysyła do centrum sygnał, aby zaktualizować transakcje magazynowe dokumentu źródłowego na stan *Pobrano*. Dopóki ten proces nie zostanie uruchomiony i nie zostanie zsynchronizowany ponownie, stan dostępnych zapasów dla obciążenia jednostki skalowania będzie fizycznie zarezerwowany na poziomie magazynu.
+
+Gdy centrum zaktualizuje stan transakcji na *Pobrano*, może przetwarzać potwierdzenie wysyłki wychodzącej oraz skojarzony z nim dokument dostawy sprzedaży lub wysyłkę zamówienia przeniesienia dla obciążenia pracą.
+
+![Przepływ przetwarzania wychodzącego](./media/WES-outbound-processing-19.png "Przepływ przetwarzania wychodzącego")
+
 ## <a name="inbound-process-flow"></a>Przepływ procesu przychodzącego
 
 Piasta posiada następujące dane:
@@ -82,8 +90,8 @@ Piasta posiada następujące dane:
 
 > [!NOTE]
 > Przychodzący przepływ zamówienia zakupu różni się pod względem koncepcji od przepływu wychodzącego. Ten sam magazyn można obsługiwać w jednostce skalowania lub centrum w zależności od tego, czy zamówienie zakupu zostało zwolnione do magazynu, czy nie. Po zwolnieniu zamówienia do magazynu można pracować z tym zamówieniem wyłącznie po zalogowaniu się do jednostki skalowania.
-
-Jeśli jest używana funkcja *Zwalniania do magazynu*, tworzone są [*zamówienia magazynowe*](cloud-edge-warehouse-order.md), a do jednostki skali jest przypisana własność powiązanego przepływu przyjęcia. Centrum nie będzie mogło zarejestrować przyjęcia przychodzącego.
+>
+> Jeśli jest używana funkcja *Zwalniania do magazynu*, tworzone są [*zamówienia magazynowe*](cloud-edge-warehouse-order.md), a do jednostki skali jest przypisana własność powiązanego przepływu przyjęcia. Centrum nie będzie mogło zarejestrować przyjęcia przychodzącego.
 
 Należy się zalogować do centrum, aby zainicjować proces *zwalniania do magazynu*. Przejdź na jedną z następujących stron, aby go uruchomić lub zaplanować:
 
@@ -97,6 +105,10 @@ Pracownicy magazynu mogą uruchomić proces odbioru za pomocą aplikacji Warehou
 Jeśli nie są używane *procesy magazynowe*, a w związku z tym nie są używane *zamówienia magazynowe*, centrum może przetwarzać przyjęcie magazynowe i przetwarzanie pracy niezależnie od jednostek skalowania.
 
 ![Przepływ procesu przychodzącego](./media/wes-inbound-ga.png "Przepływ procesu przychodzącego")
+
+Jeśli rejestrowanie przychodzące jest wykonywane w procesie przyjęcia przy użyciu aplikacji magazynowej w odniesieniu do zamówienia magazynowego jednostki skalowania, obciążenie jednostki skalowania będzie sygnalizować centrum, aby zaktualizować stan powiązanej transakcji wiersza zamówieni zakupu na *Zarejestrowane*. Po zakończeniu tego zadania będzie można uruchomić w centrum przyjęcie produktu zamówienia zakupu.
+
+![Przepływ przetwarzania przychodzącego](./media/WES-inbound-processing-19.png "Przepływ przetwarzania przychodzącego")
 
 ## <a name="supported-processes-and-roles"></a>Obsługiwane procesy i role
 
@@ -115,10 +127,13 @@ Użytkownicy, którzy działają jako kierownicy magazynu tylko w jednostkach sk
 Następujące procesy wykonania magazynu mogą być włączone dla WES obciążenia pracą jednostki skali:
 
 - Wybrane metody grupy czynności dla zamówień sprzedaży i przeniesienia (alokacja, uzupełnianie zapasów popytu, konteneryzacja, tworzenie pracy i drukowanie etykiet grupy czynności)
-- Przetwarzanie pracy magazynowej zamówień sprzedaży i przeniesienia przy użyciu aplikacji Warehouse Management (łącznie z pracą uzupełniania zapasów)
-- Badanie dostępnych zapasów przy użyciu aplikacji Warehouse Management
-- Tworzenie i uruchamianie przesunięć magazynowych przy użyciu aplikacji Warehouse Management
-- Rejestrowanie zamówień zakupu i wykonywanie odłożenia pracy przy użyciu aplikacji Warehouse Management
+
+- Przetwarzanie pracy magazynowej zamówień sprzedaży i przeniesienia przy użyciu aplikacji magazynu (łącznie z pracą uzupełniania zapasów)
+- Badanie dostępnych zapasów przy użyciu aplikacji magazynowej
+- Tworzenie i uruchamianie przesunięć magazynowych przy użyciu aplikacji magazynowej
+- Tworzenie i przetwarzanie pracy inwentaryzacji ciągłej za pomocą aplikacji magazynowej
+- Wykonywanie korekt zapasów przy użyciu aplikacji magazynowej
+- Rejestrowanie zamówień zakupu i wykonywanie odłożenia pracy przy użyciu aplikacji magazynowej
 
 Następujące typy zleceń roboczych są obecnie obsługiwane w przypadku obciążeń WES w wdrożeniach jednostek skali:
 
@@ -126,9 +141,10 @@ Następujące typy zleceń roboczych są obecnie obsługiwane w przypadku obcią
 - Wydanie przeniesienia
 - Uzupełnianie zapasów
 - Przesunięcie magazynowe
+- Inwentaryzacja ciągła
 - Zamówienia zakupu (połączone z zamówieniami magazynowymi)
 
-Obecnie żadne inne typy przetwarzania dokumentów źródłowych nie są obsługiwane w jednostkach skali. Na przykład w przypadku obciążenia pracą WES w jednostce skalowania nie można wykonać procesu przyjęcia zamówienia przeniesienia (przyjęcie przeniesienia) ani procesu inwentaryzacji cyklicznej.
+Obecnie żadne inne typy przetwarzania dokumentów źródłowych nie są obsługiwane w jednostkach skali. Na przykład w przypadku obciążenia pracą WES w jednostce skalowania nie można wykonać procesu przyjęcia zamówienia przeniesienia (przyjęcie przeniesienia) i musi ono zostać przetworzone przez wystąpienie centrum.
 
 > [!NOTE]
 > Elementy menu i przyciski menu urządzenia przenośnego dla nieobsługiwanych funkcji nie są pokazywane w _aplikacji Warehouse Management_, jeśli są połączone z wdrożeniem jednostki skalowania.
@@ -160,7 +176,6 @@ Następująca funkcja zarządzania magazynem nie jest obecnie obsługiwana w obc
 - Przetwarzanie ujemnych dostępnych zapasów
 - Przetwarzanie pracy magazynowej z niestandardowymi typami pracy
 - Przetwarzanie pracy magazynowej z uwagami do wysyłki
-- Przetwarzanie pracy magazynowej z wyzwalaniem progu inwentaryzacji ciągłej
 - Przetwarzanie pracy magazynowej przy użyciu automatyzacji obsługi materiałów/magazynu
 - Korzystanie z obrazu danych produktu głównego (na przykład w aplikacji Warehouse Management)
 
@@ -186,14 +201,14 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 | Obsługa wysyłek dla grupy czynności                                  | Tak | Nr |
 | Przetwarzanie pracy magazynowej (z uwzględnieniem numeru identyfikacyjnego na płycie licencyjnej)        | Nr  | <p>Tak, ale tylko dla wyżej wymienionych obsługiwanych możliwości. |
 | Wybór grupy                                              | Nr  | Tak|
-| Ręczne przetwarzanie pakowania, w tym przetwarzanie pracy „Pobieranie zapakowanych kontenerów”                                           | Nr <P>Niektóre operacje mogą być wykonywane po początkowym procesie pobierania obsługiwanym przez jednostkę skalowania, ale nie jest to zalecane z powodu następujących zablokowanych operacji.</p>  | Nr  |
-| Usuń kontener z grupy                        | Nr  | Nr                           |
+| Ręczne przetwarzanie pakowania, w tym przetwarzanie pracy „Pobieranie zapakowanych kontenerów” | Nr <P>Niektóre operacje mogą być wykonywane po początkowym procesie pobierania obsługiwanym przez jednostkę skalowania, ale nie jest to zalecane z powodu następujących zablokowanych operacji.</p>  | Nr |
+| Usuń kontener z grupy                                  | Nr  | Nr |
 | Przetwarzanie sortowania wychodzących                                  | Nr  | Nr |
 | Drukowanie dokumentów powiązanych z ładunkiem                           | Tak | Nr |
 | List przewozowy i generowanie WPW                            | Tak | Nr |
-| Potwierdzenie wysyłki                    | Tak  | Nr |
-| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”                    | Nr  | Nr |
-| Przetwarzanie dokumentów dostawy i faktur                | Tak | Nr |
+| Potwierdzenie wysyłki                                             | Tak | Nr |
+| Potwierdzenie wysyłki z „potwierdzeniem i przeniesieniem”            | Nr  | Nr |
+| Przetwarzanie dokumentów dostawy i faktur                        | Tak | Nr |
 | Szybkie pobranie (zamówienia sprzedaży i przeniesienia)                    | Nr  | Nr |
 | Nadmiarowe pobranie (zamówienia sprzedaży i przeniesienia)                     | Nr  | Nr |
 | Zmiana lokalizacji pracy (zamówienia sprzedaży i przeniesienia)         | Nr  | Tak|
@@ -212,31 +227,31 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 
 | Przetwarzaj                                                          | Piasta | WES obciążenie jednostki skali<BR>*(Pozycje oznaczone jako „Tak” dotyczą tylko zamówień magazynowych)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Przetwarzanie &nbsp;dokumentu&nbsp; źródłowego                                       | Tak | Nr |
+| Przetwarzanie &nbsp;dokumentu&nbsp; źródłowego                             | Tak | Nr |
 | Zarządzanie procesem załadunku i transportu                    | Tak | Nr |
-| Potwierdzenie wysyłki wychodzącej                                            | Tak | Nr |
+| Potwierdzenie wysyłki wychodzącej                                    | Tak | Nr |
 | Zwolnienie zamówienia zakupu do magazynu (przetwarzanie zamówienia magazynowego) | Tak | Nr |
-| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p>          | Tak | Nr |
+| Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p> | Tak | Nr |
 | Przyjęcie i odłożenie pozycji z zamówienia zakupu                       | <p>Tak, &nbsp;gdy &nbsp;nie ma&nbsp; zamówienia magazynowego</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p> |
-| Przyjęcie i odłożenie wiersza zamówienia zakupu                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p></p> |
-| Zwróć odebrane zamówienie i odłóż                               | Tak | Nr |
-| Przyjęcie i odłożenie mieszanego numeru identyfikacyjnego                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Odbierana pozycja ładunku                                             | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Odbieranie numeru identyfikacyjnego i odłożenie                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przyjmowanie i odkładanie pozycji z zamówienia przeniesienia                        | Tak | Nr |
-| Przyjęcie i odłożenie wiersza zamówienia przeniesienia                        | Tak | Nr |
-| Anuluj pracę (przychodzące)                                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, ale tylko gdy zaznaczenie opcji <b>Wyrejestrowywanie paragonu podczas anulowania pracy</b> (na stronie <b>parametrów zarządzania magazynem</b>) zostanie usunięte</p> |
-| Zamówienie zakupu — przetwarzanie dokumentu przyjęcia produktów                          | Tak | Nr |
-| Przyjęcie zamówienia zakupu z dostawą z niedoborem                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak, ale tylko przez zgłoszenie wniosku o anulowanie z centrum |
-| Przyjęcie zamówienia zakupu z dostawą z nadmiarem                        | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak  |
-| Przyjęcie z utworzeniem pracy *przeładunku kompletacyjnego*                   | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
+| Przyjęcie i odłożenie wiersza zamówienia zakupu                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p></p> |
+| Zwróć odebrane zamówienie i odłóż                              | Tak | Nr |
+| Przyjęcie i odłożenie mieszanego numeru identyfikacyjnego                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
+| Odbierana pozycja ładunku                                              | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
+| Odbieranie numeru identyfikacyjnego i odłożenie                             | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
+| Przyjmowanie i odkładanie pozycji z zamówienia przeniesienia                       | Tak | Nr |
+| Przyjęcie i odłożenie wiersza zamówienia przeniesienia                       | Tak | Nr |
+| Anuluj pracę (przychodzące)                                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, ale tylko gdy zaznaczenie opcji <b>Wyrejestrowywanie paragonu podczas anulowania pracy</b> (na stronie <b>parametrów zarządzania magazynem</b>) zostanie usunięte</p> |
+| Zamówienie zakupu — przetwarzanie dokumentu przyjęcia produktów                        | Tak | Nr |
+| Przyjęcie zamówienia zakupu z dostawą z niedoborem                      | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak, ale tylko przez zgłoszenie wniosku o anulowanie z centrum |
+| Przyjęcie zamówienia zakupu z dostawą z nadmiarem                       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Tak  |
+| Przyjęcie z utworzeniem pracy *przeładunku kompletacyjnego*                 | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
 | Przyjęcie z utworzeniem pracy *zlecenia kontroli jakości*                  | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
 | Przyjęcie z utworzeniem pracy *zlecenia wyrywkowej kontroli jakości*          | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
 | Przyjęcie z utworzeniem pracy *jakości w kontroli jakości*       | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
 | Przyjęcie z utworzeniem zlecenia kontroli jakości                            | <p>Tak, jeśli nie istnieje zamówienie magazynowe</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | Nr |
-| Przetwarzanie pracy — skierowane przez *odłożenie klastra*                             | Tak | Nr |
-| Przetwarzanie pracy z *szybkim pobraniem*                                           | Tak | Nr |
-| Ładowanie numeru identyfikacyjnego                                           | Tak | Nr |
+| Przetwarzanie pracy — skierowane przez *odłożenie klastra*                 | Tak | Nr |
+| Przetwarzanie pracy z *szybkim pobraniem*                               | Tak | Nr |
+| Ładowanie numeru identyfikacyjnego                                           | Tak | Tak |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Operacje magazynowe i przekazywanie wyjątków
 
@@ -251,10 +266,10 @@ W poniższej tabeli pokazano, które operacje magazynowe i obsługa wyjątków s
 | Transakcje                                           | Tak | Tak                          |
 | Przeniesienie według szablonu                               | Tak | Tak                          |
 | Przeniesienie magazynu                                 | Tak | Nr                           |
-| Tworzenie zamówienia przeniesienia z aplikacji mobilnej Warehouse Management           | Tak | Nr                           |
-| Korekta (wejście/wyjście)                                | Tak | Nr                           |
+| Tworzenie zamówienia przeniesienia z aplikacji magazynu           | Tak | Nr                           |
+| Korekta (wejście/wyjście)                                | Tak | Tak, ale nie dla skorygowanego scenariusza, w którym rezerwacja zapasów musi zostać usunięta przy użyciu ustawienia **Usuń rezerwacje** w typach korekt zapasów.</p>                           |
 | Zmiana stanu zapasów                            | Tak | Nr                           |
-| Przetwarzanie rozbieżności w inwentaryzacji ciągłej | Tak | Nr                           |
+| Przetwarzanie rozbieżności w inwentaryzacji ciągłej | Tak | Tak                           |
 | Ponowny druk etykiety (drukowanie etykiet numeru identyfikacyjnego)             | Tak | Tak                          |
 | Kompilacja numerów identyfikacyjnych                                | Tak | Nr                           |
 | Przerwa dotycząca numeru identyfikacyjnego                                | Tak | Nr                           |
@@ -286,11 +301,9 @@ Kilka zadań wsadowych uruchamianych jest zarówno dla centrum, jak i jednostki 
 
 W rozmieszczeniu centrum można ręcznie zarządzać zadaniami wsadowymi. Zadaniami wsadowymi można zarządzać w obszarze **Zarządzanie magazynem \> Zadania okresowe \> Zarządzanie obciążeniem backoffice**:
 
-- Przetwarzanie zdarzeń aktualizacji stanu pracy
 - Procesor komunikatów jednostki skalowania do piasty
 - Rejestruj przyjęcia zamówień źródłowych
 - Zakończ zamówienia magazynowe
-- Przetwórz odpowiedzi na aktualizację ilości dla wierszy zamówienia magazynowego
 
 W obciążeniu w jednostce skali tymi zadaniami wsadowymi można zarządzać w obszarze **Zarządzanie magazynem \> Zadania okresowe \> Zarządzanie obciążeniem**:
 
@@ -299,6 +312,5 @@ W obciążeniu w jednostce skali tymi zadaniami wsadowymi można zarządzać w o
 - Przetwórz żądania aktualizacji ilości dla wierszy zamówienia magazynowego
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

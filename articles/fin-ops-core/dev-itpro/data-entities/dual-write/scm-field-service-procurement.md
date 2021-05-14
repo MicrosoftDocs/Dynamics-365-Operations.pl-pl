@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: fcbede8b1a0a9a1dfcb9acbfd7cadb49eb48eecd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750697"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941116"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integracja zaopatrzenia między aplikacjami Supply Chain Management i Field Service
 
@@ -46,7 +46,7 @@ Aby zintegrować aplikację Supply Chain Management z usługą Field Service, na
 ### <a name="prerequisites"></a>Wymagania wstępne
 
 - **Podwójny zapis** — aby uzyskać więcej informacji, zobacz temat [Strona główna podwójnego zapisu](dual-write-home-page.md#dual-write-setup).
-- **Dynamics 365 Field Service** — aby uzyskać więcej informacji, zobacz temat [Jak zainstalować aplikację Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dynamics 365 Field Service** — aby uzyskać więcej informacji, zobacz temat [Jak zainstalować aplikację Dynamics 365 Field Service](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Gdy są one włączone w usłudze Microsoft Dataverse, podwójny zapis i usługa Field Service wprowadzają kilka warstw rozwiązania rozszerzających środowisko o nowe metadane, formularze, widoki i logikę. Te rozwiązania można włączyć w dowolnej kolejności, chociaż instalacja jest zazwyczaj przeprowadzana w podanej tutaj kolejności:
 

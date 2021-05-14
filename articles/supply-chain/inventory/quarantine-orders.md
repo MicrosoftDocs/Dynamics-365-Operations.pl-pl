@@ -2,7 +2,7 @@
 title: Zlecenia kwarantanny
 description: W tym temacie opisano wykorzystywanie zleceń kwarantanny do blokowania zapasów.
 author: perlynne
-ms.date: 11/02/2017
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a44909a7880b0cd53e39ccbadf8b79ae5c9dafc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e1eed14b7d38cf569af7192dec9580e771f06df
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834224"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956189"
 ---
 # <a name="quarantine-orders"></a>Zlecenia kwarantanny
 
@@ -28,18 +28,35 @@ ms.locfileid: "5834224"
 
 W tym temacie opisano wykorzystywanie zleceń kwarantanny do blokowania zapasów.
 
-Zlecenia kwarantanny mogą służyć do blokowania zapasów. Na przykład można poddać kwarantannie towary ze względów kontroli jakości. Zapasy poddane kwarantannie są przenoszone do magazynu kwarantanny. **Uwaga:** Jeśli używasz zaawansowanych procesów zarządzania magazynem (dostępnych w module Zarządzanie magazynem), przetwarzanie zleceń kwarantanny jest używane tylko do zamówień sprzedaży na zwrot.
+Zlecenia kwarantanny pozwalają zablokować zapasy. Na przykład można poddać kwarantannie towary ze względów kontroli jakości. Zapasy poddane kwarantannie są przenoszone do magazynu kwarantanny.
+
+> [!NOTE]
+> Jeśli używasz zaawansowanych procesów zarządzania magazynem (dostępnych w module Zarządzanie magazynem), przetwarzanie zleceń kwarantanny jest używane tylko do zamówień sprzedaży na zwrot.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Dostępne pozycje magazynowe w kwarantannie
-W celu poddania towarów kwarantannie można ręcznie tworzyć zlecenia kwarantanny lub skonfigurować system, aby tworzył zlecenia kwarantanny automatycznie podczas przetwarzania dostaw przychodzących. Aby automatycznie tworzyć zlecenia kwarantanny, zaznacz opcję **Zarządzanie kwarantanną** na karcie **Zasady zapasów** na stronie **Grupy modeli pozycji**. Należy także w magazynach przyjmujących określić domyślny magazyn kwarantanny w polu **Magazyn kwarantanny**. Gdy dostępne zapasy fizycznie są rejestrowane w zamówieniu zakupu lub zleceniu produkcyjnym, towary poddane kwarantannie są automatycznie przenoszone do magazynu kwarantanny w w Supply Chain Management. To przesunięcie następuje, ponieważ stan zlecenia kwarantanny zmienił się na **Rozpoczęte**. Podczas ręcznego tworzenia zleceń kwarantanny towar nie musi być skonfigurowany dla zarządzania kwarantanną w powiązanej grupie modeli towarów. W przypadku tego procesu należy określić dostępne zapasy wymagające kwarantanny oraz magazyn kwarantanny, który ma być używany. Pomocą w planowaniu tego procesu mogą być stany zleceń kwarantanny.
+
+W celu poddania towarów kwarantannie można ręcznie tworzyć zlecenia kwarantanny lub skonfigurować system, aby tworzył je automatycznie podczas przetwarzania dostaw przychodzących.
+
+Aby skonfigurować system do automatycznego generowania zleceń kwarantanny, należy wykonać następujące kroki.
+
+1. Wybierz kolejno opcje **Zarządzanie zapasami \> Ustawienia \> Zapasy \> Grupy modeli pozycji**.
+1. Wybierz odpowiednią grupę modeli w okienku listy lub utwórz nową grupę modeli.
+1. Na skróconej karcie **Zasady zapasów** zaznacz pole wyboru **Zarządzanie kwarantanną**.
+1. Zamknij stronę.
+1. W polu **Magazyn kwarantanny** przyjmujących magazynów określ domyślny magazyn kwarantanny.
+
+Jeśli towar zarejestrowany jako przyjęty w magazynie należy do grupy modeli, w której jest zaznaczone pole wyboru **Zarządzanie kwarantanną**, system wygeneruje dla niego zlecenie kwarantanny. Zlecenie kwarantanny poleca pracownikom, aby przenieśli towar do magazynu kwarantanny.
+
+Podczas ręcznego tworzenia zleceń kwarantanny na stronie **Zlecenia kwarantanny** towar nie musi być skonfigurowany dla zarządzania kwarantanną w powiązanej grupie modeli pozycji. W przypadku tego procesu należy określić dostępne zapasy wymagające kwarantanny oraz magazyn kwarantanny, który ma być używany. Pomocą w planowaniu tego procesu mogą być stany zleceń kwarantanny.
 
 ## <a name="quarantine-order-statuses"></a>Stany zleceń kwarantanny
+
 Zlecenia kwarantanny mogą mieć następujące stany:
 
--   Utworzony
--   Rozpoczęta
--   Zgłoszone jako gotowe
--   Zakończono
+- Utworzony
+- Rozpoczęta
+- Zgłoszone jako gotowe
+- Zakończono
 
 ### <a name="created"></a>Utworzony
 
@@ -51,19 +68,18 @@ Gdy zlecenie kwarantanny ma stan **Rozpoczęte**, zapasy są przenoszone ze zwyk
 
 ### <a name="reported-as-finished"></a>Zgłoszone jako gotowe
 
-Kliknięcie opcji **Zgłoszenie wyrobów gotowych** umożliwia zgłoszenie rozpoczętego zlecenia kwarantanny jako gotowego. Towar jest zwalniany z kwarantanny, ale nie jest jeszcze przenoszony z powrotem do zwykłego magazynu. Przesunięcie z powrotem do zwykłego magazynu można zrealizować za pomocą arkusza przyjęcia towaru, który można zainicjować w trakcie procesu zgłaszania wyrobów gotowych.
+Aby zgłosić rozpoczęte zlecenie kwarantanny jako zakończone, otwórz zamówienie i wybierz opcję **Gotowe** w okienku akcji. Towar jest zwalniany z kwarantanny, ale nie jest jeszcze przenoszony z powrotem do zwykłego magazynu. Przesunięcie z powrotem do zwykłego magazynu można zrealizować za pomocą arkusza przyjęcia towaru, który można zainicjować w trakcie procesu zgłaszania gotowości.
 
-### <a name="ended"></a>Zakończono
+### <a name="ended"></a>Zakończone
 
-Po zakończeniu zlecenia kwarantanny towar jest przenoszony z magazynu kwarantanny z powrotem do zwykłego magazynu. Transakcja towaru otrzymuje stan **Sprzedane** w magazynie kwarantanny i **Zakupione** w magazynie zwykłym.
+Po zakończeniu zlecenia kwarantanny towar jest przenoszony z magazynu kwarantanny z powrotem do zwykłego magazynu. Transakcja towaru otrzymuje stan *Sprzedane* w magazynie kwarantanny i *Zakupione* w magazynie zwykłym.
 
 ## <a name="quarantine-order-scrap"></a>Odpadki zamówienia kwarantanny
-W ramach procesu zlecenia kwarantanny można przekazać zapasy do likwidacji. Podczas przetwarzania odpadków stan zapasów zostanie ustawiony na **Sprzedane** przez transakcję wydania z magazynu kwarantanny.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+W ramach procesu zlecenia kwarantanny można przekazać zapasy do likwidacji. Podczas przetwarzania odpadków stan zapasów zostanie ustawiony na *Sprzedane* przez transakcję wydania z magazynu kwarantanny.
 
-[Blokowanie zapasów](inventory-blocking.md)
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
+- [Blokowanie zapasów](inventory-blocking.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

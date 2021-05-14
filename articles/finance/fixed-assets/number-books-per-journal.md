@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892414"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944808"
 ---
 # <a name="number-of-books-per-journal"></a>Liczba ksiąg na arkusz
 
@@ -47,9 +47,5 @@ Zadanie przetwarzania wsadowego wyklucza zamknięte księgi. Na przykład w zada
 Limit liczby ksiąg jest stosowany, jeśli w tym samym arkuszu nie istnieją zduplikowane identyfikatory składników majątku. Jeśli jednak identyfikator składnika majątku jest taki sam, jak identyfikator księgi, liczba ksiąg na arkusz może zostać przekroczona w celu utrzymania identyfikatora składnika majątku w tym samym arkuszu.
 
 Na przykład istnieje 5001 identyfikatory środków trwałych, z każdym identyfikatorem środka trwałego są powiązane trzy księgi, a każda księga składników majątku jest księgowana w tej samej warstwie księgowania. Wykonujesz amortyzacja przez trzy kolejne miesiące bez podsumowania.  Arkusz amortyzacji zostanie utworzony za pomocą zadania wsadowego, a system utworzy siedem arkuszy, które mają 667 identyfikatorów składników majątku, i trzy księgi dla każdego identyfikatora środka trwałego. Ogółem powstanie 2001 ksiąg. W związku z tym w ciągu trzech miesięcy na potrzeby zachowania tych samych identyfikatorów składników majątku w tym samym arkuszu powstaną 6003 wiersze arkuszy. System utworzy także jeden arkusz, który ma 332 identyfikatory środków trwałych, i trzy księgi dla każdego identyfikatora środka trwałego. W ciągu trzech miesięcy powstanie 2988 wierszy.
-
-> [!NOTE] 
-> Jeśli parametr **Podsumuj amortyzację** jest włączony podczas tworzenia propozycji amortyzacji, wartość w polu **Liczba ksiąg na arkusz** — propozycja amortyzacji nie ma żadnego wpływu. W tym przypadku liczba ksiąg na arkusz wynosi 6000, co jest limitem zdefiniowanym wewnętrznie.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

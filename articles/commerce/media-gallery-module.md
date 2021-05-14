@@ -2,7 +2,8 @@
 title: Moduł galerii multimediów
 description: W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802822"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937393"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
@@ -49,11 +51,13 @@ W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produk
 |---------------|--------|-------------|
 | Źródło obrazu | **Kontekst strony** lub **Identyfikator produktu** | Wartość domyślna to **Kontekst strony**. Jeśli wybrano **Kontekst strony**, moduł oczekuje na stronę do dostarczenia informacji o identyfikatorze produktu. Jeśli wybrano **Identyfikator produktu**, identyfikator produktu dla obrazu musi być podany jako wartość właściwości **Identyfikator produktu**. Ta możliwość jest dostępna w Commerce w wersji 10.0.12. |
 | Identyfikator produktu | Identyfikator produktu | Ta właściwość jest stosowana tylko w przypadku, gdy wartość właściwości **Źródło obrazu** to **Identyfikator produktu**. |
-| Powiększenie obrazu | **Wbudowane** lub **Kontener** | Ta właściwość umożliwia użytkownikowi powiększenie obrazu w module galeria multimediów. Obraz można powiększać w tekście albo w osobnym kontenerze obok obrazu. Funkcja jest dostępna w 10.0.12 |
-| Skala powiększenia | Liczba dziesiętna | Właściwość ta określa współczynnik skali dla powiększania obrazów. Jeśli na przykład wartość jest ustawiona na **2,5**, obrazy zostaną powiększone 2,5 razy.|
-| Pełny ekran | **Prawda** lub **Fałsz** | Właściwość ta określa, czy obrazy mogą być wyświetlane w trybie pełnoekranowym. W trybie pełnoekranowym obrazy można również dodatkowo powiększać, jeśli jest włączona funkcja powiększania. Ta możliwość jest dostępna w Commerce w wersji 10.0.13. |
+| Powiększenie obrazu | **Wbudowane** lub **Kontener** | Ta właściwość umożliwia użytkownikowi powiększenie obrazu w module galeria multimediów. Obraz można powiększać w tekście albo w osobnym kontenerze obok obrazu. Ta funkcja jest dostępna w 10.0.12. |
+| Współczynnik powiększenia | Liczba dziesiętna | Właściwość ta określa współczynnik skali dla powiększania obrazów. Jeśli na przykład wartość jest ustawiona na **2,5**, obrazy zostaną powiększone 2,5 razy. |
+| Pełny ekran | **Prawda** lub **Fałsz** | Właściwość ta określa, czy obrazy mogą być wyświetlane w trybie pełnoekranowym. W trybie pełnoekranowym obrazy można również dodatkowo powiększać, jeśli jest włączona funkcja powiększania. Ta funkcja jest dostępna w Commerce w wersji 10.0.13. |
+| Jakość powiększonego obrazu | Liczba od 1 do 100, która reprezentuje wartość procentową i jest wybierana za pomocą formantu paska śledzenia | Ta właściwość definiuje jakość obrazu powiększanych obrazów. Wartość tego ustawienia może być ustawiona na 100 procent, aby mieć pewność, że dla powiększanych obrazów jest zawsze używana najwyższa możliwa rozdzielczości. Ta właściwość nie ma zastosowania do plików PNG, ponieważ używają bezstratnego formatu. Ta funkcja jest dostępna w Commerce od wersji 10.0.19. |
 | Obrazy | Obrazy wybrane z biblioteki multimediów konstruktora witryn | Oprócz renderowania z poziomu produktu obrazy mogą być wybrane dla modułu galerii multimediów. Obrazy te zostaną dołączone do wszystkich dostępnych obrazów produktów. Ta możliwość jest dostępna w Commerce w wersji 10.0.12. |
 | Orientacja miniatury | **Pionowa** lub **Pozioma** | Właściwość ta określa, czy miniatury obrazów mają być pokazywane w pionowym czy poziomym pasku. |
+| Ukrywanie obrazów produktu głównego dla wariantu | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, po wybraniu wariantu obrazy produktu głównego są ukryte, chyba że wariant nie ma obrazów. Ta właściwość nie ma wpływu na produkty, które nie mają wariantów. |
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.
 

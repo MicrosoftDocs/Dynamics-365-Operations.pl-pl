@@ -2,7 +2,8 @@
 title: Konfigurowanie witryny handlu elektornicznego B2B
 description: W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego (B2B) w Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799764"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937513"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Witryny handlu elektronicznego typu business-to-business (B2B) zapewniają kilka kluczowych funkcji, które optymalizują przepływ pracy dla użytkownika B2B. W tym temacie opisano sposób skonfigurowania witryny handlu elektronicznego B2B w Microsoft Dynamics 365 Commerce. Przechodzi przez moduły i ustawienia witryny, które należy skonfigurować, aby umożliwić scenariusze specyficzne dla B2B.
 
@@ -283,9 +285,35 @@ Aby utworzyć stronę szczegółów faktury w narzędziu do tworzenia witryn, wy
 1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
 1. Opublikuj adres URL strony.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Dodawanie modułu szybkiego dodawania do strony koszyka
+
+Moduł szybkiego dodawania umożliwia szybkie dodawanie wielu towarów do koszyka przy użyciu identyfikatorów towarów (zwanych także identyfikatorami jednostki magazynowej \[SKU\]). Moduł szybkiego dodawania jest dodawany do strony koszyka witryny.
+
+Aby dodać moduł szybkiego dodawania do strony koszyka w narzędziu do tworzenia witryn Commerce, wykonaj następujące kroki.
+
+1. Przejdź do strony **Szablony** i wybierz szablon strony koszyka witryny.
+1. Wybierz opcję **Edycja**.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Szybkie dodawanie** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować szablon, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+1. Przejdź do lokalizacji **Strony** i wybierz szablon strony koszyka witryny.
+1. W gnieździe **Głównym** w module **Strony domyślnej** wybierz przycisk wielokropka (**...**), a następnie wybierz pozycję **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Kontener** i wybierz przycisk **OK**.
+1. W okienku właściwości modułu **Kontener**, w obszarze **Szerokość** wybierz opcję **Wypełnij kontener**.
+1. W gnieździe **Kontener** wybierz wielokropek (**...**), a następnie wybierz **Dodaj moduł**.
+1. W oknie dialogowym **Dodaj moduł** wybierz moduł **Szybkie dodawanie** i wybierz przycisk **OK**.
+1. Wybierz **Zapisz**, wybierz **Zakończ edycję**, aby zaewidencjonować stronę, a następnie wybierz opcję **Publikuj**, aby ją opublikować.
+
+> [!NOTE] 
+> Moduł szybkiego dodawania jest dostępny od wersji Commerce 10.0.17. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Przegląd biblioteki modułów](../starter-kit-overview.md)
+
+[Aktualizacje zestawu SDK i biblioteki modułów](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Omówienie strony tworzenia](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ Aby utworzyć stronę szczegółów faktury w narzędziu do tworzenia witryn, wy
 
 [Moduł bloku zawartości](../add-hero-module.md)
 
-[Kolekcja produktów](../product-collection-module-overview.md)
+[Moduł kolekcji produktów](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

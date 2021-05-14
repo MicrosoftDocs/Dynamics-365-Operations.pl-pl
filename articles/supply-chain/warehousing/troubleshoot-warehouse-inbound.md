@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828233"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920994"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Rozwiązywanie problemów dotyczących przychodzących operacji magazynowych
 
@@ -56,7 +56,7 @@ Po uruchomieniuzadania okresowego *Aktualizowanie dokumentów przyjęcia produkt
 
 ### <a name="issue-resolution"></a>Rozwiązywanie problemów
 
-Nowa funkcja obsługi ładunków przychodzących *Przekroczenie przyjmowania ilości ładunku* rozwiązuje ten problem. Aby włączyć tę funkcję, przejdź do [Zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje (w kolejności, w jakiej są wymienione):
+Nowa funkcja obsługi ładunków przychodzących *Przekroczenie przyjmowania ilości ładunku* rozwiązuje ten problem. Aby włączyć tę funkcję, przejdź do obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz następujące funkcje (w kolejności, w jakiej są wymienione):
 
 1. Skojarz transakcje magazynowe zamówienia zakupu z ładunkiem
 1. Przyjęcie nadmiernej ilości obciążenia pracą

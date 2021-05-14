@@ -1,5 +1,5 @@
 ---
-title: Obszar roboczy wpisu faktury od dostawcy
+title: Obszar roboczy Automatyzacja faktur od dostawców
 description: W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powiązany z fakturami od dostawcy, oraz wyświetlić informacje dostępne w Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837269"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954142"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Obszar roboczy wpisu faktury od dostawcy
+# <a name="vendor-invoice-automation-workspace"></a>Obszar roboczy Automatyzacja faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ W tym temacie wyjaśniono, jak skonfigurować obszar roboczy, który jest powią
 
 ## <a name="overview"></a>Omówienie
 
-Obszar roboczy **Wpis faktury dostawcy** zawiera informacje związane z przetwarzaniem faktur od dostawcy. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy - Wszystkie firmy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy - Wszystkie firmy** wykorzystuje funkcje programu Power BI, aby pokazywać wizualizacje dotyczące faktur dla dostawców.
+Obszar roboczy **Automatyzacja faktur od dostawców** zawiera informacje związane z przetwarzaniem faktur od dostawcy. Ten obszar roboczy zawiera widok **Moja praca** i stronę **Analizy - Wszystkie firmy**. Widok **Moja praca** zawiera kafelki podsumowań, siatki transakcji z dostawcami i informacje o odnośnych dostawcach. Strona **Analizy - Wszystkie firmy** wykorzystuje funkcje programu Power BI, aby pokazywać wizualizacje dotyczące faktur dla dostawców.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Konfigurowanie obszaru roboczego do wyświetlania zawartości Power BI
 
-Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Wpis faktury od dostawcy**, należy ukończyć tę konfigurację.
+Aby umożliwić wyświetlanie danych w wizualizacjach Power BI w obszarze roboczym **Automatyzacja faktur od dostawców**, należy ukończyć tę konfigurację.
 
 1. W obszarze roboczym **Zarządzanie funkcjami** filtruj listę, aby znaleźć funkcję **Automatyzacji faktur od dostawców**.
 3. Wybierz **Włącz teraz**.
@@ -54,7 +54,7 @@ Aby wyświetlić informacje wyświetlane w obszarze roboczym, należy mieć rol�
 
 ### <a name="company-selection"></a>Wybór firmy
 
-Po włączeniu funkcji **Automatyczne faktury od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma**, można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
+Po włączeniu funkcji **Automatyzacja faktur od dostawców** pole **Firma** jest wyświetlane u góry obszaru roboczego. Wybór w polu **Firma** wpływa na wszystkie informacje wyświetlane w obszarze roboczym. Domyślnie w widoku są wyświetlane informacje o firmie, do której jest zalogowany użytkownik. Wybierając inną firmę w polu **Firma**, można wyświetlić informacje dotyczące firmy w obszarze roboczym systemu. Następnie możesz wybrać kafelek w obszarze roboczym, aby przejść do powiązanej strony w wybranej firmie.
 
 ### <a name="summary-tiles"></a>Kafelki podsumowania
 

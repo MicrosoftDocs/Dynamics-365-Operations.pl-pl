@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 177586068ddb86943f8013722e1be9e63c53fa0f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fee496157db581bf77f444674ca858aa4383e27c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889795"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963223"
 ---
 # <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
 
@@ -55,6 +55,9 @@ Rozważania dotyczące dodatkowych środowisk obejmują między innymi następuj
 Aby zarządzać swoimi środowiskami oprogramowania Human Resources za pomocą usługi LCS, należy najpierw utworzyć projekt LCS.
 
 1. Zaloguj się w usłudze [LCS](https://lcs.dynamics.com/Logon/Index) za pomocą konta używanego do subskrypcji rozwiązania Human Resources.
+
+   > [!NOTE]
+   > Aby zapewnić pomyślne inicjowanie, konto, którego używasz do inicjowania środowiska Human Resources, musi być przypisane do roli **Administrator systemu** lub **Dostosowywanie systemu** w środowisku Power Apps skojarzonym ze środowiskiem Human Resources. Aby uzyskać więcej informacji dotyczących przypisywania ról zabezpieczeń do użytkowników w Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](https://docs.microsoft.com/power-platform/admin/database-security).
 
 2. Kliknij znak plus (**+**), aby utworzyć projekt.
 
@@ -115,13 +118,30 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
    
     - **Środowiska wersji próbnej** — te środowiska są tworzone z datą wygaśnięcia. Po wygaśnięciu tego środowisko i wszystkie wystąpienia Human Resources zawarte w tym środowisku zostaną usunięte automatycznie.
    
-    - **Nieobsługiwane regiony** — obecnie moduł Human Resources jest obsługiwany tylko w następujących regionach: Stany Zjednoczone, Europa, Wielka Brytania, Australia, Kanada i Azja.
-
-    > [!NOTE]
-    > Środowisko zasobów ludzkich jest udostępniane w tym samym regionie, w którym zainicjowano obsługę środowiska Power Apps. Migrowanie środowiska Human Resources do innego regionu nie jest obsługiwane.
+    - **Nieobsługiwane regiony geograficzne** — środowisko musi znajdować się w obsługiwanym regionie geograficznym. Aby uzyskać więcej informacji, zobacz [Obsługiwane regiony geograficzne](hr-admin-setup-provision.md#supported-geographies).
 
 6. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
- 
+
+### <a name="supported-geographies"></a>Obsługiwane regiony geograficzne
+
+Human Resources obecnie obsługuje następujące regiony geograficzne:
+
+- Stany Zjednoczone
+- Europa
+- Wielka Brytania
+- Australia
+- Kanada
+- Azja 
+
+Podczas tworzenia środowiska Human Resources należy wybrać środowisko Power Apps, które ma być skojarzone ze środowiskiem Human Resources. Środowisko Human Resources jest następnie inicjowanie w tym samym regionie geograficznym systemu Azure, co wybrane środowisko Power Apps. Można wybrać miejsce fizycznej lokalizacji środowiska i bazy danych Human Resources, wybierając region geograficzny podczas tworzenia środowiska Power Apps, które będzie skojarzone ze środowiskiem Human Resources.
+
+Możesz wybrać *region geograficzny* systemu Azure, w którym jest inicjowane środowisko, ale nie możesz wybrać określonego *regionu* świadczenia usługi Azure. Automatyzacja określa konkretny region świadczenia usługi w regionie geograficznym, w którym środowisko jest tworzone w celu zoptymalizowania równoważenia obciążenia i wydajności. Informacje na temat regionów geograficznych i regionów świadczenia usługi Azure można znaleźć w dokumentacji [regionów geograficznych systemu Azure](https://azure.microsoft.com/global-infrastructure/geographies).
+
+Dane środowiska Human Resources będą zawsze znajdowały się w regionie geograficznym systemu Azure, w którym są tworzone. Jednak nie zawsze będzie znajdowały się w tym samym regionie świadczenia usługi Azure. Na potrzeby odzyskiwania awaryjnego dane zostaną zreplikowane zarówno w podstawowym regionie świadczenia usługi Azure, jak i w pomocniczym regionie trybu failover w tym samym regionie geograficznym.
+
+ > [!NOTE]
+ > Migrowanie środowiska Human Resources z jednego regionu świadczenia usługi Azure do innego nie jest obsługiwane.
+
 ## <a name="grant-access-to-the-environment"></a>Przyznawanie dostępu do środowiska
 
 Domyślnie dostęp do środowiska ma globalny administrator, który je utworzył. Musisz przyznać dostęp dodatkowym użytkownikom aplikacji. Trzeba dodać użytkowników i przypisać im odpowiednie role w środowisku Human Resources. Globalny administrator, który wdrożył program Human Resources, musi również uruchomić Attract i Onboard, aby dokończyć inicjalizację i umożliwić dostęp innym użytkownikom dzierżawy. Dopóki tak się nie stanie, inni użytkownicy nie będą mieli dostępu do Attract i Onboard i będą im wyświetlane błędy naruszenia dostępu. Aby uzyskać więcej informacji, zobacz [tworzenie nowych użytkowników](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) i [przypisywanie użytkowników do ról zabezpieczeń](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 

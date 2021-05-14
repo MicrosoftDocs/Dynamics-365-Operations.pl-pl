@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e7abe133c4d2c7a515c75709bd5616c83ebbcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0acff4165ef4d61fb0d14a8f365273ea43fac7d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811997"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920588"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Wprowadzanie i porównywanie ofert dla ZO oraz udzielanie zamówień
 
@@ -32,7 +32,7 @@ Ofertę można wprowadzić albo jako dostawca, albo jako pracownik działu zaopa
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Wprowadzanie odpowiedzi jako dostawca
 
-1. Na pulpicie nawigacyjnym wybierz **Składanie ofert przez dostawców**.
+1. Wybierz kolejno opcje **Portal współpracy z dostawcami \> Obszary robocze \> Składanie ofert przez dostawców**.
 2. Na liście **Nowe zaproszenia do składania ofert** znajdź ZO, które zostało właśnie wysłane. Wybierz ZO, aby sprawdzić, jakie były wymagania.
 3. Wybierz **Załączniki ZO** w celu przejrzenia dodanych załączników.
 4. Wybierz **Oferta**, aby włączyć opcję edycji pól. Zauważ, że pole **Oferta w toku** jest ustawione jako **Dostawca aktualizuje**.

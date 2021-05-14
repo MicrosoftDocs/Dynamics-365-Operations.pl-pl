@@ -1,5 +1,5 @@
 ---
-title: Podgląd Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+title: Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.18 (maj 2021 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909360"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934974"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Podgląd Dynamics 365 Supply Chain Management 10.0.18 (maj 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.18 (maj 2021 r.)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.18. Ta wersja ma numer kompilacji 10.0.793 i jest dostępna w następujący sposób:
+W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management 10.0.18. Ta wersja ma numer kompilacji 10.0.793 i jest dostępna w następujący sposób:
 
 - **Wersja podglądu:** marzec 2021
 - **Ogólna dostępność wydania (Samoaktualizacja):** kwiecień 2021 r.
@@ -43,9 +42,17 @@ To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do
 
 - [Zarządzanie rabatami](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Aby uzyskać więcej informacji, zajrzyj do omówienia [Omówienie modułu Zarządzanie rabatami](../rebate-management/rebate-management-overview.md)
 
+- [Zasady ustawień eksportu jednostek danych sprzedaży](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Rejestracja wiersza zamówienia zwrotu sprzedaży z dokładnością do wartości dziesiętnych wraz z i bez ilości efektywnej](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Potwierdzenie zamówienia sprzedaży za jednym kliknięciem](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Zasady usuwania wiersza zamówienia sprzedaży do zamówienia zakupu](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Uproszczony interfejs tylko do wejścia i wyjścia do pracy (ulepszona funkcja [Ulepszony interfejs wykonywania hali produkcyjnej do celów produkcyjnych](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md).
 
-Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne. 
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nowe i zaktualizowane zasoby dokumentacji
 

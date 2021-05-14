@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830035"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954652"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -139,13 +139,14 @@ Podczas przeglądania wniosku o zmianę, w okienku akcji, na karcie **Żądanie 
 
 Jak opisano w sekcji [Firmy inżynierskie i reguły własności danych ](engineering-org-data-ownership-rules.md), dane produktu, które można edytować, różnią się w zależności od typu firmy, w której pracuje użytkownik (firma inżynierska vs. firma operacyjna). Reguły własności danych są również stosowane do zleceń zmian inżynieryjnych. W związku z tym w zależności od firmy, w której tworzone są zmiany inżynieryjne, można wprowadzać różne typy zmian. Oto kilka przykładów:
 
-- W przypadku zleceń zmiany w **firmie inżynierskiej** można wprowadzać podstawowe zmiany w danych inżynierii. Można na przykład utworzyć nowe wersje produktu, zmienić strukturę produktu za pośrednictwem BOM i zmienić wartości atrybutów inżynierii. Dla każdego produktu, którego dotyczy ten problem, wybierz jedną z następujących wartości w polu **Wpływ**:
+- W przypadku zleceń zmiany w *firmie inżynierskiej* można wprowadzać podstawowe zmiany w danych inżynierii. Można na przykład utworzyć nowe wersje produktu, zmienić strukturę produktu za pośrednictwem BOM i zmienić wartości atrybutów inżynierii. Dla każdego produktu, którego dotyczy ten problem, wybierz jedną z następujących wartości w polu **Wpływ**:
 
     - **Brak** — Aktualizacja istniejącej wersji produktu (aktualizacja w wersji).
     - **Nowa wersja** — umożliwia utworzenie nowej wersji opartej na wybranej wersji produktu.
-    - **Nowy produkt** — służy do tworzenia zupełnie nowego produktu lub wariantu produktu, który jest oparty na wybranej wersji produktu.
+    - **Nowy produkt** — służy do tworzenia zupełnie nowego produktu, który jest oparty na wybranej wersji produktu.
+    - **Nowy wariant** — umożliwia utworzenie nowego wariantu opartego na wybranej wersji produktu. Zostaną skopiowane informacje o BOM i marszrucie.
 
-- W przypadku zleceń zmiany inżynierów w **firmie operacyjnej** można zmienić dane logistyczne produktu. Można na przykład wzbogacić istniejący BOM z ustawieniami dotyczącymi pochodzenia, dodać trasy lokalne lub lokalne BOM, a nawet wzbogacać BOM przez dodanie nowych wierszy BOM dla lokalnych materiałów opakowań, płynów smarowych lub instrukcji w języku lokalnym. Wzbogacanie wprowadzane przez użytkowników w firmie operacyjnej zostaną zachowane po wysłaniu nowych aktualizacji z firmy inżynierskiej. Aby uzyskać więcej informacji, zobacz artykuł [Firm inżynierskie i reguły własności danych](engineering-org-data-ownership-rules.md).
+- W przypadku zleceń zmiany inżynierów w *firmie operacyjnej* można zmienić dane logistyczne produktu. Można na przykład wzbogacić istniejący BOM z ustawieniami dotyczącymi pochodzenia, dodać trasy lokalne lub lokalne BOM, a nawet wzbogacać BOM przez dodanie nowych wierszy BOM dla lokalnych materiałów opakowań, płynów smarowych lub instrukcji w języku lokalnym. Wzbogacanie wprowadzane przez użytkowników w firmie operacyjnej zostaną zachowane po wysłaniu nowych aktualizacji z firmy inżynierskiej. Aby uzyskać więcej informacji, zobacz artykuł [Firm inżynierskie i reguły własności danych](engineering-org-data-ownership-rules.md).
 
     Podczas przetwarzania zleceń zmiany inżynieryjnej w firmie inżynierskiej produkty są tworzone i/lub aktualizowane tylko w firmie inżynierskiej. Dlatego, jeśli dane główne produktu powinny być również aktualizowane, należy również wydawać produkty do firm operacyjnych.
 

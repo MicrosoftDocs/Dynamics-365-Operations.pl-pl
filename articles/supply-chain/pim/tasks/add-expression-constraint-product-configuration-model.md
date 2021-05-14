@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a2fd383944a96a073f12399e1a29d0fcf520e3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9cd5475e48cbcd8dcee6b228297f58e364ac503d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812650"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920888"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Dodawanie ograniczenia wyrażenia do modelu konfiguracji produktu
 
@@ -26,27 +26,27 @@ ms.locfileid: "5812650"
 
 W tej procedurze pokazano, jak można dodać nowe wyrażenie ograniczenia do modelu konfiguracji produktu. Pokazuje sposób wprowadzenia wymogu zastosowania ochrony narożników do głośnika, jeśli użytkownik wybrał metalową maskownicę. Procedura wykorzystuje składnik Głośnik o wysokiej jakości zawarty w firmie demonstracyjnych USMF.
 
-
 ## <a name="create-an-expression-constraint"></a>Tworzenie ograniczenia wyrażenia
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Modele konfiguracji produktu.
+
+1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
 3. Na liście znajdź i zaznacz odpowiedni rekord.
     * W tym przykładzie jest używany model głośnika o wysokiej jakości.  
-4. Na liście kliknij łącze w wybranym wierszu.
-5. Rozwiń sekcję Ograniczenia.
-6. Kliknij przycisk Dodaj.
-7. Kliknij przycisk Utwórz.
-8. W polu Nazwa wpisz wartość.
+4. Na liście wybierz łącze w wybranym wierszu.
+5. Rozwiń sekcję **Ograniczenia**.
+6. Wybierz opcję **Dodaj**.
+7. Wybierz opcję **Utwórz**.
+8. W polu **Nazwa** wpisz wartość.
 
 ## <a name="enter-expression"></a>Wprowadź wyrażenie
-1. Kliknij opcję Edytuj wyrażenie.
+
+1. Wybierz polecenie **Edytuj wyrażenie**.
     * Jeśli na tym etapie nagrania zadania odblokujesz interfejs użytkownika, możesz użyć funkcji IntelliSense i listy symboli, aby utworzyć wyrażenie ograniczenia.  
-2. W polu ConstraintBody wpisz „Implies[FrontGrill=="Metal", CornerProtection]”.
+2. W polu **ConstraintBody** wpisz „Implies[FrontGrill=="Metal", CornerProtection]”.
     * Ta logika wyrażenia oznacza: Jeśli maskownica jest metalowa, to musi być zaznaczona opcja ochrony narożników.  
-3. Kliknij przycisk Sprawdź poprawność.
+3. Wybierz **Potwierdź**.
     * Funkcja sprawdzania poprawności bada całe wyrażenie ograniczenia i wykrywa błędy składniowe.  
-4. Kliknij przycisk Zamknij.
-5. Kliknij przycisk OK.
+4. Kliknij przycisk **Zamknij**.
+5. Kliknij przycisk **OK**.
 
 
 

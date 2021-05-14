@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3faffad2bff18278a54a26f77c1423f2246d086e
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907970"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935612"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.17 (kwiecień 2021)
 
@@ -35,7 +35,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 To wydanie obejmuje następujące nowe funkcje.  Postępuj zgodnie z łączami do [planu wydania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
-Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z wymienionych funkcji mogą być nadal dostępne w wersji zapoznawczej, chociaż większość z nich jest teraz ogólnie dostępna.
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 ### <a name="asset-management"></a>Zarządzanie składnikami majątku
 
@@ -71,13 +71,13 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 
 - [Funkcje zarządzania składnikami majątku w interfejsie wykonywania w przedsiębiorstwie produkcyjnym](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/asset-management-capabilities-production-floor-execution-interface)<br> - Aby uzyskać więcej informacji, zobacz [Konfigurowanie interfejsu wykonania hal produkcyjnych](../production-control/production-floor-execution-configure.md).
 
-- Zunifikowana sekwencja numerów dla identyfikatorów zadań<br> - Aby uzyskać więcej informacji, zobacz 
+- [Wykonywanie produkcji z jednostkami skalowania w chmurze](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Aby uzyskać więcej informacji, zobacz temat [Obciążenia wykonywania produkcji dla jednostek skalowania w chmurze i na urządzeniach brzegowych](../cloud-edge/cloud-edge-workload-manufacturing.md).
 
 - [Zastąpienie domyślnej reguły rezerwacji materiałów w produkcji](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/override-default-reservation-principle-materials-production)<br> - Aby uzyskać więcej informacji, zobacz temat [Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji](../production-control/override-default-reservation-principle.md).
 
 - [Zapisane widoki dla kontroli produkcji](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-production-control)<br> - Aby uzyskać więcej informacji, zobacz temat [Standardowe zapisane widoki dla aplikacji Supply Chain Management](saved-views-scm.md).
 
-- [Wykonywanie produkcji z jednostkami skalowania w chmurze](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-scale-units-cloud)<br> - Aby uzyskać więcej informacji, zobacz temat [Obciążenia wykonywania produkcji dla jednostek skalowania w chmurze i na urządzeniach brzegowych](../cloud-edge/cloud-edge-workload-manufacturing.md).
+- Zunifikowana sekwencja numerów dla identyfikatorów zadań<br> - Aby uzyskać więcej informacji, zobacz temat [Zunifikowana sekwencja numerów dla identyfikatorów zadań](../production-control/unified-job-ids.md).
 
 ### <a name="planning"></a>Planowanie
 

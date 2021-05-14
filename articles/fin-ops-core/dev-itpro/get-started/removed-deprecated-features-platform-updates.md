@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ac3b5274aaea2e267685e80d051c81489ece50eb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814327"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923545"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -30,7 +30,7 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funkcja usunięta 28 stycznia 2021 r.
 
@@ -123,7 +123,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Ogólnie rzecz, kod niestandardowy oferuje ograniczone korzyści jednocześnie, wymaga znaczącego odzyskania i obliczenia do działu pomocy technicznej. Kod niestandardowy jest używany głównie przez autorów raportów do wywoływania metod publicznych z zestawu kodu niestandardowego. Jednak usługa hostowana w chmurze nie obsługuje odwołań do niestandardowych zestawów raportów SSRS. |
-| **Zamieniona przez inną funkcję?**   | Autorzy raportów mogą kontynuować odwołując się do interfejsów API publicznego rozwiązania .NET dla operacji matematycznych, konwersji i formatowania z dowolnego wyrażenia pola tekstowego. Aby uzyskać więcej informacji, zobacz [Dodaj kod do raportu (SSRS)](https://docs.microsoft.comsql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Zamieniona przez inną funkcję?**   | Autorzy raportów mogą kontynuować odwołując się do interfejsów API publicznego rozwiązania .NET dla operacji matematycznych, konwersji i formatowania z dowolnego wyrażenia pola tekstowego. Aby uzyskać więcej informacji, zobacz [Dodaj kod do raportu (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
 | **Powiązane obszary produktów**         | Podzbiór projektów raportów aplikacji zdefiniowany w module RDL, które zawierają kod niestandardowy. |
 | **Opcja wdrażania**              | Wszystko |
 | **Stan**                         | W przypadku wersji 10.0.13 kompilator rozpocznie generowanie ostrzeżenia o wystąpieniach, w których w definicji raportu SSRS zostanie wykryty kod niestandardowy. Aby rozwiązać ten problem, Otwórz definicję projektu raportu i Usuń wszystkie artefakty kodu niestandardowego. Ostrzeżenie kompilatora zostanie zastąpione błędem kompilatora w przyszłej aktualizacji.   |
@@ -178,7 +178,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Proces przenoszenia adresu IP do list bezpiecznych został zmieniony. Samoobsługa nie obsługuje już bezpiecznych list adresów IP. |
-| **Zamieniona przez inną funkcję?**   | Aby uzyskać więcej informacji, zobacz [Konfiguracja warunkowego dostępu do Azure Active Directory](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
+| **Zamieniona przez inną funkcję?**   | Aby uzyskać więcej informacji, zobacz [Konfiguracja warunkowego dostępu do Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).|
 | **Powiązane obszary produktów**         | Zabezpieczenia |
 | **Opcja wdrażania**              | W chmurze |
 | **Stan**                         | **Przestarzałe:** Ta funkcja jest całkowicie przestarzała w przypadku wdrożeń samoobsługowych. |
@@ -223,7 +223,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Przepływ pracy |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Lista rozwijana wyboru użytkownika została usunięta z okna dialogowego zmiany żądania w aktualizacji platformy 32. Żądania zmiany żądania zostaną automatycznie wysłane do inicjatora zgodnie z zamierzeniem. Aby uzyskać więcej informacji o tych funkcjach, zapoznaj się z tematem [Akcje w procesach zatwierdzania w przepływie pracy](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/workflow-actions?toc=%2Fdynamics365%2Fcommerce%2Ftoc.json#request-change). |
+| **Stan**                         | Lista rozwijana wyboru użytkownika została usunięta z okna dialogowego zmiany żądania w aktualizacji platformy 32. Żądania zmiany żądania zostaną automatycznie wysłane do inicjatora zgodnie z zamierzeniem. Aby uzyskać więcej informacji o tych funkcjach, zapoznaj się z tematem [Akcje w procesach zatwierdzania w przepływie pracy](../../fin-ops/organization-administration/workflow-actions.md?toc=%2fdynamics365%2fcommerce%2ftoc.json#request-change). |
 
 ### <a name="embedded-drill-through-links-are-no-longer-supported-in-paginated-documents-rendered-by-the-cloud-hosted-service"></a>Osadzone łącza drążenia wskroś nie są już obsługiwane w dokumentach z podziałem, renderowanych przez usługę hostowaną w chmurze 
 
@@ -233,7 +233,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Raportowania |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Ta funkcja jest aktywnie usuwana z usługi.<br><br>Nowoczesne oprogramowanie klienckie oferuje wiele opcji tworzenia widoków, które zawierają automatycznie generowane łącza umożliwiające nawigację po aplikacji. Dokumenty z podziałem, renderowane przez usługę, są zalecane w przypadku komunikacji zewnętrznej, które są wysyłane, archiwizowane i drukowane dla odbiorców. Ulepszono możliwości wyświetlania podglądu dokumentów bezpośrednio w przeglądarce, która oferuje bezpośredni dostęp do drukarek lokalnych. Aby uzyskać więcej informacji, zobacz [Podgląd dokumentów PDF za pomocą osadzonej przeglądarki](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
+| **Stan**                         | Ta funkcja jest aktywnie usuwana z usługi.<br><br>Nowoczesne oprogramowanie klienckie oferuje wiele opcji tworzenia widoków, które zawierają automatycznie generowane łącza umożliwiające nawigację po aplikacji. Dokumenty z podziałem, renderowane przez usługę, są zalecane w przypadku komunikacji zewnętrznej, które są wysyłane, archiwizowane i drukowane dla odbiorców. Ulepszono możliwości wyświetlania podglądu dokumentów bezpośrednio w przeglądarce, która oferuje bezpośredni dostęp do drukarek lokalnych. Aby uzyskać więcej informacji, zobacz [Podgląd dokumentów PDF za pomocą osadzonej przeglądarki](../analytics/preview-pdf-documents.md). |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Poprzednie oświadczenia o usuniętych lub wycofanych funkcjach
 Aby dowiedzieć się więcej o funkcjach, które zostały usunięte lub wycofane w poprzednich wersjach, zobacz temat [Usunięte lub wycofane funkcje w poprzednich wersjach](../migration-upgrade/deprecated-features.md).

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b6ec8714ef208b25284f218e81dda0ff94ed49d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828376"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920116"
 ---
 # <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
@@ -94,8 +94,14 @@ Metadane dla aparatów zarządzania transportem są skonfigurowane inaczej dla r
 | 1 przypada na wpłatę z zysku na rzecz budżetu państwa        | Miejsce początkowe — kod pocztowy            | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
 | 2        | Miejsce docelowe             | Przypisanie | Ciąg    | Stanowy          |           |
 | 3        | Miejsce początkowe — kod pocztowy | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
-| 4        | Miejsce docelowe — kod pocztowy   | Przypisanie | Ciąg    | Kod pocztowy    | Wybrano  |
-| 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | Kraj przeznaczenia           | Przypisanie | Ciąg    | Kraj/region |           |
+| 4        | Miejsce docelowe — kod pocztowy   | Przypisanie | Ciąg    | Kod pocztowy    | Wybrana  |
+| 5        | Kraj przeznaczenia           | Przypisanie | Ciąg    | Kraj/region |           |
+
+### <a name="whitepaper"></a>Oficjalny dokument
+
+Aby uzyskać więcej informacji, pobierz następujący oficjalny dokument (napisany w celu obsługi systemu AX2012, ale nadal dotyczy aplikacji Dynamics 365 Supply Chain Management)
+
+- [Aparaty zarządzania transportem](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

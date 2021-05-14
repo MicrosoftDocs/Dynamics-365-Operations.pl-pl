@@ -2,7 +2,7 @@
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751007"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937337"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -161,19 +161,7 @@ Aby przyspieszyć Importowanie danych, można włączyć równoległe przetwarza
     - W polu **Licznik rekordów progów importu** wprowadź wartość licznika rekordów progu dla importu. Określa to licznik rekordów, które mają być przetworzone przez wątek. Jeśli plik ma 10 000 rekordów, liczba rekordów 2500 i liczba zadań 4 będą oznaczały, że każdy wątek przetworzy 2500 rekordów.
     - W polu **Licznik importu zadań** wprowadź liczbę zadań importu. Nie może ona przekraczać maksymalnej liczby wątków wsadowych przydzielonych do przetwarzania wsadowego w **Administrowanie systemem \>Administrowanie systemem**.
 
-## <a name="clean-up-the-staging-tables"></a>Czyszczenie tabel przemieszczania
-Począwszy od aktualizacji platformy 29, ta funkcja jest przestarzała. Jest to zastąpione nową wersją funkcji oczyszczania historii zadań wyjaśnioną poniżej.
-
-Tabele przemieszczania można wyczyścić, używając funkcji **Czyszczenie przemieszczania###** w obszarze roboczym **Zarządzanie danymi**. Następujących opcji można użyć, aby wybrać, które rekordy mają zostać usunięte z danej tabeli przemieszczania:
-
-- **Jednostka** — jeżeli dostępna jest tylko jednostka, wszystkie rekordy z tabeli przemieszczania tej jednostki są usuwane. Wybierz tę opcję, aby wyczyścić wszystkie dane dla jednostki we wszystkich projektach danych i wszystkich zadaniach.
-- **Identyfikator zadania** — jeżeli dostępny jest tylko identyfikator zadania, wszystkie rekordy dla wszystkich jednostek w wybranym zadaniu są usuwane z odpowiednich tabel przemieszczania.
-- **Projekty danych** — jeżeli wybrano tylko projekt danych, wszystkie rekordy dla wszystkich obiektów oraz we wszystkich zadaniach dla wybranego projektu danych są usuwane.
-
-Można także połączyć opcje, aby dodatkowo ograniczyć usuwany zestaw rekordów.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Czyszczenie historii zadań (dostępne w aktualizacji platformy 29 i nowszych)
-
+## <a name="job-history-clean-up"></a>Czyszczenie historii zadań 
 Funkcja oczyszczania historii zadań w zarządzaniu danymi musi być używana do planowania okresowego oczyszczania historii wykonywania. Ta funkcja zastępuje poprzednią funkcję oczyszczania tabeli przemieszczania, która jest obecnie przestarzała. Poniższe tabele zostaną oczyszczone przez proces oczyszczania.
 
 -   Wszystkie tabele przemieszczania

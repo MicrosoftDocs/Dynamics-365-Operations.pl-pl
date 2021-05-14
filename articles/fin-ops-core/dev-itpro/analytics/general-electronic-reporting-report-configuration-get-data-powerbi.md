@@ -2,7 +2,7 @@
 title: Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 description: W tym temacie wyjaśniono sposób wykorzystania konfiguracji raportowania elektronicznego (ER) do organizowania przesyłania danych do usług Power BI.
 author: NickSelin
-ms.date: 06/20/2017
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8a53c1c3e1850dabc05a47df6d8cc785a13f6f86
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750089"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944444"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurowanie w module Raportowanie elektroniczne (ER) ściągania danych do usługi Power BI
 
@@ -68,10 +68,10 @@ Aby wykonać przykład opisany w tym temacie, musisz mieć następujące uprawni
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Używanie modelu danych raportowania elektronicznego jako źródła danych
 Model danych ER musi być źródłem danych biznesowych, które będą używane w raportach programu Power BI. Ten model danych jest wczytywany z repozytorium konfiguracji raportowania elektronicznego. Aby uzyskać więcej informacji, zobacz [Pobieranie konfiguracji modułu Raportowanie elektroniczne z usługi Lifecycle Services](download-electronic-reporting-configuration-lcs.md) lub odtwórz przewodnik po zadaniu **ER Importowanie konfiguracji z usługi Lifecycle Services**. Wybierz **Intrastat** jako modelu danych, który zostanie wczytany z wybranego repozytorium konfiguracji modułu ER. (W tym przykładzie jest używana wersja 1 modelu). Następnie można uzyskać dostęp do konfiguracji **Intrastat** modelu ER na stronie **Konfiguracje**.
 
-[![Strona Konfiguracje](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Konfiguracja modelu ER Intrastat na stronie Konfiguracje](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Projektowanie konfiguracji formatu raportowania elektronicznego
-Należy utworzyć nową konfigurację formatu modułu ER używającą modelu danych **Intrastat** jako źródła danych biznesowych. Ta konfiguracja formatu musi generować dane wyjściowe w postaci dokumentów elektronicznych w formacie OpenXML (pliku programu Excel). Aby uzyskać więcej informacji, odtwórz przewodnik po zadaniu **ER Tworzenie konfiguracji dla raportów w formacie OPENXML**. Nazwij nową konfigurację **Działania importu/eksportu**, jak pokazano na poniższej ilustracji. Użyj pliku programu Excel [Dane ER — szczegóły importu i eksportu](https://go.microsoft.com/fwlink/?linkid=845208) jako szablonu podczas projektowania formatu ER. (Aby uzyskać więcej informacji o importowaniu szablonu formatu, odtwórz przewodnik po zadaniu).
+Należy utworzyć nową konfigurację formatu modułu ER używającą modelu danych **Intrastat** jako źródła danych biznesowych. Ta konfiguracja formatu musi generować dane wyjściowe w postaci dokumentów elektronicznych w formacie OpenXML (pliku programu Excel). Aby uzyskać więcej informacji, odtwórz przewodnik po zadaniu **ER Tworzenie konfiguracji dla raportów w formacie OPENXML**. Nazwij nową konfigurację **Działania importu/eksportu**, jak pokazano na poniższej ilustracji. Użyj pliku programu Excel [Dane ER — szczegóły importu i eksportu](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) jako szablonu podczas projektowania formatu ER. (Aby uzyskać więcej informacji o importowaniu szablonu formatu, odtwórz przewodnik po zadaniu).
 
 [![Konfiguracja Działania importu/eksportu](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
@@ -126,7 +126,7 @@ Kliknij przycisk **Ustawienia** dla nowego rekordu miejsca docelowego. Następni
 1. Na stronie **Konfiguracje** (**Administrowanie organizacją** &gt; **Raportowanie elektroniczne** &gt; **Konfiguracje**) w drzewie konfiguracji wybierz utworzoną wcześniej konfigurację **Działania importu/eksportu**.
 2. Zmień stan wersji 1.1 z **Robocza** na **Ukończono**, co spowoduje udostępnienie tego formatu do użytku.
 
-    [![Strona Konfiguracje](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Konfiguracja działań importu/eksportu na stronie Konfiguracje](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Wybierz ukończoną wersję konfiguracji **Działania importu/eksportu**, a następnie kliknij przycisk **Uruchom**. Należy zwrócić uwagę, ze skonfigurowane miejsce docelowe będzie stosowane do danych wyjściowych wygenerowanych w formacie programu Excel.
 4. W opcji **Przetwarzanie wsadowe** ustaw wartość **Tak**, aby generować ten raport w trybie nienadzorowanym.
@@ -187,11 +187,11 @@ Konfigurowanie integracji z modułem Power BI. Aby uzyskać więcej informacji, 
 2. Zaznacz utworzony raport programu Power BI zatytułowany **Szczegóły importu i eksportu**, a zostanie on wyświetlony jako element akcji na wybranej stronie.
 3. Kliknij element akcji, a zostanie otwarta strona pokazująca raport zaprojektowany w programie Power BI.
 
-    [![Raport o szczegółach importu i eksportu](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Raport o szczegółach importu i eksportu zaprojektowany w Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Lokalizacje docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
+[Miejsca docelowe raportowania elektronicznego (ER)](electronic-reporting-destinations.md)
 
 [Omówienie raportowania elektronicznego (RE)](general-electronic-reporting.md)
 

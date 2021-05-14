@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f342831d95f9988f9bb7807bac986e43cb317e0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7ea30dc107213b1a2c6b2a109188066a6ea82159
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820016"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921018"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>Tworzenie konwencji nazewnictwa identyfikatorów produktów dla skonfigurowanych wariantów produktu
 
@@ -26,79 +26,78 @@ ms.locfileid: "5820016"
 
 Ta procedura pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu dla skonfigurowanych wariantów produktu i jak można ją połączyć z konfigurowalnym produktem głównym. W procedurze zademonstrowano również, jak zbudować konwencję nazewnictwa konfiguracji dla składnika modelu konfiguracji produktu. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Nowa konwencja nazewnictwa numerów produktu jest przypisana do produktu głównego D0004. Zazwyczaj zadanie wykonuje projektant produktów.
 
-
 ## <a name="create-a-product-number-nomenclature"></a>Tworzenie konwencji nazewnictwa numerów produktu
-1. Kliknij opcję Definicja modelu wariantu produktu.
-2. Kliknij opcję Nazewnictwo produktów.
-3. Kliknij przycisk Nowy.
-4. W polu Nazwa wpisz wartość.
-5. Wypełnij pole Opis.
-6. Kliknij przycisk Dodaj.
-7. Kliknij opcję Numer produktu głównego.
-8. Kliknij przycisk Dodaj.
-9. Kliknij opcję Stała tekstowa.
-10. Na liście oznacz wybrany wiersz.
-11. W polu Tekst wpisz wartość.
-12. Kliknij przycisk Dodaj.
-13. Kliknij opcję Konfiguracja.
-14. Zamknij stronę.
+
+1. Wybierz kolejno pozycje **Zarządzanie informacjami o produktach \> Ustawienia \> Nazewnictwo produktów**.
+1. Wybierz pozycję **Nowy**.
+1. W polu **Nazwa** wpisz wartość.
+1. W polu **Opis** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Numer produktu głównego**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Konfiguracja**.
+1. Zamknij stronę.
 
 ## <a name="assign-the-product-number-nomenclature-to-a-product-master"></a>Przypisywanie konwencji nazewnictwa numerów produktu do produktu głównego
-1. Kliknij opcję Produkty główne.
-2. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład wyfiltruj według pola Numer produktu z wartością „D”.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Kliknij przycisk Edytuj.
-5. W polu Użyj nazewnictwa zaznacz opcję Tak.
-6. W polu Nazewnictwo numerów wariantów produktu wprowadź lub wybierz wartość.
-7. Zamknij stronę.
-8. Zamknij stronę.
+
+1. Wybierz kolejno pozycje **Zarządzanie informacjami o produktach \> Produkty \> Produkty główne**.
+1. Skorzystaj z opcji szybkiego filtrowania, aby znaleźć rekordy. Na przykład ustaw filtr na pole **Numer produktu** z wartością „D”.
+1. Na liście wybierz łącze w wybranym wierszu.
+1. Wybierz opcję **Edycja**.
+1. W polu **Użyj nazewnictwa** zaznacz opcję *Tak*.
+1. W polu **Nazewnictwo numerów wariantów produktu** wprowadź lub wybierz wartość.
+1. Zamknij stronę.
+1. Zamknij stronę.
 
 ## <a name="create-nomenclature-for-a-product-configuration-model-component"></a>Tworzenie konwencji nazewnictwa dla składnika modelu konfiguracji produktu
-1. Kliknij opcję Modele konfiguracji produktu.
-2. Na liście znajdź i zaznacz odpowiedni rekord.
-3. Na liście kliknij łącze w wybranym wierszu.
-4. Kliknij przycisk Edytuj.
-5. W polu Użyj nazewnictwa konfiguracji zaznacz opcję Tak.
-6. Kliknij przycisk Dodaj.
-7. Kliknij opcję Wartość atrybutu.
-8. Na liście oznacz wybrany wiersz.
-9. Wprowadź lub wybierz wartość w polu Atrybut.
-10. Kliknij przycisk Dodaj.
-11. Kliknij opcję Stała tekstowa.
-12. Na liście oznacz wybrany wiersz.
-13. W polu Tekst wpisz wartość.
-14. Kliknij przycisk Dodaj.
-15. Kliknij opcję Wartość atrybutu.
-16. Na liście oznacz wybrany wiersz.
-17. Wprowadź lub wybierz wartość w polu Atrybut.
-18. Kliknij przycisk Dodaj.
-19. Kliknij opcję Stała tekstowa.
-20. Na liście oznacz wybrany wiersz.
-21. W polu Tekst wpisz wartość.
-22. Kliknij przycisk Dodaj.
-23. Kliknij opcję Wartość atrybutu.
-24. Na liście oznacz wybrany wiersz.
-25. Wprowadź lub wybierz wartość w polu Atrybut.
-26. Kliknij przycisk Dodaj.
-27. Kliknij opcję Stała tekstowa.
-28. Na liście oznacz wybrany wiersz.
-29. W polu Tekst wpisz wartość.
-30. Kliknij przycisk Dodaj.
-31. Kliknij opcję Wartość atrybutu.
-32. Na liście oznacz wybrany wiersz.
-33. Wprowadź lub wybierz wartość w polu Atrybut.
-34. Kliknij przycisk Dodaj.
-35. Kliknij opcję Stała tekstowa.
-36. Na liście oznacz wybrany wiersz.
-37. W polu Tekst wpisz wartość.
-38. Kliknij przycisk Dodaj.
-39. Kliknij opcję Wartość sekwencji numerów.
-40. Na liście oznacz wybrany wiersz.
-41. W polu Sekwencja numerów wprowadź lub wybierz wartość.
-42. Zamknij stronę.
-43. Zamknij stronę.
-44. Zamknij stronę.
 
-
+1. Przejdź do **Zarządzanie informacjami o produktach \> Produkty \> Modele konfiguracji produktów**.
+1. Na liście znajdź i zaznacz odpowiedni rekord.
+1. Na liście wybierz łącze w wybranym wierszu.
+1. Wybierz opcję **Edycja**.
+1. W polu **Użyj nazewnictwa konfiguracji** wybierz opcję *Tak*.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Wartość atrybutu**.
+1. Na liście oznacz wybrany wiersz.
+1. Wprowadź lub wybierz wartość w polu **Atrybut**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Wartość atrybutu**.
+1. Na liście oznacz wybrany wiersz.
+1. Wprowadź lub wybierz wartość w polu **Atrybut**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Wartość atrybutu**.
+1. Na liście oznacz wybrany wiersz.
+1. Wprowadź lub wybierz wartość w polu **Atrybut**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Wartość atrybutu**.
+1. Na liście oznacz wybrany wiersz.
+1. Wprowadź lub wybierz wartość w polu **Atrybut**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz opcję **Wartość sekwencji numerów**.
+1. Na liście oznacz wybrany wiersz.
+1. W polu **Sekwencja numerów** wprowadź lub wybierz wartość.
+1. Zamknij stronę.
+1. Zamknij stronę.
+1. Zamknij stronę.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

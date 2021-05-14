@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799662"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936889"
 ---
 # <a name="call-center-catalogs"></a>Katalogi biura obsługi
 
@@ -39,7 +39,7 @@ Firmy prowadzące działalność marketingową kierowane bezpośrednio do konsum
 
 Wybierz kolejno opcje **Retail i Commerce** \> **Katalogi i asortymenty** \> **Wszystkie katalogi** i skonfiguruj katalog.
 
-Podczas tworzenia nowego katalogu, należy najpierw połączyć katalog z jednym lub kilkoma kanałami. Jest to wykonywane na skróconej karcie **Kanały Commerce** w formularzu **Konfiguracja katalogu**. Kliknij przycisk **Dodaj** i wybierz jeden lub więcej kanałów. Podczas tworzenia katalogu można używać tylko elementów połączonych z wybranymi [asortymentami](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kanału.
+Podczas tworzenia nowego katalogu, należy najpierw połączyć katalog z jednym lub kilkoma kanałami. Jest to wykonywane na skróconej karcie **Kanały Commerce** w formularzu **Konfiguracja katalogu**. Kliknij przycisk **Dodaj** i wybierz jeden lub więcej kanałów. Podczas tworzenia katalogu można używać tylko elementów połączonych z wybranymi [asortymentami](/dynamics365/unified-operations/retail/assortments) kanału.
 
 Aby dodać produkty do katalogu, należy wybrać hierarchię nawigacji. Hierarchia nawigacji będzie obsługiwać strukturę kategorii dla katalogu. Należy wybrać jedną z hierarchii nawigacji połączoną z kanałami wybranymi w skróconej karcie **Kanały Commerce** na stronie **Katalog**. Jeśli kanał nawigacji nie był wcześniej połączony z kanałem, wybierz kolejno opcje **Retail i Commerce** \> **Ustawienia kanału** \> **Kategorie kanału sprzedaży i atrybuty produktów** i połącz domyślne wartości hierarchii nawigacji z poszczególnymi kanałami.
 

@@ -2,25 +2,25 @@
 title: Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 description: W tym temacie objaśniono, w jaki sposób podatki są obliczane dla różnych typów kont (dostawca, odbiorca, Księga i projekt) w wierszach arkusza finansowego.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815339"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937313"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ W tej sekcji opisano sposób obliczania znaku kwoty podatku od sprzedaży.
 
 ![Strona transakcji podatku](media/sales-tax-amount-sign.jpg)
 
-W poniższej tabeli przedstawiono regułę rodzajową służącą do określania znaku kwot podatku w tabeli tymczasowych podatków od sprzedaży.
+W poniższej tabeli przedstawiono regułę rodzajową służącą do określania kierunku podatku i znaku kwot podatku w tabeli tymczasowych podatków od sprzedaży.
 
 | Liczba wierszy w arkuszu | Kierunek podatku  | Kwota podatku — podpisz |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ W poniższej tabeli przedstawiono regułę rodzajową służącą do określania
 | Ujemny            | Podatek naliczony | Ujemny              |
 | Ujemny            | Podatek należny    | Dodatni              |
 
-Istnieje specjalna reguła dla załączników, które mają tylko wiersze **projektu** lub **księgi**, jeśli w wierszu **księgi** wybrano grupę podatków lub grupę podatków dla danego towaru. Ta reguła jest kontrolowana przez włączenie funkcji niezależnego obliczania podatku dla arkuszy finansowych. Gdy ta funkcja jest wyłączona, kwota podatku w wierszu **Księgi** używa kierunku debetu/kredytu wiersza **Projektu**. Gdy ta funkcja jest wyłączona, kwota podatku w wierszu **księgi** używa kierunku debetu/kredytu wiersza projektu. W poniższych tabelach przedstawiono reguły dla każdego scenariusza. 
+Istnieje specjalna reguła dla załączników, które mają tylko wiersze **projektu** lub **księgi**, jeśli w wierszu **księgi** wybrano grupę podatków lub grupę podatków dla danego towaru. Ta reguła jest kontrolowana przez funkcję **Włączenie funkcji niezależnego obliczania podatku dla arkuszy finansowych**. Gdy ta funkcja jest wyłączona, kwota podatku w wierszu **Księgi** używa kierunku debetu/kredytu wiersza **Projektu**. Gdy ta funkcja jest wyłączona, kwota podatku w wierszu **księgi** używa kierunku debetu/kredytu wiersza projektu. W poniższych tabelach przedstawiono reguły dla każdego scenariusza. 
 
 **Reguła, gdy funkcja jest włączona.**
 

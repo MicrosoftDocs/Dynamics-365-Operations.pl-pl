@@ -2,7 +2,7 @@
 title: Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością
 description: Ten temat zawiera informacje dotyczące korzystania z funkcji śledzenia wydajności w module Raportowanie elektroniczne (ER) w celu rozwiązywania problemów z wydajnością.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754224"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944660"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -47,10 +47,10 @@ Musisz również pobrać i lokalnie zapisać następujące pliki.
 
 | Plik                                  | Zawartość                               |
 |---------------------------------------|---------------------------------------|
-| Model śledzenia wydajności, wersja 1     | [Przykładowa konfiguracja modelu danych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Metadane śledzenia wydajności, wersja 1  | [Przykładowa konfiguracja metadanych ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Mapowanie śledzenia wydajności, wersja 1.1 | [Przykładowa konfiguracja mapowania modelu ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Format śladu wydajności, wersja 1.1  | [Przykładowa konfiguracja formatu ER](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Model śledzenia wydajności, wersja 1     | [Przykładowa konfiguracja modelu danych ER](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Metadane śledzenia wydajności, wersja 1  | [Przykładowa konfiguracja metadanych ER](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Mapowanie śledzenia wydajności, wersja 1.1 | [Przykładowa konfiguracja mapowania modelu ER](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Format śladu wydajności, wersja 1.1  | [Przykładowa konfiguracja formatu ER](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfigurowanie parametrów modułu ER
 
@@ -84,7 +84,7 @@ Aby typ dokumentu DM był dostępny w polu wyszukiwania **Inne**, musi być skon
 Załóżmy, że rozpoczęto projektowanie nowego rozwiązania ER w celu wygenerowania nowego raportu, który przedstawia transakcje dostawcy. Dotychczas transakcje wybranego dostawcy można było znaleźć na stronie **Transakcje dostawcy** (przejdź do **Rozrachunki z dostawcami \> Dostawcy \> Wszyscy dostawcy**, wybierz dostawcę, a następnie, w okienku akcji, na karcie **Dostawca**, w grupie **Transakcje** wybierz opcję **Transakcje**). Chcesz jednak mieć wszystkie transakcje dostawcy równocześnie w jednym dokumencie elektronicznym w formacie XML. To rozwiązanie będzie składać się z kilku konfiguracji ER, które zawierają wymagany model danych, metadane, mapowanie modeli i składniki formatu.
 
 1. Zaloguj się do wystąpienia RCS, które zostało zainicjowane dla danej firmy.
-2. W tym samouczku utworzysz i zmodyfikujesz konfiguracje dla przykładowej firmy **Litware, Inc.** Upewnij się zatem, że ten dostawca konfiguracji jest dodany do RCS i wybrany jako aktywny. Szczegółowe instrukcje znajdują się w procedurze [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. W tym samouczku utworzysz i zmodyfikujesz konfiguracje dla przykładowej firmy **Litware, Inc.** Upewnij się zatem, że ten dostawca konfiguracji jest dodany do RCS i wybrany jako aktywny. Szczegółowe instrukcje znajdują się w procedurze [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. W obszarze roboczym **raportowanie elektroniczne** wybierz kafelek **konfiguracje raportowania**.
 4. Na stronie **Konfiguracje** zaimportuj konfiguracje ER, które zostały pobrane jako wstępnie wymagane do RCS, w następującej kolejności: model danych, metadane, mapowanie modelu, format. Dla każdej konfiguracji wykonaj następujące czynności:
 
@@ -101,7 +101,7 @@ Załóżmy, że zakończono projektowanie pierwszej wersji rozwiązania ER. Chce
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importowanie konfiguracji ER z RCS do Finance and Operations
 
 1. Zaloguj się do swojego wystąpienia aplikacji.
-2. W tym samouczku zaimportujesz konfiguracje z wystąpienia RCS (w którym projektujesz składniki ER) do swojego wystąpienia (w którym je testujesz i ostatecznie ich używasz). Upewnij się zatem, że zostały przygotowane wszystkie wymagane artefakty. Szczegółowe instrukcje zawiera procedura [Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. W tym samouczku zaimportujesz konfiguracje z wystąpienia RCS (w którym projektujesz składniki ER) do swojego wystąpienia (w którym je testujesz i ostatecznie ich używasz). Upewnij się zatem, że zostały przygotowane wszystkie wymagane artefakty. Szczegółowe instrukcje zawiera procedura [Importowanie konfiguracji raportowania elektronicznego (RE) z usługi Regulatory Configuration Services (RCS)](rcs-download-configurations.md).
 3. Aby zaimportować konfiguracje z RCS do aplikacji, należy wykonać następujące czynności:
 
     1. W obszarze roboczym **Raportowanie elektroniczne** na kafelku dostawcy konfiguracji **Litware, Inc.** wybierz opcję **Repozytoria**.

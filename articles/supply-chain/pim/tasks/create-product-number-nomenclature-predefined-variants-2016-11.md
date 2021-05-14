@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c69dc3f8e70c3b0a760f54d2251757ac997a432
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4bb73854f52525c0722683086d1b4f1dd7173306
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841630"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920664"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Tworzenie konwencji nazewnictwa identyfikatorów produktów dla wstępnie zdefiniowanych wariantów produktu
 
@@ -28,33 +28,33 @@ Ten temat pokazuje, jak skonfigurować konwencję nazewnictwa numerów produktu 
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Tworzenie konwencji nazewnictwa numerów produktu
-1. Wybierz **Definicja modelu wariantu produktu**.
-2. Wybierz **Nazewnictwo produktów**.
-3. Wybierz pozycję **Nowy**.
-4. W polu **Nazwa** wprowadź nazwę konwencji nazewnictwa, która pomoże w identyfikacji docelowej grupy wymiarów produktu, na przykład `ColorSize`.
-5. W polu **Opis** wpisz wartość.
-6. Wybierz opcję **Dodaj**.
-7. Wybierz numer **produktu głównego**.
-8. Wybierz opcję **Dodaj**.
-9. Wybierz **Stała tekstowa**.
-10. W polu **Tekst** wpisz wartość.
-11. Wybierz opcję **Dodaj**.
-12. Wybierz **Kolor**.
-13. Wybierz opcję **Dodaj**.
-14. Wybierz **Stała tekstowa**.
-15. W polu **Tekst** wpisz wartość.
-16. Wybierz opcję **Dodaj**.
-17. Wybierz **Rozmiar**.
-18. Zamknij stronę.
+
+1. Wybierz kolejno pozycje **Zarządzanie informacjami o produktach \> Ustawienia \> Nazewnictwo produktów**.
+1. Wybierz pozycję **Nowy**.
+1. W polu **Nazwa** wprowadź nazwę konwencji nazewnictwa, która pomoże w identyfikacji docelowej grupy wymiarów produktu, na przykład `ColorSize`.
+1. W polu **Opis** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz numer **produktu głównego**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Kolor**.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Stała tekstowa**.
+1. W polu **Tekst** wpisz wartość.
+1. Wybierz opcję **Dodaj**.
+1. Wybierz **Rozmiar**.
+1. Zamknij stronę.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Przypisywanie konwencji nazewnictwa do produktu głównego
+
 1. Wybierz **Grupy wymiarów produktu**.
 2. Zaznacz grupę **wymiarów produktu SizeCol**.
 3. Wybierz opcję **Edycja**.
 4. W polu **Użyj nazewnictwa** zaznacz opcję **Tak**.
 5. W polu **Nazewnictwo numerów wariantów produktu** wprowadź lub wybierz wartość.
 6. Zamknij stronę.
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

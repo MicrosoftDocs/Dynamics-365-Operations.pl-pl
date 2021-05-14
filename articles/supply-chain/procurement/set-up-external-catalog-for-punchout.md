@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9267047b4bf1ab4185efca9980e0f517f4b05096
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a816f6cff90b8292f66d73b12d328c3f56108957
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812527"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920564"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Konfigurowanie katalogu zewnętrznego dla rozwiązania PunchOut e-procurement
 
@@ -40,7 +40,7 @@ Zewnętrzny katalog powinien umożliwiać pracownikowi wprowadzającemu zapotrze
 
 1. Ustawianie hierarchii kategorii zaopatrzenia. Aby uzyskać więcej informacji, zobacz [Konfigurowanie zasad dla hierarchii kategorii zaopatrzenia](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Zarejestruj dostawcę w Supply Chain Management. Aby można było utworzyć konfiguracje pozwalające na dostęp do zewnętrznego katalogu dostawcy, należy skonfigurować dostawcę i jego osobę kontaktową w programie Microsoft Dynamics 365. Ponadto dostawca zewnętrznego katalogu musi być dodany do wybranej kategorii zaopatrzenia. Aby uzyskać więcej informacji o rejestrowaniu dostawców, zobacz [Zarządzanie użytkownikami modułu Współpraca z dostawcami](manage-vendor-collaboration-users.md). Aby uzyskać informacje o przypisywaniu dostawców do kategorii zaopatrzenia, zobacz [Zatwierdzanie dostawców dla konkretnych kategorii zaopatrzenia](tasks/approve-vendors-specific-procurement-categories.md).
-3. Skonfigurowanie jednostek miary i waluty używanych przez dostawcę. Aby uzyskać informacje o tworzeniu jednostki miary, zobacz [Zarządzanie jednostką miary](../pim/tasks/manage-unit-measure.md).
+3. Skonfigurowanie jednostek miary i waluty używanych przez dostawcę. Aby uzyskać informacje o tworzeniu jednostki miary, zobacz [Zarządzanie jednostkami miary](../pim/tasks/manage-unit-measure.md).
 4. Skonfigurowanie zewnętrznego katalogu dostawcy z uwzględnieniem wymagań obowiązujących w witrynie tego katalogu. Aby uzyskać szczegółowe informacje o tym zadaniu, zobacz temat [Konfigurowanie zewnętrznego katalogu dostawcy](#configure-the-external-vendor-catalog).
 5. Przetestowanie konfiguracji zewnętrznego katalogu dostawcy w celu sprawdzenia, czy ustawienia są prawidłowe i czy masz dostęp do katalog. Za pomocą akcji **Sprawdź poprawność ustawień** zweryfikuj zdefiniowany przez siebie komunikat konfiguracji żądania. Ten komunikat powinien powodować otwieranie witryny zewnętrznego katalogu dostawcy w oknie przeglądarki internetowej. Podczas sprawdzania poprawności nie można zamawiać towarów ani usług od dostawcy. Aby zamawiać towary i usługi, należy przejść do katalogu dostawcy z poziomu zapotrzebowania na zakup.
 6. Aktywacja zewnętrznego katalogu za pomocą przycisku **Uaktywnij katalog** znajdującego się na stronie **Katalogi zewnętrzne**. Zewnętrzny katalog musi zostać aktywowany, zanim będą go mogli używać pracownicy. Zewnętrzny katalog można w dowolnym momencie zdezaktywować.

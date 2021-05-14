@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7c1bd8d9cb494cef78fa7c14f6c391821d48749a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799860"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936663"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 
@@ -43,7 +43,7 @@ Aby włączyć funkcję handlu elektronicznego B2B w centrali Commerce, wykonaj 
 
 ## <a name="create-a-number-sequence-and-add-it-to-commerce-shared-parameters"></a>Utwórz sekwencję numerów i dodaj ją do wspólnych parametrów Commerce
 
-Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory. Aby uzyskać więcej informacji na temat sekwencji numerów, zobacz temat pomocy [Omówienie sekwencji numerów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview).
+Sekwencje numerów są używane do generowania czytelnych, unikatowych identyfikatorów dla rekordów danych głównych i rekordów transakcji, które muszą mieć identyfikatory. Aby uzyskać więcej informacji na temat sekwencji numerów, zobacz temat pomocy [Omówienie sekwencji numerów](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 
 Aby utworzyć sekwencję numerów i dodać ją do parametrów współdzielonych aplikacji Commerce w centrali Commerce, wykonaj następujące kroki.
 
@@ -136,7 +136,7 @@ Aby dołączyć partnerów biznesowych i użytkowników w centrali Commerce, wyk
 
 [Ustawianie limitów ilości produktów dla witryn B2B handlu elektronicznego](quantity-limits.md)
 
-[Omówienie sekwencji identyfikatorów](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+[Omówienie sekwencji identyfikatorów](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

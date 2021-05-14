@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 62d789edea1bcce544693046d47d52473e2280f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7449f4874bf5c280218a2771e0af35e4b2b62a0b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820137"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921066"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Tworzenie kodu kreskowego dla produktu
 
@@ -26,19 +26,18 @@ ms.locfileid: "5820137"
 
 W tym temacie pokazano sposób ręcznego tworzenia kodu kreskowego przy użyciu przykładowego numeru towaru M0001. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF.
 
-1. Wybierz opcję **Obsługa zwolnionego produktu** na stronie głównej.
-2. Przejdź do menu **Produkty > Zwolnione produkty** w sekcji **Linki**.
-3. Na liście znajdź i zaznacz odpowiedni rekord. W tym przykładzie zaznacz numer towaru **M0001**.
-4. W okienku akcji wybierz pozycję **Zarządzaj zapasami**.
-5. Wybierz pozycję **Kody kreskowe**.
-6. Wybierz pozycję **Nowy**.
-7. Zaznacz wybrany wiersz, który został utworzony na poniższej liście.
-8. W polu **Konfiguracja kodów** kreskowych wprowadź lub wybierz wartość.
-9. W polu **Kod kreskowy** wprowadź lub wybierz wartość.
-10. W polu **Kod kreskowy** wpisz wartość.  
-11. W polu **Ilość** wpisz liczbę.
-12. Wybierz opcję **Zapisz**.
-13. Zamknij stronę. 
+1. Przejdź do **Zarządzanie informacjami o produktach\> Produkty \> Zwolnione produkty**.
+1. Na liście znajdź i zaznacz odpowiedni rekord. W tym przykładzie zaznacz numer towaru **M0001**.
+1. W okienku akcji wybierz pozycję **Zarządzaj zapasami**.
+1. Wybierz pozycję **Kody kreskowe**.
+1. Wybierz pozycję **Nowy**.
+1. Zaznacz wybrany wiersz, który został utworzony na poniższej liście.
+1. W polu **Konfiguracja kodów** kreskowych wprowadź lub wybierz wartość.
+1. W polu **Kod kreskowy** wprowadź lub wybierz wartość.
+1. W polu **Kod kreskowy** wpisz wartość.  
+1. W polu **Ilość** wpisz liczbę.
+1. Wybierz opcję **Zapisz**.
+1. Zamknij stronę. 
 
 
 

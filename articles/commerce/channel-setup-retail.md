@@ -2,7 +2,7 @@
 title: Konfigurowanie kanału sprzedaży
 description: W tym temacie opisano, jak dodać utworzyć nowy kanał sprzedaży w Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800598"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937541"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurowanie kanału handlu detalicznego
 
@@ -68,7 +68,7 @@ Poniższy obraz przedstawia przykład konfiguracji kanału sprzedaży.
 
 ## <a name="additional-channel-set-up"></a>Konfiguracja kanałów dodatkowych
 
-Istnieją dodatkowe pozycje, które należy skonfigurować dla kanału, które można znaleźć w **okienku akcji** w sekcji **Konfiguracja**.
+Istnieją dodatkowe pozycje, które należy skonfigurować dla kanału, które można znaleźć w okienku akcji w sekcji **Konfiguracja**.
 
 Dodatkowe zadania wymagane do konfiguracji kanału online obejmują konfigurowanie metod płatności, deklaracji gotówki, metod dostawy, kont przychodów/wydatków, sekcji, przypisania grupy realizacji i sejfów.
 
@@ -102,7 +102,7 @@ Poniższy obraz przedstawia przykład kart i deklaracji gotówki.
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
-Skonfigurowane metody dostawy można wyświetlić, wybierając opcję **Metody dostawy** na karcie **Konfiguracja** w **okienku akcji**.  
+Skonfigurowane metody dostawy można wyświetlić, wybierając opcję **Metody dostawy** na karcie **Konfiguracja** w okienku akcji.  
 
 Aby zmienić lub dodać metodę dostawy, wykonaj następujące kroki.
 
@@ -166,11 +166,42 @@ Aby skonfigurować sejfy, wykonaj następujące czynności.
 1. Wprowadź nazwę sejfu.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
+### <a name="ensure-unique-transaction-ids"></a>Zapewnianie unikatowych identyfikatorów transakcji
+
+W Commerce w wersji 10.0.18 identyfikatory transakcji wygenerowane dla punktu sprzedaży (POS) są sekwencyjne i zawierają następujące elementy:
+
+- Stała część, która jest zlepkiem identyfikatora sklepu i identyfikatora terminalu. 
+- Sekwencyjna część, która jest sekwencją numerów. 
+
+Format to *{store}-{terminal}-{numbersequence}*. 
+
+Ponieważ identyfikatory transakcji mogą być generowane w trybie offline i online, istnieją przypadki duplikowania identyfikatorów transakcji. Eliminacja duplikatów identyfikatorów transakcji wymaga ręcznego poprawiania danych. 
+
+W Commerce w wersji 10.0.19 format identyfikatora transakcji został zaktualizowany w celu usunięcia sekwencyjnej części, a zamiast tego jest używany 13-cyfrowy numer wygenerowany przez obliczenie czasu w milisekundach od 1970 roku. Nowy numer identyfikatora transakcji po tej zmianie to *{store}-{terminal}-{millisecondsSince1970}*. Ta aktualizacja powoduje, że identyfikator transakcji nie jest sekwencyjny i że identyfikatory transakcji są zawsze unikatowe. 
+
+> [!NOTE]
+> Identyfikatory transakcji są przeznaczone tylko do użytku wewnętrznego, więc nie muszą być sekwencyjne. Jednak w wielu krajach identyfikatory paragonów muszą być sekwencyjne.
+
+Nową funkcję formatu identyfikatora transakcji można włączyć w obszarze roboczym **Zarządzanie funkcjami**. 
+
+Aby umożliwić używanie nowych identyfikatorów transakcji, należy wykonać następujące czynności:
+
+1. W centrali Commerce wybierz kolejno opcje **Administrator systemu \> Obszary robocze \> Zarządzanie funkcjami**.
+1. Wyszukaj na liście moduł „Retail i Commerce”.
+1. Wyszukaj nazwę funkcji **Włącz nowy identyfikator transakcji w celu uniknięcia duplikatów identyfikatorów transakcji**.
+1. Wybierz funkcję, a następnie w prawym okienku naciśnij przycisk **Włącz teraz**.  
+1. Wybierz kolejno opcje **Retail i Commerce \> Retail i Commerce IT \> Harmonogram dystrybucji**.
+1. Uruchom zadania **1070 Konfiguracja kanałów** i **1170 Rejestrator zadań punktu sprzedaży**, aby zsynchronizować włączone funkcje w sklepach.
+1. Po wysłaniu zmian do sklepów terminale punktu sprzedaży muszą zostać zamknięte i ponownie otwarte, aby używać nowego formatu identyfikatora transakcji. 
+
+> [!NOTE]
+> Po włączeniu nowej funkcji formatu identyfikatora transakcji nie będzie można wyłączyć tej funkcji. Jeśli musi zostać wyłączona, skontaktuj się z pomocą techniczną Commerce.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
 
 [Konfigurowanie kanału internetowego](channel-setup-online.md)
 

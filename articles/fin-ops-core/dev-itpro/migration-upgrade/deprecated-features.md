@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745270"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921430"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -37,7 +37,7 @@ W tym temacie opisano funkcje, które zostały usunięte lub wycofane z systemu 
 
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
-Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 z aktualizacją 31 platformy
 
@@ -147,7 +147,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Przyczyna wycofania/usunięcia** | Wyrównanie nagłówka z innymi produktami Dynamics i Office. Więcej szczegółów można znaleźć w artykule [Zaktualizowany pasek nawigacyjny wyrównany z nagłówkiem pakietu Office](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 24, został wprowadzony nowy pasek nawigacyjny z funkcją wyszukiwania. |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszystkich |
@@ -161,7 +161,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Starsze zachowanie dla domyślnych akcji w siatkach skutkuje tym, że nieoczekiwana kolumna ma łącze do domyślnej akcji, kiedy kolumny siatki zostaną przeorganizowane w procesie personalizacji. Nowa funkcja domyślnej akcji trwałej naprawia ten problem. Aby uzyskać więcej informacji, zobacz [Domyślne akcje trwałe w siatkach](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Przyczyna wycofania/usunięcia** | Starsze zachowanie dla domyślnych akcji w siatkach skutkuje tym, że nieoczekiwana kolumna ma łącze do domyślnej akcji, kiedy kolumny siatki zostaną przeorganizowane w procesie personalizacji. Nowa funkcja domyślnej akcji trwałej naprawia ten problem. Aby uzyskać więcej informacji, zobacz [Domyślne akcje trwałe w siatkach](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji platformy 21, została wprowadzona funkcja „domyślne akcje trwałe”. Ta funkcja może być włączona na stronie **opcji wydajności klienta**. |
 | **Powiązane obszary produktów**         | Siatki w kliencie sieci web |
 | **Opcja wdrażania**              | Wszystkich |
@@ -172,7 +172,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Przyczyna wycofania/usunięcia** | Filtrowanie "jest jednym z" zostało zmienione w aktualizacji Platform update 22, z możliwością, że "jest jednym z" będzie jedyną opcją filtrowania. |
-| **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji Platform update 22, ulepszone filtrowanie „jest jednym z” jest dostępne na stronie **opcji wydajności klienta**. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Zamieniona przez inną funkcję?**   | Począwszy od aktualizacji Platform update 22, ulepszone filtrowanie „jest jednym z” jest dostępne na stronie **opcji wydajności klienta**. Aby dowiedzieć się więcej, zobacz [Optymalizowanie funkcji filtrowania „jest jednym z”](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Wycofane: Począwszy od kwietnia 2020, poprawiona funkcja "jest jednym z" będzie domyślnym zachowaniem, bez mechanizmu odwrócenia starszego zachowania. |
@@ -1333,7 +1333,7 @@ Usługi Sites Services pozwalają tworzyć witryny internetowe, które poszerzaj
 
 ### <a name="virtual-company-accounts"></a>Firmy wirtualne
 
-Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
+Funkcja firm wirtualnych nie jest już obsługiwana w systemie Dynamics AX. Funkcja firm wirtualnych pozwalała użytkownikom na konfigurowanie tabel wspólnych dla zbioru firm. Opis tej funkcji można znaleźć w temacie [Firmy oraz firmy wirtualne](../../fin-ops/get-started/ax4-content-retired.md). Funkcja działa poprzez grupowanie tabel w zbiory przypisane do wirtualnych firm będących grupami istniejących „rzeczywistych” firm. Tworzone są zapytania, tak aby wszystkie firmy w firmie wirtualnej miały dostęp do danych w tabelach skojarzonych zbiorów tabel.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

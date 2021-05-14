@@ -2,7 +2,7 @@
 title: Zarządzanie jakością dla procesów magazynowych
 description: Ten temat zawiera informacje o procesie zarządzania jakością dla funkcji procesów magazynu. Ta funkcja rozszerza możliwości zarządzania jakością i umożliwia użytkownikom integrowanie kontroli przez pobieranie próbek towarów z procesem przyjmowania do magazynu przy użyciu zaawansowanego zarządzania magazynem.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834272"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956089"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Zarządzanie jakością dla procesów magazynowych
 
@@ -620,5 +620,8 @@ Istnieje możliwość skonfigurowania pracy i danych lokalizacji dla magazynu 51
 > [!NOTE]
 > Rozważ dodanie wpisu jakości do elementu menu urządzenia przenośnego, w którym w kodzie działania jest *Wyświetl listę otwartych prac*. Na przykład zobacz pozycje menu urządzenia mobilnego o nazwie **Lista prac** w danych demonstracyjnych. Najpierw dodaj klasę roboczą *Zlecenie kontroli jakości* do elementu menu skierowanego do użytkownika, ponieważ ta klasa robocza jest wymagana do wyświetlenia pracy na liście prac. Następnie dodaj klasę roboczą *Zlecenie kontroli jakości* do elementu menu **Lista prac**. Użytkownicy, którzy mają dostęp do listy prac, będą mogli pobierać i przetwarzać pracę, która jest automatycznie generowana na podstawie weryfikacji zlecenia kontroli jakości.
 
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+- [Omówienie zarządzania kontrolą jakości i niezgodnością](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
