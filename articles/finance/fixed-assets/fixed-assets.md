@@ -1,6 +1,6 @@
 ---
 title: Środki trwałe — strona główna
-description: Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji.
+description: Środki trwałe są elementami wartości, których właścicielem jest osoba lub organizacja. Elementy obejmują budynki, pojazdy, grunty i sprzęt.
 author: ShylaThompson
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1825ee4617d14b421d4a7e6151d645a653a9fcbb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815675"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897995"
 ---
 # <a name="fixed-assets-home-page"></a>Środki trwałe — strona główna
 
 [!include [banner](../includes/banner.md)]
 
-Środki trwałe to składniki majątku, takie jak budynki, pojazdy, grunty, maszyny i urządzenia, które należą do osoby fizycznej lub organizacji. 
+Środki trwałe są elementami wartości, których właścicielem jest osoba lub organizacja. Elementy obejmują budynki, pojazdy, grunty i sprzęt. 
 
-Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych możesz zarządzać nimi, amortyzując je i ustalając próg kapitalizacji w celu określenia amortyzacji. Możesz obliczać korekty środków trwałych i likwidować środki trwałe. W przypadku korzystania z modułu Księga główna wraz z modułem Środki trwałe możesz przeglądać bieżącą wartość wszystkich środków trwałych. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju/regionie prawodawstwem dotyczącym księgowania. Wymagania mogą obejmować reguły dotyczące rejestrowania transakcji nabycia i likwidacji, amortyzacji, okresu eksploatacji oraz zwiększania i zmniejszania wartości środków trwałych. Funkcje modułu Środki trwałe obejmują wiele z tych standardów i reguł.
+Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych możesz nimi zarządzać, amortyzując je i ustalając próg kapitalizacji w celu określenia amortyzacji. Możesz obliczać korekty środków trwałych i likwidować środki trwałe. W przypadku korzystania z modułu Księga główna wraz z modułem Środki trwałe możesz przeglądać bieżącą wartość wszystkich środków trwałych. Sposób zarządzania środkami trwałymi musi być zgodny zarówno z międzynarodowymi standardami księgowania, jak i z obowiązującym w danym kraju/regionie prawodawstwem dotyczącym księgowania. Wymagania mogą obejmować reguły dotyczące rejestrowania transakcji nabycia i likwidacji, amortyzacji, okresu eksploatacji oraz zwiększania i zmniejszania wartości środków trwałych. Funkcje modułu Środki trwałe obejmują wiele z tych standardów i reguł.
 
 [![Proces biznesowy](./media/FA-process.PNG)](./media/FA-process.PNG)
 
@@ -38,7 +38,7 @@ Po skonfigurowaniu i wprowadzeniu informacji o nabyciu środków trwałych może
 
 #### <a name="whats-new-and-in-development"></a>Nowe i opracowywane funkcje
 
-Przejdź do [planów wydań Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
+Przejdź do [planów wydań Microsoft Dynamics 365](/dynamics365/release-plans/), aby zobaczyć, jakie nowe funkcje zostały zaplanowane. 
 
 #### <a name="blogs"></a>Blogi
 

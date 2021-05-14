@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748472"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920864"
 ---
 # <a name="globalization-resources"></a>Zasoby globalizacji
 
 ## <a name="local-and-regional-deployments"></a>Lokalne i regionalne wdrożenia
 Jeśli przepisy obowiązujące w danym kraju wymagają, aby dane były przechowywane w inny sposób lub obsługiwane inaczej niż wymagane w innych krajach/regionach, mogą istnieć wymagania kraju/regionu, które należy wziąć pod uwagę podczas wdrażania. Pamiętaj o następujących zasobach, które mogą być przydatne w Twojej sytuacji:
 
-[Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Aplikacje Finance and Operations obsługiwane przez firmę 21Vianet w Chinach](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Funkcje związane z lokalizacją i wymagane przepisami prawa
 
@@ -60,7 +60,7 @@ Wymienione poniżej zasoby zawierają informacje o planowanych i nowych funkcjac
 -   [Przesyłanie alertów dotyczących funkcji wymaganych lokalnymi przepisami specyficznych dla kraju/regionu](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Plany wydań Dynamics 365
-W dokumencie [Plany wydań Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
+W dokumencie [Plany wydań Dynamics 365](/business-applications-release-notes/) znajdują się opisy nowych i ulepszonych możliwości, które mają zostać wprowadzone w aplikacjach biznesowych oraz platformach aplikacji usługi Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Co nowego w aplikacjach Finance and Operations
 Zawartość [strony głównej Nowości i zmiany w rozwiązaniu Finance and Operations](../../fin-ops/get-started/whats-new-changed.md) obejmuje listę funkcji wchodzących w skład poszczególnych wydań aplikacji Finance and Operations.

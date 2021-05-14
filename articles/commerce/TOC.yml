@@ -94,12 +94,12 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.19 (lipiec 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Rozwiązanie Commerce w wersji 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Rozwiązanie Commerce w wersji 10.0.17 (kwiecień 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.16 (luty 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -184,6 +184,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: Osadzanie aplikacji kanwy z aplikacji Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
+                - name: Osadzanie aplikacji innych firm
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
                 - name: Znajdowanie informacji za pomocą odnośników
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Zmienianie daty sesji
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurowanie i instalowanie modułu Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
+                - name: Masowe wdrażanie zapieczętowanych składników samoobsługi rozwiązania Commerce
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Masowe wdrażanie starszych składników samoobsługi rozwiązania
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Zdarzenia składników rozwiązania Commerce używane na potrzeby diagnostyki i rozwiązywania problemów
@@ -368,7 +372,7 @@
                       href: pos-operations.md
                     - name: Aktywacja urządzenia dostosowanej aplikacji Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Włącz uwierzytelnianie Azure Active Directory w celu logowania w punkcie sprzedaży
+                    - name: Konfigurowanie uwierzytelniania usługi Azure Active Directory w celu logowania w punkcie sprzedaży
                       href: aad-pos-logon.md
                     - name: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży
                       href: POS-search-improvements.md
@@ -634,6 +638,8 @@
                   href: tender_based_discounts.md
                 - name: Przegląd rabatów wysyłkowych
                   href: retail-shipping-discount.md
+                - name: Konfigurowanie upominków za pomocą promocji zakupu
+                  href: gift-with-purchase.md
                 - name: Ustawianie kuponów
                   href: retail-coupons.md
                 - name: Wyświetlanie rabatów w punkcie sprzedaży
@@ -760,6 +766,8 @@
                   href: notifications-pos.md
                 - name: Programy sprzedaży ciągłej i przetwarzanie zamówień sprzedaży
                   href: tasks/use-continuity-program.md
+                - name: Włączanie powiadomień dotyczących zaewidencjonowania w punkcie sprzedaży
+                  href: enable-customer-check-in.md
             - name: Zwroty
               items:
                 - name: Połączone zwroty
@@ -922,6 +930,8 @@
                   href: manage-csp.md
                 - name: Rezygnacja ze zbierania zdarzeń działania sieci Web
                   href: web-activity-opt-out.md
+                - name: Zastosowanie ustawień jednostki miary
+                  href: unit-of-measure.md
             - name: Zarządzanie zawartością witryny
               items:
                 - name: Sposoby dodawania zawartości
@@ -1092,6 +1102,8 @@
                       href: delivery-options-module.md
                     - name: Moduł informacji o odbiorze
                       href: pickup-info-module.md
+                    - name: Zaewidencjonowanie modułu pobrania
+                      href: check-in-pickup-module.md
                     - name: Moduł szczegółów zamówienia
                       href: order-confirmation-module.md
                     - name: Moduł karty upominkowej
@@ -1194,6 +1206,8 @@
               href: store-performance-information.md
             - name: 'Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)'
               href: set-up-rfm-analysis.md
+            - name: Konfigurowanie usługi Microsoft Clarity w rozwiązaniu Dynamics 365 Commerce
+              href: set-up-clarity.md
         - name: Globalizacja
           items:
             - name: Omówienie integracji fiskalnej dla kanału aplikacji Commerce
@@ -1202,6 +1216,14 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Profile certyfikatów zdefiniowane przez użytkownika dla sklepów detalicznych
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Omówienie usługi Regulatory Configuration Service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service — funkcje globalizacji
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Austria
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
@@ -2210,6 +2232,8 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Plik props.autogenerated.ts modułu
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Wstępne ustawienia konfiguracji modułu
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Opracowywanie modułów
                   items:
                     - name: Tworzenie nowego modułu
@@ -2416,6 +2440,18 @@
                   href: dev-itpro/cart-view-handlers.md
                 - name: Dodawanie niestandardowych przycisków do paska nagłówka punktu sprzedaży
                   href: dev-itpro/pos-header-bar.md
+                - name: Zestaw SDK do niezależnego pakowania punktu sprzedaży
+                  items:
+                    - name: Omówienie rozszerzenia punktu sprzedaży
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Rozpoczęcie pracy z rozszerzeniami punktu sprzedaży
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Tworzenie projektu pakietu rozszerzenia punktu sprzedaży
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Tworzenie pliku aplikacji rozszerzenia programu Modern POS
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Debugowanie rozszerzenia punktu sprzedaży
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Możliwości rozszerzania aplikacji Hardware Station
               items:
                 - name: Rozszerzalność aplikacji Hardware Station

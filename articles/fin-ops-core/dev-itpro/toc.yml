@@ -14,12 +14,12 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
+                - name: Aktualizacja Platform update dla wersji 10.0.19 (lipiec 2021)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Aktualizacja Platform update dla wersji 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Aktualizacja Platform update dla wersji 10.0.17 (kwiecień 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: Aktualizacja Platform update dla wersji 10.0.16 (luty 2021)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -303,19 +303,19 @@
                         - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
                           items:
                             - name: Omówienie rozwiązania Project Service Automation
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Parametry integracji z rozwiązaniem Project Service Automation
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: Synchronizowanie projektów i umów dotyczących projektów
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: Synchronizowanie zadań projektu
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: Synchronizowanie kategorii wydatków projektu
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: Synchronizowanie oszacowań projektu z prognozami projektu
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: Synchronizowanie wartości rzeczywistych projektu z arkuszem integracji projektu
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Korzystanie z zewnętrznych usług sieci web
               href: data-entities/consume-external-web-service.md
             - name: Obsługa wiadomości elektronicznych
@@ -691,7 +691,7 @@
                     - name: Tworzenie modeli i omówienia elementów modelu danych
                       href: dev-tools/create-data-model-elements.md
                     - name: Wytyczne dotyczące nazewnictwa rozszerzeń
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: Wyłączanie dostosowania modelu i wycofywanie funkcji
                       href: dev-tools/lock-models.md
                 - name: Raport Analizy dostosowań
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nowości i zmiany w rozwiązaniu Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Znane problemy
-                  href: lifecycle-services/known-issues.md
                 - name: Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Przewodnik użytkownika usługi Lifecycle Services
@@ -1400,12 +1398,16 @@
               href: perf-test/rsat/rsat-install-configure.md
             - name: Korzystanie z narzędzia Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
+            - name: Obsługa przypadków testowych w narzędziu Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Sprawdzanie poprawności oczekiwanych wartości
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Przypadki testu łańcuchowego
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Przypadki testu pochodnego
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Uaktualnianie plików parametrów
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Samouczek narzędzia Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
             - name: Konfigurowanie użytkowników niebędących administratorami
@@ -1582,9 +1584,11 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy przy użyciu procesu DACPAC
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Uaktualnienie z systemu AX 2012 — replikacja transakcyjna SQL
+                  href: database/replication-setup.md
                 - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy
                   href: migration-upgrade/upgrade-data-sandbox.md
-                - name: Uaktualnianie AX 2012 — środowiska lokalne
+                - name: Uaktualnianie systemu AX 2012 — środowiska lokalne
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: Uaktualnianie systemu AX 2012 — testowanie przełączenia
                   href: migration-upgrade/upgrade-cutover-testing.md

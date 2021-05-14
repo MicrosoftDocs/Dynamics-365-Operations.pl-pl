@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923032"
 ---
 # <a name="financial-reporting-faq"></a>Raportowanie finansowe — często zadawane pytania 
 
-W tym temacie omówiono pytania związane z raportowaniem finansowym zgłoszone przez innych użytkowników. 
+Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące raportowania finansowego. 
 
+## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Jak ograniczyć dostęp do raportu przy użyciu zabezpieczeń drzewa?
 
-## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Jak ograniczyć dostęp do raportu przy użyciu drzewa zabezpieczeń?
+Na poniższym przykładzie pokazano, jak ograniczyć dostęp do raportu przy użyciu zabezpieczeń drzewa.
 
-Scenariusz: firma demonstracyjna USMF opracowała raport bilansowy, do którego chce ograniczyć dostęp w taki sposób, by nie wszyscy użytkownicy funkcji Financial Reporting mieli w niego wgląd w rozwiązaniu D365. Rozwiązanie: w celu ograniczenia dostępu do jednego raportu można użyć drzewa zabezpieczeń — dzięki temu dostęp do raportu będą mieć tylko wybrani użytkownicy. 
+Firma demonstracyjna USMF ma raport bilansowy, do którego nie wszyscy użytkownicy raportowania finansowego powinni mieć dostęp. W celu ograniczenia dostępu do jednego raportu można użyć zabezpieczenia drzewa, dzięki któremu dostęp do raportu będą mieć tylko wybrani użytkownicy. Aby ograniczyć dostęp, należy wykonać następujące kroki: 
 
-1.  Zaloguj się do Projektanta raportów modułu Financial Reporter.
+1. Zaloguj się do projektanta Financial Reporter Report Designer.
+2. Utwórz nową definicję drzewa. Przejdź do opcji **Plik > Nowy > Definicja drzewa**.
+3. Kliknij dwukrotnie wiersz **Podsumowanie** w kolumnie **Zabezpieczenia jednostki**.
+4. Wybierz opcję **Użytkownicy i grupy**.  
+5. Wybierz użytkowników lub grupy, które wymagają dostępu do tego raportu. 
+6. Wybierz opcję **Zapisz**.
+7. W definicji raportu dodaj nową definicję drzewa.
+8. W definicji drzewa wybierz opcję **Ustawienie**. W obszarze **Wybór jednostki raportowania** wybierz opcję **Uwzględnij wszystkie jednostki**.
 
-2.  Utwórz nową definicję drzewa (Plik | Nowy | Definicja drzewa). a.    Kliknij dwukrotnie wiersz **Podsumowanie** w kolumnie **Zabezpieczenia jednostki**.
-  i.    Kliknij pozycję Użytkownicy i grupy.  
-          1. Wybierz użytkowników lub grupę do przyznania dostępu do tego raportu. 
-          
-[![ekran użytkownika](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Jak określić, które konta nie pasują do moich sald?
 
-[![ekran zabezpieczeń](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+Jeśli masz raport, który nie zawiera pasujących sald, wykonaj kilka kroków w celu zidentyfikowania każdego z tych kont oraz odchyleń. 
 
-  b.    Kliknij przycisk **Zapisz**.
-  
-[![przycisk Zapisz](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+**Financial Reporter Report Designer**
+1. W projektancie Financial Reporter Report Designer utwórz nową definicję wiersza. 
+2. Kliknij opcję **Edycja > Wstaw wiersze z wymiarów**.
+3. Wybierz opcję **Konto główne**.  
+4. Kliknij przycisk **OK**.
+5. Zapisz definicję wiersza.
+6. Utwórz nową definicję kolumny
+7. Utwórz nową definicję raportu.
+8. Wybierz opcję **Ustawienia** i usuń jej zaznaczenie.  
+9. Wygeneruj raport. 
+10. Wyeksportuj raport do programu Microsoft Excel.
 
-3.  W definicji raportu dodaj nową definicję drzewa.
+**Dynamics 365 Finance** 
+1. W rozwiązaniu Dynamics 365 Finance przejdź do opcji **Księga główna > Zapytania i raporty > Bilans próbny**.
+2. Ustaw następujące parametry:
+   - **Data początkowa** — wprowadź początek roku obrachunkowego.
+   - **Data końcowa** — wprowadź datę generowania raportu.
+   - **Wymiar finansowy** — ustaw wartość tego pola na **Ustawione konto główne**.
+ 3. Wybierz pozycję **Oblicz**.
+ 4. Wyeksportuj raport do programu Microsoft Excel.
 
-[![formularz definicji drzewa](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
-
-A.  W obszarze definicji drzewa kliknij pozycję Ustawienie i w obszarze „Wybór jednostki raportowania” zaznacz opcję „Uwzględnij wszystkie jednostki”.
-
-[![formularz wyboru jednostki raportowania](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Przed:** [![zrzut ekranu przed](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Po:** [![zrzut ekranu po](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Uwaga: powodem wyświetlenia powyższej wiadomości jest fakt, że użytkownik nie ma dostępu do tego raportu po zastosowaniu zabezpieczeń jednostki.
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Jak ustalić, które konta nie są zgodne z moimi saldami w D365?
-
-Jeśli masz raport, który zawiera inne dane niż te, których można by się spodziewać w usłudze D365, wykonaj kilka kroków w celu zidentyfikowania tych kont oraz odchyleń. 
-
-### <a name="in-financial-reporter-report-designer"></a>W Projektancie raportów modułu Financial Reporter
-
-1.  Utwórz nową definicję wiersza. a.    Kliknij kolejno Edycja | Wstaw wiersze z wymiarów. i.  Wybierz pozycję MainAccount [![Wybierz ekran główny](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Kliknij przycisk OK. b.    Zapisz definicję wiersza.
-
-2.  Utwórz nową definicję kolumny [![Utwórz nową definicję kolumny](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Utwórz nową definicję raportu. a.    Kliknij przycisk Ustawienia i usuń zaznaczenie [![formularza Ustawienia](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
-   
-4.  Wygeneruj raport. 
-
-5.  Wyeksportuj raport do programu Excel.
-
-### <a name="in-d365"></a>W usłudze D365: 
-1.  Kliknij pozycję Księga główna | Zapytania i raporty | Bilans próbny. a.    Parametry i.  Data początkowa: początek roku obrachunkowego. ii. Data końcowa: data wygenerowania raportu iii.    Zestawów wymiarów finansowych „Zestaw konta głównego” [![Formularz konta głównego](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Kliknij przycisk Oblicz.
-
-2.  Wyeksportuj raport do programu Excel.
-
-Teraz powinno być możliwe skopiowanie danych z raportu rozwiązania Financial Reporting w programie Excel do raportu bilansu próbnego D365 oraz porównanie kolumn „Saldo zamknięcia”.
-
+Teraz powinno być możliwe skopiowanie danych z raportu raportowania finansowego w programie Excel do raportu bilansu próbnego, by można było porównać kolumny **Saldo zamknięcia**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
