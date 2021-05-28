@@ -380,8 +380,6 @@
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Ulepszenia w zakresie zarządzania gotówką
                       href: cash-mgmt.md
-                    - name: Wyszukiwanie zapasów w punkcie sprzedaży
-                      href: product-variants-POS.md
                     - name: Wstrzymywanie i wznawianie transakcji w punkcie sprzedaży
                       href: pos-suspend-recall-transactions.md
                     - name: Funkcje punktu sprzedaży w trybie offline
@@ -714,6 +712,8 @@
                       href: pos-outbound-inventory-operation.md
                     - name: Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
                       href: calculated-inventory-retail-channels.md
+                    - name: Operacja wyszukiwania zapasów w punkcie sprzedaży
+                      href: pos-inventory-lookup-operation.md
                 - name: Zamówienia zakupu
                   items:
                     - name: Omówienie zamówień zakupu
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Tworzenie projektu pakietu rozszerzenia punktu sprzedaży
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Tworzenie pliku aplikacji rozszerzenia programu Modern POS
+                    - name: Tworzenie pliku .appx pakietu rozszerzenia programu Modern POS
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Debugowanie rozszerzenia punktu sprzedaży
+                    - name: Debugowanie rozszerzeń punktu sprzedaży
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Pakowanie i wdrażanie rozszerzenia
+                      items:
+                        - name: Tworzenie pakietu rozszerzenia aplikacji Modern POS
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Podpisywanie kodu pakietu rozszerzenia programu Modern POS (MSIX)
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Tworzenie pakietu rozszerzenia aplikacji Cloud POS
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Migracja rozszerzenia punktu sprzedaży do modelu niezależnego pakowania
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Podręcznik programowania rozszerzeń punktu sprzedaży
+                      items:
+                        - name: Podstawowe informacje o rozszerzeniach punktu sprzedaży
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Tworzenie widoku niestandardowego punktu sprzedaży
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Używanie kontrolek punktu sprzedaży w rozszerzeniach
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Zadania
+                          items:
+                            - name: Używanie implementacji Knockout.js w rozszerzeniach punktu sprzedaży
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: Zużywanie niestandardowych interfejsów API Commerce bez kierownictwa
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Możliwości rozszerzania aplikacji Hardware Station
               items:
                 - name: Rozszerzalność aplikacji Hardware Station

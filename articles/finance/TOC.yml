@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Rozwiązanie Finance w wersji 10.0.17 (kwiecień 2021)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Rozwiązanie Finance w wersji 10.0.16 (luty 2021)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -428,6 +426,8 @@
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
                 - name: 'Rozliczanie częściowej płatności odbiorcy, która ma wiele okresów rabatu'
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
+                - name: Przedpłaty odbiorcy
+                  href: accounts-receivable/customer-prepayments.md
                 - name: Zwroty do odbiorców
                   href: accounts-receivable/reimburse-customers.md
                 - name: Częściowe płatności od odbiorców
@@ -484,6 +484,8 @@
               href: accounts-receivable/process-collection-letters-example.md
             - name: Konfigurowanie i generowanie informacji o wiekowaniu rozrachunków z odbiorcami
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Migawka wiekowania odbiorcy
+              href: accounts-receivable/customer-aging-snapshot.md
             - name: Raport wiekowania dla odbiorców
               href: accounts-receivable/customer-aging.md
             - name: Tworzenie arkusza odpisów dla odbiorcy
@@ -512,6 +514,8 @@
               href: budgeting/budget-planning-justification-docs.md
             - name: Tworzenie budżetu na podstawie kont transakcji i kont sum
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Narracja planu budżetu
+              href: budgeting/budget-narrative.md
             - name: Szablony planowania budżetu dla programu Excel
               href: budgeting/budget-planning-excel-templates.md
             - name: Rozszerzanie układu planowania budżetu
@@ -1146,6 +1150,16 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Definiowanie zasad audytu dla dokumentów źródłowych
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Rozwiązywanie problemów
+              items:
+                - name: Zmienianie waluty rozliczeniowej lub raportowania
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: Zmienianie lub ponowne przypisywanie kalendarza księgi
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Cofanie ustawień arkuszy i wierszy
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: Brakujące salda otwarcia dla zamknięcia na koniec roku
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: Raportowanie finansowe
           items:
             - name: Rozpoczynanie pracy z raportowaniem finansowym
@@ -1648,8 +1662,16 @@
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: Sprawozdanie podatkowe SPED-Reinf
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: Omówienie rozwiązania SPED-Reinf
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: Ustawianie wiadomości elektronicznych
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: Ustawianie ksiąg podatkowych
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: Zdarzenia
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: Rozwiązanie obrachunkowe SPED 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: Funkcja fiskalna SPED 2020 — informacje uzupełniające ICMS-ST dla układu fiskalnego SPED 014
@@ -1782,6 +1804,8 @@
                   href: localizations/tasks/user-operation-log-china-working-rule.md
                 - name: Faktury VAT dla odbiorców — często zadawane pytania
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
+                - name: Eksport GB/T 24589-2010
+                  href: localizations/apac-chn-gbt-24589-2010.md
             - name: Republika Czeska
               items:
                 - name: Republika Czeska
@@ -2038,8 +2062,18 @@
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
                 - name: Chronologiczne załączniki faktur
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Tworzenie standardowego pliku audytu do użycia we Francji (FEC)
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: Plik audytu do użycia we Francji
+                  items:
+                    - name: Plik audytu do użycia we Francji (FEC) — omówienie
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: Wymagania wstępne dotyczące generowania pliku audytu FEC do użycia we Francji
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: Struktura źródeł danych rozwiązania Finance dla pliku audytu FEC
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: Przygotowanie środowiska do wygenerowania pliku audytu FEC
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: Generowanie pliku audytu FEC w rozwiązaniu Dynamics 365 Finance
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: Wyciągi z konta odbiorcy i dostawcy
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: Dzienne obliczanie odsetek dla opóźnionej płatności i ryczałtu na fakturze i ponagleniu
@@ -2392,6 +2426,84 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Przenoszenie pozycji kapitałowych do środka trwałego
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: Podatek TDS (Indie)
+                  items:
+                    - name: Omówienie indyjskiego podatku odliczonego u źródła (TDS)
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: Podstawowa konfiguracja pod kątem podatku odliczonego u źródła (TDS)
+                      items:
+                        - name: Ustawienie parametrów podatku odliczonego u źródła (TDS)
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: Konfigurowanie kont księgi podatku odliczonego u źródła (TDS)
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: Konfigurowanie numerów rejestracji TDS firm
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: Ustawianie urzędów skarbowych dla potrąconej zaliczki na podatek dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Ustawianie składników podatkowych dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: Ustawianie kodów dla potrąconej zaliczki na podatek dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Ustawianie okresów rozliczania potrąconej zaliczki na podatek dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: Ustawianie kodów raportowania dla potrąconej zaliczki na podatek dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: Ustawianie kodów dla potrąconej zaliczki na podatek dla typu podatku TDS
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: Dołączanie kodów podatku TDS do grup podatków TDS i definiowanie formuły obliczania podatku TDS
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: Rejestrowanie numerów certyfikatu koncesji TDS
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: Ustawianie parametrów TDS w obszarach Rozrachunki z dostawcami i Rozrachunki z odbiorcami
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: Konfigurowanie harmonogramów płatności przy użyciu alokacji TDS
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: Konfigurowanie opłat od płatności dla płatności na rzecz urzędu podatkowego obsługującego TDS
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: 'Ustawienia informacji o grupie TDS, PAN i TAN dla dostawców i odbiorców'
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: Projektant formuł i limit progowy dla obliczania TDS
+                      items:
+                        - name: Projektant formuł dla obliczeń TDS
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: Limit progowy i limit progowy dotyczący wyjątku
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: Obliczanie TDS dla faktur
+                      items:
+                        - name: Obliczanie TDS dla faktur
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: Obliczanie TDS dla faktur przy użyciu arkuszy
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: Obliczanie TDS dla faktur przy użyciu formularza Zamówienie zakupu i formularza zamówienia sprzedaży
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: Obliczanie TDS dla faktur na stronie Faktura niezależna
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: Funkcja podziału faktury
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: Obliczanie TDS dla płatności i skryptów dłużnych
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: Obliczanie TDS dla transakcji międzyfirmowych
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: Proces rozliczania TDS
+                      items:
+                        - name: Obliczanie TDS dla płatności i skryptów dłużnych
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: Obliczanie TDS dla transakcji międzyfirmowych
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: Proces rozliczania TDS
+                          items:
+                            - name: Uruchamianie procesu okresowego rozliczania TDS
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: Rozliczanie płatności TDS dla dostawców urzędu i generowanie druku „challan” TDS
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: Wyświetlanie zaksięgowanych płatności TDS i transakcji dla okresu rozliczeniowego TDS
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: Rejestrowanie i aktualizowanie numerów i dat certyfikatów TDS
+                          items:
+                            - name: Rejestrowanie numerów certyfikatu podatku TDS podlegającego zwrotowi
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: Aktualizowanie numerów i dat certyfikatów dla transakcji TDS
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Włochy
               items:
                 - name: Włochy — omówienie

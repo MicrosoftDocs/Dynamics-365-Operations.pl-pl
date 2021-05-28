@@ -1,0 +1,55 @@
+---
+title: Zmienianie lub ponowne przypisywanie kalendarza księgi
+description: W tym temacie opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.
+author: kweekley
+ms.date: 05/07/2021
+ms.topic: index-page
+ms.prod: ''
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: roschlom
+ms.search.region: Global
+ms.author: kweekley
+ms.search.validFrom: 2021-5-07
+ms.dyn365.ops.version: 10.0.14
+ms.openlocfilehash: 052b8944c0a015187d1d7c4ba3db878c52faeeea
+ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.translationtype: HT
+ms.contentlocale: pl-PL
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "6039957"
+---
+# <a name="change-or-reassign-a-ledger-calendar"></a><span data-ttu-id="d2977-103">Zmienianie lub ponowne przypisywanie kalendarza księgi</span><span class="sxs-lookup"><span data-stu-id="d2977-103">Change or reassign a ledger calendar</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="d2977-104">W tym temacie opisano sposób zmiany kalendarza aktualnie przypisanego do księgi oraz przypisania nowego kalendarza do księgi.</span><span class="sxs-lookup"><span data-stu-id="d2977-104">This topic explains how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.</span></span>
+
+## <a name="issue"></a><span data-ttu-id="d2977-105">Problem</span><span class="sxs-lookup"><span data-stu-id="d2977-105">Issue</span></span>
+
+<span data-ttu-id="d2977-106">Zdarza się, że firmy muszą zmienić istniejący kalendarz przypisany do księgi lub przypisać nowy kalendarz.</span><span class="sxs-lookup"><span data-stu-id="d2977-106">Sometime, companies must either change the existing calendar that is assigned to a ledger or assign a new calendar.</span></span>
+
+## <a name="resolution"></a><span data-ttu-id="d2977-107">Rozwiązanie</span><span class="sxs-lookup"><span data-stu-id="d2977-107">Resolution</span></span>
+
+<span data-ttu-id="d2977-108">Istnieją dwa scenariusze zmiany lub ponownego przypisania kalendarza księgi.</span><span class="sxs-lookup"><span data-stu-id="d2977-108">There are two scenarios for changing or reassigning a ledger calendar.</span></span> <span data-ttu-id="d2977-109">Pierwszy scenariusz obejmuje zmianę istniejącego kalendarza, który jest już przypisany do księgi.</span><span class="sxs-lookup"><span data-stu-id="d2977-109">The first scenario involves changing an existing calendar that is already assigned to the ledger.</span></span> <span data-ttu-id="d2977-110">Drugi scenariusz obejmuje utworzenie nowego kalendarza i przypisanie go do księgi.</span><span class="sxs-lookup"><span data-stu-id="d2977-110">The second scenario involves creating a new calendar and assigning it to the ledger.</span></span> <span data-ttu-id="d2977-111">Obie zmiany można wprowadzić w dowolnym momencie, nawet po zaksięgowaniu transakcji w księdze.</span><span class="sxs-lookup"><span data-stu-id="d2977-111">Both changes can be done at any time, even after transactions have been posted to the ledger.</span></span>
+
+### <a name="change-an-existing-fiscal-calendar"></a><span data-ttu-id="d2977-112">Zmiana istniejącego kalendarza obrachunkowego</span><span class="sxs-lookup"><span data-stu-id="d2977-112">Change an existing fiscal calendar</span></span>
+
+<span data-ttu-id="d2977-113">Aby zmienić istniejący kalendarz przypisany do księgi, wybierz kolejno opcje **Księga główna \> Ustawienia księgi \> Księga** i wybierz łącze do kalendarza obrachunkowego, aby otworzyć stronę **Kalendarze księgi**.</span><span class="sxs-lookup"><span data-stu-id="d2977-113">To change an existing calendar that is assigned to your ledger, go to **General ledger \> Ledger setup \> Ledger**, and select the link for the fiscal calendar to open the **Ledger calendars** page.</span></span>
+
+<span data-ttu-id="d2977-114">Istnieją ograniczenia dotyczące zmian, które można wprowadzać w kalendarzu.</span><span class="sxs-lookup"><span data-stu-id="d2977-114">There are limits to the changes that can be made to a calendar.</span></span> <span data-ttu-id="d2977-115">Można na przykład zmieniać daty rozpoczęcia i zakończenia *okresów* w roku, ale nie można zmieniać dat rozpoczęcia i zakończenia *roku* w kalendarzu.</span><span class="sxs-lookup"><span data-stu-id="d2977-115">For example, you can change the start and end dates of the *periods* in a year, but you can't change the start and end dates of a *year* in the calendar.</span></span>
+
+<span data-ttu-id="d2977-116">Aby zmienić okresy w roku, wybierz odpowiedni kalendarz i rok.</span><span class="sxs-lookup"><span data-stu-id="d2977-116">To change the periods in a year, select the appropriate calendar and year.</span></span> <span data-ttu-id="d2977-117">Najpierw użyj przycisku **Usuń okres**, aby usunąć niektóre lub wszystkie istniejące okresy operacyjne.</span><span class="sxs-lookup"><span data-stu-id="d2977-117">First, use the use the **Delete period** button to delete some or all of the existing operating periods.</span></span> <span data-ttu-id="d2977-118">Można usunąć wszystkie okresy operacyjne z wyjątkiem pierwszego.</span><span class="sxs-lookup"><span data-stu-id="d2977-118">All operating periods except the first can be deleted.</span></span> <span data-ttu-id="d2977-119">Następnie użyj przycisku **Podziel okres**, aby podzielić pozostały okres lub okresy na nowe okresy, wprowadzając odpowiednią datę rozpoczęcia dla następnego okresu.</span><span class="sxs-lookup"><span data-stu-id="d2977-119">Then use the **Divide period** button to divide the remaining period or periods into new periods by entering an appropriate start date for the next period.</span></span>
+
+<span data-ttu-id="d2977-120">Po zmianie okresów w kalendarzu należy uruchomić proces **Ponownie oblicz okresy księgi** dla każdej firmy, do której jest przypisany kalendarz.</span><span class="sxs-lookup"><span data-stu-id="d2977-120">After you change the periods in a calendar, you must run the **Recalculate ledger periods** process in every legal entity (company) that the calendar is assigned to.</span></span> <span data-ttu-id="d2977-121">Chociaż żaden komunikat ostrzegawczy nie przypomina o ukończeniu tego kroku, proces ponownego obliczenia jest wymagany w celu zaktualizowania okresu przypisanego do każdej zaksięgowanej transakcji w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="d2977-121">Although no warning message reminds you to complete this step, the recalculation process is required to update the period that is assigned to each posted transaction in General ledger.</span></span> <span data-ttu-id="d2977-122">Aby uruchomić proces ponownego obliczania, wybierz opcję **Ponownie oblicz okresy księgi** na stronie **Ustawienia księgi** w każdej firmie.</span><span class="sxs-lookup"><span data-stu-id="d2977-122">To run the recalculation process, select **Recalculate ledger periods** on the **Ledger setup** page in each company.</span></span>
+
+<span data-ttu-id="d2977-123">Jeśli proces ponownego obliczania nie zostanie uruchomiony, salda transakcji bilansu próbnego lub sprawozdań finansowych mogą zostać nieprawidłowo uwzględnione w okresach.</span><span class="sxs-lookup"><span data-stu-id="d2977-123">If the recalculation process isn't run, transaction balances on a trial balance or on financial statements might be incorrectly included in periods.</span></span> <span data-ttu-id="d2977-124">W takim przypadku salda można poprawić w dowolnym momencie, uruchamiając proces ponownego obliczania.</span><span class="sxs-lookup"><span data-stu-id="d2977-124">In this case, you can correct the balances at any time by running the recalculation process.</span></span>
+
+### <a name="assign-a-new-fiscal-calendar"></a><span data-ttu-id="d2977-125">Przypisywanie nowego kalendarza obrachunkowego</span><span class="sxs-lookup"><span data-stu-id="d2977-125">Assign a new fiscal calendar</span></span>
+
+<span data-ttu-id="d2977-126">Aby przypisać nowy kalendarz obrachunkowy, wybierz kolejno pozycje **Księga główna \> Ustawienia księgi \> Księga** i wybierz opcję **Edytuj**, aby przełączyć stronę **Księga** w tryb edycji.</span><span class="sxs-lookup"><span data-stu-id="d2977-126">To assign a new fiscal calendar, go to **General ledger \> Ledger setup \> Ledger**, and select **Edit** to put the **Ledger** page into edit mode.</span></span> <span data-ttu-id="d2977-127">Następnie w polu **Kalendarz obrachunkowy** wybierz nowy kalendarz obrachunkowy.</span><span class="sxs-lookup"><span data-stu-id="d2977-127">Then, in the **Fiscal calendar** field, select a new fiscal calendar.</span></span>
+
+<span data-ttu-id="d2977-128">Po zmianie kalendarza obrachunkowego księgi należy uruchomić proces **Ponownie oblicz okresy księgi**.</span><span class="sxs-lookup"><span data-stu-id="d2977-128">After you change the fiscal calendar for a ledger, you must run the **Recalculate ledger periods**.</span></span> <span data-ttu-id="d2977-129">Podczas przypisywania nowego kalendarza obrachunkowego do księgi zostanie wyświetlony komunikat przypominający o ukończeniu tego kroku.</span><span class="sxs-lookup"><span data-stu-id="d2977-129">When you assign a new fiscal calendar to a ledger, a message reminds you to complete this step.</span></span> <span data-ttu-id="d2977-130">Treść komunikatu może sugerować, że proces ponownego obliczania jest opcjonalny, ale tak nie jest.</span><span class="sxs-lookup"><span data-stu-id="d2977-130">Although the message might seem to indicate that the recalculation process is optional, it isn't.</span></span> <span data-ttu-id="d2977-131">Jego przeprowadzenie jest konieczne w celu aktualizacji okresu przypisanego do każdej transakcji zaksięgowanej w księdze głównej.</span><span class="sxs-lookup"><span data-stu-id="d2977-131">It's required to update the period that is assigned to each posted transaction in General ledger.</span></span> <span data-ttu-id="d2977-132">Aby uruchomić proces ponownego obliczania, wybierz opcję **Ponownie oblicz okresy księgi** na stronie **Ustawienia księgi**.</span><span class="sxs-lookup"><span data-stu-id="d2977-132">To run the recalculation process, select **Recalculate ledger periods** on the **Ledger setup** page.</span></span>
+
+<span data-ttu-id="d2977-133">Jeśli proces ponownego obliczania nie zostanie uruchomiony, salda transakcji bilansu próbnego lub sprawozdań finansowych mogą zostać nieprawidłowo uwzględnione w okresach.</span><span class="sxs-lookup"><span data-stu-id="d2977-133">If the recalculation process isn't run, transaction balances on a trial balance or on financial statements might be incorrectly included in periods.</span></span> <span data-ttu-id="d2977-134">W takim przypadku salda można poprawić w dowolnym momencie, uruchamiając proces ponownego obliczania.</span><span class="sxs-lookup"><span data-stu-id="d2977-134">In this case, you can correct the balances at any time by running the recalculation process.</span></span>
