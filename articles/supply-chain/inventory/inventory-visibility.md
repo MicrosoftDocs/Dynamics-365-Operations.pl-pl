@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910432"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6017013"
 ---
 # <a name="inventory-visibility-add-in"></a>Dodatek Widoczność magazynu
 
@@ -41,20 +41,23 @@ Musisz zainstalować dodatek Widoczność magazynu, korzystając z Microsoft Dyn
 
 Aby uzyskać więcej informacji, zobacz [Zasoby w Lifecycle Services (LCS)](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
-### <a name="prerequisites"></a>Wymagania wstępne
+### <a name="inventory-visibility-add-in-prerequisites"></a>Wymagania wstępne dodatku Widoczność zapasów
 
 Aby można było zainstalować dodatek Widoczność magazynu, trzeba:
 
 - Uzyskać projekt implementacji usługi LCS z co najmniej jednym wdrożonym środowiskiem.
 - Upewnij się, że zostały spełnione wymagania wstępne dotyczące konfigurowania dodatków dostępnych w [Omówienie dodatków](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Widoczność zapasów nie wymaga podwójnego łączenia.
 - Skontaktuj się z zespołem widoczności pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) aby uzyskać następujące trzy wymagane pliki:
-    - `Inventory Visibility Dataverse Solution.zip`
-    - `Inventory Visibility Configuration Trigger.zip`
-    - `Inventory Visibility Integration.zip` (jeśli uruchomiona wersja Supply Chain Management jest wcześniejsza niż 10.0.18)
+  - `Inventory Visibility Dataverse Solution.zip`
+  - `Inventory Visibility Configuration Trigger.zip`
+  - `Inventory Visibility Integration.zip` (jeśli uruchomiona wersja Supply Chain Management jest wcześniejsza niż 10.0.18)
+- Alternatywnie, skontaktuj się z zespołem ds. Widoczności zapasów pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby uzyskać package deployer. Te pakiety mogą być używane przez oficjalne narzędzie package deployer.
+  - `InventoryServiceBase.PackageDeployer.zip`
+  - `InventoryServiceApplication.PackageDeployer.zip` (ten pakiet zawiera wszystkie zmiany w pakiecie `InventoryServiceBase` oraz dodatkowe składniki aplikacji interfejsu użytkownika)
 - Postępuj zgodnie z instrukcjami podanymi w narzędziu [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app), aby zarejestrować aplikację i dodać tajny kod klienta do usługi AAD w subskrypcji platformy Azure.
-    - [Rejestrowanie aplikacji](/azure/active-directory/develop/quickstart-register-app)
-    - [Dodaj klucz tajny klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
-    - W poniższych krokach zostaną użyte **Identyfikator aplikacji(Klient)**, **Tajny klucz klienta** i **Identyfikator dzierżawy**.
+  - [Rejestrowanie aplikacji](/azure/active-directory/develop/quickstart-register-app)
+  - [Dodaj klucz tajny klienta](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+  - W poniższych krokach zostaną użyte **Identyfikator aplikacji(Klient)**, **Tajny klucz klienta** i **Identyfikator dzierżawy**.
 
 > [!NOTE]
 > Obecnie obsługiwanymi krajami i regionami są Kanada, Stany Zjednoczone i Unia Europejska (UE).
@@ -63,18 +66,49 @@ Jeśli masz pytania dotyczące tych wymagań wstępnych, skontaktuj się z zespo
 
 ### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ustaw Dataverse
 
-Aby skonfigurować Dataverse, wykonaj następujące czynności.
+Aby używać Dataverse z widocznością zapasów, należy najpierw przygotować wymagania wstępne, a następnie zdecydować, czy należy skonfigurować Dataverse za pomocą narzędzia package deployer, czy też ręcznie zaimportować rozwiązania (nie trzeba ich obu). Następnie zainstaluj dodatek Widoczność zapasów. W poniższych podrozdziałach opisano, jak wykonać każde z tych zadań.
 
-1. Dodaj zasadę usługi do dzierżawy:
+#### <a name="prepare-dataverse-prerequisites"></a>Przygotowywanie wymagań wstępnych Dataverse
 
-    1. Zainstaluj moduł Azure AD PowerShell w wersji 2 zgodnie z opisem w [Zainstaluj Azure Active Directory PowerShell dla programu Graph](/powershell/azure/active-directory/install-adv2).
-    1. Uruchom następujące polecenie PowerShell.
+Przed rozpoczęciem konfigurowanie dodaj do dzierżawy zasadę Dataverse, wykonując następujące czynności:
 
-        ```powershell
-        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+1. Zainstaluj moduł Azure AD PowerShell w wersji 2 zgodnie z opisem w [Zainstaluj Azure Active Directory PowerShell dla programu Graph](/powershell/azure/active-directory/install-adv2).
 
-        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
-        ```
+1. Uruchom następujące polecenie PowerShell:
+
+    ```powershell
+    Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+    
+    New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+    ```
+
+#### <a name="set-up-dataverse-using-the-package-deployer-tool"></a>Skonfiguruj Dataverse za pomocą narzędzia package deployer
+
+Jeśli preferujesz skonfigurowanie za pomocą narzędzia package deployer Dataverse, użyj poniższych procedur. Zobacz następną sekcję, aby uzyskać szczegółowe informacje o ręcznym importowaniu rozwiązań (nie obu).
+
+1. Zainstaluj narzędzia deweloperskie zgodnie z opisem w tece [Pobieranie narzędzi z NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
+
+1. W zależności od wymagań firmy wybierz `InventoryServiceBase` lub `InventoryServiceApplication`.
+
+1. Importowanie rozwiązań:
+    1. Dla pakietu `InventoryServiceBase`:
+        - Rozpakuj `InventoryServiceBase.PackageDeployer.zip`
+        - Znajdź pliki `InventoryServiceBase`, `[Content_Types].xml`, `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll`, `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config` i `Microsoft.Dynamics.InventoryServiceBase.PackageExtension.dll.config`. 
+        - Skopiuj każdy z tych folderów i plików do katalogu `.\Tools\PackageDeployment`, który został utworzony podczas instalowania narzędzi dewelopera.
+    1. Dla pakietu `InventoryServiceApplication`:
+        - Rozpakuj `InventoryServiceApplication.PackageDeployer.zip`
+        - Znajdź pliki `InventoryServiceApplication`, `[Content_Types].xml`, `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`, `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config` i `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll.config`.
+        - Skopiuj każdy z tych folderów i plików do katalogu `.\Tools\PackageDeployment`, który został utworzony podczas instalowania narzędzi dewelopera.
+    1. Wykonaj `.\Tools\PackageDeployment\PackageDeployer.exe`. Postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby zaimportować rozwiązania.
+
+1. Przypisz role zabezpieczeń użytkownikowi aplikacji.
+    1. Otwórz adres URL środowiska Dataverse.
+    1. Przejdź do opcji **Zaawansowane ustawianie \> System \> Bezpieczeństwo \> Użytkownicy** i znajdź użytkownika o nazwie **# InventoryVisibility**.
+    1. Wybierz pozycję **Przypisz rolę**, a następnie pozycję **Administrator systemu**. Jeśli istnieje rola o nazwie **Użytkownik Common Data Service** również ją zaznacz.
+
+#### <a name="set-up-dataverse-manually-by-importing-solutions"></a>Skonfiguruj Dataverse ręcznie, importując rozwiązania
+
+Jeśli preferujesz skonfigurowanie za pomocą narzędzia wdrażania pakietu Dataverse, importuj ręcznie rozwiązania. Zobacz poprzednią sekcję, aby uzyskać szczegółowe informacje dotyczące używania zamiast tego narzędzia package deployer (nie używaj obu).
 
 1. Utwórz użytkownika aplikacji dla Widoczność magazynu w Dataverse:
 

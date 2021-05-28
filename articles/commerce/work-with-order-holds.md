@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 61a73f10c8a8b3386826f08184028d8d5e6508a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2066e0841658917cb0e6ddc0fbacf98d52098da8
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800390"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027463"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Konfigurowanie i używanie wstrzymań zamówień w biurze obsługi
 
@@ -53,7 +53,7 @@ Po wprowadzeniu i zapisaniu informacji o wstrzymaniu użytkownik może zamknąć
 
 Jeśli flaga **Włącz kończenie zamówienia** jest włączona w kanale biura obsługi, płatność nie musi być stosowana do wstrzymanego zamówienia. Z drugiej strony w przypadku zamówienia sprzedaży, które nie jest wstrzymane, użytkownicy nie mogą opuścić strony wprowadzania zamówienia do momentu zastosowania płatności. Oczywiście przed zwolnieniem wstrzymania zamówienia musi zostać dokonana płatność.
 
-Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+Ponadto użytkownicy biura obsługi mogą nakładać ręczne wstrzymania z powodu oszustwa na zamówienia, które z jakiegoś powodu są podejrzane. Zamówienia mogą także być wstrzymywane automatycznie, jeśli spełniają aktywne kryteria i reguły decydujące o uznaniu za oszustwo. Aby uzyskać więcej informacji na temat tego rodzaju wstrzymania zamówienia, zobacz [Konfigurowanie alertów o oszustwie](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Podgląd i zarządzanie wstrzymanymi zamówieniami
 

@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 description: W tym temacie opisano sposób rozpoczęcia pracy z funkcją Faktur elektronicznych.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 05/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ec431cb4a3620459d905f64a80fd820a2113290f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840155"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980983"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 
@@ -33,10 +33,10 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 - Musisz mieć dostęp do konta Microsoft Dynamics Lifecycle Services (LCS).
 - Musisz mieć projekt usługi LCS z wersją 10.0.17 lub nowszą firmy Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Ponadto te aplikacje muszą zostać wdrożone w jednej z następujących lokalizacji geograficznych platformy Azure:
 
-    - Wschodnie stany USA
-    - Zachodnie stany USA
-    - Europa Północna
-    - Europa Zachodnia
+    - Stany Zjednoczone
+    - Europa
+    - Wielka Brytania
+    - Azja
 
 - Musisz mieć dostęp do swojego konta Dynamics 365 Regulatory Configuration Services (RCS).
 - Musisz aktywować funkcję globalizacji dla swojego konta RCS w zarządzaniu funkcjami. Aby uzyskać więcej informacji, zobacz [Regulatory Configuration Services (RCS) – funkcje globalizacji](rcs-globalization-feature.md).
@@ -46,11 +46,12 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
 1. Zaloguj się do swojego konta LCS.
 2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**.
-3. W sekcji **Funkcje w publicznych wersjach zapoznawczych** wybierz **usługę fakturowania elektronicznego**.
+3. W sekcji **Funkcje w publicznych wersjach zapoznawczych** wybierz **Fakturowanie elektroniczne**.
 4. Sprawdź, czy w opcji **Funkcja wersji zapoznawczej włączona** jest ustawiona wartość **Tak**.
-5. Na pulpicie nawigacyjnym usługi LCS wybierz projekt wdrożenia usługi LCS. Projekt usługi LCS musi być uruchomiony.
-7. Na karcie **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
-8. Wybierz **usługi fakturowania elektronicznego**.
+5. Na pulpicie nawigacyjnym projektu LCS wybierz projekt LCS.
+6. W projekcie usługi LCS, na pulpicie nawigacyjnym środowiska usługi LCS wybierz projekt wdrożenia usługi LCS. Projekt wdrożenia LCS musi być uruchomiony.
+7. Na karcie **Integracja Power Platform** w grupie pól **Dodatki środowiska** wybierz pozycję **Zainstaluj nowy dodatek**.
+8. Wybierz **Fakturowanie elektroniczne**.
 9. W polu **Identyfikator aplikacji AAD** wprowadź nazwę **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
 10. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure.
 11. Przejrzyj warunki, a następnie zaznacz pole wyboru.
@@ -65,10 +66,10 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
     | Geografia platformy Datacenter Azure | Adres URI punktu końcowego usługi                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Wschodnie stany USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Zachodnie stany USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Europa Północna                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Europa Zachodnia                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Stany Zjednoczone              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Wielka Brytania             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Azja                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 4. Upewnij się, że pole **Identyfikator aplikacji** ma ustawioną wartość **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Ta wartość jest stałą wartością.
 5. W polu **Identyfikator środowiska usługi LCS** wprowadź identyfikator środowiska LCS.
@@ -152,12 +153,12 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 1. Przejdź do **Administrowanie organizacją \> Konfiguracja \> Parametry dokumentu elektronicznego**.
 2. Na karcie **Usługa przesyłania** w polu **Identyfikator URL punktu końcowego usługi** wprowadź odpowiedni punkt końcowy usługi dla geografii systemu Azure, tak jak pokazano w poniższej tabeli.
 
-    | Geografia platformy Datacenter Azure | Adres URL punktu końcowego usługi                                                       |
+    | Geografia platformy Datacenter Azure | Adres URI punktu końcowego usługi                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Wschodnie stany USA                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-    | Zachodnie stany USA                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-    | Europa Północna                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-    | Europa Zachodnia                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
+    | Stany Zjednoczone              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Europa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Wielka Brytania             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Azja                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
 3. W polu **Środowisko** wprowadź nazwę środowiska usługowego opublikowaną w Fakturowaniu elektronicznym.
 4. Wybierz przycisk **Zapisz** i zamknij stronę.

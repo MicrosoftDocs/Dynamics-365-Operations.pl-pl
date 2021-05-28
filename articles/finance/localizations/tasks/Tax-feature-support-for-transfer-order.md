@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920962"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021376"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Obsługa funkcji podatków dla zamówień przeniesienia
 
@@ -41,7 +40,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
 
 1. Na stronie **Funkcje podatkowe** na karcie **Wersje** wybierz wersję roboczą funkcji, a następnie wybierz pozycję **Edytuj**.
 
-    ![Wybieranie edycji](../media/image1.png)
+    ![Wybieranie edycji](../media/tax-feature-support-01.png)
 
 2. Na stronie **Ustawienia funkcji podatków**, na karcie **Kody podatków** wybierz opcję **Dodaj**, aby utworzyć nowe kody podatków. W tym przykładzie tworzone są trzy kody podatków:**NL-Exempt**, **BE-RC-21** i **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         4. Na karcie **Stawka** wybierz **Dodaj**.
         5. Przełącz **Jest zwolniony** na **Tak** w sekcji **Ogólne**.
 
-        ![Kod zwolnienia z podatku (NL)](../media/image2.png)
+        ![Kod zwolnienia z podatku (NL)](../media/tax-feature-support-02.png)
 
     - Gdy zamówienie przeniesienia zostanie odebrane w magazynie belgijskim, mechanizm opłaty zwrotnej jest stosowany przy użyciu kodów podatków **BE-RC-21** i **BE-RC+21**.
         
@@ -67,7 +66,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         6. Czy swtich **Wsteczna opłata** z **Tak** w sekcji **Ogólne**.
         7. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC-21 dla opłat zwrotnych](../media/image3.png)
+        ![Kod podatku BE-RC-21 dla opłat zwrotnych](../media/tax-feature-support-03.png)
         
         Utwórz kod podatku **BE-RC+21**.
         1. Wybierz opcję **Dodaj** i wprowadź numer **BE-RC-21** w polu **Kod podatku**.
@@ -77,7 +76,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         5. Wprowadź **21** w polu **Stawka podatku**.
         6. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC+21 dla opłat zwrotnych](../media/image4.png)
+        ![Kod podatku BE-RC+21 dla opłat zwrotnych](../media/tax-feature-support-04.png)
 
 3. Zdefiniuj możliwości zastosowania kodów podatków.
 

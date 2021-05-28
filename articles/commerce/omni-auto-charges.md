@@ -1,6 +1,6 @@
 ---
 title: Wielokanałowe zaawansowane opłaty automatyczne
-description: W tym temacie opisano funkcje zarządzania opłatami za dodatkowe zamówienia dla zamówień kanału Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
+description: W tym temacie opisano możliwości zarządzania innymi opłatami za zamówienia dla zamówień w kanale Commerce przy użyciu zaawansowanych funkcji opłat automatycznych.
 author: hhaines
 ms.date: 03/30/2020
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3326f8740874083746c1566063ee7d265ee90faf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804680"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022714"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -29,9 +29,9 @@ ms.locfileid: "5804680"
 
 Ten temat zawiera informacje o konfiguracji i wdrażaniu funkcji zaawansowanych opłat automatycznych, które są dostępne w programie Dynamics 365 for Retail w wersji 10.0.
 
-Po włączeniu funkcji zaawansowanych automatycznych opłat zamówienia utworzone w dowolnym obsługiwanym kanale Commerce (punkt sprzedaży (POS), biuro obsługi i w trybie online), można korzystać z [automatycznych opłat](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) zdefiniowanych w aplikacji ERP dla opłat dotyczących zarówno poziomu nagłówka, jak i wiersza.
+Po włączeniu funkcji zaawansowanych automatycznych opłat zamówienia utworzone w dowolnym obsługiwanym kanale Commerce (punkt sprzedaży (POS), biuro obsługi i w trybie online), można korzystać z [automatycznych opłat](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) zdefiniowanych w aplikacji ERP dla opłat dotyczących zarówno poziomu nagłówka, jak i wiersza.
 
-W programie Retail w wersjach wcześniejszych niż 10.0 konfiguracje [opłat automatycznych](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) są dostępne tylko dla zamówień utworzonych w kanałach e-commerce i biura obsługi. W wersji 10.0 i nowszej zamówienia utworzone w POS mogą korzystać z konfiguracji opłat automatycznych. W ten sposób dodatkowe opłaty różne mogą być systematycznie dodawane do transakcji sprzedaży.
+W programie Retail w wersjach wcześniejszych niż 10.0 konfiguracje [opłat automatycznych](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) są dostępne tylko dla zamówień utworzonych w kanałach e-commerce i biura obsługi. W wersjach 10.0 i nowszych, zamówienia utworzone w punkcie sprzedaży mogą korzystać z konfiguracji automatycznych opłat. W ten sposób dodatkowe opłaty różne mogą być systematycznie dodawane do transakcji sprzedaży.
 
 W wersjach wcześniejszych niż 10.0 użytkownik POS otrzymuje monit o ręczne wprowadzenie opłaty transportowej podczas tworzenia transakcji POS „wyślij wszystko” lub „wyślij wybrane”. Podczas gdy funkcje aplikacji związane z opłatami różnymi są używane w odniesieniu do tego, jak opłaty są zapisywane na zamówieniu, żadne systemowe obliczenia nie są dostarczane — obliczenia polegają na danych podanych przez użytkownika do określenia wartości opłat. Opłaty mogą być dodawane tylko jako jeden kod opłat „transportowych” i nie mogą być łatwo edytowalne ani zmieniane w POS po utworzeniu.
 
@@ -39,7 +39,7 @@ Ręczne monity do dodawania opłat transportowych są nadal dostępne w wersjach
 
 Dzięki funkcji zaawansowanych opłat automatycznych użytkownicy POS mogą korzystać z systemowych kalkulacji dla dowolnych zdefiniowanych opłat różnych na podstawie tabel konfiguracji opłat automatycznych. Ponadto użytkownicy będą mieli możliwość dodawania lub edytowania nieograniczonej liczby dodatkowych opłat i płatności do dowolnej transakcji sprzedaży w POS na poziomie nagłówka lub wiersza (dla transakcji kasowych i lub zamówień odbiorcy).
 
-## <a name="enabling-advanced-auto-charges"></a>Włączanie zaawansowanych opłat automatycznych
+## <a name="enable-advanced-auto-charges"></a>Włącz zaawansowane automatyczne opłaty
 
 Na stronie **Sprzedaż detaliczna i komercyjna \> Ustawienia Headquarters \> Parametry \> Parametry sieci sprzedaży komercyjnej** przejdź na kartę **Zamówienia odbiorcy**. Na karcie skróconej **Opłaty** ustaw opcję **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** na **Tak**.
 
@@ -51,9 +51,9 @@ Po włączeniu zaawansowanych opłat automatycznych, istniejące **Parametry sie
 
 Przed włączeniem tej funkcji należy upewnić się, że pracownicy przeszli szkolenie, ponieważ uruchomienie tej funkcji zmienia przepływ procesu biznesowego w odniesieniu do metody obliczania opłat transportowych i innych i ich dodawania do zamówień sprzedaży POS. Upewnij się, że rozumiesz wpływ przepływu procesu na tworzenie transakcji w POS. W przypadku zamówień składanych przez biuro obsługi i w witrynie e-Commerce wpływ włączania zaawansowanych automatycznych opłat dodatkowych jest minimalny. Aplikacje biura obsługi i e-Commerce nadal będą zachowywać się tak samo jak wcześniej w odniesieniu do tabel automatycznych opłat dodatkowych do obliczenia dodatkowych opłat za zamówienia. Użytkownicy kanału biura obsługi będą nadal mieć możliwość ręcznej edycji dowolnych obliczonych przez system automatycznych opłat dodatkowych na poziomie nagłówka lub wiersza lub ręcznego dodawania dodatkowych opłat różnych na poziomie nagłówka lub wiersza.
 
-## <a name="additional-pos-operations"></a>Dodatkowe operacje POS
+## <a name="add-pos-operations"></a>Dodaj operacje POS
 
-Aby zaawansowane automatyczne opłaty dodatkowe działały prawidłowo w środowisku aplikacji POS, dodano nowe operacje POS. Te operacje muszą być dodane do [układów ekranu POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) i wdrożone na urządzeniach POS razem z zaawansowanymi automatycznymi opłatami dodatkowymi. Jeśli te operacje nie zostaną dodane, użytkownicy nie będzie mogli zarządzać ani obsługiwać opłat dodatkowych w transakcjach POS i nie będą mogli korygować ani zmieniać wartości opłat dodatkowych, które są systematycznie obliczane na podstawie konfiguracji automatycznych opłat dodatkowych Co najmniej zaleca się wdrożenie operacji **Zarządzaj opłatami dodatkowymi** do układu POS.
+Aby zaawansowane automatyczne opłaty dodatkowe działały prawidłowo w środowisku aplikacji POS, dodano nowe operacje POS. Te operacje muszą być dodane do [układów ekranu POS](/dynamics365/unified-operations/retail/pos-screen-layouts) i wdrożone na urządzeniach POS razem z zaawansowanymi automatycznymi opłatami dodatkowymi. Jeśli te operacje nie zostaną dodane, użytkownicy nie będzie mogli zarządzać ani obsługiwać opłat dodatkowych w transakcjach POS i nie będą mogli korygować ani zmieniać wartości opłat dodatkowych, które są systematycznie obliczane na podstawie konfiguracji automatycznych opłat dodatkowych Co najmniej zaleca się wdrożenie operacji **Zarządzaj opłatami dodatkowymi** do układu POS.
 
 Oto nowe operacje:
 
@@ -142,7 +142,7 @@ Jeśli opłata powinna być traktowana jako opłata związana z „wysyłką” 
 
 Wyślij opłaty do bazy danych kanału/Commerce Scale Unit, aby można było używać ich w POS za pomocą zadania **Harmonogram dystrybucji 1040**.
 
-Operacja **Dodaj opłaty z nagłówka** musi być skonfigurowana w [układzie ekranu POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), aby przycisk dostępny dla użytkownika z poziomu POS mógł wywoływać tę operację (operacja 141). Zmiany układu ekranu muszą być rozdzielone do kanału, jak również za pomocą funkcji harmonogramu dystrybucji.
+Operacja **Dodaj opłaty z nagłówka** musi być skonfigurowana w [układzie ekranu POS](/dynamics365/unified-operations/retail/pos-screen-layouts), aby przycisk dostępny dla użytkownika z poziomu POS mógł wywoływać tę operację (operacja 141). Zmiany układu ekranu muszą być rozdzielone do kanału, jak również za pomocą funkcji harmonogramu dystrybucji.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Przetwarzanie sprzedaży ręcznych opłat na poziomie nagłówka
 
@@ -164,7 +164,7 @@ Jeśli opłata powinna być traktowana jako opłata związana z „wysyłką” 
 
 Wyślij opłaty do bazy danych kanału/Commerce Scale Unit, aby można było używać ich w POS za pomocą zadania **Harmonogram dystrybucji 1040**.
 
-Operacja **Dodaj opłaty z wiersza** musi być skonfigurowana w [układzie ekranu POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), aby przycisk dostępny dla użytkownika z poziomu POS mógł wywoływać tę operację (operacja 140). Zmiany układu ekranu muszą być rozdzielone do kanału, jak również za pomocą funkcji harmonogramu dystrybucji.
+Operacja **Dodaj opłaty z wiersza** musi być skonfigurowana w [układzie ekranu POS](/dynamics365/unified-operations/retail/pos-screen-layouts), aby przycisk dostępny dla użytkownika z poziomu POS mógł wywoływać tę operację (operacja 140). Zmiany układu ekranu muszą być rozdzielone do kanału, jak również za pomocą funkcji harmonogramu dystrybucji.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Przetwarzanie sprzedaży ręcznej opłaty na poziomie wiersza
 
@@ -176,7 +176,7 @@ Ten sam proces można zastosować w biurze obsługi za pomocą funkcji „Obsłu
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Edytowanie opłat na transakcji sprzedaży POS
 
-Operacja **Zarządzaj opłatami dodatkowymi** (142) powinna zostać dodana do [układu ekranu POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), aby umożliwić wyświetlanie i edytowanie lub zastępowanie wszelkich opłat na poziomie nagłówka lub wiersza obliczanych przez system lub ręcznie. Jeśli operacja nie zostanie dodana, użytkownicy nie będą mogli zmienić wartości opłat w transakcji POS ani wyświetlać szczegółów opłat, takich jak typ kodu opłaty powiązany z opłatą.
+Operacja **Zarządzaj opłatami dodatkowymi** (142) powinna zostać dodana do [układu ekranu POS](/dynamics365/unified-operations/retail/pos-screen-layouts), aby umożliwić wyświetlanie i edytowanie lub zastępowanie wszelkich opłat na poziomie nagłówka lub wiersza obliczanych przez system lub ręcznie. Jeśli operacja nie zostanie dodana, użytkownicy nie będą mogli zmienić wartości opłat w transakcji POS ani wyświetlać szczegółów opłat, takich jak typ kodu opłaty powiązany z opłatą.
 
 Na stronie **Zarządzaj opłatami dodatkowymi** w POS użytkownik może wyświetlić zarówno nagłówek, jak i szczegóły opłaty na poziomie wiersza. Użytkownik może użyć funkcji **Edytuj** na tej stronie, aby wprowadzić zmiany do kwoty pobieranej z konkretnego wiersza opłat. Po ręcznym nadpisaniu wiersza opłat nie będzie on systemowo obliczany ponownie, chyba że użytkownik zainicjuje operację **Ponownie oblicz opłaty**.
 
@@ -197,7 +197,7 @@ Opłaty nie są systemowo zwracane do **Zamówień zwrotu** utworzonych w Commer
 Dodano następujące elementy przyjęcia do wiersza przyjęcia i stopki do obsługi funkcji zaawansowanych automatycznych opłat dodatkowych.
 
 - **Opłaty transportowe w wierszach** — ten element poziomu wiersza może służyć do podsumowania określonych kodów opłat, które zostały zastosowane do wiersza sprzedaży. Tylko kody opłat, które zostały oflagowane jako opłaty **Transportowe** na stronie **Kod opłat** zostaną tutaj wyświetlone.
-- **Inne opłaty w wierszach** — ten element poziomu wiersza może służyć do podsumowania wszelkich kodów opłat niezwiązanych z wysyłką, które zostały zastosowane do wiersza sprzedaży. Są to kody opłat, dla których flaga **Transportowe** na stronie **Kod opłat** nie została włączona.
+- **Inne opłaty w wierszach** — ten element poziomu wiersza może służyć do podsumowania wszelkich kodów opłat niezwiązanych z wysyłką, które zostały zastosowane do wiersza sprzedaży. **Inne opłaty w wierszach** są to kody opłat, dla których flaga **Transportowe** na stronie **Kod opłat** nie została włączona.
 - **Szczegóły opłat transportowych w zamówieniach** — ten element poziomu stopki wyświetla opisy kodów opłat stosowanych do zamówienia, które zostało oflagowane jako opłaty **Transportowe** na stronie **Kody opłat**.
 - **Opłaty transportowe w zamówieniach** — ten element poziomu stopki pokazuje wartość w dolarach opłat związanych z wysyłką.
 - **Szczegóły innych opłat w zamówieniach** — ten element poziomu stopki wyświetla opis kodów opłat stosowanych do zamówienia, które nie zostało oflagowane jako związane z opłatami transportowymi.

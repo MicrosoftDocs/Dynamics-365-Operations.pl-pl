@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834603"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026212"
 ---
 # <a name="set-up-postdated-checks"></a>Konfigurowanie czeków postdatowanych
 
@@ -53,7 +53,11 @@ Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstra
     * Wybierz konto bankowe, które jest używane do odliczenia kwoty faktury.  
 18. Kliknij przycisk Zapisz.
 19. Zamknij stronę.
-
-
+> [!NOTE]
+> Aby mieć możliwość księgowania czeku postdatowego na koncie bankowym, gdy data sesji jest nie wcześniejsza niż termin płatności, należy włączyć funkcję **Weryfikacji terminów płatności arkusza księgowania płatności z czekami postdatowanych na koncie bankowym**. Ta funkcja umożliwia księgować arkusze płatności dla dostawców lub odbiorców z czekami postdatywami, jeśli data sesji nie jest wcześniejsza niż termin płatności.
+> 
+> Podczas ustawiania **Metody płatności** (**Rozrachunki z dostawcami > Ustawienia płatności > Metody płatności**) nie należy wypełniać **konta pomostowego**. W tym przypadku konto przeciwstawne jest wypełniane kontem bankowym ustawionym w formularzu **Metoda płatności**.
+>  
+> Gdy funkcja jest włączona, a data sesji jest wcześniejsza niż data zapadalności, podczas księgowania arkusza płatności wyświetlany jest następujący komunikat o błędzie: „Data zapadalności musi być mniejsza lub równa dacie sesji, jeśli typ konta przeciwstawnego to Bank”. Jeśli funkcja nie jest włączona, można zaksięgować arkusz płatności z postdatowanym czekiem, gdy data sesji jest wcześniejsza niż data zapadalności.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

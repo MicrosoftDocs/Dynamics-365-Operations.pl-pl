@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814303"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027801"
 ---
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
@@ -37,9 +37,9 @@ Fabrikam ma wiele podmiotów prawnych i pracowników w różnych zakątkach świ
 
 Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na następujących stanowiskach spełniać te cele:
 
--   Ken jest kontrolerem w firmie Fabrikam. Może on pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
+-   Ken jest kontrolerem w firmie Fabrikam. Ken może pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
 -   Phyllis i April są menedżerami ds. księgowości w dziale rozrachunków z dostawcami dla oddziału firmy Fabrikam w USA. Mogą oni wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z zamówieniem zakupu i odebraniem towarów lub usług.
--   Tony jest kierownikiem produkcji w amerykańskim oddziale Fabrikam. On i inni pracownicy działu produkcji muszą upewnić się, że towary zostały odebrane zgodnie z zamówieniem od dostawcy, tak aby inni pracownicy mieli materiały potrzebne do wykonywania ich obowiązków.
+-   Tony jest kierownikiem produkcji w amerykańskim oddziale Fabrikam. Tony i inni pracownicy działu produkcji muszą upewnić się, że towary zostały odebrane zgodnie z zamówieniem od dostawcy, tak aby inni pracownicy mieli materiały potrzebne do wykonywania ich obowiązków.
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
@@ -49,15 +49,15 @@ Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na nastę
 -   Ken ustawia uzgodnienie trzyelementowe dla zasady uzgadniania dla pozycji 1500 — Milicron Obrabiarka na poziomie pozycji. Ta pozycja jest pozycją środka trwałego używanego do produkcji w firmie Fabrikam. Faktury dla tej pozycji są uzgadnianie z wierszami zamówienia zakupu dla cen i z dokumentami przyjęcia produktów dla ilości.
 -   Tony wpisuje zapotrzebowanie na pięć obrabiarek Milicron. Alicia, pracowniczka działu zamówień zakupów w firmie Fabrikam, wysyła zamówienie zakupu do firmy o nazwie Contoso na dostawę towarów.
 
-    | Numer pozycji                 | Ilość | Cena jednostkowa | Kwota netto | Kod opłat        | Wartość opłat |
+    | Numer towaru                 | Ilość | Cena jednostkowa | Kwota netto | Kod opłat        | Wartość opłat |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 — Milicron Obrabiarka | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | 8000,00   | 40 000,00  | Wysyłka i obsługa | 3000,00      |
+    | 1500 — Milicron Obrabiarka | 5 przypada na składniki z tytułu ubezpieczeń majątkowych i osobowych        | 8000,00   | 40 000,00  | Wysyłka i obsługa | 3,000.00      |
 
 -   Arnie, pracownik działu rozrachunki z odbiorcami w Contoso, sprawdza wysyłki w danym tygodniu. Wybiera transakcje wysyłki do zafakturowania dla Fabrikam za dostawę obrabiarek Milicron. Arnie uwzględnia opłatę za wysyłkę i obsługę. Fabrikam uzna, że ta opłata jest częścią kosztów środka trwałego.
 
 ### <a name="scenario"></a>Scenariusz
 
-1.  Sammy, pracownik działu przyjęć w firmie Fabrikam, odbiera całkowitą liczbę maszyn, które zostały wysyłane z firmy Contoso. Wprowadza ilość 5 w dokumencie przyjęcia produktów. Ponieważ zamówienie zakupu zostało całkowicie otrzymane, stan zamówienia zakupu zmienia się na Otrzymane.
+1.  Sammy, pracownik działu przyjęć w firmie Fabrikam, odbiera całkowitą liczbę maszyn, które zostały wysyłane z firmy Contoso. Sammy wprowadza ilość 5 w dokumencie przyjęcia produktów. Ponieważ zamówienie zakupu zostało całkowicie otrzymane, stan zamówienia zakupu zmienia się na Otrzymane.
 2.  April, koordynatorka rozrachunków z dostawcami w firmie Fabrikam, wprowadza i sprawdza fakturę przesyłaną przez firmę Contoso. Sprawdza poprawność następujących informacji:
     -   Dla towarów, które wymagają uzgodnienia trzyelementowego, ilość w wierszu faktury odpowiada ilości, która została przyjęta. Przyjęta ilość jest wskazana w dokumencie przyjęcia produktów, który jest uzgodniony z fakturą.
     -   W przypadku towarów wymagających dwuelementowego lub trzyelementowego uzgadniania ceny w wierszu faktury są w granicach tolerancji zdefiniowanych w Microsoft Dynamics 365 Finance. Obejmuje to następujące typy uzgadniania cen:
@@ -87,7 +87,7 @@ Podsumowanie: Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystki
 Wielkości i kwoty są małe i w przeszłości zdarzały się problemy z dostawami od niektórych dostawców z Malezji. Z tego powodu Cassie ustawia poziom kontroli dla niektórych kombinacji towaru i dostawcy, które są nabywane w Malezji, na uzgadnianie trzyelementowe. 
 
 Zasady uzgadniania faktur w tym przykładzie ułatwiają pracę osobom na następujących stanowiskach spełniać te cele:
--   Ken jest kontrolerem w firmie Fabrikam. Może on pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
+-   Ken jest kontrolerem w firmie Fabrikam. Ken może pomóc pracownikom swojej firmy w identyfikowaniu i rozwiązywaniu problemów związanych z zamawianiem, odbieraniem zamówień i płaceniem za towary lub usługi od dostawców.
 -   Cassie jest kontystką w malezyjskim oddziale firmy Fabrikam. Może ona wymuszać stosowanie zasad korporacyjnych i zapewniać, że faktury są płacone dopiero po ich uzgodnieniu z wierszami zamówienia zakupu i dokumentem przyjęcia produktów będącym dowodem odebrania towarów lub usług. Może ona także podnieść poziom kontroli do uzgadniania trzyelementowego dla określonych towarów, by umożliwić kontrolę kosztów operacyjnych.
 
 ### <a name="prerequisites"></a>Wymagania wstępne

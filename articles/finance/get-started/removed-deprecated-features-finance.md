@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 93d025759f86ffeb0ee1f1e6e6e2aeb3ab341b75
-ms.sourcegitcommit: 4ba25601eba295bd9057f7fb5e85f1f6764f5a27
+ms.openlocfilehash: 8cacf2fbef8873288493f71b43d22dc186e6d18e
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965317"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980905"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Finance
 
@@ -35,7 +35,7 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.20
 
-### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Konfiguracja formatu zapytania o dane faktury RTIR (HU)
+### <a name="rtir-query-invoice-data-request-hu-electronic-reporting-er-format-configuration"></a>Konfiguracja formatu raportowania elektronicznego (ER) „Zapytanie o dane faktury RTIR (HU)”
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -45,6 +45,15 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 | **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Wycofane: do 15 kwietnia 2022 r. Nie planujemy już obsługiwać konfiguracji formatu „Zapytania o dane faktury RTIR (HU)”. |
 
+### <a name="french-fec-audit-file-electronic-reporting-er-format-for-france-under-german-audit-file-output-format"></a>„Francuski plik audytu FEC” — format raportowania elektronicznego (ER) dla Francji w formacie „niemiecki plik wyjściowy pliku inspekcji”
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Zastąpiono nowym formatem „Plik inspekcji FEC (FR)” |
+| **Zamieniona przez inną funkcję?**   | Tak |
+| **Powiązane obszary produktów**         | Zgłoszenie |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane: do 1 maja 2022 r. Planujemy zaprzestać obsługi formatu „francuskiego pliku kontrolnego FEC” dla Francji w formacie „niemieckiego pliku kontrolnego”. Zamiast tego wprowadzono nowy format pliku audytu FEC (FR) w „Modelu eksportu danych”. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Finance 10.0.17
 

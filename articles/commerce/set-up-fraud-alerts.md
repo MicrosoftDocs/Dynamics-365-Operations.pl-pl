@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8334b46f7e943e888c3a4db7580eeca30d49ad39
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 401fb9af5d2d50a14c288363af3e0b814dcbf7c6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793976"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018548"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Konfigurowanie i praca z alertami o oszustwach w biurze obsługi
 
@@ -34,13 +34,13 @@ W tym temacie opisano sposób ustawiania kryteriów i zasad tak, aby wstrzymać 
 
 ## <a name="turning-on-the-fraud-check-feature"></a>Włączanie funkcji wykrywania oszustw
 
-Aby korzystać z funkcji kontroli pod kątem oszustwa, należy ustawić opcję **Włącz kończenie zamówienia** na kanale **Tak**, gdy kanał biura obsługi jest [zdefiniowany](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Jeśli wykonanie zlecenia jest włączone, użytkownicy biura obsługi muszą wybrać **Zakończ** na stronie zamówień sprzedaży dla wszystkich zamówień sprzedaży, które zostały utworzone. Akcja Wykonane powoduje otwarcie strony **Podsumowanie zamówienia sprzedaży**. Gdy użytkownicy wprowadzą wymagane dane płatności na stronie **Podsumowanie zamówienia sprzedaży**, muszą nacisnąć przycisk **Prześlij**, aby sfinalizować zamówienie. Po przesłaniu zamówienia, zostanie uruchomiona funkcja kontroli pod kątem oszustwa,a wszystkie reguły, które są aktywne w systemie, zostaną automatycznie sprawdzone.
+Aby korzystać z funkcji kontroli pod kątem oszustwa, należy ustawić opcję **Włącz kończenie zamówienia** na kanale **Tak**, gdy kanał biura obsługi jest [zdefiniowany](/dynamics365/unified-operations/retail/set-up-order-processing-options). Jeśli wykonanie zlecenia jest włączone, użytkownicy biura obsługi muszą wybrać **Zakończ** na stronie zamówień sprzedaży dla wszystkich zamówień sprzedaży, które zostały utworzone. Akcja Wykonane powoduje otwarcie strony **Podsumowanie zamówienia sprzedaży**. Gdy użytkownicy wprowadzą wymagane dane płatności na stronie **Podsumowanie zamówienia sprzedaży**, muszą nacisnąć przycisk **Prześlij**, aby sfinalizować zamówienie. Po przesłaniu zamówienia, zostanie uruchomiona funkcja kontroli pod kątem oszustwa,a wszystkie reguły, które są aktywne w systemie, zostaną automatycznie sprawdzone.
 
-Użytkownicy biura obsługi mogą także ręcznie wstrzymywać zamówienia sprzedaży do weryfikacji pod kątem oszustwa, zanim nacisną opcję **Prześlij**. Aby ręcznie wstrzymać zamówienie sprzedaży, na stronie **Podsumowanie zamówienia sprzedaży** wybierz opcję **Wstrzymanie** \> **Ręczne wstrzymanie ze względu na oszustwo**. Następnie zostanie wyświetlony monit o wprowadzenie komentarza wyjaśniającego przyczynę wstrzymania zamówienia. Ten komentarz pojawi się na pulpicie [wstrzymanie zamówień](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), aby dostarczyć kontekst użytkownikom sprawdzającym wstrzymane zamówienia w celu określenia, czy dane zamówienie powinno być zwolnione.
+Użytkownicy biura obsługi mogą także ręcznie wstrzymywać zamówienia sprzedaży do weryfikacji pod kątem oszustwa, zanim nacisną opcję **Prześlij**. Aby ręcznie wstrzymać zamówienie sprzedaży, na stronie **Podsumowanie zamówienia sprzedaży** wybierz opcję **Wstrzymanie** \> **Ręczne wstrzymanie ze względu na oszustwo**. Następnie zostanie wyświetlony monit o wprowadzenie komentarza wyjaśniającego przyczynę wstrzymania zamówienia. Ten komentarz pojawi się na pulpicie [wstrzymanie zamówień](/dynamics365/unified-operations/retail/work-with-order-holds), aby dostarczyć kontekst użytkownikom sprawdzającym wstrzymane zamówienia w celu określenia, czy dane zamówienie powinno być zwolnione.
 
 Oprócz skonfigurowania opcji **Włącz kończenie zamówienia** w kanale należy również skonfigurować funkcję wykrywania oszustw w oknie Parametry biura obsługi. Wybierz kolejno opcje **Handel detaliczny i inny** \> **Ustawienia kanału** \> **Ustawienia biura obsługi** \> **Parametry biura obsługi**. Na stronie **Parametry biura obsługi** na karcie **Wstrzymania** w opcji **Wykrywanie oszustw** ustaw wartość **Tak**.
 
-Na kartę **Wstrzymania** należy także zdefiniować [kody wstrzymania](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), które będą stosowane do zamówienia wstrzymanego ręcznie lub automatycznie w celu weryfikacji pod kątem oszustwa. Ustaw kody wstrzymania w polach **Kod ręcznego wstrzymania z powodu oszustwa** i **Kod wstrzymania z powodu oszustwa**. Może być przydatne utworzenie dwóch unikatowych kodów wstrzymania. Dzięki temu użytkownicy pracujący na pulpicie wstrzymań mogą z łatwością odfiltrować i odróżnić automatyczne wstrzymania od ręcznych.
+Na kartę **Wstrzymania** należy także zdefiniować [kody wstrzymania](/dynamics365/unified-operations/retail/work-with-order-holds), które będą stosowane do zamówienia wstrzymanego ręcznie lub automatycznie w celu weryfikacji pod kątem oszustwa. Ustaw kody wstrzymania w polach **Kod ręcznego wstrzymania z powodu oszustwa** i **Kod wstrzymania z powodu oszustwa**. Może być przydatne utworzenie dwóch unikatowych kodów wstrzymania. Dzięki temu użytkownicy pracujący na pulpicie wstrzymań mogą z łatwością odfiltrować i odróżnić automatyczne wstrzymania od ręcznych.
 
 Aby funkcja wykrywania oszustw działała skutecznie, należy także ustawić pole **Minimalna punktacja**. Każde kryterium i reguła wykrywania oszustw zdefiniowane w systemie ma punktację. Gdy zamówienie sprzedaży jest sprawdzane pod kątem dopasowań oszustwa, jeśli jedno lub więcej dopasowań zostanie znalezionych, wyniki są dodawane, aby uzyskać łączną punktację oszustwa. Jeśli łączny wynik punktowy w ocenie oszustwa dla zamówienia przekracza wartość w polu **Minimalna punktacja**, zamówienie zostanie automatycznie wstrzymane. Można opcjonalnie użyć innych powiązanych pól związanych z wynikami na karcie **Wstrzymania**, aby zdefiniować punktację dla adresu e-mail, numeru telefonu, kodu pocztowego i rozszerzonego kodu pocztowego. Jeśli nie określisz wyniku punktowego dla któregokolwiek z tych statycznych kryteriów wykrywania oszustw podczas ich definiowania na stronie **Dane statyczne oszustw**, system będzie je oceniał przy użyciu domyślnych wyników punktowych określonych na karcie **Wstrzymania** na stronie **Parametry biura obsługi**.
 
@@ -65,7 +65,7 @@ Zamówienie zostanie zapisane, ale z flagą **Nie przetwarzaj**. Ta flaga pozwal
 
 Aby zobaczyć podgląd i zarządzać zamówieniami, które są wstrzymane ze względu na kontrolę pod kątem oszustwa, przejdź do **Sprzedaży detalicznej i innej** \> **Odbiorców** \> **Wstrzymane zamówienia**. Na stronie **Wstrzymania zamówień** wybierz pozycję na liście, a następnie kliknij opcję **Wstrzymanie zamówienia**, aby zobaczyć bardziej szczegółowy widok zawierający m.in. informacje o przyczynie wstrzymania. Na skróconej karcie **Szczegóły oszustwa** można obejrzeć systematyczne kryteria oszustwa, dla których znaleziono pasujące elementy w zamówieniu, oraz zastosowane wyniki. Jeśli zamówienie zostało wstrzymane ręcznie, można przejrzeć wszystkie komentarze wprowadzone przez użytkownika, który nałożył zawieszenie, zaglądając do sekcji **Notatki dotyczące oszustwa** na skróconej karcie **Uwagi**.
 
-Aby uzyskać więcej informacji na temat pracy z funkcją wstrzymywania zamówień, zobacz [Wstrzymania zamówień](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+Aby uzyskać więcej informacji na temat pracy z funkcją wstrzymywania zamówień, zobacz [Wstrzymania zamówień](/dynamics365/unified-operations/retail/work-with-order-holds).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

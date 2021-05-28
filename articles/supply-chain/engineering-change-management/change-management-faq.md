@@ -2,7 +2,6 @@
 title: Zarządzanie zmianami projektowymi — FAQ
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zarządzania zmianami projektowymi.
 author: t-benebo
-manager: tfehr
 ms.date: 03/25/2021
 ms.topic: article
 audience: Application User
@@ -11,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ed48c694cec42b86fb3b3908dc608a97979944f6
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920188"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018692"
 ---
 # <a name="engineering-change-management-faq"></a>Zarządzanie zmianami projektowymi — FAQ
 
@@ -41,7 +40,7 @@ Chociaż ta opcja wymaga większej ilości nakładów pracy w zakresie zarządza
 
 ### <a name="if-you-dont-track-the-version-in-transactions"></a>Jeśli wersja nie jest śledzona w transakcjach
 
-Dla kategorii projektowych, w których wybrano grupę wymiarów, w której wersja **nie** jest aktywnym wymiarem, wersje **nie** będą śledzone w transakcjach dla produktów z tej kategorii. W takim przypadku, jeśli nie zostanie nadany żaden inny wymiar, produkt projektowy będzie odrębnym produktem. Produkt będzie nadal podlegał kontroli wersji i będzie można zarządzać informacjami o określonych wersjach (na przykład BOM i marszruty), ale nie będzie można śledzić, które wersje były używane w każdej transakcji. Daty rozpoczęcia i zakończenia obowiązywania wskazują ważność każdej wersji.
+Dla kategorii projektowych, w których wybrano grupę wymiarów, w której wersja **nie** jest aktywnym wymiarem, wersje **nie** będą śledzone w transakcjach dla produktów z tej kategorii. W takim przypadku, jeśli nie zostanie nadany żaden inny wymiar, produkt projektowy będzie odrębnym produktem. Produkt będzie nadal podlegał kontroli wersji i będzie można zarządzać informacjami o określonych wersjach (na przykład \[BOM] i marszruty), ale nie będzie można śledzić, które wersje były używane w każdej transakcji. Daty rozpoczęcia i zakończenia obowiązywania wskazują ważność każdej wersji.
 
 Ta opcja jest o wiele łatwiejsza do zarządzania, ponieważ jeśli chcesz zmienić jedną wersję, wystarczy wprowadzić wymagane zmiany w zamówieniu zmian, a następnie zaktualizować daty wejścia w życie i zakończenia w wersji projektowej. Procesy produkcyjne będą brać wymagany BOM i marszrutę dla produktu (i jego określonej wersji).
 

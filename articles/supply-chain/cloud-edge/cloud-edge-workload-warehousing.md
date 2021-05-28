@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944420"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980957"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -58,7 +58,10 @@ Jednostki skali dzielą się na następujące dane:
   - **Zamówienia przeniesienia** (tylko wychodzące z prostą pracą pobierania i ładowania)
 
 - **Dane przyjęcia zamówienia magazynowego** — te dane są używane tylko dla zamówień zakupu, które zostały zwolnione do magazynu.
-- **Dane numeru identyfikacyjnego — numery identyfikacyjne** mogą być tworzone na koncentratorze i w jednostkach skali. Dostarczono dedykowaną obsługę konfliktów. Zauważ, że te dane nie są właściwe dla magazynu.
+- **Dane numeru identyfikacyjnego** — Tablice rejestracyjne można tworzyć zarówno na piaście, jak i na jednostkach wagi. Dostarczono dedykowaną obsługę konfliktów. 
+
+    > [!IMPORTANT]
+    > Dane tablicy rejestracyjnej nie są specyficzne dla magazynu. Jeśli ten sam numer rejestracyjny zostanie utworzony zarówno na koncentratorze, jak i jednostce wagi podczas tego samego cyklu synchronizacji, następna synchronizacja nie powiedzie się. W takim przypadku wybierz opcje **Administrowanie systemem > Informacje > Informacje obciążenia pracą > Zduplikowane rekordy**, w których można przeglądać i scalać dane.
 
 ## <a name="outbound-process-flow"></a>Przepływ procesu wychodzącego
 

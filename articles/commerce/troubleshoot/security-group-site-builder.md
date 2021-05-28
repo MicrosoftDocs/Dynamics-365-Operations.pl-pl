@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d29e560d0f7b2bbc2415d7a0f6fe18f2ca17dc7c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801514"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020739"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Nie można skonfigurować grupy zabezpieczeń dla Konstruktora witryn portalu Commerce podczas początkowego wdrażania
 
@@ -38,7 +37,7 @@ Podczas tworzenia składników portalu handlu elektronicznego w ramach procesu w
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Inicjowanie obsługi witryny e-commerce z użytkownikiem w odpowiedniej dzierżawie
 
 1. Przejdź do [portalu Azure](https://portal.azure.com/).
-1. W dzierżawie, dla których został obsługiny projekt usługi LCS dla witryny e-commerce, postępuj zgodnie z instrukcjami w obszarze [Tworzenie grupy podstawowej i dodaj członków, używając Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
+1. W dzierżawie, dla których został obsługiny projekt usługi LCS dla witryny e-commerce, postępuj zgodnie z instrukcjami w obszarze [Tworzenie grupy podstawowej i dodaj członków, używając Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal).
 1. Przejdź do usługi [LCS](https://lcs.dynamics.com/) i zaloguj się, używając konta, które ma tę samą dzierżawę co utworzona właśnie grupa zabezpieczeń Azure AD. Konto musi mieć dostęp do wyświetlania grupy zabezpieczeń Azure AD.
 1. Aby skonfigurować witrynę e-commerce, należy wykonać kroki konfiguracji. Podczas inicjowania obsługi składników handlu elektronicznego grupa zabezpieczeń powinna być wyświetlana jako opcja w oknie dialogowym.
 
@@ -47,6 +46,6 @@ Podczas tworzenia składników portalu handlu elektronicznego w ramach procesu w
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Utwórz podstawową grupę i dodaj członków za pomocą Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Utwórz podstawową grupę i dodaj członków za pomocą Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Wdrażanie nowej dzierżawy handlu elektronicznego](../deploy-ecommerce-site.md)

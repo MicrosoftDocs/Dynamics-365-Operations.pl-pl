@@ -15,20 +15,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d6f0a155b38b1d732d17bd2f964677862ff363e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808671"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016162"
 ---
 # <a name="cost-and-date-control"></a>Kontrola kosztu i daty
 
 [!include [banner](../../includes/banner.md)]
 
- 
-
-W module Zarządzanie składnikami majątku można obliczać koszty rejestracji usterek składników majątku, aby uzyskać przegląd kosztów rzeczywistych w porównaniu z kosztami budżetowymi składników majątku, loklizacjami czynności konserwacyjnych i zleceniami pracy. Koszty rzeczywiste są oparte na zaksięgowanych transakcjach. 
+W module Zarządzanie składnikami majątku można obliczać koszty rejestracji usterek składników majątku, aby uzyskać przegląd kosztów rzeczywistych w porównaniu z kosztami budżetowymi składników majątku, loklizacjami czynności konserwacyjnych i zleceniami pracy. Koszty rzeczywiste są oparte na zaksięgowanych transakcjach.
 
 Można także wprowadzić obliczenie daty, aby porównać planowane daty rozpoczęcia i zakończenia według rzeczywistych dat rozpoczęcia i zakończenia w zleceniach pracy.
 
@@ -46,8 +44,8 @@ Obliczenia wykonane dla składników majątku, lokalizacji czynności konserwacy
 
 5. Pola **Poziom** można użyć, aby wskazać, jak szczegółowe mają być wiersze kontroli kosztów dotyczące lokalizacji czynności konserwacyjnych. 
 
-    Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa hierarchia lokalizacji czynności konserwacyjnych, wszystkie wiersze kontroli kosztów usterek składniku majątku w lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie. 
-    
+    Jeśli na przykład w polu wstawiono liczbę „1” i istnieje wielopoziomowa hierarchia lokalizacji czynności konserwacyjnych, wszystkie wiersze kontroli kosztów usterek składniku majątku w lokalizacji czynności konserwacyjnych będą wyświetlane na najwyższym poziomie, dlatego godziny w wierszu mogą być dodawane z lokalizacji czynności konserwacyjnych znajdujących się na niższym poziomie.
+
     W przypadku wstawienia liczby „0” w polu **Poziom** zostanie wyświetlony szczegółowy wynik zawierający wszystkie wiersze kontroli kosztów na każdym poziomie lokalizacji czynności konserwacyjnych, z którym jest powiązany.
 
 6. Należy wybrać wartość „tak” na przełączniku **Pokaż otwarty koszt ustalony**, jeśli ta kolumna ma zostać uwzględniona w obliczeniach.
@@ -64,7 +62,7 @@ Obliczenia wykonane dla składników majątku, lokalizacji czynności konserwacy
 
 10. Na stronie **Formant kosztów składników majątku** kliknij przyciski **Grupuj wg**, aby wyświetlić wymagany poziom szczegółowości obliczania. Wybrane przyciski grupy **Grupuj wg...** są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
-## <a name="example"></a>Przykład
+## <a name="example-of-calculation-results-in-asset-cost-control"></a>Przykładowe wyniki obliczeń w oknie Formant kosztów składników majątku
 
 Na poniższym zrzucie ekranu pokazano przykład wyniku obliczania w oknie **Formant kosztów składników majątku**.
 
@@ -76,7 +74,6 @@ Na poniższym zrzucie ekranu pokazano przykład wyniku obliczania w oknie **Form
 ![Przykładowe wyniki obliczeń w oknie Formant kosztów składników majątku](media/02-controlling-and-reporting.png)
 
 Innym sposobem obliczenia kosztów jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie kliknij przycisk **Kontrola kosztów** na karcie **Ogólne**. W oknie dialogowym **Formant kosztów składników majątku** wybrane składniki majątku są automatycznie umieszczane w polu **Składnik majątku** na karcie skróconej **Rekordy do uwzględnienia**. Kliknij **OK** i wyświetlona zostanie kalkulacja kosztów dla wybranych składników majątku. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
-
 
 ## <a name="work-order-date-control"></a>Kontrola dat zlecenia pracy
 
@@ -94,7 +91,7 @@ Ta strona umożliwia uzyskanie przeglądu oczekiwanych dat rozpoczęcia i zakoń
 
 6. Kliknij przyciski **Grupuj wg...**, aby wyświetlić wymagany poziom szczegółowości obliczania. Wybrane przyciski grupy **Grupuj wg...** są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
-## <a name="example"></a>Przykład
+## <a name="example-of-calculation-results-in-work-order-date-control"></a>Przykładowe wyniki obliczeń w oknie kontrola dat zlecenia pracy
 
 Na poniższym zrzucie ekranu pokazano przykładowe wyniki obliczania w oknie **Kontrola dat zlecenia pracy**.
 

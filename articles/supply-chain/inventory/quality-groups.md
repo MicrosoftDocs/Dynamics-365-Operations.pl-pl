@@ -2,11 +2,9 @@
 title: Grupy jakości pozycji
 description: W tym temacie opisano sposób używania i tworzenia grup kontroli jakości towarów w celu logicznego grupowania produktów w celu przypisania ich do skojarzeń jakości w celu automatycznego generowania zleceń kontroli jakości.
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestQualityGroup, InventTestItemQualityGroup
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: raprofit
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3074a6a8cc054be045bf593b509e76a1043af0b7
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 272cb748e0a2722d9744fe6b357d767a1d6aeb26
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956785"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022259"
 ---
 # <a name="item-quality-groups"></a>Grupy jakości pozycji
 

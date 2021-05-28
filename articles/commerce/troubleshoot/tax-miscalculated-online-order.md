@@ -5,7 +5,6 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7f71add679e1d24f80db8ce3990058b591128ec1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f7cef533d76bdddfbad2e8c5f84f81ef62bccc38
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801418"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021110"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Podatki w zamówieniach online są niepoprawnie obliczone
 
@@ -44,7 +43,7 @@ Aby skonfigurować podatek od sprzedaży dla sklepu detalicznego w siedzibie Com
 1. Na skróconej karcie **Ogólne** w sekcji **Podatek** skonfiguruj informacje o podatku dla sklepu.
 
 > [!NOTE]
-> W przypadku pobrania produktu ze sklepu grupa podatków pochodzi ze sklepu wybranego do pobrania. Aby uzyskać więcej informacji, zobacz [Ustawianie innych opcji podatków dla sklepów](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
+> W przypadku pobrania produktu ze sklepu grupa podatków pochodzi ze sklepu wybranego do pobrania. Aby uzyskać więcej informacji, zobacz [Ustawianie innych opcji podatków dla sklepów](/dynamicsax-2012/appuser-itpro/set-other-tax-options-for-stores).
 
 ### <a name="configure-the-sales-tax-for-a-customers-address-in-commerce-headquarters"></a>Skonfiguruj podatek od sprzedaży dla adresu klienta w siedzibie Commerce
 
@@ -68,7 +67,7 @@ Aby skonfigurować ogólne grupy podatków w Commerce headquarters, wykonaj nast
 1. Na skróconej karcie **Podatek oparty na lokalizacji detalicznej** skonfiguruj podatki dla grupy podatków.
 
 > [!NOTE]
-> W przypadku wysyłki, która nie obejmuje podatku w adresie odbiorcy, grupa podatków określa adres dostawy wiersza oraz podatki oparte na lokalizacji docelowej, które są skonfigurowane dla grupy podatków. Aby uzyskać więcej informacji, zajrzyj do [Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
+> W przypadku wysyłki, która nie obejmuje podatku w adresie odbiorcy, grupa podatków określa adres dostawy wiersza oraz podatki oparte na lokalizacji docelowej, które są skonfigurowane dla grupy podatków. Aby uzyskać więcej informacji, zajrzyj do [Konfigurowanie podatków dla sklepów internetowych w oparciu o miejsce docelowe](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

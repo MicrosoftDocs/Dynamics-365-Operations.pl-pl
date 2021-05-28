@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: c32ffc8435c05c644bf836bb184400d067269208
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796890"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020658"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Włączanie wielu metod dostawy dla zamówień klientów
 
@@ -82,7 +82,7 @@ Jeśli dla kanału jest dostępnych wiele trybów dostawy — odbioru, w momenci
 
 ## <a name="considerations-for-distributed-order-management"></a>Informacje ważne dla funkcji zarządzania zamówieniami rozdzielonymi
 
-[Funkcje zarządzania zamówieniami rozproszonymi (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) w module Commerce ignorują wszystkie wiersze sprzedaży oznaczone do odbioru w sklepie. Te funkcje zostały zaktualizowane, aby upewnić się, że wiersze sprzedaży połączone z skonfigurowanymi metodami dostawy odbioru pomijają logikę modelu DOM i nie zostaną ponownie przydzielone do nowego magazynu realizacji.
+[Funkcje zarządzania zamówieniami rozproszonymi (DOM)](./dom.md) w module Commerce ignorują wszystkie wiersze sprzedaży oznaczone do odbioru w sklepie. Te funkcje zostały zaktualizowane, aby upewnić się, że wiersze sprzedaży połączone z skonfigurowanymi metodami dostawy odbioru pomijają logikę modelu DOM i nie zostaną ponownie przydzielone do nowego magazynu realizacji.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

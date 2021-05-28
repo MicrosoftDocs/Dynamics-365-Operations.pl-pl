@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818759"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028210"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 
@@ -63,8 +63,8 @@ Aby zacząć odpowiadać na to pytanie, należy wziąć pod uwagę dokładność
 
 Warto zwrócić uwagę na inny aspekt. Rozważmy scenariusz, w którym jest używany test medyczny w celu wykrycia choroby u pacjenta. Ten problem jest problemem z klasyfikacją binarną, w którym pozytywny wynik wskazuje, że pacjent ma tę chorobę. W tym scenariuszu należy wziąć pod uwagę wpływ następujących błędów:
 
-- Fałszywe dodatnie, gdzie wynik testu oznacza, że pacjent ma taką chorobę, ale w rzeczywistości nie ma takiej choroby
-- Fałszywe ujemne, gdzie wynik testu oznacza, że pacjent nie ma takiej choroby, ale w rzeczywistości ją ma
+- Fałszywie pozytywne, gdy test mówi, że pacjent ma chorobę, ale tak naprawdę pacjent jej nie ma.
+- Fałszywe negatywy, w przypadku których test mówi, że pacjent nie ma choroby, ale pacjent naprawdę ją ma.
 
 Oczywiście, oba typy błędów są niepożądane, ale który jest gorszy? Znowu, to zależy. W przypadku choroby zagrażającej życiu, która wymaga szybkiego leczenia, minimalizacja fałszywych wyników ujemnych (po których powinny nastąpić dodatkowe testy) ma pierwszeństwo. W innych, mniej krytycznych sytuacjach, twórcy modelu mogą natomiast minimalizować fałszywe dodatnie wyniki. W każdym razie racjonalny wniosek jest taki, że aby skutecznie ustalić jakość modelu, trzeba mieć więcej informacji niż zapewnia metryka dokładności.
 

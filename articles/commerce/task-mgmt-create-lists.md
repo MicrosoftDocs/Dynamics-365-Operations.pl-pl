@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a0e49d1eced3bb62e78c630b137a5b86121682f3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f3fcfae9f4ab458b4f14f18859f22fc25bf98623
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795244"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027631"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Tworzenie list zadań i dodawanie zadań
 
@@ -49,7 +49,7 @@ Aby dodać zadanie do listy zadań, wykonaj następujące kroki.
 1. W nowym oknie dialogowym **Utwórz nowe zadanie**, w polu **Nazwa** wprowadź unikatową nazwę zadania.
 1. W polu **Przesunięcie danych należnych od daty docelowej** wprowadź dodatnią lub ujemną wartość całkowitą. Na przykład wprowadź **-2**, jeśli zadanie ma zostać wykonane dwa dni przed datą ukończenia listy zadań.
 1. W polu **Uwagi** wprowadź szczegółowe instrukcje.
-1. W polu **Osoba kontaktowa** wprowadź nazwisko eksperta, którego właściciel zadania może skontaktować się, jeśli wymaga tego pomoc.
+1. W polu **Osoba kontaktowa** wprowadź nazwisko eksperta w danej dziedzinie, z którym właściciel zadania może się skontaktować, jeśli potrzebuje pomocy.
 1. W polu **Łącze zadania** wprowadź łącze na podstawie charakteru zadania.
 
 > [!TIP]

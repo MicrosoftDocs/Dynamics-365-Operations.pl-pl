@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795220"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028114"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
@@ -135,7 +135,7 @@ Tekst wprowadzony w polu **Notatki** pojawi się *pod* tekstem kroku w przewodni
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Pomoc w programie Retail Modern POS i Cloud POS
 
-Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy programu Retail Modern POS i Cloud POS, by mogły być wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../fin-and-ops/get-started/help-connect.md). Pomoc programu Retail Modern POS i Cloud POS wyszukuje usługi LCS w czasie rzeczywistym. Przeszukuje wszystkie biblioteki BPM wybrane w parametrach systemu Commerce — Pomoc i przedstawia odpowiednie wyniki. Aby uzyskać dostęp do menu **Pomoc**, kliknij przycisk **Pomoc** (znak zapytania) znajdujący się u góry ekranu, a następnie w polu wyszukiwania wpisz nazwę procesu i kliknij przycisk wyszukiwania.
+Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy programu Retail Modern POS i Cloud POS, by mogły być wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../fin-ops-core/fin-ops/get-started/help-connect.md). Pomoc programu Retail Modern POS i Cloud POS wyszukuje usługi LCS w czasie rzeczywistym. Przeszukuje wszystkie biblioteki BPM wybrane w parametrach systemu Commerce — Pomoc i przedstawia odpowiednie wyniki. Aby uzyskać dostęp do menu **Pomoc**, kliknij przycisk **Pomoc** (znak zapytania) znajdujący się u góry ekranu, a następnie w polu wyszukiwania wpisz nazwę procesu i kliknij przycisk wyszukiwania.
 
 [![Przycisk Pomoc](./media/help.jpg)](./media/help.jpg)
 

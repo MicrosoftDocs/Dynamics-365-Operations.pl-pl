@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5ec0e13c8ecfb6003cbb905e66fc102074e7b9b6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 17ed0adefb2c3dd10e5e6020929c877cf5c3b8c9
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795532"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022630"
 ---
 # <a name="set-up-call-center-channels"></a>Konfigurowanie kanałów biura obsługi
 
@@ -37,7 +37,7 @@ Aby korzystać z funkcji biura obsługi, użytkownicy muszą być połączeni z 
 
 W kanale biura obsługi można również skonfigurować profil powiadamiania pocztą e-mail. Profil określa zestaw szablonów wiadomości e-mail, który jest używany podczas wysyłania wiadomości e-mail do odbiorców składających zamówienia za pośrednictwem kanału biura obsługi. Wyzwalacze wiadomości e-mail można skonfigurować dla zdarzeń systemowych, takich jak przesłanie zamówienia lub wysyła zamówionych towarów.
 
-Aby można było poprawnie przetwarzać operacje sprzedaży za pośrednictwem kanału biura obsługi, należy zdefiniować dla kanału poprawne [metody płatności](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments) i metody dostawy.
+Aby można było poprawnie przetwarzać operacje sprzedaży za pośrednictwem kanału biura obsługi, należy zdefiniować dla kanału poprawne [metody płatności](/dynamics365/unified-operations/retail/work-with-payments) i metody dostawy.
 
 Na poziomie kanału biura obsługi można określić inne wartości domyślne związane z wymiarami finansowymi, które będą łączone z zamówieniami tworzonymi w tym kanale.
 
@@ -47,13 +47,13 @@ Trzy ustawienia w konfiguracji biura obsługi mają znaczny wpływ na funkcje i 
 
 ### <a name="enable-order-completion"></a>Włącz kończenie zamówienia
 
-Ustawienie **Włącz kończenie zamówienia** w kanale biura obsługi ma znaczny wpływ na przebieg przetwarzania zamówień sprzedaży wprowadzanych w tym kanale. Gdy to ustawienie jest włączone, wszystkie zamówienia sprzedaży muszą przejść przez zestaw reguł sprawdzania poprawności, zanim będzie można je potwierdzić. Reguły te są uruchamiane poprzez naciśnięcie przycisku **Ukończ**, który jest dodawany w okienku akcji na stronie zamówienia sprzedaży. Wszystkie zamówienia sprzedaży, które są tworzone przy włączonym ustawieniu **Włącz kończenie zamówienia**, muszą przejść przez proces finalizowania zamówienia. Ten proces wymusza odczytanie logiki płatności i weryfikacji płatności. Proces przesyłania zamówień może nie tylko służyć egzekwowaniu płatności, ale również wywoływać [funkcje wykrywania oszustw](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts) skonfigurowane w systemie. Zamówienia, które nie przeszły weryfikacji płatności lub braku oszustwa, są wstrzymywane i nie mogą zostać zwolnione do dalszego przetwarzania (na przykład do pobrania lub wysyłki), dopóki problem powodujący wstrzymanie nie zostanie rozwiązany.
+Ustawienie **Włącz kończenie zamówienia** w kanale biura obsługi ma znaczny wpływ na przebieg przetwarzania zamówień sprzedaży wprowadzanych w tym kanale. Gdy to ustawienie jest włączone, wszystkie zamówienia sprzedaży muszą przejść przez zestaw reguł sprawdzania poprawności, zanim będzie można je potwierdzić. Reguły te są uruchamiane poprzez naciśnięcie przycisku **Ukończ**, który jest dodawany w okienku akcji na stronie zamówienia sprzedaży. Wszystkie zamówienia sprzedaży, które są tworzone przy włączonym ustawieniu **Włącz kończenie zamówienia**, muszą przejść przez proces finalizowania zamówienia. Ten proces wymusza odczytanie logiki płatności i weryfikacji płatności. Proces przesyłania zamówień może nie tylko służyć egzekwowaniu płatności, ale również wywoływać [funkcje wykrywania oszustw](/dynamics365/unified-operations/retail/set-up-fraud-alerts) skonfigurowane w systemie. Zamówienia, które nie przeszły weryfikacji płatności lub braku oszustwa, są wstrzymywane i nie mogą zostać zwolnione do dalszego przetwarzania (na przykład do pobrania lub wysyłki), dopóki problem powodujący wstrzymanie nie zostanie rozwiązany.
 
-Gdy kanał biura obsługi ma włączone ustawienie **Włącz kończenie zamówienia**, to w sytuacji, gdy po wprowadzeniu pozycji wierszy w zamówieniu sprzedaży użytkownik kanału spróbuje zamknąć formularz zamówienia sprzedaży lub z niego wyjść bez uprzedniego naciśnięcia przycisku **Ukończ**, system wymusza proces finalizowania zamówienia, otwierając stronę podsumowania zamówienia sprzedaży i wymagając, aby użytkownik poprawnie przesłał zamówienie. Jeżeli zamówienia nie można poprawnie przesłać razem z płatnością, użytkownik może za pomocą funkcji [wstrzymań zamówień](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) wstrzymać zamówienie. Jeśli użytkownik próbuje anulować zamówienie, musi to zrobić poprawnie, używając funkcji Anuluj lub Usuń, w zależności od tego, na którą funkcję pozwalają ustawienia zabezpieczeń użytkownika.
+Gdy kanał biura obsługi ma włączone ustawienie **Włącz kończenie zamówienia**, to w sytuacji, gdy po wprowadzeniu pozycji wierszy w zamówieniu sprzedaży użytkownik kanału spróbuje zamknąć formularz zamówienia sprzedaży lub z niego wyjść bez uprzedniego naciśnięcia przycisku **Ukończ**, system wymusza proces finalizowania zamówienia, otwierając stronę podsumowania zamówienia sprzedaży i wymagając, aby użytkownik poprawnie przesłał zamówienie. Jeżeli zamówienia nie można poprawnie przesłać razem z płatnością, użytkownik może za pomocą funkcji [wstrzymań zamówień](/dynamics365/unified-operations/retail/work-with-order-holds) wstrzymać zamówienie. Jeśli użytkownik próbuje anulować zamówienie, musi to zrobić poprawnie, używając funkcji Anuluj lub Usuń, w zależności od tego, na którą funkcję pozwalają ustawienia zabezpieczeń użytkownika.
 
 Jeśli ustawienie **Włącz kończenie zamówienia** jest włączone dla kanału biura obsługi, pole **Stan płatności** będzie śledzone w zamówieniu. System oblicza wartość **Stan płatności** po przesłaniu zamówienia sprzedaży. Tylko zamówienia ze stanem płatności Zatwierdzone mogą przechodzić przez system do kolejnych etapów przetwarzania zamówienia, takich jak pobranie i wysyłka. Jeśli płatności zostaną odrzucone, w szczegółowym stanie zamówienia zostanie włączona flaga **Nie przetwarzaj**. Spowoduje to wstrzymanie zamówienia do czasu rozwiązania problemu z płatnościami.
 
-Ponadto jeśli jest włączone ustawienie **Włącz kończenie zamówienia**, to gdy użytkownicy tworzą zamówienia sprzedaży w trybie wprowadzania pozycji w wierszu, w głównym nagłówku zamówienia sprzedaży będzie dostępne pole **Źródło**. Pole **Źródło** zawiera [kod źródłowy katalogu](https://docs.microsoft.com/dynamics365/unified-operations/retail/call-center-catalogs) w scenariuszach sprzedaży w marketingu bezpośrednim. Ten kod może następnie decydować o cenach specjalnych i promocjach.
+Ponadto jeśli jest włączone ustawienie **Włącz kończenie zamówienia**, to gdy użytkownicy tworzą zamówienia sprzedaży w trybie wprowadzania pozycji w wierszu, w głównym nagłówku zamówienia sprzedaży będzie dostępne pole **Źródło**. Pole **Źródło** zawiera [kod źródłowy katalogu](/dynamics365/unified-operations/retail/call-center-catalogs) w scenariuszach sprzedaży w marketingu bezpośrednim. Ten kod może następnie decydować o cenach specjalnych i promocjach.
 
 Nawet jeśli ustawienie **Włącz kończenie zamówienia** jest wyłączone, użytkownicy nadal mogą zastosować kod źródłowy do zamówienia sprzedaży. Jednak najpierw muszą otworzyć szczegóły nagłówka zamówienia sprzedaży, aby uzyskać dostęp do pola **Źródło**. Innymi słowy wymagane są pewne dodatkowe kliknięcia. Takie samo zachowanie dotyczy funkcji takich jak finalizowanie wysyłki i zamówienia przyspieszone. Funkcje te są dostępne dla wszystkich zamówień tworzonych w biurze obsługi. Jednak gdy jest włączone ustawienie **Włącz kończenie zamówienia**, użytkownicy widzą konfigurację tych funkcji w nagłówku sprzedaży podczas pracy w widoku wprowadzania wierszy. Nie muszą przechodzić do szczegółów nagłówka zamówienia sprzedaży, aby znaleźć odpowiednie ustawienia i pola.
 

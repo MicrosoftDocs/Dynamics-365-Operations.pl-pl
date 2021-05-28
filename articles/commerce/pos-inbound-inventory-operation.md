@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804338"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018961"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Operacja zapasów przychodzących w punkcie sprzedaży
 
@@ -70,7 +70,7 @@ Tworzone zadania wsadowe będą używane do przetwarzania dokumentów, które ni
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Wymaganie wstępne: Dodaj operację przychodzącą do układu ekranu punktu sprzedaży
 
-Zanim organizacja będzie mogła skorzystać z funkcji operacji przychodzących, musi skonfigurować **operację przychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
+Zanim organizacja będzie mogła skorzystać z funkcji operacji przychodzących, musi skonfigurować **operację przychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
 
 ## <a name="overview"></a>Omówienie
 
@@ -159,9 +159,9 @@ W wersji Commerce 10.0.14 lub nowszej użytkownicy mogą uzyskać produkt, któr
 
 Ta funkcja działa tylko dla przyjęcia zamówienia zakupu. Nie można przyjmować towarów w ramach zamówień przeniesienia, jeśli towary nie zostały wcześniej zamówione i wysłane z magazynu wychodzącego.
 
-Użytkownicy nie mogą dodawać nowych produktów do zamówienia zakupu podczas odbierania w punkcie sprzedaży, jeśli [zarządzanie zmianami przepływu pracy](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) jest uruchomione w Commerce Headquarter (HQ). Aby umożliwić zarządzanie zmianami, wszystkie zmiany w zamówieniu zakupu należy najpierw zatwierdzić przed zezwoleniem na odebranie. Ponieważ ten proces umożliwia odbiorcy dodawanie nowych wierszy do zamówienia zakupu, odbieranie nie powiedzie się, jeśli jest włączony przepływ pracy zarządzania zmianami. Jeśli funkcja zarządzania zmianami jest włączona dla wszystkich zamówień zakupu lub dla dostawcy połączonego z zamówieniem zakupu, które w tym momencie odbierane w punkcie sprzedaży, użytkownik nie może dodawać nowych produktów do zamówienia zakupu podczas przyjmowania w punkcie sprzedaży.
+Użytkownicy nie mogą dodawać nowych produktów do zamówienia zakupu podczas odbierania w punkcie sprzedaży, jeśli [zarządzanie zmianami przepływu pracy](../supply-chain/procurement/purchase-order-approval-confirmation.md) jest uruchomione w Commerce Headquarter (HQ). Aby umożliwić zarządzanie zmianami, wszystkie zmiany w zamówieniu zakupu należy najpierw zatwierdzić przed zezwoleniem na odebranie. Ponieważ ten proces umożliwia odbiorcy dodawanie nowych wierszy do zamówienia zakupu, odbieranie nie powiedzie się, jeśli jest włączony przepływ pracy zarządzania zmianami. Jeśli funkcja zarządzania zmianami jest włączona dla wszystkich zamówień zakupu lub dla dostawcy połączonego z zamówieniem zakupu, które w tym momencie odbierane w punkcie sprzedaży, użytkownik nie może dodawać nowych produktów do zamówienia zakupu podczas przyjmowania w punkcie sprzedaży.
 
-Funkcja umożliwiająca dodawanie wierszy nie może być używana jako obejście do przyjmowania dodatkowych ilości produktów już znajdujących się w zamówieniu zakupu. Nadmierne odbieranie jest zarządzane przy użyciu standardowych ustawień [nadwyżki w odbiorze](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) dla wiersza produktu w zamówieniu zakupu.
+Funkcja umożliwiająca dodawanie wierszy nie może być używana jako obejście do przyjmowania dodatkowych ilości produktów już znajdujących się w zamówieniu zakupu. Nadmierne odbieranie jest zarządzane przy użyciu standardowych ustawień [nadwyżki w odbiorze](#over-receiving-validations) dla wiersza produktu w zamówieniu zakupu.
 
 Jeśli jest włączona funkcja **Dodawania wierszy do zamówienia zakupu podczas otrzymywania w punkcie sprzedaży**, a użytkownik odbiera w punkcie w ramach **Operacji przychodzącej**, w przypadku skanowania kodu kreskowego lub numeru produktu, który nie został rozpoznany jako towar w bieżącym zamówieniu zakupu, ale jest rozpoznawany jako prawidłowy towar, użytkownik otrzymuje komunikat dotyczący dodawania towaru do zamówienia zakupu. Jeśli użytkownik doda towar do zamówienia zakupu, ilość wprowadzona w polu **Przyjęcie** jest uważana za zamówioną ilość dla wiersza zamówienia zakupu.
 

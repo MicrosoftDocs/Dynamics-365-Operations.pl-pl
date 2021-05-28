@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68ef15fed1841bcbf006929f3c6441d62798fc8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56d74b6700b48a8c523d02a1affc421ee370215e
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819921"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027753"
 ---
 # <a name="use-one-payment-to-settle-invoices-that-span-multiple-discount-periods"></a>Użyj jednej płatności do rozliczenia faktur obejmujących wiele okresów rabatowych
 
@@ -66,7 +66,7 @@ Jeśli Arnie tworzy arkusz płatności, aby w pełni rozliczyć te faktury 1 lip
 | Zaznaczone i wyróżnione | Normalna            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1000,00                             |                                       | USD      | 990,00           |
 
 ## <a name="partial-settlement-on-june-29"></a>Rozliczenie częściowe 29 czerwca
-Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** Arnie oznacza wszystkie wiersze trzech faktur do rozliczenia. W każdym wierszu wprowadza on kwotę do rozliczenia, zgodnie z instrukcjami odbiorcy. Gdy Arnie zaznacza wiersz, widzi kwotę rabatu dla tego wiersza i pobraną kwotę rabatu gotówkowego. Ponieważ odbiorca płaci pół faktury, Arnie widzi, że wartość w polu **kwoty rabatu gotówkowego** dla faktury FTI 10042 wynosi **20,00**, ale wartość w polu **pobrany rabat gotówkowy** wynosi **10,00**. Kwota płatności wynosi 1485,00.
+Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury. Arnie tworzy płatność dla odbiorcy 4032, a następnie otwiera stronę **rozliczenia transakcji**. Na stronie **rozliczenia transakcji** Arnie oznacza wszystkie wiersze trzech faktur do rozliczenia. W każdym wierszu Arnie wprowadza kwotę do rozliczenia, zgodnie z instrukcjami odbiorcy. Gdy Arnie zaznacza wiersz, Arnie widzi kwotę rabatu dla tego wiersza i pobraną kwotę rabatu gotówkowego. Ponieważ odbiorca płaci pół faktury, Arnie widzi, że wartość w polu **kwoty rabatu gotówkowego** dla faktury FTI 10042 wynosi **20,00**, ale wartość w polu **pobrany rabat gotówkowy** wynosi **10,00**. Kwota płatności wynosi 1485,00.
 
 | Zaznacz                     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Waluta | Kwota do rozliczenia |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -74,11 +74,11 @@ Odbiorca 4032 może zapłacić kwotę częściową, np. połowę każdej faktury
 | Wybrano                 | Normalna            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1000,00                             |                                       | USD      | 495,00           |
 | Zaznaczone i wyróżnione | Normalna            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1000,00                             |                                       | USD      | 490,00           |
 
-Arnie może także wprowadzić ręcznie kwotę płatności 1485,00, zanim otworzy stronę **Rozlicz transakcje**. Jeśli Arnie ręcznie wprowadzi kwotę płatności, a następnie oznaczy wszystkie trzy transakcje, ale nie zmieni wartości w polu **Kwota do rozliczenia** dla każdej transakcji, po zamknięciu strony zobaczy następujący komunikat:
+Arnie może także wprowadzić ręcznie kwotę płatności 1485,00, zanim otworzy stronę **Rozlicz transakcje**. Jeśli Arnie ręcznie wprowadzi kwotę płatności, a następnie oznaczy wszystkie trzy transakcje, ale nie zmieni wartości w polu **Kwota do rozliczenia** dla każdej transakcji, po zamknięciu strony Arnie zobaczy następujący komunikat:
 
 > Suma z zaznaczonych transakcji jest różna od kwoty arkusza. Czy zmienić kwotę arkusza?
 
-Jeśli Arnie chce, aby kwota płatności wynosiła tylko 1485,00, klika **Nie**, a następnie księguje arkusz. Transakcje są rozliczane w następujący sposób:
+Jeśli Arnie chce, aby kwota płatności wynosiła tylko 1485,00, Arnie klika **Nie**, a następnie księguje arkusz. Transakcje są rozliczane w następujący sposób:
 
 1.  Faktura FTI-10040 jest całkowicie rozliczona na kwotę 1,000,00, ponieważ została wprowadzona 15 maja i jest najstarszą fakturą. Rabat gotówkowy nie został pobrany. Pozostała kwota transakcji płatności wynosi 485,00.
 2.  Faktura FTI-10041 nie jest w ogóle rozliczona. Faktury FTI-10041 i FTI 10042 zostały wprowadzone w tym samym dniu. Dla faktury FTI 10041 przysługuje 1% rabatu, a dla faktury FTI 10042 przysługuje 2-procentowy rabat. Ponieważ większy rabat przysługuje za fakturę FTI 10042, pozostała kwota 485,00 jest rozliczana za pomocą faktury FTI 10042.

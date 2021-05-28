@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857280"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018838"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -158,7 +158,7 @@ Szuflady kasowe adresowalne w sieci, drukarki paragonów i terminale płatnicze 
 
 ### <a name="dedicated"></a>Dedykowane
 
-Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Klienci Modern POS systemów Windows i Android zawierają **dedykowane** lub wbudowane stacje sprzętu. Klienci ci mogą komunikować się bezpośrednio z urządzeniami peryferyjnymi za pomocą logiki biznesowej wbudowanej w aplikacje. Aplikacja Android obsługuje tylko urządzenia sieciowe. Aby uzyskać więcej informacji na temat obsługi urządzeń peryferyjnych dla systemu Android, odwiedź artykuł [Konfigurowanie aplikacji POS Hybrid w systemie Android i iOS](./dev-itpro/hybridapp.md).
 
 Aby użyć dedykowanej stacji sprzętowej, przypisz profil sprzętu do kasy, która będzie używać aplikacji Modern POS dla aplikacji Windows lub Android. Następnie utwórz stację sprzętową typu **Dedykowana** dla sklepu, w którym kasa będzie używana. Uruchom Modern POS w trybie bez szuflady i użyj operacji **zarządzania stacjami sprzętowymi**, aby włączyć funkcje stacji sprzętowej, dlatego dedykowana Stacja sprzętowa będzie aktywna domyślnie. Następnie wyloguj się z Modern POS, a następnie zaloguj się ponownie i Otwórz zmianę, a urządzenia peryferyjne skonfigurowane w profilu sprzętu mogą być teraz używane. 
 
@@ -199,7 +199,7 @@ Aby uzyskać więcej informacji, zobacz [Konfiguracja, instalacja i aktywacja Mo
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Instalacja i konfiguracja programu Modern POS dla systemu Android i iOS
 
-W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+W celu uzyskania dalszych informacji, zobacz [Konfigurowanie aplikacji POS Hybrid w systemach Android i iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Instalacja i konfiguracja urządzenia OPOS
 
@@ -494,7 +494,7 @@ Ta konfiguracja jest najbardziej typową konfigurację dla kas w tradycyjnych, s
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS dla systemu Android ze stacją sprzętową z funkcją IPC (wbudowaną)
 
-**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Nowość w 10.0.8** —drukarki sieciowe Epson i kasy połączone z tymi drukarkami za pomocą portu DK są teraz obsługiwane przez program Modern POS dla aplikacji Android. Aby uzyskać szczegółowe informacje, odwiedź artykuł [Konfigurowanie POS Hybrid dla systemu Android i iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Wszystkie urządzenia klienckie programu Modern POS mające ustaloną „wspólną” stację sprzętową z usługami IIS
 
@@ -615,9 +615,12 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu stacji
 | Star         | mPOP     | OPOS      | Połączenie przez Bluetooth |
 | HP           | F7M67AA  | OPOS      | Zasilanie przez USB             |
 
+> [!NOTE]
+> Drukarka Star TSP 100 nie jest obsługiwana w przypadku wbudowanej stacji sprzętowej. W stacji sprzętowej jest używany 64-bitowy proces, który jest niezgodny z istniejącymi sterownikami STAR 100. 
+
 #### <a name="bar-code-scanner"></a>Skaner kodów kreskowych
 
-| Producent  | Model         | Interfejs | Komentarze |
+| Wytwórca  | Model         | Interfejs | Komentarze |
 |---------------|---------------|-----------|----------|
 | Motorola      | DS9208        | OPOS      |          |
 | Honeywell     | 1900          | UWP       |          |

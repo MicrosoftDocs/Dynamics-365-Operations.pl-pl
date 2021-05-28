@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9305e7143bc0a978569d51544a1ae65ee57b3243
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8a24943e69ef285f14d39e6bfd446b0121fc80d8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798820"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020286"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Zarządzanie gotówką podręczną w aplikacji Commerce dla Europy Wschodniej
 
@@ -26,7 +26,7 @@ ms.locfileid: "5798820"
 
 Ten artykuł zawiera informacje dotyczące lokalizacji dla Europy Wschodniej i specyficznej dla branży handlowej.
 
-Zgodnie z wymaganiami dotyczącymi księgowania w krajach Europy Wschodniej operacje kont kasowych można skonfigurować do automatycznego przetwarzania paragonów, dokumentów kasowych i raportów kasowych. Aby uzyskać więcej informacji, zobacz [(EEUR) Konfigurowanie parametrów zarządzania gotówką](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
+Zgodnie z wymaganiami dotyczącymi księgowania w krajach Europy Wschodniej operacje kont kasowych można skonfigurować do automatycznego przetwarzania paragonów, dokumentów kasowych i raportów kasowych. Aby uzyskać więcej informacji, zobacz [(EEUR) Konfigurowanie parametrów zarządzania gotówką](/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Sprzadawcy detaliczni mogą akceptować różne typy płatności w zamian za produkty i usługi, które sprzedają. Jakkolwiek środki pieniężne to najczęściej używana forma płatności, sprzedawcy detaliczni mogą również pobierać płatności w formie czeków, kart lub załączników. W punkcie sprzedaży detalicznej, kasa przetwarza gotówkę, paragony z kart kredytowych i inne płatności.
 
@@ -36,7 +36,7 @@ Przy użyciu zarządzania środkami pieniężnymi w aplikacji Commerce można wy
 - Umożliwia korzystanie z arkuszy kasowych w celu księgowania transakcji kasowych i płatności odbiorcy , które są przyjmowane w punkcie sprzedaży detalicznej.
 - Agregowanie transakcji w wierszu zestawienia podczas księgowania zestawienia. Można agregować przekazywanie pieniędzy do sejfu i banku, transakcje na załącznikach, transakcje usunięcia środków płatniczych, transakcje deklaracji przyjęcia do kasy, transakcje przychodów, transakcje wydatków, płatności odbiorcy, transakcje sprzedaży i transakcji zwrotu.
 
-Wszystkie transakcje, które miały miejsce w module punktu sprzedaży detalicznej POS, są księgowane w arkuszu księgi. Arkusze płatności gotówkowych, arkusze płatności odbiorcy i arkusze finansowe służą do tworzenia i księgowania zestawień. Aby uzyskać więcej informacji, zobacz [Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+Wszystkie transakcje, które miały miejsce w module punktu sprzedaży detalicznej POS, są księgowane w arkuszu księgi. Arkusze płatności gotówkowych, arkusze płatności odbiorcy i arkusze finansowe służą do tworzenia i księgowania zestawień. Aby uzyskać więcej informacji, zobacz [Tworzenie, obliczanie i księgowanie zestawień dla sklepu sieci sprzedaży](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 Na stronie **Zaksięgowane zestawienia** w okienku akcji można wykonać następujące czynności:
 
@@ -47,7 +47,7 @@ Na stronie **Zaksięgowane zestawienia** w okienku akcji można wykonać następ
 
 Przed użyciem zarządzania gotówką, należy wykonać poniższą procedurę konfiguracji:
 
-- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w POS. Aby uzyskać więcej informacji o metodach płatności, zobacz [Metody płatności](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Na stronie **Metody płatności** skonfiguruj metody płatności dla każdego typu płatności akceptowanego przez sprzedawcę detalicznego. Można używać różnych metod płatności do księgowania transakcji w POS. Aby uzyskać więcej informacji o metodach płatności, zobacz [Metody płatności](/dynamics365/unified-operations/retail/payment-methods).
 - Skonfiguruj parametry dla operacji gotówkowych.
 - Ustaw metodę płatności dla płatności gotówką w sklepie.
 

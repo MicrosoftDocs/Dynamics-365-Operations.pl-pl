@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 07d8e740e8f20533272c403446d5e8294c9f37a1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7b99b5f7b5b972d41e0831995bde69e9041369b9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791133"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028018"
 ---
 # <a name="omni-channel-payments-overview"></a>Omówienie płatności wielokanałowych
 
@@ -43,11 +43,11 @@ W tym temacie są omówione płatności wielokanałowe w programie Dynamics 365 
 
 Generalnie termin *płatności wielokanałowe* opisuje możliwość tworzenia zamówienia w jednym kanale i realizacji go w innym kanale. Kluczem do obsługi płatności wielokonałowych jest zachowanie szczegółów płatności wraz z pozostałymi szczegółami zamówienia, a następnie użycie tych szczegółów dotyczących płatności, gdy zamówienie jest przywoływane lub przetwarzane w innym kanale. Klasycznym przykładem jest scenariusz „Kup w trybie online, odbierz w sklepie”. W tym scenariuszu szczegóły dotyczące płatności są dodawane po utworzeniu zamówienia w trybie online. Następnie są one odczytywane w punkcie sprzedaży, aby obciążyć kartę płatności odbiorcy w momencie odbioru. 
 
-Wszystkie scenariusze opisane w tym temacie można zaimplementować przy użyciu standardowego zestawu SDK Płatności dostarczanego z modułem Commerce. [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) stanowi gotową do użycia implementacją wszystkich opisanych w tym temacie scenariuszy. 
+Wszystkie scenariusze opisane w tym temacie można zaimplementować przy użyciu standardowego zestawu SDK Płatności dostarczanego z modułem Commerce. [Łącznik płatności usługi Dynamics 365 dla Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) stanowi gotową do użycia implementacją wszystkich opisanych w tym temacie scenariuszy. 
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
-Każdy scenariusz opisany w tym temacie wymaga łącznika płatności, który obsługuje płatności wielokanałowe. Można również użyć gotowego łącznika Adyen, ponieważ obsługuje on scenariusze udostępniane za pośrednictwem zestawu SDK Płatności. Aby uzyskać więcej informacji na temat implementowania łączników płatności oraz ogólnie o zestawie SDK modułu Retail, odwiedź [stronę główną Podstawowe funkcje handlowe](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Każdy scenariusz opisany w tym temacie wymaga łącznika płatności, który obsługuje płatności wielokanałowe. Można również użyć gotowego łącznika Adyen, ponieważ obsługuje on scenariusze udostępniane za pośrednictwem zestawu SDK Płatności. Aby uzyskać więcej informacji na temat implementowania łączników płatności oraz ogólnie o zestawie SDK modułu Retail, odwiedź [stronę główną Podstawowe funkcje handlowe](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### <a name="supported-versions"></a>Obsługiwane wersje
 
@@ -57,14 +57,14 @@ Funkcje płatności wielokanałowych opisane w tym temacie zostały wydane jako 
 
 Zestaw SDK Płatności jest oparty na dwóch zestawach interfejsów programowania aplikacji (API) dla płatności. Pierwszy zestaw interfejsów API nosi nazwę **iPaymentProcessor**. Jest on używany do implementowania łączników płatności „bez karty”, które mogą być używane w biurach obsługi i na platformie handlu elektronicznego Microsoft Dynamics. Aby uzyskać więcej informacji o interfejsie **iPaymentProcessor**, przeczytaj oficjalny dokument [Implementowanie łącznika płatności i urządzenia płatniczego](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf), w którym są omówione płatności. 
 
-Drugi zestaw interfejsów API nosi nazwę **iNamedRequestHandler**. Obsługuje on implementację integracji płatności typu „z kartą”, które korzystają z terminalu płatności. Aby uzyskać więcej informacji o interfejsie **iNamedRequestHandler**, zobacz temat [Tworzenie integracji płatności dla terminala płatniczego](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
+Drugi zestaw interfejsów API nosi nazwę **iNamedRequestHandler**. Obsługuje on implementację integracji płatności typu „z kartą”, które korzystają z terminalu płatności. Aby uzyskać więcej informacji o interfejsie **iNamedRequestHandler**, zobacz temat [Tworzenie integracji płatności dla terminala płatniczego](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 
 ### <a name="setup-and-configuration"></a>Instalacja i konfiguracja
 
 Wymagane są następujące składniki i kroki konfiguracji:
 
-- **Integracja eCommerce:** integracja z modułem Commerce jest wymagana do obsługi scenariuszy, w których zamówienie pochodzi z witryny handlowej online. Aby uzyskać więcej informacji na temat zestawu SDK handlu elektronicznego modułu Retail, zobacz temat [Zestaw SDK platformy handlu elektronicznego](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). W środowisku demonstracyjnym referencyjna witryna handlowa obsługuje scenariusze płatności wielokanałowych. 
-- **Konfiguracja płatności online:** konfiguracja kanału online musi zawierać łącznik płatności, który został zaktualizowany w celu obsługi płatności wielokanałowych. Alternatywnie można użyć gotowego łącznika płatności. Aby uzyskać informacje o konfigurowaniu łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Oprócz kroków konfiguracji handlu elektronicznego, które opisano w tym temacie, w ustawieniach łącznika Adyen wartość parametru **Zezwalaj na zapisywanie informacji o płatności w handlu elektronicznym** musi zostać zmieniona na **true**. 
+- **Integracja eCommerce:** integracja z modułem Commerce jest wymagana do obsługi scenariuszy, w których zamówienie pochodzi z witryny handlowej online. Aby uzyskać więcej informacji na temat zestawu SDK handlu elektronicznego modułu Retail, zobacz temat [Zestaw SDK platformy handlu elektronicznego](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). W środowisku demonstracyjnym referencyjna witryna handlowa obsługuje scenariusze płatności wielokanałowych. 
+- **Konfiguracja płatności online:** konfiguracja kanału online musi zawierać łącznik płatności, który został zaktualizowany w celu obsługi płatności wielokanałowych. Alternatywnie można użyć gotowego łącznika płatności. Aby uzyskać informacje o konfigurowaniu łącznika płatności Adyen dla sklepów internetowych, zobacz temat [Łącznik płatności Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). Oprócz kroków konfiguracji handlu elektronicznego, które opisano w tym temacie, w ustawieniach łącznika Adyen wartość parametru **Zezwalaj na zapisywanie informacji o płatności w handlu elektronicznym** musi zostać zmieniona na **true**. 
 - **Konfiguracja płatności wielokanałowych:** na zapleczu przejdź do opcji **Sprzedaż detaliczna i komercyjna \> Ustawienia Headquarters \> Parametry \> Wspólne parametry sieci sprzedaży komercyjnej**. Następnie na karcie **Płatności wielokanałowe** zmień ustawienie opcji **Użyj płatności wielokanałowych** na **Tak**. W Commerce w wersji 10.0.12 lub nowszej to ustawienie znajduje się w obszarze roboczym **Zarządzanie funkcjami**. Wybierz funkcję **Płatności wielokanałowe** i kliknij przycisk **Włącz teraz**. 
 - **Usługi płatności:** biuro obsługi używa domyślnego łącznika płatności na stronie **Usługi płatności**, aby przetwarzać płatności. Aby obsługiwać scenariusze takie jak „Kup w biurze obsługi, odbierz w sklepie”, tym domyślnym łącznikiem płatności musi być łącznik płatności Adyen lub łącznik płatności spełniający wymagania dotyczące implementacji płatności wielokanałowych.
 - **Usługa EFT:** płatności za pomocą terminalu płatności muszą być skonfigurowane na skróconej karcie **Usługi EFT** profilu sprzętu. Łącznik Adyen obsługuje gotowe do użytku scenariusze płatności wielokanałowych. Możliwe jest również użycie innych łączników płatności obsługujących interfejs **iNamedRequestHandler**, jeśli obsługują płatności wielokanałowe.
@@ -219,7 +219,7 @@ Niektórych kart nie można używać do płatności wielokanałowych, ponieważ 
 
 ### <a name="using-a-different-card"></a>Użycie innej karty
 
-Odbiorca przychodzący do sklepu po odbiór zamówienia ma możliwość użycia innej karty. Jeśli kasjer zobaczy komunikat **Użyj dostępnej metody płatności** w momencie odbierania zamówienia, może zapytać, czy odbiorca chce skorzystać z tej samej karty. Jeśli odbiorca stracił kartę, która została użyta do utworzenia zamówienia i chce zapłacić za zamówienie inną kartą, kasjer może wybrać opcję **Użyj innej metody płatności**. Jeśli później odbiorca przychodzi ponownie, aby odebrać inne artykuły z tego samego zamówienia i pierwotna autoryzacja karty jest nadal ważna, kasjer może ponownie zapytać, czy odbiorca chce użyć tej karty.
+Odbiorca przychodzący do sklepu po odbiór zamówienia ma możliwość użycia innej karty. Jeśli kasjer zobaczy komunikat **Użyj dostępnej metody płatności** w momencie odbierania zamówienia, kasjer/kasjerka może zapytać, czy odbiorca chce skorzystać z tej samej karty. Jeśli odbiorca stracił kartę, która została użyta do utworzenia zamówienia i chce zapłacić za zamówienie inną kartą, kasjer może wybrać opcję **Użyj innej metody płatności**. Jeśli później odbiorca przychodzi ponownie, aby odebrać inne artykuły z tego samego zamówienia i pierwotna autoryzacja karty jest nadal ważna, kasjer może ponownie zapytać, czy odbiorca chce użyć tej karty.
 
 ### <a name="invalid-authorizations"></a>Nieprawidłowe autoryzacje
 
@@ -231,9 +231,9 @@ W przypadku odbierania zamówienia z więcej niż jedną metodą płatności i w
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-- [Płatności — często zadawane pytania](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Łącznik płatności usługi Dynamics 365 dla Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
+- [Płatności — często zadawane pytania](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Łącznik płatności usługi Dynamics 365 dla Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- [Konfigurowanie BOPIS w środowisku oceny Dynamics 365 Commerce](./cpe-bopis.md)
 
 
 

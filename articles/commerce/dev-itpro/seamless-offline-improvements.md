@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a8eda003e4cd4cf0d43bb07c93bd8d68a2fb9e57
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792964"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019964"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
 
@@ -52,8 +52,8 @@ Parametry rozwiązania Commerce są zazwyczaj buforowane. Po zaktualizowaniu teg
 
 ## <a name="related-topics"></a>Powiązane tematy
 
-- [Funkcjonalność offline punktu sprzedaży (POS)](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
-- [Operacje online i offline w punkcie sprzedaży (POS)](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+- [Funkcjonalność offline punktu sprzedaży (POS)](../pos-offline-functionality.md)
+- [Operacje online i offline w punkcie sprzedaży (POS)](../pos-operations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

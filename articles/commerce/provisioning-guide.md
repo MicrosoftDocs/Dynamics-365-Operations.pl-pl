@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 19cedf01d1b916de785454d55448f41d1f5db1df
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792298"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022429"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -76,7 +76,7 @@ Aby utworzyć nowy projekt w usłudze LCS, należy wykonać następujące kroki.
 
 ### <a name="add-the-azure-connector"></a>Dodawanie łącznika platformy Azure
 
-Aby dodać łącznik Azure Connector do projektu usługi LCS, wykonaj kroki opisane w [Proces przygotowania obsługi Azure Resource Manager (ARM)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding).
+Aby dodać łącznik Azure Connector do projektu usługi LCS, wykonaj kroki opisane w [Proces przygotowania obsługi Azure Resource Manager (ARM)](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md).
 
 ### <a name="deploy-the-environment"></a>Wdrażanie środowiska
 
@@ -180,9 +180,9 @@ Aby kontynuować proces aprowizowania i konfigurowania środowiska oceny usługi
 
 [Środowiska oceny usługi Dynamics 365 Commerce — często zadawane pytania](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (w chmurze)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (w chmurze)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 

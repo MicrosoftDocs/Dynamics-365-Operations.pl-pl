@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9bec213cd4954f69605387ae2801d8af98a8111c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac7eec69bda7ad2fa41a7311a71a969eddeafb6
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791902"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021495"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zarządzanie czasem i frekwencją w module Retail
 
@@ -38,9 +38,9 @@ W tym temacie opisano scenariusze obsługiwane w zakresie zarządzania czasem i 
 
 ### <a name="plan-worker-schedules"></a>Planowanie harmonogramów pracowników
 
-- Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz [Stosowanie profilu poprzez planowanie pracy](https://technet.microsoft.com/library/aa551234.aspx).
+- Zastosuj profil za pomocą planowania pracy. Aby uzyskać więcej informacji, zobacz [Stosowanie profilu poprzez planowanie pracy](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-Uzyskać informacje dotyczące kroków konfiguracji, zobacz [Konfigurowanie modułu Czas i frekwencja](https://technet.microsoft.com/library/aa496971.aspx).
+Uzyskać informacje dotyczące kroków konfiguracji, zobacz [Konfigurowanie modułu Czas i frekwencja](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Konfiguracja usług określonych dla Commerce
 
@@ -135,7 +135,7 @@ Użytkownik usługi Commerce wykonuje procedurę obliczania, zatwierdzania i prz
 - Grupowe wyrejestrowania
 - Rejestrowanie nieobecności
 
-Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](https://technet.microsoft.com/library/aa573180.aspx).
+Aby uzyskać więcej informacji na temat procesu rejestracji czasu i obecności, zobacz [Przetwarzanie rejestracji czasu i frekwencji](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

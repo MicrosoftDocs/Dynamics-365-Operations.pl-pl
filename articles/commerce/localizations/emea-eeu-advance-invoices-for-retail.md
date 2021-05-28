@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7bdd1d99ffbc1112226fd2db168cc5fc61615b9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7771dfb9d9aa6dc87ef9eaee078c45ea66a5e143
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798838"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020294"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Faktury zaliczkowe w rozwiązaniu Commerce dla Europy Wschodniej
 
@@ -30,7 +30,7 @@ W Polsce, na Węgrzech i w Czechach po otrzymaniu od klienta przedpłaty za poś
 
 Gdy faktura za zamówienie sprzedaży jest finalnie księgowana, ostateczny dokument powinien uwzględniać dane faktury zaliczkowej z oznaczeniem wszelkich przedpłat.
 
-Jeśli generujesz zamówienia sprzedaży z modułu Rozrachunki z odbiorcami, należy ręcznie wygenerować faktury zaliczkowe przy użyciu procedury opisanej w temacie [Faktury zaliczkowe dla Europy Wschodniej](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Jeśli generujesz zamówienia sprzedaży z aplikacji POS, system automatycznie wygeneruje i zaksięguje faktury zaliczkowe.
+Jeśli generujesz zamówienia sprzedaży z modułu Rozrachunki z odbiorcami, należy ręcznie wygenerować faktury zaliczkowe przy użyciu procedury opisanej w temacie [Faktury zaliczkowe dla Europy Wschodniej](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Jeśli generujesz zamówienia sprzedaży z aplikacji POS, system automatycznie wygeneruje i zaksięguje faktury zaliczkowe.
 
 ## <a name="supported-scenarios"></a>Obsługiwane scenariusze
 

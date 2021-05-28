@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827351"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028234"
 ---
 # <a name="position-forecasting"></a>Prognozy dotyczące stanowisk
 
@@ -67,9 +67,9 @@ Organizacja Jodi pozwala na odpis za szkolenie w wysokości 5% wynagrodzenia pod
 
 Jodi nie chce, żeby przełożeni zmienili kwotę świadczenia. Dlatego wybiera opcję **Nie zezwalaj na zmiany kosztów** w polu **Zastąpienie stanowiska podlegającego prognozie**. Organizacja chce, żeby ten koszt był równomiernie przypisany do każdego miesiąca. Dlatego Jodi wybiera opcję **Kwartalnie** w polu **Metoda alokacji**. 
 
-Następnie Jodi dodaje wiersz obliczenia, ustawia daty i konto główne oraz wprowadza **5,00** jako wartość procentową. Jej organizacja może przeznaczyć rocznie 5000 USD na to świadczenie. Z tego względu Jodi wprowadza tę kwotę jako roczny limit. 
+Następnie Jodi dodaje wiersz obliczenia, ustawia daty i konto główne oraz wprowadza **5,00** jako wartość procentową. Organizacja może przeznaczyć rocznie 5000 USD na to świadczenie. Z tego względu Jodi wprowadza tę kwotę jako roczny limit. 
 
-Na koniec Jodi dodaje składniki kosztu o typie dochodowym używane jako podstawa obliczania podstawowego wynagrodzenia. Jej składnik kosztu budżetowego jest teraz gotowy do użycia.
+Na koniec Jodi dodaje składniki kosztu o typie dochodowym używane jako podstawa obliczania podstawowego wynagrodzenia. Składnik kosztu budżetowego jest teraz gotowy do użycia.
 
 ### <a name="compensation-groups"></a>Grupy wynagrodzeń
 
@@ -137,7 +137,7 @@ W przypadku zmiany wartości FTE dla stanowiska podlegającego prognozie, wiersz
 
 **Przykład** 
 
-Organizacja rozważa dwie możliwości redukcji kosztów na stanowisku księgowego. Jedna możliwość to likwidacja stanowiska przed końcem roku. Druga to zmiana stanowiska na pół etatu dla całego roku. Brad utworzył stanowisko podlegające prognozie dla istniejącego stanowiska księgowego w scenariuszu bazowym. Kopiuje to bazowe stanowisko podlegające prognozie do scenariusza A, ustawia datę przejścia na emeryturę na 31 maja oblicza ponownie. Następnie Brad kopiuje stanowisko podlegające prognozie do scenariusza B, zmienia wartość FTE na **0,50** i oblicza ponownie. Brad ma teraz trzy wersje, z których każda ma zawiera sumy kosztów dostosowane do jego opcji.
+Organizacja rozważa dwie możliwości redukcji kosztów na stanowisku księgowego. Jedna możliwość to likwidacja stanowiska przed końcem roku. Druga to zmiana stanowiska na pół etatu dla całego roku. Brad utworzył stanowisko podlegające prognozie dla istniejącego stanowiska księgowego w scenariuszu bazowym. Brad kopiuje to bazowe stanowisko podlegające prognozie do scenariusza A, ustawia datę przejścia na emeryturę na 31 maja oblicza ponownie. Następnie Brad kopiuje stanowisko podlegające prognozie do scenariusza B, zmienia wartość FTE na **0,50** i oblicza ponownie. Brad ma teraz trzy wersje, z których każda ma zawiera sumy kosztów dostosowane do opcji.
 
 #### <a name="assigning-a-compensation-group"></a>Przypisywanie grupy wynagrodzeń
 

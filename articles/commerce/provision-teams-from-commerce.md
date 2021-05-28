@@ -2,11 +2,9 @@
 title: Obsługa Microsoft Teams z Dynamics 365 Commerce
 description: W tym temacie opisano sposób inicjowania Microsoft Teams przy użyciu danych organizacyjnych z systemu Dynamics 365 Commerce.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ba7c74942735b723d1015dc4da0068fbb631bc6b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908911"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022453"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Obsługa Microsoft Teams z Dynamics 365 Commerce
 
@@ -75,9 +73,9 @@ Aby przekazać hierarchię organizacyjną Commerce do Teams, wykonaj następują
     
 1. W Commerce przejdź do **Handel detaliczny i inny \> Ustawienia kanału \> Harmonogram integracji Microsoft Teams**.
 1. Wybierz opcję **Pobierz hierarchię określania wartości docelowych**, a następnie wybierz pozycję **Sklepy detaliczne według regionów**, aby pobrać plik z hierarchią organizacyjną z wartościami rozdzielaymi przecinkami (CSV).
-1. Zainstaluj moduł Microsoft Teams PowerShell, wykonać poniższe kroki w [Instalacja Microsoft Teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Zainstaluj moduł Microsoft Teams PowerShell, wykonać poniższe kroki w [Instalacja Microsoft Teams PowerShell](/microsoftteams/teams-powershell-install).
 1. Po wyświetleniu monitu w oknie programu Teams PowerShell zaloguj się, używając konta administratora twojej dzierżawy Azure AD.
-1. Aby przekazać plik CSV dla hierarchii docelowych, wykonaj kroki w temacie [Konfigurowanie hierarchii określania docelowego dla zespołu](https://docs.microsoft.com/microsoftteams/set-up-your-team-hierarchy).
+1. Aby przekazać plik CSV dla hierarchii docelowych, wykonaj kroki w temacie [Konfigurowanie hierarchii określania docelowego dla zespołu](/microsoftteams/set-up-your-team-hierarchy).
 
 ## <a name="verify-that-the-organizational-hierarchy-was-uploaded-to-teams"></a>Sprawdź, czy hierarchia organizacyjna została przekazane do Teams
 

@@ -84,7 +84,7 @@
               href: dev-tools/version-models-build.md
         - name: Integracja danych
           items:
-            - name: Wybieranie strategii integracji danych (import/eksport)
+            - name: Integracja między aplikacjami Finance and Operations i usługami innych firm
               href: data-entities/integration-overview.md
             - name: Dławienie oparte na priorytetach
               hreF: data-entities/priority-based-throttling.md
@@ -126,196 +126,62 @@
                       href: data-entities/tasks/create-record-template-facilitate-data-entry.md
                     - name: Tworzenie rekordów przy użyciu szablonów rekordów
                       href: data-entities/tasks/use-record-template-new-record.md
-                - name: Integracja danych przy użyciu Dataverse
+                - name: Integrator danych
                   items:
-                    - name: Omówienie integracji danych przy użyciu Dataverse
-                      href: data-entities/data-integration-cds.md
-                    - name: Integracja o podwójnym zapisie
+                    - name: Konfigurowanie scenariusza od prospektu do gotówki
                       items:
-                        - name: Strona główna o podwójnym zapisie
-                          href: data-entities/dual-write/dual-write-home-page.md
-                        - name: Nowości i zmiany w podwójnym zapisie
-                          href: data-entities/dual-write/whats-new-dual-write.md
-                        - name: Omówienie podwójnego zapisu
-                          href: data-entities/dual-write/dual-write-overview.md
-                        - name: Konfiguracja podwójnego zapisu
-                          items:
-                            - name: Wymagania systemowe dotyczące podwójnego zapisu
-                              href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Wskazówki dotyczące konfigurowania podwójnego zapisu
-                              href: data-entities/dual-write/connection-setup.md
-                            - name: Zagadnienia dotyczące synchronizacji początkowej
-                              href: data-entities/dual-write/initial-sync-guidance.md
-                            - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
-                              href: data-entities/dual-write/lcs-setup.md
-                            - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
-                              items:
-                                - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
-                                  href: data-entities/dual-write/enable-dual-write.md
-                                - name: Wymagania systemowe i wymagania wstępne
-                                  href: data-entities/dual-write/requirements-and-prerequisites.md
-                                - name: Jak skorzystać z kreatora podwójnego zapisu w celu połączenia środowiska
-                                  href: data-entities/dual-write/link-your-environment.md
-                                - name: Włączenie mapowania jednostek dla podwójnego zapisu
-                                  href: data-entities/dual-write/enable-entity-map.md
-                            - name: Migracja typu danych Waluta na potrzeby podwójnego zapisu
-                              href: data-entities/dual-write/currrency-decimal-places.md
-                            - name: Ustawianie mapowania pól stanu zamówienia sprzedaży
-                              href: data-entities/dual-write/sales-status-map.md
-                            - name: Filtrowanie zamówień międzyfirmowych w celu uniknięcia rekordów Orders i OrderLines
-                              href: data-entities/dual-write/filtering-intercompany-orders.md
-                        - name: Zarządzanie podwójnym zapisem
-                          items:
-                            - name: Dostosowanie mapowania jednostek i pól
-                              href: data-entities/dual-write/customizing-mappings.md
-                            - name: Obsługa wielu map jednostek
-                              href: data-entities/dual-write/multiple-entity-maps.md
-                            - name: Edytuj firmę po konfiguracji podwójnego zapisu
-                              href: data-entities/dual-write/edit-legal-entity.md
-                            - name: Zarządzanie błędami i powiadomienia o alertach
-                              href: data-entities/dual-write/errors-and-alerts.md
-                            - name: Zarządzanie cyklem życia aplikacji
-                              href: data-entities/dual-write/app-lifecycle-management.md
-                        - name: Mapowanie koncepcji między aplikacjami
-                          items:
-                            - name: Zintegrowane dane główne odbiorcy
-                              href: data-entities/dual-write/customer-mapping.md
-                            - name: Integracja dostawcy
-                              items:
-                                - name: Zintegrowane dane główne dostawcy
-                                  href: data-entities/dual-write/vendor-mapping.md
-                                - name: Przełączanie się między projektami dostawcy
-                                  href: data-entities/dual-write/vendor-switch.md
-                            - name: Karty lojalnościowe odbiorców i punkty lojalnościowe
-                              href: data-entities/dual-write/loyalty-mapping.md
-                            - name: Integracja produktów
-                              items:
-                                - name: Ujednolicone działanie produktu
-                                  href: data-entities/dual-write/product-mapping.md
-                                - name: Zintegrowane oddziały i magazyny
-                                  href: data-entities/dual-write/sites-warehouses-mapping.md
-                            - name: Integracja firmy
-                              items:
-                                - name: Pojęcie firmy w usługach Dataverse
-                                  href: data-entities/dual-write/company-data.md
-                                - name: Inicjowanie danych firmy
-                                  href: data-entities/dual-write/bootstrap-company-data.md
-                            - name: Hierarchia organizacyjna w usłudze Dataverse
-                              href: data-entities/dual-write/organization-mapping.md
-                            - name: Dane finansowe i podatkowe
-                              items:
-                                - name: Dostęp do danych finansowych i danych referencyjnych podatku
-                                  href: data-entities/dual-write/finance-tax-reference.md
-                                - name: Zintegrowana księga
-                                  href: data-entities/dual-write/ledger-mapping.md
-                                - name: Zintegrowane dane główne podatków
-                                  href: data-entities/dual-write/tax-mapping.md
-                            - name: Integrowanie zaopatrzenia w Supply Chain Management z Field Service
-                              href: data-entities/dual-write/scm-field-service-procurement.md
-                            - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Supply Chain Management
-                              href: data-entities/dual-write/pricing-engine.md
-                            - name: Prospekt do gotówki w podwójnym zapisie
-                              href: data-entities/dual-write/dual-write-prospect-to-cash.md
-                            - name: Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
-                              href: data-entities/dual-write/commerce-pricing.md
-                            - name: Wewnętrzne składniki majątku do obsługi
-                              href: data-entities/dual-write/in-house-assets.md
-                            - name: Dostępność zapasów
-                              href: data-entities/dual-write/inventory-availability.md
-                            - name: 'Zintegrowany pracownik, praca i stanowisko'
-                              href: data-entities/dual-write/integrated-hr.md
-                            - name: Książka adresowa strony i globalna książka adresowa
-                              href: data-entities/dual-write/party-gab.md
-                            - name: Korzystanie z usługi Power Portal z modelem danych strony
-                              href: data-entities/dual-write/party-gab-portal.md
-                            - name: Uaktualnianie do modelu globalnej książki adresowej i strony
-                              href: data-entities/dual-write/upgrade-party-gab.md
-                            - name: Integracja uwag
-                              href: data-entities/dual-write/notes-integration.md
-                            - name: Odwołanie do mapowania
-                              href: data-entities/dual-write/mapping-reference.md
-                        - name: Obsługa podwójnego zapisu
-                          items:
-                            - name: Obsługa rozwiązań Field Service i Project Service Automation
-                              href: data-entities/dual-write/field-service-project-service-automation.md
-                            - name: Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
-                              href: data-entities/dual-write/migrate-prospect-to-cash.md
-                            - name: Rozwiązywanie problemów
-                              items:
-                                - name: Sprawdzenie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
-                                  href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                                - name: Rozwiązywanie problemów podczas konfiguracji początkowej
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                                - name: Rozwiązywanie problemów podczas synchronizacji początkowej
-                                  href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                                - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
-                                  href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                                - name: Rozwiązywanie problemów z synchronizacją na żywo
-                                  href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                                - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
-                                  href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Rozwiązywanie problemów z aktualizacjami aplikacji Finance and Operations
-                                  href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                                - name: Rozwiązywanie ogólnych problemów
-                                  href: data-entities/dual-write/dual-write-troubleshooting.md
-                        - name: Często zadawane pytania na temat podwójnego zapisu
-                          href: data-entities/dual-write/dual-write-faq.md
-                    - name: Integracja z platformą Power Platform
+                        - name: Od prospektu do gotówki
+                          href: ../../supply-chain/sales-marketing/prospect-to-cash.md
+                        - name: Synchronizowanie kont bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
+                          href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
+                        - name: Synchronizowanie produktów bezpośrednio z rozwiązania Finance and Operations do produktów bezpośrednio w rozwiązaniu Sales
+                          href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
+                        - name: Synchronizowanie osób kontaktowych bezpośrednio z rozwiązania Sales do osób kontaktowych lub odbiorców w rozwiązaniu Finance and Operations
+                          href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
+                        - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
+                          href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
+                        - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniami Sales i Finance and Operations
+                          href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
+                        - name: Synchronizowanie nagłówków i wierszy faktur bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales
+                          href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
+                    - name: Konfigurowanie integracji z rozwiązaniem Field Service
                       items:
-                        - name: Konfigurowanie scenariusza od prospektu do gotówki
-                          items:
-                            - name: Od prospektu do gotówki
-                              href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                            - name: Synchronizowanie kont bezpośrednio z rozwiązania Sales do odbiorców w rozwiązaniu Finance and Operations
-                              href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                            - name: Synchronizowanie produktów bezpośrednio z rozwiązania Finance and Operations do produktów bezpośrednio w rozwiązaniu Sales
-                              href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                            - name: Synchronizowanie osób kontaktowych bezpośrednio z rozwiązania Sales do osób kontaktowych lub odbiorców w rozwiązaniu Finance and Operations
-                              href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                            - name: Synchronizowanie nagłówków i wierszy ofert sprzedaży bezpośrednio z rozwiązania Sales do rozwiązania Finance and Operations
-                              href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                            - name: Synchronizacja zamówień sprzedaży bezpośrednio między rozwiązaniami Sales i Finance and Operations
-                              href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                            - name: Synchronizowanie nagłówków i wierszy faktur bezpośrednio z rozwiązania Finance and Operations do rozwiązania Sales
-                              href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-                        - name: Konfigurowanie integracji z rozwiązaniem Field Service
-                          items:
-                            - name: Omówienie konfigurowania integracji z rozwiązaniem Field Service
-                              href: ../../supply-chain/sales-marketing/field-service.md
-                            - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
-                              href: ../../supply-chain/sales-marketing/field-service-product.md
-                            - name: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations
-                              href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                            - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
-                              href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                            - name: Synchronizowanie przesunięć magazynowych i korekt z rozwiązania Field Service do rozwiązania Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                            - name: Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                            - name: Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                            - name: Synchronizowanie listy projektów z rozwiązania Finance and Operations do rozwiązania Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                            - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
-                              href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                            - name: Synchronizowanie zleceń pracy z projektem z rozwiązania Field Service do rozwiązania Finance and Operations
-                              href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
-                        - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
-                          items:
-                            - name: Omówienie rozwiązania Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-integration
-                            - name: Parametry integracji z rozwiązaniem Project Service Automation
-                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
-                            - name: Synchronizowanie projektów i umów dotyczących projektów
-                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
-                            - name: Synchronizowanie zadań projektu
-                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
-                            - name: Synchronizowanie kategorii wydatków projektu
-                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
-                            - name: Synchronizowanie oszacowań projektu z prognozami projektu
-                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
-                            - name: Synchronizowanie wartości rzeczywistych projektu z arkuszem integracji projektu
-                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
+                        - name: Omówienie konfigurowania integracji z rozwiązaniem Field Service
+                          href: ../../supply-chain/sales-marketing/field-service.md
+                        - name: Synchronizowanie produktów w rozwiązaniu Finance and Operations z produktami w rozwiązaniu Field Service
+                          href: ../../supply-chain/sales-marketing/field-service-product.md
+                        - name: Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Finance and Operations
+                          href: ../../supply-chain/sales-marketing/field-service-work-order.md
+                        - name: Synchronizowanie faktur dotyczących umowy w rozwiązaniu Field Service z fakturami niezależnymi w rozwiązaniu Finance and Operations
+                          href: ../../supply-chain/sales-marketing/field-service-invoice.md
+                        - name: Synchronizowanie przesunięć magazynowych i korekt z rozwiązania Field Service do rozwiązania Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
+                        - name: Synchronizowanie informacji na poziomie zapasów z rozwiązania Finance and Operations do rozwiązania Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
+                        - name: Synchronizowanie produktów z jednostką magazynową z rozwiązania Finance and Operations do rozwiązania Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
+                        - name: Synchronizowanie listy projektów z rozwiązania Finance and Operations do rozwiązania Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-project-list.md
+                        - name: Synchronizowanie magazynów z rozwiązania Finance and Operations do rozwiązania Field Service
+                          href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
+                        - name: Synchronizowanie zleceń pracy z projektem z rozwiązania Field Service do rozwiązania Finance and Operations
+                          href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
+                    - name: Konfigurowanie integracji z rozwiązaniem Project Service Automation
+                      items:
+                        - name: Omówienie rozwiązania Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-integration
+                        - name: Parametry integracji z rozwiązaniem Project Service Automation
+                          href: /dynamics365/project-operations/prod-pma/PSA-parameters
+                        - name: Synchronizowanie projektów i umów dotyczących projektów
+                          href: /dynamics365/project-operations/prod-pma/project-contracts-templates
+                        - name: Synchronizowanie zadań projektu
+                          href: /dynamics365/project-operations/prod-pma/project-tasks-template
+                        - name: Synchronizowanie kategorii wydatków projektu
+                          href: /dynamics365/project-operations/prod-pma/project-categories-templates
+                        - name: Synchronizowanie oszacowań projektu z prognozami projektu
+                          href: /dynamics365/project-operations/prod-pma/project-estimates-templates
+                        - name: Synchronizowanie wartości rzeczywistych projektu z arkuszem integracji projektu
+                          href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Korzystanie z zewnętrznych usług sieci web
               href: data-entities/consume-external-web-service.md
             - name: Obsługa wiadomości elektronicznych
@@ -496,6 +362,8 @@
                       href: deployment/updateenvironment-newinfrastructure.md
                     - name: Rozwiązywanie problemów ze środowiskami wdrażanymi w ramach wdrożenia samoobsługowego
                       href: deployment/troubleshoot-newinfrastructure.md
+                    - name: Planowana konserwacja w środowiskach samoobsługowych — często zadawane pytania
+                      href: deployment/plannedmaintenance-selfservice.md
                 - name: Przygotowywanie obsługi Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute i Finance and Operations
@@ -1150,8 +1018,140 @@
           items:
             - name: Integracja aplikacji Microsoft Power Platform z aplikacją Finance and Operations
               href: power-platform/overview.md
+            - name: Podwójny zapis
+              items:
+                - name: Strona główna o podwójnym zapisie
+                  href: data-entities/dual-write/dual-write-home-page.md
+                - name: Nowości i zmiany w podwójnym zapisie
+                  href: data-entities/dual-write/whats-new-dual-write.md
+                - name: Omówienie podwójnego zapisu
+                  href: data-entities/dual-write/dual-write-overview.md
+                - name: Konfiguracja podwójnego zapisu
+                  items:
+                    - name: Wymagania systemowe dotyczące podwójnego zapisu
+                      href: data-entities/dual-write/dual-write-system-req.md
+                    - name: Wskazówki dotyczące konfigurowania podwójnego zapisu
+                      href: data-entities/dual-write/connection-setup.md
+                    - name: Zagadnienia dotyczące synchronizacji początkowej
+                      href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
+                      href: data-entities/dual-write/lcs-setup.md
+                    - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
+                      items:
+                        - name: Włączanie podwójnego zapisu dla istniejących aplikacji Finance and Operations
+                          href: data-entities/dual-write/enable-dual-write.md
+                        - name: Wymagania systemowe i wymagania wstępne
+                          href: data-entities/dual-write/requirements-and-prerequisites.md
+                        - name: Jak skorzystać z kreatora podwójnego zapisu w celu połączenia środowiska
+                          href: data-entities/dual-write/link-your-environment.md
+                        - name: Włączenie mapowania jednostek dla podwójnego zapisu
+                          href: data-entities/dual-write/enable-entity-map.md
+                    - name: Migracja typu danych Waluta na potrzeby podwójnego zapisu
+                      href: data-entities/dual-write/currrency-decimal-places.md
+                    - name: Ustawianie mapowania pól stanu zamówienia sprzedaży
+                      href: data-entities/dual-write/sales-status-map.md
+                    - name: Filtrowanie zamówień międzyfirmowych w celu uniknięcia rekordów Orders i OrderLines
+                      href: data-entities/dual-write/filtering-intercompany-orders.md
+                - name: Zarządzanie podwójnym zapisem
+                  items:
+                    - name: Dostosowanie mapowania jednostek i pól
+                      href: data-entities/dual-write/customizing-mappings.md
+                    - name: Obsługa wielu map jednostek
+                      href: data-entities/dual-write/multiple-entity-maps.md
+                    - name: Edytuj firmę po konfiguracji podwójnego zapisu
+                      href: data-entities/dual-write/edit-legal-entity.md
+                    - name: Zarządzanie błędami i powiadomienia o alertach
+                      href: data-entities/dual-write/errors-and-alerts.md
+                    - name: Zarządzanie cyklem życia aplikacji
+                      href: data-entities/dual-write/app-lifecycle-management.md
+                - name: Mapowanie koncepcji między aplikacjami
+                  items:
+                    - name: Zintegrowane dane główne odbiorcy
+                      href: data-entities/dual-write/customer-mapping.md
+                    - name: Integracja dostawcy
+                      items:
+                        - name: Zintegrowane dane główne dostawcy
+                          href: data-entities/dual-write/vendor-mapping.md
+                        - name: Przełączanie się między projektami dostawcy
+                          href: data-entities/dual-write/vendor-switch.md
+                    - name: Karty lojalnościowe odbiorców i punkty lojalnościowe
+                      href: data-entities/dual-write/loyalty-mapping.md
+                    - name: Integracja produktów
+                      items:
+                        - name: Ujednolicone działanie produktu
+                          href: data-entities/dual-write/product-mapping.md
+                        - name: Zintegrowane oddziały i magazyny
+                          href: data-entities/dual-write/sites-warehouses-mapping.md
+                    - name: Integracja firmy
+                      items:
+                        - name: Pojęcie firmy w usługach Dataverse
+                          href: data-entities/dual-write/company-data.md
+                        - name: Inicjowanie danych firmy
+                          href: data-entities/dual-write/bootstrap-company-data.md
+                    - name: Hierarchia organizacyjna w usłudze Dataverse
+                      href: data-entities/dual-write/organization-mapping.md
+                    - name: Dane finansowe i podatkowe
+                      items:
+                        - name: Dostęp do danych finansowych i danych referencyjnych podatku
+                          href: data-entities/dual-write/finance-tax-reference.md
+                        - name: Zintegrowana księga
+                          href: data-entities/dual-write/ledger-mapping.md
+                        - name: Zintegrowane dane główne podatków
+                          href: data-entities/dual-write/tax-mapping.md
+                    - name: Integrowanie zaopatrzenia w Supply Chain Management z Field Service
+                      href: data-entities/dual-write/scm-field-service-procurement.md
+                    - name: Synchronizacja na żądanie z aparatem kalkulacji cen rozwiązania Supply Chain Management
+                      href: data-entities/dual-write/pricing-engine.md
+                    - name: Prospekt do gotówki w podwójnym zapisie
+                      href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                    - name: Używanie aparatu kalkulacji cen Dynamics 365 Commerce z rozwiązaniem Dynamics 365 Sales
+                      href: data-entities/dual-write/commerce-pricing.md
+                    - name: Wewnętrzne składniki majątku do obsługi
+                      href: data-entities/dual-write/in-house-assets.md
+                    - name: Dostępność zapasów
+                      href: data-entities/dual-write/inventory-availability.md
+                    - name: 'Zintegrowany pracownik, praca i stanowisko'
+                      href: data-entities/dual-write/integrated-hr.md
+                    - name: Książka adresowa strony i globalna książka adresowa
+                      href: data-entities/dual-write/party-gab.md
+                    - name: Korzystanie z usługi Power Portal z modelem danych strony
+                      href: data-entities/dual-write/party-gab-portal.md
+                    - name: Uaktualnianie do modelu globalnej książki adresowej i strony
+                      href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Integracja uwag
+                      href: data-entities/dual-write/notes-integration.md
+                    - name: Odwołanie do mapowania
+                      href: data-entities/dual-write/mapping-reference.md
+                - name: Obsługa podwójnego zapisu
+                  items:
+                    - name: Obsługa rozwiązań Field Service i Project Service Automation
+                      href: data-entities/dual-write/field-service-project-service-automation.md
+                    - name: Migracja danych prospektu do gotówki z Integratora danych do podwójnego zapisu
+                      href: data-entities/dual-write/migrate-prospect-to-cash.md
+                    - name: Rozwiązywanie problemów
+                      items:
+                        - name: Sprawdzenie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Rozwiązywanie problemów podczas konfiguracji początkowej
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Rozwiązywanie problemów podczas synchronizacji początkowej
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Rozwiązywanie problemów z synchronizacją na żywo
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Rozwiązywanie problemów z aktualizacjami aplikacji Finance and Operations
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Rozwiązywanie ogólnych problemów
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                - name: Często zadawane pytania na temat podwójnego zapisu
+                  href: data-entities/dual-write/dual-write-faq.md
             - name: Jednostki wirtualne
               items:
+                - name: Omówienie jednostek wirtualnych
+                  href: power-platform/virtual-entities-overview.md
                 - name: Modelowanie jednostek
                   href: power-platform/entity-modeling.md
                 - name: Zarządzanie cyklem życia aplikacji

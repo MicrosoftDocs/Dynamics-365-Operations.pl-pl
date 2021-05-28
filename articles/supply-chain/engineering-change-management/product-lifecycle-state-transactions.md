@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 421fae6eab20eea50b9ce677a1ae7993add6cb93
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8bb3d5848b7e2c50a8fdaba1c6a1a7c0087d1390
+ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842064"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6016963"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Stany cyklu życia produktu i transakcje
 
@@ -74,5 +74,24 @@ Następujące pola są dostępne dla każdego procesu wymienionego na skróconej
 
 Jeśli dodajesz więcej reguł stanu cyklu życia jako dostosowanie, możesz wyświetlić te reguły w interfejsie użytkownika (UI), wybierając **Odśwież procesy** w górnym panelu. Przycisk **Odśwież procesy** jest dostępny tylko dla administratorów.
 
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>Stany cyklu życia zwolnionych produktów i wariantów produktu
+
+W przypadku produktu, który ma warianty (główne i warianty), produkt (główny) będzie miał stan cyklu życia, a każdy z wariantów może mieć również inny stan cyklu życia.
+
+W przypadku określonych procesów, jeśli wariant lub produkt jest zablokowany, proces również zostanie zablokowany. W szczególności w celu określenia, czy proces jest zablokowany, system dokona następujących kontroli:
+
+- Dla produktów sterowanych przez inżynierię:
+  - Jeśli bieżąca wersja inżynieryjna jest zablokowana, proces należy zablokować.
+  - Jeśli bieżący wariant jest zablokowany, zablokuj proces.
+  - Jeśli uwolniony produkt jest zablokowany, zablokuj proces.
+- W przypadku produktów standardowych:
+  - Jeśli bieżący wariant jest zablokowany, zablokuj proces.
+  - Jeśli uwolniony produkt jest zablokowany, zablokuj proces.
+
+Przypuśćmy na przykład, że użytkownik chce sprzedać tylko jeden wariant (czerwony) danego produktu (t-shirt) i zablokować sprzedaż wszystkich innych wariantów. Można zaimplementować tę konfigurację, używając następującej konfiguracji:
+
+- Przypisz produkt do stanu cyklu życia, który umożliwia ten proces. Na przykład przypisz produkt w koszulce do stanu Cyklu życia — *Sprzedaż*, co pozwala na proces biznesowy *zamówienia sprzedaży*.
+- Przypisz wariantowi przeznaczonemu do sprzedaży stan cyklu życia, który zezwala na proces. Na przykład czerwony wariant oznacza stan cyklu życia *sprzedaży*.
+- Wszystkie pozostałe warianty zostaną przypisane do innego stanu cyklu życia, w którym proces jest zablokowany. Na przykład przypisz wariant biały (i wszystkie inne warianty) stan cyklu życia *Nie można sprzedać*, co blokuje proces biznesowy *Zamówienie sprzedaży*.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

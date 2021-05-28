@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961712"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015908"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Planowanie główne za pomocą umów handlowych zakupu
 
@@ -67,7 +67,7 @@ Po przygotowaniu systemu zgodnie z opisem w poprzedniej sekcji należy wykonać 
 1. Powtórz tę procedurę dla każdego odpowiedniego produktu.
 
 > [!NOTE]
-> Optymalizacja planowania obsługuje wielowalutowe umowy handlowe. Podczas wyszukiwania umowy handlowej przy użyciu opcji **Najniższa cena jednostkowa** system uwzględni wiersze umowy handlowej zakupu z różnymi walutami, pod warunkiem że między walutą wiersza umowy handlowej a walutą rozliczeniową firmy został zdefiniowany kurs wymiany. W przeciwnym razie wiersz umowy handlowej będzie ignorowany i podczas planowania głównego będzie wyświetlany błąd. Dlatego planowanie główne będzie zawierać informacje ze wszystkich odpowiednich wierszy umowy handlowej zakupu, w których ceny mogą być konwertowane na walutę rozliczeniową.
+> Optymalizacja planowania obsługuje wielowalutowe umowy handlowe. Podczas wyszukiwania umowy handlowej przy użyciu opcji **Najniższa cena jednostkowa** system uwzględni wiersze umowy handlowej zakupu z różnymi walutami, pod warunkiem że między walutą wiersza umowy handlowej a walutą rozliczeniową firmy został zdefiniowany kurs wymiany. W przeciwnym razie wiersz umowy handlowej będzie ignorowany i podczas planowania głównego będzie wyświetlany błąd. Dlatego planowanie główne będzie zawierać informacje ze wszystkich odpowiednich wierszy umowy handlowej zakupu, w których ceny mogą być konwertowane na walutę rozliczeniową. Należy pamiętać, że podczas konwersji cen wiersza umowy handlowej nie będą brane pod uwagę reguły zaokrąglania.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Przykłady zastosowania Optymalizacji planowania w odnalezieniu dostawcy i czasu realizacji
 

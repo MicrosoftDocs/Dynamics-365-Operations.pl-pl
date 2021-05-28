@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791085"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022479"
 ---
 # <a name="e-commerce-site-overview"></a>Omówienie witryny handlu elektronicznego
 
@@ -37,11 +37,11 @@ W aplikacji Dynamics 365 Commerce używasz kanału sklepu internetowego w celu u
 
 Aby rozpocząć pracę w aplikacji Dynamics 365 Commerce, wystarczy skonfigurować tylko jeden kanał sklepu internetowego. Jednak pojedyncza witryna handlu elektronicznego może zapewnić środowisko online dla wielu sklepów internetowych. Na przykład jeśli wiele sklepów internetowych skonfigurowano do obsługi różnych regionów geograficznych, pojedynczy zestaw stron handlu elektronicznego może służyć do zapewnienia unikatowych środowisk definiowanych przez poszczególne sklepy. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania witryny do obsługi wielu sklepów internetowych, zobacz [Kojarzenie witryny online z kanałem](associate-site-online-store.md).
 
-Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Po skonfigurowaniu sklepu internetowego można go skojarzyć z witryną Dynamics 365 Commerce, która będzie służyć jako witryna sklepowa. Aby uzyskać więcej informacji o sklepach internetowych i sposobie ich konfigurowania, zobacz [Konfigurowanie sklepów internetowych](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Wdrażanie nowej dzierżawy handlu elektronicznego
 
-Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
+Podczas inicjowania witryny handlu elektronicznego wyświetlany jest monit o podanie nazwy domeny. Więcej informacji o domenach w Commerce znajduje się w artykułach [Konfigurowanie nazwy domeny](configure-your-domain-name.md) i [Domeny w Dynamics 365 Commerce](domains-commerce.md). Aby wdrożyć nową dzierżawę handlu elektronicznego przez używanie [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), wykonaj kroki w artykule [Wdrażanie nowej dzierżawy handlu elektronicznego](deploy-ecommerce-site.md). Po skonfigurowaniu dzierżawy handlu elektronicznego w LCS zostanie podanych link do konstruktora witryn Commerce. Możesz użyć konstruktora witryn Commerce do inicjalizacji i konfigurowania witryn handlu elektronicznego.
 
 ## <a name="initialize-your-e-commerce-site"></a>Inicjalizacja witryny handlu elektronicznego
 

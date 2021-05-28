@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795652"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022738"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Operacja zapasów wychodzących w punkcie sprzedaży
 
@@ -71,7 +71,7 @@ Tworzone zadania wsadowe będą używane do przetwarzania dokumentów, które ni
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Wymaganie wstępne: Dodaj operację wychodzącą do układu ekranu punktu sprzedaży
 
-Zanim organizacja będzie mogła skorzystać z funkcji operacji wychodzących, musi skonfigurować **operację wychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
+Zanim organizacja będzie mogła skorzystać z funkcji operacji wychodzących, musi skonfigurować **operację wychodzącą** w punkcie sprzedaży w jednym lub kilku [układach ekranu punktu sprzedaży](/dynamics365/unified-operations/retail/pos-screen-layouts). Przed wdrożeniem nowej operacji w środowisku produkcyjnym należy upewnić się, że została ona gruntownie przetestowana i przeszkolić użytkowników do jej używania.
 
 ## <a name="overview"></a>Omówienie
 

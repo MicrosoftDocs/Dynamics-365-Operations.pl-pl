@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792878"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019940"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Cyfrowe karty upominkowe w handlu elektronicznym
 
@@ -51,12 +51,12 @@ Produkty z cyfrowymi kartami upominkowymi należy skonfigurować w centrali Comm
 
     ![Pole produktu karty upominkowej w programie Commerce Headquarters](./media/PostGiftcard.png)
 
-- Jeśli karta upominkowa musi obsługiwać wiele wstępnie zdefiniowanych kwot (na przykład $25, $50, i $100), do skonfigurowania tych wstępnie zdefiniowanych kwot należy użyć wymiaru **Rozmiar**. Każda wstępnie zdefiniowana kwota będzie wariantem. Aby uzyskać więcej informacji, zobacz temat [Wymiary produktów](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Jeśli karta upominkowa musi obsługiwać wiele wstępnie zdefiniowanych kwot (na przykład $25, $50, i $100), do skonfigurowania tych wstępnie zdefiniowanych kwot należy użyć wymiaru **Rozmiar**. Każda wstępnie zdefiniowana kwota będzie wariantem. Aby uzyskać więcej informacji, zobacz temat [Wymiary produktów](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Jeśli klienci muszą mieć możliwość określenia niestandardowej kwoty karty podarunkowej, najpierw skonfiguruj wariant, który pozwala na niestandardową kwotę. Następnie otwórz produkt ze strony **Kategorii Zwolnione produkty**, a następnie na skróconej karcie **Commerce** ustaw w polu **Klucz w cenie** wartość **Musi być wejściowa nowa cena**, tak jak pokazano na poniższej ilustracji. To ustawienie zapewnia klientom możliwość wprowadzenia ceny podczas przeglądania produktu na PDP.
 
     ![Klucz w polu ceny w Commerce headquarters](./media/KeyInPrice.png)
 
-- Jako tryb dostawy cyfrowych kart upominkowych należy ustawić wartość **Elektroniczna**. Na stronie **Tryby dostawy** (**Handel detaliczny i inny \> Ustawienia kanału \> Metody dostawy**) wybierz **Elektroniczną** tryb dostawy w okienku listy, a następnie dodaj do siatki produkt cyfrowych kart upominkowych na skróconej karcie **Produkty**, tak jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz temat [Ustaw metody dostawy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Jako tryb dostawy cyfrowych kart upominkowych należy ustawić wartość **Elektroniczna**. Na stronie **Tryby dostawy** (**Handel detaliczny i inny \> Ustawienia kanału \> Metody dostawy**) wybierz **Elektroniczną** tryb dostawy w okienku listy, a następnie dodaj do siatki produkt cyfrowych kart upominkowych na skróconej karcie **Produkty**, tak jak pokazano na poniższej ilustracji. Aby uzyskać więcej informacji, zobacz temat [Ustaw metody dostawy](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Cyfrowe karty upominkowe na stronie Tryb dostawy w Commerce headquarters](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Aby skonfigurować niestandardową kwotę dla cyfrowej karty upominkowej w narz�
 
 [Tworzenie nowego produktu w programie Commerce](create-new-product-commerce.md)
 
-[Ustaw metody dostawy](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Ustaw metody dostawy](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Wymiary produktu](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Wymiary produktu](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [Konfigurowanie profilu powiadomienia](email-notification-profiles.md)
 

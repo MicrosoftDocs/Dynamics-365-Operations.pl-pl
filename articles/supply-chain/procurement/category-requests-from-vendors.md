@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938529"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015958"
 ---
 # <a name="category-requests-from-vendors"></a>Wnioski o nadanie kategorii od dostawców
 
@@ -36,10 +36,7 @@ Po włączeniu tej funkcji nadal można ręcznie dodawać kategorie zaopatrzenia
 
 Aby dostawca mógł wykonywać działania na wnioskach o nadanie kategorii, musi mu zostać skonfigurowany portal współpracy z dostawcami.
 
-Dostawca musi mieć co najmniej jednego użytkownika portalu współpracy z dostawcami. Tylko użytkownicy dostawcy, którzy mają jedną lub obie z następujących ról zabezpieczeń, mogą tworzyć i przesyłać wnioski o nadanie kategorii:
-
-- Osoba kontaktowa dostawcy (zewnętrzna)
-- Administrator dostawcy (zewnętrzny)
+Dostawca musi mieć co najmniej jednego użytkownika portalu współpracy z dostawcami. Tylko użytkownicy dostawcy z rolą zabezpieczeń *Administrator dostawcy (zewnętrzny)* mogą tworzyć i przesyłać żądania kategorii.
 
 Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie i obsługa współpracy z dostawcami](set-up-maintain-vendor-collaboration.md).
 

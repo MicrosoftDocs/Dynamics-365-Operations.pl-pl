@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835154"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027535"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Rozlicz częściową płatność przed datą rabatu z płatnością końcową po dacie rabatu
 
@@ -38,7 +38,7 @@ Firma Fabrikam sprzedaje towary odbiorcy 4027. Fabrikam oferuje rabat gotówkowy
 | FTI-10020 | Faktura          | 6/25/2015 | 10020   | 1000,00                             |                                       | 1000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Częściowe rozliczenie przed zakończeniem pierwszego okresu rabatu gotówkowego
-2 lipca odbiorca 4027 dokonuje częściowej płatności faktury na kwotę 297,00. Płatność uprawnia do podjęcia rabatu gotówkowego, ponieważ firma Fabrikam oferuje rabaty gotówkowe dla częściowych zapłat, a częściowa płatność zostanie dokonana w okresie rabatu gotówkowego. Dlatego odbiorca 4027 podejmuje rabat gotówkowy o wartości 3,00. Arnie rejestruje płatność dla odbiorcy 4027 za pomocą arkusza płatności. Arnie otwiera stronę **Rozliczenia transakcji**, aby oznaczyć fakturę do rozliczenia.
+2 lipca odbiorca 4027 dokonuje częściowej płatności faktury na kwotę 297,00. Płatność uprawnia do podjęcia rabatu gotówkowego, ponieważ firma Fabrikam oferuje rabaty gotówkowe dla częściowych zapłat, a częściowa płatność zostanie dokonana w okresie rabatu gotówkowego. Dlatego odbiorca 4027 podejmuje rabat gotówkowy o wartości 3,00. Arnie rejestruje płatność dla odbiorcy 4027 za pomocą arkusza płatności. Arnie otwiera stronę **Rozliczenia transakcji**, dzięki czemu Arnie może oznaczyć fakturę do rozliczenia.
 
 | Zaznacz     | Użyj rabatu gotówkowego | Załącznik   | Konto | Data      | Data wymagalności  | Faktura | Kwota debetu w walucie transakcji | Waluta | Kwota do rozliczenia |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
@@ -95,7 +95,7 @@ Informacje o rabacie pojawiają się w dolnej części strony **Rozliczanie otwa
 | Pobrany rabat gotówkowy          | 3,00      |
 | Kwota rabatu gotówkowego do pobrania | 7,00      |
 
-Arnie zmienia wartość w polu **Użyj rabatu gotówkowego** z powrotem na **Normalny**, ponieważ nie zezwala temu odbiorcy na podjęcie pozostałego rabatu gotówkowego w kwocie 7.00. Następnie Arnie księguje płatność. Gdy Arnie otwiera stronę **Transakcje odbiorcy**, stwierdza, że faktura ma saldo 0,00. Stwierdza też, że istnieją dwie płatności. Jedna płatność na kwotę 297,00 z rabatem gotówkowym 3,00 i druga na kwotę 700,00.
+Arnie zmienia wartość w polu **Użyj rabatu gotówkowego** z powrotem na **Normalny**, ponieważ Arnie nie pozwala temu klientowi wziąć pozostałego rabatu gotówkowego w wysokości 7,00. Następnie Arnie księguje płatność. Gdy Arnie otwiera stronę **Transakcje odbiorcy**, stwierdza, że faktura ma saldo 0,00. Istnieją dwie płatności. Jedna płatność na kwotę 297,00 z rabatem gotówkowym 3,00 i druga na kwotę 700,00.
 
 | Załącznik    | Typ transakcji | Data      | Faktura | Kwota debetu w walucie transakcji | Kwota kredytu w walucie transakcji | Saldo | Waluta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

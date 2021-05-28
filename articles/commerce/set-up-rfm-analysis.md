@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0eece0678335caa789f0b2c4a324deab6832b53c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f1f91a67ebac212f72b5524723ec0b8b4e0e3e99
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795484"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028282"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Konfigurowanie analizy RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężnej)
 
@@ -33,13 +33,13 @@ Analiza RFM (wg daty ostatniego zakupu, częstotliwości i wartości pieniężne
 
 - Pierwsza wartość to ocena odbiorcy według daty ostatniego zakupu.
 - Druga wartość to ocena częstotliwości odbiorcy, czyli jak często odbiorca dokonuje zakupów od organizacji.
-- Trzecia wartość to ocena wartości pieniężnej odbiorcy, czyli ile pieniędzy odbiorca wydaje, gdy kupuje towary w Twojej firmie.
+- Trzecia cyfra to ocena pieniężna klienta, czyli kwota, jaką klient wydaje, gdy dokonuje zakupów w Twojej organizacji.
 
 Załóżmy, że w Twojej firmie używana jest skala ocen od 1 do 5, gdzie 5 oznacza najwyższą ocenę. W tym przypadku jeśli odbiorca otrzymał ocenę 535, można z tego wywnioskować następujące fakty:
 
 - **Ocena daty ostatniego zakupu 5** — ostatni zakup dokonany przez odbiorcę miał miejsce niedawno.
 - **Ocena częstotliwości 3** — odbiorca kupuje produkty od organizacji z średnią częstotliwością.
-- **Ocena wartości pieniężnej 5** — gdy odbiorca dokonuje zakupu, wydaje znaczną kwotę pieniędzy.
+- **Ocena wartości pieniężnej 5** — gdy odbiorca dokonuje zakupu, klient wydaje znaczną kwotę pieniędzy.
 
 Jeśli organizacja używa sum liczbowych do określania wyniku, poszczególne wyniki są sumowane. Jeśli weźmiemy jeszcze raz ten sam przykład, odbiorca otrzymuje ocenę 13 (5 + 3 + 5).
 

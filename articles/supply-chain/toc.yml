@@ -361,12 +361,10 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Widok składnika majątku
                   href: asset-management/objects/object-view.md
-                - name: Omówienie atrybutu składnika majątku
+                - name: Omówienie atrybutów składnika majątku
                   href: asset-management/objects/object-specification-overview.md
             - name: Ustawienia żądań konserwacji
               items:
-                - name: Żądania konserwacji
-                  href: asset-management/setup-for-maintenance-requests/requests.md
                 - name: Stany cyklu życia żądania konserwacji
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Typy żądania konserwacji
@@ -3343,8 +3341,94 @@
               href: inventory/extend-on-hand-entities.md
         - name: Rozwiązywanie problemów
           items:
+            - name: Zarządzanie kosztami
+              items:
+                - name: Brak ustawień pól podczas kopiowania grup modeli towaru do innej firmy
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Raport „Koszty pośrednie w procesie” zawiera usunięte zlecenia produkcyjne
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Naliczanie zakupów zaksięgowane z kwotą zerową dla dokumentu przyjęcia produktów o zerowej wartości
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Fizycznie przyjęte zamówienia zakupu nie są widoczne w raporcie zamknięcia magazynu
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Brak wartości Data początkowa na karcie Aktywne ceny na stronie Cena towaru
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Zarządzanie zapasami
+              items:
+                - name: Wiele transakcji magazynowych dla numerów partii bez opcji „Przy fizycznej aktualizacji”
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Wycofywanie zgłoszenia jako gotowe powoduje wystąpienie nieoczekiwanej otwartej transakcji
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: Nie można wyświetlić nowych notatek dołączonych do arkusza w raporcie listy pobrania
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: Ilość z rozpoczętego zlecenia kwarantanny nie zostaje uaktualniona w momencie podziału zamówienia
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Pole „Data ostatniego testowania” nie jest aktualizowane podczas tworzenia wielu zleceń kontroli jakości
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Przy podziale ilości efektywnej zostaje zastosowana ilość minimalna zamiast ilości nominalnej
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Planowanie główne
+              items:
+                - name: Ustalone zamówienia stanowiące bezpośrednią pochodną są przetwarzane w ramach przepływu pracy W trakcie przeglądu
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Planowanie główne generuje planowane zamówienia na produkty fantomowe
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Planowane zamówienie zakupu utworzone, gdy zakup istnieje w dniach z ujemnym stanem magazynu'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Nie można przekazać kosztu własnego we wpisach prognozy popytu
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Nie można usunąć wymiaru prognozy popytu magazynu z wierszy prognozy
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Zaopatrzenie
+              items:
+                - name: Nie można zafakturować zamówienia sprzedaży widocznego dla odbiorcy w firmie VEL
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Nie można dodać wiersza do zapotrzebowania na zakup po zgłoszeniu żądania zmiany
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Zarządzanie informacjami o produktach
+              items:
+                - name: Nie można zastosować szablonu do utworzenia zwolnionego produktu
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: 'Nie można zaimportować pozycji, używając jednostki Wydane produkty (wersja 2)'
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: W zamówieniach zakupu nie są wyświetlane przetłumaczone teksty dotyczące produktów
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Kontrola produkcji
+              items:
+                - name: Ustawienia reguły usuwania w wierszach BOM nie są zachowane
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: Numer partii zostaje wyczyszczony po wybraniu nowego identyfikatora partii
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: Opcja Wybierz później nie jest uwzględniana podczas resetowania zleceń produkcyjnych za pomocą zadania wsadowego
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'Użytkownicy mogą cofnąć pobranie wierszy materiałów dla produktów, które zostały zgłoszone jako gotowe'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Błąd księgowania arkusza zgłoszonych wyrobów gotowych
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Magazyn w arkuszu listy pobrań nie jest aktualizowany w wierszu BOM
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Zarządzanie rabatami
+              items:
+                - name: Kumulacja rabatów dla odbiorcy przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Sprzedaż i marketing
+              items:
+                - name: 'Administratorzy systemu nie mogą wyczyścić wstrzymań zamówień, ponieważ nie mają niezbędnych uprawnień'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Zarządzanie transportem
+              items:
+                - name: Można dodać tylko konto główne jako konto kredytowe na potrzeby uzgodnień
+                  href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Zarządzanie magazynem
               items:
+                - name: Przy wybieraniu lokalizacji podczas rejestracji listy pobrania występuje błąd
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: Stacja pakowania nie wyświetla informacji o produktach
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Profil lokalizacji nie zezwala na ujemny stan magazynowy, ale ujemne ilości dostępnych zapasów są dozwolone'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Na jednym paragonie jest drukowana tylko jedna etykieta dla wielu nagłówków pracy
+                  href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: Nie można potwierdzić wysyłki z powodu problemu z kalendarzem
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Nie można potwierdzić wysyłki z powodu niekompletnej lub brakującej pracy

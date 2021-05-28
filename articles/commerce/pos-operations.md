@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804288"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027655"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Operacje online i offline w punkcie sprzedaży (POS)
 
@@ -65,7 +65,7 @@ Poniższe kolumny określają, gdzie można wywołać informacje:
 | 641 | Wynieś wybrane produkty | Ustaw metodę dostawy wybranych wierszy na **Wyniesienie**. | Tak | Tak | Nie | Tak\* | Nie |
 | 647 | Zmień tryb dostawy | Zmień metodę dostawy dla wstępnie skonfigurowanych wierszy wysyłki sprzedaży. | Tak | Tak | Nie | Nie| Nie |
 | 1215 | Zmień hasło | Ta operacja umożliwia użytkownikowi punktu sprzedaży zmianę hasła. | Tak | Tak | Tak | Nr | Nr |
-| 123 | Zmień jednostkę miary | Zmień jednostkę miary wybranej pozycji w wierszu. | Tak | Tak | Nr | Tak | Nr |
+| 123 | Zmień jednostki miary | Zmień jednostkę miary wybranej pozycji w wierszu. | Tak | Tak | Nr | Tak | Nr |
 | 639 | Wyczyść domyślnego przedstawiciela handlowego w transakcji | Usuń grupę prowizji sprzedaży (przedstawiciel handlowy) z transakcji. | Tak | Tak | Nr | Tak | Nr |
 | 106 | Wyczyszczenie ilości | Zresetuj ilość w aktualnie wybranym wierszu do **1**. | Tak | Tak | Nr | Tak | Nr |
 | 640 | Wyczyść przedstawiciela handlowego w wierszu | Usuń grupę prowizji sprzedaży (przedstawiciel handlowy) z aktualnie wybranego wiersza. | Tak | Tak | Nr | Tak | Nr |

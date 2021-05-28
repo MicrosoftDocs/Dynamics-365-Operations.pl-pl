@@ -2,11 +2,9 @@
 title: Testy zarządzania jakością
 description: W tym temacie opisano sposób tworzenia testów, których można używać w zleceniach kontroli jakości w systemie Microsoft Dynamics 365 Supply Chain Management.
 author: rachel-profitt
-manager: tfehr
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: raprofit
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b88011f486b6582db4727b85d021868899c6abe1
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
+ms.openlocfilehash: 95f759d051a520b577cb1cf3d595ce64e0dc4668
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956788"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021691"
 ---
 # <a name="quality-management-tests"></a>Testy zarządzania jakością
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21600c0815da99314dcbb8f123449c2ae93a3c1a
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835107"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027487"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Rozliczenie płatności częściowej odbiorcy, która ma wiele okresów rabatu
 
@@ -31,7 +31,7 @@ W tym artykule przedstawiono sposób rozliczania częściowych płatności od od
 Fabrikam oferuje odbiorcy 4031 dwa okresy rabatu gotówkowego. Odbiorca otrzymuje 2-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 5 dni, i 1-procentowy rabat gotówkowy w przypadku zapłacenia faktury w ciągu 14 dni. Fabrikam oferuje też rabaty gotówkowe za rozliczenia częściowe. Parametry rozliczenia znajdują się na stronie **Parametry modułu rozrachunków z odbiorcami**.
 
 ## <a name="invoice"></a>Faktura
-25 czerwca Arnie wprowadza i księguje fakturę na kwotę 1.000,00 dla odbiorcy 4031. Gdy sprawdza rabaty gotówkowe dla tej faktury, widzi, że odbiorca 4031 może otrzymać rabat w wysokości 20,00, jeśli zapłaci fakturę do 30 czerwca. Jeśli faktura zostanie zapłacona do 9 lipca, odbiorca otrzyma rabat w wysokości 10,00.
+25 czerwca Arnie wprowadza i księguje fakturę na kwotę 1.000,00 dla odbiorcy 4031. Gdy Arnie sprawdza rabaty gotówkowe dla tej faktury, widzi, że odbiorca 4031 może otrzymać rabat w wysokości 20,00, jeśli zapłaci fakturę do 30 czerwca. Jeśli faktura zostanie zapłacona do 9 lipca, odbiorca otrzyma rabat w wysokości 10,00.
 
 | Data rabatu gotówkowego | Kwota rabatu gotówkowego | Kwota w walucie transakcji |
 |--------------------|----------------------|--------------------------------|

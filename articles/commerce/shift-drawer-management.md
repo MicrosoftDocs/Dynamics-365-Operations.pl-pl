@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795460"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028258"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Zarządzanie zmianami i szufladami kasowymi
 
@@ -154,7 +154,7 @@ Wybierz kolejno opcje **Handel detaliczny i inny \> Kanały \> Sklepy \> Wszystk
 
 Ta konfiguracja pozwala zagwarantować, że zestawienia tworzone w systemach zaplecza będą obejmowały te same transakcje, jak zawierane na zmianach w aplikacji POS, a dane będą sumowane według tej zmiany.
 
-Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Aby uzyskać więcej informacji o metodach tworzenia zestawień i zamykania, zobacz [Konfiguracje sklepu dla zestawień sieci sprzedaży](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
