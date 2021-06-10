@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0a3245febe31857181d17bba42e12b65f4ebb40f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3673642729aa41fa3c00a09fe8fe205edd0624c7
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832977"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088472"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Obsługa podwójnej waluty dla podatku
 [!include [banner](../includes/banner.md)]
@@ -42,8 +42,9 @@ Aby uzyskać więcej informacji na temat podwójnej waluty, zobacz [Dwie waluty]
 W związku z obsługą dwóch walut w zarządzaniu funkcjami są dostępne dwie nowe funkcje: 
 
 - Konwersja podatku (nowość w wersji 10.0.13)
+- Wprowadzanie wymiarów finansowych na konta zrealizowanych korekt walutowych dla rozliczenia podatku od sprzedaży (nowość w wersji 10.0.17)
 
-Obsługa podwójnej waluty dla podatków gwarantuje, że podatki są obliczane dokładnie w walucie podatkowej, a saldo rozliczenia podatku jest dokładnie obliczane w walucie rozliczeniowej i walucie raportowania. 
+Obsługa podwójnej waluty dla podatków od sprzedaży gwarantuje, że podatki są obliczane dokładnie w walucie podatkowej, a saldo rozliczenia podatku jest dokładnie obliczane w walucie rozliczeniowej i walucie raportowania.
 
 ## <a name="sales-tax-conversion"></a>Konwersja podatku
 
@@ -88,6 +89,10 @@ Ta funkcja jest stosowana tylko w przypadku nowych transakcji. W przypadku trans
 
 Aby zapobiec poprzedzającym scenariuszom, zalecamy zmianę tej wartości parametru w nowym (czystym) okresie rozliczania podatku, który nie zawiera żadnych nierozstrzygniętych transakcji podatkowych. Aby zmienić tę wartość w środku okresu rozliczania podatku, przed zmianą tej wartości parametru uruchom program „Rozlicz i zasięguj podatek” dla bieżącego okresu rozliczania podatku.
 
+Ta funkcja spowoduje dodanie wpisów księgowych, które objaśniają zyski i straty z wymian walut. Zapisy będą dokonywane na kontach zrealizowanej korekty walutowej w przypadku, gdy przeszacowanie będzie dokonywane przy rozliczeniu podatku od sprzedaży. Aby uzyskać więcej informacji, zobacz sekcję [Automatyczne rozliczanie podatku w walucie raportowania](#tax-settlement-auto-balance-in-reporting-currency) w dalszej części tego tematu.
+
+> [!NOTE]
+> W trakcie rozrachunku informacje wymiarów finansowych pobierane są z kont podatku obrotowego, które są kontami bilansowymi, i wprowadzane do rachunków zysków i strat z korektą walutową, które są rachunkami zysków i strat. Ponieważ ograniczenia wartości wymiarów finansowych różnią się pomiędzy kontami bilansowymi i kontami rachunku zysków i strat, może wystąpić błąd podczas procesu Rozliczania i księgowania podatku od sprzedaży. Aby uniknąć konieczności modyfikowania struktur kont, można włączyć funkcję „Uzupełnienie wymiarów finansowych do kont zrealizowanych korekt walutowych zysków/strat z tytułu rozliczenia podatku od sprzedaży”. Funkcja ta wymusi wyprowadzenie wymiarów finansowych na rachunki zysków i strat po korekcie walutowej. 
 
 ## <a name="track-reporting-currency-tax-amount"></a>Śledź raportowaną kwotę waluty podatku
 
@@ -114,7 +119,7 @@ Korzystając z poprzedniego przykładu w celu zademonstrowania tej funkcji, zał
 | Waluta rozliczeniowa             | 100                        | 111                       | 83                       | **83.25**          |
 | Waluta raportowania              | 100                        | 111                       | 83                       | **83**             |
 
-Po uruchomieniu programu rozliczania podatków po upływie miesiąca wpis księgowy będzie następujący:
+Po uruchomieniu programu rozliczania podatków po upływie miesiąca wpis księgowy będzie następujący.
 #### <a name="scenario-sales-tax-conversion--accounting-currency"></a>Scenariusz: przeliczenie podatku od sprzedaży = „Waluta rozliczeniowa”
 
 | Konto główne           | Waluta transakcji (GBP) | Waluta rozliczeniowa (USD) | Waluta raportowania (GBP) |

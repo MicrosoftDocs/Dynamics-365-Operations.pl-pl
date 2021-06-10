@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c511558735e89db32e88f6efdd2d0cc88a04b61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 39786323e1ea11a960332e6e0a01f6ef8de1838d
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814833"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103006"
 ---
 # <a name="pay-based-on-registrations"></a>Płaca oparta na rejestracjach
 
@@ -168,7 +168,7 @@ Aby w systemie skonfigurować jednoznaczne rozróżnianie standardowego czasu pr
 
 Na stronie **Parametry obliczania** wybierz wartość **Nadgodziny** jako typ specyfikacji profilu, a w opcji **Czas płatny** ustaw wartość **Nie**, jak pokazano poniżej.
 
-| Specyfikacja reg. | Typ specyfikacji profilu | Obliczenie   |     | Zapłacony         |     |
+| Specyfikacja reg. | Typ specyfikacji profilu | Obliczenie   | Ustawienie | Zapłacona         | Ustawienie |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
 | Czas pracy       | Nadgodziny                   | Czas standardowy | Tak | Czas płatny     | Nr  |
 |                    |                            | Czas płatny      | Tak | Płatne nadgodziny | Tak |
@@ -559,7 +559,7 @@ Z drugiej strony jeśli pole wyboru **Odejmij nadgodziny** jest wyczyszczone dla
 
 W poniższym przykładzie pokazano, jak saldo konta elastycznego czasu pracy pracownika można zmniejszyć poprzez przekonwertowanie okresu nieobecności na okres odjęcia elastycznego czasu pracy.
 
-Pracownik wchodzi o 7.00, a wychodzi o 13.00. Uzgodnił z przełożonym, że może iść do domu na weekend, jeśli odliczy te godziny od salda swojego konta elastycznego czasu pracy. Jeśli pracownik wyjdzie o 13.00, zobaczy monit o wybranie kodu nieobecności, ponieważ okres nieobecności w pozostałej części dnia pracy nie jest planowanym okresem odjęcia elastycznego czasu pracy. Aby przekształcić pozostałą część dnia pracy na okres odjęcia elastycznego czasu pracy, pracownik może wybrać kod nieobecności skonfigurowany do zmniejszania salda konta elastycznego czasu pracy.
+Pracownik wchodzi o 7.00, a wychodzi o 13.00. Pracownik ma umowę, że może wrócić do domu na weekend, jeśli odliczy te godziny ze swojego konta elastycznego. Jeśli pracownik wyjdzie o 13.00, zobaczy monit o wybranie kodu nieobecności, ponieważ okres nieobecności w pozostałej części dnia pracy nie jest planowanym okresem odjęcia elastycznego czasu pracy. Aby przekształcić pozostałą część dnia pracy na okres odjęcia elastycznego czasu pracy, pracownik może wybrać kod nieobecności skonfigurowany do zmniejszania salda konta elastycznego czasu pracy.
 
 Aby zmniejszać saldo elastycznego czasu pracy dla pracowników, którzy rejestrują nieobecność w trakcie dnia roboczego, wybierz kolejno opcje **Czas i frekwencja** &gt; **Ustawienia** &gt; **Grupy** &gt; **Grupy nieobecności** i zaznacz pole wyboru **Redukcja elastycznego czasu pracy**.
 

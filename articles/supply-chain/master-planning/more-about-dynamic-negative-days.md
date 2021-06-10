@@ -1,27 +1,21 @@
 ---
 title: Liczba dni z ujemnym stanem i dynamiczna liczba dni z ujemnym stanem.
 description: Ten temat zawiera informacje o ujemnych dniach i dynamicznych dniach ujemnych oraz sposobach ich używania aby pomoc twojej firmie.
-author: t-benebo
-ms.date: 06/06/2019
+author: ChristianRytt
+ms.date: 05/25/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72704
-ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.search.region: Global
+ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7440a6a0b9093664a0d717b3bfa011ee3100639f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907748"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097241"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Liczba dni z ujemnym stanem i dynamiczna liczba dni z ujemnym stanem.
 
@@ -45,7 +39,7 @@ Popyt można uzyskać stosunkowo wcześnie w czasie realizacji danego towaru lub
 - Towar DemoProduct ma sześciodniowy czas realizacji zakupu.
 - W dniu zero (1 stycznia) poziom zapasów dla towaru DemoProduct wynosi 0 (zero).
 - W dniu zero (1 stycznia) jest uzyskane zamówienie sprzedaży na ilość 10 sztuk towaru DemoProduct.
-- W dniu 7 (7 stycznia) istnieje istniejące zamówienie zakupu na ilość 10 sztuk DemoProduct.
+- W dniu siódmym (8 stycznia) istnieje istniejące zamówienie zakupu na ilość 10 sztuk DemoProduct.
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
@@ -112,7 +106,7 @@ Istnieje możliwość uzyskania popytu w czasie realizacji danego towaru. Oto pr
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
-![Widok graficzny scenariusza 1](./media/negative-days-8.png)
+![Widok graficzny scenariusza 2](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Przypadek A: liczba dni ujemnych jest mniejsza niż czas realizacji towaru
 
@@ -157,7 +151,7 @@ Scenariusz 3: po czasie realizacji towaru uzyskasz zapotrzebowanie Oto przykład
 - Towar DemoProduct ma sześciodniowy czas realizacji zakupu.
 - W dniu zero (1 stycznia) zapas dla towaru DemoProduct wynosi 0 (zero).
 - W dniu 7 (8 stycznia), który znajduje się w poza czasem realizacji towaru, zamówienie sprzedaży zostanie otrzymane na ilość 10 sztuk towaru DemoProduct.
-- W dniu 10 (11 stycznia) istnieje zamówienie zakupu na ilość 10 sztuk DemoProduct.
+- W dniu dziesiątym (11 stycznia) istnieje zamówienie zakupu na ilość 10 sztuk DemoProduct.
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
@@ -219,8 +213,8 @@ Może być konieczne ustawienie liczby dni z ujemnym horyzontem czasowym, a nast
 - Towar DemoProduct ma sześciodniowy czas realizacji zakupu.
 - W dniu zero (1 stycznia) zapas dla towaru DemoProduct wynosi 0 (zero).
 - W dniu zero (1 stycznia) jest uzyskane zamówienie sprzedaży na ilość 10 sztuk towaru DemoProduct.
-- W dniu 10 (10 stycznia) jest uzyskane zamówienie sprzedaży na ilość 10 sztuk towaru DemoProduct.
-- W dniu 12 (12 stycznia) istnieje zamówienie zakupu na ilość 10 sztuk DemoProduct.
+- W dniu dziewiątym (10 stycznia) jest uzyskane zamówienie sprzedaży na ilość 10 sztuk towaru DemoProduct.
+- W dniu jedenastym (12 stycznia) istnieje zamówienie zakupu na ilość 10 sztuk DemoProduct.
 - Liczba dni ujemnych jest ustawiona na **20**, co jest liczba znacznie większą niż czas realizacji towaru.
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się.
@@ -229,7 +223,7 @@ Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się.
 
 MRP daje następujące wyniki.
 
-![Wyniki](./media/negative-days-20.png)
+![Przykład wyników 1](./media/negative-days-20.png)
 
 W poprzednim zrzucie ekranu datą zapotrzebowania zamówienia sprzedaży jest 9 stycznia, a nie 10 stycznia. Ponieważ ten zrzut został pobrany w 2015, kiedy 10 stycznia była sobota, wymaganą datą zamówienia powinien być poprzedni dzień roboczy, czyli piątek 9 stycznia.
 
@@ -239,7 +233,7 @@ Wyniki nie są błędne, ale czas działania MRP może być dłuższy, ponieważ
 
 Jeśli liczba dni ujemnych zostanie zredukowana do liczby bliższej czasowi realizacji towaru, a w systemie jest używana dynamiczna ujemna liczba dni, system MRP generuje następujące wyniki:
 
-![Wyniki](./media/negative-days-21.png)
+![Przykład wyników 2](./media/negative-days-21.png)
 
 MRP tworzy zamówienie planowane które jest dołączone do pierwszego zamówienia sprzedaży. Następnie, zgodnie z oczekiwaniami, drugie zamówienie sprzedaży będzie uzależnione od istniejącego zamówienia zakupu, na podstawie ustawienia dni ujemnych. Ten wynik planowania jest również poprawny, a czas pracy dla MRP może być krótszy. W tym przypadku nie jest konieczne zrozumienie i umiejętność pracy z komunikatami akcji.
 

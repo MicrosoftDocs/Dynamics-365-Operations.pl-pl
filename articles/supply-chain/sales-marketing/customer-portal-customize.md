@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909007"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102717"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Dostosowywanie i korzystanie z Portalu klienta
 
@@ -82,7 +82,7 @@ Poniżej przedstawiono standardowe etapy składania zamówienia z poziomu portal
 1. Po zakończeniu dodawania towarów wybierz przycisk **Dalej** na stronie **Pozycje**.
 1. Strona **Informacje o zamówieniu** zawiera podsumowanie tego zamówienia. Przejrzyj zawartość zamówienia i szczegóły dotyczące dostawy. Jeśli wszystko wygląda poprawnie, wybierz opcję **Prześlij**, aby przesłać zamówienie.
 
-    ![Strona informacji zamówienia](media/customer-portal-order-submit.png "Strona informacji zamówienia")
+    ![Uzupełniona strona informacji zamówienia](media/customer-portal-order-submit.png "Uzupełniona strona informacji zamówienia")
 
 ### <a name="standard-data-setup"></a>Standardowe dane konfiguracji
 

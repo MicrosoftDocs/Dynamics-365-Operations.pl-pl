@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 description: W tym temacie opisano sposób rozpoczęcia pracy z funkcją Faktur elektronicznych.
 author: gionoder
-ms.date: 05/04/2021
+ms.date: 05/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f389e111006327fe8d82581d01140b4cff2e200d
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 7c4d69edd4a8f7c7acc2ac1bc22c1ba6eaba25ae
+ms.sourcegitcommit: 90a289962598394ad98209026013689322854b7b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980983"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6092413"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
 
@@ -44,18 +44,14 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Zainstaluj dodatek dla mikrousług w Lifecycle Services
 
-1. Zaloguj się do swojego konta LCS.
-2. Wybierz kafelek **Zarządzanie funkcjami w wersji zapoznawczej**.
-3. W sekcji **Funkcje w publicznych wersjach zapoznawczych** wybierz **Fakturowanie elektroniczne**.
-4. Sprawdź, czy w opcji **Funkcja wersji zapoznawczej włączona** jest ustawiona wartość **Tak**.
-5. Na pulpicie nawigacyjnym projektu LCS wybierz projekt LCS.
-6. W projekcie usługi LCS, na pulpicie nawigacyjnym środowiska usługi LCS wybierz projekt wdrożenia usługi LCS. Projekt wdrożenia LCS musi być uruchomiony.
-7. Na karcie **Integracja Power Platform** w grupie pól **Dodatki środowiska** wybierz pozycję **Zainstaluj nowy dodatek**.
-8. Wybierz **Fakturowanie elektroniczne**.
-9. W polu **Identyfikator aplikacji AAD** wprowadź nazwę **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
-10. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure.
-11. Przejrzyj warunki, a następnie zaznacz pole wyboru.
-12. Wybierz **Zainstaluj**.
+1. Zaloguj się do swojego konta LCS, i na pulpicie nawigacyjnym projektu LCS, wybierz projekt LCS.
+2. W projekcie, na pulpicie nawigacyjnym, wybierz swój projekt wdrożeniowy LCS. Wybrany projekt musi być uruchomiony.
+3. Na karcie **Integracja Power Platform** w grupie pól **Dodatki środowiska** wybierz pozycję **Zainstaluj nowy dodatek**.
+4. Wybierz **Fakturowanie elektroniczne**.
+5. W polu **Identyfikator aplikacji AAD** wprowadź nazwę **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ta wartość jest stałą wartością.
+6. W polu **Identyfikator dzierżawy usługi AAD** wprowadź identyfikator dzierżawy konta subskrypcji systemu Azure.
+7. Przejrzyj warunki, a następnie zaznacz pole wyboru.
+8. Wybierz **Zainstaluj**.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Skonfiguruj parametry RCS z Faktury elektroniczne

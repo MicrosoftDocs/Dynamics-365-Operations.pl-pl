@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c69ab02ea9e6a5a5699a204258243d6204413b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e89e8b4860bbafe4bd47d62d2feb7d197f233d24
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825309"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102789"
 ---
 # <a name="purchasing-policies-overview"></a>Omówienie zasad zakupów
 
@@ -55,7 +55,7 @@ Gdy pracownik w firmie 2222 tworzy zapotrzebowanie na zakup, reguły pochodzą z
 W poprzednim przykładzie wszystkie reguły zakupów były zdefiniowane w jednej hierarchii organizacyjnej, tj. Firma. Jednak w złożonej organizacji może być konieczność zdefiniowania zasad dla wielu hierarchii organizacyjnych.  
 
 
-Firma Contoso jest dużą firmą, która wymaga złożonych reguł zakupów do obsługi procesu zapotrzebowania. Firma Contoso zdefiniowała reguły z dwoma różnymi hierarchiami organizacyjnymi: Oddział i Globalna kontrola zakupów.  
+Contoso jest dużą firmą, która wymaga złożonych reguł zakupów do obsługi procesu zapotrzebowania. Contoso zdefiniowała reguły z dwoma różnymi hierarchiami organizacyjnymi: Oddział i Globalna kontrola zakupów.  
 
 Zasada 123 została zdefiniowana dla hierarchii organizacyjnej Dział dla firmy Sales UK — działu sprzedaży. W zasadzie 123 reguła kontroli zapotrzebowania określa, że ograniczenia muszą zostać zastosowane dla minimalnych ilości zamówienia. W tej regule wybrana jest opcja **Wymuszanie ograniczeń dotyczących minimalnej ilości zamówienia**.  
 

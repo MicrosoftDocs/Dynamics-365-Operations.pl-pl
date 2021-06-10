@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 657dd864885bc7c8216aab95a73f389f21f7cccd
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808805"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102933"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurowanie urządzeń przenośnych do pracy magazynowej
 
@@ -41,6 +41,7 @@ Aby utworzyć element menu dla działania lub zapytania, należy wybrać w polu 
 > W zależności od trybu wybranego dla elementu menu i jeśli służy on do wykonywania istniejącej pracy, dodatkowe pola są dostępne dla tego elementu menu. Informacje o dodatkowych polach wyboru można znaleźć w sekcji „Dodatkowe opcje elementów menu” w tym temacie.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurowanie elementów menu pod kątem działań i zapytań
+
 Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można utworzyć element menu do wykonywania działań lub zapytań, które nie tworzą pracy. Może to być np. ponowne drukowanie etykiet numerów identyfikacyjnych czy zapytanie o towary w lokalizacji. W poniższej tabeli przedstawiono dostępne opcje.
 
 | Opcja | Opis |
@@ -64,10 +65,9 @@ Jeśli pole **Tryb** dla elementu menu jest ustawione na **Pośredni**, można u
 | Wyświetl listę otwartych prac | Umożliwia wyświetlenie listy dostępnych pracy dla określonego użytkownika. Użytkownik może następnie wybrać pracę do wykonania i zostanie do niej przekierowany. Tę listę można wyświetlać na tabletach z ekranem o przekątnej co najmniej 7 cali. Po wybraniu tej opcji pozycje menu **Edytuj kwerendę** i **Lista pól** staną się dostępne. Strona **Edycji kwerendy** umożliwia skonfigurowanie kryteriów pracy, która znajduje się na liście. Strona **Listy pól** umożliwia wybranie, które pola będą wyświetlane na liście prac. Przykładowo można zmniejszyć liczbę widocznych pól, aby użytkownik mógł szybciej wybrać najodpowiedniejszą pozycję pracy. Na skróconej karcie **Ogólne** w polu **Rekordy na stronie** można też wybrać, ile rekordów pracy jest wyświetlanych na stronie. Jeśli opcja **Zezwalaj użytkownikom na filtrowanie pracy według typu transakcji** jest zaznaczona, lista pracy będzie zawierała formant **Filtruj pracę**, który umożliwia filtrowanie według typu transakcji. Na liście pracy użytkownik widzi tylko te prace, do których ma uprawnienia dostępu. Należy się upewnić, że ma on uprawnienia do co najmniej jednej pozycji menu sterowanej przez użytkownika obsługującej określone typy klasy pracy, do których powinien mieć dostęp. Uprawnienia są sprawdzane również wtedy, gdy użytkownik próbuje wykonać pracę z listy.|
 | Utwórz zamówienie przeniesienia z numery identyfikacyjnego | Umożliwia pracownikom magazynu tworzenie i przetwarzanie zamówień przeniesienia bezpośrednio z poziomu aplikacji Warehouse Management. Pracownicy magazynu rozpoczynają od wybrania magazynu docelowego i mogą skanować jeden lub więcej numerów identyfikacyjnych za pomocą aplikacji. Gdy pracownik magazynu wybierze **Zakończ zamówienie**, zadanie wsadowe utworzy wymagane zamówienie przeniesienia i wiersze zamówienia na podstawie dostępnych zapasów zarejestrowanych dla tych numerów identyfikacyjnych. Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](create-transfer-order-from-warehouse-app.md)
 
-
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurowanie elementów menu do tworzenia pracy dla innego pracownika lub procesu
-Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika po wykonaniu działania początkowego na urządzeniu przenośnym. Na przykład gdy jeden pracownik przyjmuje towar za pomocą urządzenia przenośnego, dla innego pracownika tworzona jest praca odłożenia. Aby skonfigurować element menu, który tworzy pracę, na stronie **Elementy menu urządzenia przenośnego** w polu **Tryb** trzeba wybrać **Praca**. W poniższej tabeli opcje w polu **Proces tworzenia pracy** są rozmieszczane według typu zlecenia.
 
+Możesz skonfigurować element menu, który tworzy pracę dla innego pracownika po wykonaniu działania początkowego na urządzeniu przenośnym. Na przykład gdy jeden pracownik przyjmuje towar za pomocą urządzenia przenośnego, dla innego pracownika tworzona jest praca odłożenia. Aby skonfigurować element menu, który tworzy pracę, na stronie **Elementy menu urządzenia przenośnego** w polu **Tryb** trzeba wybrać **Praca**. W poniższej tabeli opcje w polu **Proces tworzenia pracy** są rozmieszczane według typu zlecenia.
 
 <table>
 <tbody>
@@ -407,6 +407,7 @@ W poniższej tabeli opisano te opcje.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Wymagaj od pracowników potwierdzenia produktów, lokalizacji lub ilości podczas pobierania pozycji
+
 Można skonfigurować potwierdzenia pracy, które wymagają od pracownika użycia urządzenia mobilnego w celu zarejestrowania lokalizacji lub ilości podczas wykonywania pracy w magazynie. Potwierdzenia pracy pomagają zapewnić, że pracownik jest w prawidłowym miejscu lub obsługuje poprawne ilości towarów. Można także włączyć Supply Chain Management do automatycznego potwierdzenia rejestracji pracownika. Po włączeniu automatycznego potwierdzenia nie można jednocześnie wymagać potwierdzeń dla lokalizacji lub ilości. Potwierdzenia pracy zawierają także produkty i warianty produktu. Ponadto można zarejestrować potwierdzenia przez skanowanie kodu kreskowego. Aby potwierdzić produkty i warianty produktów, trzeba wprowadzić identyfikator produktu/wariantu produktu. Może to być identyfikator produktu, identyfikator wyszukiwania produktu, identyfikator zewnętrzny, GTIN lub kod kreskowy. Po wprowadzeniu identyfikatora lub zeskanowaniu kodu kreskowego wymiary wariantu produktu są wyświetlane w urządzeniu przenośnym. 
 
 W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać potwierdzenia pracy.
@@ -426,14 +427,11 @@ W poniższej tabeli przedstawiono różne typy pracy, z którymi można używać
 > [!NOTE]
 > Możesz jedynie wymagać potwierdzenia produktu dla prac typu pobieranie i odkładanie.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu](tasks/set-up-mobile-device-menu.md)
-
-[Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-
-[Stany zapasów](../inventory/inventory-statuses.md)
+- [Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy typu Zamówienie zakupu](tasks/set-up-mobile-device-menu.md)
+- [Konfigurowanie elementu menu urządzenia przenośnego do rejestrowania towarów przyjętych](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+- [Stany zapasów](../inventory/inventory-statuses.md)
 
 
 
