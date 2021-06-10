@@ -1,7 +1,7 @@
 ---
 title: Uwzględnianie wagi i objętości kontenera w ładunku
 description: W tym temacie opisano jak skonfigurować i zastosować funkcje w celu dodania wagę i objętość kontenera do ładunków.
-author: pjacobse
+author: Henrikan
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
@@ -11,37 +11,37 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: henrikan
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d747d2cdafeedf77b8b2df1cbc8debdc0675729
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9196e9c4ce1a8aa629400b8bf379e7164a797b85
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824059"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102646"
 ---
-# <a name="include-container-weight-and-volume-on-load"></a><span data-ttu-id="156c1-103">Uwzględnianie wagi i objętości kontenera w ładunku</span><span class="sxs-lookup"><span data-stu-id="156c1-103">Include container weight and volume on load</span></span>
+# <a name="include-container-weight-and-volume-on-load"></a><span data-ttu-id="40c8a-103">Uwzględnianie wagi i objętości kontenera w ładunku</span><span class="sxs-lookup"><span data-stu-id="40c8a-103">Include container weight and volume on load</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="156c1-104">Funkcja dodawania wagi i objętości do ładunku umożliwia uzyskanie przejrzystych informacji o całkowitej wadze i objętości kontenerów i towarów zawartych w ładunku.</span><span class="sxs-lookup"><span data-stu-id="156c1-104">The functionality for including the container weight and volume on a load gives a clear representation of the total weight and volume of containers and items that are going on a load.</span></span>
+<span data-ttu-id="40c8a-104">Funkcja dodawania wagi i objętości do ładunku umożliwia uzyskanie przejrzystych informacji o całkowitej wadze i objętości kontenerów i towarów zawartych w ładunku.</span><span class="sxs-lookup"><span data-stu-id="40c8a-104">The functionality for including the container weight and volume on a load gives a clear representation of the total weight and volume of containers and items that are going on a load.</span></span>
 
-<span data-ttu-id="156c1-105">Ładunek zawiera jedną lub wiele wysyłek, a te wysyłki mogą zawierać osobne towary należące do jednego lub kilku zamówień sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="156c1-105">A load contains a single shipment or multiple shipments, and these shipments contain distinct items that belong to a single sales order or multiple sales orders.</span></span> <span data-ttu-id="156c1-106">Towary są przechowywane w kontenerze, a kontenery ładowane w ramach ładunku.</span><span class="sxs-lookup"><span data-stu-id="156c1-106">The items are stored inside a container, and containers are loaded on a load.</span></span> <span data-ttu-id="156c1-107">Towary poza kontenerem także mogą być częścią ładunku.</span><span class="sxs-lookup"><span data-stu-id="156c1-107">Items that are outside a container can also be part of a load.</span></span> <span data-ttu-id="156c1-108">Na podstawie tych warunków system oblicza wartości wagi i objętości ładunku, uwzględniając wagę i objętość kontenerów oraz towarów.</span><span class="sxs-lookup"><span data-stu-id="156c1-108">Based on these conditions, the system calculates values for the weight and volume on the load by considering the weight and volume of both containers and items.</span></span>
+<span data-ttu-id="40c8a-105">Ładunek zawiera jedną lub wiele wysyłek, a te wysyłki mogą zawierać osobne towary należące do jednego lub kilku zamówień sprzedaży.</span><span class="sxs-lookup"><span data-stu-id="40c8a-105">A load contains a single shipment or multiple shipments, and these shipments contain distinct items that belong to a single sales order or multiple sales orders.</span></span> <span data-ttu-id="40c8a-106">Towary są przechowywane w kontenerze, a kontenery ładowane w ramach ładunku.</span><span class="sxs-lookup"><span data-stu-id="40c8a-106">The items are stored inside a container, and containers are loaded on a load.</span></span> <span data-ttu-id="40c8a-107">Towary poza kontenerem także mogą być częścią ładunku.</span><span class="sxs-lookup"><span data-stu-id="40c8a-107">Items that are outside a container can also be part of a load.</span></span> <span data-ttu-id="40c8a-108">Na podstawie tych warunków system oblicza wartości wagi i objętości ładunku, uwzględniając wagę i objętość kontenerów oraz towarów.</span><span class="sxs-lookup"><span data-stu-id="40c8a-108">Based on these conditions, the system calculates values for the weight and volume on the load by considering the weight and volume of both containers and items.</span></span>
 
-<span data-ttu-id="156c1-109">Jeżeli obliczone wartości są niedokładne, można je dostosować wprowadzając rzeczywiste wartości wagi i objętości ładunku.</span><span class="sxs-lookup"><span data-stu-id="156c1-109">If the calculated values aren’t precise, you can adjust them by entering the actual values for the weight and volume on the load.</span></span> <span data-ttu-id="156c1-110">Te wartości wagi i objętości są używane w procesach zarządzania transportem.</span><span class="sxs-lookup"><span data-stu-id="156c1-110">The values for the weight and volume are used in transportation management processes.</span></span> <span data-ttu-id="156c1-111">Wartości są na przykład używane w pulpicie ustalania stawek i wyznaczania tras, gdzie ułatwiają zdefiniowanie stawki i trasy ładunków i są także używane dla metod płatności za transport i ewidencjonowanie kierowców.</span><span class="sxs-lookup"><span data-stu-id="156c1-111">For example, the values are used in the rate route workbench, where they help define the rate and route for loads, and they are also used for transportation tenders and driver check-in.</span></span>
+<span data-ttu-id="40c8a-109">Jeżeli obliczone wartości są niedokładne, można je dostosować wprowadzając rzeczywiste wartości wagi i objętości ładunku.</span><span class="sxs-lookup"><span data-stu-id="40c8a-109">If the calculated values aren’t precise, you can adjust them by entering the actual values for the weight and volume on the load.</span></span> <span data-ttu-id="40c8a-110">Te wartości wagi i objętości są używane w procesach zarządzania transportem.</span><span class="sxs-lookup"><span data-stu-id="40c8a-110">The values for the weight and volume are used in transportation management processes.</span></span> <span data-ttu-id="40c8a-111">Wartości są na przykład używane w pulpicie ustalania stawek i wyznaczania tras, gdzie ułatwiają zdefiniowanie stawki i trasy ładunków i są także używane dla metod płatności za transport i ewidencjonowanie kierowców.</span><span class="sxs-lookup"><span data-stu-id="40c8a-111">For example, the values are used in the rate route workbench, where they help define the rate and route for loads, and they are also used for transportation tenders and driver check-in.</span></span>
 
-## <a name="where-it-applies"></a><span data-ttu-id="156c1-112">Zastosowanie</span><span class="sxs-lookup"><span data-stu-id="156c1-112">Where it applies</span></span>
+## <a name="where-it-applies"></a><span data-ttu-id="40c8a-112">Zastosowanie</span><span class="sxs-lookup"><span data-stu-id="40c8a-112">Where it applies</span></span>
 
-<span data-ttu-id="156c1-113">Funkcja uwzględniania wagi i objętości kontenera w ładunku ma zastosowanie w procesach zarządzania transportem, takich jak pulpit ustalania stawek i wyznaczania tras, metody płatności za transport i ewidencjonowanie kierowców.</span><span class="sxs-lookup"><span data-stu-id="156c1-113">The functionality for including the container weight and volume on a load applies in transportation management processes, such as the rate route workbench, transportation tenders, and driver check-in.</span></span>
+<span data-ttu-id="40c8a-113">Funkcja uwzględniania wagi i objętości kontenera w ładunku ma zastosowanie w procesach zarządzania transportem, takich jak pulpit ustalania stawek i wyznaczania tras, metody płatności za transport i ewidencjonowanie kierowców.</span><span class="sxs-lookup"><span data-stu-id="40c8a-113">The functionality for including the container weight and volume on a load applies in transportation management processes, such as the rate route workbench, transportation tenders, and driver check-in.</span></span>
 
-## <a name="how-it-is-set-up"></a><span data-ttu-id="156c1-114">Sposób konfiguracji</span><span class="sxs-lookup"><span data-stu-id="156c1-114">How it is set up</span></span>
+## <a name="how-it-is-set-up"></a><span data-ttu-id="40c8a-114">Sposób konfiguracji</span><span class="sxs-lookup"><span data-stu-id="40c8a-114">How it is set up</span></span>
 
-<span data-ttu-id="156c1-115">Liczba kontenerów, którą należy uwzględnić dla ładunku jest obliczana na podstawie wagi i objętości kontenera i procentu wykorzystania kontenera.</span><span class="sxs-lookup"><span data-stu-id="156c1-115">The number of containers that should be considered for a load is calculated based on the weight and volume of the container, and on the percentage of the container is used.</span></span>
+<span data-ttu-id="40c8a-115">Liczba kontenerów, którą należy uwzględnić dla ładunku jest obliczana na podstawie wagi i objętości kontenera i procentu wykorzystania kontenera.</span><span class="sxs-lookup"><span data-stu-id="40c8a-115">The number of containers that should be considered for a load is calculated based on the weight and volume of the container, and on the percentage of the container is used.</span></span>
 
--   <span data-ttu-id="156c1-116">Aby ustawić wagę i objętość dla kontenera kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Typy kontenerów**.</span><span class="sxs-lookup"><span data-stu-id="156c1-116">To set the weight and volume for a container, click **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.</span></span>
+-   <span data-ttu-id="40c8a-116">Aby ustawić wagę i objętość dla kontenera kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Typy kontenerów**.</span><span class="sxs-lookup"><span data-stu-id="40c8a-116">To set the weight and volume for a container, click **Warehouse management** \> **Setup** \> **Containers** \> **Container types**.</span></span>
 
--   <span data-ttu-id="156c1-117">Aby ustawić procent wykorzystania kontenerów, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Grupy kontenerów**, a następnie wprowadź wartość w polu **Procent wykorzystania kontenera**.</span><span class="sxs-lookup"><span data-stu-id="156c1-117">To set the container utilization percentage, click **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**, and then enter a value in the **Container utilization percentage** field.</span></span>
+-   <span data-ttu-id="40c8a-117">Aby ustawić procent wykorzystania kontenerów, kliknij kolejno opcje **Zarządzanie magazynem** \> **Konfiguracja** \> **Kontenery** \> **Grupy kontenerów**, a następnie wprowadź wartość w polu **Procent wykorzystania kontenera**.</span><span class="sxs-lookup"><span data-stu-id="40c8a-117">To set the container utilization percentage, click **Warehouse management** \> **Setup** \> **Containers** \> **Container groups**, and then enter a value in the **Container utilization percentage** field.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
