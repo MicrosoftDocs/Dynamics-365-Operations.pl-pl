@@ -7,31 +7,30 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4adab0225190b4dea5213dccf297eaab33efc863
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c0da21c0074468c5942bf853df701151ef7ee95
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021327"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6055083"
 ---
-# <a name="generate-payroll-entities"></a><span data-ttu-id="82b2f-103">Generowanie jednostek listy płac</span><span class="sxs-lookup"><span data-stu-id="82b2f-103">Generate payroll entities</span></span>
+# <a name="generate-payroll-entities"></a><span data-ttu-id="0e1bc-103">Generowanie jednostek listy płac</span><span class="sxs-lookup"><span data-stu-id="0e1bc-103">Generate payroll entities</span></span>
 
-<span data-ttu-id="82b2f-104">Ta funkcja OData umożliwia generowanie jednostek potrzebnych do integracji listy płac.</span><span class="sxs-lookup"><span data-stu-id="82b2f-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="82b2f-105">Jeśli wprowadzono jakiekolwiek zmiany w tych jednostkach w Human Resources, takie jak dodanie pól niestandardowych, tę funkcję można wywołać ponownie, aby odświeżyć metadane każdej encji.</span><span class="sxs-lookup"><span data-stu-id="82b2f-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="82b2f-106">Odpowiedź zawiera identyfikator operacji, który można monitorować, aby wiedzieć, kiedy proces generowania został zakończony.</span><span class="sxs-lookup"><span data-stu-id="82b2f-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
+<span data-ttu-id="0e1bc-104">Ta funkcja OData umożliwia generowanie jednostek potrzebnych do integracji listy płac.</span><span class="sxs-lookup"><span data-stu-id="0e1bc-104">Use this OData function to generate the entities needed for payroll integration.</span></span> <span data-ttu-id="0e1bc-105">Jeśli wprowadzono jakiekolwiek zmiany w tych jednostkach w Human Resources, takie jak dodanie pól niestandardowych, tę funkcję można wywołać ponownie, aby odświeżyć metadane każdej encji.</span><span class="sxs-lookup"><span data-stu-id="0e1bc-105">If any changes are made to these entities in Human Resources, such as adding custom fields, this function can be called again to refresh the metadata of each entity.</span></span> <span data-ttu-id="0e1bc-106">Odpowiedź zawiera identyfikator operacji, który można monitorować, aby wiedzieć, kiedy proces generowania został zakończony.</span><span class="sxs-lookup"><span data-stu-id="0e1bc-106">The response contains an operation ID that you can monitor so you know when the generation process has completed.</span></span>
 
-<span data-ttu-id="82b2f-107">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="82b2f-107">**Request**</span></span>
+<span data-ttu-id="0e1bc-107">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="0e1bc-107">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
-<span data-ttu-id="82b2f-108">**treść**</span><span class="sxs-lookup"><span data-stu-id="82b2f-108">**body**</span></span>
+<span data-ttu-id="0e1bc-108">**treść**</span><span class="sxs-lookup"><span data-stu-id="0e1bc-108">**body**</span></span>
 
 ```json
 {
@@ -39,7 +38,7 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-<span data-ttu-id="82b2f-109">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="82b2f-109">**Response**</span></span>
+<span data-ttu-id="0e1bc-109">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="0e1bc-109">**Response**</span></span>
 
 ```json
 {
@@ -47,17 +46,17 @@ GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 }
 ```
 
-## <a name="review-payroll-entities"></a><span data-ttu-id="82b2f-110">przegląd jednostek listy płac</span><span class="sxs-lookup"><span data-stu-id="82b2f-110">Review payroll entities</span></span>
+## <a name="review-payroll-entities"></a><span data-ttu-id="0e1bc-110">przegląd jednostek listy płac</span><span class="sxs-lookup"><span data-stu-id="0e1bc-110">Review payroll entities</span></span>
 
-<span data-ttu-id="82b2f-111">Ten interfejs API umożliwia pobranie listy jednostek wygenerowanych pomyślnie i gotowych do użycia.</span><span class="sxs-lookup"><span data-stu-id="82b2f-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
+<span data-ttu-id="0e1bc-111">Ten interfejs API umożliwia pobranie listy jednostek wygenerowanych pomyślnie i gotowych do użycia.</span><span class="sxs-lookup"><span data-stu-id="0e1bc-111">Use this API to retrieve a list of the entities that have been successfully generated and are ready for use.</span></span>
 
-<span data-ttu-id="82b2f-112">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="82b2f-112">**Request**</span></span>
+<span data-ttu-id="0e1bc-112">**Wniosek**</span><span class="sxs-lookup"><span data-stu-id="0e1bc-112">**Request**</span></span>
 
 ```http
 GET [Organizaton URI]/api/data/v9.1/mshr_hrvirtualentitycatalogs?$filter=mshr_hasbeengenerated eq true
 ```
 
-<span data-ttu-id="82b2f-113">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="82b2f-113">**Response**</span></span>
+<span data-ttu-id="0e1bc-113">**Odpowiedź**</span><span class="sxs-lookup"><span data-stu-id="0e1bc-113">**Response**</span></span>
 
 ```json
 {
