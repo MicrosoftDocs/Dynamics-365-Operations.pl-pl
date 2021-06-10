@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 98fc102b308afb90d4665ecd80650f66d531da0b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3124ac0e161e003986d7e167e292cbb374e1bfa
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826721"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085457"
 ---
 # <a name="import-format-for-consolidation"></a>Format importu do konsolidacji
 
@@ -36,7 +36,7 @@ W poniższej tabeli wymieniono format importu, którego należy używać podczas
 | 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Identyfikator konta głównego</li><li>Data transakcji</li><li>Typ okresu obrachunkowego (**0** = Otwarcie, **1** = Operowanie i **2** = Zamknięcie)</li><li>Waluta transakcji</li><li>Debet lub kredyt (**0** = Debet i **1** = Kredyt)</li><li>Warstwa księgowania</li><li>Kwota transakcji</li><li>Ilość</li><li>Lokalny identyfikator RecID (niejednoznaczna, unikatowa wartość int64 dla transakcji)</li></ul> |
 | 3            | USMF0000009, 2017-01-01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Numer wpisu (numer transakcji nagłówka budżetu)</li><li>Domyślna data nagłówka budżetu</li><li>Identyfikator modelu budżetu</li><li>Wartość całkowita wyliczenia dla typu transakcji (puste, pierwotny budżet itd.)</li><li>Data wiersza</li><li>Identyfikator konta głównego dla wiersza</li><li>Kod waluty płatności dla wiersza</li><li>Kwota dla wiersza w walucie transakcji</li><li>Wartość całkowita wyliczenia dla typu budżetu dla wiersza (wydatek lub przychód)</li></ul> |
 | 4            | DEMF | RecordCompany jest firma źródłową. |
-| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | RecordCompany jest firma źródłową. |
+| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Identyfikator konta głównego</li><li>Data transakcji</li><li>Typ okresu obrachunkowego (0 Otwarcie, 1 Operowanie i 2 Zamknięcie)</li><li>Waluta transakcji</li><li>Debet lub kredyt (0 Debet i 1 Kredyt)</li><li>Warstwa księgowania</li><li>Kwota transakcji</li><li>Ilość</li><li>Lokalny identyfikator recid (niejednoznaczna, unikatowa wartość int64 dla transakcji)</li></ul>  |
 | 6            | BusinessUnit, 1 Dział, 2 | Atrybuty wymiaru finansowego, które są zdefiniowane w kolejności segmentów.<p>Strona **Eksportuj** umożliwia sprawdzenie, jak są zdefiniowane atrybuty.</p> |
 | 7            | 002,1,658 | <ul><li>Wartość wymiaru finansowego</li><li>Wymiar finansowy jako indeks dostarczany w RecordDimensions</li><li>Niejednoznaczny, niepowtarzalny identyfikator rekordu powiązany z unikalnym identyfikatorem rekordu z RecordTrans lub RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Wartości wymiarów skojarzone z transakcją z rekordu RecordBudget</li><li>Wymiar finansowy jako indeks dostarczany w RecordDimensions</li><li>Niejednoznaczny identyfikator rekordu wiersza, który jest zgodny z kolejnością wierszy transakcji w pliku</li></ul> |

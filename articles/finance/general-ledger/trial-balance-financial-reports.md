@@ -1,8 +1,8 @@
 ---
 title: Raporty finansowe bilansu próbnego
 description: W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816938"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103665"
 ---
 # <a name="trial-balance-financial-reports"></a>Raporty finansowe bilansu próbnego
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816938"
 
 W tym artykule opisano domyślne raporty o bilansach próbnych. Omówiono również bloki konstrukcyjne skojarzone z tymi raportami oraz sposoby modyfikowania raportów w celu dostosowania ich do wymagań biznesowych. 
 
-<a name="default-trial-balance-reports"></a>Domyślne raporty finansowe bilansu próbnego
------------------------------
+## <a name="default-trial-balance-reports"></a>Domyślne raporty finansowe bilansu próbnego
 
 W module Raporty finansowe są dostępne trzy raporty bilansu próbnego.
 
@@ -47,6 +46,9 @@ Raporty finansowe bilansu próbnego wykorzystują następujące podstawowe eleme
 | Szczegółowy bilans próbny — domyślne               | Bilans próbny — domyślny | Szczegółowy bilans próbny — domyślne               |
 | Sumaryczny bilans próbny — domyślny                | Bilans próbny — domyślny | Sumaryczny bilans próbny — domyślny                |
 | Sumaryczny bilans próbny rok do roku — domyślny | Bilans próbny — domyślny | Sumaryczny bilans próbny rok do roku — domyślny |
+
+> [!NOTE] 
+> Podczas uruchamiania raportu **bilansu próbnego** w sprawozdawczości finansowej należy zaznaczyć pola wyboru **Wyświetlaj wiersze bez kwot** i **Wyświetlaj raporty bez aktywnych wierszy** na karcie **Ustawienia**.
 
 ### <a name="row-definition"></a>Definicja wiersza
 
@@ -94,10 +96,7 @@ Każdy raport bilansu próbnego używa innej definicji kolumny. Te definicje kol
     -   **FD** — dane finansowe zawierające tylko debety dla ostatniego roku
     -   **FD** — dane finansowe zawierające tylko kredyty dla ostatniego roku
 
-
-
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania finansowego](financial-reporting-getting-started.md)
 

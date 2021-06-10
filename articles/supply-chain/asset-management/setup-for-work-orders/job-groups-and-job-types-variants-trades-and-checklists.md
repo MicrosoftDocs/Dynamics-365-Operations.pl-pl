@@ -1,5 +1,5 @@
 ---
-title: Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji
+title: Rodzaje prac konserwacyjnych, kategorie, warianty, wymiany i listy kontrolne
 description: Ten temat opisuje typy zadań konserwacji i kategorie typów zadań konserwacji i typy zadań konserwacji, warianty typu zadań konserwacji, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji w Zarządzanie składnikami majątku.
 author: johanhoffmann
 ms.date: 08/13/2019
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb73fb36ee31d93b2121437d57d959ba6c01a337
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842280"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117090"
 ---
-# <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji
+# <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Rodzaje prac konserwacyjnych, kategorie, warianty, wymiany i listy kontrolne
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Typ składnika majatku jest dołączany do każdego składnika majatku. Typy składników majatku definiują typy zadań konserwacji (i tym samym zadania konserwacji), które mogą być wykonywane na składnikach majatku. Tworząc zlecenie pracy należy wybrać typ zadań konserwacji. Można wybrać tylko typy zadań konserwacji, które są związane z konfiguracją typu składnika majatku, który jest używany dla składnika majatku.
 

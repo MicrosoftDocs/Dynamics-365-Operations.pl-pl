@@ -1,5 +1,5 @@
 ---
-title: 'Migawka wiekowania odbiorcy '
+title: Migawka wiekowania odbiorcy
 description: Ten temat zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie.
 author: JodiChristiansen
 ms.date: 05/05/2021
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7761366c0372c105ecbd4281c7bafa44bf6cf7b5
-ms.sourcegitcommit: 905a8c7a0c1bc06ada2acfba913dfe5f7b44ea16
+ms.openlocfilehash: b88d3fe97d14d3e2f766367de501148063582000
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6039934"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123369"
 ---
 # <a name="customer-aging-snapshots"></a>Migawka wiekowania odbiorcy 
 
@@ -28,6 +28,8 @@ ms.locfileid: "6039934"
 Ten temat zawiera informacje o migawkach wiekowania klientów. Migawka wiekowania oblicza salda wiekowe dla grupy klientów w określonym momencie. Możesz tworzyć przedawnione rekordy migawek albo dla wszystkich klientów, albo dla klientów z puli klientów.
 
 Informacje z migawek wiekowania są wyświetlane na stronie z listą **Wiekowane salda** i na stronie **Windykacja**. Należy utworzyć migawki wiekowania, aby można było używać strony listy **Wiekowane salda**. Strona listy zawiera listę tylko klientów, dla których utworzono migawkę wiekowania.
+
+W obszarze roboczym **Kredyty i windykacja odbiorcy** jest także widać wiekowanie odbiorcy. Aby uzyskać więcej informacji, zobacz temat [Zarządzanie kredytami i windykacjami. Power BI](credit-collections-power-bi.md).
 
 > [!NOTE]
 > Aby skrócić czas wymagany do utworzenia migawki wiekowania, włącz funkcję **Usprawnienie wiekowania odbiorcy** w obszarze roboczym **Zarządzanie funkcjami**. Po włączeniu tej funkcji nie należy jednak używać pul klientów. Jeśli jest wybrana pula klientów, funkcja nie działa, ale nadal można utworzyć migawkę wiekowania.
@@ -62,4 +64,3 @@ Zaleca się zaplanowanie tego procesu do uruchomienia w partii.
 > [!NOTE]
 > Aby zwiększyć wydajność partii podczas tworzenia migawki wiekowania, wprowadź liczbę w polu **Maksymalna liczba zadań wsadowych** na skróconej karcie **Ustawienia domyślne** windykacji na karcie **Windykacja** na stronie **Parametry rozrachunków z odbiorcami**. Zaleca się, aby w polu **Wiekuj salda odbiorcy** rozpocząć od wartości domyślnej **100**, a następnie skorygować tę wartość, aby zoptymalizować przetwarzanie zgodnie z sytuacją.
 
-W obszarze roboczym **Kredyty i windykacja odbiorcy** jest także widać wiekowanie odbiorcy. Aby uzyskać więcej informacji, zobacz temat [Zarządzanie kredytami i windykacjami. Power BI](credit-collections-power-bi.md).

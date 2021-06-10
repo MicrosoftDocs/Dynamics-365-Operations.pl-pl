@@ -2,7 +2,7 @@
 title: Zgodność z plikami cookie
 description: W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domyślnych zasad, które są zawarte w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908191"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088394"
 ---
 # <a name="cookie-compliance"></a>Zgodność z plikami cookie
 
@@ -52,8 +52,7 @@ W poniższej tabeli przedstawiono bieżące listy odwołań plików cookie umies
 | x-ms-cpim-trans                             | Służy do śledzenia transakcji (liczba otwartych kart uwierzytelniających się w odniesieniu do oddziału firmy (B2C)), w tym bieżącej transakcji. |
 | \_msdyn365___muid_                            | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany jako identyfikator użytkownika do celów eksperymentalnych. |
 | \_msdyn365___exp_                             | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany do pomiaru równoważenia obciążenia wydajnościowego.         |
-
-
+| d365mkt                                       | Używane, jeśli wykrywanie lokalizacji w celu śledzenia adresu IP użytkownika dla sugestii lokalizacji sklepu jest włączone w kreatorze stron Commerce pod adresem **Ustawienia strony > Ogólne > Włącz wykrywanie sklepu w oparciu o lokalizację**.      |
 
 Jeśli użytkownik witryny wybierze jakiekolwiek łącza do mediów społecznościowych w witrynie, pliki cookie z poniższej tabeli będą również śledzone w jego przeglądarce.
 

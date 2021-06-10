@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95472a00d34ba939ac89b4e2484f34d50bee3088
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018319"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112680"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -22,22 +22,23 @@ ms.locfileid: "6018319"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[Szablon Azure Data Factory](https://aka.ms/dual-write-gab-adf) pomaga zaktualizować istniejące tabele danych **Konto**, **Kontakt** i **Dostawca** za pomocą podwójnego zapisu dla strony i moddelu globalnej książki adresowej. Szablon uzgadnia dane z aplikacji Finance and Operations oraz aplikacji angażujących klientów. Na zakończenie procesu zostaną utworzone i skojarzone pola **Strona** i **Kontakt** dla rekordów **Strony** z rekordami **Konto**, **Kontakt** i **Dostawca** w aplikacjach zaangażowania kllienta. Zostanie wygenerowany plik csv (`FONewParty.csv`) w celu utworzenia nowych rekordów **Strona** w aplikacji Finance and Operations. Ten temat zawiera instrukcje dotyczące używania szablonu Data Factory i uaktualniania danych.
+[Szablon Microsoft Azure Data Factory](https://aka.ms/dual-write-gab-adf) pomaga zaktualizować istniejące tabele danych **Konto**, **Kontakt** i **Dostawca** za pomocą podwójnego zapisu dla strony i modelu globalnej książki adresowej. Szablon uzgadnia dane z aplikacji Finance and Operations oraz aplikacji angażujących klientów. Na zakończenie procesu zostaną utworzone i skojarzone pola **Strona** i **Kontakt** dla rekordów **Strony** z rekordami **Konto**, **Kontakt** i **Dostawca** w aplikacjach zaangażowania kllienta. Zostanie wygenerowany plik csv (`FONewParty.csv`) w celu utworzenia nowych rekordów **Strona** w aplikacji Finance and Operations. Ten temat zawiera instrukcje dotyczące używania szablonu Data Factory i uaktualniania danych.
 
 Jeśli nie masz żadnych dostosowań, możesz użyć szablonu w takiej postaci, w jakiej jest. Jeśli masz dostosowania dla **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablon, korzystając z poniższych instrukcji.
 
-> [!Note]
-> Szablon pomaga uaktualnić tylko dane **Strony**. W przyszłej wersji zostaną uwzględnione adresy pocztowe i elektroniczne.
+> [!NOTE]
+> Szablon uaktualnia tylko dane **Strony**. W przyszłej wersji zostaną uwzględnione adresy pocztowe i elektroniczne.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Te wymagania wstępne są wymagane:
+Do uaktualnienia do modelu imprez i globalnej książki adresowej wymagane są następujące warunki wstępne:
 
 + [Subskrypcja platformy Azure](https://portal.azure.com/)
 + [Dostęp do szablonu](https://aka.ms/dual-write-gab-adf)
-+ Jesteś istniejącym klientem podwójnego zapisu.
++ Musisz być istniejącym klientem podwójnego zapisu.
 
 ## <a name="prepare-for-the-upgrade"></a>Przygotowanie do aktualizacji
+Aby przygotować się do aktualizacji, należy wykonać następujące czynności:
 
 + **W pełni zsynchronizowane**: oba środowiska są w pełni zsynchronizowane dla **Konto (klient)**, **Kontakt** i **Dostawca**.
 + **Klucze integracji**: tabele **konto (Klient)**, **Kontakt** i **Dostawca** w aplikacjach do obsługi klienta są dostępne za pomocą kluczy integracji, które są gotowe do użytku. Jeśli użytkownik dostosuje klucze integracji, należy dostosować szablon.
@@ -78,15 +79,19 @@ Te wymagania wstępne są wymagane:
     FO Połączone Service_properties_type Properties_tenant | Określ informacje o dzierżawcy (nazwę domeny lub identyfikator dzierżawy), pod którymi znajduje się aplikacja.
     FO Połączone Service_properties_type Properties_aad Resource Id | `https://sampledynamics.sandboxoperationsdynamics.com`
     FO Połączone Service_properties_type Properties_service Principal Id | Określ identyfikator klienta aplikacji.
-    Dynamics Crm Linked Service_properties_type Properties_username | Nazwa użytkownika do połączenia z Dynamics.
+    Dynamics Crm Linked Service_properties_type Properties_username | Nazwa użytkownika do połączenia z Dynamics 365.
 
-    Aby uzyskać więcej informacji, zobacz tematy [Ręcznie podwyższaj szablon usługi Resource Manager dla każdego środowiska](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Połączone właściwości usługi](/azure/data-factory/connector-dynamics-ax#linked-service-properties) i [Skopiuj dane za pomocą usługi Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Aby uzyskać więcej informacji, zobacz następujące tematy: 
+    
+    - [Ręczne promowanie szablonu Resource Manager dla każdego środowiska](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment)
+    - [Połączone właściwości usługi](/azure/data-factory/connector-dynamics-ax#linked-service-properties)
+    - [Kopiowanie danych przy użyciu Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Po wdrożeniu sprawdź poprawność zestawów danych, przepływu danych i połączonej usługi fabryki danych.
 
    ![Zestawy danych, przepływ danych i połączona usługa](media/data-factory-validate.png)
 
-11. Przejdź do **Zarządzaj**. W obszarze **Połączenia** wybierz pozycję **Połączona usługa**. Wybierz **DynamicsCrmLinkedService**. W formularzu **Edycja połączonej usługi (Dynamics CRM)** wprowadź następujące wartości:
+11. Przejdź do **Zarządzaj**. W obszarze **Połączenia** wybierz pozycję **Połączona usługa**. Wybierz **DynamicsCrmLinkedService**. W formularzu **Edycja połączonej usługi (Dynamics CRM)** wprowadź następujące wartości.
 
     Pole | Wartość
     ---|---
@@ -102,7 +107,7 @@ Te wymagania wstępne są wymagane:
 
 ## <a name="run-the-template"></a>Uruchom szablon.
 
-1. Zatrzymaj korzystanie z podwójnego zapisu **Konto**, **Kontakt** i **Dostawca** za pomocą aplikacji Finance and Operations.
+1. Zatrzymaj korzystanie z mapowania podwójnego zapisu **Konto**, **Kontakt** i **Dostawca** za pomocą aplikacji Finance and Operations.
 
     + Odbiorcy wersja 3 (konta)
     + Odbiorcy wersja 3(kontakty)
@@ -157,7 +162,7 @@ Te wymagania wstępne są wymagane:
 8. Zaimportuj nowe rekordy **Strony** w aplikacji Finance and Operations.
 
     + Pobierz plik `FONewParty.csv` z magazynu obiektów blob Azure. Ścieżka w `partybootstrapping/output/FONewParty.csv`.
-    + Skonwertuj plik `FONewParty.csv` na plik programu Excel i zaimportuj go do aplikacji Finance and Operations.  Jeśli import CSV działa dla Ciebie, możesz zaimportować plik CSV bezpośrednio. Uruchomienie importowania może potrwać kilka godzin, w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
+    + Skonwertuj plik `FONewParty.csv` na plik programu Excel i zaimportuj go do aplikacji Finance and Operations. Jeśli import CSV działa dla Ciebie, możesz zaimportować plik CSV bezpośrednio. Uruchomienie importowania może potrwać kilka godzin, w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
 
     ![Importowanie rekordów strony Datavers](media/data-factory-import-party.png)
 
@@ -198,4 +203,4 @@ Te wymagania wstępne są wymagane:
 
 ## <a name="learn-more-about-the-template"></a>Dowiedz się więcej o szablonie
 
-Komentarze do szablonu można znaleźć w pliku [readme.md](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).
+Dodatkowe informacje dotyczące tego szablonu można znaleźć w sekcji [Pliku Readme —Komentarze do Azure Data Factory](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema/readme.md).

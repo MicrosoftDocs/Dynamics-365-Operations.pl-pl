@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814737"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115030"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -71,6 +71,14 @@ Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykony
 
 - Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
 
+### <a name="enable-job-search"></a>Włącz wyszukiwanie zadań
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Ta funkcja umożliwia dodanie pola wyszukiwania do listy zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy. Jeżeli chcesz z niej skorzystać, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Wyszukiwanie zadań dla interfejsu wykonania hal produkcyjnych
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Praca z konfiguracjami wykonania hali produkcyjnej
 
 Aby utworzyć i zarządzać konfiguracjami urządzeń, przejdź do **Kontrola produkcji \> Konfiguracja \> Uruchomienie produkcji \> Konfigurowanie interfejsu wykonania hal produkcyjnych**. Na stronie **Konfigurowanie interfejsu wykonania hal produkcyjnych** wyświetlana jest lista istniejących konfiguracji. Na tej stronie można wykonać następujące akcje:
@@ -81,6 +89,7 @@ Aby utworzyć i zarządzać konfiguracjami urządzeń, przejdź do **Kontrola pr
 Następnie skonfiguruj różne ustawienia dla wybranej konfiguracji urządzenia. Dostępne są następujące pola:
 
 - **Tylko wejścia i wyjścia** - dla tej opcji ustaw wartość *Tak*, aby utworzyć uproszczony interfejs, który zapewnia tylko funkcje rejestracji i wyrejestrowywania. Spowoduje to wyłączenie większości innych opcji na tej stronie. Aby można było włączyć tę opcję, należy usunąć wszystkie wiersze ze skróconej karty **Wybór kart**.
+- **Włącz wyszukiwanie** — ustaw tę opcję na wartość *Tak*, aby uwzględnić pole wyszukiwania na liście zadań. Pracownicy mogą znaleźć konkretną pracę, wpisując jej ID lub znaleźć wszystkie prace dla konkretnego zlecenia, wpisując ID zlecenia. Pracownicy mogą wprowadzać identyfikator za pomocą klawiatury lub skanując kod kreskowy.
 - **Zgłoś ilość przy wyjściu** – wartość *Tak* powoduje, że pracownicy będą monitowani o raportowanie informacji zwrotnych dotyczących zadań w toku podczas wyrejestrowywania. Jeśli ustawiono wartość *Nie*, pracownik nie będzie monitowany.
 - **Zablokuj pracownika** — Jeśli ta opcja ma wartość *Nie*, pracownicy są wylogowani natychmiast po dokonaniu rejestracji (np. nowego zadania). Urządzenie wróci do strony rejestracji. Jeśli ta opcja jest ustawiona na wartość *Tak*, pracownicy pozostaną zalogowani na urządzeniu z kartą pracy. Pracownik może jednak wylogować się ręcznie, aby inny pracownik mógł się zalogować, gdy urządzenie karty będzie nadal działać na tym samym koncie użytkownika systemu. Aby uzyskać więcej informacji o tych typach kont, zobacz, zobacz temat [Przypisani użytkownicy](config-job-card-device.md#assigned-users).
 - **Użyj faktycznego czasu rejestracji** – Ustaw to na *Tak*, aby ustawić czas każdej nowej rejestracji na dokładny czas, w którym pracownik przesłał rejestrację. Jeśli ta opcja jest ustawiona na *Nie*, w zamian zostanie użyta godzina logowania. Zazwyczaj ustawienie to jest ustawione na *Tak*, jeśli włączono opcję **Zablokuj pracownika** i/lub opcję **Jeden pracownik** ustawioną na *Tak*, gdzie pracownik często pozostaje zalogowany przez dłuższy okres czasu.

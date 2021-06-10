@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d6e5725255c43b808d656a46cbcdeca4d200b768
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 3509763c03ecc0e847c72828d14b172401df75b0
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920164"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115152"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Wersje inżynieryjne i kategorie produktów inżynieryjnych
 
@@ -48,7 +48,8 @@ Kiedy używasz produktów inżynierskich, każdy produkt ma co najmniej jedną w
 - Firma inżynieryjna, która stworzyła produkt i jest jego właścicielem (aby uzyskać więcej informacji, zobacz [Reguły dotyczące firm inżynieryjnych i własności danych](engineering-org-data-ownership-rules.md).)
 - Powiązane dokumenty inżynieryjne, takie jak instrukcja montażu, instrukcje użytkownika, zdjęcia i łącza
 - Atrybuty inżynieryjne (więcej informacji znajdziesz w [Atrybuty inżynieryjne i wyszukiwanie atrybutów inżynieryjnych](engineering-attributes-and-search.md)).
-- BOM inżynieryjne
+- Lista składowa (BOM) dla produktów inżynieryjnych
+- Formuły dla procesu wytwarzania produktów
 - Marszruty inżynieryjne
 
 Możesz zaktualizować te dane w istniejącej wersji lub utworzyć nową wersję, używając *zlecenia zmiany inżynieryjnej*. (Aby uzyskać więcej informacji, należy zapoznać się z tematem [Zarządzanie zmianami dotyczącymi produktów inżynieryjnych](engineering-change-management.md).) W przypadku utworzenia nowej wersji produktu system skopiuje wszystkie dane związane z konstrukcją techniczną do nowej wersji. Następnie można zmodyfikować dane dla nowej wersji. W ten sposób możesz śledzić określone dane dla każdej kolejnej wersji. Aby porównać różnice między kolejnymi wersjami inżynieryjnymi, sprawdź kolejność zmian inżynieryjnych, która obejmuje typy zmian, które wskazują wszystkie zmiany.
@@ -110,6 +111,8 @@ Ustaw następujące pola na skróconej karcie **Szczegóły** kategorii produkt�
 | Pole | opis |
 |---|---|
 | Typ produktu | Określ, czy kategoria dotyczy produktów lub usług. |
+| Typ produkcji | To pole jest wyświetlane tylko po włączeniu [zarządzania zmianami formuły](manage-formula-changes.md) w systemie. Wybierz typ produkcji, do którego odnosi się ta kategoria produktów inżynieryjnych:<ul><li>**Element planowania** – tej kategorii inżynieryjnej należy używać do zarządzania zmianami formuły w przypadku planowania towarów. Pozycje planowania wykorzystują formuły. Przypominają one produkty typu Formuła ale są wykorzystywane do wytwarzania jedynie produktów ubocznych i współproduktów, a nie produktów końcowych. Formuły są wykorzystywane podczas produkcji procesowej.</li><li>**BOM** – ta kategoria inżynieryjna jest używana do zarządzania produktami inżynieryjnymi, które nie używają formuł i zazwyczaj (ale niekoniecznie) zawierają BOM.</li><li>**Formuła** – tej kategorii inżynieryjnej należy używać do zarządzania zmianami formuły w przypadku zakończonych produktów. Te pozycje będą mieć formułę, ale nie BOM. Formuły są wykorzystywane podczas produkcji procesowej.</li></ul> |
+| Ilość efektywna | Ta opcja jest wyświetlana tylko po włączeniu [zarządzania zmianami formuły](manage-formula-changes.md) w systemie. Ta pozycja jest dostępna tylko wtedy, gdy w polu **Typ produkcji** ustawiono *pozycję planowania* lub *formułę*. Ustaw tę opcję na wartość *Tak*, jeśli ta kategoria inżynieryjna służy do zarządzania pozycjami, które wymagają obsługi wsadowej. |
 | Śledź wersje w transakcjach | Wybierz, czy wersja produktu powinna być stemplowana na wszystkich transakcjach (wpływ logistyczny). Na przykład, jeśli śledzisz wersję w transakcjach, każde zamówienie sprzedaży pokaże, która konkretna wersja produktu została sprzedana w tym zamówieniu sprzedaży. Jeśli nie śledzisz wersji w transakcjach, zamówienia sprzedaży nie pokażą, która konkretna wersja została sprzedana. Zamiast tego zawsze pokazuje najnowszą wersję.<ul><li>Jeśli ta opcja ma wartość *Tak*, dla produktu jest tworzony produkt główny, a każda wersja produktu będzie wariantem korzystającym z wymiaru produktu *wersja*. Pole **Podtyp produktu** jest automatycznie ustawiane na *Produkt główny* i w polu **Grupa wymiarów produktu** należy wybrać grupę wymiarów produktu, w której jest aktywny wymiar *wersji*. Wyświetlone zostaną tylko grupy wymiarów produktów, w których *wersja* jest aktywnym wymiarem. Aby utworzyć nowe grupy wymiarów produktu, należy wybrać przycisk **Edytuj** (symbol ołówka).</li><li>Jeślo ta opcja jest ustawiona na *Nie*, wymiar produktu *wersja* nie zostanie użyty. Następnie możesz wybrać, czy chcesz utworzyć produkt lub produkt główny, który używa innych wymiarów.</li></ul><p>Ta opcja jest często używana w przypadku produktów, które mają różnicę kosztów między wersjami lub produktów, w przypadku których obowiązują inne warunki w odniesieniu do klienta. Dlatego ważne jest, aby wskazać, która wersja została użyta w każdej transakcji.</p> |
 | Podtyp produktu | Wybierz, czy kategoria będzie zawierać produkty, czy wzorce produktów. W przypadku produktów głównych będą używane wymiary produktu.
 | Grupa wymiarów produktu | Wersje **Śledź wersje w transakcjach** pomagają w wybraniu grupy wymiarów produktu. Jeśli określono, że chcesz śledzić wersję w transakcjach, zostaną wyświetlone grupy wymiarów produktu, w których jest używany wymiar *wersji*. W przeciwnym razie zostaną wyświetlone tylko grupy wymiarów produktów, w których wymiar *wersja* nie jest używany. |
@@ -139,7 +142,10 @@ Dla każdego dodawanego wiersza do siatki należy określić następujące pola:
 
 ### <a name="readiness-policy-fasttab"></a>Skrócona karta Zasady gotowości
 
-Aby wybrać zasady gotowości dotyczące produktów należących do tej kategorii, należy skorzystać z pola **Zasady gotowości produktów**. Aby uzyskać więcej informacji, zobacz temat [Gotowość produktu](product-readiness.md).
+Użyj pola **Polityka gotowości produktu**, aby wybrać politykę gotowości, która powinna być stosowana do produktów tworzonych w oparciu o tę kategorię inżynieryjną. Aby uzyskać więcej informacji, zobacz temat [Gotowość produktu](product-readiness.md).
+
+> [!NOTE]
+> Pole **Polityka gotowości produktu** działa nieco inaczej, jeśli w systemie włączono funkcję *Kontrola gotowości produktu*. (Ta funkcja umożliwia stosowanie zasad gotowości do standardowych produktów \[nie inżynierskich\]). Aby uzyskać więcej informacji, zobacz temat [Przypisywanie zasad gotowości do produktów standardowych i inżynieryjnych](product-readiness.md#assign-policy).
 
 ### <a name="release-policy-fasttab"></a>Skrócona karta Zasady zwalniania
 

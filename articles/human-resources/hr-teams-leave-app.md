@@ -2,13 +2,12 @@
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953419"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097266"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -33,21 +32,13 @@ Aplikacja Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia
 
 Aplikację Dynamics 365 Human Resources można znaleźć w sklepie rozwiązania Teams.
 
-1. W rozwiązaniu Microsoft Teams wybierz symbol wielokropka.
-
-   ![Symbol wielokropka w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-ellipses.png)
+1. W Microsoft Teams przejdź do listy aplikacji.
  
 2. Wyszukaj aplikację Dynamics 365 Human Resources, a następnie wybierz kafelek **Human Resources**.
 
-   ![Kafelek HR w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Wybierz przycisk **Dodaj**, aby zainstalować aplikację.
 
-   ![Instalacji aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-in-store.png)
-
 Jeśli aplikacja nie zaloguje Cię automatycznie, wybierz kartę **Ustawienia**, aby się zalogować.
-
-![Karta Ustawienia w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka. 
@@ -61,20 +52,24 @@ Jeśli masz dostęp do więcej niż jednego wystąpienia aplikacji Human Resourc
 
 Po zainstalowaniu aplikacji zostanie wyświetlony komunikat powitalny informujący o typach akcji, które bot może wykonać w Twoim imieniu.
 
-![Komunikat powitalny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Podczas pierwszej interakcji z botem być może trzeba będzie się zalogować. Jeśli nie widzisz okna dialogowego logowania, sprawdź ustawienia przeglądarki, aby zezwolić na wyskakujące okienka.
 
 Możesz poprosić bota o wykonanie następujących zadań:
 
-- Uruchomienie wniosku o urlop w Twoim imieniu.
+- Zobacz swoje aktualne salda urlopów. Na przykład wyślij wiadomość o treści „Wyświetlanie salda urlopów”.
+
+- Uruchomienie wniosku o urlop w Twoim imieniu. Na przykład, wyślij wiadomość o treści „Weź wolne” lub „Chcę wziąć wolne w następny czwartek i piątek”, aby być bardziej konkretnym w żądaniu urlopu dla typu urlopu. 
 
   ![Rozpoczynanie rozmowy z wnioskami o urlop w Teams](./media/hr-teams-leave-app-initiate.png)
 
 - Bot czatu wypełni dla Ciebie prośbę o urlop. Wybierz opcję **Żądanie czasu wolnego** i edytuj szczegóły swojego żądania.
 
-  ![Edytuj szczegóły wniosku urlopowego](./media/hr-teams-leave-app-details.png)
+   Aby przesłać wnioski urlopowe dotyczące wielu typów urlopów dla tej samej daty, wybierz z menu **Więcej opcji** opcję **Podziel dzień**. 
+
+   Jeśli wybierzesz urlop na pół dnia, a jednostką wniosku o urlop są dni, możesz określić, czy chcesz wnioskować o wolne za pierwsze pół dnia, czy za drugie pół dnia, wybierając opcję **Definicja połowy dnia** z menu **Więcej opcji**.
+   
+   ![Definicje połowy dnia](./media/HalfDayDefinitions.png)
 
 - Po zakończeniu edytowania szczegółów wniosku urlopowego wybierz opcję **Prześlij**, aby przesłać go do zatwierdzenia.
 
@@ -91,42 +86,36 @@ Na karcie **Czas wolny** można wyświetlić następujące informacje:
 - Wnioski dotyczące czasu wolnego
 
 - Wnioski o urlopu w wersji roboczej
-
-![Karta Czas wolny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Tworzenie nowego wniosku
 
 1. Aby utworzyć nowy wniosek o urlop, wybierz pozycję **Nowy wniosek**.
 
-   ![Nowy wniosek w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Wprowadź dzień lub dni, w które chcesz wziąć urlop, a następnie wybierz pozycję **Dodaj**.
 
-   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams](./media/TimeOffHours.png)
 
 3. Wprowadź kod przyczyny, jeśli ma on zastosowanie. Wprowadź komentarze i dodaj załączniki.
 
-4. Po zakończeniu wprowadzania informacji wpisz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wpisać **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
+4. Jeśli chcesz przesłać kilka wniosków o urlop na tę samą datę dla różnych typów urlopu., wybierz z menu **Więcej opcji** opcję **Podziel dzień**.
+
+5. Wybierz opcję **Definicja połowy dnia**, aby określić, czy chcesz złożyć wniosek o pierwszą połowę, czy drugą połowę dnia wolnego. Ta opcja jest dostępna w przypadku, gdy jednostka wniosku urlopowego jest w dniach, a wnioskowana ilość wynosi 0,5 dnia.
+
+6. Po zakończeniu wprowadzania informacji wybierz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
 
 ### <a name="manage-draft-requests"></a>Zarządzanie wnioskami w wersji roboczej
 
 1. Wybierz kartę **Wersje robocze**.
 
-   ![Karta Wersje robocze w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Wybierz symbol ołówka, aby edytować wniosek, lub symbol kosza, aby usunąć wniosek.
 
 3. Wprowadź potrzebne zmiany. Po zakończeniu wprowadzania informacji wpisz **Prześlij**, aby przesłać wniosek do zatwierdzenia. Możesz również wybrać pozycję **Zapisz jako wersję roboczą**, aby wrócić do wniosku później.
-
-   ![Edytowanie wersji roboczej w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Odpowiadanie na powiadomienia Teams
 
 Gdy użytkownik lub pracownik, dla którego użytkownik jest osobą zatwierdzającą prześle wniosek urlopowy, użytkownik otrzyma powiadomienie w aplikacji Human Resources w Teams. Możesz wybrać powiadomienie, aby je wyświetlić. Powiadomienia są również wyświetlane w obszarze **Czatu**.
 
 Jeśli jesteś osobą zatwierdzającą, możesz wybrać opcję **Zatwierdzanie** lub **Odmowa** w powiadomieniu. Można również podać opcjonalny komunikat.
-
-![Wnioski o urlop w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Wysyłanie nadchodzących informacji o czasie do współpracujących
 
@@ -138,15 +127,9 @@ Po zainstalowaniu aplikacji Human Resources dla Teams można łatwo wysyłać do
 
 2. Wybierz żądanie opuszczenia, które chcesz udostępnić. Jeśli chcesz udostępnić wersję roboczą wniosku urlopowego, najpierw wybierz opcję **Wersje robocze**.
 
-   ![Wybierz nadchodzące żądanie urlopu do udostępnienia](./media/hr-teams-leave-app-chat-search.png)
-
 Twoje żądanie opuszczenia będzie wyświetlane w rozmowie.
 
-![Karta z prośbą o urlop w Human Resources](./media/hr-teams-leave-app-chat-card.png)
-
-Jeśli udostępniono wersję roboczą żądania, będzie ona wyświetlana jako wersja robocza:
-
-![Karta wersja robocza z prośbą o urlop w Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
+Jeśli udostępniono wersję roboczą żądania, będzie ona wyświetlana jako wersja robocza.
 
 ## <a name="view-your-teams-leave-calendar"></a>Wyświetlanie kalendarza urlopów zespołu
 
@@ -155,8 +138,6 @@ Jeśli jesteś menedżerem z bezpośrednimi podwładnymi, możesz wyświetlić z
 1. W aplikacji zasoby ludzkie w zespołach wybierz opcję **Czas wolny**.
 
 2. Wybierz **Kalendarz zespołu**. W kalendarzu są wyświetlane zatwierdzone i oczekujące urlopy bezpośrednich podwładnych.
-
-   ![Wyświetl kalendarz w aplikacji Human Resources w Teams](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Jeśli nie możesz zobaczyć kalendarza zespołu, poproś administratora o jego włączenie. Aby uzyskać więcej informacji, zobacz temat [Instalowanie i konfigurowanie](hr-admin-teams-leave-app.md#install-and-setup).

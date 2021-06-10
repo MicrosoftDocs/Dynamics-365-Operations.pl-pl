@@ -2,13 +2,12 @@
 title: Konfigurowanie reguł i opcji uprawnień
 description: Określenie reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w module Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1c5ad568d2e1dd14acdfb3848cace035abfc0507
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
+ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791516"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6093927"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień
 
@@ -39,9 +38,9 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
 
 2. Na karcie **Reguły uprawnienia** wybierz opcję **Nowy**, aby utworzyć regułę uprawnienia. Aby wyświetlić plany skojarzone z regułą uprawnienia, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Reguła uprawnienia** | Unikatowy identyfikator reguły uprawnienia. |
    | **Opis** | Opis reguły uprawnienia. |
@@ -57,9 +56,9 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Okres rejestracji** | Okres, w którym jest dozwolone rejestrowanie nowo zatrudnionej osoby. Jeśli tę opcję ustawisz również w parametrach, tamto ustawienie ma pierwszeństwo wobec tego. |
    | **Użyj stanu wcześniejszego zatrudnienia** | Określa, czy w regule uprawnienia do świadczeń ma być używany stan zatrudnienia poprzedniego pracownika etatowego. Można na przykład określić regułę uprawnienia, która obejmuje okres oczekiwania na pokrycie dla wszystkich pracowników, którzy przeszli ze stanu **Zwolniono** na **Zatrudniono** w ciągu 90 dni od poprzedniego zatrudnienia. |
 
-4. W obszarze **Kryteria dodatkowe** wybierz następujące opcje i w razie potrzeby dodaj informacje:
+4. W obszarze **Kryteria dodatkowe** wybierz następujące opcje i w razie potrzeby dodaj informacje.
 
-   | Opcja | Opis |
+   | Opcja | opis |
    | --- | --- |
    | **Uprawniony zakres wieku** | Określa zakres lub zakresy wieku wymagane do spełnienia reguły uprawnienia. |
    | **Uprawniony dział** | Określa dział lub działy, do których pracownik musi należeć, aby spełniać regułę uprawnienia. |
@@ -68,7 +67,7 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Funkcja stanowiska uprawnienia** | Określa funkcję lub funkcje stanowiska spełniające regułę uprawnienia. Na przykład Sprzedawcy lub Serwisanci. |
    | **Typ zadania uprawnienia** | Określa typ lub typy funkcji spełniające regułę uprawnienia. Na przykład Pracownik biurowy lub Dyrektor. |
    | **Uprawniona firma** | Określa firmę lub firmy, do których ma zastosowanie reguła uprawnienia. Na przykład Contoso Entertainment System USA. |
-   | **Region uprawnionego wynagrodzenia** | Określa lokalizację pracownika etatowego spełniającą regułę uprawnienia. Na przykład Środkowe stany USA. |
+   | **Uprawniony region wynagrodzenia** | Określa lokalizację pracownika etatowego spełniającą regułę uprawnienia. Na przykład Środkowe stany USA. |
    | **Uprawnione stanowisko** | Określa stanowisko lub stanowiska spełniające regułę uprawnienia. Na przykład Asystent w dziale kadr lub Kierownik działu kadr. |
    | **Typ kwalifikującego się stanowiska** | Określa typ lub typy stanowisk spełniające regułę uprawnienia. Na przykład Pełny etat. |
    | **Stan uprawniony** | Określa stany/województwa/prowincje itd. spełniające regułę uprawnienia. Na przykład Dakota Północna USA lub Kolumbia Brytyjska, Kanada. |
@@ -76,9 +75,9 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Uprawniony związek** | Określa związki zawodowe, do których przynależność spełnia regułę uprawnienia. Na przykład Amerykański związek zawodowy operatorów wózków widłowych. </br></br>W przypadku używania reguły uprawnienia z kryterium związku zawodowego rekord przynależności do związku musi mieć wypełnioną datę końcową. Nie można pozostawić tego pola pustego. |
    | **Uprawniony kod pocztowy** | Określa kody pocztowe spełniające regułę uprawnienia. Na przykład 58104. |
 
-5. W obszarze **Dodatkowe szczegóły** można obejrzeć następujące dodatkowe informacje:
+5. W obszarze **Dodatkowe szczegóły** można obejrzeć następujące dodatkowe informacje.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Pole uprawnionego użytkownika** | Określa dodatkowe reguły uprawnień oparte na polach zdefiniowanych przez klienta. |
    | **Typ uprawnienia** | Określa kategorię kryteriów wybranych w obszarze **Kryteria dodatkowe**. |
@@ -87,6 +86,72 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
 
 6. Wybierz opcję **Zapisz**.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Używanie pól niestandardowych w regułach kwalifikowalności
+
+[Pola niestandardowe](hr-developer-custom-fields.md) można utworzyć w Human Resources, aby śledzić dodatkowe informacje. Pola te mogą być dodawane bezpośrednio do interfejsu użytkownika, a kolumna jest dynamicznie dodawana do tabeli bazowej.  
+
+Pola niestandardowe mogą być używane w procesie kwalifikacji. Reguły kwalifikowalności mogą wykorzystywać jedną lub więcej wartości pól niestandardowych w celu określenia kwalifikowalności pracownika.  Aby dodać niestandardowe pole do istniejącej reguły lub utworzyć nową, przejdź do menu **Zarządzanie świadczeniami > Łącza > Konfiguracja > Reguły uprawnień > Uprawnienia pola niestandardowego**. Na tej stronie można utworzyć regułę, która używa jednego lub wielu pól niestandardowych i można zdefiniować wiele wartości dla każdego pola niestandardowego w celu określenia kwalifikowalności.
+
+W poniższych tabelach znajdują się pola niestandardowe, które mogą być używane w przetwarzaniu kwalifikacji:
+
+- Pracownik (HcmWorker)  
+- Zadanie (HcmJob)  
+- Stanowisko (HcmPosition)  
+- Szczegóły dotyczące stanowiska (HcmPositionDetail)  
+- Przypisanie pracownika do stanowiska  
+- Zatrudnienie (HcmEmployment)  
+- Szczegóły dotyczące zatrudnienia (HcmEmploymentDetails)  
+- Szczegóły zadania (HcmJobDetails)  
+
+W procesie kwalifikowania obsługiwane są następujące typy pól niestandardowych:
+
+- Tekst  
+- Lista wyboru  
+- Identyfikator  
+- Dziesiętny  
+- Pole wyboru  
+
+Poniższa tabela przedstawia informacje o polu niestandardowym formularza kwalifikującego.
+
+| Pole  | opis |
+|--------|-------------|
+| Imię i nazwisko | Nazwa tworzonego kryterium. |
+| Nazwa tabeli | Nazwa tabeli zawierającej pole własne, które jest używane dla reguły kwalifikacji. |
+| Nazwa pola | Pole, które będzie używane dla reguły kwalifikowalności. |
+| Typ operatora | Wyświetla operator użyty w konfiguracji kwalifikowalności pola niestandardowego. |
+| Wartość | Wyświetla wartość użytą w konfiguracji kwalifikowalności pola niestandardowego. |
+
+## <a name="eligibility-logic"></a>Logika uprawnień
+
+Poniższe sekcje opisują, w jaki sposób przetwarzane są dane dotyczące kwalifikowalności do świadczeń.
+
+### <a name="rules-assigned-to-a-plan"></a>Reguły przypisane do planu 
+Jeśli do programu świadczeń przypisanych jest wiele zasad kwalifikowalności, pracownik musi spełnić co najmniej jedną z nich, aby kwalifikować się do udziału w programie świadczeń.  W poniższym przykładzie pracownik musi spełniać wymagania reguły **Typ zadania** lub reguły **Aktywnych pracowników**.
+
+![Pracownik musi spełniać wymagania reguły Typ zadania lub reguły Aktywnych pracowników.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Kryteria w ramach zasady kwalifikowalności 
+W ramach reguły definiuje się kryteria, które składają się na regułę. W przykładzie powyżej kryteria reguły **Typ stanowiska** to Typ stanowisk = dyrektorzy. W związku z tym pracownik musi być dyrektorem, aby móc się kwalifikować. Jest to reguła, w której występuje tylko jedno kryterium.
+
+Można zdefiniować reguły, które mają wiele kryteriów. W przypadku zdefiniowania wielu kryteriów w ramach reguły kwalifikacji, pracownik musi spełnić każde kryterium w ramach reguły, aby kwalifikować się do planu świadczeń. 
+
+Na przykład powyższa reguła **Aktywni pracownicy** składa się z następujących kryteriów. Aby pracownik był uprawniony na podstawie reguły **Aktywni pracownicy**, musi być zatrudniony w firmie USMF *i* mieć typ stanowiska pełnoetatowego.  
+
+![Kryteria w ramach zasady kwalifikowalności](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Wiele warunków w ramach kryteriów
+
+Reguły mogą być dalej rozbudowywane w celu wykorzystania wielu warunków w ramach jednego kryterium. Pracownik musi spełnić co najmniej jeden warunek, aby się kwalifikować. Aby użyć przykładu powyżej, można dodatkowo rozwinąć regułę **Aktywni pracownicy**, tak aby uwzględnić pracowników, którzy są także pracownikami półetatowymi. W związku z tym pracownik musi być pracownikiem z firmy USMF *oraz* pracownikiem zatrudnionym na pełny etat lub na część etatu.  
+
+![Wiele warunków w ramach kryteriów](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Warunki kwalifikowalności w ramach kryterium pola niestandardowego 
+Podobnie jak powyżej, pola niestandardowe mogą być używane podczas tworzenia reguł kwalifikowalności i działają w ten sam sposób. Na przykład, możesz chcieć zaoferować zwrot kosztów Internetu pracownikom z Fargo i Kopenhagi, którzy pracują w domu, ponieważ w tych lokalizacjach koszty Internetu są wyższe. W tym celu należy utworzyć dwa niestandardowe pola: **Lokalizacja biura** (lista wyboru) i **Praca z domu** (pole wyboru). Następnie utwórz regułę o nazwie **Pracownicy zdalni**. Kryterium reguły jest **lokalizacja biura = Fargo** lub **Kopenhaga** *oraz* wartość **praca z domu = Tak**.
+
+Należy skonfigurować niestandardowe reguły uprawnienia zgodnie z poniższym obrazem. 
+
+![Warunki kwalifikowalności w ramach kryterium pola niestandardowego](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Konfigurowanie pakietów
 
 Pakiety to zestawy powiązanych planów świadczeń. Pakietów świadczeń można używać do grupowania planów świadczeń, które pracownik musi wybrać, aby się zarejestrować w niektórych planach świadczeń uzależnionych od rejestracji w innych planach świadczeń. Przykłady sytuacji, kiedy może być konieczne użycie pakietów:
@@ -99,9 +164,9 @@ Pakiety to zestawy powiązanych planów świadczeń. Pakietów świadczeń możn
 
 2. Na karcie **Pakiety** wybierz opcję **Nowy**, aby utworzyć pakiet. Aby wyświetlić plany skojarzone z pakietem, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Pakiet** | Unikatowy identyfikator pakietu. |
    | **Opis** | Opis pakietu. |
@@ -119,9 +184,9 @@ Okresy wskazują, kiedy świadczenia obowiązują i kiedy pracownicy mogą się 
 
 2. Na karcie **Okresy** wybierz opcję **Nowy**, aby utworzyć okres. Aby uruchomić proces, który dołączy wszystkie ważne aktywne plany świadczeń do okresu świadczeniowego, wybierz opcję **Dołącz plany**. Aby wyświetlić plany skojarzone z pakietem, wybierz opcję **Dołączone plany**. 
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Okres** | Unikatowy identyfikator okresu. |
    | **Data i godzina wejścia w życie** | Data i godzina, od kiedy okres świadczeniowy jest aktywny. |
@@ -141,9 +206,9 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
 
 2. Na karcie **Okresy** wybierz opcję **Programy kredytu elastycznego**.
 
-3. Wybierz program kredytu elastycznego, który ma zostać zastosowany. Okno zawiera następujące pola:
+3. Wybierz program kredytu elastycznego, który ma zostać zastosowany. Okno zawiera następujące pola.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | Identyfikator kredytu świadczenia | Unikatowy identyfikator programu kredytu elastycznego. |
    | Opis | Opis programu kredytu elastycznego. | 
@@ -157,15 +222,15 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
 
 ## <a name="configure-programs"></a>Konfigurowanie programów
 
-Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień. Reguły uprawnień można zdefiniować dla całego programu zamiast dla poszczególnych planów. Może to być na przykład program z przeliczeniem na pełne etaty w Contoso Canada albo program dla członków dyrekcji w Contoso Europe. 
+Programy to zbiory planów świadczeń, które mają wspólne reguły uprawnień. Reguły uprawnień można zdefiniować dla całego programu zamiast dla poszczególnych planów. Na przykład program Contoso Canada FTE lub Contoso Europe na poziomie kierowników. 
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Reguły i opcje uprawnień**.
 
 2. Na karcie **Programy** wybierz opcję **Nowy**, aby utworzyć program. Aby wprowadzić wyjątki dla pracowników, którzy nie spełniają wymagań reguł uprawnień, wybierz opcję **Zastąpienie reguły uprawnienia**. Aby wyświetlić plany skojarzone z programem, wybierz opcję **Dołączone plany**.
 
-3. Określ wartości dla następujących pól:
+3. Określ wartości dla następujących pól.
 
-   | Pole | Opis |
+   | Pole | opis |
    | --- | --- |
    | **Program** | Unikatowy identyfikator programu. |
    | **Opis** | Opis programu. | 
