@@ -14,7 +14,9 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacja Platform update dla wersji 10.0.19 (lipiec 2021)
+                - name: Aktualizacja Platform update dla wersji 10.0.20 (lipiec 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Aktualizacja Platform update dla wersji 10.0.19 (czerwiec 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Aktualizacja Platform update dla wersji 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nowości i zmiany w rozwiązaniu Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Przewodnik użytkownika usługi Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Przygotowywanie projektu
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Zarządzanie cyklem życia aplikacji
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Właściciel zespołu określony przez użytkownika
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Jak odłączyć i połączyć środowiska podwójnego zapisu
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Mapowanie koncepcji między aplikacjami
                   items:
                     - name: Zintegrowane dane główne odbiorcy
@@ -1166,6 +1170,8 @@
               items:
                 - name: Omówienie dodatków
                   href: power-platform/add-ins-overview.md
+            - name: Zasady i komunikacja
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Platforma mobilna
           items:
             - name: Zasoby platformy mobilnej

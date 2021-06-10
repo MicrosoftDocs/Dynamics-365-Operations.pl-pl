@@ -94,7 +94,9 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.19 (lipiec 2021)
+                    - name: Rozwiązanie Commerce w wersji 10.0.20 (lipiec 2021)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Rozwiązanie Commerce w wersji 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -556,6 +558,8 @@
                   href: dev-itpro/manage-bing-maps.md
                 - name: Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
                   href: dev-itpro/pickup-timeslots.md
+                - name: 'Konfigurowanie wartości wymiarów produktu, które mają być wyświetlane jako próbki'
+                  href: dev-itpro/dimensions-swatch.md
         - name: Merchandising produktów i usług
           items:
             - name: 'Kategorie, produkty i asortymenty'
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: Zastosowanie ustawień jednostki miary
                   href: unit-of-measure.md
+                - name: Zastosowanie ustawień wyświetlania dla wymiarów produktu
+                  href: dimension-settings.md
             - name: Zarządzanie zawartością witryny
               items:
                 - name: Sposoby dodawania zawartości
@@ -1946,7 +1952,7 @@
                   items:
                     - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Ulepszenia w śledzeniu wyników wygenerowanych raportów i porównaniach z wartościami bazowymi
+                    - name: Ulepszanie śledzenia wyników wygenerowanych raportów w celu dokonywania porównań z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
                     - name: Automatyczne testowanie za pomocą modułu raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
@@ -2262,6 +2268,8 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Ustawienia aplikacji
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Konfigurowanie globalnych ustawień konfiguracji konstruktora witryn na podstawie włączonych funkcji
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Plik ustawień platformy
                       href: e-commerce-extensibility/platform-settings.md
                     - name: Rozszerzenie definicji modułu
@@ -2366,6 +2374,8 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Zmiany procesu programowania i ALM między wersjami 10.0.10 i 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania
+                  href: dev-itpro/build-pipeline.md
                 - name: Scalanie systemów kompilacji dla aplikacji Commerce i Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Dokonywanie migracji zestawu SDK do Retail z Visual Studio 2015 do Visual Studio 2017
@@ -2386,6 +2396,8 @@
               items:
                 - name: Układy ekranu punktu sprzedaży
                   href: pos-screen-layouts.md
+                - name: Aplikacja Store Commerce w rozwiązaniu Microsoft Dynamics 365 Commerce
+                  href: dev-itpro/store-commerce.md
                 - name: Otwieranie adresu URL w punkcie sprzedaży
                   href: Open-URL-in-POS.md
                 - name: Instalowanie projektanta układów punktu sprzedaży

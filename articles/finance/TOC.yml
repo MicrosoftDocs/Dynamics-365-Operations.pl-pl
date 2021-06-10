@@ -72,6 +72,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.20 (lipiec 2021)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Rozwiązanie Finance w wersji 10.0.19 (lipiec 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Rozwiązanie Finance w wersji 10.0.18 (maj 2021)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Brakujące salda otwarcia dla zamknięcia na koniec roku
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Otwieranie szablonów arkuszy finansowych w pakiecie Office
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Raportowanie finansowe
           items:
             - name: Rozpoczynanie pracy z raportowaniem finansowym
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Dodawanie pól danych w integracji podatków przy użyciu rozszerzeń
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Wiele numerów rejestracji podatku VAT
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Ustawianie środowiska wyszukiwania danych głównych
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Wiele numerów rejestracji podatku VAT
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Raportowanie dla wielu numerów rejestracji podatku VAT
+                      items:
+                        - name: Raportowanie dla wielu numerów rejestracji podatku VAT
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Holandia — raportowanie
+                          items:
+                            - name: Deklaracja VAT
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: Lista sprzedaży do UE
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Aktualizacje wymagane przepisami prawa
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -2388,6 +2402,20 @@
                               href: localizations/apac-ind-GST-tax-returns.md
                             - name: Włączanie przetwarzania wsadowego wielu partii dla raportów GSTR
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: Rozwiązywanie problemów dotyczących podatku od towarów i usług (GST)
+                          items:
+                            - name: Nieprawidłowa kwota podatku po obliczeniu
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Błędy konfiguracji podatku
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Podatek nie jest obliczany
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Aktywowanie reguł kompensacji trwa dłużej niż oczekiwano
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: Rekord TaxTrans lub załącznik nie są generowane
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: Identyfikator transakcji podatkowej jest niepoprawny
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Podatki bezpośrednie
                   items:
                     - name: Potrącona zaliczka na podatek — Indie
@@ -2844,9 +2872,13 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Plik audytu (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: Deklaracja VAT (Holandia)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Lista sprzedaży do UE
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norwegia
               items:
-                - name: Norwegia – omówienie
+                - name: Norwegia — omówienie
                   href: localizations/norway.md
                 - name: Formaty płatności odbiorcy i dostawcy
                   href: localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -4123,7 +4155,7 @@
                   items:
                     - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Ulepszenia w śledzeniu wyników wygenerowanych raportów i porównaniach z wartościami bazowymi
+                    - name: Ulepszanie śledzenia wyników wygenerowanych raportów w celu dokonywania porównań z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Automatyczne testowanie za pomocą modułu raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
