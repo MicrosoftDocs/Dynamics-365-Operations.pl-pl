@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017062"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085481"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Zmienianie waluty rozliczeniowej lub raportowania
 
@@ -31,12 +31,12 @@ W tym temacie wyjaśniono sposób zmiany waluty rozliczeniowej lub raportowania 
 Istnieje konieczność zmiany waluty rozliczeniowej lub raportowania lub dodania waluty raportowania do konfiguracji księgi. Tego rodzaju sytuacja ma zazwyczaj miejsce w następujących scenariuszach:
 
 - W czasie konfigurowania firmy określono niewłaściwą walutę rozliczeniową lub walutę raportowania. Teraz trzeba zmienić tę walutę.
-- W czasie konfigurowania firmy nie określono waluty raportowania. (Waluta raportowania jest opcjonalna). Teraz okazało się, że dodanie waluty raportowania może okazać się przydatne.
+- Waluta raportowania została określona podczas konfigurowania firmy, ale organizacja chce ją teraz usunąć.
+- Organizacja uaktualnia rozwiązanie Microsoft Dynamics 365 Finance lub przeprowadza migrację do niego i chce zmienić walutę rozliczeniową lub raportowania.
 
 Organizacja, która nie używała dotychczas funkcji obsługi dwóch walut, chce rozpocząć korzystanie z niej. Tego rodzaju sytuacja ma zazwyczaj miejsce w scenariuszach opisanych poniżej.
 
-- Waluta raportowania została określona podczas konfigurowania firmy, ale organizacja chce ją teraz usunąć.
-- Organizacja uaktualnia rozwiązanie Microsoft Dynamics 365 Finance lub przeprowadza migrację do niego i chce zmienić walutę rozliczeniową lub raportowania.
+- W czasie konfigurowania firmy nie określono waluty raportowania. (Waluta raportowania jest opcjonalna). Teraz okazało się, że dodanie waluty raportowania może okazać się przydatne.
 
 ## <a name="resolution"></a>Rozwiązanie
 

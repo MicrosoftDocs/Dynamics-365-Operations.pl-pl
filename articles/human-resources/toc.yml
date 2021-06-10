@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 20 maja 2021 r.
+          href: hr-whats-new-2021-05-20.md
         - name: 3 maja 2021 r.
           href: hr-whats-new-2021-05-03.md
         - name: 19 kwietnia 2021 r.
@@ -785,8 +787,14 @@
           items:
             - name: Omówienie zarządzania wydajnością
               href: hr-develop-performance-management-overview.md
-            - name: Dopasowywanie umiejętności pracowników
-              href: hr-develop-skills.md
+            - name: Umiejętności
+              items:
+                - name: Konfigurowanie umiejętności
+                  href: hr-develop-skills.md
+                - name: Wprowadzanie umiejętności
+                  href: hr-develop-enter-skills.md
+                - name: Mapowanie umiejętności
+                  href: hr-develop-map-skills.md
             - name: Dodawanie do arkusza wydajności
               href: hr-develop-add-performance-journal.md
             - name: Tworzenie celu

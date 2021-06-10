@@ -70,9 +70,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nowości lub zmiany w aplikacji Supply Chain Management
                   items:
-                    - name: Nowości lub zmiany w aplikacji Supply Chain Management — strona główna
+                    - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (lipiec 2021)
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (lipiec 2021)
+                      href: get-started/whats-new-scm-10-0-20.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-scm-10-0-19.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.18 (maj 2021)
                       href: get-started/whats-new-scm-10-0-18.md
@@ -385,9 +387,9 @@
                   href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
                 - name: Raporty żądania konserwacji
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
-            - name: Ustawienia zleceń roboczych
+            - name: Ustawienia zleceń pracy
               items:
-                - name: 'Kategorie typów zadań obsługi i typy zadań serwisowych, warianty typu zadań obsługi, handel zadaniami konserwacyjnymi oraz listy kontrolne konserwacji'
+                - name: 'Typy, kategorie, warianty, zawody i listy kontrolne zadań konserwacji'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Stany cyklu życia zlecenia pracy
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -1371,7 +1373,7 @@
                   items:
                     - name: Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Ulepszenia w śledzeniu wyników wygenerowanych raportów i porównaniach z wartościami bazowymi
+                    - name: Ulepszanie śledzenia wyników wygenerowanych raportów w celu dokonywania porównań z wartościami bazowymi
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Automatyczne testowanie za pomocą modułu raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
@@ -2225,6 +2227,8 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Wersje inżynieryjne i kategorie produktów inżynieryjnych
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Zarządzanie zmianami w formułach i ich składnikach
+              href: engineering-change-management/manage-formula-changes.md
             - name: Włącz zarządzanie zmianami w istniejących produktach
               href: engineering-change-management/change-management-existing-products.md
             - name: Stan cyklu życia produktu i transakcje
@@ -2247,6 +2251,8 @@
               href: production-control/manage-subcontract-work-production.md
             - name: Zunifikowana sekwencja numerów dla identyfikatorów zadań
               href: production-control/unified-job-ids.md
+            - name: Wywoływanie przepływów automatyzacji procesów w celu utworzenia zleceń kontroli jakości
+              href: production-control/process-automation-quality-orders.md
             - name: Wytwarzanie dyskretne
               items:
                 - name: Obsługa danych głównych produkcji
@@ -2337,7 +2343,7 @@
                           href: production-control/production-floor-execution-setup.md
                         - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
                           href: production-control/production-floor-execution-use.md
-                        - name: Style kontroli interfejsu użytkownika do wykonywania hal produkcyjnych
+                        - name: Dobór stylu interfejsu wykonania hal produkcyjnych
                           href: production-control/production-floor-execution-styles.md
                     - name: Konfigurowanie karty zadań dla urządzeń
                       href: production-control/config-job-card-device.md
@@ -3139,11 +3145,11 @@
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Konfigurowanie zasad konsolidacji wysyłki
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: Scenariusz 1 — konsolidowanie wysyłek podczas zwalniania ich do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
+                    - name: Scenariusz 1 — konsolidowanie wysyłek zwolnionych do magazynu przy użyciu automatycznego zwalniania zamówień sprzedaży
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: 'Scenariusz 2 — konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione na stronie zwalniania do magazynu'
+                    - name: 'Scenariusz 2 — konsolidowanie wysyłek, gdy zasady konsolidacji wysyłki są zastąpione'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: Scenariusz 3 — konsolidowanie wysyłek przy użyciu polecenia Zwolnij do magazynu z pulpitu planowania wysyłki ładunku
+                    - name: Scenariusz 3 — konsolidowanie wysyłek przy użyciu zwalniania do magazynu z pulpitu planowania wysyłki ładunku
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: Scenariusz 4 — konsolidowanie wysyłek przy użyciu pulpitu konsolidacji wysyłki
                       href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3297,13 +3303,15 @@
                       href: warehousing/install-configure-warehousing-app.md
                     - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji mobilnej Zarządzanie magazynem
                       href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Konfigurowanie pól aplikacji mobilnej Zarządzanie magazynem
+                    - name: Konfigurowanie pól aplikacji mobilnej Warehouse Management
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Przypisywanie ikon i tytułów kroków
+                      href: warehousing/step-icons-titles.md
                     - name: Przetwarzanie zdarzenia aplikacji magazynu
                       href: warehousing/warehouse-app-events.md
-                    - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Zarządzanie magazynem
+                    - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
                       href: warehousing/tasks/set-up-mobile-device-menu.md
@@ -3321,7 +3329,7 @@
                       href: warehousing/pick-oldest-batch.md
                     - name: Struktura przewodnika procesu
                       href: warehousing/process-guide-framework.md
-                    - name: Rozwiązywanie problemów z połączeniem z aplikacją mobilną Zarządzanie magazynem
+                    - name: Rozwiązywanie problemów z połączeniem z aplikacją mobilną Warehouse Management
                       href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Uaktualnianie i migracja
                   items:
@@ -3359,29 +3367,33 @@
                   href: troubleshooting/inventory/multiple-inventory-t.md
                 - name: Wycofywanie zgłoszenia jako gotowe powoduje wystąpienie nieoczekiwanej otwartej transakcji
                   href: troubleshooting/inventory/reverse-report-as-fi.md
-                - name: Nie można wyświetlić nowych notatek dołączonych do arkusza w raporcie listy pobrania
+                - name: W raporcie listy pobrania nie są wyświetlane nowe notatki dołączone do arkusza
                   href: troubleshooting/inventory/unable-to-print-the.md
                 - name: Ilość z rozpoczętego zlecenia kwarantanny nie zostaje uaktualniona w momencie podziału zamówienia
                   href: troubleshooting/inventory/quantity-on-a-start.md
                 - name: Pole „Data ostatniego testowania” nie jest aktualizowane podczas tworzenia wielu zleceń kontroli jakości
                   href: troubleshooting/inventory/the-field-last-test.md
-                - name: Przy podziale ilości efektywnej zostaje zastosowana ilość minimalna zamiast ilości nominalnej
+                - name: W przypadku podziału ilości efektywnej zostaje zastosowana ilość minimalna zamiast ilości nominalnej
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Planowanie główne
               items:
                 - name: Ustalone zamówienia stanowiące bezpośrednią pochodną są przetwarzane w ramach przepływu pracy W trakcie przeglądu
                   href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Nie można filtrować towarów z planowania głównego według ich powiązanych wartości grup zapotrzebowania
+                  href: troubleshooting/planning/master-planning-batc.md
                 - name: Planowanie główne generuje planowane zamówienia na produkty fantomowe
                   href: troubleshooting/planning/planned-orders-are-g.md
                 - name: 'Planowane zamówienie zakupu utworzone, gdy zakup istnieje w dniach z ujemnym stanem magazynu'
                   href: troubleshooting/planning/planning-optimisatio.md
-                - name: Nie można przekazać kosztu własnego we wpisach prognozy popytu
+                - name: Nie można zaktualizować prognozowanego kosztu jednostkowego podczas importowania rekordów prognozy popytu
                   href: troubleshooting/planning/unable-to-upload-the.md
                 - name: Nie można usunąć wymiaru prognozy popytu magazynu z wierszy prognozy
                   href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Wyświetlany jest monit o zapisanie ustawień zapotrzebowania na towar, nawet jeśli nie zostały wprowadzone żadne zmiany'
+                  href: troubleshooting/planning/when-importing-to-th.md
             - name: Zaopatrzenie
               items:
-                - name: Nie można zafakturować zamówienia sprzedaży widocznego dla odbiorcy w firmie VEL
+                - name: Nie można zafakturować zamówienia sprzedaży widocznego dla odbiorcy
                   href: troubleshooting/procurement/not-able-to-invoice-.md
                 - name: Nie można dodać wiersza do zapotrzebowania na zakup po zgłoszeniu żądania zmiany
                   href: troubleshooting/procurement/purchase-requisition.md
@@ -3403,7 +3415,7 @@
                   href: troubleshooting/production/late-selection-is-no.md
                 - name: 'Użytkownicy mogą cofnąć pobranie wierszy materiałów dla produktów, które zostały zgłoszone jako gotowe'
                   href: troubleshooting/production/raw-material-lines-a.md
-                - name: Błąd księgowania arkusza zgłoszonych wyrobów gotowych
+                - name: Błąd podczas księgowania arkusza zgłoszonych wyrobów gotowych
                   href: troubleshooting/production/posting-report-as-.md
                 - name: Magazyn w arkuszu listy pobrań nie jest aktualizowany w wierszu BOM
                   href: troubleshooting/production/the-warehouse-in-pic.md
