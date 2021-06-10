@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812986"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049443"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analiza dopasowań optymalizacji planowania
 
@@ -89,13 +89,13 @@ W poniższej tabeli przedstawiono różne wyniki, które mogą być widoczne po 
 | Produkcyjne | Plany uwzględniające sekwencjonowanie: _\#_ | Ta funkcja jest oczekiwana. Obecnie gdy jest włączona Optymalizacja planowania, harmonogram nie jest brany pod uwagę, niezależnie od tego ustawienia. | Październik 2021 – kwiecień 2022 |
 | Produkcyjne | Zwolnione, nierozpoczęte zlecenia produkcyjne, których rozpoczęcie jest planowane na dzisiaj: _\#_ | Ta funkcja jest oczekiwana. Obecnie, jeśli zlecenie produkcyjne jest opóźnione, planowanie główne zakłada, że zostanie zakończone dzisiaj. Ma to zastosowanie w przypadku zwolnionych zleceń produkcyjnych, w przypadku których data dostawy przypada w przeszłości, ale nie została jeszcze zakończona. | Październik 2021 – kwiecień 2022 |
 | Produkcyjne | Zaplanowane zasoby z ograniczonymi zdolnościami produkcyjnymi: _\#_ | Ta funkcja jest oczekiwana. Obecnie są ignorowane zasoby zaplanowane z ograniczonymi zdolnościami produkcyjnymi, gdy jest włączona Optymalizacja planowania. Planowanie jest wykonywane na podstawie domyślnego czasu realizacji produktu. | Bez ograniczeń: 2021 czerwca 2021, Z ograniczeniami: październik 2021 |
-| Produkcyjne | Marszruty używane podczas planowania: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania marszruty są ignorowane. Używany jest domyślny czas realizacji dla produktu. | 2021 czerwca |
+| Produkcyjne | Marszruty używane podczas planowania: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania marszruty są ignorowane. Używany jest domyślny czas realizacji dla produktu. | Lipiec 2021 |
 | Produkcyjne | Rezerwacja wiersza sprzedaży z użyciem rozłożenia: _\#_ | Rezerwacja wiersza sprzedaży wykorzystująca rozłożenie nie jest obsługiwana, jeśli jest włączona Optymalizacja planowania. | 2021 października |
 | Produkcyjne | Planowanie z rozłożeniem zleceń produkcyjnych: _\#_ | Planowanie wykorzystujące rozłożenie zleceń produkcyjnych nie jest obsługiwane, jeśli jest włączona Optymalizacja planowania. Zlecenia produkcyjne można planować pojedynczo. | 2021 października |
 | Zapytania ofertowe | Plany główne z włączoną opcją zapytań ofertowych: _\#_ | Ta funkcja jest oczekiwana. Obecnie zapytania ofertowe (ZO) nie są traktowane jako popyt, gdy jest włączona Optymalizacja planowania. Zostaną one zignorowane niezależnie od tego ustawienia. | Październik 2021 – kwiecień 2022 |
 | Zapotrzebowania | Plany główne z włączoną opcją zapotrzebowań: _\#_ | Ta funkcja jest teraz obsługiwana. Aby dowiedzieć się więcej, zobacz temat [Zapotrzebowania na zakup](purchase-requisitions.md) | Obsługiwana |
-| Marginesy bezpieczeństwa | Grupy zapotrzebowania z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest częściowo obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Marża paragonu: obsługiwana. Marża ponownego zamówienia i marża wydania: kwiecień 2021 r. |
-| Marginesy bezpieczeństwa | Plany główne z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest częściowo obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Marża paragonu: obsługiwana. Marża ponownego zamówienia i marża wydania: kwiecień 2021 r. |
+| Marginesy bezpieczeństwa | Grupy zapotrzebowania z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest częściowo obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Marża paragonu: obsługiwana. Marża ponownego zamówienia i marża wydania: kwiecień – październik 2021 r. |
+| Marginesy bezpieczeństwa | Plany główne z marginesem bezpieczeństwa: _\#_ | Ta funkcja jest częściowo obsługiwana. Aby uzyskać dodatkowe informacje, zobacz temat [Marginesy bezpieczeństwa](safety-margins.md) | Marża paragonu: obsługiwana. Marża ponownego zamówienia i marża wydania: kwiecień – październik 2021 r. |
 | Realizacja zapasu bezpieczeństwa | Rekordy zapotrzebowania na towary z wartością „Uzupełnij stany minimalne” niższą niż wartość „Data dzisiejsza + czas zaopatrzenia”: _\#_ | Optymalizacja planowania zawsze używa *Daty dzisiejszej + czasu zaopatrzenia*. Ta zmiana będzie wprowadzona w przyszłości w celu przygotowania uproszczonej konfiguracji planowania i zapewnienia wyniku akcji. Jeśli czas zaopatrzenia nie jest uwzględniony w zapasach bezpieczeństwa, zamówienia planowane utworzone dla bieżącego niskiego stanu zapasów będą zawsze opóźnione z powodu czasu realizacji. To zachowanie może spowodować powstanie istotnych zakłóceń i niechcianych zamówień planowanych. Najlepszym rozwiązaniem jest zmiana tego ustawienia, tak aby była używana *Data dzisiejsza + czas zaopatrzenia*. Zaktualizuj dane podstawowe, aby uniknąć ostrzeżeń. | ND |
 | Oferty sprzedaży | Plany główne z włączoną opcją ofert sprzedaży: _\#_ | Ta funkcja jest oczekiwana. Obecnie po włączeniu Optymalizacji planowania oferty są ignorowane. Zostaną one zignorowane niezależnie od tego ustawienia. | Październik 2021 – kwiecień 2022 |
 | Okres trwałości | Plany główne z włączoną opcją okresu trwałości: _\#_ | Ta funkcja jest oczekiwana. Obecnie podczas włączania optymalizacji planowania okres trwałości nie jest brany pod uwagę, niezależnie od tego ustawienia. | 2021 października |

@@ -2,7 +2,7 @@
 title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 05/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 25b59400cdd62f8728f03683d51c86c671edd9de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8a5daee72f4f339fbebffb5c1d64814959775340
+ms.sourcegitcommit: 13fa6385d8f3bb18df5a52fd2b0f4ad3484ad0ba
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744622"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6050563"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
@@ -126,17 +126,26 @@ Aby opublikować widok, należy wykonać następujące kroki:
 5. **Aktualizacja 10.0.17 lub nowsza wersja**: jeśli jest włączona funkcja **(Wersja zapoznawcza) Obsługa tłumaczeń dla widoków organizacyjnych**, można dodawać tłumaczenia dla swojej nazwy widoku w wielu językach wymaganych przez organizację, wybierając przycisk **Tłumaczenia** obok pola **Nazwa**. Nazwa widoku będzie wyświetlana użytkownikom w ich bieżącym języku. Można również ustawić język domyślny, aby określić tłumaczenie, które będzie wyświetlane użytkownikom, dla których są uruchomione języki bez zdefiniowanego tłumaczenia.
 5. Opcjonalnie: wprowadź opis widoku, dzięki czemu użytkownicy otrzymujący ten widok mogą lepiej zrozumieć jego przeznaczenie. 
 6. Określ, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Gdy widok zostanie ustawiony jako widok domyślny, użytkownicy zobaczą go następnym razem, gdy otworzą stronę docelową. Zostanie zmieniony jeden domyślny widok globalny każdego docelowego użytkownika. Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po jego opublikowaniu.
-7. Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok. 
-8. Określ, czy chcesz opublikować widok dla ról podrzędnych każdej wybranej roli zabezpieczeń. Jeśli tak, zaznacz pole wyboru **Uwzględnij role podrzędne** w wierszu odpowiednich ról zabezpieczeń. Należy zauważyć, że to pole wyboru jest niedostępne w przypadku ról, które nie mają ról podrzędnych.
-9. Dodaj firmy, dla których ten widok powinien być dostępny. 
-10. Wybierz opcję **Publikuj**.
+
+    > [!NOTE]
+    > Podczas publikowania widoku jako widoku domyślnego należy pamiętać o następujących działaniach: 
+    > -  Jeśli widok jest publikowany jako widok domyślny dla wszystkich lub niektórych firm, należy zmienić jeden domyślny **globalny** widok każdego użytkownika docelowego. 
+    > -  Jeśli użytkownik ma role, w których wiele widoków jest opublikowanych jako widok domyślny, ostatni opublikowany widok będzie używany jako widok domyślny użytkownika. 
+
+8. Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok. 
+9. Określ, czy chcesz opublikować widok dla ról podrzędnych każdej wybranej roli zabezpieczeń. Jeśli tak, zaznacz pole wyboru **Uwzględnij role podrzędne** w wierszu odpowiednich ról zabezpieczeń. Należy zauważyć, że to pole wyboru jest niedostępne w przypadku ról, które nie mają ról podrzędnych.
+10. Dodaj firmy, dla których ten widok powinien być dostępny. 
+
+    > [!NOTE]
+    > Publikując widok dla firmy, należy pamiętać o następujących oczekiwaniach.
+    > 
+    > Jeśli widok zostanie opublikowany dla firmy, ale nie zostanie opublikowany jako widok domyślny, użytkownicy zobaczą widok tylko w selektorze widoków tylko dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze znajdować się w selektorze widoków użytkownika dla tej strony, niezależnie od firmy.
+
+11. Wybierz opcję **Publikuj**.
 
 W niektórych środowiskach może upłynąć trochę czasu (do godziny), zanim użytkownicy zobaczą opublikowany widok.
 
-> [!NOTE]
-> Podczas publikowania widoku dla firmy lub publikowania widoku jako widoku domyślnego należy wziąć pod uwagę następujące oczekiwania.
-> - Jeśli widok jest publikowany jako widok domyślny dla wszystkich lub niektórych firm, należy zmienić jeden domyślny globalny widok każdego użytkownika docelowego. Jeśli użytkownik ma role, w których wiele widoków jest opublikowanych jako widok domyślny, ostatni opublikowany widok będzie używany jako widok domyślny użytkownika. 
-> - Jeśli widok zostanie opublikowany dla firmy, ale nie zostanie opublikowany jako widok domyślny, użytkownicy zobaczą widok tylko w selektorze widoków tylko dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze znajdować się w selektorze widoków użytkownika dla tej strony, niezależnie od firmy. 
+ 
 
 ## <a name="modifying-a-published-view"></a>Modyfikowanie opublikowanego widoku
 
