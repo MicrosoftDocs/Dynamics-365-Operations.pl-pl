@@ -2,7 +2,7 @@
 title: Moduł wyników wyszukiwania
 description: W tym temacie omówiono moduły wyników wyszukiwania i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794122"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117140"
 ---
 # <a name="search-results-module"></a>Moduł wyników wyszukiwania
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie omówiono moduły wyników wyszukiwania i opisano, jak dodać je do stron witryny w Microsoft Dynamics 365 Commerce.
 
@@ -51,9 +52,12 @@ W poniższej tabeli przedstawiono właściwości modułów wyników wyszukiwania
 | Ukryj wyświetlanie hierarchii kategorii | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, hierarchia kategorii wyświetlana na stronie będzie ukryta. Właściwość powinna mieć wartość **Prawda**, jeśli do pokazywania hierarchii kategorii jest używany [moduł nawigacyjny](add-breadcrumb.md).|
 | Uwzględnij atrybuty produktu w wynikach wyszukiwania | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, w wynikach wyszukiwania zostaną zwrócone atrybuty. Chociaż te atrybuty mogą być wyświetlane w witrynie Commerce, wymagane jest rozszerzenie.|
 | Pokaż ceny przynależności | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, ceny przynależności produktów będą wyświetlane w wynikach wyszukiwania, gdy zalogowany użytkownik przegląda stronę. |
+| Aktualizuj panel ulepszań | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **True**, panel ulepszeń zostanie zaktualizowany po wybraniu ulepszaczy. W tym trybie niektóre ulepszenia wielosektorowe będą zachowywały się jak jednosektorowe, gdy panel ulepszeń zostanie zaktualizowany. |
 
 > [!IMPORTANT]
-> W wersji Dynamics 365 Commerce 10.0.16 i nowszych, konfiguracja **Pokaż ceny przynależności** może służyć do wyświetlania cen przynależności na stronie.
+> W wersji Commerce 10.0.16 i nowszych, konfiguracja **Pokaż ceny przynależności** może służyć do wyświetlania cen przynależności na stronie.
+>
+> W wersji Commerce 10.0.20 lub nowszej konfigurację **panelu aktualizacji** możesz zaktualizować panel ulepszeń podczas wyboru ulepszacza.
 
 ## <a name="supported-modules"></a>Obsługiwane moduły
 

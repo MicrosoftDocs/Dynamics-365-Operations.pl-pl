@@ -2,26 +2,20 @@
 title: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 description: W tym temacie opisano sposób skonfigurowania połączenia podwójnego zapisu z usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: RamaKrishnamoorthy
-ms.date: 01/06/2020
+ms.date: 05/11/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e51b4ef1e309e5f89dc82a3776b88c505dc6593d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748548"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103576"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -29,64 +23,48 @@ ms.locfileid: "5748548"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-W tym temacie wyjaśniono, jak skonfigurować połączenie podwójnego zapisywania między nowym środowiskiem Finance and Operations a nowym środowiskiem Dataverse za pośrednictwem Microsoft Dynamics Lifecycle Services (LCS).
+W tym temacie opisano sposób włączenia połączenia podwójnego zapisu z usługi Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
-Aby skonfigurować połączenie podwójnego zapisywania, należy mieć uprawnienia administratora.
+Integrację Power Platform należy zakończyć w sposób opisany w poniższych tematach:
 
-+ Trzeba mieć dostęp do dzierżawy.
-+ Użytkownik musi być administratorem w obu środowiskach Finance and Operations i Dataverse.
++ [Integracja Power Platform — włącz podczas wdrażania środowiska](../../power-platform/overview.md#enable-during-environment-deployment)
++ [Integracja Power Platform — włącz po wdrażaniu środowiska](../../power-platform/overview.md#set-up-after-environment-deployment)
 
-## <a name="set-up-a-dual-write-connection"></a>Skonfiguruj połączenie podwójnego zapisywania
+## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Wskazówki dotyczące konfigurowania podwójnego zapisu w środowiskach Dataverse
 
-Aby skonfigurować połączenie podwójnego zapisu, należy wykonać następujące czynności.
+Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi LCS, należy wykonać następujące kroki:
 
-1. W LCS przejdź do projektu.
-2. Wybierz przycisk **Konfiguruj**, aby wdrożyć nowe środowisko.
-3. Wybierz wersję. 
-4. Wybierz topologię. Jeśli dostępna jest tylko jedna topologia, jest ona wybierana automatycznie.
-5. Wykonaj pierwsze kroki w Kreatorze **ustawień wdrażania**.
-6. Na karcie **Dataverse** wykonaj jeden z tych kroków:
+1. Na stronie **Szczegóły środowiska** rozwiń sekcję **Integracja Power Platform**.
 
-    - Jeśli już zainicjowano obsługę administracyjną środowiska Dataverse dla dzierżawy, można ją wybrać.
+2. Wybierz przycisk **Aplikacji podwójnego zapisu**.
 
-        1. Ustaw opcję **Konfiguruj Dataverse** na **Tak**.
-        2. W kolumnie **Dostępne środowiska** wybierz środowisko, które ma zostać zintegrowane z danymi Finance and Operations. Lista zawiera wszystkie środowiska, do których użytkownik ma uprawnienia administratora.
-        3. Zaznacz pole wyboru **Wyrażam zgodę**, aby wskazać, że zgadzasz się na warunki.
+    ![Integracja z programem Power Platform](media/powerplat_integration_step2.png)
 
-        ![Karta Dataverse, jeśli zainicjowano już środowisko Dataverse dla dzierżawy](../dual-write/media/lcs_setup_1.png)
+3. Przejrzyj warunki, a następnie zaznacz pole wyboru **Konfiguruj**.
 
-    - Jeśli dzierżawa nie ma jeszcze środowiska Dataverse, zostanie zainicjowana obsługa nowego środowiska.
+4. Wybierz przycisk **OK**, aby kontynuować.
 
-        1. Ustaw opcję **Konfiguruj Dataverse** na **Tak**.
-        2. Wprowadź nazwę środowiska Dataverse.
-        3. Wybierz region, w którym ma zostać wdrożone środowisko.
-        4. Wybierz domyślny język i walutę dla środowiska.
+5. Postęp można monitorować, okresowo odświeżając stronę szczegółów środowiska. Konfiguracja zwykle trwa 30 minut lub dłużej.  
 
-            > [!NOTE]
-            > Nie można zmienić języka i waluty w późniejszym terminie.
+6. Po zakończeniu konfigurowania pojawi się komunikat informujący o pomyślnym zakończeniu procesu lub niepowodzeniu jego wykonania. Jeśli konfiguracja nie powiodła się, wyświetlany jest powiązany komunikat o błędzie. Przed przejściem do następnego kroku należy poprawić wszystkie błędy.
 
-        5. Zaznacz pole wyboru **Wyrażam zgodę**, aby wskazać, że zgadzasz się na warunki.
+7. Wybierz **Łącze do środowiska Power Platform**, aby utworzyć łącze między Dataverse a bazami danych bieżącego środowiska. Ta konfiguracja zwykle trwa 5 minut lub mniej.
 
-        ![Karta Dataverse, gdy dzierżawca nie posiada jeszcze środowiska Dataverse](../dual-write/media/lcs_setup_2.png)
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Łącze do środowiska Power Platform":::
 
-7. Wykonaj pozostałe kroki w Kreatorze **ustawień wdrażania**.
-8. Gdy środowisko ma stan **wdrożone**, Otwórz stronę szczegóły środowiska. W sekcji **integracji z platformą Power Platform** są wyświetlane nazwy połączonych środowisk Finance and Operations i Dataverse.
+8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finance and Operations. Istnieje możliwość skonfigurowania mapowań encji.
 
-    ![Sekcja integracji z platformą Power Platform](../dual-write/media/lcs_setup_3.png)
+## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Wskazówki dotyczące konfigurowania podwójnego zapisu dla istniejącego środowiska Dataverse
 
-9. Administrator środowiska Finance and Operations musi zalogować się do usługi LCS i wybrać opcję **Połącz z CDS dla aplikacji**, by zakończyć połączenie. Na stronie Szczegóły środowiska są wyświetlane informacje kontaktowe administratora.
+Aby skonfigurować podwójny zapis dla istniejącego środowiska Dataverse, musisz utworzyć [zgłoszenie](../../lifecycle-services/lcs-support.md) do pomocy technicznej firmy Microsoft. Zgłoszenie musi zawierać następujące informacje:
 
-    Po zakończeniu połączenia stan jest aktualizowany do **Pomyślnie zakończone łączenie środowisk**.
-
-10. Aby otworzyć obszar roboczy **integracji danych** w środowisku Finance and Operations i kontrolować dostępne szablony, wybierz **Połącz z CDS dla aplikacji**.
-
-    ![Link do przycisku CDS for Apps w sekcji integracji z platformą Power Platform](../dual-write/media/lcs_setup_4.png)
++ Identyfikator środowiska Finance and Operations.
++ Twoja nazwa środowiska z usługi Lifecycle Services.
++ Identyfikator organizacji Dataverse lub identyfikator środowiska Power Platform z centrum administracyjnego Power Platform. W zgłoszeniu poproś, aby identyfikator był wystąpieniem używanym do integracji Power Platform.
 
 > [!NOTE]
 > Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finance and Operations, a następnie wybierz opcję **Rozłącz**.
-
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

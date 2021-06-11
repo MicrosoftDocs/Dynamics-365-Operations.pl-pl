@@ -2,7 +2,7 @@
 title: Rozpocznij pracę z optymalizacją planowania
 description: W tym temacie wyjaśniono, jak zacząć używanie funkcji optymalizacji planowania.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907674"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103600"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -58,7 +58,7 @@ Przed zainstalowaniem dodatku Optymalizacja planowania muszą zostać spełnione
 
 - Musisz uruchamiać aplikację Supply Chain Management w środowisku wysokiej dostępności z włączonymi usługami LCS w warstwie 2 lub wyższej (nie środowisko OneBox) z aplikacją Dynamics 365 Supply Chain Management w wersji 10.0.7 lub nowszej. W przypadku próby zainstalowania dodatku w środowisku OneBox instalacja nie zostanie zakończona i trzeba będzie ją anulować.
 
-- Należy skonfigurować system do integracji z platformą Power Platform. Aby uzyskać więcej informacji, zobacz [Wymagania wstępne dotyczące konfigurowania dodatków](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) oraz [Konfigurowanie dodatków](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Należy skonfigurować system do integracji z platformą Power Platform. Aby uzyskać więcej informacji, zobacz [Integracja usługi Microsoft Power Platform z aplikacjami Finance and Operations](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Włączanie licencji optymalizacji planowania
 

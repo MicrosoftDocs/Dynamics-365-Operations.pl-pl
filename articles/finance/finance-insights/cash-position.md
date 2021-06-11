@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 36eb939d2539653fdcde78a6044cf1a87e8e3280
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
+ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811394"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6123397"
 ---
 # <a name="cash-position-preview"></a>Stan środków pieniężnych (wersja zapoznawcza)
 
@@ -31,7 +31,7 @@ Stan środków pieniężnych to projekcja przepływu pieniężnego, która jest 
 
 Podczas przewidywania płatności odbiorcy system używa prognoz płatności z funkcji przewidywania płatności odbiorcy. Bez przewidywania płatności data płatności jest obliczana na podstawie średniego czasu wymaganego do przekonwertowania faktury odbiorcy na płatność od danego odbiorcy. W przypadku otwartych zamówień odbiorcy system oblicza datę faktury, używając średniej liczby dni dla wierszy zamówienia na odbiorcę do zafakturowania. Następnie używa daty faktury jako danych wejściowych funkcji przewidywania płatności. Funkcja przewidywania płatności odbiorcy oblicza datę płatności dla każdego wiersza zamówienia. 
 
-<*Potrzebny tekst od Jarka lub Dave'a w jaki sposób są konwertowane przewidywania płatności na dzień*> Data płatności zaległych faktur jest przybliżona [*oszacowane*] z prognoz płatności, przez wybranie daty odpowiadającej piątemu percentylowi skumulowanej funkcji rozkładu, która jest uzyskiwana z przewidywanych prawdopodobieństw zasobnika.
+Potrzebny tekst od Jarka lub Dave'a w jaki sposób są konwertowane przewidywania płatności na dzień> Data płatności zaległych faktur jest przybliżona [oszacowane] z prognoz płatności, przez wybranie daty odpowiadającej piątemu percentylowi skumulowanej funkcji rozkładu, która jest uzyskiwana z przewidywanych prawdopodobieństw zasobnika.
 
 Podobne podejście służy do przewidywania płatności dla dostawców. W przypadku każdego dostawcy system oblicza średni czas wymagany do przekonwertowania faktury dostawcy na płatność. Na podstawie liczby dni jest następnie obliczana data płatności. W przypadku otwartych zamówień dostawców system oblicza datę faktury, uwzględniając średnią liczbę dni wymaganą do przekonwertowania wierszy zamówienia na fakturę dla każdego dostawcy. Następnie system datę płatności przy użyciu średniego czasu do przekonwertowania faktury dostawcy na płatność dla poszczególnych dostawców.
 

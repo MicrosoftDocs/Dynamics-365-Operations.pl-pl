@@ -2,7 +2,7 @@
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893611"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085507"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -199,6 +199,34 @@ W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na
 > Wybrana orientacja strony jest stosowana do wszystkich konfiguracji ER, które są generowane w formacie programu Excel, a następnie konwertowane na format PDF.
 >
 > Jeśli konfiguracja ER w formacie programu Word jest konwertowana na PDF, orientacja strony dokumentu PDF jest pobierana z dokumentu programu Word.
+
+## <a name="output-unfolding"></a>Rozwijanie wyjścia
+
+Podczas konfigurowania miejsca docelowego dla komponentu **Folder** formatu ER można określić sposób dostarczania danych wyjściowych z tego komponentu do skonfigurowanego miejsca docelowego.
+
+### <a name="make-output-unfolding-available"></a>Udostępnianie rozwijania danych wyjściowych
+
+Aby udostępnić opcję rozwijania danych wyjściowych w bieżącej instancji programu Finance, należy otworzyć obszar roboczy **Zarządzanie cechami** i włączyć funkcję **Zezwalaj na konfigurowanie miejsc docelowych ER w celu wysyłania zawartości folderów jako oddzielnych plików**.
+
+### <a name="applicability"></a>Możliwość stosowania
+
+Opcja rozwijania wyjścia może być skonfigurowana tylko dla składników formatu typu **Folder**. Po rozpoczęciu konfiguracji komponentu **Folder** na stronie **Elektroniczne miejsce docelowe raportowania** dostępna jest szybka karta **Ogólne**. 
+
+### <a name="use-the-output-unfolding-option"></a>Użyj opcji rozkładania danych wyjściowych
+
+Na skróconej karcie **Ogólne**, w polu **Wyślij folder jako**, wybierz jedną z następujących wartości:
+
+- **Archiwum ZIP** — dostarcza wygenerowany plik jako plik ZIP.
+- **Osobne pliki** — dostarcza każdy plik wygenerowanego pliku ZIP jako pojedynczy plik.
+
+    > [!NOTE]
+    > Po wybraniu opcji **Oddzielne pliki**, wygenerowane dane wyjściowe zostaną zebrane w pamięci w stanie zmapowana. Dlatego maksymalny [limit rozmiaru pliku](er-compress-outbound-files.md) jest stosowany dla zamapowanych danych wyjściowych, gdy rzeczywisty rozmiar pliku może przekroczyć ten limit. Zaleca się wybranie tej wartości, jeśli oczekiwano, że rozmiar wygenerowanych danych będzie zbyt duży.
+
+[![Konfigurowanie miejsca docelowego składnika formatu folderu](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Ograniczenia
+
+Jeśli ustawisz pole **Wyślij folder jako** na **Oddziel pliki** dla komponentu **Folder**, który zawiera inne zagnieżdżone komponenty **Folder**, ustawienie to nie jest stosowane rekursywnie do zagnieżdżonych komponentów **Folder**.
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947527"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115056"
 ---
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
@@ -50,15 +50,20 @@ Najpierw włącz funkcje, wykonując następujące kroki.
 
 1. Przejdź do obszaru roboczego [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Sprawdź, czy są aktualizacje.
-1. Włącz funkcję o nazwie **Zarządzanie zmianami inżynieryjnymi**.
-1. Jeśli chcesz go użyć, włącz również funkcję o nazwie **Wersja wymiaru produktu**.
+1. Włącz funkcję o nazwie *Zarządzanie zmianami inżynieryjnymi*.
+1. Jeśli chcesz go użyć, włącz również funkcję o nazwie *Wersja wymiaru produktu*.
 
 Następnie włącz klucze konfiguracji, wykonując następujące kroki.
 
 1. Ustaw system w trybie konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
 1. Rozwiń węzeł **Handel**.
-1. Włącz klucz konfiguracji funkcji głównej, zaznaczając pole wyboru **Zarządzanie zmianami inżynieryjnymi**. (Rozwinięcie węzła nie jest konieczne, chyba że trzeba również wyłączyć jedną lub obie jego funkcje podrzędne).
+1. Włącz klucz konfiguracji funkcji głównej, zaznaczając pole wyboru **Zarządzanie zmianami inżynieryjnymi**.
+1. Rozwiń węzeł **Zarządzanie zmianami inżynieryjnymi** i w razie potrzeby zaznacz lub wyczyść następujące pola wyboru (w zależności od potrzebnych funkcji):
+
+    - **Wyszukiwanie atrybutów** – zaznaczenie tego pola wyboru umożliwia włączenie funkcji [wyszukiwania atrybutów](engineering-attributes-and-search.md). Zaleca się włączenie tej funkcji, ale jeśli nie będziesz jej używać, możesz wyczyścić to pole wyboru.
+    - **Zarządzanie zmianami w produkcji procesowej** — to pole wyboru należy zaznaczyć, jeśli do zarządzania zmianami w formułach produkcji procesowej mają być dostępne funkcje zarządzania zmianami w formułach. Jeśli nie musisz zarządzać formułami, możesz wyczyścić to pole wyboru. Aby uzyskać więcej informacji, zobacz temat [Zarządzanie zmianami w formułach i ich składnikach](manage-formula-changes.md).
+
 1. Jeśli chcesz także używać wymiaru wersji, zaznacz pole wyboru **Wymiar produktu — wersja**. (To pole wyboru jest dalej niż lista, ale nie jest zagnieżdżone w węźle **Zarządzanie zmianami inżynieryjnymi**).
 1. Wyłącz tryb konserwacji, jak to opisano w sekcji [Tryb konserwacji](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 

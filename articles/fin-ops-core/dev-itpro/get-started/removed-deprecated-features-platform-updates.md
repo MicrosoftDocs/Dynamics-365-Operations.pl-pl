@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
-ms.date: 02/16/2021
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 782a147794bc30251ad60f5d788d1255a9d02b5f
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 435f7f0090ca16a9e8cfee2d1ceb65bec8457d09
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923545"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111731"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -31,6 +31,19 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="feature-deprecation-notice-effective-may-2021"></a>Ogłoszenie o wycofaniu funkcji z użytku w maju 2021 r.
+
+### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Portal globalizacyjny w Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Pozbywamy się portalu Globalizacja w LCS, ponieważ ta funkcja została zastąpiona przez inne usługi oparte na LCS. |
+| **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona przez usługę [wyszukiwania problemów](../lifecycle-services/issue-search-lcs.md) LCS i [usługę przesyłania alertów dotyczących wymogów prawnych Dynamics](../lcs-solutions/submit-localization-alerts.md). |
+| **Powiązane obszary produktów**         | Portal globalizacyjny w LCS|
+| **Opcja wdrażania**              | Wdrożenie w chmurze |
+| **Stan**                         | Wycofanie: Planowana data usunięcia w maju 2022 roku. |
+
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funkcja usunięta 28 stycznia 2021 r.
 
@@ -56,7 +69,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Visual Studio 2017 zamieni Visual Studio 2015 jako wdrożoną i wymaganą wersję. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Wycofane. Po zaktualizowaniu poprzednie narzędzia X++ zostaną usunięte z programu Visual Studio 2015, a zaktualizowane narzędzia nie zostaną zainstalowane w programie Visual Studio 2015. Nie ma to wpływu na hostowane kompilacje. W przypadku tworzenia maszyn wirtualnych potok kompilacji (definicja kompilacji) należy ręcznie zaktualizować, aby można było zmienić zależność od wersji MSBuild 14.0 (Visual Studio 2015) do wersji MSBuild 15.0 (Visual Studio 2017), zgodnie z opisem w temacie [Aktualizowanie potoku w starszej wersji w usłudze Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+| **Stan**                         | Wycofanie: Po zaktualizowaniu poprzednie narzędzia X++ zostaną usunięte z programu Visual Studio 2015, a zaktualizowane narzędzia nie zostaną zainstalowane w programie Visual Studio 2015. Nie ma to wpływu na hostowane kompilacje. W przypadku tworzenia maszyn wirtualnych potok kompilacji (definicja kompilacji) należy ręcznie zaktualizować, aby można było zmienić zależność od wersji MSBuild 14.0 (Visual Studio 2015) do wersji MSBuild 15.0 (Visual Studio 2017), zgodnie z opisem w temacie [Aktualizowanie potoku w starszej wersji w usłudze Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
 
 ### <a name="user-avatar"></a>Awatar użytkownika 
 
@@ -76,7 +89,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszyscy |
-| **Stan**                         | Wycofane. Cały kod EP ma zostać usunięty w wersji z października 2021 r. |
+| **Stan**                         | Wycofanie: Cały kod EP ma zostać usunięty w wersji z października 2021 r. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.15 aplikacji Finance and Operations
 
@@ -88,7 +101,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Zaleca się, aby klienci przeszli na Microsoft Edge.|
 | **Powiązane obszary produktów**         | Wszystkie produkty Dynamics 365 |
 | **Opcja wdrażania**              | Wszyscy|
-| **Stan**                         | Wycofane. Internet Explorer 11 nie będzie obsługiwany po sierpniu 2021.|
+| **Stan**                         | Wycofanie: Internet Explorer 11 nie będzie obsługiwany po sierpniu 2021.|
 
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Dodatek Visual Studio do stosowania poprawek metadanych
@@ -181,7 +194,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Aby uzyskać więcej informacji, zobacz [Konfiguracja warunkowego dostępu do Azure Active Directory](/appcenter/general/configuring-aad-conditional-access).|
 | **Powiązane obszary produktów**         | Zabezpieczenia |
 | **Opcja wdrażania**              | W chmurze |
-| **Stan**                         | **Przestarzałe:** Ta funkcja jest całkowicie przestarzała w przypadku wdrożeń samoobsługowych. |
+| **Stan**                         | Przestarzałe: Ta funkcja jest całkowicie przestarzała w przypadku wdrożeń samoobsługowych. |
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
 
@@ -201,7 +214,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Ten błąd kompilatora powoduje trwałe zastąpienie ostrzeżenia kompilatora.  |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | **Przestarzałe:** Ostrzeżenie kompilatora jest błędem kompilatora w aktualizacjach platformy dla wersji 10.0.11 aplikacji Finance and Operations. |
+| **Stan**                         | Wycofanie: Ostrzeżenie kompilatora jest błędem kompilatora w aktualizacjach platformy dla wersji 10.0.11 aplikacji Finance and Operations. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Licencje ISV utworzone przy użyciu algorytmu wyznaczania wartości skrótu SHA1
 
@@ -211,7 +224,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak. Do tworzenia licencji używaj Windows PowerShell. |
 | **Powiązane obszary produktów**         | Narzędzia programistyczne Visual Studio. |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | <strong>Przestarzałe:</strong> licencje ISV utworzone za pomocą algorytmu wyznaczania wartości skrótu SHA1. Ten algorytm jest zależny od certyfikatów utworzonych za pomocą narzędzia MakeCert, a to narzędzie jest przestarzałe.<p><strong>Przestarzałe:</strong> użycie algorytmu SHA1 na potrzeby zabezpieczeń lub wyznaczania wartości skrótu. Algorytm SHA1 przestanie działać na początku 2021. Dlatego nie należy go już używać.<p><strong>Usunięto</strong> : Obsługa żądań przychodzących lub wychodzących dotyczących zabezpieczeń TLS (Transport Layer Security) 1.0 i TLS 1.1. |
+| **Stan**                         | Przestarzałe: licencje ISV utworzone za pomocą algorytmu wyznaczania wartości skrótu SHA1. Ten algorytm jest zależny od certyfikatów utworzonych za pomocą narzędzia MakeCert, a to narzędzie jest przestarzałe.<br><br>Przestarzałe: użycie algorytmu SHA1 na potrzeby zabezpieczeń lub wyznaczania wartości skrótu. Algorytm SHA1 przestanie działać na początku 2021. Dlatego nie należy go już używać.<br><br>Usunięto : Obsługa żądań przychodzących lub wychodzących dotyczących zabezpieczeń TLS (Transport Layer Security) 1.0 i TLS 1.1. |
 
 ## <a name="platform-update-32"></a>Aktualizacja platformy Update 32
 

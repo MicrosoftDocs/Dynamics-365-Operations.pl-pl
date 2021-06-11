@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921430"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112628"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -104,6 +104,39 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Opcja wdrażania**              | Wszystkich |
 | **Stan**                         | Przestarzałe: Do 1 października 2020, nie planujemy już obsługiwać **Krajowy raport podatkowy - Odwołanie do funkcji IT-00003**. |
 
+## <a name="october-2019-deprecation-announcement"></a>Ogłoszenie wycofania funkcji w październiku 2019 r.
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Diagramy schematów blokowych w Narzędziu do modelowania procesów biznesowych
+
+<table>
+<tbody>
+<tr>
+<td><strong>Przyczyna wycofania/usunięcia</strong></td>
+<td>Wycofujemy składnik diagramów schematów blokowych w Narzędziu do modelowania procesów biznesowych (BPM), ponieważ starszy projekt spowodował niewielkie użycie.</td>
+</tr>
+<tr>
+<td><strong>Zamieniona przez inną funkcję?</strong></td>
+<td>Nie</td>
+</tr>
+<tr>
+<td><strong>Obszary powiązane</strong></td>
+<td>Narzędzie do modelowania procesów biznesowych</td>
+</tr>
+<tr>
+<td><strong>Stan</strong></td>
+<td>Przestarzałe: składnik diagramów schematów blokowych w narzędziu BPM powinien zostać usunięty w 2020 r. Następujące funkcje będą niedostępne:
+<ul>
+<li>Wszystkie schematy blokowe będą tylko do odczytu i nie będzie można ich edytować. Właściwości kształtu skojarzone z działaniami dotyczącymi schematów blokowych będą również niedostępne. Te schematy blokowe obejmują zarówno domyślne schematy blokowe, które są generowane automatycznie, jak i dostosowane schematy blokowe, które są modyfikowane na podstawie domyślnych schematów blokowych.</li>
+<li>Kroki procesu będą tylko do odczytu i nie będzie można ich edytować.</li>     
+<li>Funkcja analizy dopasowania/lub w starszej wersji będzie niedostępna. Dlatego żadna lista luk nie zostanie automatycznie utworzona lub udostępniona do eksportu.
+<p><strong>Uwaga:</strong> ta funkcja została wcześniej uznana za przestarzałą i zastąpiona integracjami metodyki Microsoft Azure DevOps.</p>
+</li>
+<li>Historia wersji schematu blokowego będzie niedostępna.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 z aktualizacją platformy 29
 

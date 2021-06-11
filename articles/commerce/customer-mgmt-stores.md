@@ -2,7 +2,7 @@
 title: Zarządzanie klientami w sklepach
 description: W tym temacie wyjaśniono, w jaki sposób detaliści mogą włączyć funkcje zarządzania klientami w punkcie sprzedaży (POS) w Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019994"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097215"
 ---
 # <a name="customer-management-in-stores"></a>Zarządzanie klientami w sklepach
 
@@ -35,7 +35,10 @@ Skojarzenia sprzedaży mogą także przechwytywać pomocnicze adresy e-mail i nu
 
 ## <a name="default-customer-properties"></a>Domyślne właściwości odbiorcy
 
-Sprzedawcy detaliczni mogą używać strony **Wszystkie sklepy** w programie Commerce Headquarters (**Retail i Commerce \> Kanały \> Sklepy**), aby skojarzyć domyślnego klienta z każdym sklepem. Następnie program Commerce kopiuje właściwości zdefiniowane dla odbiorcy domyślnego do wszystkich utworzonych rekordów nowych klientów. Na przykład w oknie dialogowym **Tworzenie odbiorcy** są wyświetlane właściwości dziedziczone po domyślnym odbiorcy skojarzonym ze sklepem. Te właściwości obejmują typ odbiorcy, grupę klientów, preferencje dotyczące paragonu, walutę i język. Wszystkie przynależności (grupy odbiorców) są także dziedziczone po odbiorcy domyślnym. Wymiary finansowe są jednak dziedziczone po grupie klientów skojarzonej z domyślnym klientem, a nie po samym odbiorcy domyślnym.
+Sprzedawcy detaliczni mogą używać strony **Wszystkie sklepy** w programie Commerce Headquarters (**Retail i Commerce \> Kanały \> Sklepy**), aby skojarzyć domyślnego klienta z każdym sklepem. Następnie program Commerce kopiuje właściwości zdefiniowane dla odbiorcy domyślnego do wszystkich utworzonych rekordów nowych klientów. Na przykład w oknie dialogowym **Tworzenie odbiorcy** są wyświetlane właściwości dziedziczone po domyślnym odbiorcy skojarzonym ze sklepem. Te właściwości obejmują **typ odbiorcy**, **grupę klientów**, **opcje dotyczące paragonu**, **e-mail dla paragonu**, **walutę** i **język**. Wszystkie **przynależności** (grupy odbiorców) są także dziedziczone po odbiorcy domyślnym. **Wymiary finansowe** są jednak dziedziczone po grupie klientów skojarzonej z domyślnym klientem, a nie po samym odbiorcy domyślnym.
+
+> [!NOTE]
+> Wartość **e-mail odbiorcy** zostanie skopiowana z klienta domyślnego tylko w przypadku, gdy dla nowo utworzonych klientów nie zostanie podany identyfikator e-mail paragonu. Oznacza to, że jeśli identyfikator e-mail paragonu jest obecny przy domyślnym kliencie, to wszyscy klienci utworzeni z witryny e-commerce otrzymają ten sam identyfikator e-mail, ponieważ nie ma interfejsu użytkownika do przechwytywania identyfikatora e-mail paragonu od klienta. Zalecamy pozostawienie pola **e-mail dla paragonu** pustego dla domyślnego klienta sklepu i korzystanie z niego tylko w przypadku, gdy proces biznesowy jest uzależniony od obecności adresu e-mail paragonu. 
 
 Skojarzenia sprzedaży mogą przechwytywać wiele adresów dla odbiorcy. Imię i nazwisko odbiorcy oraz numer telefonu są dziedziczone z informacji kontaktowych skojarzonych z każdym adresem. Skrócona karta **Adresy** rekordu odbiorcy zawiera pole **Cel**, które mogą edytować skojarzenia sprzedaży. Jeśli typem odbiorcy jest **Osoba**, domyślną wartością jest **Strona główna**. Jeśli typem odbiorcy jest **Organizacja**, domyślną wartością jest **Biznes**. Inne wartości, które obsługuje to pole, obejmują: **Strona główna**, **Biuro** i **Poczta**. Wartość pola **Kraj** w adresie jest dziedziczona z adresu podstawowego określonego na stronie **Jednostka operacyjna** w Commerce headquarters w **Administrowanie organizacją \> Organizacje \> Jednostki organizacyjne**.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019501"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103635"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -77,6 +77,7 @@ Aby ręcznie ustalić zamówienia planowane, należy znaleźć i wybrać zamówi
 
     - **Grupuj według dostawców** – Ustaw tę opcję na wartość *Tak*, aby podczas ich grupowania pogrupować planowane zamówienia zakupu i utworzyć jedno zamówienie zakupu dla każdego dostawcy. Alternatywą jest utworzenie jednego zamówienia zakupu, w którym każdemu planowanemu zamówieniu odpowiadałby jeden wiersz.
     - **Grupowanie wg grupy kupców** — Ustawienie tej opcji na *Tak* spowoduje, że planowane zamówienia zakupu zostaną pogrupowane w celu utworzenia jednego zamówienia zakupu łączącego dostawcę i grupę kupców. Aby skorzystać z tej opcji, należy też ustawić opcję **Grupuj wg dostawców** na *Tak*.
+    - **Grupuj według umów zakupu** – ustaw tę opcję na wartość *Tak*, aby zgrupować planowane zamówienia zakupu, które mają tego samego dostawcę co istniejące umowy zakupu i utworzyć jedno zamówienie zakupu na umowę zakupu. Ta opcja jest włączona automatycznie, gdy włączono opcję **Grupuj według dostawców**. Aby użyć przycisku **Grupuj według umowy zakupu**, na stronie **Parametry planowania głównego** opcja *Znajdź umowę zakupu* musi mieć wartość **Tak**.
     - **Grupuj według okresów** (w sekcji **Zamówienia zakupu**) — umożliwia wybór okresu, według którego mają być grupowane planowane zamówienia zakupu. Aby skorzystać z tej opcji, należy też zaznaczyć opcję **Grupuj wg dostawcy**.
     - **Grupuj według okresów** (w sekcji **Przeniesienia**) — umożliwia wybór okresu, według którego mają być grupowane planowane przeniesienia. Zamówienia zostaną pogrupowane na podstawie wartości **Z magazynu** i **Do magazynu**.
 

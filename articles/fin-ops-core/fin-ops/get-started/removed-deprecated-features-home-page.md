@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje na stronie głównej
 description: Ten temat zawiera listę tematów Pomocy dotyczących usuniętych lub przestarzałych funkcji aplikacji Finance and Operations.
 author: sericks007
-ms.date: 03/10/2021
+ms.date: 05/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 0827daafb71fd248980c72626e10b8b52016664d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b53b7c0577f7934e5bb7e03ce43cc66cafebee47
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018913"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112656"
 ---
 # <a name="removed-or-deprecated-features-home-page"></a>Usunięte lub wycofane funkcje na stronie głównej
 
@@ -30,7 +30,6 @@ Poniższe tematy zawierają informacje dotyczące usuniętych lub przestarzałyc
 - [Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Finance](../../../finance/get-started/removed-deprecated-features-finance.md)
 - [Usunięte lub przestarzałe funkcje w rozwiązaniu Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
 - [Usunięte lub wycofane funkcje Platform](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
-- [Usunięte lub przestarzałe funkcje usługi Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
 - [Usunięte lub wycofane funkcje w poprzednich wersjach](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
 ## <a name="deprecations-in-the-microsoft-power-platform"></a>Przestarzałe elementy w Microsoft Power Platform

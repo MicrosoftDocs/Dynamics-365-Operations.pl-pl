@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf3b842f018b4386d5ab4769143d4f7f0907873e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
+ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841268"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111701"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Ten temat zawiera ogólne informacje o fakturach od dostawców. Faktury dostawcy to wezwania do zapłaty za produkty i usługi. Faktury od dostawców mogą dotyczyć usług świadczonych w sposób ciągły albo bazować na zamówieniach zakupu za określone towary i usługi.
 
@@ -71,7 +73,9 @@ Poniżej przedstawiono kilka sposobów uniemożliwiających przesłanie faktury 
 
 - **Faktura zawiera niealokowane opłaty**. Osoba, która przesłała fakturę, otrzyma alert informujący, że na fakturze znajdują się niezaalokowane opłaty, aby mogły skorygować fakturę przed ponownym przesłaniem jej do przepływu pracy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli na fakturze dla dostawcy znajdują się niezaalokowane opłaty** na stronie **Zarządzanie funkcją**.
 
-- **Faktura zawiera ten sam numer faktury co inna Zaksięgowana faktura**. Osoba, która przesłała fakturę, otrzyma alert informujący, że na fakturze znajdują się zduplikowane cyfry, aby mogły skorygować fakturę przed ponownym przesłaniem jej do przepływu pracy. Ten alert będzie wyświetlany, gdy parametr w sekcji Rozrachunki z dostawcami oznaczony **Sprawdź użyty numer faktury** jest ustawiony na **Odrzuć duplikaty**. Ta funkcja jest dostępna, jeśli włączony jest parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli numer faktury istnieje już na zaksięgowanej fakturze, a system nie jest ustawiony na zduplikowane numery faktur** na stronie **Zarządzanie funkcją**.  
+- **Faktura zawiera ten sam numer faktury co inna Zaksięgowana faktura**. Osoba, która złożyła fakturę otrzyma komunikat informujący, że znaleziono fakturę z duplikatem numeru. Zduplikowany numer może zostać skorygowany przed ponownym przesłaniem faktury do obiegu. Ten alert będzie wyświetlany, gdy parametr w sekcji Rozrachunki z dostawcami oznaczony **Sprawdź użyty numer faktury** jest ustawiony na **Odrzuć duplikaty**. Ta funkcja jest dostępna, jeśli włączony jest parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli numer faktury istnieje już na zaksięgowanej fakturze, a system nie jest ustawiony na zduplikowane numery faktur** na stronie **Zarządzanie funkcją**.
+
+- **Faktura zawiera wiersz, w którym ilość fakturowana jest mniejsza niż ilość w dopasowanych przyjęciach produktów.** Osoba przesyłaca fakturę lub próby zaksięgowania otrzyma komunikat, że ilości nie są równe. Komunikat ten daje możliwość skorygowania wartości przed ponownym przesłaniem faktury do obiegu. Ta funkcja jest dostępna, jeśli na stronie **Zarządzanie funkcjami** jest włączona opcja **Zablokuj księgowanie i przesyłanie faktur dostawców do parametru przepływu pracy**, a parametry **blokowania księgowania i przesyłania** do przepływu pracy na stronie **Parametry rozrachunków z dostawcami** są włączone.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Uzgadnianie faktur od dostawców z dokumentami przyjęcia produktów
 

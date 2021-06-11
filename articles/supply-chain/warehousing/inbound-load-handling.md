@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910022"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103175"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -127,7 +127,7 @@ W poniższej tabeli wyjaśniono opcje dostępne dla pola **Przekroczony odbiór 
 | Wartość | opis |
 |---|---|
 | Zezwalaj | Pracownicy mogą rejestrować odbiór ilości przekraczających pozostałą niezarejestrowana ilość dla wybranego ładunku, ale tylko wtedy, gdy łączna ilość zarejestrowana nie przekracza ilości wiersza zamówienia zakupu skojarzonej z ładunkiem (po korekcie dla procentu nadwyżki w dostawie). |
-| Zablokuj | <p>Pracownicy nie mogą rejestrować przyjęcia ilości większej niż pozostała niezarejestrowana ilość dla wybranego ładunku (po skorygowaniu o wartość procentu nadwyżki w dostawie). Pracownik próbujący zarejestrować odbiory otrzyma komunikat o błędzie i nie będzie mógł kontynuować, dopóki nie zarejestruje ilości równej lub mniejszej od pozostałej niezarejestrowanej ilości ładunku.</p><p>Domyślnie wartość procentu nadwyżki w dostawie w wierszu ładunku jest kopiowana z wiersza skojarzonego zamówienia zakupu. Jeśli w polu <b>Przekroczony odbiór ładunku</b> ustawiono wartość <i>Zablokuj</i>, system używa wartości procentowej nadwyżki w dostawie w celu obliczenia całkowitej ilości, którą można zarejestrować w wierszu ładunku. Jednak wartość ta może zostać zastąpiona dla pojedynczych ładunków w zależności od potrzeb. To zachowanie staje się istotne podczas przyjmowania przepływów, jeśli część lub całość nadwyżki, która reprezentuje procent nadwyżki w dostawie wiersza zamówienia, jest nieproporcjonalnie rozłożona na wiele ładunków. Oto przykładowy scenariusz:</p><ul><li>Istnieje wiele ładunków dla jednego wiersza zamówienia zakupu.</li><li>W wierszu zamówienia zakupu jest procent nadwyżki w dostawie, który jest większy niż 0 (zero).</li><li>Ilości zostały już zarejestrowane w odniesieniu do jednego lub większej liczby ładunków bez uwzględnienia procentu nadwyżki w dostawie.</li><li>Ilość nadwyżki w dostawie przychodzi z ostatnim ładunkiem.</li></ul><p>W tym scenariuszu urządzenie przenośne może być użyte do zarejestrowania nadwyżki ilości dla ostatniego ładunku tylko wtedy, gdy kierownik magazynu zwiększy wartość procentową nadwyżki w dostawie dla odpowiedniego wiersza ładunku z domyślnej wartości na wartość wystarczająco dużą, aby można było zarejestrować pełną nadwyżkę w dostawie wraz z końcowym ładunkiem.</p> |
+| Zablokuj | <p>Pracownicy nie mogą rejestrować przyjęcia ilości większej niż pozostała niezarejestrowana ilość dla wybranego ładunku (po skorygowaniu o wartość procentu nadwyżki w dostawie). Pracownik, który spróbuje zarejestrować paragony, otrzyma błąd i nie będzie mógł kontynuować pracy, dopóki nie zarejestruje ilości równej lub mniejszej od pozostałej niezarejestrowanej ilości ładunku.</p><p>Domyślnie wartość procentu nadwyżki w dostawie w wierszu ładunku jest kopiowana z wiersza skojarzonego zamówienia zakupu. Jeśli w polu <b>Przekroczony odbiór ładunku</b> ustawiono wartość <i>Zablokuj</i>, system używa wartości procentowej nadwyżki w dostawie w celu obliczenia całkowitej ilości, którą można zarejestrować w wierszu ładunku. Jednak wartość ta może zostać zastąpiona dla pojedynczych ładunków w zależności od potrzeb. To zachowanie staje się istotne podczas przyjmowania przepływów, jeśli część lub całość nadwyżki, która reprezentuje procent nadwyżki w dostawie wiersza zamówienia, jest nieproporcjonalnie rozłożona na wiele ładunków. Oto przykładowy scenariusz:</p><ul><li>Istnieje wiele ładunków dla jednego wiersza zamówienia zakupu.</li><li>W wierszu zamówienia zakupu jest procent nadwyżki w dostawie, który jest większy niż 0 (zero).</li><li>Ilości zostały już zarejestrowane w odniesieniu do jednego lub większej liczby ładunków bez uwzględnienia procentu nadwyżki w dostawie.</li><li>Ilość nadwyżki w dostawie przychodzi z ostatnim ładunkiem.</li></ul><p>W tym scenariuszu urządzenie przenośne może być użyte do zarejestrowania nadwyżki ilości dla ostatniego ładunku tylko wtedy, gdy kierownik magazynu zwiększy wartość procentową nadwyżki w dostawie dla odpowiedniego wiersza ładunku z domyślnej wartości na wartość wystarczająco dużą, aby można było zarejestrować pełną nadwyżkę w dostawie wraz z końcowym ładunkiem.</p> |
 | Zablokuj tylko dla zamkniętych ładunków | Pracownicy mogą odbierać nadwyżki ilości wierszy ładunku dla ładunków otwartych, ale nie dla ładunków o stanie _Odebrane_. |
 
 > [!NOTE]
