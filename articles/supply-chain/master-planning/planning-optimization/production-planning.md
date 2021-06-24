@@ -2,26 +2,21 @@
 title: Planowanie produkcji
 description: W tym temacie opisano planowanie produkcji i sposób modyfikowania planowanych zleceń produkcyjnych przy użyciu funkcji optymalizacji planowania.
 author: ChristianRytt
-ms.date: 12/15/2020
+ms.date: 06/01/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 22b78f44940f71097ca8b1cdb74edb06274bba75
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ffee79f152141297ceb24e2d7a40523eac18ffaf
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839230"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129760"
 ---
 # <a name="production-planning"></a>Planowanie produkcji
 
@@ -79,11 +74,44 @@ Strony **Rozłożenie** można użyć do analizy popytu wymaganego dla określon
 
 ## <a name="filters"></a><a name="filters"></a>Filtry
 
-W przypadku scenariuszy planowania, które obejmują produkcję, zaleca się uniknięcie przefiltrowanych przebiegów planowania głównego. Aby mieć pewność, że optymalizacja planowania zawiera informacje wymagane do obliczenia poprawnego wyniku, musisz uwzględnić wszystkie produkty, które mają relacje z produktami w całej strukturze listy składowej (BOM) planowanego zamówienia.
+Aby mieć pewność, że optymalizacja planowania zawiera informacje wymagane do obliczenia poprawnego wyniku, musisz uwzględnić wszystkie produkty, które mają relacje z produktami w całej strukturze listy składowej (BOM) planowanego zamówienia. W przypadku scenariuszy planowania, które obejmują produkcję, zaleca się uniknięcie przefiltrowanych przebiegów planowania głównego.
 
-Chociaż podrzędne elementy zależne są automatycznie wykrywane i uwzględniane w planowaniu głównym, gdy jest używany wbudowany aparat planowania głównego, optymalizacja planowania nie wykonuje tej akcji.
+Chociaż podrzędne elementy zależne są automatycznie wykrywane i uwzględniane w planowaniu głównym, gdy jest używany wbudowany aparat planowania głównego, optymalizacja planowania nie wykonuje obecnie tej akcji.
 
-Jeśli na przykład do wytwarzania produktu B jest używany jeden element bolt ze struktury listy składowej (BOM) produktu A, w filtrze muszą zostać uwzględnione wszystkie produkty w strukturze BOM produktów A i B. Ze względu na to, że zapewnienie, że wszystkie produkty są częścią filtru, może być bardzo złożone, zalecamy uniknięcie odfiltrowanych przebiegów planowania głównego podczas realizacji zleceń produkcyjnych.
+Jeśli na przykład do wytwarzania produktu B jest używany jeden element bolt ze struktury listy składowej (BOM) produktu A, w filtrze muszą zostać uwzględnione wszystkie produkty w strukturze BOM produktów A i B. Ponieważ zapewnienie, że wszystkie produkty są częścią filtra może być skomplikowane, zalecamy unikanie filtrowanych przebiegów planowania głównego, gdy w grę wchodzą zlecenia produkcyjne. W przeciwnym razie planowanie główne przyniesie niepożądane rezultaty.
 
+### <a name="reasons-to-avoid-filtered-master-planning-runs"></a>Powody, dla których należy unikać filtrowania planów generalnych
+
+Kiedy uruchamiasz filtrowane planowanie główne dla produktu, Optymalizacja planowania (w przeciwieństwie do wbudowanego silnika planowania głównego) nie wykrywa wszystkich podproduktów i surowców w strukturze BOM tego produktu, a zatem nie uwzględnia ich w przebiegu planowania głównego. Nawet jeśli Optymalizacja planowania identyfikuje pierwszy poziom w strukturze BOM produktu, nie ładuje żadnych ustawień produktu (takich jak domyślny typ zamówienia lub zakres pozycji) z bazy danych.
+
+W optymalizacji planowania dane dla badania są ładowane wcześniej i stosowane są filtry. Oznacza to, że jeśli podprodukt lub surowiec wchodzący w skład określonego produktu nie jest częścią filtra, informacje o nim nie zostaną przechwycone dla przebiegu. Dodatkowo, jeżeli podprodukt lub surowiec jest również zawarty w innym produkcie, wówczas przefiltrowany przebieg obejmujący tylko oryginalny produkt i jego składniki spowodowałby usunięcie istniejącego planowanego popytu, który został utworzony dla tego innego produktu.
+
+Ta logika może spowodować, że filtrowane przebiegi planowania głównego dadzą nieoczekiwane wyniki. Poniższe sekcje zawierają przykłady ilustrujące nieoczekiwane wyniki, które mogą wystąpić.
+
+### <a name="example-1"></a>Przykład 1
+
+Wyrób gotowy *FG* składa się z następujących komponentów:
+
+- Surowiec *R*
+- Podprodukt *S1*, która składa się z podproduktu *S2*
+
+W magazynie znajdują się zapasy surowca *R*, natomiast podprodukt *S1* nie jest obecny w magazynie.
+
+W przypadku filtrowanego planowania głównego dla wyrobu gotowego *FG* otrzymamy planowane zlecenie produkcyjne dla wyrobu gotowego *FG*, planowane zlecenie zakupu surowca *R* oraz planowane zlecenie zakupu podproduktu *S1*. Jest to niepożądany wynik, ponieważ optymalizacja planowania zignorowała istniejącą podaż na surowiec *R*, a podprodukt *S1* musi być produkowany przy użyciu *S2*, a nie zamawiany bezpośrednio. Dzieje się tak, ponieważ optymalizacja planowania posiada listę składników dla wyrobu gotowego *FG* bez żadnych powiązanych informacji, takich jak istniejąca podaż jego komponentów lub ich domyślne ustawienia zamówienia.
+
+### <a name="example-2"></a>Przykład 2
+
+W oparciu o poprzedni przykład dodatkowy gotowy produkt, *FG2*, również korzysta z podproduktu *S1*. Planowane zamówienie istnieje dla wyrobu gotowego *FG2*, a planowany popyt istnieje dla wszystkich jego komponentów, w tym *S1*.
+
+Aby zniwelować niepożądane wyniki filtrowanego przebiegu planowania głównego z poprzedniego przykładu, należy dodać wszystkie podprodukty i surowce ze struktury BOM wyrobu gotowego *FG* do filtra, a następnie przeprowadzić pełną regenerację.
+
+Po uruchomieniu pełnej regeneracji system usuwa wszystkie istniejące wyniki dla wszystkich uwzględnionych produktów, a następnie odtwarza wyniki w oparciu o nowe obliczenia. Oznacza to, że istniejący planowany popyt na wyrób *S1* jest usuwany, a następnie odtwarzany z uwzględnieniem tylko zapotrzebowania na wyroby gotowe *FG*, natomiast zapotrzebowanie na wyroby gotowe *FG2* jest pomijane. Dzieje się tak, ponieważ podczas uruchamiania optymalizacji planowania nie jest brane pod uwagę planowane zapotrzebowanie innych planowanych zleceń produkcyjnych &mdash; tylko planowane zapotrzebowanie wygenerowane podczas uruchamiania.
+
+> [!NOTE]
+> Jeśli istniejące planowane zamówienie na towar gotowy *FG2* ma status *Zatwierdzono*, to zatwierdzone planowane zapotrzebowanie zostanie uwzględnione, nawet jeśli produkt nadrzędny nie jest dodany do filtra.
+
+Dlatego, jeśli nie doda się wszystkich komponentów wyrobu gotowego *FG*, wyrobu gotowego *FG2* oraz wszystkich innych produktów, których te komponenty są częścią (wraz z ich komponentami), to przefiltrowany przebieg planowania głównego da niepożądane wyniki.
+
+Ponieważ zapewnienie, że wszystkie produkty są częścią filtra może być skomplikowane, zalecamy unikanie filtrowanych przebiegów planowania głównego, gdy w grę wchodzą zlecenia produkcyjne.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
