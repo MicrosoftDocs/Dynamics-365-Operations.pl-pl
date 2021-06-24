@@ -72,7 +72,7 @@
                   items:
                     - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (lipiec 2021)
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-scm-10-0-19.md
@@ -222,6 +222,8 @@
                       href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Usługa Regulatory Configuration Service — wycofanie magazynu usługi Lifecycle Services
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fakturowanie elektroniczne
                   items:
                     - name: Omówienie fakturowania elektronicznego
@@ -232,8 +234,10 @@
                       href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Wystawianie faktur elektronicznych w rozwiązaniach Finance i Supply Chain Management
                       href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Tworzenie konta magazynu usługi Azure i Key Vault
+                    - name: Tworzenie konta magazynu usług Azure i Key Vault
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Pulpit nawigacyjny zarządzania użyciem
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Rozpocznij
                       items:
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym — administrowanie usługami
@@ -1383,8 +1387,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Generowanie formularzy faktur niezależnych (FTI) do wydruku
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Projektowanie wydajnych rozwiązań raportowania elektronicznego
+                  items:
+                    - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Rozwiązywanie problemów z wydajnością w konfiguracjach raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Zarządzanie dokumentem biznesowym (BDM, ang. business document management)'
                   items:
                     - name: BDM — omówienie
@@ -1675,30 +1683,38 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Prognozowanie popytu
+            - name: Prognozowanie
               items:
-                - name: Omówienie prognozowania popytu
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Ustawienia prognozowania popytu
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Importowanie danych historycznych na potrzeby prognozowania popytu
-                  href: master-planning/import-historical-data.md
-                - name: Generowanie bazowej prognozy statystycznej
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Tworzenie ręcznej korekty prognozy bazowej
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Autoryzowanie skorygowanej prognozy
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Monitorowanie dokładności prognozy
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Klucze redukcji
-                  href: master-planning/reduction-keys.md
-                - name: Tworzenie prognozy bazowej
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Ręczne modyfikowanie prognozy popytu
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognozowanie popytu i podaży
+                  items:
+                    - name: Prognoza zapasów
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Przewodnik: Ręczne modyfikowanie prognozy popytu'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Prognozowanie popytu
+                  items:
+                    - name: Omówienie prognozowania popytu
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Ustawienia prognozowania popytu
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Generowanie bazowej prognozy statystycznej
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Tworzenie ręcznej korekty prognozy bazowej
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Autoryzowanie skorygowanej prognozy
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Importowanie danych historycznych na potrzeby prognozowania popytu
+                      href: master-planning/import-historical-data.md
+                    - name: Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Monitorowanie dokładności prognozy
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Przewodnik: Tworzenie prognozy bazowej'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Planowanie główne z uwzględnieniem prognozy
+                  items:
+                    - name: Klucze redukcji prognozy
+                      href: master-planning/reduction-keys.md
             - name: Rozwiązywanie problemów dotyczących planowania głównego
               href: master-planning/troubleshoot-masterplanning.md
         - name: Aplikacja mobilna
@@ -3425,6 +3441,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Sprzedaż i marketing
               items:
+                - name: Nie można zmniejszyć ilości podczas anulowania zamówienia sprzedaży
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
                 - name: 'Administratorzy systemu nie mogą wyczyścić wstrzymań zamówień, ponieważ nie mają niezbędnych uprawnień'
                   href: troubleshooting/sales/system-administrator.md
             - name: Zarządzanie transportem

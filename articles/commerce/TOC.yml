@@ -94,7 +94,7 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.20 (lipiec 2021)
+                    - name: Rozwiązanie Commerce w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Rozwiązanie Commerce w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,7 +244,7 @@
                   href: arch-auth-flow.md
                 - name: Wymagania dotyczące wersji składników rozwiązania Dynamics 365 Commerce
                   href: arch-component-versioning.md
-                - name: Architektura Commerce Scale Unit
+                - name: Architektura silnika rozwiązania Commerce bez kierownictwa
                   href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
                   href: dev-itpro/retail-in-store-topology.md
@@ -258,7 +258,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Architektura aplikacji Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Architektura publikowania sklepu internetowego
+                - name: Publikowanie kanału sklepu internetowego
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Zawartość Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -546,6 +546,8 @@
                       href: paypal.md
                     - name: Obsługa płatności dokonywanych za pomocą portfeli
                       href: wallets.md
+                    - name: Rozszerzone płatności w realizacji zamówienia witryny sklepowej
+                      href: dev-itpro/enhanced-sca.md
                     - name: Płatności — często zadawane pytania
                       href: dev-itpro/payments-retail.md
                 - name: Wiadomość e-mail i powiadomienia
@@ -772,8 +774,12 @@
                   href: tasks/use-continuity-program.md
                 - name: Włączanie powiadomień dotyczących zaewidencjonowania w punkcie sprzedaży
                   href: enable-customer-check-in.md
-            - name: Zwroty
+            - name: Zwroty i refundacje
               items:
+                - name: Tworzenie zwrotów w punkcie sprzedaży
+                  href: POS-returns.md
+                - name: Produkty kontrolowane za pomocą numeru seryjnego zwrotu w punkcie sprzedaży
+                  href: POS-serial-returns.md
                 - name: Połączone zwroty
                   href: dev-itpro/linked-refunds.md
                 - name: Sprzedaż i zwrot produktów nieuwzględnionych w asortymencie sklepu
@@ -1230,6 +1236,8 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Usługa Regulatory Configuration Service — wycofanie magazynu usługi Lifecycle Services
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Austria
               items:
                 - name: Przykład integracji usługi rejestracji fiskalnej (Austria)
@@ -1238,6 +1246,8 @@
               items:
                 - name: Lokalizacja rozwiązania Commerce dla Brazylii
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Konfigurowanie i wdrażanie lokalizacji rozwiązania Commerce dla Brazylii
+                  href: localizations/latam-bra-deployment.md
             - name: Europa Wschodnia
               items:
                 - name: Wspólne
@@ -1962,8 +1972,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Generowanie formularzy faktur niezależnych (FTI) do wydruku
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Projektowanie wydajnych rozwiązań raportowania elektronicznego
+                  items:
+                    - name: Śledzenie wykonywania formatów modułu Raportowanie elektroniczne w celu rozwiązywania problemów z wydajnością
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Rozwiązywanie problemów z wydajnością w konfiguracjach raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Zarządzanie dokumentem biznesowym (BDM, ang. business document management)'
                   items:
                     - name: BDM — omówienie
