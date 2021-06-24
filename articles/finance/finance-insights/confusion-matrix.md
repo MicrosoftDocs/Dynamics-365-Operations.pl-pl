@@ -2,7 +2,7 @@
 title: Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 description: W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028210"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193547"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 
@@ -129,16 +129,12 @@ Aby uprościć obliczenia, skonstruowano tablice przykładowe w celu dopasowania
 
 Więcej szczegółowych informacji o sposobach działania tego obliczenia zawiera niniejszy raport klasyfikacji sklearn.metrics dla modelu 1. Trzy stany, „Na czas”, „Z opóźnieniem” i „Z dużym opóźnieniem” są reprezentowane przez wiersze o numerach 1, 2 i 3. Średnia makro jest tylko średnią z kolumny „Wynik F1”.
 
-|           | precyzja | trafność   | wynik F1 |
+| &nbsp;    | precyzja | trafność   | wynik F1 |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Jak pokazują te wyniki, dwa modele mają niemal identyczne wyniki dokładności makra F1. W tym i wielu innych przypadkach dokładność F1 stanowi lepszy wskaźnik zdolności modelu. Jeśli chodzi o dokładność, interpretacja wyników wymaga zrozumienia, co należy przede wszystkim rozważyć w modelu.
-
-#### <a name="privacy-notice"></a>Klauzula prywatności
-Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

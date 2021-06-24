@@ -2,7 +2,7 @@
 title: Deklaracja VAT dla Egiptu
 description: W tym temacie opisano sposób konfigurowania i generowania formularza zwrotu podatku VAT dla Egiptu.
 author: sndray
-ms.date: 03/10/2021
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: bd48ee96a26c59183981fae879e3659711e70ce3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021963"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186621"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>Deklaracja VAT dla Egiptu (EG-00002)
 
@@ -85,6 +85,7 @@ Następujące konfiguracje wyszukiwania służą do klasyfikowania transakcji w 
 - **VATRateTypeLookup** > Kolumna B: Typ podatku
 - **VATRateTypeLookup** > Kolumna C: Typ pozycji w tabeli
 - **PurchaseOperationTypeLookup** > Kolumna A: typ dokumentu
+- **CustomerTypeLookup** > kolumna A: typ dokumentu
 - **SalesOperationTypeLookup** > Kolumna N: typ operacji
 - **SalesItemTypeLookup** > Kolumna O: typ pozycji
 
@@ -98,6 +99,8 @@ Wykonaj następujące kroki, aby skonfigurować różne wyszukiwania używane do
 6. Powtórz kroki 3–5 dla wszystkich dostępnych wyszukiwania.
 7. Wybierz opcję **Dodaj**, aby uwzględnić ostateczny wiersz rekordu, a następnie w kolumnie **Wynik wyszukiwania** wybierz opcję **Nie dotyczy**. 
 8. W kolumnach pozostałych wybierz opcję **Niepuste**. 
+9. W polu **Stan** wybierz opcję **ukończone**.
+10. Wybierz **Zapisz**, a następnie zamknij stronę **Parametry specyficzne dla aplikacji**.
 
 > [!NOTE]
 > Podczas dodawania ostatniego rekordu, **Nie dotyczy**, należy zdefiniować następującą regułę: Gdy grupa podatków, grupa podatków towaru, kod podatku i nazwa przekazana jako argument nie spełniają żadnej z poprzednich reguł, transakcje nie są uwzględnione w księdze VAT sprzedaży. Ta reguła nie jest używana podczas generowania raportu, ale pomaga uniknąć błędów w generowaniu raportu w przypadku brakujących konfiguracji reguł.
@@ -138,7 +141,7 @@ Poniższe tabele stanowią przykład sugerowanej konfiguracji w opisanych konfig
 | Usługi       | 7    | VAT_SERV                | *Niepuste* | SaleExempt            |
 | Usługi       | 8    | VAT_SERV                | *Niepuste* | SalesExemptCreditNote |
 | Korekty    | 9    | *Pusty*                 | VAT_ADJ     | Sprzedaż                 |
-| Korekty    | 10   | *Pusty*                 | VAT_ADJ     | Zakup              |
+| Korekty    | 10   | *Pusty*                 | VAT_ADJ     | SalesCreditNote       |
 | Nie dotyczy | 11   | *Niepuste*             | *Niepuste* | *Niepuste*           |
 
 **PurchaseItemTypeLookup**
@@ -148,16 +151,14 @@ Poniższe tabele stanowią przykład sugerowanej konfiguracji w opisanych konfig
 | Towary                  | 1    | VAT_GOODS               | *Niepuste* | Zakup                 |
 | Towary                  | 2    | VAT_GOODS               | *Niepuste* | PurchaseCreditNote       |
 | Usługi               | 3    | VAT_SERV                | *Niepuste* | Zakup                 |
-| Usługi               | 4    | VAT_SERV                | *Niepuste*  | PurchaseCreditNote       |
+| Usługi               | 4    | VAT_SERV                | *Niepuste* | PurchaseCreditNote       |
 | Maszyny i sprzęt  | 5    | VAT_M&E                 | *Niepuste* | Zakup                 |
 | Maszyny i sprzęt  | 6    | VAT_M&E                 | *Niepuste* | PurchaseCreditNote       |
 | Części do maszyn         | 7    | VAT_PARTS               | *Niepuste* | Zakup                 |
 | Części do maszyn         | 8    | VAT_PARTS               | *Niepuste* | PurchaseCreditNote       |
 | Wyjątki             | 9    | VAT_EXE                 | *Nie puste*  | PurchaseExempt           |
 | Wyjątki             | 10   | VAT_EXE                 | *Niepuste* | PurchaseExemptCreditNote |
-| Nie dotyczy         | 11   | *Pusty*                 | VAT_ADJ     | *Niepuste*              |
-| Nie dotyczy         | 12   | *Niepuste*             | *Niepuste* | *Niepuste*              |
-| Nie dotyczy         | 13   | *Pusty*                 | *Niepuste* | *Niepuste*              |
+| Nie dotyczy         | 11   | *Niepuste*             | *Niepuste* | *Niepuste*              |
 
 **PurchaseOperationTypeLookup**
 
@@ -174,6 +175,17 @@ Poniższe tabele stanowią przykład sugerowanej konfiguracji w opisanych konfig
 | Korekty    | 9    | *Pusty*          | VAT_ADJ     | PurchaseCreditNote       |
 | Korekty    | 10   | *Pusty*          | VAT_ADJ     | Zakup                 |
 | Nie dotyczy | 11   | *Niepuste*      | *Niepuste* | *Niepuste*              |
+
+**CustomerTypeLookup**
+
+|    Wynik wyszukiwania    | Wiersz | Grupa podatków |
+|---------------------|------|-----------------|
+| Organizacja        |  1   | VAT_LOCAL       |
+| Organizacja        |  2   | VAT_EXPORT      |
+| Organizacja        |  3   | VAT_EXE         |
+| Ostateczny konsument      |  4   | VAT_FINALC      |
+| Organizacja publiczna |  5   | VAT_PUBLIO      |
+| Nie dotyczy      |  6   | *Niepuste*     |
 
 **VATRateTypeLookup**
 

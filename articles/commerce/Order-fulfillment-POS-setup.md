@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5cdf7b2655f62b693a8f2bc137c690fbc43b16a7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 246a79f6f1578e81510d4a57ee12f0e0497bff84
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796445"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193186"
 ---
 # <a name="set-up-order-fulfillment-for-stores"></a>Konfigurowanie realizacji zamówienia dla sklepów
 
@@ -33,9 +33,9 @@ Operacja realizacji zamówienia w punkcie sprzedaży zapewnia jeden obszar roboc
 
 ## <a name="set-up-the-order-fulfillment-operation"></a>Konfigurowanie operacji realizacji zamówienia
 
-Realizacja zamówienia, [Identyfikator operacji 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
+Realizacja zamówienia, [Identyfikator operacji 928](pos-operations.md), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
 
-Wykonaj czynności opisane w sekcji [Dodawanie operacji do siatki przycisków](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts), aby określić, których parametrów używać w celu wywołania realizacji zamówienia w punkcie sprzedaży. Domyślnie po określeniu operacji realizacji zamówienia wybierana jest opcja **Wszystkie zamówienia**. Po skonfigurowaniu z tym parametrem operacja wyświetli listę wszystkich wierszy zamówienia do realizacji w bieżącym magazynie. Dostępna jest także opcja **Zamówienia do wysłania**, którą można przypisać do przycisku i użyć, gdy użytkownika chce zobaczyć tylko zamówienia, które zostaną wysłane ze sklepu. I wreszcie dostępna jest opcja **Zamówienia do odebrania**. Po użyciu w punkcie sprzedaży powoduje wyświetlenie listy zamówień do odbioru w sklepie. Do różnych przycisków można przypisać różne parametry umożliwiające użytkownikowi wyświetlanie realizacji zamówienia na kilka sposobów.
+Wykonaj czynności opisane w sekcji [Dodawanie operacji do siatki przycisków](pos-screen-layouts.md), aby określić, których parametrów używać w celu wywołania realizacji zamówienia w punkcie sprzedaży. Domyślnie po określeniu operacji realizacji zamówienia wybierana jest opcja **Wszystkie zamówienia**. Po skonfigurowaniu z tym parametrem operacja wyświetli listę wszystkich wierszy zamówienia do realizacji w bieżącym magazynie. Dostępna jest także opcja **Zamówienia do wysłania**, którą można przypisać do przycisku i użyć, gdy użytkownika chce zobaczyć tylko zamówienia, które zostaną wysłane ze sklepu. I wreszcie dostępna jest opcja **Zamówienia do odebrania**. Po użyciu w punkcie sprzedaży powoduje wyświetlenie listy zamówień do odbioru w sklepie. Do różnych przycisków można przypisać różne parametry umożliwiające użytkownikowi wyświetlanie realizacji zamówienia na kilka sposobów.
 
 ### <a name="enable-users-to-access-order-fulfillment-at-the-point-of-sale"></a>Zapewnienie użytkownikom dostępu do realizacji zamówienia w punkcie sprzedaży
 
@@ -104,9 +104,9 @@ Domyślnie zamówienia będą miały stan **Zaakceptowane**. Stan zamówienia mo
 
 - **Edytuj** — jeżeli zamówienie ma stan Oczekujące, można je edytować w punkcie sprzedaży. Zamówień, które zostały już częściowo pobrane, spakowane lub zafakturowane nie można edytować w widoku realizacji zamówienia.
 - **Akceptuj** — jeżeli funkcja **Akceptuj ręcznie** jest skonfigurowana na poziomie kanału, zanim linie będą mogły przejść przez proces realizacji zamówienia należy je najpierw zaakceptować.
-- **Pobierz** — opcja pobierania obsługuje kilka akcji. Po pierwsze akcja **Pobranie** umożliwia aktualizacje stanu wiersza zamówienia, aby inne sklepy nie próbowały pobrać tego samego wiersza. Następnie akcja **Drukuj listę pobrania** umożliwia wydrukowanie listy pobrania dla wybranego wiersza lub wierszy, a także aktualizuje ich stan na **Pobranie**. Formaty listy pobrania są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing). I wreszcie akcja **Oznacz jako pobrane** oznacza, że linia została pobrana. Akcja **Oznacz jako pobrane** inicjuje odpowiednie transakcje zapasów w zapleczu. Akcje pobrania można wykonywać w tym samym czasie dla wielu wierszy zamówienia w różnych zamówieniach i dla wszystkich sposobów dostawy.
+- **Pobierz** — opcja pobierania obsługuje kilka akcji. Po pierwsze akcja **Pobranie** umożliwia aktualizacje stanu wiersza zamówienia, aby inne sklepy nie próbowały pobrać tego samego wiersza. Następnie akcja **Drukuj listę pobrania** umożliwia wydrukowanie listy pobrania dla wybranego wiersza lub wierszy, a także aktualizuje ich stan na **Pobranie**. Formaty listy pobrania są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md). I wreszcie akcja **Oznacz jako pobrane** oznacza, że linia została pobrana. Akcja **Oznacz jako pobrane** inicjuje odpowiednie transakcje zapasów w zapleczu. Akcje pobrania można wykonywać w tym samym czasie dla wielu wierszy zamówienia w różnych zamówieniach i dla wszystkich sposobów dostawy.
 - **Odrzuć** — wiersze lub wiersze częściowe można odrzucić. Pozwala na to ich ponowne przypisanie z zaplecza do innego sklepu lub magazynu. Wiersze można odrzucić tylko wtedy, gdy nie zostały pobrane ani spakowane. Aby odrzucić wiersz, który został już pobrany lub spakowany, należy cofnąć jego pobranie lub spakowanie z zaplecza.
-- **Pakowanie** — opcja pakowania obsługuje dwie akcje: **Drukuj dokument dostawy** umożliwia wydrukowanie dokumentu dostawy dla wybranych wierszy, a akcja **Oznacz jako spakowane** umożliwia oznaczenie wierszy jako spakowanych oraz oznaczenie jako dostarczonych w zapleczu. Jednocześnie można pakować tylko wiersze zamówienia należące do tego samego zamówienia i o tym samym sposobie dostawy. Formaty dokumentów dostawy są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+- **Pakowanie** — opcja pakowania obsługuje dwie akcje: **Drukuj dokument dostawy** umożliwia wydrukowanie dokumentu dostawy dla wybranych wierszy, a akcja **Oznacz jako spakowane** umożliwia oznaczenie wierszy jako spakowanych oraz oznaczenie jako dostarczonych w zapleczu. Jednocześnie można pakować tylko wiersze zamówienia należące do tego samego zamówienia i o tym samym sposobie dostawy. Formaty dokumentów dostawy są kontrolowane w ramach formatów paragonów. Aby uzyskać więcej informacji o sposobie konfigurowania formatów paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md).
 - **Wyślij** — wykonanie akcji wysyłania spowoduje oznaczenie wybranych wierszy jako **Dostarczone** w zapleczu. Po całkowitym wysłaniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
 - **Pobranie** — wykonanie akcji pobrania powoduje dodanie wierszy do widoku transakcji w celu pobrania. Jeżeli w zamówieniu istnieją inne wiersze, które nie są aktualnie pobierane, zostaną dodane do widoku transakcji z ilością równą zero. Po całkowitym pobraniu wiersza nie będzie on już wyświetlany w widoku realizacji zamówienia.
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7044aa84dc7ea7adc303c250e75ca6fb4a493800
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831249"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189951"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
@@ -30,7 +30,6 @@ ms.locfileid: "5831249"
 W tym temacie opisano, jak zadanie Kanban wycofania służy do uzupełnienia zapasów materiałów dla działań produkcyjnych.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Przepływ pracy uzupełnienia materiałów wykorzystującego zadanie Kanban wycofania
--------------------------------------------------------------------
 
 Zadanie Kanban wycofania może służyć do przenoszenia jednego towaru w systemie Kanban między lokalizacjami w magazynie i na produkcji, gdzie materiał zostanie zużyty. Zadanie Kanban wycofania obsługuje uzupełnianie materiałów w systemie ssania, gdzie sygnał ssania jest wymagany do zainicjowania dostawy dla określonego popytu. 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3e3c2f8a69d620bd2babe0d8d55858d01b25436
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ed85e9fd1a953a60483f369e9ac39762e294f6fc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833120"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190268"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Rozwiązywanie problemów z budżetowaniem stanowisk
 
@@ -28,8 +28,7 @@ ms.locfileid: "5833120"
 
 Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić podczas konfigurowania budżetowania stanowisk. Odpowiada na często zadawane pytania na temat tworzenia składników kosztu budżetowego, grup wynagrodzeń i siatek wynagrodzeń. 
 
-<a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Dlaczego nie można odnaleźć strony stanowiska podlegającego prognozie w module Zasoby ludzkie?
----------------------------------------------------------------
+## <a name="why-cant-i-find-the-forecast-position-page-in-human-resources"></a>Dlaczego nie można odnaleźć strony stanowiska podlegającego prognozie w module Zasoby ludzkie?
 
 Stanowiska podlegające prognozie zostały przeniesione do moduł Budżetowanie.
 

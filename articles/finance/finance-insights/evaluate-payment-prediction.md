@@ -2,7 +2,7 @@
 title: Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
 description: W tym temacie opisano kroki, które można wykonać w celu zrozumienia zasad działania modelu przewidywania płatności od odbiorców i oceny jego skuteczności.
 author: ShivamPandey-msft
-ms.date: 05/28/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897919"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186745"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -95,9 +95,5 @@ Po dokładniejszym zrozumieniu wyników uzyskiwanych przez pierwszy model można
 ## <a name="for-more-information"></a>Więcej informacji
 
 Aby uzyskać więcej informacji na temat sposobu oceny modeli przewidywania, zobacz [Wyniki modeli uczenia maszynowego](/confusion-matrix.md).
-
-#### <a name="privacy-notice"></a>Klauzula prywatności
-Wersje zapoznawcze (1) mogą wykorzystywać mniej rygorystyczne funkcje ochrony prywatności i bezpieczeństwa niż usługa Dynamics 365 Finance and Operations, (2) nie są objęte umową dotyczącą poziomu usług (SLA) dla tej usługi, (3) nie powinny być używane do przetwarzania danych osobowych ani innych danych podlegających wymogom zapewnienia zgodności z przepisami lub regulacjami, oraz (4) mają ograniczone wsparcie techniczne.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

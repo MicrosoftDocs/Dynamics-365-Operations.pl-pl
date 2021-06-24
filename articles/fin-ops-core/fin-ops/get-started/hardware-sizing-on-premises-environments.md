@@ -2,7 +2,7 @@
 title: Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 description: W tym temacie opisano wymagania dotyczące szacowania zapotrzebowania na sprzęt w środowisku lokalnym.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923487"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168736"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -131,6 +131,8 @@ W większości przypadków powinno wystarczać minimalne wymagane zalecenie dwó
 ## <a name="sql-server-reporting-services"></a>usługi SQL Server Reporting Services
 
 W wydaniu o ogólnej dostępności można wdrożyć tylko jeden węzeł usługi SSRS. Monitoruj węzeł z usługą SSRS podczas testowania i w razie potrzeby zwiększaj liczbę rdzeni dostępnych dla usługi SSRS. Upewnij się, że masz wstępnie skonfigurowany węzeł pomocniczy dostępny na hoście wirtualnym innym niż maszyna wirtualna z usługą SSRS. Jest to ważne, jeśli wystąpi problem z maszyną wirtualną zawierającą usługę SSRS lub z hostem wirtualnym. W takim przypadku należy wymienić te zasoby.
+
+Począwszy od wersji 10.0.17 możliwe jest skonfigurowanie dodatkowych węzłów SSRS w celu osiągnięcia wysokiej dostępności. Więcej informacji: [Konfigurowanie wysokiej dostępności węzłów usług SQL Server Reporting Services (SSRS)](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 

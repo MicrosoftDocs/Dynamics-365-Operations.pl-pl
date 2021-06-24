@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826841"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189791"
 ---
 # <a name="fixed-assets-integration"></a>Integracja środków trwałych
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826841"
 
 Środki trwałe mogą być zintegrowane z modułami Księga główna, Zarządzanie zapasami, Rozrachunki z odbiorcami i Rozrachunki z dostawcami. Istnieje również możliwość takiego skonfigurowania modułu Środki trwałe, aby był on zintegrowany z zamówieniami zakupu.
 
-<a name="general-ledger"></a>Księga główna
---------------
+## <a name="general-ledger"></a>Księga główna
 
 W księdze głównej wartość wszystkich środków trwałych jest zwykle sumowana na kilku kontach głównych, które są wymagane do sprawozdawczości finansowej. Jednak na stronie **Środki trwałe** można utworzyć wiele rekordów środków trwałych. Te rekordy mogą zawierać informacje, takie jak cena nabycia, amortyzacja i szacowanie. Każdorazowo podczas księgowania transakcji dla środków trwałych aktualizowane są konta główne. Konta główne dla środków trwałych zawsze pokazują zaktualizowaną wartość środków trwałych.
 

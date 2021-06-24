@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744170"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188082"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -31,8 +31,7 @@ W tym temacie wyjaśniono, czym jest Rejestrator zadań i przewodniki po zadania
 > [!IMPORTANT]
 > Można zarejestrować własne przewodniki zadania dla programu Dynamics 365 Human Resources, ale nie będzie można zapisać ich w bibliotece Narzędzia do modelowania procesów biznesowych (BPM) ani otworzyć ich w okienku Pomoc. Można zapisać je lokalnie lub w lokalizacji sieciowej, a następnie odtworzyć za pomocą Rejestratora zadań. 
 
-<a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
--------------------------
+## <a name="learn-about-task-recorder"></a>Więcej informacji o Rejestratorze zadań
 
 Rejestrator zadań to narzędzie systemu umożliwiające nagrywanie czynności wykonywanych w interfejsie użytkownika (UI) produktu. Przy użyciu Rejestratora zadań wszystkie zdarzenia wykonywane w interfejsie użytkownika, które są wykonywane na serwerze — takie jak dodawanie wartości, zmiana ustawień i usuwanie danych — są przechwytywane. Zapisywane kroki są zbiorczo zwane *nagraniami zadań*. Nagrania zadań mogą być używane na wiele sposobów:
 
@@ -111,8 +110,7 @@ Można pobrać i edytować nagrania firmy Microsoft i używać ich do tworzenia 
 
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [System Pomocy](../../fin-ops/get-started/help-overview.md)
 

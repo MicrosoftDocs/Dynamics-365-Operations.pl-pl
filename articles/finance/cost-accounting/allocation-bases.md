@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15155a987094da6047dea9245f543b5ed38e3680
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e8c04275de6405a3f703d8ba9060f49405375de
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814063"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193261"
 ---
 # <a name="allocation-bases"></a>Podstawy alokacji 
 
@@ -212,7 +212,7 @@ Po przetworzeniu danych źródłowych miar statystycznych następujące wpisy zo
 
 **Wpisy statystyczne**
 
-| Obiekt kosztów |    | Data księgowania | Element członkowski wymiaru statystycznego |    opis          | Wartość |
+| Obiekt kosztów | Imię i nazwisko   | Data księgowania | Element członkowski wymiaru statystycznego |    opis          | Wartość |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Zasoby ludzkie | 31-01-2017      | Elektryczność                  | Zużycie energii elektrycznej | 2,450.00  |
 | CC002       | FI | 31-01-2017      | Elektryczność                  | Zużycie energii elektrycznej | 4,100.00  |
@@ -404,9 +404,9 @@ Funkcja podglądu umożliwia sprawdzanie poprawności tworzonej podstawy alokacj
 
 **Szczegóły podstawy alokacji**
 
-| Obiekt kosztów |    | Wzór                                                                                                                             | Wartość |
+| Obiekt kosztów |  Imię i nazwisko  | Wzór                                                                                                                             | Wartość |
 |-------------|----|-------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| CC001       | Zasoby ludzkie | ((2450,00 \> 10 000,00) × ((10 000,00 × 0,75) + (2450,00 – 10 000,00) × 1,15)) + ((2450,00 \<= 10 000,00) × 2450,00 × 0,75)     | 1,837.50  |
+| CC001       | HR | ((2450,00 \> 10 000,00) × ((10 000,00 × 0,75) + (2450,00 – 10 000,00) × 1,15)) + ((2450,00 \<= 10 000,00) × 2450,00 × 0,75)     | 1,837.50  |
 | CC002       | FI | ((2450,00 \> 10 000,00) × ((10 000,00 × 0,75) + (2450,00 – 10 000,00) × 1,15)) + ((2450,00 \<= 10 000,00) × 2450,00 × 0,75)     | 3,075.00  |
 | CC003       | MM | ((2450,00 \> 10 000,00) × ((10 000,00 × 0,75) + (2450,00 – 10 000,00) × 1,15)) + ((2450,00 \<= 10 000,00) × 2450,00 × 0,75) | 1,3250.00 |
 

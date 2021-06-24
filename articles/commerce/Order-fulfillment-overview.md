@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 962edb3fd0478a8f0281054abc00c35b732620f6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 88665c70b05d9ecf8ec2641862d870d87604092f
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796421"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193162"
 ---
 # <a name="store-order-fulfillment"></a>Realizacja zamówienia w sklepie
 
@@ -33,7 +33,7 @@ Operacja realizacji zamówienia w punkcie sprzedaży zapewnia jeden obszar roboc
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Dostęp do ujednoliconej realizacji zamówienia w punkcie sprzedaży
 
-Realizacja zamówienia, [Identyfikator operacji 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
+Realizacja zamówienia, [Identyfikator operacji 928](pos-operations.md), umożliwia uzyskanie dostępu do obszaru roboczego realizacji zamówienia w sklepie w punkcie sprzedaży.
 
 Operacja realizacji zamówienia nie ma własnych uprawnień od razu po zainstalowaniu, ale w przyszłości użytkownicy będą mogli użyć uprawnienia **Zezwalaj na pobieranie zamówienia** w celu wywołania operacji z punktu sprzedaży.
 
@@ -93,7 +93,7 @@ Po zaakceptowaniu zamówienia można zaznaczyć wiersze i oznaczyć je jako **Po
 
 Listy pobrania można wydrukować w punkcie sprzedaży, aby ułatwić pracownikom wykonywanie procesu pobierania. Pracownik może mieć przy sobie wydrukowaną listę pobrania i ręcznie oznaczać produkty jako pobrane na liście podczas wykonywania pobierania.
 
-Format listy pobrania jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Format listy pobrania jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md).
 
 Jeżeli wiersze są zaznaczone, a dla tych wierszy drukowana jest lista pobrania, ich stan jest automatycznie aktualizowany na **Pobranie**.
 
@@ -119,7 +119,7 @@ Wiersze zamówienia można spakować w dowolnym momencie po zaakceptowaniu wiers
 - **Stan wynikowy:** Spakowane lub częściowo spakowane
 - **Stan wynikowy zaplecza:** Dostarczone lub częściowo dostarczone
 
-Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Ta akcja spowoduje oznaczenie wierszy jako spakowanych lub częściowo spakowanych i wydrukowanie dokumentu dostawy. Dokument dostawy można wydrukować, aby zweryfikować produkty spakowane razem. Format dokumentu dostawy jest skonfigurowany w rozwiązaniu Commerce i dodawany do profilu paragonów. Aby uzyskać więcej informacji o konfigurowaniu profili paragonów, zobacz [Szablony paragonów i drukowanie](receipt-templates-printing.md).
 
 **Akcja: Oznacz jako spakowane**
 

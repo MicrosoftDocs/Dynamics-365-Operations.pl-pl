@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753271"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223993"
 ---
 # <a name="electronic-reporting-formula-language"></a>Język formuł raportowania elektronicznego
 
@@ -38,13 +38,13 @@ Wyrażenia raportowania elektronicznego mogą zawierać dowolne lub wszystkie z 
 - [Ścieżki](#Paths)
 - [Funkcje](#Functions)
 
-## <a name=""></a><a name="Constants">Stałe</a>
+## <a name="constants"></a><a name="Constants"></a>Stałe
 
 Do projektowania wyrażeń można używać stałych tekstowych i liczbowych (tzn. wartości, które nie są obliczane). Na przykład w wyrażeniu `VALUE ("100") + 20` są używane stała liczbowa **20** i stała ciągu **100**, a wyrażenie zwraca wartość liczbową **120**.
 
 Projektanta formuł ER obsługuje sekwencje specjalne. Oznacza to, że można określić ciąg wyrażenia, który powinien być traktowany inaczej. Na przykład wyrażenie `"Leo Tolstoy ""War and Peace"" Volume 1"` zwraca ciąg tekstowy **Leo Tolstoy "War and Peace" Volume 1**.
 
-## <a name=""></a><a name="Operators">Operatory</a>
+## <a name="operators"></a><a name="Operators"></a>Operatory
 
 W poniższej tabeli przedstawiono operatory arytmetyczne, których można używać do wykonania podstawowych operacji matematycznych, takich jak dodawanie, odejmowanie, mnożenie i dzielenie.
 
@@ -88,9 +88,9 @@ Kolejność, w jakiej części wyrażenia złożonego są obliczane, jest ważna
 
 Jeśli wyrażenie zawiera wiele następujących po sobie operatorów, które mają ten sam priorytet (pierwszeństwo), operacje te są wykonywane od lewej do prawej. Na przykład wyrażenie `1 + 6 / 2 \* 3 > 5` zwraca wartość **prawda**. Zaleca się używanie nawiasów w celu jawnego wskazania żądanej kolejności operacji w wyrażeniach, aby ułatwić odczyt wyrażenia i zarządzanie nim.
 
-## <a name=""></a><a name="References">Odwołania</a>
+## <a name="references"></a><a name="References"></a>Odwołania
 
-Wszystkie źródła danych bieżącego składnika ER, które są dostępne podczas projektowania wyrażenia, mogą być używane jako odwołania nazwane. Bieżącym składnikiem modułu ER może być mapowanie modelu lub format. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **ReportingDate**, które zwraca wartość o typie danych *DateTime*. Aby ta wartość była poprawnie sformatowana w generowanym dokumencie, można utworzyć odwołanie z wyrażenia do źródła danych w postaci `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Wszystkie źródła danych bieżącego składnika ER, które są dostępne podczas projektowania wyrażenia, mogą być używane jako odwołania nazwane. Bieżącym składnikiem modułu ER może być mapowanie modelu lub format. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **ReportingDate**, które zwraca wartość o typie danych [*DateTime*](er-formula-supported-data-types-primitive.md#datetime). Aby ta wartość była poprawnie sformatowana w generowanym dokumencie, można utworzyć odwołanie z wyrażenia do źródła danych w postaci `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Wszystkie znaki w nazwie przywoływanego źródła danych, które nie reprezentują litery alfabetu, muszą być poprzedzone pojedynczym cudzysłowem ('). Jeśli nazwa przywoływanego źródła danych zawiera co najmniej jeden symbol, który nie reprezentuje litery alfabetu, musi zostać ujęta w pojedyncze cudzysłowy. Symbolami nienależącymi do alfabetu mogą być na przykład znaki interpunkcyjne lub symbole piśmiennicze. Oto kilka przykładów:
 
@@ -99,7 +99,7 @@ Wszystkie znaki w nazwie przywoływanego źródła danych, które nie reprezentu
 
 Jeśli metody źródeł danych aplikacji mają parametry, następująca składnia jest wykorzystywana do wywoływania tych metod:
 
-- Jeśli metoda **isLanguageRTL** źródła danych **System** zawiera parametr **EN-US** o typie danych *Ciąg*, musi być przywoływana w wyrażeniu ER jako `System.isLanguageRTL("EN-US")`.
+- Jeśli metoda **isLanguageRTL** źródła danych **System** zawiera parametr **EN-US** o typie danych [*Ciąg*](er-formula-supported-data-types-primitive.md#string), musi być przywoływana w wyrażeniu ER jako `System.isLanguageRTL("EN-US")`.
 - Cudzysłowy nie są wymagane, jeśli nazwa metody zawiera tylko symbole alfanumeryczne. Są jednak wymagane dla metody tabeli, gdy nazwa zawiera nawiasy.
 
 Gdy źródło danych **System** zostanie dodane do mapowania raportowania elektronicznego, które odwołuje się do klasy **Global** aplikacji, wyrażenie `System.isLanguageRTL("EN-US ")` zwraca wartość *logiczną* **FALSE**. Zmodyfikowanie wyrażenie `System.isLanguageRTL("AR")` zwraca wartość *logiczną* **TRUE**.
@@ -107,9 +107,9 @@ Gdy źródło danych **System** zostanie dodane do mapowania raportowania elektr
 Można ograniczyć sposób, w jaki wartości są przekazywane do parametrów tego typu metody:
 
 - Tylko stałe mogą być przekazywane do tego typu metod. Wartości stałych są definiowane w czasie projektowania.
-- W parametrach tego typu są obsługiwane tylko pierwotne (podstawowe) typy danych. Pierwotne typy danych to *liczby całkowite*, *liczby rzeczywiste*, *wartości logiczne* i *ciągi*.
+- W parametrach tego typu są obsługiwane tylko [pierwotne](er-formula-supported-data-types-primitive.md) (podstawowe) typy danych. Pierwotne typy danych to *liczby całkowite*, *liczby rzeczywiste*, *wartości logiczne* i *ciągi*.
 
-## <a name=""></a><a name="Paths">Ścieżki</a>
+## <a name="paths"></a><a name="Paths"></a>Ścieżki
 
 Jeśli wyrażenie odwołuje się do źródła danych usystematyzowanych, można użyć definicji ścieżki, aby wybrać określony element podstawowy tego źródła danych. Znak kropki (.) jest używany do oddzielania poszczególnych elementów źródła danych usystematyzowanych. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W związku z tym można zaprojektować następujące wyrażenie, aby obliczyć zafakturowaną kwotę: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstrukcja `InvoiceTransactions.AmountDebit` w tym wyrażeniu jest ścieżką, która jest używana do uzyskiwania dostępu do pola **AmountDebit** źródła danych **InvoiceTransactions** typu *Lista rekordów*.
 
@@ -129,7 +129,7 @@ Pozostała część ścieżki bezwzględnej jest również wyświetlana w [edyto
 
 Aby uzyskać więcej informacji, zobacz temat [Używanie ścieżki względnej w powiązaniach danych z modelami i formatami ER](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funkcje</a>
+## <a name="functions"></a><a name="Functions"></a>Funkcje
 
 Wbudowane funkcje modułu ER mogą być używane w wyrażeniach ER. Wszystkie źródła danych kontekstu wyrażenia (czyli bieżące mapowanie modelu ER lub format ER) mogą służyć jako parametry funkcji wywołujących, zgodnie z listą argumentów funkcji wywołujących. Parametrami funkcji wywołujących mogą być również stałe. Na przykład bieżące mapowanie modelu danych ER zawiera źródło danych **InvoiceTransactions**, które zwraca listę rekordów. Struktura rekordu **InvoiceTransactions** zawiera pola **AmountDebit** i **AmountCredit**, które zwracają wartości liczbowe. W efekcie w celu obliczania zafakturowanej kwoty można zaprojektować następujące wyrażenie używające wbudowanej funkcji zaokrąglania ER: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Rozszerzanie listy funkcji Raportowania elektronicznego](general-electronic-reporting-formulas-list-extension.md)
 
+[Obsługiwane pierwotne typy danych](er-formula-supported-data-types-primitive.md)
+
+[Obsługiwane złożone typy danych](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

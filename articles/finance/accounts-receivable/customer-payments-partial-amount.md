@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f89b3d94fd16aa9cf27931d11fd8fff22048d40
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c6d96f1f957bfe8002a763d98f170681ad92b23
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824035"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188741"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Częściowa płatność odbiorcy
 
@@ -28,8 +28,7 @@ ms.locfileid: "5824035"
 
 Czasami odbiorcy dokonują płatności na kwoty niższe niż kwota faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji.
 
-<a name="partial-payment-with-no-discount"></a>Płatność częściowa bez rabatu
---------------------------------
+## <a name="partial-payment-with-no-discount"></a>Płatność częściowa bez rabatu
 
 Odbiorca może dokonać częściowej płatności, ponieważ nie posiada wystarczających środków pieniężnych na rozliczenie faktury w całości lub istnieje spór dotyczący jakiejś pozycji na fakturze. W takiej sytuacji faktura może być rozliczona częściowo poprzez płatności. Faktura pozostanie otwarta i będzie na niej widoczne saldo.
 

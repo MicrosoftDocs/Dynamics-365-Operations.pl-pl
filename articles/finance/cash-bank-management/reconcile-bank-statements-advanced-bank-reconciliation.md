@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b8e64264795fe90b52471a82220fe87459ca248
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835011"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188597"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Uzgadnianie wyciągów bankowych przy użyciu funkcji Zaawansowane uzgadnianie konta bankowego
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835011"
 
 Funkcja Zaawansowane uzgadnianie konta bankowego umożliwia importowanie elektronicznych wyciągów bankowych, a następnie ich automatyczne uzgadnianie z transakcjami bankowymi w programie Dynamics 365 Finance. W tym temacie opisano proces uzgadniania.  
 
-<a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Importowanie elektronicznego wyciągu bankowego
 
 Wyciągi bankowe importuje się przy użyciu operacji **Importowanie wyciągu** dostępnej na karcie **Wyciągi bankowe**. Na wyciągu bankowym konto bankowe jest identyfikowane za pomocą kombinacji wartości ustawianych w szczegółach konta bankowego. Wartości te obejmują nazwę banku, numer konta bankowego, numer rozliczeniowy, kod SWIFT (Stowarzyszenie na rzecz Światowej Międzybankowej Telekomunikacji Finansowej) i międzynarodowy numer konta bankowego (IBAN). 
 

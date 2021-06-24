@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817876"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190023"
 ---
 # <a name="operations-scheduling"></a>Planowanie operacji
 
@@ -74,8 +74,7 @@ Podczas planowania operacji można anulować określone części marszruty. Tymi
 ## <a name="finite-materials"></a>Ograniczone materiały
 Jeśli pracujesz z ograniczonymi materiałami, planowanie zależy również od dostępności materiałów wymaganych do produkcji. Jeśli jest za mało dostępnych składników produkcji, może dojść do opóźnienia produkcji. Planowanie można oprzeć na zużyciu materiałów poprzez określenie materiałów, które muszą być dostępne do produkcji. Gdy optymalizujesz względem zarówno zdolności produkcyjnych zasobów, jak i dostępności materiałów, produkcja jest obliczana zgodnie z tymi ograniczeniami. Rozpoczęcie zlecenia produkcyjnego można zaplanować dopiero na moment, gdy zdolności produkcyjne i materiały są dostępne w tym samym czasie i w wymaganych ilościach.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Opcje planowania operacji](operation-scheduling-options.md)
 

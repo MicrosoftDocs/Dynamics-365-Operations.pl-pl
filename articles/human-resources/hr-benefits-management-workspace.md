@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052248"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193438"
 ---
 # <a name="benefits-management-workspace"></a>Obszar roboczy zarządzania świadczeniami
 
@@ -31,7 +31,7 @@ ms.locfileid: "6052248"
 W tym temacie opisano obszar roboczy **Zarządzanie świadczeniami** w rozwiązaniu Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Aby wyświetlić obszar roboczy **Zarządzanie świadczeniami**, należy najpierw włączyć funkcję **obszaru roboczego Zarządzanie świadczeniami (wersja zapoznawcza)** w zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](../hr-admin-manage-features.md).<br><br>![Włącz obszar roboczy zarządzania świadczeniami](./media/hr-benefits-management-workspace-enable.png)
+> Aby wyświetlić obszar roboczy **Zarządzanie świadczeniami**, należy najpierw włączyć funkcję **obszaru roboczego Zarządzanie świadczeniami (wersja zapoznawcza)** w zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>![Włącz obszar roboczy zarządzania świadczeniami](./media/hr-benefits-management-workspace-enable.png)
 
 Obszar roboczy **Zarządzanie świadczeniami** umożliwia szybki widok elementów świadczeń, które wymagają Twojej uwagi. Na tej stronie możesz zobaczyć:
 

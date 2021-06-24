@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816539"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189723"
 ---
 # <a name="demand-forecasting-setup"></a>Ustawianie prognozowania popytu
 
@@ -88,8 +88,7 @@ Na karcie **Klucze alokacji** można określić **Parametry algorytmu prognozy**
 - **Wskazówka sezonowości**: W przypadku danych sezonowych należy wprowadzić wskazówkę do modelu prognozowania w celu zwiększenia dokładności prognozy. Format: liczba całkowita, reprezentująca liczbę przedziałów powtórzeń wzoru popytu. Na przykład wprowadź wartość „6” dla danych, które powtarzają się co 6 miesięcy.
 - **Procent rozmiaru zestawu testowego**: Procent danych historycznych przeznaczonych do użycia jako zestaw testowy w obliczeniach dokładności prognozy. 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie prognozowania popytu](introduction-demand-forecasting.md)
 

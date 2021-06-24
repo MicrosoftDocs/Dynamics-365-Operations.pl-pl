@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 0ccb2ed2a143735c199c36f2da357996ad3fbff3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edab3420cbd39539358c03fe4d6b3646433f8ec5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812842"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190167"
 ---
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Nazewnictwo numerów i nazw wariantów produktu
 
@@ -188,8 +188,7 @@ W zależności od nazewnictwa system może próbować przypisać nieunikatowy nu
 
 Podczas jednego kroku procesu konfiguracji system proponuje wartość konfiguracji zgodną z konwencją nazewnictwa. W tym kroku można ręcznie zmienić wartość konfiguracji. Podczas zapisywania konfiguracji system sprawdza, czy wartość konfiguracji jest unikatowa. Jeśli wprowadzona wartość nie jest unikatowa, pojawi się komunikat o błędzie. Aby zapisać konfigurację, należy wprowadzić niepowtarzalną wartość konfiguracji.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Tworzenie konwencji nazewnictwa numerów produktów dla wstępnie zdefiniowanych wariantów produktu](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 

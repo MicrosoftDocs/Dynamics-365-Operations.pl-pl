@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937893"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216619"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
@@ -143,16 +143,22 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
 ## <a name="setup"></a>Konfiguracja
 
-1. Zainstaluj najnowszą wersję (2.2.2.60 lub nowszą) [rozwiązania aranżacji aplikacji podwójnego zapisu](https://aka.ms/dual-write-app).
+1. Otwórz środowisko aplikacji z obsługą klienta.
 
-2. Zainstaluj [rozwiązania z podwójnym zapisem i globalna książka adresowa](https://aka.ms/dual-write-gab).
+2. Zainstaluj najnowszą wersję (2.2.2.60 lub nowszą) [rozwiązania aranżacji aplikacji podwójnego zapisu](https://aka.ms/dual-write-app).
 
-3. Zatrzymaj poniższe mapy, ponieważ nie są one już wymagane. Zamiast tego uruchom mapę `Contacts V2 (msdyn_contactforparties)`.
+3. Zainstaluj [rozwiązania z podwójnym zapisem i globalna książka adresowa](https://aka.ms/dual-write-gab).
+
+4. Otwórz klienta rozwiązania Finance and Operations. Przejdź do modułu Zarządzanie danymi i wybierz kartę Podwójny zapis. Zostanie otwarta strona administracji podwójnego zapisu.
+
+5. Zastosuj oba rozwiązania zainstalowane w krokach 2 i 3, używając funkcji [Zastosuj rozwiązanie](link-your-environment.md).
+
+6. Zatrzymaj poniższe mapy, ponieważ nie są one już wymagane. Zamiast tego uruchom mapę `Contacts V2 (msdyn_contactforparties)`.
 
     + Kontakty CDS w wersji 2 i kontakty (odwołanie do kontaktów odbiorcy)
     + Kontakty CDS w wersji 2 i kontakty (odwołanie do kontaktów dostawcy)
 
-4. Następujące mapowania jednostek są aktualizowane dla funkcji jednostki, więc do tych mapowań musi zostać zastosowana najnowsza wersja.
+7. Następujące mapowania jednostek są aktualizowane dla funkcji jednostki, więc do tych mapowań musi zostać zastosowana najnowsza wersja.
 
     Mapa | Aktualizuj do tej wersji | Zmiany
     ---|---|---
@@ -176,7 +182,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     `Salutations (msdyn_salutations)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | To jest nowa mapa dodawana jako część wersji.
 
-5. Przed uruchomieniem powyższych map należy ręcznie zaktualizować klucze integracji, zgodnie z poniższymi instrukcjami. Następnie kliknij przycisk **Zapisz**.
+8. Przed uruchomieniem powyższych map należy ręcznie zaktualizować klucze integracji, zgodnie z poniższymi instrukcjami. Następnie kliknij przycisk **Zapisz**.
 
     | Mapa | Klucze |
     |-----|------|
@@ -185,7 +191,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     | Osoba kontaktowa dla odbiorcy/dostawcy | msdyn_contactforpartynumber [Numer osoby kontaktowej strony]<br>msdyn_associatedcompanyid.cdm_companycode [Skojarzona firma (kod firmy)] |
     | Dostawca | msdyn_vendoraccountnumber [Numer konta dostawcy]<br>msdyn_company.cdm_companycode [Firma (kod firmy)]|
 
-6. W Dataverse limity znaków reguł wykrywania duplikatów zostały zwiększone z 450 do 700 znaków. Ten limit umożliwia dodanie jednego lub większej liczby kluczy do reguł wykrywania duplikatów. Rozwiń regułę wykrywania duplikatów dla tabeli **Konta**, aby ustawić następujące pola.
+9. W Dataverse limity znaków reguł wykrywania duplikatów zostały zwiększone z 450 do 700 znaków. Ten limit umożliwia dodanie jednego lub większej liczby kluczy do reguł wykrywania duplikatów. Rozwiń regułę wykrywania duplikatów dla tabeli **Konta**, aby ustawić następujące pola.
 
     | Pole | Wartość |
     |-------|-------|
@@ -201,7 +207,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
     ![Duplikuj regułę dla kont](media/duplicate-rule-1.PNG)
 
-7. Rozwiń regułę wykrywania duplikatów dla tabeli **Osoby kontaktowe**, aby ustawić następujące pola.
+10. Rozwiń regułę wykrywania duplikatów dla tabeli **Osoby kontaktowe**, aby ustawić następujące pola.
 
     | Pole | Wartość |
     |-------|-------|
@@ -217,9 +223,9 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
 
     ![Duplikuj regułę dla osób kontaktowych](media/duplicate-rule-2.PNG)
 
-8. Jeśli jesteś istniejącym użytkownikiem podwójnego zapisu, postępuj zgodnie z instrukcjami w sekcji [Uaktualnienie do modelu strony i globalnej książki adresowej](upgrade-party-gab.md) i uaktualnij dane.
+11. Jeśli jesteś istniejącym użytkownikiem podwójnego zapisu, postępuj zgodnie z instrukcjami w sekcji [Uaktualnienie do modelu strony i globalnej książki adresowej](upgrade-party-gab.md) i uaktualnij dane.
 
-9. Uruchom mapy w następującej kolejności. W przypadku wystąpienia błędu z komunikatem „Negatywny wynik sprawdzania poprawności projektu. Brak pola docelowego", otwórz mapę i wybierz polecenie **Odśwież tabele**. Następnie uruchom mapę.
+12. Uruchom mapy w następującej kolejności. W przypadku wystąpienia błędu z komunikatem „Negatywny wynik sprawdzania poprawności projektu. Brak pola docelowego", otwórz mapę i wybierz polecenie **Odśwież tabele**. Następnie uruchom mapę.
 
     Aplikacja Finance and Operations | Aplikacja Customer Engagement  
     ----------------------------|------------------------

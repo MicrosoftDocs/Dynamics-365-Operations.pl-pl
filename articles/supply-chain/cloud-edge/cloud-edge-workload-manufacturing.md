@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899102"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184003"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -72,6 +72,7 @@ Następujące zadania dotyczące wykonania produkcji mogą być obecnie uruchami
 - Raportuj odpadki
 - Działanie pośrednie
 - Przerwa
+- Raportuj jako zakończone i odłożone (wymaga uruchomienia obciążenia wykonawczego magazynu na jednostce skalowania patrz również [Reportuj jako zakończone i odłożone na jednostce skalowania](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Praca z obciążeniem pracą produkcyjną w centrum
 
@@ -108,6 +109,26 @@ Aby przejrzeć historię zadań produkcji, które zostały przetworzone na jedno
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania
 
 _Zadanie procesora produkcyjnego w centrum produkcji_ przetwarza dane z centrum do jednostki skali. To zadanie jest uruchamiane automatycznie po wdrożeniu obciążenia pracą modułu uruchomienie produkcji. Można jednak uruchomić ją ręcznie w dowolnym momencie, przechodząc do **Kontrola produkcji \> Zadania okresowe \> Zarządzanie obciążeniem backoffice \> Zadanie procesora w ramach centrum produkcji dla wiadomości jednostki skalowania**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Zgłoś jako gotowe i odłóż na jednostce skalowania
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+W bieżącej wersji operacje raportowania jako zakończone i odłożone (dla produktów gotowych, półproduktów i produktów ubocznych) są obsługiwane przez [obciążenie wykonawcze magazynu](cloud-edge-workload-warehousing.md) (a nie przez obciążenie wykonawcze produkcji). Aby korzystać z tej funkcji w przypadku połączenia z jednostką skalowania, należy wykonać następujące czynności:
+
+- Zainstaluj zarówno obciążenie wykonawcze magazynu, jak i obciążenie wykonawcze produkcji na swojej jednostce skalowania.
+- Użyj aplikacji mobilnej Warehouse Management, aby zgłosić jako zakończone i przetworzyć pracę odłożenia. Interfejs wykonywania produkcji nie obsługuje obecnie tych procesów.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

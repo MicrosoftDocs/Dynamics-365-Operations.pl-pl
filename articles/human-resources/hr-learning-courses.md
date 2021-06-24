@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054026"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190239"
 ---
 # <a name="set-up-training-courses"></a>Konfigurowanie kursów szkoleniowych
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054026"
 
 Administratorzy zasobów ludzkich i menedżerowie mogą korzystać z funkcji kursów do obsługi informacji o szkoleniu oferowanym pracownikom.
 
- <a name="set-up-prerequisites"></a> Ustawianie wymagań wstępnych
----------------------
+##  <a name="set-up-prerequisites"></a> Ustawianie wymagań wstępnych
 
 Następujące informacje są wymagane i muszą być skonfigurowane przed utworzeniem kursów.
 -   **Typy kursów**
@@ -127,8 +126,7 @@ W poniższej tabeli wymieniono możliwe stany i akcje kursu, które można wykon
 ## <a name="course-participants"></a>Uczestnicy kursu
 Uczestnikami kursu są pracownicy, którzy biorą udział w kursie lub wydarzeniu. Można zarejestrować uczestników tylko na kursach otwartych. Minimalną i maksymalną liczbę uczestników, jaką można zarejestrować na kurs, określa się na skróconej karcie **Ogólne** na stronie **Kursy**.
 
-<a name="workflow"></a>System Workflow
---------
+## <a name="workflow"></a>System Workflow
 
 Rejestracje pracowników, którzy zapisali się na kurs poprzez stronę **Samoobsługa pracownika etatowego**, mogą zostać przekierowane przez przepływ pracy celem zatwierdzenia. Możesz przypisać przepływ pracy do kursu na skróconej karcie **Ogólne** na stronie **Kursy**.
 

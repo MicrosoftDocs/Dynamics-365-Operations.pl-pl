@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2131ae11e634f9ced0d9696acb61d7b8a94c59cf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: df20a45707d3f6ff2ba963e3310194c1af830234
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841822"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187393"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Usuwanie wartości odstających z danych transakcji historycznych podczas obliczania prognozy popytu
 
@@ -39,8 +39,7 @@ Można wykluczyć wartości odstające, aby zwiększyć dokładność prognozy. 
 
 **Uwaga:** można także tworzyć kwerendy na podstawie istniejącej kwerendy. Wybierz kwerendę do skopiowania i kliknij przycisk **Duplikuj**. Pole **Data kwerendy** identyfikuje wersję. Można użyć kwerendy w istniejącej formie lub kliknąć opcję **Edytuj kwerendę** w celu zmodyfikowania kryteriów. Opcjonalnie można zmodyfikować nazwę i opis nowej kwerendy.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie prognozowania popytu](introduction-demand-forecasting.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815363"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189380"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Wybieranie metody obliczeń podatków w polu podstawy
 
@@ -52,8 +52,7 @@ Jeśli kwota netto = 10,00, wtedy cło 1 = 1,00 x 10.00%= 10 , a cło 2 = 2,00 x
 | Tylko jeden kod z Podstawą = Procent od kwoty brutto może być użyty w transakcji. Jeśli więcej niż jeden taki kod podatku jest określony dla transakcji, zostanie wyświetlony błąd z informacją, że nie można obliczyć podatku. |
 
 
-<a name="percentage-of-sales-tax"></a>Procent od podatku
------------------------
+## <a name="percentage-of-sales-tax"></a>Procent od podatku
 
 Po wybraniu opcji Procent od sprzedaży w polu Podstawa, podatek jest obliczany jako procent podatku zaznaczonego w podatku w polu Podatek. Najpierw jest obliczany podatek wybrany w opcji podatek w polu Podatek. Na podstawie kwoty pierwszego podatku jest następnie obliczany drugi podatek.
 ### <a name="example"></a>Przykład
@@ -119,8 +118,7 @@ Dokument/arkusz jest ustawiony na Kwoty zawierają podatek = Nie Kwota wiersza t
 
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Stawki podatku na podstawie pól Podstawa limitu i Metoda obliczania](marginal-base-field.md)
 

@@ -9,6 +9,7 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: ''
 ms.custom: 260624
 ms.assetid: ''
 ms.search.region: global
@@ -16,17 +17,16 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f7ff7ea28f8417d4c35f87e0d8fef46d647f42e4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 51fd8ca2ef7cdc43967ced8251b8377f3eaaf753
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019109"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193679"
 ---
 # <a name="commerce-home-page"></a>Commerce — strona główna
 
 [!include [banner](includes/banner.md)]
-
 
 Dynamics 365 Commerce—stworzony na sprawdzonych możliwościach rozwiązania Dynamics 365 Retail zapewnia kompleksowe rozwiązanie wielokanałowe, które łączy zaplecze biurowe, sklepowe, biura obsługi i cyfrowe. Dynamics 365 Commerce umożliwia budowanie lojalności marki przez spersonalizowane zakontraktowania klientów, zwiększanie przychodów z ulepszoną produktywnością pracowników, optymalizowanie operacji w celu obniżenia kosztów i zwiększenia wydajności łańcucha dostaw, zapewniając lepsze wyniki działalności.
 
@@ -38,21 +38,23 @@ Ta wersja umożliwia tworzenie cyfrowych doświadczeń za pomocą wbudowanych na
 
 - **Elastyczne i inteligentne wrażenia wielokanałowe:** ujednolicenie handlu fizycznego i cyfrowego poprzez zapewnienie spójnych doświadczeń klientom w zakresie wyszukiwania i odkrywania w chmurze, recenzji produktów, list życzeń, zapasów, kart upominkowych i lojalności. Umożliwiaj klientom dokonywanie zakupów, kiedy, jak i gdzie chcą, na dowolnym urządzeniu, zapewniając jednocześnie wybór nowoczesnych metod płatności oraz odbioru lub dostawy produktów.
 
-- **Usprawnij operacje za pomocą sztucznej inteligencji w chmurze:** Zwiększ możliwości handlu wielokanałowego i zintegrowane, zoptymalizowane operacje z zaplecza biurowego dzięki wbudowanej, wszechobecnej i kontekstowej inteligencji w chmurze. Korzystaj z zaawansowanego merchandisingu, zarządzania zapasami, zarządzania zamówieniami rozproszonymi oraz ustalania cen i promocji, aby wprowadzać innowacje i wyprzedzać konkurencję. Uzyskaj informacje, wizualizując i analizując kompleksowe i spójne dane dotyczące wszystkich aspektów działalności firmy. Korzystaj z technologii opartych na sztucznej inteligencji, aby udostępniać dostępne strony internetowe, chronić swoją firmę przed oszustwami płatniczymi i skutecznie moderować treści generowane przez użytkowników, takie jak oceny i recenzje. 
+- **Usprawnij operacje za pomocą sztucznej inteligencji w chmurze:** Zwiększ możliwości handlu wielokanałowego i zintegrowane, zoptymalizowane operacje z zaplecza biurowego dzięki wbudowanej, wszechobecnej i kontekstowej inteligencji w chmurze. Korzystaj z zaawansowanego merchandisingu, zarządzania zapasami, zarządzania zamówieniami rozproszonymi oraz ustalania cen i promocji, aby wprowadzać innowacje i wyprzedzać konkurencję. Uzyskaj informacje, wizualizując i analizując kompleksowe i spójne dane dotyczące wszystkich aspektów działalności firmy. Korzystaj z technologii opartych na sztucznej inteligencji, aby udostępniać dostępne strony internetowe, chronić swoją firmę przed oszustwami płatniczymi i skutecznie moderować treści generowane przez użytkowników, takie jak oceny i recenzje.
 
 ## <a name="core-concepts-and-tasks"></a>Podstawowe pojęcia i zadania
 
 Wybierz obszar funkcji, aby dowiedzieć się więcej na jego temat.
+
 - [Konfiguruj środowisko wersji zapoznawczej usługi Commerce](provisioning-guide.md)
 - [Architektura Commerce](./commerce-architecture.md)
 - [Konfigurowanie kanałów](channels-overview.md)
-- [Merchandising produktów i usług](set-up-retail-products.md)
-- [Zarządzanie zamówieniami](Order-fulfillment-overview.md)
+- [Sprzedawanie produktów i usług](set-up-retail-products.md)
+- [Zarządzaj zamówieniami](Order-fulfillment-overview.md)
 - [Zarządzanie odbiorcami](set-up-customer-loyalty-program.md)
 - [Zarządzanie finansami](retail-statements.md)
 - [Zarządzanie witryną e-Commerce](online-store-overview.md)
 - [Ochrona przed oszustwami](dev-itpro/DFP.md)
-- [Projektowanie i rozszerzanie handlu](dev-itpro/dev-retail-home-page.md)
+- [Projektowanie i rozszerzanie Commerce](dev-itpro/dev-retail-home-page.md)
 
+## <a name="elearning-courses"></a>Kursy eLearning
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Commerce w Microsoft Learn](https://docs.microsoft.com/learn/browse/?expanded=dynamics-365&products=dynamics-commerce&resource_type=learning%20path).

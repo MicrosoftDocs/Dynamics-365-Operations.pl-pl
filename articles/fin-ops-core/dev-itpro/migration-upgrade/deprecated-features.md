@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112628"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193573"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Usunięte lub wycofane funkcje w poprzednich wersjach
 
@@ -92,7 +92,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Nie |
 | **Powiązane obszary produktów**         | Lokalizacja Włoska |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | Przestarzałe: przed 1 października 2020, nie planuje już obsługiwania **Raportu zabronione” (IT) — odwołanie do funkcji 00001**. |
+| **Stan**                         | Przestarzałe: Do 1 października 2020, nie planujemy już obsługiwać tego raportu. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Krajowy raport podatkowy - Odwołanie do funkcji IT-00003
 
@@ -362,9 +362,19 @@ Funkcja do tworzenia szablonów dla nowych rejestrów podatku dochodowego. Ta fu
 | **Przyczyna wycofania/usunięcia** | Funkcja jest niezgodna z modelem rozszerzenia Finance and Operations. |
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Podatek |
-| **Opcja wdrażania**              | Wszystkich |
+| **Opcja wdrażania**              | Wszyscy |
 | **Stan**                         | Usunięte od wersji Finance and Operations 8.1 z aktualizacją Platform update 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Payroll and Human Resources dla Rosji
+Moduł specyficzny dla Rosji do zarządzania informacjami administracyjnymi personelu, szczegółami arkusza czasu pracy dla pracowników, księgowaniem listy płac i tworzeniem zestawień płac. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Payroll nie jest objęte globalnym strategicznym ukierunkowaniem portfela Dynamics 365. Partnerzy i ISV są najlepiej przygotowani do dostarczania funkcji płacowych, które są zgodne z lokalnymi przepisami i aktualizacjami podatkowymi.|
+| **Zamieniona przez inną funkcję?**   | Nr|
+| **Powiązane obszary produktów**         | Payroll and Human Resources dla Rosji — zarządzanie |
+| **Opcja wdrażania**              | Wszyscy |
+| **Stan**                         | Wycofane — docelowy okres usuwania funkcji to jedna z przyszłych publikacji wersji 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 z aktualizacją platformy 15
 Żadne funkcje nie zostały usunięte ani wycofane w tej wersji. Aktualizacja platformy 15 jest zbiorcza i zawiera nowe oraz zmienione funkcje z aktualizacji platformy 13, 14 i 15.

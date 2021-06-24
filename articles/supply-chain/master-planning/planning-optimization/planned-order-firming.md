@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103635"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193888"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -102,7 +102,7 @@ Funkcja automatycznego ustalania umożliwia ustalanie zamówień planowanych w r
 
 Zarówno Optymalizacja planowania, jak i wbudowany aparat planowania, mogą być używane do automatycznego ustalania zamówień planowanych. Istnieją jednak pewne ważne różnice. Na przykład w optymalizacji planowania jest używana Data zamówienia (to znaczy Data rozpoczęcia) w celu ustalenia, które zamówienia planowane mają zostać ustalone, a wbudowany aparat planowania używa daty zapotrzebowania (czyli daty zakończenia). W poniższej tabeli podsumowano różnice.
 
-| | Optymalizacja planowania | Wbudowany aparat planowania |
+| Funkcja | Optymalizacja planowania | Wbudowany aparat planowania |
 |---|---|---|
 | **Podstawa daty** | Automatyczne ustalanie jest oparte na dacie zamówienia (Data początkowa). | Automatyczne ustalanie jest oparte na dacie zapotrzebowania (Data końcowa). |
 | **Czas realizacji** | Ponieważ Data zamówienia (Data początkowa) wyzwala akceptację, nie trzeba brać pod uwagę czasu realizacji w ramach horyzontu czasowego ustalania. | W celu zagwarantowania punktualnego ustalania zamówień horyzont czasowy ustalania musi być dłuższy niż czas realizacji. |

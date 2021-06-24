@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910072"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189675"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Współpraca z dostawcami za pomocą portalu dostawców
 
@@ -92,8 +92,7 @@ W poniższej tabeli pokazano przykład zmian stanu i wersji, przez jakie może p
 |                           Wysyłasz nową wersję zamówienia zakupu do portalu dostawców.                            |                                                                                                                                                                    Nowa wersja jest rejestrowana w portalu dostawców, a jej stan zmienia wartość na <strong>W trakcie analizy zewnętrznej</strong>.                                                                                                                                                                     |
 |                                Dostawca zatwierdza nową wersję zamówienia zakupu.                                 |                                                                                                                                                     Stan zmienia się na <strong>Potwierdzone</strong> automatycznie lub po otrzymaniu odpowiedzi od dostawcy i następnie ręcznym potwierdzeniu.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Zabezpieczenia użytkowników portalu dostawców](configure-security-vendor-portal-users.md)
 

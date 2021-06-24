@@ -2,7 +2,7 @@
 title: Przekaż pliki wideo
 description: W tym temacie opisano, jak przesyłać pliki wideo w kreatorze witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e3579b54c58898b79c84406480a3b58f541c4621
+ms.sourcegitcommit: 257437a57e146496a49782bc8aad179c92fbf6e8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799212"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "6224545"
 ---
 # <a name="upload-videos"></a>Przekaż pliki wideo
 
@@ -35,7 +35,7 @@ Biblioteka mediów kreatora witryny Commerce umożliwia przekazywanie plików wi
 Podczas przekazywania wideo można określić następujące informacje.
 
 - **Tytuł, opis, słowa kluczowe**: metadane klipu wideo.
-- **Automatycznie Generuj podpisy kodowane**: określa, czy dla danego klipu wideo powinny być automatycznie generowane podpisy kodowane.
+- **Automatycznie Generuj podpisy kodowane**: określa, czy dla danego klipu wideo powinny być automatycznie generowane podpisy kodowane (obsługiwany jest tylko język angielski). 
 - **Podpis kodowany**: określa podpisy kodowane, które mają być używane.
 - **Zwykły dźwięk**: określa normalną ścieżkę audio, która ma być użyta.
 - **Miniatura**: określa miniaturę klipu wideo. Jeśli nie zostały określone, będą one generowane automatycznie.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821992"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187875"
 ---
 # <a name="audit-policy-rules"></a>Reguły inspekcji
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821992"
 
 Zasady inspekcji służą do oceniania raportów z wydatków, faktur od dostawcy i zamówień zakupu, aby się upewnić, że spełniają one utworzone przez Ciebie reguły zasad. Wszystkie reguły skojarzone z zasadą inspekcji są uruchamiane w trybie wsadowym, zgodnie z harmonogramem określonym przez użytkownika.  Każda reguła zasad jest wystąpieniem typu reguły zasad. Dla każdego typu reguły zasad w danej chwili może być aktywna tylko jedna reguła. 
 
-<a name="queries-and-query-types"></a>Kwerendy i typy kwerend
------------------------
+## <a name="queries-and-query-types"></a>Kwerendy i typy kwerend
 
 Tworząc regułę zasad inspekcji, najpierw należy zaznaczyć typ reguły zasad. Typ reguły zasad określa drzewo obiektów aplikacji (Application Object Tree — AOT), które ma być używane jako punkt wyjścia dla tworzenia reguły zasad. Określa również typ kwerendy używany dla reguły zasad. Kwerenda określa dokument źródłowy, który ocenia reguła zasad. Określa również pola w dokumencie źródłowym, które identyfikują zarówno podmiot prawny, jak i datę stosowaną po wybraniu dokumentów w celu inspekcji. Typ kwerendy kontroluje domyślne pola na stronie kwerendy i na stronie Reguła inspekcji. Poniższa tabela zawiera typy kwerend, które są dostępne dla reguł zasad inspekcji.
 
@@ -91,8 +90,7 @@ Wszystkie reguły zasad dotyczące udziału konkretnych zasad inspekcji współd
 
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Naruszenia zasad audytu i sprawy](audit-policy-violations-cases.md)
 [Definiowanie zasad inspekcji dla dokumentów źródłowych](tasks/define-audit-policies-source-documents.md)

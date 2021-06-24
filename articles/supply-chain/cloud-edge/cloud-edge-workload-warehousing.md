@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980957"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184029"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -289,14 +289,15 @@ W poniższej tabeli pokazano, które operacje magazynowe i obsługa wyjątków s
 | Zmień pulę pracy w pracy                           | Tak | Tak                          |
 | Anuluj pracę                                        | Tak | Tak                          |
 
-
 ### <a name="production"></a>Produkcyjne
 
-Scenariusze produkcji w zarządzaniu magazynem nie są obecnie obsługiwane w obciążeniach jednostki skali, co wskazano w poniższej tabeli.
+W poniższej tabeli podsumowano, które scenariusze produkcyjne zarządzania magazynem są (i nie są) obecnie obsługiwane w przypadku obciążeń jednostek skalowalnych.
 
 | Przetwarzaj | Piasta | WES obciążenie jednostki skali |
 |---------|-----|------------------------------|
-| <p>Wszystkie procesy zarządzania magazynem, które są związane z produkcją. Oto kilka przykładów:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Odłożenie RAF i towarów gotowych</li><li>Odłożenie produktu ubocznego i produktu towarzyszącego</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nr |
+| Raportowanie jako wyroby gotowe i wyroby gotowe odłożone | Tak | Tak |
+| Odłożenie produktu ubocznego i produktu towarzyszącego | Tak | Tak |
+| <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nr |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Obsługa jednostek skali dla WES
 

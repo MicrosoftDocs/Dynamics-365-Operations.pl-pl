@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815771"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189052"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Zasady akumulacji kosztów i obliczanie narzutu 
 
@@ -149,8 +149,7 @@ Reguły alokacji kosztów można skonfigurować w następujący sposób.
 | CC001                                | Razem         | **Usługi kadrowe**        |
 | CC002                                | Razem         | **Usługi finansowe** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Przepływ kosztów między centrami kosztów 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Przepływ kosztów między centrami kosztów 
 
 Jeśli chcesz się dowiedzieć, jak koszty przepływają między centrami kosztów w organizacji, można dla każdego centrum kosztów utworzyć składniki kosztów typu **Podrzędny**. Te składniki kosztów będą następnie używane do przenoszenia sald między centrami kosztów podczas obliczania kosztów ogólnych.
 

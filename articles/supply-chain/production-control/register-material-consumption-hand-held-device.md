@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814543"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189649"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Rejestracja na urządzeniu przenośnym zużycia materiałów
 
@@ -28,8 +28,7 @@ ms.locfileid: "5814543"
 
 W tym temacie opisano przepływ pracy umożliwiający rejestrowanie zużycia surowców w produkcji przy użyciu urządzenia przenośnego (podręcznego).
 
-<a name="introduction"></a>Wprowadzenie
-------------
+## <a name="introduction"></a>Wprowadzenie
 
 Ten przepływ pracy ma zastosowanie, jeśli istnieje ścisły wymóg identyfikowalności materiałów. W tych przypadkach w celu utrzymania identyfikowalności materiałów należy raportować dokładny czas i ilość zużycia. Ten proces może być traktowany jako przeciwieństwo operacji rozliczania wstępnego i wstecznego, gdzie występuje przesunięcie między czasem rejestracji a momentem, gdy dochodzi do faktycznego zużycia. To wyjaśnia, dlaczego strategii automatycznego zużycia nie można używać do niektórych materiałów z wymogiem identyfikowalności. Spójrzmy na prosty scenariusz, który wyjaśnia, jak skonfigurować przepływ pracy, aby włączyć rejestrowanie zużycia surowców w produkcji za pomocą urządzenia podręcznego. [![Konfigurowanie przepływu pracy w celu włączenie rejestracji zużycia surowców za pomocą urządzenia podręcznego](./media/scenario3.png)](./media/scenario3.png)
 

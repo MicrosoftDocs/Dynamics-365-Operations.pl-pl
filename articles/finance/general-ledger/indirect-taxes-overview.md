@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41c64607f5dfbe00bd8a2e7cc80fb4771f11a6d1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826625"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188447"
 ---
 # <a name="sales-tax-overview"></a>Omówienie podatku
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826625"
 
 Ten temat zawiera omówienie systemu podatków. Objaśniono w nim elementy konfiguracji podatku od sprzedaży oraz ich współdziałanie.
 
-<a name="overview"></a>Przegląd
---------
+## <a name="overview"></a>Przegląd
 
 Struktura podatku obsługuje wiele różnych rodzajów podatków pośrednich, takich jak podatek, podatek od wartości dodanej (VAT), podatek od towarów i usług (GST), opłaty oparte na jednostce i potrącona zaliczka na podatek. Te podatki są obliczane i dokumentowane podczas transakcji zakupów i sprzedaży. Okresowo należy je zgłaszać i wpłacać do urzędu skarbowego. 
 

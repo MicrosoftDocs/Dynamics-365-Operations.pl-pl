@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1fcdb43f95892c541be2c31101d8f592f5d5e16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 052cb56e026fbfe5cf5f6ad5d265337d7b88dc4d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834200"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193960"
 ---
 # <a name="reserve-inventory-quantities"></a>Rezerwowanie ilości zapasów
 
@@ -46,7 +46,7 @@ Zasady rezerwacji zapasów są ustawiane na stronach **Grupy modeli pozycji**, *
 
 Sekcja **Zasady zapasów** zawiera następujące zasady rezerwacji.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Zasada rezerwacji**  | **Opis**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO z kontrolą daty    | Wybranie opcji **FIFO z kontrolą daty** spowoduje, że rezerwacja zapasów jest kontrolowana przez datę sortowania zgodnie z regułą FIFO. Partie są rezerwowane na podstawie najwcześniejszej daty przyjęcia towarów zgodnie z zasadą „pierwszy na wejściu, pierwszy na wyjściu” FIFO.                                                                                                                                                                                                                                                                       |

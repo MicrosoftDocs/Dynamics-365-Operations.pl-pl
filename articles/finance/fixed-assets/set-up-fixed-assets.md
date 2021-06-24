@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie środków trwałych
 description: W tym temacie omówiono konfigurację modułu Środki trwałe.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818543"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216593"
 ---
 # <a name="set-up-fixed-assets"></a>Konfigurowanie środków trwałych
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie omówiono konfigurację modułu **Środki trwałe**.
+W tym temacie omówiono konfigurację modułu **Środki trwałe**. 
 
-## <a name="overview"></a>Przegląd
-
-Parametry kontrolują ogólne zachowanie w module Środki trwałe.
-
-Grupy środków trwałych umożliwiają grupowanie składników aktywów oraz określanie domyślnych atrybutów dla każdego składnika aktywów przypisanego do grupy. Grupom środków trwałych są przypisywane księgi. Księgi śledzą wartości finansowe środków trwałych w czasie przy użyciu konfiguracji amortyzacji, która jest zdefiniowana w profilu amortyzacji.
+Parametry kontrolują ogólne zachowanie w module Środki trwałe. Grupy środków trwałych umożliwiają grupowanie składników aktywów oraz określanie domyślnych atrybutów dla każdego składnika aktywów przypisanego do grupy. Grupom środków trwałych są przypisywane księgi. Księgi śledzą wartości finansowe środków trwałych w czasie przy użyciu konfiguracji amortyzacji, która jest zdefiniowana w profilu amortyzacji.
 
 Środki trwałe przypisuje się do grupy podczas ich tworzenia. Domyślnie księgi przypisane do grupy środków trwałych są następnie przypisywane do środka trwałego. Księgi skonfigurowane do księgowania w księdze głównej są skojarzone z profilem księgowania. Konta księgowe są określane dla każdej księgi w profilu księgowania i używane podczas księgowania transakcji na środkach trwałych.
 
@@ -49,6 +45,8 @@ Po skonfigurowaniu profili amortyzacji należy utworzyć księgi wymagane dla sk
 Każda księga ma przypisany główny profil amortyzacji. Księgi mają również alternatywne (przełączane) profile amortyzacji, jeśli pozwala na to typ profilu. Aby automatycznie uwzględniać księgę środków trwałych w sesjach księgowania amortyzacji, należy włączyć opcję **Oblicz amortyzację**. Jeśli ta opcja nie jest włączona dla składnika aktywów, propozycja amortyzacji pomija ten składnik.
 
 Można również skonfigurować księgi pochodne. Wskazane transakcje pochodne są księgowane w księgach pochodnych jako dokładne kopie transakcji podstawowych. W związku z tym transakcje pochodne są zazwyczaj konfigurowane dla transakcji nabycia i likwidacji, a nie dla transakcji amortyzacji. Aby uzyskać więcej informacji, zobacz [Konfigurowanie modeli ewidencji](tasks/set-up-value-models.md).
+
+Opcja na stronie **Parametry środków trwałych** umożliwia włączanie i wyłączanie funkcji blokowania. Tę funkcję podglądu można włączyć w **Obszarze roboczym zarządzanie funkcjami**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Profile księgowania środków trwałych
 
@@ -73,6 +71,8 @@ Ostatnim krokiem jest zaktualizowanie parametrów środków trwałych.
 Pole **Próg kapitalizacji** określa składniki aktywów, które są amortyzowane. Jeśli jako środek trwały zostanie wybrany wiersz zakupu, ale nie spełnia on określonego progu kapitalizacji, środek trwały nadal zostanie utworzony lub zaktualizowany, ale opcja **Oblicz amortyzację** otrzymuje wartość **No**. W związku z tym ten składnik aktywów nie będzie automatycznie amortyzowany w ramach propozycji amortyzacji.
 
 Inną ważną opcją jest **Automatyczne tworzenie kwot korekty amortyzacji przy likwidacji**. Jeśli zostanie wybrana dla niej wartość **Tak**, amortyzacja składnika aktywów jest automatycznie korygowana zgodnie z ustawieniami amortyzacji w momencie likwidacji składnika. Inna opcja umożliwia odjęcie rabatów gotówkowych od kwoty nabycia w przypadku nabywania środków trwałych za pomocą faktury od dostawcy.
+
+Parametr **Zablokuj księgi środków w dzienniku amortyzacji** pozwala na zablokowanie ksiąg środków w dzienniku amortyzacji. Podczas księgowania transakcji amortyzacji system sprawdzi, czy ta sama księga środka trwałego nie została dodana do więcej niż jednego dziennika amortyzacji. Jeśli tak się stało, księga aktywów zostanie zablokowana, a księgowanie zostanie wstrzymane. Jeżeli identyfikator księgi aktywów znajduje się w zablokowanym dzienniku, zostanie on automatycznie odblokowany po zakończeniu księgowania dla pierwotnego dziennika. Można również odblokować dziennik ręcznie. 
 
 Na skróconej karcie **Zamówienia zakupu** można skonfigurować sposób tworzenia środków trwałych w ramach procesu zakupów. Pierwszą opcją jest **Zezwalaj na nabywanie środków trwałych z zakupów**. Jeśli zostanie w niej wybrana wartość **Tak**, nabycie środka trwałego następuje podczas księgowania faktury. Jeśli zostanie wybrana wartość **Nie**, nadal można umieścić środek trwały w zamówieniu zakupu i na fakturze, ale nabycie nie zostanie zaksięgowane. Księgowanie musi zostać przeprowadzone jako oddzielny krok z arkusza środków trwałych. Opcja **Utwórz środek trwały podczas księgowania dokumentu przyjęcia produktów lub faktury** pozwala utworzyć nowy składnik aktywów „na bieżąco” podczas księgowania, dzięki czemu nie musi on być skonfigurowany jako środek trwały przed transakcją. Ostatnia opcja, **Sprawdź, czy podczas wprowadzania wiersza zostaną utworzone środki trwałe**, ma zastosowanie tylko do zapotrzebowań na zakup.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf3872a47a92509af5857c0c1aec0d4da4095d19
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5b1ec24c84d2b1a3dc88bf96ae6f52441b58a694
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835275"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188693"
 ---
 # <a name="sepa-direct-debit-overview"></a>Omówienie polecenia zapłaty SEPA
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835275"
 
 Jednolity Obszar Płatniczy w Euro (SEPA) został ustanowiony przez Komisję Europejską i decyduje o tym, że wszystkie płatności elektroniczne są uważane za krajowe, niezależnie od kraju/regionu, w którym znajdują się osoby, przedsiębiorstwa, organizacje oraz właściwy bank. Nie istnieje różnica między płatnościami krajowymi i międzynarodowymi. System SEPA obejmuje 28 państw członkowskich Unii Europejskiej (UE) oraz dodatkowo Islandię, Liechtenstein, Norwegię, Szwajcarię, Monako i San Marino. SEPA tworzy jeden rynek dla transakcji płatności w ramach europejskiego obszaru gospodarczego (EOG). Ostatecznie SEPA umożliwia zmniejszenie liczby formatów płatności, którymi operują banki, firmy i osoby prywatne.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel poleceń zapłaty SEPA?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Jaki jest cel poleceń zapłaty SEPA?
 
 Polecenie zapłaty SEPA umożliwia wierzycielowi otrzymanie funduszy z konta bankowego odbiorcy, pod warunkiem, że udzielono odpowiedniej zgody podpisanej przez odbiorcę na rzecz wierzyciela. Odbiorca podpisuje zgodę, która autoryzuje wierzyciela do pobrania płatności i powoduje, że bank odbiorcy wypłaca zaległą kwotę. 
 

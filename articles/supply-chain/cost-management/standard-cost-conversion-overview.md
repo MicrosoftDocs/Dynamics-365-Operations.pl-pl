@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 236743277a95b8a1170ca05f93106575ea1cc8e4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821448"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187609"
 ---
 # <a name="standard-cost-conversion-overview"></a>Omówienie konwersji na koszt standardowy
 
@@ -92,8 +92,7 @@ Raport **Sprawozdanie z analizy odchyleń** umożliwia analizowanie odchyleń pr
 -   Przeanalizuj przesunięcia magazynowe z datą wsteczną. Korzystając z raportu **Wartość zapasów**, wyświetl przesunięcia magazynowe z datami wstecznymi wprowadzone po konwersji. Ustawienia raportu Od dnia i Do dnia powinny odpowiadać dacie początkowej przejścia i datę konwersji minus jeden dzień. Kryteria wyboru dla raportu powinny być zgodne z przekonwertowanymi towarami. W raporcie zostaną wyświetlone przesunięcia magazynowe wykonane według kosztu standardowego w trakcie okresu przejściowego.
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Wymagania wstępne dotyczące konwersji na koszt standardowy](prerequisites-standard-cost-conversion.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920116"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188863"
 ---
 # <a name="transportation-management-engines"></a>Aparaty do zarządzania transportem
 
@@ -43,8 +43,7 @@ Poniższa tabela zawiera aparaty zarządzania transportem, które są dostępne.
 | **Typ opłaty frachtowej**            | Standaryzuje faktury za fracht i wiersze BOM frachtu i jest używane do automatycznego uzgadniania rachunków za transport.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jakie aparaty muszą być skonfigurowane do ustalenia stawki za przesyłkę?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Jakie aparaty muszą być skonfigurowane do ustalenia stawki za przesyłkę?
 
 Aby ustalić stawkę za przesyłkę dla określonego przewoźnika, należy skonfigurować wiele aparatów zarządzania transportem. **Aparat stawki** jest wymagany, ale do obsługi  mogą być konieczne również inne aparaty do **zarządzania transportem**. Na przykład **aparat stawki** może być używany do pobierania danych z **aparatu przebiegu** w celu obliczenia stawki w oparciu o przebieg między lokalizacją źródłową a miejscem docelowym.
 
@@ -62,8 +61,7 @@ W większości przypadków można kliknąć przycisk **Parametry** w formularzac
 |  <em>MileageEngineCode</em>  |                       Kod aparat przebiegu identyfikujący rekord aparatu przebiegu w bazie danych.                        |
 | <em>ApportionmentEngine</em> |                        Kod aparatu ogólnego identyfikujący rekord aparatu przydziału w bazie danych.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Jak używane są metadane w aparatach zarządzania transportem?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Jak używane są metadane w aparatach zarządzania transportem?
 
 Aparaty zarządzania transportem, które opierają się na danych zdefiniowanych w Supply Chain Management, mogą używać różnych schematów danych. System zarządzania transportem umożliwia różnych aparatom zarządzania transportem korzystanie z tych samych ogólnych tabel fizycznej bazy danych. Aby się upewnić, że interpretacja wykonania tego aparatu dane jest poprawna, można zdefiniować metadane dla tabel baz danych. Zmniejsza to koszty budowania nowych aparatów zarządzania transportem, ponieważ nie są wymagane dodatkowe struktury tabeli i formularza w programie Operations.
 

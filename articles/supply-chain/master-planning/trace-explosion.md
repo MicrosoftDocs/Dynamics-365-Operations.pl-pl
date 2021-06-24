@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7f2a50c5e30155c11d653601187c36cb385aa4a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 75d994db80071c4ef9e23caf24cb4cadbc1473ad
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839204"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189899"
 ---
 # <a name="use-tracing-for-explosion"></a>Korzystanie z funkcji śledzenia rozłożenia
 
@@ -38,8 +38,7 @@ Po włączeniu śledzenia można wyświetlać informacje o czynnikach, które wp
 
 Można wyświetlić szczegółowe informacje o prognozach i działaniach dla wybranego zamówienia. Na stronie **Rozłożenie** dane śledzenia są dostępne na karcie **Wyjaśnienie** w górnym panelu. Śledzenie włącza się w chwili rozłożenia zamówienia. Aby uruchomić śledzenie zamówienia, kliknij **Aktualizacja**, a następnie zaznacz pole wyboru **Włącz śledzenie**. Za pomocą **Znajdź tekst** możesz szukać w dzienniku konkretnych informacji. Wyniki wyszukiwania zostaną wyróżnione w drzewie.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie planów głównych](master-plans.md)
 

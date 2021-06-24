@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9e3976eaf94f6a8440794beebae1ab7241e5aa54
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: cdc16d02f24f24e0f9933542589573ee6b5cde45
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897655"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193386"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Katalog szkoleń dla deweloperów Dynamics 365 Finance
 
@@ -29,20 +29,20 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="get-started"></a>Rozpocznij<a name="get-started"></a>
 
-| Zawartość  | opis     | Format     | Długość    |
-|-------------|-----------------|-------------|------------|
-| [Rozpoczęcie korzystania z aplikacji Finance and Operations](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finance and Operations w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z aplikacjami Finance and Operations, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2.2 godzin |
-| [Rozpoczęcie korzystania z Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance upoważnia użytkowników biznesowych do dostosowywania się do szybko zmieniających się środowisk biznesowych. Zapewnia firmom wszystko, czego potrzebują do kontrolowania finansów i zarządzania funduszami, dzięki dokładnym informacjom do planowania i prognozowania finansowego, a także pomaga im być na bieżąco z narzędziami analitycznymi. Ponieważ finanse są podstawą każdej działalności, ważne jest zapoznanie się z możliwościami Dynamics 365 Finance. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
+| [Rozpoczęcie korzystania z aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finance and Operations w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z aplikacjami Finance and Operations, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2.2 godzin |
+| [Rozpoczęcie korzystania z Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance upoważnia użytkowników biznesowych do dostosowywania się do szybko zmieniających się środowisk biznesowych. Zapewnia firmom wszystko, czego potrzebują do kontrolowania finansów i zarządzania funduszami, dzięki dokładnym informacjom do planowania i prognozowania finansowego, a także pomaga im być na bieżąco z narzędziami analitycznymi. Ponieważ finanse są podstawą każdej działalności, ważne jest zapoznanie się z możliwościami Dynamics 365 Finance. | Bezpłatny, samodzielnie realizowany moduł nauki online | 1 godzina |
 
 ## <a name="core-development-concepts"></a>Podstawowe koncepty deweloperskie<a name="core-development-concepts"></a>
 
-| Zawartość  | opis  | Format   | Długość    |
-|-------------|-----------------|-------------|------------|
-| [Wprowadzenie do projektowania za pomocą aplikacji Finance and Operations](/learn/paths/introduction-develop-finance-operations/) | Podczas pracy z aplikacji Finance and Operations bardzo ważne jest, aby dobrze zaznajomić się z głównymi składnikami architektury ekosystemu Dynamics 365 i aplikacji Finance and Operations. Znajomość podstawowych pojęć związanych z programowaniem, w tym możliwości technicznych, kodu źródłowego, struktur badawczych i narzędzi do raportowania, pomoże podczas budowania umiejętności rozwojowych, które można zastosować w aplikacjach Finance and Operations. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7.75 godzin |
-| [Budowanie aplikacji Finance and Operations](/learn/paths/build-finance-operations/) | Programowanie w aplikacjach Finance and Operations wymaga podstawowej wiedzy na temat zadań wymaganych do tworzenia nowych elementów i dostosowywania aplikacji Finance and Operations. Zadania te obejmują zrozumienie kodu X++, Visual Studio, a także możliwość tworzenia i modyfikowania podstawowych elementów systemu. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 13 godzin |
-| [Rozszerzanie aplikacji Finance and Operations](/learn/paths/extending-finance-operations/) | Rozszerzenia umożliwiają deweloperom dokonywanie zmian w doświadczeniu użytkownika w aplikacjach Finance and Operations przez implementację modyfikacji kodu, które nie mają wpływu na kod podstawowy. Oprócz innych korzyści rozszerzenia pozwalają deweloperom aktualizować aplikacje Finance and Operations w celu przestrzegania procesów biznesowych i wymaganych zmian. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2.5 godzin |
-| [Połącz z aplikacjami Finance and Operations](/learn/paths/connect-finance-operations/) | Funkcje integracji i dostępu do danych w aplikacjach Finance and Operations są ważnymi możliwościami. Deweloperzy, którzy dowiedzieli się jak budować i rozszerzać kod w aplikacjach Finance and Operations, mogą zwiększyć wiedzę na temat integracji danych oraz sposobu, w jaki połączenia z danymi mogą mieć pozytywny wpływ na użytkowników. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.75 godzin |
-| [Dokonaj migracji danych i rozpocząć eksploatację z aplikacjami Finance and Operations](/learn/paths/migrate-data-go-live-finance-operations/) | Jako konsultant funkcjonalny musisz zrozumieć informacje na temat przygotowywania danych odbiorców do migracji, pracy z zarządzaniem danymi i wykonywania testów akceptacji, aby aktywować z aplikacjami Finance and Operations. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
+| [Wprowadzenie do projektowania za pomocą aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Podczas pracy z aplikacji Finance and Operations bardzo ważne jest, aby dobrze zaznajomić się z głównymi składnikami architektury ekosystemu Dynamics 365 i aplikacji Finance and Operations. Znajomość podstawowych pojęć związanych z programowaniem, w tym możliwości technicznych, kodu źródłowego, struktur badawczych i narzędzi do raportowania, pomoże podczas budowania umiejętności rozwojowych, które można zastosować w aplikacjach Finance and Operations. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7.75 godzin |
+| [Budowanie aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Programowanie w aplikacjach Finance and Operations wymaga podstawowej wiedzy na temat zadań wymaganych do tworzenia nowych elementów i dostosowywania aplikacji Finance and Operations. Zadania te obejmują zrozumienie kodu X++, Visual Studio, a także możliwość tworzenia i modyfikowania podstawowych elementów systemu. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 13 godzin |
+| [Rozszerzanie aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | Rozszerzenia umożliwiają deweloperom dokonywanie zmian w doświadczeniu użytkownika w aplikacjach Finance and Operations przez implementację modyfikacji kodu, które nie mają wpływu na kod podstawowy. Oprócz innych korzyści rozszerzenia pozwalają deweloperom aktualizować aplikacje Finance and Operations w celu przestrzegania procesów biznesowych i wymaganych zmian. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2.5 godzin |
+| [Połącz z aplikacjami Finance and Operations](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | Funkcje integracji i dostępu do danych w aplikacjach Finance and Operations są ważnymi możliwościami. Deweloperzy, którzy dowiedzieli się jak budować i rozszerzać kod w aplikacjach Finance and Operations, mogą zwiększyć wiedzę na temat integracji danych oraz sposobu, w jaki połączenia z danymi mogą mieć pozytywny wpływ na użytkowników. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.75 godzin |
+| [Dokonaj migracji danych i rozpocząć eksploatację z aplikacjami Finance and Operations](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | Jako konsultant funkcjonalny musisz zrozumieć informacje na temat przygotowywania danych odbiorców do migracji, pracy z zarządzaniem danymi i wykonywania testów akceptacji, aby aktywować z aplikacjami Finance and Operations. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 | [Finance And Operations: Programowanie ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Ten TechTalk omawia pojęcia związane z zarządzaniem usług Lifecycle aplikacji deweloperskich, narzędzi i najlepszych praktyk, które zalecamy. Omawiamy, w jaki sposób usługi Lifecycle Services, Visual Studio i Azure DevOps współpracują ze sobą, aby umożliwić ukierunkowane na proces biznesowy ciągłe dostarczanie bazy kodu rozwiązania i obsługę środowisk. | Bezpłatna rejestracja konferencji w sieci Web | 52 minut |
 | [Finance and Operations: Rozszerzanie Dynamics 365 for Finance and Operations z PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Poznanie prostoty Microsoft PowerApps i sposobu integracji z Dynamics 365 for Finance and Operations w celu cyfrowego przekształcania firm i zwiększania wydajności użytkowników. | Bezpłatna rejestracja konferencji w sieci Web | 43 minut |
 | [Finance and Operations: Możliwości rozszerzania (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Udostępniamy przegląd i aktualizację planów rozszerzeń rozwiązania Microsoft. Omówimy szczegółowo różne sposoby rozszerzenia rozwiązania, zagłębiając się w funkcje rozszerzalności metadanych, a także możliwość zwiększenia i rozszerzenia kodu, w tym za pomocą wydajnej funkcji Chain of Command. | Bezpłatna rejestracja konferencji w sieci Web | 50 minut |
@@ -58,8 +58,8 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="servicing"></a>Obsługa<a name="servicing"></a>
 
-| Zawartość  | opis  | Format  | Długość    |
-|-------------|-----------------|-------------|------------|
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Serwisowanie, obsługiwanie i obsługa produkcji (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Informacje techniczne na temat efektywnej pomocy technicznej, obsługiwania i obsługiwania środowiska produkcyjnego Dynamics 365 for Finance and Operations. | Bezpłatna rejestracja konferencji w sieci Web | 53 minut |
 | [Finance and Operations: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
 | [Finance and Operations: zarządzane ciągłe aktualizacje firmy Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Częstotliwość ciągłej aktualizacji cla Finance and Operations została rozpoczęta! Dołącz do nas w tej godzinie, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
@@ -68,16 +68,17 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="migration-and-upgrade"></a>Uaktualnianie i migracja<a name="migration-and-upgrade"></a>
 
-| Zawartość  | opis    | Format  | Długość    |
-|-------------|-----------------|-------------|------------|
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
+| [Uaktualnij Dynamics AX 2012 do aplikacji Finance and Operations](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Poznaj najważniejsze elementy i najlepsze wskazówki dotyczące pomyślnego uaktualnienia rozwiązania Dynamics AX 2012 do aplikacji Finance and Operations. Od pierwszych kroków odkrywania kluczowych różnic architektonicznych, rozpoczęcia procesu aktualizacji oraz narzędzi do aktualizacji kodu i danych, po najlepsze sposoby przeprojektowania integracji, analiz i raportowania w oparciu o najnowsze możliwości. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
 | [Finance and Operations: Uaktualnianie z 7.x do 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Prosimy o wzięcie udziału w następnym TechTalk, podczas którego będziemy pokryć proces uaktualnienia z 7.X do 8.X. Będziemy omawiać różne scenariusze i kroki wykonywane w celu uaktualnienia kodu i uaktualnienia danych. Obejmą również scenariusze żądań rozszerzalności oraz sposób ich podniesienia w miarę potrzeby. Część 1 z 2. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
 | [AX2012 do Dynamics 365 for Operations Uaktualnianie (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do Dynamics 365 for Operations. | Bezpłatna rejestracja konferencji w sieci Web | 45 minut |
 | [AX2009 do Dynamics 365 for Operations Narzędzia migracji (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Ta sesja obejmie dostępne narzędzia ułatwiające Migrowanie z AX2009 do D365 dla Operations. | Bezpłatna rejestracja konferencji w sieci Web | 55 minut |
 
 ## <a name="testing"></a>Testowanie<a name="testing"></a>
 
-| Zawartość  | opis  | Format  | Długość    |
-|-------------|-----------------|-------------|------------|
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Biblioteka testów akceptacyjnych (DYN650PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Informacje techniczne na temat efektywnej pomocy technicznej, obsługiwania i obsługiwania środowiska produkcyjnego Dynamics 365 for Finance and Operations. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
 | [Finance and Operations: Regression Suite Automation Tool -- Tło i ustawienia (DYN646PAL) ](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Jest to pierwsza z dwóch części w przypadku testowania Regression Suite Automation Testing (RSAT). W tej sesji będziemy ponosić informacje, jak zapewnić konieczność korzystania z ciągłej aktualizacji przy użyciu zautomatyzowanego testowania za pomocą narzędzia RSAT. Informacje i zalecenia dotyczące tworzenia nagrań zadań i wykonywania testów za pomocą narzędzi RSAT będą uwzględniane wraz z krokiem krok po kroku instalacji i konfiguracji. | Bezpłatna rejestracja konferencji w sieci Web | 70 minut |
 | [Finance and Operations: Regression Suite Automation Tool — Testowanie wersji demonstracyjnej Lifecycle (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Jest to druga z dwóch części w przypadku testowania Regression Suite Automation Testing (RSAT). Ta sesja obejmuje pokaz całego cyklu tworzenia i zapisywania zapisów zadań z Finance and Operations w bibliotece narzędzia BPM w usługi LCS, synchronizowanie biblioteki narzędzia BPM w celu utworzenia przypadków testowych w Azure DevOps, grupowania przypadków testowych z pakietami testów oraz ładowania i wykonywanie zestawów testów w pakietach RSAT. | Bezpłatna rejestracja konferencji w sieci Web | 70 minut |
@@ -89,9 +90,8 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="exam"></a>Egzamin<a name="exam"></a>
 
-| Zawartość | opis  | Format  |
-|-------------|-----------------|-------------|
-|[Egzamin MB-500: Microsoft Dynamics 365: Deweloper aplikacji Finance and Operations](/learn/certifications/exams/mb-500) | Ten egzamin mierzy Twoją zdolność do wykonywania następujących zadań technicznych: planowania architektury i projektowania rozwiązań; stosować narzędzia programistyczne; projektować i rozwijać elementy AOT; opracowywać i testować kod; wdrożyć raportowanie; integrować i zarządzać rozwiązaniami dotyczącymi danych; wdrażaj zabezpieczenia i optymalizuj wydajność. | Egzamin, koszty różnią się w zależności od regionu |
-
+| Zawartość | opis | Format |
+|---------|-------------|--------|
+|[Egzamin MB-500: Microsoft Dynamics 365: Deweloper aplikacji Finance and Operations](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Ten egzamin mierzy Twoją zdolność do wykonywania następujących zadań technicznych: planowania architektury i projektowania rozwiązań; stosować narzędzia programistyczne; projektować i rozwijać elementy AOT; opracowywać i testować kod; wdrożyć raportowanie; integrować i zarządzać rozwiązaniami dotyczącymi danych; wdrażaj zabezpieczenia i optymalizuj wydajność. | Egzamin, koszty różnią się w zależności od regionu |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

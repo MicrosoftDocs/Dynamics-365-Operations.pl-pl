@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 672bb37a4d191c4b4f72b234ba98766ffd223f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d1df15462a39c17710c9300425561bba8b69fc7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826133"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188388"
 ---
 # <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
@@ -27,8 +27,7 @@ ms.locfileid: "5826133"
 
 Ten artykuł zawiera informacje o raportowaniu listy sprzedaży do państw Unii Europejskiej (UE).
 
-<a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
------------------------
+## <a name="eu-sales-list-reporting"></a>Raportowanie listy sprzedaży do UE
 
 Dostawca, który dostarcza towary lub usługi wewnątrz Wspólnoty firmom, które są zarejestrowane w Unii Europejskiej (UE), musi przesyłać deklarację sprzedaży do UE (Lista sprzedaży do UE lub ESL). Ogólnie dokument ESL musi zostać przesłany do urzędu skarbowego nie później niż ostatniego dnia miesiąca po zakończeniu okresu kalendarzowego, objętego przez ESL. Dostawca musi podać swój numer identyfikacyjny VAT na ESL i musi także podać, według odbiorcy, następujące informacje:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058831"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189757"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organizowanie pracowników za pomocą działów, funkcji i stanowisk
 
@@ -42,8 +42,7 @@ Poniższy przykład ilustruje koncepcje opisane w tym artykule.
 |**Kadry**|Menedżer ds. HR (Centrala)|Menedżer ds. HR|
 
 
- <a name="departments"></a>Działy
-------------
+##  <a name="departments"></a>Działy
 
 Dział jest jednostką operacyjną, która reprezentuje kategorię lub obszar funkcjonalny organizacji, który odpowiada za określony obszar organizacji, np. sprzedaż lub księgowość. Dział jest używany w raportach dla obszarów funkcjonalnych i może mieć obowiązek raportowania zysków i strat. Ponadto dział może zawierać grupę centrów kosztów. Sprzedaż, księgowość i zasoby ludzkie to wybrane przykłady działów w organizacji.
 
@@ -96,8 +95,7 @@ Typy zadań umożliwiają klasyfikowanie podobnych zadań wg kategorii. Funkcje 
 
 Zakresy odpowiedzialności pozwalają wskazać role pracy, procesy i produkty, za które byłby odpowiedzialny pracownik na danym stanowisku. Przykładem zakresu odpowiedzialności dla stanowiska „Księgowy” może być „Raporty finansowe dla produktu A”.
 
-<a name="positions"></a>Pozycje
-----------
+## <a name="positions"></a>Pozycje
 
 Pozycje są ważnym elementem dla niższego poziomu hierarchii organizacji. Pozycja jest pojedynczym wystąpieniem zadania. Na przykład stanowisko „Menedżer ds. sprzedaży (Wschód)” jest tylko jednym ze stanowisk skojarzonych z zadaniem „Menedżer ds. sprzedaży”. Stanowiska istnieją w działach i są przypisane do pracowników.
 ### <a name="position-creation-and-maintenance"></a>Tworzenie i obsługa pozycji

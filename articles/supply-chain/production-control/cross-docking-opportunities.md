@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 231c59cea2ca0bcb139079209d2e846e67eb7fed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839156"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190095"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
@@ -28,8 +28,7 @@ ms.locfileid: "5839156"
 
 W tym temacie opisano sposób zarządzania procesem przeładunku kompletacyjnego materiału, który jest zgłaszany jako gotowy z linii produkcyjnej do doku transportu wychodzącego.
 
-<a name="introduction"></a>Wprowadzenie
-------------
+## <a name="introduction"></a>Wprowadzenie
 
 Przeładunek kompletacyjny z produkcji do lokalizacji załadunkowej ma zastosowanie do producentów, którzy wytwarzają duże ilości i w najbardziej korzystnym scenariuszu chcieliby wysyłać wyroby gotowe natychmiast po ich zgłoszeniu jako gotowe z linii produkcyjnych. Celem tego procesu jest wysyłanie produktów do centrów dystrybucji, które fizycznie znajdują się blisko miejsc zapotrzebowania odbiorców, zamiast kumulować zapasy w zakładzie produkcyjnym.
 

@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: db97d05d79a100ebdcfb5b4931b37243b77bd352
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814999"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216792"
 ---
 # <a name="intrastat-overview"></a>Omówienie systemu Intrastat
 
@@ -73,7 +73,7 @@ W następującej tabeli są podane wymagania wstępne dla raportowania Intrastat
 </tr>
 <tr class="odd">
 <td>Hierarchia kategorii produktów (hierarchia sprzedaży, hierarchia zaopatrzenia)</td>
-<td>Przypisz kody asortymentu Intrastat do węzła kategorii na karcie <strong>Kody asortymentu</strong> na stronie <strong>Hierarchia kategorii</strong>. Po przypisaniu kodu asortymentu do węzła nadrzędnego kategorii, ten kod jest stosowany do wszystkich podrzędnych węzłów kategorii. Wybrane kody asortymentu będą dostępne w widoku <strong>Wybrane</strong> po wybraniu kodu asortymentu w szczegółach zwolnionego produktu i na zamówieniu sprzedaży, zamówienia zakupu oraz w wierszach zamówienia przeniesienia.</td>
+<td>Przypisz kody asortymentu Intrastat do węzła kategorii na karcie <strong>Kody asortymentu</strong> na stronie <strong>Hierarchia kategorii</strong>. Po przypisaniu kodu asortymentu do węzła nadrzędnego kategorii, ten kod jest stosowany do wszystkich podrzędnych węzłów kategorii. Wybrane kody asortymentu będą dostępne w widoku <strong>Wybrane</strong> po wybraniu kodu asortymentu w szczegółach produktu i na zamówieniu sprzedaży, zamówienia zakupu oraz w wierszach zamówienia przeniesienia.</td>
 </tr>
 <tr class="even">
 <td>Szczegóły zwolnionego produktu</td>
@@ -84,6 +84,7 @@ W następującej tabeli są podane wymagania wstępne dla raportowania Intrastat
 <li><strong>Kraj/region pochodzenia</strong> — umożliwia wybór domyślnego kraju/regionu, w którym towary zostały w całości pozyskane lub wyprodukowane.</li>
 <li><strong>Województwo pochodzenia/docelowe</strong> — pozwala wybrać domyślne województwo docelowe dla przyjęć i województwo pochodzenia dla wysyłki.</li>
 <li><strong>Waga netto w kg</strong></li>
+<li><strong>Wyłącz</strong> - Włącz ten parametr, aby nie przenosić transakcji z tym produktem do Intrastatu</li>
 </ul></td>
 </tr>
 <tr class="odd">

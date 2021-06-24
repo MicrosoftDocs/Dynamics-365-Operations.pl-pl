@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820991"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189100"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Zasady podziału księgowań i wpisów w arkuszu księgi dla faktur od dostawców
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820991"
 
 Zasady podziału księgowań są używane do określania sposobu księgowania kwot, to znaczy sposobu księgowania wydatków, podatków lub opłat na fakturze od dostawcy. Każdy kwota, która musi zostać zaksięgowana w trakcie zapisu w arkuszu dla faktury od dostawcy, będzie posiadać jedną lub więcej zasad podziału księgowań. 
 
-<a name="accounting-distributions"></a>Zasady podziału księgowań 
--------------------------
+## <a name="accounting-distributions"></a>Zasady podziału księgowań 
 
 Za pomocą następujących przycisków na stronie Faktura od dostawcy, możesz wyświetlać i ewentualnie zmodyfikować zasady podziału księgowań dla faktury od dostawcy.
 -   **Rozdziel kwoty** — Wyświetlanie i modyfikowanie zasad podziału księgowań dla pojedynczego wiersza i wszystkich wierszy podrzędnych, takich jak podatki lub opłaty. Można również wyświetlać i modyfikować zasady podziału księgowań dla wiersza podrzędnego bezpośrednio ze strony Transakcje podatkowe lub Transakcje opłat.
@@ -227,8 +226,7 @@ Podczas wprowadzania faktury od dostawcy, każda kwota będzie podzielona w nast
 </table>
 
 
-<a name="distributing-taxes"></a>Dystrybuowanie podatków
-------------------
+## <a name="distributing-taxes"></a>Dystrybuowanie podatków
 
 Zasady podziału księgowań dla podatków można utworzyć dopiero po obliczeniu podatków. Aby obliczyć podatek, należy wykonać jedną z następujących czynności na stronie Faktura od dostawcy:
 -   Wyświetl sumę faktury.

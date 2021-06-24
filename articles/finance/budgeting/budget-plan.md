@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822234"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188028"
 ---
 # <a name="budget-planning"></a>Planowanie budżetu
 
@@ -34,8 +34,7 @@ Celem tego warsztatu jest praktyczne zaprezentowanie aktualizacji funkcji Micros
 - Używanie alokacji do korygowania danych dokumentu planu budżetu
 - Edytowanie danych dokumentu planu budżetu w programie Excel 
 
-<a name="prerequisites"></a>Wymagania wstępne 
-------------------
+## <a name="prerequisites"></a>Wymagania wstępne 
 
 Aby skorzystać z tego samouczka, musisz uzyskać dostęp do środowiska Microsoft Dynamics 365 Finance z danymi demonstracyjnymi Contoso i mieć uprawnienia administratora w używanym wystąpieniu. Nie należy używać trybu prywatnego przeglądarki — w razie potrzeby wyloguj się ze wszystkich innych kont w przeglądarce i zaloguj się przy użyciu danych logowania administratora. Podczas logowania **NALEŻY** zaznaczyć pole wyboru „Nie wylogowuj mnie”. Spowoduje to utworzenie trwałego pliku cookie potrzebnego w aplikacji Excel. Jeśli zalogujesz się w aplikacji przy użyciu przeglądarki innej niż IE, zobaczysz monit o zalogowanie się w aplikacji Excel. Po kliknięciu przycisku „Zaloguj się” w aplikacji Excel zostanie wyświetlone wyskakujące okienko i podczas logowania się **NALEŻY** zaznaczyć pole wyboru „Nie wylogowuj mnie”. Jeśli kliknięcie przycisku Zaloguj się w aplikacji Excel nie spowoduje wyświetlenia okienka, wyczyść pamięć podręczną plików cookie aplikacji IE.
 

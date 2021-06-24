@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e6b59d54df9427961e2c4fb6f1387646d6fe8dfc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 502fe22aa0caafbcff059c9d0ae83c7cd030e8d0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837136"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190316"
 ---
 # <a name="credit-card-setup-authorization-and-capture"></a>Konfiguracja i autoryzacja karty kredytowej
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837136"
 
 Ten artykuł zawiera omówienie mechanizmu autoryzacji karty kredytowej w Microsoft Dynamics 365 Finance. Znajdują się tu informacje o konfigurowaniu usługi płatności, dodawaniu karty kredytowej do zamówienia sprzedaży oraz o unieważnianiu autoryzacji.
 
-<a name="setting-up-the-credit-card-payment-service"></a>Konfigurowanie usługi płatności kartą kredytową
-------------------------------------------
+## <a name="setting-up-the-credit-card-payment-service"></a>Konfigurowanie usługi płatności kartą kredytową
 
 Aby skonfigurować karty kredytowe, należy ustawić i aktywować usługę płatności na stronie Usługi płatności. Usługa płatności pełni rolę pomostu między firmą i bankiem, który przetwarza opłaty kartą kredytową odbiorcy. Należy skontaktować się z wystawcą karty kredytowej wymienionym w polu Łącznik płatności i skonfigurować konto u tego wystawcy. Następnie trzeba ustawić inne opcje na stronie Usługi płatności, ustawić typy kart kredytowych American Express, Discover, MasterCard na stronie Typy kart kredytowych i aktywować wystawcę jako domyślnego. Trzeba też wykonać następujące kroki, by ukończyć konfigurację:
 -   Na stronie Parametry rozrachunków z odbiorcami należy określić parametry korzystania z autoryzacji karty kredytowej.
@@ -39,13 +38,11 @@ Aby skonfigurować karty kredytowe, należy ustawić i aktywować usługę płat
 ## <a name="adding-a-new-credit-card"></a>Dodawanie nowej karty kredytowej
 Można tworzyć nowe rekordy kart kredytowych na stronie Odbiorcy, używając opcji Odbiorca, Ustawienia, Karta kredytowa. Można też tworzyć rekordy kart kredytowych podczas wprowadzania zamówień sprzedaży na stronie Zamówienie sprzedaży, używają opcji Zarządzaj, Odbiorca, Karta kredytowa, Rejestr.
 
-<a name="adding-a-credit-card-to-a-sales-order"></a>Dodawanie karty kredytowej dla zamówienia sprzedaży
--------------------------------------
+## <a name="adding-a-credit-card-to-a-sales-order"></a>Dodawanie karty kredytowej dla zamówienia sprzedaży
 
 Można dodać kartę kredytową do zamówienia sprzedaży , wybierając kartę kredytową w sekcji wyszukiwania kart kredytowych na skróconej karcie Cena i rabaty na stronie Zamówienie sprzedaży. Aby rozpocząć proces autoryzacji w okienku akcji na karcie Zarządzanie wybierz opcję Karta kredytowa i Autoryzuj.
 
-<a name="authorizing-a-credit-card"></a>Autoryzacja karty kredytowej
--------------------------
+## <a name="authorizing-a-credit-card"></a>Autoryzacja karty kredytowej
 
 Autoryzacja karty kredytowej polega na zweryfikowaniu numeru karty i tożsamości jej posiadacza oraz potwierdzeniu dostępnego salda kredytu. Opcjonalnie weryfikowane są wartość weryfikacji karty i adres posiadacza karty. Dostępne saldo kredytu odbiorcy jest następnie zmniejszane o kwotę faktury. Usługa płatności wysyła informację, czy karta kredytowa została przyjęta, czy odrzucona. Podczas fakturowania zamówienia sprzedaży karta kredytowa jest obciążana (autoryzowana) kwotą faktury.
 

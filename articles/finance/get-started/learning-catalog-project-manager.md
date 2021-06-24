@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: fee455fe1e51ac99fe6f38a63b48c7b92d32ac7a
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 01d6d79c482871c9f39898298292b21367c9a48e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897071"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193338"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Katalog szkoleń dla kierowników projektów wdrożeniowych współpracujących z Dynamics 365 Finance
 
@@ -88,10 +88,10 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 
 ## <a name="exams"></a>Egzaminy<a name="exams"></a>
 
-| Zawartość  | opis  | Format   |
-|-------------|-----------------|-------------|
-| [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu | |
-| [Egzamin MB — 310: Microsoft Dynamics 365 for Finance and Operations, finanse](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. | Egzamin, koszty różnią się w zależności od regionu | |
+| Zawartość | opis | Format |
+|---|---|---|
+| [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu |
+| [Egzamin MB — 310: Microsoft Dynamics 365 for Finance and Operations, finanse](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. | Egzamin, koszty różnią się w zależności od regionu |
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, konsultant funkcjonalny funkcji finansowych](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Pakiet Microsoft Certified Dynamics 365 for Finance and Operations:, konsultanci działający w ramach działań finansowych — pozwalają ujednolicić globalne Finanse i operacje oraz zautomatyzować zadania i przepływy pracy, usprawniają zamawianie odbiorców, sprzedawanie, fakturowanie i raportowanie. | Certyfikat, koszty różnią się w zależności od regionu |
 
 

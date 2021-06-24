@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service
 description: W tym temacie przedstawiono omówienie możliwości Regulatory Configuration Service (RCS) i wyjaśniono, jak uzyskać dostęp do usługi.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1eeac7217290e0583fcecdf5b4b5b9153d266240
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019401"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216569"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -59,9 +59,19 @@ RCS jest ogólnie dostępny w następujących regionach:
 
 Aby uzyskać pełną listę regionów, zobacz temat [Dynamics 365 oraz Power Platform: Dostępność, lokalizacja danych, język i lokalizacja](https://aka.ms/dynamics_365_international_availability_deck).
 
+## <a name="rcs-default-company"></a>Domyślna firma RCS
+
+Funkcjonalność czasu projektowania, która jest używana w RCS jest wspólna dla wszystkich firm. Brak funkcji specyficznych dla firmy. Dlatego rekomendujemy, abyś używał jednej firmy, **DAT**, w swoim środowisku RCS.
+
+Jednak w niektórych scenariuszach możesz chcieć, aby formaty ER wykorzystywały parametry, które są związane z konkretnym podmiotem prawnym. Tylko w tych scenariuszach należy używać domyślnego przełącznika firm. Na przykład: [Konfiguracja formatów raportowania elektronicznego do używania parametrów określonych dla firmy](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
+
 ## <a name="related-rcs-documentation"></a>Powiązana dokumentacja RCS
 
-Aby uzyskać więcej informacji na temat powiązanych komponentów, zapoznaj się z następującą dokumentacją:
+Aby uzyskać więcej informacji na temat powiązanych komponentów, zapoznaj się z następującymi tematami:
+
+- **RCS:**
+
+    - [Tworzenie konfiguracji raportowania elektronicznego w RCS i przekazywanie ich do repozytorium globalnego](rcs-global-repo-upload.md)
 
 - **Globalne repozytorium:**
 
@@ -70,7 +80,20 @@ Aby uzyskać więcej informacji na temat powiązanych komponentów, zapoznaj si�
     - [Ulepszone filtrowanie w globalnym repozytorium](enhanced-filtering-global-repo.md)
     - [Pobieranie konfiguracji modułu Raportowanie elektroniczne z globalnego repozytorium](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Wycofywanie konfiguracji w repozytorium globalnym](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) — deprekacja pamięci w Lifecycle Services (LCS)](rcs-lcs-repo-dep-faq.md)
 
 - **Funkcje globalizacji:**
 
     - [Regulatory Configuration Service (RCS) — funkcje globalizacji](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## <a name="troubleshooting-rcs-sign-up"></a>Rozwiązywanie problemów dotyczących podatku od towarów i usług (RCS) — rejestracja
+
+Podczas rejestracji w RCS ze strony usługi może wystąpić problem związany z Azure Active Directory (Azure AD). Komunikat o błędzie, który otrzymujesz wskazuje, że rejestracja do RCS jest obecnie wyłączona i musi zostać włączona, byś mógł dokończyć proces rejestracji.
+
+![Komunikat o błędzie rejestracji RCS](media/01_RCSSignUpError.jpg)
+
+Problem występuje, ponieważ użytkownik ma zablokowaną opcję rejestracji na subskrypcje ad hoc, a właściwość `AllowAdHocSubscriptions` musi być włączona w dzierżawie. 
+
+- Jeśli dział IT zarządza lokatorami Azure w organizacji, należy skontaktować się z tym działem w celu zgłoszenia problemu.
+- Jeśli odpowiadasz za zarządzanie dzierżawami systemu Azure, możesz rozwiązać problem, wykonać kroki opisane w: [Czym jest samoobsługowa rejestracja w Azure Active Directory](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
+ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838377"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "6164853"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -330,7 +330,6 @@ Zamówienia przeniesienia są tworzone bez użycia funkcji **Kontrola daty dosta
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Czy mogę wykorzystać numer identyfikacyjny, w którym dostępne są fizyczne ujemne zapasy?
 
-Funkcja obsługuje tylko dodatnie fizyczne ilości dostępnych zapasów. Przed przypisaniem numerów identyfikacyjnych do zamówienia przeniesienia należy upewnić się, że na poziomie magazynu i stanu zapasów są dodatnie fizyczne ilości dostępnych zapasów.
-
+Funkcja obsługuje tylko dodatnie fizyczne ilości na stanie na poziomie numeru identyfikacyjnego, ale można mieć fizyczne ujemne ilości na stanie na wyższych poziomach magazynu i stanu magazynowego podczas przypisywania numerów do zleceń transferu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

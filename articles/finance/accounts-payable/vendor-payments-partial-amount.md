@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841220"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189524"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Częściowe płatności dla dostawcy
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841220"
 
 Czasami płatność dokonywana na rzecz dostawcy jest mniejsza od kwoty faktury. W tym artykule opisano różne opcje postępowania w takiej sytuacji. Faktycznie dostępne opcje zależą od konkretnych wymagań biznesowych i istniejącej konfiguracji. 
 
-<a name="cash-discount-amounts"></a>Kwoty rabatu gotówkowego
----------------------
+## <a name="cash-discount-amounts"></a>Kwoty rabatu gotówkowego
 
 Dostawca może zaoferować Ci rabat za rozliczenie faktury przed datą należności. Załóżmy, że wprowadzasz fakturę na kwotę 100,00, na którą odbiorca może uzyskać 2-procentowy rabat gotówkowy, jeśli zapłaci ją w ciągu 10 dni. Okres płatności wynosi 30 dni. Jeśli propozycja płatności rabatu gotówkowego używa jako kryterium wyboru faktury i jeśli propozycja zostanie uruchomiona w dniu lub przed datą rabatu gotówkowego, wybrana faktura do zapłaty i płatność są tworzone na kwotę 98,00. Rabat gotówkowy może być również uwzględniony dla jednorazowej płatności, która została utworzona ręcznie.
 

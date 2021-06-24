@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018692"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187278"
 ---
 # <a name="engineering-change-management-faq"></a>Zarządzanie zmianami projektowymi — FAQ
 
@@ -46,7 +46,7 @@ Ta opcja jest o wiele łatwiejsza do zarządzania, ponieważ jeśli chcesz zmien
 
 Większość organizacji wybiera tę opcję, ponieważ zapewnia zarządzanie wersjami i zmianami, ale nie powoduje to dodatkowych kosztów ogólnych śledzenia wersji w poszczególnych transakcjach, zapasach i podczas planowania głównego.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Które pola są kopiowane do zwolnionego szablonu towaru?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Które pola są kopiowane ze zwolnionego szablonu towaru?
 
 Gdy firma projektowa tworzy produkt projektowy, jest on tworzony jako zwolniony produkt w firmie projektowej. Zwolniony produkt, który jest tworzony na podstawie wybranego *szablonu zwolnionego towaru*. (Szablon zwolnionego towaru jest już istniejącym zwolnionym produktem). Zwolniony szablon towaru jest również używany podczas zwalniania produktu do firmy operacyjnej. W każdym przypadku zwolniony szablon towaru definiuje większość wartości pól dla zwolnionego produktu, a te wartości pochodzą ze skojarzonej strony **Szczegóły zwolnionego produktu**.
 

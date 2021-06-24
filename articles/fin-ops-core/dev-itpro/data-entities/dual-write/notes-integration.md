@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018393"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186793"
 ---
 # <a name="note-integration"></a>Integracja z notatkami
 
@@ -122,5 +122,9 @@ Integracja notatek obejmuje zbiór map tabel, które współpracują podczas int
 | [Załączniki dokumentów dostawców](mapping-reference.md#231) | Adnotacje | Firmy, które używają zwykłego tekstu i adresów URL do przechwytywania informacji specyficznych dla dostawcy (zarówno dla organizacji, jak i osób). |
 | [Załączniki dokumentu nagłówka zamówienia sprzedaży](mapping-reference.md#229) | Adnotacje | Firmy, które używają zwykłego tekstu i adresów URL do przechwytywania informacji dotyczących zamówienia sprzedaży. |
 | [Załączniki dokumentu nagłówka zamówienia zakupu](mapping-reference.md#232) | Adnotacje | Firmy, które używają zwykłego tekstu i adresów URL do przechwytywania informacji dotyczących zamówienia zakupu. |
+
+## <a name="limitations"></a>Ograniczenia
+
+Po zainstalowaniu rozwiązania notatek nie można go odinstalować. 
 
 Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym zapisem](mapping-reference.md).

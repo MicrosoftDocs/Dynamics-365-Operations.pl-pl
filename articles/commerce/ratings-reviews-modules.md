@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792154"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193289"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduły ocen i recenzji
 
@@ -54,7 +54,11 @@ Na poniższej ilustracji pokazano, jak w oknie dialogowym **Dodaj moduł** są p
 
 Moduł zapisu recenzji zawiera przycisk **Napisz recenzję**, który pozwala użytkownikom zalogować się, przypisać ocenę i napisać recenzję produktu. Moduł ten pozwala również edytować wcześniej przesłane oceny lub recenzje. Ten moduł zazwyczaj pojawia się nad histogramem ocen i modułami listy recenzji produktów na PDP.
 Poniższa ilustracja pokazuje okno dialogowe **Napisz recenzję**, które pojawia się, gdy klient wybierze **Napisz recenzję**. Odbiorca może użyć tego okna dialogowego do przesłania ocen i recenzji.
-![Napisz okno dialogowe recenzji](media/rnr-eCommerce-write-review-module.png) W poniższej tabeli przedstawiono właściwość modułu pisania recenzji, którą należy skonfigurować w narzędziu do tworzenia treści.
+
+![Napisz okno dialogowe recenzji](media/rnr-eCommerce-write-review-module.png)
+
+W poniższej tabeli przedstawiono właściwość modułu recenzji zapisu, którą należy skonfigurować w narzędziu do tworzenia treści.
+
 | Nazwa właściwości | Wartość        | Opis właściwości                 |
 |---------------|--------------|--------------------------------------|
 | Nazwisko          | Napisz recenzję | Nazwa modułu pisania recenzji. |

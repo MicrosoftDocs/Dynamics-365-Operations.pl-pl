@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811781"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190119"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Listy składowe (BOM) i formuły
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811781"
 
 Ten temat zawiera informacje o listach składowych (BOM) i formułach, które są najważniejszymi elementami definicji produktów i wariantów produktów. Listy BOM i formuły określają wymagane materiały lub składniki dla określonego produktu. Formuły określają również produkty towarzyszące i uboczne uzyskiwane w określonym kontekście produkcji. 
 
-<a name="bills-of-materials"></a>BOM
-------------------
+## <a name="bills-of-materials"></a>BOM
 
 Lista składowa (BOM) określa składniki, które są wymagane do wytworzenia produktu. Składniki mogą być surowcami, półproduktami lub substancjami. W niektórych przypadkach listy składowe mogą zawierać usługi. Jednak zwykle listy składowe BOM zawierają wymagane *zasoby materialne*.  
 

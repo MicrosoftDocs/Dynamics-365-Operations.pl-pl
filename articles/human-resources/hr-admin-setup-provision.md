@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: df06df63c28ca99bb9cb95e99b3498f70c54d97f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053666"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193731"
 ---
 # <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
 
@@ -56,7 +56,7 @@ Aby zarządzać swoimi środowiskami oprogramowania Human Resources za pomocą u
 1. Zaloguj się w usłudze [LCS](https://lcs.dynamics.com/Logon/Index) za pomocą konta używanego do subskrypcji rozwiązania Human Resources.
 
    > [!NOTE]
-   > Aby zapewnić pomyślne inicjowanie, konto, którego używasz do inicjowania środowiska Human Resources, musi być przypisane do roli **Administrator systemu** lub **Dostosowywanie systemu** w środowisku Power Apps skojarzonym ze środowiskiem Human Resources. Aby uzyskać więcej informacji dotyczących przypisywania ról zabezpieczeń do użytkowników w Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](https://docs.microsoft.com/power-platform/admin/database-security).
+   > Aby zapewnić pomyślne inicjowanie, konto, którego używasz do inicjowania środowiska Human Resources, musi być przypisane do roli **Administrator systemu** lub **Dostosowywanie systemu** w środowisku Power Apps skojarzonym ze środowiskiem Human Resources. Aby uzyskać więcej informacji dotyczących przypisywania ról zabezpieczeń do użytkowników w Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](/power-platform/admin/database-security).
 
 2. Kliknij znak plus (**+**), aby utworzyć projekt.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc4dc556cbb8bd461e904ef569016acd4276f7a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c394219bbb58bea187d352c8817ed4c3e2eb883c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814255"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189452"
 ---
 # <a name="collections-in-accounts-receivable"></a>Windykacje w module Rozrachunki z odbiorcami
 
@@ -99,8 +99,7 @@ Transakcja odpisu jest tworzona w walucie transakcji.
 
 Aby uzyskać więcej informacji, zobacz [Tworzenie arkusza odpisów dla odbiorcy](tasks/create-write-off-journal-customer.md).
 
-<a name="process-not-sufficient-funds-nsf-payments"></a>Przetwarzanie płatności przy niewystarczających funduszach  
---------------------------------------------
+## <a name="process-not-sufficient-funds-nsf-payments"></a>Przetwarzanie płatności przy niewystarczających funduszach  
 
 Klikając płatności przy niewystarczających funduszach na stronie kolekcje można przetwarzać płatności przy niewystarczających funduszach. Po kliknięciu tego przycisku nastąpi anulowanie płatności. Jeśli do odbiorcy ma być stosowana opłata za niewystarczające fundusze, w arkuszu płatności jest tworzona transakcja opłat. Kwota opłaty jest oparta na ustawieniach dla automatycznych opłat. Automatyczne opłaty, które są stosowane do płatności przy niewystarczających funduszach, są określone przez grupę opłat wybraną na stronie Konta bankowe dla danego konta bankowego.
 

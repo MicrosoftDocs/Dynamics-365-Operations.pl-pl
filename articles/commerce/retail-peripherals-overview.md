@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018838"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189582"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -833,8 +833,7 @@ Następujące urządzenia peryferyjne zostały przetestowane przy użyciu wspól
     6.  Po zamknięciu hostów bibliotek DLL ponownie uruchom program Modern POS.
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Symulator urządzeń peryferyjnych dla Commerce](dev-itpro/retail-peripheral-simulator.md)
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c5087ee04030a76aef774871b88b7970391723c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bdd03dff359e7c2799eff53b0e999580ce8b1c06
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804388"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193110"
 ---
 # <a name="point-of-sale-pos-application-and-user-language-settings"></a>Ustawienia języka użytkownika i aplikacji POS
 
@@ -57,7 +57,7 @@ Ustawienie języka użytkownika punktu sprzedaży określa tłumaczenia używane
 
 Język użytkownika punktu sprzedaży ustawia się w obszarze **Wszyscy pracownicy** na stronie **Pracownik** w menu **Handel detaliczny i inny &gt; Język**. Nie da się go ustawić na karcie Profil. To ustawienie jest używane w punkcie sprzedaży. Jeśli nie ustawiono języka użytkownika lub tłumaczenia w wybranym języku są niedostępne, ustawienia językowe w punkcie sprzedaży wrócą do języka sklepu.
 
-|             | Język interfejsu użytkownika                  | Język danych (produkty, formaty paragonów, wyświetlacz wierszowy itp.) |
+| &nbsp;      | Język interfejsu użytkownika                  | Język danych (produkty, formaty paragonów, wyświetlacz wierszowy itp.) |
 |-------------|----------------------------|---------------------------------------------------------------|
 | **Firma** | Domyślna                    | Domyślna                                                       |
 | **Sklep**   | Zastępuje ustawienie dla firmy          | Zastępuje ustawienie dla firmy                                             |

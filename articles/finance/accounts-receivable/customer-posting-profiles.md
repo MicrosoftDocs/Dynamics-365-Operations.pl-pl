@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826378"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193625"
 ---
 # <a name="customer-posting-profiles"></a>Profile księgowania odbiorców
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826378"
 
 Profile księgowania odbiorców sterują księgowaniem transakcji z odbiorcami w księdze głównej.
 
-<a name="customer-posting-profiles"></a>Profile księgowania odbiorców
--------------------------
+## <a name="customer-posting-profiles"></a>Profile księgowania odbiorców
 
 Profile księgowania odbiorców pozwalają na przypisywanie kont księgi głównej i ustawień dokumentów do wszystkich odbiorców, grupy odbiorców lub jednego odbiorcy. Te ustawienia będą obowiązywać podczas tworzenia zamówień sprzedaży, faktur niezależnych, płatności gotówką, ponagleń i not odsetkowych. W przypadku niektórych transakcji można wybrać profil księgowania, który różni się od profilów księgowania ustawionych dla transakcji na tej stronie i ma względem nich pierwszeństwo. 
 
@@ -118,7 +117,6 @@ Jeśli wszystkie transakcje odbiorcy mają mieć ten sam profil księgowania, na
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Restrykcje tabeli**
 

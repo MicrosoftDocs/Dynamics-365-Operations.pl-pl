@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941116"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219794"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integracja zaopatrzenia między aplikacjami Supply Chain Management i Field Service
 
@@ -196,23 +196,10 @@ Do integracji dokumentów związanych z zaopatrzeniem służą następujące sza
 
 | Zarządzanie łańcuchem dostaw | Field Service | opis |
 |---|---|---|
-| Nagłówek zamówienia zakupu (wersja 2) | msdyn\_Purchaseorders | Ta tabela zawiera kolumny reprezentujące nagłówek zamówienia zakupu. |
-| Jednostka wiersza zamówienia zakupu | msdyn\_PurchaseOrderProducts | Ta tabela zawiera wiersze reprezentujące wiersze w zamówieniu zakupu. Numer produktu jest używany podczas synchronizacji. Identyfikuje produkt jako jednostkę magazynową (SKU), w tym wymiary produktu. Aby uzyskać więcej informacji na temat integracji produktów z usługą Dataverse, zobacz temat [Ujednolicone działanie produktu](product-mapping.md). |
-| Nagłówek dokumentu przyjęcia produktów | msdyn\_purchaseorderreceipts | Ta tabela zawiera nagłówki dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
-| Wiersz dokumentu przyjęcia produktów | msdyn\_purchaseorderreceiptproducts | Ta tabela zawiera wiersze dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
-| Jednostka usuniętego nietrwale wiersza zamówienia zakupu | msdyn\_purchaseorderproducts | Ta tabela zawiera informacje o wierszach zamówienia zakupu, które są usuwane nietrwale. Wiersz zamówienia zakupu w aplikacji Supply Chain Management można usunąć nietrwale tylko wtedy, gdy zamówienie zakupu zostało potwierdzone lub zatwierdzone w przypadku włączenia zarządzania zmianami. Wiersz istnieje w bazie danych Supply Chain Management i jest oznaczony jako **IsDeleted**. Ponieważ usługa Dataverse nie ma koncepcji usuwania nietrwałego, bardzo ważne jest, aby te informacje zostały zsynchronizowane z usługą Dataverse. W ten sposób wiersze, które są usuwane nietrwale w aplikacji Supply Chain Management, mogą być automatycznie usuwane z usługi Dataverse. W tym przypadku logika usuwania wiersza w usłudze Dataverse jest zlokalizowana w rozszerzonej aplikacji Supply Chain Management. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Nagłówek zamówienia zakupu (wersja 2)](mapping-reference.md#183) | msdyn\_Purchaseorders | Ta tabela zawiera kolumny reprezentujące nagłówek zamówienia zakupu. |
+| [Jednostka wiersza zamówienia zakupu](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Ta tabela zawiera wiersze reprezentujące wiersze w zamówieniu zakupu. Numer produktu jest używany podczas synchronizacji. Identyfikuje produkt jako jednostkę magazynową (SKU), w tym wymiary produktu. Aby uzyskać więcej informacji na temat integracji produktów z usługą Dataverse, zobacz temat [Ujednolicone działanie produktu](product-mapping.md). |
+| [Nagłówek dokumentu przyjęcia produktów](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Ta tabela zawiera nagłówki dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
+| [Wiersz dokumentu przyjęcia produktów](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Ta tabela zawiera wiersze dokumentów przyjęcia produktów, które są tworzone po zaksięgowaniu dokumentu przyjęcia produktów w aplikacji Supply Chain Management. |
+| [Jednostka usuniętego nietrwale wiersza zamówienia zakupu](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Ta tabela zawiera informacje o wierszach zamówienia zakupu, które są usuwane nietrwale. Wiersz zamówienia zakupu w aplikacji Supply Chain Management można usunąć nietrwale tylko wtedy, gdy zamówienie zakupu zostało potwierdzone lub zatwierdzone w przypadku włączenia zarządzania zmianami. Wiersz istnieje w bazie danych Supply Chain Management i jest oznaczony jako **IsDeleted**. Ponieważ usługa Dataverse nie ma koncepcji usuwania nietrwałego, bardzo ważne jest, aby te informacje zostały zsynchronizowane z usługą Dataverse. W ten sposób wiersze, które są usuwane nietrwale w aplikacji Supply Chain Management, mogą być automatycznie usuwane z usługi Dataverse. W tym przypadku logika usuwania wiersza w usłudze Dataverse jest zlokalizowana w rozszerzonej aplikacji Supply Chain Management. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

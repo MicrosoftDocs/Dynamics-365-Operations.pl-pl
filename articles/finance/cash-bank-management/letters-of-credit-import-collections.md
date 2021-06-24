@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2673ecb09cd479eb10182a4345fe89d8f6b8d404
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815939"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188471"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Akredytywy i inkasa eksportowe
 
@@ -28,8 +28,7 @@ ms.locfileid: "5815939"
 
 Ten artykuł zawiera ogólne informacje o akredytywach i inkasie importowym. Oba rodzaje dokumentów bankowych są często używane do kupna i sprzedaży towarów między krajami.
 
-<a name="letters-of-credit"></a>Akredytywy
------------------
+## <a name="letters-of-credit"></a>Akredytywy
 
 Akredytywy są służą do obsługi transakcji międzynarodowych i ułatwiają zagwarantowanie, że płatności będą dokonywane. Akredytywa to umowa sporządzana przez bank, w której bank zgadza się zagwarantować płatność w imieniu kupującego, pod warunkiem spełnienia warunków umowy między kupującym a sprzedającym. Akredytywy są również nazywane akredytywami dokumentowymi (documentary credit — DC).
 

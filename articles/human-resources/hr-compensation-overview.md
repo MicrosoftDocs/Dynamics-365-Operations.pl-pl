@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058927"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189608"
 ---
 # <a name="compensation-plans"></a>Plany wynagrodzeń
 
@@ -121,8 +121,7 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 ## <a name="process-events"></a>Zdarzenia procesowe
 Zdarzenie procesowe oblicza wysokość wynagrodzenia w danym okresie dla wszystkich pracowników objętych co najmniej jednym stałym lub zmiennym planem wynagrodzeń. Zdarzenie procesu można uruchamiać wielokrotnie, aby na przykład testować lub aktualizować obliczone wyniki wynagrodzeń.
 
-<a name="compensation-events"></a>Wynagrodzenie — zdarzenia
--------------------
+## <a name="compensation-events"></a>Wynagrodzenie — zdarzenia
 
 Po każdym uruchomieniu procesu jest tworzone zdarzenie dotyczące wynagrodzenia.  Zdarzenie dotyczące wynagrodzenia zawiera wyniki procesu wynagrodzenia dla każdego pracownika uwzględnionego w zdarzeniu tego procesu.  Jeśli obliczenia są poprawne, można załadować zdarzenie związane z wynagrodzeniem w celu aktualizacji rekordów wynagrodzeń dla pracowników, których dotyczą zdarzenia procesu.
 

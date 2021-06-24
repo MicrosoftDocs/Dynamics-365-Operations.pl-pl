@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 367b662a43b3c3255632f20aeb821b973b04d890
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 17e5d8638dc02d92a0c67364790353833551250f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833600"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187417"
 ---
 # <a name="explosion-of-a-bom-version"></a>Rozłożenie wersji BOM
 
@@ -36,8 +36,7 @@ Pomyślne rozłożenie popytu wersji listy składowej (BOM) tworzy popyt na każ
 
 Poniższy rysunek przedstawia sposób przetwarzania rozłożenia popytu planu ogólnego. ![Rozłożenie popytu przy użyciu wersji BOM](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Ustalanie wersji BOM](master-plan-bom-version-determined.md)
 

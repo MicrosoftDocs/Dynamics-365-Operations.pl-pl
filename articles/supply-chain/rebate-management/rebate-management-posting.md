@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020418"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216750"
 ---
 # <a name="rebate-management-posting-setup"></a>Konfiguracja księgowania dla modułu Zarządzanie rabatami
 
@@ -43,7 +43,7 @@ W poniższej tabeli opisano ustawienia dostępne w sekcji nagłówka każdego pr
 | opis | Umożliwia wprowadzanie opisu profilu. |
 | Moduł | Umożliwia wybranie typu rabatów i tantiem, z które jest skojarzony profil (*Odbiorca* lub *Dostawca*). |
 | Typ | Wybierz typ profilu (*Rabat* lub *Tantiemy*). |
-| Typ płatności | <p>Pole to określa format zaksięgowanej produkcji rabatu.<p><p>Gdy w polu **Typ** zostanie ustawiona wartość *Rabat*, dostępne są następujące wartości:</p><ul><li>*Brak* — nie istnieje domyślny typ księgowania. W związku z tym podczas przetwarzania należy określić jego typ.</li><li>*Płać z zastosowaniem rozrachunków z dostawcami* – Po zaksięgowaniu rabatu zostanie utworzona faktura dostawcy dla dostawcy przekazów ustawiona dla tego odbiorcy rabatu.</li><li>*Potrącenia od odbiorcy* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li><li>*Tax invoice customer deductions* – Po zaksięgowaniu rabatu tworzona jest faktura niezależna dla odbiorcy korzystającego z rabatu.</li><li>*Wydatki w handlu* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li><li>*Raportowanie* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li></ul><p>Gdy w polu **Typ** zostanie ustawiona wartość *Tantiema*, dostępne są następujące wartości:</p><ul><li>*Brak* — nie istnieje domyślny typ księgowania. W związku z tym podczas przetwarzania należy określić jego typ.</li><li>*Płać z zastosowaniem rozrachunków z dostawcami* – Podczas księgowania rabatu tworzona jest faktura dostawcy dla konta dostawcy rabatu.</li><li>*PłaćRaporowanie* – Podczas księgowania rabatu tworzona jest faktura dostawcy dla konta dostawcy rabatu.</li></ul><p>Aby uzyskać więcej informacji, zobacz sekcję [Typy płatności](#payment-types) poniżej. |
+| Typ płatności | <p>Pole to określa format zaksięgowanej produkcji rabatu.<p><p>Gdy w polu **Typ** zostanie ustawiona wartość *Rabat*, dostępne są następujące wartości:</p><ul><li>*Płać z zastosowaniem rozrachunków z dostawcami* – Po zaksięgowaniu rabatu dla klienta zostanie utworzona faktura dostawcy dla dostawcy przekazów ustawiona dla tego odbiorcy rabatu. Podczas księgowania rabatu dla dostawcy tworzona jest faktura dostawcy dla konta dostawcy rabatu.</li><li>*Potrącenia od odbiorcy* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li><li>*Tax invoice customer deductions* – Po zaksięgowaniu rabatu tworzona jest faktura niezależna dla odbiorcy korzystającego z rabatu.</li><li>*Wydatki w handlu* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li><li>*Raportowanie* – W momencie zaksięgowania rabatu jest tworzony arkusz potrąceń od odbiorcy dla tego odbiorcy rabatu.</li></ul><p>Gdy w polu **Typ** zostanie ustawiona wartość *Tantiema*, dostępne są następujące wartości:</p><ul><li>*Płać z zastosowaniem rozrachunków z dostawcami* – Podczas księgowania rabatu tworzona jest faktura dostawcy dla konta dostawcy rabatu.</li><li>*PłaćRaporowanie* – Podczas księgowania rabatu tworzona jest faktura dostawcy dla konta dostawcy rabatu.</li></ul><p>Aby uzyskać więcej informacji, zobacz sekcję [Typy płatności](#payment-types) poniżej. |
 | Firma | Można wybrać firmę, dla których będą naliczane rezerwy i przez które będą spłacone roszczenia. |
 
 ### <a name="payment-types"></a>Typy płatności

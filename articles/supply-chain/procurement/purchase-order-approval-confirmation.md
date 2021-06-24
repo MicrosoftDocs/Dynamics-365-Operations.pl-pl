@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95f1f6971e645a0aae8679c94a4bbd4cba946dc3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9b387be0b28564dd7ae88af33812a8bbf034c0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825429"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188299"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Zatwierdzanie i potwierdzanie zamówień zakupu
 
@@ -83,8 +83,7 @@ Aby anulować całą ilość w wierszu zamówienia zakupu, w wierszu należy usu
 
 Jeśli zamówienie zakupu jest w module zarządzanie zmianami, każda zmiana, taka jak anulowanie zamówienia lub reszty pozostałej do dostawy, musi zostać przesłana do systemu przepływu pracy i zatwierdzona przed zakończeniem procesu, a transakcje magazynowe mogą być aktualizowane jako anulowane.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
 

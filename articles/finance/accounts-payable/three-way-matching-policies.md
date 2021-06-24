@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 87ab65469ec4a8154267b88fe45481b65ade5e7a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027801"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189185"
 ---
 # <a name="three-way-matching-policies"></a>Trzyelementowe zasady uzgadniania
 
@@ -28,8 +28,7 @@ ms.locfileid: "6027801"
 
 Ten temat zawiera przykłady uzgadniania trzyelementowego.
 
-<a name="example-three-way-matching-for-items"></a>Przykład: Trzyelementowe uzgadniania dla towarów
--------------------------------------
+## <a name="example-three-way-matching-for-items"></a>Przykład: Trzyelementowe uzgadniania dla towarów
 
 **Podsumowanie:** Ken jest kontrolerem w centrali firmy Fabrikam. Chce, aby wszystkie faktury od dostawców oparte na zamówieniach zakupu były dopasowane do wierszy zamówień zakupu (uzgadnianie dwuelementowe). Dla zakupu towarów, które będą używane jako środki trwałe, faktura powinna być uzgodniona zarówno z wierszami zamówienia zakupu, jak i wierszami dokumentu przyjęcia towarów (uzgodnienie trzyelementowe).
 

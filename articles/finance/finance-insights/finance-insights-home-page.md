@@ -2,7 +2,7 @@
 title: Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 description: Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086996"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222517"
 ---
 # <a name="finance-insights-home-page-preview"></a>Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 
@@ -68,7 +68,9 @@ Podczas wykonywania tego procesu będzie pomocna znajomość procesu tworzenia z
 
 ## <a name="configure-finance-insights"></a>Konfigurowanie szczegółowych danych finansowych
 
-Aby móc skorzystać z modułu Szczegółowe dane finansowe, musisz wykonać kilka kroków konfiguracyjnych. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania modułu Szczegółowe dane finansowe, zapoznaj się z tematem [Konfiguracja korzystania z modułu Finance Insights](configure-for-fin-insites.md).
+Aby móc skorzystać z modułu Szczegółowe dane finansowe, musisz wykonać kilka kroków konfiguracyjnych. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania Finance Insights, zobacz:
+  - Dla wersji do 10.0.19: [konfiguracja dla Finance insights — do wersji 10.0.19](configure-for-fin-insites.md).
+  - W przypadku wersji 10.0.20 i dalszych: [konfiguracja Finanse Insights (wersja zaponawcza) — wersje 10.0.20 i dalsze](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Tworzenie projektu integratora danych
 
@@ -84,10 +86,7 @@ Jeśli do testowania prognoz płatności od odbiorców są używane dane demonst
 Aby włączyć prognozy płatności od odbiorców, należy wykonać procedurę tworzenia modelu uczenia maszynowego, który będzie używał danych organizacji do generowania prognoz dotyczących tego, kiedy odbiorcy prawdopodobnie zapłacą zaległe faktury oraz kiedy prawdopodobnie zostaną zapłacone konkretne faktury. Aby uzyskać więcej informacji i poznać dokładną procedurę, przeczytaj temat [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Włączanie prognozowania przepływów pieniężnych
-Aby włączyć prognozowanie przepływów pieniężnych, należy wykonać procedurę tworzenia modelu uczenia maszynowego, który będzie używał danych organizacji do generowania prognoz przepływów pieniężnych. Aby uzyskać więcej informacji i poznać dokładną procedurę, przeczytaj temat [Włączanie prognozowania przepływów pieniężnych](enable-cash-flow-forecasting.md). 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Konfigurowanie i używanie funkcji prognozowania przepływów pieniężnych
-Aby uzyskać informacje na temat konfigurowania i używania funkcji prognozowania przepływów pieniężnych, zobacz [Włączanie prognozowania przepływów pieniężnych](enable-cash-flow-forecasting.md). Więcej informacji na temat sposobu używania tej funkcji znajdziesz tutaj: [Prognozowanie przepływów pieniężnych](cash-flow-forecast-intro.md).
+Aby umożliwić prognozowanie przepływów pieniężnych, należy wykonać szereg kroków w celu zbudowania modelu uczenia maszynowego, który wykorzystuje dane organizacji do generowania prognoz przepływów pieniężnych. Aby uzyskać więcej informacji i poznać dokładną procedurę, przeczytaj temat [Włączanie prognozowania przepływów pieniężnych](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Włączanie propozycji budżetowych
 
@@ -111,14 +110,12 @@ Funkcja Prognoza przepływów pieniężnych może pomóc dokładniej szacować s
 
 - Aby dowiedzieć się więcej o nowych funkcjach prognozowania przepływów pieniężnych, zobacz [Prognoza przepływów pieniężnych](cash-flow-forecast-intro.md).
 - Aby uzyskać informacje o importowaniu zewnętrznych danych, które mają być uwzględnione w prognozie przepływów pieniężnych, zapoznaj się z tematami [Używanie danych zewnętrznych w prognozach przepływów pieniężnych](external-data-in-cash-flow.md). 
-- Aby uzyskać informacje dotyczące korzystania z modelu AI w celu przewidywania długoterminowych przepływów środków pieniężnych, należy zapoznać się z tematem [Omówienie prognoz przepływów pieniężnych](cash-position.md).
+- Aby uzyskać informacje dotyczące korzystania z modelu AI w celu przewidywania krótkoterminowych przepływów środków pieniężnych, należy zapoznać się z tematem [Omówienie stanu środków pieniężnych](cash-position.md).
 - Aby uzyskać informacje dotyczące zapisywania stanu środków pieniężnych i prognoz przepływów pieniężnych jako migawek oraz porównywania migawek z wartościami rzeczywistymi, należy zapoznać się z tematem [Omówienie migawek](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Używanie propozycji budżetowej
 
 Aby uzyskać informacje o przyspieszaniu tworzenia budżetu, zapoznaj się z tematem [Propozycje budżetowe](budget-proposals.md). 
-
-Dane demonstracyjne propozycji budżetowych:
 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
 

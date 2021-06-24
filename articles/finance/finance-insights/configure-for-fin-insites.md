@@ -1,8 +1,8 @@
 ---
-title: Konfiguracja korzystania z modułu Finance Insights (wersja zapoznawcza)
-description: W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights.
+title: Konfiguracja korzystania z modułu Finance Insights (wersje do 10.0.19)
+description: W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights (wersje do 10.0.19).
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941233"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186427"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfiguracja korzystania z modułu Finance Insights (wersja zapoznawcza)
 
@@ -30,6 +30,9 @@ ms.locfileid: "5941233"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> Poniższe procedury konfigurowania rozwiązania Finance Insights są prawidłowe w przypadku wersji rozwiązania Microsoft Dynamics 365 Finance do 10.0.19. Aby skonfigurować Finance Insights w wersji 10.0.20 i późniejszych, patrz [Konfiguracja Finance Insights (wersja zapoznawcza)— wersje do 10.0.20 i nowsze](configure-for-fin-insites-PubPrvw.md).
+
 Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Microsoft Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights.
 
 ## <a name="deploy-dynamics-365-finance"></a>Wdrażanie Dynamics 365 Finance
@@ -38,7 +41,7 @@ Aby wdrożyć środowiska, wykonaj następujące kroki.
 
 1. W Microsoft Dynamics Lifecycle Services (LCS) utwórz lub zaktualizuj środowisko Dynamics 365 Finance. Środowisko wymaga wersji aplikacji 10.0.11/Platform Update 35 lub nowszego.
 2. Środowisko musi być środowiskiem o wysokiej dostępności (HA) w piaskownicy. (Środowisko tego typu jest również nazywane środowiskiem warstwy 2) Aby uzyskać więcej informacji, zobacz [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Jeśli są używane dane demonstracyjne firmy Contoso, potrzebne będą dodatkowe przykładowe dane, aby korzystać z funkcji prognoz płatności od odbiorców, prognoz przepływów pieniężnych oraz prognoz budżetu. 
+3. Jeśli konfigurujesz Finance Insights w środowisku piaskownicy, być może będziesz musiał skopiować dane produkcyjne do tego środowiska, aby prognozy zadziałały. Model prognozy używa wielu lat danych do tworzenia prognoz. Dane demonstracyjne Contoso nie zawierają wystarczającej ilości danych historycznych do szkolenia modelu prognozy. 
 
 ## <a name="configure-dataverse"></a>Skonfiguruj usługę Dataverse
 

@@ -2,7 +2,7 @@
 title: Włączanie wielu metod dostawy dla zamówień klientów
 description: W tym temacie opisano funkcje rozwiązania Microsoft Dynamics 365 Commerce, które umożliwiają tworzenie zamówień odbiorcy do odebrania w sklepie.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020658"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216774"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Włączanie wielu metod dostawy dla zamówień klientów
 
@@ -38,7 +38,7 @@ Po włączeniu **Obsługi wielu trybów odbioru** można zdefiniować wiele tryb
 
 Pola **Sposób realizacji dostawy — odbiór** i **Elektroniczny tryb dostawy** oraz opcja **Pokazuj tylko metody dostawy przewoźnika** zostały przeniesione na tą skróconą kartę.
 
-Przed skonfigurowaniem trybów dostawy do odbioru należy zdefiniować metody dostawy. Na stronie **Metody dostawy** w module Commerce Headquarter, można dodawać metody dostawy, które powinny być traktowane jako metody odbioru. Upewnij się, że została ukończona cała konfiguracja. Na przykład upewnij się, że tryb dostawy jest połączony z odpowiednimi kanałami i pozycjami. Po zakończeniu pracy należy uruchomić zadanie **Metody dostawy procesów**, aby utworzyć relacje między trybem dostawy, kanałami i towarami. Po zakończeniu pracy zadania otwórz stronę **Harmonogram dystrybucji** w module Commerce Headquarter, a następnie uruchom zadanie dystrybucji **1120**, aby upewnić się, że odpowiednie bazy danych kanałów Commerce są aktualizowane przy użyciu nowej konfiguracji trybu dostawy.
+Przed skonfigurowaniem trybów dostawy do odbioru należy zdefiniować metody dostawy. Na stronie **Metody dostawy** w module Commerce Headquarter, można dodawać metody dostawy, które powinny być traktowane jako metody odbioru. Upewnij się, że została ukończona cała konfiguracja. Na przykład, jeśli oferujesz odbiór „przy krawężniku” jako opcję dostawy dla kupujących online w niektórych sklepach, musisz utworzyć w tym celu nowy tryb dostawy. Możesz utworzyć ten tryb dostawy, używając „odbiór przy krawężniku” jako opisu. Następnie należy upewnić się, że tryb dostawy „przy krawężniku” jest zmapowany do wszystkich kanałów Commerce, które mogą go oferować, w tym sklepów internetowych, które mogą oferować tę opcję i poszczególnych kanałów sklepowych, które będą oferować tę metodę realizacji. Sposoby dostawy muszą być również powiązane z produktami. W tym przykładzie, jeśli istnieją pewne produkty, które nie mogą być zrealizowane za pomocą „odbioru przy krawężniku”, należy upewnić się, że te elementy są wykluczone. Po zakończeniu dodawania nowych trybów dostawy należy uruchomić zadanie **Metody dostawy procesów**, aby utworzyć relacje między trybem dostawy, kanałami i towarami. Po zakończeniu zadania otwórz stronę **Harmonogram dystrybucji** w module Commerce Headquarter, a następnie uruchom zadanie dystrybucji **1120**, aby upewnić się, że odpowiednie bazy danych kanałów Commerce są aktualizowane przy użyciu nowej konfiguracji trybu dostawy.
 
 ![Przykład konfiguracji metody dostawy dla odebrania „przy krawężniku”](media/pickupmodes.png)
 

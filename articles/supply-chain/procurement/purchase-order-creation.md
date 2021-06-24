@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909163"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188252"
 ---
 # <a name="create-purchase-orders"></a>Tworzenie zamówień zakupu
 
@@ -80,8 +80,7 @@ Zamówienia zakupu można skonfigurować tak, aby środki budżetu zostały przy
 
 Może wystąpić konieczność opóźnienia finalizacji zamówienia zakupu. Na przykład mogą być potrzebne dodatkowe informacje o produktach lub usługach lub może zajść potrzeba uzyskania autoryzacji na wydatek. Istnieje kilka sposobów wstrzymania zamówienia. Na przykład można poczekać z potwierdzeniem zamówienia. Alternatywnie, jeśli jest stosowany przepływ pracy zarządzania zmianami, nie przesyłaj zamówienia do zatwierdzenia. Jeśli należy zablokować wszystkie zamówienia dla konkretnego dostawcy, można również oznaczyć dostawcę w jego danych głównych jako **Wstrzymane** w zakresie przetwarzania. Istnieją okoliczności, które mogą uniemożliwić przetwarzanie zamówienia. Na przykład przetwarzanie może być niemożliwe, jeśli przekroczono limity kredytowe lub jeżeli wymagane środki budżetowe nie są dostępne.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie zamówień zakupu](purchase-order-overview.md)
 

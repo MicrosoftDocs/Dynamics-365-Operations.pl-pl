@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 84ee7c82fa6aaa819798f4bc052b12b06a51c025
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f19506d66aef22099dae9396fd345c293bf559b7
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796517"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193078"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>Wybór między aplikacjami Modern POS (MPOS) i Cloud POS
 
@@ -57,7 +57,7 @@ Choć punkty MPOS i CPOS są w dużej mierze podobne, istnieją jednak między n
 Punkt MPOS przeznaczony do urządzeń z systemem Windows, iOS lub Android jest aplikacją spakowaną, zainstalowaną i obsługiwaną na danym urządzeniu.
 
 - **Windows** — aplikacja MPOS dla systemu Windows zawiera cały kod instalacji oraz osadzone środowisko uruchomieniowe Commerce runtime (CRT). 
-- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy, kod aplikacji pochodzi z serwera CPOS w Microsoft Azure lub Commerce Scale Unit. Aby uzyskać więcej informacji, zobacz [Omówienie Commerce Scale Unit](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** — w przypadku tych platform aplikacja pełni funkcję hosta dla kodu aplikacji CPOS. Innymi słowy, kod aplikacji pochodzi z serwera CPOS w Microsoft Azure lub Commerce Scale Unit. Aby uzyskać więcej informacji, zobacz [Omówienie Commerce Scale Unit](dev-itpro/retail-store-system-begin.md).
 
 #### <a name="cpos"></a>Punkt sprzedaży w chmurze (CPOS)
 
@@ -79,11 +79,11 @@ Commerce Scale Unit jest składnikiem obsługującym składnik CRT. CRT zawiera 
 
 #### <a name="offline-mode"></a>Tryb offline
 
-MPOS dla systemu Windows obsługuje tryb offline. W trybie offline można kontynuować przetwarzania sprzedaży, nawet wtedy, gdy punkt sprzedaży jest odłączony od Commerce Scale Unit. Po przywróceniu łączności można go zsynchronizować z bazą danych kanałów. Punkt MPOS wykorzystuje własne wbudowane wystąpienie CRT i tymczasowo używa własnego lokalnego źródła danych (bazy danych offline serwera SQL). Aby uzyskać więcej informacji na temat funkcji pracy w trybie offline, zobacz [Funkcjonalność offline punktu sprzedaży](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS dla systemu Windows obsługuje tryb offline. W trybie offline można kontynuować przetwarzania sprzedaży, nawet wtedy, gdy punkt sprzedaży jest odłączony od Commerce Scale Unit. Po przywróceniu łączności można go zsynchronizować z bazą danych kanałów. Punkt MPOS wykorzystuje własne wbudowane wystąpienie CRT i tymczasowo używa własnego lokalnego źródła danych (bazy danych offline serwera SQL). Aby uzyskać więcej informacji na temat funkcji pracy w trybie offline, zobacz [Funkcjonalność offline punktu sprzedaży](pos-offline-functionality.md).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Zagadnienia dotyczące urządzeń peryferyjnych / sprzętu punktu sprzedaży
 
-Sprzedawcy detaliczni muszą również wziąć pod uwagę dostęp punktu sprzedaży do sprzętu i urządzeń peryferyjnych, takich jak drukarki, szuflady na gotówkę i terminale płatnicze. Bezpośrednią komunikację z tymi urządzeniami obsługuje wyłącznie punkt MPOS dla systemu Windows. Dostęp do tych urządzeń z punktu MPOS dla systemów Windows Phone, iOS lub Android oraz punktu sprzedaży w chmurze wymaga zastosowania stacji sprzętowej. Stacje sprzętowe mogą być przypisane do rejestru punktu sprzedaży lub współdzielone przez rejestry w sklepie. Aby uzyskać więcej informacji na temat stacji sprzętowych, zobacz [Konfigurowanie i instalowanie stacji sprzętowej handlu detalicznego](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
+Sprzedawcy detaliczni muszą również wziąć pod uwagę dostęp punktu sprzedaży do sprzętu i urządzeń peryferyjnych, takich jak drukarki, szuflady na gotówkę i terminale płatnicze. Bezpośrednią komunikację z tymi urządzeniami obsługuje wyłącznie punkt MPOS dla systemu Windows. Dostęp do tych urządzeń z punktu MPOS dla systemów Windows Phone, iOS lub Android oraz punktu sprzedaży w chmurze wymaga zastosowania stacji sprzętowej. Stacje sprzętowe mogą być przypisane do rejestru punktu sprzedaży lub współdzielone przez rejestry w sklepie. Aby uzyskać więcej informacji na temat stacji sprzętowych, zobacz [Konfigurowanie i instalowanie stacji sprzętowej handlu detalicznego](retail-hardware-station-configuration-installation.md).
 
 ## <a name="implementation-considerations"></a>Uwagi dotyczące implementacji
 
@@ -100,7 +100,7 @@ Podczas planowania wdrożenia punktu sprzedaży w sklepach należy wziąć pod u
     Te dwie opcje nie wykluczają się wzajemnie. W przypadku większości niezawodnych topologii sprzedawcy detaliczni mogą wdrożyć lokalną jednostkę RSSU w celu ograniczenia zależności od łączności internetowej lub dostępności usługi Azure, a ponadto mogą również wdrożyć rejestry punktu sprzedaży na urządzeniu z włączonym trybem offline na wypadek wystąpienia problemu z serwerem lokalnym lub siecią.
 
 - **Urządzenia sprzętowe/peryferyjne** — jednym z istotnych aspektów systemu punktu sprzedaży Retail jest jego zdolność do obsługi urządzeń peryferyjnych punktu sprzedaży, takich jak drukarki, szuflady na gotówkę i terminale płatnicze. Co prawda wszystkie dostępne opcje punktu sprzedaży mogą korzystać z urządzeń peryferyjnych, jednak wyłącznie punkt MPOS dla systemu Windows obsługuje je w sposób bezpośredni. W przypadku wszystkich innych zastosowań wymagana jest co najmniej jedna stacja sprzętowa. Takie podejście zwiększa elastyczność, jednak wymaga wdrożenia, skonfigurowania i obsługi dodatkowych składników.
-- **Wymagania systemowe** — wymagania systemowe dla aplikacji punktu sprzedaży się różnią. Przed podjęciem ostatecznej decyzji należy sprawdzić najnowsze informacje. Przykładowo punkt CPOS obsługuje więcej systemów operacyjnych, ponieważ działa w przeglądarce. Aby uzyskać więcej informacji na temat wymagań systemowych, zobacz [Wymagania systemowe dla wdrożeń w chmurze](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
+- **Wymagania systemowe** — wymagania systemowe dla aplikacji punktu sprzedaży się różnią. Przed podjęciem ostatecznej decyzji należy sprawdzić najnowsze informacje. Przykładowo punkt CPOS obsługuje więcej systemów operacyjnych, ponieważ działa w przeglądarce. Aby uzyskać więcej informacji na temat wymagań systemowych, zobacz [Wymagania systemowe dla wdrożeń w chmurze](../fin-ops-core/fin-ops/get-started/system-requirements.md).
 - **Wdrażanie i obsługa** — złożoność wymagań związanych z wdrożeniem i obsługą może być różna w zależności od wybranych opcji wdrożenia i aplikacji. Na przykład w przypadku wdrożenia punktu CPOS hostowanego w chmurze nie ma potrzeby instalowania i aktualizowania go na każdym urządzeniu. Dlatego to podejście w znacznym stopniu zmniejsza złożoność oraz koszt. Jednak w przypadku wdrożenia punktu MPOS na każdym rejestrze i aktywacji trybu offline w połączeniu z wdrożeniem współdzielonych stacji sprzętowych znacznie zwiększa się liczba punktów końcowych wymagających zarządzania.
 
 

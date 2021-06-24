@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814591"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188156"
 ---
 # <a name="production-process-overview"></a>Omówienie procesu produkcji
 
@@ -74,8 +74,7 @@ Dla wszystkich typów trybu mieszanego produkcji mogą wystąpić następujące 
 12. **Zamknięcie okresu** — niektóre zasady rachunku kosztów, takie jak średnia okresowa, wycena wsteczna, FIFO lub LIFO wymagają okresowych działań w celu zamknięcia zapasów lub okresu obrachunkowego. Na ogół system próbuje zgłosić całe zużycie materiałów i zasobów oraz korekty zapasów i odpadków przed zamknięciem okresów. Zgłoszenie to odbywa się zwykle za pomocą arkuszy przesunięć magazynowych lub arkuszy korekt. Celem jest dokonanie oceny wyników ekonomicznych jednostek operacyjnych na okres. W niektórych przypadkach, gdy używane są zlecenia produkcyjne obejmujące okresy raportowania finansowego, stosuje się arkusze produkcyjne do zgłaszania postępów produkcji i zużycia zasobów na koniec okresu.
 
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Informacja zwrotna o produkcji](production-feedback.md)
 

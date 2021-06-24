@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891800"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224041"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -285,7 +285,7 @@ Aby kontynuować, pomiń następną procedurę, [Utwórz nową konfigurację mod
 
 Stan wersja 1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **Ukończoną**. Wersja 1 nie może być już zmieniana. Ta wersja zawiera skonfigurowany model danych i może być używana jako podstawa dla innych konfiguracji ER. Wersja 2 tej konfiguracji jest utworzona i ma stan **Wersja robocza**. Tę wersję można edytować, aby skorygować model danych **Kwestionariusza**.
 
-![Wersje edytowalnej konfiguracji ER na stronie konfiguracje](./media/er-quick-start1-model-configuration.png)
+![Wersje edytowalnej konfiguracji na stronie konfiguracje](./media/er-quick-start1-model-configuration.png)
 
 Aby uzyskać więcej informacji na temat wersji konfiguracji funkcji ER, zajrzyj do [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md#component-versioning).
 

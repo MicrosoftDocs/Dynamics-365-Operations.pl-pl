@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 57495de069a11f2ab41c20d17cfbe87df276ef47
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 191d5aee93217af19364932a0066464b2af89794
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817900"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189283"
 ---
 # <a name="operations-resources"></a>Zasoby rozwiązania Operations
 
@@ -29,8 +29,7 @@ ms.locfileid: "5817900"
 
 Zasoby operacyjne wykonują działania projektu lub procesu produkcji. Zasoby mogą być różnego typu i mieć różne możliwości. 
 
-<a name="operations-resources"></a>Zasoby rozwiązania Operations
---------------------
+## <a name="operations-resources"></a>Zasoby rozwiązania Operations
 
 Zasobami operacyjnymi są maszyny, narzędzia, pracownicy, zakłady, obszary fizyczne lub dostawcy wykonujący działania w ramach projektu lub procesu produkcyjnego. Zasoby mogą być różnego typu i mieć różne zdolności produkcyjne.
 

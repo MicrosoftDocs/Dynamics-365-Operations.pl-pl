@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25d3de7d9d49cbd05f7d3d3daa42f51e60dc0f8e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0d0cbaf6b8440dbbb71146a34cbbe949cfe78d0c
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825850"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190047"
 ---
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Planowanie zadań w systemie Kanban dla produkcji oszczędnej
 
@@ -65,8 +65,7 @@ Dostępne zdolności produkcyjne według dni lub tygodni zależą od kalendarza 
 
 Strona listy **Planowania zadań Kanban** zawiera pole informacyjne pokazujące dostępne i zarezerwowane zdolności produkcyjne w okresie dla wybranej komórki roboczej. W zależności od wybranego okresu harmonogramu w modelu przepływu produkcji, okresy pokazują dni lub tygodnie.
 
-<a name="additional-resources"></a>Dodatkowe zasoby
---------
+## <a name="additional-resources"></a>Dodatkowe zasoby
 
 
 
