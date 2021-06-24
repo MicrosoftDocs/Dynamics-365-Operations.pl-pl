@@ -14,7 +14,7 @@
               items:
                 - name: Nowości i zmiany w aktualizacjach Platform update — strona główna
                   href: get-started/whats-new-home-page.md
-                - name: Aktualizacja Platform update dla wersji 10.0.20 (lipiec 2021)
+                - name: Aktualizacja Platform update dla wersji 10.0.20 (sierpień 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Aktualizacja Platform update dla wersji 10.0.19 (czerwiec 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -850,12 +850,10 @@
               items:
                 - name: Śledzenie danych za pomocą programu Trace Parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Testowanie przez jednego użytkownika przy użyciu Rejestratora zadań i zestawu Performance SDK
+                - name: Testowanie przez jednego użytkownika przy użyciu zestawu Performance SDK i Rejestratora zadań
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK i lokalnego kontrolera testów
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK i usługi Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+                - name: Testowanie przez wielu użytkowników przy użyciu zestawu Performance SDK
+                  href: perf-test/perfsdk-multi-user-testing.md
                 - name: Przewodnik rozwiązywania problemów związanych z testowaniem za pomocą zestawu Performance SDK
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: Zestaw Performance SDK i testowanie przez wielu użytkowników w środowiskach lokalnych
@@ -1538,6 +1536,8 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Tworzenie zadań wsadowych
                   href: sysadmin/tasks/create-batch-job.md
+                - name: Włączanie automatycznych ponownych prób dla zadań wsadowych
+                  href: sysadmin/retryable-batch.md
                 - name: Kopiowanie zadania wsadowego
                   href: sysadmin/copy-batch-job.md
                 - name: Aktywne okresy partii
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: Uaktualnianie systemu AX 2012 — lista kontrolna czynności poprzedzających uaktualnianie dla uaktualnienia danych
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy przy użyciu procesu DACPAC
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Uaktualnienie z systemu AX 2012 — replikacja transakcyjna SQL
                   href: database/replication-setup.md
-                - name: Uaktualnianie systemu AX 2012 — uaktualnianie danych w środowiskach piaskownicy
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Uaktualnienie z systemu AX 2012 — uaktualnianie danych w środowiskach samoobsługowych
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: Uaktualnianie systemu AX 2012 — środowiska lokalne
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: Uaktualnianie systemu AX 2012 — testowanie przełączenia
