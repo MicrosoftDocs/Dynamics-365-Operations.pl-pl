@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Aktualizacja Platform update dla wersji 10.0.18 (maj 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Aktualizacja Platform update dla wersji 10.0.17 (kwiecień 2021)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -278,6 +276,8 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Udostępnianie magazynu jednostek w usłudze Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: Zmiana danych w usłudze Azure Data Lake
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Operacje przenoszenia bazy danych
           items:
             - name: Omówienie
@@ -1566,7 +1566,7 @@
               href: sysadmin/configure-manage-database-log.md
             - name: Tworzenie pamięci podręcznej metadanych OData podczas uruchamiania serwera AOS
               href: sysadmin/odata-warmup.md
-            - name: Konfigurowanie klienta magazynu kluczy usługi Azure
+            - name: Konfigurowanie klienta usługi Azure Key Vault
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
             - name: Procedury oczyszczania
               href: sysadmin/cleanuproutines.md
