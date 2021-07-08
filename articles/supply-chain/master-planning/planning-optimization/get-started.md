@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103600"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301681"
 ---
 # <a name="get-started-with-planning-optimization"></a>Rozpoczęcie optymalizacji planowania
 
@@ -109,6 +109,8 @@ Ustawienie opcji **Zastosuj optymalizację** planowania określa, który Aparat 
 
 - **Tak** — Optymalizacja planowania jest używana do planowania głównego.
 - **Nie** – wbudowany silnik planowania Supply Chain Management jest używany do planowania głównego.
+
+To ustawienie dotyczy wszystkich firm (osób prawnych). W niektórych firmach nie można używać optymalizacji planowania oraz wbudowanego planowania głównego w innych firmach.
 
 > [!NOTE]
 > Jeśli istniejące zadania wsadowe planowania utworzone dla wbudowanego silnika planowania Supply Chain Management dostaw są wyzwalane, a opcja **Użyj optymalizacji planowania** jest ustawiona na wartość **tak**, zadania te nie powiodą się.

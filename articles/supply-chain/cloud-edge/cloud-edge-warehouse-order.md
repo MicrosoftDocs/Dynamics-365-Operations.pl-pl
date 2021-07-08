@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ff1f13198a7acc35897252f3ca8f6c2b1f56852e
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 080d45170c726cd0351ab344254aa36c1c56ba55
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938283"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271263"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Nie wszystkie funkcje biznesowe są w pełni obsługiwane w wersji zapoznawczej, gdy są używane obciążenia jednostek skalowania. Jeśli używasz jednostek skalowania, pamiętaj, aby użyć tylko tych procesów, które opisano w tym temacie jako obsługiwane.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 5188fa271cd9eb24140a9edcf507a3da72b61074
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020538"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270768"
 ---
 # <a name="process-review-and-post-rebates"></a>Przetwarzanie, przegląd i księgowanie rabatów
 
@@ -55,9 +55,9 @@ Podczas przetwarzania umowy system oblicza wszystkie odpowiednie rabaty i tantie
 1. Wybierz wiersz dla każdej umowy, która ma być przetwarzana (lub otwórz umowę, która ma być przetwarzana).
 1. W okienku akcji, na karcie **Umowy zarządzania rabatami**, w obszarze **Generuj** grupę wybierz jedno z następujących poleceń:
 
-    - **Przetwarzanie \> Wdrażanie** – naliczanie zestawu naliczy dla każdej stosownej umowy rabatowej, ale nie księguj ich.
+    - **Przetwarzanie \> Wdrażanie** – naliczanie zestawu naliczy dla każdej stosownej umowy rabatowej, ale nie księguj ich. Ta pozycja menu jest niedostępna dla transakcji, w których pole **Wynik rabatu** jest ustawione na *Element*.
     - **Przetwarzanie \> Zarządzanie rabatami** – Przetwarzanie szeregu transakcji, które zapewniają wartość rabatu dla każdej umowy.
-    - **Przetwarzanie \> Odpisanie** — wycofanie wcześniej zaksięgowanych transakcji w celu ich odpisu w celu obliczenia nowych transakcji umowy rabatowej.
+    - **Proces \> Odpis** — dla każdej transakcji źródłowej dla umowy rabatowej i określonego okresu, przetworzyć wariancję pomiędzy kwotami, które zostały zaksięgowane na rezerwę i na zarządzanie rabatem. Ta pozycja menu jest niedostępna dla transakcji, w których pole **Wynik rabatu** jest ustawione na *Element*.
 
 1. W wyświetlonym oknie dialogowym należy ustawić pola **Od dnia** i **Do dnia**, aby zdefiniować zakres dat dla obliczenia.
 1. Wybierz przycisk **OK**, aby uruchomić obliczenia.
@@ -70,9 +70,9 @@ Podczas przetwarzania umowy system oblicza wszystkie odpowiednie rabaty i tantie
 1. Na skróconej karcie **Zarządzanie rabatami** wybierz wiersz dla każdego wiersza umowy, który chcesz przetworzyć.
 1. Na pasku narzędzi skróconej karty **Zarządzanie rabatami** wybierz jedno z następujących poleceń. (Te polecenia są dostępne tylko dla transakcji, w których pole **Uzgodnij do** ma wartość *Wiersz*).
 
-    - **Przetwarzanie \> Prowizje** – naliczanie zestawu naliczeń dla każdego wiersza umowy rabatowej, ale nie księguje ich.
+    - **Przetwarzanie \> Prowizje** – naliczanie zestawu naliczeń dla każdego wiersza umowy rabatowej, ale nie księguje ich. Ta pozycja menu jest niedostępna dla transakcji, w których pole **Wynik rabatu** jest ustawione na *Element*.
     - **Przetwarzanie \> Zarządzanie rabatami** – Przetwarzanie szeregu transakcji, które zapewniają wartość rabatu dla każdego wiersza umowy.
-    - **Przetwarzanie \> Odpisanie** — wycofanie wcześniej zaksięgowanych transakcji w celu ich odpisu w celu obliczenia nowych transakcji umowy rabatowej.
+    - **Proces \> Odpis** — dla każdej transakcji źródłowej dla umowy rabatowej i określonego okresu, przetworzyć wariancję pomiędzy kwotami, które zostały zaksięgowane na rezerwę i na zarządzanie rabatem. Ta pozycja menu jest niedostępna dla transakcji, w których pole **Wynik rabatu** jest ustawione na *Element*. 
 
 1. W wyświetlonym oknie dialogowym należy ustawić pola **Od dnia** i **Do dnia**, aby zdefiniować zakres dat dla obliczenia.
 1. Wybierz przycisk **OK**, aby uruchomić obliczenia.
@@ -115,26 +115,26 @@ Podczas przetwarzania jednej lub większej liczby transakcji system tworzy trans
         - **Ustaw nieodebrane \> Wszystkie** — oznacz wszystkie transakcje jako nieodebrane.
         - **Ustaw nieodebrane \> Wybrane** – Oznacz wybrane transakcje jako nieodebrane.
 
-    - Aby zakłać roszczenie dotyczące jednego lub większej liczby wierszy, zaznacz odpowiednie wiersze, a następnie w okienku akcji wybierz opcję **Księguj**. (Przycisk **Księguj** jest dostępny tylko dla transakcji rabatowych. Nie jest dostępny dla transakcji udostępniania i odpisu.) W oknie dialogowym **Księguj** pola **Od dnia** i **Do dnia** są ustawiane automatycznie. Ustaw pole **Data księgowania** i wybierz **OK**.
+    - Wybierz **Opublikuj** na panelu akcji, aby zaksięgować roszczenie dla wszystkich odpowiednich linii. Jeśli używasz procesu reklamacyjnego (gdy opcja **Użyj procesu reklamacyjnego** jest włączona na stronie **Parametry zarządzania reklamacjami**), tylko wiersze, które są oznaczone jako **Reklamowane** są księgowane. W przeciwnym razie księgowane są wszystkie transakcje źródłowe dla wybranej transakcji rabatowej. Przycisk **Księguj** jest dostępny tylko dla transakcji rabatowych. Nie jest dostępny dla transakcji aprowizyjnych i odpisów. W oknie dialogowym **Księgowanie pola** **Data od** i **Data do** są ustawiane automatycznie. Ustaw pole **Data księgowania** i wybierz **OK**.
     - Aby skorygować kwotę pokazywaną dla dowolnej otwartej lub niezaksięgowanych transakcji, wybierz transakcję, a następnie wykonaj jedną z poniższych czynności:
 
         - Edytuj wartość w polu **Skorygowana kwota**.
         - W okienku akcji wybierz opcję **Ustawianie korekty**. Następnie w oknie rozwijaym, które zostanie wyświetlone, w polu **Skorygowana kwota** wprowadź wartość.
 
 > [!NOTE]
-> Podczas przetwarzania następnego okresu lista transakcji będzie zawierać wszelkie transakcje nieodebrane z poprzedniego księgowania plus nowe transakcje dla wybranego okresu.
+> Jeśli używasz procesu reklamacji, podczas przetwarzania następnego okresu, lista transakcji będzie zawierała wszystkie nieodebrane transakcje z poprzedniego księgowania oraz wszystkie nowe transakcje dla wybranego okresu.
 
 ## <a name="post-rebates-transactions"></a>Zaksięguj transakcje rabatów
 
-Aby zak księgować wartości rabatów i potrąceń, należy uruchomić proces księgowania, chyba że w systemie ustawiono ich automatyczne księgowanie.
+Aby zaksięgować wartość przetworzonej rezerwy, kwoty zarządzania rabatem oraz odpisu, należy uruchomić proces księgowania. Proces księgowania oznacza transakcje rezerw, zarządzania rabatami lub odpisami jako zaksięgowane i tworzy transakcję docelową. Jeśli nie musisz przeglądać transakcji docelowej, transakcje te można skonfigurować tak, aby były automatycznie księgowane.
 
-### <a name="set-up-the-system-to-post-all-transactions-automatically"></a>Umożliwia skonfigurowanie w systemie automatycznego księgowania wszystkich transakcji
+### <a name="set-up-the-system-to-post-all-target-transactions-automatically"></a>Umożliwia skonfigurowanie w systemie automatycznego księgowania wszystkich transakcji docelowych
 
-Aby skonfigurować system do zaksięgowania wszystkich transakcji natychmiast po ich wygenerowaniu, włącz opcję **Automatycznie księguj arkusze** i/lub **Automatycznie księguj faktury urzędowe** na stronie **Parametry zarządzania rabatami**. Aby uzyskać więcej informacji, zajrzyj do omówienia [Omówienie parametrów Zarządzanie rabatami](rebate-management-parameters.md).
+Aby skonfigurować system do zaksięgowania wszystkich transakcji docelowych z chwilą ich wygenerowania przez rezerwę księgową, kwotę zarządzania rabatem oraz odpis, włącz opcję **Automatycznie księguj arkusze** i/lub **Automatycznie księguj faktury urzędowe** na stronie **Parametry zarządzania rabatami**. Aby uzyskać więcej informacji, zajrzyj do omówienia [Omówienie parametrów Zarządzanie rabatami](rebate-management-parameters.md).
 
 ### <a name="post-transactions-for-all-lines-for-one-or-more-deals"></a>Księguj transakcje dla wszystkich linii dla jednej lub więcej transakcji
 
-Jeśli księgowanie automatyczne nie jest realizowane, po przetworzeniu odpowiednich transakcji należy wykonać poniższe kroki, aby przejrzeć i zak księgować wygenerowane transakcje dla wszystkich wierszy jednej lub większej liczby transakcji.
+Po przetworzeniu odpowiednich transakcji należy wykonać poniższe kroki, aby przejrzeć i zaksięgować wygenerowane transakcje dla wszystkich wierszy jednej lub większej liczby transakcji.
 
 1. Otwórz odpowiednią stronę [z listą umów rabatowych](rebate-management-deals.md) dla typu umowy, która ma być zawierana.
 1. Wybierz wiersz dla każdej umowy, która ma być zaksięgowana (lub otwórz umowę, która ma być zaksięgowana).
@@ -149,7 +149,7 @@ Jeśli księgowanie automatyczne nie jest realizowane, po przetworzeniu odpowied
 
 ### <a name="post-transactions-for-one-or-more-specific-deal-lines-for-a-selected-deal"></a>Księgowanie transakcji jednego lub więcej określonych wierszy umowy dla wybranej umowy
 
-Jeśli nie korzystasz z automatycznego księgowania, po przetworzeniu odpowiednich umów wykonaj następujące kroki, aby przejrzeć i zaksięgować wygenerowane transakcje dla co najmniej jednej linii umowy dla wybranej umowy.
+Po przetworzeniu odpowiednich transakcji, wykonaj poniższe kroki, aby przejrzeć i zaksięgować wygenerowane transakcje dla jednej lub więcej linii dla wybranej transakcji. Procedura ta ma zastosowanie wyłącznie do transakcji, w których **Uzgodnij do** ma wartość *Wiersz*.
 
 1. Otwórz odpowiednią stronę [z listą umów rabatowych](rebate-management-deals.md) dla typu umowy, która ma być zawierana.
 1. Otwórz umowę, w której znajduje się wiersz, dla którego mają zostać zaksięgowane transakcje.
@@ -174,7 +174,7 @@ Zamiast księgować transakcje dla określonych transakcji lub linii transakcji,
     - Przejdź do **Zarządzanie rabatami \> Zadania okresowe \> Księguj \> Zarządzaj rabatami**, aby zakresować utworzone transakcje rabatów.
     - Przejdź do **Zarządzanie rabatami \> Zadania okresowe \> Księguj \> Odpis**, aby zakresować utworzone transakcje ospisów.
 
-1. W oknie dialogowym, który zostanie wyświetlony, na skróconej karcie **Parametry**, w sekcji **Okres** ustaw pole **Data księgowania**. Należy ustawić pola **Od dnia** i **Do dnia**, aby zdefiniować zakres dat dla transakcji, które muszą być zaksięgowane. 
+1. W oknie dialogowym, który zostanie wyświetlony, na skróconej karcie **Parametry**, w sekcji **Okres** ustaw pole **Data księgowania**. Należy ustawić pola **Od dnia** i **Do dnia**, aby zdefiniować zakres dat dla transakcji, które muszą być zaksięgowane.
 1. W sekcji **Okres gwarancji** należy ustawić pola **Od dnia** i **Do dnia**, aby zdefiniować zakres dat gwarantowanych do zaksięgowania.
 1. W **Rekordy do uwzględnienia**, można skonfigurować filtry, aby ograniczyć zestaw transakcji przetwarzanych przez zadanie wsadowe. Te ustawienia działają w taki sam sposób, jak działają w przypadku innych typów zadań wsadowych.
 1. Możesz skonfigurować automatyczną aktualizację jako zadanie wsadowe na skróconej karcie **Uruchom w tle**. Te ustawienia działają w taki sam sposób, jak działają w przypadku innych typów zadań wsadowych.
@@ -182,17 +182,17 @@ Zamiast księgować transakcje dla określonych transakcji lub linii transakcji,
 
 ## <a name="review-rebate-management-journals"></a>Przegląd arkuszy zarządzania rabatami
 
-Po zaksięgowaniu transakcji można przejrzeć wynikowe arkusze, dokumenty lub towary. Transakcje docelowe dotyczące rabatów i tantiem są oparte na typie płatności ustawionym w profilu księgowania oraz typie wyjściowym rabatu. Na przykład, jeśli rabat wyjścia ma wartość *Towar*, tworzone jest zamówienie sprzedaży, które może być przeglądane przy użyciu transakcji docelowych. Jeśli płatność jest ustawiona do korzystania z rozrachunków z dostawcami, dla dostawcy skonfigurowania odbiorcy zostanie utworzona faktura dostawcy z tytułu rabatów dla odbiorcy.
+Po zaksięgowaniu transakcji można przejrzeć wynikowe arkusze, dokumenty lub towary. Transakcje docelowe dotyczące rabatów i tantiem są oparte na typie płatności ustawionym w profilu księgowania oraz typie wyjściowym rabatu. Na przykład, jeśli wyjście rabatu jest ustawione na *Element*, zamówienie sprzedaży zostanie utworzone dla rabatu klienta, a zamówienie zakupu zostanie utworzone dla rabatu sprzedawcy. Zlecenia te można przeglądać poprzez transakcje docelowe. Jeśli płatność jest ustawiona do korzystania z rozrachunków z dostawcami, dla dostawcy skonfigurowania odbiorcy zostanie utworzona faktura dostawcy z tytułu rabatów dla odbiorcy.
 
 Aby przejrzeć zapisy w arkuszu powiązane z umowami w zakresie zarządzania rabatami, należy wykonać następujące czynności.
 
 1. Otwórz odpowiednią stronę [z listą umów rabatowych](rebate-management-deals.md) dla typu umowy, która ma być zawierana.
 1. Wybierz umowę, dla których mają być sprawdzane zapisy w arkuszu.
-1. W okienku akcji, na karcie **Zarządzanie rabatami — umowy**, w grupie **Transakcje** wybierz opcję **Transakcje** lub **Transakcje rabatów**, w zależności od typu transakcji, którą chcesz wyświetlić.
+1. W okienku akcji, na karcie **Zarządzanie rabatami — umowy**, w grupie **Transakcje** wybierz opcję **Transakcje** lub **Gwarantowanie transakcji**, w zależności od typu transakcji, którą chcesz wyświetlić.
 1. Upewnij się, że pole **Pokaż** ma wartość *Wszystkie* lub *Zaksięgowane*.
 1. Znajdź i zaznacz kolekcję transakcji, którą chcesz sprawdzić, a następnie w okienku akcji wybierz jeden z poniższych przycisków. (Te przyciski są dostępne tylko wtedy, gdy dla wybranej kolekcji transakcji istnieją odpowiednie księgowania)
 
     - **Transakcje docelowe** – Przegląd odpowiednich arkuszy i innych typów dokumentów wygenerowanych przez wybraną umowę.
-    - **Towary** — przegląd odpowiednich towarów wygenerowanych przez wybraną umowę.
+    - **Towary** — przejrzyj odpowiednie zamówienia sprzedaży lub zamówienia zakupu, które zostały wygenerowane przez wybraną ofertę.
 
 1. Zostanie wyświetlona lista odpowiednich arkuszy, dokumentów lub towarów. Aby wyświetlić więcej informacji o dowolnym arkuszu, dokumencie lub towarze, należy wybrać jego wiersz, a następnie w okienku akcji wybrać polecenie **Wyświetl szczegóły**.

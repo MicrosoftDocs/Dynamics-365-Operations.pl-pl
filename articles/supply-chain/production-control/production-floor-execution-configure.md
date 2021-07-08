@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115030"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271162"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurowanie interfejsu wykonania hal produkcyjnych
 
@@ -64,8 +64,6 @@ Ta funkcja dodaje przycisk do interfejsu modułu uruchomienie hali produkcyjnej,
 - Funkcja umożliwiająca blokowanie urządzenie karty zadań i terminalu karty zadań w celu ich wyczyszczenia
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funkcje zarządzania zasobami dla interfejsu wykonania hali produkcyjnej
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Ta funkcja dodaje kartę Zarządzanie składnikami majątku do interfejsu wykonywania produkcji. Pracownicy mogą użyć tej karty, aby wybrać składnik majątku połączony z zasobem maszynowym, który jest w obrębie wybranego filtru listy zadań. Dla wybranego składnika majątku dla urządzenia pracownik może wyświetlić stan i kondycję składnika majątku z wartości liczników dla maksymalnie czterech wybranych liczników. Jeżeli chcesz skorzystać z tej funkcji, włącz następujące funkcje w [Zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

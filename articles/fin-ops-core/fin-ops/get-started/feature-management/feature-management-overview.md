@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923314"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270820"
 ---
 # <a name="feature-management-overview"></a>Zarządzanie funkcjami — omówienie
 
@@ -160,8 +160,8 @@ Zasada polega na tym, że wszystkie nowe funkcje będą obowiązywać przez okre
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Dlaczego nie istnieje określona „obowiązkowa data włączenia"? 
 Czas wydania aktualizacji jest zmienny, czas aktualizacji środowiska jest zmienny, a klienci mogą zdecydować się na pominięcie niektórych aktualizacji. W wyniku tego trudno jest ustalić konkretne daty. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Gdzie jest dokumentacja funkcji, które są wprowadzane jako obowiązkowe? 
-Dokumentacja pochodzi od zespołów aplikacji. Często są one wymienione w [usuniętych lub przestarzałych funkcjach](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Gdzie jest dokumentacja funkcji, które są obowiązkowe? 
+Dokumentacja ta pochodzi od każdego zespołu ds. aplikacji Dynamics 365. Często te funkcje będą wymienione w [aktualizacjach do stanów funkcji klienta](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) albo [usuniętych lub przestarzałych funkcjach](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Czy istnieje powiadomienie dotyczące produktu lub sygnał, że funkcja jest wymagana do włączenia? 
 Mechanizm powiadamiania związany z wprowadzaniem wymaganej funkcji nie istnieje dzisiaj.

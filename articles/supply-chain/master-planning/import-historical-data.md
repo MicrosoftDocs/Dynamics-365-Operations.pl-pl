@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: de380113fe951f75c15f9e5526ad2f1f5cc84334
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0b04ee246d4c28e934407ccb92d792692cc4347d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908887"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301657"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Importowanie danych historycznych dla prognoz popytu
 
@@ -39,26 +39,6 @@ Aby użyć jednostki danych, musisz mieć plik programu Microsoft Excel lub plik
 
 Aby uzyskać więcej informacji dotyczących sposobu importowania danych, w tym sposobu oczyszczania danych po imporcie, zobacz temat [Omówienie zadań importowania i eksportowania danych](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) oraz tematy pokrewne.
 
-## <a name="example"></a>Przykład
-
-Można użyć następującego pliku jako przykładowego. Pobierz [HistoricalDemandData](/dynamics/s-e/). Ten plik zawiera historyczne dane dotyczące popytu dla pozycji D0001. Zawiera on tylko następujące wymagane pola: oddział, ilość i data zapotrzebowania.
-
-1. Wybierz firmę do której zostaną zaimportowane historyczne dane popytu.
-2. Otwórz obszar roboczy **Zarządzanie danymi**.
-3. Wybierz kafelek **Import**.
-4. Wprowadź nazwę dla importowania projektu, taką jak **Importowanie historycznego popytu dla pozycji D0001**.
-5. W polu **Format danych źródłowych** wybierz format pliku, który jest importowany. Aby zaimportować plik HistoricalDemandData w tym przykładzie, zaznacz **CSV**.
-6. W polu **Nazwa jednostki** wybierz **Historyczny popyt zewnętrzny**.
-7. Zapisz plik na komputerze, a następnie przekaż go.
-8. Wybierz opcję **Importuj**.
-9. Strona **Podsumowanie wykonania** zostanie automatycznie otwarta. Sprawdź importowane dane na stronie.
-
-Po zaimportowaniu historycznych danych popytu można generować prognozy popytu.
-
-## <a name="additional-resources"></a>Dodatkowe zasoby
-
-[Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)  
-[Omówienie zadań importowania i eksportowania danych](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md)
-
+Zobacz także [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

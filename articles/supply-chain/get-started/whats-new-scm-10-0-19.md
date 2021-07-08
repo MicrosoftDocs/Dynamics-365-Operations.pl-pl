@@ -1,5 +1,5 @@
 ---
-title: Wersja zapoznawcza Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
+title: Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114982"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271456"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Wersja zapoznawcza Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.19. Ta wersja ma numer kompilacji 10.0.837 i jest dostępna w następujący sposób:
+W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.19. Ta wersja ma numer kompilacji 10.0.837 i jest dostępna w następujący sposób:
 
 - **Wersja zapoznawcza wydania:** kwiecień 2021
 - **Ogólna dostępność wydania (samoaktualizacja):** czerwiec 2021 r.
@@ -32,7 +31,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 To wydanie obejmuje następujące nowe funkcje. Kolumna *Funkcja* zawiera łącza do [planu wersji](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), w którym można zobaczyć oficjalne daty wydania poszczególnych funkcji. Kolumna *Więcej informacji* zawiera łącza do większej liczby szczegółów i dokumentacji pokrewnej.
 
-Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne.
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 | Obszar funkcji | Funkcja | Więcej informacji |
 |---|---|---|

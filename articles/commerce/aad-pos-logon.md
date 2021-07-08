@@ -13,17 +13,16 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: e271bbae84605b4adace1809b53b7cbdb6932da0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 63121a9b5f1b062b7ca927f6b9eb1689ce8aa698
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020018"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270690"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurowanie uwierzytelniania Azure Active Directory w celu logowania w punkcie sprzedaży
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano sposób konfigurowania Azure Active Directory (Azure AD) jako metody uwierzytelniania w punkcie sprzedaży Microsoft Dynamics 365 Commerce.
 

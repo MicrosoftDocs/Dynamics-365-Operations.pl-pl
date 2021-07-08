@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 79115f26047c64ddb528a73e01e76891fd9b5044
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6d32abacc1539cb930ad6f1ebcfe6fa9af4befcf
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052080"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271499"
 ---
 # <a name="buy-and-sell-leave"></a>Kupuj i sprzedawaj urlop
 
@@ -48,10 +48,16 @@ Salda będą aktualizowane automatycznie lub przejdą przez proces zatwierdzenia
 
 Salda będą aktualizowane automatycznie lub przejdą przez proces zatwierdzenia przed aktualizacją. Zależy to od konfiguracji zasady kupowania.
 
+
+## <a name="troubleshooting"></a>Rozwiązywanie problemów 
+
+Jeśli przepływ żądania opuszczenia sklepu nie powiedzie się, użytkownicy z uprawnieniem **EssLeaveBuySellRequestApprover** mogą przeglądać logi wszystkich żądań opuszczenia sklepów. Aby to zrobić, wejdź na **Urlop i nieobecność > Link > Kupno i sprzedaż wniosków o urlop > Dziennik wiadomości** (w lewym górnym rogu). **Dziennik komunikatów** pokazuje użytkownikom sposób przetwarzania transakcji oraz skojarzonej historii przepływu pracy.
+
+
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)</br>
-[Zarządzaj zasadami Kupowania i Sprzedawania urlopu](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+[Zarządzaj zasadami zakupu i sprzedaży urlopu](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

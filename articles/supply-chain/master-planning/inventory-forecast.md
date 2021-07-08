@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216849"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306422"
 ---
 # <a name="inventory-forecasts"></a>Prognoza zapasów
 
@@ -353,20 +353,46 @@ Ta procedura umożliwia przetwarzanie istniejących wierszy transakcji prognozy.
 1. Sekcja **Wymiary finansowe** jest dostępna do aktualizowania wymiarów finansowych wierszy prognozy. Wybierz wymiary finansowe, które chcesz zmienić, a następnie wprowadź wartość, która ma być mająca zastosowanie do wybranych wymiarów.
 1. Wybierz **OK**, aby zastosować zmiany.
 
-## <a name="run-forecast-planning"></a>Uruchamianie planowania prognozy
+## <a name="use-forecasts-with-master-planning"></a>Wykorzystanie prognoz w planowaniu ogólnym
 
-Po wprowadzeniu prognozy popytu i/lub podaży, można uruchomić planowanie prognozy, aby obliczyć zapotrzebowanie brutto na materiały i zdolności produkcyjne oraz wygenerować planowane zamówienia.
+Po wprowadzeniu prognozy popytu i/lub podaży można uwzględnić prognozy podczas planowania nadrzędnego, aby uwzględnić oczekiwany popyt i/lub podaż w przebiegu planowania nadrzędnego. Gdy prognozy są uwzględniane w planowaniu ogólnym, obliczane jest zapotrzebowanie brutto na materiały i moce produkcyjne, a następnie generowane są planowane zamówienia.
 
-1. Przejdź do **Planowania głównego \> Prognozy \> Prognozy planowania**.
-1. W polu **Plan prognozy** wybierz plan prognozy.
-1. Włącz opcję **Czas przetwarzania śledzenia**, aby rejestrować czas przetwarzania dla każdego zadania planowania.
-1. W polu **Liczba wątków** wprowadź wartość. (Aby uzyskać więcej informacji, zobacz temat [Usprawnij planowanie główne](master-planning-performance.md).)
-1. W polu **Komentarz** wprowadź tekst, aby uchwycić wszelkie dodatkowe informacje, które są wymagane.
-1. Na skróconej karcie **Rekordy do uwzględnienia** wybierz pozycję **Filtr**, aby ograniczyć wybór pozycji.
-1. Na skróconej karcie **Uruchom w tle** określ parametry zadania wsadowego.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Stworzenie planu generalnego obejmującego prognozę zapasów
+
+Aby skonfigurować plan główny tak, aby zawierał prognozę zapasów, należy wykonać następujące czynności.
+
+1. Przejdź do **Planowanie główne \> Ustawienia \> Plany \> Plany główne**.
+1. Wybierz istniejący plan lub utwórz nowy plan.
+1. Na skróconej karcie **Ogólne** ustaw następujące pola:
+
+    - W polu **Model prognozy** wybierz model prognozy. Ten model będzie brany pod uwagę podczas generowania sugestii dostaw dla bieżącego planu głównego.
+    - **Uwzględnij prognozę podaży** — tę opcję należy określić jako *wartość tak*, aby uwzględnić prognozę podaży w bieżącym planie głównym. Jeśli zostanie ustawiona wartość *nie*, transakcje prognozy podaży nie będą uwzględniane w planie głównym.
+    - **Uwzględnij prognozę popytu** — tę opcję należy określić jako *wartość tak*, aby uwzględnić prognozę popytu w bieżącym planie głównym. Jeśli zostanie ustawiona wartość *nie*, transakcje prognozy popytu nie będą uwzględniane w planie głównym.
+    - **Metoda używana do redukowania zapotrzebowań prognozowanych** — umożliwia wybór metody, która ma zostać użyta do zmniejszenia prognozowanych zapotrzebowań. Aby uzyskać więcej informacji, zobacz [Klucze do redukcji prognoz](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. Na karcie FastTab dla **Horyzontu czasowego w dniach** można ustawić następujące pola, aby określić okres, w którym Prognoza podaży jest uwzględniana w czasie:
+
+    - **Plan wg prognozy** — ustawienie tej opcji na *tak* powoduje zastąpienie horyzontu czasowego planu wg prognozy, który pochodzi z poszczególnych grup zapotrzebowania. Ustaw na *nie*, aby używać wartości z poszczególnych grup zapotrzebowania dla bieżącego planu głównego.
+    - **Okres prognozy** — w przypadku ustawienia **opcji planu według prognozy** na wartość *tak* należy określić liczbę dni (od dzisiejszej daty), jaka powinna zostać zastosowana w prognozie popytu.
+
+    > [!IMPORTANT]
+    > Osobne **planowanie prognozy** nie jest obsługiwane w przypadku optymalizacji planowania.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Wykonanie planu generalnego, który zawiera prognozę zapasów
+
+Aby uruchomić plan generalny zawierający prognozę zapasów, należy wykonać poniższe kroki.
+
+1. Przejdź do **Planowanie główne \> Obszary robocze \> Planowanie główne**.
+1. W polu **Plan główny** wprowadź lub wybierz plan główny, który został ustawiony w poprzedniej procedurze.
+1. Na kafelku **Planowanie główne** wybierz **Uruchom**.
+1. W oknie dialogowym **Planowanie główne** ustaw opcję **Czas przetwarzania śledzenia** na *Tak*.
+1. W polu **Liczba wątków** wprowadź liczbę.
+1. W **Rekordy do uwzględnienia** na skróconej karcie, wybierz opcję **Filtr**.
+1. Zostanie wyświetlone standardowe okno dialogowe edycji zapytania. Na karcie **Zakres** wybierz wiersz, w którym pole w **Polu** ma wartość *kod towaru*.
+1. W polu **Kryteria** wybierz numer towaru, który ma być uwzględniany w planie.
 1. Kliknij przycisk **OK**.
 
-Aby wyświetlić obliczone zapotrzebowania, otwórz stronę **Zapotrzebowanie brutto**. Na przykład na stronie **Zwolnione produkty** na karcie **Plan** w sekcji **Zapotrzebowania** wybierz pozycję **Zapotrzebowanie brutto**.
+Aby wyświetlić obliczone zapotrzebowania, otwórz stronę **Zapotrzebowanie brutto**. Na przykład na stronie **Zwolnione produkty** na karcie **Plan** w sekcji **Zapotrzebowania** wybierz grupę **Zapotrzebowanie brutto**.
 
 Aby wyświetlić wygenerowane zamówienia planowane, przejdź do **Planowania głównego \> Typowe \> Zamówienia planowane** i wybierz odpowiedni plan według prognozy.
 
@@ -376,5 +402,6 @@ Aby wyświetlić wygenerowane zamówienia planowane, przejdź do **Planowania g�
 - [Ustawienia prognozowania popytu](demand-forecasting-setup.md)
 - [Generowanie bazowej prognozy statystycznej](generate-statistical-baseline-forecast.md)
 - [Wprowadzanie ręcznych korekt prognozy bazowej](manual-adjustments-baseline-forecast.md)
+- [Planowanie główne z uwzględnieniem prognoz popytu](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

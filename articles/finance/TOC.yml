@@ -1182,15 +1182,15 @@
               href: general-ledger/trial-balance-financial-reports.md
             - name: Wyświetlanie raportów finansowych
               href: general-ledger/view-financial-reports.md
-            - name: Interfejs Projektanta raportów
+            - name: Interfejs programu Report Designer
               href: ../fin-ops-core/dev-itpro/analytics/report-designer-interface.md?toc=/dynamics365/finance/toc.json
-            - name: Skróty klawiaturowe dla raportów finansowych
+            - name: Skróty klawiaturowe dla programu Financial Reporter
               href: general-ledger/financial-reporting-keyboard-shortcuts.md
-            - name: Preferencje użytkownika w projektancie raportów finansowych
+            - name: Preferencje użytkownika w finansowym programie Report Designer
               href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
             - name: Zaawansowane opcje formatowania
               href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Organizowanie składników raportu w projektancie raportów
+            - name: Organizowanie składników raportu w programie Report Designer
               href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
             - name: Definicje raportów
               href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
@@ -1208,9 +1208,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Raportowanie finansowe — często zadawane pytania
               href: general-ledger/financial-reporting-faq.md
-        - name: Szczegółowe dane finansowe
+        - name: Finance Insights
           items:
-            - name: Szczegółowe dane finansowe — strona główna
+            - name: Finance Insights — strona główna
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurowanie i administrowanie
               items:
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Tworzenie projektu integratora danych
                   href: finance-insights/create-data-integrate-project.md
-            - name: Korzystanie ze szczegółowych danych finansowych
+            - name: Korzystanie z rozwiązania Finance Insights
               items:
                 - name: Propozycje budżetowe
                   href: finance-insights/budget-proposals.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Usługa Regulatory Configuration Service — usuwanie środowiska RCS
+                      href: localizations/rcs-delete-environment.md
                     - name: Usługa Regulatory Configuration Service — wycofanie magazynu usługi Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Fakturowanie elektroniczne
@@ -1524,13 +1526,17 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista sprzedaży do UE
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Zjednoczone Królestwo — raportowanie
+                          items:
+                            - name: Przygotowanie do integracji z Zamianą podatku na format cyfrowy na potrzeby VAT
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Aktualizacje wymagane przepisami prawa
               href: localizations/regulatory-updates.md
             - name: Australia
               items:
                 - name: Australia — omówienie
                   href: localizations/australia.md
-                - name: Oświadczenie o działalności gospodarczej (BAS)
+                - name: Oświadczenie o działalności gospodarczej (Australia)
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Dodawanie pól raportu i generowanie deklaracji BAS
                   href: localizations/tasks/add-bas-report-boxes.md
@@ -3176,6 +3182,8 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Rejestry podatku od zadłużenia rozrachunków z dostawcami i odpisy zadłużeń
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Rezerwy nieściągalnych długów w rozrachunkach z odbiorcami
+                      href: localizations/rus-bad-debts.md
             - name: Arabia Saudyjska
               items:
                 - name: Arabia Saudyjska — omówienie
@@ -3292,8 +3300,6 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Konfigurowanie grup podatkowych do opłaty zwrotnej VAT
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Zamiana podatku na format cyfrowy na potrzeby VAT
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Statystyka raportu wskazówek dotyczących płatności
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Stany Zjednoczone
@@ -3665,6 +3671,12 @@
               items:
                 - name: Język formuł
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Obsługiwane typy danych dla formuł raportowania elektronicznego
+                  items:
+                    - name: Pierwotne typy danych
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Złożone typy danych
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funkcje
                   items:
                     - name: Kontener
@@ -3929,12 +3941,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
             - name: Projektowanie formatów modułu Raportowanie elektroniczne w celu generowania wychodzących dokumentów w różnych formatach
               items:
+                - name: Projektowanie konfiguracji do generowania raportów w formacie OPENXML
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                 - name: Konfiguracje projektu w celu generowania dokumentów wychodzących w formacie programu Excel
                   items:
                     - name: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Przykład generowania raportów w formacie OPENXML
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Dynamiczne dodawanie kolumn do raportów programu Excel jako poziomo rozszerzalnych zakresów
@@ -4211,12 +4223,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Aktualizacja Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Aktualizacja Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
                     - name: Delegowanie tworzenia miejsca docelowego modułu Raportowanie elektroniczne do fabryki w niestandardowym miejscu docelowym
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                    - name: Implementacja niestandardowego miejsca docelowego dla wygenerowanych dokumentów
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Inicjowanie wartości źródła danych typu USER INPUT PARAMETER z kodu źródłowego
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Aplikacja mobilna

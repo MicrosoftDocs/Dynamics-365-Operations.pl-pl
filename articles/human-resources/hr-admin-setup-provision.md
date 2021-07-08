@@ -1,8 +1,8 @@
 ---
-title: Aprowizowanie rozwiązania Human Resources
-description: Ten artykuł przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
+title: Inicjowanie obsługi administracyjnej rozwiązania Human Resources
+description: Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,28 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193731"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248828"
 ---
-# <a name="provision-human-resources"></a>Aprowizowanie rozwiązania Human Resources
+# <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ten artykuł przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. Temat ten opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan rozwiązania Human Resources, a nie jesteś w stanie wykonać kroków opisanych w tym artykule, skontaktuj się z pomocą techniczną.
+Ten temat przeprowadzi użytkownika przez proces inicjacji nowego środowiska produkcyjnego dla oprogramowania Microsoft Dynamics 365 Human Resources. Temat ten opiera się na założeniu, że użytkownik dokonał zakupu aplikacji Human Resources u dostawcy rozwiązań chmurowych (CSP) lub w ramach umowy na architekturę przedsiębiorstwa (EA). Jeśli masz już licencję na oprogramowanie Microsoft Dynamics 365 uwzględniającą plan rozwiązania Human Resources, a nie jesteś w stanie wykonać kroków opisanych w tym artykule, skontaktuj się z pomocą techniczną.
 
 Aby rozpocząć, administrator globalny powinien się zarejestrować w usłudze [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) i utworzyć nowy projekt programu Human Resources. O ile problemy z licencją nie umożliwią zainicjowania modułu Human Resources, wsparcie działu pomocy technicznej ani przedstawicieli Dynamics Service Engineering (DSE) nie jest wymagane.
+
+## <a name="provision-a-human-resources-trial-environment"></a>Inicjowanie obsługi środowiska próbnego Human Resources
+
+Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 
+
+Środowiska wersji zapoznawczych nie są one przeznaczone do używania jako środowiska produkcyjne. Są one ograniczone do 60-dniowego okresu próbnego. Po wygaśnięciu okresu próbnego środowisko i wszystkie znajdujące się w nim dane zostają usunięte i nie można ich odzyskać. Środowisko nie może zostać przekształcone w środowisko piaskownicy lub produkcyjne. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="plan-human-resources-environments"></a>Planuj środowiska zasobów ludzkich
 
@@ -94,8 +100,6 @@ Po utworzeniu projektu LCS można zainicjować moduł Human Resources w środowi
 
     > [!NOTE]
     > Jeszcze przez spełnienie wymagań końcowych można wdrożyć wystąpienie testowe rozwiązania Human Resources w projekcie. Korzystając z tego wystąpienia, można testować swoje rozwiązanie do momentu sfinalizowania zakupu. W przypadku korzystania z nowego środowiska do testowania należy powtórzyć tę procedurę, aby utworzyć środowisko produkcyjne.
-
-    > Można rozważyć wykorzystanie bezpłatnych 60 dni [Human Resources w środowisku próbnym](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Nie są one przeznaczone do używania jako środowiska produkcyjne. Należy zauważyć, że po wygaśnięciu wersji próbnej środowiska po upływie 60 dni wszystkie zawarte w niej dane są usuwane nie można ich odzyskać. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
 ## <a name="select-a-power-apps-environment"></a>Wybierz środowisko Power Apps
 

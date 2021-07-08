@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193888"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271215"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -123,8 +123,6 @@ Horyzont czasowy automatycznego ustalania jest definiowany przez liczbę dni okr
 Jeśli dla wszystkich wcześniej wymienionych horyzontów czasowych zostanie ustawiona wartość *0* (zero), automatyczne ustalanie zostanie wyłączone dla odpowiednich towarów.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Ustalanie zamówień planowanych przy użyciu zapytania
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Ustalanie oparte na zapytaniu umożliwia planowanie ustalania na podstawie wcześniej zdefiniowanych kryteriów. W przeciwieństwie do automatycznego ustalania, proces ustalania oparty na zapytaniu umożliwia automatyczne ustalanie różnych podzestawów zamówień w różnych punktach w czasie. Ponadto można używać operacji ręcznych lub automatycznych do określania różnych typów zamówień planowanych. Można także sprawdzić w podglądzie, które zamówienia są wybierane na podstawie ustawień. W związku z tym można potwierdzić, że wybór spełnia oczekiwania.
 

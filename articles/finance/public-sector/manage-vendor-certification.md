@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 06f4a0feda82d20e5ec01fd75e4bb8a597a6d09b
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: b6e4194a4b3463476a32679ff11b35affc131faa
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5989023"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270511"
 ---
 # <a name="maintain-vendor-certification"></a>Obsługa certyfikacji dostawcy
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano kroki, których dostawcy mogą używać do obsługi certyfikacji za pomocą **obszaru współpracy z dostawcami**. Przykładami mogą być certyfikaty Woman Business Enterprise (WBE) lub Leadership in Energy and Environment Design (LEED). Dostawcy muszą wprowadzać informacje o certyfikacjach w obszarze roboczym **Informacje o dostawcy**. W tym miejscu dostawcy będą wybierać opcję **Więcej szczegółów**, a następnie **Certyfikaty**.
 

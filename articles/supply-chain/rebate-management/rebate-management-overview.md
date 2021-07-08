@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020466"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271060"
 ---
 # <a name="rebate-management-module-overview"></a>Omówienie modułu Zarządzanie rabatami
 
@@ -70,7 +70,7 @@ Rabaty można konfigurować na podstawie wielu różnych parametrów. Można je 
 
 Wyniki obliczeń rabatów mogą być również pomniejszane o inne rabaty, w zależności od tego, czy rabat jest ustawiony do obliczania na podstawie kwoty netto.
 
-Ze strony dostawcy rabaty mogą obliczać cenę na podstawie reguły FIFO, ostatniej ceny zakupu, średniej ceny zakupu lub ceny sprzedaży.
+Ze strony dostawcy rabaty oparte na zamówieniach sprzedaży mogą obliczać cenę na podstawie reguły FIFO, ostatniej ceny zakupu, średniej ceny zakupu lub ceny sprzedaży.
 
 ## <a name="rebate-target-transactions"></a>Transakcje docelowe rabatu
 
@@ -84,11 +84,12 @@ Wyjścia towarów tworzy bezpłatne zamówienie sprzedaży pozycji dla rabatów 
 
 Dokładność i dokładność obliczeń rabatów zależy od kombinacji powiązanych transakcji, częstotliwości obliczeń, podstawy obliczania oraz wybranej metody obliczania. Rezerwy na rabaty mogą służyć do naliczania wartości zaksięgowanych i roszczeń.
 
-Rezerwami można zarządzać codziennie lub co miesiąc. Jednak funkcja może przydzielić lub zapłacić rabat albo otrzymać jego płatność z dowolną określoną częstotliwością. Użytkownicy mogą w dowolnym momencie skorygować plan lub kwoty płatności.
+Rezerwy mogą być zarządzane codziennie, tygodniowo, miesięcznie lub według niestandardowego okresu. Jednakże funkcjonalność może przydzielać lub wypłacać rabat, lub otrzymywać jego wypłatę, z dowolną określoną częstotliwością, która jest taka sama lub dłuższa niż częstotliwość dostarczania. Odpis korzysta z tej samej częstotliwości co rabat. Użytkownicy mogą w dowolnym momencie skorygować plan lub kwoty płatności.
 
-Użytkownicy nie muszą już obsługiwać transakcji lub aprowizacji w dwóch krokach. Aprowizacje i odpisy są księgowane bezpośrednio w księdze. Ponadto faktury korygowane mogą być tworzone automatycznie. W związku z tym istnieje pełna integracja z rozrachunkami z dostawcami i rozrachunkami z odbiorcami. Podczas przetwarzania obliczenia uwzględniają rabaty rozliczenie, zapłacone faktury, rabaty handlowe i istniejące faktury korygujące, aby zagwarantować dokładne obliczenie kwot i wartości.
+Użytkownicy nie muszą już obsługiwać transakcji lub aprowizacji w dwóch krokach. Aprowizacje i odpisy są księgowane bezpośrednio w księdze. Ponadto faktury korygowane mogą być tworzone automatycznie. W związku z tym istnieje pełna integracja z rozrachunkami z dostawcami i rozrachunkami z odbiorcami. Podczas przetwarzania obliczenia mogą uwzględniać rabaty rozliczenie, zapłacone faktury, rabaty handlowe i istniejące faktury korygujące, aby zagwarantować dokładne obliczenie kwot i wartości.
 
-Podczas obliczania rabatów proces tworzy transakcje, które można przeglądać przed zaksięgowaniem. Następnie można utworzyć arkusz, notę kredytową lub transakcję debetową. Oddzielny proces księguje transakcje rabatów i potrąceń. Raporty i listy transakcji można uzyskać w celu zapewnienia zgodności, efektywności i przezroczystości.
+Podczas obliczania rabatów proces tworzy transakcje, które można przeglądać przed zaksięgowaniem. W odrębnym procesie księgowane są transakcje związane z zarządzaniem rabatami. Dziennik, nota uznaniowa lub transakcja obciążeniowa mogą być następnie utworzone podczas księgowania proponowanych transakcji. Raporty i listy transakcji można uzyskać w celu zapewnienia zgodności, efektywności i przezroczystości.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Gwarantowane płatności tantiem
 

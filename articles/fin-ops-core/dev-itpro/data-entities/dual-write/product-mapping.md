@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941203"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306396"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -124,7 +124,7 @@ Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary p
 
 Jeśli produkt ma różne wymiary produktu (np. produkt główny ma rozmiar i kolor jako wymiary produktu), każdy odrębny produkt (każdy wariant produktu) jest definiowany jako kombinacja tych wymiarów produktu. Na przykład numer produktu B0001 to bardzo mała czarna koszulka, a numer produktu B0002 jest małą czarną koszulką. W takim przypadku definiowane są istniejące kombinacje wymiarów produktu. Na przykład koszulka z powyższego przykładu może być bardzo mała i czarna, mała i czarna, średnia i czarna, lub duża i czarna, ale nie może być bardzo duża i czarna. Innymi słowy, wymiary produktów, które może pobrać produkt główny produktu, są określone, a warianty mogą być zwalniane na podstawie tych wartości.
 
-Aby śledzić wymiary produktu, które może przyjąć produkt główny, w Dataverse dla każdego wymiaru produktu są tworzone i mapowane następujące tabele. Aby uzyskać więcej informacji, zobacz [Omówienie informacji o produktach](../../../supply-chain/pim/product-information.md).
+Aby śledzić wymiary produktu, które może przyjąć produkt główny, w Dataverse dla każdego wymiaru produktu są tworzone i mapowane następujące tabele. Aby uzyskać więcej informacji, zobacz [Omówienie informacji o produktach](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

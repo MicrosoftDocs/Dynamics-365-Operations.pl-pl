@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019058"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292744"
 ---
 # <a name="containerization"></a>Konteneryzacja
 
@@ -108,6 +108,8 @@ Aby skonfigurować szablon kompilacji kontenera, należy wykonać następujące 
 
       - **Zapakuj do wszystkich wolnych kontenerów** — System sprawdza, czy wiersz alokacji mieści się w dowolnym kontenerze, który został utworzony podczas cyklu tworzenia kontenerów.
       - **Zapakuj tylko do obecnego kontenera** — System sprawdza tylko, czy wiersza alokacji mieści się w kontenerze ostatnio utworzonym.
+
+    Aby uzyskać więcej informacji i przykładów, które pokazują sposób pracy ze strategiami pakowania kontenerów, zobacz [strategie pakowania kontenerów](container-packing-strategy-overview.md).
 
 1. Aby skonfigurować reguły dla wierszy alokacji pakowania w kontenerach, wybierz **Przerwy logiki łączenia**. Na przykład można utworzyć regułę, która będzie pozwalać pracownikom na pakowanie wierszy alokacji dla dwóch różnych elementów w tym samym kontenerze. Aby zdefiniować regułę mieszania, wykonaj następujące kroki:
 

@@ -2,7 +2,7 @@
 title: Śledzenie wykonywania formatów raportowania elektronicznego w celu rozwiązywania problemów z wydajnością
 description: Ten temat zawiera informacje dotyczące korzystania z funkcji śledzenia wydajności w module Raportowanie elektroniczne (ER) w celu rozwiązywania problemów z wydajnością.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944660"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295580"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -119,12 +119,27 @@ Odpowiednie wersje konfiguracji modelu danych i mapowania modelu są automatyczn
 2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
 3. W oknie dialogowym **Parametry użytkownika** w sekcji **Śledzenie wykonywania** wykonaj następujące czynności:
 
-    1. W polu **Format śladu wykonania** wybierz opcję **Format śladu debugowania**, aby rozpocząć zbieranie szczegółowych informacji dotyczących wykonania formatu ER. Po wybraniu tej wartości ślad wydajności będzie zbierać informacje o czasie poświęcanym na następujące akcje:
+    1. W polu **Format śladu wykonania** możesz określić format generowanego śladu wydajności, w którym są przechowywane szczegóły dotyczące wykonania, w odniesieniu do formatu ER i elementów mapowania:
 
-        - Uruchamianie poszczególnych źródeł danych w mapowaniu modelu, które są wywoływane w celu uzyskania danych
-        - Przetwarzanie poszczególnych elementów formatu w celu wprowadzenia danych w generowanych danych wyjściowych
+        - **Format śladu debugowania** – wybierz tę wartość, jeśli planujesz interaktywnie uruchomić format ER, który ma krótki czas wykonania. Następnie rozpoczyna się zbieranie szczegółów dotyczących wykonania formatu ER. Po wybraniu tej wartości ślad wydajności będzie zbierać informacje o czasie poświęcanym na następujące akcje:
 
-        W polu **Format śladu wykonania** możesz określić format generowanego śladu wydajności, w którym są przechowywane szczegóły dotyczące wykonania, w odniesieniu do formatu ER i elementów mapowania. Wybranie opcji **Format śladu debugowania** jako wartości umożliwia analizę zawartości śladu w projektancie operacji ER oraz wyświetlenie formatu lub elementów mapowania wymienionych w śladzie.
+            - Uruchamianie poszczególnych źródeł danych w mapowaniu modelu, które są wywoływane w celu uzyskania danych
+            - Przetwarzanie poszczególnych elementów formatu w celu wprowadzenia danych w generowanych danych wyjściowych
+
+            W przypadku wybrania wartości **Format śladu debugowania** można analizować zawartość śladu w konstruktorze operacji ER. Tam można zobaczyć format ER lub elementy mapowania, które są wymienione w śladzie.
+
+        - **Zagregowany format śledzenia** – wybierz tę wartość, jeśli planujesz uruchomić format ER, który ma długi czas wykonania w trybie wsadowym. Następnie rozpoczyna się zbieranie zagregowanych szczegółów dotyczących wykonania formatu ER. Po wybraniu tej wartości ślad wydajności będzie zbierać informacje o czasie poświęcanym na następujące akcje:
+
+            - Uruchamianie poszczególnych źródeł danych w mapowaniu modelu, które są wywoływane w celu uzyskania danych
+            - Uruchamianie poszczególnych źródeł danych w mapowaniu formatu, które są wywoływane w celu uzyskania danych
+            - Przetwarzanie poszczególnych elementów formatu w celu wprowadzenia danych w generowanych danych wyjściowych
+
+            Wartość **Format śladu zagregowanego** jest dostępna w Microsoft Dynamics 365 Finance w wersji 10.0.20 i nowszych.
+
+            W projektancie formatu ER i projektancie odwzorowania modelu ER możesz zobaczyć całkowity czas wykonania dla pojedynczego komponentu. Dodatkowo, ślad zawiera szczegóły dotyczące wykonania, takie jak liczba wykonań oraz minimalny i maksymalny czas pojedynczego wykonania.
+
+            > [!NOTE]
+            > To śledzenie jest zbierane na podstawie ścieżki śledzonych składników. Dlatego statystyki mogą być niepoprawne, gdy pojedynczy komponent nadrzędny zawiera kilka nienazwanych komponentów podrzędnych lub gdy kilka komponentów podrzędnych ma tę samą nazwę.
 
     2. Wybór ustawienia **Tak** następujących opcji umożliwia zbieranie szczegółów wykonania mapowania modelu ER i składników formatu ER:
 

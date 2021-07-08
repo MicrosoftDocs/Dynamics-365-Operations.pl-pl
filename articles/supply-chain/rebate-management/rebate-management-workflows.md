@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: ee342de6d069131e230120c5d65aef58da8e632a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8436842b4f07ba000649075198bdef43ad508f8f
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020394"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270964"
 ---
 # <a name="rebate-management-deal-workflows"></a>Przepływy pracy mające zastosowanie do umów z modułu Zarządzanie rabatami
 
@@ -27,12 +27,12 @@ ms.locfileid: "6020394"
 
 Aby zatwierdzić transakcje rabatowe, w zarządzaniu rabatami jest używana ta sama platforma przepływu pracy co inne aplikacje Finance and Operations. Dwa procesy zadań są skojarzone z każdym przepływem pracy:
 
-- Jeden element przepływu pracy aktywuje umowę, dzięki czemu użytkownik lub proces przepływu pracy może zatwierdzić transakcje.
 - Jeden element przepływu pracy zatwierdza umowę.
+- Jeden element przepływu pracy aktywuje umowę, dzięki czemu użytkownik lub proces przepływu pracy może zatwierdzić transakcje.
 
 Aby można było użyć umowy rabatowej, należy ją aktywnego w module **Zarządzanie rabatami**. Aby aktywować umowę, należy najpierw utworzyć i skonfigurować *Przepływ pracy umowy w zarządzaniu rabatami*.
 
-Po uaktywnieniu przepływu pracy w celu zarządzania rabatami użytkownicy nie mogą ręcznie zatwierdzać transakcji. Przepływ pracy musi być zawsze używany.
+Użytkownicy nie mogą ręcznie zatwierdzać transakcji. Przepływ pracy musi być zawsze używany.
 
 ## <a name="create-and-manage-rebate-management-deal-workflows"></a>Twórz przepływy pracy związane z zarządzaniem rabatami i zarządzaj nimi
 
@@ -42,4 +42,17 @@ Aby pracować z przepływami pracy umów w zarządzaniu rabatami, przejdź do **
 
 Aby aktywować umowę za pomocą przepływu pracy, otwórz umowę (na przykład na stronie **Wszystkie umowy zarządzania rabatami**). W okienku akcji wybierz **Przepływ pracy \> Prześlij**. Po przetworzeniu i zatwierdzeniu nowej umowy za pomocą przepływu pracy będzie ona aktywna i gotowa do użycia.
 
-Po aktywowaniu umowy nie można zmienić jej konfiguracji. Jeśli trzeba zmienić aktywną umowę, ją dezaktywować, a następnie utworzyć nową umowę. Jeśli nowa umowa przypomina starą umowę, można ją utworzyć, kopiując starą umowę.
+Po aktywowaniu umowy nie można zmienić większości jej konfiguracji. Jeśli trzeba zmienić aktywną umowę, najpierw trzeba ją dezaktywować, a następnie utworzyć nową umowę. Jeśli nowa umowa przypomina starą umowę, można ją utworzyć, kopiując starą umowę.
+
+Po aktywowaniu umowy można zmieniać następujące ustawienia:
+
+- Uzgodnienie według
+- Gwarancja skumulowana
+- Profil księgowania
+- Profil księgowania dla gwarancji
+- Notatki dotyczące dokumentu
+- Waluta
+- Data rozpoczęcia
+- Data zakończenia
+
+Ponadto wiersze rabatów mogą zostać usunięte.

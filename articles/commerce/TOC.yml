@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Rozwiązanie Commerce w wersji 10.0.18 (maj 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.17 (kwiecień 2021)
-                      href: get-started/whats-new-commerce-10-0-17.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -244,7 +242,7 @@
                   href: arch-auth-flow.md
                 - name: Wymagania dotyczące wersji składników rozwiązania Dynamics 365 Commerce
                   href: arch-component-versioning.md
-                - name: Architektura silnika rozwiązania Commerce bez kierownictwa
+                - name: Architektura handlowa bez kierownictwa
                   href: dev-itpro/retail-server-architecture.md
                 - name: Wybieranie topologii w sklepie
                   href: dev-itpro/retail-in-store-topology.md
@@ -1248,6 +1246,16 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: Konfigurowanie i wdrażanie lokalizacji rozwiązania Commerce dla Brazylii
                   href: localizations/latam-bra-deployment.md
+                - name: Funkcje dokumentu fiskalnego NFC-e w punkcie sprzedaży rozwiązania Commerce dla Brazylii
+                  href: localizations/latam-bra-nfce.md
+                - name: Zarządzanie informacjami dotyczącymi klienta w punkcie sprzedaży dla Brazylii
+                  href: localizations/latam-bra-customer-information.md
+                - name: Anulowanie i zwracanie dokumentów NFC-e w punkcie sprzedaży rozwiązania Commerce dla Brazylii
+                  href: localizations/latam-bra-nfce-cancel-return.md
+                - name: Odroczona rejestracja dokumentów NFC-e wydanych w awaryjnym trybie offline
+                  href: localizations/latam-bra-nfce-contingency-mode.md
+                - name: Księgowanie brazylijskich dokumentów fiskalnych za pośrednictwem sprawozdań detalicznych w centrali rozwiązania Commerce
+                  href: localizations/latam-bra-retail-statements.md
             - name: Europa Wschodnia
               items:
                 - name: Wspólne
@@ -1458,6 +1466,12 @@
               items:
                 - name: Język formuł
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
+                - name: Obsługiwane typy danych dla formuł raportowania elektronicznego
+                  items:
+                    - name: Pierwotne typy danych
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/commerce/toc.json
+                    - name: Złożone typy danych
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/commerce/toc.json
                 - name: Funkcje
                   items:
                     - name: Kontener
@@ -2002,12 +2016,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Aktualizacja Application Update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
+                    - name: Aktualizacja Application Update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
                     - name: Delegowanie tworzenia miejsca docelowego modułu Raportowanie elektroniczne do fabryki w niestandardowym miejscu docelowym
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Implementacja niestandardowego miejsca docelowego dla wygenerowanych dokumentów
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: Inicjowanie wartości źródła danych typu USER INPUT PARAMETER z kodu źródłowego
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Aplikacja mobilna Finance and Operations (Dynamics 365)

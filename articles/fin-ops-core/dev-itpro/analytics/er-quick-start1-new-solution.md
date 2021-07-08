@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224041"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304400"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -185,7 +185,7 @@ Wykonując kroki opisane w sekcji [Importowanie nowej konfiguracji modelu danych
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importowanie nowej konfiguracji modelu danych
 
-1. Pobierz [model kwestionariuszy.wersja.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) i zapisz go na komputerze lokalnym.
+1. Pobierz [model kwestionariuszy.wersja.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) i zapisz go na komputerze lokalnym.
 2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 3. W obszarze roboczym **raportowanie elektroniczne** wybierz **konfiguracje raportowania**.
 4. W okienku akcji wybierz opcję **Wymiana** \> **Załaduj z pliku XML**.
@@ -300,7 +300,7 @@ Wykonując kroki opisane w następujaćej sekcji [Importowanie nowej konfiguracj
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importowanie nowej konfiguracji mapowania modelu
 
-1. Pobierz [Mapowanie kwestionariuszy.wersja.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) i zapisz go na komputerze lokalnym.
+1. Pobierz [Mapowanie kwestionariuszy.wersja.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) i zapisz go na komputerze lokalnym.
 2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 3. W obszarze roboczym **raportowanie elektroniczne** wybierz **konfiguracje raportowania**.
 4. W okienku akcji wybierz opcję **Wymiana** \> **Załaduj z pliku XML**.
@@ -366,7 +366,7 @@ Należy skonfigurować źródła danych, aby uzyskać dostęp do tabel aplikacji
     2. Wybierz opcję **Dodaj**.
     3. W oknie dialogowym rozwijanym w polu **Nazwa** wprowadź **\$ResultGroup**.
     4. Wybierz opcję **Edytuj formułę**.
-    5. W [Edytorze formuł ER](general-electronic-reporting-formula-designer.md) w polu **Formuła** wprowadź **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** do używania [ścieżki](er-formula-language.md#paths) relacji jeden-do-wielu między tabelami KMCollection i KMQuestionResultGroup.
+    5. W [Edytorze formuł ER](general-electronic-reporting-formula-designer.md) w polu **Formuła** wprowadź **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** do używania [ścieżki](er-formula-language.md#Paths) relacji jeden-do-wielu między tabelami KMCollection i KMQuestionResultGroup.
     6. Wybierz przycisk **Zapisz** i zamknij edytor formuł.
     7. Wybierz przycisk **OK**, aby dodać nowe pole obliczeniowe.
 
@@ -547,7 +547,7 @@ Stan wersja 1.1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **U
 
 Struktura ER wykorzystuje predefiniowane szablony do generowania raportów w formatach Microsoft Office (skoroszyty programu Excel lub dokumenty Word). Podczas generowania wymaganego raportu szablon jest wypełniany wymaganymi danymi zgodnie ze skonfigurowanym przepływem danych. Dlatego należy najpierw zaprojektować szablon raportu niestandardowego. Ten szablon musi być zaprojektowany jako skoroszyt programu Excel, którego struktura reprezentuje układ raportu niestandardowego. Należy nazwać każdy element programu Excel, który ma być wypełniony wymaganymi danymi.
 
-1. Pobierz [Szablon raportu kwestionariusza.xslx](https://go.microsoft.com/fwlink/?linkid=851448) i zapisz go na komputerze lokalnym.
+1. Pobierz [Szablon raportu kwestionariusza.xslx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) i zapisz go na komputerze lokalnym.
 2. Otwórz plik w programie Excel i przejrzyj strukturę skoroszytu.
 
 Jak pokazuje poniższa ilustracja, pobrany szablon został zaprojektowany w celu wydrukowania określonych kwestionariuszy, które zawierają pytania zawarte w kwestionariuszu wraz z odpowiednimi odpowiedziami.
@@ -572,7 +572,7 @@ Wykonując kroki opisane w sekcji [Import zaprojektowanej konfiguracji formatu](
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Import zaprojektowanej konfiguracji formatu
 
-1. Pobierz [Kwestionariusze formatu.wersja.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) i zapisz go na komputerze lokalnym.
+1. Pobierz [Kwestionariusze formatu.wersja.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) i zapisz go na komputerze lokalnym.
 2. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 3. W obszarze roboczym **raportowanie elektroniczne** wybierz **konfiguracje raportowania**.
 4. W okienku akcji wybierz opcję **Wymiana** \> **Załaduj z pliku XML**.
