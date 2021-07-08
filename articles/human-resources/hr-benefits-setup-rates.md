@@ -2,7 +2,7 @@
 title: Konfigurowanie stawek
 description: W programie Microsoft Dynamics 365 Human Resources stawki decydują o tym, jaki udział w finansowaniu świadczeń mają pracodawcy i pracownicy.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054987"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266664"
 ---
 # <a name="configure-rates"></a>Konfigurowanie stawek
 
@@ -46,7 +46,7 @@ Stawki służą do określania, ile pracownicy i pracodawcy płacą za każde ś
    | **Data ważności** | Data zakończenia obowiązywania stawki. Wartość domyślna to 31.12.2154, czyli nigdy. |
    | **Użyj warstw** | Warstwa, która ma być używana do obliczania stawki świadczenia. Pojedyncza warstwa dla jednowarstwowej stawki świadczenia lub Podwójna warstwa dla dwuwarstwowej stawki świadczenia. Przykładem podwójnej warstwy jest warstwa oparta na płci i wieku. |
    | **Częstotliwość płatności** | Częstotliwość płatności określająca, jak często składka za świadczenie o podanej stawce jest wpłacana dostawcy świadczeń. Jeśli na przykład częstotliwość płatności wynosi Miesięcznie, to stawka świadczenia reprezentuje miesięczną kwotę płatności. |
-   | **Zaokrąglanie stawki częstotliwości płac** | Metoda zaokrąglania stawki: Standardowa lub Obcięta. |
+   | **Zaokrąglanie stawki częstotliwości płac** | Dostępne metody zaokrąglania kursu to: Standardowe, Obcięte, Normalne, W dół oraz Zaokrąglenie w górę. </br></br><ul><li>**Standard** — zawsze zaokrąglaj. Na przykład 10,611 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,23. </li><li>**Obcięte** — zawsze zaokrąglaj w dół. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,24. </li><li>**Normalne** — wartości dziesiętne kończące się lub większe niż 5 będą zaokrąglać w 0. Wartości dziesiętne kończące się w lub mniejsze niż 4 będą zaokrąglane w stronę zera. Na przykład 10,615 zaokrągli się do 10,62. Zaokrągla się do -10,235 do -10,24. Zaokrągla się do -10,614 do -10,61. Zaokrągla się do -10,234 do -10,23. </li><li>**W dół** — zaokrąglaj w stronę zera. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,23. </li><li>**Zaokrąglanie w górę** — zaokrąglanie w górę od zera. Na przykład 10,619 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,24. |
    | **Kwota pracownika etatowego osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |
    | **Kwota pracodawcy osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |
    | **Kwota pracownika etatowego osoby palącej** | Kwota, jakiej dostawca świadczeń żąda za pracownika, który pali papierosy. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |

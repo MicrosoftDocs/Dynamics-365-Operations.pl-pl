@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814809"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270794"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Zastępowanie domyślnej zasady rezerwacji materiałów w produkcji
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Funkcja *zastępowania domyślnej rezerwacji produkcji* umożliwia ustawienie reguły domyślnej rezerwacji dla każdej grupy modeli towaru. Dlatego w przypadku każdego towaru, który jest częścią formuły listy składowej (BOM) produkcji lub zamówienia partii, mogą być automatycznie stosowane różne zasady rezerwacji. Można określić, czy każda grupa modeli towaru ma zastępować zasadę domyślną rezerwacji ustawioną dla zamówienia oraz jaką zasadę rezerwacji należy w zamian stosować (*ręcznie*, *szacowanie*, *planowanie*, *zwalnianie* czy *rozpoczynanie*).
 
@@ -37,7 +36,7 @@ Jeśli na przykład dla tych produktów są tworzone surowce lub składniki wyma
 Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
 - **Moduł:** *Kontrola produkcji*
-- **Nazwa funkcji:** *(Wersja zapoznawcza) Zastępowanie domyślnej rezerwacji produkcji*
+- **Nazwa funkcji:** *Zastępowanie domyślnej rezerwacji produkcji*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Przypisywanie zasad rezerwacji produkcji do grupy modeli pozycji
 

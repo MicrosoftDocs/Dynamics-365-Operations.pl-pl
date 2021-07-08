@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: cf009e32f8c137e235793d80bf8448a5f55988bd
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dc41df33d01c3c8523afb6d8f16bfec88e0c42b8
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020442"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271036"
 ---
 # <a name="rebate-management-parameters"></a>Parametry modułu Zarządzanie rabatami
 
@@ -27,7 +27,7 @@ ms.locfileid: "6020442"
 
 Strona **Parametry zarządzania rabatami** służy do definiowania ustawień stosowanych w module **Zarządzanie rabatami**. Te ustawienia mające wpływ na księgowanie, aktualizacje stanu, sekwencje numerów i inne zachowania. Ustawienia na tej stronie są udostępniane w różnych firmach i mogą być modyfikowane przez użytkowników z odpowiednimi uprawnieniami zabezpieczeń.
 
-Aby otworzyć stronę **Parametry zarządzania rabatami**, przejdź do **Rabaty i odpisy \> Ustawienia \> Rebate management parameters**. Następnie ustaw pola, które są opisane w kolejnych podrozdziałach.
+Aby otworzyć stronę **Parametry zarządzania rabatami**, przejdź do **Zarządzanie rabatem \> Ustawienia \> Rebate management parameters**. Następnie ustaw pola, które są opisane w kolejnych podrozdziałach.
 
 ## <a name="rebate-management-tab"></a>Karta Zarządzanie rabatami
 
@@ -36,12 +36,12 @@ W poniższej tabeli opisano pola dostępne na karcie **Zarządzanie rabatami** n
 | Pole | opis |
 |---|---|
 | Stan domyślny | Umożliwia wybór domyślnego stanu wszystkich nowych transakcji. Aby zdefiniować zestaw wartości stanu dostępnych do wyboru, należy użyć strony [**Stany rabatów**](rebate-statuses.md). |
-| Przetwarzanie według wymiaru | Umożliwia wybór, czy transakcje dotyczące udostępniania, rabatów i odpisów mają być przetwarzane według wymiaru finansowego. Gdy ta opcja jest włączona, system używa wymiarów finansowych dla transakcji źródłowych. |
+| Przetwarzanie według wymiaru | Umożliwia wybór, czy transakcje dotyczące udostępniania, rabatów i odpisów mają być przetwarzane według wymiaru finansowego. Gdy opcja jest włączona, system używa wymiarów finansowych z transakcji źródłowych w transakcjach docelowych. |
 | Sprawdź, czy wcześniej zaksięgowano | <p>Umożliwia wybranie zachowania systemu w przypadku, gdy niezaksięgowane transakcje rabatowe są przetwarzane więcej niż raz dla tego samego okresu:</p><ul><li>**Ostrzeżenie** — system umożliwia użytkownikom zastępowanie wierszy oryginalnych transakcji, ale wyświetlane jest ostrzeżenie.</li><li>**Błąd** — System uniemożliwia użytkownikom zastępowanie wierszy oryginalnych transakcji i wyświetlany jest komunikat o błędzie. |
 | Automatyczne księguj arkusze | Pozwala określić, czy system ma automatycznie księguje proponowane arkusze. Te arkusze obejmują arkusze dzienne, które są używane do rezerw i potrąceń od odbiorcy, a także arkusze faktur podatkowych od dostawców. |
 | Automatycznie publikuj faktury niezależne | Pozwala określić, czy system ma automatycznie księguje faktury niezależne. Ta opcja dotyczy wyłącznie faktur tekstowych, dla których typem płatności są *potrącenia odbiorcy faktury podatkowej*. |
-| Odwołanie do zamówienia pozycji rabatowej | Zaznacz odwołanie do rabatu, które ma być rabatem na zamówieniach sprzedaży i zakupu generowanych w ramach procesu rabatowego (*Brak*, *Umowa rabatowa* i potrącenia, *Numer rabatu i potrącenia*, *Numer transakcji rabatu* lub *Notatki o dokumentach*). |
-| Używanie procesu odbioru | <p>Ustaw tę opcję na wartość *Tak*, aby użyć porcesu odbioru. W ten sposób można oznaczyć transakcje, które w ramach zarządzania rabatami tworzy jako „odebrane” lub „nieodebrane”, a następnie księgować tylko te transakcje, których dotyczy roszczenie.</p><p>Na przykład rabaty są obliczane dla miesięcznych transakcji, ale odbiorca pozostał na to dwa dni. W takim przypadku transakcje niepobrane zostaną utworzone ponownie przy następnym uruchomieniu funkcji *procesu* dla tego samego okresu.</p><p>Jeśli zostanie ustawiona opcja *Nie*, wszystkie transakcje roszczenia zostaną zaksięgowane.</p> |
+| Odwołanie do zamówienia pozycji rabatowej | Zaznacz odwołanie do rabatu, które ma być rabatem na zamówieniach sprzedaży i zakupu generowanych w ramach procesu rabatowego (*Brak*, *Umowa zarządzania rabatem* i potrącenia, *Numer zarządzania rabatem*, *Numer transakcji rabatu* lub *Notatki o dokumentach*). |
+| Używanie procesu odbioru | <p>Ustaw tę opcję na wartość *Tak*, aby użyć porcesu odbioru. W ten sposób można oznaczyć transakcje, które w ramach zarządzania rabatami tworzy jako „odebrane” lub „nieodebrane”, a następnie księgować tylko te transakcje, których dotyczy roszczenie.</p><p>Na przykład rabaty są obliczane dla miesięcznych transakcji, ale odbiorca pozostał na to dwa dni. W takim przypadku transakcje niepobrane zostaną utworzone ponownie przy następnym uruchomieniu funkcji *procesu* dla następnego okresu.</p><p>Jeśli zostanie ustawiona opcja *Nie*, wszystkie transakcje roszczenia zostaną zaksięgowane.</p> |
 | Uwzględnij arkusz typów zamówień | W przypadku umów lub wierszy umów, w których typem transakcji jest *Zamówienie*, ta opcja określa, czy ma być uwzględniane zamówienie sprzedaży typu *Arkusz*. Jeśli te typy zamówień są używane w scenariuszach, w których rabat nie ma jeszcze zastosowania, zapewnia elastyczność. |
 
 ## <a name="number-sequences-tab"></a>Karta Sekwencje numerów
@@ -50,8 +50,8 @@ Karta **Sekwencje numerów** na stronie **Parametry zarządzania rabatami** słu
 
 | Odwołanie | opis |
 |---|---|
-| Umowa rabatowa i potrącenia | Sekwencja numerów przypisuje unikatową wartość klucza do każdej umowy rabatowej. Ten klucz jest używany podczas tworzenia umów. |
-| Numer rabatu i potrącenia | Sekwencja numerów przypisuje unikatową wartość klucza do każdego rabatu. Klucz ten służy do identyfikacji relacji rabatów. |
+| Zarządzanie rabatami — umowa | Sekwencja numerów przypisuje unikatową wartość klucza do każdej umowy rabatowej. Ten klucz jest używany podczas tworzenia umów. |
+| Zarządzanie rabatami — liczba | Sekwencja numerów przypisuje unikatową wartość klucza do każdego rabatu. Klucz ten służy do identyfikacji relacji rabatów. |
 | Numer transakcji rabatu | Sekwencja numerów przypisuje unikatową wartość klucza do każdej transakcji rabatowej. Klucz ten służy do identyfikacji ransakcji rabatów. |
 | Faktura podatkowa | Sekwencja numerów przypisuje unikatową wartość klucza do każdej faktury rabatowej. Ten klucz jest używany podczas automatycznego księgowana arkuszy rabatowych. |
 
