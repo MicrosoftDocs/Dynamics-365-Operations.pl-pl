@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ccf1557d3c95829421b26d5f84750e3d4236c9e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023508"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358225"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Konfigurowanie parametrów podatku TDS w modułach Rozrachunki z dostawcami i Rozrachunki z odbiorcami
 
@@ -38,12 +38,12 @@ W tym temacie wyjaśniono, jak ustawić parametry w rozrachunkach z dostawcami i
     - **Monituj** — użytkownicy otrzymują komunikat z monitem o aktualizację grupy TDS w wierszach zamówienia.
 4. Kliknij przycisk **OK**.
 
-    [![Okno dialogowe aktualizacji wierszy zamówienia](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Okno dialogowe aktualizacji wierszy zamówienia.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Wybierz kolejno pozycje **Tax \> Ustawienia \> Parametry \> Parametry modułu rozrachunków z dostawcami**.
 6. Na karcie **Ogólne**, na skróconej karcie **Podziel na podstawie informacji o dostawie** dla opcji **Dokumentu przyjęcia produktów** ustaw wartość **Tak** daby zakwitować i podzielić przyjęcie produktów, które ma różne adresy dostawy i numery kont podatkowych (TAN). Jeśli ta opcja ma wartość **Nie**, nie można zakłać dokumentu dostawy zakupu, który ma różne adresy dostawy i ten typ.
 7. Ustaw dla **faktury** wartość **Tak**, aby zakturować i podzielić fakturę zakupu, która ma różne adresy dostawy i numer TAN.
 
-    [![Podział na podstawie informacji o dostawie Skrócona karta](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Podział na podstawie informacji o dostawie Skrócona karta.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Zamknij stronę.

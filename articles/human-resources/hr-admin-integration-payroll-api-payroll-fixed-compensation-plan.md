@@ -13,18 +13,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 227082358c59abddd63f4faa4536a8df270a4d80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24f8af4d691c3085c36018c574fa3b917a3d6953
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059095"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314220"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Plan stałych wynagrodzeń listy płac
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dotyczące relacji jednostki Płace stałe plany wynagrodzeń w Dynamics 365 Human Resources.
+W tym temacie opisano encję Plan wynagrodzeń stałych dla Dynamics 365 Human Resources.
+
+### <a name="description"></a>opis
+
+Ta jednostka udostępnia system stałych wynagrodzeń przypisany do danego stanowiska pracownika.
+
+Nazwa fizyczna: mshr_payrollfixedcompensationplanentity.
 
 ## <a name="properties"></a>Właściwości
 
@@ -41,7 +47,7 @@ Ten temat zawiera szczegółowe informacje i przykładowe zapytanie dotyczące r
 | **Waluta**<br>mshr_currency<br>*Ciąg* | Tylko do odczytu <br>Potrzebne |Waluta zdefiniowana dla stałego planu wynagrodzeń   |
 | **Numer pracownika**<br>mshr_personnelnumber<br>*Ciąg* | Tylko do odczytu<br>Potrzebne |Unikalny numer personelu pracownika.  |
 
-**Kwerenda**
+## <a name="example-query"></a>Przykład kwerendy
 
 **Wniosek**
 
@@ -53,18 +59,24 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollfixedcompensationplanentities?$f
 
 ```json
 {
-            "mshr_planid": "GradeC",
-            "mshr_personnelnumber": "000041",
-            "mshr_payrate": 75200,
-            "mshr_positionid": "000276",
-            "mshr_validfrom": "2011-04-05T00:00:00Z",
-            "mshr_validto": "2154-12-31T00:00:00Z",
-            "mshr_payfrequency": "Annual",
-            "mshr_currency": "USD",
-            "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
-            "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
-            "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
-            "_mshr_fk_payroll_id_value": null
+    "mshr_planid": "GradeC",
+    "mshr_personnelnumber": "000041",
+    "mshr_payrate": 75200,
+    "mshr_positionid": "000276",
+    "mshr_validfrom": "2011-04-05T00:00:00Z",
+    "mshr_validto": "2154-12-31T00:00:00Z",
+    "mshr_payfrequency": "Annual",
+    "mshr_currency": "USD",
+    "_mshr_fk_employee_id_value": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_fk_plan_id_value": "0000070c-0000-0000-b328-fef003000000",
+    "_mshr_fk_job_id_value": "00010094-0000-0000-df00-014105000000",
+    "mshr_payrollfixedcompensationplanentityid": "0000029f-0000-0000-d5ff-004105000000",
+    "_mshr_fk_payroll_id_value": null
 }
 ```
+
+## <a name="see-also"></a>Informacje dodatkowe
+
+[Wprowadzenie do API integracji płac](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

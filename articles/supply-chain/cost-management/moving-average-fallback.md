@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9521d9be3c380795abf476646d2d0e1cd36e8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354792"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Średnia ruchoma sekwencji kosztu rezerwowego
 
@@ -42,7 +42,7 @@ Aby wybrać sekwencję kosztów rezerwowych dla obliczeń średniej ruchomej, na
     - **Aktywny koszt — Ostatni problem**
     - **Koszt aktywny — cena towaru** — w organizacjach mogą występować problemy z wydajnością, jeśli są one używane w procesach biznesowych, w których zapasy są zwykle ujemne, a jednocześnie objętość transakcji jest wysoka. To ustawienie pomaga złagodzić te problemy z wydajnością.
 
-![Parametry księgowania zapasów](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
+![Parametry księgowania zapasów.](media/inventory-accounting-parameters.png "Parametry księgowania zapasów")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

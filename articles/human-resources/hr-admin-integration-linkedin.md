@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055107"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360599"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integracja z usługą LinkedIn Talent Hub
 
@@ -48,7 +48,7 @@ Administrator systemu musi wykonać zadania konfiguracyjne, aby włączyć integ
 
 5. Na stronie **Dynamics 365 Human Resources** wybierz środowisko, którego ma dotyczyć łącze do LinkedIn Talent Hub, a następnie wybierz **Połącz**.
 
-    ![Przygotowywanie LinkedIn Talent Hub](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![Przygotowywanie LinkedIn Talent Hub.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Możesz łączyć tylko ze środowiskami, w których konto użytkownika ma dostęp administratora zarówno do środowiska Human Resources, jak i skojarzonego środowiska Power Apps. Jeśli na stronie łączy Human Resources nie ma żadnych środowisk, upewnij się, że masz licencjonowane środowiska Human Resources w dzierżawie, a użytkownik, który zalogował się na stronie łącza, ma uprawnienia administratora zarówno dla środowiska Human Resources, jak i środowiska Power Apps.
@@ -91,7 +91,7 @@ Należy utworzyć użytkownika aplikacji dla adaptera LinkedIn Talent Hub, aby n
 
 6. Skorzystaj z menu rozwijanego powyżej listy, aby zmienić widok z domyślnego widoku **Włączeni użytkownicy** na **Użytkowników aplikacji**.
 
-    ![Widok Użytkownicy aplikacji](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Widok Użytkownicy aplikacji.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Na pasku narzędzi wybierz **Nowy**.
 
@@ -163,7 +163,7 @@ Po przeniesieniu kandydata do procesu rekrutacji i po jego zatrudnieniu można w
     - W polu **Lokalizacja** wprowadź lokalizację, w której ma być oparty dany pracownik etatowy.
     - Wprowadź lub Sprawdź adres e-mail pracownika.
 
-![Eksportowanie do okienka HRIS w LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Eksportowanie do okienka HRIS w LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Dokończ dołączanie do Human Resources
 

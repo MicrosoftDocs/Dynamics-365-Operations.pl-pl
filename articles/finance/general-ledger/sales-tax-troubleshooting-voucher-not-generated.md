@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ba23b597b1d7d283b99638fb7d5d91da00afb09c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 82357b7fe00b93715f44eb024ac78d7cc1adca84
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018764"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356108"
 ---
 # <a name="voucher-isnt-generated"></a>Nie jest generowany załącznik
 
@@ -26,14 +26,14 @@ ms.locfileid: "6018764"
 
 Jeśli załącznik powinien być generowany, ale na stronie **Transakcje na załączniku** nie są wyświetlane żadne załączniki, w celu rozwiązania tego problemu wykonaj kroki opisane w poniższych sekcjach.
 
-[![Na stronie Transakcje na załączniku nie ma załączników](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
+[![Na stronie Transakcje na załączniku nie ma załączników.](./media/voucher-not-generated-Picture1.png)](./media/voucher-not-generated-Picture1.png)
 
 ## <a name="check-the-tax-applicability"></a>Sprawdzanie, czy podlega opodatkowaniu
 
 1. Przejdź do lokalizacji **Podatek** \> **Zadania okresowe** \> **Zapisy w arkuszu księgi podrzędnej nie są jeszcze przeniesione**.
 2. Jeśli istnieje rekord arkusza, zaznacz go, a następnie wybierz opcję **Przenieś teraz**.
 
-    [![Przycisk Przenieś teraz na stronie Zapisy w arkuszu księgi podrzędnej nie zostały jeszcze przeniesione](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
+    [![Przycisk Przenieś teraz na stronie Zapisy w arkuszu księgi podrzędnej nie zostały jeszcze przeniesione.](./media/voucher-not-generated-Picture2.png)](./media/voucher-not-generated-Picture2.png)
 
 3. Otwórz ponownie stronę **Transakcje na załączniku**, aby sprawdzić, czy załącznik został wygenerowany.
 

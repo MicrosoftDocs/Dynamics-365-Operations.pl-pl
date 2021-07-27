@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187923"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355707"
 ---
 # <a name="budgeting-home-page"></a>Budżetowanie — strona główna
 
@@ -32,7 +34,7 @@ Ten temat zawiera omówienie składników funkcji budżetowania, narzędzi budż
 
 Cykl planowania zasobów dla firmy zwykle obejmuje działania dotyczące planowania, budżetowania i prognozowania.
 
-[![Składniki funkcji budżetowania](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Składniki funkcji budżetowania.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Procesy długoterminowego planowania strategicznego oraz planowania budżetu rocznego są obsługiwane za pomocą dokumentu planu budżetu. Dokumenty planu budżetu są ściśle zintegrowane z programem Microsoft Excel. Użytkownicy mogą konfigurować nieograniczoną liczbę scenariuszy pieniężnych i ilościowych oraz definiować hierarchie organizacyjne budżetowania do obsługi metod budżetowania od góry do dołu i od dołu do góry. Po określeniu i zatwierdzeniu budżetu w aplikacji należy przekonwertować plan budżetu na wpis do rejestru budżetu. Wpisy do rejestru budżetu zawierają narzędzia do obsługi budżetu i przechowywania kwot, które można śledzić za pomocą kodów budżetu. Wpisy do rejestru budżetu umożliwiają poprawianie pierwotnych budżetów, wykonywanie przeniesień i przenoszenie na następny okres kwot budżetu z poprzedniego roku. Na podstawie przyjętego budżetu firma może włączyć kontrolę budżetu. Poziom kontroli zależy od kultury organizacyjnej oraz poziomu dojrzałości organizacji. Organizacje o mniejszej dojrzałości mogą pozostawiać budżet „taki, jaki jest” i w sytuacji, gdy budżet nie spełnia oczekiwań, działać reaktywnie, a nie proaktywnie. Inne organizacje mogą włączyć zasady kontroli budżetu, które uniemożliwiają użytkownikom kupowanie, jeśli w budżecie nie ma dostępnych środków.
 
@@ -46,7 +48,7 @@ Organizacje bardzo dojrzałe mogą wykształcić kulturę organizacyjną, w któ
 -   [Szablony planowania budżetu dla programu Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Narzędzia budżetowania
-[![Narzędzia budżetowania](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Narzędzia budżetowania.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Dodatkowe funkcje planowania i budżetowania są dostępne i zintegrowane z budżetami księgi.
 

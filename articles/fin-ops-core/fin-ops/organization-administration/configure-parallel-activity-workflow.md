@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1a47857cbe65c00ad678b2b0372c642abf01b41
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c0bc97f401ad9e097248dfd5afb0baa8edbb6b3c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747838"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350677"
 ---
 # <a name="configure-parallel-activities-in-a-workflow"></a>Konfigurowanie działań równoległych w przepływie pracy
 
@@ -45,7 +45,7 @@ Wykonaj następujące kroki, aby dodać i skonfigurować gałęzie działania r�
 1. Kliknij dwukrotnie działanie równoległe, aby wyświetlić jego odgałęzienia.
 2. Aby dodać gałąź, przeciągnij element **Gałąź** z obszaru **Elementy przepływu pracy** na punkt wstawiania na kanwie. Na poniższej ilustracji przedstawiono punkt wstawiania.
 
-    ![Punkt wstawiania](./media/workflow_insertionpoint.gif)
+    ![Punkt wstawiania.](./media/workflow_insertionpoint.gif)
 
     > [!NOTE]
     > Kolejność odgałęzień jest nieważna, ponieważ wszystkie gałęzie działania równoległego są uruchamiane jednocześnie.

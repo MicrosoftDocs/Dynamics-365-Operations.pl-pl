@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: f89c671ae012907a4c3e07c09bdc867c1d67a101
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348076"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Odłóż wykonanie elementów sekwencji XML w formatach ER
 
@@ -90,14 +90,14 @@ Przed rozpoczęciem należy również pobrać i zapisać następującą konfigur
 6. W drzewie konfiguracji rozwiń węzeł **Model, aby poznać odłożone elementy**.
 7. Przejrzyj listę zaimportowanych konfiguracji systemu ER w drzewie konfiguracji.
 
-    ![Zaimportowane konfiguracje ER na stronie konfiguracje](./media/ER-DeferredXml-Configurations.png)
+    ![Zaimportowane konfiguracje ER na stronie konfiguracje.](./media/ER-DeferredXml-Configurations.png)
 
 ### <a name="activate-a-configuration-provider"></a>Aktywuj dostawcę konfiguracji
 
 1. Wybierz kolejno opcje **Administrowanie organizacją** \> **Obszary robocze** \> **Raportowanie elektroniczne**.
 2. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy [dostawca konfiguracji](general-electronic-reporting.md#Provider) dla przykładowej firmy Litware, Inc.(`http://www.litware.com`) jest wymieniony na liście i czy jest oznaczony jako akywny. Jeśli tego dostawcy konfiguracji nie ma na liście lub jeśli nie jest on oznaczony jako aktywny, wykonaj kroki opisane w temacie [Tworzenia dostawcy konfiguracji i zaznaczanie go jako aktywny](./tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Przykładowa firma Litware Inc. na stronie konfiguracje lokalizacji](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
+    ![Przykładowa firma Litware Inc. na stronie konfiguracje lokalizacji.](./media/ER-DeferredXml-ElectronicReportingWorkspace.png)
 
 ### <a name="review-the-imported-model-mapping"></a>Przeglądanie zaimportowanego mapowania modelu
 
@@ -119,7 +119,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
     - **Zgrupowane** źródło danych dla typu *Grupuj według* jest skonfigurowane do grupowania odfiltrowanych transakcji podatkowych z **Filtrowanego** źródła danych.
     - Pole agregacji **TotalSum** w **Pogrupowanym** źródle danych jest skonfigurowane do podsumowywania wartości pola **\$TaxAmount** w **filtrowanym** źródle danych dla wszystkich przefiltrowanych transakcji podatkowych z tego źródła danych.
 
-        ![Pole agregacji TotalSum na stronie parametrów edytowania „GroupBy”](./media/ER-DeferredXml-GroupByParameters.png)
+        ![Pole agregacji TotalSum na stronie parametrów edytowania „GroupBy”.](./media/ER-DeferredXml-GroupByParameters.png)
 
 9. Sprawdź, w jaki sposób skonfigurowane źródła danych są powiązane z modelem danych, i w jaki sposób uzyskują one dostęp do danych, aby udostępnić je w formacie ER:
 
@@ -127,7 +127,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
     - Pole **\$TaxAmount** **filtrowanego** źródła danych jest powiązane z polem **Data.List.Value** modelu danych.
     - Pole **TotalSum** **Pogrupowanego** źródła danych jest powiązane z polem **Data.Summary.Total** modelu danych.
 
-    ![Modelowa strona projektanta mapowania](./media/ER-DeferredXml-ModelMapping.png)
+    ![Modelowa strona projektanta mapowania.](./media/ER-DeferredXml-ModelMapping.png)
 
 10. Zamknij stronę **Konstruktor mapowania modeli** i **Mapowania modeli**.
 
@@ -143,7 +143,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
     - Element sekwencji formatu **Raport\\Wiadomość\\Rekord** jest skonfigurowany tak, aby wypełnił dokument wychodzący jednym węzłem, w którym są wyświetlane szczegóły jednej transakcji podatkowejf.
     - Element XML **Raport\\Wiadomość\\Podsumowanie** jest skonfigurowany do wypełniania dokumentu wychodzącego jednym węzłem, który zawiera sumę wartości podatku z przetworzonych transakcji podatkowych.
 
-    ![Element XML i elementy zagnieżdżone na stronie Projektant formatów](./media/ER-DeferredXml-Format.png)
+    ![Element XML i elementy zagnieżdżone na stronie Projektant formatów.](./media/ER-DeferredXml-Format.png)
 
 5. Na karcie **Mapowanie** przejrzyj następujące informacje:
 
@@ -157,14 +157,14 @@ Przejrzyj ustawienia składnika mapowania modelu ER, które skonfigurowano w cel
     - Atrybut **TotalTaxAmount** jest powiązany z **model.Data.Summary.Total**, aby wygenerować sumę wartości podatku przetworzonych transakcji podatkowych.
     - Atrybut **ExecutionDateTime** generuje datę i godzinę (w tym milisekundy), po dodaniu węzła podsumowania.
 
-    ![Zakłądka mapowania w Projektancie formatów](./media/ER-DeferredXml-Format2.png)
+    ![Zakładka mapowania w Projektancie formatów.](./media/ER-DeferredXml-Format2.png)
 
 ### <a name="run-the-imported-format"></a>Uruchamianie zaimportowanego formatu
 
 1. Na stronie **Projektant formatów** wybierz opcję **Uruchom**.
 2. Pobierz plik oferowany przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik w zaimportowanym formacie](./media/ER-DeferredXml-Run.png)
+    ![Pobrany plik w zaimportowanym formacie.](./media/ER-DeferredXml-Run.png)
 
 Zauważ, że węzeł podsumowania przedstawia sumę wartości podatku dla przetwarzanych transakcji. Ponieważ format jest skonfigurowany do używania powiązania **model.Data.Summary.Total**, aby zwrócić tę sumę, suma jest obliczana przez wywołanie agregacji **TotalSum** dla **zgrupowanego** źródła danych typu *GroupBy*, który korzysta z mapowania modelu. Aby można było obliczyć tę agregację, mapowanie modeli powtarza się dla wszystkich transakcji, które zostały wybrane w **filtrowanym** źródle danych. Porównując czasy wykonania węzła podsumowania z ostatnim węzłem rekordu, można ustalić, że obliczenie sumy trwało 12 milisekund (ms). Porównując czasy wykonania pierwszego i ostatniego węzła rekordów, można ustalić, że wygenerowanie węzłów rekordów zajęło 9 milisekund (ms). W związku z tym wymagana było 21 ms.
 
@@ -178,25 +178,25 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 4. Skonfiguruj wyrażenie **nazwy zebranego klucza danych** jako `WsColumn`.
 5. Skonfiguruj wyrażenie **wartości zebranego klucza danych** jako `WsRow`.
 
-    ![Rekord XML na stronie Projektant formatów](./media/ER-DeferredXml-Format3.png)
+    ![Rekord XML na stronie Projektant formatów.](./media/ER-DeferredXml-Format3.png)
 
 6. Wybierz atrybut **Raport\\Wiadomość\\Rekord\\TaxAmount**.
 7. Skonfiguruj wyrażenie **nazwy zebranego klucza danych** jako `SummingAmountKey`.
 
-    ![Atrybut TaxAmount na stronie Projektant formatów](./media/ER-DeferredXml-Format4.png)
+    ![Atrybut TaxAmount na stronie Projektant formatów.](./media/ER-DeferredXml-Format4.png)
 
     To ustawienie można uznać za wypełnienie arkusza wirtualnego, gdzie wartość komórki A1 jest dołączana do wartości podatku z każdej przetworzonej transakcji podatkowej.
 
 8. Zaznacz atrybut **Raport\\Wiadomość\\Rekord\\RunningTotal**, a następnie wybierz opcję **Edytuj formułę**.
 9. Skonfiguruj wyrażenie `SUMIF(SummingAmountKey, WsColumn, WsRow)` używając wbudowanej funckji ER [SUMIF](er-functions-datacollection-sumif.md), a następnie wybierz **Zapisz**.
 
-    ![Wyrażenie SUMIF](./media/ER-DeferredXml-FormulaDesigner.png)
+    ![Wyrażenie SUMIF.](./media/ER-DeferredXml-FormulaDesigner.png)
 
 10. Zamknij stronę **Projektowanie formuły**.
 11. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 12. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Wygenerowana lista wartości podatku z sumą bieżącą](./media/ER-DeferredXml-Run1.png)
+    ![Wygenerowana lista wartości podatku z sumą bieżącą.](./media/ER-DeferredXml-Run1.png)
 
     Ostatni węzeł rekordów zawiera bieżącą sumę wartości podatku, które są obliczane dla wszystkich przetworzonych transakcji przy użyciu wygenerowanego wyniku jako źródła danych. To źródło danych rozpoczyna się od początku raportu i jest kontynuowane przez ostatnią transakcję podatkową. Węzeł podsumowania zawiera sumę wartości podatku dla wszystkich przetworzonych transakcji, które są obliczane w mapowaniu modelu przy użyciu źródła danych typu *GroupBy*. Zauważ, że te wartości są równe. Z tego względu można użyć sumowania danych wyjściowych zamiast **GroupBy**. Porównując czasy wykonania pierwszego węzła rekordów i węzła podsumowania, można ustalić, że wygenerowanie wszystkich rekordów i sumowanie zajęło 11 milisekund (ms). Z tego względu, jeśli chodzi o generowanie węzłów rekordów i sumowanie wartości podatku, zmodyfikowany format jest o około dwa razy szybszy niż format oryginalny.
 
@@ -205,7 +205,7 @@ Jeśli wielkość transakcji jest znacznie większa niż objętość w bieżący
 15. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 16. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Wygenerowana lista wartości podatku przy użyciu edytowanej formuły](./media/ER-DeferredXml-Run2.png)
+    ![Wygenerowana lista wartości podatku przy użyciu edytowanej formuły.](./media/ER-DeferredXml-Run2.png)
 
     Należy zauważyć, że suma bieżąca wartości podatku w ostatnim węźle rekordów jest teraz równa sumie w węźle podsumowania.
 
@@ -218,7 +218,7 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik wartości podatku dla nagłówka raportu](./media/ER-DeferredXml-Run3.png)
+    ![Pobrany plik wartości podatku dla nagłówka raportu.](./media/ER-DeferredXml-Run3.png)
 
     Należy zauważyć, że suma wartości podatku w węźle jest teraz równa 0 (zero), ponieważ ta suma jest teraz obliczana na podstawie wygenerowanych danych wyjściowych. Po wygenerowaniu pierwszego węzła rekordów wygenerowane dane wyjściowe nie zawierają jeszcze węzłów rekordów z informacjami o transakcjach. Można skonfigurować ten format, aby odroczyć wykonanie elementu sekwencji **Raport\\Wiadomość\\Podsumowanie**, dopóki sekwencja **Raport\\Wiadomość\\Rekord** nie zostanie uruchomiony dla wszystkich wierszy raportu dla transakcji podatkowych.
 
@@ -227,12 +227,12 @@ Jeśli na przykład w nagłówku raportu trzeba przedstawić sumę wartości pod
 1. Na stronie **Projektant formatów** na karcie **Format** wybierz element XML **Raport\\Wiadomość\\Podsumowanie**.
 2. Ustaw wartość opcji **Odłożone uruchomienie** na **Tak**.
 
-    ![Opcja odroczonego wykonania podsumowania elementu XML na stronie Projektant formatów](./media/ER-DeferredXml-Format5.png)
+    ![Opcja odroczonego wykonania podsumowania elementu XML na stronie Projektant formatów.](./media/ER-DeferredXml-Format5.png)
 
 3. Wybierz **Zapisz** i następnie wybierz **Uruchom**.
 4. Pobierz plik przez przeglądarkę sieci Web i otwórz go do przeglądu.
 
-    ![Pobrany plik odroczonego wykonania](./media/ER-DeferredXml-Run4.png)
+    ![Pobrany plik odroczonego wykonania.](./media/ER-DeferredXml-Run4.png)
 
     Element sekwencji **Raport\\Wiadomość\\Podsumowanie** jest teraz uruchamiany tylko po uruchomieniu wszystkich pozostałych elementów zagnieżdżonych pod jego elementem **Raport\\Wiadomość**. Dlatego jest uruchamiany po uruchomieniu elementu sekwencji **Raport\\Wiadomość\\Rekord** dla wszystkich transakcji podatkowych źródła danych **model.Data.List**. Czasy wykonania pierwszego i ostatniego rekordu oraz węzły nagłówka i podsumowania ujawniają ten fakt.
 

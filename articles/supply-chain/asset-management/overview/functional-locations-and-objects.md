@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351592"
 ---
 # <a name="functional-locations-and-assets"></a>Lokalizacje czynności konserwacyjnych i składniki majątku
 
@@ -34,13 +34,13 @@ W tym temacie opisano lokalizacje funkcjonalne i składniki majątku w Zarządza
 
 Moduł Zarządzanie składnikami majątku jest bezproblemowo integrowany z kilkoma modułami w innych aplikacjach Finance and Operations. Na poniższej ilustracji przedstawiono interfejsy z innymi modułami.
 
-![Diagram przedstawiający sposób współdziałania modułu Zarządzanie składnikami majątku z innymi modułami](media/01-overview-image.png)
+![Diagram przedstawiający sposób współdziałania modułu Zarządzanie składnikami majątku z innymi modułami.](media/01-overview-image.png)
 
 Zarządzanie składnikami majątku umożliwia efektywne zarządzanie i wykonywanie wszystkich zadań związanych z zarządzaniem i obsługą wielu typów urządzeń w firmie. Te urządzenia obejmują maszyny, urządzenia produkcyjne i pojazdy. Zarządzanie składnikami majątku również wspiera rozwiązania w wielu branżach.
 
 Poniższa ilustracja przedstawia omówienie głównych funkcji dostępnych w module Zarządzanie składnikami majątku.
 
-![Diagram przedstawiający główną funkcjonalność modułu Zarządzanie składnikami majątku](media/02-overview-image.png)
+![Diagram przedstawiający główną funkcjonalność modułu Zarządzanie składnikami majątku.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Lokalizacje czynności konserwacyjnych i składniki majątku
 
@@ -50,11 +50,11 @@ Koszty składników majątku zawsze są zgodne z lokalizacją składnika majątk
 
 Sposób budowania hierarchii lokalizacji czynności konserwacyjnych zależy od wymagań firmy w zakresie utrzymywania wewnętrznego sprzętu lub obsługi sprzętu klienta. Na poniższej ilustracji przedstawiono przykład lokalizacji czynności konserwacyjnych, które są oparte na lokalizacjach geograficznych.
 
-![Diagram przedstawiający lokalizacje czynności konserwacyjnych na podstawie lokalizacji geograficznych](media/03-overview-image.png)
+![Diagram przedstawiający lokalizacje czynności konserwacyjnych na podstawie lokalizacji geograficznych.](media/03-overview-image.png)
 
 Na poniższej ilustracji przedstawiono przykład lokalizacji czynności konserwacyjnych, które są oparte na klientach.
 
-![Diagram przedstawiający lokalizacje czynności konserwacyjnych na podstawie klientów](media/04-overview-image.png)
+![Diagram przedstawiający lokalizacje czynności konserwacyjnych na podstawie klientów.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

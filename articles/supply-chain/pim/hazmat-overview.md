@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f8c3dc084f4f260f8cc29b3957913e9bc1b762d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829385"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357006"
 ---
 # <a name="hazardous-materials-overview"></a>Omówienie materiałów niebezpiecznych
 
@@ -27,7 +28,7 @@ W celu zachowania zgodności z przepisami dotyczącymi wysyłki i transportu, or
 
 Na poniższym diagramie przedstawiono kroki niezbędne do skonfigurowania i użycia funkcji materiałów niebezpiecznych.
 
-![Ustawienia i użycie funkcji materiałów niebezpiecznych](media/hazmat-overview.png "Ustawienia i użycie funkcji materiałów niebezpiecznych")
+![Ustawienia i użycie funkcji materiałów niebezpiecznych.](media/hazmat-overview.png "Ustawienia i użycie funkcji materiałów niebezpiecznych")
 
 Funkcja zarządzania materiałami niebezpiecznymi jest skonfigurowana w module Zarządzanie informacjami o produktach i zawiera dokumenty, które można wydrukować za pomocą modułu Zarządzanie magazynem. Dzięki temu obszary te są tymi dwoma głównymi obszarami, które będą przeglądane, konfigurowane i zastosowane w następujących funkcjach:
 

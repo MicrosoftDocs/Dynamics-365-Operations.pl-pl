@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751161"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351897"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Umożliwia konfigurowanie parametrów formatu ER dla firmy
 
@@ -49,7 +49,7 @@ Aby wykonać przykłady opisane w tym temacie, trzeba mieć dostęp do rozwiąza
     
     Na poniższej ilustracji przedstawiono konfiguracje, które muszą zostać wykonane po zakończeniu pracy.
 
-    ![Strona konfiguracji raportowania elektronicznego](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![Strona konfiguracji raportowania elektronicznego.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Konfigurowanie parametrów dla firmy DEMF
 
@@ -59,7 +59,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 2.  W drzewie konfiguracji wybierz **Format, aby uzyskać informacje o wyszukiwaniu danych LE**.
 3.  W okienku akcji na karcie **Konfiguracje** w grupie **Parametry specyficzne dla aplikacji** wybierz opcję **Konfiguracja**.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Na stronie **parametry właściwe dla aplikacji** można skonfigurować **reguły** dotyczące źródła danych **formatu**, aby dowiedzieć się, jak wyszukać format danych LE.
     
@@ -75,14 +75,14 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 
     W wyszukiwaniu zostanie wystawiona lista kodów podatku do wybrania. Ta lista jest zwracana przez **Model.Data.Tax** źródło danych podatkowych skonfigurowane w podstawowym formacie ER. Ponieważ to źródło danych zawiera pole **nazwa**, nazwa każdego kodu podatku jest wyświetlana w wyszukiwaniu.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Wybierz kod podatku **VAT19**.
 8.  W polu **Wynik wyszukiwania** w nowym rekordzie i wybierz strzałkę rozwijaną, aby otworzyć wyszukiwanie. W wyszukiwaniu zostanie wystawiona lista wartości dla wyliczenia formatu TaxationLevel do wybrania.
 
     Należy zauważyć, że jeśli jako preferowany język użytkownika, do którego użytkownik jest zalogowany, jest wybrana jako niemiecki, etykiety wartości w wyszukiwaniu będą w języku niemieckim, pod warunkiem, że zostały przetłumaczone w podstawowym formacie ER. Ponadto, jeśli etykieta źródła danych wyszukiwania została przetłumaczona, etykieta zostanie wyświetlona w preferowanym języku użytkownika na karcie **wyszukiwania**.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Umożliwia wybór wartości **zwykłego opodatkowania**.
 
@@ -120,7 +120,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
     
     Dodając ostatni rekord, należy zdefiniować następującą regułę: Ilekroć kod podatkowy przekazany jako argument nie spełnia żadnej z poprzednich reguł, źródło danych odnośnika zwróci **Inne** jako żądany poziom opodatkowania.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. W polu **Stan** wybierz opcję **ukończone**.
 
@@ -144,7 +144,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 6.  Wybierz kod podatku **InVAT7**.
 7.  W okienku akcji, na karcie **kod podatku,** w grupie **informacje** wybierz opcję **zaksięgowany podatek**, aby wyświetlić informacje o wartościach podatku i zastosowaniu stawki podatkowej według kodu podatku.
 
-    ![Strona zaksięgowany podatek](./media/GER-AppSpecParms-Statement.PNG)
+    ![Strona zaksięgowany podatek.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Zamknij strony Zaksięgowany podatek.
 
@@ -160,7 +160,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 
     W wyszukiwaniu zostanie wystawiona lista kodów podatków do wybrania dla podatku firmy **USMF**.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Wybierz kod podatku **EXEMPT**.
 9.  W polu **wynik wyszukiwania w nowym rekordzie** wybierz wartość **Brak opodatkowania**.
@@ -170,7 +170,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 13. W polu **Stan** wybierz opcję **ukończone**.
 14. Wybierz opcję **Zapisz**.
 
-    ![Strona parametry specyficzne dla aplikacji ER](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Zamknij stronę **Parametry specyficzne dla aplikacji**.
 
@@ -225,13 +225,13 @@ W powyższym przykładzie uzyskano dostęp do parametrów specyficznych dla apli
 
 1.  Należy ponownie użyć istniejącego elementu menu **ERSolutionAppSpecificParametersDesigner** lub zaimplementować własny element menu **ERSolutionAppSpecificParametersDesigner**.
 
-    ![Strona Visual Studio](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Strona Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Wykonaj jeden z następujących kroków:
 
     1.  Utwórz nowy przycisk elementu menu i połącz go z odpowiednim rekordem z tabeli **ERSolutionTable**, ustawiając właściwość **źródła danych** na **ERSolutionTable.**
     
-        ![Strona Visual Studio](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Strona Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Utwórz prosty przycisk i Zastąp **klikniętą** metodę, tak jak to pokazano w poniższym przykładzie.
     

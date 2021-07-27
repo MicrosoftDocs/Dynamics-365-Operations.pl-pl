@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838726"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361230"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Tworzenie konfiguracji raportowania elektronicznego w usługach Regulatory Configuration Services (RCS) i przekazywanie ich do repozytorium globalnego
 
@@ -51,7 +51,7 @@ Jeśli już aprowizowano środowisko RCS, należy skorzystać z adresu URL stron
 5. Wprowadź nazwę i opis, a następnie wybierz opcję **Utwórz konfigurację**, aby utworzyć nową wersję pochodną.
 6. Wybierz nową konfigurację pochodną, dodaj opis wersji, a następnie wybierz przycisk **OK**. Stan konfiguracji zostanie zmieniony na **Zakończono**.
 
-![Nowa wersja konfiguracji w usługach RCS](media/RCS_CompleteConfig.JPG)
+![Nowa wersja konfiguracji w usługach RCS.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Po zmianie stanu konfiguracji może pojawić się komunikat o błędzie weryfikacji, który jest związany z dołączonymi aplikacjami. Aby wyłączyć weryfikowanie, w okienku akcji na karcie **Konfiguracje** wybierz pozycję **Parametry użytkownika**, a następnie ustaw opcję **Pomiń weryfikację przy zmianie stanu konfiguracji i zmianie bazy** na **Tak** 
@@ -63,7 +63,7 @@ Aby udostępnić organizacji nową lub pochodną konfigurację, można ją przek
 1. Wybierz zakończoną wersję konfiguracji, a następnie wybierz pozycję **Przekaż do repozytorium**.
 2. Wybierz opcję **Globalne (Microsoft)**, a następnie wybierz pozycję **Przekaż**.
 
-    ![Opcje przekazywania do repozytorium](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Opcje przekazywania do repozytorium.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. W wyświetlonym oknie wiadomości z potwierdzeniem wybierz przycisk **Tak**. 
 4. W razie potrzeby zaktualizuj opis wersji, a następnie wybierz przycisk **OK**. 
@@ -73,7 +73,7 @@ Stan konfiguracji jest aktualizowany do wartości **Udostępnij**, a konfiguracj
 - Zaimportuj ją do wystąpienia rozwiązania Dynamics 365. Aby uzyskać więcej informacji, zobacz temat [(ER) Importowanie konfiguracji z usług RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Udostępnij ją firmie lub organizacji zewnętrznej, zobacz temat [RCS — udostępnianie konfiguracji Raportowania elektronicznego (ER) organizacjom zewnętrznymi](rcs-global-repo-share-configuration.md)
 
-    ![Wersja konfiguracji pochodnej Intrastat Contoso w repozytorium globalnym](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Wersja konfiguracji pochodnej Intrastat Contoso w repozytorium globalnym.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Usuwanie konfiguracji z repozytorium globalnego
 Wykonaj następujące kroki, aby usunąć konfigurację utworzoną przez organizację.
@@ -84,11 +84,11 @@ Wykonaj następujące kroki, aby usunąć konfigurację utworzoną przez organiz
 4. Na skróconej karcie **Filtr** znajdź konfigurację, którą chcesz usunąć, przy użyciu funkcji **Filtrowania**.
 5. W na skróconej karcie **Wersja** wybierz wersję konfiguracji, którą chcesz usunąć, a następnie wybierz opcję **Usuń**:
 
-    ![Usuwanie konfiguracji z repozytorium globalnego](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Usuwanie konfiguracji z repozytorium globalnego.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. W wyświetlonym oknie wiadomości z potwierdzeniem wybierz przycisk **Tak**.
 
-    ![Komunikat potwierdzający usunięcie wersji konfiguracji](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Komunikat potwierdzający usunięcie wersji konfiguracji.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 Wersja konfiguracji zostanie usunięta i zostanie wyświetlony komunikat z potwierdzeniem. 
 

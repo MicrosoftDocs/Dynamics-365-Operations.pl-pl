@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: c76919c6289fe0c2367cedecc64bbdae9ee86e63
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028234"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358518"
 ---
 # <a name="position-forecasting"></a>Prognozy dotyczące stanowisk
 
@@ -30,7 +30,7 @@ Wydatki, które dotyczą pracowników, często stanowią znaczną część koszt
 
 ## <a name="position-forecasting-in-budget-planning"></a>Prognozowanie stanowisk w planowaniu budżetu
 
-[![Składniki prognozowania stanowisk](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Składniki prognozowania stanowisk.](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Prognozowanie stanowisk wykorzystuje trzy główne elementy w celu podania dokładnych kwot wydatków na dane stanowisko. Kwoty te mogą następnie zostać uwzględnione w planie budżetu na potrzeby obliczania budżetu. 
 
@@ -42,14 +42,14 @@ Głównym składnikiem jest **stanowisko podlegające prognozie**; reprezentuje 
 
 ### <a name="position-forecasting-processes"></a>Procesy prognozowania stanowisk
 
-[![Ilustrowanie procesów prognozowania stanowisk](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Ilustrowanie procesów prognozowania stanowisk.](./media/graphic1b.png)](./media/graphic1b.png) 
 
 W typowym procesie prognozowania stanowisk najpierw należy utworzyć zestaw elementów (składniki kosztu budżetowego i grupę wynagrodzeń). Stanowiska podlegające prognozie będą generowane na podstawie istniejących stanowisk. Następnie można wprowadzić korekty. Na przykład można dodać lub zakończyć stanowisko, zmienić stawki płac i koszty świadczeń oraz dodawać podwyżki. Można utworzyć wiele wersji stanowiska podlegającego prognozie, aby porównywać różne scenariusze budżetowania. Następnie można uwzględnić stanowiska podlegające prognozie w planach budżetu i wprowadzać koszty z pozycji prognozy jako wiersze planu budżetu.
 
 Można tworzyć dodatkowe wersje stanowiska podlegającego prognozie w miarę korygowania planów budżetowych. Wersje te stanowią podstawę dla zmian.
 
 ## <a name="position-forecasting-setup"></a>Konfiguracja prognozowania stanowisk
-[![Ustawienia podkreślania ilustracji](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Ustawienia podkreślania ilustracji.](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### <a name="budget-cost-elements"></a>Składniki kosztu budżetowego
 
@@ -86,7 +86,7 @@ Pola **Harmonogram podwyżki** i **Data podwyższenia** w grupie wynagrodzeń s�
 Składnik kosztu typu dochodowego, który jest zaznaczony w grupie wynagrodzeń, jest używany podczas tworzenia dochodów dla stanowisk podlegających prognozie w grupie, włącznie z ich wynagrodzeniem bazowym oraz wszelkimi przyrostami etapowymi. Pole **System stałych wynagrodzeń** łączy grupę wynagrodzeń z planem stałych wynagrodzeń w module Zasoby ludzkie. To łącze może przypisywać informacje dotyczące stałego wynagrodzenia pracownika do stanowiska podlegającego prognozie, dzięki czemu planowanie budżetu może być dokładniejsze. Należy pamiętać, że struktura siatki wynagrodzenia (poziomy i etapy) dla grupy wynagrodzeń powinny być dopasowane do struktury planu stałych wynagrodzeń. W przeciwnym razie system nie może poprawnie połączyć grupy wynagrodzeń i planu stałych wynagrodzeń.
 
 ## <a name="creating-forecast-positions"></a>Tworzenie stanowisk podlegających prognozie
-[![Podkreślanie ilustracji „Tworzenie stanowisk podlegających prognozie”](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Podkreślanie ilustracji „Tworzenie stanowisk podlegających prognozie”.](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Tworzenie stanowisk podlegających prognozie dla istniejących stanowisk
 
@@ -115,7 +115,7 @@ Po wybraniu stanowiska podlegającego prognozie zaznacz **Kopiuj wybrane stanowi
 Można też utworzyć całkowicie nowe stanowisko podlegające prognozie. Wybierz istniejące stanowisko i wybierz proces planowania budżetu i scenariusz planu budżetu. Następnie możesz dodać dowolne inne szczegóły. Tu także nowe stanowisko jest jednocześnie tworzone w module Zasoby ludzkie.
 
 ## <a name="working-with-forecast-positions"></a>Praca ze stanowiskami podlegającymi prognozie
-[![Podkreślanie ilustracji „modyfikowanie prognoz stanowisk”](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Podkreślanie ilustracji „modyfikowanie prognoz stanowisk”.](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### <a name="multiple-versions-of-a-forecast-position"></a>Wiele wersji stanowiska podlegającego prognozie
 
@@ -171,7 +171,7 @@ Proces ponownego obliczania jest automatycznie używany dla dowolnego stanowiska
 
 ## <a name="bringing-forecast-positions-into-budget-plans"></a>Wprowadzanie pozycji prognozy do planów budżetu
 
-[![Podkreślanie ilustracji „Dodaj do planu budżetu”](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Podkreślanie ilustracji „Dodaj do planu budżetu”.](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 Celem tworzenia i modyfikowania pozycji prognozy jest dodawanie ich do planów budżetu, tak aby te plany budżetu obejmowały najdokładniejsze kwoty budżetu. Istnieją dwie metody dodawania pozycji prognozy do planów budżetu. Można użyć procesu generowania lub procesu wybierania w planie budżetu.
 

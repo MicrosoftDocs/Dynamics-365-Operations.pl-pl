@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d68e1b3a4dc31823ec56a525149f16bdc23c0883
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: bc1a8570e60e2b17f27c3e63c5ff847b3cb7a2dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023522"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358465"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Obliczanie TDS dla faktur przy użyciu arkuszy
 
@@ -31,7 +31,7 @@ W tym temacie wymieniono kroki obliczania podatku potrąconego w źródle (TDS) 
 
 Otwórz **Księga główna** (**Księga główna > Wpisy w arkuszu > Arkusze finansowe**).
 
-[![Arkusze finansowe](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
+[![Arkusze finansowe.](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
 
 1. Umożliwia tworzenie wierszy arkusza przy użyciu formularzy arkusza wymienionych w tabeli. Wybierz typ konta i typ konta przeciwstawowego oraz wprowadź kwotę transakcji. 
 

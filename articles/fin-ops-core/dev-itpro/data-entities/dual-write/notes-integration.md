@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186793"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358986"
 ---
 # <a name="note-integration"></a>Integracja z notatkami
 
@@ -51,23 +51,23 @@ Aby utworzyć notatkę w aplikacji angażującej klientów, a następnie zsynchr
 1. W aplikacji dotyczącej relacji z klientami otwórz rekord konta odbiorcy.
 2. W okienku **Osi czasu** wybierz znak plus (**+**), a następnie wybierz pozycję **Notatka**, aby utworzyć notatkę.
 
-    ![Utwórz notatkę w aplikacji angażującej klientów](media/notes-ce-1.png)
+    ![Utwórz notatkę w aplikacji angażującej klientów.](media/notes-ce-1.png)
 
 3. Wprowadź tytuł i opis, a następnie wybierz opcję **Dodaj notatkę**.
 
-    ![Wprowadzenie tytułu i opisu](media/notes-ce-2.png)
+    ![Wprowadzenie tytułu i opisu.](media/notes-ce-2.png)
 
     Nowa notatka zostanie dodana do osi czasu dla odbiorcy.
 
-    ![Nowa notatka na osi czasu dla odbiorcy](media/notes-ce-3.png)
+    ![Nowa notatka na osi czasu dla odbiorcy.](media/notes-ce-3.png)
 
 4. Zaloguj się do aplikacji Finance and Operations i otwórz ten sam rekord odbiorcy. Zwróć uwagę, że przycisk **Załączniki** (symbol spinacza) w prawym górnym rogu wskazuje, że rekord ma załącznik.
 
-    ![Powiadomienie o załączniku](media/notes-ce-4.png)
+    ![Powiadomienie o załączniku.](media/notes-ce-4.png)
 
 5. Wybierz przycisk **Załączniki**, aby otworzyć stronę **Załączniki**. Powinieneś znaleźć notatkę, którą utworzyłeś w aplikacji do obsługi klienta.
 
-    ![Notatka z aplikacji angażującej klienta](media/notes-ce-5.png)
+    ![Notatka z aplikacji angażującej klienta.](media/notes-ce-5.png)
 
 Wszelkie aktualizacje notatki są synchronizowane między aplikacją Finance and Operations a aplikacją do obsługi klienta.
 
@@ -79,21 +79,21 @@ Aby utworzyć notatkę w aplikacji Finance and Operations, a następnie zsynchro
 
 1. W aplikacji Finance and Operations, na stronie **Załącznik** i wybierz pozycję **Nowa** \> **Notatka**.
 
-    ![Utwórz notatkę w aplikacji Finance and Operations](media/notes-fo-1.png)
+    ![Utwórz notatkę w aplikacji Finance and Operations.](media/notes-fo-1.png)
 
 2. Wprowadź tytuł i krótki zestaw instrukcji, a następnie wybierz polecenie **Zapisz**.
 
-    ![Wprowadzanie tytułu i instrukcji](media/notes-fo-2.png)
+    ![Wprowadzanie tytułu i instrukcji.](media/notes-fo-2.png)
 
 3. Zaktualizuj rekord w aplikacji angażującej klienta. Nowa notatka powinna znaleźć się na osi czasu.
 
-    ![Nowa notatka na osi czasu w aplikacji do obsługi klienta](media/notes-fo-3.png)
+    ![Nowa notatka na osi czasu w aplikacji do obsługi klienta.](media/notes-fo-3.png)
 
 Notatkę można sklasyfikować jako wewnętrzną lub zewnętrzną.
 
 - W aplikacji Finance and Operations, na stronie **Załączniki** otwórz notatkę, a następnie w polu **Ograniczenie** wybierz pozycję **Wewnętrzna** lub **Zewnętrzna**.
 
-    ![Pole ograniczenia](media/notes-fo-4.png)
+    ![Pole ograniczenia.](media/notes-fo-4.png)
 
 Można również utworzyć adres URL.
 
@@ -101,13 +101,13 @@ Można również utworzyć adres URL.
 2. Wprowadź tytuł i adres URL.
 3. W polu **Ograniczenie** wybierz opcję **Wewnętrzna** lub **Zewnętrzna**.
 
-    ![Utwórz adres URL w aplikacji Finance and Operations](media/notes-fo-5.png)
+    ![Utwórz adres URL w aplikacji Finance and Operations.](media/notes-fo-5.png)
 
 4. Wybierz opcję **Zapisz**.
 
     Ponieważ aplikacje angażujące klientów nie mają typu adresu URL, adres URL jest zintegrowany z podwójnym zapisem jako notatka.
 
-    ![URL pojawiający się jako notatka w aplikacji budującej zaangażowanie klientów](media/notes-ce-6.png)
+    ![URL pojawiający się jako notatka w aplikacji budującej zaangażowanie klientów.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Załączniki plików nie są obsługiwane.

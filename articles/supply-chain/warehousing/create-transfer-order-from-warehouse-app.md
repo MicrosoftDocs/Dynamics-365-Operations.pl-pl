@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164853"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343632"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Tworzenie zamówień przeniesienia z aplikacji magazynu
 
@@ -95,7 +95,7 @@ Oprócz konfiguracji tworzenia zamówienia przeniesienia w elementach menu urzą
 
 Użytkownik jest sprzedawcą detalicznym i ma wiele numerów identyfikacyjnych, z których każda zawiera różne towary umieszczone w określonym miejscu w jednym z magazynów (*Magazyn 51*). Użytkownik chce włączyć proces, który umożliwi pracownikom tworzenie zamówienia przeniesienia do innego magazynu (*Magazyn 61*) dla zbioru zeskanowanych numerów identyfikacyjnych. Zamówienie przeniesienia zostanie automatycznie wysłane i zaktualizowane dopiero po zidentyfikowaniu ostatniego numeru identyfikacyjnego zamówienia.
 
-![Przykład automatycznego przetwarzania zamówienia przeniesienia](media/create-transfer-order-from-app-example.png "Przykład automatycznego przetwarzania zamówienia przeniesienia")
+![Przykład automatycznego przetwarzania zamówienia przeniesienia.](media/create-transfer-order-from-app-example.png "Przykład automatycznego przetwarzania zamówienia przeniesienia")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Tworzenie elementu menu urządzenia przenośnego do tworzenia zamówień przeniesienia
 

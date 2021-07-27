@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
-ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
+ms.openlocfilehash: d68587a88b52e95d1e11c64b9a2d51dbc8b70561
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5963246"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357421"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Utwórz konto magazynu Azure i Magazyn kluczy
 
@@ -49,7 +49,7 @@ W tym temacie przedstawiono dwa główne kroki:
 5. Wybierz opcję **Dodaj zasady**, aby dodać zapisane zasady dostępu.
 6. Odpowiednio określ **Identyfikator** i pola **Uprawnień**. W polu **uprawnienia** zaznacz opcję wszystkie uprawnienia.
 
-    ![Przyznawanie uprawnień do magazynu obiektów Blob](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
+    ![Przyznawanie uprawnień do magazynu obiektów Blob.](media/e-Invoicing-services-create-azure-resources-grant-blob-permissions.png)
 
 7. Wprowadź daty rozpoczęcia i ważności. Data ważności powinna być w przyszłości.
 8. Wybierz przycisk **OK**, aby zapisać zasady, a następnie zapisz zmiany w kontenerze.
@@ -57,7 +57,7 @@ W tym temacie przedstawiono dwa główne kroki:
 10. Kliknij prawym przyciskiem myszy kontener, a następnie wybierz polecenie **Pobierz podpis dostępu współdzielonego**.
 11. W oknie dialogowym **Podpis dostępu współdzielonego** skopiuj i zapisz wartość w polu **Identyfikator URI**. Ta wartość będzie używana w następnej procedurze i jest określana jako *Identyfikator URI podpisu dostępu współdzielonego*.
 
-    ![Wybieranie i kopiowanie wartości identyfikatora URI](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
+    ![Wybieranie i kopiowanie wartości identyfikatora URI.](media/e-Invoicing-services-create-azure-resources-select-and-copy-uri.png)
 
 ## <a name="set-up-the-key-vault-to-store-the-storage-account-uri"></a>Skonfiguruj Magazyn kluczy do przechowywania identyfikatora URI konta magazynu
 
@@ -69,11 +69,11 @@ W tym temacie przedstawiono dwa główne kroki:
 6. Skonfiguruj zasady dostępu, aby nadać funkcji Faktury elektroniczne odpowiedni poziom bezpiecznego dostępu do utworzonego klucza tajnego. Przejdź do **Ustawienia \> Zasad dostępu** i wybierz pozycję **Dodaj zasady dostępu**.
 7. Umożliwia ustawienie tajnych uprawnień dla operacji **Rozpocznij** i **Lista**.
 
-    ![Udzielanie dostępu do usługi](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
+    ![Udzielanie dostępu do usługi.](media/e-Invoicing-services-create-azure-resources-grant-service-access.png)
 
 8. Umożliwia ustawienie certyfikatu uprawnień dla operacji **Rozpocznij** i **Lista**.
 
-    ![Nadanie certyfikatu uprawnień](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
+    ![Nadanie certyfikatu uprawnień.](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
 9. W polu **Wybierz główny** wybierz opcję **Brak zaznaczonego**.
 10. W oknie dialogowym **Główne** wybierz podmiot zabezpieczeń, dodając **Usługi e-fakturowania**.

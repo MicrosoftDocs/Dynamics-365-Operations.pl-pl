@@ -246,8 +246,6 @@
                           href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Egiptu
                           href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch
-                          href: ../finance/localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku
                           href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Ustawianie fakturowania elektronicznego
@@ -1607,6 +1605,8 @@
                   href: master-planning/planning-optimization/get-started.md
                 - name: Analiza dopasowań optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Parametry nieużywane przez optymalizację planowania
+                  href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Stosowanie filtrów do planu
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Planowanie główne z uwzględnieniem prognozy popytu
@@ -1621,6 +1621,8 @@
                   href: master-planning/planning-optimization/purchase-requisitions.md
                 - name: Planowanie produkcji
                   href: master-planning/planning-optimization/production-planning.md
+                - name: Planowanie z nieskończoną zdolnością produkcyjną
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
                   href: master-planning/planning-optimization/marking.md
                 - name: Planowanie międzyfirmowe
@@ -1861,6 +1863,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurowanie kroków zatwierdzania
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurowanie osób sprawdzających wydatki
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurowanie decyzji ręcznych
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurowanie decyzji warunkowych

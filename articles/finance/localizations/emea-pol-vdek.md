@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: c00147fac6e698348ab601470a40b1b0de84b79a
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: f007b9b94fecf9efca4ad5345ae324c3828c68e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960037"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359274"
 ---
 # <a name="vat-declaration-with-registers-jpk_v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK_V7M, VDEK)
 
@@ -68,7 +68,7 @@ Importowanie ostatniej wersji tych konfiguracji. Opis wersji zazwyczaj zawiera n
 > [!NOTE]
 > Po zaimportowaniu wszystkich konfiguracji ER z poprzedniej tabeli należy zmienić ustawienie opcji **Ustawienie domyślne mapowanie modelu** na **Tak** w przypadku konfiguracji **Mapowanie jednolitych plików kontrolnych** na stronie **Konfiguracje**.
 >
-> ![Konfiguracja mapowania modelu jednolitego pliku kontrolnego](media/default-mm.jpg)
+> ![Konfiguracja mapowania modelu jednolitego pliku kontrolnego.](media/default-mm.jpg)
 
 Aby uzyskać więcej informacji na temat pobierania konfiguracji modułu ER z globalnego repozytorium Microsoft, zapoznaj się z tematem [Pobieranie konfiguracji ER z repozytorium globalnego](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -93,14 +93,14 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 2. Na stronie **Konfiguracje** rozwiń węzeł **Standardowy plik audytu (SAF-T)** i wybierz opcję **Format XML JPK-V7M (PL)**.
 3. W okienku akcji na karcie **Konfiguracje** w grupie **Parametry specyficzne dla aplikacji** wybierz opcję **Konfiguracja**.
 
-    ![Grupa parametrów specyficznych dla aplikacji](media/setup-app-spec-params.jpg)
+    ![Grupa parametrów specyficznych dla aplikacji.](media/setup-app-spec-params.jpg)
 
 4. Na stronie **Parametry specyficzne dla aplikacji** wybierz najnowszą wersję formatu, dla którego chcesz zdefiniować warunki.
 5. Na skróconej karcie **Wyszukiwania** wybierz poszczególne wyszukiwania i zdefiniuj odpowiednie warunki dla nich.
 6. Na skróconej karcie **Warunki** określ, które kody podatków lub inne dostępne kryteria muszą odpowiadać określonemu wynikowi wyszukiwania. Jeśli warunki są zdefiniowane w jednym wierszu, system zastosuje je do źródłowej transakcji podatkowej za pomocą operatora **AND**. Jeśli warunki muszą być zastosowane za pomocą operatora **OR**, należy je zdefiniować w oddzielnych wierszach. W momencie, gdy transakcja podatkowa z okresu raportu spełnia warunek z listy, dla powiązanego dokumentu zostanie zgłoszony powiązany marker z wyniku wyszukiwania. Aby uzyskać więcej informacji o ustawieniach pól wyszukiwania, zapoznaj się z podsekcjami znajdującymi się poniżej.
 7. W polu **Stan** wybierz opcję **Zakończone**, a następnie zapisz konfigurację.
 
-    ![Pole stanu](media/complete-app-spec-params.jpg)
+    ![Pole stanu.](media/complete-app-spec-params.jpg)
 
 #### <a name="import-transactions-importtransaction"></a>Transakcje importowe (ImportTransaction)
 
@@ -354,11 +354,11 @@ Teraz musisz zaimportować dane z pliku PL JPK_V7M EM setup.zip do wybranej firm
 4. Kliknij przycisk **Zamknij**, gdy jednostki z pakietu zostaną wyszczególnione na liście w siatce.
 5. Kliknij przycisk **Importuj** w okienku akcji, aby rozpocząć importowanie danych z jednostek danych.
 
-    ![Strona ustawień EM PL JPK_V7M](media/import-data-entities.jpg)
+    ![Strona ustawień EM PL JPK_V7M.](media/import-data-entities.jpg)
 
 Otrzymasz powiadomienie w obszarze **Komunikaty** lub możesz odświeżyć stronę, aby wyświetlić postęp importowania danych. Po zakończeniu procesu importowania na stronie **Podsumowanie wykonywania** zostaną wyświetlone wyniki.
 
-![Strona podsumowania wykonywania](media/data-entities-imported.jpg)
+![Strona podsumowania wykonywania.](media/data-entities-imported.jpg)
 
 > [!IMPORTANT]
 > Niektóre rekordy z jednostek danych w pakiecie zawierają łącze do konfiguracji ER. Dlatego przed rozpoczęciem importu pakietu jednostek danych należy najpierw zaimportować konfiguracje ER do modułu Finance.
@@ -405,7 +405,7 @@ Aby wprowadzić kod urzędu w dodatkowym polu **KodUrzedu**, należy wykonać po
 
 Proces raportowania JPK-V7M jest wstępnie zdefiniowany przez jednostki danych, które zostały dostarczone w pakiecie PL JPK_V7M EM setup.zip. Na poniższej ilustracji przedstawiono przegląd procesu.
 
-![Przepływ procesu raportowania JPK_V7M](media/vdek-em-processing.jpg)
+![Przepływ procesu raportowania JPK_V7M.](media/vdek-em-processing.jpg)
 
 Pakiet PL JPK_V7M EM setup.zip zawiera ustawienia przetwarzania JPK-V7M, które obsługują proces raportowania JPK-V7M. Ta konfiguracja składa się z następujących kroków:
 
@@ -464,12 +464,12 @@ W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie 
 2. Wybierz **JPK-V7M**, a następnie na skróconej karcie **Wiadomości** wybierz opcję **Nowy**.
 3. W oknie dialogowym **Uruchom przetwarzanie** kliknij **OK**.
 
-    ![Okno dialogowe Uruchamianie przetwarzania](media/create-em.jpg)
+    ![Okno dialogowe Uruchamianie przetwarzania.](media/create-em.jpg)
 
 4. Zostanie utworzona nowa wiadomość elektroniczna. Wprowadź opis i określ datę początkową i końcową okresu, za który chcesz wygenerować raport JPK-V7M.
 5. Na skróconej karcie **Dodatkowe pola wiadomości** określ dodatkowe wartości wymagane w części deklaracji raportu V7M.
 
-    ![Skrócona karta Dodatkowe pola wiadomości](media/message-additional-fields.jpg)
+    ![Skrócona karta Dodatkowe pola wiadomości.](media/message-additional-fields.jpg)
 
 6. W dodatkowym polu **CelZlozenia** określ, czy przesyłany raport jest złożeniem deklaracji czy korektą. Dwie wartości są dozwolone:
 
@@ -498,7 +498,7 @@ Dodatkowe pole **P_54_Powód** jest dostępne od wersji 98.194 konfiguracji ER *
 2. W oknie dialogowym **Uruchamianie przetwarzania** w polu **Akcja** wybierz opcję **Podgląd w programie Excel**.
 3. Kliknij przycisk **OK**.
 
-    ![Okno dialogowe uruchamiania przetwarzania, pole akcji](media/generate-vdek.jpg)
+    ![Okno dialogowe uruchamiania przetwarzania, pole akcji.](media/generate-vdek.jpg)
 
 4. Aby uruchomić generowanie raportu w partii, należy określić parametry na skróconej karcie **Uruchamianie w tle**. Po wygenerowaniu raportu jest on dołączany do wiadomości elektronicznej jako plik.
 5. Aby obejrzeć plik, wybierz wiadomość elektroniczną, po czym naciśnij przycisk **Załączniki** (symbol spinacza) w prawym górnym rogu strony.
@@ -509,7 +509,7 @@ Dodatkowe pole **P_54_Powód** jest dostępne od wersji 98.194 konfiguracji ER *
 1. Gdy wszystkie dane są gotowe w systemie, wybierz opcję **Generuj raport** na skróconej karcie **Wiadomości**.
 2. W oknie dialogowym **Uruchom przetwarzanie** kliknij **OK**.
 
-    ![Skrócona karta Wiadomości, okno dialogowe Uruchamianie przetwarzania](media/generate-xml-vdek.jpg)
+    ![Skrócona karta Wiadomości, okno dialogowe Uruchamianie przetwarzania.](media/generate-xml-vdek.jpg)
 
 3. Aby uruchomić generowanie raportu w partii, należy określić parametry na skróconej karcie **Uruchamianie w tle**.
 

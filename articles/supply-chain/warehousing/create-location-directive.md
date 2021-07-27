@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: a896953a5603d9766f2c4938158088fc9424d5bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911303"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343755"
 ---
 # <a name="work-with-location-directives"></a>Praca z dyrektywami lokalizacji
 
@@ -51,7 +51,7 @@ Aby można było utworzyć dyrektywę lokalizacji, należy wykonać poniższe kr
 
 Wiele pól, które można ustawiać w dyrektywach lokalizacji, jest wspólne dla wszystkich typów zleceń produkcyjnych. Jednak inne pola są charakterystyczne dla poszczególnych typów zleceń produkcyjnych.
 
-![Typy zleceń roboczych dyrektyw dotyczących lokalizacji](media/Location_Directives_Work_Order_Types.png "Typy zleceń roboczych dyrektyw dotyczących lokalizacji")
+![Typy zleceń roboczych dyrektyw dotyczących lokalizacji.](media/Location_Directives_Work_Order_Types.png "Typy zleceń roboczych dyrektyw dotyczących lokalizacji")
 
 > [!NOTE]
 > Dwa typy zleceń roboczych, *anulowane zadania* i *Inwentaryzacja* są używane tylko w systemie. Nie można utworzyć dyrektyw lokalizacji dla tych typów zleceń roboczych.

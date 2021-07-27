@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360647"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurowanie integracji z rozwiązaniem Finance
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055131"
 
 Aby zintegrować Dynamics 365 Human Resources z Dynamics 365 Finance, można skorzystać z szablonu Human Resources do Finance w [Integratorze danych](/powerapps/administrator/data-integrator). Szablon Human Resources do Finance umożliwia przepływ danych dla zadań, stanowisk i pracowników. Szablon umożliwia przepływ danych z Human Resources do Finance, ale nie pozwala na przepływ danych z Finance do Human Resources.
 
-![Przepływ integracji z programu Human Resources do programu Finance](./media/hr-admin-integration-finance-flow.png)
+![Przepływ integracji z programu Human Resources do programu Finance.](./media/hr-admin-integration-finance-flow.png)
 
 Rozwiązanie Z Human Resources do Finance oferuje następujące rodzaje synchronizacji danych:
 
@@ -253,6 +253,6 @@ Identyfikator lokalizacji używany w adresie pracownika nie jest częścią nume
 
 Poniższa ilustracja przedstawia przykład mapowania w szablonie w Integratorze danych. 
 
-![Mapowanie w szablonie](./media/IntegrationMapping.png)
+![Mapowanie szablonu.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

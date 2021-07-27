@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1ec8e89ed82bcdffdc21e62d24ad8c8a7d939cdf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76d4bea9ad25494015a7bfeb324cb0e84dd024b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797870"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346859"
 ---
 # <a name="cart-module"></a>Moduł koszyka
 
@@ -35,11 +35,11 @@ Moduł koszyka służy do renderowania danych na podstawie identyfikatora koszyk
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam.
 
-![Przykład modułu koszyka w witrynie Fabrikam](./media/cart2.PNG)
+![Przykład modułu koszyka w witrynie Fabrikam.](./media/cart2.PNG)
 
 Poniższy obraz przedstawia przykład strony koszyka w witrynie Fabrikam. W tym przykładzie istnieje opłata manipulacyjna dla pozycji w wierszu.
 
-![Przykład modułu koszyka z opłatą manipulacyjną dla pozycji w wierszu](./media/ecommerce-handling-fee.png)
+![Przykład modułu koszyka z opłatą manipulacyjną dla pozycji w wierszu.](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Właściwości modułu koszyka i gniazda
 

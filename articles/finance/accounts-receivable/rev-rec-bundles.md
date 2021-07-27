@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: bce824267f435d9de0acd43ca145e0d148dfe67c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9afc7786de16cb1cada982f43beb956e062777a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816275"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347789"
 ---
 # <a name="revenue-recognition-bundles"></a>Pakiety rozpoznawania przychodów
 
@@ -59,15 +59,15 @@ Dla towarów składowych zostają zdefiniowane następujące podstawowe ceny spr
 
 Zamówienie sprzedaży zostaje wprowadzone dla odbiorcy US-004, czyli firmy Cave Wholesales. Jedynym wprowadzanym wierszem jest wiersz dla elementu pakietu Laptop. Domyślna cena jednostkowa dla wiersza nadrzędnego może pochodzić z wielu miejsc, np. z umowy handlowej lub podstawowej ceny sprzedaży. W tym przykładzie jako cenę jednostkową wprowadzono ręcznie 2300$.
 
-[![Element pakietu Laptop na zamówieniu sprzedaży](./media/bundle-01.png)](./media/bundle-01.png)
+[![Element pakietu Laptop na zamówieniu sprzedaży.](./media/bundle-01.png)](./media/bundle-01.png)
 
 Jako że zamówienie sprzedaży obejmuje pakiet, musi zostać potwierdzone. W oknie dialogowym potwierdzenia są wyświetlane elementy składowe pakietu.
 
-[![Okno dialogowe Potwierdzanie zamówień sprzedaży, w którym są widoczne towary składowe](./media/bundle-02.png)](./media/bundle-02.png)
+[![Okno dialogowe Potwierdzanie zamówień sprzedaży, w którym są widoczne towary składowe.](./media/bundle-02.png)](./media/bundle-02.png)
 
 Wydrukowany raport potwierdzenia będzie jednak zawierał tylko towar nadrzędny z pakietu, jako że raport ten jest dokumentem zewnętrznym dla odbiorcy.
 
-[![Raport potwierdzenia zawierający jedynie towar nadrzędny](./media/bundle-03.png)](./media/bundle-03.png)
+[![Raport potwierdzenia zawierający jedynie towar nadrzędny.](./media/bundle-03.png)](./media/bundle-03.png)
 
 Po potwierdzeniu zamówienia sprzedaży towar nadrzędny jest nadal wyświetlany w zamówieniu sprzedaży, ale jego stan zostaje zmieniony na **Anulowano**. Ponadto kwota netto jest śledzona w polu **Kwota netto pakietu**. Ta kwota jest wymagana w celu umożliwienia wydrukowania faktury, ponieważ na fakturze widnieje towar nadrzędny, a nie towary składowe.
 
@@ -85,7 +85,7 @@ Suma składowych powinna być równa kwocie 2300$ i tak właśnie jest (1713,73$
 
 Jeśli są wymagane zmiany mające zastosowanie do wszystkich towarów składowych, towar nadrzędny może zostać usunięty. W takim przypadku towary składowe także zostaną usunięte. Następnie można ponownie dodać towar nadrzędny i wprowadzić wymagane zmiany przed potwierdzeniem zamówienia sprzedaży.
 
-[![Element pakietu, który obejmuje zmiany w zakresie towarów składowych](./media/bundle-04.png)](./media/bundle-04.png)
+[![Element pakietu, który obejmuje zmiany w zakresie towarów składowych.](./media/bundle-04.png)](./media/bundle-04.png)
 
 Gdy zamówienie sprzedaży zostanie odebrane i zapakowane, dokumenty będą zawierać tylko elementy składowe pakietu. Dokument dostawy i faktura muszą uwzględniać pełny pakiet. W przeciwnym razie nie będzie możliwe ich zaksięgowanie. Na przykład w tym oknie dialogowym wyświetlane są trzy towary składowe. W przypadku próby usunięcia jednego z nich zostanie wyświetlony komunikat o błędzie informujący, że wszystkie produkty należące do pakietu muszą zostać wysłane, aby można było je zafakturować.
 
@@ -95,19 +95,19 @@ Częściowa wysyłka i zafakturowanie są możliwe tylko w przypadku, tylko ilo�
 
 Ostatnim krokiem jest wystawienie faktury za zamówienie sprzedaży. Podczas fakturowania w oknie dialogowym faktury są wyświetlane towary składowe.
 
-[![Okno dialogowe faktury, w którym są widoczne towary składowe](./media/bundle-06.png)](./media/bundle-06.png)
+[![Okno dialogowe faktury, w którym są widoczne towary składowe.](./media/bundle-06.png)](./media/bundle-06.png)
 
 Na wydrukowanej fakturze będzie jednak widoczny tylko towar nadrzędny.
  
-[![Wydrukowana faktura zawierająca jedynie towar nadrzędny](./media/bundle-07.png)](./media/bundle-07.png)
+[![Wydrukowana faktura zawierająca jedynie towar nadrzędny.](./media/bundle-07.png)](./media/bundle-07.png)
 
 Arkusz faktur utworzony po zaksięgowaniu nie zawiera towaru nadrzędnego z pakietu, ponieważ towar ten ma stan **Anulowano**.
 
-[![Arkusz faktur bez towaru nadrzędnego](./media/bundle-08.png)](./media/bundle-08.png)
+[![Arkusz faktur bez towaru nadrzędnego.](./media/bundle-08.png)](./media/bundle-08.png)
 
 Należy pamiętać, że arkusz faktur nie zawiera towaru nadrzędnego z pakietu, ponieważ wszelkie procesy realizowane po zaksięgowaniu faktury są oparte na tym arkuszu faktur. Jeśli na przykład na karcie **Sprzedaż** w okienku akcji zostanie utworzona faktura korygująca, to będzie ona obejmować towary składowe, a nie towar nadrzędny.
 
-[![Faktura korygująca zawierająca towary składowe, a nie towar nadrzędny](./media/bundle-09.png)](./media/bundle-09.png)
+[![Faktura korygująca zawierająca towary składowe, a nie towar nadrzędny.](./media/bundle-09.png)](./media/bundle-09.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

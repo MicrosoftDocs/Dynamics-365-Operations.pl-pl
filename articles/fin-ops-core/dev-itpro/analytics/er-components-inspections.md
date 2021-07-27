@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753847"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357673"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -242,7 +242,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 1. Rozpocznij konfigurowanie jednocześnie modelu danych ER i składników mapowania modelu ER.
 2. W drzewie modelu danych dodaj pole o nazwie **X** i jako typ danych wybierz opcję **Liczba całkowita**.
 
-    ![Pole X i typ danych Liczba całkowita dodane do drzewa trybu danych na stronie Model danych](./media/er-components-inspections-01.png)
+    ![Pole X i typ danych Liczba całkowita dodane do drzewa trybu danych na stronie Model danych.](./media/er-components-inspections-01.png)
 
 3. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Pole obliczeniowe**.
 4. Nazwij nowe źródło danych **Y** i skonfiguruj je tak, aby zawierało wyrażenie `INTVALUE(100)`.
@@ -250,17 +250,17 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 6. W projektancie modelu danych zmień typ danych pola **X** z **Liczba całkowita** na **Int64**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Walidacja edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-01.gif)
+    ![Walidacja edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu.](./media/er-components-inspections-01.gif)
 
 8. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję składnika mapowania modelu wybranej konfiguracji ER na stronie **Konfiguracje**.
 
-    ![Inspekcja w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje](./media/er-components-inspections-01a.png)
+    ![Inspekcja w celu skontrolowania składnika mapowania modelu na stronie Konfiguracje.](./media/er-components-inspections-01a.png)
 
 9. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że wartość typu **Liczba całkowita** zwracana przez wyrażenie `INTVALUE(100)` źródła danych **Y** nie może być przechowywana w polu modelu danych **X** o typie **Int64**.
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu skonfigurowanego do używania mapowania modelu.
 
-![Błędy czasu wykonywania na stronie Projektant formatów](./media/er-components-inspections-01b.png)
+![Błędy czasu wykonywania na stronie Projektant formatów.](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -290,7 +290,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 6. W drzewie struktury formatu zmień typ danych elementu formatu **Y** z **Liczba całkowita** na **Int64**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika formatu na stronie **Projektant formatów**.
 
-    ![Weryfikowanie zgodności typów na stronie Projektant formatów](./media/er-components-inspections-02.gif)
+    ![Weryfikowanie zgodności typów na stronie Projektant formatów.](./media/er-components-inspections-02.gif)
 
 8. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że skonfigurowane wyrażenie akceptuje tylko wartości **Int64**. Z tego względu wartości pola model danych **X** o typie **Liczba całkowita** nie można wprowadzić w elemencie formatu **Y**.
 
@@ -317,7 +317,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 1. Rozpocznij konfigurowanie jednocześnie modelu danych ER i składników mapowania modelu ER.
 2. W drzewie modelu danych dodaj pole o nazwie **X** i jako typ danych wybierz opcję **Liczba całkowita**.
 
-    ![Drzewo modelu danych z polem X i typem danych Liczba całkowita na stronie Model danych](./media/er-components-inspections-01.png)
+    ![Drzewo modelu danych z polem X i typem danych Liczba całkowita na stronie Model danych.](./media/er-components-inspections-01.png)
 
 3. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Pole obliczeniowe**.
 4. Nazwij nowe źródło danych **Y** i skonfiguruj je tak, aby zawierało wyrażenie `INTVALUE(100)`.
@@ -325,7 +325,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 6. W projektancie mapowania modelu w okienku **źródła danych** usuń źródło danych **Y**.
 7. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu](./media/er-components-inspections-03.gif)
+    ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu.](./media/er-components-inspections-03.gif)
 
 8. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że powiązanie pola modelu danych **X** zawiera ścieżkę odwołującą się do źródła danych **Y**, ale nie można odnaleźć tego źródła danych.
 
@@ -359,13 +359,13 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 8. Nazwij nowe zagnieżdżone pole **$AccNumber** i skonfiguruj je tak, aby zawierało wyrażenie `TRIM(Vendor.AccountNum)`.
 9. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do wyrażenia `FILTER(Vendor, Vendor.AccountNum="US-101")` znajdującego się w źródle danych **Vendor**.
 
-    ![Sprawdzanie, czy można wykonać zapytanie do wyrażenia na stronie Projektant mapowania modelu](./media/er-components-inspections-04.gif)
+    ![Sprawdzanie, czy można wykonać zapytanie do wyrażenia na stronie Projektant mapowania modelu.](./media/er-components-inspections-04.gif)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ źródło danych **Vendor** zawiera zagnieżdżone pole typu **Pole obliczeniowe**, które nie zezwala na przekształcenie wyrażenia źródła danych **FilteredVendor** na bezpośrednią instrukcję SQL.
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu skonfigurowanego do używania mapowania modelu.
 
-![Błędy czasu wykonywania występujące podczas uruchamiania edytowalnego formatu na stronie Projektant formatów](./media/er-components-inspections-04a.png)
+![Błędy czasu wykonywania występujące podczas uruchamiania edytowalnego formatu na stronie Projektant formatów.](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -396,23 +396,23 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     - Wybierz źródło danych **Trans** jako źródło rekordów, które powinny być zgrupowane.
     - W polu **Lokalizacja wykonywania** wybierz opcję **Zapytanie**, aby określić, że chcesz uruchamiać to źródło danych na poziomie bazy danych.
 
-    ![Konfigurowanie źródła danych na stronie edytowania parametrów funkcji „Grupuj wg”](./media/er-components-inspections-05a.gif)
+    ![Konfigurowanie źródła danych na stronie edytowania parametrów funkcji „Grupuj wg”.](./media/er-components-inspections-05a.gif)
 
 6. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do skonfigurowanego źródła danych **GroupedTrans**.
 7. Zmodyfikuj źródło danych **Trans** poprzez dodanie pola zagnieżdżonego o typie **Pole obliczeniowe**, aby uzyskać przycięty numer konta dostawcy.
 8. Nazwij nowe źródło danych **$AccNumber** i skonfiguruj je tak, aby zawierało wyrażenie `TRIM(Trans.AccountNum)`.
 
-    ![Konfigurowanie źródła danych na stronie Projektant mapowania modelu](./media/er-components-inspections-05a.png)
+    ![Konfigurowanie źródła danych na stronie Projektant mapowania modelu.](./media/er-components-inspections-05a.png)
 
 9. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do skonfigurowanego źródła danych **GroupedTrans**.
 
-    ![Sprawdzanie poprawności komponentu mapowania modelu ER i sprawdzanie, czy można zapytać o źródło danych Group Trans na stronie projektanta mapowania modelu](./media/er-components-inspections-05b.png)
+    ![Sprawdzanie poprawności komponentu mapowania modelu ER i sprawdzanie, czy można zapytać o źródło danych Group Trans na stronie projektanta mapowania modelu.](./media/er-components-inspections-05b.png)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ źródło danych **Trans** zawiera zagnieżdżone pole typu **Pole obliczeniowe**, które nie zezwala na przekształcenie wywołania o źródło danych **GroupedTrans** na bezpośrednią instrukcję SQL.
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu skonfigurowanego do używania mapowania modelu.
 
-![Błędy czasu wykonywania występujące w przypadku zignorowania ostrzeżenia wyświetlanego na stronie Projektant formatów](./media/er-components-inspections-05c.png)
+![Błędy czasu wykonywania występujące w przypadku zignorowania ostrzeżenia wyświetlanego na stronie Projektant formatów.](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -448,21 +448,21 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     2. Dodaj źródło danych **Vendor.FilteredTrans** jako drugi zbiór rekordów do sprzężenia. Wybierz **WEWNĘTRZNE** jako typ.
     3. W polu **Wykonaj** wybierz opcję **Zapytanie**, aby określić, że chcesz uruchamiać to źródło danych na poziomie bazy danych.
 
-    ![Konfigurowanie źródła danych na stronie Projektant sprzężenia](./media/er-components-inspections-06a.gif)
+    ![Konfigurowanie źródła danych na stronie Projektant sprzężenia.](./media/er-components-inspections-06a.gif)
 
 10. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do skonfigurowanego źródła danych **JoinedList**.
 11. Zmień wyrażenie w źródle danych **Vendor.FilteredTrans** z `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` na `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Wybierz opcję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu** oraz sprawdzić, czy można wykonać zapytanie do skonfigurowanego źródła danych **JoinedList**.
 
-    ![Weryfikowanie edytowalnego składnika mapowania modelu oraz sprawdzanie, czy można wykonać zapytanie do skonfigurowanego źródła danych JoinedList na stronie Projektant mapowania modelu](./media/er-components-inspections-06b.png)
+    ![Weryfikowanie edytowalnego składnika mapowania modelu oraz sprawdzanie, czy można wykonać zapytanie do skonfigurowanego źródła danych JoinedList na stronie Projektant mapowania modelu.](./media/er-components-inspections-06b.png)
 
 13. Zauważ, że występuje błąd sprawdzania poprawności, ponieważ nie można przekształcić wyrażenia źródła danych **Vendor.FilteredTrans** na bezpośrednie wywołanie SQL. Ponadto bezpośrednie wywołanie SQL nie zezwala na przekształcenie wywołania o źródło danych **JoinedList** na bezpośrednią instrukcję SQL.
 
-    ![Błędy czasu wykonywania spowodowane nieudaną weryfikacją źródła danych JoinedList na stronie Projektant mapowania modelu](./media/er-components-inspections-06c.png)
+    ![Błędy czasu wykonywania spowodowane nieudaną weryfikacją źródła danych JoinedList na stronie Projektant mapowania modelu.](./media/er-components-inspections-06c.png)
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu skonfigurowanego do używania mapowania modelu.
 
-![Uruchamianie edytowalnego formatu na stronie Projektant formatów](./media/er-components-inspections-06e.png)
+![Uruchamianie edytowalnego formatu na stronie Projektant formatów.](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -474,7 +474,7 @@ Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
 
 Zmień wyrażenie źródła danych **Vendor.FilteredTrans** z `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` z powrotem na `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, zgodnie z zaleceniem w ostrzeżeniu.
 
-![Zaktualizowane wyrażenie źródła danych na stronie Projektant mapowania modelu](./media/er-components-inspections-06d.png)
+![Zaktualizowane wyrażenie źródła danych na stronie Projektant mapowania modelu.](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>Opcja 2
 
@@ -497,11 +497,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 9. Nazwij nowe źródło danych **FilteredVendor** i skonfiguruj je tak, aby zawierało wyrażenie `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu](./media/er-components-inspections-07a.png)
+    ![Sprawdzanie edytowalnego składnika mapowania modelu ER na stronie Projektant mapowania modelu.](./media/er-components-inspections-07a.png)
 
 11. Zauważ, że ostrzeżenia sprawdzania poprawności zalecają używanie funkcji **FILTER** zamiast funkcji **WHERE** dla źródeł danych **FilteredVendor** i **FilteredTrans**.
 
-    ![Zalecenie użycia funkcji FILTER zamiast funkcji WHERE na stronie projektanta odwzorowania modelu](./media/er-components-inspections-07b.png)
+    ![Zalecenie użycia funkcji FILTER zamiast funkcji WHERE na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -509,7 +509,7 @@ Wybierz opcję **Napraw**, aby automatycznie zastąpić funkcję **WHERE** funkc
 
 Alternatywnie można zaznaczyć wiersz jednego ostrzeżenia w siatce, a następnie wybrać opcję **Napraw wybrane**. W tym przypadku wyrażenie jest automatycznie zmieniane tylko w źródle danych wymienionym w wybranym ostrzeżeniu.
 
-![Wybranie opcji Napraw, aby automatycznie zastąpić funkcję WHERE funkcją FILTER na stronie projektanta odwzorowania modelu](./media/er-components-inspections-07c.png)
+![Wybranie opcji Napraw, aby automatycznie zastąpić funkcję WHERE funkcją FILTER na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Ręczne rozwiązywanie
 
@@ -530,11 +530,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 7. Nazwij nowe źródło danych **FilteredVendorTrans** i skonfiguruj je tak, aby zawierało wyrażenie `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-08a.png)
+    ![Sprawdzanie edytowalnego składnika mapowania modelu na stronie Projektant mapowania modelu.](./media/er-components-inspections-08a.png)
 
 9. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat zaleca użycie funkcji **ALLITEMSQUERY** zamiast funkcji **ALLITEMS** dla źródła danych **FilteredVendorTrans**.
 
-    ![Zalecenie użycia funkcji ALLITEMSQUERY zamiast funkcji ALLITEMS na stronie projektanta odwzorowania modelu](./media/er-components-inspections-08b.png)
+    ![Zalecenie użycia funkcji ALLITEMSQUERY zamiast funkcji ALLITEMS na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -542,7 +542,7 @@ Wybierz opcję **Napraw**, aby automatycznie zastąpić funkcję **ALLITEMS** fu
 
 Alternatywnie można zaznaczyć wiersz jednego ostrzeżenia w siatce, a następnie wybrać opcję **Napraw wybrane**. W tym przypadku wyrażenie jest automatycznie zmieniane tylko w źródle danych wymienionym w wybranym ostrzeżeniu.
 
-![Wybranie opcji Napraw wybrane na stronie projektanta odwzorowania modelu](./media/er-components-inspections-08c.png)
+![Wybranie opcji Napraw wybrane na stronie projektanta odwzorowania modelu.](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Ręczne rozwiązywanie
 
@@ -563,7 +563,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **Name**.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **AccountNumber**.
 
-    ![Dodawanie zagnieżdżonych pól na stronie Model danych](./media/er-components-inspections-09a.png)
+    ![Dodawanie zagnieżdżonych pól na stronie Model danych.](./media/er-components-inspections-09a.png)
 
 6. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
 7. Nazwij nowe źródło danych **Vendor**. W polu **Tabela** wybierz opcję **VendTable**, aby określić, że to źródło danych będzie żądało tabeli VendTable.
@@ -577,7 +577,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     - Powiąż **FilteredVendor.AccountNum** z **Vendor.AccountNumber**.
     - Powiąż **FilteredVendor.'name()'** z **Vendor.Name**.
 
-    ![Powiązanie elementów modelu danych na stronie Projektant mapowania modelu](./media/er-components-inspections-09b.png)
+    ![Powiązanie elementów modelu danych na stronie Projektant mapowania modelu.](./media/er-components-inspections-09b.png)
 
 13. W drzewie struktury formatu dodaj następujące elementy w celu wygenerowania dokumentu wychodzącego w formacie XML zawierającego szczegóły dostawcy:
 
@@ -595,15 +595,15 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
 15. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika formatu na stronie **Projektant formatów**.
 
-    ![Sprawdzanie poprawności elementów formatu powiązanych ze źródłami danych na stronie Projektant formatów](./media/er-components-inspections-09c.png)
+    ![Sprawdzanie poprawności elementów formatu powiązanych ze źródłami danych na stronie Projektant formatów.](./media/er-components-inspections-09c.png)
 
 16. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że w czasie wykonywania może być zgłaszany błąd dla skonfigurowanych elementów formatu **Statement\\Party\\Name** i **Statement\\Party\\AccountNum**, jeżeli lista `model.Vendor` jest pusta.
 
-    ![Błąd sprawdzania poprawności powiadamiający o potencjalnym błędzie w skonfigurowanych elementach formatu](./media/er-components-inspections-09d.png)
+    ![Błąd sprawdzania poprawności powiadamiający o potencjalnym błędzie w skonfigurowanych elementach formatu.](./media/er-components-inspections-09d.png)
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia, wybrania opcji **Uruchom** w celu uruchomienia formatu oraz wybrania numeru konta nieistniejącego dostawcy. Ponieważ żądany dostawca nie istnieje, lista `model.Vendor` będzie pusta (czyli nie będzie zawierała żadnych rekordów).
 
-![Błędy czasu wykonywania występujące po uruchomieniu mapowania formatu](./media/er-components-inspections-09e.png)
+![Błędy czasu wykonywania występujące po uruchomieniu mapowania formatu.](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -615,7 +615,7 @@ Dla wybranego wiersza w siatce na karcie **Ostrzeżenia** można wybrać opcję 
 
 Można ręcznie powiązać element formatu **Statement\\Party\\Name** z elementem źródła danych `model.Vendor`. W czasie wykonywania powiązanie spowoduje najpierw wywołanie źródła danych `model.Vendor`. Gdy źródło danych `model.Vendor` zwróci pustą listę rekordów, zagnieżdżone elementy formatu nie zostaną uruchomione. Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla tej konfiguracji formatu.
 
-![Powiązanie elementu formatu z elementem źródła danych na stronie Projektant formatów](./media/er-components-inspections-09e.gif)
+![Powiązanie elementu formatu z elementem źródła danych na stronie Projektant formatów.](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Opcja 2
 
@@ -626,7 +626,7 @@ Zmień powiązanie elementu formatu **Zestawienie\\Strona\\Name** z `model.Vendo
 
 Z tego powodu nie występują ostrzeżenia sprawdzania poprawności dla elementu formatu **Zestawienie\\Strona\\Name**, gdy jest on powiązany z wyrażeniem `FIRSTORNULL(model.Vendor).Name`.
 
-![Zmienione powiązanie eliminuje problemy powodujące wyświetlanie ostrzeżeń sprawdzania poprawności na stronie Projektant formatów](./media/er-components-inspections-09f.gif)
+![Zmienione powiązanie eliminuje problemy powodujące wyświetlanie ostrzeżeń sprawdzania poprawności na stronie Projektant formatów.](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>Opcja 3
 
@@ -653,17 +653,17 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 7. Nazwij nowe źródło danych **FilteredVendor** i skonfiguruj je tak, aby zawierało wyrażenie `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Oznacz skonfigurowane źródło danych **Vendor** jako buforowane.
 
-    ![Konfigurowanie składnika mapowania modelu na stronie Projektant mapowania modelu](./media/er-components-inspections-10a.gif)
+    ![Konfigurowanie składnika mapowania modelu na stronie Projektant mapowania modelu.](./media/er-components-inspections-10a.gif)
 
 9. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika mapowania modelu na stronie **Projektant mapowania modelu**.
 
-    ![Sprawdzanie poprawności funkcji FILTER, która jest stosowana do buforowanego źródła danych dostawcy na stronie projektanta mapowania modelu](./media/er-components-inspections-10a.png)
+    ![Sprawdzanie poprawności funkcji FILTER, która jest stosowana do buforowanego źródła danych dostawcy na stronie projektanta mapowania modelu.](./media/er-components-inspections-10a.png)
 
 10. Zauważ, że występuje błąd sprawdzania poprawności. Komunikat stwierdza, że funkcji **FILTER** nie można zastosować do buforowanego źródła danych **Vendor**.
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu.
 
-![Błąd czasu wykonywania występujący po uruchomieniu mapowania formatu na stronie Projektant formatów](./media/er-components-inspections-10b.png)
+![Błąd czasu wykonywania występujący po uruchomieniu mapowania formatu na stronie Projektant formatów.](./media/er-components-inspections-10b.png)
 
 ### <a name="automatic-resolution&quot;></a>Automatyczne rozwiązywanie
 
@@ -694,7 +694,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **Name**.
     - Dodaj pole zagnieżdżone typu **Ciąg** i nadaj mu nazwę **AccountNumber**.
 
-    ![Dodawanie zagnieżdżonych pól do elementu Dostawca na stronie Model danych](./media/er-components-inspections-11a.png)
+    ![Dodawanie zagnieżdżonych pól do elementu Dostawca na stronie Model danych.](./media/er-components-inspections-11a.png)
 
 6. W projektancie mapowania modelu w okienku **Źródła danych** dodaj źródło danych typu **Dynamics 365 for Operations \\ Rekordy tabeli**.
 7. Nazwij nowe źródło danych **Vendor**. W polu **Tabela** wybierz opcję **VendTable**, aby określić, że to źródło danych będzie żądało tabeli VendTable.
@@ -710,7 +710,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
     > [!NOTE]
     > Pole modelu danych **Vendor.Name** pozostaje niepowiązane.
 
-    ![Elementy modelu danych powiązane ze skonfigurowanymi źródłami danych i element trybu danych, który pozostaje niezwiązany na stronie projektanta mapowania modelu](./media/er-components-inspections-11b.png)
+    ![Elementy modelu danych powiązane ze skonfigurowanymi źródłami danych i element trybu danych, który pozostaje niezwiązany na stronie projektanta mapowania modelu.](./media/er-components-inspections-11b.png)
 
 13. W drzewie struktury formatu dodaj następujące elementy w celu wygenerowania dokumentu wychodzącego w formacie XML zawierającego szczegóły dostawców, o których jest wykonywane zapytanie:
 
@@ -729,15 +729,15 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 
 15. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika formatu na stronie **Projektant formatów**.
 
-    ![Sprawdzanie poprawności składnika formatu ER na stronie Projektant formatów](./media/er-components-inspections-11c.png)
+    ![Sprawdzanie poprawności składnika formatu ER na stronie Projektant formatów.](./media/er-components-inspections-11c.png)
 
 16. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat stwierdza, że pole źródła danych **model.Vendor.Name** nie jest powiązane z żadnym źródłem danych w mapowaniu modelu skonfigurowanym do używania przez format. Z tego względu element formatu **Zestawienie\\Strona\\Name** może nie być wypełniany w czasie wykonywania i w efekcie może wystąpić wyjątek czasu wykonywania.
 
-    ![Sprawdzanie poprawności składnika formatu ER na stronie Projektant formatów](./media/er-components-inspections-11d.png)
+    ![Sprawdzanie poprawności składnika formatu ER na stronie Projektant formatów.](./media/er-components-inspections-11d.png)
 
 Na poniższej ilustracji przedstawiono błąd czasu wykonywania, który występuje w przypadku zignorowania ostrzeżenia i wybrania opcji **Uruchom** w celu uruchomienia formatu.
 
-![Uruchamianie edytowalnego formatu na stronie Projektant formatów](./media/er-components-inspections-11e.png)
+![Uruchamianie edytowalnego formatu na stronie Projektant formatów.](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 
@@ -766,7 +766,7 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 5. W elemencie **Excel\\Plik** wybierz plik skoroszytu A.
 6. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika formatu na stronie **Projektant formatów**.
 
-    ![Sprawdzanie poprawności edytowalnego składnika formatu pliku skoroszytu na stronie Projektant formatów](./media/er-components-inspections-12a.gif)
+    ![Sprawdzanie poprawności edytowalnego składnika formatu pliku skoroszytu na stronie Projektant formatów.](./media/er-components-inspections-12a.gif)
 
 7. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat stwierdza, że plik skoroszytu B. xlsx nie jest połączony z żadnymi składnikami i zostanie usunięty po zmianie stanu wersji konfiguracji.
 
@@ -794,11 +794,11 @@ Poniższe kroki pokazują, jak może dojść do tego problemu.
 4. Dodaj następujący element **Excel\\Komórka** **Title** jako zagnieżdżony element elementu **Report**. W polu **Zakres programu Excel** wprowadź **ReportTitle**.
 5. Wybierz pozycję **Weryfikuj**, aby przeprowadzić inspekcję edytowalnego składnika formatu na stronie **Projektant formatów**.
 
-    ![Sprawdzanie poprawności zagnieżdżonych elementów i pól na stronie Projektant formatów](./media/er-components-inspections-13a.png)
+    ![Sprawdzanie poprawności zagnieżdżonych elementów i pól na stronie Projektant formatów.](./media/er-components-inspections-13a.png)
 
 6. Zauważ, że występuje ostrzeżenie sprawdzania poprawności. Komunikat stwierdza, że nazwa **ReportTitle** nie istnieje w arkuszu **Arkusz1** w używanym szablonie programu Excel.
 
-    ![Ostrzeżenie sprawdzania poprawności informujące, że nazwa ReportTitle nie istnieje w arkuszu Arkusz1 w szablonie programu Excel](./media/er-components-inspections-13b.png)
+    ![Ostrzeżenie sprawdzania poprawności informujące, że nazwa ReportTitle nie istnieje w arkuszu Arkusz1 w szablonie programu Excel.](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
 

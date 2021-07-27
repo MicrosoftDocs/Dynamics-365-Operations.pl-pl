@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validfrom: ''
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 1118d7334602e450e5d503632895f73ba19066a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cb04502721740c48004b62bc96ff13ca063e06db
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814785"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360905"
 ---
 # <a name="phantom-items"></a>Towary fantomowe
 
@@ -27,12 +27,12 @@ ms.locfileid: "5814785"
 
 W tym temacie szczegółowo opisano, jak typ wiersza Fantom może być wykorzystywany w wierszach listy składowej (BOM) i formule. Na ilustracji poniżej (a) to BOM produktu H oraz części F i G, a (b) to arkusz marszruty dla produktu H i części F.
 
-![Produkt H i część F](media/product-H-part-F.png)
+![Produkt H i część F.](media/product-H-part-F.png)
 
 
 Na tej ilustracji pokazano przykład struktury BOM na dwóch poziomach. Produkt gotowy H reprezentuje produkt dla zespołu maszyny. Zespół maszyny składa się z dwóch części: jednostki elektrycznej (F) zawierającej dwa materiały (A i B) oraz grupy materiałów opakowaniowych (G), która również zawiera dwa materiały (C i D). Inny materiał (E) jest używany podczas ogólnego składania maszyny.
 
-![Produkt H i część F](media/product-H-part-B.png)
+![Produkt H i część F.](media/product-H-part-B.png)
 
 Poprzednia ilustracja reprezentuje inżynieryjną listę składową produktu H. Ta struktura dobrze pokazuje ogólny obraz części i składników tworzących cały zespół maszyny. Projektanci produktu mogą preferować przedstawianie BOM w ten sposób, ale ta struktura może nie odzwierciedlać prawidłowo sposobu, w jaki maszyna jest składana na wydziale produkcyjnym. 
 
@@ -53,23 +53,23 @@ W przejście od inżynieryjnej listy BOM do produkcyjnej listy BOM jest realizow
 ## <a name="multilevel-phantom-bom-structures"></a>Wielopoziomowy fantomowe struktury BOM
 Typ wiersza Fantom może być wykorzystywany w wielopoziomowych strukturach BOM, jak pokazano na poniższej ilustracji. Na tej ilustracji (a) to BOM dla produktu G, a (b) to arkusz marszruty dla części E i F oraz produktu G. 
 
-![Produkt G i część F z arkuszami marszruty](media/product-G-route-sheet-G.png)
+![Produkt G i część F z arkuszami marszruty.](media/product-G-route-sheet-G.png)
 
 
 Poniższa ilustracja pokazuje powstałą produkcyjną listę składową i arkusz marszruty, jeśli w wierszach BOM dla części E i F skonfigurowano typ wiersza Fantom. Na tej ilustracji (a) to BOM dla produktu G, a (b) to arkusz marszruty dla produktu G.
 
-![Produkt G](media/product-G.png)
+![Produkt G.](media/product-G.png)
 
 
 ## <a name="phantom-and-route-network"></a>Fantom i sieć marszrut
 Fantomowych BOM można również używać dla list składowych zawierających sieć marszrut. W sieci marszrut następuje równoległe wykonywanie jednej lub więcej operacji. Ilustracja poniżej przedstawia przykład sieci marszrut używanej w wielopoziomowym BOM. Na tej ilustracji (a) to BOM dla produktów G i F, a (b) to arkusz marszruty dla produktu G oraz części E i F zawierającej sieć marszrut.
 
-![Produkt G i część F](media/product-G-part-F.png)
+![Produkt G i część F.](media/product-G-part-F.png)
 
 
 Na ilustracji poniżej (a) to BOM produktu G i części F, a (b) to arkusz marszruty dla produktu G i części F.
 
-![Produkt G i część F z arkuszami marszruty](media/product-G-part-F-with-route-sheet.png)
+![Produkt G i część F z arkuszami marszruty.](media/product-G-part-F-with-route-sheet.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

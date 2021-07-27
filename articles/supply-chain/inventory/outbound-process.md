@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: e9f9da7d6e3ede9816757fb57f0b802ce4d41360
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 29029cfa032f36c4dc0590ff76f44417dc056ef8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348812"
 ---
 # <a name="outbound-process-overview"></a>Omówienie procesu wychodzącego
 
@@ -37,7 +39,7 @@ Po wygenerowaniu list pobrania z zamówień sprzedaży lub zamówień przeniesie
 
 Poniższy schemat przedstawia przegląd procesu dotyczącego zamówień wychodzących. 
 
-[![Przegląd procesu zamówienia wychodzącego](./media/outbound-order.png)](./media/outbound-order.png)
+[![Przegląd procesu zamówienia wychodzącego.](./media/outbound-order.png)](./media/outbound-order.png)
 
 Aby zdefiniować sposób obsługi przez program procesu wychodzącego, można ustawić odpowiednie reguł wychodzące. Tych zasad można użyć do kontroli procesu wysyłki. W szczególności można użyć zasad do kontroli, na jakim etapie procesu ma zostać zrealizowana wysyłka. Poniższe ustawienia określają sposób obsługi procesów wychodzących.
 
@@ -45,31 +47,31 @@ Aby zdefiniować sposób obsługi przez program procesu wychodzącego, można us
 
 Przejdź do okna **Rozrachunki z odbiorcami** \> **Konfiguracja** \> **Parametry modułu rozrachunków z odbiorcami**, a następnie na karcie **Aktualizacje** wybierz wartość w polu **Stan marszruty pobrania**.
 
-[![Pole Stan marszruty pobrania dla zamówień sprzedaży](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
+[![Pole Stan marszruty pobrania dla zamówień sprzedaży.](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
 Jeżeli pole **Stan marszruty pobrania** jest ustawione na **Ukończono**, proces pobierania następuje automatycznie jako część procesu generowania list pobierania. Jeżeli pole jest ustawione na **Aktywowane**, wiersze list pobierania należy zaktualizować ręcznie.
 
 Ta sama konfiguracja dotyczy zamówień przeniesienia. Przejdź do okna **Zarządzanie zapasami** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem**, a następnie na karcie **Transport** wybierz wartość w polu **Stan marszruty pobrania**.
 
-[![Pole Stan marszruty pobrania dla zamówień przeniesienia](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
+[![Pole Stan marszruty pobrania dla zamówień przeniesienia.](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## <a name="end-output-inventory-orders"></a>Koniec zamówień magazynowego wyjścia
 
 Przejdź do okna **Zarządzanie zapasami** \> **Konfiguracja** \> **Parametry modułu Zarządzanie zapasami i magazynem**, a następnie na karcie **Ogólne** ustaw opcję **Koniec zamówienia magazynowego wyjścia**.
 
-[![Opcja Koniec zamówienia magazynowego wyjścia](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
+[![Opcja Koniec zamówienia magazynowego wyjścia.](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
 Gdy pracownik magazynu zmniejszy ilości na listach pobrania, odpowiednie ilości w zamówieniu magazynowym zostaną usunięte z wysyłki. Gdy lista pobrania zostanie zaktualizowana w określonym czasie, pozostałe ilości są zgłaszane z powrotem do zamówienia, jeżeli opcja **Koniec zamówienia magazynowego wyjścia** jest ustawiona na **Tak**. Jeżeli opcja **Koniec zamówienia magazynowego wyjścia** jest ustawiona na **Nie**, pozostała ilość jest zachowywana jako otwarta ilość zamówienia wyjścia i musi zostać dodana do nowej listy pobrania jako część funkcji **Otwórz zamówienia wyjścia**. 
 
-[![Polecenie Otwórz zamówienia wyjścia w menu Funkcje](./media/open-output-order.png)](./media/open-output-order.png)
+[![Polecenie Otwórz zamówienia wyjścia w menu Funkcje.](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![Menu Funkcje na stronie Otwórz zamówienia wyjścia](./media/open-output-order-function.png)](./media/open-output-order-function.png)
+[![Menu Funkcje na stronie Otwórz zamówienia wyjścia.](./media/open-output-order-function.png)](./media/open-output-order-function.png)
 
 ## <a name="reduce-quantity"></a>Zmniejsz ilość
 
 Trzeci parametr, którego można użyć w ramach procesu generowania list pobrania to parametr **Zmniejsz ilość**. Ustawienie tego parametru jest powiązane z ustawieniem **Rezerwacja**, które uruchamia proces rezerwacji w ramach zwolnienia do magazynu.
 
-[![Parametr Zmniejsz ilość](./media/reduce-quantity.png)](./media/reduce-quantity.png)
+[![Parametr Zmniejsz ilość.](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## <a name="example-of-an-outbound-process-for-a-sales-order"></a>Przykład procesu wyjścia dla zamówienia sprzedaży
 
@@ -77,11 +79,11 @@ W tym przykładzie występuje zamówienie sprzedaży dla dwóch towarów. Podcza
 
 Podczas generowania listy pobrania rezerwowane są zapasy, które nie zostały już zarezerwowane. Niedostępne zapasy można usunąć z zamówienia sprzedaży lub zwolnione do magazynu do późniejszego przetworzenia wyjściowego, gdy zapasy będą dostępne do pobrania.
 
-[![Aktualizuj listę pobrania](./media/update-picking-list.png)](./media/update-picking-list.png)
+[![Aktualizuj listę pobrania.](./media/update-picking-list.png)](./media/update-picking-list.png)
 
 Po pobraniu wszystkich wierszy pobrania na stronie **Potwierdzenie listy pobrania** skojarzona wysyłka jest ukończona. Następnie można rozpocząć przetwarzanie dokumentów dostawy zamówienia sprzedaży dla odebranego towaru.
 
-[![Aktualizacja wysyłek wychodzących](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+[![Aktualizacja wysyłek wychodzących.](./media/outbound-shipments.png)](./media/outbound-shipments.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

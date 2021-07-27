@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754095"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361415"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
@@ -33,7 +33,7 @@ Ważnym celem większości firm jest konwersja prospektów na odbiorców, a nast
 
 W interfejsach aplikacji można uzyskać dostęp do Stanów przetwarzania i informacji o fakturze w czasie rzeczywistym. Dzięki temu można łatwiej zarządzać funkcjami, takimi jak magazynowanie produktów, obsługa zapasów i realizacja w Supply Chain Management bez konieczności ponownego tworzenia ofert i zamówień.
 
-![Przepływ danych o podwójnym zapisie od prospekta do kasy](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Przepływ danych o podwójnym zapisie od prospektu do kasy.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Aby uzyskać informacje o integracji odbiorcy i kontaktów, zobacz temat [Zintegrowany wzorzec klienta](customer-mapping.md). Aby uzyskać informacje na temat integracji produktów, zobacz temat [Ujednolicone działanie produktu](product-mapping.md).
 

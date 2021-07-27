@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837880"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361167"
 ---
 # <a name="asset-fault-analysis"></a>Analiza usterek składników majątku
 
@@ -60,7 +60,7 @@ Na poniższym zrzucie jest zaznaczony tylko przycisk **Objaw**.
 - Przeprowadzono rejestracje błędów na trzech objawach usterek: „przeciek powietrza”, „przepalony bezpiecznik” i „wystąpiło zacięcie sprzętu”.  
 - W kolumnie **Prawdopodobieństwo (%)** wszystkie wartości procentowe sumują się do 100%. W tej analizie błędów prawdopodobieństwo jest oparte na wszystkich wpisach **Objawów**.
 
-![Rysunek 1](media/06-controlling-and-reporting.png)
+![Rysunek 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Grupowanie według objawów i okresu
 
@@ -69,7 +69,7 @@ W poniższym zrzucie ekranu **Rok** i **Miesiąc** zostały dodane, aby pokazać
 - Objawy usterki są teraz widoczne jako rejestracje na rok/miesiąc.  
 - Jeśli w kolumnie **Prawdopodobieństwo (%)** zostaną dodane wszystkie wartości procentowe dla każdego miesiąca, sumują się do 100%. W tej analizie błędów prawdopodobieństwo jest oparte na wszystkich wpisach **Objawów**. Jeśli składnik majątku zawiera dużą liczbę wierszy, ale w wierszu znajduje się duża wartość procentowa, to znaczy, że jest to wskaźnik usterki służący do dokładnego zbadania, aby znaleźć sposób ograniczenia liczby rejestracji dla tego objawu usterki.
 
-![Rysunek 2](media/07-controlling-and-reporting.png)
+![Rysunek 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Grupowanie według wielu objawów i składników majątku
 
@@ -84,7 +84,7 @@ W poniższym zrzucie ekranu dodano **Składnik majątku** i **Typ składnika maj
 - Objawy błędów są teraz podzielone w kombinacjach **Składnik majątku** / **Typ składnika majątku** / **Objaw**.  
 - Jeśli w kolumnie **Prawdopodobieństwo (%)** zostaną dodane wszystkie wartości procentowe dla odpowiednich kombinacji **Składnik majątku** / **Typ składnika majątku** / **Objaw**, które sumują się do 100%. W tej analizie błędów prawdopodobieństwo jest oparte na wszystkich rejestracjach **Objawów**. Jeśli składnik majątku zawiera dużą liczbę wierszy, ale w wierszu znajduje się duża wartość procentowa, to znaczy, że jest to wskaźnik usterki służący do dokładnego zbadania, aby znaleźć sposób ograniczenia liczby rejestracji dla tego objawu usterki.
 
-![Rysunek 3](media/08-controlling-and-reporting.png)
+![Rysunek 3.](media/08-controlling-and-reporting.png)
 
 **Grupowanie według dwóch objawów, składnika majątku i typu składnika majątku**
 
@@ -92,7 +92,7 @@ W poniższym zrzucie ekranu dodano **Obszar** do **Objaw**, **Składnik majątku
 
 - Jeśli w kolumnie **Prawdopodobieństwo (%)** zostaną dodane wszystkie wartości procentowe dla odpowiednich kombinacji **Składnik majątku** / **Typ składnika majątku** / **Objaw** dla danego składnika majątku, to wartości sumują się do 100%. W tej analizie błędów prawdopodobieństwo jest oparte na kombinacji **Objaw** i **Obszar**. Jeśli składnik majątku zawiera dużą liczbę wierszy, ale w wierszu wyróżnia się duża wartość procentowa, to znaczy, że jest to wskaźnik obszaru usterki służący do dokładnego zbadania, aby znaleźć sposób ograniczenia liczby rejestracji dla tego obszaru usterki.  
 
-![Rysunek 4](media/09-controlling-and-reporting.png)
+![Rysunek 4.](media/09-controlling-and-reporting.png)
 
 **Grupowanie według trzech objawów, składnika majątku i typu składnika majątku**
 
@@ -100,7 +100,7 @@ W poniższym zrzutie ekranu dodano **Typ**, a w tym przykładzie jest pokazane n
  
 - Jeśli w kolumnie **Prawdopodobieństwo (%)** zostaną dodane wszystkie wartości procentowe dla odpowiednich kombinacji **Składnik majątku** / **Typ składnika majątku** / **Objaw** dla danego składnika majątku, to wartości sumują się do 100%. W tej analizie błędów prawdopodobieństwo jest oparte na kombinacji **Objaw**, **Obszar** i **Typ** Jeśli składnik majątku zawiera dużą liczbę wierszy, ale w wierszu wyróżnia się duża wartość procentowa, to znaczy, że jest to wskaźnik typu usterki służący do dokładnego zbadania, aby znaleźć sposób ograniczenia liczby rejestracji dla tego typu usterki.
 
-![Rysunek 5](media/10-controlling-and-reporting.png)
+![Rysunek 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

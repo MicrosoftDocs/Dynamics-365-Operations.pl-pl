@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7d0f505ce49bc9be0d027cbb0d636c9de0600b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 75f41db74512ea758a83de56ffd2a9166712f5e2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804460"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352283"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Rezygnowanie z rekomendacji spersonalizowanych
 
@@ -44,11 +44,11 @@ W przypadku zarządzania kontami w module zaplecza Commerce, sprzedawcy mogą zr
 1. Na stronie głównej zaplecza wyszukaj **wszystkich odbiorców**.
 1. Wyszukaj i wybierz odbiorcę, a następnie wybierz skróconą kartę **Sieć sprzedaży**.
 
-    ![Skrócona karta sieci sprzedaży](./media/Disablepersonalizationpart1.png)
+    ![Skrócona karta sieci sprzedaży.](./media/Disablepersonalizationpart1.png)
 
 1. W obszarze **prywatność** ustaw opcję **Wyłącz personalizację** na **tak**.
 
-    ![Ustawienia prywatności](./media/Disablepersonalizationpart2.png)
+    ![Ustawienia prywatności.](./media/Disablepersonalizationpart2.png)
 
 1. Wybierz przycisk **Zapisz** i zamknij stronę.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 071c73f9295ad7911037cbd10a48b46b044eebda
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 19cdc33fcc9d1293b235facbaffd1ccf62875217
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808239"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360060"
 ---
 # <a name="work-order-project-setup"></a>Ustawienia projektu zlecenia pracy
 
@@ -69,7 +69,7 @@ Konfiguracja pozwala na pełną integrację z modułem **Zarządzanie projektami
 
     Domyślnie datą rozpoczęcia jest data, kiedy do strony zostanie dodany projekt zlecenia pracy. Jest on sterowany przez pole **Ważne od**, które jest domyślnie ukryte. Aby wyświetlić pole **Ważne od**, wybierz opcję **Wyświetl** \> **Wszystko**. Następnie można używać pola **Ważne od** w połączeniu z polem **Data zakończenia** w celu skonfigurowania ograniczonego okresu ważności dla projektu zlecenia pracy.
 
-    ![Strona ustawień projektu zleceń pracy](media/17-setup-for-work-orders.png)
+    ![Strona ustawień projektu zleceń pracy.](media/17-setup-for-work-orders.png)
 
 6. Na karcie **Grupa projektów** wybierz przycisk **Dodaj**.
 7. W polu **Typ zlecenia pracy** wybierz typ zlecenia pracy.
@@ -77,7 +77,7 @@ Konfiguracja pozwala na pełną integrację z modułem **Zarządzanie projektami
 9. W polu **Grupa projektów** wybierz grupę projektów, która powinna być związana z typem zlecenia pracy. Na przykład typ zlecenia pracy o nazwie **Konserwacja zapobiegawcza** może być skojarzony z grupą projektów o nazwie **Kons. zap.** lub **Wewnętrzne**. Alternatywnie, typ **Inwestycja** zlecenia pracy używany dla zleceń pracy związanych z inwestycjami i środkami trwałymi może być skojarzony z grupą projektów o nazwie **Inwestowanie** lub **Inwestycje**.
 10. Wybierz opcję **Zapisz**.
 
-![Strona Ustawienia projektu zleceń pracy, Dodaj zlecenie pracy](media/18-setup-for-work-orders.png)
+![Strona Ustawienia projektu zleceń pracy, Dodaj zlecenie pracy.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Podczas tworzenia wiersza zlecenia pracy, Zarządzanie składnikami majątku wyszukuje grupę projektów, która powinna być związana z projektem zadania zlecenia pracy. Wyszukiwanie jest oparte na konfiguracji opisanej w tym temacie. Każda grupa projektów ma powiązany Typ projektu. Grupy projektów, które mają typ **Czas i materiały** lub **Stała cena** są ważne tylko dla składników majątku związanych z kontem odbiorcy.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271215"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360383"
 ---
 # <a name="firm-planned-orders"></a>Zaakceptuj zamówienia planowane
 
@@ -81,7 +81,7 @@ Aby ręcznie ustalić zamówienia planowane, należy znaleźć i wybrać zamówi
     - **Grupuj według okresów** (w sekcji **Zamówienia zakupu**) — umożliwia wybór okresu, według którego mają być grupowane planowane zamówienia zakupu. Aby skorzystać z tej opcji, należy też zaznaczyć opcję **Grupuj wg dostawcy**.
     - **Grupuj według okresów** (w sekcji **Przeniesienia**) — umożliwia wybór okresu, według którego mają być grupowane planowane przeniesienia. Zamówienia zostaną pogrupowane na podstawie wartości **Z magazynu** i **Do magazynu**.
 
-    ![Skrócona karta Parametry w oknie dialogowym Ustalanie](./media/manual-firming.png "Skrócona karta Parametry w oknie dialogowym Ustalanie")
+    ![Skrócona karta Parametry w oknie dialogowym Ustalanie.](./media/manual-firming.png "Skrócona karta Parametry w oknie dialogowym Ustalanie")
 
 1. Na skróconej karcie **Uruchom w tle** skonfiguruj zadanie, tak aby działało w trybie wsadowym. Jednak w przypadku ręcznego ustalania nie ma sensu konfigurowanie harmonogramu cyklicznego. Pola działają w ten sam sposób, jak działają w przypadku innych typów [zadań w tle](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) w module Supply Chain Management. Jednak w przypadku ręcznego ustalania zadanie wsadowe będzie przetwarzać tylko aktualnie wybrane zamówienia planowane. Nie będzie przetwarzać żadnych zamówień, które pasują do filtrów, które są obecnie stosowane na stronie.
 1. Wybierz przycisk **OK**, aby zastosować ustawienia i wygenerować ustalone zamówienia.
@@ -140,15 +140,15 @@ Aby ustalić zamówienie planowane za pomocą procesu ustalania opartego na zapy
     - **Dni naprzód horyzontu czasowego ustalania** — można określić, jak daleko w przyszłości mają być obliczane różne zapotrzebowania i inne aspekty w planowaniu głównym.
     - **Dni wstecz horyzontu czasowego ustalania** — można określić, jak daleko w przeszłości mają być obliczane różne zapotrzebowania i inne aspekty w planowaniu głównym.
 
-    ![Skrócona karta Parametry w oknie dialogowym Ustalanie zamówienia planowanego](./media/planned-order-firming-main-1.png "Skrócona karta Parametry w oknie dialogowym Ustalanie zamówienia planowanego")
+    ![Skrócona karta Parametry w oknie dialogowym Ustalanie zamówienia planowanego.](./media/planned-order-firming-main-1.png "Skrócona karta Parametry w oknie dialogowym Ustalanie zamówienia planowanego")
 
 1. Aby określić, które rekordy powinny zostać uwzględnione w zamówieniu, należy wybrać przycisk **Filtr** na skróconej karcie **Rekordy do uwzględnienia**. Zostanie wyświetlone standardowe okno dialogowe zapytania, w którym można definiować kryteria wyboru, kryteria sortowania i sprzężenia. Pola działają w ten sam sposób, jak działają w przypadku innych typów zapytań w module Supply Chain Management. Pola w tym miejscu są tylko do odczytu i pokazują wartości, które są powiązane z zapytaniem.
 
-    ![Skrócona karta Rekordy do uwzględnienia w oknie dialogowym Ustalanie zamówienia planowanego](./media/planned-order-firming-main-2.png "Skrócona karta Rekordy do uwzględnienia w oknie dialogowym Ustalanie zamówienia planowanego")
+    ![Skrócona karta Rekordy do uwzględnienia w oknie dialogowym Ustalanie zamówienia planowanego.](./media/planned-order-firming-main-2.png "Skrócona karta Rekordy do uwzględnienia w oknie dialogowym Ustalanie zamówienia planowanego")
 
 1. Wybierz opcję **Podgląd**, aby wyświetlić podgląd zawartości ustalanego zamówienia wybranego na podstawie do tej pory wybranych ustawień. Zostanie wyświetlona jako komunikat lista zamówień planowanych, które zostaną ustalone. Ustawienia można dostosowywać zgodnie z potrzebą, dopóki w podglądzie nie zostanie wyświetlone ustalone zamówienie zgodnie z zamysłem.
 
-    ![Przykład podglądu ustalonego zamówienia](./media/planned-order-firming-preview.png "Przykład podglądu ustalonego zamówienia")
+    ![Przykład podglądu ustalonego zamówienia.](./media/planned-order-firming-preview.png "Przykład podglądu ustalonego zamówienia")
 
     > [!WARNING]
     > Ta funkcja spowoduje ustalenie wszystkich zamówień planowanych spełniających kryteria filtrowania. Bezkrytyczne ustalanie zamówień planowanych może spowodować, że będą tworzone niepożądane zamówienia zakupu i przeniesienia oraz zlecenia produkcyjne. Przed kontynuowaniem zawsze używaj przycisku **Podgląd**, aby sprawdzić poprawność uwzględnionych rekordów.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a2bcd7a1ce68dfd6c4c93d10561d58a42d30f611
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: efa85c4a3371bb5096df1a56d818527156654279
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303251"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357222"
 ---
 # <a name="manage-leave-and-absence-requests"></a>Zarządzanie wnioskami o urlop i nieobecność
 
@@ -41,7 +41,7 @@ Ta funkcja zawiera następujące udoskonalenia:
 - Można zaznaczyć wiele wniosków urlopowych i wykonać tę samą akcję na wszystkich z nich.
 - Na wstążce u góry i przycisku nowego przepływu pracy na stronie są wyświetlane akcje, które można wykonać na wnioskach urlopowych.
 
-![Środowisko menedżera](media/hr-leave-and-absence-manager-experience.png)
+![Środowisko menedżera.](media/hr-leave-and-absence-manager-experience.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

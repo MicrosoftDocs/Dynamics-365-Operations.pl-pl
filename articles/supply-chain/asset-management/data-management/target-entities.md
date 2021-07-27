@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3b28475e6432294b3a9ed0c63341122bedca037
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838641"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346185"
 ---
 # <a name="target-entities"></a>Jednostki docelowe
 
@@ -34,13 +34,13 @@ W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek 
 
 2. W sekcji **Import/eksport** kliknij pozycję **Jednostki danych**. 
 
-    ![Rysunek 1](media/01-data-management.png)
+    ![Rysunek 1.](media/01-data-management.png)
 
 3. Na stronie **Jednostki docelowe** wyszukaj hasło „zarządzanie skłądnikami majątku” w filtrze i naciśnij klawisz ENTER, aby wyświetlić listę jednostek związanych z zarządzaniem składnikami majątku.
 
     Na poniższym rysunku przedstawiono niektóre jednostki zarządzania składnikami majątku.
 
-   ![Rysunek 2](media/02-data-management.png)
+   ![Rysunek 2.](media/02-data-management.png)
 
 4. Wybierz jednostkę i kliknij przycisk **Modyfikuj mapowanie celu**.
 
@@ -48,7 +48,7 @@ W obszarze roboczym **Zarządzanie danymi** można uzyskać przegląd jednostek 
 
     Na poniższym rysunku przedstawiono wizualizację pól związanych z jednostką typy typu składnika majątku.
 
-    ![Rysunek 3](media/03-data-management.png)
+    ![Rysunek 3.](media/03-data-management.png)
 
 
 

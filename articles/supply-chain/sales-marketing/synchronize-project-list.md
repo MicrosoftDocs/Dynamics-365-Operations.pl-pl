@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828498"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359844"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synchronizowanie listy projektów z rozwiązania Supply Chain Management do rozwiązania Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828498"
 
 W tym temacie omówiono szablony i podstawowe zadania, które są używane do synchronizowania projektów z Dynamics 365 Supply Chain Management do Dynamics 365 Field Service.
 
-[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 Poniższy szablon i podstawowe zadania są używane do synchronizowania projektów między rozwiązaniami Supply Chain Management i Field Service.
@@ -63,7 +63,7 @@ Włączanie śledzenia zmian w projektach jednostek danych
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projekty (rozwiązanie Supply Chain Management do rozwiązania Field Service): Porjekty
 
-[![Mapowanie szablonu w integracji danych](./media/FSProject1.png)](./media/FSProject1.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

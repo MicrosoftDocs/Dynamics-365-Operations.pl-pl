@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894179"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357649"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Kompresuj duże dokumenty generowane w ramach raportowania elektronicznego 
 
@@ -55,7 +55,7 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
 1. [Uruchamianie zaimportowanego formatu](er-defer-xml-element.md#run-the-imported-format).
 2. Zauważ, że rozmiar wygenerowanego dokumentu w formacie XML wynosi 3 kilobajty (KB).
 
-    ![Podgląd nieskompresowanego dokumentu wychodzącego](./media/er-compress-outbound-files1.png)
+    ![Podgląd nieskompresowanego dokumentu wychodzącego.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Zmodyfikuj format, aby skompresować wygenerowany wynik
 
@@ -80,7 +80,7 @@ Przed wykonaniem procedur opisanych w tym temacie należy wykonać następujące
     > [!NOTE] 
     > Stopień kompresji pliku XML, który jest przetrzymany przez ten plik zip, wynosi 87 procent. Współczynnik kompresji zależy od danych, które są kompresowane.
 
-    ![Podgląd skompresowanego dokumentu wychodzącego](./media/er-compress-outbound-files2.png)
+    ![Podgląd skompresowanego dokumentu wychodzącego.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Jeśli [miejsce docelowe](electronic-reporting-destinations.md) ER jest skonfigurowane dla elementu formatu, który generuje dane wyjściowe (element **Raport** w tym przykładzie), kompresja danych wyjściowych zostanie pominięta.

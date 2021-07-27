@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792202"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352019"
 ---
 # <a name="home-page-overview"></a>Omówienie strony głównej
 
@@ -31,7 +32,7 @@ Strona główna jest stroną domyślną, na którą trafiają klienci podczas od
 
 Poniższa ilustracja pokazuje przykład strony głównej zbudowanej przy użyciu biblioteki modułów online i motywu „Fabrikam”.
 
-![Przykład strony głównej](./media/Homepage2.PNG)
+![Przykład strony głównej.](./media/Homepage2.PNG)
 
 U góry strony głównej znajduje się nagłówek pokazujący wszystkie kategorie produktów i inne strony, które sprzedawca chce przejrzeć. Dolna część strony głównej zawiera stopkę zawierającą szybkie łącza do różnych tematów, które mogą być przedmiotem zainteresowania odbiorców.
 
@@ -41,13 +42,13 @@ Główna sekcja strony głównej umożliwia podświetlanie produktów, kategorii
 
     Na poniższej ilustracji pokazano przykład strony głównej, na której pierwszy element w sekcji głównej jest modułem bloku zawartości układu o nazwie „Nowa dostawa”.
 
-    ![Przykład modułu bohatera](./media/Hero.PNG)
+    ![Przykład modułu bohatera.](./media/Hero.PNG)
 
 - **Funkcja** — moduł funkcji bloku zawartości układu jest używany do marketingowych produktów lub promocji przy użyciu kombinacji obrazów i tekstu. Układy funkcji mogą być używane niezależnie lub mogą być przechowywane w module karuzeli.
 
     Poniższa ilustracja przedstawia przykład modułu bloku zawartości z układem funkcji na stronie głównej.
 
-    ![Przykłady modułów funkcji](./media/Feature.PNG)
+    ![Przykłady modułów funkcji.](./media/Feature.PNG)
 
 - **Kafelek** — moduł bloku zawartości układu kafelków służy do prezentowania wielu produktów lub kategorii produktów za pomocą kombinacji obrazów i tekstu w układzie wielokolumnowym. Na ilustracji strony głównej, która pojawiła się wcześniej w tym temacie, jest używany moduł układu z trzema kolumnami produktów **Kupuj kolekcję damską**, **Kupuj kolekcję męską** i **Kupuj dodatki**.
 - **Odtwarzacz wideo** — moduł odtwarzacz wideo może służyć do prezentacji zawartości wideo na stronie głównej. Ilustracja strony głównej, która pojawia się we wcześniejszej części tego tematu, zawiera moduł odtwarzacza wideo.
@@ -56,7 +57,7 @@ Główna sekcja strony głównej umożliwia podświetlanie produktów, kategorii
 
     Poniższa ilustracja pokazuje przykład modułów rekomendacji produktu na stronie głównej.
 
-    ![Przykłady modułów rekomendacji produktów](./media/Recommendations.PNG)
+    ![Przykłady modułów rekomendacji produktów.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Wszystkie wymienione tu moduły mogą być używane na dowolnej stronie witryny. Jednak ich umieszczenie na stronie głównej jest ważne, ponieważ jest to strona, w której klienci najpierw zapoznają się z witryną.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017013"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358105"
 ---
 # <a name="inventory-visibility-add-in"></a>Dodatek Widoczność magazynu
 
@@ -143,7 +143,7 @@ Jeśli preferujesz skonfigurowanie za pomocą narzędzia wdrażania pakietu Data
 
             Aby uzyskać więcej informacji o tej zmiennej, zobacz sekcję [Konfiguracja integracji widoczności zapasów](#setup-inventory-visibility-integration) w dalszej części tego tematu.
 
-        ![Wyzwalacz konfiguracji](media/configuration-trigger.png "Wyzwalacz konfiguracji")
+        ![Wyzwalacz konfiguracji.](media/configuration-trigger.png "Wyzwalacz konfiguracji")
 
     1. Wybierz opcję **Włącz**.
 
@@ -157,7 +157,7 @@ Aby zainstalować dodatek Widoczność magazynu, trzeba:
 1. Na stronie środowisko przewiń w dół do momentu, w sekcji **Dodatki środowiska**, w sekcji **Integracji Power Platform**, gdzie możesz znaleźć nazwę środowiska Dataverse.
 1. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 
-    ![Strona środowiska w LCS](media/inventory-visibility-environment.png "Strona środowiska w LCS")
+    ![Strona środowiska w LCS.](media/inventory-visibility-environment.png "Strona środowiska w LCS")
 
 1. Wybierz opcję **Zainstaluj nowy dodatek**. Zostanie otwarta lista dostępnych dodatków.
 1. Z listy menu wybierz opcję **Widoczność magazynu**.
@@ -166,7 +166,7 @@ Aby zainstalować dodatek Widoczność magazynu, trzeba:
     - **Identyfikator aplikacji AAD (klienta)**
     - **Identyfikator AAD dzierżawy**
 
-    ![Strona konfiguracji dodatku](media/inventory-visibility-setup.png "Strona konfiguracji dodatku")
+    ![Strona konfiguracji dodatku.](media/inventory-visibility-setup.png "Strona konfiguracji dodatku")
 
 1. Zaakceptuj regulamin, zaznaczając pole wyboru **Regulamin**.
 1. Wybierz **Zainstaluj**. Stan dodatku będzie widoczny jako **Instalowany**. Po zakończeniu operacji odśwież stronę, aby zobaczyć zmianę stanu na **Zainstalowane**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015860"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360407"
 ---
 # <a name="set-up-consignment"></a>Konfigurowanie konsygnacji
 
@@ -61,7 +61,7 @@ Zamówienie uzupełnienia zapasów konsygnacyjnych to dokument używany do wnios
 
 Wymiar **Właściciel** jest używany do oddzielania informacji o tym, które zapasy są własnością dostawcy, a które własnością przyjmującej firmy. Wiersze zamówienia uzupełnienia zapasów konsygnacyjnych mają stan **Otwarte zamówienie** dotąd, aż zostanie przyjęta lub anulowana pełna ilość określona w wierszach. Gdy pełna ilość zostanie przyjęta lub anulowana, stan zmienia się na **Ukończono**. Fizycznie dostępne zapasy powiązane z zamówieniem uzupełnienia zapasów konsygnacyjnych mogą być rejestrowane za pomocą procesu rejestracji, a także procesu aktualizacji przyjęcia produktów. Rejestracja może się odbywać w ramach procesu przyjęcia towaru lub poprzez ręczną aktualizację wierszy zamówienia. Gdy jest używany proces aktualizacji przyjęcia produktów, w arkuszu przyjęcia produktów jest tworzony rekord, który może służyć do potwierdzania dostawcy, że otrzymano towary.
 
-[![Zamówienia uzupełnienia zapasów konsygnacyjnych](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Zamówienia uzupełnienia zapasów konsygnacyjnych.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Arkusz zmian własności zapasów
 
@@ -74,7 +74,7 @@ Jedyne tworzone transakcje magazynowe dotyczą zaksięgowanego arkusza. Po zaksi
 
 Nie jest możliwe aktualizowanie ilości w wierszach zamówienia zakupu konsygnacyjnego po utworzeniu zamówienia.
 
-[![Arkusz zmian własności zapasów](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Dziennik zmiany własności zapasów.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Współpraca z dostawcami w procesach konsygnacji
 
@@ -90,13 +90,13 @@ Aby uzyskać więcej informacji o konfigurowaniu dostawców do używania portalu
 
 Aby zarejestrować fizyczne przychodzące zapasy konsygnacyjne, należy zdefiniować właściciela będącego dostawcą. Służy do tego strona **Właściciel zapasów**. Wybranie opcji **Konto dostawcy** spowoduje wygenerowanie wartości domyślnych dla pól **Nazwa** i **Właściciel**. Wartość w polu **Właściciel** będzie widoczna dla dostawcy, więc warto ją zmienić, jeśli nazwy kont dostawców przechowywane w firmowych systemach są trudne do rozpoznania przez osoby zewnętrzne. Istnieje możliwość edytowania pola **Właściciel**, ale tylko do momentu zapisania rekordu **Właściciel zapasów**. W polu **Nazwa** jest wprowadzana nazwa strony, z którą jest skojarzone konto dostawcy, i nie można jej zmienić.
 
-[![Właściciele zapasów](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Właściciele zapasów.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Grupa wymiarów śledzenia
 
 Towary, które mają być używane w procesach konsygnacji, muszą być powiązane z **grupą wymiarów śledzenia**, która w wymiarze **Właściciel** ma ustawioną wartość **Aktywny**. Wymiar Właściciel zawsze ma zaznaczone opcje **Magazyn fizyczny** i **Magazyn finansowy**. Opcja **Plan zapotrzebowania wg wymiaru** nigdy nie jest zaznaczona.
 
-[![Grupa wymiarów śledzenia](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Grupa wymiarów śledzenia.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

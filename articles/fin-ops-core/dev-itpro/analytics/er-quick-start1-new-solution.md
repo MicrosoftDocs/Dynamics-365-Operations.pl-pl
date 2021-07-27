@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 35db2eb3e0da91207f08d16b8fb1bfa6a6bb8607
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304400"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345967"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Zaprojektowanie nowego rozwiązania ER w celu wydrukowania raportu niestandardowego
 
@@ -123,15 +125,15 @@ W tym przykładzie zostanie utworzone nowe rozwiązanie ER dla modułu [kwestion
 
 1. Aby uruchomić istniejący raport, przejdź do **Kwestionariusz** \> **Projektowanie** \> **Raport z kwestionariuszy**.
 
-    ![Wybranie elementu menu raportu kwestionariuszy w module kwestionariusza w celu uruchomienia istniejącego raportu usług SSRS](./media/er-quick-start1-application-menu-origin.png)
+    ![Wybranie elementu menu raportu kwestionariuszy w module kwestionariusza w celu uruchomienia istniejącego raportu usług SSRS.](./media/er-quick-start1-application-menu-origin.png)
 
 2. W oknie dialogowym **Raport z kwestionariuszy** określ kryteria wyboru. Zastosuj filtr, aby raport zawierał tylko kwestionariusz **SBCCrsExam**.
 
-    ![Określenie kryteriów wyboru w oknie dialogowym Raport z kwestionariuszy](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![Określenie kryteriów wyboru w oknie dialogowym Raport z kwestionariuszy.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 Na poniższej ilustracji przedstawiono wygenerowaną wersję raportu SSRS dla kwestionariusza **SBCCrsExam**.
 
-![Wygenerowany raport SSRS](./media/er-quick-start1-ssrs-report.png)
+![Wygenerowany raport SSRS.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>Konfigurowanie struktury ER
 
@@ -271,7 +273,7 @@ Aby kontynuować, pomiń następną procedurę, [Utwórz nową konfigurację mod
 
     Na poniższej ilustracji przedstawiono ukończony edytowalny model danych na stronie **Projektant modelu danych**.
 
-    ![Skonfigurowany model danych w projektancie modeli danych ER](./media/er-quick-start1-model2.png)
+    ![Skonfigurowany model danych w projektancie modeli danych ER.](./media/er-quick-start1-model2.png)
 
 7. Zapisz zmiany.
 8. Zamknij stronę **Projektant modelu danych**.
@@ -285,7 +287,7 @@ Aby kontynuować, pomiń następną procedurę, [Utwórz nową konfigurację mod
 
 Stan wersja 1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **Ukończoną**. Wersja 1 nie może być już zmieniana. Ta wersja zawiera skonfigurowany model danych i może być używana jako podstawa dla innych konfiguracji ER. Wersja 2 tej konfiguracji jest utworzona i ma stan **Wersja robocza**. Tę wersję można edytować, aby skorygować model danych **Kwestionariusza**.
 
-![Wersje edytowalnej konfiguracji na stronie konfiguracje](./media/er-quick-start1-model-configuration.png)
+![Wersje edytowalnej konfiguracji na stronie konfiguracje.](./media/er-quick-start1-model-configuration.png)
 
 Aby uzyskać więcej informacji na temat wersji konfiguracji funkcji ER, zajrzyj do [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -439,7 +441,7 @@ Możesz dodać etykiety ER, aby skonfigurować niektóre źródła danych, aby z
 5. Zamknij okno dialogowe **Tłumaczenie tekstu**.
 6. Wybierz **Anuluj**.
 
-![Dodawanie etykiet ER dla mapowania edytowalnego modelu](./media/er-quick-start1-adding-labels.png)
+![Dodawanie etykiet ER dla mapowania edytowalnego modelu.](./media/er-quick-start1-adding-labels.png)
 
 Wprowadziłeś etykiety ER tylko dla języka domyślnego. Aby uzyskać informacje o tym, jak można tłumaczyć etykiety ER na inne języki, zobacz [Projektowanie raportów wielojęzycznych](er-design-multilingual-reports.md).
 
@@ -473,7 +475,7 @@ Ponieważ należy kilkakrotnie przekształcić wyniki porównania między warto�
     8. Wybierz przycisk **Zapisz** i zamknij edytor formuł.
     9. Wybierz przycisk **OK**, aby dodać nowe źródło danych.
 
-![Skonfigurowany model mapowania w projektancie modeli mapowania ER](./media/er-quick-start1-added-data-sources.png)
+![Skonfigurowany model mapowania w projektancie modeli mapowania ER.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Powiąż źródła danych z polami modelu danych
 
@@ -524,7 +526,7 @@ Aby określić sposób, w jaki model danych będzie wypełniał dane aplikacji w
 
     Na poniższej ilustracji przedstawiono ostatni stan skonfigurowanego mapowania modelu na stronie **Projektanta mapowania modeli**.
 
-    ![W pełni skonfigurowany model mapowania w projektancie modeli mapowania ER](./media/er-quick-start1-mapping2.png)
+    ![W pełni skonfigurowany model mapowania w projektancie modeli mapowania ER.](./media/er-quick-start1-mapping2.png)
 
 7. Zapisz zmiany.
 8. Zamknij stronę **Projektant mapowania modelu**.
@@ -538,7 +540,7 @@ Aby określić sposób, w jaki model danych będzie wypełniał dane aplikacji w
 
 Stan wersja 1.1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **Ukończoną**. Wersja 1.1 nie może być już zmieniana. Ta wersja zawiera skonfigurowany model mapowania i może być używana jako podstawa dla innych konfiguracji ER. Wersja 1.2 tej konfiguracji jest utworzona i ma stan **Wersja robocza**. Tę wersję można edytować, aby skorygować konfigurację **Mapowanie kwestionariusza**.
 
-![Wersje edytowalnej konfiguracji ER na stronie konfiguracje](./media/er-quick-start1-mapping-configuration.png)
+![Wersje edytowalnej konfiguracji ER na stronie konfiguracje.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > Skonfigurowane mapowanie modelu to specyficzna dla finansów implementacja abstrakcyjnego modelu danych, który reprezentuje domenę biznesową **Kwestionariusz**.
@@ -552,17 +554,17 @@ Struktura ER wykorzystuje predefiniowane szablony do generowania raportów w for
 
 Jak pokazuje poniższa ilustracja, pobrany szablon został zaprojektowany w celu wydrukowania określonych kwestionariuszy, które zawierają pytania zawarte w kwestionariuszu wraz z odpowiednimi odpowiedziami.
 
-![Szablon programu Excel do drukowania określonych kwestionariuszy](./media/er-quick-start1-template-layout.png)
+![Szablon programu Excel do drukowania określonych kwestionariuszy.](./media/er-quick-start1-template-layout.png)
 
 Do tego szablonu zostały dodane nazwy programu Excel, aby wypełnić szczegóły kwestionariusza. Do przeglądania nazw Excel można użyć Menedżera nazw.
 
-![Przeglądanie nazw programu Excel w podanym szablonie programu Excel za pomocą Menedżera nazw](./media/er-quick-start1-template-names.png)
+![Przeglądanie nazw programu Excel w podanym szablonie programu Excel za pomocą Menedżera nazw.](./media/er-quick-start1-template-names.png)
 
 Etykiety raportów zostały dodane jako stały tekst w języku angielskim. Etykiety raportów można zastąpić nowymi nazwami programu Excel, które wypełniają etykiety tekstem zależnym od języka, używając [etykiet](#AddMmLabels) formatu ER, tak jak w przypadku wyrażeń zależnych od języka w skonfigurowanym mapowaniu modelu. W takim przypadku do edytowalnego formatu ER trzeba dodać etykiety ER.
 
 Na poniższej ilustracji przedstawiono nagłówek raportu niestandardowego, który umożliwia stronicowanie w Excel.
 
-![Niestandardowy nagłówek raportu w podanym szablonie programu Excel](./media/er-quick-start1-template-header.png)
+![Niestandardowy nagłówek raportu w podanym szablonie programu Excel.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Projektowanie formatu
 
@@ -612,11 +614,11 @@ Aby kontynuować, pomiń następną procedurę, [Utwórz nową konfigurację for
     2. Znajdź i wybierz lokalnie zapisany plik **Szablon raportu kwestionariusza.xslx**, a następnie wybierz opcję **Otwórz**.
     3. Wybierz przycisk **OK**, aby importować szablon.
 
-    ![Importowanie szablonu raportu](./media/er-quick-start1-template-import.png)
+    ![Importowanie szablonu raportu.](./media/er-quick-start1-template-import.png)
 
 Element formatu **Excel\\Plik** jest automatycznie dodawany do formatu edytowalnego jako element główny. Dodatkowo, element formatu **Excel\\Zakres** lub element formatu **Excel\\Komórka** jest automatycznie dodawany do każdej rozpoznanej nazwy Excela importowanego szablonu. Format **Excel\\Nagłówek** z zagnieżdżonym elementem **Ciąg** jest dodawany automatycznie w celu odzwierciedlenia ustawień nagłówka zaimportowanego szablonu.
 
-![Struktura formatu obejmująca automatycznie dodane elementy w projektancie operacji ER](./media/er-quick-start1-template-import2.png)
+![Struktura formatu obejmująca automatycznie dodane elementy w projektancie operacji ER.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Konfigurowanie formatu
 
@@ -627,12 +629,12 @@ Element formatu **Excel\\Plik** jest automatycznie dodawany do formatu edytowaln
 
     Aby uzyskać informacje dotyczące sposobu określania kontekstu języka i kultury dla procesu ER, zapoznaj się z tematem [Projektowanie raportów wielojęzycznych](er-design-multilingual-reports.md).
 
-    ![Konfigurowanie ustawień języka i kultury dla zaprojektowanego raportu w projektancie operacji ER](./media/er-quick-start1-template-format-structure1.png)
+    ![Konfigurowanie ustawień języka i kultury dla zaprojektowanego raportu w projektancie operacji ER.](./media/er-quick-start1-template-format-structure1.png)
 
 5. W drzewie formatu rozwiń węzeł główny, a następnie wybierz pozycję **ResultsGroup**.
 6. Na karcie **Format** w polu **Kierunek replikacji** wybierz opcję **Brak replikacji**, ponieważ nie ma oczekiwanego wielu grup wyników dla jednego kwestionariusza.
 
-    ![Definiowanie kierunku replikacji dla elementów formatu zakresu w projektancie operacji ER](./media/er-quick-start1-template-format-structure2.png)
+    ![Definiowanie kierunku replikacji dla elementów formatu zakresu w projektancie operacji ER.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Wybierz opcję **Zapisz**.
 
@@ -652,7 +654,7 @@ Należy określić powiązanie danych dla elementu formatu używanego do wypełn
 
 5. Zamknij edytor formuł.
 
-    ![Konfigurowanie powiązania do wypełnienia w tytule wygenerowanego raportu](./media/er-quick-start1-add-report-title-label.png)
+    ![Konfigurowanie powiązania do wypełnienia w tytule wygenerowanego raportu.](./media/er-quick-start1-add-report-title-label.png)
 
 Tę technikę można stosować do tworzenia wszystkich etykiet zależnych od języka bieżącego szablonu. Aby uzyskać informacje dotyczące sposobu tłumaczenia dodanych etykiet jednej konfiguracji ER na wszystkie obsługiwane języki, zapoznaj się z tematami [Projektowanie raportów wielojęzycznych](er-design-multilingual-reports.md).
 
@@ -662,7 +664,7 @@ Tę technikę można stosować do tworzenia wszystkich etykiet zależnych od ję
 2. Wybierz opcję **Edycja**.
 3. Przejrzyj informacje w oknie dialogowym **Właściwości źródła danych**. To źródło danych reprezentuje wersję 1 składnika modelu danych **Kwestionariuszy**, który znajduje się w konfiguracji ER dla **Modelu kwestionariuszy**.
 
-![Właściwości źródła danych modelu w projektancie operacji ER](./media/er-quick-start1-model-data-source.png)
+![Właściwości źródła danych modelu w projektancie operacji ER.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Powiązanie elementów formatu na pola źródła danych
 
@@ -678,11 +680,11 @@ Aby określić sposób wypełniania szablonu w czasie wykonywania, należy powi�
 
     Element formatu zakresu **Kwestionariusza** jest skonfigurowany jako replikowany pionowo. Jeśli jest powiązany ze źródłem danych typu **Lista rekordów**, odpowiedni zakres **Kwestionariusza** w szablonie programu Excel jest powtarzany dla każdego rekordu powiązanego źródła danych.
  
-    ![Powiązanie elementu formatu zakresu kwestionariusza z odpowiednimi źródłami danych listy rekordów w projektancie operacji ER](./media/er-quick-start1-bindings1.png)
+    ![Powiązanie elementu formatu zakresu kwestionariusza z odpowiednimi źródłami danych listy rekordów w projektancie operacji ER.](./media/er-quick-start1-bindings1.png)
 
     Ponieważ zakres **Kwestionariusza** szablonu programu Excel jest zdefiniowany między wierszami od 5 do 14, te wiersze są powtarzane dla każdego raportowanego kwestionariusza.
 
-    ![Wiersze w szablonie programu Excel, które zostaną powtórzone w wygenerowanym raporcie dla każdego rekordu źródeł danych Listy rekordów](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Wiersze w szablonie programu Excel, które zostaną powtórzone w wygenerowanym raporcie dla każdego rekordu źródeł danych Listy rekordów.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. Skonfiguruj podobne powiązania dla pozostałych elementów formatu, tak jak to opisano w poniższej tabeli.
 
@@ -718,7 +720,7 @@ Aby określić sposób wypełniania szablonu w czasie wykonywania, należy powi�
 
 Na poniższej ilustracji przedstawiono ostatni stan skonfigurowanych powiązaniań danych na stronie **Projektanta formatów**.
 
-![Skonfigurowane powiązania danych w projektancie operacji ER](./media/er-quick-start1-bindings2.png)
+![Skonfigurowane powiązania danych w projektancie operacji ER.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > Cała kolekcja określonych źródeł danych i powiązań reprezentuje składnik odwzorowania formatu skonfigurowanego formatu. To mapowanie formatu jest wywoływane w przypadku uruchomienia skonfigurowanego formatu generowania raportu.
@@ -738,9 +740,9 @@ Możesz teraz uruchomić zaprojektowany format do celów testowych ze strony **K
 
 [Domyślnie](electronic-reporting-destinations.md#default-behavior) wygenerowany raport jest dostarczany jako plik programu Excel, który można pobrać. Na poniższych ilustracjach przedstawiono dwie strony wygenerowanego raportu w formacie programu Excel.
 
-![Przykład wygenerowanego raportu w formacie programu Excel, Strona 1](./media/er-quick-start1-report1a.png)
+![Przykład wygenerowanego raportu w formacie programu Excel, Strona 1.](./media/er-quick-start1-report1a.png)
 
-![Przykład wygenerowanego raportu w formacie programu Excel, Strona 2](./media/er-quick-start1-report1b.png)
+![Przykład wygenerowanego raportu w formacie programu Excel, Strona 2.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Dostrajanie zaprojektowanego formatu
 
@@ -761,7 +763,7 @@ Pytania nie są poprawnie uporządkowane w wygenerowanym raporcie. Kolejność m
 1. Na stronie **Projektant formatów** wybierz element główny **Raport**.
 2. Na karcie **Mapowanie** w drzewie formatu rozwiń **Raport\\Kwestionariusz\\Pytanie**.
 
-    ![Element formatu pytań dla zakresu typu Projektant operacji ER](./media/er-quick-start1-bindings3.png)
+    ![Element formatu pytań dla zakresu typu Projektant operacji ER.](./media/er-quick-start1-bindings3.png)
 
 3. Na karcie **Mapowanie** wybierz opcję **model.Questionnaire**.
 4. Wybierz opcję **Dodaj** \> **Funkcje\\Pole obliczeniowe**, a następnie w polu **Nazwa** wprowadź **OrderedQuestions**.
@@ -774,7 +776,7 @@ Pytania nie są poprawnie uporządkowane w wygenerowanym raporcie. Kolejność m
 11. Wybierz opcję **Powiąż**, a następnie potwierdź, że bieżąca ścieżka **model.Questionnaire.Questions** jest zastępowana nową ścieżką **model.Questionnaire.OrderedQuestions** we wszystkich powiązaniach elementów zagnieżdżonych.
 12. Wybierz opcję **Zapisz**.
 
-![Powiązanie elementu formatu pytania ze skonfigurowanym źródłem danych OrderedQuestions w projektancie operacji ER](./media/er-quick-start1-bindings4.png)
+![Powiązanie elementu formatu pytania ze skonfigurowanym źródłem danych OrderedQuestions w projektancie operacji ER.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Uruchamianie zmodyfikowanego formatu od ER
 
@@ -788,7 +790,7 @@ Możesz teraz uruchomić zmodyfikowany format do celów testowych ze środowiska
 
 Poniższa ilustracja przedstawia wygenerowany raport w formacie Excel, w którym pytania są poprawnie uporządkowane.
 
-![Wygenerowany raport w formacie Excel z poprawnie uporządkowanymi pytaniami](./media/er-quick-start1-report2.png)
+![Wygenerowany raport w formacie Excel z poprawnie uporządkowanymi pytaniami.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>Zakończ projektowanie formatu
 
@@ -799,7 +801,7 @@ Poniższa ilustracja przedstawia wygenerowany raport w formacie Excel, w którym
 
 Stan wersja 1.1 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **Ukończoną**. Wersja 1.1 nie może być już zmieniana. Ta wersja zawiera skonfigurowany format i może być używana do drukowania raportu niestandardowego. Wersja 1.2 tej konfiguracji jest utworzona i ma stan **Wersja robocza**. Tę wersję można edytować, aby skorygować format raportu **Kwestionariusz**.
 
-![Wersje edytowalnej konfiguracji ER na stronie konfiguracje](./media/er-quick-start1-format-configuration.png)
+![Wersje edytowalnej konfiguracji ER na stronie konfiguracje.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Skonfigurowany format to projekt raportu **Kwestionariusz** i nie zawiera żadnych relacji z artefaktami specyficznymi dla Finance.
@@ -1049,7 +1051,7 @@ Umożliwia utworzenie projektu w celu udostępnienia nowego elementu menu użytk
 
 1. Przejdź do **Kwestionariusz** \> **Projektowanie** \> **Raport z kwestionariuszy (zasilany przez ER)**.
 
-    ![Wybranie elementu menu Raport z kwestionariuszy (zasilany przez ER) w module kwestionariusza w celu uruchomienia skonfigurowanego formatu ER](./media/er-quick-start1-application-menu-modified.png)
+    ![Wybranie elementu menu Raport z kwestionariuszy (zasilany przez ER) w module kwestionariusza w celu uruchomienia skonfigurowanego formatu ER.](./media/er-quick-start1-application-menu-modified.png)
 
 2. W oknie dialogowym w polu **Mapowanie formatu** wybierz opcję **Raport kwestionariuszy**.
 3. Kliknij przycisk **OK**.
@@ -1057,7 +1059,7 @@ Umożliwia utworzenie projektu w celu udostępnienia nowego elementu menu użytk
 5. Wybierz przycisk **OK**, aby filtrować opcje.
 6. Wybierz przycisk **OK**, aby uruchomić raport.
 
-    ![Określenie kryteriów wyboru w oknie dialogowym Raport elektroniczny](./media/er-quick-start1-report-run-dialog-page.png)
+    ![Określenie kryteriów wyboru w oknie dialogowym Raport elektroniczny.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Przejrzyj wygenerowany raport.
 
@@ -1082,7 +1084,7 @@ Skonfigurowane rozwiązanie ER można zmodyfikować tak, aby korzystało z utwor
 
 Dodane źródło danych zawiera informacje o identyfikatorze rekordu działającego mapowania formatu ER.
 
-![Dodano źródło danych w konstruktorze mapowania modelu ER](./media/er-quick-start1-mapping3.png)
+![Dodano źródło danych w konstruktorze mapowania modelu ER.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Dodaj źródło danych, aby uzyskać dostęp do rekordów mapowania formatu ER
 
@@ -1117,7 +1119,7 @@ Kontynuuj edytowanie wybranego mapowania modelu, tak aby nazwa uruchomionego for
 
 Ponieważ użyto pola **FormatName**, skonfigurowane mapowanie modelu ujawnia teraz nazwę formatu ER, który wywołuje to mapowanie modelu podczas wykonywania.
 
-![Powiązanie pola modelu danych z metodą dodanego źródła danych w projektancie mapowania modelu ER](./media/er-quick-start1-mapping4.png)
+![Powiązanie pola modelu danych z metodą dodanego źródła danych w projektancie mapowania modelu ER.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>Umożliwia zakończenie projektu mapowania modelu
 
@@ -1154,7 +1156,7 @@ Skonfigurowany format ER można zmodyfikować, tak aby jego nazwa była wyświet
 
 Skonfigurowany format został zmodyfikowany, tak aby jego nazwa była wprowadzana do stopki wygenerowanego raportu przy użyciu elementu **Stopka\\Ciąg**.
 
-![Dodanie elementu formatu Footer do skonfigurowanego formatu w projektancie operacji ER](./media/er-quick-start1-template-format-structure3.png)
+![Dodanie elementu formatu Footer do skonfigurowanego formatu w projektancie operacji ER.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>Zakończ projektowanie formatu
 
@@ -1176,7 +1178,7 @@ Stan wersja 1.2 tej konfiguracji zostanie zmieniony z wersji **Roboczej** na **U
 
 Należy zauważyć, że stopka wygenerowanego raportu zawiera nazwę formatu ER użytego do jego wygenerowania.
 
-![Wygenerowany raport w formacie Excel](./media/er-quick-start1-report4.png)
+![Wygenerowany raport w formacie Excel.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Uruchamianie formatu od ER
 
@@ -1197,7 +1199,7 @@ Zwróć uwagę, że stopka wygenerowanego raportu nie zawiera nazwy formatu ER, 
 3. Na skróconej karcie **Lokalizacji docelowej pliku** skonfiguruj **Ekran**, czyli [miejsce docelowe](er-destination-type-screen.md), dla składnika formatu **Raportu**, który został [dodany](#AddFormatRootElement) jako element główny skonfigurowanego formatu ER **Raportu kwestionariusza**.
 4. Na skróconej karcie **Ustawienia konwersji PDF** skonfiguruj lokalizację docelową w celu przekonwertowania raportu na [format PDF](electronic-reporting-destinations.md#OutputConversionToPDF), w którym jest używana **Pozioma** orientacja strony.
 
-![Konfigurowanie niestandardowego miejsca docelowego ekranu dla formatu ER na stronie docelowej raportowania elektronicznego](./media/er-quick-start1-destination.png)
+![Konfigurowanie niestandardowego miejsca docelowego ekranu dla formatu ER na stronie docelowej raportowania elektronicznego.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Umożliwia uruchomienie formatu z aplikacji w celu wyświetlenia podglądu go jako dokumentu PDF
 
@@ -1209,12 +1211,12 @@ Zwróć uwagę, że stopka wygenerowanego raportu nie zawiera nazwy formatu ER, 
 
     Na skróconej karcie **Miejsca docelowe** zwróć uwagę, że pole **Dane wyjściowe** jest ustawione na **Ekran**. Jeśli chcesz zmienić skonfigurowany cel, wybierz opcję **Zmień**.
 
-    ![Okno dialogowe środowiska wykonawczego raportu ER, w którym można zmienić skonfigurowane miejsce docelowe](./media/er-quick-start1-run-settings.png)
+    ![Okno dialogowe środowiska wykonawczego raportu ER, w którym można zmienić skonfigurowane miejsce docelowe.](./media/er-quick-start1-run-settings.png)
 
 6. Wybierz przycisk **OK**, aby uruchomić raport.
 7. Przejrzyj wygenerowany raport w formacie PDF.
 
-    ![Podgląd wygenerowanego raportu w formacie PDF na ekranie](./media/er-quick-start1-preview-PDF.png)
+    ![Podgląd wygenerowanego raportu w formacie PDF na ekranie.](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>Dodatkowe zasoby
 

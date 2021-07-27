@@ -2,7 +2,7 @@
 title: Zgodność z plikami cookie
 description: W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domyślnych zasad, które są zawarte w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088394"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333076"
 ---
 # <a name="cookie-compliance"></a>Zgodność z plikami cookie
 
@@ -33,26 +33,27 @@ Aby dowiedzieć się więcej na temat podstawowych zasad stosowanych przez Micro
 
 W poniższej tabeli przedstawiono bieżące listy odwołań plików cookie umieszczanych przez witryny Dynamics 365 Commerce.
 
-| Nazwa pliku cookie                               | Użycie                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Przechowuj pliki cookie uwierzytelniania Azure Active Directory (Azure AD) od firmy Microsoft dla rejestracji jednokrotnej (SSO). Przechowuje zaszyfrowane informacje główne użytkownika (imię, nazwisko, adres e-mail). |
-| &#95;msdyn365___cart&#95;                           | Identyfikator koszyka używany do uzyskania listy produktów dodanych do wystąpienia koszyka. |
-| &#95;msdyn365___ucc&#95;                            | Śledzenie zgody na zgodność z plikami cookie.                          |
-| ai_session                                  | Wykrywa, ile sesji użytkownika zostało dołączonych do niektórych stron i funkcji aplikacji. |
-| ai_user                                     | Wykrywa liczbę osób korzystających z aplikacji i jej funkcji. Użytkownicy są zliczani przy użyciu identyfikatorów anonimowych. |
-| b2cru                                       | Umożliwia dynamiczne przechowywanie adresów URL przekierowań.                              |
-| JSESSIONID                                  | Używany przez łącznika płatności Adyen do przechowywania sesji użytkownika.       |
-| OpenIdConnect.nonce.&#42;                       | Uwierzytelnianie                                               |
-| x-MS-CPIM-cache:.&#42;                          | Używane do obsługi stanu żądania.                      |
-| x-ms-cpim-csrf                              | Token Fałszerstwo żądania międzywitrynowego (CRSF) używany do ochrony przed CRSF.     |
-| x-ms-cpim-dc                                | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
-| x-ms-cpim-rc.&#42;                              | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
-| x-ms-cpim-slice                             | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Używane do obsługi sesji SSO.                        |
-| x-ms-cpim-trans                             | Służy do śledzenia transakcji (liczba otwartych kart uwierzytelniających się w odniesieniu do oddziału firmy (B2C)), w tym bieżącej transakcji. |
-| \_msdyn365___muid_                            | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany jako identyfikator użytkownika do celów eksperymentalnych. |
-| \_msdyn365___exp_                             | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany do pomiaru równoważenia obciążenia wydajnościowego.         |
-| d365mkt                                       | Używane, jeśli wykrywanie lokalizacji w celu śledzenia adresu IP użytkownika dla sugestii lokalizacji sklepu jest włączone w kreatorze stron Commerce pod adresem **Ustawienia strony > Ogólne > Włącz wykrywanie sklepu w oparciu o lokalizację**.      |
+| Nazwa pliku cookie                               | Użycie                                                        | Okres istnienia |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Przechowuj pliki cookie uwierzytelniania Azure Active Directory (Azure AD) od firmy Microsoft dla rejestracji jednokrotnej (SSO). Przechowuje zaszyfrowane informacje główne użytkownika (imię, nazwisko, adres e-mail). | Sesja |
+| \_msdyn365___cart_                           | Identyfikator koszyka używany do uzyskania listy produktów dodanych do wystąpienia koszyka. | Sesja |
+| \_msdyn365___checkout_cart_                           | Identyfikator koszyka realizacji transakcji używany do uzyskania listy produktów dodanych do wystąpienia koszyka realizacji transakcji. | Sesja |
+| \_msdyn365___ucc_                            | Śledzenie zgody na zgodność z plikami cookie.                          | 1 rok |
+| ai_session                                  | Wykrywa, ile sesji użytkownika zostało dołączonych do niektórych stron i funkcji aplikacji. | 30 minut |
+| ai_user                                     | Wykrywa liczbę osób korzystających z aplikacji i jej funkcji. Użytkownicy są zliczani przy użyciu identyfikatorów anonimowych. | 1 rok |
+| b2cru                                       | Umożliwia dynamiczne przechowywanie adresów URL przekierowań.                              | Sesja |
+| JSESSIONID                                  | Używany przez łącznika płatności Adyen do przechowywania sesji użytkownika.       | Sesja |
+| OpenIdConnect.nonce.&#42;                       | Uwierzytelnianie                                               | 11 minut |
+| x-MS-CPIM-cache:.&#42;                          | Używane do obsługi stanu żądania.                      | Sesja |
+| x-ms-cpim-csrf                              | Token Fałszerstwo żądania międzywitrynowego (CRSF) używany do ochrony przed CRSF.     | Sesja |
+| x-ms-cpim-dc                                | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. | Sesja |
+| x-ms-cpim-rc.&#42;                              | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. | Sesja |
+| x-ms-cpim-slice                             | Używany do routowania żądań do odpowiedniego wystąpienia serwera uwierzytelniania produkcji. | Sesja |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Używane do obsługi sesji SSO.                        | Sesja |
+| x-ms-cpim-trans                             | Służy do śledzenia transakcji (liczba otwartych kart uwierzytelniających się w odniesieniu do oddziału firmy (B2C)), w tym bieżącej transakcji. | Sesja |
+| \_msdyn365___muid_                            | Używane, gdy eksperymentowanie jest aktywowane dla środowiska; używany jako identyfikator użytkownika do celów eksperymentalnych. | 1 rok |
+| \_msdyn365___exp_                             | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany do pomiaru równoważenia obciążenia wydajnościowego.         | 1 godzina |
+| d365mkt                                       | Używane, jeśli wykrywanie lokalizacji w celu śledzenia adresu IP użytkownika dla sugestii lokalizacji sklepu jest włączone w kreatorze stron Commerce pod adresem **Ustawienia strony \> Ogólne \> Włącz wykrywanie sklepu w oparciu o lokalizację**.      | 1 godzina |
 
 Jeśli użytkownik witryny wybierze jakiekolwiek łącza do mediów społecznościowych w witrynie, pliki cookie z poniższej tabeli będą również śledzone w jego przeglądarce.
 

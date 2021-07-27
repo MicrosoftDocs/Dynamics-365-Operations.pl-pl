@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838665"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346209"
 ---
 # <a name="work-hour-control"></a>Kontrola godzin pracy
 
@@ -66,7 +66,7 @@ Na poniższym zrzucie ekranu pokazano przykład obliczania **Formant godzin skł
 - W polu **Rzeczywiste godziny** są wyświetlane zaksięgowane godziny w zleceniach pracy. 
 - W polu **Ustalone godziny** są wyświetlane łączne godziny, na które firma jest zobowiązana w związku ze zleceniami pracy.
 
-![Przykład obliczania kontroli godzin składnika majątku](media/04-controlling-and-reporting.png)
+![Przykład obliczania kontroli godzin składnika majątku.](media/04-controlling-and-reporting.png)
 
 Innym sposobem obliczenia godziny jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie należy kliknąć przycisk **Formant godzin** na skróconej karcie **Ogólne**. Wybrane środki trwałe są automatycznie wstawiane do pola **Składnik majątku** na skróconej karcie **Rekordy do uwzględnienia**. Kliknij **OK** woknie dialogowym **Formant godzin składnika majątku**, a następnie zostanie wyświetlona wartość obliczona dla wybranych składników. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 

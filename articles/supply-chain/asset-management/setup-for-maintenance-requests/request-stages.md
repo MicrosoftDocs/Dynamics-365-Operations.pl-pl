@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c95704b944f86a1cfc0654f0ebf5bc7c79bbeec9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b54b58a29dc23e19f5065363c331351f24267ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808695"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360953"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Stany cyklu życia żądania konserwacji
 
@@ -48,7 +48,7 @@ Stany cyklu życia żądań konserwacji określają etapy, przez które może pr
 
 Na poniższej ilustracji pokazano przykład strony **Cykle życia żądań konserwacji**.
 
-![Strona Stany cyklu życia żądania konserwacji](media/02-setup-for-requests.png)
+![Strona Stany cyklu życia żądania konserwacji.](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Stany cyklu życia, grupy stanów cyklu życia oraz typy żądania konserwacji są powiązane i używane w taki sam sposób jak stany cyklu życia, grupy stanów cyklu życia oraz typy zlecenia pracy. 
@@ -66,9 +66,9 @@ Po utworzeniu stanów cyklu życia, które są wymagane dla żądań konserwacji
 
 5. Na skróconej karcie **Stany cyklu życia** wybierz stany cyklu życia, które powinny być uwzględnione w modelu cyklu życia:
 
-    - Aby uwzględnić stanu cyklu życia w modelu cyku życia, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo](media/03-setup-for-requests.png), aby przenieść go do sekcji **Wybrane stany cyklu życia**.
-    - Aby uwzględnić wszystkie dostępne stany cyklu życia w modelu cyklu życia, wybierz przycisk **Wybierz wszystkie dostępne stany** ![Wybierz wszystkie dostępne stany](media/04-setup-for-requests.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
-    - Aby usunąć stan cyklu życia z modelu cyklu życia, wybierz go w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki lewo ![Strzałka w lewo](media/05-setup-for-requests.png), aby przenieść go do sekcji **Pozostałe stany cyklu życia**.
+    - Aby uwzględnić stanu cyklu życia w modelu cyku życia, zaznacz go w sekcji **Pozostałe stany cyklu życia**, a następnie wybierz przycisk strzałki w prawo ![Strzałka w prawo.](media/03-setup-for-requests.png) , aby przenieść ją do wybranej sekcji **Stany cyklu życia**.
+    - Aby uwzględnić wszystkie dostępne stany cyklu życia w modelu cyklu życia, wybierz przycisk **Wybierz wszystkie dostępne stany** ![Wybierz wszystkie dostępne stany.](media/04-setup-for-requests.png). Wszystkie stany cyklu życia są przenoszone do sekcji **Wybrane cykle życia**.
+    - Aby usunąć stanu cyklu życia z modelu cyku życia, zaznacz go w sekcji **Wybrane stany cyklu życia**, a następnie wybierz przycisk strzałki w lewo ![Strzałka w lewo.](media/05-setup-for-requests.png) , aby przenieść ją do wybranej sekcji **Pozostałe stany cyklu życia**.
 
 6. Na skrócone karcie **Ogólne** pola w sekcji **Aktualizacja** są istotne, jeśli używasz naprawy w magazynie.
 
@@ -77,7 +77,7 @@ Po utworzeniu stanów cyklu życia, które są wymagane dla żądań konserwacji
 
 Na poniższej ilustracji pokazano przykład strony **Modele cyklu życia żądania konserwacji**.
 
-![Strona Modele cyklu życia żądania konserwacji](media/06-setup-for-requests.png)
+![Strona Modele cyklu życia żądania konserwacji.](media/06-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

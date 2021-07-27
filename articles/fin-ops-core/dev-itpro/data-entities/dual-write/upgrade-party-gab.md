@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112680"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346553"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Uaktualnianie do modelu globalnej książki adresowej i strony
 
@@ -89,7 +89,7 @@ Aby przygotować się do aktualizacji, należy wykonać następujące czynności
 
 10. Po wdrożeniu sprawdź poprawność zestawów danych, przepływu danych i połączonej usługi fabryki danych.
 
-   ![Zestawy danych, przepływ danych i połączona usługa](media/data-factory-validate.png)
+   ![Zestawy danych, przepływ danych i połączona usługa.](media/data-factory-validate.png)
 
 11. Przejdź do **Zarządzaj**. W obszarze **Połączenia** wybierz pozycję **Połączona usługa**. Wybierz **DynamicsCrmLinkedService**. W formularzu **Edycja połączonej usługi (Dynamics CRM)** wprowadź następujące wartości.
 
@@ -154,7 +154,7 @@ Aby przygotować się do aktualizacji, należy wykonać następujące czynności
 
 7. W fabryki danych uruchom szablon, wybierając pozycję **Wyzwól teraz**, tak jak pokazano na poniższym obrazie. Ten proces może potrwać kilka godzin na podstawie objętości danych.
 
-    ![Wyzwalanie uruchomienia](media/data-factory-trigger.png)
+    ![Wyzwalanie uruchomienia.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Jeśli masz dostosowania dla **Konta**, **Kontaktu** i **Dostawcy**, musisz zmodyfikować szablon.
@@ -164,7 +164,7 @@ Aby przygotować się do aktualizacji, należy wykonać następujące czynności
     + Pobierz plik `FONewParty.csv` z magazynu obiektów blob Azure. Ścieżka w `partybootstrapping/output/FONewParty.csv`.
     + Skonwertuj plik `FONewParty.csv` na plik programu Excel i zaimportuj go do aplikacji Finance and Operations. Jeśli import CSV działa dla Ciebie, możesz zaimportować plik CSV bezpośrednio. Uruchomienie importowania może potrwać kilka godzin, w zależności od objętości danych. Aby uzyskać więcej informacji, zapoznaj się z [Omówieniem importowania i eksportowania danych](../data-import-export-job.md).
 
-    ![Importowanie rekordów strony Datavers](media/data-factory-import-party.png)
+    ![Importowanie rekordów strony Dataverse.](media/data-factory-import-party.png)
 
 9. W aplikacjach angażujących klientów włącz następujące kroki wtyczki plug-in:
 
@@ -199,7 +199,7 @@ Aby przygotować się do aktualizacji, należy wykonać następujące czynności
 3. Fabryki danych są uruchamiane na podstawie plików CSV, które są rozdzielane przecinkami. Jeśli istnieje wartość pola z przecinkiem, może to wpływać na wyniki. Należy usunąć przecinek.
 4. Karta **Monitorowanie** zawiera informacje o wszystkich przetwarzanych krokach i danych. Wybierz określony krok do debugowania.
 
-    ![Karta Monitorowanie](media/data-factory-monitor.png)
+    ![Karta Monitorowanie.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Dowiedz się więcej o szablonie
 

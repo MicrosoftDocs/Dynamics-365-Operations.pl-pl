@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 27e52a94208129aee0e33074e7fc3778de53733a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193289"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355836"
 ---
 # <a name="ratings-and-reviews-modules"></a>Moduły ocen i recenzji
 
@@ -42,20 +42,20 @@ Na stronach PDP w trzech modułach są wyświetlane podsumowania ocen i recenzji
  
 Na poniższej ilustracji przedstawiono jak moduły ocen i recenzji wyglądają na stronach PDP.
 
-![Moduły ocen i recenzji na stronach PDP](media/rnr-eCommerce-pdp-reviews-modules_design.png)
+![Moduły ocen i recenzji na stronach PDP.](media/rnr-eCommerce-pdp-reviews-modules_design.png)
 
 > [!TIP] 
 > Aby uzyskać informacje na temat optymalizowania szablonów i układów PDP, tak aby można było udostępniać konfiguracje dla modułów ocen i recenzji na wielu stronach PDP w witrynie e-Commerce, należy zapoznać się z [Omówienie szablonów i układów](templates-layouts-overview.md).
 
 Na poniższej ilustracji pokazano, jak w oknie dialogowym **Dodaj moduł** są prezentowane moduły ocen i recenzji w Dynamics 365 Commerce.
-![Dodaj moduł okna dialogowego](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
+![Dodaj moduł okna dialogowego.](media/rnr-eCommerce-pdp-adding-rnr-modules.png)
 
 ### <a name="write-review-module"></a>Napisz moduł recenzji
 
 Moduł zapisu recenzji zawiera przycisk **Napisz recenzję**, który pozwala użytkownikom zalogować się, przypisać ocenę i napisać recenzję produktu. Moduł ten pozwala również edytować wcześniej przesłane oceny lub recenzje. Ten moduł zazwyczaj pojawia się nad histogramem ocen i modułami listy recenzji produktów na PDP.
 Poniższa ilustracja pokazuje okno dialogowe **Napisz recenzję**, które pojawia się, gdy klient wybierze **Napisz recenzję**. Odbiorca może użyć tego okna dialogowego do przesłania ocen i recenzji.
 
-![Napisz okno dialogowe recenzji](media/rnr-eCommerce-write-review-module.png)
+![Napisz okno dialogowe recenzji.](media/rnr-eCommerce-write-review-module.png)
 
 W poniższej tabeli przedstawiono właściwość modułu recenzji zapisu, którą należy skonfigurować w narzędziu do tworzenia treści.
 
@@ -67,7 +67,7 @@ W poniższej tabeli przedstawiono właściwość modułu recenzji zapisu, któr�
 
 W module histogramu ocen jest wyświetlany histogram klasyfikacji. Ten moduł zwykle pojawia się między modułem recenzji zapisu a modułem listy recenzji produktów na PDP.
 Moduł histogramu ocen nie wymaga konfiguracji. Wystarczy dodać moduł do szablonu PDP. Poniższe ilustracje pokazują, jak wygląda szablon PDP w Dynamics 365 Commerce, gdy moduły ocen i recenzji są skonfigurowane do wyświetlania na PDP.
-![Szablon PDP, gdy oceny i recenzje są skonfigurowane do wyświetlania na PDP](media/rnr-eCommerce-pdp-reviews-modules.png)
+![Szablon PDP, gdy oceny i recenzje są skonfigurowane do wyświetlania na PDP.](media/rnr-eCommerce-pdp-reviews-modules.png)
 
 ### <a name="product-reviews-list-module"></a>Moduł listy recenzji produktów
 
@@ -82,11 +82,11 @@ Poniższa tabela pokazuje właściwości modułu listy recenzji produktów, któ
 
 Moduł listy recenzji produktów zawiera miejsce, w którym można dodać moduł histogramu ocen. Poniższa ilustracja pokazuje, jak można dodać moduł histogramu ocen w module listy recenzji produktów w Dynamics 365 Commerce.
 
-![Dodawanie modułu histogramu ocen w module listy recenzji produktów](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
+![Dodawanie modułu histogramu ocen w module listy recenzji produktów.](media/rnr-eCommerce-pdp-rating-histogram-summary.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie biblioteki modułów](starter-kit-overview.md)
+[Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Moduł kontenera](add-container-module.md)
 

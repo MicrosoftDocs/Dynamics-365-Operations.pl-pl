@@ -9,17 +9,19 @@ ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 262574
+ms.custom:
+- "262574"
+- intro-internal
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0f3ce6684cb98e3e459f33ce7c34cd9955abd59
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: fa2d0a09f0136be5e2f020e6a9f4e15f33f348b0
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894870"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337170"
 ---
 # <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 

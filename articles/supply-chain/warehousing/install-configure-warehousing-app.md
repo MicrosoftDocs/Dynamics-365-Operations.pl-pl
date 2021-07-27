@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 913b20d73b87f03b4b1f80efdcf6e60bd07ce270
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909386"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359492"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Instalowanie i łączenie aplikacji magazynu
 
@@ -64,28 +64,28 @@ Aby umożliwić aplikacji magazynowej interakcję z konkretnym serwerem Supply C
 1. Wprowadź nazwę i hasło użytkownika z dostępem do subskrypcji platformy Azure.
 1. W witrynie Azure Portal w lewym okienku nawigacji wybierz pozycję **Azure Active Directory**.
 
-    ![Azure Active Directory](media/app-connect-azure-aad.png "Usługa Azure Active Directory")
+    ![Azure Active Directory.](media/app-connect-azure-aad.png "Usługa Azure Active Directory")
 
 1. Upewnij się, że pracujesz z wystąpieniem usługi Azure AD używanym przez aplikację Supply Chain Management.
 1. Na liście **Zarządzaj** wybierz pozycję **Rejestracje aplikacji**.
 
-    ![Rejestracje aplikacji](media/app-connect-azure-register.png "Rejestracje aplikacji")
+    ![Rejestracje aplikacji.](media/app-connect-azure-register.png "Rejestracje aplikacji")
 
 1. Na pasku narzędzi wybierz pozycję **Nowa rejestracja**, aby otworzyć kreatora **Rejestrowanie aplikacji**.
 1. Wprowadź nazwę aplikacji, wybierz pozycję **Tylko konta w tym katalogu organizacyjnym**, a następnie wybierz pozycję **Zarejestruj**.
 
-    ![Kreator rejestrowania aplikacji](media/app-connect-azure-register-wizard.png "Kreator rejestrowania aplikacji")
+    ![Kreator rejestrowania aplikacji.](media/app-connect-azure-register-wizard.png "Kreator rejestrowania aplikacji")
 
 1. Zostanie otwarta nowa rejestracja aplikacji. Zanotuj wartość pola **Identyfikator aplikacji (klienta)**, ponieważ będzie ona potrzebna później. W dalszej części tego tematu ten identyfikator będzie określany jako *identyfikator klienta*.
 
-    ![Identyfikator aplikacji (klienta)](media/app-connect-azure-app-id.png "Identyfikator aplikacji (klienta)")
+    ![Identyfikator aplikacji (klienta).](media/app-connect-azure-app-id.png "Identyfikator aplikacji (klienta)")
 
 1. Na liście **Zarządzaj** wybierz pozycję **Certyfikat i wpisy tajne**. Następnie wybierz jeden z poniższych przycisków, w zależności od tego, w jaki sposób chcesz skonfigurować aplikację do uwierzytelniania. (Aby uzyskać więcej informacji, zapoznaj się z sekcją [Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta](#authenticate) w dalszej części tego tematu).
 
     - **Przekaż certyfikat** — umożliwia przekazywanie certyfikatu, który ma być używany jako wpis tajny. Zalecamy stosowanie tego podejścia, ponieważ jest ono bezpieczniejsze i można je również automatyzować w większym stopniu. Jeśli uruchamiasz aplikację magazynowej na urządzeniach z systemem Windows, zanotuj wartość pola **Odcisk palca** pokazaną po przekazaniu certyfikatu. Ta wartość będzie potrzebna podczas konfigurowania certyfikatu na urządzeniach z systemem Windows.
     - **Nowy wpis tajny klienta** — umożliwia utworzenie klucza przez wprowadzenie opisu i czasu trwania dla klucza w sekcji **Hasła**, a następnie wybranie pozycji **Dodaj**. Utwórz kopię klucza i zapisz go w bezpiecznym miejscu.
 
-    ![Certyfikat i wpisy tajne](media/app-connect-azure-authentication.png "Certyfikat i wpisy tajne")
+    ![Certyfikat i wpisy tajne.](media/app-connect-azure-authentication.png "Certyfikat i wpisy tajne")
 
 Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług internetowych w usłudze Azure AD, zapoznaj się z następującymi zasobami:
 
@@ -105,7 +105,7 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
     1. Utwórz użytkownika.
     1. Przypisz użytkownika urządzenia przenośnego dla magazynu.
 
-    ![Przypisywanie użytkownika urządzenia przenośnego dla magazynu](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
+    ![Przypisz użytkownika urządzenia przenośnego dla magazynu.](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
 
 1. Skojarz aplikację usługi Azure AD z użytkownikiem aplikacji magazynowej:
 
@@ -113,7 +113,7 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
     1. Utwórz wiersz.
     1. Wprowadź identyfikator klienta, który zanotowano w poprzedniej sekcji, nadaj mu nazwę i wybierz właśnie utworzonego użytkownika. Zalecamy oznakowanie wszystkich urządzeń. W przypadku ich utraty będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management z tej strony.
 
-    ![Aplikacje usługi Azure Active Directory](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
+    ![Aplikacje usługi Azure Active Directory.](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta
 
@@ -201,26 +201,26 @@ Wykonaj poniższe kroki, aby zaimportować ustawienia połączenia z pliku lub k
 1. Przejdź do obszaru **Ustawienia połączenia**.
 1. W opcji **Użyj trybu demonstracyjnego** ustaw wartość _Nie_.
 
-    ![Opcja Użyj trybu demonstracyjnego](media/app-connect-app-demo-mode.png "Opcja Użyj trybu demonstracyjnego")
+    ![Opcja Użyj trybu demonstracyjnego.](media/app-connect-app-demo-mode.png "Opcja Użyj trybu demonstracyjnego")
 
 1. Wybierz pozycję **Wybierz plik** lub **Skanuj kod QR**, w zależności od tego, w jaki sposób chcesz zaimportować ustawienia:
 
     - W przypadku importowania ustawień połączenia z pliku aplikacja mogła już odnaleźć plik, jeśli nazwa domyślna i lokalizacja domyślna zostały użyte podczas zapisywania. W przeciwnym razie wybierz pozycję **Wybierz plik**, przejdź do pliku na urządzeniu lokalnym i zaznacz go. Jeśli wybierzesz lokalizację niestandardową, aplikacja zapisze ją i automatycznie użyje jej przy następnym uruchomieniu.
     - Jeśli importujesz ustawienia połączenia przez skanowanie kodu QR, wybierz pozycję **Skanuj kod QR**. Aplikacja monituje o uprawnienie do korzystania z aparatu urządzenia. Po udzieleniu uprawnienia aparat zostanie uruchomiony i można będzie używać go do skanowania. W zależności od jakości aparatu urządzenia i złożoności kodu QR może się okazać, że uzyskanie poprawnego skanu jest trudne. W takim przypadku spróbuj zmniejszyć złożoność kodu QR, generując tylko jedno połączenie na kod QR. (Obecnie do skanowania kodu QR można używać tylko kamery urządzenia).
 
-    ![Importowanie ustawień połączenia](media/app-connect-app-select-file.png "Importowanie ustawień połączenia")
+    ![Importowanie ustawień połączenia.](media/app-connect-app-select-file.png "Importowanie ustawień połączenia")
 
 1. Po pomyślnym załadowaniu ustawień połączenia wybierz przycisk **Wstecz** (strzałka w lewo) znajdujący się w lewym górnym rogu strony.
 
-    ![Załadowane ustawienia połączenia](media/app-connect-app-settings-loaded.png "Załadowane ustawienia połączenia")
+    ![Załadowane ustawienia połączenia.](media/app-connect-app-settings-loaded.png "Załadowane ustawienia połączenia")
 
 1. Jeśli używasz urządzenia z systemem Android i certyfikatu do uwierzytelniania, urządzenie monituje o wybranie certyfikatu.
 
-    ![Wybieranie monitu o certyfikat na urządzeniu z systemem Android](media/app-connect-app-choose-cert.png "Wybieranie monitu o certyfikat na urządzeniu z systemem Android")
+    ![Wybieranie monitu o certyfikat na urządzeniu z systemem Android.](media/app-connect-app-choose-cert.png "Wybieranie monitu o certyfikat na urządzeniu z systemem Android")
 
 1. Aplikacja łączy się z serwerem Supply Chain Management i pokazuje stronę rejestracji.
 
-    ![Strona logowania](media/app-connect-sign-in.png "Strona logowania")
+    ![Strona logowania.](media/app-connect-sign-in.png "Strona logowania")
 
 ## <a name="manually-configure-the-application"></a><a name="config-manually"></a>Ręczne konfigurowanie aplikacji
 
@@ -230,11 +230,11 @@ Aplikację w urządzeniu można ręcznie skonfigurować tak, aby łączyła się
 1. Przejdź do obszaru **Ustawienia połączenia**.
 1. W opcji **Użyj trybu demonstracyjnego** ustaw wartość _Nie_.
 
-    ![Wyłączony tryb demonstracyjny](media/app-connect-app-select-file.png "Wyłączony tryb demonstracyjny")
+    ![Wyłączony tryb demonstracyjny.](media/app-connect-app-select-file.png "Wyłączony tryb demonstracyjny")
 
 1. Wybierz pole **Wybierz połączenie**, aby rozwinąć ustawienia wymagane do ręcznego wprowadzania szczegółów połączenia.
 
-    ![Pola połączenia ręcznego](media/app-connect-manual-connect.png "Pola połączenia ręcznego")
+    ![Pola połączenia ręcznego.](media/app-connect-manual-connect.png "Pola połączenia ręcznego")
 
 1. Podaj poniższe informacje:
 
