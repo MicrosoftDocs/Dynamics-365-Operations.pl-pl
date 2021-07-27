@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193547"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349065"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 
@@ -34,7 +34,7 @@ Po wytrenowaniu nadzorowanego problemu uczenia maszynowego na zestawie danych hi
 
 Na przykład mamy przewidzieć, czy zwierzę to pies czy kot, na podstawie pewnych fizycznych i behawioralnych atrybutów. Jeśli mamy zestaw danych testowych zawierający 30 psów i 20 kotów, to matryca pomyłek może wyglądać jak na poniższej ilustracji.
 
-![Przykład przewidywania gatunków](media/species-prediction-matrix.png)
+![Przykład przewidywania gatunków.](media/species-prediction-matrix.png)
 
 Liczby w zielonych komórkach reprezentują prawidłowe przewidywania. Jak widać, model poprawnie przewiduje wyższy procent kotów. Ogólna dokładność modelu jest łatwa do obliczenia. W tym przypadku jest to 42 ÷ 50 lub 0,84.
 
@@ -44,7 +44,7 @@ Większość dyskusji na temat matrycy pomyłek skupia się na klasyfikatorach b
 
 Następnie będziemy rozważać problem z klasyfikacją na przypadku scenariusza finansowego z trzema stanami Model przewiduje, czy faktura od odbiorcy będzie opłacona na czas, późno czy bardzo późno. Na przykład z 100 faktur testowych, 50 jest opłaconych na czas, 35 są spóźnione, a 15 jest opłaconych bardzo późno. W takim przypadku model może wygenerować matrycę pomyłek przypominającej poniższą ilustrację.
 
-![Model 1](media/payment-prediction-matrix.png)]
+![Model 1.](media/payment-prediction-matrix.png)]
 
 Matryca pomyłek zawiera znacznie więcej informacji niż metryka o prostej dokładności. Jest to jednak nadal stosunkowo łatwe do zrozumienia. Matryca pomyłek mówi, czy zestaw danych jest zrównoważony, czyli klasy wyjściowe mają podobne zliczenia. W przypadku scenariusza wieloklasowego użytkownik określa, jak daleko może mylić się przewidywanie, jeśli klasy wyjściowe są porządkowe, tak jak w poprzednim przykładzie dotyczącymi płatności od odbiorców.
 
@@ -55,7 +55,7 @@ Ponieważ dokładność jest łatwa do zrozumienia, jest to dobry punkt wyjścia
 
 Jednak w celu dokładniejszego zrozumienia należy pamiętać o kilka wyzwaniach związanych z dokładnością. Użyteczność metryki zależy od kontekstu problemu. Pytanie, które często jest zadawane w związku z wydajnością modelu, to „jak dobry jest model?” Jednak odpowiedź na to pytanie jest niekoniecznie prosta. Rozważmy następującą matrycę pomyłek (model 2).
 
-![Przykład przewidywania płatności z większą próbką](media/payment-prediction-matrix-2.png)
+![Przykład przewidywania płatności z większą próbką.](media/payment-prediction-matrix-2.png)
 
 Szybkie obliczenie wskazuje, że dokładność tego modelu wynosi (70 + 10 + 3) ÷ 100 lub 0,83. Pozornie ten wynik jest lepszy niż wynik poprzedniego modelu wieloklasowego (model 1) o dokładności 0,73. Ale czy jest to lepsze?
 
@@ -87,7 +87,7 @@ Ostatnim rozważaniem w tym temacie jest bardziej zaawansowana miara skutecznoś
 
 Przed zdefiniowaniem dokładności F1 należy wprowadzić dwie dodatkowe metryki: precyzję i trafność. Precyzja wskazuje, ile z łącznej liczby przewidywań określonych jako dodatnie jest prawidłowo przypisanych. Ta metryka jest również określana jako dodatnia wartość predykcyjna. Trafność to łączna liczba rzeczywistych pozytywnych przypadków, które zostały prawidłowo przewidziane. Ta metryka jest również określana jako czułość.
 
-[![Prawdziwe wyniki w porównaniu z fałszywymi wynikami](./media/tn-fn.png)](./media/tn-fn.png)
+[![Prawdziwe wyniki w porównaniu z fałszywymi wynikami.](./media/tn-fn.png)](./media/tn-fn.png)
 
 W matrycy pomyłek na powyższej ilustracji, te metryki są obliczane w następujący sposób:
 
@@ -100,7 +100,7 @@ Miara F1 łączy precyzję i trafność. Wynik jest średnią harmoniczną dwóc
 
 Przyjrzyjmy się konkretnemu przykładowi. Wcześniej w tym temacie mieliśmy przykład modelu, który przewiduje, czy zwierzę jest psem czy kotem. W tym miejscu ilustracja jest powtórzona.
 
-[![Przykład przewidywania gatunków (powtórzone)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Przykład przewidywania gatunków (powtórzone).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Oto wyniki, jeśli jako odpowiedź pozytywną przyjmiemy „pies”.
 
@@ -114,9 +114,9 @@ Chociaż dokładność F1 nie jest łatwa w zrozumieniu, dodaje niuans do proste
 
 Sekcja [Dokładność modelu](#model-accuracy) w tym temacie porównuje następujące dwie matryce pomyłek. Nawet jeśli pierwszy model miał niższą dokładność, uznano, że jest bardziej przydatny, ponieważ wykazał się lepszą poprawą domyślnego przypuszczenia płatności na czas.
 
-![Przykład porównania przewidywania płatności z rzeczywistością](media/payment-prediction-matrix.png)
+![Przykład porównania przewidywania płatności z rzeczywistością.](media/payment-prediction-matrix.png)
 
-![Przykład przewidywania płatności z większą próbką (powtórzone)](media/payment-prediction-matrix-2.png)
+![Przykład przewidywania płatności z większą próbką (powtórzone).](media/payment-prediction-matrix-2.png)
 
 Zobaczmy, jak te dwa modele są porównywane w przypadku użycia wyniku F1. Wynik F1 mierzy precyzję i trafność poszczególnych stanów, a obliczenia w makrze F1 następnie uśredniają wynik F1 różnych stanów, aby określić ogólny wynik F1. Istnieją inne warianty F1, ale jest bardziej przydatne, aby wziąć pod uwagę wersję makro, ze względu na równe znaczenie przypisywane wszystkim trzem stanom.
 

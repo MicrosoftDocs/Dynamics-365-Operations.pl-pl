@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a03c8f340e8ebb2fb0440518c154ed3bdd0197f6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 7f735726a7e126174bc9c6a4002e421df3f21298
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360623"
 ---
 # <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Zapobieganie obcinaniu tekstu w hierarchii stanowisk i eksportowanie do programu Visio
 
@@ -29,13 +29,13 @@ ms.locfileid: "6053258"
 
 Gdy odbiorcy wyświetlają hierarchię stanowisk w Microsoft Dynamics 365 Human Resources, nazwy stanowisk i imiona oraz nazwiska osób są obcinane. Z tego względu może być trudne wykonanie zrzutu ekranu lub drukowanie i dystrybucja hierarchii.
 
-![Hierarchia stanowisk](media/position-h.png)
+![Hierarchia stanowisk.](media/position-h.png)
 
-**Przyczyna**
+**Powód**
 
 Jest to celowe.
 
-**Rozdzielczość**
+**Rozwiązanie**
 
 Niestety użytkownicy nie mogą łatwo zmieniać rozmiaru tekstu. Można jednak wyeksportować hierarchię stanowisk poza moduł Human Resources i następnie zaimportować ją do programu Microsoft Visio. Mimo że następujący artykuł został napisany dla systemu Microsoft Dynamics AX 2012, proces można zastosować do modułu Human Resources: [Eksportowanie hierarchii stanowisk do programu Microsoft Visio](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
@@ -47,48 +47,48 @@ Wykonaj następujące kroki, aby wyeksportować do programu Visio.
 
 2. W okienku akcji naciśnij przycisk **Otwórz w programie Microsoft Office**, a następnie, w obszarze **Eksportuj do programu Excel**, wybierz opcję **Stanowiska**. Alternatywnie naciśnij klawisze Ctrl + T.
 
-    ![Eksportowanie strony listy Stanowiska do programu Excel](media/org-admin.png)
+    ![Eksportowanie strony listy Stanowiska do programu Excel.](media/org-admin.png)
 
 3. Zapisz plik programu Excel, który został wyeksportowany.
 
-    ![Okno dialogowe Eksportuj do programu Excel](media/export-excel.png)
+    ![Okno dialogowe Eksportuj do programu Excel.](media/export-excel.png)
 
 4. W programie Visio zaznacz **Visio — Utwórz nowy** i wybierz kategorię szablonu **Służbowy**.
 
-    ![Nowy diagram](media/new.png)
+    ![Nowy diagram.](media/new.png)
 
 5. Wybierz **Kreatora schematów organizacyjnych**, a następnie wybierz opcję **Utwórz**.
 
-    ![Okno dialogowe Kreator schematów organizacji](media/orgchart-wizard.png)
+    ![Okno dialogowe Kreator schematów organizacji.](media/orgchart-wizard.png)
 
 6. Wybierz **Informacje, które już są przechowywane w pliku lub bazie danych**, a następnie wybierz opcję **Dalej**.
 
-    ![Kreator schematów organizacyjnych 1](media/orgchart-wizard7.png)
+    ![Kreator schematów organizacyjnych 1.](media/orgchart-wizard7.png)
 
 7. Wybierz **Tekst, Org Plus (\*.txt) lub plik programu Excel**, a następnie wybierz opcję **Dalej**.
 
-    ![Kreator schematów organizacyjnych 2](media/orgchart-wizard3.png)
+    ![Kreator schematów organizacyjnych 2.](media/orgchart-wizard3.png)
 
 8. Przeglądaj, aby wybrać wyeksportowany plik programu Excel zawierający hierarchię stanowisk, a następnie wybierz opcję **Dalej**.
 
-    ![Kreator schematów organizacyjnych 3](media/orgchart-wizard2.png)
+    ![Kreator schematów organizacyjnych 3.](media/orgchart-wizard2.png)
 
 9. Ustaw pole **Nazwa** jako **Stanowisko**, ustaw pole **Podlega** jako **Stanowisko zwierzchnie**, a następnie wybierz **Dalej**.
 
-    ![Kreator schematów organizacyjnych 4](media/orgchart-wizard1.png)
+    ![Kreator schematów organizacyjnych 4.](media/orgchart-wizard1.png)
 
 10. Wybierz pola, które mają być pokazywane na każdym węźle, a następnie wybierz opcję **Dalej**.
 
-    ![Kreator schematów organizacyjnych 5](media/orgchart-wizard5.png)
+    ![Kreator schematów organizacyjnych 5.](media/orgchart-wizard5.png)
 
 11. Dodaj kolumnę **Stanowisko** do listy **pól danych kształtów**, a następnie wybierz **Dalej**.
 
-    ![Kreator schematów organizacyjnych 6](media/orgchart-wizard6.png)
+    ![Kreator schematów organizacyjnych 6.](media/orgchart-wizard6.png)
 
 12. Obrazy nie są obecnie dostępne. W związku z tym, na następnej stronie wybierz **Dalej**.
 13. Wybierz **Chcę użyć kreatora do automatycznego podzielenia schematu organizacyjnego na strony**.
 
-    ![Kreator schematów organizacyjnych 7](media/orgchart-wizard4.png)
+    ![Kreator schematów organizacyjnych 7.](media/orgchart-wizard4.png)
 
 14. Wybierz **Zakończ**.
 
@@ -98,7 +98,7 @@ Diagram, który jest generowany w programie Visio, zawiera każdego kierownika w
 
 Na podstawie pól wybranych do uwzględnienia w schemacie, każdy węzeł wyświetla odpowiednie informacje podczas generowania pliku programu Visio.
 
-![Diagram hierarchii](media/hierarchy.png)
+![Diagram hierarchii.](media/hierarchy.png)
 
 **Opcja dodatkowa**
 

@@ -2,7 +2,7 @@
 title: Moduł baneru promocyjnego
 description: W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: be3cc9729b58fce9ebc9885d8cb20b63114362a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3158916f96522bec6e7511f2d9daf61d36ffe8c6
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796253"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479359"
 ---
 # <a name="promo-banner-module"></a>Moduł transparentu promocyjnego
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduł baneru promocyjnego i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
@@ -34,7 +35,7 @@ Moduły baneru promocyjnego obsługują wiadomość SMS i łącze. Jeśli do mod
 
 Moduły baneru promocyjnego są sterowane danymi z systemu zarządzania zawartością (CMS) i mogą być umieszczane na dowolnej stronie.
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Przykłady użycia banerów promocyjnych w e-Commerce
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Przykłady użycia banerów promocyjnych w e-commerce
 
 W nagłówku witryny można używać banerów promocyjnych do wyświetlania promocji lub komunikatów w całej witrynie, tak jak w poniższych przykładach.
 
@@ -46,7 +47,7 @@ W nagłówku witryny można używać banerów promocyjnych do wyświetlania prom
 
 Poniższy obraz przedstawia przykład baneru promocyjnego.
 
-![Przykład modułu baneru promocyjnego](./media/ecommerce-Promobanner.PNG)
+![Przykład modułu baneru promocyjnego.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Właściwości modułu baneru promocyjnego
 
@@ -58,7 +59,11 @@ Poniższy obraz przedstawia przykład baneru promocyjnego.
 | Zezwól na odrzucanie             | **Prawda** lub **Fałsz**              | Jeśli wartość jest ustawiona na **Prawda**, odbiorcy mogą anulować alert. |
 | Pokazuj flipper karuzeli     | **Prawda** lub **Fałsz**              | Wartość wskazująca, czy mają być pokazywane flippery karuzeli, dzięki czemu odbiorcy mogą ręcznie przechodzić między różnymi elementami baneru. |
 | Wyrównanie tekstu            | **Prawo**, **Lewo** lub **Środek** | Wyrównanie tekstu w module baner promocyjny. |
-| Link                      | Adres URL                              | Adres URL opcjonalnego linku. |
+| Łącze                      | Adres URL                              | Adres URL opcjonalnego linku. |
+|Wyrównanie tekstu             | **Prawo**, **Lewo** lub **Środek** | Ta właściwość jest dostępna jako rozszerzenie motywu w motywie Adventure Works. Pozwala użytkownikowi ustawić wyrównanie tekstu w banerze promocyjnym. |
+
+> [!IMPORTANT]
+> Kompozycja Adventure Works jest dostępna w Dynamics 365 Commerce w wersji 10.0.20.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Dodawanie modułu baneru promocyjnego do nowej strony 
 
@@ -78,7 +83,6 @@ Aby dodać moduł baneru promocyjnego do nowej strony i ustawić wymagane właś
 
 > [!NOTE]
 > Baner jest zazwyczaj używany w gnieździe nagłówka strony lub w gnieździe podnagłówków.
-
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

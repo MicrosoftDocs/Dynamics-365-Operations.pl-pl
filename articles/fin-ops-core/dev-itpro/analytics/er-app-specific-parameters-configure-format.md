@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0af3e1d589fd99cc722d8aedeb9596388a9e2e8c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 629662d274d88d59c9b73a9d6b0d5c178331fe73
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351921"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Skonfiguruj formaty ER do używania parametrów określonych dla firmy
 
@@ -78,17 +78,17 @@ W tym przykładzie utworzysz konfigurację dla przykładowej Litware, Inc. Aby u
 
     **Format wywołania sparametryzowanych wywołań** formatu ER jest przeznaczony do generowania deklaracji podatkowej w formacie XML, który przedstawia kilka poziomów opodatkowania (zwykły, ograniczony i brak) Każdy poziom ma inną liczbę szczegółów.
 
-    ![Wiele poziomów formatu ER, Format do nauki parametrów wywołań](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Wiele poziomów formatu ER, Format do nauki parametrów wywołań.](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Na karcie **mapowanie** rozwiń pozycje **model**, **dane** i **podsumowanie**.
 
     Źródło **Model.Data.Summary** podsumowanie zwraca listę transakcji podatkowych. Transakcje te są podsumowane według kodu podatkowego. Dla tego źródła danych pole obliczeniowe **Model.Data.Summary.Level** na poziomie zostało skonfigurowane w taki sposób, aby zwracała kod poziomu opodatkowania każdego rekordu zbiorczego. Obliczone pole **Model.Data.Summary.Level** zawiera źródło danych w czasie wykonywania obliczone pole zwraca kod poziomu opodatkowania (**Zwykłe**, **Obniżone**, **Brak** lub **Inne**) jako wartość tekstową. Pole **Model.Data.Summary.Level** służy do filtrowania rekordów **Model.Data.Summary** i wprowadź filtrowane dane w każdym elemencie XML, który reprezentuje poziom opodatkowania, przy użyciu pól **Model.Data2.Level1**, **Model.Data2.Level2** i **Model.Data2.Level3**.
 
-    ![Źródło Model.Data.Summary podsumowanie pokazuje listę transakcji podatkowych](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Źródło Model.Data.Summary podsumowanie pokazuje listę transakcji podatkowych.](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Pole **Model.Data.Summary.Level** zostało skonfigurowane w taki sposób, aby zawierało wyrażenie ER. Kody podatków (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** i **InVAT0**) są mocno zakodowane w tej konfiguracji. W związku z tym ten format ER jest zależny od firmy, w której skonfigurowano kody podatków.
 
-    ![Pole Model.Data.Summary.Level z kodami stałymi podatków](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Pole Model.Data.Summary.Level z kodami stałymi podatków.](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Aby obsługiwać różne zestawy kodów podatków dla poszczególnych firm, należy wykonać następujące kroki:
 
@@ -128,7 +128,7 @@ Następnie zostanie dodane nowe Wyliczenie formatu ER. Wartości tego wyliczenia
 12. Wybierz ponownie przycisk **Dodaj**.
 13. W polu **Nazwa** wprowadź nazwę **Inne**.
 
-    ![Nowy rekord na stronie wyliczeń formatów](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Nowy rekord na stronie wyliczeń formatów.](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Ponieważ użytkownicy biznesowi mogą stosować różne języki do określania zestawów kodów podatków zależnych od firm, zaleca się przetłumaczenie wartości tego wyliczenia na języki skonfigurowane jako preferowane języki dla tych użytkowników w Finance.
 
@@ -141,7 +141,7 @@ Następnie zostanie dodane nowe Wyliczenie formatu ER. Wartości tego wyliczenia
 20. W polu **Przetłumaczony tekst** wprowadź tekst **keine Besteuerung**.
 21. Wybierz **Tłumacz**.
 
-    ![Wysuń tłumaczenie tekstu](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Wysuń tłumaczenie tekstu.](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Wybierz opcję **Zapisz**.
 23. Zamknij stronę **wyliczenia formatów**.
@@ -168,13 +168,13 @@ Następnie należy dodać nowe źródło danych w celu określenia sposobu, w ja
 10. Wybierz pozycję **Model.Data.Tax.Code**.
 11. Wybierz przycisk **Dodaj** (Strzałka w prawo).
 
-    ![Kolumny wysuwają się](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Kolumny wysuwają się.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Właśnie określono, że dla każdej reguły określonej w tym źródle danych do rozpoznawania poziomu opodatkowania użytkownik biznesowy musi wybrać jeden z kodów podatkowych jako warunek. Lista kodów podatków, które może wybrać użytkownik biznesowy, zostanie zwrócona przez źródło danych **Model.Data.Tax**. Ponieważ to źródło danych zawiera pole **nazwa**, nazwa kodu podatku będzie wyświetlana dla każdej wartości kodu podatku w wyszukiwaniu prezentowanemu użytkownikowi biznesowemu.
     
 12. Kliknij przycisk **OK**.
 
-    ![Strona konstruktora wyszukiwania](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Strona konstruktora wyszukiwania.](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Użytkownicy biznesowi mogą dodawać wiele reguł w postaci rekordów tego źródła danych. Każdy rekord będzie numerowany według kodu wiersza. Reguły będą oceniane w kolejności rosnącego numeru wiersza.
 
@@ -188,13 +188,13 @@ Następnie należy dodać nowe źródło danych w celu określenia sposobu, w ja
 
     Należy zauważyć, że dodano nowe źródło danych, które zwróci poziom opodatkowania jako wartość **listy poziomów opodatkowania** dla dowolnego kodu podatku przekazanego do źródła danych jako argumentu parametru **kodu** typu danych **ciągu**.
     
-    ![Strona projektanta formatów z nowym źródłem danych](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Strona projektanta formatów z nowym źródłem danych.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Ocena skonfigurowanych reguł zależy od typu danych pól, które zostały wybrane w celu zdefiniowania warunków tych reguł. Po wybraniu pola, które jest skonfigurowane jako pole typu danych **numerycznych** lub **dat**, kryteria różnią się od kryteriów opisanych wcześniej dla typu **ciąg**. W przypadku pól **numerycznych** i **dat** reguła musi być określona jako zakres wartości. Warunek reguły zostanie wówczas uznany za spełniony, gdy wartość przekazywana do źródła danych znajduje się w skonfigurowanym zakresie.
     
     Ilustracja poniżej zawiera przykład tego rodzaju ustawień. Oprócz pole **Model.Data.Tax.Code** w typie danych **Ciąg** w polu **Model.Tax.Summary.Base** w **właściwe** służy do określania warunków dla źródła danych wyszukiwania.
     
-    ![Strona konstruktora wyszukiwania z dodatkowymi kolumnami](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Strona konstruktora wyszukiwania z dodatkowymi kolumnami.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Ponieważ pola **Model.Data.Tax.Code** i **Model.Tax.Summary.Base** są wybrane, każda reguła tego źródła danych zostanie skonfigurowana w następujący sposób:
     
@@ -223,7 +223,7 @@ Ponieważ użytkownicy biznesowi mogą używać różnych języków do określan
 9.  Wybierz **Tłumacz**.
 10. Kliknij przycisk **OK**.
 
-    ![Właściwości źródła danych wysuwają się](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Właściwości źródła danych wysuwają się.](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Dodaj nowe pole, aby użyć skonfigurowanego wyszukiwania
 
@@ -236,12 +236,12 @@ Ponieważ użytkownicy biznesowi mogą używać różnych języków do określan
 7.  W **polu formuła** wprowadź **Model.Selector(Model.Data.Summary.Code)**.
 8.  Wybierz opcję **Zapisz**.
 
-    ![Dodawanie model.selektora (Model.Data.Summary.Code) do strony projektanta formuł](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Dodawanie model.selektora (Model.Data.Summary.Code) do strony projektanta formuł.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Zamknij stronę **Edytor formuł**.
 10. Kliknij przycisk **OK**.
 
-    ![Strona projektanta formatów z nową dodaną formułą](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Strona projektanta formatów z nową dodaną formułą.](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Należy zauważyć, że dodane pole obliczeniowe **LevelByLookup** będzie zwracać poziom opodatkowania jako wartość **listy poziomów opodatkowania** dla każdego rekordu zsumowanej transakcji podatkowej. Kod podatku rekordu zostanie przekazany do wyszukiwania źródła danych **Model.Selector** zostanie użyta lista reguł wyszukiwania selektorów, a dla tego źródła danych zostanie wykorzystana opcja
 
@@ -269,7 +269,7 @@ Następnie zmodyfikuj istniejące pole obliczeniowe, tak aby używało skonfigur
 
 4.  W polu **formuła** wprowadź **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Regular", TaxationLevel.'Reduced taxation', "Reduced", TaxationLevel.'No taxation', "None", "Other")**.
 
-    ![Strona projektanta operacji ER](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
+    ![Strona projektanta operacji ER.](./media/RCS-AppSpecParms-ConfigureFormat-ChangeLookupFld.PNG)
     
     Zwróć uwagę, że wyrażenie w polu **Model.Data.Summary.Level** zwróci teraz poziom opodatkowania na podstawie kodu podatku bieżącego rekordu oraz zbioru reguł, które użytkownik biznes skonfigurowa w **Model.Data.Selector** wyszukiwaniu źródła danych.
     

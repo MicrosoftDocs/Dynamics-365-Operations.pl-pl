@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4d18d6fcf54fc74382f0d7d344de2aa74252ae4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7ac1495f12a51d72a90ad88fc2d8e0a574418467
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345141"
 ---
 # <a name="install-the-pos-layout-designer"></a>Instalowanie projektanta układów punktu sprzedaży
 
@@ -40,7 +40,7 @@ O wyglądzie interfejsu graficznego projektowania programu MPOS lub Cloud POS de
 5. Po zakończeniu instalacji na stronie **logowania** wprowadź nazwę użytkownika usługi Commerce i hasło, a następnie kliknij **Zaloguj**, aby uruchomić projektanta.
 6. Po zweryfikowaniu Twoich poświadczeń i uruchomieniu projektanta możesz zaprojektować własny układ albo zmodyfikować istniejący.
 
-    [![Układ w projektancie obsługiwanym jednym kliknięciem](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+    [![Układ w projektancie obsługiwanym jednym kliknięciem.](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Rozwiązywanie problemów z instalacją projektanta układu
 

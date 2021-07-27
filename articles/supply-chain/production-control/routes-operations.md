@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188941"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350505"
 ---
 # <a name="routes-and-operations"></a>Marszruty i operacje
 
@@ -45,7 +45,7 @@ Marszruta opisuje kolejność operacji niezbędnych do wytworzenia produktu lub 
 
 Marszruta prosta jest sekwencyjna i istnieje tylko jeden punkt początkowy marszruty.  
 
-[![Marszruta prosta](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Marszruta prosta.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko prostych marszrut, program Supply Chain Management będzie automatycznie generował numery operacji (10, 20, 30 i tak dalej) podczas definiowania tras.
 
@@ -53,7 +53,7 @@ Jeśli w oknie Parametry kontroli produkcji zostanie włączona obsługa tylko p
 
 Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złożonych marszrut sieciowych, można definiować marszruty mające wiele punktów początkowych oraz operacje, które mogą być wykonywane równolegle.  
 
-[![Marszruty sieciowe](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Marszruty sieciowe.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Każda operacja może mieć tylko jedną operację następującą, a cała marszruta musi się kończyć w jednej operacji.
@@ -64,7 +64,7 @@ Jeśli w oknie Parametry kontroli produkcji włączysz obsługę bardziej złoż
 
 Czasami w celu wykonania operacji jest wymagane połączenie wielu zasobów operacyjnych mających różne charakterystyki. Na przykład operacja montażu może wymagać maszyny, narzędzia oraz jednego pracownika nadzoru na każdą parę maszyn. Ten przykład można wymodelować przy użyciu operacji równoległych, gdzie jedna operacja jest wyznaczona jako główna, a pozostałe jako podrzędne.  
 
-[![Marszruta zawierająca operacje główne i podrzędne](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Marszruta zawierająca operacje główne i podrzędne.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Zazwyczaj operacja główna reprezentuje zasób w wąskim gardle i decyduje o czasie wykonywania operacji podrzędnych. Jednak podczas planowania obejmującego ograniczone zdolności produkcyjne zasoby, które są planowane zarówno dla operacji głównej, jak i operacji pomocniczych, muszą być dostępne i mieć wolne moce produkcyjne w tym samym czasie.  
 

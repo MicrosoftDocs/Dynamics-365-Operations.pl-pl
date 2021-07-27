@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: ec0d683153bd5ab731035159d32881fbdb352d70
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f681018c27afbef8d34c88a518941d45aa9d72df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023517"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358489"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Umożliwia dołączanie kodów podatków TDS do grup podatków TDS i definiowanie formuły obliczania TDS
 
@@ -33,7 +33,7 @@ Aby skonfigurować grupę podatków TDS, dołączyć kody podatków TDS i zdefin
 
 1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Potrącona zaliczka na podatek \> Grupy potrąconych zaliczek na podatek**.
 
-    [![Strona Grupy potrąconych zaliczek na podatek](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
+    [![Strona Grupy potrąconych zaliczek na podatek.](./media/apac-ind-TDS-29.png)](./media/apac-ind-TDS-29.png)
 
 2. Wybierz **Nowy** na okienku akcji, aby utworzyć grupę podatku u źródła dla podatku u źródła i wprowadź wymagane szczegóły.
 3. W polu **Typ podatku** zaznacz opcję **TDS**.
@@ -43,7 +43,7 @@ Aby skonfigurować grupę podatków TDS, dołączyć kody podatków TDS i zdefin
 7. Aby zapobiec obliczaniu grupy podatkowej w transakcjach, zaznacz pole wyboru **Zwolnienie**.
 8. W okienku akcji wybierz opcję **Projektant**, aby otworzyć projektanta formuł, aby można było zdefiniować formułę obliczania TDS dla grupy podatków TDS. Na stronie **Konstruktor** na karcie **Podatki** są widać kody podatków TDS wybrane dla grupy podatków TDS.
 
-    [![Strona Projektant](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
+    [![Strona Projektant.](./media/apac-ind-TDS-30.png)](./media/apac-ind-TDS-30.png)
 
 9. Na karcie **Obliczanie** wybierz klawisze **Alt+N**, aby utworzyć wiersz. Pole **identyfikator** zawiera automatycznie wygenerowany identyfikator priorytetu dla obliczania TDS.
 10. W polu **Kod podatku** wybierz kod podatku TDS, dla którego ma zostać zdefiniowana formuła. W tym polu są dostępne wszystkie kody podatków TDS wybrane dla grupy podatków TDS.

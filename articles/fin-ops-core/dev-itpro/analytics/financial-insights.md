@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193757"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345819"
 ---
 # <a name="financial-analysis"></a>Analiza finansowa
 
@@ -60,7 +60,7 @@ Aby konto główne było wyświetlane w sprawozdaniach finansowych i uwzględnia
 ## <a name="entity-store"></a>Magazyn jednostek
 Dane obszaru roboczego **Analiza finansowa** są pobierane z magazynu jednostek (**Administrowanie systemem** \> **Ustawienia** \> **Magazyn jednostek**) Jeśli po otwarciu obszaru roboczego **Przegląd dla dyrektora finansowego** lub **Analiza finansowa** na elementach wizualnych pojawi się komunikat ostrzegawczy podany niżej, należy zaktualizować jednostki.
 
-![Ostrzeżenie](./media/Cantdisplay.png)
+![Ostrzeżenie.](./media/Cantdisplay.png)
 
 Należy zaktualizować następujące jednostki, aby widzieć dane w obszarach roboczych **Analiza finansowa**:
 
@@ -124,7 +124,7 @@ Użytkownicy mogą filtrować raport przy użyciu okienka **Filtr** po lewej str
 - **Filtry poziomu elementu wizualnego** — te filtry są stosowane tylko do wybranego elementu wizualnego. Są nakładane na filtry poziomu strony.
 - **Filtr drążenia wskroś** — ten filtr filtruje od zastosowanego „źródłowego” elementu wizualnego do bieżącego elementu wizualnego podczas drążenia wskroś od źródłowego elementu wizualnego do bieżącego elementu wizualnego.
 
-![Opcje filtrowania](./media/filter.png)
+![Opcje filtrowania.](./media/filter.png)
 
 Aby usunąć wartość określonego filtru, wybierz symbol gumki obok tego filtru. Nie usuwaj filtru naciśnięciem przycisku X. Jeśli wybierzesz symbol X, pole, według którego odbywa się filtrowanie, zostanie usunięte jako opcja filtru. Jeśli przypadkowo usuniesz pole z filtru, zamknij obszar roboczy, a następnie otwórz go ponownie. Zostaną wtedy ponownie zastosowane domyślne ustawienia filtru.
 
@@ -169,25 +169,25 @@ W usłudze Power BI jest dostępnych kilka poziomów przechodzenia do szczegół
 
 Na poniższej ilustracji sprawozdanie **Bilans próbny** jest zwinięte do najwyższego poziomu w hierarchii wierszy, czyli do typu konta głównego.
 
-![Zestawienie bilansów próbnych](./media/trial-balance.png)
+![Zestawienie bilansów próbnych.](./media/trial-balance.png)
 
 Aby wyświetlić następny poziom hierarchii, czyli kategorie konta głównego, można w polu **Wyszczególnij według** ustawić opcję **Wiersze**, a następnie nacisnąć przycisk **Rozwiń** (trzeci przycisk za polem Wyszczególnij według). Teraz zobaczysz rozwinięte wszystkie kategorie konta głównego. Obecnie usługa Power BI nie pozwala rozwinąć tylko jednego wiersza lub kolumny, ale nadal widzieć wszystkie pozostałe wiersze lub kolumny.
 
-![Przechodzenie do coraz bardziej szczegółowych wierszy bilansu próbnego](./media/trial-balance2.png)
+![Przechodzenie do coraz bardziej szczegółowych wierszy bilansu próbnego.](./media/trial-balance2.png)
 
 Aby rozwinąć do poziomu kont głównych dla wszystkich wierszy, ponownie użyj przycisku **Rozwiń**. Jednak aby uszczegółowić do kont głównych tylko dla jednego wiersza, najpierw wybierz przycisk **Przejdź do szczegółów** (pojedynczą strzałkę skierowaną w dół po prawej stronie okna), a następnie wybierz wiersz, który chcesz uszczegółowić. Na poniższej ilustracji przedstawiono wynik zaznaczenia wiersza **Sprzedaż** po naciśnięciu przycisku **Przejdź do szczegółów**.
 
-![Przycisk rozwijania bilansu próbnego](./media/trial-balance3.png)
+![Przycisk rozwijania bilansu próbnego.](./media/trial-balance3.png)
 
 Po przejściu do szczegółów w jednym wierszu trzeba kliknąć kilka razy, aby wrócić do pełnego bilansu próbnego. Przycisk **Uogólnij** (pierwszy za polem **Wyszczególnij według**) powoduje uogólnianie tylko w kontekście kategorii **Sprzedaż**, jak pokazano na poniższej ilustracji.
 
-![Przycisk uogólniania bilansu próbnego](./media/trial-balance4.png)
+![Przycisk uogólniania bilansu próbnego.](./media/trial-balance4.png)
 
 Można dalej klikać przycisk **Uogólnij**, aby wrócić do najwyższego poziomu podsumowania dla wierszy.
 
 W oknie usługi Power BI znajduje się również przycisk, który umożliwia przejście do następnego poziomu w hierarchii (drugi przycisk za polem **Wyszczególnij według**). Efekt użycia tego przycisku różni się od działania przycisku **Rozwiń** (trzeci przycisk za polem **Wyszczególnij według**), który służy do rozwijania hierarchii. Po rozwinięciu hierarchii pozostaje ona w raporcie. Na przykład, jak pokazano wcześniej, jeśli rozwiniesz poziom typu konta głównego, będzie on widoczny w raporcie. Jednak po przejściu do następnego poziomu w hierarchii raport nie będzie już pokazywał obiektu nadrzędnego w hierarchii, jak przestawiono na ilustracji poniżej.
 
-![Przycisk przechodzenia wstecz w bilansie próbnym](./media/trial-balance5.png)
+![Przycisk przechodzenia wstecz w bilansie próbnym.](./media/trial-balance5.png)
 
 Aby zobaczyć szczegóły transakcji stojących za zbiorczymi saldami, można wybrać pewne kwoty i w ten sposób przejść z powrotem do programu Finance and Operations.
 
@@ -226,7 +226,7 @@ Obecnie sprawozdania finansowe nie obsługują hierarchii organizacyjnych, któr
 ## <a name="data-limitations"></a>Ograniczenia dotyczące danych
 Elementy wizualne sprawozdania finansowego mają zdefiniowane ograniczenie liczby wierszy, które mogą być pokazywane. Obecnie limit jest równy 30 000. Po przekroczeniu tego limitu na elemencie graficznym pojawi się symbol ostrzeżenia informujący o zaistniałej sytuacji.
 
-![Ograniczenia dotyczące danych](./media/data-limit.png)
+![Ograniczenia dotyczące danych.](./media/data-limit.png)
 
 Jeśli ten maksymalny limit zostanie przekroczony, sumy wyświetlane w sprawozdaniu finansowym będą nieprawidłowe, ponieważ nie wszystkie wiersze zostały załadowane do elementu wizualnego.
 

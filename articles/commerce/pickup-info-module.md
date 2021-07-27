@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804412"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353811"
 ---
 # <a name="pickup-information-module"></a>Moduł informacji o odbiorze
 
@@ -40,7 +40,7 @@ Jeśli do odbioru w wielu sklepach wybrano wiele pozycji, moduł informacji o od
 
 Poniższa ilustracja przedstawia przykład wyboru przedziału czasu za pośrednictwem modułu informacji o odbiorze, znajdującego się na stronie realizacja transakcji.
 
-![Przykład modułu informacji o odbiorze na stronie realizacja zamówienia](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Przykład modułu informacji o odbiorze na stronie realizacja zamówienia.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Właściwości modułu
 
@@ -56,7 +56,7 @@ Aby uzyskać instrukcje dotyczące dodawania modułu informacji o odbiorze do st
 
 Na poniższej ilustracji przedstawiono przykład strony płatności handlu elektronicznego, która zawiera przedziały czasowe dla elementów zamówienia odbioru.
 
-![Przykład strony płatności handlu elektronicznego, która zawiera przedziały czasowe dla elementów zamówienia odbioru](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Przykład strony płatności handlu elektronicznego, która zawiera przedziały czasowe dla elementów zamówienia odbioru.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

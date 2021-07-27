@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841798"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353523"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Realizacja zapasów bezpieczeństwa dla towarów
 
@@ -72,37 +72,50 @@ Poniższy scenariusz pokazuje, jak działa ten parametr i jakie są różnice mi
 > [!NOTE]
 > Na wszystkich ilustracjach w tym temacie oś x-oznacza zapasy, oś y-oznacza dni, paski oznaczają poziom zapasów, strzałki oznaczają transakcje, takie jak wiersze zamówień sprzedaży, wiersze zamówień zakupu lub planowane zamówienia.
 
-[![Typowy scenariusz realizacji zapasów bezpieczeństwa](./media/Scenario1.png)](./media/Scenario1.png) Parametr **Uzupełnij stany minimalne** może mieć następujące wartości:
+[![Wspólny scenariusz realizacji zapasów bezpieczeństwa.](./media/Scenario1.png)](./media/Scenario1.png)
+Parametr **Zrealizuj minimum** może mieć następujące wartości:
 ### <a name="todays-date"></a>Data dzisiejsza 
 Określona ilość minimalna jest spełniona w dniu planowania głównego. System próbuje zrealizować limit zapasów bezpieczeństwa jak najszybciej, mimo że może to być nierealne ze względu na czas realizacji. 
-[![Wymaganie w dniu dzisiejszym](./media/TodayReq.png)](./media/TodayReq.png) Planowane zamówienie P1 jest tworzone dla dnia dzisiejszego w celu zwiększenia dostępnych zapasów powyżej poziomu zapasów bezpieczeństwa w tym dniu. Wiersze zamówienia sprzedaży S1 do S3 kontynuują zmniejszanie poziomu zapasów. Planowane zamówienia P2 do P4 są generowane przez planowanie główne w celu przywrócenia poziomu zapasów do bezpiecznego limitu po każdym zapotrzebowaniu z zamówienia sprzedaży.
+[![Zapotrzebowanie na dzisiaj.](./media/TodayReq.png)](./media/TodayReq.png)
+Planowane zamówienie P1 jest tworzone dla dnia dzisiejszego w celu zwiększenia dostępnych zapasów powyżej poziomu zapasów bezpieczeństwa w tym dniu. Wiersze zamówienia sprzedaży S1 do S3 kontynuują zmniejszanie poziomu zapasów. Planowane zamówienia P2 do P4 są generowane przez planowanie główne w celu przywrócenia poziomu zapasów do bezpiecznego limitu po każdym zapotrzebowaniu z zamówienia sprzedaży.
 Gdy używany jest kod **Zapotrzebowanie**, tworzonych jest wiele planowanych zamówień. Warto zawsze używać zapotrzebowania **Okres** lub **Minimum/Maksimum** dla towarów i materiałów o dużym popycie w celu uzupełnienia zapasów. Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Okres**.
-[![Okres. Dzisiejsza data](./media/TodayPeriod.png)](./media/TodayPeriod.png) Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Minimum/Maksimum**.
-[![MinMaks. Dzisiejsza data](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Okres. Dzisiejsza data.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Min./Maks.**.
+[![MinMaks. Dzisiejsza data.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Data dzisiejsza + czas zaopatrzenia 
 Określona ilość minimalna jest spełniona w dniu planowania głównego wydłużonego o czas zakupu lub produkcji. Czas ten uwzględnia marginesy bezpieczeństwa. Jeśli towar zawiera umowę handlową, a pole wyboru **Znajdź umowy handlowe** jest zaznaczone na stronie **Parametry planowania głównego**, czas realizacji dostawy z umowy handlowej nie jest uwzględniany. Czasy realizacji są określane na podstawie ustawień zapotrzebowania na towar lub na podstawie ustawień towaru.
 Ten tryb realizacji spowoduje utworzenie planów z mniejszą liczbą opóźnień i planowanych zamówień bez względu na ustawione grupy zapotrzebowania ustawione dla towaru. Na poniższej ilustracji przedstawiono wyniki planu, jeśli kod zapotrzebowania to **Zapotrzebowanie** lub **Okres**.  
-[![Zapotrzebowanie. Okres. Dzisiejsza data i czas realizacji](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Na poniższej ilustracji przedstawiono wyniki planu, jeśli kod zapotrzebowania to **Minimum/Maksimum**.  
-[![MinMaks. Dzisiejsza data i czas realizacji](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Wymaganie. Okres. Dzisiejsza data i czas realizacji.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+Na poniższej ilustracji przedstawiono wyniki planu, jeśli kod zapotrzebowania to **Min./Maks.**.  
+[![MinMaks. Dzisiejsza data i czas realizacji.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>Pierwszy rozchód 
 Określona ilość minimalna jest spełniona w dniu, gdy dostępne zapasy spadną poniżej minimalnego poziomu, jak pokazano na poniższej ilustracji. Nawet jeżeli poziom dostępnych zapasów jest niższy od minimalnego w dniu planowania głównego, funkcja **Pierwszy rozchód** nie podejmie próby jego zwiększenia do momentu odebrania następnego zapotrzebowania.
 Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Zapotrzebowanie**.
-[![Planowanie towaru za pomocą kodu zapotrzebowania **Zapotrzebowanie** i realizacji **Pierwszy rozchód**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Okres**.
-[![Planowanie towaru za pomocą kodu zapotrzebowania **Okres** i realizacji **Pierwszy rozchód**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Minimum/Maksimum**.
-[![Planowanie towaru za pomocą kodu zapotrzebowania **MinMaks** i realizacji **Pierwszy rozchód**](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) W dniu planowania głównego, jeżeli dostępne zapasy są już niższe od limitu zapasów bezpieczeństwa, opcje **Data dzisiejsza** i **Data dzisiejsza + czas zaopatrzenia** spowodują natychmiastowe uzupełnienie zapasów. Funkcja **Pierwszy rozchód** będzie czekać na kolejną transakcję rozchodu, taką jak zamówienie sprzedaży i wymaganie wiersza BOM dla towaru, a następnie uruchomi uzupełnianie zapasów w dniu tej transakcji. W dniu planowania głównego, jeżeli poziom dostępnych zapasów nie będzie niższy od limitu zapasów bezpieczeństwa, opcje **Data dzisiejsza** i **Pierwszy rozchód** spowodują uzyskanie dokładnie takiego samego wyniku, jak pokazano na poniższej ilustracji. 
+[![Planowanie towaru za pomocą kodu zapotrzebowania **Zapotrzebowanie** i realizacji **Pierwszy rozchód**.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Okres**.
+[![Planowanie towaru za pomocą kodu zapotrzebowania **Okres** i realizacji **Pierwszy rozchód**.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Na poniższej ilustracji przedstawiono przykład kodu zapotrzebowania **Min./Maks.**.
+[![Planowanie towaru za pomocą kodu zapotrzebowania **MinMaks** i realizacji **Pierwszy rozchód**.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+W dniu planowania głównego, jeżeli dostępne zapasy są już niższe od limitu zapasów bezpieczeństwa, opcje **Data dzisiejsza** i **Data dzisiejsza + czas zaopatrzenia** spowodują natychmiastowe uzupełnienie zapasów. Funkcja **Pierwszy rozchód** będzie czekać na kolejną transakcję rozchodu, taką jak zamówienie sprzedaży i wymaganie wiersza BOM dla towaru, a następnie uruchomi uzupełnianie zapasów w dniu tej transakcji. W dniu planowania głównego, jeżeli poziom dostępnych zapasów nie będzie niższy od limitu zapasów bezpieczeństwa, opcje **Data dzisiejsza** i **Pierwszy rozchód** spowodują uzyskanie dokładnie takiego samego wyniku, jak pokazano na poniższej ilustracji. 
 
-[![PowyżejLimitu](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) W dniu planowania głównego, jeżeli poziom dostępnych zapasów nie będzie niższy od limitu zapasów bezpieczeństwa, opcja **Data dzisiejsza + czas zaopatrzenia** spowoduje uzyskanie poniższego wyniku, ponieważ odkłada realizację aż do zakończenia czasu realizacji zaopatrzenia.
-![Planowanie towaru za pomocą kodu zapotrzebowania **Zapotrzebowanie** i realizacji **Pierwszy rozchód**](./media/ReqTodayLT.png)
+[![NotUnderLimit.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+W dniu planowania głównego, jeżeli poziom dostępnych zapasów nie będzie niższy od limitu zapasów bezpieczeństwa, opcja **Data dzisiejsza + czas zaopatrzenia** spowoduje uzyskanie poniższego wyniku, ponieważ odkłada realizację aż do zakończenia czasu realizacji zaopatrzenia.
+![Planowanie towaru za pomocą kodu zapotrzebowania **Zapotrzebowanie** i realizacji **Pierwszy rozchód**.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Horyzont czasowy zapotrzebowania
 Określona ilość minimalna jest spełniona w okresie podanym w polu **Horyzont czasowy zapotrzebowania**. Ta opcja jest przydatna, gdy planowanie główne nie zezwala na użycie dostępnych zapasów na potrzeby rzeczywistych zamówień, takich jak sprzedaż lub przeniesienia, w celu zachowania poziomu bezpieczeństwa. Jednak w przyszłej wersji ten tryb uzupełniania zapasów nie będzie potrzebny, ponieważ ta opcja zostanie wycofana.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>Planowanie uzupełnienia zapasów bezpieczeństwa dla towarów FEFO
 W dowolnej chwili odbiór zapasów z najdłuższą datą ważności zostanie użyty dla zapasów bezpieczeństwa aby umożliwić realizację rzeczywistego zapotrzebowania, takiego jak wiersze sprzedaży lub BOM w zamówieniu FEFO.
 Aby pokazać, jak to działa, rozważmy następujący scenariusz.
-[![FEFOScenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) Po uruchomieniu planowania zrealizuje pierwsze zamówienie sprzedaży z istniejących dostępnych zapasów i dodatkowe zamówienie zakupu dla pozostałej ilości.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) Tworzone jest planowane zamówienie, aby zapewnić zwiększenie dostępnych zapasów do poziomu limitu bezpieczeństwa.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) Gdy planowane jest drugie zamówienie sprzedaży, wcześniej utworzone planowane zamówienie, które obejmuje zapasy bezpieczeństwa jest używane do obsługi tej ilości. Dlatego poziom zapasów bezpieczeństwa stale się zmienia.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Wreszcie tworzone jest kolejne planowane zamówienie do obsługi zapasów bezpieczeństwa.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Wszystkie partie wygasają odpowiednio i tworzone są planowane zamówienia do uzupełnienia zapasów bezpieczeństwa po ich wygaśnięciu.
+[![FEFOScenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+Po uruchomieniu planowania zrealizuje pierwsze zamówienie sprzedaży z istniejących dostępnych zapasów i dodatkowe zamówienie zakupu dla pozostałej ilości.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+Tworzone jest planowane zamówienie, aby zapewnić zwiększenie dostępnych zapasów do poziomu limitu bezpieczeństwa.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+Gdy planowane jest drugie zamówienie sprzedaży, wcześniej utworzone planowane zamówienie, które obejmuje zapasy bezpieczeństwa jest używane do obsługi tej ilości. Dlatego poziom zapasów bezpieczeństwa stale się zmienia.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Wreszcie tworzone jest kolejne planowane zamówienie do obsługi zapasów bezpieczeństwa.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Wszystkie partie wygasają odpowiednio i tworzone są planowane zamówienia do uzupełnienia zapasów bezpieczeństwa po ich wygaśnięciu.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Jak planowanie główne obsługuje ograniczenie zapasów bezpieczeństwa
 

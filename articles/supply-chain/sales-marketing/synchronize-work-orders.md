@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0956e7aa51973014ee474d97829d3d15dfdea3b3
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a641789adf27e51b7a3f8ab03269cc2e748eef96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909950"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359818"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Synchronizowanie zleceń z projektem z rozwiązania Field Service do Supply Chain Management
 
@@ -29,7 +29,7 @@ ms.locfileid: "5909950"
 
 Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania zamówień z numerem projektu między programem Dynamics 365 Field Service a Dynamics 365 Supply Chain Management.
 
-[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
 Używany szablon **Zlecenia z projektem (z Field Service do Supply Chain Management)** jest oparty na szablonie **Zlecenia (z Field Service do Supply Chain Management)**. Więcej informacji znajduje się w temacie [Synchronizowanie zleceń pracy w rozwiązaniu Field Service z zamówieniami sprzedaży w rozwiązaniu Supply Chain Management](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order)
 
@@ -61,19 +61,19 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Zlecenia pracy z projektem (Field Service do Supply Chain Management): WorkOrderHeader
 
-[![Mapowanie szablonu w integracji danych](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Zlecenia pracy z projektem (Field Service do Supply Chain Management): WorkOrderHeaderProject
 
-[![Mapowanie szablonu w integracji danych](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Zlecenia pracy z projektem (Field Service do Supply Chain Management): WorkOrderProduct
 
-[![Mapowanie szablonu w integracji danych](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Zlecenia pracy z projektem (Field Service do Supply Chain Management): WorkOrderService
 
-[![Mapowanie szablonu w integracji danych](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

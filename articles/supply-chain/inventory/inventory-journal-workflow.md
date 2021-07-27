@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826018"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354768"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Przepływy pracy zatwierdzania arkuszy magazynowych
 
@@ -55,7 +55,7 @@ Aby utworzyć przepływy pracy zatwierdzania arkusza zapasów:
     - **Arkusz BOM zapasów**
     - **Arkusz korekt zapasów**
 
-    ![Okno dialogowe Tworzenie przepływu pracy](media/journal-workflow-create-workflow.png "Okno dialogowe Tworzenie przepływu pracy")
+    ![Okno dialogowe Tworzenie przepływu pracy.](media/journal-workflow-create-workflow.png "Okno dialogowe Tworzenie przepływu pracy")
 
 1. Aplikacja edytora przepływu pracy jest uruchamiana na urządzeniu użytkownika. (Możesz zostać poproszony o zatwierdzenie tej akcji). Użyj go do zaprojektowania przepływu pracy w razie potrzeby. Aby uzyskać szczegółowe informacje dotyczące korzystania z edytora przepływu pracy, należy zapoznać się z tematem [Omówienie systemu przepływu pracy](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Po zapisaniu i zamknięciu aplikacji edytora przepływu pracy należy wybrać, czy aktywować tę wersję przepływu pracy, czy zachować ją jako nieaktywną.
@@ -73,7 +73,7 @@ Aby skojarzyć przepływ pracy arkusza magazynowego z nazwą arkusza magazynoweg
 1. Wybierz nazwę arkusza z kolumny listy, aby otworzyć stronę ustawień.
 1. Na skróconej karcie **Ogólne** ustaw opcje **Przepływ pracy zatwierdzania** na **Tak**. Kliknij **Tak**, jeśli zostanie wyświetlony monit o potwierdzenie wyboru.
 
-    ![Przypisz przepływ pracy do nazwy arkusza](media/journal-workflow-journal-name.png "Przypisz przepływ pracy do nazwy arkusza")
+    ![Przypisz przepływ pracy do nazwy arkusza.](media/journal-workflow-journal-name.png "Przypisz przepływ pracy do nazwy arkusza")
 
 1. Należy otworzyć listę rozwijaną **Przepływ pracy** i wybrać odpowiedni przepływ pracy. Lista przedstawia każdy aktywny przepływ pracy utworzony za pomocą aplikacji edytora przepływu pracy.
 
@@ -87,7 +87,7 @@ Po powiązaniu nazwy arkusza magazynowego z odpowiadającym mu przepływem pracy
 1. Wypełnij arkusz zgodnie z wymaganiami.
 1. Podczas tworzenia lub otwierania arkusza magazynowego z skojarzonym przepływem zatwierdzenia, przycisk **Przepływ pracy** jest aktywny w okienku akcji. Gdy zechcesz przesłać arkusz do zatwierdzenia, wybierz przycisk **Przepływ pracy**, aby otworzyć okno dialogowe rozwijane, a następnie wybierz opcję **Prześlij**. Żądanie zatwierdzenia zostanie następnie skierowane do odpowiedniej osoby zatwierdzającej, która zostanie powiadomiona za pomocą metody powiadamiania skonfigurowanej dla przepływu pracy.
 
-    ![Przesyłanie arkusza do zatwierdzenia](media/journal-workflow-inventory-journal.png "Przesyłanie arkusza do zatwierdzenia")
+    ![Przesyłanie arkusza do zatwierdzenia.](media/journal-workflow-inventory-journal.png "Przesyłanie arkusza do zatwierdzenia")
 
 Aby odwołać żądanie zatwierdzenia, otwórz odpowiedni arkusz, wybierz przycisk **Przepływ pracy**, a następnie wybierz pozycję **Odwołaj**. Spowoduje to zresetowanie przepływu pracy.
 

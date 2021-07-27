@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348249"
 ---
 # <a name="create-and-update-store-hours"></a>Tworzenie i aktualizacja godzin w sklepie
 
@@ -49,14 +49,14 @@ Aby skonfigurować godziny pracy sklepu, wykonaj następujące kroki.
     > [!NOTE]
     > Można utworzyć wiele szablonów mających nakładające się daty rozpoczęcia i zakończenia. Można więc na przykład zdefiniować godziny sklepu w różnych strefach czasowych.
 
-    ![Dodaj zakres okna dialogowego](../dev-itpro/media/Storehours1.png "Dodaj zakres okna dialogowego")
+    ![Dodaj zakres okna dialogowego.](../dev-itpro/media/Storehours1.png "Dodaj zakres okna dialogowego")
 
 4. Szablonem godzin sklepu należy skojarzyć z magazynami, w których będzie używany. W oknie dialogowym **Wybieranie węzłów organizacji** wybierz sklepy, regiony i organizacje, z którymi szablon ma być skojarzony.
 
     - Z każdym sklepem można skojarzyć tylko jeden szablon godzin sklepu.
     - Za pomocą przycisków strzałek wybierz sklepy, regiony lub organizacje Kalendarz będzie dostępny dla sklepów lub grup sklepów i będzie widoczny w punkcie sprzedaży dla celów referencyjnych.
 
-    ![Wybierz okienko dialogowe węzły organizacji](../dev-itpro/media/Storehours2.png "Wybierz okienko dialogowe węzły organizacji")
+    ![Wybierz okienko dialogowe węzły organizacji.](../dev-itpro/media/Storehours2.png "Wybierz okienko dialogowe węzły organizacji")
 
 5. Na stronie **harmonogramdystrybucji** uruchom zadania **1070** i **1090**, aby udostępnić godziny sklepu w punkcie sprzedaży.
 
@@ -75,7 +75,7 @@ Wykonaj poniższe kroki, aby dodać godziny sklepu do wydrukowanych przyjęć w 
 
 W przyjęciu w punkcie sprzedaży zostaną uwzględnione godziny sklepu. Jeśli w szablonie uwzględniono dni wolne od pracy, zostaną one wyświetlone na paragonie.
 
-![Przykład paragonu](../dev-itpro/media/Storehours3.png "Przykład paragonu")
+![Przykład paragonu.](../dev-itpro/media/Storehours3.png "Przykład paragonu")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

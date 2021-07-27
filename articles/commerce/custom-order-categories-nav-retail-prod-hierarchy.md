@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: de8840b92307ba63d6d0c2cfa90536bd00696ec3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937069"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349681"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Zmiana porządku sortowania dla podmiotów merchandisingowych
 
@@ -51,9 +51,9 @@ Aby można było wykonać tę procedurę, w środowisku muszą być zainstalowan
 
 Kolejność wyświetlania dla hierarchii nawigacji kanału zostanie odzwierciedlona w HQ dla hierarchii produktów handlu i zwolnionych produktów według kategorii.
 
-![Hierarchia produktów niestandardowo posortowana z wartościami ujemnymi](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Hierarchia produktów niestandardowo posortowana z wartościami ujemnymi.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Zwolnione produkty według kategorii — sortowanie niestandardowe na podstawie hierarchii produktów](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Zwolnione produkty według kategorii — sortowanie niestandardowe na podstawie hierarchii produktów.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>Skonfiguruj kolejność wyświetlania dla kategorii w hierarchii kategorii nawigacji
 
@@ -77,11 +77,11 @@ Aby można było wykonać tę procedurę, w środowisku muszą być zainstalowan
 
 Kolejność wyświetlania dla hierarchii nawigacji kanału jest odzwierciedlona w HQ, katalogu i kanałach.
 
-![Niestandardowa hierarchia nawigacji kanału](./media/ChannelNavCustomSorted.png)
+![Niestandardowa hierarchia nawigacji kanału.](./media/ChannelNavCustomSorted.png)
 
-![Hierarchia nawigacji katalogu sortowanie niestandardowa na podstawie hierarchii nawigacji kanału](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Hierarchia nawigacji katalogu sortowanie niestandardowa na podstawie hierarchii nawigacji kanału.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi](./media/POSChannelCategoriesCustomSorted.png)
+![Punkt sprzedaży z niestandardowymi kategoriami posortowanymi.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Domyślnie ta funkcja niestandardowego sortowania jest wyłączona. Aby dowiedzieć się, jak włączyć tę funkcję i inne funkcje, zobacz [Zarządzanie funkcjami](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

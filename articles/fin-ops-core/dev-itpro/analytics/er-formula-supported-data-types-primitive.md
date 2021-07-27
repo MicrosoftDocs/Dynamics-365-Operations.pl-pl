@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224109"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355329"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Obsługiwane typy danych pierwotnych dla formuł raportowania elektronicznego
 
@@ -112,13 +112,13 @@ Pierwotny typ danych *wyliczenia* jest listą literałów. Można używać wylic
 
 Na poniższej ilustracji pokazano, jak można dodać wyliczenie modelu **CustVendCorrectiveReasonCode** do edytowalnego modelu danych ER.
 
-[![Konfiguracja wyliczenia modelu w projektancie modeli danych ER](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Konfiguracja wyliczenia modelu w projektancie modeli danych ER.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 *Wyliczenie* modeli może być używane w wyrażeniach dowolnego mapowania modelu ER i formatu ER utworzonych w modelu danych, w którym zostało wprowadzone *wyliczenie*.
 
 Poniższa ilustracja przedstawia sposób dodania do edytowalnego formatu ER wyliczenia formatu **Lista podkategorii obciążenia zwrotnego Natura**.
 
-[![Konfiguracja wyliczenia formatu w projektancie formatu danych ER](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Konfiguracja wyliczenia formatu w projektancie formatu danych ER.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 *Wyliczenie* formatów może być używane tylko w wyrażeniach formatu ER, w którym wprowadzono *wyliczenie*.
 
@@ -126,15 +126,15 @@ Należy użyć odpowiedniego typu źródeł danych ER, aby wprowadzić konkretne
 
 - Wyliczenia aplikacji są dostępne za pomocą źródeł danych **Dynamics 365 for Operations \ Wyliczenie** i **Ogólne \ Parametry wejściowe użytkownika**. Na poniższej ilustracji pokazano, jak można dodać edytowalny format aplikacji ER do źródeł danych **appenumNoYes** i **uipNoYes**, które odwołują się do wyliczenia aplikacji **NoYes**.
 
-    [![Dodawanie źródeł danych wyliczenia aplikacji w konstruktorze formatu ER](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Dodawanie źródeł danych wyliczenia aplikacji w konstruktorze formatu ER.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Wyliczenia modelu danych są dostępne za pomocą źródeł danych **Model danych \ Wyliczenie** i **Model danych \ Parametry wejściowe użytkownika wyliczenia**. Na poniższej ilustracji pokazano, jak można dodać edytowalny format aplikacji ER do źródła danych **CustVendCorrectiveReasonCode**, które odwołuje się do modelu danych **CustVendCorrectiveReasonCode**.
 
-    [![Dodawanie źródeł danych wyliczenia modelu w konstruktorze formatu ER](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Dodawanie źródeł danych wyliczenia modelu w konstruktorze formatu ER.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Wyliczenia formatu są dostępne za pomocą źródeł danych **Format \ Wyliczenie** i **Format \ Parametry wejściowe użytkownika wyliczenia**. Na poniższej ilustracji pokazano, jak można dodać edytowalny format aplikacji ER do źródła danych **NaturaReverseCharge**, które odwołuje się do modelu danych **Podkategorie odwrotnego obciążenia Natura**.
 
-    [![Dodawanie źródeł danych wyliczenia formatu w konstruktorze formatu ER](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Dodawanie źródeł danych wyliczenia formatu w konstruktorze formatu ER.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 *Wyliczenie* nie ma konwersji niejawnych. Można jednak użyć funkcji konwersji [TEXT](er-functions-text-text.md), aby przekonwertować tekst *wyliczenia* na ciąg tekstowy. Ta konwersja nie jest zależna od języka. Aby się dowiedzieć, jak można skojarzyć wartość *wyliczenia* z odpowiednimi etykietami właściwymi dla języka, zobacz przykłady użycia funkcji [LISTOFFIELDS](er-functions-list-listoffields.md) i [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 

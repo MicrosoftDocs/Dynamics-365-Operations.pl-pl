@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224108"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355353"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Obsługiwane typy danych złożonych dla formuł raportowania elektronicznego
 
@@ -43,11 +43,11 @@ Domyślna wartość *klasy* ma wartość **null**.
 
 Na poniższej ilustracji pokazano, jak dodano źródło danych **Informacje systemowe (xInfo)** typu **klasa**, aby utworzyć wystąpienie klasy aplikacji **xInfo** i wywołać metodę **productName()** w celu otrzymania nazwy bieżącej aplikacji. Nazwa bieżącej aplikacji jest pobierana w czasie wykonywania poprzez wykonanie powiązania `xInfo.productName`, które zostało skonfigurowane dla pola **Nazwa oprogramowania (SoftwareName)** modelu danych ER. To powiązanie wywołuje metodę `productName()` klasy aplikacji **xInfo**, która jest reprezentowana w bieżącym mapowaniu modelu jako źródło **Informacji systemowych (xInfo)**.
 
-[![Konfigurowanie źródła danych Klasa na stronie Projektant mapowania modelu ER](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurowanie źródła danych Klasa na stronie Projektant mapowania modelu ER.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Poniższa ilustracja pokazuje, jak jest skonfigurowany format ER, aby w generowanych dokumentach umieszczać podaną nazwę aplikacji. Pole **Nazwa oprogramowania (SoftwareName)** używanego modelu danych zostało powiązane ze składnikiem **Ciąg**, który jest zagnieżdżony w elemencie XML **softwareUsed** formatu ER. Tak więc nazwa bieżącej aplikacji jest umieszczana w czasie wykonywania w ramach elementu XML **softwareUsed** wygenerowanego dokumentu w formacie XML.
 
-[![Konfigurowanie struktury elektronicznego dokumentu wychodzącego w konstruktorze formatu ER](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Konfigurowanie struktury elektronicznego dokumentu wychodzącego w konstruktorze formatu ER.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
 ## <a name="container"></a><a name="container"></a>Kontener
 
@@ -60,7 +60,7 @@ Domyślna wartość *kontenera* ma wartość **null**.
 
 Na poniższej ilustracji pokazano, jak pole **Bitmap(Obraz)** typu *Kontener* jest powiązane z polem **Logo** modelu danych **kontenera** typu Mapowanie modelu **faktury sprzedaży**. To powiązanie udostępnia logo firmy do dowolnego formatu ER, który jest przeznaczony dla definicji katalogu głównego **SalesInvoice** i który używa tego mapowania modelu w czasie wykonywania.
 
-[![Powiązanie pola kontenera typu projektant mapowania modelu ER](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Powiązanie pola kontenera typu projektant mapowania modelu ER.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Zarejestruj
 
@@ -109,7 +109,7 @@ Domyślna wartość *obiektu* ma wartość **null**.
 
 Na poniższej ilustracji pokazano, jak źródło danych **ReportDataContract** typu *Obiekt* jest dodawane do przekazywania informacji o wygenerowanej fakturze z kodu źródłowego do mapowania modelu **faktury projektu**. Na przykład tekst wystąpienia faktury jest przekazywany jako część kontekstu wykonywania. Ten tekst jest pobierany z kodu źródłowego w czasie wykonywania przez wykonanie powiązania `ReportDataContract.parmInvoiceInstanceText`, które zostało skonfigurowane dla pola **Uwaga** modelu danych ER. To powiązanie wywołuje metodę `parmInvoiceInstanceText()` klasy aplikacji **PSAProjInvoiceContract**, która jest reprezentowana w bieżącym mapowaniu modelu jako źródło **ReportDataContract**.
 
-[![Konfigurowanie źródła danych Obiekt na stronie Projektant mapowania modelu ER](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurowanie źródła danych Obiekt na stronie Projektant mapowania modelu ER.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Aby dowiedzieć się, jak przekazać szczegóły kontekstu wykonywania z kodu źródłowego do uruchomionego rozwiązania ER, zobacz [Tworzenie artefaktów aplikacji, aby wywołać zaprojektowany raport](er-quick-start1-new-solution.md#DevelopCustomCode).
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3da447c298993794afa49a0fbaddb1c21cf6231a
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 46e59c8253ae5e4de54d56a45a142194ce38cf54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271312"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357865"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
@@ -68,19 +68,19 @@ Pole Kup, Wishlist, selektor sklepu, koszyk i ikony koszyka Użyj ustawień zapa
 
 Na przykładzie na poniższej ilustracji w PDP jest wyświetlany komunikat o posiadaniu towaru w magazynie („Dostępny”).
 
-![Przykład modułu PDP, który ma komunikat w magazynie](./media/pdp-InStock.png)
+![Przykład modułu PDP, który ma komunikat w magazynie.](./media/pdp-InStock.png)
 
 Na przykładzie na poniższej ilustracji w PDP jest wyświetlany komunikat o braku towaru w magazynie („Wyprzedane”).
 
-![Przykład modułu PDP, który ma komunikat o wyprzedaniu](./media/pdp-outofstock.png)
+![Przykład modułu PDP, który ma komunikat o wyprzedaniu.](./media/pdp-outofstock.png)
 
 Na przykładzie na poniższej ilustracji w koszyku jest wyświetlany komunikat o posiadaniu towaru w magazynie („Dostępny”).
 
-![Przykład modułu koszyka, który ma komunikat w magazynie](./media/cart-instock.png)
+![Przykład modułu koszyka, który ma komunikat w magazynie.](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Omówienie biblioteki modułów](starter-kit-overview.md)
+[Przegląd biblioteki modułów](starter-kit-overview.md)
 
 [Konfigurowanie buforów zapasów i poziomów zapasów](inventory-buffers-levels.md)
 

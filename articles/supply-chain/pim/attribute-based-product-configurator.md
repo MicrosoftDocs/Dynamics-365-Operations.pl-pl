@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812937"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359108"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Ceny sprzedaży oparte na atrybutach dla konfiguracji produktu opartej na ograniczeniu
 
@@ -33,7 +33,7 @@ Aby określić walutę domyślną:
 1. Otwórz kartę **Modele konfiguracji produktów oparte na ograniczeniach**.
 1. Otwórz listę rozwijaną **Waluta domyślna** i wybierz walutę.
 
-    ![Określanie domyślnej waluty dla konfiguracji produktu opartej na ograniczeniu](media/prod-config-currency.png "Określanie domyślnej waluty dla konfiguracji produktu opartej na ograniczeniu")
+    ![Określanie domyślnej waluty dla konfiguracji produktu opartej na ograniczeniu.](media/prod-config-currency.png "Określanie domyślnej waluty dla konfiguracji produktu opartej na ograniczeniu")
 
 1. Jeśli chcesz dołączyć plik programu Excel z podziałem cen dla wszystkich wierszy zamówień lub ofert, w sekcji **Model cen** ustaw opcję **Dołącz** na *Tak*.
 
@@ -60,7 +60,7 @@ W poniższym przykładzie przedstawiono cenę podstawową o stałej wartości 89
 - W przypadku wykończenia szafki rosewood dodaj 119,95 EUR.
 - Dodaj 12,95 EUR dla każdej jednostki wysokości głośnika.
 
-![Przykładowy model cen](media/prod-config-rules-example.png "Przykładowy model cen")
+![Przykładowy model cen.](media/prod-config-rules-example.png "Przykładowy model cen")
 
 ## <a name="add-support-for-multiple-currencies"></a>Dodawanie obsługi wielu walut
 
@@ -81,7 +81,7 @@ Aby dodać ceny jawne w walucie dodatkowej:
 
 W poniższym przykładzie walutą domyślną jest _EUR_ a _USD_ dodano jako walutę dodatkową.
 
-![Przykład modelu z wieloma walutami](media/prod-config-rules-currency-example.png "Przykład modelu z wieloma walutami")
+![Przykład modelu z wieloma walutami.](media/prod-config-rules-currency-example.png "Przykład modelu z wieloma walutami")
 
 > [!NOTE]
 > Nie można dodać reguł wyrażeń, które są unikatowe w walucie innej niż domyślna. Aby utworzyć reguły wyrażeń, które byłyby odpowiednie tylko dla waluty innej niż waluta domyślna, ustaw wyrażenie ceny dla domyślnej waluty na zero. Następnie ustaw odpowiednie wyrażenie dla waluty innej niż domyślna.
@@ -93,11 +93,11 @@ Aby sprawdzić, jak działają ceny sprzedaży w sesji konfiguracji, otwórz str
 - Skorzystaj z ustawień konfiguracji dostępnych tutaj, aby wybrać opcje produktu, a następnie zobaczyć, jak mają wpływ na wartość wyświetloną w sekcji **Cena i data wysyłki**.
 - Wybierz opcję **Wyświetl podział cen**, aby pobrać dokument programu Excel zawierający szczegóły dotyczące sposobu obliczenia ceny.
 
-![Testowanie modelu produktu](media/prod-config-test.png "Testowanie modelu produktu")
+![Testowanie modelu produktu.](media/prod-config-test.png "Testowanie modelu produktu")
 
 Pobrany arkusz kalkulacyjny zawiera zarówno wartość bezwzględną, jak i udział jako wartość procentową każdego aktywnego elementu ceny. Jeśli ustawiono opcję **Dołącz** modelu ceny na stronie **Parametry zarządzania informacjami o produktach**, ten arkusz programu Excel zostanie dołączony do wiersza zamówienia lub oferty.
 
-![Arkusz kalkulacyjny programu Excel zawierający podział cen](media/prod-config-excel-example.png "Arkusz kalkulacyjny programu Excel zawierający podział cen")
+![Arkusz kalkulacyjny programu Excel zawierający podział cen.](media/prod-config-excel-example.png "Arkusz kalkulacyjny programu Excel zawierający podział cen")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Ustawianie kryteriów wyboru dla modeli cen
 
@@ -116,7 +116,7 @@ Aby ustawić kryteria wyboru dla modeli cen:
     - **Obowiązuje od** — określ pierwszy dzień, w którym zostanie zastosowana kwerenda.
     - **Data ważności** — określa ostatni dzień stosowanie kwerendy.
 
-    ![Kryteria modelu ceny](media/prod-config-price-model-criteria.png "Kryteria modelu ceny")
+    ![Kryteria modelu ceny.](media/prod-config-price-model-criteria.png "Kryteria modelu ceny")
 
 1. Wybierz wiersz kwerendy, którą chcesz zdefiniować, a następnie wybierz opcję **Edytuj** w **okienku akcji**. Otworzy się okno dialogowe konstruktora zapytań. Działa jak większość konstruktorów kwerend w Supply Chain Management. Użyj go w celu zdefiniowania warunków, pod jakimi należy zastosować model cen dla wybranego wiersza.
 
@@ -137,7 +137,7 @@ Ostatnim krokiem jest określenie cen sprzedaży opartych na atrybutach dla wers
 1. Wybierz model konfiguracji produktu docelowego.
 1. W okienku akcji otwórz kartę **Model** i z grupy **Szczegóły modelu produktu** wybierz pozycję **Wersje**.
 1. Zostanie otwarta strona **Wersje**. Upewnij się, że **Metoda kalkulacji cen** jest ustawiona na wartość **Oparta na atrybutach**.
-    ![Ustawianie metody kalkulacji cen na opartą na atrybutach](media/prod-config-versions.png "Ustawianie metody kalkulacji cen na opartą na atrybutach")
+    ![Ustawianie metody kalkulacji cen na opartą na atrybutach.](media/prod-config-versions.png "Ustawianie metody kalkulacji cen na opartą na atrybutach")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

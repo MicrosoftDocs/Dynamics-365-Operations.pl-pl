@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 203c9f0990051c1618660959dad0e184add68ffa
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3419d328e84c199fa32aeb13b54425a31e96ce7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750491"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350263"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Aktualizowanie struktury szablonu dokumentu biznesowego 
 
@@ -58,7 +58,7 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 
     Nowy szablon zostanie otwarty do edycji w osadzonym formancie Excel Online na stronie Edytor szablonów.
 
-[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu rozpoczęcia edycji szablonu dokumentu biznesowego](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
+[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu rozpoczęcia edycji szablonu dokumentu biznesowego.](./media/er-bdm-update-structure1.gif)](./media/er-bdm-update-structure1.gif)
 
 ### <a name="review-the-current-structure-of-the-editable-template"></a>Przejrzyj bieżącą strukturę edytowalnego szablonu
 
@@ -68,7 +68,7 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 4. W okienku **Struktura szablonu** rozwiń węzeł **Raport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Należy zauważyć, że w strukturze szablonów w module Finance element **rptHeaderCompLogo** jest przedstawiany jako element podrzędny elementu **Raport \> Faktura \> rptHeader faktury \> rptHeaderPart1**.
 
-[![Przeglądanie bieżącej struktury edytowalnego szablonu za pomocą obszaru roboczego zarządzania dokumentami biznesowymi](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
+[![Przeglądanie bieżącej struktury edytowalnego szablonu za pomocą obszaru roboczego zarządzania dokumentami biznesowymi.](./media/er-bdm-update-structure2.gif)](./media/er-bdm-update-structure2.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-deleting-a-picture"></a>Aktualizowanie struktury szablonu dokumentu biznesowego przez usunięcie obrazu
 
@@ -85,7 +85,7 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 4. W okienku **Struktura szablonu** rozwiń węzeł **Raport \> Faktura \> rptHeader \> rptHeaderPart1**.
 5. Elementu **rptHeaderCompLogo** nie będzie już w strukturze szablonów w module Finance.
 
-[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu usuwania obrazu z szablonu dokumentu biznesowego](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
+[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu usuwania obrazu z szablonu dokumentu biznesowego.](./media/er-bdm-update-structure3.gif)](./media/er-bdm-update-structure3.gif)
 
 ### <a name="update-the-structure-of-a-business-document-template-by-adding-a-picture"></a>Aktualizowanie struktury szablonu dokumentu biznesowego przez dodawanie obrazu
 
@@ -97,7 +97,7 @@ W tym celu należy wykonać poniższe procedury z sekcji [Omówienie zarządzani
 6. W okienku **Struktura szablonu** rozwiń węzeł **Raport \> Faktura \> rptHeader \> rptHeaderPart1**.
 7. Nowy obraz jest teraz elementem struktury szablonów w module Finance.
 
-[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu dodawania obrazu do dokumentu biznesowego](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
+[![Używanie obszaru roboczego zarządzanie dokumentami biznesowymi w celu dodawania obrazu do dokumentu biznesowego.](./media/er-bdm-update-structure4.gif)](./media/er-bdm-update-structure4.gif)
 
 ## <a name="related-links"></a>Powiązane łącza
 

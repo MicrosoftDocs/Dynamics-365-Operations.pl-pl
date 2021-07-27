@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41313dd1fde51cb84bc971bb7bb98841222259b1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce10817d677f7e48194272b5ebb91b95d657441f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360297"
 ---
 # <a name="action-search"></a>Wyszukiwanie akcji
 
@@ -31,7 +31,7 @@ W tym artykule opisano działanie funkcji wyszukiwania. Funkcja pomaga znajdowa�
 
 Strony w produkcie głównie wyświetlają polecenia w okienkach akcji, zarówno w standardowym okienku akcji, które wyświetla się u góry strony, jak i na paskach narzędzi, które pojawiają się w różnych częściach strony. W poprzednich wersjach funkcja klawiszy skrótu dawała szybki dostęp do dowolnego przycisku w okienku akcji po naciśnięciu klawisza Alt w kombinacji z właściwą literą.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 Funkcja wyszukiwania akcji zastępuje klawisze skrótu, które są już niedostępne. Ta nowa funkcja umożliwia szybkie wyszukiwanie i korzystanie z przycisków w dowolnym widocznym okienku akcji.
 
@@ -45,7 +45,7 @@ Aby skorzystać z funkcji wyszukiwania akcji, wykonaj następujące kroki.
 
 Po uruchomieniu przycisku wyróżnienie na ekranie wraca do poprzedniego miejsca na stronie, umożliwiając kontynuowanie pracy.
 
-[![action-search-field](./media/action-search-field.png)](./media/action-search-field.png)
+[![action-search-field.](./media/action-search-field.png)](./media/action-search-field.png)
 
 Wyszukiwanie akcji można też uruchomić za pomocą kombinacji klawiszy Ctrl+/ lub Alt+Q. Naciśnij skrót klawiaturowy ponownie, aby wyróżnienie wróciło do ostatniej pozycji na stronie.
 
@@ -61,11 +61,11 @@ Często trzeba znać zarówno lokalizację, jak kontekst przycisku, aby w pełni
 
 Na przykład w polu **wyszukiwania akcji** wpisujesz **tot** i sprawdzasz listę wyników. Wyróżniony jest pierwszy wpis, dla przycisku o nazwie **Sumy** (ang. Totals). Widoczna jest również ścieżka przycisku **Zamówienie sprzedaży** &gt; **Widok**. Część **Zamówienie sprzedaży** w ścieżce odpowiada karcie **Zamówienie sprzedaży** w okienku akcji, a część **Widok** ścieżki odpowiada grupie **Widok** na tej karcie. Podobnie ścieżka przycisku **Rabat końcowy**(**Sprzedaj** &gt; **Oblicz**) informuje, że ten przycisk znajduje się w grupie **Oblicz** na karcie **Sprzedaj** okienka akcji. Te dane pomagają zrozumieć funkcje przycisków, które będą wywoływane przez wyszukiwanie akcji (jeśli dany zostanie wybrany na liście wyników).
 
-[![action-search-field-with-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![action-search-field-with-data.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 W poprzednim przykładzie wyszukiwanie akcji dało wyniki ze standardowego okienka akcji u góry strony. Wyszukiwanie akcji zawiera jednak również wyniki z widocznych pasków narzędzi w innych miejscach na stronie. Na przykład wyszukujesz przycisk **Dostępne zapasy** na skróconej karcie **Wiersze zamówienia sprzedaży**. W tym przypadku ścieżka do przycisku na liście wyników (**Wiersze zamówienia sprzedaży** &gt; **Zapasy** &gt; **Widok**) informuje, że ten przycisk znajduje się w nagłówku **Widok** w przycisku menu **Zapasy** na skróconej karcie **Wiersze zamówienia sprzedaży**.
 
-[![on-hand-inventory](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![on-hand-inventory.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Istnieje kilka przycisków, które nie są wyświetlane w wyszukiwaniu akcji. Obejmują one przyciski okna dialogowego i przyciski z podformularzy. 

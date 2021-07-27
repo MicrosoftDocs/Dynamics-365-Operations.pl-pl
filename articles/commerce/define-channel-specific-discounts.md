@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4003bd78e400994f3c164d2f7e8e3aa5ce93146
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76b8111ddc9e634ce689999da7b8621f550afc5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802076"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349583"
 ---
 # <a name="define-channel-specific-discounts"></a>Definiowanie rabatów specyficznych dla kanału
 
@@ -37,7 +37,7 @@ Commerce używa grup cenowych do definiowania rabatów właściwych dla kanału.
 
 ## <a name="price-groups"></a>Grupy cenowe
 
-[![Grupy cenowe](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Grupy cenowe.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Powyższy wykres ilustruje relację między jednostkami, które mogą znajdować się w transakcji (kanał, katalog, przynależność, odbiorca, karta lojalnościowa), a różnymi typami rabatów, które można skonfigurować. Wszystkie transakcje odbywają się w kanale, więc kanał na pewno będzie ujęty w transakcji. Pozostałe elementy są opcjonalne. Na poszczególnych stronach danych głównych są łącza do powiązanej grupy cenowej, na której można wyświetlać i dodawać grupy cenowe w razie potrzeby. Grupa cenowa służy do tworzenia relacji czterech różnych typów elementów z rabatami, korektami cen i umowami handlowymi. Dobrze jest zaplanować strategię nazywania grup cenowych, która pozwoli lepiej je uporządkować. Jedną z możliwości jest używanie litery i cyfry na początku lub na końcu nazwy dla rozróżnienia typów. Np. 1-xxxxx dla grup cenowych kanału i 2-xxxxx dla grup cenowych katalogu. Dostępne są cztery strony zapytań, które koncentrują się na poszczególnych podmiotach handlowych, dla których są skojarzone rabaty.
 

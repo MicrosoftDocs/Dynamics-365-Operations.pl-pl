@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936787"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349657"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Konfiguracja stron niestandardowych do logowań użytkowników
 
@@ -40,7 +40,7 @@ Niestandardowe strony Commerce mogą być tworzone przy użyciu modułu logowani
 
 Po skonfigurowaniu dzierżawy B2C Azure AD i kojarzeniu jej ze środowiskiem Commerce, przejdź na stronę **Azure AD B2C** w portalu Azure, a następnie w menu w obszarze **Zasady** wybierz pozycję **Przepływy użytkowników (zasady)**.
 
-![Polecenie przepływy użytkowników (zasady) w menu](./media/B2C_CustomPage_PoliciesMenu.png)
+![Polecenie przepływy użytkowników (zasady) w menu.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Teraz można skonfigurować przepływy logowania użytkownika „Rejestracja i logowanie”, „Edytowanie profili” i „Resetowanie hasła”.
 
@@ -54,13 +54,13 @@ Aby skonfigurować zasadę „Rejestracja i logowanie”, wykonaj następujące 
 1. W kolumnie **Zbieranie atrybutów** zaznacz pola wyboru **Adres e-mail**, **Imię** i **Nazwisko**.
 1. W kolumnie **Oświadczenie zwrotu** zaznacz pola wyboru dla **Adresy e-mail**, **Imię**, **Dostawca tożsamości**, **Nazwisko** i **Identyfikator obiektu użytkownika**.
 
-    ![Wybrane atrybuty i roszczenia](./media/B2C_SignInSignUp_Attributes.png)
+    ![Wybrane atrybuty i roszczenia.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Wybierz przycisk **OK**, aby utworzyć zasadę.
 1. Kliknij dwukrotnie nazwę nowej zasady, a następnie w okienku nawigacji wybierz opcję **Właściwości.**
 1. Ustaw opcję **Włącz układ wymuszający JavaScript w układzie strony (podgląd)** jako **Włączone**.
 
-    ![Strona właściwości nowej zasady](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Strona właściwości nowej zasady.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Nazwa zasad będzie w pełni wywoływana w środowisku Commerce. (Prefiks **B2C\_1\_** zostanie uwzględniony w odwołaniu.) Nie można zmieniać nazw zasad po ich utworzeniu. W przypadku wymiany istniejących zasad środowiska Commerce można usunąć zasady oryginalne i utworzyć nowe zasady o takiej samej nazwie. Ewentualnie, jeśli zainicjowano już obsługę środowiska, można przesłać nową nazwę zasady za pośrednictwem żądania usługi.
@@ -150,7 +150,7 @@ Aktualizuj zasadę „Rejestracja i logowanie w” przy użyciu niestandardowych
     1. W przypadku **Adres e-mail**, **Imię** i **Nazwiska** należy wybrać opcję **nie** w kolumnie **Opcjonalne**.
 1. Wybierz opcję **Zapisz**.
 
-    ![Konfiguracja zasad rejestracji na koncie lokalnym](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfiguracja zasad rejestracji na koncie lokalnym.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Aktualizuj zasadę „Edycja profilu” przy użyciu niestandardowych informacji o stronie
 
@@ -188,11 +188,11 @@ W bibliotece modułów moduły logowania są wstępnie wypełniane domyślnymi c
 
 Na przykład domyślny tekst dla łącza zapomnianego hasła jest **Zapomniałeś hasła?**. Poniżej przedstawiono domyślny tekst na stronie rejestracji.
 
-![Domyślny tekst łącza zapomnianego hasła na stronie rejestracji](./media/B2C_SignUp_ModuleFace.png)
+![Domyślny tekst łącza zapomnianego hasła na stronie rejestracji.](./media/B2C_SignUp_ModuleFace.png)
 
 Jednak w pliku global.json dla modułu logowania biblioteki modułów można edytować tekst, aby **Zapomniałeś hasła?**, jak pokazano na poniższej ilustracji.
 
-![Zaktualizowany tekst łącza w pliku global.json modułu rejestrowania](./media/B2C_CustomizingStringsForModule.png)
+![Zaktualizowany tekst łącza w pliku global.json modułu rejestrowania.](./media/B2C_CustomizingStringsForModule.png)
 
 Po zaktualizowaniu pliku global.json i opublikowaniu zmian tekst nowego łącza jest wyświetlany w module logowanie zarówno w Commerce, jak i na stronie rejestracji online.
 

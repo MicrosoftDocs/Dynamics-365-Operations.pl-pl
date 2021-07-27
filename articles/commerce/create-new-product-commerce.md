@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352429"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Tworzenie nowego produktu w programie Commerce
 
@@ -49,13 +49,13 @@ Produkt jest definiowany głównie przez numer produktu, nazwę i opis. Są jedn
 
 Poniższy obraz przedstawia przykład dodawanego produktu.
 
-![Tworzenie produktu](media/create-new-product.png)
+![Tworzenie produktu.](media/create-new-product.png)
 
 Po dodaniu produktu można dla niego określić dodatkowe dane, takie jak **opis produktu**, **grupy wariantów**, **grupy wymiarów**, **atrybuty produktów** i **produkty pokrewne**.
 
 Poniższy obraz przedstawia dodatkowe szczegóły produktu.
 
-![Szczegóły produktu](media/create-new-product-2.png)
+![Szczegóły produktu.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Utwórz warianty produktu
 
@@ -74,23 +74,23 @@ Aby sprzedać produkt, należy go najpierw zwolnić do firmy.
 
 1. Na stronie produkt wybierz pozycję **Zwolnione produkty**.
 
-    ![Zwolniony produkt](media/create-new-product-3.png)
+    ![Zwolnienie produktu.](media/create-new-product-3.png)
 
 1. Wybierz produkt, który ma zostać zwolniony, a następnie wybierz przycisk **Dalej**.
 
-    ![Wybierz produkt do zwolnienia](media/create-new-product-4.png)
+    ![Wybierz produkt do zwolnienia.](media/create-new-product-4.png)
 
 1. Wybierz zestaw wariantów produktu, który ma zostać zwolniony, a następnie wybierz przycisk **Dalej**.
 
-    ![Wybierz warianty do zwolnienia](media/create-new-product-5.png)
+    ![Wybierz warianty do zwolnienia.](media/create-new-product-5.png)
 
 1. Wybierz firmę i wybierz przycisk **Dalej**.
 
-    ![Wybierz firmę](media/create-new-product-6.png)
+    ![Wybierz firmę.](media/create-new-product-6.png)
 
 1. Wybierz **Zakończ**.
 
-    ![Zakończ zwolnienie produktu](media/create-new-product-7.png)
+    ![Zakończ zwolnienie produktu.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfiguruj zwolniony produkt
 
@@ -105,13 +105,13 @@ Po zwolnieniu produkt będzie wymagał dodatkowej konfiguracji, która obejmuje 
 
 Poniższy obraz przedstawia przykład konfiguracji dla zwolnionego produktu..
 
-![Konfiguruj zwolniony produkt](media/create-new-product-8.png)
+![Konfiguruj zwolniony produkt.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-[Tworzenie firm](channels-legal-entities.md)
+[Utwórz firmy](channels-legal-entities.md)
 
-[Utwórz grupę wariantów](create-variant-group.md) 
+[Tworzenie grupy wariantów](create-variant-group.md) 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

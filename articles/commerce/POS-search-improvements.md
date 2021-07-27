@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345167"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -36,7 +36,7 @@ Domyślnie wyszukiwania produktów są przeprowadzane w asortymencie sklepu. Ten
 
 Na stronie **Zmień katalog** pracownicy mogą łatwo wybrać dowolny sklep, lub wyszukać produkty we wszystkich sklepach.
 
-![Zmiana katalogu](./media/Changecatalog.png "Zmiana katalogu")
+![Zmiana katalogu.](./media/Changecatalog.png "Zmiana katalogu")
 
 Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właściwościach produktów:
 
@@ -59,7 +59,7 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 - Sprzedawcy mogą teraz konfigurować wyszukiwanie produktu tak, aby wyświetlać sugestie wyszukiwania, gdy użytkownicy wpisują nazwy produktów. Nowe ustawienie tej funkcji jest dostępne w profilu funkcji POS, w grupie o nazwie **Wyszukiwanie produktu**. To ustawienie nosi nazwę **Pokaż sugestie podczas wpisywania**. Ta funkcja może ułatwić pracownikom szybkie znalezienie wyszukiwanego produktu, ponieważ nie muszą wprowadzać ręcznie pełnej nazwy.
 - Algorytm wyszukiwania produktów wyszukuje także szukane terminy we właściwości **Wyszukaj nazwę** produktu.
 
-![Sugestie produktów](./media/Productsuggestions.png "Sugestie produktów")
+![Sugestie produktów.](./media/Productsuggestions.png "Sugestie produktów")
 
 ## <a name="customer-search"></a>Wyszukiwanie odbiorcy
 
@@ -83,7 +83,7 @@ Aby wyszukiwać globalnie, pracownicy mogą wybrać przycisk **Filtruj wyniki** 
 
 Identyfikator klienta nie jest wyświetlany dla klientów zapytanych z innych firm, ponieważ nie utworzono identyfikatora klienta dla tych stron w bieżącej firmie. Jeżeli jednak pracownik otworzy stronę szczegółów klienta, system automatycznie wygeneruje identyfikator odbiorcy dla jednostki i skojarzy z klientem książkę adresową klienta sklepu. Dlatego odbiorca będzie widoczny w lokalnych wyszukiwaniach sklepu wykonanych później.
 
-![Globalne wyszukiwanie odbiorcy](./media/Globalcustomersearch.png "Globalne wyszukiwanie odbiorcy")
+![Globalne wyszukiwanie odbiorcy.](./media/Globalcustomersearch.png "Globalne wyszukiwanie odbiorcy")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Dodatkowe możliwości lokalnego wyszukiwania klientów
 
@@ -94,11 +94,11 @@ Gdy użytkownik wyszukuje numer telefonu, system ignoruje znaki specjalne (takie
 
 Tradycyjne wyszukiwanie odbiorcy może być czasochłonne, ponieważ obejmuje wiele pól. Zamiast tego kasjerzy mogą teraz szukać jedną właściwość klienta, taką jak imię i nazwisko, adres e-mail lub numer telefonu. Właściwości używane przez algorytm wyszukiwania odbiorców są zbiorczo nazywane *kryteriami wyszukiwania odbiorców*. Administrator systemu może w prosty sposób skonfigurować jedno lub więcej kryteriów jako skróty, które będą wyświetlane w aplikacji POS. Ponieważ wyszukiwanie jest ograniczone do jednego kryterium, są wyświetlane tylko pasujące wyniki wyszukiwania, a proces działa znacznie szybciej, niż standardowe wyszukiwanie odbiorców. Poniższa ilustracja przedstawia skróty wyszukiwania odbiorców w aplikacji POS.
 
-![Skróty wyszukiwania odbiorcy](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorcy")
+![Skróty wyszukiwania odbiorcy.](./media/SearchShortcutsPOS.png "Skróty wyszukiwania odbiorcy")
 
 Aby ustawić kryteria wyszukiwania jako skróty, administrator musi otworzyć stronę **Parametry sprzedaży** w aplikacji Commerce , a następnie na karcie **Kryteria wyszukiwania w punkcie sprzedaży** zaznaczyć wszystkie kryteria, które powinny być wyświetlane w postaci skrótów.
 
-![Konfiguruj skróty wyszukiwania](./media/ConfigureShortcutsAX.png "Konfiguruj skróty wyszukiwania")
+![Konfiguruj skróty wyszukiwania.](./media/ConfigureShortcutsAX.png "Konfiguruj skróty wyszukiwania")
 
 > [!NOTE]
 > Jeśli dodasz zbyt wiele skrótów, menu rozwijane na pasku wyszukiwania w aplikacji POS będzie bardzo nieczytelne, co utrudni pracownikowi wyszukiwanie. Zalecamy, aby dodać tylko potrzebną liczbę skrótów.

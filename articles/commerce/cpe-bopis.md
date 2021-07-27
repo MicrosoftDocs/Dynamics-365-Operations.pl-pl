@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5f96302735e8aa1acf5c81992cb4cb49ff4a03ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936918"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352501"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie BOPIS w środowisku oceny rozwiązania Dynamics 365 Commerce
 
@@ -54,7 +54,7 @@ Scenariusze BOPIS, które obejmują płatność kartą kredytową, wymagają sta
 4. Wybierz kolejno opcje **Pobierz** i **Retail Modern POS**. 
 5. Po zakończeniu pobierania pliku **ModernPOSSetup.exe** wybierz opcję **Otwórz plik**.
 
-    ![Otwórz plik](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Otwórz plik.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Wybierz przycisk **Dalej**, aby przejść przez proces instalacji. Po zakończeniu instalacji wybierz opcję **Zamknij**.
 

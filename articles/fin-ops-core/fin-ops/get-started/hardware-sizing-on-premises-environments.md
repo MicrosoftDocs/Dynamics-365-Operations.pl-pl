@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343965"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Wymagania dotyczące szacowania zapotrzebowania na sprzęt dla środowisk lokalnych
 
@@ -36,7 +36,7 @@ Po przejrzeniu dokumentacji można rozpocząć proces szacowania wolumenu transa
 
 Wszystkie czynniki pokazane na poniższej ilustracji mają wpływ na dobór składników infrastruktury. Im bardziej szczegółowe informacje uda się zebrać, tym dokładniej można określić zapotrzebowanie. Bez danych pomocniczych oszacowanie zapotrzebowania na sprzęt będzie niedokładne. Absolutnym minimalnym wymogiem dla niezbędnych danych jest uwzględnienie szczytowego godzinowego obciążenia wierszami transakcji.
 
-[![Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Szacowanie zapotrzebowania na sprzęt dla środowisk lokalnych.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Patrząc od lewej do prawej, pierwszym i najważniejszym czynnikiem niezbędnym do dokładnego oszacowania zapotrzebowania na elementy infrastruktury jest profil transakcji lub charakterystyka transakcji. Zawsze należy ustalić szczytowy wolumen transakcji na godzinę. Jeśli istnieje wiele okresów szczytowych, należy je precyzyjnie zdefiniować.
 

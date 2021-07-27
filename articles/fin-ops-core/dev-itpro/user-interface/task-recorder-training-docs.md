@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: a2bc5aa1080709931b3aa71c548a7bf2fb9b1192
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354300"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Tworzenie dokumentacji lub szkolenia za pomocą Rejestratora zadań
 
@@ -62,21 +62,21 @@ Niezależnie od tego, czy tworzysz najnowsze nagranie, czy opierasz się na nagr
 
 To jest okienko edycji, wyświetlane po dodaniu adnotacji podczas tworzenia nagrania. Wprowadź adnotację tytułu w polu **Tytuł**. 
 
-[![Okienko edycji z adnotacją tytułu](./media/screen1.png)](./media/screen1.png) 
+[![Okienko edycji z adnotacją tytułu.](./media/screen1.png)](./media/screen1.png) 
 
 Tak wygląda adnotacja tytułu w „dymku” w przewodniku po zadaniu. 
 
-[![Wygląd adnotacji tytułu w przewodniku po zadaniach](./media/screen2.png)](./media/screen2.png)
+[![Wygląd adnotacji tytułu w przewodniku po zadaniach.](./media/screen2.png)](./media/screen2.png)
 
 -   **Uwagi:** adnotacja uwag pojawia się pod tekście kroku generowanym automatycznie przez rejestrator zadania. W przewodniku po zadaniu będzie ona widoczna tylko wówczas, gdy użytkownik kliknij łącze **Pokaż więcej** w dymku przewodnika po zadaniu. Ten typ adnotacji służy do opisywania wszystkich elementów, które należy poznać, aby wykonać krok.
 
 To jest okienko edycji, wyświetlane po dodaniu adnotacji podczas tworzenia nagrania. Wprowadź adnotację uwag w polu **Uwagi**. 
 
-[![Okienko edycji z adnotacją w polu notatek](./media/screen3.png)](./media/screen3.png) 
+[![Okienko edycji z adnotacją w polu notatek.](./media/screen3.png)](./media/screen3.png) 
 
 Tak wygląda adnotacja uwag w „dymku” w przewodniku po zadaniu.
 
-[![Wygląd notatek adnotacji w przewodniku po zadaniach](./media/screen4.png)](./media/screen4.png)
+[![Wygląd notatek adnotacji w przewodniku po zadaniach.](./media/screen4.png)](./media/screen4.png)
 
 -   **Krok informacji**: Te adnotacje są tworzone za pomocą kliknięcia prawym przyciskiem myszy na formancie lub w dowolnym miejscu w formularzu &lt; **Rejestrator zadań** &lt; **Dodaj krok informacji.** Kroki informacji są wyświetlane jako ponumerowane kroki w punkcie, w którym zostały wstawione, nawet jeśli żadna akcja nie została zarejestrowana w interfejsie użytkownika. Można dodać krok informacji na poziomie formularza lub krok informacji skojarzony z formantem. Jeśli krok informacji jest skojarzony z formularzem, „dymek” przewodnika po zadaniu będzie wyświetlany gdzieś w formularzu, bez wskaźnika, podczas odtwarzania podręcznika po zadaniu. Kiedy krok informacji jest skojarzony z formantem, „dymek” podręcznika po zadaniu będzie wskazywał formant podczas podręcznika po zadaniu. W okienku Pomocy adnotacja informacji o kroku będzie wyświetlana jako ponumerowany krok z dowolnym wprowadzonym tekstem. Instrukcje etapowe pozwalają przygotować użytkownika do kolejnych kroków, opisują kroki, które muszą być wykonane poza aplikacją lub odwołują się do innych nagrań (jednak nie można utworzyć hiperłącza w adnotacji).
 

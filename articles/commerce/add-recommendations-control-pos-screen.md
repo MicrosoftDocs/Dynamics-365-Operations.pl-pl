@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 38099909f169391c17760ac381af07f0848fc384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 219b82809087e3f5f185bc92836ca300d064fc71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797486"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348351"
 ---
 # <a name="add-recommendations-to-the-transaction-screen"></a>Dodawanie rekomendacji do ekranu transakcji
 
@@ -43,7 +43,7 @@ Rekomendacje produktów mogą być wyświetlane na urządzeniu punktu sprzedaży
 6. Po zalogowaniu się zobaczysz stronę podobną do przedstawionej poniżej. Układ może się różnić w zależności od dostosowań wprowadzonych dla sklepu.
 
 
-    [![Projektant układu](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Projektant układu.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Wybierz opcję wyświetlaną
 
@@ -58,11 +58,11 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 1. Zmniejsz wysokość obszaru szczegółów wierszy transakcji, tak aby była taka sama, jak wysokość panelu odbiorcy po lewej stronie.
 
 
-    [![Zmniejszona wysokość obszaru szczegółów wierszy transakcji](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![Zmniejszona wysokość obszaru szczegółów wierszy transakcji.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. Z menu po lewej stronie przeciągnij formant rekomendacji i upuść go między obszar szczegółów wierszy transakcji a siatkę przycisków na środku w dolnej części ekranu transakcji. Zmień rozmiar formantu, tak aby mieścił się w tej przestrzeni.
 
-    [![Formant rekomendacji dodany do układu](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Formant rekomendacji dodany do układu.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Kliknij przycisk **X**, aby zapisać zmiany i zamknąć projektanta układu.
@@ -77,13 +77,13 @@ Dostępne są dwie opcje konfiguracji. Wybierz opcję, która sprawdza się najl
 
 2. Kliknij **Dostosuj**.
 
-    [![Dostosowywanie — okno dialogowe Formant karty](./media/pic-5.png)](./media/pic-5.png)
+    [![Dostosowywanie — okno dialogowe Formant karty.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kliknij opcję **Nowa karta**.
 4. Znajdź nową kartę, który została właśnie dodana. Może być konieczne przewinięcie w dół.
 5. Na liście rozwijanej **Zawartość** wybierz opcję **Rekomendowane produkty**.
 
-    [![Wybieranie Rekomendowanych produktów w polu Zawartość](./media/pic-6.png)](./media/pic-6.png)
+    [![Wybieranie Rekomendowanych produktów w polu Zawartość.](./media/pic-6.png)](./media/pic-6.png)
 
 6. W polu **Etykieta** wpisz nazwę karty rekomendacji. Na przykład wpisz „Zalecane produkty”.
 7. W polu **Obraz** zaznacz ilustrację, która ma być wyświetlana na karcie.

@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804436"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352307"
 ---
 # <a name="enable-personalized-recommendations"></a>Włączanie rekomendacji spersonalizowanych
 
@@ -50,7 +50,7 @@ Aby włączyć personalizację, należy wykonać następujące kroki.
 1. Wybierz funkcję **Spersonalizowane rekomendacje produktów**.
 1. W okienku właściwości **Spersonalizowane rekomendacje produktów** wybierz opcję **Włącz teraz**.
 
-![Włączanie personalizacji](./media/FeatureManagement_Personalized.PNG)
+![Włączanie personalizacji.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Po włączeniu personalizacji zostanie rozpoczęty proces generowania spersonalizowanych list rekomendacji produktów. Zanim te listy będą dostępne i widoczne w trybie online i w punkcie sprzedaży, może być wymagany maksymalnie jeden dzień.
@@ -73,7 +73,7 @@ Zanim będzie można wyświetlić listę „Wybrane dla Ciebie” na stronie han
 
 Na poniższej ilustracji przedstawiono przykład listy „Wybrane dla Ciebie” na stronie sklepu internetowego.
 
-![Lista Wybrane dla Ciebie w trybie online](./media/picksforyou.png)
+![Lista Wybrane dla Ciebie w trybie online.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>Listy „Wybrane dla Ciebie” w punkcie sprzedaży
 
@@ -81,7 +81,7 @@ Aby usprawnić usługi świadczone klientom, detaliści mogą personalizować is
 
 Na poniższej ilustracji przedstawiono przykład listy „Polecane klientom” w terminalu punktu sprzedaży.
 
-![Lista Wybrane dla Ciebie w punkcie sprzedaży](./media/picksonpos.png)
+![Lista Wybrane dla Ciebie w punkcie sprzedaży.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Zastosuj personalizację do istniejących list rekomendacji
 
@@ -89,7 +89,7 @@ Detaliści mogą zastosować personalizację do istniejących list rekomendacji,
 
 Na przykład użytkownik zalogowany już kupił czarny zegarem i brązowe buty robocze, które pojawią się na liście „popularne — domyślnie” na poniższej ilustracji. Dlatego użytkownik zobaczy nowe produkty zamiast tych produktów, tak jak to pokazano na liście „Popularne — spersonalizowane”.
 
-![Trwa stosowanie personalizacji](./media/applypersonalization.png)
+![Trwa stosowanie personalizacji.](./media/applypersonalization.png)
 
 Aby zastosować personalizację do istniejącej listy rekomendacji w module strony kreatora Commerce, wykonaj następujące kroki.
 
@@ -99,7 +99,7 @@ Aby zastosować personalizację do istniejącej listy rekomendacji w module stro
 1. W oknie dialogowym **Wybór konfiguracji listy produktów** w obszarze **typ** wybierz typ listy.
 1. Zaznacz pole wyboru **Zastosuj personalizację**, a następnie kliknij przycisk **OK**.
 
-    ![Stosowanie personalizacji do listy popularnych produktów](./media/ApplyPersonalizationToTrending.PNG)
+    ![Stosowanie personalizacji do listy popularnych produktów.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Zapisz stronę, zakończ jej edycję, a następnie ją opublikuj. Po opublikowaniu strony zalogowani użytkownicy będą widzieli spersonalizowane listy popularnych produktów.
 

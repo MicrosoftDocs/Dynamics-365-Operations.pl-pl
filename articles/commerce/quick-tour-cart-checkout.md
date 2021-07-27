@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352043"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Omówienie stron koszyka i realizacji zamówienia
 
@@ -37,7 +38,7 @@ Strona koszyka służy jako torba do zakupów i zawiera wszystkie towary dodane 
 
 Poniższa ilustracja pokazuje przykład strony koszyka zbudowanej przy użyciu biblioteki modułów online i motywu „Fabrikam”.
 
-![Przykład strony koszyka](./media/cart2.PNG)
+![Przykład strony koszyka.](./media/cart2.PNG)
 
 Główna treść strony koszyka pokazuje wszystkie elementy, które klient dodał do koszyka. Zaprezentuj wszystkie odpowiednie rabaty. Rabaty te obejmują rabaty złożone. Przykładem mogą być „Kup 3 pozycje i uzyskaj 10% zniżki” lub „Kup butelkę i plecak, aby uzyskać 10% zniżki”. W module podsumowanie zamówień jest wyświetlana kwota należna po zastosowaniu rabatów, kosztów wysyłki, podatków itp. Istnieje także moduł kodu promocyjnego, który pozwala odbiorcy na zastosowanie lub usunięcie kodów promocyjnych.
 
@@ -53,7 +54,7 @@ Strona realizacja jest miejscem, w którym odbiorcy wprowadzają informacje wyma
 
 Na poniższej ilustracji przedstawiono przykład strony realizacji, która została utworzona przy użyciu biblioteki modułów.
 
-![Przykład strony realizacji](./media/Checkout.PNG)
+![Przykład strony realizacji.](./media/Checkout.PNG)
 
 Główną treścią strony realizacja jest to, gdzie są zbierane wszystkie informacje o zamówieniach. Informacje te obejmują adres wysyłkowy, opcje dostawy oraz informacje o płatności. Realizacja zamówienia ma przebieg krok po kroku, ponieważ informacje muszą zostać wprowadzone w określonym zamówieniu do przetworzenia. Na przykład adres wysyłkowy musi zostać wprowadzony, aby można było obliczyć koszty wysyłki, a płatność może być autoryzowana.
 

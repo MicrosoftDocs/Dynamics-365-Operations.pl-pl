@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797654"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347523"
 ---
 # <a name="content-block-module"></a>Moduł bloku zawartości
 
@@ -46,15 +46,15 @@ Ponadto motyw może udostępniać różne właściwości dla każdego układu. P
 
 Poniższy obraz przedstawia przykład modułu bloku zawartości z układem Hero.
 
-![Przykład modułu bohatera](./media/Hero.PNG)
+![Przykład modułu bohatera.](./media/Hero.PNG)
 
 Poniższy obraz przedstawia przykład modułu bloku zawartości z układem funkcji.
 
-![Przykłady modułów funkcji](./media/Feature.PNG)
+![Przykłady modułów funkcji.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Właściwości modułu bloku zawartości
 
-| Nazwa właściwości  | Wartości | Opis |
+| Nazwa właściwości  | Wartości | opis |
 |----------------|--------|-------------|
 | Wizerunek          | Plik obrazu | Obraz może służyć do pokazania produktu lub promocji. Obraz można przekazać do galerii obrazów lub można użyć istniejącego obrazu. |
 | Nagłówek        | Tekst nagłówka i znacznik nagłówka (**H1**, **H2**, **H3**, **H4**, **H5** lub **H6**) | Każdy moduł bohatera może mieć nagłówek. Domyślnie w nagłówku jest używany znacznik nagłówka **H2**. Jednak znacznik można zmienić, aby spełniał wymagania dotyczące dostępności. |

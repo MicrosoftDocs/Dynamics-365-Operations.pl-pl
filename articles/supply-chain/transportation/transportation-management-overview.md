@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 30251
+ms.custom:
+- "30251"
+- intro-internal
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8afb7d28d9dd6487e00a2bf7e813069aac386c0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2e438df0b01b864b3ef96eb41819087cbbbef4d9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807735"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359516"
 ---
 # <a name="transportation-management-overview"></a>Omówienie zarządzania transportem
 
@@ -67,17 +69,17 @@ Moduł Zarządzanie transportem pozwala korzystać z transportu w firmie oraz id
 ## <a name="planning-transportation-in-supply-chain-management"></a>Planowanie transportu w Supply Chain Management
 W module Zarządzanie transportem planowania transportu może być oparte na zamówieniach lub na wysyłkach tworzonych w oparciu o te zamówienia. Wysyłki zawsze się pojawiają w pewnym momencie, ale nie są wymagane do planowania transportu. Zamówienia przeniesienia są częścią scenariusza transportu wychodzącego i mogą być planowane razem z zamówieniami sprzedaży. 
 
-![Rysunek ładunku](./media/Load-drawing1-1024x477.jpg)
+![Rysunek ładunku.](./media/Load-drawing1-1024x477.jpg)
 
 ## <a name="inbound-transportation"></a>Transport przychodzący
 Gdy zamawiasz towary od dostawcy i muszą one zostać dostarczone do Twojego magazynu, można samodzielnie zorganizować transport. Rozwiązanie Supply Chain Management umożliwia zaplanowanie transportu i przyjęcia przychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego dla planowania transportu towarów przychodzących. 
 
-![Przebieg procesu biznesowego przychodzącego transportu ładunku](./media/Businessprocessflowforinboundloadtransportation.jpg)
+![Przebieg procesu biznesowego przychodzącego transportu ładunku.](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
 ## <a name="outbound-transportation"></a>Transport wychodzący
 Można planować i przetwarzać ładunki wychodzące w celu wysłania określonych towarów z magazynu firmy do odbiorcy. Rozwiązanie Supply Chain Management umożliwia zaplanowanie transportu i wysyłki wychodzącego ładunku. Poniższy rysunek przedstawia przepływ procesu biznesowego planowania i przetwarzania obciążenia wychodzącego dla ładunku. 
 
-![Planowanie i przetwarzania ładunków wychodzących](./media/Planningandprocessingoutboundloads.jpg)
+![Planowanie i przetwarzania ładunków wychodzących.](./media/Planningandprocessingoutboundloads.jpg)
 
 ## <a name="load-building"></a>Kompilowanie ładunku
 Supply Chain Management zawiera strategię kompilowania ładunku o nazwie Strategia kompilowania ładunku na podstawie objętości. Pozwala ona stosować maksymalne wartości wysokości i wagi określone w szablonie ładunku albo zastępować te ustawienia wprowadzaniem nowych wartości. Aby użyć tej strategii, zaznacz ją w polu **Strategia kompilowania ładunku** na skróconej karcie **Ustawienia** na karcie **Pulpit kompilowania ładunku**. Ponadto można dodawać własne strategie kompilowania ładunku przez utworzenie nowej klasy w drzewie obiektów aplikacji (AOT).

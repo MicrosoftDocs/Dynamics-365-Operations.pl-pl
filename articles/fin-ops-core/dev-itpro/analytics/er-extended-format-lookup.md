@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: baba699a1b8efc986b4b274b8faf143d24d69e96
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355788"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Zezwalaj użytkownikom na konfigurowanie odwołania do formatu modelu konfiguracji z repozytorium globalnego
 
@@ -34,27 +34,27 @@ Na przykład podczas konfigurowania [parametrów handlu zagranicznego](../../../
 
 Jeśli bieżące wystąpienie Finance nie zawiera żadnych formatów skojarzonych z procesami biznesowymi Intrastat, to pole odnośnika będzie puste.
 
-[![Strona parametrów handlu zagranicznego](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Strona parametrów handlu zagranicznego.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Jeśli bieżące wystąpienie Finance zawiera formaty skojarzone z procesami biznesowymi Intrastat, to pole odnośnika będzie wypełnione formatami ER.
 
-[![Strona parametrów handlu zagranicznego](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Strona parametrów handlu zagranicznego.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 To wyszukiwanie oferuje tylko formaty ER, które zostały już zaimportowane do bieżącego wystąpienia Finance. Aby [zaimportować](./tasks/er-import-configuration-lifecycle-services.md) rozwiązania ER do bieżącego wystąpienia Finance, trzeba mieć uprawnienia do uruchamiania odpowiedniej funkcji systemu, która obsługuje [cykle trwania](general-electronic-reporting-manage-configuration-lifecycle.md) rozwiązań ER, które zawierają formaty ER.
 
 Począwszy od wersji finansowej 10.0.9 (wydanie z kwietnia 2020) interfejs użytkownika w wyszukiwaniu formatu ER, który jest implementowany przy użyciu interfejsu API środowiska ER Framework, został rozszerzony. Nadal można wybrać istniejące formaty ER, które są dostępne w skróconej karcie **Wyboru konfiguracji formatu**. Oprócz tego wyszukiwanie rozszerzone umożliwia nowe opcje wyszukiwania w repozytorium globalnym (GR) w celu znalezienia konkretnych formatów ER. Wszystkie formaty ER dla GR są oferowane podczas **Importu z repozytorium globalnego** na skróconej karcie.
 
-[![Strona parametrów handlu zagranicznego](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Strona parametrów handlu zagranicznego.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Podobnie jak na skróconej karcie **Wyboru konfiguracji formatu**, skrócona karta **Import z repozytorium globalnego** zawiera tylko te formaty ER, które są stosowane do procesu biznesowego, dla którego w polu wyszukiwania wybrano format ER. W tym przykładzie wygenerowanie deklaracji Intrastat. Format ER jest odpowiedni dla firmy, do której użytkownik jest aktualnie zalogowany, w zależności od kontekstu kraju firmy.
 
 Po wybraniu formatu ER z **Importowanego z repozytorium globalnego** na skróconej karcie, wybrana [konfiguracja](general-electronic-reporting.md#Configuration) formatu ER jest importowana z pola GR do bieżącego wystąpienia Finance.
 
-[![Strona parametrów handlu zagranicznego](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Strona parametrów handlu zagranicznego.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Następnie, jeśli import zakończy się pomyślnie, odwołanie do importowanego formatu ER będzie przechowywane w tym polu wyszukiwania. Przy pierwszym korzystaniu z pola GR należy skorzystać z podanego łącza, aby zarejestrować [Regulatory Configuration Service](https://aka.ms/rcs), która jest używana do zarządzania dostępem do magazynu GR.
 
-[![Strona parametrów handlu zagranicznego](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![Strona parametrów handlu zagranicznego.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Domyślnie, **Import z repozytorium globalnego** na skróconej karcie prezentuje listę formatów ER z magazynu tymczasowego, który jest automatycznie tworzony na podstawie zawartości GR na potrzeby ulepszeń wydajności. Dzieje się tak, gdy **Import z repozytorium globalnego** na skróconej karcie jest otwierany po raz pierwszy, co może potrwać kilka sekund.
 
@@ -64,7 +64,7 @@ Jeśli nie widzisz wymaganego formatu ER w opcji **Import z repozytorium globaln
 
 Dostępność tej funkcjonalności jest kontrolowana przez funkcję **rozszerzonego wyszukiwania konfiguracji formatu ER umożliwiająca wysyłanie zapytań dotyczących globalnego repozytorium** w module **Zarządzanie funkcjami**. Ten funkcjonalność jest włączona domyślnie.
 
-[![Strona dot. zarządzania funkcjami](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
+[![Strona dot. zarządzania funkcjami.](./media/ER-ExtLookup-FeatureMngt.png)](./media/ER-ExtLookup-FeatureMngt.png)
 
 ## <a name="security-considerations"></a>Zagadnienia dotyczące zabezpieczeń
 
@@ -72,7 +72,7 @@ Uprawnienie **Obsługa repozytoriów konfiguracji** (**ERMaintainSolutionReposit
 
 Poniższy zrzut pokazuje, jak to uprawnienie może być przyznane użytkownikom, którzy są przypisani do roli **księgowej**. Dzięki tej roli użytkownicy mogą konfigurować parametry handlu zagranicznego i konfigurować odwołania do formatów ER w polach **Mapowanie formatów plików** i **Raport formatów mapowania** na stronie **Parametry handlu zagranicznego**.
 
-[![Strona konfiguracji zabezpieczeń](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
+[![Strona konfiguracji zabezpieczeń.](./media/ER-ExtLookup-SecuritySetting.png)](./media/ER-ExtLookup-SecuritySetting.png)
 
 ## <a name="limitations"></a>Ograniczenia
 

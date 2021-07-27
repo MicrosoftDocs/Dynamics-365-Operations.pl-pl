@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841244"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344813"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Automatyzacja faktur dla zeskanowanych dokumentów
 
@@ -34,7 +34,7 @@ Rozwiązanie automatyzacji obsługi faktur oferuje standardowy interfejs, który
 
 Na poniższej ilustracji przedstawiono przykładowy scenariusz integracji, w którym firma Contoso współpracuje z usługodawcą OCR w celu przetwarzania faktur od dostawców. Dostawcy firmy Contoso przesyłają faktury dostawców do usługodawcy za pomocą poczty e-mail. Za pomocą przetwarzania OCR usługodawca generuje metadane faktur (nagłówek i/lub wiersze) oraz zeskanowany obraz faktury. Następnie warstwa integracji przekształca te artefakty, aby mogły być wykorzystywane.
 
-![Przykładowy scenariusz integracji](media/vendor_invoice_automation_01.png)
+![Przykładowy scenariusz integracji.](media/vendor_invoice_automation_01.png)
 
 Jest możliwych kilka odmian powyższego scenariusza, jeśli jest wymagana integracja faktur. Migracja danych jest kolejnym przypadkiem użycia, w którym ten interfejs może być wykorzystywany do tworzenia faktur i załączników.
 
@@ -92,7 +92,7 @@ W scenariuszach, gdzie faktury od dostawców wchodzą do programu Finance and Op
 
 Nowa strona listy dla wyjątków faktur jest dostępna w oknie **Rozrachunki z dostawcami** > **Faktury** > **Niepowodzenia importu** > **Faktury od dostawców, których importowanie nie powiodło się**. Na tej stronie są pokazane wszystkie rekordy nagłówków faktur od dostawców z tabeli tymczasowej jednostki danych Nagłówek faktury od dostawcy. Należy zwrócić uwagę, że te same rekordy można wyświetlić z obszaru roboczego **Zarządzanie danymi**. Możesz również wykonać te same czynności, które są dostępne w funkcji obsługi wyjątków z obszaru roboczego **Zarządzanie danymi**. Funkcja obsługi wyjątków została zoptymalizowana dla funkcjonalnego użytkownika, co ułatwia korzystanie z nich.
 
-![Strona listy wyjątków](media/vendor_invoice_automation_02.png)
+![Strona listy wyjątków.](media/vendor_invoice_automation_02.png)
 
 Na tej stronie listy znajdują się następujące pola dostępne wskutek integracji:
 
@@ -136,7 +136,7 @@ Na stronie listy wyjątków są obsługiwane standardowe konstrukcje zabezpiecze
 + Według użytkownika
 + Według firmy
 
-![Zadanie importu zabezpieczone według roli użytkownika i firmy](media/vendor_invoice_automation_04.png)
+![Zadanie importu zabezpieczone według roli użytkownika i firmy.](media/vendor_invoice_automation_04.png)
 
 Jeśli skonfigurowano zabezpieczenia dla zadania importu faktur, strona listy wyjątków honoruje te ustawienia. Użytkownicy będą widzieć tylko te rekordy wyjątków faktur, które pozwala im zobaczyć ta konfiguracja.
 

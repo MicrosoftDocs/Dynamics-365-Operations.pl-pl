@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881043"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350191"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Nowy interfejs użytkownika w stylu Microsoft Office dokumentu w zarządzaniu dokumentami biznesowymi
 
@@ -51,18 +51,18 @@ Aby włączyć tę funkcję dla wszystkich firm, należy wykonać następujące 
 
 1. W obszarze roboczym **Zarządzanie dokumentami biznesowymi** wybierz **Nowy dokument**.
 
-    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template1.png)
+    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi.](./media/BDM_overview_new_template1.png)
 
 2. Na karcie **Wybierz** wybierz dokument, który ma być używany jako szablon, a następnie wybierz opcję **Utwórz dokument**.
 
-    ![Dokumenty biznesowe, okno dialogowe](./media/BDM_overview_new_template2.png)
+    ![Dokumenty biznesowe, okno dialogowe.](./media/BDM_overview_new_template2.png)
 
 3. W nowym oknie dialogowym, w polu **Tytuł**, zmień tytuł zgodnie z potrzebą. Tekst będzie używany do napełniania nowej nazwy tworzonej automatycznie konfiguracji formatu ER. Wersja robocza tej konfiguracji (**Raport o fakturach niezależnych dla odbiorców (GER) - Kopia**) będzie zawierać edytowany szablon i zostanie automatycznie oznaczona do uruchomienia tego formatu ER dla bieżącego użytkownika. Niezmodyfikowany oryginalny szablon z podstawowej konfiguracji formatu źródłowego będzie używany do uruchamiania tego formatu ER dla każdego innego użytkownika.
 4. W polu **Nazwa** zmień nazwę pierwszej poprawki edytowalnego szablonu, który zostanie utworzony automatycznie.
 5. W polu **Komentarz** zaktualizuj uwagę dla automatycznie wygenerowanej poprawki edytowalnego szablonu, która zostanie utworzona automatycznie.
 6. Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
-    ![Tworzenie dokumentu, okno dialogowe](./media/BDM_overview_new_template3.png)
+    ![Tworzenie dokumentu, okno dialogowe.](./media/BDM_overview_new_template3.png)
 
 Przycisk **Nowy dokument** umożliwia użytkownikom tworzenie i edytowanie szablonu w konfiguracji formatu sprawozdawczości elektronicznej (ER) dostarczonej przez innego dostawcę. W przykładzie przedstawionym w tym temacie dostawcą jest Microsoft. Kliknięcie przycisku **Nowy dokument** powoduje wyświetlenie wszystkich szablonów należących do bieżącego i innych dostawców. Po wybraniu szablonu, zostanie on otwarty do edycji. Edytowany szablon zostanie następnie zapisany w nowej konfiguracji formatu, która jest generowana automatycznie.
 
@@ -71,16 +71,16 @@ Przed przekazaniem szablonu należy podać wymagane informacje jak opisano w pon
 
 1. W obszarze roboczym **Zarządzanie dokumentami biznesowymi** wybierz **Nowy dokument**.
 
-    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM_overview_new_template1.png)
+    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi.](./media/BDM_overview_new_template1.png)
     
 2. Na stronie **Tworzenie nowego szablonu**, na karcie **Przekaż**, na karcie **Szablon** wybierz pozycję **Przeglądaj**, aby znaleźć i wybrać plik programu Excel, który ma być szablonem. W sekcji **Szablon** pola **Tytuł** i **Opis** są wypełniane automatycznie. Określają nazwę i opis nowej konfiguracji formatu ER, która jest tworzona automatycznie. Możesz edytować te pola według potrzeb.
 3. W sekcji **Typ dokumentu**, w polu **Nazwa** określ typ dokumentu biznesowego. Ta wartość będzie używana do wyszukiwania poprawnego źródła danych (to znaczy konfiguracji modelu ER).
 
-    ![Karta szablonu](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Karta szablonu.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. Na karcie **Źródło danych** na skróconej karcie **Filtruj** wybierz pozycję **Zastosuj filtr**. W sekcji **Źródło danych** pole **Nazwa** jest wypełniane automatycznie lub można ręcznie wybrać wartość. Filtr umożliwia wyszukiwanie odpowiedniej nazwy źródła danych według nazwy, opisu, kodu kraju/regionu i typu dokumentu biznesowego.
 
-    ![Karta Źródło danych](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Karta Źródło danych.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > Skrócona karta **Filtruj** będzie używana do wyszukiwania poprawnego źródła danych (to znaczy konfiguracji modelu ER). Możesz edytować wszystkie pola filtrów, aby znaleźć najbardziej odpowiednie źródło danych dla przesyłanego dokumentu.
@@ -89,7 +89,7 @@ Przed przekazaniem szablonu należy podać wymagane informacje jak opisano w pon
     
 5. Na karcie **mapowanie** wybierz opcję **Automatyczne wykrywanie**. Pole **Definicja źródłowa** jest wypełniane automatycznie lub można ręcznie wybrać wartość. Na tej karcie jest przedstawiane końcowe mapowanie elementów z szablonu i modelu.
 
-    ![Karta Mapowanie](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Karta Mapowanie.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > Mapowanie w sekcji **Struktura szablonu** korzysta z pełnego dopasowania etykiet lub opisów w źródle danych w języku użytkownika i w nazwie komórki w szablonie.
@@ -102,11 +102,11 @@ Jeśli w raportowaniu elektronicznym nie ma dostawcy, można go utworzyć. Jeśl
 
 - Aby utworzyć dostawcę, zmień nazwę dostawcy w polu **Nazwa**, zaktualizuj adres internetowy nowego dostawcy w polu **Adresu internetowego** i wybierz przycisk **OK**, aby potwierdzić.
 
-    ![Utwórz nowego dostawcę w BDM](./media/bdm_create_provider.png)
+    ![Utwórz nowego dostawcę w BDM.](./media/bdm_create_provider.png)
     
 - Aby uaktywnić istniejącego dostawcę, wybierz nazwę dostawcy w polu **Dostawca konfiguracji** i wybierz przycisk **OK**, aby ustawić dostawcę jako aktywnego.
 
-    ![Aktywuj dostawcę w BDM](./media/bdm_choose_provider.png)
+    ![Aktywuj dostawcę w BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Każdy szablon BDM odnosi się do dostawcy jako autora konfiguracji. Z tego względu dla szablonu jest wymagany aktywny dostawca.

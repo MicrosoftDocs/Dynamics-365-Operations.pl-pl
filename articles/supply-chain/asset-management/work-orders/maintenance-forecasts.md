@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dd652af3100f8de59e06490443baeebca58a4dd3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7976a7d555c04cb2ea01a2dbe571f6b8b440b69a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838545"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347075"
 ---
 # <a name="maintenance-forecasts"></a>Prognozy konserwacji
 
@@ -102,7 +102,7 @@ Aby uzyskać informacje o tym, gdzie jest używana pozycja w wybranym wierszu w 
 
 Na poniższej ilustracji pokazano przykład strony listy **Prognoza konserwacji zlecenia pracy**.
 
-![Rysunek 1](media/06-work-orders.png)
+![Rysunek 1.](media/06-work-orders.png)
 
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>Automatyczna aktualizacja prognoz zleceń pracy
@@ -120,7 +120,7 @@ W module Zarządzanie składnikami majątku można automatycznie aktualizować z
 
 Na poniższej ilustracji pokazano przykład okna dialogowego **Aktualizacja prognozy zlecenia pracy**.
 
-![Rysunek 2](media/07-work-orders.png)
+![Rysunek 2.](media/07-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

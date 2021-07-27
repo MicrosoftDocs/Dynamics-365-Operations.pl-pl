@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820818"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350653"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatyczne propozycje płatności dla dostawcy
 
@@ -97,11 +97,11 @@ Zalecamy, aby ocenić, czy automatyzacja będzie korzystna dla danej organizacji
 
 Po utworzeniu serii automatyzacji propozycji płatności dostawcy wystąpienia każdej płatności będą wyświetlane w widoku tygodniowym automatyzacji procesu. W przypadku płatności dostawcy widok tygodniowy automatyzacji procesu został dodany do obszaru roboczego **Płatności dla dostawców** i strony **Automatyzacja procesu**.
 
-[![Widok tygodniowy automatyzacji procesu w obszarze roboczym Płatności dla dostawców](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Widok tygodniowy automatyzacji procesu w obszarze roboczym Płatności dla dostawców.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Widok tygodniowy automatyzacji procesu w obszarze roboczym **Płatności dla dostawców** pokazuje tylko automatyzację propozycji płatności dostawcy. Pokazuje wszystkie wystąpienia płatności w bieżącym tygodniu dla wszystkich firm, do których zalogowany użytkownik ma uprawnienia bezpieczeństwa. Jeśli na przykład pracownik jest odpowiedzialny za rozrachunki z dostawcami w firmach USMF i USSI, będzie widział wystąpienia automatyzacji propozycji płatności dostawcy dla tych dwóch firm, ale nie dla innych firm.
 
-[![Widok tygodniowy automatyzacji procesu dla firm USMF i USSI](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Widok tygodniowy automatyzacji procesu dla firm USMF i USSI.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Każde wystąpienie pokazuje firmę, w której arkusz płatności został lub zostanie utworzony. Jeśli płatności są tworzone za pomocą płatności scentralizowanych, wyświetlana jest firma, w której będą tworzone płatności. Wystąpienie niekoniecznie pokazuje, które faktury firmy będą opłacane.
 

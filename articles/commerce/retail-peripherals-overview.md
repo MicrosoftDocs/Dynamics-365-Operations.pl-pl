@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.custom: 268444
+ms.custom:
+- "268444"
+- intro-internal
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 833eb271b15dd6d32501049ce9154022a388f1d4
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: df7cb4810b83d74725df3d59b7b08da1e8cf4a53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345039"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -119,7 +121,7 @@ Aby zagwarantować możliwość współpracy jak największej gamy urządzeń z 
 -   **Obiekt formantu** — Obiekt formantu klasy urządzeń (na przykład wyświetlaczu wierszowym) udostępnia interfejs dla programu komputerowego. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) dostarcza zestaw standardowych obiektów formatów OPOS, które są znane jako wspólne obiekty formantów (CCO). Obiekty CCO są używane do testowania składnika punktu sprzedaży w Commerce. W związku z tym testowanie pomaga zagwarantować, że jeśli program Commerce obsługuje klasę urządzeń za pośrednictwem mechanizmu OPOS, będzie obsługiwanych wiele typów urządzeń, o ile tylko producent dostarczy obiekt usługi zaprojektowany dla tego mechanizmu. Nie trzeba osobno testować każdego typu urządzenia.
 -   **Obiekt usługi** — Obiekt usługi zapewnia komunikację między obiektem formantu (CCO) a urządzeniem. Zazwyczaj obiekt usługi dla urządzenia jest dostarczany przez producenta urządzenia. Jednak w niektórych przypadkach może być konieczne pobranie obiektu usługi z witryny internetowej producenta. Na przykład może być dostępny nowszy obiekt usługi. Aby odszukać adres witryny producenta w sieci Web, zajrzyj do dokumentacji sprzętu.
 
-[![Obiekt formantu i obiekt usługi](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Obsługa implementacji OPOS standardu OLE for POS pomaga zagwarantować, że jeśli producenci urządzeń i wydawcy oprogramowania punktów sprzedaży poprawnie zaimplementowali standard, systemy punktów sprzedaży i obsługiwane urządzenia mogą współpracować, nawet jeśli nie zostały wcześniej przetestowane razem. 
+[![Obiekt formantu i obiekt usługi.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Obsługa implementacji OPOS standardu OLE for POS pomaga zagwarantować, że jeśli producenci urządzeń i wydawcy oprogramowania punktów sprzedaży poprawnie zaimplementowali standard, systemy punktów sprzedaży i obsługiwane urządzenia mogą współpracować, nawet jeśli nie zostały wcześniej przetestowane razem. 
 
 > [!NOTE]
 > Obsługa standardu OPOS nie gwarantuje współpracy ze wszystkimi urządzeniami, które mają sterowniki OPOS. Commerce musi najpierw obsługiwać ten lub klasę urządzenia za pośrednictwem mechanizmu OPOS. Ponadto obiekty usług nie zawsze są aktualizowane dla najnowszych wersji obiektów CCO. Należy także pamiętać, że zasadniczo jakość obiektów usługi jest różna.

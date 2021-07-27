@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822546"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354115"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Ustawienia preferowanych konserwatorów
 
@@ -59,7 +59,7 @@ Im więcej opcji zostanie wprowadzonych dla tego samego rekordu, tym dokładniej
 
     [!NOTE] Jeśli podczas planowania zlecenia pracy wybrano preferowanego konserwatora, Zarządzanie składnikami majątku przechodzi przez wszystkie rekordy **perferowanych konserwatorów**, aby sprawdzić, czy są dostępne w pierwszej kolejności najbardziej specyficzne dane. Jeśli nie zostanie znalezione dopasowanie, zostanie użyty rekord domyślny z wyborem w polu **preferowana grupa konserwatorów** lub w polu **preferowany konserwator**.
 
-![Rysunek 1](media/02-work-order-scheduling.png)
+![Rysunek 1.](media/02-work-order-scheduling.png)
 
 Można również skonfigurować *odpowiedzialnych* konserwatorów, którzy mogą być wybrani w momencie utworzenia zlecenia konserwacji lub zlecenia pracy. Można edytowac wszystkie wybory w **Wszystkie zlecenia pracy** i **Wszystkie żądania konserwacji** w razie potrzeby. Aby uzyskać więcej informacji należy zapoznać się z [Odpowiedzialni konserwatorzy](../setup-for-maintenance-requests/responsible-workers.md).
 

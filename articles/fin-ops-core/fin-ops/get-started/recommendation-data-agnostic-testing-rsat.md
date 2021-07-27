@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 120a88790b7cdb6a8cfcf97cbafeced4685384f2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4795d11ac370003e48dc845c86ec8a5ba22aa86
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744670"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348662"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Testowanie danych agnostycznych przy użyciu pola Regression Suite Automation Tool
 
@@ -30,9 +30,9 @@ Chociaż sprawdzenie funkcjonalne aplikacji ERP nie może być w pełni anostycz
 - Strukturę ATL
 - Regression Suite Automation Tool (RSAT)
 
-[![Piramida klasyfikacji testu](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Piramida klasyfikacji testu.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
-## <a name="overview"></a>Przegląd
+## <a name="overview"></a>Omówienie
 -   **SysTest Framework** — struktura SysTest jest godna zaufania do pisania testów jednostkowych. Ponieważ testy jednostkowe zwykle testuje metodę lub funkcję, powinny zawsze być agnostic i uzależnione od danych wejściowych dostarczanych w ramach testu.
 -   **Struktura ATL** — firma Microsoft ma strukturę ATL, która jest abstrakcyjna w strukturze SysTest i upraszcza tworzenie prostych i niezawodnych testów funkcjonalnych Te struktury powinny być używane do pisania testów składników lub testów integracji prostej.
 -   **RSAT** — składnik RSAT jest używany do testów integracji i testów cyklu biznesowego. Testy cyklu biznesowego, nazywane również testami sprawdzania poprawności regresji, są zależne od istniejących danych. Jednak te testy mogą stać się agnostic danymi, Jeśli rozważasz dodatkowe czynniki. 
@@ -42,7 +42,7 @@ Chociaż sprawdzenie funkcjonalne aplikacji ERP nie może być w pełni anostycz
     - O umożliwia wprowadzenie unikatowych identyfikatorów, takich jak numery faktur, za pomocą sekwencji numerów lub funkcji Microsoft Excel, takich jak =TEXT(NOW(),"yyyymmddhhmm"). Ta funkcja będzie dostarczać unikatowy numer co minutę, co pozwala śledzić czas wykonania akcji. Ta opcja może być używana dla zmiennych, takich jak numery dokumentów przyjęcia produktów i numery faktur dostawców. Te testy kontynuują pracę z tą samą bazą danych ponownie i ponownie, bez konieczności przywracania.
     - Należy zawsze ustawiać **tryb edycji** środowiska jako **odczytany** lub **edytowany** jako pierwszy przypadek testowy, ponieważ opcja domyślna to **automatyczne**. Opcje **automatyczne** zawsze korzystają z poprzedniego ustawienia i mogą powodować niezawodne testy 
  
-    [![Strona opcji, karta wydajności](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Strona opcji, karta wydajności.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Sprawdź tylko poprawność po filtrowaniu według określonej transakcji zamiast w ogólnym sprawdzaniu poprawności. Na przykład dla liczby rekordów należy filtrować numer transakcji lub datę transakcji, dzięki czemu sprawdzanie poprawności wyklucza wszystkie inne transakcje. 
     - W przypadku sprawdzania salda odbiorcy lub kontroli budżetu najpierw Zapisz wartość, a następnie Dodaj wartość transakcji, aby sprawdzić oczekiwany wynik, zamiast sprawdzać poprawność stałej oczekiwanej wartości. 

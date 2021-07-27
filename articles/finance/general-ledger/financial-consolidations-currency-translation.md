@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193912"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345387"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Omówienie konsolidacji finansowych i przeliczania walut
 
@@ -66,13 +67,13 @@ Oto kilka scenariuszy konsolidacji obsługiwanych przez narzędzie Konsolidacja 
 ## <a name="legal-entity-setup"></a>Konfiguracja firmy
 Przed rozpoczęciem przetwarzania konsolidacji należy skonfigurować firmę. Konsolidację można uruchamiać dowolną potrzebną liczbę razy, a wszystkie dane zostaną przeliczone z waluty rozliczeniowej firmy źródłowej na walutę zdefiniowaną dla konsolidowanej firmy. Dlatego dla poniższej struktury organizacyjnej należy przeliczyć wszystkie spółki w Ameryce Północnej najpierw na dolary amerykańskie (USD), a następnie na euro (EUR), czyli walutę firmy nadrzędnej, muszą istnieć co najmniej dwie konsolidowane firmy.
 
-![Struktura organizacyjna](./media/organizational-structure.png "Struktura organizacyjna")
+![Struktura organizacyjna.](./media/organizational-structure.png "Struktura organizacyjna")
 
 W powyższej strukturze organizacyjnej musi istnieć firma w celu skonsolidowania Ameryki Północnej, ponieważ konsolidacje zawsze odbywają się z waluty rozliczeniowej firmy źródłowej do waluty konsolidowanej firmy. W tym przykładzie jeżeli wszystkie firmy zostaną ujęte w jednym konsolidacji, filia meksykańska zostanie przeliczona z meksykańskich peso (MXN) na EUR, a nie z MXN na USD, a następnie na EUR.
 
 Podczas tworzenia firmy można określić, czy będzie ona używana w procesach konsolidacji i eliminacji, czy tylko w jednym z nich. Na poniższej ilustracji firma jest używana w obu procesach. Należy zauważyć, że nie można księgować arkuszy dziennych w konsolidowanej firmie, ale można je zaksięgować w firmie z wpisami eliminacji. W związku z tym warto utworzyć oddzielną firmę z wpisami eliminacji.
 
-![Firma, która jest używana zarówno do konsolidacji, jak i eliminacji](./media/sep-elimination-company.png "Firma, która jest używana zarówno do konsolidacji, jak i eliminacji")
+![Firma, która jest używana zarówno do konsolidacji, jak i eliminacji.](./media/sep-elimination-company.png "Firma, która jest używana zarówno do konsolidacji, jak i eliminacji")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Konta główne i grupy kont konsolidacyjnych
 Jednym z wyborów, jakich należy dokonać, jest sposób konsolidowania planu kont. W trakcie procesu konsolidacji możliwe są trzy opcje konsolidowania kont głównych.
@@ -81,11 +82,11 @@ Pierwszą opcją jest używanie kont głównych z firm źródłowych. W takim pr
 
 Druga opcja to określenie domyślnego konta konsolidacyjnego na stronie **Konta główne**. Następnie konto zostanie zamapowane na konto konsolidacyjne. Ta opcja może być przydatna, jeśli masz różne plany kont lub musisz zamapować na plan zdefiniowany przez centralę.
 
-![Domyślne konto konsolidacji określone na stronie konta główne](./media/main-accounts.png "Domyślne konto konsolidacji określone na stronie konta główne")
+![Domyślne konto konsolidacji określone na stronie konta główne.](./media/main-accounts.png "Domyślne konto konsolidacji określone na stronie konta główne")
 
 Trzecią opcją jest użycie grup kont konsolidacyjnych. Można zdefiniować dowolną potrzebną liczbę grup kont konsolidacyjnych. Następnie na stronie **Dodatkowe konta konsolidacji** można po prostu zamapować konto główne z planu kont do konta wymaganego dla tej grupy.
 
-![Mapowanie na stronie dodatkowe konta konsolidacji](./media/additional-consolidation-accounts.png "Mapowanie na stronie dodatkowe konta konsolidacji")
+![Mapowanie na stronie dodatkowe konta konsolidacji.](./media/additional-consolidation-accounts.png "Mapowanie na stronie dodatkowe konta konsolidacji")
 
 ## <a name="consolidating-online"></a>Konsolidowanie online
 Aby się dowiedzieć, jak wprowadzać szczegółowe informacje o konsolidacji w trybie online, zobacz [Konsolidacja finansowa online](./consolidate-online.md).
@@ -97,7 +98,7 @@ Aby wyświetlić wyniki konsolidacji, możesz skorzystać z różnych opcji:
 - Przejrzenie strony listy **Bilans próbny** w konsolidowanej firmie.
 - Na stronie **Konsolidacje** na liście transakcji konsolidacji wyświetlenie utworzonych sald z podziałem na daty dla każdej firmy źródłowej i każdego okresu.
 
-    ![Konsolidowanie transakcji na stronie konsolidacji](./media/managing-consolidation-transactions.png "Konsolidowanie transakcji na stronie konsolidacji")
+    ![Konsolidowanie transakcji na stronie konsolidacji.](./media/managing-consolidation-transactions.png "Konsolidowanie transakcji na stronie konsolidacji")
 
 Aby ponownie uruchomić konsolidację, wystarczy wykonać przetwarzanie konsolidacji. Alternatywnie można najpierw wybrać opcję **Usuń transakcje** na stronie **Konsolidacje**.
 Salda na skonsolidowanym koncie nie są dokładne, salda te można skorygować przy użyciu strony **Korekty okresu zamknięcia**.
@@ -118,7 +119,7 @@ Konfiguracja eliminacji znajduje się w obszarze **Ustawienia** w module **Konso
 
 Można ustawić daty, od kiedy i do kiedy reguła eliminacji ma obowiązywać. Jeśli reguła eliminacji ma być dostępna w procesie proponowania eliminacji, należy ustawić opcję **Aktywne** na **Tak**. Wybierz arkusz, który ma typ **Eliminacja**.
 
-![Podstawowe właściwości reguły eliminacji](./media/ledger-elimination-rule-journal.png "Podstawowe właściwości reguły eliminacji")
+![Podstawowe właściwości reguły eliminacji.](./media/ledger-elimination-rule-journal.png "Podstawowe właściwości reguły eliminacji")
 
 Po określeniu podstawowych właściwości kliknij przycisk **Wiersze** i zdefiniuj faktyczne reguły przetwarzania. Możliwe są dwie opcje eliminacji: eliminowanie kwoty zmiany netto lub zdefiniowanie stałej kwoty.
 
@@ -126,7 +127,7 @@ Wybierz konta źródłowe. Można użyć gwiazdki (\*) jako symbolu wieloznaczne
 
 Po wybraniu kont źródłowych należy w polu **Specyfikacja konta** określić używane konto z firmy docelowej. Wybierz opcję **Źródło**, aby używać tego samego konta głównego, jak zdefiniowane w polu konta źródłowego. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, należy określić konto docelowe.
 
-![Strona wiersza reguły eliminacji księgi](./media/ledger-elimination-rule-line.png "Strona wiersza reguły eliminacji księgi")
+![Strona wiersza reguły eliminacji księgi.](./media/ledger-elimination-rule-line.png "Strona wiersza reguły eliminacji księgi")
 
 Pole **Specyfikacja wymiaru** działa podobnie, jak pole **Specyfikacja konta**. Wybierz opcję **Źródło**, jeśli chcesz używać tych samych wymiarów w firmach docelowej i źródłowej. Jeśli wybierzesz opcję **Zdefiniowany przez użytkownika**, będzie trzeba określić wymiary w firmie docelowej, klikając opcję **Docelowe wymiary**. Następnie wybierz wymiary źródłowe i wymiary finansowe oraz wartości, które będą używane jako źródło eliminacji.
 
