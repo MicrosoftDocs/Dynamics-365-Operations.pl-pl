@@ -9,17 +9,19 @@ ms.technology: ''
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 28581
+ms.custom:
+- "28581"
+- intro-internal
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bafbb908531e003d2184409bf5d09ed5848fc474
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: a5e74b43bbeae011b2cde5c29d5a05aab28ec07e
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216792"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340067"
 ---
 # <a name="intrastat-overview"></a>Omówienie systemu Intrastat
 

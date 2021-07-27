@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261917"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338236"
 ---
 # <a name="finance-insights-home-page-preview"></a>Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261917"
 
 Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego. Gdy te nowe możliwości zostaną połączone z mechanizmami automatyzacji w funkcjach płatności dla dostawców i windykacji, powstaje rozbudowany i inteligentny system finansowy, który wspiera podejmowanie decyzji i pomaga podejmować działania w celu skutecznego reagowania na obecne i przewidywane wyzwania biznesowe.
 
-Wersja zapoznawcza Finance Insights jest dostępna dla wdrożeń próbnych w Stanach Zjednoczonych Ameryki, Europie i Zjednoczonym Królestwie. Firma Microsoft stopniowo zwiększa obsługę wielu regionów.
-
-Funkcje wersji zapoznawczej mogą być i powinny być włączone tylko w środowiskach piaskownicy warstwy 2. Nie można migrować ustawień i modeli sztucznej inteligencji (AI) utworzonych w środowisku piaskownicy do środowiska produkcyjnego. Aby uzyskać więcej informacji, zobacz [Uzupełniające warunki użytkowania wersji zapoznawczych Microsoft Dynamics 365](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Aplikacja Finance insights w wersji zapoznawczej jest dostępna do wdrożenia w Stanach Zjednoczonych Ameryki, Kanadzie, Wielkiej Brytanii, Europie, Azji i Pacyfiku, Australii i Nowej Zelandii. Firma Microsoft stopniowo zwiększa obsługę wielu regionów. Aby umożliwić wgląd w finanse na środowiskach produkcyjnych, należy najpierw włączyć możliwości [Eksport do Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) na środowisku produkcyjnym.
 
 > [!NOTE]
 > Ta funkcja jest oferowana jako zestaw funkcji w wersji zapoznawczej. Wynikowe modele uczenia maszynowego nie powinny mieć wpływu na decyzje biznesowe i propozycje budżetowania, a jako funkcji w wersji zapoznawczej. Korzystanie z tej funkcji podlega [uzupełniającym warunkom użytkowania](https://go.microsoft.com/fwlink/?linkid=2105274).
@@ -46,7 +47,7 @@ Aby zawnioskować o udział w programie zapoznawczym, wypełnij [umowę na korzy
 
 ### <a name="system-requirements"></a>Wymagania systemowe
 
-Do korzystania z wersji zapoznawczej modułu Szczegółowe dane finansowe jest wymagane środowisko piaskownicy warstwy 2 (wielostanowiskowe). Aby uzyskać informacje kontekstowe o środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Do korzystania z wersji zapoznawczej modułu Szczegółowe dane Finance jest wymagane środowisko warstwy 2 (wielostanowiskowe). Aby uzyskać informacje kontekstowe o środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Wymagania dotyczące wersji
 
@@ -55,8 +56,6 @@ Ten dokument dotyczy wersji 10.0.11 aplikacji rozwiązania Finance and Operation
 ### <a name="historical-data-requirements"></a>Wymagania dotyczące danych historycznych
 
 Do poprawnego wytrenowania modelu uczenia maszynowego, który jest używany przez funkcję prognozowania płatności od odbiorców, są potrzebne faktury od odbiorców co najmniej z jednego roku.
-
-Przykładowe dane są dostępne w systemach demonstracyjnych zawierających zestaw danych demonstracyjnych firmy Contoso.
 
 ### <a name="role-and-permission-requirements"></a>Wymagania dotyczące roli i uprawnień
 
@@ -72,7 +71,7 @@ Podczas wykonywania tego procesu będzie pomocna znajomość procesu tworzenia z
 ## <a name="configure-finance-insights"></a>Konfigurowanie szczegółowych danych finansowych
 
 Aby móc skorzystać z modułu Szczegółowe dane finansowe, musisz wykonać kilka kroków konfiguracyjnych. Aby uzyskać więcej informacji dotyczących sposobu konfigurowania Finance Insights, zobacz:
-  - Dla wersji do 10.0.19: [konfiguracja dla Finance insights — do wersji 10.0.19](configure-for-fin-insites.md).
+  - Dla wersji do 10.0.19: [konfiguracja dla Finance insights (wersja zapoznawcza) — do wersji 10.0.19](configure-for-fin-insites.md).
   - W przypadku wersji 10.0.20 i dalszych: [konfiguracja Finanse Insights (wersja zaponawcza) — wersje 10.0.20 i dalsze](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Tworzenie projektu integratora danych

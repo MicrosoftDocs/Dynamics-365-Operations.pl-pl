@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222619"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309672"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfiguracja dla Finance Insights w ramach publicznej wersji zapoznawczej (podglądowej) — wersja 10.0.20 i późniejsze
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222619"
 Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie wyjaśniono, jak skonfigurować Dynamics 365 Finance w wersji 10.0.20, aby system korzystał z możliwości dostępnych w programie Finance Insights dla publicznego podglądu w wersji 10.0.20 i nowszych.
 
 > [!NOTE]
-> Kroki konfiguracyjne opisane w tym temacie dotyczą tylko wersji Finance 10.0.20 i nowszych. Aby skonfigurować Finance Insights w wersji 10.0.19 i wcześniejszych, patrz [Konfiguracja Finance Insights — wersje do 10.0.18](configure-for-fin-insites.md).
+> Kroki konfiguracyjne opisane w tym temacie dotyczą tylko wersji Finance 10.0.20 i nowszych. Aby skonfigurować Finance Insights w wersji 10.0.19 i wcześniejszych, patrz [Konfiguracja Finance Insights — wersje do 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Wdrażanie Finance
 
@@ -748,6 +748,8 @@ Aby zainstalować dodatek Finanse Insights, należy wykonać następujące kroki
 2. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 3. Konfigurowanie dodatku **Finance Insights**.
 4. Zaakceptuj warunki i wybierz opcję **Zainstaluj**.
+
+Instalacja dodatku może potrwać kilka minut.
 
 ## <a name="feedback-and-support"></a>Opinie i pomoc techniczna
 

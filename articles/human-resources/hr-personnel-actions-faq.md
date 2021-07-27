@@ -2,7 +2,7 @@
 title: Akcje dotyczące pracowników — często zadawane pytania
 description: Ten artykuł zawiera odpowiedzi na pytania, które mogą się pojawić, jeśli organizacja używa akcji dotyczących pracowników. Akcje dotyczące pracowników są to dodatkowe kroki, które należy wykonać podczas wykonywania pewnych zadań związanych z pracownikami.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054555"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333026"
 ---
 # <a name="personnel-actions-faq"></a>Akcje dotyczące pracowników — często zadawane pytania
 
@@ -51,7 +51,7 @@ Akcje dotyczące pracowników mogą mieć następujące stany:
 - **Odmowa** — Żądanie akcji zostało odrzucone przez osobę zatwierdzającą.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Czy można usunąć akcję dotyczącą pracowników?
-Tak, można usuwać akcje dotyczące pracowników, które mają stan **Wersja robocza**, **Błąd**, **Niepowodzenie** lub **Anulowano**.
+Tak, można usuwać akcje dotyczące pracowników, które mają stan **Wersja robocza**, **Błąd**, **Niepowodzenie** lub **Anulowano**. Akcje dotyczące pracowników o stanie **Zakończono** można usuwać tylko wtedy, gdy jest ustawiona opcja **Zezwalaj na usuwanie zakończonych akcji pracowników** na **Tak** na stronie **Udostępniane parametry zasobów ludzkich**.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Jak najszybciej można sprawdzić stan żądania akcji dotyczących pracowników?
 Otwórz jakiekolwiek strony listy akcji dotyczących pracowników i wybierz akcję dotyczącą pracowników.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
-ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
+ms.openlocfilehash: 1d73a382f1786a73a5af917b28d00384ecc36aa8
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6026212"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309773"
 ---
 # <a name="set-up-postdated-checks"></a>Konfigurowanie czeków postdatowanych
 
@@ -58,6 +58,7 @@ Rolą w tej procedurze jest Skarbnik. Ta procedura wykorzystuje firmę demonstra
 > 
 > Podczas ustawiania **Metody płatności** (**Rozrachunki z dostawcami > Ustawienia płatności > Metody płatności**) nie należy wypełniać **konta pomostowego**. W tym przypadku konto przeciwstawne jest wypełniane kontem bankowym ustawionym w formularzu **Metoda płatności**.
 >  
-> Gdy funkcja jest włączona, a data sesji jest wcześniejsza niż data zapadalności, podczas księgowania arkusza płatności wyświetlany jest następujący komunikat o błędzie: „Data zapadalności musi być mniejsza lub równa dacie sesji, jeśli typ konta przeciwstawnego to Bank”. Jeśli funkcja nie jest włączona, można zaksięgować arkusz płatności z postdatowanym czekiem, gdy data sesji jest wcześniejsza niż data zapadalności.    
+> Gdy funkcja jest włączona, a data sesji jest wcześniejsza niż data zapadalności, podczas księgowania arkusza płatności wyświetlany jest następujący komunikat o błędzie: „Data zapadalności musi być mniejsza lub równa dacie sesji, jeśli typ konta przeciwstawnego to Bank”. Jeśli funkcja nie jest włączona, można zaksięgować arkusz płatności z postdatowanym czekiem, gdy data sesji jest wcześniejsza niż data zapadalności.
+> Ta funkcja jest włączana w wersji 10.0.21 i nowsze.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
