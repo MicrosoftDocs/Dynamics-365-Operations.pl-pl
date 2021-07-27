@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893987"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351753"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Pobieranie konfiguracji ER z globalnego repozytorium usługi Configuration service
 
@@ -40,7 +40,7 @@ W tym temacie opisano sposób pobierania [konfiguracji raportowania elektroniczn
 3. W obszarze **Dostawcy konfiguracji** wybierz kafelek **Microsoft**.
 3. Na kafelku **Microsoft** wybierz **Repozytoria**.
 
-    ![Obszar roboczy raportowania elektronicznego](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Obszar roboczy raportowania elektronicznego.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. Na stronie **Repozytoria konfiguracji** w siatce zaznacz istniejące repozytorium typu **Globalne**. Jeśli to repozytorium nie jest wyświetlane w siatce, wykonaj następujące kroki:
 
@@ -52,7 +52,7 @@ W tym temacie opisano sposób pobierania [konfiguracji raportowania elektroniczn
 
 5. Wybierz **Otwórz**, aby wyświetlić listę konfiguracji modułu ER dla wybranego repozytorium.
 
-    ![Strona repozytorium konfiguracji](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Strona repozytorium konfiguracji.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importowanie pojedyńczej konfiguracji
 
@@ -63,7 +63,7 @@ W tym temacie opisano sposób pobierania [konfiguracji raportowania elektroniczn
     > [!NOTE]
     > Przycisk **Importuj** jest niedostępny dla wersji konfiguracji ER, które już się znajdują w bieżącym wystąpieniu Finance.
 
-    ![Strona Repozytorium konfiguracji](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Strona Repozytorium konfiguracji.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importowanie filtrowanej konfiguracji
 
@@ -77,7 +77,7 @@ W tym temacie opisano sposób pobierania [konfiguracji raportowania elektroniczn
 4. Na skróconej karcie **Konfiguracje** wybierz opcję **Importuj**, aby pobrać przefiltrowane konfiguracje z repozytorium globalnego do bieżącego wystąpienia.
 5. Na skróconej karcie **Konfiguracji** wybierz opcję **Resetuj filtr**, aby wyczyścić określone warunki wyboru.
 
-    ![Strona Repozytorium konfiguracji](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Strona Repozytorium konfiguracji.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > W zależności od ustawień ER podczas importowania konfiguracji jest sprawdzana ich poprawność. Możesz otrzymywać powiadomienia o wszelkich wykrytych problemach z niespójnością. Zanim będzie można użyć zaimportowanej wersji konfiguracji, należy rozwiązać problemy. Aby uzyskać więcej informacji, zobacz listę pokrewnych zasobów do tego tematu.

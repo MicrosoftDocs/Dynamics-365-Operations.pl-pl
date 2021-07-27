@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753295"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355425"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Projektowanie konfiguracji raportowania elektronicznego w celu wypełniania szablonów w formacie PDF
 
@@ -115,11 +115,11 @@ W dowolnej przeglądarce plików PDF otwórz pobrane szablony PDF. Należy zauwa
 
 Poniższa ilustracja przedstawia szablon PDF dla pierwszej strony raportu.
 
-![Szablon 1](media/rcs-ger-filloutpdf-template1.png)
+![Szablon 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Poniższa ilustracja przedstawia szablon PDF dla innych stron raportu.
 
-![Szablon 2](media/rcs-ger-filloutpdf-template2.png)
+![Szablon 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. Na stronie **Konfiguracje** wybierz opcję **Projektant**.
 2. Wybierz **Dodaj element główny**.
@@ -146,7 +146,7 @@ Poniższa ilustracja przedstawia szablon PDF dla innych stron raportu.
 
 12. Kliknij przycisk **OK**.
 
-    ![Okno dialogowe Importowanie z pliku PDF](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Okno dialogowe Importowanie z pliku PDF.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. W drzewie rozwiń **Dane wyjściowe**.
 
@@ -176,7 +176,7 @@ Poniższa ilustracja przedstawia szablon PDF dla innych stron raportu.
 
     Należy zauważyć, że importowany dokument PDF jest dołączony do edytowanego formatu raportowania elektronicznego.
 
-    ![Podgląd załącznika PDF](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Podgląd załącznika PDF.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Kontynuuj projektowanie tego formatu przez zaimportowanie drugiego szablonu PDF, dodanie niezbędnych powiązań do źródeł danych itd.
 20. Wybierz opcję **Zapisz**.
@@ -215,7 +215,7 @@ Następnie zaimportuj przykładowy, pobrany wcześniej format raportowania elekt
 1. Na stronie **Projektant formatów** wybierz kartę **mapowanie.**
 2. W drzewie rozwiń węzeł **Stronicowanie \> Strony**.
 
-    ![Strona projektanta formuł z rozwiniętym drzewem modelu](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Strona projektanta formuł z rozwiniętym drzewem modelu.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Warto pamiętać o następujących szczegółach:
 
@@ -238,7 +238,7 @@ Następnie zaimportuj przykładowy, pobrany wcześniej format raportowania elekt
 
     Zauważ, że atrybut **nazwy** tego elementu formatu jest zdefiniowany jako **Korekta 1.** Należy również zauważyć, że wyrażenie **nazwy** elementu formatu jest zdefiniowane jako **Paging.FldName("Correction", \@. Number)**.
 
-![Projektant formatów, w którym wybrano mapowanie](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Projektant formatów, w którym wybrano mapowanie.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Należy zauważyć, że element formatu **pola** służy do wypełniania pojedynczego pola w dokumencie PDF, który jest zdefiniowany jako szablon nadrzędnego elementu formatu **pliku PDF**. Powiązanie elementu formatu pliku **Plik PDF** lub elementów zagnieżdżonych, jeśli zawiera jakiekolwiek zagnieżdżone elementy, określa wartość wprowadzoną w odpowiednich polach PDF. Różne właściwości element formatu **Pola** można wykorzystywać do określenia, które pole pliku PDF zostanie wypełnione przez poszczególne elementy formatu:
 
@@ -275,7 +275,7 @@ Następnie zostanie załadowany przykładowy format raportowania elektronicznego
 
     Jeśli opcja **domyślnego mapowania modelu** jest ustawiona jako **tak**, zaimportowany format raportowania elektronicznego **Intrastat (import z programu Excel)** jest przypisywany jako domyślne źródło danych dla konfiguracji formatu **Raport Intrastat (PDF)**. Następnie, gdy zostanie uruchomiona konfiguracja formatu **raportu Intrastat (PDF)**, zawartość skoroszytu programu Excel, która jest analizowana przez format systemu **Intrastat (import z programu Excel)**, będzie symulować transakcje handlu zagranicznego, które muszą być zgłoszone. Na poniższej ilustracji pokazano przykład skoroszytu programu Excel.
 
-    ![Skoroszyt programu Excel zawierający przykładowe dane](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Skoroszyt programu Excel zawierający przykładowe dane.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Uruchom konfigurację formatu
 
@@ -289,11 +289,11 @@ Następnie zostanie załadowany przykładowy format raportowania elektronicznego
 
 Na poniższej ilustracji przedstawiono przykład pierwszej strony generowanego raportu.
 
-![Pierwsza strona wygenerowanego raportu](media/rcs-ger-filloutpdf-generatedreport.png)
+![Pierwsza strona wygenerowanego raportu.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Na poniższej ilustracji przedstawiono przykład innej strony generowanego raportu.
 
-![Inna strona wygenerowanego raportu](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Inna strona wygenerowanego raportu.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

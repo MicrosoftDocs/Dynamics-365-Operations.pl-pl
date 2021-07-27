@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750625"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346503"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
@@ -39,11 +39,11 @@ W obu przypadkach dane dostawcy są zintegrowane między Dynamics 365 Supply Cha
 
 Jeśli nie chcesz przechowywać danych dostawcy w tabeli **Konto/kontakt** w Dataverse, możesz użyć nowego projektu dostawcy.
 
-![Przepływ danych dostawcy](media/dual-write-vendor-data-flow.png)
+![Przepływ danych dostawcy.](media/dual-write-vendor-data-flow.png)
 
 Jeśli chcesz dalej przechowywać dane dostawcy w tabeli **Konto/kontakt**, możesz użyć rozszerzonego projektu dostawcy. Aby skorzystać z rozszerzonego projektu dostawcy, należy skonfigurować przepływy pracy dostawcy w pakiecie rozwiązania podwójnego zapisywania. Aby uzyskać więcej informacji, zajrzyj do [Przełączanie się między projektami dostawcy](vendor-switch.md).
 
-![Rozszerzony przepływ danych dostawcy](media/dual-write-vendor-detail.jpg)
+![Rozszerzony przepływ danych dostawcy.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Jeśli korzystasz z portali Power Apps dla dostawców samoobsługowych, informacje o dostawcy mogą przepływać bezpośrednio do aplikacji Finance and Operations.

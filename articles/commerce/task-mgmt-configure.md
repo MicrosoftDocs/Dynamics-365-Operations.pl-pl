@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1abcc4befd1277d7f08d3dfa89cb76b0ee4a6178
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791709"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354572"
 ---
 # <a name="configure-task-management"></a>Konfigurowanie zarządzania zadaniami
 
@@ -44,7 +44,7 @@ Aby skonfigurować uprawnienia zarządzania zadaniami dla menedżerów sklepów,
 
 Poniższa ilustracja pokazuje, jak skonfigurować uprawnienia do zarządzania zadaniami dla menedżerów sklepów.
 
-![Konfigurowanie uprawnienia zarządzania zadaniami dla menedżerów sklepów](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Konfigurowanie uprawnienia zarządzania zadaniami dla menedżerów sklepów.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Konfigurowanie uprawnień pracowników
 
@@ -78,7 +78,7 @@ Aby skonfigurować powiadomienia punktu sprzedazy dla zadań, wykonaj poniższe 
 
 Na poniższej ilustracji przedstawiono operację **Zarządzania zadaniami** na stronie **Operacje punktu sprzedaży**.
 
-![Operacja zarządzania zadaniami na stronie operacji punktu sprzedaży](media/HQ-POS-Tasks-Notifications.png)
+![Operacja zarządzania zadaniami na stronie operacji punktu sprzedaży.](media/HQ-POS-Tasks-Notifications.png)
 
 Aby uzyskać więcej informacji o konfigurowaniu powiadomień punktu sprzedaży, zapoznaj się z tematem [Pokazywanie powiadomień o zamówieniach w aplikacji punktu sprzedaży (POS)](notifications-pos.md).
 
@@ -95,7 +95,7 @@ Aby skonfigurować kafelek **Zadania** na stronie głównej aplikacji punktu spr
 
 Poniższa ilustracja przedstawia przykład kafelka **Zadania** na stronie głównej punktu sprzedaży.
 
-![Kafelek zadań na stronie głównej punktu sprzedaży](media/POS-home-screen-tasks-button-image.png)
+![Kafelek zadań na stronie głównej punktu sprzedaży.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

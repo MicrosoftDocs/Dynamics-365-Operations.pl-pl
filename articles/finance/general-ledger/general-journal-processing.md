@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352865"
 ---
 # <a name="general-journal-processing"></a>Przetwarzanie arkuszy finansowych
 
@@ -42,14 +42,14 @@ Na stronie **Nazwy arkuszy** można skonfigurować następujące elementy:
 
 Nazwa arkusza może być używana tylko do korekt. W takim przypadku można wskazać, że dla wszystkich firm ważne jest tylko konto typu **Księga**. 
 
-[![Typy kont kontroli arkusza](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Typy kont kontroli arkusza.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Nazwa arkusza może być używana tylko dla określonego segmentu lub w określonym zakresie dla kont głównych. 
 
-[![Segment kontroli arkusza](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Segment kontroli arkusza.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Opcja **Automatyczne stornowanie** jest dostępna w arkuszach finansowych. Na przykład użytkownik ma korektę naliczania, jeśli dokument nie został jeszcze przetworzony, jak pokazano na poniższej ilustracji.
-[![Stornowanie arkusza finansowego](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Wycofywanie arkusza finansowego.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Dodatek programu Microsoft Excel z funkcjonalnością wpisów arkusza oferuje dodatkowy poziom automatyzacji i ułatwia wprowadzanie danych. Działanie **Otwórz wiersze w programie Excel** jest dostępne na stronach **Arkusz finansowy** i **Załącznik arkusza**. 
 

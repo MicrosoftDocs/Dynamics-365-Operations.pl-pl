@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ea9105481e6c5812565f0d3604906c905bcb5443
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 593c1bdb502330c5dc9f26254dbed809cea7651b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018513"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347399"
 ---
 # <a name="credit-card-entry-page-shows-an-error-at-checkout"></a>Strona wprowadzania karty kredytowej pokazuje błąd podczas realizacji zamówienia
 
@@ -32,9 +32,9 @@ Ten temat zawiera wskazówki dotyczące rozwiązywania problemów, które mogą 
 
 Po otwarciu strony realizacji zamówienia dla sklepu internetowego sekcja **Metoda płatności** nie jest załadowana i wyświetlany jest następujący komunikat o błędzie: „Wystąpił błąd. Spróbuj ponownie później”.
 
-![Błąd Moduł płatności](media/payment-module-error.jpg)
+![Błąd Moduł płatności.](media/payment-module-error.jpg)
 
-## <a name="resolution"></a>Rozdzielczość
+## <a name="resolution"></a>Rozwiązanie
 
 ### <a name="wait-for-the-commerce-scale-unit-cache-to-expire"></a>Oczekiwanie na wygaśnięcie pamięci podręcznej jednostki Commerce Scale Unit
 

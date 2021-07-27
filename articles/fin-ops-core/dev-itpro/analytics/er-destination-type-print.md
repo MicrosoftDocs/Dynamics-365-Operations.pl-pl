@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b79c93c4920d7f40e88aa7d463961128ea9e83c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894011"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347931"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Miejsce docelowe — drukarka
 
@@ -39,9 +39,9 @@ Aby udostępnić **drukarkę** jako miejsce docelowe w bieżącej instancji rozw
 1. Konwertuj dokumenty wychodzące raportowania elektronicznego z formatów Microsoft Office na PDF
 2. Agent rozsyłania dokumentów jako cel raportowania elektronicznego dla dokumentów wychodzących
 
-[![Włączanie funkcji lokalizacji docelowej drukarka ER w module Zarządzanie funkcjami](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Włączanie funkcji lokalizacji docelowej drukarka ER w module Zarządzanie funkcjami.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
-### <a name="applicability"></a>Możliwość zastosowania
+### <a name="applicability"></a>Możliwość stosowania
 
 Lokalizację docelową **Drukarka** można skonfigurować tylko dla składników plików używanych do generowania danych wyjściowych w formacie PDF (format PDF lub w formacie PDF) lub Microsoft Office Excel / formacie Word (plik programu Excel). Jeśli dane wyjściowe są generowane w formacie PDF, są one wysyłane do drukarki. Jeśli dane wyjściowe są generowane w formacie Microsoft Office, są automatycznie konwertowane na format PDF, a następnie wysyłane na drukarkę.
 
@@ -55,7 +55,7 @@ Lokalizacja docelowa **Drukarka** jest zaimplementowana tylko dla wdrożeń w ch
 2. W polu **Nazwa drukarki** wybierz żądaną drukarkę sieciową.
 3. Ustawienie parametrt **Zapisywanie w archiwum drukowania?** na wartość **Tak** spowoduje przechowywanie wygenerowanych danych wyjściowych w archiwum drukowania, tak aby było dostępne do dalszego drukowania. Aby później uzyskać dostęp do zarchiwizowanych danych wyjściowych **Zarządzanie organizacją** \> **Raporty i zapytania** \> **Archiwum raportów**.
 
-[![Używanie miejsca docelowego drukarka](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Używanie miejsca docelowego drukarka.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > Opcja **Konwertuj na plik PDF** nie musi być włączona podczas konfigurowania miejsca docelowego **Drukarka**. Konwersja plików PDF na potrzeby drukowania nastąpi nawet wtedy, gdy opcja jest wyłączona.

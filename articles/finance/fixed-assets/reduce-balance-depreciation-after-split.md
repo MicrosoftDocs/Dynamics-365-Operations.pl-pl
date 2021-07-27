@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356782"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Amortyzacja degresywna po podzieleniu
 
@@ -37,7 +37,7 @@ Na przykład istnieją następujące okoliczności:
 - Amortyzacja w pierwszym roku obrachunkowym wynosi 18 000 zł, amortyzacja miesięczna wynosi 150 zł, a składnik majątku jest następnie amortyzowany do listopada 2019 r. na kwotę 738,75 zł.
 - W listopadzie 2019 r. 80 procent składnika majątku zostało podzielone na inny składnik majątku.
 
-[![Amortyzacja degresywna po podzieleniu](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Amortyzacja degresywna po podzieleniu.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Kwota amortyzacji pierwotnego składnika majątku wynosi 1822,25 zł. Ta kwota jest równa NBV przed zaksięgowaniem transakcji podziału (9111,25 zł) powiększonej o korektę wartości początkowej wygenerowaną podczas księgowania transakcji podziału (-8000 zł) oraz korektę amortyzacji wygenerowaną w trakcie transakcji podziału (711 zł). W efekcie amortyzacja za drugi rok wynosi (1822,25 × 18 procent) ÷ 12 = 27,33 zł.
 

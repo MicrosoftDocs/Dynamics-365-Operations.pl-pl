@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: f62772351d985ab4c1319acde19def2d8fb551ca
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 4bad102224f05e97ff7b83534d6796fbbb67874e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348860"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilny obszar roboczy Dostępne zapasy
 
@@ -105,7 +105,7 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 3.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 4.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-    [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Ściąganie w celu odświeżenia.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>Wyświetlanie dostępnych zapasów produktu za pomocą mobilnego obszaru roboczego Dostępne zapasy
 

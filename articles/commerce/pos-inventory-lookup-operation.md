@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025455"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353787"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Operacja wyszukiwania zapasów w POS
 
@@ -45,7 +45,10 @@ W przypadku pojedynczego produktu operacja wyszukiwania zapasów udostępnia wid
 
 Widok listy lokalizacji zawiera wszystkie sklepy i magazyny skonfigurowane w grupach realizacji, z którym jest połączony bieżący sklep, jak pokazano na poniższym przykładzie.
 
-![Widok listy operacji wyszukiwania zapasów](media/inventory-lookup-list-view.png)
+![Widok listy operacji wyszukiwania zapasów.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Upewnij się, że bieżący sklep jest uwzględniony w skojarzonych grupach realizacji.
 
 Na pasku aplikacji POS są dostępne następujące akcje:
 
@@ -65,7 +68,7 @@ Na pasku aplikacji POS są dostępne następujące akcje:
 - **Dodaj do transakcji** — ta akcja powoduje dodanie produktu do koszyka i przekierowywanie użytkownika do ekranu transakcji.
 
 > [!NOTE]
-> W przypadku sortowania opartego na lokalizacjach odległość między lokalizacją a bieżącym sklepem jest określana na podstawie współrzędnych (szerokości geograficznej i długości) zdefiniowanych w programie Commerce Headquarters. W przypadku sklepu informacje o lokalizacji są definiowane w podstawowym adresie jednostki operacyjnej skojarzonej ze sklepem. W przypadku magazynu, który nie jest magazynem sklepowym, informacje o lokalizacji są zdefiniowane w adresie magazynu. Jeśli dla bieżącego sklepu nie są poprawnie zdefiniowane współrzędne, opcja sortowania według lokalizacji spowoduje wyświetlenie bieżącego sklepu na początku listy, a następnie posortowanie innych lokalizacji według nazwy.
+> W przypadku sortowania opartego na lokalizacjach odległość między lokalizacją a bieżącym sklepem jest określana na podstawie współrzędnych (szerokości geograficznej i długości) zdefiniowanych w programie Commerce Headquarters. W przypadku sklepu informacje o lokalizacji są definiowane w podstawowym adresie jednostki operacyjnej skojarzonej ze sklepem. W przypadku magazynu, który nie jest magazynem sklepowym, informacje o lokalizacji są zdefiniowane w adresie magazynu. Jeśli dla bieżącego sklepu nie są zdefiniowane współrzędne, opcja sortowania według lokalizacji spowoduje wyświetlenie bieżącego sklepu na początku listy, a następnie posortowanie innych lokalizacji według nazwy.
 
 > [!NOTE]
 > Akcje **Pokaż dostępność sklepu**, **Pokaż lokalizację sklepu**, **Odbiór w sklepie** i **Wyślij produkt** są niedostępne w lokalizacjach poza sklepem.
@@ -76,7 +79,7 @@ W przypadku produktu głównego z wariantami operacja wyszukiwania zapasów udos
 
 Poniższy przykładowy obraz przedstawia widok macierzy wyszukiwania zapasów w programie POS.
 
-![Widok macierzy operacji wyszukiwania zapasów](media/inventory-lookup-matrix-view.png)
+![Widok macierzy operacji wyszukiwania zapasów.](media/inventory-lookup-matrix-view.png)
 
 W widoku macierzy każda komórka reprezentuje indywidualny wariant i wyświetla stan zapasów (dostępna fizyczna) w prawym dolnym rogu, a także wartości **zarezerwowane** (zarezerwowane fizycznie) i **zamówione** (łącznie) w górnym -lewy róg. Poniższa tabela wyjaśnia znaczenie różnych dostępnych wartości.
 
@@ -103,7 +106,7 @@ Użytkownicy punktu dostępu mogą uzyskać dostęp do operacji wyszukiwania zap
 
 Poniższy przykładowy obraz przedstawia wyniki wyszukiwania zapasów z PDP w punkcie sprzedaży.
 
-![Wyszukiwania zapasów ze strony szczegółów produktu](media/inventory-lookup-from-product-details-page.png)
+![Wyszukiwania zapasów ze strony szczegółów produktu.](media/inventory-lookup-from-product-details-page.png)
 
 W pdp produktu głównego można użyć akcji **Wyświetlanie wszystkich wariantów** na pasku aplikacji w celu uruchomienia widoku macierzy wyszukiwania zapasów, w którym są wyświetlane informacje o dostępności zapasów dla bieżącego sklepu dla wszystkich wariantów produktu. W przypadku pojedynczego produktu pdP wyświetla wartość dostępnych zapasów (fizycznie dostępnych) tego produktu dla bieżącego sklepu. Dodatkowo można zaznaczyć łącze **Inne zapasy sklepów**, aby uruchomić operację wyszukiwania zapasów, aby sprawdzić dostępność zapasów produktu w innych sklepach lub magazynach.
 

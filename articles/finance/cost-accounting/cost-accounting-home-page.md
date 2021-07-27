@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace, CAMAXCostAccountingSetupWizard
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 256254
+ms.custom:
+- "256254"
+- intro-internal
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3485818ff67e20a5354e4bebc4903faaa36f6286
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3420c4074631749778ef0393642ade526fc0fc7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355258"
 ---
 # <a name="cost-accounting-home-page"></a>Rachunek kosztów — strona główna
 
@@ -30,7 +32,7 @@ ms.locfileid: "5841124"
 
 Poniższa mapa szkoleń przedstawia najważniejsze koncepcje i zadania tworzące strukturę modułu Rachunek kosztów. Kliknij łącza w sekcji [Szybkie łącza](#quick-links), aby dowiedzieć się, jak używać tego modułu.
 
-[![Mapa szkoleń na temat rachunku kosztów](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
+[![Mapa szkoleń na temat rachunku kosztów.](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Szybkie łącza
 

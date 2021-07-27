@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188004"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355042"
 ---
 # <a name="overhead-calculation"></a>Obliczenie narzutu
 
@@ -48,7 +48,7 @@ W obliczaniu kosztów ogólnych następuje wykonanie zasad rachunku kosztów w o
 
 Obliczanie kosztów ogólnych jest uruchamiane niezależnie od wersji. W związku z tym można obliczyć wersję budżetową przed wersją rzeczywistą. Obliczanie kosztów ogólnych składa się z czterech etapów, jak pokazano na poniższej ilustracji. Na każdym etapie jest tworzony nagłówek arkusza z zapisami w arkuszu. Ten nagłówek arkusza przechowuje dane wejściowe dla każdego etapu obliczeń. Zasady i reguły są stosowane do każdego wiersza arkusza, a jako dane wyjściowe są generowane wpisy kosztów. Dlatego zawsze masz pełną identyfikację źródeł wyników obliczania kosztów. 
 
-[![Obliczanie kosztów ogólnych](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Obliczenie narzutu.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Obliczanie i przypisywanie kosztów ogólnych energii elektrycznej
 W rachunkowości finansowej niektóre koszty, takie jak energii elektrycznej, są rejestrowane jako ryczałt. W związku z tym menedżerowie nie mają szczegółowego wglądu w te dane w rachunku kosztów. Aby w module Rachunek kosztów zapewnić poprawne prezentowanie informacji kierownictwu we wszystkich jednostkach organizacyjnych i na wszystkich poziomach, koszty muszą przepływać przez jednostki organizacyjne. Ten przepływ musi się opierać na dokładnym rejestrze zużycia lub na uczciwej ocenie. W księdze głównej koszty energii elektrycznej mogą być księgowane w sposób pokazany w poniższej tabeli.
@@ -618,7 +618,7 @@ Aby uzyskać więcej informacji, zobacz [Obliczanie kosztów ogólnych](cost-rol
 
 Alokacja jest używana w celu alokowania salda obiektu kosztów do innych obiektów kosztów poprzez zastosowanie podstawy alokacji. Aplikacja Finance obsługuje metody wzajemnej alokacji. W metodzie alokacji wzajemnej są w pełni wykazywane wzajemne usługi, jakie między sobą wymieniają pomocnicze obiekty kosztów. System automatycznie ustala kolejność, w jakiej ma zostać wykonana alokacja. Saldo obiektu kosztów jest alokowane przy użyciu jednej podstawy alokacji. Są obsługiwane alokacje między wymiarami obiektów kosztów i ich elementami członkowskimi. Kolejność alokacji jest kontrolowana przez jednostkę kontroli kosztów. 
 
-[![Metoda wzajemna](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Metoda wzajemna.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definiowanie alokacji kosztów
 

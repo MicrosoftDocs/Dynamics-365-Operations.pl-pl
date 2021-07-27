@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7b97eca8c2d4fe9f71c3cd8f1e40a3bbb7ee4879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348423"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Obsługa funkcji podatków dla zamówień przeniesienia
 
@@ -40,7 +40,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
 
 1. Na stronie **Funkcje podatkowe** na karcie **Wersje** wybierz wersję roboczą funkcji, a następnie wybierz pozycję **Edytuj**.
 
-    ![Wybieranie edycji](../media/tax-feature-support-01.png)
+    ![Wybieranie edycji.](../media/tax-feature-support-01.png)
 
 2. Na stronie **Ustawienia funkcji podatków**, na karcie **Kody podatków** wybierz opcję **Dodaj**, aby utworzyć nowe kody podatków. W tym przykładzie tworzone są trzy kody podatków:**NL-Exempt**, **BE-RC-21** i **BE-RC+21**.
 
@@ -53,7 +53,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         4. Na karcie **Stawka** wybierz **Dodaj**.
         5. Przełącz **Jest zwolniony** na **Tak** w sekcji **Ogólne**.
 
-        ![Kod zwolnienia z podatku (NL)](../media/tax-feature-support-02.png)
+        ![Kod zwolnienia z podatku (NL).](../media/tax-feature-support-02.png)
 
     - Gdy zamówienie przeniesienia zostanie odebrane w magazynie belgijskim, mechanizm opłaty zwrotnej jest stosowany przy użyciu kodów podatków **BE-RC-21** i **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         6. Czy swtich **Wsteczna opłata** z **Tak** w sekcji **Ogólne**.
         7. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC-21 dla opłat zwrotnych](../media/tax-feature-support-03.png)
+        ![Kod podatku BE-RC-21 dla opłat zwrotnych.](../media/tax-feature-support-03.png)
         
         Utwórz kod podatku **BE-RC+21**.
         1. Wybierz opcję **Dodaj** i wprowadź numer **BE-RC-21** w polu **Kod podatku**.
@@ -76,7 +76,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         5. Wprowadź **21** w polu **Stawka podatku**.
         6. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC+21 dla opłat zwrotnych](../media/tax-feature-support-04.png)
+        ![Kod podatku BE-RC+21 dla opłat zwrotnych.](../media/tax-feature-support-04.png)
 
 3. Zdefiniuj możliwości zastosowania kodów podatków.
 
@@ -105,11 +105,11 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         6. W polu **Kody podatków** wybierz **BE-RC+21** i **BE-RC-21**.
         7. W polach **Grupa podatków** i **Grupa podatków dla pozycji** wprowadź powiązaną grupę podatków i grupę podatków dla towaru zdefiniowaną w systemie Finance.
 
-        ![Reguły zastosowania](../media/image5.png)
+        ![Reguły zastosowania.](../media/image5.png)
 
 4. Ukończ i opublikuj nową wersję funkcji podatkowej.
 
-    [![Zmiana statusu nowej wersji](../media/image6.png)](../media/image6.png)
+    [![Zmiana statusu nowej wersji.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Konfigurowanie Finance dla transakcji zamówień podatku i przeniesienia
 
@@ -121,7 +121,7 @@ Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zlece�
     > [!IMPORTANT]
     > Funkcja **Podatek w zamówieniu przeniesienia** jest w pełni zależna od usługi podatkowej. Dlatego można ją włączona tylko po zainstalowaniu usługi podatkowej.
 
-    ![Podatek funkcji zamówienia przeniesienia](../media/image7.png)
+    ![Podatek funkcji zamówienia przeniesienia.](../media/image7.png)
 
 3. Włącz usługę podatkową i wybierz proces biznesowy **Zapasy**.
 
@@ -131,11 +131,11 @@ Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zlece�
     1. przejdź do **Podatek** \> **Ustawienia** \> **Konfiguracja podatku** \> **Konfiguracja usług podatkowych**.
     2. W polu **Proces biznesowy** wybierz pozycję **Zapasy**.
 
-    ![Ustawianie pola Proces biznesowy](../media/image8.png)
+    ![Ustawianie pola Proces biznesowy.](../media/image8.png)
 
 4. Sprawdź, czy jest ustawiony mechanizm opłaty zwrotnej. Przejdź do **Księga główna** \> **Ustawienia** \> **Parametry**, a następnie na karcie **Opłata zwrotna** sprawdź, czy opcja **Włącz opłatę zwrotną** ma wartość **Tak**.
 
-    ![Włącz opcję opłaty zwrotnej](../media/image9.png)
+    ![Włącz opcję opłaty zwrotnej.](../media/image9.png)
 
 5. Sprawdź, czy powiązane kody podatków, grupy podatków, grupy podatków dla pozycji i numery rejestracji VAT zostały ustawione w finansach zgodnie z wytycznymi usługi podatkowej.
 6. Konfigurowanie tymczasowego konta tranzytowego. Ten krok jest wymagany tylko w przypadku, gdy podatek zastosowany do zamówienia przeniesienia nie ma zastosowania do mechanizmu zwolnienia z podatku lub opłaty zwrotnej.
@@ -143,7 +143,7 @@ Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zlece�
     1. Wybierz kolejno opcje **Podatek** \> **Ustawienia** \> **Podatek** \> **Grupy księgowania**.
     2. W polu **Tranzyt tymczasowy** wybierz konto księgowe.
 
-    ![Konfigurowanie tymczasowego konta tranzytowego](../media/image10.png)
+    ![Konfigurowanie tymczasowego konta tranzytowego.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Konfigurowanie Finance dla transakcji zamówień podatku i przeniesienia
 
@@ -158,7 +158,7 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
     > [!NOTE]
     > Jedno z tworzyć witryn powinno mieć nazwę **Tranzyt**. W kolejnych krokach tej procedury należy przypisać ten obiekt do magazynu tranzytowego, aby załączniki magazynowe powiązane z podatkami można było księgować w transakcjach „wyślij” i „odbierz” dla zamówień przeniesienia. Adres miejsca tranzytowego nie ma znaczenia w obliczeniach podatku. Dlatego możesz zostawić to pole puste.
 
-    ![Konfigurowanie lokalizacji](../media/image11.png)
+    ![Konfigurowanie lokalizacji.](../media/image11.png)
 
 2. Umożliwia tworzenie magazynów miejsc wysyłki, tranzytu i wysyłki do. Wszystkie informacje adresowe zachowywane w magazynie zastępują adres lokalizacji podczas obliczania podatku.
 
@@ -166,24 +166,24 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
     2. Wybierz **opcję Nowy**, aby utworzyć witrynę, która zostanie później przypisana do magazynu.
     3. Powtórz krok 2, aby utworzyć magazyn dla każdego wymaganego magazynu.
 
-    ![Ustawianie magazynów](../media/image12.png)
+    ![Ustawianie magazynów.](../media/image12.png)
 
     > [!NOTE]
     > W przypadku magazynu wysyłki z transakcji zamówienia przeniesienia w polu **Magazyn tranzytowy** musi być wybrany magazyn tranzytowy.
     >
-    > ![Wybieranie magazynu tranzytowego](../media/image13.png)
+    > ![Wybieranie magazynu tranzytowego.](../media/image13.png)
 
 3. Sprawdź, czy konfiguracja księgowania zapasów jest skonfigurowana dla transakcji zlecenia przeniesienia.
 
     1. Przejdź do **Zarządzanie zapasami** \> **Konfiguracja** \> **Księgowanie** \> **Księgowanie**.
     2. Na karcie **Zapasy** sprawdź, czy konto księgowe jest ustawione zarówno dla księgowania **wydania z magazynu**, jak i księgowania **przyjęcia na magazyn**.
 
-        ![Konfigurowanie księgowania wydania z magazynu i przyjęcia na magazyn](../media/image14.png)
+        ![Konfigurowanie księgowania wydania z magazynu i przyjęcia na magazyn.](../media/image14.png)
 
     3. Sprawdź, czy konto księgowe jest ustawione do księgowania zobowiązań **międzyjednostkowych**.
 
-        ![Konfigurowanie księgowania zobowiązań międzyjednostkowych](../media/image15.png)
+        ![Konfigurowanie księgowania zobowiązań międzyjednostkowych.](../media/image15.png)
 
     4. Sprawdź, czy konto księgowe jest ustawione do księgowania **Odbiorów między jednostkami**.
 
-        ![Konfigurowanie księgowania rachunków z odbiorami między jednostkami](../media/image16.png)
+        ![Konfigurowanie księgowania rachunków z odbiorami między jednostkami.](../media/image16.png)

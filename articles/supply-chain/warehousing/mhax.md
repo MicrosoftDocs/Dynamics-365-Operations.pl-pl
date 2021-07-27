@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 65c174896bbee07514285d4d19e1693c13dd9697
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: db58e3d1a6665d15ad2f3ac25612ecbf448a9c17
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021523"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344203"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Interfejs urządzeń do obsługi materiałów (MHAX)
 
@@ -29,7 +29,7 @@ Interfejs *urządzeń do obsługi materiałów* (MHAX) umożliwia połączenie z
 
 Na poniższej ilustracji przedstawiono różne elementy i kolejność, w jakiej występują procesy podczas korzystania z integracji MHAX.
 
-![Składniki i interakcje MHAX](media/mhax-components.png "Składniki i interakcje MHAX")
+![Składniki i interakcje MHAX.](media/mhax-components.png "Składniki i interakcje MHAX")
 
 Oto wyjaśnienie interakcji widocznych na poprzedniej ilustracji:
 

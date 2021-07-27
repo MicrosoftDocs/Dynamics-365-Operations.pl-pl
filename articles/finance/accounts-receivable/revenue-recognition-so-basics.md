@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce0879565babfbf526e1aa6864482e60cbabd377
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817228"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345603"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Rozpoznawanie przychodów z zamówień sprzedaży
 
@@ -36,7 +36,7 @@ W tym temacie opisano podstawową funkcję rozpoznawania przychodów z zamówie�
 
 Wprowadzono następujące zamówienie sprzedaży i obejmuje ono trzy elementy skonfigurowane dla rozpoznawania przychodów.
 
-[![Wprowadzanie zamówienia sprzedaży](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![Wprowadzanie zamówienia sprzedaży.](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 Istnieją dwie koncepcje rozpoznawania przychodów:
 
@@ -47,7 +47,7 @@ Istnieją dwie koncepcje rozpoznawania przychodów:
 
     Druga pozycja S0008 to usługa skonfigurowana jako element obsługi po wygaśnięciu umowy (PCS). Długotrwałe usługi inżynieryjne są świadczone na rzecz odbiorcy przez okres 12 miesięcy. W związku z tym do produktu domyślnie przypisany jest harmonogram przychodów **12M**. Ponieważ ta pozycja jest elementem PCS, należy określić daty rozpoczęcia i zakończenia umowy. Domyślnie daty rozpoczęcia i zakończenia umowy znajdują się w sekcji Szczegóły pozycji w zakładce Ustawienia. W harmonogramie przychodów konfiguracja **12M** jest zdefiniowana tak, że warunki umowy są automatycznie wypełniane, jak pokazano na poniższej ilustracji.
 
-    [![Harmonogramy przychodów](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![Harmonogramy przychodów.](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     Trzecia pozycja S0012 to sprzęt i domyślnie nie jest przypisany żaden harmonogram przychodów. Przychody ze sprzętu są uznawane, gdy tylko produkt zostanie zafakturowany.
 
@@ -55,7 +55,7 @@ Istnieją dwie koncepcje rozpoznawania przychodów:
 
 Aby wyświetlić dodatkowe szczegóły dotyczące ceny i harmonogramu przychodów, użyj przycisków w grupie **Rozpoznawanie przychodów** na karcie **Zarządzaj** w okienku akcji zamówienia sprzedaży. Ponieważ w tym momencie zamówienie sprzedaży nie jest potwierdzone, przyciski używane do rozpoznawania przychodów są niedostępne. Przyciski te stają się dostępne lub niedostępne, gdy zamówienie sprzedaży przechodzi przez etapy prowadzące do jego realizacji.
 
-[![Nagłówek zamówienia sprzedaży](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![Nagłówek zamówienia sprzedaży.](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 Pierwsze trzy przyciski zawierają szczegółowe informacje o cenie przychodu dla pozycji w konfiguracji zamówienia sprzedaży w celu rozpoznania przychodów.
 
@@ -70,7 +70,7 @@ Dwa ostatnie przyciski zawierają szczegółowe informacje o harmonogramie przyc
 
 W poniższym przykładzie alokacja ceny przychodu nastąpiła po potwierdzeniu zamówienia sprzedaży. Należy zauważyć, że mimo iż ceny przychodów są alokowane w różny sposób, łączna kwota w polu **Przychód do rozpoznania** musi być równa sumie wierszy zamówienia sprzedaży, które są zafakturowane do odbiorcy. Na przykład suma wierszy zamówienia sprzedaży wynosi 1499 USD (bez podatku). Dlatego suma wartości **Przychód do rozpoznania** musi również wynosić 1499 USD.
 
-[![Alokacja ceny przychodu](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![Alokacja ceny przychodu.](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
 Tworzony jest również oczekiwany harmonogram rozpoznawania przychodów. Harmonogram przychodów wykorzystuje **Przychód do rozpoznania** jako kwotę do odroczenia. Pozycja S0001 odracza 321,21 USD zamiast 300 USD, a pozycja S0008 odracza 160,61 USD zamiast 100 USD. Pozycja S0012 nie jest wyświetlana w oczekiwanym harmonogramie, ponieważ przychód nie jest odroczony. W momencie księgowania pozycja S0012 księguje 1017,18 USD bezpośrednio na koncie księgowym odroczonego przychodu.
 
@@ -84,11 +84,11 @@ Następnie można utworzyć dokument dostawy dla zamówienia sprzedaży. Po zaks
 
 Ostatnim krokiem jest wystawienie faktury za zamówienie sprzedaży. Jeśli spojrzysz na załącznik faktury, zauważysz, że przychód z pozycji S0001 i S0008 został odroczony (321,21 USD + 160,61 = 481,82), a pozostała kwota z pozycji S0012 została zaksięgowana w przychodzie (1017,18). Wartości te sumują się do 1499 USD, co odpowiada sumie wierszy zamówienia sprzedaży.
 
-[![Transakcje z załącznikami](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![Transakcje załącznika.](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
 Po utworzeniu faktury, przyciski **Alokacja ceny przychodów**, **Zmień alokację ceny za pomocą nowych wierszy zamówienia** i **Harmonogram rozpoznawania przychodów** stają się dostępne, ale przyciski **Zaktualizuj alokację ceny przychodu** i **Oczekiwany harmonogram rozpoznawania przychodów** są niedostępne.
 
-[![Dostępność przycisku rozpoznawania przychodów](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![Dostępność przycisku rozpoznawania przychodów.](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 Przycisk **Alokacja ceny przychodu** jest nadal dostępny, dzięki czemu można wyświetlić kalkulację ceny przychodu. Jeśli nic nie zmieniło się w zamówieniu sprzedaży po jego potwierdzeniu, kwota w polu **Przychód do rozpoznania** nie zostanie zmieniona podczas księgowania faktury.
 

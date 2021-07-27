@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 6a9e94e282aa8f101b42c1378ef21c6c1fe0477e
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 5a4749e3234288927a781106dd4becebd5260084
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053498"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344671"
 ---
 # <a name="optimize-performance-with-auto-cleanup-tasks"></a>Optymalizowanie wydajności za pomocą zadań automatycznego czyszczenia
 
@@ -41,23 +41,23 @@ Umożliwia zaplanowanie automatycznego zadania w celu oczyszczenia historii zada
 
 2. Na pasku **wyszukiwania** wprowadź **oczyszczanie historii zadań wsadowych**.
 
-   ![Wyszukaj okresowe oczyszczanie historii zadań wsadowych](media/talent-batch-history-cleanup-search-bar.png)
+   ![Wyszukaj okresowe oczyszczanie historii zadań wsadowych.](media/talent-batch-history-cleanup-search-bar.png)
 
 3. W polu **Limit historii (dni)** wprowadź **30**.
 
-   ![Ustaw limit historii 30](media/talent-batch-history-cleanup-history-limit.png)
+   ![Ustaw limit historii 30.](media/talent-batch-history-cleanup-history-limit.png)
 
 4. Wybierz **Uruchom w tle**, a następnie **Cykl**.
 
-   ![Ustaw cykl](media/talent-batch-history-cleanup-recurrence.png)
+   ![Ustaw cykl.](media/talent-batch-history-cleanup-recurrence.png)
 
 5. W obszarze **Zdefiniujcykl** ustaw **datę rozpoczęcia** i **godzinę rozpoczęcia** w godzinach poza godziną lub weekendu, a następnie wybierz opcję **brak daty zakończenia**. 
 
-   ![Definiowanie daty i godziny rozpoczęcia](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definiowanie daty i godziny rozpoczęcia.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 6. W **wzorzec cyklu** wybierz **dni**, a następnie ustaw opcję **Powtarzaj po określonym przedziale** na **7**.
 
-   ![Ustawienie oczyszczania powoduje powtarzanie tygodnia](media/talent-batch-history-cleanup-recurrence-pattern.png)
+   ![Ustawienie oczyszczania powoduje powtarzanie tygodnia.](media/talent-batch-history-cleanup-recurrence-pattern.png)
 
 7. Kliknij przycisk **OK**.
 

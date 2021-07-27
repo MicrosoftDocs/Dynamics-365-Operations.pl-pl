@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ba4b9ef43e27f689e1f10d2ee8f10f6ea4bf43ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ab8af010b07704a5b4994bbe356cd710ab249291
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351640"
 ---
 # <a name="calculate-capacity-load"></a>Obliczanie obciążenia zdolności produkcyjnych
 
@@ -53,7 +53,7 @@ Jest to przydatne w przypadku, gdy użytkownik chce uzyskać przegląd spodziewa
 
 7. W grupach **Grupuj wg...** kliknij odpowiednie przyciski, aby wyświetlić wymagany poziom szczegółowości obliczania. Na poniższym zrzucie ekranu wybrane przyciski **Grupuj wg** są wyróżniane kolorem niebieskim. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
-    ![Rysunek 1](media/01-capacity-planning.png)
+    ![Rysunek 1.](media/01-capacity-planning.png)
 
 >[!NOTE]
 >Aby skoncentrować się tylko na planowaniu zdolności produkcyjnych w odniesieniu do zaplanowanych zleceń pracy, zobacz [Obliczanie obciążenia zdolności produkcyjnych na zaplanowanych zleceniach pracy](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).

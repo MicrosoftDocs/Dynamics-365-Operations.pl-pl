@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 38ee9db94b3b222e8c0ce5d0883f47bd5d3e7d22
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f24ee67cd140fe75d65442484f673b17d32c1f93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796929"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354548"
 ---
 # <a name="task-management-in-pos"></a>Zarządzanie zadaniami w punkcie sprzedaży
 
@@ -44,11 +44,11 @@ Pracownicy sklepów mogą wykonywać następujące operacje dotyczące zadań w 
 
 Na poniższej ilustracji przedstawiono kartę **Moje zadania** w aplikacji Commerce punktu sprzedaży.
 
-![Karta Moje zadania w aplikacji punktu sprzedaży Commerce](media/POS-task-management.png)
+![Karta Moje zadania w aplikacji punktu sprzedaży Commerce.](media/POS-task-management.png)
 
 Na ilustracji przedstawiono kartę **Listy zadań**.
 
-![Karta Listy zadań w aplikacji punktu sprzedaży Commerce](media/POS-task-lists-management.png)
+![Karta Listy zadań w aplikacji punktu sprzedaży Commerce.](media/POS-task-lists-management.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

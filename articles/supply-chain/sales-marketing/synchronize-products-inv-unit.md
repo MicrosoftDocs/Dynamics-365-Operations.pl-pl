@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0ecb03d7d826fc6d79f1df800da22dc913177ee4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b65f23516d6be3d5d942d787261f5b8394c9f9c5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824877"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356958"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Synchronizowanie produktów z jednostką magazynową z rozwiązania Supply Chain Management do rozwiązania Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "5824877"
 
 Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania produktów z jednostką zapasów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
-[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
 Szablon **Produkty Field Service z jednostką magazynową (Supply Chain Management do Field Service)** jest oparty na szablonie **Produkt Field Service (Supply Chain Management do Field Service)**. Więcej informacji znajduje się w temacie [Synchronizowanie produktów bezpośrednio z rozwiązania Supply Chain Management do produktów w rozwiązaniu Field Service](field-service-product.md)
 
@@ -59,7 +59,7 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Produkty Field Service z jednostką magazynową (Supply Chain Management do Field Service): Produkty
 
-[![Mapowanie szablonu w integracji danych](./media/FSProduct1.png)](./media/FSProduct1.png)
+[![Mapowanie szablonu w integracji danych.](./media/FSProduct1.png)](./media/FSProduct1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

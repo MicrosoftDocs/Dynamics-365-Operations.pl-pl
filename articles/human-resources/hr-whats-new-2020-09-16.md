@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fe3ac2393e66a00e070d8cb6862c29625d39b53
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b1386cca9fd39c2cf021e87fcc33da2bbda89630
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057171"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353597"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (16 września 2020 r.)
 
@@ -99,9 +99,9 @@ Ta funkcja promuje także opcje przepływu pracy, które znajdują się w formul
 
 - [Udoskonalenia środowiska przepływu pracy — zarządzanie organizacją i pracownikami](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) w planie wydawniczym Dynamics 365 2020 wave 2
 
-![Elementy pracy przypisane do mnie](./media/hr-workflow-work-items-assigned-to-me.png)
+![Elementy pracy przypisane do mnie.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Szybki dostęp do elementów przepływu pracy](./media/hr-workflow-quick-access.png)
+![Szybki dostęp do elementów przepływu pracy.](./media/hr-workflow-quick-access.png)
 
 ### <a name="leave-and-absence-calendar"></a>Kalendarz urlopów i nieobecności
 

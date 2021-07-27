@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a20cd71c9729b492403f02f3b5576351169a6e2
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0b2e2ead990332f1afd338a430406e6d1db95347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754357"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350143"
 ---
 # <a name="report-designer-interface"></a>Interfejs Projektanta raportów
 
@@ -169,56 +169,56 @@ W poniższych tabelach opisano przyciski paska narzędzi, których można używa
 
 Standardowy pasek narzędzi zapewnia szybki dostęp do plików i poleceń edycji. Ten pasek narzędzi zawiera następujące przyciski.
 
-| Przycisk                                                                                       | Opis |
+| Guzik                                                                                       | opis |
 |----------------------------------------------------------------------------------------------|-------------|
-| [![Przycisk Nowy](./media/rowc130389.png)](./media/rowc130389.png)                              | Utwórz nową (pustą) definicję raportu, definicję wiersza, definicję kolumny lub definicję drzewa raportowania. |
-| [![Przycisk Otwórz](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Otwieranie istniejącej definicji wiersza, definicji kolumny, definicji drzewa raportowania lub definicji raportu. |
-| [![Przycisk Zapisz](./media/savec130389.png)](./media/savec130389.png)                           | Zapisywanie bieżącej definicji wiersza, definicji kolumny, definicji drzewa raportowania lub definicji raportu. |
-| [![Przycisk Kopiuj](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopiowanie zaznaczonego tekstu do schowka. |
-| [![Przycisk Wytnij](./media/cutc130389.png)](./media/cutc130389.png)                              | Usuwanie zaznaczonego tekstu i kopiowanie go do schowka. |
-| [![Przycisk Wklej](./media/pastec130389.png)](./media/pastec130389.png)                        | Wstaw tekst ze schowka. |
-| [![Przycisk Cofnij](./media/undoc130389.png)](./media/undoc130389.png)                           | Cofnięcie ostatniego działania. |
-| [![Przycisk Ponów](./media/redoc130389.png)](./media/redoc130389.png)                           | Cofnięcie ostatniego cofnięcia. |
-| [![Przycisk Znajdź](./media/findc130389.png)](./media/findc130389.png)                           | Otwieranie okna dialogowego **Znajdź i zastąp**, które umożliwia wyszukiwanie i zastępowanie tekstu w aktywnym oknie. |
-| [![Przycisk Wstaw wiersz](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Wstawianie pustego wiersza na w definicji wiersza lub pustego wiersza nagłówka w definicji kolumny. Ten przycisk jest dostępny z definicji wiersza lub definicji kolumny. |
-| [![Przycisk Wstaw kolumnę](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Wstawianie pustej kolumny w definicji kolumny. Ten przycisk jest dostępny z definicji kolumny. |
-| [![Przycisk Zablokuj](./media/lockc130389.png)](./media/lockc130389.png)                           | Umożliwia zabezpieczenie bieżącego bloku konstrukcyjnego hasłem. Ten przycisk jest dostępny dla użytkowników, którzy mają role **Projektant** lub **Administrator**. |
-| [![Przycisk Łącze wiersza](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Otwieranie okna dialogowego **Łącza wiersza**, w którym można określić źródła dla łącza danych w definicje wierszy i raportowania drzewa. Ten przycisk jest dostępny z definicji wiersza. |
-| [![Przycisk Podwyższ poziom](./media/promotec130389.png)](./media/promotec130389.png)                  | Podnieś poziom jednostki w definicji drzewa raportowania. Po wybraniu jednostki podrzędnej i kliknięciu przycisku **Podnieś poziom** jednostka podrzędna jest przenoszona na ten sam poziom co jednostka nadrzędna. |
-| [![Przycisk Obniż poziom](./media/demotec130389.png)](./media/demotec130389.png)                     | Obliż poziom jednostki raportowania drzewa definicji. Po wybraniu jednostki i kliknięciu przycisku **Obniż poziom** jednostka staje się podrzędna względem jednostka która jest przed nią. |
-| [![Przycisk Rozwiń](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Rozwiń wszystkie jednostki definicji drzewa raportowania na poziomie wybranej jednostki. |
-| [![Przycisk Zwiń](./media/collapsec130389.png)](./media/collapsec130389.png)               | Zwiń drzewo raportowania. |
-| [![Przycisk Pomoc](./media/helpc130389.png)](./media/helpc130389.png)                           | Otwieranie Pomocy. |
+| [![Przycisk Nowy.](./media/rowc130389.png)](./media/rowc130389.png)                              | Utwórz nową (pustą) definicję raportu, definicję wiersza, definicję kolumny lub definicję drzewa raportowania. |
+| [![Przycisk Otwórz.](./media/openfolderc130389.png)](./media/openfolderc130389.png)               | Otwieranie istniejącej definicji wiersza, definicji kolumny, definicji drzewa raportowania lub definicji raportu. |
+| [![Przycisk Zapisz.](./media/savec130389.png)](./media/savec130389.png)                           | Zapisywanie bieżącej definicji wiersza, definicji kolumny, definicji drzewa raportowania lub definicji raportu. |
+| [![Przycisk Kopiuj.](./media/copyc130389.png)](./media/copyc130389.png)                           | Kopiowanie zaznaczonego tekstu do schowka. |
+| [![Przycisk Wytnij.](./media/cutc130389.png)](./media/cutc130389.png)                              | Usuwanie zaznaczonego tekstu i kopiowanie go do schowka. |
+| [![Przycisk Wklej.](./media/pastec130389.png)](./media/pastec130389.png)                        | Wstaw tekst ze schowka. |
+| [![Przycisk Cofnij.](./media/undoc130389.png)](./media/undoc130389.png)                           | Cofnięcie ostatniego działania. |
+| [![Przycisk Ponów.](./media/redoc130389.png)](./media/redoc130389.png)                           | Cofnięcie ostatniego cofnięcia. |
+| [![Przycisk Znajdź.](./media/findc130389.png)](./media/findc130389.png)                           | Otwieranie okna dialogowego **Znajdź i zastąp**, które umożliwia wyszukiwanie i zastępowanie tekstu w aktywnym oknie. |
+| [![Przycisk Wstaw wiersz.](./media/insertrowc130389.png)](./media/insertrowc130389.png)           | Wstawianie pustego wiersza na w definicji wiersza lub pustego wiersza nagłówka w definicji kolumny. Ten przycisk jest dostępny z definicji wiersza lub definicji kolumny. |
+| [![Przycisk Wstaw kolumnę.](./media/insertcolumnc130389.png)](./media/insertcolumnc130389.png)  | Wstawianie pustej kolumny w definicji kolumny. Ten przycisk jest dostępny z definicji kolumny. |
+| [![Przycisk Zablokuj.](./media/lockc130389.png)](./media/lockc130389.png)                           | Umożliwia zabezpieczenie bieżącego bloku konstrukcyjnego hasłem. Ten przycisk jest dostępny dla użytkowników, którzy mają role **Projektant** lub **Administrator**. |
+| [![Przycisk Łącze wiersza.](./media/rowlinkc130389.png)](./media/rowlinkc130389.png)                 | Otwieranie okna dialogowego **Łącza wiersza**, w którym można określić źródła dla łącza danych w definicje wierszy i raportowania drzewa. Ten przycisk jest dostępny z definicji wiersza. |
+| [![Przycisk Podwyższ poziom.](./media/promotec130389.png)](./media/promotec130389.png)                  | Podnieś poziom jednostki w definicji drzewa raportowania. Po wybraniu jednostki podrzędnej i kliknięciu przycisku **Podnieś poziom** jednostka podrzędna jest przenoszona na ten sam poziom co jednostka nadrzędna. |
+| [![Przycisk Obniż poziom.](./media/demotec130389.png)](./media/demotec130389.png)                     | Obliż poziom jednostki raportowania drzewa definicji. Po wybraniu jednostki i kliknięciu przycisku **Obniż poziom** jednostka staje się podrzędna względem jednostka która jest przed nią. |
+| [![Przycisk Rozwiń.](./media/expandtreebuttonc130389.png)](./media/expandtreebuttonc130389.png) | Rozwiń wszystkie jednostki definicji drzewa raportowania na poziomie wybranej jednostki. |
+| [![Przycisk Zwiń.](./media/collapsec130389.png)](./media/collapsec130389.png)               | Zwiń drzewo raportowania. |
+| [![Przycisk Pomoc.](./media/helpc130389.png)](./media/helpc130389.png)                           | Otwieranie Pomocy. |
 
 ### <a name="formatting-toolbar"></a>Pasek narzędzi Formatowanie
 
 Pasek narzędzi formatowania zapewnia łatwy dostęp do poleceń stylów. Ten pasek narzędzi zawiera następujące przyciski.
 
-| Przycisk                                                                                                       | Opis                                             |
+| Guzik                                                                                                       | opis                                             |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [![Przycisk Styl czcionki](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Zastosuj wybrany styl czcionki do bieżącego tekstu.      |
-| [![Przycisk Czcionka](./media/fonttype.png)](./media/fonttype.png)                                                 | Zastosuj wybraną czcionkę w bieżącym tekście.              |
-| [![Przycisk Rozmiar czcionki](./media/fontsize.png)](./media/fontsize.png)                                            | Ustaw wybraną czcionkę w bieżącym tekście (w punktach). |
-| [![Przycisk Pogrubienie](./media/boldc130389.png)](./media/boldc130389.png)                                           | Zastosuj pogrubienie do bieżącego tekstu.                             |
-| [![Przycisk Kursywa](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Zastosuj kursywę do bieżącego tekstu.                           |
-| [![Przycisk Podkreślenie](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podkreśl bieżący tekst.                             |
-| [![Przycisk Zmniejsz wcięcie](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmniejszenie wcięcia bieżącego tekstu.                |
-| [![Przycisk Zwiększ wcięcie](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zwiększenie wcięcia bieżącego tekstu.                |
-| [![Przycisk Kolor tła](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Zmiana koloru tła bieżącej komórki.        |
-| [![Przycisk Kolor czcionki](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Zmiana koloru bieżącego tekstu.                   |
+| [![Przycisk Styl czcionki.](./media/formattingc130389.png)](./media/formattingc130389.png)                         | Zastosuj wybrany styl czcionki do bieżącego tekstu.      |
+| [![Przycisk Czcionka.](./media/fonttype.png)](./media/fonttype.png)                                                 | Zastosuj wybraną czcionkę w bieżącym tekście.              |
+| [![Przycisk Rozmiar czcionki.](./media/fontsize.png)](./media/fontsize.png)                                            | Ustaw wybraną czcionkę w bieżącym tekście (w punktach). |
+| [![Przycisk Pogrubienie.](./media/boldc130389.png)](./media/boldc130389.png)                                           | Zastosuj pogrubienie do bieżącego tekstu.                             |
+| [![Przycisk Kursywa.](./media/italicsc130389.png)](./media/italicsc130389.png)                                   | Zastosuj kursywę do bieżącego tekstu.                           |
+| [![Przycisk Podkreślenie.](./media/underlinec130389.png)](./media/underlinec130389.png)                            | Podkreśl bieżący tekst.                             |
+| [![Przycisk Zmniejsz wcięcie.](./media/outdentlsc130389.png)](./media/outdentlsc130389.png)                      | Zmniejszenie wcięcia bieżącego tekstu.                |
+| [![Przycisk Zwiększ wcięcie.](./media/indentlsc130389.png)](./media/indentlsc130389.png)                        | Zwiększenie wcięcia bieżącego tekstu.                |
+| [![Przycisk Kolor tła.](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Zmiana koloru tła bieżącej komórki.        |
+| [![Przycisk Kolor czcionki.](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Zmiana koloru bieżącego tekstu.                   |
 
 ### <a name="report-designer-toolbar"></a>Pasek narzędzi projektanta raportów
 
 Pasek narzędzi projektanta raportów oferuje szybki dostęp do poleceń nawigowania wewnątrz projektanta raportów. Ten pasek narzędzi zawiera następujące przyciski.
 
-| Przycisk                                                                                              | Opis |
+| Guzik                                                                                              | opis |
 |-----------------------------------------------------------------------------------------------------|-------------|
-| [![Przycisk Definicja raportu](./media/reportc130389.png)](./media/reportc130389.png)                 | Wyświetlanie definicji raportu, która jest wyświetlana w menu **Okno**. |
-| [![Przycisk Definicja wiersza](./media/rowc130389.png)](./media/rowc130389.png)                          | Umożliwia wyświetlenie definicji wiersza, która jest przypisana do definicji aktywnego raportu. |
-| [![Przycisk Definicja kolumny](./media/columnc130389.png)](./media/columnc130389.png)                 | Umożliwia wyświetlenie definicji kolumny, która jest przypisana do definicji aktywnego raportu. |
-| [![Przycisk Definicja drzewa raportowania](./media/treec130389.png)](./media/treec130389.png)             | Umożliwia wyświetlenie definicji drzewa raportowania, która jest przypisana do definicji aktywnego raportu. |
-| [![Przycisk Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Uruchom Report Viewer i pokaż najnowszą wersję generowanego raportu. Ten przycisk jest dostępny z definicji raportu po wygenerowaniu co najmniej jednego raportu. |
-| [![Przycisk Generuj raport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generowanie raportu na podstawie aktywnej definicji raportu. Ten przycisk jest dostępny w oknie definicji raportu. |
+| [![Przycisk Definicja raportu.](./media/reportc130389.png)](./media/reportc130389.png)                 | Wyświetlanie definicji raportu, która jest wyświetlana w menu **Okno**. |
+| [![Przycisk Definicja wiersza.](./media/rowc130389.png)](./media/rowc130389.png)                          | Umożliwia wyświetlenie definicji wiersza, która jest przypisana do definicji aktywnego raportu. |
+| [![Przycisk Definicja kolumny.](./media/columnc130389.png)](./media/columnc130389.png)                 | Umożliwia wyświetlenie definicji kolumny, która jest przypisana do definicji aktywnego raportu. |
+| [![Przycisk Definicja drzewa raportowania.](./media/treec130389.png)](./media/treec130389.png)             | Umożliwia wyświetlenie definicji drzewa raportowania, która jest przypisana do definicji aktywnego raportu. |
+| [![Przycisk Report Viewer.](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Uruchom Report Viewer i pokaż najnowszą wersję generowanego raportu. Ten przycisk jest dostępny z definicji raportu po wygenerowaniu co najmniej jednego raportu. |
+| [![Przycisk Generuj raport.](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generowanie raportu na podstawie aktywnej definicji raportu. Ten przycisk jest dostępny w oknie definicji raportu. |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

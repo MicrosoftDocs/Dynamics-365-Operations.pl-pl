@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797822"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347597"
 ---
 # <a name="checkout-module"></a>Moduł realizacji transakcji
 
@@ -33,7 +33,7 @@ Moduł realizacji transakcji renderuje dane na podstawie identyfikatora koszyka.
 
 Poniższy obraz pokazuje przykład modułu realizacji zamówienia Fabrikam na stronie realizacji zamówienia.
 
-![Przykład modułu realizacji zamówienia](./media/Checkout.PNG)
+![Przykład modułu realizacji zamówienia.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Właściwości modułu realizacji transakcji
 
@@ -52,13 +52,13 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz pokazuje przykład modułu adresu wysyłki na stronie realizacji zamówienia.
 
-    ![Przykład modułu adres wysyłki](./media/ecommerce-shippingaddress.PNG)
+    ![Przykład modułu adres wysyłki.](./media/ecommerce-shippingaddress.PNG)
 
 - **Opcje dostawy** — ten moduł umożliwia odbiorcy wybranie metody dostawy dla zamówienia. Aby uzyskać więcej informacji dotyczących tego modułu, przejdź do [Moduł Opcje dostawy](delivery-options-module.md).
 
     Poniższy obraz pokazuje przykład opcji dostawy na stronie realizacji zamówienia.
  
-    ![Przykład modułu opcji dostawy](./media/ecommerce-deliveryoptions.PNG)
+    ![Przykład modułu opcji dostawy.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Kontener sekcji wyewidencjonowywania** — ten moduł jest kontenerem, w ramach którego można umieścić wiele modułów w celu utworzenia sekcji w ramach przepływu realizacji transakcji. Na przykład można umieścić w tym kontenerze wszystkie moduły powiązane z płatnością, aby były wyświetlane w jednej sekcji. Ten moduł ma wpływ tylko na układ przepływu.
 
@@ -70,7 +70,7 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz przedstawia przykład modułów karty upominkowej, punktów lojalnościowych i płatności na stronie realizacja zamówienia.
 
-    ![Przykład karty podarunkowej, punktów lojalnościowych i płatności na stronie realizacji transakcji](./media/ecommerce-payments.PNG)
+    ![Przykład karty podarunkowej, punktów lojalnościowych i płatności na stronie realizacji transakcji.](./media/ecommerce-payments.PNG)
 
 - **Informacje kontaktowe** — ten moduł umożliwia odbiorcy dodanie lub zmianę informacji kontaktowych (adres e-mail) dla zamówienia.
 
@@ -80,7 +80,7 @@ W module realizacji transakcji jest wyświetlane podsumowanie zamówień oraz fu
 
     Poniższy obraz pokazuje przykład modułu postanowień na stronie realizacji zamówienia.
 
-    ![Przykład warunków i postanowień na stronie realizacja zamówienia](./media/ecommerce-checkout-terms.PNG)
+    ![Przykład warunków i postanowień na stronie realizacja zamówienia.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 143aa5c3ba4d6064cde63f8e7ebeac0977b1325c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908713"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353427"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Wykres Gantta do planowania zadań
 
@@ -45,10 +45,10 @@ Na wykresie Gantta można otworzyć dwa różne widoki, **Widok zamówień** i *
 
 ## <a name="order-view"></a>Widok zamówień
 
-[![Widok zamówień](./media/orderview.png)](./media/orderview.png)
+[![Widok zamówień.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Widok zasobów
-[![Widok zasobów](./media/resview.png)](./media/resview.png)
+[![Widok zasobów.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Działania
 Działania są wyświetlane jako paski i uporządkowane w siatce skali czasu z zaplanowanymi godzinami rozpoczęcia i zakończenia, tak że długości pasków są proporcjonalne do czasu potrzebnego do ukończenia działania. Działania są wyświetlane według skali czasu. Można zmienić skalę czasu w menu poprzez wybranie dat początkowej i końcowej oraz jednostki czasu, na przykład godzin lub dni. Dopasowując skalę czasu, można ustawić fokus na przedziale czasu, w którym chcesz zarządzać działaniami. 
@@ -102,25 +102,25 @@ Nie można zaplanować zadania poza przedziałem czasu zdefiniowanym na wykresie
 
 W sieci działań, takich jak zadania należące do tego samego zlecenia produkcyjnego, można za pomocą funkcji **Zaplanuj poprzednie zadania** zaplanować poprzednie zadania względem wybranego zadania w sieci. W poniższym przykładzie wyróżnione działanie jest wybranym zadaniem. Schemat przedstawia sytuację przed zaplanowaniem poprzedniego zadania i po zaplanowaniu poprzedniego zadania. 
 
-[![Zaplanuj poprzednie zadanie](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Zaplanuj poprzednie zadanie.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Zaplanuj następne zadania
 
 Za pomocą funkcji **Zaplanuj następne zadania** można zaplanować następne zadania względem wybranego zadania w sieci działań. W poniższym przykładzie wyróżnione działanie jest wybranym zadaniem. Schemat przedstawia sytuację przed zaplanowaniem następnego zadania i po zaplanowaniu następnego zadania. 
 
-[![Zaplanuj następne zadanie](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Zaplanuj następne zadanie.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Zaplanuj zadania otaczające zadanie
 
 Za pomocą funkcji **Zaplanuj zadania otaczające zadanie** można zaplanować następne i poprzednie zadania względem wybranego zadania w sieci działań. W poniższym przykładzie wyróżnione działanie jest wybranym zadaniem. Schemat przedstawia sytuację przed zaplanowaniem zadania i po zaplanowaniu zadania. 
 
-[![Zaplanuj zadania otaczające zadanie](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Zaplanuj zadania otaczające zadanie.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Rozmieść zadania
 
 Za pomocą funkcji **Rozmieść** można uporządkować wybrane działania wobec tego samego zasobu. Działania te mogą się znajdować w tej samej sieci działań, ale mogą również należeć do różnych sieci. Podczas używania funkcji Rozmieść są eliminowane odstępy czasu między wybranymi działaniami. Ta funkcja może służyć do optymalizacji wykorzystania zdolności produkcyjnych zasobów. Schemat przedstawia sytuację przed zaplanowaniem zadania i po zaplanowaniu zadania. 
 
-[![Rozmieść zadanie](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Rozmieść zadanie.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Zmiana przypisania działań z jednego zasobu do innego
 

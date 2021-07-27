@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5e18439fc0e91619cade33b83b87be0d5c4d1040
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d9470e4d517c5fb0b49ae2e26eb14220ea17aa3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799018"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349407"
 ---
 # <a name="enrich-a-category-landing-page"></a>Wzbogacanie strony docelowej kategorii
 
@@ -31,7 +31,7 @@ W handlu jest dostępna domyślna strona początkowa kategorii używana podczas 
 
 Jednak zamiast korzystania z domyślnej strony kategorii można użyć strony docelowej kategorii „wzbogacone”, która ma więcej zawartości i bardziej konkretne elementy. Typowe wzbogacenie może obejmować dodawanie treści marketingowych specyficznych dla kategorii do strony kategorii. Ta zawartość może zawierać rozmieszczenie produktów z różnych kategorii dla celów sprzedaży krzyżowej, list redakcyjnych, obrazów, filmów wideo i innego tekstu. Można zmodyfikować domyślną stronę kategorii lub zdefiniować inną stronę kategorii dla danej kategorii.
 
-![Wzbogacona strona docelowa kategorii](./media/CategoryLandingPages.png)
+![Wzbogacona strona docelowa kategorii.](./media/CategoryLandingPages.png)
 
 W konstruktorze witryn Commerce strona **Produkty** w narzędziu autorskim zawiera listę kategorii z kanału przypisanych do oddziału. Jeśli **Wzbogacone** stan jest zaznaczony dla strony kategorii, dana strona kategorii została wzbogacona. W przeciwnym razie używana jest domyślna strona kategorii i zawartość dla danej kategorii. Możesz wyświetlić podgląd zarówno kategorii wzbogaconej, jak i nie wzbogaconej kategorii, wybierając nazwę kategorii.
 

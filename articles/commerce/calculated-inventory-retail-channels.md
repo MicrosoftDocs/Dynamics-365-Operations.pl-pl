@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270892"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350481"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
 
@@ -105,7 +105,7 @@ W Commerce w wersji 10.0.9 i starszych operacja **wyszukiwania zapasów** w punk
 
 Gdy obliczenie po stronie kanału jest poprawnie skonfigurowane i zarządzane, może zapewnić bardziej niezawodne oszacowanie bieżącego magazynu sklepu, ponieważ korzysta on z danych transakcyjnych w bazie danych w bazie danych kanału Commerce, których centrala jeszcze nie zna. Na przykład w przypadku korzystania z istniejącego zgłoszenia usługi w czasie rzeczywistym do wyszukiwania zapasów w punkcie sprzedaży prawdopodobnie centrala nie będzie jeszcze wiedziała o sprzedaży, która właśnie wystąpiła dla danego produktu. Z tego względu wartość dostępnych zapasów, którą centrala zwraca dla tego produktu, prawdopodobnie przekroczy ilość dostępnych zapasów w magazynie o jedną jednostkę. Jeśli jednak używane jest obliczenie po stronie kanału, sprzedaż środków pieniężnych i towarów do sprzedaży może zostać zaliczona do obliczeń i odjęta od podanej wartości dostępnych zapasów. Chociaż wartości obliczane zarówno po stronie kanału, jak i w wywołaniu usługi w czasie rzeczywistym, są tylko szacunkami dostępnych zapasów, wartość obliczona przez stronę kanału sprzedaży znacznie bardziej prawdopodobna na potrzeby bieżącego sklepu.
 
-Aby skonfigurować operację **wyszukiwania w magazynie** punktu sprzedaży w centrali z logiką obliczania po stronie kanału i wyłączyć wywołanie usługi w czasie rzeczywistym, należy wykonać następujące kroki.
+Aby skonfigurować operację **Wyszukiwania zapasów** w punkcie sprzedaży w centrali Commerce tak, aby korzystała z logiki obliczeń po stronie kanału i wyłączyła wywołanie serwisowe w czasie rzeczywistym, należy najpierw włączyć funkcję **Optymalizacja obliczeń dostępności produktów** poprzez obszar roboczy **Zarządzanie funkcjami** w centrali Commerce, a następnie wykonać poniższe kroki.
 
 1. Wybierz kolejno opcje **Handel detaliczny i inny \> Ustawienia kanału \> Ustawienia punktu sprzedaży \> Profile punktów sprzedaży \> Profile funkcji**.
 1. Wybierz profil funkcji.

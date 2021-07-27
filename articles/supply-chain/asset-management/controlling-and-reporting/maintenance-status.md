@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f3d6f86c5052c845c9c8aad1e4437f4196f78b50
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b0c8b6a81fd863d66ca01689262f0ec08a94d76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808623"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354983"
 ---
 # <a name="maintenance-status"></a>Stan konserwacji
 
@@ -57,13 +57,13 @@ W module Zarządzanie składnikami majątku można wykonać obliczenia dla okre�
 
 Na poniższym zrzucie ekranu aktywowano przyciski **rok** i **miesiąc**. Po wybraniu opcji **Grupuj wg...** można uzyskać ogólny przegląd informacji na temat miesięcznego obciążenia pracą i produktywności związanych z żądaniami obsługi i zleceniami produkcyjnymi. 
 
-![Przykład miesięcznego obciążenia pracą](media/13-controlling-and-reporting.png)
+![Przykład miesięcznego obciążenia pracą.](media/13-controlling-and-reporting.png)
 
 ## <a name="example-2"></a>Przykład 2
 
 Na poniższym zrzucie ekranu zostały dodane informacje o lokalizacjach czynności konserwacyjnych. Teraz możliwe jest porównanie obciążenia i przepływności między lokalizacjami czynności konserwacyjnych, które mogą reprezentować lokalizacje geograficzne, fabryki lub obszary robocze. 
 
-![Przykład miesięcznego obciążenia pracą z lokalizacjami czynności konserwacyjnych](media/14-controlling-and-reporting.png)
+![Przykład miesięcznego obciążenia pracą z lokalizacjami czynności konserwacyjnych.](media/14-controlling-and-reporting.png)
 
 
 

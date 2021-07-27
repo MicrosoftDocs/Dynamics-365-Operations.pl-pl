@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f94b054d213dc2b347f4e5a7b2f4c2a51d519f57
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 626393f0c07803eb944e9066c72a24d2cf9ea0ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824011"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356228"
 ---
 # <a name="revenue-recognition-reallocation--scenario-1"></a>Zmiana alokacji rozpoznawania przychodów — scenariusz 1
 
@@ -28,25 +28,25 @@ W tym temacie zostanie omówiony scenariusz zmiany alokacji, w ramach którego w
 
 W tym scenariuszu dla opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** jest wybrana wartość **Nie** na karcie **Rozpoznawanie przychodów** na stronie **Parametry księgi głównej** (**Rozpoznawanie przychodów \> Konfiguracja \> Parametry księgi głównej**).
 
-[![Dla opcji Księgowanie korekt faktury do rozrachunków z odbiorcami jest wybrana wartość Nie](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
+[![Dla opcji Księgowanie korekt faktury do rozrachunków z odbiorcami jest wybrana wartość Nie.](./media/06_rev-rec-scenarios.png)](./media/06_rev-rec-scenarios.png)
 
 Utworzono zamówienie sprzedaży dla odbiorcy US\_SI\_0003. Odbiorca nabywa laptopa (kod towaru S0012) oraz plan pomocy technicznej (kod towaru S0008, „Długotrwała usługa inżynieryjna”) dla laptopa. Przychód z laptopa zostaje natychmiast rozpoznany (przy braku harmonogramu rozpoznawania przychodów). Przychód z planu pomocy technicznej zostanie odroczony i rozpoznany w ciągu 12 miesięcy, zgodnie z zakresem dat określonym w umowie.
 
-[![Wiersze zamówień sprzedaży laptopa oraz planu pomocy technicznej](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
+[![Wiersze zamówień sprzedaży laptopa oraz planu pomocy technicznej.](./media/07_rev-rec-scenarios.png)](./media/07_rev-rec-scenarios.png)
 
 Zamówienie sprzedaży zostaje potwierdzone. Jako że oba towary są skonfigurowane pod kątem alokacji ceny przychodu, cena przychodu jest obliczana po potwierdzeniu zamówienia sprzedaży. Przychód, który zostanie rozpoznany, można sprawdzić na stronie **Alokacja ceny przychodu** (na stronie **Zamówienia sprzedaży**, w okienku akcji, na karcie **Zarządzanie**, w grupie **Rozpoznawanie przychodów** wybierz pozycję **Alokacja ceny przychodu**). Przychód z laptopa w kwocie 1008,01$ zostanie zaksięgowany na koncie przychodów. Przychód z planu pomocy technicznej zostanie zaksięgowany na koncie Przychód odroczony w kwocie 190,99$. Suma cen przychodu musi być równa sumie wierszy skonfigurowanych w celu zarejestrowania alokacji ceny przychodu (1199,00$).
 
-[![Strona alokacji ceny przychodu](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
+[![Strona alokacji ceny przychodu.](./media/08_rev-rec-scenarios.png)](./media/08_rev-rec-scenarios.png)
 
 W momencie sprzedaży klient zdecydował się nie kupować usług instalacyjnych (kod towaru S0001), później zmienił jednak zdanie. W związku z tym dla tego samego odbiorcy zostaje wprowadzone drugie zamówienie sprzedaży.
 
-[![Wiersz zamówienia sprzedaży dotyczący usług instalacyjnych](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
+[![Wiersz zamówienia sprzedaży dotyczący usług instalacyjnych.](./media/09_rev-rec-scenarios.png)](./media/09_rev-rec-scenarios.png)
 
 Drugie zamówienie sprzedaży zostaje potwierdzone. Jako że to zamówienie sprzedaży zawiera tylko jeden wiersz, alokacja ceny przychodu nie jest realizowana podczas potwierdzania zamówienia sprzedaży. Alokacja cen przychodów ma miejsce tylko, jeśli istnieją co najmniej dwa unikatowe towary i jeśli towary te zostały skonfigurowane pod kątem alokacji cen przychodów.
 
 Jeśli wspomniane nowe zamówienie sprzedaży stanowi jedyną zmianę wprowadzaną do umowy odbiorcy, można teraz uruchomić proces zmiany alokacji. W jednym z dwóch zamówień sprzedaży wybierz opcję **Zmień alokację ceny za pomocą nowych wierszy zamówienia**, aby otworzyć stronę **Zmień alokację ceny za pomocą nowych wierszy zamówienia**. Możesz również wybrać kolejno **Rozpoznawanie przychodów \> Zadania okresowe \> Zmień alokację ceny za pomocą nowych wierszy zamówienia**. Wybierz dwa zamówienia sprzedaży i odpowiadające im wiersze zamówienia sprzedaży, a następnie wybierz opcję **Aktualizuj zmianę alokacji**. W kolumnie **Kwota po zmianie alokacji** znajduje się nowa cena przychodu dla każdego wiersza zamówienia sprzedaży.
 
-[![Nowe ceny przychodu na stronie Zmień alokację ceny za pomocą nowych wierszy zamówienia](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
+[![Nowe ceny przychodu na stronie Zmień alokację ceny za pomocą nowych wierszy zamówienia.](./media/10_rev-rec-scenarios.png)](./media/10_rev-rec-scenarios.png)
 
 W przypadku wybrania opcji **Oczekiwany załącznik** nie są wyświetlane żadne dane; wynika to z faktu, że żadne faktury nie zostały zaksięgowane.
 
@@ -55,7 +55,7 @@ Aby zakończyć proces zmiany alokacji, wybierz opcję **Przetwarzanie**. Nawet 
 > [!TIP]
 > Aby dostarczyć kontekst, w jakim są wyświetlane dodatkowe towary, można dodać do siatki inne kolumny, takie jak **Identyfikator zmiany alokacji** i **Zamówienie sprzedaży**.
 > 
-> [![Dodatkowe kolumny na stronie Alokacje ceny przychodu](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+> [![Dodatkowe kolumny na stronie Alokacje ceny przychodu.](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

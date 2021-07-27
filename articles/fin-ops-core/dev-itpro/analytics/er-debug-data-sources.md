@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: fe3e6a4223fc8b26e523a982a2e1752a34b370de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 86551cfeda1e4204c91b0534cda563012191e25c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753679"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348123"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Debugowanie źródeł danych dla wykonanego formatu ER w celu analizowania przekształcenia i przepływu danych
 
@@ -64,7 +64,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego tematu, aby przetworzyć płatności dostawców.
 
-    ![Przetwarzanie płatności dostawcy w toku](./media/er-data-debugger-process-payment.png)
+    ![Przetwarzanie płatności dostawcy w toku.](./media/er-data-debugger-process-payment.png)
 
 2. Pobierz i zapisz plik ZIP na komputerze lokalnym.
 3. Wyodrębnij plik płatności **ISO20022 Credit transfer.xml** z pliku ZIP.
@@ -72,7 +72,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
     W pliku płatności kod IBAN (International Bank Account Number) konta bankowego dostawcy nie zawiera spacji. W związku z tym różni się od wartości [wprowadzonej](#enteredIBANcode) na stronie **Konta bankowe**.
 
-    ![Kod IBAN bez spacji](./media/er-data-debugger-payment-file.png)
+    ![Kod IBAN bez spacji.](./media/er-data-debugger-payment-file.png)
 
     Możesz użyć debugera źródeł danych ER możesz sprawdzić, który składnik rozwiązania ER jest używany do obcinania spacji w kodzie IBAN.
 
@@ -85,14 +85,14 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
     > [!NOTE]
     > Ten parametr jest właściwy dla użytkownika i właściwy dla firmy.
 
-    ![Okno dialogowe parametry użytkownika](./media/er-data-debugger-user-parameters.png)
+    ![Okno dialogowe parametry użytkownika.](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Przetwarzanie płatności dostawcy na potrzeby debugowania
 
 1. Wykonaj kroki opisane w [dodatku 3](#appendix3) do tego tematu, aby przetworzyć płatności dostawców.
 2. W oknie komunikatu wybierz opcję **Tak**, aby potwierdzić, że chcesz przerwać przetwarzanie płatności dostawców i w zamian uruchomić debugowanie źródła danych na stronie **Debugowanie źródeł danych**.
 
-    ![Okno komunikatu potwierdzającego](./media/er-data-debugger-start-debugging.png)
+    ![Okno komunikatu potwierdzającego.](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>Debugowanie źródeł danych używanych podczas przetwarzania płatności
 
@@ -115,7 +115,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 7. Wybierz **Rozwiń wszystkie**.
 
-    ![Wartość pola IBAN w mapowaniu modelu](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Wartość pola IBAN w mapowaniu modelu.](./media/er-data-debugger-debugging-model-mapping.png)
 
     Jak widzisz, mapowanie modelu nie odpowiada za obcięte spacje, ponieważ zwrócony przez nie kod IBAN dla konta bankowego dostawcy zawiera spacje. Dlatego musisz kontynuować debugowanie źródła danych.
 
@@ -130,7 +130,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 7. Wybierz pozycję **Pobierz wartość**.
 8. Wybierz **Rozwiń wszystkie**.
 
-    ![Wartość pola IBAN w mapowaniu formatu](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Wartość pola IBAN w mapowaniu formatu.](./media/er-data-debugger-debugging-format-mapping.png)
 
     Jak widzisz, źródła danych mapowania formatu nie odpowiadają za obcięte spacje, ponieważ zwrócony przez nie kod IBAN dla konta bankowego dostawcy zawiera spacje. Dlatego musisz kontynuować debugowanie źródła danych.
 
@@ -142,7 +142,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 4. Rozwiń elementy formatu, aby wybrać pozycję **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**, a następnie wybierz pozycję **Pobierz wartość**.
 5. Wybierz **Rozwiń wszystkie**.
 
-    ![Wartość pola IBAN w formacie](./media/er-data-debugger-debugging-format.png)
+    ![Wartość pola IBAN w formacie.](./media/er-data-debugger-debugging-format.png)
 
    Jak widzisz, powiązanie formatu nie odpowiada za obcięte spacje, ponieważ zwrócony przez nie kod IBAN dla konta bankowego dostawcy zawiera spacje. Z tego względu element **BankIBAN** został skonfigurowany do używania przekształcenia formatu, które obcina spacje.
 
@@ -154,13 +154,13 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 2. Na stronie **Konfiguracje** wybierz pozycję **Model płatności** \> **Polecenie przelewu ISO20022**.
 3. Wybierz pozycję **Projektant**, a następnie rozwiń elementy w celu wybrania pozycji **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN**.
 
-    ![Element BankIBAN na stronie Projektant formatów](./media/er-data-debugger-referred-transformation.png)
+    ![Element BankIBAN na stronie Projektant formatów.](./media/er-data-debugger-referred-transformation.png)
 
     Jak widzisz, element **BankIBAN** został skonfigurowany do używania przekształcenia **usuń niealfanumeryczne**.
 
 4. Wybierz kartę **Przekształcenia**.
 
-    ![Karta Przekształcenia dla elementu BankIBAN](./media/er-data-debugger-transformation.png)
+    ![Karta Przekształcenia dla elementu BankIBAN.](./media/er-data-debugger-transformation.png)
 
     Jak widzisz, przekształcenie typu **usuń niealfanumeryczne** zostało skonfigurowane do używania wyrażenia, które obcina spacje z podanego ciągu tekstowego.
 
@@ -168,7 +168,7 @@ Następujące ustawienia formatów ER nie są obecnie dostępne w przypadku debu
 
 Podczas konfigurowania wersji roboczej formatu ER, który można uruchomić bezpośrednio z poziomu projektanta operacji, można uzyskać dostęp do debugera źródła danych, wybierając pozycję **Rozpocznij debugowanie** w okienku akcji.
 
-![Przycisk Rozpocznij debugowanie na stronie Projektant formatów](./media/er-data-debugger-run-from-designer.png)
+![Przycisk Rozpocznij debugowanie na stronie Projektant formatów.](./media/er-data-debugger-run-from-designer.png)
 
 Do debugowania jest dostępne mapowanie formatu oraz składniki formatu dla edytowanego formatu ER.
 
@@ -176,7 +176,7 @@ Do debugowania jest dostępne mapowanie formatu oraz składniki formatu dla edyt
 
 Podczas konfigurowania mapowania modelu ER, który można uruchomić bezpośrednio ze strony **Mapowanie modelu**, można uzyskać dostęp do debugera źródła danych, wybierając pozycję **Rozpocznij debugowanie** w okienku akcji.
 
-![Przycisk Rozpocznij debugowanie na stronie projektanta mapowania modelu](./media/er-data-debugger-run-from-designer-mapping.png)
+![Przycisk Rozpocznij debugowanie na stronie projektanta mapowania modelu.](./media/er-data-debugger-run-from-designer-mapping.png)
 
 Do debugowania jest dostępny składnik mapowania modelu dla edytowanego mapowania ER.
 
@@ -186,7 +186,7 @@ Do debugowania jest dostępny składnik mapowania modelu dla edytowanego mapowan
 
 Jeśli chcesz użyć rozwiązania ER do wygenerowania pliku płatności elektronicznych dla przetwarzanej płatności dostawcy, możesz [pobrać](download-electronic-reporting-configuration-lcs.md) format płatności ER **Polecenie przelewu ISO20022**, który jest dostępny z biblioteki aktywów wspólnych w usługach Microsoft Dynamics Lifecycle Services (LCS) lub z repozytorium globalnego.
 
-![Importowanie formatu płatności ER na stronie Repozytorium konfiguracji](./media/er-data-debugger-import-from-repo.png)
+![Importowanie formatu płatności ER na stronie Repozytorium konfiguracji.](./media/er-data-debugger-import-from-repo.png)
 
 Oprócz wybranego formatu ER następujące [konfiguracje](general-electronic-reporting.md#Configuration) muszą zostać automatycznie zaimportowane do wystąpienia usługi Microsoft Dynamics 365 Finance jako część rozwiązania ER **Polecenie przelewu ISO20022**:
 
@@ -197,7 +197,7 @@ Oprócz wybranego formatu ER następujące [konfiguracje](general-electronic-rep
 
 Te konfiguracje można znaleźć na stronie **Konfiguracje** struktury ER (**Administracja organizacją** \> **Raportowanie elektroniczne** \> **Konfiguracje**).
 
-![Zaimportowane konfiguracje na stronie Konfiguracje](./media/er-data-debugger-configurations.png)
+![Zaimportowane konfiguracje na stronie Konfiguracje.](./media/er-data-debugger-configurations.png)
 
 Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfiguracji, należy pobrać ją ręcznie z biblioteki aktywów wspólnych usług LCS w taki sam sposób, w jaki pobrano format płatności ER **Polecenie przelewu ISO20022**.
 
@@ -213,7 +213,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 
     Zauważ, że pole **Płatności** modelu danych jest powiązane ze źródłem danych **\$notSentTransactions**, które zwraca listę przetwarzanych wierszy płatności dostawcy.
 
-    ![Pole Płatności na stronie projektanta mapowania modelu](./media/er-data-debugger-model-mapping.png)
+    ![Pole Płatności na stronie projektanta mapowania modelu.](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>Przeglądanie mapowania formatu
 
@@ -224,7 +224,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 
     Zwróć uwagę, że element **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** pliku **ISO20022CTReports** \> **XMLHeader** jest powiązany ze źródłem danych **\$PaymentByDebtor**, które skonfigurowano do grupowania rekordów pola **Płatności** modelu danych.
 
-    ![Element PmtInf na stronie Projektant formatów](./media/er-data-debugger-format-mapping.png)
+    ![Element PmtInf na stronie Projektant formatów.](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>Przeglądanie formatu
 
@@ -234,7 +234,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 
     Zauważ, że element formatu w obszarze **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** został skonfigurowany do wprowadzania kodu IBAN konta dostawcy w pliku płatności.
 
-    ![Element BankIBAN na stronie Projektant formatów](./media/er-data-debugger-format.png)
+    ![Element BankIBAN na stronie Projektant formatów.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Dodatek 2: konfigurowanie modułu Rozrachunki z dostawcami
 
@@ -245,7 +245,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 3. Na skróconej karcie **Identyfikacja** w polu **IBAN** <a name="enteredIBANcode"></a>wprowadź ciąg **GB33 BUKB 2020 1555 5555 55**.
 4. Wybierz opcję **Zapisz**.
 
-![Ustawione pole IBAN na stronie Konta bankowe dostawcy](./media/er-data-debugger-iban.png)
+![Ustawione pole IBAN na stronie Konta bankowe dostawcy.](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Konfigurowanie metody płatności
 
@@ -255,7 +255,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 4. W polu **Konfiguracja formatu eksportu** wybierz format ER **Polecenie przelewu ISO20022**.
 5. Wybierz opcję **Zapisz**.
 
-![Ustawienia formatu pliku na stronie Metody płatności](./media/er-data-debugger-payment-method.png)
+![Ustawienia formatu pliku na stronie Metody płatności.](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Dodawanie płatności dostawcy
 
@@ -267,7 +267,7 @@ Jeśli w drzewie konfiguracji brakuje dowolnej z wymienionych wcześniej konfigu
 6. W polu **Metoda płatności** wybierz pozycję **SEPA CT**.
 7. Wybierz opcję **Zapisz**.
 
-![Płatność dostawcy dodana na stronie Płatności dostawcy](./media/er-data-debugger-payment-journal.png)
+![Płatność dostawcy dodana na stronie Płatności dostawcy.](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>Dodatek 3: przetwarzanie płatności dostawcy
 

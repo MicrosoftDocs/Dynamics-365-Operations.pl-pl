@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71aefbc9c041074225b379d90db5cecf3849cb59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812916"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347717"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Poprawa wydajności aparatu planowania
 
@@ -66,11 +66,11 @@ Rozważmy na przykład trasę podaną w poniższej tabeli i obrazie, która wygl
 | 10 | Podrzędna&nbsp;1 | | | | 1 | 20 |
 | 20 | Główne | | 3.00 | 1.00 | 3 | 0 |
 
-![Przykładowy diagram marszruty](media/scheduling-engine-route.png "Przykładowy diagram marszruty")
+![Przykładowy diagram marszruty.](media/scheduling-engine-route.png "Przykładowy diagram marszruty")
 
 Po wysłaniu tego obrazu do aparatu jest on dzielony na osiem zadań, tak jak to pokazano na poniższej ilustracji (należy wybrać obraz, aby go powiększyć).
 
-[![Planowanie zadań aparatu](media/scheduling-engine-jobs.png "Zadania aparatu planowania")](media/scheduling-engine-jobs-large.png)
+[![Zadania aparatu planowania](media/scheduling-engine-jobs.png „Planowanie zadań aparatu”.](media/scheduling-engine-jobs-large.png)
 
 Standardowe łącze między dwoma zadaniami to `FinishStart` oznaczające, że godzina zakończenia jednego zadania musi być wcześniejsza niż godzina rozpoczęcia innego zadania. Ponieważ konfiguracja musi zostać wykonana przez ten sam zasób, który będzie później wykonywać proces, istnieją między nimi ograniczenia `OnSameResource`. Między zadaniami podstawowymi i drugorzędnymi dla 10, istnieją łącza `StartStart` i `FinishFinish`, co oznacza, że zadania jednocześnie muszą się rozpoczynać i kończyć w tym samym czasie, i istnieją ograniczenia `NotOnSameResource`, które uniemożliwiają zastosowanie tego samego zasobu jako podstawowego i pomocniczego.
 

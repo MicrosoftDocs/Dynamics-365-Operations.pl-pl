@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 9516e9e1bd9725e8bd2eec81c5e2b70c8257bc7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353139"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Włączanie wielu metod dostawy dla zamówień klientów
 
@@ -32,7 +32,7 @@ Aby można było skorzystać z tej funkcji, należy włączyć **Obsługę wielu
 
 W wersji Commerce 10.0.15 i starszej organizacje mogą definiować tylko jedną metodę dostawy jako metodę odbioru. Tę definicję należy wykonać na stronie **parametry Commerce**. W wersji 10.0.16 lub nowszych, w przypadku włączenia funkcji **Obsługi wielu trybów odbioru**, metoda dostawy, która została wcześniej zdefiniowana jako odbiór na stronie **parametrów Commerce**, jest automatycznie kopiowana do nowej konfiguracji dla trybów odbioru.
 
-![Metody odbioru na stronie parametrów Commerce](media/multiplepickupparameter.png)
+![Metody odbioru na stronie parametrów Commerce.](media/multiplepickupparameter.png)
 
 Po włączeniu **Obsługi wielu trybów odbioru** można zdefiniować wiele trybów dostawy w ramach odbioru, korzystając z siatki **Metoda dostawy — odbiór** na skróconej karcie **Metody dostawy** na karcie **Zamówienia odbiorcy** na stronie **parametry Commerce**.
 
@@ -40,7 +40,7 @@ Pola **Sposób realizacji dostawy — odbiór** i **Elektroniczny tryb dostawy**
 
 Przed skonfigurowaniem trybów dostawy do odbioru należy zdefiniować metody dostawy. Na stronie **Metody dostawy** w module Commerce Headquarter, można dodawać metody dostawy, które powinny być traktowane jako metody odbioru. Upewnij się, że została ukończona cała konfiguracja. Na przykład, jeśli oferujesz odbiór „przy krawężniku” jako opcję dostawy dla kupujących online w niektórych sklepach, musisz utworzyć w tym celu nowy tryb dostawy. Możesz utworzyć ten tryb dostawy, używając „odbiór przy krawężniku” jako opisu. Następnie należy upewnić się, że tryb dostawy „przy krawężniku” jest zmapowany do wszystkich kanałów Commerce, które mogą go oferować, w tym sklepów internetowych, które mogą oferować tę opcję i poszczególnych kanałów sklepowych, które będą oferować tę metodę realizacji. Sposoby dostawy muszą być również powiązane z produktami. W tym przykładzie, jeśli istnieją pewne produkty, które nie mogą być zrealizowane za pomocą „odbioru przy krawężniku”, należy upewnić się, że te elementy są wykluczone. Po zakończeniu dodawania nowych trybów dostawy należy uruchomić zadanie **Metody dostawy procesów**, aby utworzyć relacje między trybem dostawy, kanałami i towarami. Po zakończeniu zadania otwórz stronę **Harmonogram dystrybucji** w module Commerce Headquarter, a następnie uruchom zadanie dystrybucji **1120**, aby upewnić się, że odpowiednie bazy danych kanałów Commerce są aktualizowane przy użyciu nowej konfiguracji trybu dostawy.
 
-![Przykład konfiguracji metody dostawy dla odebrania „przy krawężniku”](media/pickupmodes.png)
+![Przykład konfiguracji metody dostawy dla odebrania „przy krawężniku”.](media/pickupmodes.png)
 
 Po zdefiniowaniu dodatkowych trybów odbioru należy dodać je do siatki **Metody dostawy — odbiór** na stronie **parametrów Commerce**. Następnie należy uruchomić odpowiednie zadania dystrybucji, aby zaktualizować odpowiednie bazy danych kanałów Commerce z tą zmianą konfiguracji.
 
@@ -69,16 +69,16 @@ Jeśli dla kanału jest dostępnych wiele trybów dostawy — odbioru, w momenci
 
 - W przypadku kanałów e-commerce, kupujący może wybrać dowolny dostępny tryb dostawy — odbioru, który jest dostępny. Na przykład sprzedawca, który określa dwa tryby dostawy dostawy — odbioru (odbiór w sklepie i „przy krawężniku”), w tabeli **Metody dostawy — odbiór** skonfiguruje obydwa typy. Oba z nich są ważne dla kanału realizacji zamówienia oraz produktu, który jest obecnie kupowany. W takim przypadku klient może wybrać preferowany tryb dostawy — odbiór. Wybrany tryb dostawy jest następnie przekształcany w tryb dostawy, który jest połączony z wierszem zamówienia sprzedaży podczas tworzenia zamówienia w module Commerce Headquarter.
 
-    ![Wybieranie opcji odbioru w e-commerce](media/pickupecommerce.png)
+    ![Wybieranie opcji odbioru w e-commerce.](media/pickupecommerce.png)
 
 - W kanałach sklepowych, jeśli zamówienie do odbioru jest tworzone za pośrednictwem aplikacji punktu sprzedaży (POS), pracownik otrzymuje monit o wybranie jednego z dostępnych trybów dostawy (o ile zostały skonfigurowane). Jeśli dla danego kanału i towaru dostępny jest tylko jeden prawidłowy tryb dostawy — odbiór, pracownikowi nie zostanie wyświetlony monit. W takim przypadku w wierszach zamówienia jest automatycznie stosowany dostępny tryb dostawy — odbiór.
 
-    ![Wybieranie opcji odbioru w aplikacji punktu sprzedaży](media/pickuppos.png)
+    ![Wybieranie opcji odbioru w aplikacji punktu sprzedaży.](media/pickuppos.png)
 
 - W przypadku kanałów biura obsługi, gdy użytkownicy tworzą zlecenia odbioru, mogą ręcznie wybrać dowolny zdefiniowany tryb dostawy, który jest połączony z kanałem biura obsługi. Następnie system sprawdza, czy wybrany tryb dostawy odbioru może być używany podczas zamawiania towaru połączonego. Jeśli w kanale biura obsługi jest wybrany tryb dostawy pobrania, wiersze zamówienia sprzedaży muszą być połączone z prawidłowym magazynem sklepu. Jeśli w wierszu sprzedaży biura obsługi jest zdefiniowany magazyn niesklepowy, w tym wierszu sprzedaży nie można określić trybu dostawy — odbioru.
 - Współpracowników może skorzystać z operacji **Odwoływania zamówień** lub **Realizacji zamówień** w aplikacji punktu sprzedaży w celu pobrania listy zamówień lub wierszy zamówień do odbioru. Jeśli w ramach sprzedaży zostanie użyty wstępnie zdefiniowany filtr wyszukiwania w celu wyświetlenia wszystkich zamówień, które zostaną odebrane w bieżącym sklepie, zostaną zmodyfikowane kwerendy, aby upewnić się, że wyniki wyszukiwania uwzględniają wszystkie kwalifikujące się zamówienia, w których jest używany dowolny tryb dostawy/odbioru. Użytkownicy aplikacji punktu sprzedaży mogą również stosować istniejące filtry w celu zawężenia listy zamówień do określonego trybu dostawy odbioru. Na przykład mogą być wyświetlane tylko zamówienia do odbioru „przy krawężniku”.
 
-    ![Filtr dla trybów dostawy do odbioru zastosowany do listy zamówień wycofania](media/pickuprecallorder.png)
+    ![Filtr dla trybów dostawy do odbioru zastosowany do listy zamówień wycofania.](media/pickuprecallorder.png)
 
 ## <a name="considerations-for-distributed-order-management"></a>Informacje ważne dla funkcji zarządzania zamówieniami rozdzielonymi
 

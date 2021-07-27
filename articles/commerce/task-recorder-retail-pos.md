@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7b5f8303ea23f4f38bf27d35de0fa91ab82f4b5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354476"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Rejestrator zadań i Pomoc dla aplikacji Retail Modern POS (MPOS) i Cloud POS
 
@@ -55,14 +55,14 @@ Wykonaj następujące kroki, aby utworzyć nowe nagranie przy użyciu Rejestrato
 1. Uruchom program Retail Modern POS lub Cloud POS i zaloguj się.
 2. Na stronie **Ustawienia**, w sekcji **Rejestrator zadań** kliknij przycisk **Otwórz rejestratora zadań**. Pojawi się okienko **Rejestrator zadań**. Przed rozpoczęciem nowego nagrania możesz kliknąć przycisk **Zamknij** (**X**) w prawym górnym rogu, aby zamknąć okienko **Rejestrator zadań**. Aby ponownie otworzyć okienko, powtórz krok 2.
 
-    [![okienko rejestratora zadań](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![okienko rejestratora zadań.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Wprowadź nazwę i opis nagrania, a następnie kliknij przycisk **Uruchom**. Sesja nagrywania rozpoczyna się natychmiast po kliknięciu przycisku **Uruchom**.
 
     > [!NOTE]
     > Po kliknięciu przycisku **Zamknij** (**X**) w prawym górnym rogu, gdy operacja rejestrowania jest w toku, okienko **Rejestrator zadań** zostaje zamknięte, ale sesja rejestrowania nie jest zakończona. Aby ponownie otworzyć okienko rejestratora zadań, kliknij przycisk **Pomoc** (znak zapytania) w górnej części ekranu.
     >
-    > [![Znak zapytania](./media/help.jpg)](./media/help.jpg)
+    > [![Znak zapytania.](./media/help.jpg)](./media/help.jpg)
 
 4. Po kliknięciu przycisku **Uruchom** Rejestrator zadań wchodzi w tryb rejestrowania. W okienku **Rejestrator zadań** są wyświetlane informacje i elementy sterujące, które są związane z procesem rejestrowania.
 5. Wykonaj działania, które chcesz wykonać w interfejsu użytkownika (UI) Retail Modern POS lub Cloud POS.
@@ -72,7 +72,7 @@ Wykonaj następujące kroki, aby utworzyć nowe nagranie przy użyciu Rejestrato
 
 Po zakończeniu sesji rejestrowania wyświetlanych jest kilka opcji, dzięki czemu można pobrać nagranie.
 
-[![Opcje pobierania](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Opcje pobierania.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Zapisz na tym komputerze
 
@@ -88,7 +88,7 @@ Nieprzetworzony plik nagrania będzie przydatny w scenariuszach deweloperskich, 
 
 ## <a name="recording-controls"></a>Elementy sterujące rejestrowania
 
-[![Elementy sterujące rejestrowania](./media/controls.jpg)](./media/controls.jpg)
+[![Elementy sterujące rejestrowania.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Zatrzymaj
 
@@ -117,13 +117,13 @@ Początek i koniec zestawu zgrupowanych kroków można określić przy użyciu p
 
 Adnotacja to dodatkowy tekst, który można dodać do kroku w nagraniu. Na przykład można użyć adnotacji w celu udostępnienia użytkownikowi dodatkowego kontekstu lub instrukcji. Można dodać adnotacje, przed lub po kroku. Adnotację można dodać do dowolnego kroku, klikając przycisk **Edytuj** (symbol ołówka) po prawej stronie kroku.
 
-[![Przycisk Edytuj dla kroku](./media/annotate.jpg)](./media/annotate.jpg)
+[![Przycisk Edytuj dla kroku.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Teksty i notatki
 
 Można użyć pól **Teksty** i **Notatki** w celu dodania tekstu, który ma być skojarzony z krokiem w przewodniku po zadaniu.
 
-[![Pola Teksty i Notatki](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Pola Teksty i Notatki.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Tekst
 
@@ -137,7 +137,7 @@ Tekst wprowadzony w polu **Notatki** pojawi się *pod* tekstem kroku w przewodni
 
 Aby wyświetlić własne niestandardowe nagrania zadań w okienku Pomocy programu Retail Modern POS i Cloud POS, by mogły być wyświetlane jako tekst, należy zapisać nagrania zadań w bibliotece BPM, a następnie zaktualizować parametry systemu Pomocy, aby wskazywał bibliotekę BPM. Aby uzyskać więcej informacji, zobacz [Łączenie z systemem Pomocy](../fin-ops-core/fin-ops/get-started/help-connect.md). Pomoc programu Retail Modern POS i Cloud POS wyszukuje usługi LCS w czasie rzeczywistym. Przeszukuje wszystkie biblioteki BPM wybrane w parametrach systemu Commerce — Pomoc i przedstawia odpowiednie wyniki. Aby uzyskać dostęp do menu **Pomoc**, kliknij przycisk **Pomoc** (znak zapytania) znajdujący się u góry ekranu, a następnie w polu wyszukiwania wpisz nazwę procesu i kliknij przycisk wyszukiwania.
 
-[![Przycisk Pomoc](./media/help.jpg)](./media/help.jpg)
+[![Przycisk Pomoc.](./media/help.jpg)](./media/help.jpg)
 
 Po kliknięciu pozycji Przewodnik po zadaniu w wynikach wyszukiwania można wyświetlić kroki jako tematy pomocy lub wyeksportować kroki do dokumentu programu Word.
 

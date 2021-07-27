@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 453c6f18c689bb8bf2f6208d9181b23a2792f41a
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c08cee1fc772dbd06aeca3a96fdc40c1ca62413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907772"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353897"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Tworzenie użytkowników Portalu klienta i zarządzanie nimi
 
@@ -38,7 +38,7 @@ Film [Zaproś klientów do rejestracji i korzystania z Twojego portalu klienta](
 
 Kontakty w portalach Power Apps są przechowywane jako rekordy w tabeli **Kontakty** w Microsoft Dataverse. Podwójne zapisanie następnie synchronizuje te rekordy do Microsoft Dynamics 365 Supply Chain Management, jeśli jest to wymagane.
 
-![Diagram systemu dla kontaktów Portalu klienta](media/customer-portal-contacts.png "Diagram systemu dla kontaktów Portalu klienta")
+![Diagram systemu dla kontaktów Portalu klienta.](media/customer-portal-contacts.png "Diagram systemu dla kontaktów Portalu klienta")
 
 Przed rozpoczęciem zapraszania nowych odbiorców należy się upewnić, że mapowanie tabeli **Kontaktów** zostało włączone w trybie podwójnego zapisywania.
 

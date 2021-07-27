@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: 12de6d70243bdcda5fc7887f24eecb462de23683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937337"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351026"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -106,7 +107,7 @@ Dostępne są dwa widoki mapowania: **Wizualizacja mapowania**, czyli widok domy
 
 Mapowanie można wygenerować na stronie, wybierając opcję **Generuj mapowanie źródła**. Wygenerowane mapowanie zachowuje się jak mapowanie automatyczne. Dlatego należy ręczne zmapować wszystkie niezmapowane pola.
 
-![Mapowanie danych](./media/dixf-map.png)
+![Mapowanie danych.](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Sprawdzanie zabezpieczeń zadania importu lub eksportu
 Dostęp do obszaru roboczego **Zarządzanie danymi** można ograniczyć tak, aby użytkownicy inni niż administratorzy mieli dostęp tylko do określonych zadań danych. Dostęp do zadania danych oznacza pełny dostęp do historii wykonania tego zdania i dostęp do tabeli przemieszczania. W związku z tym należy się upewnić, że kontrola dostępu odpowiednie obowiązują podczas tworzenia zadania danych.
@@ -132,7 +133,7 @@ Zadanie można uruchomić jeden raz, klikając przycisk **Importuj** lub **Ekspo
 ## <a name="validate-that-the-job-ran-as-expected"></a>Sprawdzanie, czy zadanie zostało uruchomione zgodnie z oczekiwaniami
 Dostępna jest historia zadań umożliwiająca rozwiązywanie problemów i badanie zadań importu i eksportu. Historyczne uruchomienia zadań są zorganizowane według zakresów czasu.
 
-![Zakresy historii zadań](./media/dixf-job-history.md.png)
+![Zakresy historii zadań.](./media/dixf-job-history.md.png)
 
 Dla każdego uruchomionego zadania dostępne są następujące informacje:
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dcede0818630329a5608c2d294c9c9f4f749f13
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3cbd4a034b89308c33651c5a923b67bc0eabf413
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750139"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345769"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Projektant formuł w module Raportowanie elektroniczne (ER)
 
@@ -58,11 +58,11 @@ Projektant formuł raportowania elektronicznego może służyć do definiowania 
 
 Poniższa ilustracja pokazuje projekt wyrażenia tego typu. W tym przykładzie wyrażenie zaokrągla wartość pola **Intrastat.AmountMST** w tabeli Intrastat do dwóch miejsc dziesiętnych, a następnie zwraca zaokrągloną wartość.
 
-[![Wyrażenie wiązania danych](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Wyrażenie wiązania danych.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Poniższa ilustracja pokazuje sposób użycia wyrażenia tego typu. W tym przykładzie wynik zaprojektowanego wyrażenia jest wprowadzany w składniku **Transaction.InvoicedAmount** modelu danych **Model raportowania podatku**.
 
-[![Używanie wyrażenia wiązania danych](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Używanie wyrażenia wiązania danych.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 W czasie wykonywania zaprojektowana formuła `ROUND (Intrastat.AmountMST, 2)` zaokrągla wartość pola **AmountMST** dla każdego rekordu w tabeli Intrastat do dwóch miejsc dziesiętnych. Następnie wprowadza zaokrągloną wartość w składniku **Transaction.InvoicedAmount** modelu danych **Raportowanie podatku**.
 
@@ -72,17 +72,17 @@ Projektant formuł ER może służyć do definiowania wyrażenia formatującego 
 
 Poniższa ilustracja pokazuje projekt przekształcenia tego typu. W tym przykładzie przekształcenie **TrimmedString** obcina przychodzące dane o typie danych *Ciąg*, usuwając spacje początkowe i końcowe. Następnie zwraca obciętą wartość ciągu.
 
-[![Przekształcenie](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Przekształcenie.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Poniższa ilustracja pokazuje sposób użycia przekształcenia tego typu. W tym przykładzie kilka składników formatu wysyła tekst jako dane wyjściowe do generowania dokumentu elektronicznego w czasie wykonywania. Wszystkie te składniki formatu odwołują się do przekształcenia **TrimmedString** według nazwy.
 
-[![Używanie przekształcenia](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Używanie przekształcenia.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Jeśli składniki formatu, takie jak **partyName** na poprzedniej ilustracji, odwołują się do przekształcenia **TrimmedString**, przekształcenie wysyła tekst jako dane wyjściowe do generowanego dokumentu elektronicznego. Tekst nie zawiera spacji wiodących ani końcowych.
 
 Jeśli jest używane formatowanie, które musi być stosowane indywidualnie, można je wprowadzić jako indywidualne wyrażenie wiązania konkretnego składnika formatu. Poniższa ilustracja pokazuje wyrażenie tego typu. W tym przykładzie składnik formatu **partyType** jest powiązany ze źródłem danych poprzez wyrażenie, które konwertuje dane przychodzące z pola **Model.Company.RegistrationType** w źródle danych na tekst pisany wielkimi literami. Następnie wyrażenie wysyła ten tekst jako dane wyjściowe do dokumentu elektronicznego.
 
-[![Stosowanie formatowania do jednego składnika](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Stosowanie formatowania do jednego składnika.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Kontrola przepływu procesu
 
@@ -98,7 +98,7 @@ Każda reguła kontroli przepływu procesu została zaprojektowana jako indywidu
 - Jeśli lista transakcji jest pusta, mechanizm weryfikacji zatrzymuje proces wykonywania i zwraca wartość **FALSE**.
 - Funkcja weryfikacji zwraca komunikat o błędzie zawierający treść etykiety SYS70894 w języku preferowanym przez użytkownika.
 
-[![Weryfikacja](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Weryfikacja.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 Projektant formuł ER pozwala również ustawić nazwę pliku generowanego dokumentu elektronicznego i kontrolować proces tworzenia pliku. Poniższa ilustracja pokazuje projekt tego typu kontroli przebiegu procesu. Poniżej znajduje się objaśnienie konfiguracji użytej w tym przykładzie:
 
@@ -107,7 +107,7 @@ Projektant formuł ER pozwala również ustawić nazwę pliku generowanego dokum
 - Wyrażenie zwraca nazwę pliku dla generowania dokumentów elektronicznych, łącząc nazwę pliku i rozszerzenie nazwy pliku. Dla partii drugiej i wszystkich kolejnych nazwa pliku zawiera identyfikator partii jako sufiks.
 - Wyrażenie umożliwia (poprzez zwrócenie wartości **TRUE**) proces tworzenia plików dla partii zawierających co najmniej jeden rekord.
 
-[![Kontrola przepływu procesu](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Kontrola przepływu procesu.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Kontrola zawartości dokumentu
 
@@ -121,18 +121,18 @@ Poniższa ilustracja pokazuje wyrażenia tego typu. (Wersja 11.12.11 formatu kon
 - Składnik **PaymentNotes** jest używany do generowania tekstu uwag do płatności.
 - Składnik **DelimitedSequence** umożliwia generowanie faktur rozdzielanych przecinkami, które służą do rozliczenia bieżącego przelewu kredytowego.
 
-[![Składniki PaymentNotes i DelimitedSequence](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![Składniki PaymentNotes i DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > Składniki **PaymentNotes** i **DelimitedSequence** są oznaczane przy użyciu znaku zapytania. Znak zapytania wskazuje, że użycie składnika jest warunkowe. W takim przypadku użycie składników opiera się na następujących kryteriach:
 >
 > - Wyrażenie `@.PaymentsNotes <> ""` zdefiniowane dla składnika **PaymentNotes** włącza (zwracając wartość **TRUE**) wypełnianie elementu XML **Ustrd** przy użyci uwag dotyczących płatności, jeśli ten tekst dla polecenia przelewu nie jest pusty.
 >
->    [![Wyrażenie dla składnika PaymentNotes](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![Wyrażenie dla składnika PaymentNotes.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - Wyrażenie `@.PaymentsNotes = ""` zdefiniowane dla składnika **DelimitedSequence** włącza (zwracając wartość **TRUE**) wypełnianie elementu XML **Ustrd** przy użyciu oddzielanej przecinkami listy numerów faktur używanej do rozliczania bieżącego polecenia przelewu, gdy tekst uwag dotyczących płatności dla tego polecenia przelewu jest pusty.
 >
->    [![Wyrażenie dla składnika DelimitedSequence](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![Wyrażenie dla składnika DelimitedSequence.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Na podstawie tej konfiguracji wygenerowana wiadomość dla każdej płatności dłużnika, element XML **Ustrd**, będzie zawierać tekst uwag do płatności lub, jeśli taki tekst jest pusty, rozdzielaną przecinkami listę numerów faktur używanych do rozliczenia płatności.
 
@@ -140,7 +140,7 @@ Poniższa ilustracja pokazuje wyrażenia tego typu. (Wersja 11.12.11 formatu kon
 
 Na stronie **Projektant formuł** wybierz pozycję **Testuj**, aby sprawdzić, jak działa skonfigurowana formuła.
 
-[![Wybieranie testu w celu zweryfikowania formuły](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Wybieranie testu w celu zweryfikowania formuły.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Gdy wymagane są wartości argumentów formuły, można otworzyć okno dialogowe **Wyrażenie testowe** na stronie **Projektant formuł**. W większości przypadków te argumenty muszą być definiowane ręcznie, ponieważ skonfigurowane powiązania nie są uruchamiane w czasie projektowania. Na karcie **Wynik testu** na stronie **Projektant formuł** jest wyświetlany wynik z wykonania skonfigurowanej formuły.
 
@@ -148,15 +148,15 @@ W poniższym przykładzie pokazano, jak można przetestować formułę skonfigur
 
 Podczas testowania tej formuły można użyć okna dialogowego **Wyrażenie testowe**, aby określić wartość kodu asortymentu Intrastat do testowania.
 
-[![Określanie kodu asortymentu Intrastat do testowania](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![Określanie kodu asortymentu Intrastat do testowania.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Po określeniu kodu asortymentu Intrastat i wybraniu przycisku **OK** na karcie **Wynik testu** na stronie **Projektant formuł** jest wyświetlany wynik wykonania skonfigurowanej formuły. Następnie możesz ocenić, czy wynik jest dopuszczalny. Jeśli wynik nie jest dopuszczalny, możesz zaktualizować formułę i przetestować ją ponownie.
 
-[![Wynik testu](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Wynik testu.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Niektóre formuły nie mogą być testowane w czasie projektowania. Na przykład formuła może zwracać wynik typu danych, który nie może być wyświetlany na karcie **Wynik testu**. W takim przypadku zostanie wyświetlony komunikat o błędzie informujący, że nie można przetestować formuły.
 
-[![Komunikat o błędzie](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Komunikat o błędzie.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

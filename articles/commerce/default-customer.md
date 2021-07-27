@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799186"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349609"
 ---
 # <a name="create-a-default-customer"></a>Tworzenie domyślnego odbiorcy
 
@@ -47,7 +47,7 @@ Aby utworzyć grupę odbiorców, należy wykonać poniższe kroki.
 
 Poniższy obraz pokazuje kilku skonfigurowanych grup odbiorców.
 
-![Grupy odbiorców](media/customer-groups.png)
+![Grupy odbiorców.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Tworzenie książki adresowej odbiorców
 
@@ -63,7 +63,7 @@ Aby utworzyć książkę adresową odbiorcy należy wykonać poniższe kroki.
 
 Poniższy obraz przedstawia przykład książki adresowej.
 
-![Książka adresowa](media/address-book.png)
+![Książka adresowa.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Tworzenie domyślnego odbiorcy
 
@@ -86,11 +86,11 @@ Aby utworzyć domyślnego odbiorcę, należy wykonać poniższe kroki.
 
 Poniższy obraz przedstawia przykład tworzenia odbiorcy.
 
-![Domyślne tworzenie odbiorcy](media/default-customer-creation.png)
+![Domyślne tworzenie odbiorcy.](media/default-customer-creation.png)
 
 Poniższy rysunek przedstawia domyślną konfigurację klienta.
 
-![Konfiguracja przykładowa odbiorcy](media/default-customer-configuration1.png)
+![Konfiguracja przykładowa odbiorcy.](media/default-customer-configuration1.png)
 
 Większość wartości domyślnych na ekranie szczegóły odbiorcy może pozostać, ale dwie wartości powinny zostać zmienione.
 
@@ -100,13 +100,13 @@ Większość wartości domyślnych na ekranie szczegóły odbiorcy może pozosta
 
 Poniższy obraz przedstawia przykład konfiguracji tworzenia odbiorcy.
 
-![Przykład konfiguracji odbiorcy](media/default-customer-configuration2.png)
+![Przykład konfiguracji odbiorcy.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

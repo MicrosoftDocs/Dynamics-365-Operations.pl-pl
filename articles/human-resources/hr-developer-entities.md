@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 325bd8a9de07e3978ff6c513975a0e8db22854e0
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c405d933adff08e2a4ce12dc53329f10a9ae89b7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054363"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346305"
 ---
 # <a name="dataverse-tables"></a>Tabele Dataverse
 
@@ -156,23 +156,23 @@ Poniższe tabele Dataverse są dostępne w oparciu o encje Human Resources.
 
 ### <a name="job-and-job-position"></a>Stanowisko i stanowisko funkcji
 
-![Stanowisko i stanowisko funkcji](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Stanowisko i stanowisko funkcji.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
-### <a name="benefits"></a>Świadczenia
+### <a name="benefits"></a>Korzyści
 
-![Świadczenia](./media/HCMCommon-benefits-entity-diagram.png)
+![Korzyści.](./media/HCMCommon-benefits-entity-diagram.png)
 
-### <a name="compensation"></a>Kompensacja
+### <a name="compensation"></a>Kompensata
 
-![Kompensacja](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompensacja.](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Opuść
+### <a name="leave"></a>Urlop
 
-![Opuść](./media/HCMCommon-leave-entity-diagram.png)
+![Urlop.](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Kalendarz pracy
 
-![Kalendarz pracy](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Kalendarz pracy.](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

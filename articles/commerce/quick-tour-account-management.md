@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027970"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352067"
 ---
 # <a name="account-management-pages-overview"></a>Omówienie stron zarządzania kontem
 
@@ -35,7 +36,7 @@ Gdy odbiorca zaloguje się i wybierze **Moje konto**, zostanie otwarta strona do
 
 Poniższa ilustracja pokazuje przykład strony docelowej zarządzania kontem.
 
-![Przykład strony docelowej zarządzania kontem](./media/Account-Management.PNG)
+![Przykład strony docelowej zarządzania kontem.](./media/Account-Management.PNG)
 
 ### <a name="my-profile-page"></a>Strona Mój profil
 
@@ -43,7 +44,7 @@ Na stronie **Mój profil** są wyświetlane informacje o koncie odbiorcy, takie 
 
 Na poniższej ilustracji przedstawiono przykład strony **Mój profil**, która została utworzona przy użyciu biblioteki modułów.
 
-![Przykład strony Mój profil](./media/Account-Management-MyProfile.PNG)
+![Przykład strony Mój profil.](./media/Account-Management-MyProfile.PNG)
 
 ### <a name="addresses-page"></a>Strona adresów
 
@@ -51,7 +52,7 @@ Strona **adresy** pozwala odbiorcy dodawać adresy do swojego konta. Pokazuje ta
 
 Na poniższej ilustracji pokazano przykład strony **Adresy**.
 
-![Przykład strony adresy](./media/Account-Management-Address.png)
+![Przykład strony adresy.](./media/Account-Management-Address.png)
 
 ### <a name="order-history-and-order-details-pages"></a>Strony historii zamówień i Szczegóły zamówień
 
@@ -59,11 +60,11 @@ Na stronie **Historia zamówień** są wyświetlane podsumowanie wszystkich zam�
 
 Na poniższej ilustracji pokazano przykład strony **Historia zamówienia**.
 
-![Przykład strony historia zamówień](./media/Account-Management-OrderHistory.PNG)
+![Przykład strony historia zamówień.](./media/Account-Management-OrderHistory.PNG)
 
 Na poniższej ilustracji pokazano przykład strony **Szczegóły zamówienia**.
 
-![Przykład strony szczegóły zamówień](./media/Account-Management-OrderDetails.PNG)
+![Przykład strony szczegóły zamówień.](./media/Account-Management-OrderDetails.PNG)
 
 ### <a name="loyalty-program-page"></a>Strona Program lojalnościowy
 
@@ -71,7 +72,7 @@ Na stronie **Programu lojalnościowego** klient staje się członkiem programu l
 
 Na poniższe ilustracji pokazano przykład strony **Program lojalnościowy**.
 
-![Przykład strony programu lojalnościowego](./media/Account-Management-Loyalty.PNG)
+![Przykład strony programu lojalnościowego.](./media/Account-Management-Loyalty.PNG)
 
 ### <a name="wishlist-page"></a>Strona z listą życzeń
 
@@ -79,7 +80,7 @@ Na stronie **Lista życzeń** jest wyświetlana lista towarów, które odbiorca 
 
 Na poniższe ilustracji pokazano przykład strony **Lista życzeń**.
 
-![Przykład strony listy życzeń](./media/Account-Management-Wishlist.PNG)
+![Przykład strony listy życzeń.](./media/Account-Management-Wishlist.PNG)
 
 Aby uzyskać więcej informacji o modułach zarządzania kontach i sposobach ich tworzenia, należy zapoznać się z tematem [Zarządzanie kontami](account-management.md).
 

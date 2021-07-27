@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-17
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: d0e33128c37e970ebf5af87bd601ae30aef96952
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9a8dd3d8c6b92be9f22573f463aa96b13d9e3418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818591"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355539"
 ---
 # <a name="half-year-depreciation-convention-methodology"></a>Metodologia amortyzacji półrocznej
 
@@ -36,7 +36,7 @@ Pierwszy rok służby minie w grudniu 2020 roku, co oznacza, że koniec pięciol
 > Amortyzacja roczna 50 000/5 = 10 000 miesięczna amortyzacja 10 000/12 = 833,33 <br>
 > Amortyzacja w pierwszym roku 10 000/2 = 5000 i późniejsza Amortyzacja miesięczna 5000/9 = 555,56
 
-   [![Plan amortyzacji dla konwencji amortyzacji półrocznej](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
+   [![Plan amortyzacji dla konwencji amortyzacji półrocznej.](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 Rozszerzone okresy amortyzacji dodane przez konwencję półroczną zapewniają bardziej precyzyjną alokację amortyzacji. Konwencja półroczna reprezentuje wydatki na amortyzację w bardziej równomierny sposób, co jest przydatne przy raportowaniu zestawienia zysków i strat.
 

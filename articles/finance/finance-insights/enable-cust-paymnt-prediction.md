@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222593"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349041"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Włączanie prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -51,7 +51,7 @@ W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania
 
     1. Wybierz kolejno opcje **Kredyty i windykacji \> Ustawienia \> Finance Insights \> Parametry Finance Insights**.
 
-        [![Strona parametrów wglądów finansowych przed skonfigurowaniem funkcji](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Strona parametrów wglądów finansowych przed skonfigurowaniem funkcji.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. Na stronie **Parametry Financial insights** na karcie **Wgląd w płatności od odbiorców** wybierz łącze **Wyświetl pola danych używane w modelu prognozy**, aby otworzyć stronę **Pola danych modelu prognozy**. Istnieje możliwość wyświetlenia domyślnej listy pól, które są używane do tworzenia modelu predykcyjnego sztucznej inteligencji (AI) prognoz płatności odbiorcy.
 
@@ -77,7 +77,7 @@ W tym temacie wyjaśniono, jak włączyć i konfigurować funkcję prognozowania
 
 Po włączeniu i skonfigurowaniu funkcji oraz utworzeniu modelu przewidywania model przewidywania działa, sekcja **model przewidywania** na stronie **parametry Financial Insights** pokazuje dokładność modelu, tak jak to pokazano na poniższej ilustracji.
 
-[![Dokładność modelu przewidywania na stronie parametrów Financial insights](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Dokładność modelu przewidywania na stronie parametrów Financial insights.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Szczegóły zwolnienia
 

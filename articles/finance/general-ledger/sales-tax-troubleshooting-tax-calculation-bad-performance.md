@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 6fce4e2cb8c5507769533a875e23ccc4531abf51
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2bb1f22c33de52f9a7bc00b450ce131d4d58d200
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020146"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352841"
 ---
 # <a name="tax-calculation-performance-affects-transactions"></a>Wydajność obliczania podatku wpływa na transakcje
 
@@ -36,7 +36,7 @@ Następnie można określić, czy któryś z poniższych warunków jest spełnio
 - W wielu sesjach jest jednocześnie przetwarzany ten sam podatek dla transakcji.
 - Transakcja ma wiele wierszy, a widoki są aktualizowane w czasie rzeczywistym. Na przykład pole **Obliczona kwota podatku** na stronie **Arkusz ogólny** jest aktualizowane w czasie rzeczywistym, gdy pola wiersza uległy zmianie.
 
-   [![Pole obliczonej kwoty podatku na stronie załącznika arkusza](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
+   [![Pole obliczonej kwoty podatku na stronie załącznika arkusza.](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture1.png)
 
 Jeśli którykolwiek z tych warunków jest spełniony, opóźnij obliczanie podatku.
 
@@ -53,11 +53,11 @@ Przejrzyj oś czasu stosu wywołań, aby określić, czy istnieją następujące
 
 - Transakcja powoduje, że system zawiesza się do końca sesji. W związku z tym transakcja nie może obliczyć wyniku podatku. Na poniższej ilustracji przedstawiono odbierane okno komunikatu „Sesja zakończona”.
 
-    [![Komunikat o zakończeniu sesji](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
+    [![Komunikat o zakończeniu sesji.](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture2.png)
 
 - Metody **TaxUncommitted** zabierają więcej czasu niż inne metody. Na przykład na poniższej ilustracji metoda **TaxUncommitted::updateTaxUncommitted()** zabiera 43 347,42 sekundy, a inne metody tylko 0,09 sekundy.
 
-    [![Czasy trwania metod](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
+    [![Czasy trwania metod.](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)](./media/tax-calculation-bad-performance-impacts-transaction-Picture3.png)
 
 ## <a name="customizing-and-calling-tax-calculation"></a>Dostosowywanie i wywoływanie obliczeń podatku
 

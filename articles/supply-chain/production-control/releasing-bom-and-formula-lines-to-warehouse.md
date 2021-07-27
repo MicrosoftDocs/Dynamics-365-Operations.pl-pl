@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811685"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350553"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Zwalnianie wierszy BOM i wierszy formuły do magazynu
 
@@ -61,7 +61,7 @@ W kwerendzie zadania wsadowego **Automatyczne zwalnianie wierszy BOM i formuły*
 
 Na poniższej ilustracji przedstawiono zlecenie produkcyjne zawierające dwa zadania, 10 i 20, obejmujące montaż i pakowanie zlecenia produkcyjnego. Każde zadanie jest skonfigurowane w celu zużycia określonej ilości materiału. Na tej ilustracji horyzont czasowy zwalniania wskazany zieloną strzałką pod linią czasu równa się liczbie dni określonych w kryterium **(LessThanDate())**. Przykładowo **(LessThanDate(2))** oznacza, że zadanie powinno szukać niezwolnionych ilości tylko w horyzoncie czasowym wynoszącym dwa dni.
 
-![Przykład zlecenia produkcyjnego zawierającego dwa zadania wsadowe](media/bach-job-setup.PNG)
+![Przykład zlecenia produkcyjnego zawierającego dwa zadania wsadowe.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Zwalnianie materiału według numeru operacji lub proporcjonalnie do ilości wyrobów gotowych
 
@@ -78,7 +78,7 @@ Aby kontrolować operacje, do których ma być zwalniany materiał, użyj strony
 
 Poniższa operacja przedstawia zlecenie produkcyjne zawierające dwie operacje, 10 i 20. W tym przykładzie, po ograniczeniu zwolnienia do operacji 10, zostanie zwolniony tylko materiał M9203.
 
-![Przykład zwalniania materiału według numeru operacji](media/two-operations.PNG)
+![Przykład zwalniania materiału według numeru operacji.](media/two-operations.PNG)
 
 Aby zapoznać się z szybką demonstracją zwalniania materiału proporcjonalnie do ilości wyrobów gotowych, obejrzyj ten krótki film na YouTube: [Ulepszenia procesu zwalniania zleceń produkcyjnych](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

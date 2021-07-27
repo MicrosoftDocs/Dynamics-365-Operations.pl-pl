@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65adcd07f1649b2e4eb2e2528507bb15631782ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69653d0dde2d3675a5af5cdc032a3c9c9462d705
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354091"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Środki trwałe i zlecenia pracy
 
@@ -34,31 +34,31 @@ W module Zarządzanie składnikami majątku, składniki majątku mogą być powi
 
 Poniższa ilustracja przedstawia relację między projektem inwestycyjnym w module **zarządzanie projektami i ich księgowanie** oraz projektem zadania zlecenia pracy.
 
-![Rysunek 1](media/24-work-orders.png)
+![Rysunek 1.](media/24-work-orders.png)
 
 Poniższa procedura opisuje relację między składnikami majątku, zleceniami pracy, projektami zadań zlecenia pracy i środkami trwałymi.
 
 1. Tworzony jest składnik majątku powiązany z środkiem trwałym.
 
-![Rysunek 2](media/25-work-orders.png)
+![Rysunek 2.](media/25-work-orders.png)
 
 2. Podczas konfigurowania typów zleceń pracy na stronie **Typy zleceń pracy** (**Zarządzanie składnikami majątku** > **Konfiguracja** > **Zlecenia pracy** > **Typy zleceń pracy**) tworzony jest typ zlecenia pracy służący do obsługi inwestycji. Zobacz również [Typy zleceń pracy](../setup-for-work-orders/work-order-types.md).
 
-![Rysunek 3](media/26-work-orders.png)
+![Rysunek 3.](media/26-work-orders.png)
 
 3. Podczas konfigurowania grup projektów zleceń pracy na karcie **Grupa projektów** na stronie **Ustawienia projektu zlecenia pracy** (**Zarządzanie składnikami majątku** > **Konfiguracja** > **Zlecenia pracy** > **Ustawienia projektu**), tworzy relację między typem zlecenia pracy używanym w inwestycjach a grupą projektów utworzoną dla inwestycji na stronie **Grupy projektów** w module **Zarządzanie projektami i ich księgowanie** (**Zarządzanie projektami i ich księgowanie** > **Konfiguracja** > **Księgowanie** > **Grupy projektów**).
 
-![Rysunek 4](media/27-work-orders.png)
+![Rysunek 4.](media/27-work-orders.png)
 
 4. Podczas tworzenia zlecenia pracy związanego ze środkiem trwałym należy wybrać typ zlecenia pracy używanego do obsługi inwestycji, na przykład **Inwestycja**.
 
 5. Po utworzeniu zlecenia pracy typ powiązanego zlecenia jest pokazywany na stronie **Wszystkie zlecenia pracy**.
 
-![Rysunek 5](media/28-work-orders.png)
+![Rysunek 5.](media/28-work-orders.png)
 
 6. Po utworzeniu zlecenia produkcyjnego projekt powiązany z danym zleceniem produkcyjnym jest tworzony na stronie **Wszystkie projekty** w module **Zarządzanie projektami i ich księgowanie** (**Zarządzanie projektami i ich księgowanie** > **Projekty** > **Wszystkie projekty**). Aby wyświetlić informacje związane z projektem, należy wybrać łącze w polu **Identyfikator projektu** na karcie **Ogólne** w skróconej karcie **Szczegóły wiersza** na stronie **Wszystkie zlecenia pracy** w module **Zarządzanie składnikami majątku** (**Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**).
 
-![Rysunek 6](media/29-work-orders.png)
+![Rysunek 6.](media/29-work-orders.png)
 
 7. Aby wyświetlić przegląd projektów skojarzonych z środkiem trwałym, należy wybrać **Środki trwałe** > **Środki trwałe** > **Środki trwałe**, a następnie w polu **Numer środka trwałego** wybrać łącze dla środka trwałego w celu otwarcia widoku szczegółów. Rozwiń **Pokrewne okienko informacji** po prawej stronie strony i wybierz skróconą kartę **Skojarzone projekty**.
 

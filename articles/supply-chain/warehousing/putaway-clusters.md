@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f681d08268bdf92212eb5e0c99532bb0827afe7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344177"
 ---
 # <a name="putaway-clusters"></a>Grupy odłożenia
 
@@ -284,7 +284,7 @@ Aby możliwe było odłożenie elementów w grupie, należy zamknąć grupę.
 
     Masz standardowe opcje zastąpienia lub przejścia tego kroku.
 
-    ![Strona Grupa odłożenia: Odłożenie](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
+    ![Strona Grupa odłożenia: Odłożenie.](media/Cluster_putaway-Put.png "Strona Grupa odłożenia: Odłożenie")
 
 1. Wybierz **OK**, aby potwierdzić odłożenie grupy.
 

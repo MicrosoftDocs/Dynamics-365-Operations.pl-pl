@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351376"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Przetwarzanie płatności zwrotów w biurach obsługi
 
@@ -37,7 +37,7 @@ Centrum obsługi telefonicznej korzysta z metody płatności pierwotnego zamówi
 
     Na poniższej ilustracji przedstawiono konfigurację scenariusza, w którym klient zwraca produkty z zamówienia sprzedaży, które jest połączone z walutą USD i które zostało pierwotnie opłacone przy użyciu zwykłego typu płatności lub czeku. W tym scenariuszu zwrot środków zostanie przekazany klientowi za pośrednictwem wygenerowanego przez system czeku zwrotnego. Metoda płatności **REF-CHK** AR została skonfigurowana jako typ płatności dla czeku zwrotu.
 
-    ![Konfiguracja metod zwrotu dla centrum obsługi dla oryginalnych płatności zwykłych i za pomocą czeku](media/callcenterrefundmethods.png)
+    ![Konfiguracja metod zwrotu dla centrum obsługi dla oryginalnych płatności zwykłych i za pomocą czeku.](media/callcenterrefundmethods.png)
 
 - **Karta kredytowa** – Gdy tworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono kartą kredytową, logika centrum obsługi dla płatności zwrotów jest taka sama, jak oryginalna karta kredytowa do zamówienia zwrotu.
 - **Karta lojalnościowa** – Gdy utworzone zamówienie zwrotu odwołuje się do oryginalnego zamówienia, za które zapłacono przy użyciu karty lojalnościowej klienta, logika centrum obsługi telefonicznej dla płatności refundacji stosuje zwrot do tej samej karty lojalnościowej.
@@ -48,7 +48,7 @@ Jeśli oryginalny typ płatności dla zamówienia jest nieznany z dowolnej przyc
 
 Na poniższej ilustracji pokazano pole **Metoda płatności** na karcie **Autoryzacja zwrotu/Zwrot** na stronie **Parametry biura obsługi**.
 
-![Pole Metoda płatności na karcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi](media/callcenterrefundparameters.png)
+![Pole Metoda płatności na karcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > Opisane wcześniej reguły przetwarzania zwrotów dotyczą także zamówień lub wierszy zamówień, które użytkownik centrum obsługi anuluje w programie Commerce Headquarters. Jeśli anulowanie zamówienia lub określonych wierszy zamówienia powoduje nadpłatę, do generowania wierszy płatności zwrotu będą używane te same reguły.
@@ -82,7 +82,7 @@ Ustawienie **Tak** dla opcji **Zastosuj kredyt** ma zastosowanie tylko w przypad
 > [!NOTE]
 > W przypadku zamówienia zwrotu, które nie ma połączonego zamówienia wymiany, ustawienie **Tak** dla opcji **Zastosuj kredyt** nie będzie mieć wpływu na logikę płatności zamówienia zwrotu, ponieważ to ustawienie dotyczy tylko zamówień wymiany.
 
-![Pole zastosuj płatność kredytową na karcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi](media/callcenterrefundparameters1.png)
+![Pole zastosuj płatność kredytową na karcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Jeśli użytkownicy tworzący zamówienia wymiany planują korzystanie z opcji **Zastosuj kredyt**, nie powinni uruchamiać funkcji **Zakończenie** dla zamówienia zwrotu przed ustawieniem opcji **Zastosuj kredyt** na wartość **Tak**. Po uruchomieniu funkcji **Zakończenie** płatność zwrotu jest obliczana i stosowana do zamówienia sprzedaży dla zwrotu. Próba ustawienia opcji **Zastosuj kredyt** na wartość **Tak**, jeśli płatność zwrotu już została obliczona i zastosowana nie wywoła ponownego obliczenia płatności zwrotu, a metoda płatności wybrana w polu **Zastosuj metodę płatności kredytowej** nie będzie stosowana. Jeśli w tym kontekście ma być używana opcja **Zastosuj kredyt**, użytkownik musi usunąć zamówienie wymiany i autoryzację zwrotu, a następnie uruchomić od nowa i utworzyć nową autoryzację zwrotu. W tej chwili użytkownik musi upewnić się, że opcja **Zastosuj kredyt** ma wartość **Tak** przed uruchomieniem funkcji **Zakończenie**.
@@ -91,14 +91,14 @@ Ustawienie **Tak** dla opcji **Zastosuj kredyt** ma zastosowanie tylko w przypad
 
 Chociaż logika call center systematycznie określa metodę zwrotu pieniędzy w sposób opisany wcześniej w tym temacie, użytkownicy mogą czasami chcieć zastąpić te płatności. Na przykład użytkownik może edytować lub usunąć istniejące wiersze płatności zwrotu i zastosować nowe linie płatności. Zwroty obliczane przez system mogą być zmieniane tylko przez użytkowników, którzy mają odpowiednie uprawnienia zastępowania. Te uprawnienia można skonfigurować na stronie **Zastępowanie uprawnień** w sieci sprzedaży i handlu. Aby można było zastąpić płatność zwrotem, użytkownik musi być połączony z rolą zabezpieczeń, w której ustawiono opcję **Zezwalaj na alternatywną płatność** na **Tak** na stronie **Uprawnienia do zastępowania**.
 
-![Zezwalaj na alternatywną opcję płatności na stronie Zastępowanie uprawnień](media/overridepermissions.png)
+![Zezwalaj na alternatywną opcję płatności na stronie Zastępowanie uprawnień.](media/overridepermissions.png)
 
 Ewentualnie organizacja może ustawić opcję **Zezwalaj na zastępowanie płatności** na wartość **Tak** na karcie **Autoryzacja zwrotu/Zwrot** na stronie **Parametry centrum obsługi**. W takim przypadku należy wybrać kod zastąpienia zabezpieczeń w polu **Kod zastąpienia zabezpieczeń**. Kod zastępujący zabezpieczenia to kod alfanumeryczny, który musi być zarządzany zewnętrznie, ponieważ użytkownicy nie mogą go wyświetlać w Commerce headquarters po jego ustawieniu. Kod zastąpienia zabezpieczeń powinien być znany tylko przez kilka zaufanych osób w organizacji. Gdy opcja **Zezwalaj na zastępowanie płatności** ma wartość **Tak**, użytkownicy, którzy nie mają odpowiednich uprawnień roli, próbują zmienić metodę płatności w zamówieniu zwrotu, będą mieć możliwość wprowadzenia kodu zastąpienia zabezpieczeń. Jeśli go nie znasz lub menedżer lub kierownik nie może go wprowadzić na stronie, nie będzie mógł zastąpić metody płatności zwrotu.
 
 > [!NOTE]
 > Jeśli kod zastąpienia zabezpieczeń zostanie utracony lub zapomniany, organizacja będzie musiał go zresetować, definiując nowy kod zastąpienia zabezpieczeń w polu **Kod zastąpienia zabezpieczeń** na karcie **Autoryzacja zwrotu/Zwrot** na stronie **Parametry centrum obsługi**.
 
-![Parametry nadpisania płatności nakarcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi](media/overridepaymentparameter.png)
+![Parametry nadpisania płatności na karcie Autoryzacja zwrotu/Zwrot na stronie Parametry biura obsługi.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Zanim organizacje spróbują zastąpić zwroty płatności korzystające z rodzajów płatności kartą kredytową, powinny sprawdzić, czy ich procesor kart kredytowych umożliwia zwroty niepowiązane. Wielu procesorów wymaga, aby zwroty był księgowane z powrotem na oryginalnej karcie. Każda próba zwrotu pieniędzy na kartę, która nie została wcześniej zarejestrowana, może spowodować błędy księgowania w procesorze.

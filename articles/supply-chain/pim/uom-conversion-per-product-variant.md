@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921224"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353547"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Przeliczanie jednostki miary dla wariantów produktów
 
@@ -56,7 +56,7 @@ Aby skonfigurować produkt główny w celu obsługi konwersji jednostek na waria
     - **Produkt** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla produktu głównego. Ta konwersja jednostek będzie używana jako rezerwowa dla wszystkich wariantów produktu, dla których nie zdefiniowano żadnej konwersji jednostek.
     - **Wariant produktu** — wybranie tej wartości umożliwi skonfigurowanie konwersji jednostek dla określonego wariantu produktu. Użyj pola **Wariant produktu**, aby wybrać wariant.
 
-    ![Dodawanie nowej konwersji jednostek](media/uom-new-conversion.png "Dodawanie nowej konwersji jednostek")
+    ![Dodawanie nowej konwersji jednostek.](media/uom-new-conversion.png "Dodawanie nowej konwersji jednostek")
 
 1. Aby skonfigurować konwersję jednostek, skorzystaj z dostępnych pól.
 1. Wybierz przycisk **OK**, aby zapisać nową konwersję jednostek.

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019964"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348275"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Płynny przełącznik offline dla operacji na kartach upominkowych i notach kredytowych
 
@@ -36,7 +36,7 @@ Jeśli jednak w punkcie sprzedaży utraci się łączność po dodaniu karty upo
 
 Aby włączyć funkcję do zawierania transakcji kart upominkowych po przełączeniu do trybu offline, przejdź na kartę **Księgowanie** na stronie **Parametry rozwiązania Commerce**. Na tej karcie zlokalizuj skróconej karcie **Karty upominkowe** i w **Zezwalaj na zawieranie transakcji kartami upominkowymi w trybie offline** określ wartość **Tak**.
 
-![Ustawienie karty upominkowej w trybie offline](../media/gift.png)
+![Ustawienie karty upominkowej w trybie offline.](../media/gift.png)
 
 Parametry rozwiązania Commerce są zazwyczaj buforowane. Po zaktualizowaniu tego parametru, harmonogram dystrybucji jest inicjowany w celu zsynchronizowania zmiany w kanale, wprowadzanie zmian może potrwać do 24 godzin. Aby zmiana zaczęła obowiązywać natychmiast, należy zresetować Internet Information Services (IIS) firmy Microsoft.
 
@@ -46,7 +46,7 @@ Podobnie jak wewnętrzne karty upominkowe, noty kredytowe są obsługiwane centr
 
 Aby włączyć funkcję do zawierania transakcji notami kredytowymi po przełączeniu do trybu offline, przejdź na kartę **Księgowanie** na stronie **Parametry rozwiązania Commerce**. Na tej karcie zlokalizuj skróconej karcie **Nota kredytowa** i w **Zezwalaj na zawieranie transakcji notami kredytowymi w trybie offline** określ wartość **Tak**.
 
-![Ustawienie noty kredytowej w trybie offline](../media/creditmemo.png)
+![Ustawienie noty kredytowej w trybie offline.](../media/creditmemo.png)
 
 Parametry rozwiązania Commerce są zazwyczaj buforowane. Po zaktualizowaniu tego parametru, harmonogram dystrybucji jest inicjowany w celu zsynchronizowania zmiany w kanale, wprowadzanie zmian może potrwać do 24 godzin. Aby zmiana zaczęła obowiązywać, należy zresetować usługi IIS.
 

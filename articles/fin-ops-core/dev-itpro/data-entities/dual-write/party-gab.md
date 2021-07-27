@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216619"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346627"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
@@ -41,7 +41,7 @@ Model strony jest często używany do reprezentowania średnich i złożonych re
 
 Poniższa ilustracja przedstawia model danych strony.
 
-![Model danych strony](media/party-gab-image1.png)
+![Model danych strony.](media/party-gab-image1.png)
 
 > [!TIP]
 > Podczas tworzenia nowego rekordu konta użyj pola **Strona**, aby wyszukać rekord według nazwy. W ten sposób po odnalezieniu rekordu wystarczy go wybrać. System następnie automatycznie wstawia wszystkie dane strony. Nie musisz ręcznie ustawiać wszystkich wymaganych pól. Tak zachowują się gotowe strony **Konto**, **Osoba kontaktowa** i **Dostawca**.
@@ -58,7 +58,7 @@ W zależności od kontekstu biznesowego osoba lub organizacja może pełnić wi�
 
 Na poniższej ilustracji przedstawiono model danych globalnej książki adresowej.
 
-![Model danych globalnej książki adresowej](media/party-gab-image2.png)
+![Model danych globalnej książki adresowej.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakt
 
@@ -94,7 +94,7 @@ Te relacje są przechowywane w tabeli **Osoba kontaktowa dla strony**. Te inform
     + W przypadku wybrania wartości w polu **Skojarzony kontakt** wybierasz rozłożony kontakt typu **Osoba kontaktowa**.
     + W przypadku wybrania wartości w polu **Skojarzone konto** lub **Skojarzony dostawca** wybierasz organizację.
 
-    ![Karta Skojarzone organizacje na stronie Osoba kontaktowa](media/party-gab-image3.png)
+    ![Karta Skojarzone organizacje na stronie Osoba kontaktowa.](media/party-gab-image3.png)
 
     Niezależnie od wyboru, skojarzenie jest tworzone na poziomie jednostki i ma zastosowanie do wszystkich ról jednostki i jest przechowywane w jednostce **Osoba kontaktowa strony**.
 
@@ -109,7 +109,7 @@ Po otwarciu wiersza **Osoba kontaktowa**, w którym pole **Jest klientem** lub p
 
 Wprowadzono nową kartę o nazwie **Adresy** w stronach **Konto**, **Kontakt** i **Dostawca**. Ta karta obsługuje wiele adresów pocztowych przy użyciu siatki, tak jak pokazano na poniższej ilustracji.
 
-![Siatka adresów pocztowych](media/party-gab-image4.png)
+![Siatka adresów pocztowych.](media/party-gab-image4.png)
 
 Siatka zawiera następujące kolumny:
 
@@ -121,7 +121,7 @@ Przycisk **Nowy adres** nad siatką pozwala utworzyć dowolną liczbę adresów 
 
 Pola **Adres 1** i **Adres 2** na karcie **Podsumowanie** strony **Konto** odpowiadają odpowiednio adresom **Dostawy** i **Faktury**.
 
-![Karta Podsumowanie adresów pocztowych](media/party-gab-image5.png)
+![Karta Podsumowanie adresów pocztowych.](media/party-gab-image5.png)
 
 Pola **Adres 1**, **Adres 2** i **Adres 3** na karcie **Podsumowanie** strony **Osoba kontaktowa** odpowiadają odpowiednio adresom **Biznesowemu**, **Dostawy** i **Faktury**.
 
@@ -129,7 +129,7 @@ Pola **Adres 1**, **Adres 2** i **Adres 3** na karcie **Podsumowanie** strony **
 
 Wprowadzono nową kartę o nazwie **Adresy elektroniczne** w stronach **Konto**, **Kontakt** i **Dostawca**. Ta karta obsługuje wiele adresów elektronicznych przy użyciu siatki, tak jak pokazano na poniższej ilustracji.
 
-![Siatka adresów elektronicznych](media/party-gab-image6.png)
+![Siatka adresów elektronicznych.](media/party-gab-image6.png)
 
 Siatka zawiera następujące kolumny:
 
@@ -205,7 +205,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     | Identyfikator strony (pole) | Dokładne dopasowanie |
     | Wybierz (pole) | (puste) |
 
-    ![Duplikuj regułę dla kont](media/duplicate-rule-1.PNG)
+    ![Duplikuj regułę dla kont.](media/duplicate-rule-1.PNG)
 
 10. Rozwiń regułę wykrywania duplikatów dla tabeli **Osoby kontaktowe**, aby ustawić następujące pola.
 
@@ -221,7 +221,7 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     | Identyfikator strony (pole) | Dokładne dopasowanie |
     | Wybierz (pole) | (puste) |
 
-    ![Duplikuj regułę dla osób kontaktowych](media/duplicate-rule-2.PNG)
+    ![Duplikuj regułę dla osób kontaktowych.](media/duplicate-rule-2.PNG)
 
 11. Jeśli jesteś istniejącym użytkownikiem podwójnego zapisu, postępuj zgodnie z instrukcjami w sekcji [Uaktualnienie do modelu strony i globalnej książki adresowej](upgrade-party-gab.md) i uaktualnij dane.
 
@@ -300,11 +300,11 @@ Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym z
 + Adresy elektroniczne ustawione na kartach adresu elektronicznego formularzy **Konto**, **osoba kontaktowa** i **dostawca** nie pochodzą z tabeli `msdyn_partyelectronicaddress`. Ta informacja nie przepływa do skojarzonych z nim transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu. Zamierzamy rozwiązać ten problem w przyrostowej wersji. Istniejące dane w polach adresu elektronicznego konta i rekordów kontaktów będą nadal działać dla transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu.
 + W aplikacjach Finance and Operations możesz utworzyć rekord osoby kontaktowej za pomocą formularza **Dodaj osobę kontaktową**. Podczas próby utworzenia nowej osoby kontaktowej z formularza **Wyświetl osobę kontaktową** akcja nie powiedzie się. Jest to znany problem.
 
-    ![Znany problem z dodawania osoby kontaktowej](media/party-gab-contact-issue.png)
+    ![Znany problem z dodawania osoby kontaktowej.](media/party-gab-contact-issue.png)
 
 + **Synchronizacja początkowa** nie obsługuje pól czasu **Dostępny od** i **Dostępny do** w tabeli **Osoba kontaktowa dla strony**, ponieważ DIXF konwertuje wartość na ciąg, a nie liczbę całkowitą. Konwersja wywołuje błąd `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + Jeśli adres pocztowy jest używany z więcej niż jednej przyczyny, na przykład: adres komunikacji biznesowej i adres rozliczeniowy, powinien być wyświetlany jako `Business;Invoice` w sposób pokazany na poniższym obrazie. W przypadku dodawania odstępu między wartościami wystąpi błąd.
 
-    ![Znany problem z adresem](media/party-gab-address-issue.png)
+    ![Znany problem z adresem.](media/party-gab-address-issue.png)
 
 + Nie można wprowadzić adresu pocztowego z datą w przyszłości, używając aplikacji Finance and Operations z podwójnym zapisem, ponieważ Dataverse nie obsługuje ważności daty. Jeśli użytkownik wpisze w aplikacji Finance and Operations adres pocztowy z datą w przyszłości, zostanie on w pełni zsynchronizowany z Dataverse i natychmiast zobaczysz adres w interfejsie użytkownika. Wszelkie aktualizacje tego rekordu będą powodować błąd, ponieważ ma on datę przyszłą, a nie bieżącą w aplikacji Finance and Operations.

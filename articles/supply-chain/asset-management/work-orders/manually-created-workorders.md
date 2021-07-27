@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8962cbbc8f413093eef0fb3783aa6ced22f7bc2d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6e16c0bcd9521f822d0f92681e2a545439b78acb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354864"
 ---
 # <a name="manually-created-work-orders"></a>Ręcznie utworzone zlecenia pracy
 
@@ -111,7 +111,7 @@ Można utworzyć nowe zlecenie pracy odnoszące się do istniejącego zlecenia p
 
 Na poniższej ilustracji pokazano przykład okna dialogowego **Utwórz powiązane zlecenie pracy**.
 
-![Rysunek 1](media/03-work-orders.png)
+![Rysunek 1.](media/03-work-orders.png)
 
 >[!NOTE]
 >W przypadku skonfigurowania powiązanej maski zleceń pracy w polach **Parametry zarządzania składnikami majątku** > **karta Zlecenia pracy** > **Maska powiązanego zlecenia pracy**, identyfikatory zleceń pracy zostaną utworzone zgodnie z konfiguracją maski. Jeśli nie skonfigurowano powiązanej maski zlecenia pracy, dla pokrewnych zleceń pracy jest użyty kolejny dostępny identyfikator zlecenia pracy.
@@ -137,7 +137,7 @@ Istnieje możliwość szybkiego utworzenia nowego zlecenia pracy na podstawie is
 
 Na poniższej ilustracji przedstawiono przykład okna dialogowego **Kopiuj zlecenie pracy**.
 
-![Rysunek 2](media/04-work-orders.png)
+![Rysunek 2.](media/04-work-orders.png)
 
 
 ## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Tworzenie zlecenia pracy oparte na żądaniu konserwacji
@@ -157,7 +157,7 @@ Na poniższej ilustracji przedstawiono przykład okna dialogowego **Kopiuj zlece
 
 Na poniższej ilustracji przedstawiono przykład okna dialogowego **Tworzenie zlecenia pracy**.
 
-![Rysunek 3](media/05-work-orders.png)
+![Rysunek 3.](media/05-work-orders.png)
 
 
 >[!NOTE]

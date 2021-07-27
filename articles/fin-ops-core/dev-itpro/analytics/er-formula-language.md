@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223993"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355401"
 ---
 # <a name="electronic-reporting-formula-language"></a>Język formuł raportowania elektronicznego
 
@@ -117,15 +117,15 @@ Jeśli wyrażenie odwołuje się do źródła danych usystematyzowanych, można 
 
 Jeśli ścieżka źródła danych strukturalnych zaczyna się od znaku „at” (@), jest ścieżką względną. Zamiast pozostałej części ścieżki bezwzględnej struktury używanego drzewa hierarchicznego jest wyświetlany znak „at”. Na poniższej ilustracji pokazano przykład. W tym miejscu ścieżka bezwzględna `Ledger.'accountingCurrency()'` wskazuje, że wartość waluty rozliczeniowej ze źródła danych **Księga** jest wprowadzana w polu **AccountingCurrency** modelu danych.
 
-![Przykładowa ścieżka bezwzględna na stronie projektanta mapowania modelu ER](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Przykładowa ścieżka bezwzględna na stronie projektanta mapowania modelu ER.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 W przykładzie na poniższej ilustracji pokazano, jak jest używana ścieżka względna. Ścieżka względna `@.AccountNum` wskazuje, że pole **AccountNum** źródła danych **Intrastat** (które pojawia się jeden poziom powyżej pola **AccountNum** w drzewie hierarchicznym modelu danych) służy do wprowadzania numeru konta odbiorcy lub klienta w polu **AccountNum** modelu danych.
 
-![Przykładowa ścieżka względna na stronie projektanta mapowania modelu ER](./media/ER-FormulaLanguage-RelativePath1.png)
+![Przykładowa ścieżka względna na stronie projektanta mapowania modelu ER.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Pozostała część ścieżki bezwzględnej jest również wyświetlana w [edytorze formuł modułu ER](general-electronic-reporting-formula-designer.md).
 
-![Pozostała część ścieżki bezwzględnej na stronie projektanta formuł ER](./media/ER-FormulaLanguage-RelativePath2.png)
+![Pozostała część ścieżki bezwzględnej na stronie projektanta formuł ER.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Aby uzyskać więcej informacji, zobacz temat [Używanie ścieżki względnej w powiązaniach danych z modelami i formatami ER](relative-path-data-bindings-er-models-format.md).
 
