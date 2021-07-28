@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814519"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344481"
 ---
 # <a name="replenishment-strategies"></a>Strategie uzupełniania zapasów
 
@@ -45,7 +45,7 @@ Aby móc używać tej funkcji, należy ją włączyć w systemie. Administratorz
 
 Aby uzyskać dostęp do szablonów, przejdź do **Zarządzanie magazynem \> Konfiguracja \> Uzupełnianie zapasów \> Szablony uzupełniania zapasów**. W sekcji **Omówienie** wybierz lub utwórz szablon grupy czynności do uzupełnienia (uzupełnienie), w którym pole **Typ uzupełnienia** ma wartość *Popyt grupy czynności*. Następnie skonfiguruj wiersze szablonu uzupełnienia w sekcji **Szczegóły szablonu uzupełniania zapasów**. W przypadku każdego wiersza w polu **Strategia uzupełniania zapasów** wybierz strategię uzupełniania zapasów, która ma zostać użyta.
 
-![Strona szablonów uzupełniania zapasów](media/ReplenTempWaveDmdMaxLocCap.png "Strony szablonów uzupełniania zapasów")
+![Strona szablonów uzupełniania zapasów.](media/ReplenTempWaveDmdMaxLocCap.png "Strony szablonów uzupełniania zapasów")
 
 Jeśli kolumna **Strategia uzupełniania zapasów** nie jest wyświetlana w siatce w sekcji **Szczegóły szablonu uzupełniania zapasów**, upewnij się, że funkcja została włączona i że wybrany szablon uzupełnienia zapasów ma typ uzupełnienia zapasów ustawiony na *Popyt grupy czynności*.
 
@@ -85,7 +85,7 @@ W przypadku ustawienia strategii uzupełniania zapasów na *Maksymalna pojemnoś
 - **Praca uzupełniania zapasów 1:** Pobierz 4 pudełka z lokalizacji zbiorczej i umieść je w lokalizacji Pobranie-001.
 - **Praca uzupełniania zapasów 2:** Pobierz 5 pudełka z lokalizacji zbiorczej i umieść je w lokalizacji Pobranie-002.
 
-[![Przykład 1](media/ReplenTemp_example_1.png "Przykład 1")](media/ReplenTemp_example_1_large.png)
+[![Przykład 1.](media/ReplenTemp_example_1.png "Przykład 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Przykład 2
 
@@ -109,7 +109,7 @@ W zależności od ustawienia opcji **Zezwalaj na podział** w dyrektywach lokali
 
 Wyniki różnią się ze względu na informacje, które są dostępne podczas tworzenia pracy. Jeśli pole **Zezwalaj na podział** jest ustawione na wartość *Tak* w dyrektywach dotyczących pobrania uzupełnienia zapasów, wiadomo, że znaleziono 160 sztuk. Można więc utworzyć pracę dla tej ilości. Jeśli jednak opcja **Zezwalaj na podział** jest ustawiona na *Nie*, nie wiadomo o istnieniu 160 sztuk. Ponieważ dodatkowa ilość, którą zdecydowałeś się uzupełnić, wynosiła 3 pudełka, odrzucasz tę dodatkową ilość i ponownie próbujesz użyć oryginalnej ilości.
 
-[![Przykład 2](media/ReplenTemp_example_2.png "Przykład 2")](media/ReplenTemp_example_2_large.png)
+[![Przykład 2.](media/ReplenTemp_example_2.png "Przykład 2")](media/ReplenTemp_example_2_large.png)
 
 Dlatego, aby uzyskać maksymalną ilość w uzupełnianych lokalizacjach, należy ustawić opcję **Zezwalaj na podział** na *Tak* w dyrektywach lokalizacji dotyczących pobierania do uzupełnienia zapasów.
 

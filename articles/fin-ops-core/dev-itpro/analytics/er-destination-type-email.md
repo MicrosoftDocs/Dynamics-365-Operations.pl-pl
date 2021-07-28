@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a575c04a5042e4db08f387bc7bce46225c109844
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753511"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348003"
 ---
 # <a name="email-er-destination-type"></a>Typ miejsca docelowego raportowania elektronicznego (ER)
 
@@ -48,13 +48,13 @@ Aby wysłać plik wyjściowy lub kilka plików wyjściowych pocztą elektroniczn
 
 Adresy e-mail dla modułu ER można konfigurować na dwa sposoby. Konfigurację można wykonać w taki sam sposób, jak to robi funkcja zarządzania drukowaniem, lub też można rozpoznać adres e-mail za pomocą bezpośredniego odwołania do konfiguracji ER, korzystając z formuły.
 
-[![Ustawianie opcji Włączone na Tak dla pocztowego miejsca docelowego](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+[![Ustawianie opcji Włączone na Tak dla pocztowego miejsca docelowego.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>Typy adresów e-mail
 
 Jeśli wybierzesz opcję **Edytuj** obok pola **Do** lub **DW** w oknie dialogowym **Ustawienia lokalizacji docelowej**, zostanie wyświetlone okno dialogowe **Wiadomość e-mail do**. Kliknij przycisk **Dodaj**, a następnie wybierz typ adresu e-mail, który ma być używany. Obecnie są obsługiwane dwa typy: **Adres e-mail zarządzania drukowaniem** i **Adres e-mail konfiguracji**.
 
-[![Wybieranie typu adresu e-mail](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Wybieranie typu adresu e-mail.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Wiadomość e-mail zarządzania drukowaniem
 
@@ -84,7 +84,7 @@ Po wybraniu żądanej roli kliknij przycisk **Powiąż** (symbol łańcucha) obo
 
 Na stronie **Projektant formuł** w polu **Formuła** wprowadź specyficzne dla dokumentu odwołanie do obsługiwanej roli. Zamiast wpisywać odwołanie, w okienku **Źródło danych** znajdź i wybierz węzeł źródła danych reprezentujący konto skonfigurowanej roli, a następnie wybierz opcję **Dodaj źródło danych**, aby zaktualizować formułę. Na przykład jeśli skonfigurujesz pocztowe miejsce docelowe dla konfiguracji **Przelew bankowy ISO 20022**, która jest używana do przetwarzania płatności dla dostawców, węzłem reprezentującym konto dostawcy będzie `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Konfigurowanie konta źródłowego poczty e-mail](./media/er_destinations-emaildefineaddresssource.gif)
+![Konfigurowanie konta źródłowego poczty e-mail.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Jeśli numery kont skonfigurowanej roli są unikatowe w całym wystąpienia rozwiązania Microsoft Dynamics 365 Finance, pole **Firma źródła poczty e-mail** w oknie **Wiadomość e-mail do** może pozostać puste.
 
@@ -108,7 +108,7 @@ Aby określić typ adresów e-mail, które muszą być używane w czasie wykonyw
 
 Wybierz opcję **Adres e-mail konfiguracji** jako typ adresu e-mail, jeśli używana konfiguracja ma w źródłach danych węzeł, który zwraca jeden adres e-mail lub wiele adresów e-mail oddzielonych średnikami (;). Za pomocą [źródeł danych](general-electronic-reporting.md#FormatComponentOutbound) i [funkcji](er-formula-language.md#functions) w projektancie formuł można uzyskać poprawnie sformatowany adres e-mail lub poprawnie sformatowane adresy e-mail, które są oddzielone średnikami. Jeśli na przykład zostanie użyta konfiguracja **Przelew bankowy ISO 20022**, węzłem reprezentującym podstawowy adres e-mail dostawcy pochodzący z danych kontaktowych dostawcy, pod który ma zostać wysłany list przewodni, będzie `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Konfigurowanie źródła adresu e-mail](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Konfigurowanie źródła adresu e-mail.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Grupowanie składników formatu
 
@@ -126,11 +126,11 @@ Aby rozgrupować składniki formatu, na skróconej karcie **Miejsce docelowe —
 
 Na poniższej ilustracji przedstawiono strukturę formatu ER, który został skonfigurowany w celu utworzenia spakowanego pliku wychodzącego zawierającego tekst ponaglenia i odpowiednie faktury dla odbiorcy w formacie PDF.
 
-[![Struktura formatu modułu ER powodującego generowanie dokumentów wychodzących](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktura formatu modułu ER powodującego generowanie dokumentów wychodzących.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Na poniższej ilustracji przedstawiono proces grupowania poszczególnych składników i włączania miejsca docelowego **E-mail** dla nowej grupy w sposób opisany w tym temacie, tak aby tekst ponaglenia był wysyłany wraz z odpowiednimi fakturami dla odbiorcy jako załączniki wiadomości e-mail.
 
-[![Grupowanie poszczególnych składników i włączanie pocztowego miejsca docelowego](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Grupowanie poszczególnych składników i włączanie pocztowego miejsca docelowego.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

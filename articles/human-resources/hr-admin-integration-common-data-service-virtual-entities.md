@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c2e207efe0eeec6fc7e679a6ae12edcb21b291f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f0dac25ede6c9b9dfcfa1be1f1a5f4d7a7752112
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058591"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344721"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfiguruj tabele wirtualne usługi Dataverse
 
@@ -41,7 +41,7 @@ Wszystkie jednostki protokołu OData (Open Data Protocol) w module Zasoby ludzki
 
 Można wyświetlić listę tabel wirtualnych włączonych w środowisku i rozpocząć pracę z tabelami w [Power Apps](https://make.powerapps.com) w rozwiązaniu **Dynamics 365 HR tabel miarowych**.
 
-![Tabele wirtualne HR Dynamics 365 w Power Apps](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Tabele wirtualne HR Dynamics 365 w Power Apps.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>Tabele wirtualne a tabele macierzyste
 
@@ -147,7 +147,7 @@ Następnym krokiem jest skonfigurowanie źródła danych tabeli wirtualnej w śr
 
    - **Wpis tajny aplikacji w usłudze AAD**: wpis tajny utworzony dla aplikacji zarejestrowanej w portalu Microsoft Azure. Te informacje uzyskano wcześniej w tym kroku [Rejestracja aplikacji w Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure).
 
-   ![Źródło danych Microsoft HR](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Źródło danych Microsoft HR.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Wybierz opcję **Zapisz i zamknij**.
 
@@ -187,7 +187,7 @@ Po zakończeniu pracy Instalatora można wybrać tabele wirtualne, które mają 
 
 4. Wybierz opcję **Generuj/Odśwież**.
 
-![Integracja z usługą Dataverse](./media/hr-admin-integration-dataverse-integration.png)
+![Integracja z usługą Dataverse.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Sprawdź stan generacji tabel
 

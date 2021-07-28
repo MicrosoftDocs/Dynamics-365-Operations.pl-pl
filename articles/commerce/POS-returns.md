@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129826"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345191"
 ---
 # <a name="create-returns-in-pos"></a>Tworzenie zwrotów w POS
 
@@ -48,7 +48,7 @@ Jeśli zostanie znaleziona transakcja lub zamówienie spełniające kryteria wys
 
 Dla każdej linii zamówienia na liście produktów zwrotnych POS pokazuje informacje o pierwotnej ilości zakupu oraz ilości z wcześniej zrealizowanych zwrotów. Ilość zwrotu wprowadzana przez użytkownika dla wiersza zamówienia nie może być większa niż wartość pola **Dostępne do zwrotu**.
 
-![Strona produktów zwrotnych](media/returnslist.png)
+![Strona produktów zwrotnych.](media/returnslist.png)
 
 Podczas przetwarzania zwrotu, jeśli użytkownik posiada produkt fizyczny, a produkt ten posiada kod kreskowy, użytkownik może zeskanować kod kreskowy, aby zarejestrować zwrot. Każdy skan kodu kreskowego zwiększa ilość zwracanych produktów o jedną sztukę. Jeśli jednak na etykiecie z kodem kreskowym znajduje się ilość, zostanie ona wprowadzona w polu **Zwrot teraz**.
 
@@ -97,6 +97,13 @@ Jeśli informacje po stronie kanału z jakiegoś powodu nie są aktualne, a zwro
 
 > [!NOTE]
 > Gdy jest włączona funkcja **Ujednoliconych zwrotów w POS**, stają się dostępne nowe opcjonalne funkcje służące do weryfikacji serializowanych zwrotów produktów. Aby uzyskać więcej informacji, zobacz temat [Zwrot produktów z kontrolą numeru seryjnego w punkcie sprzedaży](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Włącz poprawne obliczanie podatku dla zwrotów z ilością częściową
+
+Ta funkcja zapewnia, że gdy zamówienie zostanie zwrócone przy użyciu wielu faktur, podatki będą ostatecznie równe kwocie podatku pierwotnie naliczonego.
+1.  Przejdź do obszaru roboczego **Zarządzanie funkcjami** i wyszukaj opcję **Włącz poprawne obliczanie podatku dla zwrotów z ilością częściową**.
+2.  Zaznacz opcję **Włącz poprawną kalkulację podatku dla zwrotów o ilości częściowej**, a następnie kliknij opcję **Włącz**.
+
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345697"
 ---
 # <a name="electronic-reporting-er-overview"></a>Omówienie raportowania elektronicznego (ER)
 
@@ -101,7 +103,7 @@ Składnik typu Format umożliwia załączanie określonych plików, które mogą
 
 Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
 
-[![Przepływ danych dla składników typu Format dokumentów wychodzących](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Przepływ danych dla składników typu Format dokumentów wychodzących.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Aby uruchomić jedną konfigurację formatu modułu ER i wygenerować wychodzący dokument elektroniczny, należy określić mapowanie dla konfiguracji formatu.
 
@@ -115,7 +117,7 @@ Składnik typu Format określa schemat dokumentu przychodzącego, który jest im
 
 Na poniższej ilustracji przedstawiono sposób przepływu danych w tych formatach.
 
-[![Przepływ danych dla składników typu Format dokumentów przychodzących](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Przepływ danych dla składników typu Format dokumentów przychodzących.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Aby uruchomić jedną konfigurację formatu modułu ER w celu zaimportowania danych z przychodzącego dokumentu elektronicznego, należy określić żądane mapowanie konfiguracji formatu oraz punkt integracji mapowania modelu. Tego samego mapowania modelu i miejsc docelowych można używać w połączeniu z różnymi formatami dla różnych rodzajów dokumentów przychodzących.
 
@@ -290,7 +292,7 @@ Narzędzie ER pozwala automatyczne powielać zmiany z najnowszej wersji składni
 
 Lista konfiguracji raportowania elektronicznego dla aplikacji Finanse jest aktualizowana w sposób ciągły. Otwórz [repozytorium globalne](er-download-configurations-global-repo.md), aby przejrzeć listę aktualnie obsługiwanych konfiguracji ER. Na skróconej karcie **Szczegóły wycofania** można przejrzeć informacje o konfiguracjach, które zostały wycofane lub które nie są już obsługiwane. 
 
-![Zawartość repozytorium globalnego na stronie Repozytorium konfiguracji](./media/er-overview-03.gif)
+![Zawartość repozytorium globalnego na stronie Repozytorium konfiguracji.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343731"
 ---
 # <a name="container-packing-strategies"></a>Strategie pakowania kontenerów
 
@@ -251,7 +252,7 @@ Aby skonfigurować zasady konsolidacji przesyłek, należy wykonać poniższe kr
 1. Na liście zaznacz **Domyślną** zasadę.
 1. W okienku akcji wybierz pozycję **Edytuj**.
 1. Na skróconej karcie **Pola konsolidacji** na liście **Wybrane pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Numer zamówienia*.
-1. Wybierz przycisk **usuń** ![Strzałka w lewo](media/backward-button.png), aby przenieść pole na listę **Pozostałe pola**.
+1. Wybierz przycisk **Usuń** ![Strzałka w lewo.](media/backward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Pozostałe pola**.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>Ustaw fizyczne wymiary produktu

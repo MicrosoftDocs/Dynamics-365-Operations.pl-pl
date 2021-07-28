@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838353"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345265"
 ---
 # <a name="cycle-counting"></a>Inwentaryzacja ciągła
 
@@ -34,7 +34,7 @@ Inwentaryzacja cykliczna jest procesem magazynowym, który służy do inspekcji 
 2.  **Przetwarzaj inwentaryzację ciągłą** — Po utworzeniu pracy inwentaryzacji ciągłej można wykonać tę pracę, zliczając towary w lokalizacji w magazynie, a następnie za pomocą urządzenia przenośnego wprowadzając wynik w Dynamics 365 Supply Chain Management. Ewentualnie można zliczyć towary w jednej lokalizacji bez tworzenia inwentaryzacji ciągłej. Ten proces jest określany jako *inwentaryzacja ciągła punktowa*.
 3.  **Uzgadnianie różnic w policzonej wartości** — Po wykonaniu inwentaryzacji cyklicznej wszystkie towary, dla których istnieją różnice w zliczonej wartości, będą miały stan pracy **Oczekiwanie na przegląd** na stronie **Cała praca**. Różnice te można uzgodnić na stronie **Praca inwentaryzacji ciągłej oczekuje na przegląd**.
 
-Poniższa ilustracja pokazuje proces inwentaryzacji ciągłej. ![Przebieg procesu w przypadku inwentaryzacji ciągłej](./media/performcyclecountinginawarehouselocation.jpg)
+Poniższa ilustracja pokazuje proces inwentaryzacji ciągłej. ![Przebieg procesu w przypadku inwentaryzacji ciągłej.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Warunki wstępne inwentaryzacji ciągłej
 W poniższej tabeli przedstawiono warunki wstępne, które muszą być spełnione przez rozpoczęciem inwentaryzacji ciągłej.

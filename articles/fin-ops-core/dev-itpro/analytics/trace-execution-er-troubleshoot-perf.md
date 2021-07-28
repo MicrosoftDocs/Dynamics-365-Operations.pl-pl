@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295580"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344889"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Śledzenie wykonywania formatów ER w celu rozwiązywania problemów z wydajnością
 
@@ -56,14 +56,14 @@ Musisz również pobrać i lokalnie zapisać następujące pliki.
 
 Każdy ślad wydajności modułu ER generowany w aplikacji jest przechowywany jako załącznik do rekordu dziennika wykonania. Do zarządzania tymi załącznikami służy struktura zarządzania dokumentami (DM). Parametry ER należy skonfigurować z wyprzedzeniem, aby określić typ dokumentu DM, który ma być używany do dołączania śladów wydajności. W obszarze roboczym **Raportowanie elektroniczne** wybierz łącze **Parametry raportowania elektronicznego**. Następnie na stronie **Parametry raportowania elektronicznego**, na karcie **Załączniki**, w polu **Inne** wybierz typ dokumentu DM, który będzie używany do śladów wydajności.
 
-![Strona parametrów raportowania elektronicznego](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Strona parametrów raportowania elektronicznego.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 Aby typ dokumentu DM był dostępny w polu wyszukiwania **Inne**, musi być skonfigurowany w następujący sposób na stronie **Typy dokumentów** (**Administrowanie organizacją \> Zarządzanie dokumentami \> Typy dokumentów**):
 
 - **Klasa:** Dołącz plik
 - **Grupa:** Plik
 
-![Strona Typy dokumentów](./media/GER-PerfTrace-DM-DocumentType.png)
+![Strona Typy dokumentów.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Wybrany typ dokumentu musi być dostępny we wszystkich firmach bieżącego wystąpienia, ponieważ załączniki DM są specyficzne dla firmy.
@@ -72,7 +72,7 @@ Aby typ dokumentu DM był dostępny w polu wyszukiwania **Inne**, musi być skon
 
 Ślady wydajności ER generowane zostaną zaimportowane do RCS w celu analizy za pomocą projektanta formatu ER i projektanta mapowania ER. Ponieważ dane śledzenia wydajności ER są przechowywane jako załączniki rekordu dziennika wykonania powiązanego z formatem ER, należy z wyprzedzeniem skonfigurować parametry RCS, aby określić typ dokumentu DM, który ma być używany do dołączania śladów wydajności. W wystąpieniu RCS, które zostało zainicjowane dla danej firmy, w obszarze roboczym **Raportowanie elektroniczne** wybierz opcję **Parametry raportowania elektronicznego**. Następnie na stronie **Parametry raportowania elektronicznego**, na karcie **Załączniki**, w polu **Inne** wybierz typ dokumentu DM, który będzie używany do śladów wydajności.
 
-![Strona parametrów raportowania elektronicznego w RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Strona parametrów raportowania elektronicznego w RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 Aby typ dokumentu DM był dostępny w polu wyszukiwania **Inne**, musi być skonfigurowany w następujący sposób na stronie **Typy dokumentów** (**Administrowanie organizacją \> Zarządzanie dokumentami \> Typy dokumentów**):
 
@@ -92,7 +92,7 @@ Załóżmy, że rozpoczęto projektowanie nowego rozwiązania ER w celu wygenero
     2. Kliknij przycisk **Przeglądaj**, aby wybrać odpowiedni plik wymaganej konfiguracji ER w formacie XML.
     3. Kliknij przycisk **OK**.
 
-    ![Strona Konfiguracje w RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Strona Konfiguracje w RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Uruchom rozwiązanie ER, aby śledzić wykonywanie
 
@@ -109,7 +109,7 @@ Załóżmy, że zakończono projektowanie pierwszej wersji rozwiązania ER. Chce
     3. Na skróconej karcie **Konfiguracje** wybierz konfigurację **Format śladu wydajności**.
     4. Na skróconej karcie **Wersje** wybierz wersję **1.1** wybranej konfiguracji, a następnie kliknij przycisk **Importuj**.
 
-    ![Strona Repozytorium konfiguracji](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Strona Repozytorium konfiguracji.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Odpowiednie wersje konfiguracji modelu danych i mapowania modelu są automatycznie importowane jako wymagania wstępne dla importowanej konfiguracji formatu ER.
 
@@ -156,7 +156,7 @@ Odpowiednie wersje konfiguracji modelu danych i mapowania modelu są automatyczn
     > [!NOTE]
     > Parametry w oknie dialogowym **Parametry użytkownika** są specyficzne dla użytkownika i bieżącej firmy.
 
-    ![Okno dialogowe parametry użytkownika](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Okno dialogowe parametry użytkownika.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Uruchamianie formatu ER
 
@@ -181,7 +181,7 @@ Generowany plik zawiera informacje dotyczące 265 transakcji dla sześciu dostaw
 
 4. Na stronie **Załączniki do dzienników przebiegu raportowania elektronicznego** w okienku akcji kliknij przycisk **Otwórz**, aby pobrać ślad wydajności jako plik zip i zapisać go lokalnie.
 
-    ![Załączniki do dzienników przebiegu raportowania elektronicznego](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Załączniki do dzienników przebiegu raportowania elektronicznego.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Generowany ślad zawiera odwołanie do źródłowego raportu ER w postaci unikatowego identyfikatora raportu tylko w formacie **GUID**. Numerowanie wersji formatu nie jest uwzględniane.
@@ -198,7 +198,7 @@ Skojarzenie między śladem wydajności, który został wygenerowany dla wykonyw
 6. Kliknij przycisk **Przeglądaj**, a następnie zaznacz plik zip, który został wcześniej eksportowany.
 7. Kliknij przycisk **OK**.
 
-    ![Okno dialogowe ustawień wyników śledzenia wydajności w RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Okno dialogowe ustawień wyników śledzenia wydajności w RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Użycie śledzenia wydajności do analizy w RCS — wykonanie formatu
 
@@ -209,7 +209,7 @@ Skojarzenie między śladem wydajności, który został wygenerowany dla wykonyw
     - Rzeczywisty czas spędzony na wprowadzaniu danych w wygenerowanych danych wyjściowych przy użyciu elementu formatu
     - Ten sam czas wyrażony jako procent łącznego czasu, jaki zajęło wygenerowanie wszystkich danych wyjściowych
 
-    ![Strona projektanta formatu w RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Strona projektanta formatu w RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Zamknij stronę **Projektant formatu**.
 
@@ -232,7 +232,7 @@ Podczas uruchamiania źródła danych VendTable/\<Relations/VendTrans.VendTable\
 - Jedno wywołanie jest wykonywane w celu wprowadzenia szczegółów poszczególnych transakcji do modelu danych na podstawie skonfigurowanych powiązań.
 - Jedno wywołanie jest wykonywane w celu wprowadzenia obliczonej liczby transakcji danego dostawcy do modelu danych.
 
-![Komunikat dotyczący zduplikowanych żądań bazy danych na stronie projektanta mapowania modelu w RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Komunikat dotyczący zduplikowanych żądań bazy danych na stronie projektanta mapowania modelu w RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 Wartość **\[Q:530\]** wskazuje, że tabela VendTrans została wywołana 530 razy, aby zwrócić rekord z tej tabeli do źródła danych VendTable/\<Relations/VendTrans.VendTable\_AccountNum. Wartość **\[530\]** wskazuje, że źródło danych VendTable\</Relations/VendTrans.VendTable\_AccountNum zostało wywołane 530 razy, aby zwrócić rekord z tego źródła danych i wprowadzić jego szczegóły do modelu danych.
 
@@ -240,7 +240,7 @@ Zaleca się buforowanie źródła danychVendTable/\<Relations/VendTrans.VendTabl
 
 Przydatne może być także zmniejszenie liczby wywołań źródła danych LedgerTransTypeList. To źródło danych służy do kojarzenia poszczególnych wartości wyliczenia **LedgerTransType** z etykietą. Korzystając z tego źródła danych, można znaleźć odpowiednią etykietę i wprowadzić ją do modelu danych dla poszczególnych transakcji dostawcy. Bieżąca liczba wywołań tego źródła danych (9027) jest dość duża jak na 265 transakcji.
 
-![Strona projektanta mapowania modelu w RCS pokazująca 9027 wywołań źródła danych](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Strona projektanta mapowania modelu w RCS pokazująca 9027 wywołań źródła danych.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>Poprawianie mapowania modelu na podstawie informacji ze śladu wykonywania
 
@@ -253,7 +253,7 @@ Przydatne może być także zmniejszenie liczby wywołań źródła danych Ledge
     3. Rozwiń pozycję **VendTable**, rozwiń listę relacji jeden-do-wielu źródła danych VendTable (pozycja **\<Relacje**) i wybierz opcję **VendTrans.VendTable\_AccountNum**.
     4. Wybierz opcję **Pamięć podręczna**.
 
-    ![Włączanie buforowania w celu zapobiegania duplikowaniu wywołań](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Włączanie buforowania w celu zapobiegania duplikowaniu wywołań.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Aby sprowadzić źródło danych LedgerTransTypeList do zakresu źródła danych VendTable, należy wykonać następujące czynności:
 
@@ -274,7 +274,7 @@ Przydatne może być także zmniejszenie liczby wywołań źródła danych Ledge
     3. Wybierz pozycję **VendTable.\$TransType**.
     4. Wybierz opcję **Pamięć podręczna**.
 
-    ![Włączanie buforowania pola $TransType](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Włączanie buforowania pola $TransType.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Aby pole **\$TransTypeRecord** zaczęło korzystać z buforowanego pola **\$TransType**, wykonaj następujące kroki:
 
@@ -329,19 +329,19 @@ Powtórz kroki opisane w sekcji [Użycie śledzenia wydajności do analizy w RCS
 
 Korekty wprowadzone w mapowaniu modelu wyeliminowały duplikowanie zapytań do bazy danych. Liczba wywołań tabel bazy danych i źródeł danych tego mapowania modelu również została zmniejszona. Wydajność całego rozwiązania ER uległa zatem poprawie.
 
-![Informacje o śladzie źródła danych VendTable na stronie Projektant mapowania modelu w RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Informacje o śladzie źródła danych VendTable na stronie Projektant mapowania modelu w RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 Wartość **\[12\]** dla tabeli VendTable w śladzie wskazuje, że to źródło danych było wywoływane 12 razy. Wartość **\[Q:6\]** wskazuje, że sześć wywołań zostało przetłumaczonych na wywołania bazy danych do tabeli VendTable. Wartość **\[C:6\]** wskazuje, że rekordy pobrane z bazy danych były buforowane i sześć innych wywołań zostało przetworzonych przy użyciu pamięci podręcznej.
 
 Liczba wywołań źródła danych LedgerTransTypeList została zmniejszona z z 9027 do 240.
 
-![Informacje o śladzie źródła danych LedgerTransTypeList na stronie Projektant mapowania modelu w RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Informacje o śladzie źródła danych LedgerTransTypeList na stronie Projektant mapowania modelu w RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Przejrzyj wyniki śledzenia wykonania w aplikacji
 
 Oprócz RCS niektóre wersje mogą oferować możliwości korzystania z projektanta struktury ER. Te wersje zawierają opcję **Włącz tryb projektowania**, którą można włączyć. Ta opcja znajduje się na karcie **Ogólne** strony **Parametry raportowania elektronicznego** otwieranej z obszaru roboczego **Raportowanie elektroniczne**.
 
-![Włącz opcję trybu projektowania na stronie parametry raportowania elektronicznego](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Włącz opcję trybu projektowania na stronie parametry raportowania elektronicznego.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 W przypadku korzystania z jednej z tych wersji modułu Finance and Operations można analizować szczegóły generowanych śladów wydajności bezpośrednio w aplikacji. Nie trzeba ich eksportować z aplikacji i importować do RCS.
 
@@ -359,7 +359,7 @@ Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tema
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView.
 
-![Informacje o śledzeniu wydajności w formacie PerfView](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informacje o śledzeniu wydajności w formacie PerfView.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Narzędzia zewnętrzne umożliwiają przejrzenie śledzenie wykonywania obejmującego kwerendy bazy danych
 
@@ -375,7 +375,7 @@ Ze względu na udoskonalenia, które zostały wprowadzone w ramach systemu, śle
     - Ustawienie opcji **Zbierz statystyki kwerendy** na wartość **Tak**.
     - Ustawienie opcji wartość **śledzenie kwerendy** na wartość **Tak**.
 
-    ![Sekcja śledzenia wykonania, okno dialogowe Parametry użytkownika](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Sekcja śledzenia wykonania, okno dialogowe Parametry użytkownika.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Uruchamianie formatu ER
 
@@ -383,7 +383,7 @@ Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tema
 
 Przeglądarka sieci Web zaproponuje pobranie pliku zip. Ten plik zawiera ślad wydajności w formacie PerfView. Następnie można przeanalizować szczegóły wykonania formatu ER w narzędziu do analizy wydajności PerfView. Teraz ten ślad zawiera szczegóły dostępu do bazy danych SQL podczas wykonywania formatu ER.
 
-![Informacje o śledzeniu dla wykonanego formatu ER w PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Informacje o śledzeniu dla wykonanego formatu ER w PerfView.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

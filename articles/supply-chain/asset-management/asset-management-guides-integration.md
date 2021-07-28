@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908574"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344277"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ Aby skojarzyć przewodnik z szablonem listy kontrolnej konserwowanego składnika
     1. Na skróconej karcie **Wiersze listy kontrolnej konserwowanego składnika majątku** wybierz wiersz, z którym chcesz skojarzyć przewodnik.
     1. Na skróconej karcie **Skojarzone przewodniki** wybierz pozycję **Dodaj przewodnik**.
 
-        ![Kojarzenie przewodnika z wierszem listy kontrolnej konserwowanego składnika majątku](media/am-guides-integration-add-guide.png "Kojarzenie przewodnika z wierszem listy kontrolnej konserwowanego składnika majątku")
+        ![Kojarzenie przewodnika z wierszem listy kontrolnej konserwowanego składnika majątku.](media/am-guides-integration-add-guide.png "Kojarzenie przewodnika z wierszem listy kontrolnej konserwowanego składnika majątku")
 
     1. W polu **Nazwa** wybierz przewodnik, a następnie wybierz pozycję **Zapisz**.
 
-        ![Wybieranie przewodnika w polu Nazwa](media/am-guides-integration-select-guide.png "Wybieranie przewodnika w polu Nazwa")
+        ![Wybieranie przewodnika w polu Nazwa.](media/am-guides-integration-select-guide.png "Wybieranie przewodnika w polu Nazwa")
 
 1. Skojarz szablon listy kontrolnej konserwowanego składnika majątku z typem pracy:
 
     1. [Utwórz typ zadania konserwacji](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type) lub wybierz istniejący typ zadania konserwacji.
     1. W okienku akcji wybierz pozycję **Ustawienia domyślne typu zadania konserwacji**.
 
-        ![Przycisk Ustawienia domyślne typu zadania konserwacji](media/am-guides-integration-job-defaults.png "Przycisk Ustawienia domyślne typu zadania konserwacji")
+        ![Przycisk Ustawienia domyślne typu zadania konserwacji.](media/am-guides-integration-job-defaults.png "Przycisk Ustawienia domyślne typu zadania konserwacji")
 
     1. Utwórz wiersz i wybierz pozycję **Zapisz**.
 
-        ![Tworzenie wiersza](media/am-guides-integration-add-line.png "Tworzenie wiersza")
+        ![Utwórz wiersz.](media/am-guides-integration-add-line.png "Tworzenie wiersza")
 
     1. W okienku akcji wybierz pozycję **Lista kontrolna konserwowanego składnika majątku**.
 
-        ![Przycisk Lista kontrolna konserwowanego składnika majątku](media/am-guides-integration-maintenance-checklist.png "Przycisk Lista kontrolna konserwowanego składnika majątku")
+        ![Przycisk Lista kontrolna konserwowanego składnika majątku.](media/am-guides-integration-maintenance-checklist.png "Przycisk Lista kontrolna konserwowanego składnika majątku")
 
     1. Na skróconej karcie **Wiersze listy kontrolnej konserwowanego składnika majątku** dodaj wiersz, a następnie zmień wartość w polu **Typ** na **Szablon**.
 
-        ![Zmienianie wartości typu](media/am-guides-integration-checklist-lines.png "Zmienianie wartości typu")
+        ![Zmienianie wartości typu.](media/am-guides-integration-checklist-lines.png "Zmienianie wartości typu")
 
     1. Na skróconej karcie **Szczegóły wiersza** w polu **Szablon** wybierz szablon, z którym został skojarzony przewodnik, a następnie wybierz pozycję **Zapisz**.
 
-        ![Wybieranie szablonu](media/am-guides-integration-checklist-line-details.png "Wybieranie szablonu")
+        ![Wybieranie szablonu.](media/am-guides-integration-checklist-line-details.png "Wybieranie szablonu")
 
 1. [Utwórz zlecenie pracy](work-orders/manually-created-workorders.md#create-work-order), a następnie wybierz typ zadania konserwacji, w którym jest używany szablon listy kontrolnej konserwowanego składnika majątku, z którym skojarzono dany przewodnik. Przewodnik zostanie automatycznie skojarzony ze zleceniem pracy.
 
-    ![Wybieranie typu zadania konserwacji](media/am-guides-integration-create-work-order.png "Wybieranie typu zadania konserwacji")
+    ![Wybieranie typu zadania konserwacji.](media/am-guides-integration-create-work-order.png "Wybieranie typu zadania konserwacji")
 
 1. Wyświetl przewodnik skojarzony ze zleceniem pracy i pracownikami:
 
@@ -95,11 +95,11 @@ Aby skojarzyć przewodnik z szablonem listy kontrolnej konserwowanego składnika
     1. [Otwórz listę kontrolną konserwowanego składnika majątku](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) dla zlecenia pracy.
     1. Wybierz wiersz listy kontrolnej, aby wyświetlić skojarzony przewodnik.
 
-        ![Przewodnik skojarzony z wierszem listy kontrolnej](media/am-guides-integration-show-guide.png "Przewodnik skojarzony z wierszem listy kontrolnej")
+        ![Przewodnik skojarzony z wierszem listy kontrolnej.](media/am-guides-integration-show-guide.png "Przewodnik skojarzony z wierszem listy kontrolnej")
 
     1. Otwórz przewodnik na urządzeniu HoloLens.
 
-        ![Otwieranie przewodnika na urządzeniu HoloLens](media/am-guides-integration-hololens-select.png "Otwieranie przewodnika na urządzeniu HoloLens")
+        ![Otwieranie przewodnika na HoloLens.](media/am-guides-integration-hololens-select.png "Otwieranie przewodnika na urządzeniu HoloLens")
 
 > [!NOTE]
 > Można również skojarzyć przewodnik bezpośrednio z listą kontrolną konserwowanego składnika majątku zlecenia pracy lub typu pracy.

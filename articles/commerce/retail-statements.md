@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 8d6687ddaae28ebf278aca6a78ba798e2e79edd8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 41d135af00618dbe4046338c8d0e6f5a01f33892
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791928"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345013"
 ---
 # <a name="retail-statements"></a>Zestawienia handlu detalicznego
 
@@ -31,7 +31,7 @@ W programie Dynamics 365 Commerce proces księgowania zestawień jest używany d
 
 Poniższa ilustracja przedstawia proces księgowania zestawień: W tym procesie transakcje rejestrowane w punkcie sprzedaży są przesyłane do klienta za pomocą harmonogramu Commerce. Gdy klient otrzyma transakcje, użytkownik może tworzyć, obliczać i księgować zestawienia transakcji dla sklepu.
 
-[![Proces księgowania zestawień](./media/retail-statements.png)](./media/retail-statements.png)
+[![Proces księgowania zestawień.](./media/retail-statements.png)](./media/retail-statements.png)
 
 ## <a name="creating-and-posting-statements"></a>Tworzenie i księgowanie zestawień
 

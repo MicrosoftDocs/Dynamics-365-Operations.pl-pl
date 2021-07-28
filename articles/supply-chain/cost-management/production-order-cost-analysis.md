@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187705"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343657"
 ---
 # <a name="production-order-cost-analysis"></a>Analiza kosztów zlecenia produkcyjnego
 
@@ -41,7 +41,7 @@ Odchylenia odzwierciedlają wynik porównania zgłoszonych działań produkcyjny
 
 Poniższy diagram przedstawia cztery odchylenia, które składają się na różnicę między kosztami rzeczywistymi zlecenia produkcyjnego a kosztami obliczonymi w rekordzie kosztu towaru po zakończeniu zlecenia produkcyjnego. 
 
-![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym](./media/control.jpg) 
+![Odchylenia odzwierciedlające różnice w zakończonym zleceniu produkcyjnym.](./media/control.jpg) 
 
 Odchylenia produkcji można analizować za pomocą strony **Odchylenie** lub raportu **Odchylenia produkcji**. Korzystając z odpowiednich opcji wyświetlania, można przeglądać szczegóły odchyleń według towarów, zasobów operacyjnych lub grup kosztów. Zasady podziału kosztów określone w parametrach zapasów decydują o tym, czy odchylenia są śledzone według grup kosztów. Można także używać opcji wyświetlania **jeden**, **wiele** i **suma**, aby obejrzeć zbiorcze odchylenia. Szczegóły odchyleń pomagają poznać źródło każdego odchylenia. Aby przewidzieć odchylenia przed zakończeniem zlecenia produkcyjnego, należy przeanalizować szczegółowe informacje zawarte w raporcie **Szacowanie kosztów i wycena**.
 

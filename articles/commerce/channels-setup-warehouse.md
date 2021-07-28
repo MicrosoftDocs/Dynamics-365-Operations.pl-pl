@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800502"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345991"
 ---
 # <a name="warehouse-set-up"></a>Ustawianie magazynu
 
@@ -45,7 +45,7 @@ Aby skonfigurować oddział magazynu, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład oddział magazynu.
 
-![Przykład oddziału magazynu](media/warehouse-site.png)
+![Przykład oddziału magazynu.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Ustawianie magazynu
 
@@ -98,7 +98,7 @@ Aby skonfigurować lokalizacje magazynów magazynowych dla standardowych, uszkod
     
 Na poniższym rysunku przedstawiono konfigurację lokalizacji magazynu w San Francisco.
 
-![Przykładowe ustawienia lokalizacji zapasów](media/warehouse-inventory-locations.png)
+![Przykładowe ustawienia lokalizacji zapasów.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Zakończ konfigurację magazynu
 
@@ -121,7 +121,7 @@ Aby zakończyć tę konfigurację magazynu, należy wykonać następujące czynn
 
 Poniższy obraz przedstawia szczegóły dotyczące skonfigurowanego magazynu.
 
-![Przykładowy magazyn skonfigurowany](media/warehouse-sample.png)
+![Przykładowy magazyn skonfigurowany.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60b318ab03bc1bb47517a206e8b2afd9c13cf273
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 189a420089db7612a6f1b9f8a74b36b72a750c17
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891726"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345943"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
 
@@ -142,7 +144,7 @@ Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia rozwi
 5. Na skróconej karcie **Wersje** wybierz wersję **1.1** wybranej konfiguracji formatu ER.
 6. Wybierz **Importuj**, aby pobrać wybraną wersję z Globalnego repozytorium do bieżącego wystąpienia Finance.
 
-![Strona Repozytorium konfiguracji](./media/er-quick-start2-import-solution1.png)
+![Strona Repozytorium konfiguracji.](./media/er-quick-start2-import-solution1.png)
 
 > [!TIP]
 > Jeśli masz problemy z dostępem do [repozytorium globalnego](er-download-configurations-global-repo.md), zamiast tego możesz [pobrać konfiguracje](download-electronic-reporting-configuration-lcs.md) z Microsoft Dynamics Lifecycle Services (LCS).
@@ -158,7 +160,7 @@ Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia rozwi
     - **Mapowanie modelu płatności 1611** – Ta konfiguracja zawiera [składnik mapowanie modelu](general-electronic-reporting.md#data-model-and-model-mapping-components), który opisuje sposób wypełniania modelu danych przy użyciu danych aplikacji w czasie wykonywania.
     - **BACS (brytyjski)** – Ta konfiguracja zawiera [format](general-electronic-reporting.md#FormatComponentOutbound) i mapowanie formatów składników ER. Składnik formatu określa układ raportu. Składnik mapowanie formatu zawiera źródło danych modelu i określa sposób wypełniania układu raportu przy użyciu tego źródła danych w czasie wykonywania.
 
-![Strona Konfiguracje](./media/er-quick-start2-imported-solution1.png)
+![Strona Konfiguracje.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Przygotowywanie płatności dostawcy na potrzeby przetwarzania
 
@@ -177,7 +179,7 @@ Należy dodać informacje dotyczące banku dla konta dostawcy, które będzie od
     5. W polu **IBAN** wprowadź **GB33BUKB20201555555555**.
     6. W polu **Numer RBN** zachowaj wartość domyślną <a id="DefineRoutingNumber"></a>**123456**.
 
-    ![Strona konta bankowe dostawcy](./media/er-quick-start2-bank-account.png)
+    ![Strona konta bankowe dostawcy.](./media/er-quick-start2-bank-account.png)
 
 4. Wybierz opcję **Zapisz**.
 5. Zamknij stronę.
@@ -185,7 +187,7 @@ Należy dodać informacje dotyczące banku dla konta dostawcy, które będzie od
 7. Na stronie Szczegóły dostawcy wybierz opcję **Edytuj**, aby umożliwić edytowanie strony w razie potrzeby.
 8. Na skróconej karcie **Opłaty** w polu **Konto bankowe** wybierz opcję **GBP OPER**.
 
-    ![Strona szczegółów dot. dostawcy](./media/er-quick-start2-bank-account-reference.png)
+    ![Strona szczegółów dot. dostawcy.](./media/er-quick-start2-bank-account-reference.png)
 
 9. Wybierz opcję **Zapisz**.
 10. Zamknij stronę.
@@ -202,11 +204,11 @@ Należy utworzyć nową płatność dostawcy za pomocą [propozycji płatności]
 6. W oknie dialogowym **Propozycja płatności dostawcy** skonfiguruj warunki filtrowania rekordów tylko dla konta dostawcy **GB_SI_000001**, a następnie kliknij przycisk **OK**.
 7. Wybierz wiersz faktury **00000007_Inv**, a następnie wybierz opcję **Utwórz płatność**.
 
-    ![Okno dialogowe – propozycje płatności dostawcy](./media/er-quick-start2-payment-proposal.png)
+    ![Okno dialogowe – propozycje płatności dostawcy.](./media/er-quick-start2-payment-proposal.png)
 
 8. Sprawdź, czy wprowadzona płatność jest skonfigurowana do używania **Elektronicznej** metody płatności.
 
-    ![Strona Płatności dla dostawców](./media/er-quick-start2-payment-line.png)
+    ![Strona Płatności dla dostawców.](./media/er-quick-start2-payment-line.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-standard-er-format"></a><a id="ProcessVendorPayment1"></a>Przetwarzanie płatności dostawcy przy użyciu standardowego formatu ER
 
@@ -220,7 +222,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby korzystała z imp
 4. W karcie **Formaty plików** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
 5. W polu **Konfiguracja formatu eksportu** wybierz format konfiguracji **BACS (brytyjski)**.
 
-    ![Metody płatności – strona dostawcy](./media/er-quick-start2-method-of-payment1.png)
+    ![Metody płatności – strona dostawcy.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Wybierz opcję **Zapisz**.
 
@@ -237,7 +239,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby korzystała z imp
 5. Kliknij przycisk **OK**.
 6. W oknie dialogowym **Parametry raportu elektronicznego**, w polu **Drukuj raport kontroli** wybierz **Tak**, a następnie kliknij przycisk **OK**.
 
-    ![Strona dialogowa Parametry raportu elektronicznego](./media/er-quick-start2-payment-dialog1.png)
+    ![Strona dialogowa Parametry raportu elektronicznego.](./media/er-quick-start2-payment-dialog1.png)
 
     > [!NOTE]
     > Oprócz pliku płatności można teraz wygenerować raport kontroli.
@@ -249,7 +251,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby korzystała z imp
 
         Należy zauważyć, że zgodnie ze [strukturą](#PositionRoutingNumber) dostarczonego formatu modułu ER, wiersz płatności w wygenerowanym pliku rozpoczyna się od numeru kodu banku [zdefiniowanego](#DefineRoutingNumber) dla konfigurowanego konta bankowego.
 
-        ![Plik płatności w formacie TXT](./media/er-quick-start2-payment-file1.png)
+        ![Plik płatności w formacie TXT.](./media/er-quick-start2-payment-file1.png)
 
 ## <a name="customize-the-standard-er-format"></a><a id="CustomizeProvidedFormat"></a>Dostosowywanie standardowego formatu ER
 
@@ -265,13 +267,13 @@ W tym przypadku, jako przedstawiciel Litware, Inc., należy utworzyć (uzyskać)
 4. W **Nowej** grupie pól, wybierz opcję **Pochodna od nazwy: BACS (brytyjski), Microsoft**.
 5. W polu **Nazwa** wpisz **BACS (niestandardowy brytyjski)**.
 
-    ![Utwórz okno dialogowe tworzenia konfiguracji](./media/er-quick-start2-add-derived-format.png)
+    ![Utwórz okno dialogowe tworzenia konfiguracji.](./media/er-quick-start2-add-derived-format.png)
 
 6. Wybierz **Utwórz konfigurację**.
 
 Utworzono konfigurację tematu ER **BACS (niestandardowy brytyjski)** w wersji 1.1.1. Ta wersja ma [stan](general-electronic-reporting.md#component-versioning) **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
 
-![Strona Konfiguracje](./media/er-quick-start2-derived-format-configuration1.png)
+![Strona Konfiguracje.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Edytowanie niestandardowego formatu
 
@@ -291,7 +293,7 @@ Musisz skonfigurować format niestandardowy, aby spełniał wymagania specyficzn
 
 7. Umożliwia wybranie elementu **transakcja**.
 
-    ![Element transakcji w projektancie operacji ER](./media/er-quick-start2-derived-format0.png)
+    ![Element transakcji w projektancie operacji ER.](./media/er-quick-start2-derived-format0.png)
 
     > [!NOTE]
     > Podany raport jest skonfigurowany w taki sposób, aby <a id="PositionRoutingNumber"></a>każdy wiersz płatności zaczynał się od numeru rozliczeniowego banku. Element formatu **vendBankRouteNum** jest do tego używany. 
@@ -309,13 +311,13 @@ Musisz skonfigurować format niestandardowy, aby spełniał wymagania specyficzn
 9. W drzewie struktury formatu wybierz **vendBankSWIFT**.
 10. Wybierz przycisk **Przenieś w górę**, aby przenieść wybrany element formatu o jeden poziom w górę. Powtarzaj ten krok do momentu, aż element **vendBankSWIFT** będzie <a id="PositionSWIFTCode"></a>pierwszym elementem w nadrzędnym elemencie **transakcji**.
 
-    ![VendBankSWIFT jako pierwszy element w obszarze transakcja w projektancie operacji ER](./media/er-quick-start2-derived-format1.png)
+    ![VendBankSWIFT jako pierwszy element w obszarze transakcja w projektancie operacji ER.](./media/er-quick-start2-derived-format1.png)
 
 11. Gdy **vendBankSWIFT** jest wciąż zaznaczone w drzewie struktury formatu, wybierz kartę **Mapowanie**, a następnie rozwiń źródło danych **Model**.
 12. Rozwiń **model.Payment** \> **model.Payment.CreditorAgent** oraz wybierz pole źródła danych **model.Payment.CreditorAgent.BICFI**. To pole źródła danych opisuje kod SWIFT banku dostawcy, któremu przypisano rolę agenta w przetwarzanej płatności dostawcy.
 13. Wybierz **Powiąż**. Element formatu **vendBankSWIFT** jest powiązany ze źródłem danych **model.Payment.CreditorAgent.BICFI** data source field, dzięki czemu kody SWIFT zostaną wprowadzone w plikach wygenerowanych płatności.
 
-    ![Element formatu vendBankSWIFT powiązany z polem źródła danych model.Payment.CreditorAgent.BICFI. w projektancie operacji ER](./media/er-quick-start2-derived-format2.png)
+    ![Element formatu vendBankSWIFT powiązany z polem źródła danych model.Payment.CreditorAgent.BICFI. w projektancie operacji ER.](./media/er-quick-start2-derived-format2.png)
 
 14. Wybierz opcję **Zapisz**.
 15. Zamknij stronę projektowania.
@@ -333,7 +335,7 @@ Aby można było skorzystać z wersji roboczej formatu ER, należy odpowiednio g
 5. W drzewie konfiguracji w lewym okienku wybierz **BACS (niestandardowy brytyjski)**.
 6. Ustaw wartość **Uruchom wersję roboczą** na wartość **Tak**.
 
-    ![Uruchom Wersję roboczą na stronie konfiguracje](./media/er-quick-start2-derived-format-configuration2.png)
+    ![Uruchom Wersję roboczą na stronie konfiguracje.](./media/er-quick-start2-derived-format-configuration2.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-custom-er-format"></a><a id="ProcessVendorPayment2"></a>Przetwarzanie płatności dostawcy przy użyciu niestandardowego formatu ER
 
@@ -347,7 +349,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby do przetwarzania 
 4. W karcie **Format plików** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
 5. W polu **Konfiguracja formatu eksportu** wybierz format konfiguracji **BACS (niestandardowy brytyjski)**.
 
-    ![Metody płatności – strona dostawcy](./media/er-quick-start2-method-of-payment2.png)
+    ![Metody płatności – strona dostawcy.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Wybierz opcję **Zapisz**.
 
@@ -376,7 +378,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby do przetwarzania 
 
         Należy zauważyć, że zgodnie ze strukturą niestandardowego formatu ER, wiersz płatności w wygenerowanym pliku [rozpoczyna się](#PositionSWIFTCode) od kodu SWIFT, który został [wprowadzony](#DefineSWIFTCode) dla konta bankowego dostawcy, którego płatność została przetworzona.
 
-        ![Plik płatności w formacie TXT](./media/er-quick-start2-payment-file2.png)
+        ![Plik płatności w formacie TXT.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importowanie nowych wersji standardowej konfiguracji formatu ER
 
@@ -393,7 +395,7 @@ Aby dodać nowe wersje konfiguracji ER do bieżącego wystąpienia Finance, nale
 5. Na skróconej karcie **Wersje** wybierz wersję **3.3** wybranej konfiguracji formatu ER.
 6. Wybierz **Importuj**, aby pobrać wybraną wersję z Globalnego repozytorium do bieżącego wystąpienia Finance.
 
-![Strona Repozytorium konfiguracji](./media/er-quick-start2-import-solution2.png)
+![Strona Repozytorium konfiguracji.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Jeśli masz problemy z dostępem do [repozytorium globalnego](er-download-configurations-global-repo.md), zamiast tego możesz [pobrać konfiguracje z](download-electronic-reporting-configuration-lcs.md) LCS.
@@ -408,7 +410,7 @@ Aby dodać nowe wersje konfiguracji ER do bieżącego wystąpienia Finance, nale
 6. Na stronie **Projektant formatów** rozwiń element formatu **BACSReportsFolder**.
 7.  Zwróć uwagę, że wersja 3.3 element formatu **PaymentAdviceReport** używany do generowania raportu zawiadomienia o płatności podczas przetwarzania płatności dostawcy.
 
-    ![Element formatu PaymentAdviceReport w projektancie operacji ER](./media/er-quick-start2-imported-solution2.png)
+    ![Element formatu PaymentAdviceReport w projektancie operacji ER.](./media/er-quick-start2-imported-solution2.png)
 
 8. Zamknij stronę projektowania.
 
@@ -434,14 +436,14 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
 3. Na skróconej karcie **Wersje** wybierz wersję **1.1.2**, a następnie wybierz opcję **Zmień podstawę**.
 4. W oknie **Zmień podstawę** w polu **Wersja docelowa** wybierz wersję **3.3** konfiguracji podstawowej, aby ją zastosować jako nową podstawę i użyć jej do zaktualizowania konfiguracji.
 
-    ![Okno dialogowe zmiana podstawy](./media/er-quick-start2-rebase1.png)
+    ![Okno dialogowe zmiana podstawy.](./media/er-quick-start2-rebase1.png)
 
 5. Kliknij przycisk **OK**.
 6. Zauważ, że numer wersji roboczej został zmieniony z **1.1.2** na **3.3.2**, aby odzwierciedlić zmianę w wersji bazowej.
 
     Po scaleniu wersji niestandardowej z nową wersją bazową mogą zostać wykryte konflikty. Konflikty te reprezentują niektóre zmiany formatu, których nie można scalić automatycznie.
 
-    ![Zmiana podstawy konfiguracji z konfliktami na stronie konfiguracje](./media/er-quick-start2-rebase2.png)
+    ![Zmiana podstawy konfiguracji z konfliktami na stronie konfiguracje.](./media/er-quick-start2-rebase2.png)
 
     Jeśli zostaną wykryte konflikty, należy je rozwiązać ręcznie w projektancie formatów.
 
@@ -449,13 +451,13 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
 8. Wybierz opcję **Konstruktor**.
 9. Na stronie **Projektant formatów** na skróconej karcie **Szczegóły**, wybierz rekord powodujący konflikt, a następnie wybierz opcję **Zastosuj wartość podstawową**.
 
-    ![Konflikt rekordów zmiany podstawy w projektancie operacji ER](./media/er-quick-start2-rebase3.png)
+    ![Konflikt rekordów zmiany podstawy w projektancie operacji ER.](./media/er-quick-start2-rebase3.png)
 
 10. Wybierz opcję **Zapisz**.
 
     Konfliktu nie powinien już pojawiać się w skróconej karcie **Szczegóły**.
 
-    ![Konflikt rozwiązany w projektancie operacji ER](./media/er-quick-start2-rebase4.png)
+    ![Konflikt rozwiązany w projektancie operacji ER.](./media/er-quick-start2-rebase4.png)
 
     > [!NOTE]
     > Konflikt został rozwiązany przez potwierdzenie, że w tym formacie ER musi być używana wersja 3 modelu podstawowego.
@@ -463,7 +465,7 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
 11. Rozwiń **BACSReportsFolder** \> **plik** \> **transakcje** \> **transakcja**.
 12. Na karcie **Mapowanie** należy zauważyć, że wersja 3.3.2 niestandardowego formatu ER zawiera zarówno dostosowanie (element **vendBankSWIFT** i jego powiązanie), jak i nową funkcjonalność wersji 3.3 podstawowego formatu ER dostarczonego przez Microsoft (element **PaymentAdviceReport** wraz z zagnieżdżonymi elementami i skonfigurowanymi powiązaniami). Po kilku kliknięciach myszą zawarto modyfikacje nowej wersji bazowej, scalając je z dostosowaniem.
 
-    ![Format scalony w projektancie operacji ER](./media/er-quick-start2-rebase5.png)
+    ![Format scalony w projektancie operacji ER.](./media/er-quick-start2-rebase5.png)
 
 13. Zamknij stronę projektowania.
 
@@ -488,7 +490,7 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
     - Ustaw opcję **Wydrukuj raport kontrolny** jako **tak**.
     - Ustaw opcję **Wydrukuj poradę odnośnie do płatności** na **Tak**.
 
-    ![Okno dialogowe Parametry raportu elektronicznego](./media/er-quick-start2-payment-dialog2.png)
+    ![Okno dialogowe Parametry raportu elektronicznego.](./media/er-quick-start2-payment-dialog2.png)
 
     > [!NOTE]
     > Oprócz pliku płatności można teraz wygenerować zarówno raport kontrolny, jak i raport zawiadomienia o płatności.
@@ -499,13 +501,13 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
     - Raport kontrolny w formacie programu Excel
     - Porada dot. płatności w formacie programu Excel
 
-        ![Porada dot. płatności w formacie programu Excel](./media/er-quick-start2-payment-advice-report.png)
+        ![Porada dot. płatności w formacie programu Excel.](./media/er-quick-start2-payment-advice-report.png)
 
     - Plik płatności w formacie TXT
 
         Należy zauważyć, że wiersz płatności w wygenerowanym pliku rozpoczyna się od kodu SWIFT, który został wprowadzony dla konta bankowego dostawcy, którego płatność została przetworzona.
 
-        ![Plik płatności w formacie TXT](./media/er-quick-start2-payment-file3.png)
+        ![Plik płatności w formacie TXT.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Dodatkowe zasoby
 

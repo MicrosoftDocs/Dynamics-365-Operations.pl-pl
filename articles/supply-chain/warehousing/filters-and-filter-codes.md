@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838257"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345241"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurowanie filtrów produktów dla transakcji magazynowych
 
@@ -46,11 +46,11 @@ Filtry produktów zawierają maksymalnie 10 właściwości **tytułu filtru**, k
 1. W polu **Tytuł filtru** wybierz wartość.
 1. W polu **Kod filtru** wprowadź wartość.
 
-    ![Konfigurowanie filtru produktów](media/Product_Filters10.png "Konfigurowanie filtru produktów")
+    ![Konfigurowanie filtru produktów.](media/Product_Filters10.png "Konfigurowanie filtru produktów")
 
 1. W polu **Opis** wprowadź nazwę kodu. Na przykład *kod 2* może reprezentować dostawców. Następnie można utworzyć filtr produktów dla określonego dostawcy lub grupy dostawców. Aby uzyskać więcej informacji, zobacz sekcję [Konfigurowanie kodów filtrów dostawców](#vendor-product-filters) w dalszej części tego tematu.
 
-    ![Zestaw filtrów produktu](media/Product_Filters.png "Zestaw filtrów produktu")
+    ![Zestaw filtrów produktu.](media/Product_Filters.png "Zestaw filtrów produktu")
 
 ## <a name="set-up-product-filter-groups"></a>Konfigurowanie grup filtrów produktów
 
@@ -69,7 +69,7 @@ Aby skonfigurować grupy filtrów, należy wykonać następujące czynności.
 1. W polu **Grupa pozycji** wybierz grupę pozycji, do których ma być stosowany filtr produktów.
 1. W razie potrzeby w polach **Kod 1** do **Kod 10** wybierz kody filtrów, które mają być uwzględniane w grupie.
 
-    ![Grupa pozycji](media/ProdFilterGroup.png "Grupa pozycji")
+    ![Grupa pozycji.](media/ProdFilterGroup.png "Grupa pozycji")
 
 > [!NOTE]
 > Jeśli po zamknięciu strony zostanie wyświetlony komunikat o błędzie, ustawienie kodu może zostać utracone. Na stronie **Grupy pozycji** można ustawić kody jako obowiązkowe dla grupy pozycji, zaznaczając pola wyboru **Przypisz kod filtru 1 dla grupy pozycji** , **Przypisz kod filtru 2 dla grupy pozycji** itd.
@@ -88,7 +88,7 @@ Aby skonfigurować kody filtrów dla grup towarów, należy wykonać następują
 
     Aby zaktualizować zwolniony produkt, otwórz stronę **szczegółów zwolnionego produktu**, a następnie w okienku akcji wybierz pozycję **Edytuj**. Filtry skojarzone z kodami zostaną wówczas udostępnione na skróconej karcie **Magazyn**.
 
-    ![Grupy pozycji](media/ItemGroup10.png "Grupy pozycji")
+    ![Grupy pozycji.](media/ItemGroup10.png "Grupy pozycji")
 
 1. W sekcji **Filtr grupy pozycji** zaznacz pola wyboru dla filtrów, które muszą być takie, aby grupa filtru stanowiła domyślną grupę filtrów dla pozycji.
 

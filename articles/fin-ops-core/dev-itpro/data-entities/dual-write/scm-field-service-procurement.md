@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
-ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
+ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6219794"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346601"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integracja zaopatrzenia między aplikacjami Supply Chain Management i Field Service
 
@@ -31,7 +31,7 @@ Integracja ta obsługuje tworzenie zamówień zakupu, a w większości przypadk�
 
 Na poniższej ilustracji przedstawiono tabele na obu platformach oraz sposób ich wzajemnego mapowania. Zamówienia zakupu w usłudze Field Service odwołują się do wiersza *konta*, podczas gdy zamówienia zakupu w aplikacji Supply Chain Management odwołują się do wiersza *dostawcy*. Aby rozwiązać ten problem, w przypadku podwójnego zapisu odwołanie jest używane do łączenia wierszy *dostawcy* z wierszami *konta*. Aby uzyskać więcej informacji, zobacz temat [Zintegrowane dane główne dostawcy](vendor-mapping.md)
 
-![Mapowania zaopatrzenia](media/scm-field-service-tables.png)
+![Mapowania zaopatrzenia.](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 

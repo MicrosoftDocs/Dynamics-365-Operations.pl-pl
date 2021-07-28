@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893283"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345895"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Projektowanie konfiguracji ER w celu pomijania znaków BOM w generowanych plikach
 
@@ -29,14 +29,14 @@ Możesz w module [Raportowanie elektronicznej (ER)](general-electronic-reporting
 > [!NOTE]
 > Jeśli format zawiera niepoprawną nazwę kodowania, podczas zapisywania zmian ustawień formatu zgłaszany jest błąd.
 
-![Dodawanie elementu głównego na stronie Projektant formatów](./media/er-suppress-bom-characters-image1.gif)
+![Dodawanie elementu głównego na stronie Projektant formatów.](./media/er-suppress-bom-characters-image1.gif)
 
 Jeśli wybierzesz kodowanie **UTF-8**, **UTF-16** lub **UTF-32**, opcja **Pomiń znaki BOM** stanie się dostępna. Ustaw tę opcję na wartość **Tak**, aby pomijać [znaki znaczników kolejności bajtów (BOM)](/globalization/encoding/byte-order-mark) w plikach wychodzących, które są generowane w czasie wykonywania po uruchomieniu edytowalnego formatu ER.
 
 > [!NOTE]
 > Jeśli pole **Kodowanie** pozostanie puste, będzie używane domyślne kodowanie **UTF-8**.
 
-![Ustawianie opcji Pomiń znaki BOM na stronie Projektant formatów](./media/er-suppress-bom-characters-image2.gif)
+![Ustawianie opcji Pomiń znaki BOM na stronie Projektant formatów.](./media/er-suppress-bom-characters-image2.gif)
 
 Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią procedurę. Na przykład wykonaj kroki w temacie [Odraczanie wykonania elementów XML w formatach ER](er-defer-xml-element.md). Po ukończeniu kroków z sekcji [Modyfikowanie formatu, aby obliczenie było oparte na wygenerowanych danych wyjściowych](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) tego tematu należy wykonać następujące dodatkowe kroki.
 
@@ -59,7 +59,7 @@ Aby przejrzeć funkcje w czasie wykonywania, należy wykonać odpowiednią proce
 
     Pierwsza różnica, która zostanie zauważona, znajduje się w nagłówku pliku. Plik SampleXmlReport.xml zawiera znak BOM, a plik SampleXmlReport (1).xml nie.
 
-    ![Porównywanie wygenerowanych plików przy użyciu narzędzia do porównywania plików](./media/er-suppress-bom-characters-image3.png)
+    ![Porównywanie wygenerowanych plików przy użyciu narzędzia do porównywania plików.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

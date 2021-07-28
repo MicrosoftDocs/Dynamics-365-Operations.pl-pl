@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837160"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345633"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -72,7 +72,7 @@ Ustawienia rozpoznawania przychodów są konfigurowane na karcie **Rozpoznawanie
     - Ustawienie tej opcji na wartość **Nie** ograniczy księgowanie transakcji korygującej do księgi głównej. Jeśli ta opcja jest ustawiona na **Nie**, w rozrachunkach z odbiorcami nie są tworzone dodatkowe dokumenty dla wewnętrznej korekty księgowej. Podczas opłacania faktury proces rozliczenia używa starego wpisu księgowania do księgowania rabatów gotówkowych lub wszelkich zrealizowanych zysków lub strat.
     - Ustawienie tej opcji na wartość **Tak** powoduje automatyczne tworzenie dokumentu wycofania i nowej faktury dla korygowanej transakcji w module Rozrachunki z odbiorcami. Ponieważ korekta jest wewnętrzną korektą księgowania, nowe dokumenty nie są wysyłane ani przekazywane odbiorcy. Dokument wycofania jest rozliczany z oryginalną fakturą, a nowa skorygowana faktura jest opłacana przez odbiorcę. Należy zwrócić uwagę, że wszystkie trzy dokumenty są wyświetlane w raportach, np. wyciągach odbiorców.
 
-[![Informacje o ustawieniach](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Informacje o ustawieniach.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Harmonogramy przychodów
 
@@ -82,7 +82,7 @@ Jeśli przychód jest rozpoznawany według punktów kontrolnych, zaleca się utw
 
 Harmonogramy przychodów są tworzone na stronie **Harmonogramy przychodów** (**Rozpoznawanie przychodów \> Ustawienia \> Harmonogramy przychodów**).
 
-[![Harmonogramy przychodów](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Harmonogramy przychodów.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Poniższe dodatkowe ustawienia są używane do tworzenia harmonogramu przychodów podczas księgowania faktury.
 
@@ -104,7 +104,7 @@ Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Pon
 
 Wybierz przycisk **Szczegóły harmonogramu przychodów**, aby wyświetlić okresy ogólne i wartości procentowe rozpoznawane w każdym okresie. Domyślnie **Wartość procentowa rozpoznawania** jest równo podzielona przez liczbę okresów. Jeśli podstawą rozpoznawania jest wartość **Miesięczna** lub **Liczba wystąpień**, można zmienić wartość procentową rozpoznawania. Podczas zmiany wartości procentowej rozpoznawania wyświetlany jest komunikat z ostrzeżeniem informującym, że suma nie jest równa 100 procent. Po wyświetleniu komunikatu można kontynuować edycję wierszy. Jednak suma wartości procentowych musi być równa 100 przed zamknięciem strony.
 
-[![Szczegóły harmonogramu przychodów](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Szczegóły harmonogramu przychodów.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Ustawienia zapasów
 
@@ -137,9 +137,9 @@ Grupy pozycji i zwolnione produkty można konfigurować za pomocą metody ceny m
     - **Maksymalna tolerancja** — umożliwia wprowadzenie procentu powyżej dozwolonej ceny mediany.
     - **Minimalna tolerancja** — umożliwia wprowadzenie procentu poniżej dozwolonej ceny mediany.
 
-Po zakończeniu konfigurowania ustawień zwolnionego produktu należy ręcznie zdefiniować cenę przychodu, wprowadzając rzeczywistą cenę wartości lub cenę mediany (jeśli jest używana metoda ceny mediany) na stronie **Ceny przychodu** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów \> Zwolnione produkty**, a następnie w okienku akcji na karcie **Sprzedaż** w grupie **Rozpoznawanie przychodów** wybierz **Ceny przychodu**).
+Po zakończeniu konfigurowania ustawień zwolnionego produktu należy ręcznie zdefiniować cenę przychodu, wprowadzając rzeczywistą cenę wartości lub cenę mediany (jeśli jest używana metoda ceny mediany) na stronie **Ceny przychodu** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów \> Zwolnione produkty**, a następnie w okienku zadań na karcie **Sprzedaż** w grupie **Rozpoznawanie przychodów** wybierz **Ceny przychodu**).
 
-[![Ceny przychodu](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Ceny przychodu.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Cena przychodu, która jest ręcznie zdefiniowana na tej stronie, służy do ustalania alokacji ceny przychodu na poszczególnych zamówieniach sprzedaży na podstawie zdefiniowanych kryteriów. Każde kryterium jest dopasowywane do wiersza zamówienia sprzedaży w celu określenia ceny przychodu, która powinna zostać użyta w procesie alokacji.
 
@@ -181,7 +181,7 @@ Podczas konfiguracji elementu pakietu należy ustawić dwa pola na stronie **Zwo
 
 Składniki muszą być następnie przypisane do elementu nadrzędnego pakietu/BOM na stronie **Wersje BOM** (przejdź do **Rozpoznawanie przychodów \> Ustawienia \> Ustawienia zapasów i produktu \> Zwolnione produkty**, a następnie w okienku akcji na karcie **Konstruuj** w grupie **BOM** wybierz **Wersje BOM**). Aby uzyskać więcej informacji, zapoznaj się z dokumentacją konfiguracji elementów BOM.
 
-[![Zwolnione produkty, harmonogramy BOM](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Zwolnione produkty, harmonogramy BOM.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Jeśli pakiet nadrzędny i składniki pakietu są ustawione jako alokowane, cena przychodu pakietu będzie dystrybuowana do składników na podstawie wartości procentowej marży przychodu.
 

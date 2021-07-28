@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744034"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344304"
 ---
 # <a name="configure-and-filter-workspaces"></a>Konfigurowanie i filtrowanie obszarów roboczych
 
@@ -32,11 +32,11 @@ Ten artykuł zawiera omówienie metod konfigurowania i filtrowania obszarów rob
 
 Można zmienić wygląd i zachowanie niektórych obszarów roboczych poprzez aktualizację ustawień mających zastosowanie do całego obszaru roboczego. Jeśli obszar roboczy można skonfigurować, w okienku akcji znajduje się przycisk z instrukcją, że jego kliknięcie pozwoli dokonać zmian w konfiguracji. Na przykład na poniższej ilustracji przycisk ma nazwę **Konfiguruj mój obszar roboczy**.
 
-[![configure-and-filter-workspaces](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![configure-and-filter-workspaces.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Po kliknięciu przycisku pojawia się okno dialogowe, gdzie można zmodyfikować wstępnie zdefiniowane ustawienia obszaru roboczego. Konkretne ustawienia widoczne w tym oknie zależą od obszaru roboczego oraz od formantów i danych biznesowych dostępnych w obszarze.
 
-[![configure-my-workspace](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![configure-my-workspace.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Filtrowanie obszaru roboczego
 
@@ -46,11 +46,11 @@ W wielu obszarach można filtrować wyświetlaną w nich zawartość. Dostępne 
 
 Za pomocą filtra całego obszaru roboczego można filtrować cały obszar. Filtr całego obszaru roboczego znajduje się w lewym górnym rogu obszaru roboczego. Gdy zaznaczysz określoną wartość na liście rozwijanej, zawartość obszaru roboczego będzie filtrowana na podstawie tego wyboru.
 
-[![workspace-filter](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![workspace-filter.](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Jeśli klikniesz, aby otworzyć filtr, zobaczysz szereg opcji.
 
-[![workspace-filter-expanded](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![workspace-filter-expanded.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Wybierz opcję, aby na jej podstawie przefiltrować obszar roboczy.
 
@@ -58,7 +58,7 @@ Wybierz opcję, aby na jej podstawie przefiltrować obszar roboczy.
 
 Jeśli poszczególne sekcje obszaru roboczego mają własne filtry, każdą sekcję można filtrować oddzielnie. Na ilustracji poniżej filtr (pole z napisem „Filtr”) jest przykładem filtra pola tekstu w formacie dowolnym.
 
-[![workspace-section-filters](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![workspace-section-filters.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Podobnie jak w przypadku filtra całego obszaru roboczego, wybierz lub wprowadź wartość, aby według niej wyfiltrować zawartość sekcji.
 

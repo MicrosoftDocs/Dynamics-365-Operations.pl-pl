@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271287"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346723"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
@@ -41,7 +41,7 @@ Oto kilka przykładów użycia modułów programu galerii multimediów:
 
 W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produktów przy użyciu modułu galerii multimediów.
 
-![Przykład pola zakupu na stronie szczegółów produktu obsługującego obrazy produktu przy użyciu modułu galerii multimediów](./media/ecommerce-pdp-buybox.PNG)
+![Przykład pola zakupu na stronie szczegółów produktu obsługującego obrazy produktu przy użyciu modułu galerii multimediów.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Właściwości galerii multimediów
 
@@ -59,11 +59,11 @@ W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produk
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.
 
-![Przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia](./media/ecommerce-media-zoom.png)
+![Przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.](./media/ecommerce-media-zoom.png)
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, który zawiera wybrane obrazy (czyli określone obrazy nie są zależne od identyfikatora produktu lub kontekstu strony).
 
-![Przykład modułu galerii multimediów, który ma dobrane obrazy](./media/ecommerce-media-curated.PNG)
+![Przykład modułu galerii multimediów, który ma dobrane obrazy.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 

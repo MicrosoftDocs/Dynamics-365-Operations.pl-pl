@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866309"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345793"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definicje drzewa raportowania w raportach finansowych
 
@@ -170,23 +170,23 @@ Oto struktura jednostek raportowania w poniższym drzewie raportowania:
 - Jednostki raportowania najniższego poziomu szczegółów (Home Sales, Auto Sales, Client Services i Operations) reprezentują działy w danych finansowych. Te jednostki raportowania znajdują się w zacienionym obszarze diagramu.
 - Jednostki podsumowania wyższego poziomu podsumowują informacje z jednostek szczegółów.
 
-[![Struktura raportu zbiorczego Contoso — przykład 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Struktura raportu zbiorczego Contoso — przykład 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktura jednostki raportowania — przykład 2
 
 Na diagramie poniżej drzewo raportowania ma strukturę organizacyjną podzieloną według funkcji biznesowych.
 
-[![Struktura raportu zbiorczego Contoso — przykład 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Struktura raportu zbiorczego Contoso — przykład 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Przykład okna dialogowego Wstawianie jednostek raportowania z wymiarów
 
 Ilustracja poniżej zawiera przykład okna dialogowego **Wstawianie jednostek raportowania z wymiarów**. W tym przykładzie zwracanymi wynikami są kombinacje jednostek biznesowych, centrów kosztów i działów.
 
-[![Wstaw jednostki raportowania](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Wstaw jednostki raportowania.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Powstała definicja drzewa raportowania jest sortowana według jednostek biznesowych, następnie według centrów kosztów, a na końcu według działów. Wymiarem piątej jednostki raportowania jest **Jednostka biznesowa = \[001\], Centrum kosztu =\[\], Dział = \[022\]**. Identyfikuje on jednostkę raportowania dla kont, które są specyficzne dla jednostki biznesowej 001 i działu 022.
 
-[![Ilustracja drzewa raportowania](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Ilustracja drzewa raportowania.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Przykłady akumulacji danych
 
@@ -194,11 +194,11 @@ Poniższe przykłady przedstawiają informacje, które mogą być używane w def
 
 #### <a name="example-1"></a>Przykład 1
 
-[![Wdrożenie w wielu firmach](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Wdrożenie w wielu firmach.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Przykład 2
 
-[![Wdrożenie w działach między firmami](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Wdrożenie w działach między firmami.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

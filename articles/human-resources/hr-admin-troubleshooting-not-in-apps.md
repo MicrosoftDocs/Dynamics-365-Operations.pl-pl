@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 292db7e430bf0f2171f2b0a482ad70250774caec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053383"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346353"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>Human Resources nie wyświetla się w ramach aplikacji Microsoft Dynamics 365
 
@@ -39,11 +39,11 @@ Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Micros
 
 3. Na karcie **zabezpieczeń** na karcie **ról środowiska** wybierz opcję **Twórca środowiska**.
 
-    ![Karta role środowiska](media/environment-roles.png)
+    ![Karta role środowiska.](media/environment-roles.png)
 
 4. Na karcie **użytkownicy** dodać użytkownika lub organizację.
 
-    ![Karta użytkowników](media/environment-maker.png)
+    ![Karta użytkowników.](media/environment-maker.png)
 
 5. Wybierz opcję **Zapisz**.
 
@@ -51,7 +51,7 @@ Użytkownik musi być dodany do roli Twórca środowisk dla środowiska w Micros
 
 7. Wybierz **Synchronizuj**, aby zaktualizować aplikacje użytkownika.
 
-    ![Przycisk synchronizacji](media/get-more.png)
+    ![Przycisk synchronizacji.](media/get-more.png)
 
     Po zakończeniu synchronizacji program Human Resources będzie wyświetlany na stronie głównej.
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796493"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345215"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Pokazywanie powiadomień o zamówieniach w aplikacji POS
 
@@ -72,14 +72,14 @@ Przyciski aplikacji POS mogą teraz pokazywać liczbę, aby ułatwić pracowniko
 
 Poniższa ilustracja przedstawia ustawienia przekazywania zawartości na żywo w konstruktorze siatki przycisków.
 
-![Ustawienia zawartości aktywnej w projektancie siatki przycisków](./media/ButtonGridDesigner.png "Ustawienia zawartości aktywnej w projektancie siatki przycisków")
+![Ustawienia zawartości aktywnej w projektancie siatki przycisków.](./media/ButtonGridDesigner.png "Ustawienia zawartości aktywnej w projektancie siatki przycisków")
 
 Aby wyświetlić na przycisku licznik powiadomień, należy upewnić się, że jest aktualizowany właściwy układ ekranu. Aby określić układ ekranu używany przez punkt sprzedaży, wybierz ikonę **Ustawienia** w prawym górnym rogu i zanotuj jej **Identyfikator układu ekranu** i **Rozdzielczość układu**. Za pomocą przeglądarki Edge przejdź do strony **Układ ekranu**, znajdź **Identyfikator układu ekranu** i **Rozdzielczość układu** określone powyżej i zaznacz pole wyboru **Włącz zawartość na żywo**. Przejdź do **Sprzedaż detaliczna i komercyjna \> IT sprzedaży \> Harmonogram dystrybucji** i uruchom zadanie 1090 (rejestry), aby zsynchronizować zmiany w układzie.
 
-![Znajdowanie układu ekranu używanego w punkcie sprzedaży](./media/Choose_screen_layout.png "Znajdź układy ekranu")
+![Znajdowanie układu ekranu używanego w punkcie sprzedaży.](./media/Choose_screen_layout.png "Znajdź układy ekranu")
 
 Na poniższej ilustracji przedstawiono efekt wybrania opcji **Do góry, do prawej** i **Środek** w polu **Wyrównanie zawartości** dla przycisków o różnej wielkości.
 
-![Aktywna zawartość na przyciskach aplikacji POS](./media/ButtonsWithLiveContent.png "Aktywna zawartość na przyciskach aplikacji POS")
+![Aktywna zawartość na przyciskach aplikacji POS.](./media/ButtonsWithLiveContent.png "Aktywna zawartość na przyciskach aplikacji POS")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

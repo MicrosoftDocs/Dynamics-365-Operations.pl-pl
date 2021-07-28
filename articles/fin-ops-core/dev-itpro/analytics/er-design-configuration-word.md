@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894083"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346651"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894083"
 
 Aby generować raporty jako dokumenty programu Microsoft Word, należy zaprojektować szablon dla tych raportów, korzystając na przykład z aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono przykładowy szablon raportu kontroli, który można wygenerować w celu pokazania szczegółów przetworzonych płatności dostawców.
 
-![Przykładowy szablon raportu kontroli w aplikacji klasycznej Word](./media/er-design-configuration-word-image1.png)
+![Przykładowy szablon raportu kontroli w aplikacji klasycznej Word.](./media/er-design-configuration-word-image1.png)
 
 Aby użyć dokumentu programu Word jako szablonu raportów w formacie programu Word, można skonfigurować nowe [rozwiązanie](er-quick-start1-new-solution.md) do [raportowania elektronicznego (ER)](general-electronic-reporting.md). To rozwiązanie musi zawierać [konfigurację](general-electronic-reporting.md#Configuration) zawierającą składnik [formatu](general-electronic-reporting.md#FormatComponentOutbound) ER.
 
 > [!NOTE]
 > Podczas tworzenia nowej konfiguracji formatu ER w celu wygenerowania raportów w formacie programu Word należy wybrać program **Word** jako typ formatu w oknie rozwijanym **Utwórz konfigurację** lub pozostawić pole **Typ formatu** puste.
 
-![Tworzenie konfiguracji formatu na stronie Konfiguracje](./media/er-design-configuration-word-image2.gif)
+![Tworzenie konfiguracji formatu na stronie Konfiguracje.](./media/er-design-configuration-word-image2.gif)
 
 Składnik formatu ER rozwiązania musi zawierać element formatu **Excel\\Plik**, a ten element formatu musi być połączony z dokumentem programu Word, który będzie używany jako szablon do generowania raportów w czasie wykonywania. Aby skonfigurować składnik formatu ER, należy otworzyć [wersję roboczą](general-electronic-reporting.md#component-versioning) utworzonej konfiguracji ER w projektancie formatów ER. Następnie dodaj element **Excel\\Plik**, dołącz szablon programu Word do edytowalnego formatu ER i połącz ten szablon z dodanym elementem **Excel\\Plik**.
 
 > [!NOTE]
 > Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types), który został poprzednio [skonfigurowany](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) w obszarze parametrów ER w celu przechowywania szablonów formatów ER.
 
-![Dołączanie szablonu na stronie Projektant formatów](./media/er-design-configuration-word-image3.gif)
+![Dołączanie szablonu na stronie Projektant formatów.](./media/er-design-configuration-word-image3.gif)
 
 Możesz dodać zagnieżdżone elementy **Excel\\Zakres** i **Excel\\Komórka** dla elementu **Excel\\Plik** w celu określenia struktury danych, które będą wprowadzane w raportach generowanych w czasie wykonywania. Następnie należy powiązać te elementy ze źródłami danych formatu edytowalnego raportu ER, aby określić rzeczywiste dane, które będą wprowadzane w raportach generowanych w czasie wykonywania.
 
-![Dodawanie zagnieżdżonych elementów na stronie Projektant formatów](./media/er-design-configuration-word-image4.gif)
+![Dodawanie zagnieżdżonych elementów na stronie Projektant formatów.](./media/er-design-configuration-word-image4.gif)
 
 Podczas zapisywania zmian w formacie ER w czasie projektowania hierarchiczna struktura formatu jest przechowywana w dołączonym szablonie programu Word jako [niestandardowa część XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) o nazwie **Raport**. Musisz uzyskać dostęp do zmodyfikowanego szablonu, pobrać go z aplikacji Finance, zapisać lokalnie i otworzyć w aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono lokalnie przechowywany szablon przykładowy dla raportu kontrolnego zawierającego niestandardową część XML o nazwie **Raport**.
 
-![Wyświetlanie przykładowego szablonu raportu w aplikacji klasycznej Word](./media/er-design-configuration-word-image5.gif)
+![Wyświetlanie przykładowego szablonu raportu w aplikacji klasycznej Word.](./media/er-design-configuration-word-image5.gif)
 
 Gdy powiązania elementów formatu **Excel\\Zakres** i **Excel\\Komórka** są uruchamiane w czasie wykonywania, dane, które każde powiązanie dostarcza, jest umieszczane w wygenerowanym dokumencie programu Word jako indywidualne pole niestandardowej części XML **Raport**. Aby wprowadzić wartości z pól niestandardowej części XML w generowanym dokumencie, musisz dodać odpowiednie [kontrolki zawartości](/office/client-developer/word/content-controls-in-word) programu Word do szablonu programu Word, aby służyły jako symbole zastępcze dla danych, które będą wypełniane w czasie wykonywania. Aby określić sposób wypełnienia kontrolek zawartości, zamapuj każdą kontrolkę zawartości do odpowiedniego pola niestandardowej części XML **Raport**.
 
-![Dodawanie i mapowanie kontrolek zawartości w aplikacji klasycznej Word](./media/er-design-configuration-word-image6.gif)
+![Dodawanie i mapowanie kontrolek zawartości w aplikacji klasycznej Word.](./media/er-design-configuration-word-image6.gif)
 
 Następnie należy zastąpić oryginalny szablon programu Word edytowalnym formatem raportu ER ze zmodyfikowanym szablonem, który teraz zawiera kontrolki zawartości programu Word zamapowane na pola niestandardowej części XML **Raport**.
 
-![Zastępowanie szablonu na stronie Projektant formatów](./media/er-design-configuration-word-image7.gif)
+![Zastępowanie szablonu na stronie Projektant formatów.](./media/er-design-configuration-word-image7.gif)
 
 Po uruchomieniu skonfigurowanego formatu ER dołączony szablon programu Word jest używany do generowania nowego raportu. Rzeczywiste dane są przechowywane w raporcie programu Word jako niestandardowa część XML o nazwie **Raport**. Po otwarciu wygenerowanego raportu kontrolki zawartości programu Word są wypełniane danymi z niestandardowej części XML **Raport**.
 

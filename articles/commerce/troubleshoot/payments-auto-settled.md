@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b4fd37a3c45f2559c9659f072ca0b6f02e712f53
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 79300c84b07db23ad387e0f3e475ca1707c79548
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018267"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347375"
 ---
 # <a name="payments-are-automatically-settled-before-orders-are-invoiced-or-shipped"></a>Płatności są automatycznie rozliczane przed zafakturowaniem lub wysyłkami zamówień
 
@@ -43,12 +43,12 @@ Aby skonfigurować ręczne przechwytywanie dla płatności handlu elektroniczneg
 1. Na górnym pasku nawigacyjnym wybierz opcję **Konto**, a następnie wybierz opcję **Ustawienia**.
 1. W polu **Przechwyć opóźnienie** wybierz opcję **ręcznie**.
 
-    ![Ustawienie przechwycenia opóźnienia w portalu Adyen](media/adyen-capture-delay.jpg)
+    ![Ustawienie przechwycenia opóźnienia w portalu Adyen.](media/adyen-capture-delay.jpg)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Przechwycenie płatności Adyen](https://docs.adyen.com/point-of-sale/capturing-payments)
 
-[Łącznik płatności usługi Dynamics 365 dla Adyen](../dev-itpro/adyen-connector.md)
+[Dynamics 365 Payment Connector dla Adyen](../dev-itpro/adyen-connector.md)
 
 [Skonfiguruj łącznik płatności Adyen dla Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics)

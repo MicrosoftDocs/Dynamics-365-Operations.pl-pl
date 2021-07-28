@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830769"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344153"
 ---
 # <a name="work-split"></a>Podział pracy
 
@@ -51,7 +51,7 @@ Funkcja *Podziału pracy* powoduje dodanie poniższych dwóch przycisków do kar
 - **Podział pracy** — dzielenie bieżącej pracy o podanym identyfikatorze na wiele mniejszych prac, które mogą być wykonywane przez różnych pracowników.
 - **Anuluj sesję podziału pracy** — umożliwia anulowanie sesji podziału pracy i udostępnienie pracy do przetwarzania.
 
-![Przyciski sesji podziału pracy i anulowania podziału pracy](media/Work_split_buttons.png "Przyciski sesji podziału pracy i anulowania podziału pracy")
+![Przyciski sesji podziału pracy i anulowania podziału pracy.](media/Work_split_buttons.png "Przyciski sesji podziału pracy i anulowania podziału pracy")
 
 > [!IMPORTANT]
 > Przycisk **Podziału pracy** nie jest dostępny, jeśli spełniony jest dowolny z następujących warunków:
@@ -94,7 +94,7 @@ Aby podzielić pracę, wykonaj następujące kroki.
 
     W polu **Przyczyna blokady pracy** dla bieżącej pracy zostanie ustawiona wartość *Podział pracy*, a praca zostanie zablokowana.
 
-    ![Przyczyna blokowania](media/Blocking_reason.png "Przyczyna blokowania")
+    ![Przyczyna blokowania.](media/Blocking_reason.png "Przyczyna blokowania")
 
 1. Wybierz wiersze, które mają zostać usunięte z bieżącego identyfikatora pracy i dodane do nowego identyfikatora pracy. Występują wówczas następujące zdarzenia:
 

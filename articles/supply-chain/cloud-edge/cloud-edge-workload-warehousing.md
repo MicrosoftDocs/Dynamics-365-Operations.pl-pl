@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184029"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345507"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -73,7 +73,7 @@ Piasta posiada następujące dane:
 
 Jednostki te są zależne od rzeczywistego przetwarzania grupy czynności (np. przydziału pracy, pracy uzupełniania i tworzenia popytu) po wydaniu grupy czynności. W związku z tym pracownicy magazynu mogą przetwarzać pracę wychodzącą za pomocą aplikacji Warehouse Management połączonej z jednostką miary skali.
 
-![Przetwarzanie przepływu grupy czynności](./media/wes-wave-processing-ga.png "Przetwarzanie przepływu grupy czynności")
+![Przetwarzanie przepływu grupy czynności.](./media/wes-wave-processing-ga.png "Przetwarzanie przepływu grupy czynności")
 
 ### <a name="process-work-and-ship"></a>Przetwarzanie pracy i wysyłki
 
@@ -81,7 +81,7 @@ Gdy tylko ostateczny proces pracy odłoży zapasy w końcowej lokalizacji wysył
 
 Gdy centrum zaktualizuje stan transakcji na *Pobrano*, może przetwarzać potwierdzenie wysyłki wychodzącej oraz skojarzony z nim dokument dostawy sprzedaży lub wysyłkę zamówienia przeniesienia dla obciążenia pracą.
 
-![Przepływ przetwarzania wychodzącego](./media/WES-outbound-processing-19.png "Przepływ przetwarzania wychodzącego")
+![Przepływ przetwarzania wychodzącego.](./media/WES-outbound-processing-19.png "Przepływ przetwarzania wychodzącego")
 
 ## <a name="inbound-process-flow"></a>Przepływ procesu przychodzącego
 
@@ -107,11 +107,11 @@ Pracownicy magazynu mogą uruchomić proces odbioru za pomocą aplikacji Warehou
 
 Jeśli nie są używane *procesy magazynowe*, a w związku z tym nie są używane *zamówienia magazynowe*, centrum może przetwarzać przyjęcie magazynowe i przetwarzanie pracy niezależnie od jednostek skalowania.
 
-![Przepływ procesu przychodzącego](./media/wes-inbound-ga.png "Przepływ procesu przychodzącego")
+![Przepływ procesu przychodzącego.](./media/wes-inbound-ga.png "Przepływ procesu przychodzącego")
 
 Jeśli rejestrowanie przychodzące jest wykonywane w procesie przyjęcia przy użyciu aplikacji magazynowej w odniesieniu do zamówienia magazynowego jednostki skalowania, obciążenie jednostki skalowania będzie sygnalizować centrum, aby zaktualizować stan powiązanej transakcji wiersza zamówieni zakupu na *Zarejestrowane*. Po zakończeniu tego zadania będzie można uruchomić w centrum przyjęcie produktu zamówienia zakupu.
 
-![Przepływ przetwarzania przychodzącego](./media/WES-inbound-processing-19.png "Przepływ przetwarzania przychodzącego")
+![Przepływ przetwarzania przychodzącego.](./media/WES-inbound-processing-19.png "Przepływ przetwarzania przychodzącego")
 
 ## <a name="supported-processes-and-roles"></a>Obsługiwane procesy i role
 

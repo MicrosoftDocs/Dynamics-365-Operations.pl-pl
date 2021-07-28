@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d2a2bcff302814903959f78d6435abd540b46ef5
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 252829ac2d070833023f1b49aef615cc376f37b6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117090"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344647"
 ---
 # <a name="maintenance-job-types-categories-variants-trades-and-checklists"></a>Rodzaje prac konserwacyjnych, kategorie, warianty, wymiany i listy kontrolne
 
@@ -54,7 +54,7 @@ Najpierw należy skonfigurować wymagane kategorie typów prac konserwacyjnych, 
 
     Po utworzeniu relacji między kategoriami typów zadań konserwacji a zadaniami serwisowymi w polu **typy zadań** wyświetlana jest liczba typów zadań obsługi związanych z tą kategorią typu zadania konserwacji.
 
-![Strona Kategorie typu zadania konserwacji](media/01-setup-for-work-orders.png)
+![Strona Kategorie typu zadania konserwacji.](media/01-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type-variant"></a>Utwórz wariant typu zadania konserwacji
 
@@ -68,7 +68,7 @@ Najpierw należy skonfigurować wymagane kategorie typów prac konserwacyjnych, 
 
     W polu **szczegóły** naskróconej karcie pole **typy zadań** zawiera liczbę typów zadań obsługi, które zostały dodane do danego typu zadania serwisowego.
 
-![Strona Warianty typu zadania konserwacji](media/02-setup-for-work-orders.png)
+![Strona Warianty typu zadania konserwacji.](media/02-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-trade"></a>Tworzenie zawodu zadania konserwacji
 
@@ -89,7 +89,7 @@ Najpierw należy skonfigurować wymagane kategorie typów prac konserwacyjnych, 
 
     W polu **szczegóły** na skróconej karcie pole **Certyfikaty** zawiera liczbę certyfikatów, które zostały dodane do danego zawodu zadania serwisowego.
 
-![Strona Tworzenie zawodu zadania konserwacji](media/03-setup-for-work-orders.png)
+![Strona Tworzenie zawodu zadania konserwacji.](media/03-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-variable"></a>Utwórz zmienną listę kontrolną konserwacji
 
@@ -110,7 +110,7 @@ Podczas tworzenia wierszy listy kontrolnej w ramach zadania obsługi typu domyś
 6. W polu **Wartość** wpisz opis wartości.
 7. W polu **wynik** wybierz wynik dla wiersza.
 
-![Strona Zmienne listy kontrolnej konserwowanego składnika majątku](media/04-setup-for-work-orders.png)
+![Strona Zmienne listy kontrolnej konserwowanego składnika majątku.](media/04-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-checklist-template"></a>Utwórz szablon listy kontrolnej konserwacji
 
@@ -139,7 +139,7 @@ Szablony listy prac konserwacyjnych mogą być używane jako wspólny zbiór zad
 
     W polu **szczegóły** skróconej karcie pole **czeki** zawiera łączną liczbę wierszy list kontrolnych w szablonie. Ta liczba uwzględnia zagnieżdżone wiersze w istniejącym szablonie, do którego odwołano się w szablonie.
 
-![Strona Szablony listy kontrolnej konserwowanego składnika majątku](media/05-setup-for-work-orders.png)
+![Strona Szablony listy kontrolnej konserwowanego składnika majątku.](media/05-setup-for-work-orders.png)
 
 ## <a name="create-a-maintenance-job-type"></a>Tworzenie typu zadania konserwacji
 
@@ -162,7 +162,7 @@ Szablony listy prac konserwacyjnych mogą być używane jako wspólny zbiór zad
 
 11. Na skróconej karcie **Typy składników majątku** można dodać typy środków trwałych do typu zadania konserwacji.
 
-![Strona Typy zadań konserwacji](media/06-setup-for-work-orders.png)
+![Strona Typy zadań konserwacji.](media/06-setup-for-work-orders.png)
 
 ## <a name="create-maintenance-job-type-default-lines-and-related-forecasts-maintenance-checklists-tools-description-and-attachments"></a>Utwórz zadanie obsługi typu wiersze domyślne i powiązane prognozy, listy kontrolne obsługi, narzędzia, opis i załączniki
 
@@ -231,7 +231,7 @@ Szablony listy prac konserwacyjnych mogą być używane jako wspólny zbiór zad
 31. Aby skopiować domyślny typ zadania serwisowego do innego typu zadania obsługi, należy wybrać domyślny wiersz zadania obsługi, aby skopiować inne ustawienia do systemu, wybierz opcję **Kopiuj ustawienia**, a następnie wybierz typ zadania konserwacji domyślne do skopiowania.
 32. Aby wyświetlić listę środków trwałych, planów serwisowych lub zaokrąglenia konserwacyjnego, które aktualnie używają wiersza domyślnego typu zadania obsługi, zaznacz wiersz, a następnie wybierz opcję **używaneprzez**.
 
-![Strona Ustawienia domyślne typu zadania konserwacji](media/07-setup-for-work-orders.png)
+![Strona Ustawienia domyślne typu zadania konserwacji.](media/07-setup-for-work-orders.png)
 
 Jeśli system wybierze domyślną wartość typu zadania obsługi, która powinna być używana w wierszu zlecenia, wybór jest oparty na składniku aktywów i ustawieniach powiązanego typu środka trwałego. Zarządzanie środkami trwałymi przechodzi między wszystkimi domyślnymi rekordami, które są powiązane z typem zadania konserwacji związanym z typem środka, aby można było sprawdzić, czy takie dopasowanie jest możliwe. W pierwszej kolejności sprawdza zawsze kombinację najbardziej szczegółową. Innymi słowy, aby znaleźć najbardziej konkretną kombinację, najpierw należy sprawdzić, czy jest możliwe dopasowanie dla pola **Zawód**. Jeśli nie znaleziono dopasowania, sprawdza dopasowanie dla pola **Wariant typu zadania konserwacji**. Jeśli nie zostanie znaleziony żaden odpowiednik, system sprawdza zgodność dla pola typu **zadanie konserwacji** itd. (**Zawód**, później **Wariant typu zadania konserwacji**, później **Typ zadania konserwacji**, później **Składnik majatku**, później **Model**, późńiej **Producent** i **Typ składnika majątku**). Jeśli nie zostanie znaleziony żaden odpowiednik, używany jest typ zadania konserwacji domyślny, w którym jest wybrany tylko grupa projektu.
 
@@ -252,7 +252,7 @@ Po utworzeniu wymaganych kombinacji domyślnych dla zadania konserwacji można s
 4. Wybierz kombinację typu zadania konserwacji, aby wyświetlić powiązaną konfigurację list kontrolnych konserwacji, prognoz i narzędzi. W **Szczegóły** dotyczącej **typu zadania konserwacji** skróconej karcie wyświetlana jest liczba powiązanych list kontrolnych konserwacji, godzin prognozowanych, towarów itp., które są powiązane z wybraną kombinacją typów zadań konserwacyjnych.
 5. Aby wyświetlić szczegóły wybranego typu zadania obsługi, należy wybrać **typy zadań konserwacji**.
 
-![Strona Typy zadań konserwacji składnika majątku](media/08-setup-for-work-orders.png)
+![Strona Typy zadań konserwacji składnika majątku.](media/08-setup-for-work-orders.png)
 
 ## <a name="automatic-update-of-maintenance-job-type-forecasts"></a>Automatyczna aktualizacja prognoz typu zadania obsługi
 

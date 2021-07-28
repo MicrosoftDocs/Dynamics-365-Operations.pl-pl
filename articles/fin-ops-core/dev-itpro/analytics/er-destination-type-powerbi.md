@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: 964ed05eaba2a4dbba904b4ce0e0be33d0925fb5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 20f3c04e5a916524c2c2e8fcb49dfbcd41eb6bb6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753463"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347907"
 ---
 # <a name="power-bi-destination"></a>Miejsce docelowe — usługa Power BI
 
@@ -30,7 +30,7 @@ Możesz konfigurować lokalizacje docelową Microsoft Power BI dla poszczególny
 
 W opcji **Włączone** ustaw wartość **Tak**, aby wykorzystywać konfigurację raportowania elektronicznego (ER) do organizowania przesyłania danych z Dynamics 365 Finance do usług Microsoft Power BI. Przesłane pliki są przechowywane w wystąpieniu serwera programu Microsoft SharePoint, który musi skonfigurowany do tego celu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie raportowania elektronicznego (ER) do pobierania danych z Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
-[![Ustawienia strony docelowej](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
+[![Ustawienia strony docelowej.](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

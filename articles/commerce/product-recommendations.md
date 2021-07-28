@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795604"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337510"
 ---
 # <a name="product-recommendations-overview"></a>Omówienie rekomendacji produktów
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce może posłużyć do pokazywania zaleceń dotycz
 Zalecenia dotyczące produktów pozwalają klientom łatwo i szybko znaleźć produkty, których chcą, mając doświadczenie, które im dobrze służy. Można nawet użyć sprzedaży powiązanej i oferowanie droższego produktu, aby pomóc klientom znalezienie dodatkowych produktów niż pierwotnie zamierzone. Kiedy rekomendacje są pomocne w odkrywaniu produktów, mogą stworzyć więcej możliwości konwersji, pomóc zwiększyć przychody ze sprzedaży, a nawet pomóc zwiększyć satysfakcję i utrzymanie klientów.
 
 W handlu elektronicznym rekomendacje produktów są oparte na technologiach uczenia maszynowego rekomendacji Microsoft na dużą skalę.
+
+Ta usługa jest dodatkiem do Dynamics 365 Commerce. Aby uzyskać więcej informacji, pobierz najnowszy [Podręcznik licencjonowania rozwiązania Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Usługa rekomendacji
 
@@ -47,7 +50,7 @@ Rekomendacje produktów są dostępne w opisanych niżej scenariuszach:
 - **Na dowolnej stronie sklepu lub stronie magazynowej w e-Commerce:** Jeśli klient lub sprzedawca odwiedza stronę sklepu, aparat rekomendacji może sugerować produkty na listach **Nowości**, **Bestsellery** i **Trendy**.
 - **Na stronie Szczegóły produktu:** Jeśli klienci lub sprzedawcy odwiedzają stronę **Szczegóły produktu**, aparat rekomendacji sugeruje dodatkowe towary, które również prawdopodobnie zostaną nabyte. Pozycje te pojawiają się również na liście osoby **Klientom podoba się również**.
 - **Na stronie transakcja lub stronie realizacja transakcji:** aparat rekomendacji sugeruje pozycje na podstawie całej listy towarów w koszyku. Te pozycje są wyświetlane na liście **Często kupowane razem**.
-- **Spersonalizowane rekomendacje:** Sprzedacy mogą dostarczać zalogowanym odbiorcom listę **Wybrane dla Ciebie** w dodatku do nowych funkcji, które pozwalają na spersonalizowanie istniejących scenariuszy list na podstawie tego odbiorcy. Aby dowiedzieć się więcej, patrz [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md).
+- **Spersonalizowane rekomendacje:** Sprzedawcy mogą dostarczać zalogowanym odbiorcom listę **Wybrane dla Ciebie** w dodatku do nowych funkcji, które pozwalają na spersonalizowanie istniejących scenariuszy list na podstawie tego odbiorcy. Aby dowiedzieć się więcej, patrz [Włączanie rekomendacji spersonalizowanych](personalized-recommendations.md).
 
 ### <a name="types-of-product-recommendations"></a>Typy rekomendacji produktów
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf211e9f256a7489cdc3c38ed2d2198bd1dd6789
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813828"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345435"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognozy, zlecenia pracy i projekty
 
@@ -58,13 +58,13 @@ Niektóre z tych informacji mogą nie zostać znalezione w zleceniu produkcyjnym
 
 Na przykład na poniższej ilustracji, ze względu na sposób skonfigurowania typu środków trwałych **silnika samochodowego**, każde zadanie zlecenia utworzone z typem środka trwałego **silnika samochodowego** będzie podprojektem identyfikatora projektu 000186.
 
-![Rysunek 1](media/01-integration-to-pma.png)
+![Rysunek 1.](media/01-integration-to-pma.png)
 
 Cel identyfikatora projektu w zadaniu zlecenia produkcyjnego oraz związany z nim numer działania to śledzenie kosztów związanych z zadaniem zlecenia, a następnie wybranie środka trwałego w module **Zarządzanie projektami i ich księgowanie** (Aby wyświetlić identyfikator projektu i numer działania, należy wybrać **Zarządzanie składnikami majątku** > **Wspólne** > **Zlecenia pracy** > **Wszystkie zlecenia pracy**, a następnie wybrać zlecenie pracy. W przypadku skróconej karcie **szczegółów wiersza** w polu **identyfikator projektu** wyświetlany jest identyfikator projektu, a w polu **numer działania** wyświetlany jest numer działania.) Aby uzyskać więcej informacji na temat kontroli kosztów w module Zarządzanie składnikami majątku przejrzyj [Kontrola kosztów i dat](../controlling-and-reporting/cost-and-date-control.md).
 
 Na poniższym rysunku widać graficzny przegląd projektów zleceń i powiązanych z nimi działań projektu.
 
-![Rysunek 2](media/02-integration-to-pma.png)
+![Rysunek 2.](media/02-integration-to-pma.png)
 
 Podczas tworzenia nowego zadania zlecenia pracy w zleceniu pracy automatycznie tworzony jest projekt zlecenia produkcyjnego. Wymiary finansowe dla składnika majątku związanego z zadaniem zlecenia są automatycznie przenoszone do projektu zlecenia pracy.
 
@@ -86,17 +86,17 @@ Aby zapewnić poprawne wykorzystanie stanów cyklu życia zlecenia pracy i powi�
 
 Powiązania między grupami projektów zlecenia pracy, powiązane typy projektów, etapy projektu i Stany cyklu życia zlecenia pracy są przedstawione poniżej na ilustracji.
 
-![Rysunek 3](media/03-integration-to-pma.png)
+![Rysunek 3.](media/03-integration-to-pma.png)
 
-![Rysunek 4](media/04-integration-to-pma.png)
+![Rysunek 4.](media/04-integration-to-pma.png)
 
-![Rysunek 5](media/05-integration-to-pma.png)
+![Rysunek 5.](media/05-integration-to-pma.png)
 
 Aby uzyskać więcej informacji na temat konfigurowania projektów zleceń pracy, zobacz temat [Konfigurowanie typów zleceń pracy](../setup-for-work-orders/work-order-project-setup.md). Aby uzyskać więcej informacji na temat tworzenia stanów cyklu życia zlecenia pracy, należy zapoznać się z [Stany cyklu życia zlecenia pracy](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Na poniższej ilustracji przedstawiono graficzny przegląd różnych projektów utworzonych w module **Zarządzanie środkami trwałymi** w celu włączenia integracji z modułem **Zarządzanie projektami i ich księgowanie**. Pokazuje także procesy robocze, z którymi są powiązane projekty.
 
-![Rysunek 6](media/06-integration-to-pma.png)
+![Rysunek 6.](media/06-integration-to-pma.png)
 
 
 

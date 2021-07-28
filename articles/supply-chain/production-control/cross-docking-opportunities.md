@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190095"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347693"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Przeładunek kompletacyjny ze zleceń produkcyjnych do doków załadunkowych
 
@@ -42,7 +42,7 @@ Produkt jest zgłaszany jako gotowy do lokalizacji wyjściowej produkcji (3) i o
 -   Jeśli przyczepa jest już przypisana do bramy dokowej, kierowca ciężarówki zostanie poinstruowany, aby załadował produkt bezpośrednio na przyczepę.
 -   Jeśli nie istnieje zaplanowane działanie przeniesienia produktu, operator wózka widłowego zostanie poinstruowany, aby odłożył produkt do lokalizacji w wewnętrznym magazynie (5).
 
-[![oportunistyczny przeładunek kompletacyjny](./media/scenario1.png)](./media/scenario1.png)
+[![oportunistyczny przeładunek kompletacyjny.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurowanie przeładunku kompletacyjnego
 Proces przeładunku kompletacyjnego konfiguruje się w **zasadach pracy**. Zasada pracy określa typ zlecenia pracy, lokalizację i produkt. W poniższym przykładzie przeładunek kompletacyjny jest konfigurowany dla produktu X i lokalizacji Y.

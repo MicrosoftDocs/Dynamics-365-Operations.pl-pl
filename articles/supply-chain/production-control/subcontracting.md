@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37a82a2bf9fc73b81e5a61b120e7bed73b8c4521
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825189"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346137"
 ---
 # <a name="subcontracting"></a>Podwykonawstwo
 
@@ -39,7 +39,7 @@ W firmie HQUS są wytwarzane głośniki wysokiej jakości. W procesie produkcji 
 
 Poniższa ilustracja przedstawia trzy operacje oraz materiały, które są w nich wykorzystywane.
 
-![Operacje Wstępny montaż, Malowanie i Wykańczanie, oraz zużywane w nich materiały](./media/subcontract01_operations-materials.png)
+![Operacje Wstępny montaż, Malowanie i Wykańczanie, oraz zużywane w nich materiały.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -52,41 +52,41 @@ Ta procedura prowadzi przez konfigurowanie zwolnionego produktu D8100 „Pomalow
 1. Wybierz kolejno opcje **Zarządzanie informacjami o produktach \> Produkty \> Zwolnione produkty**, aby otworzyć stronę **Szczegóły zwolnionego produktu**.
 2. W polu szybkiego filtru wpisz **D8100**, aby znaleźć istniejący zwolniony produkt.
 
-    ![Filtrowanie w celu znalezienia zwolnionego produktu D8100 na stronie Szczegóły zwolnionego produktu](./media/subcontract02_filtering-released-products.png)
+    ![Filtrowanie w celu znalezienia zwolnionego produktu D8100 na stronie Szczegóły zwolnionego produktu.](./media/subcontract02_filtering-released-products.png)
 
 3. W okienku akcji na karcie **Konstruuj** wybierz opcję **Marszruta**, aby otworzyć stronę **Marszruta**.
 
     Strona **Marszruta** zawiera osiem wersji marszruty zwolnionego produktu D8100. Osiem wersji marszruty jest rozdzielonych między cztery marszruty w oddziałach 1 i 5. Marszruta 000400 jest używana do wyceny, marszruta 00041 jest używana w sytuacji, gdy operacja Malowanie jest wykonywana wewnętrznie, a marszruta 00042 jest stosowana dla operacji Malowanie zlecanej na zewnątrz.
 
-    ![Osiem wersji marszruty na stronie Marszruta](./media/subcontract03_route-page.png)
+    ![Osiem wersji marszruty na stronie Marszruta.](./media/subcontract03_route-page.png)
 
 4. W górnym okienku w siatce **Wersje** wybierz wersję marszruty **00042** dla oddziału **5**.
 5. W dolnym okienku na karcie **Przegląd** wybierz w siatce operację **20** (**Cbnt CtSc**).
 
-    ![Wybrana operacja 20 dla wersji marszruty 00042 w oddziale 5](./media/subcontract04_route-version-operation.png)
+    ![Wybrana operacja 20 dla wersji marszruty 00042 w oddziale 5.](./media/subcontract04_route-version-operation.png)
 
 6. Kliknij kartę **Ogólne**.
 
     Zauważ, że pole **Typ marszruty** jest ustawione na **Dostawca**. Ta wartość wskazuje, że operacja 20 (Cbnt CtSc) jest operacją podwykonawczą.
 
-    ![Pole Typ marszruty z ustawioną wartością Dostawca na karcie Ogólne](./media/subcontract05_general-tab.png)
+    ![Pole Typ marszruty z ustawioną wartością Dostawca na karcie Ogólne.](./media/subcontract05_general-tab.png)
 
 7. Kliknij kartę **Zapotrzebowanie na zasoby**.
 
     Do wyszukiwania odpowiednich zasobów podczas planowania produkcji będą wykorzystywane możliwości. Dla operacji 20 (Cbnt CtSc) zauważ, że jest wymagany zasób mający dwie możliwości — **Malowanie** i **Malowane obudowy**.
 
-    ![Możliwości Malowanie i Malowane obudowy na karcie Zapotrzebowanie na zasoby](./media/subcontract06_resource-requirements-tab.png)
+    ![Możliwości Malowanie i Malowane obudowy na karcie Zapotrzebowanie na zasoby.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Wybierz opcję **Pasujące zasoby**, aby otworzyć okno dialogowe **Pasujące zasoby**.
 
     Zostały znalezione trzy zasoby spełniające zapotrzebowania na zasoby dla operacji. Zauważ, że zasoby 8851 i 8852 są typu **Dostawca**.
 
-    ![Trzy właściwe zasoby w oknie dialogowym Pasujące zasoby](./media/subcontract07_applicable-resources-dialog.png)
+    ![Trzy właściwe zasoby w oknie dialogowym Pasujące zasoby.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Pasujące zasoby** i wrócić do strony **Marszruta**.
 10. Zamknij stronę **Marszruta**, aby wrócić do strony **Szczegóły zwolnionego produktu**.
 
-    ![Strona Szczegóły zwolnionego produktu](./media/subcontract08_released-product-details-page.png)
+    ![Strona Szczegóły zwolnionego produktu.](./media/subcontract08_released-product-details-page.png)
 
 11. W okienku akcji na karcie **Konstruuj** wybierz opcję **Wersje BOM**, aby otworzyć stronę **Wersje BOM**.
 
@@ -94,7 +94,7 @@ Ta procedura prowadzi przez konfigurowanie zwolnionego produktu D8100 „Pomalow
 
     Zauważ, że pozycja S8050 jest produktem o typie towaru **Usługa**. Ta pozycja reprezentuje pracę podwykonawczą.
 
-    ![Cztery wersje BOM na stronie Wersje BOM](./media/subcontract09_bom-versions-page.png)
+    ![Cztery wersje BOM na stronie Wersje BOM.](./media/subcontract09_bom-versions-page.png)
 
 12. Na skróconej karcie **Wiersze listy składowej (BOM)** wybierz opcję **Edytuj**, aby otworzyć okno dialogowe **Edytuj wiersz BOM**.
 
@@ -102,7 +102,7 @@ Ta procedura prowadzi przez konfigurowanie zwolnionego produktu D8100 „Pomalow
 
     Zauważ, że wiersz BOM jest połączony z operacją Malowanie za pośrednictwem numeru operacji (w tym przypadku 20).
 
-    ![Okno dialogowe Edytuj wiersz BOM](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Okno dialogowe Edytuj wiersz BOM.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Tworzenie hasła dla pracowników magazynu
 
@@ -111,7 +111,7 @@ Należy utworzyć hasło dla pracowników magazynu używających ręcznego urzą
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Pracownik**, aby otworzyć stronę **Użytkownicy pracy**.
 2. Na skróconej karcie **Użytkownicy** zaznacz wiersz użytkownika **51**.
 
-    ![Strona Użytkownicy pracy](./media/subcontract11_work-users-page.png)
+    ![Strona Użytkownicy pracy.](./media/subcontract11_work-users-page.png)
 
 3. Wybierz opcję **Resetuj hasło**.
 4. W polach **Hasło** i **Potwierdź hasło** wprowadź **1**.
@@ -126,14 +126,14 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
 1. Wybierz kolejno opcje **Kontrola produkcji \> Zlecenia produkcyjne \> Wszystkie zlecenia produkcyjne**, aby otworzyć stronę **Wszystkie zlecenia produkcyjne**.
 2. W okienku akcji wybierz opcję **Nowe zlecenie produkcyjne**, aby otworzyć okno dialogowe **Tworzenie zlecenia produkcyjnego**.
 
-    ![Okno dialogowe Tworzenie zlecenia produkcyjnego](./media/subcontract12_create-production-order-dialog.png)
+    ![Okno dialogowe Tworzenie zlecenia produkcyjnego.](./media/subcontract12_create-production-order-dialog.png)
 
 3. W polu **Numer pozycji** wybierz wartość **D8100**.
 4. Po wybraniu numeru towaru pojawią się pola wymiarów magazynowych. W polu **Kolor** wybierz wartość **Chrom**.
 
     Pojawi się okno komunikatu z pytaniem, czy należy wstawić aktywne wersje BOM i marszruty.
 
-    ![Okno komunikatu](./media/subcontract13_message-box.png)
+    ![Okno komunikatu.](./media/subcontract13_message-box.png)
 
 5. Wybierz opcję **Tak**. 
 
@@ -149,15 +149,15 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     > [!NOTE]
     > Zarówno dla BOM, jak i dla marszruty wersja 000042 jest używana do zlecenia podwykonawstwa malowania obudowy do dostawcy US-801.
 
-    ![Wartości ustawiane w oknie dialogowym Tworzenie zlecenia produkcyjnego](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Wartości ustawiane w oknie dialogowym Tworzenie zlecenia produkcyjnego.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Wybierz opcję **Utwórz**, aby utworzyć zlecenie produkcyjne i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 
-    ![Nowe zlecenie produkcyjne na stronie Wszystkie zlecenia produkcyjne](./media/subcontract15_new-production-order.png)
+    ![Nowe zlecenie produkcyjne na stronie Wszystkie zlecenia produkcyjne.](./media/subcontract15_new-production-order.png)
 
 10. W okienku akcji na karcie **Zlecenie produkcyjne** kliknij opcję **Szacuj**, aby otworzyć okno dialogowe **Szacowanie**.
 
-    ![Okno dialogowe Szacowanie](./media/subcontract16_estimate-dialog.png)
+    ![Okno dialogowe Szacowanie.](./media/subcontract16_estimate-dialog.png)
 
 11. Wybierz opcję **OK**, aby potwierdzić oszacowanie i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 
@@ -168,7 +168,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
 
     Dla usługi S8050 zauważ, że istnieje odwołanie do zamówienia zakupu wygenerowanego podczas szacowania zlecenia produkcyjnego.
 
-    ![Wiersze BOM zlecenia produkcyjnego na stronie BOM](./media/subcontract17_production-order-bom-lines.png)
+    ![Wiersze BOM zlecenia produkcyjnego na stronie BOM.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Zamknij stronę **BOM**, aby wrócić do strony **Wszystkie zlecenia produkcyjne**.
 14. W okienku akcji na karcie **Harmonogram** kliknij opcję **Planowanie zadań**, aby otworzyć okno dialogowe **Planowanie zadań**.
@@ -177,24 +177,24 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     - W polu **Kierunek planowania** wybierz opcję **W przód od jutra**.
     - Ustaw opcję **Ograniczone zdolności produkcyjne** na **Tak**.
 
-    ![Okno dialogowe Planowanie zadań](./media/subcontract18_job-scheduling-dialog.png)
+    ![Okno dialogowe Planowanie zadań.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Planowanie zadań** i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 17. W okienku akcji na karcie **Harmonogram** wybierz opcję **Wykres Gantta**, aby otworzyć stronę **Wykres Gantta — Widok zasobów**.
 
     Wykres Gantta zawiera graficzną prezentację rozplanowania zasobów w zadaniach produkcyjnych. Zwróć uwagę, że zewnętrzna operacja malowanie składa się z trzech zadań: zadania przetwarzania, zadania transportowania i zadania czasu oczekiwania.
 
-    ![Wykres Gantta na stronie Wykres Gantta — Widok zasobów](./media/subcontract19_gantt-chart.png)
+    ![Wykres Gantta na stronie Wykres Gantta — Widok zasobów.](./media/subcontract19_gantt-chart.png)
 
 18. Zamknij stronę **Wykres Gantta — Widok zasobów**, aby wrócić do strony **Wszystkie zlecenia produkcyjne**.
 19. W okienku akcji na karcie **Zlecenie produkcyjne** kliknij opcję **Zwolnij**, aby otworzyć okno dialogowe **Zwolnienie**.
 
-    ![Okno dialogowe Zwalnianie](./media/subcontract20_release-dialog.png)
+    ![Okno dialogowe Zwalnianie.](./media/subcontract20_release-dialog.png)
 
 20. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Zwalnianie**.
 21. Wybierz kolejno opcje **Kontrola produkcji \> Zadania okresowe \> Zwolnij do magazynu \> Automatyczne zwalnianie wierszy BOM i formuły**, aby otworzyć okno dialogowe **Automatyczne zwalnianie wierszy BOM i formuły**.
 
-    ![Okno dialogowe Automatyczne zwalnianie wierszy BOM i formuły](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Okno dialogowe Automatyczne zwalnianie wierszy BOM i formuły.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Kliknij przycisk **OK**, aby uruchomić zadanie Automatyczne zwalnianie wierszy BOM i formuły.
 
@@ -206,7 +206,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
 
     Zwróć uwagę, że na stronie są widoczne dwa zestawy pracy pobrania surowca. Pierwsza pracy dotyczy materiałów M8100 i M8101. Te materiały są zużywane przez operację 10. Druga pracy dotyczy materiałów M8202 i M8250. Te materiały są zużywane przez operację 20, która jest operacją podwykonawczą.
 
-    ![Dwa zestawy pracy pobrania surowców na stronie Praca](./media/subcontract22_work-page.png)
+    ![Dwa zestawy pracy pobrania surowców na stronie Praca.](./media/subcontract22_work-page.png)
 
 26. Uruchom aplikację Warehouse Management, aby wykonać przetwarzanie pracy magazynowej dla operacji 10.
 
@@ -220,7 +220,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     - W polu **Od nr operacji** wybierz wartość **10**.
     - W polu **Do nr operacji** wybierz wartość **10**.
 
-    ![Wartości ustawiane na karcie Ogólne 1](./media/subcontract23_start-dialog.png)
+    ![Wartości ustawiane na karcie Ogólne 1.](./media/subcontract23_start-dialog.png)
 
 31. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Rozpoczęcie** i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 
@@ -238,7 +238,7 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
     - W polu **Ilość** wpisz wartość **10**.
     - W opcji **Księgowanie listy pobrania** wybierz wartość **Nie**.
 
-    ![Wartości ustawiane na karcie Ogólne 2](./media/subcontract24_general-tab.png)
+    ![Wartości ustawiane na karcie Ogólne 2.](./media/subcontract24_general-tab.png)
 
 35. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Rozpoczęcie** i wrócić do strony **Wszystkie zlecenia produkcyjne**.
 
@@ -247,57 +247,57 @@ Zlecenie produkcyjne na 10 sztuk jest tworzone dla produktu D8100 „Pomalowana 
 36. W okienku akcji na karcie **Widok** wybierz opcję **Lista pobrania**, aby otworzyć stronę **Lista pobrania**.
 37. Zaznacz listę pobrania, która nie jest zaksięgowana, a następnie wybierz numer arkusza, aby wyświetlić wiersze arkusza.
 
-    ![Wiersze arkusza na stronie Lista pobrania](./media/subcontract25_picking-list.png)
+    ![Wiersze arkusza na stronie Lista pobrania.](./media/subcontract25_picking-list.png)
 
 38. W okienku akcji wybierz kolejno opcje **Drukuj** \> **Raport Lista pobrania**, aby otworzyć okno dialogowe **Raport Lista pobrania**.
 39. Ustaw opcję **Użyj układu dokumentu dostawy** na **Tak**.
 
-    ![Okno dialogowe Raport listy pobrania](./media/subcontract26_picking-list-report-dialog.png)
+    ![Okno dialogowe Raport listy pobrania.](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Kliknij przycisk **OK**, aby wygenerować raport **Lista pobrania**.
 
     W tym przypadku jest drukowany dokument dostawy dostawcy z poziomu arkusza listy pobrania do produkcji. Dokument dostawy określa materiały, które zostaną wysłane do dostawcy mającego wykonać operację Malowanie.
 
-    ![Raport list pobrania](./media/subcontract27_picking-list-report.png)
+    ![Raport list pobrania.](./media/subcontract27_picking-list-report.png)
 
 41. Zamknij raport **Lista pobrania**, aby wrócić do strony **Lista pobrania**.
 42. W okienku akcji kliknij opcję **Księguj**, aby otworzyć okno dialogowe **Księgowanie arkusza**.
 
-    ![Okno dialogowe Księgowanie arkusza](./media/subcontract28_post-journal-dialog.png)
+    ![Okno dialogowe Księgowanie arkusza.](./media/subcontract28_post-journal-dialog.png)
 
 43. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Księgowanie arkusza**.
 44. Otwórz zamówienie zakupu.
 
-    ![Strona Zamówienie zakupu](./media/subcontract29_purchase-order-page.png)
+    ![Strona Zamówienie zakupu.](./media/subcontract29_purchase-order-page.png)
 
 45. W okienku akcji na karcie **Zakup** wybierz opcję **Potwierdź**.
 46. Kliknij przycisk **Księguj**, aby otworzyć okno dialogowe **Księgowanie arkusza**.
 47. Kliknij przycisk **OK**, aby zamknąć okno dialogowe **Księgowanie arkusza** i wrócić do strony **Zamówienie zakupu**.
 48. Zmień cenę jednostkową z **33** na **40**.
 
-    ![Cena jednostkowa zmieniona na stronie Zamówienie zakupu](./media/subcontract30_unit-price.png)
+    ![Cena jednostkowa zmieniona na stronie Zamówienie zakupu.](./media/subcontract30_unit-price.png)
 
 49. Ponownie potwierdź zamówienie zakupu.
 50. Przyjęcie produktu.
 
-    ![Okno dialogowe Księgowanie dokumentu przyjęcia produktów](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Okno dialogowe Księgowanie dokumentu przyjęcia produktów.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Faktura zakupu.
 52. Zaktualizuj stan uzgadniania.
 
-    ![Strona Faktura od dostawcy](./media/subcontract32_vendor-invoice-page.png)
+    ![Strona Faktura od dostawcy.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Zgłoś wyroby gotowe.
 
-    ![Okno dialogowe Zgłoszenie wyrobów gotowych](./media/subcontract33_report-as-finished-dialog.png)
+    ![Okno dialogowe Zgłoszenie wyrobów gotowych.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Zakończ.
 
-    ![Okno dialogowe Zakończenie](./media/subcontract34_end-dialog.png)
+    ![Okno dialogowe Zakończenie.](./media/subcontract34_end-dialog.png)
 
 55. Porównanie kosztów.
 
-    ![Wykresy porównania kosztów](./media/subcontract35_cost-comparison-charts.png)
+    ![Wykresy porównania kosztów.](./media/subcontract35_cost-comparison-charts.png)
 
 Brak danych konfiguracyjnych.
 

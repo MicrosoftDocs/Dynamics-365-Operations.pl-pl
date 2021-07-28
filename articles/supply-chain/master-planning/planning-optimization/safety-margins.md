@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908300"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347741"
 ---
 # <a name="safety-margins"></a>Marginesy bezpieczeństwa
 
@@ -41,7 +41,7 @@ Istnieją trzy typy zamówień marginesów bezpieczeństwa:
 
 Na poniższej ilustracji przedstawiono sposób stosowania tych marginesów bezpieczeństwa w czasie.
 
-![Marginesy bezpieczeństwa](media/safety-margins-1.png)
+![Marginesy bezpieczeństwa.](media/safety-margins-1.png)
 
 Wszystkie marginesy są definiowane w dniach. Domyślna wartość *0* (zero) oznacza, że nie jest używany żaden margines. W przypadku skonfigurowania wielu marginesów wszystkie one będą się sumować do łącznego czasu od daty *złożenia zamówienia* do *daty zapotrzebowania*. Na przykład konfiguracja nie ma czasu realizacji, a wszystkie trzy typy marginesu są ustawione na jeden dzień. W takim przypadku będą potrzebne trzy dni między datą zamówienia a datą zapotrzebowania, więc jeśli datą zamówienia jest 1 lipca, datą zapotrzebowania będzie 4 lipca.
 
@@ -51,7 +51,7 @@ Zapas czasu dla przyjęcia jest prawdopodobnie najbardziej używanym z trzech do
 
 Poniższa ilustracja przedstawia ten proces.
 
-![Zapas czasu dla przyjęcia](media/safety-margins-2.png)
+![Zapas czasu dla przyjęcia.](media/safety-margins-2.png)
 
 Zapas czasu dla przyjęcia jest zazwyczaj używany jako bufor w celu zapewnienia czasu na potrzeby rejestracji w magazynie lub innych procesów czasochłonnych, które nie są częścią ogólnego czasu realizacji w systemie. W przypadku zakupów jedną z korzyści jest to, że *Data dostawy* zamówienia zakupu jest odpowiednio przenoszona do przodu. W przypadku zwiększenia czasu realizacji zamiast używania marginesu bezpieczeństwa, dostawca musiałby dostarczyć towar w ostatnim możliwym przedziale czasowym.
 
@@ -66,7 +66,7 @@ Należy zauważyć, że zapas czasu dla przyjęcia nie jest zastosowany, jeśli 
 
 Poniższa ilustracja przedstawia Zapas czasu dla ponownego zamówienia.
 
-![Zapas czasu dla ponownego zamówienia](media/safety-margins-3.png)
+![Zapas czasu dla ponownego zamówienia.](media/safety-margins-3.png)
 
 Zapas czasu dla ponownego zamówienia jest dodawany przed upływem czasu realizacji towaru dla wszystkich zamówień planowanych podczas planowania głównego. W związku z tym zapewnia on dodatkowy czas na wprowadzenie zlecenia dostawy. Jest zazwyczaj używany jako bufor w celu zapewnienia odpowiedniej ilości czasu dla procesów zatwierdzania lub innych procesów wewnętrznych, które są wymagane podczas tworzenia zleceń dostawy. Zapas czasu dla ponownego zamówienia jest umieszczany między *datą zamówienia* i *datą rozpoczęcia*.
 
@@ -77,7 +77,7 @@ Zapas czasu dla ponownego zamówienia jest dodawany przed upływem czasu realiza
 
 Poniższa ilustracja przedstawia Zapas czasu dla rozchodu.
 
-![Zapas czasu dla rozchodu](media/safety-margins-4.png)
+![Zapas czasu dla rozchodu.](media/safety-margins-4.png)
 
 Podczas planowania głównego zapas czasu dla rozchodu jest odejmowany od daty zapotrzebowania. Pomaga to zapewnić czas na reagowanie na przychodzące zamówienia i ich wysyłanie. Ten zapas czasu jest zazwyczaj używany jako bufor w celu zapewnienia odpowiedniej ilości czasu na potrzeby wysyłek i powiązanych z nimi procesów magazynowych.
 
@@ -165,7 +165,7 @@ Na poniższej ilustracji przedstawiono macierz, która podsumowuje, które kalen
 - **Magazyn (WH):** Żółty
 - **Dostawca (V):** Niebieski
 
-[![Przegląd ustawień kalendarza — macierz](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Przegląd ustawień kalendarza — macierz.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Obliczanie opóźnienia
 
@@ -173,7 +173,7 @@ Wszystkie trzy typy marginesów bezpieczeństwa są uwzględniane, gdy system ok
 
 Na przykład towar ma czas realizacji o jeden dzień dłuższy, ale zapas bezpieczeństwa wynoszący trzy dni. Zamówienie sprzedaży dla tego towaru jest ustawiane jako wymagane dzisiaj. W takim przypadku opóźnienie jest obliczane jako *czas realizacji* + *zapas czasu dla przyjęcia* = cztery dni. W związku z tym, jeśli dzisiaj jest 14 sierpnia, cztery dni opóźnienia oznaczają dostawy w dniu 18 sierpnia. Na poniższej ilustracji pokazano ten przykład.
 
-![Przykład obliczania opóźnienia](media/safety-margins-delays.png)
+![Przykład obliczania opóźnienia.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

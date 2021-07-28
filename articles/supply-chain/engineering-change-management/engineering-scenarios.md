@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91b19598075871dcfaed3ad9978aa8fe8181aa6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9440471d6983136971878c8ee9e327d4dd407833
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836669"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346161"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Przewodnik po funkcji zarządzania zmianami projektowymi
 
@@ -57,7 +57,7 @@ Organizacja projektowa posiada dane projektowe i jest odpowiedzialna za projekt 
     - **Organizacja projektowa:** *DEMF*
     - **Nazwa organizacji:** *Contoso Entertainment Systems w Niemczech*
 
-    ![Dodawanie organizacji projektowej](media/engineering-org.png "Dodawanie organizacji projektowej")
+    ![Dodawanie organizacji projektowej.](media/engineering-org.png "Dodawanie organizacji projektowej")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>Konfigurowanie grupy wymiarów produktu dla wersji
 
@@ -67,7 +67,7 @@ Organizacja projektowa posiada dane projektowe i jest odpowiedzialna za projekt 
 1. Wybierz opcję **Zapisz**, aby zapisać nowy wymiar i załaduj wartości do skróconej karty **Wymiary produktu**.
 1. W skróconej karcie **Wymiary produktu** należy określić **Wersję** jako aktywny wymiar produktu.
 
-    ![Dodawania grupy wymiaru produktu](media/product-dimension-groups.png "Dodawania grupy wymiaru produktu")
+    ![Dodawania grupy wymiaru produktu.](media/product-dimension-groups.png "Dodawania grupy wymiaru produktu")
 
 ### <a name="set-up-product-lifecycle-states"></a>Konfigurowanie stanów cyklu życia produktu
 
@@ -82,7 +82,7 @@ Ponieważ produkt inżynieryjny przechodzi przez swój cykl życia, ważne jest,
 1. Wybierz opcję **Zapisz**, aby zapisać nowy stan cyklu życia i załaduj wartości do skróconej karty **Włączone procesy biznesowe**.
 1. Na skróconej karcie **Włączone procesy biznesowe** wybierz procesy biznesowe, które powinny być dostępne. W tym przykładzie należy pozostawić pole **Zasady** ustawione na wartość *Włączone* dla wszystkich procesów biznesowych.
 
-    ![Włączanie procesów biznesowych dla stanu cyklu życia](media/product-lifecycle-states-1.png "Włączanie procesów biznesowych dla stanu cyklu życia")
+    ![Włączanie procesów biznesowych dla stanu cyklu życia.](media/product-lifecycle-states-1.png "Włączanie procesów biznesowych dla stanu cyklu życia")
 
 1. Wybierz opcję **Nowy** w celu dodania następnego stanu cyklu życia i określ dla niego następujące wartości:
 
@@ -92,7 +92,7 @@ Ponieważ produkt inżynieryjny przechodzi przez swój cykl życia, ważne jest,
 1. Wybierz opcję **Zapisz**, aby zapisać nowy stan cyklu życia i załaduj wartości do skróconej karty **Włączone procesy biznesowe**.
 1. Na skróconej karcie **Włączone procesy biznesowe** wybierz procesy biznesowe, które powinny być dostępne. W tym przykładzie należy ustawić pole **Zasady** ustawione na wartość *Włączone z ostrzeżeniem* dla wszystkich procesów biznesowych.
 
-    ![Włączanie (z ostrzeżeniem) procesów biznesowych dla stanu cyklu życia](media/product-lifecycle-states-2.png "Włączanie (z ostrzeżeniem) procesów biznesowych dla stanu cyklu życia")
+    ![Włączanie (z ostrzeżeniem) procesów biznesowych dla stanu cyklu życia.](media/product-lifecycle-states-2.png "Włączanie (z ostrzeżeniem) procesów biznesowych dla stanu cyklu życia")
 
 ### <a name="set-up-a-version-number-rule"></a>Konfigurowanie reguły numeracji wersji
 
@@ -103,7 +103,7 @@ Ponieważ produkt inżynieryjny przechodzi przez swój cykl życia, ważne jest,
     - **Reguła numeracji:** *Automatycznie*
     - **Format:** *V-\#\#*
 
-    ![Dodawanie reguły numeracji wersji produktu](media/version-number-rule.png "Dodawanie reguły numeracji wersji produktu")
+    ![Dodawanie reguły numeracji wersji produktu.](media/version-number-rule.png "Dodawanie reguły numeracji wersji produktu")
 
 ### <a name="set-up-a-product-release-policy"></a>Skonfiguruj zasady zwalniania produktów
 
@@ -135,7 +135,7 @@ Ponieważ produkt inżynieryjny przechodzi przez swój cykl życia, ważne jest,
     - **Kopiuj zatwierdzenie marszruty:** Zaznacz to pole wyboru.
     - **Kopiuj aktywację marszruty:** Zaznacz to pole wyboru.
 
-    ![Dodawanie zasady zwalniania produktów](media/product-release-policy.png "Dodawanie zasady zwalniania produktów")
+    ![Dodawanie zasady zwalniania produktów.](media/product-release-policy.png "Dodawanie zasady zwalniania produktów")
 
 ### <a name="set-up-an-engineering-product-category"></a>Konfigurowanie kategorii produktów projektowych 
 
@@ -160,7 +160,7 @@ Kategorie produktów projektowych stanowią podstawę do tworzenia produktów pr
 1. W skróconej karcie **Zasady zwalniania**, w polu **Zasady zwalniania produktów** należy określić wartość *Składniki*.
 1. Wybierz opcję **Zapisz**.
 
-    ![Dodawanie kategorii produktów projektowych](media/product-category-details.png "Dodawanie kategorii produktów projektowych")
+    ![Dodawanie kategorii produktów projektowych.](media/product-category-details.png "Dodawanie kategorii produktów projektowych")
 
 ### <a name="set-up-product-acceptance-conditions"></a>Konfigurowanie warunków akceptacji produktów
 
@@ -168,7 +168,7 @@ Kategorie produktów projektowych stanowią podstawę do tworzenia produktów pr
 1. Przejdź do **Zarządzanie zmianami projektowymi &gt; Konfiguracja &gt; Parametry zarządzania zmianami projektowymi**.
 1. Na karcie **Kontrola wydania**, w sekcji **Akceptacja produktu**, w polu **Przyjęcie produktu**, określ wartość *Ręcznie*.
 
-    ![Konfigurowanie warunków akceptacji produktów](media/engineering-change-management-parameters.png "Konfigurowanie warunków akceptacji produktów")
+    ![Konfigurowanie warunków akceptacji produktów.](media/engineering-change-management-parameters.png "Konfigurowanie warunków akceptacji produktów")
 
 ## <a name="create-a-new-engineering-product"></a>Tworzenie nowego produktu projektowego
 
@@ -187,23 +187,23 @@ Produkt projektowy to produkt, który jest zgodny z wersją techniczną i kontro
     - **Numer produktu:** *Z0001*
     - **Nazwa produktu:** *Zestaw głośników*
 
-    ![Dodawanie produktu projektowego](media/new-product-dialog.png "Dodawanie produktu projektowego")
+    ![Dodawanie produktu projektowego.](media/new-product-dialog.png "Dodawanie produktu projektowego")
 
     Należy zauważyć, że pole **Wersji** jest ustawiane automatycznie przy użyciu zdefiniowanej wcześniej reguły numerowania wersji produktu.
 
 1. Naciśnij przycisk **OK**, aby zamknąć okno dialogowe i utworzyć nowe produkt.
 1. Zostanie otwarta strona szczegółów nowego produktu. Zauważ, że wartości są już wypełnione dla niektórych pól, takich jak **Grupa wymiarów magazynowania**, **Grupa wymiarów śledzenia** i/lub **Grupa modeli pozycji**. Te pola zostały ustawione automatycznie, ponieważ produkt jest zwalniany w osobie prawnej *DEMF* i korzysta z zasady wydania produktów *Składniki*, która jest skojarzona z kategorią produktów projektowych *Składniki*. Ponieważ poprzednio użyto pozycji *D0006* jako szablonu w celu skonfigurowania wiersza dla osoby prawnej *DEMF*, wprowadzone wartości zostały pobrane z pozycji *D0006*.
 
-    ![Szczegóły zwolnionego produktu](media/product-details.png "Szczegóły zwolnionego produktu")
+    ![Szczegóły zwolnionego produktu.](media/product-details.png "Szczegóły zwolnionego produktu")
 
 1. W okienku akcji na karcie **Projekt** w grupie **Zarządzanie zmianami projektowymi** wybierz opcję **Wersje projektowe**, aby wyświetlić wersje produktu.
 
-    ![Wersje projektowe](media/engineering-versions-list.png "Wersje projektowe")
+    ![Wersje projektowe.](media/engineering-versions-list.png "Wersje projektowe")
 
 1. Na stronie **Wersje projektowe** zwróć uwagę, że jest tylko jedna wersja produktu i jest ona aktywna.
 1. Wybierz wersję, aby wyświetlić jej szczegóły.
 
-    ![Szczegóły wersji projektowej](media/engineering-version-details.png "Szczegóły wersji projektowej")
+    ![Szczegóły wersji projektowej.](media/engineering-version-details.png "Szczegóły wersji projektowej")
 
 1. Na stronie **Wersja projektowa** na skróconej karcie **Lista składowa (BOM)** wybierz opcję **Utwórz BOM**.
 1. W oknie dialogowym **Utwórz BOM** ustaw następujące wartości:
@@ -212,25 +212,25 @@ Produkt projektowy to produkt, który jest zgodny z wersją techniczną i kontro
     - **Nazwa:** Zestaw głośników
     - **Oddział:** 1
 
-    ![Tworzenie BOM](media/create-bom.png "Tworzenie BOM")
+    ![Tworzenie BOM.](media/create-bom.png "Tworzenie BOM")
 
 1. Naciśnij przycisk **OK**, aby dodać BOM i zamknąć okno dialogowe.
 1. Na skróconej karcie **Lista składowa (BOM)** wybierz opcję **Lista składowa (BOM)**.
 1. Na stronie **Lista składowa (BOM)**, na skróconej karcie **Wiersze listy składowa (BOM)** dodaj trzy wiersze, po jednym dla kodów towarów *D0001*, *D0003* i *D0006*.
 
-    ![Dodawanie wierszy BOM](media/bom.png "Dodawanie wierszy BOM")
+    ![Dodawanie wierszy BOM.](media/bom.png "Dodawanie wierszy BOM")
 
 1. Wybierz opcję **Zapisz**.
 1. Zamknij stronę.
 1. Na stronie **Wersja projektowa** na skróconej karcie **Lista składowa (BOM)** wybierz opcję **Zatwierdź**.
 1. W oknie dialogowym wybierz **Ok**.
 
-    ![Zatwierdzanie BOM](media/approve-dialog.png "Zatwierdzanie BOM")
+    ![Zatwierdzanie BOM.](media/approve-dialog.png "Zatwierdzanie BOM")
 
 1. Na stronie **Wersja projektowa** na skróconej karcie **Lista składowa (BOM)** wybierz opcję **Aktywuj**.
 1. Zauważ, że pola wyboru **Aktywne** i **Zatwierdzone** są zaznaczone dla BOM.
 
-    ![Aktywne i zatwierdzone BOM](media/approved-bom.png "Aktywne i zatwierdzone BOM")
+    ![Aktywne i zatwierdzone BOM.](media/approved-bom.png "Aktywne i zatwierdzone BOM")
 
 1. Zamknij stronę.
 
@@ -244,25 +244,25 @@ Produkt został teraz zaprojektowany przez dział projektowy. W tym przykładzie
 1. W okienku akcji na karcie **Produkt**, w grupie **Zarządzanie** wybierz pozycję **Struktura wydania produktu**, by otworzyć kreatora **Wydanie produktów**.
 1. Na stronie **Wybierz produkty projektowe do zwolnienia** zaznacz pole wyboru **Zaznacz** dla produktu *Z0001*.
 
-    ![Wybieranie produktów projektowych do zwolnienia](media/select-eng-product-to-release.png "Wybieranie produktów projektowych do zwolnienia")
+    ![Wybieranie produktów projektowych do zwolnienia.](media/select-eng-product-to-release.png "Wybieranie produktów projektowych do zwolnienia")
 
 1. Wybierz **Szczegóły zwolnienia**.
 1. Zostanie wyświetlona strona **Szczegóły wydania produktu**, na której możesz przejrzeć szczegóły produktu, który zostanie zwolniony, oraz strukturę produktu. Zauważ, że opcja **Wyślij BOM** jest ustawiona wartość *Tak*. Z tego względu zarówno produkt *Z0001*, jak i wszystkie jego elementy podrzędne z BOM zostaną zwolnione.
 
     W celu przejrzenia szczegółów można wybrać dowolny element podrzędny w lewym okienku. Jeśli dowolny element podrzędny ma BOM, można również wybrać opcję zwolnienia BOM dla tego elementu podrzędnego.
 
-    ![Przeglądanie szczegółów wydania produktu](media/product-release-details.png "Przeglądanie szczegółów wydania produktu")
+    ![Przeglądanie szczegółów wydania produktu.](media/product-release-details.png "Przeglądanie szczegółów wydania produktu")
 
 1. Zamknij stronę, aby powrócić do kreatora **Wydanie produktów**.
 1. Wybierz **Dalej**, by otworzyć stronę **Wybierz produkty do wydania**. Jeśli wybrano produkty standardowe (inne niż projektowe), pojawią się one na tej stronie. Należy zauważyć, że po zwolnieniu produktu standardowego przez wybranie opcji **Zwalnianie struktury produktu** zwalniane są także jego BOM i marszruta.
 
-    ![Wybieranie produktów standardowych do zwolnienia](media/select-std-product-to-release.png "Wybieranie produktów standardowych do zwolnienia")
+    ![Wybieranie produktów standardowych do zwolnienia.](media/select-std-product-to-release.png "Wybieranie produktów standardowych do zwolnienia")
 
 1. Wybierz **Dalej**, by otworzyć stronę **Wybierz warianty produktów do wydania**. W tym przykładzie nie ma żadnych wariantów.
 1. Wybierz **Dalej**, by otworzyć stronę **Wybierz firmy**.
 1. Wybierz firmy, do których ma zostać zwolniony produkt. W tym przykładzie zaznacz pole wyboru dla **USMF**.
 
-    ![Wybieranie firm, do których ma być zwolniony](media/select-release-companies.png "Wybieranie firm, do których ma być zwolniony")
+    ![Wybieranie firm, do których ma być zwolniony.](media/select-release-companies.png "Wybieranie firm, do których ma być zwolniony")
 
 1. Wybierz **Dalej**, by otworzyć stronę **Potwierdź wybór**.
 1. Wybierz **Zakończ**.
@@ -280,7 +280,7 @@ Aby przejrzeć produkt i zwolnić go w firmie *USMF*, należy wykonać następuj
 
     Na stronie **Otwórz wydania produktów** jest wyświetlany produkt *Z0001*, który ma stan *Oczekujący na akceptację*.
 
-    ![Otwórz wersje produktów](media/open-product-releases.png "Otwórz wersje produktów")
+    ![Otwórz wersje produktów.](media/open-product-releases.png "Otwórz wersje produktów")
 
 1. Wybierz wartość w kolumnie **Numer produktu**, aby otworzyć stronę **Szczegóły wydania produktu**. Warto pamiętać o następujących szczegółach:
 
@@ -288,7 +288,7 @@ Aby przejrzeć produkt i zwolnić go w firmie *USMF*, należy wykonać następuj
     - Skrócona karta **Szczegóły wydania** zawiera informacje o produkcie i wersji, które zostały wydane. W tym miejscu można zmodyfikować ustawienia, takie jak daty wejścia w życie.
     - Skrócona karta **Marszruta** przedstawia marszrutę produktu. Jednak w tym przykładzie nie zostały wydane żadne marszruty.
 
-    ![Szczegóły zwolnienia produktu](media/product-release-details-2.png "Szczegóły zwolnienia produktu")
+    ![Szczegóły zwolnienia produktu.](media/product-release-details-2.png "Szczegóły zwolnienia produktu")
 
 1. Po przejrzeniu informacji można już zaakceptować produkt i w ten sposób zwolnić go w firmie *USMF*. W okienku akcji wybierz pozycję **Akcje &gt; Akceptuj**.
 1. Produkt został teraz zwolniony w firmie *USMF*. Przejdź do **Zarządzanie informacjami o produktach&gt; Produkty &gt; Zwolnione produkty**. Powinna być widoczna pozycja *Z0001*.
@@ -304,7 +304,7 @@ Menedżer danych głównych dla firmy *USMF* chce upewnić się, że produkt zna
 1. W okienku akcji na karcie **Produkt** w grupie **Stan cyklu życia** wybierz opcję **Zmień stan cyklu życia**.
 1. Na oknie dialogowym listy rozwijanej **Zmień stanu cyklu życia** ustaw **Stan** na *Prototyp*, a następnie kliknij przycisk **OK**.
 
-    ![Zmiana stanu cyklu życia](media/change-lifecycle-state.png "Zmiana stanu cyklu życia")
+    ![Zmiana stanu cyklu życia.](media/change-lifecycle-state.png "Zmiana stanu cyklu życia")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Dodaj produkt projektowy do zamówienia sprzedaży
 
@@ -318,7 +318,7 @@ Produkt może być teraz sprzedany klientowi. Aby dodać produkt do zamówienia 
 
     Zostanie wyświetlony komunikat ostrzegawczy informujący, że pozycja ma stan *Prototyp*. Ponieważ jednak komunikat jest tylko ostrzeżeniem, zamówienie sprzedaży zostało utworzone.
 
-    ![Zamówienie sprzedaży dla produktu projektowego](media/sales-order-eng-product.png "Zamówienie sprzedaży dla produktu projektowego")
+    ![Zamówienie sprzedaży dla produktu projektowego.](media/sales-order-eng-product.png "Zamówienie sprzedaży dla produktu projektowego")
 
 ## <a name="request-changes-in-the-engineering-product"></a>Zażądaj wprowadzenie zmian w produkcie projektowym
 
@@ -328,7 +328,7 @@ Produkt został wysłany do klienta, ale klient nie był w pełni zadowolony i p
 1. Znajdź i otwórz zamówienie sprzedaży utworzone w poprzednim ćwiczeniu.
 1. W skróconej karcie **Wiersze zamówienia sprzedaży** wybierz **Zarządzanie zmianami projektowymi &gt; Nowe żądanie o zmiany projektowe**.
 
-    ![Tworzenie żądania o zmianę projektową na podstawie zamówienia sprzedaży](media/sales-order-eng-change-request.png "Tworzenie żądania o zmianę projektową na podstawie zamówienia sprzedaży")
+    ![Tworzenie żądania o zmianę projektową na podstawie zamówienia sprzedaży.](media/sales-order-eng-change-request.png "Tworzenie żądania o zmianę projektową na podstawie zamówienia sprzedaży")
 
 1. Wprowadź w żądaniu zmiany projektowe na podstawie opinii klienta. W tym przykładzie ustaw następujące wartości:
 
@@ -341,7 +341,7 @@ Produkt został wysłany do klienta, ale klient nie był w pełni zadowolony i p
 1. Na skróconej karcie **Informacje** wybierz **Nowe &gt; Uwaga**, aby dodać uwagę do siatki.
 1. W polu nowej uwagi **Opis** wskaż, że pozycja *D0003* powinna zostać usunięta z BOM. Jeśli trzeba dodać więcej informacji w uwadze, można wprowadzić tekst w polu **Uwagi**.
 
-    ![Żądanie zmian projektowych](media/eng-change-request.png "Żądanie zmian projektowych")
+    ![Żądanie zmian projektowych.](media/eng-change-request.png "Żądanie zmian projektowych")
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Zauważ, że pozycja została automatycznie dodana do skróconej karty **Produkty** i że źródło tego żądania zmiany projektowej (zamówienie sprzedaży) zostało dodane w skróconej karcie **Źródło**.
@@ -370,26 +370,26 @@ Inżynier przegląda teraz żądanie od klienta i tworzy zamówienie zmiany dla 
     - **Produkt:** *Z0001*
     - **Wpływ:** *Nowa wersja*
 
-    ![Tworzenie zlecenia zmiany projektowej](media/eng-change-order.png "Tworzenie zlecenia zmiany projektowej")
+    ![Tworzenie zlecenia zmiany projektowej.](media/eng-change-order.png "Tworzenie zlecenia zmiany projektowej")
 
 1. Zwróć uwagę, że ponieważ pole **Wpływ** jest ustawiane na *Nową wersję*, pole **Nowa wersja** na karcie **Szczegóły** skróconej karty **Szczegóły produktu** zawiera informacje o nowym numerze wersji (w tym przykładzie *V-02*).
 
-    ![Szczegóły produktu dla zlecenia zmiany projektowej](media/eng-change-order-product-details.png "Szczegóły produktu dla zlecenia zmiany projektowej")
+    ![Szczegóły produktu dla zlecenia zmiany projektowej.](media/eng-change-order-product-details.png "Szczegóły produktu dla zlecenia zmiany projektowej")
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. W skróconej karcie **Szczegóły produktu**, na karcie **Lista składowa (BOM)** wybierz opcję **Wiersze**, aby otworzyć BOM dla wersji *V-01* produktu *Z0001*.
 
-    ![Wiersze BOM produktu projektowego](media/eng-product-bom-lines.png "Wiersze BOM produktu projektowego")
+    ![Wiersze BOM produktu projektowego.](media/eng-product-bom-lines.png "Wiersze BOM produktu projektowego")
 
 1. Wybierz wiersz dla identyfikatora pozycji *D0003*, a następnie w okienku akcji wybierz opcję **Usuń**. Wartość w polu **Typ zmiany** dla tego wiersza zmieni się na *Usunięte*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 
-    ![Wiersze BOM zmodyfikowanego produktu projektowego](media/eng-product-bom-lines-modified.png "Wiersze BOM zmodyfikowanego produktu projektowego")
+    ![Wiersze BOM zmodyfikowanego produktu projektowego.](media/eng-product-bom-lines-modified.png "Wiersze BOM zmodyfikowanego produktu projektowego")
 
 1. Zamknij stronę **Wiersz BOM** w celu powrotu do strony **Zlecenie zmiany projektowej**.
 1. W skróconej karcie **Szczegóły produktu** na karcie **Lista składowa (BOM)** należy zauważyć, że wartość w polu **Typ zmiany** dla *Z0001* list składowej (BOM) wynosi teraz *Zmienione*.
 
-    ![Zlecenie zmiany projektowej zawierające zmienioną BOM](media/eng-change-order-changed-bom.png "Zlecenie zmiany projektowej zawierające zmienioną BOM")
+    ![Zlecenie zmiany projektowej zawierające zmienioną BOM.](media/eng-change-order-changed-bom.png "Zlecenie zmiany projektowej zawierające zmienioną BOM")
 
     Przed przetwarzaniem zmian należy teraz zatwierdzić zlecenie. Podczas przetwarzania zmian produkty są aktualizowane przy użyciu zmian uwzględnionych w zleceniu zmiany projektowej. W tym przykładzie osoba tworząca zlecenie zmiany projektowej została określona jako osoba zatwierdzająca.
 
