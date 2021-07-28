@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188132"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359868"
 ---
 # <a name="sales-and-marketing-overview"></a>Sprzedaż i marketing — omówienie
 
@@ -29,18 +31,18 @@ Moduł Sprzedaż i marketing umożliwia pozyskiwanie, przechowywanie i wykorzyst
 
 ## <a name="marketing"></a>Marketing
 
-Kampanie i działania marketingowe umożliwiają wyszukiwanie potencjalnych klientów i budowanie z nimi relacji, tak aby początkowe interakcje przekształciły się w relacje sprzedażowe. Poniższy schemat procesu ilustruje proces biznesowy marketingu. [![Proces biznesowy marketingu](./media/marketing01.jpg)](./media/marketing01.jpg)
+Kampanie i działania marketingowe umożliwiają wyszukiwanie potencjalnych klientów i budowanie z nimi relacji, tak aby początkowe interakcje przekształciły się w relacje sprzedażowe. Poniższy schemat procesu ilustruje proces biznesowy marketingu. [![Proces biznesowy marketingu.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relacje
 
-W sprzedaży i marketingu początkowe interakcje z potencjalnymi klientami mogą występować w różnych sytuacjach. Może na przykład znaleźć potencjalnego klienta podczas udziału w targach handlowych albo potencjalnego leada sprzedażowego po przeprowadzeniu przez firmę kampanii wykorzystującej korespondencję seryjną. To bardzo ważne, aby zrozumieć przebieg procesów w organizacji podmiotu, zanim stanie się on klientem. Na poniższym rysunku przedstawiono procesy, jakie mogą wystąpić w jednostkach organizacji, zanim z potencjalnego klienta przeistoczy się ona w faktycznego klienta. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+W sprzedaży i marketingu początkowe interakcje z potencjalnymi klientami mogą występować w różnych sytuacjach. Może na przykład znaleźć potencjalnego klienta podczas udziału w targach handlowych albo potencjalnego leada sprzedażowego po przeprowadzeniu przez firmę kampanii wykorzystującej korespondencję seryjną. To bardzo ważne, aby zrozumieć przebieg procesów w organizacji podmiotu, zanim stanie się on klientem. Na poniższym rysunku przedstawiono procesy, jakie mogą wystąpić w jednostkach organizacji, zanim z potencjalnego klienta przeistoczy się ona w faktycznego klienta. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampanie
 
 Celem kampanii są osoby kontaktowe u potencjalnych klientów, leadów sprzedażowych, szans sprzedaży i istniejących klientów, których wybrano do udziału w kampanii. W Supply Chain Management można utworzyć kilka typów kampanii, np. telemarketingowe, wykorzystujące korespondencję seryjną i wykorzystujące pocztę e-mail, aby zmaksymalizować spodziewane korzyści z klienta. Wraz z postępem kampanii i notowaniem pozytywnych reakcji można rozpocząć proces sprzedaży wobec najlepiej rokujących adresatów.
 
 ## <a name="sales"></a>Sprzedaż
-Funkcje sprzedaży umożliwiają tworzenie ofert, sprzedaż dodatkową i powiązaną nowym i istniejącym klientom, tworzenie zamówień sprzedaży oraz tworzenie faktur sprzedaży dla odbiorców. Poniższy schemat procesu ilustruje proces biznesowy sprzedaży. [![Proces biznesowy sprzedaży](./media/sales01.jpg)](./media/sales01.jpg)
+Funkcje sprzedaży umożliwiają tworzenie ofert, sprzedaż dodatkową i powiązaną nowym i istniejącym klientom, tworzenie zamówień sprzedaży oraz tworzenie faktur sprzedaży dla odbiorców. Poniższy schemat procesu ilustruje proces biznesowy sprzedaży. [![Proces biznesowy sprzedaży.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Oferty sprzedaży
 

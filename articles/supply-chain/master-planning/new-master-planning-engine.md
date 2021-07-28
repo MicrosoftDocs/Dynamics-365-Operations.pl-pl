@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907698"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348764"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego
 
@@ -65,7 +65,7 @@ Po udostępnieniu wymaganych funkcji firma Microsoft zapewni okres karencji do w
 
 Poniższy schemat blokowy podsumowuje informacje podane w tym temacie, dzięki czemu można szybko dowiedzieć się, czy należy zażądać wyjątku. Jeśli musisz zażądać wyjątku, wypełnij i prześlij [Kwestionariusz migracji optymalizacji planowania i wyjątków](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Schemat blokowy wyjątków](media/exception-diagram.png "Schemat blokowy wyjątków")
+![Schemat blokowy wyjątków.](media/exception-diagram.png "Schemat blokowy wyjątków")
 
 > [!NOTE]
 > Możesz zażądać wyjątku tylko dla dzierżawców, którzy obecnie zawierają lub będą zawierać środowisko produkcyjne, a nie dla dzierżawców ze środowiskami piaskownicy. Jeśli chcesz wyłączyć błąd wyjątku optymalizacji planowania w środowisku piaskownicy typu infrastruktura jako usługa (IaaS), uruchom zapytanie SQL podane w [środowiskach piaskownicy](#faq-sandbox).

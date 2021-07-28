@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937541"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346065"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurowanie kanału handlu detalicznego
 
@@ -50,11 +50,11 @@ Przed utworzeniem kanału sprzedaży należy przestrzegać [wymagań wstępnych 
 
 Poniższy rysunek przedstawia utworzenie nowego kanału sprzedaży.
 
-![Nowy kanał sprzedaży](media/channel-setup-retail-1.png)
+![Nowy kanał sprzedaży.](media/channel-setup-retail-1.png)
 
 Poniższy obraz przedstawia przykład kanału sprzedaży.
 
-![Przykład kanału sprzedaży](media/channel-setup-retail-2.png)
+![Przykład kanału sprzedaży.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Inne ustawienia
 
@@ -64,7 +64,7 @@ Ponadto zapoznaj się z tematami [Układy ekranu dla punktu sprzedaży (POS)](po
 
 Poniższy obraz przedstawia przykład konfiguracji kanału sprzedaży.
 
-![Przykład konfiguracji kanału sprzedaży](media/channel-setup-retail-3.png)
+![Przykład konfiguracji kanału sprzedaży.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Konfiguracja kanałów dodatkowych
 
@@ -74,7 +74,7 @@ Dodatkowe zadania wymagane do konfiguracji kanału online obejmują konfigurowan
 
 Na poniższym rysunku przedstawiono różne dodatkowe opcje konfiguracji kanału sprzedaży detalicznej na karcie **Konfiguracja**.
 
-![Konfigurowanie kanału](media/channel-setup-retail-4.png)
+![Konfigurowanie kanału.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Konfigurowanie metod płatności
 
@@ -89,7 +89,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności](media/channel-setup-retail-5.png)
+![Przykład metod płatności.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Ustawienia deklaracji gotówki
 
@@ -98,7 +98,7 @@ Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
 Poniższy obraz przedstawia przykład kart i deklaracji gotówki.
 
-![Ustawienia deklaracji gotówki](media/channel-setup-retail-6.png)
+![Ustawienia deklaracji gotówki.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
@@ -112,7 +112,7 @@ Aby zmienić lub dodać metodę dostawy, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 
-![Ustaw metody dostawy](media/channel-setup-retail-7.png)
+![Ustaw metody dostawy.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Konfiguruj konto wpływu/wpłaty lub wpływów/wydatków
 
@@ -129,7 +129,7 @@ Aby skonfigurować konto wpływów/wydatków, wykonaj następujące czynności.
 
 Poniższy obraz przedstawia przykład konta wpływów/wydatków.
 
-![Konfiguruj konta wpływów/wydatków](media/channel-setup-retail-8.png)
+![Konfiguruj konta wpływów/wydatków.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Konfigurowanie sekcji
 
@@ -155,7 +155,7 @@ Aby skonfigurować przypisanie grupy realizacji, należy wykonać następujące 
 
 Poniższy obraz przedstawia przykład konfiguracji przypisania grupy realizacji.
 
-![Konfiguracja przypisań grupy realizacji](media/channel-setup-retail-9.png)
+![Konfiguracja przypisań grupy realizacji.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Konfiguracja sejfów
 

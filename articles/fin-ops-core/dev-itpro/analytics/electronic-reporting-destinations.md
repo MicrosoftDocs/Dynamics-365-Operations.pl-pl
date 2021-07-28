@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085507"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351159"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -62,7 +62,7 @@ Jeśli opcja **Przetwarzanie wsadowe** zostanie ustawiona na wartość **Tak**, 
 > [!NOTE]
 > Opis zadania informuje Cię o uruchomieniu mapowania formatu ER. Zawiera on również nazwę uruchamianego składnika ER.
 
-[![Uruchamianie formatu ER](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![Uruchamianie formatu ER.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 Informacje o tym zadaniu można znaleźć w kilku miejscach:
 
@@ -74,17 +74,17 @@ Informacje o tym zadaniu można znaleźć w kilku miejscach:
 
 - Na stronie **Zadania raportowania elektronicznego** wybierz pozycję **Pokaż pliki**, aby wyświetlić listę błędów i ostrzeżeń wygenerowanych podczas wykonywania zadania.
 
-    [![Przeglądanie listy zadań ER](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![Przeglądanie listy zadań ER.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Zachowanie konfigurowane przez użytkownika
 
 Na stronie **Strona docelowa raportowania elektronicznego** można zastąpić domyślne zachowanie konfiguracji. Zaimportowane konfiguracje są wyświetlane na tej stronie dopiero wtedy, gdy klikniesz przycisk **Nowy**, a następnie w polu **Odwołanie** wybierzesz konfigurację, dla której mają zostać utworzone ustawienia miejsca docelowego.
 
-[![Wybieranie konfiguracji w polu Odwołanie](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Wybieranie konfiguracji w polu Odwołanie.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 Po utworzeniu odwołania można utworzyć plik docelowy dla każdego **Folderu** lub składnika wyjściowego **Pliku**, do którego istnieje odwołanie w formacie ER.
 
-[![Tworzenie plikowego miejsca docelowego](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Tworzenie plikowego miejsca docelowego.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Następnie można włączać i wyłączać poszczególne miejsca docelowe dla danego miejsca w oknie dialogowym **Ustawienia aplikacji docelowej**. Przycisk **Ustawienia** pozwala kontrolować wszystkie miejsca docelowe należące do wybranego plikowego miejsca docelowego. W oknie dialogowe **Ustawienia aplikacji docelowej** można kontrolować każde miejsce docelowe osobno, ustawiając dla niego opcję **Włączone**.
 
@@ -92,7 +92,7 @@ W wersjach Finance **wcześniejszych niż 10.0.9** można utworzyć **jedno miej
 
 Można na przykład użyć tej możliwości do skonfigurowania lokalizacji docelowych plików dla składnika pliku używanego do generowania dokumentu wychodzącego w formacie programu Excel. Jeden cel ([archiwalny](er-destination-type-archive.md)) można skonfigurować do przechowywania oryginalnego pliku programu Excel w archiwum zadań ER, a następnie można skonfigurować inne miejsce docelowe ([e-mail](er-destination-type-email.md)), aby jednocześnie [konwertować](#OutputConversionToPDF)  plik programu Excel na format PDF i wysłać plik PDF pocztą elektroniczną.
 
-[![Konfigurowanie wielu lokalizacji docelowych dla pojedynczego elementu formatu](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Konfigurowanie wielu lokalizacji docelowych dla pojedynczego elementu formatu.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 Po uruchomieniu formatu ER są zawsze uruchamiane wszystkie miejsca docelowe skonfigurowane dla składników tego formatu. Ponadto w aplikacji Finance w **wersji 10.0.17 i nowszych** funkcja miejsc docelowych ER została poprawiona i teraz umożliwia skonfigurowanie różnych zestawów miejsc docelowych dla jednego formatu ER. Każdy zestaw jest oznaczany jako skonfigurowany dla określonej akcji użytkownika. Interfejs API ER został [rozszerzony](er-apis-app10-0-17.md), dzięki czemu można określić, że użytkownik wykonuje akcję, uruchamiając format ER. Podany kod akcji jest przekazywany do miejsc docelowych ER. W zależności od podanego kodu akcji można uruchamiać różne miejsca docelowe w formacie ER. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie miejsc docelowych ER zależnych od akcji](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ Miejsca docelowe można ustawiać tylko dla konfiguracji ER, które zostały zai
 
 Konfigurując miejsca docelowe plików dla wybranego formatu, należy skonfigurować je dla całego formatu.
 
-[![Łącze do konfiguracji](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Łącze do konfiguracji.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Jednocześnie może istnieć wiele [wersji](general-electronic-reporting.md#component-versioning) formatu zaimportowanych do bieżącego Finance. Można je wyświetlić w przypadku wybrania łącza **Konfiguracja** oferowanego po zaznaczeniu pola **Odwołanie**.
 
-[![Wersje konfiguracji](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Wersje konfiguracji.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Domyślnie skonfigurowane miejsca docelowe są stosowane tylko w przypadku uruchamiania wersji formatu ER o stanie **Ukończony** lub **Udostępniony**. Czasami jednak należy używać skonfigurowanych miejsc docelowych, gdy jest uruchamiana wersja robocza formatu ER. Na przykład można zmodyfikować wersję roboczą formatu, a użytkownik chce użyć skonfigurowanych miejsc docelowych do testowania sposobu dostarczania wygenerowanych danych wyjściowych. Wykonaj poniższe kroki, aby zastosować lokalizacje docelowe dla formatu ER w momencie uruchomienia wersji roboczej.
 
@@ -128,7 +128,7 @@ Domyślnie skonfigurowane miejsca docelowe są stosowane tylko w przypadku uruch
 2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
 3. Ustawienie opcji **Używaj miejsc docelowych w wersji roboczej** spowoduje, że wartość zmieni się na **Tak**.
 
-[![Opcja Używaj miejsc docelowych w wersji roboczej](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Opcja Używaj miejsc docelowych w wersji roboczej.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Aby można było skorzystać z wersji roboczej formatu ER, należy odpowiednio go oznaczyć format.
 
@@ -136,11 +136,11 @@ Aby można było skorzystać z wersji roboczej formatu ER, należy odpowiednio g
 2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
 3. Ustaw wartość **Tak** opcji **Uruchomić**.
 
-[![Opcja ustawienia uruchamiania](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Opcja ustawienia uruchamiania.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Po zakończeniu tego ustawienia opcja **Uruchom wersję roboczą** będzie dostępna dla zmodyfikowanych formatów ER. Tę opcję należy skonfigurować na **Tak** w celu używania wersji roboczej formatu w przypadku uruchomienia formatu.
 
-[![Opcja Uruchom wersję roboczą](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Opcja Uruchom wersję roboczą.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Obsługa niepowodzeń związanych z miejscem docelowym
 
@@ -148,7 +148,7 @@ Zazwyczaj format ER jest uruchamiany w zakresie określonego procesu biznesowego
 
 Można na przykład skonfigurować przetwarzanie płatności dostawcy, tak aby był uruchamiany format schematu ER **ISO20022 Transfer kredytowy** w celu wygenerowania pliku płatności i dokumentów dodatkowych (np. Listu przewodniego i Raportu kontrolnego). Jeśli płatność powinna zostać rozpatrzona pomyślnie, tylko jeśli pozostała część dokumentu zostanie dostarczona pocztą e-mail, należy zaznaczyć pole wyboru **Zatrzymaj przetwarzanie przy błędzie** dla składnika **CoveringLetter** w odpowiednim miejscu docelowym pliku, tak jak to pokazano na poniższej ilustracji. W takim przypadku stan płatności wybranej do przetworzenia zostanie zmieniony z **Brak** na **Wysłane** tylko wtedy, gdy wygenerowany list przewodni zostanie zaakceptowany do dostarczenia przez dostawcę poczty e-mail skonfigurowanego w instancji Finance.
 
-[![Konfigurowanie obsługi procesów dla niepowodzenia miejsca docelowego pliku](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Konfigurowanie obsługi procesów dla niepowodzenia miejsca docelowego pliku.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Jeśli wyczyścisz pole **Zatrzymaj przetwarzanie przy błędzie** dla składnika **CoveringLetter** w miejscu docelowym pliku, płatność będzie uznana za rozpatrzoną pomyślnie, nawet jeśli list przewodni nie zostanie dostarczony pocztą e-mail. Stan płatności zostanie zmieniony z **Brak** na **Wysłane**, nawet jeśli nie można wysłać listu przewodniego, ponieważ na przykład brakuje adresu e-mail odbiorcy lub nadawcy lub jest on niepoprawny.
 
@@ -160,9 +160,9 @@ Opcja konwersji pliku PDF umożliwia konwertowanie danych wyjściowych z formatu
 
 Aby w bieżącej instancji Finance była dostępna opcja konwersji plików PDF, otwórz obszar roboczy **Zarządzanie funkcjami** i włącz funkcję **Konwertuj wychodzące raporty elektroniczne z formatów Microsoft Office na PDF**.
 
-[![Włączanie funkcji konwersji dokumentów wychodzących na format PDF w module Zarządzanie funkcjami](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Włączanie funkcji konwersji dokumentów wychodzących na format PDF w module Zarządzanie funkcjami.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
-### <a name="applicability"></a>Możliwość zastosowania
+### <a name="applicability"></a>Możliwość stosowania
 
 Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie pakietu Office (Excel lub Word) (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF. W wersjach **przed Finance 10.0.18** opcję można włączyć tylko w przypadku składników typu pliku programu **Excel\\File** używanych do generowania danych wyjściowych w formacie programu [Excel](er-fillable-excel.md) lub programu [Word](er-design-configuration-word.md) . Jednak w **wersji 10.0.18 i nowszej** można włączyć tę opcję dla składników typu **Common\\File**.
 
@@ -185,13 +185,13 @@ Tylko typowe czcionki systemowe systemu operacyjnego Windows są używane do kon
 
 Aby włączyć konwersję pliku PDF dla pliku docelowego, zaznacz pole wyboru **Konwertuj na PDF**.
 
-[![Włączanie konwersji pliku PDF dla miejsca docelowego pliku](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![Włączanie konwersji pliku PDF dla miejsca docelowego pliku.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Wybierz orientację strony do konwersji na format PDF</a>
 
 W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można określić orientację strony dokumentu PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
 
-[![Wybierz orientację strony do konwersji na format PDF](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Wybierz orientację strony do konwersji na format PDF.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Aby można było wybrać orientację strony PDF, należy zainstalować rozwiązanie Finance w wersji 10.0.10 lub nowszej.
@@ -222,7 +222,7 @@ Na skróconej karcie **Ogólne**, w polu **Wyślij folder jako**, wybierz jedną
     > [!NOTE]
     > Po wybraniu opcji **Oddzielne pliki**, wygenerowane dane wyjściowe zostaną zebrane w pamięci w stanie zmapowana. Dlatego maksymalny [limit rozmiaru pliku](er-compress-outbound-files.md) jest stosowany dla zamapowanych danych wyjściowych, gdy rzeczywisty rozmiar pliku może przekroczyć ten limit. Zaleca się wybranie tej wartości, jeśli oczekiwano, że rozmiar wygenerowanych danych będzie zbyt duży.
 
-[![Konfigurowanie miejsca docelowego składnika formatu folderu](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Konfigurowanie miejsca docelowego składnika formatu folderu.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Ograniczenia
 

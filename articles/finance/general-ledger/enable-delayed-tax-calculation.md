@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: acf5ead6ed90d4dbb41de08520cde8085a7f3935
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c58a5bfbc140eb770415a96d1d9c5748e3e2d132
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823723"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350031"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Włączanie opóźnionego obliczania podatku w arkuszach
 [!include [banner](../includes/banner.md)]
@@ -45,14 +45,14 @@ System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawie
 1. Przejdź do pozycji **Księga główna \> Ustawienia księgi \> Parametry księgi głównej**.
 2. Na karcie **Podatek**, na skróconej karcie **Ogólne** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz parametrów księgi głównej](media/delayed-tax-calculation-gl.png)
+![Obraz parametrów księgi głównej.](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nazwy arkusza
 
 1. Przejdź do pozycji **Księga główna \> Konfiguracja arkusza \> Nazwy arkuszy**.
 2. Na skróconej karcie **Ogólne**, w sekcji **Podatek** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz nazw arkusza](media/delayed-tax-calculation-journal-name.png)
+![Obraz nazw arkusza.](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Włączanie opóźnionego obliczania podatku na poziomie nagłówka arkusza
 
@@ -61,7 +61,7 @@ System nadaje priorytet ustawieniu dla nagłówka arkusza. Domyślnie to ustawie
 3. Wybierz nazwę arkusza.
 4. Na karcie **Ustawienia** ustaw opcję **Obliczanie podatku opóźnionego** na **Tak**.
 
-![Obraz strony arkusza finansowego](media/delayed-tax-calculation-journal-header.png)
+![Obraz strony arkusza finansowego.](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792470"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353835"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Tworzenie i konfigurowanie gwarancji rozszerzonych
 
@@ -81,7 +81,7 @@ Aby utworzyć towar objęty gwarancją w Commerce, należy wykonać następując
 
     Na przykład w przypadku dwuletniej gwarancji należy określić pole **Jednostka czasu** jako **Lata** i pole **Długość czasu** na **2**. Można również ustawić pole **Jednostka czasu** na **Miesiące** i pole **Długość czasu** na **24**, jak to pokazano na poniższej ilustracji.
 
-    ![Strona szczegółów produktu dla pozycji gwarancji](./media/ew-time-properties.png)
+    ![Strona szczegółów produktu dla pozycji gwarancji.](./media/ew-time-properties.png)
 
 1. Wybierz **Zapisz**, aby zapisać pozycję gwarancji.
 1. Zwolnij produkt gwarancyjny do firmy, aby można było go sprzedać. Aby uzyskać więcej informacji, zobacz temat [Konfigurowanie produktów handlu detalicznego](set-up-retail-products.md).
@@ -94,7 +94,7 @@ Aby utworzyć towar objęty gwarancją w Commerce, należy wykonać następując
 
     Na przykład na poniższej ilustracji pokazano pole **Postawa przedziału cenowego** ustawione na wartość **Cena podstawowa**, pole **Dolny limit** jest ustawione na 500$ a pole **Górny limit** jest ustawione na 1000$.
     
-    ![Strona szczegółów wydanego produktu dla pozycji gwarancji](./media/ew-release-product-details.png)
+    ![Strona szczegółów wydanego produktu dla pozycji gwarancji.](./media/ew-release-product-details.png)
 
 1. Asortyment pozycji gwarancyjnej dla kanału, w którym zostanie on sprzedany. Aby uzyskać więcej informacji, zobacz [Konfigurowanie asortymentów](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ Dwie operacje POS pozwalają sprzedawcą sprzedawać pozycje gwarancyji podczas 
 
 Na poniższej ilustracji pokazano przykład strony terminalu w punkcie sprzedaży z monitem o dodanie pozycji gwarancji w odniesieniu do bieżącego zakupu pozycji objętej gwarancją.
 
-![Przykład monitu o dodanie pozycji gwarancji dla bieżącego zakupu](./media/ew-sell-warranty.png)
+![Przykład monitu o dodanie pozycji gwarancji dla bieżącego zakupu.](./media/ew-sell-warranty.png)
 
 Na poniższej ilustracji przedstawiono przykład funkcji służącej do dodawania pozycji gwarancji do pozycji objętej gwarancją, która została wcześniej sprzedana.
 
-![Przykładowa funkcja dodawania pozycji gwarancji dla wcześniej sprzedanej pozycji objętej gwarancją](./media/ew-add-warranty-existing.png)
+![Przykładowa funkcja dodawania pozycji gwarancji dla wcześniej sprzedanej pozycji objętej gwarancją.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Przetwarzanie transakcji gwarancyjnych
 

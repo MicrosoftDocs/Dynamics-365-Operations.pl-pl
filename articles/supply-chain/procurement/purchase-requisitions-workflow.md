@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188180"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353475"
 ---
 # <a name="purchase-requisition-workflow"></a>przepływ pracy zapotrzebowań zakupu
 
@@ -51,7 +51,7 @@ Na poniższej ilustracji pokazano przykładową drogę zapotrzebowania na zakup 
 -   **Pracownik działu zakupów** — użytkownik, który dokonuje przeglądu zamówienia i może zatwierdzić dokument.
 -   **Menedżer zleceniodawcy** — użytkownik, który dokonuje przeglądu menedżerskiego i może zatwierdzić dokument.
 
-![Przepływ pracy w procesie przeglądu zapotrzebowania na zakup](./media/purchreqworkflowoverview_submission.gif)  
+![Przepływ pracy w procesie przeglądu zapotrzebowania na zakup.](./media/purchreqworkflowoverview_submission.gif)  
 W tym przykładzie proces przepływu pracy dla zamówienia na zakup obejmuje następujące kroki:
 
 1.  Wystawca przesyła zapotrzebowanie na zakup do przeglądu.
@@ -74,7 +74,7 @@ W tym przykładzie w procesie przepływu pracy uwzględniono następujące role:
 -   **Menedżer działu** — użytkownik, który dokonuje przeglądu rozchodu i może zatwierdzić dokument.
 -   **Menedżer grupy** — użytkownik, który dokonuje przeglądu związanego z autoryzacją podpisu i może zatwierdzić dokument.
 
-![Przepływ pracy w procesie przeglądu wiersza zapotrzebowania na zakup](./media/purchreqlineworkflowoverview.gif)  
+![Przepływ pracy w procesie przeglądu wiersza zapotrzebowania na zakup.](./media/purchreqlineworkflowoverview.gif)  
 W tym przykładzie proces przepływu pracy dla wierszy zamówienia na zakup obejmuje następujące kroki:
 
 1.  Wystawca przesyła zapotrzebowanie na zakup do przeglądu. Każdy wiersz jest kierowany do osoby sprawdzającej, która w procesie przepływu pracy otrzymała uprawnienia do pobierania go.

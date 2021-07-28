@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347765"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Metody uzupełniania zapasów i modyfikacja ilości
 
@@ -34,11 +34,11 @@ Następujące kody pokrycia mogą być użyte w optymalizacji planowania:
 
 - **Na okres** — metoda uzupełniania zapasów łączy całe zapotrzebowanie na dany okres w jedno zamówienie na dany produkt. Zamówienie zostanie zaplanowane na pierwszy dzień okresu, a jego ilość będzie spełniać zapotrzebowania netto w ustalonym okresie. Okres rozpoczyna się od pierwszego zapotrzebowania na produkt i obejmuje zdefiniowany okres w czasie. Następny okres rozpocznie się od kolejnych wymagań dotyczących produktu. Kod pokrycia *Okres* jest często stosowany w przypadku nieprzewidywalnych losowań zapasów, produktów uzależnionych od pory roku lub produktów o wysokich kosztach. Na poniższej ilustracji pokazano przykład.
 
-    ![Przykład użycia kodu zapotrzebowania okresowego](./media/coverage-code-period.png "Przykład użycia kodu zapotrzebowania okresowego")
+    ![Przykład użycia kodu zapotrzebowania okresowego.](./media/coverage-code-period.png "Przykład użycia kodu zapotrzebowania okresowego")
 
 - **Wymaganie** — w metodzie uzupełniania zapasów system tworzy planowane zlecenie zakupu, przesunięcia lub produkcji na zapotrzebowanie na dany produkt. Ta metoda jest używana dla drogich produktów, które mają nieregularny popyt. Kod *Zapotrzebowania* jest często używany w przypadku produktów konfigurowalnych lub scenariuszy produkcji na zamówienie. Na poniższej ilustracji pokazano przykład.
 
-    ![Przykład użycia kodu zapotrzebowania wymagania](./media/coverage-code-requirement.png "Przykład użycia kodu zapotrzebowania wymagania")
+    ![Przykład użycia kodu zapotrzebowania wymagania.](./media/coverage-code-requirement.png "Przykład użycia kodu zapotrzebowania wymagania")
 
 - **Minimum/Maksimum** — metoda uzupełniania zapasów jest oparta na poziomie zapasów. Określa uzupełnianie zapasów do określonego poziomu, gdy przewidywany poziom zapasów na stanie jest poniżej określonego progu. Ilość uzupełniania zapasów będzie różnicą między maksymalnym poziomem i przewidywanym poziomem zapasów. Kod zapotrzebowania *minimum/maksimum* jest często używany dla przewidywalnego rysunku zapasów, wysokich biegaczy, lub tańszych produktów. Na poniższej ilustracji pokazano przykład.
 

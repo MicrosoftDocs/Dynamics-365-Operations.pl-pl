@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: c3da7474f9a61e97ee11688a18cb91a5ad1ccb5c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e2369b17244525023541cdbd0a0da3f2a2a09b30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791172"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355459"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Tworzenie i aktualizowanie przedziałów czasu na potrzeby odbiorów przez odbiorcę
 
@@ -34,7 +34,7 @@ Funkcja przedziału czasowego umożliwia sprzedawcom detalicznym zdefiniowanie p
 
 Poniższa ilustracja przedstawia przykład wyboru przedziału czasu podczas realizacji transakcji w handlu elektronicznym.
 
-![Przykład wyboru przedziału czasu podczas realizacji transakcji w handlu elektronicznym](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Przykład wyboru przedziału czasu podczas realizacji transakcji w handlu elektronicznym.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Właściwości przedziału czasu
 
@@ -60,7 +60,7 @@ Do definiowania czasu służą następujące właściwości:
 - **Aktywne dni** — umożliwia określenie dni tygodnia, w których są aktywne przedziały czasu dla odbiorów. Ta właściwość pozwala sprzedawcy określić dni, w których chce obsługiwać zamówienia odbioru.
 - **Kanały sprzedaży detalicznej** — umożliwia określenie kanałów sprzedaży detalicznej. Każdy przedział czasu może być powiązany z jednym lub większą liczbą sklepów detalicznych. W zależności od godzin pracy każdego sklepu, można utworzyć jeden lub więcej wpisów przedziałów czasowych i powiązać je z kanałem. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Na kanał można skonfigurować tylko jeden szablon przedziału czasowego. Te kanały obejmują sklepy fizyczne, biura obsługi, urządzenia przenośne oraz witryny handlu elektronicznego
 
@@ -85,14 +85,14 @@ Aby skonfigurować funkcję przedziału czasu w siedzibie firmy Commerce, wykona
     > [!NOTE]
     > Możesz utworzyć wiele szablonów, ale tylko jeden szablon może być powiązany z pojedynczym kanałem lub sklepem.
 
-    ![Okno dialogowe Odbiór zamówienia - Ustawienia czasu](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Okno dialogowe Odbiór zamówienia - Ustawienia czasu.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Po zakończeniu wybierz przycisk **OK**.
 1. Jeśli przedziały czasowe w ciągu dnia będą się różnić, utwórz dodatkowe wpisy na skróconej karcie **Odbiór zamówienia - Ustawienia czasu**, aby zapewnić, że daty i godziny nie pokrywają się.
 1. Na skróconej karcie **Kanały sprzedaży detalicznej** wybierz opcję **Dodaj**, aby skojarzyć szablon przedziałów czasu z sklepami lub kanałami, w których będzie używany.
 1. W oknie dialogowym **Wybieranie węzłów organizacji** użyj przycisków strzałek, aby zaznaczyć (lub wyczyścić zaznaczenie) sklepy, regiony i organizacje, z którymi szablon ma być powiązany.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Po zakończeniu wybierz przycisk **OK**.
 1. Na stronie **Harmonogram dystrybucji** uruchom zadania **1070** i **1135**, aby zsynchronizować dane z kanałami.
@@ -103,7 +103,7 @@ W punkcie sprzedaży, gdy zamówienie lub linia zamówienia zostanie zidentyfiko
 
 Poniższa ilustracja przedstawia przykład wyboru przedziału czasu dla zamówienia POS.
 
-![Przykład wyboru przedziału czasowego dla zamówienia POS](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Przykład wyboru przedziału czasowego dla zamówienia POS.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Wybór przedziału czasowego dla zamówień handlu elektronicznego
 
@@ -114,13 +114,13 @@ Aby uzyskać informacje o tym, jak udostępnić wybór przedziału czasowego dla
 
 Na poniższej ilustracji przedstawiono przykład zamówienia w handlu elektronicznym, w którym wybrano przedział czasu odbioru.
 
-![Przykład zamówienia w handlu elektronicznym, w którym wybrano przedział czasu odbioru](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Przykład zamówienia w handlu elektronicznym, w którym wybrano przedział czasu odbioru.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Wybór przedziału czasowego dla zamówień call center
 
 W aplikacji biura obsługi agenci biura obsługi mogą wybrać punkt odbioru lub lokalizację, a także datę i godzinę, jak pokazano na poniższej ilustracji.
 
-![Przykład zamówienia w biurze obsługi, w którym wybrano przedział czasu odbioru](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Przykład zamówienia w biurze obsługi, w którym wybrano przedział czasu odbioru.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

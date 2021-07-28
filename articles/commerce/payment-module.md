@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804486"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352331"
 ---
 # <a name="payment-module"></a>Moduł płatności
 
@@ -46,7 +46,7 @@ Złącze płatności Adyen obsługuje również silne uwierzytelnianie klienta (
 
 Poniższa ilustracja przedstawia przykład karty upominkowej, modułów lojalnościowych i płatności Ayden na stronie kasy.
 
-![Przykład karty podarunkowej, punktów lojalnościowych i płatności Ayden na stronie realizacji transakcji](./media/ecommerce-payments.PNG)
+![Przykład karty podarunkowej, punktów lojalnościowych i płatności Ayden na stronie realizacji transakcji.](./media/ecommerce-payments.PNG)
 
 ## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector dla PayPal
 
@@ -59,10 +59,10 @@ Jeśli moduł płatności jest skonfigurowany do używania łącznika płatnośc
 Złącze płatności PayPal nie wymaga modułu adresu rozliczeniowego, ponieważ wszystkie informacje związane z rozliczeniami są obsługiwane przez PayPal w ramach jego elementu iframe. Wymagany jest jednak adres wysyłkowy i moduły opcji dostawy.
 
 Na poniższej ilustracji przedstawiono przykład dwóch modułów płatności na stronie realizacji zamówienia, jeden został skonfigurowany za pomocą łącznika płatności Adyen, a drugi za pomocą łącznika płatności PayPal.
-![Przykład modułów płatności Adyen i PayPal na stronie realizacji transakcji](./media/ecommerce-paypal.png)
+![Przykład modułów płatności Adyen i PayPal na stronie realizacji transakcji.](./media/ecommerce-paypal.png)
 
 Poniższa ilustracja przedstawia przykład elementu iframe PayPal wywołanego za pomocą przycisku PayPal. 
-![Przykład iframe Paypal na stronie realizacji transakcji](./media/ecommerce-paypal-iframe.png)
+![Przykład iframe Paypal na stronie realizacji transakcji.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Właściwości modułu płatności
 
@@ -76,7 +76,7 @@ Poniższa ilustracja przedstawia przykład elementu iframe PayPal wywołanego za
 |Jest płatnością główną|  **Prawda** lub **Fałsz** | Jeśli **Prawda**, wszelkie komunikaty o błędach będą generowane na podstawie podstawowego łącznika płatności na stronie realizacja transakcji. Jeśli są skonfigurowane zarówno Adyen, jak i łączniki płatności PayPal, należy określić wartość **Prawda** dla Adyen , która została dodana do modułu Commerce w wydaniu 10.0.14.|
 
 Na poniższej ilustracji pokazano przykład wartości **Obsługiwane typy płatności** ustawionej na „PayPal” w konfiguracji łącznika płatności w centrali Commerce.
-![Przykład obsługiwanych typów metod płatności w centrali Commerce](./media/ecommerce-paymenttendertypes.png)
+![Przykład obsługiwanych typów metod płatności w centrali Commerce.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Adres na fakturze
 

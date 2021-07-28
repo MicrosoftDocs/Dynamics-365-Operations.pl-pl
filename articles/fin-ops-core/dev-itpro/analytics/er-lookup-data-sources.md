@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351080"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurowanie źródeł danych wyszukiwania do używania parametrów specyficznych dla raportowania elektronicznego 
 
@@ -44,38 +44,38 @@ Możesz skonfigurować następujące typy źródeł danych **Wyszukiwanie** w za
 
 Na poniższej ilustracji pokazano, jak można skonfigurować wyliczenie formatów w przykładowym formacie ER.
 
-   ![Wyświetlanie wyliczenia formatów jako podstawy skonfigurowanego źródła danych wyszukiwania](./media/er-lookup-data-sources-img1.gif)
+   ![Wyświetlanie wyliczenia formatów jako podstawy skonfigurowanego źródła danych wyszukiwania.](./media/er-lookup-data-sources-img1.gif)
 
 Na poniższej ilustracji przedstawiono składniki formatu skonfigurowane do zgłaszania różnych typów podatków w innej sekcji generowanego raportu.
 
-   ![Wyświetlanie sekcji formatu osobno raportujących różne typy podatków](./media/er-lookup-data-sources-img2.png)
+   ![Wyświetlanie sekcji formatu osobno raportujących różne typy podatków.](./media/er-lookup-data-sources-img2.png)
 
 Na poniższej ilustracji pokazano, w jaki sposób projektant ER Operations umożliwia dodanie źródła danych **Wyliczenie formatów\Wyszukiwanie**.  Dodane źródło danych jest skonfigurowane jako zwracające wartość wyliczenia formatów `List of taxation levels`.
 
-   ![Dodawanie źródła danych ER wyliczenia formatów\wyszukiwania](./media/er-lookup-data-sources-img3.gif)
+   ![Dodawanie źródła danych ER wyliczenia formatów\wyszukiwania.](./media/er-lookup-data-sources-img3.gif)
 
 Na poniższej ilustracji pokazano, w jaki sposób dodano źródło danych skonfigurowane do używania pola **Kod** z listy rekordów **Model.Data.Tax** źródła danych **modelu** jako parametru, który należy określić dla każdej skonfigurowanej reguły.
 
-![Konfigurowanie parametrów dodanego źródła danych typu Wyliczenie formatu \ Wyszukiwanie](./media/er-lookup-data-sources-img4.gif)
+![Konfigurowanie parametrów dodanego źródła danych typu Wyliczenie formatu \ Wyszukiwanie.](./media/er-lookup-data-sources-img4.gif)
 
 Dodane źródło danych `Model.Data.Tax` jest skonfigurowane tak, aby określać kod podatku dla każdej skonfigurowanej reguły, uzyskując dostęp do rekordów tabeli aplikacji **TaxTable**.
 
-   ![Przegląd źródła danych wyszukiwania dla pojedynczej firmy typu Wyliczenie formatu \ Wyszukiwanie](./media/er-lookup-data-sources-img5.gif)
+   ![Przegląd źródła danych wyszukiwania dla pojedynczej firmy typu Wyliczenie formatu \ Wyszukiwanie.](./media/er-lookup-data-sources-img5.gif)
 
 Reguły wyszukiwania dla wybranego formatu ER można skonfigurować za pomocą interfejsu użytkownika, który jest automatycznie dopasowywany do struktury skonfigurowanego źródła danych. Obecnie ten interfejs użytkownika wymaga, aby dla każdej reguły określić zwracaną wartość jako wartość wyliczenia w formacie `List of taxation levels`, a także kod podatku jako parametr.
 
-   ![Umożliwia ustawianie reguł dla skonfigurowanego źródła danych](./media/er-lookup-data-sources-img6.gif)
+   ![Umożliwia ustawianie reguł dla skonfigurowanego źródła danych.](./media/er-lookup-data-sources-img6.gif)
 
 Na poniższej ilustracji pokazano, jak źródło danych `Model.Data.Summary.LevelByLookup` typu **Pole obliczeniowe** można skonfigurować tak, aby wywoływało skonfigurowane źródło danych **Wyszukiwanie** z wymaganymi parametrami. Aby przetworzyć to wywołanie w czasie wykonywania, ER przegląda listę skonfigurowanych reguł w zdefiniowanej kolejności, aby zlokalizować pierwszą regułę, która spełnia podane warunki. W tym przykładzie jest to reguła zawierająca kod podatku, który pasuje do podanego kodu. W związku z tym znaleziono najo odpowiednią regułę, a wartość wyliczenia skonfigurowana dla znalezionej reguły jest zwracana przez to źródło danych.
 
 > [!NOTE]
 > Wystąpił wyjątek, gdy nie znaleziono właściwej reguły. Aby zapobiec tym wyjątkom, skonfiguruj dodatkowe reguły na końcu listy reguł, aby obsługiwały przypadki, gdy nie została podana nieskonfigurowana wartość lub żadna wartość nie została podana. Użyj odpowiednio opcji **\*Niepuste\*** i **\*Puste\***.  
 >
-> ![Dodaj źródło danych, aby wywołać skonfigurowane źródło danych wyszukiwania](./media/er-lookup-data-sources-img7.png)
+> ![Dodaj źródło danych, aby wywołać skonfigurowane źródło danych wyszukiwania.](./media/er-lookup-data-sources-img7.png)
 
 W przypadku ustawienia opcji **Między firmami** na wartość **Tak** dla edytowalnego źródła danych wyszukiwania należy dodać nowy wymagany parametr **Firma** do zestawu parametrów tego źródła danych. Podczas wywoływania źródła danych wyszukiwania należy określić wartość parametru **Firma** w czasie wykonywania. Gdy kod firmy jest określony w czasie wykonywania, reguły skonfigurowane dla tej firmy są używane do znalezienia najbardziej odpowiedniej reguły i zwracana jest odpowiednia wartość. Poniższa ilustracja przedstawia, jak można to zrobić i jak zmienia się zestaw parametrów edytowalnego źródła danych.
 
-   ![Przejrzyj źródło danych wyszukiwania międzyfirmowego typu Wyliczenie formatu \ Wyszukiwanie](./media/er-lookup-data-sources-img8.gif)
+   ![Przejrzyj źródło danych wyszukiwania międzyfirmowego typu Wyliczenie formatu \ Wyszukiwanie.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Wybierz każdą firmę oddzielnie, aby skonfigurować zestaw reguł dla tego źródła danych wyszukiwania w edytowalnym formacie ER. Wyjątek jest generowany w czasie wykonywania, gdy wyszukiwanie międzyfirmowe jest wywoływane z kodem firmy, dla której ustawienie wyszukiwania nie zostało zakończone.
@@ -84,7 +84,7 @@ W przypadku ustawienia opcji **Między firmami** na wartość **Tak** dla edytow
 
 Począwszy od wersji 10.0.19 są dostępne rozszerzone możliwości źródeł danych **Wyszukiwania**. Po skonfigurowaniu opcji **Rozszerzone** na wartość **Tak** dla edytowalnego źródła danych wyszukiwania skonfigurowane źródło danych wyszukiwania zostanie przekształcone w strukturalne źródło danych, które oferuje dodatkowe możliwości analizowania skonfigurowanego zestawu reguł. Poniższa ilustracja przedstawia tę transformację.
 
-   ![Przegląd źródła danych wyszukiwania strukturalnego typu Wyliczenie formatu \ Wyszukiwanie](./media/er-lookup-data-sources-img9.gif)
+   ![Przegląd źródła danych wyszukiwania strukturalnego typu Wyliczenie formatu \ Wyszukiwanie.](./media/er-lookup-data-sources-img9.gif)
 
 - Pozycja podrzędna **Wyszukiwanie** została zaprojektowana jako funkcja znajdująca najbardziej odpowiednią regułę ze zbioru konfigurowalnych reguł w oparciu o dostarczony zestaw parametrów.
 - Element podrzędny **IsLookupResultSet** jest przeznaczony do akceptowania podanej wartości źródła danych wyliczenia podstawowego i zwracania wartości *logicznych* **True**, jeśli zestaw reguł zawiera co najmniej jedną regułę, dla której dostarczana wartość wyliczenia została skonfigurowana jako zwracana wartość. Ta funkcja zwraca wartość *logiczną* **False**, jeśli nie skonfigurowano reguł zwracania podanej wartości wyliczenia.

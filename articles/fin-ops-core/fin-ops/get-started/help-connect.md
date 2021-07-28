@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82bb9a09e6d302b0d453ceb5131da039769b58fb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1a70a9771d5f9c1acea9274b8454a23c8dd7c1ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745696"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343941"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
 
@@ -32,7 +32,7 @@ W tym temacie znajduje się omówienie składników systemu pomocy dla aplikacji
 
 Aplikacje Finance and Operations oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [https://docs.microsoft.com/dynamics365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
 
-[![Architektura modułu Pomoc](./media/help-architecture.png)](./media/help-architecture.png)
+[![Architektura modułu Pomoc.](./media/help-architecture.png)](./media/help-architecture.png)
 
 System pomocy w danym produkcie pobiera artykuły z witryny docs.microsoft.com i innych połączonych witryn internetowych. Pobierane są również przewodniki zadań przechowywane w Narzędziu do modelowania procesów biznesowych (BPM) w usługach Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -47,14 +47,14 @@ Na stronie **Parametry systemowe** administratorzy systemu mogą konfigurować d
 > - Aby skonfigurować pomoc, musisz się zalogować przy użyciu konta w tej samej dzierżawie, w której jest wdrożona aplikacja.
 > - Nie można połączyć się z biblioteką LCS z wystąpienia aplikacji działającej na lokalnym wirtualnym dysku twardym (VHD).
 
-[![Formularz Parametry systemu z ustawieniami Pomocy](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Formularz Parametry systemu z ustawieniami Pomocy.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 Aby skonfigurować przewodniki zadań dla rozwiązania, wykonaj poniższe kroki na stronie **Parametry systemowe**.
 
 > [!IMPORTANT]
 > Podczas pierwszego otwierania karty **Pomoc** należy utworzyć połączenie z usługą Lifecycle Services. Wybierz link w środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i wybierz przycisk **OK**, co spowoduje przejście do formularza **Parametry systemowe**.
 >
-> [![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Nawiązywanie połączenia z usługą LCS")](./media/connect-to-lcs-crop.png)
+> [![Podłączanie do LCS](./media/connect-to-lcs-crop-1024x365.png "Podłączanie do LCS".](./media/connect-to-lcs-crop.png)
 
 1. Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.

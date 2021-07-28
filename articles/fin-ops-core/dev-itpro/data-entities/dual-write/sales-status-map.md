@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a1f85c100f1d062517c14d31a19838cc4af18f10
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750721"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346577"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Ustawianie mapowania kolumn stanu zamówienia sprzedaży
 
@@ -100,7 +100,7 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
 1. W przeglądarce przejdź do strony `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Zastąp **\<test-name\>** łączem firmy w Sales.
 2. Na otwartej stronie znajdź **organizationid** i zanotuj wartość.
 
-    ![Znajdowanie organizationid](media/sales-map-orgid.png)
+    ![Znajdowanie organizationid.](media/sales-map-orgid.png)
 
 3. W Sales otwórz konsolę przeglądarki i uruchom następujący skrypt. Należy zastosować wartość **organizationid** z kroku 2.
 
@@ -119,33 +119,33 @@ Aby włączyć atrybut **IsSOPIntegrationEnabled**, wykonaj następujące kroki.
     );
     ```
 
-    ![Kod JavaScript w konsoli przeglądarki](media/sales-map-script.png)
+    ![Kod JavaScript w konsoli przeglądarki.](media/sales-map-script.png)
 
 4. Upewnij się, że **IsSOPIntegrationEnabled** ma ustawioną wartość **true**. Użyj adresu URL z kroku 1, aby sprawdzić wartość.
 
-    ![IsSOPIntegrationEnabled ma ustawioną wartość true](media/sales-map-integration-enabled.png)
+    ![IsSOPIntegrationEnabled ma ustawioną wartość true.](media/sales-map-integration-enabled.png)
 
 Aby włączyć atrybut **isIntegrationUser**, wykonaj następujące kroki.
 
 1. W Sales przejdź do **Ustawienia \> Dostosowania \> Dostosuj system**, wybierz pozycję **Tabela użytkownika**, a następnie otwórz **Formularz \> Użytkownik**.
 
-    ![Otwieranie formularza użytkownika](media/sales-map-user.png)
+    ![Otwieranie formularza użytkownika.](media/sales-map-user.png)
 
 2. W Eksploratorze pól znajdź **Tryb użytkownika integracyjnego** i kliknij go dwukrotnie, aby dodać go do formularza. Zapisz zmiany.
 
-    ![Dodanie kolumny trybu użytkownika integracyjnego do formularza](media/sales-map-field-explorer.png)
+    ![Dodanie kolumny trybu użytkownika integracyjnego do formularza.](media/sales-map-field-explorer.png)
 
 3. W module Sprzedaż należy posłużyć do **Ustawienia \> Zabezpieczenia \> Użytkownicy** i zmień widok z **Włączeni użytkownicy** na **Uzytkownicy aplikacji**.
 
-    ![Zmienianie widoku z Włączonych użytkowników na Użytkowników aplikacji](media/sales-map-enabled-users.png)
+    ![Zmienianie widoku z Włączonych użytkowników na Użytkowników aplikacji.](media/sales-map-enabled-users.png)
 
 4. Wybierz dwa wpisy dla **DualWrite IntegrationUser**.
 
-    ![Lista użytkowników aplikacji](media/sales-map-user-mode.png)
+    ![Lista użytkowników aplikacji.](media/sales-map-user-mode.png)
 
 5. Zmień wartość w kolumnie **Tryb użytkownika integracyjnego** na **Tak**.
 
-    ![Zmiana wartości kolumny Tryb użytkownika integracji](media/sales-map-user-mode-yes.png)
+    ![Zmiana wartości kolumny Tryb użytkownika integracji.](media/sales-map-user-mode-yes.png)
 
 Twoje zamówienia sprzedaży są teraz zamapowane.
 

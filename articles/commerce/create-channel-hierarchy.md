@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352477"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Tworzenie hierarchii nawigacji kanału
 
@@ -49,7 +49,7 @@ Aby utworzyć hierarchię nawigacji kanału, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykładowy węzeł główny.
 
-![Przykładowy węzeł główny](media/create-channel-hierarchy-1.png)
+![Przykładowy węzeł główny.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Tworzenie węzłów nawigacji kategorii
 
@@ -65,7 +65,7 @@ Aby utworzyć dodatkowe węzły kategorii nawigacji reprezentujące kategorie pr
 
 Poniższy obraz przedstawia przykład ukończonej hierarchii nawigacji kanału.
 
-![Przykładowa hierarchia kanałów](media/create-channel-hierarchy-2.png)
+![Przykładowa hierarchia kanałów.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Dodawanie produktów do węzłów kategorii
 
@@ -81,7 +81,7 @@ Aby dodać produkty do węzłów kategorii, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykład węzła z dodanymi produktami.
 
-![Produkty dodane do węzła kategorii](media/create-channel-hierarchy-3.png)
+![Produkty dodane do węzła kategorii.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Dodawanie grup atrybutów produktu do węzłów kategorii
 
@@ -97,7 +97,7 @@ Aby dodać produkt grupę atrybutów do węzła kategorii, wykonaj następujące
 
 Poniższy obraz przedstawia przykładowy węzeł z dodanymi grupami atrybutów produktu.
 
-![Grupy atrybutów produktu w węźle](media/create-channel-hierarchy-4.png)
+![Grupy atrybutów produktu w węźle.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941062"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350819"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Rozwiązywanie problemów podczas synchronizacji początkowej
 
@@ -38,7 +38,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 Po włączeniu szablonów mapowania stan map powinien być **Uruchomione**. Jeśli stan jest **Nie uruchomione**, wystąpiły błędy podczas wstępnej synchronizacji. Aby wyświetlić błędy, wybierz kartę **Szczegóły wstępnej synchronizacji** na stronie **Podwójny zapis**.
 
-![Błąd na karcie Szczegóły początkowej synchronizacji](media/initial_sync_status.png)
+![Błąd na karcie Szczegóły początkowej synchronizacji.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Nie można ukończyć synchronizacji początkowej: 400 złe żądanie
 
@@ -85,7 +85,7 @@ Aby naprawić problem, należy wykonać następujące czynności.
 1. Zaloguj się do aplikacji Finance and Operations.
 2. Na stronie **aplikacje Azure Active Directory** usuń klienta **DtAppID**, a następnie dodaj go ponownie.
 
-![Klient DtAppID na liście aplikacji Azure AD](media/aad_applications.png)
+![Klient DtAppID na liście aplikacji Azure AD.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Błędy odwołują się do siebie lub odwołują się cyklicznie podczas początkowej synchronizacji
 
@@ -115,11 +115,11 @@ Jeśli istnieją wiersze w tabeli dostawcy mają wartości w kolumnach **Primary
     2. Wyszukaj **primarycontactperson**, aby odnaleźć kolumnę źródłową **PrimaryContactPersonId**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
-        ![Usuwanie kolumny PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Usuwanie kolumny PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Powtórz te kroki, aby usunąć kolumnę **InvoiceVendorAccountNumber**.
 
-        ![Usuwanie kolumny InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Usuwanie kolumny InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Zapisz zmiany w mapowaniu.
 
@@ -129,11 +129,11 @@ Jeśli istnieją wiersze w tabeli dostawcy mają wartości w kolumnach **Primary
     2. Wybierz tabelę **Dostawcy V2**.
     3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
 
-        ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
+        ![Wybieranie opcji śledzenia zmian.](media/selfref_options.png)
 
     4. Wybierz **Wyłącz śledzenie zmian**.
 
-        ![Wybór opcji Wyłącz śledzenie zmian](media/selfref_tracking.png)
+        ![Wybór opcji Wyłącz śledzenie zmian.](media/selfref_tracking.png)
 
 3. Uruchom synchronizację wstępną mapowania **Dostawców V2 (msdyn\_vendors)**. Synchronizacja początkowa powinna zostać pomyślnie uruchomiona bez żadnych błędów.
 4. Uruchom synchronizację początkową dla mapowania **Kontaktów z CDS V2 (kontakty)**. Musisz zsynchronizować to odwzorowanie, jeśli chcesz zsynchronizować podstawową kolumnę kontaktu w tabeli dostawcy, ponieważ początkowa synchronizacja musi być również wykonana dla wierszy kontaktów.
@@ -162,11 +162,11 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
     2. Wyszukaj **contactperson**, aby odnaleźć kolumnę źródłową **ContactPersonID**.
     3. Wybierz opcję **Akcje**, a następnie wybierz opcję **Usuń**.
 
-        ![Usuwanie kolumny ContactPersonID](media/cust_selfref3.png)
+        ![Usuwanie kolumny ContactPersonID.](media/cust_selfref3.png)
 
     4. Powtórz te kroki, aby usunąć kolumnę **InvoiceAccount**.
 
-        ![Usuwanie kolumny InvoiceAccount](media/cust_selfref4.png)
+        ![Usuwanie kolumny InvoiceAccount.](media/cust_selfref4.png)
 
     5. Zapisz zmiany w mapowaniu.
 
@@ -176,11 +176,11 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
     2. Wybierz tabelę **Klient (wersja 3)**.
     3. W okienku akcji wybierz opcję **Opcje**, a następnie wybierz opcję **Śledzenie zmian**.
 
-        ![Wybieranie opcji śledzenia zmian](media/selfref_options.png)
+        ![Wybieranie opcji śledzenia zmian.](media/selfref_options.png)
 
     4. Wybierz **Wyłącz śledzenie zmian**.
 
-        ![Wybór opcji Wyłącz śledzenie zmian](media/selfref_tracking.png)
+        ![Wybór opcji Wyłącz śledzenie zmian.](media/selfref_tracking.png)
 
 3. Uruchom synchronizację początkową dla mapowania **Klienci V3 (Konta)**. Synchronizacja początkowa powinna zostać pomyślnie uruchomiona bez żadnych błędów.
 4. Uruchom synchronizację początkową dla mapowania **Kontaktów z CDS V2 (kontakty)**.
@@ -196,7 +196,7 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
 
         Na poniższej ilustracji przedstawiono projekt, który aktualizuje **CustomerAccount** i **ContactPersonId**.
 
-        ![Projekt integracji danych w celu zaktualizowania CustomerAccount i ContactPersonId](media/cust_selfref6.png)
+        ![Projekt integracji danych w celu zaktualizowania CustomerAccount i ContactPersonId.](media/cust_selfref6.png)
 
     2. Dodaj kryteria firmy w polu filtruj po stronie Dataverse, aby w aplikacji Finance and Operations została zaktualizowana tylko liczba wierszy spełniających kryteria filtru. Aby dodać filtr, kliknij przycisk filtru. W oknie dialogowym **Edytuj kwerendę** można dodać kwerendę filtru, taką jak **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -204,7 +204,7 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
 
         Jeśli kwerenda filtru nie zostanie wprowadzona dla **\_msdyn\_company\_value**, wszystkie wiersze zostaną zsynchronizowane.
 
-        ![Dodawanie kwerendy filtru](media/cust_selfref7.png)
+        ![Dodawanie kwerendy filtru.](media/cust_selfref7.png)
 
     Początkowa synchronizacja wierszy jest teraz zakończona.
 

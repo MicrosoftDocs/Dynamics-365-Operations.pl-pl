@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839987"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344765"
 ---
 # <a name="electronic-invoicing-overview"></a>Omówienie fakturowania elektronicznego
 
@@ -98,7 +100,7 @@ Gdy funkcja Faktury elektroniczne jest instalowana z LCS i wymagana konfiguracja
 
 Na poniższej ilustracji przedstawiono przepływ danych do i z Faktur elektronicznych.
 
-![Przepływ danych dla Faktur elektronicznych](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Przepływ danych dla Faktur elektronicznych.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Klauzula prywatności
 Włączenie i używanie Faktur elektronicznych może wymagać przesłania ograniczonych danych, w tym numeru identyfikacji podatkowej organizacji. Zostaną one przesłane do agencji zewnętrznych upoważnionych przez organy podatkowe w celu wysyłania faktur elektronicznych w predefiniowanych formatach wymaganych do integracji z usługami internetowymi tych rządów. Dane importowane z tych zewnętrznych systemów do tej usługi online Dynamics 365 podlegają naszym [oświadczeniom o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=512132). Aby uzyskać więcej informacji, zapoznaj się z sekcjami Uwagi dotyczące prywatności w dokumentacji funkcji dla danego kraju.

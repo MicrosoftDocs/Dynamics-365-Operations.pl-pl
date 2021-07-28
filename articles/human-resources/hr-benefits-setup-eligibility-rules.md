@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093927"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351664"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień
 
@@ -137,20 +137,20 @@ Można zdefiniować reguły, które mają wiele kryteriów. W przypadku zdefinio
 
 Na przykład powyższa reguła **Aktywni pracownicy** składa się z następujących kryteriów. Aby pracownik był uprawniony na podstawie reguły **Aktywni pracownicy**, musi być zatrudniony w firmie USMF *i* mieć typ stanowiska pełnoetatowego.  
 
-![Kryteria w ramach zasady kwalifikowalności](media/CriteriaWithinAnEligibilityRule.png) 
+![Kryteria w ramach zasady kwalifikowalności.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Wiele warunków w ramach kryteriów
 
 Reguły mogą być dalej rozbudowywane w celu wykorzystania wielu warunków w ramach jednego kryterium. Pracownik musi spełnić co najmniej jeden warunek, aby się kwalifikować. Aby użyć przykładu powyżej, można dodatkowo rozwinąć regułę **Aktywni pracownicy**, tak aby uwzględnić pracowników, którzy są także pracownikami półetatowymi. W związku z tym pracownik musi być pracownikiem z firmy USMF *oraz* pracownikiem zatrudnionym na pełny etat lub na część etatu.  
 
-![Wiele warunków w ramach kryteriów](media/MultipleConditionsWithinCriteria.png) 
+![Wiele warunków w ramach kryteriów.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Warunki kwalifikowalności w ramach kryterium pola niestandardowego 
 Podobnie jak powyżej, pola niestandardowe mogą być używane podczas tworzenia reguł kwalifikowalności i działają w ten sam sposób. Na przykład, możesz chcieć zaoferować zwrot kosztów Internetu pracownikom z Fargo i Kopenhagi, którzy pracują w domu, ponieważ w tych lokalizacjach koszty Internetu są wyższe. W tym celu należy utworzyć dwa niestandardowe pola: **Lokalizacja biura** (lista wyboru) i **Praca z domu** (pole wyboru). Następnie utwórz regułę o nazwie **Pracownicy zdalni**. Kryterium reguły jest **lokalizacja biura = Fargo** lub **Kopenhaga** *oraz* wartość **praca z domu = Tak**.
 
 Należy skonfigurować niestandardowe reguły uprawnienia zgodnie z poniższym obrazem. 
 
-![Warunki kwalifikowalności w ramach kryterium pola niestandardowego](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Warunki kwalifikowalności w ramach kryterium pola niestandardowego.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Konfigurowanie pakietów
 

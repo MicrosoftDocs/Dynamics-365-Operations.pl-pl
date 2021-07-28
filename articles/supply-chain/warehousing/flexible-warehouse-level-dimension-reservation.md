@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103053"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343781"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Elastyczne zasady rezerwacji wymiarów na poziomie magazynu
 
@@ -58,7 +58,7 @@ Mimo że hierarchia rezerwacji "*Partia poniżej\[lokalizacja\]* obsługuje rów
 
 Aby określić wymaganą elastyczność w zachowaniu rezerwacji partii dla towarów skojarzonych z hierarchią rezerwacji magazynowej *Partia poniżej\[lokalizacja\]* , menedżerowie magazynów muszą zaznaczyć pole wyboru **Zezwalaj na rezerwację na zamówieniu na zapotrzebowaniu** dla **Numeru partii** na stronie **Hierarchie rezerwacji zapasów**.
 
-![Uczynienie hierarchii rezerwacji zapasów elastyczną](media/Flexible-inventory-reservation-hierarchy.png)
+![Uczynienie hierarchii rezerwacji zapasów elastyczną.](media/Flexible-inventory-reservation-hierarchy.png)
 
 W przypadku wybrania poziomu **Numeru partii** w hierarchii wszystkie wymiary powyżej tego poziomu i na poziomie **Lokalizacji** zostaną wybrane automatycznie. (Domyślnie zaznaczone są wszystkie wymiary powyżej poziomu **Lokalizacji**). To zachowanie odzwierciedla logikę, w której wszystkie wymiary w zakresie między numerem partii i lokalizacją są również automatycznie rezerwowane po zarezerwowaniu określonego numeru partii w wierszu zamówienia.
 
@@ -145,7 +145,7 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
 6. Na stronie **rezerwacja partii** wybierz wiersz dla **B11** wsadowego, a następnie wybierz opcję **wiersz rezerwy**. Podczas automatycznej rezerwacji nie ma żadnej wskazanej logiki do przypisywania lokalizacji i numerów identyfikacyjnych. Ilość można wprowadzić ręcznie w polu **rezerwacja**. Zwróć uwagę, że w przypadku skróconej karty **numerów partii przekazanych do wiersza źródłowego**, zestaw **B11** jest wyświetlany jako **Zatwierdzony**.
 
-    ![Zatwierdzanie określonego numeru partii do wiersza zamówienia sprzedaży na stronie rezerwacja partii](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Zatwierdzanie określonego numeru partii do wiersza zamówienia sprzedaży na stronie rezerwacja partii.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Rezerwacja ilości w wierszu zamówienia sprzedaży może zostać wykonana na wielu partiach. Ponadto rezerwacja tej samej partii może zostać wykonana dla wielu lokalizacji i numerów identyfikacyjnych (jeśli są włączone płytki rejestracyjne dla lokalizacji).
@@ -154,7 +154,7 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
 
 7. Przejdź do **Zarządzanie informacjami o produktach** \> **Produkty** \> **Zwolnione produkty**. Wybierz towar, a następnie wybierz pozycję **Zarządzaj zapasami** \> **Widok** \> **Transakcje**.
 
-    ![Rezerwacja zamówiona jako typ transakcji magazynowej](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Rezerwacja zamówiona jako typ transakcji magazynowej.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Umożliwia przejrzenie transakcji magazynowych dotyczących danego towaru, które są powiązane z rezerwacją wiersza zamówienia sprzedaży.
 
@@ -172,7 +172,7 @@ W tym przukładzie trzeba mieć zainstalowane dane demonstracyjne oraz musi być
     - Aby utworzyć pracę, system używa szablonów roboczych, ale nie zawiera dyrektyw lokalizacji. Wszystkie standardowe ustawienia zdefiniowane dla szablonów pracy, takie jak Maksymalna liczba wierszy pobrania lub określony jednostka miary, zostaną zastosowane w celu ustalenia, kiedy należy utworzyć nową pracę. Jednak reguły skojarzone z dyrektywami lokalizacji do identyfikowania lokalizacji pobrania nie są uwzględniane, ponieważ rezerwacja rezerwacji zamówień już określa wszystkie wymiary magazynowe. Te wymiary magazynowe obejmują wymiary na poziomie składowania w magazynie. Dlatego praca dziedziczy te wymiary bez konieczności konsultowania dyrektyw lokalizacji.
     - Numer partii nie jest wyświetlany w wierszu pobrania (podobnie jak w przypadku wiersza pracy utworzonego dla towaru, który ma skojarzoną hierarchię rezerwacji *Partia powyżej\[lokalizacja\]*) zamiast tego numer partii „od” i wszystkie inne wymiary magazynowe są wyświetlane w transakcji magazynowej dla wiersza pracy, do której odwołuje się skojarzone transakcje magazynowe.
 
-        ![Transakcja magazynowa magazynu dla pracy, która pochodzi z rezerwacji zamówienia](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Transakcja magazynowa magazynu dla pracy, która pochodzi z rezerwacji zamówienia.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Po utworzeniu pracy zostanie usunięta transakcja magazynowa towaru, w której pole **odwołania** ma ustawioną rezerwację **Rezerwacja-zamówienie sprzedaży**. Transakcja magazynowa, w której pole **odwołania** ma wartość **praca**, zawiera rezerwę fizyczną dla wszystkich wymiarów magazynowych z ilością.
 
@@ -207,7 +207,7 @@ Zanim będzie można skorzystać z elastycznej rezerwacji numerów rejestracyjny
 
 Aby włączyć rezerwację numeru identyfikacyjnego w zamówieniu, należy zaznaczyć pole wyboru **Zezwalaj na rezerwację na zamówieniach na żądanie** na poziomie **Numeru identyfikacyjnego** na stronie **Hierarchie rezerwacji zapasów** dla hierarchii skojarzonej z odpowiednim towarem.
 
-![Strona hierarchie rezerwacji zapasów dla elastycznej hierarchii rezerwacji numerów identyfikacyjnych](media/Flexible-LP-reservation-hierarchy.png)
+![Strona hierarchie rezerwacji zapasów dla elastycznej hierarchii rezerwacji numerów identyfikacyjnych.](media/Flexible-LP-reservation-hierarchy.png)
 
 W dowolnym momencie wdrożenia można włączyć rezerwację numeru identyfikacyjnego na zamówieniu. Ta zmiana nie wpłynie na rezerwacje ani otwarte prace magazynowe, które zostały utworzone przed zmianą. Nie można jednak wyczyścić pola wyboru **Zezwalaj na rezerwację na żądanie**, jeśli istnieją otwarte transakcje magazynowe wychodzące, które mają status wydania *Na zamówienie*, *Zarezerwowane zamówione* lub *Zarezerwowane fizyczne* dla co najmniej jednego elementu skojarzonego z tą hierarchią rezerwacji.
 
@@ -227,7 +227,7 @@ Jeśli w operacjach magazynowych wiersz zamówienia sprzedaży używa rezerwacji
 
 Jeśli pozycja robocza magazynowego składa się z wierszy, które są równe pełnej palecie i mają nadaną numery identyfikacyjne, można zoptymalizować proces pobierania za pomocą elementu menu urządzenia przenośnego, gdzie opcja **Postępuj według numeru identyfikacyjnego** jest ustawiona na wartość *Tak*. Pracownik magazynu może następnie przeskanować numer identyfikacyjny, aby zakończyć pobranie, zamiast przeskanować towary z pracy jedną o jedną.
 
-![Element menu urządzenia przenośnego, w którym opcja Postępuj według numeru identyfikacyjnego według numeru identyfikacyjnego jest ustawiona na Tak](media/Handle-by-LP-menu-item.png)
+![Element menu urządzenia przenośnego, w którym opcja Postępuj według numeru identyfikacyjnego według numeru identyfikacyjnego jest ustawiona na Tak.](media/Handle-by-LP-menu-item.png)
 
 Ponieważ funkcja **Postępuj według numeru identyfikacyjnego** nie obsługuje pracy, która obejmuje wiele palet, lepiej jest uzyskać oddzielny element pracy dla różnych numerów identyfikacyjnych. Aby zastosować to podejście, należy pole **Identyfikator zamówionego numeru identyfikacyjnego** jako podział nagłówka na stronie **Szablon pracy**.
 
@@ -249,7 +249,7 @@ Ten scenariusz odnosi się do wartości i rekordów, które są zawarte w standa
 1. W polu **Nazwa** wprowadź wartość (na przykład *FlexibleLP*).
 1. W polu **Opis** wprowadź wartość (np. *Elastyczna rezerwacja LP*).
 1. Na liście **Wybrane** wybierz **Numer partii**, **Numer seryjny** i **Właściciel**.
-1. Wybierz przycisk **Usuń** ![Strzałka wstecz](media/backward-button.png), aby przenieść wybrane rekordy na listę **Dostępne**.
+1. Wybierz przycisk **Usuń** ![Strzałka wstecz.](media/backward-button.png), aby przenieść wybrane rekordy na listę **Dostępne**.
 1. Kliknij przycisk **OK**.
 1. W wierszu dla poziomu wymiaru **Numer identyfikacyjny** zaznacz pole wyboru **Zezwalaj na rezerwację na zamówieniu popytu**. Poziom **Lokalizacji** jest wybrany automatycznie i nie można wyczyścić tego pola wyboru.
 1. Wybierz opcję **Zapisz**.

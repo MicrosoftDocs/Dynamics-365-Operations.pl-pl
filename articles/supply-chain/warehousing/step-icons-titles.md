@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049371"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344502"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Przypisanie ikon i tytułów kroków dla aplikacji mobilnej Warehouse Management
 
@@ -25,7 +25,7 @@ W tym temacie opisano sposób przypisywania ikon kroków i tytułów kroków dla
 
 Na ilustracjach pokazano, jak ikony kroku i tytuły kroku pojawiają się w aplikacji mobilnej Warehouse Management.
 
-![Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management](media/step-icon-example.png "Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management")
+![Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management.](media/step-icon-example.png "Przykład ikony kroku i tytułu kroku w aplikacji mobilnej Warehouse Management")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Włączanie funkcji w systemie
 
@@ -350,13 +350,13 @@ Ten przykład wyjaśnia, jak ustawić ikony i tytuły kroków dla niestandardowe
 
 Poniższa ilustracja przedstawia ten przepływ zadań.
 
-![Diagram przepływu zadania](media/step-icons-example-task-flow.png "Diagram przepływu zadania")
+![Diagram przepływu zadania.](media/step-icons-example-task-flow.png "Diagram przepływu zadania")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Utwórz klasę kroku dla strony wejściowej kontenera
 
 Strona wprowadzania danych o pojemniku umożliwia pracownikowi zeskanowanie lub wprowadzenie identyfikatora pojemnika.
 
-![Strona danych wejściowych kontenera](media/step-icons-example-container-input.png "Strona danych wejściowych kontenera")
+![Strona danych wejściowych kontenera.](media/step-icons-example-container-input.png "Strona danych wejściowych kontenera")
 
 Na stronie wprowadzania danych w kontenerze, nazwa kontrolki dla pola wejściowego to `ContainerId`. Ta nazwa formantu nie znajduje się na [liście identyfikatorów kroków](#step-ids-classes), więc nie będzie można odnaleźć istniejącego kroku opartego na tej nazwie. Dlatego musisz utworzyć klasę kroku, która będzie reprezentować krok. Oto przykład.
 
@@ -382,7 +382,7 @@ Aby przypisać ikonę kroku, ustaw jeden z identyfikatorów `defaultStepIcon` na
 
 Strona wprowadzania wagi pozwala pracownikowi na wprowadzenie wagi.
 
-![Strona wprowadzania wagi](media/step-icons-example-weight-input.png "Strona wprowadzania wagi")
+![Strona wprowadzania wagi.](media/step-icons-example-weight-input.png "Strona wprowadzania wagi")
 
 Na stronie wprowadzania wagi nazwa formantu pola wejściowego `Weight` znajduje się na [liście identyfikatorów kroków](#step-ids-classes). Jeśli więc ikona kroku i tytuł zdefiniowane w klasie `WHSMobileAppStepWeight` są dla Ciebie akceptowane, nie musisz nic zmieniać w tym kroku.
 

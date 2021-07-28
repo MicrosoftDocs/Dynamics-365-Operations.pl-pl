@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4afc19ed103f204fec61ab20b88f767ad5f05b38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1af5676511c16d0492a7c3a61b7bf3a88b43758a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792542"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349263"
 ---
 # <a name="run-and-monitor-an-experiment"></a>Uruchamianie i monitorowanie eksperymentu
 
@@ -28,7 +28,7 @@ W tym temacie opisano sposób uruchamiania i monitorowania eksperymentów w apli
 
 Na poniższym diagramie przedstawiono wszystkie kroki związane z konfigurowaniem i przeprowadzaniem eksperymentu na stronie internetowej środowiska handlu elektronicznego w systemie Dynamics 365 Commerce. Dodatkowe kroki są zawarte w odrębnych tematach.
 
-[ ![Proces użytkownika eksperymentu — uruchamianie i monitorowanie](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
+[ ![Proces użytkownika eksperymentu — uruchamianie i monitorowanie.](./media/experimentation_run_monitor.svg) ](./media/experimentation_run_monitor.svg#lightbox)
 
 Po opublikowaniu odmian należy wykonać wszystkie kroki niezbędne do wykonania eksperymentu w Commerce. Następnym krokiem jest określenie, które odmiany mają być pokazywane każdemu użytkownikowi, gdy zażądają strony. Usługa innej firmy wymusza to określenie, ale najpierw należy aktywować eksperyment w usłudze. Ponieważ czynności wykonywane w celu aktywowania eksperymentu różnią się w zależności od usługi, należy wykonać instrukcje dostępne w usłudze lub uzyskane od dostawcy. Jeśli eksperyment nie zostanie aktywowany, użytkownicy będą widzieć wersję domyślną strony (nie będą wyświetlane odmiany).
 

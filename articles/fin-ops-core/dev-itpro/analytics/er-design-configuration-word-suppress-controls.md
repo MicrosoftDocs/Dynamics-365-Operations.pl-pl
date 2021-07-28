@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753610"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348051"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Pomijanie formantów zawartości programu Word w generowanych raportach
 
@@ -63,7 +63,7 @@ Musisz również pobrać i zapisać następujący szablon przykładowego raportu
     > [!NOTE]
     > Powtarzający się formant zawartości jest otagowany przez klucz **SummaryLines**, który pasuje do pola niestandardowej części XML, do której została zmapowana.
 
-    ![Układ szablonu programu Word](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Układ szablonu programu Word.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Zaznaczenie istniejącej konfiguracji raportu ER
 
@@ -98,7 +98,7 @@ Obecnie plik SampleVendPaymDocReportBounded.docx jest używany jako szablon do g
 7. Kliknij przycisk **OK**.
 8. W oknie dialogowym **Parametry raportu elektronicznego** wybierz przycisk **OK** i analizuj wygenerowane dane wyjściowe.
 
-    ![Płatności do przetwarzania na stronie Płatności dostawcy](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Płatności do przetwarzania na stronie Płatności dostawcy.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Wynik jest prezentowany w formacie programu Word i zawiera sekcję podsumowania.
 
@@ -149,7 +149,7 @@ Jeśli chcesz pominąć sekcję podsumowania w wygenerowanym dokumencie, na pods
 
 9. Wybierz **Zapisz**, by zapisać zmiany w formacie do edycji.
 
-    ![Wygenerowane dane wyjściowe w formacie programu Word](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![Wygenerowane dane wyjściowe w formacie programu Word.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Uruchomienie zmodyfikowanego formatu w celu utworzenia danych wyjściowych programu Word
 
@@ -163,7 +163,7 @@ Jeśli chcesz pominąć sekcję podsumowania w wygenerowanym dokumencie, na pods
 8. W oknie dialogowym **Parametry raportu elektronicznego** w polu **Pomiń podsumowanie** wybierz opcję **Tak**.
 9. Wybierz przycisk **OK** i przeanalizuj wygenerowane dane wyjściowe.
 
-    ![Wygenerowane dane wyjściowe w formacie programu Word](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Wygenerowane dane wyjściowe w formacie programu Word.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Zauważ, że dane wyjściowe nie zawierają sekcji podsumowania, ponieważ została pominięta.
 

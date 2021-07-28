@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344551"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO z wartością fizyczną i oznaczeniami
 
@@ -53,7 +53,7 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 
 Nowa średnia krocząca kosztu własnego odzwierciedla średnią dla finansowo zaktualizowanych transakcji wynoszącą 15,00 zł. Poniższa ilustracja pokazuje efekt użycia modelu zapasów LIFO do tej serii transakcji, gdy nie jest używana opcja **Włącz wartość fizyczną**. 
 
-![Model LIFO bez uwzględniania wartości fizycznej](./media/lifowithoutincludephysicalvalue.gif) 
+![Model LIFO bez uwzględniania wartości fizycznej.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -89,7 +89,7 @@ Transakcja 6a zostanie skorygowana względem transakcji przyjęcia 4b. System ni
 
 Poniższa ilustracja pokazuje efekty modelu magazynu LIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. 
 
-![Model LIFO z uwzględnianiem wartości fizycznej](./media/lifowithincludephysicalvalue.gif) 
+![Model LIFO z uwzględnianiem wartości fizycznej.](./media/lifowithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -133,9 +133,9 @@ Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z 
 
 Poniższa ilustracja pokazuje wpływ modelu magazynowego LIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. 
 
-![Model LIFO z oznaczaniem](./media/lifowithmarking.gif) 
+![Model LIFO z oznaczaniem.](./media/lifowithmarking.gif) 
 
-**Objaśnienia do wykresu**
+**Objaśnienie wykresu**
 
 - Transakcje magazynowe zostały przedstawione w postaci strzałek pionowych.
 - Przychody magazynowe zostały przedstawione w postaci strzałek pionowych nad osią czasu.

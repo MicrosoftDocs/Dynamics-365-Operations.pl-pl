@@ -14,12 +14,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 86f475cc0b78c620309301516b6c3b525b640637
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 25464c89352f44a77a96dee6ad2f633b7a55669e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791564"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350287"
 ---
 # <a name="opt-out-of-web-activity-event-collection"></a>Rezygnacja ze zbierania zdarzeń działania sieci Web
 [!include [banner](includes/banner.md)]
@@ -40,7 +40,7 @@ W przypadku zarządzania kontami w module Commerce Headquarters administratorzy 
 1. W kliencie HQ na stronie **Wszyscy odbiorcy** wyszukaj i wybierz odbiorcę.
 1. Na stronie szczegółów odbiorcy na skróconej karcie **Retail** sekcji **Prywatność** ustaw opcję **Nie śledź aktywności internetowej** na wartość **Tak**.
 
-    ![Ustawienia prywatności](media/Disablepersonalizationpart2.png)
+    ![Ustawienia prywatności.](media/Disablepersonalizationpart2.png)
 
 1. Wybierz przycisk **Zapisz** i zamknij stronę.
 

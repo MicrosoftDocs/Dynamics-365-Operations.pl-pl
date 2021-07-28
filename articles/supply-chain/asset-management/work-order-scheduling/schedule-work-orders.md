@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347123"
 ---
 # <a name="schedule-work-orders"></a>Zaplanuj zlecenia pracy
 
@@ -56,7 +56,7 @@ Można planować tylko w przypadku zleceń pracy o stanie cyklu życia, który u
 
 *Przykład:* na poniższym rysunku formuła wstawiona w **Oczekiwane rozpoczęcie** będzie generować Planowanie zleceń pracy dla wszystkich zleceń pracy z oczekiwaną datą rozpoczęcia w tygodniu od teraz do później. Ta formuła może być przydatna w przypadku regularnego uruchamiania planowania zlecenia pracy, ale należy się upewnić, że zlecenia pracy zaplanowane na następne 5-6 dni nie zostaną ponownie zaplanowane.
 
-![Rysunek 1](media/03-work-order-scheduling.png)
+![Rysunek 1.](media/03-work-order-scheduling.png)
 
 Typ zlecenia pracy powiązanego ze zleceniami pracy może skonfigurować planowanie dla jednego konserwatora (**Zarządzanie składnikami majątku** > **Ustawienia** > **Zlecenia pracy** > **Typy zleceń pracy** > **Jeden konserwator** przycisk przełączania jest ustawiony na wartość „tak”). Oznacza to, że jeśli typ zlecenia pracy jest używany w zleceniu pracy przycisk przełączania **Jeden konserwator** jest automatycznie ustawiany na wartość „tak” na stronie szczegółowej **wszystkie zlecenia pracy** > w widoku **Nagłowek** > skrócona kart **Zaplanuj**. Podczas planowania zleceń pracy wszystkie zadania zlecenia pracy utworzone w zleceniu pracy będą następnie planowane dla tego samego konserwatora. W razie potrzeby można edytować zaznaczenie na przycisku przełączania **Jeden konserwator** w **Wszystkie zlecenia pracy**, aby umożliwić planowanie kilku pracowników lub jednego pracownika w zadaniach zlecenia.
 

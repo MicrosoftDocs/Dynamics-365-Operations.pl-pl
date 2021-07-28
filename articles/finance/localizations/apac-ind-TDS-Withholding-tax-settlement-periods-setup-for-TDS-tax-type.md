@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 9430bc1386f127d02b598d6cad1b53f66e0cf2ba
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 12ba639ccf670997d4f16325172aa351732a5722
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023495"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348916"
 ---
 # <a name="set-up-withholding-tax-settlement-periods-for-the-tds-tax-type"></a>Ustaw okresy rozliczenia podatku u źródła dla typu podatku TDS
 
@@ -31,7 +31,7 @@ W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów 
 
 1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Potrącona zaliczka na podatek \> Okresy rozliczenia podatku u źródła**.
 
-    [![Strona Okresy rozliczenia podatku u źródła](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
+    [![Strona Okresy rozliczenia podatku u źródła.](./media/apac-ind-TDS-13.png)](./media/apac-ind-TDS-13.png)
 
 2. W polu **Typ podatku** wybierz **TDS**, aby ustawić okresy rozliczenia podatku u źródła dla typu podatku potrącanego u źródła.
 3. Wybierz **Nowy**, aby utworzyć wiersz.
@@ -47,6 +47,6 @@ W tym temacie wyjaśniono, jak skonfigurować okresy rozliczeniowe dla okresów 
     > [!NOTE]
     > Aby uruchomić okresowy proces rozliczania TDS, przejdź do **Księga główna \> Okresowe \> Potrącona zaliczka na podatek \> Płatność zaliczki na podatek**.
 
-    [![Strona płatności potrąconej zaliczki na podatek](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
+    [![Strona płatności potrąconej zaliczki na podatek.](./media/apac-ind-TDS-15.png)](./media/apac-ind-TDS-15.png)
 
 12. Zamknij stronę.

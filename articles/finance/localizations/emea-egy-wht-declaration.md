@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022818"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349880"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Deklaracja potrąconej zaliczki na podatek dla Egiptu (EG-00005)
 
@@ -103,7 +103,7 @@ Aby wygenerować raporty formularza deklaracji WHT w formacie Microsoft Excel, z
 2. Na karcie **Potrącona zaliczka** na podatek w polu **Mapowanie formatu deklaracji WHT** wybierz pozycję **Deklaracja WHT Excel (EG)**. Jeśli pole to jest puste, standardowy raport podatku zostanie wygenerowany w formacie SSRS.
 
 
-![Formularz deklaracji](media/egypt-wht-declaration-setup1.png)
+![Formularz deklaracji.](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Generowanie formularzy deklaracji potrąconej zaliczki na podatek
 Proces przygotowywania i przesyłania formularza deklaracji potrąconej zaliczki na podatek dla określonego okresu jest oparty na transakcjach potrącenia zaliczki na podatek zaksięgowanych podczas zadania rozliczania i księgowania podatku od płatności. Aby uzyskać więcej informacji na temat globalnej potrąconej zaliczki na podatek, zobacz [Globalna potrącona zaliczka na podatek](../general-ledger/global-withholding-tax-overview.md).

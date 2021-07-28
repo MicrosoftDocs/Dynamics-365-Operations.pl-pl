@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 014684595c7cd65383dc12d9eec2dd8ea7b8c20f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 872f4cfd968b70cb8a2087822870dcc76e83e92b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186745"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349017"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Ocenianie modelu początkowych prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -33,32 +33,32 @@ W tym temacie wyjaśniono, jak oceniać model przewidywania po włączeniu modu�
 
 W systemie Microsoft Dynamics 365 Finance na stronie **Parametry Finance Insights** obok wyniku dokładności jest wyświetlane łącze **Zwiększ dokładność modelu**.
 
-[![Łącze Zwiększ dokładność modelu](./media/prediction-model.png)](./media/prediction-model.png)
+[![Łącze Zwiększ dokładność modelu.](./media/prediction-model.png)](./media/prediction-model.png)
 
 To łącze prowadzi do aplikacji AI Builder, gdzie można uzyskać więcej informacji na temat bieżącego modelu, a także podejmować kroki w celu jego ulepszenia. Poniższa ilustracja przedstawia stronę, która zostanie otwarta.
 
-[![AI Builder](./media/what-to-predict.png)](./media/what-to-predict.png)
+[![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 Na stronie, która zostanie otwarta, znajdują się następujące informacje:
 
 - W sekcji **Wydajność** ocena punktowa wydajności modelu daje perspektywę jakość modelu. Aby uzyskać więcej informacji o tej ocenie punktowej, zapoznaj się z tematem [Wydajność modelu przewidywania](/ai-builder/prediction-performance) w dokumentacji aplikacji AI Builder.
 - Sekcja **Dane o największym wpływie** pokazuje, jak ważne są różne typy danych wejściowych dla modelu. Można ocenić zawartość tej listy i towarzyszące wartości procentowe w celu określenia, czy informacje są zgodne z Twoją wiedzą o firmie o rynku.
 
-    [![Sekcje Wydajność i Dane o największym wpływie w modelu przewidywania](./media/models.png)](./media/models.png)
+    [![Sekcje Wydajność i Dane o największym wpływie w modelu przewidywania.](./media/models.png)](./media/models.png)
 
 - W sekcji **Wydajność** wybierz opcję **Zobacz szczegóły**, aby dowiedzieć się więcej o ocenie punktowej i innych zagadnieniach. Na poniższej ilustracji szczegóły pokazują, że model używa mniej informacji, niż jest to zalecane. W związku z tym system wygenerował komunikat ostrzegawczy.
 
-    [![Ostrzeżenia dotyczące wydajności modelu](./media/details.png)](./media/details.png)
+    [![Ostrzeżenia dotyczące wydajności modelu.](./media/details.png)](./media/details.png)
 
 ## <a name="digging-deeper"></a>Zagłębianie się
 
 Chociaż dokładność jest dobrym punktem wyjściowym w ocenie modelu, a ocena punktowa wydajności daje perspektywę, aplikacja AI Builder dostarcza bardziej szczegółowe wskaźniki, które będzie można wykorzystać podczas oceny. Aby pobrać szczegóły, w sekcji **Wydajność** kliknij przycisk wielokropka (**...**) widoczny obok przycisku **Użyj modelu**, a następnie wybierz opcję **Pobierz szczegółowe metryki**.
 
-[![Polecenie Pobierz szczegółowe metryki](./media/performance.png)](./media/performance.png)
+[![Polecenie Pobierz szczegółowe metryki.](./media/performance.png)](./media/performance.png)
 
 Na poniższej ilustracji przedstawiono format, w którym można pobrać dane.
 
-[![Format pobieranych danych](./media/data-format.png)](./media/data-format.png)
+[![Format pobieranych danych.](./media/data-format.png)](./media/data-format.png)
 
 Aby dokonać głębszej analizy wyników, dobrym punktem wyjściowym jest zapoznanie się z metryką „Matryca pomyłek”. Na przykład oto dane wyświetlane dla tej metryki na poprzedniej ilustracji.
 

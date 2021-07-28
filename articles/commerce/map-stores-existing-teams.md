@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ccc2cbf11e405facf310d93e5458cfe12a43146d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c75525749d9015387cc112beda104238a93698e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346699"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Mapowanie sklepów i zespołów w przypadku, gdy istnieją już inne zespoły w usłudze Microsoft Teams
 
@@ -57,7 +57,7 @@ Aby zmapować sklepy i odpowiadające im zespoły w centrali Commerce, wykonaj n
 
 Poniższy przykładowy obraz przedstawia grupę **Mapowanie zespołów eksportu** w aplikacji Commerce z wyróżnionymi elementami **Dodaj jednostkę** i nagłówkami wyeksportowanych plików CSV.
 
-![Eksportuj zespoły mapujące grupę w Commerce z dodanymi elementami encji i wyróżnionymi nagłówkami wyeksportowanych plików CSV](media/d365-commerce-data-mgmt-export-entity.png)
+![Eksportuj zespoły mapujące grupę w Commerce z dodanymi elementami encji i wyróżnionymi nagłówkami wyeksportowanych plików CSV.](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > Aby zsynchronizować zarządzanie zadaniami, po ukończeniu tych działań wykonaj kroki opisane w teksie [Synchronizuj zarządzanie zadaniami między Microsoft Teams i POS](synchronize-tasks-teams-pos.md). 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794170"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352235"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -46,7 +46,7 @@ Grupa cenowa jako obiekt składa z nazwy, opisu i (opcjonalnie) priorytetu cen. 
 
 Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustracji zwróć uwagę, że „Grupa cenowa” jest dosłownie w centrum zarządzania cenami i rabatami. Jednostki handlu, których można używać do zarządzania zróżnicowanymi cenami i rabatami, znajdują się po lewej stronie, a rekordy faktycznych cen i rabatów znajdują się po prawej stronie.
 
-![Grupy cenowe](./media/PriceGroups.png "Grupy cenowe")
+![Grupy cenowe.](./media/PriceGroups.png "Grupy cenowe")
 
 Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów jednostek handlu. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355635"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Korzystanie z prognoz płatności odbiorcy (wersja zapoznawcza)
 
@@ -38,13 +38,13 @@ Obszar roboczy **Zarządzanie kredytami i windykacjami odbiorców** zawiera dwa 
 - Kafelek **Prognozowanie płatności za poszczególne transakcje** pokazuje liczbę otwartych transakcji z odbiorcami, które w przedziale **Na czas** mają prawdopodobieństwo zapłaty niższe niż 50 procent. Można wybrać ten kafelek, aby otworzyć stronę listy **Prognozy płatności za poszczególne transakcje**.
 - Kafelek **Odbiorcy z przewidywanymi wysokimi saldami opóźnionymi** pokazuje liczbę odbiorców, dla których przewiduje się, że ponad połowa (50 procent) salda zostanie zapłacone z opóźnieniem i/lub dużym opóźnieniem. Można wybrać ten kafelek, aby otworzyć stronę listy **Prognozowanie płatności od poszczególnych odbiorców**.
 
-[![Obszar roboczy Zarządzanie kredytami i windykacjami odbiorców](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Obszar roboczy Zarządzanie kredytami i windykacjami odbiorców.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Strona listy Prognozy płatności za poszczególne transakcje
 
 Na stronie listy **Prognozy płatności za poszczególne transakcje** można wyświetlić prawdopodobieństwo płatności dla otwartych transakcji w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Dla każdej transakcji w siatce kolumna **Prawdopodobieństwo zapłaty na czas** pokazuje prawdopodobieństwo, że faktura zostanie zapłacona nie później niż w wyznaczonym terminie. Jeśli prawdopodobieństwo zapłaty na czas jest mniejsze niż 50 procent, obok wartości procentowej w kolumnie **Prawdopodobieństwo zapłaty na czas** pojawi się czerwone kółko, które wskazuje na ryzyko opóźnienia płatności.
 
-[![Strona Prognozowanie płatności za poszczególne transakcje](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Strona Prognozowanie płatności za poszczególne transakcje.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 W okienku **Informacje pokrewne** przy prawej krawędzi strony znajdują się bardziej szczegółowe informacje dotyczące prognoz:
 
@@ -54,13 +54,13 @@ W okienku **Informacje pokrewne** przy prawej krawędzi strony znajdują się ba
 
 Dane znajdujące się w sekcji **Najważniejsze czynniki** oraz na skróconych kartach **Wgląd w odbiorcę** i **Historia odbiorcy** pomagają objaśniać prognozy płatności. W ten sposób zwiększają zaufanie do trafności prognoz.
 
-[![Graficzne wskaźniki prognoz płatności w okienku Informacje pokrewne](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Graficzne wskaźniki prognoz płatności w okienku Informacje pokrewne.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Strona listy Prognozowanie płatności od poszczególnych odbiorców
 
 Strona listy **Prognozowanie płatności od poszczególnych odbiorców** pokazuje łączne otwarte saldo oraz kwotę przewidywaną do zapłaty w przedziałach **Na czas**, **Opóźnione** i **Bardzo opóźnione**.
 
-[![Strona Prognozowanie płatności od poszczególnych odbiorców](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Strona Prognozowanie płatności od poszczególnych odbiorców.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Kwota płatności w każdym przedziale jest obliczana jako suma średniej ważonej salda transakcji. Kwota ta jest obliczana na podstawie prawdopodobieństwa zapłaty w każdym przedziale.
 
@@ -92,11 +92,11 @@ Dane znajdujące się w sekcji **Najważniejsze czynniki** oraz na skróconych k
 
 Aby wyświetlić dokładność prognoz płatności, należy wybrać kolejno opcje **Kredyty i windykacje \> Ustawienia \> Finance Insights \> Parametry Finance Insights**. Na karcie **Wgląd w płatności od odbiorców** w sekcji **Model przewidywania** jest wyświetlana procentowa dokładność modelu przewidywania.
 
-[![Dokładności prognoz płatności](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Dokładności prognoz płatności.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Jeśli dokładność nie jest zadowalająca, wybierz łącze **Zwiększ dokładność modelu**, aby otworzyć środowisko rozszerzenia AI Builder. W środowisku rozszerzenia AI Builder można zaznaczać i anulować zaznaczenie pól do momentu, aż wybierzesz pola, które uznasz za najistotniejsze dla dokładnego przewidywania prawdopodobieństwa zapłaty. Po zakończeniu można łatwo ponownie wytrenować model przewidywania i opublikować zmiany. Nowo wytrenowany model przewidywania będzie automatycznie wybierany na potrzeby prognozowania w rozwiązaniu Dynamics 365 Finance.
 
-[![Środowisko rozszerzenia AI Builder](./media/ai-builder.png)](./media/ai-builder.png)
+[![Środowisko rozszerzenia AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Szczegóły zwolnienia
 

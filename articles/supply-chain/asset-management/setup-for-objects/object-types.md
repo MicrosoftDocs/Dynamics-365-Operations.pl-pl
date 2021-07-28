@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825717"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347171"
 ---
 # <a name="asset-types"></a>Typy składników majątku
 
@@ -45,9 +45,9 @@ Najpierw należy skonfigurować wymagane typy składników majątku. Następnie 
 7. Wybierz opcję **Zapisz**.
 8. Na skróconej karcie **typy zadań konserwacji** wybierz typy zadań konserwacji, które powinny być powiązane z typem składnika majątku:
 
-    - Aby wybrać typ zadania konserwacji, zaznacz go w polu **Pozostałe typy zadań konserwacji**, a następnie wybierz przycisk strzałki w prawo ![Przycisk strzałki w prawo](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań konserwacji**.
-    - Aby wybrać wszystkie dostępne typy zadań konserwacji, wybierz ![przycisk strzałki do przodu](media/30-setup-for-objects.png). Wszystkie typy zadań konserwacji są przenoszone z pola **Pozostałe typy zadań konserwacji** do pola **Wybrane typy zadań konserwacji**.
-    - Aby anulować wybór typu zadania konserwacyjnego, wybierz je w polu **Wybrane typy zadań konserwacyjnych**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo](media/31-setup-for-objects.png), aby przenieść je do pola **Pozostałe typy zadań konserwacyjnych**.
+    - Aby wybrać typ zadania konserwacji, zaznacz go w polu **Pozostałe typy zadań konserwacji**, a następnie wybierz przycisk strzałki w prawo ![Przycisk strzałki w prawo.](media/29-setup-for-objects.png), aby przenieść go do sekcji **Wybrane typy zadań konserwacji**.
+    - Aby wybrać wszystkie dostępne typy zadań konserwacji, wybierz ![przycisk strzałki do przodu.](media/30-setup-for-objects.png) . Wszystkie typy zadań konserwacji są przenoszone z pola **Pozostałe typy zadań konserwacji** do pola **Wybrane typy zadań konserwacji**.
+    - Aby usunąć wybór typu zadania konserwacji, zaznacz go w polu **Wybrane typy zadań konserwacji**, a następnie wybierz przycisk strzałki w lewo ![Przycisk strzałki w lewo.](media/31-setup-for-objects.png), aby przenieść go do pola **Pozostałe typy zadań konserwacji**.
 
 9. Można również wybrać liczniki składnika majątku, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Liczniki** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Aby uzyskać więcej informacji o konfiguracji liczników, zobacz temat [Liczniki](counters.md).
 10. Można również wybrać typy atrybutów, które powinny być powiązane z typem składnika majątku. Na karcie skróconej **Typy atrybutów** dokonaj wyborów przy użyciu metod, które są opisane dla typów zadań konserwacyjnych w kroku 8. Następnie, aby utworzyć preferowaną sekwencję typów atrybutów, wybierz typ atrybutu w polu **Wybrane typy atrybutów** i użyj strzałek w górę i w dół, aby je przenieść. Sekwencja typów atrybutów będzie wyświetlana w składnikach majątku, które używają tego typu składnika majątku. Aby uzyskać więcej informacji o atrybutach składników majątku, zobacz temat [Typy atrybutów konserwacji](../setup-for-functional-locations/specification-types.md).

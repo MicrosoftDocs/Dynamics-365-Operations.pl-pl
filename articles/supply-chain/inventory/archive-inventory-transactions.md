@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 8b61e65d3a641a1e3d73192853c832d57ed17401
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 23da08f982639c9ba0ef847990979f73b96cac22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021278"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345531"
 ---
 # <a name="archive-inventory-transactions"></a>Archiwizuj transakcje magazynowe
 
@@ -64,7 +64,7 @@ Aby zarchiwizować transakcje magazynowe, wykonaj następujące kroki.
 
     Zostanie wyświetlona strona **Archiwum transakcji magazynowych** z listą zarchiwizowanego rekordu procesu.
 
-    ![Strona Archiwum transakcji magazynowych](media/archive-inventory-empty.png "Strona Archiwum transakcji magazynowych")
+    ![Strona Archiwum transakcji magazynowych.](media/archive-inventory-empty.png "Strona Archiwum transakcji magazynowych")
 
 1. W okienku akcji wybierz opcję **Archiwum transakcji magazynowych**, aby utworzyć archiwum transakcji magazynowych.
 1. W oknie dialogowym **Archiwum transakcji magazynowych** na skróconej karcie **Parametry** ustaw następujące pola:
@@ -72,7 +72,7 @@ Aby zarchiwizować transakcje magazynowe, wykonaj następujące kroki.
     - **Od dnia w zamkniętym okresie księgi** — umożliwia wybór najwcześniejszej daty transakcji do archiwizacji.
     - **Do dnia w zamkniętym okresie księgi** — umożliwia wybór najpóźniejszej daty transakcji do archiwizacji.
 
-    ![Okno dialogowe Archiwum transakcji magazynowych](media/archive-inventory-dates.png "Okno dialogowe Archiwum transakcji magazynowych")
+    ![Okno dialogowe Archiwum transakcji magazynowych.](media/archive-inventory-dates.png "Okno dialogowe Archiwum transakcji magazynowych")
 
     > [!NOTE]
     > Do wyboru będą dostępne tylko okresy spełniające [wymagania wstępne](#prerequisites).
@@ -87,7 +87,7 @@ Aby zarchiwizować transakcje magazynowe, wykonaj następujące kroki.
 
 Strona **Archiwum transakcji magazynowych** pokazuje pełną historię archiwizacji. Każdy wiersz w siatce zawiera informacje, takie jak data utworzenia archiwum, użytkownik, który je utworzył, oraz jego stan.
 
-![Archiwizacja historii na stronie archiwum transakcji magazynowych](media/archive-inventory-full.png "Archiwizacja historii na stronie archiwum transakcji magazynowych")
+![Archiwizacja historii na stronie archiwum transakcji magazynowych.](media/archive-inventory-full.png "Archiwizacja historii na stronie archiwum transakcji magazynowych")
 
 Z listy rozwijanej w górnej części strony wybierz jedną z następujących wartości, aby przefiltrować archiwa pokazywane w siatce:
 
@@ -109,7 +109,7 @@ Pasek narzędzi nad siatką zawiera następujące przyciski, których można uż
 
 - **Zarchiwizowane transakcje** – Umożliwia wyświetlenie wszystkich szczegółów wybranego archiwum. Na stronie **Zarchiwizowane transakcje** wyświetlane są wszystkie transakcje z archiwum.
 
-    ![Strona zarchiwizowanej transakcji](media/archive-inventory-transactions.png "Strona zarchiwizowanej transakcji")
+    ![Strona zarchiwizowanej transakcji.](media/archive-inventory-transactions.png "Strona zarchiwizowanej transakcji")
 
     Aby wyświetlić więcej informacji o określonej transakcji na stronie **Zarchiwizowane transakcje**, zaznacz ją w siatce, a następnie w okienku akcji wybierz opcję **Szczegóły zarchiwizowanej transakcji**. Na stronie **Szczegółów zarchiwizowanych transakcji** są wyświetlane informacje, takie jak księgowanie w księdze, powiązane odwołania do księgi podrzędnej i wymiary finansowe.
 

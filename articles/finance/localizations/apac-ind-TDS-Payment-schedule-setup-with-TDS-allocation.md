@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 47551f52f35fec5ae49d696e3f4027b7d2eb2e19
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 27f6750dd91a211ad12a1bd5d9c4ab9a2e1e4a79
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023516"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358417"
 ---
 # <a name="set-up-payment-schedules-with-tds-allocation"></a>Konfigurowanie harmonogramów płatności z alokacją podatku TDS
 
@@ -31,7 +31,7 @@ W tym temacie wyjaśniono, jak skonfigurować harmonogramy płatności z alokacj
 
 1. Wybierz kolejno opcje **Rozrachunki z dostawcami \> Ustawienia płatności \> Harmonogramy płatności**.
 
-    [![Strona Harmonogramy płatności](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
+    [![Strona Harmonogramy płatności.](./media/apac-ind-TDS-27.png)](./media/apac-ind-TDS-27.png)
 
 2. Wybierz **Nowy** na okienku akcji, aby utworzyć harmonogram opłat za płatność i wprowadź wymagane szczegóły.
 3. W polu **Alokacja** wybierz metodę alokacji płatności dla harmonogramu płatności:

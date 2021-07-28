@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838868"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350079"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Chronologicznie numerowanie dokumentów i załączników
 
@@ -69,7 +69,7 @@ Aby zdefiniować sekwencje numerów, przejdź do **Administrowanie organizacją*
 
 Określ firmę dla każdej sekwencji numerów. Segmenty ciągów liczbowych należy zdefiniować w taki sposób, aby zapewniały chronologiczną kolejność okresów. Na przykład nazwy segmentów mogą zawierać specjalny przedrostek identyfikujący określony okres.
 
-![Ustawienia sekwencji numerów](media/chrono-num-sequence.jpg)
+![Ustawienia sekwencji numerów.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Konfigurowanie sekwencji identyfikatorów grup
 
@@ -77,7 +77,7 @@ Aby skonfigurować grupy sekwencji numerów, przejdź do **Rozrachunki z odbiorc
 
 Dla każdej grupy w sekcji **Odwołanie** wybierz jedno z obsługiwanych odwołań do dokumentów, a w polu **Kod sekwencji numerów** odwołaj się do sekwencji numerów utworzonej wcześniej dla powiązanego okresu.
 
-![Ustawienia grupy sekwencji numerów](media/chrono-num-sequence-group.jpg)
+![Ustawienia grupy sekwencji numerów.](media/chrono-num-sequence-group.jpg)
 
 Podobnie skonfiguruj grupy sekwencji numerów w modułach **Rozrachunki z dostawcami** oraz **Zarządzanie projektami i ich księgowanie**.
 
@@ -85,7 +85,7 @@ Podobnie skonfiguruj grupy sekwencji numerów w modułach **Rozrachunki z dostaw
 
 Aby skonfigurować chronologicznie grupy sekwencji numerów, przejdź do **Administrowanie organizacją** > **Numery kolejne** > **Chronologiczne grupy sekwencji liczb**. Zdefiniuj warunki możliwości zastosowania dla grup sekwencji numerów.
 
-![Ustawienia numerów chronologicznych](media/chrono-num-sequence-group-period.jpg)
+![Ustawienia numerów chronologicznych.](media/chrono-num-sequence-group-period.jpg)
 
 | Pole            | opis                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -98,7 +98,7 @@ Aby skonfigurować chronologicznie grupy sekwencji numerów, przejdź do **Admin
 ## <a name="document-posting"></a>Księgowanie dokumentów
 Podczas księgowania dokumentu odpowiednia grupa numerów jest przypisywana do dokumentu na podstawie daty księgowania dokumentu, a następnie używana do generowania numeru dokumentu na podstawie wykrytej sekwencji numerów. System wyświetla komunikat dotyczący przypisania grup sekwencji numerów.
 
-![Numer dokumentu](media/chrono-num-sequence-fti.jpg)
+![Numer dokumentu.](media/chrono-num-sequence-fti.jpg)
 
 > [!NOTE]
 > W niektórych krajach zaimplementowano już określoną logikę numeracji dokumentów. W tym przypadku logika specyficzna dla kraju zastąpi funkcję **Numerowania chronologicznego**.

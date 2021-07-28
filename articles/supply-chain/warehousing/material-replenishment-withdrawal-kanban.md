@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189951"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356934"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Uzupełnianie zapasów za pomocą kart Kanban wypłat
 
@@ -35,7 +35,7 @@ Zadanie Kanban wycofania może służyć do przenoszenia jednego towaru w system
 
 Następujący scenariusz przedstawia system uzupełniania zapasów wykorzystujący mechanizm ssania, gdzie sygnał ssania inicjuje tworzenie zadania Kanban w celu uzupełnienia materiałów procesu produkcyjnego. 
 
-[![Sygnał ssania inicjuje tworzenie zadania Kanban w celu uzupełnienia materiałów procesu produkcyjnego](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Sygnał ssania inicjuje tworzenie zadania Kanban w celu uzupełnienia materiałów procesu produkcyjnego.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Kanban wycofania
 2.  Lokalizacja źródłowa zadania Kanban i lokalizacja odłożenia dla pracy magazynowej
@@ -72,7 +72,7 @@ Jeśli odległość między lokalizacjami w magazynie a lokalizacją wejściową
 
 W poniższym scenariuszu działanie przeniesienia w zadaniu Kanban wycofania jest skonfigurowane w taki sposób, aby przeniesienie następowało między dwoma lokalizacjami w tym samym magazynie. Działanie przeniesienia w zadaniu Kanban wycofania jest skonfigurowane tak, aby było wykonywane automatycznie. 
 
-[![Działanie przeniesienia jest wykonywane automatycznie w trakcie przetwarzania pracy pobrania w zadaniu Kanban](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Działanie przeniesienia jest wykonywane automatycznie w trakcie przetwarzania pracy pobrania w zadaniu Kanban.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Wspólny magazyn surowców i produkcji
 2.  Lokalizacje w magazynie dla surowców

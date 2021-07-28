@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349705"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Włączanie i konfigurowanie opłat automatycznych według kanałów
 
@@ -66,7 +66,7 @@ Aby przypisać hierarchię domyślną do celu hierarchii organizacyjnej w module
 1. W okienku akcji wybierz opcję **Uruchom teraz**.
 1. Powtórz dwa poprzednie kroki, aby uruchomić zadania **1070** (**konfiguracja kanału**) i **1110** (**konfiguracja globalna**).
 
-![Konfiguracja celu hierarchii automatycznej opłaty w organizacji sieci sprzedaży](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfiguracja celu hierarchii automatycznej opłaty w organizacji sieci sprzedaży.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definiuj opłaty automatyczne według kanałów
 
@@ -86,7 +86,7 @@ Aby zdefiniować automatyczne opłaty według kanału w module Commerce, należy
 1. W okienku akcji wybierz opcję **Uruchom teraz**.
 1. Powtórz dwa poprzednie kroki, aby uruchomić zadania **1070** (**konfiguracja kanału**) i **1110** (**konfiguracja globalna**).
     
-![Zdefiniowane opłaty automatyczne według kanałów](media/Auto-charges-line-charge-by-channel.png)
+![Zdefiniowane opłaty automatyczne według kanałów.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Przykładowy scenariusz
 
@@ -94,7 +94,7 @@ W poniższym przykładzie przedstawiono kroki wymagane do skonfigurowania produk
 
 W organizacji definiowany jest kod opłat o nazwie **RECYKLING**, co pokazano na poniższej ilustracji.
 
-![Kod opłat za RECYKLING](media/Auto-charges-charge-code.png)
+![Kod opłat za RECYKLING.](media/Auto-charges-charge-code.png)
 
 Automatyczna opłata jest utworzona na poziomie wiersza. Ma następujące ustawienia:
 
@@ -112,13 +112,13 @@ Utworzono wiersz opłat automatycznych. Ma następujące ustawienia:
 - W polu **Kategoria** jest ustawiona wartość **Ustawiona**.
 - Pole **Opłaty** ma ustawioną wartość **$6.25**.
 
-![Konfiguracja automatycznej opłaty na poziomie wiersza i wiersza opłat automatycznych](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfiguracja automatycznej opłaty na poziomie wiersza i wiersza opłat automatycznych.](media/Auto-charges-recyclingfee-line-fee.png)
 
 W aplikacji POS zamówienie sprzedaży jest tworzone w kanale sklepu **San Francisco**. Wiersz **Opłat** zawiera opłatę za recykling **$6,25**.
 
 Po wybraniu **Opcje transakcji \> Opłaty \> Zarządzaj opłatami** w aplikacji punktu sprzedaży, można wyświetlić kod opłat i opis opłaty za recykling.
 
-![Opłata za recykling w aplikacji punktu sprzedaży](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Opłata za recykling w aplikacji punktu sprzedaży.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
