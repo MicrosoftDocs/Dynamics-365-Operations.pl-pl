@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 2f7ad4f53917bb607afe84a2c457518c3f8f7a08
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7a9507cd7f2a1612ab4063d6307b72d8522619ba
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349431"
 ---
 # <a name="recall-order-operation-in-pos"></a>Odwołanie operacji zamówienia w punkcie sprzedaży
 
@@ -29,7 +29,7 @@ Aby włączyć tę funkcję, należy włączyć opcję **Ulepszona operacja odwo
 
 Konfiguracja przycisku operacji **Odwołanie zamówienia** pozwala organizacjom na wdrożenie operacji na wstępnie zdefiniowanym ekranie.
 
-![Konfiguracja siatki przycisków](media/recallorderbuttongrid.png)
+![Konfiguracja siatki przycisków.](media/recallorderbuttongrid.png)
 
 Opcje wyświetlania opisano poniżej.
 - **Brak** — ta opcja powoduje wdrożenie operacji bez określonego ekranu. Gdy użytkownik otworzy operację z tą konfiguracją, zostanie wyświetlony monit o wyszukanie i znalezienie zamówień lub wybrania wstępnie zdefiniowanego filtru zamówień.
@@ -42,11 +42,11 @@ W przypadku uruchamiania operacji **Odwołanie zamówienia** z punktu sprzedaży
 - Wybierz ikonę **Wyszukaj zamówienia** lub **Wyszukaj i filtruj** na AppBar, aby zastosować mechanizm filtrowania do lokalizowania zamówień spełniających kryteria filtru.
 - Umożliwia wybranie wstępnie zdefiniowanego filtru z menu rozwijanego **Pokaż zamówienia** (zamówienia do zrealizowania, zamówienia do odbioru lub zamówienia do wysłania).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 Po zastosowaniu kryteriów wyszukiwania w aplikacji zostanie wyświetlona lista pasujących zamówień sprzedaży. Należy pamiętać, że w przypadku korzystania z opcji wyszukiwania/filtrowania pobrane zamówienia nie muszą być zamówieniami połączonymi z bieżącym sklepem użytkownika. Ten proces wyszukiwania spowoduje pobranie i wyświetlenie dowolnego zamówienia odbiorcy, który spełnia kryteria wyszukiwania, nawet jeśli zamówienie zostało utworzone lub ustawione jako spełnione przez inny sklep/kanał lub lokalizację magazynu.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 Użytkownik może wybrać zamówienie z listy, aby wyświetlić dodatkowe szczegóły. Panel informacji po prawej stronie ekranu zawiera informacje dotyczące wybranego zamówienia, w tym szczegóły wiersza zamówienia, szczegóły dotyczące dostawy i szczegóły dotyczące realizacji.
 

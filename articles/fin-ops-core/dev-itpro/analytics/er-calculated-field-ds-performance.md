@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944851"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349191"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Zwiększ wydajność rozwiązań Raportowania elektronicznego, dodając sparametryzowane źródła danych PÓL OBLICZENIOWYCH
 
@@ -56,7 +56,7 @@ Pierwszym krokiem jest zaimportowanie przykładowego rozwiązania ER w celu wyge
     2. Kliknij przycisk **Przeglądaj** i wybierz odpowiedni plik wymaganej konfiguracji ER w formacie XML.
     3. Kliknij przycisk **OK**.
 
-![Zaimportowane konfiguracje na stronie Konfiguracje](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Zaimportowane konfiguracje na stronie Konfiguracje.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Przejrzyj przykładowe rozwiązania ER
 
@@ -76,7 +76,7 @@ Pierwszym krokiem jest zaimportowanie przykładowego rozwiązania ER w celu wyge
 
     Mapowanie modelu w tej konfiguracji implementuje podstawowy model danych dla dowolnego formatu ER utworzonego dla tego modelu i wykonywanego w Finance. W wyniku tego zawartość źródeł danych **Transakcji** jest udostępniana dla formatów ER, takich jak **modelowe** źródła danych.
 
-    ![Dodano źródło danych transakcji w konstruktorze mapowania modelu](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Dodano źródło danych transakcji w konstruktorze mapowania modelu.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Zamknij stronę **Projektant mapowania modelu**.
 5. Zamknij stronę **Mapowanie modelu do źródła danych**.
@@ -90,7 +90,7 @@ Pierwszym krokiem jest zaimportowanie przykładowego rozwiązania ER w celu wyge
 
     Ten format ER jest przeznaczony do generowania raportu transakcji dostawcy w formacie XML.
 
-    ![Formatowanie źródeł danych i skonfigurowanych powiązań elementów formatu na stronie Projektant formatów](media/er-calculated-field-ds-performance-format.png)
+    ![Formatowanie źródeł danych i skonfigurowanych powiązań elementów formatu na stronie Projektant formatów.](media/er-calculated-field-ds-performance-format.png)
 
 5. Zamknij stronę **Projektowanie formuły**.
 
@@ -103,7 +103,7 @@ Załóżmy, że zakończono projektowanie pierwszej wersji rozwiązania ER. Chce
 1. Wybierz pole firmę **DEMF**.
 2. Przejdź przez kroki w [Włączanie śledzenia wydajności ER](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace), aby wygenerować śledzenie wydajności podczas uruchamiania formatu encji, gdy wykonywany jest format ER.
 
-    ![Okno dialogowe parametry użytkownika](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Okno dialogowe parametry użytkownika.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Uruchamianie formatu ER
 
@@ -124,7 +124,7 @@ Zostaną teraz udostępnione nowe informacje dotyczące niektórych pozycji źr�
 - Rzeczywisty czas poświęcony na uzyskiwanie danych przy użyciu źródła danych
 - Ten sam czas wyrażony jako procent łącznego czasu, jaki zajęło wykonywanie całego mapowania modelu
 
-![Szczegóły czasu wykonania na stronie projektanta mapowania modelu](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Szczegóły czasu wykonania na stronie projektanta mapowania modelu.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Siatka **Statystyka wydajności** pokazuje, że źródło danych **Transakcji** wywołuje tabelę VendTrans jeden raz. Wartość **\[265\]\[Q:265\]** źródła danych **Transakcji** wskazuje, że 265 transakcje dostawcy zostały pobrane z tabeli aplikacji i zwrócone do modelu danych.
 
@@ -137,7 +137,7 @@ Siatka **statystyk wydajności** pokazuje również, że bieżące mapowanie mod
 
 - Tabela dostawców jest wywoływana dla każdej powtarzanej transakcji dostawcy, nawet jeśli pobrane transakcje zostały zaksięgowane tylko dla pięciu dostawców. Spośród 530 wywołań, 525 to duplikaty. Na poniższej ilustracji przedstawiono komunikat dotyczący zduplikowanych wywołań (żądań bazy danych).
 
-![Komunikat dotyczący zduplikowanych żądań bazy danych na stronie projektanta mapowania modelu](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Komunikat dotyczący zduplikowanych żądań bazy danych na stronie projektanta mapowania modelu.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Spośród całkowitego czasu wykonywania mapowania modelu (około osiem sekund) pobieranie wartości z tabeli aplikacji VendTable zajęło więcej niż 80% (około sześciu sekund). Wartość procentowa jest zbyt duża dla dwóch atrybutów pięciu dostawców w porównaniu z ilością informacji z tabeli aplikacji VendTrans.
 
@@ -172,7 +172,7 @@ Wykonaj poniższe kroki, aby użyć buforowania i źródła danych typu **pola o
     3. W oknie dialogowym rozwijanym w polu **Nazwa** wprowadź **Pole**.
     3. Kliknij przycisk **OK**.
 
-    ![Dodano źródło danych pole w konstruktorze mapowania modelu](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Dodano źródło danych pole w konstruktorze mapowania modelu.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Aby dodać sparametryzowane źródło danych typu **pola obliczeniowego**, należy wykonać następujące kroki:
 
@@ -208,7 +208,7 @@ Wykonaj poniższe kroki, aby użyć buforowania i źródła danych typu **pola o
 
 9. Wybierz opcję **Zapisz**.
 
-    ![Źródło danych dostawca w konstruktorze mapowania modelu](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Źródło danych dostawca w konstruktorze mapowania modelu.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Zamknij stronę **Projektant mapowania modelu**.
 11. Zamknij stronę **Mapowanie modelu**.
@@ -232,11 +232,11 @@ Powtórz kroki opisane w sekcji [Uruchamianie formatu ER](#run-format) tego tema
 
 Korekty wprowadzone w mapowaniu modelu wyeliminowały duplikowanie zapytań do bazy danych. Liczba wywołań tabel bazy danych i źródeł danych tego mapowania modelu również została zmniejszona.
 
-![Śledzenie danych w konstruktorze mapowania modelu 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Śledzenie danych w konstruktorze mapowania modelu 1.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Całkowity czas wykonania został zredukowany o 20 razy (z 8 sekund do około 400 milisekund). Wydajność całego rozwiązania ER uległa zatem poprawie.
 
-![Śledzenie danych w konstruktorze mapowania modelu 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Śledzenie danych w konstruktorze mapowania modelu 2.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Dodatek 1: Pobierz składniki przykładowego rozwiązania Microsoft ER
 

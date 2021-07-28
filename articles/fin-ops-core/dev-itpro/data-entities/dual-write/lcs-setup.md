@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359370"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -40,7 +40,7 @@ Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi
 
 2. Wybierz przycisk **Aplikacji podwójnego zapisu**.
 
-    ![Integracja z programem Power Platform](media/powerplat_integration_step2.png)
+    ![Integracja z programem Power Platform.](media/powerplat_integration_step2.png)
 
 3. Przejrzyj warunki, a następnie zaznacz pole wyboru **Konfiguruj**.
 
@@ -52,7 +52,7 @@ Aby skonfigurować podwójny zapis ze strony **Szczegóły środowiska** usługi
 
 7. Wybierz **Łącze do środowiska Power Platform**, aby utworzyć łącze między Dataverse a bazami danych bieżącego środowiska. Ta konfiguracja zwykle trwa 5 minut lub mniej.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Łącze do środowiska Power Platform":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Łącze do środowiska Power Platform.":::
 
 8. Po zakończeniu łączenia jest wyświetlane hiperłącze. Użyj łącza, aby zalogować się do obszaru administracji podwójnego zapisu w środowisku Finance and Operations. Istnieje możliwość skonfigurowania mapowań encji.
 

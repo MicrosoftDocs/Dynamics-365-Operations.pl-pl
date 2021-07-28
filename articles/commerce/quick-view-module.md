@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d7e88163fd9b8dc4f5636ed29e2c4248aece52bf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5b9bb456659447697b685105fe64b083e01f690a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792178"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351971"
 ---
 # <a name="quick-view-module"></a>Moduł szybkiego widoku
 
@@ -36,7 +36,7 @@ Moduł szybkiego widoku jest obsługiwany przez [moduły kolekcji produktów](pr
 
 Poniższa ilustracja przedstawia przykład modułu szybkiego podglądu na stronie listy produktów.
 
-![Przykład modułu szybkiego podglądu na stronie listy produktów](./media/ecommerce-quickview.PNG)
+![Przykład modułu szybkiego podglądu na stronie listy produktów.](./media/ecommerce-quickview.PNG)
 
 ## <a name="module-properties"></a>Właściwości modułu
 

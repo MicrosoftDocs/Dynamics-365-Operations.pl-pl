@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748904"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350795"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Rozwiązywanie problemów z synchronizacją na żywo
 
@@ -73,21 +73,21 @@ Jeśli istnieją dane po obu stronach i potwierdzono, że ten błąd nie jest zw
 
 Podczas tworzenia danych w aplikacji Finance and Operations może pojawić się komunikat o błędzie „Złe żądanie”, który przypomina poniższy przykład.
 
-![Przykład komunikatu o błędzie złego żądania](media/error_record_id_source.png)
+![Przykład komunikatu o błędzie złego żądania.](media/error_record_id_source.png)
 
 Aby rozwiązać ten problem, należy przypisać poprawną rolę zabezpieczeń zespołowi zamapowanej jednostki biznesowej usługi Dynamics 365 Customer Service lub Dynamics 365 Sales w celu włączenia brakującego uprawnienia.
 
 1. W aplikacji Finance and Operations znajdź jednostkę biznesową, która jest zamapowana w zestawie połączenia integracji danych.
 
-    ![Mapowanie organizacji](media/mapped_business_unit.png)
+    ![Mapowanie organizacji.](media/mapped_business_unit.png)
 
 2. Zaloguj się do środowiska w aplikacji na podstawie modelu w Dynamics 365, przejdź do **Ustawienia \> Zabezpieczenia** i znajdź zespół zamapowanej jednostki biznesowej.
 
-    ![Zespół zamapowanej jednostki biznesowej](media/setting_security_page.png)
+    ![Zespół zamapowanej jednostki biznesowej.](media/setting_security_page.png)
 
 3. Otwórz stronę zespołu do edycji, a następnie wybierz pozycję **Zarządzaj rolami**, aby otworzyć okno dialogowe **Zarządzanie rolami zespołu**.
 
-    ![Przycisk Zarządzaj rolami](media/manage_team_roles.png)
+    ![Przycisk Zarządzaj rolami.](media/manage_team_roles.png)
 
 4. Przypisz rolę, która ma uprawnienie odczyt/zapis dla odpowiednich tabel, a następnie kliknij przycisk **OK**.
 

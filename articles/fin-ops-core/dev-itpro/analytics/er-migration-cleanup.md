@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750893"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351056"
 ---
 # <a name="er-migration-cleanup"></a>Oczyszczanie migracji ER 
 
@@ -30,11 +30,11 @@ Podczas zarządzania wystąpieniami aplikacji Finance można zdecydować, czy bi
 
 W przypadku próby uruchomienia formatu ER, który używa szablonu do generowania dokumentów biznesowych, wystąpi wyjątek i użytkownik zostanie powiadomiony o brakującym szablonie. Użytkownik ma również możliwość użycia opcji oczyszczania migracji ER w celu usunięcia, a następnie ponownego zaimportowania konfiguracji formatu ER, która zawiera szablon.
 
-[![Uruchamianie formatu ER](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Uruchamianie formatu ER.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Podobny błąd wystąpi, jeśli przejdziesz do strony **Konfiguracje** (**Administracja organizacją** \> **Raportowanie elektroniczne** \> **Konfiguracje**) i w drzewie konfiguracji spróbujesz usunąć konfigurację formatu ER, w której jest używany szablon.
 
-[![Usuwanie formatu ER](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Usuwanie formatu ER.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Wykonaj poniższe kroki, aby rozwiązać problemy z szablonami ER, do których nie masz dostępu.
 
@@ -50,7 +50,7 @@ Wykonaj poniższe kroki, aby rozwiązać problemy z szablonami ER, do których n
 >
 > Jeśli użyjesz opcji **Oczyszczanie migracji** w celu usunięcia konfiguracji formatu ER, gdy przywoływany szablony będzie dostępny w magazynie obiektów blob, usuniesz tylko powiązane artefakty konfiguracji w bazie danych aplikacji. Plik fizyczny szablonu pozostanie w magazynie obiektów blob. Zastąpienie pliku w magazynie obiektów blob nie jest już dozwolone. Aby uzyskać więcej informacji, zobacz [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Ponadto nie będzie już można ponownie importować konfiguracji usuniętych przy użyciu oczyszczania migracji w tym środowisku. Aby rozwiązać ten problem, należy znaleźć odpowiedni plik w magazynie obiektów blob i usunąć go ręcznie.
 
-[![Importowanie formatu ER](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importowanie formatu ER.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Podobny problem może wystąpić w przypadku migrowania wystąpienia aplikacji do innej lokalizacji, która została użyta jako lokalizacja docelowa migracji, dla której magazyn obiektów blob już zawiera pliki szablonów ER.
 

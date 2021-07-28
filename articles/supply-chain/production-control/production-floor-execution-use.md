@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907724"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349777"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -32,7 +32,7 @@ Zanim pracownicy będą mogli rozpocząć korzystanie z urządzenia, kierownik l
 
 Po przygotowaniu urządzenia zostanie na nim wyświetlona strona logowania. Na tej stronie są wyświetlane informacje o stanie zadań dla lokalnej komórki roboczej. Te informacje są aktualizowane okresowo. Na stronie pracownicy są używali identyfikatorów karty identyfikacyjnej do podpisania. Chociaż pracownicy nie muszą mieć konta użytkownika służącego do Supply Chain Management, muszą mieć *zarejestrowane konto pracownika*, które mogą być używane podczas logowania.
 
-![Strona logowania do interfejsu wykonania hali produkcyjnej](media/pfei-sign-in-page.png "Strona logowania do interfejsu wykonania hali produkcyjnej")
+![Strona logowania do interfejsu wykonania hali produkcyjnej.](media/pfei-sign-in-page.png "Strona logowania do interfejsu wykonania hali produkcyjnej")
 
 Pozostałe sekcje w tym temacie opisują sposób interakcji pracowników z interfejsem.
 
@@ -40,7 +40,7 @@ Pozostałe sekcje w tym temacie opisują sposób interakcji pracowników z inter
 
 Na karcie **Wszystkie zadania** znajduje się lista zadań pokazująca wszystkie zadania produkcyjne o stanie *Nierozpoczęte*, *Zatrzymane* lub *Rozpoczęte*. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
 
-![Karta wszystkie zadania](media/pfei-all-jobs-tab.png "Karta wszystkie zadania")
+![Karta wszystkie zadania.](media/pfei-all-jobs-tab.png "Karta wszystkie zadania")
 
 Lista zadań ma następujące kolumny: Liczby odpowiadają liczbom na poprzedniej ilustracji.
 
@@ -59,7 +59,7 @@ Lista zadań ma następujące kolumny: Liczby odpowiadają liczbom na poprzednie
 
 Na kartach **Aktywne zadania** znajduje się lista wszystkich zadań, które już rozpoczął zalogowany pracownik. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
 
-![Karta aktywne zadania](media/pfei-active-jobs-tab.png "Karta aktywne zadania")
+![Karta aktywne zadania.](media/pfei-active-jobs-tab.png "Karta aktywne zadania")
 
 Lista aktywnych zadań ma następujące kolumny:
 
@@ -76,7 +76,7 @@ Lista aktywnych zadań ma następujące kolumny:
 
 Na karcie **Moje urządzenie** pracownicy mogą wybrać składnik majątku, który jest połączony z zasobem urządzenia w obrębie filtru ustawionego na karcie **Wszystkie zadania**. Pracownik może następnie wyświetlić stan i kondycję wybranego składnika majątku, odczytując wartości dla maksymalnie czterech wybranych liczników oraz listy ostatnich żądań konserwacji oraz zarejestrowanych przestojów. Pracownik może także zażądać konserwacji wybranego składnika majątku oraz zarejestrowania i edycji przestoju urządzenia. (Tę nazwę karty można dostosowywać i może być inna w przypadku Twojego systemu).
  
-![Karta Moje urządzenie](media/pfei-my-machine-tab.png "Karta Moje urządzenie")
+![Karta Moje urządzenie.](media/pfei-my-machine-tab.png "Karta Moje urządzenie")
 
 Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby odpowiadają liczbom na poprzedniej ilustracji.
 
@@ -87,7 +87,7 @@ Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby od
 
 1. **Ustawienia** — wybranie ikony narzędzia pozwala otworzyć okno dialogowe, w którym można wybrać liczniki do wyświetlenia dla wybranego składnika majątku dla urządzenia. Wartości tych liczników są wyświetlane w górnej części karty **Zarządzanie składnikami majątku**. Menu **Ustawienia** (widoczne na poniższym zrzucie ekranu) umożliwia włączenie maksymalnie czterech liczników. Dla każdego licznika, który chcesz włączyć, wybierz licznik przy użyciu pola wyszukiwania u góry kafelka. W polu wyszukiwania są wymienione wszystkie liczniki skojarzone ze składnikiem majątku wybranym u góry strony **Zarządzanie składnikami majątku**. Ustawienie każdego licznika w celu monitorowania wartości **zagregowanej** lub ostatniej wartości **rzeczywistej**. Na przykład, jeśli ustawisz licznik, który śledzi czas pracy komputera w godzinach, należy ustawić go na **Zagregowana**. Jeśli licznik jest ustawiany w celu pomiaru ostatniej zaktualizowanej temperatury lub ciśnienia, należy ustawić dla niego wartość **Rzeczywista**. Wybierz przycisk **OK**, aby zapisać ustawienia i zamknąć okienko dialogowe.
 
-    ![Ustawienia karty Moje urządzenie](media/pfei-my-machine-tab-settings.png "Ustawienia karty Moje urządzenie")
+    ![Ustawienia karty Moje urządzenie.](media/pfei-my-machine-tab-settings.png "Ustawienia karty Moje urządzenie")
 
 1. **Zażądaj konserwacji** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można utworzyć żądanie konserwacji. Możesz podać opis i uwagę. Żądanie zostanie przesłane do użytkownika aplikacji Supply Chain Management, który będzie mógł przekonwertować żądanie konserwacji na zlecenie pracy dotyczące konserwacji.
 1. **Zarejestruj przestój** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można zarejestrować przestój urządzenia. Możesz wybrać kod przyczyny i wprowadzić okres przestoju w postaci zakresu dat/godzin. Rejestracja przestoju urządzania jest używana do obliczenia wydajności składnika majątku dla urządzenia.
@@ -98,7 +98,7 @@ Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby od
 
 Pracownicy rozpoczynają zadanie produkcji, zaznaczając zadanie na karcie **Wszystkie zadania**, a następnie wybierając przycisk **Rozpocznij zadanie**, aby otworzyć okno dialogowe **Rozpoczęcie zadania**.
 
-![Okno dialogowe Rozpocznij zadanie](media/pfei-start-job-dialog.png "Okno dialogowe Rozpocznij zadanie")
+![Okno dialogowe Rozpocznij zadanie.](media/pfei-start-job-dialog.png "Okno dialogowe Rozpocznij zadanie")
 
 Pracownicy używają okna dialogowego **Rozpoczęcie zadania** w celu potwierdzenia ilości produkcji, a następnie uruchomienia zadania. Pracownicy mogą korygować ilość, wybierając pole **Ilość**, a następnie używając wyświetlonej klawiatury numerycznej. Następnie pracownikom wybierz przycisk **Rozpocznij**, aby rozpocząć pracę nad zadaniem. Okno dialogowe **Rozpoczęcie zadania** jest zamknięte, a zadanie jest dodawane do karty **Aktywne zadania**.
 
@@ -108,13 +108,13 @@ Pracownicy mogą uruchamiać zadanie o dowolnym stanie. Jeśli pracownik urucham
 
 Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić dobre ilości wyprodukowane przez zaznaczenie zadania na karcie **Aktywne zadania**, a następnie wybrać **Postęp raportowania**. Następnie w oknie dialogowym **Postęp raportowania** pracownik wprowadza ilość dobrych za pomocą klawiatury numerycznej. Domyślnie ilość jest pusta. Po wprowadzeniu ilości pracownik może zaktualizować stan zadania jako *W toku*, *Zatrzymany* lub *Ukończony*.
 
-![Okno dialogowe Postęp raportu](media/pfei-report-progress-dialog.png "Okno dialogowe Postęp raportu")
+![Okno dialogowe Postęp raportu.](media/pfei-report-progress-dialog.png "Okno dialogowe Postęp raportu")
 
 ## <a name="reporting-scrap"></a>Raportowanie odpadków
 
 Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić odpadki przez zaznaczenie zadania na karcie **Aktywne zadania**, a następnie wybrać **Zgłoś odpadki**. Następnie w oknie dialogowym **Zgłoś odpadki** pracownik wprowadza ilość odpadków za pomocą klawiatury numerycznej. Pracownik również wybiera przyczynę (*Brak*, *Maszyna*, *Operator* lub *Materiały*).
 
-![Okno dialogowe Zgłoś odpadki](media/pfei-report-scrap-dialog.png "Okno dialogowe Zgłoś odpadki")
+![Okno dialogowe Zgłoś odpadki.](media/pfei-report-scrap-dialog.png "Okno dialogowe Zgłoś odpadki")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Kończenie zadania i rozpoczynanie nowego zadania
 

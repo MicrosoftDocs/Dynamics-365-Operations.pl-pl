@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: a2ea914344341ee26138e853727c551bdd5d733e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833097"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358624"
 ---
 # <a name="using-power-portal-with-the-party-data-model"></a>Korzystanie z usługi Power Portal z modelem danych strony
 
@@ -28,11 +28,11 @@ Podsumowując, sposób interakcji tabel uległ zmianie, ale uprawnienia tabel w 
 
 Ten schemat przedstawia relację tabeli **bez** strony globalna książka adresowa modelu danych:
 
-   ![bez modelu strony](media/without-party-model.PNG)
+   ![bez modelu strony.](media/without-party-model.PNG)
 
 Ten schemat przedstawia relację tabeli **ze** stroną globalnej książki adresowej modelu danych:
 
-   ![z modelem strony](media/with-party-model.png)
+   ![z modelem strony.](media/with-party-model.png)
 
 ## <a name="create-a-new-table-permission"></a>Utwórz nowe uprawnienie do tabeli
 

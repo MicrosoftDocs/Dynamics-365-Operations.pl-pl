@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186649"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355683"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Usprawnij model przewidywania (wersja zapoznawcza)
 
@@ -33,7 +33,7 @@ W tym temacie opisano funkcje, których można używać w celu poprawy działani
 
 Najpierw wybierz co najmniej jeden z trzech możliwych wyników dla faktur: **Na czas**, **Opóźnione** i **Bardzo opóźnione**. Należy wybrać wszystkie trzy wyniki. Jeśli wyczyścisz wybór któregokolwiek z tych wyników, faktury zostaną odfiltrowane z procesu trenowania, a dokładność przewidywania spadnie.
 
-[![Potwierdzanie wyników](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Potwierdzanie wyników.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Jeśli organizacja wymaga tylko dwóch wyników, zmień wartości progowe wyników **Opóźnione** i **Bardzo opóźnione** na 0 (zero) dni. W ten sposób w praktyce zwijasz prognozę do stanu binarnego **Na czas** lub **Opóźnione**.
 
@@ -51,7 +51,7 @@ W poniższych sekcjach przedstawiono pola dostępne dla jednostek faktury i odbi
 
 Na poniższej ilustracji pokazano pola dostępne dla tabali Faktura.
 
-[![Pola dostępne dla tabeli Faktura](./media/available-fields.png)](./media/available-fields.png)
+[![Pola dostępne dla tabeli Faktura.](./media/available-fields.png)](./media/available-fields.png)
 
 Następujących pól nie należy wybierać do trenowania:
 
@@ -66,7 +66,7 @@ Następujących pól nie należy wybierać do trenowania:
 
 Na poniższej ilustracji pokazano pola dostępne dla tabeli Odbiorca.
 
-[![Pola dostępne dla tabeli Odbiorca](./media/related-entities.png)](./media/related-entities.png)
+[![Pola dostępne dla tabeli Odbiorca.](./media/related-entities.png)](./media/related-entities.png)
 
 Następującego pola nie należy wybierać do trenowania:
 
@@ -74,8 +74,8 @@ Następującego pola nie należy wybierać do trenowania:
 
 ## <a name="filters"></a>Filtry
 
-Filtry obecnie nie obsługują scenariusza prognozowania płatności od odbiorców. W związku z tym wybierz opcję **Pomiń ten krok** i przejdź do strony podsumowania.
+Faktury używane do szkolenia można filtrować, ustawiając kryteria filtrowania pól na fakturze lub w tabelach odbiorców. Na przykład można ustawić próg, aby uwzględnić tylko faktury, których suma jest równa lub przekracza określoną kwotę. Alternatywnie można wykluczyć faktury skojarzone z odbiorcami w określonej grupie odbiorców.
 
-[![Koncentrowanie modelu za pomocą filtrów](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Aby uzyskać więcej informacji na temat filtrowania danych, zobacz [Tworzenie modelu prognozowania](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

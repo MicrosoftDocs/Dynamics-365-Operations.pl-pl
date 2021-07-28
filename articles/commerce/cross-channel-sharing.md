@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799524"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349729"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Włączanie i używanie udostępniania między kanałami
 
@@ -48,15 +48,15 @@ Aby włączyć udostępnianie między kanałami w konstruktorze witryn Commerce,
 1. Przejdź do **Ustawienia witryny \> Funkcje**.
 1. Ustaw funkcję **Między kanałami** na wartość **Włączone**.
 
-    ![Opcja między kanałami ustawiona na Włączone w kreatorze witryn Commerce](./media/enabling-cross-channel-sharing.png)
+    ![Opcja między kanałami ustawiona na Włączone w kreatorze witryn Commerce.](./media/enabling-cross-channel-sharing.png)
 
 Po włączeniu funkcji udostępniania między kanałami informacje będą wyświetlane w sekcji **Kanały** w **Ustawienia witryny \> Funkcje** jak pokazano na przykładzie przedstawionym na poniższej ilustracji.
 
-![Informacje o kanałach widoczne po włączeniu udostępniania między kanałami](./media/channels-cross-channel.png)
+![Informacje o kanałach widoczne po włączeniu udostępniania między kanałami.](./media/channels-cross-channel.png)
 
 Ponadto po włączeniu funkcji udostępniania między kanałami pole **Kanał** w prawym górnym rogu kreatora witryn Commerce będzie zawierać opcję **Sklep internetowy dla kilku kanałów**, która może być używana do zarządzania zawartością między kanałami, jak to pokazano na poniższej ilustracji.
 
-![Opcja Sklep internetowy dla kilku kanałów w polu Kanały po włączeniu udostępniania między kanałami](./media/cross-channel-dropdown.png)
+![Opcja Sklep internetowy dla kilku kanałów w polu Kanały po włączeniu udostępniania między kanałami.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Tworzenie i używanie zawartości między kanałami
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359418"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Ponowne używanie konfiguracji ER z szablonami programu Excel do generowania raportów w formacie programu Word
 
@@ -54,14 +54,14 @@ Te procedury mają być stosowane w przypadku funkcji dodanej w aplikacji Dynami
 5. Wybierz opcję **Konstruktor**.
 6. Na stronie **projektanta formatów** zwróć uwagę, że tytuł elementu formatu głównego wskazuje, że szablon programu Excel jest obecnie używany.
 
-![Wybieranie istniejącej konfiguracji](../media/er-design-configuration-word-2016-11-image01.gif)
+![Wybieranie istniejącej konfiguracji.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Przeglądanie pobranego szablonu programu Word
 
 1. W aplikacji programu Word otwórz pobrany wcześniej plik szablonu **SampleVendPaymDocReport.docx**.
 2. Sprawdź, czy ten szablon zawiera tylko układ dokumentu, który chcesz wygenerować jako dane wyjściowe raportowania elektronicznego.
 
-![Układ szablonu programu Word w aplikacji na komputerze](../media/er-design-configuration-word-2016-11-image02.png)
+![Układ szablonu programu Word w aplikacji na komputerze.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Zamień szablon programu Excel na szablon programu Word i dodaj niestandardową część XML
 
@@ -84,7 +84,7 @@ Obecnie dokument programu Excel jest używany jako szablon do generowania danych
 
 9. Zauważ, że tytuł elementu formatu głównego wskazuje, że szablon programu Word jest obecnie używany.
 
-    ![Zamienianie szablonu programu Excel na szablon programu Word i dodawanie niestandardowej części XML](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Zamienianie szablonu programu Excel na szablon programu Word i dodawanie niestandardowej części XML.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Na karcie **format** wybierz opcję **załączniki**.
 
@@ -110,7 +110,7 @@ Jeśli znasz proces projektowania dokumentów programu Word jako formularzy zawi
 1. W aplikacji programu Word otwórz plik szablonu **SampleVendPaymDocReportBounded.docx**.
 2. Sprawdź, czy ten szablon zawiera układ dokumentu, który chcesz wygenerować jako dane wyjściowe raportowania elektronicznego. Kontrolki zawartości używane jako symbole zastępcze danych, które będą wprowadzane w tym szablonie w czasie wykonywania w modelu ER, są oparte na mapowaniach skonfigurowanych między elementami niestandardowej części XML **Raport** a kontrolkami zawartości dokumentu programu Word.
 
-![Podgląd szablonu programu Word w aplikacji na komputerze](../media/er-design-configuration-word-2016-11-image04.png)
+![Podgląd szablonu programu Word w aplikacji na komputerze.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Przekazywanie szablonu programu Word, w którym niestandardowy element XML jest mapowany na kontrolki zawartości
 
@@ -144,7 +144,7 @@ Aby uruchomić wersję roboczą formatu edytowalnego, należy oznaczyć go jako 
 3. Na stronie **Płatności dostawcy** zaznacz wszystkie wiersze w siatce.
 4. Wybierz pozycję **Stan płatności** \> **Brak**.
 
-    ![Płatności do przetwarzania na stronie Płatności dostawcy](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Płatności do przetwarzania na stronie Płatności dostawcy.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. W okienku akcji wybierz pozycję **Generuj płatności**.
 6. W wyświetlonym oknie dialogowym wykonaj następujące kroki:
@@ -156,11 +156,11 @@ Aby uruchomić wersję roboczą formatu edytowalnego, należy oznaczyć go jako 
 7. W oknie dialogowym **Parametry raportu elektronicznego** wybierz przycisk **OK**.
 8. Wygenerowane dane wyjściowe są przedstawione w formacie programu Word i zawierają szczegóły przetworzonych płatności. Zbadaj wygenerowane dane wyjściowe.
 
-    ![Wygenerowane dane wyjściowe w formacie programu Word](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Wygenerowane dane wyjściowe w formacie programu Word.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
-- [Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word](../er-design-configuration-word.md)
+- [Projektowanie nowej konfiguracji modułu Raportowanie elektroniczne w celu generowania raportów w formacie programu Word](../er-design-configuration-word.md)
 - [Osadzanie obrazów i kształtów w generowanych dokumentach przez raportowanie elektroniczne](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

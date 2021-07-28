@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810493"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351424"
 ---
 # <a name="outbound-workload-visualization"></a>Wychodzące wizualizacje obciążenia pracą
 
@@ -60,7 +60,7 @@ Aby skonfigurować wizualizację obciążenia pracą wychodzącą, należy wykon
     - **Dni do uwzględnienia** — umożliwia wprowadzenie liczby dni w przeszłości, dla których ma zostać wygenerowany wykres.
     - **Typ zlecenia pracy** — umożliwia wybór typów wychodzących zleceń pracy, według których ma być wykonywane filtrowanie.
 
-    ![Skonfiguruj stronę filtrów](media/work-viz-filters-1.png "Skonfiguruj stronę filtrów")
+    ![Skonfiguruj stronę filtrów.](media/work-viz-filters-1.png "Skonfiguruj stronę filtrów")
 
 1. Zamknij stronę **Konfigurowanie filtrów** w celu powrotu do strony **Wizualizacje wychodzących obciążeń**.
 
@@ -70,11 +70,11 @@ Aby skonfigurować wizualizację obciążenia pracą wychodzącą, należy wykon
     - **Ostatnie odświeżenie** — to pole zawiera datę i godzinę ostatniej aktualizacji informacji na wykresie.
     - **Szacowany/rzeczywisty czas** — Jeśli w systemie skonfigurowano standardy pracy, ustaw tę opcję na *Tak*, aby wyświetlić skumulowane szacowane czasy kompletacji u góry każdej kolumny na wykresie. Jeśli nie są używane standardy pracy, ta opcja jest niedostępna.
 
-    ![Przykładowa wizualizacja](media/work-viz-chart.png "Przykładowa wizualizacja")
+    ![Przykładowa wizualizacja.](media/work-viz-chart.png "Przykładowa wizualizacja")
 
 1. Wybierz dowolny słupek na wykresie, aby wyświetlić szczegóły skojarzonego wiersza pracy.
 
-    ![Szczegóły wiersza pracy](media/work-viz-work-details.png "Szczegóły wiersza pracy")
+    ![Szczegóły wiersza pracy.](media/work-viz-work-details.png "Szczegóły wiersza pracy")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Przykład: Wychodzące wizualizacje obciążenia pracą dla stref
 
@@ -92,7 +92,7 @@ W tym przykładzie zachodzi potrzeba skonfigurowania wizualizacji pokazującego 
 
 Na poniższej ilustracji pokazano przykład otrzymanego wykresu.
 
-![Wizualizacja stanu strefy a pracy](media/work-viz-chart.png "Wizualizacja stanu strefy a pracy")
+![Wizualizacja stanu strefy a pracy.](media/work-viz-chart.png "Wizualizacja stanu strefy a pracy")
 
 Ten wykres zawiera dwie strefy o nazwach **FLOOR** i **BULK** oraz strefę o nazwie **Puste**. Strefa **Puste** reprezentuje wszystkie wiersze pracy, które nie są członkami żadnej strefy. Na wykresie zawsze są wyświetlane wszystkie niepowiązane filtrowane dane jako **Puste**, co zapewnia możliwie największą widoczność. W strefie **FLOOR** wykres przedstawia trzy zamknięte linie i cztery otwarte linie. W strefie **BULK** wykres przedstawia cztery zamknięte linie, jedną otwartą linię i 24 anulowane linie. Na koniec wykres pokazuje osiem zamkniętych linii, które nie są częścią żadnej strefy i dlatego są wymienione jako **Puste**.
 

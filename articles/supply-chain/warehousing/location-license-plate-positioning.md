@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831393"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359770"
 ---
 # <a name="location-license-plate-positioning"></a>Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji
 
@@ -88,7 +88,7 @@ Funkcja musi być włączona w profilu lokalizacji dla każdej lokalizacji, w kt
 1. Póki **Numer identyfikacyjny** jest wciąż zaznaczony, wybierz opcję **Dodaj sprzężenie tabeli**.
 1. Z listy tabel, które pojawiają się w kolumnie **Relacja**, wybierz **Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji (numer identyfikacyjny)**. Następnie wybierz opcję **Wybierz**, aby dodać **Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji** do sprzężenia tabeli **Wymiarów magazynowych**.
 
-    ![Sprzężenia tabeli](media/LpTableJoin.png "Sprzężenia tabeli")
+    ![Sprzężenia tabeli.](media/LpTableJoin.png "Sprzężenia tabeli")
 
 1. Wybierz przycisk **OK**, aby potwierdzić zaktualizowane tabele sprzężone i zamknąć Edytor kwerend.
 1. Na karcie skróconej **Akcje dyrektywy lokalizacji** ponownie kliknij opcję **Edytuj kwerendę**, aby otworzyć okno dialogowe edycji kwerendy.
@@ -100,7 +100,7 @@ Funkcja musi być włączona w profilu lokalizacji dla każdej lokalizacji, w kt
     - **Pole:** *Stanowisko Num. id.*
     - **Kryteria:** *1*
 
-    ![Nowy zakres](media/LpPositionCriteria.png "Nowy zakres")
+    ![Nowy zakres.](media/LpPositionCriteria.png "Nowy zakres")
 
 1. Wybierz przycisk **OK**, aby potwierdzić zmiany i zamknąć okno dialogowe kwerendy.
 
@@ -275,7 +275,7 @@ Teraz, gdy funkcja *Stanowisko obiektu o numerze identyfikacyjnym w lokalizacji*
 1. Na stronie **Skanuj identyfikator pracy / identyfikator numeru identyfikacyjnego**, zaznacz pole **Identyfikator**, a następnie wprowadź identyfikator pracy z wiersza sprzedaży.
 1. Należy zauważyć, że praca pobrania kieruje się do pobrania *A0002* z lokalizacji *01A01R1S2B*. Zostanie wyświetlona ta instrukcja, ponieważ *A0002* znajduje się na numerze identyfikacyjnym znajdującym się w pozycji *1* w tej lokalizacji.
 
-    ![Lokalizacja stanowiska 1](media/LocationLicensePlatePositioning.png "Lokalizacja stanowiska 1")
+    ![Lokalizacja stanowiska 1.](media/LocationLicensePlatePositioning.png "Lokalizacja stanowiska 1")
 
 1. Wprowadź identyfikator numeru identyfikacyjnego, który został utworzony dla danej lokalizacji, a następnie postępuj zgodnie z instrukcjami, aby pobrać zamówienie sprzedaży.
 

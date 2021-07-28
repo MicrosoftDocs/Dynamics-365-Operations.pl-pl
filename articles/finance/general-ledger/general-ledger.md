@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 65431
+ms.custom:
+- "65431"
+- intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 403cd616faef2f856c21a771d46607c41987f0bb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: dc5bc56ccbbafa16d1de5da89f45354d281cbd6a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897536"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348993"
 ---
 # <a name="general-ledger-home-page"></a>Strona główna księgi głównej
 
@@ -34,10 +36,10 @@ Moduł Księga główna służy do definiowania rekordów finansowych dla firmy 
 Można przeprowadzić alokację lub dystrybucję kwot pieniężnych do jednego lub kilku kont albo do kombinacji kont i wymiarów opartych na regułach alokacji. Istnieją dwa typy alokacji: stałe i zmienne. Można również rozliczać transakcje między kontami księgowymi i przeszacować kwoty w walucie. Na koniec roku obrachunkowego należy wygenerować transakcje zamknięcia i przygotować konta do nowego roku obrachunkowego. Funkcja konsolidacji umożliwia połączenie wyników finansowych dla kilku oddziałów firmy w jedne wyniku dla skonsolidowanej organizacji. Oddziały mogą znajdować się w tej samej bazie danych lub w oddzielnych bazach danych.
 
 - [Omówienie konsolidacji i eliminacji](../budgeting/consolidation-elimination-overview.md)
-- [Salda głównego konta księgowego](general-ledger-account-balances.md)
+- [Salda kont księgi głównej](general-ledger-account-balances.md)
 - [Wymiary finansowe](financial-dimensions.md)
 
-[![Proces biznesowy](./media/GL-process.PNG)](./media/GL-process.PNG)
+[![Proces biznesowy.](./media/GL-process.PNG)](./media/GL-process.PNG)
 
 ## <a name="sales-tax"></a>Podatek
 Każda firma zbiera i płaci podatki w różnych urzędach. Przepisy i stawki różnią się w zależności od kraju/regionu, województwa, powiatu i miasta.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193984"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360527"
 ---
 # <a name="enter-skills"></a>Wprowadzanie umiejętności
 
@@ -45,17 +45,17 @@ Aby wprowadzić umiejętności bez konieczności ich zatwierdzania, należy stwo
 
 4. W okienku **Utwórz przepływpracy** wybierz opcję **Umiejętności pracownika**.
 
-   [![Wybierz przepływ pracy umiejętności pracownika](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Wybierz przepływ pracy umiejętności pracownika.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. W okienku **Otworzyć ten plik?** należy wybrać **Otwórz**. Po wyświetleniu monitu wprowadź swoje dane uwierzytelniające.
 
 6. W edytorze przepływu pracy wybierz element **Zatwierdź umiejętności** i przeciągnij go na kanwę.
 
-   [![Wybierz element Zatwierdź przepływ pracy umiejętności](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Wybierz element Zatwierdź przepływ pracy umiejętności.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Połącz element **Rozpoczęcie** z elementem **Zatwierdź umiejętności 1**, a następnie połącz element **Zatwierdź umiejętności 1** z elementem **Zakończ**. Może być konieczne przewiniecie w dół, aby zobaczyć element **Koniec**. Możesz przeciągnąć go bliżej innych elementów.
 
-   [![Łączenie elementów przepływu pracy](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Łączenie elementów przepływu pracy.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Kliknij dwukrotnie element przepływu pracy **Zatwierdź kwalifikacje 1**, a następnie kliknij prawym przyciskiem myszy element **Krok 1**. Kliknij prawym przyciskiem myszy element **Krok 1**, a następnie wybierz polecenie **Właściwości**.
 
@@ -65,7 +65,7 @@ Aby wprowadzić umiejętności bez konieczności ich zatwierdzania, należy stwo
 
 11. Wybierz **Dodaj warunek**. Po wybraniu opcji **Gdzie** wybierz **Umiejętności samoobsługi pracownika**, a następnie wybierz **Umiejętności samoobsługi pracownika.Osoba**. Po zaznaczeniu **jest**, wybierz **pole**, a następnie **Stosunek użytkownika do osoby.Osoba**.
 
-    [![Określ warunek](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Określ warunek.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Wybierz pozycję **Przypisanie** na pasku adresu z lewej strony.
 
@@ -73,7 +73,7 @@ Aby wprowadzić umiejętności bez konieczności ich zatwierdzania, należy stwo
 
 14. Na karcie **Wybór hierarchii** w polu **Typ hierarchii** wybierz pozycję **Hierarchia menedżerska**.
 
-    [![Określ hierarchię menedżerską](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Określ hierarchię menedżerską.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Wybierz opcję **Zamknij**, wybierz **Przepływ pracy** w kanwie modułu nawigacyjnego, a następnie wybierz polecenie **Zapisz i zamknij**.
 

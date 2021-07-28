@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839614"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361121"
 ---
 # <a name="maintenance-plans"></a>Plany konserwacji
 
@@ -145,23 +145,23 @@ Poniżej znajdują się przykłady konfiguracji wierszy planu obsługi na podsta
 
 **Przykład 1 - Wiersz planu obsługi na podstawie czasu:** zadanie smarowania może zostać skonfigurowane w stałym interwale, występującym raz w tygodniu. W tym celu w polu **Typ interwału** wybierz opcję "Powtarzaj od daty planu". Zajrzyj na przykład na poniższej ilustracji.
 
-![Zadanie usługi ustawione w stałym interwale czasu, które ma odbywać się raz w tygodniu](media/02-preventive-maintenance.png "Zadanie usługi ustawione w stałym interwale czasu, które ma odbywać się raz w tygodniu")
+![Zadanie usługi ustawione w stałym interwale czasu, które ma odbywać się raz w tygodniu.](media/02-preventive-maintenance.png "Zadanie usługi ustawione w stałym interwale czasu, które ma odbywać się raz w tygodniu")
 
 **Przykład 2 - Wiersz planu konserwacji zależne od czasu:** w ciągu tygodnia może zostać utworzone zadanie inspekcyjne. W tym celu w polu **Typ interwału** wybierz opcję "Powtarzaj od daty ostatniego zlecenia pracy". Zajrzyj na przykład na poniższej ilustracji.
 
-![Zadanie inspekcji ustawione tak, aby odbywało się około raz w tygodniu](media/03-preventive-maintenance.png "Zadanie inspekcji ustawione tak, aby odbywało się około raz w tygodniu")
+![Zadanie inspekcji ustawione tak, aby odbywało się około raz w tygodniu.](media/03-preventive-maintenance.png "Zadanie inspekcji ustawione tak, aby odbywało się około raz w tygodniu")
 
 **Przykład 3 - Wiersz planu konserwacji oparty na licznikach:** Poniższa ilustracja licznika godzin, dla którego tworzony jest nowy wiersz harmonogramu konserwacji, za każdym razem, gdy minął 250 godzin. Typ interwału dla tej linii opartej na licznikach to „powtórzony od daty początkowej”. Data początkowa jest datą początkową powiązanych składników majątku w widoku szczegółów **Wszystkie składniki majątku** \> skrócona karta **Plany konserwacji składnika majątku** \> pole **Data początkowa** lub w widoku szczegółów **Lokalizacja czynności konserwacyjnych** \> skrócona karta **Plany konserwacji** \> pole **Data początkowa**. Jest to przykład planu konserwacji *profilaktycznej*, ponieważ wiersz harmonogramu konserwacji jest tworzony automatycznie za każdym razem, gdy zostanie osiągnięty próg (+ 250).
 
-![Licznik godzinowy, który okresowo tworzy wiersze harmonogramu konserwacji](media/04-preventive-maintenance.png "Licznik godzinowy, który okresowo tworzy wiersze harmonogramu konserwacji")
+![Licznik godzinowy, który okresowo tworzy wiersze harmonogramu konserwacji.](media/04-preventive-maintenance.png "Licznik godzinowy, który okresowo tworzy wiersze harmonogramu konserwacji")
 
 **Przykład 4 - Wiersz planu konserwacji oparty na licznikach:** Poniższa ilustracja przedstawiająca spadek wartości licznika, mierząc zużycie podkładki hamulcowej. Wiersz harmonogramu konserwacji jest tworzony, gdy na konsoli hamulcowej jest tworzona Rejestracja licznika znajdująca się poniżej 20 mm. Typ interwału dla tej linii opartej na licznikach to „Po osiągnięciu poniżej" lub „Po ostatniej dacie rozpoczęcia”. Jest to przykład planu konserwacji *reaktywnej*, ponieważ wiersz harmonogramu konserwacji nie jest tworzony automatycznie za każdym razem, gdy zostanie osiągnięty próg 20 mm.
 
-![Zmniejszenie wartości licznika mierzącego zużycie klocków hamulcowych](media/05-preventive-maintenance.png "Zmniejszenie wartości licznika mierzącego zużycie klocków hamulcowych")
+![Zmniejszenie wartości licznika mierzącego zużycie klocków hamulcowych.](media/05-preventive-maintenance.png "Zmniejszenie wartości licznika mierzącego zużycie klocków hamulcowych")
 
 **Przykład 5 - Wiersz planu konserwacji opartego na licznikach:** Poniższa ilustracja licznika o progu -18° Celsjusza. Wiersz harmonogramu konserwacji jest tworzony po przekroczeniu rejestracji licznika -18° Celsjusza. Typ interwału dla tej linii opartej na licznikach to „Po osiągnięciu powyżej”. Jest to przykład planu konserwacji *reaktywnej*, ponieważ wiersz harmonogramu konserwacji nie jest tworzony automatycznie za każdym razem, gdy zostanie osiągnięty próg -18° Celsius.
 
-![Licznik z progiem -18°C](media/06-preventive-maintenance.png "Licznik z progiem -18°C")
+![Licznik z progiem -18°C.](media/06-preventive-maintenance.png "Licznik z progiem -18°C")
 
 - Podczas tworzenia nowego środka trwałego, który używa typu środka trwałego związanego z planem eksploatacji, plan konserwacji jest automatycznie wstawiany na skróconej karcie **Wszystkie obiekty \> Plany konserwacji składników majątku**. Ponadto w przypadku **Ustawienia domyślne typu składnika majątku** w planach skróconej karcie **Plany konserwacji** zostaną automatycznie wstawione powiązane plany konserwacji.
 - W przypadku dodawania lub usuwania typów środków trwałych lub typów lokalizacji czynności konserwacyjnych w **Plany konserwacji**, zmiana ta będzie odzwierciedlać tylko nowe środki trwałe utworzone po dokonaniu zmiany.
@@ -169,7 +169,7 @@ Poniżej znajdują się przykłady konfiguracji wierszy planu obsługi na podsta
 
 Na poniższej ilustracji przedstawiono przykład planu eksploatacji „Obsługa samochodów” na stronie **Harmonogramy konserwacji**.
 
-![Przykład planu konserwacji ciężarówki](media/07-preventive-maintenance.png "Przykład planu konserwacji ciężarówki")
+![Przykład planu konserwacji ciężarówki.](media/07-preventive-maintenance.png "Przykład planu konserwacji ciężarówki")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Dodawanie planu konserwacji do składnika majątku
 
@@ -187,11 +187,11 @@ Na poniższej ilustracji przedstawiono przykład planu eksploatacji „Obsługa 
 
 Na poniższej ilustracji przedstawiono przykład planu konserwacji składnika majątku na stronie **Wszystkie składniki majatku**.
 
-![Przykład planów konserwacji skonfigurowanych dla składnika majątku](media/08-preventive-maintenance.png "Przykład planów konserwacji skonfigurowanych dla składnika majątku")
+![Przykład planów konserwacji skonfigurowanych dla składnika majątku.](media/08-preventive-maintenance.png "Przykład planów konserwacji skonfigurowanych dla składnika majątku")
 
 <a id="counter-based-maintenance"></a>
 
-## <a name="counter-based-maintenance-enhancements"></a>Udoskonalenia konserwacji opartej na licznikach
+## <a name="counter-based-maintenance-enhancements"></a>Ulepszenia konserwacji opartej na licznikach
 
 Funkcja *ulepszeń konserwacji opartej na licznikach* zawiera następujące funkcje:
 

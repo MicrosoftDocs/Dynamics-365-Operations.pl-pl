@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348171"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Określanie lokalizacji niestandardowego magazynu wygenerowanych dokumentów
 
@@ -39,7 +39,7 @@ Ponadto musisz także mieć dostęp do środowiska programowania dla tej topolog
 
 W bieżącej topologii [utwórz nowy format raportowania elektronicznego](tasks/er-format-configuration-2016-11.md) do generowania dokumentów, dla których chcesz dodać niestandardową lokalizację przechowywania. Alternatywnie [Zaimportuj istniejący format raportowania elektronicznego do tej topologii](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Strona projektanta formatu](media/er-extend-file-storages-format.png)
+![Strona projektanta formatu.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Format raportowania elektronicznego, który tworzysz lub importujesz, musi zawierać co najmniej jedenz następujących elementów formatu:
@@ -58,7 +58,7 @@ Aby określić, jak dokumenty, które generuje format raportowania elektroniczne
 3. W polu **klasy** wybierz **Dołącz plik**.
 4. W polu **grupa** wybierz **Plik**.
 
-![Strona Typy dokumentów](media/er-extend-file-storages-document-type.png)
+![Strona Typy dokumentów.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Typy dokumentów są specyficzne dla firmy. Aby użyć formatu raportowania elektronicznego ze skonfigurowanym miejscem docelowym w wielu firmach, musisz skonfigurować osobny typ dokumentu w każdej firmie.
@@ -113,14 +113,14 @@ Zdarzenie **AttachingFile()** jest wywoływane po przetworzeniu następujących 
 - **Archiwum** — kiedy jest używana ta lokalizacja, jest tworzony nowy rekord dla formatu raportowania elektronicznego w tabeli ERFormatMappingRunJobTable. Pole **Archiwizacji** w tym rekordzie jest ustawione jako **Fałsz**. Jeśli format raportowania elektronicznego zostanie pomyślnie uruchomiony, wygenerowany dokument będzie dołączony do rekordu i zostanie wywołane zdarzenie **AttachingFile()**. Typ dokumentu, który jest wybrany w tym miejscu docelowym elektronicznego raportowania określa lokalizację przechowywania dla dołączonego pliku (Microsoft Azure lub folder SharePoint).
 - **Archiwum zadania** — kiedy jest używana ta lokalizacja, jest tworzony nowy rekord dla formatu raportowania elektronicznego w tabeli ERFormatMappingRunJobTable. Pole **Archiwizacji** w tym rekordzie jest ustawione jako **Prawda**. Jeśli format raportowania elektronicznego zostanie pomyślnie uruchomiony, wygenerowany dokument będzie dołączony do rekordu i zostanie wywołane zdarzenie **AttachingFile()**. Typ dokumentu, który jest skonfigurowany w parametrach elektronicznego raportowania określa lokalizację przechowywania dla dołączonego pliku (Magazyn Azure lub folder SharePoint).
 
-![Strona parametrów raportowania elektronicznego](media/er-extend-file-storages-parameters.png)
+![Strona parametrów raportowania elektronicznego.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurowanie miejsca docelowego raportowania elektronicznego
 
 1. Skonfiguruj zarchiwizowane miejsce docelowe dla jednego z wcześniej wspomnianych elementów raportowania elektronicznego (plik, folder, scalanie lub załącznik), który został utworzony lub zaimportowany. Aby uzyskać instrukcje, zobacz [Konfigurowanie miejsc docelowych dla raportowania elektronicznego](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Użyj wcześniej typu dokumentu dodanego wcześniej do skonfigurowanego miejsca docelowego. (Na przykład w tym temacie, typem dokumentu jest **FileX**.)
 
-![Okno dialogowe Ustawienia lokalizacji docelowej](media/er-extend-file-storages-destination.png)
+![Okno dialogowe Ustawienia lokalizacji docelowej.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Zmień kod źródłowy
 

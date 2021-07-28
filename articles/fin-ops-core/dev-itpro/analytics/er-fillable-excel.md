@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359036"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -39,7 +39,7 @@ Podczas dodawania nowej konfiguracji formatu ER do generowania dokumentu wychodz
 
 Aby skonfigurować składnik formatu ER konfiguracji, wybierz pozycję **Projektant** w okienku akcji, a następnie otwórz składnik formatu ER do edycji w projektancie operacji ER.
 
-![Strona Konfiguracje](./media/er-excel-format-add-format.png)
+![Strona Konfiguracje.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Składnik pliku programu Excel
 
@@ -47,14 +47,14 @@ Aby skonfigurować składnik formatu ER konfiguracji, wybierz pozycję **Projekt
 
 Musisz dodać składnik **Excel\\Plik** do skonfigurowanego formatu ER, aby wygenerować dokument wychodzący w formacie programu Excel.
 
-![Składnik Excel\Plik](./media/er-excel-format-add-file-component.png)
+![Składnik Excel\Plik.](./media/er-excel-format-add-file-component.png)
 
 Aby określić układ dokumentu wychodzącego, dołącz skoroszyt programu Excel z rozszerzeniem xlsx do składnika **Excel\\Plik** jako szablon dokumentów wychodzących.
 
 > [!NOTE]
 > Podczas ręcznego dołączania szablonu należy użyć [typu dokumentu](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types), który został skonfigurowany dla tego celu w obszarze [parametrów ER](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Dodawanie załącznika do składnika Excel\Plik](./media/er-excel-format-add-file-component2.png)
+![Dodawanie załącznika do składnika Excel\Plik.](./media/er-excel-format-add-file-component2.png)
 
 Aby określić sposób, w jaki dołączony szablon będzie wypełniany po uruchomieniu skonfigurowanego formatu ER, musisz dodać zagnieżdżone składniki **Arkusz**, **Zakres** i **Komórka** do składnika **Excel\\Plik**. Każdy zagnieżdżony składnik musi być skojarzony z nazwanym elementem programu Excel.
 
@@ -62,7 +62,7 @@ Aby określić sposób, w jaki dołączony szablon będzie wypełniany po urucho
 
 Możesz wybrać pozycję **Importuj z programu Excel** na karcie **Importowanie** w okienku akcji, aby zaimportować nowy szablon do pustego formatu ER. W tym przykładzie składnik **Excel\\Plik** zostanie utworzony automatycznie, a następnie zostanie do niego dołączony zaimportowany szablon. Wszystkie wymagane składniki ER również zostaną utworzone automatycznie na podstawie listy odnalezionych nazwanych elementów w programie Excel.
 
-![Wybieranie pozycji Importuj z programu Excel](./media/er-excel-format-import-template.png)
+![Wybieranie pozycji Importuj z programu Excel.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Jeśli chcesz utworzyć opcjonalny element **Arkusz** w edytowalnym formacie ER, ustaw opcję **Utwórz element formatu Arkusz programu Excel** na **Tak**.
@@ -79,7 +79,7 @@ Na karcie **Mapowanie** projektanta operacji ER można skonfigurować właściwo
 - Jeśli wyrażenie właściwości **Włączone** zostało skonfigurowane do zwracania wartości **Prawda** w czasie wykonywania lub nie skonfigurowano żadnego wyrażenia, odpowiedni arkusz zostanie umieszczony w wygenerowanym dokumencie.
 - Jeśli wyrażenie właściwości **Włączone** zostało skonfigurowane tak, aby zwracało wartość **Fałsz** w czasie wykonywania, wygenerowany dokument nie będzie zawierać arkusza.
 
-![Przykład składnika Arkusz](./media/er-excel-format-sheet-component.png)
+![Przykład składnika Arkusz.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Składnik Zakres
 
@@ -182,7 +182,7 @@ Możesz wybrać pozycję **Aktualizuj z programu Excel** na karcie **Importowani
 >
 > Jeśli edytowalny format ER pierwotnie zawierał elementy **Arkusz**, zalecamy ustawienie opcji **Utwórz element formatu Arkusz programu Excel** na wartość **Tak** podczas importowania zaktualizowanego szablonu. W przeciwnym razie wszystkie zagnieżdżone elementy oryginalnego elementu **Arkusz** zostaną utworzone od początku. Dlatego wszystkie powiązania nowo utworzonych elementów formatu zostaną utracone w zaktualizowanym formacie ER.
 
-![Opcja Utwórz element formatu Arkusz programu Excel w oknie dialogowym aktualizowania z programu Excel](./media/er-excel-format-update-template.png)
+![Opcja Utwórz element formatu Arkusz programu Excel w oknie dialogowym aktualizowania z programu Excel.](./media/er-excel-format-update-template.png)
 
 Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w temacie [Modyfikowanie formatów raportowania elektronicznego przez ponowne zastosowanie szablonów programu Excel](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -190,7 +190,7 @@ Aby dowiedzieć się więcej o tej funkcji, wykonaj kroki opisane w temacie [Mod
 
 Podczas weryfikowania formatu ER, który można edytować, jest przeprowadzane sprawdzenie spójności w celu upewnienia się, że nazwa programu Excel znajduje się w aktualnie używanym szablonie programu Excel. Otrzymasz powiadomienie o ewentualnych niespójnościach. W przypadku niektórych niespójności będą oferowane opcje automatycznego rozwiązania danego problemu.
 
-![Komunikat o błędzie weryfikacji](./media/er-excel-format-validate.png)
+![Komunikat o błędzie weryfikacji.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Sterowanie obliczaniem formuł programu Excel
 
@@ -209,7 +209,7 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 1. Użyj dostarczonych konfiguracji ER do [wygenerowania](er-generate-printable-fti-forms.md) dokumentu faktury elektronicznej (FTI) do wydrukowania.
 2. Przejrzyj stopkę wygenerowanego dokumentu. Należy zauważyć, że zawiera informacje o numerze bieżącej strony i łącznej liczbie stron w dokumencie.
 
-    ![Przejrzyj stopkę wygenerowanego dokumentu w formacie programu Excel](./media/er-fillable-excel-footer-1.gif)
+    ![Przejrzyj stopkę wygenerowanego dokumentu w formacie programu Excel.](./media/er-fillable-excel-footer-1.gif)
 
 3. W konstruktorze formatów ER [otwórz](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) przykładowy format ER do przeglądu.
 
@@ -222,7 +222,7 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
 
     - Drugi składnik **Ciągu** wypełnia tekst zawierający numer bieżącej strony oraz łączną liczbę stron w bieżącym dokumencie.
 
-    ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów](./media/er-fillable-excel-footer-2.png)
+    ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów.](./media/er-fillable-excel-footer-2.png)
 
 4. Dostosuj przykładowy format ER w celu zmodyfikowania stopki bieżącej strony:
 
@@ -237,14 +237,14 @@ Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Micro
         1. Dodaj składnik **Ciąg**, który wyrównuje datę przetwarzania z prawej strony i przedstawia ją w 8-punktowej czcionce "Segoe UI Regular" (**"&R&"Segoe UI,Regular"&8"**).
         2. Umożliwia dodanie składnika **Ciągu**, który wypełnia datę przetwarzania w niestandardowym formacie (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów](./media/er-fillable-excel-footer-3.png)
+        ![Sprawdzanie poprawności stopki składnika formatu ER na stronie Projektant formatów.](./media/er-fillable-excel-footer-3.png)
 
     4. [Ukończ](er-quick-start2-customize-report.md#CompleteDerivedFormat) wersję roboczą **Niestandardowej darmowej pochodnej faktury elektronicznej (Excel)** formatu ER.
 
 5. [Skonfiguruj](er-generate-printable-fti-forms.md#configure-print-management) zarządzanie drukowaniem, aby używać pochodnego formatu ER **Faktura niezależna (Excel) - niestandardowa** zamiast przykładowego formatu ER.
 6. Wygeneruj dokument FTI, który można wydrukować, i przejrzyj stopkę wygenerowanego dokumentu.
 
-    ![Sprawdzanie stopki wygenerowanego dokumentu w formacie programu Excel](./media/er-fillable-excel-footer-4.gif)
+    ![Sprawdzanie stopki wygenerowanego dokumentu w formacie programu Excel.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

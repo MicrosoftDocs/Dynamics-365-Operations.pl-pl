@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816890"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356683"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Zaliczka na podatek w transakcjach zakupu
 
@@ -64,15 +64,15 @@ Domyślna grupa potrąconej zaliczki na podatek i grupa potrąconej zaliczki na 
 
 Tymczasowa kwota potrąconej zaliczki na podatek jest dostępna w polu **Skorygowana potrącona zaliczka na podatek** na karcie **Sumy** na stronie **Zamówienie zakupu**.
 
-![Potrącona zaliczka na podatek jest uwzględniona w zamówieniu zakupu](media/withholding-tax-adjusted.png)
+![Potrącona zaliczka na podatek jest uwzględniona w zamówieniu zakupu.](media/withholding-tax-adjusted.png)
 
 Potrącona zaliczka na podatek jest obliczana na podstawie **Arkusz płatności dostawców**. Można ręcznie skorygować stosowane kody potrąconej zaliczki na podatek oraz rzeczywistą kwoty potrąconej zaliczki na podatek na karcie **Potrącona zaliczka na podatek** na stronie **Rozlicz transakcje**.
 
-![Potrącenie można ręcznie skorygować na stronie Rozlicz transakcje](media/withholding-tax-vendor-payment-tab.png)
+![Potrącenie można ręcznie skorygować na stronie Rozlicz transakcje.](media/withholding-tax-vendor-payment-tab.png)
 
 Uzyskana kwota podatku potrąconego u źródła zostanie odjęta od płatności dostawcy i zaksięgowana na koncie **Potrąconej zaliczki na podatek** w powiązanym załączniku.
 
-![Konto potrąconej zaliczki na podatek pokazujące powiązany załącznik](media/withholding-tax-adjusted.png)
+![Konto potrąconej zaliczki na podatek pokazujące powiązany załącznik.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

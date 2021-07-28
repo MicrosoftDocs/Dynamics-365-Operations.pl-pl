@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102981"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354912"
 ---
 # <a name="create-maintenance-requests"></a>Utwórz żądania konserwacji
 
@@ -52,7 +52,7 @@ Sekcja **Aktywne żądania konserwacji** w okienku **Powiązane informacje** po 
 11. W polu **notatki** wprowadź wszelkie dodatkowe notatki, które są wymagane.
 12. Kliknij przycisk **OK**.
 
-![Utwórz żądanie konserwacji](media/03-manage-maintenance-requests.png)
+![Utwórz żądanie konserwacji.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Późniejsze przetwarzanie żądań konserwacji
 
@@ -67,7 +67,7 @@ W widoku szczegółów można aktualizować różne informacje. Oto kilka przyk�
 - Wybierz typ zadania konserwacji i, jeśli te informacje są istotne, wariant zadania konserwacji i profesję zadania.
 - W polach **szerokość** i **długość** geograficzna wprowadź współrzędne geograficzne. Wszystkie współrzędne, które są dodawane do żądania konserwacji są automatycznie przenoszone do powiązanego zlecenia pracy. 
 
-![Aktualizuj żądanie konserwacji](media/04-manage-maintenance-requests.png)
+![Aktualizuj żądanie konserwacji.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Jeśli wybierzesz składnik majątku podczas tworzenia żądania konserwacji, można dodać jeden błąd do zasobu. Po utworzeniu żądania konserwacji można dodać więcej błędów, zgodnie z żądaniem. Aby dodać błędy, wybierz opcję **błąd składnika majątku** na stronie **wszystkie żądania konserwacji**.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b579ebff28e01caa727a22b01ae636ff713a27aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359964"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Udoskonalenia cXML dotyczące zakupów
 
@@ -38,7 +38,7 @@ Po włączeniu tej funkcji należy skonfigurować ustawienia w następujących t
 
 Poniższa ilustracja podsumowuje tę konfigurację.
 
-![Obszary służące do konfigurowania funkcji cXML](media/cxml-settings-areas.png "Obszary służące do konfigurowania funkcji cXML")
+![Obszary służące do konfigurowania funkcji cXML.](media/cxml-settings-areas.png "Obszary służące do konfigurowania funkcji cXML")
 
 Ponadto należy skonfigurować [Zadanie wsadowe żądania o zamówienie zakupu](#po-batch). To zadanie wsadowe służy do wysyłania potwierdzonych zamówień zakupu.
 
@@ -46,7 +46,7 @@ Ponadto należy skonfigurować [Zadanie wsadowe żądania o zamówienie zakupu](
 
 Na stronie **parametry cXML** można określić kilka ustawień globalnych, które mają zastosowanie do funkcji wysyłania zamówień zakupu.
 
-![Strona parametry cXML](media/cxml-parameters.png "Strona parametry cXML")
+![Strona parametry cXML.](media/cxml-parameters.png "Strona parametry cXML")
 
 Przejdź do **Zaopatrzenie i sourcing \> Konfiguracja \> zarządzanie cXML \> parametry cXML** i ustaw następujące parametry:
 
@@ -67,7 +67,7 @@ Za każdym razem, gdy użytkownik potwierdzi zamówienie zakupu, w którym opcja
 - Aby skonfigurować dostawcę w taki sposób, aby automatycznie używał cXML dla wszystkich nowych zamówień zakupu utworzonych z zapotrzebowania, należy przejść do **Zaopatrzenie i sourcing \> Dostawcy \> Wszyscy dostawcy**, a następnie wybrać lub utworzyć dostawcę, aby otworzyć jego stronę szczegółów. Następnie na skróconej karcie **Domyślne zamówienia zakupu** należy określić opcję **Wyślij zamówienie zakupu przez cXML** wartość _Tak_. Jeśli cXML ma być również automatycznie używany do nowych zamówień zakupu, które **nie** są tworzone na podstawie zapotrzebowania, należy również ustawić właściwość zamówienia **ENABLEMANUALPO** na wartość _True_ dla powiązanego katalogu zewnętrznego, zgodnie z opisem w sekcji [Ustawianie właściwości zamówienia](#set-order-properties) później w tym temacie.
 - W przypadku poszczególnych zamówień zakupu przejdź do **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**, a następnie wybierz lub utwórz zamówienie zakupu, aby otworzyć jego stronę szczegółów. Przełącz się na widok **Nagłówek**, a następnie na skróconej karcie **Ustawienia** ustaw opcję **Wyślij zamówienie zakupu za pomocą cXML** zgodnie z wymaganiami.
 
-![Ustawienia domyślne zamówień zakupu dostawcy](media/cxml-order-defaults.png "Ustawienia domyślne zamówień zakupu dostawcy")
+![Ustawienia domyślne zamówień zakupu dostawcy.](media/cxml-order-defaults.png "Ustawienia domyślne zamówień zakupu dostawcy")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Skonfiguruj katalog zewnętrzny, aby używać cXML
 
@@ -76,7 +76,7 @@ Na stronie **Katalogi zewnętrzne** dla każdego z katalogów można skonfigurow
 > [!NOTE]
 > Po potwierdzeniu zamówienia, które można wysłać za pośrednictwem cXML, system wyszukuje dostawcę powiązanego z zamówieniem, a następnie znajduje pierwszy aktywny katalog zewnętrzny, który jest powiązany z tym dostawcą. System używa ustawień z tego zewnętrznego katalogu do wysłania zamówienia zakupu. Jeśli skonfigurowanych jest wiele katalogów zewnętrznych, system używa tylko pierwszego znalezionego katalogu zewnętrznego na podstawie dostawcy w zamówieniu zakupu. Dlatego zaleca się utworzenie tylko jednego zewnętrznego katalogu dla każdego dostawcy.
 
-![Ustawienia katalogu zewnętrznego](media/cxml-supplier-catalog.png "Ustawienia katalogu zewnętrznego")
+![Ustawienia katalogu zewnętrznego.](media/cxml-supplier-catalog.png "Ustawienia katalogu zewnętrznego")
 
 ### <a name="set-the-punchout-protocol-type"></a>Ustaw typ protokołu PunchOut
 
@@ -143,11 +143,11 @@ Jak wspomniano w sekcji [Ustaw właściwości zamówienia](#set-order-properties
 
 Aby określić typy notatek, dla których będzie wyglądał system, przejdź do **Zaopatrzenie i sourcing \> Ustawienia \> Formularze \> Ustawienia formularza**. Następnie na karcie **Zamówienie zakupu** w polu **Uwzględnij dokumenty typu** wybierz typ notatki, która ma być dołączana. Zostaną uwzględnione tylko notatki tekstowe, a nie załączniki dokumentów.
 
-![Strona Ustawienia formularza](media/cxml-form-setup.png "Strona Ustawienia formularza")
+![Strona Ustawienia formularza.](media/cxml-form-setup.png "Strona Ustawienia formularza")
 
 Załączniki będą dołączane do zamówienia zakupu tylko wtedy, gdy w polu **Typ** ustawiono wartość, która została wybrana w polu **Uwzględnij dokumenty typu**, a pole **Ograniczenia** jest ustawione na _Zewnętrzne_. Aby utworzyć, wyświetlić lub edytować załączniki dla zamówienia zakupu, przejdź do **Zaopatrzenie i sourcing \> Wszystkie zamówienia zakupu**, wybierz lub utwórz zamówienie zakupu, a następnie wybierz przycisk **Załączniki** (symbol spinacza) w prawym górnym rogu.
 
-![Dołączona notatka, która jest skonfigurowana do wysłania do dostawcy](media/cxml-note-to-vendor.png "Dołączona notatka, która jest skonfigurowana do wysłania do dostawcy")
+![Dołączona notatka, która jest skonfigurowana do wysłania do dostawcy.](media/cxml-note-to-vendor.png "Dołączona notatka, która jest skonfigurowana do wysłania do dostawcy")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Wyświetl dziennik komunikatów koszyka cXML dla zewnętrznego katalogu PunchOut
 
@@ -155,7 +155,7 @@ W przypadku ustawienia pola **Typ protokołu Punchout** na _cXML_ dla zewnętrzn
 
 Aby otworzyć dziennik dla zewnętrznego katalogu, wybierz odpowiedni katalog, a następnie w okienku akcji wybierz opcję **Dziennik wiadomości koszyka cXML**. Na stronie **Dziennik wiadomości koszyka cXML** jest wyświetlana lista zwróconych koszyków, kod XML powiązany z tymi koszykami oraz wiersze utworzone w powiązanym zapotrzebowaniu zakupu.
 
-![Strona dziennika wiadomości koszyka cXML](media/cxml-cart-message-log.png "Strona dziennika wiadomości koszyka cXML")
+![Strona dziennika wiadomości koszyka cXML.](media/cxml-cart-message-log.png "Strona dziennika wiadomości koszyka cXML")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Umożliwia ustawienie elementów zewnętrznych dla PunchOut katalogu zewnętrznego
 
@@ -178,21 +178,21 @@ Aby dodać elementy zewnętrzne do katalogu zewnętrznego, należy wykonać nast
         - **Nazwisko** — służy do używania nazwiska osoby kontaktowej, która jest skojarzona z użytkownikiem, który korzysta z zewnętrznego katalogu.
         - **Numer telefonu** — służy do używania głównego numeru telefonu osoby kontaktowej, która jest skojarzona z użytkownikiem, który korzysta z zewnętrznego katalogu.
 
-![Ustawienia elementu zewnętrznego](media/cxml-extrinsics.png "Ustawienia elementu zewnętrznego")
+![Ustawienia elementu zewnętrznego.](media/cxml-extrinsics.png "Ustawienia elementu zewnętrznego")
 
 Użytkownik lub administrator nie zobaczy elementów zewnętrznych, ponieważ nie zostaną one dodane, dopóki użytkownik nie wykona PunchOut. Zostaną one automatycznie wstawione między elementami **BuyerCookie** i **BrowserFromPost** w komunikacie żądania ustawienia cXML. Z tego względu nie trzeba ustawiać ich ręcznie w formacie XML podczas konfigurowania zewnętrznego katalogu.
 
-![Elementy zewnętrzne dodane do pliku XML](media/cxml-extrinsics-xml.png "Elementy zewnętrzne dodane do pliku XML")
+![Elementy zewnętrzne dodane do pliku XML.](media/cxml-extrinsics-xml.png "Elementy zewnętrzne dodane do pliku XML")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Tworzenie i przetwarzanie zamówienia zakupu
 
 Podczas tworzenia zamówienia zakupu dla dostawcy system odziedziczy ustawienie opcja **Wyślij zamówienie zakupu za pośrednictwem cXML** od tego dostawcy. Jednak ustawienie pozostaje dostępne na skróconej karcie **Ustawienia** w widoku **Nagłówek** zamówienia zakupu, dzięki czemu będzie można zmienić je później w razie potrzeby.
 
-![Zamówienie zakupu ustawione do używania cXML](media/cxml-purchase-order.png "Zamówienie zakupu ustawione do używania cXML")
+![Zamówienie zakupu ustawione do używania cXML.](media/cxml-purchase-order.png "Zamówienie zakupu ustawione do używania cXML")
 
 Podczas tworzenia zamówienia zakupu na podstawie zapotrzebowania na zakup pochodzącego z przepływu PunchOut wszystkie wymagane szczegóły wiersza zostaną wypełnione. Następnie można ręcznie dodać wiersze zamówienia zakupu lub skopiować je z innych zamówień zakupu. Upewnij się, że wszystkie wymagane pola zostały ustawione. Wymagane pola zawierają numer odwołania zewnętrznego, który jest numerem dostawcy, który zostanie użyty w komunikacie cXML.
 
-![Przykład zewnętrznego numeru odwołania](media/cxml-line-details.png "Przykład zewnętrznego numeru odwołania")
+![Przykład zewnętrznego numeru odwołania.](media/cxml-line-details.png "Przykład zewnętrznego numeru odwołania")
 
 Po zakończeniu wypełniania wszystkich szczegółów zamówienia zakupu należy go potwierdzić. Żaden komunikat nie zostanie wysłany, chyba że zamówienie zakupu zostanie potwierdzone. Aby potwierdzić zamówienie zakupu, w okienku akcji na karcie **Zakup**, w grupie **Akcje** kliknij **Potwierdź**. 
 
@@ -200,17 +200,17 @@ Po potwierdzeniu zamówienia zakupu można wyświetlić stan potwierdzenia za po
 
 Każde zamówienie zakupu może mieć wiele potwierdzeń. Każde potwierdzenie jest oznaczone numerem przyrostowym. Na poniższym rysunku zamówienie zakupu jest *00000275*, a potwierdzenie *00000275-1*. Ta numeracja odzwierciedla standardową funkcjonalność Supply Chain Management, w której zmiany w zamówieniu zakupu, a tym samym typ wiadomości cXML, który powinien zostać wysłany do dostawcy, są identyfikowane na podstawie potwierdzenia. Jak widać na ilustracji, strona **Potwierdzenia zamówienia zakupu** zawiera również pola **Stan wysyłania zamówienia** i **Stan dostawcy żądania zamówienia**. Aby uzyskać więcej informacji o różnych wartościach stanu, które mogą być widoczne na tej stronie, zapoznaj się z sekcją [Monitoruj żądania zamówienia zakupu](#monitor-po-requests) w dalszej części tego tematu.
 
-![Strona potwierdzenia zamówienia zakupu](media/cxml-po-confirmations.png "Strona potwierdzenia zamówienia zakupu")
+![Strona potwierdzenia zamówienia zakupu.](media/cxml-po-confirmations.png "Strona potwierdzenia zamówienia zakupu")
 
 Aby wyświetlić więcej informacji o dokumencie, wybierz **Żądanie zamówienia zakupu** powyżej siatki.
 
 Strona **Żądanie zamówienia zakupu** zawiera dwie siatki. Siatka w górnej części strony ma jeden rekord dla każdego zamówienia zakupu, które jest oznaczone do wysłania. Siatka na karcie **Historia żądań zamówień zakupu** w dolnej części strony może zawierać kilka rekordów dla wybranego zamówienia zakupu, aby wskazać stan każdego potwierdzenia. Na poniższej ilustracji przedstawiono 00000275 zamówienia zakupu w górnej siatce oraz dokument 00000275-1 w siatce na karcie **Historia żądań zamówień zakupu**.
 
-![Strona żądania zamówienia zakupu](media/cxml-po-request.png "Strona żądania zamówienia zakupu")
+![Strona żądania zamówienia zakupu.](media/cxml-po-request.png "Strona żądania zamówienia zakupu")
 
 Jeśli zadanie wsadowe jest skonfigurowane i uruchomione, dokument zostanie wysłany. Po wysłaniu dokumentu można wyświetlić zmianę stanu. Na poniższej ilustracji pole **Stan wysyłania zamówienia** ma wartość _Wysłane_. Pole **Stan dostawcy żądania zamówienia** jest ustawione na _Potwierdzone_, aby wskazać, że dostawca otrzymał dokument i mógł go odczytać i zapisać w systemie. W siatce na karcie **Historia żądań zamówień zakupu** jest wyświetlany czas wysłania dokumentu. Aby uzyskać więcej informacji o różnych wartościach stanu, które mogą być widoczne na tej stronie, zapoznaj się z sekcją [Monitoruj żądania zamówienia zakupu](#monitor-po-requests).
 
-![Komunikaty o stanie na stronie żądanie zamówienia zakupu](media/cxml-po-request-2.png "Komunikaty o stanie na stronie żądanie zamówienia zakupu")
+![Komunikaty o stanie na stronie żądanie zamówienia zakupu.](media/cxml-po-request-2.png "Komunikaty o stanie na stronie żądanie zamówienia zakupu")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planowanie zadania wsadowego żądania zamówienia zakupu
 
@@ -226,7 +226,7 @@ Proces będzie szukał dokumentów wniosku o zamówienie zakupu, które mają st
 
 Jeśli zamówienia, które można wysłać za pośrednictwem cXML, zostaną potwierdzone w stanie _Oczekiwania_. Jak opisano w sekcji [Tworzenie i przetwarzanie zamówienia zakupu](#create-po), stan zamówienia zakupu można wyświetlić na stronie **Żądania zamówienia zakupu**. Każde żądanie zamówienia zakupu może mieć jeden z kilku stanów, w zależności od parametrów i danych. W tej sekcji opisano różne typy stanów i wartości, które mogą mieć. Te informacje mogą ułatwić zarządzanie problemami i zrozumienie stanu zamówień zakupu.
 
-![Status zamówienia na stronie zamówienia](media/cxml-monitor-po-request.png "Status zamówienia na stronie zamówienia")
+![Status zamówienia na stronie zamówienia.](media/cxml-monitor-po-request.png "Status zamówienia na stronie zamówienia")
 
 Siatka w górnej części strony **Żądanie zamówienia zakupu** może zawierać następujące wartości stanu:
 
@@ -262,13 +262,13 @@ W siatce na karcie **Historia żądań zamówień zakupu** w dolnej części str
 
 Aby wyświetlić kod XML wiadomości z żądaniem zamówienia zakupu, wybierz kartę **Rekst żądania XML** u dołu strony **Żądania zamówienia zakupu**. Informacje na tej karcie mogą być pomocne podczas sprawdzania poprawności testów lub błędów. Aby ułatwić odczytywanie informacji, można wyświetlić ją jako wiadomość sformatowaną. Skopiuj zawartość karty do pliku tekstowego, a następnie wyświetl ją w edytorze XML.
 
-![Karta tekst XML żądania](media/cxml-request-xml-text.png "Karta tekst XML żądania")
+![Karta tekst XML żądania.](media/cxml-request-xml-text.png "Karta tekst XML żądania")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Służy do wyświetlania szczegółów odpowiedzi dostawcy
 
 Aby wyświetlić zawartość potwierdzenia dostawcy lub odpowiedzi na błędy, wybierz kartę **Odpowiedź XML** na dole strony **Żądanie zamówienia zakupu**.
 
-![Karta XML odpowiedzi](media/cxml-response-xml.png "Karta XML odpowiedzi")
+![Karta XML odpowiedzi.](media/cxml-response-xml.png "Karta XML odpowiedzi")
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

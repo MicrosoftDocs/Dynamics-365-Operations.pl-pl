@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eb0b8b419b302fbd0bc107bca22f8b26774ba3c7
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 040cac9f3678a0a983d3dd917ae553a5184e4d1e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019842"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349455"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Włączanie integracji Dynamics 365 Commerce i Microsoft Teams
 
@@ -51,7 +51,7 @@ Aby włączyć integrację Teams w centrali Commerce, wykonaj następujące krok
 
 Poniższa ilustracja przedstawia przykład konfiguracji integracji Teams w centrali Commerce.
 
-![Konfiguracja integracji zespołów w Commerce Headquarters](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
+![Konfiguracja integracji zespołów w Commerce Headquarters.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)
 
 ## <a name="disable-teams-integration"></a>Wyłączanie integracji Teams
 

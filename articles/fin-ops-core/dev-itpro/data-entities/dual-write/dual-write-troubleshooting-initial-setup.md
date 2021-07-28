@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753997"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350843"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -42,7 +42,7 @@ Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących i
 
 Błędy na stronie **Łącze konfiguracji do Dataverse** są zazwyczaj spowodowane niekompletnymi problemami z ustawieniami lub uprawnieniami. Upewnij się, że cała kontrola kondycji jest przekazana na stronie **Łącze konfiguracji do Dataverse**, jak to pokazano na poniższej ilustracji. Nie można połączyć się z podwójnym zapisywaniem, dopóki nie przejdzie cała kontrola kondycji.
 
-![Pomyślne sprawdzenie kondycji](media/health_check.png)
+![Pomyślne sprawdzenie kondycji.](media/health_check.png)
 
 Aby połączyć środowiska Finance and Operations i Dataverse, trzeba mieć poświadczenia administratora dzierżawy Azure AD. Po połączeniu środowiska użytkownicy mogą się logować przy użyciu swoich poświadczeń konta i aktualizować istniejące mapowanie tabeli.
 
@@ -77,7 +77,7 @@ Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku
 4. Umożliwia wybór firmy połączonej w przypadku skonfigurowania podwójnego zapisywania.
 5. Sprawdź, czy w kolumnie **Domyślnego zespołu będącego właścicielem** znajduje się wartość. Na poniższej ilustracji kolumna **Domyślny zespół będący właścicielem** jest ustawiona na **USMF podwójnego zapisywania**.
 
-    ![Weryfikowanie domyślnego zespołu będącego właścicielem](media/default_owning_team.png)
+    ![Weryfikowanie domyślnego zespołu będącego właścicielem.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Umożliwia znalezienie limitu liczby tabel prawnych lub firm, które mogą być połączone w celu wykonania podwójnego odpisu
 

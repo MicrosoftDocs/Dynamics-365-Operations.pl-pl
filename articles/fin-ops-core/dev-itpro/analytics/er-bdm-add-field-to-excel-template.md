@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 991fe4ea56a2726c5df835cfc90a390cef2d5df5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: af9f3dd81b0681579c14e0afb8281706e8aa534d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751137"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351801"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Dodawanie nowych pól do szablonu dokumentu biznesowego w formularzu Microsoft Excel
 
@@ -50,36 +50,36 @@ Konfiguracja **Darmowy tekst faktury (Excel)** tego rozwiązania zawiera szablon
 
 Aby uzyskać więcej informacji jak importować konfiguracji ER, zapoznaj się z [Zarządzanie cyklem życia konfiguracji Raportowania elektronicznego](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Strona biblioteki udostępnionych elementów zawartości LCS](./media/BDM-AddFldExcel-LCS.png)
+![Strona biblioteki udostępnionych elementów zawartości LCS.](./media/BDM-AddFldExcel-LCS.png)
 
 ### <a name="edit-the-er-solution-template"></a>Edytuj szablon rozwiązania ER
 
 1.  Zaloguj się jako użytkownik z dostępem do strony obszaru roboczego **zarządzania dokumentami biznesowymi**.
 2.  Otwórz obszaru roboczy **zarządzania dokumentami biznesowymi**.
 
-    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi](./media/BDM-AddFldExcel-Workspace.png)
+    ![Strona obszaru roboczego zarządzania dokumentami biznesowymi.](./media/BDM-AddFldExcel-Workspace.png)
 
 3.  W siatce wybierz szablon **Darmowy tekst faktury (Excel)**.
 4.  W prawym okienku wybierz opcję **nowy szablon**, aby utworzyć nowy szablon oparty na wybranym szablonie.
-5.  W polu **tytuł** wprowadź **Darmowy tekst faktury (Excel) contoso** jako tytuł nowego szablonu.
+5.  W polu **tytuł** wprowadź **Darmowy tekst faktury (Excel) Contoso** jako tytuł nowego szablonu.
 6.  Wybierz **OK**, aby potwierdzić rozpoczęcie procesu edycji.
 
 Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do edytowania wybranego szablonu w trybie online w osadzonym formancie.
 
-![Strona edytora szablonów BDM](./media/BDM-AddFldExcel-EditableTemplate.png)
+![Strona edytora szablonów BDM.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### <a name="add-the-label-for-a-new-field-to-the-template"></a>Dodaj etykietę nowego pola do szablonu
 
 1.  Na stronie Edytor szablonów BDM na wstążce programu Excel na karcie **Widok** zaznacz pola wyboru **nagłówki i linie siatki** dla edytowalnego szablonu programu Excel.
 
-    ![Zaznaczone pola wyboru nagłówki i linie siatki](./media/BDM-AddFldExcel-EditableTemplate2.png)
+    ![Zaznaczone pola wyboru nagłówki i linie siatki.](./media/BDM-AddFldExcel-EditableTemplate2.png)
 
 2.  Zaznacz komórki **E8:F8**.
 3.  Na wstążce programu Excel na karcie **Widok główny** wybierz opcję **Scal & Scentruj**, aby scalić wybrane komórki do nowej, scalonej komórki **E8:F8**.
 4.  W Scalonej komórce **E8:F8** wprowadź adres **URL**.
 5.  Wybierz scaloną komórkę **E7:F7**, wybierz opcję **Malarz formatów**, a następnie wybierz scaloną komórkę **E8:F8**, aby ją sformatować w ten sam sposób,co scalona komórka **E7:F7**.
 
-    ![Pole nowej etykiety dodanej do szablonu](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![Pole nowej etykiety dodanej do szablonu.](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>Sformatuj szablon, aby zarezerwować miejsce dla nowego pola
 
@@ -87,13 +87,13 @@ Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do 
 2.  Na wstążce programu Excel na karcie **Widok główny** wybierz opcję **Scal & Scentruj**, aby scalić wybrane komórki do nowej, scalonej komórki **G8:H8**.
 3.  Wybierz scaloną komórkę **G7:H7**, wybierz opcję **Malarz formatów**, a następnie wybierz scaloną komórkę **G8:H8**, aby ją sformatować w ten sam sposób,co scalona komórka **G7:H7**.
 
-    ![Miejsce zarezerwowane dla nowego pola](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Miejsce zarezerwowane dla nowego pola.](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.  W polu **nazwa** wybierz opcję **companyinfo**.
 
     **Companyinfo** zakres bieżącego szablonu programu Excel zawiera wszystkie pola, które są używane do wypełniania nagłówka wygenerowanego raportu ze szczegółami bieżącej firmy jako strony sprzedającej.
 
-    ![Wybrano zakres CompanyInfo](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![Wybrano zakres CompanyInfo.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### <a name="add-a-new-field-to-the-template"></a>Dodaj nowego pola do szablonu
 
@@ -103,7 +103,7 @@ Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do 
     > [!NOTE]
     > Musisz zmienić sekcję szablonu, która ma być używana jako nowe pole. Ta korekta została już dokonana przez formatowanie Scalonej komórki **G8:H8**.
 
-    ![Dodawa nowego pola do szablonu](./media/BDM-AddFldExcel-AddCell.png)
+    ![Dodawanie nowego pola do szablonu.](./media/BDM-AddFldExcel-AddCell.png)
 
 3.  Wybierz **Excel\Cell**, aby dodać nowe pole jako komórkę w szablonie.
 
@@ -114,11 +114,11 @@ Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do 
 4.  W polu **zakres programu Excel** wprowadź **CompanyURL_Value**.
 5.  Kliknij przycisk **OK**.
 
-    ![Do struktury szablonu dodano CompanyURL_Value pole](./media/BDM-AddFldExcel-EditableTemplate5.png)
+    ![Do struktury szablonu dodano CompanyURL_Value pole.](./media/BDM-AddFldExcel-EditableTemplate5.png)
 
 6.  W okienku **struktura szablonów** wybierz przycisk wielokropka (...), a następnie wybierz opcję **pokazuj powiązania**.
 
-    ![Pokaż wybrane powiązania](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Pokaż wybrane powiązania.](./media/BDM-AddFldExcel-ShowBindings.png)
 
     W okienku **struktury szablonów** są teraz wyświetlane źródła danych dostępne w odpowiednim formacie modułu ER.
 
@@ -126,21 +126,21 @@ Pojawia się strona Edytor szablonów BDM. Można wykorzystać Microsoft 365 do 
 8.  W sekcji **źródła danych** w panelu **Struktura szablonów** rozwiń gałąź **Model \> InvoiceBase \> CompanyInfo**.
 9.  W obszarze **CompanyInfo** wybierz pozycję **WebsiteURL**.
 
-    ![Wybrane elementy WebsiteURL](./media/BDM-AddFldExcel-BindURL.png)
+    ![Wybrane elementy WebsiteURL.](./media/BDM-AddFldExcel-BindURL.png)
 
 10. Wybierz **Powiąż**.
 11. W okienku **struktura szablonu** wybierz opcję **Zapisz**, a następnie zamknij stronę Edytor szablonów BDM.
 
 W obszarze roboczym **zarządzanie dokumentami biznesowymi** na karcie **szablon** w prawym okienku jest wyświetlany zaktualizowany szablon. W siatce Zwróć uwagę, że pole **stan** edytowanego szablonu zostało zmienione na wartość **wersja robocza**, a pole **Poprawka** nie jest już puste. Zmiany te wskazują, że proces edycji tego szablonu został rozpoczęty.
 
-![Szablon edytowany w obszarze roboczym zarządzanie dokumentami biznesowymi](./media/BDM-AddFldExcel-Workspace2.png)
+![Szablon edytowany w obszarze roboczym zarządzanie dokumentami biznesowymi.](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## <a name="review-company-settings"></a>Przejrzyj ustawienia firmy
 
 1.  Wybierz kolejno opcje **Administrowanie organizacją \> Organizacje \> Firmy**.
 2.  Na skróconej karcie **informacji kontaktowych** sprawdź, czy adres URL firmy został wprowadzony.
 
-![Adres URL firmy wprowadzony na stronie firmy](./media/BDM-AddFldExcel-CompanyInfo.png)
+![Adres URL firmy wprowadzony na stronie firmy.](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Generowanie dokumentów biznesowych w celu przetestowania zaktualizowanego szablonu
 
@@ -150,13 +150,13 @@ W obszarze roboczym **zarządzanie dokumentami biznesowymi** na karcie **szablon
 4.  Pod **Faktura niezależna** wybierz **Dokument oryginalny**, aby określić zakres faktur do przetwarzania.
 5.  W prawym okienku w polu **Format raportu** wybierz szablon **Darmowy tekst faktury (Excel) Contoso** dla określonego poziomu dokumentu.
 
-    ![Wybrany szablon Contoso — Faktura niezależna (Excel)](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![Wybrany szablon Contoso — Faktura niezależna (Excel).](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Naciśnij klawisz **Esc**, aby zamknąć bieżącą stronę.
 7.  Wybierz opcje **Drukuj \> Wybrane**.
 8.  Pobierz wygenerowany dokument i otwórz go w programie Excel.
 
-    ![Faktura niezależna w Excel](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Faktura niezależna w Excel.](./media/BDM-AddFldExcel-PreviewReport.png)
 
 Zmodyfikowany szablon jest używany do generowania raportu faktury niezależnej dla wybranego towaru. Aby przeanalizować wpływ, jaki na ten raport mają zmiany wprowadzone w szablonie, uruchom raport w jednej sesji aplikacji natychmiast po zmianie szablonu w innej sesji aplikacji.
 

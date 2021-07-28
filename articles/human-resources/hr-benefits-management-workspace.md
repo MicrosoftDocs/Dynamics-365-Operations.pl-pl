@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 45f776238fbb8e028e8d5b2f342b7d27009c686d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193438"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353621"
 ---
 # <a name="benefits-management-workspace"></a>Obszar roboczy zarządzania świadczeniami
 
@@ -31,7 +31,7 @@ ms.locfileid: "6193438"
 W tym temacie opisano obszar roboczy **Zarządzanie świadczeniami** w rozwiązaniu Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Aby wyświetlić obszar roboczy **Zarządzanie świadczeniami**, należy najpierw włączyć funkcję **obszaru roboczego Zarządzanie świadczeniami (wersja zapoznawcza)** w zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>![Włącz obszar roboczy zarządzania świadczeniami](./media/hr-benefits-management-workspace-enable.png)
+> Aby wyświetlić obszar roboczy **Zarządzanie świadczeniami**, należy najpierw włączyć funkcję **obszaru roboczego Zarządzanie świadczeniami (wersja zapoznawcza)** w zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>![Włącz obszar roboczy zarządzania świadczeniami.](./media/hr-benefits-management-workspace-enable.png)
 
 Obszar roboczy **Zarządzanie świadczeniami** umożliwia szybki widok elementów świadczeń, które wymagają Twojej uwagi. Na tej stronie możesz zobaczyć:
 
@@ -43,13 +43,13 @@ Obszar roboczy **Zarządzanie świadczeniami** umożliwia szybki widok elementó
 - Pracownicy z trwającymi zdarzeniami życiowymi
 - Pracownicy z otwartymi rejestracjami, którzy nie wybrali żadnych planów
 
-![Obszar roboczy zarządzania świadczeniami](./media/hr-benefits-management-workspace.png)
+![Obszar roboczy zarządzania świadczeniami.](./media/hr-benefits-management-workspace.png)
 
 ## <a name="view-action-items"></a>Wyświetlanie elementów akcji
 
 Możesz wyświetlić swoje działania, wybierając kafelek lub kartę. Jeśli wybierzesz kartę, możesz wyświetlać i wybierać pracowników bezpośrednio na stronie obszaru roboczego.
 
-![Elementy akcji](./media/hr-benefits-management-workspace-action-items.png)
+![Elementy akcji.](./media/hr-benefits-management-workspace-action-items.png)
 
 W przypadku wybrania kafelka przejdź na stronę z tym obszarem. Na przykład wybranie dowolnej z tych kafelków powoduje wyświetlenie strony **Plany świadczeń pracownika** odfiltrowanych dla pracowników, na których musisz podjąć działania:
 
@@ -58,21 +58,21 @@ W przypadku wybrania kafelka przejdź na stronę z tym obszarem. Na przykład wy
 - **Zarejestrowani w świadczeniach**
 - **Nowo zatrudniona osoba nie została zarejestrowana**
 
-![Plany świadczeń pracowniczych](./media/hr-benefits-management-workspace-plans.png)
+![Plany świadczeń pracowniczych.](./media/hr-benefits-management-workspace-plans.png)
 
 Wybieranie **Trwającego zdarzenia życiowego** lub kafelków **Przyszłego zdarzenia życiowego** umożliwia dostęp do listy aktywnych lub przyszłych zdarzeń.
 
-![Zdarzenia zmiany sytuacji życiowej](./media/hr-benefits-management-workspace-life-events.png)
+![Zdarzenia zmiany sytuacji życiowej.](./media/hr-benefits-management-workspace-life-events.png)
 
 ## <a name="processing"></a>Przetwarzanie
 
 Aby przetworzyć uprawnienia do rejestracji, zdarzenia z życia lub aktualizacje zmian stawek, wybierz odpowiednią pozycję na pasku nawigacyjnym.
 
-![Przetwarzanie](./media/hr-benefits-management-workspace-processing.png)
+![Przetwarzanie.](./media/hr-benefits-management-workspace-processing.png)
 
 Aby wyświetlić wyniki przetwarzania, wybierz **Wyniki procesu** na stronie.
 
-![Wyniki procesu](./media/hr-benefits-management-workspace-process-results.png)
+![Wyniki procesu.](./media/hr-benefits-management-workspace-process-results.png)
 
 Aby uzyskać więcej informacji na temat przetwarzania świadczeń, zobacz:
 
@@ -86,13 +86,13 @@ Aby uzyskać więcej informacji na temat przetwarzania świadczeń, zobacz:
 
 Aby wyświetlić inny okres świadczeń, wybierz go z listy rozwijanej **Okres**.
 
-![Zmień okres](./media/hr-benefits-management-workspace-period.png)
+![Zmień okres.](./media/hr-benefits-management-workspace-period.png)
 
 ## <a name="view-more-options"></a>Wyświetl więcej opcji
 
 Aby wyświetlić więcej informacji i akcji, które można podjąć, wybierz opcję **Łącza**.
 
-![Linki](./media/hr-benefits-management-workspace-links.png)
+![Linki.](./media/hr-benefits-management-workspace-links.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

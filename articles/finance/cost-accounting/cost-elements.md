@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811444"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355162"
 ---
 # <a name="cost-element-dimensions"></a>Wymiary składników kosztów
 
@@ -63,7 +63,7 @@ Istnieją dwa typy składników kosztów: podstawowe i podrzędne. W poniższej 
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Wymiary składników kosztów i elementy członkowskie wymiarów składników kosztów
 Składniki kosztów są określane jako *wymiary składników kosztów* . Wartości poszczególnych wymiarów są nazywane *elementami członkowskimi wymiarów składników kosztów*. Na przykład masz strukturę amerykańskiego planu kont (COA), która jest podstawą do sprawozdawczości ustawowej. Ten plan kont służy jako wymiar składników kosztów. Konta, czyli podstawowe składniki kosztów, są przedstawiane jako elementy członkowskie wymiaru składników kosztów w rachunku kosztów. Poniższy zrzut ekranu przedstawia przykład kont głównych jako wymiaru składników kosztów, gdzie faktyczne konta główne są elementami członkowskimi wymiaru składników kosztów. 
 
-[![Zrzut ekranu kont głównych jako wymiar elementu kosztu](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![Zrzut ekranu kont głównych jako wymiar elementu kosztu.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importowanie elementów członkowskich wymiarów składników kosztów za pośrednictwem łączników danych
 Aby ułatwić sobie konfigurowanie elementów członkowskich wymiarów składników kosztów w module Rachunek kosztów, można używać łączników danych wbudowanych w systemie lub utworzonych samodzielnie do podstawowych składników kosztów z jednego lub więcej systemów źródłowych.

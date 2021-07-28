@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800694"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351232"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Dodawanie kanał do hierarchii organizacyjnej
 
@@ -44,7 +44,7 @@ Aby wybrać hierarchię, należy wykonać następujące czynności.
 
 Poniższy obraz przedstawia szczegóły hierarchii organizacyjnej dla wybranej hierarchii.
 
-![Szczegóły hierarchii organizacyjnej dla wybranej hierarchii](media/channel-add-to-org-hierarchy-1.png)
+![Szczegóły hierarchii organizacyjnej dla wybranej hierarchii.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Dodawanie kanału do węzła hierachy
 
@@ -58,17 +58,17 @@ Aby dodać kanał do węzła hierarchii, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia sposób wybierania kanału, który ma zostać dodany do węzła hierarchii.
 
-![Wybierz kanał do dodania do węzła hierarchii organizacyjnej](media/channel-add-to-org-hierarchy-2.png)
+![Wybierz kanał do dodania do węzła hierarchii organizacyjnej.](media/channel-add-to-org-hierarchy-2.png)
 
 Poniższy obraz przedstawia hierarchię z różnymi dodanymi kanałami.
 
-![Hierarchia z różnymi dodanymi kanałami](media/channel-add-to-org-hierarchy-3.png)
+![Hierarchia z różnymi dodanymi kanałami.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie kanałów](channels-overview.md)
 
-[Wymagania wstępne konfiguracji kanałów](channels-prerequisites.md)
+[Wymagania wstępne dotyczące konfiguracji kanału](channels-prerequisites.md)
 
 [Omówienie organizacji i hierarchii organizacyjnych](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

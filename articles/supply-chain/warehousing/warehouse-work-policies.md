@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838137"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353379"
 ---
 # <a name="work-policies"></a>Zasady pracy
 
@@ -200,7 +200,7 @@ Zamówienie zakupu jest teraz otrzymane, ale nie skojarzono z nim żadnej pracy.
 
 W poniższym przykładzie istnieją dwa zlecenia produkcyjne, *PRD-001* i *PRD-002*. Zlecenie produkcyjne *PRD-001* zawiera operację o nazwie *Montaż*, z której produkt *SC1* jest zgłaszany jako gotowy do lokalizacji *001*. Zlecenie produkcyjne *PRD-002* ma operację o nazwie *Malowanie* i zużywa produkt *SC1* z lokalizacji *001*. Zlecenie produkcyjne *PRD-002* zużywa także surowiec *RM1* z lokalizacji *001*. Surowiec *RM1* jest przechowywany w lokalizacji magazynowej *BULK-001* i zostanie pobrany do lokalizacji *001* za pomocą pracy magazynowej pobrania materiału. Praca pobierania jest generowana po zwolnieniu produkcji *PRD-002*.
 
-[![Zasady pracy magazynowej](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Zasady pracy magazynowej.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Planując skonfigurowanie zasad pracy magazynu dla tego scenariusza, należy wziąć pod uwagę następujące kwestie:
 

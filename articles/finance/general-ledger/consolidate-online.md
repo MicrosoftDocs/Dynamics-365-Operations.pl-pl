@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eca0d30903985126412e1ae0b8e3232c3e4700f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826769"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351691"
 ---
 # <a name="online-financial-consolidations"></a>Konsolidacje finansowe online
 
@@ -31,7 +31,7 @@ Po ukończeniu konfigurowania wprowadź informacje o konsolidacji na stronie **K
 ## <a name="criteria"></a>Kryterium
 Na karcie **Kryteria** na stronie **Konsolidacja [Online]** zdefiniuj konta, okresy i typ konsolidowanych danych.
 
-![Karta Kryteria](./media/criteria-consolidate-online.png "Karta Kryteria")
+![Karta Kryteria.](./media/criteria-consolidate-online.png "Karta Kryteria")
 
 Poniżej znajduje się objaśnienie różnych pól umieszczonych na tej stronie:
 
@@ -57,16 +57,16 @@ Poniżej znajduje się objaśnienie różnych pól umieszczonych na tej stronie:
 ## <a name="financial-dimensions"></a>Wymiary finansowe
 Na karcie **Wymiary finansowe** określ wymiary, które mają być uwzględniane w konsolidowanej firmie. Aby wybrać wymiar, należy ustawić w polu **Specyfikacja** wartość **Wymiar**, a następnie określić kolejność wymiarów w konsolidowanej firmie.
 
-![Karta wymiary finansowe](./media/financial-dimensions-cons.png "Karta wymiary finansowe")
+![Karta wymiary finansowe.](./media/financial-dimensions-cons.png "Karta wymiary finansowe")
 
 Bez względu na zdefiniowaną kolejność zawsze pierwszym segmentem jest **Konto główne**.
 
 ## <a name="legal-entities"></a>Firmy
 Na karcie **Firmy** określ firmy, które mają być uwzględniane w konsolidowanej firmie. Można także zdefiniować procentowy udział własności w tych firmach. Jeśli określisz udział własnościowy niższy niż 100 procent, ta wartość zostanie skumulowana do konsolidowanej firmy. Dla wszelkich rozbieżności przeliczania pole **Typ konta rozbieżności konwersji** służy do wybierania konta głównego z konfiguracji na stronie **Konta dla transakcji automatycznych**.
 
-![Karta firm](./media/legal-entities-cons.png "Karta firm")
+![Karta firm.](./media/legal-entities-cons.png "Karta firm")
 
-![Strona Konta dla transakcji automatycznych](./media/accounts-for-automatic-cons.png "Strona Konta dla transakcji automatycznych")
+![Strona Konta dla transakcji automatycznych.](./media/accounts-for-automatic-cons.png "Strona Konta dla transakcji automatycznych")
 
 ## <a name="elimination"></a>Eliminacja
 Na karcie **Eliminacja** masz trzy opcje przetwarzania eliminacji:
@@ -75,7 +75,7 @@ Na karcie **Eliminacja** masz trzy opcje przetwarzania eliminacji:
 - Wybierz regułę eliminacji, a następnie w polu **Opcje propozycji** zaznacz opcję **Tylko księgowanie**. Ta opcja spowoduje przetwarzanie eliminacji w procesie konsolidacji i wszystkie zdarzenia zostaną zaksięgowane w jednym kroku.
 - Korzystając z arkusza eliminacji, można wygenerować propozycję eliminacji niezależnie od procesu konsolidacji.
 
-![Karta Eliminacja](./media/elimination-cons-onl.png "Karta Eliminacja")
+![Karta Eliminacja.](./media/elimination-cons-onl.png "Karta Eliminacja")
 
 Aby uzyskać więcej informacji o eliminacjach, zobacz [Reguły eliminacji](./elimination-rules.md).
 
@@ -86,7 +86,7 @@ Na karcie **Przeliczanie walut** zdefiniuj firmę, konto, typ kursu wymiany i ku
 - **Data transakcji** — data każdej transakcji będzie używana do wybrania kursu wymiany. Ta opcja jest najczęściej używana dla środków trwałych, a kurs często nazywa się „kursem historycznym”. Nie zobaczysz podglądu kursu, ponieważ będzie wiele kursów dla różnych transakcji w zakresie kont.
 - **Kurs zdefiniowany przez użytkownika** — po wybraniu tej opcji można wprowadzić dowolny kurs wymiany. Opcja może być przydatna dla średnich kursów wymiany lub jeśli konsolidujesz na podstawie stałego kursu wymiany.
 
-![Karta Typ przeliczania waluty](./media/currency-translation-cons-online.png "Karta Typ przeliczania waluty")
+![Karta Typ przeliczania waluty.](./media/currency-translation-cons-online.png "Karta Typ przeliczania waluty")
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

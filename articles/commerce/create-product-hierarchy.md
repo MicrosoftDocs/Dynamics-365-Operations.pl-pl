@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8aef33a501f43105730eaa21a9159eb1398a1b36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fe1f194868ad04d8b64218186b2eb90cb34988c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799572"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352381"
 ---
 # <a name="create-a-new-product-hierarchy"></a>Tworzenie nowej hierarchii produktów
 
@@ -64,7 +64,7 @@ Aby dodać węzły hierarchii, wykonaj następujące kroki.
 
 Poniższy rysunek przedstawia utworzenie nowego węzła hierarchii produktu.
 
-![Utwórz hierarchię produktu](media/create-product-hierarchy.png)
+![Utwórz hierarchię produktu.](media/create-product-hierarchy.png)
 
 ## <a name="other-settings"></a>Inne ustawienia
 

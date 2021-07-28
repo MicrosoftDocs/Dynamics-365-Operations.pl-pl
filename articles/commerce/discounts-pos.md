@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792854"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356885"
 ---
 # <a name="show-discounts-in-pos"></a>Wyświetl rabaty w punkcie sprzedaży
 
@@ -33,7 +33,7 @@ Promocje odgrywają ważną rolę w motywach klientów, którzy podejmują decyz
 
 Commerce zawiera operację o nazwie „Wyświetl wszystkie rabaty”. Ta operacja umożliwia wyświetlenie wszystkich rabatów, które są obecnie uruchomione w sklepie. Operację „Wyświetl wszystkie rabaty” można zamapować na przycisk w punkt sprzedaży (POS), a ten przycisk można dodać do strony **powitalnej** lub do strony **transakcji**. Na poniższej ilustracji pokazano przykład otwartej strony **Wszystkie rabaty**.
 
-![Strona wszystkich rabatów](./media/View_all_discounts.png "Strona wszystkich rabatów")
+![Strona wszystkich rabatów.](./media/View_all_discounts.png "Strona wszystkich rabatów")
 
 Aby wyświetlić rabaty, system wyszuka wszystkie rabaty spełniające co najmniej jeden z następujących warunków:
 
@@ -61,11 +61,11 @@ Na poniższych ilustracjach przedstawiono logikę, która określa, które rabat
 
 Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku, gdy kontrola współbieżności rabatu jest ustawiona na **najlepszą cenę i związek z priorytetem, a nie związek między priorytetami**.
 
-![Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami](./media/Model_1.png "Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami")
+![Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami.](./media/Model_1.png "Logika dla najlepszej ceny i związku w ramach priorytetu, nigdy nie związane między priorytetami")
 
 Na poniższej ilustracji przedstawiono logikę, która jest używana w przypadku, gdy kontrola współbieżności rabatu jest ustawiona na **najlepszą cenę tylko w ramach priorytetu, zawsze w ramach związku między priorytetami**.
 
-![Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami](./media/Model_2.png "Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami")
+![Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami.](./media/Model_2.png "Logika dla najlepszej ceny tylko w ramach priorytetu, zawsze w ramach związku między priorytetami")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

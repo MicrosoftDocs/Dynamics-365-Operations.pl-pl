@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dad1cad6dcda1c7768f9be8bd7bd4426be7fbcbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815459"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358864"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Drukowanie raportu Płatności podatku według kodu 
 
@@ -40,11 +40,11 @@ W obszarze roboczym **Zarządzanie funkcjami** włącz następującą funkcję: 
     - **Waluta rozliczeniowa** — umożliwia wydrukowanie kwot raportu w walucie rozliczeniowej.
     - **Waluta kodu podatku** — umożliwia wydrukowanie kwot raportu w walutach kodów podatków.
 
-    ![Okno dialogowe Płatności podatku według kodu](media/Sales-tax-payment-by-code.png)
+    ![Okno dialogowe Płatności podatku według kodu.](media/Sales-tax-payment-by-code.png)
 
 Na poniższej ilustracji przedstawiono przykład generowanego raportu. Raport wskazuje, że kod raportowania **101** ma walutę **EUR**, jeśli w polu **Waluta podatku** jest ustawiona wartość **EUR** dla kodu podatku, do którego przypisano kod raportowania.
 
-![Przykład raportu Płatności podatku według kodu](media/Sales-tax-payment-by-code-2.png)
+![Przykład raportu Płatności podatku według kodu.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356519"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -61,7 +61,7 @@ Możesz poprosić bota o wykonanie następujących zadań:
 
 - Uruchomienie wniosku o urlop w Twoim imieniu. Na przykład, wyślij wiadomość o treści „Weź wolne” lub „Chcę wziąć wolne w następny czwartek i piątek”, aby być bardziej konkretnym w żądaniu urlopu dla typu urlopu. 
 
-  ![Rozpoczynanie rozmowy z wnioskami o urlop w Teams](./media/hr-teams-leave-app-initiate.png)
+  ![Rozpoczynanie rozmowy z wnioskami o urlop w Teams.](./media/hr-teams-leave-app-initiate.png)
 
 - Bot czatu wypełni dla Ciebie prośbę o urlop. Wybierz opcję **Żądanie czasu wolnego** i edytuj szczegóły swojego żądania.
 
@@ -69,11 +69,11 @@ Możesz poprosić bota o wykonanie następujących zadań:
 
    Jeśli wybierzesz urlop na pół dnia, a jednostką wniosku o urlop są dni, możesz określić, czy chcesz wnioskować o wolne za pierwsze pół dnia, czy za drugie pół dnia, wybierając opcję **Definicja połowy dnia** z menu **Więcej opcji**.
    
-   ![Definicje połowy dnia](./media/HalfDayDefinitions.png)
+   ![Definicje połowy dnia.](./media/HalfDayDefinitions.png)
 
 - Po zakończeniu edytowania szczegółów wniosku urlopowego wybierz opcję **Prześlij**, aby przesłać go do zatwierdzenia.
 
-  ![Przesyłanie wniosku urlopowego](./media/hr-teams-leave-app-submit.png)
+  ![Przesyłanie wniosku urlopowego.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Zarządzanie urlopami w Teams
 
@@ -93,7 +93,7 @@ Na karcie **Czas wolny** można wyświetlić następujące informacje:
 
 2. Wprowadź dzień lub dni, w które chcesz wziąć urlop, a następnie wybierz pozycję **Dodaj**.
 
-   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams](./media/TimeOffHours.png)
+   ![Dodawanie czasu wolnego w aplikacji obsługującej urlopy Human Resources w Teams.](./media/TimeOffHours.png)
 
 3. Wprowadź kod przyczyny, jeśli ma on zastosowanie. Wprowadź komentarze i dodaj załączniki.
 
@@ -123,7 +123,7 @@ Po zainstalowaniu aplikacji Human Resources dla Teams można łatwo wysyłać do
 
 1. W zespole lub rozmowę w Teams wybierz przycisk Human Resources poniżej okna rozmowy.
 
-   ![Przycisk Human Resources poniżej okna rozmowy](./media/hr-teams-leave-app-chat-button.png)
+   ![Przycisk Human Resources poniżej okna rozmowy.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Wybierz żądanie opuszczenia, które chcesz udostępnić. Jeśli chcesz udostępnić wersję roboczą wniosku urlopowego, najpierw wybierz opcję **Wersje robocze**.
 
@@ -173,11 +173,11 @@ Jeśli tłumaczenia nie są wyświetlane zgodnie z oczekiwaniami, upewnij się, 
 
 W zespołów sprawdź **Język aplikacji** w **Ustawieniach**.
 
-![Ustawienia Teams](./media/hr-teams-leave-app-settings.png)
+![Ustawienia Teams.](./media/hr-teams-leave-app-settings.png)
 
 W menu Zasoby ludzkie wybierz pozycję **Ustawienia**, a następnie wybierz **Opcje użytkownika**. Upewnij się, że pole **Język** pasuje do pola **Języka aplikacji** w Teams.
 
-![Opcje użytkownika w Zasobach ludzkich](./media/hr-teams-leave-app-user-options.png)
+![Opcje użytkownika w Human Resources.](./media/hr-teams-leave-app-user-options.png)
 
 Jeśli nadal wystąpią problemy z tłumaczeniami, poinformuj nas o tym. Aby uzyskać więcej informacji, przejrzyj temat [Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub usług Lifecycle Services (usługi LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

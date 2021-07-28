@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892440"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360743"
 ---
 # <a name="asset-leasing-get-started"></a>Wynajem składnika majątku — rozpoczęcie
 
@@ -35,7 +37,7 @@ Aby uzyskać więcej informacji dotyczących standardów księgowania, zapoznaj 
 ## <a name="asset-leasing-elements"></a>Elementy leasingu składnika majątku
 Na poniższym schemacie przedstawiono główne elementy procesu biznesowego dotyczącego wynajmu.
 
-[![Elementy leasingu składnika majątku](./media/overview-01.png)](./media/overview-01.png)
+[![Elementy leasingu składnika majątku.](./media/overview-01.png)](./media/overview-01.png)
 
 Wynajęty składnik majątku zawiera następujące główne składniki:
 
@@ -54,7 +56,7 @@ Wynajem składnika majątku mapuje informacje o wynajmie, harmonogramy płatnoś
 
 Na poniższym schemacie przedstawiono księgę wynajmu, wynajem, obliczony harmonogram płatności, testy klasyfikacji wynajmu i ksiąg wynajmu oraz odpowiadające im transakcje księgowania.
 
-[![Wynajem, księga wynajmu i harmonogram płatności](./media/overview-02.png)](./media/overview-02.png)
+[![Wynajem, księga wynajmu i harmonogram płatności.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Księga wynajmu** — zawiera wszystkie informacje o umowach leasingowych, takie jak warunki wynajmu, wartość godziwa i opłaty z tytułu wynajmu. Zawiera także stosowany standard rachunkowy, typ wynajmu oraz progi, które są brane pod uwagę w teście klasyfikacji wynajmu. Księga wynajmu zawiera także transakcje wynajmu zaksięgowane w księdze głównej. 
   
@@ -117,7 +119,7 @@ Pierwszy okres rozpoczyna się od okresu zero, jeśli typem annuity jest annuita
 
 Do testów klasyfikacji należą Transfer własności, Opcja zakupu, Okres wynajmu, Obecna wartość netto i Unikatowy środek trwały. Na poniższym diagramie przedstawiono testy klasyfikacji wynajmu.
 
-[![Testy klasyfikacji wynajmu](./media/overview-03.png)](./media/overview-03.png)
+[![Testy klasyfikacji wynajmu.](./media/overview-03.png)](./media/overview-03.png)
 
 Każdy typ wynajmu różnie obsługuje księgowanie w zależności od transakcji leasingowych. Transakcje obejmują początkowe uznanie, koszty odsetek, płatności z tytułu wynajmu i amortyzację leasingu i są oparte na stosowanych standardach księgowych (MSSF 16 lub ASC 842). Konta księgowe są definiowane w profilu księgowania wynajmu dla każdego typu transakcji i struktury księgowej.
 
@@ -232,7 +234,7 @@ Aby utworzyć nowy wynajem, należy wykonać następujące kroki.
 
    Na stronie **Harmonogram płatności** widoczne są przyszłe harmonogramy płatności dla identyfikatora wynajmu. Wybierz opcję **Potwierdź harmonogram**, aby móc zaksięgować transakcje **Początkowe uznanie**. 
 
-[![Funkcja początkowego uznania](./media/overview-13.png)](./media/overview-13.png)
+[![Funkcja początkowego uznania.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Wybierz opcję **Początkowe uznanie**, aby utworzyć arkusz początkowego uznania. 
 
@@ -246,7 +248,7 @@ Aby utworzyć nowy wynajem, należy wykonać następujące kroki.
 
    Na stronie **Harmonogram amortyzacji składników majątku** wyświetlane są transakcje amortyzacji dla wybranego identyfikatora wynajmu. 
 
-   [![Strona transakcji składników majątku z PDU](./media/overview-20.png)](./media/overview-20.png)
+   [![Strona transakcji składników majątku z PDU.](./media/overview-20.png)](./media/overview-20.png)
 
    Strona **Transakcje składników majątku z PDU** zawiera początkowe uznanie, wartość umorzenia i saldo składników majątku. 
 

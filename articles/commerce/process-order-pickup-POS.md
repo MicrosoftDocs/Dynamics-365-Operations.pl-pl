@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352163"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Przetwarzaj pobrania zamówień odbiorcy w miejscu sprzedaży
 
@@ -32,7 +32,7 @@ Jeśli jesteś użytkownikiem sklepu, możesz wykonać odbiór, używając opera
 
 Jeśli wybrane zamówienie lub wiersze zamówienia nie są skonfigurowane do odbioru w tym konkretnym sklepie lub jeśli zamówienie zostało już w pełni odebrane, operacja **Odbiór** będzie niedostępna.
 
-![Operacja pobrania](media/pickupoperation.png)
+![Operacja pobrania.](media/pickupoperation.png)
 
 W wersjach rozwiązania Microsoft Dynamics 365 Commerce 10.0.17 i nowszych poprawiona funkcja **Ulepszone wrażenia użytkownika przy przetwarzaniu zamówień przy odbiorze w punkcie sprzedaży** obsługi zamówień w punkcie sprzedaży można włączona za pomocą programu Zarządzanie funkcjami w programie Commerce Headquarters. Jeśli ta funkcja jest wyłączona, użytkownicy nie mogą wybierać ilości do odbioru. Domyślnie pełna ilość zamówiona dla wiersza to ilość, która zostanie pobrana. To doświadczenie może być problematyczne, ponieważ użytkownicy mogą zapomnieć o wybraniu niektórych pozycji do odbioru, gdy dokonują odbioru w ramach realizacji zamówienia.
 
@@ -40,13 +40,13 @@ Poprawiona funkcja **Ulepszone wrażenia użytkownika przy przetwarzaniu zamówi
 
 Po włączeniu funkcji **Popraw wygodę użytkownika w zakresie przetwarzania zamówień przy odbiorze w punkcie sprzedaży** i wybraniu operacji **Pobrania** zostanie wyświetlone okno dialogowe **Pobranie**. Tam możesz wybrać towary i ilości, które zostaną odebrane. Domyślnie każda zamówiona ilość, która ma zapasy w stanie pobranym lub zapakowanym, jest uznawana za kwalifikującą się do odbioru. Domyślnie ta ilość jest ustawiona jako ilość pobrania. Można zmienić wprowadzoną ilość, pod warunkiem, że nie jest to 0 (zero) i nie przekracza całkowitej otwartej (czyli niezafakturowanej) ilości dla wybranego wiersza.
 
-![Okno dialogowe odbioru](media/pickupselect.png)
+![Okno dialogowe odbioru.](media/pickupselect.png)
 
 Po wybraniu ilości, które mają zostać wybrane, a następnie wybraniu opcji **Odbierz**, zostanie wyświetlona strona transakcji. Jeśli funkcja [płatności za pomocą kanału handlu wielokanałowego](omni-channel-payments.md) jest włączona i w pliku znajdują się wstępnie autoryzowane płatności kartą kredytową, należy zastosować tę płatność.
 
 Na stronie transakcji system oblicza należne kwoty, obliczając sumę należną za wybrane pozycje do odbioru, a następnie odejmując wszelkie wcześniej zastosowane depozyty lub autoryzowane płatności kartą kredytową. Musisz przetworzyć płatność, aby zakończyć transakcję pobrania. Jeśli [układ ekranu](pos-screen-layouts.md) strony transakcji jest tak skonfigurowany, że zawiera operację **Zakończ transakcję** i brak należnej kwoty, można ukończyć transakcję bez wybierania metody płatności. Jeśli operacja **Zakończ transakcję** jest niedostępny, możesz wybrać łącze **„należnq kwotq 0,00 PLN”** w okienku **Sumy**, aby zakończyć transakcję bez konieczności wybierania metody płatności.
 
-![Strona transakcji pobrania zamówienia odbiorcy](media/pickupcart.png)
+![Strona transakcji pobrania zamówienia odbiorcy.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Zmienianie wierszy lub ilości pobrania
 
@@ -54,7 +54,7 @@ Jeśli po wybraniu pozycji do pobrania musisz zmienić ilość pobrania, możesz
 
 Jeśli funkcja **Popraw wygodę użytkownika w zakresie przetwarzania zamówień przy odbiorze w punkcie sprzedaży** jest włączona, organizacje mogą dodać przycisk operacji **Zmień wiersze pobrania** w układzie ekranu strony transakcji. Po utworzeniu koszyka transakcji pobrania w programie POS i wybraniu towarów można wybrać opcję **Zmień wiersze pobrania**, jeśli musisz zmienić przedmioty do odbioru, ale nie chcesz anulować całej transakcji. W wyświetlanym oknie dialogowym **Zmiana wierszy pobrania** można zmieniać elementy i ilości pobrania. Koszyk transakcji jest następnie aktualizowany, aby odzwierciedlić wprowadzone zmiany.
 
-![Okno dialogowe zmiany elementów pobrania](media/pickupchange.png)
+![Okno dialogowe zmiany elementów pobrania.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

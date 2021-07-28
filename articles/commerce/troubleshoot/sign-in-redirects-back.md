@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e83b381e73d28dce0a438a37d5f8ed23b4957adf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020610"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350385"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>Łącze logowania jest przekierowywany z powrotem do witryny handlu elektronicznego
 
@@ -43,7 +43,7 @@ Aby potwierdzić, że adres URL odpowiedzi jest poprawnie skonfigurowany w aplik
 1. Wybierz aplikację utworzoną podczas konfigurowania Azure AD B2C.
 1. W obszarze **Adres URL odpowiedzi** upewnij się, że lista zawiera wpisy zarówno dla adresu URL domeny witryny, jak i adresu URL wygenerowanego w portalu e-commerce, jak pokazano na przykładzie na poniższej ilustracji.
 
-    ![Wpisy adresu URL odpowiedzi Azure AD B2C](media/aad-b2c-reply-url.jpg)
+    ![Wpisy adresu URL odpowiedzi Azure AD B2C.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > Zarówno adres URL domeny witryny, jak i adres URL generowany przez e-commerce muszą mieć prawidłowy format adresu URL, który nie zawiera początkowych ani końcowych ukośników.

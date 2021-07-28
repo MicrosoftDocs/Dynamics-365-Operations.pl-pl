@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798760"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353115"
 ---
 # <a name="navigation-menu-module"></a>Moduł menu nawigacji
 
@@ -33,7 +33,7 @@ Głównym celem modułów menu nawigacji jest umożliwienie użytkownikom witryn
 Moduł menu nawigacji można dodać do modułu nagłówka strony. W motywie Fabrikam w menu nawigacji domyślnie są wyświetlane dwa poziomy. W motywie Starter w menu nawigacji domyślnie są wyświetlane trzy poziomy. Aby zmienić liczbę poziomów, na motywie jest wymagane rozszerzenie widoku.
 
 Na poniższej ilustracji pokazano przykład menu nawigacji dla witryny Fabrikam z dwoma poziomami hierarchii kategorii i pewnymi statycznymi elementami menu.
-![Przykład modułu menu nawigacji](./media/ecommerce-header.png)
+![Przykład modułu menu nawigacji.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Moduł Menu nawigacji — właściwości
 
@@ -50,7 +50,7 @@ Na poniższej ilustracji pokazano przykład menu nawigacji dla witryny Fabrikam 
 | Menu główne | ciąg | Ta właściwość może służyć do definiowania tekstu dla niestandardowego katalogu głównego, jeśli właściwość **Pokazywanie menu głównego** ma wartość **Prawda**. |
 
 Na poniższej ilustracji pokazano przykład obrazu kategorii wyświetlanego w menu nawigacji witryny Fabrikam.
-![Przykład modułu menu nawigacji z obrazami kategorii](./media/ecommerce-categoryimages.PNG)
+![Przykład modułu menu nawigacji z obrazami kategorii.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Dodawanie modułu menu nawigacji do modułu nagłówka
 

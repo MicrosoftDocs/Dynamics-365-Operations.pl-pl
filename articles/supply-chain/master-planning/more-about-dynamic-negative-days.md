@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: 0fd573ab1676af292174efce562b010bcbeb6514
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097241"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354744"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Liczba dni z ujemnym stanem i dynamiczna liczba dni z ujemnym stanem.
 
@@ -43,7 +43,7 @@ Popyt można uzyskać stosunkowo wcześnie w czasie realizacji danego towaru lub
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
-![Widok graficzny scenariusza 1](./media/negative-days-1.jpg)
+![Widok graficzny scenariusza 1.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Przypadek A: liczba dni ujemnych jest mniejsza niż czas realizacji towaru
 
@@ -51,11 +51,11 @@ Jeśli liczba dni z ujemnym poziomem zapasów jest mniejsza niż czas realizacji
 
 Poniższa ilustracja pokazuje zrzut ekranu tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku A dla scenariusza 1](./media/negative-days-2.png)
+![Zrzut ekranu dotyczący przypadku A dla scenariusza 1.](./media/negative-days-2.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku A dla scenariusza 1](./media/negative-days-3.png)
+![Graficzny widok przypadku A dla scenariusza 1.](./media/negative-days-3.png)
 
 Jeśli rozważasz wydajność MRP i planujesz nerwowość, ten przypadek nie działa dobrze. MRP musi utworzyć nowe zamówienie planowane i musi być obliczyć opóźnienia i akcje. Zadania te są czasochłonne. W takim przypadku do planu dodawane są dwie kolejne transakcje. Z drugiej strony zamówienie sprzedaży jest opóźnione o zaledwie sześć dni, a nie siedem dni.
 
@@ -73,11 +73,11 @@ Dynamiczny okres z ujemnymi dniami = czas realizacji zakupu + horyzont czasowy d
 
 Gdy używane są dynamiczne dni ujemne, horyzont czasowy, w którym MRP szuka odbiorów, wynosi teraz 6 + 2 + 0 = 8 dni. MRP znajduje istniejące zamówienie zakupu i przypisuje do niego zamówienie sprzedaży. Nie są tworzone żadne nowe zamówienia planowane. Dlatego czas pracy MRP jest krótszy. Na poniższej ilustracji przedstawiono wymagania netto dla towaru DemoProduct.
 
-![Wymagania netto przypadku C dla scenariusza 1](./media/negative-days-4.png)
+![Wymagania netto przypadku C dla scenariusza 1.](./media/negative-days-4.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku C dla scenariusza 1](./media/negative-days-5.png)
+![Graficzny widok przypadku C dla scenariusza 1.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Przypadek D: użyj tylko dynamicznych dni ujemnych
 
@@ -85,11 +85,11 @@ Jeśli wartość dni ujemnych jest ustawiona na **0** (zero) i zostanie użyty t
 
 Poniższa ilustracja przedstawia zrzut ekranu dla tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku D dla scenariusza 1](./media/negative-days-6.png)
+![Zrzut ekranu dotyczący przypadku D dla scenariusza 1.](./media/negative-days-6.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku D dla scenariusza 1](./media/negative-days-7.png)
+![Graficzny widok przypadku D dla scenariusza 1.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>Przypadek E: należy stosować obydwa dni ujemne, które są większe niż czas realizacji towaru oraz dynamiczny horyzont czasowy w dniach ujemnych
 
@@ -106,7 +106,7 @@ Istnieje możliwość uzyskania popytu w czasie realizacji danego towaru. Oto pr
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
-![Widok graficzny scenariusza 2](./media/negative-days-8.png)
+![Widok graficzny scenariusza 2.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Przypadek A: liczba dni ujemnych jest mniejsza niż czas realizacji towaru
 
@@ -114,11 +114,11 @@ Jeśli liczba dni z ujemnym poziomem zapasów jest mniejsza niż czas realizacji
 
 Poniższa ilustracja przedstawia zrzut ekranu dla tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku A dla scenariusza 2](./media/negative-days-9.png)
+![Zrzut ekranu dotyczący przypadku A dla scenariusza 2.](./media/negative-days-9.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku A dla scenariusza 2](./media/negative-days-10.png)
+![Graficzny widok przypadku A dla scenariusza 2.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>Przypadek B: liczba dni ujemnych jest większa niż czas realizacji towaru
 
@@ -130,11 +130,11 @@ Ten przypadek przypomina przypadek C dla scenariusza 1, ponieważ dynamiczne dni
 
 Poniższa ilustracja pokazuje zrzut ekranu tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku C dla scenariusza 2](./media/negative-days-11.png)
+![Zrzut ekranu dotyczący przypadku C dla scenariusza 2.](./media/negative-days-11.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku C dla scenariusza 2](./media/negative-days-12.png)
+![Graficzny widok przypadku C dla scenariusza 2.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Przypadek D: użyj tylko dynamicznych dni ujemnych
 
@@ -155,7 +155,7 @@ Scenariusz 3: po czasie realizacji towaru uzyskasz zapotrzebowanie Oto przykład
 
 Poniższa ilustracja pokazuje graficzny widok tego scenariusza.
 
-![Widok graficzny scenariusza 3](./media/negative-days-13.png)
+![Widok graficzny scenariusza 3.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>Przypadek A: liczba dni ujemnych jest mniejsza niż czas realizacji towaru
 
@@ -163,11 +163,11 @@ Jeśli liczba dni ujemnych jest ustawiona tak, że jest mniejsza niż czas reali
 
 Poniższa ilustracja pokazuje zrzut ekranu tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku A dla scenariusza 3](./media/negative-days-14.png)
+![Zrzut ekranu dotyczący przypadku A dla scenariusza 3.](./media/negative-days-14.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku A dla scenariusza 3](./media/negative-days-15.png)
+![Graficzny widok przypadku A dla scenariusza 3.](./media/negative-days-15.png)
 
 > [!NOTE]
 > W poprzednim zrzucie ekranu data zapotrzebowania zamówienia zakupu wynosi 12 stycznia. Ponieważ ten zrzut został pobrany w 2015, kiedy 11 stycznia była niedziela, MRP przeniosło datę zapotrzebowania na następny dzień roboczy, który był w poniedziałek, 12 stycznia. Niemniej jednak zamówienie zakupu ma datę dostawy 11 stycznia.
@@ -178,11 +178,11 @@ Jeśli ustawiono ujemne dni na liczbę większą niż czas realizacji towaru, ni
 
 Poniższa ilustracja pokazuje zrzut ekranu tego przypadku.
 
-![Zrzut ekranu dotyczący przypadku B dla scenariusza 3](./media/negative-days-16.png)
+![Zrzut ekranu dotyczący przypadku B dla scenariusza 3.](./media/negative-days-16.png)
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku B dla scenariusza 3](./media/negative-days-17.png)
+![Graficzny widok przypadku B dla scenariusza 3.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>Przypadek C: Automatyczna korelacja między horyzontem czasowym w dniach ujemnych a czasem realizacji towaru
 
@@ -192,7 +192,7 @@ Dynamiczny horyzont czasowy w dniach ujemnych wynosi teraz 6 + 2 — 7 = 1 dzie�
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się w tym przypadku.
 
-![Graficzny widok przypadku C dla scenariusza 3](./media/negative-days-18.png)
+![Graficzny widok przypadku C dla scenariusza 3.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>Przypadek D: użyj tylko dynamicznych dni ujemnych
 
@@ -219,11 +219,11 @@ Może być konieczne ustawienie liczby dni z ujemnym horyzontem czasowym, a nast
 
 Poniższa ilustracja pokazuje graficzny widok tego, co dzieje się.
 
-![Graficzna pprzegląd przykładu](./media/negative-days-19.png)
+![Graficzna przegląd przykładu.](./media/negative-days-19.png)
 
 MRP daje następujące wyniki.
 
-![Przykład wyników 1](./media/negative-days-20.png)
+![Przykład wyników 1.](./media/negative-days-20.png)
 
 W poprzednim zrzucie ekranu datą zapotrzebowania zamówienia sprzedaży jest 9 stycznia, a nie 10 stycznia. Ponieważ ten zrzut został pobrany w 2015, kiedy 10 stycznia była sobota, wymaganą datą zamówienia powinien być poprzedni dzień roboczy, czyli piątek 9 stycznia.
 
@@ -233,7 +233,7 @@ Wyniki nie są błędne, ale czas działania MRP może być dłuższy, ponieważ
 
 Jeśli liczba dni ujemnych zostanie zredukowana do liczby bliższej czasowi realizacji towaru, a w systemie jest używana dynamiczna ujemna liczba dni, system MRP generuje następujące wyniki:
 
-![Przykład wyników 2](./media/negative-days-21.png)
+![Przykład wyników 2.](./media/negative-days-21.png)
 
 MRP tworzy zamówienie planowane które jest dołączone do pierwszego zamówienia sprzedaży. Następnie, zgodnie z oczekiwaniami, drugie zamówienie sprzedaży będzie uzależnione od istniejącego zamówienia zakupu, na podstawie ustawienia dni ujemnych. Ten wynik planowania jest również poprawny, a czas pracy dla MRP może być krótszy. W tym przypadku nie jest konieczne zrozumienie i umiejętność pracy z komunikatami akcji.
 

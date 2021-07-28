@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357368"
 ---
 # <a name="human-resources-app-in-teams"></a>Aplikacja Human Resources w Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053570"
 
 Aplikacja Microsoft Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams umożliwia pracownikom szybkie wysyłanie wniosku o urlop i wyświetlanie informacji dotyczących bilansu nieobecności w rozwiązaniu Microsoft Teams. Aby zażądać informacji, pracownicy mogą współpracować z botem. Karta **Czas wolny** zawiera bardziej szczegółowe informacje. Ponadto mogą wysyłać osobom informacje o zbliżającym się czasie wolnym w zespołach i czatach poza aplikacją Human Resources.
 
-![Bot w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-bot.png)
+![Bot w aplikacji obsługującej urlopy Human Resources w Teams.](./media/hr-teams-leave-app-bot.png)
 
-![Karta Czas wolny w aplikacji obsługującej urlopy Human Resources w Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Karta Czas wolny w aplikacji obsługującej urlopy Human Resources w Teams.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Karta z prośbą o urlop w Human Resources](./media/hr-teams-leave-app-chat-card.png)
+![Karta z prośbą o urlop w Human Resources.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Instalowanie i konfigurowanie
 
@@ -57,11 +57,11 @@ Jeśli chcesz, aby użytkownicy otrzymywali powiadomienia o żądaniu urlopu w a
 
 4. Na karcie **Ogólne** określ ustawienie **Włącz powiadomienia dla aplikacji Teams** na wartość **Tak**.
 
-   ![Włącz powiadomienia aplikacji Teams w parametrach systemowych](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Włącz powiadomienia aplikacji Teams w parametrach systemowych.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Aby włączyć powiadomienia Teams dla wszystkich użytkowników, wybierz **Tak**, gdy wystąpi monit.
 
-   ![Włącz powiadomienia Teams dla wszystkich użytkowników](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Włącz powiadomienia Teams dla wszystkich użytkowników.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Włączanie i wyłączanie powiadomień Teams dla poszczególnych użytkowników
 
@@ -77,7 +77,7 @@ Po włączeniu powiadomień dla aplikacji Dynamics 365 Human Resources w Teams, 
 
 5. W polu **Włącz powiadomienia dla aplikacji Teams** wybierz wartość **Tak**, aby włączyć powiadomienia dla użytkownika lub **Nie**, aby je wyłączyć.
 
-   ![Włącz powiadomienia aplikacji Teams na karcie przepływ pracy w opcjach użytkownika](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Włącz powiadomienia aplikacji Teams na karcie przepływ pracy w opcjach użytkownika.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Wybierz opcję **Zapisz**.
 

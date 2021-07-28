@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911255"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359084"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -318,7 +318,7 @@ Obecnie oba identyfikatory pracy mają taki sam docelowy numer identyfikacyjny. 
 
 Na poniższej ilustracji przedstawiono sposób ukończenia pracy przeładunku kompletacyjnego w rozwiązaniu Microsoft Dynamics 365 Supply Chain Management.
 
-![Praca przeładunku kompletacyjnego została zakończona](media/PlannedCrossDockingWork.png "Praca przeładunku kompletacyjnego została zakończona")
+![Praca przeładunku kompletacyjnego została zakończona.](media/PlannedCrossDockingWork.png "Praca przeładunku kompletacyjnego została zakończona")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
