@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352597"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Skonfiguruj kanał, aby używał hierarchii nawigacji kanału
 
@@ -45,7 +45,7 @@ Aby skonfigurować kanał do korzystania z hierarchii nawigacji kanału, wykonaj
 
 Poniższy obraz pokazuje, jak skonfigurować kanał, aby używał hierarchii nawigacji kanału.
 
-![Przykład konfiguracji kanału](media/configure-channel-hierarchy-1.png)
+![Przykład konfiguracji kanału.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Metadane ustawiania atrybutu
 
@@ -61,9 +61,9 @@ Aby ustawić metadane atrybutów, wykonaj następujące kroki.
 
 Poniższy obraz przedstawia przykładowy zbiór atrybutów produktu kanału skonfigurowanych w węźle kategorii kanału.
 
-![Atrybuty kanału w węźle kategorii kanału](media/configure-channel-hierarchy-2.png)
+![Atrybuty kanału w węźle kategorii kanału.](media/configure-channel-hierarchy-2.png)
 
-## <a name="publish-changes"></a>Publikowanie zmian
+## <a name="publish-changes"></a>Opublikuj zmiany
 
 Aby zmiany odniosły skutek, musisz je opublikować.
 
@@ -74,7 +74,7 @@ Aby opublikować zmiany, należy wykonać następujące kroki.
 
 Poniższy obraz przedstawia sposób publikowania aktualizacji kanału.
 
-![Publikowanie aktualizacji kanału](media/configure-channel-hierarchy-3.png)
+![Publikowanie aktualizacji kanału.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 4bf47b15b668a37f12edb3dbb842d19655fac97a
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 76b11eaec0f22393e877c2837e2533a176018f2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019034"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355489"
 ---
 # <a name="wave-creation-and-processing"></a>Tworzenie i przetwarzanie grupy czynności
 
@@ -42,7 +42,7 @@ Można określić, która z tych opcji zlecenia produkcyjnego będzie domyślnie
 
 Na poniższym schemacie przedstawiono przepływ, w jaki są tworzone, przetwarzane i zwalniane przepływy wysyłki. Numery odpowiadają procedurom opisanym w dalszej części.
 
-![Proces tworzneia grupy czynności](media/wave-processing-diagram.png "Proces tworzneia grupy czynności")
+![Proces tworzenia grupy czynności.](media/wave-processing-diagram.png "Proces tworzneia grupy czynności")
 
 ### <a name="prerequisites"></a>Wymagania wstępne
 
@@ -158,7 +158,7 @@ Gdy jest włączona funkcja *planowania tworzenia pracy*, przetwarzanie grupy cz
 
 Poniższy schemat blokowy pokazuje, jak planowana praca jest tworzona podczas przetwarzania grupy czynności.
 
-![Planowanie tworzenia pracy](media/schedule-work-creation-process.png)
+![Planowanie tworzenia pracy.](media/schedule-work-creation-process.png)
 
 ### <a name="planned-work"></a>Zaplanowana praca
 

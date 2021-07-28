@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102717"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359892"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Dostosowywanie i korzystanie z Portalu klienta
 
@@ -27,7 +27,7 @@ W tym temacie opisano różne strony dostępne do użytku w Portalu klienta. Wyj
 
 W Portalu klienta jest dostępnych kilka stron sieci Web i akcji, które są dostępne do użytku od razu. Następująca mapa witryny umożliwia przegląd tych stron sieci Web i akcji oraz ról, które mogą wykonywać te akcje.
 
-![Mapa witryny Portalu klienta](media/customer-portal-site-map.png "Mapa witryny Portalu klienta")
+![Mapa witryny Portalu klienta.](media/customer-portal-site-map.png "Mapa witryny Portalu klienta")
 
 ## <a name="typical-customizations"></a>Standardowe dostosowania
 
@@ -61,12 +61,12 @@ Poniżej przedstawiono standardowe etapy składania zamówienia z poziomu portal
     - **Numer zapotrzebowania** — umożliwia wprowadzenie numeru zapotrzebowania dla zamówienia. Pole to nie jest wymagane.
     - **Kraj/region wysyłki** — umożliwia wprowadzenie kraju lub regionu, do którego zostaną dostarczone towary. To pole jest ustawiane automatycznie dla użytkowników niebędących administratorami.
 
-    ![Strona informacji zamówienia](media/customer-portal-order-information.png "Strona informacji zamówienia")
+    ![Strona informacji zamówienia.](media/customer-portal-order-information.png "Strona informacji zamówienia")
 
 1. Wybierz pozycję **Następny**.
 1. Na stronie **Elementy** wybierz przycisk **Dodaj pozycję**.
 
-    ![Strona pozycji](media/customer-portal-items.png "Strona pozycji")
+    ![Strona pozycji.](media/customer-portal-items.png "Strona pozycji")
 
 1. W oknie dialogowym **Informacje o pozycji** można ustawić następujące pola:
 
@@ -75,14 +75,14 @@ Poniżej przedstawiono standardowe etapy składania zamówienia z poziomu portal
     - **Jednostka** — umożliwia określenie jednostka miary (na przykład **szt.**, **kg** lub **pudełko**).
     - **Szacowana kwota netto** — wartość jest obliczana jako Szacowana cena towaru x ilość dla wybranej jednostki.
 
-    ![Okno dialogowe Informacje o pozycji](media/customer-portal-item-information.png "Okno dialogowe Informacje o pozycji")
+    ![Okno dialogowe Informacje o pozycji.](media/customer-portal-item-information.png "Okno dialogowe Informacje o pozycji")
 
 1. Wybierz **Prześlij**, aby dodać towar do zamówienia.
 1. Powtarzaj kroki od 4 do 6, dopóki nie dodasz wszystkich towarów, które chcesz zamówić.
 1. Po zakończeniu dodawania towarów wybierz przycisk **Dalej** na stronie **Pozycje**.
 1. Strona **Informacje o zamówieniu** zawiera podsumowanie tego zamówienia. Przejrzyj zawartość zamówienia i szczegóły dotyczące dostawy. Jeśli wszystko wygląda poprawnie, wybierz opcję **Prześlij**, aby przesłać zamówienie.
 
-    ![Uzupełniona strona informacji zamówienia](media/customer-portal-order-submit.png "Uzupełniona strona informacji zamówienia")
+    ![Uzupełniona strona informacji zamówienia.](media/customer-portal-order-submit.png "Uzupełniona strona informacji zamówienia")
 
 ### <a name="standard-data-setup"></a>Standardowe dane konfiguracji
 
@@ -147,19 +147,19 @@ Wszystkie formanty w portalu klienta są wbudowanymi kontrolkami portali Power A
 
 Tylko formant niestandardowy uwzględniony w szablonie portalu klienta jest używany do tworzenia tabliczek na stronie głównej.
 
-![Kafelki na strony głównej](media/customer-portal-home-page-tiles.png "Kafelki na strony głównej")
+![Kafelki na strony głównej.](media/customer-portal-home-page-tiles.png "Kafelki na strony głównej")
 
 Aby zmodyfikować kafelki, należy wykonać następujące czynności.
 
 1. Otwórz [aplikację Zarządzanie portalem](/powerapps/maker/portals/configure/configure-portal).
 1. W okienku nawigacji po lewej stronie zaznacz **Szablony strony**.
 
-    ![Okienko nawigacji zarządzania portalami](media/customer-portal-nav.png "Okienko nawigacji zarządzania portalami")
+    ![Okienko nawigacji zarządzania portalami.](media/customer-portal-nav.png "Okienko nawigacji zarządzania portalami")
 
 1. Wybierz szablon strony o nazwie **Strona główna**.
 1. W polu **Szablon sieci Web** wybierz łącze **Strona główna**, aby otworzyć kod źródłowy tej strony.
 
-    ![Pole szablonu sieci Web](media/customer-portal-web-template.png "Pole szablonu sieci Web")
+    ![Pole szablonu sieci Web.](media/customer-portal-web-template.png "Pole szablonu sieci Web")
 
 1. Teraz widzisz wszystkie kody źródłowe strony głównej i możesz je zmodyfikować, jeśli jest to wymagane.
 

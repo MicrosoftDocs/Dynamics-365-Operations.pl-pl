@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796155"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352621"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurowanie metod dostawy i opłat w biurze obsługi
 
@@ -65,11 +65,11 @@ W sekcji **Wiersze** można zdefiniować jedną lub więcej opłat z podziałem 
 
 Firmy często konfigurują opłaty warstwowe. W takim przypadku kwota płacona przez odbiorcę za dostawę zależy od wartości zamówienia. Aby skonfigurować opłaty warstwowe, wprowadź wartości w polach **Od kwoty** i **Do kwoty** oprócz definiowania samej opłaty w polu **Wartość opłat**. Na przykład dla zamówień mających wartość mniejszą niż 50 USD sprzedawca detaliczny nalicza opłatę 5,95 USD za wysyłkę drogą lądową. Dla zamówień, które mają wartość równą lub wyższą niż 50 USD, ale niższą niż 50 USD, sprzedawca detaliczny nalicza opłatę 7,95 USD. Na koniec dla zamówień, które mają wartość równą lub wyższą niż 100 USD, sprzedawca detaliczny oferuje bezpłatną wysyłkę. Na poniższej ilustracji przedstawiono konfigurację tych opłat.
 
-![Przykład stałych opłat warstwowych](media/fixedtieredcharges.png)
+![Przykład stałych opłat warstwowych.](media/fixedtieredcharges.png)
 
 Można korzystać z kombinacji kategorii opłat w zależności od potrzeb biznesowych. Na przykład dla wszystkich zamówień mających wartość mniejszą niż 100 USD istnieje stała opłata 9,95 USD za wysyłkę. Następnie, w przypadku zamówień, których wartość jest równa lub większa niż 100 zł, opłaty za dostawę są obliczane w wysokości 5% wartości zamówienia. Na poniższej ilustracji przedstawiono konfigurację tych opłat.
 
-![Przykład mieszanych opłat warstwowych](media/mixedtieredcharges.png)
+![Przykład mieszanych opłat warstwowych.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Stosowanie metod dostawy podczas wprowadzania zamówień w biurze obsługi
 

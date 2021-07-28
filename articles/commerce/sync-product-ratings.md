@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791687"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354620"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronizacja ocen produktów w rozwiązaniu Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Aby sprawdzić, czy istnieje podzadania **RetailProductRating**, wykonaj następ
 
 Na poniższej ilustracji pokazano przykład strony szczegóły podzadania w Commerce.
 
-![Szczegóły podzadania RetailProductRating](media/rnr-hq-ratings-sub-job.png)
+![Szczegóły podzadania RetailProductRating.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Jeśli nie znajdziesz podzadania **RetailProductRating**, możesz już wcześniej uruchomić zadanie **Synchronizuj oceny produktów** i zadanie **1040 CDX** przed zainicjowaniem harmonogramu Commerce. W takim przypadku należy wykonać następujące kroki w celu uruchomienia zadania **Pełnej synchronizacji danych**.
@@ -83,7 +83,7 @@ Aby zaimportować oceny produktów do Commerce z usługi ocen i recenzji, należ
 
 Na poniższej ilustracji pokazano przykład strony konfiguracji zadania wsadowego w Commerce.
 
-![Konfiguracja zadania wsadowego Synchronizuj oceny produktów](media/rnr-hq-batchjob-recurrence.png)
+![Konfiguracja zadania wsadowego Synchronizuj oceny produktów.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Sprawdź, czy zadanie wsadowe synchronizacji ocen produktu zakończyło się pomyślnie
 
@@ -95,7 +95,7 @@ Aby sprawdzić, czy zadanie wsadowe **Synchronizacja ocen produktów w rozwiąza
 
 Na poniższej ilustracji przedstawiono przykładowe szczegóły zadania wsadowego w Commerce, gdy zaplanowano uruchomienie zadania wsadowego w odstępach dwugodzinnych.
 
-![Szczegóły zadania wsadowego Synchronizuj oceny produktów](media/rnr-hq-batchjob-status-checking.png)
+![Szczegóły zadania wsadowego Synchronizuj oceny produktów.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Umożliwia udostępnienie ocen produktów w punkcie sprzedaży
 
@@ -113,15 +113,15 @@ Aby włączyć oceny produktu w punkcie sprzedazy, wykonaj następujące czynno�
 
 Na poniższej ilustracji przedstawiono przykład konfiguracji parametrów Commerce w celu włączenia ocen produktów w punkcie sprzedaży.
 
-![Konfiguracja parametrów Commerce dla ocen produktów w punkcie sprzedaży](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfiguracja parametrów Commerce dla ocen produktów w punkcie sprzedaży.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Na poniższej ilustracji przedstawiono przykład ocen produktów w POS.
 
-![Oceny produktu w POS](media/rnr-pos-catalog-ratings.png)
+![Oceny produktu w POS.](media/rnr-pos-catalog-ratings.png)
 
 Na poniższej ilustracji przedstawiono przykład ocen produktów w kanałach biura obsługi.
 
-![Oceny produktu w kanale biura obsługi](media/rnr-call-center-ratings.png)
+![Oceny produktu w kanale biura obsługi.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

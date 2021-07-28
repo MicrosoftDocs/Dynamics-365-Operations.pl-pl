@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747158"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348560"
 ---
 # <a name="workflow-elements"></a>Elementy przepływu pracy
 
@@ -60,7 +60,7 @@ Przepływ pracy składa się z elementów. Sekcje poniżej opisują poszczególn
 
 Przepływ pracy można tworzyć w celu przetwarzania dokumentów lub pozycji w dokumencie. Na przykład utworzono przepływ pracy zatwierdzania dla kart czasu pracy. (Nazwiemy go *przepływem pracy dokumentu*). Do tego przepływu pracy dokumentu można dodać element *przepływu pracy dla wiersza*. Po uruchomieniu tego element wszystkie pozycje wiersza w dokumencie są przesyłane do przetworzenia. Czasami wszystkie elementy wiersza muszą być przetworzone przez ten sam przepływ pracy lub każdy element musi być przetwarzany przez różne przepływy pracy dla wierszy. Załóżmy, że pracownik przesłał kartę czasu pracy podobną do tej na obrazku poniżej.
 
-![Przepływ pracy z pozycjami w wierszu](./media/workflow_lineitemworkflow.gif)
+![Przepływ pracy z pozycjami w wierszu.](./media/workflow_lineitemworkflow.gif)
 
 W tym scenariuszu można utworzyć następujące przepływy pracy dla towarów w wierszu:
 

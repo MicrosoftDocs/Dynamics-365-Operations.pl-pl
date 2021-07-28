@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8961b7156f52e48dbfcf7efb14e50316e81fcfff
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053690"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360156"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
@@ -71,11 +71,11 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 4. W okienku zadań **Kopiuj instancję** wybierz instancję, która ma zostać zastąpiona, a następnie wybierz **Kopiuj**. Poczekaj na zaktualizowanie wartości pola **Stan kopiowania** na **Zakończone**.
 
-   ![[Wybierz instancję do zastąpienia](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Wybierz instancję do zastąpienia.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 
-   ![[Wybierz Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Wybór Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 

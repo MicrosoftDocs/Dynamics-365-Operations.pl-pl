@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890838"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348493"
 ---
 # <a name="set-up-electronic-invoicing"></a>Konfigurowanie fakturowania elektronicznego
 
@@ -37,7 +37,7 @@ Konfigurowalność opiera się na konfiguracji formatu raportowania elektroniczn
 
 Na poniższej ilustracji przedstawiono główne składniki funkcji dodatkowej Faktury elektroniczne.
 
-![Omówienie funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Omówienie funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 Z powodu różnic w formatach faktur i przepływach akcji ustawienia funkcji mogą być różne w zależności od kraju lub regionu lub zgodnie z wymaganiami biznesowymi.
 
@@ -50,7 +50,7 @@ Proces instalacji musi zostać ukończony w środowisku RCS. Wykonaj poniższe c
 3. Na stronie **Funkcje Faktur elektronicznych** wybierz opcję **Importuj**, aby zaimportować konfigurację modelu danych ER z repozytorium globalnego.
 4. Wybierz przycisk **Dodaj**, aby utworzyć elektroniczną funkcję faktur elektronicznych. Funkcję można utworzyć od podstaw lub wyprowadzić z istniejącej funkcji Faktury elektroniczne.
 
-    ![Dodawanie funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Dodawanie funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Podczas tworzenia nowej funkcji Faktur elektronicznych jest ona ustawiona na numer wersji, a jej domyślnym stanem jest **Wersja robocza**.
@@ -63,21 +63,21 @@ Wykonaj poniższe czynności, aby dodać formaty ER do funkcji Faktury elektroni
 
 1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Konfiguracje** wybierz opcję **Dodaj**, aby dodać konfiguracje formatów plików ER dla funkcji dodatku Faktur elektronicznych.
 
-    ![Dodawanie konfiguracji funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Dodawanie konfiguracji funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Podczas tworzenia od podstaw funkcji Faktury elektroniczne należy ręcznie dodać wszystkie konfiguracje formatu pliku ER. W przypadku wyprowadzenia funkcji Faktury elektroniczne z istniejącej funkcji konfiguracje formatu pliku ER są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji Faktury elektroniczne.
 
 2. Wybierz opcję **Edytuj**, aby otworzyć stronę **Projektant formatów**, na której możesz edytować konfigurację formatu pliku ER.
 
-    ![Edytowanie konfiguracji funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Edytowanie konfiguracji funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Podczas edytowania formatu stan wersji konfiguracji jest ustawiany na **Wersja robocza**.
 
 3. Strona **Projektant formatów** umożliwia zmianę konfiguracji pliku formatu ER. Aby uzyskać więcej informacji, zobacz [Twórz konfiguracje dokumentów elektronicznych](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Strona projektanta formatu](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Strona projektanta formatu.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Konfiguracje funkcji
 
@@ -87,18 +87,18 @@ Wykonaj poniższe czynności, aby dodać ustawienia funkcji do funkcji Faktury e
 
 1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Ustawienia** wybierz opcję **Dodaj**, aby dodać ustawienia funkcji dla funkcji Faktur elektronicznych.
 
-    ![Dodawanie ustawień funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Dodawanie ustawień funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Podczas tworzenia od podstaw funkcji Faktury elektroniczne należy ręcznie dodać wszystkie wymagane ustawienia funkcji. W przypadku wyprowadzenia funkcji Faktury elektroniczne z istniejącej funkcji, wszystkie ustawienia funkcji są tworzone automatycznie, ponieważ są dziedziczone z oryginalnej funkcji Faktury elektroniczne.
 
 2. Wybierz opcję **Edytuj**, aby edytować ustawienia wersji funkcji.
 
-    ![Edytowanie ustawień funkcji Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Edytowanie ustawień funkcji Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Strona **Ustawienia wersji funkcji** umożliwia konfigurowanie akcji, reguł stosowania i zmiennych.
 
-    ![Akcje, reguły stosowalności i zmienne](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Akcje, reguły stosowalności i zmienne.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Akcje
 
@@ -113,7 +113,7 @@ Na stronie **Ustawienia wersji funkcji** na karcie **Akcje** na skróconej karci
 - Wybierz opcję **Nowy** lub **Usuń**, aby dodać nowe akcje lub usunąć istniejące akcje.
 - Wybierz opcję **W górę** lub **W dół**, aby przenieść wybrane akcje w górę lub w dół w siatce, a więc zmień kolejność, w jakiej są uruchamiane. Akcje są uruchamiane w kolejności, w jakiej są wyświetlane w siatce, od góry do dołu.
 
-![Zarządzanie akcjami](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Zarządzanie akcjami.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Akcje**.
 
@@ -129,7 +129,7 @@ W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Akcje**.
 
 Na skróconej karcie **Parametry** wyświetlają parametry akcji wybranej na skróconej karcie **Akcje**.
 
-![Skrócona karta Parametry](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Skrócona karta Parametry.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Parametry**.
 
@@ -259,20 +259,20 @@ Reguły stosowania umożliwiają tworzenie reguł logicznych, które określają
 
 1. Na stronie **Konfiguracja wersji funkcji** na karcie **Reguły zastosowania** wybierz opcję **Nowa**, aby dodać regułę stosowania.
 
-    ![Zarządzanie regułami stosowania](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Zarządzanie regułami stosowania.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. W siatce wybierz klauzule, które powinny być zgrupowane.
 3. Wybierz **Klauzulę group**.
 
-    ![Klauzule grupowania](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Klauzule grupowania.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Gdy klauzule są zgrupowane, do siatki jest dodawana nowa kolumna. W tej kolumnie jest określany operator logiczny dla zgrupowanych klauzul.
 
-    ![Operator logiczny dla klauzul zgrupowanych](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Operator logiczny dla klauzul zgrupowanych.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Aby rozgrupować klauzule, wybierz zgrupowane klauzule do rozgrupowania, a następnie wybierz **Rozgrupuj klauzury**.
 
-![Rozgrupowanie klauzul](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Rozgrupowanie klauzul.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Kiedy rozgrupowujesz klauzulę, zawsze zaczynaj od najbardziej wewnętrznego poziomu grupowania.
@@ -294,7 +294,7 @@ Zmienne można tworzyć, a następnie stosować jako wartości wejściowe dla pa
 
 - Na stronie **Ustawienia wersji funkcji** na karcie **Zmienne** wybierz opcję **Nowy** lub **Usuń**, aby zarządzać zmiennymi.
 
-    ![Zarządzanie zmiennymi](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Zarządzanie zmiennymi.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Zmienne**.
 
@@ -310,7 +310,7 @@ W poniższej tabeli przedstawiono pola dostępne na skróconej karcie **Zmienne*
 
 - Na stronie **Ustawienia wersji funkcji** w okienku akcji wybierz opcję **Weryfikuj**, aby sprawdzić konfigurację wersji funkcji.
 
-   ![Wybranie przycisku Zatwierdź](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Wybranie przycisku Zatwierdź.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Podczas sprawdzania poprawności jest sprawdzana spójność całej konfiguracji. Jeśli na przykład określony parametr akcji jest obowiązkowy, ale jego wartość pozostanie pusta, sprawdzanie poprawności wykryje niespójność i pojawi się ostrzeżenie.
 
@@ -323,7 +323,7 @@ Wykonaj poniższe czynności, aby włączyć środowisko Faktury elektroniczne d
 1. Na stronie **Funkcje Faktur elektronicznych** na karcie **Środowiska** wybierz opcję **Włącz**, aby dodać środowisko Faktur elektronicznych.
 2. W polu **Obowiązuje od** wprowadź datę, kiedy nowe środowisko zostanie wprowadzone.
 
-![Włączanie środowiska Faktur elektronicznych](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Włączanie środowiska Faktur elektronicznych.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organizacje
 

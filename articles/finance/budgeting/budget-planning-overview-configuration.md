@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 17251
+ms.custom:
+- "17251"
+- intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 93e5d46d6b9817b7f019e529bf4da6199bc29dbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898217"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355731"
 ---
 # <a name="budget-planning-overview"></a>Omówienie planowania budżetu
 
@@ -40,7 +42,7 @@ Organizacja może konfigurować planowanie budżetu, a następnie konfigurować 
 - **Etapy planowania budżetu** — etapy planowania budżetu definiują kroki planu budżetu od początku do ostatecznego zatwierdzenia. Etapy planowania budżetu są organizowane w przepływy pracy dla planowania budżetu.
 - **Przepływy pracy planowania budżetu** — przepływy pracy planowania budżetu obejmują i definiują etapy planowania budżetu. Przepływy pracy planowania budżetu są skojarzone z przepływami pracy budżetowania. Przepływy pracy Budżetowanie są zautomatyzowanymi i ręcznymi procesami, które przenoszą plany budżetu przez etapy planowania budżetu.
 
-[![Terminologia związana z planowaniem budżetu](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
+[![Terminologia związana z planowaniem budżetu.](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### <a name="typical-tasks"></a>Typowe zadania
 
@@ -65,11 +67,11 @@ Opcjonalnym, ale zalecanym pierwszym krokiem jest utworzenie schematu zawierają
 
 Na poniższej ilustracji pokazano ogólny przykład, w którym dla różnych poziomów organizacji tworzone są oddzielne przepływy pracy. Dla każdego przepływu pracy definiowane są etapy, a do każdego etapu przypisywane są określone scenariusze z danymi budżetowymi. Wykonywane są zadania przenoszenia danych z jednego etapu do następnego. Na przykład kwoty mogą być przydzielane lub agregowane na różnych kontach, zatwierdzeniach lub innych dokumentach kontrolnych. W tej ilustracji kursywa oznacza scenariusz niedostępny do edycji na danym etapie lub dane archiwalne albo zatwierdzone na wcześniejszym etapie, które z tego powodu nie powinny być zmieniane.
 
-[![Ogólny schemat planowania budżetu](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
+[![Ogólny schemat planowania budżetu.](./media/budgetplanninggenericschema-300x145.png)](./media/budgetplanninggenericschema.png) 
 
 Na poniższej ilustracji widać przykład, gdzie centrala firmy szacuje kwoty podstawowe dla wstępnego budżetu i dystrybuuje jest do departamentów sprzedaży. Następnie działy sprzedaży prognozują i przesyłają prognozy z powrotem do centrali, gdzie menedżer budżetu agreguje je i dostosowuje. Na koniec menedżer budżetu wysyła skorygowane kwoty budżetu do dyrektora finansowego (CFO) w celu sprawdzenia, wprowadzenia ostatnich korekt i ostatecznego zatwierdzenia.
 
-[![Przykład schematu planowania budżetu](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
+[![Przykład schematu planowania budżetu.](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
 ### <a name="organization-hierarchy-for-budget-planning"></a>Hierarchia organizacyjna dla planowania budżetu
 
@@ -93,7 +95,7 @@ Dobrym rozwiązaniem jest utworzenie przepływu pracy planowania budżetu dla ka
 
 Przepływ pracy budżetowanie dla planowania budżetu tworzy się na stronie **Przepływy pracy Budżetowanie**. Ten proces przypomina proce tworzenia innych przepływów pracy. Na poniższe ilustracji pokazano przykład przepływu pracy dla centrali.
 
-[![Przepływ pracy Budżetowanie dla planowania budżetu](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
+[![Przepływ pracy Budżetowanie dla planowania budżetu.](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
 Typy przepływu pracy zawierają następujące elementy:
 
@@ -141,11 +143,11 @@ Podczas konfigurowania alokacji etapu należy skojarzyć przepływ pracy planowa
 
 W przykładowym schemacie, pokazanym wcześniej w tym temacie, alokacja służy do przenoszenia kwot z planu i scenariuszy budżetu na etapie „Podstawowy” w centrali do innego planu i scenariuszy budżetu na etapie „Szacowanie” w dziale sprzedaży. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Alokacja etapu](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
+[![Alokacja etapu.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 
 Ponadto w przykładowym schemacie agregacja jest wykonywana z planów i scenariuszy budżetu na etapie „Przesłano” w Dziale sprzedaży do nadrzędnego planu na etapie „Akumulacja” w Centrali. Poniższa ilustracja pokazuje odpowiednią sekcję przykładowego schematu.
 
-[![Agregacja](./media/aggregation-109x300.png)](./media/aggregation.png)
+[![Agregacja.](./media/aggregation-109x300.png)](./media/aggregation.png)
 
 ### <a name="priorities"></a>Priorytety
 
@@ -163,7 +165,7 @@ Oprócz kolumn dla kwot budżetu można zdefiniować kolumny dla pól projektu, 
 
 W przypadku przykładowego schematu można utworzyć kolumny scenariuszy „sprzedaż”, „kontrakty” i „Prognoza”. (Na poniższej ilustracji pokazano odpowiednią sekcję schematu.) Można następnie podzielić jeden lub wszystkie z tych scenariuszy na osobne kolumny dla każdego kwartału roku obrachunkowego, tak aby menedżer ds. sprzedaży w dziale mógł dokładnie wprowadzać kwoty prognozy dla każdego okresu.
 
-[![Ilustracja sekcji schematu dodawania kolumn](./media/columns.png)](./media/columns.png)
+[![Ilustracja sekcji schematu dodawania kolumn.](./media/columns.png)](./media/columns.png)
 
 Można również określić, czy poszczególne elementy układu (kolumna) są dostępne do edycji i czy są one dostępne w jakimkolwiek szablonie arkusza utworzonego w tym układzie. W przykładowym schemacie w układzie używanym dla etapu „Szacowanie”, kolumny „Prognoza” są dostępne do edycji, a kolumny „Sprzedaż w poprzednim roku” i „Umowy” są tylko do odczytu.
 
@@ -201,7 +203,7 @@ Menu **Akcje** można też użyć do utworzenia nowego procesu przez skopiowanie
 
 Innym przydatnym poleceniem w menu **Akcje** jest **Wyświetlenie stanu procesu budżetu**. To polecenie graficznie pokazuje plany budżetu w procesie wraz z odpowiednimi danymi, takimi jak stan przepływu pracy planów, podsumowania według kwot i jednostki oraz przechodzenie jednym kliknięciem do samych planów budżetu.
 
-[![Stan procesu planowania budżetu](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+[![Stan procesu planowania budżetu.](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

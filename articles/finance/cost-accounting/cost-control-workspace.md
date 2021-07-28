@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833049"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355234"
 ---
 # <a name="cost-control-workspace"></a>Obszar roboczy kontroli kosztów 
 
@@ -116,7 +116,7 @@ Obszar roboczy **Kontrola kosztów** został zaprojektowany jako raport sieci We
 
 Lista raportów dostępnych dla użytkowników, na przykład menedżerów, jest kontrolowana przez ustawienie opcji **Opublikowane** na stronie **Konfiguracje obszaru roboczego Kontrola kosztów**.
 
-![Raport widoczny dla użytkowników w obszarze roboczym Kontrola kosztów](./media/report-cost-control.png)
+![Raport widoczny dla użytkowników w obszarze roboczym Kontrola kosztów.](./media/report-cost-control.png)
 
 Menedżer może wybrać okres kalendarza obrachunkowego, który ma być wyświetlany. Data sesji określa domyślny bieżący okres.
 
@@ -136,11 +136,11 @@ Siatka przedstawia każdy składnik kosztu skojarzony z węzłem hierarchii wymi
 
 Dwa wykresy pokazują podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy.
 
-![Wykresy pokazujące podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy](./media/cost-element-details-operations.png)
+![Wykresy pokazujące podsumowanie porównania wartości rzeczywistych z zabudżetowanymi oraz odchylenie budżetu z podziałem na okresy.](./media/cost-element-details-operations.png)
 
 Użytkownicy mogą kliknąć opcję **Wpisy kosztów** i przejść do szczegółów wpisów.
 
-![Wpisy kosztów](./media/cost-entries.png)
+![Wpisy kosztów.](./media/cost-entries.png)
 
 Na przykład czynsz jest rozchodem rozdzielanym między centra kosztów. Użytkownik, który chce poznać źródło czynszu przypisanego do jego centrum kosztów, musi przejść do szczegółów, aby zobacz sposób obliczenia czynszu.
 
@@ -148,7 +148,7 @@ Po kliknięciu opcji **Podstawa alokacji** na stronie **Wpisy kosztów** pojawia
 
 W poniższym przykładzie podstawa alokacji jest typu **Podstawa alokacji formuły** oraz widać formułę. Wymienione są czynniki definiujące formułę. Ponadto siatki przedstawia obliczenia wykonana dla poszczególnych obiektów kosztów.
 
-![Obliczenia dla obiektów kosztów](./media/cost-entries-allocation-base.png)
+![Obliczenia dla obiektów kosztów.](./media/cost-entries-allocation-base.png)
 
 Dodatkowe zasoby 
 

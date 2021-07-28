@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188862"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353451"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Wizualne planowanie zadań na potrzeby lean manufacturing
 
@@ -47,7 +47,7 @@ Planować można tylko zadania typu **Przetwarzanie**. Zadanie w systemie Kanban
 ## <a name="kanban-schedule-board"></a>Tablica harmonogramu Kanban
 Strona **Tablica harmonogramu Kanban** zawiera siedem głównych elementów, jak pokazano na poniższej ilustracji. 
 
-![Tablica harmonogramu Kanban](./media/kanban-schedule-board-1024x554.png)
+![Tablica harmonogramu Kanban.](./media/kanban-schedule-board-1024x554.png)
 1.  Okienko akcji
 2.  Pola filtrowania
 3.  Przycisk nieplanowanych zadań
@@ -71,7 +71,7 @@ Aby wzmocnić wyrazistość podglądu oferowanego przez tablicę harmonogramu Ka
 ## <a name="plan-unplanned-jobs"></a>Planowanie nieplanowanych zadań
 Nieplanowane zadania Kanban można planować z okna dialogowego **Planowanie nieplanowanych zadań**. Aby otworzyć to okno dialogowe, kliknij przycisk **Nieplanowane zadania** pokazujący bieżącą liczbę niezaplanowanych zadań. Alternatywnie kliknij przycisk **Planowanie nieplanowanych zadań** na karcie **Tablica** w okienku akcji. Okno dialogowe pokazuje listę niezaplanowanych zadań Kanban dla komórki roboczej. Można użyć pola **Filtr**, aby filtrować według wszystkich pól w siatce. Na przykład można wyfiltrować zadania Kanban według określonego produktu. Po wyfiltrowaniu listy zadań, które chcesz zaplanować, zaznacz je na liście i kliknij przycisk **OK**. Aby planować zadania przy użyciu funkcji automatycznego planowania, w opcji **Automatyczne planowanie** ustaw wartość **Tak**. W takim przypadku zadania są planowane w okresach według ich terminów ukończenia. Można również planować zadania według okresów. Wystarczy zaznaczyć okres w polu **Okres**. Poniższa ilustracja zawiera przykładowe okno dialogowe **Planowanie nieplanowanych zadań**. 
 
-![Okno dialogowe Planowanie nieplanowanych zadań](./media/plan-unplanned-jobs-1024x564.png)
+![Okno dialogowe Planowanie nieplanowanych zadań.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Ustalanie kolejności zadań Kanban w tym samym okresie
 W granicach okresu można zmienić kolejność jednego lub więcej wybranych zadań. Ta funkcja może być przydatna, jeśli chcesz nadać priorytet niektórym zadaniom w okresie. Można też ustalić kolejność dla zadań mających takie same atrybuty produktów w celu usprawnienia wykonywania zadań. Kolejność można zmieniać za pomocą operacji przeciągania i upuszczania lub za pomocą elementów menu **Wstecz** i **Dalej** na karcie **Tablica** w okienku akcji.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 44b101c3b386c3edd8aec4c44e8ee834519718ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bbf2d6b8e22981db76ca028073f8170cbe7f40b2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811189"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361073"
 ---
 # <a name="asset-fault-cost-control"></a>Formant kosztów usterki składnika majątku
 
@@ -56,7 +56,7 @@ W tym przykładzie przedstawiono obliczenia dotyczące kontroli kosztów usterki
 - W polu **Koszt rzeczywisty** są wyświetlane zaksięgowane koszty w zleceniach pracy. 
 - W polu **Ustalony koszt** są wyświetlane łączne koszty, na które firma jest zobowiązana w związku ze zleceniami pracy.
 
-    ![Rysunek 1](media/05-controlling-and-reporting.png)
+    ![Rysunek 1.](media/05-controlling-and-reporting.png)
 
 Informacje na temat konfigurowania usterek można znaleźć w temacie [Zarządzanie usterkami](../setup-for-work-orders/fault-management.md).
 

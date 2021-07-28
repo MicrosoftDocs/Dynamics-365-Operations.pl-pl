@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0389ed6ca7926a4981029f6e91be2d1be4b8618e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754501"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354422"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Raportowanie i analizy wykonywane przy użyciu usługi Power BI — strona główna
 
@@ -37,9 +39,9 @@ Obszary robocze mogą wykorzystywać bogate infografiki i wizualizacje obsługiw
 
 Użytkownicy mogą obsługiwać dane myszką lub dotykając elementów na stronie. Skutki interakcji są natychmiast widoczne, więc można szybko sprawdzić efekt jakiegoś działania bez zamykania obszaru roboczego. Piękne, interaktywne wizualizacje zachęcają użytkowników do eksploracji danych i poznawania ukrytych trendów.
 
-![Przykład Power BI w obszarze roboczym](./media/Power-BI-in-D365-Workspace.png)
+![Przykład Power BI w obszarze roboczym.](./media/Power-BI-in-D365-Workspace.png)
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby dowiedzieć się więcej, zobacz następujące tematy:
 
 - [Osadzona usługa Power BI w obszarach roboczych](embed-power-bi-workspaces.md)
 - [Integracja usługi Power BI Embedded](power-bi-embedded-integration.md)
@@ -50,20 +52,20 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 ## <a name="business-documents-and-printing"></a>Dokumenty biznesowe i drukowanie
 Rozwiązania raportowania są często używane do zapisywania i przekazywania informacji o transakcjach biznesowych. Dlatego rozwiązanie do raportowania musi umożliwiać tworzenie fizycznych kopii danych biznesowych przy użyciu istniejących urządzeń, takich jak drukarki sieciowe. Są to na przykład faktury sprzedaży, zestawienia odbiorcy i czeki.
 
-[![Przykład dokumentów biznesowych](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Przykład dokumentów biznesowych.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby dowiedzieć się więcej, zobacz następujące tematy:
 
 - [Usługi raportowania dokumentów](document-reporting-services.md)
 - [Omówienie drukowania dokumentu](print-documents.md)
 - [Instalowanie Agenta rozsyłania dokumentów w celu obsługi druku przez sieć](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Raportowanie elektroniczne
-Raportowanie elektroniczne to narzędzie umożliwiające konfigurowanie formatów dokumentów zgodnie z wymogami prawnymi obowiązującymi w różnych krajach lub regionach. Raportowanie elektroniczne może być stosowane m.in. do inspekcji finansowych, sprawodawczości podatkowej i fakturowania elektronicznego.
+Raportowanie elektroniczne to narzędzie umożliwiające konfigurowanie formatów dokumentów zgodnie z wymogami prawnymi obowiązującymi w różnych krajach lub regionach. Raportowanie elektroniczne może być stosowane m.in. do inspekcji finansowych, sprawozdawczości podatkowej i fakturowania elektronicznego.
 
-[![Przykład raportowania elektronicznego](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Przykład raportowania elektronicznego.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby dowiedzieć się więcej, zobacz następujące tematy:
 
 - [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 - [Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
@@ -72,9 +74,9 @@ Aby uzyskać więcej informacji, zobacz następujące tematy:
 ## <a name="financial-reporting"></a>Raportowanie finansowe
 Dostępne są standardowe raporty finansowe wykorzystujące domyślne kategorie konta głównego. Za pomocą projektanta raportów można tworzyć i modyfikować tradycyjne sprawozdania finansowe, np. rachunki wyników i bilansów. Można następnie udostępniać wyniki innym członkom organizacji. Przykłady sprawozdawczości finansowej obejmują bilanse, przepływy gotówki i sumaryczny bilans próbny rok do roku.
 
-[![Przykład raportowania finansowego](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Przykład raportowania finansowego.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
-Aby uzyskać więcej informacji, zobacz następujące tematy:
+Aby dowiedzieć się więcej, zobacz następujące tematy:
 
 - [Raportowanie finansowe](financial-reporting-intro.md)
 - [Generowanie raportów finansowych](generate-financial-report.md)

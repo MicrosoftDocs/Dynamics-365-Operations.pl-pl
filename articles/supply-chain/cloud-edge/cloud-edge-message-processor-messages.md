@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271108"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350577"
 ---
 # <a name="message-processor-messages"></a>Komunikaty procesora komunikatów
 
@@ -88,15 +88,15 @@ W tym przykładzie używasz pola **w przypadku wystąpienia zdarzenia biznesoweg
 
 1. W [Power Automate](https://preview.flow.microsoft.com) utwórz nowy automatyczny przepływ w chmurze dla wyzwalacza przepływu **w przypadku wystąpienia zdarzenia biznesowego — aplikacja Fin & Ops (Dynamics 365)**, po którym następują kroki **Przeanalizuj JSON** i **Wyślij wiadomość e-mail**, tak jak pokazano na poniższej ilustracji.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatyczny przepływ w chmurze":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatyczny przepływ w chmurze.":::
 
 1. W kroku **W przypadku wystąpienia zdarzenia biznesowego** można odszukać lub wprowadzić **wystąpienie** centrum, a następnie użyć kroków **Kategoria**, **Zdarzenie biznesowe** *Przetworzony komunikat procesora komunikatów*, jak pokazano na poniższej ilustracji.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Krok W przypadku wystąpienia zdarzenia biznesowego":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Krok W przypadku wystąpienia zdarzenia biznesowego.":::
 
 1. W kroku **Przeanalizuj JSON** wprowadź **schemat** definiujący pola rozszerzone. Można użyć opcji *Pobierz schemat* na stronie **Katalog zdarzeń biznesowych** w module Supply Chain Management lub rozpocząć od wklejenia przykładowego tekst schematu. Ten przykładowy tekst znajduje się po następującej ilustracji.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Krok Przeanalizuj JSON":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Krok Przeanalizuj JSON.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ W tym przykładzie używasz pola **w przypadku wystąpienia zdarzenia biznesoweg
 
 1. W kroku **Wysyłanie wiadomości e-mail** możesz zaznaczyć poszczególne pola lub rozpocząć od wklejenia przykładowej treści wiadomości e-mail w polu **Treść**. Ten przykład znajduje się po następującej ilustracji.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate Krok Wysyłanie wiadomości e-mail":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate Krok Wysyłanie wiadomości e-mail.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

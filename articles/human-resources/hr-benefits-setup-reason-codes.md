@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056355"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360551"
 ---
 # <a name="set-up-reason-codes"></a>Ustaw kody przyczyn
 
@@ -56,15 +56,15 @@ Na stronie **Łącza** w obszarze roboczym **Zarządzanie świadczeniami** zosta
 
 1. Wybierz **Kody przyczyn**, aby uzyskać szczegółowe informacje o stanie migracji.
 
-   [![Kody przyczyn](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Kody przyczyn.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Wybierz kod przyczyny, który nie został migrowany.
 
-   [![Stan migracji kodu przyczyny](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Stan migracji kodu przyczyny.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Wybierz opcję **Migracja kodu przyczyny**.
 
-   [![Dokonaj migracji kodu przyczyny](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Dokonaj migracji kodu przyczyny.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. W okienku **Migracja kodu przyczyny świadczenia** dostępne są dwie opcje mapowania na kod przyczyny zarządzania pracownikami:
 
@@ -73,10 +73,10 @@ Na stronie **Łącza** w obszarze roboczym **Zarządzanie świadczeniami** zosta
      > Możesz użyć istniejącego kodu przyczyny w zarządzaniu personelem tylko wtedy, gdy inny kod przyczyny zarządzania świadczeniami nie został już do niego migrowany.
    - Aby utworzyć nowy kod przyczyny w zarządzaniu pracownikami, wprowadź nowy w polu **Nowy kod przyczyny**, a następnie wprowadź opis w polu **Nowy opis**.
 
-   [![Mapuj na kod przyczyny zarządzania pracownikami](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Mapuj na kod przyczyny zarządzania pracownikami.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Po migrowania kodów przyczyny do funkcji Zarządzania pracownikami opcja używania tych kodów w zarządzaniu świadczeniami jest automatycznie ustawiana na **Tak**.
 
-[![Użyj kodu przyczyny w zarządzaniu świadczeniami](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Użyj kodu przyczyny w zarządzaniu świadczeniami.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

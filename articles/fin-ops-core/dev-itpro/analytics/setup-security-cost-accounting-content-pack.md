@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32093f4e47fe3d9ca691b70e15adfc3199e65beb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e51c6914aab7261862a7ce180376b67d01711e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359466"
 ---
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Konfigurowanie zabezpieczeń pakietu zawartości usługi Power BI Analiza rachunku kosztów
 
@@ -42,11 +42,11 @@ Aby rozpowszechnić zabezpieczenia na poziomie dostępu do usługi Power BI, wł
 3. Znajdź zestaw danych pakietu zawartości usługi Power BI **Analiza rachunku kosztów**.
 4. Otwórz stronę zabezpieczeń.
 
-    ![Otwieranie strony zabezpieczeń](./media/CA-picture-1.png)
+    ![Otwieranie strony zabezpieczeń.](./media/CA-picture-1.png)
 
 5. Rola **Kontroler obiektów kosztów** jest już utworzona. Dodaj innych członków będących częścią hierarchii organizacyjnej na poziomie dostępu zatytułowanej Kontrola kosztów.
 
-    ![Dodawanie członków](./media/CA-picture-2.png)
+    ![Dodawanie członków.](./media/CA-picture-2.png)
 
 Użytkownicy, którzy zostaną dodani do roli **Kontroler obiektów kosztów**, będą widzieć tylko dane, które mają prawo zobaczyć zgodnie z definicją w hierarchii organizacyjnej na poziomie dostępu zatytułowanej Rachunek kosztów.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053016"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353693"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definiowanie programu świadczeń i zarządzanie nim
 
@@ -32,7 +32,7 @@ W module Human Resources dostępny jest pakiet narzędzi służących do konfigu
 
 Aby przypisać pracownika do świadczenia, trzeba najpierw utworzyć elementy poszczególnych świadczeń. Te elementy łączą podobne plany świadczeń i określają domyślne ustawienia, takie jak stawki potrąceń i szczegóły księgowania. Wiele z tych ustawień można dostosować później, bo przypisywaniu pracowników do świadczeń. Dla każdego planu świadczenia organizacja może oferować kilka opcji rejestrowania lub pracownik może zrezygnować z rejestracji w planie. 
 
-[![Przebieg procesu świadczeń](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Przebieg procesu świadczeń.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Elementy świadczenia
 
@@ -44,7 +44,7 @@ Przed przystąpieniem do tworzenia świadczeń i przypisywania do nich pracownik
 
 Dla każdego typu świadczenia, np. badania okulistyczne lub opieka stomatologiczna, organizacja może oferować pracownikom jeden lub kilka planów. Dla każdego planu organizacja może oferować różne opcje. Na przykład pracownicy mogą wykupić dodatkowy zakres ubezpieczenia o wartości swojego rocznego wynagrodzenia, albo dwu- lub trzykrotnie przewyższającej tę wartość. Każda kombinacja planu i opcji staje się świadczeniem, na jakie pracownicy mogą się zarejestrować. 
 
-[![ilustracja świadczenia](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![ilustracja świadczenia.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Uprawnienie
 Dostępność świadczeń oferowanych przez pracodawcę zależy od różnych czynników. Podczas tworzenia świadczenia w programie Dynamics 365 Human Resources można ustawić dla niego typ uprawnień. 

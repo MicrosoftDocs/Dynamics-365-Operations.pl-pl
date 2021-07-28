@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840420"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360431"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurowanie zasad konsolidacji wysyłki
 
@@ -179,7 +179,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Pozostaw opcję **Konsolidowanie z otwartymi wysyłkami** ustawioną na *Nie*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytora zapytań na karcie **Zakres** w siatce znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy*, i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
 1. Wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
@@ -214,7 +214,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Ustaw opcję **Konsolidowanie z otwartymi wysyłkami** na *Tak*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytor zapytań na karcie **Sprzężenia** rozwiń węzeł i wybierz pozycję **Tabelę \> Załaduj szczegóły** w drzewie.
 1. Wybierz pozycję **Dodaj sprzężenie tabeli**.
@@ -251,9 +251,9 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Ustaw opcję **Konsolidowanie z otwartymi wysyłkami** na *Tak*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Zapotrzebowanie odbiorcy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. Na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Konto odbiorcy*, i ustaw pole **Kryteria** dla tego wiersza na *US-001*.
 1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.
@@ -283,7 +283,7 @@ Aby utworzyć zasady konsolidacji wysyłki dla tego przypadku biznesowego, wykon
 1. Pozostaw opcję **Konsolidowanie z otwartymi wysyłkami** ustawioną na *Nie*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Pola konsolidacji** na liście **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytora zapytań na karcie **Zakres** wybierz przycisk **Dodaj**, aby dodać wiersz zawierający następujące ustawienia do siatki:
 
@@ -317,7 +317,7 @@ Zazwyczaj ten przypadek biznesowy można obsługiwać przy użyciu zasad domyśl
 1. Pozostaw opcję **Konsolidowanie z otwartymi wysyłkami** ustawioną na *Nie*.
 1. Na okienku akcji wybierz opcję **Zapisz**.
 1. Na skróconej karcie **Pola konsolidacji** w polu **Pozostałe pola** wybierz wiersz, w którym pole **Nazwa pola** ma wartość *Metoda dostawy*.
-1. Wybierz przycisk **Dodaj** ![Strzałka w prawo](media/forward-button.png), aby przenieść pole na listę **Wybrane pola**.
+1. Wybierz przycisk **Dodaj** ![Strzałka w prawo.](media/forward-button.png) Kliknij przycisk , aby przenieść wybrane pole na listę **Wybrane pola**.
 1. W okienku akcji wybierz pozycję **Edytuj zapytanie**.
 1. W oknie dialogowym edytora zapytań na karcie **Zakres** znajdź wiersz, w którym pole **Pole** zostało ustawione na *Magazyn*, i ustaw pole **Kryteria** dla tego wiersza na *61, 63*.
 1. Kliknij przycisk **OK**, aby zamknąć okno dialogowe.

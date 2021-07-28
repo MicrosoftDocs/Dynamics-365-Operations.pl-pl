@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936737"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349633"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
 
@@ -44,7 +46,7 @@ Przed próbą użycia funkcji zamówienia odbiorcy w punkcie sprzedaży należy 
 
 Aby skorzystać z zamówień odbiorców, należy skonfigurować metody dostawy, które mogą być używane w kanale sklepu. Należy zdefiniować co najmniej jedną metodę dostawy, która może być używana, gdy wiersze zamówienia są wysyłane do odbiorcy z sklepu. Należy zdefiniować co najmniej jedną metodę odbioru, która może być używana, gdy wiersze zamówienia są odbierane w sklepie. Metody dostawy są definiowane na stronie **Metody dostawy** w module Commerce Headquarter. Aby uzyskać więcej informacji dotyczących konfigurowania metody dostawy, należy zapoznać się z tematem [Ustawianie metod dostawy](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Strona metod dostawy](media/customer-order-modes-of-delivery.png)
+![Strona metod dostawy.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Ustawianie grup realizacji
@@ -53,7 +55,7 @@ Niektóre sklepy lub lokalizacje magazynowe mogą nie być w stanie zrealizować
 
 W programie Commerce w wersji 10.0.12 i nowszych organizacje mogą określać, czy kombinacje magazynu i magazynu/sklepu, które są zdefiniowane w grupach realizacji, mogą być używane do wysyłki, do odbioru lub do wysyłki i odbioru. Zapewnia to firmie dodatkową elastyczność w określaniu, które magazyny mogą zostać wybrane podczas tworzenia zamówienia klienta na towary do wysyłki, a które sklepy można wybrać podczas tworzenia zamówienia klienta na towary do odbioru. Aby skorzystać z tych opcji konfiguracji, należy włączyć możliwość określania lokalizacji, w której jest włączona funkcja **Możliwość określenia lokalizacji jako „Wysyłka” lub „Odbiór” włączonej w grupie Fulfillment**. Jeśli magazyn połączony z grupą realizacji nie jest sklepem, można go skonfigurować tylko jako lokalizację wysyłki. Nie można jej użyć, jeśli w punkcie sprzedaży skonfigurowano zamówienia z odbiorem.
 
-![Strona grup realizacji](media/customer-order-fulfillment-group.png)
+![Strona grup realizacji.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurowanie ustawień kanału
 
@@ -65,7 +67,7 @@ Podczas pracy z zamówieniami klientów w punkcie sprzedaży należy wziąć pod
 - **Użycie podatku według lokalizacji docelowej** — ta opcja wskazuje, czy adres wysyłkowy jest używany do określania grupy podatków stosowanej do wierszy zamówienia wysyłanych na adres odbiorcy.
 - **Użycie podatku opartego na odbiorcy** — ta opcja wskazuje, czy grupa podatków zdefiniowana dla adresu odbiorcy jest używana do opodatkowania zamówień odbiorców tworzonych w sprzedaży w celu wysyłki w domu odbiorcy.
 
-![Konfiguracja kanału magazynowania na stronie sklepy](media/customer-order-all-stores.png)
+![Konfiguracja kanału magazynowania na stronie sklepy.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Konfigurowanie parametrów zamówienia odbiorcy
 
@@ -80,7 +82,7 @@ Przed próbą utworzenia zamówień odbiorców w punkcie sprzedaży należy skon
 - **Kod opłaty transportowej** — jeśli w polu **Używania opcji zaawansowanego automatycznego pobierania opłat** wybrana jest opcja **Tak**, to ustawienie parametru nie ma znaczenia. Jeśli ta opcja ma wartość **Nie**, użytkownicy będą proszeni o ręczne wprowadzenie opłaty transportowej podczas tworzenia zamówień odbiorców w punkcie sprzedaży. Ten parametr służy do mapowania kodu opłaty za rozrachunki z odbiorcami, który będzie stosowany do zamówień w momencie, gdy użytkownicy wprowadzą opłatę transportową. Kod opłaty definiuje logikę księgowania finansowego dla opłaty transportowej.
 - **Korzystanie z zaawansowanych opłat automatycznych** — tę opcję należy ustawiać na **Tak**, aby przy tworzeniu zamówień odbiorców w punkcie sprzedaży były obliczane automatyczne opłaty systemowe. Te opłaty automatyczne mogą być używane do obliczania opłat za wysyłkę lub innych opłat związanych z zamówieniem lub produktem. Aby uzyskać informacje dotyczące konfiguracji funkcji zaawansowanych opłat automatycznych i korzystania z nich, należy zapoznać się z [Wielokanałowe zaawansowane opłaty automatyczne](./omni-auto-charges.md).
 
-![Karta zamówienia odbiorcy na stronie parametrów Commerce](media/customer-order-parameters.png)
+![Karta zamówienia odbiorcy na stronie parametrów Commerce.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Aktualizowanie układów ekranu transakcji w punkcie sprzedaży
 
@@ -95,7 +97,7 @@ Upewnij się, że [układ ekranu punktu sprzedaży](./pos-screen-layouts.md) jes
 - **Zmiana metody dostawy** — ta operacja umożliwia szybką zmianę trybu dostawy dla wierszy, które zostały już skonfigurowane do wysyłki, bez konieczności przechodzenia przez przepływ „Wyślij wszystkie produkty” lub „Wyślij wybrane produkty”.
 - **Zastąpienie depozytu** — tej operacji można użyć do zmiany kwoty wpłaty zapłaconej przez odbiorcę dla wybranego zamówienia odbiorcy.
 
-![Operacje na ekranie transakcja w punkcie sprzedaży](media/customer-order-screen-layout.png)
+![Operacje na ekranie transakcja w punkcie sprzedaży.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Praca z zamówieniami odbiorcy w punkcie sprzedaży
 

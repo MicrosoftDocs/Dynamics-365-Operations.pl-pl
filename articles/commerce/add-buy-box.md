@@ -2,7 +2,7 @@
 title: Moduł pola zakupu
 description: W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,21 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dce3c8adcd2926e60d001bddb5c278fac6860268
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 307c9876aa0fed77778fcf81903f9c52e3f5be67
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796229"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479239"
 ---
 # <a name="buy-box-module"></a>Moduł pola zakupu
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduły pola zakupu i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 
-Termin *pole zakupu* zazwyczaj odnosi się do obszaru strony zawierającej szczegóły produktu, która jest „powyżej zakładki”, oraz zawiera wszystkie ważne informacje wymagane do dokonania zakupu produktu. (Obszar „powyżej zakładki” jest widoczny po pierwszym załadowaniu strony, dzięki czemu użytkownicy nie muszą przewinąć w dół, aby ją wyświetlić.)
+Termin *pole zakupu* zazwyczaj odnosi się do obszaru strony zawierającej szczegóły produktu (PDP), która jest „powyżej zakładki”, oraz zawiera wszystkie ważne informacje wymagane do dokonania zakupu produktu. (Obszar „powyżej zakładki” jest widoczny po pierwszym załadowaniu strony, dzięki czemu użytkownicy nie muszą przewinąć w dół, aby ją wyświetlić.)
 
 Moduł pola zakupu to specjalny pojemnik, który służy do przechowywania wszystkich modułów wyświetlanych w polu zakupu na stronie szczegółów produktu.
 
@@ -35,7 +36,7 @@ Adres URL strony szczegóły produktu zawiera identyfikator produktu. Wszystkie 
 
 Poniższy obraz pokazuje przykład modułu kupującego na stronie ze szczegółowymi informacjami o produkcie.
 
-![Przykład modułu pola zakupu](./media/ecommerce-pdp-buybox.PNG)
+![Przykład modułu pola zakupu.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Qłaściwości modułu pola zakupu i gniazda 
 
@@ -67,14 +68,16 @@ Następujące ustawienia modułu pola zakupu mogą być skonfigurowane w **Ustaw
 
 - **Limit ilości dla wiersza koszyka** — To ustawienie jest używane do określania maksymalnej liczby każdej pozycji, którą można dodać do koszyka. Na przykład sprzedawca może zdecydować, że tylko 10 sztuk każdego produktu może być sprzedawanych w jednej transakcji.
 - **Zapasy** — Aby uzyskać informacje dotyczące sposobu stosowania ustawień zapasów, należy zapoznać się z tematem [stosowanie ustawień zapasów](inventory-settings.md).
-- **Dodaj produkt do koszyka** — Ta właściwość służy do określania zachowania po dodaniu towaru do koszyka. Możliwe wartości są **Przejdź do koszyka**, **Nie przechodź do koszyka** i **Wyświetl powiadomienia**. Gdy wartość jest ustawiona na **Przejdź do strony koszyka**, użytkownicy są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Nie przechodź do strony koszyka**, użytkownicy nie są wysyłani na stronę koszyka po dodaniu towaru. Gdy wartość jest ustawiona na **Wyświetl powiadomienie**, użytkownicy będą wyświetlali powiadomienie o potwierdzeniu i mogą kontynuować przeglądanie na stronie szczegóły produktu. 
+- **Dodaj produkt do koszyka** - aby uzyskać informacje dotyczące sposobu stosowania ustawień **Dodaj produkt do koszyka**, zobacz temat [ustawienia Dodaj produkt do koszyka](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Kup rozszerzenia definicji modułu box w motywie Adventure Works
+
+Moduł pola zakupu udostępniany przez motyw Adventure Works ma rozszerzenie definicji modułu, które obsługuje implementację modułu specyfikacji produktu w module akordeonu w polu zakupu PDP. Aby zaprezentować atrybuty specyfikacji produktu w okienku zakupu PDP, dodaj moduł specyfikacji produktu do gniazda modułu akordeon w gnieździe okna zakupu.
+
 
 > [!IMPORTANT]
-> Ustawienia w witrynie **Dodaj produkt do koszyka** są dostępne w wydaniu Dynamics 365 Commerce 10.0.11. W przypadku aktualizacji ze starszej wersji Dynamics 365 Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje dotyczące aktualizowania pliku appsettings.json, zajrzyj do [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Kompozycja Adventure Works jest dostępna w Dynamics 365 Commerce w wersji 10.0.20.
 
-Poniższy rysunek przedstawia przykład powiadomienia o potwierdzeniu „dodanego do koszyka” w witrynie Fabrikam.
-
-![Przykład modułu powiadomienia](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Interakcja Commerce Scale Unit
 
@@ -127,6 +130,8 @@ Aby dodać moduł pola zakupu do nowej strony i ustawić wymagane właściwości
 [Moduł stopki](author-footer-module.md)
 
 [Moduł udostępniania społeczności](social-share-module.md)
+
+[Ustawienia Dodaj produkt do koszyka](add-cart-settings.md)
 
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
 

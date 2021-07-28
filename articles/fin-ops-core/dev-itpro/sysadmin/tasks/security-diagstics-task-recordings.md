@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745772"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358556"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Diagnostyka zabezpieczeń dla nagrań zadań
 
@@ -39,7 +39,7 @@ Ten temat zawiera informacje o sposobach analizowania wymagań dotyczących upra
 
 4. W polu **Identyfikator użytkownika** wybierz użytkownika. Jeśli użytkownik nie ma uprawnień do niektórych elementów menu, pole **Brakujące uprawnienia** zostanie zaktualizowane do wartości **Tak**.
   
-  ![Strona szczegółów elementu menu zabezpieczeń](../media/Security-Menu-Item-Details.png)
+  ![Strona szczegółów elementu menu zabezpieczeń.](../media/Security-Menu-Item-Details.png)
 
 5. Wybierz pozycję **Dodaj odwołanie**, aby wyświetlić listę obiektów zabezpieczeń, w tym role, obowiązki i uprawnienia, które przyznają brakujące uprawnienie.
 6. Wybierz obiekt zabezpieczeń z listy:

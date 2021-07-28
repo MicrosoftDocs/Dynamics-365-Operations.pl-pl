@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e69c35745959c6f3a90a7c597d37316e9da5358e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359564"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synchronizowanie magazynów z rozwiązania Supply Chain Management do rozwiązania Field Service
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910266"
 
 Ten temat zawiera omówienie szablonów i podstawowego zadania, które są używane do synchronizowania magazynów między programem Dynamics 365 Supply Chain Management a programem Dynamics 365 Field Service.
 
-[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Szablony i zadania
 Poniższy szablon i podstawowe zadania są używane do synchronizowania magazynów między rozwiązaniami Supply Chain Management i Field Service.
@@ -77,7 +77,7 @@ Na poniższych ilustracjach pokazano mapowanie szablonu w narzędziu Integracja 
 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Magazyny (rozwiązanie Supply Chain Management do rozwiązania Field Service): Magazyn
 
-[![Mapowanie szablonu w integracji danych](./media/Warehouse1.png)](./media/Warehouse1.png)
+[![Mapowanie szablonu w integracji danych.](./media/Warehouse1.png)](./media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

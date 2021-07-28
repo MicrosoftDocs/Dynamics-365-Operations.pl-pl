@@ -1,6 +1,6 @@
 ---
-title: Konfiguracja korzystania z modułu Finance Insights (wersje do 10.0.19)
-description: W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights (wersje do 10.0.19).
+title: Konfiguracja korzystania z modułu Finance Insights (przed wersją 10.0.19)
+description: W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights (przed wersją 10.0.19).
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 6b578962839a34a1e2ce0311f7d8e7ee57a10927
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186427"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357445"
 ---
-# <a name="configuration-for-finance-insights-preview"></a>Konfiguracja korzystania z modułu Finance Insights (wersja zapoznawcza)
+# <a name="configuration-for-finance-insights-for-private-preview-preview---before-version-10019"></a>Konfiguracja dla Finance Insights w ramach prywatnej wersji zapoznawczej (podglądowej) — przed wersją 10.0.19
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "6186427"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> Poniższe procedury konfigurowania rozwiązania Finance Insights są prawidłowe w przypadku wersji rozwiązania Microsoft Dynamics 365 Finance do 10.0.19. Aby skonfigurować Finance Insights w wersji 10.0.20 i późniejszych, patrz [Konfiguracja Finance Insights (wersja zapoznawcza)— wersje do 10.0.20 i nowsze](configure-for-fin-insites-PubPrvw.md).
+> Poniższe procedury konfigurowania rozwiązania Finance Insights są prawidłowe w przypadku wersji rozwiązania Microsoft Dynamics 365 Finance przed wersją 10.0.19. Aby skonfigurować Finance Insights w wersji 10.0.20 i późniejszych, patrz [Konfiguracja Finance Insights (wersja zapoznawcza)— wersje do 10.0.20 i nowsze](configure-for-fin-insites-PubPrvw.md).
 
 Finance Insights łączy funkcje firmy Microsoft Dynamics 365 Finance z Microsoft Dataverse, Azure i AI Builder w celu zapewnienia wydajnego narzędzia prognozowania dla organizacji. W tym temacie objaśniono kroki konfiguracyjne, które umożliwią systemowi korzystanie z funkcji dostępnych w module Finance Insights.
 
@@ -59,7 +59,7 @@ Wykonaj następujące kroki, aby skonfigurować Dataverse for Finance Insights.
 
     1. Otwórz stronę **Środowiska**.
 
-        [![Strona Środowiska](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Strona Środowiska.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Wybierz środowisko Dataverse utworzone powyżej,, a następnie wybierz opcję **Ustawienia**.
     3. Wybierz **Zasoby \> Wszystkie ustawienia starego typu**.
@@ -792,6 +792,8 @@ Dodatek zostanie zainstalowany w ciągu kilku minut.
     | Adres URL organizacji CDS                                     | Adres URL organizacji Dataverse skopiowany z góry. |
     | Identyfikator organizacji CDS                                               | Identyfikator organizacji Dataverse skopiowany z góry. |
 5. Włącz opcję **Czy to jest domyślne środowisko CDS dla dzierżawcy**.
+
+Instalacja dodatku może potrwać kilka minut.
     
 ## <a name="configure-the-entity-store"></a>Konfigurowanie magazynu jednostek
 

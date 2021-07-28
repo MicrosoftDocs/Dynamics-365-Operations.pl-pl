@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360310"
 ---
 # <a name="accessibility-features"></a>Funkcje ułatwień dostępu
 
@@ -52,13 +52,13 @@ Z każdej akcji dostępnej na stronie można skorzystać za pomocą klawiatury, 
 
 Chcesz uruchomić akcję **Dziennik powiadomień pocztą E-mail**, która znajduje się w grupie **Powiadomienie pocztą E-mail** na karcie **Zamówienie sprzedaży** w okienku akcji.
 
-![Akcja dziennika powiadomień poczty e-mail w okienku akcji](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja „Dziennik powiadomień poczty e-mail” w okienku akcji")
+![Akcja dziennika powiadomień poczty e-mail w okienku akcji.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Akcja „Dziennik powiadomień poczty e-mail” w okienku akcji")
 
 Jedną z opcji jest użycie klawiatury. Naciśnij kombinację klawiszy Ctrl + F6, aby uaktywnić okienko akcji, a następnie naciskaj klawisz Tab, aby przechodzić kolejno między kartami i akcjami do momentu uaktywnienia akcji **Dziennik powiadomień pocztą E-mail**.
 
 Jednak można również uruchomić akcję bardziej bezpośrednio. Z dowolnego miejsca na stronie naciśnij kombinację klawiszy Ctrl + apostrof ('), aby wyświetlić pole wyszukiwania akcji.
 
-![Pole wyszukiwania akcji](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Pole wyszukiwania akcji")
+![Pole wyszukiwania akcji.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Pole wyszukiwania akcji")
 
 W polu wyszukiwania wpisz wyrazy opisujące akcji. Akcja zostanie udostępniona i będzie ją można uruchomić bezpośrednio. Na przykład po wpisaniu **e-mail**, **powiadom** (część wyrazu) lub **dziennik** można „przeskoczyć” do funkcji Dziennik powiadomień pocztą E-mail.
 
