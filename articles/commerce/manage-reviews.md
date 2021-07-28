@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352405"
 ---
 # <a name="manage-ratings-and-reviews"></a>Zarządzanie ocenami i recenzjami
 
@@ -45,7 +45,7 @@ Aby przeczytać recenzję w konstruktorze witryn w usłudze Commerce, wykonaj na
 
 Dodatkowe filtry umożliwiają ograniczenie recenzji według okresu, oceny, kanału lub oddziału (odrzucenia, odpowiedzi lub zgłoszenia).
 
-![Strona główna moderacji](media/rnr-moderation-home.png) 
+![Strona główna moderacji.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Odpowiedz na recenzję 
 
@@ -59,7 +59,7 @@ Aby odpowiedzieć na recenzję w konstruktorze witryn w usłudze Commerce, wykon
 1. Wprowadź tekst odpowiedzi i nazwę, która powinna być wyświetlana dla obiektu odpowiadającego. Domyślną nazwą obiektu odpowiadającego jest **moderator**.
 1. Po zakończeniu wybierz przycisk **Prześlij odpowiedź**.
 
-![Odpowiedź na recenzję](media/rnr-moderation-response.png) 
+![Odpowiedź na recenzję.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Zapoznaj się z recenzją 
 
@@ -82,7 +82,7 @@ Aby znaleźć i usunąć dane klienta w konstruktorze witryn w module Commerce, 
 1. Jeśli odbiorca ma jakiekolwiek czynności recenzowania (na przykład: wysłane recenzje, głosy na temat użyteczności recenzji innych odbiorców lub komentarze dotyczące recenzji innego odbiorcy), zostaną wyświetlone wyniki. Dla każdego towaru jest dostępny przycisk **Usuń**.
 1. Dla każdego towaru, który musi zostać usunięty, wybierz opcję **Usuń**. Po wyświetleniu monitu o potwierdzenie wybierz opcję **tak**. 
     
-![Usuwanie danych klienta](media/rnr-moderation-delete-reviews.png) 
+![Usuwanie danych klienta.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - W celu całkowitego usunięcia danych z systemu może upłynąć nawet do siedmiu dni. Moderatorzy powinni powiadamiać odbiorców o tym opóźnieniu.
@@ -106,19 +106,19 @@ Aby wyświetlić trendy ocen i recenzji w konstruktorze witryn w module Commerce
 1. Przejdź do **Strona główna \> Recenzje \> Raportowanie**
 1. Wybierz opcję **Szablon usługi PowerBI**, aby pobrać szablon.
 
-    ![Pobieranie szablonu Power BI](media/rnr-moderation-reports.png) 
+    ![Pobieranie szablonu Power BI.](media/rnr-moderation-reports.png) 
 
 1. Otwórz pobrany szablon za pomocą aplikacji Power BI. Zamknij okno dialogowe **Dostęp do zawartości sieci Web**, które zostanie wyświetlone, a następnie zamknij wyświetlony komunikat o błędzie „Odśwież”.
 1. Przejdź do **strony głównej**, wybierz opcję **Edytuj kwerendy**, a następnie wybierz **Ustawienia źródła danych**.
 1. W oknie dialogowym **ustawienia źródła danych** wybierz opcję **Zmień źródło**.
 1. W polu **adres URL** wprowadź ścieżkę danych recenzji, które zostały pobrane w poprzedniej procedurze (na przykład **c:\\reviews\\ReviewsData.csv**).
 
-    ![Pole adresu URL w oknie dialogowym wartości rozdzielane przecinkami](media/rnr-powerbi-datasource-settings.png) 
+    ![Pole adresu URL w oknie dialogowym wartości rozdzielane przecinkami.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Wybierz  **OK** i kliknij przycisk **Zastosuj zmiany**. Zastosowanie zmian w źródle danych będzie trwać jedną do dwóch minut.
 1. Wybierz opcję **Arkusz trendów**, aby wyświetlić trendy dotyczące ocen i recenzji.
 
-    ![Trendy ocen i recenzji](media/rnr-powerbi-dashboard-template.png) 
+    ![Trendy ocen i recenzji.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

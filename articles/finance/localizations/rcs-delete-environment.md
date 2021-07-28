@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 637962cf63bfd8c2330726f33545f939ec91d58d
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: cf82abbe5493eac9665323738441fa016205e9ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355014"
 ---
 # <a name="regulatory-configuration-service-rcs---delete-an-rcs-environment"></a>Usługa Regulatory Configuration Service (RCS) — usuwanie środowiska RCS
 
@@ -38,11 +38,11 @@ Przed wykonaniem procedury opisanej w tym temacie muszą być spełnione następ
 1. Otwórz RCS wybierz kafelek roboczy **Raportowanie elektroniczne**.
 2. W sekcji **Łącza pokrewne** wybierz opcję **Usuń środowisko z RCS**.
 
-    ![Usuń łącze do środowiska RCS w sekcji Powiązane łącza](media/01_RCS-Delete-Environ-Related-Link.PNG)
+    ![Usuń łącze do środowiska RCS w sekcji Powiązane łącza.](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
 3. W oknie dialogowym, które się pojawi, przejrzyj komunikaty o zakresie usuwania środowiska.
 
-    ![Komunikaty w oknie dialogowym Usuń środowisko RCS](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+    ![Komunikaty w oknie dialogowym Usuń środowisko RCS.](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
 
     > [!IMPORTANT]
     > Nie można wycofać usunięcia środowiska RCS.

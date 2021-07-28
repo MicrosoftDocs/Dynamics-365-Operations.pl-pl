@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021897"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351256"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Opcje implementacji sieci dostarczania zawartości
 
@@ -40,7 +40,7 @@ Wszystkie trzy opcje implementacji usługi CDN dostarczają tylko dynamicznej za
 
 Na poniższej ilustracji przedstawiono przegląd architektury Commerce.
 
-![Omówienie architektury Commerce](media/Commerce_CDN-Option_ComparisonModels.png)
+![Omówienie architektury Commerce.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Aby uzyskać więcej informacji na temat konfigurowania wystąpienia usługi Azure Front Door dla witryny handlowej, zobacz [Dodawanie obsługi CDN](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ W poniższej tabeli wymieniono zalety i wady używania udostępnionego w handlu 
 
 Na poniższej ilustracji przedstawiono architekturę wystąpienia Azure Front Door dostarczonego z portalu Commerce.
 
-![Użyj wystąpienia usługi Azure Front Door udostępnionego w Commerce](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Użyj wystąpienia usługi Azure Front Door udostępnionego w Commerce.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Użyj wystąpienia usługi Azure Front Door należącego do klienta
 
@@ -66,7 +66,7 @@ W poniższej tabeli wymieniono zalety i wady korzystania z należącego do klien
 
 Na poniższej ilustracji przedstawiono infrastrukturę Commerce, która zawiera należące do klienta wystąpienie usługi Azure Front Door.
 
-![Infrastruktura Commerce, która zawiera należące do klienta wystąpienie usługi Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![Infrastruktura Commerce, która zawiera należące do klienta wystąpienie usługi Azure Front Door.](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## <a name="use-an-external-cdn-service"></a>Korzystanie z zewnętrznej usługi CDN
 
@@ -78,7 +78,7 @@ W poniższej tabeli wymieniono plusz i minusy używania zewnętrznej usługi CDN
 
 Na poniższej ilustracji przedstawiono infrastrukturę Commerce, która obejmuje zewnętrzną usługę CDN.
 
-![Infrastruktura Commerce, która zawiera zewnętrzną usługę CDN](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Infrastruktura Commerce, która zawiera zewnętrzną usługę CDN.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

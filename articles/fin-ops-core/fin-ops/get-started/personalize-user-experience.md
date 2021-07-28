@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944540"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348686"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -85,7 +85,7 @@ Niektóre z najbardziej typowych i ważnych zmiany, jakie użytkownicy wprowadza
 
 Ponadto większość podstawowych typów personalizacji jest dostępnych po kliknięciu elementu prawym przyciskiem myszy i wybraniu polecenia **Personalizuj**. (Pamiętaj, że nie wszystkie elementy na stronie można personalizować). Podczas używania tej metody personalizacji pojawi się *okno właściwości* elementu.
 
-![Personalizowanie właściwości elementu](./media/cli-element-property-window.png)
+![Personalizowanie właściwości elementu.](./media/cli-element-property-window.png)
 
 Okno właściwości służy do spersonalizowania elementu na następujące sposoby:
 
@@ -107,7 +107,7 @@ eJeśli chcesz wprowadzić wiele zmian na stronie lub wprowadzić zmiany, które
 - Wybierz **Personalizuj ten formularz** w grupie **Personalizacja** na karcie **Opcje** okienka akcji jakiejkolwiek strony.
 - Wybierz przycisk **ustawienia** (symbol koła zębatego) na pasku nawigacyjnym, a następnie wybierz opcję **Personalizuj**.
 
-[![Pasek narzędzi personalizacji](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Pasek narzędzi personalizacji.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Nawigacja po stronie
 
@@ -147,7 +147,7 @@ W przypadku niektórych stron zawierających listy funkcja **Dodaj do personaliz
 > [!NOTE]
 > Jeśli funkcja [Zapisane widoki](saved-views.md) jest włączona, zawartość przekazana do obszaru roboczego jest bezpośrednio połączona z widokiem. Kwerenda w widoku służy do pobierania danych do obszaru roboczego, a odpowiadający jej fragment lub łącze w obszarze roboczym powoduje otwarcie strony w tym widoku, dzięki czemu zostanie do niej zastosowany sposób wykonywania kwerend i personalizacji widoku. Jeśli widok zostanie zaktualizowany, odpowiednie elementy obszaru roboczego zostaną skorygowane do nowej definicji widoku.
 
-[![Dodaj do obszaru roboczego](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Dodaj do obszaru roboczego.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Aby dodać listę do obszaru roboczego, najpierw należy prze sortować lub przefiltrować listę na stronie, tak aby informacje były wyświetlane tak, jak mają być widoczne w obszarze roboczym. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Lista**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, w którym można wybrać kolumny, jakie mają być wyświetlane na liście w obszarze roboczym. Także można wybrać etykietę dla listy w obszarze roboczym.
 - Aby dodać kafelek do obszaru roboczego, najpierw przefiltruj listę, tak aby przedstawiała dane, które mają być podsumowane lub chcesz mieć do nich szybki dostęp. (Jeśli funkcja **Zapisanych widoków** jest włączona, nie można kontynuować, dopóki nie zapiszesz widoku, który ma te warunki.) Następnie wybierz opcję **Dodaj do obszaru roboczego**. Wybierz obszar roboczy, a następnie w polu **Prezentacja** wybierz opcję **Kafelek**. Po naciśnięciu przycisku **Konfiguruj** pojawi się okno dialogowe, gdzie można określić etykietę, która ma być używana dla kafelka w obszarze roboczym. Można również określić, czy na kafelku ma się pojawić liczba elementów. Po dodaniu kafelka do obszaru roboczego można go wybrać, aby otworzyć bieżącą stronę z obszaru roboczego. Następnie można wyświetlić przefiltrowaną listę, która jest skojarzona z kafelkiem.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357296"
 ---
 # <a name="integration-with-finance-faq"></a>Integracja z często zadawanymi pytaniami Finance
 
@@ -37,7 +37,7 @@ Nr W przypadku modyfikacji użytkownika aplikacji Human Resources integracja mi�
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Ustawienia domyślne dla użytkownika aplikacji Talent](media/DynamicsApplicationUser.png)
+![Ustawienia domyślne dla użytkownika aplikacji Talent.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Czy wszystkie dane są synchronizowane czy tylko niektóre jednostki danych?
 
@@ -57,7 +57,7 @@ Wymiary finansowe nie są obecnie w Dataverse i w związku z tym nie są częśc
 
 Dla danych, które znajdują się w Finance, ale nie istnieje w Human Resources, należy połączyć dwa systemy ze sobą za pomocą opcji **Skonfiguruj łącza** w programie Human Resources.
 
-![Mapowanie wymiarów finansowych](media/MapFinancialDimensions.png)
+![Mapowanie wymiarów finansowych.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Czasami po zaimportowaniu pracowników, przechodzą oni w stan nieaktywny w Finance. Dlaczego?
 
@@ -71,14 +71,14 @@ Synchronizacja danych korzysta z harmonogramu wykonywania. Integracja pobierze r
 
 Za pomocą opcji „Zaawansowane zapytanie” można filtrować i przekształcać danych źródłowe przed przekazaniem ich do miejsca docelowego.
 
-![Zaawansowane zapytanie o aktywnych pracowników](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Zaawansowane zapytanie o aktywnych pracowników.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Czy mogę określić, które pola należy wysłać do programu Finance w odniesieniu do określonej jednostki?
 
 Pola można dodawać i usuwać z zadania integracji. Nie wszystkie pola danych, które istnieją w tabeli Dataverse, będą wypełnione dla Human Resources.
 Dodatkowe dane mogą być wprowadzane prze Power Apps.
 
-![Dodawanie lub usuwanie pól zadania integracji](media/SpecifyFieldsIncludedInIntegration.png)
+![Dodawanie lub usuwanie pól zadania integracji.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Konfiguruję integrację jako zadanie wsadowe, ale program Human Resources utracił połączenie z systemem docelowym. Jak mogę wysłać ten sam zestaw zmian do systemu docelowego?
 
@@ -126,7 +126,7 @@ Prześledź czas z historii wykonywania Integratora danych i poszukaj projektu z
 
 1. Zapisz indeks zadania z Integratora danych (w tym przykładzie jest to 9)
 
-    ![Zapisz indeks zadania z integratora danych](media/CaptureTaskIndex.png)
+    ![Zapisz indeks zadania z integratora danych.](media/CaptureTaskIndex.png)
 
 2. Śledź czasu wykonania projektu.
 
@@ -134,13 +134,13 @@ Prześledź czas z historii wykonywania Integratora danych i poszukaj projektu z
 
 3. W Finance Zidentyfikuj indeks-1. W tym przykładzie projekt z sufiksem „8” i godzina wykonania projektu z indeksem „0” pasuje do czasu wykonania w kroku 2.
 
-    ![Zidentyfikuj indeks](media/IdentifyIndex.png)
+    ![Zidentyfikuj indeks.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Po integracji Human Resources i Finance nie widzę danych Human Resources w Finance. Co należy zrobić?
 
 Integracja do Finance jest procesem dwuetapowym. Najpierw sprawdź, czy dane Human Resources są zaktualizowane i dostępne w Dataverse. Ta synchronizacja odbywa się niemal w czasie rzeczywistym i można ją sprawdzić za pomocą Power Apps, sprawdzając dane w tabeli danych.
 
-![Dane w Dataverse](media/DataInCDS.png)
+![Dane w Dataverse.](media/DataInCDS.png)
 
 Jeśli dane nie są wyświetlane zgodnie z oczekiwaniami w Dataverse, sprawdź, czy jednostka jest obsługiwana w integracji. Aby uwzględnić dodatkowe dane w Dataverse, zmiana będzie wymagana w witrynie Microsoft.
 
@@ -165,7 +165,7 @@ Upewnij się również, że wybierasz prawidłowe firmy dla skojarzonego zestawu
 
 Odśwież jednostki danych w Finance, przechodząc do **Zarządzanie danymi \> Parametry struktury \> Ustawienia jednostki \> Odśwież listę jednostek.** Może to potrwać kilka minut, a następnie powinny zostać wyświetlone te mapowania. Ten problem występuje podczas tworzenia nowych projektów.
 
-![Brak mapowania pól](media/MissingFieldMapping.png)
+![Brak mapowania pól.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

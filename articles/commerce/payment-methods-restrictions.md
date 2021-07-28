@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804534"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352355"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Ograniczanie metod płatności dla zwrotów bez paragonu
 
@@ -38,7 +38,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące zadania.
 3. Konfigurowanie metod płatności sklepu. Skojarz typy metod płatności z poszczególnymi sklepami, a następnie wprowadź dla każdego typu metody płatności ustawienia właściwe dla sklepu.
 4. Skonfiguruj metody płatności kartą dla sklepów. Skonfiguruj karty dla każdej formy płatności akceptowanej w sklepie.
 
-![Ustawienia sklepu](media/NoReceiptReturns1.png "Ustawienia sklepu detalicznego") 
+![Ustawienia sklepu.](media/NoReceiptReturns1.png "Ustawienia sklepu detalicznego") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Ograniczanie metod płatności dla zwrotów bez paragonu
@@ -49,12 +49,12 @@ Domyślną wartością tego ustawienia jest **Nie**, co zapewnia, że metoda pł
 
 Po wybraniu dla ustawienia **Ogranicz zwroty bez paragonu** wartości **Tak**, dla wybranej metody płatności nie będą możliwe zwroty. 
 
-![Metoda płatności sklepu](media/NoReceiptReturns3.png "Metoda płatności sklepu detalicznego") 
+![Metoda płatności sklepu.](media/NoReceiptReturns3.png "Metoda płatności sklepu detalicznego") 
 
 > [!NOTE]
 > Kiedy kasjer wybiera metodę płatności, dla której obowiązuje ograniczenie zwrotów bez paragonu, pojawia się komunikat przypominający o sprawdzeniu dopuszczalnych metod płatności.
 
-![Dopuszczalne metody płatności](media/NoReceiptReturns4.png "Dopuszczalne metody płatności") 
+![Dopuszczalne metody płatności.](media/NoReceiptReturns4.png "Dopuszczalne metody płatności") 
 
 Jeśli dla transakcji istnieją zarówno zwrot z dokumentem przyjęcia, jak i zwrot bez paragonu, warunek ograniczenia nie zostanie zastosowany, ponieważ transakcja będzie przepływem pracy zwrotu z dokumentem przyjęcia. 
 

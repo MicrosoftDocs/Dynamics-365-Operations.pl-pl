@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2fe07790f64f7e7f672980f80a3e56804cefd66
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351544"
 ---
 # <a name="creating-work-orders"></a>Tworzenie zlecenia pracy
 
@@ -48,7 +48,7 @@ Aby utworzyć zlecenia pracy na podstawie harmonogramu konserwacji, należy wyko
 
     Zostanie wyświetlone okno dialogowe **Tworzenie zleceń pracy**. W polu **Godziny prognozy konserwacji** zostanie wyświetlona liczba godzin prognozowanych dla wybranych wierszy.
 
-    ![Okno dialogowe Tworzenie zleceń pracy](media/18-preventive-maintenance.png)
+    ![Okno dialogowe Tworzenie zleceń pracy.](media/18-preventive-maintenance.png)
 
 1. W sekcji **Parametry** określ liczbę zleceń pracy, które mają zostać utworzone. Umożliwia wybranie jednej z następujących opcji:
 

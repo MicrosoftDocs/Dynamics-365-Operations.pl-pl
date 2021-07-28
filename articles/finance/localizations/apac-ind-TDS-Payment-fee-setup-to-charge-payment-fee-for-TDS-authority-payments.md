@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023523"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358441"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Skonfiguruj opłaty za płatności z urzędu podatku potrącanego u źródła
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób skonfigurowania opłat pobieranych z podatku potr�
 
 1. Wybierz kolejno opcje **Rozrachunki z dostawcami \> Ustawienia płatności \> Opłata**.
 
-    [![Strona Opłata](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Strona Opłata.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Wybierz **Nowy**, aby utworzyć opłatę za płatność i wprowadź wymagane szczegóły.
 3. W polu **Typ opłaty** wybierz typ opłaty.
@@ -46,7 +46,7 @@ W tym temacie opisano sposób skonfigurowania opłat pobieranych z podatku potr�
 5. Wprowadź wymagane dane.
 6. W okienku akcji wybierz **ustawienia opłat płatności**, aby otworzyć stronę **Ustawienia opłat od płatności**, na której można skonfigurować opłaty dla różnych kombinacji banków, metod płatności, specyfikacji płatności, walut i interwałów dat.
 
-    [![Strona konfiguracji opłaty za płatność](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Strona konfiguracji opłaty za płatność.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Na karcie **Przegląd** w polu **Grupowanie** określ, dla których banków ma być ustawiana opłata za:
 
@@ -64,7 +64,7 @@ W tym temacie opisano sposób skonfigurowania opłat pobieranych z podatku potr�
 15. W polu **Waluta opłaty** określ kod waluty opłaty.
 16. Wybierz kartę **Ogólne**, aby wyświetlić lub zmodyfikować szczegóły wybranego konta bankowego.
 
-    [![Karta Ogólne](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Karta Ogólne.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. W polu **Minimum** wprowadź minimalną kwotę transakcji, która aktywuje opłatę.
 17. W polu **Maksimum** wprowadź maksymalną kwotę transakcji, która aktywuje opłatę.
@@ -74,7 +74,7 @@ W tym temacie opisano sposób skonfigurowania opłat pobieranych z podatku potr�
 21. W polu **Grupa podatku od sprzedaży towaru** wybierz grupę podatków dla towaru, która ma być użyta do obliczenia podatku od sprzedaży towaru dla kwoty opłaty.
 22. Wybierz kartę **Interwał**. 
 
-    [![Karta Interwał](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Karta Interwał.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. W polu **Dni** należy wpisać liczbę dni pomiędzy datą księgowania (datą dyskonta) przekazu a datą płatności skryptu dłużnego.
 24. W polu **Procent/Kwota** określ, czy specyfikacja jest wartością procentową czy kwotą zestawu.

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802052"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349559"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Podłączanie urządzeń peryferyjnych do komputera z aplikacją POS
 
@@ -78,7 +78,7 @@ Sama stacja sprzętowa jest określana na poziomie kanału przy użyciu informac
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>Punkt MPOS z podłączonymi urządzeniami peryferyjnymi
 
-[![Tradycyjny, stacjonarny punkt sprzedaży](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradycyjny, stacjonarny punkt sprzedaży.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Aby podłączyć punkt MPOS do urządzeń peryferyjnych punktu sprzedaży w tradycyjnym scenariuszu stacjonarnego punktu sprzedaży, najpierw przejdź do samej kasy POS i przypisz jej profil sprzętu. Kasy POS są wyszczególnione w oknie **Retail i Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. 
 
@@ -97,7 +97,7 @@ Na koniec w aplikacji MPOS za pomocą operacji **Wybierz stację sprzętową** z
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>Urządzenie MPOS lub Cloud POS z autonomiczną stacją sprzętową
 
-[![Współużytkowane urządzenia peryferyjne](./media/shared-300x254.png)](./media/shared.png)
+[![Współużytkowane urządzenia peryferyjne.](./media/shared-300x254.png)](./media/shared.png)
 
 W tym scenariuszu autonomiczna stacja sprzętowa jest współużytkowana przez klientów MPOS i Cloud POS. Ten scenariusz wymaga utworzenia profilu stacji sprzętowej, aby określić pakiet do pobrania, port oraz profil sprzętu, który będzie używany przez stację. Profil stacji sprzętowej można znaleźć w oknie **Retail and Commerce** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Profile punktów sprzedaży** &gt; **Profile stacji sprzętowych**. 
 

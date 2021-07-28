@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52d8b1055517bc544eea6a8e405a8b6d5c0eee0a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792782"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356861"
 ---
 # <a name="distributed-order-management-dom"></a>Zarządzanie zamówieniami rozdzielonymi (DOM)
 
@@ -34,9 +34,9 @@ System DOM zapewnia optymalizację realizacji zamówień w złożonej sieci syst
 
 Poniższa ilustracja przedstawia cykl życia zamówienia sprzedaży w systemie DOM.
 
-![Cykl życia zamówienia sprzedaży w kontekście systemu DOM](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
+![Cykl życia zamówienia sprzedaży w kontekście systemu DOM.](./media/flow.png "Cykl życia zamówienia sprzedaży w kontekście systemu DOM")
 
-## <a name="set-up-dom"></a>Konfigurowanie systemu DOM
+## <a name="set-up-dom"></a>Ustaw format DOM
 
 1. Wybierz kolejno opcje **Administrowanie systemem \> Ustawienia \> Konfiguracja licencji**.
 2. Na karcie **Klucze konfiguracji** rozwiń węzeł **Commerce**, a następnie wybierz pole wyboru **Zarządzanie zamówieniami rozdzielonymi**.
@@ -200,7 +200,7 @@ W czasie przetwarzania funkcja DOM uwzględni zamówienie i wiersze zamówienia 
 
 Po zastosowaniu reguł, ograniczeń zapasów i optymalizacji funkcja DOM wybiera lokalizację położoną najbliżej adresu dostawy klienta.
 
-![Kryteria zamówień sprzedaży](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
+![Kryteria zamówień sprzedaży.](./media/ordercriteria.png "Kryteria zamówień sprzedaży")
 
 ## <a name="results-of-dom-runs"></a>Wyniki sesji DOM
 

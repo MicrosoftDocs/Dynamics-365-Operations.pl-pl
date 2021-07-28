@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821616"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356004"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO z wartością fizyczną i oznaczeniami
 
@@ -51,7 +51,7 @@ W tym przykładzie FIFO grupa modelu towaru nie jest oznaczona i nie zawiera war
 
 Nowy średni bieżący koszt własny odzwierciedla średnią finansowo zaktualizowanych transakcji. Poniższe ilustracje pokazują efekty modelu magazynu FIFO na tę serię transakcji, gdy opcja **Włącz wartość fizyczną** nie jest używana. 
 
-![Model FIFO bez uwzględniania wartości fizycznej](./media/fifowithoutincludephysicalvalue.gif) 
+![Model FIFO bez uwzględniania wartości fizycznej.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -83,7 +83,7 @@ Jeśli pole wyboru **Włącz wartość fizyczną** jest zaznaczone dla towaru na
 
 Transakcja 5b będzie rozliczona z transakcją przychodu 1b. Wystąpi korekta kwoty 11,25 USD dla tej transakcji rozchodu. Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje efekty modelu magazynu FIFO na tę serię transakcji, gdy używana jest opcja **Włącz wartość fizyczną**. 
 
-![Model FIFO z uwzględnianiem wartości fizycznej](./media/fifowithincludephysicalvalue.gif) 
+![Model FIFO z uwzględnianiem wartości fizycznej.](./media/fifowithincludephysicalvalue.gif) 
 
 **Objaśnienie wykresu**
 
@@ -115,7 +115,7 @@ Oznaczanie to proces, który pozwala połączyć (oznaczyć) transakcję wydania
 
 Nowa średnia ruchoma kosztów własnych odzwierciedla średnią wynikającą z fizycznie i finansowo zaktualizowanych transakcji na poziomie 27,50 USD. Poniższa ilustracja pokazuje wpływ modelu magazynowego FIFO na tę serię transakcji, jeśli używane są oznaczenia między przychodem i rozchodem. 
 
-![Model FIFO z oznaczaniem](./media/fifowithmarking.gif) 
+![Model FIFO z oznaczaniem.](./media/fifowithmarking.gif) 
 
 **Objaśnienie wykresu**
 

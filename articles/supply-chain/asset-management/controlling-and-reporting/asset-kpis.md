@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90759931fcbdb1e5acbd62f8a40e5b37b918f31a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b2122cb123e041d2194fa1ef5fd8024ec4c1a2a0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813876"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361097"
 ---
 # <a name="asset-kpis"></a>Wskaźniki KPI składnika majątku
 
@@ -82,7 +82,7 @@ W poniższej tabeli znajdziesz opisy pól na stronie **Wskaźniki KPI składnika
 
 Na poniższym rysunku przedstawiono zrzut ekranu obliczania KPI dla czterech składników majątku.
 
-![Zrzut ekranu obliczenia wskaźnika KPI dla czterech składników majątku](media/11-controlling-and-reporting.png)
+![Zrzut ekranu obliczenia wskaźnika KPI dla czterech składników majątku.](media/11-controlling-and-reporting.png)
 
 - Można wybrać wiele składników majątku w obszarze **Wszystkie składniki majątku** i kliknąć przycisk **Wskaźniki KPI składnika majątku** na karcie **Ogólne**. Następnie kliknij przycisk **OK** w oknie dialogowym **Oblicz wskaźniki KPI składnika majątku**, aby obliczyć wskaźniki KPI wybranych składników majątku.  
 - Wyniki obliczeń wskaźnika KPI mogą obejmować [rejestracje przerw konserwacyjnych](../work-orders/maintenance-downtime.md), w zależności od konfiguracji i użycia kodów przyczyn przestojów związanych z konserwacją. 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792346"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352139"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Dodawanie rekomendacji produktu w punkcie sprzedaży
 
@@ -39,7 +39,7 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
 
     - Jeśli pracownik sklepu otworzy stronę **Szczegóły produktu** podczas oglądania wcześniejszych transakcji w różnych kanałach, usługa rekomendacji proponuje dodatkowe towary, które inni odbiorcy często kupowali razem z analizowanym produktem.
 
-    [![Rekomendacje na stronie Szczegóły produktu](./media/proddetails.png)](./media/proddetails.png)
+    [![Rekomendacje na stronie Szczegóły produktu.](./media/proddetails.png)](./media/proddetails.png)
 
 2. Na stronie **Transakcja**:
 
@@ -48,7 +48,7 @@ Rekomendacje produktów działają w opisanych niżej scenariuszach w punkcie sp
     > [!NOTE]
     > Aby rekomendacje były wyświetlane na stronie **Transakcja**, sprzedawca detaliczny musi zaktualizować układ ekranu w programie Dynamics 365 Commerce. Formant **Zalecenia** należy upuścić na stronę **Transakcja**.
 
-    [![Rekomendacje na stronie Transakcja](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Rekomendacje na stronie Transakcja.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurowanie Commerce do obsługi rekomendacji POS
 

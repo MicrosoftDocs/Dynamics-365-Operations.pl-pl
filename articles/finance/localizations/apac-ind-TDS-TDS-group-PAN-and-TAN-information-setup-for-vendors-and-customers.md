@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023509"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358273"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Skonfiguruj informacje o grupie TDS, PAN i TAN dla dostawców i klientów
 
@@ -31,7 +31,7 @@ W tym temacie wyjaśniono, jak skonfigurować informacje o grupie potrącanej z 
 
 1. Przejdź do **Rozrachunki z dostawcami \> Dostawcy \> Wszyscy dostawcy** lub **Rozrachunki z odbiorcami \> Odbiorcy \> Wszyscy odbiorcy**.
 
-    [![Strona wszystkich dostawców](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Strona wszystkich dostawców.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. Wybierz **Nowy** na okienku akcji, aby utworzyć dostawcę lub odbiorcę, i wprowadź wymagane szczegóły. Możesz również wybrać istniejącego dostawcę lub dostawcę.
 3. Na skróconej karcie **Faktura i dostawa**, w sekcji **Potrącona zaliczka na podatek**, aby **obliczyć potrąconą zaliczkę na podatek** ustaw wartość **Tak**, TDS lub podatek potrącony w źródle (TCS) dla dostawcy lub odbiorcy.
@@ -60,7 +60,7 @@ W tym temacie wyjaśniono, jak skonfigurować informacje o grupie potrącanej z 
     - Urząd lokalny
     - Inne
 
-    [![Skrócona karta informacji podatkowych](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Skrócona karta informacji podatkowych.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. Następnie w okienku akcji, na karcie **Dostawca**, w grupie **Rejestracja** wybierz **Identyfikatory rejestracji**, aby otworzyć stronę **Zarządzaj adresami**.
 10. Na stronie **Zarządzanie adresami**, na skróconej karcie **Informacje o podatku** wybierz pozycję **Dodaj** lub **Edytuj**, aby otworzyć stronę **Zarządzaj informacjami o podatku**, na której możesz zachować wpis rejestracji podatkowej.

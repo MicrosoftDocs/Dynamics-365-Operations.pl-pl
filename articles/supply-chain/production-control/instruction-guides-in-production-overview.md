@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910096"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354019"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Udostępnianie przewodników po rzeczywistości mieszanej pracownikom produkcji
 
@@ -57,7 +59,7 @@ W poniższych podsekcjach opisano kilka wybranych scenariuszy, w których firmy 
 
 ### <a name="assembly"></a>Zestaw
 
-![Używanie przewodników w zadaniach montażu](media/instruction-guides-hero-assembly.png "Używanie przewodników w zadaniach naprawy")
+![Używanie przewodników w zadaniach montażu.](media/instruction-guides-hero-assembly.png "Używanie przewodników w zadaniach naprawy")
 
 Instrukcje w operacjach montażu pokazują pracownikom potrzebne narzędzia i części oraz sposób ich użycia w rzeczywistej sytuacji.
 
@@ -65,7 +67,7 @@ Menedżerowie produkcji mogą tworzyć i przypisywać przewodniki, na przykład 
 
 ### <a name="service"></a>Serwis
 
-![Używanie przewodników w zadaniach naprawy](media/instruction-guides-hero-service.png "Używanie przewodników w zadaniach naprawy")
+![Używanie przewodników w zadaniach naprawy.](media/instruction-guides-hero-service.png "Używanie przewodników w zadaniach naprawy")
 
 Wyposaż techników w szczegółowe instrukcje w miejscu pracy, eliminując konieczność planowania dodatkowych wizyt.
 
@@ -73,7 +75,7 @@ Menedżerowie serwisu mogą przypisywać przewodniki na przykład do konkretnych
 
 ### <a name="quality"></a>Jakość
 
-![Używanie przewodników w zadaniach kontroli jakości](media/instruction-guides-hero-quality.png "Używanie przewodników w zadaniach kontroli jakości")
+![Używanie przewodników w zadaniach kontroli jakości.](media/instruction-guides-hero-quality.png "Używanie przewodników w zadaniach kontroli jakości")
 
 Wdrażaj nowe procesy i zapewniaj zwiększoną spójność zmianie wiedzy pracownika w powtarzalne narzędzie.
 
@@ -81,13 +83,13 @@ Menedżerowie ds. kontroli jakość mogą przypisywać przewodniki na przykład 
 
 ### <a name="certifications"></a>Certyfikacje
 
-![Używanie przewodników w zadaniach związanych z certyfikacją](media/instruction-guides-hero-certification.png "Używanie przewodników w zadaniach związanych z certyfikacją")
+![Używanie przewodników w zadaniach związanych z certyfikacją.](media/instruction-guides-hero-certification.png "Używanie przewodników w zadaniach związanych z certyfikacją")
 
 Zapewnij, że każdy pracownik spełnia wysokie standardy, szybko określając kto i gdzie potrzebuje pomocy.
 
 ### <a name="safety"></a>Bezpieczeństwo
 
-![Używanie przewodników w instrukcjach bezpieczeństwa pracy](media/instruction-guides-hero-safety.png "Używanie przewodników w instrukcjach bezpieczeństwa pracy")
+![Używanie przewodników w instrukcjach bezpieczeństwa pracy.](media/instruction-guides-hero-safety.png "Używanie przewodników w instrukcjach bezpieczeństwa pracy")
 
 Przed rozpoczęciem pracy w danym środowisku udostępnij instrukcje, które posłużą do wykonania niebezpiecznych procedur. Dzięki podejściu opartym na rzeczywistości mieszanej pracownicy mogą wykonać niebezpieczne procedury wirtualnie.
 
@@ -119,7 +121,7 @@ Aby funkcja była dostępna w systemie, należy włączyć jej klucze konfigurac
 
 Aby skonfigurować sposób wyświetlania przewodników w wydziale produkcyjnym, przejdź do opcji **Rzeczywistość mieszana \> Dynamics 365 Guides \> Konfiguruj integrację przewodników**.
 
-![Konfigurowanie integracji przewodników dla produkcji](media/instruction-guides-configure-integration.png "Konfigurowanie integracji przewodników dla produkcji")
+![Konfigurowanie integracji przewodników dla produkcji.](media/instruction-guides-configure-integration.png "Konfigurowanie integracji przewodników dla produkcji")
 
 Ustaw wartości w następujących polach:
 
@@ -136,7 +138,7 @@ Ustaw wartości w następujących polach:
 
 Strona **Wszystkie przewodniki** umożliwia wyświetlenie listy wszystkich dostępnych przewodników w organizacji oraz wszystkich przydziałów do procesów produkcyjnych i zasobów. Aby ją otworzyć, należy przejść do **Rzeczywistość mieszana \> Przewodniki \> Wszystkie przewodniki**. Na liście u góry są widoczne wszystkie dostępne przewodniki i można je filtrować, korzystając z pola w tym miejscu. Lista na dole zawiera wszystkie przypisania przewodników oraz pasek narzędzi służący do zarządzania nimi.
 
-![Zarządzanie przewodnikami](media/instruction-guides-allguides.png "Zarządzanie przewodnikami")
+![Zarządzanie przewodnikami.](media/instruction-guides-allguides.png "Zarządzanie przewodnikami")
 
 W poniższych sekcjach opisano typy obiektów, do których można przypisać przewodniki. Każdy przypisany przewodnik zawiera instrukcje, które są automatycznie dołączane do odpowiednich zadań produkcyjnych i będą dostępne w wydziale produkcyjnym.
 
@@ -157,7 +159,7 @@ Aby dodać przewodnik do zasobu:
 1. Rozwiń skróconą kartę **Skojarzone przewodniki**.
 1. Wybierz opcję **Dodaj** na pasku narzędzi **Skojarzone przewodniki**. Nowy wiersz zostanie dodany do siatki.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany. W przypadku dużej liczby przewodników można filtrować listę, aby znaleźć odpowiedni.
-    ![Zarządzanie przewodnikami](media/instruction-guides-allguides.png "Zarządzanie przewodnikami")
+    ![Zarządzanie przewodnikami.](media/instruction-guides-allguides.png "Zarządzanie przewodnikami")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Kojarzenie przewodnika z grupą zasobów
 
@@ -178,7 +180,7 @@ Aby dodać przewodnik do grupy zasobów:
 1. Rozwiń skróconą kartę **Skojarzone przewodniki**.
 1. Wybierz opcję **Dodaj** na pasku narzędzi **Skojarzone przewodniki**. Nowy wiersz zostanie dodany do siatki.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany. W przypadku dużej liczby przewodników można filtrować listę, aby znaleźć odpowiedni.
-    ![Dodawanie przewodnika do grupy zasobów](media/instruction-guides-resourcegroup.png "Dodawanie przewodnika do grupy zasobów")
+    ![Dodawanie przewodnika do grupy zasobów.](media/instruction-guides-resourcegroup.png "Dodawanie przewodnika do grupy zasobów")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Kojarzenie przewodnika ze zwolnionym produktem
 
@@ -198,7 +200,7 @@ Aby dodać przewodnik do zwolnionego produktu:
 1. Zostanie wyświetlona strona **Skojarzone przewodniki** dla wybranego produktu.
 1. W okienku akcji wybierz opcję **Dodaj**, aby dodać nowy wiersz do tabeli. 
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do zwolnionego produktu](media/instruction-guides-ReleasedProduct-AddGuides.png "Dodawanie przewodnika do zwolnionego produktu")
+    ![Dodawanie przewodnika do zwolnionego produktu.](media/instruction-guides-ReleasedProduct-AddGuides.png "Dodawanie przewodnika do zwolnionego produktu")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Kojarzenie przewodnika z formułą
 
@@ -223,7 +225,7 @@ Aby dodać przewodnik do formuły:
 1. Rozwiń skróconą kartę **Skojarzone przewodniki**.
 1. Wybierz opcję **Dodaj** na pasku narzędzi **Skojarzone przewodniki**. Nowy wiersz zostanie dodany do siatki.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do formuły](media/instruction-guides-Formula.png "Dodawanie przewodnika do formuły")
+    ![Dodawanie przewodnika do formuły.](media/instruction-guides-Formula.png "Dodawanie przewodnika do formuły")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Kojarzenie przewodnika z wersją formuły
 
@@ -248,11 +250,11 @@ Aby dodać przewodnik do wersji formuły:
 1. Otwórz kartę **Nagłówek** nad górną skróconą kartą.
 1. Na skróconej karcie **Wersje formuły** wybierz wersję, do której chcesz przypisać przewodnik.
 1. Na pasku narzędzi **Wersje formuły** wybierz opcję **Skojarzone przewodniki**.
-    ![Otwieranie przewodników skojarzonych z wybraną wersją formuły](media/instruction-guides-FormulaVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją formuły")
+    ![Otwieranie przewodników skojarzonych z wybraną wersją formuły.](media/instruction-guides-FormulaVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją formuły")
 1. Zostanie wyświetlona strona **Skojarzone przewodniki** dla wybranej wersji formuły.
 1. W okienku akcji wybierz opcję **Dodaj**, aby dodać nowy wiersz do tabeli. 
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do wersji formuły](media/instruction-guides-FormulaVersionAddGuide.png "Dodawanie przewodnika do wersji formuły")
+    ![Dodawanie przewodnika do wersji formuły.](media/instruction-guides-FormulaVersionAddGuide.png "Dodawanie przewodnika do wersji formuły")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Kojarzenie przewodnika z listą składową (BOM)
 
@@ -275,7 +277,7 @@ Aby dodać przewodnik do listy składowej (BOM):
 1. Rozwiń skróconą kartę **Skojarzone przewodniki**.
 1. Wybierz opcję **Dodaj** na pasku narzędzi **Skojarzone przewodniki**. Nowy wiersz zostanie dodany do siatki.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do BOM](media/instruction-guides-BOM.png "Dodawanie przewodnika do listy składowej (BOM)")
+    ![Dodawanie przewodnika do BOM.](media/instruction-guides-BOM.png "Dodawanie przewodnika do listy składowej (BOM)")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Kojarzenie przewodnika z wersją listy składowej (BOM)
 
@@ -297,11 +299,11 @@ Aby dodać przewodnik do wersji listy składowej (BOM):
 1. Otwórz kartę **Nagłówek** nad górną skróconą kartą.
 1. Na skróconej karcie **Wersje BOM** wybierz wersję, do której chcesz przypisać przewodnik.
 1. Na pasku narzędzi **Wersje BOM** wybierz opcję **Skojarzone przewodniki**.
-    ![Otwieranie przewodników skojarzonych z wybraną wersją BOM](media/instruction-guides-BOMVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją BOM")
+    ![Otwieranie przewodników skojarzonych z wybraną wersją BOM.](media/instruction-guides-BOMVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją BOM")
 1. Zostanie wyświetlona strona **Skojarzone przewodniki** dla wybranej wersji BOM.
 1. W okienku akcji wybierz opcję **Dodaj**, aby dodać nowy wiersz do tabeli.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do wersji BOM](media/instruction-guides-BOMVersionAddGuide.png "Dodawanie przewodnika do wersji BOM")
+    ![Dodawanie przewodnika do wersji BOM.](media/instruction-guides-BOMVersionAddGuide.png "Dodawanie przewodnika do wersji BOM")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Kojarzenie przewodnika z marszrutą
 
@@ -322,7 +324,7 @@ Aby dodać przewodnik do marszruty:
 1. Rozwiń skróconą kartę **Skojarzone przewodniki**.
 1. Wybierz opcję **Dodaj** na pasku narzędzi **Skojarzone przewodniki**. Nowy wiersz zostanie dodany do siatki.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do marszruty](media/instruction-guides-Route.png "Dodawanie przewodnika do marszruty")
+    ![Dodawanie przewodnika do marszruty.](media/instruction-guides-Route.png "Dodawanie przewodnika do marszruty")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Kojarzenie przewodnika z wersją marszruty
 
@@ -340,11 +342,11 @@ Aby dodać przewodnik do wersji marszruty:
 1. Otwórz marszrutę, do której chcesz przypisać przewodnik.
 1. Na skróconej karcie **Wersje** wybierz wersję, do której chcesz przypisać przewodnik.
 1. Na pasku narzędzi **Wersje** wybierz opcję **Skojarzone przewodniki**.
-    ![Otwieranie przewodników skojarzonych z wybraną wersją marszruty](media/instruction-guides-RouteVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją marszruty")
+    ![Otwieranie przewodników skojarzonych z wybraną wersją marszruty.](media/instruction-guides-RouteVersion.png "Otwieranie przewodników skojarzonych z wybraną wersją marszruty")
 1. Zostanie wyświetlona strona **Skojarzone przewodniki** dla wybranej wersji BOM.
 1. W okienku akcji wybierz opcję **Dodaj**, aby dodać nowy wiersz do tabeli.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany.
-    ![Dodawanie przewodnika do wersji marszruty](media/instruction-guides-RouteVersionAddGuide.png "Dodawanie przewodnika do wersji marszruty")
+    ![Dodawanie przewodnika do wersji marszruty.](media/instruction-guides-RouteVersionAddGuide.png "Dodawanie przewodnika do wersji marszruty")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Kojarzenie przewodnika z relacją operacji marszruty
 
@@ -367,8 +369,8 @@ Aby dodać przewodnik do relacji operacji marszruty:
 1. Zostanie otwarta strona **Szczegóły marszruty** dla wybranej marszruty.
 1. W górnej tabeli wybierz operację, dla której chcesz podać wskazówki.
 1. W dolnej tabeli wybierz określoną relację (lub ogólną relację **Wszystkie**).
-    ![Wybór operacji, a następnie jej relacji](media/instruction-guides-RouteOperationRelation.png "Wybór operacji, a następnie jej relacji")
-1. Nad dolną tabelą otwórz kartę **Skojarzone przewodniki**. ![Karta Skojarzone przewodniki](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Skojarzone przewodniki")
+    ![Wybór operacji, a następnie jej relacji.](media/instruction-guides-RouteOperationRelation.png "Wybór operacji, a następnie jej relacji")
+1. Nad dolną tabelą otwórz kartę **Skojarzone przewodniki**. ![Karta Skojarzone przewodniki.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Karta Skojarzone przewodniki")
 1. Wybierz opcję **Dodaj** z paska narzędzi u góry dolnej tabeli, aby dodać nowy wiersz do tabeli.
 1. W przypadku nowego wiersza należy użyć listy rozwijanej w kolumnie **Nazwa**, aby wybrać przewodnik, który ma zostać przypisany. W pozostałej części wiersza zaznacz pole wyboru dla każdego kontekstu, w którym ma być dostępny wybrany przewodnik.
 
@@ -379,11 +381,11 @@ Aby dodać przewodnik do relacji operacji marszruty:
 
 Gdy pracownik otwiera listę zadań w interfejsie obsługi wydziału produkcyjnego, moduł Supply Chain Management znajduje odpowiednie przewodniki dla pokazanych zadań. Użyj przycisku **Przewodniki**, aby wyświetlić odpowiednie przewodniki.
 
-![Przycisk Przewodniki w interfejsie obsługi wydziału produkcyjnego](media/instruction-guides-Shopfloor1.png "Przycisk Przewodniki w interfejsie obsługi wydziału produkcyjnego")
+![Przycisk Przewodniki w interfejsie obsługi wydziału produkcyjnego.](media/instruction-guides-Shopfloor1.png "Przycisk Przewodniki w interfejsie obsługi wydziału produkcyjnego")
 
 Następnie załóż odpowiednie HoloLens i uzyskaj dostęp do odpowiedniego przewodnika, patrząc na kod QR i włączając odpowiedni przewodnik.
 
-![Kod QR dostępu do przewodników przy użyciu HoloLens](media/instruction-guides-Shopfloor2.png "Kod QR dostępu do przewodników przy użyciu HoloLens")
+![Kod QR dostępu do przewodników przy użyciu HoloLens.](media/instruction-guides-Shopfloor2.png "Kod QR dostępu do przewodników przy użyciu HoloLens")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Rozpoznawanie logiki wybierania przewodników
 
@@ -406,7 +408,7 @@ Jeśli moduł Supply Chain Management generuje zadania dla wydziału produkcyjne
 - W przypadku dołączania wersji marszruty do zlecenia produkcyjnego wszystkie przewodniki dołączone do tej wersji, a także do nadrzędnej marszruty w tej wersji zostaną wyświetlone w zadaniu.
 - W przypadku zdefiniowania kilku relacji operacji marszruty, które obejmują relację *Wszystkie* i przypisywania do nich przewodników w danym zadaniu będą wyświetlana tylko przewodniki z najbardziej szczegółowej relacji.  
 
-![Diagram rozpoznawania odpowiednich przewodników](media/instruction-guides-Resolve.png "Diagram rozpoznawania odpowiednich przewodników")
+![Diagram rozpoznawania odpowiednich przewodników.](media/instruction-guides-Resolve.png "Diagram rozpoznawania odpowiednich przewodników")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

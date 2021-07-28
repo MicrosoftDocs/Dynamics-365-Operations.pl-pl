@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2bada42073e46c69101e6d31f3328a2eeb95f880
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2921cb22bedf04db1c8d11a382b979b3c63e6683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023501"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349983"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>Wyświetl zaksięgowane płatności i transakcje podatku potrącanego u źródła za okres rozliczeniowy podatku potrącanego u źródła
 
@@ -31,7 +31,7 @@ W tym temacie wyjaśniono, jak wyświetlić płatności i transakcje potrącone 
 
 1. Wybierz kolejno opcje **Podatek \> Podatki pośrednie \> Potrącona zaliczka na podatek \> Okresy rozliczenia podatku u źródła**.
 
-    [![Strona Okresy rozliczenia podatku u źródła](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
+    [![Strona Okresy rozliczenia podatku u źródła.](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
 
 2. Na stronie **Okresy rozliczenia potrąconej zaliczki na podatek** wybierz **płatności potrąconej zaliczki na podatek**, aby otworzyć stronę **Płatności potrąconej zaliczki na podatek**, na której możesz przejrzeć rozliczenia TDS wykonane dla określonego okresu rozliczeniowego TDS.
 

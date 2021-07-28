@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 39dabeb8bacc4ebc3376f53f15c7fb292c8d301c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022453"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352115"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Obsługa Microsoft Teams z Dynamics 365 Commerce
 
@@ -49,7 +49,7 @@ Aby obsługiwać Teams w centrali Commerce, wykonaj kroki opisane poniżej.
 > [!TIP]
 > Jeśli żaden z menedżerów regionalnych, kierowników sklepów i pracowników sklepu nie został skojarzony z licencją zespołu, może zostać wyświetlony następujący komunikat o błędzie: „Nie można pobrać kategorii SKU odpowiedzialnych za aplikacje dla użytkownika” Aby rozwiązać ten problem, wybierz **Synchronizacja zespołów i członków** w okienku akcji.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>Sprawdzanie poprawności inicjowania obsługi Teams w centrum administratora Teams
 
@@ -63,7 +63,7 @@ Aby sprawdzić poprawność inicjowania obsługi Microsoft Teams w centrum admin
 
 Na poniższej ilustracji pokazano przykład strony **Zarządzanie zespołami** w Centrum administratora Teams.
 
-![Przykład strony Zarządzanie zespołami w centrum administratora Teams](media/Teams-FLW-Admin-Teams.png)
+![Przykład strony Zarządzanie zespołami w centrum administratora Teams.](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Przekaż hierarchię organizacyjną z Commerce do Teams
     
@@ -86,7 +86,7 @@ Aby sprawdzić, czy hierarchia organizacyjna została przekazana do Microsoft Te
 1. Na karcie **Listy opublikowane** utwórz nową listę, która ma fikcyjne zadanie.
 1. Wybierz opcję **Publikuj**. Hierarchia organizacyjna powinna być wyświetlana w polu **Wybór osoby, która ma zostać opublikowana** w oknie dialogowym, tak jak pokazano na przykładzie na poniższej ilustracji.
 
-![Przykład hierarchii organizacyjnej w oknie dialogowym Wybierz osoby, które mają być publikowane](media/Microsoft-teams-verify-org-hierarchy.png)
+![Przykład hierarchii organizacyjnej w oknie dialogowym Wybierz osoby, które mają być publikowane.](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

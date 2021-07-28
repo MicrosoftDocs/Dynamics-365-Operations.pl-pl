@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937313"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358840"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Obliczony podatek dla ogólnych wierszy arkuszy finansowych
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ W przeciwnym razie kierunek podatku jest naliczony od sprzedaży.
 
 Na poniższym diagramie przedstawiono regułę graficznie.
 
-![Możliwości podatkowe dla kont projektu](media/Sales-Tax-Direction-Vendor.jpg)
+![Możliwości podatkowe dla kont projektu.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Konto typu Dostawca
 
@@ -73,7 +73,7 @@ W przeciwnym razie kierunek podatku jest naliczony od sprzedaży.
 
 Na poniższym diagramie przedstawiono regułę graficznie.
 
-![Możliwości podatkowe dla kont dostawców](media/Sales-Tax-Direction-Vendor.jpg)
+![Możliwości podatkowe dla kont dostawców.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Konto typu Odbiorca
 
@@ -89,7 +89,7 @@ W przeciwnym razie kierunek podatku jest podatek naliczony.
 
 Na poniższym diagramie przedstawiono regułę graficznie.
 
-![Możliwości podatkowe dla kont odbiorców](media/Sales-Tax-Direction-Customer.jpg)
+![Możliwości podatkowe dla kont odbiorców.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Konto typu Księga
 
@@ -103,7 +103,7 @@ W przeciwnym razie, jeśli kwota arkusza ma wartość debet (dodatnia), kierunek
 
 Na poniższym diagramie przedstawiono regułę graficznie.
 
-![Możliwości podatkowe dla kont księgi](media/Sales-Tax-Direction-Ledger.jpg)
+![Możliwości podatkowe dla kont księgi.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Zastąp kierunek podatku
 
@@ -115,7 +115,7 @@ Umożliwia przejście **Księga główna \> Plan kont \> Konta \> Główne konta
 
 W tej sekcji opisano sposób obliczania znaku kwoty podatku od sprzedaży.
 
-![Strona transakcji podatku](media/sales-tax-amount-sign.jpg)
+![Strona transakcji podatku.](media/sales-tax-amount-sign.jpg)
 
 W poniższej tabeli przedstawiono regułę rodzajową służącą do określania kierunku podatku i znaku kwot podatku w tabeli tymczasowych podatków od sprzedaży.
 

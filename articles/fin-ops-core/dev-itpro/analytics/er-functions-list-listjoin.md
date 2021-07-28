@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 5fe49184ee4023e8b4f54dd7f5107be8c711d4b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353737"
 ---
 # <a name="listjoin-er-function"></a>Funkcja LISTJOIN ER
 
@@ -66,15 +66,15 @@ Wprowadź następnie źródło danych **Rekord 2** typu `Container`. To źródł
 - **Ilość**: to pole zawiera wyrażenie, które zwraca wartość typu `Real`.
 - **IsValid**: to pole zawiera wyrażenie, które zwraca wartość typu `Boolean`.
 
-![Strona projektanta mapowania modelu ER](./media/er-functions-list-listjoin-image1.gif)
+![Strona projektanta mapowania modelu ER.](./media/er-functions-list-listjoin-image1.gif)
 
 W takim przypadku wyrażenie `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` zwraca nową listę zawierającą dwa rekordy.
 
-![Strona projektanta mapowania modelu ER z dwoma rekordami](./media/er-functions-list-listjoin-image2.gif)
+![Strona projektanta mapowania modelu ER z dwoma rekordami.](./media/er-functions-list-listjoin-image2.gif)
 
 Struktura tej listy składa się z pojedynczego pola **Ilość** typu `Real`, ponieważ jest ono jedynym polem, które jest prezentowane w każdym argumencie wywołanej funkcji.
 
-![Strona projektanta mapowania modelu ER — pole ilości/liczby](./media/er-functions-list-listjoin-image3.gif)
+![Strona projektanta mapowania modelu ER — pole ilości/liczby.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

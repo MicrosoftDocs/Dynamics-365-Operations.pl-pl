@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023503"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358177"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Skonfiguruj składniki podatku dla typu podatku TDS
 
@@ -33,7 +33,7 @@ Wykonaj poniższe czynności, aby skonfigurować składniki TDS.
 
 1. Wybierz kolejno opcje **Podatek \> Konfiguracja \> Potrącona zaliczka na podatek \> Składniki potrąconej zaliczki**.
 
-    [![Strona składników podatku u źródła](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Strona składników podatku u źródła.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. W polu **Typ podatku** wybierz **TDS**, aby skonfigurować składniki potrąconej zaliczki na podatek dla tego typu podatku TDS.
 3. W okienku akcji wybierz opcję **Nowy**, aby utworzyć wiersz.
@@ -50,7 +50,7 @@ Wykonaj poniższe czynności, aby skonfigurować składniki TDS.
 
     Na przykład, jeśli kwota progu wyjątku wynosi 5000, identyfikator TDS jest obliczany dla określonego wiersza faktury, jeśli kwota wiersza faktury przekracza 5000 (innymi słowy, jeśli wynosi 5001 lub więcej).
 
-    [![Strona progu](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Strona progu.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Kwota progu wyjątku musi być mniejsza od kwoty progu lub jej równa.
@@ -66,6 +66,6 @@ Wykonaj poniższe czynności, aby skonfigurować składniki TDS.
 
 14. Wybierz **przycisk OK**, aby skopiować i utworzyć składniki TDS dla innej grupy składników TDS na stronie **Składniki potrąconej zaliczki na podatek**.
 
-    [![Okno dialogowe kopiowania składników potrąconych zaliczek na podatek](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Okno dialogowe kopiowania składników potrąconych zaliczek na podatek.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Zamknij stronę.

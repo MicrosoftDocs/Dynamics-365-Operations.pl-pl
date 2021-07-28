@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 5b4899cad01a0ed2424dcc5d29e9fb5cca65a6a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944734"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351104"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Aby pobrać dane z wielu tabel aplikacji, należy zastosować SPRĘŻENIE źródeł danych w mapowaniach modeli Raportowania elektronicznego (ER)
 
@@ -69,7 +69,7 @@ Należy również wcześniej pobrać i zapisać następujące przykładowe pliki
 | **Opis zawartości**  | **Nazwa pliku**   |
 |--------------------------|-----------------|
 | Przykładowy plik konfiguracji **modelu danych ER**, który jest używany jako źródło danych przykładów.| [Model do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
-| Przykładowy plik konfiguracji **modelu mapowania ER**, który wprowadza model danych ER dla przykładów. | [Mapowanie do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Przykładowy plik konfiguracji **modelu mapowania ER**, który wprowadza model danych ER dla przykładów. | [Mapowanie do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml](https://download.microsoft.com/download/9/2/f/92f339ca-41fc-4f5e-b458-6983c957d3dd/MappingtolearnJOINdatasources.version.1.1.xml)|
 | Przykładowa konfiguracja pliku **formatu ER**. Ten plik opisuje dane, które zapełnią składnik formatu ER dla przykładów. | [Format do nauczenia SPRĘŻENIA źródeł danych.version.1.1.xml.](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktywuj dostawcę konfiguracji
@@ -78,7 +78,7 @@ Należy również wcześniej pobrać i zapisać następujące przykładowe pliki
 2. Wybierz kolejno opcje **Administrowanie organizacją \> Obszary robocze \> Raportowanie elektroniczne**.
 3. Na stronie **Konfiguracje lokalizacji** w sekcji **Dostawcy konfiguracji** sprawdź, czy dostawca konfiguracji dla przykładowej firmy [Litware, Inc.](http://www.litware.com) jest wymieniony na liście i czy jest oznaczony jako **Aktywny**. Jeśli ten dostawca konfiguracji nie jest widoczny, wykonaj kroki w procedurze [Tworzenie dostawcy konfiguracji i oznaczanie go jako aktywnego](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Obszar roboczy raportowania elektronicznego](./media/GER-JoinDS-ActiveProvider.PNG)
+    ![Obszar roboczy raportowania elektronicznego.](./media/GER-JoinDS-ActiveProvider.PNG)
 
 ### <a name="import-sample-er-configuration-files"></a>Importuj przykładową konfigurację pliku formatu ER.
 
@@ -101,7 +101,7 @@ Należy również wcześniej pobrać i zapisać następujące przykładowe pliki
 5. W drzewie konfiguracji rozwiń **Model do nauczenia SPRĘŻENIA źródeł danych**, a także inne elementy modelu (jeśli są dostępne).
 6. Zaobserwuj listę konfiguracji modelu ER w drzewie, jak również szczegóły wersji na karcie skróconej **Wersje** — będą one używane jako źródło danych dla przykładowego raportu.
 
-    ![Strona konfiguracji raportowania elektronicznego](./media/GER-JoinDS-ConfigurationsTree.PNG)
+    ![Strona konfiguracji raportowania elektronicznego.](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Włącz opcje śledzenia wykonania
 
@@ -109,7 +109,7 @@ Należy również wcześniej pobrać i zapisać następujące przykładowe pliki
 2. Wybierz **Parametry użytkownika**.
 3. Określ parametry śledzenia wykonania, tak jak pokazano na poniższym zrzucie ekranu.
 
-    ![Strona parametrów użytkownika raportowania elektronicznego](./media/GER-JoinDS-Parameters.PNG)
+    ![Strona parametrów użytkownika raportowania elektronicznego.](./media/GER-JoinDS-Parameters.PNG)
 
     Jeśli te parametry są włączone, dla każdego wykonania importowanego pliku formatu ER zostanie wygenerowana funkcja śledzenia wykonania. Korzystając ze szczegółowych informacji o generowanym śledzeniu wykonania, można analizować wykonywanie formatów ER i składników mapowania modelu ER. Aby dowiedziec się więcej na temat funkcji śledzenia wykonywania ER, odwiedź stronę [Śledzenie wykonywania formatu ER w celu rozwiązywania problemów z wydajnością](trace-execution-er-troubleshoot-perf.md).
 
@@ -128,13 +128,13 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
     3. Powiązanie **ConfigurationTitle: String = @.'>Relations'.Solution.Name** wskazuje, że nazwa konfiguracji ER odnoszącej się do obiektu jest pobierana z pola **Nazwa** tabeli **ERSolutionTable** oceniając przy użyciu relacji wiele-do-jednego (**'>Relacje'**) między tabelami **ERSolutionVersionTable** i **ERSolutionTable**. Nazwy konfiguracji ER dla bieżącego wystąpienia aplikacji są wyświetlane w drzewie konfiguracje na stronie **Konfiguracje**.
     4. Powiązanie **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** oznacza, że nazwa dostawcy konfiguracji, który posiada obecną konfigurację jest pobierana z pola **Nazwa** tabeli **ERVendorTable** oceniając przy użyciu relacji wiele-do-jednegomiędzy tabelami **ERSolutionTable** i **ERVendorTable**. Nazwy dostawców konfiguracji ER dla bieżącego wystąpienia aplikacji są wyświetlane w drzewie konfiguracje na stronie **Konfiguracje** na nagłówku dla każdej konfiguracji osobno. Całą listę dostawców konfiguracji modelu encja-relacja można znaleźć na stronie **Administrowanie organizacją \> Raportowanie elektroniczne \> Dostawca konfiguracji**.
 
-    ![Strona Projektant mapowania modelu ER, lista powiązanych pozycji modelu danych](./media/GER-JoinDS-Set1Review.PNG)
+    ![Strona Projektant mapowania modelu ER, lista powiązanych pozycji modelu danych.](./media/GER-JoinDS-Set1Review.PNG)
 
 6. W drzewie konfiguracje rozwiń pozycję modelu danych **Set1.Summary**:
 
     1. Powiązanie **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** wskazuje, że element **Set1.Summary.VersionsNumber** jest powiązany z polem agregacji **VersionsNumber** w polu **VersionsSummary** źródło danych typu **GroupBy**, które zostało skonfigurowane do zwracania liczby rekordów tabeli **ERSolutionVersionTable** za pośrednictwem **Wersji** źródła danych.
 
-    ![Edytuj stronę parametrów „Grupuj według”](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Edytuj stronę parametrów „Grupuj według”.](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Zamknij stronę.
 
@@ -144,18 +144,18 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
 1. W drzewie konfiguracje rozwiń pozycję elementy modelu danych **Set2** i **Set2.Details**: Powiązanie **Details: Record list = Details** wskazuje, że element **Set2.Details** jest powiązany ze źródłem danych **Szczegóły** skonfigurowanym jako źródło danych typu **Sprzężenie**.
 
-    ![Strona Projektant mapowania modelu ER pokazująca rozwinięte pozycje modelu danych Set2:Record](./media/GER-JoinDS-Set2Review.PNG)
+    ![Strona Projektant mapowania modelu ER pokazująca rozwinięte pozycje modelu danych Set2:Record.](./media/GER-JoinDS-Set2Review.PNG)
 
     Źródło danych **sprzężenia** można dodać, wybierając **Functions\Join** źródło danych:
 
-    ![Strona Projektant mapowania modelu ER, typ źródła danych sprzężenia](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![Strona Projektant mapowania modelu ER, typ źródła danych sprzężenia.](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Wybierz źródło danych **szczegółów**.
 3. Wybierz opcję **Edytuj** w okienku **Źródła danych**.
 4. Wybierz opcję **Edycja sprężenia**.
 5. Wybierz **Pokaż szczegóły**.
 
-    ![Strona parametrów źródła danych SPRĘŻENIA](./media/GER-JoinDS-JoinDSEditor.PNG)
+    ![Strona parametrów źródła danych SPRĘŻENIA.](./media/GER-JoinDS-JoinDSEditor.PNG)
 
     Ta strona służy do projektowania wymaganego źródła danych **typu sprzężenia**. W czasie wykonywania to źródło danych utworzy jedną przyłączoną listę rekordów ze źródeł danych w siatce **Połączonej listy**. Dołączenie rekordów zostanie rozpoczęte ze źródła danych **ConfigurationProviders**, które znajduje się w siatce jako pierwsza (dla niego jest pusta kolumna **Typ**). Rekordy z każdego innego źródła danych będą przyłączane w związku z rekordami nadrzędnego źródła danych na podstawie jego zamówienia w tej siatce. Każde dołączenie źródła danych musi być skonfigurowane jako źródło danych zagnieżdżone w docelowym źródle danych (źródło danych `1Versions` jest zagnieżdżone w `1Configurations`; źródło danych `1Configurations` jest zagnieżdżone w **ConfigurationProviders**). Każde skonfigurowane źródło danych musi zawierać warunki dla sprzężenia. W źródle danych dla tego konkretnego **Sprzężenia** zdefiniowano następujące sprzężenia:
 
@@ -178,7 +178,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
     - Powiązanie **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** wskazuje, że element **Set2.Summary.VersionsNumber** jest powiązany z polem agregacji **VersionsNumber** w polu **DetailsSummary** źródło danych typu **GroupBy**, które zostało skonfigurowane do zwracania liczby połączonych rekordów źródła danych **Szczegóły** typu **Sprężenia**.
     - Opcja lokalizacji **Wykonaj** jest skonfigurowana jako **Zapytanie**, co oznacza, że to źródło danych typu **GroupBy** będzie uruchamiane w czasie wykonywania na poziomie bazy danych jako bezpośrednie wywołanie SQL. To zachowanie jest możliwe, ponieważ podstawowe źródło danych **Szczegóły** o typie **Sprzężenie** jest skonfigurowane jako wykonywane na poziomie bazy danych.
 
-    ![Strona parametrów źródła danych GROUPBY](./media/GER-JoinDS-Set2GroupByReview.PNG)
+    ![Strona parametrów źródła danych GROUPBY.](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
 9. Zamknij stronę.
 10. Wybierz **Anuluj**.
@@ -196,21 +196,21 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     Ten format jest przeznaczony do wypełnienia wygenerowanego pliku tekstowego nowym wierszem dla każdej wersji konfiguracji ER (sekwencja **Wersja**). Każdy wygenerowany wiersz będzie zawierał nazwę dostawcy konfiguracji, który jest właścicielem bieżącej konfiguracji, nazwę konfiguracji i wersję konfiguracji rozdzielone średnikiem. Ostatni wiersz wygenerowanego pliku będzie zawierał liczbę odnalezionych wersji konfiguracji programu ER (sekwencja **Podsumowania**).
 
-    ![Strona Projektant formatu ER, karta Format](./media/GER-JoinDS-FormatReview.PNG)
+    ![Strona Projektant formatu ER, karta Format.](./media/GER-JoinDS-FormatReview.PNG)
 
     Źródła danych **Dane** i **Podsumowanie** służą do wypełniania szczegółów wersji konfiguracji do wygenerowanego pliku:
 
     - Informacje z modelu danych **Set1** są używane po wybraniu opcji **Nie** dla źródła danych **selektora** w czasie wykonywania na stronie dialogowym użytkownika podczas uruchamiania formatu ER.
     - Informacje z modelu danych **Set2** są używane po wybraniu opcji **Tak** dla źródła danych **Selektora** w czasie wykonywania na stronie dialogowym użytkownika.
 
-    ![Strona Projektant formatu ER, karta Mapowanie](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![Strona Projektant formatu ER, karta Mapowanie.](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Wybierz opcję **Uruchom**.
 10. Na stronie okna dialogowego wybierz opcję **Nie** w polu **Użyj SPRĘŻENIA źródeł danych**.
 11. Kliknij przycisk **OK**.
 12. Przeglądnij wygenerowany plik.
 
-    ![Wygenerowany plik parametrów raportu elektronicznego bez źródła danych sprzężenia](./media/GER-JoinDS-Set1Run.PNG)
+    ![Wygenerowany plik parametrów raportu elektronicznego bez źródła danych sprzężenia.](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analizowanie śledzenia wykonania operacji na formacie ER
 
@@ -224,7 +224,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
     - **ERSolutionTable** zostało wywołane tyle razy, ile jest rekordów wersji konfiguracji w tabeli **ERSolutionVersionTable**, podczas gdy liczba takich wywołań mogłaby zostać zmniejszona w czasie w celu zwiększenia wydajności.
     - **ERVendorTable** zostało wywołane dwa razy dla każdej wersji konfiguracji, która została odkryta w tabeli **ERSolutionVersionTable**, podczas gdy liczba takich wywołań mogłaby również zostać zmniejszona.
 
-    ![Statystyki wykonania na stronie projektanta mapowania modelu ER](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Statystyki wykonania na stronie projektanta mapowania modelu ER.](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Zamknij stronę.
 
@@ -236,7 +236,7 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 4. Kliknij przycisk **OK**.
 5. Przeglądnij wygenerowany plik.
 
-    ![Wygenerowany plik parametrów raportu elektronicznego ze źródłem danych sprzężenia](./media/GER-JoinDS-Set2Run.PNG)
+    ![Wygenerowany plik parametrów raportu elektronicznego ze źródłem danych sprzężenia.](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analizowanie śledzenia wykonania operacji na formacie ER
 
@@ -249,11 +249,11 @@ Przejrzyj ustawienia składnika mapowania modelu ER. Składnik jest skonfigurowa
 
     - Baza danych aplikacji została wywołana raz, aby można było pobrać rekordy z tabel **ERVendorTable**, **ERSolutionTable** i **ERSolutionVersionTable** w celu uzyskania dostępu do wymaganych pól.
 
-    ![Szczegóły statystyki wydajności strony projektanta mapowania modelu ER](./media/GER-JoinDS-Set2Run2.PNG)
+    ![Szczegóły statystyki wydajności strony projektanta mapowania modelu ER.](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Baza danych aplikacji została wywołana raz w celu obliczenia liczby wersji konfiguracji za pomocą sprzężeń skonfigurowanych w źródle danych **Szczegółów**.
 
-    ![Strona projektanta mapowania modelu ER z wywołaniami bazy danych aplikacji](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Strona projektanta mapowania modelu ER z wywołaniami bazy danych aplikacji.](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Ograniczenia
 

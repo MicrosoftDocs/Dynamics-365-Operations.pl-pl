@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800670"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351207"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurowanie kanału biura obsługi
 
@@ -54,11 +54,11 @@ Aby utworzyć i skonfigurować nowy kanał biura obsługi, wykonaj następujące
 
 Poniższy rysunek przedstawia utworzenie nowego kanału biura obsługi.
 
-![Nowy kanał biura obsługi](media/channel-setup-callcenter-1.png)
+![Nowy kanał biura obsługi.](media/channel-setup-callcenter-1.png)
 
 Poniższy obraz przedstawia przykład kanału biura obsługi.
 
-![Przykład kanału biura obsługi](media/channel-setup-callcenter-2.png)
+![Przykład kanału biura obsługi.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Konfiguracja kanałów dodatkowych
 
@@ -66,7 +66,7 @@ Dodatkowe zadania wymagane dla konfiguracji kanału dla biura obsługi, obejmuj�
 
 Poniższy obraz pokazuje **Metody dostawy** i **Metody płatności** ustaw opcje na karcie **Konfiguracja**.
 
-![Dodatkowe akcje konfiguracji kanału biura obsługi](media/channel-setup-callcenter-3.png)
+![Dodatkowe akcje konfiguracji kanału biura obsługi.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Konfigurowanie metod płatności
 
@@ -81,7 +81,7 @@ Aby skonfigurować metody płatności, należy wykonać następujące kroki dla 
 
 Poniższy obraz przedstawia przykład kart i metod płatności gotówką.
 
-![Przykład metod płatności](media/channel-setup-callcenter-payments.png)
+![Przykład metod płatności.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Ustaw metody dostawy
 
@@ -97,7 +97,7 @@ Aby zmienić lub dodać metodę dostawy skojarzoną z kanałem biura obsługi, w
 
 Poniższy obraz przedstawia przykład kart i metodę dostawy.
 
-![Ustaw metody dostawy](media/channel-setup-retail-7.png)
+![Ustaw metody dostawy.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Konfigurowanie użytkowników kanału
 

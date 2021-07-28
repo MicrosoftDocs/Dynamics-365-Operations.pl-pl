@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5161755b9e15e93fbb5eeb6404ea0820f7068ea7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 09930af8b6ce78a2a88382772a44de173875856a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352549"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurowanie ocen i recenzji
 
@@ -46,7 +46,7 @@ Aby skonfigurować witrynę do wyświetlania ocen i recenzji, wykonaj następuj�
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Konfigurowanie witryny, aby wyświetlała oceny i recenzje](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurowanie witryny, aby wyświetlała oceny i recenzje.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Łączenie oceny produktu z sekcją recenzji w PDP
 
@@ -60,7 +60,7 @@ Aby połączyć ocenę produktu z sekcją **Recenzje** PDP, należy wykonać nas
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Łączenie oceny produktu z sekcją recenzji w PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Łączenie oceny produktu z sekcją recenzji w PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfiguruj łącze do strony prywatność i zasady
 
@@ -75,7 +75,7 @@ Aby skonfigurować link do strony prywatności i zasad, wykonaj następujące kr
 
 Na poniższej ilustracji przedstawiono, jak wygląda konfiguracja w Dynamics 365 Commerce.
 
-![Konfiguracja łącza do strony prywatność i zasady](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfiguracja łącza do strony prywatność i zasady.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfiguruj moduły ocen i recenzji na stronach szczegółów produktu
 

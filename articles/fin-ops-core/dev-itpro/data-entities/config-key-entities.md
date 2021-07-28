@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: bdb90f8d629a026a84f8c65e7e95b589169a3e4d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a9e5204c2bb9c0a58b2e4e223a4a3d2d09d53659
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752343"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356270"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Klucze konfiguracji i jednostki danych
 
@@ -52,24 +52,24 @@ W tabeli poniżej podsumowano, jak wartości kluczy konfiguracji w różnych art
 ### <a name="entity-list-refresh"></a>Odświeżanie listy jednostek
 Po odświeżeniu listy jednostek struktura zarządzania danymi tworzy metadane klucza konfiguracji do użytku w czasie wykonywania. Te metadane są generowane przy użyciu logiki opisanej powyżej. Stanowczo zalecamy poczekać na zakończenie odświeżania listy jednostek, zanim zaczniesz używać zadań i jednostek strukturze zarządzania danymi. Jeśli nie zaczekasz, metadane kluczy konfiguracji mogą być nieaktualne i w efekcie powodować nieoczekiwane rezultaty. Podczas odświeżania listy jednostek jest wyświetlany następujący komunikat na stronie listy jednostek.
 
-![Odświeżanie listy jednostek](./media/Entity_refresh_list.png)
+![Odświeżanie listy jednostek.](./media/Entity_refresh_list.png)
 
 ### <a name="data-entity-list-page"></a>Strona listy jednostek danych
 Strona listy jednostek danych w obszarze roboczym Zarządzanie danymi pokazuje ustawienia kluczy konfiguracji jednostek. Rozpoczęcie od tej strony pozwoli zrozumieć wpływ kluczy konfiguracji na jednostkę danych.
 
 Te informacje są wyświetlane przy użyciu metadanych wygenerowanych podczas odświeżania jednostki. Kolumna klucza konfiguracji zawiera nazwę klucza konfiguracji skojarzonego z jednostką danych. Pusta kolumna oznacza, że nie istnieje klucz konfiguracji skojarzony z jednostką danych. W kolumnie stanu klucza konfiguracji jest pokazywany stan klucza konfiguracji. Jeśli znajduje się tam znacznik wyboru, oznacza to, że klucz jest włączony. Puste pole oznacza, że klucz jest wyłączony albo nie ma żadnego skojarzonego klucza.
 
-![Strona listy jednostek](./media/Data_entity_list_page.png)
+![Strona listy jednostek.](./media/Data_entity_list_page.png)
 
 ### <a name="target-fields"></a>Pola docelowe
 Następnym krokiem jest przejście do bardziej szczegółowych poziomów jednostki danych w celu obejrzenia wpływu kluczy konfiguracji na tabele i pola. Formularz pól docelowych dla jednostki danych zawiera klucz konfiguracji oraz informacje o stanie kluczy w powiązanych tabelach i polach w jednostce danych. Jeśli sama jednostka danych ma wyłączony klucz konfiguracji, jest wyświetlany komunikat ostrzegawczy informujący, że tabele i pola w formularzu pól docelowych dla tej jednostki nie będą w ogóle dostępne, niezależnie od stanów ich kluczy konfiguracji.
 
-![Pola docelowe](./media/Target_fields_1.png)
+![Pola docelowe.](./media/Target_fields_1.png)
 
 ### <a name="child-entities"></a>Jednostki podrzędne 
 Niektóre jednostki używają innych jednostek jako źródeł danych lub są złożonymi jednostkami danych. Informacje o kluczach konfiguracji takich jednostek są wyświetlane w formularzu Jednostki podrzędne. Tego formularza używa się w sposób podobny do używania strony listy jednostek opisanej powyżej. Formularz pól docelowych jednostki podrzędnej również zachowuje się w sposób opisany powyżej.
 
-![Pola docelowe](./media/Target_fields_2.png)
+![Pola docelowe.](./media/Target_fields_2.png)
 
 ### <a name="using-data-entities"></a>Używanie jednostek danych
 Po rozpoznaniu całkowitego wpływu kluczy konfiguracji na jednostki danych, których chcesz używać, można rozpocząć korzystanie z jednostek danych, dodając je do projektów danych. 
@@ -91,7 +91,7 @@ Sprawdzanie podczas wykonywania jest uruchamiane przy użyciu metadanych kluczy 
 ### <a name="managing-configuration-key-changes"></a>Zarządzanie zmianami w kluczach konfiguracji
 Po każdym zaktualizowaniu kluczy konfiguracji na poziomie jednostki, tabeli lub pola należy odświeżyć listę jednostek w strukturze zarządzania danymi. Daje to pewność, że struktura pobierze najnowsze ustawienia kluczy konfiguracji. Do czasu odświeżenia listy jednostek będzie wyświetlane następujące ostrzeżenie na stronie listy jednostek. Aktualizacje kluczy konfiguracji zaczną obowiązywać natychmiast po odświeżeniu listy jednostek. Po wprowadzaniu modyfikacji kluczy konfiguracji zalecamy sprawdzenie poprawności istniejących projektów danych i zadań, aby mieć pewność, że działają zgodnie z oczekiwaniami.
 
-![Pola docelowe](./media/Target_fields_3.png)
+![Pola docelowe.](./media/Target_fields_3.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

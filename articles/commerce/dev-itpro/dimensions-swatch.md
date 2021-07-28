@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117240"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353869"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Skonfiguruj wartości wymiarów produktu, aby były wyświetlane jako próbki
 
@@ -39,11 +39,11 @@ Funkcja wyświetlania wymiarów jako próbek pozwala Commerce używać kodów sz
 
 Na poniższej ilustracji pokazano przykład, w którym kolory są wyświetlane jako próbki w programie Commerce PDP.
 
-![Przykład kolorów pokazanych jako próbki na stronie szczegółów produktu](../dev-itpro/media/swatch_pdp.png)
+![Przykład kolorów pokazanych jako próbki na stronie szczegółów produktu.](../dev-itpro/media/swatch_pdp.png)
 
 Poniższa ilustracja przedstawia przykład, w którym kolory pojawiają się jako próbki na stronie z listą wyników wyszukiwania Commerce.
 
-![Przykład kolorów wyświetlanych jako próbki na stronie z listą wyników wyszukiwania](../dev-itpro/media/swatch_searchresults.PNG)
+![Przykład kolorów wyświetlanych jako próbki na stronie z listą wyników wyszukiwania.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Włącz funkcję wyświetlania wymiarów jako próbki w centrali Commerce
 
@@ -57,15 +57,15 @@ Konfiguracja może być przeprowadzona na każdym z poniższych poziomów:
 
 - **Wymiar** — w centrali Commerce otwórz stronę wymiaru, wyszukując **kolor**, **rozmiar** lub **styl**. Na każdej stronie w siatce są podane wartości wymiarów. Użytkownik może zarządzać kolejnością wyświetlania, kodem szesnastkowym i wartościami adresu URL obrazu. Na poniższej ilustracji pokazano przykład konfiguracji na stronie **Kolory**.
 
-    ![Przykład konfiguracji wymiarów na stronie Kolory](../dev-itpro/media/swatch_Color.PNG)
+    ![Przykład konfiguracji wymiarów na stronie Kolory.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Grupa wymiarów** — w Dynamics 365 Commerce za jej pomocą można tworzyć grupy wymiarów za pomocą właściwości **GrupaOkreślająca**. Jeśli zdefiniowano grupy wymiarów, otwórz odpowiednią stronę, wyszukując **grupę kolorów**, **grupę rozmiarów** lub **grupę stylów**. Na każdej stronie można zarządzać kodami heksadecymalnymi, adresami URL obrazów i wartościami grup określenia. Na poniższej ilustracji pokazano przykład konfiguracji na stronie **Grupy kolorów**.
 
-    ![Przykład konfiguracji wymiarów na stronie Grupy kolorów](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Przykład konfiguracji wymiarów na stronie Grupy kolorów.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Wymiar produktu (podczas tworzenia produktu)** — podczas tworzenia nowego produktu można wprowadzić wartości wymiarów za pomocą strony **Wymiary produktu**. W przypadku istniejących produktów mogą już być ustawione pola **kod szesnastkowy**, **URL** (w przypadku obrazów) i **GrupaOkreślająca**. Wartości te można jednak zmieniać według własnych potrzeb. Na poniższej ilustracji pokazano przykład konfiguracji na stronie **Wymiary produktu**.
 
-    ![Przykład konfiguracji wymiarów na stronie Wymiary produktu](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Przykład konfiguracji wymiarów na stronie Wymiary produktu.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Proces zarządzania konfiguracjami kodów heksadecymalnych i adresów URL obrazów przebiega według tego samego schematu, który jest używany do zarządzania kolejnością wyświetlania wymiarów.
@@ -76,7 +76,7 @@ Dla większości wymiarów kolorów, wartość koloru w kodzie heksadecymalnym p
 
 Na poniższej ilustracji przedstawiono przykład, w którym wymiary kolorów są konfigurowane za pomocą wartości kodów heksadecymalnych.
 
-![Przykład konfiguracji wymiarów z wykorzystaniem kodów heksadecymalnych](../dev-itpro/media/swatch_color_hexcode.png)
+![Przykład konfiguracji wymiarów z wykorzystaniem kodów heksadecymalnych.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Konfiguruj wartości wymiarów za pomocą adresów URL obrazów
 
@@ -86,13 +86,13 @@ Musisz załadować każdy obrazek do kreatora stron Commerce i opublikować go. 
 
 Poniższa ilustracja przedstawia przykład, w którym adresy URL obrazów są używane do konfiguracji na stronie **Kolory**.
 
-![Przykład konfiguracji wymiaru wykorzystującej adresy URL obrazów](../dev-itpro/media/swatch_color_urls.PNG)
+![Przykład konfiguracji wymiaru wykorzystującej adresy URL obrazów.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Możesz użyć szablonu mediów, aby zdefiniować adresy URL obrazów, tak samo jak w przypadku obrazów produktów i kategorii. Kiedy przesyłasz obrazy do kreatora stron, konwencje nazw plików i ścieżek muszą być spójne.
 
 Na poniższej ilustracji przedstawiono przykład, w którym adresy URL obrazów są używane do konfiguracji szablonu multimediów.
 
-![Przykład konfiguracji szablonu nośnika](../dev-itpro/media/swatch_media_template.PNG)
+![Przykład konfiguracji szablonu nośnika.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Konfiguruj wartości wymiarów, używając zarówno kodów heksadecymalnych, jak i adresów URL obrazów
 
@@ -100,7 +100,7 @@ Dla większości wymiarów kolorów można skonfigurować zarówno kody heksadec
 
 Poniższa ilustracja przedstawia przykład, w którym adresy URL obrazów i kody szesnastkowe są używane do konfiguracji na stronie **Kolory**.
 
-![Przykład konfiguracji wymiaru wykorzystującej zarówno kody heksadecymalne, jak i adresy URL obrazów](../dev-itpro/media/swatch_color_hexandimage.png)
+![Przykład konfiguracji wymiaru wykorzystującej zarówno kody heksadecymalne, jak i adresy URL obrazów.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Konfiguracja grup określenia
 
@@ -110,7 +110,7 @@ Jeśli na przykład wartości wymiarów koloru to „niebieski”, „niebieska 
 
 Przykład na poniższej ilustracji przedstawia zależność pomiędzy właściwościami **Kolor** i **GrupaOkreślająca** w centrali Commerce.
 
-![Przykład zarządzania grupą określającą](../dev-itpro/media/swatch_refiner_group.png)
+![Przykład zarządzania grupą określającą.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Zarządzanie obrazami w kreatorze stron Commerce
 
@@ -118,7 +118,7 @@ Jeśli dla któregoś z wymiarów używane są adresy URL obrazów, odpowiednie 
 
 Poniższa ilustracja pokazuje przykład, w którym okno dialogowe **Przekaż pliki** jest używane do przesyłania obrazów do biblioteki multimediów kreatora witryny. Podświetla kategorie **Rozmiar**, **Kolor** oraz **Styl**, które są dostępne do wyboru.
 
-![Przykład kategorii plików graficznych podczas wgrywania do biblioteki mediów kreatora strony](../dev-itpro/media/swatch_sitebuilder.png)
+![Przykład kategorii plików graficznych podczas wgrywania do biblioteki mediów kreatora strony.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Włącz wyświetlanie próbek na stronach witryn e-commerce
 

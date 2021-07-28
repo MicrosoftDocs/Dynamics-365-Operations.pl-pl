@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907946"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351448"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych
 
@@ -120,12 +120,12 @@ Pobieranie i instalowanie aplikacji mobilnej Finance and Operations:
 4.  Podczas pierwszego logowania pojawi się monit o podanie nazwy użytkownika i hasła. Wprowadź swoje poświadczenia.
 5.  Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, trzeba odświeżyć listę komórkowych obszarów roboczych.
 
-    [![Ściąganie w celu odświeżenia](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Ściąganie w celu odświeżenia.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Używanie mobilnego obszaru roboczego Współpraca z dostawcami
 Po wybraniu obszaru roboczego **Współpraca z dostawcami** pojawią się następujące opcje.
 
-![Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych](./media/vendor-collaboration-mobile-app.png)
+![Obszar roboczy współpracy z dostawcami za pomocą urządzeń przenośnych.](./media/vendor-collaboration-mobile-app.png)
 
 Obszar roboczy **Współpraca z dostawcami** zawiera następujące strony.
 

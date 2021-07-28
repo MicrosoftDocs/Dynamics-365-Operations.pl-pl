@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261753"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354816"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
 
@@ -41,7 +41,7 @@ Możliwości obciążenia są udostępniane w sposób ciągły poprzez stopniowe
 
 Jednostki skali rozszerzają centralne środowisko centrum Supply Chain Management przez dodanie dedykowanych zdolności produkcyjnych. Jednostki skalowania mogą być uruchamiane w chmurze. Alternatywnie mogą działać na obrzeżach, lokalnie w lokalnym zakładzie.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 z jednostkami skali":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 z jednostkami skali.":::
 
 Jednostki skali zapewniają odporność, niezawodność i skalowalność dla przypisanych obciążeń. Jednostki skali na krawędzi można tymczasowo odłączyć od środowiska centrum chmury, a pracownicy nadal pracują w przypisanych obciążeniach na krawędzi.
 
@@ -157,7 +157,7 @@ Jednostki wagowe są oferowane w wielu jednostkach magazynowych (SKU) i opcjach 
 
 Podstawowa jednostka SKU jest znana jako *Podstawowa*, a bardziej wydajna jednostka SKU jest znana jako *Standardowa*. Każdy SKU jest wstępnie załadowany określoną liczbą miesięcznych transakcji. Możesz jednak zwiększyć miesięczny budżet transakcji, dodając dodatki nadwyżkowe dla każdej jednostki SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Dodatki dla jednostek skalowania w chmurze":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Dodatki dla jednostek skalowania w chmurze.":::
 
 > [!TIP]
 > Aby określić rozmiar, który najlepiej odpowiada Twoim potrzebom, we współpracy z partnerem i firmą Microsoft ustal wielkość wymaganej miesięcznej transakcji.
@@ -181,11 +181,11 @@ Jeśli poszukiwany dzierżawca nie znajduje się na liście, przejdź do [usług
 
 Dla każdej dzierżawy na liście jest wyświetlany stan dołączania.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Lista dzierżawców na karcie Dynamics 365 Tenants":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Lista dzierżawców na karcie Dynamics 365 Tenants.":::
 
 Wybierz pozycję **Kliknij tutaj, aby rozpocząć** dołączanie żądań dla dzierżawy usługi LCS. Musisz zaakceptować warunki. Należy również podać firmowy adres e-mail, pod którym firma Microsoft może wysłać komunikację powiązaną z procesem dołączania.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Rejestracja zgłoszenia w celu uzyskania subskrypcji w wersji zapoznawczej dla dzierżawcy":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Rejestracja zgłoszenia w celu uzyskania subskrypcji w wersji zapoznawczej dla dzierżawcy.":::
 
 Firma Microsoft sprawdzi Twoją prośbę i poinformuje o następnych krokach, wysyłając wiadomość e-mail na adres podany w formularzu zapisywania się. Firma Microsoft będzie ściśle z Tobą współpracować, aby włączyć jednostki skalowania w topologii hybrydowej dla Twojego scenariusza biznesowego.
 
@@ -195,13 +195,13 @@ Po zakończeniu dołączania można użyć portu do skonfigurowania jednostek sk
 
 Przejdź do [portalu Menedżera jednostki skalowania ](https://aka.ms/SCMSUM)i zaloguj się przy użyciu konta dzierżawy. Na **stronie Konfigurowanie jednostek skali** można dodać środowisko centralne, jeśli nie jest jeszcze umieszczone na liście. Następnie można wybrać centrum, które ma zostać skonfigurowane przy użyciu jednostek skali i obciążeń.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Obsługa jednostki skalowania i zarządzanie obciążeniem — doświadczenie":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Obsługa jednostki skalowania i zarządzanie obciążeniem — doświadczenie.":::
 
 Aby dodać jedną lub więcej jednostek skali, które są dostępne w subskrypcjach, wybierz opcję **Dodaj jednostki skalowania**.
 
 Na **karcie zdefiniowane obciążenia**, za pomocą przycisku **Utwórz obciążenie pracą** można dodać obciążenie zarządzania magazynem do jednej z jednostek skali. Dla każdego obciążenia należy określić kontekst procesów, które będą należały do obciążenia pracą. W przypadku obciążeń zarządzania magazynem kontekst jest określonym magazynem w określonym oddziale i firmie.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Tworzenie obciążenia pracą":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Tworzenie obciążenia pracą.":::
 
 > [!TIP]
 > Z biegiem czasu do środowiska Menedżer jednostek skalowania będą dodawane stopniowe ulepszenia, aby ułatwić operacje zarządzania cyklem życia. Specyficzne możliwości dla bieżącej wersji są udokumentowane w podręczniku wprowadzającym, który jest dostępny dla klientów, którzy są w trakcie wdrażania do rozproszonej, hybrydowej topologii Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

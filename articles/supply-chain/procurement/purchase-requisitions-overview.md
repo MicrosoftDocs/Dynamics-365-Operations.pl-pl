@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d8bde73d424e72ad66c27decd11a3b866d02b48c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188204"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349801"
 ---
 # <a name="purchase-requisition-overview"></a>Omówienie zapotrzebowania na zakup
 
@@ -47,7 +49,7 @@ Można skonfigurować proces przepływu pracy dla zapotrzebowania na zakup, tak 
 
 Na poniższym diagramie przedstawiono stany, które są przypisane do zapotrzebowania na zakup i wiersz zapotrzebowania na zakup w miarę jego przekazywania w procesie przepływu pracy.  
 
-[![Stany nagłówka i wierszy zapotrzebowania na zakup](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Stany nagłówka i wierszy zapotrzebowania na zakup.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Relacje stanów nagłówka i wierszy zapotrzebowania na zakup
 
@@ -179,7 +181,7 @@ Aby utworzyć zamówienie zakupu dla wierszy zapotrzebowania na zakup, które ni
 
 Proces konsolidacji popytu rozpoczyna się po zatwierdzeniu zapotrzebowania na zakup w przepływie pracy i — jeśli została skonfigurowana kontrola budżetu dla organizacji — po zarejestrowaniu rezerwacji budżetu i przyszłych zobowiązań niewiążących. Poniższy diagram przedstawia przepływ procesu konsolidacji popytu.  
 
-[![Przepływ procesu konsolidacji popytu](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Przepływ procesu konsolidacji popytu.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 Aby skonsolidować zatwierdzone wiersze zapotrzebowania na zakup, wykonaj następujące kroki:
 

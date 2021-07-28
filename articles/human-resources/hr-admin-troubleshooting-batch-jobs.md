@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: a5aeaeb7311d87a154882b7058b6da430900bd56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 13482ab7b9ee6303138a7a5e82dce78138e0b8ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053474"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357320"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optymalizowanie wydajności – planowanie zadań wsadowych po godzinach pracy
 
@@ -51,11 +51,11 @@ Poniższe zadania wsadowe powinny być uruchamiane w nocy lub po godzinach. Nale
 
 3. Wybierz **Uruchom w tle**, a następnie **Cykl**.
 
-   ![Ustaw cykl](media/talent-batch-history-cleanup-recurrence.png)
+   ![Ustaw cykl.](media/talent-batch-history-cleanup-recurrence.png)
 
 4. W obszarze **Zdefiniuj cykl** ustaw **datę rozpoczęcia** i **godzinę rozpoczęcia** na czas poza godzinami pracy lub weekend. Wybierz **Brak daty zakończenia**. 
 
-   ![Definiowanie daty i godziny rozpoczęcia](media/talent-batch-history-cleanup-define-recurrence.png)
+   ![Definiowanie daty i godziny rozpoczęcia.](media/talent-batch-history-cleanup-define-recurrence.png)
 
 5. Kliknij przycisk **OK**.
 

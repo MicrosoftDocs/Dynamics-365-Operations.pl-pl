@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897775"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356710"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
@@ -33,18 +33,18 @@ Istniejąca funkcjonalność arkuszy finansowych (arkusza finansowego, arkusza �
 
 - Ustaw nazwę arkusza (**Księga główna** \> **Konfiguracja arkusza** \> **Nazwy arkuszy**), tak aby pole **Nowy załącznik** zawierało wartość **Tylko jeden numer załącznika**. Każdy wiersz dodawany do arkusza będzie teraz umieszczany w tym samym załączniku. Dzięki temu załącznik można wprowadzić jako załącznik wielowierszowy, jako konto/konto przeciwstawne w tym samym wierszu lub jako kombinację.
 
-    [![Jeden wiersz](./media/same-line.png)](./media/same-line.png)
+    [![Jeden wiersz.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definicja pojęcia „pojedynczy załącznik” **nie** obejmuje przypadków, gdy nazwy arkuszy skonfigurowano jako **Tylko jeden numer załącznika**, po czym użytkownik wprowadza załącznik zawierający tylko typy kont księgowych. W tym temacie określenie „pojedynczy załącznik” oznacza, że istnieje jeden załącznika zawierający więcej niż jednego dostawcę, odbiorcę, bank, środek trwały lub projekt.
 
 - Umożliwia wprowadzenie załącznika wielowierszowego, gdy nie istnieje żadne konto przeciwstawne.
 
-    [![Załącznik wielowierszowy](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Załącznik wielowierszowy.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Umożliwia wprowadzenie załącznika, jeżeli zarówno konto, jak i konto przeciwstawne zawierają typ konta księgi podrzędnej, takie jak **Dostawca**/**Dostawca**, **Odbiorca**/**Odbiorca**, **Dostawca**/**Odbiorca** lub **Bank**/**Bank**.
 
-    [![Załącznik księgi podrzędnej](./media/subledger.png)](./media/subledger.png)
+    [![Załącznik księgi podrzędnej.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problemy z pojedynczym załącznikiem
 
@@ -52,11 +52,11 @@ Funkcja pojedynczego załącznika powoduje problemy podczas rozliczania, oblicza
 
 Przypuśćmy na przykład, że księgujesz następujący załącznik wielowierszowy.
 
-[![Przykład załącznika wieloliniowego](./media/example.png)](./media/example.png)
+[![Przykład załącznika wieloliniowego.](./media/example.png)](./media/example.png)
 
 Następnie generujesz raport **Wydatki według dostawców** w obszarze roboczym **Szczegółowe dane finansowe**. W tym raporcie salda kont wydatków są grupowane według grupy dostawców, a potem według dostawców. Podczas generowania raportu system nie może ustalić, które grupy dostawców/dostawcy ponieśli wydatek w kwocie 250,00. Ponieważ brakuje szczegółów transakcji, system zakłada, że cały wydatek 250,00 został poniesiony przez pierwszego dostawcę znalezionego w załączniku. W związku z tym wydatek 250,00, który został uwzględniony w saldzie konta głównego 600120, jest wyświetlana dla tej grupy dostawców/dostawcy. Jest jednak bardzo prawdopodobne, że pierwszy dostawca w załączniku nie jest właściwym dostawcą. Dlatego raport jest prawdopodobnie błędny.
 
-[![Raport wydatków według dostawców](./media/expenses.png)](./media/expenses.png)
+[![Raport wydatków według dostawców.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Przyszłość funkcjonalności pojedynczego załącznika
 

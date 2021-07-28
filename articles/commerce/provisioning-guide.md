@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022429"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352091"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Ustanowienie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -90,16 +90,16 @@ Aby wdrożyć środowisko, wykonaj następujące kroki.
 1. W polu **wersja aplikacji** wybierz najbardziej aktualną wersję. Jeśli masz określoną potrzebę wybrania wersji aplikacji innej niż wersja najbardziej aktualna, nie wybieraj wersji przed **10.0.14**.
 1. W polu **wersja platformy** użyj wersji platformy, która jest automatycznie wybierana dla wybranej wersji aplikacji. 
 
-    ![Wybieranie wersji aplikacji i platformy](./media/project1.png)
+    ![Wybieranie wersji aplikacji i platformy.](./media/project1.png)
 
 1. Wybierz pozycję **Następny**.
 1. Wybierz pozycję **Pokaz** jako topologię środowiska.
 
-    ![Wybieranie topologii środowiska 1](./media/project2.png)
+    ![Wybieranie topologii środowiska 1.](./media/project2.png)
 
 1. Na stronie **Wdrażanie środowiska** wprowadź nazwę środowiska. Pozostaw ustawienia zaawansowane niezmienione.
 
-    ![Strona wdrażania środowiska](./media/project4.png)
+    ![Strona wdrażania środowiska.](./media/project4.png)
 
 1. Dostosuj rozmiar maszyny wirtualnej zgodnie z potrzebami. (Zalecamy użycie dla maszyny wirtualnej jednostki magazynowej \[SKU\] **D13 v2**).
 1. Zapoznaj się z cenami i warunkami licencjonowania, a następnie zaznacz pole wyboru, aby wskazać, że zgadzasz się z nimi.

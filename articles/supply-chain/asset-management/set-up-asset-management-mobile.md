@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837784"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351520"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurowanie mobilnego obszaru roboczego zarządzania składnikami majątku
 
@@ -47,7 +47,7 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 1. W aplikacji Supply Chain Management wybierz przycisk **Ustawienia** (symbol koła zębatego w prawym górnym rogu), a następnie wybierz w menu pozycję **Aplikacja mobilna**.
 1. W oknie dialogowym **Zarządzaj aplikacją mobilną** znajdź kafelek **Zarządzanie składnikami majątku**. Jeśli zawiera on tekst „W metadanych — nie opublikowano”, obszar roboczy nie został jeszcze opublikowany. Jeśli zawiera on tekst „W metadanych — opublikowano”, obszar roboczy został już opublikowany, dlatego możesz pominąć pozostałą część tej procedury.
 
-    ![Okno dialogowe zarządzania aplikacją mobilną](media/mobile-workspaces.png "Okno dialogowe zarządzania aplikacją mobilną")
+    ![Okno dialogowe zarządzania aplikacją mobilną.](media/mobile-workspaces.png "Okno dialogowe zarządzania aplikacją mobilną")
 
 1. Wybierz kafelek **Zarządzanie składnikami majątku**, a następnie wybierz pozycję **Publikuj** na pasku narzędzi. Po kilku sekundach powinien zostać wyświetlony komunikat o pomyślnym opublikowaniu obszaru roboczego. Ponadto tekst na kafelku powinien się zmienić na „W metadanych — opublikowano”.
 
@@ -60,22 +60,22 @@ Aby udostępnić funkcje zarządzania składnikami majątku w aplikacji mobilnej
 
 1. Otwórz aplikację Finance and Operations (Dynamics 365). Powinna zostać wyświetlana strona logowania. W polu **Zaloguj się** wprowadź adres URL aplikacji Supply Chain Management lub wybierz ostatni adres URL z listy **Ostatnie środowiska**, a następnie naciśnij pozycję **Połącz**.
 
-    ![Strona logowania](media/mobile-app-sign-in.png "Strona logowania")
+    ![Strona logowania.](media/mobile-app-sign-in.png "Strona logowania")
 
 1. Jeśli zostanie wyświetlony monit o potwierdzenie połączenia, zaznacz pole wyboru **Rozumiem**, a następnie kliknij pozycję **Połącz**.
 1. Na stronie **Wybierz konto** użyj konta Microsoft, aby zalogować się do aplikacji na urządzenia mobilnej.
 
     Zostanie wyświetlona strona **Obszary robocze**. Zawiera listę wszystkich mobilnych obszarów roboczych, które zostały opublikowane przez wystąpienie aplikacji Supply Chain Management.
 
-    ![Lista obszarów roboczych](media/mobile-app-workspaces.png "Lista obszarów roboczych")
+    ![Lista obszarów roboczych.](media/mobile-app-workspaces.png "Lista obszarów roboczych")
 
 1. Jeśli musisz zmienić osobę prawną (firmę), kliknij w lewym górnym rogu przycisk Menu (czasami określany jako menu lub przycisk typu „hamburger”) i kliknij pozycję **Zmień firmę**.
 
-    ![Zmienianie osoby prawnej](media/mobile-app-change-comp.png "Zmienianie osoby prawnej")
+    ![Zmienianie osoby prawnej.](media/mobile-app-change-comp.png "Zmienianie osoby prawnej")
 
 1. Na stronie **Obszary robocze** wybierz obszar roboczy, z którym chcesz pracować, aby go otworzyć.
 
-    ![Mobilny obszar roboczy zarządzania składnikami majątku](media/mobile-app-asset-workspace.png "Mobilny obszar roboczy zarządzania składnikami majątku")
+    ![Mobilny obszar roboczy zarządzania składnikami majątku.](media/mobile-app-asset-workspace.png "Mobilny obszar roboczy zarządzania składnikami majątku")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Praca z mobilnym obszarem roboczym zarządzania składnikami majątku
 

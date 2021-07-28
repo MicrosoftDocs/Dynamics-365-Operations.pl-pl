@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: roschlom
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-01
-ms.openlocfilehash: 322574d239cf1d68315a177729f5626a0b4f8956
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2c8981be4a71770e94cee6bb31c00c01bee38a04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837972"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348432"
 ---
 # <a name="split-the-realized-exchange-difference-amount-into-the-difference-of-the-invoice-net-value-and-the-vat-amount"></a>Podziel zrealizowaną różnicę kursów kwoty na różnicę wartości netto faktury i kwoty VAT
 
@@ -46,7 +46,7 @@ Wykonaj poniższe kroki, aby skonfigurować konto księgowe, za pomocą którego
 1. Przejdź do **Księga główna** \> **Waluty** \> **Konta przeszacowania waluty**. 
 2. Na stronie **Konta przeszacowania waluty** wybierz kod waluty, a następnie w polu **Księga** wybierz kod firmy.
 
-    ![Strona Konta przeszacowania waluty](media/Currency-revaluation-accounts.png)
+    ![Strona Konta przeszacowania waluty.](media/Currency-revaluation-accounts.png)
 
 2. Wybierz wiersz, w którym pole **Księgowanie** jest ustawione jako **Zrealizowana dodatnia różnica kursowa** lub **Zrealizowana ujemna różnica kursowa**.
 3. Skonfiguruj konto główne i wybierz konto księgowe, na które chcesz zaksięgować zrealizowaną różnicę kursową.

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306396"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358600"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -33,15 +33,15 @@ Gdy ekosystem firmy składa się z aplikacji systemu Dynamics 365, takich jak Fi
 
 Oto model danych produktu z Sales.
 
-![Model danych produktów w CE](media/dual-write-product-4.jpg)
+![Model danych produktów w CE.](media/dual-write-product-4.jpg)
 
 Oto model danych produktu z aplikacji Finance and Operations.
 
-![Model danych produktów w Finance and Operations](media/dual-write-products-5.jpg)
+![Model danych produktów w Finance and Operations.](media/dual-write-products-5.jpg)
 
 Te dwa modele danych produktu zostały zintegrowane w Dataverse w sposób przedstawiony poniżej.
 
-![Model danych produktów w aplikacjach Dynamics 365](media/dual-write-products-6.jpg)
+![Model danych produktów w aplikacjach Dynamics 365.](media/dual-write-products-6.jpg)
 
 Mapowania tabel podwójnego zapisywania dla produktów zostały zaprojektowane tak, aby dane były przesyłane tylko w czasie jak najbliższym rzeczywistemu z aplikacji Finance and Operations do Dataverse. Jednak infrastruktura produktów została otwarta, aby była w razie potrzeby prowadzona w sposób dwukierunkowy. Mimo że można ją dostosować na własną odpowiedzialność, ponieważ nie jest to zalecane rozwiązanie Microsoft.
 
@@ -86,7 +86,7 @@ Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące r�
 - **Produkty główne** są używane jako standardowe produkty, które posiadają definicję i reguły określające zachowanie w procesach biznesowych. Na podstawie tych definicji można generować odrębne produkty znane jako warianty produktów. Na przykład, Koszulka jest produktem głównym i może posiadać Kolor i Rozmiar jako wymiary. Można zwalniać warianty, które mają różne kombinacje tych wymiarów, np. małą, niebieską koszulkę lub średnią, zieloną koszulkę. W integracji jeden wiersz na wariant jest tworzony w tabeli produktów. Ten wiersz zawiera informacje specyficzne dla wariantu, takie jak różne wymiary. Informacje ogólne dotyczące produktu są przechowywane w tabeli **msdyn\_sharedproductdetails**. (Te ogólne informacje są przechowywane w produkcie głównym). Informacje o danych głównych produktu są synchronizowane z Dataverse z chwilą utworzenia zwolnionego produktu głównego (ale przed zwolnieniem wariantów).
 - **Odrębne produkty** odnoszą się do wszystkich produktów podtypu produktu i wszystkich wariantów produktu. 
 
-![Model danych produktów](media/dual-write-product.png)
+![Model danych produktów.](media/dual-write-product.png)
 
 W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy z tabeli, w której produkt jest wydawany w aplikacji Finance and Operations. Jeśli nie ma cennika w danej walucie, automatycznie zostanie utworzony cennik, a produkt zostanie do niego przypisany. 
 
@@ -112,7 +112,7 @@ Synchronizacja produktów odbywa się z aplikacji Finance and Operations do usł
 
 Wymiary produktu to cechy, które określają wariant produktu. Cztery wymiary produktu (kolor, rozmiar, styl i konfiguracja) są również mapowane w Dataverse w celu zdefiniowania wariantów produktu. Na poniższej ilustracji przedstawiono model danych dla wymiaru produktu Kolor. Ten sam model jest stosowany do rozmiarów, stylów i konfiguracji. 
 
-![Model danych dla wymiarów produktu](media/dual-write-product-two.png)
+![Model danych dla wymiarów produktu.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Domyślne ustawienia zamówień definiują: oddział i magazyn, skąd towary bę
 
 Jednostki miary i odpowiednia konwersja są dostępne w usłudze Dataverse w następującym modelu danych widocznym na diagramie.
 
-![Model danych dla jednostki miary](media/dual-write-product-three.png)
+![Model danych dla jednostki miary.](media/dual-write-product-three.png)
 
 Pojęcie jednostka miary jest zintegrowane między aplikacjami Finance and Operations, a innymi aplikacjami Dynamics 365. Dla każdej klasy jednostek w aplikacji Finance and Operations jest tworzona grupa jednostek w aplikacji Dynamics 365, która zawiera jednostki należące do klasy jednostek. Domyślna jednostka podstawowa jest również tworzona dla każdej grupy jednostek. 
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022843"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356837"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domeny w rozwiązaniu Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ Podczas inicjowania obsługi środowiska handlu elektronicznego w [Microsoft Dyn
 
 Na poniższej ilustracji przedstawiono ekran konfiguracji usługi handlu elektronicznego LCS z wyróżnionym polem **obsługiwane nazwy hostów**. 
 
-![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![Ekran konfigurowania usługi LCS handlu elektronicznego z wyróżnionym polem **Obsługiwanych nazw hostów**.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Można utworzyć żądanie usługi w celu dodania dodatkowych domen do środowiska, jeśli już konfiguracja miała już miejsce. Aby utworzyć zlecenie usługi w ramach LCS, w środowisku należy przejść do **Pomocy technicznej \> Problemy** i wybrać opcję **Prześlij zdarzenie**.
 
@@ -56,7 +56,7 @@ Podczas pierwszej konfiguracji witryny za pomocą konstruktora witryn zostanie w
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Konfigurowanie serwisu** dla witryny o nazwie „domyślna”, gdy dostęp do witryny jest uzyskiwany po raz pierwszy w konstruktorze witryn.
 
-![Okno dialogowe **Konfigurowanie witryny**](./media/Domains_SetupyoursiteScreen.png)
+![Okno dialogowe **Konfigurowanie witryny**.](./media/Domains_SetupyoursiteScreen.png)
 
 Pole **Wybierz domenę** umożliwia skojarzenie jednej z obsługiwanych nazw hostów dostarczonych dla witryny w usłudze LCS do witryny w konstruktorze witryn.
 
@@ -79,11 +79,11 @@ Po skonfigurowaniu witryny przy użyciu ścieżki wszystkie adresy URL skojarzon
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Nowy adres URL** w konstruktorze witryn z wyróżnioną ścieżką URL. 
 
-![**Nowy adres URL** — okno dialogowe w konstruktorze witryn](./media/Domains_PageSetup2a.png)
+![**Nowy adres URL** — okno dialogowe w konstruktorze witryn.](./media/Domains_PageSetup2a.png)
 
 Na poniższej ilustracji przedstawiono okno dialogowe **URL** w konstruktorze witryn z wyróżnioną ścieżką URL na liście.
 
-![Uruchom opcję przepływu użytkownika w przepływie zasad](./media/Domains_URLsInSiteBuilder2a.png)
+![Uruchom opcję przepływu użytkownika w przepływie zasad.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domeny w konstruktorze witryn
 

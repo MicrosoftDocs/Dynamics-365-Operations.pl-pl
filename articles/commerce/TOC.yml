@@ -932,6 +932,8 @@
                   href: manage-ecommerce-users-roles.md
                 - name: Zastosuj ustawienia zapasów
                   href: inventory-settings.md
+                - name: Zastosuj dodawanie produktu do ustawień koszyka
+                  href: add-cart-settings.md
                 - name: Zagadnienia optymalizacji aparatu wyszukiwania (SEO) dla witryny
                   href: search-engine-optimization-considerations.md
                 - name: Zarządzanie zasadami zabezpieczeń zawartości (CSP)
@@ -1016,6 +1018,10 @@
                       href: customize-site-navigation.md
                     - name: Tworzenie adresu URL strony
                       href: create-page-URL.md
+                - name: Motyw Adventure Works
+                  items:
+                    - name: Omówienie motywu Adventure Works
+                      href: adventure-works-theme.md
             - name: Zarządzanie cyfrowymi składnikami majątku
               items:
                 - name: Omówienie zarządzania cyfrowymi składnikami majątku
@@ -1070,6 +1076,16 @@
                       href: add-hero-module.md
                     - name: Moduł odtwarzacza wideo
                       href: add-video-player.md
+                    - name: Moduł aktywnego obrazu
+                      href: active-image-module.md
+                    - name: Moduł listy obrazów
+                      href: image-list-module.md
+                    - name: Moduł funkcji interaktywnych
+                      href: interactive-feature-module.md
+                    - name: Moduł subskrypcji
+                      href: subscribe-module.md
+                    - name: Moduł listy kafelków
+                      href: tile-list-module.md
                 - name: Moduły nagłówka i stopki
                   items:
                     - name: Moduł nagłówka
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Wytyczne dotyczące wdrażania kas
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Rosja
+              items:
+                - name: Lokalizacja rozwiązania Commerce dla Rosji
+                  href: localizations/rus-commerce-localization.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
@@ -2146,6 +2166,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurowanie kroków zatwierdzania
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurowanie osób sprawdzających wydatki
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurowanie decyzji ręcznych
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurowanie decyzji warunkowych
@@ -2558,6 +2580,8 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Rozszerzenia bazy danych kanału
                   href: dev-itpro/channel-db-extensions.md
+                - name: Usuwanie rozszerzeń jednostki skalowania chmury
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
                 - name: Umożliwianie niestandardowej synchronizacji z usługą CDX za pomocą rozszerzenia
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definiowanie i ustawianie atrybutów zamówienia

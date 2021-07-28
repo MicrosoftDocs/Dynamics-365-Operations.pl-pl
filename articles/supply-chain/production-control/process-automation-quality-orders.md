@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f35adab3075ba810964a41899ba95ae40c115e83
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 0ebb34f58a4bfbe8bda935d7b40e9d89c3dacd03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115210"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353995"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Wywoływanie przepływów automatyzacji procesów w celu tworzenia zleceń wysokiej jakości
 
@@ -30,7 +30,7 @@ Szablon rozwiązania automatyzacji można pobrać [tutaj](https://aka.ms/D365SCM
 
 Aby uzyskać przegląd tej funkcji i jej możliwości, zobacz następujący film: [Korzystanie z RPA do tworzenia zleceń kontroli jakości w programie Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
-![Opcje automatyzacji z RPA](media/rpa-automation-options.png "Opcje automatyzacji z RPA")
+![Opcje automatyzacji z RPA.](media/rpa-automation-options.png "Opcje automatyzacji z RPA")
 
 Szablon rozwiązania w Power Automate zawiera przepływ automatyzacji chmury oraz przepływ automatyzacji pulpitu, który automatyzuje tworzenie zleceń kontroli jakości w Supply Chain Management.
 
@@ -38,7 +38,7 @@ Automatyzację można rozpocząć w odpowiedzi na wiele zdarzeń i sygnałów, w
 
 Parametry rozwiązania są uwzględnione w celu skonfigurowania automatyzacji pod konkretny przypadek użycia w zakładzie produkcyjnym.
 
-![Utwórz zlecenie kontroli jakości](media/rpa-create-quality-roder.png "Utwórz zlecenie kontroli jakości")
+![Utwórz zlecenie kontroli jakości.](media/rpa-create-quality-roder.png "Utwórz zlecenie kontroli jakości")
 
 Aby uzyskać pełny przewodnik krok po kroku dotyczący pobierania, instalowania i używania przykładowego rozwiązania do automatyzowania tworzenia zlecenia kontroli jakości, zobacz [Automatyczne tworzenie zlecenia kontroli jakości w Dynamics 365 Supply Chain Management przy użyciu automatyzacji procesów Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa).
 

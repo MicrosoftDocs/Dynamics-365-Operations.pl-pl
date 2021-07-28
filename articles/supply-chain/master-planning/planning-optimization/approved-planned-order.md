@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304374"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355980"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Wyświetlanie zamówień planowanych, zarządzanie nimi i zatwierdzanie
 
@@ -65,7 +65,7 @@ Zatwierdzanie zamówień planowanych jest opcjonalnym krokiem w procesie tworzen
 
 Na poniższej ilustracji pokazano, jak można używać wartości **Stan** przypisanej do każdego planowanego zamówienia w celu zaimplementowania przepływu pracy zatwierdzania. Aby wdrożyć proces zatwierdzania, ręcznie dostosuj wartość pola **Stan** dla każdego planowanego zamówienia, zgodnie z opisem w poprzedniej sekcji.
 
-![Przepływ zamówienia planowanego](media/approved-planned-orders-1.png)
+![Przepływ zamówienia planowanego.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > Zaleca się zatwierdzanie zmodyfikowanych zamówień planowanych. W przeciwnym razie modyfikacje zostaną zignorowane i zastąpione podczas następnego planowania.

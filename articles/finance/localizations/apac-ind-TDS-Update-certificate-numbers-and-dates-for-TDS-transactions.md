@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a698a8ccc781167060400068dc4011d318b5fe53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023504"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360229"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Zaktualizuj numery certyfikatów i daty transakcji TDS
 
@@ -33,7 +33,7 @@ Wykonaj poniższe czynności, aby zaktualizować numery certyfikatów i daty tra
 
 1. Przejdź do **Podatek \> Deklaracje \> Zaliczka na podatek \> Płatność zaliczki na podatek**.
 
-    [![Aktualizuj stronę certyfikatu](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Aktualizuj stronę certyfikatu.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. Na stronie **Aktualizuj certyfikat**, w sekcji **Wybierz** w polu **Typ podatku** wybierz pozycję **TDS**.
 3. W polu **Numer certyfikatu** wybierz numer certyfikatu TDS odbiorcy lub dostawcy.
@@ -60,4 +60,4 @@ Wykonaj poniższe czynności, aby zaktualizować numery certyfikatów i daty tra
 8. Wybierz przycisk **Aktualizuj**, aby zaktualizować pola **Numer certyfikatu** i **Data certyfikatu** dla transakcji TDS w dolnej siatce.
 10. Przejdź do **Podatki \> Indirect taxes \> Potrącona zaliczka na podatek \> Certyfikaty podlegające zwrotowi** i wybierz pozycję **Informacje**, aby wyświetlić zaktualizowane wiersze transakcji, które mają nowe numery certyfikatów na stronie **Transakcje certyfikatu**.
 
-    [![Strona transakcji certyfikatów](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Strona transakcji certyfikatów.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

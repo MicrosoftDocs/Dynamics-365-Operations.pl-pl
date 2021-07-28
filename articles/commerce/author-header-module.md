@@ -2,7 +2,7 @@
 title: Moduł nagłówka
 description: W tym temacie opisano moduły nagłówka i sposób tworzenia nagłówków stron w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799925"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479263"
 ---
 # <a name="header-module"></a>Moduł nagłówka
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 W tym temacie opisano moduły nagłówka i sposób tworzenia nagłówków stron w Microsoft Dynamics 365 Commerce.
 
@@ -33,7 +34,7 @@ Moduł nagłówka zawiera logo witryny, łącza do hierarchii nawigacji, łącza
 
 Poniższy obraz pokazuje przykład modułu nagłówka na stronie głównej.
 
-![Przykład modułu nagłówka](./media/ecommerce-header.png)
+![Przykład modułu nagłówka.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Moduł właściwości nagłówka
 
@@ -58,9 +59,16 @@ W module nagłówka mogą być używane następujące moduły:
 - **Wybór sklepów** — moduł wyboru sklepu może być uwzględniony w gnieździe wyboru sklepu w module nagłówka. Umożliwia on przeglądanie i znajdowanie pobliskich sklepów. Użytkownicy mogą również określić preferowany sklep. Ten sklep zostanie następnie wyświetlony w nagłówku. Gdy moduł Selector magazynu jest uwzględniony w module nagłówka, jego właściwość **Tryb** musi mieć ustawioną wartość **Znajdź sklepy**. Aby uzyskać więcej informacji, zajrzyj do [Moduł wyboru sklepów](store-selector.md).
 
 > [!NOTE]
-> - Obsługa korzystania z modułu ikon koszyka w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.11.
-> - Obsługa korzystania z modułu wyboru witryn w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.14.
-> - Obsługa korzystania z modułu wyboru sklepu w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wydaniu 10.0.15.
+> - Obsługa korzystania z modułu ikon koszyka w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.11.
+> - Obsługa korzystania z modułu wyboru witryny w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.14.
+> - Obsługa korzystania z modułu wyboru sklepu w modułach nagłówków jest dostępna w Dynamics 365 Commerce w wersji w wydaniu 10.0.15.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Moduł Nagłówek w motywie Adventure Works
+
+W motywie firmy Adventure Works moduł nagłówka obsługuje właściwość **Logo mobilne**. Ta właściwość umożliwia określenie logo dla mobilnych rzutni. Właściwość **Logo mobilne** jest dostępna jako rozszerzenie definicji modułu.
+
+> [!IMPORTANT]
+> Kompozycja Adventure Works jest dostępna w Dynamics 365 Commerce w wersji 10.0.20.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Utwórz fragment nagłówka dla strony
 
