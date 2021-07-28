@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270542"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352743"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -44,7 +44,7 @@ W tym temacie opisano, jak działa obciążenie pracą nad wykonywaniem produkcj
 
 Na poniższej ilustracji przedstawiono cykl produkcyjny podzielony na trzy etapy: *Planowanie*, *wykonywanie* i *finalizowanie*.
 
-[![Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png "Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska")](media/mes-phases-large.png)
+[![Fazy wykonania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png „Fazy wykonywania produkcji w przypadku korzystania z jednego środowiska”.](media/mes-phases-large.png)
 
 _Faza planu_ obejmuje definicje produktów, planowanie, tworzenie i planowanie zamówień oraz zwalnianie. Krok wydania wskazuje przejście z fazy _planu_ do fazy _wykonania_. Po zwolnieniu zlecenia produkcyjnego zadania zlecenia produkcyjnego będą widoczne w oddziale produkcyjnym i gotowe do wykonania.
 
@@ -54,7 +54,7 @@ Jeśli zadanie produkcji jest oznaczone jako ukończone, następuje przejście z
 
 W poniższej ilustracji pokazano, kiedy są używane jednostki skalowania, _faza wykonania_ jest dzielona jako oddzielne obciążenie pracą.
 
-[![Fazy uruchamiania produkcji podczas używania jednostek miary](media/mes-phases-workloads.png "Fazy uruchamiania produkcji podczas używania jednostek miary")](media/mes-phases-workloads-large.png)
+[![Fazy wykonania produkcji w przypadku korzystania z jednostek skalowania](media/mes-phases-workloads.png „Fazy produkcji w przypadku korzystania z jednostek skalowania”.](media/mes-phases-workloads-large.png)
 
 Obecnie model pochodzi z instalacji z jednym wystąpieniem do modelu opartego na centrum i jednostkach skali. Fazy _Planowanie_ i _Finalizacja_ są wykonywane jako operacje zaplecza w centrali, a obciążenie pracą nad produkcją jest wykonywane na jednostkach skali. Dane są przesyłane asynchronicznie między jednostkami centrum i skali.
 
@@ -87,7 +87,7 @@ Mimo że zadanie zazwyczaj jest uruchamiane automatycznie, można je uruchomić 
 
 Aby przejrzeć dziennik przetwarzania rejestracji, zaloguj się do centrum, a następnie przejdź do obszaru **Kontrola produkcji \> Zadania okresowe \> Zarządzanie przepływem pracy backoffice \> Dziennik przetwarzania rejestracji wstępnych**. Na stronie **Dziennik przetwarzania rejestracji wstępnych** jest wyświetlana lista przetworzonych rejestracji wstępnych oraz stan każdej rejestracji.
 
-![Strona dziennika przetwarzania rejestracji nieprzetworzonej](media/mes-processing-log.png "Strona dziennika przetwarzania rejestracji nieprzetworzonej")
+![Strona dziennika przetwarzania rejestracji nieprzetworzonej.](media/mes-processing-log.png "Strona dziennika przetwarzania rejestracji nieprzetworzonej")
 
 Można pracować z dowolną rejestracją na liście, zaznaczając ją, a następnie wybierając jeden z następujących przycisków w okienku akcji:
 

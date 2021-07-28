@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795388"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357769"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Włączanie rekomendacji dotyczących „kupowania podobnie wyglądających produktów”
 
@@ -68,7 +68,7 @@ Aby włączyć funkcję rekomendacji „Kup podobne” w centrali Commerce, wyko
 
 Na poniższej ilustracji przedstawiono funkcję **Kup podobne** na stronie **Zarządzanie funkcjami** w module Commerce Headquarter.
 
-![Funkcja Sklep podobny wygląda na stronie zarządzania funkcjami w siedzibie Commerce](./media/enableshopsimilarlooks.png)
+![Funkcja Sklep podobny wygląda na stronie zarządzania funkcjami w siedzibie Commerce.](./media/enableshopsimilarlooks.png)
 
 Po zakończeniu powyższych zadań terminale POS są automatycznie rozszerzane za pomocą panelu **Kup podobne produkty**. Po wybraniu opcji **Zobacz więcej**, użytkownicy terminalu w punkcie sprzedaży mogą zostać uwzględnieni w dedykowanej stronie „kup podobne”, którą można później przefiltrować.
 
@@ -88,7 +88,7 @@ Aby dodać przycisk **Kup podobne** do stron PDP za pomocą narzędzia do tworze
 
 Na poniższej ilustracji przedstawiono pole wyboru **Włącz łącze zakup podobne** i **Kup podobne** na przykładowej PDP w konstruktorze witryn.
 
-![Włącz pole wyboru Kupuj podobne i przycisk Kupuj podobne na PDP w narzędziu do tworzenia witryn](./media/SSLecomtooling.png)
+![Włącz pole wyboru Kupuj podobne i przycisk Kupuj podobne na PDP w narzędziu do tworzenia witryn.](./media/SSLecomtooling.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

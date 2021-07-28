@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b59be8b395826914e8196009c339c2ced5a4debf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a537509fe034d85f8f4f441dc82d54efd3ed4f28
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818310"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348889"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Mechanizm opłaty zwrotnej dla schematu VAT/GST
 
@@ -121,7 +121,7 @@ Podczas księgowania faktury zakupu zawierającej podatek odwrócony są tworzon
 
 Na zrzucie ekranu poniżej jedna transakcja ma kierunek **Podatek naliczony**, a druga transakcja ma kierunek jest **Podatek należny**. 
 
-![Zaksięgowany podatek](media/apac-sau-posted-sales-tax.png)
+![Zaksięgowany podatek.](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Włącz funkcję Mechanizm opłaty zwrotnej dla schematu podatku VAT/GST
 W obszarze roboczym **Zarządzanie funkcjami** znajdź funkcję i wybierz opcję **Włącz**.

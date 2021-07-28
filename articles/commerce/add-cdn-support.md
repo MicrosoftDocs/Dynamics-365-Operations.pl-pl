@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936837"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346835"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Dodawanie obsługi dla sieci dostarczania zawartości (CDN)
 
@@ -74,11 +74,11 @@ Aby skonfigurować pulę zaplecza w usłudze Azure Front Door Service, wykonaj n
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie zaplecza** w usłudze Azure Front Door Service z podaną nazwą hosta zaplecza.
 
-![Okno dialogowe Dodawanie puli wewnętrznej bazy danych](./media/CDN_BackendPool.png)
+![Okno dialogowe Dodawanie puli wewnętrznej bazy danych.](./media/CDN_BackendPool.png)
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Dodawanie puli zaplecza** w usłudze Azure Front Door Service z domyślnymi wartościami równoważenia obciążenia.
 
-![Kontynuacja Okno dialogowe Dodawanie puli wewnętrznej bazy danych](./media/CDN_BackendPool_2.png)
+![Kontynuacja Okno dialogowe Dodawanie puli wewnętrznej bazy danych.](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Pamiętaj, aby wyłączyć **Sondy kondycji** podczas konfigurowania własnej usługi Azure Front Door dla handlu.
@@ -107,13 +107,13 @@ Jeśli Twoja domena jest nowa i nie jest wcześniej istniejącą domeną aktywn�
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Konfiguracja CNAME** w usłudze Azure Front Door Service.
 
-![Okno dialogowe konfiguracji CNAME](./media/CNAME_Configuration.png)
+![Okno dialogowe konfiguracji CNAME.](./media/CNAME_Configuration.png)
 
 Za pomocą usługi Azure Front Door Service można zarządzać certyfikatem lub można skorzystać z własnego certyfikatu dla domeny niestandardowej.
 
 Na poniższej ilustracji przedstawiono okno dialogowe **Niestandardowa domena HTTPS** w usłudze Azure Front Door Service.
 
-![Okno dialogowe domeny niestandardowej HTTPS](./media/Custom_Domain_HTTPS.png)
+![Okno dialogowe domeny niestandardowej HTTPS.](./media/Custom_Domain_HTTPS.png)
 
 Aby uzyskać szczegółowe instrukcje dotyczące dodawania domeny niestandardowej do Azure Front Door, zamieszczono w temacie [Dodawanie domeny niestandardowej do swoich Front Door](/azure/frontdoor/front-door-custom-domain).
 

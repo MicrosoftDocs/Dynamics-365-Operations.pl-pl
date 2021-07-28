@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356567"
 ---
 # <a name="understand-date-and-time-fields"></a>Opis pól Data i Godzina
 
@@ -36,13 +36,13 @@ Pola **Data i godzina** zawierają informacje o strefie czasowej, natomiast pola
 
 W przypadku wyświetlania danych w polu **Data i Godzina** Human Resources dostosowuje datę i godzinę na podstawie konfiguracji strefy czasowej użytkownika w formularzu **Opcje użytkownika** (**Wspólne > Ustawienia > Opcje użytkownika**). Data i godzina wprowadzona w polu mogą być inne niż informacje zapisane w bazie danych.
 
-[![Formularz Opcje użytkownika](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Formularz Opcje użytkownika.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Rozumienie użycia pól Data i Godzina w formularzach 
 
 W polu **Data i Godzina**, dane wyświetlane na ekranie nie są takie same jak dane przechowywane w bazie danych, jeśli strefa czasowa użytkownika nie jest ustawiona na Uniwersalny czas koordynowany (UTC). Dane w polach **Data i godzina** są zawsze zapisywane jako czas UTC.
 
-[![Formularz pracownika UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Formularz pracownika UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Rozumienie użycia pól Data i Godzina w bazie danych 
 
@@ -52,7 +52,7 @@ W powyższym przykładzie czas rozpoczęcia to punkt w czasie, a nie określona 
   
 W poniższym przykładzie zatrudnienie pracownika nr. 000724 staje się aktywne w tym samym czasie, niezależnie od strefy czasowej. Pracownik będzie aktywny w dniu 04/30/2019 w strefie czasowej GMT, który jest taki sam jak 05/01/2019 w strefie GMT +12:00. Odnoszą się do tego samego punktu w czasie, a nie do określonej daty. 
 
-[![Formularz pracownika GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Formularz pracownika GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dane daty i godziny w strukturze zarządzania danymi, Excel, Dataverse i Power BI 
 
@@ -68,27 +68,27 @@ W przypadku używania źródeł zewnętrznych, takich jak DMF do wyświetlania l
 
 **Human Resources ze strefą czasową użytkownika ustawioną jako UTC**
 
-[![Formularz pracownika ustawiony na czas UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Formularz pracownika ustawiony na czas UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources ze strefą czasową użytkownika ustawioną jako GMT +12:00** 
 
-[![Formularz pracownika ustawiony na czas GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Formularz pracownika ustawiony na czas GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel za pośrednictwem protokołu OData**
 
-[![Excel za pośrednictwem protokołu OData](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel za pośrednictwem protokołu OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **Ustawianie DMF**
 
-[![Ustawianie DMF](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![Ustawianie DMF.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **Eksportowanie DMF**
 
-[![Eksportowanie DMF](./media/DMFexport.png)](./media/DMFexport.png)
+[![Eksportowanie DMF.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel za pośrednictwem Dataverse**
 
-[![Excel za pośrednictwem Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel za pośrednictwem Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

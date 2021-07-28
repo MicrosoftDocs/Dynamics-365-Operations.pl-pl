@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820576"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356132"
 ---
 # <a name="revenue-recognition-reallocation"></a>Zmiana alokacji rozpoznawania przychodów
 
@@ -48,7 +48,7 @@ Jako że zmianę alokacji można przeprowadzić dla zamówienia sprzedaży, któ
 
 Każda organizacja musi podjąć decyzję o tym, czy korekta ma powodować aktualizację wyłącznie księgi głównej, czy też zarówno księgi głównej, jak i rozrachunków z odbiorcami. Na podstawie podjętej decyzji należy określić właściwe ustawienie opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** na karcie **Rozpoznawanie przychodów** na stronie **Parametry księgi głównej** (**Rozpoznawanie przychodów \> Konfiguracja \> Parametry księgi głównej**). Właściwe ustawienie zależy od określonego scenariusza. Aby uzyskać więcej informacji na temat możliwych scenariuszy, użyj łączy z sekcji [Scenariusze zmiany alokacji](#scenarios-for-reallocation) w dalszej części tego tematu.
 
-[![Karta Rozpoznawanie przychodów na stronie Parametry księgi głównej](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Karta Rozpoznawanie przychodów na stronie Parametry księgi głównej.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Jeśli dla opcji **Księgowanie korekt faktury do rozrachunków z odbiorcami** jest ustawiona wartość **Tak**, proces zmiany alokacji pozwala uzyskać następujący wynik:
 
@@ -76,7 +76,7 @@ Jak już wspomniano, można zaktualizować tylko księgę główną lub zarówno
 
 Aby rozpocząć proces zmiany alokacji, wybierz opcję **Zmień alokację ceny za pomocą nowych wierszy zamówienia** w każdym zamówieniu sprzedaży, które musi zostać objęte zmianą alokacji. Możesz również wybrać kolejno **Rozpoznawanie przychodów \> Zadania okresowe \> Zmień alokację ceny za pomocą nowych wierszy zamówienia**, a następnie wprowadzić odpowiednie filtry, takie jak konto odbiorcy.
 
-[![Strona Zmień alokację ceny za pomocą nowych wierszy zamówienia](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Strona Zmień alokację ceny za pomocą nowych wierszy zamówienia.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
 Górna siatka na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** nosi nazwę **Sprzedaż**. Zawiera ona listę zamówień sprzedaży dla odbiorcy. Wybierz zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Nie można wybrać zamówień sprzedaży dla projektu, ponieważ nie podlegają one zmianie alokacji. Nie można również wybrać zamówień sprzedaży, które mają już identyfikator zmiany alokacji, ponieważ zmianę alokacji dla zamówień sprzedaży innych niż te dla projektu można przeprowadzić tylko jeden raz. Jeśli zamówienie sprzedaży ma identyfikator zmiany alokacji, zostało już oznaczone do zmiany alokacji przez innego użytkownika.
 
@@ -86,11 +86,11 @@ Po zakończeniu wybierania wymaganych wierszy zamówienia sprzedaży należy uż
 
 - **Aktualizuj zmianę alokacji** — umożliwia obliczanie nowych kwot cen przychodów dla wybranych wierszy zamówienia sprzedaży. Jeśli wiersz został usunięty lub anulowany, zmiana alokacji obejmie tylko istniejące wiersze, które wybrano. Na poniższej ilustracji pokazano przykład wierszy zamówienia sprzedaży przed aktualizacją zmiany alokacji.
 
-    [![Wiersze zamówienia sprzedaży przed aktualizacją zmiany alokacji](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Wiersze zamówienia sprzedaży przed aktualizacją zmiany alokacji.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     Nowe kwoty cen przychodu są widoczne w kolumnie **Kwota po zmianie alokacji** w siatce **Wiersze**. Na tym etapie zmiana alokacji została przetworzona, ale nie została jeszcze obliczona. Na poniższej ilustracji pokazano przykład wierszy zamówienia sprzedaży po aktualizacji zmiany alokacji.
 
-    [![Wiersze zamówienia sprzedaży po aktualizacji zmiany alokacji](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Wiersze zamówienia sprzedaży po aktualizacji zmiany alokacji.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
 - **Przetwarzanie** — przetwarzanie lub księgowanie cen przychodu po zmianie alokacji. Po wybraniu tego przycisku nie można wycofać zmiany alokacji. Jeśli przed wybraniem opcji **Przetwarzanie** nie wybrano opcji **Aktualizuj zmianę alokacji**, zmiana alokacji zostanie uruchomiona automatycznie.
 
@@ -100,7 +100,7 @@ Po zakończeniu wybierania wymaganych wierszy zamówienia sprzedaży należy uż
 - **Oczekiwany załącznik** — umożliwia wyświetlenie podglądu wpisów księgowania utworzonych dla wszelkich zafakturowanych wierszy zamówienia sprzedaży. Jeśli nie zafakturowano żadnych wierszy, nie zostanie wyświetlona żadna zawartość. Jeśli przed wybraniem opcji **Oczekiwany załącznik** nie wybrano opcji **Aktualizuj zmianę alokacji**, zmiana alokacji zostanie uruchomiona automatycznie.
 - **Zmiana alokacji przychodu** — pozwala otworzyć stronę, na której jest widoczna alokacja cen przychodów dla wszystkich wybranych wierszy. Nie można edytować żadnych informacji na tej stronie. Na stronie są widoczne kwoty dla wierzy użyte w celu przeprowadzenia procesu zmiany alokacji.
 
-    [![Kwoty dla wierszy użyte do przeprowadzenia procesu zmiany alokacji](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Kwoty dla wierszy użyte do przeprowadzenia procesu zmiany alokacji.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Zresetuj dane dla wybranego odbiorcy** — pozwala wyczyścić dane w tabeli zmiany alokacji tylko dla wybranego odbiorcy w przypadku, gdy proces zmiany alokacji został rozpoczęty, ale nie został zakończony. Przykład: oznaczasz wiele wierszy zamówienia sprzedaży do zmiany alokacji i pozostawiasz otwartą stronę bez wybrania opcji **Przetwarzanie**. Limit czasu dla strony zostaje przekroczony. W takim przypadku wiersze zamówienia sprzedaży pozostaną oznaczone i inny użytkownik nie będzie mógł zakończyć procesu zmiany alokacji. Po otwarciu tej strony może nawet okazać się, że jest ona pusta. W takiej sytuacji można użyć przycisku **Zresetuj dane dla wybranego odbiorcy** w celu wyczyszczenia nieprzetworzonych zamówień sprzedaży, aby inny użytkownik mógł zakończyć proces zmiany alokacji.
 

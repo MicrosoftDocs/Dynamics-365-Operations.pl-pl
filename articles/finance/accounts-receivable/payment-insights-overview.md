@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82b301b4b8ba61375a53a8fe6220628500f6cf3d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359324"
 ---
 # <a name="customer-payment-insights-preview"></a>Wgląd w płatności od odbiorców (wersja zapoznawcza)
 
@@ -47,11 +49,11 @@ Dla każdej otwartej faktury narzędzie Wgląd w płatności od odbiorców (wers
 
 Aby ułatwić organizacjom zrozumienie łącznej kwoty płatności, której mogą oczekiwać od odbiorcy w jednym z trzech przedziałów (Na czas, Opóźnione i Bardzo opóźnione), moduł Wgląd w płatności od odbiorców (wersja zapoznawcza) przekazuje także zagregowany widok oczekiwanych płatności.
 
-[![Zagregowany widok prognoz płatności](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Zagregowany widok prognoz płatności.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Ponadto do każdej faktury jest przypisywane prawdopodobieństwo płatności na czas. Jeśli prawdopodobieństwo płatności na czas jest mniejsze niż 50%, faktury są znakowane czerwoną kółkiem, aby wskazać, że te faktury mogą wymagać windykacji. 
 
-[![Prawdopodobieństwo listy płatności](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Prawdopodobieństwo listy płatności.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Szczegóły płatności odbiorcy (wersja zapoznawcza) zawierają również informacje kontekstowe w celu wyjaśnienia przewidywania, takie jak najlepsze czynniki wpływające na prognozę, bieżący stan działalności gospodarczej z odbiorcą oraz szczegółowe informacje dotyczące historycznej płatności odbiorcy działa. W wielu firmach proces windykacji był aktywnym działaniem; Proces windykacji nie rozpoczyna się do terminu wymagalności faktur. 
 

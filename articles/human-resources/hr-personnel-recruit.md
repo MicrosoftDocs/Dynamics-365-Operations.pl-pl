@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051816"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359684"
 ---
 # <a name="recruit-job-candidates"></a>Rekrutowanie kandydatów
 
@@ -61,13 +61,13 @@ Jeśli organizacja ma wiele lokalizacji, można je dodać, tak aby wnioskodawca 
 
 3. W polu **Lokalizacja wniosku o rekrutację** wprowadź nazwę lokalizacji.
 
-   ![Dodawanie lokalizacji wniosku o rekrutację](./media/hr-recruit-0a-add-location.png)
+   ![Dodawanie lokalizacji wniosku o rekrutację.](./media/hr-recruit-0a-add-location.png)
 
 4. W polu **Opis** wprowadź opis lokalizacji.
 
 5. W obszarze **Lokalizacja** wybierz **Dodaj**. Jeśli pojawi się okno **Nowy adres**, wprowadź adres lokalizacji.
 
-   ![Wprowadź adres](./media/hr-recruit-0b-address.png)
+   ![Wprowadź adres.](./media/hr-recruit-0b-address.png)
 
 6. W obszarze **Informacje kontaktowe** wprowadź dane osoby do kontaktu w tej lokalizacji.
 
@@ -83,11 +83,11 @@ Menedżerowie mogą przesyłać wnioski o rekrutację w module Human Resources. 
 
 3. Wybierz **Złóż wniosek o rekrutację**.
 
-   ![Uruchamianie wniosku o rekrutację](./media/hr-recruit-1-request-to-recruit.png)
+   ![Uruchamianie wniosku o rekrutację.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Wypełnij pola **Opis**, **Stanowisko** i **Szacowana data rozpoczęcia**.
 
-   ![Zakończenie tworzenia wniosku o rekrutację](./media/hr-recruit-2-request-to-recruit.png)
+   ![Zakończenie tworzenia wniosku o rekrutację.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Kliknij przycisk **Kontynuuj**. Wniosek o rekrutację na dane stanowisko zostanie utworzony.
 
@@ -95,7 +95,7 @@ Menedżerowie mogą przesyłać wnioski o rekrutację w module Human Resources. 
 
 7. W obszarze **Stanowisko** zmień informacje zależnie od potrzeb, a następnie wybierz opcję **Utwórz szczegóły ze stanowiska**.
 
-   ![Utwórz szczegóły ze stanowiska](./media/hr-recruit-3-create-details-from-job.png)
+   ![Utwórz szczegóły ze stanowiska.](./media/hr-recruit-3-create-details-from-job.png)
 
    Pozostała część wniosku o rekrutację zostanie wypełniona domyślnymi informacjami dotyczącymi danego stanowiska.
 
@@ -103,13 +103,13 @@ Menedżerowie mogą przesyłać wnioski o rekrutację w module Human Resources. 
 
 9. W obszarze **Stanowiska** wybierz opcję **Dodaj**, a następnie wybierz stanowisko dla danego wniosku o rekrutację.
 
-   ![Dodawanie stanowiska](./media/hr-recruit-4-select-position.png)
+   ![Dodawanie stanowiska.](./media/hr-recruit-4-select-position.png)
 
 10. W obszarze **Umiejętności** wybierz opcję **Dodaj**, a następnie wybierz umiejętność.
 
 11. W obszarze **Wymagane wykształcenie** wybierz opcję **Dodaj**, a następnie wybierz wartości z list rozwijanych **Wykształcenie** i **Poziom wykształcenia**.
 
-   ![Dodawanie wymagań dotyczących wykształcenia](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Dodawanie wymagań dotyczących wykształcenia.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. W obszarze **Komentarz** dodaj opcjonalne uwagi.
 
@@ -117,7 +117,7 @@ Menedżerowie mogą przesyłać wnioski o rekrutację w module Human Resources. 
 
 14. Gdy wniosek o rekrutację będzie gotowy i można rozpocząć proces rekrutacji, wybierz opcję **Uaktywnij** na pasku menu.
 
-   ![Aktywacja wniosku o rekrutację](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktywacja wniosku o rekrutację.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Wybierz opcję **Zapisz**.
 
@@ -131,7 +131,7 @@ Jeśli jesteś menedżerem i chcesz wyświetlić swoje własne wnioski:
 
 3. W obszarze **Informacje dotyczące mojego zespołu** wybierz kartę **Wnioski o rekrutację**.
 
-   ![Wybierz kartę Wnioski o rekrutację](./media/hr-recruit-7-recruiting-requests.png)
+   ![Wybierz kartę Wnioski o rekrutację.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Aby wyświetlić lub edytować wniosek o rekrutację, należy wybrać go z tabeli.
 
@@ -141,7 +141,7 @@ Jeśli jesteś pracownikiem działu kadr i chcesz przejrzeć wszystkie wnioski o
 
 2. Wybierz **Wnioski o rekrutację**.
 
-   ![Wyświetlanie wniosków o rekrutację na stronie Zarządzanie personelem](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Wyświetlanie wniosków o rekrutację na stronie Zarządzanie personelem.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Aby wyświetlić lub edytować wniosek o rekrutację, należy wybrać go z tabeli.
 
@@ -155,7 +155,7 @@ Jeśli zarządzanie wnioskami o rekrutację zostało zintegrowane z inną aplika
 
 3. W obszarze **Rekrutacja** wybierz opcję **Kandydaci**.
 
-   ![Wyświetlanie kandydatów](./media/hr-recruit-9-candidates.png)
+   ![Wyświetlanie kandydatów.](./media/hr-recruit-9-candidates.png)
 
 4. Aby dodać kandydata, wybierz opcję **Nowy**. Aby edytować dane istniejącego kandydata, wybierz go z listy i wybierz opcję **Edytuj**. Zostanie wyświetlony profil kandydata.
 
@@ -163,7 +163,7 @@ Jeśli zarządzanie wnioskami o rekrutację zostało zintegrowane z inną aplika
 
 6. W obszarze **Wniosek o rekrutację** wybierz wniosek o rekrutację, z którym ma być połączony kandydat. Następnie wypełnij pola **Szacunkowa data rozpoczęcia**, **Menedżer zatrudniający**, **Stanowisko** i **Opis**.
 
-   ![Łączenie z wnioskiem o rekrutację](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Łączenie z wnioskiem o rekrutację.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Uzupełnij wszystkie informacje w następujących obszarach, które chcesz uwzględnić w rekordzie kandydata:
    - **Komentarze**
@@ -182,11 +182,11 @@ Gdy firma jest gotowa do zatrudnienia kandydata, wykonaj poniższe kroki, aby zm
 
 1. W formularzu kandydata wybierz **Zatrudnij**.
 
-   ![Zatrudnianie kandydata](./media/hr-recruit-11-hire.png)
+   ![Zatrudnianie kandydata.](./media/hr-recruit-11-hire.png)
 
 2. Wypełnij wszystkie pola w formularzu **Zatrudnij nowego pracownika** w obszarze **Szczegóły**.
 
-   ![Wprowadzanie danych dotyczących zatrudnianej osoby](./media/hr-recruit-12-hire-new-worker.png)
+   ![Wprowadzanie danych dotyczących zatrudnianej osoby.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Sprawdź dane w obszarze **Szczegóły dotyczące stanowiska** i zmodyfikuj je w razie potrzeby.
 
@@ -203,7 +203,7 @@ W przypadku decyzji o niezatrudnianiu kandydata postępuj zgodnie z poniższą i
 
 1. W formularzu kandydata wybierz **Nie zatrudniaj**.
 
-   ![Niezatrudnianie kandydata](./media/hr-recruit-13-do-not-hire.png)
+   ![Niezatrudnianie kandydata.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Wybierz **Kod przyczyny** i dodaj swoje uwagi.
 
@@ -215,7 +215,7 @@ Jeśli zajdzie potrzeba, można odrzucić kandydata po jego zatrudnieniu. Na prz
 
 - W formularzu kandydata wybierz **Odrzuć kandydata**.
 
-  ![Odrzuć kandydata](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Odrzuć kandydata.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

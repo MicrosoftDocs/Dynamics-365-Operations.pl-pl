@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 5b77985a75d2930267cf94d6f218d53b47e6e705
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a9912151ef9fc68941858545e39bccc1e5d3e411
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023515"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358321"
 ---
 # <a name="settle-tds-payments-to-tds-authority-vendors-and-generate-tds-challan"></a>Rozlicz płatności TDS na rzecz dostawców z urzędu TDS i wygeneruj dokument urzędowy TDS
 
@@ -31,7 +31,7 @@ W tym temacie opisano sposób rozliczania płatności podatków potrącanych w �
 
 1. Przejdź do pozycji **Rozrachunki z dostawcami \> Płatności \> Arkusz płatności dostawcy**.
 
-    [![Strona arkusza płatności dostawcy](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
+    [![Strona arkusza płatności dostawcy.](./media/apac-ind-TDS-51.png)](./media/apac-ind-TDS-51.png)
 
 2. Na stronie **Arkusz płatności dostawców** wybierz pozycję **Nowy**, aby utworzyć wiersz arkusza.
 3. W polu **Konto** wybierz dostawcę urzędu TDS, dla których chcesz rozliczyć płatności TDS.

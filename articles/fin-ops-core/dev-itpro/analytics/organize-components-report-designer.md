@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb3e09ad849b250ed3f1d7aec910b44d591cb88e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e1672ee1777150a7f78c03d07dc79df118a3632f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751639"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347883"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organizowanie składników raportu w projektancie raportów
 
@@ -66,7 +66,7 @@ Można grupować definicje raportów, by generować wiele raportów w tym samym 
 
 1. W Projektancie raportów w okienku nawigacji kliknij opcję **Grupy raportów**.
 2. Otwórz grupę raportów do wygenerowania.
-3. Kliknij przycisk **Generuj raport** ![Generuj raport](media/generate-report.gif "Generuj raport"), aby wygenerować raport.
+3. Kliknij przycisk **Generuj raport** ![Generuj raport](media/generate-report.gif "Generuj raport"), aby wygenerować raporty.
 
 ### <a name="delete-a-report-group"></a>Usuwanie grupy raportu
 

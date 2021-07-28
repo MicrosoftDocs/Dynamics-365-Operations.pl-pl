@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103175"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359794"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Obsługa magazynów dla ładunków przychodzących dla zamówień zakupu
 
@@ -30,7 +30,7 @@ Dla każdego ładunku przychodzącego system powinien już zawierać powiązane 
 
 Na poniższej ilustracji przedstawiono typowy przepływ obsługi ładunków przychodzących w ilości zamówienia zakupu, w momencie gdy docierają do magazynu.
 
-![Proces obsługi ładunku przychodzącego](media/inbound-process.png "Proces obsługi ładunku przychodzącego")
+![Proces obsługi ładunku przychodzącego.](media/inbound-process.png "Proces obsługi ładunku przychodzącego")
 
 1. **Dostawca potwierdza zamówienie zakupu.**
 
@@ -293,7 +293,7 @@ W tej sekcji zostanie utworzony element menu urządzenia przenośnego i dodany d
 
     Istnieje możliwość pozostawienia wszystkich pozostałych ustawień w wartościach domyślnych.
 
-    ![Ustawienia pozycji menu urządzenia mobilnego](media/inbound-mobile-menu-items.png "Ustawienia pozycji menu urządzenia mobilnego")
+    ![Ustawienia pozycji menu urządzenia mobilnego.](media/inbound-mobile-menu-items.png "Ustawienia pozycji menu urządzenia mobilnego")
 
     Aby uzyskać więcej informacji o konfigurowaniu elementów menu urządzeń przenośnych, zapoznajsię z tematem [Konfigurowanie urządzeń przenośnych do pracy magazynowej](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ W tej procedurze ręcznie utworzysz zamówienie zakupu i powiązany ładunek. Na
     - W na skróconej karcie **Ładunek** pole **Stan ładunku** jest ustawione na wartość _Otwarte_.
     - W sekcji **Wiersze ładunku** znajduje się jeden wiersz, w którym w polu **Ilość** jest ustawiona wartość _10_, a w polu **Ilość stworzonych prac** wartość wynosi _0_ (zero).
 
-    ![Szczegóły ładunku](media/inbound-load-details.png "Szczegóły ładunku")
+    ![Szczegóły ładunku.](media/inbound-load-details.png "Szczegóły ładunku")
 
 1. W okienku akcji na karcie **Wyślij i odbierz** wybierz **Potwierdź \> Przychodząca dostawa**. Zwróć uwagę, że **Stan ładunku** zmienił się na _Wysłane_.
 1. Zanotuj wartość **Identyfikatora ładunku**, aby można było z niej skorzystać w następnej procedurze.

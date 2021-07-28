@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.dyn365.ops.version: 10.0.5
 ms.search.validFrom: 2019-08-31
-ms.openlocfilehash: 98f935a11ad8a5272cde0270f9ae0471411b914a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4e2843ecb30b75d2a8d97ceff5b5825e0bd704
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837952"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360132"
 ---
 # <a name="use-the-asset-management-mobile-workspace"></a>Używanie mobilnego obszaru roboczego zarządzania składnikami majątku
 
@@ -60,7 +60,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Po zalogowaniu się zobaczysz obszary robocze dostępne dla firmy. Należy zauważyć, że jeśli administrator systemu później opublikuje nowy obszar roboczy, należy odświeżyć listę mobilnych obszarów roboczych.
 
-    ![Wybieranie obszaru roboczego](media/am-mobile-01.png "Wybieranie obszaru roboczego")
+    ![Wybieranie obszaru roboczego.](media/am-mobile-01.png "Wybieranie obszaru roboczego")
 
 ## <a name="view-assigned-work-order-jobs-in-calendar-view"></a>Umożliwia wyświetlenie przypisanych zadań zlecenia pracy w widoku kalendarza
 
@@ -72,7 +72,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wybierz zadanie zlecenia pracy na liście, aby wyświetlić szczegóły zadania: szczegóły dotyczące składnika majątku i lokalizacji czynności konserwacyjnych oraz inne łącza nawigacji, które umożliwiają wyświetlanie **Załączników**, **List kontrolnych**, **Narzędzi**, **Liczników składników majatku**, **Notatek**, **Arkuszy**.
 
-    ![Umożliwia wyświetlenie przypisanych zadań zlecenia pracy w widoku kalendarza](media/am-mobile-02.png "Umożliwia wyświetlenie przypisanych zadań zlecenia pracy w widoku kalendarza")
+    ![Umożliwia wyświetlenie przypisanych zadań zlecenia pracy w widoku kalendarza.](media/am-mobile-02.png "Umożliwia wyświetlenie przypisanych zadań zlecenia pracy w widoku kalendarza")
 
 ## <a name="create-a-work-order-job"></a>Tworzenie zadania zlecenia pracy
 
@@ -90,7 +90,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wybierz opcję **Gotowe**.
 
-    ![Ekran dodawania wiersza](media/am-mobile-03.png "Ekran dodawania wiersza")
+    ![Ekran dodawania wiersza.](media/am-mobile-03.png "Ekran dodawania wiersza")
 
 
 ## <a name="add-attachment-to-a-work-order-job"></a>Dodawanie załącznika do zadania zlecenia pracy
@@ -112,7 +112,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wybierz opcję **Gotowe**.
 
-    ![Wyświetlanie i dodawanie załączników do zadania zlecenia pracy](media/am-mobile-04.png "Wyświetlanie i dodawanie załączników do zadania zlecenia pracy")
+    ![Wyświetlanie i dodawanie załączników do zadania zlecenia pracy.](media/am-mobile-04.png "Wyświetlanie i dodawanie załączników do zadania zlecenia pracy")
 
 ## <a name="view-maintenance-checklist-on-a-work-order-job"></a>Przeglądanie listy kontrolnej konserwowanego składnika majątku w zadaniu zlecenia pracy
 
@@ -129,7 +129,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Kliknij przycisk wstecz (**<**), aby wrócić do poprzedniej strony.
 
-    ![Lista kontrolna konserwowanego składnika majątku i szczegóły wiersza](media/am-mobile-05.png "Lista kontrolna konserwowanego składnika majątku i szczegóły wiersza")
+    ![Lista kontrolna konserwowanego składnika majątku i szczegóły wiersza.](media/am-mobile-05.png "Lista kontrolna konserwowanego składnika majątku i szczegóły wiersza")
 
 ## <a name="view-and-update-asset-counters-on-a-work-order-job"></a>Wyświetlanie i aktualizowanie liczników składników majątku w zadaniu zlecenia pracy
 
@@ -146,7 +146,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wprowadź nową wartość licznika i wybierz **Gotowe**.
 
-    ![Wyświetlanie i aktualizowanie liczników składnika majątku](media/am-mobile-06.png "Wyświetlanie i aktualizowanie liczników składnika majątku")
+    ![Wyświetlanie i aktualizowanie liczników składnika majątku.](media/am-mobile-06.png "Wyświetlanie i aktualizowanie liczników składnika majątku")
 
 ## <a name="register-consumption-on-a-work-order-job"></a>Rejestrowanie zużycia w zadaniu zlecenia pracy
 
@@ -178,7 +178,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
     1. Umożliwia wprowadzenie **Kosztu własnego** dla rejestracji wydatków.
     1. Wybierz opcję **Gotowe**.
 
-    ![Aktualizowanie arkusza zlecenia pracy](media/am-mobile-07.png "Aktualizowanie arkusza zlecenia pracy")
+    ![Aktualizowanie arkusza zlecenia pracy.](media/am-mobile-07.png "Aktualizowanie arkusza zlecenia pracy")
 
 ## <a name="update-lifecycle-state-on-a-work-order"></a>Aktualizuj stan cyklu życia zlecenia pracy.
 
@@ -216,7 +216,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wybierz opcję **Gotowe**.
 
-    ![Tworzenie żądania konserwacji](media/am-mobile-09.png "Tworzenie żądania konserwacji")
+    ![Tworzenie żądania konserwacji.](media/am-mobile-09.png "Tworzenie żądania konserwacji")
 
 ## <a name="add-attachment-to-a-maintenance-request"></a>Dodaj załącznik do żądania konserwacji
 
@@ -236,7 +236,7 @@ Pobierz i zainstaluj aplikację komórkową Dynamics 365 for Unified Operations:
 
 1. Wybierz opcję **Gotowe**.
 
-    ![Dodawanie załącznika do żądania konserwacji](media/am-mobile-10.png "Dodawanie załącznika do żądania konserwacji")
+    ![Dodawanie załącznika do żądania konserwacji.](media/am-mobile-10.png "Dodawanie załącznika do żądania konserwacji")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

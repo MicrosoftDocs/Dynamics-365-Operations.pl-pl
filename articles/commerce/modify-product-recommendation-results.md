@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796977"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346675"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Dostosowanie wyników rekomendacji produktów na podstawie plików AI-ML
 
@@ -51,7 +51,7 @@ W zależności od prowadzonej działalności „bestsellery” mogą mieć róż
 
 Lista „bestsellery” zawiera jeden parametr, który można zmienić:
 
-![Przykładowy domyślny parametr listy bestsellerów](./media/examplebestsellingparameters.PNG)
+![Przykładowy domyślny parametr listy bestsellerów.](./media/examplebestsellingparameters.PNG)
 
 1. **Obejmuje sprzedaż z ostatnich X dni** - Transakcje sprzedaży, które miały miejsce w ciągu określonej liczby dni przed bieżącą datą, można wykorzystać do zamówienia produktów. Wartość domyślna powyżej sugeruje, że wszystkie zakupy produktu w ciągu ostatnich 30 dni zostałyby użyte w celu ustalenia położenia produktu na liście produktów bestsellerów. 
 
@@ -65,13 +65,13 @@ Lista „bestsellery” zawiera jeden parametr, który można zmienić:
 1.  Aby dodać produkty do tabeli, wybierz **Dodaj wiersz**. 
 1.  W kolumnie produkt Wyszukaj produkt według jego **nazwy** lub **numeru produktu**.
 
-    ![Przykład wyszukiwania produktu na liście nowych produktów](./media/examplenewlistconfiguration1.png)
+    ![Przykład wyszukiwania produktu na liście nowych produktów.](./media/examplenewlistconfiguration1.png)
 
 1.  W kolumnie Typ wiersza wybierz jedną z dwóch opcji:
     -   **Uwzględnij** — wymusza wymuszenie produktu z przodu listy
     -   **Wyklucz** — usuwa produkt z listy
     
-    ![Przykład uwzględniania lub wykluczania produktu z listy nowych produktów](./media/examplenewlistconfiguration2.png)
+    ![Przykład uwzględniania lub wykluczania produktu z listy nowych produktów.](./media/examplenewlistconfiguration2.png)
 
 1.  Zmiana **kolejności wyświetlania** zmieni kolejność, gdy produkty oznaczone jako **uwzględnione** zostaną wyświetlone na liście.
     - Jeśli dwa produkty mają taką samą wartość **kolejności wyświetlania**, ostateczna kolejność tych dwóch wyników może się różnić od biura zaplecza.
@@ -87,11 +87,11 @@ W kontekście list „Często kupowane razem” lub „Klientom podoba się rów
 Aby ręcznie dodać lub usunąć wyniki dla produktu początkowego, należy wykonać następujące czynności:
 1.  Wybierz **Produkt początkowy**. 
 1.  W kolumnie **produkt** wyszukaj produkt według jego **nazwy** lub **numeru produktu.**
-![Przykład wyszukiwania produktu na nowej liście produktów najczęściej kupowanych razem](./media/exampleFBTlistconfiguration1.png)
+![Przykład wyszukiwania produktu na nowej liście produktów najczęściej kupowanych razem.](./media/exampleFBTlistconfiguration1.png)
 1. W kolumnie **Typ wiersza** wybierz jedną z dwóch opcji:
     - **Uwzględnij** — wymusza wymuszenie produktu z przodu listy
     - **Wyklucz** — usuwa produkt z listy     
-![Przykład uwzględniania lub wyłączania produktu na liście produktów najczęściej kupowanych razem](./media/exampleFBTlistconfiguration2.png)
+![Przykład uwzględniania lub wyłączania produktu na liście produktów najczęściej kupowanych razem.](./media/exampleFBTlistconfiguration2.png)
 1.  Aby usunąć produkty z tabeli: zaznacz wiersz do usunięcia i wybierz opcję Usuń.
 
 

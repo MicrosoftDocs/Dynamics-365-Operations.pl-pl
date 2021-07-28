@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016162"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354961"
 ---
 # <a name="cost-and-date-control"></a>Kontrola kosztu i daty
 
@@ -58,7 +58,7 @@ Obliczenia wykonane dla składników majątku, lokalizacji czynności konserwacy
 
     Na poniższym rysunku pokazano przykład okna dialogowego **Formant kosztów składników majątku**.
 
-    ![Okno dialogowe Formant kosztów składników majątku](media/01-controlling-and-reporting.png)
+    ![Okno dialogowe Formant kosztów składników majątku.](media/01-controlling-and-reporting.png)
 
 10. Na stronie **Formant kosztów składników majątku** kliknij przyciski **Grupuj wg**, aby wyświetlić wymagany poziom szczegółowości obliczania. Wybrane przyciski grupy **Grupuj wg...** są wyróżnione. Aby uaktywnić lub dezaktywować przycisk, należy go kliknąć.
 
@@ -71,7 +71,7 @@ Na poniższym zrzucie ekranu pokazano przykład wyniku obliczania w oknie **Form
 - W polu **Otwarty koszt ustalony** są wyświetlane zobowiązania do zapłaty za towary, godziny i usługi, które zostały zamówione lub przyjęte, ale jeszcze nie zapłacone. 
 - Pole **Koszt rzeczywisty** przedstawia powiązane koszty po zaksięgowaniu wszystkich rejestracji zużycia.
 
-![Przykładowe wyniki obliczeń w oknie Formant kosztów składników majątku](media/02-controlling-and-reporting.png)
+![Przykładowe wyniki obliczeń w oknie Formant kosztów składników majątku.](media/02-controlling-and-reporting.png)
 
 Innym sposobem obliczenia kosztów jest wielokrotne wybranie składników majątku w **Wszystkie składniki majątku** lub **Aktywne składniki majątku**. Następnie kliknij przycisk **Kontrola kosztów** na karcie **Ogólne**. W oknie dialogowym **Formant kosztów składników majątku** wybrane składniki majątku są automatycznie umieszczane w polu **Składnik majątku** na karcie skróconej **Rekordy do uwzględnienia**. Kliknij **OK** i wyświetlona zostanie kalkulacja kosztów dla wybranych składników majątku. Tę samą procedurę można wykonać w odniesieniu do lokalizacji czynności konserwacyjnych we **Wszystkie lokalizacje czynności konserwacyjnych** lub **Aktywne lokalizacje czynności konserwacyjnych** lub przypadku zleceń pracy **Wszystkie zlecenia pracy** lub **Aktywne zlecenia pracy**.
 
@@ -99,7 +99,7 @@ Na poniższym zrzucie ekranu pokazano przykładowe wyniki obliczania w oknie **K
 - Pole **Średnie opóźnienie zakończenia** zawiera różnicę w dniach między planowaną datą końca zlecenia pracy w porównaniu z rzeczywistą datą zakończenia. Jeśli na przykład rzeczywista data zakończenia wypada na dwa dni przed zaplanowaną datą zakończenia, w tym polu zostanie wyświetlona wartość „3”.  
 - W polach **Wystąpienia** jest wyświetlana liczba odchyleń w odniesieniu do daty planowanej i rzeczywistej oraz planowana i rzeczywista data zakończenia zlecenia pracy.
 
-![Przykładowe wyniki obliczeń w oknie Kontrola dat zlecenia pracy](media/03-controlling-and-reporting.png)
+![Przykładowe wyniki obliczeń w oknie Kontrola dat zlecenia pracy.](media/03-controlling-and-reporting.png)
 
 
 

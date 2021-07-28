@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360575"
 ---
 # <a name="payroll-integration-api-introduction"></a>Wprowadzenie do API integracji płac
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058567"
 
 W tym dokumencie opisano interfejs API integracji Listy płac Dynamics 365 Human Resources. Interfejs API umożliwia uproszczone, końcowe integracje między Human Resources i partnerami systemów listy płac. Zintegrowane doświadczenie zaczyna się w dziale Human Resources od profilu pracownika, wynagrodzenia i odliczeń oraz informacji o składkach. Kiedy zatrudniasz pracownika i wprowadzasz wymagany profil i informacje o płacach do Human Resources, system płac pobiera te informacje do wykorzystania podczas przetwarzania listy płac. Wszelkie aktualizacje wprowadzone do pracownika lub informacje o wynagrodzeniach są również pobierane do wykorzystania w późniejszych okresach wypłaty.
 
-![Przepływ integracji płac](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Przepływ integracji płac.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Aby włączyć integrację, składnik Human Resources zawiera następujące składniki:
 
@@ -60,7 +60,7 @@ Aby uzyskać informacje dotyczące generowania tabel wirtualnych dla interfejsu 
 
 Poniższy diagram ilustruje relacje w ramach interfejsu API. Kilka typów ma klucze obce do innych, wcześniej istniejących jednostek w dziale Human Resources, które nie zostały tutaj zilustrowane. Ten dokument zawiera informacje o jednostkach, które są specyficzne dla scenariuszy integracji listy płac. Jednak istnieje wiele innych podmiotów w Dataverse Web API for Human Resources, które mogą być również istotne dla Twojej integracji. Niektóre z tych jednostek odwołują się do relacji klucza obcego lub właściwości nawigacji.
 
-![Model danych API integracji listy płac](media/hr-admin-payroll-api-data-model.png)
+[![Model danych API integracji listy płac.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Pracownik etatowy na liście płac i jednostki powiązane
 
@@ -68,7 +68,8 @@ Jednostki:
 
 - [Pracownik etatowy listy płac](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Adres pracownika listy płac](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Plan stałych wynagrodzeń listy płac](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Plan stałych wynagrodzeń listy płac](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Plan zmiennych wynagrodzeń listy płac](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Zadanie stanowiska listy płac](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Stanowisko listy płac](hr-admin-integration-payroll-api-payroll-position.md)
 

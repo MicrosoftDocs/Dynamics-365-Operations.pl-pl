@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837904"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346233"
 ---
 # <a name="register-consumption"></a>Rejestracja zużycia
 
@@ -54,7 +54,7 @@ W niektórych przypadkach istnieje możliwość dodawania lub usuwania wierszy p
 
 Poniższy zrzut ekranu przedstawia przykład rejestracji godzin i towarów w zleceniu produkcyjnym w **arkuszach zleceń roboczych.**
 
-![Rysunek 1](media/01-consumption.png)
+![Rysunek 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Dzielenie godzin na zleceniach roboczych z kilkoma zadaniami zlecenia produkcyjnego
@@ -73,13 +73,13 @@ Jeśli zlecenie produkcyjne zawiera kilka zadań zlecenia, można zarejestrować
 
 6. Umożliwia wstawienie liczby godzin pracy do podziału w polu **Godziny**.
 
-    ![Rysunek 2](media/02-consumption.png)
+    ![Rysunek 2.](media/02-consumption.png)
 
 7. Kliknij przycisk **OK**.
 
 *Przykład:* w poniższym zrzutie ekranu są wyświetlane wiersze arkusza dla zlecenia produkcyjnego zawierającego trzy zadania zlecenia roboczego. Pierwszy wiersz, zawierający trzy godziny pracy, został podzielony, a jedna godzina robocza jest rejestrowana w każdym zadaniu zlecenia pracy. Po utworzeniu trzech wierszy rejestracji godzin należy zdecydować, co zrobić z oryginalnym wierszem rejestracji godzinowej (pierwszy wiersz w przykładzie). Można ją zachować w stanie lub usunąć. 
 
-![Rysunek 3](media/03-consumption.png)
+![Rysunek 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Wymiary finansowe w rejestracjach zużycia
 

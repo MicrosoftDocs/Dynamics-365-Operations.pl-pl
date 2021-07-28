@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8d7f32c5d3d29be8d1d2742c4017c1719cbd47a8
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 798e38d7fea53a13d713734dd0521552974176ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897339"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347841"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odwołania do oryginalnych faktur w fakturach korygujących
 
@@ -51,7 +51,7 @@ Aby ustawić parametr sterujący tym, czy odwołania do oryginalnych faktur maj�
 1. Wybierz kolejno pozycje **Rozrachunki z odbiorcami** \> **Ustawienia** \> **Parametry modułu rozrachunków z odbiorcami**.
 2. Na karcie **Aktualizacje** na skróconej karcie **Faktura** ustaw opcję **Zastosuj układ faktur kredytowych w raportach faktur sprzedaży i projektów** na wartość **Tak**.
 
-![Konfiguruj Parametry modułu rozrachunków z odbiorcami](media/original-invoice-number-in-credit-note.jpg)
+![Konfiguruj Parametry modułu rozrachunków z odbiorcami.](media/original-invoice-number-in-credit-note.jpg)
 
 ## <a name="define-references-to-original-invoices"></a>Zdefiniuj odniesienia do oryginalnych faktur
 
@@ -65,7 +65,7 @@ Poniższe procedury służą do definiowania odniesień do oryginalnych faktur n
 4. W okienku akcji na karcie **Faktura** w grupie **Funkcje** wybierz **Księgowanie fakturowania po stronie kredytowej**.
 5. Wprowadź odwołanie do oryginalnej faktury i wybierz przyczynę korekty.
 
-![Definiowanie odwołania dla faktury elektronicznej](media/reference-original-invoice-FTI.jpg)
+![Definiowanie odwołania dla faktury elektronicznej.](media/reference-original-invoice-FTI.jpg)
 
 ### <a name="customer-credit-note"></a>Odbiorca faktury korygującej
 
@@ -74,7 +74,7 @@ Poniższe procedury służą do definiowania odniesień do oryginalnych faktur n
 3. W okienku akcji na karcie **Sprzedaj** w grupie **Nota kredytowa** wybierz **Nota kredytowa**.
 4. Wpisz powód korekty. Automatycznie zostanie utworzone odwołanie do oryginalnej faktury.
 
-![Definiowanie odwołania do zamówienia sprzedaży](media/reference-original-invoice-SO.jpg)
+![Definiowanie odwołania do zamówienia sprzedaży.](media/reference-original-invoice-SO.jpg)
 
 ### <a name="project-credit-note"></a>Projektowanie faktury korygującej
 
@@ -84,13 +84,13 @@ Poniższe procedury służą do definiowania odniesień do oryginalnych faktur n
 4. Wybierz **Księgowanie fakturowania po stronie kredytowej**.
 5. Wpisz powód korekty. Automatycznie zostanie utworzone odwołanie do oryginalnej faktury.
 
-![Definiowanie odwołania dla faktury do projektu](media/reference-original-invoice-project.jpg)
+![Definiowanie odwołania dla faktury do projektu.](media/reference-original-invoice-project.jpg)
 
 ## <a name="printing-credit-notes"></a>Drukowanie faktur korygujących
 
 Gdy drukujesz dowolny tekst, noty kredytowe klienta i projektu, będą one zawierać odniesienie do oryginalnej faktury i powód korekty.
 
-![Drukowanie faktury korygującej](media/credit-note-FTI.jpg)
+![Drukowanie faktury korygującej.](media/credit-note-FTI.jpg)
 
 > [!NOTE]
 > Upewnij się, że formaty dokumentów do druku są poprawnie skonfigurowane, przy założeniu, że zostaną wydrukowane odniesienia do oryginalnych faktur.

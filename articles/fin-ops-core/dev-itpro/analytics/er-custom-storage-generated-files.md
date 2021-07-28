@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bd979bf5369b6878caaee82fc9c6a40d363cc165
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c9dfad3615cfe4f9937f0dc30c4684cd14f420c1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894155"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348147"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Określanie niestandardowych lokalizacji przechowywania wygenerowanych dokumentów
 
@@ -41,7 +41,7 @@ Wszystkie zadania przedstawione w tym temacie można wykonać w kontekście firm
 
 Aby wygenerować dokumenty, dla których ma zostać dodana niestandardowa lokalizacja przechowywania, [zaimportuj](er-download-configurations-global-repo.md) konfigurację formatu ER **Przesunięcie środków trwałych do przodu** do bieżącej topologii.
 
-![Strona Repozytorium konfiguracji](./media/er-custom-storage-generated-files-import-format.png)
+![Strona Repozytorium konfiguracji.](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Uruchamianie raportu Przesunięcie środków trwałych do przodu
 
@@ -52,7 +52,7 @@ Aby wygenerować dokumenty, dla których ma zostać dodana niestandardowa lokali
 5. W polu **Mapowanie formatu** wybierz opcję **Przesunięcie środków trwałych do przodu**.
 6. Kliknij przycisk **OK**.
 
-![Okno dialogowe środowiska uruchomieniowego dla raportu Przesunięcie środków trwałych do przodu](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Okno dialogowe środowiska uruchomieniowego dla raportu Przesunięcie środków trwałych do przodu.](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 W programie Microsoft Excel przejrzyj dokument wychodzący, który został wygenerowany i jest dostępny do pobrania. To zachowanie jest [domyślnym zachowaniem](electronic-reporting-destinations.md#default-behavior) dla formatu ER, dla którego nie są skonfigurowane żadne [miejsca docelowe](electronic-reporting-destinations.md) i który działa w trybie interaktywnym.
 

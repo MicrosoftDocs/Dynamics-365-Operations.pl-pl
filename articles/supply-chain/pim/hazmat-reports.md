@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 07f103680cacc1273b2b28f6e4e905d6dabb006a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14de281927fa3e6410627839005c6b81a93d89bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820329"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347027"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Zapytania i raporty dotyczące materiałów niebezpiecznych
 
@@ -29,7 +29,7 @@ Wszystkie te raporty, z wyjątkiem raportu dot. **Towarów niebezpiecznych z wie
 
 Na poniższej ilustracji przedstawiono sekwencję działań, które mają miejsce, gdy system generuje raporty dotyczące materiałów niebezpiecznych.
 
-![Sekwencja działań dla raportów dot. materiałów niebezpiecznych](media/hazmat-report-sequence.png "Sekwencja działań dla raportów dot. materiałów niebezpiecznych")
+![Sekwencja działań dla raportów dot. materiałów niebezpiecznych.](media/hazmat-report-sequence.png "Sekwencja działań dla raportów dot. materiałów niebezpiecznych")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>Ustawianie raportów dot. materiałów niebezpiecznych
 

@@ -2,7 +2,7 @@
 title: Konfigurowanie parametrów rozwiązania Human Resources
 description: W tym temacie wyjaśniono, jak skonfigurować parametry specyficzne dla firmy w Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052416"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356543"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurowanie parametrów rozwiązania Human Resources
 
@@ -30,7 +30,7 @@ Niektóre parametry modułu Zasobów ludzkich są wspólne dla wielu firm, podcz
 
 Do ustawiania parametrów Zasobów ludzkich służą dwie strony. W przypadku parametrów współużytkowanych przez firmy, użyj strony **Udostępniane parametry zasobów ludzkich**. W przypadku parametrów specyficznych dla firmy (ustawienie dotyczy tylko jednej firmy), użyj strony **Parametry zasobów ludzkich**.
 
-![Przejdź do parametrów zasobów ludzkich](./media/hr-employee-self-service-human-resources-parameters.png)
+![Przejdź do parametrów zasobów ludzkich.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 Na stronie **parametrów zasobów ludzkich** ustawienia są podzielone na sześciu kartach:
 
@@ -51,14 +51,15 @@ Każda karta zawiera informacje dotyczące jednej firmy.
 
 Ustawienia wprowadzone na karcie **Ogólne** definiują wygląd informacji o nieobecności, urazach, chorobach i zatrudnianiu nowych pracowników. Ustawienia na tej karcie definiują także niektóre domyślne wpisy pojawiające się podczas pracy. W szczególności ta karta umożliwia:
 
-- Wybierz kolor, który ma być zastosowany do otwartych transakcji nieobecności
-- Umożliwia określenie arkusza stylów, który będzie używany dla raportów
-- Włącz integrację między kursami szkoleniowmi a rejestracją nieobecności
+- Wybierz kolor, który ma być zastosowany do otwartych transakcji nieobecności.
+- Umożliwia określenie arkusza stylów, który będzie używany dla raportów.
+- Włącz integrację między kursami szkoleniowymi a rejestracją nieobecności.
 - Umożliwia wybranie kodu nieobecności używanego do kontrolowania tej integracji.
 - Wskaż, jak długo mają utrzymywać się przypadki obrażeń i chorób.
 - Umożliwia określenie domyślnego numeru identyfikacyjnego wyświetlanego podczas zatrudniania nowego pracownika.
+- Określ datę używaną do obliczania lat pracy. 
 
-![Karta Ogólne](./media/hr-setup-parameters-general.png)
+![Karta Ogólne.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Rekrutacja
 
@@ -76,7 +77,7 @@ W obszarze Zasoby ludzkie można użyć karty **Wynagrodzenie**, aby ograniczyć
 
 Aby uzyskać więcej informacji o planach wynagrodzeń, zobacz [Omówienie planów wynagrodzeń](hr-compensation-overview.md).
 
-![Karta Wynagrodzenie](./media/hr-setup-parameters-compensation.png)
+![Karta Wynagrodzenie.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Sekwencje identyfikatorów
 
@@ -96,13 +97,13 @@ Aby uzyskać więcej informacji, zobacz temat [Omówienie sekwencji identyfikato
 > [!NOTE]
 > Liczba przepracowanych godzin nie może przekroczyć 1250, a staż pracy nie może przekroczyć 12 miesięcy. Te maksymalne wartości są zgodne z prawem federalnym w Stanach Zjednoczonych.
 
-![Karta Sekwencje numerów](./media/hr-setup-parameters-number-sequences.png)
+![Karta Sekwencje numerów.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 Na karcie FMLA są ustawiane wymagania dotyczące uprawnień FMLA i godziny uprawnień FMLA. Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów urlopu i nieobecności](hr-leave-and-absence-parameters.md).
 
-![Karta FMLA](./media/hr-setup-parameters-fmla.png)
+![Karta FMLA.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Samoobsługa pracownika etatowego
 
@@ -115,7 +116,7 @@ Ustawienia na karcie **Samoobsługa pracownika etatowego** mają wpływ na spos�
 
 Aby uzyskać więcej informacji dotyczących konfigurowania funkcji samoobsługi pracowników etatowych, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
 
-![Karta Samoobsługa pracownika etatowego](./media/hr-setup-parameters-employee-self-service.png)
+![Karta Samoobsługa pracownika etatowego.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Samoobsługa menedżera
 
@@ -129,13 +130,13 @@ Ustawienia na karcie **Samoobsługa menedżera** wpływają na to, co menedżero
 
 Aby uzyskać więcej informacji dotyczących konfigurowania funkcji samoobsługi menedżerów, zobacz [Omówienie samoobsługi dla pracownika etatowego i menedżera](hr-employee-manager-self-service-overview.md).
 
-![Karta Samoobsługa menedżera](./media/hr-setup-parameters-manager-self-service.png)
+![Karta Samoobsługa menedżera.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Zarządzanie świadczeniami
 
 Na karcie Zarządzanie świadczeniami możesz skonfigurować opcje poczty e-mail dotyczące zarządzania świadczeniami. Aby uzyskać więcej informacji na temat konfiguracji i użytkowania funkcji Zarządzanie świadczeniami, zobacz [Zarządzanie świadczeniami - omówienie](hr-benefits-management-overview.md).
 
-![Karta Zarządzanie świadczeniami](./media/hr-setup-parameters-benefits-management.png)
+![Karta Zarządzanie świadczeniami.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Urlopy i nieobecności
 
@@ -145,7 +146,7 @@ Aby uzyskać więcej informacji dotyczących konfigurowania i korzystania z Urlo
 
 Na karcie **Metody płatności** możesz wybrać metody płatności obsługiwane przez organizację. Aby uzyskać więcej informacji o konfiguracji planów wynagrodzeń, zobacz [Omówienie planów wynagrodzeń](hr-compensation-overview.md).
 
-![Karta Metody płatności](./media/hr-setup-parameters-payment-methods.png)
+![Karta Metody płatności.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

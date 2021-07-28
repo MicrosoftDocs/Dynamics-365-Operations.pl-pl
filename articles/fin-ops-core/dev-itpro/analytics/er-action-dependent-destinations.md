@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893585"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358676"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurowanie miejsc docelowych raportowania elektronicznego zależnych od akcji
 
@@ -69,11 +69,11 @@ Można na przykład użyć formatu ER **Faktura niezależna (Excel)** w celu wyd
 
 Na poniższej ilustracji pokazano, jak można używać tego sposobu konfigurowania miejsc docelowych ER jako zestawu pojedynczych rekordów docelowych, gdy każdy rekord jest konfigurowany jako indywidualna akcja użytkownika:
 
-![Strona miejsca docelowego raportowania elektronicznego, która ma zależne od akcji ustawienia miejsc docelowych dla formatu ER, gdy każdy rekord docelowy jest skonfigurowany dla pojedynczej akcji użytkownika](./media/er-destination-action-dependent-01.png)
+![Strona miejsca docelowego raportowania elektronicznego, która ma zależne od akcji ustawienia miejsc docelowych dla formatu ER, gdy każdy rekord docelowy jest skonfigurowany dla pojedynczej akcji użytkownika.](./media/er-destination-action-dependent-01.png)
 
 Na poniższej ilustracji pokazano, jak można używać alternatywnego sposobu konfigurowania miejsc docelowych ER jako zestawu pojedynczych rekordów docelowych, gdy każdy rekord jest konfigurowany jako indywidualne miejsce docelowe:
 
-![Strona miejsca docelowego raportowania elektronicznego, która ma zależne od akcji ustawienia miejsc docelowych dla formatu ER, gdy każdy rekord docelowy jest skonfigurowany dla pojedynczego miejsca docelowego](./media/er-destination-action-dependent-01a.png)
+![Strona miejsca docelowego raportowania elektronicznego, która ma zależne od akcji ustawienia miejsc docelowych dla formatu ER, gdy każdy rekord docelowy jest skonfigurowany dla pojedynczego miejsca docelowego.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Jeśli dla uruchomionego formatu ER zostanie podany kod akcji, ale dla tego kodu akcji nie skonfigurowano miejsc docelowych, stosowane jest [domyślne](electronic-reporting-destinations.md#default-behavior) zachowania dla miejsca docelowego.
@@ -84,7 +84,7 @@ W przypadku uruchomienia formatu ER przez użytkownika mającego odpowiednie [up
 
 Na poniższej ilustracji przedstawiono przykład okna dialogowego **Miejsca docelowe formatu raportowania elektronicznego**, które jest wyświetlane po [zaksięgowaniu](../../../finance/accounts-receivable/create-free-text-invoice-new.md) faktury niezależnej i uruchomieniu formatu ER **Faktura niezależna (Excel)** w celu wygenerowania tego dokumentu, jeśli dla tego formatu aprowizowano akcję **Drukarka** i skonfigurowano miejsca docelowe ER, tak jak pokazano wcześniej w tym temacie.
 
-![Okno dialogowe z opcją zmiany początkowych skonfigurowanych miejsc docelowych ER dla uruchomionego formatu ER](./media/er-destination-action-dependent-02.gif)
+![Okno dialogowe z opcją zmiany początkowych skonfigurowanych miejsc docelowych ER dla uruchomionego formatu ER.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > W przypadku skonfigurowania miejsc docelowych ER dla kilku składników uruchomionego formatu ER, opcja będzie dostępna oddzielnie dla każdego skonfigurowanego składnika formatu ER.
@@ -103,7 +103,7 @@ Aby sprawdzić podany kod akcji użytkownika, należy wykonać następujące kro
 6. Na stronie **Dzienniki debugowania konfiguracji** odfiltruj dzienniki uruchamiania ER, aby znaleźć dziennik uruchomienia formatu ER.
 7. Przejrzyj wpisy dziennika, które muszą zawierać rekord prezentujący podany kod akcji użytkownika, jeśli na potrzeby uruchomienia formatu ER wybrano dowolną akcję.
 
-    ![Raportowanie elektroniczne uruchamia stronę dzienników zawierającą informacje o kodzie akcji użytkownika podanym dla odfiltrowanego uruchomienia formatu ER](./media/er-destination-action-dependent-03.png)
+    ![Raportowanie elektroniczne uruchamia stronę dzienników zawierającą informacje o kodzie akcji użytkownika podanym dla odfiltrowanego uruchomienia formatu ER.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Lista dokumentów biznesowych (grupa czynności 1)</a>
 

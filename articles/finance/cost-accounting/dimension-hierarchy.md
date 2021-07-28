@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e7cadc20cc8fd52ecc8c4ab5c2f6c9dc62c2f68b
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b6feb5319290cc53d82feb28ffa8c049bfadd29b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897583"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355090"
 ---
 # <a name="dimension-hierarchy"></a>Hierarchia wymiarów
 
@@ -39,7 +39,7 @@ Hierarchie wymiarów są używane w różnych miejscach w rachunku kosztów. Hie
 
 Oto przykład hierarchii wymiarów.
 
-![Przykład hierarchii wymiarów](./media/dimension-hierarchy.png)
+![Przykład hierarchii wymiarów.](./media/dimension-hierarchy.png)
 
 Hierarchię wymiarów można utworzyć dla następujących typów wymiarów:
 
@@ -80,7 +80,7 @@ Hierarchia wymiarów jest tworzona jako struktura drzewa z relacjami węzłów i
 
 Mała firma ma następującą strukturę organizacyjną, gdzie Finanse i Kadry to działy w pionie Administracja, a Montaż i Pakowanie to działy w pionie Produkcja.
 
-![Przykład struktury organizacyjnej](./media/dimension-hierarchy-org.png)
+![Przykład struktury organizacyjnej.](./media/dimension-hierarchy-org.png)
 
 Wymiar obiektu kosztów reprezentuje wszystkie centra kosztów w organizacji.
 

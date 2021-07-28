@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800574"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346015"
 ---
 # <a name="set-up-organization-hierarchies"></a>Konfigurowanie hierarchii organizacyjnych
 
@@ -54,7 +54,7 @@ Aby utworzyć hierarchię organizacyjną, należy wykonać poniższe kroki.
 
 Poniższy rysunek przedstawia przykładową hierarchię organizacyjną utworzoną dla fikcyjnego zbioru sklepów „Adventure Works”.
 
-![Przykład hierarchii organizacyjnej](media/organizational-hierarchies.png)
+![Przykład hierarchii organizacyjnej.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Dodawanie organizacji do hierarchii
 
@@ -67,7 +67,7 @@ Aby dodać organizację do hierarchii, wykonaj następujące kroki.
 
 Na poniższej karcie przedstawiono firmę dodaną w katalogu głównym hierarchii z czterema centrami kosztów dodanymi do kanałów „biurowych”, „gniazd”, „online” i „biura obsługi”. Do każdego z nich można dodać różne gniazda sieci sprzedaży, biura obsługi i kanały online.
 
-![Przykład projektanta hierarchii](media/hierarchy-designer.png)
+![Przykład projektanta hierarchii.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

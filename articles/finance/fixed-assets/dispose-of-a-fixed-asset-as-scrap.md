@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 413847d350ca6b2bdd6153a598ea5b3f34a33818
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e465594968ac860a9cb8f6f5d679084e5594457
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826282"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355616"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Likwidacja środków trwałych uznanych za odpadki
 
@@ -43,7 +43,7 @@ W tym temacie opisano proces eliminowania transakcji dla środka trwałego, któ
 Przed usunięciem środka trwałego jako odpadki należy utworzyć konta księgowe skojarzone z wartością nabycia środka trwałego, amortyzację dla bieżącego roku, amortyzację w latach ubiegłych oraz NBV środka trwałego. Typy transakcji środków trwałych są wyświetlane na stronie **Profile księgowania środków trwałych**. Przejdź do **Środki twałe \> Ustawienia \> Profile księgowania środków trwałych**, a następnie w skróconej karcie **Likwidacja** wybierz opcję **Odpadki** w polu powyżej siatki. Poniższa ilustracja przedstawia listę typów transakcji środków trwałych na stronie **Profile księgowania środków trwałych**.
 
 
-[![Likwidacja składnika majątki jako odpadków, rys. 1](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Likwidacja składnika majątki jako odpadków, rys. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 W poniższym przykładzie środek trwały został nabyty 1 stycznia 2018 r. i zostanie uznany za odpadki w dniu 31 marca 2019 r.
 
@@ -58,27 +58,27 @@ Wartość księgowa netto = Cena nabycia - Amortyzacja
 
 W tym przykładzie środek trwały został nabyty i został zamortyzowany w ciągu 15 miesięcy od stycznia 2018 r. do marca 2019 r. Dlatego NBV składnika majatku jest 9 000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Przykład amortyzacji środków trwałych](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Przykład amortyzacji środków trwałych.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 Aby utworzyć arkusz likwidacji, należy przejść do **Środki trwałe \> Wpisy w arkuszu \> Arkusz środków trwałych**, a następnie w okienku akcji wybrać **Wiersze**. Wybierz **Likwidacja — odpadki**, a następnie wybierz identyfikator środka trwałego. Aby w pełni usunąć środek trwały, nie wprowadzaj wartości w polach **Debet** lub **Kredyt**.
 
-[![Arkusz środków trwałych](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Arkusz środków trwałych.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 Transakcja likwidacji środków trwałych zmienia wartości pól dla księgi środków trwałych w następujący sposób:
 
 - W sekcji **Saldo** pole **Stan** jest aktualizowane na **Uznany za odpadki**.
 - W sekcji **Rozchód** w polu **Data likwidacji** jest ustawiana data uznania środka trwałego za odpadki.
 
-[![Szczegóły arkusza środków trwałych](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Szczegóły arkusza środków trwałych.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 Na poniższej ilustracji przedstawiono saldo środka trwałego.
 
-[![Saldo środka trwałego](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Saldo środka trwałego.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 Poniższa ilustracja przedstawia zaksięgowany załącznik.
 
-[![Wartość księgowa netto](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+[![Wartość księgowa netto.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

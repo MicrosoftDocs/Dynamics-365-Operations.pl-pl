@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022714"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353067"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Wielokanałowe zaawansowane opłaty automatyczne
 
@@ -43,7 +43,7 @@ Dzięki funkcji zaawansowanych opłat automatycznych użytkownicy POS mogą korz
 
 Na stronie **Sprzedaż detaliczna i komercyjna \> Ustawienia Headquarters \> Parametry \> Parametry sieci sprzedaży komercyjnej** przejdź na kartę **Zamówienia odbiorcy**. Na karcie skróconej **Opłaty** ustaw opcję **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** na **Tak**.
 
-![Parametr zaawansowanych opłat automatycznych](media/advancedchargesparameter.png)
+![Parametr zaawansowanych opłat automatycznych.](media/advancedchargesparameter.png)
 
 Po włączeniu zaawansowanych opłat automatycznych użytkownicy nie są już monitowani o ręczne wprowadzanie opłat transportowych na terminalu POS podczas tworzenia zamówienia odbiorcy „wyślij wszystko” lub „wyślij wybrane”. Opłaty za zamówienie POS są systemowo obliczane i dodawane do transakcji POS (w przypadku znalezienia odpowiedniej tabeli opłat automatycznych pasującej do kryteriów tworzonego zamówienia). Użytkownik może również dodawać i obsługiwać opłaty na poziomie nagłówka lub wiersza ręcznie za pośrednictwem nowo dodanych operacji POS, które mogą być dodane do układów ekranu POS.
 
@@ -86,7 +86,7 @@ Konfigurowanie dwóch różnych automatycznych opłat na poziomie nagłówka. Sk
 
 Dla opłaty za dostawę lądową w sekcji wierszy na stronie **Opłaty automatyczne** zdefiniuj opłatę $10.00. , która zostanie zastosowana do zleceń o wartości od $0,01 do $100. Utwórz kolejny wiersz opłaty dla zamówień o wartości powyżej $100.01, dla których nie będą naliczane żaden opłaty.
 
-![Przykład dwóch tabel opłat automatycznych](media/headerchargesexample.png)
+![Przykład dwóch tabel opłat automatycznych.](media/headerchargesexample.png)
 
 Dla opłaty za dostawę lotniczą w sekcji wierszy na stronie opłat automatycznych zdefiniuj opłatę $20.00, która zostanie zastosowana do wszystkich zleceń (o wartości od $0,01 to $9 999 999).
 
@@ -116,7 +116,7 @@ Wybierz kolejno opcje **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty
 
 W menu rozwijanym **Poziom** wybierz wartość **Wiersz** i utwórz nowy rekord automatycznej opłaty dodatkowej dla wszystkich odbiorców i dla konkretnego produktu lub grupy produktów, w których będzie naliczana opłata konfiguracyjna.
 
-![Przykład tabeli automatycznego naliczania opłat na poziomie wiersza](media/linechargesexample.png)
+![Przykład tabeli automatycznego naliczania opłat na poziomie wiersza.](media/linechargesexample.png)
 
 Wyślij opłaty do bazy danych kanału/Commerce Scale Unit, aby można było używać ich w POS za pomocą zadania **Harmonogram dystrybucji 1040**.
 
@@ -136,7 +136,7 @@ Sprzedawca robi wyjątek od typowych procesów, oferując specjalną dostawę do
 
 Upewnij się, kod opłat, który będzie używany w tym scenariuszu, został poprawnie skonfigurowany w **Rozrachunki z odbiorcami \> Ustawienia opłat \> Opłaty**, aby zdefiniować odpowiedni kod opłat dla tego scenariusza.
 
-![Przykład opłat](media/chargesexample.png)
+![Przykład opłat.](media/chargesexample.png)
 
 Jeśli opłata powinna być traktowana jako opłata związana z „wysyłką” do celów związanych rabatami wysyłkowymi lub promocjami, ustaw **Opłatę wysyłkową** w kodzie opłaty na **Tak**. Jeśli ta opłata jest również dozwolona do systemowego zwrotu podczas przetwarzania transakcji zwrotu w aplikacji POL, ustaw **Zwrot** na **Tak**. Flaga **Zwrot** ma zastosowanie tylko wtedy, gdy parametr **Użyj zaawansowanego automatycznego naliczania opłat dodatkowych** ma wartość **Tak**.
 

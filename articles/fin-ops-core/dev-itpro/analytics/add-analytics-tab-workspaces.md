@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754605"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354452"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
 
@@ -54,11 +54,11 @@ Wykonaj poniższe kroki, aby dodać plik .pbix jako artefakt projektu programu V
 3. W oknie dialogowym **Dodaj nowy element** w obszarze **Artefakty operacji** zaznacz szablon **Zasób**.
 4. Wprowadź nazwę, która będzie służyć to odwoływania się do raportu w metadanych języka X++, a następnie kliknij przycisk **Dodaj**.
 
-    ![Okno dialogowe Dodaj nowy element](media/analytical-workspace-add.png)
+    ![Okno dialogowe Dodaj nowy element.](media/analytical-workspace-add.png)
 
 5. Znajdź plik .pbix zawierający definicję raportu analitycznego, a następnie kliknij przycisk **Otwórz**.
 
-    ![Okno dialogowe Wybierz plik zasobów](media/analytical-workspace-select-resource.png)
+    ![Okno dialogowe Wybierz plik zasobów.](media/analytical-workspace-select-resource.png)
 
 Teraz gdy masz dodany plik .pbix jako zasób usługi Dynamics 365, można osadzać raporty w obszarach roboczych i dodawać bezpośrednie łącza do nich przy użyciu elementów menu.
 
@@ -67,7 +67,7 @@ W tym przykładzie rozszerzymy obszar roboczy **Zarządzanie rezerwacjami** w mo
 
 Na poniższej ilustracji widać, jak formularz **FMClerkWorkspace** wygląda w projektancie w programie Microsoft Visual Studio.
 
-![Formularz FMClerkWorkspace przed zmianami](media/analytical-workspace-definition-before.png)
+![Formularz FMClerkWorkspace przed zmianami.](media/analytical-workspace-definition-before.png)
 
 Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru roboczego **Zarządzanie rezerwacjami**.
 
@@ -92,7 +92,7 @@ Wykonaj następujące kroki w celu rozszerzenia definicji formularza dla obszaru
 
 Na poniższej ilustracji widać, jak projekt wygląda po zastosowaniu tych zmian.
 
-![Formularz FMClerkWorkspace po zmianach](media/analytical-workspace-definition-after.png)
+![Formularz FMClerkWorkspace po zmianach.](media/analytical-workspace-definition-after.png)
 
 Teraz gdy masz dodane formanty formularza, które będą używany do osadzania raportu w obszarze roboczym, należy zdefiniować rozmiar formantu nadrzędnego, aby zmieścił układ. Domyślnie w raporcie będą widoczne strony **Okienko filtrów** i **Karta**. Można jednak zmienić widoczność tych formantów zgodnie z potrzebami docelowego odbiorcy raportu.
 
@@ -142,7 +142,7 @@ Wykonaj następujące kroki, aby dodać logikę biznesową, która inicjuje form
 
 Zadanie dodawania logiki biznesowej inicjującej formant podglądu osadzonego raportu zostało zakończone. Na poniższej ilustracji widać, jak obszar roboczy wygląda po zastosowaniu tych zmian.
 
-![Raport osadzony w obszarze roboczym](media/analytical-workspace-final.png)
+![Raport osadzony w obszarze roboczym.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Korzystając z kart obszaru roboczego pod tytułem strony, można przejść do istniejącego widoku operacyjnego.

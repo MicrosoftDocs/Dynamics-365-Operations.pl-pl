@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054915"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346281"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optymalizowanie zapytań tabeli wirtualnej usługi Dataverse
 
@@ -50,13 +50,13 @@ Przykład, w którym można zobaczyć ten wpływ jest w kwerendach dotyczących 
 - **Limit czasu kwerendy**: Zapytanie może przekroczyć limit czasu i zwrócić następujący błąd: „Uzyskano token w celu wywołania Finance and Operations, ale Finance and Operations zwrócił błąd typu InternalServerError”.
 - **Nieoczekiwany błąd**: Zapytanie może zwrócić błąd typu 400 z następującym komunikatem: „Wystąpił nieoczekiwany błąd”.
 
-  ![Typ błędu 400 w HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Typ błędu 400 w HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Ograniczenie wydajności**: Zapytanie może nadużywać zasobów serwera i podlegać ograniczeniom. W tym przypadku kwerenda zwraca następujący błąd: „Uzyskano token w celu wywołania Finance and Operations, ale Finance and Operations zwrócił błąd typu 429”. Aby uzyskać więcej informacji dotyczących ograniczania wydajności w Human Resources, zobacz [Ograniczenie wydajności — często zadawane pytania](./hr-admin-integration-throttling-faq.md).
 
-  ![Typ błędu 429 w HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Typ błędu 429 w HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>Rozdzielczość
+## <a name="resolution"></a>Rozwiązanie
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>Ograniczenie liczby kolumn w kwerendzie danych
 
@@ -96,7 +96,7 @@ Jeśli napotkasz jakiekolwiek z wyżej wymienionych oznak niskiej wydajności po
 2. W oknie **Pobierz dane** wprowadź w polu wyszukiwania **Common Data Service** i wybierz łącznik **Common Data Service**, a następnie wybierz **Połącz**.
 3. W polu **Adres URL serwera** w oknie Common Data Service wprowadź adres URI organizacji w swoim środowisku Dataverse i wybierz przycisk **OK**.
   
-   ![Wprowadź identyfikator URI dla swojego środowiska Dataverse](./media/PowerBIDataverseURLSetup.png)
+   ![Wprowadź identyfikator URI dla swojego środowiska Dataverse.](./media/PowerBIDataverseURLSetup.png)
   
 4. W oknie Nawiguj po rozwinięciu węzła **Jednostki**.
 5. W polu wyszukiwania wprowadź **mshr_hcmworkerbaseentity** i wybierz jednostkę.
@@ -113,7 +113,7 @@ Jeśli napotkasz jakiekolwiek z wyżej wymienionych oznak niskiej wydajności po
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Zaktualizuj zapytanie w Edytorze zaawansowanym dla Edytora Power Query](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Zaktualizuj zapytanie w Edytorze zaawansowanym dla Edytora Power Query.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Wybierz opcję **Gotowe**.
 
@@ -138,7 +138,7 @@ Jeśli na przykład jedno z pól danych zawartych na stronie aplikacji odwołuje
 
 Za pomocą [monitora Power Apps](/powerapps/maker/monitor-overview) można upewnić się, że w kwerendzie są uwzględniane tylko kolumny potrzebne do uzyskania danych dotyczących aplikacji Power App. Możesz wyświetlić adres URL utworzony dla operacji getRows, aby upewnić się, że kolumny wybrane dla Twojej aplikacji będą optymalne do pobierania danych.
 
-![Użyj monitora Power Apps do analizy operacji getData](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
+![Użyj monitora Power Apps do analizy operacji getData.](./media/HcmWorkerBaseEntityPowerAppsMonitor.png)
 
 ### <a name="filtering-the-data-query"></a>Filtrowanie kwerendy danych
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838233"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358057"
 ---
 # <a name="quality-check"></a>Kontrola jakości
 
@@ -310,7 +310,7 @@ Po utworzeniu zamówienia zakupu można go odebrać za pomocą elementu menu **W
 
     Strona **Kontrola jakości**, która zostanie wyświetlona, nie zawiera pól wpisów. Ma tylko przycisk potwierdzenia (znacznik wyboru) u dołu i przycisk Menu (**≡**) u góry. (Przycisk Menu jest czasami nazywany przyciskiem hamburgera lub hamburgerem). Aby przyspieszyć proces kontroli jakości, gdy paleta przejdzie kontrolę jakości, użytkownik po prostu potwierdza stronę **Kontrolę jakości**.
 
-    ![Strona kontroli jakości](media/quality-check.png "Strona kontroli jakości")
+    ![Strona kontroli jakości.](media/quality-check.png "Strona kontroli jakości")
 
 1. Wybierz przycisk potwierdzenia, aby przejść kontrolę jakości dla palety 1 z wiersza 1.
 

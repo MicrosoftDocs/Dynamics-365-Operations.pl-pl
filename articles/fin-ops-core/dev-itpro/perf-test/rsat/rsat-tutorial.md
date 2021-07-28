@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: a194e14c76827650e6752f331081ebe0c2130a13
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: d932a0c10df72dbadcc65d7ef78eb8ad05645bd5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866163"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357525"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Samouczek narzędzia Regression Suite Automation Tool
 
@@ -67,11 +67,11 @@ Narzędzia RSAT umożliwiają korzystanie z tego samego zapisu zadań w wielu pr
 
 Za pomocą tej funkcji można sprawdzić, czy akcja wystąpiła. Na przykład podczas tworzenia zlecenia produkcyjnego, szacowanego, a następnie rozpoczętego, aplikacja wyświetla komunikat „produkcja – rozpoczęcie” informujący o rozpoczęciu zlecenia produkcyjnego.
 
-![Produkcja — Powiadomienie o rozpoczęciu](./media/use_rsa_tool_05.png)
+![Produkcja — Powiadomienie o rozpoczęciu.](./media/use_rsa_tool_05.png)
 
 Można sprawdzić poprawność tej wiadomości za pośrednictwem narzędzia RSAT, wprowadzając tekst **Weryfikacja komunikatu** na karcie pliku parametrów programu Excel w celu odpowiedniego nagrania.
 
-![Karta weryfikacji komunikatu](./media/use_rsa_tool_06.png)
+![Karta weryfikacji komunikatu.](./media/use_rsa_tool_06.png)
 
 Po uruchomieniu przypadku testowego komunikat w pliku parametrów programu Excel jest porównywany z komunikatem wyświetlanym. Jeśli wiadomości nie pasują do siebie, przypadek testowy nie powiedzie się.
 
@@ -104,11 +104,11 @@ Po uruchomieniu przypadku testowego narzędzia RSAT generują migawki (obrazy) k
 
 Na poniższej ilustracji przedstawiono proces dla tego scenariusza.
 
-![Proces dla scenariusza pokazu](./media/use_rsa_tool_14.png)
+![Proces dla scenariusza pokazu.](./media/use_rsa_tool_14.png)
 
 Na poniższej ilustracji przedstawiono hierarchię procesów biznesowych dla tego scenariusza w narzędziu do modelowania procesów biznesowych usługi LCS.
 
-![Procesy biznesowe dla scenariusza pokazu](./media/use_rsa_tool_15.png)
+![Procesy biznesowe dla scenariusza pokazu.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Strategia — nauka najważniejszych
 

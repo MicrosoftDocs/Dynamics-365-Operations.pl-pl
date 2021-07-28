@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937019"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352695"
 ---
 # <a name="clienteling-overview"></a>Omówienie obsługi relacji z klientami
 
@@ -68,7 +70,7 @@ Aby włączyć funkcję relacji z klientami w środowisku, należy wykonać nast
 
 1. W obszarze roboczym **Zarządzanie funkcjami** Przefiltruj funkcje modułu **handel detaliczny i commerce**.
 
-    ![Relacja z klientami na liście funkcji modułu Commerce](./media/Enable_clienteling.png "Relacja z klientami na liście funkcji modułu handel detaliczny i moduł Commerce")
+    ![Relacja z klientami na liście funkcji modułu Commerce.](./media/Enable_clienteling.png "Relacja z klientami na liście funkcji modułu handel detaliczny i moduł Commerce")
 
 2. Włącz funkcję **Relacja z klientami**, zaznaczając opcję **Włącz teraz**.
 3. Na stronie **Parametry Commerce** na karcie **sekwencja numerów** wybierz wiersz **identyfikatora księgi klienta**. W polu **kod sekwencji numerów** wybierz kod każdej sekwencji numerów. System użyje tej sekwencji numerów do przypisania identyfikatora do ksiąg klientów.
@@ -83,7 +85,7 @@ Aby włączyć funkcję relacji z klientami w środowisku, należy wykonać nast
 
 6. Na stronie **parametry Commerce** na karcie **Relacje z klientem**, w polu **Grupa atrybutów księgi klienta**, wybierz utworzoną właśnie grupę atrybutów.
 
-    ![Wybrana grupa atrybutów księgi](./media/Client%20book%20attributes.png "Wybrana grupa atrybutów księgi")
+    ![Wybrana grupa atrybutów księgi.](./media/Client%20book%20attributes.png "Wybrana grupa atrybutów księgi")
 
 7. Aby przechwytywać działania występujące w punkcie sprzedaży, należy zdefiniować typy działań na stronie **typy działań** (**Retail i Commerce \> Klienci \> Typy działań**).
 
@@ -95,7 +97,7 @@ Aby włączyć funkcję relacji z klientami w środowisku, należy wykonać nast
 
 Po zakończeniu tej procedury, pracownicy handlowi mogą otworzyć stronę ze szczegółowymi informacjami o kliencie w punkcie sprzedaży i dodawać klientów do swojej księgi klientów, przeglądać i rejestrować działania i notatki dla klientów oraz kierować klientów za pomocą atrybutów klientów i klientów w celu filtrowania książka klienta. Na poniższe ilustracji pokazano przykład księgi klienta.
 
-![Przykład książki klienta](./media/client_book.png "Przykład książki klienta")
+![Przykład książki klienta.](./media/client_book.png "Przykład książki klienta")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Włączanie integracji Customer Insights z Commerce
 

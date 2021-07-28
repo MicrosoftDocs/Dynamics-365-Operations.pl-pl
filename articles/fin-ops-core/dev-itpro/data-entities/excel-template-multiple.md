@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352919"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Szablony danych z wieloma arkuszami
 
@@ -32,13 +32,13 @@ Przeanalizujmy przykład, w którym występuje jeden plik programu Excel z arkus
 
 Jeżeli dodasz drugą jednostkę **Magazyny** bez opuszczania formularza **Dodaj plik**, wyszukiwanie arkusza umożliwi wybranie arkusza **Magazyny** bez konieczności ponownego przekazywania pliku. Jedynym powodem przekazania nowego pliku byłby fakt, że dane z arkusza **Magazyny** znajdują się w innym pliku.
 
-![Wiele arkuszy](./media/AddFileMultipleWorkSheets.png)
+![Wiele arkuszy.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Naprawianie mapowania arkusza w jednostce
 
 Mapowanie arkusza w jednostce danych w zadaniu importowania można naprawić w siatce. Kolumna **Arkusz** w siatce pokazuje arkusze z pliku, który został zmapowany. Można wybrać inny arkusz z menu rozwijanego. Jeśli wybrany arkusz jest już zmapowany do jednostki w projekcie danych, system wyświetli monit o potwierdzenie zmiany. Zalecamy naprawę mapowań w siatce.
 
-![Aktualizacja mapowania arkusza](./media/UpdateMappings.png)
+![Aktualizacja mapowania arkusza.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Ponowne mapowanie do nowego pliku
 

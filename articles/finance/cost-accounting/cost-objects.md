@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 20ae6295389fa3cbaa7c90844d2a90f1e38387c4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5d91fc52b184fda73fcf36175598aa514945db48
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818786"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355138"
 ---
 # <a name="cost-object-dimensions"></a>Wymiary obiektów kosztów
 
@@ -34,7 +34,7 @@ Obiektem kosztów może być dowolny typu obiektu, który chcesz oszacować, prz
 ## <a name="cost-object-dimensions-and-cost-object-dimension-members"></a>Wymiary obiektów kosztów i elementy członkowskie wymiarów obiektów kosztów
 Obiekty kosztów są nazywane *wymiarami obiektów kosztów*. Po ustaleniu, do której jednostki powinien się odnosić wymiar obiektów kosztów, należy określić wartości poszczególnych wymiarów lub zaimportować je do modułu Rachunek kosztów z innych systemów źródłowych. Te wartości poszczególnych wymiarów są nazywane *elementami członkowskimi wymiarów obiektów kosztów*. Na przykład jako wymiaru obiektów kosztów chcesz użyć wymiaru finansowego o nazwie Centrum kosztu. Aby zobaczyć, jak koszty przepływają do poszczególnych centrów kosztów, należy zaimportować elementy członkowskie wymiaru obiektów kosztów. W tym przypadku elementy członkowskie wymiaru obiektów kosztów są rzeczywistymi centrami kosztów, takimi jak Sprzedaż, Produkcja, Administracja i Lokalizacje geograficzne. Poniższy zrzut ekranu przedstawia przykład centrów kosztów jako wymiaru obiektów kosztów, gdzie faktyczne centra kosztów są elementami członkowskimi wymiaru obiektów kosztów. 
 
-[![Zrzut ekranu przedstawiający centra kosztów jako wymiar obiektu kosztów](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
+[![Zrzut ekranu przedstawiający centra kosztów jako wymiar obiektu kosztów.](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 
 ## <a name="import-cost-object-dimension-members-through-data-connectors"></a>Importowanie elementów członkowskich wymiarów obiektów kosztów za pośrednictwem łączników danych
 Aby ułatwić sobie importowania elementów członkowskich wymiarów obiektów kosztów, można za pomocą łączników danych pobierać wartości z jednostek, które mają zostać użyte jako wymiary obiektów kosztów. Można używać łączników danych wbudowanych w systemie lub łączników niestandardowych, utworzonych przez siebie.

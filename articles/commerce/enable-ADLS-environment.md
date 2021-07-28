@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 61f96dae0643e3383afd91864e4c145f3b5c04c8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9ac440362379475b05c6a37019c25e3a96be3739
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792614"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349503"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Włączanie Azure Data Lake Storage w środowisku Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Aby uzyskać bardziej szczegółowe omówienie kroków wymaganych do włączenia
 
 Poniższy obraz przedstawia przykład konfiguracji Azure Data Lake Storage.
 
-![Przykładowa konfiguracja Azure Data Lake Storage](./media/exampleADLSConfig1.png)
+![Przykładowa konfiguracja Azure Data Lake Storage.](./media/exampleADLSConfig1.png)
 
 ### <a name="test-the-azure-data-lake-storage-connection"></a>Przetestuj połączenie Azure Data Lake Storage
 
@@ -79,7 +79,7 @@ Aby włączyć automatyczne odświeżanie magazynu jednostek, wykonaj następuj�
 
 Poniższy obraz przedstawia przykład magazynu jednostki z włączonym automatycznym odświeżaniem.
 
-![Przykład magazynu jednostki z włączonym automatycznym odświeżaniem](./media/exampleADLSConfig2.png)
+![Przykład magazynu jednostki z włączonym automatycznym odświeżaniem..](./media/exampleADLSConfig2.png)
 
 Azure Data Lake Storage jest teraz skonfigurowany dla tego środowiska. 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ace62319bbfa38bcf4be7157882dd0c8989e25bc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 530cb77ccbca1b6946b5a96cee4e6226ed3467e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361265"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Udostępnianie konfiguracji Raportowania elektronicznego (ER) w repozytorium globalnym usług Microsoft Regulatory Configuration Services (RCS)organizacjom zewnętrznym
 
@@ -47,7 +47,7 @@ Wykonaj poniższe kroki, aby sprawdzić, czy konfiguracja, którą chcesz udost�
 
 1. W obszarze roboczym **Raportowanie elektroniczne** wybierz pozycję **Repozytoria** dla dostawcy konfiguracji.
 
-    ![Dostawcy konfiguracji](media/1_RCS_Repo_for_config_provider.JPG)
+    ![Dostawcy konfiguracji.](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Wybierz pozycję **Repozytorium globalne** \> **Otwórz**.
 3. Wyszukaj konfigurację do udostępnienia. Możesz użyć pola filtru, aby zawęzić wyszukiwanie. Jeśli nie możesz znaleźć konfiguracji w repozytorium globalnym, postępuj zgodnie z instrukcjami w temacie [Tworzenie i przekazywanie nowej wersji konfiguracji Raportowania elektronicznego (ER)](rcs-global-repo-upload.md).
@@ -61,11 +61,11 @@ Po utworzeniu konfiguracji w ramach dostawcy konfiguracji można udostępnić j�
 3. Wybierz konfigurację do udostępnienia.
 4. Na skróconej karcie **Udostępnione** wybierz pozycję **Organizacje**.
 
-    ![Skrócona karta Udostępnione](media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Skrócona karta Udostępnione.](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. W oknie dialogowym wprowadź nazwę domeny dla organizacji zewnętrznej, a następnie kliknij przycisk **OK**.
 
-    ![Okno dialogowe udostępniania wersji konfiguracji organizacji zewnętrznej](media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Okno dialogowe udostępniania wersji konfiguracji organizacji zewnętrznej.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfiguracja jest udostępniana organizacji zewnętrznej i jest dostępna dla tej organizacji w repozytorium globalnym. Z tego miejsca można ją zaimportować do wystąpienia usług RCS organizacji lub do jej wystąpień aplikacji Finance and Operations.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822474"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344227"
 ---
 # <a name="vendor-rebates"></a>Rabaty dostawcy
 
@@ -53,7 +53,7 @@ Umowa rabatowa z dostawcą to zapis umowy z dostawcą, która określa wynegocjo
 
 Aby otworzyć stronę **Umowy rabatowe z dostawcą**, wybierz opcję **Zaopatrzenie i sourcing** &gt; **Rabaty dostawcy** &gt; **Umowy rabatowe**.
 
-![Umowa zakupu](media/purchase-agreement.PNG)
+![Umowa zakupu.](media/purchase-agreement.PNG)
 
 Na stronie **Umowy rabatowe z dostawcą** można wyświetlić szczegóły dotyczące wynegocjowanych warunków umowy z dostawcą.
 
@@ -129,7 +129,7 @@ Po zatwierdzeniu roszczenia mogą zostać przetworzone przez moduł Rozrachunki 
 
     Arkusz naliczania rabatów zostanie zaksięgowany dla kwoty roszczenia. To księgowanie obciąża rachunek Naliczone należności rabatów dostawcy na oczekiwany kredyt dostawcy i uznaje tymczasowy rachunek Naliczone odebrane rabaty dostawcy na oczekiwany zysk.
 
-    ![Wiadomość](media/message.png)
+    ![Komunikat.](media/message.png)
 
 5. Na liście rabatów wybierz wiersz, a następnie w okienku akcji wybierz opcję **Transakcje rabatowe**, aby wyświetlić i przejść do arkusza z numerem partii dla tego księgowania naliczania rabatu.
 
