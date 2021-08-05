@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Rozwiązanie Finance w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Rozwiązanie Finance w wersji 10.0.18 (maj 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Raport usług międzynarodowych
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Cła od zakupu
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrajn
               items:
                 - name: Bahrajn — omówienie
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Generowanie unijnej deklaracji Intrastat
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Intrastat — Francja
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Intrastat — Włochy
+                      href: localizations/emea-ita-intrastat.md
                 - name: Raporty arkuszy magazynowych
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Terminy wystawiania faktur
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Deklaracja VAT z rejestrami (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Przygotowanie do raportowania JPK-V7M
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: Raportowanie JPK-V7M
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Katar — omówienie
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Rezerwy nieściągalnych długów w rozrachunkach z odbiorcami
                       href: localizations/rus-bad-debts.md
+                    - name: Obliczanie rejestrów składników majątku z tytułu podatku i zobowiązań podatkowych
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Arabia Saudyjska
               items:
                 - name: Arabia Saudyjska — omówienie
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 'Generowanie raportów w formatach pakietu Office, które zawierają osadzone obrazy'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Zaprojektuj format raportowania elektronicznego, aby wygenerować raport w formacie Excel z osadzonymi obrazami w nagłówkach lub stopkach stron'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Dzielenie wygenerowanych plików XML na podstawie rozmiaru pliku i ilości zawartości
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Pominięcie znaków BOM w wygenerowanych plikach

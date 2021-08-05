@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Rozwiązanie Commerce w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.18 (maj 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Konfiguracja stron niestandardowych do logowań użytkowników
                   href: custom-pages-user-logins.md
+                - name: Włączanie automatycznego łączenia rekordów tożsamości z kontami odbiorcy
+                  href: identity-record-linking.md
                 - name: Konfigurowanie wielu dzierżawców B2C w środowisku Commerce
                   href: configure-multi-B2C-tenants.md
                 - name: Domeny w rozwiązaniu Dynamics 365 Commerce
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Omówienie motywu Adventure Works
                       href: adventure-works-theme.md
+                    - name: Instalacja motywu Adventure Works
+                      href: install-adventure-works.md
             - name: Zarządzanie cyfrowymi składnikami majątku
               items:
                 - name: Omówienie zarządzania cyfrowymi składnikami majątku

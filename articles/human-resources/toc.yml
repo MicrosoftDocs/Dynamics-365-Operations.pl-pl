@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 12 lipca 2021 r.
+          href: hr-whats-new-2021-07-12.md
         - name: 22 czerwca 2021 r.
           href: hr-whats-new-2021-06-22.md
         - name: 20 maja 2021 r.
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Rozpocznij na żywo — często zadawane pytania
           href: hr-admin-go-live-faq.md
+        - name: Często zadawane pytania dotyczące scalania infrastruktury rozwiązania Human Resources
+          href: hr-infrastructure-merge-faq.md
         - name: Zasoby dokumentacji
           items:
             - name: System pomocy
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Przetwarzanie planów wynagrodzeń
               href: hr-compensation-process.md
+            - name: Oznaczanie pracownika etatowego jako gotowego do wypłaty
+              href: hr-compensation-payroll.md
         - name: Zarządzanie świadczeniami
           items:
             - name: Zarządzanie świadczeniami
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Konfigurowanie typów zdarzeń zmiany sytuacji życiowej
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Tworzenie typów planu
+                    - name: Przegląd typu planu
                       href: hr-benefits-setup-plan-types.md
                     - name: Ustawianie kodów przyczyn
                       href: hr-benefits-setup-reason-codes.md
@@ -803,11 +809,13 @@
               href: hr-leave-and-absence-analytics.md
             - name: Zarządzanie wnioskami o urlop i nieobecność
               href: hr-employee-self-service-manage-requests.md
-            - name: Złóż wniosek o czas wolny
+            - name: Składanie wniosku o czas wolny
               href: hr-employee-self-service-request-time-off.md
             - name: Wyświetlanie kalendarzy zespołów i firm
               href: hr-employee-self-service-calendar.md
-            - name: Zarządzaj zasadami zakupu i sprzedaży urlopu
+            - name: Konfigurowanie roli menedżera nieobecności
+              href: hr-configure-absence-manager.md
+            - name: Zarządzanie zasadami zakupu i sprzedaży urlopu
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Tworzenie przepływów pracy zakupów i sprzedaży dla urlopów
               href: hr-leave-and-absence-buy-sell-workflow.md

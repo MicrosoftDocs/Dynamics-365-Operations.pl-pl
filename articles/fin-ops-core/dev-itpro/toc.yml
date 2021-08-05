@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Aktualizacja Platform update dla wersji 10.0.19 (czerwiec 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Aktualizacja Platform update dla wersji 10.0.18 (maj 2021)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Planowana konserwacja w środowiskach samoobsługowych — często zadawane pytania
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Ciągłość działania i odzyskiwanie po awarii
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Przygotowywanie obsługi Azure Resource Manager
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute i Finance and Operations
@@ -374,9 +374,11 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Stosowanie aktualizacji do środowisk w chmurze
                   href: deployment/apply-deployable-package-system.md
-                - name: Zastosuj aktualizacje i rozszerzenia do Commerce Scale Unit (chmura)
+                - name: Zastosowanie aktualizacji i rozszerzeń do Commerce Scale Unit (chmura)
                   href: deployment/Update-retail-channel.md
-                - name: Zainicjuj Commerce Scale Unit (chmura)
+                - name: Automatyczna aktualizacja Commerce Scale Unit (chmura)
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
+                - name: Inicjowanie Commerce Scale Unit (chmura)
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Migrowanie kanałów do innej usługi Commerce Scale Unit
                   href: deployment/Reassign-CSU.md
@@ -390,11 +392,13 @@
                   items:
                     - name: Omówienie wdrażania lokalnego
                       href: deployment/on-premises-overview.md
-                    - name: Planowanie i przygotowywanie się na lokalne wdrożenia
+                    - name: Planowanie i przygotowanie na lokalne wdrożenia
                       href: deployment/plan-onprem-deployment.md
+                    - name: Oprogramowanie obsługiwane przez Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-compatibility.md
                     - name: Wymagania dotyczące zapotrzebowania na sprzęt
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Uwierzytelnianie w rozwiązaniach Dynamics 365 Finance + Operations (lokalnie)
+                    - name: Uwierzytelnianie w rozwiązaniach Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/authentication-onprem.md
                 - name: Konfigurowanie i wdrażanie środowisk lokalnych
                   items:
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: Konfigurowanie odrębnych środowisk programistycznych
                   href: dev-tools/configure-developer-vm.md
-                - name: Tworzenie nowych użytkowników na komputerach deweloperskich
-                  href: dev-tools/enable-development-machine.md
                 - name: 'Opracowywanie i tworzenie maszyn wirtualnych, które nie zezwalają na dostęp administratora — często zadawane pytania'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Zmienianie nazw środowisk lokalnych w celu umożliwienia dostępu do usługi Azure DevOps
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Książka adresowa strony i globalna książka adresowa
                       href: data-entities/dual-write/party-gab.md
-                    - name: Korzystanie z usługi Power Portal z modelem danych strony
+                    - name: Korzystanie z portali usługi Microsoft Power Apps z modelem danych strony
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Uaktualnianie do modelu globalnej książki adresowej i strony
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1160,7 +1162,7 @@
                   href: power-platform/application-lifecycle-management.md
                 - name: Finance and Operations oraz odwołanie administracyjne Dataverse
                   href: power-platform/admin-reference.md
-                - name: Portale Power Apps z Finance and Operations
+                - name: Portale usługi Power Apps z Finance and Operations
                   href: power-platform/power-portal-reference.md
                 - name: Często zadawane pytania Finance and Operations dot. jednostek wirtualnych
                   href: power-platform/faq.md
@@ -1604,6 +1606,8 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: Uaktualnianie systemu AX 2012 — rozpoczęcie eksploatacji
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Uaktualnianie z systemu AX 2012 — często zadawane pytania dotyczące uaktualniania danych
+                  href: migration-upgrade/upgrade-faq.md
                 - name: Zmiany mające wpływ na uaktualnianie z systemu AX 2012
                   items:
                     - name: Ustawianie unikatowości ogranicznika planu kont

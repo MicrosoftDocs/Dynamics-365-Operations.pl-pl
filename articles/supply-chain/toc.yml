@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.18 (maj 2021)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -2001,9 +1999,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Tworzenie zamówienia zakupu dla dostawcy jednorazowego
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Tworzenie zlecenia wydania zakupu podczas tworzenia zamówienia zakupu
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Tworzenie zlecenia wydania zakupu na podstawie umowy zakupu
+                - name: Zastosowanie umowy zakupu podczas tworzenia zamówienia zakupu
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: Tworzenie zamówienia zwrotu zakupu
                   href: procurement/tasks/create-purchase-return-order.md
