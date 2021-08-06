@@ -2,24 +2,24 @@
 title: Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 description: W tym temacie opisano, w jaki sposób administratorzy mogą dodawać, edytować i usuwać użytkowników partnerów biznesowych w witrynach sieci Web handlu elektronicznego typu business-to-business (B2B).
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936663"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655613"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 
@@ -67,7 +67,7 @@ Aby zatwierdzić i skonfigurować administratora partnera biznesowego w programi
 
 1. Przejdź do **Retail i Commerce IT \> Harmonogram dystrybucji** i uruchom zadanie **1010** (**Odbiorcy**), aby przesunąć nowo utworzone rekordy hierarchii odbiorców i odbiorców do bazy danych kanału.
 
-Po zatwierdzeniu żądania i zsynchronizowaniu rekordów klientów i hierarchii klientów z bazą danych kanału żądający może zalogować się do witryny handlu elektronicznego B2B przy użyciu adresu e-mail podanego podczas przesyłania żądania. Użytkownicy mogą używać przepływu rejestracji w celu zdefiniowania hasła dla swojego konta.
+Po zatwierdzeniu żądania i zsynchronizowaniu rekordów klientów i hierarchii klientów z bazą danych kanału żądający może zalogować się do witryny handlu elektronicznego B2B przy użyciu adresu e-mail podanego podczas przesyłania żądania. Użytkownicy mogą używać przepływu rejestracji w celu zdefiniowania hasła dla swojego konta. Aby umożliwić powiązanie rekordu dostawcy tożsamości (Azure AD B2C) z rekordem klienta B2B, który został utworzony podczas rejestracji lub logowania, postępuj zgodnie z instrukcjami w [Włącz automatyczne łączenie rekordów tożsamości z kontami klientów](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Dodatkowi użytkownicy partnera biznesowego
 
@@ -83,7 +83,7 @@ Aby do witryny sieci web B2B handlu elektronicznego do pracy dołączać dodatko
 
 1. Uruchom zadanie **1010** (**Odbiorcy**), aby zsynchronizować nowego użytkownika partnera biznesowego z bazą danych kanału sprzedaży.
 
-Po zsynchronizowaniu rekordu odbiorcy stan użytkownika w witrynie B2B handlu elektronicznego jest ustawiany na **Aktywny**, a nowy użytkownik może zalogować się do witryny B2B handlu elektronicznego, używając swojego adresu e-mail. Użytkownicy mogą używać przepływu rejestracji w celu zdefiniowania hasła dla swojego konta.
+Po zsynchronizowaniu rekordu odbiorcy stan użytkownika w witrynie B2B handlu elektronicznego jest ustawiany na **Aktywny**, a nowy użytkownik może zalogować się do witryny B2B handlu elektronicznego, używając swojego adresu e-mail. Użytkownicy mogą używać przepływu rejestracji w celu zdefiniowania hasła dla swojego konta. Aby umożliwić powiązanie rekordu dostawcy tożsamości (Azure AD B2C) z rekordem klienta B2B, który został utworzony podczas rejestracji lub logowania, postępuj zgodnie z instrukcjami w [Włącz automatyczne łączenie rekordów tożsamości z kontami klientów](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Edytowanie szczegółów użytkownika-partnera biznesowego
 

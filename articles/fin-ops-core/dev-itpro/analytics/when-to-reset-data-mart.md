@@ -2,7 +2,7 @@
 title: Resetowanie składnicy danych FAQ
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące resetowania składnicy danych.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266616"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638274"
 ---
 # <a name="data-mart-resets-faq"></a>Resetowanie składnicy danych FAQ
 
@@ -37,6 +37,9 @@ Jeśli do danej sytuacji ma zastosowanie co najmniej jedno z następujących spr
 
 - Baza danych aplikacji została przywrócona.
 - Otworzyłeś zgłoszenie do działu wsparcia technicznego, a inżynier działu wsparcia technicznego polecił Ci zresetować składnicę danych w ramach rozwiązywania problemów.
+ 
+> [!NOTE]
+> Na proces resetowania hurtowni danych ma wpływ liczba transakcji księgi głównej i budżetu w bazie danych. W zależności od liczby transakcji w systemie, resetowanie bazy danych można zakończyć w ciągu zaledwie 15 minut lub może zająć do czterech godzin. Jeśli jednak resetowanie trwa dłużej niż cztery godziny, zalecamy skontaktowanie się z pomocą techniczną.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Kiedy nie resetować składnicy danych?
 

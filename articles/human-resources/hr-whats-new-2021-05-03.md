@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0d0d39d19634498f9313aeda4143f9ec81e8f
-ms.sourcegitcommit: f3c28f57d997e824a64485d9a4ce8f198e3bcf23
+ms.openlocfilehash: 8cee60750d3c451024466109acbdc5924074a11f
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059636"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559967"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 3 maja 2021 r.
 
@@ -65,7 +65,7 @@ Następujące nowe funkcje są dostępne w wersji zapoznawczej. Aby uzyskać inf
 | Obszar roboczy zarządzania świadczeniami | [Obszar roboczy zarządzania korzyściami (wersja zapoznawcza)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Obszar roboczy zarządzania świadczeniami](hr-benefits-management-workspace.md) |
 | Rozszerzenia środowiska przepływu pracy urlopów i nieobecności | [Rozszerzenia środowiska przepływu pracy urlopów i nieobecności](https://go.microsoft.com/fwlink/?linkid=2147528) | [Złóż wniosek o czas wolny](hr-employee-self-service-request-time-off.md)|
 | Włączenie uproszczonej integracji listy płac (interfejsy API integracji listy płac) | [Włączenie uproszczonej integracji z dostawcami listy płac](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Interfejs API integracji listy płac](hr-admin-integration-payroll-api-introduction.md)|
-| Przeprowadzanie inspekcji transakcji naliczania urlopów | - | [Przeprowadzanie inspekcji transakcji naliczania urlopów](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Przeprowadzanie inspekcji transakcji naliczania urlopów | - | [Przeprowadzanie inspekcji transakcji naliczania urlopów](hr-leave-and-absence-accrue.md)|
 
 ## <a name="coming-soon"></a>Wkrótce
 

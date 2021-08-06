@@ -2,7 +2,7 @@
 title: Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 description: W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f766303f0592dec917a23339511a957fcdc940d6
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349065"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638687"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Wyniki modeli uczenia maszynowego (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie omówiono matryce pomyłek, problemy z klasyfikacją i dokładność w modelach uczenia maszynowego. Celem jest zwiększenie zrozumienia dokładności w wynikach przewidywania uczenia maszynowego. Docelowi odbiorcy to m.in. inżynierowie, analitycy i menedżerowie, którzy chcą zdobywać wiedzę i umiejętności w dziedzinie nauki o danych.
 

@@ -1,8 +1,8 @@
 ---
 title: Aktualizacje wymagane przepisami prawa
 description: Ten temat zawiera listę planowanych i udostępnionych aktualizacji wymaganych przepisami prawa dla Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 02/04/2021
+author: VStamberg
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: b6519465ca4e205eb86a595f82ce1278a9a90ce2
+ms.sourcegitcommit: bf2daeccbe3f2826e734f409bfc823820144aa23
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129784"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617974"
 ---
 # <a name="regulatory-updates"></a>Aktualizacje wymagane przepisami prawa
 
@@ -39,51 +39,34 @@ Aby uzyskać informacje o najnowszych planach w zakresie aktualizacji wymaganych
 
 |Kraj|Data zwolnienia|Wersja wydania|Aktualizacje wymagane przepisami prawa|
 |--------------------|---------------|-------|-------| 
-|      Brazylia         |   Maj 2021 roku — grudzień 2020 roku      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006 — Identyfikacja pośrednika platformy cyfrowej (aktualizacje układu i zasad walidacji)   |
+|      Australia         |   2021 czerwca      | 10.0.21      |   AU — rachunek 2020 raportowania czasów płatności dla rozwiązania Microsoft Dynamics 365 Finance   |
+|      Brazylia         |   maj 2021, luty 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006 — Identyfikacja pośrednika platformy cyfrowej (aktualizacje układu i zasad walidacji)   |
 |      Brazylia         |   2021 marca         | 10.0.19         |    Układ SPED-Reinf 1.5.1  |
-|      Brazylia         |   2021 lutego         | 10.0.18         |    SPED Fiscal 015 — reguły RS |
-|      Brazylia         |   2021 marca         | 10.0.17 HF       |    NFS-e — faktura elektroniczna usługi brazylijskiej (miasto)  |
 |      Brazylia         |   2021 kwietnia         | 10.0.20        |    Układ SPED ECD 9  |
 |      Brazylia         |   2021 maja         | 10.0.20         |    Udziały SPED — podręcznik wersji 1.34  |
-|      Egipt         |   2021 lutego         | 10.0.17         |    Formularz i raporty dotyczące deklaracji zwrotu VAT  |
-|      Egipt        |   2021 lutego         | 10.0.17         |    Konfiguracja układu faktury  |
-|      Egipt         |   2021 lutego         | 10.0.17         |    Deklaracja potrąconej zaliczki — formularz 41  |
-|      Egipt         |   2021 lutego         | 10.0.17         |    Deklaracja potrąconej zaliczki — formularz 11  |
-|      Egipt         |   2021 lutego         | 10.0.17         |    Odwołania do oryginalnych faktur w fakturach korygujących  |
-|      Europa        |   2021 stycznia       | 10.0.17      |   Brexit - Wpływ protokołu Irlandii Północnej na sprawozdawczość w zakresie handlu wewnątrzwspólnotowego w krajach UE  |
-|      Francja        |   2021 marca       | 10.0.18      |   Handel detaliczny — aktualizacja systemu certyfikatu w punktach sprzedaży — Dynamics 365 Commerce  |
+|      Brazylia         |   2021 czerwca         | 10.0.21         |    SPED ECF - Układ 7  |
+|      Brazylia         |   2021 maja         | 10.0.20         |    NF-e NT2020.005 wersja 1.10 — reguły sprawdzania poprawności i aktualizacje PED ECF — układ 7  |
+|      Brazylia         |   2021 maja         | 10.0.21         |    Przywrócenie SPED 1.5.1 — zmiany w metodzie obsługi sieci web ZDARZENIA 5011  |
 |      Francja        |   2021 kwietnia       | 10.0.20      |   Rozszerzenie francuskiego eksportu archiwizacji danych (FEC)  |
-|      Niemcy        |   2021 stycznia       | 10.0.17      |   Zmiany w strukturze XML powiadomień o zaliczkach VAT ELSTER (UstVA)  |
 |      Niemcy        |   2021 marca       | 10.0.19      |   Rozszerzenia GDPDU dla tabeli i transakcji środków trwałych  |
 |      Niemcy        |   2021 kwietnia       | 10.0.20HF      |   Zmiany formatu fakturowania elektronicznego (xRechnung) w Niemczech od 2021 roku  |
-|      Globalnie        |   2021 stycznia       | 10.0.17      |   Podatek potrącany u źródła na poziomie wiersza  |
-|      Globalnie        |   2021 stycznia       | 10.0.17      |   Płatność potrąconych zaliczek na podatek  |
-|      Globalnie        |   2021 stycznia       | 10.0.17      |   Potrącona zaliczka na podatek w zamówieniach sprzedaży  |
-|      Globalnie        |   2021 stycznia       | 10.0.17      |   Próg podatku u źródła od kwoty faktury  |
-|      Globalnie        |   2021 stycznia       | 10.0.17      |   Walidacja daty wystawienia faktury po wysłaniu listu przewozowego udostępniona dla wszystkich krajów  |
-|      Węgry        |   2021 lutego       | 10.0.17HF, 10.0.18      |   System fakturowania online wersja 3.0  |
-|      Indie         |   2021 lutego      | 10.0.17HF, 10.0.18      |   Faktury elektroniczne GST: informacje o wekslu eWay  |
-|      Indie         |   2021 marca      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Faktury elektroniczne GST: zamówienia eksportu, Uznany eksport, SEZ  |
-|      Indie         |   2021 marca      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Kod QR Dynamics na fakturze B2C  |
+|      Indie         |   2021 marca      | 10.0.19      |   Faktury elektroniczne GST: zamówienia eksportu, Uznany eksport, SEZ  |
+|      Indie         |   2021 marca      | 10.0.19      |   Kod QR Dynamics na fakturze B2C  |
+|      Indie         |   2021 czerwca      | 10.0.21      |   Nowa wersja interfejsu API dla faktury elektronicznej (wersja 1.04)  |
 |      Włochy         |   2021 marca      | 10.0.19      |   Format komunikacji faktur (Esterometro) zmienia się na wersję 2.1.1  |
-|      Włochy        |   2021 maja      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Handel detaliczny — przykładowa aktualizacja drukarki fiskalnej do obsługi formatu XML RT 2.0  |
+|      Włochy        |   2021 maja      | 10.0.19      |   Handel detaliczny — przykładowa aktualizacja drukarki fiskalnej do obsługi formatu XML RT 2.0  |
 |      Włochy         |   2021 marca      | 10.0.19      |   Handel detaliczny — włącz księgowanie chronologicznie faktur dla sieci sprzedaży  |
 |      Włochy         |   2021 lutego      | 10.0.19      |   Unikatowa certyfikacja — 2021 rok  |
-|      Łotwa         |   2020 grudnia      | 10.0.17      |   Format Intrastat zaktualizowany począwszy od 2021  |
-|      Litwa         |   2021 marca      | 10.0.18      |   Wersja raportu SAF-T 2.01  |
-|      Meksyk         |   2020 grudnia      | 10.0.17      |   Aktualizacja atrybutu „Monto” |
-|      Holandia         |   2020 grudnia      | 10.0.17     |   Nowa wersja holenderskiej taksonomii NT15 |
-|      Polska          |   2021 stycznia     | 10.0.17     |   Polska: JPK_KR (Księgi rachunkowe JPK), obowiązujące od stycznia 2021 r |
-|      Rosja          |   2021 stycznia     | 10.0.17    |   Nowy format deklaracji podatku od nieruchomości (wersja techniczna 5.07 zamiast 5.06) na deklaracjach 2020|
+|      Oman         |   2021 czerwca      | 10.0.21      |   Deklaracja VAT  |
+|      Polska          |   2021 czerwca     | 10.0.21     |   JPK_V7M (VDEK) — usprawnienie oznaczeń procedur |
+|      Polska          |   Lipiec 2021     | 10.0.21     |   Nowe reguły zakończenia pracy od lipca 2021 r. JPK-V7M |
 |      Rosja          |   2021 marca     | 10.0.19    |   W deklaracji na podatek od nieruchomości za rok 2020 trzeba będzie podać średnią roczną wartość ruchomych środków trwałych|
 |      Rosja          |   2021 marca     | 10.0.19HF    |   Deklaracja podatkowa dochodowego w wersji 5.09 na rok 2020|
 |      Rosja          |   2021 marca     | 10.0.19    |   Dekret rządowy N 2200 21.12.2020 aplikacja 4 wymagana jest nowa forma faktury transportowej|
-|      Hiszpania          |   Listopad 2020     | 10.0.17    |   Walidacja aktualizacji SII i błędy wer. 2.1 (bis) od 1 stycznia 2021 r.|
-|      Tajlandia          |   2021 lutego     | 10.0.17HF    |   Formularz do potrącenia podatku Por Ngor Dor 53, 3 i 2 |
+|      Rosja          |   2021 czerwca     | 10.0.21 HF, 10.0.20 HF, 10.0.19 HF    |   Zmiany w drukowanych układach faktur-faktur i faktur korygujących|
+|      Hiszpania          |   Lipiec 2021     | 10.0.21    |    Scenariusz OSS / IOSS - ClaveRegimenEspecialOTrascendencia = 17- KB4623605|
+|      Szwecja          |   Lipiec 2021     | 10.0.21    |    Format deklaracji VAT, w tym kwoty odwrotnego obciążenia|
 |      Zjednoczone Emiraty Arabskie   |   2021 maja     | 10.0.20    |   Księgowanie dziennika płatności z czekami z datą wsteczną na rachunek bankowy |
-|      Wielka Brytania         |   2020 grudnia     | 10.0.17    |   Rejestracja podatku firmy na fakturach dla klientów (Brexit - protokół z Irlandii Północnej)|
-|      Wielka Brytania          |   2020 grudnia     | 10.0.17    |   Brexit - Protokół Irlandii Północnej wpływa na firmy handlujące towarami w lokalizacjach Wielkiej Brytanii i Irlandii Północnej|
-|      Wielka Brytania          |   2021 marca     | 10.0.18    |   MTD VAT> zmiany sformułowań w układzie wydruku podglądu (pola 2,8,9) 2021|
 
 
 

@@ -2,7 +2,7 @@
 title: Korzystanie z prognoz płatności odbiorcy (wersja zapoznawcza)
 description: Ten temat omawia wymagania wstępne i ogólne czynności, które są niezbędne do korzystania z wersji próbnej modułu Szczegółowe dane finansowe.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 144de66678beea64b9f96239b519a19926d87ab5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355635"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638325"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Korzystanie z prognoz płatności odbiorcy (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano sposób korzystania z funkcji Prognozy płatności odbiorcy. Przed użyciem tej funkcji upewnij się, że wykonano dla niej czynności konfiguracyjne. Aby uzyskać więcej informacji, zobacz [Włączanie prognoz płatności odbiorcy](enable-cust-paymnt-prediction.md).
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ae444b4d208804364333bd3d6e4704500da85470
-ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
+ms.openlocfilehash: c2f362e71832d6f7b17e06ad98142019ced4df14
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6303569"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6560081"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-22-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources 22 czerwca 2021 r.
 
@@ -44,7 +44,7 @@ W tym wydaniu są zazwyczaj dostępne następujące funkcje.
 | --- | --- | --- |
 | Informowanie użytkowników o funkcji Pracownicy bez zatrudnienia - Gdy włączony jest dostęp zaawansowany, a w zarządzaniu cechami wyłączona jest funkcja **Wyświetl wszystkich pracowników bez zatrudnienia**, w formularzu Pracownicy bez zatrudnienia wyświetlany jest baner. Ten banner poinformuje użytkownika, aby włączył funkcję **Wyświetlanie wszystkich pracowników bez zatrudnienia**. | Nie dotyczy| [Pracownicy bez zatrudnienia](/dynamics365/human-resources/hr-personnel-workers-without-employment)|
 | Obsługa pól niestandardowych w regułach uprawnień zarządzania świadczeniami | [Obsługa pól niestandardowych na potrzeby przetwarzania uprawnień](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |[Konfigurowanie reguł uprawnienia](/dynamics365/human-resources/hr-benefits-setup-eligibility-rules) |
-| Przeprowadzanie inspekcji transakcji naliczania urlopów | Nie dotyczy | [Przeprowadzanie inspekcji transakcji naliczania urlopów](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Przeprowadzanie inspekcji transakcji naliczania urlopów | Nie dotyczy | [Przeprowadzanie inspekcji transakcji naliczania urlopów](hr-leave-and-absence-accrue.md)|
 | Rozszerzenia środowiska przepływu pracy urlopów i nieobecności | [Rozszerzenia środowiska przepływu pracy urlopów i nieobecności](https://go.microsoft.com/fwlink/?linkid=2147528) | [Złóż wniosek o czas wolny](hr-employee-self-service-request-time-off.md)|
 
 ### <a name="bug-fixes"></a>Poprawki błędów

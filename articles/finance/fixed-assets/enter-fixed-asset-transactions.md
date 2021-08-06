@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815723"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645379"
 ---
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
@@ -46,7 +46,7 @@ Jeśli do nabywania środków trwałych jest używany arkusz Zamówienie zakupu 
 ## <a name="general-ledger"></a>Księga główna
 Transakcje środków trwałych dowolnego typu można księgować na stronie Arkusz finansowy. Można także używać arkuszy w module Środki trwałe, aby księgować transakcje środków trwałych.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Opcje wprowadzania typów transakcji środków trwałych
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Opcje wprowadzania typów transakcji środków trwałych
 
 
 | Typ transakcji                    | Moduł                   | Opcje                                   |
@@ -61,10 +61,20 @@ Transakcje środków trwałych dowolnego typu można księgować na stronie Arku
 | ** **                               | Księga główna           | Arkusze finansowe                           |
 | ** **                               | Rozrachunki z odbiorcami      | Faktura niezależna                         |
 
-
 Wartość pozostała Okresu amortyzacji środka trwałego nie jest aktualizowana, kiedy wiersz arkusza typu transakcji opisowej jest tworzony ręcznie lub importowany przez jednostkę danych. Ta wartość jest aktualizowana, kiedy proces propozycję amortyzacji jest używany do tworzenia wiersza arkusza.
 
 Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transakcje wymagające różnych numerów kuponów
+
+Następujące transakcje dotyczące środków trwałych będą używać różnych numerów załączników:
+
+- Nabycie dodatkowego składnika aktywów i efekcie obliczenie amortyzacji „wyrównującej”.
+- Rozbicie środka trwałego.
+- Włączenie parametru umożliwiającego obliczenie amortyzacji przy likwidacji, a następnie zlikwidowanie składnika aktywów.
+- Data rozpoczęcia eksploatacji składnika aktywów jest wcześniejsza niż data nabycia. Z tego względu została zaksięgowana korekta amortyzacji.
+
+> [!NOTE]
+> Podczas wprowadzania transakcji należy się upewnić, że wszystkie transakcje mają zastosowanie do tego samego środka trwałego. Załącznik nie zostanie zaksięgowany, jeśli zawiera więcej niż jeden środek trwały, nawet jeśli pole **Nowy załącznik** ma wartość **Tylko jeden numer załącznika** na stronie **Nazwy arkuszy** w Księdze głównej. Jeśli dołączysz do załącznika więcej niż jeden środek trwały, otrzymasz komunikat „Może być tylko jedna transakcja środka trwałego na załącznik” i nie będzie można zaksięgować załącznika.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

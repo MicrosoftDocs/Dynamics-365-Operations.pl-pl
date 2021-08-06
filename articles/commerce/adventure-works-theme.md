@@ -2,7 +2,7 @@
 title: Omówienie motywu Adventure Works
 description: Ten temat zawiera omówienie motywu Adventure Works i opisuje, jak zastosować go do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479516"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655639"
 ---
 # <a name="adventure-works-theme-overview"></a>Omówienie motywu Adventure Works
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ten temat zawiera omówienie motywu Adventure Works i opisuje, jak zastosować go do stron witryny w Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce ma motyw e-commerce o nazwie Adventure Works. Motyw Adventure Works prezentuje produkty sportowe i rekreacyjne i jest zoptymalizowany pod kątem bogatej i ulepszonej opowieści. Zapewnia nowoczesny wygląd, nowe układy i efekty animacji, aby stworzyć wciągające, wciągające wrażenia z zakupów online dla klientów e-commerce.
 
-Motyw Adventure Works udostępnia następujące nowe przepływy pracy:
+## <a name="trial-environments-in-commerce"></a>Środowiska próbne w usługach Commerce
+
+Aby zobaczyć, jak wygląda motyw Adventure Works po wdrożeniu w witrynach typu firma-konsument (B2C) i firma-firma (B2B), odwiedź następujące witryny próbne:
+
+- [Witryna Adventure Works B2C](https://www.adventure-works.com/)
+- [Witryna Adventure Works B2B](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Możliwości motywu
+
+Motyw Adventure Works zapewnia następujące nowe możliwości:
 
 - Moduł video player umożliwia teraz obsługę nagłówka, akapitu i łączy.
-- Akcja dodaj do koszyka wywołuje mini koszyk zamiast dostarczania powiadomienia.
+- Istnieją lepsze przejścia zawartości poprzez animację.
+- Akcja „dodaj do koszyka” wywołuje mini koszyk zamiast dostarczania powiadomienia.
 - Moduł szybkiego podglądu to okienko, które wsuwa się zarówno w rzutniach pulpitu, jak i urządzeń przenośnych.
-- Pusty koszyk może teraz korzystać z promocji.
+- Istnieją nowe układy stron witryny. 
+- Zawartość marketingową można skonfigurować dla koszyka i koszyka mini, gdy są puste.
+- Minikoszyk może wyświetlać komunikaty promocyjne, takie jak „Bezpłatna dostawa przy zamówieniach powyżej 50 USD”.
+- Karty opisu są renderowane na stronach wyszukiwania i kategorii.
 
-Motyw Adventure Works zawiera następujące moduły opowiadania historii w bibliotece modułów Commerce:
+Motyw Adventure Works teraz zawiera następujące moduły opowiadania historii w bibliotece modułów Commerce:
 
-- Moduł listy kafelków
-- Interaktywny moduł funkcyjny
-- Moduł Subskrybuj
-- Moduł aktywnego obrazu
-- Moduł listy obrazów
+- [Moduł listy kafelków](tile-list-module.md)
+- [Moduł funkcji interaktywnych](interactive-feature-module.md)
+- [Moduł aktywnego obrazu](active-image-module.md)
+- [Moduł subskrypcji](subscribe-module.md)
+- [Moduł listy obrazów](image-list-module.md)
 
 Kompozycja Adventure Works w pełni odpowiada tej aplikacji, a jej działanie jest optymalne dla widoków pulpitu, urządzeń przenośnych i tabletów.
 
@@ -77,6 +89,10 @@ Kompozycja Adventure Works zawiera kilka rozszerzeń motywu, takich jak **Zobacz
 Podobnie inne moduły zawierają rozszerzenia definicji modułów. Na przykład [moduł ikony koszyka](cart-icon-module.md) zawiera dwa dodatkowe miejsca na **pusty koszyk** i **treści promocyjne**, które są implementowane przy użyciu rozszerzeń definicji modułu. Ponadto do modułu nagłówka dodano nową właściwość **Logo mobilne**, aby obsługiwać logo w widokach przenośnych. Ta właściwość jest zaimplementowana jako rozszerzenie definicji modułu nagłówka.
 
 Aby uzyskać więcej informacji o rozszerzeniach motywów, zobacz temat [Rozszerzenia motywów](e-commerce-extensibility/theme-module-extensions.md).
+
+## <a name="install-the-adventure-works-theme"></a>Instalacja motywu Adventure Works
+
+Aby uzyskać informacje dotyczące instalowania motywu Adventure Works, zobacz temat [Instalowanie motywu Adventure Works](install-adventure-works.md).
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

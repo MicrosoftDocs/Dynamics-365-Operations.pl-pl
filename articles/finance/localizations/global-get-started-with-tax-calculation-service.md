@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z obliczaniem podatku
 description: W tym temacie wyjaśniono, jak skonfigurować obliczanie podatku.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336663"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644981"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Zacznij od obliczania podatku (wersja zapoznawcza)
 
@@ -58,15 +58,16 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę należy wykonać tylko jeden raz i można ją wykonać w dowolnej firmie w RCS.
 
 1. Zaloguj się w [RCS](https://marketing.configure.global.dynamics.com/).
-2. W obszarze roboczym **Raportowanie elektroniczne** dodaj dostawcę konfiguracji. Użyj nazwy firmy jako nazwy dostawcy. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Wybierz właśnie utworzonego dostawcę konfiguracji, a następnie wybierz opcję **Ustaw aktywny**.
-4. Wybierz dostawcę konfiguracji **Microsoft**, a następnie **Repozytoria**.
-5. W polu **Typ** wybierz **Globalne**.
-6. Kliknij przycisk **Otwórz**.
-7. Przejdź do **Modelu danych podatkowych**, rozwiń drzewo plików, a następnie wybierz pozycję **Konfiguracja podatków**.
-8. Wybierz najnowszą wersję, a następnie **importuj**.
-9. Wróć do **obszaru roboczego Funkcje globalizacji (Podgląd)**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
-10. Umożliwia wybór jednego z następujących typów funkcji:
+2. W obszarze roboczym **Zarządzanie funkcjami** wybierz i włącz funkcję **Funkcje globalizacji**.
+3. W obszarze roboczym **Raportowanie elektroniczne** dodaj dostawcę konfiguracji. Użyj nazwy firmy jako nazwy dostawcy. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Wybierz właśnie utworzonego dostawcę konfiguracji, a następnie wybierz opcję **Ustaw aktywny**.
+5. Wybierz dostawcę konfiguracji **Microsoft**, a następnie **Repozytoria**.
+6. W polu **Typ** wybierz **Globalne**.
+7. Kliknij przycisk **Otwórz**.
+8. Przejdź do **Modelu danych podatkowych**, rozwiń drzewo plików, a następnie wybierz pozycję **Konfiguracja podatków**.
+9. Wybierz najnowszą wersję, a następnie **importuj**.
+10. Wróć do **obszaru roboczego Funkcje globalizacji**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
+11. Umożliwia wybór jednego z następujących typów funkcji:
 
     - **Nowa funkcja** — umożliwia tworzenie konfiguracji funkcji o pustej zawartości.
     - **Na podstawie istniejącej funkcji** - należy utworzyć funkcję z istniejącej funkcji i skopiować zawartość z istniejącej konfiguracji funkcji.

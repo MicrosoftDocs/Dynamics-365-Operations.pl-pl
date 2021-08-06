@@ -1,8 +1,8 @@
 ---
-title: Tworzenie typów planu
+title: Przegląd typu planu
 description: W programie Microsoft Dynamics 365 Human Resources typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057869"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558280"
 ---
-# <a name="create-plan-types"></a>Tworzenie typów planu
+# <a name="plan-type-overview"></a>Przegląd typu planu
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W programie Microsoft Dynamics 365 Human Resources typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu. Na przykład typ planu Podstawowe ubezpieczenie na życie może mieć kod typu planu Ubezpieczenie na życie, ponieważ jest to rodzaj planu ubezpieczenia na życie i musi być zgodny z regułami określonymi w typie planu o kodzie Ubezpieczenie na życie. Kolejnym typem planu może być Dodatkowe ubezpieczenie na życie, również z kodem typu planu Ubezpieczenie na życie.
+Typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu. Na przykład typ planu **Podstawowe ubezpieczenie na życie** może mieć kod typu planu **Ubezpieczenie na życie**, ponieważ jest to rodzaj planu ubezpieczenia na życie i musi być zgodny z regułami określonymi w typie planu o kodzie **Ubezpieczenie na życie**. Innym typem planu może być **Dodatkowe ubezpieczenie na życie**. Ten typ planu będzie również kod typu planu **Ubezpieczenie na życie**.
 
 Każdy typ planu wskazuje, czy pracownik może się zarejestrować w jednym, czy w wielu planach tego typu. Na przykład pracownik prawdopodobnie może się zarejestrować w obu planach o typie Ubezpieczenie na życie — Podstawowe ubezpieczenie na życie i Dodatkowe ubezpieczenie na życie. Pracownik prawdopodobnie może się zarejestrować tylko w jednym planie o typie Medyczny.
 
 Jeśli typ planu uwzględnia kontakty, to wskazuje, czy te kontakty są beneficjentami, czy osobami na osobami na utrzymaniu. Na przykład typ planu Podstawowe ubezpieczenie na życie będzie miał beneficjentów, natomiast typ planu Podstawowe ubezpieczenie medyczne będzie miał osoby na utrzymaniu. W niektórych przypadkach plan może nie mieć żadnych kontaktów osobistych. Na przykład: Konto wydatków elastycznych lub Dodatek parkingowy.
 
 Typ planu może określać opcje objęcia świadczeniami. Opcje objęcia świadczeniami definiuje się w formularzu Opcja objęcia świadczeniem. Opcja objęcia świadczeniem może określać kwotę świadczenia lub kontakty kwalifikujące się do danego typu planu. Jeśli na przykład typ kontaktu to Beneficjent, opcja objęcia świadczeniem powinna określać warunki, jakie beneficjent ma prawo otrzymać podczas realizacji świadczenia. Jeśli typem kontaktu jest Osoba na utrzymaniu, opcja objęcia świadczeniem powinna definiować relację między osobą na utrzymaniu a pracownikiem etatowym. 
+
+> [!IMPORTANT]
+> Formularz zawiera kluczowe dane, które wpływają na opcje dostępne podczas tworzenia nowego planu świadczeń:
+>
+> - **Kod typu planu** — to pole ma wpływ na to, co jest wyświetlane na karcie **Konfiguracja** podczas konfigurowania rzeczywistej korzyści.  
+> - **Jednoczesna rejestracja** — to pole określa, czy dozwolone jest wiele rejestracji. (W przypadku planu medycznego pole to jest zazwyczaj **Jedna rejestracja**.)
+> - **Typ kontaktu** — to pole umożliwia dodawanie osób pozostających na utrzymaniu lub beneficjentów do planu. Jeśli jest ustawiona na **Brak**, pracownicy, którzy zarejestrują się w świadczeniach, nie będą mieli możliwości wybrania beneficjenta lub osoby pozostającej na utrzymaniu.
+> - **Opcje zapotrzebowania** — to pole służy do łączenia opcji zapotrzebowania z typami planu. Definiuje albo osoby, które będą objęte tym typem planu, albo kwoty ubezpieczenia dostępne dla tego typu planu. Na przykład można określić, że ubezpieczenie dla typu planu medycznego będzie dostępne tylko dla pracownika, pracownika i jednej innej osoby lub pracownika i jego rodziny.
+
+## <a name="create-plan-types"></a>Tworzenie typów planu
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Typy planów**.
 

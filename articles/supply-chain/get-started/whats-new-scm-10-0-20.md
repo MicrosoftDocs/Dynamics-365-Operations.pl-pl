@@ -1,5 +1,5 @@
 ---
-title: Przegląd Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021)
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301753"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641063"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>Przegląd Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.20. Ta wersja ma numer kompilacji 10.0.886 i jest dostępna w następujący sposób:
+W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.20. Ta wersja ma numer kompilacji 10.0.886 i jest dostępna w następujący sposób:
 
 - **Wersja podglądu:** maj 2021
 - **Ogólna dostępność wydania (samoaktualizacja):** lipiec 2021 r.
 - **Ogólna dostępność wydania (automatyczna aktualizacja):** sierpień 2021 r.
 
-
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
 To wydanie obejmuje następujące nowe funkcje. Kolumna *Funkcja* zawiera łącza do [planu wersji](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), w którym można zobaczyć oficjalne daty wydania poszczególnych funkcji. Kolumna *Więcej informacji* zawiera łącza do większej liczby szczegółów i dokumentacji pokrewnej.
 
-Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne.
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 | Obszar funkcji | Funkcja | Więcej informacji |
 |---|---|---|
@@ -49,7 +47,7 @@ W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każd
 
 | Obszar funkcji | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
-| Planowanie główne | Dni ujemne dla optymalizacji planowania | Ta funkcja podglądu umożliwia optymalizację planowania, aby uwzględnić tolerancję opóźnienia na podstawie parametru **Liczby dni ujemnych** zdefiniowanych w grupach zapotrzebowania. |
+| Planowanie główne | Dni ujemne dla optymalizacji planowania | Ta funkcja umożliwia optymalizację planowania, aby uwzględnić tolerancję opóźnienia na podstawie parametru **Liczby dni ujemnych** zdefiniowanych w grupach zapotrzebowania. |
 | Planowanie główne | Równoległe autoryzowanie skorygowanej prognozy popytu | Ta funkcja umożliwia równoległe autoryzowanie skorygowanej prognozy popytu ze strony **Skorygowana prognoza popytu**. Celem tej funkcji jest zwiększenie wydajności podczas autoryzacji dużej liczby prognoz. Podczas autoryzowania użytkownik może określić **liczbę wątków** w oknie dialogowym autoryzowania. |
 | Planowanie główne | (Wersja zapoznawcza) Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ta funkcja umożliwia używanie zadań w partiach do tworzenia i konsolidowania planowanych zamówień masowych i paczkowanych. |
 | Kontrola produkcji | Kopiuj ogólne trasy | Ta funkcja rozszerza funkcję kopiowania trasy, umożliwiając użytkownikom kopiowanie tras, które nie są specyficzne dla danego elementu. Umożliwia to systemowi aktualizację wszystkich istotnych informacji (takich jak miejsce, grupa trasowania, wymagania dotyczące zasobów i różne czasy) po użyciu funkcji kopiowania trasy w celu nadpisania trasy, która nie jest jeszcze przypisana do elementu. |
@@ -75,7 +73,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Nie za
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>Aktualizacja platformy dla aplikacji Finance and Operations
 
-Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.20 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.20 aplikacji Finance and Operations (lipiec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+Pakiet Microsoft Dynamics 365 Supply Chain Management 10.0.20 zawiera aktualizację platformy. Aby dowiedzieć się więcej, zobacz [aktualizacje platformy dla wersji 10.0.20 aplikacji Finance and Operations (lipiec 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Poprawki błędów
 

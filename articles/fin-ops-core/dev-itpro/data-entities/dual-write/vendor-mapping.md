@@ -4,24 +4,17 @@ description: W tym temacie opisano integrację danych dostawców między aplikac
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346503"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542446"
 ---
 # <a name="integrated-vendor-master"></a>Zintegrowane dane główne dostawcy
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346503"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach opartych na modelach w Dynamics 365. Można jednak przeciążyć tabelę **Konta/kontaktu**, aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza jawną koncepcję dostawcy w aplikacjach opartych na modelach w Dynamics 365. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w tabeli **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
+Termin *dostawca* odnosi się do organizacji dostawcy lub jedynego właściciela, który dostarcza towary lub usługi firmie. Mimo że *dostawca* jest ustaloną koncepcją w Microsoft  Dynamics 365 Supply Chain Management, koncepcja dostawcy nie istnieje w aplikacjach angażujących klientów nie ma koncepcji dostawcy. Można jednak przeciążyć tabelę **Konta/kontaktu**, aby przechowywać informacje o dostawcach. Zintegrowany wzorzec dostawcy wprowadza wyraźną koncepcję dostawcy w aplikacjach angażujących klienta. Można skorzystać z nowego projektu dostawcy lub danych dostawcy sklepu w tabeli **Konto/kontakt**. Podwójne zapisywanie obsługuje obie metody.
 
 W obu przypadkach dane dostawcy są zintegrowane między Dynamics 365 Supply Chain Management, Dynamics 365 Sales, Dynamics 365 Field Service i portalami Power Apps. W Supply Chain Management dane są dostępne dla przepływów pracy, takich jak zapotrzebowania zakupu i zamówienia zakupu.
 
@@ -52,27 +43,17 @@ Jeśli chcesz dalej przechowywać dane dostawcy w tabeli **Konto/kontakt**, moż
 
 Dane dostawcy obejmują wszystkie informacje o dostawcy, takie jak grupa dostawców, adresy, dane kontaktowe, profil płatności oraz profil faktury. Kolekcja mapowań tabel działa razem podczas interakcji z danymi dostawcy, jak pokazano w poniższej tabeli.
 
-Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365     | opis
+Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
 ----------------------------|-----------------------------|------------
-Dostawca V2                   | Konto                     | Firmy, które używają tabeli Konto do przechowywania informacji o dostawcy, mogą nadal używać go w taki sam sposób. Mogą również korzystać z funkcji jawnego dostawcy dostępnej w wyniku integracji z aplikacjami Finance and Operations.
-Dostawca V2                   | Msdyn\_vendors              | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finance and Operations. 
-Grupy dostawców               | msdyn\_vendorgroups         | Ten szablon powoduje zsynchronizowanie informacji o grupie dostawców.
-Metoda płatności dostawcy       | msdyn\_vendorpaymentmethods | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności.
-CDS Contacts wer. 2             | kontakty                    | Szablon [kontakty](customer-mapping.md#cds-contacts-v2-to-contacts) synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
-Wiersze harmonogramu płatności      | msdyn\_paymentschedulelines | Szablon [wierszy harmonogramu płatności](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synchronizuje dane referencyjne dla odbiorców i dostawców.
-Harmonogram płatności            | msdyn\_paymentschedules     | Szablon [harmonogramu płatności](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) synchronizuje dane referencyjne harmonogramu płatności dla odbiorców i dostawców.
-Wiersze dni zapłaty w usłudze CDS wer. 2    | msdyn\_paymentdaylines      | Szablon [wiersze dni płatności](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synchronizuje dane referencyjne wierszy dni płatności dla odbiorców i dostawców.
-Dni zapłaty w usłudze CDS            | msdyn\_paymentdays          | Szablon [dni płatności](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) synchronizuje dane referencyjne harmonogramu dni płatności dla odbiorców i dostawców.
-Warunki płatności            | msdyn\_paymentterms         | Szablon [warunki płatności](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) synchronizuje dane referencyjne warunki płatności dla odbiorców i dostawców.
-Afiksy nazwy                | msdyn\_nameaffixes          | Szablon [afiksów nazw](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) synchronizuje dane referencyjne afiksów nazw dla odbiorców i dostawców.
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS Contacts wer. 2](mapping-reference.md#115) | kontakty | Ten szablon synchronizuje wszystkie podstawowe, pomocnicze i wyższe informacje kontaktowe dla odbiorców i dostawców.
+[Afiksy nazwy](mapping-reference.md#155) | msdyn_nameaffixes | Ten szablon synchronizuje dane referencyjne afiksów nazw dla odbiorców i dostawców.
+[Wiersze dni zapłaty w usłudze CDS wer. 2](mapping-reference.md#157) | msdyn_paymentdaylines | Ten szablon synchronizuje dane referencyjne wierszy dni płatności dla odbiorców i dostawców.
+[Dni zapłaty w usłudze CDS](mapping-reference.md#158) | msdyn_paymentdays | Ten szablon synchronizuje dane referencyjne dni płatności dla odbiorców i dostawców.
+[Wiersze harmonogramu płatności](mapping-reference.md#159) | msdyn_paymentschedulelines | Synchronizuje dane referencyjne wierszy harmonogramu płatności, zarówno dla klientów, jak i dostawców.
+[Harmonogram płatności](mapping-reference.md#160) | msdyn_paymentschedules | Ten szablon synchronizuje dane referencyjne harmonogramu dla odbiorców i dostawców.
+[Warunki płatności](mapping-reference.md#161) | msdyn_paymentterms | Ten szablon synchronizuje dane referencyjne warunki płatności dla odbiorców i dostawców.
+[Dostawcy wersja 2](mapping-reference.md#202) | msdyn_vendors | Firmy, które korzystają z niestandardowego rozwiązania dla dostawców, mogą skorzystać z koncepcji dostawcy gotowego (out-of-box), która jest wprowadzana w Dataverse wraz z integracją z aplikacjami Finance and Operations.
+[Grupy dostawców](mapping-reference.md#200) | msdyn_vendorgroups | Ten szablon powoduje zsynchronizowanie informacji o grupie dostawców.
+[Metoda płatności dostawcy](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Ten szablon powoduje zsynchronizowanie informacji o metodzie płatności.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

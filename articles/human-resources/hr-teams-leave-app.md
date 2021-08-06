@@ -2,7 +2,7 @@
 title: Zarządzanie wnioskami o urlop w Teams
 description: W tym temacie przedstawiono sposób wysyłania wniosku o urlop w aplikacji Dynamics 365 Human Resources w rozwiązaniu Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356519"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639445"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Zarządzanie wnioskami o urlop w Teams
 
@@ -166,6 +166,10 @@ Jeśli masz problemy z zalogowaniem się lub użyciem aplikacji Dynamics 365 Hum
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nie można zalogować się do aplikacji do aplikacji Human Resources w Teams
 
 Jeśli nie możesz zalogować się do aplikacji, być może konto używane do logowania w Microsoft Teams nie jest skojarzone z rekordem pracownika w rozwiązaniu Dynamics 365 Human Resources. Skontaktuj się z administratorem systemu, aby upewnić się, że rekord pracownika jest poprawnie skojarzony.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Nie można odnaleźć środowiska Dynamics 365 Human Resources w ustawieniach
+
+Jeśli nie możesz wybrać prawidłowego środowiska Dynamics 365, rekord użytkownika mógł nie zostać poprawnie zsynchronizowany. Skontaktuj się z administratorem systemu, aby ponownie utworzyć rekord użytkownika i powiązać go z poświadczeniami użytkownika. Następnie spróbuj zalogować się do aplikacji Human Resources dla Microsoft Teams za kilka minut.
 
 ### <a name="translations-dont-display-correctly"></a>Tłumaczenia nie są wyświetlane prawidłowo
 

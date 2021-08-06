@@ -2,7 +2,7 @@
 title: Żądanie czasu wolnego
 description: W programie Dynamics 365 Human Resources można prosić o czas wolny.
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86a0c659c8b586912ee848aa5f233f2e16f05fd4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: da04e3f93f381fbe25c7e1ed117b7ce10e8b04e9
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6357198"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639565"
 ---
 # <a name="request-time-off"></a>Żądanie czasu wolnego
 
@@ -41,6 +41,8 @@ W module Dynamics 365 Human Resources możesz przesyłać wnioski o czas wolny, 
 5. W razie potrzeby wprowadź informacje w polu **Komentarz**.
 
 6. Gdy masz wszystko gotowe do wysłania wniosku, naciśnij przycisk **Prześlij**. W przeciwnym razie wybierz opcję **Zapisz wersję roboczą**.
+
+Pracownicy, którzy składają nowy wniosek urlopowy, mogą wybrać różne rodzaje urlopu, aby skonstruować swój wniosek urlopowy. Jednak wszystkie typy urlopów wybrane w ramach jednego wniosku urlopowego powinny mieć tę samą jednostkę urlopową. Pracownicy mogą wyświetlić jednostki urlopu dla każdego typu urlopu w formularzu **Żądanie urlopu**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Dodaj załącznik do istniejącego żądania
 

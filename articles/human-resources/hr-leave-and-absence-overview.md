@@ -2,7 +2,7 @@
 title: Omówienie urlopów i nieobecności
 description: Korzystając z Dynamics 365 Human Resources, obszar roboczy urlopy i nieobecności stanowi elastyczne ramy tworzenia nowych planów urlopów. Umożliwia także przepływy pracy służące do zarządzania żądaniami oraz intuicyjną stronę samoobsługi umożliwiającą pracownikom zgłoszenie prośby o urlop lub nieobecność w pracy.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339722"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639493"
 ---
 # <a name="leave-and-absence-overview"></a>Omówienie urlopów i nieobecności
 
@@ -34,7 +34,8 @@ Zanim utworzy się plany urlopów dla pracowników, należy wykonać kilka krok�
 
 - [Konfigurowanie parametrów urlopów i nieobecności](hr-leave-and-absence-parameters.md)
 - [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
-- [Tworzenie przepływu pracy wniosku urlopowego](hr-leave-and-absence-workflow.md)
+- [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md)
+- [Konfigurowanie roli menedżera nieobecności](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Tworzenie planów urlopów i zarządzanie nimi
 
@@ -50,8 +51,9 @@ Przed rozpoczęciem tworzenia planów urlopów dla pracowników należy utworzy�
 
 W obszarze roboczym **Samoobsługa pracownika etatowego** pracownicy mogą przesyłać wnioski urlopowe, a Ty możesz nimi zarządzać.
 
-[Zgłaszanie prośby o czas wolny](hr-employee-self-service-request-time-off.md)
-[Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+- [Złóż wniosek o czas wolny](hr-employee-self-service-request-time-off.md)
+- [Zarządzanie wnioskami o urlop i nieobecność](hr-employee-self-service-manage-requests.md)
+- [Konfigurowanie roli menedżera nieobecności](hr-configure-absence-manager.md)
 
 
 

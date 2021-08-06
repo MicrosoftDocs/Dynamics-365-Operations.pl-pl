@@ -4,30 +4,21 @@ description: Ten temat zawiera informacje dotyczące prospektów do kasy w ramac
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361415"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542278"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Od prospekta do kasy w podwójnym zapisie
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Ważnym celem większości firm jest konwersja prospektów na odbiorców, a następnie utrzymywanie w ten sposób stałej relacji biznesowej z tymi odbiorcami. W przypadku aplikacji Microsoft Dynamics 365 proces prospektów do kasy jest realizowany za pośrednictwem ofert lub przepływów pracy przetwarzania zamówień, a finanse są uzgadniane i rozpoznawane. Integracja funkcji prospekty-gotówka z podwójnym zapisem powoduje utworzenie przepływu pracy, który składa ofertę i zamówienie, które pochodzi z systemu Dynamics 365 Sales lub Dynamics 365 Supply Chain Management i udostępnia ofertę i zamówienie dostępne w obu aplikacjach.
 
@@ -70,6 +61,7 @@ Oferty sprzedaży mogą być tworzone albo w Sales, albo Supply Chain Management
 + Kolumny **Warunki frachtu**, **Warunki dostawy**, **Metoda wysyłki** i **Metoda dostawy** nie wchodzą w skład zbioru domyślnych mapowań. Aby zamapować te kolumny, należy skonfigurować mapowanie wartości specyficzne dla danych w organizacjach, między którymi jest synchronizowana tabela.
 
 Jeśli używane jest także rozwiązanie Field Service, należy ponownie włączyć parametr **Szybkie utworzenie wiersza oferty**. Ponowne włączenie parametru umożliwia kontynuowanie tworzenia wierszy oferty przy użyciu funkcji szybkiego tworzenia.
+
 1. Przejdź do aplikacji Dynamics 365 Sales.
 2. Wybierz ikonę ustawienia na górnym pasku nawigacyjnym.
 3. Wybierz **Ustawienia zaawansowane**.
@@ -121,43 +113,25 @@ Moduł Od prospektu do gotówki zawiera mapy tabeli podstawowej, które działaj
 
 | Aplikacje Finance and Operations | Aplikacje Customer Engagement | opis |
 |-----------------------------|-----------------------------------|-------------|
-| Nagłówki faktur sprzedaży wer. 2    | faktury                          | Tabela nagłówków faktur sprzedaży (wersja 2) w aplikacji Finance and Operations zawiera faktury dla zamówień sprzedaży i faktury niezależne. W przypadku podwójnego zapisu jest stosowany filtr usługi Dataverse, który odfiltruje wszystkie dokumenty faktur niezależnych. |
-| Wiersze faktur sprzedaży wer. 2      | invoicedetails                    |             |
-| Nagłówki zamówień sprzedaży CDS     | salesorders                       |             |
-| Wiersze zamówienia sprzedaży CDS       | salesorderdetails                 |             |
-| Kody źródeł zamówień sprzedaży    | msdyn\_salesorderorigins          |             |
-| Nagłówek oferty sprzedaży CDS  | Cytaty                            |             |
-| Wiersze oferty sprzedaży CDS   | quotedetails                      |             |
+[Wszystkie produkty](mapping-reference.md#138) | msdyn_globalproducts | |
+[Odbiorcy (wersja 3)](mapping-reference.md#101) | Konta | |
+[Odbiorcy (wersja 3)](mapping-reference.md#116) | kontakty | |
+[Kontakty wersja 2](mapping-reference.md#221) | msdyn_contactforparties | |
+[Nagłówki zamówień sprzedaży CDS](mapping-reference.md#217) | salesorders | |
+[Wiersze zamówienia sprzedaży CDS](mapping-reference.md#216) | salesorderdetails | |
+[Nagłówek oferty sprzedaży CDS](mapping-reference.md#215) | Cytaty | |
+[Wiersze oferty sprzedaży CDS](mapping-reference.md#214) | quotedetails | |
+[Zwolnione produkty (wersja 2)](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury | Tabela nagłówków faktur sprzedaży (wersja 2) w aplikacji Finance and Operations zawiera faktury dla zamówień sprzedaży i faktury niezależne. W przypadku podwójnego zapisu jest stosowany filtr usługi Dataverse, który odfiltruje wszystkie dokumenty faktur niezależnych. |
+[Wiersze faktur sprzedaży wer. 2](mapping-reference.md#117) | invoicedetails | |
+[Kody źródeł zamówień sprzedaży](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Oto powiązane mapowania tabeli podstawowej dla prospektu do gotówki:
-
-+ [Odbiorcy (wersja 3) do kont](customer-mapping.md#customers-v3-to-accounts)
-+ [Kontakty CDS (wersja 2) do contacts](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Odbiorcy (wersja 3) do contacts](customer-mapping.md#customers-v3-to-contacts)
-+ [Wydane produkty (wersja 2) do msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Wszystkie produkty do msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Cennik](product-mapping.md)
+Więcej informacji o cennikach, zobacz temat [Ujednolicone działanie produktu](product-mapping.md).
 
 ## <a name="limitations"></a>Ograniczenia
+
 - Zamówienia zwrotu nie są obsługiwane.
 - Faktury kredytowe nie są obsługiwane.
-- Wymiary finansowe muszą być ustawione dla danych głównych, na przykład dla odbiorcy lub dostawcy. Gdy odbiorca jest dodawany do oferty lub zamówienia sprzedaży, wymiary finansowe skojarzone z rekordem odbiorcy automatycznie przepływają do zamówienia. Obecnie podwójny zapis nie uwzględnia danych wymiarów finansowych dla danych głównych. 
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
+- Wymiary finansowe muszą być ustawione dla danych głównych, na przykład dla odbiorcy lub dostawcy. Gdy odbiorca jest dodawany do oferty lub zamówienia sprzedaży, wymiary finansowe skojarzone z rekordem odbiorcy automatycznie przepływają do zamówienia. Obecnie podwójny zapis nie uwzględnia danych wymiarów finansowych dla danych głównych.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

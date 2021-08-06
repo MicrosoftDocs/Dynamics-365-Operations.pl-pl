@@ -2,7 +2,7 @@
 title: Konfigurowanie opcji uprawnień kontaktów osobistych
 description: W programie Microsoft Dynamics 365 Human Resources można skonfigurować opcje uprawnień dla kontaktów osobistych. Kontakty osobiste mogą być beneficjentami lub osobami na utrzymaniu.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d85677973f67f0c68de6c5ede62c142524939833
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 071523e2a1e9de6f0ed2b77e4ad6802efb0073f7
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054411"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558256"
 ---
-# <a name="configure-personal-contact-eligibility-options"></a>Konfigurowanie opcji uprawnień kontaktów osobistych
+# <a name="configure-personal-contact-eligibility-options"></a>Konfigurowanie opcji uprawnień do kontaktu osobistego
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule przedstawiono sposób konfigurowania typów kontaktów osobistych do używania w świadczeniach w programie Microsoft Dynamics 365 Human Resources. Kontakty osobiste mogą być beneficjentami lub osobami na utrzymaniu. 
+W tym temacie wyjaśniono, jak skonfigurować typy kontaktów osobistych, które mogą być używane w korzyściach w Microsoft Dynamics 365 Human Resources. Kontakty osobiste to osoby, które będą objęte Twoimi planami (osoby na utrzymaniu) lub które skorzystają z Twoich planów (beneficjenci). Osoby na utrzymaniu to zazwyczaj małżonkowie lub dzieci. Beneficjentami mogą być małżonkowie, dzieci, osoby podlegające lub rodzice.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Opcje uprawnień kontaktów osobistych**.
 

@@ -1,6 +1,6 @@
 ---
-title: Korzystanie z usługi Power Portal z modelem danych strony
-description: W tym temacie opisano zmiany ról sieci web usługi Power Portal z powodu modelu danych stron w trybie podwójnego zapisu.
+title: Korzystanie z portali usługi Microsoft Power Apps z modelem danych strony
+description: W tym temacie opisano zmiany ról sieci web portali Microsoft Power Apps z powodu modelu danych stron w trybie podwójnego zapisu.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358624"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542570"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Korzystanie z usługi Power Portal z modelem danych strony
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Korzystanie z portali usługi Microsoft Power Apps z modelem danych strony
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Aby utworzyć nowe uprawnienia tabeli, należy wykonać następujące czynności
 
     Należy utworzyć trzy nowe uprawnienia:
 
-    + Połączenie osoba kontaktowa ze stroną
-    + Strona połączonego konta
-    + Konto połączonego zamówienia
+    + Tabela połączenia **osoba kontaktowa** ze **stroną**
+    + Tabela połączenia **Strona** z **Konto**
+    + Tabela połączenia **Konto** z **Zamówienie**
 
 4. Utwórz i zapisz nowe uprawnienie dla kontaktu do połączenia ze stroną, ustawiając następujące parametry:
 
-    + **Nazwa:** stroną połączonego konta (lub do wyboru)
+    + **Nazwa**: tabela połączenia **Strona** z **Konto** (lub wybór użytkownika)
     + **Nazwa tabeli**: msdyn_contactforparty
     + **Witryna**: Portal klienta
     + **Zakres:** Osoba kontaktowa

@@ -2,7 +2,7 @@
 title: Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 description: Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 2086a33285d9a529480c5f34fb048105e65c2046
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338236"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638521"
 ---
 # <a name="finance-insights-home-page-preview"></a>Szczegółowe dane finansowe — strona główna (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Moduł Szczegółowe dane finansowe udostępnia konfigurowalne i rozszerzalne modele, które pomagają dokładnie i inteligentnie przewidywać przepływy pieniężne w firmie, prognozować terminy otrzymania płatności za zaległe należności oraz generować propozycje budżetowe, które mogą przyspieszyć proces budżetowania. Wszystkie te funkcje są oparte na inteligentnych modelach uczenia maszynowego. Gdy te nowe możliwości zostaną połączone z mechanizmami automatyzacji w funkcjach płatności dla dostawców i windykacji, powstaje rozbudowany i inteligentny system finansowy, który wspiera podejmowanie decyzji i pomaga podejmować działania w celu skutecznego reagowania na obecne i przewidywane wyzwania biznesowe.
 

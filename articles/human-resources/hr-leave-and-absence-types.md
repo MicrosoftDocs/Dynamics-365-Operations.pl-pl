@@ -2,7 +2,7 @@
 title: Konfigurowanie typów urlopów i nieobecności
 description: Tu opisano konfigurowanie typów urlopów, jakie mogą brać pracownicy w module Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 63970f69a437864675eada975c54446325fb60e2
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271134"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639589"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
 
@@ -73,6 +73,37 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
  
 4. Określ **Reguły wygasania** dla typu urlopu. Po skonfigurowaniu tej opcji możesz wybrać jednostkę dni lub miesięcy i ustawić czas wygaśnięcia. Data efektywnego wygaśnięcia służy do określenia, kiedy należy rozpocząć uruchamianie zadania wsadowego przetwarzającego wygaśnięcie urlopu, a kiedy reguła zaczyna obowiązywać. Data wygaśnięcia będzie zawsze przypadać w dniu rozpoczęcia okresu naliczania. Na przykład, jeżeli data rozpoczęcia okresu naliczania to 3 sierpnia 2021 r., a reguła wygasania została ustawiona na 6 miesięcy, reguła zostanie przetworzona w oparciu o przesunięcie terminu wygaśnięcia z daty rozpoczęcia okresu naliczania, a więc zostanie wykonana 3 lutego 2022 r. Salda urlopu, które istnieją w momencie wygaśnięcia, zostaną odjęte od typu urlopu i zostaną odzwierciedlone w saldzie urlopu.
  
+## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurowanie wymaganego załącznika dla typu urlopu
+
+> [!NOTE]
+> Aby użyć pola **Wymagany załącznik**, należy najpierw włączyć funkcję **(wersja zapoznawcza) Konfigurowanie wymaganego załącznika** dla wniosków urlopowych w zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
+1. Na stronie **Urlop i nieobecność**, na karcie **Łącza** w obszarze **Ustawienia** wybierz opcję **Typy urlopów i nieobecności**.
+
+2. Wybierz typ urlopu i nieobecności z listy. Następnie w sekcji **Ogólne** użyj pola **Wymagany załącznik**, aby określić, czy załącznik musi być przesłany, gdy pracownik składa nowy wniosek urlopowy dla wybranego typu urlopu. 
+
+Pracownicy będą mieli obowiązek przekazywania załącznika podczas przesyłania nowego wniosku urlopowego o typie urlopu, w którym jest włączone pole **Wymagany załącznik**. Aby wyświetlić załącznik przekazany jako część wniosku urlopowego, osoby zatwierdzające wnioski urlopowe mogą użyć opcji **Załączniki** dla elementów pracy, które są do nich przypisane. Jeśli dostęp do wniosku urlopowego jest uzyskiwany za pomocą aplikacji Human Resources w Microsoft Teams, opcja **Wyświetl szczegóły** wniosku urlopowego może służyć do przeglądania jego szczegółów i wszelkich załączników.
+
+## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Skonfiguruj jednostki urlopu (godziny/dni) według typu urlopu
+
+> [!NOTE]
+> Aby korzystać z funkcji jednostek urlopu na typ urlopu, należy najpierw włączyć funkcję **(wersja zapoznawcza) Konfiguruj jednostki urlopu na typ urlopu** w Zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
+> [!IMPORTANT]
+> Domyślnie typy urlopów w firmie używają jednostek urlopów z konfiguracji parametrów urlopów na poziomie firmy.
+> 
+> Jednostka urlopu typu urlop i nieobecność może być modyfikowana tylko wtedy, gdy nie ma transakcji urlopowych dla tego typu urlopu.
+> 
+> Tej funkcji nie można wyłączyć po jej włączeniu.
+
+1. Na stronie **Urlop i nieobecność**, na karcie **Łącza** w obszarze **Ustawienia** wybierz opcję **Typy urlopów i nieobecności**.
+
+2. Wybierz typ urlopu i nieobecności z listy. Następnie w sekcji **Ogólne** w polu **Jednostka** wybierz jednostkę urlopu. Można wybrać opcję **Godziny** lub **Dni**.
+
+3. Opcjonalnie: jeśli wybrano opcję **Godziny** w polu **Jednostka**, można użyć pola **Włącz pół dnia definicji**, aby określić, czy pracownicy mogą wybrać pierwszą półrocze, czy drugą pół dnia wolnego, jeśli wnioskują o pół dnia urlopu.
+
+Pracownicy, którzy składają nowy wniosek urlopowy, mogą wybrać różne rodzaje urlopu, aby skonstruować swój wniosek urlopowy. Jednak wszystkie typy urlopów wybrane w ramach jednego wniosku urlopowego powinny mieć tę samą jednostkę urlopową. Pracownicy mogą wyświetlić jednostki urlopu dla każdego typu urlopu w formularzu **Żądanie urlopu**.
+
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Omówienie urlopów i nieobecności](hr-leave-and-absence-overview.md)

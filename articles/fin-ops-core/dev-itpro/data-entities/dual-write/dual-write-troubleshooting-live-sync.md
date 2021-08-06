@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350795"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542522"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Rozwiązywanie problemów z synchronizacją na żywo
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Ten temat zawiera informacje dotyczące rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse. Ten temat zawiera informacje, które mogą pomóc w rozwiązaniu problemów związanych z synchronizacją na żywo.
 
@@ -81,7 +79,7 @@ Aby rozwiązać ten problem, należy przypisać poprawną rolę zabezpieczeń ze
 
     ![Mapowanie organizacji.](media/mapped_business_unit.png)
 
-2. Zaloguj się do środowiska w aplikacji na podstawie modelu w Dynamics 365, przejdź do **Ustawienia \> Zabezpieczenia** i znajdź zespół zamapowanej jednostki biznesowej.
+2. Zaloguj się do środowiska w aplikacji angażującej klienta, przejdź do **Ustawienia \> Zabezpieczenia** i znajdź zespół zamapowanej jednostki biznesowej.
 
     ![Zespół zamapowanej jednostki biznesowej.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ Może pojawić się następujący komunikat o błędzie podczas tworzenia danych
 
 *{„EntityName”: „CustCustomerV3Entity”, „executionStatus”: 2, „fieldResponses”:\[\], „recordResponses”:\[{„ErrorMessage”: „**nie można wygenerować ładunku dla jednostki CustCustomerV3Entity**”, „logDateTime”: „2019-08-27T 18:51:52.5843124Z”, „verboseError”: „Tworzenie ładunku nie powiodło się z powodu błędu nieprawidłowy identyfikator URI: identyfikator URI jest pusty”}\], „isErrorCountUpdated”: prawda}*
 
-Oto, jak wygląda błąd w aplikacji opartej na modelu w Dynamics 365:
+Oto jak wygląda błąd w aplikacji angażującej klienta:
 
 *Wystąpił nieoczekiwany błąd w kodzie ISV. (Błąd = ClientError) Nieoczekiwany wyjątek od wtyczki (Execute): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: nie można przetworzyć konta jednostki — (Próba połączenia nie powiodła się, ponieważ połączona strona nie odpowiedziała prawidłowo po upływie określonego czasu lub ustanowienie połączenia nie powiodło się, ponieważ połączony host nie odpowiedział*
 
@@ -125,6 +123,5 @@ Aby naprawić problem, należy wykonać następujące czynności.
 
 3. Upewnij się, że kolumna **externalenvironmentURL** ma poprawny Dataverse lub adres URL aplikacji. Usuń wszystkie zduplikowane wiersze, które wskazują na nieprawidłowy adres URL Dataverse. Usuń odpowiednie wiersze z tabel DUALWRITEPROJECTFIELDCONFIGURATION i DUALWRITEPROJECTCONFIGURATION.
 4. Zatrzymaj mapowanie tabeli, a następnie uruchom je ponownie
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Tworzenie i aktualizowanie zasad zwrotu i zwrotów dla kanału
 description: W tym temacie wyjaśniono, jak skonfigurować zasady zwrotu i zwrotów dla kanału.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345115"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558304"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
 
@@ -36,12 +36,21 @@ Zakres zasad obecnie ogranicza się do ustawiania ofert płatności, które mog�
 
 ## <a name="enable-return-policy"></a>Włącz zasady zwrotów
 
-Aby włączyć funkcję zasad dotyczących zwrotów kanałów, wykonaj następujące czynności:
+Aby włączyć funkcję zasad zwrotów kanału w centrali handlowej, wykonaj następujące kroki.
 
 1. Otwórz obszar roboczy **Zarządzanie funkcjami** w Dynamics 365 Commerce.
 1. Wyszukaj funkcję **Włącz zasady zwrotów kanału** na liście nazw funkcji.
 1. Wybierz **Włącz teraz**.
-1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1110** (Konfiguracja globalna) w celu dystrybucji zmiany funkcji. 
+1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1110** (Konfiguracja globalna) w celu dystrybucji zmiany funkcji.
+
+## <a name="initialize-the-commerce-scheduler"></a>Zainicjuj harmonogram aplikacji Commerce
+
+Po włączeniu funkcji **Włącz zasady zwrotów kanałów** musisz zainicjować harmonogram Commerce, aby upewnić się, że nowe zmiany w bazie danych funkcji zostaną dodane przez synchronizację Commerce Data Exchange (CDX). 
+
+Aby zainicjować harmonogram handlu w centrali handlowej, wykonaj następujące kroki.
+
+- Przejdź do **Handel detaliczny i inny \> Ustawienia Headquarters \> Harmonogram handlu \> Zainicjuj harmonogram handlu**. Alternatywnie możesz wyszukać „Zainicjuj harmonogram handlu”.
+- W oknie dialogowym **Inicjowanie harmonogramu handlu** upewnij się, że opcja **Usuń istniejącą konfigurację** jest ustawiona na wartość **nie**, a następnie kliknij przycisk **OK**.
 
 ## <a name="configure-return-policy"></a>Konfiguruj zasady zwrotów
 

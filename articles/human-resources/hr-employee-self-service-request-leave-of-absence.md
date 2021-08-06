@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056331"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639421"
 ---
 # <a name="request-a-leave-of-absence"></a>Wnioski o urlopy
 
@@ -49,9 +49,13 @@ Możesz przesłać wniosek o urlop i sprawdzić stan swoich wniosków urlopu w D
 
 2. Aby przejrzyć swoje wnioski o urlop, wybierz pozycję **Wyświetl wniosek o urlop**.
 
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Importowanie wniosków urlopowych z innych systemów lub starszych systemów
+
+Aby zaimportować wnioski urlopowe z innego systemu, należy przejść przez zwykły przepływ pracy, aby utworzyć odpowiednie transakcje urlopowe. Alternatywnie możesz zaimportować transakcje bankowe urlopów i wnioski urlopowe w stanie ukończonym. Pamiętaj, że transakcje bankowe urlopów nie są tworzone automatycznie, jeśli importujesz tylko wnioski urlopowe.
+
 ## <a name="see-also"></a>Informacje dodatkowe
 
-[Wstrzymywanie urlopu](hr-leave-and-absence-suspend-leave.md)
+[Wstrzymaj urlop](hr-leave-and-absence-suspend-leave.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

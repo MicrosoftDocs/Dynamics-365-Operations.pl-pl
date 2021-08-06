@@ -2,7 +2,7 @@
 title: Konfigurowanie stawek
 description: W programie Microsoft Dynamics 365 Human Resources stawki decydują o tym, jaki udział w finansowaniu świadczeń mają pracodawcy i pracownicy.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 85cf561828aa8ef9d80df31436f473b29406e2fd
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266664"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558352"
 ---
 # <a name="configure-rates"></a>Konfigurowanie stawek
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W programie Microsoft Dynamics 365 Human Resources stawki decydują o tym, jaki udział w finansowaniu świadczeń mają pracodawcy i pracownicy. W zależności od konfiguracji wartość może być kwotą lub elastycznymi punktami kredytowymi.
+Stawki decydują o tym, jaki udział w finansowaniu świadczeń mają pracodawcy i pracownicy. Wartość może być kwotą lub liczbą kredytów elastycznych, w zależności od konfiguracji.
 
 Stawki służą do określania, ile pracownicy i pracodawcy płacą za każde świadczenie, na podstawie kilku czynników. Stawki za objęcie świadczeniami mają daty obowiązywania, więc można prowadzić historyczny rejestr stawek. 
 
@@ -42,10 +42,10 @@ Stawki służą do określania, ile pracownicy i pracodawcy płacą za każde ś
    | --- | --- |
    | **Kurs** | Unikatowa nazwa identyfikująca stawkę świadczenia. |
    | **Opis** | Opis stawki świadczenia. |
-   | **Weszła w życie** | Data, od której obowiązuje stawka. Domyślną wartością jest bieżąca data systemowa. 
+   | **Weszła w życie** | Data wejścia w życie stawki. Domyślną wartością jest bieżąca data systemowa. Data ta nie powinna być wcześniejsza niż okres świadczenia. Dobrze jest ustawić tę datę jako datę planu świadczeń. |
    | **Data ważności** | Data zakończenia obowiązywania stawki. Wartość domyślna to 31.12.2154, czyli nigdy. |
-   | **Użyj warstw** | Warstwa, która ma być używana do obliczania stawki świadczenia. Pojedyncza warstwa dla jednowarstwowej stawki świadczenia lub Podwójna warstwa dla dwuwarstwowej stawki świadczenia. Przykładem podwójnej warstwy jest warstwa oparta na płci i wieku. |
-   | **Częstotliwość płatności** | Częstotliwość płatności określająca, jak często składka za świadczenie o podanej stawce jest wpłacana dostawcy świadczeń. Jeśli na przykład częstotliwość płatności wynosi Miesięcznie, to stawka świadczenia reprezentuje miesięczną kwotę płatności. |
+   | **Użyj warstw** |  Użyj tego pola, jeśli masz logikę, której należy użyć do określenia stawki. Jeśli na przykład stawka musi wzrosnąć na podstawie wieku, wybierz tutaj wartość. Wybierz **Pojedyncza warstwa** dla jednowarstwowej stawki świadczenia lub **Podwójna warstwa** dla dwuwarstwowej stawki świadczenia. Przykładem podwójnej warstwy jest warstwa oparta na płci i wieku. Po wybraniu wartości wybierz opcję **Akcje**, a następnie wybierz **stawki warstw**. Jeśli stawkę ryczałt nie zmieni się, pozostaw to pole puste. |
+   | **Częstość płatności** | Określ, jak często stawka składki świadczenia powinna być wypłacana świadczeniodawcy. Stawki wprowadzane na stronie opisanej w dalszej części tego tematu będą oparte na określonej tutaj częstotliwości płatności. Na przykład po wprowadzeniu w tym polu wartości **Miesięcznie** i wprowadzeniu stawki pracownika **$100** zakłada się, że świadczenie będzie kosztowało pracownika $100 w miesiącu. Jednak pracownik może otrzymywać wypłatę dwa razy w miesiącu, na podstawie częstotliwości wypłaty świadczenia określonej w kartotece pracownika. W takim przypadku, gdy pracownik zaloguje się do samoobsługi pracowniczej, kwota, jaką zapłaci, wyniesie 50 USD, ponieważ stawka, którą pokazuje samoobsługa pracownicza, jest oparta na częstotliwości płatności pracownika. |
    | **Zaokrąglanie stawki częstotliwości płac** | Dostępne metody zaokrąglania kursu to: Standardowe, Obcięte, Normalne, W dół oraz Zaokrąglenie w górę. </br></br><ul><li>**Standard** — zawsze zaokrąglaj. Na przykład 10,611 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,23. </li><li>**Obcięte** — zawsze zaokrąglaj w dół. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,24. </li><li>**Normalne** — wartości dziesiętne kończące się lub większe niż 5 będą zaokrąglać w 0. Wartości dziesiętne kończące się w lub mniejsze niż 4 będą zaokrąglane w stronę zera. Na przykład 10,615 zaokrągli się do 10,62. Zaokrągla się do -10,235 do -10,24. Zaokrągla się do -10,614 do -10,61. Zaokrągla się do -10,234 do -10,23. </li><li>**W dół** — zaokrąglaj w stronę zera. Na przykład 10,619 zaokrągli się do 10,61. Zaokrągla się do -10,231 do -10,23. </li><li>**Zaokrąglanie w górę** — zaokrąglanie w górę od zera. Na przykład 10,619 zaokrągli się do 10,62. Zaokrągla się do -10,231 do -10,24. |
    | **Kwota pracownika etatowego osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |
    | **Kwota pracodawcy osoby niepalącej** | Kwota, jakiej dostawca świadczeń żąda za niepalącego pracownika. Jest to kwota płacona dostawcy świadczeń przez pracodawcę i powinna być oparta na częstotliwości płatności określonej w konfiguracji stawki. |
@@ -66,6 +66,9 @@ Jeśli stawka różni się w zależności od różnych czynników, w ustawieniac
 
 Można również używać podwójnych warstw. Jeśli w formularzu **Konfiguracja stawki** w ustawieniu **Użyj warstw** zaznaczysz opcję **Podwójna warstwa**, można zdefiniować stawki na podstawie dwóch wymiarów. Na przykład można skonfigurować system dwuwarstwowy w taki sposób, że u mężczyzn przy wieku do 34,99 roku kwota dla osób niepalących wynosi 2. U mężczyzn w wieku do 39,99 roku kwota dla osób niepalących wynosi 3. U kobiet w wieku do 34,99 roku kwota dla osób niepalących wynosi 1,8. U kobiet w wieku do 39,99 roku kwota dla osób niepalących wynosi 2,8.
 
+> [!IMPORTANT]
+> Opcja w sekcji **Dane osobowe** w kartotece pracownika służy do wskazania, czy pracownik jest palaczem. Jeśli pracownik jest zarejestrowany jako palacz, zostanie zastosowana stawka palacza. (Oznaczenie nigdy nie jest wyświetlane pracownikowi).
+   
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Stawki**.
 
 2. Wybierz jedną lub więcej stawek z listy, wybierz opcję **Akcje**, a następnie wybierz opcję **Stawki warstwowe**.
@@ -92,6 +95,7 @@ Można również używać podwójnych warstw. Jeśli w formularzu **Konfiguracja
    | **Wskaźnik osoby palącej kredytu elastycznego** | Liczba elastycznych punktów kredytowych, jakie trzeba wydać na świadczenie, oparta na obliczeniu zdefiniowanym dla poziomu warstwy dla osób palących. |
 
 5. Wybierz opcję **Zapisz**. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

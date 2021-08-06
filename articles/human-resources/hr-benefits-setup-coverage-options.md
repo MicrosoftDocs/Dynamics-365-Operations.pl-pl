@@ -2,7 +2,7 @@
 title: Tworzenie opcji zapotrzebowania
 description: Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9f67a97ec57bade840e1035c6011b94427a77c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1e8f13075a9835963c231a8e4e8a737368a952ba
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055587"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558232"
 ---
 # <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Opcje zapotrzebowań w Microsoft Dynamics 365 Human Resources to poziomy zapotrzebowań na wybory uczestnika w planie lub programie świadczeń. Na przykład opcje pokrycia mogą obejmować **Tylko pracownik** dla planu medycznego lub **Wynagrodzenie x2** dla planu ubezpieczenia na życie. Po zdefiniowaniu można ponownie użyć opcji świadczeń. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
+Opcje ubezpieczenia określają, kto powinien być objęty ubezpieczeniem lub jaka część jest dostępna w planie ubezpieczeniowym. Na przykład w przypadku abonamentu medycznego możesz mieć opcję **tylko pracownik**, **pracownik + 1** i **rodzina**. W przypadku ubezpieczenia na życie możesz zaoferować ubezpieczenie na **1 x pensja** lub **2 x pensja**.
 
-Po zdefiniowaniu opcji zapotrzebowania należy dołączyć opcje zapotrzebowania do typu planu świadczeń. Typ planu jest następnie kojarzony z planem lub programem świadczeń. Opcje zapotrzebowania skojarzone z typem planu będą dostępne dla wszystkich planów utworzonych przy użyciu tego typu planu. 
+Po zdefiniowaniu opcji zakresu świadczeń można je ponownie wykorzystać. Istnieje możliwość skojarzenia opcji z jednym lub kilkoma planami.
 
+> [!IMPORTANT]
+> Po zdefiniowaniu opcji ubezpieczenia dołącz je do typu planu świadczeń. Typ planu jest następnie kojarzony z planem lub programem świadczeń. Opcje zasięgu skojarzone z typem planu są dostępne dla wszystkich tworzonych planów tego typu.
+
+## <a name="create-coverage-options"></a>Tworzenie opcji zapotrzebowania
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Konfiguracja** wybierz opcję **Opcje objęcia świadczeniem**.
 
 2. Wybierz pozycję **Nowy**.
@@ -40,7 +44,7 @@ Po zdefiniowaniu opcji zapotrzebowania należy dołączyć opcje zapotrzebowania
    | --- | --- |
    | **Opcja objęcia świadczeniem** | Unikatowa nazwa opcji objęcia świadczeniem. |
    | **Opis** | Opis opcji objęcia świadczeniem. |
-   | **Kod objęcia świadczeniem** | Kody objęcia świadczeniem przypisują kwoty minimalne i maksymalne dla każdego uprawnionego typu osoby objętej. Kod objęcia świadczeniem wskazuje, kto jest objęty lub jaki jest zakres dozwolony dla typu planu. Można wyrażać kwotę pokrycia jako kwotę dolara lub procent. Na przykład:</br></br>- **EMP + 1** — aby się kwalifikować, pracownik etatowy musi mieć wybraną osobę zależną (Jeśli wybrano więcej niż jedną, nie kwalifikuje się on już do tego celu).</br></br>- **EMP + Rodzina** — Aby się kwalifikować, pracownik musi mieć wybrane co najmniej dwie osoby zależne. |
+   | **Kod objęcia świadczeniem** | Kody objęcia świadczeniem przypisują kwoty minimalne i maksymalne dla każdego uprawnionego typu osoby objętej. Kod objęcia świadczeniem wskazuje, kto jest objęty lub jaki jest zakres dozwolony dla typu planu. Można wyrażać kwotę pokrycia jako kwotę dolara lub procent. Na przykład:<ul><li>**Pracownik etatowy + 1** — aby się kwalifikować, pracownik etatowy musi mieć wybraną osobę zależną (Jeśli wybrano więcej niż jedną, nie kwalifikuje się on już do tego celu).</li><li>**Pracownik etatowy + Rodzina** — Aby się kwalifikować, pracownik musi mieć wybrane co najmniej dwie osoby zależne.</li></ul> |
    | **Maksymalna liczba** | Maksymalna liczba osób zależnych. |
    | **Stan** | Stan opcji objęcia świadczeniem. Jeśli stan opcji objęcia świadczeniem jest określony jako nieaktywny, nie można wybierać opcji objęcia w przypadku typów planów. |
    | **Procent** | Kwota procentu. To pole jest aktywne tylko wtedy, gdy w polu Kod objęcia świadczeniem wybrano % x wynagrodzenie. |

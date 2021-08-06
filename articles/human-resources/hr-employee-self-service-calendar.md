@@ -2,7 +2,7 @@
 title: Tworzenie kalendarza zespołu
 description: W programie Dynamics 365 Human Resources można wyświetlać i tworzyć kalendarze zespołu.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052104"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639397"
 ---
 # <a name="view-team-and-company-calendars"></a>Wyświetlanie kalendarzy zespołów i firm
 
@@ -30,7 +30,7 @@ W programie Dynamics 365 Human Resources można wyświetlać kalendarze zespoł�
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Wyświetlanie kalendarza zespołu jako pracownik etatowy
 
-1. W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Kalendarz nieobecności zespołu** w obszarze **Podsumowanie**.
+- W obszarze roboczym **Samoobsługa pracownika etatowego** wybierz opcję **Kalendarz nieobecności zespołu** w obszarze **Podsumowanie**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Wyświetlanie kalendarza zespołu jako menedżer
 
@@ -39,6 +39,21 @@ W programie Dynamics 365 Human Resources można wyświetlać kalendarze zespoł�
 2. Wybierz kolejno opcje **Urlopy i nieobecności** oraz **Wyświetl kalendarz nieobecności menedżera**.
 
 Menedżerowie mogą również uzyskać dostęp do kalendarza zespołowego z **Czas oczekiwania na nierealizację żądania dla mojego zespołu**, **Zatwierdzony czas wolny** i **Żądania czasu wolnego**. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Wyświetl kalendarz menedżera nieobecności jako menedżer nieobecności
+
+> [!NOTE]
+> Aby wyświetlić kalendarz menedżera nieobecności, należy najpierw włączyć funkcję **Menedżer nieobecności (wersja zapoznawcza)**, aby zarządzać funkcjami zarządzania urlopami w zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
+
+Użytkownicy pełniący rolę menedżera nieobecności mogą przeglądać prośby o urlop w swoim kalendarzu. Wykonaj poniższe czynności, aby uzyskać dostęp do kalendarza urlopów.
+
+1. W obszarze roboczym **Samoobsługa pracownika** wybierz opcję **Menedżer nieobecności**, a następnie **Kalendarz menedżera nieobecności**.
+
+2. W polu **Data** wpisz żądane daty.
+
+3. W razie potrzeby zaktualizuj opcje widoku.
+
+Kalendarz menedżera nieobecności zawiera wszystkie rekordy pracowników, którzy podlegają menedżerowi nieobecności w hierarchii urlopów.
 
 ## <a name="view-a-company-calendar"></a>Wyświetlanie kalendarza firmy
 
@@ -64,13 +79,11 @@ Konfiguracja kalendarza w parametrach urlopu i nieobecności określa dostępne 
 
 Kalendarze można również filtrować według kierowników lub działów. Przypisanie stanowiska głównego określa pracowników, którzy są wyświetlani po ustawieniu tych filtrów. 
 
->[!IMPORTANT]
->Funkcja wyświetlania urlopów i nieobecności w różnych firmach jest obecnie dostępna w wersji zapoznawczej. Należy ją włączyć w środowisku **piaskownicy**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br><br>
->Następnie należy włączyć funkcję w **Udostępnianych parametrach zasobów ludzkich**, aby wyświetlić filtr firmy w kalendarzach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów urlopu i nieobecności](hr-leave-and-absence-parameters.md).<br><br>
->Kalendarz można filtrować według firm. Aby wyświetlić wszystkich pracowników niezależnie od firmy, należy wyczyścić pole filtru i nacisnąć Enter. 
+> [!IMPORTANT]
+> Funkcję **widoku urlopów między firmami** można włączyć w zarządzaniu funkcjami. Następnie musisz włączyć funkcję na stronie **Udostępnianych parametrach zasobów ludzkich**, aby wyświetlać filtr podmiotu prawnego w kalendarzach. Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów urlopu i nieobecności](hr-leave-and-absence-parameters.md).
+> 
+> Kalendarz można filtrować według firm. Aby wyświetlić wszystkich pracowników, niezależnie od firmy, wyczyść pole filtru, a następnie wybierz **Enter**. 
 
 Aby uzyskać informacje na temat ustawień kalendarza, zobacz [Konfigurowanie parametrów kalendarza](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

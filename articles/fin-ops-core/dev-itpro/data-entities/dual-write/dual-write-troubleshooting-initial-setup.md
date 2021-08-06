@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350843"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542422"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Rozwiązywanie problemów podczas konfiguracji początkowej
 
@@ -71,7 +71,7 @@ Aby zapewnić zgodę aplikacji, wykonaj następujące kroki.
 
 Aby zapewnić poprawne działanie funkcji podwójnego zapisywania, w środowisku Dataverse zostaną utworzone firmy wybrane podczas konfigurowania. Domyślnie te firmy są tylko do odczytu, a właściwość **IsDualWriteEnable** ma wartość **prawda**. Ponadto tworzony jest domyślny właściciel i zespół jednostki biznesowej będący właścicielem, który zawiera nazwę firmy. Przed włączeniem map należy sprawdzić, czy jest określony domyślny właściciel zespołu. Aby znaleźć tabelę **firmy (CDM\_Company)**, należy wykonać następujące kroki:
 
-1. W aplikacji opartej na modelu w Dynamics 365 wybierz filtr w prawym górnym rogu.
+1. W aplikacji służącej do obsługi klienta wybierz filtr w prawym górnym rogu.
 2. Z listy rozwijanej wybierz **Firma**.
 3. Wybierz opcję **Uruchom**, aby zobaczyć wyniki.
 4. Umożliwia wybór firmy połączonej w przypadku skonfigurowania podwójnego zapisywania.

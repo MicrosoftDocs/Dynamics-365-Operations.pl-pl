@@ -2,7 +2,7 @@
 title: Konfigurowanie reguł i opcji uprawnień
 description: Określenie reguł i opcji dotyczących uprawnień w obszarze roboczym Zarządzanie świadczeniami w module Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351664"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558376"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurowanie reguł i opcji uprawnień 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Po skonfigurowaniu niezbędnych parametrów zarządzania świadczeniami w module Microsoft Dynamics 365 Human Resources można utworzyć reguły uprawnień, pakiety, okresy i programy, które zostaną skojarzone z planami świadczeń.
+Po skonfigurowaniu wymaganych parametrów zarządzania świadczeniami można utworzyć reguły, pakiety, okresy i programy uprawnień, które będą kojarzone z planami świadczeń.
+
+Reguły kwalifikacji służą do określenia, czy pracownicy kwalifikują się do planu. Pracownicy muszą spełniać warunek co najmniej jednej zasady, aby zostać uznanymi za kwalifikujących się do świadczenia. Na przykład masz dwie reguły na planie. Pierwsza reguła (wiersz 1) stanowi, że typem pracownika musi być **Pracownik**. Druga zasada (wiersz 2) mówi, że pracownik musi być zatrudniony w pełnym wymiarze czasu pracy. Dlatego pracownicy, którzy spełniają zasadę 1, kwalifikują się, nawet jeśli są zatrudnieni tylko w niepełnym wymiarze godzin.
+
+Możesz jednak skonfigurować pojedynczą regułę, która ma wiele warunków. W takim przypadku pracownicy muszą spełnić wszystkie warunki reguły, aby zostać uznanymi za uprawnionych do świadczenia. Na przykład masz regułę, która nazywa się **Pracownik w pełnym wymiarze godzin**. Ta reguła stanowi, że typ pracownika musi być **pracownikiem**, *a* pracownik musi być zatrudniony w pełnym wymiarze godzin. Dlatego pracownicy muszą spełniać oba warunki reguły, aby się kwalifikować.
+
+> [!IMPORTANT]
+> Z każdym programem świadczeń musi być powiązana co najmniej jedna reguła kwalifikacji. Z korzyścią możesz powiązać wiele reguł.
 
 ## <a name="create-an-eligibility-rule"></a>Tworzenie reguły uprawnienia
 
@@ -72,7 +79,7 @@ W czasie otwartej rejestracji pracownicy mogą wybierać plany świadczeń. Jeś
    | **Typ kwalifikującego się stanowiska** | Określa typ lub typy stanowisk spełniające regułę uprawnienia. Na przykład Pełny etat. |
    | **Stan uprawniony** | Określa stany/województwa/prowincje itd. spełniające regułę uprawnienia. Na przykład Dakota Północna USA lub Kolumbia Brytyjska, Kanada. |
    | **Kwalifikujące się warunki zatrudnienia** | Określa warunki zatrudnienia spełniające regułę uprawnienia. Na przykład Bez gwarancji zatrudnienia lub Umowa zbiorowa. |
-   | **Uprawniony związek** | Określa związki zawodowe, do których przynależność spełnia regułę uprawnienia. Na przykład Amerykański związek zawodowy operatorów wózków widłowych. </br></br>W przypadku używania reguły uprawnienia z kryterium związku zawodowego rekord przynależności do związku musi mieć wypełnioną datę końcową. Nie można pozostawić tego pola pustego. |
+   | **Uprawniony związek** | Określa związki zawodowe, do których przynależność spełnia regułę uprawnienia. Na przykład Amerykański związek zawodowy operatorów wózków widłowych.</br></br>W przypadku używania reguły uprawnienia z kryterium związku zawodowego rekord przynależności do związku musi mieć wypełnioną datę końcową. Nie można pozostawić tego pola pustego. |
    | **Uprawniony kod pocztowy** | Określa kody pocztowe spełniające regułę uprawnienia. Na przykład 58104. |
 
 5. W obszarze **Dodatkowe szczegóły** można obejrzeć następujące dodatkowe informacje.
@@ -213,7 +220,7 @@ Za pomocą programów kredytu elastycznego można rejestrować pracowników na �
    | Identyfikator kredytu świadczenia | Unikatowy identyfikator programu kredytu elastycznego. |
    | Opis | Opis programu kredytu elastycznego. | 
    | Data Od | Data i godzina aktywacji programu kredytu elastycznego. |
-   | Data Do | Data i godzina zakończenia działania programu kredytu elastycznego. Można pozostawić wartość domyślną (31.12.2154), aby wskazać, że program kredytu elastycznego nie ma zaplanowanego okresu ważności. |
+   | Data Do | Data i godzina zakończenia działania programu kredytu elastycznego. Można pozostawić wartość domyślną (12/31/2154), aby wskazać, że program kredytu elastycznego nie ma zaplanowanego okresu ważności. |
    | Suma wartości kredytu | Liczba punktów kredytowych, jakie będzie miał każdy pracownik na swoje świadczenia. |
    | Reguła naliczania proporcjonalnego | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych, gdy pracownik zostanie zatrudniony w trakcie okresu wykorzystywania elastycznych punktów kredytowych. </br></br><ul><li>**Brak** — pracownik nie otrzymuje żadnych elastycznych punktów kredytowych, jeśli zostanie zatrudniony po rozpoczęciu okresu programu kredytu elastycznego.</li><li>**Pełny kredyt** — pracownik otrzymuje pełną liczbę elastycznych punktów kredytowych, niezależnie od momentu, w którym został zatrudniony.</li><li>**Naliczanie proporcjonalne** — pracownik otrzymuje liczbę elastycznych punktów kredytowych proporcjonalną do daty rozpoczęcia zatrudnienia.</li></ul> |
    | Formuła naliczania proporcjonalnego kredytu elastycznego | Reguła używana do proporcjonalnego obliczania liczby elastycznych punktów kredytowych dla pracowników, którzy zostali zatrudnieni w trakcie okresu świadczeniowego zdefiniowanego w programie kredytu elastycznego. Naliczanie proporcjonalne jest oparte na dacie rozpoczęcia zatrudnienia. To pole jest używane tylko w przypadku zaznaczenia wartości **Naliczanie proporcjonalne** w polu **Reguła naliczania proporcjonalnego**. </br></br><ul><li>**Dziennie** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu dni. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę dni w okresie. Jeśli na przykład okres świadczeniowy wynosi 400 dni, system podzieli łączną liczbę elastycznych punktów kredytowych przez 400 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na dzień.</li><li>**Bieżący miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do bieżącego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li><li>**Następny miesiąc** — liczba elastycznych kredytów, które pracownik otrzymuje, odnosi się do poziomu miesięcy, z zaokrągleniem do następnego miesiąca. Łączna liczba elastycznych punktów kredytowych jest dzielona przez liczbę miesięcy w okresie. Jeśli na przykład okres świadczeniowy wynosi 15 miesięcy, system podzieli łączną liczbę elastycznych punktów kredytowych przez 15 w celu obliczenia liczby elastycznych punktów kredytowych, jaką pracownicy otrzymują na miesiąc.</li></ul> |

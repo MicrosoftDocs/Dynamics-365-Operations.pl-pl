@@ -2,7 +2,7 @@
 title: Zarządzanie urlopem pracownika etatowego
 description: Zarządzanie urlopami pracownika etatowego w Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055635"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639469"
 ---
 # <a name="manage-employee-leave"></a>Zarządzanie urlopem pracownika etatowego
 
@@ -44,12 +44,11 @@ Urlopem pracownika etatowego można zarządzać według typu urlopu. Obejmuje to
 
 Możesz uwzględnić kod przyczyny i komentarz podczas korygowania salda urlopu pracownika etatowego. 
 
->[!IMPORTANT]
->Opcja wyświetlania dodatkowych informacji o saldach urlopowych jest dostępna w wersji zapoznawczej. Należy ją włączyć w środowisku **piaskownicy**. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).<br>
->Po umieszczeniu kursora na saldzie urlopowym zostaną wyświetlone następujące informacje:<br>
->- **Dostępne** : Łącznie w tym roku — Wykorzystane w tym roku
->- **Łącznie w tym roku**: wszystkie naliczone urlopy, korekty i urlopy przeniesione na następny okres dla danego roku
->- **Wykorzystane w tym roku**: wszystkie zatwierdzone urlopy
+Teraz, gdy najedziesz kursorem na dowolne saldo urlopów, wyświetlone zostaną następujące informacje:
+
+- **Dostępne** — wartość **Łącznie w tym roku** pomniejszona o wartość **Wzięte w tym roku**.
+- **Łącznie w tym roku** – wszystkie naliczone urlopy, korekty i urlopy przeniesione na następny okres dla danego roku.
+- **Wykorzystane w tym roku** – wszystkie zatwierdzone urlopy.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
