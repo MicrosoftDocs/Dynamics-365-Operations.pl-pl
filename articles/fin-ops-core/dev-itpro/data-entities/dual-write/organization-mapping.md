@@ -4,24 +4,17 @@ description: W tym temacie opisano integrację danych organizacji między aplika
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355305"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542594"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Hierarchia organizacyjna w usłudze Dataverse
 
@@ -45,32 +38,17 @@ Mapy tabeli hierarchii organizacyjnej są dostępne dla jednokierunkowego synchr
 
 Informacje o produkcie zawierają wszystkie informacje związane z produktem i jego definicję, takie jak wymiary produktu lub wymiary śledzenia i przechowywania. W poniższej tabeli przedstawiono kolekcję mapowań tabel, która umożliwia synchronizowanie produktów i informacji pokrewnych.
 
-Aplikacje Finance and Operations | Inne aplikacje w usłudze Dynamics 365 | opis
+Aplikacje Finance and Operations | Aplikacje Customer Engagement     | opis
 -----------------------|--------------------------------|---
-Cele hierarchii organizacji | msdyn_internalorganizationhierarchypurposes | Ten szablon umożliwia jednokierunkową synchronizację tabeli celu hierarchii organizacyjnej.
-Typ hierarchii organizacyjnej | msdyn_internalorganizationhierarchytypes | Ten szablon umożliwia jednokierunkową synchronizację tabeli typu hierarchii organizacyjnej.
-Hierarchia organizacyjna — opublikowana | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację tabeli opublikowanej hierarchii organizacyjnej.
-Jednostka operacyjna | msdyn_internalorganizations |
-Osoby prawne | msdyn_internalorganizations |
-Firmy | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[Osoby prawne](mapping-reference.md#102) | cdm_companies | Umożliwia synchronizację dwukierunkową informacji firmy (firmy).
+[Osoby prawne](mapping-reference.md#142) | msdyn_internalorganizations |
+[Jednostka operacyjna](mapping-reference.md#143) | msdyn_internalorganizations |
+[Hierarchia organizacyjna — opublikowana](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Ten szablon umożliwia jednokierunkową synchronizację tabeli opublikowanej hierarchii organizacyjnej.
+[Cele hierarchii organizacji](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Ten szablon umożliwia jednokierunkową synchronizację tabeli celu hierarchii organizacyjnej.
+[Typ hierarchii organizacyjnej](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Ten szablon umożliwia jednokierunkową synchronizację tabeli typu hierarchii organizacyjnej.
 
 ## <a name="internal-organization"></a>Wewnętrzna organizacja
 
-Informacje o organizacji wewnętrznej Dataverse pochodzą z dwóch tabel, **jednostki operacyjnej** i **firm**.
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
+Informacje o organizacji wewnętrznej Dataverse pochodzą z dwóch tabel, **Jednostki operacyjnej** i **Firm**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
