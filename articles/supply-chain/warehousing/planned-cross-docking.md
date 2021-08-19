@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730017"
 ---
 # <a name="planned-cross-docking"></a>Planowany przeładunek kompletacyjny
 
@@ -117,6 +117,9 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Numer sekwencyjny:** *1*
     - **Źródło dostawy:** *Zamówienie zakupu*
 
+> [!NOTE]
+> Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu przeładunku kompletacyjnego. Zapytanie dla szablonów przeładunku kompletującego ma tylko tabelę *InventTable* (pozycje) i wewnętrznie sprzężoną tabelę *WHSInventTable* (pozycje WHS). Jeśli chcesz dodać inne tabele do zapytania, możesz do nich dołączyć, używając tylko *sprzężeń typu istnieje* lub *sprzężeń typu nie istnieje*. Podczas filtrowania w tabelach połączonych rekord z tabeli głównej jest pobierany dla każdego pasującego rekordu w tabeli połączonej. Jeśli typ sprzężenia to *sprzężenie istnieje*, wyszukiwanie kończy się po znalezieniu pierwszego dopasowania. Na przykład jeśli tabela wiersza zamówienia sprzedaży zostanie przyłączona do tabeli zapasów, system sprawdza poprawność i zwraca towary, dla których co najmniej jeden wiersz zamówienia sprzedaży ma zdefiniowany warunek. Zasadniczo dane są pobierane z tabeli nadrzędnej (pozycje), a nie z tabeli podrzędnej (wiersz zamówienia sprzedaży). W związku z tym filtrowanie według dokumentów źródłowych, takich jak wiersze zamówienia sprzedaży lub klientów, nie może być przeprowadzone od razu po zainstalowaniu produktu.
+
 ### <a name="create-a-work-class"></a>Tworzenie klasy roboczej
 
 1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Praca \> Klasy robocze**.
@@ -151,6 +154,9 @@ Planowany przeładunek kompletacyjny jest implementowany jako metoda księgowani
     - **Identyfikator klasy roboczej:** *CrossDock*
 
 1. Wybierz opcję **Zapisz** i upewnij się, że zaznaczono pole wyboru **Prawidłowe** dla szablonu *51 Cross Dock*.
+1. Opcjonalnie: wybierz opcję **Edytuj zapytanie**, jeśli chcesz ustawić kryteria, aby kontrolować, kiedy i gdzie jest używany szablon pracy.
+
+    Za pomocą specjalnego zapytania można kontrolować sposób używania określonego szablonu pracy. Na przykład można określić, że szablon może być używany do pracy tylko w określonej lokalizacji. Jeśli szablon pracy przeładunku kompletacyjnego być stosowany w określonej lokalizacji, należy odfiltrować pole **Lokalizacja początkowa**, a nie w polu **Lokalizacja**, ponieważ tworzenie pracy dla procesów przychodzących (zakup, przeładunek kompletacyjny i uzupełnianie zapasów) rozpoczyna się od wiersza odłożenia. Podczas tworzenia pracy dyrektywa lokalizacji ustawia pole **Lokalizacja** na lokalizację odłożenia. Jednak lokalizacja pobrania jest przechowywana w polu **Lokalizacja początkowa**.
 
 > [!NOTE]
 > Identyfikatory klas roboczych dla typów pracy *Pobranie* i *Umieszczenie* muszą być takie same.
