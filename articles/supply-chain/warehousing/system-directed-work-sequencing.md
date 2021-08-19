@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5387aaf5a5e0d20ac22595fbea86a25fdf38a771
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e349df6b7e2a627562c65b961385625b0ad95b5423fa25b9139af3a8a227321b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831129"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733331"
 ---
 # <a name="system-directed-work-sequencing"></a>Harmonogram prac sterowany przez system
 
@@ -140,7 +140,7 @@ Aby przejść przez ten scenariusz przy użyciu określonych przykładowych reko
 
 ### <a name="location-directives"></a>Dyrektywy lokalizacji
 
-Jeśli są używane domyślne dane firmy Contoso, w zapytaniu dot. dyrektywy lokalizacji nie są wymagane żadne zmiany. Aby jednak upewnić się, że w dyrektywach lokalizacji są przechwytywane towary znajdujące się w zamówieniach sprzedaży, po zastosowaniu tej funkcji w środowisku firmy innej niż Contoso, należy utworzyć nową dyrektywę lokalizacji. Aby sprawdzić ustawienia w środowisku demonstracyjnym, wykonaj następujące kroki.
+Jeśli są używane domyślne dane firmy Contoso, w zapytaniu o akcję dyrektywy lokalizacji nie są wymagane żadne zmiany. Aby jednak upewnić się, że w dyrektywach lokalizacji są przechwytywane towary znajdujące się w zamówieniach sprzedaży, po zastosowaniu tej funkcji w środowisku firmy innej niż Contoso, należy utworzyć nową dyrektywę lokalizacji. Aby sprawdzić ustawienia w środowisku demonstracyjnym, wykonaj następujące kroki.
 
 1. Przejdź kolejno do pozycji **Zarządzanie magazynem** \> **Ustawienia** \> **Dyrektywy lokalizacji**.
 1. W polu **Typ zlecenia pracy** wybierz opcję *Zamówienia sprzedaży*.
