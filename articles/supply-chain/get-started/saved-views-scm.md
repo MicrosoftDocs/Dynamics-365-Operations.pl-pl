@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270666"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728634"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standardowe zapisane widoki w aplikacji Supply Chain Management
 
@@ -77,6 +77,18 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zaopatrzenie i
 | Szczegóły zamówienia zakupu | Zarządzanie finansami | Ten uproszczony widok został zoptymalizowany pod kątem wykonywania działań związanych z finansami, takich jak fakturowanie i sprawdzanie cen, sum i opłat. | Zapisane widoki dla zamówień zakupu |
 | Szczegóły zamówienia zakupu | Zatwierdzenie zamówienia | Ten uproszczony widok został zoptymalizowany pod kątem zatwierdzania zamówień zakupu. | Zapisane widoki dla zamówień zakupu |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Zapisane widoki dla modułu Zarządzanie informacjami o produktach
+
+W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie informacjami o produktach.
+
+| Strona | Nazwa widoku | Opis widoku | Nazwa funkcji |
+|---|---|---|---|
+| Lista zwolnionych produktów | Tworzenie produktu | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas tworzenia produktów. | Zapisane widoki zwolnionych produktów |
+| Szczegóły zwolnionego produktu | Tworzenie produktu | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas tworzenia produktów. | Zapisane widoki zwolnionych produktów |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami logistycznymi | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami logistycznymi dla produktów. | Zapisane widoki zwolnionych produktów |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami związanymi z zakupem | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami związanymi z zakupem dla produktów. | Zapisane widoki zwolnionych produktów |
+| Szczegóły zwolnionego produktu | Zarządzanie informacjami związanymi ze sprzedażą | Uproszczony widok strony, który zawiera tylko pola używane najczęściej podczas zarządzania informacjami związanymi ze sprzedażą dla produktów. | Zapisane widoki zwolnionych produktów |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Zapisane widoki dla modułu Kontrola produkcji
 
 W poniższej tabeli opisano zapisane widoki dostępne dla modułu Kontrola produkcji.
@@ -110,8 +122,8 @@ W poniższej tabeli opisano zapisane widoki dostępne dla modułu Zarządzanie m
 | Wszystkie wysyłki | Przetwarzanie przychodzące | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek przychodzących. | Zapisane widoki dla przetwarzania wysyłki |
 | Wszystkie wysyłki | Przetwarzanie wychodzących | Ten uproszczony widok zawiera tylko pola, które są najczęściej używane do przetwarzania wysyłek wychodzących. | Zapisane widoki dla przetwarzania wysyłki |
 | Wszystkie grupy czynności | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla przetwarzania grupy czynności |
-| Warsztat planowania wysyłki ładunku | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla warsztatu planowania pracy |
-| Szczegóły pracy | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla strony szczegółów pracy |
+| Warsztat planowania wysyłki ładunku | Uproszczony | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisane widoki dla warsztatu planowania wysyłki ładunku |
+| Szczegóły pracy | Uproszczone | Ten uproszczony widok zawiera tylko najczęściej używane pola. Dzięki temu zapewnia on szybszy przegląd i usprawnione procesy pracy. | Zapisany widok dla strony szczegółów pracy |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
