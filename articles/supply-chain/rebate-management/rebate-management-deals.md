@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7ba42df021eddccbae389321b38828c7a92e50c8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 5b8a1beae80ad63f26cd1b532d1d6026a5b38a8701c9c1d0aadfee5da8965477
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716499"
 ---
 # <a name="rebate-management-deals"></a>Zarządzanie rabatami — umowy
 
@@ -102,6 +102,7 @@ Po utworzeniu umowy zgodnie z opisem w poprzedniej sekcji można ją otworzyć z
         - *Wszyscy* — Wiersz umowy dotyczy wszystkich pozycji.
 
     - **Relacje towarów** – Jeśli w polu Kod konta wybrano opcję *Tabela* lub **Kod towaru**, wybierz towar, którego dotyczy transakcja. W przypadku wybrania opcji *Grupa* należy zaznaczyć grupę towarów. W przypadku wybrania *Wszystko* pole to nie jest dostępne.
+    - **Typ jednostki** — wybierz typ jednostki, który ma zastosowanie do wiersza transakcji (*Jednostka magazynowa* lub *Jednostka ilości efektywnej*). Należy zauważyć, że to pole może być puste dla starszych rekordów. W takim przypadku przyjmuje się wartość *Jednostka magazynowa*.
     - **(Parametry zarządzania zapasami)** — w pozostałych polach wiersza umowy należy określić wartości parametrów zarządzania zapasami, które będą używane do definiowania towarów uwzględnionych w układzie (takich jak rozmiar towaru, kolor, styl, witryna i magazyn). Aby dodać lub usunąć wymiary, wybierz pozycję **Wyświetl wymiary** w okienku akcji.
 
 1. Na okienku akcji wybierz opcję **Zapisz**.
