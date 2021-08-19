@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6340001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720259"
 ---
 # <a name="rebate-management-module-overview"></a>Omówienie modułu Zarządzanie rabatami
 
@@ -91,10 +91,9 @@ Użytkownicy nie muszą już obsługiwać transakcji lub aprowizacji w dwóch kr
 
 Podczas obliczania rabatów proces tworzy transakcje, które można przeglądać przed zaksięgowaniem. W odrębnym procesie księgowane są transakcje związane z zarządzaniem rabatami. Dziennik, nota uznaniowa lub transakcja obciążeniowa mogą być następnie utworzone podczas księgowania proponowanych transakcji. Raporty i listy transakcji można uzyskać w celu zapewnienia zgodności, efektywności i przezroczystości.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Gwarantowane płatności tantiem
 
-W zarządzaniu rabatami funkcja automatycznego generowania płatności umożliwia szybkie i łatwe obsługę tantiem, nawet jeśli mają zastosowanie wymagane minimum. 
+W zarządzaniu rabatami funkcja automatycznego generowania płatności umożliwia szybkie i łatwe obsługę tantiem, nawet jeśli mają zastosowanie wymagane minimum.
 
 ## <a name="maximizing-spend-versus-rebates"></a>Maksymalizowanie wydatków w porównaniu z rabatami
 
