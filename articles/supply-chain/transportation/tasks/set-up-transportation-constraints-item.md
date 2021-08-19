@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8488ec154412840bf88779eeffc3d4ff52aabd22
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ac72a1a0e4595f1767f6df8aabae52e062a794b1f3e16027af91dabc81d324ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818999"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750985"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Konfigurowanie ograniczeń transportu towaru
 
