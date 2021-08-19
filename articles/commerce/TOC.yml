@@ -94,6 +94,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Commerce — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Commerce w wersji 10.0.21 (październik 2021)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: Rozwiązanie Commerce w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Rozwiązanie Commerce w wersji 10.0.19 (czerwiec 2021)
@@ -516,8 +518,16 @@
                       href: tasks/configure-credit-card-processing.md
                     - name: Pomijanie okna dialogowego „zmiana wymagalności” w punkcie sprzedaży
                       href: dev-itpro/skip-change-due.md
-                    - name: Łącznik płatności Adyen
-                      href: dev-itpro/adyen-connector.md
+                    - name: Dynamics 365 Payment Connector dla Adyen
+                      items:
+                        - name: Dynamics 365 Payment Connector dla Adyen — omówienie
+                          href: dev-itpro/adyen-connector.md
+                        - name: Konfigurowanie rozwiązania Dynamics 365 Payment Connector dla Adyen
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: Dynamics 365 Payment Connector dla Adyen — często zadawane pytania
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: Rozwiązywanie problemów z rozwiązaniem Dynamics 365 Payment Connector dla Adyen
+                          href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Zapisywanie instrumentów płatniczych online za pomocą łącznika Adyen
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Silne uwierzytelnianie klienta (SCA) za pomocą łącznika Adyen
@@ -1182,6 +1192,10 @@
               items:
                 - name: Generowanie raportów kanału online
                   href: generate-reports.md
+            - name: Określanie celu
+              items:
+                - name: 'Określanie celu na urządzenia, rynek i lokalizację geograficzną'
+                  href: targeting-overview.md
             - name: Eksperymentowanie
               items:
                 - name: Eksperymentowanie w rozwiązaniu Dynamics 365 Commerce
@@ -1336,6 +1350,10 @@
               items:
                 - name: Lokalizacja rozwiązania Commerce dla Rosji
                   href: localizations/rus-commerce-localization.md
+                - name: Konfigurowanie lokalizacji rozwiązania Commerce dla Rosji
+                  href: localizations/rus-commerce-setup.md
+                - name: Przedpłaty w rozwiązaniu Commerce dla Rosji
+                  href: localizations/rus-commerce-prepayments.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
