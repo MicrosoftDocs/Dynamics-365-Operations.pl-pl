@@ -2,7 +2,7 @@
 title: Raportowanie finansowe — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na niektóre często zadawane pytania dotyczące raportowania finansowego.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266640"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733618"
 ---
 # <a name="financial-reporting-faq"></a>Raportowanie finansowe — często zadawane pytania
 
@@ -77,5 +77,29 @@ Komunikat wskazuje, że wystąpił problem podczas próby pobrania przez system 
 
 - Aby sprawdzić stan integracji danych, należy w programie Report Designer przejść do opcji **Narzędzia \> Stan integracji**. Jeśli integracja jest niekompletna, poczekaj na jej zakończenie. Po otrzymaniu komunikatu ponów próbę wykonania swojej czynności.
 - Skontaktuj się z pomocą techniczną, aby zidentyfikować i rozwiązać problem. W systemie mogą być niespójne dane. Inżynierowie pomocy technicznej mogą pomóc w zidentyfikowaniu tego problemu na serwerze i odnalezieniu określonych danych, które mogą wymagać aktualizacji.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Jak wybór historycznego przeliczania stawek wpływa na wydajność raportu?
+
+Historyczna stawka jest zwykle używana ze wstrzymanymi dochodami, własnością, instalacją i wyposażeniem oraz kontami kapitałowymi. Historyczna stawka może być wymagana w oparciu o wytyczne Rady Standardów Rachunkowości Finansowej (FASB) lub Powszechnie Uznawanych Zasadach Rachunkowości (GAAP). Aby uzyskać więcej informacji, zobacz [Możliwości waluty w raportowaniu finansowym](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Ile jest rodzajów kursów walutowych?
+
+Dostępne są trzy typy kosztów:
+
+- **Bieżąca stawka** — ten typ jest zwykle używany z kontami bilansowymi. Jest zwykle znany jako *punktowy kurs wymiany* i może być stawką z ostatniego dnia miesiąca lub innej z góry ustalonej daty.
+- **Średnia stawka** — ten typ jest zwykle używany z kontami rachunku zysków i strat (zysk/strata). Średnią stawkę można skonfigurować do zwykłej średniej lub średniej ważonej.
+- **Historyczna stawka** — ten typ zwykle używany ze wstrzymanymi dochodami, własnością, instalacją i wyposażeniem oraz kontami kapitałowymi. Konta te mogą być wymagane na podstawie wytycznych FASB lub GAAP.
+
+## <a name="how-does-historical-currency-translation-work"></a>Jak działa historyczne przeliczanie walut?
+
+Stawki są specyficzne dla daty transakcji. W związku z tym każda transakcja jest przeliczana indywidualnie na podstawie najbliższego kursu wymiany.
+
+W przypadku historycznego przeliczania walut można użyć wstępnie obliczonych sald okresów zamiast poszczególnych szczegółów transakcji. To zachowanie różni się od zachowania dla bieżącego przeliczania stawki.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Jak historyczne przeliczanie walut wpływa na wydajność?
+
+Gdy dane prezentowane w raportach są aktualizowane, może wystąpić opóźnienie, ponieważ kwoty muszą zostać ponownie obliczone przez sprawdzenie szczegółów transakcji. To opóźnienie jest wyzwalane za każdym razem, gdy stawki są aktualizowane lub księgowanych jest więcej transakcji. Jeśli na przykład tysiące kont są skonfigurowane do historycznego przeliczania kilka razy dziennie, może wystąpić opóźnienie do godziny przed zaktualizowaniem danych w raporcie. Z drugiej strony, jeśli istnieje mniejsza liczba określonych kont, czas przetwarzania aktualizacji danych raportu można skrócić do minut lub mniej.
+
+Podobnie, gdy raporty są generowane przy użyciu przeliczania walut dla kont typu historycznego, wystąpią dodatkowe obliczenia dla transakcji. W zależności od liczby kont czas generowania raportu może się przynajmniej podwoić.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
