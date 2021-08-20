@@ -5,6 +5,8 @@
       items:
         - name: Nowości i zmiany w rozwiązaniu Human Resources
           href: hr-admin-whats-new.md
+        - name: 26 lipca 2021 r.
+          href: hr-whats-new-2021-07-26.md
         - name: 12 lipca 2021 r.
           href: hr-whats-new-2021-07-12.md
         - name: 22 czerwca 2021 r.
@@ -27,38 +29,38 @@
           href: hr-whats-new-2021-01-28.md
         - name: 21 stycznia 2021 r.
           href: hr-whats-new-2021-01-21.md
-        - name: 2 grudnia 2020 r.
-          href: hr-whats-new-2020-12-02.md
-        - name: 22 października 2020 r.
-          href: hr-whats-new-2020-10-22.md
-        - name: 6 października 2020 r.
-          href: hr-whats-new-2020-10-06.md
-        - name: 26 września 2020 r.
-          href: hr-whats-new-2020-09-26.md
-        - name: 16 września 2020 r.
-          href: hr-whats-new-2020-09-16.md
-        - name: 3 września 2020 r.
-          href: hr-whats-new-2020-09-03.md
-        - name: 20 sierpnia 2020 r.
-          href: hr-whats-new-2020-08-20.md
-        - name: 6 sierpnia 2020 r.
-          href: hr-whats-new-2020-08-06.md
-        - name: 23 lipca 2020 r.
-          href: hr-whats-new-2020-07-23.md
-        - name: 8 lipca 2020 r.
-          href: hr-whats-new-2020-07-08.md
-        - name: 25 czerwca 2020 r.
-          href: hr-whats-new-2020-06-23.md
-        - name: 11 czerwca 2020 r.
-          href: hr-whats-new-2020-06-11.md
-        - name: 28 maja 2020 r.
-          href: hr-whats-new-2020-05-28.md
-        - name: 14 maja 2020 r.
-          href: hr-whats-new-2020-05-14.md
-        - name: 1 maja 2020 r.
-          href: hr-whats-new-2020-05-01.md
         - name: Archiwum nowości z 2020 r.
           items:
+            - name: 2 grudnia 2020 r.
+              href: hr-whats-new-2020-12-02.md
+            - name: 22 października 2020 r.
+              href: hr-whats-new-2020-10-22.md
+            - name: 6 października 2020 r.
+              href: hr-whats-new-2020-10-06.md
+            - name: 26 września 2020 r.
+              href: hr-whats-new-2020-09-26.md
+            - name: 16 września 2020 r.
+              href: hr-whats-new-2020-09-16.md
+            - name: 3 września 2020 r.
+              href: hr-whats-new-2020-09-03.md
+            - name: 20 sierpnia 2020 r.
+              href: hr-whats-new-2020-08-20.md
+            - name: 6 sierpnia 2020 r.
+              href: hr-whats-new-2020-08-06.md
+            - name: 23 lipca 2020 r.
+              href: hr-whats-new-2020-07-23.md
+            - name: 8 lipca 2020 r.
+              href: hr-whats-new-2020-07-08.md
+            - name: 25 czerwca 2020 r.
+              href: hr-whats-new-2020-06-23.md
+            - name: 11 czerwca 2020 r.
+              href: hr-whats-new-2020-06-11.md
+            - name: 28 maja 2020 r.
+              href: hr-whats-new-2020-05-28.md
+            - name: 14 maja 2020 r.
+              href: hr-whats-new-2020-05-14.md
+            - name: 1 maja 2020 r.
+              href: hr-whats-new-2020-05-01.md
             - name: 13 kwietnia 2020 r.
               href: hr-whats-new-2020-04-13.md
             - name: 3 kwietnia 2020 r.
@@ -473,6 +475,10 @@
                   href: hr-admin-integration-payroll-api-leave-type.md
                 - name: Wniosek urlopowy
                   href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Świadczenia dla podmiotów powiązanych
+              items:
+                - name: Plan świadczeń pracowników listy płac
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
             - name: Zestawy opcji
               items:
                 - name: Płeć
@@ -483,6 +489,10 @@
                   href: hr-admin-integration-payroll-api-award-type.md
                 - name: Typ procesu
                   href: hr-admin-integration-payroll-api-process-type.md
+                - name: Pokrycie typu planu świadczeń
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: Status planu pracownika etatowego świadczeń
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Przewodnik użytkownika
       items:
         - name: Omówienie
