@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740702"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -142,7 +142,7 @@ Następujące typy zleceń roboczych są obecnie obsługiwane w przypadku obcią
 
 - Zamówienia sprzedaży
 - Wydanie przeniesienia
-- Uzupełnianie zapasów
+- Uzupełnianie zapasów (z wyłączeniem surowców do produkcji)
 - Przesunięcie magazynowe
 - Inwentaryzacja ciągła
 - Zamówienia zakupu (połączone z zamówieniami magazynowymi)
@@ -298,6 +298,7 @@ W poniższej tabeli podsumowano, które scenariusze produkcyjne zarządzania mag
 | Raportowanie jako wyroby gotowe i wyroby gotowe odłożone | Tak | Tak |
 | Odłożenie produktu ubocznego i produktu towarzyszącego | Tak | Tak |
 | <p>Wszystkie inne procesy zarządzania magazynem, które są związane z produkcją, w tym:</p><li>Zwolnij do magazynu</li><li>Przetwarzanie produkcji w ramach grupy czynności</li><li>Pobranie surowca</li><li>Kanban odłożone</li><li>Pobieranie Kanban</li><li>Rozpocznij zlecenie produkcyjne</li><li>Odpadki produkcji</li><li>Produkcja ostatniej palety</li><li>Rejestruj zużycie materiałów</li><li>Pusta karta Kanban</li></ul> | Tak | Nr |
+| Uzupełnianie zapasów surowców | Nr | Nr |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Obsługa jednostek skali dla WES
 
