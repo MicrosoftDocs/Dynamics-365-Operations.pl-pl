@@ -72,6 +72,8 @@
                   items:
                     - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.21 (październik 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
@@ -1601,6 +1603,8 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Rozpoczęcie optymalizacji planowania
                   href: master-planning/planning-optimization/get-started.md
+                - name: Proces wydań i historia wydań optymalizacji planowania
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Analiza dopasowań optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Parametry nieużywane przez optymalizację planowania
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Horyzonty czasowe zapotrzebowania
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Wymagania netto i informacje oznaczania transakcji za pomocą optymalizacji planowania
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Zatwierdzanie zamówień planowanych
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Zaakceptuj zamówienia planowane
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: Wymagania netto i informacje oznaczania transakcji za pomocą wbudowanego planowania głównego
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognozowanie
               items:
                 - name: Prognozowanie popytu i podaży
@@ -1967,6 +1975,8 @@
                   href: procurement/request-quotations.md
                 - name: Tworzenie zapytania ofertowego
                   href: procurement/tasks/create-request-quotation.md
+                - name: Oferty zapieczętowane na potrzeby ZO
+                  href: procurement/sealed-bidding.md
                 - name: Tworzenie zapotrzebowania wykorzystującego ZO
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Tworzenie metody punktowania dla ZO
@@ -2275,12 +2285,14 @@
               href: engineering-change-management/change-management-existing-products.md
             - name: Stan cyklu życia produktu i transakcje
               href: engineering-change-management/product-lifecycle-state-transactions.md
-            - name: Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
+            - name: Zarządzanie zmianami dotyczącymi produktów projektowych
               href: engineering-change-management/engineering-change-management.md
             - name: Gotowość produktu
               href: engineering-change-management/product-readiness.md
             - name: Zwalnianie struktury produktu
               href: engineering-change-management/release-product-structure.md
+            - name: Generowanie wariantów dla produktów projektowych
+              href: engineering-change-management/engineering-variants.md
             - name: Zarządzanie zmianami projektowymi — często zadawane pytania
               href: engineering-change-management/change-management-faq.md
         - name: Kontrola produkcji
@@ -2603,6 +2615,8 @@
               href: rebate-management/rebate-management-overview.md
             - name: Ustawianie i konfigurowanie modułu Zarządzanie rabatami
               items:
+                - name: Włączanie modułu Zarządzanie rabatami dla własnej platformy
+                  href: rebate-management/rebate-management-enable.md
                 - name: Parametry modułu Zarządzanie rabatami
                   href: rebate-management/rebate-management-parameters.md
                 - name: Przepływy pracy mające zastosowanie do umów z modułu Zarządzanie rabatami
@@ -2619,6 +2633,8 @@
               href: rebate-management/rebate-management-deals.md
             - name: 'Przetwarzanie, przegląd i księgowanie rabatów'
               href: rebate-management/process-review-post.md
+            - name: Zarządzanie potrąceniami przy użyciu pulpitu potrąceń
+              href: rebate-management/deduction-workbench.md
         - name: Sprzedaż i marketing
           items:
             - name: Sprzedaż i marketing — omówienie
@@ -3057,6 +3073,8 @@
               href: landed-cost/in-transit-processing.md
             - name: Przetwarzanie transakcji z nadwyżką/niedoborem
               href: landed-cost/over-under-transactions.md
+            - name: Aktualizuj śledzenie do odłożenia
+              href: landed-cost/update-tracking-putaway.md
             - name: Zapytania o koszt z wyładunkiem
               href: landed-cost/landed-cost-inquiries.md
             - name: Raporty kosztu z wyładunkiem
@@ -3117,6 +3135,8 @@
                       href: warehousing/cluster-position-full.md
                     - name: Pobieranie dla grupy sterowane przez system
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Nadmierne pobieranie dla zamówień sprzedaży i zamówień przeniesienia
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Ustawianie różnych wymiarów na potrzeby pakowania i przechowywania
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Potwierdzenie partii i numeru identyfikacyjnego
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Zarządzanie magazynem
               items:
+                - name: 'Nie można potwierdzić wysyłki, ponieważ odbiorca jest wstrzymany'
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 'Nie można potwierdzić wysyłki, ponieważ wiersze ładunku mają ilość zerową'
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'Nie można zaktualizować wiersza ładunku, ponieważ zwolniona ilość byłaby ujemna'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Anulowane przyjęcia produktów nie aktualizują stanu transakcji na zarejestrowane
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Zaokrąglenie dziesiętne ilości aktualizowanej fizycznie jest niepoprawne
