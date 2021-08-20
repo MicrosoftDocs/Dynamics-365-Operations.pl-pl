@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773544"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
@@ -35,6 +35,7 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 
 | Obszar funkcji | Funkcja | Więcej informacji |
 |---|---|---|
+| Zapasy&nbsp;i&nbsp;logistyka | [Zatwierdzanie i zapisywanie szczegółów banku przesłanych przez dostawcę](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Obsługa informacji o koncie bankowym dostawcy](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Zapasy i logistyka | [Optymalizacja eksportu jednostki danych osoby kontaktowej](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Jeśli ta funkcja jest włączona, zmiany danych, do których występuje odwołanie, nie będą powodować sytuacji, w której powiązane kontakty będą uwzględniane w następnym eksportowaniu przyrostowym. Jeśli ta funkcja jest wyłączona, zmiany danych, do których występuje odwołanie, nie będą powodować sytuacji, w której powiązane kontakty będą uwzględniane w następnym eksportowaniu przyrostowym. |
 | Zapasy i logistyka | [Przyrostowe rozszerzenia możliwości wykonywania magazynów za pomocą jednostek skalowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Komunikaty procesora komunikatów](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Korekta zapasów w magazynie](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Zapasy i logistyka | [Funkcje wyszukiwania w polach Wstęp do dokumentu i Wnioski dokumentu na stronie Oferta sprzedaży](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Dodana jest funkcja wyszukiwania w polach **Wstęp do dokumentu** i **Wnioski dokumentu** na stronie **Oferta sprzedaży**.<br><br>Ten funkcjonalność jest włączona domyślnie. |

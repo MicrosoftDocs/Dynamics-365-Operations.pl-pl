@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641063"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773520"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 
@@ -47,7 +47,6 @@ W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każd
 
 | Obszar funkcji | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
-| Planowanie główne | Dni ujemne dla optymalizacji planowania | Ta funkcja umożliwia optymalizację planowania, aby uwzględnić tolerancję opóźnienia na podstawie parametru **Liczby dni ujemnych** zdefiniowanych w grupach zapotrzebowania. |
 | Planowanie główne | Równoległe autoryzowanie skorygowanej prognozy popytu | Ta funkcja umożliwia równoległe autoryzowanie skorygowanej prognozy popytu ze strony **Skorygowana prognoza popytu**. Celem tej funkcji jest zwiększenie wydajności podczas autoryzacji dużej liczby prognoz. Podczas autoryzowania użytkownik może określić **liczbę wątków** w oknie dialogowym autoryzowania. |
 | Planowanie główne | (Wersja zapoznawcza) Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ta funkcja umożliwia używanie zadań w partiach do tworzenia i konsolidowania planowanych zamówień masowych i paczkowanych. |
 | Kontrola produkcji | Kopiuj ogólne trasy | Ta funkcja rozszerza funkcję kopiowania trasy, umożliwiając użytkownikom kopiowanie tras, które nie są specyficzne dla danego elementu. Umożliwia to systemowi aktualizację wszystkich istotnych informacji (takich jak miejsce, grupa trasowania, wymagania dotyczące zasobów i różne czasy) po użyciu funkcji kopiowania trasy w celu nadpisania trasy, która nie jest jeszcze przypisana do elementu. |
