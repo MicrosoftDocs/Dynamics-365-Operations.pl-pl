@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021207"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744805"
 ---
 # <a name="goods-in-transit-processing"></a>Przetwarzanie towarów w transporcie
 
@@ -104,6 +104,7 @@ Towary można również odbierać, tworząc arkusz przybycia. Arkusz przybycia m
 1. Otwórz podróż, kontener lub folio.
 1. W okienku akcji na karcie **Zarządzaj** w grupie **Funkcje** wybierz opcję **Utwórz arkusz przybycia**.
 1. W wyświetlonym oknie dialogowym **Utwórz arkusz przybycia** można ustawić następujące wartości:
+
     - **Zaiicjuj ilość** – Ustaw dla tej opcji wartość *Tak*, aby ustawić ilość z ilości w drodze. Jeśli ta opcja ma wartość *Nie*, z wierszy towarów w drodze nie jest ustawiana żadna domyślna ilość.
     - **Utwórz z towarów w drodze** — Ustaw dla tej opcji wartość *Tak*, aby dla wybranej podróży, kontenera lub folio pobrane zostały ilości z wybranych wierszy w drodze.
     - **Utwórz z wierszy zamówienia** – Ustaw tę opcję na wartość *Tak*, aby ustawić domyślną ilość w arkuszu przybycia z wierszy zamówienia zakupu. Domyślną ilość w arkuszu przybycia można ustawić w ten sposób tylko wtedy, gdy ilość w wierszu zamówienia zakupu odpowiada ilości w zamówieniu towarów w drodze.
@@ -140,4 +141,21 @@ Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towar
 
 ### <a name="work-templates"></a>Szablony pracy
 
+W tej sekcji opisano funkcje, które moduł **Koszt z wyładunkiem** dodaje do szablonów pracy.
+
+#### <a name="goods-in-transit-work-order-type"></a>Zlecenie pracy typu Towary w tranzycie
+
 Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Szablony pracy**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [szablony pracy dla zamówienia zakupu](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Podziały nagłówka pracy
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Szablony pracy, które mają typ zlecenia pracy *Towary w tranzycie* można skonfigurować do podziału nagłówków pracy. Na stronie **Szablony pracy** wykonaj jedną z następujących czynności:
+
+- Na karcie **Ogólne** dla szablonu ustaw maksymalne wartości nagłówka pracy. Te wartości maksymalne działają w taki sam sposób, jak w przypadku szablonów pracy zamówienia zakupu. (Aby uzyskać więcej informacji, zobacz [Szablony pracy zamówienia zakupu](/dynamicsax-2012/appuser-itpro/create-a-work-template)).
+- Przycisk **Podziały nagłówka pracy** umożliwia definiowanie czasu, w którym system powinien tworzyć nowe nagłówki pracy, w oparciu o pola używane do sortowania. Na przykład, aby utworzyć nagłówek pracy dla każdego identyfikatora kontenera, w okienku akcji wybierz opcję **Edytuj zapytanie**, a następnie dodaj pole **Identyfikator zamówienia** na karcie **Sortowanie** w Edytorze zapytań. Pola dodawane do karty **sortowania** są dostępne do wyboru jako *pola grupowania*. Aby skonfigurować pola grupowania, wybierz opcję **Podział nagłówka pracy** w okienku akcji, a następnie w przypadku każdego pola, które ma być używane jako pole grupowania, zaznacz pole wyboru w kolumnie **Grupuj według tego pola**.
+
+Koszt z wyładunkiem [tworzy transakcję nadmiarową](over-under-transactions.md), jeśli zarejestrowana ilość przekracza oryginalną ilość zamówienia. Po zakończeniu nagłówka pracy system aktualizuje stan transakcji magazynowych dla ilości zamówienia głównego. Jednak najpierw aktualizuje ilość, która jest połączona z transakcją nadmiarową po zakończeniu zakupu zamówienia głównego.
+
+Jeśli anulujesz nagłówek pracy dla transakcji nadmiarowej, która została już zarejestrowana, transakcja nadmiarowa zostanie najpierw zredukowana o anulowaną ilość. Po zmniejszeniu transakcji nadmiarowej do ilości 0 (zero), rekord jest usuwany, a wszelkie dodatkowe ilości są wyrejestrowane względem kwoty zamówienia głównego.
