@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780681"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
 
@@ -102,7 +102,7 @@ Twoje obecne środowisko produkcyjne musi być oznaczone typem **Samoobsługa** 
 > [!IMPORTANT]
 > Typy środowisk, które działają jako infrastruktura jako usługa (IaaS), nie są obsługiwane. Te środowiska są zwykle oznaczone typem **Zarządzane przez firmę Microsoft** w LCS. Jeśli masz środowiska tego typu, skontaktuj się z osobą kontaktową w firmie Microsoft, aby poznać harmonogram migracji do typu **Samoobsługa**.
 
-Firma Microsoft jest w trakcie przenoszenia wszystkich środowisk chmurowych rozwiązania Supply Chain Management z modelu IaaS do topologii hostowanej w Service Fabric. To posunięcie zapewnia lepszą skalowalność i ułatwia zarządzanie usługami. Dlatego operacje wdrażania i konserwacji są szybsze. Podobnie składniki usług są migrowane do koncepcji mikrousług, a model hostingu usług [przejdzie](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) z modelu maszyny wirtualnej (VM) do lekkiej architektury kontenerowej.
+Firma Microsoft jest w trakcie przenoszenia wszystkich środowisk chmurowych rozwiązania Supply Chain Management z modelu IaaS do topologii hostowanej w Service Fabric. To posunięcie zapewnia lepszą skalowalność i ułatwia zarządzanie usługami. Dlatego operacje wdrażania i konserwacji są szybsze. Podobnie składniki usług są migrowane do koncepcji mikrousług, a model hostingu usług [przejdzie](/virtualization/windowscontainers/about/containers-vs-vm) z modelu maszyny wirtualnej (VM) do lekkiej architektury kontenerowej.
 
 Ostatecznie ta sama konteneryzowana infrastruktura usług oparta na Service Fabric będzie obsługiwać zarówno wystąpienia usługi w chmurze, jak i skrajne, niezależnie od tego, czy wystąpienie jest centrum w chmurze, czy też jednostką skalowania w chmurze lub na brzegu.
 
