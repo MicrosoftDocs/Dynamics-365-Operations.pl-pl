@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: f41da8e8db498c6f8cd020c9dfe61140ee49eb40
-ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
+ms.openlocfilehash: 2cacc8bb7c555c0116d53663ecd325baf45f3671469b096597d286dbe598fe2e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6661080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736132"
 ---
 # <a name="prepare-for-jpk-v7m-reporting"></a>Przygotowanie do raportowania JPK-V7M
 

@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa2d0a09f0136be5e2f020e6a9f4e15f33f348b0
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: f1f5e4f56f27a894db6d683f7e0ecae884f06685baed9cb547108db8de745729
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6778854"
 ---
 # <a name="advance-holders-overview"></a>Omówienie posiadaczy zaliczek
 

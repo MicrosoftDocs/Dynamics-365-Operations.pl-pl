@@ -2,7 +2,7 @@
 title: Moduł kart upominkowych
 description: W tym temacie opisano moduły kart upominkowych i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347509"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728346"
 ---
 # <a name="gift-card-module"></a>Moduł karty upominkowej
 
@@ -48,11 +48,17 @@ Poniższy obraz pokazuje przykład modułu karty podarunkowej na stronie realiza
 
 - **Pokaż dodatkowe pola** — ta właściwość określa pola, które mają być wyświetlane w przypadku kart upominkowych, oprócz numeru karty upominkowej, który jest zawsze domyślnie wyświetlany. Na przykład niektóre karty upominkowe umożliwiają wyświetlanie osobistego numeru identyfikacyjnego (PIN), a inne umożliwiają wyświetlanie numeru PIN i daty ważności. Można również ustawić tę właściwość na „Brak”, co spowoduje wyświetlenie numeru karty upominkowej bez dodatkowych pól.
 
-Obsługiwane wartości:
--   PIN
--   Data ważności
--   Numer PIN i data ważności 
--   None
+    Obsługiwane są następujące wartości:
+
+    - PIN
+    - Data wygaśnięcia
+    - Numer PIN i data ważności 
+    - None
+
+- **Włącz dla użytkowników-gości** — gdy ta właściwość jest włączona, użytkownicy-goście mogą realizować lub sprawdzać salda na kartach upominkowych. Ta właściwość wymaga, aby anonimowy (gość) dostęp do kart upominkowych był włączony w siedzibie firmy Commerce. Aby uzyskać więcej informacji, zobacz [Włączanie płatności kartą upominkową do realizacji transakcji gościa](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> Właściwość **Włącz dla użytkowników-gości** jest dostępna w Commerce od wersji 10.0.21. Wymaga, pakietu biblioteki modułów Commerce w wersji 9.31.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Ustawienia witryny dla modułów kart upominkowych
 

@@ -2,7 +2,7 @@
 title: Skonfiguruj wartości wymiarów produktu, aby były wyświetlane jako próbki
 description: W tym temacie opisano, jak skonfigurować wartości wymiarów produktów jako próbki w centrum Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764621"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Skonfiguruj wartości wymiarów produktu, aby były wyświetlane jako próbki
 
@@ -46,7 +46,7 @@ Poniższa ilustracja przedstawia przykład, w którym kolory pojawiają się jak
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Włącz funkcję wyświetlania wymiarów jako próbki w centrali Commerce
 
-Aby włączyć funkcję wyświetlania wymiarów jako próbek w centrali Commerce, przejdź do **Obszary robocze \> Zarządzanie funkcjami** i włącz opcję **Włącz obsługę obrazów dla wartości wymiarów produktu**. Gdy ta flaga jest włączona, dla każdego wymiaru dodawane są trzy nowe pola w odpowiednich tabelach w centrali Commerce: **Kod szesnastkowy**, **URL** (dla obrazów) oraz **GrupaOkreślająca**.
+Aby włączyć funkcję wyświetlania wymiarów jako próbek w centrali Commerce, przejdź do **Obszary robocze \> Zarządzanie funkcjami** i włącz opcję **Włącz mechanizm do reprezentowania wymiarów jako próbek**. Gdy ta flaga jest włączona, dla każdego wymiaru dodawane są trzy nowe pola w odpowiednich tabelach w centrali Commerce: **Kod szesnastkowy**, **URL** (dla obrazów) oraz **GrupaOkreślająca**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Skonfiguruj wartości wymiarów w centrali Commerce
 
@@ -124,6 +124,19 @@ Poniższa ilustracja pokazuje przykład, w którym okno dialogowe **Przekaż pli
 Zanim próbki pojawią się na stronach witryny e-commerce, które wymagają wyboru wymiaru, takich jak PDP i strony z listą, musisz skonfigurować ustawienia strony wymiaru w siedzibie Commerce. Aby uzyskać więcej informacji, zobacz temat [Zastosuj ustawienia witryny do wymiarów](../dimension-settings.md).
 
 Dodatkowo należy włączyć właściwość **Uwzględnianie atrybutów produktów w wynikach wyszukiwania** dla modułów wyników wyszukiwania. Jeśli twoja witryna używa niestandardowych stron kategorii, należy zaktualizować moduły wyników wyszukiwania, które są używane na tych stronach, tak aby właściwość **Uwzględniaj atrybuty produktów w wynikach wyszukiwania** była włączona. Aby uzyskać więcej informacji, zajrzyj do [Moduł wyników wyszukiwania](../search-result-module.md).
+
+## <a name="inventory-awareness-on-swatches"></a>Świadomość ekwipunku na próbach
+
+Próbki mają opcjonalną możliwość wyświetlania dostępności zapasów koloru lub wymiaru wariantu produktu. Na przykład produkt jest sprzedawany w wielu rozmiarach, ale niektóre rozmiary są niedostępne. W takim przypadku próbki produktów niedostępnych są renderowane inaczej, aby wskazać, że nie są dostępne. Ta funkcja pomaga zmniejszyć liczbę kliknięć klientów, które są wymagane do określenia dostępności produktu.
+
+Funkcję dostępności zapasów próbek można skonfigurować do użycia zarówno na PDP, jak i na stronach listy wyszukiwania lub kategorii, na których są wyświetlane próbki. Aby go aktywować, należy ustawić właściwość **Aktualizuj nośnik na zaznaczeniu wymiaru** na Wartość **True** w [module galerii multimediów](../media-gallery-module.md). To ustawienie umożliwia aktualizowanie obrazów galerii multimediów po wybraniu wymiarów. 
+
+> [!IMPORTANT]
+> Ta funkcja jest dostępna w Commerce od wersji 10.0.21. Wymaga, pakietu biblioteki modułów Commerce w wersji 9.31.
+
+Na poniższej ilustracji przedstawiono przykład świadomości zapasów na próbki rozmiaru PDP.
+
+![Przykład świadomości zapasów na próbach rozmiaru PDP](../dev-itpro/media/swatch_inventory.png)
 
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Wyświetlanie próbek w punktach sprzedaży i innych kanałach
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 description: W tym temacie opisano sposób skonfigurowania połączenia podwójnego zapisu z usługi Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359370"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729050"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Konfigurowanie podwójnego zapisu z usług Lifecycle Services
 
@@ -66,5 +66,18 @@ Aby skonfigurować podwójny zapis dla istniejącego środowiska Dataverse, musi
 
 > [!NOTE]
 > Nie można odłączyć środowisk za pomocą usługi LCS. Aby rozłączyć środowisko, Otwórz obszar roboczy **integracji danych** w środowisku Finance and Operations, a następnie wybierz opcję **Rozłącz**.
+
+## <a name="linking-mismatch"></a>Niezgodność łączenia
+
+Jest możliwe, że środowisko LCS jest połączone z jednym wystąpieniem Dataverse, podczas gdy środowisko podwójnego zapisu jest połączone z innym wystąpieniem Dataverse. Ta niezgodność łączenia może spowodować nieoczekiwane zachowanie i może skończyć się wysyłaniem danych do niewłaściwego środowiska. Zalecane środowisko do użycia dla podwójnego zapisu jest tym, który jest tworzone w ramach integracji Power Platform. Długoterminowo będzie to jedyny sposób, aby ustanowić połączenie między środowiskami.
+
+Jeśli Twoje środowisko ma niedopasowane łączenie, LCS wyświetla ostrzeżenie na stronie szczegółów środowiska podobne do „Microsoft wykrył, że Twoje środowisko jest połączone poprzez podwójny zapis do innego miejsca docelowego niż określone w integracji Power Platform, co nie jest zalecane”:
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="niedopasowane łącze integracyjne Power Platform.":::
+
+Jeśli wystąpi ten błąd, dostępne są dwie opcje, w zależności od potrzeb:
+
++ [Odłącz i ponownie połącz środowiska podwójnego zapisu (Resetowanie lub zmienianie łączenia)](relink-environments.md#scenario-reset-or-change-linking) zgodnie z informacjami na stronie szczegółów środowiska LCS. Jest to idealna opcja, ponieważ można go uruchomić bez pomocy technicznej firmy Microsoft.  
++ Jeśli chcesz zachować łącze w podwójnym zapisie, możesz poprosić o pomoc pomocy technicznej firmy Microsoft, aby zmienić integrację Power Platform, aby użyć istniejącego środowiska Dataverse, jak udokumentowano w poprzedniej sekcji.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

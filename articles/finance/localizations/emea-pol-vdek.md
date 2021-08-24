@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 1b1c09913cf6a8d5ea4c00adb07638cfdce6c782
-ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
+ms.openlocfilehash: f6fa9304fb97a0433f39088632bc997f7fd15878e6ff8f35ce324b2fdf74040a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6661051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750299"
 ---
 # <a name="vat-declaration-with-registers-jpk-v7m-vdek"></a>Deklaracja VAT z ewidencjami (JPK-V7M, VDEK)
 
