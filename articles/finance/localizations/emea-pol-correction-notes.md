@@ -13,12 +13,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 32804d91f51e8a596c5c11a94d41da8905740d86
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d79738cfa1730808570ce135abe23de9cf776626247ce591bc023ea12cec98bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721705"
 ---
 # <a name="correction-notes"></a>Noty korygujące
 

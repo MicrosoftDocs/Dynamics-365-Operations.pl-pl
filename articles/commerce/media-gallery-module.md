@@ -2,7 +2,7 @@
 title: Moduł galerii multimediów
 description: W tym temacie opisano moduły galerii multimediów i sposób ich dodawania do stron witryny w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733204"
 ---
 # <a name="media-gallery-module"></a>Moduł galerii multimediów
 
@@ -56,6 +56,10 @@ W przykładzie na poniższej ilustracji pole zakupu na PDP zawiera obrazy produk
 | Obrazy | Obrazy wybrane z biblioteki multimediów konstruktora witryn | Oprócz renderowania z poziomu produktu obrazy mogą być wybrane dla modułu galerii multimediów. Obrazy te zostaną dołączone do wszystkich dostępnych obrazów produktów. Ta możliwość jest dostępna w Commerce w wersji 10.0.12. |
 | Orientacja miniatury | **Pionowa** lub **Pozioma** | Właściwość ta określa, czy miniatury obrazów mają być pokazywane w pionowym czy poziomym pasku. |
 | Ukrywanie obrazów produktu głównego dla wariantu | **Prawda** lub **Fałsz** | Jeśli właściwość ma wartość **Prawda**, po wybraniu wariantu obrazy produktu głównego są ukryte, chyba że wariant nie ma obrazów. Ta właściwość nie ma wpływu na produkty, które nie mają wariantów. |
+| Aktualizuj multimedia po wybraniu wymiarów | **Prawda** lub **Fałsz** | Jeśli ta właściwość jest ustawiona na **True**, obrazy w bibliotece multimediów zostaną zaktualizowane, gdy zaznaczony jest dowolny wymiar (taki jak kolor, styl lub rozmiar) i jeśli obraz jest dostępny. Ta właściwość pomaga uprościć środowisko przeglądania, ponieważ nie każdy wymiar wariantu produktu musi być wybrany dla odpowiedniego obrazu, który ma zostać zaktualizowany. Ta właściwość jest dostępna na karcie **Zaawansowane**. |
+
+> [!IMPORTANT]
+> Właściwość **Aktualizuj nośnik w wyborze wymiaru** jest dostępna od wersji Commerce w wersji 10.0.21. Wymaga, pakietu biblioteki modułów Commerce w wersji 9.31.
 
 Na poniższej ilustracji przedstawiono przykład modułu galerii multimediów, w którym są dostępne opcje pełnego ekranu i powiększenia.
 

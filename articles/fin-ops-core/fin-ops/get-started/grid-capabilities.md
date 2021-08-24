@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775249"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -158,6 +158,13 @@ Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy 
  ```this.forceLegacyGrid();```
 
 Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Wymuszanie strony do korzystania z nowej siatki po wcześniejszym zrezygnowaniu z siatki
+Jeśli użytkownik zrezygnował z używania nowej siatki przez pojedynczą stronę, można później ponownie włączyć nową siatkę po rozwiązaniu podstawowych problemów. Aby to zrobić, wystarczy usunąć połączenie do `forceLegacyGrid()`. Zmiana zostanie wniesienie w życie dopiero po wystąpieniu jednej z następujących sytuacji:
+
+- **Ponowne wdrożenie środowiska**: Gdy środowisko jest aktualizowane i ponownie rozmieszczane, tabela, która przechowuje strony, które zrezygnowały z nowej siatki (FormControlReactGridState) jest automatycznie czyszczona.
+
+- **Ręczne czyszczenie tabeli**: W przypadku scenariuszy rozwoju należy użyć języka SQL, aby wyczyścić tabelę FormControlReactGridState, a następnie ponownie uruchomić system AOS. Ta kombinacja akcji spowoduje zresetowanie buforowania stron, które zrezygnowały z nowej siatki.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Deweloper] Kolumny od rozmiaru do dostępnej szerokości
 Jeśli projektant ustawi właściwość **WidthMode** na **SizeToAvailable** dla kolumn w nowej siatce, te kolumny mają początkowo taką samą szerokość, jaką miałyby w przypadku ustawienia właściwości na **SizeToContent**. Jednak rozciągają się one na użycie dowolnej dodatkowej szerokości w siatce. Jeśli właściwość jest ustawiona jako **SizeToAvailable** dla wielu kolumn, wszystkie te kolumny mają dowolną dodatkową szerokość w siatce. Jeśli jednak użytkownik ręcznie zmieni rozmiar jednej z tych kolumn, kolumna stanie się statyczna. Pozostanie on o tej samej szerokości i nie będzie już rozciągany, aby uzyskać dodatkową szerokość siatki.  

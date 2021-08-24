@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732352"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurowanie roli menedżera nieobecności
 
@@ -89,16 +89,21 @@ Rola menedżera nieobecności musi być przypisana pracownikom, aby umożliwić 
 
 ## <a name="absence-manager-workspace"></a>Obszar roboczy menedżera nieobecności
 
-W obszarze roboczym **Samoobsługa pracownicza** karta **Menedżer nieobecności** zawiera informacje o nieobecnościach pracowników przypisanych do menedżera nieobecności w hierarchii urlopów.
+W obszarze roboczym **Samoobsługa pracownicza** karta **Menedżer urlopów** zawiera informacje o nieobecnościach pracowników przypisanych do menedżera nieobecności w hierarchii urlopów. Menedżer nieobecności oferuje kilka opcji: 
+ - Przeglądanie wniosków o czas wolny.</br>
+ - Złożyć wniosek o czas wolny w imieniu pracownika.</br>
+ - Wyświetlanie wszystkich pracowników przypisanych do nich w ramach hierarchii urlopów.</br>
+ - Wyświetl kalendarz menedżera nieobecności.</br>
 
-Na karcie **Urlop i nieobecność** dla każdego pracownika są dostępne następujące opcje:
-
-- **Urlop** — Zobacz salda, zatwierdzone urlopy i wnioski urlopowe dla wybranego pracownika.
-- **Salda urlopów** — zobacz listę sald dla różnych planów urlopowych dla wybranego pracownika.
+W obszarze roboczym **Zarządzanie urlopem** znajdują się dwie karty:
+ - **Prośby o czas wolny**: Ta karta wyświetli listę wszystkich oczekujących żądań wolnych od czasu, które menedżer nieobecności może zatwierdzić. Menedżer nieobecności może wybrać wiele rekordów i podjąć działania na nich w tym samym czasie. Jeśli międzyfirmowy widok urlopu jest włączony, ta lista będzie wyświetlać oczekujące żądania wolnego czasu we wszystkich firmach, do których mają dostęp. W przeciwnym razie zostanie wyświetlona oczekująca liczba żądań wolnych od pracy dla aktualnie wybranej firmy. </br>
+ - **Wszyscy pracownicy**: Ta karta wyświetli listę wszystkich pracowników przypisanych do menedżera nieobecności w hierarchii urlopów. Dla każdego pracownika dostępnych jest kilka opcji:
+    - **Prośba o czas wolny** — prześlij nowe żądanie wolnego czasu dla wybranego pracownika.</br>
+    - **Urlop** — Zobacz salda, zatwierdzone urlopy i wnioski urlopowe dla wybranego pracownika.</br>
 
 ## <a name="approve-time-off-requests"></a>Zatwierdź wnioski o urlop
 
-Menedżerowie nieobecności mogą zatwierdzać lub odrzucać wnioski o urlop dla pracowników. W razie potrzeby mogą również tworzyć wnioski w imieniu pracowników.
+Menedżerowie nieobecności mogą zatwierdzać lub odrzucać wnioski o urlop dla pracowników. 
 
 > [!IMPORTANT]
 > Zanim menedżerowie nieobecności będą mogli zatwierdzać lub odrzucać wnioski o urlop, przepływ pracy wniosków urlopowych musi być skonfigurowany tak, aby przypisywać im elementy robocze wniosków urlopowych do przeglądu.
@@ -109,15 +114,13 @@ Menedżerowie nieobecności mogą zatwierdzać lub odrzucać wnioski o urlop dla
 >
 > Aby uzyskać informacje na temat tworzenia przepływu pracy z wnioskiem urlopowym, zobacz temat [Tworzenie przepływu pracy wniosku o urlop](hr-leave-and-absence-workflow.md).
 
-1. W obszarze roboczym **Samoobsługa pracowników** wybierz kartę **Menedżer nieobecności**.
+1. W obszarze roboczym **Samoobsługa pracowników** wybierz kartę **Menedżer urlopów**.
 
-2. Na karcie **Menedżer nieobecności** wybierz żądanego pracownika.
+2. Na karcie **Prośby o czas wolny** wybierz czas wolny od żądań, na których chcesz podjąć działania. W tym widoku listy można wybrać wiele rekordów.
 
-3. Wybierz **opcję Szczegóły**, a następnie wybierz opcję **Urlop**.
+3. Użyj przycisków akcji w górnej części siatki, aby zatwierdzić, odmówić lub delegować żądanie wolnego czasu. 
 
-4. Znajdź żądanie zmiany czasu i wybierz opcję **Zatwierdzenie**. Następnie możesz wybrać opcję zatwierdzenia lub anulowania wniosku o czas wolny.
-
-Stan **Anuluj** wskazuje, że żądanie zostało odrzucone. Stan **Ukończono** wskazuje, że żądanie zostało zatwierdzone.
+Alternatywnie użytkownik może również użyć kafelka **Prośby o czas wolny** po lewej stronie, aby przejść do listy wszystkich elementów pracy żądania czasu wolnego. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Wyświetlanie czasu wolnego w kalendarzu
 
@@ -126,7 +129,7 @@ Użytkownicy pełniący rolę menedżera nieobecności mogą przeglądać prośb
 > [!IMPORTANT]
 > Administrator systemu musi skonfigurować opcje widoku kalendarza menedżera nieobecności. Na stronie **Parametry urlopu i nieobecności**, na karcie **Kalendarz** są dostępne opcje ukrywania lub pokazywania urodzin, nieobecności bez szczegółów, urlopów i oczekujących wniosków urlopowych. Istnieje również możliwość filtrowania opcji widoku kalendarza według typu pracownika.
 
-1. W obszarze roboczym **Samoobsługa pracownika** wybierz opcję **Menedżer nieobecności**, a następnie **Kalendarz menedżera nieobecności**.
+1. W obszarze roboczym **Samoobsługa pracownika** wybierz opcję **Menedżer urlopów**, a następnie **Kalendarz menedżera nieobecności**.
 
 2. W polu **Data** wpisz żądane daty.
 

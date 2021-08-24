@@ -14,12 +14,12 @@ ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e05f9f79d13793eaf847264ba7f5ce7266fbadcf
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 21db23a111f746f6b1e3228b27f836fe57d7b01d4cd0e3d6233356ee446bd5e6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750297"
 ---
 # <a name="inventory-journal-reports"></a>Raporty arkuszy magazynowych
 

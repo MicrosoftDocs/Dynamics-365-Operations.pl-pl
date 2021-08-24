@@ -13,12 +13,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfdbdf30c9900b792c57a26e4a4d4f4a8830cebc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e4742071dbf8ea4e312ab7f9f068b68c0ece6c2bff4c8533f1fdbb904c26b0dd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744916"
 ---
 # <a name="eeu-00047-advance-payment-to-employee"></a>EEU 00047 Zaliczka dla pracownika
 

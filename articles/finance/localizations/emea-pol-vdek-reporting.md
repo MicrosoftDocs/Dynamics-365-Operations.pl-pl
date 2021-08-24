@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: cfa8c59d106e923f9d015531c02cde0dc4905296
-ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
+ms.openlocfilehash: 6298d8657189c9f58cb72931400b4c968b6b90b6984aa59b32bd9c603863e3e2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6661079"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6761212"
 ---
 # <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
 

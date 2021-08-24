@@ -1,8 +1,8 @@
 ---
-title: Zamówienia odbiorców w punkcie sprzedaży (POS)
+title: Zamówienia klientów w punktach sprzedaży (POS)
 description: Ten temat zawiera informacje dotyczące zamówień odbiorcy w punkcie sprzedaży (POS). Zamówienia odbiorców są również nazywane zamówieniami specjalnymi. Temat przedstawia powiązane parametry i przepływy transakcji.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,14 +18,14 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755090"
 ---
-# <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia odbiorców w punkcie sprzedaży (POS)
+# <a name="customer-orders-in-point-of-sale-pos"></a>Zamówienia klientów w punktach sprzedaży (POS)
 
 [!include [banner](includes/banner.md)]
 
@@ -132,6 +132,10 @@ Zamówienia detaliczne utworzone w ramach kanału online lub sklepowego mogą zo
 > [!IMPORTANT]
 > Nie wszystkie zamówienia detaliczne można edytować za pomocą aplikacji POS. Zamówień tworzonych w kanale biura obsługi nie można edytować za pośrednictwem punktu sprzedaży, jeśli [Włącz kończenie zamówienia](./set-up-order-processing-options.md#enable-order-completion) jest włączone dla kanału biura obsługi. Aby zapewnić poprawne przetwarzanie płatności, zamówienia utworzone w kanale biura obsługi i korzystające z funkcji włączania zamówień muszą być edytowane za pośrednictwem aplikacji centrum obsługi w module Commerce Headquarter.
 
+> [!NOTE]
+> Zaleca się, aby nie edytować zamówień i ofert w punktach sprzedaży utworzonych przez użytkownika spoza centrum obsługi w siedzibie głównej firmy Commerce. Te zamówienia i oferty nie korzystają z aparatu cen Commerce, więc jeśli są edytowane w POS, aparat cenowy Commerce zmieni ich cenę.
+
+
 W wersji 10.0.17 i późniejszej użytkownicy mogą edytować uprawnione zamówienia za pomocą aplikacji punktu sprzedaży, nawet jeśli zamówienie jest częściowo zrealizowane. Jednak zamówienia, które są w pełni zafakturowane nadal nie mogą być edytowane za pośrednictwem punktu sprzedaży. Aby włączyć tę funkcję, należy włączyć opcję **Edytowanie częściowo spełnionych zamówień w punktach sprzedaży** w obszarze roboczym **Zarządzanie funkcjami**. Jeśli ta funkcja nie jest włączona lub jeśli używasz wersji 10.0.16 lub starszej, użytkownicy będą mogli edytować zamówienia klientów w punkcie sprzedaży tylko wtedy, gdy zamówienie jest w pełni otwarte. Ponadto, jeśli ta funkcja jest włączona, możesz ograniczyć sklepy, które mogą edytować częściowo zrealizowane zamówienia. Opcję wyłączenia tej funkcji dla określonych sklepów można skonfigurować w profilu **Funkcjonalność** na skróconej karcie **Ogólne**.
 
 
@@ -142,7 +146,23 @@ W wersji 10.0.17 i późniejszej użytkownicy mogą edytować uprawnione zamówi
 5. Zakończ proces edycji, wybierając operację płatności.
 6. Aby wyjść z procesu edycji bez zapisywania zmian, można skorzystać z operacji **Unieważnij transakcję**.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Wpływ cen podczas edytowania zamówień
 
+Gdy zamówienia są składane w POS lub w witrynie e-commerce w Commerce, klienci zobowiązują się do kwoty. Kwota ta obejmuje cenę i może również zawierać rabat. Klient, który składa zamówienie, a następnie kontaktuje się z centrum obsługi telefonicznej, aby je zmienić (np. dodać kolejną pozycję), będzie miał określone oczekiwania dotyczące stosowania rabatów. Nawet jeśli promocje w istniejących liniach zamówień wygasły, klient będzie oczekiwał, że rabaty, które zostały pierwotnie zastosowane w tych liniach, pozostaną w mocy. Jeśli jednak w momencie składania zamówienia nie obowiązywał żaden rabat, ale od tego czasu wszedł w życie rabat, klient będzie oczekiwał zastosowania nowego rabatu do zmienionego zamówienia. W przeciwnym razie, klient może po prostu anulować istniejące zamówienie, a następnie utworzyć nowe zamówienie, w którym zastosowany zostanie nowy rabat. Jak pokazuje ten scenariusz, ceny i rabaty, do których zobowiązali się klienci, muszą zostać zachowane. Jednocześnie użytkownicy POS i call center muszą mieć możliwość elastycznego przeliczania cen i rabatów dla linii zamówień sprzedaży w zależności od potrzeb.
+
+Gdy zamówienia są wycofywane i edytowane w punkcie sprzedaży, ceny i rabaty istniejących wierszy zamówienia są uważane za „zablokowane”. Innymi słowy nie zmieniają się, nawet jeśli niektóre wiersze zamówienia są anulowane lub zmienione lub dodawane są nowe wiersze zamówienia. Aby zmienić ceny i rabaty istniejących wierszy sprzedaży, użytkownik punktu sprzedaży musi wybrać opcję **Przelicz ponownie**. Blokada ceny jest następnie usuwana z istniejących wierszy zamówienia. Jednak przed wydaniem wersji 10.0.21 w wersji Commerce ta funkcja nie była dostępna w centrum obsługi. Zamiast tego wszelkie zmiany wierszy zamówienia spowodowały ponowne obliczenie cen i rabatów.
+
+W wersji Commerce w wersji 10.0.21 nowa funkcja o nazwie **Zapobiegaj niezamierzonemu obliczaniu ceny dla zamówień handlowych** jest dostępna w obszarze roboczym **Zarządzanie funkcjami**. Domyślnie ta opcja jest włączona. Gdy jest włączona, nowa właściwość **Zablokowanej ceny** jest dostępna dla wszystkich zleceń e-commerce. Po zakończeniu przechwytywania zleceń, które są składane z dowolnego kanału, właściwość ta jest automatycznie włączana (tzn. pole wyboru jest zaznaczone) dla wszystkich linii zleceń. Następnie aparat cen Commerce wyklucza te wiersze zamówienia ze wszystkich obliczeń cen i rabatów. W związku z tym jeśli zamówienie jest edytowane, wiersze zamówienia zostaną domyślnie wykluczone z obliczania cen i rabatów. Jednak użytkownicy call center mogą wyłączyć właściwość (czyli wyczyścić pole wyboru) dla dowolnego wiersza zamówienia, a następnie wybrać opcję **Przelicz ponownie**, aby uwzględnić istniejące wiersze zamówienia w obliczeniach cenowych.
+
+Nawet jeśli stosują rabat ręczny do istniejącego wiersza sprzedaży, użytkownicy centrum obsługi muszą wyłączyć właściwość **Cena zablokowana** wiersza sprzedaży przed zastosowaniem rabatu ręcznego.
+
+Użytkownicy centrum obsługi mogą również zbiorczo wyłączyć właściwość **Cena zablokowana** dla wierszy zamówienia, wybierając pozycję **Usuń blokadę ceny** w grupie **Oblicz** na karcie **Sprzedaż** na stronie Akcja okienka akcji **zamówienia sprzedaży**. W takim przypadku blokada ceny jest usuwana ze wszystkich wierszy zamówienia z wyjątkiem wierszy, które nie można edytować (innymi słowy wiersze, które mają stan **Częściowo zafakturowane** lub **zafakturowane**). Następnie po zakończeniu i przesłaniu zmian w zamówieniu blokada ceny jest ponownie stosowana do wszystkich wierszy zamówienia.
+
+> [!IMPORTANT]
+> Gdy funkcja **Zapobiegaj niezamierzonemu obliczaniu cen dla zamówień handlowych** jest włączona, konfiguracja oceny umowy handlowej zostanie zignorowana w przepływach pracy cenowych. Innymi słowy okna dialogowe oceny umowy handlowej nie będą wyświetlane w sekcji **Związane z cenami**. To zachowanie występuje, ponieważ zarówno konfiguracja oceny umowy handlowej, jak i funkcja blokady ceny mają podobny cel: aby zapobiec niezamierzonym zmianom cen. Jednak środowisko użytkownika do oceny umowy handlowej nie skaluje się dobrze dla dużych zamówień, w których użytkownicy muszą wybrać jeden lub więcej wierszy zamówienia do ponownego wyceny.
+
+> [!NOTE]
+> Właściwość **Cena zablokowana** może być wyłączona dla jednego lub więcej wybranych wierszy tylko wtedy, gdy używany jest moduł **Centrum obsługi**. Zachowanie POS pozostaje niezmienione. Innymi słowy, użytkownik POS nie może odblokować ceny dla wybranych wierszy zamówienia. Można je jednak wybrać opcję **Przelicz ponownie**, aby usunąć blokadę ceny ze wszystkich istniejących wierszy zamówienia.
 
 ### <a name="cancel-a-customer-order"></a>Anulowanie zamówienia odbiorcy
 

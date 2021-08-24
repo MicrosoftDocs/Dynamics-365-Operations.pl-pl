@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a5e74b43bbeae011b2cde5c29d5a05aab28ec07e
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 49433b2eba225c3c45a01b0c28045873b20cf2ba7357fbebc6b5a1814d533bb3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6340067"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774241"
 ---
 # <a name="intrastat-overview"></a>Omówienie systemu Intrastat
 

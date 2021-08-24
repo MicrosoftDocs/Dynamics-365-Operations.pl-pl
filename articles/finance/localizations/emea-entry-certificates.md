@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bf074f54448dd10f190263c09e731c4f4b7a61c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 00b9e80a931c57722a92c3432f9c1006082b1bfbdd844d72c4d5962e106925dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779797"
 ---
 # <a name="eu-entry-certificates"></a>Świadectwa wywozowe UE
 

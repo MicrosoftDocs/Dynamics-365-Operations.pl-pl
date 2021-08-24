@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538861"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768198"
 ---
 # <a name="payroll-employee"></a>Pracownik etatowy listy płac
 
@@ -33,27 +33,25 @@ Nazwa fizyczna: mshr_payrollemployeeentity.
 Ta jednostka zawiera informacje o pracowniku. Musisz ustawić [parametry integracji listy płac](hr-admin-integration-payroll-api-parameters.md) przed użyciem tej jednostki.
 
 >[!IMPORTANT] 
->Pola **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** i **NameValidTo** nie będą już dostępne w tej encji. Ma to na celu zapewnienie, że istnieje tylko jedna data wejścia w życie datasource kopii tej jednostki, która jest **HcmEmployment** z polami **EmploymentStartDate** i **EmploymentEndDate**.
-
->Te pola będą dostępne w **DirPersonNameHistoricalEntity**, który został wydany w aktualizacji platformy 43. Istnieje relacja OData z **PayrollEmployeeEntity** do **DirPersonNameHistoricalEntity** w polu **Osoba**. Alternatywnie, do jednostki **DirPersonNameHistoricalEntity** można wysyłać zapytania bezpośrednio za pośrednictwem OData przy użyciu publicznej nazwy **PersonHistoricalNames**.
-
+>Pola **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** i **NameValidTo** nie będą już dostępne w tej encji. Zapewnia to, że istnieje tylko jedno źródło danych daty efektywnej, które wspiera tę jednostkę.
+>Te pola będą dostępne w **DirPersonNameHistoricalEntity**, który został wydany w aktualizacji platformy 43. Istnieje relacja OData z **PayrollEmployeeEntity** do **DirPersonNameHistoricalEntity** w polu **Osoba**. 
 
 ## <a name="properties"></a>Właściwości
 
 | Właściwość<br>**Nazwa fizyczna**<br>**_Typ_** | Użycie | opis |
 | --- | --- | --- |
-| **Numer pracownika**<br>mshr_personnelnumber<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Unikalny numer personelu pracownika. |
-| **Pole główne**<br>mshr_primaryfield<br>*Ciąg* | Potrzebne<br>Wygenerowany przez system |  |
-| **Identyfikator firmy**<br>mshr_legalentityID<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Określa osobę prawną (firmę). |
-| **Rodzaj**<br>mshr_gender<br>[zestaw opcji mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Tylko do odczytu<br>Potrzebne | Płeć pracownika. |
+| **Numer pracownika**<br>mshr_personnelnumber<br>*Ciąg* | Tylko do odczytu | Unikalny numer personelu pracownika. |
+| **Pole główne**<br>mshr_primaryfield<br>*Ciąg* | Tylko do odczytu<br>Wygenerowany przez system |  |
+| **Identyfikator firmy**<br>mshr_legalentityID<br>*Ciąg* | Tylko do odczytu | Określa osobę prawną (firmę). |
+| **Rodzaj**<br>mshr_gender<br>[zestaw opcji mshr_hcmpersongender](hr-admin-integration-payroll-api-gender.md) | Tylko do odczytu | Płeć pracownika. |
 | **Identyfikator jednostki Pracownik listy płac**<br>mshr_payrollemployeeentityid<br>*GUID* | Potrzebne<br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania pracownika. |
-| **Data rozpoczęcia zatrudnienia**<br>mshr_employmentstartdate<br>*Przesunięcie daty i godziny* | Tylko do odczytu<br>Potrzebne | Data rozpoczęcia zatrudnienia pracownika. |
-| **Identyfikator typu identyfikacji**<br>mshr_identificationtypeid<br>*Ciąg* |Tylko do odczytu<br>Potrzebne | Typ identyfikacji zdefiniowany dla pracownika. |
-| **Data zakończenia zatrudnienia**<br>mshr_employmentenddate<br>*Przesunięcie daty i godziny* | Tylko do odczytu<br>Potrzebne |Data zakończenia zatrudnienia pracownika.  |
-| **Identyfikator obszaru danych**<br>mshr_dataareaid_id<br>*GUID* | Potrzebne <br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID identyfikująca osobę prawną (firmę). |
-| **Data ważności**<br>mshr_namevalidto<br>*Przesunięcie daty i godziny* |  Tylko do odczytu<br>Potrzebne | Data, do której ważne są informacje o pracowniku. |
-| **Data urodzenia**<br>mshr_birthdate<br>*Przesunięcie daty i godziny* | Tylko do odczytu <br>Potrzebne | Data urodzenia pracownika |
-| **Numer identyfikacyjn do**<br>mshr_identificationnumber<br>*Ciąg* | Tylko do odczytu <br>Potrzebne |Numer identyfikacji zdefiniowany dla pracownika.  |
+| **Data rozpoczęcia zatrudnienia**<br>mshr_employmentstartdate<br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data rozpoczęcia zatrudnienia pracownika. |
+| **Identyfikator typu identyfikacji**<br>mshr_identificationtypeid<br>*Ciąg* |Tylko do odczytu | Typ identyfikacji zdefiniowany dla pracownika. |
+| **Data zakończenia zatrudnienia**<br>mshr_employmentenddate<br>*Przesunięcie daty i godziny* | Tylko do odczytu |Data zakończenia zatrudnienia pracownika.  |
+| **Identyfikator obszaru danych**<br>mshr_dataareaid_id<br>*GUID* | Tylko do odczytu <br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID identyfikująca osobę prawną (firmę). |
+| **Data ważności**<br>mshr_namevalidto<br>*Przesunięcie daty i godziny* |  Tylko do odczytu | Data, do której ważne są informacje o pracowniku. |
+| **Data urodzenia**<br>mshr_birthdate<br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data urodzenia pracownika |
+| **Numer identyfikacyjn do**<br>mshr_identificationnumber<br>*Ciąg* | Tylko do odczytu |Numer identyfikacji zdefiniowany dla pracownika.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Przykładowa kwerenda dla pracownika na liście płac
 

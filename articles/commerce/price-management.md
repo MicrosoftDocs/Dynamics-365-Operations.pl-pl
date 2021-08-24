@@ -2,7 +2,7 @@
 title: Zarządzanie cenami w sprzedaży detalicznej
 description: W tym temacie opisano pojęcia związane z tworzeniem i zarządzaniem cenami sprzedaży w Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352235"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759292"
 ---
 # <a name="retail-sales-price-management"></a>Zarządzanie cenami sprzedaży w aplikacji Retail
 
@@ -40,21 +40,21 @@ W tym temacie są wykorzystywane następujące pojęcia:
 
 ## <a name="price-groups"></a>Grupy cenowe
 
-Grupy cenowe są sercem mechanizmu zarządzania cenami i rabatami w aplikacji Commerce. Grupy cenowe są używane do przypisywania cen i rabatów do jednostek handlu (tzn. kanałów, katalogów, przynależności i programów lojalnościowych). Grupy cenowe są wykorzystywane dla wszystkich cen i rabatów, dlatego bardzo ważne jest zaplanowanie, jak będą używane, zanim zaczniesz to robić.
+Grupy cenowe są sercem mechanizmu zarządzania cenami i rabatami w aplikacji Commerce. Grupy cenowe są używane do przypisywania cen i rabatów do encji Commerce (tzn. kanałów, katalogów, przynależności i programów lojalnościowych). Grupy cenowe są wykorzystywane dla wszystkich cen i rabatów, dlatego bardzo ważne jest zaplanowanie, jak będą używane, zanim zaczniesz to robić.
 
-Grupa cenowa jako obiekt składa z nazwy, opisu i (opcjonalnie) priorytetu cen. Najważniejszą rzeczą, jaką należy pamiętać o grupach cenowych, jest to, że służą do zarządzania relacjami wiele-do-wielu między rabatami i cenami a jednostkami handlu.
+Grupa cenowa jako obiekt składa z nazwy, opisu i (opcjonalnie) priorytetu cen. Najważniejszą rzeczą, jaką należy pamiętać o grupach cenowych, jest to, że służą do zarządzania relacjami wiele-do-wielu między rabatami i cenami a encjami Commerce.
 
-Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustracji zwróć uwagę, że „Grupa cenowa” jest dosłownie w centrum zarządzania cenami i rabatami. Jednostki handlu, których można używać do zarządzania zróżnicowanymi cenami i rabatami, znajdują się po lewej stronie, a rekordy faktycznych cen i rabatów znajdują się po prawej stronie.
+Na ilustracji poniżej przedstawiono sposób używania grup cenowych. Na ilustracji zwróć uwagę, że „Grupa cenowa” jest dosłownie w centrum zarządzania cenami i rabatami. Encje Commerce, których można używać do zarządzania zróżnicowanymi cenami i rabatami, znajdują się po lewej stronie, a rekordy faktycznych cen i rabatów znajdują się po prawej stronie.
 
 ![Grupy cenowe.](./media/PriceGroups.png "Grupy cenowe")
 
-Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów jednostek handlu. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
+Podczas tworzenia grup cenowych nie należy używać jednej grupy cenowej dla różnych typów encji Commerce. W przeciwnym razie może być trudno określić, dlaczego konkretna cena lub rabat są stosowane do transakcji.
 
 Jak pokazuje czerwona kreskowana linia na ilustracji, aplikacja Commerce obsługuje podstawową funkcjonalność systemu Microsoft Dynamics 365 — grupy cenowe, które są ustawiane bezpośrednio dla odbiorców. Jednak w tym przypadku można korzystać tylko z umów handlowych na cenę sprzedaży. Jeśli chcesz stosować ceny specyficzne dla odbiorców, zalecamy, aby nie ustawiać grup cenowych bezpośrednio dla odbiorców. Zamiast tego należy używać przynależności. 
 
 Należy zauważyć, że jeśli grupa cenowa jest ustawiona na klienta, wówczas ta grupa cenowa zostaje powiązana z nagłówkiem zamówienia sprzedaży zamówień utworzonych dla tego klienta. Jeśli użytkownik zmieni grupę cen w nagłówku zamówienia, wówczas stara grupa cen zostanie zastąpiona nową grupą cen tylko dla bieżącego zamówienia. Na przykład stara grupa cenowa nie będzie miała wpływu na bieżące zamówienie, ale będzie nadal skojarzona z odbiorcą w przyszłych zamówieniach.
 
-W dalszych rozdziałach zawarto więcej informacji na temat jednostek handlu, których można używać do ustawiania odrębnych cen podczas korzystania z grup cenowych. Konfigurowanie cen i rabatów dla wszystkich tych jednostek jest procesem dwuetapowym. Etapy te można wykonać w dowolnej kolejności. Jednak zgodnie z porządkiem logicznym najpierw należy ustawić grupy cenowe dla jednostek, ponieważ ten krok będzie najprawdopodobniej tylko jednorazową konfiguracją wykonywaną podczas wdrażania. Następnie, wraz z tworzeniem cen i rabatów, można ustawiać grupy cenowe indywidualnie dla tych cen i rabatów.
+W dalszych rozdziałach zawarto więcej informacji na temat encji Commerce, których można używać do ustawiania odrębnych cen podczas korzystania z grup cenowych. Konfigurowanie cen i rabatów dla wszystkich tych jednostek jest procesem dwuetapowym. Etapy te można wykonać w dowolnej kolejności. Jednak zgodnie z porządkiem logicznym najpierw należy ustawić grupy cenowe dla jednostek, ponieważ ten krok będzie najprawdopodobniej tylko jednorazową konfiguracją wykonywaną podczas wdrażania. Następnie, wraz z tworzeniem cen i rabatów, można ustawiać grupy cenowe indywidualnie dla tych cen i rabatów.
 
 ### <a name="channels"></a>Kanały
 
@@ -214,22 +214,23 @@ Podczas ustawiania cen sprzedaży w Dynamics 365 nie określasz, czy wprowadzana
 
 Jeśli pracujesz z cenami zawierającymi, jak i niezawierającymi podatku, jest bardzo ważne, aby poprawnie ustawić ceny, ponieważ łączna kwota płacona przez odbiorcę zmieni się, jeżeli w kanale zmienisz wartość ustawienia **Cena zawiera podatek**.
 
-## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Różnice między cenami detalicznymi a cenami niezwiązanymi z handlem detalicznym
+## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>Różnice między cenami Commerce a cenami niezwiązanymi z Commerce
 
-Jeden aparat kalkulacji cen jest używany do obliczania cen we wszystkich kanałach: biura obsługi, sklepów sieci sprzedaży (tradycyjnych) i sklepów internetowych. Pomaga to realizować ujednolicone scenariusze handlu.
+Jeden aparat kalkulacji cen jest używany do obliczania cen we wszystkich kanałach: biura obsługi, sklepów sieci sprzedaży (tradycyjnych) i sklepów internetowych. Pomaga to realizować ujednolicone scenariusze Commerce.
 
-Ceny są przeznaczone do używania z jednostkami handlu detalicznego, a nie jednostkami niezwiązanymi z handlem detalicznym. W szczególności służą do ustawiania cen w sklepach, a nie w magazynach.
+Ceny są przeznaczone do używania z encjami Commerce, a nie niezwiązanymi z Commerce. W szczególności służą do ustawiania cen w sklepach, a nie w magazynach.
 
-Aparat kalkulacji cen **nie obsługuje** następujących funkcji cen:
+Aparat kalkulacji cen Commerce **nie obsługuje** następujących funkcji cen:
 
 - Ustawianie cen według wymiarów magazynowania typu Oddział lub Oddział i magazyn nie jest obsługiwane. Jeśli określisz tylko wymiar oddziału w umowach handlowych, aparat kalkulacji cen zignoruje Oddział i zastosują umowę handlową do wszystkich oddziałów. Jeśli określisz oddział i magazyn, to zachowanie jest niezdefiniowane/niesprawdzone, ponieważ oczekuje się, że sprzedawcy detaliczni używają grup cenowych sklepu do kontrolowania cen dla każdego sklepu/magazynu.
 - Kalkulacja cen oparta na atrybutach nie jest obsługiwana.
 - Przekazywanie rabatu dostawcy nie jest obsługiwane.
+- Funkcja waluty ogólnej nie jest obsługiwana, tzn. nawet jeśli umowa handlowa ma włączone **Włącz walutę ogólną**, to i tak ta umowa handlowa będzie uznawana za ważną tylko dla waluty zdefiniowanej w umowie handlowej.
 - Standardowy aparat cenowy Supply Chain Management obsługuje obliczanie cen na podstawie „Żądanej daty wysyłki” i „Żądanej daty przyjęcia” wraz z bieżącą datą. Jednak ceny detaliczne nie obsługują obecnie tych wartości. Powodem jest to, że w scenariuszach B2C klienci nie oczekują, że żądana data dostawy ma wpływ na cenę towaru. W niektórych przypadkach detaliści prowadzą zarówno operacje typu B2B, jak i B2C. W przypadku operacji B2B wspólne ceny są zmieniane na podstawie dat dostawy. Detaliści ci mogą korzystać z cen Supply Chain Management dla swojej działalności B2B oraz cen detalicznych dla swojej działalności B2C. Ceny detaliczne zostaną uruchomione tylko wtedy, gdy użytkownik aplikacji zostanie dodany jako użytkownik centrum telefonicznego, dzięki czemu detaliści mogą przypisać określonych użytkowników, którzy będą pracować z cenami Supply Chain Management i przypisać kilku, którzy będą pracować z cenami detalicznymi, to znaczy tych użytkowników należy dodać jako użytkowników w biurze obsługi. Ponadto musi być włączona właściwośc **Użyj dzisiejszej daty do obliczenia cen** w sekcji **Parametry Commerce > ceny i rabaty > Różne**. W ten sposób można przechowywać wartość parametru rozrachunków z odbiorcami dla żądanej daty wysyłki lub żądanej daty odbioru dla cen Supply Chain Management, ale ceny detaliczne będą nadal używane przy obliczaniu cen w dzisiejszej dacie.
 
-Ponadto **tylko** aparat kalkulacji cen obsługuje następujące funkcje cen:
+Ponadto **tylko** aparat kalkulacji cen Commerce obsługuje następujące funkcje cen:
 
-- Cena bazuje na wymiarach produktów, w kolejności od ceny najbardziej specyficznej dla wariantu, przez najmniej specyficzną dla wariantu, aż do ceny produktu głównego. Cena ustawiana za pomocą dwóch wymiarów produktu (na przykład Kolor i Rozmiar) jest wykorzystywana przed ceną ustawianą za pomocą tylko jednego wymiaru produktu (np. Rozmiar).
+- Cena bazuje na wymiarach produktów, w kolejności od ceny najbardziej specyficznej dla wariantu, przez najmniej specyficzną dla wariantu, aż do ceny produktu głównego. Cena ustawiana za pomocą dwóch wymiarów produktu (na przykład kolor i rozmiar) jest wykorzystywana przed ceną ustawianą za pomocą tylko jednego wymiaru produktu (np. rozmiar).
 - Jedna grupa cenowa może służyć do kontrolowania cen i rabatów.
 
 ## <a name="pricing-api-enhancements"></a>Udoskonalenia interfejsu API ustalania cen

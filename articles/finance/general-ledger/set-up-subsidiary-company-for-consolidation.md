@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 15050310f355ece683b00a00be9552d32aded17b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbec5ad8fa5e17b75859c07ee64a66c9568c97d3d18b6a7616a64303d3a33f10
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832857"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727966"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>Konfigurowanie firmy zależnej do konsolidacji
 
@@ -44,7 +44,7 @@ Jeśli plan kont w firmie zależnej nie odzwierciedla planu kont w konsolidowane
 
 4. Przygotowywanie raportów i sprawozdań finansowych dla firmy skonsolidowanej opartych na wymiarach finansowych. Aby zamapować wymiary finansowe używane na kontach oddziałów na wymiary finansowe w skonsolidowanej firmie:
 
-    1. W *zależna osoba prawna*, go to **Księga ogólna \> Konfiguracja \> Wymiary finansowe \> Wymiary finansowe**, wybierz wymiar finansowy, a następnie wybierz wartości wymiaru finansowego i wybierz **Financial dimension values**.
+    1. W *zależna osoba prawna*, go to **Księga ogólna \> Konfiguracja \> Wymiary finansowe \> Wymiary finansowe**, wybierz wymiar finansowy, a następnie wybierz wartości wymiaru finansowego i wybierz **Wartości wymiarów finansowych**.
     2. Wybierz wartość wymiaru finansowego do mapowania na inną wartość wymiaru finansowego w firmie konsolidowanej.
     3. Na skróconej karcie **Ogólne** w polu **Wymiar grupy** wprowadź wymiar finansowy w firmie konsolidowanej. Podczas konsolidacji ten wymiar finansowy będzie przypisywany do transakcji i sald, które używają wybranego wymiaru finansowego w firmie zależnej. Wymiary finansowe wprowadzone w tym miejscu muszą być użyte w firmie konsolidowanej. Można przypisać wymiar finansowego, który jest używany jako grupa wymiarów finansowych do kilku wymiarów finansowych zależnych.
 

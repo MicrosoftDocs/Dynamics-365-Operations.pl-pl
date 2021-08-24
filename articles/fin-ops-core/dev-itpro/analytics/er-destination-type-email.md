@@ -2,7 +2,7 @@
 title: Typ miejsca docelowego raportowania elektronicznego (ER)
 description: Ten temat zawiera wyjaśnienia dotyczące konfigurowania miejsca docelowego poczty e-mail dla każdego składnika typu FOLDER lub PLIK w formacie raportowania elektronicznego (ER).
 author: NickSelin
-ms.date: 12/03/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348003"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769326"
 ---
 # <a name="email-er-destination-type"></a>Typ miejsca docelowego raportowania elektronicznego (ER)
 
@@ -42,23 +42,43 @@ Można również [zgrupować](#grouping) kilka składników **Folder** lub **Pli
 
 Dla jednej konfiguracji formatu ER można skonfigurować wiele grup składników. W ten sposób można skonfigurować miejsce docelowe poczty e-mail dla każdej grupy składników i miejsca docelowego poczty e-mail dla każdego składnika.
 
-## <a name="configure-an-email-destination"></a>Konfigurowanie pocztowego miejsca docelowego
+## <a name="enable-an-email-destination"></a>Uruchom miejsce docelowe e-mail
 
-Aby wysłać plik wyjściowy lub kilka plików wyjściowych pocztą elektroniczną, na stronie **Miejsce docelowe raportowania elektronicznego** na skróconej karcie **Miejsce docelowe — plik** zaznacz składnik lub grupę składników w siatce, a następnie wybierz opcję **Ustawienia**. W wyświetlonym oknie dialogowym **Ustawienia lokalizacji docelowej** na karcie **E-mail** w opcji **Włączone** zaznacz wartość **Tak**. Następnie możesz określić adresatów wiadomości e-mail oraz edytować jej temat i treść. Można zdefiniować stały tekst tematu i treści wiadomości e-mail lub używać [formuł](er-formula-language.md) ER w celu dynamicznego tworzenia tekstów wiadomości e-mail.
+Aby wysłać jeden lub więcej plików wyjściowych pocztą e-mail, wykonaj następujące kroki.
 
-Adresy e-mail dla modułu ER można konfigurować na dwa sposoby. Konfigurację można wykonać w taki sam sposób, jak to robi funkcja zarządzania drukowaniem, lub też można rozpoznać adres e-mail za pomocą bezpośredniego odwołania do konfiguracji ER, korzystając z formuły.
+1. Aby zgrupować składniki formatu, na stronie **Miejsce docelowe raportowania elektronicznego** na skróconej karcie **Miejsce docelowe** — plik zaznacz składniki w siatce, a następnie wybierz opcję Grupuj.
+2. Wybierz **Ustawienia**, w wyświetlonym oknie dialogowym **Ustawienia lokalizacji** docelowej na karcie **E-mail** w opcji **Włączone** zaznacz wartość **Tak**.
 
 [![Ustawianie opcji Włączone na Tak dla pocztowego miejsca docelowego.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
+## <a name="configure-an-email-destination"></a>Konfigurowanie pocztowego miejsca docelowego
+
+Można określić nadawcę i odbiorców wiadomości e-mail, a także edytować temat i treść wiadomości e-mail. Można zdefiniować stały tekst tematu i treści wiadomości e-mail lub używać [formuł](er-formula-language.md) ER w celu dynamicznego tworzenia tekstów wiadomości e-mail.
+
+Domyślnie wiadomość e-mail jest wysyłana w imieniu bieżącego użytkownika. Aby określić innego nadawcę wiadomości e-mail, należy skonfigurować pole **Od**.
+
+> [!NOTE]
+> Gdy miejsce docelowe wiadomości e-mail jest skonfigurowane, pole **Od** jest widoczne tylko dla użytkowników, którzy mają uprawnienia zabezpieczeń `ERFormatDestinationSenderEmailConfigure`, **Skonfiguruj adres e-mail nadawcy dla miejsc docelowych formatu ER**.
+>
+> Kiedy miejsce docelowe dla wiadomości e-mail jest oferowane do modyfikacji w [uruchomieniu](electronic-reporting-destinations.md#security-considerations), pole **Od** jest widoczne tylko dla użytkowników, którzy mają uprawnienie zabezpieczenia `ERFormatDestinationSenderEmailMaintain` **Zachowaj adres e-mail nadawcy dla formatu ER miejsca docelowego**.
+>
+> Jeśli pole **Od** jest skonfigurowane do używania adresu e-mail innego niż adres bieżącego użytkownika, uprawnienie **Wyślij jako** lub **Wyślij w imieniu** musi być poprawnie [ustawione](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) z wyprzedzeniem. W przeciwnym razie w czasie wykonywania zostanie zgłoszony następujący wyjątek: „Nie można wysłać wiadomości e-mail jako \<from email account\> z konta \<current user account\>, sprawdź uprawnienia „Wyślij jako na \<from email account\>”.
+
+Pole **Od** można skonfigurować tak, aby zwracać więcej niż jeden adres e-mail. W takim przypadku pierwszy adres na liście jest używany jako adres nadawcy e-mail.
+
+Aby określić adresatów wiadomości e-mail, należy skonfigurować pola **Do** i **DW** (opcjonalnie).
+
+Adresy e-mail dla modułu ER można konfigurować na dwa sposoby. Konfigurację można wykonać w taki sam sposób, jak to robi funkcja zarządzania drukowaniem, lub też można rozpoznać adres e-mail za pomocą bezpośredniego odwołania do konfiguracji ER, korzystając z formuły.
+
 ## <a name="email-address-types"></a>Typy adresów e-mail
 
-Jeśli wybierzesz opcję **Edytuj** obok pola **Do** lub **DW** w oknie dialogowym **Ustawienia lokalizacji docelowej**, zostanie wyświetlone okno dialogowe **Wiadomość e-mail do**. Kliknij przycisk **Dodaj**, a następnie wybierz typ adresu e-mail, który ma być używany. Obecnie są obsługiwane dwa typy: **Adres e-mail zarządzania drukowaniem** i **Adres e-mail konfiguracji**.
+Jeśli wybierzesz opcję **Edytuj** obok pola **Od**, **Do** lub **DW** w oknie dialogowym **Ustawienia lokalizacji docelowej**, zostanie wyświetlone okno dialogowe **Wiadomość e-mail od**, **Wiadomość e-mail do**, **Wiadomość e-mail DW**. Można tam skonfigurować nadawcę wiadomości e-mail i adresatów wiadomości e-mail. Kliknij przycisk **Dodaj**, a następnie wybierz typ adresu e-mail, który ma być używany. Obecnie są obsługiwane dwa typy: **Adres e-mail zarządzania drukowaniem** i **Adres e-mail konfiguracji**.
 
 [![Wybieranie typu adresu e-mail.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Wiadomość e-mail zarządzania drukowaniem
 
-Jeśli jako typ adresu e-mail wybierzesz opcję **Adres e-mail zarządzania drukowaniem**, można wprowadzić stałe adresy e-mail w oknie dialogowym **Wiadomość e-mail do**, ustawiając następujące pola:
+Jeśli jako typ adresu e-mail wybierzesz opcję **Adres e-mail zarządzania drukowaniem**, można wprowadzić stałe adresy e-mail w oknie dialogowym **Wiadomość e-mail od**, **Wiadomość e-mail od**, **Wiadomość e-mail DW**, ustawiając następujące pola:
 
 - W polu **Źródło poczty e-mail** wybierz opcję **Brak**.
 - W polu **Dodatkowe adresy e-mail, oddzielone średnikiem (;)** wprowadź stałe adresy e-mail.
@@ -74,6 +94,7 @@ Alternatywnie adresy e-mail można pozyskać z danych kontaktowych strony, dla k
 - Kandydat
 - Potencjalny dostawca
 - Niezatwierdzony dostawca
+- Osoba prawna
 
 Na przykład aby skonfigurować pocztowe miejsce docelowe dla formatu ER, który będzie używany do przetwarzania płatności dla dostawców, wybierz rolę **Dostawca**.
 
@@ -106,7 +127,7 @@ Aby określić typ adresów e-mail, które muszą być używane w czasie wykonyw
 
 ### <a name="configuration-email"></a>Adres e-mail konfiguracji
 
-Wybierz opcję **Adres e-mail konfiguracji** jako typ adresu e-mail, jeśli używana konfiguracja ma w źródłach danych węzeł, który zwraca jeden adres e-mail lub wiele adresów e-mail oddzielonych średnikami (;). Za pomocą [źródeł danych](general-electronic-reporting.md#FormatComponentOutbound) i [funkcji](er-formula-language.md#functions) w projektancie formuł można uzyskać poprawnie sformatowany adres e-mail lub poprawnie sformatowane adresy e-mail, które są oddzielone średnikami. Jeśli na przykład zostanie użyta konfiguracja **Przelew bankowy ISO 20022**, węzłem reprezentującym podstawowy adres e-mail dostawcy pochodzący z danych kontaktowych dostawcy, pod który ma zostać wysłany list przewodni, będzie `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Wybierz opcję **Adres e-mail konfiguracji** jako typ adresu e-mail, jeśli używana konfiguracja ma w źródłach danych węzeł, który zwraca jeden adres e-mail lub wiele adresów e-mail oddzielonych średnikami (;). Za pomocą [źródeł danych](general-electronic-reporting.md#FormatComponentOutbound) i [funkcji](er-formula-language.md#Functions) w projektancie formuł można uzyskać poprawnie sformatowany adres e-mail lub poprawnie sformatowane adresy e-mail, które są oddzielone średnikami. Jeśli na przykład zostanie użyta konfiguracja **Przelew bankowy ISO 20022**, węzłem reprezentującym podstawowy adres e-mail dostawcy pochodzący z danych kontaktowych dostawcy, pod który ma zostać wysłany list przewodni, będzie `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Konfigurowanie źródła adresu e-mail.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

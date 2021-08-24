@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 96c1cccccd2b20626dba14d9b0cb97bef10732fd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749711"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724450"
 ---
 # <a name="view-and-design-financial-reports"></a>Wyświetlanie i projektowanie raportów finansowych
 
@@ -151,7 +151,7 @@ W tym ćwiczeniu zmodyfikujemy istniejący raport domyślny. Dodasz hierarchię 
 4. Wybierz kolejno opcje **Plik** &gt; **Zapisz jako** i nazwij raport **Skonsolidowany bilans i rachunek wyników obok siebie**.
 5. Zmień rok podstawowy na 2012.
 6. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Hierarchie organizacyjne**.
-7. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Holdingi Contoso**.
+7. Kliknij strzałkę rozwijaną typu drzewa i wybierz **Contoso Holdings**.
 8. Zapisz zmiany i wygeneruj raport. Po wyświetleniu monitu wybierz wszystkie jednostki raportowania. Po otarciu wygenerowanego raportu możesz sprawdzić jego zawartość.
 9. Wybierz **Opcje raportowania**.
 10. Wybierz **Dodaj filtr wymiaru** i wybierz polecenie **Dział**.

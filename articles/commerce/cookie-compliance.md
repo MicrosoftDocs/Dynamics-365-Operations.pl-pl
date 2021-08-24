@@ -2,7 +2,7 @@
 title: Zgodność z plikami cookie
 description: W tym temacie opisano zagadnienia dotyczące zgodności z plikami cookie i domyślnych zasad, które są zawarte w aplikacji Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747704"
 ---
 # <a name="cookie-compliance"></a>Zgodność z plikami cookie
 
@@ -54,6 +54,10 @@ W poniższej tabeli przedstawiono bieżące listy odwołań plików cookie umies
 | \_msdyn365___muid_                            | Używane, gdy eksperymentowanie jest aktywowane dla środowiska; używany jako identyfikator użytkownika do celów eksperymentalnych. | 1 rok |
 | \_msdyn365___exp_                             | Używane, jeśli Eksperymentowanie jest aktywowane dla środowiska; używany do pomiaru równoważenia obciążenia wydajnościowego.         | 1 godzina |
 | d365mkt                                       | Używane, jeśli wykrywanie lokalizacji w celu śledzenia adresu IP użytkownika dla sugestii lokalizacji sklepu jest włączone w kreatorze stron Commerce pod adresem **Ustawienia strony \> Ogólne \> Włącz wykrywanie sklepu w oparciu o lokalizację**.      | 1 godzina |
+| \_msdyn365___tuid_                           | Używane tylko wtedy, gdy eksperymenty aktywowane dla środowiska; generuje identyfikator GUID, który służy jako identyfikator użytkownika. Wartość zmieni się, jeśli zmieni się stan logowania użytkownika.      | 1 rok |
+| \_msdyn365___aud_0                          | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
+| \_msdyn365___aud_1                           | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
+| \_msdyn365___aud_2                           | Przechowuje wartości segmentu używane przez kierowanie i jest stosowany tylko wtedy, gdy kierowanie jest skonfigurowane na stronie lub fragment wymagane przez użytkownika witryny. Plik cookie jest umieszczany tylko wtedy, gdy wartości segmentu pochodzą od zewnętrznego dostawcy segmentacji.      | 7 dni |
 
 Jeśli użytkownik witryny wybierze jakiekolwiek łącza do mediów społecznościowych w witrynie, pliki cookie z poniższej tabeli będą również śledzone w jego przeglądarce.
 

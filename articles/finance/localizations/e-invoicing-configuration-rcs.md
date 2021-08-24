@@ -2,7 +2,7 @@
 title: Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 description: W tym temacie wyjaśniono, jak skonfigurować Fakturowanie elektroniczne w Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 05/19/2021
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6c1d309744c4c8dd0d17f5259551d31c257ede61
-ms.sourcegitcommit: 633d51834d7d29b745824924315a3898dc471f1a
+ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6075150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757981"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurowanie fakturowania elektronicznego w usługach Regulatory Configuration Services (RCS)
 
@@ -46,21 +46,13 @@ Funkcje obsługują również scenariusze, w których wymagana jest zgodność z
 
 Wreszcie, funkcje obsługują wymianę wiadomości z zewnętrznymi usługami sieciowymi, które są hostowane przez organ podatkowy lub przez jakąś akredytowaną stronę, oraz prośby o autoryzację lub pieczęć zatwierdzenia na fakturze elektronicznej.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Dostępność funkcji fakturowania elektronicznego
+## <a name="availability-of-electronic-invoicing-features"></a>Dostępność funkcji fakturowania elektronicznego
 
 Dostępność funkcji fakturowania elektronicznego zależy od kraju lub regionu. Chociaż niektóre funkcje są ogólnie dostępne, inne są w wersji zapoznawczej.
 
-#### <a name="generally-available-features"></a>Ogólnie dostępne funkcje
+### <a name="generally-available-features"></a>Ogólnie dostępne funkcje
 
 W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które są obecnie dostępne ogólnie.
-
-| Kraj/region | Nazwa funkcji                         | Dokument biznesowy |
-|----------------|--------------------------------------|-------------------|
-| Egipt          | Egipska faktura elektroniczna (EG) | Faktury sprzedaży i faktury za projekty |
-
-#### <a name="preview-features"></a>Funkcje w wersji zapoznawczej
-
-W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które są obecnie dostępne w wersji zapoznawczej.
 
 | Kraj/region | Nazwa funkcji                         | Dokument biznesowy |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,39 @@ W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które s
 | Belgia        | Faktura elektroniczna w Belgii (BE)      | Faktury sprzedaży i faktury za projekty |
 | Brazylia         | Brazylijski NF-e (BR)                  | Dokument fiskalny modelu 55, listy korekty, anulowania i odrzucenia |
 | Brazylia         | Brazylijski NFS-e ABRASF Curitiba (BR) | Obsługa dokumentów fiskalnych |
+| Brazylia         | Import brazylijskiego NF-e z poczty e-mail (BR) | Dokument fiskalny modelu 55 |
 | Dania        | Duńska faktura elektroniczna (DK)       | Faktury sprzedaży i faktury za projekty |
+| Egipt          | Egipska faktura elektroniczna (EG)     | Faktury sprzedaży i faktury za projekty |
 | Estonia        | Estońska faktura elektroniczna (EE)     | Faktury sprzedaży i faktury za projekty |
 | Finlandia        | Fińska faktura elektroniczna (FI)      | Faktury sprzedaży i faktury za projekty |
 | Francja         | Francuska faktura elektroniczna (FR)       | Faktury sprzedaży i faktury za projekty |
 | Niemcy        | Niemiecka faktura elektroniczna (DE)       | Faktury sprzedaży i faktury za projekty |
 | Włochy          | FatturaPA (IT)                       | Faktury sprzedaży i faktury za projekty |
-| Meksyk         | Meksykański CFDI (MX)                    | Faktury sprzedaży, dokumenty dostawy, przesunięcia magazynowe, uzupełnienia płatności i anulacje |
 | Holandia    | Holenderska faktura elektroniczna (NL)        | Faktury sprzedaży i faktury za projekty |
 | Norwegia         | Norweska faktura elektroniczna (NIE)    | Faktury sprzedaży i faktury za projekty |
 | Hiszpania          | Hiszpańska faktura elektroniczna (ES)      | Faktury sprzedaży i faktury za projekty |
 | Europa         | Faktura elektroniczna PEPPOL            | Faktury sprzedaży PEPPOL i faktury za projekty |
+| Europa         | Faktura sprzedawcy PEPPOL                | PEPPOL import faktur dostawców |
+
+### <a name="preview-features"></a>Funkcje w wersji zapoznawczej
+
+W poniższej tabeli przedstawiono funkcje fakturowania elektronicznego, które są obecnie dostępne w wersji zapoznawczej.
+
+| Kraj/region | Nazwa funkcji                         | Dokument biznesowy |
+|----------------|--------------------------------------|-------------------|
+| Meksyk         | Meksykański CFDI (MX)                    | Faktury sprzedaży, dokumenty dostawy, przesunięcia magazynowe, uzupełnienia płatności i anulacje |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Konfigurowalne składniki funkcji fakturowania elektronicznego
 
 Funkcje fakturowania elektronicznego obejmują następujące grupy konfigurowalnych składników:
 
-- **Formaty** — Formaty pozwalają skonfigurować, co musi generować Fakturowanie elektroniczne, gdy dokument elektroniczny staje się fakturą elektroniczną. Formaty obejmują konfigurację formatu faktury elektronicznej oraz plików i wiadomości używanych do przesyłania żądań i otrzymywania odpowiedzi, gdy wymagana jest komunikacja z zewnętrzną usługą sieciową.
-- **Akcje** — Akcje umożliwiają skonfigurowanie sposobu, w jaki Fakturowanie elektroniczne generuje przekształcenie dokumentu elektronicznego przesłanego przez rozwiązanie Finance and Supply Chain Management w fakturę elektroniczną.
-- **Reguły stosowania** – Reguły stosowania pozwalają skonfigurować kontekst, który musi uwzględniać Fakturowanie elektroniczne, aby przetwarzać funkcję fakturowania elektronicznego.
-- **Zmienne** — zmienne umożliwiają skonfigurowanie obsługi logiki konfiguracji. Zmienne mogą być wartościami wejściowymi do wykonywania określonej akcji. Alternatywnie mogą służyć jako wymiana wartości między rozwiązaniami Finance and Supply Chain Management a funkcją fakturowania elektronicznego.
-- **Mapowanie modelu dokumentu elektronicznego** – Odwzorowanie modelu dokumentu elektronicznego umożliwia skonfigurowanie mapowania modelu ER. Mapowanie modelu definiuje mapowanie danych faktury abstrakcyjnej, która jest zintegrowana z funkcją Fakturowanie elektroniczne podczas przesyłania dokumentów elektronicznych.
-- **Model kontekstu faktury** — Model kontekstu faktury umożliwia skonfigurowanie modelu kontekstu faktury ER i zdefiniowanie kontekstu funkcji fakturowania elektronicznego.
-- **Typy odpowiedzi** – Typy odpowiedzi umożliwiają skonfigurowanie, co Fakturowanie elektroniczne musi aktualizować w rozwiązaniu Finance and Supply Chain Management w wyniku przetwarzania faktury elektronicznej.
+- **Formaty**: pozwalają skonfigurować, co musi generować Fakturowanie elektroniczne, gdy dokument elektroniczny staje się fakturą elektroniczną. Formaty obejmują konfigurację formatu faktury elektronicznej oraz plików i wiadomości używanych do przesyłania żądań i otrzymywania odpowiedzi, gdy wymagana jest komunikacja z zewnętrzną usługą sieciową.
+- **Akcje**: Akcje umożliwiają skonfigurowanie sposobu, w jaki Fakturowanie elektroniczne generuje przekształcenie dokumentu elektronicznego przesłanego przez rozwiązanie Finance and Supply Chain Management w fakturę elektroniczną.
+- **Reguły stosowania**: Reguły stosowania pozwalają skonfigurować kontekst, który musi uwzględniać Fakturowanie elektroniczne, aby przetwarzać funkcję fakturowania elektronicznego.
+- **Zmienne**: zmienne umożliwiają skonfigurowanie obsługi logiki konfiguracji. Zmienne mogą być wartościami wejściowymi do wykonywania określonej akcji. Alternatywnie mogą służyć jako wymiana wartości między rozwiązaniami Finance and Supply Chain Management a funkcją fakturowania elektronicznego.
+- **Mapowanie modelu dokumentu elektronicznego**: Odwzorowanie modelu dokumentu elektronicznego umożliwia skonfigurowanie mapowania modelu ER. Mapowanie modelu definiuje mapowanie danych faktury abstrakcyjnej, która jest zintegrowana z funkcją Fakturowanie elektroniczne podczas przesyłania dokumentów elektronicznych.
+- **Model kontekstu faktury**: Model kontekstu faktury umożliwia skonfigurowanie modelu kontekstu faktury ER i zdefiniowanie kontekstu funkcji fakturowania elektronicznego.
+- **Typy odpowiedzi**: Typy odpowiedzi umożliwiają skonfigurowanie, co Fakturowanie elektroniczne musi aktualizować w rozwiązaniu Finance and Supply Chain Management w wyniku przetwarzania faktury elektronicznej.
 
 ### <a name="formats"></a>Formaty
 
@@ -204,10 +206,10 @@ W poniższej tabeli wymieniono dostępne akcje oraz informacje o tym, czy są on
 | Akcja                                        | opis                                                                  | Dostępność         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Przekształcanie dokumentu                            | Uruchom format raportowania elektronicznego, aby przekształcić dokument.                   | Ogólnie dostępne  |
-| Podpisz dokument XML                             | Podpisz dokumenty XML podpisem cyfrowym.                                   | Wersja próbna           |
-| Podpisz dokument JSON dla egipskiego urzędu skarbowego | Podpisuj dokumenty JSON podpisem cyfrowym dla egipskiego urzędu skarbowego.       | Ogólnie dostępne  |
+| Podpisz dokument XML                             | Podpisz dokumenty XML podpisem cyfrowym.                                   | Ogólnie dostępne  |
+| Podpisz dokument json dla egipskiego urzędu skarbowego | Podpisuj dokumenty JSON podpisem cyfrowym dla egipskiego urzędu skarbowego.       | Ogólnie dostępne  |
 | Zintegruj się z egipską usługą ETA           | Skontaktuj się z egipskim organem podatkowym.                                     | Ogólnie dostępne  |
-| Wywołaj usługę brazylijską SEFAZ                  | Zintegruj z brazylijską usługą SEFAZ do przesyłania dokumentów fiskalnych.       | Wersja próbna           |
+| Wywołaj usługę brazylijską SEFAZ                  | Zintegruj z brazylijską usługą SEFAZ do przesyłania dokumentów fiskalnych.       | Ogólnie dostępne  |
 | Wywołaj usługę meksykańskiego certyfikatu PAC                      | Integracja z meksykańską usługą PAC w celu przesyłania CFDI.                      | Wersja próbna           |
 | Przetwarzanie odpowiedzi                              | Przeanalizuj odpowiedź otrzymaną z wywołania usługi sieci web.                     | Ogólnie dostępne  |
 | Użyj MS Power Automate                         | Integruj z przepływem zbudowanym w Microsoft Power Automate.                       | Wersja próbna           |

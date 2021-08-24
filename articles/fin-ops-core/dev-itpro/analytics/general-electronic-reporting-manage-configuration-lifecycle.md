@@ -2,7 +2,7 @@
 title: Zarządzanie cyklem życia konfiguracji modułu Raportowanie elektroniczne (ER)
 description: W tym temacie opisano sposób zarządzania cyklem życia konfiguracji aparatu raportowania elektronicznego (ER) w Dynamics 365 Finance.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767786"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Zarządzanie cyklem życia konfiguracji raportowania elektronicznego (ER)
 
@@ -82,20 +82,34 @@ Konfiguracje ER zaprojektowane w środowisku programistycznym można [przesłać
 
 ![Cykl życia konfiguracji ER.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Uwzględnianie utrwalania danych
+## <a name="data-persistence-consideration"></a>Uwzględnianie utrwalania danych
 
 Do wystąpienia Finance można indywidualnie [importować](tasks/er-import-configuration-lifecycle-services.md) różne [wersje](general-electronic-reporting.md#component-versioning) [konfiguracji](general-electronic-reporting.md#Configuration) serwera ER. Po zaimportowaniu nowej wersji konfiguracji ER system kontroluje zawartość wersji roboczej tej konfiguracji:
 
-   - Gdy zaimportowana wersja jest niższa niż najwyższa wersja tej konfiguracji w bieżącej instancji programu Finance, zawartość wersji roboczej tej konfiguracji pozostaje niezmieniona.
-   - Gdy zaimportowana wersja jest nowsza niż jakakolwiek inna wersja tej konfiguracji w bieżącej instancji programu Finance, zawartość zaimportowanej wersji jest kopiowana do wersji roboczej tej konfiguracji, aby umożliwić dalsze edytowanie ostatniej ukończonej wersji.
+- Gdy zaimportowana wersja jest niższa niż najwyższa wersja tej konfiguracji w bieżącej instancji programu Finance, zawartość wersji roboczej tej konfiguracji pozostaje niezmieniona.
+- Gdy zaimportowana wersja jest nowsza niż jakakolwiek inna wersja tej konfiguracji w bieżącej instancji programu Finance, zawartość zaimportowanej wersji jest kopiowana do wersji roboczej tej konfiguracji, aby umożliwić dalsze edytowanie ostatniej ukończonej wersji.
 
 Jeśli ta konfiguracja należy do aktualnie aktywowanego [dostawcy](general-electronic-reporting.md#Provider) konfiguracji, wersja robocza tej konfiguracji jest widoczna na skróconej karcie **Wersje** strony **Konfiguracje** (**Administrowanie organizacją** > **Raportowanie elektroniczne** > **Konfiguracje**). Można wybrać wersję roboczą konfiguracji i [zmodyfikować](er-quick-start2-customize-report.md#ConfigureDerivedFormat) jej zawartość za pomocą odpowiedniego konstruktora ER. Po edycji wersji roboczej konfiguracji ER jej zawartość nie jest już zgodna z zawartością najwyższej wersji tej konfiguracji w bieżącej instancji Finance. Aby zapobiec utracie zmian, system wyświetla błąd informujący, że import nie może być kontynuowany, ponieważ wersja tej konfiguracji jest nowsza niż najwyższa wersja tej konfiguracji w bieżącej instancji Finance. W takim przypadku, na przykład przy konfiguracji formatu **X**, bład **Format wersji „X” nie został zakończony** jest wyświetlany.
 
 Aby cofnąć zmiany wprowadzone w wersji roboczej, wybierz najwyższą ukończoną lub udostępnioną wersję konfiguracji ER w części Finance na skróconej karcie **Wersje**, a następnie wybierz opcję **Pobierz tę wersję**. Zawartość wybranej wersji jest kopiowana do wersji roboczej.
 
+## <a name="applicability-consideration"></a>Uwzględnienie możliwości zastosowania
+
+Podczas projektowania nowej wersji konfiguracji ER można zdefiniować jej [zależność](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md) od innych składników oprogramowania. Ten krok jest uważany za warunek wstępny do sterowania pobieraniem wersji tej konfiguracji z repozytorium ER lub zewnętrznego pliku XML oraz do jakiegokolwiek dalszego korzystania z tej wersji. Przy próbie zaimportowania nowej wersji konfiguracji ER system wykorzystuje skonfigurowane warunki wstępne do kontroli, czy dana wersja może zostać zaimportowana.
+
+W niektórych przypadkach użytkownik może wymagać, aby system ignorował skonfigurowane warunki wstępne podczas importowania nowych wersji konfiguracji ER. Aby system zignorował wymagania wstępne podczas importowania, wykonaj następujące kroki.
+
+1. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Konfiguracje**.
+2. Na stronie **Konfiguracje** w okienku akcji na karcie **Konfiguracje** w grupie **Ustawienia zaawansowane** wybierz opcję **Parametry użytkownika**.
+3. Ustaw opcję **Pomiń aktualizacje produktu i wersję wstępną podczas importowania** na **Tak**.
+
+    > [!NOTE]
+    > Ten parametr jest właściwy dla użytkownika i właściwy dla firmy.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 [Omówienie raportowania elektronicznego (ER)](general-electronic-reporting.md)
 
+[Definiowanie zależności konfiguracji raportowania elektronicznego od innych składników](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

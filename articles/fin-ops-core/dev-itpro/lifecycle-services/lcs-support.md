@@ -2,7 +2,7 @@
 title: Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub Lifecycle Services (LCS)
 description: W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Operations lub usługi Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713341"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Uzyskaj pomoc techniczną dla aplikacji Finance and Operations lub Lifecycle Services (LCS)
 
@@ -48,7 +48,7 @@ W tym artykule opisano, jak uzyskać pomoc dotyczącą aplikacji Finance and Ope
 <td>W <a href="https://lcs.dynamics.com/">LCS</a> za pomocą narzędzia <strong>Wyszukiwanie problemów</strong> można szybko wyszukać artykuły bazy wiedzy Microsoft Knowledge Base (KB), poprawki i obejścia zgłoszonych problemów wykrytych w programie. Możesz zobaczyć, które zgłoszone problemy są w trakcie naprawiania dla określonego obszaru funkcjonalnego, a które już zostały naprawione. Aby uzyskać więcej informacji, zobacz <a href="issue-search-lcs.md">Wyszukiwanie problemów (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Uzyskiwanie pomocy w aplikacji.</td>
+<td>Uzyskaj pomoc techniczną w swojej aplikacji Finance and Operations.</td>
 <td>Wybierz przycisk <strong>Pomoc</strong> (<strong>?</strong>) znajdujący się w prawym górnym rogu aplikacji, a następnie wybierz opcję <strong>Pomoc techniczna</strong>. Problemy są raportowane na karcie <strong>Aktywnych problemów</strong> w LCS. Administratorzy mogą określić, czy powinni świadczyć pomoc techniczną w firmie, czy też wysłać problemy do rozwiązania Microsoft.</td>
 </tr>
 <tr>

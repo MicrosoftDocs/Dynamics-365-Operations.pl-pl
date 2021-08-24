@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abc8dc112ab577ddcbd208f898a8d4e487bc2998
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d35504ab2fe6b8143d040bda505a904ab179b6137472073d788515f392faaef9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722894"
 ---
 # <a name="research-or-resolve-exceptions"></a>Badanie lub rozwiązywanie wyjątków
 
@@ -62,7 +62,7 @@ To nagranie wykorzystuje firmę demonstracyjną USMF. Czynności te wykonuje men
 3. W polu Nazwa wpisz wartość.
 4. Wypełnij pole Opis.
 5. Rozwiń lub zwiń sekcję Organizacje zasad.
-6. W drzewie zaznacz pozycję „Contoso Entertainment System USA”.
+6. W drzewie zaznacz pozycję Contoso Entertainment System USA.
 7. Kliknij przycisk Dodaj.
 8. Rozwiń lub zwiń sekcję Reguły zasad.
 9. Kliknij przycisk Utwórz regułę.

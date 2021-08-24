@@ -2,7 +2,7 @@
 title: Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 description: W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718714"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Tworzenie szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail na potrzeby zdarzeń transakcyjnych w rozwiązaniu Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Dynamics 365 Commerce to gotowe rozwiązanie służące do wysyłania wiadomości e-mail powiadamiających odbiorców przy użyciu alertów o zdarzeniach transakcyjnych (na przykład o złożeniu zamówienia, zamówieniu gotowym do pobrania lub wysłaniu zamówienia). W tym temacie opisano kroki tworzenia, przekazywania i konfigurowania szablonów wiadomości e-mail używanych do wysyłania transakcyjnych wiadomości e-mail.
 
@@ -79,26 +77,33 @@ Poniższe symbole zastępcze pobierają i pokazują dane zdefiniowane na poziomi
 | Nazwa symbolu zastępczego     | Wartość symbolu zastępczego                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Nazwa odbiorcy, który złożył zamówienie.               |
-| salesid              | Identyfikator zamówienia powiązanego ze sprzedażą.                                   |
-| deliveryaddress      | Adres dostawy wysłanych zamówień.                     |
 | customeraddress      | Adres odbiorcy.                                 |
 | customeremailaddress | Adres e-mail wprowadzony przez klienta podczas realizacji zamówienia.     |
+| salesid              | Identyfikator zamówienia powiązanego ze sprzedażą.                                   |
+| orderconfirmationid  | Identyfikator międzykanałowy, który został wygenerowany podczas tworzenia zamówienia. |
+| channelid            | Identyfikator kanału detalicznego lub internetowego, za pośrednictwem których złożono zamówienie. |
+| deliveryname         | Nazwa, która jest określona dla adresu dostawy.        |
+| deliveryaddress      | Adres dostawy wysłanych zamówień.                     |
 | deliverydate         | Data dostawy.                                           |
 | shipdate             | Data wysyłki.                                               |
 | modeofdelivery       | Metoda dostawy zamówienia.                              |
+| ordernetamount       | Łączna kwota zamówienia pomniejszona o łączny podatek.         |
+| rabat             | Łączny rabat dla zamówienia.                            |
 | opłaty              | Łączne opłaty za zamówienie.                             |
 | podatek                  | Łączny podatek za zamówienie.                                 |
 | suma                | Łączna kwota zamówienia.                              |
-| ordernetamount       | Łączna kwota zamówienia pomniejszona o łączny podatek.         |
-| rabat             | Łączny rabat dla zamówienia.                            |
 | storename            | Nazwa sklepu, w którym złożono zamówienie.            |
 | storeaddress         | Adres sklepu, w którym złożono zamówienie.              |
 | storeopenfrom        | Godzina otwarcia sklepu, w którym złożono zamówienie.         |
 | storeopento          | Godzina zamknięcia sklepu, w którym złożono zamówienie.         |
-| pickupstorename      | Nazwa sklepu, w którym zamówienie zostanie odebrane.     |
-| pickupstoreaddress   | Adres sklepu, w którym zamówienie zostanie odebrane.  |
-| pickupopenstorefrom  | Godzina otwarcia sklepu, w którym zamówienie zostanie odebrane. |
-| pickupopenstoreto    | Godzina zamknięcia sklepu, w którym zamówienie zostanie odebrane. |
+| pickupstorename      | Nazwa sklepu, w którym zamówienie zostanie odebrane.\* |
+| pickupstoreaddress   | Adres sklepu, w którym zamówienie zostanie odebrane.\* |
+| pickupopenstorefrom  | Godzina otwarcia sklepu, w którym zamówienie zostanie odebrane.\* |
+| pickupopenstoreto    | Godzina zamknięcia sklepu, w którym zamówienie zostanie odebrane.\* |
+| pickupchannelid      | Identyfikator kanału sklepu, który jest określony dla trybu odbioru dostawy.\* |
+| packingslipid        | Identyfikator dokumentu dostawy, który został wygenerowany podczas pakowania wierszy w zamówieniu.\* |
+
+\* Te symbole zastępcze zwracają dane tylko wtedy, gdy są używane dla typu powiadomienia o **zamówieniu gotowym do odbioru**. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Symbole zastępcze wierszy zamówienia (poziom wiersza sprzedaży)
 
@@ -106,7 +111,10 @@ Poniższe symbole zastępcze pobierają i pokazują dane poszczególnych produkt
 
 | Nazwa symbolu zastępczego               | Wartość symbolu zastępczego |
 |--------------------------------|-------------------|
-| productid                      | Identyfikator produktu dla wiersza. |
+| productid                      | <p>Identyfikator produktu. Ten identyfikator uwzględnia warianty.</p><p><strong>Uwaga:</strong> Ten symbol zastępczy został wycofany na rzecz **lineproductrecid**.</p> |
+| lineproductrecid               | Identyfikator produktu. Ten identyfikator uwzględnia warianty. Jednoznacznie identyfikuje element na poziomie wariantu. |
+| lineitemid                     | Identyfikator produktu na poziomie produktu. (Ten identyfikator nie uwzględnia wariantów). |
+| lineproductvariantid           | Identyfikator wariantu produktu. |
 | lineproductname                | Nazwa produktu. |
 | lineproductdescription         | Opis produktu. |
 | linequantity                   | Liczba jednostek zamówionych dla wiersza oraz jednostka miary (na przykład **sztuka** lub **para**). |
@@ -125,6 +133,8 @@ Poniższe symbole zastępcze pobierają i pokazują dane poszczególnych produkt
 | linedeliverydate               | Data dostawy dla wiersza. |
 | linedeliverymode               | Metoda dostawy dla wiersza. |
 | linedeliveryaddress            | Adres dostawy dla wiersza. |
+| linepickupdate                 | Data odbioru określona przez klienta dla zamówień korzystających ze sposobu odbioru. |
+| linepickuptimeslot             | Zakres dat odbioru określony przez klienta dla zamówień korzystających ze sposobu odbioru. |
 | giftcardnumber                 | Identyfikator karty upominkowej dla produktów typu „karta upominkowa”. |
 | giftcardbalance                | Saldo karty upominkowej dla produktów typu „karta upominkowa”. |
 | giftcardmessage                | Wiadomość dołączona do karty upominkowej dla produktów typu „karta upominkowa”. |

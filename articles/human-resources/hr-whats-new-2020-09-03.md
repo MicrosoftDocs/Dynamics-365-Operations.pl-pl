@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eae89e9c3bf32ab5a4c4e6c497c9d3baa5b75fde
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 6d7c3e3070d6c3b8dad7b3ae4d50e928d0060d5892d606cd78bc701c2e7985cb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359228"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759702"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Human Resources (3 września 2020 r.)
 

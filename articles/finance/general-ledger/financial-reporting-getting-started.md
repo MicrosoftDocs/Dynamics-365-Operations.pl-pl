@@ -2,7 +2,7 @@
 title: Omówienie raportowania finansowego
 description: W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej w Microsoft Dynamics 365 Finance i jak korzystać z funkcji raportowania finansowego.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748217"
 ---
 # <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
 
@@ -47,10 +47,10 @@ Aby tworzyć i generować raporty finansowe firmy, należy ustawić następując
 -   Plan kont
 -   Waluta
 -   Księguj transakcję na co najmniej jednym koncie
--   Konto główne jest wymienione w kolumnie Wybrane w **Księga główna > Ustawienia księgi głównej > Konfiguracja Financial Reporting**
+-   Konto główne jest wymienione w kolumnie **Wybrane**, na stronie **Konfiguracja Financial Reporting** (**Księga główna > Ustawienia księgi głównej > Konfiguracja Financial Reporting**)
 
-## <a name="granting-security-access-to-financial-reporting"></a>Udzielanie zabezpieczeń do Raportowania finansowego
-Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
+## <a name="granting-security-access-to-financial-reporting"></a>Udzielanie zabezpieczeń do Financial Reporting
+Funkcje Financial Reporting są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
 
 ### <a name="duties"></a>Obowiązki
 
@@ -79,7 +79,7 @@ Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają
 | Generowanie raportów finansowych            | Generowanie raportów finansowych            | Dyrektor generalny, Dyrektor finansowy, Księgowy                                                            |
 | Wyświetlanie raportów finansowych                | Przeglądanie wyników finansowych          | Nie przypisano                                                                   |
 
-Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do raportów finansowych za kilka minut. 
+Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do Financial Reporting za kilka minut. 
 
 > [!NOTE]
 > Rola sysadmin jest dodawana do wszystkich ról w module raportowania finansowego.
@@ -160,15 +160,52 @@ Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** l
 Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzystania z Raportowania finansowego. 
 
 * Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Raportowania finansowego. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
-* Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Raportowania finansowego](#granting-security-access-to-financial-reporting). Zabezpieczenia w Raportowaniu finansowym są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
+* Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Financial Reporting](#granting-security-access-to-financial-reporting). Zabezpieczenia w Financial Reporting są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
 * Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Raportowaniu finansowym może potrwać do 10 minut. 
   Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
 * Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Raportowania finansowego** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
 
-Wydanie 3: na stronie rejestracja projektanta raportów ClickOnce można kontynuować pracę, ale nie można zakończyć logowania w oknie Projektanta raportów. 
+Wydanie 3: na stronie rejestracja **ClickOnce Report Designer** można kontynuować pracę, ale nie można zakończyć logowania w oknie Report Designer. 
 
 * Czas określony na komputerze lokalnym podczas wprowadzania poświadczeń logowania musi zawierać się w ciągu pięciu minut od czasu na serwerze Financial Reporting. Jeśli występuje różnica ponad 5 minut, system nie pozwoli na zarejestrowanie się. 
-* W takim przypadku zalecamy włączenie opcji systemu Windows w celu automatycznego ustawienia czasu na komputerze. 
+* Jeśli czas na komputerze różni się od czasu na serwerze Financial Reporting, zalecamy włączenie opcji Systemu Windows, aby automatycznie ustawić czas komputera. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>Rozwiązywanie problemów z Report Designer za pomocą narzędzia Przeglądarki zdarzeń
+
+Podgląd zdarzeń służy do analizowania niektórych problemów, które pojawiają się podczas korzystania z Financial Reporting. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Co się dzieje, gdy masz problemy z połączeniami w Financial reporting? 
+
+Oto kilka kroków, które można wykonać, aby rozmowa z pomocą techniczną firmy Microsoft była bardziej skuteczna a rozwiązanie otrzymane szybciej. 
+ 
+Poniższe kroki obejmują proces włączania komunikatów podglądu zdarzeń w Financial reporting. Dzienniki generowane przez Przeglądarkę zdarzeń pomogą inżynierom pomocy technicznej w szybkim zidentyfikowaniu źródła problemu z połączeniem. Przesyłanie kopii tych dzienników wraz z biletem podczas kontaktowania się z pomocą techniczną.
+
+> 1.    Skopiuj plik RegisterETW.zip na stację roboczą klienta (najlepiej na pulpicie) i [wyodrębnij plik RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+
+> 2.    Upewnij się, że przeglądarka zdarzeń systemu Windows jest zamknięta.
+
+> 3.    Otwórz okno poleceń administratora PowerShell i przejdź do katalogu, w którym znajduje się plik RegisterETW.ps1.
+
+> 4.    Uruchom następujące polecenie: .\RegisterETW.ps1
+   
+   Pomyślne wyjście w programie PowerShell zostanie zweryfikowane za pomocą komunikatu **Ukończono skrypt RegisterETW**.
+Otwórz ponownie przeglądarkę zdarzeń, a teraz zobaczysz te dzienniki pod **Microsoft > Dynamics:** * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Odtwórz problem w narzędziu Report Designer.
+   
+> 6. Eksportowanie zdarzeń MR-logger przy użyciu podglądu zdarzeń.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Rozwiązywanie problemów z łączeniem się z Financial Reporting
+
+Problem: Pojawia się błąd „Nie można połączyć się z serwerem Financial Reporting”.
+
+* Sprawdź, czy problem występuje w przeglądarkach internetowych Chrome i Edge.
+* Jeśli problem występuje tylko w jednej przeglądarce, może to być problem ClickOnce. 
+* Po wyświetleniu komunikatu o błędzie połączenia wybierz opcję **Testuj**, aby przetestować połączenie, aby zobaczyć, jaki komunikat jest wyświetlany. 
+* Problem może być wynikiem innego użytkownika nie mającego dostępu do Financial Reporting. Jeśli użytkownik nie ma dostępu, otrzyma wiadomość z informacją, że nie ma uprawnień.
+* Jeśli problem występuje w wielu przeglądarkach, upewnij się, że zegar czasu na stacji roboczej jest ustawiony na Auto.
+* Pracuj z użytkownikiem, który ma prawa administratora zabezpieczeń Dynamics 365 Finance do domeny sieciowej i uprawnienia administratora, aby zalogować się na stacji roboczej, aby sprawdzić, czy może się połączyć. Jeśli mogą się połączyć, problem może być związany z uprawnieniami sieciowymi.
+* Na stacji roboczej tymczasowo wyłącz zaporę. Jeśli będzie można nawiązać połączenie z Report Designer, problem jest z zaporą. Aby rozwiązać ten problem, należy współpracować z działem IT swojej organizacji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)

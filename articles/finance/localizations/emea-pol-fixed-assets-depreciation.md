@@ -14,12 +14,12 @@ ms.search.region: Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: be981846ef781f8d50a389b633288c3c0522776f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9def0df87c5ae3bb2a5869cc1f8865cc6db9f13d91103c527cdaf16b2a797da9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729537"
 ---
 # <a name="fixed-assets-depreciation-for-poland"></a>Amortyzacja środków trwałych dla Polski
 

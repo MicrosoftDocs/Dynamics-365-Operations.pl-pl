@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a89dc7210037a8f642716e1b9459a83fad3d91c2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eec31a4d4c0df1ffe693465e8e7df2367f4b39e38569c6f44241941712054f38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840973"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735445"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Transakcje rejestru VAT dla Europy Wschodniej
 

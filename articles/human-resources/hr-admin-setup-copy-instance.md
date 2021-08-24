@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740846"
 ---
 # <a name="copy-an-instance"></a>Kopiowanie wystąpienia
 
@@ -52,9 +52,9 @@ Podczas kopiowania bazy danych Human Resources zachodzą następujące zdarzenia
 
 - Dokumenty w magazynie obiektów BLOB Microsoft Azure nie są kopiowane z jednego środowiska do drugiego. Z tego też powodu żadne dołączone dokumenty i szablony nie zostaną skopiowane i pozostaną w środowisku źródłowym.
 
-- Wszyscy użytkownicy, z wyjątkiem użytkownika o statusie Administrator i innych wewnętrznych użytkowników usługi, będą niedostępni. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
+- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” i innymi wewnętrznymi kontami użytkowników usługi nie będą dostępne. Administrator może usunąć lub ukryć dane, zanim użytkownicy ponownie uzyskają dostęp do systemu.
 
-- Administrator musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
+- Użytkownik (rola zabezpieczeń Administrator systemu) musi wprowadzić wymagane zmiany konfiguracji, takie jak ponowne podłączenie punktów końcowych integracji do określonych usług lub adresów URL.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiowanie bazy danych Human Resources
 
@@ -75,7 +75,7 @@ Aby wykonać to zadanie, najpierw należy skopiować instancję, a następnie za
 
 5. Wybierz **Power Platform**, zaloguj się do Centrum administracyjnego Microsoft Power Platform.
 
-   ![[Wybór Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Wybierz Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Wybierz środowisko Power Apps do skopiowania, a następnie wybierz **Kopiuj**.
 
@@ -111,7 +111,7 @@ Niektóre z tych elementów nie są kopiowane, ponieważ są specyficzne dla śr
 
 Ponadto podczas kopiowania istnieją zmieniają się następujące stany:
 
-- Wszyscy użytkownicy z wyjątkiem administratora są **Wyłączeni**.
+- Wszyscy użytkownicy z wyjątkiem tych z rolą zabezpieczeń „Administrator systemu” są ustawieni na **Wyłączone**.
 
 - Wszystkie zadania wsadowe, z wyjątkiem niektórych zadań systemowych, są ustawione na **Wstrzymane**.
 

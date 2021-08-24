@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: a48069bfa9609e39169d22a8fb843ea22235a2c6
-ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
+ms.openlocfilehash: 7bd0cbe9ef85eda33eee7589f86b5d855429e8bda52e7edabc0f2bd31bc51261
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "6661078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757954"
 ---
 # <a name="details-of-specific-business-scenarios-in-the-jpk-v7m-report"></a>Szczegóły określonych scenariuszy biznesowych w raporcie JPK-V7M
 
