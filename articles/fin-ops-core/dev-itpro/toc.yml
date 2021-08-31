@@ -332,9 +332,7 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Pobieranie stanu działania operacji
                       href: database/api/v1/reference-get-status.md
-                    - name: Rozpoczynanie i zatrzymywanie środowisk
-                      href: database/api/v1/reference-start-stop-environments.md
-        - name: Demo data
+        - name: Dane demonstracyjne
           items:
             - name: Omówienie danych demonstracyjnych
               href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
@@ -368,15 +366,17 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: Ciągłość działania i odzyskiwanie po awarii
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Przygotowywanie obsługi Azure Resource Manager
+                - name: Zakończenie procesu dołączania usługi Azure Resource Manager
                   href: deployment/arm-onboarding.md
+                - name: Zakończenie procesu dołączania usługi Azure Resource Manager dla projektów usługi LCS instytucji rządowych USA
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute i Finance and Operations
                   href: deployment/expressroute.md
                 - name: Architektura aplikacji Finance and Operations
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Stosowanie aktualizacji do środowisk w chmurze
                   href: deployment/apply-deployable-package-system.md
-                - name: Zastosowanie aktualizacji i rozszerzeń do Commerce Scale Unit (chmura)
+                - name: Stosowanie aktualizacji i rozszerzeń do usługi Commerce Scale Unit (chmura)
                   href: deployment/Update-retail-channel.md
                 - name: Automatyczna aktualizacja Commerce Scale Unit (chmura)
                   href: deployment/Auto-Update-Commerce-Scale-Unit.md
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: Usługa LCS dla partnerów
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Interfejsy API usług RESTful
+                  items:
+                    - name: Rozpoczynanie i zatrzymywanie środowisk
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: Pobierz metadane środowiska
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: Pobierz historię środowiska
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: Pobierz plik ZIP certyfikatu RSAT środowiska
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nowości i zmiany w rozwiązaniu Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
             - name: Przewodnik użytkownika usługi Lifecycle Services
@@ -1138,22 +1148,24 @@
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: Rozwiązywanie problemów
                       items:
-                        - name: Sprawdzenie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Rozwiązywanie ogólnych problemów
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                         - name: Rozwiązywanie problemów podczas konfiguracji początkowej
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                         - name: Rozwiązywanie problemów podczas synchronizacji początkowej
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Rozwiązywanie problemów z synchronizacją na żywo
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Rozwiązywanie problemów ze stroną i problemy z globalną książką adresową
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: Rozwiązywanie problemów związanych ze świadomością rozwiązania
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Rozwiązywanie problemów z aktualizacjami aplikacji Finance and Operations
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Rozwiązywanie ogólnych problemów
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Sprawdzenie konfiguracji podwójnego zapisu w aplikacjach Finance and Operations i Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: Często zadawane pytania na temat podwójnego zapisu
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Jednostki wirtualne

@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Usługa Regulatory Configuration Service — wycofanie magazynu usługi Lifecycle Services
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Pobieranie konfiguracji modułu Raportowanie elektroniczne do rozwiązania Supply Chain Management
+                      items:
+                        - name: Pobieranie konfiguracji z usługi RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importowanie konfiguracji z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Repozytorium globalne (GR)
+                      items:
+                        - name: Importowanie konfiguracji z GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importowanie zaktualizowanych wersji konfiguracji raportowania elektronicznego
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Rozszerzone filtrowanie w celu znalezienia konfiguracji w GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Przesyłanie konfiguracji do GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Udostępnianie konfiguracji w GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Wycofaj konfiguracje w repozytorium globalnym RCS
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fakturowanie elektroniczne
                   items:
                     - name: Omówienie fakturowania elektronicznego
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Importowanie konfiguracji (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Funkcje globalizacji w RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Pobieranie konfiguracji modułu Raportowanie elektroniczne do rozwiązania Supply Chain Management
-                      items:
-                        - name: Pobieranie konfiguracji z usługi RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importowanie konfiguracji z RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Repozytorium globalne (GR)
-                      items:
-                        - name: Importowanie konfiguracji z GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Importowanie zaktualizowanych wersji konfiguracji raportowania elektronicznego
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Rozszerzone filtrowanie w celu znalezienia konfiguracji w GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Przesyłanie konfiguracji do GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Udostępnianie konfiguracji w GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Wycofaj konfiguracje w repozytorium globalnym RCS
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Przewodniki Szybki start
               items:
                 - name: Dostosowanie formatu raportowania elektronicznego w celu wygenerowania niestandardowego dokumentu elektronicznego
@@ -1574,7 +1570,19 @@
             - name: Archiwizacja transakcji magazynowych
               href: inventory/archive-inventory-transactions.md
             - name: Dodatek Widoczność magazynu
-              href: inventory/inventory-visibility.md
+              items:
+                - name: Dodatek Widoczność magazynu — omówienie
+                  href: inventory/inventory-visibility.md
+                - name: Ustawianie dodatku Widoczność magazynu
+                  href: inventory/inventory-visibility-setup.md
+                - name: Konfiguracja dodatku Widoczność magazynu
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Rezerwacje dodatku Widoczność magazynu
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Aplikacja PowerApp Widoczność magazynu
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Publiczne interfejsy API dodatku Widoczność magazynu
+                  href: inventory/inventory-visibility-api.md
         - name: Analiza Internetu rzeczy (IoT)
           items:
             - name: Analiza Internetu rzeczy (IoT) — strona główna
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: Analiza dopasowań optymalizacji planowania
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Różnice między wbudowanym planowaniem głównym a optymalizacją planowania
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametry nieużywane przez optymalizację planowania
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Stosowanie filtrów do planu
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Otwieranie danych jednostki w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Tworzenie funkcji otwierania w programie Excel
+            - name: Otwieranie w programie Excel — często zadawane pytania
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dodawanie szablonów do menu Otwórz wiersze w programie Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: Tworzenie zapytania ofertowego
                   href: procurement/tasks/create-request-quotation.md
-                - name: Oferty zapieczętowane na potrzeby ZO
-                  href: procurement/sealed-bidding.md
                 - name: Tworzenie zapotrzebowania wykorzystującego ZO
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Tworzenie metody punktowania dla ZO
@@ -3301,6 +3309,8 @@
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: Instalowanie i łączenie aplikacji magazynu
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Mobilna obsługa kodów kreskowych
+                      href: warehousing/mobile-barcode-support.md
                     - name: Skanowanie kodów kreskowych za pomocą aparatu w aplikacji mobilnej Warehouse Management
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Rozwiązywanie problemów z połączeniem z aplikacją mobilną Warehouse Management
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Konfigurowanie urządzeń przenośnych do pracy magazynowej
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
@@ -3331,13 +3343,13 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Przetwarzanie zdarzenia aplikacji magazynu
                   href: warehousing/warehouse-app-events.md
-                - name: Dostosowywanie aplikacji magazynu
+                - name: Rozszerzanie procesów urządzeń przenośnych dla magazynu
                   items:
                     - name: Struktura przewodnika procesu
                       href: warehousing/process-guide-framework.md
                     - name: Przypisywanie ikon i tytułów kroków
                       href: warehousing/step-icons-titles.md
-            - name: Konfiguracja magazynu
+            - name: Ustawianie magazynu
               items:
                 - name: Konfiguracja magazynu
                   items:
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Układ rozsyłania dokumentów dla etykiet numerów identyfikacyjnych
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Mobilna obsługa kodów kreskowych
-                      href: warehousing/mobile-barcode-support.md
+                    - name: Kody kreskowe GS1 i kody QR
+                      href: warehousing/gs1-barcodes.md
                     - name: Konfigurowanie magazynu dla zamówień przeniesienia
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Rozwiązywanie problemów dotyczących konfiguracji magazynu
@@ -3415,7 +3427,7 @@
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
                     - name: Rozwiązywanie problemów dotyczących uaktualniania i migracji do zaawansowanego zarządzania magazynem
                       href: warehousing/troubleshoot-warehouse-upgrade-migration.md
-                - name: Rozwiązywanie problemów dotyczących konfiguracji magazynu
+                - name: Rozwiązywanie problemów dotyczących ustawiania magazynu
                   href: warehousing/troubleshoot-warehouse-setup.md
         - name: Rozwój modułu Supply Chain Management
           items:
