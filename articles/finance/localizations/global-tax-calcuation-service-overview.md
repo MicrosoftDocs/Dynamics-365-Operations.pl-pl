@@ -1,12 +1,12 @@
 ---
-title: Obliczanie podatku (wersja zapoznawcza)
+title: Omówienie obliczania podatku
 description: W tym temacie wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: wangchen
-ms.date: 06/03/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e01247cddad4201760fd56e00e05a8373a1ca6ef7c26ae5e1f5cca63bd8a456
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775101"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394593"
 ---
-# <a name="tax-calculation-preview"></a>Obliczanie podatku (wersja zapoznawcza)
+# <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,42 +35,57 @@ Obliczanie podatku jest zintegrowane z Dynamics 365 Finance i Dynamics 365 Suppl
 > [!IMPORTANT]
 > Po włączeniu usługi Obliczanie podatku niektóre operacje na powiązanych danych mogą być wykonywane w centrum danych innym niż centrum danych, w którym przechowywane są dane usługi. Zapoznaj się z [Regulaminem korzystania](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) przed włączeniem usługi Obliczanie podatku. Prywatność użytkowników jest dla nas bardzo ważna. Więcej informacji na ten temat znajduje się w [Oświadczeniu o ochronie prywatności](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-Obliczanie podatku jest mikrousługą opartą na firmie Microsoft aparatem podatków, która oferuje wystawczą skalowalność. Możne pomóc wykonać następujące zadania:
+Obliczanie podatku to aparat podatków oparty na mikrousłudze, który odznacza się wykładniczą skalowalnością i ułatwia wykonywanie następujących zadań.
 
-- Skonfiguruj usługę Obliczania podatku za pomocą Regulatory Configuration Service (RCS). Usługa RCS jest rozszerzoną wersją konstruktora raportowania elektronicznego i jest dostępna jako autonomiczna usługa.
-- Umożliwia konfigurowanie macierzy podatków w celu automatycznego określania kodów i stawek podatkowych.
-- Skonfiguruj macierz podatkową, aby automatycznie określić numer rejestracji podatkowej.
-- Skonfiguruj projektanta obliczeń podatku w celu zdefiniowania formuł i warunków.
-- Udostępnij rozwiązanie dotyczące określania podatków i obliczania w różnych firmach.
+- Automatyczne określanie poprawnej grupy podatków, grupy podatków dla pozycji i kodów podatku przy użyciu ulepszonego mechanizmu określania.
+- Obsługa wielu numerów rejestracji podatkowej w jednej firmie i automatyczne ustalanie poprawnego numeru rejestracji podatkowej zależnie od transakcji podlegających opodatkowaniu.
+- Obsługa określania podatków, obliczania, księgowania i rozliczania zamówień przeniesienia.
+- Określanie konfigurowalnych formuł obliczania podatku i warunków dostosowanych do indywidualnych wymagań.
+- Udostępnianie rozwiązania w zakresie określania i obliczania podatku w różnych firmach w celu ułatwienia pracy i uniknięcia błędów.
+- Obsługa określania numeru rejestracji podatkowej odbiorcy i dostawcy.
+- Obsługa określania kodu listy.
+- Obsługa parametrów obliczania podatku na poziomie właściwości urzędu skarbowego.
 
-Aby użyć usługi obliczania podatku, zainstaluj dodatek usługi obliczania podatku z swojego projektu w usłudze Microsoft Dynamics Lifecycle Services (LCS). Następnie należy ukończyć konfigurację w rcs i włączyć usługę obliczania podatku w Finance i Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Rozpocznij pracę z usługą podatkową](./global-get-started-with-tax-calculation-service.md).
+Aby użyć usługi obliczania podatku, zainstaluj dodatek Obliczanie podatku z swojego projektu w usłudze Microsoft Dynamics Lifecycle Services. Następnie dokończ konfigurację w usłudze [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/) i włącz obliczanie podatku w modułach Finance i Supply Chain Management. Aby uzyskać więcej informacji, zobacz [Rozpocznij pracę z usługą podatkową](global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Dostępność
 
-Obliczanie podatku jest dostępne tylko w środowiskach piaskownicy i dla wybranych klientów za pośrednictwem publicznego programu w wersji zapoznawczej. Ostatecznie stają się one ogólnie dostępne dla wszystkich odbiorców oraz w środowiskach produkcyjnych.
+Obliczanie podatku jest zazwyczaj dostępne w środowiskach produkcyjnych dla wszystkich odbiorców od wersji 10.0.21.
 
-Nowe funkcje będą nadal dostarczane, więc pamiętaj, aby często sprawdzać najbardziej aktualną dokumentację, aby dowiedzieć się o zasięgu i zakresie obsługiwanych funkcji.
+Nowe funkcje będą nadal dostarczane. Należy często sprawdzać aktualny plan wydawniczy, aby dowiadywać się o zakres obsługiwanych funkcji.
 
-Obliczanie podatku jest wdrożone w następujących lokalizacjach geograficznych systemu Azure. Zostanie on również wdrożony w większej liczby geografów systemu Azure w zależności od potrzeb klientów:
+Obliczanie podatku jest wdrożone w następujących lokalizacjach geograficznych systemu Azure. Stosownie do potrzeb klientów zostanie dodanych więcej regionów geograficznych Azure.
 
-- Stany Zjednoczone
+- Azja i Pacyfik
+- Australia
+- Kanada
 - Europa
+- Japonia
+- Wielka Brytania
+- Stany Zjednoczone
 
 > [!NOTE]
-> Obliczanie podatku nie obsługuje lokalnych wdrożeń rozwiązania Dynamics 365. Nie obsługuje także wcześniejszych wersji, takich jak Dynamics AX 2012.
+> Usługa obliczania podatku nie obsługuje wcześniejszych wersji Dynamics 365, jak Dynamics AX 2012 ani lokalnych wdrożeń rozwiązania Dynamics 365.
 
-## <a name="feature-highlights"></a>Najważniejsze cechy
+## <a name="data-flow"></a>Przepływ danych
 
-- Konfigurowalna macierz podatkowa do automatycznego określania i obliczania podatku
-- Obsługa wielu numerów rejestracji podatkowej
-- Obsługa zamówień przeniesienia do określania i obliczania podatku
-- Obsługa zamówień przeniesienia w celu określenia wielu numerów rejestracji podatkowej
+Poniżej znajduje się konspekt procesu przepływu danych obliczania podatku. 
+
+1. W RCS możliwe jest wyświetlanie i importowanie konfiguracji modelu dokumentów podlegających opodatkowaniu oraz konfiguracji mapowania modelu. Jeśli jest wymagane rozszerzenie konfiguracji dla scenariusza zaawansowanego, zobacz temat [Dodawanie pól danych w konfiguracjach podatków](tax-service-add-data-fields-tax-configurations.md).
+2. W RCS możliwe jest tworzenie lub modyfikowanie funkcji podatku. Funkcji podatku można używać do obsługi stawek podatkowych i reguł możliwości ich stosowania.
+3. Po zakończeniu konfigurowania funkcji podatku opublikuj konfiguracje podatków i funkcje podatku z usługi RCS w repozytorium globalnym.
+4. W module Finanse wybierz wersję konfiguracji funkcji podatku, która ma być dostępna dla określonej firmy.
+5. W modułach Finance i Supply Chain Management transakcje należy przeprowadzać w zwykły sposób. Jeśli jest potrzebne obliczenie podatku, klient zbiera informacje z transakcji, takie jak zamówienie sprzedaży lub zamówienie zakupu, i pakuje te informacje jako ładunek. Następnie zostanie wysłane żądanie obliczenia podatku.
+6. Żądanie obliczenia podatku jest odbierane z klienta i obliczanie jest wykonywane. Wynik podatku jest następnie zwracany do klienta.
+7. Klient systemu Dynamics 365 otrzymuje wynik podatku i przedstawia wynik obliczenia podatku na stronie podatku.
 
 ## <a name="supported-transactions"></a>Obsługiwane transakcje
 
-Obliczanie podatku może być włączone przez firmę i transakcję. Obsługiwane są następujące transakcje:
+Obliczanie podatku może być włączone przez transakcje. 
 
-- Proces sprzedaży
+W wersji 10.0.21 są obsługiwane następujące transakcje: 
+
+- Sprzedaż
 
     - Oferta sprzedaży
     - Zamówienie sprzedaży
@@ -83,7 +98,7 @@ Obliczanie podatku może być włączone przez firmę i transakcję. Obsługiwan
     - Nagłówek Opłaty dodatkowe
     - Pozostały koszt dotyczący danej pozycji
 
-- Proces zakupu
+- Zakup
 
     - Zamówienie zakupu
     - Potwierdzenie
@@ -100,10 +115,36 @@ Obliczanie podatku może być włączone przez firmę i transakcję. Obsługiwan
     - Różne opłaty od nagłówka zapytania ofertowego
     - Różne opłaty od wiersza zapytania ofertowego
 
-- Proces zapasów
+- Zapasy
 
     - Przeniesienie zamówienia - wysyłka
     - Zamówienie przeniesienia - odbiór
+
+## <a name="supported-countriesregions"></a>Obsługiwane kraje/regiony
+
+Obliczanie podatku może zostać włączone zależnie od firmy. 
+
+W wersji 10.0.21 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+
+- Austria
+- Belgia
+- Dania
+- Estonia
+- Finlandia
+- Francja
+- Niemcy
+- Węgry
+- Islandia
+- Włochy
+- Łotwa
+- Litwa
+- Holandia
+- Norwegia
+- Polska
+- Szwecja
+- Szwajcaria
+- Wielka Brytania
+- Stany Zjednoczone
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

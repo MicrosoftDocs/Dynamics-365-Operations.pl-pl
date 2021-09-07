@@ -1,8 +1,8 @@
 ---
 title: Zasady uprawnienia do świadczenia
-description: Ten artykuł zawiera informacje o zasadach uprawnień do świadczeń, które pomagają określić, kto może otrzymywać określone świadczenia.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ten temat zawiera informacje o zasadach uprawnień do świadczeń, które określają, kto może otrzymywać określone świadczenia.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8f0f51bc701af3f5dec2d393a87f589729af147bf44a56c4995991631f0d6379
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88b801be5be4f9abcec4632fe1d96dbd83aaec96
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727168"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416936"
 ---
-# <a name="benefit-eligibility-policies"></a>Zasady uprawnień do świadczeń
+# <a name="benefit-eligibility-policies"></a>Zasady uprawnienia do świadczenia
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ten artykuł zawiera informacje o zasadach uprawnień do świadczeń, które pomagają określić, kto może otrzymywać określone świadczenia.
+Ten temat zawiera informacje o zasadach uprawnień do świadczeń, które określają, kto może otrzymywać określone świadczenia.
 
 Podczas tworzenia świadczeń określa się, które świadczenia będą dostępne dla których pracowników. W poniższej tabeli przedstawiono przykłady świadczeń, które można udostępnić określonym pracownikom.
 

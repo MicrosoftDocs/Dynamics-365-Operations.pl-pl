@@ -2,7 +2,7 @@
 title: Operacja wyszukiwania zapasów w POS
 description: W tym temacie opisano, jak używać operacji wyszukiwania zapasów w punkcie sprzedaży (POS) Dynamics 365 Commerce do przeglądania dostępnych zapasów produktów w sklepach i magazynach.
 author: boycezhu
-ms.date: 05/11/2021
+ms.date: 08/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: b697583f2ebf9950ad805d4f415dafb2c891de8052d4a47563b048059475030f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ded7c0aa00d0806dfe4eb4e182abbbf66fd76d5b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745339"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343843"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Operacja wyszukiwania zapasów w POS
 
@@ -40,7 +40,7 @@ W przypadku pojedynczego produktu operacja wyszukiwania zapasów udostępnia wid
 
 - **Zapasy** — odnosi się do „fizycznie dostępnej” ilości produktu.
 - **Zarezerwowane** — dotyczy ilości fizycznie zarezerwowanej pobranej z centrali.
-- **Zamówiona** — Odnosi się do ilości „zamówionych ogółem” pobranej z centrali.
+- **Zamówiona** — odnosi się do ilości „zamówionych ogółem” pobranej z centrali.
 - **Jednostka** — odnosi się do towaru jednostka miary skonfigurowanego w centrali.
 
 Widok listy lokalizacji zawiera wszystkie sklepy i magazyny skonfigurowane w grupach realizacji, z którym jest połączony bieżący sklep, jak pokazano na poniższym przykładzie.
@@ -52,25 +52,26 @@ Widok listy lokalizacji zawiera wszystkie sklepy i magazyny skonfigurowane w gru
 
 Na pasku aplikacji POS są dostępne następujące akcje:
 
-- **Sortuj** — ta akcja umożliwia użytkownikowi punktu końcowego posortowanie danych w widoku listy na podstawie różnych kryteriów. Sortowanie oparte na lokalizacjach jest domyślną opcją sortowania. 
-  - **Lokalizacja geograficzna** (od najbliższej do najmniejszej lokalizacji w porównaniu z bieżącym sklepem)
-  - **Nazwa** (w kolejności rosnącej lub malejącej)
-  - **Numer sklepu** (w kolejności rosnącej lub malejącej)
-  - **Zapasy** (w porządku malejącym)
-  - **Zarezerwowany** (w porządku malejącym)
-  - **Zamówiona** (w porządku malejącym)
+- **Sortuj** — ta akcja umożliwia użytkownikowi punktu końcowego posortowanie danych w widoku listy na podstawie różnych kryteriów. Sortowanie oparte na lokalizacjach jest domyślną opcją sortowania.
+
+    - **Lokalizacja geograficzna** (od najbliższej do najdalszej lokalizacji na podstawie odległości od bieżącego sklepu)
+    - **Nazwa** (w kolejności rosnącej lub malejącej)
+    - **Numer sklepu** (w kolejności rosnącej lub malejącej)
+    - **Zapasy** (w porządku malejącym)
+    - **Zarezerwowany** (w porządku malejącym)
+    - **Zamówiona** (w porządku malejącym)
+
 - **Filtr** — ta akcja umożliwia użytkownikowi punktu końcowego wyświetlenie przefiltrowanych danych dla określonej lokalizacji.
 - **Pokaż dostępność sklepu** — ta akcja umożliwia użytkownikowi punktu sprzedaży wyświetlenie ilości dostępnych do dostępności (ATP) dla produktu w wybranym sklepie.
 - **Pokaż lokalizację sklepu** — ta akcja powoduje otwarcie osobnej strony w celu wyświetlenia widoku mapy, adresu i godzin sklepu dla wybranego sklepu.
-- **Odbierz w sklepie** - Ta akcja tworzy zamówienie klienta na produkt, który zostanie odebrany z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
-- **Wyślij produkt** - Ta akcja tworzy zamówienie klienta na produkt, który zostanie wysłany z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
+- **Odbierz w sklepie** — ta akcja tworzy zamówienie klienta na produkt, który zostanie odebrany z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
+- **Wyślij produkt** — ta akcja tworzy zamówienie klienta na produkt, który zostanie wysłany z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
 - **Wyświetlanie wszystkich wariantów** — w przypadku produktu z wariantami ta akcja przełącza się z widoku listy na widok macierzy, w którym są wyświetlane informacje o zapasach dla wszystkich wariantów produktu.
 - **Dodaj do transakcji** — ta akcja powoduje dodanie produktu do koszyka i przekierowywanie użytkownika do ekranu transakcji.
 
 > [!NOTE]
-> W przypadku sortowania opartego na lokalizacjach odległość między lokalizacją a bieżącym sklepem jest określana na podstawie współrzędnych (szerokości geograficznej i długości) zdefiniowanych w programie Commerce Headquarters. W przypadku sklepu informacje o lokalizacji są definiowane w podstawowym adresie jednostki operacyjnej skojarzonej ze sklepem. W przypadku magazynu, który nie jest magazynem sklepowym, informacje o lokalizacji są zdefiniowane w adresie magazynu. Jeśli dla bieżącego sklepu nie są zdefiniowane współrzędne, opcja sortowania według lokalizacji spowoduje wyświetlenie bieżącego sklepu na początku listy, a następnie posortowanie innych lokalizacji według nazwy.
-
-> [!NOTE]
+> Sortowanie oparte na lokalizacjach wprowadzone w wersji Commerce 10.0.17 pokazuje bieżący sklep na początku. W przypadku innych lokalizacji odległość między lokalizacją a bieżącym sklepem jest określana na podstawie współrzędnych (szerokości geograficznej i długości) zdefiniowanych w programie Commerce Headquarters. W przypadku sklepu informacje o lokalizacji są definiowane w podstawowym adresie jednostki operacyjnej skojarzonej ze sklepem. W przypadku magazynu, który nie jest magazynem sklepowym, informacje o lokalizacji są zdefiniowane w adresie magazynu. W wersjach starszych niż 10.0.17 w widoku listy zawsze bieżący sklep był pokazywany na początku, a inne lokalizacje w kolejności alfabetycznej.
+>
 > Akcje **Pokaż dostępność sklepu**, **Pokaż lokalizację sklepu**, **Odbiór w sklepie** i **Wyślij produkt** są niedostępne w lokalizacjach poza sklepem.
 
 ## <a name="inventory-lookup-matrix-view-for-variants"></a>Widok macierzy wyszukiwania zapasów dla wariantów
@@ -93,9 +94,9 @@ Kolejność wyświetlania wartości wymiarów w widoku macierzy jest oparta na k
 
 W komórce widoku macierzy dostępne są następujące akcje:
 
-- **Sprzedaj teraz** — Ta akcja dodaje wybrany wariant do koszyka i przekierowuje użytkownika do ekranu transakcji.
-- **Odbierz w sklepie** - Ta akcja tworzy zamówienie klienta na wybrany wariant, które zostanie odebrane z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
-- **Wyślij produkt** -Ta akcja tworzy zamówienie klienta dla wybranego wariantu, które zostanie wysłane z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
+- **Sprzedaj teraz** — ta akcja dodaje wybrany wariant do koszyka i przekierowuje użytkownika do ekranu transakcji.
+- **Odbierz w sklepie** — ta akcja tworzy zamówienie klienta na wybrany wariant, które zostanie odebrane z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
+- **Wyślij produkt** — ta akcja tworzy zamówienie klienta dla wybranego wariantu, które zostanie wysłane z wybranego sklepu i przekierowuje użytkownika do ekranu transakcji.
 - **Dostępność** — ta akcja przenosi użytkownika na osobną stronę pokazującą ilości ATP dla wybranego wariantu w wybranym sklepie.
 - **Pokaż wszystkie lokalizacje** — ta akcja przełącza do widoku standardowej listy dostępności zapasów, wyświetlając informacje o zapasach dla wybranego wariantu.
 - **Wyświetl szczegóły produktu** — ta akcja przekieruje użytkownika do strony szczegółów produktu (PDP) wybranego wariantu.
@@ -124,7 +125,5 @@ W wersji Commerce 10.0.9 i wcześniejszych **dostępne fizycznie** wartość w o
 [Konfiguracje wizualne interfejsu użytkownika punktu sprzedaży](pos-screen-layouts.md)
 
 [Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej](calculated-inventory-retail-channels.md)
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Integracja z często zadawanymi pytaniami Finance
 description: W tym temacie wyjaśniono, jakie dane są synchronizowane w integracji programów Human Resources i Finance.
-author: andreabichsel
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782151"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413418"
 ---
 # <a name="integration-with-finance-faq"></a>Integracja z często zadawanymi pytaniami Finance
 
@@ -158,8 +158,7 @@ Upewnij się, że podczas tworzenia połączenia została wybrana opcja Dynamics
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Podczas synchronizowania zatrudnienia pojawiają się błędy „CompanyInfo_FK nie istnieje.” lub „Wartość '12/31/2154 11:59:59 pm' w polu 'Data zakończenia zatrudnienia' nie występuje w odpowiedniej tabeli 'Zatrudnienie'”. Co należy zrobić?
 
-Upewnij się, że mapujesz prawidłowe firmy. Synchronizowanie firmy nie jest częścią szablonu domyślnego, więc oczekuje się, że każda firma, która znajduje się w Human Resources i Dataverse, znajduje się również w Finance.
-Upewnij się również, że wybierasz prawidłowe firmy dla skojarzonego zestawu połączeń.
+Upewnij się, że mapujesz prawidłowe firmy. Synchronizowanie firmy nie jest częścią szablonu domyślnego, więc oczekuje się, że każda firma, która znajduje się w Human Resources i Dataverse, znajduje się również w Finance. Upewnij się również, że wybierasz prawidłowe firmy dla skojarzonego zestawu połączeń.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Po skonfigurowaniu projektu mapowanie pól dla Finance wydaje się puste. Co należy zrobić?
 

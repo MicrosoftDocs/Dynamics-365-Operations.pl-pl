@@ -2,7 +2,7 @@
 title: Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
 description: Ten temat zawiera informacje dotyczące składników systemu pomocy dla niektórych aplikacji Microsoft Dynamics 365.
 author: margoc
-ms.date: 05/11/2020
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8481a2ba54b88f0911436f352b901cde55924e2ccc15a381b8742abe85d972
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343819"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
 
@@ -54,7 +54,7 @@ Aby skonfigurować przewodniki zadań dla rozwiązania, wykonaj poniższe kroki 
 > [!IMPORTANT]
 > Podczas pierwszego otwierania karty **Pomoc** należy utworzyć połączenie z usługą Lifecycle Services. Wybierz link w środku formularza, poczekaj na nawiązanie połączenia, zamknij okno dialogowe i wybierz przycisk **OK**, co spowoduje przejście do formularza **Parametry systemowe**.
 >
-> [![Podłączanie do LCS](./media/connect-to-lcs-crop-1024x365.png "Podłączanie do LCS".](./media/connect-to-lcs-crop.png)
+> [![Nawiązywanie połączenia z usługą LCS](./media/connect-to-lcs-crop-1024x365.png "Nawiązywanie połączenia z usługą LCS.")](./media/connect-to-lcs-crop.png)
 
 1. Wybierz projekt Lifecycle Services, z którym chcesz się połączyć.
 2. Wybierz biblioteki BPM (w ramach wybranego projektu), z których będą pobierane nagrania zadań.

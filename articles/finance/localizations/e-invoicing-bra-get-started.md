@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ccf2a78a5ffdb95b334f751944fdd010bf8cbf01
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345204"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym dla Brazylii 
 
@@ -55,7 +55,7 @@ Przed wdrożeniem konfiguracji aplikacji w połączonej aplikacji Finance lub Su
 
 Opisano w sekcji **Specyficzna dla kraju konfiguracja aplikacji** w tym temacie [Wprowadzenie do dodatku Fakturowanie elektroniczne](e-invoicing-get-started.md).
 
-1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne*.
+1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Na stronie **Funkcje fakturowania elektronicznego** sprawdź, czy jest wybrana utworzona funkcja elektronicznego fakturowania **Brazylijska NF-e (BR)**.
 3. Na karcie **Wersje** sprawdź, czy jest wybrana **Wersja robocza**.
 4. Na karcie **Ustawienia** wybierz pozycję **Ustawienia aplikacji** i w polu **Połączona aplikacja** wybierz aplikację, w której chcesz wdrożyć.

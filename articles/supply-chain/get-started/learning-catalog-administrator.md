@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764891"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402232"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Katalog szkoleń dla administratorów Dynamics 365 Supply Chain Management
 
@@ -61,6 +61,14 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Finance and Operations: Uaktualnianie z 7.x do 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Prosimy o wzięcie udziału w następnym TechTalk, podczas którego będziemy pokryć proces uaktualnienia z 7.X do 8.X. Będziemy omawiać różne scenariusze i kroki wykonywane w celu uaktualnienia kodu i uaktualnienia danych. Obejmą również scenariusze żądań rozszerzalności oraz sposób ich podniesienia w miarę potrzeby. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
 | [Jak uaktualnić do wersji 7.2 (lipiec 2017) z wersji 7.0 (RTW)/7.1 (wydanie 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | W tej sesji wyjaśnimy, jak uaktualnić z aplikacji Dynamics 365 Finance and Operations v 7.0 (RTW) i v 7.1 (1611) do v 7.2 (lipiec 2017) Oferujemy jasne rozróżnienie między klientami a projektami trwającymi (dotychczas niedostępne). | Bezpłatna rejestracja konferencji w sieci Web | 58 minut |
 | [AX2012 do Dynamics 365 for Operations Uaktualnianie (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ta rozmowa techniczna zawiera przegląd informacji na temat uaktualniania kodu i danych z systemu Dynamics AX 2012 do Dynamics 365 for Operations. | Bezpłatna rejestracja konferencji w sieci Web | 45 minut |
+| [AX2009 do Dynamics 365 for Operations Narzędzia migracji (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Ta sesja obejmie dostępne narzędzia ułatwiające Migrowanie z AX2009 do D365 dla Operations. | Bezpłatna rejestracja konferencji w sieci Web | 55 minut |
+| [Narzędzia migracji AX2009](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Ta sesja obejmie dostępne narzędzia ułatwiające Migrowanie z AX2009 do D365 dla Operations. | Bezpłatna rejestracja konferencji w sieci Web | 55 minut |
+
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| Zawartość | opis | Format | Długość |
+|---------|-------------|--------|--------|
+| [Konfigurowanie zarządzania zmianami inżynieryjnymi dla systemu Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dzisiejsi producenci wymagają silnego zarządzania danymi produktu, kontroli wersji i zarządzania zmianami inżynieryjnymi, aby odnieść sukces w świecie stale kurczących się cykli życia produktów, zwiększonych wymagań dotyczących jakości i niezawodności oraz zwiększonego nacisku na bezpieczeństwo produktu. Z tej ścieżki szkoleniowej dowiesz się, jak skonfigurować zarządzanie zmianami projektowymi. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
 
 ## <a name="servicing"></a>Obsługa<a name="servicing"></a>
 
@@ -69,6 +77,7 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | [Finance and Operations: Zarządzanie funkcjami (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Rozmowa o technologii jest doświadczeniem funkcji zarządzania funkcjami. Udostępnia obszar roboczy, w którym można wyświetlać, włączać, wyłączać i planować funkcje, które zostały dostarczone w każdym wydaniu. Domyślnie nowe funkcje są wyłączone. Można użyć obszaru roboczego, aby włączyć je i wyświetlić dokumentację dla nich. Uczestnictwo w tym spotkaniu w celu sprawdzenia, co jest dostarczane w 10.0.3 i naszych planów dotyczących przyszłych wydań. | Bezpłatna rejestracja konferencji w sieci Web | 47 minut |
 | [Finance and Operations: Serwisowanie, obsługiwanie i obsługa produkcji (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Informacje techniczne na temat efektywnej pomocy technicznej, obsługiwania i obsługiwania środowiska produkcyjnego Dynamics 365 for Finance and Operations. | Bezpłatna rejestracja konferencji w sieci Web | 53 minut |
 | [Finance and Operations: zarządzane ciągłe aktualizacje firmy Microsoft (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Częstotliwość ciągłej aktualizacji cla Finance and Operations została rozpoczęta! Dołącz do nas w tej godzinie, aby omówić ciągłe aktualizacje zarządzane przez firmę Microsoft, doświadczenie użytkownika dostępne w usłudze Lifecycle Services oraz przyszłe aktualizacje. | Bezpłatna rejestracja konferencji w sieci Web | 61 minut |
+| [Finance And Operations: zarządzane ciągłe aktualizacje firmy Microsoft: co nowego — 1 listopada 2018 r. (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | W tej godzinie będziemy omówić aktualizacje cadenceej ciągłej aktualizacji firmy Microsoft, jak również zapoznać się z wrażeniami użytkowników z usług Lifecycle Services. | Bezpłatna rejestracja konferencji w sieci Web | 59 minut |
 | [Ciągłe aktualizacje zarządzane przez firmę Microsoft: co nowego (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | W tej godzinie wyjaśnimy, co nowego od początkowych ogłoszeń dotyczących ciągłej aktualizacji zarządzanych przez firmę Microsoft. Będziemy omówić kadencję aktualizacji, w jaki sposób odpowiedział na cenną opinię na temat tego procesu, a także zapoznać się z zbliżającym się doświadczeniem użytkownika usługi Lifecycle Services, za pomocą którego można zarządzać aktualizacjami. | Bezpłatna rejestracja konferencji w sieci Web | 56 minut |
 | [Ciągłe aktualizacje zarządzane przez firmę Microsoft (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Będziemy omówić plany rozwiązania Microsoft w zakresie aktualizacji systemu do najnowszej wersji. Będziemy ponosić osie czasu, Cadence dla głównych i drobnych aktualizacji, planowane procedury, implikacje oraz co należy zrobić w celu uzyskania optymalnych wyników. | Bezpłatna rejestracja konferencji w sieci Web | 62 minut |
 | [Monitorowanie, doradca optymalizacji & krytyczne poprawki (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Będziemy omawiać możliwości monitorowania i monitory rozwiązania Microsoft dla Ciebie w środowisku produkcyjnym, Doradca optymalizacji i sposób jego rozszerzania, „krytyczne aktualizacje X++” usługi LCS i najważniejsze wskazówki dotyczące „raportu dotyczącego awarii produkcji” opcja usługi LCS. | Bezpłatna rejestracja konferencji w sieci Web | 40 minut |
@@ -86,6 +95,5 @@ Poniższy katalog jest zorganizowany od podstawowej bazy wiedzy do konkretnych d
 | Zawartość  | opis  | Format  |
 |----------|--------------|---------|
 | [Dynamics 365 Fundamentals](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Udowodni, że rozumiesz Microsoft Dynamics 365, Power Platform, pojęcia chmury, opcje licencjonowania, opcje wdrożenia i wydania. | Egzamin, koszty różnią się w zależności od regionu |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

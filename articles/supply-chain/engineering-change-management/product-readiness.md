@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723558"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415328"
 ---
 # <a name="product-readiness"></a>Gotowość produktu
 
 [!include [banner](../includes/banner.md)]
 
-Możesz użyć kontroli gotowości, aby upewnić się, że wszystkie wymagane dane podstawowe zostały określone dla produktu przed jego użyciem w transakcjach. Gdy używane są testy gotowości, użytkownik lub zespół jest odpowiedzialny za weryfikację określonych predefiniowanych danych związanych z produktem. Jeśli istnieje otwarta kontrola gotowości produktu, produkt nie może zostać zwolniony ani używany w transakcjach.
+Możesz użyć kontroli gotowości, aby upewnić się, że wszystkie wymagane dane podstawowe zostały określone dla produktu przed jego użyciem w transakcjach. Gdy używane są testy gotowości, użytkownik lub zespół jest odpowiedzialny za weryfikację określonych predefiniowanych danych związanych z produktem. Jeśli istnieje otwarta kontrola gotowości produktu, produkt nie może być używany w transakcjach.
 
-Pole wyboru **Aktywny** dla produktu inżynieryjnego, wariantu lub wersji jest dostępne dopiero po wprowadzeniu i zweryfikowaniu wszystkich wymaganych danych oraz po przetworzeniu wszystkich kontroli gotowości. W tym momencie produkt, wersja lub wariant mogą zostać zwolnione do innych firm i używane w transakcjach. Można tworzyć kontrole gotowości dla nowych produktów, nowych wariantów i nowych wersji inżynieryjnych.
+Pole wyboru **Aktywny** dla produktu inżynieryjnego, wariantu lub wersji jest dostępne dopiero po wprowadzeniu i zweryfikowaniu wszystkich wymaganych danych oraz po przetworzeniu wszystkich kontroli gotowości. W tym momencie produkt, wersja lub wariant mogą być używane w transakcjach. Można tworzyć kontrole gotowości dla nowych produktów, nowych wariantów i nowych wersji inżynieryjnych.
 
 Testy gotowości można także stosować dla standardowych (nie inżynieryjnych) produktów. Aby uzyskać więcej informacji, zobacz sekcję [Testy gotowości dla standardowych produktów](#standard-products) w dalszej części tego tematu.
 

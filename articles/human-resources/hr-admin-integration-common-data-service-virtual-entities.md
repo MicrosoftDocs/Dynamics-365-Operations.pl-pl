@@ -1,8 +1,8 @@
 ---
-title: Konfiguruj tabele wirtualne usługi Dataverse
-description: W tym temacie przedstawiono sposób konfigurowania tabel wirtualnych dla systemu Dynamics 365 Human Resources. Generuj i aktualizuj istniejące tabele wirtualne oraz analizuj wygenerowane i dostępne tabele.
-author: andreabichsel
-ms.date: 01/25/2021
+title: Konfigurowanie tabel wirtualnych usługi Dataverse
+description: W tym temacie jest pokazany sposób konfigurowania, generowania i aktualizowania istniejących tabel wirtualnych oraz analizowania wygenerowanych i dostępnych tabel dla aplikacji Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721614"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414671"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Konfiguruj tabele wirtualne usługi Dataverse
+# <a name="configure-dataverse-virtual-tables"></a>Konfigurowanie tabel wirtualnych usługi Dataverse
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -140,6 +140,9 @@ Następnym krokiem jest skonfigurowanie źródła danych tabeli wirtualnej w śr
 
      >[!NOTE]
      >Pamiętaj, aby umieścić znak „**/**” na końcu adresu URL, aby uniknąć błędu.
+
+     >[!NOTE]
+     >Docelowy adres URL wyznacza środowisko Human Resources, które będą wskazywały dane tabel wirtualnych. Jeśli jest tworzona kopia bieżącego środowiska produkcyjnego jako środowisko piaskownicy, wartość tę należy zmodyfikować na adres URL przestrzeni nazw środowiska piaskownicy. Dzięki temu tabele wirtualne będą połączone z danymi środowiska piaskownicy zamiast wskazywania środowiska produkcyjnego.
 
    - **Identyfikator dzierżawcy**: identyfikator dzierżawcy Azure Active Directory (Azure AD).
 

@@ -1,8 +1,8 @@
 ---
 title: Omówienie zarządzania świadczeniami
-description: Omówienie funkcji Zarządzanie świadczeniami w Dynamics 365 Human Resources. Zaoferuj pracownikom rozszerzone opcje zarządzania świadczeniami w przyjaznym internetowym środowisku.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Ten temat zawiera omówienie funkcji zarządzania świadczeniami w programie Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719150"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417416"
 ---
-# <a name="benefits-management-overview"></a>Omówienie obszaru roboczego Zarządzanie świadczeniami
+# <a name="benefits-management-overview"></a>Omówienie zarządzania świadczeniami
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,13 +37,13 @@ Aby zachować konkurencyjność, należy oferować bogaty zestaw świadczeń, kt
 Jeśli chcesz przejść do danych demonstracyjnych, musisz ponownie wdrożyć środowisko piaskownicy.
 
 > [!NOTE]
-> Teraz możesz dostosować formularze zarządzania świadczeniami. Teraz w przypadku planów świadczeń w formularzu **Opcja zapotrzebowania** można dodawać niestandardowe pola związane ze stawkami zapotrzebowania. Aby uzyskać więcej informacji na temat korzystania z pól niestandardowych, zobacz temat [Pola niestandardowe](hr-developer-custom-fields.md).
+> Teraz możesz dostosować strony zarządzania świadczeniami. Do strony **Opcja zapotrzebowania** planów świadczeń można dodawać niestandardowe pola związane ze stawkami za objęcie świadczeniami. Aby uzyskać więcej informacji na temat korzystania z pól niestandardowych, zobacz temat [Pola niestandardowe](hr-developer-custom-fields.md).
 >
 > ![Niestandardowe pola zarządzania świadczeniami](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Włączanie obszaru roboczego Zarządzanie świadczeniami
 
-Ten temat opisuje sposób włączania funkcji w wersji zapoznawczej w module Human Resources. Informuje również, które istniejące funkcje w Human Resources są zastępowane przez zarządzanie korzyściami lub które funkcje są wyłączone po włączeniu zarządzania korzyściami.
+Ten temat opisuje sposób włączania funkcji w wersji zapoznawczej w module Human Resources. Wyjaśnia również, które istniejące funkcje w Human Resources są zastępowane przez zarządzanie korzyściami i które funkcje są wyłączone po włączeniu zarządzania korzyściami.
 
 > [!IMPORTANT]
 > Po włączeniu Zarządzania świadczeniami w środowisku **Produkcyjnym** nie można go wyłączyć. Zaleca się włączanie i testowanie Zarządzania świadczeniami w środowisku **Piaskownicy** przed włączeniem go w środowisku **Produkcyjnym**. Istnieją znaczne różnice między funkcjami starszego świadczenia i nowymi funkcjami zarządzania świadczeniami, które wymagają dodatkowej konfiguracji i powinny być testowane przed wprowadzeniem do produkcji.

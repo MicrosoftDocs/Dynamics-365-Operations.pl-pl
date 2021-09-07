@@ -1,8 +1,8 @@
 ---
 title: Omówienie administracji
-description: Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązywanie problemów z Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących konfigurowania programu Dynamics 365 Human Resources, zarządzania nim i rozwiązywania problemów z nim.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765621"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393578"
 ---
 # <a name="administration-overview"></a>Omówienie administracji
 
@@ -28,11 +28,11 @@ ms.locfileid: "6765621"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązywanie problemów z Dynamics 365 Human Resources.
+Ten temat zawiera listę tematów pomocy oraz innych zasobów dotyczących konfigurowania programu Dynamics 365 Human Resources, zarządzania nim i rozwiązywania problemów z nim.
 
 - [Wymagania systemowe](hr-admin-system-requirements.md)
 
-- Konfiguracja i zarządzanie instancjami
+- Konfigurowanie wystąpień i zarządzanie nimi
   - [Human Resources - wdrożenie](hr-admin-setup-provision.md)
   - [Kopiowanie wystąpienia](hr-admin-setup-copy-instance.md)
   - [Usuwanie wystąpienie](hr-admin-setup-remove-instance.md)
@@ -92,14 +92,23 @@ Ten Podręcznik administratora ułatwia konfigurowanie, zarządzanie i rozwiązy
   - [Uruchamianie procesu związanego z wynagrodzeniem](hr-admin-troubleshooting-compensation.md)
   - [Zapisywanie przewodnika zadania w usługach LCS](hr-admin-troubleshooting-task-guide.md)
   - [Uzyskiwanie dostępu do adresów prywatnych według roli zabezpieczeń](hr-admin-troubleshooting-private-addresses.md)
-  - [Human Resources nie wyświetla się w ramach aplikacji Dynamics 365](hr-admin-troubleshooting-not-in-apps.md)
+  - [Rozwiązanie Human Resources nie jest wyświetlane w ramach aplikacji Dynamics 365](hr-admin-troubleshooting-not-in-apps.md)
   - [Opcje raportowania](hr-admin-troubleshooting-reporting.md)
   - [Integracja — często zadawane pytania](hr-admin-troubleshooting-integration.md)
+
+## <a name="additional-resources"></a>Dodatkowe zasoby
+
+### <a name="elearning-courses"></a>Kursy eLearning
+W przypadku kursów i szkoleń w trybie online, sprawdź dodatek [Dynamics 365 Human Resources w Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Filmy
+
+Obejrzyj filmy instruktażowe w [kanale YouTube rozwiązania Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 - [Nowości i zmiany w rozwiązaniu Human Resources](hr-admin-whats-new.md)
-- [Przewodnik dewelopera](hr-developer-overview.md)
+- [Podręcznik dewelopera](hr-developer-overview.md)
 - [Przewodnik użytkownika](hr-hrpro-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

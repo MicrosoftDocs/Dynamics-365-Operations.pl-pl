@@ -2,7 +2,7 @@
 title: Personalizowanie środowiska użytkownika
 description: W tym temacie wyjaśniono, jak można spersonalizować aplikację.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344381"
 ---
 # <a name="personalize-the-user-experience"></a>Personalizowanie środowiska użytkownika
 
@@ -169,7 +169,7 @@ Pulpit nawigacyjny jest często pierwszą stroną, którą widzisz po uruchomien
 Jedną z unikatowych możliwości personalizacji dostępnych na pulpicie nawigacyjnym jest możliwość dodawania kafelków. 
 
 - Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj obszar roboczy**. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek obszaru roboczego. Ten kafelek obszaru roboczego można zmieniać dowolnie. Można również dodać listy, kafelki oraz linki do obszaru roboczego w sposób opisany w sekcji tego tematu pt. [Dodawanie kafelków, list i łączy do obszaru roboczego](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
-- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj aplikację**. W oknie dialogowym określ, czy chcesz dodać kafelek dla nowego obszaru roboczego czy kafelka z zawartością, który ma zawartość z Power Apps lub z witryny sieci Web. Następnie postępuj zgodnie z instrukcjami, aby skonfigurować wybraną opcję. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek. 
+- Jeśli funkcja **Aplikacje całostronicowe** jest wyłączona, można dodać nowy kafelek, klikając prawym przyciskiem myszy element na pulpicie nawigacyjnym, a następnie wybierając polecenie **Dodaj aplikację**. W oknie dialogowym określ, czy chcesz dodać kafelek dla nowego obszaru roboczego czy kafelka z zawartością, który ma zawartość z Power Apps lub z witryny sieci Web. Następnie postępuj zgodnie z instrukcjami, aby skonfigurować wybraną opcję. W dolnej części pulpitu nawigacyjnego jest tworzony nowy kafelek. Aby uzyskać więcej informacji dotyczących dodawania, edytowania, usuwania i udostępniania tych osadzonych aplikacji, zobacz temat [Osadzanie aplikacji kanwy z aplikacji Power Apps](embed-power-apps.md) [Osadzanie aplikacji innych firm](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Udostępnianie personalizacji
 

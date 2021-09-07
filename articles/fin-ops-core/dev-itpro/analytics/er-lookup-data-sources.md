@@ -2,7 +2,7 @@
 title: Konfigurowanie źródeł danych wyszukiwania do używania parametrów specyficznych dla raportowania elektronicznego
 description: W tym temacie wyjaśniono, jak skonfigurować źródła danych wyszukiwania w formatach raportowania elektronicznego (ER), aby używać parametrów specyficznych dla aplikacji ER.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723196"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343436"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurowanie źródeł danych wyszukiwania do używania parametrów specyficznych dla raportowania elektronicznego 
 
@@ -69,7 +69,7 @@ Reguły wyszukiwania dla wybranego formatu ER można skonfigurować za pomocą i
 Na poniższej ilustracji pokazano, jak źródło danych `Model.Data.Summary.LevelByLookup` typu **Pole obliczeniowe** można skonfigurować tak, aby wywoływało skonfigurowane źródło danych **Wyszukiwanie** z wymaganymi parametrami. Aby przetworzyć to wywołanie w czasie wykonywania, ER przegląda listę skonfigurowanych reguł w zdefiniowanej kolejności, aby zlokalizować pierwszą regułę, która spełnia podane warunki. W tym przykładzie jest to reguła zawierająca kod podatku, który pasuje do podanego kodu. W związku z tym znaleziono najo odpowiednią regułę, a wartość wyliczenia skonfigurowana dla znalezionej reguły jest zwracana przez to źródło danych.
 
 > [!NOTE]
-> Wystąpił wyjątek, gdy nie znaleziono właściwej reguły. Aby zapobiec tym wyjątkom, skonfiguruj dodatkowe reguły na końcu listy reguł, aby obsługiwały przypadki, gdy nie została podana nieskonfigurowana wartość lub żadna wartość nie została podana. Użyj odpowiednio opcji **\*Niepuste\*** i **\*Puste\***.  
+> Wystąpił wyjątek, gdy nie znaleziono właściwej reguły. Aby zapobiec tym wyjątkom, skonfiguruj dodatkowe reguły na końcu listy reguł, aby obsługiwały przypadki, gdy nie została podana nieskonfigurowana wartość lub żadna wartość nie została podana. Użyj opcji **\*Niepuste**\* i **\*Puste**\* zależnie od sytuacji.  
 >
 > ![Dodaj źródło danych, aby wywołać skonfigurowane źródło danych wyszukiwania.](./media/er-lookup-data-sources-img7.png)
 

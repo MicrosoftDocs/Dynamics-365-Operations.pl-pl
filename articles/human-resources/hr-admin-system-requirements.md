@@ -1,8 +1,8 @@
 ---
 title: Wymagania systemowe
-description: W tym artykule opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: W tym temacie podano wymagania systemowe programu Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 52ef0176926fd6c5c5d2bc852080dde5273d05d0f2edd20e091d97c71e503dce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 15770595a0639c03df1138ec25010ca8168bd9a8
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761099"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393480"
 ---
 # <a name="system-requirements"></a>Wymagania systemowe
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule opisano wymagania dotyczące rozwiązania Microsoft Dynamics 365 Human Resources. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Human Resources oraz informacje na temat języków i lokalizacji danych aplikacji Human Resources.
+W tym temacie podano wymagania systemowe programu Microsoft Dynamics 365 Human Resources. Zawiera także opis krajów i regionów, w których jest dostępne rozwiązanie Human Resources oraz informacje na temat języków i lokalizacji danych aplikacji Human Resources.
 
 ## <a name="supported-web-browsers"></a>Obsługiwane przeglądarki
 
-Human Resources może działać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym: 
+Dostęp do programu Microsoft Dynamics 365 Human Resources można uzyskać w każdej z poniższych przeglądarek w kombinacji z określonym systemem operacyjnym: 
 
 *   Microsoft Edge (najnowsza publicznie dostępna wersja) w systemie Windows 10
 *   Internet Explorer 11 w systemach Windows 10, Windows 8.1 lub Windows 7
@@ -39,14 +39,17 @@ Human Resources może działać w każdej z poniższych przeglądarek w kombinac
 
 Aby znaleźć najnowszą wersję dla każdej przeglądarki, przejdź do witryny producenta oprogramowania. 
 
-> [!NOTE]
-> * Aby przechwytywać obrazy generowane z Rejestratora zadań i umieszczać je w dokumentach programu Microsoft Word, musisz mieć zainstalowane rozszerzenie dla przeglądarki Chrome. 
-> * Edytor przepływu pracy jest uruchamiany jako aplikacja ClickOnce. Aplikacje ClickOnce są obsługiwane tylko w przeglądarkach Microsoft Edge i Internet Explorer (w obsługiwanych wersjach systemu Microsoft Windows). Aplikacja ClickOnce edytora przepływu pracy wymaga zgodnego 64-bitowego systemu operacyjnego.
-> * Aby wyświetlać podgląd plików PDF, zalecamy używanie nowoczesnych przeglądarek, takich jak Microsoft Edge (nowszej publicznie dostępnej wersji) w systemie Windows 10 lub Google Chrome (nowszej publicznie dostępnej wersji) w systemach Windows 10, Windows 8.1, Windows 8 i Windows 7 lub na tablecie Google Nexus 10.
->   Wymagania sieciowe
-> * Program Human Resources jest zaprojektowany dla sieci o opóźnieniu nieprzekraczającym 250-300 milisekund (ms). Jest to opóźnienie na drodze od klienta przeglądarki do centrum danych Microsoft Azure zawierającego usługę Human Resources. Zaleca się przetestowanie opóźnienia w sieci na stronie [www.azurespeed.com](https://www.azurespeed.com "Test opóźnienia w łączności z usługą Azure").
-> * Wymagania dotyczące przepustowości dla usługi Human Resources zależą od konkretnego scenariusza. Większość typowych scenariuszy wymaga przepustowości powyżej 50 kilobajtów na sekundę (KB/s).
-> 
+## <a name="special-considerations"></a>Specjalne uwagi
+
+* Aby umożliwić przechwytywanie zrzutów ekranu przez Rejestrator zadań i umieszczanie ich w generowanych dokumentach programu Microsoft Word, należy zainstalować wstępną wersję rozszerzenia dla przeglądarki Chrome.
+* Edytor przepływu pracy jest uruchamiany jako aplikacja ClickOnce. Aplikacje ClickOnce są obsługiwane tylko w przeglądarkach Microsoft Edge i Internet Explorer (w obsługiwanych wersjach systemu Microsoft Windows). Aplikacja ClickOnce edytora przepływu pracy wymaga zgodnego 64-bitowego systemu operacyjnego.
+* Aby wyświetlać podgląd plików PDF, zalecamy używanie nowoczesnych przeglądarek, takich jak Microsoft Edge (nowszej publicznie dostępnej wersji) w systemie Windows 10 lub Google Chrome (nowszej publicznie dostępnej wersji) w systemach Windows 10, Windows 8.1, Windows 8 i Windows 7 lub na tablecie Google Nexus 10.
+
+## <a name="network-requirements"></a>Wymagania sieciowe
+
+* Program Human Resources jest zaprojektowany dla sieci o opóźnieniu nieprzekraczającym 250-300 milisekund (ms). Jest to opóźnienie na drodze od klienta przeglądarki do centrum danych Microsoft Azure zawierającego usługę Human Resources. Zaleca się przetestowanie opóźnienia w sieci na stronie [www.azurespeed.com](https://www.azurespeed.com "Test opóźnienia w łączności z usługą Azure").
+* Wymagania dotyczące przepustowości dla usługi Human Resources zależą od konkretnego scenariusza. W typowych scenariuszach wymagana jest przepustowość powyżej 50 kilobajtów na sekundę (KB/s).
+ 
 > [!WARNING]
 > Nie obliczaj wymagań dotyczących przepustowości z lokalizacji klienta poprzez pomnożenie liczby użytkowników przez minimalną wymaganą przepustowość. Równoczesne użytkowanie danej lokalizacji przez wiele osób jest bardzo trudne do obliczenia. Dla odbiorców, którzy się boją, że ciężko będzie im spełnić wymagania dotyczące przepustowości, użyj wersji próbnej Human Resources.
 
@@ -63,6 +66,5 @@ Można pobrać plik PDF zawierający listy krajów, regionów i języków obsłu
 > Gdy interfejs użytkownika jest zlokalizowany w innych językach, wszystkie dane użytkownika są przechowywane w języku, w którym zostały wprowadzone. Możesz tworzyć wiadomości e-mail i szablony w innych językach, ale dane, takie jak informacje o harmonogramie, są w tej chwili dostępne tylko w języku angielskim.
 
 Jeśli jesteś programistą zainteresowanym tworzeniem dostosowań specyficznych dla kraju lub regionu lub stworzeniem rozwiązania dla kraju lub regionu, który nie jest obecnie obsługiwany przez firmę Microsoft, zobacz [Globalizacja](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

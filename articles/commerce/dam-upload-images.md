@@ -2,7 +2,7 @@
 title: Przekazanie obrazów
 description: W tym temacie opisano, jak przesyłać obrazy w kreatorze witryny w Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757405"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423262"
 ---
 # <a name="upload-images"></a>Przekazanie obrazów
 
@@ -52,10 +52,17 @@ Domyślna konwencja nazewnictwa zmienia się w zależności od kategorii:
 - Obrazy kategorii powinny mieć nazwę „**/kategorie/\{nazwa_kategorii\}.png**”
 - Obrazy odbiorców powinny mieć nazwę „**/odbiorcy/\{nuer_odbiorcy\}.jpg**”
 - Obrazy pracowników powinny mieć nazwę „**/pracownicy/\{numer_pracownika\}.jpg**”
-- Obrazy produktów powinny mieć nazwę „**/Produkty/\{numer_Produktu\}_000_001.png**”
+- Obrazy produktów powinny mieć nazwę „**/Products/\{numer_produktu\}\_000_001.png**”
     - 001 oznacza sekwencję obrazu i może być 001, 002, 003, 004 lub 005
 - Obrazy wariantów produktów powinny mieć nazwę „**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**”
-    - Na przykład: 93039 \^ \^ 2 \^ Black \^_000_001.png
+    - Na przykład: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Obrazy wariantów produktów z wymiarem konfiguracji powinny mieć nazwę „ "**/Products/\{numer_produktu\} \^ \{konfiguracja\}\_000_001.png**”
+    - Na przykład: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> W przypadku obrazów wariantu produktu, jeśli wartość wymiaru jest pusta, w nazwie pliku muszą być dwie spacje między karetami.
+
+W powyższych przykładach przedstawiono konfigurację domyślną. Znak separatora i wymiary można konfigurować, a szczegółowe wymagania dotyczące nazewnictwa zależą od wdrożenia. Jedną z metod identyfikowania szczegółowych wymagań dotyczących konwencji nazewnictwa jest użycie konsoli dewelopera przeglądarki do sprawdzania żądań obrazów wariantów produktu podczas zmieniania wymiarów produktu na stronie szczegółów produktu sklepu (PDP).
 
 ## <a name="upload-an-image"></a>Przekaż obraz
 

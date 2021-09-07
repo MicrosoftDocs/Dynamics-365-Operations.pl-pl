@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ff86677aa8fe24c72936df86dfc11559afd47ccb07dbd2de66c127c54d2cc566
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aad6d7ba412d3e822303d380e466608cbe7d9546
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742687"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344923"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Tworzenie kodu kreskowego dla produktu
 
@@ -32,7 +32,7 @@ W tym temacie pokazano sposób ręcznego tworzenia kodu kreskowego przy użyciu 
 1. Wybierz pozycję **Kody kreskowe**.
 1. Wybierz pozycję **Nowy**.
 1. Zaznacz wybrany wiersz, który został utworzony na poniższej liście.
-1. W polu **Konfiguracja kodów** kreskowych wprowadź lub wybierz wartość.
+1. W polu **Konfiguracja kodów kreskowych** wprowadź lub wybierz wartość.
 1. W polu **Kod kreskowy** wprowadź lub wybierz wartość.
 1. W polu **Kod kreskowy** wpisz wartość.  
 1. W polu **Ilość** wpisz liczbę.

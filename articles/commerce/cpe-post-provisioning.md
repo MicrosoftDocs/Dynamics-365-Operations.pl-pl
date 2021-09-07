@@ -2,7 +2,7 @@
 title: Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 description: W tym temacie opisano sposób konfigurowania środowiska oceny aplikacji Microsoft Dynamics 365 Commerce po jego aprowizacji.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742447"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416486"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurowanie środowiska oceny rozwiązania Dynamics 365 Commerce
 
@@ -128,7 +128,7 @@ Aby uruchomić pełną synchronizację danych w aplikacji Commerce, wykonaj nast
 Aby przeprowadzić transakcje testowe w witrynie, można użyć następujących testowych informacji o karcie kredytowej:
 
 - **Numer karty:** 4111-1111-1111-1111
-- **Data ważności:** 10/20
+- **Data ważności:** 10/30
 - **Kod wartości weryfikacji karty (CVV):** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ Aby przeprowadzić transakcje testowe w witrynie, można użyć następujących 
 Po zakończeniu czynności obsługi administracyjnej i konfiguracji można rozpocząć korzystanie ze środowiska oceny. Użyj adresu URL konstruktora witryn Commerce, aby przejść do środowiska tworzenia. Użyj adresu URL witryny Commerce, aby przejść do środowiska witryny klienta platformy handlu detalicznego.
 
 Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz [Konfigurowanie funkcji opcjonalnych środowiska oceny usługi Commerce](cpe-optional-features.md).
+
+> [!NOTE]
+> Środowiska oceniania handlu są wstępnie załadowane do dzierżawy Azure Active Directory (Azure AD) B2C (business-to-consumer) w celach demonstracyjnych. Konfigurowanie własnej dzierżawy Azure AD B2C nie jest wymagane w przypadku środowisk oceniania. Jeśli jednak środowisko oceniania jest konfigurowane w celu korzystania z własnej dzierżawy Azure AD, należy dodać ``https://login.commerce.dynamics.com/_msdyn365/authresp`` jako adres URL odpowiedzi w aplikacji Azure AD B2C za pośrednictwem Azure Portal.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
@@ -159,6 +162,8 @@ Aby skonfigurować opcjonalne funkcje środowiska oceny usługi Commerce, zobacz
 [Portal Microsoft Azure](https://azure.microsoft.com/features/azure-portal)
 
 [Witryna Dynamics 365 Commerce](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Konfigurowanie dzierżawy B2C w module Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

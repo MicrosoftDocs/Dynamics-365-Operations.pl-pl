@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345526"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Obliczanie TDS dla faktur przy użyciu arkuszy
 
@@ -65,6 +65,6 @@ Otwórz **Księga główna** (**Księga główna > Wpisy w arkuszu > Arkusze fin
 
 8. Wprowadź wymagane dane. Sprawdź poprawność arkusza i zaksięguj go. Kwota TDS obliczona na fakturach zakupu jest księgowana na koncie rozrachunków z dostawcami. Kwota podatku potrącanego u źródła obliczona na fakturach sprzedaży jest księgowana na koncie należności zdefiniowanym dla każdego kodu podatku potrącanego u źródła w grupie podatku potrąconego u źródła. Konta rozrachunków lub należności dla kodów podatku TDS są definiowane na stronie **Kody potrąconych zaliczek na podatek**.
 
-9. Wybierz przycisk **Zaksięgowana potrącona zaliczka na podatek**, aby otworzyć stronę **transakcje** **potrącenia** **zaliczki**. **Wartość** pokazuje łączną wartość procentowa użyta do obliczenia TDS dla transakcji.
+9. Wybierz przycisk **Zaksięgowana potrącona zaliczka na podatek**, aby otworzyć stronę **transakcje potrącenia zaliczki**. **Wartość** pokazuje łączną wartość procentowa użyta do obliczenia TDS dla transakcji.
 
    Pola na kartach **Przegląd**, **Ogólne** i **Kwota** na stronie Tymczasowe transakcje potrącenia zaliczki na podatek pokazują obliczoną kwotę TDS oraz szczegóły skorygowanej kwoty TDS dla każdego kodu podatku TDS dołączonego do grupy TDS.

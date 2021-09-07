@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345235"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Umożliwia dołączanie kodów podatków TDS do grup podatków TDS i definiowanie formuły obliczania TDS
 
@@ -55,7 +55,7 @@ Aby skonfigurować grupę podatków TDS, dołączyć kody podatków TDS i zdefin
     > [!NOTE]
     > W polu **Podstawa opodatkowania** nie można ustawić wartości **Bez kwoty brutto** dla kodu podatku TDS o identyfikatorze priorytetu **1**.
 
-12. Obliczenie TDS jest oparte na formule zdefiniowanej w polu **Obliczanie wyrażenia** dla każdego kodu podatku dołączonego do grupy podatków TDS. Umożliwia wybranie znaku plus (**+**), znaku minus (**-**), znaku mnożenia (**\**_) lub znaku dzielenia (_*/**) w celu wprowadzenia wyrażenia obliczeń dla wybranego kodu podatku TDS w polu **Obliczanie wyrażenia**.
+12. Obliczenie TDS jest oparte na formule zdefiniowanej w polu **Obliczanie wyrażenia** dla każdego kodu podatku dołączonego do grupy podatków TDS. Umożliwia wybranie znaku plus (+), znaku minus (-), znaku mnożenia (\*) lub znaku dzielenia (/) w celu wprowadzenia wyrażenia obliczeń dla wybranego kodu podatku TDS w polu **Obliczanie wyrażenia**.
 
     > [!NOTE]
     > Nie można zdefiniować wyrażenia obliczeń dla kodu podatku TDS o identyfikatorze priorytetu **1**.

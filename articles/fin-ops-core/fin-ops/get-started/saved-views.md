@@ -2,7 +2,7 @@
 title: Zapisane widoki
 description: W tym temacie opisano sposób korzystania z funkcji zapisanych widoków.
 author: jasongre
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: dd658aeb8964907fe9f950fe2a6474c5df7e80b74986ddf332286a2f89bc0aeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344351"
 ---
 # <a name="saved-views"></a>Zapisane widoki
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Wprowadzenie
 
@@ -48,6 +48,8 @@ Istnieją dwa warianty wielkości selektora widoków:
  
 Wybór nazwy widoku powoduje otwarcie selektora widoku i wyświetlenie listy dostępnych widoków tej strony.
 
+**Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku dostępne widoki są wyświetlane w dwóch sekcjach. W pierwszej sekcji są przedstawiane wszystkie widoki specyficzne dla bieżącej firmy, a w drugiej widoki dostępne dla wszystkich firm. Pierwsza sekcja jest widoczna tylko wtedy, gdy istnieją widoki specyficzne dla firmy dla strony.
+
 - **Widok standardowy** - widok **Standardowy** jest gotowym widokiem strony bez zastosowania personalizacji.
 - **Widoki osobiste** - widoki bez kłódki przedstawiają widoki osobiste danego użytkownika. Są to widoki utworzone przez tego użytkownika lub otrzymane przez niego od administratora.
 - **Zablokowane widoki** - niektóre widoki (na przykład widok **Standardowy** i wszystkie widoki opublikowane w roli) mają obok nich symbol kłódki w selektorze widoków. Ten symbol wskazuje, że nie można edytować tych widoków. Jednak zmiany, które odzwierciedlają użycie strony, są zapisywane automatycznie. Te zmiany obejmują zmiany szerokości kolumny siatki oraz zmiany stanu rozwiniętego lub zwiniętego skróconej karty. Jeśli użytkownik ma uprawnienia do personalizacji, może jednak utworzyć widok osobisty oparty na zablokowanym widoku używając akcji **Zapisz jako**.
@@ -68,15 +70,18 @@ Jeśli chcesz zapisać te zmiany, wykonaj następujące kroki.
 3. Aby utworzyć nowy widok:
 
     1. Wybierz opcję **Zapisz jako**. 
-    2. Wprowadź nazwę widoku i (opcjonalnie) opis.
-    3. Wybierz opcję **Zapisz**.
+    2. W okienku **Zapisz widok jako** wprowadź nazwę oraz, opcjonalnie, opis widoku.
+    3. Jeśli ten widok ma być domyślnym widokiem, wybierz pozycję **Przypnij jako domyślny**. Więcej informacji o widokach domyślnych zawiera następna sekcja [Zmienianie widoku domyślnego](#changing-the-default-view). 
+    4. **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, można wybrać, czy dany widok będzie dostępny dla wszystkich firm czy tylko ich podzbioru.
+    5. Wybierz opcję **Zapisz**.
 
 ## <a name="changing-the-default-view"></a>Zmienianie domyślnego widoku
 
 Widok domyślny to widok, który system próbuje otworzyć po pierwszym otwarciu strony. Należy ustawić widok domyślny na widok, którego spodziewasz się najczęściej używać. 
 
 > [!NOTE]
-> Istnieje jeden globalny domyślny widok między firmami. Jeśli zmienisz widok domyślny, ten widok zostanie domyślnie otwarty, niezależnie od firmy, w której się znajdujesz. 
+> - W podstawowej funkcji **Zapisane widoki** istnieje jeden globalny widok domyślny dla wszystkich firm. Jeśli zmienisz widok domyślny, ten widok zostanie domyślnie otwarty, niezależnie od firmy, w której się znajdujesz.
+> - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, każda firma ma własny domyślny widok danej strony.
 
 Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 
@@ -86,20 +91,23 @@ Aby zmienić domyślny widok strony, wykonaj następujące czynności:
 
 Podczas tworzenia nowego widoku (przy użyciu akcji **Zapisz jako**) można też ustawić nowy widok jako domyślny, włączając opcję **Przypnij jako domyślny** przed zapisaniem widoku.
 
-Należy zauważyć, że w niektórych przypadkach zapytanie skojarzone z widokiem domyślnym nie jest uruchamiane przy pierwszym otwarciu strony. Na przykład, jeśli otworzysz stronę za pomocą kafelka, zapytanie kafelka zostanie uruchomione niezależnie od zapytania skojarzonego z widokiem domyślnym. Ponadto, jeśli otworzysz stronę z widokiem **Standardowym**, który ma już zdefiniowane zapytanie, oryginalne zapytanie zostanie uruchomione zamiast zapytania widoku domyślnego. W takim przypadku po załadowaniu widoku zostanie wyświetlony komunikat informacyjny. Jeśli użytkownik przełączy widoki po załadowaniu strony, zapytanie o widok powinno być możliwe do uruchomienia zgodnie z oczekiwaniami. W wersji 10.0.10 i nowszych otrzymany komunikat informacyjny będzie zawierał osadzoną akcję, która umożliwia bezpośrednie załadowanie zapytania widoku domyślnego.
+> [!WARNING]
+> W niektórych przypadkach zapytanie skojarzone z widokiem domyślnym nie jest uruchamiane przy pierwszym otwarciu strony. Na przykład, jeśli otworzysz stronę za pomocą kafelka, zapytanie kafelka zostanie uruchomione niezależnie od zapytania skojarzonego z widokiem domyślnym. Ponadto, jeśli otworzysz stronę z widokiem **Standardowym**, który ma już zdefiniowane zapytanie, oryginalne zapytanie zostanie uruchomione zamiast zapytania widoku domyślnego. W takim przypadku po załadowaniu widoku zostanie wyświetlony komunikat informacyjny. Jeśli użytkownik przełączy widoki po załadowaniu strony, zapytanie o widok powinno być możliwe do uruchomienia zgodnie z oczekiwaniami. W wersji 10.0.10 i nowszych otrzymany komunikat informacyjny będzie zawierał osadzoną akcję, która umożliwia bezpośrednie załadowanie zapytania widoku domyślnego.
 
 ## <a name="managing-personal-views"></a>Zarządzanie widokami osobistymi
 
 Okno dialogowe **Zarządzaj moimi widokami** zawiera podstawowe funkcje obsługi widoków osobistych i kolejności widoków w selektorze widoków. Jeśli chcesz otworzyć tę stronę, wybierz nazwę widoku, aby otworzyć menu rozwijane selektora widoków, wybierz opcję **Więcej**, a następnie wybierz opcję **Zarządzaj moimi widokami**.
 
+**Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w sekcji **Moje widoki** okna dialogowego **Zarządzaj moimi widokami** są wyświetlane dostępne widoki dla strony w sekcjach. Wszystkie widoki specyficzne dla bieżącej firmy są pokazywane w osobnej sekcji. Sekcja **Widoki globalne** jest zawsze wyświetlana, dzięki czemu można zarządzać widokami dostępnymi dla strony we wszystkich firmach. 
+
 Dostępny zestaw akcji dla listy dostępnych widoków tej strony jest następujący.
 
-- **Zmień widok domyślny** - aby wybrany widok został widokiem domyślnym tej strony, należy użyć opcji **Przypnij jako domyślny**.
+- **Zmień widok domyślny** - aby wybrany widok został widokiem domyślnym tej strony, należy użyć opcji **Przypnij jako domyślny**. Jeśli jest włączona funkcja **Obsługa importowania firmy dla zapisanych widoków** w sekcji **Globalne widoki** można ustawić widok jako domyślny dla bieżącej firmy lub wszystkich firm.
 - **Zmień kolejność widoków** - za pomocą akcji **Przenieś w górę** i **Przenieś w dół** można zmienić kolejność widoków na liście.
 - **Zmień nazwę widoku** - akcja **Zmień nazwę** pozwala zmienić nazwę wybranego widoku osobistego. W przypadku widoków zablokowanych ta akcja jest wyłączona. 
 - **Usuń widok** - akcja **Usuń** umożliwia trwałe usunięcie wybranego widoku z danej strony. Jeśli widok został usunięty, nie można go odtworzyć.
 
-Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać po naciśnięciu przycisku **Zapisz**.
+Zmiany wprowadzone w tym oknie dialogowym zaczną obowiązywać po naciśnięciu przycisku **Aktualizuj**.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Zarządzanie personalizacjami na poziomie organizacyjnym za pomocą widoków
 
@@ -128,24 +136,28 @@ Aby opublikować widok, należy wykonać następujące kroki:
 6. Określ, czy widok powinien być publikowany jako widok domyślny dla wybranych użytkowników. Gdy widok zostanie ustawiony jako widok domyślny, użytkownicy zobaczą go następnym razem, gdy otworzą stronę docelową. Zostanie zmieniony jeden domyślny widok globalny każdego docelowego użytkownika. Jednak użytkownicy nadal będą mogli zmieniać swój widok domyślny po jego opublikowaniu.
 
     > [!NOTE]
-    > Podczas publikowania widoku jako widoku domyślnego należy pamiętać o następujących działaniach: 
-    > -  Jeśli widok jest publikowany jako widok domyślny dla wszystkich lub niektórych firm, należy zmienić jeden domyślny **globalny** widok każdego użytkownika docelowego. 
-    > -  Jeśli użytkownik ma role, w których wiele widoków jest opublikowanych jako widok domyślny, ostatni opublikowany widok będzie używany jako widok domyślny użytkownika. 
+    > Podczas publikowania widoku jako widoku domyślnego należy pamiętać o następującym zachowaniu:
+    >
+    > - Jeśli widok jest publikowany jako domyślny dla niektórych lub wszystkich firm, zachowanie jest następujące:
+    >
+    >    - Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, pojedynczy globalny widok domyślny będzie zmieniany dla każdego docelowego użytkownika. 
+    >    - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy** i opublikujesz widok dla podzbioru firm, domyślny widok dla tych firm będzie zmieniany dla każdego docelowego użytkownika.
+    >
+    > - Jeśli użytkownik ma role, w których wiele widoków jest opublikowanych jako widok domyślny, ostatni opublikowany widok będzie używany jako widok domyślny użytkownika. 
 
 8. Dodaj role zabezpieczeń odpowiadające użytkownikom, do których skierowany jest ten widok. 
 9. Określ, czy chcesz opublikować widok dla ról podrzędnych każdej wybranej roli zabezpieczeń. Jeśli tak, zaznacz pole wyboru **Uwzględnij role podrzędne** w wierszu odpowiednich ról zabezpieczeń. Należy zauważyć, że to pole wyboru jest niedostępne w przypadku ról, które nie mają ról podrzędnych.
 10. Dodaj firmy, dla których ten widok powinien być dostępny. 
 
     > [!NOTE]
-    > Publikując widok dla firmy, należy pamiętać o następujących oczekiwaniach.
-    > 
-    > Jeśli widok zostanie opublikowany dla firmy, ale nie zostanie opublikowany jako widok domyślny, użytkownicy zobaczą widok tylko w selektorze widoków tylko dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze znajdować się w selektorze widoków użytkownika dla tej strony, niezależnie od firmy.
+    > Podczas publikowania widoku dla określonej firmy, ale bez publikowania widoku jako widoku domyślnego, należy wziąć pod uwagę następujące zachowanie:
+    >
+    > - Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, w selektorze widoku użytkownika dla strony początkowo będzie wyświetlany tylko widok dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze wyświetlany w selektorze widoków użytkownika dla strony, niezależnie od firmy.
+    > - **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm.
 
 11. Wybierz opcję **Publikuj**.
 
 W niektórych środowiskach może upłynąć trochę czasu (do godziny), zanim użytkownicy zobaczą opublikowany widok.
-
- 
 
 ## <a name="modifying-a-published-view"></a>Modyfikowanie opublikowanego widoku
 
@@ -193,6 +205,7 @@ Chociaż niektóre funkcje zarządzania znajdują się na każdej stronie, jak w
 Użytkownicy, którzy mają dostęp do strony **Personalizacje**, mogą również importować widoki osobiste lub organizacji za pomocą przycisku **Importuj widoki** w okienku akcji. W przypadku widoków organizacyjnych możesz wybrać opcję **Opublikuj natychmiast**, aby udostępnić widoki użytkownikom bez dodatkowej jawnej publikacji.
 
 ## <a name="known-issues"></a>Znane problemy
+
 Aby zapoznać się z listą znanych problemów z zapisanymi widokami, zobacz [Tworzenie formularzy, które w pełni wykorzystują zapisane widoki](../../dev-itpro/user-interface/understanding-saved-views.md).
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
@@ -232,5 +245,11 @@ W przypadku stron z dużymi selektorami widoku zarówno (personalizacje i kweren
 - Jeśli przejdziesz do strony z kafelka, kwerenda kafelka zostanie wykonana niezależnie od kwerendy skojarzonej z domyślnym widokiem. Jeśli utworzono ten kafelek po włączeniu widoków, zaznaczenie kafelka spowoduje otwarcie strony z widokiem skojarzonym z tym kafelkiem.
 - Jeśli przejdziesz do strony i ten punkt wejścia zawiera kwerendę, pierwotna kwerenda będzie początkowo wykonywana zamiast kwerendy domyślnego widoku. W takim przypadku podczas ładowania widoku zostanie wyświetlony komunikat informacyjny. Można to również potwierdzić, przełączając się do tego widoku po załadowaniu strony, ponieważ wtedy kwerenda widoku powinna zostać bezwzględnie wykonana.
 
+### <a name="why-is-a-view-that-was-published-for-a-specific-legal-entity-visible-in-all-legal-entities"></a>Dlaczego widok, który został opublikowany dla określonej firmy, jest widoczny we wszystkich firmach?
+
+Jeśli publikujesz widok dla określonej firmy, ale bez publikowania widoku jako widoku domyślnego, zachowanie jest następujące:
+
+- Jeśli jest włączona tylko podstawowa funkcja **Zapisane widoki**, w selektorze widoku użytkownika dla strony początkowo będzie wyświetlany tylko widok dla określonych firm. Jednak po załadowaniu widoku po raz pierwszy będzie on zawsze wyświetlany w selektorze widoków użytkownika dla strony, niezależnie od firmy. To zachowanie występuje, ponieważ użytkownicy uzyskują własną osobistą kopię opublikowanego widoku po jego załadowaniu, a widoki osobiste są widokami globalnymi.
+- **Wersja 10.0.21 lub nowsza:** jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy**, w selektorze widoku będzie zawsze pokazywany tylko widok dla określonych firm. To zachowanie występuje, ponieważ funkcja umożliwia łączenie widoków (w tym widoków osobistych) z określonymi firmami.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

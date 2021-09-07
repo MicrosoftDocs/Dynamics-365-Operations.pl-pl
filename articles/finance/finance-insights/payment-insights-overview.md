@@ -1,5 +1,5 @@
 ---
-title: Prognozy płatności odbiorcy (wersja zapoznawcza)
+title: Prognozy płatności odbiorcy
 description: W tym temacie opisano funkcjonalność prognoz płatności, która może pomóc w lepszym zrozumieniu typowych praktyk płatniczych odbiorcy. Ta funkcja może również pomóc w identyfikowaniu okoliczności, które powinny spowodować rozpoczęcie procesów windykacji wcześniej, niż normalnie rozważałaby organizacja.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bfb8d307079e4cca86a34eef3f0bdd6c6a268a1038940ecb8cf46950c1f5c9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21a773b37020aeff969469e29be68e7f7ef44d93
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713265"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386668"
 ---
-# <a name="customer-payment-predictions-preview"></a>Prognozy płatności odbiorcy (wersja zapoznawcza)
+# <a name="customer-payment-predictions"></a>Prognozy płatności odbiorcy
 
 [!include [banner](../includes/banner.md)]
 

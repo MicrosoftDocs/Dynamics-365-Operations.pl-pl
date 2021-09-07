@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343663"
 ---
 # <a name="budgeting-overview"></a>Omówienie budżetu 
 
@@ -38,7 +38,7 @@ Istnieje wiele metod tworzenia wpisów do rejestru budżetu:
 
 -   Ręczne wprowadzanie informacji zawartych w dokumencie na stronie **wpisów do rejestru budżetu**.
 -   Za pomocą szablonu programu Microsoft Excel, który można otworzyć klikają przycisk **Otwórz w programie Excel** na stronie **Wpisy do rejestru budżetu**.
--   Używając jednostki danych **zapisów na koncie budżetu** w module zarządzania danymi w celu zaimportowania wpisów do rejestru budżetu. Rozważ użycie tej metody i włączenie parametru **Przetwarzanie** **oparte na zestawie**, jeśli musisz zaimportować do systemu wiele zapisów na koncie budżetu.
+-   Używając jednostki danych **zapisów na koncie budżetu** w module zarządzania danymi w celu zaimportowania wpisów do rejestru budżetu. Rozważ użycie tej metody i włączenie parametru **Przetwarzanie oparte na zestawie**, jeśli musisz zaimportować do systemu wiele zapisów na koncie budżetu.
 -   Jeśli firma używa funkcji planowania budżetu w celu przygotowania danych budżetu, można użyć procesu okresowego **Generowanie wpisu do rejestru budżetu**.
 
 Wpis do rejestru budżetu jest uważany za zakończony, gdy salda budżetu zostaną zaktualizowane. Na stronie **Wpisy do rejestru budżetu** kliknij przycisk **Aktualizuj salda budżetu** dla wybranego wpisu do rejestru budżetu lub dla wielu wpisów. Po zaktualizowaniu sald budżetu stan wpisu do rejestru budżetu zmienia się na **Zakończono**. Zakończonego wpisu do rejestru budżetu nie można ponownie otworzyć w celu edycji. Dlatego w przypadku konieczności skorygowania danych budżetu należy utworzyć nowy wpis do rejestru budżetu, a nie poprawiać dane w zakończonym wpisie.

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763700"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388940"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Tworzenie i aktualizowanie zasad zwrotów i refundacji dla kanału
 
@@ -42,15 +42,6 @@ Aby włączyć funkcję zasad zwrotów kanału w centrali handlowej, wykonaj nas
 1. Wyszukaj funkcję **Włącz zasady zwrotów kanału** na liście nazw funkcji.
 1. Wybierz **Włącz teraz**.
 1. Na stronie **Harmonogram dystrybucji** uruchom zadanie **1110** (Konfiguracja globalna) w celu dystrybucji zmiany funkcji.
-
-## <a name="initialize-the-commerce-scheduler"></a>Zainicjuj harmonogram aplikacji Commerce
-
-Po włączeniu funkcji **Włącz zasady zwrotów kanałów** musisz zainicjować harmonogram Commerce, aby upewnić się, że nowe zmiany w bazie danych funkcji zostaną dodane przez synchronizację Commerce Data Exchange (CDX). 
-
-Aby zainicjować harmonogram handlu w centrali handlowej, wykonaj następujące kroki.
-
-- Przejdź do **Handel detaliczny i inny \> Ustawienia Headquarters \> Harmonogram handlu \> Zainicjuj harmonogram handlu**. Alternatywnie możesz wyszukać „Zainicjuj harmonogram handlu”.
-- W oknie dialogowym **Inicjowanie harmonogramu handlu** upewnij się, że opcja **Usuń istniejącą konfigurację** jest ustawiona na wartość **nie**, a następnie kliknij przycisk **OK**.
 
 ## <a name="configure-return-policy"></a>Konfiguruj zasady zwrotów
 

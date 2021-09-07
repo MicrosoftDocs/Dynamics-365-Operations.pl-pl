@@ -1,5 +1,5 @@
 ---
-title: Prognoza przepływów pieniężnych (wersja zapoznawcza)
+title: Prognoza przepływów pieniężnych
 description: W tym temacie opisano możliwości prognozowania przepływów pieniężnych.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0ae8dc658cb0bc70cff569542a79196afd2bc1ef5c8ac93470f8233587e2d049
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad568fcd126ad3dc9e5ff269cc3bc99b218e822a
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713835"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386620"
 ---
-# <a name="cash-flow-forecast-preview"></a>Prognoza przepływów pieniężnych (wersja zapoznawcza)
+# <a name="cash-flow-forecast"></a>Prognoza przepływów pieniężnych
 
 [!include [banner](../includes/banner.md)]
 

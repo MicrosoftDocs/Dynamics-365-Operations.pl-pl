@@ -1,5 +1,5 @@
 ---
-title: Cykl życia zarządzania modelami (wersja zapoznawcza)
+title: Cykl życia zarządzania modelami
 description: W tym temacie opisano sposoby utrzymywania modeli uczenia maszynowego organizacji w celu optymalizacji generowanych przez nie prognoz.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: c84f0a6079d7e599ed1f3e44c26c625e548c06d5a91447c46fc722ce6a6cf414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 28a5451f4932669fb66d5e47fd2f574eb3648428
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741567"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386345"
 ---
-# <a name="model-management-lifecycle-preview"></a>Cykl życia zarządzania modelami (wersja zapoznawcza)
+# <a name="model-management-lifecycle"></a>Cykl życia zarządzania modelami
 
 [!include [banner](../includes/banner.md)]
 

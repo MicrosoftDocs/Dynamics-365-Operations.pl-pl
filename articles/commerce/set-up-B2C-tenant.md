@@ -2,7 +2,7 @@
 title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 13dad5f3b82914514688bfa0c7e4f82b8b85b8dd73458618d2fcfddb169927c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772259"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344505"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -34,6 +34,9 @@ Dynamics 365 Commerce używa Azure AD B2C do obsługi przenoszonych poświadcze�
  
  > [!NOTE]
  > Środowiska oceniania handlu są wstępnie załadowane do dzierżawy Azure AD B2C w celach demonstracyjnych. Ładowanie własnej dzierżawy Azure AD B2C przy użyciu poniższych kroków nie jest wymagane w środowiskach oceniania.
+
+> [!TIP]
+> Dodatkowo można chronić użytkowników witryny i zwiększyć bezpieczeństwo dzierżawy Azure AD B2C przy użyciu funkcji ochrony tożsamości i dostępu warunkowego Azure AD. Więcej informacji na temat możliwości dostępnych w przypadku dzierżawy Azure AD B2C Premium P1 i Premium P2 zawiera temat [Ochrona tożsamości i dostęp warunkowy Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Utwórz lub Połącz istniejącą dzierżawę B2C w usłudze AAD w portalu Azure
 

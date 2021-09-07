@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343484"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Poprawa wydajności aparatu planowania
 
@@ -70,7 +70,7 @@ Rozważmy na przykład trasę podaną w poniższej tabeli i obrazie, która wygl
 
 Po wysłaniu tego obrazu do aparatu jest on dzielony na osiem zadań, tak jak to pokazano na poniższej ilustracji (należy wybrać obraz, aby go powiększyć).
 
-[![Zadania aparatu planowania](media/scheduling-engine-jobs.png „Planowanie zadań aparatu”.](media/scheduling-engine-jobs-large.png)
+[![Planowanie zadań aparatu](media/scheduling-engine-jobs.png "Zadania aparatu planowania.")](media/scheduling-engine-jobs-large.png)
 
 Standardowe łącze między dwoma zadaniami to `FinishStart` oznaczające, że godzina zakończenia jednego zadania musi być wcześniejsza niż godzina rozpoczęcia innego zadania. Ponieważ konfiguracja musi zostać wykonana przez ten sam zasób, który będzie później wykonywać proces, istnieją między nimi ograniczenia `OnSameResource`. Między zadaniami podstawowymi i drugorzędnymi dla 10, istnieją łącza `StartStart` i `FinishFinish`, co oznacza, że zadania jednocześnie muszą się rozpoczynać i kończyć w tym samym czasie, i istnieją ograniczenia `NotOnSameResource`, które uniemożliwiają zastosowanie tego samego zasobu jako podstawowego i pomocniczego.
 

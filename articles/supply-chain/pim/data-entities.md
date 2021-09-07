@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: f40b4157520a399f1c2971a425e47b904b3b2f5eb30b87e54f8b810647bcdaeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cf23284729cd10569ceb320d5fd30f8429974c3d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747920"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344765"
 ---
 # <a name="product-data-entities"></a>Jednostki danych produktu
 
@@ -42,7 +42,7 @@ Aby importować i eksportować dane produktu, musisz używać jednostek danych. 
 | Zwolnione odrębne produkty (wersja 2) | `EcoResDistinctProductV2Entity` | Ta jednostka jest używana do eksportowania odrębnych produktów. Te odrębne produkty mogą być produktami, produktami podtypu i wariantami produktu. |
 | Zwolnione produkty główne (wersja 2) | `EcoResProductMasterV2Entity` | Ta jednostka jest używana do importowania i eksportowania produktów głównych. Nie jest on włączona na potrzeby zarządzania danymi. |
 | Kod kreskowy pozycji | `EcoResProductBarcodeEntityV3` | Ta jednostka jest używana do eksportowania produktów i kodów kreskowych. Ta jednostka nie zezwala na śledzenie zmian, aktualizowanie ani usuwanie. Aby można było skorzystać z funkcji śledzenia zmian, aktualizacji lub usuwania w postaci kodów kreskowych, należy skorzystać z **jednostki skojarzenie pozycja-kod kreskowy**. |
-| Skojarzenie pozycja-kod kreskowy | `EcoResProductBarcodeAssociationEntity` | Ta jednostka jest używana do eksportowania produktów i kodów kreskowych. Umożliwia to śledzenie zmian, aktualizowanie i usuwanie. Aby można było skorzystać z tej jednostki, *udoskonalenia elementu funkcja — kod kreskowy* musi być włączony w module [Zarządzanie funkcjami ](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Jest to klucz jednostki `AssociationID`, który tworzy skojarzenie między kodem kreskowym a produktem. Aby można było dodać obsługę tego klucza, w `InventitemBarcodeAssociation`momencie włączenia funkcji tabela zostanie wypełniona dla istniejących kodów kreskowych towaru. Tabela jest wypełniana przy użyciu zadania wsadowego, a tabela kodów kreskowych zawiera dużą liczbę rekordów, co może zająć dużo czasu na wykonanie zadania wsadowego. Dlatego zalecamy zaplanowanie włączenia tej funkcji (i uruchomienie zadania wsadowego) w czasie odpowiadającym harmonogramowi biznesowemu. |
+| Skojarzenie pozycja-kod kreskowy | `EcoResProductBarcodeAssociationEntity` | Ta jednostka jest używana do eksportowania produktów i kodów kreskowych. Umożliwia to śledzenie zmian, aktualizowanie i usuwanie. Aby można było skorzystać z tej jednostki, *udoskonalenia elementu funkcja — kod kreskowy* musi być włączony w module [Zarządzanie funkcjami ](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Jest to klucz jednostki `AssociationID`, który tworzy skojarzenie między kodem kreskowym a produktem. Aby można było dodać obsługę tego klucza, w momencie włączenia funkcji tabela `InventitemBarcodeAssociation` zostanie wypełniona dla istniejących kodów kreskowych towaru. Tabela jest wypełniana przy użyciu zadania wsadowego, a tabela kodów kreskowych zawiera dużą liczbę rekordów, co może zająć dużo czasu na wykonanie zadania wsadowego. Dlatego zalecamy zaplanowanie włączenia tej funkcji (i uruchomienie zadania wsadowego) w czasie odpowiadającym harmonogramowi biznesowemu. |
 | Stany cyklu życia produktu | `EcoResProductLifecycleSateEntity` | Ta jednostka jest używana do importowania i eksportowania różnych stanów cyklu życia produktu, które można przypisać do produktu. |
 
 > [!NOTE]

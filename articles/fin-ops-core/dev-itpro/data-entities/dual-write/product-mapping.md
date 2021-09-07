@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726194"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423454"
 ---
 # <a name="unified-product-experience"></a>Ujednolicone działanie produktu
 
@@ -81,9 +81,9 @@ Ponieważ produkt jest reprezentowany jako jednostka SKU, pojęcia dotyczące r�
 
 ![Model danych produktów.](media/dual-write-product.png)
 
-W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszej listy cen z tą samą walutą. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy z tabeli, w której produkt jest wydawany w aplikacji Finance and Operations. Jeśli nie ma cennika w danej walucie, automatycznie zostanie utworzony cennik, a produkt zostanie do niego przypisany.
+W przypadku włączenia funkcji podwójnego zapisywania produktów z Finance and Operations zostaną zsynchronizowane w innych produktach Dynamics 365 w stanie **Wersje robocze**. Są one dodawane do pierwszego cennika w tej samej walucie, która jest używana w aplikacji spersonalizowanej obsługi odbiorców, i w kolejności alfabetycznej według nazw cennika. Innymi słowy, są dodawane do pierwszej listy cen w aplikacji Dynamics 365, która odpowiada walucie firmy z tabeli, w której produkt jest wydawany w aplikacji Finance and Operations. Jeśli nie ma cennika w danej walucie, automatycznie zostanie utworzony cennik, a produkt zostanie do niego przypisany.
 
-Obecna implementacja wtyczek z podwójnym zapisem, które kojarzą domyślny cennik z jednostką, wyszukują walutę skojarzoną z aplikacją Finance and Operations i znajdują pierwszy cennik w aplikacji angażującej klientów przy użyciu sortowania alfabetycznego w nazwie cennika. Aby ustawić domyślny cennik dla określonej waluty, gdy masz wiele cenników dla tej waluty, musisz zaktualizować nazwę cennika do nazwy, która jest wcześniejsza w kolejności alfabetycznej niż jakiekolwiek inne cenniki dla tej samej waluty.
+Obecna implementacja wtyczek z podwójnym zapisem, które kojarzą domyślny cennik z jednostką, wyszukują walutę skojarzoną z aplikacją Finance and Operations i znajdują pierwszy cennik w aplikacji angażującej klientów przy użyciu sortowania alfabetycznego w nazwie cennika. Aby ustawić domyślny cennik dla określonej waluty, gdy masz wiele cenników dla tej waluty, musisz zaktualizować nazwę cennika do nazwy, która jest wcześniejsza w kolejności alfabetycznej niż jakiekolwiek inne cenniki dla tej samej waluty. W przypadku braku cennika w danej walucie tworzony jest nowy cennik.
 
 Produkty domyślne z Finance and Operations operacyjnych są synchronizowane z innymi aplikacjami systemu Dynamics 365 w stanie **wersja robocza**. Aby zsynchronizować produkt z **Aktywnym** stanem, można go bezpośrednio używać w ofertach zamówień sprzedaży, na przykład należy wybrać następujące ustawienie: w obszarze **System > Administracja > Administracja systemu > Ustawienia systemu > karta Sprzedaż** wybierz opcję **Utwórz produkty w stanie aktywnym = tak**.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720091"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386106"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720091"
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>Wersja 2.0.9.0
+
+Ta wersja rozwiąże problem, przez który aplikacja może przestać odpowiadać, jeśli użytkownicy chcą wejść wyżej znajdując się na początku listy.
+
+## <a name="version-2080"></a>Wersja 2.0.8.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Dodano obsługę [funkcji instrukcji kroku](mobile-app-titles-instructions.md), która została wprowadzona w Supply Chain Management w wersji 10.0.21.
+- Dodano animację wskazówki, aby pokazać użytkownikom, że mogą zamykać nakładki, przesuwając palcem w dół.
+- Dodano obsługę klawiszy funkcyjnych na listach akcji i w menu. Użytkownicy mogą wyświetlić listę dostępnych poleceń, przytrzymując dowolny klawisz funkcyjny.
+- Rozwiązano problem, który powodował wyświetlanie na niektórych urządzeniach następującego komunikatu o błędzie: „Nie można znaleźć odpowiedniego widoku dla określonego rozmiaru”.
+- Rozwiązano problem, który powodował, że tryb pełnoekranowy nie zawsze działał, gdy była używana klawiatura ekranowa.
+- Rozwiązano problem z tym, że przesuwanie strony nie działało na urządzeniach z systemem Windows.
+- Naprawiono różne problemy, które powodowały, że system przestawał odpowiadać.
+
+## <a name="version-2070"></a>Wersja 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nowe funkcje, poprawki i ulepszenia w wersji 2.0.7.0
 

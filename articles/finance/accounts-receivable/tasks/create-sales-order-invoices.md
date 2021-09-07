@@ -1,6 +1,6 @@
 ---
 title: Tworzenie faktur zamówienia sprzedaży
-description: W tym przewodniku po zadaniach opisano fakturowanie zamówienia sprzedaży, łącznie ze scalaniem faktur i przetwarzaniem wsadowym.
+description: W tym temacie opisano sposób fakturowania zamówienia sprzedaży, łącznie ze scalaniem faktur i przetwarzaniem wsadowym.
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,24 +13,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8a6556838a2843f961e1538947a6eda090b94894ed4df8476ea60abeda8056b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b6712779ca64f5934edd37730597541679b86e43
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771831"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394617"
 ---
 # <a name="create-sales-order-invoices"></a>Tworzenie faktur zamówienia sprzedaży
 
 [!include [banner](../../includes/banner.md)]
 
-W tym przewodniku po zadaniach opisano fakturowanie zamówienia sprzedaży, łącznie ze scalaniem faktur i przetwarzaniem wsadowym. Ta procedura wykorzystuje firmę demonstracyjną USMF.
+W tym temacie opisano sposób fakturowania zamówienia sprzedaży, łącznie ze scalaniem faktur i przetwarzaniem wsadowym. Ta procedura wykorzystuje firmę demonstracyjną USMF.
 
 
 ## <a name="create-an-invoice-from-a-sales-order"></a>Tworzenie faktury na podstawie zamówienia sprzedaży
 1. Otwórz **Okienko nawigacji > Moduły > Rozrachunki z odbiorcami > Zamówienia > Niezafakturowane zamówienia sprzedaży o stanie Wysłano**.
 2. Zaznacz zamówienie sprzedaży na liście. 
-3. W **okienku akcji** kliknij pozycję **Faktura > Generuj > Faktura**. Należy zauważyć, że z tym zamówieniem sprzedaży jest skojarzonych wiele dokumentów dostawy. Zamiast numeru dokumentu dostawy będzie wyświetlane tylko słowo <multiple>.  
+3. W **okienku akcji** kliknij pozycję **Faktura > Generuj > Faktura**. Należy zauważyć, że z tym zamówieniem sprzedaży jest skojarzonych wiele dokumentów dostawy. Zamiast numeru dokumentu dostawy będzie wyświetlane tylko słowo *wiele*.  
 4. Rozwiń sekcję **Parametry**.
     - W celu zaksięgowania faktury w ustawieniu Księgowanie musi być ustawiona wartość Tak. Można także wyłączyć księgowania i tylko wydrukować fakturę. Jednak ten sam efekt można osiągnąć przez utworzenie faktury pro forma zamiast regularnej faktury.  
     - Ta opcja jest używana do zadań wsadowych. Kwerenda jest uruchamiana po uruchomieniu zadania wsadowego.

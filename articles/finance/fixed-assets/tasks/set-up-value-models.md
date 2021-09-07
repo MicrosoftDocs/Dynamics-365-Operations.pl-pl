@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie modeli ewidencji
 description: W tej procedurze pokazano, jak utworzyć nową księgę środków trwałych i skojarzyć ją z grupą środków trwałych.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741543"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344665"
 ---
 # <a name="set-up-value-models"></a>Konfigurowanie modeli ewidencji
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 W tej procedurze pokazano, jak utworzyć nową księgę środków trwałych i skojarzyć ją z grupą środków trwałych. Procedura korzysta z roli księgowego i danych firmy demonstracyjnej USMF.
-
 
 ## <a name="create-a-book"></a>Tworzenie księgi
 1. Wybierz kolejno opcje Środki trwałe > Ustawienia > Księgi.
@@ -48,9 +49,10 @@ W tej procedurze pokazano, jak utworzyć nową księgę środków trwałych i sk
 1. Kliknij opcję Grupy środków trwałych.
 2. W polu Grupa środków trwałych wprowadź lub wybierz wartość.
 3. W polu Okres użytkowania wpisz liczbę.
-    * Należy zauważyć, że okresy amortyzacji są obliczane po ustawieniu okresu użytkowania.  
-    * Można ustawić konwencję amortyzacji zgodnie z wymogami dla celów podatkowych.  
 
+  - Okresy amortyzacji są obliczane po wprowadzeniu okresu użytkowania środka trwałego.  
+  - Konwencja amortyzacji może zostać ustawiona zgodnie z wymogami dla celów podatkowych.
+  - W przypadku środków trwałych skojarzonych z wynajmami wartość w polu **Okres użytkowania** jest zastępowana przez okres wynajmu z księgi środków trwałych lub okres użyteczności środka trwałego, zależnie od tego, który okres jest krótszy. Jeśli w polu **Przeniesienie własności** jest ustawiona wartość **Tak** dla księgi wynajmu, wartość w polu **Okres użyteczności** zawsze będzie okresem użyteczności środka trwałego.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

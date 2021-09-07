@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714337"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384592"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Zarządzanie zmianami dotyczącymi produktów inżynieryjnych
 
@@ -113,16 +113,16 @@ Aby dokonać przeglądu transakcji, których to dotyczy, zablokować wybrane tra
     - **Wyświetl transakcję** — umożliwia otwarcie wybranego rekordu transakcji.
     - **Zablokuj zamówienie** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Zaznaczenie tego przycisku powoduje zablokowanie wybranego zamówienia sprzedaży.
     - **Zablokuj wiersz** — ten przycisk jest dostępny tylko na karcie **Zamówienia zakupu**. Zaznaczenie tego przycisku powoduje zablokowanie wybranego wiersza zakupów.
-    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży.
-    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży.
-    - **Powiadomienie działu produkcji** — ten przycisk jest dostępny tylko na karcie **Zlecenia produkcyjne**. W przeciwieństwie do zamówień sprzedaży i zamówień zakupu, w zleceniach produkcyjnych nie ma jednego użytkownika, który jest ustawiony jako odpowiedzialny za nie od początku do zakończenia. Zamiast tego, różni nadzorcy lub planiści zazwyczaj przejmują odpowiedzialność za konkretny obiekt lub konkretną część produkcji (na przykład za konkretne zasoby lub grupy zasobów). Dlatego po wybraniu tego przycisku wszyscy użytkownicy, którzy są odpowiedzialni za jakikolwiek zasób związany z wybranym zleceniem produkcyjnym, otrzymują powiadomienie o zmianie.
-    - **Powiadom osoby przygotowujące** — ten przycisk jest dostępny tylko na karcie **Zapotrzebowanie na zakup**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako przygotowujący wybrane zapotrzebowanie na zakup.
-    - **Powiadom osoby odpowiedzialne za sprzedaż** — ten przycisk jest dostępny tylko na karcie **Oferty**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybraną ofertę.
+    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby odpowiedzialne** — ten przycisk jest dostępny tylko na karcie **Zamówienia sprzedaży**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybrane zamówienie sprzedaży. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadomienie działu produkcji** — ten przycisk jest dostępny tylko na karcie **Zlecenia produkcyjne**. W przeciwieństwie do zamówień sprzedaży i zamówień zakupu, w zleceniach produkcyjnych nie ma jednego użytkownika, który jest ustawiony jako odpowiedzialny za nie od początku do zakończenia. Zamiast tego, różni nadzorcy lub planiści zazwyczaj przejmują odpowiedzialność za konkretny obiekt lub konkretną część produkcji (na przykład za konkretne zasoby lub grupy zasobów). Dlatego po wybraniu tego przycisku wszyscy użytkownicy, którzy są odpowiedzialni za jakikolwiek zasób związany z wybranym zleceniem produkcyjnym, otrzymują powiadomienie o zmianie. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby przygotowujące** — ten przycisk jest dostępny tylko na karcie **Zapotrzebowanie na zakup**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako przygotowujący wybrane zapotrzebowanie na zakup. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
+    - **Powiadom osoby odpowiedzialne za sprzedaż** — ten przycisk jest dostępny tylko na karcie **Oferty**. Wybierz go, aby wysłać powiadomienie o zmianie do użytkownika, który jest ustawiony jako odpowiedzialny za wybraną ofertę. Więcej informacji o tym, kto może wyświetlić powiadomienia i w jaki sposób, można znaleźć w temacie [Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji](#review-notifications).
     - **Wyrzuć** — ten przycisk jest dostępny tylko na karcie **Zapasy**. Wybierz go w celu likwidacji wybranych zapasów.
     - **Wyświetl historię** — umożliwia otwarcie historii akcji podjętych w związku z wybraną transakcją przy użyciu okna dialogowego **Wpływ biznesowy na otwarte transakcje**. (Historia pokazuje na przykład, czy powiadomienia zostały wysłane lub czy transakcje zostały zablokowane) 
     - **Wyświetl wszystkie transakcje** — umożliwia otwarcie pełnej listy wszystkich transakcji, a nie tylko transakcji otwartych.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Przeglądanie i przetwarzanie powiadomień o zmianach dla transakcji
 
 Wysyłane do ciebie powiadomienia o zmianach możesz odczytywać i przetwarzać w następujący sposób:
 

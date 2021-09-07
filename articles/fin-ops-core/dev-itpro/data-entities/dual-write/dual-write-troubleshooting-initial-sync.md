@@ -4,24 +4,17 @@ description: Ten temat zawiera informacje ułatwiające rozwiązywanie problemó
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736381"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416988"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Rozwiązywanie problemów podczas synchronizacji początkowej
 
@@ -46,7 +39,7 @@ Po włączeniu szablonów mapowania stan map powinien być **Uruchomione**. Jeś
 
 Podczas próby uruchomienia mapowania i wstępnej synchronizacji może zostać wyświetlony następujący komunikat o błędzie:
 
-*(\[Złe żądanie\], Serwer zdalny zwrócił błąd: (400) złe żądanie.) Podczas eksportu AX napotkał błąd*
+*(\[Złe żądanie\], Serwer zdalny zwrócił błąd: (400) złe żądanie.) Podczas eksportu AX napotkał błąd.*
 
 Oto przykład tabeli pełnego komunikatu o błędzie.
 
@@ -198,7 +191,7 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
 
         ![Projekt integracji danych w celu zaktualizowania CustomerAccount i ContactPersonId.](media/cust_selfref6.png)
 
-    2. Dodaj kryteria firmy w polu filtruj po stronie Dataverse, aby w aplikacji Finance and Operations została zaktualizowana tylko liczba wierszy spełniających kryteria filtru. Aby dodać filtr, kliknij przycisk filtru. W oknie dialogowym **Edytuj kwerendę** można dodać kwerendę filtru, taką jak **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Dodaj kryteria firmy w polu filtruj po stronie Dataverse, aby w aplikacji Finance and Operations została zaktualizowana tylko liczba wierszy spełniających kryteria filtru. Aby dodać filtr, kliknij przycisk filtru. W oknie dialogowym **Edytuj kwerendę** można dodać kwerendę filtru, taką jak **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [UWAGA] Jeśli przycisk filtru nie istnieje, utwórz bilet pomocy technicznej, aby poprosić zespół integracji danych o umożliwienie obsługi filtru w dzierżawie.
 
@@ -210,5 +203,36 @@ Jeśli istnieją wiersze w tabeli klienta mają wartości w kolumnach **ContactP
 
 8. W aplikacji Finance and Operations wyłącz śledzenie zmian dla tabeli **Klienci (wersja 3)**.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Błędy początkowej synchronizacji na mapach z ponad 10 polami wyszukiwania
+
+Podczas próby przeprowadzenia początkowych synchronizacji na mapowaniach **Odbiorcy V3 — Konta**, **Zamówienia sprzedaży** lub dowolnych innych z ponad 10 polami wyszukiwania może zostać wyświetlony następujący komunikat o błędzie:
+
+*CRMExport: wykonywanie pakietu zakończone. Opis błędu 5 prób uzyskania danych z https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc zakończyło się niepowodzeniem.*
+
+Z powodu ograniczenia wyszukiwania w zapytaniu początkowa synchronizacja nie powiedzie się, gdy mapowanie jednostki zawiera więcej niż 10 wyszukiwań. Więcej informacji zawiera temat [Pobieranie pokrewnych rekordów tabeli za pomocą zapytania](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Aby naprawić ten problem, należy wykonać następujące czynności:
+
+1. Usuń opcjonalne pola wyszukiwania z mapy jednostek podwójnego zapisu, aby liczba wyszukiwań nie była większa od 10.
+2. Zapisz mapę i wykonaj wstępną synchronizację.
+3. Jeśli wstępna synchronizacja pierwszego kroku się powiedzie, dodaj pozostałe pola wyszukiwania i usuń pola wyszukiwania, które zsynchronizowano w pierwszym kroku. Uważaj, aby pól wyszukiwania nie było więcej niż 10. Zapisz mapę i przeprowadź wstępną synchronizację.
+4. Powtarzaj te kroki, dopóki wszystkie pola wyszukiwania nie zostaną zsynchronizowane.
+5. Dodaj wszystkie pola wyszukiwania do mapy, zapisz mapę i wykonaj ją z opcją **Pomiń wstępną synchronizację**.
+
+Ten proces włącza mapę w trybie synchronizacji na żywo.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Znany problem podczas synchronizacji początkowej adresów pocztowych stron i adresów elektronicznych stron
+
+Podczas próby uruchomienia początkowego synchronizacji adresów pocztowych stron i adresów elektronicznych stron może zostać wyświetlony następujący komunikat o błędzie:
+
+*Nie znaleziono numeru strony w Dataverse.*
+
+W **DirPartyCDSEntity** w aplikacjach Finance and Operations jest ustawiony zakres, który filtruje strony typu **Osoba** i **Organizacja**. W związku z tym początkowa synchronizacja mapowania **Jednostki CDS — msdyn_parties** nie będzie synchronizowała jednostek innych typów, w tym **Firma** i **Jednostka operacyjna**. Podczas początkowej synchronizacji **Adresy pocztowe strony CDS (msdyn_partypostaladdresses)** lub **Kontakty V3 strony (msdyn_partyelectronicaddresses)** może zostać wyświetlony błąd.
+
+Pracujemy nad poprawką w celu usunięcia zakresu typów strony w jednostce Finance and Operations, aby strony wszystkich typów mogły być synchronizowane z Dataverse.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Czy występują problemy z wydajnością podczas wykonywania wstępnej synchronizacji danych odbiorców lub kontaktów?
+
+Jeśli po uruchomieniu wstępnej synchronizacji danych **Odbiorca** działają mapy **Odbiorca**, a następnie zostanie uruchomiona wstępna synchronizacja danych **Kontakty**, mogą występować problemy z wydajnością podczas wstawiania i aktualizacji w tabelach **LogisticsPostalAddress** i **LogisticsElectronicAddress** adresów **Kontakty**. Te same globalne tabele adresów pocztowych i adresów elektronicznych są śledzone dla  **CustCustomerV3Entity** i **VendVendorV2Entity**, a funkcja podwójnego zapisu próbuje tworzyć więcej zapytań, aby zapisywać dane po drugiej stronie. Jeśli została już przeprowadzona wstępna synchronizacja danych **Odbiorca**, należy zatrzymać daną mapę podczas przeprowadzania wstępnej synchronizacji danych **Kontakty**. To samo należy zrobić z danymi **Dostawca**. Po zakończeniu wstępnej synchronizacji można uruchomić wszystkie mapy, pomijając wstępną synchronizację.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

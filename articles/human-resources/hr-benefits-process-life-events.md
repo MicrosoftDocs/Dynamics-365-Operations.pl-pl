@@ -1,8 +1,8 @@
 ---
 title: Przetwarzanie zmian sytuacji życiowej
 description: W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6bfbb9e31a7d8973c2b993f3792a7216f41924e0ff4c24b08c0dd954ab327c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 688a47d77dbd75ecd12af23f22a1d401703ed672
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775024"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417555"
 ---
 # <a name="process-life-events"></a>Przetwarzanie zmian sytuacji życiowej
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej. Na przykład zawarcie małżeństwa, zmiana w zatrudnieniu lub zmiana osoby na utrzymaniu/beneficjenta. Aby można było wprowadzać zmiany sytuacji życiowej, należy włączyć funkcję zmian sytuacji życiowej w formularzu Parametry świadczeń, skonfigurować typy zmian sytuacji życiowej oraz skonfigurować opcje zmian sytuacji życiowej dla typów planów.
+W trakcie cyklu życia pracownika w module Microsoft Dynamics 365 Human Resources każdy pracownik może przechodzić różne zmiany sytuacji życiowej. Na przykład zawarcie małżeństwa, zmiana w zatrudnieniu lub zmiana osoby na utrzymaniu/beneficjenta. Aby można było wprowadzać zmiany sytuacji życiowej, należy włączyć funkcję zmian sytuacji życiowej na stronie **Parametry świadczeń**, skonfigurować typy zmian sytuacji życiowej oraz skonfigurować opcje zmian sytuacji życiowej dla typów planów.
 
 Aby można było przetwarzać zmiany sytuacji życiowej, należy wcześniej uruchomić otwartą rejestrację co najmniej raz w trakcie okresie zatrudniania. W Stanach Zjednoczonych otwarta rejestracja zazwyczaj odbywa się raz na rok. Poza Stanami Zjednoczonymi otwarta rejestracja może być wykonywana w momencie zatrudniania. Pracownik nie musi wybrać planu świadczeń, aby zmiany sytuacji życiowej były przetwarzane, ale musi być uwzględniony w przetwarzaniu otwartej rejestracji. 
 

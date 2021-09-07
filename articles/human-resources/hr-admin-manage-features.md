@@ -1,8 +1,8 @@
 ---
 title: Zarządzanie funkcjami w module Zasoby ludzkie
-description: Informacje o sposobie włączania i wyłączania nowych funkcji w systemie Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/06/2020
+description: W tym temacie opisano funkcję zarządzania funkcjami i sposób jego używania.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a9c459b2b34164a9be3ed609a99deb4c5b710d340ef560e6f991e760375d6146
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61e40f7177a1c8cf3d60a9a991ecbb0ed4d93aa1
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738374"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414640"
 ---
 # <a name="manage-features-in-human-resources"></a>Zarządzanie funkcjami w module Zasoby ludzkie
 
@@ -69,7 +69,7 @@ Zarządzanie świadczeniamii zastępuje funkcje w obszarze roboczym **Świadczen
 - **Zasady uprawnień do świadczeń**
 - **Zdarzenia dotyczące uprawnień**
 
-Informacje zawarte w tych formularzach można przeglądać w trybie tylko do odczytu. Jeśli chcesz edytować te informacje, musisz najpierw wyłączyć funkcję Zarządzania świadczeniami (dotyczy tylko środowisk **Piaskownicy**).
+Informacje zawarte na tych stronach można przeglądać w trybie tylko do odczytu. Jeśli chcesz edytować te informacje, musisz najpierw wyłączyć funkcję Zarządzania świadczeniami (dotyczy tylko środowisk **Piaskownicy**).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Włączanie lub wyłączanie urlopu i nieobecności
 

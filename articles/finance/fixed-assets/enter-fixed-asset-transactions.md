@@ -1,8 +1,8 @@
 ---
 title: Opcje transakcji środków trwałych
 description: W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764270"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344697"
 ---
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
 
@@ -58,14 +59,16 @@ Transakcje środków trwałych dowolnego typu można księgować na stronie Arku
 | Amortyzacja                        | Środki trwałe             | Środki trwałe                              |
 |                                     | Księga główna           | Arkusze finansowe                           |
 | Likwidacja                            | Środki trwałe             | Środki trwałe                              |
-| ** **                               | Księga główna           | Arkusze finansowe                           |
-| ** **                               | Rozrachunki z odbiorcami      | Faktura niezależna                         |
+|                                     | Księga główna           | Arkusze finansowe                           |
+|                                     | Rozrachunki z odbiorcami      | Faktura niezależna                         |
 
-Wartość pozostała Okresu amortyzacji środka trwałego nie jest aktualizowana, kiedy wiersz arkusza typu transakcji opisowej jest tworzony ręcznie lub importowany przez jednostkę danych. Ta wartość jest aktualizowana, kiedy proces propozycję amortyzacji jest używany do tworzenia wiersza arkusza.
+Wartość pozostała nie jest aktualizowana w przyapdku okresów amortyzacji środka, kiedy wiersz arkusza typu transakcji amortyzacji jest tworzony ręcznie lub importowany przez jednostkę danych. Pozostała wartość jest aktualizowana, kiedy proces propozycję amortyzacji jest używany do tworzenia wiersza arkusza.
 
 Aby uzyskać więcej informacji, zobacz [Integracja środków trwałych](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Transakcje wymagające różnych numerów kuponów
+System uniemożliwia dwukrotne księgowanie amortyzacji w tym samym okresie. Jeśli na przykład dwóch użytkowników utworzy osobne propozycje amortyzacji za styczeń, amortyzacja od pierwszego użytkownika zostanie zaksięgowana w pierwszym arkuszu. Gdy drugi użytkownik zaksięguje amortyzację w drugim arkuszu, system sprawdzi datę ostatniej amortyzacji i nie zaksięguje jej za ten sam okres po raz drugi.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Transakcje, które wymagają różnych numerów załącznika
 
 Następujące transakcje dotyczące środków trwałych będą używać różnych numerów załączników:
 

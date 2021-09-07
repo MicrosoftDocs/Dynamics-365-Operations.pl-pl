@@ -4,24 +4,17 @@ description: Ten temat zawiera informacje dotyczące ogólnego rozwiązywania pr
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 779cc80d4cb510e79885919f1c705824ab6ad58b3e2fe1bab7bbec0511d08951
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4adc2d83667a05d14a26ace23e5bd8026df4b5f
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380219"
 ---
 # <a name="general-troubleshooting"></a>Rozwiązywanie ogólnych problemów
 
@@ -29,31 +22,10 @@ ms.locfileid: "6736309"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Ten temat zawiera informacje dotyczące ogólnego rozwiązywania problemów dotyczących integracji o podwójnym zapisie między aplikacjami Finance and Operations i Dataverse.
 
 > [!IMPORTANT]
 > Niektóre problemy, których ten problem może wymagać od roli administratora systemu lub poświadczeń administratora dzierżawcy Microsoft Azure Active Directory (Azure AD). W sekcji dotyczącej każdego zagadnienia wyjaśniono, czy określona rola lub poświadczenia są wymagane.
-
-## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Podczas próby zainstalowania pakietu podwójnego odpisu za pomocą narzędzia package deployer nie są wyświetlane żadne dostępne rozwiązania
-
-Niektóre wersje narzędzia package deployer są niezgodne z pakietem rozwiązania podwójnego zapisywania. Aby pomyślnie zainstalować pakiet, należy pamiętać o użyciu [wersji 9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) lub nowszej narzędzia package deployer.
-
-Po zainstalowaniu narzędzia package deployer zainstaluj pakiet rozwiązania, wykonując poniższe kroki.
-
-1. Pobierz najnowszy plik pakietu rozwiązania z Yammer.com. Po pobraniu pliku zip Package kliknij go prawym przyciskiem myszy i wybierz polecenie **Właściwości**. Zaznacz pole wyboru **Odblokuj**, a następnie kliknij przycisk **Zastosuj**. Jeśli pole wyboru **Odblokuj** nie jest widoczne, plik zip jest już odblokowany i można pominąć ten krok.
-
-    ![Okno dialogowe Właściwości.](media/unblock_option.png)
-
-2. Wyodrębnij plik zip pakietu i skopiuj wszystkie pliki w folderze **Dynamics365FinanceAndOperationsCommon. PackageDeployer.2.0.438**.
-
-    ![Zawartość folderu Dynamics365FinanceAndOperationsCommon. PackageDeployer.2.0.438.](media/extract_package.png)
-
-3. Wklej wszystkie skopiowane pliki do folderu **Narzędzia** narzędzia package deployer. 
-4. Uruchom **PackageDeployerexe**, aby wybrać środowisko Dataverse i zainstalować rozwiązania.
-
-    ![Zawartość folderu Narzędzia.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Umożliwia włączenie i wyświetlenie logowania śledzenia wtyczki w Dataverse w celu wyświetlenia szczegółów błędu
 
@@ -74,18 +46,17 @@ Aby zobaczyć dziennik śledzenia, należy wykonać następujące kroki.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Włącz tryb debugowania w celu rozwiązywania problemów z synchronizacją na żywo w aplikacjach Finance and Operations
 
-**Wymagana rola do wyświetlania błędów:** błędy podwójnego zapisywania administratora systemu Dataverse mogą pojawić się w aplikacji Finance and Operations. W niektórych przypadkach pełny tekst komunikatu o błędzie jest niedostępny, ponieważ wiadomość jest zbyt długa lub zawiera informacje identyfikacyjne (dane osobowe). Pełne rejestrowanie błędów można włączyć, wykonując następujące kroki:
+**Wymagana rola w celu wyświetlania problemów:** administrator systemu
 
-1. Wszystkie konfiguracje projektu w aplikacjach Finance and Operations mają właściwość **IsDebugMode** w tabeli **DualWriteProjectConfiguration**. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel.
+Błędy podwójnego zapisywania, które pochodzą z Dataverse, mogą pojawić się w aplikacji Finance and Operations. Aby włączyć pełne rejestrowanie błędów, wykonując następujące kroki:
 
-    > [!TIP]
-    > Łatwym sposobem otwarcia tabeli jest włączenie trybu **Projektowania** w dodatku Excel, a następnie dodanie **DualWriteProjectConfigurationEntity** do arkusza. Aby uzyskać więcej informacji, zobacz: [Otwieranie danych tabeli w programie Excel i aktualizowanie ich przy użyciu dodatku programu Excel](../../office-integration/use-excel-add-in.md).
-
-2. Właściwość **IsDebugMode** należy skonfigurować jako wartość **Tak** dla projektu.
-3. Uruchom scenariusz, który generuje błędy.
-4. Pełne dzienniki są dostępne w tabeli DualWriteErrorLog. Aby wyszukać dane w przeglądarce, należy wybrać następujący adres URL (w razie potrzeby zastąpić **XXX**):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
+1. W przypadku wszystkich konfiguracji projektu w aplikacjach Finance and Operations istnieje flaga **IsDebugMode** w tabeli **DualWriteProjectConfiguration**.
+2. Otwórz tabelę **DualWriteProjectConfiguration** przy użyciu dodatku programu Excel. Aby użyć tego dodatku, włącz tryb projektowania w dodatku programu Excel Finance and Operations i dodaj do arkusza konfigurację **DualWriteProjectConfiguration**. Więcej informacji można znaleźć w temacie [Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel](../../office-integration/use-excel-add-in.md).
+3. Ustaw wartość **IsDebugMode** na **Tak** w projekcie.
+4. Uruchom scenariusz, który generuje błędy.
+5. Pełne dzienniki są przechowywane w tabeli **DualWriteErrorLog**.
+6. W celu wyszukiwania danych w eksploratorze tabel użyj następującego łącza: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, zastępując wartość `999` stosownie do potrzeb.
+7. Zaktualizuj ponownie po [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), który jest dostępny dla aktualizacji platformy 37 i nowszych. Jeśli ta poprawka jest zainstalowana, tryb debugowania zarejestruje więcej dzienników.  
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Sprawdź błędy synchronizacji na maszynie wirtualnej dla aplikacji Finance and Operations
 
@@ -116,10 +87,28 @@ Teraz można połączyć nowe środowisko.
 Po utworzeniu zamówienia sprzedaży w systemie Dynamics 365 Sales, kliknięcie **+ Dodaj produkty** może spowodować przekierowanie do formularza wiersza zamówienia Dynamics 365 Project Operations. Nie ma sposobu na podstawie tego formularza, aby wyświetlić formularz **Informacji** o wierszu zamówienia sprzedaży. Opcja dotycząca **Informacji** nie jest wyświetlana w polu listy rozwijanej pod **Nowy wiersz zamówienia**. Dzieje się tak, ponieważ Project Operations zostało zainstalowane w danym środowisku.
 
 Aby ponownie włączyć opcję formularza **Informacji**, wykonaj następujące kroki:
+
 1. Przejdź do tabeli **Wiersz zamówienia**.
-2. Znajdź formularz **Informacje** w węźle formularze. 
-3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**. 
+2. Znajdź formularz **Informacje** w węźle formularze.
+3. Zaznacz formularz **Informacje** i kliknij pozycję **Włącz role zabezpieczeń**.
 4. Zmień ustawienie zabezpieczeń, aby było **Wyświetlane dla wszystkich**.
 
+## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Włączanie i zapisywanie śledzenia sieciowego w celu dołączeniu śledzenia do biletów pomocy technicznej
+
+Aby rozwiązać niektóre problemy, zespół pomocy technicznej może chcieć przejrzeć zapisy zdarzeń sieci. Aby utworzyć śledzenie sieci, należy wykonać następujące kroki:
+
+### <a name="chrome"></a>Chrome
+
+1. Na otwartej karcie naciśnij klawisz **F12** lub wybierz pozycję **Narzędzia deweloperskie**, aby otworzyć narzędzia deweloperskie.
+2. Otwórz kartę **Sieć** i wpisz **integ** w polu tekstowym filtru.
+3. Uruchom scenariusz i obserwuj rejestrowane żądania.
+4. Kliknij prawym przyciskiem myszy wpisy i wybierz polecenie **Zapisz wszystko jako HAR z zawartością**.
+
+### <a name="microsoft-edge"></a>Microsoft Edge
+
+1. Na otwartej karcie naciśnij klawisz **F12** lub wybierz pozycję **Narzędzia deweloperskie**, aby otworzyć narzędzia deweloperskie.
+2. Otwórz kartę **Sieć**.
+3. Uruchom scenariusz.
+4. Naciśnij przycisk **Zapisz**, aby wyeksportować wyniki do HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

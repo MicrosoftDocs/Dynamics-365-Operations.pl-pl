@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie samoobsługi pracownika etatowego
 description: W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafelki do nawigacji najwyższego poziomu w obszarze Samoobsługa pracownika etatowego.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721590"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423325"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurowanie samoobsługi pracownika etatowego
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafelki do nawigacji najwyższego poziomu w obszarze Samoobsługa pracownika etatowego. Kafelki planów świadczeń kierują użytkowników do planów świadczeń, do których są uprawnieni..
+W aplikacji Microsoft Dynamics 365 Human Resources można skonfigurować kafelki do nawigacji najwyższego poziomu w obszarze **Samoobsługa pracownika etatowego**. Kafelki planów świadczeń kierują użytkowników do planów świadczeń, do których są uprawnieni..
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Konfigurowanie kafelka planów świadczeń
 
@@ -39,9 +39,9 @@ W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafe
    | Pole | Opis |
    | --- | --- |
    | **Identyfikator kafelka** | Unikatowy identyfikator dla kafelka. |
-   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze samoobsługi. |
+   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa pracownika etatowego**. |
    | **Opis** | Opis kafelka. |
-   | **Adres internetowy** | Wprowadź adres URL do strony samoobsługi pracownika etatowego. |
+   | **Adres internetowy** | Wprowadź adres URL do strony **Samoobsługa pracownika etatowego**. |
    | **Rozmiar kafelka** | Rozmiar kafelka: Mały, Średni lub Duży. |
    | **Grupa docelowa** | Określa, czy strona ma być otwierana w nowym, czy w bieżącym oknie. |
    | **Obraz tła kafelka** | Adres URL obrazu, który ma być używany dla kafelka (opcjonalnie). |
@@ -61,9 +61,9 @@ W rozwiązaniu Microsoft Dynamics 365 Human Resources można skonfigurować kafe
    | Pole | Opis |
    | --- | --- |
    | **Identyfikator kafelka** | Unikatowy identyfikator dla kafelka. |
-   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze Samoobsługi. |
+   | **Tekst etykiety kafelka** | Tekst, który będzie wyświetlany dla kafelka w obszarze **Samoobsługa pracownika etatowego**. |
    | **Opis** | Opis kafelka. |
-   | **Adres internetowy** | Wprowadź adres URL do strony samoobsługi pracownika etatowego. |
+   | **Adres internetowy** | Wprowadź adres URL do strony **Samoobsługa pracownika etatowego**. |
    | **Rozmiar kafelka** | Rozmiar kafelka: Mały, Średni lub Duży. |
    | **Grupa docelowa** | Określa, czy strona ma być otwierana w nowym, czy w bieżącym oknie. |
    | **Obraz tła kafelka** | Adres URL obrazu, który ma być używany dla kafelka (opcjonalnie). |

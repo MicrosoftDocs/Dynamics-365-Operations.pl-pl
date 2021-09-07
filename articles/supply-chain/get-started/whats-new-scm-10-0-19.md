@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773544"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384666"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
@@ -41,7 +41,7 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 | Zapasy i logistyka | [Funkcje wyszukiwania w polach Wstęp do dokumentu i Wnioski dokumentu na stronie Oferta sprzedaży](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Dodana jest funkcja wyszukiwania w polach **Wstęp do dokumentu** i **Wnioski dokumentu** na stronie **Oferta sprzedaży**.<br><br>Ten funkcjonalność jest włączona domyślnie. |
 | Zapasy i logistyka | [Wykonywanie magazynu z jednostkami skalowania urządzeń brzegowych na niestandardowym sprzęcie](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Rozmieszczanie jednostek skalowania urządzeń brzegowych na niestandardowym sprzęcie przy użyciu funkcji LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Produkcja | [Wykonywanie produkcji z jednostkami skalowania urządzeń brzegowych na niestandardowym sprzęcie](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planowanie | [Planowanie nieskończonych zdolności produkcyjnych dla optymalizacji planowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Ta funkcja umożliwia planowanie pojemności z nieskończoną pojemnością dla optymalizacji planowania. Bez tej funkcji, planowane zlecenia produkcyjne otrzymują swój czas realizacji z czasu realizacji zapasów produktów wydanych, niezależnie od ogrodzenia czasu planowania. |
+| Planowanie | [Planowanie nieskończonych zdolności produkcyjnych dla optymalizacji planowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planowanie z nieskończoną zdolnością produkcyjną](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Planowanie | Ustalanie zamówienia planowanego oparte na zapytaniu | [Zaakceptuj zamówienia planowane](../master-planning/planning-optimization/planned-order-firming.md) |
 | Zarządzanie informacjami o produktach | [Ulepszenia strony sugestii dotyczących wariantów](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Tworzenie wstępnie zdefiniowanych wariantów produktu](../pim/tasks/create-predefined-product-variants.md) |
 

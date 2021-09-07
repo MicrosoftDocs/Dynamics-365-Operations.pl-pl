@@ -2,7 +2,7 @@
 title: Typ miejsca docelowego raportowania elektronicznego (ER)
 description: Ten temat zawiera wyjaśnienia dotyczące konfigurowania miejsca docelowego poczty e-mail dla każdego składnika typu FOLDER lub PLIK w formacie raportowania elektronicznego (ER).
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769326"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343867"
 ---
 # <a name="email-er-destination-type"></a>Typ miejsca docelowego raportowania elektronicznego (ER)
 
@@ -53,9 +53,22 @@ Aby wysłać jeden lub więcej plików wyjściowych pocztą e-mail, wykonaj nast
 
 ## <a name="configure-an-email-destination"></a>Konfigurowanie pocztowego miejsca docelowego
 
-Można określić nadawcę i odbiorców wiadomości e-mail, a także edytować temat i treść wiadomości e-mail. Można zdefiniować stały tekst tematu i treści wiadomości e-mail lub używać [formuł](er-formula-language.md) ER w celu dynamicznego tworzenia tekstów wiadomości e-mail.
+### <a name="email-content"></a>Zawartość wiadomości e-mail
 
-Domyślnie wiadomość e-mail jest wysyłana w imieniu bieżącego użytkownika. Aby określić innego nadawcę wiadomości e-mail, należy skonfigurować pole **Od**.
+Możesz edytować temat i treść wiadomości e-mail.
+
+W polu **Temat** wprowadź test tematu wiadomości e-mail, który powinien pojawić się w polu tematu wiadomości e-mail generowanej podczas wykonywania. W polu **Treść** wprowadź test treści wiadomości e-mail, który powinien pojawić się w polu treści wiadomości e-mail generowanej podczas wykonywania. Można zdefiniować stały tekst tematu i treści wiadomości e-mail lub używać [formuł](er-formula-language.md) ER w celu dynamicznego tworzenia tekstów wiadomości e-mail podczas wykonywania. Skonfigurowana formuła musi zwracać wartość typu [Ciąg](er-formula-supported-data-types-primitive.md#string).
+
+Treść wiadomości e-mail jest skomponowana w formacie TEXT lub HTML, w zależności od klienta poczty e-mail. Można użyć dowolnego układu, stylów i znakowania, na które zezwala język HTML oraz wbudowane kaskadowe arkusze stylów (CSS).
+
+> [!NOTE]
+> Klienci poczty e-mail nakładają ograniczenia dotyczące układu i stylu, które mogą wymagać wprowadzenia korekt w kodzie HTML i arkuszach stylów CSS używanych w treści wiadomości. Zalecamy zapoznanie się z najważniejszymi wskazówkami dotyczącymi tworzenia kodu HTML, które będą obsługiwane przez najpopularniejszych klientów poczty e-mail.
+>
+> Użyj poprawnego kodowania w celu zaimplementowania powrotu karetki, w zależności od formatowania treści. Aby uzyskać więcej informacji, zobacz definicję typu danych [Ciąg](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>Adresy e-mail
+
+Możesz określić nadawcę wiadomości e-mail i adresatów wiadomości e-mail. Domyślnie wiadomość e-mail jest wysyłana w imieniu bieżącego użytkownika. Aby określić innego nadawcę wiadomości e-mail, należy skonfigurować pole **Od**.
 
 > [!NOTE]
 > Gdy miejsce docelowe wiadomości e-mail jest skonfigurowane, pole **Od** jest widoczne tylko dla użytkowników, którzy mają uprawnienia zabezpieczeń `ERFormatDestinationSenderEmailConfigure`, **Skonfiguruj adres e-mail nadawcy dla miejsc docelowych formatu ER**.

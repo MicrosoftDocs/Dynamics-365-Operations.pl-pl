@@ -1,8 +1,8 @@
 ---
-title: Przetwórz uprawnienia do świadczeń
-description: W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Przetwarzanie uprawnień do rejestracji
+description: W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989b493af6e8386f9517737c582150470a4e226d161e63c3f7a6088dbd3df903
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782079"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417491"
 ---
-# <a name="process-enrollment-eligibility"></a>Przetwórz uprawnienia do świadczeń
+# <a name="process-enrollment-eligibility"></a>Przetwarzanie uprawnień do rejestracji
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
+W tym temacie opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 1. W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Przetwarzanie uprawnień do świadczeń**.
 
@@ -53,11 +53,11 @@ W tym artykule opisano sposób uruchamiania procesu uprawnień do rejestracji.
 
 ## <a name="view-process-results"></a>Wyświetlanie wyników procesu
 
-W tym artykule opisano sposób wyświetlania wyników procesu.
+W tym temacie opisano sposób wyświetlania wyników procesu.
 
 1.  W obszarze roboczym **Zarządzanie świadczeniami** w sekcji **Przetwarzanie** wybierz opcję **Wyniki procesu**.
 
-2.  W formularzu **Wyniki procesu** są określone następujące pola:
+2.  Na stronie **Wyniki procesu** należy określić następujące pola:
 
    | Pole | opis |
    | --- | --- |

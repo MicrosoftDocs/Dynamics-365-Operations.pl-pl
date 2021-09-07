@@ -2,26 +2,19 @@
 title: Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
 description: Ten temat zawiera informacje dotyczące rozwiązywania problemów, które mogą pomóc w rozwiązaniu problemów związanych z modułem podwójnego zapisu w aplikacjach Finance and Operations.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720743"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380147"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Rozwiązywanie problemów z podwójnym zapisem w aplikacjach Finance and Operations
 
@@ -44,8 +37,7 @@ Jeśli nie można otworzyć strony **podwójnego zapisywania**, wybierając opcj
 
 Podczas próby skonfigurowania nowej tabeli na potrzeby podwójnego zapisu może pojawić się następujący komunikat o błędzie. Jedyny użytkownik, który może stworzyć mapę, jest użytkownikiem, który konfiguruje połączenie podwójnego zapisu.
 
-*Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany)*
-
+*Kod stanu odpowiedzi nie wskazuje powodzenia: 401 (nieautoryzowany).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Błąd podczas otwierania interfejsu użytkownika z podwójnym zapisywaniem
 
@@ -61,7 +53,11 @@ Aby rozwiązać ten problem, zaloguj się przy użyciu okna prywatnego w Microso
 
 Podczas łączenia lub tworzenia map może wystąpić następujący błąd:
 
-*Kod stanu odpowiedzi nie wskazuje powodzenia: 403 (tokenexchange). <br> Identyfikator sesji: \<your session id\><br> Identyfikator głównego działania: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 Ten błąd może wystąpić, jeśli użytkownik nie ma wystarczających uprawnień, aby połączyć podwójny zapis lub utworzyć mapy. Ten błąd może również wystąpić, jeśli środowisko Dataverse zostało zresetowane bez odłączenia podwójnego zapisu. Każdy użytkownik z rolą administratora systemu w aplikacjach Finance and Operations i Dataverse może łączyć środowiska. Tylko użytkownik instalujący połączenie podwójnego zapisu może dodawać nowe mapowania tabeli. Po zakończeniu instalacji każdy użytkownik z rolą administratora systemu może monitorować stan i edytować mapowania.
 
@@ -75,16 +71,29 @@ Ten błąd występuje, gdy połączone środowisko Dataverse jest niedostępne.
 
 Aby rozwiązać ten problem, utwórz bilet dla zespołu integracji danych. Dołącz śledzenie sieci, aby zespół integracji danych mógł oznaczyć mapy jako **Nie uruchomione** na zapleczu.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Błąd podczas próby uruchomienia mapowania tabeli
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Błędy podczas próby uruchomienia mapowania tabeli
 
-Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może się pojawić komunikat o błędzie podobny do następującego:
+### <a name="unable-to-complete-initial-data-sync"></a>Nie można ukończyć początkowej synchronizacji danych
+
+Podczas próby przeprowadzenia wstępnej synchronizacji danych może zostać wyświetlony komunikat o błędzie podobny do następującego:
 
 *Nie można ukończyć wstępnej synchronizacji danych. Błąd: błąd podwójnego zapisu — Rejestracja wtyczki nie powiodła się: nie można zbudować metadanych wyszukiwania przy podwójnym zapisie. Odwołanie do obiektu błędu nie jest ustawione na wystąpienie obiektu.*
 
-Poprawka dla tego błędu jest zależna od przyczyny błędu:
+Podczas próby ustawienia tego stanu mapowania na **Uruchomione** może zostać wyświetlony ten komunikat o błędzie. Poprawka jest zależna od przyczyny błędu:
 
 + Jeśli mapowanie ma zależne mapowania, należy pamiętać, aby włączyć mapowania zależne tego mapowania tabeli.
 + Być może w mapowaniu brakuje kolumn źródłowych lub docelowych. Jeśli w aplikacji Finance and Operations nie ma kolumny, należy wykonać kroki w sekcji [Problem związany z brakiem kolumn tabeli na mapach](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Jeśli w usłudze Dataverse brakuje pola, w mapowaniu należy kliknąć przycisk **Odśwież tabele**, tak aby kolumny były automatycznie wstawiane ponownie do mapowania.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Błąd niezgodności wersji i uaktualnienie rozwiązań podwójnego zapisu
+
+Podczas próby wykonania mapowania tabeli mogą pojawić się następujące komunikaty o błędzie:
+
++ *Grupy klientów (msdyn_customergroups) : błąd podwójnego zapisu — niezgodność wersji rozwiązania Dynamics 365 for Sales 'Dynamics365Company'. Wersja: '2.0.2.10' Wymagana wersja: '2.0.133'*
++ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365FinanceExtended'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.227'*
++ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365FinanceAndOperationsCommon'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.133'*
++ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'CurrencyExchangeRates'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.133'*
++ Niezgodność wersji rozwiązania *Dynamics 365 for Sales 'Dynamics365SupplyChainExtended'. Wersja: '1.0.0.0' Wymagana wersja: '2.0.227'*
+
+Aby rozwiązać te problemy, należy zaktualizować rozwiązania podwójnego zapisu w Dataverse. Pamiętaj, aby uaktualnić do najnowszego rozwiązania, które pasuje do wymaganej wersji rozwiązania.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

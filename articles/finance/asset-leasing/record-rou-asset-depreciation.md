@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778369"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345377"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Rejestrowanie amortyzacji składnika majątku z prawem do użytkowania (wersja zapoznawcza)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 W przypadku wynajmów, które są ujmowane w bilansie organizacji, składnik majątku z prawem do użytkowania (PDU) jest amortyzowany miesięcznie. W tym temacie opisano sposób tworzenia wpisu w arkuszu dla tej amortyzacji. Amortyzacja powoduje obciążenie konta księgowego wydatków i uznanie konta księgowego umorzenia zgodnie z konfiguracją profilu księgowania oraz typem wynajmu. Te wpisy można tworzyć dla każdej umowy wynajmu albo zbiorczo dla wielu umów wynajmu, używając funkcji arkusza przetwarzania wsadowego.
 
@@ -36,6 +38,9 @@ W przypadku wynajmów, które są ujmowane w bilansie organizacji, składnik maj
 
 2. Wybierz okres amortyzacji, a następnie wybierz opcję **Utwórz arkusz**. Zostanie wyświetlony komunikat informujący o utworzeniu arkusza, który będzie używany do rejestrowania amortyzacji.
 3. Wybierz kolejno opcje **Arkusze \> Arkusze wynajmu składnika majątku**, aby otworzyć stronę **Arkusz wynajmu składnika majątku**, na której można przejrzeć utworzony wpis w arkuszu dotyczący wydatku amortyzacji.
+
+   System blokuje możliwość edytowania niektórych pól finansowych, aby zapobiec ewentualnym rozbieżnościom między transakcjami a harmonogramami. Do blokowanych pól należą m.in. następujące: **Konto**, **Kwoty**, **Wymiary finansowe**, **Waluta** i **Typ transakcji**. Ponadto nie można dodawać ani usuwać wierszy wpisów w arkuszu w żadnych wpisach arkusza wynajmu składnika majątku, ponieważ mogłoby to spowodować rozbieżności między harmonogramami a transakcjami.
+
 4. Wybierz wpis w arkuszu, a następnie wybierz opcję **Księguj**, aby zarejestrować wpis amortyzacji w księdze głównej.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Obliczanie wydatku z tytułu amortyzacji składnika majątku z PDU w umowach leasingu finansowego

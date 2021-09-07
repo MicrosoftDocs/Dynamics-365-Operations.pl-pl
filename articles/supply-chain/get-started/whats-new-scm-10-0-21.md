@@ -2,7 +2,7 @@
 title: Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.21 (październik 2021 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012044"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391215"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.21 (październik 2021 r.)
 
@@ -29,17 +29,18 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** październik 2021 r.
 
 ## <a name="known-deployment-issue"></a>Znany problem z wdrażaniem
+
 Podczas wdrażania wersji 10.0.21 w usłudze IaaS może pojawić się następujące ostrzeżenie dotyczące wdrożenia:
 
 **Kod ostrzeżenia:** 95017
 
-**Komunikat ostrzegawczy:** Wykonanie skryptu [SetupDiagnostics] nie powiodło się dla maszyny wirtualnej
+**Komunikat ostrzegawczy**: Wykonanie skryptu \[SetupDiagnostics\] nie powiodło się dla maszyny wirtualnej
 
-Wdrożenie będzie działać pomimo ostrzeżenia, jednak następujące znane problemy mogą wystąpić w usługach Lifecycle Services (LCS):
+Wdrożenie będzie działało mimo ostrzeżenia. W usługach Lifecycle Services (LCS) mogą wystąpić jednak następujące znane problemy:
 
--   Na stronie **Monitorowanie środowiska** nie pojawi się link **Wyświetl szczegółowe informacje o wersji**, więc nie będzie można zobaczyć określonych wersji modułów zainstalowanych w danym środowisku. Bez tych danych kolejne poprawki mogą zakończyć się niepowodzeniem, ponieważ proces, który stosuje poprawki, używa tych danych, aby sprawdzić, czy wymagania wstępne wersji modułu są spełnione. Ponieważ nie jest możliwe użycie kompilacji PEAP/wersji zapoznawczej w produkcji lub zastosowanie poprawek, wpływ powinien być minimalny.
--   Karty **Metryki wydajności** i **Analiza indeksów** na stronie **Monitorowanie środowiska** w obszarze SQL Insights nie będą zawierać żadnych danych. Wszystkie inne funkcje **monitorowania środowiska** będą działać zgodnie z oczekiwaniami.
--   Strona **Pełna diagnostyka systemu** nie będzie dostępna. Skojarzone dane o stanie uruchomień modułu zbierającego dane w nocy i problemy wykryte przez jego zasady również nie będą wyświetlane.
+- Na stronie **Monitorowanie środowiska** nie pojawi się link **Wyświetl szczegółowe informacje o wersji**, więc nie będzie można zobaczyć określonych wersji modułów zainstalowanych w danym środowisku. Bez tych danych kolejne poprawki mogą zakończyć się niepowodzeniem, ponieważ proces, który stosuje poprawki, używa tych danych, aby sprawdzić, czy wymagania wstępne wersji modułu są spełnione. Ponieważ nie jest możliwe użycie kompilacji PEAP/wersji zapoznawczej w produkcji lub zastosowanie poprawek, wpływ powinien być minimalny.
+- Karty **Metryki wydajności** i **Analiza indeksów** na stronie **Monitorowanie środowiska** w obszarze SQL Insights nie będą zawierać żadnych danych. Wszystkie inne funkcje **monitorowania środowiska** będą działać zgodnie z oczekiwaniami.
+- Strona **Pełna diagnostyka systemu** nie będzie dostępna. Skojarzone dane o stanie uruchomień modułu zbierającego dane w nocy i problemy wykryte przez jego zasady również nie będą wyświetlane.
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 
@@ -52,10 +53,10 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 | Zapasy&nbsp;i&nbsp;logistyka | [Dodatek Globalne księgowanie zapasów do aplikacji Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Globalne księgowanie zapasów — strona główna](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kody przyczyn zliczania zapasów](../warehousing/reason-codes-for-counting-journals.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Zasady eksportu danych, do których odwołuje się oferta sprzedaży](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Wskaż, czy zmiany danych, do których występuje odwołanie, będą powodować sytuację, w której powiązane oferty sprzedaży (lub wiersze) będą uwzględniane w następnym eksportowaniu przyrostowym. Eksport przyrostowy będzie uruchamiany szybciej, jeśli nie uwzględnisz takich ofert lub wierszy.<br><br>Ta funkcja dodaje ustawienie o nazwie **Pomiń przywoływane dane oferty sprzedaży podczas śledzenia zmian** do strony **Parametry modułu rozrachunków z odbiorcami**. |
-| Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Wkrótce*<!-- KFM: Add doc link when ready. --> |
-| Zapasy&nbsp;i&nbsp;logistyka | Zapieczętowany przetarg <!-- KFM: Add RP link when available --> | *Wkrótce*<!-- KFM: Add doc link when ready. --> |
+| Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [Kody kreskowe GS1 i kody QR](../warehousing/gs1-barcodes.md) |
+| Zapasy&nbsp;i&nbsp;logistyka | [Rezerwacja wstępna dla dodatku Widoczność magazynu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezerwacje dodatku Widoczność magazynu](../inventory/inventory-visibility-reservations.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Ulepszenia dotyczące potrąceń i ilości efektywnej w zakresie zarządzania rabatami](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Zarządzanie potrąceniami przy użyciu pulpitu potrącenia](../rebate-management/deduction-workbench.md )<br><br>[Przetwarzanie, przegląd i księgowanie rabatów](../rebate-management/process-review-post.md)<br><br>[Zarządzanie rabatami — umowy](../rebate-management/rebate-management-deals.md) |
-| Zapasy&nbsp;i&nbsp;logistyka | [Instrukcje kroku aplikacji magazynowej](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Wkrótce*<!-- KFM: Add doc link when ready --> |
+| Zapasy&nbsp;i&nbsp;logistyka | [Instrukcje kroku aplikacji magazynowej](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management](../warehousing/mobile-app-titles-instructions.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Aktualizacje przerw w pracy i śledzenia kosztów z wyładunkiem](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Aktualizuj śledzenie do odłożenia](../landed-cost/update-tracking-putaway.md )<br><br>[Przetwarzanie towarów w transporcie](../landed-cost/in-transit-processing.md) |
 | Planowanie główne | [Dni ujemne dla optymalizacji planowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Tolerancja opóźnienia (dni z ujemnym opóźnieniem)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każd
 | Obszar funkcji | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
 | Zarządzanie kosztami | Szczegóły postępu zamknięcia zapasów | Ta funkcja w wersji zapoznawczej umożliwia szczegółowy widok postępu zamknięcia zapasów. |
-| Planowanie główne | (Wersja zapoznawcza) Obsługa MRP opartego na priorytecie dla optymalizacji planowania | Ta funkcja optymalizacji planowania w wersji zapoznawczej umożliwia planowanie główne oparte na priorytecie planowania z punktem ponownego zamawiania. Najważniejsze zmiany obejmują: pole **Priorytet planowania** w wierszach zamówienia sprzedaży, wierszach zamówienia zakupu, prognozie popytu i zamówieniach planowanych; nowa opcja kodu zapotrzebowania; pole **zapotrzebowania na towar** dla punktu ponownego zamówienia; formularze konfiguracji planowania głównego do kontrolowania konfiguracji priorytetu planowania i logika obliczania optymalizacji planowania w celu ustawienia i przestrzegania priorytetu planowania. |
 | Zaopatrzenie i sourcing | Zapobieganie nadmiernej konsumpcji rezerwacji środków w budżecie, gdy w przepływie pracy znajduje się wiele zapotrzebowań na zakup | Ta funkcja w wersji zapoznawczej poprawia sprawdzanie błędów podczas przesyłania i zatwierdzania przez użytkowników zapotrzebowania na zakup, które przekraczają pozostałe saldo wiersza rezerwacji budżetu ogólnego. Pomaga to zapobiec nadmiernemu wykorzystaniu rezerwacji budżetu ogólnego, gdy wiele zapotrzebowań na zakup jest w przepływie pracy. |
 | Kontrola produkcji | Pokaż pełne numery seryjne, partii i numery identyfikacyjne w interfejsie wykonania hal produkcyjnych | Ta funkcja zapewnia lepsze środowisko wyświetlania list numerów seryjnych, partii i numerów identyfikacyjnych w interfejsie wykonywania dla hali produkcyjnej. Wyświetlanie zmienia się z widoku karty z ograniczoną liczbą znaków do widoku listy, który zapewnia wystarczająco dużo miejsca, aby wyświetlić pełne wartości. Lista umożliwia również wyszukiwanie określonych liczb. |
+| Sprzedaż i marketing | Ograniczenie liczby zamówień sprzedaży, które można wybierać do księgowania | Ta funkcja umożliwia zdefiniowanie maksymalnej liczby zamówień sprzedaży, które można wybrać podczas księgowania potwierdzeń, list pobrania, dokumentów dostawy i faktur z strony listy zamówień sprzedaży. Jest włączane automatycznie. Ta funkcja dodaje ustawienie o nazwie **Maksymalna liczba zamówień sprzedaży do zaksięgowania** do strony **Parametry rozrachunków z odbiorcami**. Nowe ustawienie domyślnie ma wartość *100*. Ta funkcja pomaga zwiększyć wydajność strony listy zamówień sprzedaży po wybraniu znaczącej liczby zamówień sprzedaży. Nie ma to wpływu na liczbę zamówień sprzedaży, które mogą być przetwarzane przez zadanie okresowe. |
 | Zarządzanie magazynem | Odłączanie pracy odłożonej od powiadomień WPW | Ta funkcja jest wymagana do wysyłania i odbierania powiadomień o wysyłce z wyprzedzeniem (ASN) podczas uruchamiania obciążenia zarządzania magazynem w jednostce skalowania (jako część rozproszonej topologii hybrydowej). Dodaje nową tabelę bazy danych przeznaczoną do przechowywania informacji o pracy odkładania. Wcześniej te informacje były przechowywane w tabelach używanych również dla powiadomień ASN. |
 | Zarządzanie magazynem | Umieść jednostki mieszane | Umożliwia systemowi umieszczanie elementów w lokalizacjach, które zawierają jednostki mieszane (takie jak pudełka i skrzynki). Dla każdego wiersza szablonu umieszczania ta funkcja umożliwia wybór, czy wiersz powinien umieścić pozycje w lokalizacjach z jednostkami mieszanymi, czy pojedynczymi. |
 | Zarządzanie magazynem | Użyj szybszego interfejsu API do zamykania/ponownego otwierania kontenerów na stacji pakowania | Gdy ta funkcja w wersji zapoznawczej jest włączona, transakcje magazynowe związane z kontenerami są tworzone przy użyciu nowego uproszczonego procesu, który poprawia wydajność zamykania lub ponownego otwierania kontenerów podczas ręcznego przetwarzania stacji pakowania. |

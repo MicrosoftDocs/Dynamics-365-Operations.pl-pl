@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344065"
 ---
 # <a name="one-voucher"></a>Pojedynczy załącznik
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Co to jest „pojedynczy załącznik”?
@@ -81,7 +82,7 @@ Na podstawie rozmów z klientami sporządziliśmy listę scenariuszy, w których
 
 Poniższe scenariusze można realizować tylko przy użyciu funkcjonalności pojedynczego załącznika. Jeśli organizacja stosuje którykolwiek z tych scenariuszy, należy włączyć możliwość wprowadzania wielu transakcji w jednym załączniku, zmieniając wartość ustawienia **Zezwalaj na wiele transakcji w jednym załączniku** na stronie **Parametry księgi głównej**. Opisane luki funkcjonalne zostaną uzupełnione za pomocą innych funkcji zawartych w późniejszych wydaniach.
 
-> [!Note]
+> [!NOTE]
 > [Dla każdego z poniższych scenariuszy pole **Zezwalaj na wiele transakcji w ramach jednego załącznika** musi mieć ustawioną wartość tak w skróconej karcie **Ogólne** na stronie **Parametry księgi głównej**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Księgowanie płatności dla dostawców lub od odbiorców w postaci zbiorczej na koncie bankowym
@@ -115,15 +116,7 @@ W tym scenariuszu odbiorcy w pojedynczym załączniku są tym samym odbiorcą, p
 Jeśli zadanie okresowe Zwrot nadpłaty zostanie uruchomione z poziomu modułu Rozrachunki z odbiorcami, utworzy transakcję przeniesienia salda od odbiorcy do dostawcy. W tym scenariuszu trzeba użyć funkcji pojedynczego załącznika, aby zwrócić pieniądze odbiorcy.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Obsługa środków trwałych: amortyzacja wyrównująca, rozbicie środka trwałego, obliczania amortyzacji przy likwidacji
-Następujące transakcje środków trwałych również tworzą wiele transakcji w jednym załączniku:
-
-- Nabycie dodatkowego składnika aktywów i efekcie obliczenie amortyzacji „wyrównującej”.
-- Rozbicie środka trwałego.
-- Włączenie parametru umożliwiającego obliczenie amortyzacji przy likwidacji, a następnie zlikwidowanie składnika aktywów.
-- Data rozpoczęcia eksploatacji składnika aktywów jest wcześniejsza niż data nabycia. Z tego względu została zaksięgowana korekta amortyzacji.
-
-> [!Note]
-> Podczas wprowadzania transakcji należy się upewnić, że wszystkie transakcje mają zastosowanie do tego samego środka trwałego. Załącznik nie zostanie zaksięgowany, jeśli zawiera więcej niż jeden środek trwały, nawet jeśli pole **Nowy załącznik** ma wartość Jeden załączniki na stronie **Nazwy arkuszy** w Księdze głównej. Jeśli w załączniku zostanie uwzględnionych więcej niż jeden środek trwały, wyświetli się wiadomość **Zostanie wyświetlona tylko jedna transakcja środków trwałych dla każdego załącznika** i zaksięgowanie załącznika nie będzie możliwe.  
+W wersjach 10.0.21 i nowszych transakcje środków trwałych służące do amortyzacji wyrównującej, podziału środka trwałego i obliczania amortyzacji z tytułu likwidacji środka trwałego będą tworzone przy użyciu różnych numerów załączników.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Weksle i skrypty dłużne
 Weksle i skrypty dłużne wymagają używania pojedynczego załącznika, ponieważ transakcja powoduje przeniesienie salda odbiorcy lub dostawcy z jednego konta księgowego w module Rozrachunki z odbiorcami/Rozrachunki z dostawcami do innego konta na podstawie stanu płatności.

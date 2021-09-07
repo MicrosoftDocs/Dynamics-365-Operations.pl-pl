@@ -2,7 +2,7 @@
 title: Nawigacja z wyszukiwaniem
 description: W tym temacie wyjaśniono, jak za pomocą funkcji wyszukiwania nawigować między stronami.
 author: aneesmsft
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82c7bf17eaf0276c448223182b4268a50addb37f1ff115fec0223bc3313905e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30b56287520bb3536b250a886e74e6cbe30b412
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749611"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344405"
 ---
 # <a name="navigation-search"></a>Nawigacja z wyszukiwaniem
 
@@ -34,7 +34,7 @@ Aby użyć tej funkcji, kliknij ikonę **wyszukiwania**, aby wyświetlić pole *
 > [!NOTE]
 > **Pole wyszukiwania** ułatwia znajdowanie i przechodzenie do stron. Nie pomaga w wyszukiwaniu konkretnych danych ani akcji.
 
-[![pole wyszukiwania.](media/navigation-search.png "Pole wyszukiwania")
+![pole wyszukiwania.](media/navigation-search.png "Pole wyszukiwania")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Szybkie przechodzenie do określonej strony
 

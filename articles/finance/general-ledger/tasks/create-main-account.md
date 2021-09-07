@@ -1,6 +1,6 @@
 ---
 title: Tworzenie konta głównego
-description: To zadanie prowadzi przez proces dodawania konta głównego do istniejącego planu kont.
+description: W tej procedurze omówiono sposób dodawania konta głównego do istniejącego planu kont.
 author: aprilolson
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66e248d029063d4a465ad789e5eb193706b8a2351bf659306050c7ac7d1c950d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729637"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394643"
 ---
 # <a name="create-a-main-account"></a>Tworzenie konta głównego
 
 [!include [banner](../../includes/banner.md)]
 
-To zadanie prowadzi przez proces dodawania konta głównego do istniejącego planu kont. To nagranie wykorzystuje firmę demonstracyjną USMF.  
+W tej procedurze omówiono sposób dodawania konta głównego do istniejącego planu kont. To nagranie wykorzystuje firmę demonstracyjną USMF.  
 
 1. Wybierz kolejno **Okienko nawigacji > Moduły > Księga główna > Plan kont > Konta > Konta główne**.
 2. Kliknij przycisk **Nowy**.

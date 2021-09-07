@@ -2,7 +2,7 @@
 title: Zapisz możliwe do odzyskania numery certyfikatów TDS
 description: W tym temacie wyjaśniono, jak używać strony Certyfikaty podlegające zwrotowi do rejestracji numerów certyfikatów i dat dla certyfikatów potrącanych z podatku w źródle (TDS), które są odbierane dla określonego dostawcy, odbiorcy lub księgi.
 author: kailiang
-mms.date: 02/12/2021
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fae748123a47650075150fe0c37d11b56c06afe7f5258fc4e31d4ede0a478051
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc92a1321e6b2fe44bf7967c2aa1ad21dc353a03
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781182"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402455"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>Zapisz możliwe do odzyskania numery certyfikatów TDS
 

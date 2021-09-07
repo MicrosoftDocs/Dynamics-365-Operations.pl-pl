@@ -2,19 +2,19 @@
 title: Książka adresowa strony i globalna książka adresowa
 description: W tym temacie opisano funkcje aplikacji Party globalna książka adresowa funkcji podwójnego zapisu.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729783"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386692"
 ---
 # <a name="party-and-global-address-book"></a>Książka adresowa strony i globalna książka adresowa
 
@@ -139,7 +139,10 @@ Siatka zawiera następujące kolumny:
 
 Przycisk **Nowy adres elektroniczny** nad siatką pozwala utworzyć dowolną liczbę adresów elektronicznych.
 
-Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach wszystkie pola adresu pocztowego i elektronicznego zostaną usunięte z innych kart (na przykład kart **Podsumowanie** i **Szczegóły**).
+Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach wszystkie pola adresu pocztowego i elektronicznego zostaną usunięte z innych kart (na przykład kart **Podsumowanie** i **Szczegóły**). Szczegóły kontaktu wyświetlane na karcie **Szczegóły** są tylko kopiami do odczytu głównego adresu elektronicznego, jak podstawowy numer telefonu, podstawowy adres e-mail, podstawowy telefon, podstawowy faks i podstawowe konto Twitter. Podczas procesu kwalifikacji potencjalnego klienta można podać numer telefonu służbowego i numer telefonu komórkowego. Numer telefonu służbowego jest traktowany jako podstawowy, jeśli **IsMobile=No**, a numer telefonu komórkowego jest traktowany jako pomocniczy, jeśli **IsMobile=Yes**.
+
+> [!TIP]
+> Do zarządzania adresami pocztowymi i elektronicznymi służą karty **Adresy** i **Adresy elektroniczne** na formularzach **Konto** i **Kontakt**. Dzięki temu dane adresowe będą synchronizowane z aplikacjami Finance and Operations.
 
 ## <a name="setup"></a>Konfiguracja
 
@@ -249,13 +252,11 @@ Adresy elektroniczne są dostępne tylko w tej siatce. W przyszłych wersjach ws
     [Nagłówki zamówień sprzedaży CDS](mapping-reference.md#217) | salesorders
     [Nagłówki faktur sprzedaży wer. 2](mapping-reference.md#118) | faktury
 
-> [!Note]
+> [!NOTE]
 > Mapa `CDS Contacts V2 (contacts)` jest mapą zatrzymaną w kroku 1. Podczas próby uruchomienia innych map te 2 mapy mogą pojawiać się na liście zależnych. Nie uruchamiaj tych map.
-
-> [!Note]
+>
 > Jeśli zainstalowano rozwiązanie strony i globalnej książki adresowej, musisz wyłączyć wtyczkę o nazwie `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Jeśli odinstalujesz rozwiązanie strony i globalnej książki adresowej, musisz ponownie włączyć tę wtyczkę.
-
-> [!Note]
+>
 > Pole `msdyn_*partynumber` (jednowierszowe pole tekstowe) zawarte w tabelach **Konto**, **Osoba kontaktowa** i **Dostawca** w przyszłości zostanie wycofane z użytku. Nazwa etykiety ma prefiks **(przestarzały)**, aby to zaznaczyć. Zamiast tego użyj pola **msdyn_partyid**. To pole jest polem wyszukiwania tabeli **msdyn_party**.
 
 > Nazwa tabeli | Stare pole | Nowe pole
@@ -296,7 +297,6 @@ Aby uzyskać więcej informacji, zobacz [Odniesienie do mapowania z podwójnym z
 
 + W aplikacjach Finance and Operations podczas tworzenia odbiorcy wraz z adresem i zapisywania go adres może nie być synchronizowany z tabelą **Adres**. Jest to spowodowane problemem z harmonogramem platformy podwójnego zapisu. Aby obejść ten problem należy najpierw utworzyć odbiorcę, a następnie go zapisać. Następnie dodaj adres.
 + W aplikacjach Finance and Operations, gdy rekord odbiorcy ma adres podstawowy i tworzysz nowy kontakt dla tego odbiorcy, rekord osoby kontaktowej dziedziczy adres podstawowy ze skojarzonego rekordu odbiorcy. Dzieje się tak również w przypadku osoby kontaktowej dostawcy. Dataverse obecnie nie obsługuje tego działania. Jeśli jest włączona funkcja podwójnego zapisu, osoby kontaktowe odbiorcy dziedziczone z adresu podstawowego z aplikacji Finance and Operations są synchronizowane z Dataverse razem ze swoim adresem.
-+ Adresy elektroniczne z tabeli `msdyn_partyelectronicaddress` nie są wstawiane do pól adresu elektronicznego w tabelach **Konto** i **Osoba kontaktowa**. Zamierzamy rozwiązać ten problem w przyrostowej wersji. Istniejące dane w polach adresu elektronicznego w tabelach **Konto** i **osoba kontaktowa** nie zostaną zastąpione.
 + Adresy elektroniczne ustawione na kartach adresu elektronicznego formularzy **Konto**, **osoba kontaktowa** i **dostawca** nie pochodzą z tabeli `msdyn_partyelectronicaddress`. Ta informacja nie przepływa do skojarzonych z nim transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu. Zamierzamy rozwiązać ten problem w przyrostowej wersji. Istniejące dane w polach adresu elektronicznego konta i rekordów kontaktów będą nadal działać dla transakcji, takich jak zamówienie sprzedaży, oferta i zamówienie zakupu.
 + W aplikacjach Finance and Operations możesz utworzyć rekord osoby kontaktowej za pomocą formularza **Dodaj osobę kontaktową**. Podczas próby utworzenia nowej osoby kontaktowej z formularza **Wyświetl osobę kontaktową** akcja nie powiedzie się. Jest to znany problem.
 

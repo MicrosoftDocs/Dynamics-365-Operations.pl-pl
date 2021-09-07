@@ -1,8 +1,8 @@
 ---
 title: Generuj raporty Affordable Care Act w zarządzaniu świadczeniami
-description: W tym temacie opisano, w jaki sposób zarządzanie świadczeniami pomaga w śledzeniu informacji, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA).
-author: andreabichsel
-ms.date: 12/28/2020
+description: W tym temacie opisano, w jaki sposób zarządzanie świadczeniami śledzi informacje, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA).
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,21 +11,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: d681514f53dbaf4aafce33722d0c1837c3d270407c19d629c3383ff1a2472d67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 99ac67795cd3f587e54a84361dd4744b79b4dbbd
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727072"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416261"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generowanie raportów ACA w zarządzaniu świadczeniami
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-W jaki sposób zarządzanie świadczeniami pomaga w śledzeniu informacji, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA). Podobnie jak funkcja raportowania ACA w starym obszarze roboczym **Świadczenia**, ta funkcja dotyczy wyłącznie firm w Stanach Zjednoczonych.
+W jaki sposób zarządzanie świadczeniami śledzi informacje, które są zgłaszane na formularzu 1095-B i formularzu 1095-C dotyczącym mandatu pracodawcy na podstawie ustawy o przystępnej opiece (ACA). Podobnie jak funkcja raportowania ACA w starym obszarze roboczym **Świadczenia**, ta funkcja dotyczy wyłącznie firm w Stanach Zjednoczonych.
 
 Aby korzystać z tej funkcji, należy najpierw włączyć **Zarządzanie zaawansowanymi świadczeniami**. Aby uzyskać więcej informacji, w tym ważne informacje dotyczące zarządzania świadczeniami, zobacz temat [Włączanie lub wyłączanie funkcji zarządzania świadczeniami](hr-admin-manage-features.md#enable-or-disable-benefits-management).
 
@@ -145,7 +145,7 @@ Formularze 1095-B i 1095-C ACA można również wygenerować i rozesłać je odn
 2. W razie potrzeby zmień parametry i wybierz przycisk **OK**.
 
     > [!NOTE]
-    > W wypadku drukowania formularzy 1095-C dla więcej niż 500 pracowników otrzymasz więcej niż jeden plik PDF. Zaleca się zwiększenie wartości pola **Maksymalny rozmiar pliku w megabajtach** na stronie **Parametry zarządzania dokumentami** do **150**. (Aby szybko otworzyć tę stronę, można użyć pola wyszukiwania na pasku nawigacji.)
+    > W wypadku drukowania formularzy 1095-C dla więcej niż 500 pracowników otrzymasz więcej niż jeden plik PDF. Zaleca się zwiększenie wartości pola **Maksymalny rozmiar pliku w megabajtach** na stronie **Parametry zarządzania dokumentami** do **150**. (Aby szybko otworzyć tę stronę, użyj pola wyszukiwania na pasku nawigacji.)
     >
     > ![Zmienianie maksymalnego rozmiaru pliku.](./media/hr-benefits-management-aca-maximum-file-size.png)
 

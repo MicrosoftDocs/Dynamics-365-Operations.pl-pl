@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 958c7a8853e5ef0d7fb211225796d7808e4e7ae1afaf861cc6746157225c0dbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77e0a0e0eb47c331b2b219dc523ecd2c706a4638
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345306"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące uruchomienia produkcji dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -44,7 +44,7 @@ W tym temacie opisano, jak działa obciążenie pracą nad wykonywaniem produkcj
 
 Na poniższej ilustracji przedstawiono cykl produkcyjny podzielony na trzy etapy: *Planowanie*, *wykonywanie* i *finalizowanie*.
 
-[![Fazy wykonania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png „Fazy wykonywania produkcji w przypadku korzystania z jednego środowiska”.](media/mes-phases-large.png)
+[![Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska](media/mes-phases.png "Fazy uruchamiania produkcji w przypadku korzystania z jednego środowiska.")](media/mes-phases-large.png)
 
 _Faza planu_ obejmuje definicje produktów, planowanie, tworzenie i planowanie zamówień oraz zwalnianie. Krok wydania wskazuje przejście z fazy _planu_ do fazy _wykonania_. Po zwolnieniu zlecenia produkcyjnego zadania zlecenia produkcyjnego będą widoczne w oddziale produkcyjnym i gotowe do wykonania.
 
@@ -54,7 +54,7 @@ Jeśli zadanie produkcji jest oznaczone jako ukończone, następuje przejście z
 
 W poniższej ilustracji pokazano, kiedy są używane jednostki skalowania, _faza wykonania_ jest dzielona jako oddzielne obciążenie pracą.
 
-[![Fazy wykonania produkcji w przypadku korzystania z jednostek skalowania](media/mes-phases-workloads.png „Fazy produkcji w przypadku korzystania z jednostek skalowania”.](media/mes-phases-workloads-large.png)
+[![Fazy uruchamiania produkcji podczas używania jednostek miary](media/mes-phases-workloads.png "Fazy uruchamiania produkcji podczas używania jednostek miary.")](media/mes-phases-workloads-large.png)
 
 Obecnie model pochodzi z instalacji z jednym wystąpieniem do modelu opartego na centrum i jednostkach skali. Fazy _Planowanie_ i _Finalizacja_ są wykonywane jako operacje zaplecza w centrali, a obciążenie pracą nad produkcją jest wykonywane na jednostkach skali. Dane są przesyłane asynchronicznie między jednostkami centrum i skali.
 

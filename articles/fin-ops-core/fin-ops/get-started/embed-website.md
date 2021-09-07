@@ -2,7 +2,7 @@
 title: Osadzanie aplikacji innych firm
 description: W tym temacie opisano sposób osadzania aplikacji innych firm w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737806"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345417"
 ---
 # <a name="embed-third-party-apps"></a>Osadzanie aplikacji innych firm
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Wielu odbiorców używa wielu aplikacji do prowadzenia działalności gospodarczej. Niektóre z tych aplikacji to aplikacje sieci web innych firm, które działają w połączeniu z aplikacjami Finance and Operations. Aby zapewnić bezproblemowe korzystanie z aplikacji, można za pomocą funkcji **Aplikacje dla całej strony (wersja zapoznawcza)** osadzać aplikacje innych firm bezpośrednio w aplikacjach Finance and Operations (pod warunkiem że aplikacje innych firm pozwalają na osadzanie ich w tej aplikacji). Dzięki temu użytkownicy będą mieli dostęp do wymaganych przez nich witryn internetowych i aplikacji bez konieczności przełączania kart lub okien.
+Wielu odbiorców używa wielu aplikacji do prowadzenia działalności gospodarczej. Niektóre z tych aplikacji to aplikacje sieci web innych firm, które działają w połączeniu z aplikacjami Finance and Operations. Aby zapewnić bezproblemowe korzystanie z aplikacji, można za pomocą funkcji **Aplikacje dla całej strony** osadzać aplikacje innych firm bezpośrednio w aplikacjach Finance and Operations (pod warunkiem że aplikacje innych firm pozwalają na osadzanie ich w tej aplikacji). Dzięki temu użytkownicy będą mieli dostęp do wymaganych przez nich witryn internetowych i aplikacji bez konieczności przełączania kart lub okien.
 
-Aby można było osadzać aplikacje innych firm w produkcie, należy włączyć funkcję **Aplikacje dla całej strony (wersja zapoznawcza)** w module Zarządzanie funkcjami. Następnie można użyć jednej z poniższych metod, aby osadzić aplikację lub witrynę internetową innej firmy. Te metody są analogiczne do metod używanych do osadzania aplikacji kanwy z Microsoft Power Apps w aplikacjach Finance and Operations.
+Aby można było osadzać aplikacje innych firm w produkcie, należy włączyć funkcję **Aplikacje dla całej strony** w module Zarządzanie funkcjami. Następnie można użyć jednej z poniższych metod, aby osadzić aplikację lub witrynę internetową innej firmy. Te metody są analogiczne do metod używanych do osadzania aplikacji kanwy z Microsoft Power Apps w aplikacjach Finance and Operations.
 
 - Osadź aplikację lub witrynę internetową na istniejącej stronie jako nową kartę (karta przestawna, karta skrócona, blok albo sekcja obszaru roboczego).
 - Utwórz nowe, środowisko na pełnej stronie dla aplikacji lub witryny internetowej z pulpitu nawigacyjnego.
@@ -64,7 +64,7 @@ Tej procedury należy użyć w celu uzupełnienia istniejącej strony w systemie
 Tej procedury należy użyć, jeśli aplikacja, którą chcesz osadzić, nie jest powiązana z istniejącą stroną lub chcesz mieć środowisko na pełnej stronie dla aplikacji w obrębie aplikacji Finance and Operations.
 
 1. Otwórz pulpit nawigacyjny.
-2. Wybierz i przytrzymaj stronę (lub kliknij ją prawym przyciskiem myszy), wybierz opcję **Personalizuj**, a następnie wybierz polecenie **Dodaj stronę**.
+2. Wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) na pulpicie nawigacyjnym, wybierz opcję **Personalizuj**, a następnie wybierz polecenie **Dodaj stronę**.
 3. W okienku **Dodaj stronę** wybierz opcję **Witryna internetowa**.
 4. Konfigurowanie osadzonej aplikacji:
 
@@ -82,9 +82,9 @@ Tej procedury należy użyć, jeśli aplikacja, którą chcesz osadzić, nie jes
 
 Po osadzeniu aplikacji za pomocą jednej z metod opisanych w poprzednich sekcjach można udostępnić widok innym użytkownikom w systemie. Aby udostępnić osadzoną aplikację, należy użyć jednej z następujących metod:
 
-- **Publikowanie widoku (zalecane):** Jeśli aplikacja osadzona została zapisana w widoku, zalecany i preferowany sposób jej udostępniania to publikowanie tego widoku użytkownikom, którzy mają odpowiednie role zabezpieczeń. Wtedy wszyscy użytkownicy, którzy mają role zabezpieczeń, które są ukierunkowane na widok opublikowany, będą widzieli aplikację w aplikacjach Finance and Operations. Aby uzyskać więcej informacji dotyczących sposobu publikowania widoku, zobacz temat [Publikowanie widoków](saved-views.md#publishing-views).
+- **Publikowanie widoku (zalecane):** Jeśli aplikacja osadzona została zapisana w widoku, zalecany i preferowany sposób jej udostępniania to publikowanie tego widoku użytkownikom, którzy mają odpowiednie role zabezpieczeń w docelowych firmach. W takim przypadku tylko żądani użytkownicy zobaczą osadzoną aplikację na tej stronie. Aby uzyskać więcej informacji dotyczących sposobu publikowania widoku, zobacz temat [Publikowanie widoków](saved-views.md#publishing-views).
 
-    Możesz również opublikować aplikację, która została osadzona jako środowisko na całej stronie, z pulpitu nawigacyjnego. Na pulpicie nawigacyjnym wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) kafelek skojarzony z aplikacją, wybierz opcję **Personalizuj**, a następnie wybierz pozycję **Publikuj stronę**. Obecnie można publikować tylko dla ról zabezpieczeń. Jednak możliwość publikowania dla osób prawnych zostanie dodana, zanim funkcja stanie się ogólnie dostępna.
+    Możesz również opublikować aplikację, która została osadzona jako środowisko na całej stronie, z pulpitu nawigacyjnego. Na pulpicie nawigacyjnym wybierz i przytrzymaj (lub kliknij prawym przyciskiem myszy) kafelek skojarzony z aplikacją, wybierz opcję **Personalizuj**, a następnie wybierz pozycję **Publikuj stronę**. Jest wyświetlane środowisko przypominające środowisko *Publikowanie widoków* i możliwe jest wybranie ról zabezpieczeń, dla których zostanie ono opublikowane. W wersji 10.0.21 i nowszych, jeśli jest włączona funkcja **Usprawniona obsługa zapisanych widoków dla firmy** można także opublikować aplikację dla żądanych firm.
 
 - **Kopiowanie personalizacji:** dla stron, które nie obsługują widoków (na przykład okien dialogowych lub obszarów roboczych) lub w przypadku środowisk aplikacji dla całej strony można skopiować tę personalizację odpowiednim użytkownikom. Aby uzyskać więcej informacji, zobacz [Udostępnianie personalizacji](personalize-user-experience.md#sharing-personalizations).
 

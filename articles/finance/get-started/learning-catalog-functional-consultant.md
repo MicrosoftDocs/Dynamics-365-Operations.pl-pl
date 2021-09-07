@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763101"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402380"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Katalog szkoleń dla konsultantów funkcjonalnych Dynamics 365 Finance
 
@@ -34,6 +34,7 @@ W przypadku konsultantów funkcjonalnych badanie analizy zadań wykazało, że w
 | [Zapoznaj się z biznesową wartością Microsoft Dynamics 365 i Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Czy chcesz poznać aplikacje biznesowe? Być może nie wiadomo, gdzie zacząć z Microsoft Dynamics 365 i aplikacjami Power Platform? Dowiedz się, jak możliwości aplikacji biznesowych umożliwiają przekształcanie firmy. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 7 godzin |
 | [Dynamics 365 i Power Platform Fundamentals](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Czy chcesz poznać aplikacje biznesowe? Rozpocznij od tej ścieżki nauki, aby zobaczyć, jak są używane aplikacje Dynamics 365. Informacje o pojęciach chmur, Power Platform oraz sposobach rozpoczynania pracy z aplikacjami Dynamics 365. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 5.5 godzin |
 | [Rozpoczęcie korzystania z aplikacji Finance and Operations](/learn/paths/get-started-finance-operations/) | Dowiedz się, jak z pomocą aplikacji Finance and Operations w firmach można zarządzać globalnymi systemami finansowymi, operacyjnymi procesami biznesowymi i wydajnymi łańcuchami dostaw, aby umożliwić osobom wykonywanie szybkich, świadomych decyzji. Jako pierwszy etap kariery zawodowej pracy z aplikacjami Finance and Operations, musisz zapoznać się z jego funkcjami, niezależnie od żądanej roli użytkownika. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
+| [Rozpoczęcie korzystania z Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Dzięki Dynamics 365 Intelligent Order Management odbiorcy mogą zarządzać aranżacją zamówień aż do ich realizacji. Te funkcje umożliwiają organizacjom aranżację przepływów zamówień na różnych platformach i aplikacjach. | Bezpłatny, samodzielnie realizowany moduł nauki online | 30 minut |
 | [Zanim kupisz](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Przeglądnij wskazówki krok po kroku, czy nadal oceniasz Finance and Operations, czy jesteś gotowy na zakup. | Dokumentacja | |
 | [Plan wydań](/dynamics365/release-plans/) | Dowiedz się więcej o najnowszych możliwościach i ulepszeniach w Dynamics 365 | Dokumentacja | |
 
@@ -41,6 +42,7 @@ W przypadku konsultantów funkcjonalnych badanie analizy zadań wykazało, że w
 
 | Zawartość  | opis | Format  | Długość    |
 |----------|-------------|---------|-----------|
+| [Korzystanie z rozwiązań Success by Design for Dynamics 365](/learn/paths/use-success-design/) | Rozwiązanie FastTrack for Dynamics 365 zostało zaprojektowane, aby pomagać klientom i partnerom w pomyślnym wdrażaniu rozwiązań rozwiązań Dynamics 365. W celu świadczenia tej usługi architekci rozwiązań powinni posługiwać się strategią Success by Design. W tej ścieżce szkoleniowej omówiono założenia strategii Success by Design. | Bezpłatny, samodzielnie realizowany moduł nauki online | 12 godzin |
 | [Korzystanie z usług Lifecycle Services (usługi LCS) do projektowania i planowania implementacji aplikacji Finance and Operations](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | Usługi Lifecycle Services to wspólne obszary robocze, których klienci i ich partnerzy używają do zarządzania projektami aplikacji Finance and Operations z transakcji przed sprzedażą w fazie implementacji, a wreszcie do środowiska produkcyjnego. Zawiera listy kontrolne i narzędzia ułatwiające zarządzanie projektem, w tym metody wstępnej kompilacji, które pomagają w implementacji i regularnie aktualizowanych usługach. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 2 godzin |
 | [Konfigurowanie organizacji w aplikacjach Finance and Operations](/learn/paths/configure-your-organization-finance-ops/) | Jako konsultant funkcjonalny, który współpracuje z aplikacjami Finance and Operations, należy zrozumieć, jak skonfigurować organizację dla klienta. Aby zrozumieć sposób konfigurowania organizacji, w tej ścieżce nauki przedstawiono między innymi sposób konfigurowania firm, implentacji ustawień zabezpieczeń, personalizowania interfejsu użytkownika dla użytkowników, projektowania i budowania aplikacji mobilnych, implementowania wspólnych integracji. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 12 godzin |
 | [Dokonaj migracji danych i rozpocząć eksploatację z aplikacjami Finance and Operations](/learn/paths/migrate-data-go-live-finance-operations/) | Jako konsultant funkcjonalny musisz zrozumieć informacje na temat przygotowywania danych odbiorców do migracji, pracy z zarządzaniem danymi i wykonywania testów akceptacji, aby aktywować z aplikacjami Finance and Operations. | Bezpłatna, samodzielnie realizowana ścieżka nauki online | 4 godzin |
@@ -102,6 +104,5 @@ W przypadku konsultantów funkcjonalnych badanie analizy zadań wykazało, że w
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, konsultant funkcjonalny funkcji finansowych](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Pakiet Microsoft Certified Dynamics 365 for Finance and Operations:, konsultanci działający w ramach działań finansowych — pozwalają ujednolicić globalne Finanse i operacje oraz zautomatyzować zadania i przepływy pracy, usprawniają zamawianie odbiorców, sprzedawanie, fakturowanie i raportowanie. | Certyfikat, koszty różnią się w zależności od regionu |
 | [Egzamin MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ten egzamin mierzy swoją zdolność do wykonywania następujących zadań technicznych: należy stosować typowe funkcje i narzędzia wdrożeniowe; konfigurowanie zabezpieczeń, procesów i opcji; przeprowadzanie migracji danych; i sprawdzić poprawność rozwiązania i jego obsługę. | Egzamin, koszty różnią się w zależności od regionu |
 | [Egzamin MB — 310: Microsoft Dynamics 365 for Finance and Operations, finanse](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Cykl życia rozpoczyna się od utworzenia zlecenia produkcyjnego, zamówienia partii lub kanban. | Egzamin, koszty różnią się w zależności od regionu |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
