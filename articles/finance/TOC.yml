@@ -6,6 +6,8 @@
           href: index.md
         - name: Rozpocznij
           items:
+            - name: Opis usługi
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Zanim kupisz
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Rejestracja w celu uzyskania subskrypcji w wersji zapoznawczej
@@ -72,6 +74,8 @@
                   items:
                     - name: Nowości i zmiany w rozwiązaniu Finance — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Finance w wersji 10.0.22 (listopad 2021)
+                      href: get-started/whats-new-changed-10-0-22.md
                     - name: Rozwiązanie Finance w wersji 10.0.21 (październik 2021)
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Rozwiązanie Finance w wersji 10.0.20 (sierpień 2021)
@@ -1168,8 +1172,12 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Brakujące salda otwarcia dla zamknięcia na koniec roku
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Jak ustawić bilansowanie wymiarów finansowych?
+                  href: general-ledger/set-up-balance-dimensions.md
                 - name: Otwieranie szablonów arkuszy finansowych w pakiecie Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Domyślne wymiary finansowe w arkuszach finansowych
+                  href: general-ledger/dimension-default-values.md
                 - name: Niepowodzenie księgowania arkusza z powodu niezbilansowania
                   href: general-ledger/posting-fail-imbalance.md
                 - name: Dlaczego nie mogę cofnąć tej transakcji?
@@ -1472,17 +1480,17 @@
               items:
                 - name: Omówienie usług globalizacji
                   href: localizations/globalization-services-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory Configuration Service
+                - name: Regulatory Configuration Service (RCS)
                   items:
-                    - name: Omówienie usługi Regulatory Configuration Service
+                    - name: Regulatory Configuration Service (RCS) — omówienie
                       href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Regulatory Configuration Service — funkcje globalizacji
+                    - name: Regulatory Configuration Service (RCS) — funkcje globalizacji
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
-                    - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service i przekazywanie ich do repozytorium globalnego
+                    - name: Tworzenie konfiguracji raportowania elektronicznego w usłudze Regulatory Configuration Service (RCS) i przekazywanie ich do repozytorium globalnego
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                    - name: Usługa Regulatory Configuration Service — usuwanie środowiska RCS
+                    - name: Usługa Regulatory Configuration Service (RCS) — usuwanie środowiska RCS
                       href: localizations/rcs-delete-environment.md
-                    - name: Usługa Regulatory Configuration Service — wycofanie magazynu usługi Lifecycle Services
+                    - name: Usługa Regulatory Configuration Service (RCS) — wycofanie magazynu usługi Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                     - name: Pobierz konfiguracje raportowania elektronicznego do Finance
                       items:
@@ -1550,6 +1558,8 @@
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Określenie
                       items:
+                        - name: Model danych obliczania podatku
+                          href: localizations/tax-calculation-data-model-overview.md
                         - name: Logika stosowania podatku i określania grupy podatków
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Obliczanie
@@ -1574,6 +1584,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: Lista sprzedaży do UE
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Szwecja — raportowanie
+                          items:
+                            - name: Deklaracja podatku VAT
+                              href: localizations/emea-swe-VAT-declaration-Sweden.md
                         - name: Szwajcaria — raportowanie
                           items:
                             - name: Deklaracja podatku VAT
@@ -2690,6 +2704,8 @@
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
                 - name: Intrastat — Włochy
                   href: localizations/emea-ita-intrastat.md
+                - name: Księgowanie przyjęć i wysyłek dla systemu Intrastat
+                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
                 - name: Opłaty dodatkowe na kilogram w deklaracji Intrastat
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Listy zamierzeń – fakturowanie typowych eksporterów
@@ -2982,6 +2998,8 @@
               items:
                 - name: Oman — omówienie
                   href: localizations/oman.md
+                - name: Deklaracja podatku VAT dla Omanu (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Holandia
               items:
                 - name: Holandia — omówienie
@@ -3366,6 +3384,10 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Raport płatności podatku dla Szwecji
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
+                - name: Deklaracja podatku VAT dla Szwecji
+                  href: localizations/emea-swe-VAT-declaration-Sweden.md
+                - name: Intrastat — Szwecja
+                  href: localizations/emea-swe-intrastat.md
             - name: Szwajcaria
               items:
                 - name: Szwajcaria — omówienie
@@ -3414,12 +3436,34 @@
                       href: localizations/tasks/purchase-order-reverse-charge-vat.md
                     - name: Tworzenie zamówienia sprzedaży zawierającego towary podlegające opłacie zwrotnej VAT
                       href: localizations/tasks/gb-00002-sales-order.md
-                    - name: Konfigurowanie grup podatkowych do opłaty zwrotnej VAT
+                    - name: Konfigurowanie grup podatkowych pozycji do opłaty zwrotnej VAT
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
                     - name: 'Konfigurowanie grup towarów z opłatą zwrotną VAT, reguł i parametrów'
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: Konfigurowanie grup podatkowych do opłaty zwrotnej VAT
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Zjednoczone Królestwo — raportowanie
+                  items:
+                    - name: Zamiana podatku na format cyfrowy (MTD) na potrzeby podatku VAT
+                      items:
+                        - name: Przesłanie zwrotu podatku VAT zmiany podatku na format cyfrowy (MTD) w Zjednoczonym Królestwie
+                          href: localizations/emea-gbr-mtd-vat-integration.md
+                        - name: Przygotowanie środowiska do współpracy z usługą internetową podatku VAT MTD w urzędzie HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                        - name: Autoryzacja środowiska Finance do współpracy z usługą internetową MTD w urzędzie HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: Testowanie współpracy za pomocą piaskownicy podatku VAT MTD
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: Przesyłanie zwrotu podatku VAT do usługi internetowej MTD w urzędzie HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                        - name: Lista kontrolna konfiguracji wiadomości elektronicznych dla podatku VAT MTD
+                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                        - name: Generowanie deklaracji podatku VAT w formacie papierowym (raport podatku VAT 100)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                        - name: Szczegóły ustawień podatku VAT dla deklaracji podatku VAT w Zjednoczonym Królestwie
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Pobieranie informacji o płatnościach i zobowiązaniach z tytułu podatku VAT z urzędu HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
                 - name: Statystyka raportu wskazówek dotyczących płatności
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Stany Zjednoczone
@@ -4147,6 +4191,30 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Importowanie konfiguracji (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory Configuration Service (RCS) — omówienie
+                      href: localizations/rcs-overview.md?toc=/dynamics365/finance/toc.json
+                    - name: Pobierz konfiguracje raportowania elektronicznego do Finance
+                      items:
+                        - name: Pobieranie konfiguracji z usługi RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Importowanie konfiguracji z RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Repozytorium globalne (GR)
+                      items:
+                        - name: Importowanie konfiguracji z GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importowanie zaktualizowanych wersji konfiguracji raportowania elektronicznego
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Rozszerzone filtrowanie w celu znalezienia konfiguracji w GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Przesyłanie konfiguracji do GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Udostępnianie konfiguracji w GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Wycofaj konfiguracje w repozytorium globalnym RCS
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Przewodniki Szybki start
               items:
                 - name: Dostosowanie formatu raportowania elektronicznego w celu wygenerowania niestandardowego dokumentu elektronicznego
@@ -4207,6 +4275,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurowanie źródeł danych WYSZUKIWANIA do używania parametrów specyficznych dla raportowania elektronicznego
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Używanie źródeł danych GROMADZENIA DANYCH w formatach raportowania elektronicznego
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Debugowanie źródeł danych
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie mapowania modeli
@@ -4275,6 +4345,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurowanie miejsc docelowych zależnych od akcji
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurowanie zależnych od rekordu miejsc docelowych raportowania elektronicznego zarządzania drukowaniem
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
                 - name: Ustawianie odwołania do formatu raportowania elektronicznego
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Automatyczne sprawdzanie poprawności wygenerowanych raportów
@@ -4323,6 +4395,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
                     - name: Aktualizacja Application Update 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
+                    - name: Aktualizacja Application Update 10.0.21
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
                     - name: Subskrybowanie zdarzenia w celu zażądania odpowiedzi z programu obsługi subskrypcji
@@ -4333,6 +4407,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
                 - name: Inicjowanie wartości źródła danych typu USER INPUT PARAMETER z kodu źródłowego
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
+                - name: 'Zmienianie kodu, aby użytkownicy mogli konfigurować i używać nazwanych miejsc docelowych raportowania elektronicznego'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Aplikacja mobilna
           items:
             - name: Aplikacja mobilna — strona główna
