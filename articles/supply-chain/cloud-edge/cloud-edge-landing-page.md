@@ -1,5 +1,5 @@
 ---
-title: Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
+title: Jednostki skalowania w dystrybuowanej topologii hybrydowej
 description: Ten temat przedstawia informacje na temat zarządzania jednostką skali chmury i urządzenia brzegowego przy produkcji i wykonywaniu zadań magazynowych.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780681"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471747"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Jednostki skalowania chmury i urządzenia brzegowego dla obciążeń pracą dotyczących produkcji i zarządzania magazynem
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Jednostki skalowania w dystrybuowanej topologii hybrydowej
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780681"
 >
 > Włączając jednostki skali chmury i krawędzi, należy pamiętać, że musisz potwierdzić, że pewne dane związane z konfiguracją i przetwarzaniem jednostek skali granicznej mogą być przechowywane w centrum danych znajdującym się w Stanach Zjednoczonych. Aby dowiedzieć się więcej o przetwarzaniu danych w chmurze i jednostek skali urządzenia brzegowego, zobacz sekcję [Przetwarzanie danych podczas zarządzania jednostkami skali](#data-processing-management) w dalszej części tego tematu.
 
-## <a name="core-value-proposition-for-scale-units"></a>Propozycja wartości podstawowej dla jednostek skali
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Propozycja wartości podstawowej dla dystrybuowanej topologii hybrydowej
 
-Firmy pracujące z produkcją i dystrybucją muszą mieć możliwość uruchamiania podstawowych procesów biznesowych 24/7, bez przerw i w skali. Jednostki skali chmury i urządzenia brzegowego umożliwiają firmom uruchamianie kluczowych procesów produkcyjnych i magazynowych, nawet w obliczu przerwanej łączności sieciowej lub opóźnienia.
+Firmy pracujące z produkcją i dystrybucją muszą mieć możliwość uruchamiania podstawowych procesów biznesowych 24/7, bez przerw i w skali. Dystrybuowana topologia hybrydowa umożliwia firmom uruchamianie kluczowych procesów produkcyjnych i magazynowych, nawet w obliczu przerwanej łączności sieciowej lub opóźnienia.
 
-Jednostki skali chmury i urządzenia brzegowego umożliwiają dystrybucję obciążenia pracą produkcyjną i wykonaniem magazynów w różnych środowiskach. Ta funkcja może ułatwić poprawę wydajności, zapobiegać przerwom w świadczeniu usług oraz maksymalizuje czas pracy. Jednostki skali są dostarczane za pośrednictwem następujących dodatków do subskrypcji Supply Chain Management:
+Dystrybuowana topologia hybrydowa wprowadza pojęcie *jednostek skalowania*, które umożliwiają rozkład obciążenia pracą produkcji i wykonywania w magazynie w różnych środowiskach. Ta funkcja może ułatwić poprawę wydajności, zapobiegać przerwom w świadczeniu usług oraz maksymalizuje czas pracy. Jednostki skali są dostarczane za pośrednictwem następujących dodatków do subskrypcji Supply Chain Management:
 
 - Dodatek jednostki skali w chmurze Dynamics 365 Supply Chain Management (*dostępne od kwietnia 2021*)
 - Dodatek jednostki skali na krawędzi w chmurze Dynamics 365 Supply Chain Management (*dostępne wkrótce*)

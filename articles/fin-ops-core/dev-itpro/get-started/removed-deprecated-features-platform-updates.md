@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774416"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463637"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -32,7 +32,29 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 
 Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Ogłoszenie o wycofaniu funkcji z użytku w maju 2021 r.
+## <a name="feature-deprecation-effective-august-2021"></a>Wycofanie funkcji z użytku w sierpniu 2021 r.
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Raporty SQL Microsoft Azure w usługach LifeCycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wycofujemy niektóre raporty SQL w usługach LCS. Nie będzie już potrzebne monitorowanie raportów, ponieważ ta funkcja została zastąpiona przez inne usługi. |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Raporty SQL: Bieżące jednostki DTU, Szczegóły bieżącej jednostki DTU, Pobierz szczegóły blokady, Lista bieżącego przewodnika planu, Pobierz listę identyfikatorów zapytania, Pobierz plan zapytania SQL dla danego identyfikatora planu, Pobierz plany i stan wykonywania zapytań, Pobierz konfigurację ograniczenia, Pobierz statystyki oczekiwania, Lista najdroższych zapytań |
+| **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
+| **Stan**                         | Wycofanie: Planowana data usunięcia w październiku 2021 roku. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Akcje SQL Azure w usłudze LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wycofujemy niektóre akcje SQL w usługach LCS.  |
+| **Zamieniona przez inną funkcję?**   | Nr |
+| **Powiązane obszary produktów**         | Akcje SQL: Tworzenie przewodnika planu, który wymusza identyfikator planu, Tworzenie przewodnika planu umożliwiającego dodawanie wskazówek dla tabeli, Usuwanie przewodnika planu, Wyłączanie/włączanie blokad stron i eskalacji blokad, Aktualizowanie statystyk w tabeli, Odbudowa indeksu, Tworzenie indeksu |
+| **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
+| **Stan**                         | Wycofanie: Planowana data usunięcia w październiku 2021 roku. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Wycofanie funkcji z użytku w maju 2021 r.
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Portal globalizacyjny w Lifecycle Services (LCS)
 

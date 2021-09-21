@@ -2,7 +2,7 @@
 title: Omówienie zarządzania zmianami inżynieryjnymi
 description: Ten temat zawiera omówienie zarządzania zmianami inżynieryjnymi, które pomaga w planowaniu i zarządzaniu wersjami produktów oraz zarządzaniu cyklami życia produktu i zmianami inżynieryjnymi.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714963"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467405"
 ---
 # <a name="engineering-change-management-overview"></a>Omówienie zarządzania zmianami inżynieryjnymi
 
@@ -43,9 +43,11 @@ Zarządzanie zmianami inżynieryjnymi pomaga w planowaniu i zarządzaniu wersjam
 
 Poprzednie wideo ([Możliwości zarządzania zmianami w Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) znajduje się na [liście odtwarzania Finance and Operations](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) dostępnej na platformie YouTube.
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Włącz w systemie funkcje zarządzania zmianami technicznymi i wymiarowania wersji
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>Włącz funkcje zarządzania zmianami inżynieryjnymi w systemie
 
-Aby można było używać funkcji zarządzania zmianami inżynieryjnymi, należy włączyć zarówno funkcję *Zarządzania zmianami inżynieryjnymi*, jak i jej klucz konfiguracji. Jeśli chcesz również śledzić wymiar wersji produktów w transakcjach (opcjonalnie), musisz również włączyć funkcję *Wymiar wersji produktu* i jej klucz konfiguracji.
+Aby można było używać funkcji zarządzania zmianami inżynieryjnymi, należy włączyć zarówno funkcję *Zarządzania zmianami inżynieryjnymi*, jak i jej klucz konfiguracji. Jeśli chcesz również śledzić wymiar wersji produktów w transakcjach (opcjonalnie), musisz również włączyć zarówno funkcję *Wymiar wersji produktu*, jak i jej klucz konfiguracji. Po skonfigurowaniu tych wstępnych wymagań można włączyć dodatkowe opcjonalne funkcje zarządzania zmianami inżynieryjnych.
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>Włącz podstawowe funkcje zarządzania zmianami inżynieryjnymi w systemie
 
 Najpierw włącz funkcje, wykonując następujące kroki.
 
@@ -53,6 +55,8 @@ Najpierw włącz funkcje, wykonując następujące kroki.
 1. Sprawdź, czy są aktualizacje.
 1. Włącz funkcję o nazwie *Zarządzanie zmianami inżynieryjnymi*.
 1. Jeśli chcesz go użyć, włącz również funkcję o nazwie *Wersja wymiaru produktu*.
+
+### <a name="turn-on-the-required-configuration-keys"></a>Włączanie wymaganych kluczy konfiguracji
 
 Następnie włącz klucze konfiguracji, wykonując następujące kroki.
 
@@ -70,5 +74,18 @@ Następnie włącz klucze konfiguracji, wykonując następujące kroki.
 
 > [!IMPORTANT]
 > Począwszy od kwietnia 2022 roku klucze licencji do węzłów **Zarządzanie zmianami inżynieryjnych** i **Wymiar produktu — wersja** będą domyślnie włączone dla wszystkich nowych instalacji, ale w razie potrzeby będzie można je wyłączyć.
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>Włącz dodatkowe funkcje zarządzania zmianami inżynieryjnymi w systemie
+
+Po włączeniu podstawowych funkcji zarządzania zmianami inżynieryjnych i włączeniu kluczy konfiguracji do zarządzania funkcjami zostanie dodanych kilka dodatkowych i opcjonalnych funkcji zarządzania zmianami inżynieryjnych. Każda z tych funkcji jest wymieniona w module **Zarządzanie zmianami inżynieryjnymi**. W poniższej tabeli opisano poszczególne funkcje opcjonalne i linki do dalszych informacji.
+
+| Nazwa funkcji w zarządzaniu funkcjami | opis |
+|---|---|
+| Włącz zarządzanie zmianami w istniejących produktach | <p>Ta funkcja umożliwia konwertowanie istniejących produktów na produkty inżynieryjne, dzięki czemu można rozpocząć zarządzanie nimi za pomocą funkcji zarządzania zmianami inżynieryjnymi.</p><p>Aby uzyskać więcej informacji, zobacz [Włącz zarządzanie zmianami w istniejących produktach](change-management-existing-products.md).</p> |
+| Powiadomienia projektowe dla produkcji | <p>Po zmianie produktu w środowisku inżynieryjnym może być ważne powiadamianie o tych zmianach produkcji. Dzięki temu pracownicy produkcyjni mogą podjąć odpowiednie działania, takie jak podstawianie składników, zamiana list składowych (BOM) lub wymiana marszruty. Ta funkcja umożliwia powiadamianie produkcji o zmianach w tworzonych produktach.</p><p>Aby uzyskać więcej informacji, zobacz [Zarządzanie zmianami dotyczącymi produktów inżynieryjnych](engineering-change-management.md).</p> |
+| Poprawione dziedziczenie atrybutów dla zarządzania zmianami produkcyjnymi | <p>Upraszcza to zarządzanie atrybutami wyrobów gotowych lub pośrednich. Gdy ta funkcja jest włączona, łatwiej jest zidentyfikować wszystkie atrybuty należące do towaru i można wybrać atrybuty, które mają zostać przekazane z tego towaru do jego towaru nadrzędnego. Ta funkcja jest przydatna na przykład w przypadku, gdy jeden składnik gotowego produktu jest delikatny, toksyczny lub łatwopalny, ponieważ można łatwo zidentyfikować ten atrybut oznaczający składnik delikatny, toksyczny lub łatwopalny i propagować go do towaru gotowego.</p><p>Aby uzyskać więcej informacji, zobacz [Atrybuty inżynieryjne i wyszukiwanie atrybutów inżynieryjnych](engineering-attributes-and-search.md).</p> |
+| Kontrole gotowości produktu | <p>Ta funkcja pozwala również skonfigurować kontrole gotowości dla produktów standardowych (nie inżynierskich). Funkcji tej można użyć w celu sprawdzenia, czy każdy produkt jest w pełni zdefiniowany i czy wszystkie wymagane zasady zostały skonfigurowane przed jego użyciem w transakcjach. Wyłączenie tej funkcji po tym, jak przez jakiś czas była używana, spowoduje usunięcie wszystkich istniejących testów gotowości dla standardowych produktów.</p><p>Aby uzyskać więcej informacji, zobacz temat [Gotowość produktu](product-readiness.md).</p> |
+| Zarządzanie zmianami dotyczącymi formuł i ich substancji | <p>Funkcja ta umożliwia śledzenie zmian w składnikach formuły, produktach towarzyszących i produktach ubocznych.</p><p>Aby uzyskać więcej informacji, zobacz temat [Zarządzanie zmianami w formułach i ich składnikach](manage-formula-changes.md).</p> |
+| Generowanie wariantów produktów projektowych | <p>Ta funkcja umożliwia generowanie wariantów dla produktów inżynieryjnych na podstawie dostępnych wartości wymiarów.</p><p>Aby uzyskać więcej informacji, zobacz [Generowanie wariantów dla produktów inżynieryjnych](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

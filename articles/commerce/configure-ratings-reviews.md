@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fe40807338c32fbaff2df11975bbcb2d7fefeb842f5fd85d7421552556465178
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718763"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473556"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurowanie ocen i recenzji
 
 [!include [banner](includes/banner.md)]
 
 W tym temacie opisano sposób konfigurowania witryny e-Commerce w celu wyświetlania ocen odbiorców i recenzji w Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Omówienie
 
 Oceny i Recenzje w witrynach e-Commerce umożliwiają klientom zapoznanie się z produktami przed podjęciem decyzji o zakupie, kierując ich uwagę na te produkty. W przypadku witryn e-Commerce, oceny i recenzje są również mechanizmami zbierania opinii klientów dotyczących produktów. 
 

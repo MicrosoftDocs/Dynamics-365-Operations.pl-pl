@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae4e25874488890f0eeb601038e308fdc7e89485b5f6a8cf5d5fab713107dfcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a4fd7c242fc2d857cb35f8ef8c08567c758b768
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753487"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463596"
 ---
 # <a name="reverse-journal-posting"></a>Odwróć księgowanie arkusza
 
@@ -28,13 +28,17 @@ ms.locfileid: "6753487"
 
 W tym temacie opisano możliwości Microsoft Dynamics 365 Finance, które pozwalają wycofać cały arkusz lub wycofać jeden lub więcej załączników z listy transakcji załącznika bez względu na ich pochodzenie. 
 
+Aby można było skorzystać z dowolnej z funkcji opisanych w tym temacie, należy ją włączyć w systemie. Administratorzy mogą skorzystać z obszaru roboczego **Zarządzanie funkcjami**, aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. Ta funkcja jest wymieniona w następujący sposób:
+ - Moduł: Księga główna
+ - Nazwa funkcji: **Masowe wycofania wielu dokumentów**
+
 ## <a name="reversing-journals"></a>Wycofywanie arkuszy
 
 Wiersze arkusza można odwracać pojedynczo. W przypadku księgowania wstecznego arkusza można również wycofywać cały arkusz finansowy. Wycofywanie arkusza: 
 
-- Umożliwia otwarcie arkusza finansowego i przefiltrowanie arkuszy w zaksięgowanych arkuszach.
+- Przefiltruj według zaksięgowanych arkuszy i otwórz widok **Wiersze** w arkuszu.
 - Wybierz menu **Wycofaj** w górnej części strony.
-- Zostanie wyświetlona łączna liczba załączników i wierszy załączników oraz łączna kwota wycofywanych wierszy
+- Zostanie wyświetlona łączna liczba załączników i wierszy załączników oraz łączna kwota wycofywanych wierszy.
 - Wybierz opcję **Tak**, aby zastosować istniejące daty transakcji lub **Nie**, aby wprowadzić nową datę. W niektórych przypadkach okres oryginalnej transakcji może zostać zamknięty i konieczne jest wprowadzenie nowej daty transakcji dla wycofania.
 - Jeśli wybrano opcję **Nie**, wprowadź datę transakcji dla wycofania. 
 - Umożliwia wprowadzenie komentarza, który ma zostać dodany do transakcji wycofania.
@@ -52,7 +56,7 @@ Można także wycofać załączniki z **listy transakcji na załączniku** do ws
 
 Aby wycofać jeden lub więcej załączników: 
 
-- Wybierz menu **Wycofaj** w górnej części strony
+- Wybierz menu rozwijane **Wycofaj cały arkusz** w górnej części strony.
 - Zostanie wyświetlona łączna liczba załączników i wierszy załączników oraz łączna kwota wycofywanych wierszy.
 - Wybierz opcję **Tak**, aby zastosować istniejące daty transakcji lub **Nie**, aby wprowadzić nową datę. W niektórych przypadkach okres oryginalnej transakcji może zostać zamknięty i konieczne jest wprowadzenie nowej daty transakcji, aby ją wycofać.
 - Jeśli wybrano opcję **Nie**, wprowadź datę transakcji dla wycofania. 

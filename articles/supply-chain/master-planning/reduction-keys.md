@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736630"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474779"
 ---
 # <a name="forecast-reduction-keys"></a>Klucze redukcji prognozy
 
@@ -86,7 +86,18 @@ W tym przypadku uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagan
 
 ### <a name="transactions--reduction-key"></a>Transakcje — klucz redukcji
 
-Jeśli wybierzesz **Transakcje — klucz redukcji** zmniejsza wymagania dotyczące prognozy popytu według transakcji zachodzących w okresach czasu, które są definiowane według klucza redukcji.
+Jeśli ustawiono pole **Metoda używana do redukowania prognozowanego zapotrzebowania** na *Transakcje — klucz redukcji*, wymagania prognoz są redukowane o kwalifikowane transakcje popytu występujące w okresach określonych przez klucz redukcji.
+
+Zakwalifikowany popyt jest definiowany przez pole **Zmniejsz prognozę o** na stronie **Grupy zapotrzebowania**. Jeśli w polu **Zmniejsz prognozę o** zostanie ustawiona wartość *Zamówienia*, popyt kwalifikowany będzie dotyczyć tylko transakcji zamówień sprzedaży. Jeśli zostanie w nim ustawiona wartość *Wszystkie transakcje*, wszelkie transakcje magazynowe wydania innego niż międzyfirmowe będą traktowane jako popyt kwalifikowany. Jeśli międzyfirmowe zamówienia sprzedaży mają być uwzględniane jako zakwalifikowany popyt, ustaw opcję **Uwzględnij zamówienia międzyfirmowe** na *Tak*.
+
+Redukcja prognozy rozpoczyna się od pierwszego (najwcześniejszego) rekordu prognozy popytu w okresie klucza redukcji. Jeśli ilość kwalifikowanych transakcji magazynowych jest większa niż ilość wierszy prognozy popytu w tym samym okresie klucza redukcji, saldo ilości w transakcjach magazynowych zostanie użyte do zmniejszenia ilości prognozy popytu w poprzednim okresie (jeśli istnieje prognoza niewykorzystana).
+
+Jeśli w poprzednim okresie klucza redukcji nie pozostanie niezatwierdzona prognoza, saldo ilości transakcji magazynowych zostanie użyte do zmniejszenia prognozowanych ilości w następnym miesiącu (jeśli istnieje niewykorzystana prognoza).
+
+Wartość pola **Procent** w wierszach klucza redukcji nie jest używana, jeśli pole **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** ma wartość *Transakcje — klucz redukcji*. Do definiowania okresu klucza redukcji używane są tylko daty.
+
+> [!NOTE]
+> Wszystkie prognozy zaksięgowane dzisiaj lub z wcześniejszą datą będą ignorowane i nie będą używane do tworzenia zamówień planowanych. Jeśli na przykład prognoza popytu dla tego miesiąca zostanie wygenerowana 1 stycznia, a zostanie uruchomione planowanie główne z prognozowaniem popytu na 2 stycznia, w obliczeniu zostanie zignorowany wiersz prognozy popytu z datą 1 stycznia.
 
 #### <a name="example-transactions--reduction-key"></a>Przykład: Transakcje— klucz redukcji
 

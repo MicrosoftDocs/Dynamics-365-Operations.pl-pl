@@ -2,7 +2,7 @@
 title: Składniki administracyjne fakturowania elektronicznego
 description: Ten temat zawiera informacje o składnikach związanych z administrowaniem Fakturowaniem elektronicznym.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721733"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463888"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Składniki administracyjne fakturowania elektronicznego
 
@@ -31,14 +31,14 @@ Ten temat zawiera informacje o składnikach związanych z administrowaniem Faktu
 
 ## <a name="azure"></a>Azure
 
-Użyj Microsoft Azure, aby utworzyć wpisy tajne dla Key Vault i konta magazynu. Następnie użyj tej funkcji w konfiguracji funkcji Fakturowanie elektroniczne.
+Użyj Microsoft Azure, aby utworzyć wpisy tajne dla magazynu kluczy i skonfiguruj konto magazynu. Następnie użyj klucza i tokenu SAS konta magazynu w konfiguracji fakturowania elektronicznego.
 
 ## <a name="lifecycle-services"></a>Usługa Lifecycle Services
 
-Użyj Microsoft Dynamics Lifecycle Services (LCS), aby włączyć funkcję dla mikrousług dla projektu wdrożenia LCS.
+Użyj Microsoft Dynamics Lifecycle Services (LCS), aby włączyć dodatek fakturowania elektronicznego projektu wdrożenia LCS.
 
 > [!NOTE]
-> Instalacja mikrousługi w umacie LCS wymaga co najmniej maszyny wirtualnej warstwy 2. Aby uzyskać więcej informacji o planowaniu w środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Instalacja dodatku w LCS wymaga co najmniej **środowiska warstwy 2**. Aby uzyskać więcej informacji o planowaniu w środowiskach, należy zapoznać się z tematem [Planowanie środowiska](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Aby uzyskać więcej informacji na temat RCS, zobacz [Regulatory Configuration S
 
 Zanim będziesz mógł używać RCS do konfigurowania faktur elektronicznych, musisz skonfigurować RCS, aby umożliwić komunikację z funkcją Fakturowanie elektroniczne. Tę konfigurację można ukończyć na karcie **Fakturowanie elektroniczne** na stronie **Parametry raportowania elektronicznego**.
 
-#### <a name="service-endpoint"></a>Punkt końcowy usługi
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Punkt końcowy usługi
 
 Fakturowanie elektroniczne jest dostępne w kilku lokalizacjach geograficznych centrów danych platformy Azure. W poniższej tabeli przedstawiono dostępność według regionów.
 
-| Geografia centrum danych platformy Azure |
-|----------------------------|
-| Stany Zjednoczone              |
-| Europa                     |
-| Wielka Brytania             |
-| Azja                       |
+
+| Geografia platformy Datacenter Azure | Adres URI punktu końcowego usługi                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| Stany Zjednoczone              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Europa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Wielka Brytania             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Azja                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Środowiska usługi
 
-Środowiska usług to partycje logiczne utworzone w celu obsługi funkcji fakturowania elektronicznego w Fakturowaniu elektronicznym. Klucze tajne zabezpieczeń i certyfikaty cyfrowe oraz ład (czyli uprawnienia dostępu) należy skonfigurować na poziomie środowiska usługi.
+Środowiska usług to partycje logiczne utworzone w celu obsługi funkcji globalizacji w fakturowaniu elektronicznym. Klucze tajne zabezpieczeń i certyfikaty cyfrowe oraz ład (czyli uprawnienia dostępu) należy skonfigurować na poziomie środowiska usługi.
 
 Klienci mogą tworzyć dowolną liczbę środowisk usługowych. Wszystkie środowiska usług, które tworzy klient, są od siebie niezależne.
 
@@ -84,8 +85,8 @@ Klienci mogą tworzyć dowolną liczbę środowisk usługowych. Wszystkie środo
 
 Usługa Fakturowanie elektroniczne jest odpowiedzialna za przechowywanie wszystkich danych biznesowych w zasobach platformy Azure należących do Twojej firmy. Aby upewnić się, że usługa działa poprawnie i że wszystkie dane biznesowe, które są potrzebne i generowane przez Faktury elektroniczne, są dostępne tylko dla tego dodatku, musisz utworzyć dwa główne zasoby platformy Azure:
 
-- Konto magazynu systemu Azure (magazyn obiektów BLOB) do przechowywania faktur elektronicznych
-- Magazyn Azure Key Vault, w którym będą przechowywane certyfikaty i jednolity identyfikator zasobów (URI) konta magazynu
+- Konto magazynu platformy Azure (magazyn obiektów Blob), na którym będą przechowywane dokumenty elektroniczne, w tym faktury elektroniczne, wyniki przekształceń dokumentów i odpowiedzi z zewnętrznych usług internetowych.
+- Magazyn kluczy Azure, w którym będą przechowywane certyfikaty i jednolity identyfikator zasobów (URI) konta magazynu.
 
 
 Dedykowany magazyn Key Vault i konto magazynu klienta muszą być przydzielone specjalnie do użytku z Fakturowaniem elektronicznym. Aby uzyskać więcej informacji, przejrzyj temat [Utwórz konto magazynu Azure i Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -122,13 +123,13 @@ Aby umożliwić komunikację między rozwiązaniami Finance i Supply Chain Manag
 
 Punkt końcowy usługi to adres URL, w którym znajduje się Fakturowanie elektroniczne. Przed wystawieniem faktur elektronicznych należy skonfigurować punkt końcowy usługi w programie Finance i Supply Chain Management, aby umożliwić komunikację z usługą.
 
-Aby skonfigurować punkt końcowy usługi, przejdź do **Administrowanie organizacją \> Konfiguracja \> Parametr dokumentu elektronicznego**, a następnie na zakładce **Usługi przesyłania** w polu **Adres URL do fakturowania elektronicznego** wprowadź adres URL zgodnie z opisem w tabeli opisanej w sekcji **Punkt końcowy usługi**.
+Aby skonfigurować punkt końcowy usługi, przejdź do **Administrowanie organizacją \> Konfiguracja \> Parametr dokumentu elektronicznego**, a następnie na karcie **Fakturowanie elektroniczne** w polu **Adres URL punktu końcowego** wprowadź odpowiedni adres URL zgodnie z opisem sekcji [Punkt końcowy usługi](#svc-endpoint-uris) wcześniej w tym temacie.
 
 #### <a name="environments"></a>Środowiska
 
 Nazwa środowiska wprowadzona w Finance i Supply Chain Management odnosi się do nazwy środowiska utworzonego w RCS i opublikowanego w Fakturowaniu elektronicznym.
 
-Środowisko należy skonfigurować na karcie **Usługi przesyłania** na stronie **Parametrów dokumentu elektronicznego**, tak aby każde żądanie wystawienia faktury elektronicznej zawierało środowisko, w którym Fakturowanie elektroniczne może określić, która funkcja fakturowania elektronicznego musi przetworzyć żądanie.
+Środowisko musi być skonfigurowane na karcie **Fakturowanie elektroniczne** na stronie **Parametry dokumentu elektronicznego**. W ten sposób każde żądanie wystawienia faktur elektronicznych zawiera środowisko, w którym system fakturowania elektronicznego może ustalić, która funkcja fakturowania elektronicznego musi przetwarzać to żądanie.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

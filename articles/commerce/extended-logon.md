@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
 description: Ten temat omawia opcje konfigurowania rozszerzonego logowania do aplikacji Cloud POS i Retail Modern POS (MPOS).
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748553"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478678"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Konfigurowanie funkcjonalności logowania rozszerzonego w aplikacjach MPOS i Cloud POS
 
@@ -58,6 +58,8 @@ Domyślnie tylko menedżerowie mogą przypisywać pracownikom logowanie rozszerz
 Aby anulować przypisanie logowania rozszerzonego do pracownika, znajdź pracownika za pomocą operacji **Logowanie rozszerzone**. Wybierz pracownika, a następnie kliknij przycisk **Anuluj przypisanie**. Wszystkie poświadczenia logowania rozszerzonego przypisane do tego pracownika są usuwane.
 
 ## <a name="extending-extended-logon"></a>Rozszerzanie logowania rozszerzonego
+
+Logowanie rozszerzone zezwala wyłącznie na to, aby pięć istotnych znaków było unikatowym identyfikatorem po instalacji. Jeśli na przykład skonfigurujesz dwie karty o identyfikatorach „1234567” i „1234578”, obie karty będą traktowane jako „12345”. Rozszerzenie można utworzyć w celu obsługi większej liczby znaków. Aby uzyskać szczegółowe instrukcje, sprawdź temat [Rozszerzenie funkcji logowania rozszerzonego dla aplikacji MPOS i Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Usługę logowania można rozszerzyć o obsługę dodatkowych urządzeń do logowania rozszerzonego, takich jak skanery ręczne. Aby uzyskać więcej informacji, zapoznaj się z dokumentacją rozszerzania punktu sprzedaży.
 

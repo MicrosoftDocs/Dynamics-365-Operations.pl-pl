@@ -2,7 +2,7 @@
 title: Zarządzanie informacjami dotyczącymi klienta dla Polski
 description: W tym temacie opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
 author: sepism
-ms.date: 03/25/2020
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 22feb8f7b07b81c7a990d1bf9c800ce07b2d87da170a19476466abdb4340d73b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7313bb11c7998bfdca7784660489e1a0b5f7f24
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712421"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478658"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -33,7 +33,7 @@ W tym temacie opisano sposób obsługi informacji o odbiorcy, takich jak numer p
 Numer VAT odbiorcy można określić podczas tworzenia lub edytowania głównego rekordu odbiorcy w punkcie sprzedaży. Można także określić numer VAT dla transakcji sprzedaży, kopiując go z odbiorcy transakcji lub wprowadzając go ręcznie. Informacje dotyczące odbiorcy mogą być następnie drukowane zarówno na stałych, jak i fiskalnych przychodach i mogą być używane do celów fakturowania.
 
 > [!NOTE]
-> Ta funkcja jest dostępna w wersjach 10.0.7 i późniejszych.
+> Nie można określić numeru VAT odbiorcy w POS, gdy w profilu funkcji POS włączono opcję **Tworzenie odbiorcy w trybie asynchronicznym**. Obsługę trybu tworzenia asynchronicznego odbiorcy można dodać w przyszłych aktualizacjach.
 
 ## <a name="setup"></a>Konfiguracja
 

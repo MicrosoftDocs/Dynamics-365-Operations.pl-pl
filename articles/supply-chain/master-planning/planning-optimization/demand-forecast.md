@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778683"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474851"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Planowanie główne z uwzględnieniem prognoz popytu
 
@@ -137,32 +137,85 @@ W tym przypadku uruchomienie planowania w dniu 1 stycznia spowoduje, że wymagan
 
 #### <a name="transactions--reduction-key"></a>Transakcje — klucz redukcji
 
-Jeśli wybierzesz **Transakcje — klucz redukcji** zmniejsza wymagania dotyczące prognozy popytu według transakcji zachodzących w okresach czasu, które są definiowane według klucza redukcji.
+Jeśli ustawiono pole **Metoda używana do redukowania prognozowanego zapotrzebowania** na *Transakcje — klucz redukcji*, wymagania prognoz są redukowane o kwalifikowane transakcje popytu występujące w okresach określonych przez klucz redukcji.
+
+Zakwalifikowany popyt jest definiowany przez pole **Zmniejsz prognozę o** na stronie **Grupy zapotrzebowania**. Jeśli w polu **Zmniejsz prognozę o** zostanie ustawiona wartość *Zamówienia*, popyt kwalifikowany będzie dotyczyć tylko transakcji zamówień sprzedaży. Jeśli zostanie w nim ustawiona wartość *Wszystkie transakcje*, wszelkie transakcje magazynowe wydania innego niż międzyfirmowe będą traktowane jako popyt kwalifikowany. Jeśli międzyfirmowe zamówienia sprzedaży mają być uwzględniane jako zakwalifikowany popyt, ustaw opcję **Uwzględnij zamówienia międzyfirmowe** na *Tak*.
+
+Redukcja prognozy rozpoczyna się od pierwszego (najwcześniejszego) rekordu prognozy popytu w okresie klucza redukcji. Jeśli ilość kwalifikowanych transakcji magazynowych jest większa niż ilość wierszy prognozy popytu w tym samym okresie klucza redukcji, saldo ilości w transakcjach magazynowych zostanie użyte do zmniejszenia ilości prognozy popytu w poprzednim okresie (jeśli istnieje prognoza niewykorzystana).
+
+Jeśli w poprzednim okresie klucza redukcji nie pozostanie niezatwierdzona prognoza, saldo ilości transakcji magazynowych zostanie użyte do zmniejszenia prognozowanych ilości w następnym miesiącu (jeśli istnieje niewykorzystana prognoza).
+
+Wartość pola **Procent** w wierszach klucza redukcji nie jest używana, jeśli pole **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** ma wartość *Transakcje — klucz redukcji*. Do definiowania okresu klucza redukcji używane są tylko daty.
+
+> [!NOTE]
+> Wszystkie prognozy zaksięgowane dzisiaj lub z wcześniejszą datą będą ignorowane i nie będą używane do tworzenia zamówień planowanych. Jeśli na przykład prognoza popytu dla tego miesiąca zostanie wygenerowana 1 stycznia, a zostanie uruchomione planowanie główne z prognozowaniem popytu na 2 stycznia, w obliczeniu zostanie zignorowany wiersz prognozy popytu z datą 1 stycznia.
 
 ##### <a name="example-transactions--reduction-key"></a>Przykład: Transakcje— klucz redukcji
 
 W tym przykładzie pokazano, jak rzeczywiste zamówienia występujące w okresach zdefiniowanych przez klucz redukują wymagania prognozy popytu.
 
-W tym przykładzie wybierasz **Transakcje — klucz redukcji** w **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** na stronie **Plany główne**.
+[![Rzeczywiste zamówienia i prognoza przed uruchomieniem planowania głównego.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-1 stycznia istnieją następujące zamówienia sprzedaży.
+W tym przykładzie wybierasz *Transakcje — klucz redukcji* w **Metoda używana w celu zmniejszenia prognozowanych zapotrzebowań** na stronie **Plany główne**.
 
-| Miesiąc    | Zamówiona liczba sztuk |
-|----------|--------------------------|
-| Styczeń  | 956                      |
-| Luty | 1,176                    |
-| Marzec    | 451                      |
-| Kwiecień    | 119                      |
+1 kwietnia istnieją następujące wiersze prognozy popytu.
 
-Przy tej samej prognozie popytu dla 1000 sztuk na miesiąc do planu głównego przesyłane są następujące ilości wymagania.
+| Data     | Prognozowana liczba sztuk |
+|----------|-----------------------------|
+| 5 kwietnia  | 100                         |
+| 12 kwietnia | 100                         |
+| 19 kwietnia | 100                         |
+| 26 kwietnia | 100                         |
+| 3 maja    | 100                         |
+| 10 maja   | 100                         |
+| 17 maja   | 100                         |
 
-| Miesiąc                | Wymagana liczba sztuk |
-|----------------------|---------------------------|
-| Styczeń              | 44                        |
-| luty             | 0                         |
-| marzec                | 549                       |
-| kwiecień                | 881                       |
-| Od maja do grudnia | 1 000                     |
+Poniższe wiersze zamówienia sprzedaży istnieją w kwietniu.
+
+| Data     | Żądana liczba sztuk |
+|----------|----------------------------|
+| 27 kwietnia | 240                        |
+
+[![Planowana podaż wygenerowana na podstawie zamówień z kwietnia.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Następujące ilości zapotrzebowania są przenoszone do planu głównego w przypadku uruchomienia planowania głównego w dniu 1 kwietnia. Jak widać, kwietniowe prognozowane transakcje zostały zmniejszone o ilość popytu 240 w sekwencji, począwszy od pierwszej z tych transakcji.
+
+| Data     | Wymagana liczba sztuk |
+|----------|---------------------------|
+| 5 kwietnia  | 0                         |
+| 12 kwietnia | 0                         |
+| 19 kwietnia | 60                        |
+| 26 kwietnia | 100                       |
+| 27 kwietnia | 240                       |
+| 3 maja    | 100                       |
+| 10 maja   | 100                       |
+| 17 maja   | 100                       |
+
+Załóżmy, że nowe zamówienia zostały zaimportowane w maju.
+
+Poniższe wiersze zamówienia sprzedaży istnieją w maju.
+
+| Data   | Żądana liczba sztuk |
+|--------|----------------------------|
+| 4 maja  | 80                         |
+| 11 maja | 130                        |
+
+[![Planowana podaż wygenerowana na podstawie zamówień z kwietnia i maja.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Następujące ilości zapotrzebowania są przenoszone do planu głównego w przypadku uruchomienia planowania głównego w dniu 1 kwietnia. Jak widać, kwietniowe prognozowane transakcje zostały zmniejszone o ilość popytu 240 w sekwencji, począwszy od pierwszej z tych transakcji. Jednak transakcje prognozowane z maja zostały zmniejszone o łączną kwotę 210, począwszy od pierwszej transakcji prognozy popytu w maju. Jednak sumy dla okresu są zachowywane (400 w kwietniu i 300 w maju).
+
+| Data     | Wymagana liczba sztuk |
+|----------|---------------------------|
+| 5 kwietnia  | 0                         |
+| 12 kwietnia | 0                         |
+| 19 kwietnia | 60                        |
+| 26 kwietnia | 100                       |
+| 27 kwietnia | 240                       |
+| 3 maja    | 0                         |
+| 4 maja    | 80                        |
+| 10 maja   | 0                         |
+| 11 maja   | 130                       |
+| 17 maja   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transakcje — okres dynamiczny
 

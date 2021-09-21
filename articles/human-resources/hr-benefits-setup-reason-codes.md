@@ -1,8 +1,8 @@
 ---
 title: Ustaw kody przyczyn
 description: W programie Dynamics 365 Human Resources kody przyczyn są używane do wyjaśniania, dlaczego świadczenia dla pracownika się zmieniają.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732688"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431349"
 ---
 # <a name="set-up-reason-codes"></a>Ustaw kody przyczyn
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732688"
 W programie Dynamics 365 Human Resources kody przyczyn są używane do wyjaśniania, dlaczego świadczenia dla pracownika się zmieniają.
 
 > [!NOTE]
-> W styczniu 2021 r. kody przyczyn są migrujące do obszaru roboczego **Zarządzanie pracownikami**, a nie do obszaru roboczego **Zarządzanie świadczeniami**. Aby uzyskać więcej informacji, zobacz [Ręczna migracja kodów przyczyny do zarządzania personelem](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> W styczniu 2021 r. kody przyczyn zostały migrowane do obszaru roboczego **Zarządzanie pracownikami**, a nie do obszaru roboczego **Zarządzanie świadczeniami**. Aby uzyskać więcej informacji, zobacz [Ręczna migracja kodów przyczyny do zarządzania personelem](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## <a name="create-reason-codes"></a>Tworzenie kodów przyczyn
 
-1. W obszarze roboczym **Zarządzanie pracownikami** (lub obszarze roboczym **Zarządzanie świadczeniami**, jeśli kody przyczyn nie zostały jeszcze poddane migracji), wybierz opcję **Łącza**, a następnie wybierz pozycję **Kody przyczyn**.
+1. W obszarze roboczym **Zarządzanie pracownikami** (lub obszarze roboczym **Zarządzanie świadczeniami**, jeśli kody przyczyn nie zostały poddane migracji), wybierz opcję **Linki**, a następnie wybierz pozycję **Kody przyczyn**.
 
 2. Wybierz pozycję **Nowy**.
 
@@ -44,13 +44,13 @@ W programie Dynamics 365 Human Resources kody przyczyn są używane do wyjaśnia
    | **Kod przyczyny** | Unikatowa nazwa identyfikująca przyczynę, dla której pracownik etatowy zmienia rejestrację na inny plan świadczeń. |
    | **Opis** | Opis kodu przyczyny. |
 
-4. W **Odpowiednich scenariuszach** ustaw wartość **Zarządzanie świadczeniami** na **Tak**. (Nie dotyczy, jeśli kody przyczyn nie zostały jeszcze zmigrowane do obszar roboczy **Zarządzanie pracownikami**.)
+4. W **Odpowiednich scenariuszach** ustaw wartość **Zarządzanie świadczeniami** na **Tak**. (Nie dotyczy, jeśli kody przyczyn nie zostały zmigrowane do obszaru roboczego **Zarządzanie pracownikami**.)
 
 5. Wybierz opcję **Zapisz**.
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Ręczna migracja kodów przyczyny do zarządzania personelem
 
-W styczniu 2021 r. kody przyczyn są migrujące do obszaru roboczego **Zarządzanie pracownikami**, a nie do obszaru roboczego **Zarządzanie świadczeniami**. Większość danych kodu przyczyny zostanie automatycznie przeniesiona do Twojego środowiska. Niektóre dane kodu przyczyny mogą nie być przenoszone. Na przykład kody przyczyn mają teraz maksymalnie 15 znaków, więc żadne kody przyczyn dłuższe niż 15 znaków nie zostaną automatycznie przeniesione.
+W styczniu 2021 r. kody przyczyn zostały migrowane do obszaru roboczego **Zarządzanie pracownikami**, a nie do obszaru roboczego **Zarządzanie świadczeniami**. Większość danych kodu przyczyny zostanie automatycznie przeniesiona do Twojego środowiska. Niektóre dane kodu przyczyny mogą nie być przenoszone. Na przykład kody przyczyn mają teraz maksymalnie 15 znaków, więc żadne kody przyczyn dłuższe niż 15 znaków nie zostaną automatycznie przeniesione.
 
 Na stronie **Łącza** w obszarze roboczym **Zarządzanie świadczeniami** zostanie wyświetlony transparent informjący o migracji i o tym, czy jakieś kody przyczyn nie były migrowane.
 

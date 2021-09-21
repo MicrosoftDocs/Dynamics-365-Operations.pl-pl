@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394519"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465084"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
@@ -49,13 +49,9 @@ W przypadku środowiska produkcyjnego muszą być spełnione następujące wymag
 - Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
 
-    - Obliczanie podatku
+    - Usługa obliczania podatku
     - Obsługa wielu numerów rejestracji VAT
     - Podatek w zleceniu przeniesienia
-    - Przeniesienie list sprzedaży do UE tylko na podstawie transakcji podatkowych
-    - Raportowanie Intrastat według wielu identyfikatorów podatkowych
-    - Raportowanie listy sprzedaży do UE według wielu identyfikatorów podatkowych
-    - Deklaracja podatkowa według wielu identyfikatorów podatkowych
 
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku RCS.
 
@@ -65,18 +61,14 @@ W przypadku środowiska produkcyjnego muszą być spełnione następujące wymag
 
 W przypadku środowiska testowego muszą być spełnione następujące wymagania wstępne:
 
-- Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.18 z KB4616360 lub nowsza.
+- Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza wersja.
 - Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
 - Musisz skontaktować się z firmą Microsoft, wysyłając e-mail na adres <taxcalc@microsoft.com>, w sprawie włączenia lotowania w wdrożonym środowisku Finance lub Supply Chain Management.
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
 
-    - Obliczanie podatku
+    - Usługa obliczania podatku
     - Obsługa wielu numerów rejestracji VAT
     - Podatek w zleceniu przeniesienia
-    - Przeniesienie list sprzedaży do UE tylko na podstawie transakcji podatkowych
-    - Raportowanie Intrastat według wielu identyfikatorów podatkowych
-    - Raportowanie listy sprzedaży do UE według wielu identyfikatorów podatkowych
-    - Deklaracja podatkowa według wielu identyfikatorów podatkowych
 
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku RCS.
 
@@ -103,12 +95,12 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
 7. Przejdź do **Modelu danych podatkowych**, rozwiń drzewo plików, a następnie wybierz pozycję **Konfiguracja podatków**.
 8. Wybierz poprawną wersję konfiguracji podatku zależnie od wersji modułu Finance, a następnie wybierz pozycję **Importuj**.
 
-    | Wersja wydania | Konfiguracja podatku                       | Mapowanie modelu                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Konfiguracja podatku — Europa 30.12.82     |                                 |
-    | 10.0.19         | Konfiguracja obliczania podatku 36.38.193 |                                 |
-    | 10.0.20         | Konfiguracja obliczania podatku 40.43.208 |                                 |
-    | 10.0.21         | Konfiguracja obliczania podatku 40.46.212 | Mapowanie modelu Dataverse 40.46.9 |
+    | Wersja wydania | Konfiguracja podatku                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Konfiguracja podatku — Europa 30.12.82     |
+    | 10.0.19         | Konfiguracja obliczania podatku 36.38.193 |
+    | 10.0.20         | Konfiguracja obliczania podatku 40.43.208 |
+    | 10.0.21         | Konfiguracja obliczania podatku 40.46.212 |
 
 9. W obszarze roboczym **Funkcje globalizacji**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
 10. Umożliwia wybór jednego z następujących typów funkcji:

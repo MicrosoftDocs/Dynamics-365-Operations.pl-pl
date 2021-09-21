@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712056"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474923"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.16 (luty 2021 r.)
 
@@ -54,34 +54,10 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Nie za
 - [Ceny sprzedaży oparte na atrybutach dla konfiguracji produktu opartej na ograniczeniu](../pim/attribute-based-product-configurator.md)
 - [Automatyczna alokacja opłat](../procurement/automatic-charges-allocation.md)
 - [Omówienie materiałów niebezpiecznych](../pim/hazmat-overview.md) (i tematów pokrewnych)
-- [Migracja do optymalizacji planowania do planowania głównego](../master-planning/new-master-planning-engine.md)
+- [Migracja do modułu Optymalizacja planowania w celu realizacji planowania głównego](../master-planning/new-master-planning-engine.md)
 - [Udoskonalenia cXML dotyczące zakupów](../procurement/purchasing-cxml-enhancements.md)
-- [Rozwiązywanie problemów z zarządzaniem kosztami](../cost-management/troubleshoot-costmanagement.md)
-- [Rozwiązywanie problemów dotyczących przychodzących operacji magazynowych](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Rozwiązywanie problemów z kompilowaniem i przesyłaniem ładunku](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Rozwiązywanie problemów z planowaniem głównym](../master-planning/troubleshoot-masterplanning.md)
-- [Rozwiązywanie problemów dotyczących wychodzących operacji magazynowych](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Rozwiązywanie problemów z częściowym zwalnianiem i częściowymi wysyłkami](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Rozwiązywanie problemów z konfiguratorem produktów](../pim/troubleshooting-productconfigurator.md)
-- [Rozwiązywanie problemów z informacjami o produktach](../pim/troubleshooting-productinformation.md)
-- [Rozwiązywanie problemów z przepływami pracy dla zaopatrzenia i sourcingu](../procurement/troubleshoot-procurementworkflows.md)
-- [Rozwiązywanie problemów z zamówieniami zakupu](../procurement/troubleshoot-purchaseorders.md)
-- [Rozwiązywanie problemów z cenami, zniżkami, umowami i rabatami](../procurement/troubleshooting-pricediscountagreements.md)
-- [Rozwiązywanie problemów z dokumentami przyjęcia produktów i fakturowaniem](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Rozwiązywanie problemów z wytwarzaniem dyskretnym](../production-control/troubleshoot-discretemanufacturing.md)
-- [Rozwiązywanie problemów z pobieraniem i pakowaniem](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Rozwiązywanie problemów z wytwarzaniem procesów](../production-control/troubleshoot-processmanufacturing.md)
-- [Rozwiązywanie problemów z rezerwacjami w module zarządzania magazynem](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Rozwiązywanie problemów z zamówieniami sprzedaży](../sales-marketing/troubleshooting-sales.md)
-- [Rozwiązywanie problemów z ofertami sprzedaży](../sales-marketing/troubleshooting-salesquotation.md)
-- [Rozwiązywanie problemów dotyczących uaktualniania i migracji do zaawansowanego zarządzania magazynem](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Rozwiązywanie problemów z połączeniem z aplikacją mobilną Zarządzanie magazynem](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Rozwiązywanie problemów z konfiguracją magazynu](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Rozwiązywanie problemów z uzupełnianiem zapasów](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Rozwiązywanie problemów z konfiguracją](../warehousing/troubleshoot-warehouse-setup.md)
-- [Rozwiązywanie problemów pracy magazynowej](../warehousing/troubleshoot-warehouse-work.md)
 - [Klastry odłożenia](../warehousing/putaway-clusters.md)
-- [Strategie uzupełniania](../warehousing/replenishment-strategies.md)
+- [Strategie uzupełniania zapasów](../warehousing/replenishment-strategies.md)
 - [Podział pracy](../warehousing/work-split.md)
 - [Praca z dyrektywami lokalizacji](../warehousing/create-location-directive.md)
 

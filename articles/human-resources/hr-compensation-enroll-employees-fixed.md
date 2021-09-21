@@ -1,8 +1,8 @@
 ---
 title: Zarejestrowanie pracownika w systemie stałych wynagrodzeń
 description: Menedżer ds. wynagrodzenia i świadczeń może przypisywać pracowników do planów stałych wynagrodzeń w celu zarządzania ich wynagrodzeniami podstawowymi.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,33 +10,33 @@ ms.search.form: HRMCompFixedEmpl, HRMCompFixedEmplActionDialog, HcmPositionLooku
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1858987430c60f93c47750d2703024b1676cb4916092519f3440685964c6aa55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd9c39bb3b5e221694fe20a8085c9099040cb422
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732520"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431101"
 ---
 # <a name="enroll-an-employee-in-a-fixed-compensation-plan"></a>Zarejestrowanie pracownika w systemie stałych wynagrodzeń
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Menedżer ds. wynagrodzenia i świadczeń może przypisywać pracowników do planów stałych wynagrodzeń w celu zarządzania ich wynagrodzeniami podstawowymi. Ta procedura zakłada, że plan stałych wynagrodzeń został utworzony i jest aktywny oraz skonfigurowano w nim reguły uprawnienia. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby rozpocząć procedurę, wybierz kolejno opcje Zasoby ludzkie > Pracownicy > Pracownicy > Wynagrodzenie > Plan stałych wynagrodzeń.
+Menedżer ds. wynagrodzenia i świadczeń może przypisywać pracowników do planów stałych wynagrodzeń w celu zarządzania ich wynagrodzeniami podstawowymi. Ta procedura zakłada, że plan stałych wynagrodzeń został utworzony i jest aktywny oraz skonfigurowano w nim reguły uprawnienia. Dane wykorzystane do stworzenia tej procedury pochodzą z firmy demonstracyjnej USMF. Aby rozpocząć procedurę, wybierz kolejno opcje **Zasoby ludzkie** > **Pracownicy** > **Pracownicy etatowi** > **Wynagrodzenie** > **Plan stałych wynagrodzeń**.
 
-1. Kliknij przycisk Nowy.
-2. W polu Akcja wybierz akcję związaną ze stałym wynagrodzeniem typu Zatrudnienie/ponowne zatrudnienie, aby opisać zmianę wynagrodzenia pracownika.
+1. Kliknij przycisk **Nowy**.
+2. W polu **Akcja** wybierz akcję związaną ze stałym wynagrodzeniem typu **Zatrudnienie/ponowne zatrudnienie**, aby opisać zmianę wynagrodzenia pracownika etatowego.
 3. Na liście kliknij łącze w wybranym wierszu.
-4. W polu Stanowisko kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
+4. W polu **Stanowisko** kliknij przycisk rozwijany, aby otworzyć wyszukiwanie.
 5. Na liście kliknij łącze w wybranym wierszu.
     * Poziom wyświetlany z poziomu wynagrodzeń dla zadania na tym stanowisku. Aby wynagrodzenie można było przypisać do pracownika, poziom musi zostać ustawiony w zadaniu.  
-6. W polu Plan wybierz plan stałych wynagrodzeń dla pracownika. Wyszukiwanie planu zostanie wyfiltrowane w celu wyświetlenia tylko planów, do których pracownik jest uprawniony zgodnie z regułami uprawnień.
+6. W polu **Plan** wybierz plan stałych wynagrodzeń dla pracownika. Wyszukiwanie planu zostanie wyfiltrowane w celu wyświetlenia tylko planów, do których pracownik jest uprawniony zgodnie z regułami uprawnień.
 7. Na liście znajdź i zaznacz odpowiedni rekord.
-    * Wartości pól Data obowiązywania i Data wygaśnięcia dla wynagrodzenia domyślnie pochodzą z daty rozpoczęcia i zakończenia przypisania stanowiska pracownika. W razie potrzeby można zmienić te daty.  
+    * Wartości pól **Data obowiązywania** i **Data wygaśnięcia** dla wynagrodzenia domyślnie pochodzą z daty rozpoczęcia i zakończenia przypisania stanowiska pracownika. W razie potrzeby można zmienić te daty.  
     * Jeśli plan stałych wynagrodzeń jest planem typu Krok, zaznacz krok zawierający stawkę płacy odpowiednią dla pracownika. Jeśli plan stałych wynagrodzeń jest planem typu Pasmo lub Kategoria, wprowadź stawkę płacy pracownika. Stawka płacy będzie weryfikowana względem ustawień tolerancji dla planu oraz minimalnego i maksymalnego punktu odniesienia w poziomie wynagrodzeń dla zadania.  
-8. Kliknij przycisk OK.
+8. Kliknij przycisk **OK**.
 
 
 

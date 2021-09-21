@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 96a644bf129de6dd3f78098bcb6415d17058d6decbd7d904a99bb6f050d3a9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c30df23debed9e2ab90745e6ea9d0e6b8a05b6d5
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730449"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429274"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Plan zmiennych wynagrodzeń listy płac
 
@@ -36,44 +36,51 @@ Nazwa fizyczna: mshr_payrollvariablecompensationawardentity.
 
 | Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | opis |
 | --- | --- | --- |
-| **Numer pracownika**</br>mshr_personnelnumber</br>*Ciąg* | Tylko do odczytu</br>Potrzebne |Unikalny numer personelu pracownika.  |
-| **Data premii**</br>mshr_awarddate</br>*Przesunięcie daty i godziny* | Tylko do odczytu</br>Potrzebne | Data nagrody. |
-| **Typ nagrody**</br>mshr_awardtype</br>*[zestaw opcji mshr_HrmCompVarAwardEmplType](hr-admin-integration-payroll-api-award-type.md)* | Tylko do odczytu</br>Potrzebne | Rodzaj nagrody zdefiniowanej dla planu wynagrodzeń o zmiennej wysokości. |
-| **Waluta**</br>mshr_unitcurrencycode</br>*Ciąg* | Tylko do odczytu </br>Potrzebne |Waluta zdefiniowana dla planu wynagrodzeń o zmiennej wysokości.   |
+| **Numer pracownika**</br>mshr_personnelnumber</br>*Ciąg* | Tylko do odczytu | Unikalny numer personelu pracownika.  |
+| **Data premii**</br>mshr_awarddate</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data nagrody. |
+| **Typ nagrody**</br>mshr_awardtype</br>*[zestaw opcji mshr_HrmCompVarAwardEmplType](hr-admin-integration-payroll-api-award-type.md)* | Tylko do odczytu | Rodzaj nagrody zdefiniowanej dla planu wynagrodzeń o zmiennej wysokości. |
+| **Waluta**</br>mshr_unitcurrencycode</br>*Ciąg* | Tylko do odczytu |Waluta zdefiniowana dla planu wynagrodzeń o zmiennej wysokości.   |
 | **Identyfikator planu stałych wynagrodzeń**</br>mshr_fixedplanid</br>*Ciąg* | Tylko do odczytu | Plan stałych wynagrodzeń, który jest używany jako podstawa do obliczenia nagrody. |
 | **Wartość jednostki**</br>mshr_awardamount</br>*Dziesiętny* | Tylko do odczytu | Wartość jednostki |
 | **Typ procesu**</br>mshr_processtype</br>*[zestaw opcji mshr_hrmCompProcessType](hr-admin-integration-payroll-api-process-type.md)* | Tylko do odczytu | Typ procesu. |
 | **Typ planu wynagrodzeń o zmiennej wysokości**</br>Ciąg</br>*mshr_typeid* | Tylko do odczytu | Typ planu wynagrodzeń o zmiennej wysokości. |
 | **Identyfikator planu wynagrodzeń o zmiennej wysokości**</br>Ciąg</br>*mshr_planid* | Tylko do odczytu | Identyfikator planu wynagrodzeń o zmiennej wysokości. |
+| **Liczba jednostek**</br>Dziesiętny</br>*mshr_numberofunits* | Tylko do odczytu | Liczba jednostek nagrody. |
 | **Pole główne**</br>mshr_primaryfield</br>*GUID* | Tylko do odczytu</br>Wygenerowany przez system. | |
-| **Identyfikator pracownika**</br>mshr_fk_employee_id_value</br>*GUID* | Tylko do odczytu</br>Potrzebne</br>Klucz obcy: mshr_Employee_id jednostki mshr_payrollemployeeentity  | Identyfikator pracownika. |
-| **Jednostka Planu zmiennych wynagrodzeń listy płac**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Potrzebne</br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania planu wynagrodzeń. |
+| **Jednostka Planu zmiennych wynagrodzeń listy płac**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania planu wynagrodzeń. |
 
+## <a name="relations"></a>Relacje 
+
+|Wartości właściwości | Encja powiązana | Właściwość nawigacji | Typ kolekcji |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_VariableCompAward |
+| _mshr_fk_fixedcomp_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedComp_id | mshr_FK_PayrollFixedCompensationPlanEntity_VariableCompAward |
 
 ## <a name="example-query"></a>Przykład kwerendy
 
 **Wniosek**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000001'
+GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
 ```
 
 **Odpowiedź**
 
 ```json
 {
-    "mshr_personnelnumber": "000001",
+    "mshr_personnelnumber": "000046",
     "mshr_awarddate": "2015-01-15T00:00:00Z",
     "mshr_awardtype": 200000000,
     "mshr_unitcurrencycode": "USD",
     "mshr_fixedplanid": "",
-    "mshr_awardamount": 1,
+    "mshr_unitvalue": 1,
     "mshr_processtype": 200000003,
     "mshr_typeid": "Bonus",
     "mshr_planid": "MgBonus",
-    "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
-    "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
-    "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
+    "mshr_numberofunits": 1500,
+    "mshr_primaryfield": "000046 | MgBonus | Bonus | 1/15/2015",
+    "_mshr_fk_employee_id_value": "00000666-0000-0000-daff-004105000000",
+    "mshr_payrollvariablecompensationawardentityid": "000001a4-0000-0000-0d00-005001000000",
     "_mshr_fk_fixedcomp_id_value": null
 }
 ```

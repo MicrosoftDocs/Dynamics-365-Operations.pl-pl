@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757813"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475091"
 ---
 # <a name="inventory-forecasts"></a>Prognoza zapasów
 
@@ -94,7 +94,7 @@ W poniższej tabeli opisano komendy, które są dostępne bezpośrednio w pasku 
 
 | Polecenie | opis |
 |---|---|
-| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. |
+| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu). |
 | Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego tematu). |
 | Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego tematu). |
 | Utwórz zapotrzebowanie na towary | Otwiera okno dialogowe, w którym można utworzyć wymagania dotyczące pozycji oraz linie dziennika zamówień lub pozycji dla transakcji prognoz związanych z projektem. Chociaż polecenie to jest dostępne zarówno dla wierszy prognozy dostaw, jak i dla wierszy prognozy popytu, nie można go użyć na stronie **Prognoza dostaw**. |
@@ -201,7 +201,7 @@ W poniższej tabeli opisano komendy, które są dostępne bezpośrednio w pasku 
 
 | Polecenie | opis |
 |---|---|
-| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. |
+| Przydziel prognozę | Jeśli używasz metody alokacji, wygeneruj poszczególne wiersze harmonogramu dla prognozowanej transakcji. Ilość linii jest następnie rozdzielana według daty (zgodnie z wybranymi przedziałami czasowymi), ilości oraz kwoty dla całego horyzontu czasowego. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu).|
 | Aktualizacja zbiorcza | Otwórz stronę **Edycja transakcji prognozowych**. (Zobacz sekcję [Transakcje prognozowane aktualizacji zbioru](#bulk-update) w dalszej części tego tematu). |
 | Prognoza zapasów | Umożliwia otwarcie widoku strony **Prognoza zapasów**, który jest filtrowany dla wybranej kombinacji towaru/modelu. (Zobacz sekcję [Prognoza zapasów](#inventory-forecast) w dalszej części tego tematu). |
 | Utwórz zapotrzebowanie na towary | Otwiera okno dialogowe, w którym można utworzyć wymagania dotyczące pozycji oraz linie dziennika zamówień lub pozycji dla transakcji prognoz związanych z projektem. |
@@ -296,7 +296,7 @@ Na karcie **Wymiary zapasów** są podane wszystkie wartości wymiarów zapasów
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Zakładka Siatka alokacji na stronie Prognoza popytu
 
-Jeśli korzystasz z klucza przydziału pozycji lub wprowadziłeś prognozę pozycji na jeden lub więcej przyszłych okresów, możesz przydzielić prognozę, wybierając **Alokuj prognozę** na pasku narzędzi na zakładce **Przegląd**. Ilość jest wtedy rozdzielana w sposób wskazany przez linie w siatce **Przydziel**.
+Jeśli korzystasz z klucza przydziału pozycji lub wprowadziłeś prognozę pozycji na jeden lub więcej przyszłych okresów, możesz przydzielić prognozę, wybierając **Alokuj prognozę** na pasku narzędzi na zakładce **Przegląd**. Ilość jest wtedy rozdzielana w sposób wskazany przez linie w siatce **Przydziel**. (Zobacz sekcję [Alokacja zapasów](#allocate-forecast) w dalszej części tego tematu).
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Prognoza zapasów
 
@@ -328,6 +328,25 @@ W poniższej tabeli opisano kolumny w polach na stronie **Prognoza zapasów**.
 | **BOM podrzędny** | Numer BOM określonego BOM podrzędnego. |
 | **Podmarszruta** | Numer marszruty określonej podmarszruty. |
 | (Inne wymiary) | Dodatkowe wymiary mogą być wyświetlane jako kolumny w siatce. Aby wybrać dodatkowe wymiary, które będą wyświetlane, wybierz **Zapasy \> Wyświetl wymiary** na pasku akcji. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Przydziel prognozę
+
+Poniższa procedura umożliwia przetwarzanie wybranych wierszy transakcji prognozy. Podczas alokowania prognozy ilość jest dystrybuowana zgodnie z wierszami w siatce **Alokacja**.
+
+1. W zależności od typu encji, dla której chcesz utworzyć prognozę, oraz typu prognozy, którą chcesz utworzyć, otwórz stronę prognozy podaży lub popytu zgodnie z opisem w temacie [Wyświetlanie i ręczne wprowadzanie wierszy prognozy](#manual-entry).
+1. Na stronie wiersze prognozy podaży lub popytu zaznacz wiersz prognozy, a następnie na karcie **Przegląd** wybierz pozycję **Alokacja prognozy** na pasku narzędzi.
+1. W oknie dialogowym **Alokacja prognozy** należy ustawić pola opisane w poniższej tabeli. (Wartość wybierana w polu **Metoda** określa, czy inne dostępne pola są dostępne).
+
+    | Pole | opis |
+    |---|---|
+    | Metoda | <p>Wybierz metodę, która jest używana do alokacji prognozowanej transakcji:</p><ul><li>**Brak** — nie ma alokacji.</li><li>**Okres** — prognozuj tę samą ilość dla każdego okresu. Po wybraniu tej wartości należy określić ilość w polu **Na** oraz jednostkę czasu w polu **Jednostka**.</li><li>**Klucz** — przydzielenie prognozy zgodnie z kluczem alokacji okresu określonym w polu **Klucz okresu**. Ta metoda może być stosowana w celu uwzględnienia odchyleń sezonowych.</li><ul>|
+    | Na | <p>Umożliwia wprowadzenie liczby interwałów czasu w przyszłości, na które rozciąga się prognoza. To pole jest dostępne tylko w przypadku wybrania opcji *Okres* w polu **Metoda**.</p><p>Na przykład wybiera się *Okres* w polu **Metoda**, wpisuje się *1* w polu **Na**, wybiera się *Miesiące* w polu **Jednostka**. Następnie w polu **Zamknięcie** określ datę końcową wybiegającą o jeden rok w przyszłość. W tym przypadku zostanie utworzony jeden wiersz prognozy dla każdego miesiąca nadchodzącego roku, w oparciu o pozycję i ilość, które są określone w wierszu nagłówka. |
+    | Jednostka | Umożliwia wybranie jednostki interwału czasu: *dni*, *miesiące* lub *lata*. Alokacja odpowiadająca liczbie dni, miesięcy lub lat określonej w polu **Na**.|
+    | Klucz okresu | Umożliwia określenie klucza alokacji okresu używanego do alokacji prognozy. Aby uzyskać więcej informacji, zobacz [Priorytety planowania budżetu](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Zakończenie | Określ datę końcową obowiązującą dla ustawień w polach **Na** i **Jednostka**. |
+
+1. Wybierz przycisk **OK**, aby potwierdzić wybór ustawień.
+1. Wyniki można przejrzeć na karcie **Alokacja** dla tego samego wiersza.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Zbiorcza aktualizacja prognoz transakcji
 

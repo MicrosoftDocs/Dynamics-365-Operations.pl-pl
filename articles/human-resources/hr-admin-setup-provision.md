@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393530"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441172"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -43,6 +43,11 @@ Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać s
 Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 
 
 Środowiska wersji zapoznawczych nie są one przeznaczone do używania jako środowiska produkcyjne. Są one ograniczone do 60-dniowego okresu próbnego. Po wygaśnięciu okresu próbnego środowisko i wszystkie znajdujące się w nim dane zostają usunięte i nie można ich odzyskać. Środowisko nie może zostać przekształcone w środowisko piaskownicy lub produkcyjne. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
+
+Podczas tworzenia środowiska wersji próbnej Human Resources, jest również tworzone środowisko wersji próbnej Power Apps w dzierżawcy i łączone ze środowiskiem aplikacji Human Resources. Środowisko Power Apps o nazwie „TestDrive” ma ten sam okres próbny co środowisko Human Resources.
+
+> [!NOTE]
+> Aprowizacja obsługi środowiska wersji próbnej aplikacji Human Resources nie powiedzie się, jeśli uwierzytelniony użytkownik nie ma uprawnienia do tworzenia środowisk wersji próbnej Power Apps. Użytkownik musi być zawarty w grupie użytkowników, która może tworzyć środowiska próbne w centrum administracyjnym platformy Power Platform. Aby uzyskać więcej informacji, zobacz temat [Kontrolowanie osób, które mogą tworzyć środowiska i zarządzać nimi w centrum administracyjnym platformy Power Platform](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planuj środowiska zasobów ludzkich
 
@@ -69,7 +74,7 @@ Aby zarządzać swoimi środowiskami oprogramowania Human Resources za pomocą u
 1. Zaloguj się w usłudze [LCS](https://lcs.dynamics.com/Logon/Index) za pomocą konta używanego do subskrypcji rozwiązania Human Resources.
 
    > [!NOTE]
-   > Aby zapewnić pomyślne inicjowanie, konto, którego używasz do inicjowania środowiska Human Resources, musi być przypisane do roli **Administrator systemu** lub **Dostosowywanie systemu** w środowisku Power Apps skojarzonym ze środowiskiem Human Resources. Aby uzyskać więcej informacji dotyczących przypisywania ról zabezpieczeń do użytkowników w Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](/power-platform/admin/database-security).
+   > Aby zapewnić pomyślne inicjowanie, konto, którego używasz do inicjowania środowiska Human Resources, musi być przypisane do roli **Administrator systemu** lub **Dostosowywanie systemu** w środowisku Power Apps skojarzonym ze środowiskiem Human Resources. Aby uzyskać więcej informacji dotyczących przypisywania ról zabezpieczeń do użytkowników na platformie Power Platform, zobacz temat [Konfigurowanie zabezpieczeń użytkownika do zasobów](/power-platform/admin/database-security).
 
 2. Kliknij znak plus (**+**), aby utworzyć projekt.
 

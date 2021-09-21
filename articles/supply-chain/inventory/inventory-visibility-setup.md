@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie dodatku Widoczność magazynu
+title: Instalowanie dodatku Widoczność magazynu
 description: W tym temacie opisano sposób instalowania i konfigurowania dodatku Widoczność magazynu dla systemu Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343591"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474827"
 ---
-# <a name="set-up-inventory-visibility"></a>Konfigurowanie dodatku Widoczność magazynu
+# <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Widoczność magazynu
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Aby można było zainstalować dodatek Widoczność magazynu, musisz wykonać na
     - `Inventory Visibility Integration.zip` (jeśli uruchomiona wersja Supply Chain Management jest wcześniejsza niż 10.0.18)
 
 > [!NOTE]
-> Aktualnie obsługiwane kraje i regiony to Kanada (CCA, ECA), Stany Zjednoczone (WUS, EUS), Unia Europejska (NEU, WEU), Wielka Brytania (SUK, WUK) i Australia (EAU, SEAU).
+> Aktualnie obsługiwane kraje i regiony to Kanada (CCA, ECA), Stany Zjednoczone (WUS, EUS), Unia Europejska (NEU, WEU), Wielka Brytania (SUK, WUK), Australia (EAU, SEAU), Japonia (EJP, WJP) i Brazylia (SBR, SCUS).
 
 Jeśli masz pytania dotyczące tych wymagań wstępnych, skontaktuj się z zespołem ds. produktu Widoczność magazynu.
 
@@ -119,6 +119,9 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 1. Zaakceptuj regulamin, zaznaczając pole wyboru **Regulamin**.
 1. Wybierz **Zainstaluj**. Stan dodatku będzie widoczny jako **Instalowany**. Po zakończeniu instalacji odśwież stronę. Stan powinien zostać zmieniony na **Zainstalowany**.
 
+> [!IMPORTANT]
+> Jeśli masz więcej niż jedno środowisko usługi LCS, utwórz inną aplikację Azure AD dla każdego środowiska. Jeśli do zainstalowania dodatku Widoczność magazynu dla różnych środowisk używasz tego samego identyfikatora aplikacji i identyfikatora dzierżawcy, wystąpi problem z tokenem w starszych środowiskach. Tylko ostatnie zainstalowane rozwiązanie jest prawidłowe.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Odinstalowywanie dodatku Widoczność magazynu
 
 Aby odinstalować dodatek Widoczność magazynu, wybierz opcję **Odinstaluj** na stronie usługi LCS. Proces odinstalowywania powoduje zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi LCS i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów przechowywane w subskrypcji Dataverse nie są usuwane.
@@ -133,7 +136,7 @@ Aby odinstalować dane magazynu przechowywane w subskrypcji Dataverse, otwórz [
 
 Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurowanie Supply Chain Management
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurowanie widoczności zapasów w aplikacji Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Wdróż pakiet integracyjny Widoczność magazynu
 
@@ -153,8 +156,23 @@ Upewnij się, że poniższe funkcje są włączone w środowisku Supply Chain Ma
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Konfiguracja integracji Widoczności zapasów
 
-1. W Supply Chain Management otwórz obszar roboczy **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i włącz funkcję *Integracja widoczności magazynu*.
-1. Przejdź do witryny **Zarządzanie zapasami \> Konfiguracja \> Parametry integracji widoczności magazynu**, i wprowadź adres URL środowiska, w którym jest uruchamiana widoczność magazynu. Więcej informacji można znaleźć w temacie [Znajdowanie punktu końcowego usługi](inventory-visibility-power-platform.md#get-service-endpoint).
+Po zainstalowaniu tego dodatku należy przygotować system Supply Chain Management do pracy z tym dodatkiem, wykonując następujące kroki.
+
+1. W Supply Chain Management otwórz obszar roboczy **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i włącz następujące funkcje:
+    - *Integracja Widoczności zapasów* — wymagana.
+    - *Integracja Widoczności zapasów z przesunięciem rezerwacji* — zalecana, ale opcjonalna. Wymaga wersji 10.0.22 lub nowszej. Więcej informacji zawiera temat [Rezerwacje dodatku Widoczność magazynu](inventory-visibility-reservations.md).
+
+1. Wybierz kolejno opcje **Zarządzanie zapasami \> Ustawienia \> Parametry integracji dodatku Widoczność magazynu**.
+1. Otwórz kartę **Ogólne** i wybierz następujące ustawienia:
+    - **Punkt końcowy dodatku Widoczność magazynu** — wprowadź adresu URL środowiska, w którym jest uruchamiany dodatek Widoczność magazynu. Więcej informacji można znaleźć w temacie [Znajdowanie punktu końcowego usługi](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maksymalna liczba rekordów w jednym żądaniu** — należy ustawić maksymalną liczbę rekordów, które mają być dołączane w jednym żądaniu. Należy wprowadzić dodatnią liczbę całkowitą mniejszą lub równą 1000. Wartość domyślna to 512. Zdecydowanie zaleca się utrzymywanie wartości domyślnej, chyba że użytkownik otrzyma zawiadomienie od pomocy technicznej firmy Microsoft lub w inny sposób będzie musiał ją zmienić.
+
+1. Jeśli włączono opcjonalną funkcje *Integracja dodatku Widoczność magazynu z przesunięciem rezerwacji*, otwórz kartę **Przesunięcie rezerwacji** i dokonaj następujących ustawień:
+    - **Włącz przesunięcie rezerwacji** — aby włączyć tę funkcję, ustaw wartość *Tak*.
+    - **Modyfikator przesunięcia rezerwacji** — wybierz stan transakcji magazynowej, który będzie powodować przesunięcie rezerwacji w dodatku Widoczność magazynu. To ustawienie określa etap przetwarzania zamówienia, który wyzwala przesunięcia. Etap jest śledzony według stanu transakcji magazynowej zamówienia. Wybierz jedną z następujących opcji:
+        - *Na zamówienie* — w przypadku stanu *W transakcji* po utworzeniu zamówienia będzie wysyłane żądanie przeciwstawne. Ilość przesunięcia będzie ilością z utworzonego zamówienia.
+        - *Rezerwa* — w przypadku stanu *Zarezerwuj zamówioną transakcję* zamówienie wysyła żądanie przeciwstawne, gdy zostanie zarezerwowane, skompletowane, zaksięgowane z listą wysyłkową lub zafakturowane. Żądanie zostanie wyzwolone tylko raz, podczas pierwszego kroku w momencie wystąpienia wymienionego procesu. Ilość przesunięcia to ilość, w której stan transakcji magazynowej zmienił się z *Zamówione* na *Zamówione zarezerwowane* (lub późniejszy) w odpowiednim wierszu zamówienia.
+
 1. Przejdź do **Zarządzanie zapasami \> Okresowe \> Integracja widoczności magazynu** i włącz zadanie. Wszystkie zdarzenia zmiany zapasów z Supply Chain Management zostaną teraz zaksięgowane w widoczności magazynu.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

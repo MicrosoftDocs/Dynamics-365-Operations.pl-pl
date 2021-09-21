@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a367b95a65c45b1e7ac46e9ac96baa2417bf3e48e3d5bfeca21c82cc8c427c24
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5cb4c2b9b4a3c54e71f73369096d00b436079c1c
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714361"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475019"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Atrybuty inżynieryjne i wyszukiwanie atrybutów inżynieryjnych
 
@@ -26,15 +26,13 @@ ms.locfileid: "6714361"
 
 Aby zapewnić, że wszystkie dane główne produktu mogą być rejestrowane w systemie, należy zastosować atrybuty inżynieryjne w celu określenia wszystkich niestandardowych charakterystyk. Pozwoli to stosować wyszukiwanie atrybutów inżynierskich w celu łatwego wyszukiwania produktów na podstawie zarejestrowanych charakterystyk.
 
-## <a name="engineering-attributes"></a>Atrybuty projektowe
+## <a name="create-engineering-attributes-and-attribute-types"></a>Tworzenie atrybutów inżynieryjnych i typów atrybutów
 
 Zazwyczaj produkty inżynieryjne mają wiele cech i właściwości, które należy przechwycić. Mimo że niektóre właściwości można zarejestrować za pomocą standardowych pól produktu, można również utworzyć nowe właściwości technologiczne stosownie do potrzeb. Można zdefiniować własne *atrybuty inżynierskie* i uczynić je częścią definicji produktu.
 
-### <a name="create-engineering-attributes-and-attribute-types"></a>Tworzenie atrybutów inżynieryjnych i typów atrybutów
-
 Każdy atrybut inżynierski musi należeć do *typu atrybutu*. To wymaganie istnieje, ponieważ każdy atrybut musi mieć *typ danych* definiujący typy wartości, które może ono zawierać. Typem atrybutu inżynieryjnego może być standardowy typ (np. tekst niezależny, liczba całkowita lub liczba dziesiętna) lub typ niestandardowy (np. tekst zawierający określony zbiór wartości, z których można wybierać). Można użyć ponownie każdego typu atrybutu z dowolną liczbą atrybutów inżynierskich.
 
-#### <a name="set-up-engineering-attribute-types"></a>Ustawianie typów atrybutów inżynieryjnych
+### <a name="set-up-engineering-attribute-types"></a>Ustawianie typów atrybutów inżynieryjnych
 
 Aby wyświetlić, utworzyć lub edytować typ atrybutu inżynierskiego, należy wykonać następujące kroki.
 
@@ -48,7 +46,7 @@ Aby wyświetlić, utworzyć lub edytować typ atrybutu inżynierskiego, należy 
     - **Zakres wartości** — Ta opcja jest dostępna tylko w przypadku, gdy w polu **Typ** ustawiono wartość *Liczba całkowita*, *Dziesiętna* lub *Waluta*. Ustawienie tej opcji na wartość *Tak* spowoduje ustanowienie wartości minimalnych i maksymalnych, które będą akceptowane dla atrybutów tego typu. Skrócona karta **Zakres** umożliwia ustalenie wartości minimalnej i maksymalnej oraz (dla waluty) waluty stosowanej w odniesieniu do wprowadzonych limitów. Ustawienie tej opcji na *Nie* spowoduje akceptowanie dowolnych wartości. 
     - **Zakres wartości**  — To pole jest dostępne tylko w przypadku, gdy w polu  **Typ** ustawiono wartość *Liczba całkowita* lub *Dziesiętna*. Wybierz jednostkę miary stosowanego dla tego typu atrybutu. Jeśli jednostka nie jest wymagana, należy pozostawić to pole puste.
 
-#### <a name="set-up-engineering-attributes"></a>Ustawianie atrybutów inżynieryjnych
+### <a name="set-up-engineering-attributes"></a>Ustawianie atrybutów inżynieryjnych
 
 Aby wyświetlić, utworzyć lub edytować atrybut inżynierski, należy wykonać następujące kroki.
 
@@ -70,17 +68,43 @@ Aby wyświetlić, utworzyć lub edytować atrybut inżynierski, należy wykonać
     - **Minimum** — umożliwia wprowadzenie minimalnej zalecanej lub zaakceptowanej wartości minimalnej.
     - **Maksimum** — umożliwia wprowadzenie maksymalnej zalecanej lub zaakceptowanej wartości.
 
-### <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Łączenie atrybutów inżynieryjnych z kategorią produktów inżynierii
+### <a name="engineering-attribute-inheritance"></a>Dziedziczenie atrybutów inżynieryjnych
+
+W przypadku struktur produktów, takich jak BOM lub formuły, wybrane atrybuty mogą być przekazywane z towarów podrzędnych do towarów nadrzędnych. Ten proces można określić jako „dziedziczenie odwrotne”.
+
+#### <a name="turn-on-this-feature-for-your-system"></a>Włączanie funkcji w systemie
+
+Jeśli Twój system nie zawiera jeszcze funkcji opisanych w tej sekcji, przejdź do [Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) i włącz funkcję *Ulepszone dziedziczenie atrybutów na potrzeby zarządzania zmianami inżynieryjnymi*.
+
+#### <a name="attribute-inheritance-example"></a>Przykład dziedziczenia atrybutów
+
+W przypadku produktu żywnościowego, na przykład ciasta marchewkowego, system musi zarejestrować wszystkie składniki, które zawiera produkt. Ciasto można modelować w systemie jako produkt inżynieryjny, który ma formułę. Ta formuła zawiera składniki ciasta marchewkowego: mąki, mleka, ciastka czy orzechów. W tym przykładzie firma oferuje dwa modele ciasta marchewkowego: jeden z nich zawiera laktozę, a drugi nie.
+
+Ciasto z laktozą ma następujące atrybuty na poziomie składników:
+
+- Składnik „mąka”: atrybut „gluten” = tak
+- Składnik „mleko”: atrybut „laktoza” = tak
+- Składnik „orzechy”: atrybut „orzechy” = tak
+
+Ciasto bez laktozą zawiera mleko bez laktozy i ma następujące atrybuty na poziomie składników:
+
+- Składnik „mąka”: atrybut „gluten” = tak
+- Składnik „mleko”: atrybut „laktoza” = nie
+- Składnik „orzechy”: atrybut „orzechy” = tak
+
+Te produkty są zazwyczaj podobne, więc może być wygodniejsze przekazywanie te atrybuty od produktów podrzędnych (dwa warianty) do produktu nadrzędnego (podstawowe ciasto marchewkowe). Do zaimplementowania tego „dziedziczenia odwrotnego” można użyć funkcji *dziedziczenia atrybutów*. Ta funkcjonalność jest zdefiniowana dla każdej [wersji inżynieryjnej](engineering-versions-product-category.md).
+
+## <a name="connect-engineering-attributes-to-an-engineering-product-category"></a>Łączenie atrybutów inżynieryjnych z kategorią produktów inżynierii
 
 Niektóre atrybuty inżynieryjne dotyczą wszystkich produktów, natomiast inne są charakterystyczne dla poszczególnych produktów lub kategorii produktów. Na przykład atrybuty elektryczne nie są wymagane w przypadku produktów mechanicznych. Można więc skonfigurować *Kategorie produktów inżynieryjnych*. Kategoria produktów inżynierii określa zbiór atrybutów inżynieryjnych, które muszą być częścią definicji produktów należących do danej kategorii. Można również określić, które atrybuty inżynieryjne są wymagane i czy mają wartość domyślną.
 
 Aby uzyskać więcej informacji na temat pracy z kategoriami produktów inżynieryjnych, w tym informacje o sposobach łączenia atrybutów z kategoriami, zapoznaj się z [Wersjami inżynieryjnymi i kategoriami produktów inżynieryjnych](engineering-versions-product-category.md).
 
-### <a name="set-values-for-engineering-attributes"></a>Ustawienie wartości atrybutów inżynieryjnych
+## <a name="set-attribute-values-for-engineering-attributes"></a>Ustawienie wartości atrybutu dla atrybutów inżynieryjnych
 
 Atrybuty inżynieryjne połączone z kategorią produktów inżynierii są prezentowane podczas tworzenia nowego produktu inżynieryjnego, który jest oparty na tej kategorii. W tym momencie można określić wartości atrybutów. Później wartości te można zmienić na stronie **wersji inżynierskiej** lub w ramach zarządzania zmianami inżynieryjnymi w ramach inżynieryjnego żądania zmiany. Aby uzyskać więcej informacji, zobacz [Zarządzanie zmianami dotyczącymi produktów inżynieryjnych](engineering-change-management.md).
 
-### <a name="create-an-engineering-product"></a>Tworzenie produktu inżynieryjnego
+## <a name="create-an-engineering-product"></a>Tworzenie produktu inżynieryjnego
 
 Aby utworzyć produkt inżynieryjny, otwórz stronę **uwolnione produkty**. Następnie w okienku akcji na karcie **Produkt** w grupie **Nowy** wybierz opcję **Atrybuty produktu**.
 

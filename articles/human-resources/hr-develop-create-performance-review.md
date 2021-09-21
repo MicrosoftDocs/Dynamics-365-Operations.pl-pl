@@ -1,8 +1,8 @@
 ---
 title: Tworzenie przeglądów wydajności
 description: W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano przeznaczenie każdej sekcji przeglądu.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732256"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431167"
 ---
 # <a name="create-performance-reviews"></a>Tworzenie przeglądów wydajności
 
@@ -65,13 +65,13 @@ W tym temacie pokazano sposób utworzenia przeglądu wydajności oraz opisano pr
 30. Kliknij kartę **Wyniki oceny**.  
 
     - Skrócona karta **Szczegóły oceny** umożliwia pracownikom ocenianie samych siebie, a kierownikom ocenianie pracowników. Jeśli są używane wagi, wartość wagi wyniku będzie obliczana automatycznie.  
-    - Aby wyświetlić tę sekcję, należy włączyć ustawienia parametrów wyświetlania ocen pracowników.  
+    - Aby wyświetlić tę sekcję, włącz ustawienia parametrów wyświetlania ocen pracowników na stronie **Udostępniane parametry zasobów ludzkich**.  
 
-31. Wybierz kartę **Podpisy**. Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Wymagane pole wyboru jest zaznaczone na podstawie ustawień typu przeglądu.  
+31. Wybierz kartę **Podpisy**. Jeśli przegląd używa przepływu pracy, podpisy pojawią się dopiero po zakończeniu przepływu pracy. Jeśli nie jest używany przepływ pracy, są tutaj wyświetlani zarówno pracownik, jak i kierownik. Pole wyboru **Wymagane** dla obszaru **Podpisy** jest zaznaczone na podstawie ustawień typu przeglądu.  
 32. Kliknij kartę **Ogólne**.
 
     - Okres wydajności tworzy domyślne daty rozpoczęcia i zakończenia. Te daty są edytowalne.  
-    - Stany kontrolują dostęp do przeglądu. Stan **Nie rozpoczęto** umożliwia wszystkim osobom edytowanie przeglądu. Stan **W toku** umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan **Gotowe do przeglądu** umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan **Ostateczny przegląd** umożliwia pracownikowi i kierownikowi wyświetlanie przeglądu oraz edytowanie go, jeśli pozwala na to konfiguracja typu przeglądu. Stany **Zakończono** i **Anulowano** powodują, że przegląd jest tylko do odczytu. Jeśli przegląd zostanie **odrzucony** i odesłany do pracownika etatowego, pracownik etatowy i kierownik mogą dokonać niezbędnych zmian, aby pracownik etatowy mógł ponownie go przesłać.
+    - Stany kontrolują dostęp do przeglądu. Stan **Nie rozpoczęto** umożliwia wszystkim osobom edytowanie przeglądu. Stan **W toku** umożliwia wyświetlania i edytowanie przeglądu tylko konkretnemu pracownikowi. Stan **Gotowe do przeglądu** umożliwia wyświetlanie i edytowanie przeglądu tylko kierownikowi. Stan **Ostateczny przegląd** pozwala pracownikowi i menedżerowi na wyświetlanie i edytowanie przeglądu, jeśli w typie przeglądu wybrano opcję **Zezwalaj na edycję ostatecznego przeglądu**. Stany **Zakończono** i **Anulowano** powodują, że przegląd jest tylko do odczytu. Jeśli przegląd zostanie **odrzucony** i odesłany do pracownika etatowego, pracownik etatowy i kierownik mogą dokonać niezbędnych zmian, aby pracownik etatowy mógł ponownie go przesłać.
 
 33. W polu **Przegląd** wpisz wartość.
 34. Wybierz kartę **Przegląd**. Gdy przegląd przechodzi przez kolejne stany, pracownik i kierownik mogą dodawać komentarze do każdego celu lub kompetencji.  

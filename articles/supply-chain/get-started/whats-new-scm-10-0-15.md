@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: da097f99eda239377b56e9ad35f658b3b408b5d588d82e0ec2759e6fbe72b4b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 18408e64bd06db2e05038d14f284b799b6c19e68
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751153"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471819"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management w wersji 10.0.15 (styczeń 2021 r.)
 
@@ -35,7 +35,7 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 
 To wydanie obejmuje następujące nowe funkcje. Postępuj zgodnie z łączami do [planu wydania](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features), aby przejrzeć oficjalne daty zwolnienia dla każdej z funkcji.
 
-- Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych<br> - Aby uzyskać więcej informacji, zobacz [Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych](../cloud-edge/cloud-edge-landing-page.md).
+- Zarządzanie jednostką skali chmurą i jej krawędzią przy produkcji i wykonywaniu zadań magazynowych<br> - Więcej informacji zawiera temat [Jednostki skalowania w dystrybuowanej topologii hybrydowej](../cloud-edge/cloud-edge-landing-page.md).
 
 - [Tworzenie i przetwarzanie zamówień przeniesienia z aplikacji magazynowej](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/ad-hoc-transfer-order-creation-warehousing-mobile-app)<br> - Aby uzyskać więcej informacji, zobacz temat [Tworzenie zamówień przeniesienia z aplikacji magazynowej](../warehousing/create-transfer-order-from-warehouse-app.md).
 

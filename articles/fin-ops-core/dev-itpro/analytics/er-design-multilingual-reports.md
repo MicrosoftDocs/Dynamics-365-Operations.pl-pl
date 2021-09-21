@@ -2,7 +2,7 @@
 title: Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 description: W tym temacie wyjaśniono, jak można stosować etykiety raportów elektronicznych (ER) do projektowania i generowania raportów wielojęzycznych.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718436"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473412"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Projektowanie raportów wielojęzycznych w module raportowanie elektroniczne
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Omówienie
 
@@ -229,10 +231,14 @@ Zgodnie z opisem opisanym wcześniej w tym temacie atrybuty **Etykieta** i **Opi
 - Wartość etykiety ER połączona z atrybutami **Etykiety** jest przechowywana w polu **Etykieta** zwróconego rekordu.
 - Wartość etykiety ER połączona z atrybutami **Opisu** jest przechowywana w polu **Opis** zwróconego rekordu.
 
+## <a name="performance"></a><a name=performance></a>Wydajność
+
+Podczas konfigurowania składnika formatu ER w celu wygenerowania raportu w preferowanym [języku](#language) lub zaimportowania dokumentu przychodzącego, w którym zawartość jest analizowana według preferowanego języka, zaleca się włączenie funkcji **buforowania preferowanego języka bieżącego użytkownika dla uruchamiania ER** w obszarze roboczym [Zarządzanie funkcjami](../../fin-ops/get-started/feature-management/feature-management-overview.md). Ta funkcja pomaga poprawić wydajność, zwłaszcza w przypadku składników formatu ER, które zawierają wiele odwołań do etykiet w formułach i powiązaniach funkcji elektronicznej oraz wiele reguł [walidacji](general-electronic-reporting-formula-designer.md#TestFormula) do generowania komunikatów użytkownika w preferowanym języku.
+
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 
 - [Raportowanie elektroniczne — omówienie](general-electronic-reporting.md)
-- [Funkcje raportowania elektronicznego](er-formula-language.md#functions)
+- [Funkcje raportowania elektronicznego](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

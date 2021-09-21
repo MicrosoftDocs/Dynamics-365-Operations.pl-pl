@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345156"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475043"
 ---
 # <a name="inventory-visibility-reservations"></a>Rezerwacje dodatku Widoczność magazynu
 
@@ -32,19 +32,20 @@ Opcjonalnie można skonfigurować rozwiązanie Microsoft Dynamics 365 Supply Cha
 
 Po włączeniu funkcji rezerwacji rozwiązanie Supply Chain Management automatycznie staje się gotowe do kompensacji rezerwacji, które są dokonywane za pomocą dodatku Widoczność magazynu.
 
-> [!NOTE]
-> Funkcja kompensacji wymaga Supply Chain Management w wersji 10.0.22 lub nowszej. Jeśli chcesz używać rezerwacji w dodatku Widoczność magazynu, zalecamy, aby czekać na uaktualnienie Supply Chain Management do wersji 10.0.22 lub nowszej.
-
-## <a name="turn-on-the-reservation-feature"></a>Włączanie funkcji rezerwacji
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Włączanie i konfigurowanie funkcji rezerwacji
 
 Aby włączyć funkcję rezerwacji, należy wykonać następujące kroki.
 
-1. W Power Apps otwórz stronę **Widoczność magazynu**.
+1. Zaloguj się do Power Apps i otwórz dodatek **Widoczność magazynu**.
 1. Otwórz stronę **Konfiguracja**.
 1. Na karcie **Zarządzanie funkcjami** włącz funkcję *OnHandReservation*.
 1. Zaloguj się do modułu Supply Chain Management.
-1. Wybierz kolejno opcje **Zarządzanie zapasami \> Ustawienia \> Parametry integracji dodatku Widoczność magazynu**.
-1. W obszarze **Kompensacja rezerwacji** ustaw wartość *Tak* dla opcji **Włącz kompensację rezerwacji**.
+1. Przejdź do obszaru roboczego **[Zarządzanie funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** i włącz funkcję *Integracja z dodatkiem Widoczność magazynu z przesunięciem rezerwacji* (wymagana jest wersja 10.0.22 lub nowsza).
+1. Przejdź do **Zarządzanie zapasami \> Ustawienia \> Parametry integracji dodatku Widoczność magazynu**, otwórz kartę **Przesunięcie rezerwacji** i ustaw następujące ustawienia:
+    - **Włącz przesunięcie rezerwacji** — aby włączyć tę funkcję, ustaw wartość *Tak*.
+    - **Modyfikator przesunięcia rezerwacji** — wybierz stan transakcji magazynowej, który będzie powodować przesunięcie rezerwacji w dodatku Widoczność magazynu. To ustawienie określa etap przetwarzania zamówienia, który wyzwala przesunięcia. Etap jest śledzony według stanu transakcji magazynowej zamówienia. Wybierz jedną z następujących opcji:
+        - *Na zamówienie* — w przypadku stanu *W transakcji* po utworzeniu zamówienia będzie wysyłane żądanie przeciwstawne. Ilość przesunięcia będzie ilością z utworzonego zamówienia.
+        - *Rezerwa* — w przypadku stanu *Zarezerwuj zamówioną transakcję* zamówienie wysyła żądanie przeciwstawne, gdy zostanie zarezerwowane, skompletowane, zaksięgowane z listą wysyłkową lub zafakturowane. Żądanie zostanie wyzwolone tylko raz, podczas pierwszego kroku w momencie wystąpienia wymienionego procesu. Ilość przesunięcia to ilość, w której stan transakcji magazynowej zmienił się z *Zamówione* na *Zamówione zarezerwowane* (lub późniejszy) w odpowiednim wierszu zamówienia.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Używanie funkcji rezerwacji w dodatku Widoczność magazynu
 
@@ -56,13 +57,21 @@ Hierarchia rezerwacji opisuje sekwencję wymiarów, które muszą być określon
 
 Hierarchia rezerwacji może się różnić od hierarchii indeksów. Ta niezależność umożliwia wdrożenie zarządzania kategoriami, w którym użytkownicy mogą rozbić wymiary na szczegóły, aby określić wymagania dotyczące dokonywania precyzyjniejszych rezerwacji.
 
-Aby skonfigurować hierarchię rezerwacji wstępnej w Power Apps, otwórz stronę **Konfiguracja**, a następnie na karcie **Mapowanie rezerwacji wstępnej** skonfiguruj hierarchię rezerwacji, dodając i/lub modyfikując wymiary i ich poziomy hierarchii.
+Aby skonfigurować hierarchię rezerwacji wstępnej w Power Apps, otwórz stronę **Konfiguracja**, a następnie na karcie **Hierarchia rezerwacji wstępnej** skonfiguruj hierarchię rezerwacji, dodając i/lub modyfikując wymiary i ich poziomy hierarchii.
+
+Hierarchia rezerwacji wstępnej powinna zawierać składniki `SiteId` i `LocationId`, ponieważ konstruują one konfigurację partycji.
+
+Aby uzyskać więcej informacji o sposobie konfigurowania rezerwacji, zobacz temat [Konfiguracja rezerwacji](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Wywoływanie interfejsu API rezerwacji
 
 Rezerwacje są dokonywane w usłudze Widoczność magazynu przez przesłanie żądania POST do adresu URL usługi, takiego jak `/api/environment/{environment-ID}/onhand/reserve`.
 
 W przypadku rezerwacji treść żądania musi zawierać identyfikator organizacji, identyfikator produktu, zarezerwowane ilości i wymiary. Żądanie generuje unikatowy identyfikator rezerwacji dla każdego rekordu rezerwacji. Rekord rezerwacji zawiera unikatową kombinację identyfikatora produktu i wymiarów.
+
+Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana. Wartością domyślną jest `True`.
+
+Aby anulować rezerwację lub cofnąć rezerwację określonych ilości magazynowych, ustaw ilość na wartość ujemną i ustaw parametr `ifCheckAvailForReserv` na `False`, aby pominąć weryfikację.
 
 Oto przykładowa treść żądania.
 
@@ -108,18 +117,9 @@ W przypadku stanów transakcji magazynowych, które zawierają określony modyfi
 
 Ilość przeciwstawna jest zgodna z ilością zapasów określoną w transakcjach magazynowych. Kompensacja nie skutkuje, jeśli w usłudze Widoczność magazynu nie pozostanie żadna zarezerwowana ilość.
 
-> [!NOTE]
-> Funkcja kompensacji jest dostępna od wersji 10.0.22
+### <a name="set-up-the-reservation-offset-modifier"></a>Konfigurowanie modyfikatora przesunięcia rezerwacji
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Konfigurowanie modyfikatora kompensacji rezerw
-
-Modyfikator kompensacji rezerw określa etap przetwarzania zamówienia, który wyzwala kompensacje. Etap jest śledzony według stanu transakcji magazynowej zamówienia. Aby skonfigurować modyfikator kompensacji rezerw, należy wykonać następujące kroki.
-
-1. Wybierz kolejno opcje **Zarządzanie zapasami \> Ustawienia \> Parametry integracji dodatku Widoczność magazynu \> Kompensacja rezerwacji**.
-1. W polu **Modyfikator kompensacji rezerw** określ jedną z następujących wartości:
-
-    - *Na zamówienie* — w przypadku stanu *W transakcji* po utworzeniu zamówienia będzie wysyłane żądanie przeciwstawne.
-    - *Rezerwa* — w przypadku stanu *Zarezerwuj zamówioną transakcję* zamówienie wysyła żądanie przeciwstawne, gdy zostanie zarezerwowane, skompletowane, zaksięgowane z listą wysyłkową lub zafakturowane. Żądanie zostanie wyzwolone tylko raz, podczas pierwszego kroku w momencie wystąpienia wymienionego procesu.
+Jeśli nie zostało to zrobione wcześniej, należy skonfigurować modyfikator rezerwacji zgodnie z opisem w temacie [Włączanie i konfigurowanie funkcji rezerwacji](#turn-on).
 
 ### <a name="set-up-reservation-ids"></a>Konfigurowanie identyfikatorów rezerwacji
 

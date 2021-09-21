@@ -1,8 +1,8 @@
 ---
 title: Edytuj informacje osobiste
 description: W tym artykule opisano sposób edycji informacji osobistych w Samoobsłudze pracownika i menedżera.
-author: andreabichsel
-ms.date: 03/19/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80b4537601491c97c24cfa1fef5088cbf1ac276df76534034117161b0fe79dc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715904"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431469"
 ---
-# <a name="edit-personal-information"></a>Edytuj informacje osobiste
+# <a name="edit-personal-information"></a>Edytowanie informacji osobistych
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Informacje osobiste można edytować w Dynamics 365 Human Resources w obszarze **roboczym samoobsługi pracownika etatowego**.
+Informacje osobiste można edytować w Dynamics 365 Human Resources, obszar roboczy **samoobsługi pracownika etatowego**.
 
 Informacje osobiste, które można edytować, obejmują:
 
@@ -40,7 +40,7 @@ Informacje osobiste, które można edytować, obejmują:
 >[!NOTE]
 >Możesz nie być w stanie edytować niektórych typów danych osobowych, takich jak biznesowe dane kontaktowe. Aby uzyskać więcej informacji, zobacz temat [Ogranicz edycję danych osobowych](hr-employee-self-service-restrict-editing.md).
 
-Parametry ustawione w globalnej książce adresowej ustalają role, które mogą wyświetlać informacje osobiste użytkownika.
+Parametry ustawione w obszarze **parametrów globalnej książki adresowej** ustalają role, które mogą wyświetlać informacje osobiste użytkownika.
 
 1. W Human Resources wybierz opcję **Samoobsługa pracownika etatowego**.
 

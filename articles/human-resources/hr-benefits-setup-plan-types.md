@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423398"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431418"
 ---
 # <a name="plan-type-overview"></a>Przegląd typu planu
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423398"
 
 Typ planu to nadrzędna grupa konkretnych typów świadczeń. Każdy typ planu ma kod typu planu, który określa reguły typu planu. Na przykład typ planu **Podstawowe ubezpieczenie na życie** może mieć kod typu planu **Ubezpieczenie na życie**, ponieważ jest to rodzaj planu ubezpieczenia na życie i musi być zgodny z regułami określonymi w typie planu o kodzie **Ubezpieczenie na życie**. Innym typem planu może być **Dodatkowe ubezpieczenie na życie**. Ten typ planu będzie również kod typu planu **Ubezpieczenie na życie**.
 
-Każdy typ planu wskazuje, czy pracownik może się zarejestrować w jednym, czy w wielu planach tego typu. Na przykład pracownik prawdopodobnie może się zarejestrować w obu planach o typie Ubezpieczenie na życie — Podstawowe ubezpieczenie na życie i Dodatkowe ubezpieczenie na życie. Pracownik prawdopodobnie może się zarejestrować tylko w jednym planie o typie Medyczny.
+Każdy typ planu wskazuje, czy pracownik może się zarejestrować w jednym, czy w wielu planach tego typu. Na przykład pracownik prawdopodobnie może się zarejestrować w obu planach o typie Ubezpieczenie na życie — **Podstawowe ubezpieczenie na życie** i **Dodatkowe ubezpieczenie na życie**. Pracownik prawdopodobnie może się zarejestrować tylko w jednym planie o typie Medyczny.
 
-Jeśli typ planu uwzględnia kontakty, to wskazuje, czy te kontakty są beneficjentami, czy osobami na osobami na utrzymaniu. Na przykład typ planu Podstawowe ubezpieczenie na życie będzie miał beneficjentów, natomiast typ planu Podstawowe ubezpieczenie medyczne będzie miał osoby na utrzymaniu. W niektórych przypadkach plan może nie mieć żadnych kontaktów osobistych. Na przykład: Konto wydatków elastycznych lub Dodatek parkingowy.
+Jeśli typ planu uwzględnia kontakty, to wskazuje, czy te kontakty są beneficjentami, czy osobami na osobami na utrzymaniu. Na przykład typ planu **Podstawowe ubezpieczenie na życie** będzie miał beneficjentów, natomiast typ planu Podstawowe ubezpieczenie medyczne będzie miał osoby na utrzymaniu. W niektórych przypadkach plan może nie mieć żadnych kontaktów osobistych. Na przykład: Konto wydatków elastycznych lub Dodatek parkingowy.
 
-Typ planu może określać opcje objęcia świadczeniami. Opcje objęcia świadczeniami definiuje się na stronie **Opcja objęcia świadczeniem**. Opcja objęcia świadczeniem może określać kwotę świadczenia lub kontakty kwalifikujące się do danego typu planu. Jeśli na przykład typ kontaktu to Beneficjent, opcja objęcia świadczeniem powinna określać warunki, jakie beneficjent ma prawo otrzymać podczas realizacji świadczenia. Jeśli typem kontaktu jest Osoba na utrzymaniu, opcja objęcia świadczeniem powinna definiować relację między osobą na utrzymaniu a pracownikiem etatowym. 
+
+Typ planu może określać opcje objęcia świadczeniami. Opcje objęcia świadczeniami definiuje się na stronie **Opcje objęcia świadczeniem**. Opcja objęcia świadczeniem może określać kwotę świadczenia lub kontakty kwalifikujące się do danego typu planu. Jeśli na przykład typ kontaktu to **Beneficjent**, opcja objęcia świadczeniem powinna określać warunki, jakie beneficjent ma prawo otrzymać podczas realizacji świadczenia. Jeśli typem kontaktu jest **Osoba na utrzymaniu**, opcja objęcia świadczeniem powinna definiować relację między osobą na utrzymaniu a pracownikiem etatowym. 
 
 > [!IMPORTANT]
-> Strona zawiera kluczowe dane, które wpływają na opcje dostępne podczas tworzenia nowego planu świadczeń:
+> Strona **Typy planów** zawiera kluczowe dane, które wpływają na opcje dostępne podczas tworzenia nowego planu świadczeń:
 >
 > - **Kod typu planu** — to pole ma wpływ na to, co jest wyświetlane na karcie **Konfiguracja** podczas konfigurowania rzeczywistej korzyści.  
 > - **Jednoczesna rejestracja** — to pole określa, czy dozwolone jest wiele rejestracji. (W przypadku planu medycznego pole to jest zazwyczaj **Jedna rejestracja**.)

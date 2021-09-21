@@ -2,7 +2,7 @@
 title: Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
 description: W tym temacie opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741819"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472178"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Obliczanie dostępności zapasów dla kanałów sprzedaży detalicznej
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 W tym temacie opisano sposób, w jaki firma może wykorzystać Microsoft Dynamics 365 Commerce do wyświetlania szacowanej dostępności produktów do dyspozycji w kanałach online i w sklepach.
 
@@ -43,6 +44,21 @@ W logice obliczania zapasów po stronie kanału są obecnie uznawane następują
 - Zapasy sprzedawane przez zamówienia odbiorców w sklepie lub kanale online
 - Zapasy zwrócone do sklepu
 - Magazyn zrealizowany (pobranie, spakowanie, wysyłka) z magazynu sklepu
+
+Aby korzystać z obliczania zapasów po stronie kanału, należy włączyć funkcję **zoptymalizowanego obliczania dostępności produktu**.
+
+Jeśli środowisko Commerce jest w wersji **10.0.8 do 10.11**, wykonaj następujące kroki.
+
+1. W centrali rozwiązania Commerce przejdź do **Retail i Commerce** \> **Wspólne parametry Commerce**.
+1. Na karcie **Zapasy** w polu **Zadanie dostępności produktów** wybierz opcję **Używaj zoptymalizowanego procesu dla zadania dostępności produktu**.
+
+Jeśli środowisko Commerce jest w wersji **10.0.12 lub nowszej**, wykonaj następujące kroki.
+
+1. W centrali rozwiązania Commerce przejdź do **Obszary robocze \> Zarządzanie funkcjami** i włącz funkcję **zoptymalizowanego obliczania dostępności produktu**.
+1. Jeśli kanały sprzedaży online i sklepu korzystają z tych samych magazynów realizacji, należy również włączyć funkcję **rozszerzonej logiki obliczania zapasów po stronie kanału e-commerce**. W ten sposób logika obliczania po stronie kanału będzie uwzględniać niezaksięgowane transakcje utworzone w kanale sklepu. (Te transakcje mogą być transakcjami gotówki i przeniesienia, zamówieniami odbiorcy i zwrotami).
+1. Uruchom zadanie **1070** (**konfiguracja kanału**).
+
+Jeśli środowisko Commerce zostało uaktualnione z wersji wcześniejszej niż wersja 10.0.8 programu Commerce, po włączeniu funkcji **zoptymalizowanego obliczania dostępności produktu** należy również uruchomić funkcję **Zainicjuj harmonogram handlu**, aby ta funkcja działała. Aby uruchomić inicjowanie, przejdź do **Retail i Commerce** \> **Ustawienia centrali** \> **Harmonogram aplikacji Commerce**.
 
 Aby można było korzystać z obliczania zapasów po stronie kanału, jako warunek wstępny musi być wysyłana okresowa migawka danych magazynowych z centrali utworzonych za pomocą zadania **Dostępność produktu** do baz danych kanału. Migawka przedstawia informacje o dostępności zapasów posiadane przez centralę w odniesieniu do konkretnej kombinacji produktu lub wariantu produktu oraz magazynu. Obejmuje ona tylko transakcje magazynowe, który były przetwarzane i zaksięgowane w centrali w momencie wykonania migawki i może być nierówna 100-procentowej precyzji w czasie rzeczywistym z powodu stałego przetwarzania sprzedaży wykonywanego między serwerami rozproszonymi.
 
@@ -74,8 +90,6 @@ W Commerce dostępne są następujące interfejsy API scenariuszy handlu elektro
 Oba interfejsy API wewnętrznie korzystają z logiki obliczania po stronie kanału, a także zwracają szacowaną ilość **fizycznie dostępną**, **ilość** łączną dostępną ilość, **jednostkę miary (UoM)** i **poziom zapasów** żądanego produktu i magazynu. Zwrócone wartości mogą być wyświetlane w witrynie handlu elektronicznego w razie potrzeby lub mogą być używane do wyzwalania innych reguł biznesowych w witrynie handlu elektronicznego. Można na przykład uniemożliwić zakup produktów na poziomie zapasów „poza magazynem”.
 
 Mimo że inne interfejsy API dostępne na serwerze Commerce mogą przejść bezpośrednio do centrali, aby pobierać dostępne ilości produktów, nie zaleca się używania ich w środowisku handlu elektronicznego z powodu potencjalnych problemów z wydajnością oraz ten sam wpływ może być związany z tymi częstymi żądaniami na serwerach centrali. Ponadto w przypadku obliczeń strony kanału dwa wymienione powyżej interfejsy API mogą dokładniej oszacować dostępność produktu, biorąc pod uwagę transakcje utworzone w kanałach, które nie są jeszcze znane centralom.
-
-Przed użyciem dwóch wymienionych wcześniej interfejsów API należy włączyć funkcję **obliczania zoptymalizowanej dostępności produktów** za pośrednictwem obszaru roboczego **Zarządzanie funkcjami** w centrali. Jeśli kanały sprzedaży online i sklepu korzystają z tych samych magazynów realizacji, należy również włączyć funkcję **rozszerzonej logiki obliczania zapasów po stronie kanału e-commerce**, tak aby logika obliczeń po stronie kanału w obrębie tych dwóch interfejsów API zawierała współczynnik niezaksięgowanych transakcji (rozliczenie gotówkowo-towarowe, zamówienia odbiorcy, zwroty) w kanale sklepu. Po włączeniu tych funkcji konieczne będzie uruchomienie zadania **1070** (**Konfiguracja kanału**).
 
 Aby określić sposób zwracania ilości produktu w wynikowym interfejsie API, wykonaj następujące kroki.
 
@@ -136,6 +150,5 @@ Aby zapewnić możliwie najlepszy szacunek stanu zapasów, należy używać nast
 > - Ze względu na wydajność, gdy obliczenia dostępności zapasów w ramach kanału są używane do realizacji żądania dostępności zapasów przy użyciu logiki magazynowej obsługi handlu elektronicznego lub kanału punktu sprzedaży, w obliczeniu jest używana pamięć podręczna do określenia, czy minęła wystarczająca liczba godzin do ponownego uruchomienia logiki obliczeń. Domyślna pamięć podręczna została ustawiona na 60 sekund. Na przykład po stronie kanału można włączyć obliczanie dla sklepu i wyświetlić dostępne zapasy produktu na stronie **wyszukiwania zapasów**. Jeśli zostanie sprzedana jedna jednostka produktu, strona **wyszukiwania zapasów** nie będzie pokazywała zmniejszonych zapasów, dopóki pamięć podręczna nie zostanie wyczyszczona. Po zaksięgowaniu transakcji przez użytkowników w punkcie sprzedaży należy poczekać 60 sekund przed sprawdzeniem, czy stan dostępnych zapasów został zmniejszony.
 
 Jeśli scenariusz biznesowy wymaga krótszego czasu pamięci podręcznej, skontaktuj się z przedstawicielem pomocy technicznej, aby uzyskać pomoc.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

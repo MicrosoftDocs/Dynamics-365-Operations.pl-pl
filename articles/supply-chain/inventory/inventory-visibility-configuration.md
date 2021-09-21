@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345040"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474683"
 ---
-# <a name="inventory-visibility-configuration"></a>Konfiguracja dodatku Widoczność magazynu
+# <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-W tym temacie opisano sposób konfigurowania dodatku Widoczność magazynu.
+W tym temacie opisano sposób konfigurowania widoczności magazynu za pomocą aplikacji Widoczność magazynu w usłudze Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Wprowadzenie
 
@@ -35,27 +35,58 @@ Przed rozpoczęciem pracy z dodatkiem Widoczność magazynu należy wykonać nas
 - [Konfiguracja rezerwacji (opcjonalna)](#reservation-configuration)
 - [Przykład konfiguracji standardowej](#default-configuration-sample)
 
-> [!NOTE]
-> Konfiguracje dodatku Widoczność magazynu można wyświetlać i edytować w programie [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration). Po zakończeniu konfigurowania wybierz pozycję **Aktualizuj konfigurację** w aplikacji.
+## <a name="prerequisites"></a>Wymagania wstępne
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfiguracja źródła danych
+Przed rozpoczęciem należy zainstalować i skonfigurować dodatek Widoczność zapasów w sposób opisany w temacie [Instalowanie i ustawianie dodatku Widoczność magazynu](inventory-visibility-setup.md).
 
-Źródło danych reprezentuje system, z których pochodzą dane. Mogą to być na przykład źródła `fno` (co oznacza „aplikacje Dynamics 365 Finance and Operations”) i `pos` (co oznacza „punkt sprzedaży”).
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Włączenie funkcji Widoczność magazynu w zarządzaniu funkcjami usługi Power Apps
 
-Konfiguracja źródła danych składa się z następujących części:
+Dodatek Widoczność magazynu powoduje dodanie kilku nowych funkcji do instalacji usługi Power Apps. Domyślnie te funkcje są wyłączone. Aby ich użyć, otwórz stronę **Konfiguracja** w Power Apps, a następnie włącz następujące funkcje na karcie **Zarządzanie funkcjami**.
 
-- Wymiar (mapowanie wymiarów)
-- Fizyczna miara
-- Obliczona miara
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Znajdowanie punktu końcowego usługi
+
+Jeśli nie znasz prawidłowego punktu końcowego usługi Widoczność magazynu, otwórz stronę **Konfiguracja** w programie Power Apps, a następnie wybierz pozycję **Pokaż punkt końcowy usługi** w prawym górnym rogu. Na stronie zostanie pokazany prawidłowy punkt końcowy usługi.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Strona konfiguracji aplikacji Widoczność magazynu
+
+W usłudze Power Apps strona **Konfiguracja** aplikacji [Widoczność zapasów](inventory-visibility-power-platform.md) ułatwia skonfigurowanie dostępnych zapasów i rezerwacji wstępnej. Po zainstalowaniu tego dodatku domyślna konfiguracja zawiera wartość z Microsoft Dynamics 365 Supply Chain Management (źródło danych `fno`). Ustawienia domyślne można przejrzeć. Ponadto na podstawie wymagań firmy oraz wymagań księgowania zapasów w zewnętrznym systemie można zmodyfikować konfigurację w celu standaryzacji sposobu, w jaki zmiany zapasów mogą być księgowane, organizowane i wyszukiwane w różnych systemach. Pozostałe sekcje tego tematu zawierają informacje dotyczące sposobu używania poszczególnych części strony **Konfiguracja**.
+
+Po zakończeniu konfigurowania pamiętaj o wybraniu pozycji **Aktualizuj konfigurację** w aplikacji.
+
+## <a name="data-source-configuration"></a>Konfiguracja źródła danych
+
+Każde źródło danych reprezentuje system, z których pochodzą dane. Przykładowe nazwy źródła danych to `fno` (co oznacza „aplikacje Dynamics 365 Finance and Operations”) i `pos` (co oznacza „punkt sprzedaży”). System Supply Chain Management jest ustawiany jako domyślne źródło danych (`fno`) w aplikacji Widoczność magazynu.
 
 > [!NOTE]
 > Źródło danych `fno` jest zarezerwowane dla Dynamics 365 Supply Chain Management.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Wymiar (mapowanie wymiarów)
+Procedura dodawania źródła danych jest następująca.
 
-Celem konfiguracji wymiarów jest ujednolicenie integracji wielosystemowej dla księgowania zdarzeń i zapytań na podstawie kombinacji wymiarów
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Źródło danych** wybierz pozycję **Nowe źródło danych**, aby dodać źródło danych.
 
-Dodatek Widoczność magazynu obsługuje następujące ogólne wymiary podstawowe.
+> [!NOTE]
+> Podczas dodawania źródła danych należy sprawdzić poprawność nazwy źródła danych, fizycznych miar i mapowań wymiarów przed zaktualizowaniem konfiguracji dla usługi Widoczność magazynu. Po wybraniu opcji **Aktualizuj konfigurację** nie będzie można zmodyfikować tych ustawień.
+
+Konfiguracja źródła danych składa się z następujących części:
+
+- Wymiary (mapowanie wymiarów)
+- Fizyczne miary
+- Obliczone miary
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Wymiary (mapowanie wymiarów)
+
+Celem konfiguracji wymiarów jest ujednolicenie integracji wielosystemowej dla księgowania zdarzeń i zapytań na podstawie kombinacji wymiarów Widoczność magazynu zawiera listę wymiarów podstawowych, które można mapować na podstawie wymiarów źródła danych. Do mapowania są dostępne 33 wymiary.
+
+- Jeśli jednym ze źródeł danych jest Supply Chain Management, domyślnie 13 wymiarów jest mapowanych na standardowe wymiary Supply Chain Management. Pozostałych 12 wymiarów (od `inventDimension1` do `inventDimension12`) jest mapowanych na niestandardowe wymiary w Supply Chain Management. Pozostałe osiem wymiarów to wymiary rozszerzone, które można mapować na zewnętrzne źródła danych.
+- Jeśli Supply Chain Management nie jest jednym ze źródeł danych, można swobodnie mapować wymiary. W poniższej tabeli pokazano pełną listę dostępnych wymiarów.
+
+> [!NOTE]
+> Jeśli wymiar nie znajduje się na liście domyślnych wymiarów i jest wykorzystywane zewnętrzne źródło danych, zaleca się mapowanie przy użyciu wymiaru od `ExtendedDimension1` do `ExtendedDimension8`.
 
 | Typ wymiaru | Wymiar podstawowy |
 |---|---|
@@ -73,7 +104,8 @@ Dodatek Widoczność magazynu obsługuje następujące ogólne wymiary podstawow
 | Właściwe dla magazynu | `LicensePlateId` |
 | Inne | `VersionId` |
 | Magazyn (niestandardowy) | `InventDimension1` do `InventDimension12` |
-| Wewnętrzny | `ExtendedDimension1` do `ExtendedDimension8` |
+| Rozszerzenie | `ExtendedDimension1` do `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Typy wymiaru wymienione w poprzedniej tabeli służą tylko do celów informacyjnych. Nie trzeba ich definiować w dodatku Widoczność magazynu.
@@ -92,11 +124,24 @@ Systemy zewnętrzne mogą uzyskać dostęp do dodatku Widoczność magazynu za p
 
 Konfigurując mapowanie wymiarów, można wysyłać wymiary zewnętrzne bezpośrednio do dodatku Widoczność magazynu. Dodatek Widoczność magazynu będzie wtedy automatycznie konwertować wymiary zewnętrzne na wymiary podstawowe.
 
+Procedura dodawania mapowań wymiaru jest następująca.
+
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Źródło danych**, w sekcji **Mapowania wymiarów** wybierz pozycję **Dodaj**, aby dodać mapowania wymiarów.
+    ![Dodawanie mapowań wymiarów](media/inventory-visibility-dimension-mapping.png "Dodawanie mapowań wymiarów")
+
+1. W polu **Nazwa wymiaru** określ źródłowy wymiar.
+1. W polu **Na wymiar podstawowy** wybierz wymiar w aplikacji Widoczność zapasów, który chcesz mapować.
+1. Wybierz opcję **Zapisz**.
+
+Jeśli źródło danych zawiera na przykład wymiar koloru produktu, można je mapować na wymiar podstawowy `ColorId`, aby dodać wymiar niestandardowy `ProductColor` w źródle danych `exterchannel`. Jest on wtedy mapowany na wymiar podstawowy `ColorId`.
+
 ### <a name="physical-measures"></a>Fizyczne miary
 
-Fizyczne miary modyfikują ilość i odzwierciedlają stan zapasów. W zależności od wymagań można zdefiniować własne fizyczne miary.
+Gdy źródło danych księguje zmianę stanu zapasów do aplikacji Widoczność magazynu, zmiana ta jest księgowana przy użyciu *fizycznych miar*. Fizyczne miary modyfikują ilość i odzwierciedlają stan zapasów. W zależności od wymagań można zdefiniować własne fizyczne miary. Zapytania mogą być oparte na fizycznych miarach.
 
-Dodatek Widoczność magazynu zawiera listę domyślnych fizycznych miar połączonych z Supply Chain Management (źródło danych `fno`). Przykładowe fizyczne miary są przedstawione w następującej tabeli.
+Dodatek Widoczność magazynu zawiera listę domyślnych fizycznych miar połączonych z Supply Chain Management (źródło danych `fno`). Te domyślne fizyczne miary są brane pod uwagę w stanach transakcji magazynowych na stronie **Lista dostępnych** w Supply Chain Management (**Zarządzanie zapasami \> Zapytania i raporty \> Lista dostępnych**). Przykładowe fizyczne miary są przedstawione w następującej tabeli.
 
 | Nazwa fizycznej miary | opis |
 |---|---|
@@ -117,9 +162,31 @@ Dodatek Widoczność magazynu zawiera listę domyślnych fizycznych miar połąc
 | `ReservOrdered` | Zamówione i zarezerwowane |
 | `ReservPhysical` | Rezerwacja fizyczna |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Obliczone miary
+Jeśli źródłem danych jest Supply Chain Management, nie trzeba ponownie tworzyć domyślnych fizycznych miar. Jednak w przypadku zewnętrznych źródeł danych można utworzyć nowe fizyczne miary, korzystając z poniższych kroków.
 
-Obliczone miary stanowia niestandardową formułę obliczeń, która składa się z kombinacji fizycznych miar. Funkcja ta umożliwia zdefiniowanie zestawu fizycznych miar, które będą dodawane, i/lub zestawu fizycznych miar, które będą odejmowane, aby utworzyć niestandardową miarę.
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Źródło danych**, w sekcji **Miary fizyczne** wybierz opcję **Dodaj**, określ nazwę miary źródła i zapisz zmiany.
+
+### <a name="calculated-measures"></a>Obliczone miary
+
+Za pomocą aplikacji Widoczność magazynu można dokonywać zapytań zarówno na fizycznych miarach zapasów, jak i *niestandardowych obliczonych miarach*. Obliczone miary stanowia niestandardową formułę obliczeń, która składa się z kombinacji fizycznych miar. Funkcja ta umożliwia zdefiniowanie zestawu fizycznych miar, które będą dodawane, i/lub zestawu fizycznych miar, które będą odejmowane, aby utworzyć niestandardową miarę.
+
+Konfiguracja umożliwia zdefiniowanie zestawu modyfikatorów, które są dodawane lub odejmowane w celu uzyskania łącznej zagregowanej ilości wynikowej.
+
+Aby skonfigurować niestandardową miarę obliczaną, należy wykonać następujące czynności.
+
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Obliczona miara** wybierz pozycję **Nowa obliczona miara**, aby dodać obliczoną miarę. Następnie ustaw pola, które są opisane w następującej tabeli.
+
+    | Pole | Wartość |
+    |---|---|
+    | Nazwa nowej obliczonej miary | Umożliwia wprowadzenie nazwy obliczonej miary. |
+    | Źródło danych | Źródłem danych jest system wykonujący zapytanie. |
+    | Źródło danych modyfikatora | Umożliwia wprowadzenie źródła danych modyfikatora. |
+    | Modyfikator | Umożliwia wprowadzenie nazwy modyfikatora. |
+    | Typ modyfikatora | Wybór typ modyfikatora (*Dodawanie* lub *Odejmowanie*). |
 
 Na przykład wynik zapytania może być następujący.
 
@@ -202,7 +269,7 @@ Po użyciu tej formuły obliczeń nowy wynik zapytania będzie zawierał dostoso
 ]
 ```
 
-Wynik `MyCustomAvailableforReservation`, oparty na ustawieniu obliczania w niestandardowych miarach, to 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+Wynik `MyCustomAvailableforReservation`, oparty na ustawieniu obliczania w niestandardowych miarach, to 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Konfiguracja partycji
 
@@ -230,11 +297,21 @@ Dodatek Widoczność magazynu jest o tyle elastyczny, że umożliwia konfigurowa
 | Wymiar | Wymiary podstawowe, na których agregowany jest wynik zapytania. |
 | Hierarchia | Hierarchia służy do definiowania obsługiwanych kombinacji wymiarów, które mogą być używane w zapytaniach. Przykładowo, można skonfigurować zestaw wymiarów z sekwencją hierarchii `(ColorId, SizeId, StyleId)`. W takim przypadku system obsługuje zapytania na kombinacjach czterech wymiarów. Pierwsza kombinacja jest pusta, druga to `(ColorId)`, trzecia to `(ColorId, SizeId)`, a czwarta `(ColorId, SizeId, StyleId)`. Inne kombinacje nie są obsługiwane. Więcej informacji można znaleźć w następujących przykładach. |
 
+Procedura konfigurowania indeksu hierarchii produktów jest następująca.
+
+1. Zaloguj się do swojego środowiska Power Apps i otwórz aplikację **Widoczność magazynu**.
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Indeks hierarchii produktów**, w sekcji **Mapowania wymiarów** wybierz pozycję **Dodaj**, aby dodać mapowania wymiarów.
+1. Domyślnie jest dostarczana lista indeksów. Aby zmodyfikować istniejący indeks, wybierz pozycję **Edytuj** lub **Dodaj** w sekcji odpowiedniego indeksu. Aby utworzyć nowy zestaw indeksów, wybierz pozycję **Nowy zestaw indeksów**. Dla każdego wiersza w każdym zestawie indeksów w polu **Wymiar** wybierz wymiar z listy wymiarów podstawowych. Wartości w następujących polach są generowane automatycznie:
+
+    - **Numer zestawu** — wymiary należące do tej samej grupy (indeksu) zostaną pogrupowane i zostanie im przydzielony ten sam numer zestawu.
+    - **Hierarchia** — hierarchia służy do definiowania obsługiwanych kombinacji wymiarów, które mogą być używane w zapytaniach w grupie wymiarów (indeksie). Jeśli na przykład zostanie skonfigurowana grupa wymiarów z sekwencją hierarchii *Styl*, *Kolor* i *Rozmiar*, system obsługuje wynik trzech grup zapytań. Pierwsza grupa to sam styl. Druga grupa to kombinacja stylu i koloru. A trzecia grupa to kombinacja stylu, koloru i rozmiaru. Inne kombinacje nie są obsługiwane.
+
 ### <a name="example"></a>Przykład
 
 Ta sekcja zawiera przykład, który pokazuje, jak działa hierarchia.
 
-W magazynie są następujące towary.
+W poniższej tabeli przedstawiono listę dostępnych zapasów w tym przykładzie.
 
 | Pozycja | ColorId | SizeId | StyleId | Ilość |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ W magazynie są następujące towary.
 | Koszulka | Czerwony | Mały | Normalne | 6 |
 | Koszulka | Czerwony | Duży | Normalne | 7 |
 
-Oto indeks.
+W poniższej tabeli przedstawiono konfigurację hierarchii indeksów.
 
 | Numer zestawu | Wymiar | Hierarchia |
 |---|---|---|
@@ -284,6 +361,8 @@ Indeks umożliwia wykonywanie następujących zapytań o dostępne zapasy:
 
 > [!NOTE]
 > W konfiguracjach indeksów nie należy określać wymiarów podstawowych, które są definiowane w konfiguracji partycji.
+> 
+> Jeśli musisz wykonywać zapytanie tylko w odniesieniu do zapasów agregowanych przez wszystkie kombinacje wymiarów, można skonfigurować jeden indeks zawierający wymiar bazowy `Empty`.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguracja rezerwacji (opcjonalna)
 
@@ -296,22 +375,37 @@ Konfiguracja rezerwacji jest potrzebna wtedy, gdy ma być używana funkcja rezer
 
 ### <a name="soft-reservation-mapping"></a>Mapowanie rezerwacji wstępnej
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Podczas dokonywania rezerwacji można dowiedzieć się, czy dostępne zapasy można obecnie rezerwować. Sprawdzanie poprawności jest połączone z obliczoną miarą reprezentującą formułę obliczeń kombinacji fizycznych miar.
 
-Na przykład miara rezerwacji może być oparta na fizycznej mierze `SoftReservOrdered` ze źródła danych `iv` (Widoczność magazynu). W takim przypadku można skonfigurować obliczoną miarę `AvailableToReserve` źródła danych `iv`, jak pokazano w tym miejscu.
+Skonfigurowanie mapowania z fizycznej miary na obliczoną miarę umożliwia usłudze Widoczność magazynu automatyczne sprawdzanie dostępności rezerwacji na podstawie fizycznej miary.
 
-| Typ obliczania | Źródło danych | Fizyczna miara |
-|---|---|---|
-| Dodanie | `fno` | `AvailPhysical` |
-| Dodanie | `pos` | `Inbound` |
-| Odejmowanie | `pos` | `Outbound` |
-| Odejmowanie | `iv` | `SoftReservOrdered` |
+Przed skonfigurowaniem tego mapowania fizyczne miary, obliczone miary i ich źródła danych muszą być zdefiniowane na kartach **Źródło danych** i **Obliczona miara** na stronie **Konfiguracja** w Power Apps (jak opisano wcześniej w tym temacie).
 
-Następnie należy skonfigurować mapowanie rezerwacji wstępnej, aby utworzyć mapowanie miary rezerwacji `SoftReservOrdered` na obliczoną miarę `AvailableToReserve`.
+Procedura definiowania mapowania rezerwacji wstępnej jest następująca.
 
-| Źródło danych fizycznej miary | Fizyczna miara | Dostępne dla źródła danych rezerwacji | Dostępne dla obliczonej miary rezerwacji |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Zdefiniuj fizyczną miarę pełniącą rolę miary rezerwacji miękkiej (na przykład `SoftReservOrdered`).
+1. Na karcie **Obliczona miara** na stronie **Konfiguracja** zdefiniuj obliczoną miarę *dostępne do rezerwacji* (AFR), zawierającą formułę obliczeń AFR, która ma zostać zmapowana na fizyczną miarę. Na przykład można skonfigurować miarę `AvailableToReserve` (dostępne do rezerwacji), aby była ona mapowana na wcześniej zdefiniowaną fizyczną miarę `SoftReservOrdered`. W ten sposób można stwierdzić, jakie ilości ze stanem zapasów `SoftReservOrdered` będą dostępne do rezerwacji. Poniższa tabela przedstawia formułę obliczeń AFR.
+
+    | Typ obliczania | Źródło danych | Fizyczna miara |
+    |---|---|---|
+    | Dodanie | `fno` | `AvailPhysical` |
+    | Dodanie | `pos` | `Inbound` |
+    | Odejmowanie | `pos` | `Outbound` |
+    | Odejmowanie | `iv` | `SoftReservOrdered` |
+
+    Zaleca się skonfigurowanie miary obliczanej, tak aby zawierała miarę fizyczną, na której opiera się miara rezerwacji. W ten sposób na ilość miary obliczanej będzie wpływać ilość miary rezerwacji. Dlatego w tym przykładzie obliczona miara `AvailableToReserve` źródła danych `iv` powinna zawierać jako składnik miarę fizyczną `SoftReservOrdered` ze źródła `iv`.
+
+1. Otwórz stronę **Konfiguracja**.
+1. Na karcie **Mapowanie rezerwacji wstępnej** należy skonfigurować mapowanie rezerwacji fizycznej na obliczoną miarę. W przypadku poprzedniego przykładu można użyć następujących ustawień, aby mapować `AvailableToReserve` na wcześniej zdefiniowaną fizyczną miarę `SoftReservOrdered`.
+
+    | Źródło danych fizycznej miary | Fizyczna miara | Dostępne dla źródła danych rezerwacji | Dostępne dla obliczonej miary rezerwacji |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Jeśli nie możesz edytować karty **Mapowanie rezerwacji wstępnej**, być może trzeba włączyć funkcję *OnHandReservation* na karcie **Zarządzanie funkcjami**.
 
 Teraz podczas dokonywania rezerwacji na `SoftReservOrdered` dodatek Widoczność magazynu będzie automatycznie znajdować `AvailableToReserve` i jego powiązaną formułę obliczeń w celu sprawdzania poprawności rezerwacji.
 
@@ -348,11 +442,16 @@ W takim przypadku ma zastosowanie następujące obliczenie:
 
 Jeśli zatem po próbie dokonania rezerwacji na `iv.SoftReservOrdered` ilość jest mniejsza lub równa `AvailableToReserve` (10), można wykonać rezerwację.
 
+> [!NOTE]
+> Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana. Wartością domyślną jest `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Hierarchia rezerwacji wstępnej
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hierarchia rezerwacji opisuje sekwencję wymiarów, które muszą być określone podczas dokonywania rezerwacji. Działa to w taki sam sposób, jak hierarchia indeksów produktu w przypadku zapytań o dostępne.
 
-Hierarchia rezerwacji jest niezależna od hierarchii indeksów produktu. Ta niezależność umożliwia wdrożenie zarządzania kategoriami, w którym użytkownicy mogą rozbić wymiary na szczegóły, aby określić wymagania dotyczące dokonywania precyzyjniejszych rezerwacji.
+Hierarchia rezerwacji jest niezależna od hierarchii indeksów produktu. Ta niezależność umożliwia wdrożenie zarządzania kategoriami, w którym użytkownicy mogą rozbić wymiary na szczegóły, aby określić wymagania dotyczące dokonywania precyzyjniejszych rezerwacji. Hierarchia rezerwacji wstępnej powinna zawierać składniki `SiteId` i `LocationId`, ponieważ konstruują one konfigurację partycji. Podczas dokonywania rezerwacji należy określić partycję produktu.
 
 Oto przykład hierarchii rezerwacji wstępnych.
 
@@ -364,10 +463,8 @@ Oto przykład hierarchii rezerwacji wstępnych.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-W tym przykładzie rezerwację można wykonać w następujących sekwencjach wymiarów:
+W tym przykładzie rezerwację można wykonać w następujących sekwencjach wymiarów. Musisz określić partycję produktu podczas dokonywania rezerwacji. W związku z tym można używać hierarchii podstawowej `(SiteId, LocationId)`.
 
-- `()`— nie określono wymiaru.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ W tym przykładzie rezerwację można wykonać w następujących sekwencjach wym
 
 Prawidłowa sekwencja wymiarów musi ściśle naśladować hierarchię rezerwacji, wymiar po wymiarze. Na przykład sekwencja hierarchii `(SiteId, LocationId, SizeId)` jest nieprawidłowy, ponieważ brakuje w niej `ColorId`.
 
+## <a name="complete-and-update-the-configuration"></a>Kończenie i aktualizowanie konfiguracji
+
+Po zakończeniu konfiguracji należy zatwierdzić wszystkie zmiany w aplikacji Widoczność magazynu. Aby zatwierdzić zmiany, wybierz pozycję **Aktualizuj konfigurację** w prawym górnym rogu strony **Konfiguracja** w Power Apps.
+
+Po pierwszym wybraniu opcji **Aktualizuj konfigurację** system zażąda poświadczeń.
+
+- **Identyfikator klienta** — identyfikator aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
+- **Identyfikator dzierżawcy** — identyfikator dzierżawcy systemu Azure.
+- **Klucz tajny klienta** — klucz tajny aplikacji systemu Azure utworzony dla aplikacji Widoczność magazynu.
+
+Po zalogowaniu konfiguracja zostanie zaktualizowana w usłudze Widoczność magazynu.
+
+> [!NOTE]
+> Należy pamiętać o sprawdzeniu poprawności nazwy źródła danych, fizycznych miar i mapowań wymiarów przed zaktualizowaniem konfiguracji dla usługi Widoczność magazynu. Po wybraniu opcji **Aktualizuj konfigurację** nie będzie można zmodyfikować tych ustawień.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Przykład konfiguracji standardowej
 
-Na etapie inicjowania dodatek Widoczność magazynu odznacza się domyślną konfiguracją. Konfigurację można zmodyfikować stosownie do wymagań.
+Na etapie inicjowania dodatek Widoczność magazynu jest ustawiony jako konfiguracja domyślna ze szczegółami podanymi w tym miejscu. Konfigurację tę można zmodyfikować stosownie do wymagań.
 
 ### <a name="data-source-configuration"></a>Konfiguracja źródła danych
 

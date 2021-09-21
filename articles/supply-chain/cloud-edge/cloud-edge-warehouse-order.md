@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731896"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471699"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Zamówienia magazynowe dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731896"
 
 ## <a name="what-are-warehouse-orders"></a>Co to są zamówienia magazynowe?
 
-*Zamówienia magazynowe* to rodzaj zamówienia utworzonego w celu obsługi wdrożeń magazynu centrum i jednostki skalowania. Umożliwiają one odbieranie zapasów podczas uruchamiania obciążenia magazynu na jednostce skalowania. Są one obecnie używane tylko z zamówieniami zakupu.
+*Zamówienia magazynowe* to rodzaj używanego w celu obsługi wdrożeń magazynu centrum i jednostki skalowania. Umożliwiają one odbieranie i wysyłanie zapasów podczas uruchamiania obciążenia magazynu na jednostce skalowania.
 
-Zamówienia magazynowe są używane w ramach przetwarzania zarządzania magazynem, na przykład gdy aplikacja Warehouse Management służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania przychodzącego zamówienia zakupu. Zamówienia magazynowe są tworzone w ramach procesu *Zwalnianie do magazynu* dostępnego dla zamówień zakupu, w których określono magazyn jednostek skalowania oraz towary, dla których można używać procesów zarządzania magazynem.
+Zamówienia magazynowe są używane jako część zarówno zarządzania magazynem przychodzącym, jak i wychodzącym. Są one tworzone w ramach procesu *Zwalnianie do magazynu*, który jest inicjowany w centrum.
+W przypadku przetwarzania przychodzącego aplikacja mobilna magazynu służy do rejestrowania fizycznych dostępnych zapasów podczas przetwarzania zamówień przychodzących. Jest to dostępne dla zamówień zakupu i zleceń produkcyjnych, w których określono magazyn jednostki skalowania, oraz towarów, dla których można używać procesów zarządzania magazynem.
+Wychodzące zamówienia magazynowe są używane jako część procesu grupy czynności wysyłki dla zamówień przeniesienia i sprzedaży.
 
 > [!IMPORTANT]
 > Zamówienia magazynowe są dostępne tylko we wdrożeniach, które korzystają z [obciążenia zarządzania magazynem dla jednostek skali chmury i urządzeń brzegowych](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Tworzenie zamówienia magazynowego
+## <a name="create-an-inbound-warehouse-order"></a>Utworzenie przychodzącego zamówienia magazynowego
 
-Aby utworzyć zamówienie magazynowe, należy wykonać następujące czynności.
+Aby utworzyć przychodzące zamówienie magazynowe dla procesu zamówienia zakupu, należy wykonać następujące kroki.
 
 1. Zaloguj się do wystąpienia rozwiązania Microsoft Dynamics 365 Supply Chain Management działającego w centrum. (Należy zainicjować proces *zwalniania do magazynu* po zalogowaniu się do centrum).
 1. Wybierz kolejno opcje **Zaopatrzenie i sourcing \> Zamówienia zakupu \> Wszystkie zamówienia zakupu**.

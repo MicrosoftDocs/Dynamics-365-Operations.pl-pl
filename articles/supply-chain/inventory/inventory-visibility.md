@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344295"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474995"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Dodatek Widoczność magazynu — omówienie
 
@@ -31,22 +31,20 @@ Jako mikrousługa oparta na Microsoft Dataverse, dodatek Widoczność magazynu j
 
 Dodatek Widoczność magazynu można zintegrować z wieloma systemami innych firm, ustawiając opcje konfiguracji standardowych wymiarów magazynowych oraz ustawiając typy transakcji. Dodatek Widoczność magazynu obsługuje również niestandardowe możliwości rozszerzania za pomocą konfigurowalnych obliczonych ilości.
 
-## <a name="supported-features"></a>Obsługiwane funkcje
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Integracja dodatku Widoczność magazynu z Dynamics 365 Supply Chain Management
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Integracja dodatku Widoczność magazynu z Dynamics 365 Supply Chain Management
+Zintegrowane rozwiązanie ściąga dane magazynowe z Dynamics 365 Supply Chain Management i w sposób ciągły śledzi zmiany zapasów. Aby uzyskać więcej informacji, zobacz temat [Instalowanie i konfigurowanie dodatku Widoczność magazynu](inventory-visibility-setup.md) oraz [Konfigurowanie dodatku Widoczność magazynu](inventory-visibility-configuration.md).
 
-Zintegrowane rozwiązanie ściąga dane magazynowe z Dynamics 365 Supply Chain Management i w sposób ciągły śledzi zmiany zapasów. Więcej informacji zawiera temat [Konfigurowanie dodatku Widoczność magazynu](inventory-visibility-setup.md).
+## <a name="get-a-global-view-of-inventory"></a>Uzyskiwanie widoku globalnego zapasów
 
-### <a name="get-a-global-view-of-inventory"></a>Uzyskiwanie widoku globalnego zapasów
-
-Zintegrowane rozwiązanie umożliwia definiowanie własnych źródeł danych i centralizowanie danych magazynowych. Więcej informacji zawiera temat [Konfiguracja dodatku Widoczność magazynu](inventory-visibility-configuration.md).
+Zintegrowane rozwiązanie umożliwia definiowanie własnych źródeł danych i centralizowanie danych magazynowych. Więcej informacji zawiera temat [Konfigurowanie dodatku Widoczność magazynu](inventory-visibility-configuration.md).
 
 Dostępne są dwa sposoby wyświetlania zapasów:
 
 - Przesłanie zapytania za pomocą interfejsu API o wysokiej wydajności. Ten interfejs API może zwracać dane magazynowe w czasie rzeczywistym bezpośrednio z pamięci podręcznej. Umowy i przykłady można znaleźć w [interfejsach publicznych API dodatku Widoczność magazynu](inventory-visibility-api.md).
 - Wyświetlanie nieprzetworzonej listy dostępnych zapasów. Ta lista jest okresowo synchronizowana z pamięcią podręczną i jest widoczna w Dataverse. Więcej informacji zawiera temat [Aplikacja Widoczność magazynu](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Rezerwacje wstępne
+## <a name="soft-reservations"></a>Rezerwacje wstępne
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

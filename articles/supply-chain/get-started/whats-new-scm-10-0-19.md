@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384666"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474899"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
@@ -66,8 +66,7 @@ Niedawno dodano lub znacząco zaktualizowano następujące tematy pomocy. Nie za
 | Zaopatrzenie i sourcing | [Wnioski o nadanie kategorii od dostawców](../procurement/category-requests-from-vendors.md) |
 | Zarządzanie informacjami o produktach | [Zarządzanie jednostką miary](../pim/tasks/manage-unit-measure.md)<br><br>[Obliczenia na potrzeby modelu konfiguracji produktu](../pim/config-model-calculations.md) |
 | Kontrola produkcji | [Zunifikowana sekwencja numerów dla identyfikatorów zadań](../production-control/unified-job-ids.md) |
-| Zarządzanie transportem | [Klasy LTL](../transportation/ltl-class.md)<br><br>[Numery NMFC](../transportation/nmfc-codes.md) |
-| Zarządzanie magazynem | [Rozwiązywanie problemów z hierarchiami rezerwacji partii i numerów seryjnych w magazynie](../warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md) |
+| Zarządzanie transportem | [Klasy LTL](../transportation/ltl-class.md)<br><br>[Kody NMFC](../transportation/nmfc-codes.md) |
 | Zarządzanie magazynem, tworzenie i przetwarzanie grupy czynności | [Tworzenie i przetwarzanie grupy czynności](../warehousing/wave-processing.md)<br><br>[Parametry magazynu dla przetwarzania grupy czynności](../warehousing/wave-warehouse-parameters.md)<br><br>[Szablony grupy czynności](../warehousing/wave-templates.md)<br><br>[Alokacja grupy czynności](../warehousing/wave-allocation-method.md)<br><br>[Tworzenie planu pracy podczas grupy czynności](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Konteneryzacja](../warehousing/wave-containerization.md)<br><br>[Powiadomienia dotyczące wykonania grupy czynności](../warehousing/wave-execution-notifications.md) |
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby

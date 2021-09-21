@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5809d4a29c4209d8fb42bdfd441a3a4fb201ca6c6318abc0315a02ead7c551de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759168"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463636"
 ---
 # <a name="address-books-faq"></a>Książki adresowe — często zadawane pytania
 
@@ -66,10 +66,12 @@ Rekordy stron można wprowadzić w globalnej książce adresowej albo na stronie
 
 Można ustawić tłumaczenia informacji adresowych, tak aby były wyświetlane w języku użytkownika (systemu) w programie, ale w innym języku w dokumentach, takich jak zamówienia sprzedaży. Można wprowadzić tłumaczenia nazw krajów/regionów, celów adresów oraz sekwencji nazw. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. W takim przypadku możesz wyświetlić rekord klienta po duńsku w programie, ale wyświetlić informacje adresowe po francusku w drukowanym zamówieniu sprzedaży. Podczas konfigurowania tłumaczenia należy wprowadzić tłumaczenie dla każdego elementu na liście. Elementy bez tłumaczenia będą zawsze wyświetlane w języku systemu. Jeśli na przykład Twoim językiem jest duński, i chcesz utworzyć zamówienie sprzedaży dla klienta we Francji. Jeśli nie wprowadzisz hiszpańskich (ESP) tłumaczeń informacji adresowych, będą one wyświetlane po duńsku zarówno w programie jaki w drukowanych dokumentach.
 
-## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Po zaimportowaniu adresów przy uzyskiwaniu dostępu do rekordów, dla których nie mogę edytować zaimportowanych adresów?
+## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>Dlaczego po zaimportowaniu adresów nie można edytować rekordów?
 
-Podczas importowania adresów istnieje pole o etykiecie **IsLocationOwner**, które wskazuje, czy strona skojarzona z lokalizacją (adresem) jest właścicielem adresu. Jeśli strona jest właścicielem adresu, adres można edytować, gdy jest dostępny przy użyciu strony w globalnej książce adresowej lub z formularza rekordu głównego (takiego jak odbiorca, dostawca lub pracownik). Jeśli strona nie jest właścicielem adresu, rekordu nie można edytować z wcześniej wymienionych formularzy. Podczas importowania adresów wartość **IsLocationOwner** powinna mieć wartość **Tak**, jeśli chcesz, aby adres był edytowany przy użyciu skojarzonej strony. Czasami jednak to pole jest importowane niepoprawnie. Aby rozwiązać ten problem, właściciela lokalizacji można zaktualizować w globalnej książce adresowej z rekordu strony lub strony **Potwierdź właścicieli lokalizacji**. Aby zaktualizować rekord pojedynczej strony, wybierz opcje **Globalna książka adresowa > Adres**. Wybierz pozycję **Edytuj**, aby uruchomić stronę **Edytuj adres**, aby zmienić właściciela lokalizacji. Wybierz pozycję **Zmień właściciela lokalizacji**, aby zobaczyć poprzedniego właściciela lokalizacji, z aktualnie zaznaczoną stroną będącą nowym właścicielem lokalizacji Jeśli poprzedni właściciel lokalizacji jest pusty, oznacza to, że właściciel lokalizacji nie został ustanowione. Wybranie opcji **Zaawansowane** spowoduje otwarcie strony **Zarządzanie adresami**, na której można również ustawić właściciela lokalizacji. Wybierz lokalizację do aktualizacji, a następnie wybierz z menu opcję **Ustaw właściciela lokalizacji**. Aby zaktualizować właściciela lokalizacji dla wielu rekordów, wybierz opcje **Globalna książka adresowa > Lokalizacje > Potwierdź właścicieli lokalizacji**. Lista zawiera lokalizacje połączone z jedną stroną, ale ta strona nie jest jej właścicielem. Wybranie opcji **Potwierdź właściciela** spowoduje ustawienie **Identyfikatora proponowanej strony właściciela** jako właściciela połączonego adresu. Gdy strona zostanie ustawiona jako właściciel, połączony adres będzie można edytować w rekordzie strony. Aby zmienić właściciela lokalizacji, musisz mieć przypisane uprawnienie **Ustaw właściciela lokalizacji** na stronie **Konfiguracja zabezpieczeń**.  Administrator systemu domyślnie udziela tego uprawnienia.
+Podczas importowania adresów istnieje pole o nazwie **IsLocationOwner**. To pole wskazuje, czy właścicielem adresu jest strona skojarzona z lokalizacją (adresem). Jeśli strona jest właścicielem adresu, adres można edytować, gdy jest strona jest używana w globalnej książce adresowej lub ze strony formularza rekordu głównego (takiego jak odbiorca, dostawca lub pracownik). Jeśli strona nie jest właścicielem adresu, nie można edytować rekordu. 
 
+Podczas importowania adresów pole **IsLocationOwner** powinno mieć wartość **Tak**, jeśli chcesz, aby adres był edytowany przy użyciu skojarzonej strony. Jeśli to pole zostanie niepoprawnie zaimportowane, właściciela lokalizacji można zaktualizować w globalnej książce adresowej.
+
+Aby uzyskać więcej informacji dotyczących zmiany właściciela lokalizacji dla zaimportowanego adresu, zobacz temat [Zarządzanie właścicielami lokalizacji](./global-address-book-location-owner.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

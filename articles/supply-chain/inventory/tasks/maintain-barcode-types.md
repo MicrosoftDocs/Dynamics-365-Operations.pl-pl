@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345657"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441296"
 ---
 # <a name="maintain-bar-code-types"></a>Obsługa typów kodów kreskowych
 
@@ -32,7 +32,8 @@ W tej procedurze pokazano sposób konfigurowania nowej definicji kodu kreskowego
 1. W polu **Konfiguracja kodów kreskowych** wpisz wartość.
 1. W polu **Opis** wpisz wartość.
 1. W polu **Typ kodu kreskowego** wybierz opcję.
-    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać opcję „Kod 39”.  
+    * Jeśli używasz firmy demonstracyjnej USMF, można wybrać opcję „Kod 39”.
+1. W polu **Identyfikator maski** określ identyfikator maski kodu kreskowego. Maski kodów kreskowych są używane do tworzenia kodów kreskowych i do szybkiej identyfikacji kodów kreskowych skanowanych w systemie punktu sprzedaży (POS). Aby uzyskać szczegółowe informacje, zobacz [Konfigurowanie masek kodów kreskowych](../../../commerce/set-up-bar-code-masks.md).
 1. W polu **Rozmiar** wpisz liczbę.
 1. W polu **Długość maksymalna** wpisz liczbę.
 1. Wybierz opcję **Zapisz**.

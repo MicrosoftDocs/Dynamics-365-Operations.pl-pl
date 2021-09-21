@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748866"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471651"
 ---
 # <a name="message-processor-messages"></a>Komunikaty procesora komunikatów
 
@@ -44,7 +44,7 @@ Pól w górnej części strony **Komunikaty procesora komunikatów** można uży
   - *W kolejce* — komunikat jest gotowy do przetworzenia przez procesor komunikatów.
   - *Przetworzony* — komunikat został przetworzony przez procesor komunikatów.
   - *Anulowany* — komunikat został przetworzony, ale przetwarzanie nie powiodło się.
-- **Zawartość komunikatu** — ten filtr umożliwia przeprowadzanie wyszukiwania pełnotekstowego w treści komunikatu. (Zawartość komunikatu nie jest wyświetlana w siatce). Filtr traktuje większość symboli specjalnych (takich jak „-”) jako spacje, a wszystkie znaki spacji — jako operatory logiczne LUB. T=jeśli na przykład wyszukiwana jest wartość `journalid` równa „USMF-123456”, system znajdzie wszystkie komunikaty zawierające „USMF” lub „123456”, co może być długa listą. W związku z tym lepiej jest wpisać tylko wartość „123456”, ponieważ spowoduje to zwrócenie bardziej precyzyjnych wyników.
+- **Zawartość komunikatu** — ten filtr umożliwia przeprowadzanie wyszukiwania pełnotekstowego w treści komunikatu. (Zawartość komunikatu nie jest wyświetlana w siatce). Filtr traktuje większość symboli specjalnych (takich jak „-”) jako spacje, a wszystkie znaki spacji — jako operatory logiczne LUB. Jeśli na przykład wyszukiwana jest wartość `journalid` równa „USMF-123456”, system znajdzie wszystkie komunikaty zawierające „USMF” lub „123456”, co może być długa listą. W związku z tym lepiej jest wpisać tylko wartość „123456”, ponieważ spowoduje to zwrócenie bardziej precyzyjnych wyników.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Przykładowy typ komunikatu: żądanie aktualizacji finansowej korekty zapasów
 
@@ -65,7 +65,7 @@ Pasek narzędzi na karcie **Dziennik** zawiera następujące przyciski:
 
 ## <a name="message-processor-batch-job"></a>Zadanie wsadowe procesora komunikatów
 
-Podczas uruchamiania chmury i urządzenia brzegowego zadanie wsadowe *Procesor komunikatów* zostanie automatycznie utworzone w celu wykonania, więc nie ma potrzeby ręcznego planowania tego zadania.
+Podczas uruchamiania dystrybuowanej topologii hybrydowej z jednostkami skalowania zadanie wsadowe *Procesor komunikatów* zostanie automatycznie utworzone w celu wykonania, więc nie ma potrzeby ręcznego planowania tego zadania.
 
 W razie potrzeby można uzyskać dostęp do zadania wsadowego, klikając pozycję **Administrowanie systemem > Procesor komunikatów > Procesor komunikatów**.
 

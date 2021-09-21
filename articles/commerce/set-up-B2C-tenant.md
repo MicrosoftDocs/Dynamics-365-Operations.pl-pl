@@ -2,7 +2,7 @@
 title: Konfigurowanie dzierżawy B2C w usłudze Commerce
 description: W tym temacie opisano sposób konfigurowania dzierżawcy Azure Active Directory (Azure AD) dzierżawców biznesowych (B2C) dla uwierzytelniania witryny użytkownika w programie Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344505"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466275"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Konfigurowanie dzierżawy B2C w usłudze Commerce
 
@@ -37,6 +37,26 @@ Dynamics 365 Commerce używa Azure AD B2C do obsługi przenoszonych poświadcze�
 
 > [!TIP]
 > Dodatkowo można chronić użytkowników witryny i zwiększyć bezpieczeństwo dzierżawy Azure AD B2C przy użyciu funkcji ochrony tożsamości i dostępu warunkowego Azure AD. Więcej informacji na temat możliwości dostępnych w przypadku dzierżawy Azure AD B2C Premium P1 i Premium P2 zawiera temat [Ochrona tożsamości i dostęp warunkowy Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Wymagania wstępne środowiska systemu Dynamics
+
+Przed rozpoczęciem upewnij się, że środowisko Dynamics 365 Commerce i kanał handlu elektronicznego zostały odpowiednio skonfigurowane, aby spełniały następujące wymagania wstępne.
+
+- Ustaw wartość **AllowAnonymousAccess** operacji punktu sprzedaży na „1” w centrali Commerce:
+    1. Przejdź do okna **Operacje punktu sprzedaży**.
+    1. Kliknij prawym przyciskiem myszy w siatce operacji, a następnie kliknij polecenie **Personalizuj**.
+    1. Wybierz **Dodaj pole**.
+    1. Z listy dostępnych kolumn wybierz kolumnę **AllowAnonymousAccess**, aby ją dodać.
+    1. Wybierz **Aktualizuj**.
+    1. Dla operacji **612** „Dodaj odbiorcę” zmień wartość **AllowAnonymousAccess** na „1”.
+    1. Uruchom zadanie **1090 (Rejestry)**.
+- Ustaw atrybut **Ręcznie** konta odbiorcy sekwencji numerów na wartość **Nie** w centrali Commerce:
+    1. Kliknij kolejno opcje **Retail i Commerce \> Ustawienia centrali \> Parametry \> Parametry modułu rozrachunków z odbiorcami**.
+    1. Wybierz **Sekwencje numerów**.
+    1. W wierszu **Konta odbiorcy** kliknij dwukrotnie wartość **Kod sekwencji numerów**.
+    1. Na skróconej karcie **Ogólne** sekwencji numerów zmień wartość **Ręcznie** na **Nie**.
+
+Po wdrożeniu środowiska Dynamics 365 Commerce zalecane jest również [zainicjowanie danych początkowych](enable-configure-retail-functionality.md) w środowisku.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Utwórz lub Połącz istniejącą dzierżawę B2C w usłudze AAD w portalu Azure
 

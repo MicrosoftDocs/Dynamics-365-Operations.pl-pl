@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z fakturowaniem elektronicznym
 description: Ten temat zawiera informacje, które pomogą w rozpoczęciu pracy z Faktury elektroniczne w rozwiązaniach Microsoft Dynamics 365 Finance i Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732988"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463847"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym
 
@@ -40,14 +40,14 @@ Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione następ
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importuj funkcję fakturowania elektronicznego od dostawcy konfiguracji firmy Microsoft 
 
 1. Zaloguj się na konto usługi Regulatory Configuration Services (RCS).
-2. Otwórz nowy obszar roboczy **Funkcja globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Faktury elektroniczne**.
+2. Otwórz nowy obszar roboczy **Funkcje globalizacji**, a następnie w obszarze **Funkcje** wybierz kafelek **Faktury elektroniczne**.
 3. Wybierz opcję **Import**, a następnie wybierz opcję **Synchronizuj**.
 4. Filtruj kolumnę **Dostawca konfiguracji** według terminu **Microsoft**.
-5. Wybierz nazwę funkcji fakturowania elektronicznego z tabeli na początku tego tematu, a następnie wybierz pozycję **Importuj**.
+5. Wybierz nazwę funkcji fakturowania elektronicznego z tabeli, a następnie wybierz pozycję **Importuj**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Utwórz funkcję fakturowania elektronicznego u swojego dostawcy organizacji
 
-1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcja globalizacji**, wybierz kafelek **Faktury elektroniczne**.
+1. W RCS w obszarze **Funkcje** obszaru roboczego **Funkcje globalizacji**, wybierz kafelek **Faktury elektroniczne**.
 2. Wybierz opcję **Dodaj** > **Na podstawie istniejącej funkcji**, a następnie w polu **Nazwa** wprowadź nazwę funkcji fakturowania elektronicznego.
 3. W polu **Opis** wprowadź opis funkcji.
 4. W **polu Funkcja podstawowa** wybierz zaimportowaną funkcję fakturowania elektronicznego od dostawcy konfiguracji firmy Microsoft.
@@ -113,7 +113,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
 
-7. Dla każdej utworzonej nazwy tabeli wybierz i wprowadź wartość kontekstu zgodnie z poniższą tabelą.
+6. Dla każdej utworzonej nazwy tabeli wybierz i wprowadź wartość kontekstu zgodnie z poniższą tabelą.
 
     | Nazwa funkcji                         | Dokument biznesowy | Kontekst |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
 
-8. Dla każdej nazwy tabeli i kontekstu wybierz i wprowadź wartość odwzorowania dokumentu biznesowego zgodnie z poniższą tabelą.
+7. Dla każdej nazwy tabeli i kontekstu wybierz i wprowadź wartość odwzorowania dokumentu biznesowego zgodnie z poniższą tabelą.
 
     | Nazwa funkcji                         | Dokument biznesowy | Mapowanie dokumentu biznesowego |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Wdrażanie funkcji fakturowania elektronicznego w Połączonej aplikacji
 
 1. Na karcie **Wersje** wybierz wersję funkcji fakturowania elektronicznego, którą chcesz wdrożyć.
-4. Wybierz pozycję **Wdrażaj**.
-5. Dla opcji **Wdrażanie połączonej aplikacji** ustaw wartość **Tak**.
-6. W polu **Połącz aplikację** wybierz połączenie skojarzone z wystąpieniem zarządzaniem Finance lub Supply Chain Management.
-7. Dla opcji **Wdróż w środowisku usługowym** ustaw wartość **Nie**.
-10. Kliknij przycisk **OK**.
+2. Wybierz pozycję **Wdrażaj**.
+3. Dla opcji **Wdrażanie połączonej aplikacji** ustaw wartość **Tak**.
+4. W polu **Połącz aplikację** wybierz połączenie skojarzone z wystąpieniem zarządzaniem Finance lub Supply Chain Management.
+5. Dla opcji **Wdróż w środowisku usługowym** ustaw wartość **Nie**.
+6. Kliknij przycisk **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Włącz funkcję Fakturowanie elektroniczne w Finance lub Supply Chain Management
 
@@ -213,7 +213,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
 ## <a name="issue-electronic-invoices"></a>Wystawiaj faktury elektroniczne
 
 1. Przejdź do **Administrowanie organizacją** \> **Okresowe** \> **Dokumenty elektroniczne** \> **Prześlij dokumenty elektroniczne**.
-2. Na skróconej karcie **Rekord do uwzględnienia** wybierz opcję **Filtr**.
+2. W **Rekordy do uwzględnienia** na skróconej karcie, wybierz opcję **Filtr**.
 3. Wybierz przycisk **Dodaj**, aby dodać nazwę tabeli do filtru kwerendy.
 4. Wybierz tabelę zawierającą faktury.
 
