@@ -2,7 +2,7 @@
 title: Zmiana alokacji rozpoznawania przychodów
 description: Ten temat zawiera informacje dotyczące zmiany alokacji, która umożliwia organizacjom ponowne obliczanie cen przychodów w przypadku zmiany warunków umownych dotyczących sprzedaży. Temat zawiera łącza do innych tematów opisujących sposób rozpoznawania przychodu w wielu scenariuszach.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745044"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487025"
 ---
 # <a name="revenue-recognition-reallocation"></a>Zmiana alokacji rozpoznawania przychodów
 
@@ -35,10 +35,22 @@ Twoja organizacja musi zdecydować, czy zmiana alokacji jest w jej przypadku wym
 Z procesem zmiany alokacji wiąże się kilka istotnych ograniczeń:
 
 - Proces można przeprowadzić tylko jeden raz. W związku z tym ważne jest, aby uruchomić go dopiero po sfinalizowaniu wszystkich zmian.
+
+    - To ograniczenie będzie usunięte w wydaniu 10.0.17 i nowszym.
+
 - Procesu nie można uruchomić dla zamówień sprzedaży dla projektu.
+
+    - To ograniczenie będzie usunięte w wydaniu 10.0.17 i nowszym.
+
 - Jeśli proces ma objąć wiele zamówień sprzedaży, wszystkie one muszą dotyczyć tego samego konta odbiorcy.
 - Wszystkie zamówienia sprzedaży, dla których jest realizowana zmiana alokacji, muszą być w tej samej walucie transakcji.
 - Raz uruchomionego procesu nie można odwrócić ani cofnąć.
+
+    - To ograniczenie będzie usunięte w wydaniu 10.0.17 i nowszym.
+
+- Zmianę alokacji można przeprowadzić tylko dla zamówień sprzedaży albo zamówień sprzedaży projektu. Nie można jej przeprowadzić dla kombinacji zamówień sprzedaży i zamówień sprzedaży projektu.
+
+    - To ograniczenie będzie usunięte w wydaniu 10.0.17 i nowszym.
 
 ## <a name="set-up-reallocation"></a>Konfigurowanie zmiany alokacji
 
@@ -78,7 +90,7 @@ Aby rozpocząć proces zmiany alokacji, wybierz opcję **Zmień alokację ceny z
 
 [![Strona Zmień alokację ceny za pomocą nowych wierszy zamówienia.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Górna siatka na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** nosi nazwę **Sprzedaż**. Zawiera ona listę zamówień sprzedaży dla odbiorcy. Wybierz zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Nie można wybrać zamówień sprzedaży dla projektu, ponieważ nie podlegają one zmianie alokacji. Nie można również wybrać zamówień sprzedaży, które mają już identyfikator zmiany alokacji, ponieważ zmianę alokacji dla zamówień sprzedaży innych niż te dla projektu można przeprowadzić tylko jeden raz. Jeśli zamówienie sprzedaży ma identyfikator zmiany alokacji, zostało już oznaczone do zmiany alokacji przez innego użytkownika.
+Górna siatka na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** nosi nazwę **Sprzedaż**. Zawiera ona listę zamówień sprzedaży dla odbiorcy. Wybierz zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Jeśli zamówienie sprzedaży ma identyfikator zmiany alokacji, zostało już oznaczone do zmiany alokacji przez innego użytkownika. Jeśli alokacja co najmniej jednego zamówienia sprzedaży została poprzednio zmieniona i musi zostać uwzględniona w innej alokacji, należy najpierw cofnąć zmianę alokacji tych zamówień sprzedaży. Można ją następnie uwzględnić w nowej alokacji. Aby uzyskać bardziej szczegółowe informacje, zobacz sekcje [Cofnij zmianę alokacji](#undo-a-reallocation) i [Wielokrotnie zmień alokację](#reallocate-multiple-times) w dalszej części tego tematu.
 
 Dolna siatka widoczna na stronie nosi nazwę **Wiersze**. Po wybraniu co najmniej jednego zamówienia sprzedaży w siatce **Sprzedaż** w siatce **Wiersze** pojawiają się wiersze zamówienia sprzedaży. Wybierz wiersze zamówienia sprzedaży, które muszą zostać objęte zmianą alokacji. Jeśli wybrano tylko jedno zamówienie sprzedaży, wiersze w tym zamówieniu sprzedaży muszą zostać objęte zmianą alokacji. Taka sytuacja może mieć miejsce, gdy jeden z wierszy zamówienia sprzedaży został wcześniej zafakturowany, a następnie dodany został nowy wiersz albo istniejący wiersz został usunięty lub anulowany. Jeśli wiersz został usunięty, nie będzie widoczny w siatce. W związku z tym nie można go wybrać. Nadal będzie on jednak brany pod uwagę przy uruchamianiu procesu zmiany alokacji.
 
@@ -104,6 +116,26 @@ Po zakończeniu wybierania wymaganych wierszy zamówienia sprzedaży należy uż
 
 - **Zresetuj dane dla wybranego odbiorcy** — pozwala wyczyścić dane w tabeli zmiany alokacji tylko dla wybranego odbiorcy w przypadku, gdy proces zmiany alokacji został rozpoczęty, ale nie został zakończony. Przykład: oznaczasz wiele wierszy zamówienia sprzedaży do zmiany alokacji i pozostawiasz otwartą stronę bez wybrania opcji **Przetwarzanie**. Limit czasu dla strony zostaje przekroczony. W takim przypadku wiersze zamówienia sprzedaży pozostaną oznaczone i inny użytkownik nie będzie mógł zakończyć procesu zmiany alokacji. Po otwarciu tej strony może nawet okazać się, że jest ona pusta. W takiej sytuacji można użyć przycisku **Zresetuj dane dla wybranego odbiorcy** w celu wyczyszczenia nieprzetworzonych zamówień sprzedaży, aby inny użytkownik mógł zakończyć proces zmiany alokacji.
 
+## <a name="undo-a-reallocation"></a>Cofnij zmianę alokacji
+
+Zmiana alokacji została cofnięta przez uruchomienie innej zmiany alokacji. Zmiana alokacji jest wykonywana ponownie. Użytkownik wybiera różne wiersze zamówienia sprzedaży, które zostaną dołączone do drugiego procesu zmiany alokacji.
+
+Jeśli zmiana alokacji została wykonana dla co najmniej dwóch oddzielnych zamówień sprzedaży, można ją cofnąć, wybierając opcję **Zmień alokację ceny za pomocą nowych wierszy zamówienia** z dowolnego zamówienia sprzedaży uwzględnionego w zmianie alokacji. Nie można przejść do opcji **Rozpoznawanie przychodu \> Zadania okresowe \> Zmień alokację ceny za pomocą nowych wierszy zamówienia** w celu cofnięcia zmiany alokacji, ponieważ otwarta w ten sposób strona pokazuje tylko zamówienia sprzedaży, które nie mają identyfikatora zmiany alokacji. Identyfikator zmiany alokacji jest przypisywany po zmiany alokacji dokumentu.
+
+Na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia** usuń zaznaczenie z wszelkich zamówień sprzedaży, które powinny zostać wykluczone z umowy handlowej. Do przetworzenia zmiany alokacji służą odpowiednie przyciski w okienku akcji, takie jak **Aktualizuj zmianę alokacji** i **Proces**. Jeśli wszystkie zamówienia sprzedaży, z wyjątkiem aktywnego zamówienia sprzedaży, nie są zaznaczone, identyfikator zmiany alokacji zostanie usunięty podczas przetwarzania zmiany.
+
+Jeśli zmiana alokacji została wykonana przez dodanie nowego wiersza do całkowicie lub częściowo zafakturowanego zamówienia sprzedaży, można ją cofnąć tylko przez usunięcie tego wiersza z zamówienia sprzedaży, a następnie ponowne uruchomienie zmiany alokacji. Wiersz zamówienia sprzedaży musi zostać usunięty, ponieważ zakłada się, że wszystkie wiersze zamówienia sprzedaży są częścią tej samej umowy. Nie można usunąć zaznaczenia wiersza zamówienia sprzedaży, jeśli użytkownik jest na stronie **Zmień alokację ceny za pomocą nowych wierszy zamówienia**.
+
+## <a name="reallocate-multiple-times"></a>Wielokrotnie zmień alokację
+
+Jeśli w umowie wprowadzono wiele zmian, można dokonać wielokrotnej zmiany alokacji dla tego samego zamówienia sprzedaży. Każda zmiana alokacji wyzwala przypisanie identyfikatora zmiany alokacji do zamówienia sprzedaży lub grupy zamówień sprzedaży w celu zgrupowania zmian. W przypadku wielu zmian alokacji każda dodatkowa zmiana alokacji używa tego samego identyfikatora zmiany alokacji, co pierwsza.
+
+Na przykład zostało wprowadzone zamówienie sprzedaży 00045, które ma wiele wierszy. Po pełnym zafakturowaniu zamówienia sprzedaży jest do niego dodawany nowy wiersz zamówienia sprzedaży. Następnie zmiana alokacji jest uruchamiana przez otwarcie strony **Zmień alokację ceny za pomocą nowych wierszy zamówienia** z zamówienia sprzedaży 00045 lub przez przejście do opcji **Rozpoznawanie przychodu \> Zadania okresowe \> Zmień alokację ceny za pomocą nowych wierszy zamówienia**. Do zamówienia sprzedaży zostanie przypisany identyfikator zmiany alokacji **Reall000001**.
+
+Dla tej samej umowy zostaje utworzone drugie zamówienie sprzedaży: 00052. Zmianę alokacji można uruchomić ponownie, otwierając stronę **Zmień alokację ceny za pomocą nowych wierszy zamówienia** z zamówienia sprzedaży 00045, ale nie z zamówienia sprzedaży 00052. Jeśli otworzysz stronę **Zmień alokację ceny za pomocą nowych wierszy zamówienia** z zamówienia sprzedaży 00052, zamówienie sprzedaży 00045 nie będzie wyświetlane, ponieważ przypisano do niego identyfikator zmiany alokacji. Na stronie widać tylko zamówienia sprzedaży, które nie mają identyfikatora zmiany alokacji.
+
+Istnieją dwa sposoby na przeprowadzenie drugiej zmiany alokacji. Można cofnąć zmianę alokacji zamówienia sprzedaży 00045. W takim przypadku identyfikator zmiany alokacji jest usuwany, a następnie można przeprowadzić zmianę alokacji z zamówienia sprzedaży 00045 lub zamówienia sprzedaży 00052. Alternatywnie można otworzyć stronę **Zmień alokację ceny za pomocą nowych wierszy zamówienia** z zamówienia sprzedaży 00045 i dodać drugie zamówienie sprzedaży. Podczas przetwarzania zmiany alokacji identyfikator zmiany alokacji **Reall000001** zostanie przypisany zarówno do zamówienia sprzedaży 00045, jak i do zamówienia sprzedaży 00052.
+
 ## <a name="scenarios-for-reallocation"></a>Scenariusze zmiany alokacji
 
 Poniższe tematy uwzględniają różne scenariusze dotyczące rozpoznawania przychodów:
@@ -112,6 +144,5 @@ Poniższe tematy uwzględniają różne scenariusze dotyczące rozpoznawania prz
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 2](rev-rec-reallocation-scenario-2.md) — zostają wprowadzone dwa zamówienia sprzedaży, po czym odbiorca dodaje pozycję do umowy po zafakturowaniu pierwszego zamówienia sprzedaży.
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 3](rev-rec-reallocation-scenario-3.md) — do istniejącego, zafakturowanego zamówienia sprzedaży zostaje dodany nowy wiersz.
 - [Zmiana alokacji rozpoznawania przychodów — scenariusz 4](rev-rec-reallocation-scenario-4.md) — z istniejącego, częściowo zafakturowanego zamówienia sprzedaży zostaje usunięty wiersz.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

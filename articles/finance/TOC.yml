@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Rozwiązanie Finance w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Rozwiązanie Finance w wersji 10.0.19 (czerwiec 2021)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Usunięte lub wycofane funkcje
               items:
                 - name: Usunięte lub wycofane funkcje — strona główna
@@ -450,6 +448,8 @@
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: Automatyzacja procesu windykacji
                   href: accounts-receivable/collections-process-automate.md
+                - name: Konfigurowanie parametrów automatyzacji procesów windykacji
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Konfiguracja zarządzania kredytem
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Informacje o konfiguracji zarządzania kredytami
@@ -1635,7 +1635,9 @@
                 - name: Sprawozdanie podatku VAT
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Raport usług międzynarodowych
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Raport Intrastat
+                  href: localizations/emea-aut-intrastat.md
                 - name: Cła od zakupu
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrajn
@@ -1668,6 +1670,8 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Konfiguracja i obsługa badania PRODCOM
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Roczna lista podatku VAT od sprzedaży krajowej
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brazylia
               items:
                 - name: Brazylia — omówienie
@@ -2974,6 +2978,8 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Faktury elektroniczne
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: Dopełnienie listu przewozowego (Carta de Porte) (wersja 1.0)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: Wyciągi z konta w księdze elektronicznej
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: Wprowadzanie identyfikatorów podatkowych dla firm meksykańskich
@@ -2994,17 +3000,11 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Identyfikatory rejestracji dostawcy
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Oman
-              items:
-                - name: Oman — omówienie
-                  href: localizations/oman.md
-                - name: Deklaracja podatku VAT dla Omanu (OM-00003)
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Holandia
               items:
                 - name: Holandia — omówienie
                   href: localizations/netherlands.md
-                - name: Deklaracja podatku VAT
+                - name: Deklaracja VAT
                   href: localizations/emea-nl-VAT-declaration.md
                 - name: Elektroniczne deklaracje podatkowe (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: Lista sprzedaży do UE
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Nowa Zelandia
+              items:
+                - name: Formularz GST101A deklaracji podatku GST dla Nowej Zelandii (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norwegia
               items:
                 - name: Norwegia — omówienie
@@ -3032,6 +3036,12 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Faktury elektroniczne odbiorcy w Norwegii
                   href: localizations/emea-nor-e-invoices.md
+            - name: Oman
+              items:
+                - name: Oman — omówienie
+                  href: localizations/oman.md
+                - name: Deklaracja podatku VAT dla Omanu (OM-00003)
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Polska
               items:
                 - name: Polska — omówienie
@@ -3450,20 +3460,20 @@
                           href: localizations/emea-gbr-mtd-vat-integration.md
                         - name: Przygotowanie środowiska do współpracy z usługą internetową podatku VAT MTD w urzędzie HMRC
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Autoryzacja środowiska Finance do współpracy z usługą internetową MTD w urzędzie HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Testowanie współpracy za pomocą piaskownicy podatku VAT MTD
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Przesyłanie zwrotu podatku VAT do usługi internetowej MTD w urzędzie HMRC
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Lista kontrolna konfiguracji wiadomości elektronicznych dla podatku VAT MTD
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Generowanie deklaracji podatku VAT w formacie papierowym (raport podatku VAT 100)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: Szczegóły ustawień podatku VAT dla deklaracji podatku VAT w Zjednoczonym Królestwie
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Testowanie współpracy za pomocą piaskownicy podatku VAT MTD
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: Autoryzacja środowiska Finance do współpracy z usługą internetową MTD w urzędzie HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: Przesyłanie zwrotu podatku VAT do usługi internetowej MTD w urzędzie HMRC
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Pobieranie informacji o płatnościach i zobowiązaniach z tytułu podatku VAT z urzędu HMRC
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: Szczegóły ustawień podatku VAT dla deklaracji podatku VAT w Zjednoczonym Królestwie
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Generowanie deklaracji podatku VAT w formacie papierowym (raport podatku VAT 100)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Statystyka raportu wskazówek dotyczących płatności
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Stany Zjednoczone
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: Uruchamianie formatów projektu umożliwiających dynamiczne dodawanie kolumn do raportów programu Excel
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: Projektowanie formatu raportowania elektronicznego do stronicowania dokumentów wygenerowanych w programie Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Projektowanie konfiguracji w celu generowania raportów w formacie programu Word
                   items:
                     - name: Projektowanie nowej konfiguracji modułu Raportowanie elektroniczne w celu generowania raportów w formacie programu Word

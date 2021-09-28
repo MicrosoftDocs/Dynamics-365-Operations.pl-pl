@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Planowanie z nieskończoną zdolnością produkcyjną
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Planowanie z wyborem zasobu na podstawie pojemności
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
                   href: master-planning/planning-optimization/marking.md
                 - name: Planowanie międzyfirmowe
@@ -2017,6 +2017,8 @@
                   href: procurement/request-quotations.md
                 - name: Tworzenie zapytania ofertowego
                   href: procurement/tasks/create-request-quotation.md
+                - name: Oferty zapieczętowane na potrzeby ZO
+                  href: procurement/sealed-bidding.md
                 - name: Tworzenie zapotrzebowania wykorzystującego ZO
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Tworzenie metody punktowania dla ZO

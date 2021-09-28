@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Rozwiązanie Commerce w wersji 10.0.20 (sierpień 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: Rozwiązanie Commerce w wersji 10.0.19 (czerwiec 2021)
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Tworzenie umów handlowych przy użyciu reguł kategorii cen
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: Opóźnianie dokładnego obliczania ceny i rabatu
+                  href: delayed-price-calculation.md
             - name: Rekomendacje
               items:
                 - name: Omówienie rekomendacji produktów
@@ -1328,6 +1328,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Księgowanie brazylijskich dokumentów fiskalnych za pośrednictwem sprawozdań detalicznych w centrali rozwiązania Commerce
                   href: localizations/latam-bra-retail-statements.md
+                - name: Łącznik Dynamics 365 Payment Connector dla Adyen w punkcie sprzedaży rozwiązania Commerce dla Brazylii
+                  href: localizations/latam-bra-adyen.md
             - name: Europa Wschodnia
               items:
                 - name: Wspólne
@@ -1396,7 +1398,7 @@
               items:
                 - name: Lokalizacja rozwiązania Commerce dla Rosji
                   href: localizations/rus-commerce-localization.md
-                - name: Uproszczony format adresu odbiorcy w programie Commerce POS dla Rosji
+                - name: Uproszczony format adresu odbiorcy w punkcie sprzedaży rozwiązania Commerce dla Rosji
                   href: localizations/rus-simplified-address.md
                 - name: Konfigurowanie lokalizacji rozwiązania Commerce dla Rosji
                   href: localizations/rus-commerce-setup.md
@@ -2436,7 +2438,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Podstawowe akcje dotyczące danych
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Wywoływanie interfejsów API w usłudze Retail Server
+                    - name: Wywoływanie interfejsów API usługi Commerce Scale Unit
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: Wywoływanie interfejsów API rozszerzenia Retail Server
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania
                   href: dev-itpro/build-pipeline.md
-                - name: Scalanie systemów kompilacji dla aplikacji Commerce i Finance and Operations
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Dokonywanie migracji zestawu SDK do Retail z Visual Studio 2015 do Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Przykłady możliwości rozszerzania zestawu SDK do Retail
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Możliwości rozszerzania aplikacji Hardware Station
               items:
-                - name: Rozszerzalność aplikacji Hardware Station
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: Integrowanie punktu sprzedaży z nowym urządzeniem sprzętowym
                   href: dev-itpro/hardware-device-extension.md
             - name: Możliwości rozszerzania usługi Retail Server

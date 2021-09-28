@@ -1007,7 +1007,11 @@
                 - name: Okno planowanej konserwacji — często zadawane pytania
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Monitorowanie i diagnostyka
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Narzędzia do monitorowania i diagnostyki
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Użyj usługi Azure Data Explorer do wykonania zapytań na dziennikach nieprzetworzonych informacji
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Ponowne uruchamianie usług środowiska
               href: lifecycle-services/restart-environment-services.md
             - name: Zgłaszanie przestoju produkcji
