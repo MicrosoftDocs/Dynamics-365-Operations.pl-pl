@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
-ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
+ms.openlocfilehash: 4467d313aa2518b23434ec05989eb3e87cd35dfa
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7481322"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485741"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Synchronizacja na żądanie z aparatem wyceny aplikacji Supply Chain Management
 
@@ -60,6 +60,7 @@ Po wypełnieniu kolumn w Sales obowiązują następujące ograniczenia:
 + Konfigurowanie opłat i alokacji opłat w Supply Chain Management nie jest replikowane w Sales.
 + W przypadku cen nie są uwzględniane specjalne ceny detaliczne określone w kolumnie **Kanał detaliczny** na stronie wiersz zamówienia sprzedaży w Supply Chain Management.
 + Nie są brane pod uwagę rabaty zdefiniowane w sekcji **Zarządzania przydziałem handlowym** w Supply Chain Management.
++ Ceny nie są uwzględniane w umowach sprzedaży.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -17,64 +17,65 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56c253d8ef2c8114edbd7098c29464d83086b2db
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441222"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486977"
 ---
-# <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z Financial reporting 
+# <a name="get-started-with-financial-reporting"></a>Rozpoczynanie pracy z raportowaniem finansowym 
 
 [!include [banner](../includes/banner.md)]
 
-W tym temacie opisano, jak uzyskać dostęp do modułu sprawozdawczości finansowej i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
+W tym temacie opisano, jak uzyskać dostęp do modułu Financial reporting i jak korzystać z funkcji raportowania finansowego. Zawiera też opis domyślnych raportów finansowych, które są zawarte w programie.
 
 ## <a name="accessing-financial-reporting"></a>Uzyskiwanie dostępu do raportowania finansowego
 
 Menu **Raportowanie finansowe** można znaleźć w następujących lokalizacjach:
 
--   **Księga główna** &gt; **Zapytania i raporty**
--   **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Budżetowanie podstawowe**
--   **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Planowanie budżetu**
--   **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Kontrola budżetu**
--   Konsolidacje
+- **Księga główna** &gt; **Zapytania i raporty**
+- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Budżetowanie podstawowe**
+- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Planowanie budżetu**
+- **Budżetowanie** &gt; **Zapytania i raporty** &gt; **Kontrola budżetu**
+- Konsolidacje
 
 Aby tworzyć i generować raporty finansowe firmy, należy ustawić następujące informacje o tej firmie:
 
--   Kalendarz obrachunkowy
--   Ledger
--   Plan kont
--   Waluta
--   Księguj transakcję na co najmniej jednym koncie
--   Konto główne jest wymienione w kolumnie **Wybrane**, na stronie **Konfiguracja Financial Reporting** (**Księga główna > Ustawienia księgi głównej > Konfiguracja Financial Reporting**)
+- Kalendarz obrachunkowy
+- Ledger
+- Plan kont
+- Waluta
+- Księguj transakcję na co najmniej jednym koncie
+- Konto główne jest wymienione w kolumnie **Wybrane**, na stronie **Konfiguracja Financial Reporting** (**Księga główna > Ustawienia księgi głównej > Konfiguracja Financial Reporting**)
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Udzielanie zabezpieczeń do Financial Reporting
-Funkcje Financial Reporting są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
+
+Funkcje raportowania finansowego są dostępne dla użytkowników, którzy mają odpowiednie uprawnienia i obowiązki przypisane za pomocą ich ról zabezpieczeń. W poniższych sekcjach wymieniono te uprawnienia i obowiązki, łącznie z powiązanymi rolami.
 
 ### <a name="duties"></a>Obowiązki
 
-| Etykieta cła                            | Opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
+| Etykieta cła                            | opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych. | FinancialReportsSecurityMaintain |
+| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń Financial reporting oraz wykonywanie zadań administracyjnych. | FinancialReportsSecurityMaintain |
 | Obsługa raportów finansowych            | Projektowanie i obsługa raportów finansowych.                                  | FinancialReportsMaintain         |
 | Generowanie raportów finansowych            | Generowanie i odświeżanie raportów finansowych.                                 | FinancialReportsGenerate         |
 | Przeglądanie wyników finansowych          | Przeglądanie i analizowanie wyników finansowych.                               | FinancialReportsPerfReview       |
 
 ### <a name="privileges"></a>Uprawnienia
 
-| Uprawnienie etykiety                       | Opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
+| Uprawnienie etykiety                       | opis                                                             | Nazwa drzewa obiektów aplikacji (AOT)                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń raportowania finansowego oraz wykonywanie zadań administracyjnych. | FinancialReportsSecuritySystemMaintain |
+| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń Financial reporting oraz wykonywanie zadań administracyjnych. | FinancialReportsSecuritySystemMaintain |
 | Obsługa raportów finansowych            | Projektowanie i obsługa raportów finansowych.                                  | FinancialReportsMaintainReports  |
 | Generowanie raportów finansowych            | Generowanie i odświeżanie raportów finansowych.                                 | FinancialReportsGenerateReports  |
 | Wyświetlanie raportów finansowych                | Wyświetlanie raportów finansowych.                                                 | FinancialReportsView             |
 
 ### <a name="roles"></a>Role
 
-| Uprawnienie etykiety                       | Obowiązek                                  | Role                                                                           |
+| Uprawnienie etykiety                       | Zobowiązanie                                  | Role                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
-| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń raportowania finansowego | Administrator zabezpieczeń                                                          |
+| Obsługa zabezpieczeń raportowania finansowego | Obsługa zabezpieczeń Financial Reporting | Administrator zabezpieczeń                                                          |
 | Obsługa raportów finansowych            | Obsługa raportów finansowych            | Menedżer ds. księgowania, Kierownik ds. księgowania, Kontroler finansowy, Menedżer budżetu |
 | Generowanie raportów finansowych            | Generowanie raportów finansowych            | Dyrektor generalny, Dyrektor finansowy, Księgowy                                                            |
 | Wyświetlanie raportów finansowych                | Przeglądanie wyników finansowych          | Nie przypisano                                                                   |
@@ -85,20 +86,23 @@ Po dodaniu użytkownika lub zmianie roli, użytkownik powinien mieć dostęp do 
 > Rola sysadmin jest dodawana do wszystkich ról w module raportowania finansowego.
 
 ## <a name="report-deletions-and-expirations"></a>Usuwanie i wygasanie raportów
+
 Użytkownicy, którzy generują raport, mogą usuwać własne raporty. Użytkownicy, których obowiązkiem jest **utrzymywanie bezpieczeństwa raportowania finansowego** mogą usuwać raporty innych osób. 
 
 W wersji 10.0.8 zostało wprowadzone pojęcie dat wygaśnięcia. Nowa wymagana funkcja jest włączona na stronie **Wszystkie** w obszarze roboczym zarządzanie funkcjami. Funkcja **Zasad zatrzymania raportu finansowego** zawiera następujące zmiany:
 * Nowo wygenerowane raporty będą automatycznie oznaczane jako posiadające datę wygaśnięcia 90 dni od daty wygenerowania.
-* Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi raportowania finansowego, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
+* Wszystkie istniejące raporty sprzed zainstalowania tej funkcji będą miały okres ważności 90 dni. Data może być pusta przez krótki okres do czasu uruchomienia usługi Financial Reporting, generowany jest raport, a usługa przeprowadza aktualizację do istniejących raportów z pustą datą wygaśnięcia. 
 * Użytkownicy odpowiedzialni za **Utrzymywanie bezpieczeństwa financial reporting** mają dostęp do tej funkcji. Każdy użytkownik z obowiązkiem **utrzymywania raportu finansowego** i przyznanym uprawnieniem **Utrzymanie wygaśnięcia raportu finansowego** będzie również mieć możliwość modyfikowania okresu wygaśnięcia. Obecnie dostępne są dwie opcje przechowywania: 
-  * Wygaśnięcie wynoszące 90 dni.
-  * Opcja ustawiania raportu tak, aby nigdy nie wygasał.
-  
+
+    * Wygaśnięcie wynoszące 90 dni.
+    * Opcja ustawiania raportu tak, aby nigdy nie wygasał.
+
 W przypadku wybrania terminu wygaśnięcia, na przykład 90 dni, obowiązuje 90 dni od dzisiaj. Jest to zachowanie inne niż 90 dni od pierwotnej daty wygenerowania ustawionej podczas generowania raportu. 
-  
-Dodatkowe opcje będą brane pod uwagę w przyszłych funkcjach. Okres ważności wynoszący 90 dni będzie określony jako domyślny, a użytkownicy z odpowiednimi uprawnieniami mogą zastąpić domyślne ustawienia na stronie listy **Raportów finansowych**.    
+
+Dodatkowe opcje będą brane pod uwagę w przyszłych funkcjach. Okres ważności wynoszący 90 dni będzie określony jako domyślny, a użytkownicy z odpowiednimi uprawnieniami mogą zastąpić domyślne ustawienia na stronie listy **Raportów finansowych**.
 
 ## <a name="default-reports"></a>Raporty domyślne
+
 Raporty finansowe to 22 domyślne raporty. Każdy raport korzysta z domyślnych kategorii kont głównych. Raporty te można wykorzystywać w takiej formie, w jakiej są lub jako bazy do utworzenia własnego raportu finansowego. Oprócz tradycyjnych sprawozdań finansowych, takich jak Zestawienie przychodów i Bilans, te domyślne raporty obejmują raporty, które pokazują różne typy raportów finansowych, które możesz utworzyć. 
 
 <!--Each report in the following table links to an Office Mix presentation about the report.-->
@@ -129,18 +133,42 @@ Raporty finansowe to 22 domyślne raporty. Każdy raport korzysta z domyślnych 
 | Dostępne środki budżetowe — domyślny                         | Wyświetlanie szczegółowego porównania skorygowanego budżetu, rzeczywistych rozchodów, rezerwacji budżetu i środków budżetowych dostępnych dla wszystkich kont                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Otwieranie raportów finansowych
+
 Po wybraniu menu **Raportowanie finansowe** jest wyświetlana lista domyślnych raportów finansowych firmy. Następnie można otworzyć lub zmodyfikować raport. Aby otworzyć jeden z domyślnych raportów, należy wybrać nazwę raportu. Kiedy raport zostanie otwarty po raz pierwszy, zostanie automatycznie wygenerowany raport za poprzedni miesiąc. Na przykład jeśli raport zostanie otwarty po raz pierwszy w sierpniu 2019, jest generowany raport na 31 lipca 2019 r. Po otwarciu raportu, możesz zapoznać się ze szczegółowymi danymi i opcjami modyfikacji.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Tworzenie i modyfikowanie raportów finansowych
+
 Z listy raportów finansowych można utworzyć nowy raport lub zmodyfikować istniejący raport. Jeśli masz odpowiednie uprawnienia, możesz utworzyć nowy raport finansowy, wybierając przycisk **Nowy** w okienku akcji. Projektant raportów zostanie pobrany na Twoje urządzenie i uruchomiony. Po uruchomieniu projektanta raportów można utworzyć nowy raport. Po zapisaniu nowego raportu będzie on widoczny na liście raportów finansowych. Na liście są wyświetlane tylko raporty, które zostały utworzone dla firmy używanej w Dynamics 365 Finance. 
 
-## <a name="reporting-tree-definitions"></a>Definicje drzew raportowania 
+## <a name="reporting-tree-definitions"></a>Definicje drzew raportowania
+
 Jednym z składników używanych do tworzenia raportów finansowych jest definicja drzewa raportowania. Drzewo definicji raportowania pomaga zdefiniować strukturę i hierarchię organizacji. To międzywymiarowa hierarchiczna struktura oparta na powiązaniach wymiarów w danych finansowych. Dostarcza informacji na poziomie jednostki raportowania oraz na poziomie podsumowania dla wszystkich jednostek w drzewie.
 
 Można utworzyć dowolną liczbę drzew raportowania, aby wyświetlić dane firmy na różne sposoby. Każde drzewo raportowania może zawierać dowolną kombinację działów i jednostek podsumowujących, ale definicja raportu może być połączona tylko z jednym drzewem raportowania naraz. 
 
+## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>Aktualizacja wersji Financial Reporting za pośrednictwem dokumentów dostawy
+
+Aplikacje Finance and Operations są aktualizowane co miesiąc. Jednak Financial Reporting niekoniecznie jest aktualizowana w tym tempie. Ponadto klienci mają więcej opcji dotyczących implementowania aktualizacji aplikacji Finance and Operations. Aktualizacje Financial Reporting są instalowane automatycznie. Financial Reporting ma wyznaczoną wersję, która jest zużywana w środowisku klienta podczas implementowania aktualizacji usługi, rozpoczynania przestoju lub działania środowiska klienta w trybie konserwacji. Ten proces jest nazywany *slipstreaming* lub *true-up*, ponieważ wszystkie implementacje klientów mają tę samą wersję Financial Reporting.
+
+Zmiany, które są wydane w każdej wersji, można znaleźć w poszczególnych [Nowości i zmiany w aplikacjach Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Aktualizacje platformy i poprawki błędów można znaleźć w sekcji „Zasoby dodatkowe” na dole strony dla każdego wydania.
+
+Wybrana wersja dokumentów dostawy jest przeglądaną i zweryfikowaną wersją Financial Reporting gotowego do produkcji. Jest on zgodny z poprzednią lub przyszłą wersją Dynamics 365 Finance. Na przykład Financial Reporting mogą być dostępne w najnowszej wersji 10.0.19, podczas gdy odbiorca nadal jest w wersji aplikacji 10.0.16.
+
+> [!NOTE]
+> Jedyna okoliczność, w której klienci mogą przejść do poprzedniej wersji (scenariusz zmiany starszej wersji), ma miejsce, gdy firma Microsoft zatrzyma wdrażanie z powodu problemu. Gdy poprawka będzie dostępna, zostanie zastosowana automatycznie.
+
+Proces slipstream jest w pełni zautomatyzowany i nie wymaga żadnych działań klienta. Trzy topologii zużywają slipstream, z których każda w inny sposób:
+
+- **Wdrożenia lokalne** — wdrożenia lokalne nie obsługują procesów slipstream i true-up.
+- **Infrastruktura jako usługa (IaaS)** — logika dostawy jest stosowana podczas każdej operacji, która próbuje zaktualizować Financial Reporting. Zawiera aktualizacje binarne lub emisje, które zawierają aktualizacje binarne.
+- **Samoobsługa** — każda operacja wymagająca przestoju Financial Reporting ma zastosowanie logiki dostawcy usługi slipstream:
+
+    - Aktualizacje binarne lub transmisje zawierające aktualizacje binarne
+    - Poprawianie S lub inny przestój infrastruktury
+    - Wdrożenia pakietów AOT
 
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Rozwiązywanie problemów z otwieraniem projektanta raportów
+
 Istnieje kilka typowych problemów, które mogą być przyczyną problemów podczas otwierania projektanta raportów. Poniżej wymieniono zagadnienia związane z tymi problemami i czynności, które należy rozwiązać.
 
 Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** lub **Edytuj**.
@@ -151,19 +179,22 @@ Wydanie 1: Projektant raportów nie rozpoczyna się po wybraniu opcji **Nowy** l
 * Do zainstalowania Struktury Microsoft .NET 4.6.2 lub nowszej wymagane są stacje robocze. Tę wersję programu Microsoft .NET Framework można pobrać i zainstalować z witryny [Centrum pobierania Microsoft](https://www.microsoft.com/download/details.aspx?id=53345).
 * Jeśli używasz przeglądarki Chrome, należy zainstalować rozszerzenie ClickOnce, aby można było pobrać klienta Projektanta raportów. Jeśli w przeglądarce Chrome pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito. Aby uzyskać więcej informacji na temat rozszerzenia ClickOnce w przeglądarce Chrome, zobacz [Wymagania systemowe dla wdrożeń w chmurze](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Jeśli używasz razem przeglądarek Microsoft Edge i Chrome, nie musisz instalować rozszerzenia ClickOnce dla Microsoft Edge Chromium. Trzeba jednak włączyć opcję ClickOnce, aby móc pobrać klienta Projektanta raportów. Jeśli pracujesz w trybie incognito, upewnij się, że w rozszerzeniu ClickOnce również włączono tryb incognito.
-     1. Otwórz nową przeglądarkę w programie Microsoft Edge.
-     2. Wprowadź **edge://flags** i wybierz **Enter**.
-     3. Wyszukaj opcję **Obsługa ClickOnce** lub skorzystaj z tego bezpośredniego łącza: **edge://flags/#edge-click-once**.
-     4. Ustaw opcję menu rozwijanego na **Włączone**.
-     5. Wybierz opcję **Uruchom ponownie przeglądarkę**.
 
-Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzystania z Raportowania finansowego. 
+    1. Otwórz nową przeglądarkę w programie Microsoft Edge.
+    2. Wprowadź **edge://flags** i wybierz **Enter**.
+    3. Wyszukaj opcję **Obsługa ClickOnce** lub skorzystaj z tego bezpośredniego łącza: **edge://flags/#edge-click-once**.
+    4. Ustaw opcję menu rozwijanego na **Włączone**.
+    5. Wybierz opcję **Uruchom ponownie przeglądarkę**.
 
-* Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Raportowania finansowego. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
+Wydanie 2: użytkownik nie został przypisany do wymaganych uprawnień do korzystania z Financial Reporting. 
+
+* Aby sprawdzić, czy użytkownik nie ma uprawnienia, należy wybrać opcję **Tak** dla błędu, a „Nie można połączyć się z serwerem Financial Reporting. Wybierz opcję Tak, jeśli chcesz kontynuować, i podaj inny adres serwera”. Następnie wybierz **Testuj połączenie**. Jeśli nie masz uprawnień, zostanie wyświetlony komunikat „Próba połączenia nie powiodła się. Użytkownik nie ma odpowiednich uprawnień, aby połączyć się z serwerem. Skontaktuj się z administratorem systemu”.
 * Powyższe uprawnienia są wymienione powyżej w celu [Udzielanie zabezpieczeń do Financial Reporting](#granting-security-access-to-financial-reporting). Zabezpieczenia w Financial Reporting są oparte na tych uprawnieniach. Nie będziesz mieć dostępu, dopóki nie zostaną przypisane te uprawnienia (lub inna rola zabezpieczeń zawierająca te uprawnienia). 
-* Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Raportowaniu finansowym może potrwać do 10 minut. 
-  Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Raportowania finansowego. 
-* Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Raportowania finansowego** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
+* Zadanie integracji **Dostawca firmowych użytkowników dla firmy** (które jest również odpowiedzialne i znane jako integracja użytkowników) jest uruchamiane co 5 minut. Wprowadzenie zmian uprawnień w Financial Reporting może potrwać do 10 minut. 
+
+    Jeśli inny użytkownik może otworzyć Projektanta raportów, wybierz menu **Narzędzia**, a następnie wybierz polecenie **Stan integracji**. Sprawdź, czy mapa integracji „Dostawca firmowych użytkowników dla firmy” została pomyślnie uruchomiona, ponieważ przypisano Ci uprawnienia do korzystania z funkcji Financial Reporting. 
+
+* Może być możliwe, że inny błąd zabronił **Integracja użytkowników Dynamics z użytkownikami Financial Reporting** z jego zakończeniem. Możliwe, że resetowanie składni danych zostało zainicjowane i nie zostało jeszcze zakończone lub wystąpił inny błąd systemu. Spróbuj uruchomić proces ponownie później. Jeśli problem będzie się powtarzał, skontaktuj się z administratorem systemu.
 
 Wydanie 3: na stronie rejestracja **ClickOnce Report Designer** można kontynuować pracę, ale nie można zakończyć logowania w oknie Report Designer. 
 
@@ -180,20 +211,27 @@ Oto kilka kroków, które można wykonać, aby rozmowa z pomocą techniczną fir
  
 Poniższe kroki obejmują proces włączania komunikatów podglądu zdarzeń w Financial reporting. Dzienniki generowane przez Przeglądarkę zdarzeń pomogą inżynierom pomocy technicznej w szybkim zidentyfikowaniu źródła problemu z połączeniem. Przesyłanie kopii tych dzienników wraz z biletem podczas kontaktowania się z pomocą techniczną.
 
-> 1.    Skopiuj plik RegisterETW.zip na stację roboczą klienta (najlepiej na pulpicie) i [wyodrębnij plik RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122).
 
-> 2.    Upewnij się, że przeglądarka zdarzeń systemu Windows jest zamknięta.
+1. Skopiuj plik RegisterETW.zip na stację roboczą klienta (najlepiej na pulpicie) i [wyodrębnij plik RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+2. Upewnij się, że przeglądarka zdarzeń systemu Windows jest zamknięta.
+3. Otwórz okno poleceń administratora PowerShell i przejdź do katalogu, w którym znajduje się plik RegisterETW.ps1.
+4. Uruchom następujące polecenie: .\RegisterETW.ps1
 
-> 3.    Otwórz okno poleceń administratora PowerShell i przejdź do katalogu, w którym znajduje się plik RegisterETW.ps1.
+    Pomyślne wyjście w programie PowerShell zostanie zweryfikowane za pomocą komunikatu **Ukończono skrypt RegisterETW**.
 
-> 4.    Uruchom następujące polecenie: .\RegisterETW.ps1
-   
-   Pomyślne wyjście w programie PowerShell zostanie zweryfikowane za pomocą komunikatu **Ukończono skrypt RegisterETW**.
-Otwórz ponownie przeglądarkę zdarzeń, a teraz zobaczysz te dzienniki pod **Microsoft > Dynamics:** * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
-   
-> 5. Odtwórz problem w narzędziu Report Designer.
-   
-> 6. Eksportowanie zdarzeń MR-logger przy użyciu podglądu zdarzeń.
+    Po otwarciu podglądu zdarzeń w systemie **Microsoft > Dynamics** będą teraz dostępne następujące dzienniki:
+
+    * Rzeczywistość mieszana — często zadawane pytania
+    * Rzeczywistość mieszana-DVT
+    * Rzeczywistość mieszana-Integracja
+    * Rzeczywistość mieszana-Logger
+    * Rzeczywistość mieszana-Raportowanie
+    * MR_SchedulerTasks
+    * MR-Sql
+    * MR-TraceManager
+
+5. Odtwórz problem w narzędziu Report Designer.
+6. Eksportowanie zdarzeń MR-logger przy użyciu podglądu zdarzeń.
 
 ## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Rozwiązywanie problemów z łączeniem się z Financial Reporting
 
@@ -208,8 +246,8 @@ Problem: Pojawia się błąd „Nie można połączyć się z serwerem Financial
 * Na stacji roboczej tymczasowo wyłącz zaporę. Jeśli będzie można nawiązać połączenie z Report Designer, problem jest z zaporą. Aby rozwiązać ten problem, należy współpracować z działem IT swojej organizacji.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
+
 - [Wyświetlanie raportów finansowych](view-financial-reports.md)
 - [Definicje drzewa raportowania w raportach finansowych](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

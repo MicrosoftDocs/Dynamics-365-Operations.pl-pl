@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417089"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486953"
 ---
 # <a name="swedish-intrastat"></a>Szwedzki intrastat
 
@@ -48,7 +48,7 @@ Więcej informacji można znaleźć w temacie [Pobieranie konfiguracji ER z glob
 3. W polu **Mapowanie formatu raportów** wybierz wartość **Raport Intrastat**.
 4. Na skróconej karcie **hierarchii kodów asortymentu** w polu **Hierarchia kategorii** wybierz pozycję **Intrastat**.
 5. W polu **Kod transakcji** wybierz kod transakcji dla przeniesień właściwości. Kod ten będzie wykorzystywany do tworzenia transakcji powodujących faktyczne lub planowane przeniesienie własności za odszkodowaniem (finansowej lub innej). Można go również użyć do poprawek. Firmy ze Szwecji używają jednocyfrowych kodów transakcji.
-6. W polu **Nota kredytowa** wybierz kod transakcji zwrotu towarów. Ten kod może zostać użyty do zwrotu towarów po zarejestrowaniu oryginalnej transakcji pod kodem transakcji. Firmy ze Szwecji używają jednocyfrowych kodów transakcji.
+6. W polu **Nota kredytowa** wybierz kod transakcji zwrotu towarów.
 7. Na karcie **Właściwości kraju/regionu**, w polu **Kraj/region**, podaj listę wszystkich krajów lub regionów, w których organizacja prowadzi interesy. Dla każdego kraju należącego do UE w polu **Typ kraju/regionu** wybierz pozycję **UE**, aby kraj były wyświetlany w raporcie Intrastat.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Konfigurowanie parametrów produktu na potrzeby deklaracji Intrastat

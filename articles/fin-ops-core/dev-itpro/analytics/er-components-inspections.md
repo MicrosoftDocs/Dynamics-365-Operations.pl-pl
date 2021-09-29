@@ -2,7 +2,7 @@
 title: Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 description: W tym temacie opisano sposób sprawdzania skonfigurowanych składników raportowania elektronicznego (ER) w celu zapobiegania problemom, które mogą wystąpić w czasie wykonywania.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718630"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488121"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Sprawdzanie skonfigurowanego składnika ER, aby zapobiec problemom w czasie wykonywania
 
@@ -229,6 +229,12 @@ W poniższej tabeli znajduje się omówienie inspekcji dostępnych w module ER. 
 <p>Nagłówki/stopki (&lt;typ składnika: nagłówek lub stopka&gt;) są niespójne</p>
 <p><b>Środowisko uruchomieniowe:</b> Jeśli zostanie wykonana wersja robocza skonfigurowanego formatu ER, ostatni skonfigurowany składnik jest używany w czasie wykonywania.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Niespójne ustawienie składnika Strona</a></td>
+<td>Integralność danych</td>
+<td>Wadliwe</td>
+<td>Istnieją co najmniej dwa składniki zakresu bez replikacji. Usuń zbędne składniki.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Zmodyfikuj skonfigurowany format, usuwając jeden z niespójnych składników **
 #### <a name="option-2"></a>Opcja 2
 
 Modyfikowanie wartości właściwości **Wyglądu nagłówka/stopki** dla jednego z niespójnych składników **Excel\\Nagłówek** lub **Excel\\Stopka**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Niespójne ustawienie składnika Strona
+
+Podczas [konfigurowania](er-fillable-excel.md) składnika formatu raportowania elektronicznego do generowania dokumentu wychodzącego za pomocą szablonu programu Excel można dodać składnik **Excel\\Strona** w celu stronicowania wygenerowanego dokumentu przy użyciu formuł raportowania elektronicznego. W przypadku każdego składnika **Excel\\Strona**, który zostanie dodany, można dodać wiele zagnieżdżonych składników [Zakres](er-fillable-excel.md#range-component) i nadal zachować zgodność z następującą [strukturą](er-fillable-excel.md#page-component-structure):
+
+- Pierwszy zagnieżdżony składnik **Zakres** można skonfigurować w taki sposób, aby właściwość **Kierunek replikacji** miała wartość **Brak replikacji**. Ten zakres służy do generowania nagłówków stron w generowanych dokumentach.
+- Można dodać wiele innych zagnieżdżonych składników **Zakres**, dla których właściwość **Kierunek replikacji** ma wartość **Pionowo**. Te zakresy służą do wypełniania wygenerowanych dokumentów.
+- Ostatni zagnieżdżony składnik **Zakres** można skonfigurować w taki sposób, aby właściwość **Kierunek replikacji** miała wartość **Brak replikacji**. Ten zakres służy do tworzenia stopki strony w generowanych dokumentach i dodawania wymaganych podziałów stron.
+
+Jeśli podczas projektowania nie przestrzegasz tej struktury formatu raportowania elektronicznego w konstruktorze formatów raportowania elektronicznego, wystąpi błąd weryfikacji i zostanie wyświetlony następujący komunikat o błędzie: „Istnieje więcej niż dwa składniki zakresu bez replikacji. Usuń zbędne składniki.”
+
+### <a name="automatic-resolution"></a>Automatyczne rozwiązywanie
+
+Nie jest dostępna żadna opcja automatycznego rozwiązywania tego problemu.
+
+### <a name="manual-resolution"></a>Ręczne rozwiązywanie
+
+#### <a name="option-1"></a>Opcja 1
+
+Zmodyfikuj skonfigurowany format, zmieniając właściwość **Kierunek replikacji** dla wszystkich niespójnych składników zakresu programu **Excel\\Zakres**.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

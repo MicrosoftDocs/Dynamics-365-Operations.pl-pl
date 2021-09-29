@@ -2,7 +2,7 @@
 title: Osadzone aplikacje kanwy z Power Apps
 description: W tym temacie opisano sposób osadzania aplikacji kanwy z Microsoft Power Apps na kliencie w celu rozszerzenia funkcjonalności produktu.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344536"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488061"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Osadzone aplikacje kanwy z Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Usługa Microsoft Power Apps to usługa, która umożliwia deweloperom i użytkownikom nietechnicznym tworzenie niestandardowych aplikacji biznesowych dla urządzeń przenośnych, tabletów i sieci Web bez pisania kodu. Aplikacje Finance and Operations obsługują integrację z Power Apps. Aplikacje kanwy, które tworzysz Ty, Twoja organizacja lub szerszy ekosystem, można osadzać w aplikacjach Finance and Operations, aby zwiększyć funkcjonalność produktu. Na przykład można utworzyć aplikację kanwy Power Apps celem uzupełnienia aplikacji Finance and Operations o informacje pobrane z innego systemu.
 

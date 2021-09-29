@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie typów urlopów i nieobecności
 description: Tu opisano konfigurowanie typów urlopów, jakie mogą brać pracownicy w module Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730425"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485818"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurowanie typów urlopów i nieobecności
 
@@ -65,9 +65,9 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 
 1. Ustaw opcje zaokrąglania dla typu urlopu. Dostępne opcje to **Brak**, **W górę**, **W dół** i **Do najbliższej**. Można również określić dokładność zaokrąglania dla typu urlopu.
 
-2. Ustaw dla typu urlopu wartość w polu **Korekta świąt**. Po wybraniu tej opcji moduł Human Resources będzie wykorzystywał liczbę dni świątecznych przypadających w dniach roboczych do określenia sposobu naliczania czasu wolnego dla typu urlopu. Jeśli na przykład Boże Narodzenie przypada w poniedziałek, moduł Human Resources odejmie jeden dzień od typu urlopu podczas przetwarzania naliczeń.
+2. Ustaw dla typu urlopu wartość w polu **Korekta świąt**. Po wybraniu tej opcji liczba dni świątecznych przypadających na dzień roboczy zostanie użyta do określenia sposobu naliczania czasu wolnego dla typu urlopu. Jeśli na przykład Boże Narodzenie przypada w poniedziałek, moduł Human Resources odejmie jeden dzień od typu urlopu podczas przetwarzania naliczeń.
 
-   Święta ustawia się w kalendarzu czasu pracy. Aby uzyskać więcej informacji, zobacz [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md)
+   Święta ustawia się w kalendarzu czasu pracy. Aby uzyskać więcej informacji, zobacz [Tworzenie kalendarza czasu pracy](hr-leave-and-absence-working-time-calendar.md).
    
  3. Określ **Typ urlopu przeniesiony na późniejszy okres** na następny okres dla typu urlopu. Po wybraniu tej opcji wszelkie salda przeniesione zostaną przeniesione do określonego rodzaju urlopu. Typ urlopu do przodu musi być również uwzględniony w planie urlopu i nieobecności. 
  
@@ -76,7 +76,7 @@ Typy urlopów w module Dynamics 365 Human Resources określają różne rodzaje 
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurowanie wymaganego załącznika dla typu urlopu
 
 > [!NOTE]
-> Aby użyć pola **Wymagany załącznik**, należy najpierw włączyć funkcję **(wersja zapoznawcza) Konfigurowanie wymaganego załącznika** dla wniosków urlopowych w zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
+> Aby użyć pola **Wymagany załącznik**, należy najpierw włączyć funkcję **Konfigurowanie wymaganego załącznika** dla wniosków urlopowych w zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
 
 1. Na stronie **Urlop i nieobecność**, na karcie **Łącza** w obszarze **Ustawienia** wybierz opcję **Typy urlopów i nieobecności**.
 
@@ -87,7 +87,7 @@ Pracownicy będą mieli obowiązek przekazywania załącznika podczas przesyłan
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Skonfiguruj jednostki urlopu (godziny/dni) według typu urlopu
 
 > [!NOTE]
-> Aby korzystać z funkcji jednostek urlopu na typ urlopu, należy najpierw włączyć funkcję **(wersja zapoznawcza) Konfiguruj jednostki urlopu na typ urlopu** w Zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji w wersji zapoznawczej, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
+> Aby korzystać z funkcji jednostek urlopu na typ urlopu, należy najpierw włączyć funkcję **Konfiguruj jednostki urlopu na typ urlopu** w Zarządzaniu funkcjami. Aby uzyskać informacje na temat włączania funkcji, zobacz [Zarządzanie funkcjami](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Domyślnie typy urlopów w firmie używają jednostek urlopów z konfiguracji parametrów urlopów na poziomie firmy.

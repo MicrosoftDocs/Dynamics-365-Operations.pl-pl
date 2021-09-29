@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441172"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488090"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -41,6 +41,8 @@ Zanim będzie można aprowizować nowe środowisko produkcyjne, muszą zostać s
 ## <a name="provision-a-human-resources-trial-environment"></a>Inicjowanie obsługi środowiska próbnego Human Resources
 
 Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska produkcyjnego można zaimprowizować [środowisko próbne Human Resources](https://go.microsoft.com/fwlink/p/?LinkId=2115962) w celu weryfikacji funkcji Human Resources. Środowiska próbne zawierają fikcyjne dane, których można używać do eksplorowania programu w bezpieczny sposób. Chociaż właścicielem środowiska próbnego jest użytkownik, który je utworzył, można do niego zaprosić innych użytkowników za pośrednictwem interfejsu administratora systemu środowiska Human Resources. 
+
+Środowiska próbne zapewniają możliwość oceniania funkcji zasobów ludzkich dla osób, które nie mają jeszcze dostępu do środowiska Human Resources. Jeśli udostępniasz środowisko próbne, a uwierzytelniony użytkownik ma już dostęp do co najmniej jednego istniejącego środowiska zasobów ludzkich, użytkownik zostanie przekierowany do istniejącego środowiska lub listy środowisk.
 
 Środowiska wersji zapoznawczych nie są one przeznaczone do używania jako środowiska produkcyjne. Są one ograniczone do 60-dniowego okresu próbnego. Po wygaśnięciu okresu próbnego środowisko i wszystkie znajdujące się w nim dane zostają usunięte i nie można ich odzyskać. Środowisko nie może zostać przekształcone w środowisko piaskownicy lub produkcyjne. Po wygaśnięciu istniejącego środowiska można zarejestrować się na nowe środowisko próbne.
 
@@ -135,7 +137,12 @@ Przy ustalaniu, w którym środowisku usługi Power Apps wdrożyć moduł Human 
    
     - **Nieobsługiwane regiony geograficzne** — środowisko musi znajdować się w obsługiwanym regionie geograficznym. Aby uzyskać więcej informacji, zobacz [Obsługiwane regiony geograficzne](hr-admin-setup-provision.md#supported-geographies).
 
-6. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
+6. Możliwości podwójnego zapisu do integracji danych zasobów ludzkich ze środowiskiem Power Apps mogą być używane tylko wtedy, gdy dla środowiska wybrano opcję **Włącz aplikacje Dynamics 365**. Zobacz [Podwójny zapis](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md), aby uzyskać więcej informacji, zobacz temat Strona główna podwójnego zapisu.
+
+    > [!NOTE]
+    > Opcja **Włącz aplikacje Dynamics 365** musi być zaznaczona podczas tworzenia środowiska Power Apps. Jeśli opcja nie jest zaznaczona w momencie aprowizacji, nie będzie można używać podwójnego zapisu do integrowania danych między Dynamics 365 Human Resources a środowiskiem Power Apps ani instalować aplikacji Dynamics 365, takich jak Dynamics 365 Sales i Field Service na środowisko. Ta opcja jest nieodwracalna. Aby uzyskać więcej informacji, zobacz [Niektóre ważne uwagi dotyczące tworzenia nowego środowiska](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) w witrynie dokumentacji Power Platform.
+
+7. Po określeniu odpowiedniego środowiska, które będzie używane, można kontynuować proces inicjowania obsługi. 
 
 ### <a name="supported-geographies"></a>Obsługiwane regiony geograficzne
 

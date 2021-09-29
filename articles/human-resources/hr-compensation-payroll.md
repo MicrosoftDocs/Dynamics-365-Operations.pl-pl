@@ -2,7 +2,7 @@
 title: Gotowe do wypłaty
 description: W tym temacie pokazano, jak oznaczyć pracownika jako gotowego do zapłaty w Dynamics 365 Human Resources.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732424"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483789"
 ---
 # <a name="ready-to-pay"></a>Gotowe do wypłaty
 
@@ -39,7 +39,7 @@ Zbieranie i weryfikacja informacji o pracownikach może być czasochłonne i pod
 
 Oznaczanie pracownika etatowego jako gotowego do wypłaty:
 
-1. Otwórz **Zarządzanie wynagrodzeniami**. W obszarze roboczym znajdują się dwa kafelki 
+1. Otwórz **Zarządzanie wynagrodzeniami**. W obszarze roboczym znajdują się dwa kafelki: 
     - **Pracownicy etatowi gotowi do wypłaty**
     - **Pracownicy nie są gotowi do zapłaty**
     ![Obszar roboczy zarządzania wynagrodzeniami.](./media/hr-ready-to-pay-1-workspace.png)
@@ -51,24 +51,22 @@ Oznaczanie pracownika etatowego jako gotowego do wypłaty:
 
 4. Aby przejrzeć wyniki, na karcie **Listy płac** w grupie **Gotowe do zapłaty** wybierz pozycję **Wyniki**.
 
-## <a name="validation"></a>Sprawdzenie poprawności
+## <a name="validation"></a>Weryfikacja
 
-Przed oznaczeniem pracownika jako gotowego do zapłaty, system wykona podstawową walidację kompletności profilu.
+Przed oznaczeniem pracownika jako gotowego do zapłaty, profil pracownika zostanie zweryfikowany pod kątem kompletności.
 
 ![Sprawdzanie poprawności wyników.](./media/hr-ready-to-pay-3-results.png)
 
-Poniższa tabela zawiera informacje o każdej z wykonywanych walidacji. 
-
-| Sprawdzenie poprawności | Szczegóły |
+| Weryfikacja | Szczegóły |
 | --- | --- |
-| Parametr celu adresu | Sprawdza poprawność, czy parametr **Użyj adresów listy płac w celu** jest włączony. |
-| Adres listy płac | Sprawdza, czy profil pracownika ma co najmniej jeden adres z przeznaczeniem „Lokalizacja miejsca zamieszkania listy płac” lub „Lokalizacja pracy listy płac” i istnieje tylko jeden adres na cel. |
-| Zatrudnienie | Sprawdź, czy pracownik ma co najmniej jedno zatrudnienie (obecne, poprzednie lub przyszłe). |
-| Numer identyfikacyjny | Sprawdza, czy parametr „Użyj typów identyfikacji w przetwarzaniu listy płac” ma wartość tak i czy typ identyfikacji wskazany w parametrze jest wypełniony w profilu pracownika. |
-| Imię i nazwisko | Sprawdza poprawność, czy profil pracownika jest prawidłowy, sprawdzając, czy pola **Imię** i **Nazwisko** są wypełnione.|
-| Umieszczenie | Sprawdź, czy pracownik ma przypisane stanowisko. |
-| Data urodzenia | Sprawdza poprawność, czy profil pracownika jest prawidłowy, sprawdzając, czy pole **Data urodzenia** wypełnione. |
-| Kompensata | Sprawdź, czy pracownik jest zapisany do planu stałego wynagrodzenia. |
+| **Parametr celu adresu** | Sprawdza poprawność, czy parametr **Użyj adresów listy płac w celu** jest włączony. |
+| **Adres listy płac** | Sprawdza, czy profil pracownika ma co najmniej jeden adres z przeznaczeniem **Lokalizacja miejsca zamieszkania listy płac** lub **Lokalizacja pracy listy płac** i istnieje tylko jeden adres na cel. |
+| **Zatrudnienie** | Sprawdza, czy pracownik ma co najmniej jedno zatrudnienie (obecne, poprzednie lub przyszłe). |
+| **Numer identyfikacyjny** | Sprawdza, czy parametr **Użyj typów identyfikacji w przetwarzaniu listy płac** ma wartość **tak** na stronie **Parametry Human resources** i czy typ identyfikacji wskazany w parametrze jest wypełniony w profilu pracownika. |
+| **Imię i nazwisko** | Potwierdza, że pola **Imię** i **Nazwisko** są wypełnione.|
+| **Umieszczenie** | Sprawdza, czy pracownik ma przypisane stanowisko. |
+| **Data urodzenia** | Pole **Urodziny** jest wypełnione. |
+| **Kompensata** | Sprawdza, czy pracownik jest zapisany do planu stałego wynagrodzenia. |
 
 Jeśli jedna z tych walidacji się nie powiedzie, nie możesz oznaczyć pracownika jako gotowego do zapłaty.
 
@@ -77,7 +75,7 @@ Jeśli pole **Gotowe do zapłaty** to **Nie**, oznacza to, że należy wykonać 
 ## <a name="known-issues"></a>Znane problemy
 
 - Należy wyłączyć funkcję **Usprawniony wpis pracownika** w zarządzaniu funkcjami. Kafelki w obszarze roboczym zarządzania wynagrodzeniami nie będą działać poprawnie, jeśli użyjesz tej funkcji.
-- W formularzu pracownika karta **Lista płac**, grupa **Gotowe do zapłaty** jest dostępna dla każdej roli użytkownika. 
+- W formularzu **pracownika** karta **Lista płac**, grupa **Gotowe do zapłaty** jest dostępna dla każdej roli użytkownika. 
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

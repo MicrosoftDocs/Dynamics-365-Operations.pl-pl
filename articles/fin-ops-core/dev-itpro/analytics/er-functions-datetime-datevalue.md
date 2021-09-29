@@ -2,7 +2,7 @@
 title: DATEVALUE, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji DATEVALUE w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/04/2019
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c2db02e95c0e744c863381cff779b92679e7a396d7edb7bf90d3bffc0229619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 446f1357e54342073e73f86ef36e6467e029ebc4
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747600"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485581"
 ---
 # <a name="datevalue-er-function"></a>DATEVALUE, funkcja ER
 
 [!include [banner](../includes/banner.md)]
 
-Funkcja `DATEVALUE` zwraca wartość *daty*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej [kultury](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkcja `DATEVALUE` zwraca wartość *[daty](er-formula-supported-data-types-primitive.md#date)*, która jest konwertowana z wartości danego tekstu w określonym formacie i opcjonalnie określonej [kulturze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Składnia 1
 
@@ -41,17 +41,17 @@ DATEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`text`: *Ciąg*
+`text`: *[Ciąg](er-formula-supported-data-types-primitive.md#string)*
 
 Tekst reprezentujący wartość do sformatowania.
 
 `format`: *Ciąg*
 
-Format danego tekstu.
+Format danego tekstu. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *Ciąg*
 
-Kultura używana do formatowania danego tekstu.
+Kultura używana do formatowania danego tekstu. Aby uzyskać informacje o obsługiwanych kulturach, zobacz temat [Kultura](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Wartości zwracane
 

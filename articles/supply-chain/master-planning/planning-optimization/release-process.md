@@ -2,7 +2,7 @@
 title: Proces wydania i historia wydań optymalizacji planowania
 description: Ten temat zawiera informacje o procesie wydania i historii wydań dla optymalizacji planowania.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474707"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506790"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Proces wydania i historia wydań optymalizacji planowania
 
@@ -33,6 +33,7 @@ Ponieważ powiadomienia nie są wyświetlane, gdy optymalizacja planowania jest 
 
 | Zmiany | Szczegóły zarządzania funkcjami | Daty zwolnienia |
 |---|---|---|
+| <p>Dodano obsługę planów główne z **metodą planowania** ustawioną na *planowanie operacji*.</p><p>Na stronie **Grupy marszrut** wartości pól wyboru **Aktywacja**, **Czas pracy** i **Zdolności produkcyjne** są zwracane w przypadku wierszy o typie **Marszruta/zadanie** o typie *Konfiguracja* lub *Proces*. </p><p>Ogólne usprawnienia wydajności, jakości i stabilności. | <p>Planowanie operacji jest dostępne w zarządzaniu funkcjami od wersji 10.0.20.</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p>  | 9–17 września 2021 r. |
 | Ogólne usprawnienia wydajności, jakości i stabilności. | Nie jest wymagane zarządzanie funkcjami. | 25–30 sierpnia 2021 r. |
 | <p>Dodano pole **Czas realizacji** do zamówień planowanych.</p><p>Ogólne usprawnienia wydajności, jakości i stabilności.</p> | Nie jest wymagane zarządzanie funkcjami. | 12–17 sierpnia 2021 r. |
 | <p>Dodano wymagania dotyczące typu zasobu dla planowania nieskończonej pojemności.</p><p>Zwiększono wydajność zasobów i wydajność kalendarza w celu planowania nieskończonej pojemności.</p><p>Aby uzyskać więcej informacji, zobacz [Planowanie z nieskończoną pojemnością](infinite-capacity-planning.md). | <p>Dostępne w zarządzaniu funkcjami w wersji 10.0.20.</p><p>Nazwa funkcji: *Planowanie nieskończonej pojemności dla optymalizacji planowania*</p> | 6–12 lipca 2021 r. |

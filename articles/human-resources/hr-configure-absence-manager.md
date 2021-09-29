@@ -2,7 +2,7 @@
 title: Konfigurowanie roli menedżera nieobecności
 description: W tym temacie wyjaśniono, jak skonfigurować rolę menedżera nieobecności do zarządzania urlopami pracowniczymi.
 author: hasrivas
-ms.date: 07/19/2021
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7f2a2fd0a1ad1cca19625ff1029962f608251f1d
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732352"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485761"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurowanie roli menedżera nieobecności
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 W niektórych organizacjach menedżerowie osób mogą nie zarządzać urlopem dla swojego zespołu. Zamiast tego menedżer nieobecności może obsługiwać ten proces dla członków zespołu w wielu działach i zespołach. Menedżerowie nieobecności mają następujące możliwości zarządzania urlopami:
 
@@ -38,7 +36,7 @@ W niektórych organizacjach menedżerowie osób mogą nie zarządzać urlopem dl
 
 1. W obszarze roboczym **Administrator systemu** wybierz **Zarządzanie funkcjami**.
 
-2. Na karcie **Zarządzanie funkcjami** włącz funkcję **(Podgląd) nieobecności, aby zarządzać funkcją urlopów**.
+2. Na karcie **Zarządzanie funkcjami** włącz funkcję **nieobecności, aby zarządzać funkcją urlopów**.
 
 ## <a name="define-a-custom-hierarchy"></a>Zdefiniuj niestandardową hierarchię
 

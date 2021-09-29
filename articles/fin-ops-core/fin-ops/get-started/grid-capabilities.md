@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775249"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483861"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
@@ -30,7 +30,7 @@ Nowa kontrolka siatki zapewnia kilka przydatnych i zaawansowanych funkcji, któr
 -  Obliczanie sum
 -  Pisanie przed systemem
 -  Ocenianie wyrażeń matematycznych 
--  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki (wersja zapoznawcza)**)
+-  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki**)
 -  Zamrażanie kolumn
 
 ## <a name="calculating-totals"></a>Obliczanie sum
@@ -93,7 +93,7 @@ Jako środek zwiększający produktywność, użytkownicy mogą wprowadzać form
 Aby system rozpoznawał wartość jako wyrażenie, należy uruchomić wartość ze znakiem równości (**=**). Więcej informacji na temat obsługiwanych operatorów i składni zawiera sekcja [obsługiwane symbole matematyczne](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Grupowanie danych tabelarycznych
-Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, funkcja **Grupowanie w siatkach**, zasadniczo dostępna w wersji 10.0.16/aktualizacji platformy 40 i zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
+Użytkownicy biznesowi często muszą przeprowadzać analizę danych ad hoc. Chociaż można to zrobić przez wyeksportowanie danych do Microsoft Excel i za pomocą tabel przestawnych, możliwość **Grupowania w siatkach tabelarycznych**, zależna od nowej funkcji kontroli siatki, umożliwia użytkownikom organizowanie swoich danych tabelarycznych w interesujący sposób w aplikacjach Finance and Operations. Ponieważ ta funkcja rozszerza funkcję **Sum**, **Grupowanie** umożliwia również uzyskanie istotnych informacji na temat danych przez zapewnienie sum częściowych na poziomie grupy.
 
 Aby skorzystać z tej funkcji, kliknij prawym przyciskiem myszy kolumnę, według której chcesz grupować, a następnie wybierz polecenie **Grupuj według tej kolumny**. Ta akcja spowoduje posortowanie danych według wybranej kolumny, dodanie nowej kolumny **Grupy według** do początku do siatki, a następnie wstawienie „wierszy nagłówka” na początku każdej grupy. Te wiersze nagłówka zawierają następujące informacje o każdej grupie: 
 -  Wartość danych dla grupy 
@@ -108,9 +108,6 @@ Po zgrupowaniu danych według jednej kolumny można je pogrupować według innej
 
 W dowolnym momencie można usunąć grupowanie według dowolnej kolumny, klikając prawym przyciskiem myszy tę kolumnę i wybierając polecenie **Rozgrupuj**. Można również usunąć grupowanie ze wszystkich kolumn, wybierając kolejno polecenia **Opcje siatki** i **Rozgrupuj wszystko**.   
 
-Uwaga: przed wersją 10.0.16/aktualizacją platformy 40 jest obsługiwany tylko jeden poziom grupowania. W tych wersjach jeśli dane są pogrupowane i wybierzesz opcję **Grupuj według tej kolumny** dla innej kolumny, pierwotne grupowanie zostanie zastąpione.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Rozwijanie i zwijanie grup
 Początkowe grupowanie danych będzie miało rozwinięte wszystkie grupy. Podsumowane widoki danych można tworzyć, zwijając poszczególne grupy, a także rozwijając grupę i zwijając ją, aby ułatwić nawigację między danymi. Aby rozwinąć lub zwinąć grupę, wybierz przycisk pagonu (>) w odpowiednim wierszu nagłówka grupy. Należy pamiętać, że stan rozwijania/zwijania poszczególnych grup **nie jest** zapisywany w obszarze Personalizacja.
 
@@ -118,10 +115,10 @@ Początkowe grupowanie danych będzie miało rozwinięte wszystkie grupy. Podsum
 W taki sam sposób, w jaki można wybrać (lub usunąć zaznaczenie) wszystkie wiersze w siatce — zaznaczając pole wyboru u góry pierwszej kolumny w siatce — można również szybko zaznaczyć (lub usunąć zaznaczenie) wszystkich wierszy w grupie, zaznaczając pole wyboru w odpowiednim wierszu nagłówka grupy. Pole wyboru w wierszu nagłówka grupy zawsze odzwierciedla bieżący stan zaznaczenia wierszy w tej grupie, niezależnie od tego, czy zaznaczono wszystkie wierszy, nie zaznaczono wierszy lub wybrano tylko niektóre wiersze.
 
 ### <a name="hiding-column-names"></a>Ukrywanie nazw kolumn
-Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Począwszy od wersji 10.0.14 z aktualizacją platformy 38 można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
+Podczas grupowania danych domyślnym zachowaniem jest wyświetlenie nazwy kolumny w wierszu nagłówka grupy. Można wybrać opcję wyłączania nazwy kolumny w wierszach nagłówka grupy, wybierając **Opcje siatki** > **Ukryj nazwę kolumny grupy**.
 
 ## <a name="freezing-columns"></a>Zamrażanie kolumn
-Niektóre kolumny w siatce mogą być na tyle ważne dla kontekstu, że nie powinny być przewijane w widoku. W zamian chcesz, aby wartości w tych kolumnach zawsze były widoczne. W wersji 10.0.17 funkcja **Zamroź kolumny w siatce** zapewnia użytkownikom tę elastyczność. 
+Niektóre kolumny w siatce mogą być na tyle ważne dla kontekstu, że nie powinny być przewijane w widoku. Zamiast tego możesz chcieć, aby wartości w tych kolumnach były zawsze widoczne. Funkcja **Zamroź kolumny w siatce** zapewnia użytkownikom tę elastyczność. 
 
 Aby zamrozić kolumnę, kliknij prawym przyciskiem myszy nagłówek kolumny, a następnie wybierz polecenie **Zamroź kolumnę**. Gdy ten krok zostanie ukończony po raz pierwszy, wybrana kolumna stanie się pierwszą kolumną i nie będzie już przewijana w widoku. Każda kolejna zamrożona kolumna zostanie dodana po prawej stronie ostatniej zamrożonej kolumny. W celu zmiany kolejności zamrożonych kolumn można użyć standardowych funkcji przenoszenia. Jednak zamrożonych kolumn nie można przenieść, aby były widoczne wśród zestawu odmrożonych kolumn. Podobnie odmrożonych kolumn nie można przenieść, aby były widoczne wśród zestawu zamrożonych kolumn.
 
@@ -132,32 +129,16 @@ Należy zauważyć, że wybór wierszy i kolumny stanu wiersza w nowej siatce s�
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak włączyć formant nowej siatki w środowisku? 
 
-**10.0.9 / Aktualizacja Platform update 33 i nowsze**
+Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Po włączeniu tej funkcji w Zarządzaniu funkcjami wszystkie kolejne sesje użytkowników będą korzystać z nowej kontroli siatki. 
 
-Funkcja **Kontrolka nowej siatki** jest dostępna bezpośrednio w module Zarządzanie funkcjami w dowolnym środowisku. Podobnie jak inne funkcje prapremiery publicznej, włączenie tej funkcji w produkcji podlega [uzupełniającemu warunkowi stosowania umowy](public-preview-terms.md).  
-
-**10.0.8/Aktualizacja platformy 32 i 10.0.7/Aktualizacja platformy 31**
-
-Funkcja **Kontrolka nowej siatki** można włączyć w środowiskach warstwy 1 (Dev/Test) i warstwa 2 (piaskownicy) w celu zapewnienia dodatkowych zmian w testowaniu i projekcie, wykonując poniższe kroki.
-
-1.  **Włącz funkcję testową**: wykonaj następującą instrukcję SQL: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Zresetuj usługi IIS**, aby opróżnić statyczną dystrybucję testową pamięci podręcznej. 
-
-3.  **Znajdź funkcję**: przejdź do obszaru roboczego **Zarządzanie funkcjami**. Jeśli **Formant nowej siatki** nie jest wyświetlana na liście wszystkich funkcji, wybierz opcję **Sprawdź aktualizacje**.   
-
-4.  **Włącz funkcję**: Znajdź funkcję **Formant nowej siatki** na liście funkcji i wybierz przycisk **Włącz teraz** w okienku szczegółów. Zauważ, że jest wymagane odświeżenie przeglądarki. 
-
-Wszystkie kolejne sesje użytkownika będą uruchamiane z włączonymi formantami nowej siatki.
+Ta funkcja jest domyślnie włączona od wersji 10.0.21 i ma być obowiązkowa w wersji 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Deweloper] Rezygnacja z używania nowej siatki dla poszczególnych stron 
-Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, począwszy od wersji 10.0.13/Aktualizacji platformy 37 dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
+Jeśli Twoja organizacja odkryje stronę, na której występują pewne problemy z wykorzystaniem nowej siatki, dostępny jest interfejs API, który umożliwia indywidualnemu formularzowi korzystanie ze starszej kontroli sieci, jednocześnie zezwalając reszcie systemu na korzystanie z nowej kontroli sieci. Aby wycofać pojedynczą stronę z nowej siatki, należy dodać następujący wpis wywołania `super()` w metodzie `run()` dla formularza.
 
  ```this.forceLegacyGrid();```
 
-Ten interfejs API będzie uznawany do wydania w październiku 2021, gdy nowa kontrolka siatki stanie się wymagana. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
+Ten interfejs API będzie honorowany do momentu, gdy nowa kontrola sieci stanie się obowiązkowa, co jest obecnie ukierunkowane na kwiecień 2022 r. Jeśli jakiekolwiek problemy wymagają użycia tego interfejsu API, należy zgłosić je do rozwiązania Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Wymuszanie strony do korzystania z nowej siatki po wcześniejszym zrezygnowaniu z siatki
 Jeśli użytkownik zrezygnował z używania nowej siatki przez pojedynczą stronę, można później ponownie włączyć nową siatkę po rozwiązaniu podstawowych problemów. Aby to zrobić, wystarczy usunąć połączenie do `forceLegacyGrid()`. Zmiana zostanie wniesienie w życie dopiero po wystąpieniu jednej z następujących sytuacji:

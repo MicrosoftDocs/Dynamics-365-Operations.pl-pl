@@ -1,5 +1,5 @@
 ---
-title: Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.21 (październik 2021 r.)
+title: Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.21 październik 2021 r.)
 description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.21.
 author: kamaybac
 ms.date: 08/09/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
-ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
+ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "7391215"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500562"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>Wersja zapoznawcza aplikacji Dynamics 365 Supply Chain Management 10.0.21 (październik 2021 r.)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.21 październik 2021 r.)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji zapoznawczej 10.0.21. Ta wersja ma numer kompilacji 10.0.960 i jest dostępna w następujący sposób:
+W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Microsoft Dynamics 365 Supply Chain Management w wersji 10.0.21. Ta wersja ma numer kompilacji 10.0.960 i jest dostępna w następujący sposób:
 
 - **Wersja zapoznawcza wydania:** sierpień 2021 r.
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** wrzesień 2021 r.
@@ -46,13 +45,14 @@ Wdrożenie będzie działało mimo ostrzeżenia. W usługach Lifecycle Services 
 
 To wydanie obejmuje następujące nowe funkcje. Kolumna *Funkcja* zawiera łącza do [planu wersji](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), w którym można zobaczyć oficjalne daty wydania poszczególnych funkcji. Kolumna *Więcej informacji* zawiera łącza do większej liczby szczegółów i dokumentacji pokrewnej.
 
-Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać. Niektóre z tych funkcji są nadal w wersji zapoznawczej, a inne mogą być już ogólnie dostępne.
+Większość tych funkcji należy włączyć, korzystając z [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), zanim będzie można z nich korzystać.
 
 | Obszar funkcji | Funkcja | Więcej informacji |
 |---|---|---|
-| Zapasy&nbsp;i&nbsp;logistyka | [Dodatek Globalne księgowanie zapasów do aplikacji Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Globalne księgowanie zapasów — strona główna](../global-inventory-accounting/global-inventory-accounting-home.md) |
+| Zapasy&nbsp;i&nbsp;logistyka | [Dodatek Globalne księgowanie zapasów do aplikacji Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Globalne księgowanie zapasów — strona główna](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Kody przyczyn zliczania zapasów](../warehousing/reason-codes-for-counting-journals.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Zasady eksportu danych, do których odwołuje się oferta sprzedaży](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Wskaż, czy zmiany danych, do których występuje odwołanie, będą powodować sytuację, w której powiązane oferty sprzedaży (lub wiersze) będą uwzględniane w następnym eksportowaniu przyrostowym. Eksport przyrostowy będzie uruchamiany szybciej, jeśli nie uwzględnisz takich ofert lub wierszy.<br><br>Ta funkcja dodaje ustawienie o nazwie **Pomiń przywoływane dane oferty sprzedaży podczas śledzenia zmian** do strony **Parametry modułu rozrachunków z odbiorcami**. |
+| Zapasy&nbsp;i&nbsp;logistyka | Zapieczętowany przetarg <!-- KFM: Add RP link when available --> | [Oferty zapieczętowane na potrzeby ZO](../procurement/sealed-bidding.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Skanowanie kodów kreskowych w magazynie przy użyciu standardów formatu GS1](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [Kody kreskowe GS1 i kody QR](../warehousing/gs1-barcodes.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Rezerwacja wstępna dla dodatku Widoczność magazynu](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Rezerwacje dodatku Widoczność magazynu](../inventory/inventory-visibility-reservations.md) |
 | Zapasy&nbsp;i&nbsp;logistyka | [Ulepszenia dotyczące potrąceń i ilości efektywnej w zakresie zarządzania rabatami](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [Zarządzanie potrąceniami przy użyciu pulpitu potrącenia](../rebate-management/deduction-workbench.md )<br><br>[Przetwarzanie, przegląd i księgowanie rabatów](../rebate-management/process-review-post.md)<br><br>[Zarządzanie rabatami — umowy](../rebate-management/rebate-management-deals.md) |

@@ -1,8 +1,8 @@
 ---
 title: Obsługa funkcji podatków dla zamówień przeniesienia
 description: W tym temacie wyjaśniono, że nowa funkcja podatków obsługuje zamówienia przeniesienia, używając usługi obliczania podatku.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c47c327841b8c712220e440e2aa6b4fe2b31b4a1ccd03dc0a200dbeb7394071
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721696"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500083"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Obsługa funkcji podatków dla zamówień przeniesienia
 
@@ -53,7 +53,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         4. Na karcie **Stawka** wybierz **Dodaj**.
         5. Przełącz **Jest zwolniony** na **Tak** w sekcji **Ogólne**.
 
-        ![Kod zwolnienia z podatku (NL).](../media/tax-feature-support-02.png)
+           ![Kod zwolnienia z podatku (NL).](../media/tax-feature-support-02.png)
 
     - Gdy zamówienie przeniesienia zostanie odebrane w magazynie belgijskim, mechanizm opłaty zwrotnej jest stosowany przy użyciu kodów podatków **BE-RC-21** i **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         6. Czy swtich **Wsteczna opłata** z **Tak** w sekcji **Ogólne**.
         7. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC-21 dla opłat zwrotnych.](../media/tax-feature-support-03.png)
+           ![Kod podatku BE-RC-21 dla opłat zwrotnych.](../media/tax-feature-support-03.png)
         
         Utwórz kod podatku **BE-RC+21**.
         1. Wybierz opcję **Dodaj** i wprowadź numer **BE-RC-21** w polu **Kod podatku**.
@@ -76,7 +76,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         5. Wprowadź **21** w polu **Stawka podatku**.
         6. Wybierz opcję **Zapisz**.
 
-        ![Kod podatku BE-RC+21 dla opłat zwrotnych.](../media/tax-feature-support-04.png)
+           ![Kod podatku BE-RC+21 dla opłat zwrotnych.](../media/tax-feature-support-04.png)
 
 3. Zdefiniuj możliwości zastosowania kodów podatków.
 
@@ -97,6 +97,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         7. W polach **Grupa podatków** i **Grupa podatków dla pozycji** wprowadź powiązaną grupę podatków i grupę podatków dla towaru zdefiniowaną w systemie Finance.
         
         Dodaj kolejną regułę dotyczącą potwierdzenia przelewu.
+        
         1. Na karcie **Stawka** wybierz tabelę **Reguły stosowania**.
         2. W polu **Proces biznesowy** wybierz pozycję **Zapasy**, aby reguła obowiązywała dla zamówienia przeniesienia.
         3. W polu **Kraj/region wysyłki** wprowadź nazwę **NLD**.
@@ -105,7 +106,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
         6. W polu **Kody podatków** wybierz **BE-RC+21** i **BE-RC-21**.
         7. W polach **Grupa podatków** i **Grupa podatków dla pozycji** wprowadź powiązaną grupę podatków i grupę podatków dla towaru zdefiniowaną w systemie Finance.
 
-        ![Reguły zastosowania.](../media/image5.png)
+           ![Reguły zastosowania.](../media/image5.png)
 
 4. Ukończ i opublikuj nową wersję funkcji podatkowej.
 
@@ -115,7 +116,7 @@ Aby skonfigurować podatek związany z zamówieniem przeniesienia, należy wykon
 
 Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zleceń przelewów.
 
-1. W Finance kliknij kolejno opcje **Obszary robocze** \> **Zarządzanie danymi**.
+1. W Finance kliknij kolejno opcje **Obszary robocze** > **Zarządzanie danymi**.
 2. Na liście znajdź i wybierz funkcję **Podatek w zamówieniu przeniesienia**, a następnie wybierz opcję **Włącz teraz**, aby ją włączyć.
 
     > [!IMPORTANT]
@@ -128,10 +129,10 @@ Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zlece�
     > [!IMPORTANT]
     > Ten krok należy wykonać dla każdej firmy w oknie Finance, gdzie ma być dostępna usługa podatkowa i funkcja podatku w zamówieniach przeniesienia.
 
-    1. przejdź do **Podatek** \> **Ustawienia** \> **Konfiguracja podatku** \> **Konfiguracja usług podatkowych**.
+    1. przejdź do **Podatek** > **Ustawienia** > **Konfiguracja podatku** > **Konfiguracja usług podatkowych**.
     2. W polu **Proces biznesowy** wybierz pozycję **Zapasy**.
 
-    ![Ustawianie pola Proces biznesowy.](../media/image8.png)
+      ![Ustawianie pola Proces biznesowy.](../media/image8.png)
 
 4. Sprawdź, czy jest ustawiony mechanizm opłaty zwrotnej. Przejdź do **Księga główna** \> **Ustawienia** \> **Parametry**, a następnie na karcie **Opłata zwrotna** sprawdź, czy opcja **Włącz opłatę zwrotną** ma wartość **Tak**.
 
@@ -140,10 +141,10 @@ Wykonaj poniższe czynności, aby włączyć i skonfigurować podatki dla zlece�
 5. Sprawdź, czy powiązane kody podatków, grupy podatków, grupy podatków dla pozycji i numery rejestracji VAT zostały ustawione w finansach zgodnie z wytycznymi usługi podatkowej.
 6. Konfigurowanie tymczasowego konta tranzytowego. Ten krok jest wymagany tylko w przypadku, gdy podatek zastosowany do zamówienia przeniesienia nie ma zastosowania do mechanizmu zwolnienia z podatku lub opłaty zwrotnej.
 
-    1. Wybierz kolejno opcje **Podatek** \> **Ustawienia** \> **Podatek** \> **Grupy księgowania**.
+    1. Wybierz kolejno opcje **Podatek** > **Ustawienia** > **Podatek** \ **Grupy księgowania**.
     2. W polu **Tranzyt tymczasowy** wybierz konto księgowe.
 
-    ![Konfigurowanie tymczasowego konta tranzytowego.](../media/image10.png)
+       ![Konfigurowanie tymczasowego konta tranzytowego.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Konfigurowanie Finance dla transakcji zamówień podatku i przeniesienia
 
@@ -151,7 +152,7 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
 
 1. Należy utworzyć miejsca wysyłki i wysyłki dla magazynów w różnych krajach lub regionach, a następnie dodać adres podstawowy dla poszczególnych lokalizacji.
 
-    1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Magazyn** \> **Lokalizacja**.
+    1. Wybierz kolejno opcje **Zarządzanie magazynem** > **Ustawienia** > **Magazyn** > **Lokalizacje**.
     2. Wybierz **opcję Nowy**, aby utworzyć witrynę, która zostanie później przypisana do magazynu.
     3. Powtórz krok 2 dla wszystkich innych witryn, które musisz utworzyć.
 
@@ -162,11 +163,11 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
 
 2. Umożliwia tworzenie magazynów miejsc wysyłki, tranzytu i wysyłki do. Wszystkie informacje adresowe zachowywane w magazynie zastępują adres lokalizacji podczas obliczania podatku.
 
-    1. Wybierz kolejno opcje **Zarządzanie magazynem** \> **Ustawienia** \> **Magazyn** \> **Magazyny**.
+    1. Wybierz kolejno opcje **Zarządzanie magazynem** > **Ustawienia** > **Magazyn** > **Magazyny**.
     2. Wybierz **opcję Nowy**, aby utworzyć witrynę, która zostanie później przypisana do magazynu.
     3. Powtórz krok 2, aby utworzyć magazyn dla każdego wymaganego magazynu.
 
-    ![Ustawianie magazynów.](../media/image12.png)
+       ![Ustawianie magazynów.](../media/image12.png)
 
     > [!NOTE]
     > W przypadku magazynu wysyłki z transakcji zamówienia przeniesienia w polu **Magazyn tranzytowy** musi być wybrany magazyn tranzytowy.
@@ -175,7 +176,7 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
 
 3. Sprawdź, czy konfiguracja księgowania zapasów jest skonfigurowana dla transakcji zlecenia przeniesienia.
 
-    1. Przejdź do **Zarządzanie zapasami** \> **Konfiguracja** \> **Księgowanie** \> **Księgowanie**.
+    1. Przejdź do **Zarządzanie zapasami** > **Konfiguracja** > **Księgowanie** > **Księgowanie**.
     2. Na karcie **Zapasy** sprawdź, czy konto księgowe jest ustawione zarówno dla księgowania **wydania z magazynu**, jak i księgowania **przyjęcia na magazyn**.
 
         ![Konfigurowanie księgowania wydania z magazynu i przyjęcia na magazyn.](../media/image14.png)
@@ -187,3 +188,6 @@ Aby włączyć transakcje zamówień przeniesienia, należy wykonać następują
     4. Sprawdź, czy konto księgowe jest ustawione do księgowania **Odbiorów między jednostkami**.
 
         ![Konfigurowanie księgowania rachunków z odbiorami między jednostkami.](../media/image16.png)
+        
+        
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

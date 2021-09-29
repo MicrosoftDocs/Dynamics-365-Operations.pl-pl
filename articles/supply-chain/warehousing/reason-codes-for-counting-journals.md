@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345273"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500607"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Kody przyczyn zliczania zapasów
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Kody przyczyn umożliwiają analizowanie wyników procesu inwentaryzacji (zliczania) i wszelkich rozbieżności pojawiających się w trakcie tego procesu. Można określić przyczynę wykonywania inwentaryzacji, taką jak uszkodzenie palety lub korekta zapasów oparta na próbkach zapasów. Jednocześnie można użyć funkcji korekty, aby zaksięgować wartość dostępnych korekt zapasów na odpowiednim koncie przeciwstawnym, na podstawie przyczyny każdej korekty zapasów.
 
@@ -42,8 +41,6 @@ Przed skonfigurowaniem systemu zalecamy zdefiniowanie strategii pracy z kodami p
 - Czy kody przyczyn powinny prowadzić do księgowania na finansowym konta przeciwstawnym?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Włączanie funkcji kodów przyczyn w systemie
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Jeśli nie widzisz wszystkich funkcji opisanych w tym temacie w systemie, prawdopodobnie musisz włączyć funkcję *Księgowanie korekt dostępnych zapasów za pomocą konfigurowalnych kodów przyczyn połączonych z kontami przeciwstawnymi*. Administratorzy mogą skorzystać z ustawień [zarządzania funkcją](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), aby sprawdzić stan funkcji i włączyć ją, jeśli istnieje taka potrzeba. W obszarze roboczym **Zarządzanie funkcjami** ta funkcja widnieje jako:
 
@@ -143,7 +140,7 @@ W większości przypadków można zdefiniować następujące informacje dla każ
 
 Aby skonfigurować element menu urządzenia przenośnego dla procesu inwentaryzacji, wykonaj następujące kroki.
 
-1. Przejdź do pozycji **Warehouse Management** \> **Konfiguracja** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
+1. Przejdź do pozycji **Zarządzanie magazynem** \> **Konfiguracja** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
 1. Zaznacz odpowiedni element menu w okienku listy lub utwórz nowy element menu.
 1. W okienku akcji wybierz pozycję **Inwentaryzacja ciągła**.
 1. W polu **Domyślny kod przyczyny inwentaryzacji** ustaw domyślny kod przyczyny, który ma być rejestrowany podczas inwentaryzacji za pomocą elementu menu na urządzeniu przenośnym.
@@ -161,7 +158,7 @@ Aby skonfigurować element menu urządzenia przenośnego dla procesu inwentaryza
 
 Aby skonfigurować element menu urządzenia przenośnego dla korekty wewnętrznej lub zewnętrznej, wykonaj następujące kroki.
 
-1. Przejdź do pozycji **Warehouse Management** \> **Konfiguracja** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
+1. Przejdź do pozycji **Zarządzanie magazynem** \> **Konfiguracja** \> **Urządzenie przenośne** \> **Elementy menu urządzenia przenośnego**.
 1. W okienku akcji wybierz opcję **Nowe**, aby utworzyć element menu.
 1. Ustaw pola **Nazwa elementu na urządzeniu przenośnym** i **Tytuł** dla nowego elementu menu.
 1. Ustaw pole **Tryb** na *Praca*.
@@ -182,7 +179,7 @@ Aby skonfigurować element menu urządzenia przenośnego dla korekty wewnętrzne
 > [!NOTE]
 > Po przypisaniu grupy kodu przyczyny inwentaryzacji do elementów menu *Korekta wewnętrzna* i *Korekta zewnętrzna*, gdy opcja **Użyj przewodnika po procesach** jest ustawiona na *Tak*, można uzyskać ograniczoną listę kodów przyczyn inwentaryzacji w ramach przetwarzania w aplikacji mobilnej Warehouse Management.
 >
-> Opcja **Użyj przewodnika po procesach** może również pomóc zapobiegać pomyłkowemu przetwarzaniu dużych ilości w ramach korekty. (Na przykład pracownik może przypadkowo zeskanować kod kreskowy numeru pozycji zamiast wartości ilościowej). Aby skonfigurować tę funkcję, należy ustawić opcję **Użyj przewodnika po procesach** na *Tak* dla każdego odpowiedniego elementu menu. Następnie przejdź do pozycji **Warehouse Management \> Konfiguracja \> Pracownik** i ustaw pole **Limit ilości korekty** dla każdego odpowiedniego pracownika magazynu, aby określić maksymalną ilość korekty, jaką pracownik może zarejestrować.
+> Opcja **Użyj przewodnika po procesach** może również pomóc zapobiegać pomyłkowemu przetwarzaniu dużych ilości w ramach korekty. (Na przykład pracownik może przypadkowo zeskanować kod kreskowy numeru pozycji zamiast wartości ilościowej). Aby skonfigurować tę funkcję, należy ustawić opcję **Użyj przewodnika po procesach** na *Tak* dla każdego odpowiedniego elementu menu. Następnie przejdź do pozycji **Zarządzanie magazynem \> Konfiguracja \> Pracownik** i ustaw pole **Limit ilości korekty** dla każdego odpowiedniego pracownika magazynu, aby określić maksymalną ilość korekty, jaką pracownik może zarejestrować.
 
 ## <a name="processing-that-uses-counting-reason-codes"></a>Przetwarzanie, które używa kodów przyczyn inwentaryzacji
 
@@ -196,7 +193,7 @@ Przed zatwierdzeniem inwentaryzacji pracownik może zmienić kod przyczyny skoja
 
 Aby zmodyfikować zatwierdzenie inwentaryzacji ciągłej, wykonaj następujące kroki.
 
-1. Przejdź do pozycji **Warehouse Management** \> **Inwentaryzacja ciągła** \> **Praca inwentaryzacji ciągłej oczekuje na przegląd**.
+1. Przejdź do pozycji **Zarządzanie magazynem** \> **Inwentaryzacja ciągła** \> **Praca inwentaryzacji ciągłej oczekuje na przegląd**.
 1. Wybierz inwentaryzację ciągłą w siatce.
 1. W okienku akcji na karcie **Praca** wybierz opcję **Inwentaryzacja ciągła**. Następnie w polu **Kod przyczyny** wybierz nowy kod przyczyny.
 

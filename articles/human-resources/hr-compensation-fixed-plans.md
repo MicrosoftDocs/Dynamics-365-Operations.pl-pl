@@ -1,8 +1,8 @@
 ---
 title: Tworzenie planów stałych wynagrodzeń
-description: Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć plan stałych wynagrodzeń i zarejestrować pracowników.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć system stałych wynagrodzeń i zarejestrować pracowników.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,28 +12,28 @@ ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ae6f31db40c792c9b65a6f21395e05528a053acbc4b9dc8b56978675c635e0f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 141666963ca70e320f6acd02a0344f00c780dcac
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732496"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484150"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Tworzenie planów stałych wynagrodzeń
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten artykuł zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć plan stałych wynagrodzeń i zarejestrować pracowników.
+Pojęcie „stałe wynagrodzenie” odnosi się do standardowego wynagrodzenia brutto lub pensji pracownika. Ten temat zawiera opis składników, które muszą zostać skonfigurowane, zanim będzie można utworzyć system stałych wynagrodzeń i zarejestrować pracowników.
 
 Można obliczyć kwoty stałych wynagrodzeń dla pracowników na podstawie czynników, takich jak wydajność, region i zwiększenia budżetu. Dynamics 365 Human Resources obsługuje wynagrodzenia etapowe, stopniowe i pasmowe.
 
 ## <a name="fixed-compensation-components"></a>Składniki wynagrodzenia o stałej wysokości
 ### <a name="compensation-levels"></a>Poziomy wynagrodzeń
 
-Można użyć **poziomów wynagrodzeń** do ustawiania wynagrodzenia dla różnych zadań w celu zagwarantowania, że pracownicy, którzy posiadają te zadania, są uczciwie opłacani. Na stronie **Poziomy wynagrodzeń** można skonfigurować poziomy wynagrodzeń, które są wymagane w przypadku każdego systemu etapowego, stopniowego i pasmowego. Za pomocą przycisków **W górę** i **W dół** można ustawić poziomy we właściwej kolejności według ich typu. Poziomy wynagrodzeń dla zadania pozwalają zapewnić, że wszyscy pracownicy zatrudnieni na stanowiskach obsługujących dane zadanie są wynagradzani na tym samym poziomie.
+Można użyć **Poziomów wynagrodzeń** do ustawiania wynagrodzenia dla różnych zadań w celu zagwarantowania, że pracownicy, którzy posiadają te zadania, są uczciwie opłacani. Na stronie **Poziomy wynagrodzeń** można skonfigurować poziomy wynagrodzeń, które są wymagane w przypadku każdego systemu etapowego, stopniowego i pasmowego. Za pomocą przycisków **W górę** i **W dół** można ustawić poziomy we właściwej kolejności według ich typu. Poziomy wynagrodzeń dla zadania pozwalają zapewnić, że wszyscy pracownicy zatrudnieni na stanowiskach obsługujących dane zadanie są wynagradzani na tym samym poziomie.
 
 ### <a name="reference-points"></a>Punkty odniesienia
 
@@ -41,7 +41,7 @@ Można użyć **poziomów wynagrodzeń** do ustawiania wynagrodzenia dla różny
 
 ### <a name="compensation-grids"></a>Siatki wynagrodzeń
 
-Po skonfigurowaniu poziomów i punktów odniesienia, można je łączyć, aby utworzyć **siatkę wynagrodzeń**. Na stronie **Siatka wynagrodzeń** określ informacje dotyczące siatki. Na przykład określ, do czego ma być używana projektowana siatka, z jakiego typu planem będzie używana i jakie punkty odniesienia lub kolumny są wymagane w siatce. Po zakończeniu wprowadzania tych informacji kliknij przycisk **Struktura wynagrodzeń**, aby dodać poziomy i kwoty do siatki. 
+Po skonfigurowaniu poziomów i punktów odniesienia, można je łączyć, aby utworzyć **Siatkę wynagrodzeń**. Na stronie **Siatka wynagrodzeń** określ informacje dotyczące siatki. Na przykład określ, do czego ma być używana projektowana siatka, z jakiego typu planem będzie używana i jakie punkty odniesienia lub kolumny są wymagane w siatce. Po zakończeniu wprowadzania tych informacji kliknij przycisk **Struktura wynagrodzeń**, aby dodać poziomy i kwoty do siatki. 
 
 **Porada:** Użyj funkcji **Zmiany grupowe** w strukturze wynagrodzeń, aby ustawić kwoty wstępne, a następnie ustal przyrost procentowy lub kwotowy dla wszystkich poziomów lub punktów odniesienia.
 
@@ -60,9 +60,9 @@ Ustawienie **Reguła zatrudnienia** pozwala określić, czy wszyscy pracownicy p
 
 Po zdefiniowaniu podstawy planu stałych wynagrodzeń, można skonfigurować strukturę wynagrodzeń dla planu. Kliknij przycisk **Konfiguruj wynagrodzenie**. Wyświetli się okno dialogowe z suwakiem, w którym są dostępne następujące trzy opcje:
 
--   Utwórz nową siatkę wynagrodzeń, zaznaczając konfigurację punktów odniesienia i nadając siatce nazwę.
--   Utwórz nową siatkę wynagrodzeń, wykonując kopię istniejącej siatki, którą można użyć jako punktu wyjścia.
--   Użyj istniejącej siatki wynagrodzeń, która została już zdefiniowana. Wszystkie plany wynagrodzeń, które używają tej samej siatki, otrzymują aktualizacje, jeśli siatka jest zmieniana.
+-   **Utwórz nową siatkę wynagrodzeń**, zaznaczając konfigurację punktów odniesienia i nadając siatce nazwę.
+-   **Utwórz nową siatkę wynagrodzeń**, wykonując kopię istniejącej siatki, którą można użyć jako punktu wyjścia.
+-   **Użyj istniejącej siatki wynagrodzeń**, która została już zdefiniowana. Wszystkie plany wynagrodzeń, które używają tej samej siatki, otrzymują aktualizacje, jeśli siatka jest zmieniana.
 
 Po wybraniu opcji otwiera się strona **Struktura wynagrodzeń** i można wprowadzić zmiany w nowej lub istniejącej siatce wynagrodzeń.
 
@@ -73,7 +73,7 @@ Pierwszym krokiem podczas rejestrowania pracowników w planie stałego wynagrodz
 
 **Uwaga:** Reguły uprawnienia są używane do określania uprawnień zarówno dla planów stałych jak i zmiennych wynagrodzeń. 
 
-Reguła uprawnienia uwzględnia wartość określonych pól w rekordach Zadanie, Stanowisko i Pracownik, aby określić, czy pracownik jest uprawniony do planu wynagrodzeń.
+Reguła uprawnienia uwzględnia wartość określonych pól w rekordach **Zadanie**, **Stanowisko** i **Pracownik**, aby określić, czy pracownik jest uprawniony do planu wynagrodzeń.
 
 -   Na stronie **Zadanie** reguła uprawnienia bierze pod uwagę wartości następujących pól:
     -   Pole **Zadanie**
@@ -93,9 +93,9 @@ Na przykład podczas ustawiania stałego wynagrodzenia dla pracownika mogą być
 
 Teraz można przypisać pracownika do planu stałych wynagrodzeń. Otwórz stronę **Pracownicy** i wybierz pracownika, których chcesz zarejestrować w planie wynagrodzeń. W okienku akcji kliknij kolejno opcje **Wynagrodzenie** &gt; **Plan stałych wynagrodzeń**. Teraz możesz utworzyć nową akcję stałego wynagrodzenia dla tego pracownika. 
 
-**Uwaga:** pole planu wynagrodzeń zawiera tylko plany dla pracownika, który może skorzystać z planu zgodnie z regułami uprawnień określonymi dla każdego planu. Jeśli nie skonfigurowano żadnej reguły uprawnienia w planie, żaden pracownik nie będzie uprawniony do tego planu. 
+**Uwaga:** pole **planu wynagrodzeń** zawiera tylko plany dla pracownika, który może skorzystać z planu zgodnie z regułami uprawnień określonymi dla każdego planu. Jeśli nie skonfigurowano żadnej reguły uprawnienia w planie, żaden pracownik nie będzie uprawniony do tego planu. 
 
-System sprawdza, czy kwota wynagrodzenia określona dla planu wynagrodzeń typu stopniowego lub pasmowego mieści się zakresie wyznaczonym przez maksymalne i minimalne punkty odniesienia dla danego poziomu wynagrodzeń w zadaniu pracownika. Jeśli kwota wynagrodzenia jest spoza dozwolonym zakresem, pojawia się ostrzeżenie lub komunikat o błędzie w zależności od poziomu tolerancji ustawionego w planie stałych wynagrodzeń.
+Wysokość wynagrodzenia określona dla planu wynagrodzeń typu zaszeregowania lub grupy jest weryfikowana, czy mieści się w minimalnym i maksymalnym punkcie odniesienia dla danego poziomu wynagrodzenia na stanowisku pracownika. Jeśli kwota wynagrodzenia jest spoza dozwolonym zakresem, pojawia się ostrzeżenie lub komunikat o błędzie w zależności od poziomu tolerancji ustawionego w planie stałych wynagrodzeń.
 
 
 

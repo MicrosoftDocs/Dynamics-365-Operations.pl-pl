@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie siatek wynagrodzeń
 description: Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla planów stałych wynagrodzeń.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRCCompGrid, HRCCompGridView, HcmCompensationWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9592c993cb1d1d392c5cd349663325d326d821521ca7042ba593d74e8f3b5d2f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732472"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483824"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurowanie siatek wynagrodzeń
 
@@ -28,68 +28,67 @@ Siatki wynagrodzeń są używane do definiowania i obsługi struktur płacy dla 
 
 
 ## <a name="set-up-information-about-the-compensation-grid"></a>Konfigurowanie informacji o siatce wynagrodzeń
-1. Wybierz kolejno opcje Zasoby ludzkie > Wynagrodzenia > Stałe wynagrodzenie > Siatki wynagrodzeń.
-2. Kliknij przycisk Nowy.
-3. W polu Siatka wpisz wartość.
-4. Wypełnij pole Opis.
-5. W polu Typ wybierz opcję.
-6. W polu Konfiguracja odniesienia wprowadź lub wybierz wartość.
-7. W polu Waluta wprowadź lub wybierz wartość.
-8. W polu Waluta wpisz wartość.
-9. W polu Data obowiązywania wprowadź datę.
+1. Wybierz kolejno opcje **Zasoby ludzkie** > **Wynagrodzenia** > **Stałe wynagrodzenie** > **Siatki wynagrodzeń**.
+2. Kliknij przycisk **Nowy**.
+3. W polu **Siatka** wpisz wartość.
+4. W polu **Opis** wpisz wartość.
+5. W polu **Typ** wybierz opcję.
+6. W polu konfiguracja **odniesienia** wprowadź lub wybierz wartość.
+7. W polu **Waluta** wprowadź lub wybierz wartość.
+8. W polu **Data wejścia w życie** wprowadź datę.
 
 ## <a name="add-levels-to-the-compensation-structure"></a>Dodawanie poziomów do struktury wynagrodzeń
-1. Kliknij opcję Struktura wynagrodzeń.
+1. Kliknij opcję **Struktura wynagrodzeń**.
 2. Na liście oznacz wybrany wiersz.
-3. W polu Poziom wprowadź lub wybierz wartość.
-4. Kliknij przycisk Nowy.
+3. W polu **Poziom** wprowadź lub wybierz wartość.
+4. Kliknij przycisk **Nowy**.
 5. Na liście oznacz wybrany wiersz.
-6. W polu Poziom wprowadź lub wybierz wartość.
-7. Kliknij przycisk Nowy.
+6. W polu **Poziom** wprowadź lub wybierz wartość.
+7. Kliknij przycisk **Nowy**.
 8. Na liście oznacz wybrany wiersz.
-9. W polu Poziom wprowadź lub wybierz wartość.
-10. Kliknij przycisk Nowy.
+9. W polu **Poziom** wprowadź lub wybierz wartość.
+10. Kliknij przycisk **Nowy**.
 11. Na liście oznacz wybrany wiersz.
-12. W polu Poziom wprowadź lub wybierz wartość.
-13. Kliknij przycisk Nowy.
+12. W polu **Poziom** wprowadź lub wybierz wartość.
+13. Kliknij przycisk **Nowy**.
 14. Na liście oznacz wybrany wiersz.
-15. W polu Poziom wprowadź lub wybierz wartość.
+15. W polu **Poziom** wprowadź lub wybierz wartość.
 
 ## <a name="fill-in-the-compensation-structure-with-values"></a>Wypełnianie struktury wynagrodzeń wartościami
 1. Na liście oznacz wybrany wiersz.
     * W tym momencie wartości wynagrodzeń można ręcznie wprowadzić do każdego pola w tabeli lub użyć funkcji zmiany masowej i w jednym kroku łatwo wypełnić wiele pól oraz wykonać podstawowe obliczenia.  
-2. Kliknij opcję Zmiana masowa.
+2. Kliknij opcję **Zmiana masowa**.
     * W tej siatce najpierw zastosujemy wartość punktu środkowego pierwszego poziomu do wszystkich pól w tabeli. Będzie to podstawa macierzy wynagrodzeń.  
-3. W polu Typ korekty wybierz opcję.
-4. W polu Kwota korekty wpisz liczbę.
+3. W polu **Typ korekty** wybierz opcję.
+4. W polu **Kwota korekty** wpisz liczbę.
 5. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
-6. Kliknij przycisk Zastosuj do siatki.
+6. Kliknij przycisk **Zastosuj do siatki**.
     * Teraz użyjemy funkcji zmiany masowej, aby zwiększyć kwoty na każdym kolejnym poziomie o określony procent lub kwotę. W tym przykładzie rozpiętość między punktami środkowymi kategorii będzie wynosiła 12,5%.  
-7. W polu Typ korekty wybierz opcję.
-8. W polu Kwota korekty wpisz liczbę.
+7. W polu **Typ korekty** wybierz opcję.
+8. W polu **Kwota korekty** wpisz liczbę.
 9. Na liście znajdź i zaznacz odpowiedni rekord.
 10. Na liście znajdź i zaznacz odpowiedni rekord.
 11. Na liście znajdź i zaznacz odpowiedni rekord.
 12. Na liście znajdź i zaznacz odpowiedni rekord.
-13. Kliknij przycisk Zastosuj do siatki.
+13. Kliknij przycisk **Zastosuj do siatki**.
 14. Na liście znajdź i zaznacz odpowiedni rekord.
 15. Na liście znajdź i zaznacz odpowiedni rekord.
 16. Na liście znajdź i zaznacz odpowiedni rekord.
-17. Kliknij przycisk Zastosuj do siatki.
+17. Kliknij przycisk **Zastosuj do siatki**.
 18. Na liście znajdź i zaznacz odpowiedni rekord.
 19. Na liście znajdź i zaznacz odpowiedni rekord.
-20. Kliknij przycisk Zastosuj do siatki.
+20. Kliknij przycisk **Zastosuj do siatki**.
 21. Na liście znajdź i zaznacz odpowiedni rekord.
 22. Kliknij przycisk Zastosuj do siatki.
     * Teraz użyjemy funkcji zmiany masowej, aby skorygować punkty odniesienia minimalny i maksymalny na każdym poziomie. W tym przykładzie zostanie użyta rozpiętość 50%, tak że minimalny punkt odniesienia zostanie skorygowany o -20%, a punkt maksymalny o +20%.  
-23. W polu Kwota korekty wpisz liczbę.
-24. W polu Punkt odniesienia wprowadź lub wybierz wartość.
+23. W polu **Kwota korekty** wpisz liczbę.
+24. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
 25. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
-26. Kliknij przycisk Zastosuj do siatki.
-27. W polu Kwota korekty wpisz liczbę.
-28. W polu Punkt odniesienia wprowadź lub wybierz wartość.
+26. Kliknij przycisk **Zastosuj do siatki**.
+27. W polu **Kwota korekty** wpisz liczbę.
+28. W polu **Punkt odniesienia** wprowadź lub wybierz wartość.
 29. Na liście oznacz wszystkie wiersze lub usuń ich oznaczenie.
-30. Kliknij przycisk Zastosuj do siatki.
+30. Kliknij przycisk **Zastosuj do siatki**.
 
 
 

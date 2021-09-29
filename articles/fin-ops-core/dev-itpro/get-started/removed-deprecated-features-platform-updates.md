@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463637"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500116"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -38,7 +38,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Przyczyna wycofania/usunięcia** | Wycofujemy niektóre raporty SQL w usługach LCS. Nie będzie już potrzebne monitorowanie raportów, ponieważ ta funkcja została zastąpiona przez inne usługi. |
+| **Przyczyna wycofania/usunięcia** |   Wszystkie czynności i monitoring będą wykonywane wewnętrznie, przez platformę, poprzez automatyzację. Nie będzie to wymagać ręcznej interwencji.|
 | **Zamieniona przez inną funkcję?**   | Nr |
 | **Powiązane obszary produktów**         | Raporty SQL: Bieżące jednostki DTU, Szczegóły bieżącej jednostki DTU, Pobierz szczegóły blokady, Lista bieżącego przewodnika planu, Pobierz listę identyfikatorów zapytania, Pobierz plan zapytania SQL dla danego identyfikatora planu, Pobierz plany i stan wykonywania zapytań, Pobierz konfigurację ograniczenia, Pobierz statystyki oczekiwania, Lista najdroższych zapytań |
 | **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
@@ -181,7 +181,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | [Nowa kontrolka siatki](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Powiązane obszary produktów**         | Klient sieci Web |
 | **Opcja wdrażania**              | Wszystkich |
-| **Stan**                         | W wersji 10.0.13 nowa kontrola sieci jest ogólnie dostępna, a klienci mogą opcjonalnie włączyć tę funkcję. Nowa kontrola sieci stanie się obowiązkowa w wersji z października 2021 r. Gdy nowa kontrola sieci stanie się obowiązkowa, API **forceLegacyGrid()** nie będzie już honorowane. |
+| **Stan**                         | W wersji 10.0.13 nowa kontrola sieci jest ogólnie dostępna, a klienci mogą opcjonalnie włączyć tę funkcję. Nowa kontrola sieci zostanie domyślnie włączona w wydaniu z października 2021 r. i obecnie ma być obowiązkowa w kwietniu 2022 r. Gdy nowa kontrola sieci stanie się obowiązkowa, API **forceLegacyGrid()** nie będzie już honorowane. |
 
 ### <a name="personalization-without-saved-views"></a>Personalizacja bez zapisanych widoków 
 

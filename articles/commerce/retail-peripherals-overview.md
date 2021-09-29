@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715341"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500310"
 ---
 # <a name="peripherals"></a>Urządzenia peryferyjne
 
@@ -562,7 +562,7 @@ Tej konfiguracji można używać na wszystkich urządzeniach klienckich programu
 > Jeśli urządzenia często używają różnych stacji sprzętowych, zaleca się skonfigurowanie w programie Modern POS monitowania kasjerów o wybór stacji przy rozpoczynaniu procesu płacenia. Kliknij kolejno opcje **Handel detaliczny i inny** &gt; **Ustawienia kanału** &gt; **Ustawienia punktu sprzedaży** &gt; **Rejestry**. Zaznacz kasę, a następnie w opcji **Wybierz przy płatności** ustaw wartość **Tak**. Użyj harmonogramu dystrybucji **1090**, aby zsynchronizować zmiany z bazą danych kanału.
 
 ## <a name="extensibility"></a>Możliwości rozszerzania
-Aby uzyskać informacje na temat scenariuszy rozszerzania stacji sprzętowej, zobacz [Możliwości rozszerzania stacji sprzętowych](dev-itpro/hardware-station-extensibility.md).
+Aby uzyskać informacje na temat scenariuszy rozszerzalności dla stacji sprzętowej, zobacz [Integracja punktu sprzedaży z nowym urządzeniem sprzętowym i wygenerowanie instalatora rozszerzenia](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Zabezpieczenia
 Zgodnie z obowiązującymi standardami zabezpieczeń w środowisku produkcyjnym należy stosować ustawienia wymienione poniżej. 

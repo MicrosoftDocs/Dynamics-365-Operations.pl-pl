@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744185"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488209"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Włącz zarządzanie zmianami w istniejących produktach
 
@@ -47,7 +47,9 @@ Jeśli więc istnieje odrębnych produktów, można go zmienić tylko na produkt
 
 *Kategoria produktów inżynieryjnych* musi być przypisana do każdego produktu inżynieryjnego. To przypisanie będzie można wykonać po uruchomieniu kreatora **Konwersji na produkt inżynieryjny**. Aby można było przekonwertować te produkty, musi *wcześniej* istnieć kategoria produktu inżynieryjnego dla odpowiednich produktów standardowych.
 
-Kategoria produktu inżynieryjnego stanowi podstawę do utworzenia produktu inżynieryjnego i określa zestaw wartości domyślnych i zasad. Kategoria produktu inżynieryjnego musi odpowiadać produktowi, do którego ją przypisujesz. Na przykład typ produktu i grupa wymiarów muszą być zgodne zarówno z produktem, jak i z kategorią produktu inżynieryjnego. Aby uzyskać więcej informacji, zobacz [Wersje inżynieryjne i kategorie produktów inżynieryjnych](engineering-versions-product-category.md).
+Kategoria produktu inżynieryjnego stanowi podstawę do utworzenia produktu inżynieryjnego i określa zestaw wartości domyślnych i zasad. Atrybuty projektowe i ich wartości domyślne (zdefiniowane dla kategorii projektowej) są także stosowane do wynikowego produktu projektowego. W razie potrzeby można edytować wartości atrybutów i/lub dodawać więcej atrybutów projektowych do wynikowego produktu.
+
+Kategoria produktu inżynieryjnego musi odpowiadać produktowi, do którego ją przypisujesz. Na przykład typ produktu i grupa wymiarów muszą być zgodne zarówno z produktem, jak i z kategorią produktu inżynieryjnego. Aby uzyskać więcej informacji, zobacz [Wersje inżynieryjne i kategorie produktów inżynieryjnych](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Kreator **Konwersji na produkt inżynieryjny** może konwertować produkt tylko na produkty inżynieryjne, w których ta wersja nie jest śledzona w transakcjach. Dlatego opcja **Wersja ścieżki w transakcjach** musi mieć wartość *Nie*, aby można było tworzyć kategorie produktów inżynieryjnych tworzyć w celu konwersji istniejących produktów.

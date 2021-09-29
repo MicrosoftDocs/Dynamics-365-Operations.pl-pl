@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471723"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500435"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -157,6 +157,7 @@ Następująca funkcja zarządzania magazynem nie jest obecnie obsługiwana w obc
 
 - Przychodzące przetwarzanie wierszy zamówienia zakupu przypisanych do ładunku.
 - Przychodzące przetwarzanie zamówień zakupu dla projektu.
+- Zarządzanie kosztami z wyładunkiem, korzystanie z podróży i śledzenie zmian towarów w drodze.
 - Przetwarzanie przychodzące i wychodzące dla towarów, które mają aktywne wymiary śledzenia **Właściciel** i/lub **Numer seryjny**.
 - Przetwarzanie zapasów z wartością stanu blokowania.
 - Zmiana stanu zapasów w trakcie dowolnego procesu przemieszczania pracy.
@@ -187,6 +188,7 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 |--------------------------------------------------------------|-----|------------------------------|
 | Przetwarzanie dokumentu źródłowego                                   | Tak | Nr |
 | Zarządzanie procesem załadunku i transportu                | Tak, ale tylko procesy planowania wysyłki ładunku. Przetwarzanie zarządzania transportem nie jest obsługiwane  | Nr |
+| Koszt z wyładunkiem i odbiór towaru w drodze                                         | Tak | Nr |
 | Zwolnij do magazynu                                         | Tak | Nr |
 | Planowany przeładunek kompletacyjny                                        | Nr  | Nr |
 | Konsolidacja wysyłki                                       | Tak, w przypadku planowania wysyłki ładunku | Tak |

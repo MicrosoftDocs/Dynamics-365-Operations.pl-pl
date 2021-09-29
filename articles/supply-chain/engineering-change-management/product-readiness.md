@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415328"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500614"
 ---
 # <a name="product-readiness"></a>Gotowość produktu
 
 [!include [banner](../includes/banner.md)]
 
-Możesz użyć kontroli gotowości, aby upewnić się, że wszystkie wymagane dane podstawowe zostały określone dla produktu przed jego użyciem w transakcjach. Gdy używane są testy gotowości, użytkownik lub zespół jest odpowiedzialny za weryfikację określonych predefiniowanych danych związanych z produktem. Jeśli istnieje otwarta kontrola gotowości produktu, produkt nie może być używany w transakcjach.
+Możesz użyć kontroli gotowości, aby pomóc upewnić się, że wszystkie wymagane dane podstawowe zostały określone dla produktu przed jego użyciem w transakcjach. Gdy używane są testy gotowości, użytkownik lub zespół jest odpowiedzialny za weryfikację określonych predefiniowanych danych związanych z produktem.
 
-Pole wyboru **Aktywny** dla produktu inżynieryjnego, wariantu lub wersji jest dostępne dopiero po wprowadzeniu i zweryfikowaniu wszystkich wymaganych danych oraz po przetworzeniu wszystkich kontroli gotowości. W tym momencie produkt, wersja lub wariant mogą być używane w transakcjach. Można tworzyć kontrole gotowości dla nowych produktów, nowych wariantów i nowych wersji inżynieryjnych.
+Zaznacz pole wyboru **Aktywny** dla produktu inżynieryjnego, wariantu lub wersji dopiero po wprowadzeniu i zweryfikowaniu wszystkich wymaganych danych oraz po przetworzeniu wszystkich kontroli gotowości. Jeśli co najmniej jedna kontrola produktu, wersji lub wariantu nie została przetworzona, przy próbie zaznaczenia pola wyboru **Aktywny** pojawi się monit z ostrzeżeniem, że nie wszystkie weryfikacje zostały zakończone.
 
-Testy gotowości można także stosować dla standardowych (nie inżynieryjnych) produktów. Aby uzyskać więcej informacji, zobacz sekcję [Testy gotowości dla standardowych produktów](#standard-products) w dalszej części tego tematu.
+Możesz tworzyć kontrole gotowości dla nowych produktów inżynieryjnych, wariantów i wersji. Możesz również zastosować kontrolę gotowości do standardowych (nietechnicznych) produktów (patrz również [Kontrola gotowości na standardowych produktach](#standard-products)). 
+
+Możesz używać standardowych produktów w transakcjach, nawet jeśli nie wszystkie kontrole gotowości zostały zakończone. Jeśli chcesz zablokować produkt przed użyciem w transakcjach, użyj jego stanu cyklu życia. Można przypisać stan cyklu życia, który blokuje użycie produktu w transakcjach, a następnie, po zakończeniu wszystkich kontroli gotowości, przypisać nowy stan cyklu życia, który zezwala na wymagane transakcje.
 
 ## <a name="types-of-readiness-checks"></a>Typy kontroli gotowości
 

@@ -1,24 +1,26 @@
 ---
 title: Intrastat — Niemcy
 description: Ten temat zawiera informacje dotyczące deklaracji Intrastat w Niemczech.
-author: andosip
-ms.date: 08/2/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759850"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487932"
 ---
 # <a name="german-intrastat"></a>Intrastat — Niemcy
 
-Strona **Intrastat** służy do generowania i raportowania informacji o handlu między krajami Unii Europejskiej (UE). Niemiecka deklaracja Intrastat zawiera informacje o handlu towarami do zgłoszenia.
+[!include [banner](../includes/banner.md)]
+
+Strona **Intrastat** służy do generowania i raportowania informacji o handlu między krajami Unii Europejskiej (UE). Niemiecka deklaracja Intrastat zawiera informacje o handlu towarami do zgłoszenia. Raport jest sformatowany zgodnie z wytycznymi władz niemieckich przedstawionymi na stronie [6.2 Składanie deklaracji dotyczące formatu INSTAT/XML](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html).
 
 W poniższej tabeli przedstawiono pola, które pojawiają się w niemieckiej deklaracji Intrastat.
 
@@ -71,15 +73,16 @@ W poniższej tabeli przedstawiono pola, które pojawiają się w niemieckiej dek
     3. W polu **Mapowanie formatu raportów** wybierz wartość **Raport Intrastat**.
     4. Na skróconej karcie **hierarchii kodów asortymentu** w polu **Hierarchia kategorii** wybierz pozycję **Intrastat**.
     5. W polu **Kod transakcji** wybierz kod transakcji dla przeniesień właściwości. Kod ten będzie wykorzystywany do tworzenia transakcji powodujących faktyczne lub planowane przeniesienie własności za odszkodowaniem (finansowej lub innej). Można go również użyć do poprawek.
-    6. W polu **Nota kredytowa** wybierz kod transakcji zwrotu towarów. Ten kod może zostać użyty do zwrotu towarów po zarejestrowaniu oryginalnej transakcji pod kodem transakcji.
-    7. W polu **Urząd** wybierz urząd Intrastat.
-    8. Przejdź do **Podatki** > **Podatki pośrednie** > **Podatek od sprzedaży** > **Urząd skarbowy** i wprowadź następujące informacje dla urzędu Intrastat wybranego w poprzednim kroku:
+    6. W polu **Nota kredytowa** wybierz kod transakcji zwrotu towarów.
+    7. W polu **Pracownik** wybierz osobę kontaktową dla raportu Intrastat. Ewentualnie na karcie **Osoba kontaktowa** wprowadź lub wybierz wartości w polach **Nazwisko**, **Telefon**, **Faks**, **Adres e-mail** i **Adres internetowy**. Te pola są uwzględniane w raporcie.
+    8. W polu **Urząd** wybierz urząd Intrastat.
+    9. Przejdź do **Podatki** > **Podatki pośrednie** > **Podatek od sprzedaży** > **Urząd skarbowy** i wprowadź następujące informacje dla urzędu Intrastat wybranego w poprzednim kroku:
 
        - Identyfikacja urzędu
        - Adres 
        - Informacje o kontakcie
 
-    9. Na karcie **Właściwości kraju/regionu**, w polu **Kraj/region**, podaj listę wszystkich krajów lub regionów, w których organizacja prowadzi interesy. Dla każdego kraju lub regionu w polu **Typ kraju/regionu** wybierz pozycję **UE**, aby kraj lub region były wyświetlane w raporcie Intrastat.
+    10. Na karcie **Właściwości kraju/regionu**, w polu **Kraj/region**, podaj listę wszystkich krajów lub regionów, w których organizacja prowadzi interesy. Dla każdego kraju lub regionu w polu **Typ kraju/regionu** wybierz pozycję **UE**, aby kraj lub region były wyświetlane w raporcie Intrastat.
 
 4. Ustawianie kodów regionów.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729417"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500482"
 ---
 # <a name="process-review-and-post-rebates"></a>Przetwarzanie, przegląd i księgowanie rabatów
 
@@ -43,8 +43,6 @@ Zadanie okresowe **Obliczanie ceny zakupu FIFO** musi zostać uruchomione w celu
 Przejdź do zadania **Zarządzanie rabatami \> Zadania okresowe \> Obliczanie ceny zakupu FIFO**. W wyświetlonym oknie dialogowym wybierz przycisk **OK**, aby uruchomić obliczanie
 
 ## <a name="create-source-transactions"></a>Tworzenie transakcji źródłowych
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Można utworzyć zamówienia sprzedaży lub zamówienia zakupu, które mają transakcje źródłowe przed lub po utworzeniu odpowiedniej umowy zarządzania rabatami.
 
@@ -96,7 +94,7 @@ Aby utworzyć transakcję źródłową, należy wykonać poniższe kroki.
     1. Na skróconej karcie **Wiersze zamówienia sprzedaży** wybierz odpowiedni wiersz.
     1. Na skróconej karcie **Szczegóły wiersza** na karcie **Cena i rabat** ustaw opcję **Wyklucz z zarządzania rabatami** na *Tak*. Ta opcja nie ma zastosowania do zamówień zakupu. Ponadto tylko rabaty dla klientów są wykluczone, gdy ta opcja jest ustawiona na *Tak*. Nadal obowiązują rabaty tantiem i rabaty dostawców.
 
-1. W okienku akcji na karcie ***Pobierz i zapakuj** w grupie **Generowanie** wybierz opcję **Księguj dokument dostawy**.
+1. W okienku akcji na karcie **Pobierz i zapakuj** w grupie **Generowanie** wybierz opcję **Księguj dokument dostawy**.
 1. Na skróconej karcie **Parametry** w polu **Ilość** wybierz pozycję *Wszystkie*.
 1. Kliknij przycisk **OK**.
 1. Wybierz przycisk **OK**, jeśli zostanie wyświetlony monit o potwierdzenie operacji.
@@ -158,8 +156,6 @@ Zamiast przetwarzać określone transakcje lub wiersze umów, można uruchomić 
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Przetwarzanie umów przy użyciu pulpitu rabatów
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Zamiast przetwarzać określone umowy lub wiersze umów, można uruchomić *pulpit rabatów* w celu przetworzenia wielu umów jednocześnie. Opcjonalnie można zastosować filtry rekordów i/lub skonfigurować harmonogram cykliczny. Nie musisz wybierać żadnych wierszy. System przetworzy wszystkie wiersze, które spełniają wymagania dotyczące daty i filtru, które zostały skonfigurowane.
 
 Aby przetwarzać transakcje za pomocą pulpitu rabatów, należy wykonać następujące czynności.
@@ -213,8 +209,6 @@ Aby wyświetlić i edytować transakcje zarządzania rabatami przy użyciu stron
 > Jeśli używasz procesu reklamacji, podczas przetwarzania następnego okresu, lista transakcji będzie zawierała wszystkie nieodebrane transakcje z poprzedniego księgowania oraz wszystkie nowe transakcje dla wybranego okresu.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Wyświetlanie i edytowanie transakcji zarządzania rabatami przy użyciu pulpitu rabatów
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aby wyświetlić i edytować transakcje zarządzania rabatami przy użyciu pulpitu rabatów, wykonaj następujące kroki.
 
@@ -295,8 +289,6 @@ Zamiast księgować transakcje dla określonych transakcji lub linii transakcji,
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Księgowanie transakcji przy użyciu pulpitu rabatów
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Po przetworzeniu transakcji prowizji, rabatów lub odpisów wykonaj następujące kroki, aby użyć pulpitu rabatów do przeglądania i księgowania wygenerowanych transakcji dla jednego lub większej liczby określonych wierszy transakcji dla wszystkich umów.
 
 1. Przejdź do oferty **Zarządzanie rabatami \> Zarządzanie rabatami — umowy \> Pulpit rabatów**.
@@ -332,8 +324,6 @@ Aby przejrzeć zapisy w arkuszu powiązane z umowami w zakresie zarządzania rab
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Przeglądanie dzienników przy użyciu pulpitu rabatów
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Aby przejrzeć dzienniki za pomocą pulpitu rabatów, należy wykonać następujące czynności.
 
 1. Przejdź do oferty **Zarządzanie rabatami \> Zarządzanie rabatami — umowy \> Pulpit rabatów**.
@@ -342,8 +332,6 @@ Aby przejrzeć dzienniki za pomocą pulpitu rabatów, należy wykonać następuj
 1. Zostanie wyświetlona lista odpowiednich arkuszy, dokumentów lub towarów. Aby wyświetlić więcej informacji o dowolnym arkuszu, dokumencie lub towarze, należy wybrać jego wiersz, a następnie w okienku akcji wybrać polecenie **Wyświetl szczegóły**.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transakcje zarządzania rabatami na pulpicie potrąceń
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Podczas księgowania transakcji zarządzania rabatami, która ma jedną z następujących wartości **Typ płatności**, system tworzy arkusz potrąceń klienta lub fakturę niezależną dla odpowiedniego konta klienta:
 
@@ -358,8 +346,6 @@ Aby uzyskać więcej informacji, zobacz [Zarządzanie potrąceniami przy użyciu
 
 ## <a name="purge-unposted-transactions"></a>Przeczyszczanie niezaksięgowanych transakcji
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Po przetworzeniu transakcji prowizji, rabatów lub odpisów wykonaj następujące kroki, aby przeczyścić wybrane transakcje niezaksięgowane.
 
 1. Przejdź do oferty **Zarządzanie rabatami \> Zarządzanie rabatami — umowy \> Pulpit rabatów**.
@@ -368,8 +354,6 @@ Po przetworzeniu transakcji prowizji, rabatów lub odpisów wykonaj następując
 4. Wybierz przycisk **OK**, aby usunąć niezaksięgowane transakcje.
 
 ## <a name="cancel-a-posted-provision"></a>Anulowanie zaksięgowanej prowizji
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Po przetworzeniu i zaksięgowanym prowizji wykonaj następujące kroki, aby anulować zaksięgowane transakcje prowizji.
 

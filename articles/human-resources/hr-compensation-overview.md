@@ -1,8 +1,8 @@
 ---
 title: Plany wynagrodzeń
-description: Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
-author: andreabichsel
-ms.date: 06/20/2017
+description: W tym temacie opisano, jak używać zarządzania wynagrodzeniami do zarządzania i przetwarzania planów wynagrodzeń.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732448"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483836"
 ---
 # <a name="compensation-plans"></a>Plany wynagrodzeń
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu Zarządzanie wynagrodzeniami obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
+Menedżerowie ds. wynagrodzeń i świadczeń mogą za pomocą modułu **Zarządzanie wynagrodzeniami** obsługiwać i przetwarzać plany wynagrodzeń o stałej i zmiennej wysokości dla pracowników organizacji.
 
 ### <a name="introduction"></a>Wprowadzenie
 
@@ -43,7 +43,7 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 <thead>
 <tr class="header">
 <th>Składnik</th>
-<th>Więcej informacji...</th>
+<th>Więcej informacji</th>
 </tr>
 </thead>
 <tbody>
@@ -89,10 +89,10 @@ W poniższej tabeli wymieniono składniki procesu wynagrodzenia, który może by
 </tr>
 <tr class="even">
 <td>Punkt kontrolny</td>
-<td>Punkt kontrolny wskazuje idealną stawkę płacową dla wszystkich pracowników, którym przypisano dany poziom wynagrodzeń. W przypadku struktur z kategoriami wynagrodzeń punktami kontrolnymi są zazwyczaj punkty centralne zakresu. Punkty kontrolne są rzadko używane odnośnie do struktur pasmowych systemów wynagrodzeń. Punkt kontrolny stałych wynagrodzeń można określić w formularzu systemów stałych wynagrodzeń.</td>
+<td>Punkt kontrolny wskazuje idealną stawkę płacową dla wszystkich pracowników, którym przypisano dany poziom wynagrodzeń. W przypadku struktur z kategoriami wynagrodzeń punktami kontrolnymi są zazwyczaj punkty centralne zakresu. Punkty kontrolne są rzadko używane odnośnie do struktur pasmowych systemów wynagrodzeń. Punkt kontrolny stałych wynagrodzeń można określić na stronie **systemów stałych wynagrodzeń**.</td>
 </tr>
 <tr class="odd">
-<td>Funkcje stanowisk</td>
+<td>Funkcje posad</td>
 <td>Funkcje stanowisk są używane do klasyfikowania i filtrowania systemów wynagrodzeń dla określonych zadań.</td>
 </tr>
 <tr class="even">

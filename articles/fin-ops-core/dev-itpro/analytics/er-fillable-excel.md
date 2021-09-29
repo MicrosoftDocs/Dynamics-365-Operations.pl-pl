@@ -2,7 +2,7 @@
 title: Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 description: Ten temat zawiera informacje o tym, jak zaprojektować format modułu raportowania elektronicznego (ER) do wypełniania w szablonie programu Excel, a następnie generować dokumenty wychodzące w formacie programu Excel.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748479"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488145"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Projektowanie konfiguracji projektu w celu generowania dokumentów wychodzących w formacie programu Excel
 
@@ -138,6 +138,55 @@ Aby dowiedzieć się więcej na temat osadzania obrazów i kształtów, zobacz t
 
 Składnik **PageBreak** wymusza rozpoczęcie nowej strony przez program Excel. Ten składnik nie jest wymagany, jeśli ma być używany domyślne stronicowanie programu Excel, ale powinien być używany, jeśli chcesz, aby program Excel korzystał z formatu ER w celu utworzenia struktury stronicowania.
 
+## <a name="page-component"></a><a name="page-component"></a>Składnik strony
+
+### <a name="overview"></a>Omówienie
+
+Składnik **Strona** może być używany, jeśli program Excel ma stosować strukturę stronicowania i format raportowania elektronicznego w generowanym dokumencie wychodzącym. Gdy w formacie raportowania elektronicznego są uruchamiane składniki pod składnikiem **Strona**, wymagane podziały strony są automatycznie dodawane. W trakcie tego procesu są rozważane: rozmiar wygenerowanej zawartości, konfiguracja strony szablonu programu Excel i rozmiar papieru wybrany w szablonie programu Excel.
+
+Jeśli należy podzielić wygenerowany dokument na różne sekcje, z których każda ma inną paginację, można skonfigurować kilka składników **Strony** w każdym składniku [arkusza](er-fillable-excel.md#sheet-component).
+
+### <a name="structure"></a><a name="page-component-structure"></a>Struktura
+
+Jeśli pierwszy składnik pod składnikiem **Strona** jest składnikiem [Zakres](er-fillable-excel.md#range-component), dla którego właściwość **Kierunek replikacji** ma wartość **Brak replikacji**, ten zakres jest traktowany jako nagłówek strony do stronicowania opartego na ustawieniach bieżącego składnika **Strona**. Zakres programu Excel skojarzony z tym składnikiem formatu jest powtarzany w górnej części każdej strony generowanej przy użyciu ustawień bieżącego składnika **Strona**.
+
+> [!NOTE]
+> W przypadku prawidłowego stronicowania, jeśli wiersze do [powtórzenia w górnym](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) zakresie zostały skonfigurowane w szablonie programu Excel, adres tego zakresu programu Excel musi być adresem zakresu programu Excel skojarzonego z poprzednio opisanym składnikiem **Zakres**.
+
+Jeśli ostatni składnik pod składnikiem **Strona** jest składnikiem **Zakres**, dla którego właściwość **Kierunek replikacji** ma wartość **Brak replikacji**, ten zakres jest traktowany jako stopka strony do stronicowania opartego na ustawieniach bieżącego składnika **Strona**. Zakres programu Excel skojarzony z tym składnikiem formatu jest powtarzany w dolnej części każdej strony generowanej przy użyciu ustawień bieżącego składnika **Strona**.
+
+> [!NOTE]
+> W przypadku prawidłowego stronicowania nie należy zmieniać rozmiaru zakresów programu Excel skojarzonych ze składnikami **Zakres** w czasie wykonywania. Nie zaleca się formatowania komórek tego zakresu przy użyciu [opcji](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) **Zawiń tekst w komórce** i **Autodopasowania wysokości** programu Excel.
+
+Aby określić sposób wypełnienia generowanego dokumentu, można dodać wiele innych składników **Zakresu** między opcjonalnymi składnikami **Zakresu**.
+
+Jeśli zestaw zagnieżdżonych składników **Zakres** w składniku **Strona** nie jest zgodny z wcześniej opisaną strukturą, podczas projektowania w konstruktorze formatu raportowania elektronicznego występuje [błąd](er-components-inspections.md#i17) sprawdzania poprawności. Komunikat o błędzie informuje, że problem może spowodować problemy w czasie wykonywania.
+
+> [!NOTE]
+> Aby wygenerować poprawne dane wyjściowe, nie określaj powiązania dla żadnego składnika **Zakresu** w składniku **Strony**, jeśli właściwość **Kierunku replikacji** dla tego składnika **Zakresu** ma wartość **Brak replikacji**, a zakres jest skonfigurowany do generowania nagłówków lub stopek stron.
+
+Jeśli chcesz, aby sumy i obliczenia związane z podziałem na strony obliczały sumy i sumy na stronę, zalecane jest skonfigurowanie wymaganych źródeł danych [gromadzenia danych](er-data-collection-data-sources.md). Aby dowiedzieć się, jak używać składnika **Strony** do stronicowania wygenerowanego dokumentu programu Excel, wykonaj procedury w temacie [Projektowanie formatu raportowania elektronicznego do stronicowania wygenerowanego dokumentu w formacie programu Excel](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Ograniczenia
+
+Podczas używania składnika **Strony** do stronicowania programu Excel nie będzie wiadomo, jaka będzie końcowa liczba stron wygenerowanego dokumentu, dopóki nie zostanie ukończone stronicowanie. Dlatego nie można obliczyć łącznej liczby stron za pomocą formuł raportowania elektronicznego i wydrukować poprawnej liczby stron wygenerowanego dokumentu na dowolnej stronie przed ostatnią stroną.
+
+> [!TIP]
+> Aby uzyskać ten wynik, w nagłówku lub stopce programu Excel można użyć specjalnego [formatowania](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) programu Excel dla nagłówków i stopek.
+
+Skonfigurowane składniki **Strona** nie są rozważane podczas aktualizowania szablonu programu Excel w formacie edytowalnym w wersji 10.0.22 rozwiązania Dynamics 365 Finance. Ta funkcja jest rozważana w dalszych wersjach rozwiązania Finance.
+
+Jeśli szablon programu Excel zostanie skonfigurowany do [formatowania warunkowego](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), w niektórych przypadkach może nie działać zgodnie z oczekiwaniami.
+
+### <a name="applicability"></a>Możliwość stosowania
+
+Składnik **Strona** działa dla składnika formatu [pliku programu Excel](er-fillable-excel.md#excel-file-component) tylko w przypadku, gdy dla tego składnika skonfigurowano używanie szablonu w programie Excel. Jeśli szablon programu Excel zostanie [zastąpiony](tasks/er-design-configuration-word-2016-11.md) szablonem programu Word, a następnie uruchomiony zostanie edytowalny format raportowania elektronicznego, składnik **Strona** będzie ignorowany.
+
+Składnik **Strona** działa tylko w przypadku włączenia funkcji **Włącz użycie biblioteki EPPlus w strukturze raportowania elektronicznego**. Wystąpił wyjątek w czasie wykonywania, jeśli raportowanie elektroniczne próbuje przetworzyć składnik **Strona**, gdy ta funkcja jest wyłączona.
+
+> [!NOTE]
+> Wystąpił wyjątek w czasie wykonywania, jeśli format raportowania elektronicznego przetwarza składnik **Strona** dla szablonu programu Excel zawierającego co najmniej jedną formułę, która odwołuje się do nieprawidłowej komórki. Aby zapobiec błędom w czasie wykonywania, popraw szablon programu Excel w sposób opisany w temacie [Jak naprawić błąd #REF!](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Składnik stopki
 
 Składnik **Stopki** służy do wypełniania stopek u dołu wygenerowanego arkusza w skoroszycie programu Excel.
@@ -197,9 +246,12 @@ Podczas weryfikowania formatu ER, który można edytować, jest przeprowadzane s
 Podczas generowania dokumentu wychodzącego w formacie skoroszytu programu Microsoft Excel niektóre komórki tego dokumentu mogą zawierać formuły programu Excel. Gdy jest włączona funkcja **Włącz korzystanie z biblioteki EPPlus w ramach raportowania elektronicznego**, można kontrolować, kiedy formuły będą obliczane, zmieniając wartość [parametru](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) **Opcje obliczania** w używanym szablonie programu Excel:
 
 - Wybierz opcję **Automatycznie**, aby ponownie obliczać wszystkie formuły zależne za każdym razem, gdy do wygenerowanego dokumentu są dołączane nowe zakresy, komórki itp.
+
     >[!NOTE]
     > Może to spowodować problemy z wydajnością działania szablonów programu Excel zawierających wiele powiązanych formuł.
+
 - Wybierz opcję **Ręcznie**, aby uniknąć ponownego obliczania formuł podczas generowania dokumentu.
+
     >[!NOTE]
     > Ponowne obliczanie formuł jest wymuszane ręcznie po otwarciu wygenerowanego dokumentu do podglądu za pomocą programu Excel.
     > Nie należy stosować tej opcji w przypadku konfigurowania miejsca docelowego modułu ER, które zakłada używanie wygenerowanego dokumentu bez obejrzenia jego podglądu w programie Excel (konwersja do pliku PDF, wysłanie wiadomości e-mail itp.), ponieważ wygenerowany dokument może nie zawierać wartości w komórkach z formułami.

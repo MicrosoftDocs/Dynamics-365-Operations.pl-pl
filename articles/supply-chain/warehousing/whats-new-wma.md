@@ -1,27 +1,39 @@
 ---
 title: Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 description: W tym temacie wymieniono nowe i zmienione funkcje dla każdej wydanej wersji aplikacji mobilnej Warehouse Management dla firmy Microsoft Dynamics 365 Supply Chain Management.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386106"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485629"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Nowości lub zmiany w aplikacji mobilnej Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 W tym temacie wymieniono nowe funkcje, poprawki, ulepszenia i znane problemy dla każdej wydanej wersji aplikacji mobilnej Warehouse Management w Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20100"></a>Wersja 2.0.10.0
+
+Ta wersja wprowadza następujące nowe funkcje, poprawki i ulepszenia:
+
+- Dodano animację po wsuwaniu przez listy i strony.
+- Tekst jest teraz prawidłowo wyświetlany na stronie błędu połączenia.
+- Pola kombi bez wartości domyślnych będą teraz poprawnie wyświetlane.
+- Informacje w obszarze podtytułów są teraz wyświetlane tylko na stronie z pełnymi informacjami.
+- Puste pola wejściowe nie są już wyświetlane na karcie szczegółów.
+- Wartości potwierdzenia nie są już duplikowane na karcie szczegółów.
+- Naprawiono różne problemy, które powodowały, że system przestawał odpowiadać.
 
 ## <a name="version-2090"></a>Wersja 2.0.9.0
 

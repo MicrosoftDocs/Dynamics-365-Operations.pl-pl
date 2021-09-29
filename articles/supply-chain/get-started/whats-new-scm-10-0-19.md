@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474899"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506862"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Nowości i zmiany w programie Dynamics 365 Supply Chain Management w wersji 10.0.19 (czerwiec 2021)
 
@@ -40,8 +40,7 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 | Zapasy i logistyka | [Przyrostowe rozszerzenia możliwości wykonywania magazynów za pomocą jednostek skalowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Komunikaty procesora komunikatów](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Korekta zapasów w magazynie](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Zapasy i logistyka | [Funkcje wyszukiwania w polach Wstęp do dokumentu i Wnioski dokumentu na stronie Oferta sprzedaży](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Dodana jest funkcja wyszukiwania w polach **Wstęp do dokumentu** i **Wnioski dokumentu** na stronie **Oferta sprzedaży**.<br><br>Ten funkcjonalność jest włączona domyślnie. |
 | Zapasy i logistyka | [Wykonywanie magazynu z jednostkami skalowania urządzeń brzegowych na niestandardowym sprzęcie](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Rozmieszczanie jednostek skalowania urządzeń brzegowych na niestandardowym sprzęcie przy użyciu funkcji LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Produkcja | [Wykonywanie produkcji z jednostkami skalowania urządzeń brzegowych na niestandardowym sprzęcie](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Rozmieszczanie jednostek skalowania urządzenia brzegowego na niestandardowym sprzęcie przy użyciu danych LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planowanie | [Planowanie nieskończonych zdolności produkcyjnych dla optymalizacji planowania](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planowanie z nieskończoną zdolnością produkcyjną](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Produkcja | [Wykonywanie produkcji z jednostkami skalowania urządzeń brzegowych na niestandardowym sprzęcie](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Rozmieszczanie jednostek skalowania urządzeń brzegowych na niestandardowym sprzęcie przy użyciu funkcji LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Planowanie | Ustalanie zamówienia planowanego oparte na zapytaniu | [Zaakceptuj zamówienia planowane](../master-planning/planning-optimization/planned-order-firming.md) |
 | Zarządzanie informacjami o produktach | [Ulepszenia strony sugestii dotyczących wariantów](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Tworzenie wstępnie zdefiniowanych wariantów produktu](../pim/tasks/create-predefined-product-variants.md) |
 

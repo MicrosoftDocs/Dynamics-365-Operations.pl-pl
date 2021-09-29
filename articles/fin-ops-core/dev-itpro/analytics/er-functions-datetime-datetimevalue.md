@@ -2,7 +2,7 @@
 title: DATETIMEVALUE, funkcja ER
 description: Ten temat zawiera ogólne informacje o używaniu funkcji DATETIMEVALUE w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/03/2019
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 711889e23e85b05c5e4c5ab904ec12ceb0bbb4da1f17d1c994adda1eec8ccb74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7a9da0b9461926b1033d6a97b37d4b43a86d8dad
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776177"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485529"
 ---
 # <a name="datetimevalue-er-function"></a>DATETIMEVALUE, funkcja ER
 
 [!include [banner](../includes/banner.md)]
 
-Funkcja `DATETIMEVALUE` zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości tekstowej w określonym formacie i opcjonalnie określonej [kulturze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty/godziny. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Funkcja `DATETIMEVALUE` zwraca wartość *[Data/godzina](er-formula-supported-data-types-primitive.md#datetime)*, która jest konwertowana z danej wartości tekstowej w określonym formacie i opcjonalnie określonej [kulturze](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) na wartość daty/godziny. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Składnia 1
 
@@ -41,17 +41,17 @@ DATETIMEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumenty
 
-`text`: *Ciąg*
+`text`: *[Ciąg](er-formula-supported-data-types-primitive.md#string)*
 
 Tekst reprezentujący wartość do sformatowania.
 
 `format`: *Ciąg*
 
-Format danego tekstu.
+Format danego tekstu. Aby uzyskać informacje na temat obsługiwanych formatów, zobacz formaty [standardowe](/dotnet/standard/base-types/standard-date-and-time-format-strings) i [niestandardowe](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *Ciąg*
 
-Kultura używana do formatowania danego tekstu.
+Kultura używana do formatowania danego tekstu. Aby uzyskać informacje o obsługiwanych kulturach, zobacz temat [Kultura](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
 ## <a name="return-values"></a>Wartości zwracane
 

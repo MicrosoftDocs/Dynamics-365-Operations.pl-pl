@@ -2,7 +2,7 @@
 title: Konfigurowanie i projektowanie formatów paragonów
 description: W tym artykule opisano modyfikowanie układów formularzy w celu sterowania sposobem drukowania paragonów, faktur i innych dokumentów. Moduł Dynamics 365 Commerce zawiera projektanta układów, który pozwala łatwo tworzyć i modyfikować różne układy formularzy.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715365"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500178"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Konfigurowanie i projektowanie formatów paragonów
 
@@ -46,7 +46,12 @@ W tym artykule opisano modyfikowanie układów formularzy w celu sterowania spos
 
 ## <a name="print-images"></a>Drukuj obrazy
 
-Konstruktor paragonów zawiera zmienną **Logo**, która może być używana do określania obrazów do wydrukowania na paragonie. Obrazy uwzględnione w paragonach przy użyciu zmiennej **Logo** powinny być plikami map bitowych (bmp). Jeśli obraz .bmp jest określony w projektancie paragonów, ale nie jest drukowany po wysłaniu do drukarki, może to oznaczać, że rozmiar pliku jest zbyt duży lub wymiary obrazu w pikselach nie są zgodne z drukarką. W takim przypadku należy spróbować zmniejszyć rozdzielczość pliku obrazu.   
+Konstruktor paragonów zawiera zmienną **Logo**. Możesz użyć tej zmiennej, aby określić obraz, który ma być drukowany na paragonach. Obrazy drukowane na paragonach przy użyciu zmiennej **Logo** powinny być plikami map bitowych (bmp). Jeśli obraz bitmapowy jest określony w projektancie paragonów, ale nie jest drukowany po wysłaniu paragonu do drukarki, przyczyną może być jeden z następujących problemów:
+
+- Rozmiar pliku jest za duży lub wymiary obrazu w pikselach nie są zgodne z drukarką. W takim przypadku spróbuj zmniejszyć rozdzielczość lub wymiary pliku obrazu.
+- Niektóre sterowniki drukarki PrintMemoryBitmap nie implementują metody **PrintMemoryBitmap** używanej przez stacje sprzętowe do drukowania obrazów logo. W takim przypadku spróbuj dodać następującą flagę do pliku **HardwareStation.Extension.config** dedykowanej lub udostępnionej stacji sprzętowej:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Projektowanie formatu paragonu
 

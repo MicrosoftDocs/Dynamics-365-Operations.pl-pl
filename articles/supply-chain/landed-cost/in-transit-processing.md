@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744805"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500286"
 ---
 # <a name="goods-in-transit-processing"></a>Przetwarzanie towarów w transporcie
 
@@ -148,8 +148,6 @@ W tej sekcji opisano funkcje, które moduł **Koszt z wyładunkiem** dodaje do s
 Koszt z wyładunkiem powoduje dodanie nowego typu zlecenia pracy o nazwie *Towary w drodze* do strony **Szablony pracy**. Ten typ zlecenia należy konfigurować w taki sam sposób, jak [szablony pracy dla zamówienia zakupu](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### <a name="work-header-breaks"></a>Podziały nagłówka pracy
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Szablony pracy, które mają typ zlecenia pracy *Towary w tranzycie* można skonfigurować do podziału nagłówków pracy. Na stronie **Szablony pracy** wykonaj jedną z następujących czynności:
 
