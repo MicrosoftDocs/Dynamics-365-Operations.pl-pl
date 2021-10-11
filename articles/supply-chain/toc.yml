@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametry nieużywane przez optymalizację planowania
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Harmonogram dostaw
+                  href: master-planning/supply-schedule.md
                 - name: Stosowanie filtrów do planu
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Planowanie główne z uwzględnieniem prognozy popytu
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Wyświetlanie wychodzących danych o zaplanowanym popycie międzyfirmowym
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Współpraca z odbiorcami w ramach wewnętrznego łańcucha dostaw
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Wymagania netto i informacje oznaczania transakcji za pomocą wbudowanego planowania głównego
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognozowanie
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobilny obszar roboczy zatwierdzenia zamówienia zakupu
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Tworzenie i fakturowanie międzyfirmowego zamówienia zakupu do użytku wewnętrznego
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Sprawdź rozbieżności ceny zamówienia międzyfirmowego
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Rejestrowanie przyjęcia towarów w zamówieniu zakupu
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Tworzenie zamówienia zakupu
               items:
                 - name: Ręczne tworzenie zamówień zakupu
@@ -2725,10 +2729,66 @@
               items:
                 - name: Symulacja ceny
                   href: sales-marketing/price-simulation.md
-                - name: Zbiorowe tworzenie ofert sprzedaży
+                - name: Tworzenie grupowe ofert sprzedaży
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Tworzenie i edytowanie ofert sprzedaży
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Handel międzyfirmowy
+              items:
+                - name: Konfigurowanie handlu międzyfirmowego
+                  items:
+                    - name: Konfigurowanie handlu międzyfirmowego
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Parametry międzyfirmowe
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Konfigurowanie dostawców, odbiorców i towarów dla handlu międzyfirmowego'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Ustawianie opłat w międzyfirmowych zamówieniach
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Konfigurowanie parametrów księgowania zamówienia międzyfirmowego
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Synchronizacja informacji międzyfirmowych
+                  items:
+                    - name: Synchronizacja cen i rabatów międzyfirmowych
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Synchronizacja opłat międzyfirmowych
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Synchronizacja informacji międzyfirmowych o odbiorcy
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Synchronizacja międzyfirmowych kodów dyspozycji
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Międzyfirmowe zamówienia sprzedaży i faktury
+                  items:
+                    - name: Tworzenie międzyfirmowych zamówień zakupu i sprzedaży w kilku firmach
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Międzyfirmowe zamówienia i zamówienia zwrotu
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Tworzenie międzyfirmowego zamówienia sprzedaży do użytku wewnętrznego
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Tworzenie i fakturowanie międzyfirmowego zamówienia sprzedaży dla odbiorcy zewnętrznego
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Rezerwacje międzyfirmowe
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Zmienianie lub usuwanie oryginalnego międzyfirmowego zamówienia sprzedaży
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Zmienianie zamówień międzyfirmowych
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Międzyfirmowe numery partii i seryjne
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Międzyfirmowe dokumenty dostawy
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Automatyczna rejestracja płatności za międzyfirmowe faktury dla odbiorcy
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Międzyfirmowe zamówienia zakupu
+                  items:
+                    - name: Tworzenie i fakturowanie międzyfirmowego zamówienia zakupu do użytku wewnętrznego
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Sprawdź rozbieżności ceny zamówienia międzyfirmowego
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Międzyfirmowe konwersje walut
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Międzyfirmowe planowanie główne
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Zwroty
               items:
                 - name: Zwroty sprzedaży
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Ustawianie i konfigurowanie modułu Koszt z wyładunkiem
               items:
+                - name: Włączanie modułu Koszt z wyładunkiem dla własnej platformy
+                  href: landed-cost/landed-cost-enable.md
                 - name: Parametry kosztu z wyładunkiem
                   href: landed-cost/landed-cost-parameters.md
                 - name: Parametry zaopatrzenia i sourcingu kosztu z wyładunkiem
@@ -3185,6 +3247,8 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Wiekowanie pobierania z zapasów dla dyrektywy lokalizacji
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Kotwiczenie
+                      href: warehousing/anchoring.md
                     - name: Sortowanie towarów wychodzących
                       href: warehousing/outbound-sorting.md
                     - name: Umieszczenie na ścianie — odłożenie do sklepu
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Pobieranie najstarszej partii na urządzeniu przenośnym
                       href: warehousing/pick-oldest-batch.md
+                - name: Globalne parametry urządzenia przenośnego
+                  href: warehousing/mobile-device-parameters.md
                 - name: Ustawienia użytkownika urządzenia przenośnego
                   href: warehousing/mobile-device-user-settings.md
                 - name: Przetwarzanie zdarzenia aplikacji magazynu

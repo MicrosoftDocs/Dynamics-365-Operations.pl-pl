@@ -1398,12 +1398,16 @@
               items:
                 - name: Lokalizacja rozwiązania Commerce dla Rosji
                   href: localizations/rus-commerce-localization.md
-                - name: Uproszczony format adresu odbiorcy w punkcie sprzedaży rozwiązania Commerce dla Rosji
-                  href: localizations/rus-simplified-address.md
                 - name: Konfigurowanie lokalizacji rozwiązania Commerce dla Rosji
                   href: localizations/rus-commerce-setup.md
                 - name: Przedpłaty w rozwiązaniu Commerce dla Rosji
                   href: localizations/rus-commerce-prepayments.md
+                - name: Uproszczony format adresu odbiorcy w punkcie sprzedaży rozwiązania Commerce dla Rosji
+                  href: localizations/rus-simplified-address.md
+                - name: Przykładowa integracja drukarki fiskalnej dla Rosji
+                  href: localizations/rus-fpi-sample.md
+                - name: Zarządzanie informacjami dotyczącymi klienta dla Rosji
+                  href: localizations/rus-customer-information.md
             - name: Szwecja
               items:
                 - name: Funkcje kasy
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie globalnej książki adresowej
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Ustawienia adresu
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Książki adresowe — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurowanie książek adresowych
@@ -2328,8 +2334,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Możliwości rozszerzania
           items:
-            - name: Projektowanie i rozszerzanie Commerce
-              href: dev-itpro/dev-retail-home-page.md
+            - name: Projektowanie i możliwość rozszerzania rozwiązania Commerce
+              items:
+                - name: Rozwiązanie Commerce dla profesjonalistów IT i deweloperów
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Konfigurowanie lokalnego środowiska projektowego
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Rozszerzanie kanału online
               items:
                 - name: Omówienie rozszerzania kanału online

@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Zarządzanie umowami na tantiemy
               href: accounts-payable/royalty-contract.md
+            - name: Odwołanie do oryginalnych faktur w fakturach korygujących (faktury od dostawcy)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Płatności i rozliczenia
               items:
                 - name: Scentralizowane płatności na potrzeby rozrachunków z dostawcami
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Omówienie migawek
                   href: finance-insights/payment-snapshots.md
+            - name: Rozwiązywanie problemów z usługą Finance Insights — często zadawane pytania
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Zarządzanie projektami i ich księgowanie
           items:
             - name: Omówienie zarządzania projektami i ich księgowania
@@ -1574,6 +1578,10 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Raportowanie dla wielu numerów rejestracji podatku VAT
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Austria — raportowanie
+                          items:
+                            - name: Deklaracja podatku VAT
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Francja — raportowanie
                           items:
                             - name: Deklaracja podatku VAT
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Raport usług międzynarodowych
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Raport Intrastat
+                - name: Intrastat — Austria
                   href: localizations/emea-aut-intrastat.md
                 - name: Cła od zakupu
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Deklaracja podatku VAT
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrajn
               items:
                 - name: Bahrajn — omówienie
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kwartalne raporty komunikacji dotyczące podatku VAT
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Raport czarnej listy
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Data kwalifikacji i arkusz podatkowy
                   href: localizations/emea-ita-competence-date.md
                 - name: Amortyzacja środków trwałych
@@ -3004,7 +3012,7 @@
               items:
                 - name: Holandia — omówienie
                   href: localizations/netherlands.md
-                - name: Deklaracja VAT
+                - name: Deklaracja podatku VAT
                   href: localizations/emea-nl-VAT-declaration.md
                 - name: Elektroniczne deklaracje podatkowe (EVAT)
                   href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
@@ -3801,6 +3809,8 @@
           items:
             - name: Omówienie raportowania elektronicznego
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Składniki raportowania elektronicznego
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfiguracje
               items:
                 - name: Tworzenie konfiguracji
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie globalnej książki adresowej
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Ustawienia adresu
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Książki adresowe — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurowanie książek adresowych
