@@ -2,7 +2,7 @@
 title: Publiczne interfejsy API dodatku Widoczność magazynu
 description: W tym temacie opisano publiczne interfejsy API udostępniane przez dodatek Widoczność magazynu.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474659"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592495"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -82,6 +82,8 @@ Firma Microsoft wbudowała interfejs użytkownika (UI) w Power Apps, dzięki cze
 
 Token zabezpieczeń platformy służy do wywołania publicznego interfejsu API Widoczność magazynu. Dlatego należy wygenerować _token Azure Active Directory (Azure AD)_ przy użyciu aplikacji Azure AD. Następnie należy użyć tokenu Azure AD, aby uzyskać _token dostępu_ z usługi zabezpieczeń.
 
+Firma Microsoft dostarcza kolekcję gotowych do pobierania tokenów *Postman*. Kolekcję można zaimportować do oprogramowania *Postman*, korzystając z następującego udostępnionego łącza: <https://www.getpostman.com/collections/496645018f96b3f0455e>
+
 Procedura uzyskiwania tokenu usługi zabezpieczeń jest następująca.
 
 1. Zaloguj się do portalu Azure i użyj go, aby znaleźć wartości `clientId` i `clientSecret` dla swojej aplikacji Dynamics 365 Supply Chain Management.
@@ -131,7 +133,7 @@ Procedura uzyskiwania tokenu usługi zabezpieczeń jest następująca.
    - Wartość `context` musi być identyfikatorem środowiska LCS, w którym ma zostać wdrożony dodatek.
    - Ustaw wszystkie inne wartości, tak jak pokazano w przykładzie.
 
-1. Prześlij żądanie HTTP z następującymi właściwościami:
+1. Pobierz token usługi (`access_token`), przesyłając żądanie HTTP z następującymi właściwościami:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Metoda:** `POST`
@@ -148,7 +150,8 @@ Procedura uzyskiwania tokenu usługi zabezpieczeń jest następująca.
    }
    ```
 
-W kolejnych sekcjach `$access_token` będzie reprezentować token pobrany w ostatnim kroku.
+> [!IMPORTANT]
+> Gdy do wywołania interfejsów API publicznych widoczności zapasów jest używać kolekcji żądań *Postman*, należy dla każdego żądania dodać token okaziciela. Aby znaleźć token okaziciela, wybierz kartę **Autoryzacja** pod adresem URL żądania, wybierz typ **tokenu okaziciela** i skopiuj token dostępu, który został pobrany w ostatnim kroku. W dalszych częściach tego tematu, `$access_token` będzie używany do reprezentowania tokena, który został pobrany w ostatnim kroku.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Tworzenie zdarzeń zmiany dostępnych zapasów
 
@@ -508,7 +511,7 @@ W treści tego żądania `dimensionDataSource` to wciąż opcjonalny parametr. J
 
 - Element `organizationId` powinien zawierać tylko jedną wartość, ale nadal jest tablicą.
 - Element `productId` może zawierać jedną lub więcej wartości. Jeśli jest to pusta tablica, zostaną zwrócone wszystkie produkty.
-- `siteId` i `locationId` są używane w dodatku Widoczność zapasów podczas partycjonowania.
+- `siteId` i `locationId` są używane w dodatku Widoczność zapasów podczas partycjonowania. Można określić więcej niż jedną wartość `siteId` i `locationId` w żądaniu *kwerendy o dane na dane zamówienie*. W bieżącym wydaniu należy określić obie wartości `siteId` i `locationId`.
 
 Parametr `groupByValues` powinny być zgodne z konfiguracją na potrzeby indeksowania. Więcej informacji można znaleźć w temacie [Konfiguracja hierarchii indeksów produktów](./inventory-visibility-configuration.md#index-configuration).
 

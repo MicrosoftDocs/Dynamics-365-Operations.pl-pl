@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386445"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595044"
 ---
 # <a name="improve-the-prediction-model"></a>Usprawnij model przewidywania
 
@@ -75,6 +75,6 @@ Następującego pola nie należy wybierać do trenowania:
 
 Faktury używane do szkolenia można filtrować, ustawiając kryteria filtrowania pól na fakturze lub w tabelach odbiorców. Na przykład można ustawić próg, aby uwzględnić tylko faktury, których suma jest równa lub przekracza określoną kwotę. Alternatywnie można wykluczyć faktury skojarzone z odbiorcami w określonej grupie odbiorców.
 
-Aby uzyskać więcej informacji na temat filtrowania danych, zobacz [Tworzenie modelu prognozowania](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Aby uzyskać więcej informacji na temat filtrowania danych, zobacz [Tworzenie modelu prognozowania](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

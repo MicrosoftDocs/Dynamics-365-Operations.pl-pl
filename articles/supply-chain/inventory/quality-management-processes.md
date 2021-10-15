@@ -1,7 +1,7 @@
 ---
 title: Omówienie zarządzania kontrolą jakości i niezgodnością
 description: W tym temacie omówione są funkcje zarządzania jakością i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management i wyjaśniono, w jaki sposób mogą one pomóc w poprawie jakości produktów w łańcuchu dostaw.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc50ca0510de7c0a53050ae1f5754294e77beb7891b450d8efca2686981c2014
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e61dd50eb3a91197937ab319479e398c03e0a05
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739857"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568838"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>Omówienie zarządzania kontrolą jakości i niezgodnością
 

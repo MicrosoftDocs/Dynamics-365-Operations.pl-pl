@@ -2,7 +2,7 @@
 title: Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel
 description: W tym temacie wyjaśniono, jak otwierać dane jednostek w programie Microsoft Excel, a następnie wyświetlać, aktualizować i edytować te dane przy użyciu dodatku programu Excel dla usługi Microsoft Dynamics.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761361"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592672"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Wyświetlanie i aktualizowanie danych jednostki przy użyciu programu Excel 
 
@@ -60,9 +60,9 @@ Dodatek programu Excel automatycznie odczytuje dane wybranej jednostki. Należy 
 
 6. Wybierz przycisk **OK**, a następnie przycisk **Tak**, aby potwierdzić zmianę. Dodatek programu Excel zostanie ponownie uruchomiony i załaduje metadane.
 
-    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji, zobacz „Jest wyświetlany przycisk Ładuj aplety” w sekcji [Rozwiązywanie problemów](../office-integration/use-excel-add-in.md#troubleshooting) w tym temacie.
+    Będzie teraz dostępny przycisk **Projekt**. Jeśli dodatek programu Excel zawiera **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby uzyskać więcej informacji na temat rozwiązania tego problemu, zobacz [Ładowanie apletów](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane).
 
-7. Wybierz opcję **Projekt** Dodatek programu Excel pobierze metadane jednostki.
+7. Wybierz **Projekt**. Dodatek programu Excel pobierze metadane jednostki.
 8. Wybierz opcję **Dodaj tabelę**. Zostanie wyświetlona lista jednostek. Jednostki są wyświetlane w formacie „Nazwa — Etykieta”.
 9. Na liście zaznacz jednostkę, taką jak **Odbiorca — Odbiorcy**, a następnie wybierz przycisk **Dalej**.
 10. Aby dodać pole z listy **Dostępne pola** do listy **Wybrane pola**, wybierz pole, a następnie wybierz przycisk **Dodaj**. Można też kliknąć dwukrotnie pole na liście **Dostępne pola**.
@@ -136,7 +136,7 @@ Dane wczytane do arkusza z jednego środowiska można skopiować do innego środ
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 Istnieje kilka problemów, które można rozwiązać poprzez wykonanie kilku prostych kroków.
 
-- **Przycisk Ładuj aplety jest widoczny** — jeśli po zalogowaniu dodatek programu Excel zawiera przycisk **Ładuj aplety**, prawdopodobnie nie jesteś zalogowany jako poprawny użytkownik. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, wybierz ją, wyloguj się, a następnie zaloguj ponownie.
+- **Wyświetlany jest link „Załaduj aplety”** – Aby uzyskać więcej informacji na temat rozwiązania tego problemu, zobacz [Ładowanie apletów](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane). 
 - **Wyświetlany jest komunikat „Zabronione”** — jeśli podczas ładowania metadanych przez dodatek programu Excel zostanie wyświetlony komunikat „Zabronione”, oznacza to, że konto zalogowane do dodatku programu Excel nie ma uprawnień do używania docelowej usługi, wystąpienia lub bazy danych. Aby rozwiązać ten problem, sprawdź, czy w prawym górnym rogu dodatku programu Excel jest wyświetlana poprawna nazwa użytkownika. Jeśli widać niepoprawną nazwę użytkownika, wybierz ją, wyloguj się, a następnie zaloguj ponownie.
 - **W programie Excel jest wyświetlana pusta strona internetowa** — jeśli w trakcie procesu logowania otwiera się pusta strona sieci Web, konto wymaga usług AD FS, ale wersja programu Excel, w której jest uruchomiony dodatek programu Excel, jest zbyt stara, aby załadować okno dialogowe logowania. Aby rozwiązać ten problem, należy zaktualizować używaną wersję programu Excel. W celu zaktualizowania wersji programu Excel, gdy jesteś w przedsiębiorstwie znajdującym się w odroczonym kanale, użyj [narzędzia wdrażania pakietu Office](/deployoffice/overview-office-deployment-tool), aby [przełączyć z kanału odroczonego do bieżącego](/deployoffice/overview-update-channels).
 - **Podczas publikowania zmian danych otrzymujesz komunikat o przekroczeniu limitu czasu** — jeśli podczas próby publikowania zmian danych w jednostce zostanie przekroczony limit czasu, rozważ zmniejszenie rozmiaru partii publikowania dla tego skoroszytu. Jednostki, które wyzwalają większe ilości logiki zmian rekordów, mogą wymagać wysłania aktualizacji w mniejszych partiach, aby uniknąć przekroczenia limitów czasu.

@@ -12,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6fa8955b935f22a0c4ae7311e871fa64afcd2bcdde48c70bf772a3cb7abd772a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781813"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579887"
 ---
 # <a name="work-split"></a>Podział pracy
+
+[!include [banner](../includes/banner.md)]
 
 Funkcja podziału pracy umożliwia dzielenie identyfikatorów dużych zleceń roboczych (czyli zleceń pracy, które mają kilka wierszy) na kilka mniejszych identyfikatorów zleceń produkcyjnych, które można następnie przypisać do wielu pracowników magazynu. Dzięki temu numer utworzenia tej samej pracy może być pobierany jednocześnie przez kilku pracowników magazynu.
 

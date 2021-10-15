@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie reguł dla prowizji od sprzedaży
 description: W tej procedurze pokazano, jak skonfigurować oraz włączyć obliczanie i śledzenie prowizji od sprzedaży.
-author: omulvad
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGro
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 07d52e1152275e05e0d4ccc2c8d88818a19866e154f52275a8370606414102af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f42f2fbe22124dbaaf2c4bd2f4394f734d166d5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774712"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578903"
 ---
 # <a name="set-up-sales-commission-rules"></a>Konfigurowanie reguł dla prowizji od sprzedaży
 

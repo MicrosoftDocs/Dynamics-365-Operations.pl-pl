@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05e9d6441cf99dce3f4663b9d5ba57e2b386e8c2f3060f75550270083f3b98b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76131b6cc7ee58d4a095da4ac56cd97124e42587
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741460"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559369"
 ---
 # <a name="payroll-position"></a>Stanowisko listy płac
 
@@ -32,22 +32,29 @@ Nazwa fizyczna: mshr_payrollpositionentity.
 
 Ta jednostka zawiera informacje dotyczące stanowiska dla danego pracownika.
 
-Nazwa fizyczna: 
+Nazwa fizyczna: mshr_payrollpositionentity.
 
 ## <a name="properties"></a>Właściwości
 
-| Właściwość<br>**Nazwa fizyczna**<br>**_Typ_** | Użycie | opis |
+| Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | Opis |
 | --- | --- | --- |
-| **Zwykłe godziny (rocznie)**<br>annualregularhours<br>*Dziesiętny* | Tylko do odczytu<br>Potrzebne | Zwykłe godziny (rocznie) zdefiniowane dla stanowiska.  |
-| **Identyfikator podmiotu zawierający szczegóły dotyczące stanowiska płacowego**<br>payrollpositiondetailsentityid<br>*Guid* | Potrzebne<br>Wygenerowany przez system. | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania stanowiska.  |
-| **Pole główne**<br>mshr_primaryfield<br>*Ciąg* | Potrzebne<br>Wygenerowany przez system |  |
-| **Wartość identyfikatora zadania stanowiska**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_PayrollPositionJobEntity klucza mshr_payrollpositionjobentity |identyfikator stanowiska związany ze stanowiskiem.|
-| **Wartość identyfikatora stałego planu wynagrodzeń**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_FixedCompPlan_id dla mshr_payrollfixedcompensationplanentity  | Identyfikator planu stałych wynagrodzeń powiązany ze stanowiskiem. |
-| **Identyfikator cyklu płac**<br>mshr_primaryfield<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Zdefiniowano cykl płac dla stanowiska. |
-| **Zapłacone przez firmę**<br>paidbylegalentity<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Firma zdefiniowana dla stanowiska odpowiedzialnego za wydawanie płatności. |
-| **Identyfikator stanowiska**<br>mshr_positionid<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Identyfikator stanowiska. |
-| **Data ważności**<br>validto<br>*Przesunięcie daty i godziny* | Tylko do odczytu<br>Potrzebne |Data, od której obowiązują szczegóły dotyczące stanowiska.  |
-| **Data wejścia w życie**<br>validfrom<br>*Przesunięcie daty i godziny* | Tylko do odczytu<br>Potrzebne |Data, do której obowiązują szczegóły dotyczące stanowiska.  |
+| **Identyfikator stanowiska**</br>mshr_positionid</br>*Ciąg* | Tylko do odczytu | Identyfikator stanowiska. |
+| **Identyfikator cyklu płac**</br>mshr_paycycleid</br>*Ciąg* | Tylko do odczytu | Zdefiniowano cykl płac dla stanowiska. |
+| **Zwykłe godziny (rocznie)**</br>annualregularhours</br>*Liczba dziesiętna* | Tylko do odczytu | Roczne godziny pracy ustalone na stanowisku. |
+| **Zapłacone przez firmę**</br>paidbylegalentity</br>*Ciąg* | Tylko do odczytu | Firma zdefiniowana dla stanowiska odpowiedzialnego za wydawanie płatności. |
+| **Data ważności**</br>validto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, do której obowiązują szczegóły dotyczące stanowiska. |
+| **Data wejścia w życie**</br>validfrom</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, od której obowiązują szczegóły dotyczące stanowiska. |
+| **Pole główne**</br>mshr_primaryfield</br>*Ciąg* | Wygenerowany przez system | Pole główne. |
+| **Identyfikator podmiotu zawierający szczegóły dotyczące stanowiska płacowego**</br>payrollpositiondetailsentityid</br>*Guid* | Potrzebne</br>Wygenerowany przez system. | Wygenerowana przez system wartość unikatowego globalnego identyfikatora (GUID) umożliwiająca jednoznaczną identyfikację stanowiska. |
+
+## <a name="relations"></a>Relacje
+
+| Wartości właściwości | Encja powiązana | Właściwość nawigacji | Typ kolekcji |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_PayrollPosition |
+| _mshr_fk_hcmpositionhierarchy_id_value | mshr_hcmpositionhierarchyentity | mshr_FK_HcmPositionHierarchy_id | Nie dotyczy |
+| _mshr_fk_job_id_value | mshr_payrollpositionjobentity | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_Payroll |
+| _mshr_fk_positionassignmentv2_id_value | mshr_hcmpositionworkerassignmentv2entity | mshr_FK_PositionAssignmentV2_id | Nie dotyczy |
 
 ## <a name="example-query"></a>Przykład kwerendy
 

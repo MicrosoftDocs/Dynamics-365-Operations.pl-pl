@@ -2,7 +2,7 @@
 title: Zarządzanie informacjami dotyczącymi klienta dla Polski
 description: W tym temacie opisano sposób obsługi informacji o klientach w programie Retail POS dla Polski.
 author: sepism
-ms.date: 09/07/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: sepism
 ms.search.validFrom: 2019-11-11
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: b7313bb11c7998bfdca7784660489e1a0b5f7f24
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 5d24fc900780a10583e42bb72da7ae6ef1ed521a
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478658"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512594"
 ---
 # <a name="customer-information-management-for-poland"></a>Zarządzanie informacjami dotyczącymi klienta dla Polski
 
@@ -62,7 +62,7 @@ Na stronie **Siatki przycisków** wybierz siatkę przycisków, na której ma si�
 
 Jeśli dla transakcji sprzedaży nie określono informacji o odbiorcy, prośba o te informacje może zostać wyzwolona automatycznie po sfinalizowaniu transakcji. Ta metoda jest alternatywą dla operacji **Dodawania informacji o odbiorcy**.
 
-Aby uaktywnić opcję żądania informacji o odbiorcy, należy w sekcji **Umożliwienie zapytań dot. informacji o kliencie w transakcjach sprzedaży** na **Tak** w sekcji **Parametry podatkowe** na skróconej karcie pt. **Funkcje** na stronie **Funkcjonalności profili POS**.
+Aby aktywować zapytanie o informacje o kliencie, włącz funkcję **(Polska) Zarządzanie informacjami o kliencie w Retail POS** w obszarze roboczym **Zarządzanie funkcjami** i ustaw **Włącz zapytanie o informacje o kliencie w transakcjach sprzedaży** opcja do **Tak** w sekcji **Parametry podatkowe** na skróconej karcie **Funkcje** na stronie **Profile funkcji POS**.
 
 ### <a name="set-up-receipt-formats"></a>Konfiguracja formatów paragonu
 

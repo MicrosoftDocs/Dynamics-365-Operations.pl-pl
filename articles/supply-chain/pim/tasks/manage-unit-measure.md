@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie jednostkami miary
 description: W tym temacie opisano sposób definiowania jednostki miary, wprowadzania tłumaczenia i opisu jednostki oraz określania reguł konwersji względem powiązanych jednostek.
-author: sorenva
+author: t-benebo
 ms.date: 04/09/2021
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, 
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: sorenand
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d251f90675188426e74b8cbe672856eb4c9ecb8a391f54e735ba19b91b7e3f4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e13897396810507bb4b2cbb415b873eb3dd7f4e8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746946"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565527"
 ---
 # <a name="manage-units-of-measure"></a>Zarządzanie jednostkami miary
 

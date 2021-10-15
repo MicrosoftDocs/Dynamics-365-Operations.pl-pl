@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474827"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581872"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Instalowanie i konfigurowanie dodatku Widoczność magazynu
 
@@ -35,63 +35,11 @@ Aby można było zainstalować dodatek Widoczność magazynu, musisz wykonać na
 
 - Uzyskaj projekt implementacji usługi LCS z co najmniej jednym wdrożonym środowiskiem.
 - Upewnij się, że wymagania wstępne konfigurowania dodatków są spełnione. Więcej informacji o tych wymaganiach wstępnych zawiera temat [Omówienie dodatków](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). Widoczność zapasów nie wymaga podwójnego łączenia.
-- Skontaktuj się z zespołem produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) aby uzyskać następujące wymagane pliki:
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (jeśli uruchomiona wersja Supply Chain Management jest wcześniejsza niż 10.0.18)
 
 > [!NOTE]
 > Aktualnie obsługiwane kraje i regiony to Kanada (CCA, ECA), Stany Zjednoczone (WUS, EUS), Unia Europejska (NEU, WEU), Wielka Brytania (SUK, WUK), Australia (EAU, SEAU), Japonia (EJP, WJP) i Brazylia (SBR, SCUS).
 
-Jeśli masz pytania dotyczące tych wymagań wstępnych, skontaktuj się z zespołem ds. produktu Widoczność magazynu.
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Ustaw Dataverse
-
-W celu korzystania z Dataverse w połączeniu z dodatkiem Widoczność magazynu należy wdrożyć pakiet Widoczność magazynu przy użyciu narzędzia Package Deployer. W poniższych podrozdziałach opisano, jak wykonać poszczególne zadania.
-
-> [!NOTE]
-> Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi LCS. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego Power Apps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw skontaktować się z zespołem ds. produktu Widoczność magazynu, aby rozwiązać ten problem z mapowaniem. Następnie można zainstalować dodatek Widoczność magazynu.
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>Migrowanie ze starej wersji rozwiązania Dataverse
-
-Jeśli zainstalowano starszą wersję dodatku Widoczność magazynu rozwiązania Dataverse, należy skorzystać z poniższych instrukcji, aby zaktualizować tę wersję. Istnieją dwa przypadki:
-
-- **Przypadek 1:** Jeśli ręcznie skonfigurujesz Dataverse, importując rozwiązanie `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip`, wykonaj następujące kroki:
-
-    1. Pobierz następujące trzy pliki:
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. Ręcznie zaimportuj `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` i `InventoryServiceBase_managed.cab` do Dataverse, wykonując następujące kroki:
-
-        1. Otwórz adres URL środowiska Dataverse.
-        1. Otwórz stronę **Rozwiązania**.
-        1. Wybierz opcję **Importuj**.
-
-    1. Użyj narzędzia Package Deployer, aby wdrożyć pakiet `InventoryServiceApplication.PackageDeployer.zip`. Stosowne instrukcje zawiera sekcja [Wdrażanie pakietu przy użyciu narzędzia Package Deployer](#deploy-package) w tym temacie.
-
-- **Przypadek 2:** Jeśli Dataverse skonfigurowano przy użyciu narzędzia Package Deployer przed zainstalowaniem starszego pakietu `.*PackageDeployer.zip`, pobierz `InventoryServiceApplication.PackageDeployer.zip` i wykonaj aktualizację. Stosowne instrukcje zawiera sekcja [Wdrażanie pakietu przy użyciu narzędzia Package Deployer](#deploy-package).
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>Wdrażanie pakietu przy użyciu narzędzia Package Deployer
-
-1. Zainstaluj narzędzia deweloperskie zgodnie z opisem na stronie [Pobieranie narzędzi z NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
-1. Odblokuj plik `InventoryServiceApplication.PackageDeployer.zip` pobrany z grupy Teams, wykonując następujące kroki:
-
-    1. Zaznacz plik i przytrzymaj go (lub kliknij prawym przyciskiem myszy), a następnie wybierz opcję **Właściwości**.
-    1. W oknie dialogowym **Właściwości** na karcie **Ogólne** znajdź sekcję **Zabezpieczenia**, wybierz pozycję **Odblokuj** i zastosuj zmianę. Jeśli na karcie **Ogólne** nie ma sekcji **Zabezpieczenia**, plik nie jest zablokowany. W takim przypadku przejdź do następnego kroku.
-
-    ![Odblokowywanie pobranego pliku](media/unblock-file.png "Odblokowywanie pobranego pliku")
-
-1. Rozpakuj plik `InventoryServiceApplication.PackageDeployer.zip`, aby znaleźć następujące elementy:
-
-    - Folder programu `InventoryServiceApplication`
-    - Plik `[Content_Types].xml`
-    - Plik `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`
-
-1. Skopiuj te elementy do katalogu `.\Tools\PackageDeployment`. (Ten katalog został utworzony po zainstalowaniu narzędzi deweloperskich).
-1. Uruchom plik `.\Tools\PackageDeployment\PackageDeployer.exe` i postępuj zgodnie z instrukcjami wyświetlanymi na ekranie, aby zaimportować rozwiązania.
+Jeśli masz jakiekolwiek pytania dotyczące tych wymagań wstępnych, skontaktuj się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>Instalowanie dodatku Widoczność magazynu
 
@@ -102,7 +50,11 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 1. Zaloguj się w [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Na stronie głównej wybierz projekt, w którym jest wdrożone środowisko.
 1. Na stronie projektu wybierz środowisko, w którym chcesz zainstalować dodatek.
-1. Przewijaj stronę środowiska w dół do momentu, aż znajdziesz sekcję **Dodatki środowiska** w sekcji **Integracja Power Platform**. Tam znajdziesz nazwę środowiska Dataverse.
+1. Przewijaj stronę środowiska w dół do momentu, aż znajdziesz sekcję **Dodatki środowiska** w sekcji **Integracja Power Platform**. Tam znajdziesz nazwę środowiska Dataverse. Potwierdź, że nazwa środowiska Dataverse jest nazwą, której chcesz używać dla widoczności zapasów.
+
+    > [!NOTE]
+    > Obecnie są obsługiwane tylko środowiska Dataverse utworzone za pomocą usługi LCS. Jeśli środowisko Dataverse zostało utworzone w inny sposób (na przykład za pomocą centrum administracyjnego Power Apps) i jest połączone ze środowiskiem Supply Chain Management, należy najpierw skontaktować się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com), aby rozwiązać ten problem z mapowaniem. Następnie można zainstalować dodatek Widoczność magazynu.
+
 1. W sekcji **Dodatki środowiska** wybierz opcję **Zainstaluj nowy dodatek**.
 
     ![Strona środowiska w LCS](media/inventory-visibility-environment.png "Strona środowiska w LCS")
@@ -118,6 +70,7 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 
 1. Zaakceptuj regulamin, zaznaczając pole wyboru **Regulamin**.
 1. Wybierz **Zainstaluj**. Stan dodatku będzie widoczny jako **Instalowany**. Po zakończeniu instalacji odśwież stronę. Stan powinien zostać zmieniony na **Zainstalowany**.
+1. W Dataverse zaznacz sekcję **Aplikacje** w lewej nawigacji i sprawdź, czy **widoczność zapasów** Power Apps została zainstalowana pomyślnie. Jeśli sekcja **Aplikacje** nie istnieje, skontaktuj się z zespołem ds. produktu Widoczność magazynu pod adresem [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
 
 > [!IMPORTANT]
 > Jeśli masz więcej niż jedno środowisko usługi LCS, utwórz inną aplikację Azure AD dla każdego środowiska. Jeśli do zainstalowania dodatku Widoczność magazynu dla różnych środowisk używasz tego samego identyfikatora aplikacji i identyfikatora dzierżawcy, wystąpi problem z tokenem w starszych środowiskach. Tylko ostatnie zainstalowane rozwiązanie jest prawidłowe.
@@ -126,13 +79,13 @@ Po zarejestrowaniu aplikacji i dodaniu klucza tajnego klienta do Azure AD wykona
 
 Aby odinstalować dodatek Widoczność magazynu, wybierz opcję **Odinstaluj** na stronie usługi LCS. Proces odinstalowywania powoduje zakończenie pracy dodatku Widoczność magazynu oraz wyrejestrowanie dodatku z usługi LCS i usunięcie wszelkich tymczasowych danych przechowywanych w pamięci podręcznej danych dodatku Widoczność magazynu. Jednak podstawowe dane zapasów przechowywane w subskrypcji Dataverse nie są usuwane.
 
-Aby odinstalować dane magazynu przechowywane w subskrypcji Dataverse, otwórz [Power Apps](https://make.powerapps.com), wybierz pozycję **Środowisko** na pasku nawigacyjnym i wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS. Następnie przejdź do obszaru **Rozwiązania** i usuń następujące pięć rozwiązań:
+Aby odinstalować dane magazynu przechowywane w subskrypcji Dataverse, otwórz [Power Apps](https://make.powerapps.com), wybierz pozycję **Środowisko** na pasku nawigacyjnym i wybierz środowisko Dataverse, które jest połączone ze środowiskiem usługi LCS. Następnie przejdź do obszaru **Rozwiązania** i usuń następujące pięć rozwiązań w tej kolejności:
 
-- Zakotwiczone rozwiązanie aplikacji Widoczność magazynu w rozwiązaniach Dynamics 365
-- Rozwiązanie aplikacji Widoczność magazynu Dynamics 365 FNO SCM
-- Konfiguracja usługi zapasów
-- Autonomiczna aplikacja Widoczność magazynu
-- Rozwiązanie podstawowe Widoczność magazynu Dynamics 365 FNO SCM
+1. Zakotwiczone rozwiązanie aplikacji Widoczność magazynu w rozwiązaniach Dynamics 365
+1. Rozwiązanie aplikacji Widoczność magazynu Dynamics 365 FNO SCM
+1. Konfiguracja usługi zapasów
+1. Autonomiczna aplikacja Widoczność magazynu
+1. Rozwiązanie podstawowe Widoczność magazynu Dynamics 365 FNO SCM
 
 Po usunięciu tych rozwiązań usuwane są także dane przechowywane w tabelach.
 

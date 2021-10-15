@@ -1,7 +1,7 @@
 ---
 title: Monitorowanie przebiegu planowania głównego
 description: W tym temacie opisano sposób, w jaki terminarz produkcji może sprawdzić, czy proces planowania głównego jest w toku.
-author: josaw1
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b59e8590bf700b77a5e8021f9518f6d0cc6929acc0d9ea2723cef8b7a1971fd4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dfd1906200038c27e63f9434bba27e7146f4c80c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757741"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575615"
 ---
 # <a name="monitor-a-master-planning-run"></a>Monitorowanie przebiegu planowania głównego
 

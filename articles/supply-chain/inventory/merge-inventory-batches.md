@@ -1,7 +1,7 @@
 ---
 title: Scalanie partii zapasów
 description: Ten artykuł zawiera informacje o konsolidowaniu dwóch lub więcej partii zapasów w jedną partię scaloną.
-author: sherry-zheng
+author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-ms.author: chuzheng
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab4e2bac4799e56a3b9298f259730c04821bd63264dc574ec9597ddd7667c7d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83c7fa6bf596510c3b902c12433cc55842ebe0b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734242"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571912"
 ---
 # <a name="merge-inventory-batches"></a>Scalanie partii zapasów
 

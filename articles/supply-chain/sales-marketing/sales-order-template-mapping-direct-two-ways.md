@@ -1,7 +1,7 @@
 ---
 title: Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z elementami w rozwiązaniu Supply Chain Management
 description: Temat zawiera omówienie szablonów i podstawowych zadań, które są używane do rozpoczynania synchronizacji zamówień sprzedaży między programami Dynamics 365 Sales i Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9e95ba361bddf4e43b205fe580bb6f4a91dd88248a0c059ad65e66ef07de83c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad23190433b2843ec5063b5fa5b30351fcd86390
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753235"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566438"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synchronizowanie zamówień sprzedaży w rozwiązaniu Sales bezpośrednio z elementami w rozwiązaniu Supply Chain Management
 
@@ -189,19 +189,19 @@ Na poniższych ilustracjach pokazano przykładowe mapowanie szablonu w integrato
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Zlecenia sprzedaży (Supply Chain Management do Sales) — bezpośrednie: OrderHeader
 
-[![Mapowanie szablonu w integracji danych.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Mapowanie szablonów w integracji danych, zamówienia sprzedaży (Supply Chain Management do Sales) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Zlecenia sprzedaży (Supply Chain Management do Sales) — bezpośrednie: OrderLine
 
-[![Mapowanie szablonu w integracji danych.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Mapowanie szablonów w integracji danych, zamówienia sprzedaży (Supply Chain Management do Sales) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Zlecenia sprzedaży (Sales do Supply Chain Management) — bezpośrednie: OrderHeader
 
-[![Mapowanie szablonu w integracji danych.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Mapowanie szablonów w integracji danych, zamówienia sprzedaży (Sales do Supply Chain Management) - Direct: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Zlecenia sprzedaży (Sales do Supply Chain Management) — bezpośrednie: OrderLine
 
-[![Mapowanie szablonu w integracji danych.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Mapowanie szablonów w integracji danych, zamówienia sprzedaży (Sales do Supply Chain Management) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Powiązane tematy
 

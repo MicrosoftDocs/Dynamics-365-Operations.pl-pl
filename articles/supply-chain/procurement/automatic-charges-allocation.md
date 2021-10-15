@@ -1,23 +1,23 @@
 ---
 title: Automatyczna alokacja opłat
 description: Funkcja opłaty w Microsoft Dynamics 365 Supply Chain Management pomaga automatycznie przydzielić opłaty do zamówień zakupu lub zamówień sprzedaży.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753946"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592547"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatyczna alokacja opłat
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753946"
 W zależności od klienta, z którym pracujesz, lub przedmiotu, który sprzedajesz, możesz zastosować określone dodatkowe opłaty. Funkcja *opłaty* w Microsoft Dynamics 365 Supply Chain Management pomaga automatycznie przydzielić opłaty do zamówień zakupu lub zamówień sprzedaży.
 
 Opłaty automatyczne są stosowane automatycznie podczas tworzenia zamówienia sprzedaży lub zamówienia zakupu. Automatyczne opłaty można definiować dla określonych dostawców, grup odbiorców lub towarów. Można też definiować automatyczne opłaty mające zastosowanie do wszystkich dostawców klientów lub towarów.
+
+## <a name="set-up-parameters"></a>Ustaw parametry
+
+Strona **Parametry modułu Zaopatrzenie i sourcing** zawiera kilka ustawień, które są szczególnie przydatne, gdy chcesz automatycznie alokować opłaty. Aby zakończyć tę konfigurację, należy wykonać następujące czynności.
+
+1. Przejdź do **Zaopatrzenie i sourcing \> ustawień \> Parametry modułu Zaopatrzenie i sourcing**.
+1. Otwórz kartę **Ceny**.
+1. Na skróconej karcie **Ceny** należy wprowadzić następujące ustawienia:
+    - **Znajdź automatyczne opłaty dla nagłówka** — określa, czy opłaty powinny być automatycznie alokowane dla nagłówków zamówień zakupu. Ustaw wartość *Tak*, aby użyć automatycznej alokacji opłat.
+    - **Znajdź automatyczne opłaty dla wiersza** — określa, czy opłaty powinny być automatycznie alokowane dla wierszy zamówień zakupu. Ustaw wartość *Tak*, aby użyć automatycznej alokacji opłat.
 
 ## <a name="set-up-charges-codes"></a>Konfigurowanie kodów opłat
 

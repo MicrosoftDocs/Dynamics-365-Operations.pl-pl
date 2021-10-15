@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772285"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581145"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Operacja zapasów wychodzących w punkcie sprzedaży
 
@@ -116,7 +116,7 @@ W widoku **Pełna lista zamówień** można ręcznie wybrać wiersz z listy, a n
 
 ### <a name="over-delivery-shipping-validations"></a>Sprawdzanie poprawności nadwyżki w wysyłce
 
-Sprawdzanie poprawności nastąpiło podczas procesu odbierania dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik spróbuje uzyskać więcej zapasów niż zamówiono w zamówieniu zakupu, ale nadwyżka w dostawie nie jest skonfigurowana lub otrzymana ilość przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia zakupu, zostanie wyświetlony błąd i nie można przyjąć nadmiarowej ilości.
+Walidacje występują podczas procesu realizacji dla wierszy dokumentu. Obejmują one sprawdzanie nadwyżki w dostawie. Jeśli użytkownik próbuje wysłać więcej zapasów niż zamówiono w zamówieniu przeniesienia, ale nie skonfigurowano nadwyżki w dostawie lub wysyłana ilość przekracza tolerancję nadwyżki w dostawie skonfigurowaną dla wiersza zamówienia przeniesienia, użytkownik otrzyma błąd i nie może wysłać nadwyżki.
 
 ### <a name="underdelivery-close-lines"></a>Wiersze zamknięcia niedoboru w dostawie
 

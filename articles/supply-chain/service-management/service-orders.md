@@ -1,7 +1,7 @@
 ---
 title: Zlecenia serwisowe
-description: Zlecenie serwisowe reprezentuje wizytę serwisanta w siedzibie odbiorcy w określonym dniu.
-author: ShylaThompson
+description: Ten temat zawiera omówienie sposobu pracy ze zleceniami serwisowymi.
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89ff650b0813318573fa273533ba31b57e35696a551105cca7e1a247099b218f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739713"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566126"
 ---
-# <a name="service-orders"></a>Zlecenia serwisowe   
+# <a name="service-orders"></a>Zlecenia serwisowe
 
 [!include [banner](../includes/banner.md)]
-
 
 Zlecenie serwisowe reprezentuje wizytę serwisanta w siedzibie odbiorcy w określonym dniu. Każde zlecenie serwisowe składa się z jednego lub większej liczby wierszy zlecenia serwisowego. Wiersze zlecenia serwisowego reprezentują godziny pracy, jaką musi wykonać serwisant, oraz powiązane towary, wydatki i opłaty.
 
@@ -39,19 +38,19 @@ Można również tworzyć zlecenia serwisowe indywidualnie, bez kojarzenia ich z
 
 
 > [!NOTE]
-> <P>Aby utworzyć zlecenia serwisowe, które nie są powiązane z umową serwisową, należy zaznaczyć pole wyboru <STRONG>Dozwolone bez umowy serwisowej</STRONG> w formularzu <STRONG>Parametry modułu Zarządzanie serwisem</STRONG>.</P>
+> Aby utworzyć zlecenia serwisowe, które nie są powiązane z umową serwisową, należy zaznaczyć pole wyboru **Dozwolone bez umowy serwisowej** na stronie **Parametry modułu Zarządzanie serwisem**.
 
-**Scenariusz**
+### <a name="scenario"></a>Scenariusz
 
 Poniższy scenariusz opisuje inną sytuację, w której warto utworzyć zlecenie serwisowe, które nie jest powiązane z umową serwisową.
 
-Dyspozytor w firmie odbiera zgłoszenie dotyczące pilnego serwisu windy. Nie czasu na konfigurowanie umowy serwisowej i projektu na wykonanie prac serwisowych. Z tego względu dyspozytor tworzy zlecenie serwisowe bezpośrednio w formularzu **Zlecenia serwisowe**, dołącza zlecenie serwisowe do istniejącego projektu, a następnie tworzy wiersze zlecenia serwisowego. Ponadto dyspozytor tworzy relację zadania lub przedmiotu dla istniejącego zlecenia serwisowego w celu rejestrowania pracy, która nie jest związana z umową serwisową. Aby uzyskać więcej informacji, zobacz [Ręczne tworzenie zleceń serwisowych](create-service-orders-manually.md) i [Tworzenie relacji zadania serwisowego](create-service-task-relations.md).
+Dyspozytor w firmie odbiera zgłoszenie dotyczące pilnego serwisu windy. Nie czasu na konfigurowanie umowy serwisowej i projektu na wykonanie prac serwisowych. Z tego względu dyspozytor tworzy zlecenie serwisowe bezpośrednio na stronie **Zlecenia serwisowe**, dołącza zlecenie serwisowe do istniejącego projektu, a następnie tworzy wiersze zlecenia serwisowego. Ponadto dyspozytor tworzy relację zadania lub przedmiotu dla istniejącego zlecenia serwisowego w celu rejestrowania pracy, która nie jest związana z umową serwisową. Aby uzyskać więcej informacji, zobacz [Ręczne tworzenie zleceń serwisowych](create-service-orders-manually.md) i [Tworzenie relacji zadania serwisowego](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>Monitorowanie postępu realizacji zleceń serwisowych
 
 Aby monitorować postęp realizacji zleceń serwisowych w różnych zespołach i procesach roboczych, można skonfigurować system etapów i kodów przyczyn dla zleceń serwisowych. Dla każdego etapu można określić dozwolone działania. Aby uzyskać więcej informacji, zobacz [Tworzenie kodów przyczyn](create-reason-codes.md).
 
-**Przykład**
+### <a name="example"></a>Przykład
 
 Zlecenie serwisowe jest zatwierdzane przez dyspozytora. Dyspozytor aktualizuje etap realizacji zlecenia serwisowego i ustawia kod przyczyny, który wskazuje, że zlecenie serwisowe zostało zwolnione do serwisanta. Serwisant udaje się do siedziby odbiorcy i wykonuje prace serwisowe.
 
@@ -59,7 +58,7 @@ Zlecenie serwisowe jest zatwierdzane przez dyspozytora. Dyspozytor aktualizuje e
 
 Można określić pozycje magazynowe, które są wymagane dla zleceń serwisowych. W tym celu zlecenie serwisowe musi być skojarzone z projektem. Zapotrzebowania na towary dla zlecenia serwisowego są przetwarzane za pomocą projektu. 
 
-**Przykład**
+### <a name="example"></a>Przykład
 
 Zlecenia serwisowe utworzone na podstawie umowy serwisowej są przetwarzane przez dyspozytora. Przy pierwszym zleceniu serwisowym dyspozytor zdał sobie sprawę, że serwisantowi potrzebna jest ważna zapasowa część, której nie ma w dostępnych zapasach magazynowych. Tworzy więc zapotrzebowanie na towar dotyczące tej części bezpośrednio ze zlecenia serwisowego.
 
@@ -73,7 +72,7 @@ Jedno z pozostałych zleceń serwisowych wygenerowanych dla stycznia stało się
 
 ## <a name="post-from-projects"></a>Księgowanie z projektów
 
-W końcu każdego tygodnia dyspozytor chce zaksięgować wszystkie zlecenia serwisowe dołączone do określonego projektu. W związku z tym dyspozytor odszukuje odpowiedni projekt w formularzu **Projekty** i księguje zlecenia serwisowe, które zostały ukończone. Aby uzyskać więcej informacji, zobacz [Księgowanie zleceń serwisowych (formularzy klasy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+W końcu każdego tygodnia dyspozytor chce zaksięgować wszystkie zlecenia serwisowe dołączone do określonego projektu. W związku z tym dyspozytor odszukuje odpowiedni projekt na stronie **Projekty** i księguje zlecenia serwisowe, które zostały ukończone. Aby uzyskać więcej informacji, zobacz [Księgowanie zleceń serwisowych (formularzy klasy)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Usuń zlecenia serwisowe
 

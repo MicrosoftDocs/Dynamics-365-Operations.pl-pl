@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83e75eee54516539be939e9547a8b637bbf2ab107ae96c07c4bbefaad75f1022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768448"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594991"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Ponowne używanie konfiguracji ER z szablonami programu Excel do generowania raportów w formacie programu Word
 
@@ -90,7 +90,7 @@ Obecnie dokument programu Excel jest używany jako szablon do generowania danych
 
 Możesz teraz zamapować elementy niestandardowej części XML **Raport** do formantów zawartości dokumentu programu Word.
 
-Jeśli znasz proces projektowania dokumentów programu Word jako formularzy zawierających [kontrolki zawartości](/office/client-developer/word/content-controls-in-word) i mapowanych na elementy [niestandardowych części XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), wykonaj wszystkie kroki następnej procedury w celu utworzenia dokumentu. Więcej informacji zawiera sekcja [Tworzenie formularzy, które użytkownicy wypełniają lub drukują w aplikacji Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). W przeciwnym razie pomiń następną procedurę.
+Jeśli znasz proces projektowania dokumentów programu Word jako formularzy zawierających [kontrolki zawartości](/office/client-developer/word/content-controls-in-word) i mapowanych na elementy [niestandardowych części XML](/visualstudio/vsto/custom-xml-parts-overview), wykonaj wszystkie kroki następnej procedury w celu utworzenia dokumentu. Więcej informacji zawiera sekcja [Tworzenie formularzy, które użytkownicy wypełniają lub drukują w aplikacji Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). W przeciwnym razie pomiń następną procedurę.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Pobieranie dokumentu programu Word z niestandardową częścią XML i mapowanie danych
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d5f84a1a6ff794cdc8b4b81e8518983789a0b33f1708719906f6ad094d9c4285
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c0b70411e6535b22d698545438dcb0b16935e731
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722638"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559590"
 ---
 # <a name="payroll-position-job"></a>Zadanie stanowiska listy płac
 
@@ -34,16 +34,22 @@ Nazwa fizyczna: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Właściwości
 
-| Właściwość<br>**Nazwa fizyczna**<br>**_Typ_** | Użycie | opis |
+| Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | Opis |
 | --- | --- | --- |
-| **Identyfikator stanowiska**<br>mshr_jobid<br>*Ciąg* | Tylko do odczytu<br>Potrzebne |Identyfikator zadania. |
-| **Data wejścia w życie**<br>mshr_validto<br>*Przesunięcie daty i godziny* | Tylko do odczytu <br>Potrzebne | Data, od której obowiązuje stanowisko i stosunek pracy. |
-| **Data ważności**<br>mshr_validto<br>*Przesunięcie daty i godziny* | Tylko do odczytu <br>Potrzebne | Data obowiązywania stanowiska i stosunku pracy.  |
-| **Identyfikator stanowiska**<br>mshr_positionid<br>*Ciąg* | Tylko do odczytu<br>Potrzebne | Identyfikator stanowiska. |
-| **Pole główne**<br>mshr_primaryfield<br>*Ciąg* | Potrzebne<br>Wygenerowany przez system |  |
-| **Wartość identyfikatora zadania stanowiska**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_PayrollPositionJobEntity klucza mshr_payrollpositionjobentity |identyfikator stanowiska związany ze stanowiskiem.|
-| **Wartość identyfikatora stałego planu wynagrodzeń**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Tylko do odczytu<br>Potrzebne<br>Klucz obcy: mshr_FixedCompPlan_id dla mshr_payrollfixedcompensationplanentity  | Identyfikator planu stałych wynagrodzeń powiązany ze stanowiskiem. |
-| **Identyfikator jednostki stanowiska na liście płac**<br>mshr_payrollpositionjobentityid<br>*Guid* | Potrzebne<br>Wygenerowany przez system. | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania zadania.  |
+| **Identyfikator stanowiska**</br>mshr_positionid</br>*Ciąg* | Tylko do odczytu | Identyfikator stanowiska. |
+| **Data wejścia w życie**</br>mshr_validto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, od której ważne jest stanowisko i stosunek pracy. |
+| **Data ważności**</br>mshr_validto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data ważności stanowiska i stosunku pracy. |
+| **Identyfikator stanowiska**</br>mshr_jobid</br>*Ciąg* | Tylko do odczytu | Identyfikator zadania. |
+| **Pole główne**</br>mshr_primaryfield</br>*Ciąg* | Wygenerowany przez system | Pole główne. |
+| **Identyfikator jednostki stanowiska na liście płac**</br>mshr_payrollpositionjobentityid</br>*Guid* | Wygenerowany przez system. | Wygenerowana przez system wartość unikatowego globalnego identyfikatora (GUID) umożliwiająca jednoznaczną identyfikację pracy. |
+
+## <a name="relations"></a>Relacje
+
+| Wartości właściwości | Encja powiązana | Właściwość nawigacji | Typ kolekcji |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Nie dotyczy |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Przykład kwerendy
 

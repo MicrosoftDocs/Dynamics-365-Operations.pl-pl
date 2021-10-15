@@ -1,8 +1,8 @@
 ---
 title: Obszar roboczy zarządzania świadczeniami
 description: W tym temacie opisano obszar roboczy Zarządzanie świadczeniami w rozwiązaniu Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/24/2021
+author: twheeloc
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49393ab65c2f0020af5b246f7c18a152d613725f5b31be89cb57f244b28003f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719099"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512481"
 ---
 # <a name="benefits-management-workspace"></a>Obszar roboczy zarządzania świadczeniami
 
@@ -60,7 +60,7 @@ W przypadku wybrania kafelka przejdź na stronę z tym obszarem. Na przykład wy
 
 ![Plany świadczeń pracowniczych.](./media/hr-benefits-management-workspace-plans.png)
 
-Wybieranie **Trwającego zdarzenia życiowego** lub kafelków **Przyszłego zdarzenia życiowego** umożliwia dostęp do listy aktywnych lub przyszłych zdarzeń.
+Wybieranie **Trwającego zdarzenia życiowego** lub **Przyszłego zdarzenia życiowego** umożliwia dostęp do listy aktywnych lub przyszłych zdarzeń.
 
 ![Zdarzenia zmiany sytuacji życiowej.](./media/hr-benefits-management-workspace-life-events.png)
 
@@ -88,9 +88,42 @@ Aby wyświetlić inny okres świadczeń, wybierz go z listy rozwijanej **Okres**
 
 ![Zmień okres.](./media/hr-benefits-management-workspace-period.png)
 
+
+## <a name="open-enrollment-tab"></a>Otwórz kartę rejestracji
+
+Możesz wyświetlić czynności do wykonania, wybierając kafelek lub kartę. Jeśli wybierzesz kartę, możesz wyświetlić i wybrać pracowników na stronie obszaru roboczego.
+Karta **Otwórz rejestrację** zawiera kluczowe mierniki otwartego procesu rejestracji. 
+
+Informacje dotyczące rejestracji otwartej zostaną wyświetlone na 30 dni przed **datą rozpoczęcia rejestracji**. Jest to definiowane w konfiguracji **okresów** w formularzu **Zarządzanie świadczeniami** > **Łącza** > **Okresy**, w polu **Data początku rejestracji**.  Aby zmienić to ustawienie, przejdź do **Parametry współdzielone zasoby ludzkie** > **Zarządzanie świadczeniami** > **Otwórz opcje rejestracji** i zaktualizuj pole **Liczba**.  
+
+Na karcie **Otwórz rejestrację** są dostępne następujące informacje:
+ - Pracownicy, którzy nie rozpoczęli otwartego procesu rejestracji
+ - Pracownicy z wyborami w trakcie przetwarzania
+ - Pracownicy, którzy przeszli proces wyborczy
+ - Niepotwierdzone wybory
+
+**Kafelki podsumowania**
+
+- **Nie rozpoczęto** — w kafelku **Nie rozpoczęto** jest przedstawiana liczba pracowników, którzy nie uruchomili procesu rejestracji. Kafelek **Nie rozpoczęty** to filtrowana lista, która pokazuje tylko tych pracowników, którzy nie mają wybranych planów, uchyleń lub wyewidencjonowanych dla otwartego okresu planu rejestracji. Plany obowiązkowe są ignorowane i nie uwzględniane, ponieważ są domyślnie wybrane dla pracownika.  Można przejść do szczegółów tego kafelka, aby wyświetlić listę pracowników, którzy nie uruchomili otwartego procesu rejestracji, na stronie **Plan świadczeń pracownika**.
+
+  > [!NOTE]
+  > Jeśli nie chcesz śledzić otwartego postępu rejestracji dla **typu planu**, możesz wykluczyć go, przechodząc do pola **Zarządzanie świadczeniami** > **Łącza** > **parametry samoobsługi pracownika** > **Ustawienia kafelków planów świadczeń** i aktualizować pole **Postęp otwartej rejestracji śledzenia**.  Mogą być na przykład tworzone **Typ planu** = **Inne**. Te plany mogą być planami opcjonalnymi, dla których nie chcesz śledzić postępu rejestracji. Jeśli nie wybierzesz tego typu planu, plany tego typu będą ignorowane podczas śledzenia postępu lub zakończenia rejestracji na **karcie Otwarta rejestracja**. To ustawienie dotyczy typu planu wybranego dla wszystkich okresów i firm.
+
+- **W toku** — kafelki **w toku** dają liczbę pracowników z wyborami w toku. Kafelek **W toku** jest listą filtrowaną, która zawiera tylko pracowników, którzy mają co najmniej jeden plan, który jest uchylony lub wybrany. Plany obowiązkowe są ignorowane i nie uwzględniane, ponieważ są domyślnie wybrane dla pracownika. Można przejść do szczegółów tego kafelka, aby wyświetlić wybrane i uchylone plany na stronie **Zbiorcze aktualizowanie planów świadczeń pracowników**.
+
+- **Zarejestrowane świadczenia** — kafelek **Zarejestrowane świadczenia** podaje liczbę pracowników, którzy są w pełni zarejestrowani w świadczeniach. Kafelek **Zarejestrowane w świadczeniach** to przefiltrowana lista, która pokazuje pracowników, którzy wybrano lub uchylono wszystkie plany. Kwerenda wyklucz plany, które nie są śledzone w celu otwartej rejestracji na stronie **Parametry samoobsługi pracownika**. Można przejść do szczegółów z tego kafelka, aby wyświetlić listę pracowników na stronie **Plany świadczeń pracownika**.
+
+- **Niepotwierdzone wybory** – W kafelku **Niepotwierdzone wybory** jest przedstawiana liczba pracowników, którzy mają plany, które zostały wybrane lub uchylone i muszą zostać potwierdzone. Możesz przejść wstecz z tego kafelka, aby wyświetlić stronę **Zbiorcza aktualizacja planów świadczeń pracowniczych**.
+
+**Działanie**
+
+- **Nie rozpoczęto** — karta **Nie rozpoczęto** wyświetla listę pracowników, którzy nie rozpoczęli procesu rejestracji. Kafelek **Nie rozpoczęto** to filtrowana lista, która pokazuje tylko tych pracowników, którzy nie mają wybranych planów, uchyleń lub wyewidencjonowanych dla otwartego okresu planu rejestracji. Plany obowiązkowe są ignorowane i nie uwzględniane, ponieważ są domyślnie wybrane dla pracownika. Można przejść do szczegółów pracownika, aby wyświetlić stronę **szczegółów planów świadczeń pracownika**.
+
+- **Wybory w toku** — karta **Wybory w toku** wyświetla listę pracowników, którzy mają trwające wybory. Kafelek **Wybory w toku** jest listą filtrowaną, która zawiera tylko pracowników, którzy mają co najmniej jeden plan, który jest uchylony lub wybrany. Plany obowiązkowe są ignorowane i nie uwzględniane, ponieważ są domyślnie wybrane dla pracownika. Można przejść do szczegółów pracownika, aby wyświetlić stronę **szczegółów planów świadczeń pracownika**.
+
 ## <a name="view-more-options"></a>Wyświetl więcej opcji
 
-Aby wyświetlić więcej informacji i akcji, które można podjąć, wybierz opcję **Łącza**.
+Aby wyświetlić więcej informacji lub dodatkowe czynności, wybierz **Łącza**.
 
 ![Linki.](./media/hr-benefits-management-workspace-links.png)
 

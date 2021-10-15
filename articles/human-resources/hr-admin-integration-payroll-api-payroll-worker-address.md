@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761981"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559516"
 ---
 # <a name="payroll-worker-address"></a>Adres pracownika listy płac
 
@@ -34,22 +34,28 @@ Ta jednostka podaje miejsce zamieszkania i miejsca pracy płacowej dla danego pr
 
 ## <a name="properties"></a>Właściwości
 
-| Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | opis |
+| Właściwość</br>**Nazwa fizyczna**</br>**_Typ_** | Użycie | Opis |
 | --- | --- | --- |
-| **Miasto**</br>mshr_city</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Miasto zdefiniowane dla adresu.   |
-| **Numer pracownika**</br>mshr_personnelnumber</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Unikalny numer personelu pracownika.  |
-| **Kraj region**</br>mshr_countryregionid</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Region kraju zdefiniowany dla adresu.  |
-| **Data wejścia w życie**</br>mshr_postaladdressvalidfrom</br>*Przesunięcie daty i godziny* | Tylko do odczytu </br>Potrzebne | Data, od której adres jest ważny. |
-| **Pracował w adresie** </br> mshr_isworkedinaddressbr </br>*[zestaw opcji mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Tylko do odczytu</br>Potrzebne | Wskazuje, czy adres jest miejscem pracy pracownika. |
-| **Powiat**</br>mshr_county</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Hrabstwo zdefiniowane dla adresu.  |
-| **Identyfikator adresu pracownika listy płac**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Potrzebne</br>Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania adresu.  |
-| **Pole główne**</br>mshr_primaryfield</br>*Ciąg* | Tylko do odczytu</br>Potrzebne |  |
-| **Ulica**</br>mshr_street</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Ulica określona dla adresu. |
-| **Data ważności**</br>mshr_postaladdressvalidto</br>*Przesunięcie daty i godziny* | Tylko do odczytu </br>Potrzebne | Data, do której adres jest ważny.  |
-| **Identyfikator lokalizacji**</br>mshr_locationidbr>*Ciąg* | Tylko do odczytu <br>Potrzebne | Identyfikator dla adresu.  |
-| **Kod pocztowy**</br>mshr_zipcode<br>*Ciąg* | Tylko do odczytu <br>Potrzebne |Numer identyfikacji zdefiniowany dla pracownika.  |
-| **Mieszkał pod adresem**</br>mshr_islivedinaddressbr </br> *[zestaw opcji mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Tylko do odczytu</br>Potrzebne | Wskazuje, czy adres jest miejscem zamieszkania pracownika. |
-| **Stanowy**</br>mshr_state</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Stan określony dla adresu.  |
+| **Numer pracownika**</br>mshr_personnelnumber</br>*Ciąg* | Tylko do odczytu | Unikalny numer personelu pracownika. |
+| **Identyfikator lokalizacji**</br>mshr_locationidbr>*Ciąg* | Tylko do odczytu | Identyfikator dla adresu. |
+| **Mieszkał pod adresem**</br>mshr_islivedinaddressbr </br> *[zestaw opcji mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Tylko do odczytu | Wartość wskazująca, czy adres jest adresem miejsca zamieszkania pracownika. |
+| **Pracował w adresie** </br> mshr_isworkedinaddressbr </br>*[zestaw opcji mshr_NoYes](hr-admin-integration-payroll-api-no-yes.md)* | Tylko do odczytu | Wartość wskazująca, czy adres jest adresem miejsca pracy pracownika. |
+| **Kraj region**</br>mshr_countryregionid</br>*Ciąg* | Tylko do odczytu</br>Potrzebne | Kraj lub region zdefiniowany dla adresu. |
+| **Kod pocztowy**</br>mshr_zipcode<br>*Ciąg* | Tylko do odczytu | Numer identyfikacyjny zdefiniowany dla pracownika. |
+| **Ulica**</br>mshr_street</br>*Ciąg* | Tylko do odczytu | Ulica określona dla adresu. |
+| **Miasto**</br>mshr_city</br>*Ciąg* | Tylko do odczytu | Miasto zdefiniowane dla adresu. |
+| **Stanowy**</br>mshr_state</br>*Ciąg* | Tylko do odczytu | Stan lub prowincja zdefiniowana dla adresu. |
+| **Powiat**</br>mshr_county</br>*Ciąg* | Tylko do odczytu | Powiat zdefiniowany dla adresu. |
+| **Data wejścia w życie**</br>mshr_postaladdressvalidfrom</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, od której adres jest ważny. |
+| **Data ważności**</br>mshr_postaladdressvalidto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, do której adres jest ważny. |
+| **Pole główne**</br>mshr_primaryfield</br>*Ciąg* | Tylko do odczytu | Pole główne. |
+| **Identyfikator adresu pracownika listy płac**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Wygenerowany przez system | Wygenerowana przez system wartość unikatowego globalnego identyfikatora (GUID) umożliwiająca jednoznaczną identyfikację adresu. |
+
+## <a name="relations"></a>Relacje
+
+| Wartości właściwości | Encja powiązana | Właściwość nawigacji | Typ kolekcji |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Przykład kwerendy
 

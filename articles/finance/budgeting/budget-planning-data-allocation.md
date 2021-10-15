@@ -1,7 +1,7 @@
 ---
 title: Alokacja danych na potrzeby planowania budżetu
 description: W tym temacie opisano różne metody alokacji dostępne w Microsoft Dynamics 365 Finance oraz sposoby ich wykorzystywania.
-author: ShylaThompson
+author: panolte
 ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18afd1cd59932269086736cb5e350af84b5aa3a34de3f8084462489c18fb9347
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c6011c4c005a26720fd57caca0075483404f41b4
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778345"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595124"
 ---
 # <a name="budget-planning-data-allocation"></a>Alokacja danych na potrzeby planowania budżetu
 

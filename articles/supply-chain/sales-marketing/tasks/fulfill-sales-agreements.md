@@ -1,7 +1,7 @@
 ---
 title: Realizacja umów sprzedaży
 description: W tej procedurze pokazano, jak zrealizować zamówienie sprzedaży poprzez skojarzenie z nim umowy sprzedaży.
-author: omulvad
+author: Henrikan
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateRe
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e447cbf3d9780b3ccfccbbb065f9b6626d541dd119c733eb800ac285e1bbb0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fe26d528e42da61d47fd2448e071bf9025c08f5d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713566"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573400"
 ---
 # <a name="fulfill-sales-agreements"></a>Realizacja umów sprzedaży
 

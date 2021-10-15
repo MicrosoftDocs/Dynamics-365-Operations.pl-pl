@@ -1,7 +1,7 @@
 ---
 title: Omówienie zaopatrzenia i sourcingu
 description: Ten artykuł zawiera omówienie funkcji dostępnych w module Zaopatrzenie i sourcing.
-author: kamaybac
+author: Henrikan
 ms.date: 05/06/2020
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: eea24e23-a803-4de0-a218-6485757cde1b
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4ed0ffa7b1e0b48008d4192d9d9a471158dc430d2013740074a6563168ed7194
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d1e127fe96b29520022f18a5b02369d3593c46b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775634"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569536"
 ---
 # <a name="procurement-and-sourcing-overview"></a>Omówienie zaopatrzenia i sourcingu
 

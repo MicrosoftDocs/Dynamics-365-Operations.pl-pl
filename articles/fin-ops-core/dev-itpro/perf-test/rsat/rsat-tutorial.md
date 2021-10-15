@@ -1,24 +1,21 @@
 ---
 title: Samouczek narzędzia Regression Suite Automation Tool
 description: W tym temacie przedstawiono sposób użycia narzędzia Regression suite automation tool (RSAT). Opisuje on różne funkcje i zawiera przykłady korzystania z funkcji zaawansowanego tworzenia skryptów.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 21761
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714556"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556772"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Samouczek narzędzia Regression Suite Automation Tool
 
@@ -82,13 +79,19 @@ Po uruchomieniu przypadku testowego komunikat w pliku parametrów programu Excel
 
 Ta funkcja wykonuje zrzuty ekranu czynności, które zostały wykonane podczas rejestrowania zadań. Jest on przydatny do celów inspekcji lub debugowania.
 
-- Aby skorzystać z tej funkcji, należy otworzyć plik **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C\\: Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
+- Aby skorzystać z tej funkcji, podczas uruchamiania RSAT z interfejsem użytkownika, otwórz plik **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C\\: Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Po uruchomieniu przypadku testowego narzędzia RSAT generują migawki (obrazy) kroków w folderze odtwarzania przypadków testowych w katalogu roboczym. Jeśli używana jest starsza wersja narzędzia RSAT, obrazy są zapisywane w **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, utowrzony jest osobny folder dla każdego uruchomionego przypadku testowego.
+- Aby użyć tej funkcji podczas uruchamiania narzędzia RSAT przez interfejs wiersza polecenia (na przykład Azure DevOps), otwórz plik **Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe.config** w folderze instalacyjnym narzędzia RSAT (na przykład **C:\\Program Files (x86)\\Regression Suite Automation Tool**) i zmienić wartość w następujący sposób element z **false** na **true**.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Po uruchomieniu przypadków testowych program RSAT generuje migawki (obrazy) kroków i zapisuje je w folderze odtwarzania przypadków testowych w katalogu roboczym. W folderze odtwarzania zostanie utworzony oddzielny podfolder o nazwie **StepSnapshots**. Ten folder zawiera migawki dla uruchomionych przypadków testowych.
 
 ## <a name="assignment"></a>Przypisanie
 
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 W poniższym przykładzie użyto wywołania protokołu OData (Open Data Protocol) w celu znalezienia stanu zamówienia zakupu. Jeśli stan nie jest **fakturowany**, można na przykład wywołać przypadek testowy narzędzia RSAT, które zaksięguje fakturę.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

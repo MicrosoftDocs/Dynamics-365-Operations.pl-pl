@@ -1,22 +1,22 @@
 ---
 title: Oferty zapieczętowane na potrzeby ZO
 description: W tym temacie opisano sposób konfigurowania zapieczętowanego przetargu w celu zachowania odpowiedzi na oferty dostawcy w tajemnicy, dopóki nie zostaną one rozpieczętowane przez personel działu zakupów.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500641"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578087"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Oferty zapieczętowane na potrzeby ZO
 
@@ -53,7 +53,11 @@ Przed rozpoczęciem konfigurowania lub używania tej funkcji należy upewnić si
 Aplikacja Supply Chain Management używa kluczy szyfrowania, aby chronić wszystkie zapieczętowane oferty i przechowywać je w tajemnicy do odpowiedniego czasu. Korzysta z możliwości usługi Key Vault do generowania wymaganych kluczy i zarządzania nimi. W związku z tym należy skonfigurować połączenie z aplikacji Supply Chain Management do magazynu kluczy, aby włączyć system.
 
 > [!IMPORTANT]
-> Magazyn kluczy musi zostać utworzony w ramach subskrypcji platformy Azure należącej do organizacji (a nie subskrypcji, w której jest uruchomiona aplikacji Supply Chain Management).
+> Magazyny kluczy używane do licytowania zapieczętowanego muszą spełniać następujące wymagania:
+>
+> - Jeśli używasz piaskownicy do programowania i testowania, musisz mieć jeden dedykowany magazyn kluczy dla piaskownicy i osobny dla produkcji.
+> - Każdy magazyn kluczy musi zostać utworzony w ramach subskrypcji platformy Azure należącej do organizacji (a nie subskrypcji, w której jest uruchomiona aplikacji Supply Chain Management).
+> - Każdy klucz musi być używany wyłącznie w zapieczętowanych przetargach. Nie wolno używać magazynów kluczy z zapieczętowaną licytacją do żadnych innych celów.
 
 Każda oferta pobiera własny klucz tajny. Ten klucz jest używany za każdym razem, gdy użytkownik wyświetla, aktualizuje lub rozpieczętowuje przetarg.
 

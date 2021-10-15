@@ -4,18 +4,18 @@ description: W tym temacie opisano nowe i zmienione funkcje dostępne w rozwiąz
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500562"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579743"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management (10.0.21 październik 2021 r.)
 
@@ -26,20 +26,6 @@ W tym temacie wymieniono nowe oraz zmienione funkcje dostępne w programie Micro
 - **Wersja zapoznawcza wydania:** sierpień 2021 r.
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** wrzesień 2021 r.
 - **Ogólna dostępność wydania (samodzielna aktualizacja):** październik 2021 r.
-
-## <a name="known-deployment-issue"></a>Znany problem z wdrażaniem
-
-Podczas wdrażania wersji 10.0.21 w usłudze IaaS może pojawić się następujące ostrzeżenie dotyczące wdrożenia:
-
-**Kod ostrzeżenia:** 95017
-
-**Komunikat ostrzegawczy**: Wykonanie skryptu \[SetupDiagnostics\] nie powiodło się dla maszyny wirtualnej
-
-Wdrożenie będzie działało mimo ostrzeżenia. W usługach Lifecycle Services (LCS) mogą wystąpić jednak następujące znane problemy:
-
-- Na stronie **Monitorowanie środowiska** nie pojawi się link **Wyświetl szczegółowe informacje o wersji**, więc nie będzie można zobaczyć określonych wersji modułów zainstalowanych w danym środowisku. Bez tych danych kolejne poprawki mogą zakończyć się niepowodzeniem, ponieważ proces, który stosuje poprawki, używa tych danych, aby sprawdzić, czy wymagania wstępne wersji modułu są spełnione. Ponieważ nie jest możliwe użycie kompilacji PEAP/wersji zapoznawczej w produkcji lub zastosowanie poprawek, wpływ powinien być minimalny.
-- Karty **Metryki wydajności** i **Analiza indeksów** na stronie **Monitorowanie środowiska** w obszarze SQL Insights nie będą zawierać żadnych danych. Wszystkie inne funkcje **monitorowania środowiska** będą działać zgodnie z oczekiwaniami.
-- Strona **Pełna diagnostyka systemu** nie będzie dostępna. Skojarzone dane o stanie uruchomień modułu zbierającego dane w nocy i problemy wykryte przez jego zasady również nie będą wyświetlane.
 
 ## <a name="features-included-in-this-release"></a>Funkcje zawarte w tym wydaniu
 

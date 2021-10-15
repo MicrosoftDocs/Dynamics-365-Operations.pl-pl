@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8ae7bc937e916195b49df91be73ba906bcd2e593c9222cdc07adfcbf2396c05
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733692"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595393"
 ---
 # <a name="create-new-users"></a>Tworzenie nowych użytkowników
 
@@ -29,7 +29,7 @@ Aby można było uzyskać dostęp do aplikacji Finance and Operations, należy n
 Aby uzyskać informacje dotyczące sposobu kupowania i licencji na aplikacje Finance and Operations, zobacz [Podręcznik licencjonowania Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Przypisywanie licencji do użytkownika
-Administratorzy systemów mogą [przypisywać licencje do użytkowników](/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) w [centrum administracyjnym Microsoft 365](/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
+Administratorzy systemów mogą [przypisywać licencje do użytkowników](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) w [centrum administracyjnym Microsoft 365](/office365/admin/admin-overview/about-the-admin-center).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Dodaj użytkownika zewnętrznego w usłudze Azure AD i przypisz licencję 
 Użytkownicy zewnętrzni muszą być reprezentowani w katalogu dzierżawcy (Azure Active Directory (Azure AD)), aby można było im przypisać licencje. Użytkownicy zewnętrzni powinni zostać dodani do dzierżawy Azure AD jako użytkownik gość, a następnie przypisani do odpowiednich licencji. Wymaganie dotyczące aplikacji Finance and Operations jest takie, aby użytkownik-gość korzystał z usługi Azure AD. Aby uzyskać więcej informacji, odwiedź sekcję [Dodawanie użytkowników współpracy w module B2B Azure Active Directory w portalu Azure Portal](/azure/active-directory/b2b/add-users-administrator).

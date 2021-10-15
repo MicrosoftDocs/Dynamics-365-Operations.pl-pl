@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z funkcji śledzenia rozłożenia
 description: W tym artykule wyjaśniono, jak za pomocą funkcji śledzenia można badać przyczyny stojące za wynikiem rozłożenia zamówienia.
-author: roxanadiaconu
+author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c24a976063a6a87718368822b224290181147fa7c640f973184a234cc726ed3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c42eaf4c9218a186bca30848bc7b09c634f9a69e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762921"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567182"
 ---
 # <a name="use-tracing-for-explosion"></a>Korzystanie z funkcji śledzenia rozłożenia
 

@@ -1,7 +1,7 @@
 ---
 title: Zaopatrzenie — często zadawane pytania
 description: Ten temat zawiera odpowiedzi na często zadawane pytania dotyczące funkcji zaopatrzenia w aplikacji Supply Chain Management
-author: kamaybac
+author: Henrikan
 ms.date: 05/31/2021
 ms.topic: article
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yanansong
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 09c99b88bc47609158805cdba1291ae462cda178
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 99d44f2409d8207ed7a0fb1fc92a99de42240e86
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7477257"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577199"
 ---
 # <a name="procurement-faq"></a>Zaopatrzenie — często zadawane pytania
 

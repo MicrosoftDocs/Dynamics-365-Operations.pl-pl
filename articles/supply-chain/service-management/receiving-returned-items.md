@@ -1,7 +1,7 @@
 ---
 title: Odbieranie zwracanych towarów
 description: W momencie przyjazdu wysyłki zwrotu należy ją porównać z utworzonym już zamówieniem zwrotu.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 992dbcd85f613073999e0d03730b6dbeffa322806a3916478b323db401d254af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 748552e0f7c9e73a95e0d9fadb62bffea8d10314
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725585"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571408"
 ---
 # <a name="receive-returned-items"></a>Odbieranie zwracanych towarów 
 

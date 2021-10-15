@@ -1,7 +1,7 @@
 ---
 title: Szablony BOM
 description: Szablon listy składowej (BOM) zawiera standardową listę składników przedmiotów serwisu, które są regularnie serwisowane.
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab8586f81dc4a897d243b9d289109f039c390fcbf90c5c205125cf49eb5e8e39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724755"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571314"
 ---
-# <a name="template-boms"></a>Szablony BOM    
+# <a name="template-boms"></a>Szablony BOM
 
 [!include [banner](../includes/banner.md)]
-
 
 Szablon listy składowej (BOM) prezentuje standardową listę składników przedmiotów serwisu, które są regularnie serwisowane. Składniki wymienione w szablonie BOM są niezależnymi podskładnikami przedmiotu serwisu. Gdy szablon BOM zostanie zastosowany do przedmiotu serwisu, można zachować spis podksładników, które zostały wymienione w przedmiocie serwisu.
 
 Aby zastosować szablon BOM do umowy serwisowej lub zlecenia serwisowego, należy go dołączyć do relacji przedmiotu serwisu.
 
-
 > [!NOTE]
-> <P>Do jednego przedmiotu serwisu można zastosować tylko jeden szablon BOM.</P>
+> Do jednego przedmiotu serwisu można zastosować tylko jeden szablon BOM.
 
 ## <a name="create-a-template-bom"></a>Tworzenie szablonu BOM
 
@@ -41,8 +39,8 @@ Poniższa tabela zawiera informacje o różnych metodach tworzenia szablonów BO
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +68,6 @@ Poniższa tabela zawiera informacje o różnych metodach tworzenia szablonów BO
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Stosowanie szablonu BOM do umowy serwisowej lub zlecenia serwisowego
 
 Szablon BOM można zastosować do umowy serwisowej i/lub zlecenia serwisowego. Umowa serwisowa zazwyczaj dotyczy długoterminowej relacji z odbiorcą. Historia wymiany zarejestrowana w BOM serwisu zawiera dane, które są przydatne w umowie serwisowej.
@@ -81,7 +78,7 @@ Można również zastosować szablon BOM do zlecenia serwisowego w celu rejestro
 
 Historię wiersza BOM serwisu można kopiować między umowami serwisowymi. Skopiowanie historii serwisu między umowami pomaga zachować rejestr wymiany części.
 
-**Przykład**
+### <a name="example"></a>Przykład
 
 Powstała trzyletnia umowa serwisowa dotycząca serwisowania samochodu klienta. W tym okresie odbiorca przyzwyczaił się do dobrej opieki serwisowej oferowanej przez firmę. Z tego względu po wygaśnięciu umowy chce zawrzeć nową. Teraz można wynegocjować dla firmy lepsze warunki. Ponieważ rejestr wymienionych części może przydać się w przyszłości, kopiujesz historię BOM serwisu do nowej umowy.
 
@@ -99,26 +96,18 @@ Sposób wyświetlania informacji w wierszu BOM można zmieniać we wszystkich sz
 
 Aby korzystać z szablonów BOM, należy skonfigurować dwie numeracje. Jedna z nich musi dotyczyć szablonu BOM, a druga numeru wiersza historii BOM.
 
-
 > [!NOTE]
-> <P>Numeracje są używane do przydzielania identyfikatorów rekordom, które tego wymagają. Zanim będzie można przypisać numerację do szablonu BOM lub numer wiersza historii BOM, należy skonfigurować kody numeracji.</P>
-
+> Numeracje są używane do przydzielania identyfikatorów rekordom, które tego wymagają. Zanim będzie można przypisać numerację do szablonu BOM lub numer wiersza historii BOM, należy skonfigurować kody numeracji.
 
 ## <a name="set-up-number-sequences"></a>Ustawienie sekwencji numerów
 
-1.  Na stronie listy **Sekwencje numerów** utwórz numerację dla szablonów BOM i numeru wiersza historii BOM. 
-
-2.  Kliknij kolejno opcje **Zarządzanie serwisem** \> **Ustawienia** \> **Parametry modułu Zarządzanie serwisem**.
-
-3.  Kliknij przycisk **Sekwencje numerów**, a następnie wybierz kod numeracji dla odwołań do numeracji utworzonych w formularza **Sekwencje numerów**.
-
-4.  Zamknij formularz, aby zapisać zmiany.
-
+1. Na stronie listy **Sekwencje numerów** utwórz numerację dla szablonów BOM i numeru wiersza historii BOM.
+1. Wybierz **Zarządzanie serwisem** \> **Ustawienia** \> **Parametry modułu Zarządzanie serwisem**.
+1. Wybierz **Sekwencje numerów**, a następnie wybierz kod numeracji dla odwołań do numeracji utworzonych w formularza **Sekwencje numerów**.
+1. Zamknij formularz, aby zapisać zmiany.
 
 > [!NOTE]
-> <P>Numer wiersza historii BOM jest używany przez system do skojarzenia transakcji w historii BOM z umową serwisową lub zleceniem serwisowym. Numer nie jest wyświetlany w interfejsie użytkownika.</P>
-
-
+> Numer wiersza historii BOM jest używany przez system do skojarzenia transakcji w historii BOM z umową serwisową lub zleceniem serwisowym. Numer nie jest wyświetlany w interfejsie użytkownika.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
@@ -127,10 +116,5 @@ Aby korzystać z szablonów BOM, należy skonfigurować dwie numeracje. Jedna z 
 [Zarządzanie szablonami BOM w relacjach przedmiotów](manage-template-boms-on-object-relations.md)
 
 [Modyfikowanie BOM serwisu](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

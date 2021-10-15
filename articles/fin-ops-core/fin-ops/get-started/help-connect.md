@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343819"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594864"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurowanie środowiska pomocy dla aplikacji Finance and Operations
 
@@ -30,7 +30,7 @@ W tym temacie znajduje się omówienie składników systemu pomocy dla aplikacji
 
 ## <a name="help-architecture"></a>Architektura modułu Pomoc
 
-Aplikacje Finance and Operations oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [https://docs.microsoft.com/dynamics365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
+Aplikacje Finance and Operations oferują omówienia koncepcyjne i inne tematy opublikowane w witrynie [dokumentacja Microsoft Dynamics 365](/dynamics365/). Następnie można uzyskać dostęp do tej zawartości za pomocą okienka **Pomoc** w danym produkcie. Poniższa ilustracja pokazuje części Pomocy systemu.
 
 [![Architektura modułu Pomoc.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ System pomocy w danym produkcie pobiera artykuły z witryny docs.microsoft.com i
 ## <a name="adding-task-guides"></a>Dodawanie przewodników zadań
 
 > [!NOTE]
-> Karta **Przewodniki zadań** nie jest obecnie dostępna w aplikacjach Human Resources i Commerce. <!--We are currently working to enable this functionality in a future release.--> Natomiast przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Human Resources pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur aplikacji Human Resources oraz Commerce jest dostępna w witrynie [https://docs.microsoft.com/dynamics365](/dynamics365/).
+> Karta **Przewodniki zadań** nie jest obecnie dostępna w aplikacjach Human Resources i Commerce. <!--We are currently working to enable this functionality in a future release.--> Natomiast przewodniki po zadaniach w sekcji Rozpoczęcie pracy w module Human Resources pozostają dostępne i oferują podstawowe funkcje. Pomoc dotycząca procedur aplikacji Human Resources oraz Commerce jest dostępna w witrynie [dokumentacja Microsoft Dynamics 365](/dynamics365/).
 
 Na stronie **Parametry systemowe** administratorzy systemu mogą konfigurować dostęp do odpowiednich bibliotek przewodników zadań na potrzeby implementacji.
 

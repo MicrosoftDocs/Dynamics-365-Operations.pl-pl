@@ -1,7 +1,7 @@
 ---
 title: Omówienie integracji z Microsoft Dynamics 365 Field Service
 description: Ten temat zawiera omówienie integracji z programem Microsoft Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761765"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566462"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Omówienie integracji z Microsoft Dynamics 365 Field Service
 
@@ -58,7 +58,7 @@ Dodatkowe funkcje w tej drugiej fazie koncentrują się na zapewnieniu serwisant
 - Projekty Supply Chain Management powiązane Dynamics 365 Field Service z zleceniami pracy
 - Zlecenia w rozwiązaniu Dynamics 365 Field Service z łączami do projektów Supply Chain Management stosują ten numer projektu do zamówień sprzedaży , aby umożliwić fakturowanie z projektu. 
 
-![Synchronizacja procesów biznesowych między rozwiązaniami Supply Chain Management i Field Service.](./media/FSv2overview.png)
+![Synchronizacja procesów biznesowych między Supply Chain Management i Field Service, w tym informacje o zapasach i projektach.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Druga faza integracji między programami Field Service i Supply Chain Management umożliwia synchronizowanie następujących szablonów:
 - Magazyny (Supply Chain Management do Field Service) — magazyny z modułu Supply Chain Management do Field Service [zapytanie zaawansowane] 

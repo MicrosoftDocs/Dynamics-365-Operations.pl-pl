@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dcb253fabbb183003048119c7a627bf0ab960050
-ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
+ms.openlocfilehash: a3cc431307d840d393a454e91f202c07c38d2512
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7429243"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559346"
 ---
 # <a name="payroll-fixed-compensation-plan"></a>Plan stałych wynagrodzeń listy płac
 
@@ -42,7 +42,7 @@ Nazwa fizyczna: mshr_payrollfixedcompensationplanentity.
 | **Identyfikator stanowiska**</br>mshr_positionid</br>*Ciąg* | Tylko do odczytu | Identyfikator stanowiska powiązany z rejestracją pracownika i planu stałych wynagrodzeń. |
 | **Data wejścia w życie**</br>mshr_validfrom</br>*Przesunięcie daty i godziny* |  Tylko do odczytu | Data, od której obowiązuje stałe wynagrodzenie pracownika.  |
 | **Data ważności**</br>mshr_validto</br>*Przesunięcie daty i godziny* | Tylko do odczytu | Data, do której obowiązuje stałe wynagrodzenie pracownika. |
-| **Częstotliwość wypłat**</br>mshr_payfrequency</br>*Ciąg* | Tylko do odczytu | Częstotliwość wypłat dla pracownika.  |
+| **Częstotliwość wypłat**</br>mshr_payfrequency</br>*Ciąg* | Tylko do odczytu | Identyfikator [częstotliwości wypłat wynagrodzenia](hr-admin-integration-payroll-api-compensation-pay-frequency.md) dla danej stawki płacy. |
 | **Waluta**</br>mshr_currency</br>*Ciąg* | Tylko do odczytu | Waluta zdefiniowana dla stałego planu wynagrodzeń. |
 | **Jednostka Plan stałych wynagrodzeń listy płac**</br>mshr_payrollfixedcompensationplanentityid</br>*GUID* | Wygenerowany przez system | Wygenerowana przez system wartość identyfikatora GUID w celu unikatowego zidentyfikowania planu wynagrodzeń. |
 

@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767958"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592635"
 ---
 # <a name="confirm-and-transfer"></a>Potwierdź i przenieś
 
@@ -45,8 +45,8 @@ Można dzielić tylko ładunki spełniające wszystkie następujące kryteria:
 
 - Co najmniej jeden wiersz ładunku ma pobrane ilości.
 - Stan ładunku jest mniejszy niż załadowany.
-- Brak danych wiersza ładunku. (Te dane są tworzone w ramach konsolidacji numerów identyfikacyjnych w lokalizacji przemieszczania, a funkcja *Potwierdź i prześlij* nie obsługuje konsolidacji numeru identyfikacyjnego.)
-- Żadne zapasy nie oczekują obecnie na pakowanie w lokalizacji pakowania. (Funkcja *Potwierdź i prześlij* nie obsługuje zapasów, które zostały pobrane do stacji pakowania, ale nie zostały jeszcze zapakowane).
+- Brak danych wiersza ładunku. (Te dane są tworzone w ramach konsolidacji numerów identyfikacyjnych w lokalizacji przemieszczania, a funkcja Potwierdź i prześlij nie obsługuje konsolidacji numeru identyfikacyjnego.)
+- Żadne zapasy nie oczekują obecnie na pakowanie w lokalizacji pakowania. (Funkcja *potwierdzania i przenoszenia* nie obsługuje zapasów, które zostały odebrane do stacji pakowania, ale nie zostały jeszcze zapakowane, chyba że zapakowane kontenery zostaną umieszczone w lokalizacjach przemieszczania z utworzoną pracą załadunkową)
 
 > [!NOTE]
 > Ta funkcja różni się od funkcji transportu ładunku, która powinna być używana w magazynach, które nigdy nie mogą planować i tworzyć ładunków przed pobraniem, ale w ten sposób po zakończeniu pobierania zostanie załadowana dostępna przestrzeń transportowa.

@@ -2,19 +2,19 @@
 title: Opis usługi dla aplikacji Finance and Operations
 description: Ten temat zawiera opis usługi dla aplikacji Finance and Operations.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472512"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581823"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Opis usługi dla aplikacji Finance and Operations
 
@@ -28,7 +28,7 @@ Aplikacje Finance and Operations są produktami planowania zasobów przedsiębio
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Wraz z [analizą biznesową](/power-bi/fundamentals/power-bi-service-overview), [Infrastrukturą](https://azure.microsoft.com/global-infrastructure/), [środowiskiem obliczeniowym](/azure/service-fabric/service-fabric-overview) i [usługami bazy danych](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) te aplikacje pozwalają organizacjom wykonywać właściwe dla danej branży i operacyjne procesy biznesowe. Klienci obsługiwani przez partnerów wdrożeniowych sami określają konfigurację logiki aplikacji biznesowej, która najlepiej pasuje do ich indywidualnych procesów biznesowych. Funkcje i procesy biznesowe mogą być wzmacniane lub rozszerzane za pomocą następujących rozwiązań lub ich kombinacji:
+Wraz z [analizą biznesową](/power-bi/fundamentals/power-bi-service-overview), [Infrastrukturą](https://azure.microsoft.com/global-infrastructure/), [środowiskiem obliczeniowym](/azure/service-fabric/service-fabric-overview) i [usługami bazy danych](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) te aplikacje pozwalają organizacjom wykonywać właściwe dla danej branży i operacyjne procesy biznesowe. Klienci obsługiwani przez partnerów wdrożeniowych sami określają konfigurację logiki aplikacji biznesowej, która najlepiej pasuje do ich indywidualnych procesów biznesowych. Funkcje i procesy biznesowe mogą być wzmacniane lub rozszerzane za pomocą następujących rozwiązań lub ich kombinacji:
 
 - Wbudowane [funkcje personalizacji](personalize-user-experience.md)
 - Narzędzia [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)
@@ -197,17 +197,17 @@ W poniższej tabeli opisano typowe scenariusze i działania dotyczące usługi. 
 | Aprowizacja wszystkich wystąpień produkcyjnych i nieprodukcyjnych. | X | |
 | Sprawdzenie poprawności wdrożonych wystąpień produkcyjnych i nieprodukcyjnych. | | X |
 | **Aktualizacje usługi** | |
-| Firma Microsoft stosuje aktualizacje usługi do wyznaczonych wystąpień nieprodukcyjnych i produkcyjnych. | X | X |
-| Pobranie aktualizacji z usługi LCS, zdefiniowanie, opracowanie i przetestowanie aktualizacji, a następnie dostarczenie pakietu aktualizacji kodu z powrotem do usługi LCS. | | X |
-| Zażądanie zastosowania aktualizacji rozszerzenia do wystąpienia produkcyjnego. | | X |
+| Zastosuj aktualizacje usług do wyznaczonych wystąpień nieprodukcyjnych i produkcyjnych. | X | |
+| Ręcznie zastosuj aktualizacje usługi z usługi LCS do wystąpień piaskownicy. Zdefiniuj, opracuj, przetestuj aktualizację i podaj pakiet aktualizacji kodu z powrotem do usługi LCS. | | X |
+| Aktualizacje rozszerzeń żądań i harmonogramów są stosowane do wystąpienia produkcyjnego. | | X |
 | Utworzenie kopii zapasową kodu i danych wystąpienia produkcyjnego przed zastosowaniem jakichkolwiek aktualizacji. | X | |
 | W przypadku awarii należy wycofać wystąpienie produkcyjne za pomocą kopii zapasowej kodu i danych. | X | |
 | **Zarządzanie danymi (kopia zapasowa, przywracanie i aktualizowanie)** | | |
 | Wykonanie kopii zapasowej bazy danych. | X | |
 | Określenie planu wysokiej dostępności i odzyskiwania po awarii. | X | |
-| Monitorowanie wydajności bazy danych wystąpienia produkcyjnego. | X | X |
-| Dostrojenie wydajności bazy danych wystąpienia produkcyjnego. | X | X |
-| Uruchomienie kopiowania bazy danych wystąpienia produkcyjnego do wystąpienia nieprodukcyjnego. | | X |
+| Monitorowanie wydajności bazy danych wystąpienia produkcyjnego. | X | |
+| Dostrojenie wydajności bazy danych wystąpienia produkcyjnego. | X | |
+| Wykonaj odświeżenie bazy danych instancji produkcyjnej do punktu w czasie do instancji nieprodukcyjnej. | | X |
 | **Aktualizowanie infrastruktury** | | |
 | Zaplanowanie regularnych aktualizacji infrastruktury. | X | |
 | **Skalowanie w górę i w dół (użytkownicy, przestrzeń dyskowa i wystąpienia)** | | |
@@ -215,7 +215,7 @@ W poniższej tabeli opisano typowe scenariusze i działania dotyczące usługi. 
 | Aktualizacja zmian użycia w narzędziu do szacowania zapotrzebowania na subskrypcje usługi LCS. | | X |
 | Zgłaszanie wszelkich istotnych problemów z wydajnością, które mają wpływ na korzystanie z usługi. | | X |
 | Aktywne zarządzanie zasobami wymaganymi przez daną usługę. | X | |
-| Badanie zdarzeń i rozwiązywanie problemów. | X | X |
+| Badanie zdarzeń i rozwiązywanie problemów. | X | |
 | **Zabezpieczenia (dostęp użytkownika)** | | |
 | Zapewnienie dostępu użytkowników do usługi. | | X |
 | Zapewnienie dostępu do projektu usługi LCS w celu zarządzania i obsługi wystąpień, które zostały wdrożone za pomocą usługi LCS. | | X |

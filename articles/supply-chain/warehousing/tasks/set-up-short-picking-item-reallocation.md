@@ -1,7 +1,7 @@
 ---
 title: Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
 description: Ten temat pokazuje, jak umożliwić pracownikom magazynu szybkie znajdowanie alternatywnych lokalizacji, jeżeli nie ma wystarczających zapasów w lokalizacji, do której zostali skierowani.
-author: ShylaThompson
+author: Mirzaab
 ms.date: 06/29/2020
 ms.topic: business-process
 ms.prod: ''
@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84cefe723cff9566ed3004e49f1e829020bc0d416cd0b29258c21222fbeb05ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7fe17246037a35e44d12476f184af3bd4c806022
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741891"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565239"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Konfigurowanie zmiany alokacji pozycji na potrzeby pobierania w niedomiarze
 

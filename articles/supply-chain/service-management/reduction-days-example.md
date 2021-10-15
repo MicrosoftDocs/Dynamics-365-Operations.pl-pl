@@ -1,7 +1,7 @@
 ---
 title: Przykład dni redukcji
 description: Przykład dni redukcji.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,30 +15,29 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba0cfde66476d052f0c9a048977026341a5295c21603385c5b3774a15be5232
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97fb032d02df1dbedaeccec14496cb1d63e8cf70
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727805"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567950"
 ---
-# <a name="reduction-days-example"></a>Przykład dni redukcji 
+# <a name="reduction-days-example"></a>Przykład dni redukcji
 
 [!include [banner](../includes/banner.md)]
-
 
 Utworzono transakcję dla subskrypcji utrzymania wykupionej przez klienta, jak to pokazano w poniższej tabeli.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -66,21 +65,20 @@ Utworzono transakcję dla subskrypcji utrzymania wykupionej przez klienta, jak t
 </tbody>
 </table>
 
-
 Klient zgłasza, że nie potrzebuje serwisu przez dwa dni (10 i 11 marca). Zgadzasz się na ograniczenie subskrypcji w tych dniach.
 
 Tworzysz nową transakcję typu **Dni redukcji**, jak to opisano w poniższej tabeli.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -108,16 +106,10 @@ Tworzysz nową transakcję typu **Dni redukcji**, jak to opisano w poniższej ta
 </tbody>
 </table>
 
-
 W czasie fakturowania transakcji za miesiąc marzec 2011 roku cena sprzedaży 200 EUR zostaje obniżona o 12,90 EUR. Należność z tytułu transakcji subskrypcji wynosi zatem 187,10 EUR, a łączna wartość faktury dla dwóch transakcji wynosi 187,10 EUR.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 
 [Zmniejszanie dni na opłaty subskrypcji](reduce-the-days-on-subscription-fees.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

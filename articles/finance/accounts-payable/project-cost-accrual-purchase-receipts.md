@@ -1,7 +1,7 @@
 ---
 title: Naliczanie kosztów projektu w przyjęciach zakupów
 description: W tym temacie opisano, jak koszty projektu naliczone z przyjęć zakupów można śledzić w Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: sunfzam
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ca04760c682969a409943e66f246dfa8a3bf2872183a0197c8c460cf4398c483
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7ae2f57e0104a30492363f1576962d36a2a1b04b
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737290"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595237"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Naliczanie kosztów projektu w przyjęciach zakupów
 
@@ -32,7 +32,7 @@ Faktury za projekt często przychodzą później niż są dostarczane towary i u
 
 Ilustruje to przykładowy scenariusz opisany poniżej. 
 
-Contoso Consulting rozpoczęła nowy projekt wdrożenia chmury. Utworzono zamówienie zakupu na zakup komputera do projektu. Komputer będzie kosztować 1500 USD, a usługi instalacyjne dodatkowe 150 USD. Dostawca dostarczył i zainstalował komputer, ale faktura jeszcze nie dotarła do Contoso Consulting. Kierownik projektu chciałby widzieć naliczenie kosztów projektu w kwocie 1650 USD, zanim faktura zostanie dostarczona. Ponadto koszt powinien znaleźć odzwierciedlenie w sprawozdaniu finansowym firmy na koniec miesiąca. 
+Firma Contoso Consulting rozpoczęła nowy projekt wdrożenia chmury. Utworzono zamówienie zakupu na zakup komputera do projektu. Komputer będzie kosztować 1500 USD, a usługi instalacyjne dodatkowe 150 USD. Dostawca dostarczył i zainstalował komputer, ale faktura jeszcze nie dotarła do Contoso Consulting. Kierownik projektu chciałby widzieć naliczenie kosztów projektu w kwocie 1650 USD, zanim faktura zostanie dostarczona. Ponadto koszt powinien znaleźć odzwierciedlenie w sprawozdaniu finansowym firmy na koniec miesiąca. 
 
 Dla celów sprawozdawczości naliczony koszt musi być zarejestrowany na poziomach finansowym i projektu. Fiinansową aktualizację przyjęcia produktu można śledzić w kategoriach towaru i zaopatrzenia. 
 

@@ -1,7 +1,7 @@
 ---
 title: Włączanie zarządzania kontrolą jakości i niezgodnością
 description: Ten temat zawiera omówienie procesu konfigurowania funkcji zarządzania kontrolą jakości i niezgodnościami w systemie Microsoft Dynamics 365 Supply Chain Management.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b202d76e4b5bc0dfe9f0572274b3453abca58a435b70e96874155f867114a2aa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c2c8b7e9a1a8d7692e1d2215e38de1b0f4d2d82
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717347"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567422"
 ---
 # <a name="enable-quality-and-nonconformance-management"></a>Włączanie zarządzania kontrolą jakości i niezgodnością
 
