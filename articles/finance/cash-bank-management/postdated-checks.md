@@ -1,7 +1,7 @@
 ---
 title: Czeki postdatowane
 description: Ten artykuł zawiera informacje o obsłudze czeków postdatowanych w Microsoft Dynamics 365 Finance. Czeki postdatowane są wystawiane do celów wykonywania i odbierania płatności w przyszłości. W związku z tym czeki można zrealizować dopiero od określonego dnia.
-author: ShylaThompson
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc29d11b61bf794fe5afc8e0def61a89065a5ef1dea81e3384c1f5a950af281
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f5c4d641a3d3ccc326ee56ce7bd05c891b3fa8a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749011"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595469"
 ---
 # <a name="postdated-checks"></a>Czeki postdatowane
 

@@ -1,7 +1,7 @@
 ---
 title: Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
 description: W tym temacie objaśniono sposób integrowania modułu zarządzania składnikami majątku w aplikacji Microsoft Dynamics 365 Supply Chain Management z aplikacją Dynamics 365 Guides. Pozwoli to na korzystanie z zalet przewodników po rzeczywistości mieszanej w codziennych przepływach pracy dotyczących usług i konserwacji.
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 94d98aa011d0db3991c14596f5d6bdecc0fb6c831915ae124f623fa57277fcfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721542"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568262"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrowanie aplikacji Dynamics 365 Supply Chain Management (zarządzanie składnikami majątku) z aplikacją Dynamics 365 Guides
+
+[!include [banner](../includes/banner.md)]
 
 Możesz zintegrować moduł **Zarządzanie składnikami majątku** w aplikacji Microsoft Dynamics 365 Supply Chain Management z aplikacją Dynamics 365 Guides, aby korzystać z zalet przewodników po rzeczywistości mieszanej w codziennych przepływach pracy dotyczących usług i konserwacji. Jeśli przewodnik został skojarzony ze zleceniem pracy modułu Zarządzanie składnikami majątku, pracownik, który otworzy listę kontrolną konserwowanego składnika majątku ze zlecenia pracy w aplikacji mobilnej Supply Chain Management (Dynamics 365), zobaczy, że przewodnik jest dostępny. Pracownik może następnie znaleźć i otworzyć przewodnik w aplikacji Dynamics 365 Guides dla urządzenia HoloLens.
 

@@ -1,8 +1,8 @@
 ---
 title: Prognozowanie przepływów pieniężnych
 description: Ten temat zawiera omówienie procesu prognozowania przepływów pieniężnych. Wyjaśniono również, jak prognozowanie przepływów pieniężnych jest zintegrowane z innych modułami w systemie.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779453"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547962"
 ---
 # <a name="cash-flow-forecasting"></a>Prognozowanie przepływów pieniężnych
 
@@ -83,7 +83,10 @@ Możesz zastąpić domyślną wartość w polu **Konto płynności** dla konkret
 
 ### <a name="budgeting"></a>Budżetowanie
 
-Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach przepływów pieniężnych. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Budżetowanie** zaznacz modele budżetu do uwzględnienia w prognozie. Domyślnie nowe wpisy do rejestru budżetu są uwzględniane w prognozach po włączeniu opcji wykorzystywania modelu budżetu w prognozowaniu przepływów pieniężnych. Uwzględnianie w prognozowaniu przepływów pieniężnych można zastępować na poziomie poszczególnych wpisów do rejestru budżetu.
+Budżety tworzone na podstawie modeli budżetu można uwzględniać w prognozach przepływów pieniężnych. Na stronie **Ustawienia prognozy przepływów pieniężnych** na karcie **Budżetowanie** zaznacz modele budżetu do uwzględnienia w prognozie. Domyślnie nowe wpisy do rejestru budżetu są uwzględniane w prognozach po włączeniu opcji wykorzystywania modelu budżetu w prognozowaniu przepływów pieniężnych.
+
+Wpisy do rejestru budżetowego mogą być indywidualnie uwzględniane w prognozie przepływów pieniężnych poprzez personalizację. Podczas dodawania kolumny „Uwzględnij w prognozach przepływów pieniężnych” na stronie **wpisu do rejestru budżetu** system zastąpi ustawienia na stronie **ustawień prognozy przepływów pieniężnych**, aby uwzględnić w prognozie pojedynczy wpis do rejestru budżetu.
+
 
 ### <a name="inventory-management"></a>Zarządzanie zapasami
 
@@ -144,7 +147,7 @@ Obszar roboczy **Przegląd środków pieniężnych — wszystkie firmy** pokazuj
 
 Obszar roboczy **Przegląd środków pieniężnych — bieżąca firma** przedstawia analizy prognostyczne przepływów pieniężnych w walucie rozliczeniowej zdefiniowanej dla firmy. Walutę rozliczeniową używaną do analiz definiuje się na stronie **Księga**. Ten obszar roboczy zawiera przegląd prognozowania przepływów pieniężnych i sald kont bankowych dla bieżącej firmy. Wykres przychodów i rozchodów gotówkowych obrazuje przyszłe przepływy pieniężne i salda w walucie rozliczeniowej oraz dostarcza szczegółowych informacji o prognozowanych transakcjach. Widać także prognozowane salda w walutach.
 
-Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz temat [Przegląd środków pieniężnych — zawartość usługi Power BI](./cash-overview-power-bi-content.md).
+Aby uzyskać więcej informacji na temat analiz prognostycznych przepływów pieniężnych, zobacz [Przegląd środków pieniężnych — zawartość usługi Power BI](Cash-Overview-Power-BI-content.md).
 
 Ponadto można wyświetlać dane prognozowania przepływów pieniężnych dla określonych kont, zamówień i towarów na następujących stronach:
 

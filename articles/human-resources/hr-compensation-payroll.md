@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483789"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559614"
 ---
 # <a name="ready-to-pay"></a>Gotowe do wypłaty
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Jeśli chcesz oznaczyć pracownika jako gotowego do zapłaty, musisz najpierw włączyć funkcję **(wersja zapoznawcza) integracji listy płac** w zarządzaniu funkcjami. Aby uzyskać więcej informacji na temat włączania funkcji w wersji zapoznawczej, zobacz temat [Zarządzanie funkcjami](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Jeśli jedna z tych walidacji się nie powiedzie, nie możesz oznaczyć pracowni
 
 Jeśli pole **Gotowe do zapłaty** to **Nie**, oznacza to, że należy wykonać akcję, aby upewnić się, że profil pracownika jest ukończony. Nie zatrzyma to ujawnienia danych w jakiejkolwiek jednostce danych. 
 
-## <a name="known-issues"></a>Znane problemy
+## <a name="process-automation"></a>Automatyzacja procesu
 
-- Należy wyłączyć funkcję **Usprawniony wpis pracownika** w zarządzaniu funkcjami. Kafelki w obszarze roboczym zarządzania wynagrodzeniami nie będą działać poprawnie, jeśli użyjesz tej funkcji.
-- W formularzu **pracownika** karta **Lista płac**, grupa **Gotowe do zapłaty** jest dostępna dla każdej roli użytkownika. 
+Możesz zautomatyzować walidację wszystkich pracowników, korzystając z [automatyzacji procesów](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation). W obszarze roboczym **Zarządzanie wynagrodzeniami** przejdź do **Łącza** \> **Parametry** \> **Automatyzacje procesów**.
 
 ## <a name="see-also"></a>Informacje dodatkowe
 

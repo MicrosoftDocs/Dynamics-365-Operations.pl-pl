@@ -2,7 +2,7 @@
 title: Konfigurowanie kodów podatków
 description: W tym temacie wyjaśniono sposób konfigurowania kodów podatków w Dynamics 365 Finance.
 author: twheeloc
-ms.date: 08/29/2018
+ms.date: 09/27/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5ce2c8d9a117871191dd1c2d32d822bcc72d76fabaec146d9b8c27fc85dc058
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719205"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562109"
 ---
 # <a name="set-up-sales-tax-codes"></a>Konfigurowanie kodów podatków
 
@@ -38,11 +38,19 @@ W zadaniu wykorzystano firmę demonstracyjną USMF.
 8. W **okienku akcji** u góry interfejsu wybierz **Kod podatku**.
 9. Wybierz **Wartości**.
 10. Wprowadź wartość dla tego kodu podatków w kolumnie **Wartość**.
-    - Jeśli na skróconej karcie **Obliczanie** w polu Podstawa opodatkowania wybrano opcję Kwota na jednostkę, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.  Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.     
+
+    Jeśli na skróconej karcie **Obliczanie** w polu **Podstawa opodatkowania** wybrano opcję **Kwota na jednostkę**, w celu obliczenia kwoty podatku wartość będzie mnożona przez ilość w transakcji.  Jeśli kod podatku nie dotyczy podatku jednostkowego, w celu obliczenia kwoty podatku wartość jest procentem stosowanym do podstawy opodatkowania dla tego kodu podatku.     
+
 11. Wybierz opcję **Zapisz**.
 12. Zamknij stronę.
 13. Wybierz opcję **Zapisz**.
 
+Począwszy od Microsoft Dynamics 365 Finance w wersji 10.0.22, jeśli korzystasz z [Usługi podatkowe](../../localizations/global-tax-calcuation-service-overview.md), i [**Obsługa wielu numerów rejestracyjnych VAT**](../../localizations/emea-multiple-vat-registration-numbers.md) funkcja jest włączona w **Zarządzaniu funkcjami** przestrzeni roboczej, możesz użyć pola **Typ podatku** określającego rodzaj kodu podatku. Dostępne są następujące wartości:
 
+- Standardowy podatek VAT
+- Zredukowany podatek VAT
+- Podatek VAT 0%
+- Akcyza
+- Inne
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

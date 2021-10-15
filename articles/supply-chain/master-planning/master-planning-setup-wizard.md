@@ -1,7 +1,7 @@
 ---
 title: Kreator konfiguracji planowania głównego
-description: W tym temacie opisano różne ważne strategie i parametry używane do konfigurowania planowania głównego.
-author: t-benebo
+description: W tym temacie opisano sposób uruchamiania kreatora konfiguracji planowania głównego w celu skonfigurowania planowania głównego.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 26dea90a208eddc39b9a92d534fbc3a5242da29f4839a7f0e427b0efb03701b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b825858653599e8474a6fbd54b682c4fa0118053
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767467"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577511"
 ---
 # <a name="master-planning-setup-wizard"></a>Kreator konfiguracji planowania głównego
 
@@ -135,7 +135,7 @@ Contoso Manufacturer jest firmą produkcyjną produkującą głośniki. Kupuje o
 - Zakład produkcyjny produkuje produkty końcowe. Posiada określoną liczbę frezarek i wiertarek, które są używane do obróbki komponentów. Poszczególne komponenty muszą być przetwarzane przez te maszyny.
 - Jest wielu dostawców. Średni czas realizacji wynosi jeden tydzień. Grupa elementów od tego samego dostawcy będzie miała czas realizacji siedmiu tygodni.
 
-W kreatorze są wprowadzane następujące wartości dla  Contoso Manufacturer:
+W kreatorze są wprowadzane następujące wartości dla Contoso Manufacturer:
 
 - **Zapotrzebowanie:**
 
@@ -153,7 +153,7 @@ W kreatorze są wprowadzane następujące wartości dla  Contoso Manufacturer:
     - **Pytanie:** „Czy trzeba zaplanować operacje podzielone na poszczególne zadania?”
     - **Odpowiedź:** „Tak”.
 
-    Contoso Manufacturing musi zaplanować i ustawić harmonogram poszczególnych zadań, które będą wykonywane na wydziale produkcyjnym. W związku z tym będzie używać planowania zadań.
+    Firma Contoso Manufacturing musi zaplanować i ustawić harmonogram poszczególnych zadań, które będą wykonywane na wydziale produkcyjnym. W związku z tym będzie używać planowania zadań.
 
 - **Zdolności produkcyjne:**
 
@@ -191,7 +191,7 @@ W kreatorze są wprowadzane następujące wartości dla Contoso Retailer:
     - **Pytanie:** „Czy chcesz użyć planu prognozy w planowaniu głównym, aby planowane zamówienia były sugerowane do spełniania prognozowanego popytu?”
     - **Odpowiedź:** „Tak, zgodnie z definicją w planie głównym”.
 
-    Contoso uwzględniła prognozę popytu, aby przewidzieć swoją sprzedaż. Dlatego planowanie główne musi zalecać planowane zamówienia celem spełnienia prognozy.
+    Firma Contoso uwzględniła prognozę popytu, aby przewidzieć swoją sprzedaż. Dlatego planowanie główne musi zalecać planowane zamówienia celem spełnienia prognozy.
 
 - **Akceptacja:**
 

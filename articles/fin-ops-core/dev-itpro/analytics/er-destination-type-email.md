@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343867"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595210"
 ---
 # <a name="email-er-destination-type"></a>Typ miejsca docelowego raportowania elektronicznego (ER)
 
@@ -75,7 +75,7 @@ Możesz określić nadawcę wiadomości e-mail i adresatów wiadomości e-mail. 
 >
 > Kiedy miejsce docelowe dla wiadomości e-mail jest oferowane do modyfikacji w [uruchomieniu](electronic-reporting-destinations.md#security-considerations), pole **Od** jest widoczne tylko dla użytkowników, którzy mają uprawnienie zabezpieczenia `ERFormatDestinationSenderEmailMaintain` **Zachowaj adres e-mail nadawcy dla formatu ER miejsca docelowego**.
 >
-> Jeśli pole **Od** jest skonfigurowane do używania adresu e-mail innego niż adres bieżącego użytkownika, uprawnienie **Wyślij jako** lub **Wyślij w imieniu** musi być poprawnie [ustawione](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) z wyprzedzeniem. W przeciwnym razie w czasie wykonywania zostanie zgłoszony następujący wyjątek: „Nie można wysłać wiadomości e-mail jako \<from email account\> z konta \<current user account\>, sprawdź uprawnienia „Wyślij jako na \<from email account\>”.
+> Jeśli pole **Od** jest skonfigurowane do używania adresu e-mail innego niż adres bieżącego użytkownika, uprawnienie **Wyślij jako** lub **Wyślij w imieniu** musi być poprawnie [ustawione](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) z wyprzedzeniem. W przeciwnym razie w czasie wykonywania zostanie zgłoszony następujący wyjątek: „Nie można wysłać wiadomości e-mail jako \<from email account\> z konta \<current user account\>, sprawdź uprawnienia „Wyślij jako na \<from email account\>”.
 
 Pole **Od** można skonfigurować tak, aby zwracać więcej niż jeden adres e-mail. W takim przypadku pierwszy adres na liście jest używany jako adres nadawcy e-mail.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718364"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595269"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Projektowanie nowej konfiguracji ER w celu generowania raportów w formacie programu Word
 
@@ -46,7 +46,7 @@ Możesz dodać zagnieżdżone elementy **Excel\\Zakres** i **Excel\\Komórka** d
 
 ![Dodawanie zagnieżdżonych elementów na stronie Projektant formatów.](./media/er-design-configuration-word-image4.gif)
 
-Podczas zapisywania zmian w formacie ER w czasie projektowania hierarchiczna struktura formatu jest przechowywana w dołączonym szablonie programu Word jako [niestandardowa część XML](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) o nazwie **Raport**. Musisz uzyskać dostęp do zmodyfikowanego szablonu, pobrać go z aplikacji Finance, zapisać lokalnie i otworzyć w aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono lokalnie przechowywany szablon przykładowy dla raportu kontrolnego zawierającego niestandardową część XML o nazwie **Raport**.
+Podczas zapisywania zmian w formacie ER w czasie projektowania hierarchiczna struktura formatu jest przechowywana w dołączonym szablonie programu Word jako [niestandardowa część XML](/visualstudio/vsto/custom-xml-parts-overview) o nazwie **Raport**. Musisz uzyskać dostęp do zmodyfikowanego szablonu, pobrać go z aplikacji Finance, zapisać lokalnie i otworzyć w aplikacji klasycznej Word. Na poniższej ilustracji przedstawiono lokalnie przechowywany szablon przykładowy dla raportu kontrolnego zawierającego niestandardową część XML o nazwie **Raport**.
 
 ![Wyświetlanie przykładowego szablonu raportu w aplikacji klasycznej Word.](./media/er-design-configuration-word-image5.gif)
 

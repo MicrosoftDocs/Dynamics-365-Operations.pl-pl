@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia z Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386748"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559566"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Usunięte lub wycofane funkcje w aplikacji Dynamics 365 Commerce
 
@@ -36,6 +36,18 @@ Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych fun
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.21
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Ustawienie obsługi nakładających się rabatów w parametrach Commerce
+
+Ustawienie **obsługi nakładających się rabatów** na stronie **Parametry commerce** jest przestarzałe w wersji 10.0.21 programu Commerce. W przyszłości aparat cenowy Commerce będzie używać jednego algorytmu, aby określić optymalną kombinację nakładających się rabatów.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | <p>Ustawienie **obsługi nakładających się rabatów** w parametrach Commerce określa sposób wyszukiwania i określania optymalnej kombinacji nakładających się rabatów. Obecnie dostępne są trzy opcje:<p><ul><li> **Najlepsza wydajność** — w tej opcji są używane zaawansowane algorytmy heurystyczne oraz metoda [klasyfikacji wartości marginalnej](../optimal-combination-overlapping-discounts.md) w celu ustalania priorytetów, oceniania i ustalania najlepszych kombinacji rabatów na czas.</li><li>**Obliczanie bilansowe** — w bieżącej podstawie kodu ta opcja działa tak samo jak opcja **Najlepsza wydajność**. W związku z tym jest to zasadniczo zduplikowana opcja.</li><li>**Wyczerpujące obliczenia** — w tej opcji jest używany stary algorytm, który obejmuje wszystkie możliwe kombinacje rabatów podczas obliczania ceny. W przypadku zamówień o dużych wierszach i ilościach ta opcja może powodować problemy z wydajnością.</li></ul><p>Aby uprościć konfigurację, zwiększyć wydajność i zmniejszyć liczbę zdarzeń spowodowanych starym algorytmem, całkowicie usuniemy ustawienie **obsługi nakładających się rabatów** i zaktualizujemy wewnętrzną logikę aparatu cenowego Commerce, tak aby teraz był używany tylko zaawansowany algorytm (tj. algorytm używany przez opcję **Najlepsza wydajność**).</p> |
+| **Zamieniona przez inną funkcję?**   | Nr Zaleca się, aby przed usunięciem tej funkcji organizacje, które korzystają z opcji **Obliczanie bilansowe** lub **Wyczerpująca obliczanie**, przełączyły się na opcję **Wyczerpujące obliczenia**. |
+| **Powiązane obszary produktów**         | Ceny i rabaty |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Z dniem 10.0.21 ustawienie **obsługi nakładających się rabatów** zostanie usunięte z parametrów Commerce w październiku 2022 roku. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Zestaw SDK do Retail dystrybuowany za pomocą usługi Lifecycle Services
 
@@ -103,7 +115,7 @@ Opracowywania rozszerzenia POS przy użyciu ModernPos.sln, CloudPOs.sln, POS.Ext
 | **Przyczyna wycofania/usunięcia** | Począwszy od grudnia 2020 r., obsługa Microsoft Internet Explorer 11 dla wszystkich produktów Dynamics 365 jest przestarzała, a Internet Explorer 11 nie będzie obsługiwany po sierpniu 2021 r.<br><br>Będzie to miało wpływ na klientów, którzy używają produktów Dynamics 365 zaprojektowanych do używania za pośrednictwem interfejsu Internet Explorer 11. Po sierpniu 2021, Internet Explorer 11 nie będzie obsługiwany przez produkty Dynamics 365. |
 | **Zamieniona przez inną funkcję?**   | Zaleca się, aby klienci przeszli na Microsoft Edge.|
 | **Powiązane obszary produktów**         | Wszystkie produkty Dynamics 365 |
-| **Opcja wdrażania**              | Wszyscy|
+| **Opcja wdrażania**              | Wszystko|
 | **Stan**                         | Wycofane. Internet Explorer 11 nie będzie obsługiwany po sierpniu 2021.|
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Usunięte lub przestarzałe funkcje w wydaniu rozwiązania Commerce 10.0.11

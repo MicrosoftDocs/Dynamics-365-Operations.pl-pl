@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465084"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562133"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
@@ -100,7 +100,7 @@ Kroki w tej sekcji nie są powiązane z określoną firmą. Tę procedurę nale�
     | 10.0.18         | Konfiguracja podatku — Europa 30.12.82     |
     | 10.0.19         | Konfiguracja obliczania podatku 36.38.193 |
     | 10.0.20         | Konfiguracja obliczania podatku 40.43.208 |
-    | 10.0.21         | Konfiguracja obliczania podatku 40.46.212 |
+    | 10.0.21         | Konfiguracja obliczania podatku 40.48.215 |
 
 9. W obszarze roboczym **Funkcje globalizacji**, wybierz opcję **Funkcje**, wybierz kafelek **Obliczania podatku**, a następnie wybierz opcję **Dodaj**.
 10. Umożliwia wybór jednego z następujących typów funkcji:
