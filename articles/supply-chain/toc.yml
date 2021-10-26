@@ -2813,9 +2813,11 @@
               href: sales-marketing/trade-allowance.md
             - name: Tworzenie nowej umowy handlowej
               href: sales-marketing/tasks/create-new-trade-agreement.md
-        - name: Zarządzanie serwisem
+            - name: Ulepszenia wydajności oczyszczania historii sprzedaży
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
+        - name: Zarządzanie usługami
           items:
-            - name: Omówienie zarządzania usługą
+            - name: Omówienie zarządzania usługami
               href: service-management/service-management-home-page.md
             - name: Konfigurowanie obsługi klienta
               items:
@@ -3707,10 +3709,12 @@
                   href: troubleshooting/production/the-warehouse-in-pic.md
             - name: Zarządzanie rabatami
               items:
-                - name: Kumulacja rabatów dla odbiorcy przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
+                - name: Kumulacja rabatów dla klienta przy użyciu grup rabatowych dla towarów kończy się niepowodzeniem
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Sprzedaż i marketing
               items:
+                - name: Zadanie oczyszczania historii aktualizacji sprzedaży nie powiodło się lub istnieją problemy z wydajnością
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: Element pakietu nie jest obsługiwany w procesie międzyfirmowym
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: Nie można anulować międzyfirmowego zamówienia zakupu połączonego z zamówieniem sprzedaży

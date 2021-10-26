@@ -802,6 +802,8 @@
                   href: POS-serial-returns.md
                 - name: Połączone zwroty
                   href: dev-itpro/linked-refunds.md
+                - name: Przetwarzanie niepołączonych zwrotów za pomocą łącznika Dynamics 365 Commerce Payment Connector dla Adyen
+                  href: dev-itpro/unlinked-refunds.md
                 - name: Sprzedaż i zwrot produktów nieuwzględnionych w asortymencie sklepu
                   href: sell-return-outside-assortments.md
                 - name: Konfigurowanie i przetwarzanie wymiany w przypadku zamówienia zwrotu

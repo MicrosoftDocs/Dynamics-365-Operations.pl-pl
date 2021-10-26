@@ -1194,6 +1194,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Możliwości waluty w ramach raportowania finansowego
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Obliczanie zatrzymanych dochodów w raportowaniu finansowym
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Raporty finansowe bilansu
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Generowanie raportów finansowych

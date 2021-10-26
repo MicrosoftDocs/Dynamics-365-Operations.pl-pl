@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733618"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605286"
 ---
 # <a name="financial-reporting-faq"></a>Raportowanie finansowe — często zadawane pytania
 
@@ -101,5 +101,28 @@ W przypadku historycznego przeliczania walut można użyć wstępnie obliczonych
 Gdy dane prezentowane w raportach są aktualizowane, może wystąpić opóźnienie, ponieważ kwoty muszą zostać ponownie obliczone przez sprawdzenie szczegółów transakcji. To opóźnienie jest wyzwalane za każdym razem, gdy stawki są aktualizowane lub księgowanych jest więcej transakcji. Jeśli na przykład tysiące kont są skonfigurowane do historycznego przeliczania kilka razy dziennie, może wystąpić opóźnienie do godziny przed zaktualizowaniem danych w raporcie. Z drugiej strony, jeśli istnieje mniejsza liczba określonych kont, czas przetwarzania aktualizacji danych raportu można skrócić do minut lub mniej.
 
 Podobnie, gdy raporty są generowane przy użyciu przeliczania walut dla kont typu historycznego, wystąpią dodatkowe obliczenia dla transakcji. W zależności od liczby kont czas generowania raportu może się przynajmniej podwoić.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Jakie są szacowane interwały integracji składnicy danych?
+
+Program Financial Reporter używa 16 zadań do kopiowania danych z usługi Dynamics 365 Finance do bazy danych Financial Reporter. W poniższej tabeli wymieniono te 16 zadań i przedstawiono interwał określający częstotliwość wykonywania poszczególnych zadań. Interwałów nie można zmienić.
+
+| Nazwa                                                       | Interwał | Czas interwału |
+|------------------------------------------------------------|----------|-----------------|
+| Kategorie konta AX 2012 do kategorii konta            | 41       | Minuty         |
+| Konta AX 2012 do konta                                | 7        | Minuty         |
+| Firmy AX 2012 do firmy                               | 300      | Sekundy         |
+| Firmy AX 2012 do organizacji                          | 23       | Minuty         |
+| Kombinacje wymiarów AX 2012 do kombinacji wymiarów    | 1        | Minuty         |
+| Wartości wymiaru AX 2012 do wartości wymiaru                | 11       | Minuty         |
+| Wymiary AX 2012 do wymiaru                            | 31       | Minuty         |
+| Kursy wymiany AX 2012 do kursu wymiany                    | 17       | Minuty         |
+| Lata obrachunkowe AX 2012 do roku obrachunkowego                        | 13       | Minuty         |
+| Transakcje księgi głównej AX 2012 do informacji                | 1        | Minuty         |
+| Hierarchie organizacyjne AX 2012 do drzewa                   | 3600    | Sekundy         |
+| Scenariusze AX 2012 do scenariusza                              | 29       | Minuty         |
+| Kwalifikatory typu transakcji AX 2012 do kwalifikatora typu informacji | 19       | Minuty         |
+| Zadanie konserwacji                                           | 1        | Minuty         |
+| Definicje raportu MR do raportów finansowych AX7             | 45       | Sekundy         |
+| Wersje raportu MR do wersji raportu finansowego AX         | 45       | Sekundy         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
