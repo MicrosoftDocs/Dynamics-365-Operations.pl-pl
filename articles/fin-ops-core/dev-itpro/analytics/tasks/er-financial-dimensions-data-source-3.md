@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548eec45739a52d4eb168a80660540196225b2ed482d2104a4cd0d00503109dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773795"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605192"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 3 — Projektowanie raportu)
 
@@ -92,7 +92,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 59. Kliknij opcję Dodaj atrybut.
 60. W polu Nazwa wpisz „Op”.
 61. Kliknij przycisk OK.
-![Strona projektanta Operacji ER.](../media/er-financial-dimensions-guides-format1.png)
+![Drzewo strony projektanta formatu.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Mapowanie elementów raportu na źródła danych
 1. Kliknij kartę Mapowanie.
@@ -141,7 +141,7 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 44. Kliknij opcję Powiąż.
 45. Kliknij przycisk Zapisz.
 46. Zamknij stronę.
-![Strona projektanta Operacji ER.](../media/er-financial-dimensions-guides-format2.png)
+![Strona projektanta formatów, elementy raportu zamapowane na źródła danych.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

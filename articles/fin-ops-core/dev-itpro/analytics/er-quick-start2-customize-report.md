@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770027"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605238"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Dostosowanie formatu ER w celu wygenerowania niestandardowego dokumentu elektronicznego
 
@@ -160,7 +160,7 @@ Aby dodać standardowe konfiguracje obiektu ER do bieżącego wystąpienia rozwi
     - **Mapowanie modelu płatności 1611** – Ta konfiguracja zawiera [składnik mapowanie modelu](general-electronic-reporting.md#data-model-and-model-mapping-components), który opisuje sposób wypełniania modelu danych przy użyciu danych aplikacji w czasie wykonywania.
     - **BACS (brytyjski)** – Ta konfiguracja zawiera [format](general-electronic-reporting.md#FormatComponentOutbound) i mapowanie formatów składników ER. Składnik formatu określa układ raportu. Składnik mapowanie formatu zawiera źródło danych modelu i określa sposób wypełniania układu raportu przy użyciu tego źródła danych w czasie wykonywania.
 
-![Strona Konfiguracje.](./media/er-quick-start2-imported-solution1.png)
+![Strona konfiguracji z określonymi konfiguracjami raportowania elektronicznego dostępnymi w drzewie.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Przygotowywanie płatności dostawcy na potrzeby przetwarzania
 
@@ -222,7 +222,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby korzystała z imp
 4. W karcie **Formaty plików** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
 5. W polu **Konfiguracja formatu eksportu** wybierz format konfiguracji **BACS (brytyjski)**.
 
-    ![Metody płatności – strona dostawcy.](./media/er-quick-start2-method-of-payment1.png)
+    ![Strona Formy płatności — dostawcy umożliwia skonfigurowanie elektronicznego formy płatności w celu przetwarzania płatności dostawców w standardowym formacie.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Wybierz opcję **Zapisz**.
 
@@ -273,7 +273,7 @@ W tym przypadku, jako przedstawiciel Litware, Inc., należy utworzyć (uzyskać)
 
 Utworzono konfigurację tematu ER **BACS (niestandardowy brytyjski)** w wersji 1.1.1. Ta wersja ma [stan](general-electronic-reporting.md#component-versioning) **Wersji roboczej** i można ją edytować. Bieżąca zawartość niestandardowego formatu ER jest zgodna z zawartością formatu dostarczonego przez Microsoft.
 
-![Strona Konfiguracje.](./media/er-quick-start2-derived-format-configuration1.png)
+![Strona konfiguracji z konfiguracją formatu raportowania elektronicznego BACS (niestandardowy brytyjski) w wersji 1.1.1.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Edytowanie niestandardowego formatu
 
@@ -349,7 +349,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby do przetwarzania 
 4. W karcie **Format plików** ustaw **Ogólny elektroniczny format eksportu** jako **Tak**.
 5. W polu **Konfiguracja formatu eksportu** wybierz format konfiguracji **BACS (niestandardowy brytyjski)**.
 
-    ![Metody płatności – strona dostawcy.](./media/er-quick-start2-method-of-payment2.png)
+    ![Strona Formy płatności — dostawcy umożliwia skonfigurowanie elektronicznego formy płatności w celu przetwarzania płatności dostawców w niestandardowym formacie.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Wybierz opcję **Zapisz**.
 
@@ -378,7 +378,7 @@ Należy skonfigurować elektroniczną metodę płatności, aby do przetwarzania 
 
         Należy zauważyć, że zgodnie ze strukturą niestandardowego formatu ER, wiersz płatności w wygenerowanym pliku [rozpoczyna się](#PositionSWIFTCode) od kodu SWIFT, który został [wprowadzony](#DefineSWIFTCode) dla konta bankowego dostawcy, którego płatność została przetworzona.
 
-        ![Plik płatności w formacie TXT.](./media/er-quick-start2-payment-file2.png)
+        ![Plik płatności w formacie TXT używany do przetwarzania płatności od dostawcy.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importowanie nowych wersji standardowej konfiguracji formatu ER
 
@@ -395,7 +395,7 @@ Aby dodać nowe wersje konfiguracji ER do bieżącego wystąpienia Finance, nale
 5. Na skróconej karcie **Wersje** wybierz wersję **3.3** wybranej konfiguracji formatu ER.
 6. Wybierz **Importuj**, aby pobrać wybraną wersję z Globalnego repozytorium do bieżącego wystąpienia Finance.
 
-![Strona Repozytorium konfiguracji.](./media/er-quick-start2-import-solution2.png)
+![Strona repozytorium konfiguracji, skrócona karta Wersje, przycisk Importuj.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Jeśli masz problemy z dostępem do [repozytorium globalnego](er-download-configurations-global-repo.md), zamiast tego możesz [pobrać konfiguracje z](download-electronic-reporting-configuration-lcs.md) LCS.
@@ -507,7 +507,7 @@ Aby rozpocząć korzystanie z nowej funkcji w wersji 3.3 formatu **BACS (brytyjs
 
         Należy zauważyć, że wiersz płatności w wygenerowanym pliku rozpoczyna się od kodu SWIFT, który został wprowadzony dla konta bankowego dostawcy, którego płatność została przetworzona.
 
-        ![Plik płatności w formacie TXT.](./media/er-quick-start2-payment-file3.png)
+        ![Plik płatności w formacie TXT używany do przetwarzania płatności od dostawcy z użyciem zmienionego formatu raportowania elektronicznego.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Dodatkowe zasoby
 

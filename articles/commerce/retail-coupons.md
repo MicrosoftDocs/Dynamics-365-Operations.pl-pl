@@ -1,8 +1,8 @@
 ---
 title: Konfigurowanie kuponów dla sprzedaży detalicznej
-description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Ten temat zawiera omówienie koncepcji kuponów oraz wyjaśnienie, jak je konfigurować w rozwiązaniu Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745315"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603130"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Konfigurowanie kuponów dla sprzedaży detalicznej
 
@@ -40,6 +40,8 @@ Aby utworzyć kuponu, należy utworzyć oddzielnie rabat i kupon. Następnie trz
 > Po połączeniu kuponu z rabatem kilka pól na stronie rabatu w Commerce staje się tylko do odczytu, ponieważ są one zarządzane przez ustawienia kuponu. Są to m.in. pola stanu i standardowych zakresów dat.
 > 
 > Podczas używania kuponu w kanale centrum obsługi należy zaznaczyć przycisk **Oblicz ponownie** **(karta Sprzedaż > Oblicz > Oblicz ponownie)**, aby zastosowano rabat skojarzony z kuponem. Ten dodatkowy krok zostanie usunięty w przyszłej wersji.
+
+Aby zastosować kupon do transakcji sprzedaży w punkt sprzedaży (POS), można użyć **kodu kuponu** lub **kodu paska kuponu**. Aby można było użyć **kodu kuponu**, operacja **dodaj kod kuponu** musi być skonfigurowana w [układzie ekranu](pos-screen-layouts.md) **Transakcja** punktu sprzedaży . Wybierz opcję **Dodaj kod kuponu** i wprowadź kod kuponu. Alternatywnie, by użyć **kodu paska kuponu**, zeskanuj kod paska lub wprowadź kod paska za pomocą klawiatury numerycznej na ekranie **Transakcja**.
 
 ### <a name="limited-use-coupons"></a>Kupony o ograniczonym użyciu
 

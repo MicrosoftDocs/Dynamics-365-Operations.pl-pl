@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: ecca65508c048e2946d912f2bf0292d811fb4eabac9602a35f1ce26f4ebe1da6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9fabdef96b02747c84a76bf42997633842f185e9
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769931"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605212"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Śledzenie wyników wygenerowanych raportów i porównywanie ich z wartościami bazowymi
 
@@ -76,7 +76,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [Tworze
 3. W oknie dialogowym rozwijanym w polu **nazwa** wprowadź **model, aby uzyskać informacje o modelach bazowych modelu ER**.
 4. Wybierz opcję **Utwórz konfigurację**, aby potwierdzić utworzenie nowego wpisu modelu danych ER.
 
-![Utwórz okno dialogowe tworzenia konfiguracji.](media/GER-BaselineSample-ModelAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
+![Utwórz okno dialogowe konfiguracji, dodaj nową konfigurację modelu raportowanie elektronicznego.](media/GER-BaselineSample-ModelAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
 
 ### <a name="design-a-data-model"></a>Projektowanie modelu danych
 
@@ -99,7 +99,7 @@ Aby wykonać kroki w tym przykładzie, należy najpierw wykonać kroki w [Tworze
 3. W polu **nazwa** wprowadź **format, aby uzyskać informacje o planach bazowych modelu ER**.
 4. Wybierz opcję **Utwórz konfigurację**, aby potwierdzić utworzenie nowego wpisu formatu ER.
 
-![Utwórz okno dialogowe tworzenia konfiguracji.](media/GER-BaselineSample-FormatAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
+![Utwórz okno dialogowe konfiguracji, dodaj nową konfigurację formatu raportowanie elektronicznego.](media/GER-BaselineSample-FormatAdd.PNG "Zrzut ekranu rozwijanego okna dialogowego Tworzenie konfiguracji")
 
 ### <a name="design-a-format"></a>Projektowanie formatu
 
@@ -107,41 +107,41 @@ W tym przykładzie utworzysz prosty format ER, który będzie generował dokumen
 
 1. Na stronie **konfiguracje**, w okienku akcji wybierz opcję **Projektant**.
 2. Wybierz **Dodaj element główny**.
-2. W oknie dialogowym rozwijanym wykonaj następujące kroki:
+3. W oknie dialogowym rozwijanym wykonaj następujące kroki:
 
     1. W drzewie zaznacz element **Wspólne\\Plik**.
     2. W polu **Nazwa** wprowadź nazwę **Dane wyjściowe**.
     3. Kliknij przycisk **OK**.
 
-3. Wybierz opcję **Dodaj**.
-4. W oknie dialogowym rozwijanym wykonaj następujące kroki:
+4. Wybierz opcję **Dodaj**.
+5. W oknie dialogowym rozwijanym wykonaj następujące kroki:
 
     1. W drzewie zaznacz element **XML\\Element**.
     2. W polu **Nazwa** wpisz **Dokument**.
     3. Kliknij przycisk **OK**.
 
-5. W widoku drzewa wybierz **Wyjście\\Dokument**.
-6. Wybierz opcję **Dodaj**.
-7. W oknie dialogowym rozwijanym wykonaj następujące kroki:
+6. W widoku drzewa wybierz **Wyjście\\Dokument**.
+7. Wybierz opcję **Dodaj**.
+8. W oknie dialogowym rozwijanym wykonaj następujące kroki:
 
     1. W drzewie zaznacz element **XML\\Atrybut**.
     2. Wprowadź **nazwę** w polu, wpisz **ID**.
     3. Kliknij przycisk **OK**.
 
-    ![Strona projektanta formatu.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Zrzut ekranu strony projektanta formatu")
+    ![Strona konstruktora formatów, atrybut XML wybrany w drzewie.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Zrzut ekranu strony projektanta formatu")
 
-8. Na karcie **mapowanie** wybierz opcję **Usuń**.
-9. Wybierz **Dodaj element główny**.
-10. W oknie dialogowym rozwijanym w drzewie wybierz **Ogólne\\Parametr wprowadzany przez użytkownika**, a następnie wykonaj następujące kroki:
+9. Na karcie **mapowanie** wybierz opcję **Usuń**.
+10. Wybierz **Dodaj element główny**.
+11. W oknie dialogowym rozwijanym w drzewie wybierz **Ogólne\\Parametr wprowadzany przez użytkownika**, a następnie wykonaj następujące kroki:
 
     1. Wprowadź **nazwę** w polu, wpisz **ID**.
     2. W polu **Etykieta** wejdź do **Wpisz ID**.
     3. Kliknij przycisk **OK**.
 
-11. W drzewie wybierz **Wyjście\\Dokument\\ID**.
-12. Zaznacz element **Powiąż** i kliknij przycisk **Zapisz**.
+12. W drzewie wybierz **Wyjście\\Dokument\\ID**.
+13. Zaznacz element **Powiąż** i kliknij przycisk **Zapisz**.
 
-![Strona projektanta formatu.](media/GER-BaselineSample-FormatMappingDesign.PNG "Zrzut ekranu strony projektanta formatu")
+![Strona konstruktora formatu raportowania elektronicznego, karta Mapowanie.](media/GER-BaselineSample-FormatMappingDesign.PNG "Zrzut ekranu strony projektanta formatu")
 
 Zgodnie z zaprojektowaną strukturą, skonfigurowany format będzie generował plik XML. Ten kod XML zawiera **element główny** z atrybutem **ID**, który jest ustawiany na wartość wprowadzaną przez użytkownika w oknie dialogowym programu ER.
 
@@ -201,7 +201,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 10. W polu **plan bazowy** wprowadź lub wybierz załącznik **out.Admin**.
 11. Wybierz opcję **Zapisz**.
 
-![Strona podstawy formatu raportowania elektronicznego.](media/GER-BaselineSample-SetupBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
+![Zrzut ekranu strony podstawy formatu raportowania elektronicznego, skrócona karta podstawy z wybraną podstawą.](media/GER-BaselineSample-SetupBaselineLine.PNG "Zrzut ekranu strony podstawy formatu raportowania elektronicznego")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Uruchom zaprojektowany format ER i przejrzyj dziennik, aby przeanalizować wyniki
 
@@ -212,7 +212,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 5. Kliknij przycisk **OK**.
 6. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Dzienniki debugowania konfiguracji**.
 
-    ![Strona dzienników przebiegu raportowania elektronicznego.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
+    ![Strona dzienników uruchamiania raportowania elektronicznego z jednakowymi podstawami.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
 
     > [!NOTE]
     > Dziennik wykonania zawiera informacje o wynikach porównania wygenerowanego pliku ze skonfigurowaną linią bazową. W tym przykładzie dziennik wskazuje, że wygenerowany plik i plan bazowy są takie same.
@@ -228,7 +228,7 @@ Pliki bazowe zostaną dodane do **formatu w celu poznania się z formatem plikó
 5. Kliknij przycisk **OK**.
 6. Otwórz **Administracja organizacji** \> **Elektroniczne raportowanie** \> **Dzienniki debugowania konfiguracji**.
 
-    ![Strona dzienników przebiegu raportowania elektronicznego.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
+    ![Strona dzienników uruchamiania raportowania elektronicznego z różnymi podstawami.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Zrzut ekranu strony dzienników przebiegu raportowania elektronicznego")
 
     > [!NOTE]
     > Dziennik wykonania zawiera informacje o wynikach porównania wygenerowanego pliku ze skonfigurowaną linią bazową. W tym przykładzie dziennik wskazuje, że wygenerowany plik i plan bazowy są różne.

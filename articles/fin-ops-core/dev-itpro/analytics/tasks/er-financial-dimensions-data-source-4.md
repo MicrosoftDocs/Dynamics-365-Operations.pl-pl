@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3bf58ec746fedb046b6014f5343d4ac92c2e6aba72882dec5b1f737aa1aaae46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f14be560ab014224e32169b4ac97682a669249b4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743220"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605312"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Używanie wymiarów finansowych jako źródła danych (Część 4 — Wykonanie raportu)
 
@@ -37,16 +37,16 @@ Aby wykonać te kroki, należy najpierw wykonać kroki w procedurze „ER Używa
 ![Strona konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-run1.png)
 5. Wprowadź lub wybierz wartość w polu Nazwa wymiaru.
     * Aby zaznaczyć wszystkie wymiary w bieżącej firmie, wprowadź następujące dane: BusinessUnit;CostCenter;Dział;ItemGroup;MainAccount;Projekt  
-![Strona konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-run2.png)
+![Wysunięcie parametrów raportowania elektronicznego, lista rozwijana nazwy wymiaru.](../media/er-financial-dimensions-guides-run2.png)
 6. Rozwiń sekcję Rekordy do uwzględnienia.
 7. Kliknij przycisk Filtr.
 8. Zaznacz wiersz z tabelą Arkusz księgi i polem Arkusz z numerem partii.
 9. W polu Kryteria wpisz wartość „00057”.
 10. Kliknij przycisk OK.
 11. Kliknij przycisk OK.
-![Strona konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-run3.png)
+![Wysunięcie parametrów raportowania elektronicznego, sekcja Raporty do załączenia.](../media/er-financial-dimensions-guides-run3.png)
     * Przejrzyj wygenerowane dane wyjściowe. Dla każdej transakcji wybranej partii są przedstawiane wymiary finansowe z odpowiedniego zestawu wymiarów. Uruchom ten raport i wybierz inne wymiary, a zobaczysz, że raport nie jest zależny od liczby wybranych wymiarów ani liczby wymiarów skonfigurowanych dla tego wystąpienia .  
-![Strona konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-run4.png)
+![Wygenerowano dane wyjściowe konfiguracji raportowania elektronicznego.](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

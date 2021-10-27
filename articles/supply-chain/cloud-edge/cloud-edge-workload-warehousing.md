@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500435"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641168"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Obciążenia pracą dotyczące zarządzania magazynem dla jednostek skalowania chmury i urządzenia brzegowego
 
@@ -171,7 +171,8 @@ Następująca funkcja zarządzania magazynem nie jest obecnie obsługiwana w obc
 - Przetwarzanie ujemnych dostępnych zapasów.
 - Przetwarzanie pracy magazynowej z uwagami do wysyłki.
 - Przetwarzanie pracy magazynowej przy użyciu automatyzacji obsługi materiałów/magazynu.
-- Korzystanie z obrazu danych produktu głównego (na przykład w aplikacji Warehouse Management).
+- Obrazy danych produktu głównego (na przykład w aplikacji Warehouse Management).
+- Udostępnianie danych między firmami dla produktów.
 
 > [!WARNING]
 > Niektóre funkcje magazynu nie będą dostępne dla magazynów, w których jest uruchomione obciążenie pracą zarządzania magazynem w jednostce skalowania, a ponadto nie są obsługiwane w centrum ani w obciążeniu jednostki skalowania.
@@ -188,7 +189,6 @@ W poniższej tabeli pokazano, które funkcje wychodzące są obsługiwane i gdzi
 |--------------------------------------------------------------|-----|------------------------------|
 | Przetwarzanie dokumentu źródłowego                                   | Tak | Nr |
 | Zarządzanie procesem załadunku i transportu                | Tak, ale tylko procesy planowania wysyłki ładunku. Przetwarzanie zarządzania transportem nie jest obsługiwane  | Nr |
-| Koszt z wyładunkiem i odbiór towaru w drodze                                         | Tak | Nr |
 | Zwolnij do magazynu                                         | Tak | Nr |
 | Planowany przeładunek kompletacyjny                                        | Nr  | Nr |
 | Konsolidacja wysyłki                                       | Tak, w przypadku planowania wysyłki ładunku | Tak |
@@ -222,9 +222,10 @@ W poniższej tabeli pokazano, które funkcje przychodzące są obsługiwane i gd
 
 | Przetwarzaj                                                          | Piasta | Obciążenie pracą dla wykonania w magazynie w ramach jednostki skalowania<BR>*(Pozycje oznaczone jako „Tak” dotyczą tylko zamówień magazynowych)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Przetwarzanie &nbsp;dokumentu&nbsp; źródłowego                             | Tak | Nr |
-| Zarządzanie procesem załadunku i transportu                    | Tak | Nr |
-| Potwierdzenie wysyłki wychodzącej                                    | Tak | Nr |
+| Przetwarzanie &nbsp;dokumentu&nbsp; źródłowego                             | Tak | Nie |
+| Zarządzanie procesem załadunku i transportu                    | Tak | Nie |
+| Koszt z wyładunkiem i odbiór towaru w drodze                       | Tak | Nie |
+| Potwierdzenie wysyłki wychodzącej                                    | Tak | Nie |
 | Zwolnienie zamówienia zakupu do magazynu (przetwarzanie zamówienia magazynowego) | Tak | Nr |
 | Anulowanie wierszy zamówienia magazynowego<p>Należy zauważyć, że jest to obsługiwane tylko wtedy, gdy nie utworzono żadnej rezerwacji dla wiersza</p> | Tak | Nr |
 | Przyjęcie i odłożenie pozycji z zamówienia zakupu                       | <p>Tak, &nbsp;gdy &nbsp;nie ma&nbsp; zamówienia magazynowego</p><p>Nie, jeśli istnieje zamówienie magazynowe</p> | <p>Tak, jeśli zamówienie zakupu nie jest częścią <i>ładunku</i></p> |

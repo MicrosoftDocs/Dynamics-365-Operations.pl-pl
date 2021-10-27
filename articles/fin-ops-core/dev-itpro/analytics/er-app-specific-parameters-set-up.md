@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 28fea4a09d7c105096859495d9b4a43f4c86c834184809827fe77ce1bbff5b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa3cab78574ac3779aaea000f0b2b88ff625c37
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749831"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605262"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Umożliwia konfigurowanie parametrów formatu ER dla firmy
 
@@ -58,8 +58,6 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 1.  Wybierz firmę **DEMF**.
 2.  W drzewie konfiguracji wybierz **Format, aby uzyskać informacje o wyszukiwaniu danych LE**.
 3.  W okienku akcji na karcie **Konfiguracje** w grupie **Parametry specyficzne dla aplikacji** wybierz opcję **Konfiguracja**.
-
-    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     Na stronie **parametry właściwe dla aplikacji** można skonfigurować **reguły** dotyczące źródła danych **formatu**, aby dowiedzieć się, jak wyszukać format danych LE.
     
@@ -75,14 +73,14 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 
     W wyszukiwaniu zostanie wystawiona lista kodów podatku do wybrania. Ta lista jest zwracana przez **Model.Data.Tax** źródło danych podatkowych skonfigurowane w podstawowym formacie ER. Ponieważ to źródło danych zawiera pole **nazwa**, nazwa każdego kodu podatku jest wyświetlana w wyszukiwaniu.
 
-    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Strona parametrów specyficzne dla aplikacji raportowania elektronicznego, wyszukiwanie pola kodu.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Wybierz kod podatku **VAT19**.
 8.  W polu **Wynik wyszukiwania** w nowym rekordzie i wybierz strzałkę rozwijaną, aby otworzyć wyszukiwanie. W wyszukiwaniu zostanie wystawiona lista wartości dla wyliczenia formatu TaxationLevel do wybrania.
 
     Należy zauważyć, że jeśli jako preferowany język użytkownika, do którego użytkownik jest zalogowany, jest wybrana jako niemiecki, etykiety wartości w wyszukiwaniu będą w języku niemieckim, pod warunkiem, że zostały przetłumaczone w podstawowym formacie ER. Ponadto, jeśli etykieta źródła danych wyszukiwania została przetłumaczona, etykieta zostanie wyświetlona w preferowanym języku użytkownika na karcie **wyszukiwania**.
 
-    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Strona parametrów specyficznych dla aplikacji raportowania elektronicznego, wyniki wyszukiwania wyświetlane w preferowanym języku niemieckim.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Umożliwia wybór wartości **zwykłego opodatkowania**.
 
@@ -120,7 +118,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
     
     Dodając ostatni rekord, należy zdefiniować następującą regułę: Ilekroć kod podatkowy przekazany jako argument nie spełnia żadnej z poprzednich reguł, źródło danych odnośnika zwróci **Inne** jako żądany poziom opodatkowania.
 
-    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Strona parametrów specyficznych dla aplikacji raportowania elektronicznego, skrócona karta Warunki z ostatnim rekordem Inne.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. W polu **Stan** wybierz opcję **ukończone**.
 
@@ -160,7 +158,7 @@ Strukturę ER można stosować do konfigurowania parametrów specyficznych dla a
 
     W wyszukiwaniu zostanie wystawiona lista kodów podatków do wybrania dla podatku firmy **USMF**.
 
-    ![Strona parametry specyficzne dla aplikacji ER.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Strona parametrów specyficznych dla aplikacji raportowania elektronicznego, wyszukiwanie pola kodu pokazujące listę kodów podatków dla firmy USMF.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Wybierz kod podatku **EXEMPT**.
 9.  W polu **wynik wyszukiwania w nowym rekordzie** wybierz wartość **Brak opodatkowania**.
@@ -225,13 +223,13 @@ W powyższym przykładzie uzyskano dostęp do parametrów specyficznych dla apli
 
 1.  Należy ponownie użyć istniejącego elementu menu **ERSolutionAppSpecificParametersDesigner** lub zaimplementować własny element menu **ERSolutionAppSpecificParametersDesigner**.
 
-    ![Strona Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Strona programu Visual Studio, okienko Właściwości.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Wykonaj jeden z następujących kroków:
 
     1.  Utwórz nowy przycisk elementu menu i połącz go z odpowiednim rekordem z tabeli **ERSolutionTable**, ustawiając właściwość **źródła danych** na **ERSolutionTable.**
     
-        ![Strona Visual Studio.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Strona programu Visual Studio, okienka Projekt.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Utwórz prosty przycisk i Zastąp **klikniętą** metodę, tak jak to pokazano w poniższym przykładzie.
     

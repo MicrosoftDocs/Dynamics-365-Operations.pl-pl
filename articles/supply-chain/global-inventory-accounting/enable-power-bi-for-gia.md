@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 562b56a85ad2f40cb673f8f2101bf92c39853d1f1a087d0498b6f7d19d1cca01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b00de29a4f12719e469c063861b52e0fc20c5f1
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773352"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641118"
 ---
 # <a name="enable-power-bi-for-global-inventory-accounting"></a>Włączanie usługi Power BI dla Globalnego księgowania zapasów
 
@@ -49,7 +49,10 @@ Aby skonfigurować integrację z Power BI, wykonaj poniższe kroki.
 1. Aby skonfigurować raport **Globalnego księgowanie zapasów** Power BI, należy wykonać następujące kroki:
 
     1. Przejdź do obszaru roboczego **Mój obszar roboczy**, znajdź zestaw danych dla Globalnego księgowania zapasów, a następnie w menu **Opcje** wybierz polecenie **Ustawienia**.
-    1. W ustawieniach **Globalnego księgowania zapasów** rozwiń pozycję **Parametry** i w razie potrzeby zaktualizuj wszystkie parametry.
+    1. W opcji **Ustawienia globalnego księgowania zapasów** rozwiń pozycję **Parametry** i w razie potrzeby zaktualizuj wszystkie parametry. W szczególności należy sprawdzić następujące ustawienia:
+        1. Zastąp wartości domyślnego adresu **URL Dataverse** i **Identyfikatora środowiska** za pomocą wartości znalezionych na stronie **Szczegóły środowiska** w usłudze LCS (w sekcji **integracji Power Platform**).
+        1. Wybierz łącze **Edytuj poświadczenia** obok etykiety **CDS** w sekcji **Poświadczeń źródła danych**. Następnie zaloguj się na swoje konto Dataverse przy użyciu metody uwierzytelniania **OAuth2**.
+    1. Sprawdź, czy raporty Power BI znalezione w **Mój obszar roboczy \> Raporty \> Globalne księgowanie zapasów** działają teraz prawidłowo i wyświetlają zawartość systemu.
 
 1. Zarejestruj aplikację zgodnie z opisem w temacie [Konfiguracja integracji PowerBI.com](../../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md#registration-process).
 1. Aby zintegrować raport **Globalnego księgowanie zapasów** Power BI w Dynamics 365 Supply Chain Management, należy wykonać następujące kroki:

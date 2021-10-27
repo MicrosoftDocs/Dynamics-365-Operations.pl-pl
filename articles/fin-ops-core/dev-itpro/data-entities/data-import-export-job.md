@@ -2,7 +2,7 @@
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9ae06893a8247828fa4d3c2cb40b9155043c87
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404041"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612371"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -198,16 +198,10 @@ Podczas planowania procesu oczyszczania, należy określić następujące parame
 > [!NOTE]
 > Jeśli rekordy w tabelach pośrednich nie zostaną wyczyszczone w całości, upewnij się, że zadanie oczyszczania zaplanowano do uruchomienia w cyklu. Jak to wyjaśniono powyżej, w każdym oczyszczeniu wykonania zadanie jest oczyszczane tylko wtedy, gdy w podanych godzinach maksymalnych będzie istnieć tylko wiele identyfikatorów wykonania. Aby kontynuować oczyszczanie pozostałych rekordów przemieszczania, należy zaplanować okresowe wykonywanie zadania.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Czyszczenie i archiwizowanie historii zadań (dostępne w wersji zapoznawczej w aktualizacji platformy 39 lub wersji 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Czyszczenie i archiwizacja historii zadań 
 Funkcja oczyszczania i archiwizacji historii zadań zastępuje poprzednie wersje funkcji oczyszczania. Ta sekcja wyjaśnia te nowe możliwości.
 
-Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finance and Operations automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania.
-
-> [!NOTE]
-> Ponieważ ta funkcja znajduje się w wersji zapoznawczej, zadanie wsadowe w systemie nie usunie historii wykonania, dopóki nie zostanie ono włączone za pośrednictwem lotu DMFEnableExecutionHistoryCleanupSystemJob. Gdy ta funkcja zostanie ogólnie udostępniona w przyszłym wydaniu, ten lot nie będzie wymagany, a zadanie wsadowe w systemie rozpocznie czyszczenie i archiwizowanie po przygotowaniu systemu na podstawie zdefiniowanego powyżej harmonogramu. 
-
-> [!NOTE]
-> W przyszłym wydaniu poprzednie wersje funkcji oczyszczania zostaną usunięte z aplikacji Finance and Operations.
+Jedną z głównych zmian funkcji oczyszczania jest użycie w systemie zadania wsadowego do oczyszczenia historii. Użycie zadania wsadowego w systemie umożliwia aplikacjom Finance and Operations automatyczne planowanie i uruchamianie zadania przetwarzania wsadowego zaraz po gotowości systemu. Nie jest już konieczne ręczne planowanie zadania wsadowego. W tym domyślnym trybie wykonywania zadanie wsadowe będzie wykonywane co godzinę, zaczynając o północy, i zachowa historię wykonania z ostatnich 7 dni. Oczyszczana historia jest archiwizowana do przyszłego pobierania. Począwszy od wersji 10.0.20, ta funkcja jest zawsze w użyciu.
 
 Druga zmiana w procesie oczyszczania to archiwizacja oczyszczonej historii wykonania. Zadanie oczyszczania spowoduje zarchiwizowanie usuniętych rekordów w Blob Storage, którego usługa DIXF używa do regularnych integracji. Zarchiwizowany plik będzie w formacie pakietu DIXF i będzie dostępny przez 7 dni w obiekcie blob, w trakcie których można go będzie pobrać. Domyślną trwałość 7 dni zarchiwizowanego pliku można zmienić na maksymalnie 90 dni w parametrach.
 

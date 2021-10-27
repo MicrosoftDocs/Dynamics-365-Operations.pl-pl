@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488090"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644534"
 ---
 # <a name="provision-human-resources"></a>Inicjowanie obsługi administracyjnej rozwiązania Human Resources
 
@@ -49,7 +49,7 @@ Przed rozpoczęciem inicjowania obsługi pierwszej piaskownicy lub środowiska p
 Podczas tworzenia środowiska wersji próbnej Human Resources, jest również tworzone środowisko wersji próbnej Power Apps w dzierżawcy i łączone ze środowiskiem aplikacji Human Resources. Środowisko Power Apps o nazwie „TestDrive” ma ten sam okres próbny co środowisko Human Resources.
 
 > [!NOTE]
-> Aprowizacja obsługi środowiska wersji próbnej aplikacji Human Resources nie powiedzie się, jeśli uwierzytelniony użytkownik nie ma uprawnienia do tworzenia środowisk wersji próbnej Power Apps. Użytkownik musi być zawarty w grupie użytkowników, która może tworzyć środowiska próbne w centrum administracyjnym platformy Power Platform. Aby uzyskać więcej informacji, zobacz temat [Kontrolowanie osób, które mogą tworzyć środowiska i zarządzać nimi w centrum administracyjnym platformy Power Platform](//power-platform/admin/control-environment-creation).
+> Aprowizacja obsługi środowiska wersji próbnej aplikacji Human Resources nie powiedzie się, jeśli uwierzytelniony użytkownik nie ma uprawnienia do tworzenia środowisk wersji próbnej Power Apps. Użytkownik musi być zawarty w grupie użytkowników, która może tworzyć środowiska próbne w centrum administracyjnym platformy Power Platform. Aby uzyskać więcej informacji, zobacz temat [Kontrolowanie osób, które mogą tworzyć środowiska i zarządzać nimi w centrum administracyjnym platformy Power Platform](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planuj środowiska zasobów ludzkich
 
