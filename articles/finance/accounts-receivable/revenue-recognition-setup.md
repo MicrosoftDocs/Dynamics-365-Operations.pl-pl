@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759024"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675185"
 ---
 # <a name="revenue-recognition-setup"></a>Konfiguracja rozpoznawania przychodów
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "6759024"
 Dodano nowy moduł **Rozpoznawanie przychodów** obejmujący elementy menu dla wszystkich wymaganych ustawień. W tym temacie opisano opcje konfiguracji oraz ich implikacje.
 
 > [!NOTE]
-> Funkcji Rozpoznawanie przychodów nie można włączyć za pomocą modułu Zarządzanie funkcjami. Obecnie można ją włączyć tylko przy użyciu kluczy konfiguracji.
-
-> Funkcje rozpoznawania przychodów, w tym funkcja pakietu, nie są obsługiwane w kanałach Commerce (handel elektroniczny, punkt sprzedaży, biuro obsługi). Towary skonfigurowane pod kątem rozpoznawania przychodu nie powinny być dodawane do zamówień ani transakcji tworzonych w kanałach Commerce.
+> Funkcja Rozpoznawanie przychodów jest teraz włączona domyślnie za pomocą modułu Zarządzanie funkcjami. Jeśli organizacja nie korzysta z tej funkcji, można ją wyłączyć w obszarze roboczym **Zarządzanie funkcjami**.
+>
+> Funkcja Rozpoznawanie przychodów, w tym funkcja pakietu, nie jest obsługiwana w kanałach Commerce (handel elektroniczny, punkt sprzedaży i biuro obsługi). Pozycje skonfigurowane pod kątem rozpoznawania przychodu nie powinny być dodawane do zamówień ani transakcji utworzonych w kanałach Commerce.
 
 Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
 
@@ -40,12 +40,16 @@ Moduł **Rozpoznawanie przychodów** ma następujące opcje konfiguracji:
     - Grupy pozycji i zwolnione produkty
     - Definiowanie harmonogramu przychodów
     - Definiowanie ceny przychodu
+    - Ustawienia zapasów
 
-        - Profile księgowania
-        - Pakiety
+        - Definiowanie harmonogramu przychodów
+        - Definiowanie ceny przychodu
 
-    - Składniki pakietu
-    - Element pakietu
+    - Profile księgowania
+    - Pakiety
+
+        - Składniki pakietu
+        - Element pakietu
 
 - Ustawienia projektu
 
@@ -91,20 +95,27 @@ Wprowadź wartości opisowe w polach **Harmonogram przychodów** i **Opis**. Pon
 - **Automatyczne warunki umowy** — to pole wyboru należy zaznaczyć, jeśli daty rozpoczęcia i zakończenia umowy mają być ustawiane automatycznie. Te daty są ustawiane automatycznie tylko dla zwolnionych produktów typu przychodu **Obsługa po wygaśnięciu umowy**. Data rozpoczęcia umowy jest automatycznie ustawiana na żądaną datę wysyłki w wierszu zamówienia sprzedaży, a data zakończenia umowy jest automatycznie ustawiana na datę początkową powiększoną o liczbę miesięcy lub wystąpień zdefiniowaną w ustawieniach harmonogramu przychodów. Na przykład produkt w wierszu zamówienia sprzedaży dotyczy gwarancji na jeden rok. Domyślny harmonogram przychodów to **12M** (12 miesięcy) i dla tego harmonogramu przychodów jest zaznaczone pole wyboru **Automatyczne warunki umowy**. Jeśli wiersz zamówienia sprzedaży ma żądaną datę wysyłki w dniu 16 grudnia 2019 r., to domyślną datą rozpoczęcia umowy jest 16 grudnia 2019 r., a domyślną datą końcową umowy jest 15 grudnia 2020 r.
 - **Podstawa uznania** — podstawa uznania określa sposób alokacji ceny przychodu w poszczególnych wystąpieniach.
 
-    - **Miesięcznie według dat** — kwota jest alokowana na podstawie rzeczywistych dni w każdym miesiącu.
+    - **Miesięcznie według dni** — kwota jest alokowana na podstawie rzeczywistych dni w każdym miesiącu kalendarzowym.
     - **Miesięcznie** — kwota jest alokowana równomiernie między liczbą miesięcy zdefiniowaną w wystąpieniach.
     - **Wystąpienia** — kwota jest alokowana równomiernie między wystąpieniami, ale może zawierać dodatkowy okres, jeśli jako konwencję uznania została wybrana **Rzeczywista data rozpoczęcia**.
+    - **Okres obrachunkowy według dni** — kwota jest alokowana na podstawie rzeczywistych dni w każdym okresie obrachunkowym. 
 
-- **Konwencja uznania** — konwencja uznania określa domyślne daty określone w harmonogramie przychodów dla faktury.
+    Wyniki **Miesięcznie według dni** i **Okres obrachunkowy według dni** będą takie same, gdy okresy obrachunkowe są zgodne z miesiącami kalendarzowymi. Jedyny wyjątek ma miejsce w przypadku, gdy konwencja rozpoznawania ma wartość **Koniec miesiąca/okresu**, a pola **Data rozpoczęcia umowy** i **Data zakończenia** są puste w wierszu zamówienia sprzedaży.
+
+- **Konwencja uznania** — konwencja uznania określa daty ustawione w harmonogramie przychodów dla faktury.
 
     - **Rzeczywista data rozpoczęcia** — harmonogram jest tworzony przy użyciu daty początkowej umowy (w przypadku pozycji z obsługą po wygaśnięciu umowy \[PCS\]) lub daty faktury (dla podstawowych i nieistotnych pozycji).
-    - **1. dzień miesiąca** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla pierwszego dnia miesiąca.
+    - **1. dzień miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla pierwszego dnia miesiąca lub okresu obrachunkowego.
     - **Podział półmiesięczny** — data pierwszego wiersza harmonogramu zależy od daty faktury. Jeśli faktura zostanie zaksięgowana między pierwszym a piętnastym dniem miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia miesiąca. Jeśli faktura zostanie zaksięgowana po szesnastym dniu miesiąca, harmonogram przychodów jest tworzony przy użyciu pierwszego dnia następnego miesiąca.
-    - **1. dzień następnego miesiąca** — data w harmonogramie to pierwszy dzień następnego miesiąca.
 
-Wybierz przycisk **Szczegóły harmonogramu przychodów**, aby wyświetlić okresy ogólne i wartości procentowe rozpoznawane w każdym okresie. Domyślnie **Wartość procentowa rozpoznawania** jest równo podzielona przez liczbę okresów. Jeśli podstawą rozpoznawania jest wartość **Miesięczna** lub **Liczba wystąpień**, można zmienić wartość procentową rozpoznawania. Podczas zmiany wartości procentowej rozpoznawania wyświetlany jest komunikat z ostrzeżeniem informującym, że suma nie jest równa 100 procent. Po wyświetleniu komunikatu można kontynuować edycję wierszy. Jednak suma wartości procentowych musi być równa 100 przed zamknięciem strony.
+        Nie można wybrać **Podziału w ciągu miesiąca**, jeśli podstawa rozpoznawania ma wartość **Okres obrachunkowy według dni**.
 
-[![Szczegóły harmonogramu przychodów.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **1. dzień następnego miesiąca/okresu** — data, która w harmonogramie zaczyna się pierwszego dnia następnego miesiąca lub okresu obrachunkowego.
+    - **Koniec miesiąca/okresu** — data pierwszego wiersza harmonogramu to data rozpoczęcia umowy (lub data faktury). Jednak wszystkie kolejne wiersze harmonogramu są tworzone dla ostatniego dnia miesiąca lub okresu obrachunkowego. 
+
+Wybierz przycisk **Szczegóły harmonogramu przychodów**, aby wyświetlić okresy ogólne i wartości procentowe rozpoznawane w każdym okresie. Domyślnie **Wartość procentowa rozpoznawania** jest równo podzielona przez liczbę okresów. Jeśli podstawą rozpoznawania jest wartość **Miesięcznie**, można zmienić wartość procentową rozpoznawania. Podczas zmiany wartości procentowej rozpoznawania wyświetlany jest komunikat z ostrzeżeniem informującym, że suma nie jest równa 100 procent. Po wyświetleniu tego komunikatu można kontynuować edycję wierszy. Jednak suma wartości procentowych musi być równa 100 przed zamknięciem strony.
+
+[![Szczegóły harmonogramu przychodów.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Ustawienia zapasów
 
