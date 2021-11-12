@@ -2,7 +2,7 @@
 title: Raportowanie JPK-V7M
 description: W tym temacie wyjaśniono, jak uruchomić deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
 author: liza-golub
-ms.date: 07/19/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 6298d8657189c9f58cb72931400b4c968b6b90b6984aa59b32bd9c603863e3e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fe65e0a195533eb0dd6c97e5907d18bac6c4888
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761212"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713708"
 ---
 # <a name="jpk-v7m-reporting"></a>Raportowanie JPK-V7M
 
@@ -35,9 +35,9 @@ Pakiet PL JPK_V7M EM setup.zip zawiera ustawienia przetwarzania JPK-V7M, które 
 
 ## <a name="initial-assumptions-for-the-jpk-v7m-report"></a>Wstępne założenia dotyczące raportu JPK-V7M
 
-Implementacja raportu JPK-V7M bazuje na tych samych kodach raportowania podatku, które zostały użyte w raporcie JPK_VAT. Aby uzyskać więcej informacji, zobacz temat [Wygeneruj ewidencję zakupów i sprzedaży VAT JPK](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
+Implementacja raportu JPK-V7M oparta jest na tym samym przykładzie w temacie [Przygotowywanie do raportowania JPK-V7M](emea-pol-vdek-setup.md) dla raportu JPK_VAT. Aby uzyskać więcej informacji, zobacz temat [Wygeneruj ewidencję zakupów i sprzedaży VAT JPK](emea-pol-standard-audit-file-saf.md#generate-a-saf-vat-sales-and-purchase-register).
 
-W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie JPK_VAT i ich mapowanie z elementami **K_\*** raportu JPK-V7M.
+W poniższej tabeli pokazano przykład kodów raportowania podatków i ich mapowanie przy użyciu elementów **K_\*** raportu JPK-V7M.
 
 | Nazwa elementu     | Opis elementu | Kody raportowania podatku |
 |------------------|---------------------|---------------------------|
@@ -62,8 +62,8 @@ W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie 
 | K_28             | Wartość podatku należnego wynikającego z importu usług podlegających art. 28b ustawy o VAT. Usługi zakupione od podatników VAT są wyłączone. | 11112 |
 | K_29             | Wysokość podstawy opodatkowania wynikająca z importu usług nabywanych od podatników podatku od wartości dodanej, do których stosuje się art. 28b ustawy o VAT. | 11210, 11119 (zmiana zwrotna) |
 | K_30             | Wysokość podatku należnego wynikająca z importu usług nabywanych od podatników podatku od wartości dodanej, do których stosuje się art. 28b ustawy o VAT. | 11212 |
-| K_31             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów, dla których podatnikiem jest nabywca zgodnie z art. 17 ust. 1 pkt 5 ustawy o VAT. | Brak wartości domyślnej |
-| K_32             | Wysokość podatku należnego wynikająca z dostawy towarów, dla których podatnikiem jest nabywca zgodnie z art. 17 ust. 1 pkt 5 ustawy o VAT. | Brak wartości domyślnej |
+| K_31             | Wysokość podstawy opodatkowania wynikająca z dostawy towarów, dla których podatnikiem jest nabywca zgodnie z art. 17 ust. 1 pkt 5 ustawy o VAT. | 11901, 11904 |
+| K_32             | Wysokość podatku należnego wynikająca z dostawy towarów, dla których podatnikiem jest nabywca zgodnie z art. 17 ust. 1 pkt 5 ustawy o VAT. | 11903, 11906 |
 | K_33             | Wysokość podatku należnego od towarów objętych spisem z natury, o którym mowa w art. 14 ust. 5 ustawy o VAT. | Brak wartości domyślnej |
 | K_34             | Wysokość zwrotu odliczonej lub zwróconej kwoty wydanej na zakup kas rejestrujących, o którym mowa w art. 111 ust. 6 ustawy o VAT. | Brak wartości domyślnej |
 | K_35             | Wysokość podatku należnego od wewnątrzwspólnotowego nabycia środków transportu, wykazana w wysokości podatku należnego z tytułu wewnątrzwspólnotowego nabycia towarów, podlegająca wpłacie w terminie, o którym mowa w art. 103 ust. 3, w związku z ust. 4 ustawy o VAT. | Brak wartości domyślnej |
@@ -95,21 +95,38 @@ W poniższej tabeli przedstawiono kody raportowania podatku używane w raporcie 
     - **1** — to złożenie jest pierwszym złożeniem deklaracji za podany okres. Ta wartość jest wartością domyślną.
     - **2** — to złożenie jest poprawionym złożeniem deklaracji za podany okres.
 
-Można także określić wartości ręczne dla następujących dodatkowych pól, które są powiązane z elementami deklaracji.
+7. W dodatkowym polu **Wersja schematu** należy określić, która wersja schematu XML Schema Definition (XSD) ma zostać użyta do wygenerowania raportu. Dwie wartości są dozwolone:
 
-| Imię i nazwisko     | Znacznik deklaracji | Opis (EN) | Opis (PL) |
-|----------|------------------------|------------------|------------------|
-| P_39     | P_39 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
-| P_49     | P_49 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego. Kwota wykazana w **P_49** nie może być większa niż **P_38** – **P_48**. Jeśli **P_38** – **P_48** jest mniejsze lub równe 0 (zero), należy wykazać **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
-| P_50     | P_50 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość podatku objęta zaniechaniem poboru. Wartość **P_50** nie może być większa niż **P_38** – **P_48** – **P_49**. Jeśli **P_38** – **P_48** – **P_49** jest mniejsze lub równe zero (0) lub większe lub równe **P_50**, należy wykazać **0**. | Wysokość podatku objęta zaniechaniem poboru |
-| P_52     | P_52 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie i zwracana w danym okresie rozliczeniowym. Ewentualnie kwota wydana na zakup kas rejestrujących, która zwiększa kwotę podatku naliczonego do przeniesienia na następny okres rozliczeniowy. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
-| P_54     | P_54 | Kwota nadwyżki naliczonego podatku, która musi zostać zwrócona na konto wskazane przez podatnika. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
-| P_54_Powód | P_55, P_56, P_57, P_58, w zależności od wyboru użytkownika | Zwrot na konto bankowe, o którym mowa w art. 87, ust. 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), lub 5a (**P_58**) ustawy o podatku VAT. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
-| P_60     | P_60 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Zaliczenie zwrotu podatku na poczet przyszłych zobowiązań podatkowych. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
-| P_61     | P_61 | Ciąg (1..240), który musi zostać użyty, jeśli użyte jest **P_60**. Rodzaj przyszłego zobowiązania podatkowego. | Rodzaj przyszłego zobowiązania podatkowego |
-| P_ORDZU  | P_ORDZU | Ciąg (1.. 240). Uzasadnienie przyczyn złożenia korekty zwrotu VAT. | Uzasadnienie przyczyn złożenia korekty |
+    - **1** dla JPK-V7M(1)
+    - **2** dla JPK-V7M(2)
 
-Dodatkowe pole **P_54_Powód** jest dostępne od wersji 98.194 konfiguracji ER **JPK-V7M XML format (PL)** i wersji 98.194.50 konfiguracji raportowania elektronicznego (ER) **JPK-V7M Excel format (PL)**. Może zostać zaimportowane przy użyciu pliku **PL JPK_V7M EM setup v.5 KB4614816.zip** (wersja 5 lub nowsza pakietu encji danych zawierającego wstępnie zdefiniowaną konfiguracją elektronicznej wymiany danych).
+   Dodatkowe pole **Wersja schematu** zostało wprowadzone w pakiecie ZIP **PL JPK-V7M EM setup v.6 KB5007691** (wersja 6 lub nowsza pakietu encji danych, które zawierają wstępnie zdefiniowaną konfigurację wiadomości elektronicznych). W pakiecie **PL JPK-V7M EM setup v.6 KB5007691** dodatkowe pole **Wersja schematu** będzie mieć domyślnie wartość **1**. Dlatego podczas tworzenia nowej wiadomości elektronicznej dodatkowe pole **Wersja schematu** ma wartość **1**. Aby zmienić wartość domyślną tego pola, przejdź do pozycji **Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne** \> **Przetwarzanie wiadomości elektronicznych**, wybierz **JPK-V7M** po lewej stronie, a następnie na skróconej karcie **Dodatkowe pola wiadomości** znajdź dodatkowe pole **Wersja schematu** i wybierz wartość z listy.
+
+8. W polu dodatkowym **Skład pliku** określ, która zawartość JPK-V7M ma zostać uwzględniona w raporcie. Dwie wartości są dozwolone:
+
+    - **Pełny pliku XML** dla pełnego pliku XML
+    - **Tylko ewidencja** tylko dla węzła **Ewidencja**
+
+    Dodatkowe pole **Skład pliku** zostało wprowadzone w pakiecie ZIP **PL JPK-V7M EM setup v.6 KB5007691** (wersja 6 lub nowsza pakietu encji danych, które zawierają wstępnie zdefiniowaną konfigurację wiadomości elektronicznych). W pakiecie **PL JPK-V7M EM setup v.6 KB5007691** dodatkowe pole **Skład pliku** będzie mieć domyślnie wartość **Pełny plik XML**. Dlatego podczas tworzenia nowej wiadomości elektronicznej dodatkowe pole **Skład pliku** ma wartość **Pełny plik XML**. Aby zmienić wartość domyślną tego pola, przejdź do pozycji **Podatek** \> **Ustawienia** \> **Wiadomości elektroniczne** \> **Przetwarzanie wiadomości elektronicznych**, wybierz **JPK-V7M** po lewej stronie, a następnie na skróconej karcie **Dodatkowe pola wiadomości** znajdź dodatkowe pole **Skład pliku** i wybierz wartość z listy.
+
+9. Można także określić wartości ręczne dla następujących dodatkowych pól, które są powiązane z elementami deklaracji.
+
+    | Imię i nazwisko     | Znacznik deklaracji | Opis (EN) | Opis (PL) |
+    |----------|------------------------|------------------|------------------|
+    | P_39     | P_39 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji. | Wysokość nadwyżki podatku naliczonego nad należnym z poprzedniej deklaracji |
+    | P_49     | P_49 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego. Kwota wykazana w **P_49** nie może być większa niż **P_38** – **P_48**. Jeśli **P_38** – **P_48** jest mniejsze lub równe 0 (zero), należy wykazać **0**. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym pomniejszająca wysokość podatku należnego |
+    | P_50     | P_50 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Wysokość podatku objęta zaniechaniem poboru. Wartość **P_50** nie może być większa niż **P_38** – **P_48** – **P_49**. Jeśli **P_38** – **P_48** – **P_49** jest mniejsze lub równe zero (0) lub większe lub równe **P_50**, należy wykazać **0**. | Wysokość podatku objęta zaniechaniem poboru |
+    | P_52     | P_52 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie i zwracana w danym okresie rozliczeniowym. Ewentualnie kwota wydana na zakup kas rejestrujących, która zwiększa kwotę podatku naliczonego do przeniesienia na następny okres rozliczeniowy. | Kwota wydana na zakup kas rejestrujących, do odliczenia w danym okresie rozliczeniowym przysługująca do zwrotu w danym okresie rozliczeniowym lub powiększająca wysokość podatku naliczonego do przeniesienia na następny okres rozliczeniowy |
+    | P_54     | P_54 | Kwota nadwyżki naliczonego podatku, która musi zostać zwrócona na konto wskazane przez podatnika. | Wysokość nadwyżki podatku naliczonego nad należnym do zwrotu na rachunek wskazany przez podatnika |
+    | P_54_Powód — w JPK-V7M(1) | P_55, P_56, P_57, P_58, w zależności od wyboru użytkownika. | Zwrot na konto bankowe, o którym mowa w art. 87, ust. 6a (**P_55**), 6 (**P_56**), 2 (**P_57**), lub 5a (**P_58**) ustawy o podatku VAT. | Zwrot na rachunek VAT, o którym mowa w art. 87 ust. 6a (P_55) lub 6 (P_56) lub 2 (P_57) lub 5a (P_58) ustawy |
+    | P_54_Powód — w JPK-V7M(2) | P_540, P_55, P_56, P_560, P_57 lub P_58, w zależności od wyboru użytkownika. | Zwrot na konto podatku VAT w ciągu 15 dni (**P_540**), 25 dni (**P_55**), 25 dni (art. 87, sekcja 6 Ustawy o podatku VAT Act) (**P_56**), 40 dni (**P_560**), 60 dni (**P_57**) lub 180 dni (**P_58**). | Zwrot na rachunek rozliczeniowy podatnika w terminie 15 dni (P_540), 25 dni (P_55), 25 dni (art. 87 ust. 6 ustawy) (P_56), 40 dni (P_560), 60 dni (P_57) lub 180 dni (P_58) |
+    | P_60     | P_60 | Nieujemna liczba całkowita, która ma maksymalnie 14 cyfr. Zaliczenie zwrotu podatku na poczet przyszłych zobowiązań podatkowych. | Wysokość zwrotu do zaliczenia na poczet przyszłych zobowiązań podatkowych |
+    | P_61     | P_61 | Ciąg (1..240), który musi zostać użyty, jeśli użyte jest **P_60**. Rodzaj przyszłego zobowiązania podatkowego. | Rodzaj przyszłego zobowiązania podatkowego |
+    | P_ORDZU  | P_ORDZU | Ciąg (1.. 240). Uzasadnienie przyczyn złożenia korekty zwrotu VAT. | Uzasadnienie przyczyn złożenia korekty |
+
+Dodatkowe pole **P_54_Powód** dla JPK-V7M(**1**) jest dostępne od wersji 98.194 konfiguracji raportowania elektronicznego (ER) **JPK-V7M JPK format (PL)** i wersji 98.194.50 konfiguracji ER **JPK-V7M Excel format (PL)**. Może zostać zaimportowane przy użyciu pliku **PL JPK_V7M EM setup v.5 KB4614816.zip** (wersja 5 lub nowsza pakietu encji danych zawierającego wstępnie zdefiniowaną konfiguracją elektronicznej wymiany danych).
+
+Dodatkowe pole **P_54_Powód** dla JPK-V7M(**2**) jest dostępne w ramach wersji konfiguracji ER **JPK-V7M XML format (PL)** i **JPK-V7M Excel format (PL)** dostarczanych w zakresie artykułu KB5007691. Może zostać zaimportowane przy użyciu pliku **PL JPK-V7M EM setup v.6 KB5007691.zip** (wersja 6 lub nowsza pakietu encji danych zawierającego wstępnie zdefiniowaną konfiguracją elektronicznej wymiany danych).
 
 ## <a name="generate-the-jpk-v7m-report-in-excel-format-for-preview"></a>Wygeneruj raport JPK-V7M w formacie Excel do podglądu
 

@@ -2,7 +2,7 @@
 title: Zastosuj ustawienia zapasów
 description: W tym temacie opisano ustawienia zapasów oraz sposób ich stosowania w Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765273"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647591"
 ---
 # <a name="apply-inventory-settings"></a>Zastosuj ustawienia zapasów
 
@@ -39,7 +39,7 @@ W konstruktorze witryn Commerce można definiować progi i zakresy zapasów dla 
 
 ## <a name="inventory-settings"></a>Ustawienia zapasów
 
-W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> Rozszerzenia \> Zarządzanie zapasami** w konstruktorze witryn. Istnieje pięć ustawień zapasów, z których jedno jest przestarzałe:
+W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> Rozszerzenia \> Zarządzanie zapasami** w konstruktorze witryn. Istnieje sześć ustawień zapasów, z których jedno jest przestarzałe:
 
 - **Włącz sprawdzanie zapasów w aplikacji** — to ustawienie powoduje włączenie sprawdzania zapasów produktów. Pole zakupu, koszyk i pobieranie w modułach sklepów będą sprawdzać magazyn produktów i zezwalać na dodanie produktu do koszyka tylko wtedy, gdy zapasy są dostępne.
 - **Poziom zapasów na podstawie** — to ustawienie określa sposób obliczania poziomów zapasów. Dostępne wartości to **Razem dostępne**, **Dostępne fizycznie** i **Próg wyprzedania**. W Commerce można zdefiniować próg i zakresy zapasów dla każdego produktu i kategorii. Interfejsy API magazynu zwracają informacje o zapasach produktów dla zarówno właściwości **Razem dostępne**, jak i właściwości **Fizycznie dostępne**. Detalista decyduje, czy wartość **Razem dostępne** lub **Fizycznie dostępne** powinna być używana do określenia licznika zapasów i odpowiednich zakresów w Stanach zapasów i poza magazynem.
@@ -48,8 +48,13 @@ W module Commerce ustawienia zapasów są definiowane w **Ustawienia witryny \> 
 
 - **Poziom zapasów dla wielu magazynów** — to ustawienie umożliwia obliczenia poziomu zapasów względem domyślnego magazynu lub wielu magazynów. Opcja **Oparte na pojedynczych magazynach** umożliwia obliczanie poziomów zapasów na podstawie magazynu domyślnego. Innym rozwiązaniem jest witryna handlu elektronicznego wskazująca wiele magazynów, aby ułatwić realizację. W takim przypadku do wskazania dostępności zapasów służy opcja **Na podstawie agregowania magazynów wysyłki i pobrania**. Jeśli na przykład odbiorca kupuje towar i wybiera opcję „wysyłka” jako tryb dostawy, towar można wysłać z dowolnego magazynu w grupie realizacji, który ma dostępne zapasy. Na stronie szczegółów produktu (PDP) wyświetlany jest komunikat „W magazynie” dla wysyłki, jeśli dowolny dostępny magazyn wysyłkowy w grupie realizacji ma jego zapas. 
 
-> [!IMPORTANT] 
-> Ustawienie **Poziom zapasów dla wielu magazynów** jest dostępne w Commerce od wersji 10.0.19. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > Ustawienie **Poziom zapasów dla wielu magazynów** jest dostępne w Commerce od wersji 10.0.19. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Ustawienia zapasów dla stron listy produktów** — to ustawienie definiuje sposób, w jaki produkty są poza magazynem pokazywane na listach produktów renderowanych w modułach wyników gromadzenia produktów i wyników wyszukiwania. Dostępne wartości to **Wyświetlanie w kolejności z innymi produktami**, **Ukrywanie się niedostępnych produktów na liście** i **Wyświetlanie niedostępnych produktów na końcu listy**. Aby można było korzystać z tego ustawienia, najpierw należy skonfigurować wymagane ustawienia w programie Commerce Headquarters. Aby uzyskać więcej informacji, zobacz temat [Włączanie świadomości zapasów dla modułu wyników wyszukiwania](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > Ustawienie **Ustawienia zapasów dla stron listy produktów** jest dostępne w Commerce od wersji 10.0.20. W przypadku aktualizacji ze starszej wersji Commerce należy ręcznie zaktualizować plik appsettings.json. Aby uzyskać instrukcje, zobacz [Aktualizacje zestawu SDK i biblioteki modułów](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Zakresy zapasów** — to ustawienie definiuje zakresy zapasów, które są wyświetlane w wiadomościach w modułach witryny. Ma to zastosowanie tylko wtedy, gdy wybrano wartość **Razem Dostępne** lub **Dostępne Fizycznie** dla poziomu **Poziom zapasów w oparciu o ustawienie**. Dostępne wartości to **Wszystkie**, **Mała ilość i wyprzedane** oraz **Wyprzedane**.
 

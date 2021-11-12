@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463847"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700386"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Rozpoczynanie pracy z fakturowaniem elektronicznym
 
@@ -84,6 +84,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
 | Norweska faktura elektroniczna (NIE)    | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
 | Hiszpańska faktura elektroniczna (ES)      | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
 | Faktura elektroniczna PEPPOL            | <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
+| Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Model kontekstowy faktur sprzedaży</p><p>Model faktury</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Skonfiguruj ustawienia aplikacji
@@ -112,6 +113,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Arkusz faktur dla odbiorcy</p><p>Faktura projektu</p> |
 
 6. Dla każdej utworzonej nazwy tabeli wybierz i wprowadź wartość kontekstu zgodnie z poniższą tabelą.
 
@@ -133,6 +135,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Model kontekstu faktury dla odbiorcy — kontekst faktury dla odbiorcy</p><p>Model kontekstu faktury dla odbiorcy — Kontekst faktury za projekt</p> |
 
 7. Dla każdej nazwy tabeli i kontekstu wybierz i wprowadź wartość odwzorowania dokumentu biznesowego zgodnie z poniższą tabelą.
 
@@ -154,6 +157,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | Norweska faktura elektroniczna (NIE)    | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Hiszpańska faktura elektroniczna (ES)      | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
     | Faktura elektroniczna PEPPOL            | <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)| <p>Faktura sprzedaży</p><p>Faktura projektu</p> | <p>Mapowanie modelu faktury — faktura dla odbiorcy</p><p>Mapowanie modelu faktury — Faktura za projekt</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Specyficzna dla kraju konfiguracja aplikacji
@@ -205,8 +209,10 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
     | NF-e Federal — Brazylijska faktura elektroniczna (BR)      | Brazylia          |
     | NFS-e — faktura elektroniczna usługi brazylijskiej (miasto)   | Brazylia          |
     | Norweska faktura elektroniczna (NIE)                     | Norwegia          |
-    | Faktura elektroniczna PEPPOL                             | Globalna          |
+    | Faktura elektroniczna PEPPOL                             | Globalnie          |
     | Hiszpańska faktura elektroniczna (ES)                       | Hiszpania           |
+    | Faktury elektroniczne dla Arabii Saudyjskiej (SA)                 | Arabia Saudyjska    |
+    
 
 4. Wybierz opcję **Zapisz**.
 
@@ -244,6 +250,7 @@ Aby uzyskać szczegółowe informacje o tych krokach, zobacz dokumentację „Wp
 - [Rozpoczynanie pracy z fakturowaniem elektronicznym dla Meksyku](e-invoicing-mex-get-started.md)
 - [Rozpoczynanie pracy z fakturowaniem elektronicznym dla Włoch](e-invoicing-ita-get-started.md)
 - [Faktury elektroniczne odbiorcy w Egipcie](emea-egy-e-invoices.md)
+- [Faktury elektroniczne dla odbiorcy w Arabii Saudyjskiej](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

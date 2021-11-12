@@ -2,7 +2,7 @@
 title: Możliwości siatki
 description: W tym temacie opisano kilka zaawansowanych funkcji formantu siatki. Musisz włączyć nową funkcje siatki, aby można było uzyskać dostęp do tych możliwości.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483861"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700144"
 ---
 # <a name="grid-capabilities"></a>Możliwości siatki
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Nowa kontrolka siatki zapewnia kilka przydatnych i zaawansowanych funkcji, które mogą być używane w celu zwiększenia wydajności użytkowników, tworzenia bardziej interesujących widoków danych oraz uzyskiwania informacji o szczegółowych danych. Ten artykuł będzie obejmował następujące możliwości: 
@@ -32,6 +33,8 @@ Nowa kontrolka siatki zapewnia kilka przydatnych i zaawansowanych funkcji, któr
 -  Ocenianie wyrażeń matematycznych 
 -  Grupowanie danych tabelarycznych (włączone oddzielnie za pomocą funkcji **Grupowania w module siatki**)
 -  Zamrażanie kolumn
+-  Automatyczne dopasowanie szerokości kolumny
+-  Rozszerzalne kolumny
 
 ## <a name="calculating-totals"></a>Obliczanie sum
 W aplikacjach grupy Finance and Operations użytkownicy mają możliwość wyświetlania sum na dole kolumn liczbowych w siatkach. Sumy te są wyświetlane w sekcji stopki u dołu siatki. 
@@ -43,7 +46,7 @@ W dolnej części każdej siatki tabelarycznej w aplikacjach Finance and Operati
 - Sumy końcowe u dołu skonfigurowanych kolumn liczbowych
 - Liczby kolumn w zestawie danych 
 
-Ta stopka jest domyślnie ukryta, ale możesz ją włączyć. Aby wyświetlić stopkę siatki, kliknij prawym przyciskiem myszy nagłówek kolumny w siatce i wybierz opcję **Pokazuj stopkę**. Po włączeniu stopki dla określonej siatki to ustawienie będzie przypominane do czasu, aż użytkownik zdecyduje się ukrywać stopkę. Aby ukryć stopkę, kliknij prawym przyciskiem myszy nagłówek kolumny i wybierz polecenie **Ukryj stopkę**.  (Położenie akcji **Pokazuj stopkę/Ukryj stopkę** może zmienić się na nową lokalizację w przyszłej aktualizacji). 
+Ta stopka jest domyślnie ukryta, ale możesz ją włączyć. Aby wyświetlić stopkę siatki, wybierz przycisk **Opcje siatki** w nagłówku siatki i wybierz opcję **Pokazuj stopkę**. Po włączeniu stopki dla określonej siatki to ustawienie będzie przypominane do czasu, aż użytkownik wybierze opcję ukrywania stopki. Aby ukryć stopkę, wybierz opcję **Ukryj stopkę** w menu **Opcje siatki**.  
 
 ### <a name="specifying-columns-with-totals"></a>Określanie kolumn z sumami
 Obecnie domyślnie żadne kolumny nie zawierają sum. Zamiast tego jest to uważane za jednorazowe działanie konfiguracji, podobne do korygowania szerokości kolumn w siatkach. Po określeniu, że dla kolumny mają być wyświetlone sumy, to ustawienie zostanie zapamiętane przy następnej wizycie na tej stronie.  
@@ -82,7 +85,7 @@ Aby można było obsłużyć to nowe zachowanie, nowa kolumna dla stanu wiersza 
 Gdy użytkownicy wprowadzają dane przed miejscem przetwarzania serwera, mogą oczekiwać na wprowadzenie kilku degradacji w środowisku wprowadzania danych, takich jak brak wyszukiwań, sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych. Użytkownicy, którzy potrzebują listy rozwijanej do znalezienia wartości, są zachęcani do czekania, aż serwer dogoni bieżący wiersz. Sprawdzanie poprawności na poziomie kontroli i wprowadzanie wartości domyślnych będą również występować, gdy serwer przetwarza ten wiersz.   
 
 ### <a name="pasting-from-excel"></a>Wklejanie z programu Excel
-Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach Finance and Operations do programu Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach Finance and Operations. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
+Użytkownicy zawsze mogli eksportować dane z siatek w aplikacjach Finance and Operations do programu Microsoft Excel za pomocą mechanizmu **Eksport do programu Excel**. Jednak możliwość wprowadzania danych przed systemem umożliwia nowej siatce obsługę kopiowania tabel z programu Excel i wklejanie ich bezpośrednio do siatek w aplikacjach Finance and Operations. Komórka siatki, z której jest inicjowana operacja wklejenia określa miejsce, w którym rozpocznie się wklejanie skopiowanej tabeli. Zawartość siatki jest zastępowana zawartością skopiowanej tabeli, z wyjątkiem dwóch przypadków:
 
 - Jeśli liczba kolumn w kopiowanej tabeli przekracza liczbę kolumn pozostających w siatce, rozpoczynając od lokalizacji wklejania, użytkownik zostanie poinformowany, że dodatkowe kolumny zostały zignorowane. 
 - Jeśli liczba wierszy w kopiowanej tabeli przekracza liczbę wierszy w siatce, począwszy od lokalizacji wklejania, istniejące komórki zostaną zastąpione przez wklejoną zawartość, a wszystkie dodatkowe wiersze ze skopiowanej tabeli zostaną wstawione jako nowe wiersze u dołu siatki. 
@@ -125,6 +128,9 @@ Aby zamrozić kolumnę, kliknij prawym przyciskiem myszy nagłówek kolumny, a n
 Aby odmrozić kolumnę, kliknij prawym przyciskiem myszy nagłówek zamrożonej kolumny, a następnie wybierz polecenie **Odmroź kolumnę**. 
 
 Należy zauważyć, że wybór wierszy i kolumny stanu wiersza w nowej siatce są zawsze zamrożone jako pierwsze dwie kolumny. Dlatego kiedy te kolumny są zawarte w siatce, zawsze będą widoczne dla użytkowników, niezależnie od pozycji przewijania w poziomie w siatce. Nie można zmienić kolejności tych dwóch kolumn.
+
+## <a name="autofit-column-width"></a>Automatyczne dopasowanie szerokości kolumny
+Podobnie jak w programie Excel, użytkownicy mogą automatycznie wymuszać zmianę rozmiaru kolumny na podstawie zawartości aktualnie wyświetlanej w tej kolumnie. W tym celu należy dwukrotnie kliknąć w kolumnie uchwyty zmiany rozmiaru lub umieścić fokus w nagłówku kolumny i nacisnąć klawisz **A** (w celu automatycznego dopasowania). Ta możliwość jest dostępna od wersji 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Często zadawane pytania
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Jak włączyć formant nowej siatki w środowisku? 

@@ -2,7 +2,7 @@
 title: Rozpoczynanie pracy z obliczaniem podatku
 description: W tym temacie wyjaśniono, jak skonfigurować obliczanie podatku.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562133"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647441"
 ---
 # <a name="get-started-with-tax-calculation"></a>Rozpoczynanie pracy z obliczaniem podatku
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Ten temat zawiera informacje dotyczące sposobu rozpoczęcia pracy z obliczaniem podatku. Przeprowadzi użytkownika przez etapy konfiguracji Microsoft Dynamics Lifecycle Services (usługi LCS), Regulatory Configuration Services (RCS) Dynamics 365 Finance i Dynamics 365 Supply Chain Management. Następnie przegląda wspólny proces korzystania z funkcji obliczania podatków w transakcjach zarządzania Finance i Supply Chain Management.
 
@@ -41,29 +39,10 @@ Ta konfiguracja składa się z następujących czterech kroków:
 
 Przed wykonaniem procedur opisanych w tym temacie muszą być spełnione wymagania wstępne dotyczące poszczególnych typów środowiska:
 
-### <a name="for-a-production-environment"></a>W przypadku środowiska produkcyjnego
-
-W przypadku środowiska produkcyjnego muszą być spełnione następujące wymagania wstępne:
+Następujące warunki wstępne muszą być spełnione:
 
 - Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza.
 - Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
-- Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
-
-    - Usługa obliczania podatku
-    - Obsługa wielu numerów rejestracji VAT
-    - Podatek w zleceniu przeniesienia
-
-- Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku RCS.
-
-    - Funkcje globalizacji
-
-### <a name="for-a-test-environment-public-preview"></a>W przypadku środowiska testowego (publiczna wersja zapoznawcza)
-
-W przypadku środowiska testowego muszą być spełnione następujące wymagania wstępne:
-
-- Musisz mieć dostęp do swojego konta usługi LCS i mieć wdrożony projekt usługi LCS ze środowiskiem warstwy 2 (lub wyższej), w którym jest uruchomiona wersja Dynamics 365 10.0.21 lub nowsza wersja.
-- Musisz utworzyć środowisko RCS dla swojej organizacji i mieć dostęp do swojego konta. Aby uzyskać więcej informacji dotyczących sposobu tworzenia środowiska RCS, zobacz temat [Omówienie usługi Regulatory Configuration Service](rcs-overview.md).
-- Musisz skontaktować się z firmą Microsoft, wysyłając e-mail na adres <taxcalc@microsoft.com>, w sprawie włączenia lotowania w wdrożonym środowisku Finance lub Supply Chain Management.
 - Następujące funkcje muszą być włączone w obszarze roboczym **Zarządzanie funkcjami** w wdrożonym środowisku Finance lub Supply Chain Management, zależnie od indywidualnych potrzeb:
 
     - Usługa obliczania podatku

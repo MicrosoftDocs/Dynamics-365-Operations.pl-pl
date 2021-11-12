@@ -2,7 +2,7 @@
 title: Omówienie obliczania podatku
 description: W tym temacie wyjaśniono ogólny zakres i funkcje obliczania podatku.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394593"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647064"
 ---
 # <a name="tax-calculation-overview"></a>Omówienie obliczania podatku
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Obliczanie podatku to hyper-skalowalna usługa wielowątkowa, która umożliwia aparatowi Global tax engine automatyzowanie i upraszczanie procesu określania i obliczania podatków. Aparat podatków jest w pełni konfigurowalny. Elementy, które można konfigurować, obejmują model danych podlegających opodatkowaniu, kod podatku, macierz możliwości stosowania podatku oraz formułę obliczania podatku. Aparat podatków działa na podstawowej platformie usług Microsoft Azure i oferuje nowoczesne technologie oraz skalowalność.
 
@@ -120,6 +118,10 @@ W wersji 10.0.21 są obsługiwane następujące transakcje:
     - Przeniesienie zamówienia - wysyłka
     - Zamówienie przeniesienia - odbiór
 
+W wersji 10.0.23 są obsługiwane następujące transakcje: 
+
+- Faktura niezależna
+
 ## <a name="supported-countriesregions"></a>Obsługiwane kraje/regiony
 
 Obliczanie podatku może zostać włączone zależnie od firmy. 
@@ -145,6 +147,28 @@ W wersji 10.0.21 są obsługiwane następujące kraje/regiony adresu podstawoweg
 - Szwajcaria
 - Wielka Brytania
 - Stany Zjednoczone
+
+W wersji 10.0.22 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+
+- Australia
+- Bahrajn
+- Kanada
+- Egipt
+- SRA Hongkong
+- Kuwejt
+- Nowa Zelandia
+- Oman
+- Katar
+- Arabia Saudyjska
+- RPA
+- Zjednoczone Emiraty Arabskie
+
+W wersji 10.0.23 są obsługiwane następujące kraje/regiony adresu podstawowego firmy:
+
+- Tajlandia
+- Japonia
+- Malezja
+- Singapur
 
 ## <a name="related-resources"></a>Powiązane zasoby
 

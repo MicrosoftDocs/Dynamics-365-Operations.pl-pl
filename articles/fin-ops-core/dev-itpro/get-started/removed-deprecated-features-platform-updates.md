@@ -2,7 +2,7 @@
 title: Usunięte lub wycofane funkcje Platform
 description: W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do usunięcia aktualizacji platformy z aplikacji Finance and Operations.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595152"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725056"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Usunięte lub wycofane funkcje Platform
 
@@ -31,6 +31,64 @@ W tym temacie opisano funkcje, które zostały usunięte lub są przeznaczone do
 Ta lista ma na celu ułatwienie uwzględnienia usuniętych i przestarzałych funkcji we własnym planowaniu. 
 
 Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Operations można znaleźć w temacie [Raporty dotyczące odwołań technicznych](/dynamics/s-e/global/axtechrefrep_61). Można porównać różne wersje tych raportów, aby dowiedzieć się więcej o obiektach, które zostały zmienione lub usunięte w poszczególnych wersjach aplikacji Finance and Operations.
+
+## <a name="feature-removal-effective-october-2021"></a>Usunięcie funkcji z początkiem października 2021 roku
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Raporty SQL Microsoft Azure w usługach LifeCycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wszystkie czynności i monitoring będą wykonywane wewnętrznie, przez platformę, poprzez automatyzację. Nie będzie to wymagać ręcznej interwencji.|
+| **Zamieniona przez inną funkcję?**   | Tak, istnieje teraz system automatyczny, który powoduje przestarzałe te możliwości. |
+| **Powiązane obszary produktów**         | Raporty SQL: Bieżące jednostki DTU, Szczegóły bieżącej jednostki DTU, Pobierz szczegóły blokady, Lista bieżącego przewodnika planu, Pobierz listę identyfikatorów zapytania, Pobierz plan zapytania SQL dla danego identyfikatora planu, Pobierz plany i stan wykonywania zapytań, Pobierz konfigurację ograniczenia, Pobierz statystyki oczekiwania, Lista najdroższych zapytań |
+| **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
+| **Stan**                         | Usunięto |
+
+### <a name="azure-sql-actions-in-lcs"></a>Akcje SQL Azure w usłudze LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Wycofujemy niektóre akcje SQL w usługach LCS. Wszystkie czynności i monitoring będą wykonywane wewnętrznie, przez platformę, poprzez automatyzację. Nie będzie to wymagać ręcznej interwencji. |
+| **Zamieniona przez inną funkcję?**   | Tak, istnieje teraz system automatyczny, który powoduje przestarzałe te możliwości. |
+| **Powiązane obszary produktów**         | Akcje SQL: Tworzenie przewodnika planu, który wymusza identyfikator planu, Tworzenie przewodnika planu umożliwiającego dodawanie wskazówek dla tabeli, Usuwanie przewodnika planu, Wyłączanie/włączanie blokad stron i eskalacji blokad, Aktualizowanie statystyk w tabeli, Odbudowa indeksu, Tworzenie indeksu |
+| **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
+| **Stan**                         | Usunięto |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Wycofanie funkcji z użytku w październiku 2021 r.
+
+### <a name="show-related-document-attachments-feature"></a>Funkcja „Pokaż załączniki powiązanych dokumentów”
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Funkcja zwracała nieoczekiwane wyniki. |
+| **Zamieniona przez inną funkcję?**   | Nr Wszelkie dalsze plany dotyczące tej funkcji będą komunikowane za pośrednictwem standardowego procesu ujawniania grupy czynności wydania. |
+| **Powiązane obszary produktów**         | Klient sieci Web — doświadczenie załącznika dokumentu |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Przestarzałe  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.23 aplikacji Finance and Operations
+
+### <a name="ondbsynchronize-event"></a>Zdarzenie OnDBSynchronize
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Brak formantu do wykonania tego zdarzenia. |
+| **Zamieniona przez inną funkcję?**   | Tak, przenieś istniejące metody subskrybowane przez zdarzenie **OnDBSynchronize** do rozszerzonej klasy SysSetup. |
+| **Powiązane obszary produktów**         | Synchronizacja bazy danych |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane. Planowana data usunięcia to październik 2022 r. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>Interfejs API SystemNotificationsManager.AddNotification
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Przyczyna wycofania/usunięcia** | Firma Microsoft wymaga dodatkowych parametrów podczas dodawania powiadomień. |
+| **Zamieniona przez inną funkcję?**   | Tak, interfejs API **SystemNotificationsManager.AddSystemNotification()**. Ten interfejs API wymaga jawnego ustawienia funkcji ExpirationDateTime i RuleID dla generowanych powiadomień. |
+| **Powiązane obszary produktów**         | Klient sieci Web |
+| **Opcja wdrażania**              | Wszystko |
+| **Stan**                         | Wycofane. Planowana data usunięcia to kwiecień 2023 r. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Aktualizacje platformy dla wersji 10.0.21 aplikacji Finance and Operations
 
@@ -54,7 +112,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak, istnieje teraz system automatyczny, który powoduje przestarzałe te możliwości. |
 | **Powiązane obszary produktów**         | Raporty SQL: Bieżące jednostki DTU, Szczegóły bieżącej jednostki DTU, Pobierz szczegóły blokady, Lista bieżącego przewodnika planu, Pobierz listę identyfikatorów zapytania, Pobierz plan zapytania SQL dla danego identyfikatora planu, Pobierz plany i stan wykonywania zapytań, Pobierz konfigurację ograniczenia, Pobierz statystyki oczekiwania, Lista najdroższych zapytań |
 | **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
-| **Stan**                         | Wycofanie: Planowana data usunięcia w październiku 2021 roku. |
+| **Stan**                         | Wycofanie: planowana data usunięcia to październik 2021 roku. |
 
 ### <a name="azure-sql-actions-in-lcs"></a>Akcje SQL Azure w usłudze LCS
 
@@ -64,7 +122,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak, istnieje teraz system automatyczny, który powoduje przestarzałe te możliwości. |
 | **Powiązane obszary produktów**         | Akcje SQL: Tworzenie przewodnika planu, który wymusza identyfikator planu, Tworzenie przewodnika planu umożliwiającego dodawanie wskazówek dla tabeli, Usuwanie przewodnika planu, Wyłączanie/włączanie blokad stron i eskalacji blokad, Aktualizowanie statystyk w tabeli, Odbudowa indeksu, Tworzenie indeksu |
 | **Opcja wdrażania**              | Wdrożenie w chmurze: dotyczy środowisk produkcyjnych zarządzanych przez Microsoft oraz piaskownicy od warstwy 2 do warstwy 5. |
-| **Stan**                         | Wycofanie: Planowana data usunięcia w październiku 2021 roku. |
+| **Stan**                         | Wycofanie: planowana data usunięcia to październik 2021 roku. |
 
 ## <a name="feature-deprecation-effective-may-2021"></a>Wycofanie funkcji z użytku w maju 2021 r.
 
@@ -76,7 +134,7 @@ Szczegółowe informacje o obiektów w rozwiązaniu aplikacjach Finance and Oper
 | **Zamieniona przez inną funkcję?**   | Tak, ta funkcja została zastąpiona przez usługę [wyszukiwania problemów](../lifecycle-services/issue-search-lcs.md) LCS i [usługę przesyłania alertów dotyczących wymogów prawnych Dynamics](../lcs-solutions/submit-localization-alerts.md). |
 | **Powiązane obszary produktów**         | Portal globalizacyjny w LCS|
 | **Opcja wdrażania**              | Wdrożenie w chmurze |
-| **Stan**                         | Wycofanie: Planowana data usunięcia w maju 2022 roku. |
+| **Stan**                         | Wycofanie: planowana data usunięcia to maj 2022 roku. |
 
 
 ## <a name="feature-removed-effective-january-28-2021"></a>Funkcja usunięta 28 stycznia 2021 r.

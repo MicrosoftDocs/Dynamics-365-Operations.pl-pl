@@ -2,7 +2,7 @@
 title: Lista funkcji modułu ER w kategorii funkcji tekstowych
 description: Ten temat zawiera ogólne informacje o funkcjach tekstowych obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51fc00ba512677ccac9fcfbd26d2b0650f36f3b42eb81fc07d37417fb6d4d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741021"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647567"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Lista funkcji modułu ER w kategorii funkcji tekstowych
 
@@ -40,7 +40,8 @@ Funkcje tekstowe raportowania elektronicznego (ER) mogą służyć do wykonywani
 | [Lewa](er-functions-text-left.md) | Ta funkcja zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków od początku określonego ciągu. |
 | [Len](er-functions-text-len.md) | Ta funkcja zwraca wartość *Liczba całkowita*, która reprezentuje określoną liczbę znaków w określonym ciągu. |
 | [Lower](er-functions-text-lower.md) | Ta funkcja zwraca określony ciąg tekstowy jako wartość *Ciąg* po przekonwertowaniu go na małe litery. |
-| [Mid](er-functions-text-mid.md) | Ta funkcja zwraca wartość *Ciąg*, która reprezentuje określoną liczbę znaków określonego ciągu od określonego położenia. |
+| [Mid](er-functions-text-mid.md) | Ta funkcja zwraca wartość *[Ciąg](er-formula-supported-data-types-primitive.md#string)*, która reprezentuje określoną liczbę znaków określonego ciągu od określonego położenia. |
+| [NewGUID](er-functions-text-newguid.md) | Ta funkcja zwraca nowo wygenerowaną wartość identyfikatora *[GUID](er-formula-supported-data-types-primitive.md#guid)*. |
 | [NumberFormat](er-functions-text-numberformat.md) | Ta funkcja zwraca wartość *Ciąg*, który przedstawia określoną liczbę w określonym formacie i opcjonalnie określonej kulturze. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | Ta funkcja zwraca określoną liczbę jako wartość *Ciąg* po jej zapisaniu (czyli przekonwertowaniu na ciągi tekstowe) w określonym języku. |
 | [PadLeft](er-functions-text-padleft.md) | Ta funkcja zwraca wartość typu *Ciąg* o określonej długości, w której początek ciągu jest dopełniany co najmniej jednym wystąpieniem określonego znaku. |

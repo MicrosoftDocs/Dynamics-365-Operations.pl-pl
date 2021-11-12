@@ -15,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 3134e10c096525ec2d82365a25eff16a3c5d5e11
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 35d78cdcc356d35776940147e9b0afee0f0be2a2
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472663"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674730"
 ---
 # <a name="countryregion-picker-module"></a>Moduł wyboru kraju/regionu
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 W tym temacie omówiono moduł wyboru kraju/regionu i opisano, jak go skonfigurować w Microsoft Dynamics 365 Commerce.
 

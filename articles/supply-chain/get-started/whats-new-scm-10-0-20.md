@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580991"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647321"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Nowości i zmiany w rozwiązaniu Dynamics 365 Supply Chain Management 10.0.20 (sierpień 2021 r.)
 
@@ -46,7 +46,7 @@ Większość tych funkcji należy włączyć, korzystając z [zarządzania funkc
 
 W poniższej tabeli wymieniono rozszerzenia funkcji zawarte w tym wydaniu. Każdy z nich zapewnia stopniowe ulepszanie istniejącej funkcji. Ponieważ są to tylko rozszerzenia, nie są one wymienione w [planie wydawniczym](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Aby jednak mieć pewność, że te ulepszenia nie będą kolidować z istniejącymi ustawieniami lub preferencjami użytkownika, każde z nich jest domyślnie wyłączone (chyba że zaznaczono inaczej). Aby korzystać z tych funkcji, należy jawnie włączyć te funkcje w [zarządzaniu funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Obszar funkcji | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
+| Moduł | Nazwa&nbsp;funkcji w&nbsp;zarządzaniu&nbsp;funkcjami | Więcej informacji |
 |---|---|---|
 | Planowanie główne | Równoległe autoryzowanie skorygowanej prognozy popytu | Ta funkcja umożliwia równoległe autoryzowanie skorygowanej prognozy popytu ze strony **Skorygowana prognoza popytu**. Celem tej funkcji jest zwiększenie wydajności podczas autoryzacji dużej liczby prognoz. Podczas autoryzowania użytkownik może określić **liczbę wątków** w oknie dialogowym autoryzowania. |
 | Planowanie główne | (Wersja zapoznawcza) Akceptowanie i konsolidacja, które mogą być przeprowadzane w partiach, dla planowanych zamówień partii masowych i paczkowanych | Ta funkcja umożliwia używanie zadań w partiach do tworzenia i konsolidowania planowanych zamówień masowych i paczkowanych. |

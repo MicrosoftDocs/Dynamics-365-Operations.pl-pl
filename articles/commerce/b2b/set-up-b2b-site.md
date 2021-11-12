@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721014"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713755"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Konfigurowanie witryny wykorzystywanej na potrzeby handlu elektronicznego B2B
 
@@ -37,7 +37,7 @@ Witryny handlu elektronicznego typu business-to-business (B2B) zapewniają kilka
 
 Dostęp do ustawień na poziomie witryny można uzyskać w Konstruktorze witryn w **Ustawienia witryny \> Rozszerzenia**. Następujące dwa ustawienia na poziomie witryny dotyczą scenariuszy B2B:
 
-- **Włącz płatności na konta odbiorcy** — ta właściwość umożliwia użytkownikom płacenie za zamówienia przy użyciu kont odbiorcy. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**. Jeśli witryna B2B obsługuje konta odbiorców, należy wybrać opcję **Włączone dla klientów B2C**.
+- **Włącz płatności na konta odbiorcy** — ta właściwość umożliwia użytkownikom płacenie za zamówienia przy użyciu kont odbiorcy. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**. Jeśli witryna B2B obsługuje konta odbiorców, należy wybrać opcję **Włączone dla klientów B2B**.
 - **Włącz limity ilości zamówienia** — ta właściwość umożliwia ustawienie limitów liczby towarów, które można zamówić dla każdego produktu lub kategorii. Dostępne wartości są **Włączone dla klientów B2B**, **Włączone dla klientów B2C**, **Włączone dla wszystkich klientów** i **Wyłączone dla wszystkich klientów**.
 
 > [!NOTE]

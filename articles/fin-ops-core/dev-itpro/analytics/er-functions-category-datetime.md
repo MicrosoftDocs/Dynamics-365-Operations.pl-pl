@@ -2,7 +2,7 @@
 title: Lista funkcji modułu ER w kategorii Data i godzina
 description: Ten temat zawiera ogólne informacje o funkcjach daty i godziny obsługiwanych w module Raportowanie elektroniczne (ER).
 author: NickSelin
-ms.date: 12/05/2019
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f0f421afcaf720366c76c2728721598540a37f0b627123b3386a3174c039a96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760057"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647270"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Lista funkcji modułu ER w kategorii Data i godzina
 
@@ -31,8 +31,9 @@ Funkcje daty i godziny w module raportowania elektronicznego (ER) mogą być uż
 
 | Funkcja | Opis |
 |----------|-------------|
-| [AddDays](er-functions-datetime-adddays.md) | Ta funkcja zwraca wartość *DateTime*, która jest określoną liczbą dni przed wybraną datą rozpoczęcia lub po niej. |
-| [DateFormat](er-functions-datetime-dateformat.md) | Ta funkcja zwraca wartość *Ciąg*, która przedstawia daną wartość daty jako tekst w określonym formacie i opcjonalnie określonej kulturze. |
+| [AddDays](er-functions-datetime-adddays.md) | Ta funkcja zwraca wartość typu *[data/godzina](er-formula-supported-data-types-primitive.md#datetime)*, która jest określoną liczbą dni przed wybraną datą rozpoczęcia lub po niej. |
+| [ChangeTimeZone](er-functions-datetime-changetimezone.md) | Ta funkcja zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości daty/godziny w jednej strefie czasowej na wartość daty/godziny w innej strefie czasowej. |
+| [DateFormat](er-functions-datetime-dateformat.md) | Ta funkcja zwraca wartość *[Ciąg](er-formula-supported-data-types-primitive.md#string)*, która przedstawia daną wartość daty jako tekst w określonym formacie i opcjonalnie określonej kulturze. |
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Ta funkcja zwraca wartość *Ciąg*, która przedstawia daną wartość daty/godziny jako tekst w określonym formacie i opcjonalnie określonej kulturze. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Ta funkcja zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości tekstowej w określonym formacie i opcjonalnie określonej kulturze na wartość daty/godziny. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Ta funkcja zwraca wartość *Data/godzina*, która jest konwertowana z danej wartości daty na wartość daty/godziny w uniwersalnym czasie koordynowanym (czas uniwersalny Greenwich \[GMT\]). |

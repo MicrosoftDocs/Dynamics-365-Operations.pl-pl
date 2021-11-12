@@ -2,7 +2,7 @@
 title: Dodawanie pól danych w konfiguracjach podatków
 description: W tym temacie opisano sposób dostosowywania konfiguracji podatków przez dodanie pól danych.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 590c2d62995f260ba4277e1031349b0dc43f1417
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500153"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674907"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Dodawanie pól danych w konfiguracjach podatków
 
@@ -31,8 +31,12 @@ W tym temacie opisano sposób dostosowywania konfiguracji podatków przy użyciu
 ## <a name="customize-the-tax-data-model"></a>Dostosuj model danych podatkowych
 
 1. W Microsoft Dynamics 365 Finance przejdź do **Elektroniczne raportowanie** > **Konfiguracje podatku**.
-2. W drzewie konfiguracji wybierz **Model danych podatkowych — Europa**. W okienku akcji wybierz **Utwórz konfigurację**.
-3. W oknie dialogowym listy rozwijanej wybierz **Model dokumentów podlegających opodatkowaniu uzyskany na podstawie pola Nazwa: Model danych podatkowych — Europa Microsoft**, wprowadź nazwę nowego modelu danych podatkowych, a następnie wybierz pozycję **Utwórz konfigurację**.
+2. W drzewie konfiguracji wybierz **Model kalkulacji danych podatkowych**. W okienku akcji wybierz **Utwórz konfigurację**. 
+
+  > [!NOTE] 
+  > Jeśli nie ma dostępnego dostawcy konfiguracji, utwórz go i uczyń aktywnym dla Twojej konfiguracji podatkowej. Dalsze informacje znajdują się w temacie [Tworzenie dostawców konfiguracji i oznaczanie ich jako aktywnych](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+  
+3. W oknie dialogowym listy rozwijanej wybierz **Model dokumentów podlegających opodatkowaniu uzyskany na podstawie pola Nazwa: Model kalkulacji danych podatkowych — Microsoft**, wprowadź nazwę nowego modelu danych podatkowych, a następnie wybierz pozycję **Utwórz konfigurację**.
 4. Wybierz właśnie utworzony model danych podatku, a następnie w okienku akcji wybierz pozycję **Konstruktor**.
 5. Rozwiń drzewo modeli danych, zaznacz **Wiersze**, a następnie wybierz **Nowy**.
 6. W oknie dialogowym **Tworzenie węzła** wprowadź nazwę, określ typ towaru, a następnie wybierz **Dodaj**.
@@ -43,8 +47,8 @@ W tym temacie opisano sposób dostosowywania konfiguracji podatków przy użyciu
 ## <a name="customize-the-tax-configuration"></a>Dostosuj konfigurację podatku
 
 1. W Finance przejdź do **Elektroniczne raportowanie** > **Konfiguracje podatku**.
-2. W drzewie konfiguracji wybierz **Konfiguracja podatku — Europa**. W okienku akcji wybierz **Utwórz konfigurację**.
-3. W oknie dialogowym listy rozwijanej wybierz **Konfiguracja usługi podatkowej pochodząca z nazwy: Konfiguracja podatku — Europa Microsoft**, wprowadź nazwę nowej konfiguracji danych podatkowych, a następnie wybierz pozycję **Utwórz konfigurację**.
+2. W drzewie konfiguracji wybierz **Konfiguracja obliczania podatku**. W okienku akcji wybierz **Utwórz konfigurację**.
+3. W oknie dialogowym listy rozwijanej wybierz **Konfiguracja usługi podatkowej pochodząca z nazwy: Konfiguracja kalkulacji podatku — Microsoft**, wprowadź nazwę nowej konfiguracji danych podatkowych, a następnie wybierz pozycję **Utwórz konfigurację**.
 4. Wybierz właśnie utworzoną konfigurację podatku, a następnie w okienku akcji wybierz pozycję **Konstruktor**.
 5. W sekcji **Właściwości**, w polu **Model danych** wybierz niestandardowy model danych podatkowych utworzony wcześniej.
 6. W polu **Wersja modelu danych** wybierz wersję akończoną modelu danych podatku.

@@ -1,6 +1,6 @@
 ---
 title: Opcje transakcji środków trwałych
-description: W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
+description: W tym temacie opisano różne dostępne metody tworzenia transakcji środków trwałych.
 author: moaamer
 ms.date: 08/10/2021
 ms.topic: article
@@ -12,22 +12,22 @@ ms.reviewer: roschlom
 ms.custom: 23061
 ms.assetid: 338c495b-a4d8-461e-b85b-a83faf673730
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 129f88037691096c22478e4f186667a502e394ec
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344697"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674481"
 ---
 # <a name="fixed-asset-transaction-options"></a>Opcje transakcji środków trwałych
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-W tym temacie opisano różne dostępne metody tworzenia transakcji na środkach trwałych.
+W tym temacie opisano różne dostępne metody tworzenia transakcji środków trwałych.
 
 Istnieje możliwość skonfigurowania modułu Środki trwałe w celu integracji z modułami Księga główna, Rozrachunki z dostawcami, Rozrachunki z odbiorcami i Zaopatrzenie i sourcing. Ponadto towary w module Zarządzanie zapasami można przenieść do modułu Środki trwałeh, aby można było używać tych towarów wewnętrznie.
 

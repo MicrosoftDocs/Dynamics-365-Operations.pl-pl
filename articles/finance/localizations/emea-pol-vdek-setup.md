@@ -2,7 +2,7 @@
 title: Przygotowanie do raportowania JPK-V7M
 description: Ten temat zawiera informacje o tym, jak skonfigurować deklarację VAT z rejestrami (znanymi również jako JPK-V7M, VDEK) w Polsce.
 author: liza-golub
-ms.date: 07/20/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,12 +11,12 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.region: Poland
 ms.author: elgolu
-ms.openlocfilehash: 64a1cc466136058e5b18a44c1c51f9ed01127201
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: f4a94920f63d3fdcc1f3037b57d8203867d9f711
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595423"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713868"
 ---
 # <a name="prepare-for-jpk-v7m-reporting"></a>Przygotowanie do raportowania JPK-V7M
 
@@ -26,15 +26,16 @@ Rozwiązanie obsługujące raportowanie JPK-V7M opiera się na funkcji [obsługi
 
 Poniższe zadania przygotowują Microsoft Dynamics 365 Finance do raportowania JPK-V7M:
 
-- Importuj i konfiguruj konfiguracje raportowania elektronicznego (ER).
-- Konfigurowanie parametrów specyficznych dla aplikacji.
-- Importowanie pakietu jednostek danych zawierającego wstępnie zdefiniowaną konfigurację wiadomości elektronicznych.
-- Konfigurowanie parametrów księgi głównej.
-- Zapisywanie parametrów klasy wykonywalnej dla wiadomości elektronicznych.
-- Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych.
-- Konfigurowanie kodu urzędu na potrzeby przetwarzania wiadomości elektronicznych.
+- [Importowanie i konfigurowanie konfiguracji raportowania elektronicznego (ER)](#configurations-vdek).
+- [Konfigurowanie parametrów specyficznych dla aplikacji](#application-specific-parameters-vdek).
+- [Importowanie pakietu jednostek danych zawierającego wstępnie zdefiniowaną konfigurację wiadomości elektronicznych](#import-data-entities-vdek).
+- [Konfigurowanie parametrów księgi głównej](#general-ledger-parameters-vdek).
+- [Zapisywanie parametrów klasy wykonywalnej dla wiadomości elektronicznych](#executable-class-parameters-vdek).
+- [Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych](#security-roles-vdek).
+- [Konfigurowanie kodu urzędu na potrzeby przetwarzania wiadomości elektronicznych](#office-code-vdek).
+- [Konfigurowanie kodów podatków i kodów sprawozdawczości podatkowej](#sales-tax-reporting-codes-vdek).
 
-## <a name="import-and-set-up-er-configurations"></a>Importowanie i konfigurowanie konfiguracji ER
+## <a name="import-and-set-up-er-configurations"></a><a id="configurations-vdek"></a>Importowanie i konfigurowanie konfiguracji ER
 
 Aby przygotować Finance do raportowania JPK-V7M, musisz zaimportować następujące konfiguracje ER.
 
@@ -54,9 +55,12 @@ Aby uzyskać więcej informacji na temat pobierania konfiguracji modułu ER z gl
 >
 > ![Wartość domyślna opcji mapowania modelu ustawiona na Tak w przypadku konfiguracji mapowania modelu standardowego modelu pliku inspekcji](media/default-mm.jpg)
 
-## <a name="set-up-application-specific-parameters"></a>Konfigurowanie parametrów specyficznych dla aplikacji
+## <a name="set-up-application-specific-parameters"></a><a id="application-specific-parameters-vdek"></a>Konfigurowanie parametrów specyficznych dla aplikacji
 
 W zależności od danych transakcji podatkowych, wartości niektórych elementów (znaczników) w raporcie JPK-V7M można zdefiniować na potrzeby raportowania. Aby można było zdefiniować wartości tych elementów, musi być wystarczająco dużo danych transakcyjnych. Dlatego należy skonfigurować odpowiednią liczbę kodów podatków, grup podatków i grup podatków dla towaru, aby rozróżnić transakcje podatkowe dla wszystkich parametrów (elementów) wprowadzonych w raporcie JPK-V7M. Format JPK-V7M zawiera parametry (pola) specyficzne dla aplikacji, które mogą być używane do definiowania wartości tych elementów w raporcie.
+
+> [!NOTE]
+> Zaleca się włączenie tej funkcji: **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Gdy ta funkcja jest włączona, parametry skonfigurowane dla wcześniejszej wersji formatu raportowania elektronicznego automatycznie stają się dostępne dla nowszej wersji tego samego formatu. Jeśli ta funkcja nie jest włączona, należy skonfigurować parametry specyficzne dla aplikacji jawnie dla każdej wersji formatu. Funkcja **Użyj parametrów specyficznych dla aplikacji z poprzednich wersji formatów raportowania elektronicznego** jest dostępna w obszarze roboczym **Zarządzanie funkcjami** w aplikacji Finance w wersji 10.0.23. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji parametrów formatu raportowania elektronicznego dla każdej firmy, zobacz temat [Konfigurowanie parametrów formatu raportowania elektronicznego według firmy](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 Format zawiera następujące pola wyszukiwania konfiguracji:
 
@@ -81,11 +85,7 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 5. Na skróconej karcie **Wyszukiwania** wybierz poszczególne wyszukiwania i zdefiniuj odpowiednie warunki dla nich.
 6. Na skróconej karcie **Warunki** określ, które kody podatków lub inne dostępne kryteria muszą odpowiadać określonemu wynikowi wyszukiwania. 
 
-    Jeśli warunki są zdefiniowane w jednym wierszu, system zastosuje je do źródłowej transakcji podatkowej za pomocą operatora **AND**. Jeśli warunki muszą być zastosowane za pomocą operatora **OR**, należy je zdefiniować w oddzielnych wierszach. 
-
-    W momencie, gdy transakcja podatkowa z okresu raportu spełnia warunek z listy, dla powiązanego dokumentu zostanie zgłoszony powiązany marker z wyniku wyszukiwania. 
-
-    Aby uzyskać więcej informacji o ustawieniach pól wyszukiwania, zapoznaj się z podsekcjami znajdującymi się poniżej.
+    Jeśli warunki są zdefiniowane w jednym wierszu, system generalnie zastosuje je do źródłowej transakcji podatkowej za pomocą operatora **AND**. Jeśli warunki muszą być zastosowane za pomocą operatora **OR**, należy je zdefiniować w oddzielnych wierszach. Gdy transakcja podatkowa z okresu raportu spełnia warunek z listy, dla powiązanego dokumentu zostanie zgłoszony powiązany marker z wyniku wyszukiwania. Aby uzyskać więcej informacji o ustawieniach poszczególnych pól wyszukiwania, przejdź do tego tematu.
 
 7. Po zakończeniu konfigurowania warunków w polu **Stan** wybierz opcję **Zakończono**, a następnie zapisz konfigurację.
 
@@ -93,9 +93,12 @@ Format zawiera następujące pola wyszukiwania konfiguracji:
 
 Konfigurację parametrów specyficznych dla aplikacji można łatwo wyeksportować z jednej wersji raportu i zaimportować do innej. Możesz także wyeksportować konfigurację z jednego raportu i zaimportować ją do innego raportu, pod warunkiem, że oba raporty mają taką samą strukturę pól odnośników.
 
+> [!NOTE]
+> Zaleca się włączenie tej funkcji: **Podczas importowania wyrównaj parametry specyficzne dla aplikacji raportowania elektronicznego** w obszarze roboczym **Zarządzanie funkcjami**. Ta funkcja jest dostępna od aplikacji Finance w wersji 10.0.24. Po jej włączeniu, jeśli struktura importowanych parametrów specyficznych różni się od struktury odpowiedniego źródła danych typu wyszukiwania w docelowym formacie ER, który został wybrany do importu, w niektórych przypadkach importowanie zakończy się powodzeniem. Aby uzyskać więcej informacji dotyczących sposobu konfiguracji parametrów formatu raportowania elektronicznego dla każdej firmy, zobacz temat [Konfigurowanie parametrów formatu raportowania elektronicznego według firmy](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md). 
+
 ### <a name="import-transactions-importselector"></a>Importuj transakcje (ImportSelector)
 
-| Imię i nazwisko           | Etykieta (EN) | Etykieta (PL) | Opis (EN) | Opis (PL) |
+| Nazwa           | Etykieta (EN) | Etykieta (PL) | Opis (EN) | Opis (PL) |
 |----------------|------------|------------|------------------|------------------|
 | ImportSelector | Import | Import | Oznaczenie, które jest związane z podatkiem naliczonym od przywozu towarów, w tym towarów opodatkowanych zgodnie z artykułem 33a ustawy o VAT | Oznaczenie dotyczące podatku naliczonego z tytułu importu towarów, w tym importu towarów rozliczanego zgodnie z art. 33a ustawy |
 
@@ -133,6 +136,8 @@ W przypadku tego pola wyszukiwania dostępne są następujące główne źródł
 - Identyfikator konta dostawcy
 - Grupa dostawców
 
+Warunki zdefiniowane w obszarach **Identyfikator konta odbiorcy** i **Grupa klientów** są stosowane niezależnie od warunków zdefiniowanych w grupach **Identyfikator konta dostawcy** i **Grupa dostawców**. Ponadto warunki zdefiniowane w pole **Identyfikator konta dostawcy** i **Grupa dostawców** są stosowane tylko do transakcji zaksięgowanych w zakresie, których dotyczą scenariusza odwrotnych zmian zakresu. Dlatego podczas określania warunków dla pola **Identyfikator konta dostawcy** i **Grupa dostawców** należy określić wartość **\*Puste\*** w kolumnie **Identyfikator konta klienta** i w kolumnie warunków **Grupa klientów**.
+
 To pole wyszukiwania definiuje warunki oparte na głównych źródłach danych bieżącej firmy. Warunki te dają w wyniku marker **1** dla odpowiadającego mu elementu z listy oznaczeń, które są związane z procedurami pod tagiem **\<SprzedazWiersz\>**. Można zaznaczyć więcej niż jedno oznaczenie dla tego samego rekordu należnego podatku VAT. Dlatego, jeśli firma musi zgłosić odmienne oznaczenia, muszą być zdefiniowane odrębne warunki.
 
 **Oznaczenia proceduralne** nie są wymagane w przypadku dokumentów typu **RO** (wewnętrzny dokument podsumowujący) (tag **\<TypDokumentu\>** pod tagiem **\<SprzedazWiersz\>**).
@@ -142,7 +147,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **Procedu
 | Imię i nazwisko           | Etykieta (EN) | Etykieta (PL) | Opis (EN) | Opis (PL) |
 |----------------|------------|------------|------------------|------------------|
 | SW (*tylko dla okresów raportowania do 1 lipca 2021*) | Sprzedaż wysyłkowa | Sprzedaży wysyłkowej | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy o VAT | Dostawa w ramach sprzedaży wysyłkowej z terytorium kraju, o której mowa w art. 23 ustawy |
-| EE             | Telekomunikacja | Usługi telekomunikacyjne | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy o VAT | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
+| EE (*tylko dla okresów raportu do 1 stycznia 2022*) | Telekomunikacja | Usługi telekomunikacyjne | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy o VAT | Świadczenie usług telekomunikacyjnych, nadawczych i elektronicznych, o których mowa w art. 28k ustawy |
 | TP             | Istniejące powiązania między nabywcą a dokonującym dostawy | Istniejące powiązania między nabywcą a dokonującym | Istniejące powiązania pomiędzy kupującym a dostawcą towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy o VAT. Wyjątkiem jest przypadek dostaw towarów i świadczenia usług, w których stosunek między nabywcą a dostawcą usług wynika wyłącznie z powiązania ze Skarbem Państwa lub jednostkami samorządu terytorialnego lub ich stowarzyszeniami. | Istniejące powiązania między nabywcą a dokonującym dostawy towarów lub usługodawcą, o których mowa w art. 32 ust. 2 pkt 1 ustawy. Z wyjątkiem sytuacji, gdy jest dostawą towarów i świadczenia usług, gdy powiązania między nabywcami a dokonującym dostawy towarów lub usługodawcą z dostawami ze Skarbem Państwa lub jednostkami samorządu ich związkami. |
 | TT_WNT         | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej | Wewnątrzwspólnotowe nabycie w ramach transakcji trójstronnej | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy o VAT | Wewnątrzwspólnotowe nabycie towarów dokonane przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
 | TT_D           | Dostawa towarów poza terytorium Polski w ramach transakcji trójstronnej | Dostawa towarów poza terytorium kraju w ramach transakcji trójstronnej | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy o VAT | Dostawa towarów poza terytorium kraju dokonana przez drugiego w kolejności podatnika VAT w ramach transakcji trójstronnej w procedurze uproszczonej, o której mowa w dziale XII rozdziale 8 ustawy |
@@ -151,7 +156,9 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania (oznaczenia) dla **Procedu
 | B_SPV          | Transfer z artykułu 8A, ustęp 1 ustawy o VAT | Transfer z art. 8a ust. 1 ustawy | Transfer bonu jednego przeznaczenia dokonany przez podatnika działającego własnym imieniu, opodatkowany zgodnie z art. 8a ustęp 1 ustawy o VAT | Transfer bonu jednego przeznaczenia dokonany przez podatnika działającego we własnym imieniu, opodatkowany zgodnie z art. 8a ust. 1 ustawy |
 | B_SPV_DOSTAWA  | Dostawa towarów oraz świadczenie usług, których dotyczy Bon jednego przeznaczenia (artykuł 8a, ustęp 4 ustawy o VAT) | Dostawa towarów oraz świadczenie usług (art. 8a ust. 4 ustawy) | Dostawa towarów oraz świadczenie usług, których dotyczy bon jednego przeznaczenia na rzecz podatnika, który wyemitował bon zgodnie z art. 8a, ustęp 4 ustawy o VAT | Dostawa towarów oraz świadczenie usług, których dotyczy bon jednego przeznaczenia na rzecz podatnika, który wyemitował bon zgodnie z art. 8a ust. 4 ustawy |
 | B_MPV_PROWIZJA | Usługi pośrednictwa dotyczące bonów różnego przeznaczenia | Usługi pośrednictwa dotyczące transferu bonu różnego przeznaczenia | Świadczenie usług pośrednictwa oraz innych usług dotyczących transferu bonu różnego przeznaczenia, opodatkowane zgodnie z art. 8b, ustęp 2 ustawy o VAT | Świadczenie usług pośrednictwa oraz innych usług dotyczących transferu bonu różnego przeznaczenia, opodatkowane zgodnie z art. 8b ust. 2 ustawy |
-| Inne           | Inna | | | |
+| WSTO_EE | Wewnątrzwspólnotowa sprzedaż towarów na odległość | Wewnątrzwspólnotowa sprzedaż towarów na odległość | Wewnątrzwspólnotowa sprzedaż towarów na odległość, które w momencie rozpoczynania wysyłki lub transportu, znajdują się na terytorium danego kraju, oraz świadczenie usług telekomunikacyjnych, emisyjnych i elektronicznych, o których mowa w art. 28k ustawy, osobom niepodlegającym opodatkowaniu, które są rezydentami lub mają stałe miejsce zamieszkania na terytorium kraju członkowskiego innego niż terytorium danego kraju. | Wewnątrzwspólnotowa sprzedaż towarów na odległość, które w momencie rozpoczynania wysyłki lub transportu, znajdują się na terytorium danego kraju, oraz świadczenie usług telekomunikacyjnych, emisyjnych i elektronicznych, o których mowa w art. 28k ustawy, osobom niepodlegającym opodatkowaniu, które są rezydentami lub mają stałe miejsce zamieszkania na terytorium kraju członkowskiego innego niż terytorium danego kraju |
+| IED | Dostawa towarów, o których mowa w art. 7a, akapit 1 i 2 ustawy | Dostawa towarów, o której mowa w art. 7a ust. 1 i 2 ustawy | Dostawa towarów, których dotyczy artykuł 7a, akapity 1 i 2 ustawy, przez podatnika, który obsługuje dostawę, ale nie korzysta ze schematu specjalnego, o którym mowa w rozdziale 6a lub 9 sekcji XII ustawy lub w odpowiednich przepisach, w których miejsce dostawy znajduje się na terenie danego kraju. | Dostawa towarów, o której mowa w art. 7a ust. 1 i 2 ustawy, dokonanej przez podatnika ułatwiającego tę dostawę, który nie korzysta z procedury szczególnej, o której mowa w dziale XII w rozdziale 6a lub 9 ustawy lub w odpowiadających im regulacjach, dla której miejscem dostawy jest terytorium kraju |
+| Inne           | Inne | | | |
 
 > [!NOTE]
 > Należy pamiętać, że należy dodać **Inne** (**Inne**), które muszą zbierać dane z innych przypadków jako ostatni element na liście. Wartość **Wiersz** musi być ostatnią wartością w tabeli. W kolumnie **Kod podatku** w wyniku wyszukiwania **Inne** wybierz **\*Niepuste\***.
@@ -326,7 +333,7 @@ W poniższej tabeli przedstawiono wyniki wyszukiwania dla **PurchaseDocumentType
 > [!NOTE]
 > Należy pamiętać, że należy dodać **Inne** (**Inne**), które muszą zbierać dane z innych przypadków jako ostatni element na liście. Wartość **Wiersz** musi być ostatnią wartością w tabeli. W kolumnie **Kod podatku** w wyniku wyszukiwania **Inne** wybierz **\*Niepuste\***.
 
-## <a name="import-a-package-of-data-entities-that-includes-a-predefined-electronic-message-setup"></a>Importowanie pakietu jednostek danych zawierającego wstępnie zdefiniowaną konfigurację wiadomości elektronicznych
+## <a name="import-a-package-of-data-entities-that-includes-a-predefined-electronic-message-setup"></a><a id="import-data-entities-vdek"></a>Importowanie pakietu jednostek danych zawierającego wstępnie zdefiniowaną konfigurację wiadomości elektronicznych
 
 Proces konfigurowania funkcji obsługi wiadomości elektronicznych do raportowania JPK-V7M ma wiele kroków. Ponieważ nazwy niektórych wstępnie zdefiniowanych jednostek są używane w konfiguracjach ER, ważne jest, aby użyć zbioru wstępnie zdefiniowanych wartości, które są dostarczane w pakiecie jednostek danych dla powiązanych tabel.
 
@@ -360,7 +367,7 @@ Otrzymasz powiadomienie w obszarze **Komunikaty** lub możesz odświeżyć stron
 > [!IMPORTANT]
 > Niektóre rekordy z jednostek danych w pakiecie zawierają łącze do konfiguracji ER. Dlatego przed rozpoczęciem importu pakietu jednostek danych należy najpierw zaimportować konfiguracje ER do modułu Finance.
 
-## <a name="set-up-general-ledger-parameters"></a>Konfigurowanie parametrów księgi głównej
+## <a name="set-up-general-ledger-parameters"></a><a id="general-ledger-parameters-vdek"></a>Konfigurowanie parametrów księgi głównej
 
 Aby pracować z funkcją obsługi wiadomości elektronicznych, należy zdefiniować powiązane sekwencje numerów.
 
@@ -370,7 +377,7 @@ Aby pracować z funkcją obsługi wiadomości elektronicznych, należy zdefiniow
     - Komunikat
     - Element wiadomości
 
-## <a name="save-the-executable-class-parameters-for-electronic-messaging"></a>Zapisywanie parametrów klasy wykonywalnej dla wiadomości elektronicznych
+## <a name="save-the-executable-class-parameters-for-electronic-messaging"></a><a id="executable-class-parameters-vdek"></a>Zapisywanie parametrów klasy wykonywalnej dla wiadomości elektronicznych
 
 Podczas przetwarzania JPK-V7M używana jest klasa wykonywalna **EMGenerateJPKVDEKReportController_PL** w celu zainicjowania zbierania danych dla dostawcy danych raportu i dalszego generowania raportu. Przed pierwszym użyciem tej klasy należy zapisać jej parametry.
 
@@ -381,7 +388,9 @@ W oknie dialogowym klasy wykonywalnej grupa parametrów **Oznaczenie sprzedaży 
 
 Okno dialogowe dla klasy wykonywalnej zawiera parametr **Uwzględnij kody daty raportu VAT**. Ten parametr służy do zbierania transakcji VAT w raporcie na podstawie reguł, które definiujesz w kodach daty raportu VAT. Ten parametr nie ma wpływu na transakcje specyficzne dla sieci sprzedaży, które będą zgłaszane jako typ dokumentu **FP**. Aby uzyskać więcej informacji o funkcji kodów daty raportu VAT, zobacz temat [Ustawianie kodów daty raportu VAT](/dynamicsax-2012/appuser-itpro/pol-set-up-vat-report-date-codes).
 
-## <a name="set-up-security-roles-for-electronic-message-processing"></a>Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych
+KB5007691 („Polska: Jednolity Plik Kontrolny VDEK (JPK-V7M, VDEK), zmiany ze stycznia 2022 w Dynamics 365 Finance”) wprowadza parametr **Wersja schematu**. Ten parametr umożliwia określenie, że dodatkowe pole zawiera wersję schematu JPK-V7M, która ma zostać zgłoszona. Wybierz opcję **Wersja schematu** jako wartość tego pola.
+
+## <a name="set-up-security-roles-for-electronic-message-processing"></a><a id="security-roles-vdek"></a>Konfigurowanie ról zabezpieczeń na potrzeby przetwarzania wiadomości elektronicznych
 
 Różne grupy użytkowników mogą wymagać dostępu do przetwarzania JPK-V7M. Można ograniczyć dostęp do przetwarzania na podstawie grup zabezpieczeń zdefiniowanych w systemie.
 
@@ -390,10 +399,458 @@ Aby ograniczyć dostęp do przetwarzania JPK-V7M, należy wykonać następujące
 1. Przejdź do menu **Podatek** \> **Ustawienia** \> **Obsługa wiadomości elektronicznych** \> **Przetwarzanie wiadomości elektronicznych**.
 2. Wybierz przetwarzanie **JPK-V7M** i dodaj grupy zabezpieczeń, które muszą na nim pracować, na skróconej karcie **Role zabezpieczeń**. Jeśli dla przetwarzania nie zdefiniowano grupy zabezpieczeń, tylko administrator systemu może go zobaczyć na stronie **Wiadomości elektroniczne**.
 
-## <a name="set-up-an-office-code-for-electronic-message-processing"></a>Konfigurowanie kodu urzędu na potrzeby przetwarzania wiadomości elektronicznych
+## <a name="set-up-an-office-code-for-electronic-message-processing"></a><a id="office-code-vdek"></a>Konfigurowanie kodu urzędu na potrzeby przetwarzania wiadomości elektronicznych
 
 Aby wprowadzić kod urzędu w dodatkowym polu **KodUrzedu**, należy wykonać poniższe kroki.
 
-1. Przejdź do menu **Podatek** \> **Ustawienia** \> **Obsługa wiadomości elektronicznych** \> **Przetwarzanie wiadomości elektronicznych**.
+1. Przejdź do menu **Podatek** > **Ustawienia** > **Wiadomości elektroniczne** > **Przetwarzanie wiadomości elektronicznych**.
 2. Wybierz przetwarzanie **JPK-V7M**.
 3. Na skróconej karcie **Dodatkowe pole** wybierz dodatkowe pole **KodUrzedu**, a następnie, w polu **Wartość domyślna** określ kod urzędu, który ma być raportowany w elemencie **\<KodUrzedu\>** raportu.
+
+## <a name="set-up-sales-tax-codes-and-sales-tax-reporting-codes"></a><a id="sales-tax-reporting-codes-vdek"></a>Konfigurowanie kodów podatków i kodów sprawozdawczości podatkowej
+
+[Kod raportowania podatku](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) jest wartością całkowitą. Kody raportowania podatku powinny być numerowane zgodnie z regułami obowiązującymi w firmie. Jednak zalecamy, aby różnicować kody według kierunku podatku. Użyj na przykład kodu pięciocyfrowego. Dla wszystkich transakcji wychodzących, które powinny być wykazywane w pierwszej części systemu podatku VAT, ustaw kody tak, aby były mniejsze lub równe 19999. Dla wszystkich transakcji przychodzących, które powinny być wykazywane w drugiej części systemu podatku VAT, ustaw kody tak, aby były większe lub równe 20000. W ten sposób uprościsz konfigurację raportów i eksportu danych, która opiera się na transakcjach podatkowych agregowanych według kodów raportowania podatku. Następujący przykład pokazuje użycie kodów sprawozdawczości podatkowej do generowania rejestru SAF sprzedaży i zakupów objętych podatkiem VAT. W tym przykładzie kody raportowania podatku są w formacie *ABBCC*. Ten format składa się z następujących elementów:
+
+- **A** – Kierunek transakcji. Wartość wynosi **1** dla transakcji wychodzących, **2** dla transakcji przychodzących i **3** dla korekt.
+- **BB** – Kod podatku. Numeracja zachowuje kolejność wśród wszystkich kodów podatków.
+- **CC** – Numer typu transakcji w kodzie podatku. Parz tabela poniżej.
+
+    | Typ transakcji                  | Numer typu transakcji     |
+    |-----------------------------------|-----------------------------|
+    | Sprzedaż opodatkowana                     | 01                          |
+    | Sprzedaż wolna od podatku                    | 02                          |
+    | Podatek należny                 | 03                          |
+    | Opodatkowana faktura korygująca sprzedaży         | 04                          |
+    | Faktura korygująca sprzedaży zwolnionej z podatku      | 05                          |
+    | Podatek od faktury korygującej sprzedaży    | 6                          |
+    | Zakup podlegający opodatkowaniu                 | 07                          |
+    | Zakup wolny od podatku                 | 08                          |
+    | Podatek naliczony              | 09                          |
+    | Import opodatkowany                    | 10                          |
+    | Przeciwstawna wartość importu podlegająca opodatkowaniu             | 11                          |
+    | Podatek nienaliczony                           | 12                          |
+    | Konto przeciwstawne podatku nienaliczonego                    | 13                          |
+    | Opodatkowana faktura korygująca zakupu      | 14                          |
+    | Faktura korygująca zakupu zwolnionego z podatku   | 15                          |
+    | Podatek od faktury korygującej zakupu | 16                          |
+    | Opodatkowana faktura korygująca importu        | 17                          |
+    | Faktura korygująca przeciwstawnej wartości importu podlegającej opodatkowaniu | 18                          |
+
+W poniższej tabeli przedstawiono kody podatków i kody sprawozdawczości podatkowej dla tego przykładu.
+
+<table>
+<thead>
+<tr>
+<th>Kod podatku</th>
+<th>Kod raportowania podatku</th>
+<th>Opis</th>
+<th>Nazwa znacznika w JPK-V7M</th>
+<th>Logowanie w JPK-V7M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">ExportCust</td>
+<td>10101</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10102</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10104</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10105</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_11</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="2">Art100_1.4</td>
+<td>10201</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_11, K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10204</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_11, K_12</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT22_23</td>
+<td>10301</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10302</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10303</td>
+<td>Podatek należny</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10304</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10306</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_20</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT7_8</td>
+<td>10401</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10402</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10403</td>
+<td>Podatek należny</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10404</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_17</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10406</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_18</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">VAT5</td>
+<td>10501</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10502</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10503</td>
+<td>Podatek należny</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10504</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10506</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_16</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="3">VAT0</td>
+<td>10601</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10602</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10604</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_13</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ART129</td>
+<td>10701</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10702</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10704</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10705</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_13, K_14</td>
+<td>-</td>
+</tr>
+<tr>
+<tr>
+<td rowspan="4">VAT17_1.5</td>
+<td>11901</td>
+<td>Sprzedaż opodatkowana</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11903</td>
+<td>Podatek należny</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11904</td>
+<td>Opodatkowana faktura korygująca sprzedaży</td>
+<td>K_31</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11906</td>
+<td>Podatek od faktury korygującej sprzedaży</td>
+<td>K_32</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">IntraEUGoods</td>
+<td>10801</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_21</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10810</td>
+<td>Import opodatkowany</td>
+<td>K_23</td>
+<td>+</td>
+</tr>
+<tr>
+<td>10811</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_23</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10812</td>
+<td>Podatek nienaliczony</td>
+<td>K_24</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">ExportOfGoods</td>
+<td>10901</td>
+<td>Sprzedaż wolna od podatku</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10905</td>
+<td>Faktura korygująca sprzedaży zwolnionej z podatku</td>
+<td>K_22</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="4">ImportOfGoodsART33</td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11010</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_25</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11012</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_26</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportOfServices</td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11110</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_27</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11117</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_27</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11112</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_28</td>
+<td>-</td>
+</tr>
+<tr>
+<td rowspan="5">ImportART28</td>
+<td>20207</td>
+<td>Import opodatkowany</td>
+<td>K_45</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11210</td>
+<td>Przeciwstawna wartość importu podlegająca opodatkowaniu</td>
+<td>K_29</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11119</td>
+<td>Sprzedaż opodatkowana (opłata zwrotna)</td>
+<td>K_29</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek nienaliczony</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>11212</td>
+<td>Konto przeciwstawne podatku nienaliczonego</td>
+<td>K_30</td>
+<td>-</td>
+</tr>
+<td rowspan="4">FixedAssetPurch</td>
+<td>20107</td>
+<td>Zakup podlegający opodatkowaniu</td>
+<td>K_40</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20109</td>
+<td>Podatek naliczony</td>
+<td>K_41</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20115</td>
+<td>Opodatkowana faktura korygująca zakupu</td>
+<td>K_40</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20116</td>
+<td>Podatek od faktury korygującej zakupu</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="4">GoodServPurch</td>
+<td>20207</td>
+<td>Zakup podlegający opodatkowaniu</td>
+<td>K_42</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20209</td>
+<td>Podatek naliczony</td>
+<td>K_43</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20215</td>
+<td>Opodatkowana faktura korygująca zakupu</td>
+<td>K_42</td>
+<td>+</td>
+</tr>
+<tr>
+<td>20216</td>
+<td>Podatek od faktury korygującej zakupu</td>
+<td>K_44</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b1</td>
+<td>30101</td>
+<td>Podatek należny</td>
+<td>K_46</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30102</td>
+<td>Podatek naliczony</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td rowspan="2">CorrATR89b4</td>
+<td>30201</td>
+<td>Podatek należny</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+<tr>
+<td>30202</td>
+<td>Podatek naliczony</td>
+<td>K_47</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+
+W przypadku faktur, które nie zostały opłacone w ciągu 150 dni, można zastosować zadanie okresowe [**Zaległa kwota podatku VAT stanowiąca zadłużenie**](emea-pol-sales-tax-reports.md#allowance-for-bad-debts). W takim przypadku można użyć tych samych kodów raportowania, które są używane dla K_41 i/lub K_43. System automatycznie interpretuje transakcje do raportowania w K_46 (Zaległa faktura) i K_47 (Opłacona zaległa faktura).

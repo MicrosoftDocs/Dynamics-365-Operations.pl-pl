@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474683"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678478"
 ---
 # <a name="configure-inventory-visibility"></a>Konfiguracja dodatku Widoczność magazynu
 
@@ -366,16 +366,12 @@ Indeks umożliwia wykonywanie następujących zapytań o dostępne zapasy:
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Konfiguracja rezerwacji (opcjonalna)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Konfiguracja rezerwacji jest potrzebna wtedy, gdy ma być używana funkcja rezerwacji wstępnej. Konfiguracja składa się z dwóch podstawowych części:
 
 - Mapowanie rezerwacji wstępnej
 - Hierarchia rezerwacji wstępnej
 
 ### <a name="soft-reservation-mapping"></a>Mapowanie rezerwacji wstępnej
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Podczas dokonywania rezerwacji można dowiedzieć się, czy dostępne zapasy można obecnie rezerwować. Sprawdzanie poprawności jest połączone z obliczoną miarą reprezentującą formułę obliczeń kombinacji fizycznych miar.
 
@@ -446,8 +442,6 @@ Jeśli zatem po próbie dokonania rezerwacji na `iv.SoftReservOrdered` ilość j
 > Po wywołaniu interfejsu API rezerwacji można kontrolować walidacje rezerwacji, określając parametr logiczny `ifCheckAvailForReserv` w treści żądania. Wartość `True` oznacza, że walidacja jest wymagana, podczas gdy wartość `False` oznacza, że walidacja nie jest wymagana. Wartością domyślną jest `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarchia rezerwacji wstępnej
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hierarchia rezerwacji opisuje sekwencję wymiarów, które muszą być określone podczas dokonywania rezerwacji. Działa to w taki sam sposób, jak hierarchia indeksów produktu w przypadku zapytań o dostępne.
 
@@ -747,8 +741,6 @@ Domyślna konfiguracja indeksu jest przedstawiona w następującej tabeli.
 W tej sekcji opisano domyślną konfigurację rezerwacji.
 
 #### <a name="reservation-mapping"></a>Mapowanie rezerwacji
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Domyślne mapowanie rezerwacji jest przedstawione w następującej tabeli.
 

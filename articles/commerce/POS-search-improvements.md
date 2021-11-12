@@ -2,7 +2,7 @@
 title: Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 description: Ten temat zawiera omówienie ulepszeń wprowadzonych w produkcie i funkcji wyszukiwania klientów w rozwiązaniu Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716402"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700096"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Wyszukiwanie produktów i odbiorców w punkcie sprzedaży (POS)
 
@@ -47,7 +47,7 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 - Kod kreskowy
 - Alias
 
-### <a name="additional-local-product-search-capabilities"></a>Dodatkowe możliwości lokalnego wyszukiwania produktów
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Dodatkowe możliwości lokalnego wyszukiwania produktów (typowe wyszukiwanie pełnotekstowe w bazie danych SQL) 
 
 - W przypadku wyszukiwania słów kluczowych (tj. wyszukiwań wykorzystujących terminy) sprzedawcy mogą skonfigurować, czy wyniki wyszukiwania obejmują wyniki zgodne z *dowolnym* wyszukiwanym terminem czy tylko wyniki zgodne ze *wszystkimi* wyszukiwanymi terminami. Ustawienie tej funkcji jest dostępne w profilu funkcji POS, w nowej grupie o nazwie **Wyszukiwanie produktu**. Ustawienie domyślne to **Dopasuj dowolne szukane terminy**. To ustawienie jest także ustawieniem zalecanym. Gdy używane jest ustawienie **Dopasuj dowolne szukane terminy**, wszystkie produkty całkowicie lub częściowo zgodne z co najmniej jednym szukanym terminem są zwracane jako wyniki. Te wyniki są automatycznie sortowane w kolejności rosnącej produktów dopasowanych do największej liczby słów kluczowych (całkowicie lub częściowo).
 
@@ -55,6 +55,8 @@ Lokalne wyszukiwanie produktów powoduje wyszukiwanie w następujących właści
 
     - Wyszukiwanie jest przeprowadzane w poszczególnych właściwościach produktu. Na przykład zwracane są tylko produkty, które zawierają wszystkie wyszukiwane słowa kluczowe we właściwości co najmniej jednego produktu.
     - Wymiary nie są przeszukiwane.
+> [!NOTE]
+> Poniższe konfiguracje funkcji **Dopasuj dowolne wyszukiwane terminy**/**Dopasuj wszystkie terminy** w profilach funkcji punktu sprzedaży są dostępne tylko dla wyszukiwania produktów **lokalnych** (typowe wyszukiwanie pełnotekstowe w bazie danych SQL). Ta konfiguracja nie ma wpływu na możliwości wyszukiwania w chmurze. Nowy aparat wyszukiwania ma własny zaawansowany algorytm, który zasila wyszukiwanie według istotności dla wyników wyszukiwania produktów. 
 
 - Sprzedawcy mogą teraz konfigurować wyszukiwanie produktu tak, aby wyświetlać sugestie wyszukiwania, gdy użytkownicy wpisują nazwy produktów. Nowe ustawienie tej funkcji jest dostępne w profilu funkcji POS, w grupie o nazwie **Wyszukiwanie produktu**. To ustawienie nosi nazwę **Pokaż sugestie podczas wpisywania**. Ta funkcja może ułatwić pracownikom szybkie znalezienie wyszukiwanego produktu, ponieważ nie muszą wprowadzać ręcznie pełnej nazwy.
 - Algorytm wyszukiwania produktów wyszukuje także szukane terminy we właściwości **Wyszukaj nazwę** produktu.
@@ -147,7 +149,5 @@ Na poniższej liście pokazano, w jaki sposób funkcja wyszukiwania klientów w 
 > Funkcja wyszukiwania klientów używająca usługi Azure Cognitive Search w ograniczonym regionie jest dostępna w wersji zapoznawczej. Funkcja wyszukiwania klientów jest *niedostępny* w następujących regionach:
 > - Brazylia
 > - Indie
-> - Kanada
-> - Wielka Brytania
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

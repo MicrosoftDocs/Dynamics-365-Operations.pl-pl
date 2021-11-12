@@ -1,7 +1,7 @@
 ---
 title: Przykłady definicji księgowania
 description: Ten artykuł zawiera przykłady pokazujące, jak definicje księgowania są używane dla przyszłych zobowiązań wiążących w zamówieniach zakupu i dla asygnat budżetu.
-author: ShylaThompson
+author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 15772
 ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6dfd1012ccc1077a028c0cf082cd7685918579af6c58e498ddfa7f4dc9897c62
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ae45058a55570a62baf43dc785453dad5aa7050
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764246"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726925"
 ---
 # <a name="posting-definition-examples"></a>Szablony definicji księgowania
 

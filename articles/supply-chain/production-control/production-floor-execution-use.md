@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569344"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678696"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
 
@@ -93,7 +93,6 @@ Na karcie **Moje urządzenie** są wyświetlane następujące kolumny. Liczby od
 1. **Zarejestruj przestój** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można zarejestrować przestój urządzenia. Możesz wybrać kod przyczyny i wprowadzić okres przestoju w postaci zakresu dat/godzin. Rejestracja przestoju urządzania jest używana do obliczenia wydajności składnika majątku dla urządzenia.
 1. **Wyświetl lub edytuj** — ten przycisk należy wybrać, aby otworzyć okno dialogowe, w którym można edytować lub wyświetlać istniejące rekordy przestoju.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Rozpoczynanie i kończenie zadań produkcyjnych
 
 Pracownicy rozpoczynają zadanie produkcji, zaznaczając zadanie na karcie **Wszystkie zadania**, a następnie wybierając przycisk **Rozpocznij zadanie**, aby otworzyć okno dialogowe **Rozpoczęcie zadania**.
@@ -109,6 +108,32 @@ Pracownicy mogą uruchamiać zadanie o dowolnym stanie. Jeśli pracownik urucham
 Gdy pracownik ukończy lub częściowo wykonuje zadanie, może zgłosić dobre ilości wyprodukowane przez zaznaczenie zadania na karcie **Aktywne zadania**, a następnie wybrać **Postęp raportowania**. Następnie w oknie dialogowym **Postęp raportowania** pracownik wprowadza ilość dobrych za pomocą klawiatury numerycznej. Domyślnie ilość jest pusta. Po wprowadzeniu ilości pracownik może zaktualizować stan zadania jako *W toku*, *Zatrzymany* lub *Ukończony*.
 
 ![Okno dialogowe Postęp raportu.](media/pfei-report-progress-dialog.png "Okno dialogowe Postęp raportu")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Raportowanie dobrych ilości w zamówieniach partii, które mają produkty towarzyszące i uboczne
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Pracownicy mogą raportować postęp w realizacji zamówień partii za pomocą interfejsu wykonywania hali produkcyjnej. Raportowanie to obejmuje raportowanie produktów towarzyszących i ubocznych.
+
+Niektórzy producenci, szczególnie w przemyśle procesowym, używają zamówień partii do zarządzania procesami produkcji. Zamówienia partii są tworzone na podstawie formuł i można je zdefiniować w taki sposób, aby w ich wyniku powstawały produkty towarzyszące i uboczne. W przypadku zgłoszonych informacji zwrotnych o tych zamówieniach partii ilość produkcji musi zostać zarejestrowana w produkcie typu formuła, a także w produktach towarzyszących i ubocznych.
+
+Gdy pracownik zakończy lub częściowo zakończy zadanie w zamówieniu partii, może zgłaszać ilości towarów dobrych lub odpadków dla każdego produktu zdefiniowanego jako produkt wyjściowy dla zamówienia. Produkty zdefiniowane jako produkty wyjściowe w zamówieniu partii mogą mieć typ *Formuła*, *Produkt towarzyszący* lub *Produkt uboczny*.
+
+Aby zgłosić dobre ilości produktów, pracownik wybiera zadanie na karcie **Aktywne zadania**, a następnie wybiera opcję **Postęp raportu**.
+
+Następnie w oknie dialogowym **Postęp raportu** pracownik może wybrać spośród produktów, które są zdefiniowane jako produkty wyjściowe dla zamówienia partii, które będą raportować. Pracownik może wybrać jeden lub wiele produktów na liście, a następnie wybrać opcję **Postęp raportu**. W przypadku każdego produktu ilość jest domyślnie pusta, a pracownik może wprowadzić ilość za pomocą klawiatury numerycznej. Pracownik może używać przycisków **Poprzedni** i **Następny**, aby przechodzić między wybranymi produktami. Po wprowadzeniu ilości dla każdego produktu pracownik może zaktualizować stan zadania jako *W toku*, *Zatrzymane* lub *Zakończone*.
+
+![Raportowanie produktów towarzyszących i produktów ubocznych.](media/report-co-by-products.png "Raportowanie produktów towarzyszących i produktów ubocznych")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Raportowanie zamówień partii dotyczących pozycji planowania
+
+Pracownik, który ukończy zadanie w zamówieniu partii dotyczącej pozycji planowania, będzie raportować ilości tylko w odniesieniu do produktów towarzyszących i ubocznych, ponieważ pozycje planowania nie zawierają pozycji typu *Formuła*.
+
+### <a name="reporting-co-product-variation"></a>Raportowanie odchylenia produktu towarzyszącego
+
+Jeśli zamówienie partii jest tworzone na podstawie wersji formuły, w której opcja **Warianty produktów towarzyszących** ma wartość *Tak*, pracownik może składać raporty o produktach towarzyszących, które nie są częścią definicji tych zamówień partii. Ta funkcja jest używana w scenariuszach, w których w procesie produkcji może wystąpić nieoczekiwany produktu wynikowy.
+
+W takim przypadku pracownik może określić produkt towarzyszący w raporcie, zaznaczając w oknie dialogowym postępu raportu **Warianty produktów towarzyszących**. Pracownik może następnie wybrać spośród wszystkich zwolnionych produktów, które są zdefiniowane jako produkty towarzyszące.
 
 ## <a name="reporting-scrap"></a>Raportowanie odpadków
 

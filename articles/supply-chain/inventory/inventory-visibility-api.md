@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592495"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678794"
 ---
 # <a name="inventory-visibility-public-apis"></a>Publiczne interfejsy API dodatku Widoczność magazynu
 
@@ -374,8 +374,6 @@ W poniższym przykładzie pokazano zawartość przykładowej treści. Zachowanie
 ```
 
 ## <a name="create-reservation-events"></a>Tworzenie zdarzeń rezerwacji
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aby korzystać z interfejsu API *rezerwacji*, należy otworzyć funkcję rezerwacji i dokończyć konfigurację rezerwacji. Aby uzyskać więcej informacji, należy zapoznać się z tematem [Konfiguracja rezerwacji (opcjonalna)](inventory-visibility-configuration.md#reservation-configuration).
 

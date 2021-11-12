@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e956bac61df4b694ef347b804fed139e9e22e6f95d1bac7ea483a07946cb110f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b29bb1aea9e96b5ef39303025cb286f0d1fde12c
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722446"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678890"
 ---
 # <a name="global-inventory-accounting-ledger"></a>Księga Globalnego księgowania zapasów
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 Globalne księgowanie zapasów ma własny zestaw ksiąg. Za każdym razem, gdy dla danej osoby prawnej przetwarzana jest transakcja związana z inwentaryzacją, system może ją zaksięgować w dowolnej liczbie ksiąg Globalnej księgi zapasów, w zależności od potrzeb.
 

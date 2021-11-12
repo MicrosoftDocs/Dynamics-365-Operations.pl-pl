@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769426"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647492"
 ---
 # <a name="mobile-device-user-settings"></a>Ustawienia użytkownika urządzenia przenośnego
 
@@ -54,7 +54,7 @@ Możesz także zdefiniować profil ustawień, który ma zastosowanie do wszystki
 
 Aby utworzyć ustawienia użytkownika dla urządzeń przenośnych i zarządzać nimi, należy wykonać następujące kroki.
 
-1. Wybierz kolejno opcje **Zarządzanie magazynem \> Urządzenie przenośne \> Menu ustawień użytkownika urządzenia przenośnego**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Menu ustawień użytkownika urządzenia przenośnego**.
 1. Wybierz istniejący profil ustawień użytkownika w okienku listy, aby otworzyć jego rekord. Możesz również wybrać opcję **Nowy** w okienku akcji, aby utworzyć nowy profil.
 
     Każdy profil w okienku listy jest oznaczony etykietą wskazującą markę, model i/lub identyfikator użytkownika, do których odnosi się ten profil. W przypadku niektórych lub wszystkich tych cech więcej profilów ogólnych ma wartość *Wszystkie*.
@@ -83,7 +83,7 @@ Strona **Marki urządzenia przenośnego** umożliwia przeglądanie i tworzenie m
 
 Wykonaj poniższe czynności, aby tworzyć marki i modele urządzeń mobilnych oraz zarządzać nimi.
 
-1. Wybierz kolejno opcje **Zarządzanie magazynem \> Urządzenie przenośne \> Marki urządzeń przenośnych**.
+1. Wybierz kolejno opcje **Zarządzanie magazynem \> Ustawienia \> Urządzenie przenośne \> Marki urządzenia przenośnego**.
 1. W okienku listy wybierz markę urządzenia mobilnego, aby otworzyć jego rekord. Możesz również wybrać opcję **Nowy** w okienku akcji, aby utworzyć nową markę.
 1. W sekcji nagłówka rekordu dla nowej lub wybranej marki urządzenia ustaw następujące pola:
 

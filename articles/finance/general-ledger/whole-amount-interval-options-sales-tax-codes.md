@@ -1,7 +1,7 @@
 ---
 title: Opcje Cała kwota i Obliczanie interwału dla kodów podatku
-description: W tym artykule opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
-author: ShylaThompson
+description: W tym temacie opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3d622f8a81c0eabc84fb165203aa193f5e7dd6ad148ff50a9f55c87453be9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731483"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726853"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Opcje Cała kwota i Obliczanie interwału dla kodów podatku
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule opisano opcje dostępne w polu Metoda obliczania w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
+W tym temacie opisano opcje dostępne w polu **Metoda obliczania** w ustawieniach kodów podatków oraz wyjaśniono sposób obliczania podatku dla interwałów kwot i całych kwot.
 
-można skonfigurować kod podatku, który ma być obliczany na podstawie jednej całej kwoty lub kwoty interwału. Na stronie Kody podatków użyj pola Metoda obliczania na karcie skróconej Obliczanie, aby wybrać, jak ma być obliczany kod podatku.
+można skonfigurować kod podatku, który ma być obliczany na podstawie jednej całej kwoty lub kwoty interwału. Na stronie **Kody podatków** użyj pola **Metoda obliczania** na karcie skróconej **Obliczanie**, aby wybrać metodę obliczania kodu podatku od sprzedaży.
 - Cała kwota — stawka podatku jest stosowana do całej kwoty opodatkowanej.
 - Interwał — kwota opodatkowana jest dzielona na części, z których każda mieści się w zakresie o określonej stawce podatku. Część tej kwoty należąca do danego interwału jest opodatkowana według stawki podatku określonej dla tego interwału. Podatek jest sumą kwot podatku obliczonych dla poszczególnych interwałów kwoty.
   > [!NOTE]                                                                                                                              

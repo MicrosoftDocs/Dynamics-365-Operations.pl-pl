@@ -1,7 +1,7 @@
 ---
 title: Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
-description: W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
-author: ShylaThompson
+description: W tym temacie wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
+author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.reviewer: roschlom
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 074a976e3d815211f4a4fe24268ffc7ac7e9c4f4b4449167d288876a93749e1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763149"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674883"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Ponowne obliczanie kosztów wymiany i wartości ubezpieczenia dla grup środków trwałych
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
+W tym temacie wyjaśniono proces aktualizowania kosztów wymiany i wartości ubezpieczenia środków trwałych.
 
 Okresowo możesz otrzymywać powiadomienie, że koszt wymiany lub ubezpieczenia określonych środków trwałych uległ zmianie. Na przykład, Twój menedżer może poinformować Cię, że w zeszłym roku inflacja wynosiła 3%, więc musisz zwiększyć koszt wymiany wszystkich środków trwałych o 3%. 
 

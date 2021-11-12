@@ -1,7 +1,7 @@
 ---
 title: Przykłady wyników amortyzacji z cofnięciami
 description: W tym artykule opisano potencjalne skutki stornowania transakcji na środkach trwałych.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37f0412166404e6903819840debcdd0ab0630115dcdb68297e0072723adacb53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760669"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674557"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Przykłady wyników amortyzacji z cofnięciami
 
@@ -30,14 +30,14 @@ W tym artykule opisano potencjalne skutki stornowania transakcji na środkach tr
 
 Można cofać transakcje dotyczące środka trwałego oraz transakcje skojarzone ze środkiem trwałym. Można też anulować wycofaną transakcję. 
 
-Można wycofać lub anulować transakcję, która nie jest ostatnią transakcją zaksięgowaną w księdze środka trwałego. Najpierw należy określić, czy po wycofywanej transakcji zostały zaksięgowane jakieś inne transakcje amortyzacji. Jest to spowodowane tym, że amortyzacja nie zostanie ponownie obliczona podczas wycofywania transakcji. Z tego względu często jest zawyżona lub zaniżona po wycofaniu, jak to przedstawiono w przykładach. 
+Można wycofać lub anulować transakcję, która nie jest ostatnią transakcją zaksięgowaną w księdze środka trwałego. Najpierw określ, czy po wycofywanej transakcji zostały zaksięgowane inne transakcje amortyzacji. Ten krok jest konieczny, ponieważ amortyzacja nie zostanie ponownie obliczona podczas wycofywania transakcji. Z tego względu często jest zawyżona lub zaniżona po wycofaniu, jak to przedstawiono w przykładach. 
 
 Aby upewnić się, że po wycofaniu transakcji amortyzacja będzie poprawna, nie należy doprowadzać wycofania do końca, jeśli podczas tego procesu pojawi się komunikat informujący o tym, że amortyzacja nie zostanie ponownie wyliczona. Najpierw wycofaj transakcję amortyzacji, którą zaksięgowano po transakcji, którą chcesz wycofać, a dopiero wtedy możesz przejść do wycofania tej transakcji. Nie pojawi się wówczas ostrzeżenie dotyczące ponownego obliczania amortyzacji i można dokończyć wycofywanie. 
 
 W podanych dalej przykładach przedstawiono obliczenia mające miejsce w wypadku, gdy zignorujesz komunikat z ostrzeżeniem i nie wycofasz najpierw transakcji amortyzacji.
 
 ## <a name="example-1-depreciation-is-overstated"></a> Przykład 1. Amortyzacja zawyżona
-Dla środka trwałego skonfigurowano 5-letni okres użytkowania oraz amortyzację liniową (60 okresów amortyzacji). W tym przykładzie amortyzacja jest zawyżona.
+Dla środka trwałego skonfigurowano pięcioletni okres użytkowania oraz amortyzację liniową (60 okresów amortyzacji). W tym przykładzie amortyzacja jest zawyżona.
 #### <a name="asset-transaction-history"></a>Historia transakcji dotyczących środka trwałego
 
 | Data       | Typ transakcji                                                          | Kwota                                    |
@@ -61,7 +61,7 @@ Dla środka trwałego skonfigurowano 5-letni okres użytkowania oraz amortyzacj�
 Amortyzacja jest zawyżona o 16,95 (1000 - 983,05).
 
 ## <a name="example-2-depreciation-is-understated"></a> Przykład 2. Amortyzacja zaniżona
-Dla środka trwałego skonfigurowano 5-letni okres użytkowania oraz amortyzację liniową (60 okresów amortyzacji). W tym przykładzie amortyzacja jest zaniżona.
+Dla środka trwałego skonfigurowano pięcioletni okres użytkowania oraz amortyzację liniową (60 okresów amortyzacji). W tym przykładzie amortyzacja jest zaniżona.
 #### <a name="asset-transaction-history"></a>Historia transakcji dotyczących środka trwałego
 
 | Data       | Typ transakcji                                                          | Kwota                                      |

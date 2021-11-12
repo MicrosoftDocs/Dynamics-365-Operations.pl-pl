@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575178"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678916"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Dodatek Widoczność magazynu — omówienie
 
@@ -45,8 +45,6 @@ Dostępne są dwa sposoby wyświetlania zapasów:
 - Wyświetlanie nieprzetworzonej listy dostępnych zapasów. Ta lista jest okresowo synchronizowana z pamięcią podręczną i jest widoczna w Dataverse. Więcej informacji zawiera temat [Aplikacja Widoczność magazynu](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Rezerwacje wstępne
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Rezerwacja wstępna ma zastosowanie, gdy firma musi zarezerwować określoną ilość produktów, aby na przykład uniknąć niedoborów podczas realizacji zamówień sprzedaży. Gdy zamówienie sprzedaży zostanie utworzone i potwierdzone w Supply Chain Management lub innym systemie zarządzania zamówieniami, żądanie rezerwacji ilości jest wysyłane do dodatku Widoczność magazynu. Widoczność magazynu umożliwia rezerwowanie produktów, które mają szczegóły wymiarów oraz określone typy transakcji magazynowych. (Więcej informacji zawiera temat [Aplikacja Widoczność magazynu](inventory-visibility-power-platform.md)). Gdy ilość zostanie zarezerwowana, zwracany jest identyfikator rezerwacji. Tego identyfikatora rezerwacji można użyć w celu połączenia z oryginalnym zamówieniem w Supply Chain Management lub innym systemie zarządzania zamówieniami.
 

@@ -2,7 +2,7 @@
 title: Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 description: W tym temacie opisano, w jaki sposób administratorzy mogą dodawać, edytować i usuwać użytkowników partnerów biznesowych w witrynach sieci Web handlu elektronicznego typu business-to-business (B2B).
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734950"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713700"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Zarządzaj użytkownikami partnerów biznesowych w witrynach handlu elektronicznego B2B
 
@@ -68,6 +68,18 @@ Aby zatwierdzić i skonfigurować administratora partnera biznesowego w programi
 1. Przejdź do **Retail i Commerce IT \> Harmonogram dystrybucji** i uruchom zadanie **1010** (**Odbiorcy**), aby przesunąć nowo utworzone rekordy hierarchii odbiorców i odbiorców do bazy danych kanału.
 
 Po zatwierdzeniu żądania i zsynchronizowaniu rekordów klientów i hierarchii klientów z bazą danych kanału żądający może zalogować się do witryny handlu elektronicznego B2B przy użyciu adresu e-mail podanego podczas przesyłania żądania. Użytkownicy mogą używać przepływu rejestracji w celu zdefiniowania hasła dla swojego konta. Aby umożliwić powiązanie rekordu dostawcy tożsamości (Azure AD B2C) z rekordem klienta B2B, który został utworzony podczas rejestracji lub logowania, postępuj zgodnie z instrukcjami w [Włącz automatyczne łączenie rekordów tożsamości z kontami klientów](../identity-record-linking.md).
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Powiadamiaj prospekty B2B o ich zatwierdzeniu lub odrzuceniu
+
+Po zatwierdzeniu lub odrzuceniu wniosku o dołączenie prospektu B2B można automatycznie wysłać do prospektu powiadomienie pocztą e-mail. 
+
+Aby skonfigurować powiadomienia pocztą e-mail w centrali Commerce dla zdarzeń typu powiadomień zatwierdzenia prospektu B2B lub odrzucenia prospektu B2B, należy wykonać następujące kroki.
+
+1. Utwórz szablony wiadomości e-mail dla wiadomości e-mail, które będą wysyłane do prospektów, gdy zostanie wywołany typ powiadomienia zatwierdzenia lub odrzucenia prospektu B2B.
+
+    Aby uzyskać informacje o symbolach zastępczych, które obsługują typu powiadomień zatwierdzenia i odrzucenia prospektu B2B, zobacz temat [Typy powiadomień](../email-templates-transactions.md#notification-types). Aby uzyskać informacje dotyczące sposobu tworzenia szablonów wiadomości e-mail, zobacz temat [Tworzenie szablonu wiadomości e-mail](../email-templates-transactions.md#create-an-email-template). 
+
+1. Dodaj typy powiadomień zatwierdzenia i odrzucenia prospektu B2B do profilu powiadomień poczty e-mail i mapuje je na utworzone szablony wiadomości e-mail. Więcej informacji na temat profili powiadomień jest dostępnych w artykule [Konfigurowanie profilu powiadomienia](../email-notification-profiles.md). 
 
 ## <a name="onboard-additional-business-partner-users"></a>Dodatkowi użytkownicy partnera biznesowego
 

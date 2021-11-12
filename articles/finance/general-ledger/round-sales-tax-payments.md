@@ -1,8 +1,8 @@
 ---
-title: Reguły płatności podatkowych i zaokrąglania
-description: W tym artykule wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
-author: ShylaThompson
-ms.date: 04/20/2020
+title: Reguły płatności podatku i zaokrąglania
+description: W tym temacie wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
+author: kailiang
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: pacheren
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1838666b57bf2ce4eb78f5d3486c03e4c2447646a121a537efd6bffa0019b96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760693"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726807"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatkowych i zaokrąglania
+# <a name="sales-tax-payments-and-rounding-rules"></a>Reguły płatności podatku i zaokrąglania
 
 [!include [banner](../includes/banner.md)]
 
-W tym artykule wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
+W tym temacie wyjaśniono działanie konfiguracji reguły zaokrąglania w ustawieniach urzędu skarbowego oraz sposób zaokrąglania salda podatku podczas zadania rozliczania i księgowania podatku.
 
-Okresowo należy zgłaszać i płacić podatek w urzędzie skarbowym. Można to zrobić, uruchamiając proces rozliczenia i księgowania podatku na stronie Podatek. Podatek od sprzedaży w danym okresie zostanie rozliczony dla kont podatku, a saldo podatku zostanie zaksięgowane na koncie rozliczenia podatku. Saldo podatku, który jest księgowany na koncie rozliczenie podatku, może być zaokrąglane zgodnie z wymogami urzędu skarbowego przez skonfigurowanie reguły zaokrąglania na stronie podatku od sprzedaży. 
+Okresowo należy zgłaszać i płacić podatek w urzędzie skarbowym. Można to zadanie ukończyć, uruchamiając proces rozliczenia i księgowania podatku na stronie **Podatek od sprzedaży**. Podatek od sprzedaży w danym okresie zostanie rozliczony dla kont podatku, a saldo podatku zostanie zaksięgowane na koncie rozliczenia podatku. Saldo podatku, który jest księgowany na koncie rozliczenie podatku, może być zaokrąglane zgodnie z wymogami urzędu skarbowego przez skonfigurowanie reguły zaokrąglania na stronie **podatku od sprzedaży**. 
 
 Różnica wynikająca z zaokrąglenia jest księgowana na koncie zaokrąglania podatku wybranym w polu Konta do transakcji automatycznych w księdze głównej.
 
@@ -63,11 +63,11 @@ W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy u�
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normalne zaokrąglenie i normalna dokładność wynoszą 0,01
 
-<table>
+```<table>
   <tr>
-    <td>Zaokrąglanie
+    <td>Rounding
     </td>
-    <td>Procedury obliczania
+    <td>Calculation process
     </td>
   </tr>
     <tr>
@@ -116,6 +116,7 @@ W poniższej tabeli przedstawiono, jak kwota 98 765,43 jest zaokrąglana przy u�
     </td>
   </tr>
 </table>
+```
 
 > [!NOTE]                                                                                  
 > Jeśli wybierzesz Na korzyść firmy, zaokrąglanie jest zawsze na korzyść firmy. 

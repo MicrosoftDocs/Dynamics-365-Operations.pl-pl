@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722798"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647147"
 ---
 # <a name="vendor-invoices-overview"></a>Omówienie faktur od dostawców
 
@@ -72,12 +72,9 @@ Organizacja może używać przepływu pracy do zarządzania procesem przeglądu 
 Poniżej przedstawiono kilka sposobów uniemożliwiających przesłanie faktury do przepływu pracy.
 
 - **Suma faktury i zarejestrowana suma nie są równe**. Osoba, która przesłała fakturę, otrzyma alert, że sumy nie są równe. Alert daje możliwość skorygowania sald przed ponownym przesłaniem faktury do przepływu pracy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli suma faktury i zarejestrowana suma faktury nie są równe** na stronie **Zarządzanie funkcją**. 
-
 - **Faktura zawiera niealokowane opłaty**. Osoba, która przesłała fakturę, otrzyma alert informujący, że na fakturze znajdują się niezaalokowane opłaty, aby mogły skorygować fakturę przed ponownym przesłaniem jej do przepływu pracy. Ta funkcja jest dostępna, jeśli jest włączony parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli na fakturze dla dostawcy znajdują się niezaalokowane opłaty** na stronie **Zarządzanie funkcją**.
-
 - **Faktura zawiera ten sam numer faktury co inna Zaksięgowana faktura**. Osoba, która złożyła fakturę otrzyma komunikat informujący, że znaleziono fakturę z duplikatem numeru. Zduplikowany numer może zostać skorygowany przed ponownym przesłaniem faktury do obiegu. Ten alert będzie wyświetlany, gdy parametr w sekcji Rozrachunki z dostawcami oznaczony **Sprawdź użyty numer faktury** jest ustawiony na **Odrzuć duplikaty**. Ta funkcja jest dostępna, jeśli włączony jest parametr **Zabroń przesyłania do przepływu pracy w przypadku, jeśli numer faktury istnieje już na zaksięgowanej fakturze, a system nie jest ustawiony na zduplikowane numery faktur** na stronie **Zarządzanie funkcją**.
-
-- **Faktura zawiera wiersz, w którym ilość fakturowana jest mniejsza niż ilość w dopasowanych przyjęciach produktów.** Osoba przesyłaca fakturę lub próby zaksięgowania otrzyma komunikat, że ilości nie są równe. Komunikat ten daje możliwość skorygowania wartości przed ponownym przesłaniem faktury do obiegu. Ta funkcja jest dostępna, jeśli na stronie **Zarządzanie funkcjami** jest włączona opcja **Zablokuj księgowanie i przesyłanie faktur dostawców do parametru przepływu pracy**, a parametry **blokowania księgowania i przesyłania** do przepływu pracy na stronie **Parametry rozrachunków z dostawcami** są włączone.  
+- **Faktura zawiera wiersz, w którym ilość fakturowana jest mniejsza niż ilość w dopasowanych przyjęciach produktów.** Osoba przesyłaca fakturę lub próby zaksięgowania otrzyma komunikat, że ilości nie są równe. Komunikat ten daje możliwość skorygowania wartości przed ponownym przesłaniem faktury do obiegu. Ta funkcja jest dostępna, jeśli na stronie **Zarządzanie funkcjami** jest włączona opcja **Zablokuj księgowanie i przesyłanie faktur dostawców do parametru przepływu pracy**, a parametry **blokowania księgowania i przesyłania** do przepływu pracy na stronie **Parametry rozrachunków z dostawcami** są włączone.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Uzgadnianie faktur od dostawców z dokumentami przyjęcia produktów
 
@@ -122,9 +119,32 @@ Wystąpienie przepływu pracy, które zostało zatrzymane z powodu nieodwracalne
 Za pomocą strony **Historia przepływu pracy** można zmienić stan przepływu pracy na **Wersja robocza**. Można otworzyć tę stronę z menu **Faktura dostawcy** lub z menu nawigacji **Wspólne > Zapytania > Przepływ pracy**. Aby zresetować stan przepływu pracy na **Wersja robocza**, wybierz opcję **Odwołaj**. Możesz również zresetować stan przepływu pracy do wersji roboczej, wybierając akcję **Odwołaj** na stronie **Faktura od dostawcy** lub na stronie **Oczekujące faktury od dostawcy**. Po zmianie stanu przepływu pracy na **Wersja robocza**, fakturę będzie można edytować na stronie **Faktura od dostawcy**.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>Wyświetlanie sumy faktury na stronie Oczekujące faktury od dostawcy
+
 Sumę faktur można wyświetlić na stronie **Oczekujące faktury od dostawcy** poprzez włączenie parametru **Wyświetl sumę faktury na liście oczekujących faktur od dostawców** na stronie **Parametry modułu rozrachunków z dostawcami**. 
 
+## <a name="vendor-open-transactions-report"></a>Raport otwartych transakcji dostawców
 
+Raport **Otwarte transakcje sprzedawcy** zawiera szczegółowe informacje o otwartych transakcjach dla każdego sprzedawcy od określonej przez użytkownika daty. Raport ten jest często wykorzystywany podczas procedury audytowej do weryfikacji sald pomiędzy transakcjami w księdze dostawców a transakcjami na kontach księgowych.
+
+Dla każdej transakcji raport zawiera następujące szczegóły:
+
+- Numer faktury
+- Data transakcji
+- Numer załącznika
+- Kwota transakcji w walucie transakcji i walucie księgowej
+- Saldo kredytowe w walucie transakcji i w walucie księgowej
+- Saldo debetowe w walucie transakcji i w walucie księgowej
+- Suma cząstkowa w walucie obrachunkowej
+- Data płatności
+
+### <a name="filter-the-data-on-the-report"></a>Filtrowanie danych w raporcie
+
+Podczas generowania raportu **Otwarte transakcje sprzedawcy** dostępne są następujące parametry domyślne. Można je wykorzystać do filtrowania danych, które znajdą się w raporcie.
+
+- **Wyklucz przyszłe rozliczenia** — zaznacz pole, aby wykluczyć transakcje, które zostaną rozliczone po dacie wpisanej w polu **Otwarte transakcje na**.
+- **Otwarte transakcje na** — wpisz datę, aby uwzględnić transakcje, które są otwarte od tego dnia. Jeśli nie wprowadzisz daty, pole to zostanie ustawione na datę maksymalną. (Maksymalna data jest ostatnią datą, jaką system przyjmie, 31 grudnia 2154 r.). Domyślnie, przy następnym uruchomieniu raportu, w polu tym zostanie ustawiona ostatnia wprowadzona w nim data.
+
+Można użyć filtrów pod polem **Rekord do uwzględnienia**, aby jeszcze bardziej ograniczyć dane transakcji, które znajdą się na raporcie.
 
 ## <a name="additional-resources"></a>Dodatkowe zasoby
 

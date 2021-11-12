@@ -2,7 +2,7 @@
 title: Miejsca docelowe raportowania elektronicznego (ER)
 description: Ten temat zawiera informacje dotyczące zarządzania miejscami docelowymi raportowania elektronicznego, typów obsługiwanych miejsc docelowych oraz względów bezpieczeństwa.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743318"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647100"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Miejsca docelowe raportowania elektronicznego (ER)
 
@@ -164,12 +164,12 @@ Aby w bieżącej instancji Finance była dostępna opcja konwersji plików PDF, 
 
 ### <a name="applicability"></a>Możliwość stosowania
 
-Opcję konwersji na format PDF można włączyć tylko dla składników plików używanych do generowania danych wyjściowych stworzonych w formacie pakietu Office (Excel lub Word) (**plik programu Excel**). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF. W wersjach **przed Finance 10.0.18** opcję można włączyć tylko w przypadku składników typu pliku programu **Excel\\File** używanych do generowania danych wyjściowych w formacie programu [Excel](er-fillable-excel.md) lub programu [Word](er-design-configuration-word.md) . Jednak w **wersji 10.0.18 i nowszej** można włączyć tę opcję dla składników typu **Common\\File**.
+W wersjach aplikacji Finance **wcześniejszych niż 10.0.18** opcję konwersji PDF można włączyć tylko w przypadku składników typu **Excel\\File** używanych do generowania danych wyjściowych w formacie pakietu Office (Excel lub Word). Gdy ta opcja jest włączona, dane wyjściowe generowane w formacie pakietu Office są automatycznie konwertowane na format PDF. Jednak w **wersji 10.0.18 i nowszej** można włączyć tę opcję dla składników typu **Common\\File**.
 
 > [!NOTE]
 > Należy pamiętać o komunikacie ostrzegawczym, który jest wyświetlany po włączeniu opcji konwersji w formacie PDF dla składnika ER typu **Common\\File**. Ten komunikat informuje, że nie ma możliwości zagwarantowania, w czasie projektowania, że wybrany składnik pliku uwidacznia zawartość w formacie PDF lub konwertowalnym w formacie PDF w czasie wykonywania. Dlatego tę opcję należy włączyć tylko wtedy, gdy użytkownik upewnić się, że wybrany składnik pliku został skonfigurowany tak, aby uwidaczniać zawartość w formacie PDF lub w konwertowalnym formacie PDF w czasie wykonywania.
 > 
-> Jeśli włączysz opcję konwersji PDF składnika typu **Excel\\File**, jeśli ten składnik uwidacznia zawartość w formacie innym niż PDF i jeśli nie można przekonwertować udostępnianej zawartości na format PDF, w czasie wykonywania wystąpi wyjątek. Z dostarczanego komunikatu wynika, że wygenerowanej zawartości nie można przekonwertować na format PDF.
+> Jeśli włączysz opcję konwersji PDF składnika formatu, jeśli ten składnik uwidacznia zawartość w formacie innym niż PDF i jeśli nie można przekonwertować udostępnianej zawartości na format PDF, w czasie wykonywania wystąpi wyjątek. Z dostarczanego komunikatu wynika, że wygenerowanej zawartości nie można przekonwertować na format PDF.
 
 ### <a name="limitations"></a>Ograniczenia
 
@@ -189,16 +189,26 @@ Aby włączyć konwersję pliku PDF dla pliku docelowego, zaznacz pole wyboru **
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Wybierz orientację strony do konwersji na format PDF</a>
 
-W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można określić orientację strony dokumentu PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
+W przypadku generowania konfiguracji ER w formacie programu Excel i konwersji na format PDF można jawnie określić orientację strony dokumentu PDF. Po zaznaczeniu pola wyboru **Konwertuj na PDF** w celu włączenia konwersji do formatu PDF dla pliku docelowego, który generuje plik wyjściowy w formacie programu Excel, pole **Orientacja strony** staje się dostępne w **Ustawieniach konwersji PDF** na skróconej karcie. W polu **Orientacja strony** możesz wybrać preferowaną orientację strony.
 
 [![Wybierz orientację strony do konwersji na format PDF.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Aby można było wybrać orientację strony PDF, należy zainstalować rozwiązanie Finance w wersji 10.0.10 lub nowszej.
->
-> Wybrana orientacja strony jest stosowana do wszystkich konfiguracji ER, które są generowane w formacie programu Excel, a następnie konwertowane na format PDF.
->
-> Jeśli konfiguracja ER w formacie programu Word jest konwertowana na PDF, orientacja strony dokumentu PDF jest pobierana z dokumentu programu Word.
+Aby można było wybrać orientację strony PDF, zainstaluj rozwiązanie Finance w wersji 10.0.10 lub nowszej. W wersjach aplikacji Finance wcześniejszych niż **10.0.23** ta opcja oferuje następujące opcje orientacji strony:
+
+- Pionowo
+- Pozioma
+
+Wybrana orientacja strony jest stosowana do wszystkich stron dokumentu wychodzącego, które są generowane w formacie programu Excel, a następnie konwertowane na format PDF.
+
+Jednak w **wersji 10.0.23 i późniejszych** lista opcji orientacji strony została rozszerzona w następujący sposób:
+
+- Pionowo
+- Pozioma
+- Specyficzne dla arkusza
+
+Po wybraniu opcji **Specyficzne dla arkusza** każdy arkusz wygenerowanego skoroszytu programu Excel jest konwertowany na plik PDF przy użyciu orientacji strony, która została skonfigurowana dla tego arkusza w używanym szablonie programu Excel. Może to być ostateczny dokument PDF zawierający strony pionowe i poziome. 
+
+Jeśli konfiguracja ER w formacie programu Word jest konwertowana na PDF, orientacja strony dokumentu PDF jest zawsze pobierana z dokumentu programu Word.
 
 ## <a name="output-unfolding"></a>Rozwijanie wyjścia
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a60fc00642a77d3dc595a6222727637f0d7cd588
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 0457190f2fc8cd0ed39e109e6720509b77b83566
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7475067"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678526"
 ---
 # <a name="use-the-inventory-visibility-app"></a>Używanie aplikacji Widoczność magazynu
 
@@ -63,8 +63,6 @@ Aby zaksięgować zapytanie o dostępne zapasy, wprowadź zapytanie w treści ż
 ![Ustawienia zapytania o dostępne zapasy](media/inventory-visibility-query-settings.png "Ustawienia zapytania o dostępne zapasy")
 
 ### <a name="reservation-posting"></a>Księgowanie rezerwacji
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Użyj karty **Księgowanie rezerwacji**, aby zaksięgować żądanie rezerwacji. Aby można było zaksięgować żądanie rezerwacji, należy włączyć funkcję *OnHandReservation*. Więcej informacji na temat tej funkcji zawiera temat [Rezerwacje dodatku Widoczność zapasów](inventory-visibility-reservations.md).
 

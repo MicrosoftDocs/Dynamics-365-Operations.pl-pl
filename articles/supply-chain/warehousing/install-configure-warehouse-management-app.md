@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384618"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647632"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Instalowanie i łączenie aplikacji mobilnej Zarządzanie magazynem
 
@@ -109,7 +109,7 @@ Aby uzyskać więcej informacji na temat konfigurowania aplikacji usług interne
     - [Przewodnik Szybki start: Rejestrowanie aplikacji na platformie tożsamości firmy Microsoft](/azure/active-directory/develop/quickstart-register-app)
     - [Instrukcje: korzystanie z portalu do tworzenia aplikacji usługi Azure AD i nazwy głównej usługi, która może uzyskiwać dostęp do zasobów](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Tworzenie i konfigurowanie konta użytkownika w programie Supply Chain Management
 
 Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wykonaj następujące kroki.
 
@@ -117,17 +117,24 @@ Aby aplikacja Supply Chain Management mogła korzystać z aplikacji Azure AD, wy
 
     1. W aplikacji Supply Chain Management wybierz kolejno pozycje **Administrowanie systemem \> Użytkownicy \> Użytkownicy**.
     1. Utwórz użytkownika.
-    1. Przypisz użytkownika urządzenia przenośnego dla magazynu.
+    1. Przypisz rolę *Użytkownik urządzenia przenośnego dla magazynu* do użytkownika.
 
     ![Przypisz użytkownika urządzenia przenośnego dla magazynu.](media/app-connect-app-users.png "Przypisywanie użytkownika urządzenia przenośnego dla magazynu")
 
 1. Skojarz aplikację usługi Azure AD z użytkownikiem aplikacji mobilnej Zarządzanie magazynem:
 
     1. Przejdź do pozycji **Administrowanie systemem \> Ustawienia \> Aplikacje usługi Azure Active Directory**.
-    1. Utwórz wiersz.
-    1. Wprowadź identyfikator klienta, który zanotowano w poprzedniej sekcji, nadaj mu nazwę i wybierz właśnie utworzonego użytkownika. Zalecamy oznakowanie wszystkich urządzeń. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management z tej strony.
+    1. Wybierz opcję **Nowy** w okienku akcji, aby utworzyć wiersz.
+    1. W polu **Identyfikator klienta** wprowadź identyfikator klienta, który został zanotowany w poprzedniej sekcji.
+    1. W polu **Nazwa** wprowadź nazwę.
+    1. W polu **Identyfikator użytkownika** wybierz właśnie utworzony identyfikator użytkownika.
 
     ![Aplikacje usługi Azure Active Directory.](media/app-connect-aad-apps.png "Aplikacje usługi Azure Active Directory")
+
+> [!TIP]
+> Jednym ze sposobów użycia tych ustawień jest utworzenie identyfikatora klienta na platformie Azure dla każdego urządzenia fizycznego, a następnie dodanie każdego identyfikatora klienta do strony **aplikacji usługi Azure Active Directory**. W przypadku utraty urządzenia będzie można łatwo usunąć ich dostęp do aplikacji Supply Chain Management przez usunięcie identyfikatora klienta z tej strony. (Ta metoda działa, ponieważ poświadczenia połączenia zapisane na każdym urządzeniu określają również identyfikator klienta, zgodnie z opisem w dalszej części tego tematu).
+>
+> Ponadto domyślny język, format liczby i ustawienia stref czasowych dla każdego identyfikatora klienta są określone przez preferencje ustawione dla zmapowanej w tym miejscu wartości **identyfikatora użytkownika**. Z tego względu można użyć tych preferencji, aby ustalić domyślne ustawienia dla każdego urządzenia lub kolekcji urządzeń, na podstawie identyfikatora klienta. Jednak te ustawienia domyślne zostaną zastąpione, jeśli są także zdefiniowane dla *konta użytkownika aplikacji magazynu*, którego pracownik używa do zalogowania się na urządzeniu. (Aby uzyskać więcej informacji zobacz temat [Konta użytkownika urządzenia przenośnego](mobile-device-work-users.md)).
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Uwierzytelnianie przy użyciu certyfikatu lub wpisu tajnego klienta
 

@@ -2,7 +2,7 @@
 title: Skróty klawiaturowe
 description: W tym temacie przedstawiono omówienie kombinacji klawiszy skrótów, które mogą być używane podczas pracy z aplikacjami Finance and Operations.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743178"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647543"
 ---
 # <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Poniższe skróty klawiaturowe umożliwiają szybkie i wydajne wprowadzanie danych w aplikacjach Finance and Operations.
 
@@ -148,14 +149,15 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Przełączanie fokusa między wybranym wierszem a wierszem nagłówka                                                               | Alt+Shift+H                     |
 | Powiększenie/pomniejszenie bieżącej kolumny (z fokusem w wierszu nagłówka)                                                  | Strzałka w prawo / Strzałka w lewo        |
 | Otwarcie filtrowania siatki dla bieżącej kolumny (z fokusem w wierszu nagłówka)                                              | Enter                           |
+| Zmień rozmiar bieżącej kolumny, aby dopasować ją do zawartości (z fokusem w wierszu nagłówka)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Skróty wpisywania danych
 
-| Funkcja                                                                   | Klawisze                         |
+| Funkcja                                                                   | Naciśnij klawisz                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Otwórz hiperłącze                                                           | Ctrl+Enter                    |
-| Wpisz datę sesji w polu daty                                       | D                         |
-| Wpisz bieżącą datę w polu daty                                       | N                         |
+| Wpisz datę sesji w polu daty                                       | D                             |
+| Wpisz bieżącą datę w polu daty                                       | N                             |
 | Otwórz wyszukiwanie, pole kombi, wybór daty, okno dialogowe przerywania                         | Alt+strzałka w dół                |
 | Zamknij wyszukiwanie, pole kombi, wybór daty, okno dialogowego przerywania                        | Esc                           |
 | Przenieś wyróżnienie do wyszukiwania (jeśli wyszukiwanie jest otwarte)                   | Alt+strzałka w dół                |
@@ -202,8 +204,8 @@ Począwszy od aktualizacji 11 platformy, użytkownicy mogą zapoznawać się z a
 | Użyj narzędzia Przenieś (w trybie personalizacji)                                                                       | M                                   |
 | Wybierz bieżący formant jako element do przeniesienia (gdy używane jest narzędzie Przenieś i nie wybrano jeszcze formantu do przeniesienia)  | Spacja lub Enter                      |
 | Usuń zaznaczenie formantu do przeniesienia (gdy używane jest narzędzie Przenieś)                                                                   | Esc                                 |
-| Przejdź do następnej pozycji dla wybranego formantu (gdy używane jest narzędzie Przenieś)                                          | Tab lub strzałka w prawo lub strzałka w lewo    |
-| Przejdź do poprzedniej pozycji dla wybranego formantu (gdy używane jest narzędzie Przenieś)                                      | Shift+Tab lub strzałka w lewo lub strzałka w górę |
+| Przesuń wybraną kontrolkę na następną pozycję (przy użyciu narzędzia Przesunięcie)                                              | Tab lub strzałka w prawo lub strzałka w lewo    |
+| Przesunięcie wybranego elementu sterującego do poprzedniej pozycji (przy użyciu narzędzia Przesunięcie)                                          | Shift+Tab lub strzałka w lewo lub strzałka w górę |
 | Użyj narzędzia Ukryj (w trybie personalizacji)                                                                       | H                                   |
 | Przełączanie bieżącego formantu na widoczny lub ukryty (gdy używane jest narzędzie Ukryj)                                     | Spacja lub Enter                      |
 | Użyj narzędzia Pomiń (w trybie personalizacji)                                                                       | tys.                                   |

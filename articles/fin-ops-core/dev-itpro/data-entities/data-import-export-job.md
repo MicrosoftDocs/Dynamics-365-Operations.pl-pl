@@ -2,7 +2,7 @@
 title: Omówienie zadań importowania i eksportowania danych
 description: Obszar roboczy Zarządzanie danymi umożliwia tworzenie zadań importu i eksportu danych oraz zarządzanie nimi.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612371"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675376"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Omówienie zadań importowania i eksportowania danych
 
@@ -68,6 +68,9 @@ Podczas wybieranie jednostki należy wybrać format eksportowanych lub importowa
 | Excel                  | Excel                                      | \-Nie dotyczy-                     |
 | Plik XML                    | \-Nie dotyczy-                                      | Element XML Atrybut XML |
 | Ograniczone, stała szerokość | Przecinek, średnik, tabulator, pionowa kreska, dwukropek | \-Nie dotyczy-                     |
+
+> [!NOTE]
+> Ważne jest, aby wybrać poprawną wartość pól **Ogranicznik wiersza**, **Ogranicznik kolumn** i **Kwalifikator tekstu**, jeśli w opcji **Format pliku** jest ustawiona wartość **Ograniczone**. Upewnij się, że dane nie zawierają znaku używanego jako ogranicznik lub kwalifikator, ponieważ może to spowodować błędy podczas importowania i eksportowania.
 
 ### <a name="sequence-the-entities"></a>Określanie kolejności jednostek
 Kolejność jednostek można określić w szablonie danych albo w zadaniach importu lub eksportu. Po uruchomieniu zadania, które zawiera więcej niż jedną jednostkę należy się upewnić, że kolejność jednostek danych jest prawidłowa. Kolejność jednostek określa się głównie po to, aby obsłużyły zależności funkcjonalne między jednostkami. Jeżeli jednostki nie mają żadnych zależności funkcjonalnych, można zaplanować ich import lub eksport równoległy.

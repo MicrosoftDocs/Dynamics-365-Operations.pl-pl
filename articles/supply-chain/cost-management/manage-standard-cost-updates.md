@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579767"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678672"
 ---
 # <a name="manage-standard-cost-updates"></a>Zarządzanie aktualizacjami kosztu standardowego
 
@@ -43,8 +43,6 @@ Poniżej pokazano, jak używać metod jednej i dwóch wersji do aktualizacji kos
 W tym przykładzie przedstawiono jedną dodatkową wersję wyceny służącą do zarządzania aktualizacjami za rok 2020. Można użyć więcej niż jedną dodatkową wersję wyceny, na przykład osobną wersję dla poszczególnych zbiorów aktualizacji. Jeśli używanych jest kilka opcji dodatkowej wyceny, domyślnej wyraża się jako koszty aktywne, ponieważ koszty aktywne są rozciągnięte jest na kilka wersji.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Wymiary finansowe dla przeszacowania kosztu standardowego
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Aktywowanie nowej ceny standardowej zwykle powoduje przeszacowanie wartości dostępnych zapasów o transakcje przeszacowania kosztu standardowego. Zazwyczaj w transakcjach są wówczas księgowane wymiary finansowe towaru. Aby jednak określić, czy i w jaki sposób są księgowane wymiary finansowe, należy za pomocą funkcji [zarządzania funkcjami](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) włączyć funkcję o nazwie *Opcje domyślnego wymiaru finansowego dla przesądu kosztów standardowych zapasów*. Po włączeniu tej funkcji wybierz opcje **Zarządzanie kosztami > Ustawienia zasad księgowania zapasów > Parametry** i ustaw jedną z następujących wartości nowej listy rozwijanej **źródła wymiarów finansowych**:
 

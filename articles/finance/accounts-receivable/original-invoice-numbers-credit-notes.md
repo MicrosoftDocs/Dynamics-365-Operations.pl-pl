@@ -2,7 +2,7 @@
 title: Odwołania do oryginalnych faktur w fakturach korygujących
 description: W tym temacie wyjaśniono, jak skonfigurować i wydrukować numery oryginalnych faktur w powiązanych fakturach korygujących.
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6a5ac50c996f92f5cfa569ad00fa4b911827fd4ec8bddb2442bbd6ac67d1f33f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7147c5bea5273f385b004effe0844b5f4541a881
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723854"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700362"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Odwołania do oryginalnych faktur w fakturach korygujących
 
@@ -95,5 +95,10 @@ Gdy drukujesz dowolny tekst, noty kredytowe klienta i projektu, będą one zawie
 > [!NOTE]
 > Upewnij się, że formaty dokumentów do druku są poprawnie skonfigurowane, przy założeniu, że zostaną wydrukowane odniesienia do oryginalnych faktur.
 
+## <a name="references-to-original-invoices-in-debit-notes"></a>Odwołania do oryginalnych faktur w notach uznaniowych
+
+Domyślnie w fakturach korygujących można wprowadzić odwołania do oryginalnych faktur. Na przykład można wprowadzać odwołania w przypadku ujemnych (zmniejszających) korekt oryginalnych faktur.
+
+Aby wprowadzać odwołania podczas wprowadzania dodatnich (rosnących) korekt oryginalnych faktur, należy włączyć funkcję **Odwołania do oryginalnych faktur w notach uznaniowych** w obszarze roboczym **Zarządzanie funkcjami**.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
