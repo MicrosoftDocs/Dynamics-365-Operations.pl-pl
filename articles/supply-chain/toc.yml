@@ -74,12 +74,12 @@
                   items:
                     - name: Nowości i zmiany w aplikacji Supply Chain Management — strona główna
                       href: get-started/whats-new-home-page.md
+                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.22 (listopad 2021)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Rozwiązanie Supply Chain Management w wersji 10.0.21 (październik 2021)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Rozwiązanie Supply Chain Management w wersji 10.0.20 (sierpień 2021)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Usunięte lub wycofane funkcje
                   items:
                     - name: Usunięte lub wycofane funkcje — strona główna
@@ -1453,15 +1453,15 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Zmiany w interfejsie API
                   items:
-                    - name: Aktualizacja Application Update 7.3
+                    - name: Aktualizacja aplikacji 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja Application Update 10.0.11
+                    - name: Aktualizacja aplikacji 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja Application Update 10.0.17
+                    - name: Aktualizacja aplikacji 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja Application Update 10.0.19
+                    - name: Aktualizacja aplikacji 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Aktualizacja Application Update 10.0.21
+                    - name: Aktualizacja aplikacji 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Określanie niestandardowej lokalizacji wygenerowanych dokumentów
                   items:
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Planowanie główne przy użyciu umów handlowych zakupu
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: Parametry daty i godziny używane przez optymalizację planowania
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Marginesy bezpieczeństwa
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Tolerancja opóźnienia (dni z ujemnym opóźnieniem)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie globalnej książki adresowej
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ustawienia adresu
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Książki adresowe — często zadawane pytania
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurowanie książek adresowych
@@ -2427,19 +2431,7 @@
                       href: production-control/release-production-orders.md
                     - name: Zgłaszanie zleceń produkcyjnych jako gotowych
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Konfigurowanie i korzystanie z interfejsu wykonania hal produkcyjnych
-                      items:
-                        - name: Konfigurowanie interfejsu wykonania hal produkcyjnych
-                          href: production-control/production-floor-execution-configure.md
-                        - name: Projektowanie interfejsu wykonania hal produkcyjnych
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
-                          href: production-control/production-floor-execution-setup.md
-                        - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
-                          href: production-control/production-floor-execution-use.md
-                        - name: Dobór stylu interfejsu wykonania hal produkcyjnych
-                          href: production-control/production-floor-execution-styles.md
-                    - name: Konfigurowanie karty zadań dla urządzeń
+                    - name: Konfiguruj kartę zadań dla urządzeń
                       href: production-control/config-job-card-device.md
                     - name: Zgłoszenie jako gotowe z poziomu urządzenia karty działań
                       href: production-control/report-finished-job-device.md
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Księgowanie produkcji
                       href: cost-management/production-posting.md
+            - name: Konfigurowanie i korzystanie z interfejsu wykonania hal produkcyjnych
+              items:
+                - name: Konfigurowanie interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-configure.md
+                - name: Projektowanie interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-tabs.md
+                - name: Konfigurowanie urządzenia do uruchamiania interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-setup.md
+                - name: Jak pracownicy korzystają z interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-use.md
+                - name: Dobór stylu interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-styles.md
         - name: Zarządzanie rabatami
           items:
             - name: Omówienie modułu Zarządzanie rabatami
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: Dostosowywanie tytułów kroków i instrukcji dla aplikacji mobilnej Warehouse Management
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Konfigurowanie pól promowanych dla kroków na urządzeniu przenośnym
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Konfigurowanie przekierowań dla kroków w elementach menu urządzenia przenośnego
+                      href: warehousing/warehouse-app-detours.md
                     - name: Numer identyfikacyjny odbierany za pomocą aplikacji mobilnej Warehouse Management
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Konfigurowanie elementu menu urządzenia przenośnego do wykonania pracy w ramach zamówienia zakupu
@@ -3409,6 +3417,8 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globalne parametry urządzenia przenośnego
                   href: warehousing/mobile-device-parameters.md
+                - name: Konta użytkownika urządzenia przenośnego
+                  href: warehousing/mobile-device-work-users.md
                 - name: Ustawienia użytkownika urządzenia przenośnego
                   href: warehousing/mobile-device-user-settings.md
                 - name: Przetwarzanie zdarzenia aplikacji magazynu
@@ -3737,6 +3747,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Zarządzanie magazynem
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: Monit o automatyczną rezerwację dla numeru partii jest wyświetlany nawet w przypadku dostępnych zapasów
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Nie można odblokować pracy pobrania z powodu niezakończonej pracy uzupełniania zapasów
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: Nie można przenieść zapasów do lokalizacji kontrolowanej za pomocą numeru identyfikacyjnego
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas konfigurowania połączenia z aplikacją
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: Nie można odnaleźć profilu grupy
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: Nie można przetworzyć korekty dokumentu dostawy
@@ -3819,9 +3833,7 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Nie można usunąć rezerwacji zapasów w wierszu zamówienia sprzedaży
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Nie znaleziono kotwicy zaufania dla ścieżki certyfikacji podczas aktualizacji i migracji do WMS
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: 'Nie można potwierdzić wysyłki, ponieważ odbiorca jest wstrzymany'
+                - name: 'Nie można potwierdzić wysyłki, ponieważ klient jest wstrzymany'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Nie można potwierdzić wysyłki, ponieważ wiersze ładunku mają ilość zerową'
                   href: troubleshooting/warehousing/load-line-quantity-is-zero.md
