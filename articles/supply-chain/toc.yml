@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: Korygowanie wartości kosztów dostępnych zapasów
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Raport magazynu wartości zapasów
+                - name: Raporty wartości zapasów
                   href: cost-management/inventory-value-report-storage.md
+                - name: Przykłady i logika raportu wartości zapasów
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Magazyn raportów wiekowania zapasów
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Przykłady i logika raportu wiekowania zapasów
@@ -837,7 +839,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie wymiarów finansowych do miar agregacji
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Tworzenie raportów analitycznych za pomocą aplikacji Power BI Desktop
+                - name: Tworzenie raportów analitycznych za pomocą aplikacji PowerBI Desktop
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dodawanie analizy do obszarów roboczych za pomocą Power BI Embedded
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Planowanie z wyborem zasobu na podstawie pojemności
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Planowanie oparte na priorytecie
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Oznaczanie zapasów przy użyciu modułu Optymalizacja planowania
                   href: master-planning/planning-optimization/marking.md
                 - name: Planowanie międzyfirmowe
@@ -1719,6 +1723,8 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Realizacja zapasów bezpieczeństwa dla towarów
                   href: master-planning/safety-stock-replenishment.md
+                - name: Używanie arkusza zapasu bezpieczeństwa do aktualizowania minimalnego zapotrzebowania dla pozycji
+                  href: master-planning/safety-stock-journal.md
                 - name: Opóźnienia
                   href: master-planning/delays.md
                 - name: Anulowanie zadania planowania głównego
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: Wywoływanie przepływów automatyzacji procesów w celu utworzenia zleceń kontroli jakości
               href: production-control/process-automation-quality-orders.md
+            - name: Integracja z systemami wykonywania produkcji innych firm
+              href: production-control/mes-integration.md
             - name: Wytwarzanie dyskretne
               items:
                 - name: Obsługa danych głównych produkcji
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Dobór stylu interfejsu wykonania hal produkcyjnych
                   href: production-control/production-floor-execution-styles.md
+                - name: Dostosowanie interfejsu wykonania hal produkcyjnych
+                  href: production-control/production-floor-execution-customize.md
         - name: Zarządzanie rabatami
           items:
             - name: Omówienie modułu Zarządzanie rabatami

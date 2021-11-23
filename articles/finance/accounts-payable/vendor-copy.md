@@ -1,7 +1,7 @@
 ---
 title: Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
 description: W tym temacie wyjaśniono, w jaki sposób należy używać udostępnionych sekwencji numerów w celu kopiowania dostawców do innej firmy z zachowaniem niezmienionego identyfikatora dostawcy.
-author: mikefalkner
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5b4aeb189fa0e609834d46961be0ff953c2779a05ff1857636199e5448f15396
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e29932ca34576d15b7350ab6c711563682d8ddf8
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722822"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753550"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiowanie dostawców przy użyciu udostępnionych sekwencji numerów
 

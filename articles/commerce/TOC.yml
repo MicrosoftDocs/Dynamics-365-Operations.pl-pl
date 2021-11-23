@@ -2532,12 +2532,14 @@
                   items:
                     - name: Najlepsze wskazówki dotyczące programowania rozwiązania Dynamics 365 Commerce
                       href: e-commerce-extensibility/best-practices-dev.md
-                    - name: Zestaw online SDK Dynamics 365 Commerce — FAQ
+                    - name: Zestaw online SDK do Dynamics 365 Commerce — FAQ
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Najlepsze wskazówki dotyczące debugowania w toku programowania rozwiązania Dynamics 365 Commerce
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: Zestaw SDK do Retail
               items:
+                - name: Migracja do zestawu SDK do Commerce
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Architektura zestawu SDK do Retail
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Konfigurowanie potoku kompilacji dla zestawu SDK do niezależnego pakowania
